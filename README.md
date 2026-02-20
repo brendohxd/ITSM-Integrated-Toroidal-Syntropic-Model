@@ -15,7 +15,7 @@ Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)
 You are free to use, modify, and share — **always credit Brendon as originator**.
 
 **SHA-256 Hash of this entire repository (v2.0)**  
-`dd2dbbaa89b520646922323f9a3eb735d19ddb15d7ec820627c238e1afabf2b8`  
+`bb20ba3cfd3d1a8a845473a5a57801c2177b1e13de5874661e0f47c116f88619`  
 Timestamp: 18 February 2026, 01:15 AWST
 
 ## Executive Summary
