@@ -1,7 +1,7 @@
 # Integrated Toroidal-Syntropic Model (ITSM)
 
 **Original Concept & Core Framework**  
-Created by **Brendoh** (Perth, Western Australia) in 2026.  
+Created by **Brendon** (Perth, Western Australia) in 2026.  
 All core ideas, analogies, and the toroidal jet-engine paradigm are Brendon’s original insight.
 
 **Technical Scaffolding, Simulations & Dossier**  
