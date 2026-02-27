@@ -28,13 +28,13 @@ The Integrated Toroidal-Syntropic Model (ITSM) replaces the closed, doomed ΛCDM
 
 **Key Applications**  
 - Syntropic Power Cell (SPC): 10 cm TRC harvests plenum flux → 1 MW clean output  
-- Warp Buoyancy Shield: 1 m prototype at 1.2 MW creates 15–20% mass anomaly (detectable lift)  
+- Warp Buoyancy Shield: 1 m prototype at (removed) creates 15–20% mass anomaly (detectable lift)  
 - Loom Torsional Communication: Zero-latency non-local signaling  
 
 **Falsifiable Predictions**  
 - LIGO: torsional phase residues in ringdowns  
 - JWST: 1.2% anisotropic expansion gradient  
-- Lab: 15% weight drop in 1 m STRC at 1.2 MW  
+- Lab: 15% weight drop in 1 m STRC at (removed) 
 
 ## New Integrated Simulation (One Script – Rotation Curves + TRC Bubble)
 
@@ -101,7 +101,4 @@ ax2.set(xlabel='Time (μs)', ylabel='Anomaly (%)', title='1m TRC Bubble at 1.2 M
 ax2.legend(); ax2.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.show()
-SHA-256 Hash of this entire README
-52b4cc56dc73dbaac4665f250200e7d4a6ab774c3f1e3d03e2572ce5fd14a0d8
-How to verify no tampering
-Copy everything above this verification note, paste into any SHA-256 calculator (search “SHA-256 online” in Chrome), and the result must match the hash above.
+
