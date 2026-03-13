@@ -15,6 +15,7 @@ An unconditionally stable, ghost-free modification to the Einstein-Hilbert actio
 
 3. Geometric Scaffolding
 Redefines the z > 14 timeline via a Toroidal Geometric Mold. This architectural scaffolding [the appropriate word for the physical structural preference of the vacuum] allows for accelerated structural organization that standard entropy-only models cannot replicate.
+
 📊 Empirical Validations (Computational Appendix)
 This repository contains the Python source code used to execute the primary empirical "crush tests" for the ITSM.
 
