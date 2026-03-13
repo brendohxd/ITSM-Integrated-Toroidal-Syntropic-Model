@@ -34,6 +34,11 @@ Simulates the fluid-dynamic necessity of gravitational lensing (the metric wake)
  * Source: Scripts/itsm_bullet_decoupling.py
  * Evidence: Assets/itsm_bullet_decoupling.png
 
+🔹 Hubble Tension Resolver: Geometric Projection
+Resolves the "Hubble Crisis" by demonstrating that the measured expansion rate (H_0) is a function of the viewing angle relative to the toroidal plenum. It harmonizes the Planck (67.4) and SH0ES (73.0) measurements as predictable geometric boundaries.
+ * Source: Scripts/itsm_hubble_resolver.py
+ * Evidence: Assets/itsm_hubble_resolver.png
+
 📂 Repository Structure
 | Directory | Content Description |
 |---|---|
