@@ -18,6 +18,7 @@ Redefines the z > 14 timeline via a Toroidal Geometric Mold. This architectural 
 
 📊 Empirical Validations (Computational Appendix)
 This repository contains the Python source code used to execute the primary empirical "crush tests" for the ITSM.
+
 🔹 Kinematic Crush Test: NGC 1560
 Validates the a_0 thresholding effect against the SPARC database. The ITSM perfectly tracks the "baryonic wiggle" at 5 kpc, threading the needle where standard Newtonian physics fails.
  * Source: Scripts/itsm_ngc1560_validation.py
