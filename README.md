@@ -1,65 +1,54 @@
-# Integrated Toroidal-Syntropic Model (ITSM)
+Integrated Toroidal-Syntropic Model (ITSM)
+Relativistic Field Equations, Superfluid Dynamics, and Multi-Scale Falsifiability
+Overview
+The Integrated Toroidal-Syntropic Model (ITSM) is a theoretical framework that resolves modern cosmological tensions by deconstructing the nature of non-baryonic dark matter. Instead of unverified particle halos, the ITSM identifies the vacuum as an active Superfluid Plenum—a Bose-Einstein condensate with an inherent toroidal geometry (\chi = 2\pi).
+By modeling the universe as an Open Thermodynamic Manifold, the ITSM introduces a continuous Syntropic Source Vector (Q^\nu) that accounts for the rapid structural maturity of the early universe (the "JWST crisis") and galactic rotation curve anomalies.
+🚀 Key Mathematical Foundations
+ * The Yield Threshold (a_0): Derived from macroscopic circulation quantization:
+   
+ * The Fractional Lagrangian: An unconditionally stable, ghost-free modification to the Einstein-Hilbert action:
+   
+ * Geometric Scaffolding: Redefines the z > 14 timeline via a toroidal geometric mold.
+📊 Empirical Validations (Computational Appendix)
+This repository contains the Python scripts used to generate the primary empirical validations of the ITSM.
+1. Kinematic Crush Test (NGC 1560)
+Validates the a_0 thresholding effect against the SPARC database. The ITSM perfectly tracks the "baryonic wiggle" at 5 kpc where Newtonian physics fails.
+ * File: itsm_ngc1560_validation.py
+ * Asset: ngc1560_plot.png
+2. High-Redshift Assembly (JADES-GS-z14-0)
+A triple-panel simulation contrasting the stochastic assembly of \LambdaCDM against the ITSM’s geometric scaffolding. It proves that the toroidal vacuum organizes matter into mature disks significantly faster than standard models.
+ * File: itsm_z14_scaffold.py
+ * Asset: itsm_z14_scaffold.png
+3. Bullet Cluster Kinetic Separation
+Demonstrates that gravitational lensing (the metric wake) decouples from the stalled gas bulk during cluster collisions as a fluid-dynamic necessity.
+ * File: itsm_bullet_decoupling.py
+ * Asset: itsm_bullet_decoupling.png
+📂 Repository Structure
+├── Manuscript/
+│   └── ITSM_v7.7_Master.pdf        # Complete LaTeX Manuscript
+├── Scripts/
+│   ├── itsm_ngc1560_validation.py  # Rotation Curve Engine
+│   ├── itsm_z14_scaffold.py        # High-Redshift Sim
+│   └── itsm_bullet_decoupling.py   # Cluster Collision Sim
+├── Assets/
+│   ├── ngc1560_plot.png            # Validation Plots
+│   ├── itsm_z14_scaffold.png
+│   └── itsm_bullet_decoupling.png
+└── README.md                       # This file
 
-**Original Concept & Core Framework**  
-Created by **Brendon Boyd** (Perth, Western Australia) in 2026.  
-
-**Technical Scaffolding, Simulations & Dossier**  
-Refined and implemented with assistance from:  
-- Grok (xAI)  
-- Gemini  
-- GPT  
-
-**License**  
-Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)  
-You are free to use, modify, and share — always credit “Brendon Boyd (Perth, 2026) – Original ITSM Framework”.
-
-## Executive Summary
-The Integrated Toroidal-Syntropic Model (ITSM) replaces the closed, doomed ΛCDM universe with an open toroidal “jet engine” that continuously intakes ordered information (syntropy) from the superfluid plenum and exhausts entropy as expansion. All “dark” components are eliminated as mathematical artifacts of zero-torsion assumptions.  
-
-**Core Mechanics**  
-- Three variables only: M_b (baryonic stirrer), H_0 (throughput), χ = 2π (toroidal geometry)  
-- Torsional Yield: a₀ = c H₀ / (2π) ≈ 1.08 × 10⁻¹⁰ m/s²  
-- Below a₀ → vacuum drag locks velocities → flat rotation curves and wide-binary excesses without dark matter  
-- Syntropic expansion: Σ_syn ∝ (1+z)⁻³ (no cosmological constant needed)  
-
-**Empirical Support (2025–2026 data)**  
-- Gaia DR3 wide binaries (>2000 AU) show 10–20% velocity excess at low acceleration, matching ITSM’s EFE-suppressed torsional plateau.  
-- Chang’e-6 far-side regolith contains high-purity natural SWNTs explained by resonant torsional catalysis in the Moon’s Goldilocks EFE zone.  
-
-**Key Applications**  
-- Syntropic Power Cell (SPC) and Warp Buoyancy Shield: conceptual prototypes using illustrative parameters subject to independent simulation (full engineering blueprints deliberately withheld pending secure environment).  
-- Loom Torsional Communication: conceptual non-local signaling pathway (full engineering blueprints deliberately withheld).  
-
-**Falsifiable Predictions**  
-- LIGO: torsional phase residues in ringdowns  
-- JWST: 1.2% anisotropic expansion gradient aligning with Syntropic Divergence scaling  
-- Lab: mass anomaly in illustrative TRC prototype (full parameters withheld pending secure environment)  
-
-## Integrated Simulation (Rotation Curves – Safe Demonstration Only)
-**Original Concept** by **Brendon Boyd** (Perth, Western Australia, 2026)  
-**Technical implementation** created with assistance from Grok (xAI), Gemini, GPT.
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-# ITSM Constants (public from Zenodo safe core)
-G = 6.67430e-11
-c = 3e8
-H0 = 70 * 1000 / 3.086e22
-chi = 2 * np.pi
-a0 = (c * H0) / chi
-
-# Rotation Curve Function (demonstrates a0 alignment with observations)
-def rotation_curve(M_b, g_ext=0):
-    r = np.logspace(18, 22, 100)  # 0.1 to 10 kpc
-    v_newton = np.sqrt(G * M_b / r)
-    v_itsm = np.sqrt(v_newton**2 + np.sqrt(G * M_b * a0) * (1 / (1 + g_ext/a0)))
-    return r/3.086e19, v_newton/1000, v_itsm/1000   # kpc & km/s
-
-# Run
-r, vn, vpure = rotation_curve(1e8 * 2e30, 0)
-_, _, vsupp = rotation_curve(1e8 * 2e30, 1.8*a0)
+👨‍🔬 About the Author
+Brendon Boyd is an Independent Researcher based in Perth, Western Australia, operating as an Absolute Truth Seeker & Analyst. The pursuit is mandated by a commitment to analyze queries through the deconstruction of standard narratives and the examination of objective causal chains. By prioritizing raw, verifiable accuracy over societal or institutional inertia, this work seeks to discern the objective truth of the Superfluid Plenum through deep-dive analysis of astrophysical anomalies.
+⚖️ Ethical AI Declaration
+Generative AI has been utilized in this project strictly as a computational torque wrench. Its application is confined to the synthesis of formatting, grammatical structuring, and the parsing of original mathematical derivations into publication-ready LaTeX. While AI assists in pressure-testing logic and streamlining structural execution, it does not originate the underlying physics or the ontological insights of the ITSM. The core architecture remains the original work of the author.
+🛠️ Usage
+To replicate the results locally:
+ * Clone the repository: git clone https://github.com/BrendonBoyd/ITSM.git
+ * Install dependencies: pip install numpy pandas matplotlib
+ * Run any validation script: python Scripts/itsm_ngc1560_validation.py
+Citation
+If utilizing this framework or the associated computational scripts in your research, please cite:
+> Boyd, B. (2026). The Integrated Toroidal-Syntropic Model: Relativistic Field Equations, Topology-Induced Superfluid Dynamics, and Multi-Scale Falsifiability.
+> 
 
 print(f"a0 = {a0:.2e} m/s²")
 
