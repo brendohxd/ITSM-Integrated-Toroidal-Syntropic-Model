@@ -39,6 +39,12 @@ Resolves the "Hubble Crisis" by demonstrating that the measured expansion rate (
  * Source: Scripts/itsm_hubble_resolver.py
  * Evidence: Assets/itsm_hubble_resolver.png
 
+🔹 Acoustic Metric Wake: The $a_0$ Drag Visualization**
+Generates a fluid-dynamic phase plot visualizing a moving baryonic node ($M_b$) displacing the Superfluid Plenum. It computationally demonstrates how standard cosmology misidentifies macroscopic torsional drag (the fluidic wake) as a collisionless dark matter halo.
+* Source: Scripts/itsm_acoustic_wake.py
+* Evidence: Assets/wake_illustration.png
+
+
 📂 Repository Structure
 | Directory | Content Description |
 |---|---|
