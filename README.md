@@ -44,6 +44,13 @@ Generates a fluid-dynamic phase plot visualizing a moving baryonic node ($M_b$) 
 * Source: Scripts/itsm_acoustic_wake.py
 * Evidence: Assets/wake_illustration.png
 
+🔹 Dimensional Scaffolding: Vacuum Drag Saturation Proves the mathematical necessity of the Plenum Shear Ansatz. It demonstrates that standard linear modified gravity models physically "explode" at high accelerations (violating Solar System and Cassini constraints), while the ITSM's toroidal interaction natively saturates and safely decays as 1/\sqrt{X}.
+* Source: Scripts/itsm_drag_saturation.py
+* Evidence: Assets/itsm_drag_saturation.png
+
+🔹 NANOGrav Strain PSD: Toroidal Acoustic Resonance Establishes a strict statistical falsifiability boundary for Pulsar Timing Arrays. Contrasts the structureless, chaotic power-law decay predicted by \LambdaCDM (merging binaries) against the ITSM’s predicted acoustic metric resonance, mathematically locked precisely between the a_0 base (1.08 nHz) and the geometric \pi harmonic (3.14 nHz).
+* Source: Scripts/itsm_nanograv_resonance.py
+* Evidence: Assets/itsm_nanograv_resonance.png
 
 📂 Repository Structure
 | Directory | Content Description |
