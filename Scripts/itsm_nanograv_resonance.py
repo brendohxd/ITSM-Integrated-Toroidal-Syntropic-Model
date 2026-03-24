@@ -1,7 +1,7 @@
 """
 ITSM Computational Falsifiability Suite
 Module: NANOGrav Acoustic Resonance Matrix
-Framework Version: 8.06 (Uncorrupted Baseline)
+Framework Version: 8.06 
 
 Description:
 Computes the Strain Power Spectral Density (PSD) for the stochastic 
