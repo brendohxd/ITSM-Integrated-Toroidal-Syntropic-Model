@@ -1,102 +1,61 @@
 
-"""
-ITSM Computational Falsifiability Suite
-Module: Plenum Shear Ansatz (Drag Saturation Plot)
-Framework Version: 8.06
-
-Description:
-Visualizes the dimensional derivation of the ITSM interaction Lagrangian.
-Plots the relative interaction strength (L_int / X) against the dimensionless
-kinetic energy ratio (X / a_0^2). Demonstrates the geometric necessity of the 
-Born-Infeld type root saturation to preserve Cassini Solar System constraints 
-(decaying as 1/sqrt(X) at high accelerations).
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib as mpl
-import os
 
-# ---------------------------------------------------------
-# INSTITUTIONAL AESTHETIC PROTOCOL (LATEX ENFORCEMENT)
-# ---------------------------------------------------------
-mpl.rcParams.update({
+# ====================== v8.2 PARAMETERS ======================
+a0 = 1.33e-10                    # NEW multiplier: 2π c H0 (m/s²)
+
+# Dimensionless kinetic energy ratio X/a0 (log-spaced for smooth curve)
+ratio = np.logspace(-2, 8, 1000)   # X/a0 from 0.01 to 1e8
+
+# 1. Linear modification (explodes at high X) - cyan
+linear = ratio                     # L_int/X ∝ X  → grows unbounded
+
+# 2. ITSM Plenum Shear Ansatz (decays as 1/√X) - red
+# From the saturating form: L_int = (2/3) a0 (√(1 + X/a0) - 1)
+# Relative strength = L_int / X
+itms = (2/3) * (np.sqrt(1 + ratio) - 1) / ratio
+
+# ==================== PUBLICATION-QUALITY PLOT ====================
+plt.rcParams.update({
     'font.family': 'serif',
-    'mathtext.fontset': 'cm', # Computer Modern (LaTeX standard)
-    'axes.labelsize': 14,
-    'axes.titlesize': 16,
-    'axes.titleweight': 'bold',
+    'font.size': 12,
+    'axes.titlesize': 14,
+    'axes.labelsize': 12,
     'legend.fontsize': 11,
-    'xtick.labelsize': 12,
-    'ytick.labelsize': 12,
-    'figure.dpi': 300,
-    'savefig.bbox': 'tight',
-    'figure.facecolor': '#0d0d0d',
-    'axes.facecolor': '#0d0d0d',
-    'text.color': 'white',
-    'axes.labelcolor': 'white',
-    'xtick.color': 'white',
-    'ytick.color': 'white',
-    'axes.edgecolor': '#2a2a2a'
+    'lines.linewidth': 2.8,
+    'axes.linewidth': 1.2
 })
 
-# ---------------------------------------------------------
-# COMPUTATIONAL ENGINE (DIMENSIONALLY CORRECTED v8.06)
-# ---------------------------------------------------------
-def compute_shear_saturation():
-    """Calculates relative interaction strength for linear vs. ITSM models."""
-    # Dimensionless kinetic energy ratio: x = X / a_0^2
-    # Range from deep MONDian regime (10^-2) to deep Solar System regime (10^8)
-    x_ratio = np.logspace(-2, 8, 1000)
-    
-    # ITSM Model: Geometric projection yielding (sqrt(1+x) - 1) / x
-    # Normalized so the low-energy limit (x->0) approaches 1.0
-    y_itsm = 2.0 * (np.sqrt(1 + x_ratio) - 1) / x_ratio
-    
-    # Standard Linear Modification: L_int proportional to X^2
-    # Relative strength (L_int / X) grows unbounded (proportional to x)
-    # Normalized to match ITSM at the a_0 boundary (x=1)
-    y_linear = np.ones_like(x_ratio) + (x_ratio / 2.0)
-    
-    return x_ratio, y_linear, y_itsm
+plt.figure(figsize=(8.5, 6))
 
-# ---------------------------------------------------------
-# VISUALIZATION MATRIX
-# ---------------------------------------------------------
-def generate_institutional_plot(x_ratio, y_linear, y_itsm):
-    """Renders the publication-grade saturation log-log plot."""
-    fig, ax = plt.subplots(figsize=(10, 6))
-    
-    # Set logarithmic scales for massive dynamic range
-    ax.set_xscale('log')
-    ax.set_yscale('log')
+# Linear (exploding) - cyan
+plt.plot(ratio, linear, '--', color='#00b4d8', linewidth=2.5, label='Linear Modification (L ∝ X²)')
 
-    # Data Traces
-    ax.plot(x_ratio, y_linear, color='#00ffff', lw=2, ls='--', alpha=0.9,
-            label=r'Linear Modification ($\mathcal{L}_{int} \propto X^2$) - Unbounded')
-    
-    ax.plot(x_ratio, y_itsm, color='#ff6347', lw=3,
-            label=r'ITSM Plenum Shear Ansatz ($\propto 1/\sqrt{X}$ decay)')
+# ITSM Plenum Shear Ansatz - red
+plt.plot(ratio, itms, '-', color='#e63946', linewidth=3.0, label='ITSM Plenum Shear Ansatz (1/√X decay)')
 
-    # Falsifiability Boundaries & Constraints
-    # 1. The a_0 Transition Zone
-    ax.axvline(1.0, color='white', ls=':', alpha=0.5)
-    ax.text(1.2, 1e-4, r'Critical Yield Boundary ($X = a_0^2$)', color='white', alpha=0.7, rotation=90)
-    
-    # 2. Cassini Radio-Link Constraint Zone (High X)
-    cassini_threshold = 1e5
-    ax.axvspan(cassini_threshold, 1e8, color='#ffd700', alpha=0.1,
-               label='Cassini PPN Constraint Zone (Solar System)')
-    
-    # Indicate where the linear model violates reality
-    ax.fill_between(x_ratio, y_itsm, y_linear, where=(x_ratio > cassini_threshold),
-                    color='red', alpha=0.15, hatch='//', label='Violation of General Relativity')
+# Cassini / Solar System high-acceleration regime
+plt.axvline(x=1e4, color='black', linestyle=':', linewidth=1.5, label='Cassini PPN Constraint Zone')
 
-    # Axis Limits and Ticks
-    ax.set_xlim(1e-2, 1e8)
-    ax.set_ylim(1e-5, 1e4)
-    
-    # Grid and Labels
+# Labels and formatting
+plt.xscale('log')
+plt.yscale('log')
+plt.xlabel(r'Dimensionless Kinetic Energy Ratio $X/a_0$')
+plt.ylabel(r'Relative Interaction Strength $\mathcal{L}_{\rm int}/X$')
+plt.title('Relative Interaction Strength – Linear vs. ITSM Plenum Shear Ansatz\n'
+          r'(v8.2 Toroidal Multiplier $a_0 = 2\pi c H_0$)', pad=15)
+plt.legend(loc='upper left')
+plt.grid(True, which='both', linestyle='--', alpha=0.5)
+plt.ylim(1e-4, 1e2)
+
+plt.tight_layout()
+
+# Save high-resolution version for LaTeX
+plt.savefig('itms_drag_saturation_v8.2.png', dpi=600, bbox_inches='tight')
+plt.show()
+
+print("✅ Fig. 1 saved as itms_drag_saturation_v8.2.png (600 dpi, publication quality)")    # Grid and Labels
     ax.grid(True, which='both', color='#2a2a2a', linestyle=':', alpha=0.6)
     ax.set_xlabel(r'Dimensionless Kinetic Energy Ratio ($X / a_0^2$)')
     ax.set_ylabel(r'Relative Interaction Strength ($\mathcal{L}_{int} / X$)')
