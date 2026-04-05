@@ -1,72 +1,57 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
 
-# ---------------------------------------------------------
-# ITSM Vector 5: The Acoustic Wake (Figure 1 Generator)
-# Visualizing the Stirrer, the Plenum, and Macroscopic Drag
-# ---------------------------------------------------------
-
-# 1. Spatial Grid Setup (Superfluid Plenum)
-x = np.linspace(-10, 5, 500)
-y = np.linspace(-5, 5, 500)
+# ====================== v8.2 PARAMETERS ======================
+# Simple 2D grid for acoustic wake visualization (baryonic node at center)
+x = np.linspace(-10, 10, 400)
+y = np.linspace(-10, 10, 400)
 X, Y = np.meshgrid(x, y)
 
-# 2. The Baryonic Node (The "Stirrer")
-# Moving right (relative fluid flow moves left)
-node_x, node_y = 0.0, 0.0
-r = np.sqrt((X - node_x)**2 + (Y - node_y)**2)
-baryonic_density = np.exp(-r**2 / 0.8) # Gaussian mass concentration
+# Baryonic node at origin (strong central displacement)
+R = np.sqrt(X**2 + Y**2)
+density = np.exp(-R**2 / 8) * 5.0                     # Gaussian density peak
+v_x = -Y / (R + 1e-8) * np.exp(-R / 4)               # Rotational + radial wake flow
+v_y =  X / (R + 1e-8) * np.exp(-R / 4)
 
-# 3. The Acoustic Metric Wake (Torsional Drag below a_0)
-# A Mach-like cone extending behind the moving mass
-wake_angle = np.pi / 4.5 
-wake_region = (X < 0) & (np.abs(Y) < np.abs(X) * np.tan(wake_angle))
+# ==================== PUBLICATION-QUALITY PLOT ====================
+plt.rcParams.update({
+    'font.family': 'serif',
+    'font.size': 12,
+    'axes.titlesize': 14,
+    'axes.labelsize': 12,
+    'legend.fontsize': 11,
+    'axes.linewidth': 1.2
+})
 
-# Acoustic Phonon ripples (The metric perturbation)
-k = 4.0 # Wave number of the acoustic shear
-wake_ripples = np.cos(k * np.sqrt(X**2 + Y**2)) * np.exp(X / 4.0) 
-acoustic_wake = wake_ripples * wake_region
+fig, ax = plt.subplots(figsize=(8.5, 7))
 
-# Combine into a single metric scalar field
-metric_field = baryonic_density + 0.35 * acoustic_wake 
+# Density background (subtle purple-to-cyan colormap)
+cmap = LinearSegmentedColormap.from_list('wake', ['#2a0a4a', '#4a2a8a', '#00b4d8'])
+im = ax.imshow(density, extent=[-10, 10, -10, 10], origin='lower', cmap=cmap, alpha=0.7)
 
-# 4. Superfluid Velocity Streamlines
-# Background flow + geometric deflection around the node
-U = -1.0 + X*0 
-V = 0.0 + Y*0
+# Cyan streamlines (the plenum flow around the node)
+ax.streamplot(X, Y, v_x, v_y, color='cyan', linewidth=1.2, density=1.8, arrowsize=1.2)
 
-# Dipole-like deflection (fluid parting around the dense mass)
-deflection_strength = 2.0
-U += deflection_strength * (X / (r**3 + 0.5)) * np.exp(-r/2)
-V += deflection_strength * (Y / (r**3 + 0.5)) * np.exp(-r/2)
+# Baryonic node marker
+ax.plot(0, 0, '*', color='#ffeb3b', markersize=18, markeredgecolor='black', markeredgewidth=1.5, label='Baryonic Node ($M_b$)')
 
-# 5. Execution and High-Fidelity Visualization
-plt.style.use('dark_background')
-fig, ax = plt.subplots(figsize=(12, 7))
-
-# Plot the underlying metric density (The Vacuum Stress)
-# 'inferno' creates a glowing core fading into deep space/fluid
-im = ax.pcolormesh(X, Y, metric_field, cmap='inferno', shading='auto', vmin=-0.3, vmax=1.0)
-
-# Overlay the Plenum flow lines (The Toroidal Current)
-# Using RGBA (0, 1, 1, 0.4) for Cyan with 40% opacity to bypass matplotlib alpha kwarg error
-ax.streamplot(X, Y, U, V, color=(0.0, 1.0, 1.0, 0.4), linewidth=1.0, density=1.5, 
-              arrowstyle='->', arrowsize=1.2)
-
-# Plot the hard Baryonic Core
-ax.scatter([node_x], [node_y], color='white', s=150, edgecolor='cyan', 
-           linewidths=2, zorder=5, label="Baryonic Node ($M_b$)")
-
-# Formatting
-ax.set_title("Acoustic Metric Wake Generation\n(Baryonic Node Displacing the Superfluid Plenum)", 
-             fontsize=16, pad=20, color='white', fontweight='bold')
-ax.set_xlabel("Spatial Coordinate X (kpc)", fontsize=12)
-ax.set_ylabel("Spatial Coordinate Y (kpc)", fontsize=12)
-ax.legend(loc='upper right', framealpha=0.2, fontsize=11)
-ax.set_aspect('equal')
+# Labels and formatting
+ax.set_xlabel('Spatial Coordinate X (kpc)')
+ax.set_ylabel('Spatial Coordinate Y (kpc)')
+ax.set_title('Acoustic Metric Wake Generation\n'
+             'Baryonic Node Displacing the Superfluid Plenum (v8.2)', pad=20)
+ax.legend(loc='upper right')
 ax.grid(False)
 
-# Save the asset for the LaTeX Manuscript
+# Colorbar for density
+cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+cbar.set_label('Relative Plenum Density')
+
 plt.tight_layout()
-plt.savefig('wake_illustration.png', dpi=300, bbox_inches='tight')
+
+# Save high-resolution version
+plt.savefig('itms_acoustic_wake_v8.2.png', dpi=600, bbox_inches='tight')
 plt.show()
+
+print("✅ Fig. 2 saved as itms_acoustic_wake_v8.2.png (600 dpi, publication quality)")
