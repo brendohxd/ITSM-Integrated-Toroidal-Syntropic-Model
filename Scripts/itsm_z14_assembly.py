@@ -1,24 +1,31 @@
-
 import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-# ---------------------------------------------------------
-# ITSM Vector 2: JADES-GS-z14-0 Timeline Analysis
-# Quantitative Assembly: Toroidal Scaffolding vs. LCDM Merging
-# ---------------------------------------------------------
+# Publication Formatting
+plt.rcParams.update({
+    "text.usetex": True,
+    "text.latex.preamble": r"\usepackage{amsmath}",
+    "font.family": "serif",
+    "font.serif": ["Computer Modern Roman"],
+    "axes.facecolor": "white",
+    "figure.facecolor": "white",
+    "text.color": "black",
+    "axes.labelcolor": "black",
+    "xtick.color": "black",
+    "ytick.color": "black",
+    "font.size": 14
+})
 
 # 1. Physical Parameters
 z_range = np.linspace(30, 10, 500)
-# Time from Big Bang in Megayears (Approximate for high-z)
+# Time from Big Bang in Megayears (Approximate scale for high-z)
 t_myr = 28000 * (1 + z_range)**(-1.5)
 
-# -- LCDM Model: Hierarchical Merging (Power Law) --
-# M(t) ~ t^alpha where alpha is related to halo growth
+# -- Standard Model: Hierarchical Merging (Power Law) --
 m_lcdm = 10**4 * (t_myr / 50)**2.5
 
 # -- ITSM Model: Toroidal Scaffolding (Exponential Condensation) --
-# Fast nucleation at vortex cores + syntropic scaling
 m_itsm = 10**6 * np.exp((t_myr - 50) / 45)
 
 # 2. Observational Data Point: JADES-GS-z14-0
@@ -27,46 +34,46 @@ t_obs = 290 # Myr after Big Bang
 m_obs = 10**8.5 # Estimated Stellar Mass (Solar Masses)
 
 # 3. Visualization Architecture
-plt.style.use('dark_background')
-fig, ax = plt.subplots(figsize=(12, 8), dpi=200, facecolor='#0d0d0d')
-ax.set_facecolor('#0d0d0d')
+fig, ax = plt.subplots(figsize=(11, 7.5))
 
-# Log-Linear Plotting
-ax.plot(z_range, m_itsm, color='cyan', lw=3, label='ITSM: Toroidal Scaffolding (Predictive)')
-ax.plot(z_range, m_lcdm, color='tomato', lw=2, ls='--', label='ΛCDM: Hierarchical Merging (Standard)')
+# Plot Growth Curves
+ax.plot(z_range, m_itsm, color='#0099CC', lw=3, label=r'\textbf{ITSM:} Toroidal Scaffolding (Predictive)')
+ax.plot(z_range, m_lcdm, color='#C00000', lw=2.5, ls='--', label=r'\textbf{$\Lambda$CDM:} Hierarchical Merging (Standard)')
 
 # Plot Observational Anchor
-ax.scatter(z_obs, m_obs, color='gold', s=250, marker='*', edgecolors='white',
-           zorder=5, label='JADES-GS-z14-0 (Observed)')
+ax.scatter(z_obs, m_obs, color='#F0E442', s=350, marker='*', edgecolors='black',
+           linewidths=1.5, zorder=5, label=r'\textbf{JADES-GS-z14-0} (Observed)')
+
+# The Lambda-CDM "Forbidden Zone"
+ax.fill_between([30, 13], 10**8, 10**11, color='#C00000', alpha=0.08, label=r'$\Lambda$CDM Forbidden Zone')
+
+# Annotations
+ax.annotate(r'\textbf{$\Lambda$CDM Growth Lag}' + '\n' + r'\textbf{(Dark Matter Bottleneck)}', 
+            xy=(18, 10**6), xytext=(21.5, 10**4.5),
+            arrowprops=dict(arrowstyle="->", color='#C00000', lw=2), color='#C00000', fontsize=12)
+
+ax.annotate(r'\textbf{ITSM Accelerated Nucleation}' + '\n' + r'\textbf{(Syntropic Scaffolding)}', 
+            xy=(16, 10**8.5), xytext=(19.5, 10**10),
+            arrowprops=dict(arrowstyle="->", color='#0099CC', lw=2), color='#0099CC', fontsize=12)
 
 # Axes and Limits
 ax.set_yscale('log')
 ax.set_xlim(25, 10)
 ax.set_ylim(10**4, 10**11)
-ax.invert_xaxis() # Redshift goes from high to low
+ax.invert_xaxis() # Redshift decays from left to right
 
-# Grid and Styling
-ax.grid(True, which='both', color='#2a2a2a', linestyle=':', alpha=0.5)
-ax.set_title("Mass Assembly Timeline: The High-Redshift Maturity Crisis\n"
-             "Toroidal Superfluid Nucleation vs. Hierarchical Merging",
-             fontsize=18, fontweight='bold', color='white', pad=20)
+ax.grid(True, which='major', linestyle='-', alpha=0.3)
+ax.grid(True, which='minor', linestyle=':', alpha=0.2)
 
-ax.set_xlabel(r"Redshift ($z$)", fontsize=14, fontweight='bold')
-ax.set_ylabel(r"Stellar Mass ($M_{\odot}$)", fontsize=14, fontweight='bold')
+ax.set_title(r"\textbf{Mass Assembly Timeline: The High-Redshift Maturity Crisis}" + "\n" +
+             r"Toroidal Superfluid Nucleation vs. Hierarchical Merging",
+             fontsize=18, pad=20)
 
-# Annotations (The "Why it works")
-ax.annotate('ΛCDM Growth Lag\n(Dark Matter Bottleneck)', xy=(18, 10**6), xytext=(22, 10**4.5),
-            arrowprops=dict(arrowstyle="->", color='tomato', lw=1.5), color='tomato', fontweight='bold')
+ax.set_xlabel(r"Redshift ($z$)", fontsize=15)
+ax.set_ylabel(r"Stellar Mass ($M_{\odot}$)", fontsize=15)
 
-ax.annotate('ITSM Accelerated Nucleation\n(Syntropic Scaffolding)', xy=(16, 10**8.5), xytext=(20, 10**10),
-            arrowprops=dict(arrowstyle="->", color='cyan', lw=1.5), color='cyan', fontweight='bold')
+plt.legend(loc='lower left', fontsize=12, framealpha=0.95, edgecolor='black')
 
-# The "Forbidden Zone"
-ax.fill_between([30, 13], 10**8, 10**11, color='red', alpha=0.1, label='ΛCDM Forbidden Zone')
-
-# 4. Save and Output
-plt.legend(loc='upper left', fontsize=10, frameon=True, facecolor='#1a1a1a')
-os.makedirs('Assets', exist_ok=True)
-plt.savefig('Assets/itsm_z14_assembly.png', dpi=300, bbox_inches='tight')
-print("High-Resolution Assembly Matrix saved to Assets/itsm_z14_assembly.png")
-plt.show()
+plt.tight_layout()
+plt.savefig('itsm_z14_assembly_publication.png', dpi=300)
+print("Asset generated: itsm_z14_assembly_publication.png")

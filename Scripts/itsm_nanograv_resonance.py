@@ -1,125 +1,41 @@
-"""
-ITSM Computational Falsifiability Suite
-Module: NANOGrav Acoustic Resonance Matrix
-Framework Version: 8.06 
-
-Description:
-Computes the Strain Power Spectral Density (PSD) for the stochastic 
-gravitational wave background. Models the ITSM acoustic resonance 
-strictly bounded by the geometric yield threshold (a_0 = 1.08 nHz) 
-and the toroidal harmonic (chi = 2*pi = 3.14 nHz).
-"""
-
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib as mpl
-import os
 
-# ---------------------------------------------------------
-# INSTITUTIONAL AESTHETIC PROTOCOL (LATEX ENFORCEMENT)
-# ---------------------------------------------------------
-mpl.rcParams.update({
-    'font.family': 'serif',
-    'mathtext.fontset': 'cm', # Computer Modern (LaTeX standard)
-    'axes.labelsize': 14,
-    'axes.titlesize': 16,
-    'axes.titleweight': 'bold',
-    'legend.fontsize': 11,
-    'xtick.labelsize': 12,
-    'ytick.labelsize': 12,
-    'figure.dpi': 300,
-    'savefig.bbox': 'tight',
-    'figure.facecolor': '#0d0d0d',
-    'axes.facecolor': '#0d0d0d',
-    'text.color': 'white',
-    'axes.labelcolor': 'white',
-    'xtick.color': 'white',
-    'ytick.color': 'white',
-    'axes.edgecolor': '#2a2a2a'
-})
+plt.rcParams.update({"text.usetex": True, "font.family": "serif", "font.size": 12})
 
-# ---------------------------------------------------------
-# PHYSICAL CONSTANTS & MODEL PARAMETERS (v8.06 AXIOMS)
-# ---------------------------------------------------------
-FREQ_MIN_NHZ = 0.1
-FREQ_MAX_NHZ = 100.0
-POINTS = 1000
+f_nHz = np.logspace(-1, 2, 500)
+h_c_baseline = 1e-14 * (f_nHz / 1.0)**(-2/3)
 
-# Lambda-CDM Stochastic Background (SMBHB Power Law)
-A_GWB_NANOGRAV = 2.4e-15  # 15-yr Amplitude
-F_YR_NHZ = 31.7           # 1/year frequency
+f_peak = 2.0 
+resonance_width = 0.5
+resonance_amplitude = 1.5e-14
 
-# ITSM Toroidal Acoustic Boundaries
-A0_BASE_NHZ = 1.08        # Normalized geometric yield threshold
-PI_HARMONIC_NHZ = np.pi   # Toroidal boundary chi/2
-F_RES_CENTROID = (A0_BASE_NHZ + PI_HARMONIC_NHZ) / 2
-RESONANCE_WIDTH = 0.5
-RESONANCE_AMP = 1.5e-14
+resonance = resonance_amplitude * np.exp(-0.5 * ((f_nHz - f_peak) / resonance_width)**2)
+h_c_itsm = h_c_baseline + resonance
 
-# ---------------------------------------------------------
-# COMPUTATIONAL ENGINE
-# ---------------------------------------------------------
-def compute_strain_psd():
-    """Calculates characteristic strain for standard and ITSM models."""
-    freqs = np.logspace(np.log10(FREQ_MIN_NHZ), np.log10(FREQ_MAX_NHZ), POINTS)
-    
-    # Lambda-CDM: Structureless Power Law
-    h_lcdm = A_GWB_NANOGRAV * (freqs / F_YR_NHZ)**(-2/3)
-    
-    # ITSM: Macroscopic Plenum Resonance (Lorentzian profile)
-    resonance = RESONANCE_AMP * (RESONANCE_WIDTH**2 / ((freqs - F_RES_CENTROID)**2 + RESONANCE_WIDTH**2))
-    h_itsm = h_lcdm + resonance
-    
-    return freqs, h_lcdm, h_itsm
+upper_bound = h_c_itsm * 1.2
+lower_bound = h_c_itsm * 0.8
 
-# ---------------------------------------------------------
-# VISUALIZATION MATRIX
-# ---------------------------------------------------------
-def generate_institutional_plot(freqs, h_lcdm, h_itsm):
-    """Renders the publication-grade log-log plot."""
-    fig, ax = plt.subplots(figsize=(10, 7))
-    
-    ax.set_xscale('log')
-    ax.set_yscale('log')
+plt.figure(figsize=(10, 6))
 
-    # Data Traces
-    ax.plot(freqs, h_lcdm, color='#ff6347', lw=2, ls='--', alpha=0.9, 
-            label=r'$\Lambda$CDM: Featureless Power Law ($f^{-2/3}$)')
-    ax.plot(freqs, h_itsm, color='#00ffff', lw=3, 
-            label='ITSM: Toroidal Acoustic Resonance')
+plt.plot(f_nHz, h_c_baseline, '--', color='gray', linewidth=2, label=r'$\Lambda$CDM: Stochastic SMBHB Background')
+plt.plot(f_nHz, h_c_itsm, '-', color='darkblue', linewidth=3, label=r'ITSM: Toroidal Acoustic Resonance')
+plt.fill_between(f_nHz, lower_bound, upper_bound, color='blue', alpha=0.1)
 
-    # Uncertainty / Bayesian Envelopes
-    ax.fill_between(freqs, h_lcdm * 0.5, h_lcdm * 1.5, color='#ff6347', alpha=0.1)
-    ax.fill_between(freqs, h_itsm * 0.7, h_itsm * 1.3, color='#00ffff', alpha=0.1)
+plt.axvspan(1.08, 3.14, color='gray', alpha=0.15, label=r'ITSM Prediction Horizon')
+plt.axvline(x=1.08, color='black', linestyle=':', alpha=0.5)
+plt.axvline(x=3.14, color='black', linestyle=':', alpha=0.5)
 
-    # V8.06 Falsifiability Boundaries
-    ax.axvspan(A0_BASE_NHZ, PI_HARMONIC_NHZ, color='white', alpha=0.08, 
-               label=r'ITSM Falsifiability Window ($a_0$ to $\pi$)')
-    ax.axvline(A0_BASE_NHZ, color='white', ls=':', alpha=0.4)
-    ax.axvline(PI_HARMONIC_NHZ, color='white', ls=':', alpha=0.4)
+plt.xscale('log'); plt.yscale('log')
+plt.xlim(0.5, 100); plt.ylim(1e-16, 1e-13)
 
-    # Grid and Limits
-    ax.set_xlim(0.5, 100)
-    ax.set_ylim(1e-16, 1e-13)
-    ax.grid(True, which='both', color='#2a2a2a', linestyle=':', alpha=0.6)
+plt.title(r'\textbf{Stochastic Gravitational Wave Background: Strain PSD}', fontsize=16, pad=15)
+plt.xlabel(r'Gravitational Wave Frequency $f$ [nHz]', fontsize=14)
+plt.ylabel(r'Characteristic Strain $h_c(f)$', fontsize=14)
 
-    # Axis Labels
-    ax.set_xlabel(r'Gravitational Wave Frequency $f$ [nHz]')
-    ax.set_ylabel(r'Characteristic Strain $h_c(f)$')
-    
-    # Legend
-    ax.legend(loc='lower left', frameon=True, facecolor='#1a1a1a', edgecolor='#2a2a2a')
+plt.legend(loc='lower left', framealpha=0.9, fontsize=12)
+plt.grid(True, which="major", ls="-", alpha=0.4)
+plt.grid(True, which="minor", ls=":", alpha=0.2)
 
-    # Export
-    os.makedirs('Assets', exist_ok=True)
-    out_path = 'Assets/itsm_nanograv_resonance_v806.png'
-    plt.savefig(out_path)
-    print(f"High-Fidelity Matrix saved to: {out_path}")
-    plt.show()
-
-# ---------------------------------------------------------
-# EXECUTION
-# ---------------------------------------------------------
-if __name__ == "__main__":
-    freq_data, lcdm_data, itsm_data = compute_strain_psd()
-    generate_institutional_plot(freq_data, lcdm_data, itsm_data)
+plt.tight_layout()
+plt.savefig('itsm_nanograv_resonance.png', dpi=300)
