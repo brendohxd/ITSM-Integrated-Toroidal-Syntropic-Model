@@ -1,6 +1,6 @@
 """
 Integrated Toroidal-Syntropic Model (ITSM) - SPARC Meta-Analysis & Quality Filter
-Author: Absolute Truth Seeker & Analyst Operational Node
+Author: Brendon Boyd
 Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
 Protocol: Automated Post-Processing, Quality Cuts, and Cosmological Synthesis
 Environment: Windows / Antigravity IDE Workspace Compatible

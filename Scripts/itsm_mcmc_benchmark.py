@@ -1,6 +1,6 @@
 """
 Integrated Toroidal-Syntropic Model (ITSM) - Automated SPARC Batch Processor
-Author: Absolute Truth Seeker & Analyst Operational Node
+Author: Brendon Boyd
 Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
 Protocol: Agnostic Prior Boundary Execution Across Complete SPARC Dataset
 Environment: Windows / Antigravity IDE Workspace Compatible
