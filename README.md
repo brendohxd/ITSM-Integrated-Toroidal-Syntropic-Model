@@ -1,4 +1,4 @@
-# 🌌 Integrated Toroidal-Syntropic Model (ITSM)
+# 🌌 Integrated Toroidal-Syntropic Model (ITSM) <a href="https://doi.org/10.5281/zenodo.20174582"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20174582.svg" alt="DOI"></a>
 **Relativistic Field Equations, Superfluid Dynamics, and Multi-Scale Falsifiability**
 
 ## 📖 Project Overview
