@@ -17,7 +17,7 @@
 
 
 % Aggressive Global Pathing: Searches current, parents up to 4 levels, and explicit Assets folders
-\graphicspath{{./}{../}{../Assets/}{../Assets/Figures/}{../Assets/Archive/}{../../}{../../../}{../../../../}{../../../Assets/}{../../../../Assets/}}
+\graphicspath{{./}{../}{../Assets/}{../Assets/Figures/}{../Assets/SPARC_Batch_Outputs/}{../Assets/Archive/}{../../}{../../../}{../../../../}{../../../Assets/}{../../../../Assets/}}
 
 % Python Code Formatting for the Appendix
 \lstset{
@@ -207,7 +207,7 @@ An automated batch sweep was executed across 175 distinct galactic systems. Afte
 The ensemble mean value for the inferred local expansion parameter stabilized at $H_0 = 72.49 \pm 0.31 \ \text{km s}^{-1} \text{Mpc}^{-1}$. This result is highly significant for the peer-review matrix. The ITSM engine, operating strictly on independent localized galactic rotation boundaries, independently derives the exact value of the local Cosmic Distance Ladder ($H_0 \approx 73 \ \text{km s}^{-1} \text{Mpc}^{-1}$), providing a geometric resolution to the Hubble Tension without invoking external dark energy metrics. This independent extraction proves that small-scale, non-ad-hoc galactic rotation configurations are fundamentally and directly tethered to the global metric throughput of the universe.
 
 \begin{figure*}[t]
-\includegraphics[width=0.48\textwidth]{ITSM_Rotation_Curve_Expanded.png}
+\includegraphics[width=0.48\textwidth]{NGC5055_Rotation_Curve.png}
 \hfill
 \includegraphics[width=0.48\textwidth]{ITSM_H0_Convergence_Histogram.png}
 \caption{\label{fig:mcmc_synthesis} High-fidelity MCMC diagnostic outputs. (a) Observed orbital velocity curve for flagship system NGC 5055 (black points) contrasted against the Newtonian baryonic baseline (gray dashed line) and the optimized ITSM Plenum Shear fit (crimson line), including the $1\sigma$ probability walker swarm and lower residual variance ($\chi^2_\nu = 0.422$). (b) Global statistical histogram showing the distribution of inferred $H_0$ values across the high-fidelity SPARC sample, demonstrating robust clustering near the local distance ladder benchmark.}
@@ -293,7 +293,11 @@ Standard cosmology assumes isotropic expansion, creating a tension between CMB m
 \end{figure}
 
 \subsection{The Collision Stress Test: The Bullet Cluster}
-The spatial separation of the X-ray emitting gas and the gravitational lensing maps in the Bullet Cluster collision is traditionally interpreted as proof of collisionless dark matter \cite{bullet}. The ITSM resolves this macro-kinetic separation through fluid dynamics. The diffuse gas thermalizes and stalls, losing the velocity required to shear the Superfluid Plenum. The hyper-dense compact galaxies maintain their velocity, generating a concentrated metric displacement---an acoustic/torsional wake. The decoupled lensing maps closely align with the sustained shear stress in the Plenum.
+The spatial separation of the X-ray emitting gas and the gravitational lensing maps in the Bullet Cluster collision is traditionally interpreted as proof of collisionless dark matter \cite{bullet}. To resolve the phase-space decoupling without invoking collisionless dark matter, we must mathematically differentiate the fluidic interaction boundaries between diffuse state plasma and compact stellar masses. The transparency limit of the Plenum Shear Ansatz ($1/\sqrt{X}$) applies strictly to cohesive macroscopic nodes—such as dense stellar cores—where self-gravity severely exceeds the localized shear stress, allowing the node to maintain a uniform kinetic vector $X \gg a_0^2$. These compact objects effectively pierce the vacuum, experiencing negligible deceleration.
+
+Conversely, the diffuse intracluster medium (ICM) does not operate as a cohesive kinematic node. During the initial cluster impact, the plasma undergoes severe baryon-on-baryon ram pressure thermalization. This internal physical collision rapidly dissipates the gas's coherent macroscopic velocity vector, converting kinetic energy into X-ray thermal emissions. 
+
+As the macroscopic velocity of the gas decelerates, its kinetic energy ratio rapidly drops below the kinematic yield boundary ($X \ll a_0^2$). Below this threshold, the fractional Lagrangian modification becomes dominant. The plasma loses the energetic capacity to shear the Superfluid Plenum, forcing an abrupt transition into acoustic lock. The structural phase separation is therefore a sequential mechanical process: internal baryonic ram pressure strips the plasma's cohesive velocity, dropping it below the $a_0$ threshold, at which point the macroscopic vacuum drag engages and stalls the fluid entirely, while the cohesive stellar cores continue uninhibited.
 
 \begin{figure}[!ht]
     \centering
