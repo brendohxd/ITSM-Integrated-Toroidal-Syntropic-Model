@@ -1,7 +1,15 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - Bullet Cluster Phase-Space Decoupling
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 from matplotlib.patches import Patch
+import os
 
 # Publication Formatting
 plt.rcParams.update({
@@ -97,5 +105,8 @@ ax.text(-250, -1500, r"\textbf{Kinetic Decoupling Gap}" + "\n" + r"(Fluid Fricti
         rotation=63, ha='center', bbox=dict(facecolor='white', edgecolor='gray', alpha=0.9))
 
 plt.tight_layout()
-plt.savefig('itsm_bullet_phasespace_publication.png', dpi=300)
-print("Asset generated: itsm_bullet_phasespace_publication.png")
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_bullet_phasespace_publication.png"))
+plt.savefig(out_path, dpi=300)
+print(f"Asset generated: {out_path}")

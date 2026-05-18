@@ -1,6 +1,15 @@
 # ITSM Changelog & Archive History
 
-## Current Version (v8.3 / Publication Release)
+## Current Version (v9.0 / Peer-Review Submission Release)
+- **Superfluid Microphysics:** Formalized the ultra-light scalar field and non-thermal BEC topology.
+- **Hydrodynamic Derivation:** Replaced the 2/3 geometric analogy with explicit Onsager-Feynman and Gross-Pitaevskii vortex mechanics.
+- **PPN Compliance:** Derived Parameterized Post-Newtonian (PPN) metric expansions to explicitly satisfy Cassini constraints.
+- **CMB Acoustic Protection:** Added Thermodynamic Decoupling function $\Xi(z)$ to mathematical proof and visualizations.
+- **Vacuum Quenching Falsifiability:** Established extreme-energy falsifiability metrics for AGN and the Bullet Cluster.
+- **Journal Layout Polish:** Translated the manuscript to the strict two-column `revtex4-2` format (`reprint`) with stacked mathematical equations.
+- **Computational Suite Expansion:** Standardized 11 fully integrated Python simulation engines, routing all generative assets to centralized structural hubs.
+
+## Version 8.3
 - **Mathematical Unification:** Standardized the $g_{eff}$ formula utilizing the canonical Plenum Shear Ansatz across all simulations.
 - **Evidence Upgrade:** Removed hypothetical NGC 1560 data in favor of a robust 175-galaxy global SPARC database validation.
 - **Syntropic Expansion:** Added explicit validation against DESI 2024 BAO measurements demonstrating organic $(1+z)^{-3}$ volumetric decay.

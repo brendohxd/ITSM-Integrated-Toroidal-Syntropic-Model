@@ -1,3 +1,10 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - JADES-GS-z14-0 Timeline Analysis
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -75,5 +82,8 @@ ax.set_ylabel(r"Stellar Mass ($M_{\odot}$)", fontsize=15)
 plt.legend(loc='lower left', fontsize=12, framealpha=0.95, edgecolor='black')
 
 plt.tight_layout()
-plt.savefig('itsm_z14_assembly_publication.png', dpi=300)
-print("Asset generated: itsm_z14_assembly_publication.png")
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_z14_assembly_publication.png"))
+plt.savefig(out_path, dpi=300)
+print(f"Asset generated: {out_path}")

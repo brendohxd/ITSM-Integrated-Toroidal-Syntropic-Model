@@ -1,5 +1,13 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - Covariant Stability (Drag Saturation)
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 plt.rcParams.update({"text.usetex": True, "font.family": "serif", "font.size": 12})
 
@@ -26,4 +34,8 @@ plt.legend(loc='upper right', framealpha=0.9, fontsize=12)
 plt.grid(True, which="both", ls=":", alpha=0.6)
 
 plt.tight_layout()
-plt.savefig('itsm_drag_saturation.png', dpi=300)
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_drag_saturation_publication.png"))
+plt.savefig(out_path, dpi=300)
+print(f"Asset generated: {out_path}")

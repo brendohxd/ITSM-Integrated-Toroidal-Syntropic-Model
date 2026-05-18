@@ -1,5 +1,13 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - NANOGrav Stochastic Toroidal Resonance
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 plt.rcParams.update({"text.usetex": True, "font.family": "serif", "font.size": 12})
 
@@ -38,4 +46,8 @@ plt.grid(True, which="major", ls="-", alpha=0.4)
 plt.grid(True, which="minor", ls=":", alpha=0.2)
 
 plt.tight_layout()
-plt.savefig('itsm_nanograv_resonance.png', dpi=300)
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_nanograv_resonance_publication.png"))
+plt.savefig(out_path, dpi=300)
+print(f"Asset generated: {out_path}")

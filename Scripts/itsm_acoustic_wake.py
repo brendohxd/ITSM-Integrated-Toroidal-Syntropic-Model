@@ -1,8 +1,16 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - Macroscopic Torsional Entrainment
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 from matplotlib.patches import Circle
 from matplotlib.lines import Line2D
+import os
 
 plt.rcParams.update({
     "text.usetex": True,
@@ -89,5 +97,8 @@ ax.set_xlim(-3, 7)
 ax.set_ylim(-4.2, 4.2)
 
 plt.tight_layout()
-plt.savefig('itsm_acoustic_wake_publication.png', dpi=300, bbox_inches='tight', pad_inches=0.1)
-print("Asset generated: itsm_acoustic_wake_publication.png")
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_acoustic_wake_publication.png"))
+plt.savefig(out_path, dpi=300, bbox_inches='tight', pad_inches=0.1)
+print(f"Asset generated: {out_path}")

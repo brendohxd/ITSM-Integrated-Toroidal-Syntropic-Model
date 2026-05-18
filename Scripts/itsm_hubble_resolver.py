@@ -70,5 +70,8 @@ ax.set_title(r'\textbf{Hubble Tension Geometric Resolution}' + '\n' +
 ax.legend(loc='lower right', framealpha=0.95, edgecolor='black', fontsize=12)
 
 plt.tight_layout()
-plt.savefig('itsm_hubble_resolver_publication.png', dpi=300)
-print("Asset generated: itsm_hubble_resolver_publication.png")
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_hubble_resolver_publication.png"))
+plt.savefig(out_path, dpi=300)
+print(f"Asset generated: {out_path}")

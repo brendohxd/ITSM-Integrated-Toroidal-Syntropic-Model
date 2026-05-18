@@ -1,5 +1,13 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - Syntropic Volume Decay (DESI 2024)
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 plt.rcParams.update({"text.usetex": True, "font.family": "serif", "font.size": 14})
 
@@ -24,5 +32,8 @@ plt.legend(loc='upper left', framealpha=0.9, edgecolor='black', fontsize=12)
 plt.grid(True, linestyle=':', alpha=0.6)
 
 plt.tight_layout()
-plt.savefig('itsm_desi_bao_publication.png', dpi=300)
-print("Asset generated: itsm_desi_bao_publication.png")
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_desi_bao_publication.png"))
+plt.savefig(out_path, dpi=300)
+print(f"Asset generated: {out_path}")

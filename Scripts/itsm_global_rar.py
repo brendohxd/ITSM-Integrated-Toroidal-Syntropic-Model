@@ -1,3 +1,10 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - Global SPARC RAR Parser
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
 import pandas as pd
 # pyrefly: ignore [missing-import]
 import numpy as np
@@ -143,5 +150,7 @@ plt.legend(loc='upper left', fontsize=12, framealpha=0.95)
 plt.grid(True, which='both', ls='-', alpha=0.3)
 
 plt.tight_layout()
-plt.savefig('itsm_global_rar_publication.png', dpi=300, bbox_inches='tight')
-print("\nPlot saved as 'itsm_global_rar_publication.png'")
+
+out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_global_rar_publication.png"))
+plt.savefig(out_path, dpi=300, bbox_inches='tight')
+print(f"\nPlot saved to: {out_path}")
