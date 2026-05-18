@@ -2,6 +2,7 @@
 
 ## Current Version (v9.0 / Peer-Review Submission Release)
 - **Superfluid Microphysics:** Formalized the ultra-light scalar field and non-thermal BEC topology.
+- **Manuscript Architecture Refactor:** Reorganized the entire manuscript into a finalized four-section architecture to improve logical flow from foundational theory to empirical validation. This included resolving minor LaTeX compilation errors that arose from the new structure.
 - **Hydrodynamic Derivation:** Replaced the 2/3 geometric analogy with explicit Onsager-Feynman and Gross-Pitaevskii vortex mechanics.
 - **PPN Compliance:** Derived Parameterized Post-Newtonian (PPN) metric expansions to explicitly satisfy Cassini constraints.
 - **CMB Acoustic Protection:** Added Thermodynamic Decoupling function $\Xi(z)$ to mathematical proof and visualizations.
