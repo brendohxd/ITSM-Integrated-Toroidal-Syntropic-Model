@@ -1,3 +1,11 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - Hubble Tension Geometric Resolver
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -48,7 +56,7 @@ ax.plot(theta, h_theta, color='black', lw=3.5,
         label=r'ITSM Anisotropic Projection ($H_0(\theta)$)')
 
 # Annotate the Variance
-ax.text(np.pi/2, 71.5, r"\textbf{Manifold Variance: 8.3\%}", color='black', fontsize=12,
+ax.text(np.pi/2, 71.5, rf"\textbf{{Manifold Variance: {variance_pct:.1f}\%}}", color='black', fontsize=12,
         ha='center', va='center', bbox=dict(facecolor='white', edgecolor='gray', alpha=0.9, boxstyle='round,pad=0.4'))
 
 # Axis Limits and Ticks
