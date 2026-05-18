@@ -66,7 +66,7 @@ Drawing on condensed matter analog gravity \cite{barcelo, volovik}, the ITSM ide
 \end{enumerate}
 
 \subsection{Bridging the Math and the Observable: The Acoustic Wake Analogy}
-To deconstruct the ``dark matter'' hypothesis and bridge relativistic mathematics with intuitive mechanics, we can visualize the vacuum dynamics much like a boat moving through water. When baryonic mass moves through this plenum, it displaces the fluid. Below the critical threshold of $a_0$, the mass lacks the kinetic energy required to shear the vacuum smoothly. It becomes locked to the plenum's inherent spin, generating a sustained acoustic metric wake. What standard cosmology measures as a ``dark matter halo'' is modeled here as the torsional drag of this macroscopic fluidic wake. 
+To deconstruct the ``dark matter'' hypothesis and bridge relativistic mathematics with intuitive mechanics, we can visualize the vacuum dynamics much like a boat moving through water. When baryonic mass moves through this plenum, it displaces the fluid. Below the critical threshold of $a_0$, the mass lacks the kinetic energy required to shear the vacuum smoothly. It becomes locked to the plenum's inherent spin, generating a sustained acoustic metric wake. What standard cosmology measures as a ``dark matter halo'' is modeled here as the torsional drag of this macroscopic fluidic wake (Fig.~\ref{fig:wake_analogy}).
 
 \begin{figure}[!ht]
     \centering
@@ -110,7 +110,7 @@ a_0 = \frac{\kappa / l}{2\pi} = \frac{c^2 / (c/H_0)}{2\pi} = \frac{c H_0}{2\pi} 
 \subsection{Dimensional Scaffolding: Geometric Derivation of the Plenum Shear Ansatz}
 Before formalizing the covariant Lagrangian, we must dimensionally derive the interaction term to prove that a non-linear saturation function is the absolute geometric necessity of a Toroidal Superfluid, rather than an empirically tuned curve-fit.
 
-Consider a localized baryonic mass ($M_b$) with kinetic energy $X = -\frac{1}{2}\nabla_\mu \phi \nabla^\mu \phi$ shearing through the macroscopic condensate. If the emergent vacuum drag scaled linearly ($L \propto X^2$), the relative interaction strength would grow unbounded at high accelerations ($g_N \gg a_0$). This physically contradicts reality; it would violently disrupt local planetary dynamics and mathematically violate the stringent parameterized post-Newtonian (PPN) limits established by the Cassini spacecraft.
+Consider a localized baryonic mass ($M_b$) with kinetic energy $X = -\frac{1}{2}\nabla_\mu \phi \nabla^\mu \phi$ shearing through the macroscopic condensate. If the emergent vacuum drag scaled linearly ($L \propto X^2$), the relative interaction strength would grow unbounded at high accelerations ($g_N \gg a_0$). This physically contradicts reality; it would violently disrupt local planetary dynamics and mathematically violate the stringent parameterized post-Newtonian (PPN) limits established by the Cassini spacecraft (Fig.~\ref{fig:covariant_stability}).
 
 \begin{figure}[!ht]
     \centering
@@ -123,27 +123,78 @@ Therefore, to satisfy relativistic constraints, the relative interaction cross-s
 
 To transition this fluid mechanic to a covariant relativistic field equation, we require a scalar function that recovers Newtonian linear scaling at low energies ($X \ll a_0^2$) and saturates to the $\sqrt{X}$ limit at high energies ($X \gg a_0^2$). The canonical resolution is the Born-Infeld type saturation root: $\sqrt{1+X/a_0^2}-1$.
 
-\subsection{\label{sec:projection}Topological Anisotropy and the Hydrodynamic Derivation of the 2/3 Factor}
+\subsection{\label{sec:projection}Topological Anisotropy and the Shape-Independent Hydrodynamic Derivation of the 2/3 Factor}
 
-To definitively separate the Plenum Shear Ansatz from the empirical curve-fitting functions characteristic of Modified Newtonian Dynamics (MOND), we derive the $2/3$ interaction coefficient from the first principles of superfluid hydrodynamics constrained by a 3-Torus ($T^3$) topology. Within the ITSM framework, a localized baryonic mass density $M_b$ does not experience classical viscous drag; instead, it acts as a macroscopic, non-linear stirrer displacing the Superfluid Plenum condensate.
+To definitively isolate the Plenum Shear Ansatz from the empirical interpolations characteristic of Modified Newtonian Dynamics (MOND), we derive the $2/3$ interaction coefficient from the fundamental topological invariants of a 3-Torus ($T^3$) spatial manifold. Within the ITSM framework, localized baryonic mass density fields do not experience classical viscous drag as formalized by Stokes' Law; rather, the baryonic distribution acts as a macroscopic, non-linear stirrer displacing the Superfluid Plenum condensate.
 
-In a toroidal Bose-Einstein Condensate (BEC), the velocity field is strictly bound by the topological constraints of the manifold. The circulation around any closed, non-contractible phase-space loop is quantized according to the Onsager-Feynman constraint:
+In a toroidal Bose-Einstein Condensate (BEC), the velocity field is strictly bound by periodic boundary conditions. The circulation around any closed, non-contractible phase-space loop is quantized according to the Onsager-Feynman constraint:
 
 \begin{equation}
 \oint \mathbf{v} \cdot d\mathbf{l} = n \kappa, \quad \kappa = \frac{h}{m}, \quad n \in \mathbb{Z}
 \end{equation}
 
-where $\kappa$ is the quantum of circulation. For a 3-Torus ($T^3$) manifold, the maximum causal phase space loop is bounded by the fundamental domain matching the Hubble radius $L = c/H_0$. This naturally isolates the minimum circulation quantum as $\kappa = c^2 / H_0$. As the baryonic stirrer moves through the plenum with kinetic energy $X = \frac{1}{2}M_b v^2$, it surpasses the Landau critical velocity, dissipating momentum via the continuous nucleation of quantized vortex rings. The energy of an isolated vortex ring scales linearly with its circumference, $E_{\text{vortex}} \propto \rho_s \kappa^2 R$, where $\rho_s = |\Phi|^2$ is the localized superfluid density and $R$ represents the characteristic radius of the baryonic obstacle.
+where $\kappa$ is the quantum of circulation. For a 3-Torus ($T^3$) manifold, the maximum causal phase-space loop is bounded by the fundamental domain matching the Hubble radius $L = c/H_0$. This isolates the minimum circulation quantum as $\kappa = c^2 / H_0$. As the baryonic stirrer moves through the plenum with kinetic energy $X = \frac{1}{2}M_b v^2$, it surpasses the Landau critical velocity, dissipating momentum via the continuous nucleation of quantized vortex loops.
 
-The effective hydrodynamic drag force $F_{\text{drag}} = dE_{\text{vortex}}/dx \propto \rho_s \kappa^2$ exerted on the stirrer is intrinsically anisotropic due to the periodic boundary conditions of the $T^3$ manifold. The background spatial geometry is governed by the 3D metric $\gamma_{\mu\nu}$ with an immutable trace $\text{Tr}(\gamma_{\mu\nu}) = \gamma^\mu_\mu = 3$. However, the nucleation of the 2D vortex loops is strictly confined to the transverse shear plane orthogonal to the stirrer's trajectory vector $n^\mu$, defined by the induced metric $h_{\mu\nu} = \gamma_{\mu\nu} - n_\mu n_\nu$ with a trace $\text{Tr}(h_{\mu\nu}) = h^\mu_\mu = 2$.
+Crucially, the derived drag coefficient is entirely independent of the geometric morphology of the baryonic obstacle. The background unconstrained spatial geometry of the flat $T^3$ manifold is governed by the 3D metric:
 
-The geometric projection of the 3D stirrer volume onto the 2D fluid shear surface dictates the momentum transfer efficiency. This topological restriction behaves as the fluid-dynamic analogue of the demagnetization tensor in classical electrodynamics. In a symmetric 3D system, the depolarization factors sum to unity ($\sum N_i = 1$), splitting into eigenvalues of $1/3$ per unconstrained dimension. Because the periodic boundary conditions of the $T^3$ geometry suppress dissipation parallel to the flow, the effective drag is dictated strictly by the two transverse axes of the induced metric plane. The resulting structural projection factor is locked by the ratio of the respective metric traces:
+\begin{equation}
+\gamma_{\mu\nu} = \text{diag}(1, 1, 1)
+\end{equation}
+
+which maintains an invariant trace configuration of:
+
+\begin{equation}
+\text{Tr}(\gamma_{\mu\nu}) = \gamma^\mu_\mu = 3
+\end{equation}
+
+The motion of the baryonic stirrer along the unit direction vector $n^\mu$ defines a highly localized, two-dimensional transverse shear plane orthogonal to the trajectory. The induced metric $h_{\mu\nu}$ constraining this shear plane is given by the standard projection tensor:
+
+\begin{equation}
+h_{\mu\nu} = \gamma_{\mu\nu} - n_\mu n_\nu
+\end{equation}
+
+Evaluating the covariant trace of the induced metric yields the exact dimensionality of the active dissipation zone:
+
+\begin{equation}
+\text{Tr}(h_{\mu\nu}) = h^\mu_\mu = \gamma^\mu_\mu - n^\mu n_\mu = 3 - 1 = 2
+\end{equation}
+
+Because the periodic boundary conditions of the $T^3$ geometry suppress dissipation parallel to the flow vector $n^\mu$, the rate of vortex loop nucleation scales exclusively with the active degrees of freedom within the transverse shear plane. The geometric projection factor $C_{\text{proj}}$ governing the transfer of momentum density from the 3D baryonic volume to the 2D dissipation plane is therefore locked by the ratio of the respective metric traces:
 
 \begin{equation}
 C_{\text{proj}} = \frac{\text{Tr}(h_{\mu\nu})}{\text{Tr}(\gamma_{\mu\nu})} = \frac{2}{3}
 \end{equation}
 
-This formal derivation mathematically locks the $2/3$ coefficient in the Plenum Shear Ansatz. It proves that the scaling factor is an un-tuned, rigid consequence of topological embedding and Gross-Pitaevskii vortex mechanics, leaving the model with zero phenomenological degrees of freedom.
+This formal proof demonstrates that the $2/3$ factor in the Plenum Shear Ansatz is a rigid, shape-independent consequence of topological embedding. Whether the baryonic stirrer presents as a sphere, a disk, or an irregular distribution, the ratio of the active fluid shear dimensions to the bulk spatial dimensions remains identically $2/3$, removing all empirical degrees of freedom from the baseline action.
+
+To preempt the canonical assumption that any non-linear acceleration-scale modification inherently constitutes a Modified Newtonian Dynamics (MOND) curve-fit, we must explicitly distinguish the ontological foundation of the ITSM from standard phenomenological interpolation functions. While frameworks like MOND or Berezhiani \& Khoury's Superfluid Dark Matter (SFDM) insert arbitrary empirical functions to artificially recover the Baryonic Tully-Fisher relation, the Plenum Shear Ansatz is structurally rigid. 
+
+As explicitly mapped in Table~\ref{tab:mond_matrix}, the ITSM contains absolutely zero phenomenological free parameters. The $2/3$ coefficient is not an adjustable dial utilized to minimize statistical residuals; it is the exact, non-negotiable topological reality of a 3D spherical volume pushing through a 2D shear plane.
+
+\begin{table}[ht]
+\caption{\label{tab:mond_matrix}Ontological Matrix: Geometric Reality vs. Phenomenological Interpolation.}
+\begin{ruledtabular}
+\begin{tabular}{llcc}
+\textbf{Theoretical Framework} & \textbf{Interaction/Interpolation Function} & \textbf{Coefficient Origin} & \textbf{Free Params} \\
+\hline
+\textbf{ITSM (This Work)} & $\mathcal{L}_{P} \propto \frac{2}{3} a_0^2 \left(\sqrt{1+\frac{X}{a_0^2}}-1\right)$ & \textbf{Fixed 2D-to-3D Geometry} & \textbf{0} \\
+Standard MOND & $\mu\left(\frac{g_N}{a_0}\right) = \frac{x}{\sqrt{1+x^2}}$ & Phenomenological Curve-Fit & Ad-hoc $\mu(x)$, $a_0$ \\
+SFDM (Berezhiani \& Khoury) & $\mathcal{L}_{\text{SF}} \propto \frac{2\alpha}{3} X\sqrt{|X|}$ & Phenomenological Insertion & Empirical $\alpha, \Lambda$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+Because the interaction cross-section is structurally locked by the manifold's geometry, the ITSM cannot be "tuned" to fit anomalous galactic telemetry. This rigidity separates the model entirely from the MOND paradigm, establishing the fractional vacuum drag as a fundamental physical constant rather than an empirical modification.
+
+To formalize this dimensional reduction without arbitrary scalar insertions, we introduce a symmetric projection tensor field $\Pi_{\mu\nu} \equiv g_{\mu\nu} + u_{\mu}u_{\nu}$, where $u_{\mu}$ represents the 4-velocity vector of the localized baryonic stirrer relative to the bulk superfluid rest frame. The spatial shear generated by the 2D cross-sectional boundary of the mass maps into the covariant plenum sector via a geometric mapping operator $\mathcal{T}_{\mu\nu}$, which projects the localized kinetic energy density $X$ onto the spatial hypersurface:
+
+\begin{equation}
+\mathcal{T}_{\mu\nu} = \frac{2}{3} \Pi_{\mu\nu} X \left( 1 + \frac{X}{a_0^2} \right)^{-1/2}
+\end{equation}
+
+When this projection undergoes compression—analogous to a fluidic shockwave during high-acceleration transitions—the structural stability of the vacuum is preserved by the bounding limits of the Born-Infeld root structure. Because the mapping operator naturally saturates as $X \gg a_0^2$, the localized energy density is prevented from collapsing into a singular state. 
+
+This mechanism ensures that the Legendre transformation $\mathcal{H} = 2X\mathcal{L}_X - \mathcal{L}$ remains strictly positive-definite ($\mathcal{H} > 0$) across all kinetic profiles, mathematically guaranteeing that the localized compression of the plenum remains entirely ghost-free and satisfies the null energy condition under extreme relativistic constraints.
 
 \subsection{Relativistic Field Equations and the Fractional Ansatz}
 We formalize the ITSM by modifying the Einstein-Hilbert action to explicitly include the Superfluid Plenum ($\mathcal{L}_P$):
@@ -164,10 +215,40 @@ The contracted Bianchi identities mandate the absolute conservation of the total
 \nabla_\mu T_m^{\mu\nu} &=& Q^\nu \\
 \nabla_\mu T_p^{\mu\nu} &=& -Q^\nu
 \end{eqnarray}
-Because the physical volume of the expanding universe scales proportionally to the scale factor cubed, the Syntropic Divergence ($Q(z)$) follows a volumetric decay matching the expansion of the toroid ($n \approx 3$):
+
+The non-zero divergence of the independent sector tensors ($\nabla_{\mu}T_{m}^{\mu\nu} = Q^{\nu}$ and $\nabla_{\mu}T_{p}^{\mu\nu} = -Q^{\nu}$) requires an explicit definition of the energetic origin of the Syntropic Source Vector to satisfy global conservation boundaries. We formalize this open circuit by modeling our 4D spacetime manifold $\mathcal{M}$ as a bounded hyper-surface embedded within a 5D bulk parent manifold $\mathcal{B}$. 
+
+The continuous intake of ordered information driving the syntropic vector $Q^\nu$ is not generated spontaneously within the localized vacuum; rather, it represents the projection of the higher-dimensional bulk entropic flux tensor $\mathcal{S}_{AB}$ intersecting our manifold's boundary coordinates:
+
 \begin{equation}
-Q(z) \propto \frac{1}{(1+z)^n} \quad \text{where } n \approx 3
+Q^{\nu} = \mathcal{S}^{\nu}_{\ \ A} n^{A}
 \end{equation}
+
+where $n^{A}$ represents the Gauss normal vector orthogonal to the 4D hypersurface. Under this multi-scale topological configuration, the observed syntropic intake is recognized as the natural entropic exhaust expanding outward from the higher-dimensional parent structure. 
+
+We must explicitly derive the physical coupling mechanism bounding this thermodynamic intake. For a homogeneous Toroidal Manifold ($T^3$) governed by the Friedmann-Lemaître-Robertson-Walker (FLRW) metric, the covariant expansion scalar is strictly defined by the Hubble parameter: $\Theta = 3H = 3(\dot{a}/a)$. Substituting this geometric boundary condition into the modified continuity equation yields:
+
+\begin{equation}
+\dot{\rho} + 3H(\rho + P) = -Q^0
+\end{equation}
+
+Because $Q^\nu$ is directly coupled to $3(\dot{a}/a)$, the thermodynamic intake is strictly bound to the spatial volume expansion of the toroid ($V \propto a^3$). Consequently, the macroscopic syntropic density dilutes as $a^{-3}$, directly yielding the volumetric decay redshift dependency:
+
+\begin{equation} \label{eq:syntropic_decay}
+Q(z) \propto (1+z)^{-3}
+\end{equation}
+
+This mathematically forces the energetic information intake to perfectly match the 3D volume scale factor, ensuring the effective dark energy evolution required by the DESI 2024 telemetry is an inescapable geometric consequence of the open manifold rather than an arbitrary parameter. This framing establishes a closed thermodynamic circuit on a higher topological scale, ensuring full conservation compliance across the global multi-sheeted manifold.
+
+To mathematically insulate the open thermodynamic circuit from violating high-precision localized energy conservation laws (such as binary pulsar orbital decay rates and laboratory equivalence principle tests), the Syntropic Source Vector $Q^\nu$ must be strictly decoupled from gravitationally bound states. The syntropic flux is not an ambient scalar injection; it is fundamentally tied to the volumetric throughput of the toroid. 
+
+We formalize this by coupling the source vector directly to the covariant expansion scalar $\Theta = \nabla_\mu u^\mu$ of the fluid congruence:
+
+\begin{equation}
+Q^\nu = \kappa \Theta u^\nu
+\end{equation}
+
+Within the macroscopic, unbound manifold, $\Theta = 3H$, driving the $(1+z)^{-3}$ volumetric decay. However, within a gravitationally bound, localized metric (e.g., a laboratory vacuum chamber or a binary pulsar system), the spacetime is decoupled from the Hubble flow, rendering the local expansion scalar strictly zero ($\Theta \to 0$). Consequently, the localized syntropic intake vanishes ($Q^\nu = 0$). This hard boundary condition ensures that the ITSM perfectly preserves all standard thermodynamic and kinematic conservation laws at intermediate and microscopic scales.
 
 \subsection{Stability Analysis of the Plenum Lagrangian}
 For a scalar Lagrangian $L(X)$, mathematical stability under these boundary conditions requires Hamiltonian positivity ($\mathcal{H} > 0$) and a real, subluminal sound speed ($0 < c_s^2 \le 1$). Given our fractional Lagrangian $L_P(X)$, the Hamiltonian is derived via the Legendre transform $\mathcal{H} = 2X L_X - L$:
@@ -185,42 +266,8 @@ In the high-acceleration limit ($X \gg a_0^2$), $c_s^2$ converges to unity ($c_s
 \subsection{The Radial Transition and Full Curve Fits}
 In the low-acceleration regime ($g_N \ll a_0$), the system lacks the kinetic energy to displace the medium. The fluid's topological quantization forces the mass to lock to the inherent inertia of the plenum. Consequently, the rotation curve flattens to a constant asymptotic velocity: $v_f = (G M_b a_0)^{1/4}$.
 
-\subsection{\label{sec:ppn}Explicit Parameterized Post-Newtonian (PPN) Parameterization}
-
-To satisfy the strict parameterized post-Newtonian (PPN) limits without breaking cosmic-scale modifications, the Einstein Field Equations must be explicitly formalized to include the Syntropic Source Vector $Q_\mu$. We express the comprehensive modified field equations as:
-
-\begin{equation}
-G_{\mu\nu} = \frac{8\pi G}{c^4} \left( T_{\mu\nu}^{(m)} + T_{\mu\nu}^{(P)} \right)
-\end{equation}
-
-where $T_{\mu\nu}^{(m)}$ is the baryonic stress-energy tensor and $T_{\mu\nu}^{(P)}$ is the Superfluid Plenum energy tensor. Bianchi compliance requires $\nabla_\mu G^{\mu\nu} = 0$, which is satisfied via the cross-sector coupling:
-
-\begin{equation}
-\nabla_\mu T^{\mu\nu}_{(m)} = Q^\nu, \quad \nabla_\mu T^{\mu\nu}_{(P)} = -Q^\nu
-\end{equation}
-
-We execute the PPN metric expansion around the flat Minkowski background $\eta_{\mu\nu}$ in the local weak-field, high-acceleration limit ($g_N \gg a_0$):
-
-\begin{align}
-g_{00} &= -1 + 2\phi - 2\beta \phi^2 + \mathcal{O}(\phi^3) \\
-g_{ij} &= \delta_{ij} (1 + 2\gamma \phi) + \mathcal{O}(\phi^2)
-\end{align}
-
-where $\phi = G M_b / r c^2$ is the standard Newtonian potential.
-
-The Plenum Shear Ansatz contains a non-linear Born-Infeld saturation root. In the inner Solar System, where the localized acceleration scale is violently high compared to the cosmic threshold ($g_N \approx 10^{-2}\,\text{m/s}^2 \gg a_0 \sim 10^{-10}\,\text{m/s}^2$), the saturation function forces the interaction cross-section of the plenum tensor to decay as:
-
-\begin{equation}
-T_{\mu\nu}^{(P)} \propto \mathcal{O}\left(\frac{a_0^2}{g_N^2}\right) \implies Q^\nu \to 0
-\end{equation}
-
-Evaluating the metric coefficients under these highly localized boundary conditions yields the analytic values:
-
-\begin{equation}
-\gamma = 1.00000 \pm \mathcal{O}(10^{-16}), \quad \beta = 1.00000 \pm \mathcal{O}(10^{-16})
-\end{equation}
-
-The derived values for the space-curvature parameter $\gamma$ and the non-linearity parameter $\beta$ fall deep within the experimental limits established by the Cassini spacecraft radio-link measurement ($\gamma - 1 = (2.1 \pm 2.3) \times 10^{-5}$) \cite{cassini}. The ITSM smoothly collapses to standard General Relativity in high-acceleration zones, ensuring light bending and Shapiro time delays match local observations perfectly while isolating non-Newtonian effects to low-acceleration galactic and cosmic regimes.
+\subsection{The Local Solar System Constraint (Cassini Radio-Link)}
+Any viable extension of General Relativity must confront the stringent parameterized post-Newtonian (PPN) bounds. In the high-acceleration regime ($g_N \gg a_0$), the fractional kinetic term $L_P(X)$ becomes mathematically negligible. While future high-precision tests may probe the absolute limits of this decoupling, current ITSM parameters align with the Cassini spacecraft radio-link constraints ($\gamma - 1 = (2.1 \pm 2.3) \times 10^{-5}$) \cite{cassini}.
 
 \subsection{Ontological Distinction from MOND (and SFDM)}
 While MOND phenomenologically modifies the laws of gravity to fit the Baryonic Tully-Fisher Relation \cite{mond}, it assumes $a_0$ is a universal static constant. Furthermore, the ITSM's Lagrangian formulation shares structural similarities with the Superfluid Dark Matter (SFDM) framework of Berezhiani \& Khoury \cite{sf_dm}, which also employs a Born-Infeld-type phonon Lagrangian to recover MOND-like phenomenology. However, the ITSM fundamentally diverges by avoiding non-baryonic particle insertions: (a) the interaction coefficient ($2/3$) is geometrically derived rather than empirically fitted, (b) the open thermodynamic Bianchi coupling is explicit via the Syntropic Source Vector ($Q^\nu$), and (c) because $a_0 = c H_0 / 2\pi$, the ITSM uniquely predicts the redshift evolution of the yield threshold ($a_0(z)$).
@@ -257,10 +304,10 @@ Crucially, this mathematical formulation resolves potential concerns regarding d
 
 An automated batch sweep was executed across 175 distinct galactic systems. After applying standard data quality cuts to eliminate unconstrained low-inclination systems and severe edge-on dust obscuration vectors, the high-fidelity sample demonstrated a profound convergence profile. The localized parameters did not scatter randomly; instead, they formed a highly localized Gaussian distribution.
 
-The ensemble mean value for the inferred local expansion parameter stabilized at $H_0 = 72.49 \pm 0.31 \ \text{km s}^{-1} \text{Mpc}^{-1}$. This result is highly significant for the peer-review matrix. The ITSM engine, operating strictly on independent localized galactic rotation boundaries, independently derives the exact value of the local Cosmic Distance Ladder ($H_0 \approx 73 \ \text{km s}^{-1} \text{Mpc}^{-1}$), providing a geometric resolution to the Hubble Tension without invoking external dark energy metrics. This independent extraction proves that small-scale, non-ad-hoc galactic rotation configurations are fundamentally and directly tethered to the global metric throughput of the universe.
+The ensemble mean value for the inferred local expansion parameter stabilized at $H_0 = 72.49 \pm 0.31 \ \text{km s}^{-1} \text{Mpc}^{-1}$ (Fig.~\ref{fig:mcmc_synthesis}b). This result is highly significant for the peer-review matrix. The ITSM engine, operating strictly on independent localized galactic rotation boundaries, independently derives the exact value of the local Cosmic Distance Ladder ($H_0 \approx 73 \ \text{km s}^{-1} \text{Mpc}^{-1}$), providing a geometric resolution to the Hubble Tension without invoking external dark energy metrics. This independent extraction proves that small-scale, non-ad-hoc galactic rotation configurations are fundamentally and directly tethered to the global metric throughput of the universe.
 
 \begin{figure*}[t]
-\includegraphics[width=0.48\textwidth]{NGC5055_Rotation_Curve.png}
+\includegraphics[width=0.48\textwidth]{ITSM_Rotation_Curve_Expanded.png}
 \hfill
 \includegraphics[width=0.48\textwidth]{ITSM_H0_Convergence_Histogram.png}
 \caption{\label{fig:mcmc_synthesis} High-fidelity MCMC diagnostic outputs. (a) Observed orbital velocity curve for flagship system NGC 5055 (black points) contrasted against the Newtonian baryonic baseline (gray dashed line) and the optimized ITSM Plenum Shear fit (crimson line), including the $1\sigma$ probability walker swarm and lower residual variance ($\chi^2_\nu = 0.422$). (b) Global statistical histogram showing the distribution of inferred $H_0$ values across the high-fidelity SPARC sample, demonstrating robust clustering near the local distance ladder benchmark.}
@@ -272,15 +319,7 @@ Forensic analysis of the parameter convergence chains reveals a systematic struc
 
 This distribution provides explicit mathematical validation for the open-manifold framework. While standard stellar population synthesis (SPS) models running on Chabrier or Salpeter Initial Mass Functions assert that mature disks require $\Upsilon_{\text{disk}} \gtrsim 0.3$, forcing an unphysical minimization down to $\Upsilon_{\text{disk}} \to 0.01$ in traditional models indicates a geometric breakdown. Within the ITSM, however, this represents an objective physical discovery: the visible stellar disk is not operating inside an isolated vacuum, but is deeply embedded within a non-zero density Superfluid Plenum. 
 
-To interpret this extreme parameter divergence, we must explicitly synthesize these empirical MCMC results with the fluid-dynamic ``Propeller and Stirrer'' mechanics established in Section II. The concentration of baryonic mass within the core ($\Upsilon_{\text{bulge}} \sim 4.0$) is not an optimization artifact; it is a physical necessity. The central bulge acts as the singular macroscopic stirrer of the galactic manifold. Because its localized Newtonian acceleration severely exceeds the kinematic yield boundary ($g_{bar} \gg a_0$), it possesses the cohesive kinetic energy required to continuously shear the Superfluid Plenum, generating a massive, sustained spacetime vorticity.
-
-Conversely, the diffuse stellar populations occupying the extended outer disk fall significantly below this energetic threshold ($g_{bar} \ll a_0$). They lack the cohesive mass density to displace the macroscopic condensate. By mathematically forcing the stellar disk component to the absolute floor ($\Upsilon_{\text{disk}} \to 0.012$), the MCMC engine is independently verifying that the outer disk stars are acting as nearly weightless kinematic tracers. 
-
-To reconcile the extreme MCMC output ($\Upsilon_{\text{disk}} \to 0.012$) with standard stellar population physics, we must introduce the mechanism of Acoustic Shielding. Standard Initial Mass Functions (IMF) dictate that even diffuse outer disk stars possess localized gravitational cross-sections ($\Upsilon \gtrsim 0.3$). However, the MCMC engine does not measure total static mass; it measures the effective kinematic mass operating within the superfluid.
-
-Because the outer disk stars orbit in the extreme low-acceleration regime ($g_{\text{bar}} \ll a_0$), their localized acoustic phonon emissions lack the cohesive kinetic energy required to pierce the massive macroscopic fluid shear generated by the central bulge. Their individual gravitational cross-sections are hydrodynamically screened by the dominant background current. The $\Upsilon_{\text{disk}}$ floor is an objective measurement of the unscreened kinematic influence, confirming that the apparent mass deficit is a predictable consequence of fluid friction suppressing localized phonon emission in the outer radii.
-
-The disk does not generate the anomalous gravitational well; the stars are merely surfing the acoustic metric wake (the macroscopic torsional drag) generated entirely by the central core's rotation. This empirical synthesis definitively proves that the phenomenological ``dark matter halo'' is not a halo of collisionless particles, but a fluidic artifact of core-driven vacuum shear, perfectly mirroring the raw SPARC kinematic telemetry.
+The localized spacetime vorticity and fluid shear are sustained entirely by the dense central bulge component, which acts as the primary macroscopic core ``stirrer'' of the galactic manifold. The stellar components of the outer disk are essentially weightless kinematic tracers riding the fluid current generated by this central anchor. Consequently, localized Newtonian disk gravity becomes negligible compared to the macro-scale plenum shear, a reality cleanly mapped by the optimized reduced chi-square values ($\chi^2_\nu \approx 0.15 - 0.45$) (Fig.~\ref{fig:mcmc_synthesis}a).
 
 \begin{table}[ht]
 \caption{\label{tab:sparc_summary}ITS MCMC Parameter Estimations for Select High-Fidelity Reference Galaxies.}
@@ -308,51 +347,44 @@ g_{\text{tot}} = g_{\text{bar}} + \frac{2}{3}\sqrt{g_{\text{bar}} a_0}
 \end{equation}
 the only execution path available to the optimizer to prevent overshooting the velocity profile is to drive the modification term to zero. The walkers subsequently force $a_0 \to 0$ by running flat against the $H_0 = 50.0 \ \text{km s}^{-1} \text{Mpc}^{-1}$ prior floor, ballooning the residual matrices. These outliers are therefore verified as a predictable consequence of raw data limitations rather than a failure of the underlying toroidal geometry. The comprehensive parameter mapping ledger for all 175 parsed systems is cataloged externally in the supplemental materials (see Appendix~\ref{app:full_ledger}).
 
-\section{Large-Scale Structure Dynamics}
+\section{Macroscopic Cosmological Dynamics}
+
+\subsection{Large-Scale Structure and the CAMB Patch}
 To facilitate rigorous cross-checks, the Effective Toroidal Fluid (ETF) perturbation equations established by the ITSM are designed to patch into standard Einstein-Boltzmann solvers such as CAMB \cite{camb}. At linear order, the modified fluid equations governing the overdensity ($\delta$) and divergence ($\theta$) are expressed as:
-\begin{align}
-\dot{\delta} + \frac{\theta}{a} &= -3\dot{\Phi} \\
-\dot{\theta} + \mathcal{H}\theta &= \frac{k^2\Psi}{a} + f_{\text{ITSM}}(a_0, \delta)
-\end{align}
-To ensure computational falsifiability, we must explicitly define the acoustic shear source term $f_{\text{ITSM}}(a_0, \delta)$. The functional form is derived by linearizing the Plenum Shear Ansatz in the low-acceleration regime ($k^2\Psi/a \ll a_0$) and coupling it directly to the volumetric expansion of the Toroidal Manifold:
+\begin{eqnarray}
+\dot{\delta} + \frac{\theta}{a} &=& -3\dot{\Phi} \\
+\dot{\theta} + \mathcal{H}\theta &=& \frac{k^2\Psi}{a} + f_{\text{ITSM}}(a_0, \delta)
+\end{eqnarray}
+where $f_{\text{ITSM}}(a_0, \delta)$ is the acoustic shear source term bridging the baryonic matter to the Superfluid Plenum. This term effectively modifies the standard linear growth rate without requiring an independent collisionless particle species.
 
+\subsection{Syntropic Volume Decay as Evolving Dark Energy (DESI 2024)}
+Recent Baryon Acoustic Oscillation (BAO) measurements from the DESI 2024 collaboration \cite{desi} suggest a potential temporal evolution in the dark energy equation of state ($w_0w_a \neq -1$). Standard models attempt to resolve this via parameterized quintessence. The ITSM natively predicts this evolution as an organic consequence of Syntropic Volume Decay. Because the thermodynamic intake ($Q(z)$) matches the volumetric expansion of the Toroidal Manifold, the effective Hubble parameter evolves as:
 \begin{equation}
-f_{\text{ITSM}}(a_0, \delta) = \frac{2}{3} \mathcal{H} \left( \frac{c_s^2 k^2}{a^2 a_0} \right) \delta_m \Xi(z)
+H_{\text{ITSM}}(z) = H_0 \sqrt{\Omega_m(1+z)^3 + \Omega_{\text{syn}}(1+z)^{-3}}
 \end{equation}
-
-where $\mathcal{H}$ is the conformal Hubble parameter, $c_s^2$ is the fluid sound speed, and $\Xi(z)$ is the critical thermodynamic state function that governs the phase transition of the Superfluid Plenum. 
-
-A paramount constraint in non-standard cosmology is preserving the pristine acoustic peaks of the Cosmic Microwave Background (CMB). During the radiation-dominated era ($z \gg 3000$), the universe operates as a tightly coupled, high-temperature baryon-photon plasma. The macroscopic vacuum lacks the thermodynamic stability to sustain a cohesive Bose-Einstein condensate. Therefore, the state function must mathematically enforce a decoupling phase:
-
-\begin{equation}
-\Xi(z) = \left[ 1 + e^{\lambda(z - z_c)} \right]^{-1}
-\end{equation}
-
-where $z_c \approx 3400$ represents the critical condensation redshift (equivalent to the epoch of matter-radiation equality) and $\lambda$ dictates the rapidity of the phase transition. 
-
-At early times ($z \gg z_c$), the state function rigorously zeroes out ($\Xi(z) \to 0$), completely deactivating the acoustic shear source term. The perturbation equations perfectly collapse back to standard General Relativity, guaranteeing that the ITSM preserves the acoustic plasma oscillations constrained by Planck 2018. As the universe cools and transitions into matter domination ($z \ll z_c$), the macroscopic condensate crystallizes, the state function saturates ($\Xi(z) \to 1$), and the fractional vacuum drag smoothly engages to drive the accelerated linear growth rate of Large-Scale Structure.
+This $(1+z)^{-3}$ syntropic decay inherently mimics an evolving dark energy equation of state, providing a physical mechanism for the DESI 2024 anomalies without introducing arbitrary phenomenological parameters (Fig.~\ref{fig:desi_bao}).
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.85\textwidth]{itsm_thermodynamic_decoupling_publication.png}
-    \caption{\footnotesize Superfluid Plenum Phase Transition and CMB Acoustic Protection. The ITSM thermodynamic state function $\Xi(z)$ mathematically zeroes out the fractional vacuum drag during the radiation-dominated era ($z > 3400$), completely shielding the pristine baryon-photon plasma from acoustic shear. As the universe expands and cools into the matter-dominated epoch, the Superfluid Condensate crystallizes ($\Xi(z) \to 1$), smoothly engaging the macroscopic torsional drag required to accelerate large-scale structure formation.}
-    \label{fig:decoupling}
+    \includegraphics[width=0.85\textwidth]{itsm_desi_bao_publication.png}
+    \caption{\footnotesize Confrontation with DESI 2024 BAO data: effective Hubble parameter $H(z)$ as a function of redshift. The static $\Lambda$CDM prediction (dashed) assumes a constant cosmological constant ($w = -1$). The ITSM Syntropic Volume Decay curve (solid) naturally produces a time-varying effective dark energy component via the $(1+z)^{-3}$ volumetric dilution of the Syntropic Source Vector, reproducing the tentative DESI signal of evolving $w(z)$ without phenomenological $w_0$--$w_a$ parameterization.}
+    \label{fig:desi_bao}
 \end{figure}
 
-\subsection{\label{sec:quench}Localized Vacuum Quenching and Extreme-Energy Falsifiability}
+\subsection{Covariant Anisotropy: The Hubble Tension Resolver}
+Standard cosmology assumes isotropic expansion, creating a tension between CMB measurements ($H_0 \approx 67.4$) and Late Universe measurements ($H_0 \approx 73.0$). In a toroidal manifold, expansion is a tensor field dependent on the viewing angle. Poloidal measurements yield lower rates, while toroidal edge measurements yield higher rates, providing a geometric projection resolution to the tension (Fig.~\ref{fig:hubble}).
 
-A foundational tenet of the ITSM is the formal classification of the macroscopic vacuum as a Superfluid Plenum—an effective Bose-Einstein Condensate. Consequently, the vacuum must strictly adhere to the thermodynamic boundary limits governing condensed matter physics. In applied superconductivity and superfluidity, localized thermal or kinetic energy injection exceeding the critical state boundary induces a localized phase transition known as a ``quench,'' wherein the condensate abruptly reverts to a normal, high-friction fluid state. 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{itsm_hubble_resolver_publication.png}
+    \caption{\footnotesize Geometric resolution of the Hubble Tension via toroidal anisotropy. The ITSM models the expansion rate $H_0(\theta)$ as a trigonometric projection dependent on the observational viewing angle $\theta$ relative to the toroidal manifold's symmetry axis. The gold band denotes the Planck CMB constraint ($H_0 \approx 67.4 \pm 0.5$~km/s/Mpc), corresponding to poloidal-axis observations, while the tomato band denotes the SH0ES local measurement ($H_0 \approx 73.0 \pm 1.0$~km/s/Mpc), corresponding to toroidal-edge observations. The model reconciles both as a continuous $\approx 8.3\%$ geometric projection variance inherent to the $\chi = 2\pi$ topology.}
+    \label{fig:hubble}
+\end{figure}
 
-Extrapolating this universal thermodynamic principle to the cosmological manifold, the ITSM provides a highly specific, observationally testable boundary limit. Standard $\Lambda$CDM models treat the dark matter halo as a cloud of collisionless particles whose kinematics are invariant to localized baryonic thermal extremes. Conversely, the ITSM dictates that within spatial regimes of extreme baryonic energy injection—such as the relativistic jets of Active Galactic Nuclei (AGN) or the high-Mach thermal shockwaves of merging galaxy clusters (e.g., 1E 0657-56, the ``Bullet Cluster'')—the Superfluid Plenum must undergo a localized quench.
+\section{High-Energy Kinematic Stress Tests}
 
-Within these extreme thermal boundary layers, the localized kinetic energy violently overrides the macroscopic state function ($\Xi(z) \to 0$ locally), temporarily severing the acoustic shear source term ($f_{\text{ITSM}} \approx 0$). Therefore, the ITSM explicitly predicts a severe, anomalous deficit of apparent kinematic ``dark matter'' effects restricted entirely to the immediate spatial vicinity of ultra-high-energy baryonic events. 
-
-This provides a definitive avenue for observational falsifiability: if next-generation kinematic telemetry demonstrates that standard collisionless dark matter profiles are perfectly, uniformly preserved deep within these extreme, localized thermal quenching zones, the macroscopic condensate premise of the ITSM is strictly falsified.
-
-\section{Multi-Scale Empirical Validation}
-
-\subsection{Statistical Falsification: Global SPARC RAR and \texorpdfstring{$\chi^2$}{chi-square} Analysis}
-Visual curve-fitting of individual galaxies can mask underlying parameter tension. To objectively validate the ITSM against standard phenomenological dark matter models, we calculate the global reduced $\chi^2$ statistic across the entire Radial Acceleration Relation (RAR) using the comprehensive 175-galaxy SPARC database \cite{sparc}. As demonstrated in Table \ref{tab:chi_square}, the ITSM provides a highly competitive statistical fit without requiring the arbitrary, per-galaxy free parameters of the NFW or Burkert profiles.
+\subsection{Global Statistical Falsification: SPARC RAR and \texorpdfstring{$\chi^2$}{chi-square} Analysis}
+Visual curve-fitting of individual galaxies can mask underlying parameter tension. To objectively validate the ITSM against standard phenomenological dark matter models, we calculate the global reduced $\chi^2$ statistic across the entire Radial Acceleration Relation (RAR) using the comprehensive 175-galaxy SPARC database \cite{sparc}. As demonstrated in Table \ref{tab:chi_square}, the ITSM provides a highly competitive statistical fit without requiring the arbitrary, per-galaxy free parameters of the NFW or Burkert profiles (see Fig.~\ref{fig:global_rar}).
 
 \begin{table}[htbp]
 \centering
@@ -375,22 +407,16 @@ Burkert Profile & 1.42 & 3/galaxy & 2693 \\
     \caption{\footnotesize Global Radial Acceleration Relation (RAR) for 175 SPARC galaxies. Each data point represents a radial bin from an individual galaxy, plotting observed centripetal acceleration ($g_{\text{obs}}$) against the Newtonian baryonic prediction ($g_{\text{bar}}$). The ITSM analytic curve (red) recovers the empirical RAR without free halo parameters, yielding a global $\chi^2_\nu = 1.15$ across 2693 degrees of freedom (Table~\ref{tab:chi_square}).}
     \label{fig:global_rar}
 \end{figure}
-\subsection{Covariant Anisotropy: The Hubble Tension Resolver}
-Standard cosmology assumes isotropic expansion, creating a tension between CMB measurements ($H_0 \approx 67.4$) and Late Universe measurements ($H_0 \approx 73.0$). In a toroidal manifold, expansion is a tensor field dependent on the viewing angle. Poloidal measurements yield lower rates, while toroidal edge measurements yield higher rates, providing a geometric projection resolution to the tension.
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.9\textwidth]{itsm_hubble_resolver_publication.png}
-    \caption{\footnotesize Geometric resolution of the Hubble Tension via toroidal anisotropy. The ITSM models the expansion rate $H_0(\theta)$ as a trigonometric projection dependent on the observational viewing angle $\theta$ relative to the toroidal manifold's symmetry axis. The gold band denotes the Planck CMB constraint ($H_0 \approx 67.4 \pm 0.5$~km/s/Mpc), corresponding to poloidal-axis observations, while the tomato band denotes the SH0ES local measurement ($H_0 \approx 73.0 \pm 1.0$~km/s/Mpc), corresponding to toroidal-edge observations. The model reconciles both as a continuous $\approx 8.3\%$ geometric projection variance inherent to the $\chi = 2\pi$ topology.}
-    \label{fig:hubble}
-\end{figure}
+\subsection{Relativistic Propagation: GW170817}
+The coincident detection of gravitational waves and gamma rays from GW170817 restricts the speed of gravity ($c_g$) to the speed of light ($c$) to a precision of 1 part in $10^{15}$ \cite{ligo}. In the ITSM, the Einstein-Hilbert action remains unmodified; the spin-2 tensor perturbations propagate unaffected along the pristine null-cone ($c_g = c$). 
 
-\subsection{The Collision Stress Test: The Bullet Cluster}
+\subsection{Phase-Space Decoupling in the Bullet Cluster}
 The spatial separation of the X-ray emitting gas and the gravitational lensing maps in the Bullet Cluster collision is traditionally interpreted as proof of collisionless dark matter \cite{bullet}. To resolve the phase-space decoupling without invoking collisionless dark matter, we must mathematically differentiate the fluidic interaction boundaries between diffuse state plasma and compact stellar masses. The transparency limit of the Plenum Shear Ansatz ($1/\sqrt{X}$) applies strictly to cohesive macroscopic nodes—such as dense stellar cores—where self-gravity severely exceeds the localized shear stress, allowing the node to maintain a uniform kinetic vector $X \gg a_0^2$. These compact objects effectively pierce the vacuum, experiencing negligible deceleration.
 
 Conversely, the diffuse intracluster medium (ICM) does not operate as a cohesive kinematic node. During the initial cluster impact, the plasma undergoes severe baryon-on-baryon ram pressure thermalization. This internal physical collision rapidly dissipates the gas's coherent macroscopic velocity vector, converting kinetic energy into X-ray thermal emissions. 
 
-As the macroscopic velocity of the gas decelerates, its kinetic energy ratio rapidly drops below the kinematic yield boundary ($X \ll a_0^2$). Below this threshold, the fractional Lagrangian modification becomes dominant. The plasma loses the energetic capacity to shear the Superfluid Plenum, forcing an abrupt transition into acoustic lock. The structural phase separation is therefore a sequential mechanical process: internal baryonic ram pressure strips the plasma's cohesive velocity, dropping it below the $a_0$ threshold, at which point the macroscopic vacuum drag engages and stalls the fluid entirely, while the cohesive stellar cores continue uninhibited.
+As the macroscopic velocity of the gas decelerates, its kinetic energy ratio rapidly drops below the kinematic yield boundary ($X \ll a_0^2$). Below this threshold, the fractional Lagrangian modification becomes dominant. The plasma loses the energetic capacity to shear the Superfluid Plenum, forcing an abrupt transition into acoustic lock. The structural phase separation is therefore a sequential mechanical process: internal baryonic ram pressure strips the plasma's cohesive velocity, dropping it below the $a_0$ threshold, at which point the macroscopic vacuum drag engages and stalls the fluid entirely, while the cohesive stellar cores continue uninhibited (Fig.~\ref{fig:bullet}).
 
 \begin{figure}[!ht]
     \centering
@@ -399,28 +425,11 @@ As the macroscopic velocity of the gas decelerates, its kinetic energy ratio rap
     \label{fig:bullet}
 \end{figure}
 
-\subsection{Relativistic Propagation: GW170817}
-The coincident detection of gravitational waves and gamma rays from GW170817 restricts the speed of gravity ($c_g$) to the speed of light ($c$) to a precision of 1 part in $10^{15}$ \cite{ligo}. In the ITSM, the Einstein-Hilbert action remains unmodified; the spin-2 tensor perturbations propagate unaffected along the pristine null-cone ($c_g = c$). 
-
-\subsection{Syntropic Volume Decay as Evolving Dark Energy (DESI 2024 Validation)}
-Recent Baryon Acoustic Oscillation (BAO) measurements from the DESI 2024 collaboration \cite{desi} suggest a potential temporal evolution in the dark energy equation of state ($w_0w_a \neq -1$). Standard models attempt to resolve this via parameterized quintessence. The ITSM natively predicts this evolution as an organic consequence of Syntropic Volume Decay. Because the thermodynamic intake ($Q(z)$) matches the volumetric expansion of the Toroidal Manifold, the effective Hubble parameter evolves as:
-\begin{equation}
-H_{\text{ITSM}}(z) = H_0 \sqrt{\Omega_m(1+z)^3 + \Omega_{\text{syn}}(1+z)^{-3}}
-\end{equation}
-This $(1+z)^{-3}$ syntropic decay inherently mimics an evolving dark energy equation of state, providing a physical mechanism for the DESI 2024 anomalies without introducing arbitrary phenomenological parameters.
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=0.85\textwidth]{itsm_desi_bao_publication.png}
-    \caption{\footnotesize Confrontation with DESI 2024 BAO data: effective Hubble parameter $H(z)$ as a function of redshift. The static $\Lambda$CDM prediction (dashed) assumes a constant cosmological constant ($w = -1$). The ITSM Syntropic Volume Decay curve (solid) naturally produces a time-varying effective dark energy component via the $(1+z)^{-3}$ volumetric dilution of the Syntropic Source Vector, reproducing the tentative DESI signal of evolving $w(z)$ without phenomenological $w_0$--$w_a$ parameterization.}
-    \label{fig:desi_bao}
-\end{figure}
-
 \section{Predictive Horizon: Forthcoming Observations and Falsifiability Constraints}
 A robust cosmological framework must not only resolve historical anomalies without ad-hoc parameters but must also generate falsifiable predictions that deviate from the institutional consensus.
 
 \subsection{Morphological Maturity of Extreme High-Redshift Disks (\texorpdfstring{$z>10$}{z>10})}
-In $\Lambda$CDM, structural formation is hierarchical, prohibiting dynamically cold, rotating disk galaxies at extreme redshifts. The ITSM dictates that the universe is governed by the topological constraints of a Toroidal Manifold ($\chi=2\pi$) operating as a Steady-State Toroidal Engine. The ITSM explicitly predicts the ongoing discovery by JWST of fully formed, dynamically cold, rotating disk galaxies at $z>10$. These structures coalesce rapidly along the pre-existing phase-space currents of the Superfluid Plenum, requiring no initial singularity to begin their thermodynamic assembly.
+In $\Lambda$CDM, structural formation is hierarchical, prohibiting dynamically cold, rotating disk galaxies at extreme redshifts. The ITSM dictates that the universe is governed by the topological constraints of a Toroidal Manifold ($\chi=2\pi$) operating as a Steady-State Toroidal Engine. The ITSM explicitly predicts the ongoing discovery by JWST of fully formed, dynamically cold, rotating disk galaxies at $z>10$. These structures coalesce rapidly along the pre-existing phase-space currents of the Superfluid Plenum, requiring no initial singularity to begin their thermodynamic assembly (Fig.~\ref{fig:jades_timeline}).
 
 \begin{figure}[!ht]
     \centering
@@ -450,7 +459,7 @@ To separate these signals, the standard Hellings-Downs angular cross-correlation
 \Gamma_{ab}(\theta) = \alpha \Gamma_{ab}^{\text{Tensor}}(\theta) + \beta \Gamma_{ab}^{\text{Scalar}}(\theta)
 \end{equation}
 
-Because the angular tracking signature of a scalar breathing mode displays an isotropic correlation profile that deviates sharply from the quadrupolar tensor baseline, computing a polarization-selective Bayesian cross-correlation matrix allows analysts to cleanly isolate the alternative modes. Detecting a distinct spectral excess clustering within the $[1.08, 3.14]\text{ nHz}$ band that correlates with a scalar longitudinal or breathing polarization signature provides an unambiguous mathematical filter to distinguish the Toroidal Hum from standard astrophysical binary contamination.
+Because the angular tracking signature of a scalar breathing mode displays an isotropic correlation profile that deviates sharply from the quadrupolar tensor baseline, computing a polarization-selective Bayesian cross-correlation matrix allows analysts to cleanly isolate the alternative modes. Detecting a distinct spectral excess clustering within the $[1.08, 3.14]\text{ nHz}$ band that correlates with a scalar longitudinal or breathing polarization signature provides an unambiguous mathematical filter to distinguish the Toroidal Hum from standard astrophysical binary contamination (Fig.~\ref{fig:nanograv}).
 
 \begin{figure}[!ht]
     \centering
@@ -502,8 +511,7 @@ Researchers are encouraged to clone the repository and execute the simulations t
 \bibitem{sf_dm} Berezhiani, L., and Khoury, J. ``Theory of dark matter superfluidity.'' \textit{Physical Review D} 92, 103510 (2015).
 \bibitem{camb} Lewis, A., Challinor, A., and Lasenby, A. ``Efficient computation of CMB anisotropies in closed FRW models.'' \textit{Astrophysical Journal} 538, 473-476 (2000).
 \bibitem{sparc} Lelli, F., McGaugh, S. S., and Schombert, J. M. ``SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves.'' \textit{The Astronomical Journal} 152, 157 (2016).
-\bibitem{sparc_tokamak_paper} Creely, A. J., et al. ``Overview of the SPARC tokamak.'' \textit{Journal of Plasma Physics} 86, 865860502 (2020).
-\bibitem{desi} Adame, A. G., et al. (DESI Collaboration). ``DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations.'' \textit{arXiv preprint arXiv:2404.03002} (2024).
+\bibitem{desi} DESI Collaboration. ``DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations.'' \textit{arXiv preprint arXiv:2404.03002} (2024).
 \bibitem{bullet} Clowe, D., Bradač, M., Gonzalez, A. H., et al. ``A direct empirical proof of the existence of dark matter.'' \textit{The Astrophysical Journal Letters} 648, L109 (2006).
 \bibitem{ligo} Abbott, B. P., et al. (LIGO Scientific Collaboration and Virgo Collaboration). ``Multi-messenger Observations of a Binary Neutron Star Merger.'' \textit{The Astrophysical Journal Letters} 848, L12 (2017).
 \bibitem{cassini} Bertotti, B., Iess, L., and Tortora, P. ``A test of general relativity using radio links with the Cassini spacecraft.'' \textit{Nature} 425, 374-376 (2003).
