@@ -182,7 +182,7 @@ def analyze_batch_data():
 
     # 5. Generate Publication-Ready Verification Visual Histogram
     if not df_hi_fi.empty:
-        plt.figure(figsize=(9, 6))
+        plt.figure(figsize=(9, 7))
         
         # Plot distribution configuration
         counts, bins, patches = plt.hist(df_hi_fi['H0'].values, bins=15, color='navy', 
