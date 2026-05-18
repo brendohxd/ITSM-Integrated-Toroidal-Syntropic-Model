@@ -55,7 +55,7 @@ def analyze_batch_data():
         return
 
     print(f"==================================================")
-    print(f" ATS META-ANALYSIS: Processing {len(chain_files)} Galactic Records")
+    print(f" ITSM META-ANALYSIS: Processing {len(chain_files)} Galactic Records")
     print(f"==================================================")
 
     master_records = []
@@ -150,7 +150,7 @@ def analyze_batch_data():
             
         f.write("\\end{longtable}\n")
 
-    print(f"ATS META-ANALYSIS: LaTeX ledger written to: {tex_out_path}")
+    print(f"ITSM META-ANALYSIS: LaTeX ledger written to: {tex_out_path}")
 
     # 4. Global Cosmological Syntropic Evaluation Output
     print("\n" + "="*50)
@@ -210,8 +210,8 @@ def analyze_batch_data():
         fig_out_path = os.path.join(figures_dir, "ITSM_H0_Convergence_Histogram.png")
         plt.savefig(fig_out_path, dpi=300)
         plt.close()
-        print(f"ATS META-ANALYSIS: Analytical summary table written to: {csv_out_path}")
-        print(f"ATS META-ANALYSIS: High-fidelity histogram plotted at: {fig_out_path}")
+        print(f"ITSM META-ANALYSIS: Analytical summary table written to: {csv_out_path}")
+        print(f"ITSM META-ANALYSIS: High-fidelity histogram plotted at: {fig_out_path}")
 
 if __name__ == "__main__":
     analyze_batch_data()

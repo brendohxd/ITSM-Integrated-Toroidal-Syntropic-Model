@@ -6,7 +6,11 @@
 - **PPN Compliance:** Derived Parameterized Post-Newtonian (PPN) metric expansions to explicitly satisfy Cassini constraints.
 - **CMB Acoustic Protection:** Added Thermodynamic Decoupling function $\Xi(z)$ to mathematical proof and visualizations.
 - **Vacuum Quenching Falsifiability:** Established extreme-energy falsifiability metrics for AGN and the Bullet Cluster.
-- **Journal Layout Polish:** Translated the manuscript to the strict two-column `revtex4-2` format (`reprint`) with stacked mathematical equations.
+- **4D Thermodynamic Decoupling:** Excised the 5D embedding manifold in favor of strict 4D conformal decoupling ($\Theta = 3H$) for the Syntropic Source Vector.
+- **Predictive Shield Matrix:** Added comprehensive matrices explicitly contrasting ITSM's predictive capacity and zero-free-parameter ontology against MOND and $\Lambda$CDM.
+- **Topological Clarifications:** Added explicit physical intuition for the macroscopic "Stirrer" and the $2/3$ dimensional projection factor via the demagnetization tensor analogy.
+- **Journal Layout Polish:** Reverted to a clean single-column `revtex4-2` layout with manual `\parbox` table formatting to ensure optimal readability and margin compliance.
+- **Academic Standardization:** Scrubbed all non-academic terminology (e.g., ATS references) from scripts and documentation, and replaced legacy `eqnarray` with modern `align` environments.
 - **Computational Suite Expansion:** Standardized 11 fully integrated Python simulation engines, routing all generative assets to centralized structural hubs.
 
 ## Version 8.3

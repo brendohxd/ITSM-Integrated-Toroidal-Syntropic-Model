@@ -1,3 +1,10 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - Archive Validation Script
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

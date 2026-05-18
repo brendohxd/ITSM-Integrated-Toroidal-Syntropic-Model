@@ -311,7 +311,7 @@ As explicitly mapped in Table~\ref{tab:mond_matrix}, the ITSM contains absolutel
 \begin{ruledtabular}
 \begin{tabular}{llcc}
 \textbf{Theoretical Framework} & \textbf{Interaction/Interpolation Function} & \textbf{Coefficient Origin} & \textbf{Free Params} \\
-\midrule
+\hline
 \textbf{ITSM (This Work)} & $\mathcal{L}_{P} \propto \frac{2}{3} a_0^2 \left(\sqrt{1+\frac{X}{a_0^2}}-1\right)$ & \textbf{Fixed 2D-to-3D Geometry} & \textbf{0} \\
 Standard MOND & $\mu\left(\frac{g_N}{a_0}\right) = \frac{x}{\sqrt{1+x^2}}$ & Phenomenological Curve-Fit & Ad-hoc $\mu(x)$, $a_0$ \\
 SFDM (Berezhiani \& Khoury) & $\mathcal{L}_{\text{SF}} \propto \frac{2\alpha}{3} X\sqrt{|X|}$ & Phenomenological Insertion & Empirical $\alpha, \Lambda$ \\
@@ -486,10 +486,10 @@ the only execution path available to the optimizer to prevent overshooting the v
 
 \subsection{Large-Scale Structure and the CAMB Patch}
 To facilitate rigorous cross-checks, the Effective Toroidal Fluid (ETF) perturbation equations established by the ITSM are designed to patch into standard Einstein-Boltzmann solvers such as CAMB \cite{camb}. At linear order, the modified fluid equations governing the overdensity ($\delta$) and divergence ($\theta$) are expressed as:
-\begin{eqnarray}
-\dot{\delta} + \frac{\theta}{a} &=& -3\dot{\Phi} \\
-\dot{\theta} + \mathcal{H}\theta &=& \frac{k^2\Psi}{a} + f_{\text{ITSM}}(a_0, \delta)
-\end{eqnarray}
+\begin{align}
+\dot{\delta} + \frac{\theta}{a} &= -3\dot{\Phi} \\
+\dot{\theta} + \mathcal{H}\theta &= \frac{k^2\Psi}{a} + f_{\text{ITSM}}(a_0, \delta)
+\end{align}
 where $f_{\text{ITSM}}(a_0, \delta)$ is the acoustic shear source term bridging the baryonic matter to the Superfluid Plenum. This term effectively modifies the standard linear growth rate without requiring an independent collisionless particle species.
 
 \subsection{Syntropic Volume Decay as Evolving Dark Energy (DESI 2024)}

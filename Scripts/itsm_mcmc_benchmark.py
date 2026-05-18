@@ -88,7 +88,7 @@ def log_probability(theta, R, Vobs, errV, Vgas, Vdisk, Vbulge):
 
 def run_mcmc_pipeline(file_path, output_dir):
     galaxy_name = os.path.basename(file_path).replace("_rotmod.dat", "")
-    print(f"\nATS_MCMC ENGINE: Processing Target [ {galaxy_name} ]")
+    print(f"\nITSM_MCMC ENGINE: Processing Target [ {galaxy_name} ]")
     
     df = load_sparc_galaxy(file_path)
     
@@ -216,7 +216,7 @@ if __name__ == "__main__":
         print(f"CRITICAL ERROR: No SPARC telemetry profiles (*_rotmod.dat) isolated at: {data_dir}")
     else:
         print(f"==================================================")
-        print(f" ATS_BATCH ENGINE ACTIVE: {len(galaxy_files)} Targets Loaded")
+        print(f" ITSM_BATCH ENGINE ACTIVE: {len(galaxy_files)} Targets Loaded")
         print(f" Destination Folder: {output_dir}")
         print(f"==================================================")
         
@@ -230,5 +230,5 @@ if __name__ == "__main__":
                 continue
                 
         print(f"\n==================================================")
-        print(f" ATS_BATCH ENGINE: Processing Complete. Pipeline Terminated.")
+        print(f" ITSM_BATCH ENGINE: Processing Complete. Pipeline Terminated.")
         print(f"==================================================")

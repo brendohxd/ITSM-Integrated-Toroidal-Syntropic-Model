@@ -61,7 +61,7 @@ def plot_decoupling():
     plt.savefig(fig_out_path, dpi=300)
     plt.close()
     
-    print(f"ATS SIMULATION COMPLETE: Thermodynamic Decoupling figure plotted at:\n -> {fig_out_path}")
+    print(f"ITSM SIMULATION COMPLETE: Thermodynamic Decoupling figure plotted at:\n -> {fig_out_path}")
 
 if __name__ == "__main__":
     plot_decoupling()
