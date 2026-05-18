@@ -12,7 +12,7 @@ Instead of adding unobservable phantom particles or arbitrary phenomenological v
 * 💥 **The Bullet Cluster:** Demonstrates that the kinematic separation between X-ray gas and gravitational lensing maps is a fluid-dynamic consequence of the Plenum's acoustic wake, not collisionless dark matter.
 * 📉 **Evolving Dark Energy (DESI 2024):** Derives an evolving effective dark energy equation of state natively from syntropic volume decay, mirroring the latest DESI BAO data without arbitrary $w_0$--$w_a$ parameterization.
 
-The framework culminates in a strict, falsifiable prediction for **NANOGrav** Pulsar Timing Arrays: the stochastic background is not a chaotic power law, but a localized toroidal acoustic resonance tightly constrained between $1.08$ and $3.14$ nHz.
+The framework culminates in strict, falsifiable predictions, including **Localized Vacuum Quenching** (predicting the temporary restoration of Newtonian mechanics within extreme thermal boundary layers like AGN and the Bullet Cluster) and a toroidal acoustic resonance for **NANOGrav** Pulsar Timing Arrays tightly constrained between $1.08$ and $3.14$ nHz.
 
 ## 🚀 Key Mathematical Foundations
 1. **The Yield Threshold ($a_0$)**
@@ -23,6 +23,9 @@ An unconditionally stable, ghost-free modification to the Einstein-Hilbert actio
 
 3. **Syntropic Volume Decay**
 An open thermodynamic circuit matching the physical volume expansion, organically producing a $(1+z)^{-3}$ volumetric decay that mimics an evolving dark energy equation of state.
+
+4. **Superfluid Microphysics & PPN Compliance**
+Formalizes the vacuum as an ultra-light scalar field constrained by Onsager-Feynman circulation quantization, proving the $2/3$ geometric projection ratio from first principles and explicitly recovering standard General Relativity in high-acceleration zones to satisfy Cassini radio-link constraints.
 
 ## 📊 Empirical Validations (Computational Appendix)
 This repository contains the Python source code used to execute the primary empirical "crush tests" for the ITSM.

@@ -34,7 +34,6 @@
 }
 
 \begin{document}
-\raggedbottom
 
 \title{The Integrated Toroidal-Syntropic Model: Relativistic Field Equations, Topology-Induced Superfluid Dynamics, and Multi-Scale Falsifiability}
 
@@ -186,8 +185,42 @@ In the high-acceleration limit ($X \gg a_0^2$), $c_s^2$ converges to unity ($c_s
 \subsection{The Radial Transition and Full Curve Fits}
 In the low-acceleration regime ($g_N \ll a_0$), the system lacks the kinetic energy to displace the medium. The fluid's topological quantization forces the mass to lock to the inherent inertia of the plenum. Consequently, the rotation curve flattens to a constant asymptotic velocity: $v_f = (G M_b a_0)^{1/4}$.
 
-\subsection{The Local Solar System Constraint (Cassini Radio-Link)}
-Any viable extension of General Relativity must confront the stringent parameterized post-Newtonian (PPN) bounds. In the high-acceleration regime ($g_N \gg a_0$), the fractional kinetic term $L_P(X)$ becomes mathematically negligible. While future high-precision tests may probe the absolute limits of this decoupling, current ITSM parameters align with the Cassini spacecraft radio-link constraints ($\gamma - 1 = (2.1 \pm 2.3) \times 10^{-5}$) \cite{cassini}.
+\subsection{\label{sec:ppn}Explicit Parameterized Post-Newtonian (PPN) Parameterization}
+
+To satisfy the strict parameterized post-Newtonian (PPN) limits without breaking cosmic-scale modifications, the Einstein Field Equations must be explicitly formalized to include the Syntropic Source Vector $Q_\mu$. We express the comprehensive modified field equations as:
+
+\begin{equation}
+G_{\mu\nu} = \frac{8\pi G}{c^4} \left( T_{\mu\nu}^{(m)} + T_{\mu\nu}^{(P)} \right)
+\end{equation}
+
+where $T_{\mu\nu}^{(m)}$ is the baryonic stress-energy tensor and $T_{\mu\nu}^{(P)}$ is the Superfluid Plenum energy tensor. Bianchi compliance requires $\nabla_\mu G^{\mu\nu} = 0$, which is satisfied via the cross-sector coupling:
+
+\begin{equation}
+\nabla_\mu T^{\mu\nu}_{(m)} = Q^\nu, \quad \nabla_\mu T^{\mu\nu}_{(P)} = -Q^\nu
+\end{equation}
+
+We execute the PPN metric expansion around the flat Minkowski background $\eta_{\mu\nu}$ in the local weak-field, high-acceleration limit ($g_N \gg a_0$):
+
+\begin{align}
+g_{00} &= -1 + 2\phi - 2\beta \phi^2 + \mathcal{O}(\phi^3) \\
+g_{ij} &= \delta_{ij} (1 + 2\gamma \phi) + \mathcal{O}(\phi^2)
+\end{align}
+
+where $\phi = G M_b / r c^2$ is the standard Newtonian potential.
+
+The Plenum Shear Ansatz contains a non-linear Born-Infeld saturation root. In the inner Solar System, where the localized acceleration scale is violently high compared to the cosmic threshold ($g_N \approx 10^{-2}\,\text{m/s}^2 \gg a_0 \sim 10^{-10}\,\text{m/s}^2$), the saturation function forces the interaction cross-section of the plenum tensor to decay as:
+
+\begin{equation}
+T_{\mu\nu}^{(P)} \propto \mathcal{O}\left(\frac{a_0^2}{g_N^2}\right) \implies Q^\nu \to 0
+\end{equation}
+
+Evaluating the metric coefficients under these highly localized boundary conditions yields the analytic values:
+
+\begin{equation}
+\gamma = 1.00000 \pm \mathcal{O}(10^{-16}), \quad \beta = 1.00000 \pm \mathcal{O}(10^{-16})
+\end{equation}
+
+The derived values for the space-curvature parameter $\gamma$ and the non-linearity parameter $\beta$ fall deep within the experimental limits established by the Cassini spacecraft radio-link measurement ($\gamma - 1 = (2.1 \pm 2.3) \times 10^{-5}$) \cite{cassini}. The ITSM smoothly collapses to standard General Relativity in high-acceleration zones, ensuring light bending and Shapiro time delays match local observations perfectly while isolating non-Newtonian effects to low-acceleration galactic and cosmic regimes.
 
 \subsection{Ontological Distinction from MOND (and SFDM)}
 While MOND phenomenologically modifies the laws of gravity to fit the Baryonic Tully-Fisher Relation \cite{mond}, it assumes $a_0$ is a universal static constant. Furthermore, the ITSM's Lagrangian formulation shares structural similarities with the Superfluid Dark Matter (SFDM) framework of Berezhiani \& Khoury \cite{sf_dm}, which also employs a Born-Infeld-type phonon Lagrangian to recover MOND-like phenomenology. However, the ITSM fundamentally diverges by avoiding non-baryonic particle insertions: (a) the interaction coefficient ($2/3$) is geometrically derived rather than empirically fitted, (b) the open thermodynamic Bianchi coupling is explicit via the Syntropic Source Vector ($Q^\nu$), and (c) because $a_0 = c H_0 / 2\pi$, the ITSM uniquely predicts the redshift evolution of the yield threshold ($a_0(z)$).
@@ -277,10 +310,10 @@ the only execution path available to the optimizer to prevent overshooting the v
 
 \section{Large-Scale Structure Dynamics}
 To facilitate rigorous cross-checks, the Effective Toroidal Fluid (ETF) perturbation equations established by the ITSM are designed to patch into standard Einstein-Boltzmann solvers such as CAMB \cite{camb}. At linear order, the modified fluid equations governing the overdensity ($\delta$) and divergence ($\theta$) are expressed as:
-\begin{eqnarray}
-\dot{\delta} + \frac{\theta}{a} &=& -3\dot{\Phi} \\
-\dot{\theta} + \mathcal{H}\theta &=& \frac{k^2\Psi}{a} + f_{\text{ITSM}}(a_0, \delta)
-\end{eqnarray}
+\begin{align}
+\dot{\delta} + \frac{\theta}{a} &= -3\dot{\Phi} \\
+\dot{\theta} + \mathcal{H}\theta &= \frac{k^2\Psi}{a} + f_{\text{ITSM}}(a_0, \delta)
+\end{align}
 To ensure computational falsifiability, we must explicitly define the acoustic shear source term $f_{\text{ITSM}}(a_0, \delta)$. The functional form is derived by linearizing the Plenum Shear Ansatz in the low-acceleration regime ($k^2\Psi/a \ll a_0$) and coupling it directly to the volumetric expansion of the Toroidal Manifold:
 
 \begin{equation}
@@ -342,7 +375,6 @@ Burkert Profile & 1.42 & 3/galaxy & 2693 \\
     \caption{\footnotesize Global Radial Acceleration Relation (RAR) for 175 SPARC galaxies. Each data point represents a radial bin from an individual galaxy, plotting observed centripetal acceleration ($g_{\text{obs}}$) against the Newtonian baryonic prediction ($g_{\text{bar}}$). The ITSM analytic curve (red) recovers the empirical RAR without free halo parameters, yielding a global $\chi^2_\nu = 1.15$ across 2693 degrees of freedom (Table~\ref{tab:chi_square}).}
     \label{fig:global_rar}
 \end{figure}
-\clearpage
 \subsection{Covariant Anisotropy: The Hubble Tension Resolver}
 Standard cosmology assumes isotropic expansion, creating a tension between CMB measurements ($H_0 \approx 67.4$) and Late Universe measurements ($H_0 \approx 73.0$). In a toroidal manifold, expansion is a tensor field dependent on the viewing angle. Poloidal measurements yield lower rates, while toroidal edge measurements yield higher rates, providing a geometric projection resolution to the tension.
 
@@ -367,7 +399,6 @@ As the macroscopic velocity of the gas decelerates, its kinetic energy ratio rap
     \label{fig:bullet}
 \end{figure}
 
-\clearpage
 \subsection{Relativistic Propagation: GW170817}
 The coincident detection of gravitational waves and gamma rays from GW170817 restricts the speed of gravity ($c_g$) to the speed of light ($c$) to a precision of 1 part in $10^{15}$ \cite{ligo}. In the ITSM, the Einstein-Hilbert action remains unmodified; the spin-2 tensor perturbations propagate unaffected along the pristine null-cone ($c_g = c$). 
 
@@ -385,7 +416,6 @@ This $(1+z)^{-3}$ syntropic decay inherently mimics an evolving dark energy equa
     \label{fig:desi_bao}
 \end{figure}
 
-\clearpage
 \section{Predictive Horizon: Forthcoming Observations and Falsifiability Constraints}
 A robust cosmological framework must not only resolve historical anomalies without ad-hoc parameters but must also generate falsifiable predictions that deviate from the institutional consensus.
 
@@ -445,9 +475,7 @@ The Integrated Toroidal-Syntropic Model (ITSM) proposes an open thermodynamic ma
 \section*{Acknowledgments and AI Use Declaration}
 The author acknowledges the use of generative AI strictly as a ``torque wrench'' for the synthesis of formatting, grammatical structuring, and parsing of mathematical derivations into publication-ready LaTeX, in accordance with journal ethics guidelines. This work made use of the SPARC database (Lelli, McGaugh \& Schombert 2016).
 
-\newpage
-\appendix
-\section{Computational Falsifiability Appendix}
+\section*{Code and Data Availability}
 The Integrated Toroidal-Syntropic Model (ITSM) is supported by a comprehensive suite of executable Python simulations. These scripts validate the model's kinematic, fluid-dynamic, and resonant predictions against modern cosmological datasets, including the SPARC galactic rotation database, DESI 2024 Baryon Acoustic Oscillations, and NANOGrav stochastic gravitational wave background data.
 
 To ensure strict reproducibility and open scientific verification, the complete source code, execution environment specifications, and high-resolution generative outputs are publicly hosted and maintained at the ITSM GitHub Repository:
@@ -458,6 +486,7 @@ To ensure strict reproducibility and open scientific verification, the complete 
 
 Researchers are encouraged to clone the repository and execute the simulations to independently verify the geometric resolutions of the Hubble Tension, the SPARC $\chi^2_\nu$ alignment, and the NANOGrav Lorentzian acoustic resonance threshold.
 
+\appendix*
 \section{\label{app:full_ledger}Comprehensive SPARC MCMC Parameter Ledger}
 \input{appendix_sparc_table.tex}
 
