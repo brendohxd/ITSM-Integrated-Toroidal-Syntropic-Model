@@ -2,6 +2,7 @@
 Integrated Toroidal-Syntropic Model (ITSM) - Archive Validation Script
 Author: Brendon Boyd
 Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Protocol: Global Radial Acceleration Relation (RAR) validation across 175 SPARC galaxies
 Environment: Windows / Antigravity IDE Workspace Compatible
 """
 
