@@ -55,7 +55,7 @@ plt.figure(figsize=(8, 5))
 plt.errorbar(z_centers, n_means, yerr=n_stds, fmt='-o', capsize=5, color='darkblue', label=r'ITSM Running Index $n(z)$')
 plt.xlabel(r'Redshift ($z$)')
 plt.ylabel(r'Syntropic Decay Index ($n$)')
-plt.title(r'\textbf{ITSM: Redshift-Dependent Vacuum Evolution}')
+plt.title('ITSM: Redshift-Dependent Vacuum Evolution', fontsize=16, fontweight='bold', fontname='serif')
 plt.grid(True, linestyle=':', alpha=0.6)
 plt.legend()
 
