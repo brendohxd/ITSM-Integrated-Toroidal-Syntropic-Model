@@ -1,6 +1,12 @@
 # ITSM Changelog & Archive History
 
-## Current Version (v9.0 / Peer-Review Submission Release)
+## Current Version (v9.0.1 / Final Peer-Review Submission Release)
+- **Citation Logic:** Resolved hardcoded bibliography citation chains ([?] placeholders) by normalizing the pdflatex compilation sequence and manual `\bibitem` integration.
+- **Asset Sanitization:** Standardized all plot titles (specifically `itsm_n_evolution.png` and `itsm_desi_bao_empirical_validation.png`) to native Matplotlib `fontweight='bold'` to excise raw LaTeX markup artifacts.
+- **Build Verification:** Verified 24-page `Main.pdf` structural stability; successfully cleared all floating environment float warnings.
+- **Final Validation:** Confirmed manuscript structural integrity and bibliographical resolution for formal external distribution.
+
+## Version 9.0 (Release Candidate 1)
 - **Superfluid Microphysics:** Formalized the ultra-light scalar field and non-thermal BEC topology.
 - **Manuscript Architecture Refactor:** Reorganized the entire manuscript into a finalized four-section architecture to improve logical flow from foundational theory to empirical validation. This included resolving minor LaTeX compilation errors that arose from the new structure.
 - **Hydrodynamic Derivation:** Replaced the 2/3 geometric analogy with explicit Onsager-Feynman and Gross-Pitaevskii vortex mechanics.
