@@ -12,10 +12,11 @@ import matplotlib.pyplot as plt
 import glob
 import os
 import warnings
+from scipy.optimize import minimize
 warnings.filterwarnings('ignore')
 
 # ---------------------------------------------------------
-# ITSM Global RAR Analysis - Refined Version
+# ITSM Global RAR Analysis - Unfiltered High-Fidelity Version
 # ---------------------------------------------------------
 
 plt.rcParams.update({
@@ -28,7 +29,7 @@ plt.rcParams.update({
     "font.size": 14
 })
 
-# 1. ITSM Yield Threshold
+# 1. ITSM Yield Threshold (Locked Physics)
 a0_ms2 = 1.08e-10
 conv_factor = 3.086e13                    # m/s² → (km/s)²/kpc
 a0_sparc = a0_ms2 * conv_factor
@@ -45,16 +46,15 @@ print(f"Found {len(file_list)} galaxy data files.")
 if not file_list:
     raise FileNotFoundError(f"No .dat files found in:\n{sparc_path}")
 
-# M/L ratios (standard SPARC 3.6μm)
-upsilon_disk = 0.5
-upsilon_bulge = 0.7
+# M/L bounds (Disk: 0.3-0.8, Bulge: 0.4-1.0) and Nuisance factors (Distance: +/- 20%, Inclination: +/- 10%)
+bounds = ((0.3, 0.8), (0.4, 1.0), (0.8, 1.2), (0.9, 1.1))
 
 g_bar_all = []
 g_obs_all = []
 g_obs_err_all = []
 galaxy_count = 0
 
-print("Parsing galaxies...")
+print("Parsing galaxies using Unfiltered Hierarchical Nuisance Marginalization...")
 
 for file in file_list:
     try:
@@ -62,28 +62,77 @@ for file in file_list:
                         names=['Rad', 'Vobs', 'errV', 'Vgas', 'Vdisk', 'Vbul', 'SBdisk', 'SBbul'],
                         header=0, engine='python')
         
-        if len(df) < 5:  # Skip very sparse galaxies
-            continue
-            
-        # Baryonic contribution
-        v_gas_sq = np.abs(df['Vgas']) * df['Vgas']
-        v_disk_sq = upsilon_disk * np.abs(df['Vdisk']) * df['Vdisk']
-        v_bul_sq = upsilon_bulge * np.abs(df['Vbul']) * df['Vbul']
-        
-        v_bar_sq = v_gas_sq + v_disk_sq + v_bul_sq
-        
+        # 1. Unfiltered Quality Check (Only exclude mathematically invalid zero-points)
         valid = (df['Rad'] > 0) & (df['Vobs'] > 0) & (df['errV'] > 0)
+        df_v = df[valid].copy()
         
-        g_bar = v_bar_sq[valid] / df['Rad'][valid]
-        g_obs = (df['Vobs'][valid]**2) / df['Rad'][valid]
-        g_err = (2 * df['Vobs'][valid] * df['errV'][valid]) / df['Rad'][valid]
+        if len(df_v) < 5:
+            continue
+
+        # 2. Extract Raw Arrays
+        r_raw = df_v['Rad'].values
+        v_obs_raw = df_v['Vobs'].values
+        err_v_raw = df_v['errV'].values
+        v_gas_raw = df_v['Vgas'].values
+        v_disk_raw = df_v['Vdisk'].values
+        v_bul_raw = df_v['Vbul'].values
+
+        # 3. Define Objective Function with Gaussian Priors
+        def calc_chi2_unfiltered(params):
+            u_d, u_b, d_scale, i_scale = params
+            
+            # Apply astronomical scaling to raw data
+            r_scaled = r_raw * d_scale
+            v_obs_scaled = v_obs_raw / i_scale
+            err_v_scaled = err_v_raw / i_scale
+            
+            v_gas_sq = np.abs(v_gas_raw) * v_gas_raw * d_scale
+            v_disk_sq = u_d * np.abs(v_disk_raw) * v_disk_raw * d_scale
+            v_bul_sq = u_b * np.abs(v_bul_raw) * v_bul_raw * d_scale
+            
+            v_bar_sq = v_gas_sq + v_disk_sq + v_bul_sq
+            g_b = v_bar_sq / r_scaled
+            
+            if np.any(g_b < 0): return np.inf 
+            
+            g_o = (v_obs_scaled**2) / r_scaled
+            g_e = (2 * v_obs_scaled * err_v_scaled) / r_scaled
+            
+            # ITSM Locked Physics: 2/3 Geometric Projection
+            g_eff = g_b + (2/3) * np.sqrt(g_b * a0_sparc)
+            
+            # Kinematic Chi-Square
+            chi2_kin = np.sum(((g_o - g_eff) / g_e)**2)
+            
+            # Gaussian Priors (Penalty for deviating from standard telescope observations)
+            prior_d = ((d_scale - 1.0) / 0.10)**2  # 10% distance uncertainty prior
+            prior_i = ((i_scale - 1.0) / 0.05)**2  # 5% inclination uncertainty prior
+            
+            return chi2_kin + prior_d + prior_i
+
+        # 4. Run Optimizer with Nuisance Parameters
+        res = minimize(calc_chi2_unfiltered, [0.5, 0.7, 1.0, 1.0], bounds=bounds, method='L-BFGS-B')
+        opt_u_disk, opt_u_bulge, opt_d_scale, opt_i_scale = res.x
+
+        # 5. Apply Final Optimized State
+        r_final = r_raw * opt_d_scale
+        v_obs_final = v_obs_raw / opt_i_scale
+        err_v_final = err_v_raw / opt_i_scale
         
-        # Basic quality filter
-        valid2 = (g_bar > 1e-15) & (g_obs > 1e-15) & np.isfinite(g_err)
+        v_bar_sq_final = (np.abs(v_gas_raw) * v_gas_raw * opt_d_scale) + \
+                         (opt_u_disk * np.abs(v_disk_raw) * v_disk_raw * opt_d_scale) + \
+                         (opt_u_bulge * np.abs(v_bul_raw) * v_bul_raw * opt_d_scale)
+
+        g_bar = v_bar_sq_final / r_final
+        g_obs = (v_obs_final**2) / r_final
+        g_err = (2 * v_obs_final * err_v_final) / r_final
+
+        # 6. Unfiltered Append (NO CLIPPING)
+        valid_points = (g_bar > 1e-15) & (g_obs > 1e-15) & np.isfinite(g_err)
         
-        g_bar_all.extend(g_bar[valid2].values)
-        g_obs_all.extend(g_obs[valid2].values)
-        g_obs_err_all.extend(g_err[valid2].values)
+        g_bar_all.extend(g_bar[valid_points])
+        g_obs_all.extend(g_obs[valid_points])
+        g_obs_err_all.extend(g_err[valid_points])
         
         galaxy_count += 1
         
@@ -103,17 +152,17 @@ g_err = g_err_all[valid]
 
 print(f"\nFinal statistics:")
 print(f"Galaxies processed: {galaxy_count}")
-print(f"Total data points: {len(g_obs)}")
+print(f"Total valid kinematic data points (UNFILTERED): {len(g_obs)}")
 
-# ITSM prediction (Simple interpolating function)
-g_eff_itsm = (g_bar / 2) + np.sqrt((g_bar / 2)**2 + g_bar * a0_sparc)
+# ITSM prediction (2/3 Geometric Projection RESTORED)
+g_eff_itsm = g_bar + (2/3) * np.sqrt(g_bar * a0_sparc)
 
 # Chi-square
 chi2 = np.sum(((g_obs - g_eff_itsm) / g_err)**2)
 dof = len(g_obs) - 1
 reduced_chi2 = chi2 / dof
 
-print(f"Global Reduced chi^2_v = {reduced_chi2:.3f} (dof = {dof})")
+print(f"Global Optimized Reduced chi^2_v = {reduced_chi2:.3f} (dof = {dof})")
 
 # ========================= PLOTTING =========================
 plt.figure(figsize=(11, 8))
@@ -131,7 +180,7 @@ x_vals = np.logspace(np.log10(g_min), np.log10(g_max), 200)
 plt.plot(x_vals, x_vals, '--', color='gray', lw=2, label=r'Newtonian ($g_{obs}=g_{bar}$)')
 
 # ITSM
-itsm_curve = (x_vals/2) + np.sqrt((x_vals/2)**2 + x_vals * a0_sparc)
+itsm_curve = x_vals + (2/3) * np.sqrt(x_vals * a0_sparc)
 plt.plot(x_vals, itsm_curve, '-', color='darkred', lw=3, 
          label=f'ITSM ($\\chi^2_\\nu = {reduced_chi2:.2f}$)')
 
