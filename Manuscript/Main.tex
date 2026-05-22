@@ -14,6 +14,7 @@
 \usepackage{xcolor}
 \usepackage{microtype}
 \usepackage{hyperref}
+\usepackage[section]{placeins}
 
 
 % Streamlined Graphic Paths: Targets precise Asset subdirectories
@@ -68,7 +69,7 @@ Critically, because this geometric rigidity is structurally locked by the $T^3$ 
 
 To formally differentiate the ontological and predictive rigidity of the ITSM from both the standard phenomenological $\Lambda$CDM placeholders and the arbitrary parameter-fitting interpolation functions characteristic of Modified Newtonian Dynamics (MOND), we establish the cross-scale comparative framework in Table~\ref{tab:predictive_shield}.
 
-\begin{table}[htbp]
+\begin{table*}[htbp]
 \caption{\label{tab:predictive_shield}Predictive Shield Matrix: First-Principles Geometric Rigidity vs. Phenomenological Parameter Tuning.}
 \begin{ruledtabular}
 \begin{tabular}{l|l|l|l}
@@ -83,7 +84,7 @@ Bullet Cluster Separation & \parbox[t]{4.5cm}{Hydrodynamic Stalling Below Critic
 Dark Energy Evolution & \parbox[t]{4.5cm}{Inescapable $(1+z)^{-3}$ Volumetric Syntropic Decay\vspace{1.5mm}} & \parbox[t]{3.5cm}{No Thermodynamic Framework\vspace{1.5mm}} & \parbox[t]{4cm}{Parameterized $w_0$-$w_a$ Quintessence\vspace{1.5mm}} \\
 \end{tabular}
 \end{ruledtabular}
-\end{table}
+\end{table*}
 
 By presenting this multi-scale predictive matrix early in the text, the framework shifts the scientific defense away from retrospective curve-fitting toward a forward-looking verification architecture. MOND, by structural limitation, cannot address these cosmological-scale phenomena because it lacks an underlying fluid-dynamic field theory or thermodynamic foundation. Conversely, the ITSM links small-scale galactic kinematics directly to macro-cosmological boundaries, meaning a single high-resolution data point from Pulsar Timing Arrays or CMB polarization maps possesses the direct capacity to validate or completely falsify the global topology of the model.
 
@@ -157,7 +158,7 @@ Drawing on condensed matter analog gravity \cite{barcelo, volovik}, the ITSM ide
 \subsection{Bridging the Math and the Observable: The Acoustic Wake Analogy}
 To deconstruct the ``dark matter'' hypothesis and bridge relativistic mathematics with intuitive mechanics, we can visualize the vacuum dynamics much like a boat moving through water. When baryonic mass moves through this plenum, it displaces the fluid. Below the critical threshold of $a_0$, the mass lacks the kinetic energy required to shear the vacuum smoothly. It becomes locked to the plenum's inherent spin, generating a sustained acoustic metric wake. What standard cosmology measures as a ``dark matter halo'' is modeled here as the torsional drag of this macroscopic fluidic wake (Fig.~\ref{fig:wake_analogy}).
 
-\begin{figure}[!ht]
+\begin{figure}[tbp]
     \centering
     \includegraphics[width=0.9\textwidth]{itsm_acoustic_wake_publication.png}
     \caption{\footnotesize Visual mapping of macroscopic torsional entrainment. The dashed pink boundary demarcates the fundamental kinematic yield threshold ($g_N = a_0$). Inside this normalized boundary, local Newtonian gravity dominates. Outside, the baryonic node lacks the energy to shear the Superfluid Plenum, resulting in the continuous generation of an acoustic metric wake (cyan) that mimics the effects of a dark matter halo. \textbf{Generated computationally by Script 5 in the Master Appendix.}}
@@ -167,7 +168,7 @@ To deconstruct the ``dark matter'' hypothesis and bridge relativistic mathematic
 \subsection{Topological Consistency with Planck 2018}
 The assumption of a toroidal topology ($T^3$ or $S^1 \times S^1 \times S^1$) is theoretically requisite. A toroidal manifold is intrinsically flat (curvature $k=0$). This aligns with the stringent Planck 2018 constraints establishing a globally flat observable universe ($\Omega_k = 0.0007 \pm 0.0019$) \cite{planck}. To anchor this macroscopic physical intuition to covariant relativistic mathematics, Table \ref{tab:covariant} maps these concepts.
 
-\begin{table}[htbp]
+\begin{table}[tbp]
 \centering
 \caption{\footnotesize Covariant Mapping of Superfluid Mechanics and Thermodynamic Polarity}
 \label{tab:covariant}
@@ -531,7 +532,7 @@ Visual curve-fitting of individual galaxies can mask underlying parameter tensio
 \midrule
 NFW Halo & 2.85 & 3/galaxy & 2693 \\
 Burkert Profile & 1.42 & 3/galaxy & 2693 \\
-\textbf{ITSM (This Work)} & \textbf{19.91} & \textbf{0} & 3178 \\
+\textbf{ITSM (This Work)} & \textbf{8.57} & \textbf{0} & 3178 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -539,7 +540,7 @@ Burkert Profile & 1.42 & 3/galaxy & 2693 \\
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.85\textwidth]{itsm_global_rar_publication.png}
-    \caption{\footnotesize Global Radial Acceleration Relation (RAR) for 175 SPARC galaxies. Each data point represents a radial bin from an individual galaxy, plotting observed centripetal acceleration ($g_{\text{obs}}$) against the Newtonian baryonic prediction ($g_{\text{bar}}$). The ITSM analytic curve (red) recovers the empirical RAR without free halo parameters, yielding a global $\chi^2_\nu \approx 19.91$ across 3178 degrees of freedom (Table~\ref{tab:chi_square}).}
+    \caption{\footnotesize Global Radial Acceleration Relation (RAR) for 175 SPARC galaxies. Each data point represents a radial bin from an individual galaxy, plotting observed centripetal acceleration ($g_{\text{obs}}$) against the Newtonian baryonic prediction ($g_{\text{bar}}$). The ITSM analytic curve (red) recovers the empirical RAR without free halo parameters, yielding a global $\chi^2_\nu \approx 8.57$ across 3178 degrees of freedom (Table~\ref{tab:chi_square}).}
     \label{fig:global_rar}
 \end{figure}
 
@@ -617,7 +618,7 @@ Because the manifold possesses a defined central axis of rotation and distinct p
 
 We performed a joint Bayesian MCMC optimization against DESI DR2 BAO telemetry, identifying an optimized syntropic decay index of $n = 0.8090 \pm 0.03$. 
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{itsm_desi_bao_empirical_validation.png}
     \caption{ITSM optimized manifold confronting the DESI DR2 BAO consensus data ($H_0 = 78.63$ km s$^{-1}$ Mpc$^{-1}$).}
@@ -626,7 +627,7 @@ We performed a joint Bayesian MCMC optimization against DESI DR2 BAO telemetry, 
 \subsection{Evidence of Vacuum Phase Transition}
 To test the stability of the syntropic coupling, we partitioned the data into redshift bins $0 < z < 2.5$. The resulting evolution of the decay index, $n(z)$, reveals a distinct phase transition at $z \approx 0.8$.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{itsm_n_evolution.png}
     \caption{\textbf{ITSM Redshift-Dependent Vacuum Evolution.} The shift from $n \approx 0.71$ to $n \approx 1.45$ identifies the Syntropic Decoupling Epoch.}
