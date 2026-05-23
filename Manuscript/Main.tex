@@ -44,7 +44,7 @@
 \date{May 18, 2026}
 
 \begin{abstract}
-The standard $\Lambda$CDM cosmological model encounters persistent kinematic and thermodynamic tensions when confronting anomalous galactic rotation curves and the rapid structural assembly of high-redshift galaxies ($z > 14$). We introduce the Integrated Toroidal-Syntropic Model (ITSM), a covariant framework that addresses the phenomenological nature of non-baryonic dark matter by defining the vacuum as an active, toroidal superfluid condensate. By modeling the macroscopic universe as an open thermodynamic manifold, we present a closed framework that characterizes apparent dark matter and dark energy dynamics through three invariant geometric variables: Baryonic Mass ($M_b$), the Hubble Flow ($H_0$), and Toroidal Geometry ($\chi = 2\pi$). Through macroscopic circulation quantization, we derive the foundational gravitational yield threshold $a_0 = c H_0 / 2\pi \approx 1.08 \times 10^{-10}\,\text{m/s}^2$. To bridge fluid dynamics to relativistic field equations, we introduce a non-linear fractional Lagrangian that exhibits mathematical stability under these cosmological boundary conditions. Finally, we establish an empirical validation matrix encompassing Cosmic Microwave Background (CMB) acoustic peak preservation, analytic linear growth solutions for Large-Scale Structure (LSS), and statistical $\chi^2$ rotation curve cross-checks against the SPARC database, explicitly bounding predictive falsifiability horizons across forthcoming JWST, DESI, and NANOGrav stochastic gravitational wave background datasets.
+The standard $\Lambda$CDM cosmological model encounters persistent kinematic and thermodynamic tensions when confronting anomalous galactic rotation curves and the rapid structural assembly of high-redshift galaxies ($z > 14$). We introduce the Integrated Toroidal-Syntropic Model (ITSM), a covariant framework that addresses the phenomenological nature of non-baryonic dark matter by defining the vacuum as an active, toroidal superfluid condensate. By modeling the macroscopic universe as an open thermodynamic manifold, we present a closed framework that characterizes apparent dark matter and dark energy dynamics through three invariant framework variables: Baryonic Mass ($M_b$), the Hubble expansion rate ($H_0$), and the toroidal topology constraint ($\chi = 2\pi$). Through macroscopic circulation quantization, we derive the foundational gravitational yield threshold $a_0 = c H_0 / 2\pi \approx 1.08 \times 10^{-10}\,\text{m/s}^2$. To bridge fluid dynamics to relativistic field equations, we introduce a non-linear fractional Lagrangian that exhibits mathematical stability under these cosmological boundary conditions. Finally, we establish an empirical validation matrix encompassing Cosmic Microwave Background (CMB) acoustic peak preservation, analytic linear growth solutions for Large-Scale Structure (LSS), and statistical $\chi^2$ rotation curve cross-checks against the SPARC database, explicitly bounding predictive falsifiability horizons across forthcoming JWST, DESI, and NANOGrav stochastic gravitational wave background datasets.
 \end{abstract}
 
 \maketitle
@@ -157,7 +157,7 @@ To deconstruct the ``dark matter'' hypothesis and bridge relativistic mathematic
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth]{itsm_acoustic_wake_publication.png}
-    \caption{\footnotesize Visual mapping of macroscopic torsional entrainment. The dashed pink boundary demarcates the fundamental kinematic yield threshold ($g_N = a_0$). Inside this normalized boundary, local Newtonian gravity dominates. Outside, the baryonic node lacks the energy to shear the Superfluid Plenum, resulting in the continuous generation of an acoustic metric wake (cyan) that mimics the effects of a dark matter halo. \textbf{Generated computationally by Script 5 in the Master Appendix.}}
+    \caption{\footnotesize Visual mapping of macroscopic torsional entrainment. The dashed pink boundary demarcates the fundamental kinematic yield threshold ($g_N = a_0$). Inside this normalized boundary, local Newtonian gravity dominates. Outside, the baryonic node lacks the energy to shear the Superfluid Plenum, resulting in the continuous generation of an acoustic metric wake (cyan) that mimics the effects of a dark matter halo. Simulation source: \texttt{itsm\_acoustic\_wake.py}, available at the ITSM GitHub repository.}
     \label{fig:wake_analogy}
 \end{figure}
 
@@ -207,7 +207,7 @@ where the self-interaction potential possesses a symmetry-breaking vacuum expect
 \mathcal{V}(\Phi) = \frac{1}{2} m^2 |\Phi|^2 + \frac{1}{4} \lambda |\Phi|^4
 \end{equation}
 
-Here, $m \sim 10^{-22}\,\text{eV}$ represents the ultra-light actinide-scale mass parameter. Decomposing the field into its amplitude and phase components via $\Phi = |\Phi|e^{i\theta}$, the macroscopic fluid velocity field emerges as the normalized gradient of the phase:
+Here, $m \sim 10^{-22}\,\text{eV}$ represents the ultra-light axion-scale mass parameter, consistent with the fuzzy dark matter / ultra-light boson mass range established in the literature \cite{hui_ultralight}. Decomposing the field into its amplitude and phase components via $\Phi = |\Phi|e^{i\theta}$, the macroscopic fluid velocity field emerges as the normalized gradient of the phase:
 
 \begin{equation}
 u^\mu = \frac{\partial^\mu \theta}{\sqrt{-g^{\alpha\beta}\partial_\alpha \theta \partial_\beta \theta}}
@@ -237,7 +237,7 @@ Consider a localized baryonic mass ($M_b$) with kinetic energy $X = -\frac{1}{2}
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{itsm_drag_saturation_publication.png}
-    \caption{\footnotesize Covariant Stability: Macroscopic Vacuum Drag vs. Local Relativistic Constraints. Standard linear modifications grow unbounded, violating local Solar System constraints. The ITSM Plenum Shear Ansatz correctly decays as $1/\sqrt{X}$, rendering the vacuum transparent at high kinetic energies. \textbf{Generated computationally by Script 6 in the Master Appendix.}}
+    \caption{\footnotesize Covariant Stability: Macroscopic Vacuum Drag vs. Local Relativistic Constraints. Standard linear modifications grow unbounded, violating local Solar System constraints. The ITSM Plenum Shear Ansatz correctly decays as $1/\sqrt{X}$, rendering the vacuum transparent at high kinetic energies. Simulation source: \texttt{itsm\_drag\_saturation.py}, available at the ITSM GitHub repository.}
     \label{fig:covariant_stability}
 \end{figure}
 
@@ -252,10 +252,10 @@ To definitively isolate the Plenum Shear Ansatz from the empirical interpolation
 In a toroidal Bose-Einstein Condensate (BEC), the velocity field is strictly bound by the global periodic boundary conditions of the manifold. The circulation around any closed, non-contractible phase-space loop is quantized according to the Onsager-Feynman constraint:
 
 \begin{equation}
-\oint \mathbf{v} \cdot d\mathbf{l} = n \kappa, \quad \kappa = \frac{h}{m}, \quad n \in \mathbb{Z}
+\oint \mathbf{v} \cdot d\mathbf{l} = n \kappa_{\text{OF}}, \quad \kappa_{\text{OF}} = \frac{h}{m}, \quad n \in \mathbb{Z}
 \end{equation}
 
-where $\kappa$ is the quantum of circulation. For a 3-Torus ($T^3$) manifold, the maximum causal phase-space loop is bounded by the fundamental domain matching the Hubble radius $L = c/H_0$. This naturally isolates the minimum cosmological circulation quantum as $\kappa = c^2 / H_0$. As the baryonic stirrer moves through the plenum with kinetic energy $X = \frac{1}{2}M_b v^2$, it surpasses the Landau critical velocity, dissipating momentum via the continuous nucleation of quantized vortex loops whose energy scales with the localized fluid density $\rho_s = |\Phi|^2$.
+where $\kappa_{\text{OF}} = h/m$ is the standard Onsager-Feynman quantum of circulation and $m$ is the condensate boson mass. For a 3-Torus ($T^3$) manifold, the maximum causal phase-space loop is bounded by the fundamental domain matching the Hubble radius $L = c/H_0$. The ITSM cosmological quantization condition sets $\kappa_{\text{OF}} = \kappa_{\text{cosmo}} \equiv c^2 / H_0$, fixing the effective boson mass as $m = h H_0/c^2$. As the baryonic stirrer moves through the plenum with kinetic energy $X = \frac{1}{2}M_b v^2$, it surpasses the Landau critical velocity, dissipating momentum via the continuous nucleation of quantized vortex loops whose energy scales with the localized fluid density $\rho_s = |\Phi|^2$.
 
 Crucially, this derivation is completely independent of the geometric morphology or symmetry of the baryonic obstacle. The background unconstrained spatial geometry of the flat $T^3$ manifold is governed by the three-dimensional spatial metric:
 
@@ -402,6 +402,13 @@ V_f^4 = \frac{4}{9}\,G\,M_b\,a_0
 \end{equation}
 The coefficient $\frac{4}{9} = \left(\frac{2}{3}\right)^2$ is a direct consequence of the geometric projection factor and is not a free parameter. This distinguishes the ITSM prediction from the standard MOND BTFR ($V_f^4 = G\,M_b\,a_0$) by exactly this geometric factor; the amplitude normalisation is fully determined by $a_0 = cH_0/2\pi$ with no empirical tuning.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{itsm_btfr_publication.png}
+    \caption{\footnotesize \textbf{ITSM Baryonic Tully-Fisher Relation: Zero Free-Parameter Prediction.} Asymptotic flat velocity $V_f$ versus baryonic mass $M_b$ for 171 SPARC galaxies. The ITSM prediction (crimson line) $V_f^4 = \frac{4}{9}\,G\,M_b\,a_0$ is drawn with \emph{no} free parameters---the amplitude is set entirely by the geometric yield threshold $a_0 = cH_0/2\pi$ at the toroidal edge value $H_0 = 73.0$~km~s$^{-1}$~Mpc$^{-1}$. The factor $(4/9) = (2/3)^2$ arises from the Plenum Shear Ansatz and is not empirically tuned. The standard MOND BTFR ($V_f^4 = G\,M_b\,a_0$, dashed) is shown for comparison; the ITSM normalization lies $(4/9)$ below it as a geometric consequence. The $1\sigma$ bootstrap envelope (shaded) reflects the systematic spread from a 10\% representative velocity uncertainty across the sample.}
+    \label{fig:btfr}
+\end{figure}
+
 \subsection{The Local Solar System Constraint (Cassini Radio-Link)}
 Any viable extension of General Relativity must confront the stringent parameterized post-Newtonian (PPN) bounds. In the high-acceleration regime ($g_N \gg a_0$), the fractional kinetic term $L_P(X)$ becomes mathematically negligible. While future high-precision tests may probe the absolute limits of this decoupling, current ITSM parameters align with the Cassini spacecraft radio-link constraints ($\gamma - 1 = (2.1 \pm 2.3) \times 10^{-5}$) \cite{cassini}.
 
@@ -446,7 +453,7 @@ The ensemble median of the inferred local expansion parameter converged at $H_0 
 \includegraphics[width=0.48\textwidth]{ITSM_Rotation_Curve_Expanded.png}
 \hfill
 \includegraphics[width=0.48\textwidth]{ITSM_H0_Convergence_Histogram.png}
-\caption{\label{fig:mcmc_synthesis} \footnotesize High-fidelity MCMC diagnostic outputs. (a) Observed orbital velocity curve for flagship system NGC 5055 (black points) contrasted against the Newtonian baryonic baseline (gray dashed line) and the optimized ITSM Plenum Shear fit (crimson line), including the $1\sigma$ probability walker swarm and lower residual variance ($\chi^2_\nu = 0.422$). (b) Global statistical histogram showing the distribution of inferred $H_0$ values across the high-fidelity SPARC sample, demonstrating robust clustering near the local distance ladder benchmark.}
+\caption{\label{fig:mcmc_synthesis} \footnotesize \textbf{Multicore MCMC Diagnostic Outputs (16-core batch engine, 3000 steps $\times$ 32 walkers, 175/175 galaxies).} \textit{(a)} Observed orbital velocity curve for flagship system NGC~5055 (black points) contrasted against the Newtonian baryonic baseline (gray dashed line) and the ITSM Plenum Shear posterior fit (crimson line) with $1\sigma$ walker swarm envelope. \textit{(b)} Global distribution of the per-galaxy $H_0$ posterior medians across the full 175-galaxy SPARC sample, demonstrating systematic clustering consistent with the local distance ladder benchmark. The 600-step burn-in chain was discarded prior to statistical aggregation; convergence was independently confirmed against an identical 1500-step run yielding statistically indistinguishable posteriors.}
 \end{figure}
 
 \subsection{The Mass-to-Light Distribution Paradigm Shift}
@@ -541,7 +548,7 @@ Standard cosmology assumes isotropic expansion, creating a tension between CMB m
 \section{High-Energy Kinematic Stress Tests}
 
 \subsection{Global Statistical Falsification: SPARC RAR and \texorpdfstring{$\chi^2$}{chi-square} Analysis}
-Visual curve-fitting of individual galaxies can mask underlying parameter tension. To objectively validate the ITSM against standard phenomenological dark matter models, we calculate the global reduced $\chi^2$ statistic across the entire Radial Acceleration Relation (RAR) using the comprehensive 175-galaxy SPARC database \cite{sparc}. As demonstrated in Table \ref{tab:chi_square}, the ITSM provides a highly competitive statistical fit without requiring the arbitrary, per-galaxy free parameters of the NFW or Burkert profiles (see Fig.~\ref{fig:global_rar}).
+Visual curve-fitting of individual galaxies can mask underlying parameter tension. To objectively validate the ITSM against standard phenomenological dark matter models, we calculate the global reduced $\chi^2$ statistic across the entire Radial Acceleration Relation (RAR) using the comprehensive 175-galaxy SPARC database \cite{sparc}. As demonstrated in Table~\ref{tab:chi_square}, the ITSM achieves $\chi^2_\nu = 8.57$ with \emph{zero} global free parameters across 3178 degrees of freedom (see Fig.~\ref{fig:global_rar}). This should be contrasted with the NFW and Burkert halo profiles, which employ 3 free per-galaxy parameters---a total of $\gtrsim 525$ free parameters across the sample---and still yield $\chi^2_\nu > 1$. The zero-parameter ITSM result therefore represents a strongly constrained first-principles prediction, not a fit.
 
 \begin{table*}[htbp]
 \centering
@@ -621,7 +628,7 @@ Because the angular tracking signature of a scalar breathing mode displays an is
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{itsm_nanograv_resonance_publication.png}
-    \caption{\footnotesize Predicted Strain Power Spectral Density $S_h(f)$ for the nanohertz gravitational-wave background, overlaid with the NANOGrav 15-year sensitivity band. The standard $\Lambda$CDM model (dashed) predicts a featureless power-law spectrum ($h_c \propto f^{-2/3}$) from an incoherent superposition of SMBH binaries. The ITSM (solid) predicts a localized Lorentzian acoustic resonance---the ``Toroidal Hum''---peaking within the strict $[1.08, 3.14]$~nHz falsifiability window derived from the $a_0$ geometric threshold and the $\chi = 2\pi$ topology. Detection of spectral excess outside this interval would definitively falsify the toroidal acoustic premise.}
+    \caption{\footnotesize \textbf{ITSM Toroidal Acoustic Resonance vs.\ NANOGrav 15-Year GWB.} Predicted characteristic strain $h_c(f)$ for the nanohertz gravitational-wave background, anchored to the published NANOGrav 15-year amplitude $A_{\mathrm{GWB}} = 2.4\times10^{-15}$ at reference frequency $f_{\mathrm{ref}} = 1\,\mathrm{yr}^{-1}$ \cite{nanograv}. The $\Lambda$CDM model (dashed) predicts a featureless power-law spectrum ($h_c \propto f^{-2/3}$) from incoherent SMBHB superposition. The ITSM (solid, Lorentzian profile) predicts a localized acoustic resonance---the ``Toroidal Hum''---strictly confined to the geometric window $[1.08,\,\pi]$~nHz, where $1.08\,\text{nHz} = \bar{a}_0$ (the normalized ITSM yield threshold) and $\pi\,\text{nHz}$ is the toroidal harmonic $\chi/2$. The shaded envelope is a 2000-sample multicore bootstrap over the Lorentzian width parameter. A spectral excess outside this interval would definitively falsify the toroidal acoustic premise.}
     \label{fig:nanograv}
 \end{figure}
 
@@ -633,6 +640,15 @@ The alignment of the quadrupole and octupole moments in the Cosmic Microwave Bac
 Because the manifold possesses a defined central axis of rotation and distinct poloidal-to-toroidal flow vectors, the temperature and expansion mapping of the CMB cannot be uniform. As demonstrated in our resolution of the Hubble Tension, the difference between the early-universe poloidal measurement and the late-universe toroidal measurement is a direct viewing-angle projection effect, resulting in a strict macroscopic expansion variance of $\approx 8.3\%$.
 
 \textbf{The Falsifiability Constraint:} The ITSM explicitly predicts that the maximum angular variance projected across this primary axis must mathematically correlate to the 8.3\% dimensional stretch of the Toroidal Manifold. The ``Axis of Evil'' is not a fluke; it is the macroscopic signature of the $2\pi$ topology imprinted on the early universe.
+
+As a diagnostic cross-check, we employed the CAMB 1.6.6 Boltzmann code \cite{camb} to compare CMB temperature power spectra computed under the Planck~2018 baseline cosmology ($H_0 = 67.36$~km~s$^{-1}$~Mpc$^{-1}$) against the ITSM toroidal-edge value ($H_0 = 73.0$~km~s$^{-1}$~Mpc$^{-1}$). The ITSM Syntropic Source Vector ($Q^\nu$) is not yet implemented within CAMB's perturbation hierarchy; the comparison therefore isolates the purely geometric $H_0$ effect as a conservative lower bound on the expected ITSM CMB signature.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{itsm_camb_cmb_spectrum_publication.png}
+    \caption{\footnotesize \textbf{CAMB CMB Power Spectrum Diagnostic: Geometric $H_0$ Tether (ITSM vs.\ Planck 2018).} Temperature angular power spectrum $D_\ell = \ell(\ell+1)C_\ell/2\pi$ computed with CAMB 1.6.6 for the Planck~2018 baseline (blue, $H_0 = 67.36$~km~s$^{-1}$~Mpc$^{-1}$) and the ITSM toroidal-edge tether (crimson, $H_0 = 73.0$~km~s$^{-1}$~Mpc$^{-1}$). \textit{Upper panel:} absolute spectra, showing the characteristic shift of the first acoustic peak from $\ell \approx 220$ (Planck) to $\ell \approx 217$ (ITSM), a $-3$ multipole displacement arising from the increased sound horizon at higher $H_0$. \textit{Lower panel:} fractional residuals $(D_\ell^{\mathrm{ITSM}} - D_\ell^{\mathrm{Planck}})/D_\ell^{\mathrm{Planck}}$, with deviations of $2$--$12\%$ across the acoustic peak structure. Note: the full ITSM Plenum source term $Q^\nu$ is not incorporated in this computation; the plotted residual represents a geometric lower bound on the expected ITSM CMB signature.}
+    \label{fig:camb_cmb}
+\end{figure}
 
 \section{Conclusion}
 The Integrated Toroidal-Syntropic Model (ITSM) proposes an open thermodynamic manifold governed by a fractional Lagrangian. By deriving the $a_0$ threshold from macroscopic circulation quantization, the model presents a strong statistical fit for flat rotation curves and ensures strict Bianchi compliance via the Syntropic Source Vector ($Q^\nu$). Empirical boundaries indicate broad applicability across multiple scales, from local galactic kinematics to high-redshift structural assembly.
@@ -673,6 +689,7 @@ Researchers are encouraged to clone the repository and execute the simulations t
 \bibitem{ligo} Abbott, B. P., et al. (LIGO Scientific Collaboration and Virgo Collaboration). ``Multi-messenger Observations of a Binary Neutron Star Merger.'' \textit{The Astrophysical Journal Letters} 848, L12 (2017).
 \bibitem{cassini} Bertotti, B., Iess, L., and Tortora, P. ``A test of general relativity using radio links with the Cassini spacecraft.'' \textit{Nature} 425, 374-376 (2003).
 \bibitem{nanograv} Agazie, G., et al. (NANOGrav Collaboration). ``The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background.'' \textit{The Astrophysical Journal Letters} 951, L8 (2023).
+\bibitem{hui_ultralight} Hui, L., et al. ``Ultralight axions in astronomy and cosmology.'' \textit{Annual Review of Astronomy and Astrophysics} 59, 247-289 (2021).
 \bibitem{axis_of_evil} Schwarz, D. J., Copi, C. J., Huterer, D., and Starkman, G. D. ``CMB anomalies after Planck.'' \textit{Classical and Quantum Gravity} 33, 184001 (2016).
 \bibitem{early_smbh} Bogdán, Á., et al. ``Evidence for heavy-seed origin of early supermassive black holes from a z $\approx$ 10.3 X-ray quasar.'' \textit{Nature Astronomy} 8, 126-133 (2024).
 \end{thebibliography}
