@@ -72,7 +72,7 @@ ax.grid(True, which='both', color='lightgray', linestyle='--', alpha=0.7)
 ax.set_xlabel(r'Observational Viewing Angle $\theta$ (Degrees)', fontsize=15)
 ax.set_ylabel(r'Effective Expansion Rate $H_0$ (km s$^{-1}$ Mpc$^{-1}$)', fontsize=15)
 ax.set_title(r'\textbf{Hubble Tension Geometric Resolution}' + '\n' + 
-             r'(ITSM Toroidal Anisotropy Projection)', fontsize=17, pad=15)
+             r'(ITSM Toroidal Anisotropy Projection)', fontsize=16, pad=15)
 
 # Legend
 ax.legend(loc='lower right', framealpha=0.95, edgecolor='black', fontsize=12)

@@ -1,3 +1,11 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - Diagnostic Exporter
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Protocol: Export raw calculation samples to resolve the parameter parallelism bug
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
 import pandas as pd
 import numpy as np
 import os

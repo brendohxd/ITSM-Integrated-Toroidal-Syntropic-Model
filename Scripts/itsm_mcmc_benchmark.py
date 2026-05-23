@@ -15,6 +15,8 @@ import corner
 import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 
+plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
+
 # Absolute SI Conversion Constants
 KPC_TO_M = 3.085677581e19
 MPC_TO_M = 3.085677581e22
@@ -177,7 +179,8 @@ def run_mcmc_pipeline(file_path, output_dir):
     ax1.plot(R, V_bar_newtonian_km_s, '--', color='gray', lw=1.5, label='Baryonic Baseline (Newtonian)')
     ax1.plot(R, V_fit, '-', color='crimson', lw=2.5, label=f'ITSM Optimal Fit ($H_0$={best_fit[2]:.2f})')
     ax1.set_ylabel('Orbital Velocity $V$ (km/s)', fontsize=13)
-    ax1.set_title(f'ITSM Rotation Curve & Residuals: {galaxy_name}\n$\\chi^2_\\nu = {reduced_chi_square:.3f}$', fontsize=15, fontweight='bold')
+    safe_name = galaxy_name.replace('_', r'\_')
+    ax1.set_title(r'\textbf{ITSM Rotation Curve \& Residuals: ' + safe_name + r'}' + '\n' + rf'$\chi^2_\nu = {reduced_chi_square:.3f}$', fontsize=16, pad=15)
     ax1.grid(True, linestyle=':', alpha=0.6)
     ax1.legend(loc='lower right', frameon=True, fontsize=11)
 

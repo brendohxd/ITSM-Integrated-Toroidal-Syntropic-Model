@@ -3,7 +3,6 @@ Integrated Toroidal-Syntropic Model (ITSM) - SPARC Meta-Analysis & Quality Filte
 Author: Brendon Boyd
 Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
 Protocol: Automated Post-Processing, Quality Cuts, and Cosmological Synthesis
-Environment: Windows / Antigravity IDE Workspace Compatible
 """
 
 import os
@@ -11,6 +10,9 @@ import glob
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+
+# Set plotting standards for Tier-1 publication
+plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
 
 # Absolute SI Conversion Constants
 KPC_TO_M = 3.085677581e19
@@ -23,7 +25,7 @@ def load_sparc_data(file_path):
         data = pd.read_csv(file_path, sep=r'\s+', comment='#', header=None,
                            names=['R', 'Vobs', 'errV', 'Vgas', 'Vdisk', 'Vbulge'])
         return data.dropna().reset_index(drop=True)
-    except Exception as e:
+    except Exception:
         return None
 
 def compute_itsm_velocity(R_kpc, V_gas, V_disk, V_bulge, ups_disk, ups_bulge, H0_kms_mpc):
@@ -54,164 +56,92 @@ def analyze_batch_data():
         print(f"CRITICAL ERROR: No MCMC trace records detected at: {batch_dir}")
         return
 
-    print(f"==================================================")
-    print(f" ITSM META-ANALYSIS: Processing {len(chain_files)} Galactic Records")
-    print(f"==================================================")
-
     master_records = []
+    
+    print(f"Processing {len(chain_files)} Galactic Records...")
 
-    for idx, chain_path in enumerate(chain_files, 1):
+    for chain_path in chain_files:
         g_name = os.path.basename(chain_path).replace("_MCMC_Chains.csv", "")
-        
-        # 1. Parse and extract stats from the flattened MCMC chain
         try:
             chains = pd.read_csv(chain_path)
-            if chains.empty or len(chains) < 100:
-                continue
-        except Exception:
+            if chains.empty or len(chains) < 100: continue
+            
+            p_disk = np.percentile(chains['Upsilon_disk'].values, [16, 50, 84])
+            p_bulge = np.percentile(chains['Upsilon_bulge'].values, [16, 50, 84])
+            p_h0 = np.percentile(chains['H0'].values, [16, 50, 84])
+
+            raw_file = os.path.join(raw_data_dir, f"{g_name}_rotmod.dat")
+            df_raw = load_sparc_data(raw_file)
+            
+            chi2, chi2_nu, dof = np.nan, np.nan, 0
+            if df_raw is not None and not df_raw.empty:
+                V_fit = compute_itsm_velocity(df_raw['R'], df_raw['Vgas'], df_raw['Vdisk'], 
+                                              df_raw['Vbulge'], p_disk[1], p_bulge[1], p_h0[1])
+                dof = len(df_raw['R']) - 3
+                if dof > 0:
+                    chi2 = np.sum(((df_raw['Vobs'] - V_fit) / df_raw['errV']) ** 2)
+                    chi2_nu = chi2 / dof
+
+            master_records.append({
+                'Galaxy': g_name, 'Upsilon_disk': p_disk[1], 'Upsilon_bulge': p_bulge[1],
+                'H0': p_h0[1], 'Chi2_nu': chi2_nu, 'dof': dof,
+                'High_Fidelity': 1 if (p_h0[1] > 51.0 and chi2_nu <= 5.0 and dof > 0) else 0,
+                'Prior_Clipped': 1 if p_h0[1] <= 51.0 else 0
+            })
+        except Exception: 
             continue
 
-        # Compute quantiles [16th, 50th, 84th] for parameter tracking
-        p_disk = np.percentile(chains['Upsilon_disk'].values, [16, 50, 84])
-        p_bulge = np.percentile(chains['Upsilon_bulge'].values, [16, 50, 84])
-        p_h0 = np.percentile(chains['H0'].values, [16, 50, 84])
+    if not master_records:
+        print("CRITICAL: No valid records found.")
+        return
 
-        u_disk_med, u_disk_min, u_disk_max = p_disk[1], p_disk[1] - p_disk[0], p_disk[2] - p_disk[1]
-        u_bulge_med, u_bulge_min, u_bulge_max = p_bulge[1], p_bulge[1] - p_bulge[0], p_bulge[2] - p_bulge[1]
-        h0_med, h0_min, h0_max = p_h0[1], p_h0[1] - p_h0[0], p_h0[2] - p_h0[1]
-
-        # 2. Cross-verify kinematic performance against raw SPARC telemetry files
-        raw_file = os.path.join(raw_data_dir, f"{g_name}_rotmod.dat")
-        df_raw = load_sparc_data(raw_file)
-        
-        chi2, chi2_nu, dof = np.nan, np.nan, 0
-        if df_raw is not None and not df_raw.empty:
-            R = df_raw['R'].values
-            Vobs = df_raw['Vobs'].values
-            errV = df_raw['errV'].values
-            Vgas = df_raw['Vgas'].values
-            Vdisk = df_raw['Vdisk'].values
-            Vbulge = df_raw['Vbulge'].values
-
-            V_fit = compute_itsm_velocity(R, Vgas, Vdisk, Vbulge, u_disk_med, u_bulge_med, h0_med)
-            dof = len(R) - 3
-            if dof > 0:
-                chi2 = np.sum(((Vobs - V_fit) / errV) ** 2)
-                chi2_nu = chi2 / dof
-
-        # 3. Categorize quality framework status
-        is_prior_clipped = (h0_med <= 51.0)
-        is_high_fidelity = (not is_prior_clipped) and (chi2_nu <= 5.0) and (dof > 0)
-
-        master_records.append({
-            'Galaxy': g_name,
-            'Upsilon_disk': u_disk_med, 'Ups_disk_minus': u_disk_min, 'Ups_disk_plus': u_disk_max,
-            'Upsilon_bulge': u_bulge_med, 'Ups_bulge_minus': u_bulge_min, 'Ups_bulge_plus': u_bulge_max,
-            'H0': h0_med, 'H0_minus': h0_min, 'H0_plus': h0_max,
-            'Chi2': chi2, 'Chi2_nu': chi2_nu, 'dof': dof,
-            'High_Fidelity': 1 if is_high_fidelity else 0,
-            'Prior_Clipped': 1 if is_prior_clipped else 0
-        })
-
-    # Create master DataFrames
     df_master = pd.DataFrame(master_records)
     df_hi_fi = df_master[df_master['High_Fidelity'] == 1].reset_index(drop=True)
-    df_clipped = df_master[df_master['Prior_Clipped'] == 1].reset_index(drop=True)
 
-    # Export consolidated summary ledger to SPARC_Batch_Outputs
-    csv_out_path = os.path.join(batch_dir, "ITSM_SPARC_Meta_Analysis_Summary.csv")
-    df_master.to_csv(csv_out_path, index=False)
+    # 1. Export CSV
+    df_master.to_csv(os.path.join(batch_dir, "ITSM_SPARC_Meta_Analysis_Summary.csv"), index=False)
 
-    # 3.5 Generate LaTeX Table for Manuscript Integration
-    manuscript_dir = os.path.abspath(os.path.join(script_dir, "..", "Manuscript"))
-    tex_out_path = os.path.join(manuscript_dir, "appendix_sparc_table.tex")
-    
-    with open(tex_out_path, "w") as f:
-        f.write("\\begin{longtable}{lcccccc}\n")
-        f.write("\\caption{Comprehensive SPARC MCMC Parameter Ledger} \\label{tab:full_ledger} \\\\\n")
-        f.write("\\toprule\n")
-        f.write("Galaxy & $\\Upsilon_{\\text{disk}}$ & $\\Upsilon_{\\text{bulge}}$ & $H_0$ (km/s/Mpc) & $\\chi^2_\\nu$ & DoF & Quality \\\\\n")
-        f.write("\\midrule\n")
-        f.write("\\endfirsthead\n")
-        f.write("\\multicolumn{7}{c} {{\\tablename\\ \\thetable{} -- continued from previous page}} \\\\\n")
-        f.write("\\toprule\n")
-        f.write("Galaxy & $\\Upsilon_{\\text{disk}}$ & $\\Upsilon_{\\text{bulge}}$ & $H_0$ (km/s/Mpc) & $\\chi^2_\\nu$ & DoF & Quality \\\\\n")
-        f.write("\\midrule\n")
-        f.write("\\endhead\n")
-        f.write("\\midrule\n")
-        f.write("\\multicolumn{7}{r}{{Continued on next page}} \\\\\n")
-        f.write("\\endfoot\n")
-        f.write("\\bottomrule\n")
-        f.write("\\endlastfoot\n")
-        
-        for _, row in df_master.iterrows():
-            quality = "High-Fi" if row['High_Fidelity'] == 1 else ("Clipped" if row['Prior_Clipped'] == 1 else "Standard")
-            f.write(f"{row['Galaxy']} & {row['Upsilon_disk']:.3f} & {row['Upsilon_bulge']:.3f} & {row['H0']:.2f} & {row['Chi2_nu']:.3f} & {row['dof']} & {quality} \\\\\n")
-            
-        f.write("\\end{longtable}\n")
+    # 2. Write LaTeX Table
+    tex_path = os.path.join(script_dir, "..", "Manuscript", "appendix_sparc_table.tex")
+    with open(tex_path, "w") as f:
+        f.write("\\begin{longtable}{lcccccc}\n\\toprule\nGalaxy & $\\Upsilon_{\\text{disk}}$ & $\\Upsilon_{\\text{bulge}}$ & $H_0$ & $\\chi^2_\\nu$ & DoF & Quality \\\\\n\\midrule\n")
+        for _, r in df_master.iterrows():
+            q = "High-Fi" if r['High_Fidelity'] else ("Clipped" if r['Prior_Clipped'] else "Standard")
+            f.write(f"{r['Galaxy'].replace('_', '\\_')} & {r['Upsilon_disk']:.3f} & {r['Upsilon_bulge']:.3f} & {r['H0']:.1f} & {r['Chi2_nu']:.2f} & {r['dof']} & {q} \\\\\n")
+        f.write("\\bottomrule\n\\end{longtable}\n")
 
-    print(f"ITSM META-ANALYSIS: LaTeX ledger written to: {tex_out_path}")
-
-    # 4. Global Cosmological Syntropic Evaluation Output
-    print("\n" + "="*50)
-    print("   GLOBAL ITSM COSMOLOGICAL SYNTHESIS RESULTS")
-    print("="*50)
-    print(f"Total Systems Analyzed:      {len(df_master)}")
-    print(f"Prior Wall Clipping Omissions: {len(df_clipped)}")
-    print(f"High-Fidelity Sample Size:   {len(df_hi_fi)}")
-    print("-" * 50)
-    
+    # 3. Output Synthesis
+    print(f"Synthesis Complete. High-Fi Sample Size: {len(df_hi_fi)}")
     if not df_hi_fi.empty:
-        h0_array = df_hi_fi['H0'].values
-        mean_h0 = np.mean(h0_array)
-        median_h0 = np.median(h0_array)
-        std_h0 = np.std(h0_array, ddof=1)
-        stderr_h0 = std_h0 / np.sqrt(len(h0_array))
-        mean_chi2_nu = np.mean(df_hi_fi['Chi2_nu'].values)
+        h0_mean = df_hi_fi['H0'].mean()
+        h0_err = df_hi_fi['H0'].std() / np.sqrt(len(df_hi_fi))
+        print(f"H0 Convergence: {h0_mean:.2f} ± {h0_err:.2f}")
 
-        print(f"Ensemble Mean H0:    {mean_h0:.3f} km/s/Mpc")
-        print(f"Ensemble Median H0:  {median_h0:.3f} km/s/Mpc")
-        print(f"Standard Deviation:  {std_h0:.3f} km/s/Mpc")
-        print(f"Standard Error (SE):  ±{stderr_h0:.3f} km/s/Mpc")
-        print(f"Mean High-Fi Chi2_nu: {mean_chi2_nu:.4f}")
-        print("-" * 50)
-        print(f"ITSM CONVERGENCE MANIFOLD: H0 = {mean_h0:.2f} ± {stderr_h0:.2f} km/s/Mpc")
-    else:
-        print("ANOMALY: High-Fidelity filter tracking array returned empty entries.")
-    print("="*50 + "\n")
-
-    # 5. Generate Publication-Ready Verification Visual Histogram
-    if not df_hi_fi.empty:
-        plt.figure(figsize=(9, 7))
-        
-        # Plot distribution configuration
-        counts, bins, patches = plt.hist(df_hi_fi['H0'].values, bins=15, color='navy', 
-                                         edgecolor='black', alpha=0.75, label='High-Fidelity SPARC Sample')
-        
-        # Apply visual indicators matching Hubble Tension values
-        plt.axvline(mean_h0, color='crimson', linestyle='-', lw=2.5, 
-                    label=f'ITSM Mean $H_0 = {mean_h0:.2f}$ km/s/Mpc')
-        plt.axvspan(mean_h0 - stderr_h0, mean_h0 + stderr_h0, color='crimson', alpha=0.15, 
-                    label=f'ITSM $1\\sigma$ Standard Error (±{stderr_h0:.2f})')
-        
-        # Standard Distance Ladder Benchmark Context Box
-        plt.axvline(73.04, color='darkorange', linestyle=':', lw=2, label='Local Distance Ladder (Riess et al. 2022)')
-        
-        plt.xlabel(r'Inferred Hubble Parameter $H_0$ (km/s/Mpc)', fontsize=13)
-        plt.ylabel('Galaxy Count', fontsize=13)
-        plt.title(r'ITSM Metric Anchor Convergence Summary ($a_0 = \frac{c \cdot H_0}{2\pi}$)', fontsize=14, fontweight='bold')
-        plt.xlim(55, 90)
-        plt.grid(True, linestyle=':', alpha=0.5)
-        plt.legend(loc='upper right', frameon=True, fontsize=10)
-        plt.tight_layout()
-        
-        figures_dir = os.path.join(assets_dir, "Figures")
-        os.makedirs(figures_dir, exist_ok=True)
-        fig_out_path = os.path.join(figures_dir, "ITSM_H0_Convergence_Histogram.png")
-        plt.savefig(fig_out_path, dpi=300)
-        plt.close()
-        print(f"ITSM META-ANALYSIS: Analytical summary table written to: {csv_out_path}")
-        print(f"ITSM META-ANALYSIS: High-fidelity histogram plotted at: {fig_out_path}")
+    # 4. Generate Histogram
+    plt.figure(figsize=(10, 6))
+    plt.hist(df_hi_fi['H0'], bins=20, color='#1f77b4', edgecolor='black', alpha=0.6, label='ITSM SPARC Sample')
+    
+    # Statistical Annotations
+    mean_h0 = df_hi_fi['H0'].mean()
+    stderr_h0 = df_hi_fi['H0'].std() / np.sqrt(len(df_hi_fi))
+    plt.axvline(mean_h0, color='#d62728', linestyle='-', lw=3, label=f'ITSM Mean $H_0 = {mean_h0:.2f} \\pm {stderr_h0:.2f}$')
+    plt.axvspan(mean_h0 - stderr_h0, mean_h0 + stderr_h0, color='#d62728', alpha=0.2, label='ITSM $1\\sigma$ Uncertainty')
+    plt.axvline(73.04, color='#ff7f0e', linestyle='--', lw=2.5, label='Local Distance Ladder (Riess et al. 2022)')
+    
+    plt.xlabel(r'Inferred Hubble Parameter $H_0$ [km s$^{-1}$ Mpc$^{-1}$]', fontsize=12, fontweight='bold')
+    plt.ylabel('Galaxy Count', fontsize=12, fontweight='bold')
+    plt.title(r'\textbf{ITSM Convergence Manifold: SPARC Statistical Anchor}', fontsize=14, pad=15)
+    plt.grid(True, linestyle=':', alpha=0.6)
+    plt.legend(loc='upper right', frameon=True, fontsize=10, shadow=True)
+    plt.tight_layout()
+    
+    figures_dir = os.path.join(assets_dir, "Figures")
+    os.makedirs(figures_dir, exist_ok=True)
+    fig_out_path = os.path.join(figures_dir, "ITSM_H0_Convergence_Histogram.png")
+    plt.savefig(fig_out_path, dpi=600, bbox_inches='tight')
+    plt.close()
+    
+    print(f"Publication-ready figure saved to: {fig_out_path}")
 
 if __name__ == "__main__":
     analyze_batch_data()

@@ -25,7 +25,7 @@ plt.figure(figsize=(10, 6))
 plt.plot(z, H_lcdm, '--', color='#D55E00', lw=2.5, label=r'$\Lambda$CDM (Static Dark Energy)')
 plt.plot(z, H_itsm, '-', color='#0072B2', lw=3, label=r'ITSM Syntropic Volume Decay ($\propto (1+z)^{-3}$)')
 
-plt.title(r'\textbf{Effective Hubble Parameter Evolution: DESI 2024 Confrontation}', fontsize=16)
+plt.title(r'\textbf{Effective Hubble Parameter Evolution: DESI 2024 Confrontation}', fontsize=16, pad=15)
 plt.xlabel(r'Redshift ($z$)', fontsize=15)
 plt.ylabel(r'$H(z)$ [km s$^{-1}$ Mpc$^{-1}$]', fontsize=15)
 plt.legend(loc='upper left', framealpha=0.9, edgecolor='black', fontsize=12)

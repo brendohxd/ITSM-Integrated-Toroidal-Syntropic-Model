@@ -10,6 +10,8 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
+plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
+
 def state_function(z, z_c=3400, lmbda=0.005):
     """
     Calculates the thermodynamic state function Xi(z) governing the 
@@ -46,7 +48,7 @@ def plot_decoupling():
     plt.axvline(1100, color='darkorange', linestyle=':', lw=2.5, label=r'CMB Recombination ($z \approx 1100$)')
 
     # Typography and Grid Formatting
-    plt.title('Superfluid Plenum Phase Transition: Thermodynamic Decoupling', fontsize=14, fontweight='bold')
+    plt.title(r'\textbf{Superfluid Plenum Phase Transition: Thermodynamic Decoupling}', fontsize=16, pad=15)
     plt.xlabel('Redshift ($z$)', fontsize=13)
     plt.ylabel(r'Acoustic Shear State Function $\Xi(z)$', fontsize=13)
 

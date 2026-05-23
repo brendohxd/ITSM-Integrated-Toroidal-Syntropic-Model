@@ -1,3 +1,11 @@
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - The Integrated Transition (v10.0)
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Protocol: Merge the Low-g Plateau with the High-g Shear via Saturable Superfluid transitions
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

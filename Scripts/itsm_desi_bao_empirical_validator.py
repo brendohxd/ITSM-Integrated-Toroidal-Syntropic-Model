@@ -65,7 +65,7 @@ if os.path.exists(data_path):
     plot_label = r'ITSM Optimized ($n={:.2f}$) [$\chi^2_\nu \approx {:.2f}$]'.format(n_opt, chi2_nu)
     plt.plot(z_smooth, H_smooth, '-', lw=3, label=plot_label)
     
-    plt.title(r'\textbf{ITSM vs. DESI DR2: Global Likelihood Convergence}', fontsize=16)
+    plt.title(r'\textbf{ITSM vs. DESI DR2: Global Likelihood Convergence}', fontsize=16, pad=15)
     plt.xlabel(r'Redshift ($z$)', fontsize=15)
     plt.ylabel(r'$H(z)$ [km s$^{-1}$ Mpc$^{-1}$]', fontsize=15)
     plt.legend(loc='upper left', framealpha=0.9, edgecolor='black', fontsize=12)

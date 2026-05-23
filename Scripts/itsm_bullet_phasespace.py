@@ -82,7 +82,7 @@ ax.contour(X_bw, Y_bw, Z_bw, levels=LEVELS, colors='midnightblue', linewidths=0.
 
 # Academic Annotations and Labels
 ax.set_title(r"\textbf{Kinetic Phase-Space Decoupling in the Bullet Cluster (1E 0657-56)}" + "\n" +
-             r"ITSM Gravitational Wake vs. Stalled Baryonic Fluid", pad=20, fontsize=15)
+             r"ITSM Gravitational Wake vs. Stalled Baryonic Fluid", fontsize=16, pad=15)
 
 ax.set_xlabel(r"Spatial Position Relative to Collision Center $x$ [kpc]", fontsize=14)
 ax.set_ylabel(r"Line-of-Sight Velocity $v_x$ [km s$^{-1}$]", fontsize=14)

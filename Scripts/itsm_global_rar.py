@@ -2,6 +2,7 @@
 Integrated Toroidal-Syntropic Model (ITSM) - Global SPARC RAR Parser
 Author: Brendon Boyd
 Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Protocol: Unfiltered Hierarchical Nuisance Marginalization across 175 SPARC galaxies
 Environment: Windows / Antigravity IDE Workspace Compatible
 """
 
@@ -189,7 +190,7 @@ plt.annotate(r'$a_0$ Yield Boundary', xy=(a0_sparc, g_min*8),
              xytext=(a0_sparc*3, g_min*4),
              arrowprops=dict(arrowstyle='->', color='black'), fontsize=12)
 
-plt.title(r'\textbf{Global Radial Acceleration Relation (SPARC)}', fontsize=18, pad=20)
+plt.title(r'\textbf{Global Radial Acceleration Relation (SPARC)}', fontsize=16, pad=15)
 plt.xlabel(r'Baryonic Acceleration $g_{bar}$ [km$^2$ s$^{-2}$ kpc$^{-1}$]', fontsize=15)
 plt.ylabel(r'Observed Acceleration $g_{obs}$ [km$^2$ s$^{-2}$ kpc$^{-1}$]', fontsize=15)
 

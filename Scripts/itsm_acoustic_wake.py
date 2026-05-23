@@ -83,7 +83,7 @@ ax.add_patch(yield_circle)
 
 # Formatting
 ax.set_title(r"\textbf{Macroscopic Torsional Entrainment (Acoustic Metric Wake)}" + "\n" + 
-             r"Superfluid Plenum Transition at $a_0 = c H_0 / 2\pi$", fontsize=15, pad=15)
+             r"Superfluid Plenum Transition at $a_0 = c H_0 / 2\pi$", fontsize=16, pad=15)
 ax.set_xlabel(r"Normalized Spatial Coordinate ($r/r_{a_0}$)", fontsize=13)
 ax.set_ylabel(r"Normalized Spatial Coordinate ($r/r_{a_0}$)", fontsize=13)
 

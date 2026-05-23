@@ -74,7 +74,7 @@ ax.grid(True, which='minor', linestyle=':', alpha=0.2)
 
 ax.set_title(r"\textbf{Mass Assembly Timeline: The High-Redshift Maturity Crisis}" + "\n" +
              r"Toroidal Superfluid Nucleation vs. Hierarchical Merging",
-             fontsize=18, pad=20)
+             fontsize=16, pad=15)
 
 ax.set_xlabel(r"Redshift ($z$)", fontsize=15)
 ax.set_ylabel(r"Stellar Mass ($M_{\odot}$)", fontsize=15)
