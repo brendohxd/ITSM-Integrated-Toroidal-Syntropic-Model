@@ -14,6 +14,20 @@ Instead of adding unobservable phantom particles or arbitrary phenomenological v
 
 The framework culminates in strict, falsifiable predictions, including **Localized Vacuum Quenching** (predicting the temporary restoration of Newtonian mechanics within extreme thermal boundary layers like AGN and the Bullet Cluster) and a toroidal acoustic resonance for **NANOGrav** Pulsar Timing Arrays tightly constrained between $1.08$ and $3.14$ nHz.
 
+## 💡 Key Independent Discoveries & Theoretical Contributions
+
+*While the ITSM functions as a unified cosmological framework, the development of this model has yielded several modular, mathematically rigorous discoveries that hold independent value for the wider astrophysics and theoretical physics communities:*
+
+* 📐 **First-Principles Derivation of the MOND Acceleration Scale:** Resolves the 40-year mystery of the $a_0$ empirical threshold by deriving it directly from macroscopic circulation quantization and global topology: $a_0 = c H_0 / 2\pi \approx 1.08 \times 10^{-10}$ m/s$^2$.
+  
+* ⏱️ **Redshift-Evolving Kinematic Yield ($a_0(z)$):** Establishes that the galactic acceleration boundary is not a static constant, but evolves proportionally with the Hubble parameter, providing a testable metric for JWST high-redshift rotation curves.
+  
+* 🌌 **Geometric Resolution to DESI 2024 (Evolving Dark Energy):** Demonstrates that an open thermodynamic manifold natively produces a $(1+z)^{-3}$ volumetric decay, organically mimicking the evolving dark energy equation of state ($w_0w_a \neq -1$) without requiring hypothetical quintessence fields.
+  
+* 🧩 **Topological Derivation of Lagrangian Coefficients:** Replaces empirical curve-fitting in non-linear field equations by proving that the $2/3$ fractional interaction coefficient is a strict geometric invariant (the covariant trace ratio between a 2D transverse shear plane and a 3D bulk manifold).
+  
+* 📉 **SPARC MCMC Mass-to-Light Distribution Anomaly:** Agnostic Bayesian inference reveals that optimizer engines strongly prefer near-zero disk mass-to-light ratios ($\Upsilon_{\text{disk}} \to 0.01$), challenging standard Stellar Population Synthesis (SPS) assumptions regarding the gravitational weight of outer stellar disks.
+
 ## 🚀 Key Mathematical Foundations
 1. **The Yield Threshold ($a_0$)**
 Derived strictly from macroscopic circulation quantization, establishing the limit where baryonic mass couples to the vacuum's inherent spin ($a_0 = c H_0 / 2\pi$).
