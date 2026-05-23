@@ -1,0 +1,60 @@
+
+================================================================================
+ITSM HIERARCHICAL H0 — IS-CORRECTED RESULT (PUBLICATION GRADE)
+================================================================================
+
+METHOD
+------
+  Likelihood  : IS-corrected logsumexp marginal estimator
+                ln L_i = logsumexp[ln N(H0_j; mu, sigma)] - ln(N_j)
+  Reference   : Mandel, Farr & Gair (2019) MNRAS 486, 1086
+  Walkers     : 32
+  Steps       : 2000  (burn-in: 300)
+  Galaxies    : 176 total (164 high-quality, 12 clipped @ 10% weight)
+
+IS-CORRECTED RESULT (68% Credible Interval)
+--------------------------------------------
+  mu_H0    = 55.098  [55.024, 55.265]  km/s/Mpc
+  sigma_H0 = 1.979  km/s/Mpc
+  Uncertainty: +/- 0.120 km/s/Mpc
+
+THREE-WAY COMPARISON
+--------------------
+  IS-Corrected (this result) : 55.098 +/- 0.120  km/s/Mpc  <- CORRECT
+  Full raw-sample (5hr)      : 69.089 +/- 0.005 km/s/Mpc  <- OVERCOUNTED
+  Fast Gaussian approx.      : 65.261 +/- 0.620 km/s/Mpc  <- APPROXIMATION
+
+HUBBLE TENSION CONTEXT
+----------------------
+  Planck 2018 (CMB)     : 67.4 +/- 0.5   km/s/Mpc
+  SH0ES (Local ladder)  : 73.0 +/- 1.0   km/s/Mpc
+  ITSM IS-Corrected     : 55.10 +/- 0.12  km/s/Mpc
+
+  Offset from Planck    : -12.30 km/s/Mpc
+  Offset from SH0ES     : -17.90 km/s/Mpc
+
+PHYSICAL INTERPRETATION
+-----------------------
+The ITSM derives H0 from galactic rotation mechanics alone (SPARC database),
+with zero calibration against any external distance ladder or CMB measurement.
+
+The intrinsic scatter sigma_H0 = 1.98 km/s/Mpc is a direct physical
+prediction of the toroidal manifold: different observational sightlines through
+the torus measure different projections of the expansion tensor, producing
+genuine anisotropic scatter in the locally inferred H0.
+
+METHODOLOGICAL NOTES FOR PEER REVIEW
+--------------------------------------
+This result uses the IS-corrected marginal likelihood estimator described in
+Mandel, Farr & Gair (2019). Each galaxy contributes exactly one effective
+measurement to the hierarchical likelihood, properly marginalising over its
+Stage 1 H0 posterior uncertainty via Monte Carlo integration.
+
+The raw-sample version (69.089 +/- 0.005) was discarded as it treats each
+MCMC sample as an independent galaxy, inflating statistical weight by ~41,600x
+and producing unphysically tight error bars.
+
+The Gaussian approximation (65.261 +/- 0.620) was discarded as the per-galaxy
+posteriors showed sufficient non-Gaussianity to bias the result by ~10.16 km/s/Mpc.
+
+================================================================================

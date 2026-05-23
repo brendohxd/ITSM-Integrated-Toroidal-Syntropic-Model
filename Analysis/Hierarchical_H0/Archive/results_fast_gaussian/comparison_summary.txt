@@ -1,0 +1,29 @@
+
+================================================================================
+ITSM HIERARCHICAL H0 - FAST VERSION SUMMARY
+================================================================================
+
+METHOD : Gaussian-approximation likelihood (analytic convolution)
+         Each galaxy summarised as (mean_H0, std_H0)
+         Likelihood = Normal(mean_i; mu, sqrt(sigma^2 + std_i^2))
+WALKERS: 32   STEPS: 2000   BURN-IN: 300
+
+FAST RESULT (Gaussian approximation)
+  mu_H0    = 65.261  [64.131, 66.359]  km/s/Mpc
+  sigma_H0 = 5.537  km/s/Mpc
+  Offset from Planck (67.4) : -2.14 km/s/Mpc
+  Offset from SH0ES  (73.0) : -7.74 km/s/Mpc
+
+FULL RESULT (raw-sample, 5 hours)
+  mu_H0    = 69.089  [69.083, 69.094]  km/s/Mpc
+  sigma_H0 = 14.565  km/s/Mpc
+  Offset from Planck (67.4) : +1.69 km/s/Mpc
+  Offset from SH0ES  (73.0) : -3.91 km/s/Mpc
+
+DELTA (Fast - Full)
+  mu_H0    : -3.828 km/s/Mpc
+  sigma_H0 : -9.028 km/s/Mpc
+
+VERDICT
+  DIVERGENT — inspect posteriors.
+================================================================================
