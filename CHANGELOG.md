@@ -1,5 +1,28 @@
 # ITSM Changelog & Archive History
 
+## Version 9.1.0 — Hierarchical $H_0$ Methodology & Manuscript Correction (2026-05-23)
+
+### Methodological Investigation
+- **Hierarchical Bayesian H0 Analysis:** Executed a full investigation into population-level $H_0$ inference from the 176-galaxy SPARC MCMC chain library using three distinct estimator implementations:
+  - `itsm_hierarchical_h0.py` — Full raw-sample likelihood (5-hour run, $\mu_{H_0} = 69.089 \pm 0.005$ km/s/Mpc). Archived; identified as statistically overcounted (treats 7.3M MCMC samples as independent observations, inflating statistical weight by ~41,600×).
+  - `itsm_hierarchical_h0_fast.py` — Gaussian-convolution approximation (~3 seconds, $\mu_{H_0} = 65.26 \pm 0.62$ km/s/Mpc). Archived; invalidated by non-Gaussianity of per-galaxy posteriors.
+  - `itsm_hierarchical_h0_correct.py` — IS-corrected logsumexp marginal estimator per Mandel, Farr & Gair (2019) MNRAS 486, 1086 (~2.5-hour run). Posterior pinned to prior boundary ($\mu_{H_0} = 55.1$ km/s/Mpc), confirming that individual SPARC galaxies do not sufficiently constrain $H_0$ for population inference.
+- **Shape Diagnostic:** `itsm_h0_shape_diagnostic.py` revealed per-galaxy $H_0$ posterior standard deviations average $12.40$ km/s/Mpc (versus $14.4$ km/s/Mpc for a completely flat uniform distribution). 89.8% of galaxies have $\sigma_{H_0} > 5$ km/s/Mpc — confirming posteriors are near-flat and individually uninformative for hierarchical $H_0$ extraction. This finding is reserved for future work with independent distance priors.
+
+### Repository Structure
+- **New `Analysis/` directory:** Added `Analysis/Hierarchical_H0/` as a structured methodology development area, separate from primary manuscript scripts. Contains all four scripts above plus a full `Archive/` of three MCMC result sets with summary statistics and diagnostic plots.
+- **Archive hygiene:** All superseded result directories (`results_full_rawsample_5hr/`, `results_fast_gaussian/`, `results_is_corrected/`) moved to `Analysis/Hierarchical_H0/Archive/` with descriptive naming. No results deleted.
+
+### Manuscript Correction (`Manuscript/Main.tex`)
+- **H0 paragraph reframed (line 439):** Replaced overclaiming language ("independently derives the exact value of the local Cosmic Distance Ladder") with peer-review defensible framing. The reported $H_0 = 72.49 \pm 0.31$ km/s/Mpc is now correctly described as a median-of-posteriors statistic, with explicit acknowledgement of the $a_0$–baryonic normalisation degeneracy at the single-galaxy level. Hierarchical population inference is explicitly reserved for future work. Value and figure unchanged.
+- **Recompiled:** `Main.pdf` recompiled clean, 24 pages, zero errors.
+
+### Git Provenance
+- Commit `e20165e` — selective add (README, Main.tex, Main.pdf, Analysis/). Remaining modified scripts from prior sessions left unstaged to preserve atomic commit discipline.
+- Full directory backup created at `ITSM_BACKUP_20260523_1326` prior to any changes.
+
+---
+
 ## Current Version (v9.0.1 / Final Peer-Review Submission Release)
 - **Citation Logic:** Resolved hardcoded bibliography citation chains ([?] placeholders) by normalizing the pdflatex compilation sequence and manual `\bibitem` integration.
 - **Asset Sanitization:** Standardized all plot titles (specifically `itsm_n_evolution.png` and `itsm_desi_bao_empirical_validation.png`) to native Matplotlib `fontweight='bold'` to excise raw LaTeX markup artifacts.
