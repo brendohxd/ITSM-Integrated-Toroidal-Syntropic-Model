@@ -14,8 +14,13 @@
 \usepackage{xcolor}
 \usepackage{microtype}
 \usepackage{hyperref}
-\usepackage[section]{placeins}
+% \usepackage[section]{placeins}
 
+% Aggressive float relaxation to minimize white space gaps
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.95}
 
 % Streamlined Graphic Paths: Targets precise Asset subdirectories
 \graphicspath{{./}{../Assets/Figures/}{../Assets/SPARC_Batch_Outputs/}}
@@ -142,6 +147,13 @@ In high-acceleration, high-kinetic-energy regimes ($X \gg a_0^2$) characteristic
 \end{equation}
 
 The fractional vacuum drag naturally becomes entirely transparent within high-acceleration zones, guaranteeing that the model satisfies local Parameterized Post-Newtonian (PPN) bounds and preserves pristine General Relativity locally while smoothly activating the fluid-dynamic corrections only across low-acceleration galactic and un-bound cosmic domains.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{itsm_thermodynamic_decoupling_publication.png}
+    \caption{\footnotesize \textbf{Superfluid Plenum Phase Transition and Thermodynamic Decoupling.} The acoustic shear state function $\Xi(z)$ plotted across redshift space ($z$). The transition occurs at the critical condensation redshift ($z_c \approx 3400$), separating the high-redshift thermal plasma (radiation-dominated era, red shading) from the low-redshift superfluid condensate (matter-dominated era, blue shading). The suppression of acoustic shear before recombination ($z \approx 1100$, orange dotted line) ensures the preservation of CMB acoustic peaks in full alignment with Planck constraints. Simulation source: \texttt{itsm\_thermodynamic\_decoupling.py}.}
+    \label{fig:thermodynamic_decoupling}
+\end{figure}
 
 \section{Physical Mechanisms and Conceptual Framework}
 Drawing on condensed matter analog gravity \cite{barcelo, volovik}, the ITSM identifies the fundamental vacuum itself as a Superfluid Plenum---a Bose-Einstein condensate operating at galactic scales. Baryonic matter interacts with this medium via acoustic phonon excitations, generating an emergent macroscopic vacuum drag. The mechanics operate through a strict three-variable Closed Framework:
@@ -406,7 +418,7 @@ In the high-acceleration limit ($X \gg a_0^2$), $c_s^2$ converges to unity ($c_s
 
 \textit{Note on the intermediate regime:} Numerical evaluation at the transition scale $X = a_0^2$ yields $c_s^2 \approx 1.11$, a transient superluminal excursion of $\approx 11\%$ localized to the narrow band $g_{\text{bar}} \sim a_0$. This is characteristic of the k-essence class of Lagrangians, in which superluminal sound speeds in the perturbation sector do not imply macroscopic signal propagation faster than light, because the phonon propagation cone remains nested within the full gravitational causal cone \cite{babichev_cs2}. The excursion vanishes in both limits and its principal physical effect is a modest enhancement of phonon-mediated coupling in the galactic transition zone, incorporated self-consistently in the MCMC posterior sampling.
 
-\subsection{\label{sec:geff_derivation}Non-Relativistic Reduction: From $\mathcal{L}_P$ to the Effective Acceleration}
+\subsection{\label{sec:geff_derivation}Non-Relativistic Reduction: From \texorpdfstring{$\mathcal{L}_P$}{L-P} to the Effective Acceleration}
 
 The bridge from the covariant Lagrangian to the galactic acceleration formula is obtained via the non-relativistic, static reduction of the phonon sector. The Euler-Lagrange equation of motion for the phonon field $\phi$ in the static limit on flat space is:
 \begin{equation}
@@ -517,9 +529,17 @@ UGC 12506 & $0.013$ & $4.121$ & $65.15$ & $0.477$ & $62$ \\
 NGC 5055 & $0.012$ & $4.115$ & $71.19$ & $0.422$ & $25$ \\
 \hline
 \textbf{Ensemble Mean} & $\mathbf{0.013}$ & $\mathbf{4.048}$ & $\mathbf{72.49}$ & $\mathbf{0.384}$ & --- \\
+\hline
 \end{tabular}
 \end{ruledtabular}
 \end{table}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth, keepaspectratio]{itsm_global_mcmc_corner.png}
+    \caption{\footnotesize \textbf{Joint MCMC Posterior Distribution Corner Plot.} 1D and 2D parameter posteriors for the joint fit of the ITSM parameters: the Hubble expansion rate $H_0$, the matter density parameter $\Omega_m$, and the syntropic volumetric decay index $n$. The optimization converges cleanly around $H_0 \approx 72.5\,\text{km s}^{-1}\text{Mpc}^{-1}$, $\Omega_m \approx 0.24$, and $n \approx 1.45$. Truth values (dashed lines) denote the ensemble median posteriors. Simulation source: \texttt{itsm\_global\_mcmc.py}.}
+    \label{fig:global_mcmc_corner}
+\end{figure}
 
 \subsection{Analysis of Systemic Boundary Outliers}
 
@@ -736,9 +756,8 @@ To ensure strict reproducibility and open scientific verification, the complete 
 Researchers are encouraged to clone the repository and execute the simulations to independently verify the geometric resolutions of the Hubble Tension, the SPARC $\chi^2_\nu$ alignment, and the NANOGrav Lorentzian acoustic resonance threshold.
 
 \clearpage
-\appendix*
-\section{\label{app:full_ledger}Comprehensive SPARC MCMC Parameter Ledger}
-\input{appendix_sparc_table.tex}
+% Appendix table moved to a separate standalone Supplementary.tex document as requested.
+
 
 \begin{thebibliography}{99}
 \bibitem{jwst_labbe} Labbé, I., et al. ``A population of red candidate massive galaxies ~600 Myr after the Big Bang.'' \textit{Nature} 616, 266 (2023).

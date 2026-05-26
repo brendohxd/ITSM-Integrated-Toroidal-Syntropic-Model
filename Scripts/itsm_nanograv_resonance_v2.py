@@ -1,8 +1,8 @@
 """
-ITSM Experimental Script — NANOGrav 15yr Stochastic GWB Resonance (v2)
+ITSM Production Script — NANOGrav 15yr Stochastic GWB Resonance (v2)
 Author: Brendon Boyd
-Staging: Analysis/Experimental/NANOGrav_v2/
-Status: EXPERIMENTAL — not promoted to Scripts/ until author approval
+Status: PROMOTED — replaces legacy Gaussian regression script
+Output: Assets/Figures/itsm_nanograv_resonance_publication.png
 
 ITSM Core Principles Applied Here:
   - Open thermodynamic system: the Superfluid Plenum is an active vacuum medium.
@@ -44,7 +44,7 @@ Computational Tools:
   - multiprocessing.Pool: bootstrap uncertainty envelopes over resonance params
   - matplotlib: two-panel publication output (white background, print-ready)
 
-Outputs: Analysis/Experimental/NANOGrav_v2/results/
+Outputs: Assets/Figures/itsm_nanograv_resonance_publication.png
 """
 
 import os
@@ -205,7 +205,8 @@ def compute_bootstrap_envelopes(freqs, n_samples=2000, n_cores=None):
 if __name__ == "__main__":
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    output_dir = os.path.join(script_dir, "results")
+    # Production output: Assets/Figures/ (manuscript-ready)
+    output_dir = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures"))
     os.makedirs(output_dir, exist_ok=True)
 
     N_CORES = cpu_count()
@@ -348,7 +349,7 @@ if __name__ == "__main__":
 
     plt.tight_layout(rect=[0, 0.025, 1, 1])
 
-    out_path = os.path.join(output_dir, "itsm_nanograv_resonance_v2.png")
+    out_path = os.path.join(output_dir, "itsm_nanograv_resonance_publication.png")
     plt.savefig(out_path, dpi=300, bbox_inches="tight")
     plt.close()
 
