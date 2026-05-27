@@ -27,7 +27,6 @@ import matplotlib.pyplot as plt
 
 plt.rcParams.update({
     "font.family": "serif",
-    "font.serif": ["Computer Modern Roman"],
     "axes.facecolor": "white",
     "figure.facecolor": "white",
     "axes.labelsize": 14,

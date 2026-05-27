@@ -24,7 +24,6 @@ import matplotlib.patches as mpatches
 
 plt.rcParams.update({
     "font.family": "serif",
-    "font.serif": ["Computer Modern Roman"],
     "axes.facecolor": "white",
     "figure.facecolor": "white",
     "axes.labelsize": 14,
