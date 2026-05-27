@@ -16,11 +16,15 @@ H0_fixed = 78.63
 Om_fixed = 0.240
 script_dir = os.path.dirname(os.path.abspath(__file__))
 data_path = os.path.abspath(os.path.join(script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_mean.txt"))
+cov_path = os.path.abspath(os.path.join(script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_cov.txt"))
 
 df = pd.read_csv(data_path, sep=r'\s+', comment='#', names=['z', 'value', 'observable'], header=None)
+cov = np.loadtxt(cov_path)
+df['variance'] = np.diag(cov)
+
 df_h = df[df['observable'] == 'DH_over_rs'].copy()
 df_h['H_obs'] = 299792.458 / (df_h['value'] * 147.09)
-df_h['err_H'] = df_h['H_obs'] * 0.05
+df_h['err_H'] = df_h['H_obs'] * (np.sqrt(df_h['variance']) / df_h['value'])
 
 def log_likelihood(n, z_b, H_b, err_b):
     if n < 0.0 or n > 5.0: return -np.inf
@@ -30,7 +34,7 @@ def log_likelihood(n, z_b, H_b, err_b):
     return -0.5 * np.sum(((H_b - H_model) / err_b)**2)
 
 # 2. Binning and Data Storage
-bins = [(0.0, 0.8), (0.8, 1.6), (1.6, 2.5)]
+bins = [(0.0, 0.8), (0.8, 1.4), (1.4, 2.5)]
 z_centers = []
 n_means = []
 n_stds = []

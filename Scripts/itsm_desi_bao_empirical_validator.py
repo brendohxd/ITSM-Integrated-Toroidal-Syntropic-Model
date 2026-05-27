@@ -27,6 +27,9 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 data_path = os.path.abspath(os.path.join(
     script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_mean.txt"
 ))
+cov_path = os.path.abspath(os.path.join(
+    script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_cov.txt"
+))
 
 # 3. Optimized ITSM Parameters (Derived from Global MCMC Convergence)
 H0 = 78.63
@@ -35,13 +38,19 @@ n_opt = 0.8090  # Optimized Syntropic Decay Index
 rs = 147.09     # Fiducial sound horizon in Mpc
 
 # 4. Ingestion & Transformation Protocol
-if os.path.exists(data_path):
+if os.path.exists(data_path) and os.path.exists(cov_path):
     df = pd.read_csv(data_path, sep=r'\s+', comment='#', names=['z', 'value', 'observable'], header=None)
+    
+    # Load covariance matrix and extract diagonal variances
+    cov = np.loadtxt(cov_path)
+    df['variance'] = np.diag(cov)
     
     # Filter for Hubble observable (DH/rs) and transform: H(z) = c / (DH_over_rs * rs)
     df_h = df[df['observable'] == 'DH_over_rs'].copy()
     df_h['H_obs'] = 299792.458 / (df_h['value'] * rs)
-    df_h['err_H'] = df_h['H_obs'] * 0.05 
+    
+    # Error propagation: err_H = H_obs * (err_value / value) where err_value = sqrt(variance)
+    df_h['err_H'] = df_h['H_obs'] * (np.sqrt(df_h['variance']) / df_h['value'])
     
     z_obs, H_obs, err_H = df_h['z'].values, df_h['H_obs'].values, df_h['err_H'].values
 

@@ -11,8 +11,13 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Set plotting standards for Tier-1 publication
-plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
+# Publication plot style — usetex disabled so f-string labels render correctly
+plt.rcParams.update({
+    "font.family": "serif",
+    "font.size": 11,
+    "axes.titlesize": 13,
+    "axes.labelsize": 12,
+})
 
 # Absolute SI Conversion Constants
 KPC_TO_M = 3.085677581e19
@@ -51,7 +56,7 @@ def analyze_batch_data():
     raw_data_dir = os.path.abspath(os.path.join(script_dir, "..", "SPARC_data"))
     assets_dir = os.path.abspath(os.path.join(script_dir, "..", "Assets"))
 
-    chain_files = glob.glob(os.path.join(batch_dir, "*_MCMC_Chains.csv"))
+    chain_files = glob.glob(os.path.join(batch_dir, "MCMC_v2_Chain_CSVs", "*_MCMC_Chains.csv"))
     if not chain_files:
         print(f"CRITICAL ERROR: No MCMC trace records detected at: {batch_dir}")
         return
@@ -119,20 +124,45 @@ def analyze_batch_data():
 
     # 4. Generate Histogram
     plt.figure(figsize=(10, 6))
-    plt.hist(df_hi_fi['H0'], bins=20, color='#1f77b4', edgecolor='black', alpha=0.6, label='ITSM SPARC Sample')
-    
-    # Statistical Annotations
-    mean_h0 = df_hi_fi['H0'].mean()
+
+    # Plot clipped (low-H0) galaxies separately in a muted colour
+    df_clipped = df_master[df_master['Prior_Clipped'] == 1]
+    if not df_clipped.empty:
+        plt.hist(df_clipped['H0'], bins=20, range=(50, 100),
+                 color='#d9534f', edgecolor='white', alpha=0.45,
+                 label=f'Prior-clipped galaxies (n={len(df_clipped)})')
+
+    plt.hist(df_hi_fi['H0'], bins=20, range=(50, 100),
+             color='#1f77b4', edgecolor='white', alpha=0.75,
+             label=f'High-fidelity SPARC sample (n={len(df_hi_fi)})')
+
+    # Statistical annotations — use Unicode +/- so f-strings work cleanly
+    mean_h0   = df_hi_fi['H0'].mean()
+    median_h0 = df_hi_fi['H0'].median()
     stderr_h0 = df_hi_fi['H0'].std() / np.sqrt(len(df_hi_fi))
-    plt.axvline(mean_h0, color='#d62728', linestyle='-', lw=3, label=f'ITSM Mean $H_0 = {mean_h0:.2f} \\pm {stderr_h0:.2f}$')
-    plt.axvspan(mean_h0 - stderr_h0, mean_h0 + stderr_h0, color='#d62728', alpha=0.2, label='ITSM $1\\sigma$ Uncertainty')
-    plt.axvline(73.04, color='#ff7f0e', linestyle='--', lw=2.5, label='Local Distance Ladder (Riess et al. 2022)')
-    
-    plt.xlabel(r'Inferred Hubble Parameter $H_0$ [km s$^{-1}$ Mpc$^{-1}$]', fontsize=12, fontweight='bold')
-    plt.ylabel('Galaxy Count', fontsize=12, fontweight='bold')
-    plt.title(r'\textbf{ITSM Convergence Manifold: SPARC Statistical Anchor}', fontsize=14, pad=15)
-    plt.grid(True, linestyle=':', alpha=0.6)
-    plt.legend(loc='upper right', frameon=True, fontsize=10, shadow=True)
+
+    plt.axvline(median_h0, color='#e07b00', linestyle='-', lw=2.5,
+                label=f'ITSM ensemble median:  H\u2080 = {median_h0:.2f} \u00b1 {stderr_h0:.2f}  km/s/Mpc')
+    plt.axvspan(median_h0 - stderr_h0, median_h0 + stderr_h0,
+                color='#e07b00', alpha=0.15)
+    plt.axvline(67.4, color='#d62728', linestyle='--', lw=2,
+                label='Planck 2018 CMB:  H\u2080 = 67.4 \u00b1 0.5  km/s/Mpc')
+    plt.axvspan(66.9, 67.9, color='#d62728', alpha=0.08)
+    plt.axvline(73.04, color='#2ca02c', linestyle='-.', lw=2,
+                label='SH0ES (Riess et al. 2022):  H\u2080 = 73.04 \u00b1 1.04  km/s/Mpc')
+    plt.axvspan(72.0, 74.08, color='#2ca02c', alpha=0.08)
+
+    plt.xlabel('Inferred Hubble Parameter  H\u2080  [km s\u207b\u00b9 Mpc\u207b\u00b9]',
+               fontsize=12, fontweight='bold')
+    plt.ylabel('Number of galaxies', fontsize=12, fontweight='bold')
+    plt.title(
+        'ITSM MCMC: Global H\u2080 Distribution \u2014 175 SPARC Galaxies\n'
+        '32 walkers \u00d7 3000 steps per galaxy (multicore, 16 cores)',
+        fontsize=13, pad=12
+    )
+    plt.xlim(50, 100)
+    plt.grid(True, linestyle=':', alpha=0.5)
+    plt.legend(loc='upper right', frameon=True, fontsize=9.5)
     plt.tight_layout()
     
     figures_dir = os.path.join(assets_dir, "Figures")

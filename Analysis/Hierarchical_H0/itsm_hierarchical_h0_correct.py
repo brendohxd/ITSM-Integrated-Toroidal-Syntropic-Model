@@ -57,6 +57,7 @@ import corner
 import matplotlib.pyplot as plt
 from scipy.stats import norm, gaussian_kde
 from scipy.special import logsumexp
+from multiprocessing import Pool, cpu_count
 
 warnings.filterwarnings("ignore")
 plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
@@ -66,7 +67,7 @@ plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
 # ─────────────────────────────────────────────────────────────────────────────
 SCRIPT_DIR   = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR     = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
-CHAINS_DIR   = os.path.join(ROOT_DIR, "Assets", "SPARC_Batch_Outputs")
+CHAINS_DIR   = os.path.join(ROOT_DIR, "Assets", "SPARC_Batch_Outputs", "MCMC_v2_Chain_CSVs")
 RESULTS_DIR  = os.path.join(SCRIPT_DIR, "results_correct")
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
@@ -157,6 +158,17 @@ def _precompute_arrays(galaxies, clipped_weight=0.1):
     )
 
 
+def _worker_init(samples, log_n, weights):
+    """
+    Multiprocessing pool initializer — Windows 'spawn' does NOT inherit globals,
+    so we must explicitly set them in each worker process before emcee uses them.
+    """
+    global _SAMPLES, _LOG_N, _WEIGHTS
+    _SAMPLES = samples
+    _LOG_N   = log_n
+    _WEIGHTS = weights
+
+
 def log_probability_correct(theta):
     """
     IS-corrected hierarchical log-posterior.
@@ -190,22 +202,25 @@ def log_probability_correct(theta):
     return total_ll
 
 
-def run_correct_mcmc(galaxies, n_walkers=32, n_steps=2000, burn_in=300):
+def run_correct_mcmc(galaxies, n_walkers=32, n_steps=3000, burn_in=500):
     """
-    Run the IS-corrected hierarchical MCMC.
+    Run the IS-corrected hierarchical MCMC — multicore via multiprocessing.Pool.
 
-    The hot loop does: 32 walkers × 2000 steps × 176 galaxies × logsumexp(41,600)
-    logsumexp over 41,600 floats is a single vectorised numpy call (~0.1 ms).
-    Expected wall time: 10–30 minutes on Ryzen 7.
+    The hot loop does: 32 walkers × 3000 steps × 175 galaxies × logsumexp(~41,600 samples).
+    logsumexp over ~41,600 floats is a single vectorised numpy call (~0.1 ms).
+    Expected wall time: 15–45 minutes on Ryzen 7 (all cores) at 3000 steps.
+    Post-burn-in samples: 2500 × 32 = 80,000 — publication-grade convergence.
     """
     _precompute_arrays(galaxies, clipped_weight=0.1)
+    n_cores = cpu_count()
 
-    print(f"\n[MCMC] IS-Corrected Hierarchical Sampler")
+    print(f"\n[MCMC] IS-Corrected Hierarchical Sampler (MULTICORE)")
     print(f"       Walkers    : {n_walkers}")
     print(f"       Steps      : {n_steps}  (burn-in: {burn_in})")
     print(f"       Parameters : [mu_H0, sigma_H0]")
     print(f"       Likelihood : IS-corrected logsumexp (Mandel+2019)")
-    print(f"       Expected   : 10-30 minutes on Ryzen 7")
+    print(f"       CPU cores  : {n_cores} (all cores)")
+    print(f"       Expected   : 15-45 min on Ryzen 7 at 3000 steps (80,000 post-burn-in samples)")
 
     # Warm start: seed near the simple median of per-galaxy medians
     good    = [g for g in galaxies if not g["clipped"]]
@@ -218,9 +233,15 @@ def run_correct_mcmc(galaxies, n_walkers=32, n_steps=2000, burn_in=300):
         np.clip(seed_sig + 0.1 * np.random.randn(n_walkers), SIGMA_PRIOR_LO+0.01, SIGMA_PRIOR_HI-0.1),
     ])
 
-    sampler = emcee.EnsembleSampler(n_walkers, 2, log_probability_correct)
-    print("\n[MCMC] Running...")
-    sampler.run_mcmc(pos, n_steps, progress=True)
+    # Windows-safe multiprocessing: initializer pushes globals into each worker
+    with Pool(processes=n_cores,
+              initializer=_worker_init,
+              initargs=(_SAMPLES, _LOG_N, _WEIGHTS)) as pool:
+        sampler = emcee.EnsembleSampler(
+            n_walkers, 2, log_probability_correct, pool=pool
+        )
+        print("\n[MCMC] Running...")
+        sampler.run_mcmc(pos, n_steps, progress=True)
 
     flat = sampler.get_chain(discard=burn_in, flat=True)
     print(f"\n[MCMC] Complete. Effective samples: {len(flat)}")
@@ -402,8 +423,8 @@ if __name__ == "__main__":
     flat_samples, sampler = run_correct_mcmc(
         galaxies,
         n_walkers=32,
-        n_steps=2000,
-        burn_in=300,
+        n_steps=3000,
+        burn_in=500,
     )
 
     # 3. Three-way comparison plot + corner

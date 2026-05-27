@@ -98,7 +98,7 @@ def load_ml_ratios(batch_dir):
     Returns dict: galaxy_name → (ups_disk, ups_bulge)
     """
     ml_map = {}
-    chain_files = glob.glob(os.path.join(batch_dir, "*_MCMC_Chains.csv"))
+    chain_files = glob.glob(os.path.join(batch_dir, "MCMC_v2_Chain_CSVs", "*_MCMC_Chains.csv"))
     for cf in chain_files:
         gname = os.path.basename(cf).replace("_MCMC_Chains.csv", "")
         try:
@@ -200,11 +200,12 @@ if __name__ == "__main__":
 
     # --- Paths ---
     script_dir  = os.path.dirname(os.path.abspath(__file__))
-    repo_root   = os.path.abspath(os.path.join(script_dir, "..", "..", ".."))
+    repo_root   = os.path.abspath(os.path.join(script_dir, ".."))
     data_dir    = os.path.join(repo_root, "SPARC_data")
     batch_dir   = os.path.join(repo_root, "Assets", "SPARC_Batch_Outputs")
-    output_dir  = os.path.join(script_dir, "results")
-    os.makedirs(output_dir, exist_ok=True)
+    figures_dir = os.path.join(repo_root, "Assets", "Figures")
+    os.makedirs(batch_dir, exist_ok=True)
+    os.makedirs(figures_dir, exist_ok=True)
 
     galaxy_files = sorted(glob.glob(os.path.join(data_dir, "*_rotmod.dat")))
     if not galaxy_files:
@@ -275,7 +276,7 @@ if __name__ == "__main__":
         'Residual_kms': V_flat_arr - V_pred_arr,
         'ML_source':   ml_source
     })
-    csv_path = os.path.join(output_dir, "itsm_btfr_results.csv")
+    csv_path = os.path.join(batch_dir, "itsm_btfr_results.csv")
     df_out.to_csv(csv_path, index=False)
     print(f" Results saved: {csv_path}")
 
@@ -346,7 +347,7 @@ if __name__ == "__main__":
     ax2.set_ylim(-rlim, rlim)
 
     plt.tight_layout()
-    fig_path = os.path.join(output_dir, "itsm_btfr_publication.png")
+    fig_path = os.path.join(figures_dir, "itsm_btfr_publication.png")
     plt.savefig(fig_path, dpi=300, bbox_inches='tight')
     plt.close()
     print(f" Figure saved : {fig_path}")

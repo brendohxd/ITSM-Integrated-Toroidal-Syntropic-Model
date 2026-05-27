@@ -284,9 +284,9 @@ if __name__ == "__main__":
 
     # --- Paths ---
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    repo_root  = os.path.abspath(os.path.join(script_dir, "..", "..", ".."))
+    repo_root  = os.path.abspath(os.path.join(script_dir, ".."))
     data_dir   = os.path.join(repo_root, "SPARC_data")
-    output_dir = os.path.join(script_dir, "results")
+    output_dir = os.path.join(repo_root, "Assets", "SPARC_Batch_Outputs")
     os.makedirs(output_dir, exist_ok=True)
 
     galaxy_files = sorted(glob.glob(os.path.join(data_dir, "*_rotmod.dat")))
