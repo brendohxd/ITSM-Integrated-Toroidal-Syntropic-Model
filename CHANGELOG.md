@@ -1,5 +1,17 @@
 # ITSM Changelog & Archive History
 
+## Version 9.3.0 — NANOGrav Lorentzian Physics & PTA Resonance Validation (2026-05-27)
+
+### Experimental Physics: NANOGrav Pulsar Timing Arrays
+- **Lorentzian Resonance Physics:** Successfully validated and promoted the `NANOGrav_v2` experiment to `Scripts/itsm_nanograv_resonance.py`. The script formally replaces the unmotivated Gaussian profile with a mathematically rigorous Lorentzian resonance, dictated by the Superfluid Plenum acting as a damped driven quantum harmonic oscillator.
+- **NANOGrav 15yr Baseline Anchorage:** Anchored the resonance baseline amplitude directly to the published NANOGrav 15yr median ($A = 2.4 \times 10^{-15}$ at $31.7$ nHz).
+- **Geometric Falsifiability Window:** Established a strict, zero-parameter falsifiability test by locking the resonance centroid within the derived geometric limits of $[1.08, \pi]$ nHz, providing a direct predictive benchmark for the upcoming NANOGrav 20-year dataset.
+
+### Manuscript Hardening (`Manuscript/Main.tex`)
+- **Dynamic Compilation Date:** Replaced the hardcoded May 18th release date with `\date{\today}` to ensure the compiled `Main.pdf` always reflects the exact date of compilation.
+
+---
+
 ## Version 9.2.0 — Full CAMB Integration & Peer-Review Manuscript Hardening (2026-05-27)
 
 ### Experimental Physics: Full CAMB Diagnostic

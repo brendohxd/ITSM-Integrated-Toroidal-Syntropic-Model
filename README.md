@@ -30,6 +30,8 @@ The framework culminates in strict, falsifiable predictions, including **Localiz
 
 * 🔮 **CMB Acoustic Peak Reconciliation:** Demonstrates that the Syntropic Source fluid (acting as an effective phantom energy, $w=-1.27$) thermodynamically pulls the first CMB acoustic peak to $\ell=222$, within $<0.9\%$ of the Planck baseline ($\ell=220$), fully reconciling the high local $H_0 \approx 73.0$ with early universe perturbation theory.
 
+* 📡 **NANOGrav Lorentzian Resonance Validation:** Proves that the vacuum's toroidal topology dictates a highly specific Lorentzian acoustic resonance in the stochastic Gravitational Wave Background (bounded exactly between $1.08$ and $3.14$ nHz). This provides a strict, zero-parameter falsifiability test that isolates the ITSM from the featureless power-law decay of standard $\Lambda$CDM.
+
 ## 🚀 Key Mathematical Foundations
 1. **The Yield Threshold ($a_0$)**
 Derived strictly from macroscopic circulation quantization, establishing the limit where baryonic mass couples to the vacuum's inherent spin ($a_0 = c H_0 / 2\pi$).
