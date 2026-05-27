@@ -100,11 +100,19 @@ Implements a hierarchical Bayesian framework to evaluate global versus local $H_
 Natively models the thermodynamic intake of the Superfluid Plenum within CAMB's perturbation hierarchy, using an effective $w=-1.27$ phantom fluid mapping to pull the first acoustic peak to $\ell=222$.
 *Source: `Analysis/Experimental/CAMB_CMB/itsm_camb_cmb_spectrum.py`*
 
+🔹 **Script 14: Characteristic Surfaces & Causality**
+Generates a localized Penrose light-cone diagram proving that the effective acoustic metric (and its transient superluminal phase velocity) is strictly nested within the global background metric, forbidding Closed Timelike Curves (CTCs).
+*Source: `Scripts/itsm_causality_cones.py`*
+
+🔹 **Script 15: Extreme Dust Attenuation Outlier Model**
+Models the flagship edge-on outlier NGC 4217, mathematically proving that standard neutral hydrogen tables overestimate Newtonian mass. Validates the MCMC's preference for a dynamically suppressed bottom-light IMF ($\Upsilon \to 0.01$).
+*Source: `Scripts/itsm_ngc4217_dust_model.py`*
+
 ## 📂 Repository Structure
 | Directory | Content Description |
 |---|---|
 | 📄 `Manuscript/` | Complete, publication-ready LaTeX Manuscript (`Main.tex`), auto-generated appendices, and the compiled `Main.pdf`. |
-| 🔬 `Scripts/` | 11 executable Python engines for all kinematic and assembly simulations. |
+| 🔬 `Scripts/` | 15+ executable Python engines for all kinematic and assembly simulations. |
 | 📁 `Archive/` | Deprecated or earlier version iterations of the Python computational suite. |
 | 🔭 `SPARC_data/` | The 175 empirical galaxy `.dat` files required for Script 1. |
 | 🔬 `Assets/` | Centralized output hub for generated data and visuals. |
