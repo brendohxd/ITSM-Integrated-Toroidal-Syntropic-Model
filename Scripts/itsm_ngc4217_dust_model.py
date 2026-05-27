@@ -97,7 +97,7 @@ def main():
     
     # Text annotation for the math formula
     formula_text = (
-        r"\textbf{ITSM Modified Photometric Conversion}" + "\n\n" +
+        "ITSM MODIFIED PHOTOMETRIC CONVERSION\n\n" +
         r"$M_{\text{baryon}} = \Upsilon_{\text{ITSM}} \, L_{\text{obs}} \times \exp\left(-\frac{A_V}{5}\right)$" + "\n\n" +
         r"Bottom-light IMF ($\Upsilon \to 0.01$) dynamically induced" + "\n" +
         r"by Superfluid Plenum thermodynamic suppression."
