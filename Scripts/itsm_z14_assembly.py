@@ -14,7 +14,6 @@ plt.rcParams.update({
     "text.usetex": True,
     "text.latex.preamble": r"\usepackage{amsmath}",
     "font.family": "serif",
-    "font.serif": ["Computer Modern Roman"],
     "axes.facecolor": "white",
     "figure.facecolor": "white",
     "text.color": "black",

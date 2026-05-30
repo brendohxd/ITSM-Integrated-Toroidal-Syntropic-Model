@@ -1,4 +1,9 @@
-import numpy as np
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - Bullet Cluster Phase-Space Decoupling
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 from matplotlib.patches import Patch

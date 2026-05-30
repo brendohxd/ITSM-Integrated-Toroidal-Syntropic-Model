@@ -1,6 +1,9 @@
 """
-ITSM Diagnostic: Running Syntropic Decay Index (Stabilized + Visualized)
+ITSM Diagnostic — Running Syntropic Decay Index (Stabilized + Visualized)
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
 Protocol: Testing local stability of n(z) and plotting the evolutionary trend
+Environment: Windows / Antigravity IDE Workspace Compatible
 """
 
 import numpy as np
