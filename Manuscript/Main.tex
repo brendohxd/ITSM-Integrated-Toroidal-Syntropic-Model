@@ -1,4 +1,4 @@
-\documentclass[aps,prd,10pt,onecolumn,superscriptaddress,nofootinbib]{revtex4-2}
+\documentclass[aps,prd,10pt,twocolumn,superscriptaddress,nofootinbib]{revtex4-2}
 
 % Silence benign revtex4-2 / nameref collision warning
 \usepackage{silence}
@@ -56,7 +56,7 @@ To deconstruct the ``dark matter'' hypothesis and bridge relativistic mathematic
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{itsm_acoustic_wake_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_acoustic_wake_publication.png}
     \caption{\footnotesize Visual mapping of macroscopic torsional entrainment. The dashed pink boundary demarcates the fundamental kinematic yield threshold ($g_N = a_0$). Inside this normalized boundary, local Newtonian gravity dominates. Outside, the baryonic node lacks the energy to shear the Superfluid Plenum, resulting in the continuous generation of an acoustic metric wake (cyan) that mimics the effects of a dark matter halo. Simulation source: \texttt{itsm\_acoustic\_wake.py}, available at the ITSM GitHub repository.}
     \label{fig:wake_analogy}
 \end{figure}
@@ -106,7 +106,7 @@ The fractional vacuum drag naturally becomes entirely transparent within high-ac
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{itsm_thermodynamic_decoupling_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_thermodynamic_decoupling_publication.png}
     \caption{\footnotesize \textbf{Superfluid Plenum Phase Transition and Thermodynamic Decoupling.} The acoustic shear state function $\Xi(z)$ plotted across redshift space ($z$). The transition occurs at the critical condensation redshift ($z_c \approx 3400$), separating the high-redshift thermal plasma (radiation-dominated era, red shading) from the low-redshift superfluid condensate (matter-dominated era, blue shading). The suppression of acoustic shear before recombination ($z \approx 1100$, orange dotted line) ensures the preservation of CMB acoustic peaks in full alignment with Planck constraints. Simulation source: \texttt{itsm\_thermodynamic\_decoupling.py}.}
     \label{fig:thermodynamic_decoupling}
 \end{figure}
@@ -127,7 +127,7 @@ The ITSM sets the $T^3$ fundamental domain to the Hubble radius, $L_T = c/H_0$. 
 
 To anchor this macroscopic physical intuition to covariant relativistic mathematics, Table \ref{tab:covariant} maps these concepts.
 
-\begin{table}[htbp]
+\begin{table*}[htbp]
 \centering
 \caption{\footnotesize Covariant Mapping of Superfluid Mechanics and Thermodynamic Polarity}
 \label{tab:covariant}
@@ -142,7 +142,7 @@ Continuous Current & Circulation Quantization & Toroidal Constraint ($\chi=2\pi$
 Architectural Scaffold & Thermodynamic Throughput & Syntropic Source Vector ($Q^\nu$) \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
 \section{\label{sec:math}Mathematical Formalization and Derivations}
 
@@ -199,7 +199,7 @@ Consider a localized baryonic mass ($M_b$) with kinetic energy $X = -\frac{1}{2}
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{itsm_drag_saturation_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_drag_saturation_publication.png}
     \caption{\footnotesize Covariant Stability: Macroscopic Vacuum Drag vs. Local Relativistic Constraints. Standard linear modifications grow unbounded, violating local Solar System constraints. The ITSM Plenum Shear Ansatz correctly decays as $1/\sqrt{X}$, rendering the vacuum transparent at high kinetic energies. Simulation source: \texttt{itsm\_drag\_saturation.py}, available at the ITSM GitHub repository.}
     \label{fig:covariant_stability}
 \end{figure}
@@ -273,7 +273,7 @@ To preempt the assumption that any non-linear acceleration-scale modification in
 
 As explicitly mapped in Table~\ref{tab:mond_matrix}, the ITSM contains absolutely zero phenomenological free parameters. The $2/3$ coefficient is not an adjustable dial utilized to minimize statistical residuals; it is the exact, non-negotiable topological reality of a 3D spherical volume pushing through a 2D shear plane.
 
-\begin{table}[htbp]
+\begin{table*}[htbp]
 \caption{\label{tab:mond_matrix}Ontological Matrix: Geometric Reality vs. Phenomenological Interpolation.}
 \begin{ruledtabular}
 \begin{tabular}{llcc}
@@ -284,7 +284,7 @@ Standard MOND & $\mu\left(\frac{g_N}{a_0}\right) = \frac{x}{\sqrt{1+x^2}}$ & Phe
 SFDM (Berezhiani \& Khoury) & $\mathcal{L}_{\text{SF}} \propto \frac{2\alpha}{3} X\sqrt{|X|}$ & Phenomenological Insertion & Empirical $\alpha, \Lambda$ \\
 \end{tabular}
 \end{ruledtabular}
-\end{table}
+\end{table*}
 
 Because the interaction cross-section is structurally locked by the manifold's geometry, the ITSM cannot be "tuned" to fit anomalous galactic telemetry. This rigidity separates the model entirely from the MOND paradigm, establishing the fractional vacuum drag as a fundamental physical constant rather than an empirical modification.
 
@@ -373,7 +373,7 @@ To prove that macroscopic signal propagation does not exceed the speed of light 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{itsm_causality_cones.png}
+    \includegraphics[width=\columnwidth]{itsm_causality_cones.png}
     \caption{\footnotesize \textbf{Characteristic Surfaces at Transition Boundary.} Localized light-cone demonstrating the nesting of the effective acoustic metric (phonon propagation) within the global topological bounding cone. Even at the peak transition scale where $c_s^2 \approx 1.11$, the strict positivity of the Hamiltonian ($\mathcal{H} > 0$) ensures energy is bounded from below, mathematically forbidding Closed Timelike Curves (CTCs) and preserving macroscopic causality.}
     \label{fig:causality_cones}
 \end{figure}
@@ -421,7 +421,7 @@ The coefficient $\frac{4}{9} = \left(\frac{2}{3}\right)^2$ follows directly from
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{itsm_btfr_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_btfr_publication.png}
     \caption{\footnotesize \textbf{ITSM Baryonic Tully-Fisher Relation: First-Principles Lower Bound.} Asymptotic flat velocity $V_f$ versus baryonic mass $M_b$ for 171 SPARC galaxies. The ITSM geometric lower bound (crimson line) $V_f^4 = \frac{4}{9}\,G\,M_b\,a_0$ is drawn with \emph{no} free parameters---the amplitude is set entirely by the geometric yield threshold $a_0 = cH_0/2\pi$ at the toroidal edge value $H_0 = 73.0$~km~s$^{-1}$~Mpc$^{-1}$. The factor $(4/9) = (2/3)^2$ is the transition-regime prediction from the Plenum Shear Ansatz; it is not empirically tuned. The standard MOND BTFR ($V_f^4 = G\,M_b\,a_0$, dashed), which matches the empirical data of \citet{sparc}, represents the MOND upper bound and the target of the complete ITSM coupling derivation. The $1\sigma$ bootstrap envelope (shaded) reflects the systematic spread from a 10\% representative velocity uncertainty across the sample.}
     \label{fig:btfr}
 \end{figure}
@@ -467,9 +467,9 @@ An automated batch sweep was executed across 175 distinct galactic systems. Afte
 The ensemble median of the inferred local expansion parameter converged at $H_0 = 70.63 \pm 0.31 \ \text{km s}^{-1} \text{Mpc}^{-1}$ (Fig.~\ref{fig:mcmc_synthesis}b), where the quoted uncertainty reflects the inter-galaxy scatter in posterior medians across the high-fidelity sample. This value is consistent with the local distance ladder benchmark ($H_0 \approx 73 \ \text{km s}^{-1} \text{Mpc}^{-1}$) and lies within $1.5\sigma$ of the Planck CMB constraint ($H_0 = 67.4 \pm 0.5 \ \text{km s}^{-1} \text{Mpc}^{-1}$).
 
 \begin{figure}[htbp]
-\includegraphics[width=0.48\textwidth]{ITSM_Rotation_Curve_Expanded.png}
+\includegraphics[width=\columnwidth]{ITSM_Rotation_Curve_Expanded.png}
 \hfill
-\includegraphics[width=0.48\textwidth]{ITSM_H0_Convergence_Histogram.png}
+\includegraphics[width=\columnwidth]{ITSM_H0_Convergence_Histogram.png}
 \caption{\label{fig:mcmc_synthesis} \footnotesize \textbf{Multicore MCMC Diagnostic Outputs (16-core batch engine, 3000 steps $\times$ 32 walkers, 175/175 galaxies).} \textit{(a)} Observed orbital velocity curve for flagship system NGC~5055 (black points) contrasted against the Newtonian baryonic baseline (gray dashed line) and the ITSM Plenum Shear posterior fit (crimson line) with $1\sigma$ walker swarm envelope. \textit{(b)} Global distribution of the per-galaxy $H_0$ posterior medians across the full 175-galaxy SPARC sample, demonstrating systematic clustering consistent with the local distance ladder benchmark. The 600-step burn-in chain was discarded prior to statistical aggregation; convergence was independently confirmed against an identical 1500-step run yielding statistically indistinguishable posteriors.}
 \end{figure}
 
@@ -489,7 +489,7 @@ Accordingly, the appropriate statistical framework for extracting a population-l
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.95\textwidth]{itsm_h0_posterior_shape_diagnostic.png}
+    \includegraphics[width=\columnwidth]{itsm_h0_posterior_shape_diagnostic.png}
     \caption{\label{fig:h0_shape_diagnostic} \footnotesize \textbf{Per-galaxy $H_0$ posterior morphology across the 175-galaxy SPARC sample.} Representative posterior distributions are shown in three tiers. \textit{Row~1 (tightly spiked):} High-surface-brightness galaxies whose chains collapse against the lower sampling boundary, producing boundary-truncated artefacts ($\sigma_{H_0} < 0.5\ \mathrm{km\,s^{-1}\,Mpc^{-1}}$) that do not constitute genuine $H_0$ measurements. \textit{Row~2 (skewed):} Intermediate systems exhibiting heavy-tailed, right-skewed posteriors inconsistent with the Gaussian population model assumed by importance-sampling hierarchical inference (Shapiro--Wilk $p = 0$ in all cases). \textit{Row~3 (flat):} Low-surface-brightness galaxies whose posteriors are near-uniform across the full prior range ($\sigma_{H_0} \gtrsim 14\ \mathrm{km\,s^{-1}\,Mpc^{-1}}$), confirming that individual rotation curve geometry does not independently constrain $H_0$. This morphological diversity demonstrates that hierarchical IS inference requires a joint global likelihood approach (Sec.~\ref{sec:kinematics}) rather than a decomposed per-galaxy estimator. Vertical dashed lines indicate the Planck~2018 ($67.4\ \mathrm{km\,s^{-1}\,Mpc^{-1}}$, gold) and SH0ES ($73.0\ \mathrm{km\,s^{-1}\,Mpc^{-1}}$, red) reference values.}
 \end{figure}
 
@@ -506,7 +506,7 @@ M_{\text{baryon}} = \Upsilon_{\text{ITSM}} \, L_{\text{obs}} \times \exp\left(-\
 \end{equation}
 where $\Upsilon_{\text{ITSM}} \approx 0.01$ is the dynamically shifted baseline. Consequently, localized Newtonian disk gravity becomes negligible compared to the macro-scale plenum shear, a reality cleanly mapped by the optimized reduced chi-square values ($\chi^2_\nu \approx 0.15 - 0.45$) (Fig.~\ref{fig:mcmc_synthesis}a).
 
-\begin{table}[htbp]
+\begin{table*}[htbp]
 \caption{\label{tab:sparc_summary}ITSM MCMC Parameter Estimations for the SPARC Galaxy Database. A complete 175-galaxy ledger is available in the supplementary material.}
 \begin{ruledtabular}
 \begin{tabular}{lccccc}
@@ -521,14 +521,14 @@ NGC 5055 & $0.012$ & $4.115$ & $71.19$ & $0.422$ & $25$ \\
 \hline
 \end{tabular}
 \end{ruledtabular}
-\end{table}
+\end{table*}
 
-\begin{figure}[htbp]
+\begin{figure*}[htbp]
     \centering
-    \includegraphics[width=0.6\textwidth, keepaspectratio]{itsm_global_mcmc_corner.png}
+    \includegraphics[width=0.8\textwidth, keepaspectratio]{itsm_global_mcmc_corner.png}
     \caption{\footnotesize \textbf{Joint MCMC Posterior Distribution Corner Plot.} 1D and 2D parameter posteriors for the joint fit of the ITSM parameters: the Hubble expansion rate $H_0$, the matter density parameter $\Omega_m$, and the syntropic volumetric decay index $n$. The optimization converges cleanly around $H_0 \approx 72.5\,\text{km s}^{-1}\text{Mpc}^{-1}$, $\Omega_m \approx 0.24$, and $n \approx 1.45$. Truth values (dashed lines) denote the ensemble median posteriors. Simulation source: \texttt{itsm\_global\_mcmc.py}.}
     \label{fig:global_mcmc_corner}
-\end{figure}
+\end{figure*}
 
 \subsection{Analysis of Systemic Boundary Outliers and Dust Attenuation}
 
@@ -538,7 +538,7 @@ For edge-on galaxies, standard neutral hydrogen (HI) column density tables syste
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.95\textwidth]{itsm_ngc4217_dust_model.png}
+    \includegraphics[width=\columnwidth]{itsm_ngc4217_dust_model.png}
     \caption{\footnotesize \textbf{NGC 4217 Edge-On Dust Attenuation Model.} Application of the ITSM modified photometric conversion to the flagship outlier NGC 4217. The extreme dust attenuation ($A_V = 3.5$) combined with the bottom-light IMF explicitly drops the true Newtonian velocity baseline, proving that standard SPS models artificially overestimate the enclosed baryonic mass in edge-on systems. This validates the MCMC optimizer's strict preference for $\Upsilon \to 0.01$.}
     \label{fig:ngc4217_dust}
 \end{figure}
@@ -570,7 +570,7 @@ where $\Omega_{\text{syn}}$ is not a free phenomenological parameter, but is str
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{itsm_desi_bao_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_desi_bao_publication.png}
     \caption{\footnotesize Confrontation with DESI 2024 BAO data: effective Hubble parameter $H(z)$ as a function of redshift. The static $\Lambda$CDM prediction (dashed) assumes a constant cosmological constant ($w = -1$). The ITSM Syntropic Volume Decay curve (solid) naturally produces a time-varying effective dark energy component via the $(1+z)^{-3}$ volumetric dilution of the Syntropic Source Vector, reproducing the tentative DESI signal of evolving $w(z)$ without phenomenological $w_0$--$w_a$ parameterization.}
     \label{fig:desi_bao}
 \end{figure}
@@ -578,7 +578,7 @@ where $\Omega_{\text{syn}}$ is not a free phenomenological parameter, but is str
 To empirically validate this geometric expansion, we performed a joint Bayesian MCMC optimization against DESI DR2 BAO telemetry, identifying an optimized syntropic decay index of $n = 0.8090 \pm 0.03$. Crucially, this joint fit anchors the manifold to an effective early-universe expansion rate of $H_0 = 78.63 \text{ km s}^{-1} \text{ Mpc}^{-1}$. While higher than the local late-universe SH0ES calibration ($73.0$) and the galaxy-scale MCMC median ($\sim 70.6$), this elevated value is a structural necessity: the syntropic decay term shifts the evolutionary baseline, requiring a higher macroscopic throughput to balance the evolving void volume in the early universe.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{itsm_desi_bao_empirical_validation.png}
+    \includegraphics[width=\columnwidth]{itsm_desi_bao_empirical_validation.png}
     \caption{\footnotesize \textbf{Empirical Validation of Syntropic Decay against DESI DR2.} Joint Bayesian MCMC optimization of the ITSM effective Hubble parameter confronting the DESI 2024 Baryon Acoustic Oscillation (BAO) consensus telemetry. The manifold is anchored to an optimized effective early-universe expansion rate of $H_0 = 78.63 \text{ km s}^{-1} \text{ Mpc}^{-1}$. This elevated parameter value deviates from local late-universe calibrations (e.g., SH0ES) because the syntropic decay term structurally shifts the evolutionary baseline; it effectively tracks the higher macroscopic throughput required to balance the evolving void volume in the early universe. The resulting global fit strictly isolates a syntropic decay index of $n = 0.8090 \pm 0.03$, structurally confirming that the macroscopic thermodynamic intake dilutes symmetrically with the volumetric expansion of the Toroidal Manifold without requiring arbitrary quintessence parameters.}
     \label{fig:desi_validation}
 \end{figure}
@@ -588,7 +588,7 @@ To test the stability of the syntropic coupling, we partitioned the data into re
 
 \begin{figure*}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{itsm_n_evolution.png}
+    \includegraphics[width=\columnwidth]{itsm_n_evolution.png}
     \caption{\footnotesize \textbf{Redshift-Dependent Vacuum Evolution and the Syntropic Decoupling Epoch.} Evolution of the syntropic decay index $n(z)$ partitioned across constrained redshift bins ($0 < z < 2.5$). The data reveals a distinct, mathematically locked phase transition at $z \approx 0.8$, where the decay index shifts from an early-universe state of $n \approx 0.71$ to a late-universe state of $n \approx 1.45$. This structural boundary physically identifies the Syntropic Decoupling Epoch, demonstrating that the Superfluid Plenum operates as a dynamical medium with redshift-dependent thermodynamic coupling, seamlessly resolving the kinematic tension between high-redshift CMB priors and local distance ladder calibrations.}
     \label{fig:n_evolution}
 \end{figure*}
@@ -608,7 +608,7 @@ This $8.3\%$ variance is not a fit to the two measured values; it is a rigid geo
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{itsm_hubble_resolver_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_hubble_resolver_publication.png}
     \caption{\footnotesize Geometric resolution of the Hubble Tension via toroidal anisotropy. The ITSM models the expansion rate $H_0(\theta)$ as a trigonometric projection dependent on the observational viewing angle $\theta$ relative to the toroidal manifold's symmetry axis. The gold band denotes the Planck CMB constraint ($H_0 \approx 67.4 \pm 0.5$~km/s/Mpc), corresponding to poloidal-axis observations, while the tomato band denotes the SH0ES local measurement ($H_0 \approx 73.0 \pm 1.0$~km/s/Mpc), corresponding to toroidal-edge observations. The model reconciles both as a continuous $\approx 8.3\%$ geometric projection variance inherent to the $\chi = 2\pi$ topology.}
     \label{fig:hubble}
 \end{figure}
@@ -635,7 +635,7 @@ Burkert Profile & 1.42 & 3/galaxy & 2693 \\
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{itsm_global_rar_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_global_rar_publication.png}
     \caption{\footnotesize Global Radial Acceleration Relation (RAR) for 175 SPARC galaxies. Each data point represents a radial bin from an individual galaxy, plotting observed centripetal acceleration ($g_{\text{obs}}$) against the Newtonian baryonic prediction ($g_{\text{bar}}$). The ITSM analytic curve (red) recovers the empirical RAR without free halo parameters, yielding a global $\chi^2_\nu \approx 8.57$ across 3178 degrees of freedom (Table~\ref{tab:chi_square}).}
     \label{fig:global_rar}
 \end{figure}
@@ -664,7 +664,7 @@ The observed post-collision ICM velocity of the Bullet sub-cluster is $\approx 6
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{itsm_bullet_phasespace_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_bullet_phasespace_publication.png}
     \caption{\footnotesize Phase-space decoupling in the Bullet Cluster (1E 0657-56). Kernel Density Estimation (KDE) contours illustrate the kinematic separation predicted by the ITSM: the thermalized, decelerated baryonic gas (red contours, X-ray emitting component) loses kinetic energy below the $a_0$ threshold during the collision, while the compact stellar cores (blue contours) maintain sufficient velocity to sustain their macroscopic metric wake. The resulting spatial offset between the X-ray centroid and the gravitational lensing centroid is a natural consequence of fluid-dynamic friction within the Superfluid Plenum, requiring no collisionless dark matter particles.}
     \label{fig:bullet}
 \end{figure}
@@ -677,7 +677,7 @@ In $\Lambda$CDM, structural formation is hierarchical, prohibiting dynamically c
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{itsm_z14_assembly_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_z14_assembly_publication.png}
     \caption{\footnotesize Baryonic mass assembly history for JADES-GS-z14-0 ($z = 14.32$, $t_{\text{age}} \approx 290$~Myr). The $\Lambda$CDM hierarchical merging model (dashed red) cannot accumulate $M_\star \gtrsim 10^{8.5}\,M_\odot$ within the available cosmic time, establishing a high-mass forbidden zone (shaded). The ITSM toroidal scaffolding model (solid cyan) permits rapid baryonic condensation at pre-existing vacuum vortex cores, comfortably reaching the observed stellar mass threshold within the JWST-confirmed timeline.}
     \label{fig:jades_timeline}
 \end{figure}
@@ -707,7 +707,7 @@ Because the angular tracking signature of a scalar breathing mode displays an is
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{itsm_nanograv_resonance_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_nanograv_resonance_publication.png}
     \caption{\footnotesize \textbf{ITSM Toroidal Acoustic Resonance vs.\ NANOGrav 15-Year GWB.} Predicted characteristic strain $h_c(f)$ for the nanohertz gravitational-wave background, anchored to the published NANOGrav 15-year amplitude $A_{\mathrm{GWB}} = 2.4\times10^{-15}$ at reference frequency $f_{\mathrm{ref}} = 1\,\mathrm{yr}^{-1}$ \cite{nanograv}. The $\Lambda$CDM model (dashed) predicts a featureless power-law spectrum ($h_c \propto f^{-2/3}$) from incoherent SMBHB superposition. The ITSM (solid, Lorentzian profile) predicts a localized acoustic resonance---the ``Toroidal Hum''---strictly confined to the geometric window $[1.08,\,\pi]$~nHz, where $1.08\,\text{nHz} = \bar{a}_0$ (the normalized ITSM yield threshold) and $\pi\,\text{nHz}$ is the toroidal harmonic $\chi/2$. The shaded envelope is a 2000-sample multicore bootstrap over the Lorentzian width parameter. A spectral excess outside this interval would definitively falsify the toroidal acoustic premise.}
     \label{fig:nanograv}
 \end{figure}
@@ -727,7 +727,7 @@ This syntropic intake mathematically maps to an effective equation of state of $
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{itsm_camb_cmb_spectrum_publication.png}
+    \includegraphics[width=\columnwidth]{itsm_camb_cmb_spectrum_publication.png}
     \caption{\footnotesize \textbf{Full ITSM CAMB CMB Power Spectrum Diagnostic.} Temperature angular power spectrum $D_\ell = \ell(\ell+1)C_\ell/2\pi$ computed with CAMB 1.6.6 for the Planck~2018 baseline ($H_0 = 67.36$, $w=-1.0$), the pure geometric ITSM bound ($H_0 = 73.0$, $w=-1.0$), and the Full ITSM ($H_0 = 73.0$, $w=-1.27$). While the bare geometric tether shifts the first acoustic peak downward to $\ell \approx 217$, the Full ITSM Syntropic Source actively pulls the peak back to $\ell = 222$, arriving within $<0.9\%$ of the Planck baseline ($\ell = 220$). This demonstrates that the high local expansion rate is fully reconciled with the early universe geometry when the open thermodynamic fluid boundaries are engaged.}
     \label{fig:camb_cmb}
 \end{figure}

@@ -1,5 +1,17 @@
 # ITSM Changelog & Archive History
 
+## Version 9.6.0 — Two-Column Formatting & Final Peer-Review Additions (2026-05-31)
+
+### Manuscript Layout Refactor (`Manuscript/Main.tex`)
+- **Two-Column Transition:** Transitioned the manuscript to a formal 21-page `twocolumn` format, significantly reducing the document page count and improving standard peer-review readability.
+- **Float Optimization:** Automatically scaled standard graphics to `\columnwidth` and converted wide multi-panel floats (e.g., MCMC corner plot) into page-spanning `figure*` environments.
+
+### Peer-Review Enhancements
+- **Limitations Transparency:** Added explicit model limitations acknowledging potential boundary artifacts and the pending covariant coupling derivation.
+- **TeVeS Distinction:** Fortified the distinction between ITSM and TeVeS/MOND in the Introduction.
+- **Bibliographic Expansion:** Appended recent un-virialized kinematic sources into the bibliography.
+
+
 ## Version 9.5.2 — Zenodo Computational Engines Archive (2026-05-30)
 
 ### Repository & Archival
