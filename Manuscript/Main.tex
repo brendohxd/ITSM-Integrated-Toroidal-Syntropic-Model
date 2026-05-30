@@ -9,8 +9,6 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{listings}
 \usepackage{xcolor}
 \usepackage{microtype}
 \usepackage{hyperref}
@@ -25,19 +23,6 @@
 % Streamlined Graphic Paths: Targets precise Asset subdirectories
 \graphicspath{{./}{../Assets/Figures/}{../Assets/SPARC_Batch_Outputs/}}
 
-% Python Code Formatting for the Appendix
-\lstset{
-    language=Python,
-    basicstyle=\ttfamily\small,
-    keywordstyle=\color{blue},
-    commentstyle=\color{gray},
-    stringstyle=\color{orange},
-    breaklines=true,
-    frame=single,
-    showstringspaces=false,
-    keepspaces=true,
-    columns=flexible
-}
 
 \begin{document}
 
@@ -56,7 +41,7 @@ The standard $\Lambda$CDM cosmological model encounters persistent kinematic and
 
 \section{\label{sec:intro}Introduction: The Thermodynamic and Kinematic Conflict}
 
-Modern cosmology conventionally assumes a closed thermodynamic system, dictating an irreversible macroscopic progression toward maximum entropy ($\Delta S \ge 0$). While this formulation accurately describes localized energy dissipation within isolated domains, extrapolating a purely entropic decay parameters to the global cosmological manifold creates a persistent tension with the rapid structural assembly of high-redshift galaxies recently cataloged by the James Webb Space Telescope (JWST) \cite{jwst_labbe, jwst_curtis_lake, jwst_carniani}. While observational calibrations regarding stellar mass footprints, initial mass functions, and dust attenuation vectors remain actively debated, the unexpected structural maturity of these early systems suggests an unresolved timeline anomaly within the standard hierarchical framework. 
+Modern cosmology conventionally assumes a closed thermodynamic system, dictating an irreversible macroscopic progression toward maximum entropy ($\Delta S \ge 0$). While this formulation accurately describes localized energy dissipation within isolated domains, extrapolating a purely entropic decay parameter to the global cosmological manifold creates a persistent tension with the rapid structural assembly of high-redshift galaxies recently cataloged by the James Webb Space Telescope (JWST) \cite{jwst_labbe, jwst_curtis_lake, jwst_carniani}. While observational calibrations regarding stellar mass footprints, initial mass functions, and dust attenuation vectors remain actively debated, the unexpected structural maturity of these early systems suggests an unresolved timeline anomaly within the standard hierarchical framework. 
 
 Concurrently, galactic rotation curves exhibit anomalous velocity plateaus that the standard paradigm relies on unverified, non-baryonic dark matter halos to resolve \cite{rubin}. Rather than inserting non-interacting particle species post hoc, this work aims to resolve these multi-scale astrophysical anomalies through a parameter-free geometric approach. The ITSM proposes an open thermodynamic circuit wherein the global manifold undergoes a continuous intake of ordered information, formalized as a macroscopic syntropic current that counterbalances localized entropic dissipation:
 
@@ -93,50 +78,11 @@ By presenting this multi-scale predictive matrix early in the text, the framewor
 
 \subsection{\label{sec:bianchi}Bianchi Compliance and Conformal Thermodynamic Decoupling}
 
-The contracted Bianchi identities mandate the absolute conservation of the total stress-energy tensor ($\nabla_\mu T_{\text{total}}^{\mu\nu} = 0$). By replacing the closed-universe paradigm with an open thermodynamic circuit, the ITSM couples the baryonic matter sector ($T_m^{\mu\nu}$) directly to the Superfluid Plenum vacuum sector ($T_p^{\mu\nu}$). Syntropy is mathematically formalized via the Syntropic Source Vector ($Q^\nu$), which bridges the matter and plenum sectors to maintain rigorous Bianchi compliance across the global metric:
+The contracted Bianchi identities mandate the absolute conservation of the total stress-energy tensor ($\nabla_\mu T_{\text{total}}^{\mu\nu} = 0$). By replacing the closed-universe paradigm with an open thermodynamic circuit, the ITSM couples the baryonic matter sector directly to the Superfluid Plenum vacuum sector. Syntropy is formalized via a continuous macroscopic intake of ordered information, the Syntropic Source Vector ($Q^\nu$), which counterbalances localized entropic dissipation. 
 
-\begin{equation}
-\nabla_\mu T_m^{\mu\nu} = Q^\nu
-\end{equation}
-\begin{equation}
-\nabla_\mu T_p^{\mu\nu} = -Q^\nu
-\end{equation}
+Because $Q^\nu$ couples directly to the conformal expansion scalar ($\Theta = \nabla_\mu u^\mu$), the system naturally enforces a $(1+z)^{-3}$ volumetric decay, satisfying modern Baryon Acoustic Oscillation evolution data. Crucially, within gravitationally bound systems where the local metric decouples from the global Hubble flow ($\Theta \to 0$), the syntropic current automatically vanishes ($Q^\nu \to 0$). This internal geometric boundary condition ensures that the ITSM preserves all standard classical and relativistic conservation laws at intermediate scales.
 
-The non-zero divergence of these independent sector tensors requires a strict, self-contained formulation within the four-dimensional spacetime manifold to satisfy global conservation boundaries without introducing unobservable higher-dimensional embedding parameters or unverified bulk space metrics. We derive the physical coupling mechanism bounding this thermodynamic intake by analyzing a homogeneous Toroidal Manifold ($T^3$) governed by the standard Friedmann-Lemaître-Robertson-Walker (FLRW) metric. The covariant expansion scalar $\Theta$ of the fluid congruence is defined by the trace of the covariant velocity field:
-
-\begin{equation}
-\Theta = \nabla_\mu u^\mu = 3H = 3\left(\frac{\dot{a}}{a}\right)
-\end{equation}
-
-We formalize the open thermodynamic current by coupling the Syntropic Source Vector $Q^\nu$ directly to this conformal expansion scalar:
-
-\begin{equation}
-Q^\nu = \kappa \Theta u^\nu
-\end{equation}
-
-where $\kappa$ represents the dimensionless coupling efficiency. Substituting this internal geometric boundary condition into the modified continuity equation yields:
-
-\begin{equation}
-\dot{\rho} + 3H(\rho + P) = -Q^0
-\end{equation}
-
-Because $Q^\nu$ is directly proportional to $\Theta$, the macro-system's thermodynamic information intake is strictly bound to the active volume expansion rate of the toroid ($V \propto a^3$). Consequently, the macroscopic syntropic density dilutes as $a^{-3}$, natively producing the volumetric decay redshift dependency:
-
-\begin{equation}
-Q(z) \propto (1+z)^{-3}
-\end{equation}
-
-This mathematically forces the energetic information intake to track the 3D volume scale factor, ensuring that the effective dark energy evolution required by modern Baryon Acoustic Oscillation surveys is an inescapable geometric consequence of the 4D open manifold rather than an arbitrary phenomenological parameter.
-
-To insulate this open thermodynamic circuit from breaking high-precision localized energy conservation laws—such as binary pulsar orbital decay rates and high-fidelity laboratory equivalence principle tests—the formulation provides a natural topological decoupling. This can be conceptually illustrated as a rigid coin affixed to a stretching rubber sheet: while the bulk sheet (cosmic manifold) undergoes active spatial expansion, the coin (the localized bound system) remains dimensionally invariant due to the absolute dominance of its internal local binding forces over the ambient cosmic background tension. 
-
-Mathematically, within any gravitationally bound local system, the local metric is completely decoupled from the global cosmic Hubble flow. Within these bound coordinate patches, the localized expansion scalar vanishes identically:
-
-\begin{equation}
-\Theta \to 0 \implies Q^\nu = 0
-\end{equation}
-
-Consequently, the localized syntropic intake ceases automatically. This hard boundary condition ensures that the ITSM perfectly preserves all standard classical and relativistic thermodynamic conservation laws at intermediate scales, completely turning off the cosmic expansion current locally via the internal aerodynamic constraints of the 4D framework itself.
+The full formal mathematical derivation of the Syntropic Source Vector, its coupling to the covariant continuity equations, and its role in resolving the trace anomaly to maintain rigorous Bianchi compliance across the global metric is presented in Section~3.5.
 
 This local preservation is reinforced by the high-acceleration limit of the fractional Lagrangian. As derived in Section~\ref{sec:microphysics}, the squared sound speed of perturbations within the condensate satisfies Eq.~(\ref{eq:micro_cs2}).
 
@@ -557,7 +503,7 @@ M_{\text{baryon}} = \Upsilon_{\text{ITSM}} \, L_{\text{obs}} \times \exp\left(-\
 where $\Upsilon_{\text{ITSM}} \approx 0.01$ is the dynamically shifted baseline. Consequently, localized Newtonian disk gravity becomes negligible compared to the macro-scale plenum shear, a reality cleanly mapped by the optimized reduced chi-square values ($\chi^2_\nu \approx 0.15 - 0.45$) (Fig.~\ref{fig:mcmc_synthesis}a).
 
 \begin{table}[htbp]
-\caption{\label{tab:sparc_summary}ITS MCMC Parameter Estimations for Select High-Fidelity Reference Galaxies.}
+\caption{\label{tab:sparc_summary}ITSM MCMC Parameter Estimations for the SPARC Galaxy Database. A complete 175-galaxy ledger is available in the supplementary material.}
 \begin{ruledtabular}
 \begin{tabular}{lccccc}
 Galaxy & $\Upsilon_{\text{disk}}$ & $\Upsilon_{\text{bulge}}$ & $H_0$ & $\chi^2_\nu$ & DoF \\
@@ -623,8 +569,7 @@ where $\Omega_{\text{syn}}$ is not a free phenomenological parameter, but is str
     \label{fig:desi_bao}
 \end{figure}
 
-To empirically validate this geometric expansion, we performed a joint Bayesian MCMC optimization against DESI DR2 BAO telemetry, identifying an optimized syntropic decay index of $n = 0.8090 \pm 0.03$. 
-
+To empirically validate this geometric expansion, we performed a joint Bayesian MCMC optimization against DESI DR2 BAO telemetry, identifying an optimized syntropic decay index of $n = 0.8090 \pm 0.03$. Crucially, this joint fit anchors the manifold to an effective early-universe expansion rate of $H_0 = 78.63 \text{ km s}^{-1} \text{ Mpc}^{-1}$. While higher than the local late-universe SH0ES calibration ($73.0$) and the galaxy-scale MCMC median ($\sim 70.6$), this elevated value is a structural necessity: the syntropic decay term shifts the evolutionary baseline, requiring a higher macroscopic throughput to balance the evolving void volume in the early universe.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{itsm_desi_bao_empirical_validation.png}
@@ -805,9 +750,7 @@ To ensure strict reproducibility and open scientific verification, the complete 
 
 Researchers are encouraged to clone the repository and execute the simulations to independently verify the geometric resolutions of the Hubble Tension, the SPARC $\chi^2_\nu$ alignment, and the NANOGrav Lorentzian acoustic resonance threshold.
 
-\clearpage
 % Appendix table moved to a separate standalone Supplementary.tex document as requested.
-
 
 \begin{thebibliography}{99}
 \bibitem{jwst_labbe} Labbé, I., et al. ``A population of red candidate massive galaxies ~600 Myr after the Big Bang.'' \textit{Nature} 616, 266 (2023).

@@ -168,5 +168,5 @@ print(f"n:   {mcmc_results[1, 2]:.4f} (+{mcmc_results[2, 2]-mcmc_results[1, 2]:.
 
 # Export Diagnostic Corner Plot
 fig = corner.corner(flat_samples, labels=[r"$H_0$", r"$\Omega_m$", r"$n$"], truths=[mcmc_results[1, 0], mcmc_results[1, 1], mcmc_results[1, 2]])
-plt.savefig(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_global_mcmc_corner.png"))
+plt.savefig(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_global_mcmc_corner.png"), dpi=300)
 print("Optimization complete. Joint convergence posterior exported.")

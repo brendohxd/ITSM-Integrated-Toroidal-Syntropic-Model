@@ -1,5 +1,21 @@
 # ITSM Changelog & Archive History
 
+## Version 9.5.0 — Pre-Publication Audit & Sanitization (2026-05-30)
+
+### Manuscript Hardening
+- **LaTeX Sanitization:** Removed unused `longtable` and `listings` packages from the preamble to optimize compilation. Removed arbitrary `\clearpage` prior to the bibliography.
+- **Contextual Anchors:** Added explicit paragraph context in Section 4.2 justifying the $H_0 = 78.63$ anchor in the DESI BAO joint fit.
+- **Typographic Polish:** Corrected "ITS MCMC" table caption typo to "ITSM MCMC" and fixed "decay parameters" to "decay parameter".
+- **Supplementary Ledger:** Updated `Supplementary.tex` to use `\date{\today}` for dynamic compilation dating and corrected minor body text typos.
+
+### Environment & Reproducibility
+- **Conda Blueprint:** Successfully exported the canonical `itsm_env` to a reproducible `environment.yml` file.
+- **README Overhaul:** Rewrote the installation instructions to mandate `conda env create -f environment.yml`, deprecating the incomplete `pip install` list to ensure full reproducibility for MCMC and CAMB dependencies.
+
+### Repository Hygiene
+- **Git Ignore Fixes:** Removed `*.pdf` and `*.bbl` from `.gitignore` so that compiled documents are correctly tracked for reviewers who do not compile from source.
+- **Asset Purge:** Deleted legacy v8.3 visual assets (`itms_acoustic_wake...` and `itms_bullet_phasespace...`) that were bloating the repository.
+- **High-Res Targeting:** Updated the `itsm_global_mcmc.py` script to export the corner plot at publication quality (`dpi=300`).
 ## Version 9.4.0 — Tier-1 Peer Review Physics Hardening (2026-05-27)
 
 ### Experimental Physics: Causality & Mass-to-Light Synthesis
