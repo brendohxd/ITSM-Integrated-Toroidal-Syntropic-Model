@@ -1,5 +1,10 @@
 # ITSM Changelog & Archive History
 
+## Version 9.5.2 — Zenodo Computational Engines Archive (2026-05-30)
+
+### Repository & Archival
+- **Zenodo Integration Fix:** Packaged the full computational suite, MCMC scripts, and datasets into `ITSM_Computational_Engines_v9.5.2.zip` for proper Zenodo archival (correcting the previous arXiv bundle upload).
+
 ## Version 9.5.1 — Structural Optimization & Tone Neutralization (2026-05-30)
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
