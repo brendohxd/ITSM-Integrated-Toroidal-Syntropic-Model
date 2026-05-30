@@ -1,5 +1,12 @@
 # ITSM Changelog & Archive History
 
+## Version 9.5.1 — Structural Optimization & Tone Neutralization (2026-05-30)
+
+### Manuscript Revisions (`Manuscript/Main.tex`)
+- **Tone Neutralization:** Systematically revised terminology targeting MOND and $\Lambda$CDM to eliminate combative framing (e.g., "arbitrary curve-fits"). Reframed these paradigms respectfully as "empirical frameworks" to ensure reviewer impartiality while strictly maintaining the ITSM's ontological distinction.
+- **Analogy Front-Loading:** Migrated the "Acoustic Wake / Boat displacing water" analogy and the Predictive Shield Matrix (Table 2) directly into the Introduction. This structural shift provides an intuitive physical anchor before introducing covariant tensor mathematics.
+- **Narrative Bridging:** Drafted a synthesizing transition at the terminus of Section 5. Explicitly tethered the local $T^3$ SPARC expansion directly to the global DESI volume decay, smoothing the conceptual jump from galactic kinematics to macroscopic cosmological dynamics.
+
 ## Version 9.5.0 — Pre-Publication Audit & Sanitization (2026-05-30)
 
 ### Manuscript Hardening
