@@ -11,6 +11,8 @@ import matplotlib.colors as mcolors
 from mpl_toolkits.mplot3d import Axes3D
 import os
 
+from matplotlib.colors import LightSource
+
 # Set up dark-theme compatible LaTeX rendering
 plt.rcParams.update({
     "text.usetex": True,
@@ -25,8 +27,8 @@ plt.rcParams.update({
 })
 
 # 1. Normalized Grid Setup (r / r_a0)
-x = np.linspace(-3.5, 7.5, 300)
-y = np.linspace(-4.5, 4.5, 300)
+x = np.linspace(-3.5, 7.5, 500)
+y = np.linspace(-4.5, 4.5, 500)
 X, Y = np.meshgrid(x, y)
 R = np.sqrt(X**2 + Y**2)
 
@@ -42,15 +44,15 @@ X_safe_envelope = np.clip(X, R_yield, None)
 # Exponential expansion of the wake cone
 wake_envelope = np.exp(-(Y**2) / (0.4 + 0.3 * X_safe_envelope)) * np.exp(-(X_safe_envelope - R_yield) / 6.0)
 
-# Phonon oscillations
+# Smoother fluid-like Phonon oscillations
 k_phonon = 4.0
-wake_oscillation = np.cos(k_phonon * np.sqrt((X - R_yield)**2 + Y**2))**2
+wake_oscillation = (0.5 * np.cos(k_phonon * np.sqrt((X - R_yield)**2 + Y**2)) + 0.5)
 
 # Base metric tensor stress
 base_stress = 0.05 * np.exp(-R / 2.0)
 
 metric_density = base_stress.copy()
-metric_density[wake_mask] += (wake_envelope * wake_oscillation * 0.5)[wake_mask]
+metric_density[wake_mask] += (wake_envelope * wake_oscillation * 0.4)[wake_mask]
 
 # 3. 3D Visualization Architecture
 fig = plt.figure(figsize=(14, 10), facecolor='#0d1117')
@@ -61,9 +63,13 @@ ax.set_facecolor('#0d1117')
 colors_array = ['#020205', '#0a1532', '#005f8e', '#00b4d8', '#88e7fb']
 cmap_wake = mcolors.LinearSegmentedColormap.from_list('AcousticWake', colors_array, N=256)
 
-# Plot the 3D Surface
-surf = ax.plot_surface(X, Y, metric_density, cmap=cmap_wake, rstride=2, cstride=2, 
-                       linewidth=0, antialiased=True, alpha=0.9)
+# Apply Physical Light Source Shading for Fluid Dynamics
+ls = LightSource(azdeg=315, altdeg=45)
+rgb_shaded = ls.shade(metric_density, cmap=cmap_wake, vert_exag=1.5, blend_mode='soft')
+
+# Plot the 3D Surface with Shading
+surf = ax.plot_surface(X, Y, metric_density, facecolors=rgb_shaded, rstride=2, cstride=2, 
+                       linewidth=0, antialiased=True, alpha=0.95)
 
 # Plot Baryonic Node
 z_node = np.max(base_stress)

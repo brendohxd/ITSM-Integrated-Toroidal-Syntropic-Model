@@ -93,7 +93,7 @@ g_obs_true = g_bar_raw + (2/3) * np.sqrt(g_bar_raw * a0_sparc)
 v_obs_true = np.sqrt(g_obs_true * r_arr)
 
 # Monte Carlo Bootstrapping
-N_boot = 500
+N_boot = 5000
 g_bar_bins = np.logspace(np.log10(1e-12*conv_factor), np.log10(1e-8*conv_factor), 40)
 mock_g_obs_binned = {i: [] for i in range(len(g_bar_bins)-1)}
 
@@ -180,3 +180,27 @@ plt.tight_layout()
 out_path = os.path.normpath(os.path.join(script_dir, "..", "..", "..", "Assets", "Figures", "itsm_bootstrapped_rar.png"))
 plt.savefig(out_path, dpi=300, bbox_inches='tight')
 print(f"Plot saved to: {out_path}")
+
+# Export JSON for API
+api_dir = os.path.normpath(os.path.join(script_dir, "..", "..", "..", "Assets", "API_Exports"))
+os.makedirs(api_dir, exist_ok=True)
+import json
+rar_data = {
+    "bin_centers": bin_centers.tolist(),
+    "itsm_curve": itsm_curve.tolist(),
+    "env_1sig_low": env_1sig_low.tolist(),
+    "env_1sig_high": env_1sig_high.tolist(),
+    "env_2sig_low": env_2sig_low.tolist(),
+    "env_2sig_high": env_2sig_high.tolist()
+}
+# Filter NaNs for JSON
+def nan_to_null(lst):
+    return [None if np.isnan(x) else x for x in lst]
+
+for k in rar_data:
+    rar_data[k] = nan_to_null(rar_data[k])
+
+json_path = os.path.join(api_dir, "global_rar_envelope.json")
+with open(json_path, 'w') as f:
+    json.dump(rar_data, f)
+print(f"API data saved to: {json_path}")

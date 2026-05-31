@@ -217,3 +217,11 @@ if __name__ == "__main__":
             print(f"Corner plot saved to {out_path}")
         except:
             pass
+        
+        # Save raw chains for API export
+        chain_path = os.path.join(script_dir, "..", "Analysis", "Experimental", "Joint_MCMC")
+        os.makedirs(chain_path, exist_ok=True)
+        df_chain = pd.DataFrame(flat_samples, columns=["H0", "Om", "n"])
+        csv_out = os.path.join(chain_path, "itsm_hierarchical_joint_chain.csv")
+        df_chain.to_csv(csv_out, index=False)
+        print(f"Raw chains saved to {csv_out}")
