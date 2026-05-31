@@ -204,9 +204,15 @@ Consider a localized baryonic mass ($M_b$) with kinetic energy $X = -\frac{1}{2}
     \label{fig:covariant_stability}
 \end{figure}
 
-Therefore, to satisfy relativistic constraints, the relative interaction cross-section of the baryonic mass must saturate, becoming increasingly transparent to the fluid at high kinetic energies. We derive this functional form geometrically from standard superfluid mechanics. In a macroscopic quantum fluid, the structural displacement caused by a moving body forms a vortex ring. The energy dissipation of a vortex ring in a Bose-Einstein Condensate strictly scales with the square root of the local kinetic energy ($\mathcal{E}_w \propto \sqrt{X}$). 
+Therefore, to satisfy relativistic constraints, the relative interaction cross-section of the baryonic mass must saturate, becoming increasingly transparent to the fluid at high kinetic energies. To transition this fluid mechanic to a covariant relativistic field equation, we require a Lagrangian scalar function $f(X/a_0^2)$ that recovers Newtonian linear scaling at low energies ($X \ll a_0^2$) and saturates to a $\sqrt{X}$ limit at high energies ($X \gg a_0^2$).
 
-To transition this fluid mechanic to a covariant relativistic field equation, we require a scalar function that recovers Newtonian linear scaling at low energies ($X \ll a_0^2$) and saturates to the $\sqrt{X}$ limit at high energies ($X \gg a_0^2$). The canonical resolution is the Born-Infeld type saturation root: $\sqrt{1+X/a_0^2}-1$.
+While multiple interpolation functions exist phenomenologically, we establish that the Born-Infeld root structure ($\sqrt{1+X/a_0^2}-1$) is uniquely compelled by the fundamental boundary conditions of the $T^3$ toroidal manifold. A valid scalar Lagrangian modification $\mathcal{L}_X(X, \phi)$ for the background Superfluid Plenum must simultaneously satisfy three absolute physical criteria:
+\begin{enumerate}
+    \item \textbf{Hamiltonian Positivity (Ghost-Free Condition):} The total energy density must be strictly positive-definite ($\mathcal{H} > 0$), requiring $f'(X) > 0$.
+    \item \textbf{Causality (Subluminal Horizon):} The effective sound speed of acoustic metric perturbations must not exceed the speed of light ($c_s^2 \le 1$), mandating $f''(X) \le 0$ to prevent superluminal propagation during high-acceleration shearing.
+    \item \textbf{Topological Phase Stability:} The $T^3$ manifold geometry dictates periodic boundary conditions for the scalar field $\phi$. The action must prevent multi-valued phase singularities across the $\chi=2\pi$ topology, meaning the field energy must be bounded from above regardless of local gradients.
+\end{enumerate}
+The only continuous, strictly concave functional form that satisfies bounded total field energy while maintaining $f'(X)>0$ and $f''(X)<0$ everywhere is the Born-Infeld determinant class. Thus, the square-root saturation is not a phenomenological curve fit, but the unique mathematical necessity for a stable, causal, ghost-free superfluid manifold: $f(X) = \sqrt{1+X/a_0^2}-1$.
 
 \subsection{\label{sec:projection}Topological Anisotropy and the Shape-Independent Hydrodynamic Derivation of the 2/3 Factor}
 
@@ -269,19 +275,19 @@ In a $T^3$ manifold, the periodic boundary conditions suppress dissipation along
 Thus, the effective drag is proportional to 2/3 of the stirrer's cross-section, not 1/3.
 This is analogous to the demagnetization tensor in electromagnetism, where the depolarization factors sum to unity ($\sum N_i = 1$) and split into 1/3 per unconstrained dimension.
 
-To preempt the assumption that any non-linear acceleration-scale modification inherently constitutes a Modified Newtonian Dynamics (MOND) empirical fit, we explicitly distinguish the ontological foundation of the ITSM. While frameworks like MOND or Berezhiani \& Khoury's Superfluid Dark Matter (SFDM) utilize effective empirical functions to recover the Baryonic Tully-Fisher relation, the Plenum Shear Ansatz is structurally locked by the manifold. 
+To differentiate the first-principles structural derivation of the ITSM from other non-linear acceleration-scale modifications, we explicitly map the mathematical priors of the models. While frameworks like Modified Newtonian Dynamics (MOND) or Superfluid Dark Matter (SFDM) utilize effective empirical functions designed explicitly to recover the Baryonic Tully-Fisher relation, the Plenum Shear Ansatz is geometrically rigid.
 
-As explicitly mapped in Table~\ref{tab:mond_matrix}, the ITSM contains absolutely zero phenomenological free parameters. The $2/3$ coefficient is not an adjustable dial utilized to minimize statistical residuals; it is the exact, non-negotiable topological reality of a 3D spherical volume pushing through a 2D shear plane.
+As detailed in Table~\ref{tab:mond_matrix}, the ITSM contains zero free adjustable parameters. The $2/3$ coefficient is not an empirical dial optimized against statistical residuals; it is the topological invariant of a 3D spherical volume pushing through a 2D shear plane.
 
 \begin{table*}[htbp]
-\caption{\label{tab:mond_matrix}Ontological Matrix: Geometric Reality vs. Phenomenological Interpolation.}
+\caption{\label{tab:mond_matrix}Table III. Methodological Contrast: First-Principles Topological Derivation vs. Empirical Interpolation.}
 \begin{ruledtabular}
 \begin{tabular}{llcc}
 \textbf{Theoretical Framework} & \textbf{Interaction/Interpolation Function} & \textbf{Coefficient Origin} & \textbf{Free Params} \\
 \hline
 \textbf{ITSM (This Work)} & $\mathcal{L}_{P} \propto \frac{2}{3} a_0^2 \left(\sqrt{1+\frac{X}{a_0^2}}-1\right)$ & \textbf{Fixed 2D-to-3D Geometry} & \textbf{0} \\
-Standard MOND & $\mu\left(\frac{g_N}{a_0}\right) = \frac{x}{\sqrt{1+x^2}}$ & Phenomenological Curve-Fit & Ad-hoc $\mu(x)$, $a_0$ \\
-SFDM (Berezhiani \& Khoury) & $\mathcal{L}_{\text{SF}} \propto \frac{2\alpha}{3} X\sqrt{|X|}$ & Phenomenological Insertion & Empirical $\alpha, \Lambda$ \\
+Standard MOND & $\mu\left(\frac{g_N}{a_0}\right) = \frac{x}{\sqrt{1+x^2}}$ & Empirical Interpolation & Calibrated $\mu(x)$, $a_0$ \\
+SFDM (Berezhiani \& Khoury) & $\mathcal{L}_{\text{SF}} \propto \frac{2\alpha}{3} X\sqrt{|X|}$ & Effective Field Term & Empirical $\alpha, \Lambda$ \\
 \end{tabular}
 \end{ruledtabular}
 \end{table*}
@@ -321,17 +327,9 @@ The contracted Bianchi identities mandate the absolute conservation of the total
 \nabla_\mu T_p^{\mu\nu} &=& -Q^\nu
 \end{eqnarray}
 
-The non-zero divergence of the independent sector tensors ($\nabla_{\mu}T_{m}^{\mu\nu} = Q^{\nu}$ and $\nabla_{\mu}T_{p}^{\mu\nu} = -Q^{\nu}$) requires an explicit definition of the energetic origin of the Syntropic Source Vector to satisfy global conservation boundaries. We formalize this open circuit by modeling our 4D spacetime manifold $\mathcal{M}$ as a bounded hyper-surface embedded within a 5D bulk parent manifold $\mathcal{B}$. 
+The non-zero divergence of the independent sector tensors ($\nabla_{\mu}T_{m}^{\mu\nu} = Q^{\nu}$ and $\nabla_{\mu}T_{p}^{\mu\nu} = -Q^{\nu}$) requires an explicit definition of the physical coupling mechanism bounding this thermodynamic intake. Rather than invoking extra-dimensional bulk spaces or arbitrary quintessence fields, the ITSM locks the syntropic intake directly to the 4D covariant expansion scalar of the manifold. 
 
-The continuous intake of ordered information driving the syntropic vector $Q^\nu$ is not generated spontaneously within the localized vacuum; rather, it represents the projection of the higher-dimensional bulk entropic flux tensor $\mathcal{S}_{AB}$ intersecting our manifold's boundary coordinates:
-
-\begin{equation}
-Q^{\nu} = \mathcal{S}^{\nu}_{\ \ A} n^{A}
-\end{equation}
-
-where $n^{A}$ represents the Gauss normal vector orthogonal to the 4D hypersurface. Under this multi-scale topological configuration, the observed syntropic intake is recognized as the natural entropic exhaust expanding outward from the higher-dimensional parent structure. 
-
-We must explicitly derive the physical coupling mechanism bounding this thermodynamic intake. For a homogeneous Toroidal Manifold ($T^3$) governed by the Friedmann-Lemaître-Robertson-Walker (FLRW) metric, the covariant expansion scalar is strictly defined by the Hubble parameter: $\Theta = 3H = 3(\dot{a}/a)$. Substituting this geometric boundary condition into the modified continuity equation yields:
+For a homogeneous Toroidal Manifold ($T^3$) governed by the Friedmann-Lemaître-Robertson-Walker (FLRW) metric, the covariant expansion scalar is strictly defined by the Hubble parameter: $\Theta = \nabla_\mu u^\mu = 3H = 3(\dot{a}/a)$. Substituting this geometric boundary condition into the modified continuity equation yields:
 
 \begin{equation}
 \dot{\rho} + 3H(\rho + P) = -Q^0

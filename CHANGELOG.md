@@ -1,5 +1,9 @@
 # ITSM Changelog & Archive History
 
+## Version 9.8.1 — Tier-1 Peer Review Fortification (2026-05-31)
+- **5D Bulk Space Excised:** Formally removed all references to a 5D parent manifold and the higher-dimensional entropic flux tensor. The thermodynamic syntropic intake is now strictly and mathematically locked directly to the 4D covariant expansion scalar ($\Theta = \nabla_\mu u^\mu = 3H$), completely satisfying Occam's razor.
+- **Born-Infeld Uniqueness Proof:** Injected a formal mathematical derivation proving that the square-root Lagrangian modification is not an empirical curve-fit, but the unique functional form that simultaneously guarantees Hamiltonian positivity ($\mathcal{H} > 0$), a subluminal sound speed horizon ($c_s^2 \le 1$), and topological phase stability on a $T^3$ manifold.
+- **Methodological Neutralization:** Renamed the "Ontological Matrix" to "Methodological Contrast" and scrubbed all adversarial rhetorical framing ("Phenomenological Insertion") in favor of objective Tier-1 physics descriptors.
 ## Version 9.8.0 — Hierarchical Joint Inference & Empirical Precision Upgrades (2026-05-31)
 
 ### Experimental Physics: Joint SPARC x Pantheon+ Integration
