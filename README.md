@@ -142,4 +142,4 @@ To replicate the results locally:
 
 ## 🖋️ Citation
 If utilizing this framework or the associated computational scripts in your research, please cite:
-> Boyd, B. (2026). The Integrated Toroidal-Syntropic Model: Relativistic Field Equations, Topology-Induced Superfluid Dynamics, and Multi-Scale Falsifiability. DOI: [10.5281/zenodo.20174582](https://doi.org/10.5281/zenodo.20174582)
+> Boyd, B. (2026). The Integrated Toroidal-Syntropic Model: Relativistic Field Equations, Topology-Induced Superfluid Dynamics, and Multi-Scale Falsifiability. DOI: [10.5281/zenodo.18808348](https://doi.org/10.5281/zenodo.18808348)
