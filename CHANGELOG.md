@@ -1,5 +1,13 @@
 # ITSM Changelog & Archive History
 
+## Version 9.8.2 — Web API Exports & IP Fortification (2026-06-01)
+
+### Repository & Web Integration
+- **Interactive JSON API Endpoints:** Built and executed `export_api_data.py` to extract raw MCMC statistics and down-sampled chains into `Assets/API_Exports/`. This includes `sparc_mcmc_summary.json`, `sparc_mcmc_corner_samples.json`, `global_rar_envelope.json`, and the massive `hierarchical_joint_chain.json`.
+- **GitHub Content Delivery:** Pushed the API exports directly to GitHub's `main` branch, allowing the frontend web-app to fetch dynamic MCMC data asynchronously via raw repository URLs.
+
+### Manuscript Revisions (`Manuscript/Main.tex`)
+- **IP-Fortified Title Block:** Injected common law trademark symbols (`\texttrademark`) directly into the ITSM title and abstract. Appended a legally binding `\thanks{}` footnote to the author block asserting copyright ($\copyright$ 2026) and strictly limiting authorization to open-access academic review and repository timestamping.
 ## Version 9.8.1 — Tier-1 Peer Review Fortification (2026-05-31)
 - **5D Bulk Space Excised:** Formally removed all references to a 5D parent manifold and the higher-dimensional entropic flux tensor. The thermodynamic syntropic intake is now strictly and mathematically locked directly to the 4D covariant expansion scalar ($\Theta = \nabla_\mu u^\mu = 3H$), completely satisfying Occam's razor.
 - **Born-Infeld Uniqueness Proof:** Injected a formal mathematical derivation proving that the square-root Lagrangian modification is not an empirical curve-fit, but the unique functional form that simultaneously guarantees Hamiltonian positivity ($\mathcal{H} > 0$), a subluminal sound speed horizon ($c_s^2 \le 1$), and topological phase stability on a $T^3$ manifold.
