@@ -148,6 +148,9 @@ Integrates the 1701-supernovae SN1a covariance matrix alongside dynamic mass-to-
 
 - **Website:** [www.itsm-cosmology.org](https://www.itsm-cosmology.org)
 - **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
+- **ORCID iD:** [0009-0007-4177-2612](https://orcid.org/0009-0007-4177-2612)
+
+<img src="Assets/orcid_qr.png" alt="ORCID QR Code" width="150" align="right">
 
 ## ⚖️ Ethical AI Declaration
 Generative AI has been utilized in this project strictly as a computational torque wrench. Its application is confined to the synthesis of formatting, grammatical structuring, and the parsing of original mathematical derivations into publication-ready LaTeX. While AI assists in pressure-testing logic and streamlining structural execution, it does not originate the underlying physics or the ontological insights of the ITSM. The core architecture remains the original work of the author.
