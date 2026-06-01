@@ -1,6 +1,8 @@
 # 🌌 Integrated Toroidal-Syntropic Model (ITSM) <a href="https://doi.org/10.5281/zenodo.18808348"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18808348.svg" alt="DOI"></a>
 **Relativistic Field Equations, Superfluid Dynamics, and Multi-Scale Falsifiability**
 
+🌐 **Official Website & Interactive Explorer:** [itsm-cosmology.org](https://www.itsm-cosmology.org) | 📧 **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
+
 ## 📖 Project Overview
 The **Integrated Toroidal-Syntropic Model (ITSM)** is a foundational theoretical framework designed to resolve the catastrophic tensions breaking modern $\Lambda$CDM cosmology. By deconstructing the standard narrative of non-baryonic "dark matter," the ITSM identifies the vacuum itself as an active Superfluid Plenum—a macroscopic Bose-Einstein condensate governed by an inherent Toroidal Geometry ($\chi = 2\pi$).
 
@@ -143,6 +145,9 @@ Integrates the 1701-supernovae SN1a covariance matrix alongside dynamic mass-to-
 
 ## 👨‍🔬 About the Author
 **Brendon Boyd** is an Independent Researcher based in Perth, Western Australia. This work is driven by a commitment to rigorous analysis of astrophysical anomalies through the deconstruction of standard theoretical narratives and the examination of fundamental physical mechanisms.
+
+- **Website:** [www.itsm-cosmology.org](https://www.itsm-cosmology.org)
+- **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
 
 ## ⚖️ Ethical AI Declaration
 Generative AI has been utilized in this project strictly as a computational torque wrench. Its application is confined to the synthesis of formatting, grammatical structuring, and the parsing of original mathematical derivations into publication-ready LaTeX. While AI assists in pressure-testing logic and streamlining structural execution, it does not originate the underlying physics or the ontological insights of the ITSM. The core architecture remains the original work of the author.
