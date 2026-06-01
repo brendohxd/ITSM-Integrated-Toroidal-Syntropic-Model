@@ -7,17 +7,17 @@ Environment: Windows / Antigravity IDE Workspace Compatible
 
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 import matplotlib.colors as mcolors
 from matplotlib.patches import Circle
 from matplotlib.lines import Line2D
 import os
 
-plt.rcParams.update({
-    "text.usetex": True,
-    "text.latex.preamble": r"\usepackage{amsmath}",
-    "font.family": "serif",
-    "font.size": 12
-})
+
 
 # 1. Normalized Grid Setup (r / r_a0)
 x = np.linspace(-3.5, 7.5, 600)
@@ -82,7 +82,7 @@ yield_circle = Circle((0, 0), R_yield, color='#ff0055', fill=False, linestyle='-
 ax.add_patch(yield_circle)
 
 # Formatting
-ax.set_title(r"\textbf{Macroscopic Torsional Entrainment (Acoustic Metric Wake)}" + "\n" + 
+ax.set_title(r"Macroscopic Torsional Entrainment (Acoustic Metric Wake)" + "\n" + 
              r"Superfluid Plenum Transition at $a_0 = c H_0 / 2\pi$", fontsize=16, pad=15)
 ax.set_xlabel(r"Normalized Spatial Coordinate ($r/r_{a_0}$)", fontsize=13)
 ax.set_ylabel(r"Normalized Spatial Coordinate ($r/r_{a_0}$)", fontsize=13)

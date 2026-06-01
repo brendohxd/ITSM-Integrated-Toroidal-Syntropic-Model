@@ -24,19 +24,13 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 
-plt.rcParams.update({
-    "font.family": "serif",
-    "axes.facecolor": "white",
-    "figure.facecolor": "white",
-    "axes.labelsize": 14,
-    "axes.titlesize": 15,
-    "legend.fontsize": 11,
-    "xtick.labelsize": 12,
-    "ytick.labelsize": 12,
-    "lines.linewidth": 2.0,
-    "axes.linewidth": 1.0,
-})
+
 
 def standard_sps_mass(radius):
     """Mock standard Newtonian baryonic mass profile (Salpeter IMF, no extreme dust correction)."""

@@ -36,10 +36,15 @@ import corner
 import matplotlib
 matplotlib.use("Agg")  # Non-interactive backend — safe for multicore on Windows
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 from scipy.optimize import minimize
 from multiprocessing import Pool, cpu_count
 
-plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
+
 
 # ------------------------------------------------------------------
 # ABSOLUTE SI CONVERSION CONSTANTS
@@ -239,7 +244,7 @@ def run_single_galaxy(args):
                  label=rf'ITSM Plenum Shear Ansatz ($H_0={medians[2]:.2f}$)')
         ax1.set_ylabel(r'Orbital Velocity $V$ [km s$^{-1}$]', fontsize=13)
         ax1.set_title(
-            r'\textbf{ITSM Rotation Curve: ' + safe + r'}' + '\n'
+            r'ITSM Rotation Curve: ' + safe + r'' + '\n'
             + rf'$\chi^2_\nu = {chi2n:.3f}$ | '
             + rf'$\Upsilon_{{disk}}={medians[0]:.3f}$ | '
             + rf'$H_0={medians[2]:.2f}$ km/s/Mpc',

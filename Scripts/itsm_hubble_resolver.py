@@ -8,20 +8,14 @@ Environment: Windows / Antigravity IDE Workspace Compatible
 import os
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 
 # Publication Formatting
-plt.rcParams.update({
-    "text.usetex": True,
-    "text.latex.preamble": r"\usepackage{amsmath}",
-    "font.family": "serif",
-    "axes.facecolor": "white",
-    "figure.facecolor": "white",
-    "text.color": "black",
-    "axes.labelcolor": "black",
-    "xtick.color": "black",
-    "ytick.color": "black",
-    "font.size": 14
-})
+
 
 # 1. Physical Constants & Observational Limits
 H_PLANCK = 67.4  # Early-Universe poloidal measurement [km/s/Mpc]
@@ -55,7 +49,7 @@ ax.plot(theta, h_theta, color='black', lw=3.5,
         label=r'ITSM Anisotropic Projection ($H_0(\theta)$)')
 
 # Annotate the Variance
-ax.text(np.pi/2, 71.5, rf"\textbf{{Manifold Variance: {variance_pct:.1f}\%}}", color='black', fontsize=12,
+ax.text(np.pi/2, 71.5, rf"{Manifold Variance: {variance_pct:.1f\%}}", color='black', fontsize=12,
         ha='center', va='center', bbox=dict(facecolor='white', edgecolor='gray', alpha=0.9, boxstyle='round,pad=0.4'))
 
 # Axis Limits and Ticks
@@ -70,7 +64,7 @@ ax.set_xticklabels([r'$0^\circ$' + '\n' + r'(Poloidal Axis)', r'$45^\circ$',
 ax.grid(True, which='both', color='lightgray', linestyle='--', alpha=0.7)
 ax.set_xlabel(r'Observational Viewing Angle $\theta$ (Degrees)', fontsize=15)
 ax.set_ylabel(r'Effective Expansion Rate $H_0$ (km s$^{-1}$ Mpc$^{-1}$)', fontsize=15)
-ax.set_title(r'\textbf{Hubble Tension Geometric Resolution}' + '\n' + 
+ax.set_title(r'Hubble Tension Geometric Resolution' + '\n' + 
              r'(ITSM Toroidal Anisotropy Projection)', fontsize=16, pad=15)
 
 # Legend

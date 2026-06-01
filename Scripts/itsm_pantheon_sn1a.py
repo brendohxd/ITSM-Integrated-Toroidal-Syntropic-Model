@@ -10,13 +10,18 @@ import numpy as np
 import pandas as pd
 import emcee
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 import scipy.integrate as integrate
 import os
 import time
 from multiprocessing import Pool
 
 # Configure matplotlib for physics journals
-plt.rcParams.update({"text.usetex": True, "font.family": "serif", "font.size": 14})
+
 
 # Constants
 c = 299792.458  # Speed of light in km/s

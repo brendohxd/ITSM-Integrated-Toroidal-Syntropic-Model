@@ -21,17 +21,15 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 import camb
 from camb import model
 
-plt.rcParams.update({
-    "text.usetex": True,
-    "text.latex.preamble": r"\usepackage{amsmath}",
-    "font.family": "serif",
-    "axes.facecolor": "white",
-    "figure.facecolor": "white",
-    "font.size": 14,
-})
+
 
 # Parameters
 PLANCK_H0 = 67.36
@@ -80,7 +78,7 @@ ax1.loglog(kh_lcdm, pk_lcdm, '-', color='gray', lw=2, label=rf'Planck 2018 $\Lam
 ax1.loglog(kh_itsm, pk_itsm, '-', color='darkred', lw=2.5, label=rf'ITSM Syntropic ($H_0={ITSM_H0}, w={ITSM_W}, \sigma_8={s8_itsm:.3f}$)')
 
 ax1.set_ylabel(r'$P(k)$ [$(h^{-1}\mathrm{Mpc})^3$]', fontsize=15)
-ax1.set_title(r'\textbf{Linear Matter Power Spectrum $P(k)$ at $z=0$}', fontsize=16, pad=15)
+ax1.set_title(r'Linear Matter Power Spectrum $P(k)$ at $z=0$', fontsize=16, pad=15)
 ax1.legend(loc='lower left', fontsize=12)
 ax1.grid(True, which='both', ls='-', alpha=0.2)
 ax1.set_xlim(1e-4, 1)

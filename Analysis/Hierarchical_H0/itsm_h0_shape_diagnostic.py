@@ -6,6 +6,11 @@ Also prints Shapiro-Wilk normality p-values and std distribution stats.
 import glob, os, numpy as np, pandas as pd, matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 from scipy.stats import norm, gaussian_kde, shapiro
 
 CHAINS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..",

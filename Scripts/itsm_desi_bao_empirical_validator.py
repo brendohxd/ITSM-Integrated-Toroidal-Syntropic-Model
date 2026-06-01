@@ -9,17 +9,15 @@ Environment: Windows / Antigravity IDE Workspace Compatible
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 import os
 
 # 1. Unified Publication Formatting (Removed redundancy to preserve LaTeX preamble)
-plt.rcParams.update({
-    "text.usetex": True,
-    "text.latex.preamble": r"\usepackage{amsmath}",
-    "font.family": "serif",
-    "axes.facecolor": "white",
-    "figure.facecolor": "white",
-    "font.size": 14
-})
+
 
 # 2. Configuration & Pathing (Targeting DR2 Consensus)
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -73,7 +71,7 @@ if os.path.exists(data_path) and os.path.exists(cov_path):
     plot_label = r'ITSM Optimized ($n={:.2f}$) [$\chi^2_\nu \approx {:.2f}$]'.format(n_opt, chi2_nu)
     plt.plot(z_smooth, H_smooth, '-', lw=3, label=plot_label)
     
-    plt.title(r'\textbf{ITSM vs. DESI DR2: Global Likelihood Convergence}', fontsize=16, pad=15)
+    plt.title(r'ITSM vs. DESI DR2: Global Likelihood Convergence', fontsize=16, pad=15)
     plt.xlabel(r'Redshift ($z$)', fontsize=15)
     plt.ylabel(r'$H(z)$ [km s$^{-1}$ Mpc$^{-1}$]', fontsize=15)
     plt.legend(loc='upper left', framealpha=0.9, edgecolor='black', fontsize=12)

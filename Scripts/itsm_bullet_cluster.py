@@ -5,16 +5,16 @@ Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
 Environment: Windows / Antigravity IDE Workspace Compatible
 """
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 from scipy.stats import gaussian_kde
 from matplotlib.patches import Patch
 
 # Publication Formatting
-plt.rcParams.update({
-    "text.usetex": True,
-    "text.latex.preamble": r"\usepackage{amsmath}",
-    "font.family": "serif",
-    "font.size": 12
-})
+
 
 N_SAMPLES = 5000
 LEVELS = 6
@@ -77,7 +77,7 @@ ax.contourf(X_bw, Y_bw, Z_bw, levels=LEVELS, cmap='Blues', alpha=0.7)
 ax.contour(X_bw, Y_bw, Z_bw, levels=LEVELS, colors='midnightblue', linewidths=0.5)
 
 # Academic Annotations and Labels
-ax.set_title(r"\textbf{Kinetic Phase-Space Decoupling in the Bullet Cluster (1E 0657-56)}" + "\n" +
+ax.set_title(r"Kinetic Phase-Space Decoupling in the Bullet Cluster (1E 0657-56)" + "\n" +
              r"ITSM Gravitational Wake vs. Stalled Baryonic Fluid", fontsize=16, pad=15)
 
 ax.set_xlabel(r"Spatial Position Relative to Collision Center $x$ [kpc]", fontsize=14)
@@ -92,12 +92,12 @@ ax.legend(handles=legend_elements, loc='upper left', frameon=True, facecolor='wh
 # Decoupling Gap Annotations
 ax.annotate('', xy=(150, 1200), xytext=(500, 4000),
             arrowprops=dict(arrowstyle="<->", color='black', lw=1.5, ls='--'))
-ax.text(350, 2400, r"\textbf{Kinetic Decoupling Gap}" + "\n" + r"(Fluid Friction)", color='black', fontsize=10,
+ax.text(350, 2400, r"Kinetic Decoupling Gap" + "\n" + r"(Fluid Friction)", color='black', fontsize=10,
         rotation=68, ha='center', bbox=dict(facecolor='white', edgecolor='gray', alpha=0.9))
 
 ax.annotate('', xy=(-100, -500), xytext=(-400, -2500),
             arrowprops=dict(arrowstyle="<->", color='black', lw=1.5, ls='--'))
-ax.text(-250, -1500, r"\textbf{Kinetic Decoupling Gap}" + "\n" + r"(Fluid Friction)", color='black', fontsize=10,
+ax.text(-250, -1500, r"Kinetic Decoupling Gap" + "\n" + r"(Fluid Friction)", color='black', fontsize=10,
         rotation=63, ha='center', bbox=dict(facecolor='white', edgecolor='gray', alpha=0.9))
 
 plt.tight_layout()

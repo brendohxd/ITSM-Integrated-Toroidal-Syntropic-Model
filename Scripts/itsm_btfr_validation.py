@@ -54,16 +54,14 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 from multiprocessing import Pool, cpu_count
 
-plt.rcParams.update({
-    "text.usetex": True,
-    "text.latex.preamble": r"\usepackage{amsmath}",
-    "font.family": "serif",
-    "axes.facecolor": "white",
-    "figure.facecolor": "white",
-    "font.size": 14
-})
+
 
 # ------------------------------------------------------------------
 # CONSTANTS
@@ -322,7 +320,7 @@ if __name__ == "__main__":
     ax1.set_yscale('log')
     ax1.set_ylabel(r'Flat Rotation Velocity $V_f$ [km s$^{-1}$]', fontsize=14)
     ax1.set_title(
-        r'\textbf{ITSM Baryonic Tully-Fisher Relation}' + '\n'
+        r'ITSM Baryonic Tully-Fisher Relation' + '\n'
         + r'Zero-Free-Parameter Geometric Prediction: '
         + r'$V_f^4 = \frac{4}{9}\,G\,M_b\,a_0$',
         fontsize=15, pad=14

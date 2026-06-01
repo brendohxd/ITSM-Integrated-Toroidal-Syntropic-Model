@@ -55,12 +55,17 @@ import pandas as pd
 import emcee
 import corner
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 from scipy.stats import norm, gaussian_kde
 from scipy.special import logsumexp
 from multiprocessing import Pool, cpu_count
 
 warnings.filterwarnings("ignore")
-plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # PATHS — saves to results_correct/ only
@@ -298,7 +303,7 @@ def plot_three_way_comparison(flat_correct, results_dir):
     ax.set_xlabel(r"$H_0$ (km/s/Mpc)", fontsize=14)
     ax.set_ylabel(r"Posterior Probability Density", fontsize=14)
     ax.set_title(
-        r"\textbf{ITSM Three-Way Hierarchical $H_0$ Comparison}"
+        r"ITSM Three-Way Hierarchical $H_0$ Comparison"
         + "\n"
         + r"\small{IS-Corrected (green) vs Gaussian Approx. (cyan) vs Raw-Sample Overcounted (navy)}",
         fontsize=13, pad=12
@@ -324,7 +329,7 @@ def plot_corner(flat_correct, results_dir):
                         title_fmt=".2f", color="seagreen", truth_color="crimson",
                         truths=[mu_med, sig_med])
     fig.suptitle(
-        r"\textbf{ITSM IS-Corrected: Hyperparameter Corner Plot}",
+        r"ITSM IS-Corrected: Hyperparameter Corner Plot",
         fontsize=13, y=1.01)
     fig.savefig(os.path.join(results_dir, "corner_correct.png"),
                 dpi=300, bbox_inches="tight")

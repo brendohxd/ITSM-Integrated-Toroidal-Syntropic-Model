@@ -10,6 +10,11 @@ import pandas as pd
 # pyrefly: ignore [missing-import]
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 import glob
 import os
 import warnings
@@ -20,14 +25,7 @@ warnings.filterwarnings('ignore')
 # ITSM Global RAR Analysis - Unfiltered High-Fidelity Version
 # ---------------------------------------------------------
 
-plt.rcParams.update({
-    "text.usetex": True,
-    "text.latex.preamble": r"\usepackage{amsmath}",
-    "font.family": "serif",
-    "axes.facecolor": "white",
-    "figure.facecolor": "white",
-    "font.size": 14
-})
+
 
 # 1. ITSM Yield Threshold (Locked Physics)
 a0_ms2 = 1.08e-10
@@ -189,7 +187,7 @@ plt.annotate(r'$a_0$ Yield Boundary', xy=(a0_sparc, g_min*8),
              xytext=(a0_sparc*3, g_min*4),
              arrowprops=dict(arrowstyle='->', color='black'), fontsize=12)
 
-plt.title(r'\textbf{Global Radial Acceleration Relation (SPARC)}', fontsize=16, pad=15)
+plt.title(r'Global Radial Acceleration Relation (SPARC)', fontsize=16, pad=15)
 plt.xlabel(r'Baryonic Acceleration $g_{bar}$ [km$^2$ s$^{-2}$ kpc$^{-1}$]', fontsize=15)
 plt.ylabel(r'Observed Acceleration $g_{obs}$ [km$^2$ s$^{-2}$ kpc$^{-1}$]', fontsize=15)
 

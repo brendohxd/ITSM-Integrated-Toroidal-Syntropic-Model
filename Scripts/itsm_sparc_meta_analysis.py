@@ -10,14 +10,14 @@ import glob
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 
 # Publication plot style — usetex disabled so f-string labels render correctly
-plt.rcParams.update({
-    "font.family": "serif",
-    "font.size": 11,
-    "axes.titlesize": 13,
-    "axes.labelsize": 12,
-})
+
 
 # Absolute SI Conversion Constants
 KPC_TO_M = 3.085677581e19

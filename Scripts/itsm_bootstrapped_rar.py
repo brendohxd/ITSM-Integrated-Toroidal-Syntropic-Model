@@ -9,20 +9,18 @@ assuming the ITSM is perfectly true, perturbed by known SPARC observational nois
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 import glob
 import os
 from tqdm import tqdm
 import warnings
 warnings.filterwarnings('ignore')
 
-plt.rcParams.update({
-    "text.usetex": True,
-    "text.latex.preamble": r"\usepackage{amsmath}",
-    "font.family": "serif",
-    "axes.facecolor": "white",
-    "figure.facecolor": "white",
-    "font.size": 14
-})
+
 
 # 1. ITSM Yield Threshold (Locked Physics)
 a0_ms2 = 1.08e-10
@@ -169,7 +167,7 @@ plt.xscale('log')
 plt.yscale('log')
 plt.xlim(g_min, g_max)
 plt.ylim(g_min, g_max)
-plt.title(r'\textbf{Bootstrapped RAR: Observational Noise Envelope validation}', fontsize=16, pad=15)
+plt.title(r'Bootstrapped RAR: Observational Noise Envelope validation', fontsize=16, pad=15)
 plt.xlabel(r'Baryonic Acceleration $g_{bar}$ [km$^2$ s$^{-2}$ kpc$^{-1}$]', fontsize=15)
 plt.ylabel(r'Observed Acceleration $g_{obs}$ [km$^2$ s$^{-2}$ kpc$^{-1}$]', fontsize=15)
 plt.legend(loc='upper left', fontsize=12, framealpha=0.95)

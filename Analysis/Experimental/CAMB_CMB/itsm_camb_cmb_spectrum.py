@@ -20,19 +20,16 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 from multiprocessing import Pool, cpu_count
 import camb
 from camb import model
 
-plt.rcParams.update({
-    "text.usetex": True,
-    "text.latex.preamble": r"\usepackage{amsmath}",
-    "font.family": "serif",
-    "font.serif": ["Computer Modern Roman"],
-    "axes.facecolor": "white",
-    "figure.facecolor": "white",
-    "font.size": 13,
-})
+
 
 # ------------------------------------------------------------------
 # COSMOLOGICAL PARAMETERS
@@ -179,7 +176,7 @@ if __name__ == "__main__":
     ax3.set_xlabel(r"Multipole $\ell$", fontsize=14)
 
     ax1.set_title(
-        r"\textbf{CMB TT Power Spectrum: Planck 2018 vs Full ITSM}"
+        r"CMB TT Power Spectrum: Planck 2018 vs Full ITSM"
         + "\n"
         + r"ITSM Plenum Syntropic Source modeled natively as $w=-1.27$ fluid",
         fontsize=13, pad=12

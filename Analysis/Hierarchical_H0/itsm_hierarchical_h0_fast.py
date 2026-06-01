@@ -31,10 +31,15 @@ import pandas as pd
 import emcee
 import corner
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 from scipy.stats import norm, gaussian_kde
 
 warnings.filterwarnings("ignore")
-plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # PATHS — saves to results_fast/ to avoid overwriting the full 5-hour run
@@ -184,7 +189,7 @@ def plot_and_summarise(flat_samples, galaxies, plot_samples, results_dir):
     ax.set_xlabel(r"$H_0$ (km/s/Mpc)", fontsize=14)
     ax.set_ylabel(r"Posterior Probability Density", fontsize=14)
     ax.set_title(
-        r"\textbf{ITSM Fast Hierarchical H0 — Comparison with Full Run}",
+        r"ITSM Fast Hierarchical H0 — Comparison with Full Run",
         fontsize=13, pad=12)
     ax.legend(fontsize=10, frameon=True)
     ax.grid(True, linestyle=":", alpha=0.5)
@@ -199,7 +204,7 @@ def plot_and_summarise(flat_samples, galaxies, plot_samples, results_dir):
                         quantiles=[0.16, 0.50, 0.84], show_titles=True,
                         title_fmt=".2f", color="darkcyan", truth_color="crimson",
                         truths=[mu_med, sig_med])
-    fig.suptitle(r"\textbf{ITSM Fast: Hyperparameter Corner}", fontsize=13, y=1.01)
+    fig.suptitle(r"ITSM Fast: Hyperparameter Corner", fontsize=13, y=1.01)
     fig.savefig(os.path.join(results_dir, "corner_hyperparams_fast.png"),
                 dpi=300, bbox_inches="tight")
     plt.close()
@@ -225,7 +230,7 @@ def plot_and_summarise(flat_samples, galaxies, plot_samples, results_dir):
     ax.set_xticks(range(len(good)))
     ax.set_xticklabels(names, rotation=90, fontsize=6)
     ax.set_ylabel(r"$H_0$ (km/s/Mpc)", fontsize=13)
-    ax.set_title(r"\textbf{Per-Galaxy $H_0$: Fast Version}", fontsize=13, pad=10)
+    ax.set_title(r"Per-Galaxy $H_0$: Fast Version", fontsize=13, pad=10)
     ax.legend(fontsize=10, frameon=True, loc="upper right")
     ax.grid(True, axis="y", linestyle=":", alpha=0.5)
     ax.set_ylim(45, 100)

@@ -52,24 +52,15 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 import matplotlib.patches as mpatches
 from multiprocessing import Pool, cpu_count
 
-plt.rcParams.update({
-    "text.usetex": True,
-    "text.latex.preamble": r"\usepackage{amsmath}",
-    "font.family": "serif",
-    "font.serif": ["Computer Modern Roman"],
-    "axes.facecolor": "white",
-    "figure.facecolor": "white",
-    "axes.labelsize": 14,
-    "axes.titlesize": 15,
-    "legend.fontsize": 11,
-    "xtick.labelsize": 12,
-    "ytick.labelsize": 12,
-    "lines.linewidth": 2.0,
-    "axes.linewidth": 1.0,
-})
+
 
 # ------------------------------------------------------------------
 # CONSTANTS — ITSM GEOMETRIC BOUNDS (derived, not fitted)
@@ -302,7 +293,7 @@ if __name__ == "__main__":
     ax1.set_ylim(5e-16, 5e-13)
     ax1.set_ylabel(r"Characteristic Strain $h_c(f)$", fontsize=14)
     ax1.set_title(
-        r"\textbf{ITSM Toroidal Resonance in the Stochastic GWB}"
+        r"ITSM Toroidal Resonance in the Stochastic GWB"
         + "\n"
         + r"NANOGrav 15yr vs.\ ITSM Lorentzian Prediction "
         + r"(corrected from Gaussian regression)",

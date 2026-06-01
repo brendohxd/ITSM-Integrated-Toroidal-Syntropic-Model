@@ -58,10 +58,15 @@ import pandas as pd
 import emcee
 import corner
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 from scipy.stats import norm
 
 warnings.filterwarnings("ignore")
-plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # PATHS — all relative to this script's location
@@ -321,7 +326,7 @@ def plot_h0_posterior(flat_samples, results_dir):
     ax.set_xlabel(r"$H_0$ (km/s/Mpc)", fontsize=14)
     ax.set_ylabel(r"Posterior Probability Density", fontsize=14)
     ax.set_title(
-        r"\textbf{ITSM Hierarchical Bayesian Inference: Cosmic $H_0$ from 175 SPARC Galaxies}"
+        r"ITSM Hierarchical Bayesian Inference: Cosmic $H_0$ from 175 SPARC Galaxies"
         + "\n"
         + r"\small{Stage 2 Population Model --- Independent of CMB and Distance Ladder}",
         fontsize=13, pad=12
@@ -356,7 +361,7 @@ def plot_corner_hyperparams(flat_samples, results_dir):
         truths=[np.median(flat_samples[:, 0]), np.median(flat_samples[:, 1])],
     )
     fig.suptitle(
-        r"\textbf{ITSM Hierarchical Posterior: Population Hyperparameters}",
+        r"ITSM Hierarchical Posterior: Population Hyperparameters",
         fontsize=13, y=1.01
     )
 
@@ -400,7 +405,7 @@ def plot_galaxy_h0_violin(galaxies, mu_med, results_dir, max_show=60):
     ax.set_xticklabels(names, rotation=90, fontsize=6)
     ax.set_ylabel(r"$H_0$ (km/s/Mpc)", fontsize=13)
     ax.set_title(
-        r"\textbf{Per-Galaxy $H_0$ Posteriors: Top " + str(max_show) + r" Most Constrained Systems}",
+        r"Per-Galaxy $H_0$ Posteriors: Top " + str(max_show) + r" Most Constrained Systems",
         fontsize=13, pad=10
     )
     ax.legend(fontsize=11, frameon=True, loc="upper right")

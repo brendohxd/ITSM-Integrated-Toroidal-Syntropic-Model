@@ -20,20 +20,14 @@ import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 import matplotlib.patches as mpatches
 
-plt.rcParams.update({
-    "font.family": "serif",
-    "axes.facecolor": "white",
-    "figure.facecolor": "white",
-    "axes.labelsize": 14,
-    "axes.titlesize": 15,
-    "legend.fontsize": 11,
-    "xtick.labelsize": 12,
-    "ytick.labelsize": 12,
-    "lines.linewidth": 2.0,
-    "axes.linewidth": 1.0,
-})
+
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))

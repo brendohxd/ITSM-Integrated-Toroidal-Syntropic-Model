@@ -7,9 +7,14 @@ Environment: Windows / Antigravity IDE Workspace Compatible
 
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 import os
 
-plt.rcParams.update({"text.usetex": True, "font.family": "serif", "font.size": 12})
+
 
 X_ratio = np.logspace(-2, 8, 1000)
 linear_drag = X_ratio
@@ -26,7 +31,7 @@ plt.axvline(x=1.0, color='black', linestyle=':', label=r'Critical Yield Boundary
 plt.xscale('log'); plt.yscale('log')
 plt.xlim(1e-2, 1e8); plt.ylim(1e-5, 1e4)
 
-plt.title(r'\textbf{Covariant Stability: Macroscopic Vacuum Drag}', fontsize=16, pad=15)
+plt.title(r'Covariant Stability: Macroscopic Vacuum Drag', fontsize=16, pad=15)
 plt.xlabel(r'Dimensionless Kinetic Energy Ratio ($X/a_0^2$)', fontsize=14)
 plt.ylabel(r'Relative Interaction Strength ($\mathcal{L}_{int}/X$)', fontsize=14)
 

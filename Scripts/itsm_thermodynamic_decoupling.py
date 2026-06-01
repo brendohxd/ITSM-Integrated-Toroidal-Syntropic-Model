@@ -9,8 +9,13 @@ Environment: Windows / Antigravity IDE Workspace Compatible
 import os
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
 
-plt.rcParams.update({"text.usetex": True, "font.family": "serif"})
+
 
 def state_function(z, z_c=3400, lmbda=0.005):
     """
@@ -48,7 +53,7 @@ def plot_decoupling():
     plt.axvline(1100, color='darkorange', linestyle=':', lw=2.5, label=r'CMB Recombination ($z \approx 1100$)')
 
     # Typography and Grid Formatting
-    plt.title(r'\textbf{Superfluid Plenum Phase Transition: Thermodynamic Decoupling}', fontsize=16, pad=15)
+    plt.title(r'Superfluid Plenum Phase Transition: Thermodynamic Decoupling', fontsize=16, pad=15)
     plt.xlabel('Redshift ($z$)', fontsize=13)
     plt.ylabel(r'Acoustic Shear State Function $\Xi(z)$', fontsize=13)
 
