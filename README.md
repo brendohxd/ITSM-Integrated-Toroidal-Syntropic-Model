@@ -15,7 +15,7 @@ The **Integrated Toroidal-Syntropic Model (ITSM)** is a foundational theoretical
 
 Instead of adding unobservable phantom particles or arbitrary phenomenological variables, the ITSM models the universe as an Open Thermodynamic Manifold. This allows the framework to natively and mathematically resolve the most pressing anomalies in astrophysics today:
 
-* 🌌 **The Dark Matter Crisis:** Analytically recovers the SPARC Radial Acceleration Relation (RAR) with a global fit ($\chi^2_\nu \approx 8.57$) across 165 high-fidelity galaxies. Crucially, this fit is achieved over 3,178 strictly unfiltered kinematic data points using **zero free physical parameters**—relying purely on the derived toroidal manifold geometry ($a_0 = c H_0 / 2\pi$) alongside standard Gaussian nuisance marginalization for observational distance and inclination.
+* 🌌 **The Dark Matter Crisis:** 🌌 **The Dark Matter Crisis:** Analytically recovers the SPARC Radial Acceleration Relation (RAR) with a global fit ($\chi^2_\nu \approx 8.57$) across 165 high-fidelity galaxies (out of 175 processed, with 10 filtered due to quality constraints). Crucially, this fit is achieved over 3,179 strictly unfiltered kinematic data points using **zero free physical parameters**—relying purely on the derived toroidal manifold geometry ($a_0 = c H_0 / 2\pi$) alongside standard Gaussian nuisance marginalization for observational distance and inclination.
 * 🔭 **The JWST "Impossible" Galaxies:** Provides the topological scaffolding required for the rapid assembly of dynamically mature disks at $z > 14$, resolving the $\Lambda$CDM timeline paradox.
 * 📏 **The Hubble Tension:** Proves the $8.3\%$ discrepancy between CMB ($H_0 \approx 67.4$) and local measurements ($H_0 \approx 73.0$) is a macroscopic geometric projection effect caused by toroidal anisotropy.
 * 💥 **The Bullet Cluster:** Demonstrates that the kinematic separation between X-ray gas and gravitational lensing maps is a fluid-dynamic consequence of the Plenum's acoustic wake, not collisionless dark matter.
@@ -59,99 +59,127 @@ This repository contains the Python source code used to execute the primary empi
 
 🔹 **Script 1: Global Radial Acceleration Relation (SPARC Parser)**
 Parses 175 SPARC galaxy `.dat` files to calculate the global reduced $\chi^2$ statistic, validating the universal geometric yield boundary against empirical rotation curves.
-*Source: `Scripts/itsm_global_rar.py`*
+*Source: [itsm_global_rar.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_global_rar.py)*
 
 🔹 **Script 2: Automated MCMC SPARC Batch Processor**
-Deploys a massively parallelized Markov Chain Monte Carlo (MCMC) engine—optimized to saturate modern 16-thread hardware—across the strictly enforced 175-galaxy SPARC dataset to extract unconstrained local $H_0$ flows and mass-to-light ratios.
-*Source: `Scripts/itsm_mcmc_multicore.py` & `Scripts/itsm_global_mcmc.py`*
+Deploys a parallelized Markov Chain Monte Carlo (MCMC) engine across the strictly enforced 175-galaxy SPARC dataset to extract unconstrained local $H_0$ flows and mass-to-light ratios.
+*Source: [itsm_mcmc_multicore.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_mcmc_multicore.py) & [itsm_global_mcmc.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_global_mcmc.py)*
 
 🔹 **Script 3: SPARC Meta-Analysis & Quality Filter**
 Post-processes the MCMC parameter chains, executing data quality cuts and auto-generating the LaTeX parameter ledger for the manuscript appendix.
-*Source: `Scripts/itsm_sparc_meta_analysis.py`*
+*Source: [itsm_sparc_meta_analysis.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_sparc_meta_analysis.py)*
 
 🔹 **Script 4: JADES-GS-z14-0 Timeline Analysis**
 Contrasts the hierarchical merging limits of $\Lambda$CDM against ITSM superfluid nucleation, highlighting how toroidal scaffolding resolves the high-redshift maturity crisis.
-*Source: `Scripts/itsm_z14_assembly.py`*
+*Source: [itsm_z14_assembly.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_z14_assembly.py)*
 
 🔹 **Script 5: Bullet Cluster Phase-Space Decoupling**
 A Kernel Density Estimation (KDE) phase-space diagram proving that the metric wake decouples from the stalled baryonic gas via fluid friction, negating the need for collisionless dark matter.
-*Source: `Scripts/itsm_bullet_phasespace.py`*
+*Source: [itsm_bullet_phasespace.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_bullet_phasespace.py)*
 
 🔹 **Script 6: Hubble Tension Geometric Resolver**
 Demonstrates how the $8.3\%$ measurement tension between the Planck CMB limit (67.4) and the SH0ES local limit (73.0) is natively resolved as a geometric projection of an anisotropic Toroidal Manifold.
-*Source: `Scripts/itsm_hubble_resolver.py`*
+*Source: [itsm_hubble_resolver.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_hubble_resolver.py)*
 
 🔹 **Script 7: Macroscopic Torsional Entrainment**
-Generates a high-fidelity, normalized phase-space plot visualizing the kinematic transition at the $a_0$ yield boundary and the resulting acoustic metric wake (the fluidic "dark matter halo").
-*Source: `Scripts/itsm_acoustic_wake.py`*
+Generates a high-fidelity, normalized phase-space plot visualizing the kinematic transition at the $a_0$ yield boundary and the resulting acoustic metric wake.
+*Source: [itsm_acoustic_wake.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_acoustic_wake.py)*
 
 🔹 **Script 8: Covariant Stability (Drag Saturation)**
 Proves standard linear modified gravity models physically "explode" at high accelerations. Demonstrates how the ITSM's toroidal interaction natively saturates and safely decays as $1/\sqrt{X}$, satisfying Cassini constraints.
-*Source: `Scripts/itsm_drag_saturation.py`*
+*Source: [itsm_drag_saturation.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_drag_saturation.py)*
 
 🔹 **Script 9: NANOGrav Stochastic Toroidal Resonance**
 Establishes a strict falsifiability boundary for Pulsar Timing Arrays. Contrasts the chaotic power-law decay of $\Lambda$CDM against the ITSM’s predicted acoustic metric resonance (Lorentzian profile) mathematically locked between 1.08 nHz and 3.14 nHz.
-*Source: `Scripts/itsm_nanograv_resonance.py`*
+*Source: [itsm_nanograv_resonance.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_nanograv_resonance.py)*
 
 🔹 **Script 10: Syntropic Volume Decay (DESI 2024)**
-Validates the ITSM's syntropic decay against DESI 2024 BAO measurements. Shows how the model inherently mimics an evolving dark energy equation of state without arbitrary parameters.
-*Source: `Scripts/itsm_desi_bao.py`*
+Validates the ITSM's syntropic decay against DESI 2024 BAO measurements, demonstrating how the model inherently mimics an evolving dark energy equation of state without arbitrary parameters.
+*Source: [itsm_desi_bao.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_desi_bao.py)*
 
 🔹 **Script 11: Superfluid Thermodynamic Decoupling (CMB Protection)**
 Calculates and visualizes the $\Xi(z)$ phase transition, mathematically proving that the fractional vacuum drag zeroes out during the radiation-dominated era to preserve the pristine CMB acoustic peaks.
-*Source: `Scripts/itsm_thermodynamic_decoupling.py`*
+*Source: [itsm_thermodynamic_decoupling.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_thermodynamic_decoupling.py)*
 
-🔹 **Script 12: Hierarchical $H_0$ Methodology**
-Implements a hierarchical Bayesian framework to evaluate global versus local $H_0$ consistency across the SPARC sample, providing the methodological foundation for population-level convergence tests.
-*Source: `Scripts/itsm_hierarchical_h0.py`*
+🔹 **Script 12: Hierarchical $H_0$ Population Inference (Archived)**
+Implements a hierarchical Bayesian framework to evaluate population-level $H_0$ consistency. Moved to `Analysis/` as SPARC galaxies do not individually constrain $H_0$ for population inference.
+*Source: [itsm_hierarchical_h0.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Analysis/Hierarchical_H0/itsm_hierarchical_h0.py)*
 
 🔹 **Script 13: Full CAMB CMB Power Spectrum Diagnostic**
 Natively models the thermodynamic intake of the Superfluid Plenum within CAMB's perturbation hierarchy, using an effective $w=-1.27$ phantom fluid mapping to pull the first acoustic peak to $\ell=222$.
-*Source: `Analysis/Experimental/CAMB_CMB/itsm_camb_cmb_spectrum.py`*
+*Source: [itsm_camb_cmb_spectrum.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_camb_cmb_spectrum.py)*
 
 🔹 **Script 14: Characteristic Surfaces & Causality**
-Generates a localized Penrose light-cone diagram proving that the effective acoustic metric (and its transient superluminal phase velocity) is strictly nested within the global background metric, forbidding Closed Timelike Curves (CTCs).
-*Source: `Scripts/itsm_causality_cones.py`*
+Generates a localized Penrose light-cone diagram proving that the effective acoustic metric is strictly nested within the global background metric, forbidding Closed Timelike Curves (CTCs).
+*Source: [itsm_causality_cones.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_causality_cones.py)*
 
 🔹 **Script 15: Extreme Dust Attenuation Outlier Model**
 Models the flagship edge-on outlier NGC 4217, mathematically proving that standard neutral hydrogen tables overestimate Newtonian mass. Validates the MCMC's preference for a dynamically suppressed bottom-light IMF ($\Upsilon \to 0.01$).
-*Source: `Scripts/itsm_ngc4217_dust_model.py`*
+*Source: [itsm_ngc4217_dust_model.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_ngc4217_dust_model.py)*
 
 🔹 **Script 16: Pantheon+ SN1a Cosmological Optimization**
 Computes the log-likelihood of the ITSM distance modulus against the full 1701-supernovae Pantheon+ covariance matrix, independently confirming $H_0 \approx 72.90$ without prior SPARC constraints.
-*Source: `Scripts/itsm_pantheon_sn1a.py`*
+*Source: [itsm_pantheon_sn1a.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_pantheon_sn1a.py)*
 
 🔹 **Script 17: Joint Cosmological MCMC (SN1a + BAO)**
 Executes a joint Bayesian integration combining DESI DR2 BAO telemetry and Pantheon+ SN1a data. Natively resolves the Hubble Tension ($H_0 \approx 73.97$) while reproducing the physical tension regarding the temporal evolution of dark energy.
-*Source: `Scripts/itsm_joint_cosmology_mcmc.py`*
+*Source: [itsm_joint_cosmology_mcmc.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_joint_cosmology_mcmc.py)*
 
 🔹 **Script 18: Bootstrapped RAR Error Envelopes**
-Performs a Forward-Modeled Monte Carlo simulation injecting SPARC observational noise (10% distance, 5% inclination, plus velocity errors) onto the ITSM geometric baseline. Proves statistically that the observed empirical scatter is entirely observational, perfectly bounded by the ITSM $1\sigma$ and $2\sigma$ envelopes.
-*Source: `Scripts/itsm_bootstrapped_rar.py`*
+Performs a Forward-Modeled Monte Carlo simulation injecting SPARC observational noise onto the ITSM geometric baseline. Proves statistically that the observed empirical scatter is entirely observational.
+*Source: [itsm_bootstrapped_rar.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_bootstrapped_rar.py)*
 
 🔹 **Script 19: Matter Power Spectrum $P(k)$ (CAMB)**
-Interfaces with the CAMB numerical Boltzmann solver to generate the linear Matter Power Spectrum $P(k)$ at $z=0$, demonstrating that the ITSM syntropic volume decay model preserves the BAO wiggles and the radiation-matter equality turnover scale ($k_{eq}$) without collisionless dark matter.
-*Source: `Scripts/itsm_camb_matter_power.py`*
+Interfaces with the CAMB numerical Boltzmann solver to generate the linear Matter Power Spectrum $P(k)$ at $z=0$, demonstrating that the ITSM syntropic volume decay model preserves the BAO wiggles and the radiation-matter equality turnover scale.
+*Source: [itsm_camb_matter_power.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_camb_matter_power.py)*
 
 🔹 **Script 20: Hierarchical Joint Inference (SPARC $\times$ Pantheon+)**
-Integrates the 1701-supernovae SN1a covariance matrix alongside dynamic mass-to-light optimization across all 175 SPARC galaxies using a Profile Likelihood MCMC. Proves the ITSM resolves the Hubble tension ($H_0 = 70.89$ km/s/Mpc) and cleanly mirrors the $1/2$ geometric mass limit ($\Omega_m = 0.495$) while natively mimicking a cosmological constant at late times ($n \approx 0$).
-*Source: `Scripts/itsm_hierarchical_joint_mcmc.py`*
+Integrates the 1701-supernovae SN1a covariance matrix alongside dynamic mass-to-light optimization across all 175 SPARC galaxies using a Profile Likelihood MCMC. Proves the ITSM resolves the Hubble tension and cleanly mirrors the $1/2$ geometric mass limit.
+*Source: [itsm_hierarchical_joint_mcmc.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_hierarchical_joint_mcmc.py)*
 
 🔹 **Script 21: BIC Statistical Comparison (ITSM vs. NFW)**
-Executes a formal Bayesian Information Criterion (BIC) analysis comparing the zero-parameter ITSM global fit against the 3-parameter NFW Dark Matter baseline across the SPARC sample, mathematically proving the ITSM is statistically superior by harshly penalizing NFW's reliance on free parameters.
-*Source: `Scripts/itsm_bic_nfw_comparison.py`*
+Executes a formal Bayesian Information Criterion (BIC) analysis comparing the zero-parameter ITSM global fit against the 3-parameter NFW Dark Matter baseline across the SPARC sample.
+*Source: [itsm_bic_nfw_comparison.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_bic_nfw_comparison.py)*
 
 🔹 **Script 22: MCMC Mock Data Recovery**
-Performs a rigorous parameter injection and mock recovery test on the statistical engine. Proves that the MCMC correctly finds known injected priors without bias, defending the computational integrity of the entire framework against local-minimum trapping.
-*Source: `Scripts/itsm_mock_recovery.py`*
+Performs a rigorous parameter injection and mock recovery test on the statistical engine. Proves that the MCMC correctly finds known injected priors without bias.
+*Source: [itsm_mock_recovery.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_mock_recovery.py)*
 
 🔹 **Script 23: Cosmic Chronometers $H(z)$ Validation**
-Evaluates the model against independent Cosmic Chronometer (CC) data (differential ages of passive galaxies). Validates the expansion history independent of integrated distance ladders like SN1a and BAO.
-*Source: `Scripts/itsm_cosmic_chronometers.py`*
+Evaluates the model against independent Cosmic Chronometer (CC) data (differential ages of passive galaxies). Validates the expansion history independent of integrated distance ladders.
+*Source: [itsm_cosmic_chronometers.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_cosmic_chronometers.py)*
 
 🔹 **Script 24: 3D Toroidal Manifold Visualization**
-Mathematically renders the fundamental $T^3$ topological domain, providing the geometric foundation for understanding the $1/12$ Casimir projection and the poloidal-vs-toroidal axes responsible for the Hubble Tension.
-*Source: `Scripts/itsm_3d_toroidal_manifold.py`*
+Mathematically renders the fundamental $T^3$ topological domain, providing the geometric foundation for understanding the $1/12$ Casimir projection.
+*Source: [itsm_3d_toroidal_manifold.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_3d_toroidal_manifold.py)*
+
+🔹 **Script 25: 3D Superfluid Plenum Velocity Field**
+Generates the 3D fluid-dynamic simulation plots visualizing the Plenum's velocity field, flow lines, and acoustic wake.
+*Source: [itsm_3d_fluid_dynamics.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_3d_fluid_dynamics.py)*
+
+🔹 **Script 26: Web 3D Fluid Dynamics Visualizer**
+A web-ready interactive implementation of the 3D fluid dynamics visualization suite.
+*Source: [itsm_3d_fluid_dynamics_web.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_3d_fluid_dynamics_web.py)*
+
+🔹 **Script 27: Redshift-Evolving Kinematic Yield $a_0(z)$**
+Calculates and visualizes the redshift evolution of the yield boundary $a_0(z)$ across cosmological epochs.
+*Source: [itsm_a0_redshift_evolution.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_a0_redshift_evolution.py)*
+
+🔹 **Script 28: Baryonic Tully-Fisher Relation (BTFR)**
+Validates the Baryonic Tully-Fisher Relation under the zero-free-parameter Plenum Shear Ansatz.
+*Source: [itsm_btfr_validation.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_btfr_validation.py)*
+
+🔹 **Script 29: DESI BAO Empirical Cross-Check**
+Performs an empirical cross-check validation of the syntropic expansion curve against DESI BAO data points.
+*Source: [itsm_desi_bao_empirical_validator.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_desi_bao_empirical_validator.py)*
+
+🔹 **Script 30: Redshift Evolution of Syntropic Decay Index $n(z)$**
+Diagnostic script visualizing the redshift evolution of the syntropic decay index $n(z)$ to map vacuum dynamics.
+*Source: [itsm_n_redshift_evolution_diagnostic.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_n_redshift_evolution_diagnostic.py)*
+
+🔹 **Script 31: Zenodo Package Automation**
+Automates packaging of the computational engines, models, and datasets for Zenodo archival.
+*Source: [itsm_zenodo_release.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_zenodo_release.py)*
 
 ## 📂 Repository Structure
 | Directory | Content Description |
@@ -189,7 +217,7 @@ To replicate the results locally:
 3. **Activate the environment:**
    `conda activate itsm_env`
 4. **Run the Master Pipeline:**
-   Execute the centralized master script to sequentially run all 24 production scripts and regenerate the entire figure suite.
+   Execute the centralized master script to sequentially run all 31 production scripts and regenerate the entire figure suite.
    `python Scripts/run_all.py`
 
 ## 🖋️ Citation
