@@ -8,8 +8,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18808348.svg)](https://doi.org/10.5281/zenodo.18808348)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0007--4177--2612-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0007-4177-2612)
 
-<img align="right" width="100" height="100" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://www.itsm-cosmology.org" alt="ITSM Cosmology QR Code">
-
 ## 📖 Project Overview
 The **Integrated Toroidal-Syntropic Model (ITSM)** is a foundational theoretical framework designed to resolve the catastrophic tensions breaking modern $\Lambda$CDM cosmology. By deconstructing the standard narrative of non-baryonic "dark matter," the ITSM identifies the vacuum itself as an active Superfluid Plenum—a macroscopic Bose-Einstein condensate governed by an inherent Toroidal Geometry ($\chi = 2\pi$).
 
