@@ -21,6 +21,24 @@ This supplementary document catalogues the comprehensive parameter estimation re
 
 The ledger is categorized by galaxy name, optimized components, reduced chi-square ($\chi^2_\nu$), degrees of freedom (DoF), and quality categorization. Outliers that clipped the lower boundary wall ($H_0 \to 50.0 \ \text{km s}^{-1} \text{Mpc}^{-1}$) are designated as ``Clipped'' or ``Standard'' based on line-of-sight dust obscuration and turbulent compact kinematics, as analyzed in the main text.
 
+\section{Methodology: Hierarchical Bayesian Inference}
+The parameter extraction was executed using a hierarchical Markov Chain Monte Carlo (MCMC) ensemble sampler. The Integrated Toroidal-Syntropic Model (ITSM) imposes a rigid geometric dependency between the fundamental kinematic scale $a_0$ and the local Hubble parameter $H_0$, defined exactly by:
+\begin{equation}
+    a_0 = \frac{c H_0}{2\pi}
+\end{equation}
+where $c$ is the speed of light. Consequently, the rotation curves are evaluated not as independent systems, but as nodes within a globally constrained Hubble flow. The kinematic profile of each galaxy is governed by the Plenum Shear Ansatz:
+\begin{equation}
+    g_{\text{eff}} = g_{\text{bar}} + \frac{2}{3} \sqrt{g_{\text{bar}} a_0}
+\end{equation}
+where the pre-factor $2/3$ derives strictly from the geometric projection of the transverse shear plane onto the bulk $T^3$ manifold.
+
+\subsection{MCMC Configuration and Priors}
+For each galaxy, we implement an affine-invariant ensemble sampler with 32 walkers initialized across a tight ball near the Maximum A Posteriori (MAP) estimate. Convergence is enforced over 3,000 steps per galaxy (with a 600-step burn-in discard phase). The log-posterior $\ln P(\theta | D)$ is defined by the product of the uniform priors and the Gaussian likelihood:
+\begin{equation}
+    \ln \mathcal{L} = -0.5 \sum_i \left( \frac{V_{\text{obs},i} - V_{\text{ITSM},i}}{\sigma_{V,i}} \right)^2
+\end{equation}
+To ensure the physics remains scale-invariant, broad uniform priors are assigned to the baryonic mass-to-light ratios ($\Upsilon_{\text{disk}} \in [0.01, 8.0]$, $\Upsilon_{\text{bulge}} \in [0.00, 8.0]$). Convergence is verified per galaxy via Gelman-Rubin diagnostics and integrated autocorrelation times ($\tau \ll N_{\text{steps}}$).
+
 \section{Comprehensive SPARC Parameter Ledger}
 \input{appendix_sparc_table.tex}
 

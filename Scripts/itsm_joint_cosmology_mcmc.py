@@ -143,7 +143,7 @@ if __name__ == "__main__":
     # --- 3. MCMC Setup ---
     ndim = 3
     nwalkers = 32
-    nsteps = 1000  # Longer run for the final joint plot
+    nsteps = 2000  # Increased for proper convergence
     
     initial_guess = [72.0, 0.3, 3.0]
     pos = initial_guess + 1e-4 * np.random.randn(nwalkers, ndim)
@@ -159,8 +159,20 @@ if __name__ == "__main__":
     print(f"Joint MCMC Complete! Computed in {(end_time-start_time)/60:.2f} minutes.")
     
     # --- 4. Plotting & Results ---
-    flat_samples = sampler.get_chain(discard=200, thin=15, flat=True)
+    flat_samples = sampler.get_chain(discard=500, thin=15, flat=True)
     H0_m, Om_m, n_m = np.median(flat_samples, axis=0)
+    
+    print("\n--- CONVERGENCE DIAGNOSTICS ---")
+    try:
+        tau = sampler.get_autocorr_time(quiet=True)
+        print(f"Integrated autocorrelation times: H0={tau[0]:.1f}, Om={tau[1]:.1f}, n={tau[2]:.1f}")
+        print(f"Effective samples: {len(flat_samples)}")
+        if np.any(tau > (nsteps - 500) / 50):
+            print("[WARNING] Chain may not be fully converged. Consider increasing n_steps.")
+        else:
+            print("[OK] Chain convergence looks good (tau << n_steps).")
+    except Exception:
+        print("[WARNING] Could not estimate autocorrelation time — chain may be too short.")
     
     print("\n--- ITSM JOINT COSMOLOGY POSTERIOR MEDIANS ---")
     print(f"H0: {H0_m:.2f} km/s/Mpc")

@@ -122,7 +122,7 @@ if __name__ == "__main__":
     # MCMC Setup
     ndim = 3
     nwalkers = 32
-    nsteps = 500  # Start with 500 for validation, can increase later
+    nsteps = 3000  # Increased for proper convergence and sampling
     
     # Initial guess around SPARC/ITSM predictions
     # H0 ~ 72, Om ~ 0.3, n ~ 3.0
@@ -141,8 +141,21 @@ if __name__ == "__main__":
     print(f"MCMC Complete! Computed in {(end_time-start_time)/60:.2f} minutes.")
     
     # Analyze chains
-    flat_samples = sampler.get_chain(discard=100, thin=15, flat=True)
+    flat_samples = sampler.get_chain(discard=500, thin=15, flat=True)
     H0_m, Om_m, n_m = np.median(flat_samples, axis=0)
+
+    print("\n--- CONVERGENCE DIAGNOSTICS ---")
+    try:
+        tau = sampler.get_autocorr_time(quiet=True)
+        print(f"Integrated autocorrelation times: H0={tau[0]:.1f}, Om={tau[1]:.1f}, n={tau[2]:.1f}")
+        print(f"Effective samples: {len(flat_samples)}")
+        if np.any(tau > (nsteps - 500) / 50):
+            print("[WARNING] Chain may not be fully converged. Consider increasing n_steps.")
+        else:
+            print("[OK] Chain convergence looks good (tau << n_steps).")
+    except Exception:
+        print("[WARNING] Could not estimate autocorrelation time — chain may be too short.")
+    
     
     print("\n--- ITSM PANTHEON+ POSTERIOR MEDIANS ---")
     print(f"H0: {H0_m:.2f} km/s/Mpc")

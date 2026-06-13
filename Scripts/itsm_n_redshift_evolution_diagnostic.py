@@ -59,10 +59,17 @@ for z_min, z_max in bins:
     sampler.run_mcmc(np.random.uniform(0.5, 1.5, size=(32, 1)), 1000, progress=False)
     
     samples = sampler.get_chain(discard=200, flat=True)
+    
+    try:
+        tau = sampler.get_autocorr_time(quiet=True)
+        tau_str = f"tau={tau[0]:.1f}"
+    except Exception:
+        tau_str = "tau=N/A"
+        
     z_centers.append((z_min + z_max) / 2)
     n_means.append(np.mean(samples))
     n_stds.append(np.std(samples))
-    print(f"Bin {z_min}-{z_max}: Optimized n = {n_means[-1]:.4f} +/- {n_stds[-1]:.4f}")
+    print(f"Bin {z_min}-{z_max}: Optimized n = {n_means[-1]:.4f} +/- {n_stds[-1]:.4f} ({tau_str})")
 
 # 3. Visualization
 plt.figure(figsize=(8, 5))

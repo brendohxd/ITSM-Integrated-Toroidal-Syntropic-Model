@@ -163,40 +163,48 @@ reduced_chi2 = chi2 / dof
 print(f"Global Optimized Reduced chi^2_v = {reduced_chi2:.3f} (dof = {dof})")
 
 # ========================= PLOTTING =========================
-plt.figure(figsize=(11, 8))
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(11, 10), sharex=True, gridspec_kw={'height_ratios': [3, 1]})
+fig.subplots_adjust(hspace=0.05)
 
 g_min, g_max = 1e-12 * conv_factor, 1e-8 * conv_factor
 
-hb = plt.hexbin(g_bar, g_obs, gridsize=80, cmap='Blues', bins='log',
+hb = ax1.hexbin(g_bar, g_obs, gridsize=80, cmap='Blues', bins='log',
                 xscale='log', yscale='log', mincnt=1, edgecolors='none', alpha=0.9)
 
-plt.colorbar(hb, label=r'$\log_{10}(\text{Density of Data Points})$')
+cbar = fig.colorbar(hb, ax=ax1, pad=0.02)
+cbar.set_label(r'$\log_{10}(\text{Density of Data Points})$')
 
 x_vals = np.logspace(np.log10(g_min), np.log10(g_max), 200)
 
 # Newtonian
-plt.plot(x_vals, x_vals, '--', color='gray', lw=2, label=r'Newtonian ($g_{obs}=g_{bar}$)')
+ax1.plot(x_vals, x_vals, '--', color='gray', lw=2, label=r'Newtonian ($g_{obs}=g_{bar}$)')
 
 # ITSM
 itsm_curve = x_vals + (2/3) * np.sqrt(x_vals * a0_sparc)
-plt.plot(x_vals, itsm_curve, '-', color='darkred', lw=3, 
+ax1.plot(x_vals, itsm_curve, '-', color='darkred', lw=3, 
          label=f'ITSM ($\\chi^2_\\nu = {reduced_chi2:.2f}$)')
 
-plt.axvline(a0_sparc, color='black', ls=':', alpha=0.6, lw=1.5)
-plt.annotate(r'$a_0$ Yield Boundary', xy=(a0_sparc, g_min*8), 
+ax1.axvline(a0_sparc, color='black', ls=':', alpha=0.6, lw=1.5)
+ax1.annotate(r'$a_0$ Yield Boundary', xy=(a0_sparc, g_min*8), 
              xytext=(a0_sparc*3, g_min*4),
              arrowprops=dict(arrowstyle='->', color='black'), fontsize=12)
 
-plt.title(r'Global Radial Acceleration Relation (SPARC)', fontsize=16, pad=15)
-plt.xlabel(r'Baryonic Acceleration $g_{bar}$ [km$^2$ s$^{-2}$ kpc$^{-1}$]', fontsize=15)
-plt.ylabel(r'Observed Acceleration $g_{obs}$ [km$^2$ s$^{-2}$ kpc$^{-1}$]', fontsize=15)
+ax1.set_title(r'Global Radial Acceleration Relation (SPARC)', fontsize=16, pad=15)
+ax1.set_ylabel(r'Observed Acceleration $g_{obs}$ [km$^2$ s$^{-2}$ kpc$^{-1}$]', fontsize=15)
+ax1.set_xlim(g_min, g_max)
+ax1.set_ylim(g_min, g_max)
+ax1.legend(loc='upper left', fontsize=12, framealpha=0.95)
+ax1.grid(True, which='both', ls='-', alpha=0.3)
 
-plt.xlim(g_min, g_max)
-plt.ylim(g_min, g_max)
-plt.legend(loc='upper left', fontsize=12, framealpha=0.95)
-plt.grid(True, which='both', ls='-', alpha=0.3)
-
-plt.tight_layout()
+# Residual Panel
+residuals = (g_obs - g_eff_itsm) / g_err
+ax2.hexbin(g_bar, residuals, gridsize=80, cmap='Reds', bins='log',
+           xscale='log', mincnt=1, edgecolors='none', alpha=0.8)
+ax2.axhline(0, color='black', ls='--', lw=2)
+ax2.set_xlabel(r'Baryonic Acceleration $g_{bar}$ [km$^2$ s$^{-2}$ kpc$^{-1}$]', fontsize=15)
+ax2.set_ylabel(r'$\Delta g_{obs} / \sigma(g_{obs})$', fontsize=15)
+ax2.set_ylim(-5, 5)
+ax2.grid(True, which='both', ls='-', alpha=0.3)
 
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_global_rar_publication.png"))
 plt.savefig(out_path, dpi=300, bbox_inches='tight')

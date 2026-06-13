@@ -196,6 +196,12 @@ def run_single_galaxy(args):
         sampler.run_mcmc(pos, n_steps, progress=False)
 
         flat = sampler.get_chain(discard=n_discard, flat=True)
+        
+        try:
+            tau = sampler.get_autocorr_time(quiet=True)
+            tau_max = np.max(tau)
+        except Exception:
+            tau_max = np.nan
 
         labels  = [r"$\Upsilon_{\rm disk}$", r"$\Upsilon_{\rm bulge}$", r"$H_0$"]
         medians = np.percentile(flat, 50, axis=0)
@@ -268,7 +274,7 @@ def run_single_galaxy(args):
 
         return (f"OK  {galaxy_name:30s}  "
                 f"H0={medians[2]:.2f} (+{hi[2]-medians[2]:.2f}/-{medians[2]-lo[2]:.2f})  "
-                f"chi2_nu={chi2n:.3f}")
+                f"chi2_nu={chi2n:.3f}  tau_max={tau_max:.1f}")
 
     except Exception as exc:
         return f"FAIL {galaxy_name}: {exc}"
