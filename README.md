@@ -177,10 +177,6 @@ Performs an empirical cross-check validation of the syntropic expansion curve ag
 Diagnostic script visualizing the redshift evolution of the syntropic decay index $n(z)$ to map vacuum dynamics.
 *Source: [itsm_n_redshift_evolution_diagnostic.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_n_redshift_evolution_diagnostic.py)*
 
-🔹 **Script 31: Zenodo Package Automation**
-Automates packaging of the computational engines, models, and datasets for Zenodo archival.
-*Source: [itsm_zenodo_release.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_zenodo_release.py)*
-
 ## 📂 Repository Structure
 | Directory | Content Description |
 |---|---|
@@ -217,7 +213,7 @@ To replicate the results locally:
 3. **Activate the environment:**
    `conda activate itsm_env`
 4. **Run the Master Pipeline:**
-   Execute the centralized master script to sequentially run all 31 production scripts and regenerate the entire figure suite.
+   Execute the centralized master script to sequentially run all 30 production scripts and regenerate the entire figure suite.
    `python Scripts/run_all.py`
 
 ## 🖋️ Citation
