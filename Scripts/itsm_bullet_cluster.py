@@ -6,6 +6,7 @@ Environment: Windows / Antigravity IDE Workspace Compatible
 """
 import matplotlib.pyplot as plt
 import sys
+import numpy as np
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
 from itsm_plot_style import apply_tier1_style
@@ -101,5 +102,7 @@ ax.text(-250, -1500, r"Kinetic Decoupling Gap" + "\n" + r"(Fluid Friction)", col
         rotation=63, ha='center', bbox=dict(facecolor='white', edgecolor='gray', alpha=0.9))
 
 plt.tight_layout()
-plt.savefig('itsm_bullet_phasespace_publication.png', dpi=300)
-print("Asset generated: itsm_bullet_phasespace_publication.png")
+script_dir = os.path.dirname(os.path.abspath(__file__))
+out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_bullet_phasespace_publication.png"))
+plt.savefig(out_path, dpi=300)
+print(f"Asset generated: {out_path}")

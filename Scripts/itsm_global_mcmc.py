@@ -16,6 +16,7 @@ import glob
 import numpy as np
 import emcee
 import corner
+from multiprocessing import Pool
 import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
@@ -45,6 +46,7 @@ z_desi, H_desi, err_desi = df_h['z'].values, df_h['H_obs'].values, df_h['err_H']
 # 3. Data Ingestion (SPARC)
 galaxy_files = sorted(glob.glob(os.path.join(data_dir, "*_rotmod.dat")))
 print(f"Found {len(galaxy_files)} SPARC galaxy files.")
+assert len(galaxy_files) == 175, "Strict adherence to exactly 175 SPARC galaxies is required for Tier-1 reproducibility."
 
 pre_optimized_galaxies = []
 a0_ref_sparc = 1.08e-10 * 3.086e13  # reference a0 in SPARC units
@@ -154,24 +156,32 @@ def log_prior(theta):
         return 0.0
     return -np.inf
 
+def log_probability(theta):
+    lp = log_prior(theta)
+    if not np.isfinite(lp):
+        return -np.inf
+    return lp + log_likelihood(theta)
+
 # 5. MCMC Ensemble Sampler Engine
-ndim, nwalkers = 3, 32
-pos = [np.array([72.5, 0.24, 1.44]) + np.array([1.0, 0.02, 0.2]) * np.random.randn(ndim) for _ in range(nwalkers)]
-sampler = emcee.EnsembleSampler(nwalkers, ndim, lambda p: log_prior(p) + log_likelihood(p))
+if __name__ == '__main__':
+    ndim, nwalkers = 3, 32
+    pos = [np.array([72.5, 0.24, 1.44]) + np.array([1.0, 0.02, 0.2]) * np.random.randn(ndim) for _ in range(nwalkers)]
 
-print("--- INITIALIZING JOINT MCMC GLOBAL SAMPLER ---")
-sampler.run_mcmc(pos, 2000, progress=True)
+    print("--- INITIALIZING JOINT MCMC GLOBAL SAMPLER ---")
+    with Pool(processes=16) as pool:
+        sampler = emcee.EnsembleSampler(nwalkers, ndim, log_probability, pool=pool)
+        sampler.run_mcmc(pos, 2000, progress=True)
 
-# 6. Convergence Analysis & Posterior Extraction
-flat_samples = sampler.get_chain(discard=500, thin=15, flat=True)
-mcmc_results = np.percentile(flat_samples, [16, 50, 84], axis=0)
+    # 6. Convergence Analysis & Posterior Extraction
+    flat_samples = sampler.get_chain(discard=500, thin=15, flat=True)
+    mcmc_results = np.percentile(flat_samples, [16, 50, 84], axis=0)
 
-print(f"\n--- OPTIMIZED PARAMETER POSTERIORS ---")
-print(f"H0:  {mcmc_results[1, 0]:.2f} (+{mcmc_results[2, 0]-mcmc_results[1, 0]:.2f} / -{mcmc_results[1, 0]-mcmc_results[0, 0]:.2f})")
-print(f"Om:  {mcmc_results[1, 1]:.3f} (+{mcmc_results[2, 1]-mcmc_results[1, 1]:.3f} / -{mcmc_results[1, 1]-mcmc_results[0, 1]:.3f})")
-print(f"n:   {mcmc_results[1, 2]:.4f} (+{mcmc_results[2, 2]-mcmc_results[1, 2]:.4f} / -{mcmc_results[1, 2]-mcmc_results[0, 2]:.4f})")
+    print(f"\n--- OPTIMIZED PARAMETER POSTERIORS ---")
+    print(f"H0:  {mcmc_results[1, 0]:.2f} (+{mcmc_results[2, 0]-mcmc_results[1, 0]:.2f} / -{mcmc_results[1, 0]-mcmc_results[0, 0]:.2f})")
+    print(f"Om:  {mcmc_results[1, 1]:.3f} (+{mcmc_results[2, 1]-mcmc_results[1, 1]:.3f} / -{mcmc_results[1, 1]-mcmc_results[0, 1]:.3f})")
+    print(f"n:   {mcmc_results[1, 2]:.4f} (+{mcmc_results[2, 2]-mcmc_results[1, 2]:.4f} / -{mcmc_results[1, 2]-mcmc_results[0, 2]:.4f})")
 
-# Export Diagnostic Corner Plot
-fig = corner.corner(flat_samples, labels=[r"$H_0$", r"$\Omega_m$", r"$n$"], truths=[mcmc_results[1, 0], mcmc_results[1, 1], mcmc_results[1, 2]])
-plt.savefig(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_global_mcmc_corner.png"), dpi=300)
-print("Optimization complete. Joint convergence posterior exported.")
+    # Export Diagnostic Corner Plot
+    fig = corner.corner(flat_samples, labels=[r"$H_0$", r"$\Omega_m$", r"$n$"], truths=[mcmc_results[1, 0], mcmc_results[1, 1], mcmc_results[1, 2]])
+    plt.savefig(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_global_mcmc_corner.png"), dpi=300, bbox_inches='tight')
+    print("Optimization complete. Joint convergence posterior exported.")

@@ -1,5 +1,14 @@
 # ITSM Changelog & Archive History
 
+## Version 10.0.1 — Hardware Optimization & Repository Sanitation (2026-06-13)
+
+### Repository & Engine Optimization
+- **Multicore MCMC Saturation:** Overhauled `itsm_global_mcmc.py` to encapsulate the 32 walkers within a `multiprocessing.Pool(processes=16)` execution lock. This natively saturates modern 16-thread hardware architectures (e.g., Ryzen 7), dropping optimization timeframes significantly.
+- **Tier-1 Galaxy Limits:** Injected a strict mathematical lock (`assert len(galaxy_files) == 175`) into the global MCMC ingest loop to permanently enforce the Tier-1 SPARC quality cut benchmark, preventing any undocumented data drift.
+- **Visual Rendering Stability:** Patched the global Matplotlib parameter matrix (`itsm_plot_style.py`) by setting `"text.usetex": False`, successfully eradicating legacy LaTeX compiler crashes while maintaining journal-ready typography.
+- **Repository Sanitation:** Permanently purged legacy arXiv configuration targets (`arxiv_targets.txt`, `arxiv_targets.json`, `ITSM_arXiv_Submission.zip`, `arXiv_Bundle/`) and rogue visual outputs from the root directory to guarantee strict repository hygiene for public peer review.
+- **Safe-Staging Validation Protocol:** Deployed the `Analysis/Experimental/Script_Staging` architectural firewall to successfully validate the multicore code execution and font stability without risking overwrite of the live manuscript asset figures.
+
 ## Version 10.0.0 — Open-Source Global Release & Academic Targeting (2026-06-01)
 
 ### Major Milestones

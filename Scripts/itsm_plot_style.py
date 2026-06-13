@@ -6,7 +6,7 @@ def apply_tier1_style():
     Ensures white backgrounds, standard serif LaTeX fonts, and consistent sizing.
     """
     plt.rcParams.update({
-        "text.usetex": True,
+        "text.usetex": False,
         "text.latex.preamble": r"\usepackage{amsmath}",
         "font.family": "serif",
         "font.size": 14,

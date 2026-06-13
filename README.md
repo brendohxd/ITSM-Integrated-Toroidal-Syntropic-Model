@@ -55,8 +55,8 @@ Parses 175 SPARC galaxy `.dat` files to calculate the global reduced $\chi^2$ st
 *Source: `Scripts/itsm_global_rar.py`*
 
 🔹 **Script 2: Automated MCMC SPARC Batch Processor**
-Deploys a Markov Chain Monte Carlo (MCMC) engine across the SPARC database to extract unconstrained local $H_0$ flows and mass-to-light ratios.
-*Source: `Scripts/itsm_mcmc_benchmark.py`*
+Deploys a massively parallelized Markov Chain Monte Carlo (MCMC) engine—optimized to saturate modern 16-thread hardware—across the strictly enforced 175-galaxy SPARC dataset to extract unconstrained local $H_0$ flows and mass-to-light ratios.
+*Source: `Scripts/itsm_mcmc_benchmark.py` & `Scripts/itsm_global_mcmc.py`*
 
 🔹 **Script 3: SPARC Meta-Analysis & Quality Filter**
 Post-processes the MCMC parameter chains, executing data quality cuts and auto-generating the LaTeX parameter ledger for the manuscript appendix.

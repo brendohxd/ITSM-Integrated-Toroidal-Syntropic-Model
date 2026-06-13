@@ -49,7 +49,7 @@ ax.plot(theta, h_theta, color='black', lw=3.5,
         label=r'ITSM Anisotropic Projection ($H_0(\theta)$)')
 
 # Annotate the Variance
-ax.text(np.pi/2, 71.5, rf"{Manifold Variance: {variance_pct:.1f\%}}", color='black', fontsize=12,
+ax.text(np.pi/2, 71.5, rf"Manifold Variance: {variance_pct:.1f}\%", color='black', fontsize=12,
         ha='center', va='center', bbox=dict(facecolor='white', edgecolor='gray', alpha=0.9, boxstyle='round,pad=0.4'))
 
 # Axis Limits and Ticks

@@ -1,3 +1,4 @@
+conda activate itsm_env
 $scripts = @(
     "Scripts/itsm_3d_fluid_dynamics.py",
     "Scripts/itsm_bootstrapped_rar.py",
