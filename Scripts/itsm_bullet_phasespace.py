@@ -82,7 +82,7 @@ ax.contour(X_bw, Y_bw, Z_bw, levels=LEVELS, colors='midnightblue', linewidths=0.
 
 # Academic Annotations and Labels
 ax.set_title(r"Kinetic Phase-Space Decoupling in the Bullet Cluster (1E 0657-56)" + "\n" +
-             r"ITSM Gravitational Wake vs. Stalled Baryonic Fluid", fontsize=16, pad=15)
+             r"ITSM Gravitational Wake vs. Stalled Baryonic Fluid (Illustrative Schematic)", fontsize=16, pad=15)
 
 ax.set_xlabel(r"Spatial Position Relative to Collision Center $x$ [kpc]", fontsize=14)
 ax.set_ylabel(r"Line-of-Sight Velocity $v_x$ [km s$^{-1}$]", fontsize=14)
@@ -105,6 +105,10 @@ ax.text(-250, -1500, r"Kinetic Decoupling Gap" + "\n" + r"(Fluid Friction)", col
         rotation=63, ha='center', bbox=dict(facecolor='white', edgecolor='gray', alpha=0.9))
 
 plt.tight_layout()
+
+# Add a note that this is an illustrative schematic
+fig.text(0.99, 0.01, "Note: Phase-space distributions are illustrative schematics informed by Clowe et al. (2006) and Markevitch et al. (2004).",
+         ha='right', va='bottom', fontsize=7, color='gray', style='italic')
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_bullet_phasespace_publication.png"))

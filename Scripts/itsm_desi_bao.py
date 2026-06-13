@@ -17,18 +17,24 @@ import os
 
 
 z = np.linspace(0, 3, 100)
-H0 = 67.4
-Om = 0.315
+
+# ITSM Globally-Optimised Parameters (Joint Pantheon+ & DESI DR2 Hierarchical MCMC)
+H0_itsm = 73.97
+Om_itsm = 0.240
+
+# Planck 2018 ΛCDM baseline for comparison
+H0_lcdm = 67.4
+Om_lcdm = 0.315
 
 # LambdaCDM Framework
-H_lcdm = H0 * np.sqrt(Om * (1+z)**3 + (1-Om))
+H_lcdm = H0_lcdm * np.sqrt(Om_lcdm * (1+z)**3 + (1-Om_lcdm))
 
 # ITSM Syntropic Decay: Omega_syn scales as (1+z)^{-3}
-H_itsm = H0 * np.sqrt(Om * (1+z)**3 + (1-Om) * (1+z)**-3)
+H_itsm = H0_itsm * np.sqrt(Om_itsm * (1+z)**3 + (1-Om_itsm) * (1+z)**-3)
 
 plt.figure(figsize=(10, 6))
-plt.plot(z, H_lcdm, '--', color='#D55E00', lw=2.5, label=r'$\Lambda$CDM (Static Dark Energy)')
-plt.plot(z, H_itsm, '-', color='#0072B2', lw=3, label=r'ITSM Syntropic Volume Decay ($\propto (1+z)^{-3}$)')
+plt.plot(z, H_lcdm, '--', color='#D55E00', lw=2.5, label=r'$\Lambda$CDM ($H_0=67.4$, Planck 2018)')
+plt.plot(z, H_itsm, '-', color='#0072B2', lw=3, label=r'ITSM Syntropic Decay ($H_0=73.97$, $\Omega_m=0.240$)')
 
 plt.title(r'Effective Hubble Parameter Evolution: DESI 2024 Confrontation', fontsize=16, pad=15)
 plt.xlabel(r'Redshift ($z$)', fontsize=15)

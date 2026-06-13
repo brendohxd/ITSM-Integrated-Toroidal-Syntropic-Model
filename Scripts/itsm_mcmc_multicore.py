@@ -1,8 +1,7 @@
 """
-ITSM Experimental Script — Multicore SPARC MCMC Batch Processor
+ITSM Production Script — Multicore SPARC MCMC Batch Processor
 Author: Brendon Boyd
-Staging: Analysis/Experimental/MCMC_v2/
-Status: EXPERIMENTAL — not promoted to Scripts/ until author approval
+Status: PRODUCTION — Live in Scripts/ (promoted from Analysis/Experimental/MCMC_v2/)
 
 ITSM Core Principles Applied Here:
   - Open thermodynamic system: the vacuum is a Superfluid Plenum, not empty space.
@@ -20,11 +19,7 @@ Computational Tools:
   - multiprocessing.Pool: all CPU cores utilised (cpu_count() auto-detected)
   - MANDATORY Windows guard: all execution inside if __name__ == "__main__"
 
-Physics: Identical to Scripts/itsm_mcmc_benchmark.py
-Change:  emcee pool= added — zero formula modifications.
-
-Outputs: Analysis/Experimental/MCMC_v2/results/
-         (NOT Assets/ — experimental staging only)
+Outputs: Assets/SPARC_Batch_Outputs/
 """
 
 import os
