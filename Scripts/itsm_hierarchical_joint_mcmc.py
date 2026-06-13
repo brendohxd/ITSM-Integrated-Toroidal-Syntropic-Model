@@ -13,7 +13,6 @@ import emcee
 import matplotlib.pyplot as plt
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
 import scipy.integrate as integrate
@@ -229,6 +228,12 @@ if __name__ == "__main__":
                 quantiles=[0.16, 0.5, 0.84],
                 show_titles=True, title_kwargs={"fontsize": 12}
             )
+            
+            # Add Descriptive Elements
+            fig.suptitle("ITSM Hierarchical Joint Cosmology MCMC", fontsize=18, y=1.02)
+            fig.text(0.6, 0.8, "Pantheon+ & DESI BAO\nSyntropic Decay Model", fontsize=12,
+                     bbox=dict(facecolor='white', alpha=0.8, edgecolor='gray', boxstyle='round,pad=0.5'))
+                     
             out_path = os.path.join(script_dir, "..", "Assets", "Figures", "itsm_hierarchical_joint_corner.png")
             fig.savefig(out_path, dpi=300)
             print(f"Corner plot saved to {out_path}")

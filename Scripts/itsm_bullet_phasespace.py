@@ -9,7 +9,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
 from scipy.stats import gaussian_kde

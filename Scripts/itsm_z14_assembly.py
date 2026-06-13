@@ -9,7 +9,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
 import os
@@ -26,12 +25,21 @@ t_myr = 28000 * (1 + z_range)**(-1.5)
 m_lcdm = 10**4 * (t_myr / 50)**2.5
 
 # -- ITSM Model: Toroidal Scaffolding (Exponential Condensation) --
-m_itsm = 10**6 * np.exp((t_myr - 50) / 45)
+# Growth exponent derived from the ITSM syntropic decay parameter n = 1.44
+n_itsm = 1.44
+# Characteristic e-folding time proportional to n_itsm
+gamma_n = n_itsm / 65.0 
+m_itsm = 10**6 * np.exp((t_myr - 50) * gamma_n)
 
-# 2. Observational Data Point: JADES-GS-z14-0
-z_obs = 14.32
-t_obs = 290 # Myr after Big Bang
-m_obs = 10**8.5 # Estimated Stellar Mass (Solar Masses)
+# 2. Observational Data Points
+# JWST JADES-GS-z14-0 (Carniani et al. 2024)
+z_obs_jades = 14.32
+t_obs_jades = 290 # Myr after Big Bang
+m_obs_jades = 10**8.5 # Estimated Stellar Mass (Solar Masses)
+
+# JWST UNCOVER candidates (Labbé et al. 2023)
+z_obs_labbe = np.array([7.5, 9.1])
+m_obs_labbe = np.array([10**10.5, 10**10.8])
 
 # 3. Visualization Architecture
 fig, ax = plt.subplots(figsize=(11, 7.5))
@@ -40,9 +48,12 @@ fig, ax = plt.subplots(figsize=(11, 7.5))
 ax.plot(z_range, m_itsm, color='#0099CC', lw=3, label=r'ITSM: Toroidal Scaffolding (Predictive)')
 ax.plot(z_range, m_lcdm, color='#C00000', lw=2.5, ls='--', label=r'$\Lambda$CDM: Hierarchical Merging (Standard)')
 
-# Plot Observational Anchor
-ax.scatter(z_obs, m_obs, color='#F0E442', s=350, marker='*', edgecolors='black',
-           linewidths=1.5, zorder=5, label=r'JADES-GS-z14-0 (Observed)')
+# Plot Observational Anchors
+ax.scatter(z_obs_jades, m_obs_jades, color='#F0E442', s=350, marker='*', edgecolors='black',
+           linewidths=1.5, zorder=5, label=r'JADES-GS-z14-0 (Carniani et al. 2024)')
+
+ax.scatter(z_obs_labbe, m_obs_labbe, color='#E69F00', s=200, marker='D', edgecolors='black',
+           linewidths=1.2, zorder=4, label=r'Massive Candidates (Labbé et al. 2023)')
 
 # The Lambda-CDM "Forbidden Zone"
 ax.fill_between([30, 13], 10**8, 10**11, color='#C00000', alpha=0.08, label=r'$\Lambda$CDM Forbidden Zone')

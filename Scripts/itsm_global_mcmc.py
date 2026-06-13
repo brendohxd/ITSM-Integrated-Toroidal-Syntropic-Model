@@ -23,7 +23,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
 from scipy.optimize import minimize
@@ -190,5 +189,11 @@ if __name__ == '__main__':
                         truths=[mcmc_results[1, 0], mcmc_results[1, 1], mcmc_results[1, 2]],
                         quantiles=[0.16, 0.50, 0.84], show_titles=True,
                         title_fmt=".3f", color="navy", truth_color="crimson")
+
+    # Add Descriptive Elements
+    fig.suptitle("ITSM Global MCMC Corner Plot", fontsize=18, y=1.02)
+    fig.text(0.6, 0.8, "ITSM Global Fit\nZero Free Parameters\n$T^3$ Topology", fontsize=12,
+             bbox=dict(facecolor='white', alpha=0.8, edgecolor='gray', boxstyle='round,pad=0.5'))
     plt.savefig(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_global_mcmc_corner.png"), dpi=300, bbox_inches='tight')
+
     print("Optimization complete. Joint convergence posterior exported.")

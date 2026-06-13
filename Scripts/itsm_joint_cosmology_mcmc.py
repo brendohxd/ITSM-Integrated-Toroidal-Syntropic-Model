@@ -12,7 +12,6 @@ import emcee
 import matplotlib.pyplot as plt
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
 import scipy.integrate as integrate
@@ -190,8 +189,9 @@ if __name__ == "__main__":
             color='#0072B2', truth_color='darkred'
         )
         
-        # Add a title to the figure
-        fig.suptitle(r"ITSM Joint Cosmological Constraints (Pantheon+ SN1a $\&$ DESI BAO)", fontsize=16)
+        # Add a title to the figure and adjust top margin to prevent overlap
+        fig.suptitle(r"ITSM Joint Cosmological Constraints (Pantheon+ SN1a & DESI BAO)", fontsize=16, y=1.05)
+        fig.subplots_adjust(top=0.90)
         
         out_path = os.path.join(script_dir, "..", "Assets", "Figures", "itsm_joint_cosmology_corner.png")
         os.makedirs(os.path.dirname(out_path), exist_ok=True)

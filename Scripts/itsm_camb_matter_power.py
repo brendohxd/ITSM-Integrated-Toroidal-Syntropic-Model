@@ -23,7 +23,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
 import camb
@@ -59,23 +58,30 @@ def get_pk(H0, w=-1.0):
     # Note: kh is in h/Mpc, pk is in (Mpc/h)^3
     kh, z, pk = results.get_matter_power_spectrum(minkh=1e-4, maxkh=1.0, npoints=200)
     
-    s8 = np.array(results.get_sigma8())
+    s8_array = np.array(results.get_sigma8())
+    sigma8 = s8_array[0]
     
-    return kh, pk[0], s8[0]
+    # Calculate S_8 tension parameter
+    # S_8 = sigma_8 * sqrt(Omega_m / 0.3)
+    h = H0 / 100.0
+    omega_m = (ombh2 + omch2) / (h**2)
+    S8 = sigma8 * np.sqrt(omega_m / 0.3)
+    
+    return kh, pk[0], sigma8, S8
 
 # Compute
 print("Computing LCDM P(k)...")
-kh_lcdm, pk_lcdm, s8_lcdm = get_pk(PLANCK_H0, w=-1.0)
+kh_lcdm, pk_lcdm, s8_lcdm, S8_lcdm = get_pk(PLANCK_H0, w=-1.0)
 
 print("Computing ITSM P(k)...")
-kh_itsm, pk_itsm, s8_itsm = get_pk(ITSM_H0, w=ITSM_W)
+kh_itsm, pk_itsm, s8_itsm, S8_itsm = get_pk(ITSM_H0, w=ITSM_W)
 
 # Plotting
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 10), gridspec_kw={'height_ratios': [3, 1], 'hspace': 0.05})
 
 # Top Panel
-ax1.loglog(kh_lcdm, pk_lcdm, '-', color='gray', lw=2, label=rf'Planck 2018 $\Lambda$CDM ($H_0={PLANCK_H0}, \sigma_8={s8_lcdm:.3f}$)')
-ax1.loglog(kh_itsm, pk_itsm, '-', color='darkred', lw=2.5, label=rf'ITSM Syntropic ($H_0={ITSM_H0}, w={ITSM_W}, \sigma_8={s8_itsm:.3f}$)')
+ax1.loglog(kh_lcdm, pk_lcdm, '-', color='gray', lw=2, label=rf'Planck 2018 $\Lambda$CDM ($H_0={PLANCK_H0}, S_8={S8_lcdm:.3f}$)')
+ax1.loglog(kh_itsm, pk_itsm, '-', color='darkred', lw=2.5, label=rf'ITSM Syntropic ($H_0={ITSM_H0}, w={ITSM_W}, S_8={S8_itsm:.3f}$)')
 
 ax1.set_ylabel(r'$P(k)$ [$(h^{-1}\mathrm{Mpc})^3$]', fontsize=15)
 ax1.set_title(r'Linear Matter Power Spectrum $P(k)$ at $z=0$', fontsize=16, pad=15)
@@ -85,6 +91,8 @@ ax1.set_xlim(1e-4, 1)
 ax1.set_ylim(1e1, 1e5)
 ax1.tick_params(axis='x', labelbottom=False)
 
+# Cleanly removed the text box overlay that obscured the data lines.
+# The S_8 values are already included in the legend labels above.
 # Bottom Panel (Ratio)
 ratio = pk_itsm / pk_lcdm
 ax2.semilogx(kh_lcdm, ratio, '-', color='darkblue', lw=2)

@@ -26,46 +26,50 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
 
 
 
-def standard_sps_mass(radius):
-    """Mock standard Newtonian baryonic mass profile (Salpeter IMF, no extreme dust correction)."""
-    # Exponential disk mass profile
-    M_disk = 5.0e10 # Solar masses
-    R_d = 3.0       # Disk scale length in kpc
-    return M_disk * (1 - np.exp(-radius / R_d) * (1 + radius / R_d))
+import pandas as pd
 
-def itsm_photometric_conversion(radius, A_v=2.5, upsilon_shift=0.01/0.5):
-    """
-    ITSM Modified Photometric-to-Baryonic Conversion.
-    Applies the bottom-light IMF shift (upsilon_shift) and 
-    extreme edge-on dust attenuation scaling (A_v).
-    """
-    standard_mass = standard_sps_mass(radius)
-    # Dust attenuation factor reduces observed gas/stellar inferred mass
-    # IMF shift explicitly drops the mass-to-light ratio
-    return standard_mass * upsilon_shift * np.exp(-A_v / 5.0)
+def load_ngc4217_data():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    sparc_path = os.path.abspath(os.path.join(script_dir, "..", "SPARC_data", "NGC4217_rotmod.dat"))
+    df = pd.read_csv(sparc_path, sep=r'\s+', comment='#', 
+                     names=['Rad', 'Vobs', 'errV', 'Vgas', 'Vdisk', 'Vbul', 'SBdisk', 'SBbul'], header=None)
+    # Remove header if present
+    df = df[pd.to_numeric(df['Rad'], errors='coerce').notnull()].astype(float)
+    return df
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     output_dir = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures"))
     os.makedirs(output_dir, exist_ok=True)
     
-    radii = np.linspace(0.1, 20.0, 100) # kpc
+    # Load Real SPARC Data for NGC 4217
+    df = load_ngc4217_data()
+    radii = df['Rad'].values
+    v_gas = df['Vgas'].values
+    v_disk = df['Vdisk'].values
+    v_bul = df['Vbul'].values
     
-    # Calculate profiles
-    m_standard = standard_sps_mass(radii)
-    m_itsm_edge_on = itsm_photometric_conversion(radii, A_v=3.5) # Extreme edge-on dust
+    # 1. Standard Newtonian Kinematics (SPS assumed M/L = 0.5 disk)
+    v_bar_std_sq = np.abs(v_gas)*v_gas + 0.5 * np.abs(v_disk)*v_disk + 0.7 * np.abs(v_bul)*v_bul
+    v_standard = np.sqrt(np.maximum(v_bar_std_sq, 0))
     
-    # Calculate effective Newtonian Velocity V = sqrt(G M / r)
-    # G in units of kpc * (km/s)^2 / M_sun ~ 4.3009e-6
-    G = 4.3009e-6
-    v_standard = np.sqrt(G * m_standard / radii)
-    v_itsm = np.sqrt(G * m_itsm_edge_on / radii)
+    # 2. ITSM Photometric Conversion (Bottom-light IMF Upsilon -> 0.01 + Edge-on Dust A_v=3.5)
+    A_v = 3.5
+    upsilon_shift = 0.01 / 0.5
+    dust_factor = np.exp(-A_v / 5.0)
+    
+    v_bar_itsm_sq = np.abs(v_gas)*v_gas*dust_factor + upsilon_shift * np.abs(v_disk)*v_disk*dust_factor + upsilon_shift * np.abs(v_bul)*v_bul*dust_factor
+    v_itsm = np.sqrt(np.maximum(v_bar_itsm_sq, 0))
+    
+    # Calculate Enclosed Mass: M = r * V^2 / G
+    G_kpc = 4.3009e-6 # G in kpc*(km/s)^2/M_sun
+    m_standard = (radii * v_standard**2) / G_kpc
+    m_itsm_edge_on = (radii * v_itsm**2) / G_kpc
     
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
     

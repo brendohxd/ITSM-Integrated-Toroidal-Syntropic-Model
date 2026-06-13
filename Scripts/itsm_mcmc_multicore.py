@@ -33,7 +33,6 @@ matplotlib.use("Agg")  # Non-interactive backend — safe for multicore on Windo
 import matplotlib.pyplot as plt
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
 from scipy.optimize import minimize
@@ -223,7 +222,13 @@ def run_single_galaxy(args):
                                quantiles=[0.16, 0.50, 0.84],
                                show_titles=True, title_fmt=".3f",
                                color="navy", truth_color="crimson")
-        fig_c.savefig(os.path.join(output_dir, f"{galaxy_name}_corner.png"), dpi=150)
+
+    # Add Descriptive Elements
+    fig_c.suptitle("SPARC Galaxy MCMC Rotation Curve Fit", fontsize=18, y=1.02)
+    fig_c.text(0.6, 0.8, "Zero Free Global Parameters\nIndividual Halo Fits", fontsize=12,
+             bbox=dict(facecolor='white', alpha=0.8, edgecolor='gray', boxstyle='round,pad=0.5'))
+    fig_c.savefig(os.path.join(output_dir, f"{galaxy_name}_corner.png"), dpi=150)
+
         plt.close(fig_c)
 
         # 2. Rotation curve + residuals

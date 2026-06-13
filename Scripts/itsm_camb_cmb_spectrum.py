@@ -55,7 +55,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
 from multiprocessing import Pool, cpu_count
@@ -163,7 +162,7 @@ def run_camb(args):
 if __name__ == "__main__":
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    output_dir = os.path.join(script_dir, "results")
+    output_dir = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures"))
     os.makedirs(output_dir, exist_ok=True)
 
     N_CORES = cpu_count()
