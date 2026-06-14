@@ -713,16 +713,16 @@ To test for potential dynamical evolution of the vacuum plenum pressure (analogo
     \label{fig:evolving_n}
 \end{figure}
 
-\subsection{Hierarchical Joint Inference: SPARC Kinematics $\times$ Pantheon+ Expansion}
-While the DESI BAO telemetry probes the early-universe void volume, combining the local SPARC galactic kinematics ($z \approx 0$) directly with the Pantheon+ SN1a standard candles ($0 < z < 2$) provides a definitive constraint on the late-time geometric behavior of the ITSM. To simultaneously evaluate macroscopic expansion and microscopic galactic rotation, we executed a Profile Likelihood MCMC algorithm integrating the 1701-supernovae SN1a covariance matrix alongside dynamic mass-to-light ($\Upsilon_{\text{disk}}, \Upsilon_{\text{bulge}}$) optimization across all 175 SPARC galaxies at each step. 
+\subsection{Global Joint Inference: SPARC Kinematics $\times$ Pantheon+ $\times$ DESI BAO}
+To definitively constrain the macroscopic geometric behavior of the ITSM across all cosmic epochs, we executed a unified 3-way Profile Likelihood MCMC algorithm. This global optimizer simultaneously integrates the local SPARC galactic kinematics ($z \approx 0$), the Pantheon+ SN1a standard candles ($0 < z < 2$), and the DESI DR2 BAO telemetry ($0.1 < z < 4.2$) alongside dynamic mass-to-light ($\Upsilon_{\text{disk}}, \Upsilon_{\text{bulge}}$) optimization for all 175 SPARC galaxies at each step. 
 
-The hierarchical evaluation (3000 steps $\times$ 32 walkers) extracts a joint median expansion rate of $H_0 = 70.89 \text{ km s}^{-1} \text{ Mpc}^{-1}$, bridging the local distance ladder and early universe benchmarks. More profoundly, the joint kinematic-expansion constraint anchors the geometric matter density to $\Omega_m = 0.495$, mathematically mirroring the ITSM geometric limit ($1/2$). Crucially, under the strict constraint of late-time local expansion telemetry, the syntropic decay index drops to $n = 0.023$. This $n \approx 0$ boundary condition rigorously proves that at $z \approx 0$, the ITSM geometric expansion perfectly emulates a $\Lambda$ Cosmological Constant ($w=-1$), while preserving the capacity for evolutionary dynamic decay at higher redshifts.
+The hierarchical evaluation extracts a global joint median expansion rate of $H_0 = 69.62 \text{ km s}^{-1} \text{ Mpc}^{-1}$, firmly bridging the local distance ladder and early universe benchmarks. The joint kinematic-expansion constraint anchors the geometric matter density to $\Omega_m = 0.354$. Crucially, under the strict combined constraints of late-time expansion and early-universe void telemetry, the syntropic decay index drops to $n = 0.003$. This $n \approx 0$ boundary condition rigorously proves that at $z \approx 0$, the ITSM geometric expansion perfectly emulates a $\Lambda$ Cosmological Constant ($w=-1$), while preserving the capacity for evolutionary dynamic decay at higher redshifts.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\columnwidth]{itsm_hierarchical_joint_corner.png}
-    \caption{\footnotesize \textbf{Hierarchical Joint Inference (SPARC $\times$ Pantheon+ SN1a).} The joint Bayesian contour plot evaluating the combined log-likelihood of SPARC galactic rotation kinematics (profiled over $175 \times 2$ M/L hyperparameters) and the full Pantheon+ SN1a covariance matrix. The constraint isolates $H_0 = 70.89 \text{ km s}^{-1} \text{ Mpc}^{-1}$ and forces $\Omega_m \to 0.495$ (the geometric $1/2$ limit), while the syntropic decay index converges to $n = 0.023$, confirming the late-time transition to a strict $w=-1$ geometric threshold.}
-    \label{fig:hierarchical_joint}
+    \includegraphics[width=\columnwidth]{itsm_global_joint_corner.png}
+    \caption{\footnotesize \textbf{Global Joint Inference (SPARC $\times$ Pantheon+ $\times$ DESI BAO).} The joint Bayesian contour plot evaluating the combined log-likelihood of SPARC galactic rotation kinematics (profiled over $175 \times 2$ M/L hyperparameters), the full Pantheon+ SN1a covariance matrix, and DESI BAO. The constraint isolates $H_0 = 69.62 \text{ km s}^{-1} \text{ Mpc}^{-1}$ and $\Omega_m = 0.354$, while the syntropic decay index converges to $n = 0.003$, confirming the late-time transition to a strict $w=-1$ geometric threshold.}
+    \label{fig:global_joint}
 \end{figure}
 
 \subsection{Covariant Anisotropy: The Hubble Tension Resolver}
