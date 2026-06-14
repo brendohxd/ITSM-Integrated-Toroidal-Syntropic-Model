@@ -436,7 +436,7 @@ if __name__ == "__main__":
 
     plt.tight_layout()
     fig_path = os.path.join(figures_dir, "itsm_btfr_publication.png")
-    plt.savefig(fig_path, dpi=600, bbox_inches='tight')
+    plt.savefig(fig_path, bbox_inches='tight')
     plt.close()
     print(f" Figure saved : {fig_path}")
 

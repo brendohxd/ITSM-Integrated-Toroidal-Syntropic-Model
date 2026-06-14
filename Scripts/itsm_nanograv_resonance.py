@@ -340,7 +340,7 @@ if __name__ == "__main__":
     plt.tight_layout(rect=[0, 0.025, 1, 1])
 
     out_path = os.path.join(output_dir, "itsm_nanograv_resonance_publication.png")
-    plt.savefig(out_path, dpi=300, bbox_inches="tight")
+    plt.savefig(out_path, bbox_inches="tight")
     plt.close()
 
     print(f" Figure saved: {out_path}")

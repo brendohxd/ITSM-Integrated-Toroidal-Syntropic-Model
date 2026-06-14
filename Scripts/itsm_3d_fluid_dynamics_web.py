@@ -138,5 +138,5 @@ fig.subplots_adjust(wspace=0.1)
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_3d_fluid_dynamics_publication.png"))
-plt.savefig(out_path, dpi=300, bbox_inches='tight', pad_inches=0.1, facecolor=fig.get_facecolor())
+plt.savefig(out_path, bbox_inches='tight', pad_inches=0.1, facecolor=fig.get_facecolor())
 print(f"Asset generated: {out_path}")

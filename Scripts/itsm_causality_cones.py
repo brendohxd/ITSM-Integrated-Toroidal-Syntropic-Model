@@ -79,7 +79,7 @@ def main():
     ax.grid(True, linestyle=":", alpha=0.5)
     
     out_path = os.path.join(output_dir, "itsm_causality_cones.png")
-    plt.savefig(out_path, dpi=300, bbox_inches="tight")
+    plt.savefig(out_path, bbox_inches="tight")
     plt.close()
     
     print(f"Saved Causality Cone diagram to {out_path}")

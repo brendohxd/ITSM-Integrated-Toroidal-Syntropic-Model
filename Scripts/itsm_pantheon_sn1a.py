@@ -178,7 +178,7 @@ if __name__ == "__main__":
         
         out_path = os.path.join(script_dir, "..", "Assets", "Figures", "itsm_pantheon_corner.png")
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
-        fig.savefig(out_path, dpi=300)
+        fig.savefig(out_path)
         print(f"Corner plot saved to {out_path}")
     except ImportError:
         print("Install 'corner' package via pip to generate the corner plot.")

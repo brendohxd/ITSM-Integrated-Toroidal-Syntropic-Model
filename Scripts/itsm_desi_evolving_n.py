@@ -225,7 +225,7 @@ if __name__ == "__main__":
         
         out_path = os.path.join(script_dir, "..", "Assets", "Figures", "itsm_evolving_n_corner.png")
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
-        fig.savefig(out_path, dpi=300, bbox_inches='tight')
+        fig.savefig(out_path, bbox_inches='tight')
         print(f"Evolving-n Corner plot saved to {out_path}")
     except Exception as e:
         print(f"Could not generate corner plot: {e}")

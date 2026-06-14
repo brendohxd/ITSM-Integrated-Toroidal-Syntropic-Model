@@ -99,5 +99,5 @@ plt.tight_layout()
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_acoustic_wake_publication.png"))
-plt.savefig(out_path, dpi=300, bbox_inches='tight', pad_inches=0.1)
+plt.savefig(out_path, bbox_inches='tight', pad_inches=0.1)
 print(f"Asset generated: {out_path}")

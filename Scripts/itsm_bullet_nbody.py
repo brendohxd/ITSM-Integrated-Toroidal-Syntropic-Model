@@ -183,7 +183,7 @@ plt.tight_layout()
 script_dir = os.path.dirname(os.path.abspath(__file__))
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_bullet_nbody_publication.png"))
 os.makedirs(os.path.dirname(out_path), exist_ok=True)
-plt.savefig(out_path, dpi=300, bbox_inches='tight')
+plt.savefig(out_path, bbox_inches='tight')
 plt.close()
 
 print(f"Simulation successfully complete!")

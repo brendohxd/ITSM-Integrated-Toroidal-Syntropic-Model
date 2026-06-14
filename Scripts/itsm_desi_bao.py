@@ -45,5 +45,5 @@ plt.tight_layout()
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_desi_bao_publication.png"))
-plt.savefig(out_path, dpi=300)
+plt.savefig(out_path)
 print(f"Asset generated: {out_path}")

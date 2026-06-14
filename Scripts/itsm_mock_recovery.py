@@ -96,5 +96,5 @@ fig = corner.corner(samples, labels=[r"$\Upsilon_{disk}$", r"$\Upsilon_{bul}$", 
                     
 out_dir = os.path.join(repo_root, "Assets", "Figures")
 os.makedirs(out_dir, exist_ok=True)
-plt.savefig(os.path.join(out_dir, "itsm_mock_recovery_corner.png"), dpi=300, bbox_inches='tight')
+plt.savefig(os.path.join(out_dir, "itsm_mock_recovery_corner.png"), bbox_inches='tight')
 print("Mock Parameter Recovery successful. Corner plot exported.")

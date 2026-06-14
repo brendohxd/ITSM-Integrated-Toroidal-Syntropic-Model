@@ -195,7 +195,7 @@ if __name__ == "__main__":
         
         out_path = os.path.join(script_dir, "..", "Assets", "Figures", "itsm_joint_cosmology_corner.png")
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
-        fig.savefig(out_path, dpi=300, bbox_inches='tight')
+        fig.savefig(out_path, bbox_inches='tight')
         print(f"Joint Corner plot saved to {out_path}")
     except ImportError:
         print("Install 'corner' package via pip to generate the corner plot.")

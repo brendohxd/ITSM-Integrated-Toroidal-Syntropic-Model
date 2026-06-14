@@ -206,5 +206,5 @@ ax2.set_ylim(-5, 5)
 ax2.grid(True, which='both', ls='-', alpha=0.3)
 
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_global_rar_publication.png"))
-plt.savefig(out_path, dpi=300, bbox_inches='tight')
+plt.savefig(out_path, bbox_inches='tight')
 print(f"\nPlot saved to: {out_path}")

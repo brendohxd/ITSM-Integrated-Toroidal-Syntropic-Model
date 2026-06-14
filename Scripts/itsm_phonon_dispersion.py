@@ -159,5 +159,5 @@ out_path = (
     r"\ITSM-Integrated-Toroidal-Syntropic-Model"
     r"\Assets\Figures\itsm_phonon_dispersion.png"
 )
-fig.savefig(out_path, dpi=300, bbox_inches="tight")
+fig.savefig(out_path, bbox_inches="tight")
 print(f"Figure saved to: {out_path}")

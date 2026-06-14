@@ -235,7 +235,7 @@ if __name__ == "__main__":
                      bbox=dict(facecolor='white', alpha=0.8, edgecolor='gray', boxstyle='round,pad=0.5'))
                      
             out_path = os.path.join(script_dir, "..", "Assets", "Figures", "itsm_hierarchical_joint_corner.png")
-            fig.savefig(out_path, dpi=300)
+            fig.savefig(out_path)
             print(f"Corner plot saved to {out_path}")
         except:
             pass

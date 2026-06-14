@@ -111,5 +111,5 @@ fig.text(0.99, 0.01, "Note: Phase-space distributions are illustrative schematic
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_bullet_phasespace_publication.png"))
-plt.savefig(out_path, dpi=300)
+plt.savefig(out_path)
 print(f"Asset generated: {out_path}")

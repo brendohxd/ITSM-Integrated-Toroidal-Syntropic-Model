@@ -80,5 +80,5 @@ plt.grid(True, linestyle=':', alpha=0.6)
 plt.legend()
 
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_n_evolution.png"))
-plt.savefig(out_path, dpi=300)
+plt.savefig(out_path)
 print(f"Visualization generated: {out_path}")

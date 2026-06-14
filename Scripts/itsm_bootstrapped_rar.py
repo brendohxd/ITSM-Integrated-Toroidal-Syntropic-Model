@@ -175,5 +175,5 @@ plt.grid(True, which='both', ls='-', alpha=0.3)
 plt.tight_layout()
 
 out_path = os.path.normpath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_bootstrapped_rar.png"))
-plt.savefig(out_path, dpi=300, bbox_inches='tight')
+plt.savefig(out_path, bbox_inches='tight')
 print(f"Plot saved to: {out_path}")

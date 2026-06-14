@@ -63,5 +63,5 @@ plt.legend(loc='upper left')
 
 out_dir = os.path.join(repo_root, "Assets", "Figures")
 os.makedirs(out_dir, exist_ok=True)
-plt.savefig(os.path.join(out_dir, "itsm_hz_cosmic_chronometers.png"), dpi=300, bbox_inches='tight')
+plt.savefig(os.path.join(out_dir, "itsm_hz_cosmic_chronometers.png"), bbox_inches='tight')
 print("Cosmic Chronometer validation successful. Graphic exported.")
