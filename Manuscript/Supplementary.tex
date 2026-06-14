@@ -6,13 +6,16 @@
 \usepackage{longtable}
 \usepackage{hyperref}
 
+% Auto-synced version from CHANGELOG.md via Scripts/sync_version.py
+\input{version.tex}
+
 \begin{document}
 
 \title{Supplementary Material: Comprehensive SPARC MCMC Parameter Ledger}
 \author{Brendon Boyd}
 \email{brendon.boyd@itsm-cosmology.org}
 \affiliation{Independent Researcher, Perth, Western Australia, Australia}
-\date{\today}
+\date{Version \itsmVersion\ | Compiled \today}
 
 \maketitle
 
@@ -42,8 +45,7 @@ To ensure the physics remains scale-invariant, broad uniform priors are assigned
 \section{Comprehensive SPARC Parameter Ledger}
 \input{appendix_sparc_table.tex}
 
-\begin{thebibliography}{99}
-\bibitem{sparc} Lelli, F., McGaugh, S. S., and Schombert, J. M. ``SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves.'' \textit{The Astronomical Journal} 152, 157 (2016).
-\end{thebibliography}
+\bibliographystyle{apsrev4-2}
+\bibliography{references}
 
 \end{document}
