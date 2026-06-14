@@ -92,7 +92,7 @@
 - **GitHub Content Delivery:** Pushed the API exports directly to GitHub's `main` branch, allowing the frontend web-app to fetch dynamic MCMC data asynchronously via raw repository URLs.
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
-- **Creative Commons License:** Removed prior restrictive copyright and trademark assertions from the manuscript title block in favor of a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+- **Creative Commons License:** Removed prior restrictive copyright assertions from the manuscript title block in favor of a Creative Commons Attribution 4.0 International (CC BY 4.0) license, while explicitly noting "ITSM Cosmology" and "Integrated Toroidal-Syntropic Model" as unregistered trademarks.
 ## Version 9.8.1 — Tier-1 Peer Review Fortification (2026-05-31)
 - **5D Bulk Space Excised:** Formally removed all references to a 5D parent manifold and the higher-dimensional entropic flux tensor. The thermodynamic syntropic intake is now strictly and mathematically locked directly to the 4D covariant expansion scalar ($\Theta = \nabla_\mu u^\mu = 3H$), completely satisfying Occam's razor.
 - **Born-Infeld Uniqueness Proof:** Injected a formal mathematical derivation proving that the square-root Lagrangian modification is not an empirical curve-fit, but the unique functional form that simultaneously guarantees Hamiltonian positivity ($\mathcal{H} > 0$), a subluminal sound speed horizon ($c_s^2 \le 1$), and topological phase stability on a $T^3$ manifold.
