@@ -1,5 +1,31 @@
 # ITSM Changelog & Archive History
 
+## Version 10.1.0 — Tier-1 Peer-Review Fixes: Causality, Renormalization & Statistical Transparency (2026-06-14)
+
+### Manuscript Revisions (`Manuscript/Main.tex`)
+- **NLO Vertex Correction Subsection (§3.1.x — new):** Formally bracketed the $4/9 \to 1$ BTFR gap as a running-coupling RG flow problem. Defined $g(\mu) = g_0 + \Delta\Gamma(\mu)$ with $g_0 = 2/3$ (UV tree-level) and IR boundary condition $\Delta\Gamma(0) = 1/3$. Introduced a Born-Infeld toy parameterization satisfying both boundary conditions exactly. Explicitly labelled as a toy parameterization pending a full one-loop dressed vertex calculation. Physically interprets BTFR galaxy-to-galaxy scatter as a signature of the running coupling evaluated at different kinematic scales $\mu \sim \sqrt{g_{\text{bar}}\,a_0}$.
+- **Microcausality Defence Overhaul (§3.3 — rewritten):** Expanded the causality section from a single macrocausality argument into a three-tier defence: (i) Macrocausality via Hamiltonian positivity ($\mathcal{H} > 0$) forbidding CTCs; (ii) Microcausality via UV-cutoff-clamped dispersion relation proving $v_g(k) \le 1$ for all EFT modes; (iii) Parallel to established frameworks — k-essence (Babichev, Mukhanov & Vikman 2008) and Galileon gravity (Nicolis, Rattazzi & Trincherini 2009). Added explicit phonon dispersion equations $\omega^2(k)$, $v_{\text{ph}}(k)$, and $v_g(k)$.
+- **BTFR Figure Updated (Fig. 6 — two-panel, full-width):** Changed from single-column `figure/\columnwidth` to full-page `figure*/\textwidth`. Updated caption to describe both Panel A (scatter) and Panel B (CDF). Added statistical breakdown: $71.9\%$ within $3\sigma_{\text{eff}}$, $58.5\%$ within $25\%$, $35.7\%$ within $15\%$.
+- **NGC 4217 Reframing (§4.2):** Updated figure reference to new 3-panel `itsm_ngc4217_control_fit.png`. Caption describes Chabrier IMF failure mode (20–50% over-prediction) and JWST falsifiability test.
+- **Discussion Section (§Discussion — restructured):** Split into three explicit items: (i) $4/9$ as formal EFT lower bound with RG flow to IR fixed point; (ii) Microcausality fully resolved at both macro and quantum levels via UV cutoff; (iii) $\Upsilon \to 0.01$ reframed as falsifiable JWST mid-IR spectroscopic prediction (2.3 µm CO bandhead, Na I doublet).
+- **Conclusion Updated:** Added $71.9\%$ within $3\sigma_{\text{eff}}$ statistic for renormalized BTFR. $4/9$ formally identified as strict tree-level EFT lower bound.
+
+### New Scripts & Figures
+- **`Scripts/itsm_phonon_dispersion.py` (new):** Generates two-panel causality figure: (Left) $c_s^2$ vs $X/a_0^2$ with peak annotation; (Right) phase/group velocity vs $k/\Lambda_{\text{UV}}$ showing UV-clamped subluminal group velocity.
+- **`Assets/Figures/itsm_phonon_dispersion.png` (new):** Publication-quality causality figure embedded in §3.3.
+- **`Assets/Figures/itsm_ngc4217_control_fit.png` (new):** 3-panel NGC 4217 figure showing ITSM fit, Chabrier control failure, and JWST prediction text.
+- **`Assets/Figures/itsm_btfr_publication.png` (updated):** Rebuilt as side-by-side 2-panel (BTFR scatter + CDF of residuals) at full textwidth.
+
+### Updated Scripts
+- **`Scripts/itsm_btfr_validation.py`:** Replaced old stacked 2-row layout with side-by-side `(1×2)` figure. Panel B plots CDF of relative deviations for both unrenormalized and renormalized models with σ_eff annotations computed dynamically per galaxy.
+- **`Scripts/itsm_ngc4217_dust_model.py`:** Rewrote to run dual fit: ITSM bottom-light IMF ($\Upsilon=0.01$, $A_V=3.5$) and Chabrier control ($\Upsilon=0.50$). Three-panel figure with science interpretation text box.
+- **All 33 active scripts in `Scripts/`:** Removed all hardcoded `dpi=` arguments from every `savefig()`, `subplots()`, and `fig.savefig()` call. DPI now deferred to global style/rcParams.
+
+### Bibliography (`references.bib`)
+- Added `nicolis_galileon`: Nicolis, Rattazzi & Trincherini (2009) *Galileon as a local modification of gravity*, Phys. Rev. D 79, 064036.
+
+---
+
 ## Version 10.0.2 — Final Peer-Review Audit & Pipeline Automation (2026-06-13)
 
 ### Repository & Pipeline Automation
