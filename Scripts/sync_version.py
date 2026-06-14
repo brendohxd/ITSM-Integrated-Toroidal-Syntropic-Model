@@ -40,7 +40,7 @@ def write_version_tex(version: str, output_path: str) -> None:
     )
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(tex)
-    print(f"[sync_version] Wrote version {version} → {output_path}")
+    print(f"[sync_version] Wrote version {version} -> {output_path}")
 
 if __name__ == "__main__":
     version = extract_latest_version(CHANGELOG)

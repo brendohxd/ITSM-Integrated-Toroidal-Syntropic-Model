@@ -1,3 +1,7 @@
+"""
+Utility script to prepare the repository for Zenodo distribution.
+Packages codebase, assets, and documentation into structured release artifacts.
+"""
 import os
 import sys
 import requests

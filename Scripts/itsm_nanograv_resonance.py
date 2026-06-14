@@ -82,24 +82,30 @@ F_RES_CENTROID  = (A0_BASE_NHZ + PI_HARMONIC_NHZ) / 2.0  # ~2.07 nHz
 RESONANCE_WIDTH = 0.50        # Damping width [nHz] — toroidal vortex decay rate
 RESONANCE_AMP   = 1.50e-14   # Resonance amplitude [dimensionless strain]
 
-# NANOGrav 15yr representative free-spectrum bin centres [nHz]
-# T_obs = 16.03 yr -> f_1 = 1/T_obs = 1.978 nHz
-# Bins: n * 1.978 nHz for n = 1..14
-# Median h_c values computed from published best-fit power law
-# (Agazie et al. 2023 — representative point estimates)
-T_OBS_YR = 16.03
-F1_NHZ   = 1.0 / T_OBS_YR * (365.25 * 24 * 3600 / 1e9) * 1e9  # nHz
+# NANOGrav 15yr KDE Data paths
+KDE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "NANOGrav_data", "NANOGrav15yr_KDE-FreeSpectra_v1.1.0", "ceffyl_data", "30f_fs{hd}_ceffyl")
 
-NG_FREQS_NHZ = np.array([n * (1.0 / (T_OBS_YR * 3.1558e7 * 1e-9))
-                          for n in range(1, 15)])  # 14 bins in nHz
+def load_kde_data():
+    freqs = np.load(os.path.join(KDE_DIR, "freqs.npy")) * 1e9 # convert Hz to nHz
+    log10rhogrid = np.load(os.path.join(KDE_DIR, "log10rhogrid.npy"))
+    density = np.load(os.path.join(KDE_DIR, "density.npy"))[0] # (30, 10000)
+    return freqs, log10rhogrid, density
 
-# Representative h_c at each bin from published best-fit power law
-NG_HC_MEDIAN = A_GWB_15YR * (NG_FREQS_NHZ / F_YR_NHZ) ** SPECTRAL_IDX
-# Approximate 1-sigma scatter from published posteriors (~30% in h_c)
-NG_HC_SIGMA  = NG_HC_MEDIAN * 0.30
-
-# Optional: path to local NANOGrav posterior file (set if downloaded)
-DATA_FILE = None   # e.g. "path/to/15yr_free_spectrum.json"
+def plot_nanograv_kde_violins(ax, freqs, log10rhogrid, density):
+    # The 15yr paper focuses primarily on the lowest 14 frequency bins
+    for i in range(14):
+        f_val = freqs[i]
+        dens = density[i, :]
+        if dens.max() > 0:
+            # normalize density for visualization
+            scaled_dens = (dens / dens.max()) * (f_val * 0.08) # 8% width of the frequency bin
+            hc_vals = 10**log10rhogrid
+            
+            # Filter extremely low density tails to make it look clean
+            mask = dens > (dens.max() * 0.01)
+            
+            ax.fill_betweenx(hc_vals[mask], f_val - scaled_dens[mask], f_val + scaled_dens[mask], 
+                             color="#e67e22", alpha=0.6, lw=0, zorder=5)
 
 
 # ------------------------------------------------------------------
@@ -268,12 +274,16 @@ if __name__ == "__main__":
              label=(r"ITSM: Power Law + Lorentzian Resonance"
                     + r" [$a_0 \to \pi$ nHz window]"))
 
-    # NANOGrav 15yr representative data points
-    ax1.errorbar(NG_FREQS_NHZ, NG_HC_MEDIAN, yerr=NG_HC_SIGMA,
-                 fmt="o", color="#e67e22", markersize=6,
-                 ecolor="#e67e22", capsize=3, alpha=0.9, zorder=5,
-                 label=(r"NANOGrav 15yr: Representative $h_c$ estimates"
-                        + r" (Agazie et al.\ 2023)"))
+    # NANOGrav 15yr KDE Data Violins
+    kde_freqs, kde_log10rho, kde_density = load_kde_data()
+    plot_nanograv_kde_violins(ax1, kde_freqs, kde_log10rho, kde_density)
+    
+    # Add proxy artist for legend
+    import matplotlib.patches as mpatches
+    kde_patch = mpatches.Patch(color="#e67e22", alpha=0.6, 
+                               label=r"NANOGrav 15yr: HD-correlated free spectrum (KDE)")
+    # We will need to manually append this to the legend handles later, or add it as a fake plot:
+    ax1.plot([], [], color="#e67e22", alpha=0.6, lw=6, label=r"NANOGrav 15yr: HD-correlated free spectrum (KDE)")
 
     # ITSM falsifiability window
     ax1.axvspan(A0_BASE_NHZ, PI_HARMONIC_NHZ,

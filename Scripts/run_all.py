@@ -1,3 +1,7 @@
+"""
+Master orchestration script to execute the entire ITSM analysis pipeline sequentially.
+Runs all necessary scripts to reproduce the repository's results from scratch.
+"""
 import os
 import subprocess
 import glob

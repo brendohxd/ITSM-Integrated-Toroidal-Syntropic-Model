@@ -1,3 +1,7 @@
+"""
+Utility script to download Pantheon+ dataset for supernova cosmology analysis.
+Downloads the distance moduli and covariance matrices directly from the official GitHub release.
+"""
 import os
 import urllib.request
 import ssl

@@ -33,7 +33,7 @@
 
 \author{Brendon Boyd}
 \email{brendon.boyd@itsm-cosmology.org}
-\thanks{ORCID: 0009-0007-4177-2612 | The Integrated Toroidal-Syntropic Model\texttrademark\ and ITSM Cosmology\texttrademark\ are claimed as common law trademarks by Brendon Boyd. \copyright\ 2026 Brendon Boyd. All rights reserved.}
+\thanks{ORCID: 0009-0007-4177-2612 | Licensed under Creative Commons Attribution 4.0 International.}
 \affiliation{Independent Researcher, Burswood, Western Australia, Australia}
 \date{Version \itsmVersion\ | Compiled \today}
 
@@ -60,7 +60,7 @@ To deconstruct the ``dark matter'' hypothesis and bridge relativistic mathematic
 
 \begin{figure*}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{itsm_3d_fluid_dynamics_publication.png}
+    \includegraphics[width=\textwidth]{itsm_3d_wake_analogy.png}
     \caption{\footnotesize \textbf{Dual-Panel Phase-Space Diagnostic of the Acoustic Metric Wake.} \textbf{(A)} 2D Kinematic Vector Field: Streamlines map the velocity of the Superfluid Plenum as it flows past the baryonic node. Inside the fundamental yield boundary ($g_N = a_0$, red dashed line), the fluid remains rigidly attached. Outside the boundary, the fluid lacks the cohesive energy to maintain lock, violently shearing to form the macroscopic acoustic wake. \textbf{(B)} 3D Topographical Representation: By mapping the effective metric perturbation density ($\Delta\rho_{eff}$) to the vertical axis, the phase-space transition from Newtonian boundary constraint to macroscopic fluidic drag is explicitly visualized. This fluid-dynamic distortion across the Superfluid Plenum mechanically replaces the requirement for collisionless dark matter particles. Simulation source: \texttt{itsm\_3d\_fluid\_dynamics.py}, available at the ITSM GitHub repository.}
     \label{fig:3d_wake_analogy}
 \end{figure*}
@@ -593,18 +593,17 @@ M_{\text{baryon}} = \Upsilon_{\text{ITSM}} \, L_{\text{obs}} \times \exp\left(-\
 where $\Upsilon_{\text{ITSM}} \approx 0.01$ is the dynamically shifted baseline. Consequently, localized Newtonian disk gravity becomes negligible compared to the macro-scale plenum shear, a reality cleanly mapped by the optimized reduced chi-square values ($\chi^2_\nu \approx 0.15 - 0.45$) (Fig.~\ref{fig:mcmc_synthesis}a).
 
 \begin{table*}[htbp]
-\caption{\label{tab:sparc_summary}ITSM MCMC Parameter Estimations for the SPARC Galaxy Database. A complete 175-galaxy ledger is available in the supplementary material.}
+\caption{\label{tab:sparc_summary}ITSM MCMC Parameter Estimations for the SPARC Galaxy Database. A complete 175-galaxy ledger is available in the supplementary material \cite{itsm_supp}.}
 \begin{ruledtabular}
 \begin{tabular}{lccccc}
 Galaxy & $\Upsilon_{\text{disk}}$ & $\Upsilon_{\text{bulge}}$ & $H_0$ & $\chi^2_\nu$ & DoF \\
 \hline
-NGC 4100 & $0.011$ & $3.945$ & $72.48$ & $0.155$ & $21$ \\
-NGC 7331 & $0.014$ & $4.012$ & $71.24$ & $0.158$ & $28$ \\
-UGC 12506 & $0.013$ & $4.121$ & $65.15$ & $0.477$ & $62$ \\
-NGC 5055 & $0.012$ & $4.115$ & $71.19$ & $0.422$ & $25$ \\
+NGC 4100 & $0.053$ & $4.028$ & $73.28$ & $0.152$ & $21$ \\
+NGC 7331 & $0.021$ & $4.040$ & $71.43$ & $0.156$ & $33$ \\
+UGC 12506 & $0.013$ & $3.861$ & $67.05$ & $0.476$ & $28$ \\
+NGC 5055 & $0.012$ & $4.030$ & $70.95$ & $0.417$ & $25$ \\
 \hline
-\textbf{Global 155-Galaxy Ensemble Median} & $\mathbf{0.013}$ & $\mathbf{4.048}$ & $\mathbf{70.63}$ & $\mathbf{0.384}$ & --- \\
-\hline
+\textbf{Global 155-Galaxy Ensemble Median} & $\mathbf{0.025}$ & $\mathbf{3.975}$ & $\mathbf{70.18}$ & $\mathbf{1.204}$ & --- \\
 \end{tabular}
 \end{ruledtabular}
 \end{table*}
@@ -825,8 +824,8 @@ To verify this mechanism dynamically, we executed a leapfrog-integrated N-body s
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\columnwidth]{itsm_bullet_nbody_publication.png}
-    \caption{\footnotesize \textbf{ITSM N-body Simulation of the Bullet Cluster Collision.} Trajectories (top) and velocities (bottom) along the collision axis for stars and gas components under leapfrog integration. Stars (solid) traverse the collision zone with negligible drag. In contrast, the gas components (dashed) undergo ram-pressure deceleration ($C_{\text{ram}} = 6.0 \times 10^{-4}$) and trigger the sub-grid vacuum acoustic locking drag once their speed drops toward $v_c = 600\text{ km s}^{-1}$. At $t = 2.5\text{ Gyr}$, this yields a clear spatial offset of $\approx 322.6\text{ kpc}$ between the sub-cluster stars and gas, demonstrating the physical mechanism of phase separation without cold dark matter.}
+    \includegraphics[width=\columnwidth]{itsm_bullet_cluster_nbody.png}
+    \caption{\footnotesize \textbf{ITSM 3D N-body Simulation of the Bullet Cluster Collision.} A direct $O(N^2)$ N-body simulation incorporating the Toroidal Plenum Shear equation ($g_{\text{tot}} = g_{\text{bar}} + \frac{2}{3} \sqrt{g_{\text{bar}} a_0}$). \textbf{Left:} The baryonic gas distribution after the $4,500\text{ km s}^{-1}$ collision. \textbf{Right:} The effective weak lensing map, driven entirely by the Plenum Shear amplification factor ($g_{\text{tot}}/g_{\text{bar}}$). During the collision, the non-linear coupling naturally offsets the peak lensing amplification from the baryonic gas centroids, successfully reproducing the Bullet Cluster weak-lensing offset without invoking collisionless dark matter.}
     \label{fig:bullet_nbody}
 \end{figure}
 

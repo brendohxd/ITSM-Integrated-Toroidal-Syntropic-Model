@@ -1,3 +1,7 @@
+"""
+Utility script to export ITSM analysis results and metadata to an API-friendly format.
+Processes SPARC batch outputs and aggregates them into consolidated data files.
+"""
 import os
 import glob
 import pandas as pd

@@ -14,7 +14,7 @@
 \title{Supplementary Material: Comprehensive SPARC MCMC Parameter Ledger}
 \author{Brendon Boyd}
 \email{brendon.boyd@itsm-cosmology.org}
-\affiliation{Independent Researcher, Perth, Western Australia, Australia}
+\affiliation{Independent Researcher, Burswood, Western Australia, Australia}
 \date{Version \itsmVersion\ | Compiled \today}
 
 \maketitle
@@ -22,7 +22,7 @@
 \section{Introduction}
 This supplementary document catalogues the comprehensive parameter estimation results for the entire 175-galaxy sample from the SPARC database \cite{sparc}. Performed via parallelized Markov Chain Monte Carlo (MCMC) walkers (32 walkers $\times$ 3,000 steps per galaxy) within the Integrated Toroidal-Syntropic Model (ITSM) framework, these estimations resolve the stellar disk mass-to-light ratio ($\Upsilon_{\text{disk}}$), bulge mass-to-light ratio ($\Upsilon_{\text{bulge}}$), and the local Hubble expansion rate ($H_0$) tethered geometrically to the yield acceleration $a_0 = c H_0 / 2\pi$.
 
-The ledger is categorized by galaxy name, optimized components, reduced chi-square ($\chi^2_\nu$), degrees of freedom (DoF), and quality categorization. Outliers that clipped the lower boundary wall ($H_0 \to 50.0 \ \text{km s}^{-1} \text{Mpc}^{-1}$) are designated as ``Clipped'' or ``Standard'' based on line-of-sight dust obscuration and turbulent compact kinematics, as analyzed in the main text.
+The ledger is categorized by galaxy name, optimized components, reduced chi-square ($\chi^2_\nu$), degrees of freedom (DoF), and quality categorization. Outliers that clipped the lower boundary wall ($H_0 \to 50.0 \ \text{km s}^{-1} \text{Mpc}^{-1}$) are designated as ``Clipped'' or ``Standard'' based on line-of-sight dust obscuration and turbulent compact kinematics, as analyzed in the main text \cite{itsm_main}.
 
 \section{Methodology: Hierarchical Bayesian Inference}
 The parameter extraction was executed using a hierarchical Markov Chain Monte Carlo (MCMC) ensemble sampler. The Integrated Toroidal-Syntropic Model (ITSM) imposes a rigid geometric dependency between the fundamental kinematic scale $a_0$ and the local Hubble parameter $H_0$, defined exactly by:
@@ -31,7 +31,7 @@ The parameter extraction was executed using a hierarchical Markov Chain Monte Ca
 \end{equation}
 where $c$ is the speed of light. Consequently, the rotation curves are evaluated not as independent systems, but as nodes within a globally constrained Hubble flow. The kinematic profile of each galaxy is governed by the Plenum Shear Ansatz:
 \begin{equation}
-    g_{\text{eff}} = g_{\text{bar}} + \frac{2}{3} \sqrt{g_{\text{bar}} a_0}
+    g_{\text{tot}} = g_{\text{bar}} + \frac{2}{3} \sqrt{g_{\text{bar}} a_0}
 \end{equation}
 where the pre-factor $2/3$ derives strictly from the geometric projection of the transverse shear plane onto the bulk $T^3$ manifold.
 

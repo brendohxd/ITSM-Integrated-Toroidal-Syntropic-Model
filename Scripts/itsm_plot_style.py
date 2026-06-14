@@ -1,3 +1,7 @@
+"""
+Utility module for standardizing Matplotlib plot aesthetics across the ITSM repository.
+Enforces a consistent, publication-ready (Tier-1) style for all generated figures.
+"""
 import matplotlib.pyplot as plt
 
 def apply_tier1_style():

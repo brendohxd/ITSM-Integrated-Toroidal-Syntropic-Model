@@ -223,11 +223,11 @@ def run_single_galaxy(args):
                                show_titles=True, title_fmt=".3f",
                                color="navy", truth_color="crimson")
 
-    # Add Descriptive Elements
-    fig_c.suptitle("SPARC Galaxy MCMC Rotation Curve Fit", fontsize=18, y=1.02)
-    fig_c.text(0.6, 0.8, "Zero Free Global Parameters\nIndividual Halo Fits", fontsize=12,
-             bbox=dict(facecolor='white', alpha=0.8, edgecolor='gray', boxstyle='round,pad=0.5'))
-    fig_c.savefig(os.path.join(output_dir, f"{galaxy_name}_corner.png"))
+        # Add Descriptive Elements
+        fig_c.suptitle("SPARC Galaxy MCMC Rotation Curve Fit", fontsize=18, y=1.02)
+        fig_c.text(0.6, 0.8, "Zero Free Global Parameters\nIndividual Halo Fits", fontsize=12,
+                 bbox=dict(facecolor='white', alpha=0.8, edgecolor='gray', boxstyle='round,pad=0.5'))
+        fig_c.savefig(os.path.join(output_dir, f"{galaxy_name}_corner.png"))
 
         plt.close(fig_c)
 
