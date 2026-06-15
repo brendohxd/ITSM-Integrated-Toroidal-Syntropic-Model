@@ -1,5 +1,18 @@
 # ITSM Changelog & Archive History
 
+## Version 10.4.0 — Formal QFT Renormalization & CLASS Engine Integration (2026-06-15)
+
+### Manuscript Revisions (`Manuscript/Main.tex`)
+- **1-Loop Dressed Vertex Renormalization (§3.1):** Replaced the prior "toy parameterization" of the EFT next-to-leading-order vertex correction with a formal Quantum Field Theory 1-loop derivation. Sourced the cubic phonon self-interaction ($\mathcal{L}^{(3)}_{\text{int}} \propto (\partial\chi)^2 \Box\chi$) directly from the Born-Infeld/Galileon fractional kinetic expansion. Applied dimensional regularization to explicitly prove the running coupling flows from the unrenormalized tree-level ($4/9$) exactly to the infrared fixed point ($1.0$), analytically confirming the empirical SPARC baseline constraint without free parameters.
+- **JWST Mid-IR Spectroscopy Falsifiability (§4.2):** Grounded the "bottom-light" Initial Mass Function ($\Upsilon_{\text{disk}} \to 0.01$) prediction in a rigorous, independently testable observational protocol. Explicitly proposed targeting the $2.3\,\mu\text{m}$ CO bandhead and $0.82\,\mu\text{m}$ Na I doublet using JWST NIRSpec/MIRI to definitively confirm the thermodynamic suppression of M-dwarf star formation within highly obscured edge-on outliers like NGC 4217.
+- **Figure Layout Optimization:** Refactored the `CLASS` spectra diagnostic figure into a vertically stacked single-column layout, natively resolving `twocolumn` floating layout issues without artificial page breaks.
+
+### Computational Engine Upgrades (`Analysis/Experimental/CLASS_Sim/`)
+- **Native CLASS Einstein-Boltzmann Solver Integration:** Successfully injected the continuous ITSM physics background equations directly into the C-source architecture (`background.c`, `background.h`, `input.c`) of the industry-standard `CLASS` cosmological simulator. 
+- **Analytical Derivatives & Spectra Prediction:** Mapped the Syntropic Source Vector ($Q^\nu$) and volumetric expansion parameter natively into the fluid equations, compiled `libclass.a` on Windows, and verified the modified Cosmic Microwave Background (CMB) acoustic peaks and Matter Power Spectra ($P(k)$) generation relative to standard $\Lambda$CDM using a newly written `plot_spectra.py` and `verify_background.py` suite.
+
+---
+
 ## Version 10.3.0 — Covariant Stability Analysis & CAMB Integration Defense (2026-06-15)
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
