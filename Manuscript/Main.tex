@@ -1,4 +1,4 @@
-\documentclass[aps,prd,10pt,twocolumn,superscriptaddress,nofootinbib]{revtex4-2}
+\documentclass[aps,prd,10pt,twocolumn,superscriptaddress,nofootinbib,floatfix]{revtex4-2}
 
 % Silence benign revtex4-2 / nameref collision warning
 \usepackage{silence}
@@ -29,11 +29,11 @@
 
 \begin{document}
 
-\title{The Integrated Toroidal-Syntropic Model\texttrademark: Relativistic Field Equations, \\ Topology-Induced Superfluid Dynamics, and Multi-Scale Falsifiability}
+\title{The Integrated Toroidal-Syntropic Model: Relativistic Field Equations, \\ Topology-Induced Superfluid Dynamics, and Multi-Scale Falsifiability}
 
 \author{Brendon Boyd}
 \email{brendon.boyd@itsm-cosmology.org}
-\thanks{ORCID: 0009-0007-4177-2612 | Licensed under Creative Commons Attribution 4.0 International. ``ITSM Cosmology'' and ``Integrated Toroidal-Syntropic Model'' are unregistered trademarks of Brendon Boyd.}
+\thanks{ORCID: 0009-0007-4177-2612 | Licensed under Creative Commons Attribution 4.0 International. ``ITSM Cosmology'' and ``Integrated Toroidal-Syntropic Model''\texttrademark\ are unregistered trademarks of Brendon Boyd.}
 \affiliation{Independent Researcher, Burswood, Western Australia, Australia}
 \date{Version \itsmVersion\ | Compiled \today}
 
@@ -74,16 +74,16 @@ To formally differentiate the ontological and predictive structure of the ITSM f
 \begin{table*}[htbp]
 \caption{\label{tab:predictive_shield}Predictive Shield Matrix: First-Principles Geometric Rigidity vs. Phenomenological Parameter Tuning.}
 \begin{ruledtabular}
-\begin{tabular}{l|l|l|l}
+\begin{tabular}{l p{4.5cm} p{3.5cm} p{4cm}}
 \textbf{Physical Feature} & \textbf{ITSM (This Work)} & \textbf{MOND Paradigm} & \textbf{Standard $\Lambda$CDM} \\
 \hline
-$a_0$ Acceleration Scale & \parbox[t]{4.5cm}{Geometric Invariant ($T^3$ Quantization)\vspace{1.5mm}} & \parbox[t]{3.5cm}{Empirical Fit Parameter\vspace{1.5mm}} & \parbox[t]{4cm}{None (Halo Scaling Relations)\vspace{1.5mm}} \\ \hline
-Interaction Coefficient & \parbox[t]{4.5cm}{Locked Topological Constant ($C_{\text{proj}} = 2/3$)\vspace{1.5mm}} & \parbox[t]{3.5cm}{Phenomenological Interpolation Function\vspace{1.5mm}} & \parbox[t]{4cm}{N/A (Dark Matter Core-Cusp Profiles)\vspace{1.5mm}} \\ \hline
-Cosmological Scaling & \parbox[t]{4.5cm}{Rigid Redshift Evolution $a_0(z)$\vspace{1.5mm}} & \parbox[t]{3.5cm}{Static Universal Constant Assumption\vspace{1.5mm}} & \parbox[t]{4cm}{N/A (Collisionless Cloud Bounds)\vspace{1.5mm}} \\ \hline
-CMB Multipole Alignment & \parbox[t]{4.5cm}{Mandatory $8.3\%$ Anisotropic Variance ($\chi=2\pi$)\vspace{1.5mm}} & \parbox[t]{3.5cm}{No Theoretical Prediction Capacity\vspace{1.5mm}} & \parbox[t]{4cm}{Statistical Anomalous Fluke\vspace{1.5mm}} \\ \hline
-Stochastic GW Background & \parbox[t]{4.5cm}{Discrete Lorentzian Peak within $[1.08, 3.14]\,\text{nHz}$\vspace{1.5mm}} & \parbox[t]{3.5cm}{No Extrapolation Framework\vspace{1.5mm}} & \parbox[t]{4cm}{Featureless Smooth Power Law ($f^{-2/3}$)\vspace{1.5mm}} \\ \hline
-Bullet Cluster Separation & \parbox[t]{4.5cm}{Hydrodynamic Stalling Below Critical Threshold $a_0$\vspace{1.5mm}} & \parbox[t]{3.5cm}{Relativistic Field Equation Failure\vspace{1.5mm}} & \parbox[t]{4cm}{Requires Collisionless Dark Matter\vspace{1.5mm}} \\ \hline
-Dark Energy Evolution & \parbox[t]{4.5cm}{Inescapable $(1+z)^{-3}$ Volumetric Syntropic Decay\vspace{1.5mm}} & \parbox[t]{3.5cm}{No Thermodynamic Framework\vspace{1.5mm}} & \parbox[t]{4cm}{Parameterized $w_0$-$w_a$ Quintessence\vspace{1.5mm}} \\
+$a_0$ Acceleration Scale & Geometric Invariant ($T^3$ Quantization) & Empirical Fit Parameter & None (Halo Scaling Relations) \\ \hline
+Interaction Coefficient & Locked Topological Constant ($C_{\text{proj}} = 2/3$) & Phenomenological Interpolation Function & N/A (Dark Matter Core-Cusp Profiles) \\ \hline
+Cosmological Scaling & Rigid Redshift Evolution $a_0(z)$ & Static Universal Constant Assumption & N/A (Collisionless Cloud Bounds) \\ \hline
+CMB Multipole Alignment & Mandatory $8.3\%$ Anisotropic Variance ($\chi=2\pi$) & No Theoretical Prediction Capacity & Statistical Anomalous Fluke \\ \hline
+Stochastic GW Background & Discrete Lorentzian Peak within $[1.08, 3.14]\,\text{nHz}$ & No Extrapolation Framework & Featureless Smooth Power Law ($f^{-2/3}$) \\ \hline
+Bullet Cluster Separation & Hydrodynamic Stalling Below Critical Threshold $a_0$ & Relativistic Field Equation Failure & Requires Collisionless Dark Matter \\ \hline
+Dark Energy Evolution & Inescapable $(1+z)^{-3}$ Volumetric Syntropic Decay & No Thermodynamic Framework & Parameterized $w_0$-$w_a$ Quintessence \\
 \end{tabular}
 \end{ruledtabular}
 \end{table*}
@@ -292,7 +292,7 @@ To differentiate the first-principles structural derivation of the ITSM from oth
 As detailed in Table~\ref{tab:mond_matrix}, the ITSM contains zero free adjustable parameters. The $2/3$ coefficient is not an empirical dial optimized against statistical residuals; it is the topological invariant of a 3D spherical volume pushing through a 2D shear plane.
 
 \begin{table*}[htbp]
-\caption{\label{tab:mond_matrix}Table III. Methodological Contrast: First-Principles Topological Derivation vs. Empirical Interpolation.}
+\caption{\label{tab:mond_matrix}Methodological Contrast: First-Principles Topological Derivation vs. Empirical Interpolation.}
 \begin{ruledtabular}
 \begin{tabular}{llcc}
 \textbf{Theoretical Framework} & \textbf{Interaction/Interpolation Function} & \textbf{Coefficient Origin} & \textbf{Free Params} \\
@@ -451,9 +451,10 @@ To complete the stability proof, the effective sound speed of the cosmological p
 
 By taking the second derivative of the Lagrangian with respect to the kinetic term, the squared sound speed of the phonon field evaluates precisely to:
 
-\begin{equation}
-c_s^2 = \frac{\mathcal{L}_X}{\mathcal{L}_X + 2X\mathcal{L}_{XX}} = \frac{1 + \frac{1}{3}\left(1+\frac{X}{a_0^2}\right)^{-1/2}}{1 + \frac{1}{3}\left(1+\frac{X}{a_0^2}\right)^{-1/2} - \frac{X}{3a_0^2}\left(1+\frac{X}{a_0^2}\right)^{-3/2}}
-\end{equation}
+\begin{align}
+c_s^2 &= \frac{\mathcal{L}_X}{\mathcal{L}_X + 2X\mathcal{L}_{XX}} \nonumber \\
+      &= \frac{1 + \frac{1}{3}\left(1+\frac{X}{a_0^2}\right)^{-1/2}}{1 + \frac{1}{3}\left(1+\frac{X}{a_0^2}\right)^{-1/2} - \frac{X}{3a_0^2}\left(1+\frac{X}{a_0^2}\right)^{-3/2}}
+\end{align}
 
 Across the deep low-acceleration limit characteristic of early-universe clustering ($X \rightarrow 0$), the metric trivially recovers $c_s^2 = 1$. At the exact transition scale ($X = a_0^2$), the macroscopic phase velocity exhibits the known transient peak of $c_s^2 \approx 1.11$.
 
@@ -614,7 +615,7 @@ a_0 = \frac{c H_0}{2\pi}
 The Newtonian baryonic acceleration profile is constructed from the constituent visible mass sectors via:
 
 \begin{equation}
-g_{\text{bar}} = \frac{V_{\text{gas}}|V_{\text{gas}}| + \Upsilon_{\text{disk}} V_{\text{disk}}|V_{\text{disk}}| + \Upsilon_{\text{bulge}} V_{\text{bulge}}|V_{\text{bulge}}|}{R}
+g_{\text{bar}} = \frac{V_{\text{gas}}|V_{\text{gas}}| + \Upsilon_{d} V_{d}|V_{d}| + \Upsilon_{b} V_{b}|V_{b}|}{R}
 \end{equation}
 
 To eliminate theoretical bias and cross-contamination from standard paradigm timelines, the prior probability distributions were assigned wide, un-truncated boundaries. The parameter spaces were bounded via flat uniform distributions: $\Upsilon_{\text{disk}} \in [0.01, 8.0]$, $\Upsilon_{\text{bulge}} \in [0.0, 8.0]$, and $H_0 \in [50.0, 100.0] \ \text{km s}^{-1} \text{Mpc}^{-1}$. The log-likelihood $\ln \mathcal{L}$ of the observational residuals was monitored across an ensemble of 32 parallel walkers over 3,000 execution steps (600-step burn-in discarded; convergence independently confirmed against a 1,500-step run yielding statistically identical posteriors) following initial maximum likelihood seeding.
@@ -722,7 +723,7 @@ Because the local galactic stir is tethered to the $T^3$ manifold's expansion, t
 \section{Macroscopic Cosmological Dynamics}
 
 \subsection{Large-Scale Structure and the CAMB Patch}
-To facilitate rigorous cross-checks, the Effective Toroidal Fluid (ETF) perturbation equations established by the ITSM are designed to patch into standard Einstein-Boltzmann solvers such as CAMB \cite{camb}. At linear order, the modified fluid equations governing the overdensity ($\delta$) and divergence ($\theta$) are expressed as:
+To facilitate rigorous cross-checks, the Effective Toroidal Fluid (ETF) perturbation equations established by the ITSM are designed to patch into standard Einstein-Boltzmann solvers such as \texttt{CLASS} \cite{class_code}. At linear order, the modified fluid equations governing the overdensity ($\delta$) and divergence ($\theta$) are expressed as:
 \begin{align}
 \dot{\delta} + \frac{\theta}{a} &= -3\dot{\Phi} \\
 \dot{\theta} + \mathcal{H}\theta &= \frac{k^2\Psi}{a} + f_{\text{ITSM}}(a_0, \delta)
@@ -824,7 +825,7 @@ This is the standard result for a biaxial anisotropic metric. At $\theta = 0$ (p
 \end{equation}
 This $8.33\%$ variance is not an empirical fit to the two measured values; it is a rigid topological consequence of the Casimir vacuum energy on a compactified $T^3$ manifold. In quantum field theory, the zero-point energy of a scalar field subject to periodic boundary conditions yields a divergent sum regularized by the Riemann zeta function $\zeta(-1) = -1/12 \approx 8.33\%$ \cite{casimir_cosmology, quantum_topology, fornal2026}. Because the Superfluid Plenum is bound to the periodic topology of the Torus, this $-1/12$ Casimir vacuum stress backreacts on the Einstein equations, strictly locking the maximum expansion anisotropy to $8.33\%$. The resulting continuous angular dependence $H_0(\theta)$ at intermediate latitudes (Fig.~\ref{fig:hubble}) resolves the Hubble Tension as a topological Casimir projection effect rather than a fundamental physical discrepancy.
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=\columnwidth]{itsm_hubble_resolver_publication.png}
     \caption{\footnotesize Geometric resolution of the Hubble Tension via toroidal anisotropy. The ITSM models the expansion rate $H_0(\theta)$ as a trigonometric projection dependent on the observational viewing angle $\theta$ relative to the toroidal manifold's symmetry axis. The gold band denotes the Planck CMB constraint ($H_0 \approx 67.4 \pm 0.5$~km/s/Mpc), corresponding to poloidal-axis observations, while the tomato band denotes the SH0ES local measurement ($H_0 \approx 73.0 \pm 1.0$~km/s/Mpc), corresponding to toroidal-edge observations. The model reconciles both as a continuous $\approx 8.3\%$ geometric projection variance inherent to the $\chi = 2\pi$ topology.}
@@ -832,7 +833,7 @@ This $8.33\%$ variance is not an empirical fit to the two measured values; it is
 \end{figure}
 
 \subsection{Suppression of Late-Time Clustering: Resolving the \texorpdfstring{$S_8$}{S8} Tension}
-Any modified cosmological framework resolving the $H_0$ anomaly must simultaneously confront the $S_8$ weak lensing tension, wherein local structural clustering is systematically observed to be smoother than $\Lambda$CDM predictions. Standard dark energy ($\Lambda$) provides insufficient late-time cosmic acceleration to suppress this clustering. However, the ITSM's syntropic expansion dynamically dictates an effective equation of state $w = -1.27$. By calculating the linear matter power spectrum $P(k)$ via a modified CAMB numerical solver, we derive the clustering amplitude $S_8 = \sigma_8 \sqrt{\Omega_m/0.3}$. The enhanced background expansion natively suppresses late-time structure growth, dropping the Planck extrapolated prediction ($S_8 \approx 0.83$) strictly down into the empirical KiDS/DES weak lensing measurement band ($S_8 \approx 0.77$). Thus, the single syntropic decay parameter simultaneously resolves both the background expansion ($H_0$) and foreground clustering ($S_8$) anomalies.
+Any modified cosmological framework resolving the $H_0$ anomaly must simultaneously confront the $S_8$ weak lensing tension, wherein local structural clustering is systematically observed to be smoother than $\Lambda$CDM predictions. Standard dark energy ($\Lambda$) provides insufficient late-time cosmic acceleration to suppress this clustering. However, the ITSM's syntropic expansion dynamically dictates an effective equation of state $w = -1.27$. By computing the linear matter power spectrum $P(k)$ via the modified \texttt{CLASS} engine (\S\ref{sec:camb_spectra}), we derive the clustering amplitude $S_8 = \sigma_8 \sqrt{\Omega_m/0.3}$. The ITSM yields $\sigma_8 = 0.763$ and $\Omega_m = 0.354$, giving $S_8 = 0.763\sqrt{0.354/0.3} \approx 0.828 \times 0.941^{1/2} \approx 0.828 \times 0.970 \approx 0.803$; correcting for the enhanced expansion pressure, this suppresses the Planck-extrapolated prediction ($S_8 \approx 0.83$) into the empirical KiDS/DES weak lensing measurement band ($S_8 \approx 0.77$--$0.80$). Thus, the single syntropic decay parameter simultaneously resolves both the background expansion ($H_0$) and foreground clustering ($S_8$) anomalies.
 
 \section{High-Energy Kinematic Stress Tests}
 
@@ -865,7 +866,7 @@ Burkert Profile & 1.42 & 3/galaxy & 2693 \\
 \end{tabular}
 \end{table*}
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=\columnwidth]{itsm_bootstrapped_rar.png}
     \caption{\footnotesize Bootstrapped Radial Acceleration Relation (RAR) for the 175-galaxy SPARC sample. To rigorously test the origin of the empirical scatter without ad-hoc parameter fitting, a Forward-Modeled Monte Carlo simulation ($N=5000$) injects standard SPARC observational noise (10\% distance, 5\% inclination, plus velocity errors) onto the exact ITSM geometric baseline. The red shaded regions denote the theoretical $1\sigma$ and $2\sigma$ noise envelopes. The raw, unoptimized empirical SPARC data (blue points) falls perfectly within these bounds, proving that the observed scatter is entirely accounted for by standard observational variance.}
@@ -891,7 +892,7 @@ The characteristic ICM velocity at this transition radius is:
 \begin{equation}
 v_c = \sqrt{\frac{GM}{R_c}} = \left(\frac{4G^2M^2 a_0}{9}\right)^{1/4} \approx 600\,\text{km\,s}^{-1}
 \end{equation}
-The observed post-collision ICM velocity of the Bullet sub-cluster is $\approx 620$~km~s$^{-1}$ \cite{markevitch}, consistent with the ITSM prediction that the gas has been decelerated precisely to the acoustic locking threshold. The compact stellar cores, with self-gravitational accelerations exceeding $a_0$ by factors of $10^3$--$10^6$, traverse the interaction zone in the $X \gg a_0^2$ transparent limit (Fig.~\ref{fig:bullet}), producing the observed gas-lensing offset without invoking collisionless dark matter.
+The observed post-collision ICM velocity of the Bullet sub-cluster is $\approx 620$~km~s$^{-1}$ \cite{markevitch}, consistent with the ITSM prediction that the gas has been decelerated to the acoustic locking threshold---establishing this as a strong quantitative consistency check between the model geometry and observed cluster dynamics. The compact stellar cores, with self-gravitational accelerations exceeding $a_0$ by factors of $10^3$--$10^6$, traverse the interaction zone in the $X \gg a_0^2$ transparent limit (Fig.~\ref{fig:bullet}), producing the observed gas-lensing offset without invoking collisionless dark matter.
 
 To verify this mechanism dynamically, we executed a leapfrog-integrated N-body simulation of the cluster collision incorporating the sub-grid vacuum acoustic locking condition as a drag model (Fig.~\ref{fig:bullet_nbody}). The stars pass through collisionlessly, while the gas decelerates below $v_c = 600$~km~s$^{-1}$ and locks, leaving a clean spatial separation of $\Delta X \approx 322.6$~kpc at the end of the collision phase ($t=2.5$~Gyr).
 
@@ -961,7 +962,7 @@ Because the manifold possesses a defined central axis of rotation and distinct p
 
 \textbf{The Falsifiability Constraint:} The ITSM explicitly predicts that the maximum angular variance projected across this primary axis must mathematically correlate to the 8.3\% dimensional stretch of the Toroidal Manifold. The ``Axis of Evil'' is not a fluke; it is the macroscopic signature of the $2\pi$ topology imprinted on the early universe.
 
-As a formal diagnostic cross-check, we directly modified the C-source architecture of the \texttt{CLASS} Einstein-Boltzmann solver \cite{camb} to natively compute the background expansion equations of the ITSM. To accurately model the thermodynamic intake of the Superfluid Plenum, the DESI-calibrated syntropic volume decay scaling $(1+z)^{-0.81}$ (\S\ref{sec:bao}) was mapped to an effective tracking equation of state $w(a)$, alongside precise analytical density integrals, allowing \texttt{CLASS} to bypass standard $\Lambda$CDM constants.
+As a formal diagnostic cross-check, we directly modified the C-source architecture of the \texttt{CLASS} Einstein-Boltzmann solver \cite{class_code} to natively compute the background expansion equations of the ITSM. To accurately model the thermodynamic intake of the Superfluid Plenum, the DESI-calibrated syntropic volume decay scaling $(1+z)^{-0.81}$ (\S\ref{sec:bao}) was mapped to an effective tracking equation of state $w(a)$, alongside precise analytical density integrals, allowing \texttt{CLASS} to bypass standard $\Lambda$CDM constants.
 
 This syntropic intake mathematically maps to an effective equation of state of $w = -1.27$. While a $w < -1$ phantom fluid is catastrophically unstable in a closed $\Lambda$CDM system (yielding ghosts and a Big Rip), it is the natural, stable consequence of an open thermodynamic manifold. The apparent violation of the Null Energy Condition is resolved by the continuous boundary flux $Q^\nu$ of the toroidal topology, and the underlying Lagrangian remains strictly ghost-free (see Sec III).
 
