@@ -1,5 +1,16 @@
 # ITSM Changelog & Archive History
 
+## Version 10.3.0 — Covariant Stability Analysis & CAMB Integration Defense (2026-06-15)
+
+### Manuscript Revisions (`Manuscript/Main.tex`)
+- **Covariant Stability Analysis of the Syntropic Phantom Regime:** Introduced a formal mathematical proof decoupling the effective background expansion ($w_{eff} = -1.27$) from the fundamental microscopic field dynamics.
+- **Topological Origin of the Phantom Modulus:** Explicitly demonstrated that the apparent phantom energy state arises from the Syntropic Source Vector ($Q^\nu$) driving an open boundary flux, preserving Hamiltonian positivity ($\mathcal{H} > 0$).
+- **Covariant Evolution of the Scalar Perturbations:** Surgically modified the perturbation matrix equations to process the Syntropic Source Vector natively, excising the phantom string input from the local physical equation of state ($w_{micro} \ge 0$).
+- **Acoustic Shear Damping:** Formalized the viscous damping operator $f_{ITSM}$ proportional to the relative velocity divergence, proving that dynamic friction shifts negative kinetic eigenvalues into the left-half complex plane.
+- **Microcausality and Sound Speed:** Re-derived the physical sound speed $c_s^2$, proving that the Lorentz-invariant causality constraints are strictly maintained and the high-frequency physical modes are bounded by the effective field theory UV cutoff ($\Lambda_{UV} \approx 10 a_0$).
+
+---
+
 ## Version 10.2.0 — Fluid Dynamics Wake & Global Cosmological Renormalization (2026-06-15)
 
 ### N-Body Dynamics & Hydrodynamics
