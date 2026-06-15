@@ -1,5 +1,54 @@
 # ITSM Changelog & Archive History
 
+## Version 10.5.0 — Tier 1 Peer Review Readiness (2026-06-15)
+
+### Phase 1 — Critical Fixes
+
+#### References (`Manuscript/references.bib`)
+- **Fixed fatal placeholder authors:** Replaced `{Author A}` and `{Author C}` with real authors:
+  - `quantum_topology`: Negro et al. 2026 (arXiv:2603.12319, corrected from wrong ID 2603.05608)
+  - `casimir_dark_energy`: Ichinose (2012), published in J. Phys.: Conf. Ser. 384, 012028
+- **Replaced CAMB citation with CLASS:** `camb` (Lewis et al. 2000) → `class_code` (Blas, Lesgourgues & Tram 2011, JCAP 07, 034, DOI: 10.1088/1475-7516/2011/07/034)
+- **Upgraded DESI to published reference:** arXiv preprint → JCAP 2025, 021, DOI: 10.1088/1475-7516/2025/02/021
+- **Added Weisberg & Taylor (2005):** Hulse-Taylor binary pulsar reference (`weisberg_taylor`)
+- Fixed BibTeX `missing number` warnings for JCAP entries (switched to `number` field)
+
+#### LaTeX Formatting (`Manuscript/Main.tex`)
+- **Removed ™ from title** — moved `\texttrademark` to `\thanks` footnote only
+- **Fixed Overfull \\hbox at line 456:** Split wide $c_s^2$ equation into two-line `align` environment
+- **Fixed Overfull \\hbox at line 618:** Shortened `\Upsilon_{\text{disk/bulge}}` subscripts to `\Upsilon_d`, `\Upsilon_b`
+- **Fixed stuck floats:** Added `floatfix` to `\documentclass` options; changed two single-column figures from `[htbp]` to `[tp]`
+- **Fixed Table I:** Replaced fragile `\parbox` column content with proper `p{}` column specifiers
+- **Fixed Table III caption:** Removed redundant manual "Table III." text (LaTeX auto-numbers)
+- **Updated all `\cite{camb}` → `\cite{class_code}`** across §7.4, §8.3, and §8.4
+- **Added `\label{sec:camb_spectra}`** to Matter Power Spectrum subsection
+- **Added `\label{sec:bic}`** to BIC subsection (resolves forward reference in §6.2)
+- **Reframed Bullet Cluster:** Changed language from "prediction" to "strong quantitative consistency check"
+- **Added explicit $S_8$ value:** §7.5 now states $\sigma_8 = 0.763$, $\Omega_m = 0.354$, $S_8 \approx 0.80$
+
+#### Repository (`/.gitignore`)
+- Added `ITSM_Computational_Engines_v10.0.0.zip`, `ORIGINAL_REQUEST.md`, `PROJECT.md`
+
+---
+
+### Phase 2 — Theoretical Strengthening
+
+#### Born-Infeld Uniqueness Proof (§3.2.1)
+- **Added 4th constraint (Analyticity at vacuum):** Explicitly eliminates the entire power-law family $f(X) \propto X^\alpha$ — non-integer $\alpha \in (0,1/2)$ are non-analytic at $X=0$; $\alpha = 1/2$ has degenerate Hamiltonian $\mathcal{H} = 0$. Together with the original 3 criteria, uniquely selects Born-Infeld
+- Softened language from "uniquely compelled" → "the minimal analytic solution consistent with all four constraints"
+
+#### Statistical Framing (§6.2 / Table V)
+- **Reframed $\chi^2_\nu = 8.57$** with proper statistical context: NFW/Burkert evaluated at optimum of ~525-dimensional parameter space; ITSM at fixed zero-parameter point
+- **Added "Evaluation Point" column** to Table V to make the comparison transparent
+- **Added per-galaxy context:** majority of galaxies achieve $\chi^2_\nu < 3$; global stat dominated by inclination/kinematic outliers
+- **Added BIC cross-reference** from §6.2 to §6.1
+
+#### Discussion: New Consistency Checks (§9)
+- **(iv) Hulse-Taylor Binary Pulsar:** Formal proof that at pulsar acceleration scale ($g \sim 10^4$ m/s²  ≫ $a_0$), ITSM coupling is decoupled at $\delta g/g \lesssim 10^{-7}$, preserving GR orbital decay to 1 part in $10^7$
+- **(v) Big Bang Nucleosynthesis (BBN):** Formal proof that syntropic decay correction is suppressed by $(1+z_\text{BBN})^{-0.81} \sim 10^{-7}$ at $z \sim 10^8$–$10^9$, preserving $Y_p \approx 0.247$
+
+---
+
 ## Version 10.4.0 — Formal QFT Renormalization & CLASS Engine Integration (2026-06-15)
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
