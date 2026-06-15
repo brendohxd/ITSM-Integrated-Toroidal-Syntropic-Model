@@ -1,6 +1,107 @@
 # ITSM Changelog & Archive History
 
+## Version 10.8.0 — Figure Standards: 600 dpi + Journal Style Audit (2026-06-15)
+
+### Figure Quality (`Scripts/`)
+
+#### Central Style Module (`Scripts/itsm_plot_style.py`)
+- **Added `JOURNAL_DPI = 600` constant** — importable by any script for consistent `savefig(dpi=600)`
+- **Added `figure.dpi = 600` and `savefig.dpi = 600`** to `apply_tier1_style()` rcParams — scripts calling the function inherit 600 dpi automatically without an explicit `savefig` argument
+- **Added `mathtext.fontset = "cm"`** — Computer Modern math font matching LaTeX output
+- **Added inward ticks** (`xtick.direction = "in"`, `ytick.direction = "in"`) and **minor ticks** — standard for PRD/JCAP/PRL
+- **Added white legend standard** (`legend.frameon`, `legend.framealpha=1.0`, `legend.edgecolor="black"`)
+- **Added `savefig.facecolor = "white"`** — prevents transparent-background saves
+
+#### DPI Upgrade (22 scripts — all figures used in manuscript)
+- Upgraded every `savefig()` call from matplotlib default (100 dpi) or sub-standard (200 dpi) to **600 dpi** across:
+  `itsm_3d_toroidal_manifold`, `itsm_bic_nfw_comparison`, `itsm_bootstrapped_rar`,
+  `itsm_btfr_validation`, `itsm_bullet_phasespace`, `itsm_causality_cones`,
+  `itsm_desi_bao`, `itsm_desi_bao_empirical_validator`, `itsm_desi_evolving_n`,
+  `itsm_drag_saturation`, `itsm_global_mcmc`, `itsm_h0_posterior_shape_diagnostic`,
+  `itsm_hubble_resolver`, `itsm_joint_cosmology_mcmc`, `itsm_mcmc_multicore`,
+  `itsm_n_redshift_evolution_diagnostic`, `itsm_nanograv_resonance`,
+  `itsm_ngc4217_dust_model`, `itsm_phonon_dispersion`, `itsm_running_coupling`,
+  `itsm_sparc_meta_analysis`, `itsm_thermodynamic_decoupling`, `itsm_z14_assembly`
+- **Fixed misplaced `dpi=600` arguments** that batch script had placed inside `os.path.join()` calls (3 scripts manually corrected: `itsm_3d_toroidal_manifold`, `itsm_bic_nfw_comparison`, `itsm_global_mcmc`)
+
+### Figure Style Standard (enforced going forward)
+| Property | Standard |
+|---|---|
+| Background | White (`#ffffff`) |
+| Axes / ticks | Black, `linewidth=1.0`, inward, minor ticks shown |
+| Font | Serif, `mathtext.fontset=cm` |
+| Colors | Print-safe — no neons, no dark-mode palettes |
+| Resolution | **600 dpi**, `bbox_inches="tight"` |
+| Legend | White fill, black border |
+
+### Commits
+- `adf8cf1` — 600 dpi upgrade across all 22 manuscript figure scripts
+- `fa49417` — Regenerate `itsm_running_coupling.png` to journal-standard white bg
+
+---
+
+## Version 10.7.0 — Tier 1 Peer Review: 6 Partial-Gap Resolutions + Running Coupling Figure (2026-06-15)
+
+### Peer Review Gap Closures (`Manuscript/Main.tex`, `Manuscript/references.bib`)
+
+#### PR-1 — Abstract Rewrite
+- **Full rewrite leading with the zero-parameter nature of the theory** — first sentence now states "zero free parameters" explicitly
+- **Casimir $H_0$ prediction foregrounded:** $H_t^{\rm pred} = 72.97$ km/s/Mpc ($0.07\sigma$ from SH0ES) stated in line 2
+- **$\chi^2_\nu = 8.57$, $p = 0.62$ MC result** from $N=5000$ forward-model realizations now in abstract
+- **Three falsifiable predictions explicitly enumerated** in abstract: NANOGrav resonance $[1.08, \pi]$ nHz, JWST CO/Na I suppression, Bullet Cluster ICM stall $\approx 600$ km/s
+- **$C_{\rm proj} = 2/3$ geometric derivation** (trace-ratio of 2D shear in 3D bulk) now in abstract
+
+#### PR-2 — Introduction Rewrite
+- **Replaced "entropy" opening** with three-tension framing: galactic rotation curves (SPARC 175 galaxies), JWST early massive galaxy crisis ($z > 14$), Hubble Tension ($5\sigma$)
+- **Explicit ITSM vs. ΛCDM vs. MOND contrast:** ΛCDM requires non-baryonic particle insertion; MOND treats $a_0$ as an empirical constant; ITSM derives both from $T^3$ topology with zero free parameters
+- **Added consolidated `\paragraph{Falsifiable Predictions}`** with all three quantified thresholds (NANOGrav nHz band, JWST spectral lines, Bullet ICM velocity)
+
+#### PR-3 — T³ Topology "Why T³?" Section
+- **Expanded §II.A `Topological Consistency`** from 2 sentences to a 4-point enumeration:
+  1. Planck 2018 flatness constraint $\Omega_k = 0.0007 \pm 0.0019$ demands compact flat manifold
+  2. $T^3$ is the simplest and unique compact flat 3-manifold consistent with observed isotropy
+  3. Geometric elimination of $S^3$ (positive curvature), hyperbolic (negative curvature), and $\mathbb{R}^3$ (non-compact) alternatives
+  4. Dynamic scale matching: $L_T = c/H_0$ produces $a_0 = cH_0/2\pi$ as a unique topological invariant
+
+#### PR-4 — Microcausality Boxed Note
+- **Upgraded dispersed §III.H paragraph to `\begin{quotation}` block** — visually separated from surrounding text
+- **Added explicit $v_g(k)$ formula** with $\forall k \le \Lambda_{\rm UV}$ qualifier
+- **Added dual citations** `\cite{babichev_cs2}` (k-essence) and `\cite{nicolis_galileon}` (Galileon gravity) — makes the analogy unambiguous
+- **Clarified phase vs. group velocity decoupling:** superluminal phase speed ≠ superluminal signal; phonon commutators vanish outside light cone for all EFT modes
+- **Fixed citation key:** corrected `babichev_kessence` (non-existent) → `babichev_cs2` (existing bib entry)
+
+#### PR-5 — n(z) DESI/Pantheon+ Tension Explanation
+- **Upgraded bold paragraph to `\paragraph{}`** with formal section status
+- **Added explicit DESI-vs-Pantheon+ physical interpretation:** each dataset probes a distinct thermodynamic epoch of the Superfluid Plenum; tension is a direct prediction of epoch-dependent $n(z)$ running, not an internal contradiction
+
+#### PR-6 — Missing Citations
+- **Added `famaey_mcgaugh`**: Famaey & McGaugh (2012), *Living Reviews in Relativity* 15, 10 — canonical MOND review (1000+ citations), flagged as missing by peer reviewer
+- **Added `hazboun_2020`**: Hazboun et al. (2020), *ApJL* 890, L40 — NANOGrav 11-yr PTA scalar polarization modes, directly relevant to §NANOGrav discussion
+
+### New Figure: Running Coupling RG Flow
+
+#### `Scripts/itsm_running_coupling.py` (new)
+- **Single-panel publication figure** of the Born-Infeld Renormalization Group flow $g(\mu) = g_0 + \Delta\Gamma(\mu)$ vs.\ kinematic scale $\mu/a_0$
+- **Shows:** UV tree-level baseline $g_0 = 2/3$ (dashed black), 1-loop correction corridor $\Delta\Gamma(\mu)$ (blue shading), IR fixed point $g^* = 1$ (dash-dot red), EFT cutoff $\Lambda_{\rm UV} = 10\,a_0$ (dotted grey)
+- **Annotates $\Delta\Gamma(0) = 1/3$ bracket** with double-headed arrow
+- **Journal-standard style:** white background, serif/CM fonts, 600 dpi, print-safe colors — no dark-mode elements
+
+#### `Assets/Figures/itsm_running_coupling.png` (new)
+- Injected into §III.B (`sec:nlo_vertex`) immediately after the $g^2(0) = (2/3 + 1/3)^2 = 1$ proof
+- **Standalone caption** explains dual proof: (i) Feynman-parametrized loop integral + (ii) Callan-Symanzik beta-function fixed-point condition — both yield $\Delta\Gamma(0) = 1/3$ exactly
+
+### Compilation
+- `pdflatex × 4` + `bibtex` — **32 pages, zero errors**, all new citations resolved
+
+### Commits
+- `fe31a1d` — 6 partial peer-review gap resolutions (abstract, intro, T³, microcausality, n(z), refs)
+- `160ec25` — Running coupling figure (initial, dark-mode — superseded)
+- `fa49417` — Running coupling figure regenerated to journal-standard white background
+
+---
+
 ## Version 10.6.0 — Tier 1 Peer Review: 5 Critical Issue Resolutions (2026-06-15)
+
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
 
