@@ -76,7 +76,7 @@ def plot_decoupling():
 
     # Output rendering
     fig_out_path = os.path.join(figures_dir, "itsm_thermodynamic_decoupling_publication.png")
-    plt.savefig(fig_out_path)
+    plt.savefig(fig_out_path, dpi=600)
     plt.close()
     
     print(f"ITSM SIMULATION COMPLETE: Thermodynamic Decoupling figure plotted at:\n -> {fig_out_path}")

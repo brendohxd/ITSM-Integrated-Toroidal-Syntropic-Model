@@ -194,6 +194,6 @@ if __name__ == '__main__':
     fig.suptitle("ITSM Global MCMC Corner Plot", fontsize=18, y=1.02)
     fig.text(0.6, 0.8, "ITSM Global Fit\nZero Free Parameters\n$T^3$ Topology", fontsize=12,
              bbox=dict(facecolor='white', alpha=0.8, edgecolor='gray', boxstyle='round,pad=0.5'))
-    plt.savefig(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_global_mcmc_corner.png"), bbox_inches='tight')
+    plt.savefig(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_global_mcmc_corner.png"), dpi=600, bbox_inches='tight')
 
     print("Optimization complete. Joint convergence posterior exported.")

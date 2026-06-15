@@ -85,5 +85,5 @@ plt.tight_layout()
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_hubble_resolver_publication.png"))
-plt.savefig(out_path)
+plt.savefig(out_path, dpi=600)
 print(f"Asset generated: {out_path}")

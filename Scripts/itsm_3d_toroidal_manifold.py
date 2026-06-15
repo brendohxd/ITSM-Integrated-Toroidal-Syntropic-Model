@@ -79,5 +79,5 @@ ax.zaxis.pane.set_edgecolor('black')
 
 out_dir = os.path.join(repo_root, "Assets", "Figures")
 os.makedirs(out_dir, exist_ok=True)
-plt.savefig(os.path.join(out_dir, "itsm_3d_toroidal_manifold.png"), bbox_inches='tight', facecolor='white')
+plt.savefig(os.path.join(out_dir, "itsm_3d_toroidal_manifold.png"), dpi=600, bbox_inches='tight', facecolor='white')
 print("3D Toroidal Manifold generated successfully. Graphic exported.")

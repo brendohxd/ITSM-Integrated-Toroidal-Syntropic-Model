@@ -118,5 +118,5 @@ plt.legend(loc='upper right')
 
 out_dir = os.path.join(repo_root, "Assets", "Figures")
 os.makedirs(out_dir, exist_ok=True)
-plt.savefig(os.path.join(out_dir, "itsm_bic_nfw_histogram.png"), bbox_inches='tight')
+plt.savefig(os.path.join(out_dir, "itsm_bic_nfw_histogram.png"), dpi=600, bbox_inches='tight')
 print(f"Exported to Assets/Figures/itsm_bic_nfw_histogram.png")

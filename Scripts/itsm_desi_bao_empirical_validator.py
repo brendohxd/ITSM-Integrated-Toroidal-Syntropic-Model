@@ -78,7 +78,7 @@ if os.path.exists(data_path) and os.path.exists(cov_path):
     plt.tight_layout()
 
     out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_desi_bao_empirical_validation.png"))
-    plt.savefig(out_path)
+    plt.savefig(out_path, dpi=600)
     print(f"Asset generated: {out_path}")
 else:
     print(f"CRITICAL ANOMALY: Data path unreachable: {data_path}")
