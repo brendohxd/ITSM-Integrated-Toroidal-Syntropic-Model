@@ -61,7 +61,7 @@ v_g  = np.where(valid,
 # ─────────────────────────────────────────────────────────────────────────────
 # FIGURE LAYOUT
 # ─────────────────────────────────────────────────────────────────────────────
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 10))
 fig.suptitle("ITSM Phonon Field: Causality Analysis", fontsize=15, fontweight="bold", y=1.01)
 
 # ── LEFT: sound speed ─────────────────────────────────────────────────────────

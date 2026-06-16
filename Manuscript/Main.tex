@@ -687,11 +687,11 @@ This behaviour is a direct, physically interpretable consequence of the ITSM's g
 
 Accordingly, the appropriate statistical framework for extracting a population-level $H_0$ from the ITSM is the joint global likelihood described in Sec.~\ref{sec:kinematics}, which simultaneously conditions on all 175 rotation curves and the DESI BAO distance measurements, thereby eliminating the kinematic--cosmological degeneracy that renders per-galaxy hierarchical inference ill-conditioned.
 
-\begin{figure}[htbp]
+\begin{figure*}[htbp]
     \centering
-    \includegraphics[width=\columnwidth]{itsm_h0_posterior_shape_diagnostic.png}
+    \includegraphics[width=\textwidth]{itsm_h0_posterior_shape_diagnostic.png}
     \caption{\label{fig:h0_shape_diagnostic} \footnotesize \textbf{Per-galaxy $H_0$ posterior morphology across the 175-galaxy SPARC sample.} Representative posterior distributions are shown in three tiers. \textit{Row~1 (tightly spiked):} High-surface-brightness galaxies whose chains collapse against the lower sampling boundary, producing boundary-truncated artefacts ($\sigma_{H_0} < 0.5\ \mathrm{km\,s^{-1}\,Mpc^{-1}}$) that do not constitute genuine $H_0$ measurements. \textit{Row~2 (skewed):} Intermediate systems exhibiting heavy-tailed, right-skewed posteriors inconsistent with the Gaussian population model assumed by importance-sampling hierarchical inference (Shapiro--Wilk $p = 0$ in all cases). \textit{Row~3 (flat):} Low-surface-brightness galaxies whose posteriors are near-uniform across the full prior range ($\sigma_{H_0} \gtrsim 14\ \mathrm{km\,s^{-1}\,Mpc^{-1}}$), confirming that individual rotation curve geometry does not independently constrain $H_0$. This morphological diversity demonstrates that hierarchical IS inference requires a joint global likelihood approach (Sec.~\ref{sec:kinematics}) rather than a decomposed per-galaxy estimator. Vertical dashed lines indicate the Planck~2018 ($67.4\ \mathrm{km\,s^{-1}\,Mpc^{-1}}$, gold) and SH0ES ($73.0\ \mathrm{km\,s^{-1}\,Mpc^{-1}}$, red) reference values.}
-\end{figure}
+\end{figure*}
 
 \subsection{The Mass-to-Light Distribution Paradigm Shift}
 
@@ -1159,12 +1159,13 @@ Researchers are encouraged to clone the repository and execute the simulations t
 
 Given the paradigm-shifting nature of the ITSM framework, we preemptively address seven anticipated theoretical and phenomenological criticisms in Table~\ref{tab:criticisms}.
 
-\begin{table*}[htbp]
+\begin{table}[htbp]
 \centering
 \caption{\footnotesize \textbf{Anticipated Criticisms and Theoretical Rebuttals.}}
 \label{tab:criticisms}
-\renewcommand{\arraystretch}{1.4}
-\begin{tabular}{p{0.25\textwidth} p{0.55\textwidth} p{0.15\textwidth}}
+\renewcommand{\arraystretch}{1.3}
+\scriptsize
+\begin{tabular}{p{0.28\columnwidth} p{0.53\columnwidth} p{0.11\columnwidth}}
 \toprule
 \textbf{Anticipated Criticism} & \textbf{ITSM Rebuttal} & \textbf{Supporting Evidence} \\
 \midrule
@@ -1177,10 +1178,11 @@ Given the paradigm-shifting nature of the ITSM framework, we preemptively addres
 \textit{``How is this different from SFDM?''} & Superfluid Dark Matter (SFDM) requires a particle dark matter component \cite{sf_dm} and empirical tuning of $a_0$. ITSM replaces dark matter entirely with a geometric superfluid vacuum, deriving $a_0$ and $C_{\text{proj}}$ from topology. & Table III, \S III.E.1 \\
 \bottomrule
 \end{tabular}
-\end{table*}
+\end{table}
 
 % Appendix table moved to a separate standalone Supplementary.tex document as requested.
 
+\clearpage
 \bibliographystyle{apsrev4-2}
 \bibliography{references}
 
