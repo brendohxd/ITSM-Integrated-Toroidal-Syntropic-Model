@@ -2,20 +2,17 @@
 Utility module for standardizing Matplotlib plot aesthetics across the ITSM repository.
 Enforces a consistent, publication-ready (Tier-1) style for all generated figures.
 
-Tier-1 journal DPI standard (PRD / JCAP / PRL / Nature):
-  - 600 dpi  : line art, plots, diagrams  ← applied here
-  - 1200 dpi : pure black-and-white line art (optional upgrade for final submission)
+DPI note: DPI is NOT set globally here. Scripts set dpi explicitly in savefig() only
+when needed (e.g., for final submission rendering). Development runs use matplotlib default.
 """
 import matplotlib.pyplot as plt
-
-# Central DPI constant — import this in any script that calls savefig
-JOURNAL_DPI = 600
 
 def apply_tier1_style():
     """
     Applies unified Tier-1 peer-review standard formatting to all matplotlib figures.
-    Ensures white backgrounds, standard serif LaTeX fonts, consistent sizing, and
-    600 dpi output for all saved figures.
+    Ensures white backgrounds, standard serif LaTeX fonts, and consistent sizing.
+    DPI is intentionally left at matplotlib default — set it explicitly in savefig()
+    only when preparing final submission-ready exports.
     """
     plt.rcParams.update({
         "text.usetex":          False,
@@ -51,6 +48,4 @@ def apply_tier1_style():
         "legend.frameon":       True,
         "legend.framealpha":    1.0,
         "legend.edgecolor":     "black",
-        "figure.dpi":           600,
-        "savefig.dpi":          600,
     })

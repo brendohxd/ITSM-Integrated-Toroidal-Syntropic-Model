@@ -227,7 +227,7 @@ def run_single_galaxy(args):
         fig_c.suptitle("SPARC Galaxy MCMC Rotation Curve Fit", fontsize=18, y=1.02)
         fig_c.text(0.6, 0.8, "Zero Free Global Parameters\nIndividual Halo Fits", fontsize=12,
                  bbox=dict(facecolor='white', alpha=0.8, edgecolor='gray', boxstyle='round,pad=0.5'))
-        fig_c.savefig(os.path.join(output_dir, f"{galaxy_name}_corner.png"), dpi=600)
+        fig_c.savefig(os.path.join(output_dir, f"{galaxy_name}_corner.png"))
 
         plt.close(fig_c)
 
@@ -269,7 +269,7 @@ def run_single_galaxy(args):
         ax2.set_ylim(-lim, lim)
 
         plt.tight_layout()
-        fig_r.savefig(os.path.join(output_dir, f"{galaxy_name}_rotation_curve.png"), dpi=600)
+        fig_r.savefig(os.path.join(output_dir, f"{galaxy_name}_rotation_curve.png"))
         plt.close(fig_r)
 
         # 3. Chain CSV

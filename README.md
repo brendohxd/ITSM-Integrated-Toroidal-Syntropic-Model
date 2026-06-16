@@ -179,6 +179,26 @@ Performs an empirical cross-check validation of the syntropic expansion curve ag
 Diagnostic script visualizing the redshift evolution of the syntropic decay index $n(z)$ to map vacuum dynamics.
 *Source: [itsm_n_redshift_evolution_diagnostic.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_n_redshift_evolution_diagnostic.py)*
 
+🔹 **Script 31: ITSM vs ΛCDM vs MOND Model Comparison Flowchart**
+Generates a 3-column structured academic flowchart answering 6 key cosmological questions to visually contrast explanatory power across paradigms.
+*Source: [itsm_model_comparison_flowchart.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_model_comparison_flowchart.py)*
+
+🔹 **Script 32: Mock JWST NIRSpec Spectrum ($z=14$)**
+Simulates a mock JWST spectrum comparing the ΛCDM baseline against the ITSM prediction, illustrating the 15% CO(3-2) flux suppression and Na I D equivalent-width reduction.
+*Source: [itsm_mock_jwst_spectrum.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_mock_jwst_spectrum.py)*
+
+🔹 **Script 33: NANOGrav Bayesian Evidence & GWB Strain**
+Produces a Bayesian evidence figure contrasting the GWB characteristic strain spectrum of a SMBHB power-law against the ITSM Lorentzian resonance.
+*Source: [itsm_nanograv_bayes.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_nanograv_bayes.py)*
+
+🔹 **Script 34: 2/3 Projection Factor Schematic**
+Constructs a visual topological schematic explaining the geometric derivation of the $C_{\rm proj}=2/3$ factor from a 3D bulk to a 2D shear plane.
+*Source: [itsm_schematic_23_factor.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_schematic_23_factor.py)*
+
+🔹 **Script 35: Hubble Tension Geometry Schematic**
+Renders a diagram detailing the geometric projection of the Hubble tension ($H_t = \frac{13}{12} H_s$) derived from Casimir anisotropy.
+*Source: [itsm_schematic_hubble.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_schematic_hubble.py)*
+
 ## 📂 Repository Structure
 | Directory | Content Description |
 |---|---|
@@ -214,8 +234,8 @@ To replicate the results locally:
    `conda env create -f environment.yml`
 3. **Activate the environment:**
    `conda activate itsm_env`
-4. **Run the Master Pipeline:**
-   Execute the centralized master script to sequentially run all 30 production scripts and regenerate the entire figure suite.
+4.   **Run the Master Pipeline:**
+   Execute the centralized master script to sequentially run all 35 production scripts and regenerate the entire figure suite.
    `python Scripts/run_all.py`
 
 ## 🖋️ Citation

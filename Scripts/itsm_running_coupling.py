@@ -130,5 +130,5 @@ plt.tight_layout()
 # ── Save ──────────────────────────────────────────────────────────────────────
 out = Path(__file__).parent.parent / "Assets" / "Figures" / "itsm_running_coupling.png"
 out.parent.mkdir(parents=True, exist_ok=True)
-fig.savefig(out, dpi=600, bbox_inches="tight")
+fig.savefig(out, bbox_inches="tight")
 print(f"Saved: {out}")

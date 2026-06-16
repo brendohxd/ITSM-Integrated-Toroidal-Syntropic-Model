@@ -1,5 +1,61 @@
 # ITSM Changelog & Archive History
 
+## Version 10.9.0 — New Figures, Cover Letter & Flowchart Polish (2026-06-15)
+
+### New Figures (`Scripts/` → `Assets/Figures/`)
+
+#### `Scripts/itsm_model_comparison_flowchart.py` (new)
+- **3-column structured comparison table** (ΛCDM | MOND | ITSM) answering 6 key cosmological
+  questions in a publication-quality academic layout
+- **Cells color-coded by explanatory power:** sage green = addresses/explains, steel blue = partially
+  addresses, rose = does not address, sky blue = ITSM zero-parameter prediction
+- **Header colors:** charcoal (Question), dark grey (ΛCDM), muted forest green (MOND), navy (ITSM)
+- **Title spacing fixed:** axes shifted to `[0.0, 0.06, 1.0, 0.86]` giving 13% clear top margin;
+  title placed at `y=0.985` with `va=top` — zero overlap with the header row
+- Saves to `Assets/Figures/itsm_model_comparison_flowchart.png` at 600 dpi
+
+#### `Scripts/itsm_mock_jwst_spectrum.py` (new)
+- **Mock JWST NIRSpec spectrum** at z=14 comparing ΛCDM baseline vs. ITSM prediction
+- Shows 15% CO(3-2) flux suppression and 20% Na I D equivalent-width reduction predicted by ITSM
+  bottom-light IMF / altered ISM thermodynamics at high redshift
+- Labeled explicitly as "(Illustrative Prediction)" — not a full SPS computation
+- Saves to `Assets/Figures/itsm_mock_jwst_spectrum.png` at 600 dpi
+
+#### `Scripts/itsm_nanograv_bayes.py` (new)
+- **Two-panel Bayesian evidence figure:** (A) GWB characteristic strain spectrum with SMBHB
+  power-law and ITSM Lorentzian resonance; (B) per-bin log Bayes factor bar chart
+- NANOGrav 15-yr approximate data points plotted with error bars
+- Shaded resonance window `[1.08, π]` nHz; Jeffreys scale reference lines at ln(B)=0,3,5
+- Saves to `Assets/Figures/itsm_nanograv_bayes.png` at 600 dpi
+
+### Submission Preparation
+
+#### `Manuscript/CoverLetter_JCAP.tex` (new)
+- Formal JCAP submission cover letter (LaTeX, compiles to PDF)
+- Highlights zero-parameter nature, five-domain validation, and three falsifiable predictions
+- Includes reproducibility statement (GitHub + Zenodo DOI), conflict of interest declaration,
+  and suggested reviewer expertise areas
+- Fully compliant with JCAP submission guidelines
+
+---
+
+## Version 10.9.1 — Final-Tier Peer Review Polish (2026-06-16)
+
+- **New Conceptual Schematics:** Added `itsm_23_factor_schematic.pdf` and `itsm_hubble_tension_schematic.pdf` directly into the manuscript to visually anchor the topological geometric invariants to the Hubble tension and $C_{\rm proj} = 2/3$ derivation.
+- **Anticipated Criticisms & Preemptive Rebuttals:** Added a comprehensive table in Section X directly addressing common cosmological criticisms.
+- **Phrasing Polish:** Refined text, replacing "inherent spin" with "topological circulation" for precise topological alignment.
+- **Manuscript Layout & Flow:** Cleaned up overlapping 2/3 factor schematics, restored vertical stack layout for the CLASS spectra, and reordered the "Anticipated Criticisms" float and concluding paragraphs so the logical sequence flows perfectly into the bibliography without interruption.
+
+### Flowchart Color & Layout Polish
+- **MOND header** changed from warm brown/ochre `#7a5c1e` → muted forest green `#5a6e4a`
+  (brown implied advantage; neutral green signals MOND answers some rotation-curve questions without
+  implying cosmological superiority)
+- **Cell backgrounds** slightly more saturated for clearer print distinction
+- **Title-overlap bug fixed:** figure height increased 8.8 → 9.0 inches; axes top boundary
+  reduced from 0.94 → 0.92; title `y` coordinate shifted 0.975 → 0.985 with `fontsize` 12.5 → 13.0
+
+---
+
 ## Version 10.8.0 — Figure Standards: 600 dpi + Journal Style Audit (2026-06-15)
 
 ### Figure Quality (`Scripts/`)

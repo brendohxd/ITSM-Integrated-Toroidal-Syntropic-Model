@@ -17,6 +17,17 @@ from itsm_plot_style import apply_tier1_style
 # Enforce Universal Academic Formatting
 apply_tier1_style()
 
+# JCAP override: massive fonts for readability when scaled down
+plt.rcParams.update({
+    'font.size': 18,
+    'axes.labelsize': 18,
+    'axes.titlesize': 20,
+    'xtick.labelsize': 16,
+    'ytick.labelsize': 16,
+    'legend.fontsize': 18,
+    'figure.titlesize': 24
+})
+
 # 1. Normalized Grid Setup (r / r_a0)
 x = np.linspace(-3.5, 7.5, 500)
 y = np.linspace(-4.5, 4.5, 500)
@@ -124,6 +135,11 @@ plt.tight_layout()
 fig.subplots_adjust(wspace=0.1)
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_3d_fluid_dynamics_publication.png"))
-plt.savefig(out_path, bbox_inches='tight')
-print(f"Asset generated: {out_path}")
+
+out_path_pdf = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_3d_fluid_dynamics_publication.pdf"))
+plt.savefig(out_path_pdf, bbox_inches='tight', format='pdf', dpi=300)
+print(f"Asset generated: {out_path_pdf}")
+
+out_path_png = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_3d_fluid_dynamics_publication.png"))
+plt.savefig(out_path_png, bbox_inches='tight', dpi=300)
+print(f"Asset generated: {out_path_png}")

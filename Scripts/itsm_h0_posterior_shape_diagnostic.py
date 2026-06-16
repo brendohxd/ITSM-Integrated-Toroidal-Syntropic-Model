@@ -78,7 +78,7 @@ for ax, g in zip(axes.flat, picks):
 axes[0, 0].legend(fontsize=7)
 plt.tight_layout()
 out_path = os.path.join(OUT, "itsm_h0_posterior_shape_diagnostic.png")
-plt.savefig(out_path, dpi=600)
+plt.savefig(out_path)
 plt.close()
 print(f"[PLOT] Saved: {out_path}")
 

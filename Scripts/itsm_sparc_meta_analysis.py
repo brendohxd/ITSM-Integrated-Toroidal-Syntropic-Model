@@ -167,7 +167,7 @@ def analyze_batch_data():
     figures_dir = os.path.join(assets_dir, "Figures")
     os.makedirs(figures_dir, exist_ok=True)
     fig_out_path = os.path.join(figures_dir, "ITSM_H0_Convergence_Histogram.png")
-    plt.savefig(fig_out_path, dpi=600, bbox_inches='tight')
+    plt.savefig(fig_out_path, bbox_inches='tight')
     plt.close()
     
     print(f"Publication-ready figure saved to: {fig_out_path}")

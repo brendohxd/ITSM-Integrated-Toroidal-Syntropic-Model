@@ -5,6 +5,13 @@ Protocol: Forward-Modeled Monte Carlo Error Propagation across 175 SPARC galaxie
 Description: Generates the 1-sigma and 2-sigma theoretical scatter envelopes 
 assuming the ITSM is perfectly true, perturbed by known SPARC observational noise.
 """
+"""
+Integrated Toroidal-Syntropic Model (ITSM) - Bootstrapped RAR Validation
+Author: Brendon Boyd
+Protocol: Forward-Modeled Monte Carlo Error Propagation across 175 SPARC galaxies
+Description: Generates the 1-sigma and 2-sigma theoretical scatter envelopes 
+assuming the ITSM is perfectly true, perturbed by known SPARC observational noise.
+"""
 
 import pandas as pd
 import numpy as np
@@ -13,6 +20,19 @@ import sys
 import os
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
+
+# JCAP override: massive fonts
+import matplotlib.pyplot as plt
+plt.rcParams.update({
+    'font.size': 18,
+    'axes.labelsize': 18,
+    'axes.titlesize': 20,
+    'xtick.labelsize': 16,
+    'ytick.labelsize': 16,
+    'legend.fontsize': 14,
+    'figure.titlesize': 24
+})
+
 import glob
 import os
 from tqdm import tqdm
@@ -143,8 +163,8 @@ for i in range(len(bin_centers)):
 plt.figure(figsize=(11, 8))
 g_min, g_max = 1e-12 * conv_factor, 1e-8 * conv_factor
 
-# Plot actual SPARC data
-plt.scatter(g_bar_raw, g_obs_raw, s=15, alpha=0.3, color='steelblue', edgecolors='none', label='SPARC Empirical Data (Unoptimized)')
+# Plot actual SPARC data (Darker Blue)
+plt.scatter(g_bar_raw, g_obs_raw, s=25, alpha=0.4, color='#1a4f76', edgecolors='none', label='SPARC Empirical Data (Unoptimized)')
 
 # Newtonian
 plt.plot(bin_centers, bin_centers, '--', color='gray', lw=2, label=r'Newtonian Expectation')
@@ -152,10 +172,15 @@ plt.plot(bin_centers, bin_centers, '--', color='gray', lw=2, label=r'Newtonian E
 # ITSM True Curve
 itsm_curve = bin_centers + (2/3) * np.sqrt(bin_centers * a0_sparc)
 
-# Plot Envelopes
-plt.fill_between(bin_centers, env_2sig_low, env_2sig_high, color='darkred', alpha=0.15, label=r'ITSM Forward Model ($2\sigma$ scatter)')
-plt.fill_between(bin_centers, env_1sig_low, env_1sig_high, color='darkred', alpha=0.35, label=r'ITSM Forward Model ($1\sigma$ scatter)')
-plt.plot(bin_centers, itsm_curve, '-', color='darkred', lw=3, label='ITSM Theoretical Base')
+# Plot Envelopes with Solid Lines (Darker Crimson)
+c_crimson = '#8b0000'
+plt.plot(bin_centers, env_2sig_high, '-', color=c_crimson, lw=1.0, alpha=0.7, label=r'ITSM Forward Model ($2\sigma$ scatter)')
+plt.plot(bin_centers, env_2sig_low, '-', color=c_crimson, lw=1.0, alpha=0.7)
+
+plt.plot(bin_centers, env_1sig_high, '-', color=c_crimson, lw=1.5, alpha=0.9, label=r'ITSM Forward Model ($1\sigma$ scatter)')
+plt.plot(bin_centers, env_1sig_low, '-', color=c_crimson, lw=1.5, alpha=0.9)
+
+plt.plot(bin_centers, itsm_curve, '-', color=c_crimson, lw=3.5, label='ITSM Theoretical Base')
 
 plt.axvline(a0_sparc, color='black', ls=':', alpha=0.6, lw=1.5)
 plt.annotate(r'$a_0$ Yield Boundary', xy=(a0_sparc, g_min*8), 
@@ -174,6 +199,8 @@ plt.grid(True, which='both', ls='-', alpha=0.3)
 
 plt.tight_layout()
 
-out_path = os.path.normpath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_bootstrapped_rar.png"))
-plt.savefig(out_path, dpi=600, bbox_inches='tight')
-print(f"Plot saved to: {out_path}")
+out_path_pdf = os.path.normpath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_bootstrapped_rar.pdf"))
+plt.savefig(out_path_pdf, bbox_inches='tight', format='pdf', dpi=300)
+out_path_png = os.path.normpath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_bootstrapped_rar.png"))
+plt.savefig(out_path_png, bbox_inches='tight', dpi=300)
+print(f"Plot saved to: {out_path_pdf} and PNG")

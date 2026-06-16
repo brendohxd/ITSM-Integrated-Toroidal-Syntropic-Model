@@ -72,7 +72,18 @@ for z_min, z_max in bins:
 
 # 3. Visualization
 plt.figure(figsize=(8, 5))
+
+# Convert to numpy arrays for element-wise operations
+z_arr = np.array(z_centers)
+n_arr = np.array(n_means)
+std_arr = np.array(n_stds)
+
+# 2-sigma and 1-sigma confidence bands
+plt.fill_between(z_arr, n_arr - 2*std_arr, n_arr + 2*std_arr, color='lightblue', alpha=0.3, label=r'$2\sigma$ Confidence')
+plt.fill_between(z_arr, n_arr - std_arr, n_arr + std_arr, color='royalblue', alpha=0.4, label=r'$1\sigma$ Confidence')
+
 plt.errorbar(z_centers, n_means, yerr=n_stds, fmt='-o', capsize=5, color='darkblue', label=r'ITSM Running Index $n(z)$')
+
 plt.xlabel(r'Redshift ($z$)')
 plt.ylabel(r'Syntropic Decay Index ($n$)')
 plt.title(r'ITSM: Redshift-Dependent Vacuum Evolution', fontsize=16, pad=15)
@@ -80,5 +91,5 @@ plt.grid(True, linestyle=':', alpha=0.6)
 plt.legend()
 
 out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_n_evolution.png"))
-plt.savefig(out_path, dpi=600)
+plt.savefig(out_path)
 print(f"Visualization generated: {out_path}")

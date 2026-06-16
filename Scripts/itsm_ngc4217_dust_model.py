@@ -213,7 +213,7 @@ def main():
 
     plt.tight_layout(rect=[0, 0, 1, 1])
     out_path = os.path.join(output_dir, "itsm_ngc4217_control_fit.png")
-    plt.savefig(out_path, dpi=600, bbox_inches="tight")
+    plt.savefig(out_path, bbox_inches="tight")
     plt.close()
 
     print(f"[ITSM] a0 = {a0:.6e} km^2/s^2/kpc")

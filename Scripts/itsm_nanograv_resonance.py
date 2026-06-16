@@ -56,6 +56,18 @@ import sys
 import os
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
+
+import matplotlib.pyplot as plt
+plt.rcParams.update({
+    'font.size': 18,
+    'axes.labelsize': 18,
+    'axes.titlesize': 20,
+    'xtick.labelsize': 16,
+    'ytick.labelsize': 16,
+    'legend.fontsize': 14,
+    'figure.titlesize': 24
+})
+
 import matplotlib.patches as mpatches
 from multiprocessing import Pool, cpu_count
 
@@ -285,17 +297,17 @@ if __name__ == "__main__":
     # We will need to manually append this to the legend handles later, or add it as a fake plot:
     ax1.plot([], [], color="#e67e22", alpha=0.6, lw=6, label=r"NANOGrav 15yr: HD-correlated free spectrum (KDE)")
 
-    # ITSM falsifiability window
+    # ITSM falsifiability window (Highly visible red band)
     ax1.axvspan(A0_BASE_NHZ, PI_HARMONIC_NHZ,
-                color="#27ae60", alpha=0.10, zorder=0)
-    ax1.axvline(A0_BASE_NHZ, color="#27ae60", ls=":", lw=1.5, alpha=0.8)
-    ax1.axvline(PI_HARMONIC_NHZ, color="#27ae60", ls=":", lw=1.5, alpha=0.8)
+                color="#e74c3c", alpha=0.20, zorder=1)
+    ax1.axvline(A0_BASE_NHZ, color="#e74c3c", ls="-", lw=2.5, alpha=0.9)
+    ax1.axvline(PI_HARMONIC_NHZ, color="#e74c3c", ls="-", lw=2.5, alpha=0.9)
     ax1.text((A0_BASE_NHZ + PI_HARMONIC_NHZ) / 2, 6e-16,
-             r"Geometric window" + "\n" +
+             r"Strict Falsifiability Window" + "\n" +
              r"$[a_0,\,\pi]$ nHz",
-             ha="center", va="bottom", fontsize=10, color="#1e8449",
-             bbox=dict(facecolor="white", edgecolor="#27ae60",
-                       alpha=0.85, boxstyle="round,pad=0.3"))
+             ha="center", va="bottom", fontsize=12, color="#900C3F", fontweight='bold',
+             bbox=dict(facecolor="white", edgecolor="#e74c3c",
+                       alpha=0.95, boxstyle="round,pad=0.3"))
 
     ax1.set_xscale("log")
     ax1.set_yscale("log")
@@ -324,11 +336,11 @@ if __name__ == "__main__":
              label=r"ITSM Lorentzian resonance $\Delta h_c$")
     ax2.axhline(0, color="#c0392b", ls="--", lw=1.8)
 
-    # Falsifiability window
+    # Falsifiability window (Red)
     ax2.axvspan(A0_BASE_NHZ, PI_HARMONIC_NHZ,
-                color="#27ae60", alpha=0.10, zorder=0)
-    ax2.axvline(A0_BASE_NHZ, color="#27ae60", ls=":", lw=1.5, alpha=0.8)
-    ax2.axvline(PI_HARMONIC_NHZ, color="#27ae60", ls=":", lw=1.5, alpha=0.8)
+                color="#e74c3c", alpha=0.20, zorder=1)
+    ax2.axvline(A0_BASE_NHZ, color="#e74c3c", ls="-", lw=2.5, alpha=0.9)
+    ax2.axvline(PI_HARMONIC_NHZ, color="#e74c3c", ls="-", lw=2.5, alpha=0.9)
 
     ax2.set_xscale("log")
     ax2.set_yscale("log")
@@ -349,11 +361,13 @@ if __name__ == "__main__":
 
     plt.tight_layout(rect=[0, 0.025, 1, 1])
 
-    out_path = os.path.join(output_dir, "itsm_nanograv_resonance_publication.png")
-    plt.savefig(out_path, dpi=600, bbox_inches="tight")
+    out_path_pdf = os.path.join(output_dir, "itsm_nanograv_resonance_publication.pdf")
+    plt.savefig(out_path_pdf, bbox_inches="tight", format="pdf", dpi=300)
+    out_path_png = os.path.join(output_dir, "itsm_nanograv_resonance_publication.png")
+    plt.savefig(out_path_png, bbox_inches="tight", dpi=300)
     plt.close()
 
-    print(f" Figure saved: {out_path}")
+    print(f" Figure saved: {out_path_pdf}")
     print()
     print(" Key parameters:")
     print(f"   NANOGrav A_GWB     = {A_GWB_15YR:.1e}  [Agazie et al. 2023]")

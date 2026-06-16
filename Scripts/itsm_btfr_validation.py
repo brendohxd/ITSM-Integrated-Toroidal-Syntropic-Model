@@ -58,6 +58,18 @@ import sys
 import os
 from itsm_plot_style import apply_tier1_style
 apply_tier1_style()
+
+# JCAP override: massive fonts
+plt.rcParams.update({
+    'font.size': 18,
+    'axes.labelsize': 18,
+    'axes.titlesize': 20,
+    'xtick.labelsize': 16,
+    'ytick.labelsize': 16,
+    'legend.fontsize': 14,
+    'figure.titlesize': 24
+})
+
 from multiprocessing import Pool, cpu_count
 
 
@@ -299,7 +311,7 @@ if __name__ == "__main__":
     colors = [c_mcmc if s == 'mcmc' else c_default for s in ml_source]
 
     # ── Panel A: BTFR scatter ────────────────────────────────────────
-    ax1.scatter(M_b_arr, V_flat_arr, c=colors, s=18, alpha=0.65,
+    ax1.scatter(M_b_arr, V_flat_arr, c=colors, s=60, alpha=0.85,
                 zorder=3, label='_nolegend_')
 
     # ITSM prediction curves
@@ -435,10 +447,12 @@ if __name__ == "__main__":
              fontsize=14, fontweight='bold', va='top', ha='left')
 
     plt.tight_layout()
-    fig_path = os.path.join(figures_dir, "itsm_btfr_publication.png")
-    plt.savefig(fig_path, dpi=600, bbox_inches='tight')
+    fig_path_pdf = os.path.join(figures_dir, "itsm_btfr_publication.pdf")
+    plt.savefig(fig_path_pdf, bbox_inches='tight', format='pdf', dpi=300)
+    fig_path_png = os.path.join(figures_dir, "itsm_btfr_publication.png")
+    plt.savefig(fig_path_png, bbox_inches='tight', dpi=300)
     plt.close()
-    print(f" Figure saved : {fig_path}")
+    print(f" Figure saved : {fig_path_pdf}")
 
     print()
     print("=" * 66)
