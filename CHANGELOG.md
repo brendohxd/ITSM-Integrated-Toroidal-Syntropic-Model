@@ -1,5 +1,27 @@
 # ITSM Changelog & Archive History
 
+## Version 11.0.0 — The T³ Catalyst & Theoretical Architecture Framework (2026-06-20)
+
+### Public Physics Formalization
+- **T³ Illusion Catalyst (`papers/T3-Illusion/`):** Finalized the topological resolution of celestial anomalies into a standalone, Zenodo-ready manuscript. Injected the reserved Zenodo DOI.
+- **ITSM Main Manuscript Zenodo Update:** Triggered the 'New Version' pipeline for the primary ITSM framework, decoupling the Python computational engines from the academic PDF to ensure peer-review purity.
+
+### Theoretical Extrapolations & Security
+- **Metric Engineering Context:** Established the theoretical framework for advanced cosmological engineering (e.g., localized manipulation of the $a_0$ boundary, theoretical planetary defense protocols, and thermodynamic terraforming principles) as a strict philosophical extension of the Toroidal Manifold math.
+- **Data Security Doctrine:** Introduced AES-encrypted local storage (`ark_vault.py`) to manage sensitive endgame materials, ensuring that all precise mathematical limits, material specifications, and frequencies regarding these applications remain fully redacted from public GitHub repositories. 
+
+---
+
+## Version 10.9.1 — 3D Acoustic Wake Plots & Repository Recovery (2026-06-20)
+
+### New Figures (`Assets/Figures/`)
+- **`itsm_3d_wake_analogy.png`**: Generated new 3D visual plotting the topological shear stress of the Superfluid Plenum acting on local galactic metrics.
+- **`itsm_bullet_cluster_nbody.png`**: Re-rendered 3D N-body collision dynamics to validate the dark-matter offset observed in the Bullet Cluster without requiring particle dark matter.
+
+### System Stability
+- **Repository Rescue Operation:** Executed an emergency local `git reset --hard` to rollback a rogue AI's destructive file system wipe. Recovered the encrypted vault scripts and the missing 3D plots from ghost commits (`38e7ad5`), transitioning to a non-destructive version-history mindset for local operations.
+
+---
 ## Version 10.9.0 — New Figures, Cover Letter & Flowchart Polish (2026-06-15)
 
 ### New Figures (`Scripts/` → `Assets/Figures/`)
