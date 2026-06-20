@@ -1,5 +1,14 @@
 # ITSM Changelog & Archive History
 
+## Version 11.0.1 — Repository Polish & Citation Audit (2026-06-21)
+
+### Public Physics Formalization
+- **Citation Integrity:** Audited `references.bib` to correct the citation tag mapping for the primary `itsm_main` manuscript, ensuring clean BibTeX compilation without warning artifacts.
+- **Repository Hygiene:** Executed a comprehensive repository polish, purging temporary cache scripts, staging assets, and legacy logs to ensure the public `main` branch maintains Tier-1 peer-review cleanliness.
+- **Data Silo Doctrine:** Enforced strict structural separation between the public mathematical physics repository and local architectural testing environments.
+
+---
+
 ## Version 11.0.0 — The T³ Catalyst & Theoretical Architecture Framework (2026-06-20)
 
 ### Public Physics Formalization
