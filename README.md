@@ -43,8 +43,6 @@ The framework culminates in strict, falsifiable predictions, including **Localiz
 
 * 📡 **NANOGrav Lorentzian Resonance Validation:** Proves that the vacuum's toroidal topology dictates a highly specific Lorentzian acoustic resonance in the stochastic Gravitational Wave Background (bounded exactly between $1.08$ and $3.14$ nHz). This provides a strict, zero-parameter falsifiability test that isolates the ITSM from the featureless power-law decay of standard $\Lambda$CDM.
 
-* 🔍 **Topologically Lensed "Matched Circles" in the CMB:** Resolves the decade-long failure of orthodox cosmology to detect $T^3$ toroidal "matched circles" in the Cosmic Microwave Background. The ITSM proves that the inherent $1/12$ Casimir anisotropy and the local acoustic metric wake distort geodesic pathways, predicting that the intersecting topological boundaries are not perfectly round, but systematically sheared—providing a novel, mathematically rigorous mandate for re-analyzing the Planck satellite data.
-
 ## 🚀 Key Mathematical Foundations
 1. **The Yield Threshold ($a_0$)**
 Derived strictly from macroscopic circulation quantization, establishing the limit where baryonic mass couples to the vacuum's inherent spin ($a_0 = c H_0 / 2\pi$).
