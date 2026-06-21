@@ -202,7 +202,11 @@ Renders a diagram detailing the geometric projection of the Hubble tension ($H_t
 ## 📂 Repository Structure
 | Directory | Content Description |
 |---|---|
-| 📄 `Manuscript/` | Complete, publication-ready LaTeX Manuscript (`Main.tex`), automated BibTeX citations (`references.bib`), and the compiled `Main.pdf`. |
+| 📄 `Manuscript/` | The core foundational ITSM cosmological physics framework (`Main.tex`), mathematical field equations, and compiled baseline manuscript. |
+| 📄 `papers/Al-Jabr-Reunification/` | The theoretical bridge manuscript explicitly merging the $T^3$ physics with the Functional-Nominal theological matrices. |
+| 📄 `papers/T3-Illusion/` | Specific public-bridge paper resolving flat-horizon anomalies using $T^3$ topological lensing. |
+| 📄 `papers/Syntropic-Thermodynamics/` | Standalone manuscript proving the failure of the 2nd Law of Thermodynamics and the Tokamak engineering divergence. |
+| 📜 `THEOLOGICAL_SYNTHESIS.md` | The massive 134KB+ master compilation of all historical and anomalous research (Dogon, Antikythera, etc.). |
 | 🔬 `Scripts/` | Executable Python engines for all kinematic and assembly simulations, including the API export pipeline and the `run_all.py` master execution script. |
 | 🔭 `SPARC_data/` | The full 175 empirical galaxy `.dat` files required for the global RAR and MCMC benchmark. |
 | 🌌 `DESI_data/` & `NANOGrav_data/` | Raw telemetry and covariance matrices for Cosmic Microwave Background, BAO, and Pulsar Timing Array constraints. |

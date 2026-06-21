@@ -1,5 +1,18 @@
 # ITSM Changelog & Archive History
 
+## Version 11.1.0 — Theoretical Synthesis & Thermodynamic Formalization (2026-06-21)
+
+### Public Physics Formalization
+- **Syntropic Thermodynamics (`papers/Syntropic-Thermodynamics/`):** Formalized the failure of the 2nd Law of Thermodynamics within a $T^3$ manifold. Defined the Syntropic Source Vector and the resulting engineering divergence between Entropic Tokamak confinement and Syntropic TRC resonance. Fully formatted to APS PRD (`revtex4-2`) standards.
+- **Architectural Split:** Restored `T3-Illusion` to its purely geometric focus (topological lensing) to ensure target audience clarity. Re-mapped the `papers/` directory structure.
+
+### Theological Extrapolations & Historical Synthesis
+- **Anachronistic Synthesis:** Integrated four major historical anomalies (Dogon/Sirius B, Piri Reis Map, Antikythera Mechanism, CIA Project Stargate) into the master `THEOLOGICAL_SYNTHESIS.md` document (now 134KB+).
+- **Forensic Textual Criticism:** Conducted extensive deep-dive searches and comparative linguistic analyses between the Book of Enoch, Sumerian texts (Enuma Elish, Epic of Gilgamesh), and Vedic texts (Mahabharata, Vaimanika Shastra).
+- **Functional-Nominal Matrix Translation:** Executed cross-cultural mapping searches to bridge disparate mythologies, unifying distinct sigla and terminologies under the ITSM framework.
+
+---
+
 ## Version 11.0.1 — Repository Polish & Citation Audit (2026-06-21)
 
 ### Public Physics Formalization
