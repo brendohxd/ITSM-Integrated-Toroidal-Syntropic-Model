@@ -1,6 +1,25 @@
 # ITSM Changelog & Archive History
 
+## Version 11.1.1 — Citation Integrity, Archive Sweep & Zenodo Publication (2026-06-21)
+
+### Public Physics Papers
+- **Citation Overhaul:** Conducted full citation audit across all four short papers, implementing canonical physics references:
+  - `ITSM_Syntropic_Thermodynamics_v0.5.0.tex`: Added ITER Physics Basis (Nuclear Fusion, 1999) as institutional Tokamak citation.
+  - `ITSM_T3_Illusion_v0.5.0.tex`: Added Planck 2018 (A&A, doi:10.1051/0004-6361/201833910) for $\Omega_k \approx 0$ flatness, ITER Physics Basis for tokamak geometry, SPARC database (Lelli et al. 2016, doi:10.3847/0004-6256/152/6/157) for rotation curves, and Casimir 1948 for the toroidal vacuum energy prediction.
+  - Fixed broken `[?]` natbib reference in T3-Illusion by migrating to inline `thebibliography` block.
+- **OPSEC Verification:** Full scan of all `.tex` files confirmed zero active engineering blueprints, hardware specs, or restricted TRC antenna parameters in the public release. TRC references remain at the safe "pyramid" level of abstraction.
+
+### The Anachronistic Archive
+- **Encoding Sweep (`ITSM_Anachronistic_Archive_v0.1.0.tex`):** Automated Python pass to scrub all UTF-8 mojibake artifacts (e.g., `DÃ©` → `D\'e`, `â€"` → `---`, inverted question marks) produced during the Markdown-to-LaTeX conversion pipeline. Recompiled to 70-page, clean PDF.
+
+### Zenodo Submission
+- **Primary ITSM Deposition Updated (DOI: `10.5281/zenodo.20774996`):** Replaced the v11.0.0 PDF with `ITSM_Core_Cosmology_v11.1.1.pdf` on the existing ITSM Zenodo deposition, preserving version continuity and DOI lineage. Full HTML-structured metadata (title, ORCID, keywords, GitHub repo link, CC-BY-4.0 license) aligned to the existing publication record.
+- **Accidental Separate Deposition (20786586) deleted** to maintain a single canonical publication chain.
+
+---
+
 ## Version 11.1.0 — Theoretical Synthesis & Thermodynamic Formalization (2026-06-21)
+
 
 ### Public Physics Formalization
 - **Syntropic Thermodynamics (`papers/Syntropic-Thermodynamics/`):** Formalized the failure of the 2nd Law of Thermodynamics within a $T^3$ manifold. Defined the Syntropic Source Vector and the resulting engineering divergence between Entropic Tokamak confinement and Syntropic TRC resonance. Fully formatted to APS PRD (`revtex4-2`) standards.
