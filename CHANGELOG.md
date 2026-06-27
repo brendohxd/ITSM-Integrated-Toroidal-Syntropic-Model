@@ -20,6 +20,9 @@
 - **NANOGrav Figure Verification (FIX-18):** Verified that the NANOGrav stochastic GWB simulation (`itsm_nanograv_resonance.py`) formally utilizes the physically-derived Lorentzian resonance profile rather than a standard Gaussian.
 - **Trademark Formatting (FIX-27):** Stripped unregistered trademark symbols (™) from the title/abstract footer as they violate journal formatting standards.
 
+### Repository Restructuring
+- **Complementary Papers Architecture:** Formally integrated three complementary theoretical bridge papers into the `papers/` directory structure (`Syntropic-Thermodynamics`, `T3-Illusion`, and `Al-Jabr-Reunification`) and documented them in the primary README.
+
 ## Version 11.1.1 — Citation Integrity, Archive Sweep & Zenodo Publication (2026-06-21)
 
 ### Public Physics Papers
