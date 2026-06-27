@@ -1,5 +1,10 @@
 # ITSM Changelog & Archive History
 
+## Version 11.1.3 — Pre-Submission Peer-Review Defenses (2026-06-27)
+- **Scalar GW Modes Clarification:** Added explicit mathematical defense noting that scalar GW modes are detected as effective path-length modulations via fluid density fluctuations, preserving the pristine rank-2 tensor nature of General Relativity.
+- **Phantom Ghost Stability:** Added rigorous thermodynamic defense explicitly stating that the phantom state ($w=-1.27$) is a macroscopic tracking artifact of an open thermodynamic circuit, preserving a strictly positive-definite Hamiltonian ($\mathcal{H} > 0$) for the scalar field.
+- **Isotropic Trace Ratio:** Clarified that the $C_{\rm proj} = 2/3$ geometric trace invariant holds strictly regardless of galactic disk inclination, as the $T^3$ manifold is formally isotropic at local galactic scales (with anisotropy manifesting exclusively as a Hubble-scale phenomenon).
+
 ## Version 11.1.2 — Peer-Review Cosmology Polish (2026-06-27)
 
 ### Tier 1 — Core Physics Justification & Formalism
