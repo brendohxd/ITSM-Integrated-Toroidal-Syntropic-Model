@@ -25,31 +25,55 @@ from multiprocessing import Pool
 # Constants
 c = 299792.458  # Speed of light in km/s
 
-def H_itsm(z, H0, Om, n):
-    """ITSM Syntropic Decay Expansion History"""
-    # Protect against negative radicands in MCMC exploration
-    radicand = Om * (1 + z)**3 + (1 - Om) * (1 + z)**(-n)
-    if radicand <= 0:
-        return np.inf
-    return H0 * np.sqrt(radicand)
+def itsm_ode(y, z, H0, n):
+    Om_m, Om_p, Dc = y
+    E2 = Om_m + Om_p
+    if E2 <= 1e-10:
+        E = 1e-5
+    else:
+        E = np.sqrt(E2)
+        
+    H = H0 * E
+    
+    # Q couples matter and plenum: dt/dz = -1/(H(1+z))
+    # dOmdz = 3*Om_m/(1+z) + Q_term
+    # dOpdz = -Q_term
+    Q_term = n * (1 + z)**(-3) / (E * (1 + z))
+    
+    dOmdz = 3 * Om_m / (1 + z) + Q_term
+    dOpdz = -Q_term
+    dDcdz = c / H
+    
+    return [dOmdz, dOpdz, dDcdz]
 
-def dL_integrand(z, H0, Om, n):
-    return c / H_itsm(z, H0, Om, n)
-
-def mu_itsm(z_array, H0, Om, n):
-    """Calculate theoretical distance modulus for an array of redshifts"""
-    mu_theory = np.zeros_like(z_array)
-    for i, z in enumerate(z_array):
-        # Comoving distance
-        Dc, _ = integrate.quad(dL_integrand, 0, z, args=(H0, Om, n), epsrel=1e-4)
-        # Luminosity distance
-        dL = (1 + z) * Dc
-        mu_theory[i] = 5 * np.log10(dL) + 25
+def mu_itsm(z_array, H0, Om0, n):
+    """Calculate theoretical distance modulus via coupled ODEs"""
+    z_sort_idx = np.argsort(z_array)
+    z_sorted = z_array[z_sort_idx]
+    
+    if z_sorted[0] != 0:
+        z_int = np.concatenate(([0.0], z_sorted))
+        slice_idx = slice(1, None)
+    else:
+        z_int = z_sorted
+        slice_idx = slice(None)
+        
+    Op0 = 1.0 - Om0
+    y0 = [Om0, Op0, 0.0]
+    
+    sol = integrate.odeint(itsm_ode, y0, z_int, args=(H0, n))
+    Dc_sorted = sol[slice_idx, 2]
+    
+    Dc = np.zeros_like(Dc_sorted)
+    Dc[z_sort_idx] = Dc_sorted
+    
+    dL = (1 + z_array) * Dc
+    mu_theory = 5 * np.log10(dL) + 25
     return mu_theory
 
 def log_prior(theta):
-    H0, Om, n = theta
-    if 60.0 < H0 < 80.0 and 0.1 < Om < 0.5 and 0.0 < n < 6.0:
+    H0, n = theta
+    if 60.0 < H0 < 80.0 and 0.0 < n < 6.0:
         return 0.0
     return -np.inf
 
@@ -65,7 +89,10 @@ def init_worker(zHD, mu_obs, cov_inv):
     _cov_inv = cov_inv
 
 def log_likelihood(theta):
-    H0, Om, n = theta
+    H0, n = theta
+    # ITSM: Om is purely baryonic, no dark matter
+    h = H0 / 100.0
+    Om = 0.02237 / (h**2)
     try:
         mu_th = mu_itsm(_zHD, H0, Om, n)
     except:
@@ -119,13 +146,13 @@ if __name__ == "__main__":
     print("Inversion complete.")
     
     # MCMC Setup
-    ndim = 3
+    ndim = 2
     nwalkers = 32
     nsteps = 3000  # Increased for proper convergence and sampling
     
     # Initial guess around SPARC/ITSM predictions
-    # H0 ~ 72, Om ~ 0.3, n ~ 3.0
-    initial_guess = [72.0, 0.3, 3.0]
+    # H0 ~ 72, n ~ 3.0
+    initial_guess = [72.0, 3.0]
     pos = initial_guess + 1e-4 * np.random.randn(nwalkers, ndim)
     
     print(f"Starting Multicore MCMC ({nwalkers} walkers, {nsteps} steps)...")
@@ -141,12 +168,12 @@ if __name__ == "__main__":
     
     # Analyze chains
     flat_samples = sampler.get_chain(discard=500, thin=15, flat=True)
-    H0_m, Om_m, n_m = np.median(flat_samples, axis=0)
+    H0_m, n_m = np.median(flat_samples, axis=0)
 
     print("\n--- CONVERGENCE DIAGNOSTICS ---")
     try:
         tau = sampler.get_autocorr_time(quiet=True)
-        print(f"Integrated autocorrelation times: H0={tau[0]:.1f}, Om={tau[1]:.1f}, n={tau[2]:.1f}")
+        print(f"Integrated autocorrelation times: H0={tau[0]:.1f}, n={tau[1]:.1f}")
         print(f"Effective samples: {len(flat_samples)}")
         if np.any(tau > (nsteps - 500) / 50):
             print("[WARNING] Chain may not be fully converged. Consider increasing n_steps.")
@@ -158,15 +185,14 @@ if __name__ == "__main__":
     
     print("\n--- ITSM PANTHEON+ POSTERIOR MEDIANS ---")
     print(f"H0: {H0_m:.2f} km/s/Mpc")
-    print(f"Om: {Om_m:.3f}")
     print(f"n : {n_m:.3f}")
     print("----------------------------------------")
     
     try:
         import corner
         fig = corner.corner(
-            flat_samples, labels=[r"$H_0$", r"$\Omega_m$", r"$n$"],
-            truths=[None, None, 3.0],
+            flat_samples, labels=[r"$H_0$", r"$n$"],
+            truths=[None, 3.0],
             quantiles=[0.16, 0.5, 0.84],
             show_titles=True, title_kwargs={"fontsize": 12}
         )

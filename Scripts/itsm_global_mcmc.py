@@ -85,18 +85,64 @@ def sparc_log_likelihood(H0):
         
     return total_log_lik
 
+from scipy.integrate import odeint
+
+def itsm_ode_global(y, z, H0, n):
+    Om_m, Om_p = y
+    E2 = Om_m + Om_p
+    if E2 <= 1e-10:
+        E = 1e-5
+    else:
+        E = np.sqrt(E2)
+        
+    Q_term = n * (1 + z)**(-3) / (E * (1 + z))
+    
+    dOmdz = 3 * Om_m / (1 + z) + Q_term
+    dOpdz = -Q_term
+    return [dOmdz, dOpdz]
+
+def H_itsm_ode(z_array, H0, Om0, n):
+    z_sort_idx = np.argsort(z_array)
+    z_sorted = z_array[z_sort_idx]
+    
+    if z_sorted[0] != 0:
+        z_int = np.concatenate(([0.0], z_sorted))
+        slice_idx = slice(1, None)
+    else:
+        z_int = z_sorted
+        slice_idx = slice(None)
+        
+    Op0 = 1.0 - Om0
+    y0 = [Om0, Op0]
+    
+    sol = odeint(itsm_ode_global, y0, z_int, args=(H0, n))
+    Om_m_z = sol[slice_idx, 0]
+    Om_p_z = sol[slice_idx, 1]
+    E_z = np.sqrt(np.maximum(Om_m_z + Om_p_z, 1e-10))
+    H_z = H0 * E_z
+    
+    H_out = np.zeros_like(H_z)
+    H_out[z_sort_idx] = H_z
+    return H_out
+
 def log_likelihood(theta):
-    H0, Om, n = theta
-    radicand = Om * (1 + z_desi)**3 + (1 - Om) * (1 + z_desi)**-n
-    if np.any(radicand <= 0): return -np.inf
-    H_model = H0 * np.sqrt(radicand)
+    H0, n = theta
+    # ITSM STRICT ENFORCEMENT: No Dark Matter. Om is purely Baryonic (Omega_b h^2 = 0.02237)
+    h = H0 / 100.0
+    Om = 0.02237 / (h**2)
+    
+    try:
+        H_model = H_itsm_ode(z_desi, H0, Om, n)
+    except:
+        return -np.inf
+        
     chi2_desi = np.sum(((H_desi - H_model) / err_desi)**2)
     return -0.5 * chi2_desi + sparc_log_likelihood(H0)
 
 def log_prior(theta):
-    H0, Om, n = theta
+    H0, n = theta
     # Agnostic uniform priors bounding standard and toroidal tension limits
-    if 60 < H0 < 90 and 0.1 < Om < 0.4 and 0.0 < n < 3.0: 
+    if 60 < H0 < 90 and 0.0 < n < 3.0: 
         return 0.0
     return -np.inf
 
@@ -155,13 +201,14 @@ if __name__ == '__main__':
             continue
     print(f"Pre-optimized {len(pre_optimized_galaxies)} galaxies for joint SPARC likelihood.")
 
-    ndim, nwalkers = 3, 32
-    pos = [np.array([72.5, 0.24, 1.44]) + np.array([1.0, 0.02, 0.2]) * np.random.randn(ndim) for _ in range(nwalkers)]
+    ndim, nwalkers = 2, 64
+    # pos initializes [H0, n]
+    pos = [np.array([72.5, 1.44]) + np.array([1.0, 0.2]) * np.random.randn(ndim) for _ in range(nwalkers)]
 
     print("--- INITIALIZING JOINT MCMC GLOBAL SAMPLER ---")
     with Pool(processes=16, initializer=init_worker, initargs=(pre_optimized_galaxies,)) as pool:
         sampler = emcee.EnsembleSampler(nwalkers, ndim, log_probability, pool=pool)
-        sampler.run_mcmc(pos, 2000, progress=True)
+        sampler.run_mcmc(pos, 10000, progress=True)
 
     # 6. Convergence Diagnostics & Posterior Extraction
     flat_samples = sampler.get_chain(discard=500, thin=15, flat=True)
@@ -170,7 +217,7 @@ if __name__ == '__main__':
     print("\n--- CONVERGENCE DIAGNOSTICS ---")
     try:
         tau = sampler.get_autocorr_time(quiet=True)
-        print(f"Integrated autocorrelation times: H0={tau[0]:.1f}, Om={tau[1]:.1f}, n={tau[2]:.1f}")
+        print(f"Integrated autocorrelation times: H0={tau[0]:.1f}, n={tau[1]:.1f}")
         print(f"Effective samples: {len(flat_samples)}")
         if np.any(tau > (2000 - 500) / 50):
             print("[WARNING] Chain may not be fully converged. Consider increasing n_steps.")
@@ -181,12 +228,11 @@ if __name__ == '__main__':
 
     print(f"\n--- OPTIMIZED PARAMETER POSTERIORS ---")
     print(f"H0:  {mcmc_results[1, 0]:.2f} (+{mcmc_results[2, 0]-mcmc_results[1, 0]:.2f} / -{mcmc_results[1, 0]-mcmc_results[0, 0]:.2f})")
-    print(f"Om:  {mcmc_results[1, 1]:.3f} (+{mcmc_results[2, 1]-mcmc_results[1, 1]:.3f} / -{mcmc_results[1, 1]-mcmc_results[0, 1]:.3f})")
-    print(f"n:   {mcmc_results[1, 2]:.4f} (+{mcmc_results[2, 2]-mcmc_results[1, 2]:.4f} / -{mcmc_results[1, 2]-mcmc_results[0, 2]:.4f})")
+    print(f"n:   {mcmc_results[1, 1]:.4f} (+{mcmc_results[2, 1]-mcmc_results[1, 1]:.4f} / -{mcmc_results[1, 1]-mcmc_results[0, 1]:.4f})")
 
     # Export Diagnostic Corner Plot
-    fig = corner.corner(flat_samples, labels=[r"$H_0$", r"$\Omega_m$", r"$n$"],
-                        truths=[mcmc_results[1, 0], mcmc_results[1, 1], mcmc_results[1, 2]],
+    fig = corner.corner(flat_samples, labels=[r"$H_0$", r"$n$"],
+                        truths=[mcmc_results[1, 0], mcmc_results[1, 1]],
                         quantiles=[0.16, 0.50, 0.84], show_titles=True,
                         title_fmt=".3f", color="navy", truth_color="crimson")
 

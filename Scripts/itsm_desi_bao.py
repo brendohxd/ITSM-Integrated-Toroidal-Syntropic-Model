@@ -19,7 +19,9 @@ z = np.linspace(0, 3, 100)
 
 # ITSM Globally-Optimised Parameters (Joint Pantheon+ & DESI DR2 Hierarchical MCMC)
 H0_itsm = 73.97
-Om_itsm = 0.240
+# ITSM STRICT ENFORCEMENT: No Dark Matter. Om is purely Baryonic (Omega_b h^2 = 0.02237)
+h_itsm = H0_itsm / 100.0
+Om_itsm = 0.02237 / (h_itsm**2)
 
 # Planck 2018 ΛCDM baseline for comparison
 H0_lcdm = 67.4
@@ -28,12 +30,32 @@ Om_lcdm = 0.315
 # LambdaCDM Framework
 H_lcdm = H0_lcdm * np.sqrt(Om_lcdm * (1+z)**3 + (1-Om_lcdm))
 
-# ITSM Syntropic Decay: Omega_syn scales as (1+z)^{-3}
-H_itsm = H0_itsm * np.sqrt(Om_itsm * (1+z)**3 + (1-Om_itsm) * (1+z)**-3)
+from scipy.integrate import odeint
+
+def itsm_ode_plot(y, z_val, H0, n):
+    Om_m, Om_p = y
+    E2 = Om_m + Om_p
+    if E2 <= 1e-10:
+        E = 1e-5
+    else:
+        E = np.sqrt(E2)
+        
+    Q_term = n * (1 + z_val)**(-3) / (E * (1 + z_val))
+    
+    dOmdz = 3 * Om_m / (1 + z_val) + Q_term
+    dOpdz = -Q_term
+    return [dOmdz, dOpdz]
+
+# ITSM Syntropic Decay: True ODE Integration
+n_itsm = 3.0
+y0 = [Om_itsm, 1.0 - Om_itsm]
+sol = odeint(itsm_ode_plot, y0, z, args=(H0_itsm, n_itsm))
+E_z = np.sqrt(np.maximum(sol[:, 0] + sol[:, 1], 1e-10))
+H_itsm = H0_itsm * E_z
 
 plt.figure(figsize=(10, 6))
 plt.plot(z, H_lcdm, '--', color='#D55E00', lw=2.5, label=r'$\Lambda$CDM ($H_0=67.4$, Planck 2018)')
-plt.plot(z, H_itsm, '-', color='#0072B2', lw=3, label=r'ITSM Syntropic Decay ($H_0=73.97$, $\Omega_m=0.240$)')
+plt.plot(z, H_itsm, '-', color='#0072B2', lw=3, label=rf'ITSM Syntropic Decay ($H_0={H0_itsm}$, $\Omega_b={Om_itsm:.3f}$)')
 
 plt.title(r'Effective Hubble Parameter Evolution: DESI 2024 Confrontation', fontsize=16, pad=15)
 plt.xlabel(r'Redshift ($z$)', fontsize=15)

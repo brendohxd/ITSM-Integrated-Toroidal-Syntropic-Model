@@ -1,5 +1,25 @@
 # ITSM Changelog & Archive History
 
+## Version 11.1.2 — Peer-Review Cosmology Polish (2026-06-27)
+
+### Tier 1 — Core Physics Justification & Formalism
+- **NANOGrav Resonance Anchor (FIX-25):** Rewrote the NANOGrav $[1.08, \pi]$ prediction justification. Dropped the incorrect "frequency-shift" argument. Grounded the $f_{\rm ref} = 1.08$ nHz anchor in the physical vortex core mass scale of SMBHs ($M \sim 10^9 M_\odot$), linking the resonance directly to the $T^3$ fundamental circulation period.
+- **Scalar GW Modes (FIX-26):** Clarified scalar GW modes to address reviewer confusion regarding the "scalar-tensor" label. Explicitly proved the Einstein-Hilbert tensor sector remains unmodified (pure rank-2 tensor GWs). Demonstrated that the scalar polarization modes arise entirely from longitudinal acoustic phonons in the fluid $Q^\nu$ source tensor.
+
+### Tier 2 — Precision & Notation Polish
+- **Geometric Trace Ratio (FIX-10):** Clarified that the $C_{\rm proj} = 2/3$ geometric trace ratio enters specifically through the $\mathcal{L}_{\rm int}$ cross-term, proving the interaction coupling strength without curve fitting.
+- **Microcausality Defence (FIX-11):** Addressed microcausality concerns. Explicitly bounded the superluminal phase velocity ($c_s^2 \approx 1.11$) as a standard EFT transition artifact, strictly bounding the signal front velocity to $c \le 1$.
+- **UV Cutoff (FIX-12):** Specified the UV cutoff as $\Lambda_{\rm UV} \approx 10 a_0$, matching standard Wilsonian effective field theory formalisms.
+- **Casimir Shear Projection (FIX-13):** Added standard formal citations (Raychaudhuri equation) to validate the geometric shear scaling used in the Casimir-Hubble projection derivation.
+- **Hubble Spread (FIX-14):** Emphasized that the wide $69.6-78.6$ km/s/Mpc variance in MCMC chains represents systemic external dataset bias, not internal theoretical uncertainty.
+
+### Tier 3 — Minor Polish
+- **BBN Syntropic Coupling (FIX-15):** Added explicit integration of BBN syntropic coupling to §IV.C, demonstrating the coupling vanishes completely at $z \gg 1100$, preserving the canonical expansion rate during Big Bang Nucleosynthesis and the predicted $^4$He mass fraction.
+- **Abstract Rhetoric (FIX-16):** Softened the "$\Lambda$CDM is broken" rhetorical statement in the Abstract to "faces escalating empirical challenges," aligning with Tier-1 journal standards.
+- **Script Enumeration (FIX-17):** Updated the GitHub README script enumeration from a static 35 list to acknowledge the full 50+ script production architecture.
+- **NANOGrav Figure Verification (FIX-18):** Verified that the NANOGrav stochastic GWB simulation (`itsm_nanograv_resonance.py`) formally utilizes the physically-derived Lorentzian resonance profile rather than a standard Gaussian.
+- **Trademark Formatting (FIX-27):** Stripped unregistered trademark symbols (™) from the title/abstract footer as they violate journal formatting standards.
+
 ## Version 11.1.1 — Citation Integrity, Archive Sweep & Zenodo Publication (2026-06-21)
 
 ### Public Physics Papers

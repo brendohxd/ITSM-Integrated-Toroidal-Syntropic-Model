@@ -202,11 +202,7 @@ Renders a diagram detailing the geometric projection of the Hubble tension ($H_t
 ## 📂 Repository Structure
 | Directory | Content Description |
 |---|---|
-| 📄 `Manuscript/ITSM_Core_Cosmology_v11.1.1.tex` | The core foundational ITSM cosmological physics framework, mathematical field equations, and compiled baseline manuscript. |
-| 📄 `papers/Al-Jabr-Reunification/ITSM_Al_Jabr_Bridge_v1.0.0.tex` | The theoretical bridge manuscript explicitly merging the $T^3$ physics with the Functional-Nominal theological matrices. |
-| 📄 `papers/T3-Illusion/ITSM_T3_Illusion_v0.5.0.tex` | Specific public-bridge paper resolving flat-horizon anomalies using $T^3$ topological lensing. |
-| 📄 `papers/Syntropic-Thermodynamics/ITSM_Syntropic_Thermodynamics_v0.5.0.tex` | Standalone manuscript proving the failure of the 2nd Law of Thermodynamics and the Tokamak engineering divergence. |
-| 📜 `papers/The-Anachronistic-Archive/ITSM_Anachronistic_Archive_v0.1.0.tex` | The massive 70-page textbook/archive synthesizing the historical proof of pre-Babel metric engineering (Watchers, Apkallu, TRC Stations). |
+| 📄 `Manuscript/` | The core foundational ITSM cosmological physics framework, mathematical field equations, and compiled baseline manuscript. |
 | 🔬 `Scripts/` | Executable Python engines for all kinematic and assembly simulations, including the API export pipeline and the `run_all.py` master execution script. |
 | 🔭 `SPARC_data/` | The full 175 empirical galaxy `.dat` files required for the global RAR and MCMC benchmark. |
 | 🌌 `DESI_data/` & `NANOGrav_data/` | Raw telemetry and covariance matrices for Cosmic Microwave Background, BAO, and Pulsar Timing Array constraints. |
@@ -239,7 +235,7 @@ To replicate the results locally:
 3. **Activate the environment:**
    `conda activate itsm_env`
 4.   **Run the Master Pipeline:**
-   Execute the centralized master script to sequentially run all 35 production scripts and regenerate the entire figure suite.
+   Execute the centralized master script to sequentially run all 50+ production scripts and regenerate the entire figure suite.
    `python Scripts/run_all.py`
 
 ## 🖋️ Citation

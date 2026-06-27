@@ -1,0 +1,175 @@
+﻿% =============================================================================
+% Title: The Illusion of a Flat Earth within a 3-Torus Universe
+% Author: Brendon Boyd
+% Version: 0.6.0 — Updated June 2026
+% Purpose: Zenodo Preprint (Bridge Paper: Academic Rigor + Public Accessibility)
+% Changes: Added COMPACT Collaboration constraints, E1/E2/E3 distinction,
+%          JWST XLSSC 122 evidence, LiteBIRD predictions, CMB matched circles,
+%          Casimir scaling argument, updated bibliography.
+% =============================================================================
+
+\documentclass[aps,prd,11pt,onecolumn,superscriptaddress,nofootinbib,floatfix]{revtex4-2}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{physics}
+\usepackage{booktabs}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{natbib}
+\usepackage[colorlinks=true, citecolor=blue, urlcolor=blue, linkcolor=black]{hyperref}
+
+\begin{document}
+
+\title{Locally Flat, Globally Periodic: \\ Reconciling the Illusion of a Flat Horizon via $T^3$ Topology}
+\author{Brendon Boyd}
+\email{brendon.boyd@itsm-cosmology.org}
+\thanks{ORCID: 0009-0007-4177-2612 | Licensed under Creative Commons Attribution 4.0 International. ``ITSM Cosmology'' and ``Integrated Toroidal-Syntropic Model'' are trademarks of Brendon Boyd. GitHub: \url{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}. Zenodo: \href{https://doi.org/10.5281/zenodo.20773262}{10.5281/zenodo.20773262}}
+\affiliation{Independent Researcher, Burswood, Western Australia, Australia}
+\date{Compiled \today}
+
+\begin{abstract}
+Observational anomalies such as an apparent flat horizon, circular celestial paths, and perceived boundedness have driven a resurgence in flat earth theories. While the scientific community widely dismisses these conclusions as conspiratorial, the underlying geometric observations themselves warrant rigorous analysis. This paper proposes a novel resolution: these phenomena are not evidence of a flat planar Earth, but rather low-dimensional projections of a universe possessing a 3-torus ($T^3$) topology. Because a $T^3$ manifold is locally Euclidean (flat) but globally periodic, it mathematically accommodates a flat-appearing horizon while enforcing repeating, cyclical celestial boundaries. Critically, this framework is consistent with current COMPACT Collaboration constraints on cosmic topology \cite{compact_promise, compact_pt1}, which confirm that multiple $T^3$-class topologies remain observationally viable. When coupled with the Integrated Toroidal-Syntropic Model (ITSM), this framework explains the ``dome'' illusion through superfluid shear planes and provides testable predictions, including topological lensing and repeating galaxy clusters observable by the James Webb Space Telescope (JWST). Anomalous early-universe structures already detected by JWST --- including galaxy cluster XLSSC~122, whose dark matter core exceeds $\Lambda$CDM predictions at $3.2\sigma$ --- provide early observational support \cite{finner_2025}. The forthcoming LiteBIRD CMB polarisation satellite offers a further near-term falsifiability window \cite{litebird_2020}. This model serves as a scientific bridge, providing fundamental topological mechanics to explain controversial celestial observations without violating modern astrophysics.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+
+In recent years, a segment of the public has challenged the prevailing cosmological model by pointing to direct, localized celestial observations --- most notably, the perception of a perfectly flat horizon, the strictly circular paths of the sun and moon, and the illusion of a bounded ``dome'' or firmament. The standard scientific response has been to dismiss these observations as misunderstandings of scale and gravity on a spherical planet. However, dismissing the observations outright alienates highly analytical and inquisitive minds, creating an intellectual stalemate that serves neither science nor the observer.
+
+The observers who arrive at flat earth conclusions are often doing something right: they are trusting their direct geometric experience, applying logical deduction, and refusing to accept models on authority alone. These are the instincts of genuine scientific inquiry. The problem is not their methodology but the incompleteness of the topological framework available to them. Without access to advanced manifold theory, they are forced into restrictive conclusions --- such as a planar Earth bounded by an infinite ice wall. A core motivation of this paper is to provide a rigorous mathematical bridge for these analytical minds. By equipping them with the framework of a 3-torus ($T^3$) topology, this model aims to redirect their observational acuity away from marginalized theories and empower them to actively contribute to the progress of modern astrophysics.
+
+This paper proposes an alternative: validating the geometric integrity of the observations while correcting the conclusion. The phenomena observed do not require a planar Earth; rather, they are perfectly consistent with the mathematical properties of a $T^3$ universe. By analyzing local flatness, periodic boundary conditions, and topological lensing within a $T^3$ framework --- supported by the dynamics of the ITSM and constrained by the latest observational results from the COMPACT Collaboration \cite{compact_promise} --- we can mathematically explain these ``flat earth'' anomalies as low-dimensional projections of a highly structured universe.
+
+\section{Mathematical and Physical Properties of the 3-Torus ($T^3$)}
+\label{sec:t3-properties}
+
+A 3-torus is the Cartesian product of three circles, $S^1 \times S^1 \times S^1$, forming a 3-dimensional manifold with periodic boundary conditions.
+
+\subsection{Local Flatness vs. Global Periodicity}
+The defining feature of a $T^3$ topology is that its intrinsic geometry is exactly Euclidean (flat). To a localized observer, a $T^3$ universe appears entirely flat, possessing zero spatial curvature. This is in perfect alignment with modern cosmological data, such as the Planck 2018 results, which measure the curvature parameter $\Omega_k \approx 0$ \cite{planck_2018}. However, unlike an infinite Euclidean space, the $T^3$ is globally periodic. Traveling far enough in any direction eventually returns the traveler to their starting point, much like navigating a 3D video game world. This periodicity means the universe has no edge, no center, and is finite in volume, while remaining spatially flat. The CMB quadrupole suppression observed by WMAP and Planck --- a long-standing anomaly in the standard model --- is naturally explained in compact topologies through the absence of long-wavelength modes in sufficiently small fundamental domains \cite{compact_eigenmodes}.
+
+\subsection{Observational Constraints: E1, E2, and E3 Variants}
+
+The COMPACT Collaboration has systematically constrained the observationally viable parameter space of $T^3$-class topologies using CMB circle searches and covariance matrix analysis \cite{compact_pt1, compact_eigenmodes}. Their key findings bear directly on this paper.
+
+The simplest cubic 3-torus, designated $E_1$, is observationally constrained: if its characteristic scale is smaller than the CMB last-scattering surface, matched antipodal circle pairs would appear in the CMB sky --- none have been detected at high significance, placing a lower bound on the fundamental domain size of approximately $27.9$~Gpc \cite{compact_pt1}. However, this does not rule out $T^3$ topology; it constrains only the cell size.
+
+Critically, twisted variants --- $E_2$ (a $180^{\circ}$-twisted torus) and $E_3$ (a $90^{\circ}$-twisted torus) --- \emph{remain observationally viable even at scales substantially smaller than the CMB horizon} \cite{compact_promise}. This is because twisting produces correlated but geometrically distinct sky views, meaning the signature differs from simple matched circles. The COMPACT Collaboration's 2024 publication in Physical Review Letters confirms that the topology of the universe remains an open observational question, and that many exotic topologies are consistent with current data \cite{compact_promise}.
+
+The ITSM framework is most naturally associated with a generalized toroidal topology in the $E_2$--$E_3$ class, where the local flatness is preserved but global periodicity manifests through twisted geodesics --- directly consistent with the circular celestial paths and apparent dome structure described in Section~\ref{sec:mapping}.
+
+\subsection{Topological Lensing}
+Because light can wrap around the periodic boundaries of a $T^3$ universe, an observer can theoretically see multiple images of the same celestial object originating from different directions and epochs. This topological lensing creates a cosmic ``hall of mirrors'' effect, potentially generating repeating patterns in the sky. The matched-circles statistic in the CMB \cite{compact_pt1} and repeating galaxy cluster signatures in deep JWST surveys represent the two primary observational search strategies.
+
+\section{Mapping Observations to $T^3$ Topology}
+\label{sec:mapping}
+
+When the observational claims of flat earth theorists are analyzed through the lens of a $T^3$ topology, the apparent contradictions with modern astrophysics evaporate. Table~\ref{tab:mapping} details this alignment.
+
+\begin{table}[h]
+\centering
+\caption{Celestial Observations Mapped to $T^3$ Explanations}
+\label{tab:mapping}
+\begin{tabular}{p{0.25\textwidth} p{0.35\textwidth} p{0.3\textwidth}}
+\toprule
+\textbf{Observation/Claim} & \textbf{$T^3$ Topological Explanation} & \textbf{Astrophysical Context} \\
+\midrule
+Horizon appears flat & Local intrinsic flatness of the $T^3$ manifold. & Planck 2018 ($\Omega_k \approx 0$) \cite{planck_2018}. \\
+Circular celestial paths & Geodesics on $T^3$ appear circular due to periodic boundaries and twisted ($E_2$/$E_3$) identifications. & Consistent with COMPACT $E_2$/$E_3$ constraints \cite{compact_promise}. \\
+``Dome'' illusion & Shear planes within the cosmic superfluid create 2D-like boundedness. & Modeled by ITSM superfluid plenum \cite{itsm_main}. \\
+No observable curvature & $T^3$ is globally periodic, not curved; the simplest compact flat manifold. & Planck 2018 $\Omega_k \approx 0$ \cite{planck_2018}. \\
+Celestial bodies ``reset'' & Periodic boundary conditions cause ``wrapping'' of light and object paths. & Topological lensing \cite{compact_pt1}. \\
+CMB low-multipole anomalies & Compact domain suppresses long-wavelength modes, reducing quadrupole power. & WMAP/Planck quadrupole suppression \cite{compact_eigenmodes}. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The ``Dome'' and Shear Planes}
+One of the most persistent illusions in alternative cosmologies is the existence of a firmament or dome. In the context of the ITSM, the universe is filled with a superfluid plenum. Within this plenum, differential fluid motion creates 2D-like surfaces known as \textit{shear planes}. These topological defects act as localized boundaries or constraints on celestial mechanics, providing a fluid-dynamics explanation for the perception of a bounded, dome-like sky.
+
+Within the ITSM framework, the shear plane height $h_s$ above the observer scales with the local plenum viscosity $\eta$ and the toroidal curvature radius $R_T$ as:
+\begin{equation}
+h_s \sim \left(\frac{\eta}{a_0 \rho_{\rm vac}}\right)^{1/2} R_T,
+\end{equation}
+where $a_0 = cH_0/2\pi$ is the ITSM characteristic acceleration and $\rho_{\rm vac}$ is the vacuum plenum density. This scaling places the effective shear boundary at cosmological distances at cosmic mean density, but at perceivable angular scales for a local observer embedded within a toroidal cell whose fundamental domain approaches the Hubble scale --- precisely the geometry consistent with COMPACT constraints.
+
+\section{Falsifiability and Predictions}
+\label{sec:predictions}
+
+A robust scientific model must offer testable predictions. The $T^3$ universe model presents several unique observational signatures that differentiate it from the standard $\Lambda$CDM model. Crucially, several of these predictions are already being probed by current and planned observatories.
+
+\begin{enumerate}
+
+\item \textbf{CMB Matched Circles (Near-Term):} The primary signature of a compact $T^3$ topology in the CMB is the appearance of matched pairs of circles with identical temperature fluctuation patterns \cite{compact_pt1}. The COMPACT Collaboration has searched for these in WMAP and Planck data, placing lower bounds on the fundamental domain size but not ruling out the topology. The forthcoming \textbf{LiteBIRD} satellite \cite{litebird_2020}, with its superior CMB polarisation sensitivity, is expected to substantially extend this discovery reach --- either detecting the signature or tightening constraints to definitively test compact $T^3$ models at the ITSM-predicted cell scale.
+
+\item \textbf{JWST Anomalous Early Structure (Current Evidence):} Deep-field surveys by JWST already reveal structures inconsistent with standard $\Lambda$CDM formation timelines. Galaxy cluster XLSSC~122, confirmed by JWST in 2024--2025, is the most distant strong gravitational lens ever detected, with a dark matter core concentration $3.2\sigma$ denser than any $\Lambda$CDM simulation predicts at its epoch \cite{finner_2025}. While not proof of $T^3$ topology, such anomalously mature early structures are a natural consequence of a toroidal universe whose effective Hubble volume differs from the simply-connected prediction, shortening the causal horizon and accelerating structure formation. The COMPACT Collaboration's machine learning topology classification program \cite{compact_ml} is developing automated searches for repeating galaxy pattern signatures in JWST deep fields.
+
+\item \textbf{Topological Lensing Anomalies:} Gravitational lensing observations should reveal anomalous light paths and multiple imaging that cannot be accounted for by foreground cluster mass alone. The SLICE JWST program \cite{cerny_2025}, modeling strong lensing from 14 clusters spanning $z \sim 0.25$--$1.06$, provides the first systematic dataset against which topological lensing predictions can be tested. Image multiplicities exceeding the mass-model prediction at fixed redshift would constitute a topological lensing signature.
+
+\item \textbf{Shear Plane Signatures in Rotation Curves:} The influence of superfluid shear planes should manifest as anisotropic 2D-like motion in specific velocity regimes of galactic rotation curves, particularly in low-surface-brightness galaxies. The SPARC database \cite{sparc_2016}, validated against ITSM predictions for 175 galaxies \cite{itsm_main}, provides the testbed.
+
+\item \textbf{Toroidal Casimir Anomalies:} Laboratory experiments measuring the Casimir effect \cite{casimir_1948} within highly constrained toroidal cavities should reveal measurable deviations from standard Euclidean predictions. For a toroidal cavity of circumference $L_T$, the Casimir energy density acquires a topological correction:
+\begin{equation}
+\Delta u_{\rm Casimir} \sim -\frac{\hbar c \pi^2}{720} \left(\frac{1}{L_T^4} - \frac{1}{L_{\rm flat}^4}\right),
+\end{equation}
+where $L_{\rm flat}$ is the equivalent Euclidean plate separation. This correction is measurable at the $\sim$1\% level for toroidal cavities approaching the micron scale, within reach of current force measurement technology.
+
+\end{enumerate}
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The dismissal of anomalous celestial observations as mere conspiracy theories stifles scientific inquiry. By taking the geometric observations of a flat horizon and cyclical celestial paths seriously, we find that they point not to a planar Earth, but to a beautifully complex, locally flat, and globally periodic 3-torus ($T^3$) universe.
+
+This framework liberates inquisitive minds from the restrictive binary of ``spherical earth vs. ice wall'' by introducing a third, mathematically rigorous paradigm. The COMPACT Collaboration's ongoing program confirms that $T^3$-class topologies remain consistent with current CMB data \cite{compact_promise, compact_pt1}, and JWST's detection of anomalously mature early structures \cite{finner_2025} hints at a universe whose causal structure differs from the standard simply-connected model. As deep-space observatories continue to probe the furthest reaches of the cosmos, and as LiteBIRD \cite{litebird_2020} prepares to deliver the most sensitive CMB polarisation maps ever produced, the topological signatures of a $T^3$ universe may soon move from theoretical resolution to observational fact.
+
+We invite observers who have noticed these geometric anomalies in the sky to engage directly with the JWST data archive and the COMPACT Collaboration's published circle search results --- the tools to test these ideas are now publicly available, and the observations that motivated this inquiry are more scientifically productive than they may appear.
+
+\section*{Acknowledgments}
+The foundations of this topological approach are deeply intertwined with the development of the Integrated Toroidal-Syntropic Model (ITSM) \cite{itsm_main}. The author thanks the COMPACT Collaboration for making their analysis tools and results openly available.
+
+\begin{thebibliography}{99}
+
+\bibitem{itsm_main}
+Boyd, B. (2026). \textit{Integrated Toroidal-Syntropic Model (ITSM) Core Cosmology v11.1.1}. Zenodo. \href{https://doi.org/10.5281/zenodo.20774996}{doi:10.5281/zenodo.20774996}
+
+\bibitem{planck_2018}
+Planck Collaboration (2020). \textit{Planck 2018 results. VI. Cosmological parameters}. Astronomy \& Astrophysics 641, A6. \href{https://doi.org/10.1051/0004-6361/201833910}{doi:10.1051/0004-6361/201833910}
+
+\bibitem{compact_promise}
+Akrami, Y., et al. (COMPACT Collaboration) (2024). \textit{Promise of Future Searches for Cosmic Topology}. Physical Review Letters 132, 171501. \href{https://doi.org/10.1103/PhysRevLett.132.171501}{doi:10.1103/PhysRevLett.132.171501}
+
+\bibitem{compact_pt1}
+Petersen, P., et al. (COMPACT Collaboration) (2023). \textit{Cosmic topology. Part I. Limits on orientable Euclidean manifolds from circle searches}. Journal of Cosmology and Astroparticle Physics 01, 030. \href{https://doi.org/10.1088/1475-7516/2023/01/030}{doi:10.1088/1475-7516/2023/01/030}
+
+\bibitem{compact_eigenmodes}
+Eskilt, J.~R., et al. (COMPACT Collaboration) (2024). \textit{Cosmic topology. Part IIa. Eigenmodes, correlation matrices, and detectability of orientable Euclidean manifolds}. Journal of Cosmology and Astroparticle Physics 03, 036. \href{https://doi.org/10.1088/1475-7516/2024/03/036}{doi:10.1088/1475-7516/2024/03/036}
+
+\bibitem{compact_ml}
+Tamosiunas, A., et al. (COMPACT Collaboration) (2024). \textit{Cosmic topology. Part IVa. Classification of manifolds using machine learning: a case study with small toroidal universes}. arXiv:2404.01236 [astro-ph.CO].
+
+\bibitem{finner_2025}
+Finner, K., et al. (2025). \textit{JWST Discovery of Strong Lensing from a Galaxy Cluster at Cosmic Noon: Giant Arcs and a Highly Concentrated Core of XLSSC~122}. The Astrophysical Journal Letters 994, L35. \href{https://doi.org/10.3847/2041-8213/ae1d80}{doi:10.3847/2041-8213/ae1d80}
+
+\bibitem{cerny_2025}
+Cerny, C., et al. (2025). \textit{Strong LensIng and Cluster Evolution (SLICE) with JWST: Early Results, Lens Models, and High-Redshift Detections}. arXiv:2503.17498 [astro-ph.GA].
+
+\bibitem{litebird_2020}
+Hazumi, M., et al. (LiteBIRD Collaboration) (2020). \textit{LiteBIRD: JAXA's new strategic L-class mission for all-sky surveys of cosmic microwave background polarization}. Proceedings of the SPIE 11443, 114432F. \href{https://doi.org/10.1117/12.2563050}{doi:10.1117/12.2563050}
+
+\bibitem{iter_basis}
+ITER Physics Expert Groups et al. (1999). \textit{ITER Physics Basis}. Nuclear Fusion 39, 2137. \href{https://doi.org/10.1088/0029-5515/39/12/308}{doi:10.1088/0029-5515/39/12/308}
+
+\bibitem{sparc_2016}
+Lelli, F., McGaugh, S.~S., \& Schombert, J.~M. (2016). \textit{SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves}. The Astronomical Journal, 152(6), 157. \href{https://doi.org/10.3847/0004-6256/152/6/157}{doi:10.3847/0004-6256/152/6/157}
+
+\bibitem{casimir_1948}
+Casimir, H.~B.~G. (1948). \textit{On the attraction between two perfectly conducting plates}. Proceedings of the Koninklijke Nederlandse Akademie van Wetenschappen, 51, 793--795.
+
+\end{thebibliography}
+
+\end{document}

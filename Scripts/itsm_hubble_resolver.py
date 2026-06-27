@@ -17,7 +17,7 @@ apply_tier1_style()
 
 
 # 1. Physical Constants & Observational Limits
-H_PLANCK = 67.4  # Early-Universe poloidal measurement [km/s/Mpc]
+H_PLANCK = 67.36  # Early-Universe poloidal measurement [km/s/Mpc]
 H_PLANCK_ERR = 0.5 # 1-sigma uncertainty (Planck 2018)
 
 # ITSM Topological Derivation: On a T^3 manifold, the variance between 
