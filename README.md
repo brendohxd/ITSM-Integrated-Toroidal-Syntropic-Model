@@ -203,9 +203,9 @@ Renders a diagram detailing the geometric projection of the Hubble tension ($H_t
 | Directory | Content Description |
 |---|---|
 | 📄 `Manuscript/` | The core foundational ITSM cosmological physics framework, mathematical field equations, and compiled baseline manuscript. |
-| 📄 `papers/Syntropic-Thermodynamics/` | Standalone complementary manuscript proving the failure of the 2nd Law of Thermodynamics and the Tokamak engineering divergence. |
-| 📄 `papers/T3-Illusion/` | Specific public-bridge paper resolving flat-horizon anomalies using $T^3$ topological lensing. |
-| 📄 `papers/Al-Jabr-Reunification/` | The theoretical bridge manuscript explicitly merging the $T^3$ physics with the Functional-Nominal matrices. |
+| 📄 `papers/Syntropic-Thermodynamics/` | Exposes the 2nd Law of Thermodynamics as mathematically incomplete for open $T^3$ manifolds. Introduces the Syntropic Source Vector and explains the historical engineering failure of closed-system Tokamaks ($Q < 1$) versus the success of geometry-aligned Stellarators (W7-X). |
+| 📄 `papers/T3-Illusion/` | Resolves persistent "flat horizon" and "celestial dome" observational anomalies through the lens of a locally flat but globally periodic $T^3$ topology. Leverages COMPACT Collaboration constraints and JWST early-structure detections to bridge public inquiry with rigorous astrophysics. |
+| 📄 `papers/Al-Jabr-Reunification/` | Traces the etymology of *al-jabr* ("the restoration of broken parts") to frame the ITSM's core invariant $a_0 = cH_0/2\pi$ as the geometric reunification of the broken $\Lambda$CDM framework, eliminating the need for phantom dark-sector parameters. |
 | 🔬 `Scripts/` | Executable Python engines for all kinematic and assembly simulations, including the API export pipeline and the `run_all.py` master execution script. |
 | 🔭 `SPARC_data/` | The full 175 empirical galaxy `.dat` files required for the global RAR and MCMC benchmark. |
 | 🌌 `DESI_data/` & `NANOGrav_data/` | Raw telemetry and covariance matrices for Cosmic Microwave Background, BAO, and Pulsar Timing Array constraints. |
