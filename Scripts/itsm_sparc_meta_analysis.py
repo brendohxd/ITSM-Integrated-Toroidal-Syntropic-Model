@@ -106,7 +106,7 @@ def analyze_batch_data():
     df_master.to_csv(os.path.join(batch_dir, "ITSM_SPARC_Meta_Analysis_Summary.csv"), index=False)
 
     # 2. Write LaTeX Table
-    tex_path = os.path.join(script_dir, "..", "Manuscript", "appendix_sparc_table.tex")
+    tex_path = os.path.join(script_dir, "..", "Manuscript", "Supplementary", "appendix_sparc_table.tex")
     with open(tex_path, "w") as f:
         f.write("\\begin{longtable}{lcccccc}\n\\toprule\nGalaxy & $\\Upsilon_{\\text{disk}}$ & $\\Upsilon_{\\text{bulge}}$ & $H_0$ & $\\chi^2_\\nu$ & DoF & Quality \\\\\n\\midrule\n")
         for _, r in df_master.iterrows():
