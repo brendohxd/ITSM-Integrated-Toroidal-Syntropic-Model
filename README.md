@@ -19,13 +19,13 @@ Instead of adding unobservable phantom particles or arbitrary phenomenological v
 * 💥 **The Bullet Cluster:** Demonstrates that the kinematic separation between X-ray gas and gravitational lensing maps is a fluid-dynamic consequence of the Plenum's acoustic wake, not collisionless dark matter.
 * 📉 **Evolving Dark Energy (DESI 2024):** Derives an evolving effective dark energy equation of state natively from syntropic volume decay, mirroring the latest DESI BAO data without arbitrary $w_0$--$w_a$ parameterization.
 
-The framework culminates in strict, falsifiable predictions, including **Localized Vacuum Quenching** (predicting the temporary restoration of Newtonian mechanics within extreme thermal boundary layers like AGN and the Bullet Cluster) and a toroidal acoustic resonance for **NANOGrav** Pulsar Timing Arrays tightly constrained between $1.08$ and $3.14$ nHz.
+The framework culminates in strict, falsifiable predictions: (i) a Lorentzian acoustic resonance for **NANOGrav** Pulsar Timing Arrays tightly constrained between $1.08$ and $3.14$ nHz, and (ii) suppression of M-dwarf spectral features in **JWST** observations of edge-on SPARC outliers (confirming a bottom-light IMF).
 
 ## 💡 Key Independent Discoveries & Theoretical Contributions
 
 *While the ITSM functions as a unified cosmological framework, the development of this model has yielded several modular, mathematically rigorous discoveries that hold independent value for the wider astrophysics and theoretical physics communities:*
 
-* 📐 **First-Principles Derivation of the MOND Acceleration Scale:** Resolves the 40-year mystery of the $a_0$ empirical threshold by deriving it directly from macroscopic circulation quantization and global topology: $a_0 = c H_0 / 2\pi \approx 1.08 \times 10^{-10}$ m/s$^2$.
+* 📐 **First-Principles Derivation of the Acceleration Scale:** Resolves the 40-year mystery of the $a_0$ empirical threshold. Under the Dynamic Scale Matching Postulate, $a_0$ is derived directly from macroscopic circulation quantization, linking the compact global topology to the local domain: $a_0 = c H_0 / 2\pi \approx 1.08 \times 10^{-10}$ m/s$^2$.
   
 * ⏱️ **Redshift-Evolving Kinematic Yield ($a_0(z)$):** Establishes that the galactic acceleration boundary is not a static constant, but evolves proportionally with the Hubble parameter, providing a testable metric for JWST high-redshift rotation curves.
   
@@ -112,7 +112,7 @@ Natively models the thermodynamic intake of the Superfluid Plenum within CAMB's 
 *Source: [itsm_camb_cmb_spectrum.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_camb_cmb_spectrum.py)*
 
 🔹 **Script 14: Characteristic Surfaces & Causality**
-Generates a localized Penrose light-cone diagram proving that the effective acoustic metric is strictly nested within the global background metric, forbidding Closed Timelike Curves (CTCs).
+Validates the convexity requirement ($f''(X) \ge 0$) for the Born-Infeld fractional Lagrangian. Generates a localized Penrose light-cone diagram proving that the effective acoustic metric is strictly nested within the global background metric via group-velocity constraints, forbidding Closed Timelike Curves (CTCs).
 *Source: [itsm_causality_cones.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_causality_cones.py)*
 
 🔹 **Script 15: Extreme Dust Attenuation Outlier Model**
@@ -139,8 +139,8 @@ Interfaces with the CAMB numerical Boltzmann solver to generate the linear Matte
 Integrates the 1701-supernovae SN1a covariance matrix alongside dynamic mass-to-light optimization across all 175 SPARC galaxies using a Profile Likelihood MCMC. Proves the ITSM resolves the Hubble tension and cleanly mirrors the $1/2$ geometric mass limit.
 *Source: [itsm_hierarchical_joint_mcmc.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_hierarchical_joint_mcmc.py)*
 
-🔹 **Script 21: BIC Statistical Comparison (ITSM vs. NFW)**
-Executes a formal Bayesian Information Criterion (BIC) analysis comparing the zero-parameter ITSM global fit against the 3-parameter NFW Dark Matter baseline across the SPARC sample.
+🔹 **Script 21: BIC Statistical Comparison (ITSM vs. AQUAL/NFW)**
+Executes a formal Bayesian Information Criterion (BIC) analysis across the SPARC sample. Acknowledges NFW's superior raw curve-fitting while validating the ITSM's rigid geometric factor (2/3) against the phenomenological AQUAL limit ($\alpha=1$), proving the latter yields a significantly worse empirical fit (mean $\Delta$BIC = -37.29).
 *Source: [itsm_bic_nfw_comparison.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_bic_nfw_comparison.py)*
 
 🔹 **Script 22: MCMC Mock Data Recovery**
