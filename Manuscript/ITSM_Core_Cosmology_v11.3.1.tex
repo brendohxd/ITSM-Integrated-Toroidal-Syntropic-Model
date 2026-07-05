@@ -175,7 +175,7 @@ To instantiate a macro-scale Bose-Einstein Condensate (BEC) that remains stable 
 \mathcal{S}_{\text{plenum}} = \int d^4x \sqrt{-g} \left[ -\frac{1}{2} g^{\mu\nu} \partial_\mu \Phi^* \partial_\nu \Phi - \mathcal{V}(\Phi) + \mathcal{L}_{\text{int}} \right]
 \end{equation}
 
-where the matter-phonon interaction Lagrangian $\mathcal{L}_{\text{int}}$ is strictly governed by the topological projection factor $C_{\text{proj}} = 2/3$ (derived geometrically in \S\ref{sec:projection} and formalized via the EFT in \S\ref{sec:nlo_vertex}). The self-interaction potential possesses a symmetry-breaking vacuum expectation value:
+where the matter-phonon interaction Lagrangian $\mathcal{L}_{\text{int}}$ is strictly governed by the topological projection factor $C_{\text{proj}} = 2/3$ (derived geometrically in \S\ref{sec:projection} and formalized via the EFT in \S\ref{sec:eft}). The self-interaction potential possesses a symmetry-breaking vacuum expectation value:
 
 \begin{equation}
 \mathcal{V}(\Phi) = -\frac{1}{2} m^2 |\Phi|^2 + \frac{1}{4} \lambda |\Phi|^4
@@ -448,7 +448,7 @@ Substituting the perturbed source vector $\delta Q^0 = \kappa \delta\Theta$ into
 
 Here, $w_{micro}$ is the physical equation of state of the macroscopic BEC ($w_{micro} \ge 0$), completely excising the $w = -1.27$ scalar from the perturbation dynamics. The solver now strictly processes positive-energy field states, rendering the localized evolution natively ghost-free while accurately tracking the background volumetric stretch.
 
-\subsubsection{Acoustic Shear Damping of Negative Kinetic Modes}
+\subsubsection{\label{sec:shear_damping}Acoustic Shear Damping of Negative Kinetic Modes}
 
 Even with the background fluid stabilized, numerical rounding errors or high-frequency mode coupling in the solver can artificially seed growing modes. The ITSM suppresses these mathematically via the acoustic shear term $f_{ITSM}(a_0, \delta)$ bridging the baryonic matter to the Superfluid Plenum.
 
@@ -472,7 +472,7 @@ where $\Gamma_{shear}$ is the positive-definite momentum transfer rate derived f
 
 Inserting this dynamic friction operator into the perturbation matrix shifts the eigenvalues of the system directly into the left-half of the complex plane. Any nascent instability attempting to cascade via negative-energy states is instantly stalled by the macroscopic drag of the $T^3$ toroidal condensate.
 
-\subsubsection{Strict Sound Speed Constraints and Microcausality}
+\subsubsection{\label{sec:microcausality}Strict Sound Speed Constraints and Microcausality}
 
 To complete the stability proof, the effective sound speed of the cosmological perturbations must remain bound by the Lorentz-invariant threshold at all evaluated frequencies.
 
@@ -527,7 +527,9 @@ This operational ansatz is not arbitrary; it is strictly constrained by two fund
 
 This reframing explicitly acknowledges a formal theoretical gap: the operational fitting formula used for galactic kinematics is strongly motivated by the topological boundary conditions of the $T^3$ manifold, but it is not exactly derived from the $\mathcal{L}_P$ field equation. Extracting a rigorous first-principles mapping from the microscopic Lagrangian to this macroscopic superposition remains an open analytical challenge. However, this ansatz perfectly interpolates the transition region, driving the empirical rotation curve fits in \S\ref{sec:kinematics}, while natively satisfying all precision Solar System constraints.
 
-This is the Plenum Shear Ansatz used throughout the kinematic validation sections. In the high-acceleration Solar System limit ($g_{\text{bar}} \gg a_0$), the phonon gradient saturates and $g_{\text{plenum}} \to 0$, recovering pure Newtonian gravity. In the deep galactic rotation curve limit ($g_{\text{bar}} \ll a_0$), $g_{\text{tot}} \approx (2/3)\sqrt{g_{\text{bar}}\,a_0}$, yielding the flat velocity profile characteristic of the ITSM BTFR. We note that the identification of the coupling constant with $C_{\text{proj}} = 2/3$ rather than an ad-hoc empirical parameter is the central physical distinction of the ITSM from MOND-family models. \subsubsection{Formalizing the Matter-Phonon Effective Field Theory (EFT)}
+This is the Plenum Shear Ansatz used throughout the kinematic validation sections. In the high-acceleration Solar System limit ($g_{\text{bar}} \gg a_0$), the phonon gradient saturates and $g_{\text{plenum}} \to 0$, recovering pure Newtonian gravity. In the deep galactic rotation curve limit ($g_{\text{bar}} \ll a_0$), $g_{\text{tot}} \approx (2/3)\sqrt{g_{\text{bar}}\,a_0}$, yielding the flat velocity profile characteristic of the ITSM BTFR. We note that the identification of the coupling constant with $C_{\text{proj}} = 2/3$ rather than an ad-hoc empirical parameter is the central physical distinction of the ITSM from MOND-family models. 
+
+\subsubsection{\label{sec:eft}Formalizing the Matter-Phonon Effective Field Theory (EFT)}
 To maintain strict mathematical rigor, we must formally bracket the static reduction as an Effective Field Theory (EFT) valid below a phenomenological ultraviolet (UV) cut-off scale ($\Lambda_{\text{UV}} \approx 100 a_0$). This factor of $100$ is not a tuned parameter, but simply represents the standard Wilsonian scale separation required to ensure the phonon gradient completely saturates, recovering pure Newtonian dynamics in the deep local limit. The bare interaction action coupling the phonon perturbation field $\chi$ to the static baryonic source $\rho_b$ is:
 \begin{equation}
 \mathcal{S}_{\text{int}} = \int d^4x \sqrt{-g} \, g_0 \frac{\rho_b}{M_P} \chi
@@ -782,7 +784,7 @@ To test for potential dynamical evolution of the vacuum plenum pressure (analogo
     \label{fig:evolving_n}
 \end{figure}
 
-\subsection{Reconciling the Cosmic Age and BBN: The Plenum as Effective Matter}
+\subsection{\label{sec:bbn_age}Reconciling the Cosmic Age and BBN: The Plenum as Effective Matter}
 A critical requirement for any viable cosmology is reproducing both Big Bang Nucleosynthesis (BBN) constraints and the correct cosmic age ($\approx 13.8$ Gyr). In standard evaluations, removing dark matter while setting the entire total matter budget to baryons ($\Omega_m = \Omega_b \approx 0.255$) catastrophically violates BBN bounds (which strictly limit $\Omega_b \approx 0.043$). Conversely, preserving BBN ($\Omega_b = 0.043$) but removing cold dark matter ($\Omega_{cdm} = 0$) causes the universe to over-expand too slowly, predicting an impossible cosmic age of 21--23 Gyr. 
 
 The ITSM resolves this by reframing the total matter budget. It relies on a \textbf{plenum-dominated matter budget} rather than zero non-baryonic mass. Because the Superfluid Plenum is a Bose-Einstein Condensate (BEC), its total energy density $\rho_p$ decomposes into two distinct thermodynamic phases: the zero-momentum ground state condensate ($\rho_0$) and the thermal phonon excitations ($\rho_{\text{ex}}$).
