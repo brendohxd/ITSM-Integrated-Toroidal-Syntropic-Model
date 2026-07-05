@@ -1,5 +1,13 @@
 # ITSM Changelog & Archive History
 
+## Version 11.3.1 — Causality, AQUAL Testing, and Microphysical Polish (2026-07-05)
+
+### Mechanical & Structural Fixes
+- **$\kappa_{OF}$ and Vacuum Correction (§III):** Corrected the microscopic Onsager-Feynman vortex quantum to $3.72 \times 10^{24} \text{ m}^2/\text{s}$ (for $m=10^{-22}$ eV), yielding a coherent $N \approx 1.02 \times 10^{10}$ vortex quanta ratio. Corrected the scalar field vacuum expectation value sign, and properly identified the coherence length $\xi$ scale using the galactic virial velocity ($v_{\text{gal}} \sim 150 \text{ km/s}$) rather than the relativistic Compton wavelength.
+- **Causality Criterion 2 (§III.C):** Replaced the faulty phase-velocity causality assumption with an explicit convexity requirement ($f''(X) \ge 0$), mathematically verifying that the Born-Infeld Lagrangian exceeds $c_s=1$ near $X \sim 2a_0^2$. Formally deferred causality to the group-velocity argument. Softened the structural Uniqueness Proof to claim it is the "minimal analytic function known to satisfy the remaining differential constraints."
+- **AQUAL Comparison Table (§VII):** Formally injected the completed AQUAL SPARC parameterization tests into the BIC comparison section. Statistically preempted the use of the empirical $\alpha=1$ limit by proving it achieves a significantly worse fit (mean $\Delta\text{BIC} = -37.29$ in favor of ITSM, 70% BIC-preference) than the rigid geometric $2/3$ factor.
+- **Dynamic Scale Matching (§I & X):** Eradicated the claim that $a_0$ is derived from "topology alone". Explicitly integrated the **Dynamic Scale Matching Postulate** into the Abstract and Introduction, and added it to the Limitations section as a required physical closure condition linking the compact circulation scale to the cosmological horizon.
+
 ## Version 11.3.0 — Joint Cosmological Anchors & Adversarial Review Resolutions (2026-07-05)
 
 ### Mathematical Fixes & Core Derivations (Category 1)
