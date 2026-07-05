@@ -1,5 +1,35 @@
 # ITSM Changelog & Archive History
 
+## Version 11.3.0 — Joint Cosmological Anchors & Adversarial Review Resolutions (2026-07-05)
+
+### Mathematical Fixes & Core Derivations (Category 1)
+- **The $a_0$ Derivation (§III.A):** Replaced the dimensionally flawed $\kappa/l$ division. Derived $a_0$ properly using angular velocity ($\omega = c/l = H_0 \implies a_{\text{yield}} = c\omega = cH_0$), distributed across the $2\pi$ topology yielding $a_0 = cH_0/2\pi$. Explicitly caveated the "dynamic scale matching" postulate.
+- **Headline $H_0$ Consistency:** Excised the uninformative $H_0 = 70.63$ SPARC ensemble median from headline results. Anchored exclusively to the Joint Global Likelihood ($72.50$) and the parameter-free Casimir prediction ($72.97$).
+- **The $\Lambda_{\text{UV}}$ Cutoff (§III.H.1):** Corrected the UV cutoff from $10a_0$ to $100a_0$, verified by calculating where the fractional kinetic term reaches $>99\%$ of its asymptotic form.
+- **Cosmological Circulation Quantum (§III.B):** Fixed typographical error in $\kappa_{\text{cosmo}}$, correcting it from $\sim 10^{39} \text{ m}^2/\text{s}$ to the accurate $\sim 3.8 \times 10^{34} \text{ m}^2/\text{s}$, which correctly yields the $N \approx 10^{10}$ vortex-quanta ratio.
+
+### Honest Reframing & Falsifiability Scoping (Category 2)
+- **The Renormalization IR Limit (§III.H.2):** Deleted the broken analytical integral. Reframed $4/9$ as the strict, unrenormalized tree-level theoretical lower bound, acknowledging that bridging to the empirical limit of $1$ requires full lattice QFT.
+- **Bullet Cluster Scoping (§VII.D & Abstract):** Removed the Bullet Cluster from the triad of "near-term falsifiable predictions." Clarified the distinction between bulk collision velocity and local shear $X$, stating that modeling this requires full 3D fractional-Lagrangian hydrodynamics.
+- **The $n$-Value Internal Contradiction (§VI):** Removed the claim of a dynamic $n$-value phase transition. Committed to the $n \approx 0$ CPL-like fit result, plainly stating the volume-tracking mechanism mimics a near-static cosmological constant ($w \approx -1$) in the late universe.
+- **NANOGrav Falsifiability (§VIII.C):** Explicitly stated that current 15-year PTA arrays lack the angular cross-correlation baseline needed to decouple scalar-breathing modes from tensor modes. Deferred testability to the SKA-era.
+- **The $a_0(z)$ High-$z$ BTFR Prediction (§VIII):** Reframed the high-$z$ BTFR zero-point shift as a genuine, quantitatively specific open test, rather than a confirmed prediction, explicitly acknowledging the contradictory non-monotonic offset shrinking observed between $z \sim 0.9$ and $z \sim 2.3$.
+
+### Theoretical Refinement & Statistical Integrity (Category 3 - Completed)
+- **Item 16 (BBN & Cosmic Age):** Restored the Landau Two-Fluid model ($\rho_0$/$\rho_{\text{ex}}$). Stripped the flawed FDM Jeans-suppression scale argument and explicitly stated the suppression of $\rho_{\text{ex}}$ virialization at galactic scales remains an open theoretical question.
+- **Topological Isotropy ($C_{\text{proj}}=2/3$):** Updated the local flatness derivation to explicitly distinguish between the macro-scale Casimir anisotropy (causing the Hubble tension) and the strict geometric trace invariant at the local galactic scale.
+- **MOND Empirical Reconciliation (Tables V/VI):** Restructured the theoretical parameter framing for the SPARC NFW/MOND/ITSM Bayesian comparison. Explicitly acknowledged MOND's superior raw $\chi^2$ (NFW 18,375 vs MOND 19,639 vs ITSM 27,854) and corrected the penalty calculation to honestly reflect $k=0$ for both ITSM and MOND when using fixed literature constants.
+- **Hierarchical Joint Chain Update:** Cleanly replaced the global joint benchmark of $H_0 = 72.50$ and $\Omega_m = 0.255$ with the robust 3,000-step posterior medians: $H_0 = 72.91$ and $\Omega_m = 0.277$ ($n = 0.007$). Added a methodological clarification that the profile likelihood carries a small systemic bias as an approximation to full Bayesian marginalization.
+- **Pantheon Standalone Restoration:** Un-coupled the Pantheon+ standalone fit from the joint fit, restoring its value to $n = 2.857$ and bringing back the pure volumetric dilution ($n=3.0$) context.
+- **The $S_8$ Tension Disclosure (§VI.I):** Removed the overclaimed $S_8$ tension resolution from the introduction and manuscript body. Explicitly acknowledged the internal framework tension where the $\Omega_m = 0.277$ requirement for BBN/age constraints mathematically worsens late-time structural clustering ($\sigma_8$) relative to $\Lambda$CDM.
+- **Bullet Cluster Caveat (§VI.G):** Eliminated the claim of an "abrupt transition into acoustic lock", acknowledging that the exact collision kinematics for $10^3$ km/s non-equilibrium mergers require formal 3D fractional-Lagrangian hydrodynamics rather than standard 1D scalar bounds.
+- **Abstract & Introduction Realignment:** Purged the $S_8$ resolution claims from the Abstract and Introduction itemized lists, aligning the document's theoretical posture with the genuine open problems identified during peer review.
+
+### Codebase & Joint Inference Fixes
+- **DESI BAO Structural Anchor:** Patched `itsm_hierarchical_joint_mcmc.py` to correctly import and route the DESI BAO dataset into the joint log-likelihood. Fixed the unanchored $\Omega_m$ upward drift (previously railing at $0.496$) and restored the joint posterior to the physical target ($\Omega_m \sim 0.28$, $n \sim 0.1$).
+
+
+
 ## Version 11.2.1 — Final Peer-Review Editorial Polish (2026-06-29)
 
 ### Structural & Theoretical Patches

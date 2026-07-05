@@ -90,9 +90,10 @@ def compute_itsm_velocity(R_kpc, V_gas, V_disk, V_bulge,
     H0_si = (H0_kms_mpc * 1.0e3) / MPC_TO_M
     a0    = (C_LIGHT * H0_si) / (2.0 * np.pi)
 
-    # Plenum Shear Ansatz [m/s^2]
-    # The 2/3 is the covariant geometric projection factor — not arbitrary
-    g_eff = g_bar + (2.0 / 3.0) * np.sqrt(g_bar * a0)
+    # AQUAL-type exact closed-form solution (replaces additive Ansatz)
+    # g_eff = |grad(phi)|, where mu(x) = x / sqrt(1+x^2)
+    # Solved exactly: g_tot = sqrt( [g_bar^2 + g_bar * sqrt(g_bar^2 + 4 * a0^2)] / 2 )
+    g_eff = np.sqrt((g_bar**2 + g_bar * np.sqrt(g_bar**2 + 4.0 * a0**2)) / 2.0)
 
     V_calc_m_s  = np.sqrt(g_eff * R_m)
     V_calc_km_s = V_calc_m_s / 1.0e3
@@ -247,7 +248,7 @@ def run_single_galaxy(args):
                      compute_itsm_velocity(R, Vgas, Vdisk, Vbulge, s[0], s[1], s[2]),
                      color='crimson', alpha=0.025)
         ax1.plot(R, V_fit, '-', color='crimson', lw=2.5,
-                 label=rf'ITSM Plenum Shear Ansatz ($H_0={medians[2]:.2f}$)')
+                 label=rf'ITSM AQUAL Solution ($H_0={medians[2]:.2f}$)')
         ax1.set_ylabel(r'Orbital Velocity $V$ [km s$^{-1}$]', fontsize=13)
         ax1.set_title(
             r'ITSM Rotation Curve: ' + safe + r'' + '\n'
@@ -323,7 +324,7 @@ if __name__ == "__main__":
     print("=" * 62)
     print()
     print(" ITSM Physics:")
-    print("   g_eff = g_bar + (2/3) * sqrt(g_bar * a0)")
+    print("   g_eff = sqrt( (g_bar^2 + g_bar*sqrt(g_bar^2 + 4*a0^2)) / 2 )  [Exact AQUAL]")
     print("   a0    = c * H0 / (2 * pi)  [geometrically derived]")
     print()
 

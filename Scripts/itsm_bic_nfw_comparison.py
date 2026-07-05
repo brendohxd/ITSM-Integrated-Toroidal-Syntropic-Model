@@ -15,7 +15,7 @@ import sys
 
 # Dynamic pathing
 script_dir = os.path.dirname(os.path.abspath(__file__))
-repo_root = os.path.abspath(os.path.join(script_dir, "..", ".."))
+repo_root = os.path.abspath(os.path.join(script_dir, ".."))
 sys.path.append(os.path.join(repo_root, "Scripts"))
 try:
     from itsm_plot_style import apply_tier1_style
@@ -63,7 +63,9 @@ for f in galaxy_files:
                     u_b * np.abs(v_bul_raw) * v_bul_raw * d_scale)
         g_b = v_bar_sq / r
         if np.any(g_b < 0): return np.inf
+        
         g_eff = g_b + (2.0/3.0) * np.sqrt(g_b * a0_sparc)
+        
         g_o = (v_obs**2) / r
         g_e = (2 * v_obs * err_v) / r
         chi2 = np.sum(((g_o - g_eff) / g_e)**2)
@@ -101,8 +103,8 @@ for f in galaxy_files:
 
 results = np.array(results)
 results = results[np.isfinite(results)]
-print(f"Mean ΔBIC (NFW - ITSM): {np.mean(results):.2f}")
-print(f"Galaxies where ITSM is statistically preferred (ΔBIC > 0): {np.sum(results > 0)} / {len(results)}")
+print(f"Mean DeltaBIC (NFW - ITSM): {np.mean(results):.2f}")
+print(f"Galaxies where ITSM is statistically preferred (DeltaBIC > 0): {np.sum(results > 0)} / {len(results)}")
 
 # Plotting
 plt.figure(figsize=(10, 6))

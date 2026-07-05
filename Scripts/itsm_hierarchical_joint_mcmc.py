@@ -69,13 +69,19 @@ _zHD = None
 _mu_obs = None
 _cov_inv = None
 _sparc_data = None
+_z_bao = None
+_H_obs_bao = None
+_err_H_bao = None
 
-def init_worker(zHD, mu_obs, cov_inv, sparc_data):
-    global _zHD, _mu_obs, _cov_inv, _sparc_data
+def init_worker(zHD, mu_obs, cov_inv, sparc_data, z_bao, H_obs_bao, err_H_bao):
+    global _zHD, _mu_obs, _cov_inv, _sparc_data, _z_bao, _H_obs_bao, _err_H_bao
     _zHD = zHD
     _mu_obs = mu_obs
     _cov_inv = cov_inv
     _sparc_data = sparc_data
+    _z_bao = z_bao
+    _H_obs_bao = H_obs_bao
+    _err_H_bao = err_H_bao
 
 # ====================================================================
 # LIKELIHOOD FUNCTIONS
@@ -115,7 +121,15 @@ def log_likelihood(theta):
     # 2. SPARC LL
     ll_sparc = get_sparc_ll(H0)
     
-    return ll_pantheon + ll_sparc
+    # 3. BAO Log Likelihood (DESI DR2)
+    radicand_bao = Om * (1 + _z_bao)**3 + (1 - Om) * (1 + _z_bao)**(-n)
+    if np.any(radicand_bao <= 0):
+        return -np.inf
+    H_th = H0 * np.sqrt(radicand_bao)
+    chi2_bao = np.sum(((_H_obs_bao - H_th) / _err_H_bao)**2)
+    ll_bao = -0.5 * chi2_bao
+    
+    return ll_pantheon + ll_sparc + ll_bao
 
 def log_probability(theta):
     lp = log_prior(theta)
@@ -169,6 +183,24 @@ if __name__ == "__main__":
             
     print(f"Loaded {len(zHD)} SN1a and {len(sparc_data)} SPARC galaxies.")
     
+    # --- LOAD DESI BAO ---
+    print("Loading DESI DR2 BAO Dataset...")
+    bao_data_path = os.path.join(script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_mean.txt")
+    bao_cov_path = os.path.join(script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_cov.txt")
+    
+    df_bao = pd.read_csv(bao_data_path, sep=r'\s+', comment='#', names=['z', 'value', 'observable'], header=None)
+    bao_cov = np.loadtxt(bao_cov_path)
+    df_bao['variance'] = np.diag(bao_cov)
+    
+    df_h = df_bao[df_bao['observable'] == 'DH_over_rs'].copy()
+    df_h['H_obs'] = 299792.458 / (df_h['value'] * 147.09)
+    df_h['err_H'] = df_h['H_obs'] * (np.sqrt(df_h['variance']) / df_h['value'])
+    
+    z_bao = df_h['z'].values
+    H_obs_bao = df_h['H_obs'].values
+    err_H_bao = df_h['err_H'].values
+    print(f"Loaded {len(z_bao)} DESI BAO Hubble distance points.")
+    
     # --- MCMC CONFIG ---
     ndim = 3
     nwalkers = 32
@@ -176,19 +208,19 @@ if __name__ == "__main__":
     # TEST MODE TOGGLE
     TEST_MODE = False
     if TEST_MODE:
-        nsteps = 50
+        nsteps = 100
         print(f"--- RUNNING IN TEST MODE ({nsteps} steps) ---")
     else:
         nsteps = 3000
         print(f"--- RUNNING IN TIER-1 PRODUCTION MODE ({nsteps} steps) ---")
         
-    initial_guess = [73.0, 0.3, 3.0]
+    initial_guess = [73.0, 0.3, 1.0]
     pos = initial_guess + 1e-3 * np.random.randn(nwalkers, ndim)
     
     start_time = time.time()
     cores = min(16, cpu_count())
     
-    with Pool(processes=cores, initializer=init_worker, initargs=(zHD, mu_obs, cov_inv, sparc_data)) as pool:
+    with Pool(processes=cores, initializer=init_worker, initargs=(zHD, mu_obs, cov_inv, sparc_data, z_bao, H_obs_bao, err_H_bao)) as pool:
         sampler = emcee.EnsembleSampler(nwalkers, ndim, log_probability, pool=pool)
         sampler.run_mcmc(pos, nsteps, progress=True)
         
@@ -199,6 +231,9 @@ if __name__ == "__main__":
     if TEST_MODE:
         print(f"Estimated time for 3000 steps: {t_min * (3000/nsteps):.2f} minutes.")
         print("Set TEST_MODE = False in script to run production.")
+        flat_samples = sampler.get_chain(discard=20, thin=1, flat=True)
+        H0_m, Om_m, n_m = np.median(flat_samples, axis=0)
+        print(f"TEST MODE MEDIANS -> H0: {H0_m:.2f}, Om: {Om_m:.3f}, n: {n_m:.3f}")
     else:
         flat_samples = sampler.get_chain(discard=600, thin=15, flat=True)
         H0_m, Om_m, n_m = np.median(flat_samples, axis=0)
