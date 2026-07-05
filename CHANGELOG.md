@@ -1,5 +1,13 @@
 # ITSM Changelog & Archive History
 
+## Version 11.3.2 — Flowchart Visual Polish & Postulate Transparency (2026-07-05)
+
+### Figure Updates
+- **Comparison Flowchart (`itsm_model_comparison_flowchart.py`):** 
+  - Demoted the "Origin of $a_0$" and "Galactic rotation curves" explanations from derived constants to a dedicated **POSTULATE** tier, explicitly honoring the manuscript's differentiation between fundamental derivations and the Dynamic Scale Matching Postulate.
+  - Refined the visual palette from a confusing two-blue scheme to four distinct hue families for immediate legibility.
+  - Removed the incorrectly stated $v_c \approx 600$ km/s claim for the Bullet Cluster (which conflicted with bulk shock velocities $\sim 10^3$ km/s), aligning the chart with the corrected qualitative fluid-dynamic phase separation described in the main text.
+  - Clarified JWST prediction mechanism as "vortex scaffolding / 4/9 BTFR bound."
 ## Version 11.3.1 — Causality, AQUAL Testing, and Microphysical Polish (2026-07-05)
 
 ### Mechanical & Structural Fixes
