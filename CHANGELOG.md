@@ -35,7 +35,7 @@
 ### Structural & Theoretical Patches
 - **Zero-Net-Vorticity Defense:** Injected a rigorous topological defense for the $T^3$ zero-net-vorticity constraint. Explicitly scoped the superhorizon domain scale ($L \gtrsim 1.25\chi_{\text{rec}}$) to mathematically permit local circulation asymmetry within the causal horizon, and physically identified antivortex partners as regions of counter-rotating condensate flow.
 - **Reference Rectification:** Inserted missing canonical citations for anisotropic Raychaudhuri/Bianchi cosmologies (Misner, Thorne & Wheeler 1973; Ellis & MacCallum 1969).
-- **Layout & Notation Consistency:** Corrected a stale $H_0$ value in the multi-sector Table IV, resolved abstract $N_{\rm data}$ inconsistencies, standardized NANOGrav band notation to $[1.08, \pi]\text{ nHz}$, resolved overfull $\hbox$ margin bleeds in the table environment, and eradicated empty structural headers.
+- **Layout & Notation Consistency:** Corrected a stale $H_0$ value in the multi-sector Table IV, resolved abstract $N_{\rm data}$ inconsistencies, standardized NANOGrav band notation to $[1.08, \pi]\text{ nHz}$, resolved overfull `\hbox` margin bleeds in the table environment, and eradicated empty structural headers.
 
 ## Version 11.2.0 — Comprehensive Theoretical Fortification (2026-06-29)
 
