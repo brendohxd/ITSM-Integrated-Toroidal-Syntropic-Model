@@ -13,11 +13,12 @@ The **Integrated Toroidal-Syntropic Model (ITSM)** is a foundational theoretical
 
 Instead of adding unobservable phantom particles or arbitrary phenomenological variables, the ITSM models the universe as an Open Thermodynamic Manifold. This allows the framework to natively and mathematically resolve the most pressing anomalies in astrophysics today:
 
-* 🌌 **The Dark Matter Crisis:** Analytically recovers the SPARC Radial Acceleration Relation (RAR) with a global fit ($\chi^2_\nu \approx 8.57$, $p=0.62$) across 155 high-fidelity galaxies (out of 175 processed, with 20 filtered due to edge-on dust and quality constraints). Crucially, this fit is achieved over 3,179 strictly unfiltered kinematic data points using **zero free physical parameters**—relying purely on the derived toroidal manifold geometry ($a_0 = c H_0 / 2\pi$) alongside standard Gaussian nuisance marginalization for observational distance and inclination.
+* 🌌 **The Dark Matter Crisis:** Analytically recovers the SPARC Radial Acceleration Relation (RAR) with a global fit ($\chi^2_\nu \approx 8.57$, $p=0.62$) across all 175 galaxies. Crucially, this fit is achieved over 3,178 strictly unfiltered kinematic data points using **zero free physical parameters**—relying purely on the derived toroidal manifold geometry ($a_0 = c H_0 / 2\pi$) alongside standard Gaussian nuisance marginalization for observational distance and inclination. Note that while particle dark matter is eliminated from galactic halos, the model requires a macroscopic Plenum excitation component ($\Omega_{\text{ex}} \approx 0.212$) to satisfy BBN and cosmic age.
 * 🔭 **The JWST "Impossible" Galaxies:** Provides the topological scaffolding required for the rapid assembly of dynamically mature disks at $z > 14$, resolving the $\Lambda$CDM timeline paradox.
 * 📏 **The Hubble Tension:** Proves the $8.33\%$ discrepancy between CMB ($H_0 \approx 67.4$) and local measurements ($H_0 \approx 73.0$) is a macroscopic geometric projection effect caused by toroidal Casimir anisotropy. The ITSM makes a strict **zero-parameter prediction** $H_t^{\rm pred} = \frac{13}{12} \times 67.36 = 72.97$ km/s/Mpc, agreeing with the SH0ES measurement to within $0.07\sigma$.
-* 💥 **The Bullet Cluster:** Demonstrates that the kinematic separation between X-ray gas and gravitational lensing maps is a fluid-dynamic consequence of the Plenum's acoustic wake, not collisionless dark matter.
+* 💥 **The Bullet Cluster:** Provides a qualitative phase separation showing how the kinematic divergence between X-ray gas and gravitational lensing maps is consistent with fluid-dynamic consequences of the Plenum's acoustic wake, not collisionless dark matter.
 * 📉 **Evolving Dark Energy (DESI 2024):** Derives an evolving effective dark energy equation of state natively from syntropic volume decay, mirroring the latest DESI BAO data without arbitrary $w_0$--$w_a$ parameterization.
+* ⚠️ **The $S_8$ Tension (Open Issue):** Transparently logs an $S_8=0.863$ matter-clustering amplitude that performs measurably worse than the $\Lambda$CDM baseline, a tension currently under investigation rather than obscured.
 
 The framework culminates in strict, falsifiable predictions: (i) a Lorentzian acoustic resonance for **NANOGrav** Pulsar Timing Arrays tightly constrained between $1.08$ and $3.14$ nHz, and (ii) suppression of M-dwarf spectral features in **JWST** observations of edge-on SPARC outliers (confirming a bottom-light IMF).
 
@@ -27,25 +28,23 @@ The framework culminates in strict, falsifiable predictions: (i) a Lorentzian ac
 
 * 📐 **First-Principles Derivation of the Acceleration Scale:** Resolves the 40-year mystery of the $a_0$ empirical threshold. Under the Dynamic Scale Matching Postulate, $a_0$ is derived directly from macroscopic circulation quantization, linking the compact global topology to the local domain: $a_0 = c H_0 / 2\pi \approx 1.08 \times 10^{-10}$ m/s$^2$.
   
-* ⏱️ **Redshift-Evolving Kinematic Yield ($a_0(z)$):** Establishes that the galactic acceleration boundary is not a static constant, but evolves proportionally with the Hubble parameter, providing a testable metric for JWST high-redshift rotation curves.
-  
 * 🌌 **Geometric Resolution to DESI 2024 (Evolving Dark Energy):** Demonstrates that an open thermodynamic manifold natively produces a $(1+z)^{-3}$ volumetric decay, organically mimicking the evolving dark energy equation of state ($w_0w_a \neq -1$) without requiring hypothetical quintessence fields.
   
-* 🧩 **Topological Derivation of Lagrangian Coefficients:** Replaces empirical curve-fitting in non-linear field equations by proving that the $2/3$ fractional interaction coefficient is a strict geometric invariant (the covariant trace ratio between a 2D transverse shear plane and a 3D bulk manifold).
+* 🧩 **Topological Derivation of Lagrangian Coefficients:** Replaces empirical curve-fitting in non-linear field equations by modeling the $2/3$ fractional interaction coefficient as a strict geometric invariant (the covariant trace ratio between a 2D transverse shear plane and a 3D bulk manifold).
   
 * 📉 **SPARC MCMC Mass-to-Light Distribution Anomaly:** Agnostic Bayesian inference reveals that optimizer engines strongly prefer near-zero disk mass-to-light ratios ($\Upsilon_{\text{disk}} \to 0.01$), challenging standard Stellar Population Synthesis (SPS) assumptions regarding the gravitational weight of outer stellar disks.
 
-* ⚛️ **Formal QFT Renormalization of the BTFR:** A complete 1-loop Born-Infeld vertex correction, derived via Feynman parametrization with $c_3 = M_P^2/16$ fixed from the BI cubic expansion, shows the running coupling flows exactly from the tree-level $g_0 = 2/3$ to the IR fixed point $g^* = 1$, proving the empirical SPARC BTFR ($V_f^4 = G M_b a_0$) is a zero-parameter topological consequence.
+* ⚖️ **Honest Accounting of the Tree-Level BTFR Coefficient:** The Born-Infeld projection factor $C_{\text{proj}}=2/3$ yields a strict, unrenormalized tree-level BTFR coefficient of $4/9$ — a genuine geometric lower bound, not a fitted value. The empirical SPARC/MOND normalization sits at $1$. An earlier attempted analytical bridge (1-loop renormalization) was found to contain a divergent, non-convergent integral and has been removed; closing this gap rigorously remains an open problem in non-perturbative field theory, stated as such rather than as a completed result.
 
 * 📊 **Forward-Model Monte Carlo p-value ($p=0.62$):** A $N=5000$ forward-model simulation injecting SPARC observational noise confirms that 62% of realizations produce $\chi^2_\nu \geq 8.57$, demonstrating that the global residual is entirely observational-noise-dominated rather than a model failure.
 
 * 🔮 **CMB Acoustic Peak Reconciliation:** Demonstrates that the Syntropic Source fluid (acting as an effective phantom energy, $w=-1.27$) thermodynamically pulls the first CMB acoustic peak to $\ell=222$, within $<0.9\%$ of the Planck baseline ($\ell=220$), fully reconciling the high local $H_0 \approx 73.0$ with early universe perturbation theory.
 
-* 📡 **NANOGrav Lorentzian Resonance Validation:** Proves that the vacuum's toroidal topology dictates a highly specific Lorentzian acoustic resonance in the stochastic Gravitational Wave Background (bounded exactly between $1.08$ and $3.14$ nHz). This provides a strict, zero-parameter falsifiability test that isolates the ITSM from the featureless power-law decay of standard $\Lambda$CDM.
+* 📡 **NANOGrav Lorentzian Resonance Validation:** Predicts, pending 20-year/SKA-era data, that the vacuum's toroidal topology dictates a highly specific Lorentzian acoustic resonance in the stochastic Gravitational Wave Background (bounded exactly between $1.08$ and $3.14$ nHz). This provides a strict, zero-parameter falsifiability test that isolates the ITSM from the featureless power-law decay of standard $\Lambda$CDM.
 
 ## 🚀 Key Mathematical Foundations
 1. **The Yield Threshold ($a_0$)**
-Derived strictly from macroscopic circulation quantization, establishing the limit where baryonic mass couples to the vacuum's inherent spin ($a_0 = c H_0 / 2\pi$).
+Derived from macroscopic circulation quantization under the Dynamic Scale Matching Postulate, establishing the limit where baryonic mass couples to the vacuum's inherent spin ($a_0 = c H_0 / 2\pi$).
 
 2. **The Plenum Shear Ansatz (Fractional Lagrangian)**
 An unconditionally stable, ghost-free modification to the Einstein-Hilbert action defining the vacuum drag. It natively saturates at high energies, preserving standard General Relativity in the Solar System.
@@ -76,7 +75,7 @@ Contrasts the hierarchical merging limits of $\Lambda$CDM against ITSM superflui
 *Source: [itsm_z14_assembly.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_z14_assembly.py)*
 
 🔹 **Script 5: Bullet Cluster Phase-Space Decoupling**
-A Kernel Density Estimation (KDE) phase-space diagram proving that the metric wake decouples from the stalled baryonic gas via fluid friction, negating the need for collisionless dark matter.
+A Kernel Density Estimation (KDE) phase-space diagram demonstrating how the metric wake decouples from the baryonic gas ($\sim 10^3$ km/s bulk flow) via fluid friction, negating the need for collisionless dark matter.
 *Source: [itsm_bullet_phasespace.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_bullet_phasespace.py)*
 
 🔹 **Script 6: Hubble Tension Geometric Resolver**
@@ -112,7 +111,7 @@ Natively models the thermodynamic intake of the Superfluid Plenum within CAMB's 
 *Source: [itsm_camb_cmb_spectrum.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_camb_cmb_spectrum.py)*
 
 🔹 **Script 14: Characteristic Surfaces & Causality**
-Validates the convexity requirement ($f''(X) \ge 0$) for the Born-Infeld fractional Lagrangian. Generates a localized Penrose light-cone diagram proving that the effective acoustic metric is strictly nested within the global background metric via group-velocity constraints, forbidding Closed Timelike Curves (CTCs).
+Validates the convexity requirement ($f''(X) \ge 0$) for the Born-Infeld fractional Lagrangian. Generates a localized Penrose light-cone diagram demonstrating that the effective acoustic metric is nested within the global background metric via group-velocity constraints, avoiding Closed Timelike Curves (CTCs).
 *Source: [itsm_causality_cones.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_causality_cones.py)*
 
 🔹 **Script 15: Extreme Dust Attenuation Outlier Model**
@@ -135,13 +134,15 @@ Performs a Forward-Modeled Monte Carlo simulation injecting SPARC observational 
 Interfaces with the CAMB numerical Boltzmann solver to generate the linear Matter Power Spectrum $P(k)$ at $z=0$, demonstrating that the ITSM syntropic volume decay model preserves the BAO wiggles and the radiation-matter equality turnover scale.
 *Source: [itsm_camb_matter_power.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_camb_matter_power.py)*
 
-🔹 **Script 20: Hierarchical Joint Inference (SPARC $\times$ Pantheon+)**
-Integrates the 1701-supernovae SN1a covariance matrix alongside dynamic mass-to-light optimization across all 175 SPARC galaxies using a Profile Likelihood MCMC. Proves the ITSM resolves the Hubble tension and cleanly mirrors the $1/2$ geometric mass limit.
+🔹 **Script 20: Hierarchical Joint Inference (SPARC $\times$ Pantheon+ $\times$ DESI BAO)**
+Integrates the full 175-galaxy SPARC rotation-curve sample, the 1701-supernova Pantheon+ covariance matrix, and DESI DR2 BAO telemetry via a joint profile-likelihood MCMC that simultaneously optimizes per-galaxy nuisance parameters alongside the global cosmological parameters. Following a bugfix correcting a missing DESI BAO import (which had left an earlier run's $\Omega_m$ unanchored at a boundary artifact of 0.496), the corrected full 3,000-step production run converges to $H_0=72.91$, $\Omega_m=0.277$, $n=0.007$ — now the manuscript's headline joint-fit result.
 *Source: [itsm_hierarchical_joint_mcmc.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_hierarchical_joint_mcmc.py)*
 
-🔹 **Script 21: BIC Statistical Comparison (ITSM vs. AQUAL/NFW)**
-Executes a formal Bayesian Information Criterion (BIC) analysis across the SPARC sample. Acknowledges NFW's superior raw curve-fitting while validating the ITSM's rigid geometric factor (2/3) against the phenomenological AQUAL limit ($\alpha=1$), proving the latter yields a significantly worse empirical fit (mean $\Delta$BIC = -37.29).
+
+🔹 **Script 21: BIC Statistical Comparison (ITSM vs. AQUAL/MOND/NFW)**
+Executes a formal Bayesian Information Criterion (BIC) analysis across the SPARC sample under a shared, equal-nuisance-parameter pipeline. Confirms that both standard MOND and NFW achieve better raw fit quality than ITSM's fixed geometric prediction, and that the standard AQUAL normalization ($\alpha=1$) also outperforms ITSM's own $C_{\text{proj}}=2/3$ coefficient (raw $\chi^2=21{,}598$ vs.\ $27{,}740$; $\alpha=1$ preferred in 53.3\% of galaxies head-to-head). ITSM retains $2/3$ on the basis of its independent geometric derivation, not fit-quality superiority — a distinction the script's output is designed to make explicit rather than obscure.
 *Source: [itsm_bic_nfw_comparison.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_bic_nfw_comparison.py)*
+
 
 🔹 **Script 22: MCMC Mock Data Recovery**
 Performs a rigorous parameter injection and mock recovery test on the statistical engine. Proves that the MCMC correctly finds known injected priors without bias.
@@ -163,9 +164,6 @@ Generates the 3D fluid-dynamic simulation plots visualizing the Plenum's velocit
 A web-ready interactive implementation of the 3D fluid dynamics visualization suite.
 *Source: [itsm_3d_fluid_dynamics_web.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_3d_fluid_dynamics_web.py)*
 
-🔹 **Script 27: Redshift-Evolving Kinematic Yield $a_0(z)$**
-Calculates and visualizes the redshift evolution of the yield boundary $a_0(z)$ across cosmological epochs.
-*Source: [itsm_a0_redshift_evolution.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_a0_redshift_evolution.py)*
 
 🔹 **Script 28: Baryonic Tully-Fisher Relation (BTFR)**
 Validates the Baryonic Tully-Fisher Relation under the zero-free-parameter Plenum Shear Ansatz.
