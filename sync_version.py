@@ -66,6 +66,13 @@ def rename_manuscript_files(new_version: str):
                     new_pdf = new_file.replace(".tex", ".pdf")
                     shutil.move(old_pdf, new_pdf)
                     print(f"[sync_version] Renamed {os.path.basename(old_pdf)} -> {os.path.basename(new_pdf)}")
+                
+                # Clean up old LaTeX auxiliary files
+                old_aux_pattern = os.path.join(manuscript_dir, f"ITSM_Core_Cosmology_{old_version}.*")
+                for aux_file in glob.glob(old_aux_pattern):
+                    if not aux_file.endswith(".tex") and not aux_file.endswith(".pdf"):
+                        os.remove(aux_file)
+                        print(f"[sync_version] Removed obsolete auxiliary file: {os.path.basename(aux_file)}")
             return old_version
     return None
 
