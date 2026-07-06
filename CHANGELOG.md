@@ -1,5 +1,10 @@
 # ITSM Changelog & Archive History
 
+## Version 11.3.3 — Casimir Topology Softening (2026-07-06)
+
+### Language & Claims Alignment
+- **Casimir Derivation (Lines 825, 870):** Removed the "first principles" descriptor from the Casimir energy calculation for $H_t/H_p$. The language now accurately reflects the current status as a "zeta-function regularization of the Casimir vacuum energy" derived from the $T^3$ topology without observational fitting, properly reserving the term "first-principles" for the future comprehensive derivation from the renormalized stress-energy tensor (slated for v11.4.0).
+
 ## Version 11.3.2 — Flowchart Visual Polish & Postulate Transparency (2026-07-05)
 
 ### Figure Updates
