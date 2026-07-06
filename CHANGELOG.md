@@ -1,5 +1,14 @@
 # ITSM Changelog & Archive History
 
+## Version 11.4.0 — The Safe-Seven Foundational Architecture (2026-07-06)
+
+### Structural & Theoretical Formalization
+- **Claim Status Matrix (§I):** Introduced a strict ontological table distinguishing fundamental postulates, derived geometric consequences, phenomenological effective field closures, and open problems.
+- **Toroidal BEC Grounding (§III.E):** Formally grounded the circulation quantization and vortex nucleation mechanisms in laboratory toroidal Bose-Einstein Condensate kinematics (Onsager-Feynman, Ryu et al., Ramanathan et al.).
+- **Matter-Phonon EFT Bridge (§III.F):** Clarified that the $2/3$ coefficient remains a global geometric trace ratio and formalized the local interaction via a tree-level Effective Field Theory (EFT) valid below a $\Lambda_{\text{UV}}$ cutoff.
+- **Syntropy Terminology (§III.F):** Appended a footnote linking the "Syntropic Source Vector" $Q^\nu$ to classical matter-creation tensors established in Prigogine/Calvão cosmological models.
+- **AQUAL Benchmark Correction (§VII.D):** Replaced legacy $\alpha=1$ text with a rigorously verified control test. Statistically documented that standard AQUAL achieves a superior raw fit ($\chi^2 = 21{,}598$ vs $27{,}740$), securing the $2/3$ coefficient exclusively upon its zero-parameter geometric derivation rather than phenomenological curve-fitting performance. Explicitly logged both vs. NFW ($\Delta\text{BIC}=-21.50$) and vs. ITSM ($\Delta\text{BIC}=-37.22$) comparisons.
+
 ## Version 11.3.3 — Casimir Topology Softening (2026-07-06)
 
 ### Language & Claims Alignment
