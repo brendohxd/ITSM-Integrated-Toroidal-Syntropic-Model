@@ -19,7 +19,7 @@ if not ACCESS_TOKEN:
     sys.exit(1)
 DEPOSITION_ID = '20774996'
 
-VERSION = "v11.3.1"
+VERSION = "v11.3.2"
 ZIP_NAME = f"ITSM_Computational_Framework_{VERSION}.zip"
 
 def create_framework_zip():
