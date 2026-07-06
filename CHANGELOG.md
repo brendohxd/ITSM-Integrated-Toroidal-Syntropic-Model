@@ -1,5 +1,12 @@
 # ITSM Changelog & Archive History
 
+## Version 11.4.1 — Podcast Critique Integration (2026-07-06)
+
+### Rhetorical & Structural Polish
+- **Abstract Caveat:** Appended a phenomenological bridge caveat to the "zero free parameters" claim to honestly signal the closure gap prior to the full field-theoretic derivation.
+- **$S_8$ Tension Link (§VIII):** Structurally linked the $\Omega_m$ increase (required for BBN/cosmic age) to the worsening of the $S_8$ tension, replacing disconnected facts with a mechanistic explanation. Maintained strict cautionary phrasing around $\Gamma_{\text{shear}}$ as an open direction, avoiding premature "active frontier" enthusiasm.
+- **Quantitative Falsifiability (§VII.D):** Replaced a qualitative deferral regarding the Bullet Cluster with a concrete quantitative falsifiability target for future hydro-simulations (the $\sim 150$--$210$ kpc X-ray/lensing centroid offset), citing Clowe et al. 2006 and recent JWST reanalyses.
+
 ## Version 11.4.0 — The Safe-Seven Foundational Architecture (2026-07-06)
 
 ### Structural & Theoretical Formalization
