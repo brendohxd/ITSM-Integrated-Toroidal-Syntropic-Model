@@ -209,7 +209,7 @@ if __name__ == "__main__":
     # --- Paths ---
     script_dir  = os.path.dirname(os.path.abspath(__file__))
     repo_root   = os.path.abspath(os.path.join(script_dir, ".."))
-    data_dir    = os.path.join(repo_root, "SPARC_data")
+    data_dir    = os.path.join(repo_root, "Data", "SPARC_data")
     batch_dir   = os.path.join(repo_root, "Assets", "SPARC_Batch_Outputs")
     figures_dir = os.path.join(repo_root, "Assets", "Figures")
     os.makedirs(batch_dir, exist_ok=True)

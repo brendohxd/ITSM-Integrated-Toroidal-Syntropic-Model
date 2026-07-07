@@ -1,4 +1,10 @@
 """
+Software Dependencies & Attributions:
+This script utilizes a modified version of the CAMB Boltzmann solver.
+Original Source: Lewis, A., Challinor, A., & Lasenby, A. (2000). Efficient computation of CMB anisotropies in closed FRW models. The Astrophysical Journal, 538(2), 473.
+"""
+
+"""
 ITSM Experimental Script — Matter Power Spectrum P(k) via CAMB
 Author: Brendon Boyd
 Staging: Analysis/Experimental/CAMB_Matter/

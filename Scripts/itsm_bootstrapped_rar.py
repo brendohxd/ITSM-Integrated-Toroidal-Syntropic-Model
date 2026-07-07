@@ -48,7 +48,7 @@ a0_sparc = a0_ms2 * conv_factor
 
 # 2. Path handling
 script_dir = os.path.dirname(os.path.abspath(__file__))
-sparc_path = os.path.normpath(os.path.join(script_dir, "..", "SPARC_data", "*.dat"))
+sparc_path = os.path.normpath(os.path.join(script_dir, "..", "Data", "SPARC_data", "*.dat"))
 file_list = glob.glob(sparc_path)
 
 if not file_list:

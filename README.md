@@ -223,6 +223,20 @@ Renders a diagram detailing the geometric projection of the Hubble tension ($H_t
 ## ⚖️ Ethical AI Declaration
 Generative AI has been utilized in this project strictly as a computational torque wrench. Its application is confined to the synthesis of formatting, grammatical structuring, and the parsing of original mathematical derivations into publication-ready LaTeX. While AI assists in pressure-testing logic and streamlining structural execution, it does not originate the underlying physics or the ontological insights of the ITSM. The core architecture remains the original work of the author.
 
+## 📜 Software Dependencies & Attributions
+This project relies on and builds upon several major open-source scientific tools and cosmological datasets. To maintain full transparency and compliance, we explicitly attribute the following core dependencies:
+
+### Open-Source Software
+* **CAMB (Code for Anisotropies in the Microwave Background):** This repository contains a modified version of the original CAMB Boltzmann solver. The ITSM extensions are strictly localized to the `CAMB_ITSM_Solver` directory. *Source: Lewis, A., Challinor, A., & Lasenby, A. (2000). Efficient computation of CMB anisotropies in closed FRW models. The Astrophysical Journal, 538(2), 473.*
+* **emcee:** The MCMC Hammer used for parameter estimation across the SPARC sample. *Source: Foreman-Mackey, D., Hogg, D. W., Lang, D., & Goodman, J. (2013). emcee: The MCMC Hammer. Publications of the Astronomical Society of the Pacific, 125(925), 306.*
+* **corner.py:** Used for rendering all posterior distribution corner plots. *Source: Foreman-Mackey, D. (2016). corner.py: Scatterplot matrices in Python. The Journal of Open Source Software, 1(2), 24.*
+
+### Observational Datasets
+* **SPARC Database:** *Source: Lelli, F., McGaugh, S. S., & Schombert, J. M. (2016). SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry. The Astronomical Journal, 152(6), 157.*
+* **DESI 2024 BAO:** *Source: DESI Collaboration et al. (2024). DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations.*
+* **NANOGrav 15-year Data Set:** *Source: Agazie, G. et al. (2023). The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background. The Astrophysical Journal Letters, 951(1), L8.*
+* **Planck 2018 Results:** *Source: Planck Collaboration et al. (2020). Planck 2018 results. VI. Cosmological parameters. Astronomy & Astrophysics, 641, A6.*
+
 ## 🛠️ Usage & Replication
 To replicate the results locally:
 1. **Clone the repository:**

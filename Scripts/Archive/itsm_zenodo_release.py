@@ -24,7 +24,7 @@ ZIP_NAME = f"ITSM_Computational_Framework_{VERSION}.zip"
 
 def create_framework_zip():
     print(f"[*] Packaging computational framework into {ZIP_NAME}...")
-    dirs_to_zip = ["Scripts", "SPARC_data", "DESI_data", "NANOGrav_data"]
+    dirs_to_zip = ["Scripts", "Data/SPARC_data", "Data/DESI_data", "Data/NANOGrav_data"]
     files_to_zip = ["environment.yml", "README.md", "CHANGELOG.md"]
     
     with zipfile.ZipFile(ZIP_NAME, 'w', zipfile.ZIP_DEFLATED) as zipf:

@@ -52,7 +52,7 @@ def compute_itsm_velocity(R_kpc, V_gas, V_disk, V_bulge, ups_disk, ups_bulge, H0
 def analyze_batch_data():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     batch_dir = os.path.abspath(os.path.join(script_dir, "..", "Assets", "SPARC_Batch_Outputs"))
-    raw_data_dir = os.path.abspath(os.path.join(script_dir, "..", "SPARC_data"))
+    raw_data_dir = os.path.abspath(os.path.join(script_dir, "..", "Data", "SPARC_data"))
     assets_dir = os.path.abspath(os.path.join(script_dir, "..", "Assets"))
 
     chain_files = glob.glob(os.path.join(batch_dir, "MCMC_v2_Chain_CSVs", "*_MCMC_Chains.csv"))

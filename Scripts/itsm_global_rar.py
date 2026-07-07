@@ -34,7 +34,7 @@ print(f"ITSM a0 in SPARC units: {a0_sparc:.1f}")
 
 # 2. Path handling
 script_dir = os.path.dirname(os.path.abspath(__file__))
-sparc_path = os.path.join(script_dir, "..", "SPARC_data", "*.dat")
+sparc_path = os.path.join(script_dir, "..", "Data", "SPARC_data", "*.dat")
 sparc_path = os.path.normpath(sparc_path)
 
 file_list = glob.glob(sparc_path)

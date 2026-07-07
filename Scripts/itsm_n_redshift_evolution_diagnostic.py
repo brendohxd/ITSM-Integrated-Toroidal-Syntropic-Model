@@ -1,4 +1,11 @@
 """
+Software Dependencies & Attributions:
+This script utilizes the emcee (The MCMC Hammer) and corner.py packages for Bayesian inference and visualization.
+- emcee: Foreman-Mackey, D., Hogg, D. W., Lang, D., & Goodman, J. (2013). Publications of the Astronomical Society of the Pacific, 125(925), 306.
+- corner.py: Foreman-Mackey, D. (2016). The Journal of Open Source Software, 1(2), 24.
+"""
+
+"""
 ITSM Diagnostic — Running Syntropic Decay Index (Stabilized + Visualized)
 Author: Brendon Boyd
 Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
@@ -22,8 +29,8 @@ import os
 H0_fixed = 78.63
 Om_fixed = 0.240
 script_dir = os.path.dirname(os.path.abspath(__file__))
-data_path = os.path.abspath(os.path.join(script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_mean.txt"))
-cov_path = os.path.abspath(os.path.join(script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_cov.txt"))
+data_path = os.path.abspath(os.path.join(script_dir, "..", "Data", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_mean.txt"))
+cov_path = os.path.abspath(os.path.join(script_dir, "..", "Data", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_cov.txt"))
 
 df = pd.read_csv(data_path, sep=r'\s+', comment='#', names=['z', 'value', 'observable'], header=None)
 cov = np.loadtxt(cov_path)

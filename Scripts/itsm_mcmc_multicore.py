@@ -1,4 +1,11 @@
 """
+Software Dependencies & Attributions:
+This script utilizes the emcee (The MCMC Hammer) and corner.py packages for Bayesian inference and visualization.
+- emcee: Foreman-Mackey, D., Hogg, D. W., Lang, D., & Goodman, J. (2013). Publications of the Astronomical Society of the Pacific, 125(925), 306.
+- corner.py: Foreman-Mackey, D. (2016). The Journal of Open Source Software, 1(2), 24.
+"""
+
+"""
 ITSM Production Script — Multicore SPARC MCMC Batch Processor
 Author: Brendon Boyd
 Status: PRODUCTION — Live in Scripts/ (promoted from Analysis/Experimental/MCMC_v2/)
@@ -297,7 +304,7 @@ if __name__ == "__main__":
     # --- Paths ---
     script_dir = os.path.dirname(os.path.abspath(__file__))
     repo_root  = os.path.abspath(os.path.join(script_dir, ".."))
-    data_dir   = os.path.join(repo_root, "SPARC_data")
+    data_dir   = os.path.join(repo_root, "Data", "SPARC_data")
     output_dir = os.path.join(repo_root, "Assets", "SPARC_Batch_Outputs")
     os.makedirs(output_dir, exist_ok=True)
 

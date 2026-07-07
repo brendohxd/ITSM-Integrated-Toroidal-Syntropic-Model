@@ -21,10 +21,10 @@ import os
 # 2. Configuration & Pathing (Targeting DR2 Consensus)
 script_dir = os.path.dirname(os.path.abspath(__file__))
 data_path = os.path.abspath(os.path.join(
-    script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_mean.txt"
+    script_dir, "..", "Data", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_mean.txt"
 ))
 cov_path = os.path.abspath(os.path.join(
-    script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_cov.txt"
+    script_dir, "..", "Data", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_cov.txt"
 ))
 
 # 3. Optimized ITSM Parameters (Derived from Global MCMC Convergence)

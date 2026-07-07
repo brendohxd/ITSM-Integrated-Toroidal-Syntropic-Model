@@ -1,4 +1,11 @@
 """
+Software Dependencies & Attributions:
+This script utilizes the emcee (The MCMC Hammer) and corner.py packages for Bayesian inference and visualization.
+- emcee: Foreman-Mackey, D., Hogg, D. W., Lang, D., & Goodman, J. (2013). Publications of the Astronomical Society of the Pacific, 125(925), 306.
+- corner.py: Foreman-Mackey, D. (2016). The Journal of Open Source Software, 1(2), 24.
+"""
+
+"""
 ITSM Cosmological Expansion: Joint DESI BAO & Pantheon+ SN1a MCMC Validator
 Author: Brendon Boyd
 Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
@@ -123,8 +130,8 @@ if __name__ == "__main__":
     
     # --- 2. Load DESI BAO Data ---
     print("Loading DESI DR2 BAO Dataset...")
-    bao_data_path = os.path.join(script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_mean.txt")
-    bao_cov_path = os.path.join(script_dir, "..", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_cov.txt")
+    bao_data_path = os.path.join(script_dir, "..", "Data", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_mean.txt")
+    bao_cov_path = os.path.join(script_dir, "..", "Data", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_cov.txt")
     
     df_bao = pd.read_csv(bao_data_path, sep=r'\s+', comment='#', names=['z', 'value', 'observable'], header=None)
     bao_cov = np.loadtxt(bao_cov_path)

@@ -1,4 +1,11 @@
 """
+Software Dependencies & Attributions:
+This script utilizes the emcee (The MCMC Hammer) and corner.py packages for Bayesian inference and visualization.
+- emcee: Foreman-Mackey, D., Hogg, D. W., Lang, D., & Goodman, J. (2013). Publications of the Astronomical Society of the Pacific, 125(925), 306.
+- corner.py: Foreman-Mackey, D. (2016). The Journal of Open Source Software, 1(2), 24.
+"""
+
+"""
 ITSM Diagnostic Script — Mock Data Injection & Parameter Recovery
 Generates a synthetic SPARC-like galaxy using strict ITSM geometry, injects Gaussian noise,
 and uses MCMC to perfectly recover the input parameters, proving sampler neutrality.

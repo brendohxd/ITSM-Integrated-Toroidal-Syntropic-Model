@@ -52,7 +52,7 @@ a0 = (C_KM * H0 / (2.0 * np.pi)) / MPC_TO_KPC
 def load_ngc4217_data():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     sparc_path = os.path.abspath(
-        os.path.join(script_dir, "..", "SPARC_data", "NGC4217_rotmod.dat")
+        os.path.join(script_dir, "..", "Data", "SPARC_data", "NGC4217_rotmod.dat")
     )
     df = pd.read_csv(
         sparc_path, sep=r'\s+', comment='#',

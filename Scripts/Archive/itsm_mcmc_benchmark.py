@@ -1,4 +1,11 @@
 """
+Software Dependencies & Attributions:
+This script utilizes the emcee (The MCMC Hammer) and corner.py packages for Bayesian inference and visualization.
+- emcee: Foreman-Mackey, D., Hogg, D. W., Lang, D., & Goodman, J. (2013). Publications of the Astronomical Society of the Pacific, 125(925), 306.
+- corner.py: Foreman-Mackey, D. (2016). The Journal of Open Source Software, 1(2), 24.
+"""
+
+"""
 Integrated Toroidal-Syntropic Model (ITSM) - Automated SPARC Batch Processor
 Author: Brendon Boyd
 Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
@@ -206,7 +213,7 @@ def run_mcmc_pipeline(file_path, output_dir):
 if __name__ == "__main__":
     # Define directory tree context relative to active execution script
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.abspath(os.path.join(script_dir, "..", "SPARC_data"))
+    data_dir = os.path.abspath(os.path.join(script_dir, "..", "Data", "SPARC_data"))
     
     # Target Clean Save Matrix Folder creation loop
     output_dir = os.path.abspath(os.path.join(script_dir, "..", "Assets", "SPARC_Batch_Outputs"))

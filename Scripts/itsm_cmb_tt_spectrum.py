@@ -1,3 +1,9 @@
+"""
+Software Dependencies & Attributions:
+This script utilizes a modified version of the CAMB Boltzmann solver.
+Original Source: Lewis, A., Challinor, A., & Lasenby, A. (2000). Efficient computation of CMB anisotropies in closed FRW models. The Astrophysical Journal, 538(2), 473.
+"""
+
 import os
 import sys
 import numpy as np
@@ -58,7 +64,7 @@ def main():
     
     # 2. Load Planck PR3 Data
     print("Loading Planck PR3 2018 binned TT data...")
-    planck_file = os.path.join("Planck_data", "COM_PowerSpect_CMB-TT-binned_R3.01.txt")
+    planck_file = os.path.join("Data", "Planck_data", "COM_PowerSpect_CMB-TT-binned_R3.01.txt")
     if not os.path.exists(planck_file):
         print(f"Error: Planck data file not found at {planck_file}")
         sys.exit(1)

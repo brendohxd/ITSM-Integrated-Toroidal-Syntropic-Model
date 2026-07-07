@@ -95,7 +95,7 @@ RESONANCE_WIDTH = 0.50        # Damping width [nHz] — toroidal vortex decay ra
 RESONANCE_AMP   = 1.50e-14   # Resonance amplitude [dimensionless strain]
 
 # NANOGrav 15yr KDE Data paths
-KDE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "NANOGrav_data", "NANOGrav15yr_KDE-FreeSpectra_v1.1.0", "ceffyl_data", "30f_fs{hd}_ceffyl")
+KDE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Data", "NANOGrav_data", "NANOGrav15yr_KDE-FreeSpectra_v1.1.0", "ceffyl_data", "30f_fs{hd}_ceffyl")
 
 def load_kde_data():
     freqs = np.load(os.path.join(KDE_DIR, "freqs.npy")) * 1e9 # convert Hz to nHz

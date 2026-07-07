@@ -23,7 +23,7 @@ try:
 except ImportError:
     pass
 
-data_dir = os.path.join(repo_root, "SPARC_data")
+data_dir = os.path.join(repo_root, "Data", "SPARC_data")
 galaxy_files = sorted(glob.glob(os.path.join(data_dir, "*_rotmod.dat")))
 
 assert len(galaxy_files) == 175, "Strict adherence to 175 SPARC galaxies is required."
