@@ -1,5 +1,11 @@
 # ITSM Changelog & Archive History
 
+## Version 11.4.2 — Red-Team Diagnostics & Independence Audits (2026-07-14)
+
+### Diagnostic Tools
+- **Red-Team C=2/3 vs C=1.0 Controlled Comparison:** Added an independent, falsification-focused diagnostic script (`Team Red - Grok/redteam_comparison.py`) to formally audit the geometric projection factor against the standard MOND limit. The script fixes nuisance parameters, cuts, and the optimizer environment to isolate the $C$ factor.
+- **Results Logging:** Diagnostic outputs are siloed in `Team Red - Grok/Outputs/` to separate adversarial testing material from the canonical codebase.
+
 ## Version 11.4.1 — Podcast Critique Integration (2026-07-06)
 
 ### Rhetorical & Structural Polish
