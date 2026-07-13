@@ -7,8 +7,9 @@
 - **Codified Mandates:** Added strict `README.md` manifestos to each team directory explicitly dictating their operational boundaries and ensuring reviewers do not "defend" the framework but subject it to hostile tests and objective logic audits.
 
 ### Diagnostic Tools
-- **Red-Team C=2/3 vs C=1.0 Controlled Comparison:** Added an independent, falsification-focused diagnostic script (`Team Red - Grok/redteam_comparison.py`) to formally audit the geometric projection factor against the standard MOND limit. The script fixes nuisance parameters, cuts, and the optimizer environment to isolate the $C$ factor.
-- **Results Logging:** Diagnostic outputs are siloed in `Team Red - Grok/Outputs/` to separate adversarial testing material from the canonical codebase.
+- **TR-000 — C=2/3 vs C=1.0 Controlled Comparison (`redteam_comparison.py`):** Initial falsification-focused diagnostic auditing the geometric projection factor against the standard MOND limit under identical nuisance bounds. Result: C=1.0 marginally preferred (91 vs 79 galaxies; mean Delta-chi^2 = -36.81, median = -0.76).
+- **TR-001-v2 — Deep Re-Optimization Diagnostic (`tr001_v2_diagnostic.py`):** Locked execution package targeting the 30 worst-performing galaxies under C=2/3. Uses 5x multi-start L-BFGS-B + differential evolution (popsize=20) via multiprocessing.Pool across all available cores. Key findings: (1) median Delta-chi^2 of -0.76 confirms the mean is heavily outlier-driven; (2) 10% trimmed mean of -6.88 confirms a moderate systematic lean toward C=1; (3) re-optimization parameter vectors railing at bound walls for multiple galaxies signal structural incompatibility between C=2/3 and those rotation curves.
+- **Results Logging:** All diagnostic outputs siloed in `Team Red - Grok/Outputs/` to separate adversarial testing material from the canonical codebase.
 
 ## Version 11.4.1 — Podcast Critique Integration (2026-07-06)
 
