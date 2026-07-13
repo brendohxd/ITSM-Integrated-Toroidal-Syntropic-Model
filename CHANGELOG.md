@@ -2,6 +2,10 @@
 
 ## Version 11.4.2 — Red-Team Diagnostics & Independence Audits (2026-07-14)
 
+### Team Infrastructure & Adversarial Setup
+- **Adversarial Architecture:** Formalized the repository structure into dedicated operational units, adding `Team Red - Grok/` (empirical falsification), `Team Violet - Claude/` (logic and theoretical consistency auditing), and `Team Amber - Sol/` (methodology, coordination, and synthesis).
+- **Codified Mandates:** Added strict `README.md` manifestos to each team directory explicitly dictating their operational boundaries and ensuring reviewers do not "defend" the framework but subject it to hostile tests and objective logic audits.
+
 ### Diagnostic Tools
 - **Red-Team C=2/3 vs C=1.0 Controlled Comparison:** Added an independent, falsification-focused diagnostic script (`Team Red - Grok/redteam_comparison.py`) to formally audit the geometric projection factor against the standard MOND limit. The script fixes nuisance parameters, cuts, and the optimizer environment to isolate the $C$ factor.
 - **Results Logging:** Diagnostic outputs are siloed in `Team Red - Grok/Outputs/` to separate adversarial testing material from the canonical codebase.
