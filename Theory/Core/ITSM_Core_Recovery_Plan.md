@@ -125,8 +125,25 @@ Compare three explicit replacements: a controlled nonrelativistic
 gradient-dominated branch, a two-field split between background density and
 force phonon, and a noncanonical preferred-frame condensate. Select a route
 only after checking stability, derivative control, technical naturalness and
-the existence of the spatial `Y^(3/2)` operator. MAT-001 remains blocked until
-this successor gate passes.
+the existence of the spatial `Y^(3/2)` operator.
+
+UVIR-002 result (2026-07-17): **closed as a provisional route selection**. The
+standalone nonrelativistic `X<0` branch produces the cubic spatial term but has
+`P_XX < 0` and is rejected. A two-field split is useful but insufficient alone.
+The selected successor is a two-sector preferred-frame force EFT: retain the
+complex condensate for density, circulation and topology, and use a separate
+force scalar with independent temporal `Q` and spatial `Y` invariants. The
+simple cubic truncation degenerates at zero gradient and its coefficient is
+unmatched. See `Theory/Gates/UVIR-002/UVIR-002_ROUTE_SELECTION.md`.
+
+### UVIR-003 -- Validate the selected preferred-frame action
+
+Declare one covariant two-sector action, fix the status of `U^mu`, count its
+constraints and propagating degrees of freedom, and derive the quadratic action
+about cosmological, zero-gradient and galactic backgrounds. The gate must find
+a controlled zero-gradient completion, a positive kinetic/gradient domain, a
+cutoff and a symmetry or matching explanation for the operator hierarchy.
+MAT-001 remains blocked until this gate passes.
 
 ### MAT-001 -- Matter coupling and `C_proj`
 
@@ -238,7 +255,7 @@ Before the v12 alpha can replace the baseline manuscript:
 
 The recommended order after the architecture draft is:
 
-`UVIR-001 -> UVIR-002 -> MAT-001 -> (SCR-001, LEN-001) -> DISK-001 ->`
+`UVIR-001 -> UVIR-002 -> UVIR-003 -> MAT-001 -> (SCR-001, LEN-001) -> DISK-001 ->`
 `(TOP-001, VOR-001, WAK-001, reservoir) -> CBR-002 ->`
 `(COS-001, PERT-001)`.
 

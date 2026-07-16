@@ -70,8 +70,14 @@ sextic terms. It has a stable timelike finite-density branch and the pure
 sextic limit yields `P(Z) proportional to (Z-m^2)^(3/2)`. However,
 `P_Z = rho0^2/2 > 0` forces a leading quadratic static-gradient response about
 every nonzero stable condensate. The candidate is therefore rejected as the
-direct origin of the spatial `Y^(3/2)` operator. No alternative microscopic
-action is canonical until UVIR-002 selects and validates a replacement route.
+direct origin of the spatial `Y^(3/2)` operator.
+
+UVIR-002 rejected the standalone nonrelativistic `X<0` branch because its
+quadratic time kinetic coefficient is negative. It provisionally selected a
+two-sector preferred-frame architecture: `Phi` retains the finite-density,
+circulation and topology roles, while a separate force field `psi` may use
+independent temporal and spatial invariants. This is not yet a canonical
+microscopic action. UVIR-003 must validate the selected route.
 
 Finite density must be declared explicitly rather than inferred from the field
 name. In a homogeneous rest frame use
@@ -106,8 +112,9 @@ h^{mu nu} = g^{mu nu} + U^mu U^nu.
 ```
 
 Whether `U^mu` is derived from the condensate phase, a separate foliation
-field, or a coarse-grained fluid variable remains open. The manuscript must
-state which interpretation is being used in each calculation.
+field, or an independent constrained vector remains an explicit UVIR-003
+choice. The manuscript must state which interpretation is being used in each
+calculation.
 
 ### 3.4 Infrared phonon sector
 
@@ -124,7 +131,10 @@ the fundamental vacuum action and it is not presently derived from the
 Born--Infeld expression in v11.4.1. UVIR-001 also shows that a timelike
 `P(Z) proportional to (Z-m^2)^(3/2)` obtained from the canonical sextic
 condensate is not the same operator: its controlled static expansion begins at
-quadratic order.
+quadratic order. UVIR-002 permits, but does not derive, the spatial operator by
+separating the temporal invariant `Q = U^mu nabla_mu psi/a0` from `Y`. The
+simple cubic force truncation has a degenerate quadratic spatial operator at
+zero background gradient; its regulator and full stability remain open.
 
 ### 3.5 Matter sector
 
@@ -193,8 +203,10 @@ L_IR = -(2 C_IR/3) M_P^2 a0^2 Y^(3/2) + higher operators.
 Here `C_IR` is a normalization-dependent Wilson coefficient. Identifying it
 with the geometric projection factor `2/3` is a matching hypothesis until
 MAT-001 closes. UVIR-001 did not produce this coefficient because the required
-spatial operator was absent; MAT-001 is blocked until UVIR-002 supplies a
-viable microscopic branch.
+spatial operator was absent. UVIR-002 selected a provisional route but did not
+derive the coefficient or close its stability problem. MAT-001 is therefore
+blocked until UVIR-003 validates the selected two-sector preferred-frame
+action.
 
 An analytic microscopic theory may yield a non-analytic finite-density EFT.
 Therefore non-analyticity of the phonon action is not, by itself, a pathology.
@@ -370,7 +382,7 @@ The canonical theory may not:
 
 Every observable claim must name its upstream sectors and gates. Examples:
 
-- galaxy rotation curves depend on UVIR-002, MAT-001 and DISK-001;
+- galaxy rotation curves depend on UVIR-003, MAT-001 and DISK-001;
 - Solar-System statements depend on SCR-001 and LEN-001;
 - lensing depends on LEN-001;
 - persistent anisotropy depends on TOP-001, the reservoir model and CBR-002;

@@ -1,0 +1,48 @@
+{
+  "gate": "UVIR-002",
+  "interpretation": "PASS validates the comparison calculation; it does not establish a microscopic completion.",
+  "mat001_status": "BLOCKED_PENDING_UVIR_003",
+  "microscopic_closure": "OPEN",
+  "next_gate": "UVIR-003",
+  "route_a": {
+    "P_X": "3*kappa_nr*sqrt(u)/2",
+    "P_XX": "-3*kappa_nr/(4*sqrt(u))",
+    "reason": "The target X<0 branch has negative quadratic time kinetic coefficient.",
+    "static_lagrangian": "-sqrt(2)*kappa_nr*q**3/(4*m**(3/2))",
+    "verdict": "REJECTED"
+  },
+  "route_b": {
+    "reason": "Role separation is useful but does not derive the spatial cubic or its coefficient.",
+    "verdict": "CONDITIONAL"
+  },
+  "route_c": {
+    "longitudinal_speed_squared": "6*A*q/F**2",
+    "reason": "Independent temporal and spatial invariants admit a healthy local nonzero-gradient branch, but the minimal cubic truncation degenerates at zero gradient.",
+    "spatial_hessian": [
+      [
+        "6*A*q",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "3*A*q",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "3*A*q"
+      ]
+    ],
+    "transverse_speed_squared": "3*A*q/F**2",
+    "verdict": "CONDITIONAL"
+  },
+  "selected_architecture": {
+    "background_sector": "Complex condensate Phi retains finite density, circulation, defects, and topology.",
+    "force_sector": "Separate psi and preferred frame U define independent temporal Q and spatial Y invariants."
+  },
+  "selected_route": "TWO_SECTOR_PREFERRED_FRAME_FORCE_EFT",
+  "selection_status": "PROVISIONAL",
+  "validation_status": "PASS"
+}
