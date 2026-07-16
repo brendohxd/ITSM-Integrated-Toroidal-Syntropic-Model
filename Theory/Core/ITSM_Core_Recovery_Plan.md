@@ -112,6 +112,22 @@ Required checks:
 - phonon sound cone and strong-coupling scale;
 - matching to `G`, `a0` and field normalization.
 
+UVIR-001 result (2026-07-17): **closed negative for the declared minimal
+candidate**. The canonical mass--quartic--sextic complex scalar has a stable
+timelike branch and yields `P(Z) proportional to (Z-m^2)^(3/2)` in the pure
+sextic limit, but its static expansion begins at quadratic order because
+`P_Z = rho0^2/2 > 0`. It does not generate the required spatial `Y^(3/2)`
+operator. See `Theory/Gates/UVIR-001/UVIR-001_GATE_REPORT.md`.
+
+### UVIR-002 -- Select an alternative microscopic route
+
+Compare three explicit replacements: a controlled nonrelativistic
+gradient-dominated branch, a two-field split between background density and
+force phonon, and a noncanonical preferred-frame condensate. Select a route
+only after checking stability, derivative control, technical naturalness and
+the existence of the spatial `Y^(3/2)` operator. MAT-001 remains blocked until
+this successor gate passes.
+
 ### MAT-001 -- Matter coupling and `C_proj`
 
 Derive the baryon--phonon vertex and calculate the observable Wilson
@@ -222,7 +238,7 @@ Before the v12 alpha can replace the baseline manuscript:
 
 The recommended order after the architecture draft is:
 
-`UVIR-001 -> MAT-001 -> (SCR-001, LEN-001) -> DISK-001 ->`
+`UVIR-001 -> UVIR-002 -> MAT-001 -> (SCR-001, LEN-001) -> DISK-001 ->`
 `(TOP-001, VOR-001, WAK-001, reservoir) -> CBR-002 ->`
 `(COS-001, PERT-001)`.
 

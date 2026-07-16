@@ -65,8 +65,13 @@ The amplitude `rho` permits finite density, healing dynamics and zeros at
 defect cores. The phase `Theta` permits phonons and quantized winding. This
 sector is the natural home of the original rotational and superfluid ontology.
 
-A useful candidate action may contain analytic mass, quartic and sextic terms,
-but no particular polynomial potential is canonical until UVIR-001 closes.
+UVIR-001 tested the minimally kinetic candidate with analytic mass, quartic and
+sextic terms. It has a stable timelike finite-density branch and the pure
+sextic limit yields `P(Z) proportional to (Z-m^2)^(3/2)`. However,
+`P_Z = rho0^2/2 > 0` forces a leading quadratic static-gradient response about
+every nonzero stable condensate. The candidate is therefore rejected as the
+direct origin of the spatial `Y^(3/2)` operator. No alternative microscopic
+action is canonical until UVIR-002 selects and validates a replacement route.
 
 Finite density must be declared explicitly rather than inferred from the field
 name. In a homogeneous rest frame use
@@ -86,8 +91,10 @@ d^2 V_eff/d rho^2 |_(rho0) > 0,
 rho0 != 0.
 ```
 
-The ensemble, background charge, branch stability and amplitude gap are tasks
-for UVIR-001, not assumptions hidden in the phrase ``finite density.''
+UVIR-001 established the branch stability, susceptibilities and mode gaps for
+a sufficient positive-coupling domain of the tested candidate. The physical
+charge-setting mechanism and any replacement UV action remain open; finite
+density must still not be treated as an undeclared assumption.
 
 ### 3.3 Plenum frame
 
@@ -114,7 +121,10 @@ Y = h^{mu nu} nabla_mu psi nabla_nu psi / a0^2.
 
 The conditional low-acceleration EFT contains a `Y^(3/2)` operator. It is not
 the fundamental vacuum action and it is not presently derived from the
-Born--Infeld expression in v11.4.1.
+Born--Infeld expression in v11.4.1. UVIR-001 also shows that a timelike
+`P(Z) proportional to (Z-m^2)^(3/2)` obtained from the canonical sextic
+condensate is not the same operator: its controlled static expansion begins at
+quadratic order.
 
 ### 3.5 Matter sector
 
@@ -182,7 +192,9 @@ L_IR = -(2 C_IR/3) M_P^2 a0^2 Y^(3/2) + higher operators.
 
 Here `C_IR` is a normalization-dependent Wilson coefficient. Identifying it
 with the geometric projection factor `2/3` is a matching hypothesis until
-MAT-001 closes.
+MAT-001 closes. UVIR-001 did not produce this coefficient because the required
+spatial operator was absent; MAT-001 is blocked until UVIR-002 supplies a
+viable microscopic branch.
 
 An analytic microscopic theory may yield a non-analytic finite-density EFT.
 Therefore non-analyticity of the phonon action is not, by itself, a pathology.
@@ -342,6 +354,8 @@ All claims use exactly one of these statuses:
 The canonical theory may not:
 
 - equate the present Born--Infeld action with the `Y^(3/2)` phonon EFT;
+- equate a timelike `P(Z) proportional to (Z-m^2)^(3/2)` equation of state
+  with the spatial `Y^(3/2)` operator about a finite-density background;
 - identify a trace ratio with a normalized local force vertex without matching;
 - infer directional stress solely by counting torus cycles;
 - describe a transient target crossing as an attractor;
@@ -356,7 +370,7 @@ The canonical theory may not:
 
 Every observable claim must name its upstream sectors and gates. Examples:
 
-- galaxy rotation curves depend on UVIR-001, MAT-001 and DISK-001;
+- galaxy rotation curves depend on UVIR-002, MAT-001 and DISK-001;
 - Solar-System statements depend on SCR-001 and LEN-001;
 - lensing depends on LEN-001;
 - persistent anisotropy depends on TOP-001, the reservoir model and CBR-002;
