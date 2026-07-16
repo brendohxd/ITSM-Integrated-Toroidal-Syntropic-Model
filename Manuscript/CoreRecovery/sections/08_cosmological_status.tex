@@ -7,17 +7,20 @@ the syntropic exponent or effective equation of state and sometimes mixed
 them across diagnostics.  Those outputs remain provenance and cannot be
 treated as one canonical cosmology.
 
-At background level, a conservative sector decomposition has the schematic
+At background level, a conservative sector decomposition has the
 form
 \begin{align}
- \dot\rho_P+3H(\rho_P+p_P)+\mathcal W_\Pi &= Q,\\
+ \dot\rho_P+3H(\rho_P+p_P)+\pi^{\mu\nu}\sigma_{\mu\nu} &= Q,\\
  \dot\rho_R+3H(\rho_R+p_R) &= -Q,
  \label{eq:background-exchange}
 \end{align}
-where $\mathcal W_\Pi$ denotes the work performed by anisotropic stress in the
-chosen geometry.  Its exact coefficient follows from the covariant stress
-tensor, not from notation.  The total continuity equation follows by summing
-the sectors.
+For the biaxial conventions of Sec.~6,
+Eq.~\eqref{eq:anisotropic-work} gives the exact specialization
+\begin{equation}
+ \dot\rho_P+3H(\rho_P+p_P)+\frac{2}{3}\Pi\delta=Q.
+ \label{eq:biaxial-plenum-continuity}
+\end{equation}
+The total continuity equation follows by summing the sectors.
 
 No predetermined law such as $Q\propto(1+z)^{-3}$ is adopted here.  In
 particular, $(1+z)^{-3}=a^3$ grows toward late time and cannot simultaneously
@@ -27,8 +30,9 @@ and fit one background with an explicit parameter inventory.
 \subsection{What CBR-001 changes}
 
 CBR-001 does not remove topology-dependent cosmological stress.  It shows that
-the tested passive free-field stress redshifts away and cannot support a
-persistent $13/12$ directional expansion ratio.  Therefore
+the tested passive free-field source has the evolving form
+$\Pi_{\rm Cas}=a^{-4}F_\Pi(r)$ and becomes unable to support a persistent
+$13/12$ directional expansion ratio.  Therefore
 \begin{itemize}
 \item $H_0=72.97\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$ is not a parameter-free ITSM
 prediction;

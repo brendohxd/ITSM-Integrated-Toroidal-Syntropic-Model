@@ -6,7 +6,7 @@ not replace `Manuscript/ITSM_Core_Cosmology_v11.4.1.tex`.
 Main file:
 
 ```text
-ITSM_Core_v12.0-alpha.tex
+ITSM_Core_v12.0-alpha.1.tex
 ```
 
 Build from the repository root with the bundled Codex LaTeX compiler, or from

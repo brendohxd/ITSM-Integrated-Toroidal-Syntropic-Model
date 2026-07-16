@@ -2,6 +2,9 @@
 
 \subsection{Inverse construction of the cubic-gradient operator}
 
+Nonlinear Poisson equations derived from nonquadratic potential actions have a
+standard precedent in AQUAL-type theories \cite{bekensteinmilgrom1984}.  Here
+we isolate the coefficient normalization required by the ITSM infrared branch.
 Let $q=|\nabla\psi|$ and consider the static phonon action
 \begin{equation}
  S_\psi=\int \dd t\,\dd^3x\left[-K(q)-C_m\rho_b\psi\right].
@@ -12,13 +15,10 @@ Variation yields
  \nabla\cdot\left[\frac{K'(q)}{q}\nabla\psi\right]=C_m\rho_b.
  \label{eq:general-field}
 \end{equation}
-For a spherical local source, requiring
+The required cubic-gradient operator is parameterized as
 \begin{equation}
- C_m q=C_m\sqrt{a_0g_N}
-\end{equation}
-fixes, in the convention $C_m=C_{\rm IR}$,
-\begin{equation}
- K(q)=\frac{C_{\rm IR}}{12\pi Ga_0}q^3.
+ K(q)=\frac{C_{\rm IR}}{12\pi Ga_0}q^3,
+ \qquad C_{\rm IR}>0.
  \label{eq:cubic-K}
 \end{equation}
 
@@ -30,21 +30,30 @@ The complete static weak-field action in this normalization is
  -C_m\rho_b\psi\bigg].
  \label{eq:wf-action}
 \end{align}
-When $C_m=C_{\rm IR}$, the sourced equation becomes
+For independent positive coefficients $C_m$ and $C_{\rm IR}$, the sourced
+equation is
 \begin{equation}
  \nabla\cdot\left[\frac{|\nabla\psi|}{a_0}\nabla\psi\right]
- =4\pi G\rho_b.
+ =4\pi G\frac{C_m}{C_{\rm IR}}\rho_b.
  \label{eq:p3-local}
 \end{equation}
 For spherical symmetry this gives
 \begin{equation}
- |\nabla\psi|^2=a_0g_N,
- \qquad
- g_P=C_m\sqrt{a_0g_N}.
- \label{eq:square-root}
+ |\nabla\psi|^2=\frac{C_m}{C_{\rm IR}}a_0g_N.
+ \label{eq:general-gradient}
 \end{equation}
-Equation~\eqref{eq:square-root} is an action-level result for the conditional
-IR theory, not a derivation of $C_m=2/3$.
+Since the physical acceleration is $g_P=C_m|\nabla\psi|$, the invariant
+observable square-root coefficient is
+\begin{equation}
+ g_P=C_{\rm obs}\sqrt{a_0g_N},
+ \qquad
+ \boxed{C_{\rm obs}=\frac{C_m^{3/2}}{\sqrt{C_{\rm IR}}}}.
+ \label{eq:observable-coupling}
+\end{equation}
+Only under the normalization choice $C_m=C_{\rm IR}=C$ does
+$C_{\rm obs}=C$.  That convenient choice is not a physical derivation of
+$C=2/3$; MAT-001 must calculate the invariant combination in
+Eq.~\eqref{eq:observable-coupling}.
 
 \subsection{Compact toroidal source}
 
@@ -59,11 +68,18 @@ with zero spatial averages for $\delta\rho_b$ and $\varphi$.  The local
 periodic equation has the form
 \begin{equation}
  D_i\left[\frac{|D\varphi|}{a_0}D^i\varphi\right]
- =4\pi G\delta\rho_b+\mathcal S_Q,
+ =4\pi G\frac{C_m}{C_{\rm IR}}\delta\rho_b+\mathcal S_Q,
  \qquad
- \int_{\Tthree}(4\pi G\delta\rho_b+\mathcal S_Q)\,\dd V=0.
+ \int_{\Tthree}\left(4\pi G\frac{C_m}{C_{\rm IR}}
+ \delta\rho_b+\mathcal S_Q\right)\,\dd V=0.
  \label{eq:periodic-p3}
 \end{equation}
+Here $\mathcal S_Q\equiv\mathcal S_Q[\delta Q_{\rm syn}]$ is a conditional
+zero-mean scalar source representing the inhomogeneous projection of
+reservoir--plenum exchange into the phonon equation.  Its functional map from
+the vector exchange current has not been derived; setting $\mathcal S_Q=0$ is
+the local-static baseline rather than a claim that reservoir perturbations
+vanish identically.
 The homogeneous mode belongs to the cosmological/open-system problem.  A
 localized spherical solution is therefore the small-region,
 compensated-overdensity limit of Eq.~\eqref{eq:periodic-p3}, not an isolated
@@ -74,16 +90,17 @@ global cosmology.
 For a general density distribution, equality of divergences permits
 \begin{equation}
  \frac{|\nabla\varphi|}{a_0}\nabla\varphi
- =\nabla\Phi_N+\nabla\times\mathbf H.
+ =\frac{C_m}{C_{\rm IR}}\nabla\Phi_N+\nabla\times\mathbf H.
  \label{eq:curl-field}
 \end{equation}
 The solenoidal field vanishes in sufficient symmetry but is generally nonzero
 for a finite disk.  Consequently a pointwise square-root prescription is a
 historical algebraic approximation.  DISK-001 must solve
-Eq.~\eqref{eq:periodic-p3} for realistic baryonic sources before $C_m=2/3$ and
-$C_m\simeq1$ can be fairly compared.
+Eq.~\eqref{eq:periodic-p3} for realistic baryonic sources before
+$C_{\rm obs}=2/3$ and $C_{\rm obs}\simeq1$ can be fairly compared.
 
-The coefficient also changes under a rescaling of $\psi$ unless the kinetic
-and matter vertices are fixed together.  The trace ratio $2/3$ remains a
+The separate coefficients change under a rescaling of $\psi$, while the
+physical response is carried by the invariant combination
+$C_{\rm obs}=C_m^{3/2}/\sqrt{C_{\rm IR}}$.  The trace ratio $2/3$ remains a
 geometric motivation and a matching hypothesis, not a completed local Wilson
 coefficient.

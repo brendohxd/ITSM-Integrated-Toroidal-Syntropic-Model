@@ -14,6 +14,9 @@ research gates have been solved.
 No manuscript claim may be promoted beyond the status recorded in the claim
 ledger merely because it is compatible with this architecture.
 
+Conventions: metric signature `(-,+,+,+)`; `c = hbar = 1` except when restored
+for dimensions; `M_P^(-2) = 8 pi G`; and `kappa = 8 pi G`.
+
 ## 2. Core physical proposition
 
 The recovered ITSM proposition is:
@@ -64,6 +67,27 @@ sector is the natural home of the original rotational and superfluid ontology.
 
 A useful candidate action may contain analytic mass, quartic and sextic terms,
 but no particular polynomial potential is canonical until UVIR-001 closes.
+
+Finite density must be declared explicitly rather than inferred from the field
+name. In a homogeneous rest frame use
+
+```text
+Theta = mu t + vartheta
+```
+
+or covariantly `nabla_mu Theta = -mu U_mu + nabla_mu vartheta` at leading
+order. At fixed charge or chemical potential the homogeneous amplitude is
+selected by
+
+```text
+V_eff(rho; mu) = V(rho) - (1/2) mu^2 rho^2,
+d V_eff/d rho |_(rho0) = 0,
+d^2 V_eff/d rho^2 |_(rho0) > 0,
+rho0 != 0.
+```
+
+The ensemble, background charge, branch stability and amplitude gap are tasks
+for UVIR-001, not assumptions hidden in the phrase ``finite density.''
 
 ### 3.3 Plenum frame
 
@@ -119,8 +143,9 @@ Hubble-rate ratio must be dynamically derived.
 
 The observable matter--plenum subsystem may be thermodynamically open. A
 reservoir stress tensor `T_R^{mu nu}` accounts for the compensating exchange so
-that the complete covariant system remains conserved. The reservoir is not an
-unmodelled violation of the Bianchi identity.
+that the complete covariant system remains conserved. The reservoir is
+external only to the observable subsystem; it is inside the complete covariant
+theory and is not an unmodelled violation of the Bianchi identity.
 
 ### 3.8 Wake and memory sector
 
@@ -176,7 +201,18 @@ S_WF = integral dt d^3x [
 ].
 ```
 
-When `C_m = C_IR` in this convention, variation gives
+For general positive coefficients, variation and spherical integration give
+
+```text
+q^2 = (C_m/C_IR) a0 g_N,
+g_P = C_m q,
+C_obs = C_m^(3/2) / sqrt(C_IR),
+g_P = C_obs sqrt(a0 g_N).
+```
+
+Thus only the observable combination `C_obs` is invariant under phonon-field
+renormalization. Under the special convention `C_m = C_IR = C`, one has
+`C_obs = C` and variation reduces to
 
 ```text
 div[(|grad psi|/a0) grad psi] = 4 pi G rho_b.
@@ -202,11 +238,14 @@ The local equation has the schematic form
 
 ```text
 D_i[(|D varphi|/a0) D^i varphi]
-    = 4 pi G delta(rho_b) + S_Q,
+    = 4 pi G (C_m/C_IR) delta(rho_b) + S_Q,
 ```
 
-with the total right-hand side integrating to zero. The homogeneous mode and
-the spatial perturbation are distinct problems. A local spherical result is a
+with the total right-hand side integrating to zero. Here `S_Q` is a conditional
+zero-mean scalar source induced by the inhomogeneous reservoir exchange,
+schematically `S_Q = S_Q[delta Q_syn]`; the baseline local calculation sets
+`S_Q = 0`. The homogeneous mode and the spatial perturbation are distinct
+problems. A local spherical result is a
 small-region, quasi-static compensated-overdensity limit, not a statement that
 the global universe is isolated or spherical.
 
@@ -234,6 +273,20 @@ A timelike `Q_syn^nu` injects energy but does not automatically produce an
 anisotropic pressure `Pi = p_t - p_p`. Conversion of throughput into shear is
 an independent constitutive or action-level problem.
 
+For the biaxial convention `delta = H_t - H_p`, use
+
+```text
+pi^i_j    = diag(-2 Pi/3,  Pi/3,  Pi/3),
+sigma^i_j = diag(-2 delta/3, delta/3, delta/3),
+pi^{mu nu} sigma_{mu nu} = (2/3) Pi delta.
+```
+
+The exact plenum continuity equation is therefore
+
+```text
+dot(rho_P) + 3 H (rho_P + p_P) + (2/3) Pi delta = Q.
+```
+
 ## 8. CBR-001 canonical result
 
 The rectangular periodic scalar lattice calculation establishes that unequal
@@ -247,9 +300,19 @@ de Sitter model, that:
 - all valid target-reaching trajectories return to `H_t/H_p = 1`;
 - the required target-reaching amplitudes are marginal or nonperturbative.
 
-Thus topology-dependent anisotropic stress is retained as a derived mechanism.
-Persistent `13/12`, cycle-counting derivations of that number, and
-`H0 = 72.97` as a parameter-free prediction are not retained.
+For the physical biaxial lengths the source has the qualified scaling
+
+```text
+Pi_Cas(a,r) = (hbar c/L_*^4) a^(-4) F_Pi(r),
+F_Pi(r) = r^(8/3) [p_t_hat(r) - p_p_hat(r)].
+```
+
+The explicit scale factor is radiation-like, while the shape function evolves
+with `r`. Thus topology-dependent anisotropic stress is retained as a derived
+mechanism. A persistent `13/12` attractor in the tested free periodic-scalar
+model is **Rejected**. A persistent ratio in a separately derived driven ITSM
+sector is **Open**, not established. Cycle-counting derivations of the number
+and `H0 = 72.97` as a parameter-free prediction are not retained.
 
 ## 9. Regime boundaries
 

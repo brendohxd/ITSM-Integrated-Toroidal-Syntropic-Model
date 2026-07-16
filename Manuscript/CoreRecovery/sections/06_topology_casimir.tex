@@ -3,7 +3,8 @@
 \subsection{Periodic rectangular lattice}
 
 For a massless scalar with periodic lengths $(L_1,L_2,L_3)$, the renormalized
-energy density used in CBR-001 is
+energy density used in CBR-001 is the rectangular-periodic Epstein-lattice
+result developed in Ref.~\cite{edery2006}:
 \begin{equation}
  \rho_{\rm Cas}=-\frac{\hbar c}{2\pi^2}
  \sum_{\mathbf n\in\mathbb Z^3\setminus\{0\}}
@@ -20,7 +21,9 @@ The Stage-1 and Stage-2 calculations validate cutoff convergence, cubic
 isotropy, pressure derivatives, the massless trace relation, dimensional
 scaling and the sign change of $p_t-p_p$ across the cubic shape.  Thus compact
 shape-dependent anisotropic stress is a concrete mechanism.  It is not a
-universal cycle-counting coefficient.
+universal cycle-counting coefficient.  A recent direct semiclassical
+calculation likewise derives a finite topology-dependent stress tensor on
+$T^3$ and its anisotropic de Sitter backreaction~\cite{negro2026}.
 
 \subsection{Biaxial backreaction}
 
@@ -48,6 +51,8 @@ with the Hamiltonian constraint
  3H^2-\frac{\delta^2}{3}=\kappa\rho_{\rm total}.
  \label{eq:hamiltonian-biaxial}
 \end{equation}
+These are the biaxial specialization of the standard Bianchi-I system; see,
+for example, Ref.~\cite{ellismaccallum1969}.
 The Stage-3A solver reproduces the perturbative solution and preserves the
 constraint and Casimir continuity equation to substantially better than the
 specified tolerances.
@@ -102,6 +107,18 @@ In de Sitter with constant $x=3/38$ this becomes
 \begin{equation}
  \Pi_{\rm req}=\frac{9H^2}{38\kappa}.
 \end{equation}
-Free Casimir stress redshifts as $a^{-4}$ and cannot maintain this source.  A
-future CBR-002 test must derive any additional shape, driven or memory stress
-without inserting the target ratio into a coefficient.
+For the CBR-001 physical lengths
+$L_p=L_\star a r^{-2/3}$ and $L_t=L_\star a r^{1/3}$, the anisotropic Casimir
+source is more precisely
+\begin{equation}
+ \Pi_{\rm Cas}(a,r)=\frac{\hbar c}{L_\star^4}a^{-4}
+ r^{8/3}\left[\widehat p_t(r)-\widehat p_p(r)\right]
+ \equiv\frac{\hbar c}{L_\star^4}a^{-4}F_\Pi(r).
+ \label{eq:casimir-pi-scaling}
+\end{equation}
+Thus the explicit scale dependence is radiation-like, while the shape
+function evolves whenever $r$ evolves.  In every validated free-field
+trajectory the source nevertheless becomes negligible and cannot maintain
+Eq.~\eqref{eq:required-pi}.  A future CBR-002 test must derive any additional
+shape, driven or memory stress without inserting the target ratio into a
+coefficient.
