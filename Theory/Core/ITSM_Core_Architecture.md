@@ -111,10 +111,16 @@ background and the spatial projector
 h^{mu nu} = g^{mu nu} + U^mu U^nu.
 ```
 
-Whether `U^mu` is derived from the condensate phase, a separate foliation
-field, or an independent constrained vector remains an explicit UVIR-003
-choice. The manuscript must state which interpretation is being used in each
-calculation.
+UVIR-003 Stage A provisionally chooses `U^mu` as an independent constrained
+vector. It is aligned with, but not algebraically identified with, the
+condensate current. Treating it as both an independent aether and the derived
+normalized current would double-count degrees of freedom unless a constrained
+parent action were supplied. The independent-frame choice is not canonical
+until the full coupled constraint and stability calculation passes.
+
+Stage A retains all four symmetry-allowed two-derivative Einstein-aether
+contractions. A restricted one-contraction frame action is not permitted as a
+stability argument.
 
 ### 3.4 Infrared phonon sector
 
@@ -134,7 +140,10 @@ condensate is not the same operator: its controlled static expansion begins at
 quadratic order. UVIR-002 permits, but does not derive, the spatial operator by
 separating the temporal invariant `Q = U^mu nabla_mu psi/a0` from `Y`. The
 simple cubic force truncation has a degenerate quadratic spatial operator at
-zero background gradient; its regulator and full stability remain open.
+zero background gradient. UVIR-003 Stage A finds that a projected
+higher-spatial-derivative regulator supplies a positive `k^4` dispersion in a
+constant-frame flat decoupling limit. Its covariant completion, coupled
+constraints, strong-coupling scale and technical naturalness remain open.
 
 ### 3.5 Matter sector
 

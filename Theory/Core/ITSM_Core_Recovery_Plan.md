@@ -145,6 +145,15 @@ a controlled zero-gradient completion, a positive kinetic/gradient domain, a
 cutoff and a symmetry or matching explanation for the operator hierarchy.
 MAT-001 remains blocked until this gate passes.
 
+UVIR-003 Stage-A result (2026-07-17): **validated necessary conditions; full
+gate in progress**. To avoid double counting, the working action uses an
+independent unit timelike `U^mu` aligned dynamically with the condensate
+current. The complete four-term frame basis is retained. A projected `k^4`
+operator conditionally regularizes the force scalar at zero gradient in the
+frozen-Minkowski decoupling limit. The metric/aether/condensate constraints,
+coupled Hamiltonian, strong-coupling scale and operator naturalness remain
+unresolved. See `Theory/Gates/UVIR-003/UVIR-003_STAGE_A_REPORT.md`.
+
 ### MAT-001 -- Matter coupling and `C_proj`
 
 Derive the baryon--phonon vertex and calculate the observable Wilson
