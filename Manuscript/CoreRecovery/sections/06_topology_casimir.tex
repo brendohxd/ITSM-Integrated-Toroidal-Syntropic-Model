@@ -1,0 +1,107 @@
+\section{Toroidal topology and validated Casimir backreaction}
+
+\subsection{Periodic rectangular lattice}
+
+For a massless scalar with periodic lengths $(L_1,L_2,L_3)$, the renormalized
+energy density used in CBR-001 is
+\begin{equation}
+ \rho_{\rm Cas}=-\frac{\hbar c}{2\pi^2}
+ \sum_{\mathbf n\in\mathbb Z^3\setminus\{0\}}
+ \frac{1}{\left[(n_1L_1)^2+(n_2L_2)^2+(n_3L_3)^2\right]^2}.
+ \label{eq:casimir-lattice}
+\end{equation}
+The directional pressures follow thermodynamically,
+\begin{equation}
+ p_i=-\frac{1}{L_jL_k}\frac{\partial E_{\rm Cas}}{\partial L_i},
+ \qquad E_{\rm Cas}=L_1L_2L_3\rho_{\rm Cas}.
+ \label{eq:casimir-pressure}
+\end{equation}
+The Stage-1 and Stage-2 calculations validate cutoff convergence, cubic
+isotropy, pressure derivatives, the massless trace relation, dimensional
+scaling and the sign change of $p_t-p_p$ across the cubic shape.  Thus compact
+shape-dependent anisotropic stress is a concrete mechanism.  It is not a
+universal cycle-counting coefficient.
+
+\subsection{Biaxial backreaction}
+
+For
+\begin{equation}
+ \dd s^2=-\dd t^2+a_p^2\dd x^2+a_t^2(\dd y^2+\dd z^2),
+\end{equation}
+define
+\begin{equation}
+ H=\frac{H_p+2H_t}{3},
+ \quad
+ \delta=H_t-H_p,
+ \quad
+ r=\frac{a_t}{a_p}.
+\end{equation}
+Then
+\begin{equation}
+ \dot\delta+3H\delta=\kappa(p_t-p_p),
+ \qquad
+ \dot r=r\delta,
+ \label{eq:shear-system}
+\end{equation}
+with the Hamiltonian constraint
+\begin{equation}
+ 3H^2-\frac{\delta^2}{3}=\kappa\rho_{\rm total}.
+ \label{eq:hamiltonian-biaxial}
+\end{equation}
+The Stage-3A solver reproduces the perturbative solution and preserves the
+constraint and Casimir continuity equation to substantially better than the
+specified tolerances.
+
+\subsection{The Stage-3B ratio test}
+
+Let
+\begin{equation}
+ x=\frac{\delta}{H},
+ \qquad
+ q=\frac{H_t}{H_p}=\frac{1+x/3}{1-2x/3}.
+ \label{eq:q-x}
+\end{equation}
+The historical target $q=13/12$ corresponds to
+\begin{equation}
+ x_\star=\frac{3}{38}.
+\end{equation}
+The small-source fixed-background solution is
+\begin{equation}
+ x(N)=S\left(e^{-3N}-e^{-4N}\right),
+\end{equation}
+with maximum $(27/256)S$ at $N=\ln(4/3)$.  Merely reaching $x_\star$ therefore
+requires
+\begin{equation}
+ S\ge\frac{128}{171}\simeq0.748538,
+\end{equation}
+already outside the strict small-perturbation regime.
+
+The nonlinear root search finds target-reaching amplitudes for five of the
+tested initial shapes.  Every case is classified as a transient crossing,
+with only approximately $0.27$--$0.30$ e-folds within one percent of the
+target.  Four thresholds are nonperturbative and one is marginal by the stated
+Casimir-fraction diagnostic.  Every valid candidate returns to $q=1$ by
+$N=20$; no quasi-plateau or attractor is found.
+
+There is also a kinematic warning.  Since
+\begin{equation}
+ \frac{\dd\ln r}{\dd N}=x,
+\end{equation}
+a constant $q\ne1$ implies continuous evolution of the shape ratio.  It cannot
+be a fixed torus shape.  A persistent anisotropic state would have to be a
+driven solution, not a static geometric ratio.
+
+For a desired trajectory $x(N)$, the required anisotropic stress is
+\begin{equation}
+ \Pi_{\rm req}=\frac{H^2}{\kappa}
+ \left[\frac{\dd x}{\dd N}
+ +x\left(3+\frac{\dd\ln H}{\dd N}\right)\right].
+ \label{eq:required-pi}
+\end{equation}
+In de Sitter with constant $x=3/38$ this becomes
+\begin{equation}
+ \Pi_{\rm req}=\frac{9H^2}{38\kappa}.
+\end{equation}
+Free Casimir stress redshifts as $a^{-4}$ and cannot maintain this source.  A
+future CBR-002 test must derive any additional shape, driven or memory stress
+without inserting the target ratio into a coefficient.

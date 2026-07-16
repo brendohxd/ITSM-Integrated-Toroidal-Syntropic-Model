@@ -1,0 +1,79 @@
+\section{Ultraviolet--infrared hierarchy}
+
+\subsection{Candidate analytic condensate}
+
+A representative microscopic starting point is
+\begin{equation}
+ S_\Phi=\int \dd^4x\sqrt{-g}\left[
+ -\nabla_\mu\Phi^*\nabla^\mu\Phi
+ -m^2|\Phi|^2
+ -\frac{\lambda_4}{2}|\Phi|^4
+ -\frac{\lambda_6}{3\Lambda^2}|\Phi|^6
+ +\cdots\right].
+ \label{eq:candidate-uv}
+\end{equation}
+Equation~\eqref{eq:candidate-uv} is a matching candidate, not the canonical
+ITSM action.  Its branch structure, finite-density state, stability and
+relativistic characteristics must be evaluated before adoption.
+
+The sextic term is of interest because a three-body density interaction can
+generate the power required by the infrared gate.  In a Thomas--Fermi
+description, consider
+\begin{equation}
+ \mathcal L(n,X)=nX-\frac{\lambda_3}{3}n^3.
+ \label{eq:aux-density}
+\end{equation}
+The algebraic density equation gives
+\begin{equation}
+ n=\sqrt{\frac{X}{\lambda_3}},
+\end{equation}
+and substitution yields
+\begin{equation}
+ P(X)=\frac{2}{3\sqrt{\lambda_3}}X^{3/2}.
+ \label{eq:sextic-px}
+\end{equation}
+This establishes a plausible mechanism for the power law, not the complete
+relativistic ITSM matching.  Gradient corrections, sign choices, the domain of
+$X$, background stability and normalization remain open.
+
+\subsection{Conditional infrared action}
+
+Define the dimensionless spatial invariant
+\begin{equation}
+ Y=\frac{h^{\mu\nu}\nabla_\mu\psi\nabla_\nu\psi}{a_0^2}.
+ \label{eq:Y}
+\end{equation}
+The conditional low-acceleration operator is
+\begin{equation}
+ \mathcal L_{\psi,\rm IR}
+ =-\frac{2C_{\rm IR}}{3}\mpl^2a_0^2Y^{3/2}
+ +\mathcal O(Y^2,\nabla^2/\Lambda_{\rm IR}^2).
+ \label{eq:ir-action}
+\end{equation}
+Here $C_{\rm IR}$ is a Wilson coefficient in a chosen field normalization.  It
+cannot be identified with a local observable coupling until the matter vertex
+has been normalized in the same convention.
+
+\subsection{Why the preceding Born--Infeld claim is not retained}
+
+The preceding manuscript used an analytic kinetic expression whose derivative
+approaches a nonzero constant at small kinetic invariant.  A sourced field
+equation is therefore linear at leading order in that limit.  The desired
+square-root response instead requires a kinetic derivative proportional to the
+field-gradient magnitude, as supplied by Eq.~\eqref{eq:ir-action}.  The
+Born--Infeld expression may be investigated for a separate UV or regulating
+role, but it is not the present derivation of the galactic branch.
+
+\subsection{UVIR-001 pass criteria}
+
+A successful match must demonstrate:
+\begin{enumerate}
+\item a stable finite-density background;
+\item a heavy amplitude mode that can be integrated out;
+\item the sign and branch of Eq.~\eqref{eq:ir-action};
+\item positive compressibility and Hamiltonian in the domain of use;
+\item a controlled sound cone and strong-coupling scale;
+\item the coefficient map to $G$, $a_0$ and the normalized matter vertex.
+\end{enumerate}
+Until these checks pass, Eq.~\eqref{eq:ir-action} is a conditional infrared
+completion rather than a derived consequence of Eq.~\eqref{eq:candidate-uv}.

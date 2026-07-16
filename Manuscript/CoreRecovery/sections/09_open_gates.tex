@@ -1,0 +1,39 @@
+\section{Dependency-ordered closure gates}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Research gates required before restoration of strong predictions.}
+\begin{tabular}{p{0.17\textwidth}p{0.33\textwidth}p{0.38\textwidth}}
+\toprule
+Gate & Question & Pass condition \\
+\midrule
+UVIR-001 & Does a stable condensate yield $Y^{3/2}$? & Controlled amplitude integration and coefficient match \\
+MAT-001 & What is the normalized matter vertex? & Force and exchange from one action; $C_m$ calculated \\
+SCR-001 & Is the force screened at high gradient? & Ephemeris and binary constraints satisfied \\
+LEN-001 & What metric do matter and light see? & PPN, lensing and wave propagation derived \\
+DISK-001 & What is the exact disk response? & Validated periodic nonlinear solver and curl field \\
+TOP-001 & How do shape moduli evolve? & Covariant moduli action and stable dynamics \\
+VOR-001 & How is global circulation carried? & Winding/defect sector with finite energy \\
+WAK-001 & Can wakes retain causal memory? & Hyperbolic or relaxation model with energy accounting \\
+CBR-002 & Can derived sectors sustain anisotropy? & Untuned non-equilibrium solution and stability test \\
+COS-001 & What is the fiducial background? & One coherent fit from declared equations \\
+PERT-001 & What are the perturbation equations? & Action-derived stable transfer system \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The dependency order is
+\begin{equation}
+ \mathrm{UVIR}\to\mathrm{MAT}\to(\mathrm{SCR},\mathrm{LEN})
+ \to\mathrm{DISK}
+ \to(\mathrm{TOP},\mathrm{VOR},\mathrm{WAK},R)
+ \to\mathrm{CBR\mbox{-}002}
+ \to(\mathrm{COS},\mathrm{PERT}).
+\end{equation}
+
+This ordering is deliberately restrictive.  For example, running CBR-002 with
+an arbitrary source adjusted to hold $13/12$ would test a tuning procedure,
+not ITSM.  Likewise, fitting the algebraic disk law more aggressively would
+not answer whether the actual periodic field equation changes the inferred
+coupling.
