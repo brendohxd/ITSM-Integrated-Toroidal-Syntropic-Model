@@ -1,0 +1,24 @@
+{
+  "connects_to": "UVIR-003_STAGE_A_CAUSALITY_ADDENDUM.md and ITSM_Claim_Migration_Ledger.csv \u2014 both the long-wavelength causality check and this longitudinal IR NDA estimate is blocked on the same missing K_Q matching condition",
+  "cubic_vertex": {
+    "cubic_term_xxx": "A",
+    "cubic_term_xyy": "3A/2",
+    "cubic_term_xzz": "3A/2",
+    "quadratic_term_check": "PASS"
+  },
+  "gate": "UVIR-003",
+  "longitudinal_ir_nda_scale": {
+    "blocked_by": "K_Q has no matching condition in the current architecture (same gap as the causality addendum's long-wavelength check)",
+    "formula_in_K_Q_A": "K_Q**(3/4)/sqrt(A)",
+    "formula_with_A_substituted": "2*sqrt(3)*sqrt(pi)*sqrt(G)*K_Q**(3/4)*sqrt(a0)/sqrt(C_IR)",
+    "interpretation": "time-normalized longitudinal derivative scale in the k^2-dominated IR truncation; not a completed physical EFT cutoff"
+  },
+  "method": "NDA_order_of_magnitude_only",
+  "scope_explicitly_excluded": [
+    "transverse (y,z) directions \u2014 anisotropic normalization not carried through",
+    "k^4-dominated (Lifshitz, above k_cross) regime \u2014 different NDA structure entirely, not attempted",
+    "any loop-level or unitarity-bound calculation \u2014 this is O(1)-only NDA, matching the precedent set in UVIR-001 Section 7"
+  ],
+  "stage": "B_ITEM_9_PARTIAL_LONGITUDINAL_IR_ONLY",
+  "status": "OPEN_PENDING_K_Q_MATCHING_CONDITION"
+}

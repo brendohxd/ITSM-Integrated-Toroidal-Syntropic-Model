@@ -1,0 +1,42 @@
+{
+  "consistency_with_stage_a_decoupled_limit": {
+    "expected_scalar": "(c1 + c2 + c3)/(c1 + c4)",
+    "expected_vector": "c1/(c1 + c4)",
+    "scalar_leading": "(c1 + c2 + c3)/(c1 + c4)",
+    "scaling": "c1,c2,c3,c4 -> eps*(c1,c2,c3,c4), eps->0+",
+    "vector_leading": "c1/(c1 + c4)",
+    "verdict": "CONSISTENT"
+  },
+  "convention_checks": {
+    "c1": "PASS: invariant under global signature flip",
+    "c2": "PASS: invariant under global signature flip",
+    "c3": "PASS: invariant under global signature flip",
+    "c4": "PASS: contraction flips; Stage-A explicit minus sign restores the identity coefficient map"
+  },
+  "convention_map": "IDENTITY: c1,c2,c3,c4 (Stage A) = c1,c2,c3,c4 (EJM gr-qc/0410001)",
+  "energy_positivity_exact": [
+    "(2*c1 - c1**2 + c3**2)/(1 - c13) > 0  # vector mode",
+    "c14*(2 - c14) > 0  # trace/scalar mode"
+  ],
+  "gate": "UVIR-003",
+  "light_cone_condition": "c4=0, c3=-c1, c2=c1/(1-2*c1)",
+  "method": "literature_substitution_verified",
+  "mode_speeds_squared": {
+    "spin_0_scalar": "(-c1 - c4 + 2)*(c1 + c2 + c3)/((c1 + c4)*(-c1 - c3 + 1)*(c1 + 3*c2 + c3 + 2))",
+    "spin_1_vector": "(-c1**2/2 + c1 + c3**2/2)/((c1 + c4)*(-c1 - c3 + 1))",
+    "spin_2_tensor": "1/(-c1 - c3 + 1)"
+  },
+  "not_yet_done": [
+    "force-sector (psi) coupling to the frame sector in this SVT decomposition",
+    "condensate (Phi) coupling to the frame sector",
+    "full nonzero-background (accelerating/vortical U) generalization",
+    "independent from-scratch re-derivation (this result relies on a verified literature substitution, not a first-principles ITSM-side linearized Einstein equation calculation)"
+  ],
+  "source": "Eling, Jacobson, Mattingly, arXiv:gr-qc/0410001, Table 1",
+  "stability_conditions_small_ci": [
+    "c1/c14 >= 0",
+    "c123/c14 >= 0"
+  ],
+  "stage": "B_FRAME_SECTOR_PARTIAL",
+  "status": "PARTIAL_PROGRESS_FRAME_SECTOR_ONLY"
+}

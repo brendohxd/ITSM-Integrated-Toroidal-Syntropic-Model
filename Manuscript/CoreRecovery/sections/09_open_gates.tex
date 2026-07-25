@@ -1,39 +1,45 @@
+\clearpage
 \section{Dependency-ordered closure gates}
 
-\begin{table}[ht]
-\centering
+\begin{center}
+\refstepcounter{table}
 \small
-\caption{Research gates required before restoration of strong predictions.}
-\begin{tabular}{p{0.17\textwidth}p{0.33\textwidth}p{0.38\textwidth}}
+\textbf{Table \thetable: Research gates required before restoration of strong predictions.}\par\smallskip
+\begin{tabular}{@{}p{0.17\textwidth}p{0.27\textwidth}p{0.46\textwidth}@{}}
 \toprule
-Gate & Question & Pass condition \\
+Gate and status & Question & Pass condition \\
 \midrule
-UVIR-001 & Does a stable condensate yield $Y^{3/2}$? & Controlled amplitude integration and coefficient match \\
-MAT-001 & What is the normalized matter vertex? & Force and exchange from one action; $C_m$ calculated \\
-SCR-001 & Is the force screened at high gradient? & Ephemeris and binary constraints satisfied \\
-LEN-001 & What metric do matter and light see? & PPN, lensing and wave propagation derived \\
-DISK-001 & What is the exact disk response? & Validated periodic nonlinear solver and curl field \\
-TOP-001 & How do shape moduli evolve? & Covariant moduli action and stable dynamics \\
-VOR-001 & How is global circulation carried? & Winding/defect sector with finite energy \\
-WAK-001 & Can wakes retain causal memory? & Hyperbolic or relaxation model with energy accounting \\
-CBR-002 & Can derived sectors sustain anisotropy? & Untuned non-equilibrium solution and stability test \\
-COS-001 & What is the fiducial background? & One coherent fit from declared equations \\
-PERT-001 & What are the perturbation equations? & Action-derived stable transfer system \\
+UVIR-001\\\textit{Closed negative} & Does the minimal condensate yield spatial $Y^{3/2}$? & Candidate rejected; replacement route required \\
+UVIR-002\\\textit{Closed provisional} & Which replacement architecture survives initial checks? & Two-sector preferred-frame route selected for testing \\
+UVIR-003\\\textit{In progress} & Is the selected action stable, causal and weakly coupled? & Full coupled constraint reduction, physical cutoff and background tests \\
+MAT-001\\\textit{Blocked} & What is the normalized matter vertex? & Force and exchange from one action; $C_m$, $C_{\rm IR}$ and $K_Q$ matched \\
+SCR-001\\\textit{Open} & Is the force screened at high gradient? & Ephemeris and binary constraints satisfied \\
+LEN-001\\\textit{Open} & What metric do matter and light see? & PPN, lensing and wave propagation derived \\
+DISK-001\\\textit{Open} & What is the exact disk response? & Validated periodic nonlinear solver and curl field \\
+TOP-001\\\textit{Open} & How do shape moduli evolve? & Covariant moduli action and stable dynamics \\
+VOR-001\\\textit{Open} & How is global circulation carried? & Winding and defect sector with finite energy \\
+WAK-001\\\textit{Open} & Can wakes retain causal memory? & Hyperbolic or relaxation model with energy accounting \\
+CBR-002\\\textit{Open} & Can derived sectors sustain anisotropy? & Untuned non-equilibrium solution and stability test \\
+COS-001\\\textit{Open} & What is the fiducial background? & One coherent fit from declared equations \\
+PERT-001\\\textit{Open} & What are the perturbation equations? & Action-derived stable transfer system \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{center}
 
 The dependency order is
-\begin{equation}
- \mathrm{UVIR}\to\mathrm{MAT}\to(\mathrm{SCR},\mathrm{LEN})
- \to\mathrm{DISK}
- \to(\mathrm{TOP},\mathrm{VOR},\mathrm{WAK},R)
- \to\mathrm{CBR\mbox{-}002}
- \to(\mathrm{COS},\mathrm{PERT}).
-\end{equation}
+\begin{align}
+ \mathrm{UVIR\mbox{-}001}&\to\mathrm{UVIR\mbox{-}002}
+ \to\mathrm{UVIR\mbox{-}003}\to\mathrm{MAT\mbox{-}001}\nonumber\\
+ &\to(\mathrm{SCR},\mathrm{LEN})\to\mathrm{DISK}\nonumber\\
+ &\to(\mathrm{TOP},\mathrm{VOR},\mathrm{WAK},R)
+ \to\mathrm{CBR\mbox{-}002}\nonumber\\
+ &\to(\mathrm{COS},\mathrm{PERT}).
+\end{align}
 
-This ordering is deliberately restrictive.  For example, running CBR-002 with
-an arbitrary source adjusted to hold $13/12$ would test a tuning procedure,
-not ITSM.  Likewise, fitting the algebraic disk law more aggressively would
-not answer whether the actual periodic field equation changes the inferred
-coupling.
+The frame-sector literature substitution and the longitudinal IR NDA estimate
+are progress within UVIR-003, not new closed gates.  In particular, the
+physical EFT cutoff, the $K_Q$ matching condition and the full
+metric--frame--condensate--force constraint system remain unresolved.
+Likewise, running CBR-002 with a source adjusted to hold $13/12$ would test a
+tuning procedure, not ITSM, and fitting the algebraic disk law does not answer
+the periodic nonlinear field problem.

@@ -1,101 +1,151 @@
 \section{Ultraviolet--infrared hierarchy}
 
-\subsection{Candidate analytic condensate}
+\subsection{UVIR-001: the minimal condensate route closes negative}
 
-A representative microscopic starting point is
+The tested microscopic candidate is
 \begin{equation}
  S_\Phi=\int \dd^4x\sqrt{-g}\left[
  -\nabla_\mu\Phi^*\nabla^\mu\Phi
  -m^2|\Phi|^2
  -\frac{\lambda_4}{2}|\Phi|^4
- -\frac{\lambda_6}{3\Lambda^2}|\Phi|^6
- +\cdots\right].
+ -\frac{\lambda_6}{3\Lambda^2}|\Phi|^6\right].
  \label{eq:candidate-uv}
 \end{equation}
-Equation~\eqref{eq:candidate-uv} is a matching candidate, not the canonical
-ITSM action.  Its branch structure, finite-density state, stability and
-relativistic characteristics must be evaluated before adoption.
-
-Equation~\eqref{eq:candidate-uv} does not by itself select a finite-density
-condensate.  The background must additionally carry a fixed Noether charge or
-chemical potential, as in relativistic superfluid effective theory
-\cite{son2002}.  With the signature declared in Sec.~1.1, write
+Writing $\Phi=\rho e^{i\Theta}/\sqrt2$ and
+$Z=-\nabla_\mu\Theta\nabla^\mu\Theta$, its stable finite-density branch can
+be reduced to a phase action $P(Z)$.  In the pure-sextic limit the explicit
+amplitude integration gives
 \begin{equation}
- \Theta(x)=\mu t+\vartheta(x),
+ P(Z)=\frac{2\Lambda}{3\sqrt{\lambda_6}}(Z-m^2)^{3/2}.
+ \label{eq:sextic-pz}
+\end{equation}
+This nonanalytic power does not supply the required static spatial operator.
+About a timelike background $Z_0=\mu^2$, a static phase gradient
+$q=|\nabla\vartheta|$ instead yields
+\begin{equation}
+ P(\mu^2-q^2)-P(\mu^2)=-P_Z(\mu^2)q^2+\mathcal O(q^4),
+ \qquad P_Z=\frac{\rho_0^2}{2}>0.
+ \label{eq:uvir001-static}
+\end{equation}
+The leading response is therefore quadratic for every stable nonzero branch
+with the canonical phase kinetic term.  UVIR-001 is closed negative for this
+minimal candidate.  The result rejects neither the condensate's density and
+topology roles nor a bottom-up spatial $Y^{3/2}$ EFT.
+
+\subsection{UVIR-002: provisional two-sector route}
+
+UVIR-002 also rejects a standalone nonrelativistic gradient-dominated branch:
+the branch producing the desired cubic spatial action has a negative quadratic
+time kinetic coefficient.  The least-incomplete route tested separates the
+jobs of the condensate and force mediator.  The independent invariants are
+\begin{equation}
+ \mathcal Q=U^\mu\nabla_\mu\psi,
  \qquad
- \nabla_\mu\Theta=-\mu U_\mu+\nabla_\mu\vartheta.
- \label{eq:chemical-background}
+ \mathcal Y=h^{\mu\nu}\nabla_\mu\psi\nabla_\nu\psi.
+ \label{eq:preferred-invariants}
 \end{equation}
-For a homogeneous amplitude the phase gradient produces an effective potential
-\begin{equation}
- V_{\rm eff}(\rho;\mu)=V(\rho)-\frac{1}{2}\mu^2\rho^2,
- \label{eq:effective-potential}
-\end{equation}
-subject to the sign convention of the final microscopic action.  The phonon
-reduction is valid only if $V_{\rm eff}$ has a stable nonzero minimum
-$\rho_0$, with $V_{\rm eff}'(\rho_0)=0$ and
-$V_{\rm eff}''(\rho_0)>0$.
+Here $\Phi$ retains finite density, circulation, defects and topology, while
+$(\psi,U^\mu)$ carries the conditional low-acceleration response.  This is a
+provisional architecture selection, not microscopic closure.
 
-The sextic term is of interest because a three-body density interaction can
-generate the power required by the infrared gate.  In a Thomas--Fermi
-description, consider
-\begin{equation}
- \mathcal L(n,X)=nX-\frac{\lambda_3}{3}n^3.
- \label{eq:aux-density}
-\end{equation}
-The algebraic density equation gives
-\begin{equation}
- n=\sqrt{\frac{X}{\lambda_3}},
-\end{equation}
-and substitution yields
-\begin{equation}
- P(X)=\frac{2}{3\sqrt{\lambda_3}}X^{3/2}.
- \label{eq:sextic-px}
-\end{equation}
-This establishes a plausible mechanism for the power law, not the complete
-relativistic ITSM matching.  Gradient corrections, sign choices, the domain of
-$X$, background stability and normalization remain open.  More generally,
-$P(X)$ phonon actions arise as the leading derivative description of
-finite-density superfluids \cite{son2002,sonwingate2006}.
+\subsection{UVIR-003 Stage A action and limited pass}
 
-\subsection{Conditional infrared action}
+Stage A chooses an independent unit vector and retains the complete
+Einstein--aether two-derivative basis,
+\begin{align}
+ \mathcal L_U=-\frac{M_U^2}{2}\big[&c_1(\nabla_\mu U_\nu)(\nabla^\mu U^\nu)
+ +c_2(\nabla_\mu U^\mu)^2 \nonumber\\
+ &+c_3(\nabla_\mu U_\nu)(\nabla^\nu U^\mu)-c_4a_\mu a^\mu\big]
+ +\frac{\lambda}{2}(U^\mu U_\mu+1),
+ \label{eq:aether-action}
+\end{align}
+where $a_\mu=U^\nu\nabla_\nu U_\mu$.  A positive alignment energy couples
+the frame to the condensate current without imposing equality.  The regulated
+force truncation is
+\begin{equation}
+ \mathcal L_\psi=\frac{K_Q}{2}\mathcal Q^2-A\mathcal Y^{3/2}
+ -\frac{\gamma}{2M_*^2}(\Delta_U\psi)^2.
+ \label{eq:stage-a-force}
+\end{equation}
+The symbolic Stage-A calculation gives the necessary frozen-metric conditions
+\begin{equation}
+ c_{14}>0,\qquad c_1>0,\qquad c_{123}>0,
+ \qquad K_Q>0,\quad A>0,\quad\gamma>0,
+ \label{eq:stage-a-signs}
+\end{equation}
+and at zero background gradient the regulator produces
+\begin{equation}
+ \omega^2=\frac{\gamma}{K_QM_*^2}k^4.
+ \label{eq:k4-dispersion}
+\end{equation}
+This is a pass only in the declared flat, constant-frame decoupling limit.
 
-Define the dimensionless spatial invariant
+\subsection{Stage B frame-sector diagnostic}
+
+A verified convention map to the Einstein--aether review
+\cite{elingjacobsonmattingly2004} maps all four $c_i$ identically.  Substitution
+of that source's coupled metric--aether result gives
+\begin{align}
+ s_2^2&=\frac{1}{1-c_{13}},\\
+ s_1^2&=\frac{c_1-\tfrac12c_1^2+\tfrac12c_3^2}
+ {c_{14}(1-c_{13})},\\
+ s_0^2&=\frac{c_{123}(2-c_{14})}
+ {c_{14}(1-c_{13})(2+c_{13}+3c_2)}.
+ \label{eq:aether-speeds}
+\end{align}
+When all $c_i$ are scaled uniformly to zero, the spin-1 and spin-0 expressions
+reduce to the Stage-A ratios $c_1/c_{14}$ and $c_{123}/c_{14}$.  This confirms
+that those ratios are weak-metric-coupling limits, not the full mode speeds.
+It is a checked literature substitution, not an independent ITSM-side
+linearized Einstein-equation derivation, and it excludes the coupled
+$\Phi$--$U$--$\psi$ system.
+
+\subsection{Causality and cutoff status}
+
+Around a nonzero spatial background gradient of magnitude $q$, the force
+fluctuation has
+\begin{equation}
+ \omega^2=\frac{3Aq(1+\cos^2\theta)}{K_Q}k^2
+ +\frac{\gamma}{K_QM_*^2}k^4.
+ \label{eq:force-dispersion}
+\end{equation}
+Thus the long-wavelength metric-light-cone threshold depends on the unmatched
+ratio $Aq/K_Q$, while phase and group velocities grow without bound at large
+$k$ inside the truncated dispersion.  Preferred-frame metric superluminality
+is not by itself a proof of acausality, but the foliation-causality test and the
+physical EFT domain have not been established.
+
+Expansion of the cubic vertex supplies only the restricted, time-normalized
+longitudinal IR NDA scale
+\begin{equation}
+ \Lambda_{\rm NDA,long}^{\rm (IR)}\sim\frac{K_Q^{3/4}}{\sqrt A}.
+ \label{eq:long-nda}
+\end{equation}
+It is not the physical cutoff $\Lambda_{\rm EFT}$: transverse normalization,
+$k^4$-dominated power counting and a loop or unitarity analysis remain open.
+The comparison of the light-cone crossing scale with $\Lambda_{\rm EFT}$
+therefore cannot yet be made.
+
+A separate dimensional analogy, $K_Q=k_QM_P^2$, would place the
+long-wavelength threshold at order $a_0$ for order-unity coefficients.  That
+exercise is explicitly speculative: it is introduced only as a priority
+signal for deriving $K_Q$, not as a property of ITSM.
+
+\subsection{Conditional infrared operator}
+
+Define the normalized spatial invariant
 \begin{equation}
  Y=\frac{h^{\mu\nu}\nabla_\mu\psi\nabla_\nu\psi}{a_0^2}.
  \label{eq:Y}
 \end{equation}
-The conditional low-acceleration operator is
+The target low-acceleration operator remains
 \begin{equation}
  \mathcal L_{\psi,\rm IR}
  =-\frac{2C_{\rm IR}}{3}\mpl^2a_0^2Y^{3/2}
- +\mathcal O(Y^2,\nabla^2/\Lambda_{\rm IR}^2).
+ +\mathcal O(Y^2,\nabla^2/\Lambda_{\rm EFT}^2).
  \label{eq:ir-action}
 \end{equation}
-Here $C_{\rm IR}$ is a Wilson coefficient in a chosen field normalization.  It
-cannot be identified with a local observable coupling until the matter vertex
-has been normalized in the same convention.
-
-\subsection{Why the preceding Born--Infeld claim is not retained}
-
-The preceding manuscript used an analytic kinetic expression whose derivative
-approaches a nonzero constant at small kinetic invariant.  A sourced field
-equation is therefore linear at leading order in that limit.  The desired
-square-root response instead requires a kinetic derivative proportional to the
-field-gradient magnitude, as supplied by Eq.~\eqref{eq:ir-action}.  The
-Born--Infeld expression may be investigated for a separate UV or regulating
-role, but it is not the present derivation of the galactic branch.
-
-\subsection{UVIR-001 pass criteria}
-
-A successful match must demonstrate:
-\begin{enumerate}
-\item a stable finite-density background;
-\item a heavy amplitude mode that can be integrated out;
-\item the sign and branch of Eq.~\eqref{eq:ir-action};
-\item positive compressibility and Hamiltonian in the domain of use;
-\item a controlled sound cone and strong-coupling scale;
-\item the coefficient map to $G$, $a_0$ and the normalized matter vertex.
-\end{enumerate}
-Until these checks pass, Eq.~\eqref{eq:ir-action} is a conditional infrared
-completion rather than a derived consequence of Eq.~\eqref{eq:candidate-uv}.
+Neither $C_{\rm IR}$, $K_Q$ nor the normalized matter vertex has been derived.
+The preceding analytic Born--Infeld expression also remains rejected as the
+source of this branch because its small-invariant equation is linear at
+leading order.  UVIR-003 is therefore in progress and MAT-001 remains blocked.

@@ -1,0 +1,77 @@
+{
+  "addendum": "STAGE_A_CAUSALITY",
+  "gate": "UVIR-003",
+  "growth_check": [
+    {
+      "k": 1.0,
+      "v_ph_sq": 1.1
+    },
+    {
+      "k": 10.0,
+      "v_ph_sq": 50.6
+    },
+    {
+      "k": 100.0,
+      "v_ph_sq": 5000.6
+    },
+    {
+      "k": 1000.0,
+      "v_ph_sq": 500000.6
+    }
+  ],
+  "light_crossing_wavenumber_squared": "M_star**2*(-3*A*q*(cos_theta**2 + 1) + K_Q)/gamma",
+  "long_wavelength": {
+    "depends_on_regulator": false,
+    "superluminal_threshold_q": "K_Q/(3*A*(cos_theta**2 + 1))",
+    "v_ph_squared_at_k0": "3*A*q*(cos_theta**2 + 1)/K_Q",
+    "verdict": "CONDITIONAL_ON_K_Q_OVER_A_RATIO"
+  },
+  "not_yet_done": [
+    "fix K_Q relative to A via canonical normalization or matching",
+    "evaluate q_cross against physically relevant background gradient ~a0",
+    "derive the physical EFT cutoff for the full anisotropic cubic-plus-k4 system (Stage B item 9)",
+    "compare k_light against the physical EFT cutoff",
+    "covariant regulator and foliation-causality check on vortical U backgrounds"
+  ],
+  "numeric_illustration": [
+    {
+      "A": 1.0,
+      "K_Q": 1.0,
+      "case": "subluminal_at_k0_moderate_q",
+      "cos_theta": 1.0,
+      "gamma": 0.5,
+      "q": 0.1,
+      "superluminal_at_long_wavelength": false,
+      "v_ph_sq_at_k0": 0.6000000000000001
+    },
+    {
+      "A": 1.0,
+      "K_Q": 1.0,
+      "case": "superluminal_at_k0_large_q",
+      "cos_theta": 1.0,
+      "gamma": 0.5,
+      "q": 1.0,
+      "superluminal_at_long_wavelength": true,
+      "v_ph_sq_at_k0": 6.0
+    },
+    {
+      "A": 1.0,
+      "K_Q": 1.0,
+      "case": "moderate_q_perpendicular",
+      "cos_theta": 0.0,
+      "gamma": 0.5,
+      "q": 0.1,
+      "superluminal_at_long_wavelength": false,
+      "v_ph_sq_at_k0": 0.30000000000000004
+    }
+  ],
+  "physical_eft_cutoff_comparison": "NOT_PERFORMED_REQUIRES_COMPLETED_STAGE_B_ITEM_9",
+  "revises_stage_a_pass": false,
+  "short_wavelength": {
+    "v_group_leading_coefficient": "2*sqrt(gamma)/(sqrt(K_Q)*M_star)",
+    "v_group_limit_k_to_infinity": "oo",
+    "v_ph_squared_limit_k_to_infinity": "oo",
+    "verdict": "UNBOUNDED_FOR_ALL_POSITIVE_A_K_Q_GAMMA"
+  },
+  "status": "OPEN"
+}
