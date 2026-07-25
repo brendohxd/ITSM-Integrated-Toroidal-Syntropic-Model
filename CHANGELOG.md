@@ -129,7 +129,7 @@
 - **Manuscript Directory Cleanup:** Removed obsolete `Main.tex` and `Main.pdf` files.
 - **Supplementary Segregation:** Created dedicated `Manuscript/Supplementary/` and `Manuscript/Submission_Materials/` directories to de-clutter the primary manuscript build root.
 - **SPARC Ledger Regeneration:** Reran MCMC data pipeline to regenerate `appendix_sparc_table.tex` in the new Supplementary directory.
-- **Complementary Papers Architecture:** Formally integrated three complementary theoretical bridge papers into the `papers/` directory structure (`Syntropic-Thermodynamics`, `T3-Illusion`, and `Al-Jabr-Reunification`) and documented them in the primary README.
+- **Complementary Papers Architecture:** Formally integrated two physics bridge papers into the `papers/` directory structure (`Syntropic-Thermodynamics` and `T3-Illusion`) and documented them in the primary README.
 
 ## Version 11.1.1 — Citation Integrity, Archive Sweep & Zenodo Publication (2026-06-21)
 
@@ -139,9 +139,6 @@
   - `ITSM_T3_Illusion_v0.5.0.tex`: Added Planck 2018 (A&A, doi:10.1051/0004-6361/201833910) for $\Omega_k \approx 0$ flatness, ITER Physics Basis for tokamak geometry, SPARC database (Lelli et al. 2016, doi:10.3847/0004-6256/152/6/157) for rotation curves, and Casimir 1948 for the toroidal vacuum energy prediction.
   - Fixed broken `[?]` natbib reference in T3-Illusion by migrating to inline `thebibliography` block.
 - **OPSEC Verification:** Full scan of all `.tex` files confirmed zero active engineering blueprints, hardware specs, or restricted TRC antenna parameters in the public release. TRC references remain at the safe "pyramid" level of abstraction.
-
-### The Anachronistic Archive
-- **Encoding Sweep (`ITSM_Anachronistic_Archive_v0.1.0.tex`):** Automated Python pass to scrub all UTF-8 mojibake artifacts (e.g., `DÃ©` → `D\'e`, `â€"` → `---`, inverted question marks) produced during the Markdown-to-LaTeX conversion pipeline. Recompiled to 70-page, clean PDF.
 
 ### Zenodo Submission
 - **Primary ITSM Deposition Updated (DOI: `10.5281/zenodo.20774996`):** Replaced the v11.0.0 PDF with `ITSM_Core_Cosmology_v11.1.1.pdf` on the existing ITSM Zenodo deposition, preserving version continuity and DOI lineage. Full HTML-structured metadata (title, ORCID, keywords, GitHub repo link, CC-BY-4.0 license) aligned to the existing publication record.
@@ -155,11 +152,6 @@
 ### Public Physics Formalization
 - **Syntropic Thermodynamics (`papers/Syntropic-Thermodynamics/`):** Formalized the failure of the 2nd Law of Thermodynamics within a $T^3$ manifold. Defined the Syntropic Source Vector and the resulting engineering divergence between Entropic Tokamak confinement and Syntropic TRC resonance. Fully formatted to APS PRD (`revtex4-2`) standards.
 - **Architectural Split:** Restored `T3-Illusion` to its purely geometric focus (topological lensing) to ensure target audience clarity. Re-mapped the `papers/` directory structure.
-
-### Theological Extrapolations & Historical Synthesis
-- **Anachronistic Synthesis:** Integrated four major historical anomalies (Dogon/Sirius B, Piri Reis Map, Antikythera Mechanism, CIA Project Stargate) into the master `THEOLOGICAL_SYNTHESIS.md` document (now 134KB+).
-- **Forensic Textual Criticism:** Conducted extensive deep-dive searches and comparative linguistic analyses between the Book of Enoch, Sumerian texts (Enuma Elish, Epic of Gilgamesh), and Vedic texts (Mahabharata, Vaimanika Shastra).
-- **Functional-Nominal Matrix Translation:** Executed cross-cultural mapping searches to bridge disparate mythologies, unifying distinct sigla and terminologies under the ITSM framework.
 
 ---
 
@@ -177,10 +169,6 @@
 ### Public Physics Formalization
 - **T³ Illusion Catalyst (`papers/T3-Illusion/`):** Finalized the topological resolution of celestial anomalies into a standalone, Zenodo-ready manuscript. Injected the reserved Zenodo DOI.
 - **ITSM Main Manuscript Zenodo Update:** Triggered the 'New Version' pipeline for the primary ITSM framework, decoupling the Python computational engines from the academic PDF to ensure peer-review purity.
-
-### Theoretical Extrapolations & Security
-- **Metric Engineering Context:** Established the theoretical framework for advanced cosmological engineering (e.g., localized manipulation of the $a_0$ boundary, theoretical planetary defense protocols, and thermodynamic terraforming principles) as a strict philosophical extension of the Toroidal Manifold math.
-- **Data Security Doctrine:** Introduced AES-encrypted local storage (`ark_vault.py`) to manage sensitive endgame materials, ensuring that all precise mathematical limits, material specifications, and frequencies regarding these applications remain fully redacted from public GitHub repositories. 
 
 ---
 
