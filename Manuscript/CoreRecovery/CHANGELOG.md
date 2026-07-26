@@ -22,6 +22,12 @@ root `CHANGELOG.md` records legacy project history.
   basis, its collinear cross-check and the cubic constraint-order identity.
 - Added an operator-basis NDA diagnostic and the on-shell three-point
   kinematic obstruction, without promoting either to a physical cutoff.
+- Added the complete three-dimensional flat-decoupling quartic khronon basis,
+  with 96 expanded monomials and an independent longitudinal reduction.
+- Added the exact elastic contact angular form, exact vanishing of the elastic
+  `t/u` cubic exchange vertices and the homogeneous `s`-channel gauge hold.
+- Added the quartic constraint-order identity: the second-order constraint
+  source enters through a Schur complement, while third-order solutions cancel.
 
 ### Changed
 
@@ -43,6 +49,9 @@ root `CHANGELOG.md` records legacy project history.
   order.
 - Replaced a cubic three-point cutoff target with the invariant constrained
   `2-to-2` exchange-plus-quartic-contact amplitude required next.
+- Refined that target after the flat quartic audit: the contact term is finite,
+  elastic `t/u` exchange vanishes, and the `s` channel requires the full
+  gauge-regular constrained cosmological scalar system.
 
 ## 12.0-alpha.2 - 2026-07-26
 

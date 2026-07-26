@@ -155,11 +155,16 @@ basis. For algebraic lapse and shift constraints, stationarity of the
 first-order solution cancels every explicit second-order constraint correction
 from the reduced cubic action. Linear-dispersion energy and momentum
 conservation also force an on-shell three-point spatial triangle to be
-collinear. Consequently a physical interaction scale cannot be assigned from
-a non-collinear cubic three-point vertex: it requires the complete constrained
-`2-to-2` amplitude, including cubic exchange, the quartic contact vertex and
-physical eigenmode projection. Nonlinear weak coupling, the physical cutoff
-and the global multicone-causality test remain open.
+collinear. The follow-on three-dimensional flat-decoupling quartic audit
+contains 96 expanded monomials and gives the exact elastic contact form
+`4[c123^2/c14-(2c123-c14)cos^2(theta)]`. Elastic `t/u` cubic exchange vanishes
+exactly, while the centre-of-mass `s` channel is the non-invertible homogeneous
+khronon gauge orbit. At quartic order the second-order constraint source enters
+through `-J2^T C^(-1) J2/2`; third-order constraint solutions are unnecessary.
+Consequently the physical interaction scale still requires the complete
+gauge-regular constrained cosmological `2-to-2` amplitude and physical
+eigenmode projection. Nonlinear weak coupling, the physical cutoff and the
+global multicone-causality test remain open.
 
 ### 3.4 Infrared phonon sector
 

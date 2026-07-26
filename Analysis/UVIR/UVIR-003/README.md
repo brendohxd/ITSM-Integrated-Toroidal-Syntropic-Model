@@ -145,3 +145,23 @@ The reported operator-by-operator NDA momentum is diagnostic only. A
 non-collinear on-shell three-point process is forbidden by linear-dispersion
 kinematics, while a physical cutoff requires the constrained cosmological
 `2-to-2` exchange-plus-contact amplitude and physical eigenmode projection.
+## Three-dimensional khronon quartic audit
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_aether_stueckelberg_3d_quartic.py
+```
+
+This derives the complete 96-monomial flat-decoupling quartic basis, verifies
+the earlier quadratic and cubic actions and checks an independently generated
+one-dimensional quartic reduction. In elastic centre-of-mass kinematics it
+proves the exact contact angular form and exact vanishing of `t/u` cubic
+exchange. The `s` channel has zero spatial momentum and is the non-invertible
+homogeneous khronon gauge orbit.
+
+At quartic order the second-order constraint source is required through the
+Schur complement `-J2^T C^(-1)J2/2`; third-order constraint solutions are not
+needed. The output is an interaction-readiness diagnostic, not a physical
+cutoff. The latter still requires the full gauge-regular constrained
+cosmological `2-to-2` amplitude and physical eigenmode projection.

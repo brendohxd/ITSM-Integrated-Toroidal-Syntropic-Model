@@ -247,6 +247,18 @@ the complete constrained scalar `2-to-2` amplitude with cubic exchange,
 quartic contact and physical eigenmode projection. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_AETHER_STUECKELBERG_3D_CUBIC.md`.
 
+UVIR-003 Stage-B three-dimensional quartic result (2026-07-26): **complete
+flat-decoupling quartic basis passed; physical `2-to-2` amplitude held on the
+homogeneous `s`-channel gauge orbit**. The expansion contains 96 monomials,
+reproduces the quadratic and cubic results and matches an independent
+one-dimensional quartic reduction. The elastic contact coefficient is
+`4[c123^2/c14-(2c123-c14)cos^2(theta)]`; elastic `t/u` cubic exchange vanishes
+exactly. Quartic reduction requires the second-order constraint Schur
+complement `-J2^T C^(-1)J2/2`, but not third-order constraint solutions. The
+next step is the full evolving-FRW cubic and quartic constrained scalar action,
+physical eigenmode projection and gauge-regular unitarity amplitude. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_AETHER_STUECKELBERG_3D_QUARTIC.md`.
+
 ### MAT-001 -- Matter coupling and `C_proj`
 
 Derive the baryon--phonon vertex and calculate the observable Wilson

@@ -379,8 +379,8 @@ def build_summary(
             "next_required_calculation": [
                 "FULL_COSMOLOGICAL_CUBIC_VERTEX_WITH_FIRST_ORDER_CONSTRAINTS",
                 "COMPLETE_PHYSICAL_SCALAR_EIGENMODE_PROJECTION",
-                "QUARTIC_CONTACT_VERTEX",
-                "ON_SHELL_2_TO_2_EXCHANGE_PLUS_CONTACT_AMPLITUDE",
+                "FULL_COSMOLOGICAL_QUARTIC_WITH_SECOND_ORDER_CONSTRAINT_SCHUR_COMPLEMENT",
+                "GAUGE_REGULAR_ON_SHELL_2_TO_2_AMPLITUDE",
             ],
         },
         "gate_status": {

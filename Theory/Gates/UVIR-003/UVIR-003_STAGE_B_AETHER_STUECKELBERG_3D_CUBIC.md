@@ -158,3 +158,15 @@ Full UVIR-003 gate: IN_PROGRESS
 MAT-001: BLOCKED
 STATUS: PASS_3D_CUBIC_AND_CONSTRAINT_IDENTITY
 ```
+## Subsequent quartic status
+
+The follow-on three-dimensional flat-decoupling quartic audit is now complete.
+It derives 96 expanded monomials, the exact elastic contact angular form and
+exactly vanishing elastic `t/u` cubic exchange. The centre-of-mass `s` channel
+is the non-invertible homogeneous khronon gauge orbit. Quartic reduction
+requires the second-order constraint Schur complement, although third-order
+constraint solutions cancel. The physical cutoff therefore remains open
+pending the full gauge-regular constrained cosmological amplitude.
+
+See
+`UVIR-003_STAGE_B_AETHER_STUECKELBERG_3D_QUARTIC.md`.

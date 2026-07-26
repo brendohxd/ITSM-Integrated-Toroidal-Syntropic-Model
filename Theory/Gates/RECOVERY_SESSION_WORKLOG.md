@@ -416,3 +416,28 @@ cutoff.
 scale calculation is the constrained scalar `2-to-2` amplitude including
 cubic exchange, the quartic contact vertex and physical eigenmode projection.
 UVIR-003 remains in progress and MAT-001 remains blocked.
+## 2026-07-26 - Three-dimensional khronon quartic and 2-to-2 readiness audit
+
+Gate: UVIR-003 (Stage B nonlinear interaction readiness)
+
+**Quartic basis:** derived the complete three-dimensional flat-decoupling
+quartic khronon action. The expanded result has 96 monomials, exactly
+reproduces the previous quadratic and cubic actions and matches an independent
+one-dimensional quartic construction.
+
+**Elastic COM identities:** the on-shell contact coefficient is
+`4[c123^2/c14-(2c123-c14)cos^2(theta)]`. The elastic static-transfer cubic
+vertex is proportional to the unit-vector identity, so `t/u` exchange vanishes
+exactly. The `s` channel carries zero spatial momentum and its khronon inverse
+kernel vanishes: it is the homogeneous preferred-time gauge orbit and cannot
+be inverted or dropped in the flat decoupling description.
+
+**Constraint order:** quartic reduction genuinely requires the second-order
+constraint source via `Lred4=L4[x,z1]-J2^T C^(-1)J2/2`; third-order constraint
+solutions cancel at this order.
+
+**Decision:** record `PASS_QUARTIC_BASIS_WITH_2_TO_2_GAUGE_HOLD`. Do not assign
+a physical cutoff. The next target is the full evolving-FRW constrained cubic
+and quartic scalar system, physical eigenmode projection and gauge-regular
+`2-to-2` unitarity amplitude. UVIR-003 remains in progress and MAT-001 remains
+blocked.

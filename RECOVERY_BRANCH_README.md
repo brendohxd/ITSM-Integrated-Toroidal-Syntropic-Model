@@ -30,8 +30,13 @@ basis is now verified in three spatial dimensions and exactly reduces to the
 previous longitudinal result. A constraint-order identity shows that the
 first-order lapse and shift solutions suffice for the reduced cubic action;
 explicit second-order corrections cancel. Linear on-shell three-point
-kinematics force collinearity, so the physical strong-coupling scale must come
-from the complete constrained `2-to-2` exchange-plus-quartic-contact
+kinematics force collinearity. The subsequent flat-decoupling quartic audit
+finds 96 expanded monomials, a finite exact elastic contact term and exactly
+vanishing elastic `t/u` cubic exchange. The centre-of-mass `s` channel carries
+zero spatial momentum and lies on the non-invertible homogeneous khronon gauge
+orbit. At quartic order the second-order constraint source is genuinely needed
+through a Schur complement. The physical strong-coupling scale therefore still
+requires the complete gauge-regular constrained cosmological `2-to-2`
 amplitude. These bounded results do not establish full perturbative stability,
 observational viability, or a completed cosmology.
 
