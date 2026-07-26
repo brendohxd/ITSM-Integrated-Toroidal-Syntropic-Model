@@ -100,6 +100,39 @@ It is a checked literature substitution, not an independent ITSM-side
 linearized Einstein-equation derivation, and it excludes the coupled
 $\Phi$--$U$--$\psi$ system.
 
+\subsection{Zero-gradient force-block factorization}
+
+On the declared background $\bar\psi=\text{constant}$, every derivative of
+the force field begins at first perturbative order.  Consequently,
+\begin{equation}
+ \mathcal Q^2=\dot\pi^2+\mathcal O(3),\qquad
+ \mathcal Y^{3/2}=\mathcal O(3),\qquad
+ (\Delta_U\psi)^2=(\nabla^2\pi)^2+\mathcal O(3),
+\end{equation}
+where metric and frame corrections enter only in the indicated higher-order
+terms.  The force scalar therefore factorizes from the lapse, shift, frame and
+condensate blocks at quadratic order for the declared truncation:
+\begin{equation}
+ S_\pi^{(2)}=\frac12\int\dd^4x\left[
+ K_Q\dot\pi^2-\frac{\gamma}{M_*^2}(\nabla^2\pi)^2\right].
+ \label{eq:zero-gradient-force-block}
+\end{equation}
+It carries one nonnegative $z=2$ scalar mode for $K_Q,\gamma>0$.  This bounded
+result does not reduce the remaining metric--frame--condensate block.
+
+A constant field redefinition $\psi_c=s\psi$ sends
+\begin{equation}
+ K_Q\to\frac{K_Q}{s^2},\quad
+ A\to\frac{A}{s^3},\quad
+ \gamma\to\frac{\gamma}{s^2},\quad
+ C_m\to\frac{C_m}{s},\quad q\to sq.
+\end{equation}
+Thus $\gamma/K_Q$, $A/K_Q^{3/2}$, $C_m/\sqrt{K_Q}$ and $Aq/K_Q$ are invariant,
+whereas $K_Q$ alone is not.  UVIR-003 can determine a structural stability
+domain in invariant ratios, but a parent microscopic calculation or MAT-001
+must fix the physical normalization and select a point in that domain.  The
+earlier $K_Q\sim M_P^2$ estimate remains a speculative dimensional analogy.
+
 \subsection{Causality and cutoff status}
 
 Around a nonzero spatial background gradient of magnitude $q$, the force

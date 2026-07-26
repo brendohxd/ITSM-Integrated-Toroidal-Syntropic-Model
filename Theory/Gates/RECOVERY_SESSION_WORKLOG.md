@@ -154,3 +154,35 @@ causality edge rather than comfortably away from it. If a future pass
 derives `K_Q` properly and finds `q_cross >> a0`, this speculative estimate
 should be marked superseded here, not deleted — record why the naive
 estimate was wrong once the real answer exists.
+
+## 2026-07-26 - Zero-gradient force block and K_Q identifiability
+
+Gate: UVIR-003 (Stage B, force sector on the declared constant background)
+
+**What changed:** expanded the force action in a generic first-order metric and
+frame perturbation with `psi_bar=constant`. Added
+`Analysis/UVIR/UVIR-003/uvir003_zero_gradient_force_block.py`, its JSON output,
+and `UVIR-003_STAGE_B_ZERO_GRADIENT_FORCE_BLOCK.md`.
+
+**Finding:** every derivative of `psi` begins at first order. The temporal
+`Q^2` term and projected regulator therefore contain no lapse, shift, frame or
+condensate variable at quadratic order, while `Y^(3/2)` begins at cubic order.
+The force block factorizes and contains one nonnegative `z=2` scalar for
+positive `K_Q` and `gamma`. This is a partial force-block pass, not the missing
+metric-aether-condensate reduction.
+
+**K_Q result:** a constant field rescaling changes `K_Q`, `A`, `gamma` and
+`C_m` while preserving the physical coefficient ratios. A standalone `K_Q`
+is therefore not identifiable from the bottom-up EFT. The earlier
+`K_Q~M_P^2` estimate remains speculative and is not promoted.
+
+**Dependency correction:** UVIR-003 should derive a stable and causal domain
+in field-redefinition invariant ratios. MAT-001 or a parent microscopic
+completion must fix the physical field normalization and select a point in
+that domain. This avoids requiring MAT-001's matching result as an input to
+the structural part of UVIR-003 while MAT-001 remains downstream.
+
+**Still open:** the reduced metric-aether-condensate scalar/vector/tensor
+Hamiltonians, nonzero-gradient force mixing, covariant regulator, physical
+cutoff and technical naturalness. Nothing was abandoned except the attempt to
+derive a standalone numerical `K_Q` from an EFT in which it is not identifiable.
