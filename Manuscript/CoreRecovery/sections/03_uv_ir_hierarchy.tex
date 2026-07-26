@@ -438,11 +438,60 @@ factor,
 \end{align}
 For every nonzero Fourier mode,
 $\chi_k=M_U\sqrt{c_{14}}\lvert k\rvert\pi_k$ supplies the quadratic canonical
-normalization and $c_s^2=c_{123}/c_{14}$.  This bounded vertex basis is not the
-physical cosmological cubic action.  It omits non-collinear momentum triads,
-the second-order lapse and scalar-shift response, evolving-background terms
-and condensate--metric mode projection.  Consequently no invariant physical strong-coupling scale is assigned; the action-dependent warnings and healthy-extension results in Refs.~\cite{blas2010,papazoglou2009} reinforce that boundary.  UVIR-003 remains open.
+normalization and $c_s^2=c_{123}/c_{14}$.  This longitudinal result is a
+one-dimensional check on the complete three-dimensional basis below.
 
+\subsection{Three-dimensional cubic and constraint-order result}
+
+Let $p_i=\partial_i\pi$, $v_i=\partial_i\dot\pi$,
+$H_{ij}=\partial_i\partial_j\pi$ and $H=\Delta\pi$.  With the overall
+$M_U^2$ factor suppressed, direct expansion of the hypersurface-orthogonal
+aether action in flat decoupling gives
+\begin{align}
+ \mathcal L_2={}&\frac12\left[
+ c_{14}v_iv_i-(c_1+c_3)H_{ij}H_{ij}-c_2H^2\right],
+ \label{eq:khronon-3d-l2}\\
+ \mathcal L_3={}&-c_{14}\left(\ddot\pi\,p_iv_i+\dot\pi\,v_iv_i\right)
+ +(c_1+2c_3-c_4)p_iH_{ij}v_j
+ +2c_2Hp_iv_i\nonumber\\
+ &+(c_1+c_3)\dot\pi\,H_{ij}H_{ij}
+ +c_2\dot\pi\,H^2 .
+ \label{eq:khronon-3d-l3}
+\end{align}
+Suppressing transverse derivatives reduces this expression exactly to
+Eqs.~\eqref{eq:khronon-l2}--\eqref{eq:khronon-l3}.
+
+The perturbative constraint order can also be fixed without guessing the
+second-order lapse or shift.  For nondynamical variables $z$ with
+\begin{equation}
+ \mathcal L_2=\mathcal L_{2,\mathrm{phys}}+z^{\mathsf T}J
+ +\frac12z^{\mathsf T}Cz,\qquad z_1=-C^{-1}J,
+ \label{eq:cubic-constraint-order}
+\end{equation}
+substitution of $z=z_1+z_2+\cdots$ makes the term linear in $z_2$ vanish by
+$Cz_1+J=0$; the remaining quadratic term starts at fourth order.  Replacing
+$z_1$ by $z_1+z_2$ inside $\mathcal L_3$ likewise first changes quartic
+order.  Hence the reduced cubic action requires the first-order constraints,
+not explicit second-order lapse and shift solutions.
+
+A representative operator-basis estimate gives
+\begin{equation}
+ q_{\mathrm{NDA}}=0.125778823734,\qquad
+ 0.2029209475\leq\frac{q_{\mathrm{NDA}}}{H}\leq1.6462061767
+ \label{eq:khronon-basis-nda}
+\end{equation}
+along the sampled trajectory.  These values are not a physical cutoff: they
+change under field
+redefinitions and omit cosmological mixing.  Moreover, for linear dispersion
+$|\omega|=c_s|\mathbf k|$, on-shell three-point conservation saturates the
+triangle inequality and forces the momenta to be collinear.  A non-collinear
+on-shell cubic three-point amplitude therefore cannot define the desired
+interaction scale.  The next invariant calculation is the complete
+constrained scalar $2\!\to\!2$ amplitude, including cubic exchange, the
+quartic contact vertex, physical eigenmode projection and a stated unitarity
+criterion.  The action-dependent warnings and healthy-extension results in
+Refs.~\cite{blas2010,papazoglou2009} reinforce this boundary.  UVIR-003
+remains open.
 \subsection{Causality and cutoff status}
 
 Around a nonzero spatial background gradient of magnitude $q$, the force

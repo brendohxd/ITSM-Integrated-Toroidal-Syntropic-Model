@@ -50,7 +50,9 @@ The manuscript intentionally distinguishes derived, conditional, open, and
 rejected claims. `13/12`, `H0=72.97`, automatic Solar-System compliance, and
 the historical SPARC `p=0.62` are not live predictions in this draft.
 
-The current working draft additionally records the low-`q` gauge-orbit audit
-and bounded longitudinal Stueckelberg cubic vertex basis. These are unreleased
-changes after `12.0-alpha.2`; no new frozen manuscript version has yet been
-created. The physical cubic interaction scale remains open.
+The current working draft additionally records the low-`q` gauge-orbit audit,
+the complete three-dimensional flat-decoupling khronon cubic operator basis,
+and the cubic constraint-order identity. These are unreleased changes after
+`12.0-alpha.2`; no new frozen manuscript version has yet been created. The
+physical interaction scale remains open pending the constrained scalar
+`2-to-2` exchange-plus-contact amplitude.

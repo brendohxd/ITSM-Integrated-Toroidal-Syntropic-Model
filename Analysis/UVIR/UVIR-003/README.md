@@ -120,7 +120,28 @@ rejected as gauge dependent.
 
 The bounded Stueckelberg calculation derives the longitudinal one-dimensional
 flat-decoupling quadratic and cubic aether vertex basis and identifies the
-canonical nonzero Fourier mode. It does not supply the physical cosmological
-strong-coupling scale. That requires non-collinear momentum triads, the
-second-order lapse and shift response, evolving-background terms and
-projection onto the complete physical eigenmode basis.
+canonical nonzero Fourier mode. The subsequent three-dimensional audit
+completes that flat-decoupling basis and proves that first-order lapse and
+shift constraints suffice at cubic order. It still does not supply the
+physical cosmological strong-coupling scale, which requires the constrained
+cosmological `2-to-2` exchange-plus-contact amplitude and projection onto the
+complete physical eigenmode basis.
+
+## Three-dimensional khronon cubic audit
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_aether_stueckelberg_3d_cubic.py
+```
+
+This extends the bounded flat-decoupling khronon calculation to the complete
+three-dimensional cubic operator basis and verifies its collinear reduction.
+It also proves that explicit second-order lapse and shift solutions cancel out
+of the reduced cubic action: only the first-order constraints are required at
+cubic order.
+
+The reported operator-by-operator NDA momentum is diagnostic only. A
+non-collinear on-shell three-point process is forbidden by linear-dispersion
+kinematics, while a physical cutoff requires the constrained cosmological
+`2-to-2` exchange-plus-contact amplitude and physical eigenmode projection.

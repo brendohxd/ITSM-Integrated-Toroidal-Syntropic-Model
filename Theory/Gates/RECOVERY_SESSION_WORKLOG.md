@@ -388,3 +388,31 @@ one-dimensional decoupling truncation omits non-collinear triads, second-order
 lapse and shift response, the evolving background and coupled physical-mode
 projection. The physical interaction scale is `NOT_YET_DERIVED`; UVIR-003
 remains in progress and MAT-001 remains blocked.
+
+## 2026-07-26 - Three-dimensional khronon cubic and constraint-order audit
+
+Gate: UVIR-003 (Stage B nonlinear scalar readiness)
+
+**3D vertex:** expanded the normalized hypersurface-orthogonal aether through
+cubic order in three spatial dimensions. The resulting basis contains the
+five compact tensor structures built from `p_i=partial_i pi`,
+`v_i=partial_i dot(pi)` and `H_ij=partial_i partial_j pi`; its collinear
+reduction exactly reproduces the previous one-dimensional result.
+
+**Constraint order:** for an algebraic constraint block
+`L2=z^T J+z^T C z/2`, stationarity of the first-order solution
+`z1=-C^(-1)J` cancels every cubic contribution from the second-order
+constraint correction `z2`. The reduced cubic action therefore needs the full
+cubic ADM vertex evaluated on `z1`, not an explicit `z2` solution.
+
+**Kinematics and scale:** a non-collinear on-shell three-point amplitude is
+forbidden for the linear scalar dispersion because equality in the triangle
+inequality forces collinearity. An operator-basis NDA diagnostic gives
+`q_NDA=0.125778823734` at the unselected representative dimensionless point,
+but this is not invariant under field redefinitions and is not a physical
+cutoff.
+
+**Decision:** record `PASS_3D_CUBIC_AND_CONSTRAINT_IDENTITY`. The next physical
+scale calculation is the constrained scalar `2-to-2` amplitude including
+cubic exchange, the quartic contact vertex and physical eigenmode projection.
+UVIR-003 remains in progress and MAT-001 remains blocked.

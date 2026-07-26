@@ -70,18 +70,22 @@ describe only the selected example.
 ## Why no physical scale is reported
 
 A unique physical strong-coupling scale cannot be extracted from this
-one-dimensional truncation. It omits:
+one-dimensional truncation. The subsequent three-dimensional audit supplies
+the complete flat-decoupling cubic operator basis and proves that first-order
+lapse and scalar-shift constraints suffice at cubic order. The remaining
+physical calculation still requires:
 
-- non-collinear momentum-triad dependence;
-- second-order lapse and scalar-shift response;
-- evolving-background terms;
+- the complete evolving-FRW cosmological cubic vertex on those constraints;
 - condensate and metric mixing;
-- projection onto the complete physical eigenmode basis.
+- projection onto the complete physical eigenmode basis;
+- the quartic contact vertex and constrained `2-to-2` amplitude;
+- a stated unitarity criterion.
 
-Single-direction cubic terms can also be rearranged by integrations by parts
-and on-shell identities. Assigning a cutoff before the full triad amplitude
-and constrained physical basis are fixed would make the answer
-representation dependent.
+Individual cubic coefficients can be rearranged by integrations by parts,
+field redefinitions and on-shell identities. Linear-dispersion three-point
+kinematics also forces on-shell momenta to be collinear. Assigning a cutoff
+before the exchange-plus-contact amplitude and constrained physical basis are
+fixed would therefore make the answer representation dependent.
 
 The result is therefore:
 
@@ -114,3 +118,16 @@ Full UVIR-003 gate: IN_PROGRESS
 MAT-001: BLOCKED
 STATUS: PASS_BOUNDED_VERTEX_BASIS
 ```
+
+## Subsequent three-dimensional status
+
+`UVIR-003_STAGE_B_AETHER_STUECKELBERG_3D_CUBIC.md` extends this calculation to
+the full three-dimensional flat-decoupling cubic operator basis and exactly
+recovers the one-dimensional result in the collinear limit. It also proves
+that explicit second-order constraint solutions do not enter the reduced
+cubic action; the first-order lapse and shift solutions suffice.
+
+The extension computes a basis-dependent operator NDA proxy but does not call
+it the physical cutoff. Linear on-shell three-point kinematics force
+collinearity, so the next invariant calculation is the complete constrained
+`2-to-2` exchange-plus-quartic-contact amplitude.

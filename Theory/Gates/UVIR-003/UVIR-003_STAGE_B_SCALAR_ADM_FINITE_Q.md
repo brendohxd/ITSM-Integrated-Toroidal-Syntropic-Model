@@ -381,3 +381,16 @@ physical ghost or a physical strong-coupling scale. Nonlinear weak coupling is
 still open. A separate bounded Stueckelberg audit derives the one-dimensional
 flat-decoupling cubic aether vertex basis, but the physical cutoff still
 requires non-collinear triads and the second-order cosmological constraints.
+## Subsequent low-q and cubic status
+
+The strict `q_phys -> 0` hold was subsequently resolved as the homogeneous
+time-translation gauge orbit. The complete three-dimensional flat-decoupling
+khronon cubic operator basis is also derived. A general constraint identity
+shows that first-order lapse and scalar-shift solutions suffice for the
+reduced cubic action; explicit second-order solutions cancel at that order.
+
+These results do not determine the physical cutoff. Linear-dispersion
+three-point kinematics forces on-shell momenta to be collinear, so the next
+invariant target is the complete constrained scalar `2-to-2` amplitude,
+including cubic exchange, quartic contact, physical eigenmode projection and
+a stated unitarity criterion.

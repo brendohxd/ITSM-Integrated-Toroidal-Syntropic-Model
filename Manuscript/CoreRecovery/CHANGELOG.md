@@ -18,6 +18,10 @@ root `CHANGELOG.md` records legacy project history.
   `q=0` scalar basis and representative positivity scan.
 - Added the bounded longitudinal Stueckelberg quadratic and cubic aether
   vertex basis with an explicit no-cutoff claim boundary.
+- Added the complete three-dimensional flat-decoupling khronon cubic operator
+  basis, its collinear cross-check and the cubic constraint-order identity.
+- Added an operator-basis NDA diagnostic and the on-shell three-point
+  kinematic obstruction, without promoting either to a physical cutoff.
 
 ### Changed
 
@@ -33,7 +37,12 @@ root `CHANGELOG.md` records legacy project history.
 - Resolved the strict `q=0` rank-loss hold as a homogeneous gauge orbit while
   keeping nonlinear weak coupling and the physical interaction scale open.
 - Replaced the planned canonical normalization of the collapsing eigenvector
-  with the correct gauge-invariant, non-collinear cubic cosmological task.
+  with the correct gauge-invariant nonlinear task.
+- Corrected the cubic constraint workflow: first-order lapse and shift
+  solutions suffice because explicit second-order corrections cancel at cubic
+  order.
+- Replaced a cubic three-point cutoff target with the invariant constrained
+  `2-to-2` exchange-plus-quartic-contact amplitude required next.
 
 ## 12.0-alpha.2 - 2026-07-26
 

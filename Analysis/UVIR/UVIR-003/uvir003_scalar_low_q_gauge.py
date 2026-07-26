@@ -12,8 +12,9 @@ time-shift direction.
 
 This script does not assign a strong-coupling scale.  If the collapsing
 direction is gauge, canonical normalization of that direction is not a
-physical operation; a Stückelberg/gauge-invariant cubic triad calculation is
-required instead.
+physical operation.  The subsequent three-dimensional khronon audit supplies
+the flat-decoupling cubic basis; the physical target is now the constrained
+cosmological 2-to-2 amplitude.
 """
 
 from __future__ import annotations
@@ -522,8 +523,10 @@ def run() -> int:
             "the representative branch. This rejects a naive physical "
             "strong-coupling scale inferred solely from the vanishing "
             "eigenvalue. It does not prove nonlinear weak coupling. A "
-            "gauge-invariant or Stückelberg cubic action for nonzero "
-            "momentum triads is still required."
+            "The complete three-dimensional flat-decoupling cubic "
+            "basis has subsequently been derived. A physical "
+            "interaction scale still requires the constrained "
+            "cosmological 2-to-2 amplitude."
         ),
         "next_required_calculation": [
             (
@@ -531,16 +534,16 @@ def run() -> int:
                 "or use an explicitly gauge-invariant cubic basis"
             ),
             (
-                "expand the action for non-collinear momentum triads "
-                "through cubic order"
+                "substitute the first-order lapse and scalar-shift "
+                "constraints into the complete cosmological cubic action"
             ),
             (
-                "solve lapse and scalar shift constraints through second "
-                "perturbative order"
+                "derive the quartic contact vertex and combine it with "
+                "the cubic-exchange contribution"
             ),
             (
                 "canonically normalize only the physical propagating "
-                "modes and derive invariant cubic interaction scales"
+                "modes and derive an invariant 2-to-2 unitarity scale"
             ),
             (
                 "compare the resulting scales with H, physical momenta "

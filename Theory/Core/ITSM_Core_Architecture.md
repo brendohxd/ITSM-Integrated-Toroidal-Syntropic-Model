@@ -149,11 +149,17 @@ that direction exactly as `(H,rho_dot,mu)`, the homogeneous time-translation
 orbit. Two gauge-invariant matter combinations retain a positive regular
 `q=0` kinetic block across the representative trajectory. The rank loss is
 therefore a gauge endpoint rather than a third physical homogeneous scalar.
-A bounded longitudinal Stueckelberg expansion derives the flat-decoupling
-quadratic and cubic aether vertex basis, but it omits the second-order
-cosmological constraints and non-collinear momentum triads needed for a
-physical interaction scale. Nonlinear weak coupling, the physical cutoff and
-the global multicone-causality test remain open.
+The flat-decoupling khronon expansion is now verified through cubic order in
+three spatial dimensions and exactly reproduces the earlier longitudinal
+basis. For algebraic lapse and shift constraints, stationarity of the
+first-order solution cancels every explicit second-order constraint correction
+from the reduced cubic action. Linear-dispersion energy and momentum
+conservation also force an on-shell three-point spatial triangle to be
+collinear. Consequently a physical interaction scale cannot be assigned from
+a non-collinear cubic three-point vertex: it requires the complete constrained
+`2-to-2` amplitude, including cubic exchange, the quartic contact vertex and
+physical eigenmode projection. Nonlinear weak coupling, the physical cutoff
+and the global multicone-causality test remain open.
 
 ### 3.4 Infrared phonon sector
 

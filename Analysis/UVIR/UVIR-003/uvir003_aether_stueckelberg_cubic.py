@@ -249,11 +249,11 @@ def build_summary(
             "physical_strong_coupling_scale_status": "NOT_YET_DERIVED",
             "naive_low_q_cutoff_status": "REJECTED_AS_GAUGE_NORMALIZATION",
             "missing_for_physical_scale": [
-                "NONCOLLINEAR_MOMENTUM_TRIAD_VERTEX",
-                "SECOND_ORDER_LAPSE_AND_SHIFT_RESPONSE",
+                "FULL_COSMOLOGICAL_CUBIC_VERTEX_ON_FIRST_ORDER_CONSTRAINTS",
                 "EVOLVING_FRW_BACKGROUND_TERMS",
                 "CONDENSATE_AND_METRIC_MODE_MIXING",
                 "PHYSICAL_EIGENMODE_PROJECTION",
+                "QUARTIC_CONTACT_AND_2_TO_2_AMPLITUDE",
             ],
         },
         "gate_status": {

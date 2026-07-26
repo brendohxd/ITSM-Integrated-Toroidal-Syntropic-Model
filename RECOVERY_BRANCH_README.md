@@ -25,13 +25,15 @@ The scalar perturbation ADM programme has passed finite-wavenumber constraint
 elimination on the representative evolving branch. The apparent strict
 low-wavenumber rank loss is now identified as the homogeneous time-translation
 gauge orbit: the two gauge-invariant matter scalars retain a positive regular
-`q=0` kinetic block across the trajectory. A bounded longitudinal Stueckelberg
-calculation also derives the flat-decoupling cubic aether vertex basis and the
-nonzero-mode canonical normalization. It does not determine the physical
-strong-coupling scale. The next major calculation is the non-collinear cubic
-cosmological action with lapse and shift solved through second order. These
-bounded results do not establish full perturbative stability, observational
-viability, or a completed cosmology.
+`q=0` kinetic block across the trajectory. The flat-decoupling khronon cubic
+basis is now verified in three spatial dimensions and exactly reduces to the
+previous longitudinal result. A constraint-order identity shows that the
+first-order lapse and shift solutions suffice for the reduced cubic action;
+explicit second-order corrections cancel. Linear on-shell three-point
+kinematics force collinearity, so the physical strong-coupling scale must come
+from the complete constrained `2-to-2` exchange-plus-quartic-contact
+amplitude. These bounded results do not establish full perturbative stability,
+observational viability, or a completed cosmology.
 
 ## Repository rules for recovery work
 

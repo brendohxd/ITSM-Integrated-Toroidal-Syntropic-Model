@@ -231,12 +231,21 @@ rejected as gauge dependent. See
 UVIR-003 Stage-B bounded cubic result (2026-07-26): **longitudinal
 flat-decoupling Stueckelberg vertex basis derived; physical interaction scale
 open**. Restoring `T=t+pi` gives the quadratic combinations `c14` and `c123`
-and four checked cubic longitudinal operators. This is a readiness result, not
-the cosmological cubic action. The next calculation must retain non-collinear
-momentum triads, solve lapse and shift through second perturbative order, and
-project onto the complete physical eigenmodes before assigning an invariant
-strong-coupling scale. See
+and four checked cubic longitudinal operators. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_AETHER_STUECKELBERG_CUBIC.md`.
+
+UVIR-003 Stage-B three-dimensional cubic result (2026-07-26): **complete 3D
+flat-decoupling khronon cubic basis and constraint-order identity passed;
+physical `2-to-2` cutoff open**. The tensor vertex exactly reduces to the
+longitudinal result. For an invertible algebraic constraint block, the
+first-order lapse and shift solutions suffice at cubic order because every
+explicit second-order correction cancels by quadratic stationarity. A
+basis-dependent diagnostic gives `q_NDA=0.125778823734` at the unselected
+dimensionless point, but it is not a physical cutoff. Linear on-shell
+three-point kinematics force collinearity. The next invariant calculation is
+the complete constrained scalar `2-to-2` amplitude with cubic exchange,
+quartic contact and physical eigenmode projection. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_AETHER_STUECKELBERG_3D_CUBIC.md`.
 
 ### MAT-001 -- Matter coupling and `C_proj`
 

@@ -65,12 +65,19 @@ quadratic eigenvalue alone is therefore rejected as gauge dependent.
 The physical strong-coupling scale remains **not yet derived**. Its
 calculation requires:
 
-1. a restored preferred-time Stueckelberg/khronon scalar or an explicitly
-   gauge-invariant cubic basis;
-2. non-collinear momentum triads;
-3. lapse and scalar-shift solutions through second perturbative order;
-4. projection and canonical normalization of physical eigenmodes only;
+1. the complete cosmological cubic action evaluated on the first-order lapse
+   and scalar-shift constraints;
+2. the quartic contact vertex combined with cubic exchange;
+3. projection and canonical normalization of physical eigenmodes only;
+4. an explicit `2-to-2` unitarity criterion;
 5. comparison with `H`, physical momenta and the declared EFT cutoff.
+
+The subsequent three-dimensional flat-decoupling audit derives the complete
+khronon cubic operator basis and proves that explicit second-order lapse and
+shift solutions cancel from the reduced cubic action. It also shows that a
+non-collinear on-shell three-point process is kinematically forbidden for the
+linear dispersion, so the physical target is the constrained `2-to-2`
+amplitude rather than an isolated cubic coefficient.
 
 ## Reproduction
 
