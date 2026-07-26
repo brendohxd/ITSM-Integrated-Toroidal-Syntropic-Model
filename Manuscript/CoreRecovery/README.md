@@ -13,9 +13,9 @@ This directory is the manuscript workspace for the
 - `releases/v<version>/` contains immutable source and PDF snapshots.
 
 The current frozen release is
-[`v12.0-alpha.2`](releases/v12.0-alpha.2/). The previous
-[`v12.0-alpha.1`](releases/v12.0-alpha.1/) has been reconstructed from Git
-commit `c836172` so that the later work no longer overwrites it.
+[`v12.0-alpha.3`](releases/v12.0-alpha.3/). The previous release is
+[`v12.0-alpha.2`](releases/v12.0-alpha.2/); all versioned source and PDF trees
+are immutable snapshots.
 
 ## Versioning rule
 
@@ -35,7 +35,7 @@ alpha number; this keeps every cited PDF unambiguous.
 4. When the manuscript is ready to freeze, run:
 
    ```powershell
-   .\New-ManuscriptRelease.ps1 -Version 12.0-alpha.3 -Label "Scalar perturbation pass"
+   .\New-ManuscriptRelease.ps1 -Version 12.0-alpha.4 -Label "Next verified checkpoint"
    ```
 
 5. Inspect the new PDF, add `RELEASE_NOTES.md`, move the `Unreleased` entries
@@ -50,11 +50,11 @@ The manuscript intentionally distinguishes derived, conditional, open, and
 rejected claims. `13/12`, `H0=72.97`, automatic Solar-System compliance, and
 the historical SPARC `p=0.62` are not live predictions in this draft.
 
-The current working draft additionally records the low-`q` gauge-orbit audit,
-the complete three-dimensional flat-decoupling khronon cubic and quartic
-operator bases, and the cubic and quartic constraint-order identities. The
-quartic audit gives a finite elastic contact term, vanishing elastic `t/u`
-exchange and a homogeneous-gauge `s`-channel hold. These are unreleased changes
-after `12.0-alpha.2`; no new frozen manuscript version has yet been created.
-The physical interaction scale remains open pending the gauge-regular
-constrained cosmological `2-to-2` amplitude.
+Release `12.0-alpha.3` records the low-`q` gauge-orbit audit, the complete
+three-dimensional flat-decoupling khronon cubic and quartic operator bases,
+the cubic and quartic constraint-order identities, and nonlinear ADM action
+provenance for the exact `g+U+Phi+alignment` block. The full cosmological `J2`
+remains on hold until the force regulator has an evolving-frame covariant
+completion and a controlled treatment of `Y^(3/2)` at `Y=0`. The physical
+interaction scale remains open pending the gauge-regular constrained
+cosmological `2-to-2` amplitude.

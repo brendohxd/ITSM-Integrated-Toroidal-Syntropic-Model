@@ -5,6 +5,10 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+_No changes recorded._
+
+## 12.0-alpha.3 - 2026-07-26
+
 ### Added
 
 - Added the aether-unitary scalar ADM principal-symbol reduction.
@@ -28,6 +32,11 @@ root `CHANGELOG.md` records legacy project history.
   `t/u` cubic exchange vertices and the homogeneous `s`-channel gauge hold.
 - Added the quartic constraint-order identity: the second-order constraint
   source enters through a Schur complement, while third-order solutions cancel.
+- Added nonlinear ADM action provenance for the exact
+  `gravity+aether+condensate+alignment` parent block.
+- Added the force-sector completion hold: the evolving-frame `Delta_U`
+  completion and a perturbative rule for non-analytic `Y^(3/2)` at `Y=0`
+  are required before the full cosmological `J2` can be claimed.
 
 ### Changed
 
@@ -52,6 +61,16 @@ root `CHANGELOG.md` records legacy project history.
 - Refined that target after the flat quartic audit: the contact term is finite,
   elastic `t/u` exchange vanishes, and the `s` channel requires the full
   gauge-regular constrained cosmological scalar system.
+- Replaced immediate full-`J2` expansion with the prior action-completion
+  subgate required to make that source and its quartic Schur complement
+  well-defined.
+
+### Status boundary
+
+- This release advances nonlinear scalar readiness but does not close
+  UVIR-003.
+- The full force-sector action, cosmological `J2`, physical `2-to-2` amplitude,
+  unitarity cutoff and MAT-001 remain open.
 
 ## 12.0-alpha.2 - 2026-07-26
 

@@ -163,8 +163,13 @@ khronon gauge orbit. At quartic order the second-order constraint source enters
 through `-J2^T C^(-1) J2/2`; third-order constraint solutions are unnecessary.
 Consequently the physical interaction scale still requires the complete
 gauge-regular constrained cosmological `2-to-2` amplitude and physical
-eigenmode projection. Nonlinear weak coupling, the physical cutoff and the
-global multicone-causality test remain open.
+eigenmode projection. The exact nonlinear `g+U+Phi+alignment` ADM parent block
+now reproduces the FRW and finite-`q` quadratic constraint data. The full
+cosmological `J2` is not yet defined, however: the force regulator lacks its
+evolving-frame covariant completion, and the non-analytic `Y^(3/2)` operator
+needs a declared prescription or smooth completion at the zero-gradient
+background. Nonlinear weak coupling, the physical cutoff and the global
+multicone-causality test remain open.
 
 ### 3.4 Infrared phonon sector
 

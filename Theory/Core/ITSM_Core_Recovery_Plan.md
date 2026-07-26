@@ -259,6 +259,17 @@ next step is the full evolving-FRW cubic and quartic constrained scalar action,
 physical eigenmode projection and gauge-regular unitarity amplitude. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_AETHER_STUECKELBERG_3D_QUARTIC.md`.
 
+UVIR-003 Stage-B nonlinear ADM action-provenance result (2026-07-26): **the
+exact `g+U+Phi+alignment` parent block is verified; the full cosmological `J2`
+is held on force-sector completion**. The nonlinear ADM coefficients reproduce
+the FRW minisuperspace, finite-`q` constraint matrix, `J1` source and alignment
+phase stiffness. The projected regulator still lacks its evolving-frame
+covariant completion, and `Y^(3/2)=|epsilon|^3 Y2^(3/2)` about `Y=0` does not
+define an ordinary analytic cubic Taylor vertex. Complete the force action and
+its perturbative prescription before forming the full `J2` and quartic Schur
+complement. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_NONLINEAR_ADM_ACTION_PROVENANCE.md`.
+
 ### MAT-001 -- Matter coupling and `C_proj`
 
 Derive the baryon--phonon vertex and calculate the observable Wilson

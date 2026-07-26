@@ -37,6 +37,7 @@ python Analysis/UVIR/UVIR-003/uvir003_force_strong_coupling_estimate.py
 python Analysis/UVIR/UVIR-003/uvir003_conditional_kq_estimate.py
 python Analysis/UVIR/UVIR-003/uvir003_scalar_adm_principal.py
 python Analysis/UVIR/UVIR-003/uvir003_scalar_adm_finite_q.py
+python Analysis/UVIR/UVIR-003/uvir003_nonlinear_adm_action_provenance.py
 ```
 
 The zero-gradient force-block check proves quadratic factorization only for
@@ -165,3 +166,20 @@ Schur complement `-J2^T C^(-1)J2/2`; third-order constraint solutions are not
 needed. The output is an interaction-readiness diagnostic, not a physical
 cutoff. The latter still requires the full gauge-regular constrained
 cosmological `2-to-2` amplitude and physical eigenmode projection.
+
+## Nonlinear ADM action provenance
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_nonlinear_adm_action_provenance.py
+```
+
+This verifies that the exact nonlinear
+`gravity+aether+condensate+alignment` ADM parent block reproduces the FRW
+minisuperspace and finite-`q` quadratic constraint matrix and source. It also
+records why the full cosmological `J2` cannot yet be claimed: the force
+regulator lacks its evolving-frame covariant completion, while `Y^(3/2)` has
+no ordinary analytic cubic Taylor vertex at the zero-gradient background.
+The result is an action-provenance pass with a force-completion hold, not a
+physical amplitude or cutoff.

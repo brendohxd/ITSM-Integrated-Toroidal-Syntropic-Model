@@ -1,0 +1,56 @@
+{
+  "calculation_status": "PASS",
+  "full_J2_status": "HOLD_FORCE_SECTOR_NONLINEAR_COMPLETION_REQUIRED",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "choose and derive a generally covariant completion of Delta_U on the evolving aether foliation",
+    "declare a controlled treatment or smooth completion of Y^(3/2) about the zero-gradient force background",
+    "expand the resulting full scalar ADM action to cubic order and extract the quadratic lapse/shift source J2",
+    "form the quartic Schur complement and project onto the regular physical scalar basis"
+  ],
+  "scientific_boundary": "The exact nonlinear gravity-aether-condensate-alignment parent block reproduces the verified FRW and finite-q quadratic constraint data. This does not derive the quadratic constraint source J2. The full source and physical scalar 2-to-2 amplitude cannot be claimed until the force regulator has a declared nonlinear covariant completion and the zero-gradient Y^(3/2) interaction is assigned a non-analytic perturbative prescription or a smooth completion.",
+  "stage": "B_NONLINEAR_ADM_ACTION_PROVENANCE",
+  "subgate_status": "PASS_G_U_PHI_ALIGNMENT_ACTION_PROVENANCE",
+  "symbolic_audit": {
+    "adm_parent_action": {
+      "alignment": "-N*sqrt(h)*zeta_align*varrho^4*h^ij*D_i(theta)D_j(theta)/2",
+      "condensate": "N*sqrt(h)*[(n(varrho)^2+varrho^2*n(theta)^2)/2-h^ij*(D_i(varrho)D_j(varrho)+varrho^2*D_i(theta)D_j(theta))/2-V(varrho)]",
+      "g_plus_U": "N*sqrt(h)/2*[M_P_sq*R3+(M_P_sq-M_U_sq*c13)*KijKij-(M_P_sq+M_U_sq*c2)*K^2+M_U_sq*c14*a_i*a^i]",
+      "gauge": "U^mu=n^mu; N=1+delta_N; N_i=partial_i beta; h_ij=a^2*exp(2R)*delta_ij"
+    },
+    "coefficient_dictionary": {
+      "K_squared": "-M_P_sq - M_U_sq*c2",
+      "KijKij": "M_P_sq - M_U_sq*c1 - M_U_sq*c3",
+      "M_cos_squared": "M_P_sq + M_U_sq*c1/2 + 3*M_U_sq*c2/2 + M_U_sq*c3/2",
+      "acceleration_squared": "M_U_sq*c1 + M_U_sq*c4",
+      "c123": "c1 + c2 + c3",
+      "c13": "c1 + c3",
+      "c14": "c1 + c4"
+    },
+    "constraint_source_readiness": {
+      "full_g_U_Phi_psi_J2": "BLOCKED_ON_FORCE_COVARIANT_COMPLETION_AND_NONANALYTIC_RULE",
+      "g_U_Phi_alignment_J2": "PARENT_ACTION_FIXED; EXPLICIT EXPANSION_NOT_YET_DERIVED",
+      "physical_2_to_2_amplitude": "NOT_YET_DERIVED"
+    },
+    "finite_q_quadratic_provenance": {
+      "alignment_phase_gradient_stiffness": "rho**4*zeta_align + rho**2",
+      "constraint_matrix": "Matrix([[-2*V + q_phys**2*(M_U_sq*c1 + M_U_sq*c4), H*(2*M_P_sq + M_U_sq*c1 + 3*M_U_sq*c2 + M_U_sq*c3)], [H*(2*M_P_sq + M_U_sq*c1 + 3*M_U_sq*c2 + M_U_sq*c3), -M_U_sq*c1 - M_U_sq*c2 - M_U_sq*c3]])",
+      "constraint_source": "Matrix([[6*H*M_P_sq*R_dot + 3*H*M_U_sq*R_dot*c1 + 9*H*M_U_sq*R_dot*c2 + 3*H*M_U_sq*R_dot*c3 + 2*M_P_sq*R*q_phys**2 - V_rho*delta_rho - delta_rho*mu**2*rho - delta_rho_dot*rho_dot - mu*rho**2*vartheta_dot], [-2*M_P_sq*R_dot - M_U_sq*R_dot*c1 - 3*M_U_sq*R_dot*c2 - M_U_sq*R_dot*c3 - delta_rho*rho_dot - mu*rho**2*vartheta]])",
+      "status": "VERIFIED_FROM_NONLINEAR_PARENT_BLOCK"
+    },
+    "force_sector_obstructions": {
+      "Delta_U_covariant_completion": "NOT_DECLARED_FOR_THE_EVOLVING_NONLINEAR_FRAME",
+      "Y_three_halves_about_zero_gradient": "Y2**(3/2)*epsilon**2*Abs(epsilon)",
+      "analytic_cubic_vertex": "NOT_DEFINED_BY_AN_ORDINARY_TAYLOR_EXPANSION",
+      "reason": "|epsilon|^3 is even, whereas a nonzero homogeneous cubic Taylor polynomial is odd"
+    },
+    "frw_provenance": {
+      "friedmann_residual": "3*H**2*M_P_sq + 3*H**2*M_U_sq*c1/2 + 9*H**2*M_U_sq*c2/2 + 3*H**2*M_U_sq*c3/2 - V - mu**2*rho**2/2 - rho_dot**2/2",
+      "minisuperspace": "-3*M_cos_sq*a*adot^2/N+a^3*(rho_dot^2+rho^2*Theta_dot^2)/(2N)-N*a^3*V(rho)",
+      "on_shell_lapse_squared_lagrangian_coefficient": "-V",
+      "status": "VERIFIED"
+    }
+  }
+}

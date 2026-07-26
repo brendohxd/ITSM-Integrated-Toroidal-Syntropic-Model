@@ -16,10 +16,10 @@ not the scientific status authority for this branch.
 
 ## Manuscript status
 
-The newest frozen manuscript release is `12.0-alpha.2`. It contains the
-frame-sector normalization correction, ADM-readiness and
-background-completion screens, and the representative FRW background
-existence derivation.
+The newest frozen manuscript release is `12.0-alpha.3`. It includes the
+finite-`q` and low-`q` scalar ADM results, the three-dimensional cubic and
+quartic interaction-readiness audits, and the nonlinear ADM action-provenance
+checkpoint. Earlier releases remain immutable under `releases/`.
 
 The scalar perturbation ADM programme has passed finite-wavenumber constraint
 elimination on the representative evolving branch. The apparent strict
@@ -37,8 +37,12 @@ zero spatial momentum and lies on the non-invertible homogeneous khronon gauge
 orbit. At quartic order the second-order constraint source is genuinely needed
 through a Schur complement. The physical strong-coupling scale therefore still
 requires the complete gauge-regular constrained cosmological `2-to-2`
-amplitude. These bounded results do not establish full perturbative stability,
-observational viability, or a completed cosmology.
+amplitude. The exact nonlinear `g+U+Phi+alignment` ADM parent block now has
+verified FRW and finite-`q` quadratic provenance. The full cosmological `J2`
+is nevertheless on hold because the force regulator lacks an evolving-frame
+covariant completion and `Y^(3/2)` needs a declared non-analytic prescription
+or smooth completion at `Y=0`. These bounded results do not establish full
+perturbative stability, observational viability, or a completed cosmology.
 
 ## Repository rules for recovery work
 

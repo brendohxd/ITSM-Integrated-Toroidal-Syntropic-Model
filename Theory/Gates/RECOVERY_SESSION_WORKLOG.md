@@ -441,3 +441,26 @@ a physical cutoff. The next target is the full evolving-FRW constrained cubic
 and quartic scalar system, physical eigenmode projection and gauge-regular
 `2-to-2` unitarity amplitude. UVIR-003 remains in progress and MAT-001 remains
 blocked.
+
+## 2026-07-26 - Nonlinear ADM action-provenance audit
+
+Gate: UVIR-003 (Stage B nonlinear scalar readiness)
+
+**Parent action:** reconstructed the exact aether-unitary ADM action for the
+`gravity+aether+condensate+alignment` block. Its coefficient identities
+reproduce the verified cosmological Planck mass, FRW minisuperspace action,
+finite-`q` lapse/shift constraint matrix, linear source `J1` and alignment
+phase-gradient stiffness.
+
+**Action boundary:** the declared force regulator does not yet define a full
+nonlinear evolving-frame action. `Delta_U` lacks its generally covariant
+completion, and about the selected zero-gradient background
+`Y^(3/2)=|epsilon|^3 Y2^(3/2)`, not an ordinary analytic cubic Taylor vertex.
+The force mode factorizes at quadratic order but cannot silently be omitted
+from the complete nonlinear scalar amplitude.
+
+**Decision:** record `PASS_G_U_PHI_ALIGNMENT_ACTION_PROVENANCE` together with
+`HOLD_FORCE_SECTOR_NONLINEAR_COMPLETION_REQUIRED`. Do not derive or quote a
+full cosmological `J2`, quartic Schur complement or physical cutoff until the
+force completion and perturbative prescription are declared. UVIR-003 remains
+in progress and MAT-001 remains blocked.
