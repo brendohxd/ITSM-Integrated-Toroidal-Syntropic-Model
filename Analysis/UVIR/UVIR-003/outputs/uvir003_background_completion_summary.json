@@ -1,0 +1,79 @@
+{
+  "adm_reduction_status": "BLOCKED_PENDING_SOLVED_ON_SHELL_FRW_BACKGROUND",
+  "calculation_status": "PASS",
+  "exact_minkowski_requirement": {
+    "condensate_enthalpy": "mu**2*s",
+    "required_support_enthalpy": "-mu**2*s"
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "ghost_condensate_point": {
+    "P_X": "0",
+    "enthalpy": "0",
+    "verdict": "INSUFFICIENT_FOR_REQUIRED_NONZERO_ENTHALPY"
+  },
+  "mat001_status": "BLOCKED",
+  "minimal_P_of_X_screen": {
+    "convention": "X_R=-(partial chi)^2/2>0 on the timelike background",
+    "health_conditions": [
+      "P_X+2*X_R*P_XX>0",
+      "P_X>0"
+    ],
+    "quadratic_spatial_gradient_coefficient": "P_X",
+    "quadratic_time_kinetic_coefficient": "P_X + 2*P_XX*X_R",
+    "required_P_X": "-mu**2*s/(2*X_R)",
+    "required_spatial_gradient_coefficient": "-mu**2*s/(2*X_R)",
+    "support_enthalpy": "2*P_X*X_R",
+    "verdict": "NO_HEALTHY_TWO_DERIVATIVE_P_OF_X_EXACT_MINKOWSKI_SUPPORT"
+  },
+  "next_required_calculation": [
+    "derive the homogeneous flat-FRW equations for a(t), rho(t), Theta(t), U^mu and any declared reservoir variables",
+    "keep condensate charge conserved or declare a distinct charge-transfer source S_N; Q_syn^nu alone is not automatically S_N",
+    "construct and verify at least one on-shell evolving background branch",
+    "perform the metric-aether-condensate scalar constraint reduction on that branch",
+    "use a subhorizon limit only for k/a>>H; reserve the strict low-k cosmological audit for the full perturbation system"
+  ],
+  "route_matrix": [
+    {
+      "candidate": "constant_vacuum_energy",
+      "reason": "rho_R+p_R=0, so it cannot cancel the positive finite-density condensate enthalpy.",
+      "verdict": "REJECTED"
+    },
+    {
+      "candidate": "minimal_local_shift_symmetric_P_of_X_scalar",
+      "reason": "Negative support enthalpy requires P_X<0, whereas the two-derivative spatial-gradient coefficient is P_X and must be positive for short-wavelength gradient health.",
+      "verdict": "REJECTED_AS_HEALTHY_EXACT_MINKOWSKI_SUPPORT"
+    },
+    {
+      "candidate": "ghost_condensate_point_P_X_equals_zero",
+      "reason": "The point has rho_R+p_R=0; a k^4 regulator does not itself supply the missing nonzero background enthalpy.",
+      "verdict": "REJECTED_AS_INSUFFICIENT"
+    },
+    {
+      "candidate": "rigid_or_external_support_stress",
+      "reason": "It may define a local approximation but supplies no action-derived lapse/shift response for the full ADM gate.",
+      "verdict": "DECOUPLING_ONLY"
+    },
+    {
+      "candidate": "higher_derivative_NEC_violating_support",
+      "reason": "Stable examples require additional higher-derivative or nonminimal structure and an independent constraint and stability audit.",
+      "verdict": "OPEN_NEW_THEORY_REQUIRED"
+    },
+    {
+      "candidate": "self_consistent_evolving_flat_FRW_background",
+      "reason": "It keeps the declared sectors and satisfies Einstein's background equations dynamically without postulating an unvalidated negative-enthalpy support field.",
+      "verdict": "SELECTED_ROUTE_BACKGROUND_NOT_YET_SOLVED"
+    }
+  ],
+  "scientific_boundary": "The screen rejects an unspecified minimal reservoir as an exact Minkowski counterstress. It does not reject the reservoir ontology or prove that all higher-derivative NEC-violating theories are unstable.",
+  "selected_route": {
+    "charge_balance_zero": "3*H*n - S_N + n_dot",
+    "constant_density_requires": "S_N=3*H*n",
+    "friedmann_energy_equation_zero": "3*H**2*M_P**2 - rho_total",
+    "friedmann_enthalpy_equation_zero": "-2*H_dot*M_P**2 - p_total - rho_total",
+    "isolated_charge_law": "n_dot=-3*H*n",
+    "name": "SELF_CONSISTENT_EVOLVING_FLAT_FRW_BACKGROUND",
+    "status": "ROUTE_SELECTED_BACKGROUND_NOT_YET_SOLVED"
+  },
+  "stage": "B_BACKGROUND_COMPLETION_SCREEN"
+}

@@ -1,0 +1,111 @@
+{
+  "adm_reduction_status": "READY_TO_BEGIN_ON_EVOLVING_FRW_BACKGROUND",
+  "ansatz": {
+    "aether": "U^mu=(1/N,0,0,0)",
+    "condensate": "Phi=rho(t)*exp(i*Theta(t))/sqrt(2)",
+    "force": "psi_bar=constant",
+    "metric": "ds^2=-N(t)^2 dt^2+a(t)^2 delta_ij dx^i dx^j",
+    "reservoir": "No background reservoir or charge-transfer source in the representative branch."
+  },
+  "background_status": "ON_SHELL_REPRESENTATIVE_BRANCH_VERIFIED",
+  "calculation_status": "PASS",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "derive the full scalar perturbation action about the evolving branch",
+    "eliminate lapse, scalar shift and aether multiplier constraints",
+    "compute the reduced kinetic and gradient matrices in a controlled subhorizon regime",
+    "retain the full time-dependent system for the strict low-k audit",
+    "only introduce reservoir exchange after declaring its action or constitutive perturbation response"
+  ],
+  "representative_branch": {
+    "derived_parameters": {
+      "M_cos_squared": 1.0375,
+      "alpha13": 0.037500000000000006,
+      "alpha2": 0.0125,
+      "c123": 0.2,
+      "c14": 0.15000000000000002,
+      "c_theta": 0.3,
+      "r_U": 0.25
+    },
+    "diagnostics": {
+      "amplitude_ratio": 0.13423610021701785,
+      "chemical_potential_ratio": 0.5808489352407369,
+      "expansion_factor": 4.571577111625282,
+      "hubble_monotonic_nonincreasing": true,
+      "max_hubble": 0.6198414963432367,
+      "max_relative_charge_drift": 2.220446049250313e-16,
+      "max_relative_continuity_residual": 1.8979279129754477e-15,
+      "max_relative_friedmann_residual": 2.123550123097079e-10,
+      "min_amplitude": 0.09254673475232361,
+      "min_hubble": 0.07640526776866156,
+      "min_scale_factor": 1.0
+    },
+    "endpoint": {
+      "H": 0.07640526776866156,
+      "Theta": 7.3075472322718795,
+      "a": 4.571577111625282,
+      "energy_density": 0.018170043385907816,
+      "mu": 0.6526478189134635,
+      "pressure": 0.00011010137164586993,
+      "rho": 0.13423610021701785,
+      "rho_dot": -0.10297973462875397
+    },
+    "initial_conditions": {
+      "H": 0.6198414963432367,
+      "Theta": 0.0,
+      "a": 1.0,
+      "conserved_charge": 1.1236102527122116,
+      "mu": 1.1236102527122116,
+      "radial_acceleration": 0.0,
+      "rho": 1.0,
+      "rho_dot": 0.0
+    },
+    "integration": {
+      "atol": 1e-13,
+      "function_evaluations": 1607,
+      "method": "scipy.solve_ivp_DOP853",
+      "rtol": 1e-11,
+      "samples": 801,
+      "t_end": 8.0,
+      "t_start": 0.0
+    },
+    "parameter_scope": "Dimensionless existence example only; not a cosmological fit.",
+    "parameters": {
+      "Lambda": 2.0,
+      "M_P": 1.0,
+      "M_U": 0.5,
+      "c1": 0.1,
+      "c2": 0.05,
+      "c3": 0.05,
+      "c4": 0.05,
+      "lambda4": 0.5,
+      "lambda6": 0.2,
+      "m_squared": 1.0
+    },
+    "status": "PASS_REPRESENTATIVE_DIMENSIONLESS_BRANCH"
+  },
+  "scientific_boundary": "This proves existence and numerical consistency for a dimensionless background branch. It does not select a physical parameter point, fit cosmological data, or establish scalar perturbation stability.",
+  "stage": "B_EVOLVING_FRW_BACKGROUND",
+  "symbolic_derivation": {
+    "aether_acceleration_squared": "0",
+    "aether_background_lagrangian_density": "-3*M_U_sq*a_dot**2*(c1 + 3*c2 + c3)/(2*N**2*a**2)",
+    "aether_operator_O1": "3*a_dot**2/(N**2*a**2)",
+    "aether_operator_O2": "9*a_dot**2/(N**2*a**2)",
+    "aether_operator_O3": "3*a_dot**2/(N**2*a**2)",
+    "alignment_background": "0",
+    "c_theta": "c1 + 3*c2 + c3",
+    "charge_equation_zero": "rho*(3*H*Theta_dot*rho + Theta_ddot*rho + 2*Theta_dot*rho_dot)",
+    "effective_cosmological_planck_mass_squared": "M_P_sq + M_U_sq*(c1 + 3*c2 + c3)/2",
+    "energy_density": "Theta_dot**2*rho**2/2 + V + rho_dot**2/2",
+    "force_background_lagrangian": "0",
+    "friedmann_equation_zero": "(-a**2*(Theta_dot**2*rho**2 + 2*V + rho_dot**2) + 3*a_dot**2*(2*M_P_sq + M_U_sq*(c1 + 3*c2 + c3)))/(2*a**2)",
+    "minisuperspace_lagrangian": "a*(-2*N**2*V*a**2 + a**2*(Theta_dot**2*rho**2 + rho_dot**2) - 3*a_dot**2*(2*M_P_sq + M_U_sq*(c1 + 3*c2 + c3)))/(2*N)",
+    "normalized_cosmological_factor": "r_U*(c1 + 3*c2 + c3)/2 + 1",
+    "number_density": "Theta_dot*rho**2",
+    "pressure": "Theta_dot**2*rho**2/2 - V + rho_dot**2/2",
+    "radial_equation_zero": "3*H*rho_dot - Theta_dot**2*rho + V_prime + rho_ddot",
+    "raychaudhuri_H_dot": "(-Theta_dot**2*rho**2 - rho_dot**2)/(2*M_P_sq + M_U_sq*(c1 + 3*c2 + c3))"
+  }
+}

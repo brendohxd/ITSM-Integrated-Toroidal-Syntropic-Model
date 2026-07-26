@@ -28,6 +28,9 @@ The bounded Stage B diagnostics are:
 
 ```powershell
 python Analysis/UVIR/UVIR-003/uvir003_frame_sector_speeds.py
+python Analysis/UVIR/UVIR-003/uvir003_adm_readiness.py
+python Analysis/UVIR/UVIR-003/uvir003_background_completion.py
+python Analysis/UVIR/UVIR-003/uvir003_frw_background.py
 python Analysis/UVIR/UVIR-003/uvir003_zero_gradient_force_block.py
 python Analysis/UVIR/UVIR-003/uvir003_causality_check.py
 python Analysis/UVIR/UVIR-003/uvir003_force_strong_coupling_estimate.py
@@ -40,3 +43,26 @@ the declared Stage-A truncation. It finds one positive `z=2` force scalar for
 until a physical field normalization is fixed by microscopic or matter
 matching. The remaining metric-aether-condensate reduction, nonzero-gradient
 mixing, covariant regulator and physical cutoff remain open.
+
+The scalar ADM readiness audit finds that the declared Minkowski plus
+finite-density condensate background is off shell:
+`rho_Phi+p_Phi=mu^2*rho0^2>0`. A constant vacuum-energy subtraction cannot
+cancel this enthalpy. The reservoir/driver background and its scalar
+perturbation response must be declared before lapse and shift can be
+eliminated consistently. It also corrects the exact Einstein-aether
+coefficient map to `alpha_i=(M_U^2/M_P^2)c_i`; bare `alpha_i=c_i` is valid
+only if `M_U=M_P`.
+
+The background-completion screen rejects a constant vacuum term, a healthy
+two-derivative `P(X)` scalar and the ghost-condensate point as exact Minkowski
+support for the nonzero condensate enthalpy. Prescribed rigid support is
+decoupling-only. The selected least-assumptive route is a self-consistent
+evolving flat-FRW background.
+
+The FRW background calculation derives
+`M_cos^2=M_P^2+(M_U^2/2)(c1+3c2+c3)`, the amplitude equation and exact
+conservation of `a^3*rho^2*mu`. It verifies a regular representative
+dimensionless expanding branch with independently monitored Friedmann,
+continuity and charge residuals. This removes the background blocker: the
+scalar ADM reduction is ready to begin on the evolving branch, but is not yet
+performed.

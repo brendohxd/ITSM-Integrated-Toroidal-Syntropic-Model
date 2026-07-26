@@ -122,6 +122,15 @@ Stage A retains all four symmetry-allowed two-derivative Einstein-aether
 contractions. A restricted one-contraction frame action is not permitted as a
 stability argument.
 
+On the homogeneous flat-FRW branch, isotropy and the unit constraint fix
+`U^mu=(1/N,0,0,0)`. The aether then renormalizes the cosmological gravitational
+coefficient to
+`M_cos^2=M_P^2+(M_U^2/2)(c1+3c2+c3)`. The alignment invariant vanishes because
+the homogeneous condensate current is parallel to `U^mu`. UVIR-003 has
+verified one regular dimensionless on-shell branch with conserved
+`a^3 rho^2 dot(Theta)`. This is a background existence result, not a
+cosmological parameter fit or perturbation-stability result.
+
 ### 3.4 Infrared phonon sector
 
 The local low-acceleration field is an emergent phonon `psi`, normalized so
@@ -175,6 +184,14 @@ reservoir stress tensor `T_R^{mu nu}` accounts for the compensating exchange so
 that the complete covariant system remains conserved. The reservoir is
 external only to the observable subsystem; it is inside the complete covariant
 theory and is not an unmodelled violation of the Bianchi identity.
+
+The UVIR-003 background-completion screen rejects using an unspecified
+constant or healthy two-derivative `P(X)` reservoir as an exact Minkowski
+counterstress for the finite-density condensate. The least-assumptive working
+route is a self-consistent evolving flat-FRW background. This selects a
+background architecture, not a solution: the homogeneous equations and
+perturbations still have to be derived, and any higher-derivative
+NEC-violating reservoir would be a new theory requiring its own gate.
 
 ### 3.8 Wake and memory sector
 
@@ -301,6 +318,13 @@ nabla_mu (T_m^{mu nu} + T_P^{mu nu} + T_R^{mu nu}) = 0.
 `Q_mp^nu` describes local momentum and energy exchanged between matter and the
 plenum. `Q_syn^nu` describes reservoir throughput. They need not have the same
 functional form and must not be combined into an undifferentiated source.
+
+Stress-energy exchange is also distinct from condensate-charge exchange. If
+`n` is the finite-density U(1) charge density, an isolated homogeneous
+condensate obeys `dot(n)+3 H n=0`. Exact constant `n` in an expanding state
+would require a separately declared source `S_N=3 H n`. `Q_syn^nu` is not
+automatically `S_N`; their relation must follow from a reservoir interaction
+if both energy-momentum and condensate charge are transferred.
 
 A timelike `Q_syn^nu` injects energy but does not automatically produce an
 anisotropic pressure `Pi = p_t - p_p`. Conversion of throughput into shear is

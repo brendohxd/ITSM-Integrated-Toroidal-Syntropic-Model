@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> This branch is the v12 core-recovery workspace. Its claim status and current
+> manuscript differ materially from the legacy v11 material below. Start with
+> [RECOVERY_BRANCH_README.md](RECOVERY_BRANCH_README.md) and
+> [Manuscript/CoreRecovery/README.md](Manuscript/CoreRecovery/README.md).
 # 🌌 Integrated Toroidal-Syntropic Model (ITSM)
 **Relativistic Field Equations, Superfluid Dynamics, and Multi-Scale Falsifiability**
 

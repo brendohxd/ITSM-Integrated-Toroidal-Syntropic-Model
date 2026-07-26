@@ -30,12 +30,14 @@ large, error-prone undertaking — this note verifies the precise sign and
 normalization dictionary between the Stage-A action and EJM's, and then
 substitutes EJM's published result through that verified dictionary.
 
-**The dictionary turns out to be the identity map**: Stage A's `c1,c2,c3,c4`
-equal EJM's `c1,c2,c3,c4` with no relabeling, because the extra explicit
-minus sign Stage A places on its `c4` term (`-c4 a_mu a^mu`, in signature
-`-+++`) exactly cancels the sign flip that the same contraction picks up
-under EJM's opposite signature convention (`+---`). This was verified
-symbolically, not asserted (Section 1).
+**The operator-label and sign dictionary is the identity map**, but the
+coefficient normalization is not automatically identical. The explicit
+minus sign on the Stage-A `c4` term cancels the signature flip in EJM.
+However, EJM place the aether operators under the Einstein-Hilbert prefactor
+`M_P^2/2`, while Stage A declares an independent `M_U^2/2` prefactor.
+The EJM coefficients are therefore `alpha_i=(M_U^2/M_P^2)c_i`; bare
+equality holds only if `M_U=M_P`. Both parts of the map are now checked
+symbolically.
 
 Substituting, and checking that EJM's exact formulas reduce to Stage-A's own
 decoupled ratios in the weak-metric-coupling limit (Section 2) — which they
@@ -80,26 +82,33 @@ through all four terms directly (`uvir003_frame_sector_speeds.py`):
 
 Stage A's declared bracket already carries an explicit extra minus sign on
 its `c4` term that EJM's does not. That extra sign exactly cancels the
-signature-induced flip, so **`c1,c2,c3,c4` map identically between the two
+signature-induced flip, so the **operator labels and signs map identically between the two
 conventions** — confirmed by direct symbolic substitution, not asserted by
 inspection.
+The independent mass prefactors still require the separate coefficient
+normalization `alpha_i=(M_U^2/M_P^2)c_i`.
 
 ## 2. Coupled mode speeds (EJM Table 1, substituted)
 
-Using `c13=c1+c3`, `c14=c1+c4`, `c123=c1+c2+c3`:
+Using `alpha_i=(M_U^2/M_P^2)c_i`, `alpha13=alpha1+alpha3`,
+`alpha14=alpha1+alpha4` and `alpha123=alpha1+alpha2+alpha3`:
 
 \[
-\boxed{s_{\rm tensor}^2=\frac1{1-c_{13}}}
+\boxed{s_{\rm tensor}^2=\frac1{1-\alpha_{13}}}
 \qquad\text{(spin-2, purely gravitational)}
 \]
 
 \[
-\boxed{s_{\rm vector}^2=\frac{c_1-\tfrac12c_1^2+\tfrac12c_3^2}{c_{14}(1-c_{13})}}
+\boxed{s_{\rm vector}^2=
+\frac{\alpha_1-\tfrac12\alpha_1^2+\tfrac12\alpha_3^2}
+{\alpha_{14}(1-\alpha_{13})}}
 \qquad\text{(spin-1, transverse aether-metric)}
 \]
 
 \[
-\boxed{s_{\rm scalar}^2=\frac{c_{123}(2-c_{14})}{c_{14}(1-c_{13})(2+c_{13}+3c_2)}}
+\boxed{s_{\rm scalar}^2=
+\frac{\alpha_{123}(2-\alpha_{14})}
+{\alpha_{14}(1-\alpha_{13})(2+\alpha_{13}+3\alpha_2)}}
 \qquad\text{(spin-0, longitudinal/trace)}
 \]
 
@@ -120,23 +129,25 @@ it confirms Stage A's frozen-metric approximation is the correct
 weak-metric-coupling limit of the full coupled system, not an unrelated or
 inconsistent simplification.
 
-## 3. Conditions on `c1,c2,c3,c4` (EJM, quoted)
+## 3. Conditions on `alpha1,alpha2,alpha3,alpha4` (EJM, quoted)
 
 No exponentially growing modes (real frequency for real wavevector), small-
-`c_i` regime:
+`alpha_i` regime:
 
 \[
 c_1/c_{14}\ge0,\qquad c_{123}/c_{14}\ge0.
 \]
 
-Linearized energy positivity (exact, not small-`c_i`):
+Linearized energy positivity (exact, not small-`alpha_i`):
 
 \[
-\frac{2c_1-c_1^2+c_3^2}{1-c_{13}}>0\quad\text{(vector)},\qquad
-c_{14}(2-c_{14})>0\quad\text{(scalar/trace)}.
+\frac{2\alpha_1-\alpha_1^2+\alpha_3^2}{1-\alpha_{13}}>0
+\quad\text{(vector)},\qquad
+\alpha_{14}(2-\alpha_{14})>0\quad\text{(scalar/trace)}.
 \]
 
-All modes on the metric light cone iff `c4=0, c3=-c1, c2=c1/(1-2c1)`.
+All modes lie on the metric light cone iff
+`alpha4=0, alpha3=-alpha1, alpha2=alpha1/(1-2alpha1)`.
 
 These are strictly sharper than Stage A's own necessary-only conditions
 (`c14,c1,c123>0`, Section 5 of the Stage-A report) — Stage A's conditions are

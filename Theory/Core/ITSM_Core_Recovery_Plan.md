@@ -154,6 +154,43 @@ frozen-Minkowski decoupling limit. The metric/aether/condensate constraints,
 coupled Hamiltonian, strong-coupling scale and operator naturalness remain
 unresolved. See `Theory/Gates/UVIR-003/UVIR-003_STAGE_A_REPORT.md`.
 
+UVIR-003 Stage-B readiness result (2026-07-26): **scalar ADM reduction
+blocked pending an on-shell background completion**. The declared Minkowski
+finite-density condensate has `rho_Phi+p_Phi=mu^2*rho0^2>0`; a constant
+vacuum-energy subtraction cannot cancel this enthalpy. A covariant
+reservoir/driver action, a controlled rigid-support limit, or a consistent
+cosmological background must be declared before lapse and shift are
+eliminated. The frame-sector literature map is also normalized by
+`alpha_i=(M_U^2/M_P^2)c_i`; bare equality with the published Einstein-aether
+coefficients holds only if `M_U=M_P`. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_ADM_READINESS.md`.
+
+UVIR-003 Stage-B background-completion result (2026-07-26): **minimal exact
+Minkowski support routes rejected; evolving flat-FRW route selected**. Vacuum
+energy and the ghost-condensate point have zero enthalpy. A homogeneous
+two-derivative `P(X)` support scalar would require `P_X<0` to cancel the
+condensate, while short-wavelength gradient health requires `P_X>0`. Rigid
+support is valid only as a controlled decoupling approximation, and importing
+a higher-derivative NEC-violating sector would require a new action and gate.
+The next calculation is therefore an on-shell evolving FRW background with
+conserved condensate charge or a separately derived charge-transfer source.
+This selects the route but does not solve the background or unblock the scalar
+ADM reduction. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_BACKGROUND_COMPLETION.md`.
+
+UVIR-003 Stage-B FRW-background result (2026-07-26): **representative on-shell
+evolving branch verified; scalar ADM background blocker removed**. On the
+comoving isotropic aether branch,
+`M_cos^2=M_P^2+(M_U^2/2)(c1+3c2+c3)`. The alignment and constant-force
+background terms vanish, while the condensate obeys
+`d(a^3 rho^2 mu)/dt=0`. A dimensionless expanding solution preserves the
+Friedmann constraint to `2.13e-10` relative residual, with charge drift at
+machine precision and continuity residual below `1.90e-15`. The example is
+an existence proof, not a physical parameter selection or COS-001 fit. The
+next UVIR-003 task is the time-dependent scalar perturbation and constraint
+reduction on this background. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FRW_BACKGROUND.md`.
+
 ### MAT-001 -- Matter coupling and `C_proj`
 
 Derive the baryon--phonon vertex and calculate the observable Wilson

@@ -119,7 +119,10 @@ def run() -> int:
     # c4 term ("-c4 a_mu a^mu"), which cancels the sign flip just verified.
     # Net result: c1, c2, c3, c4 all map identically (no relabeling) between
     # the Stage-A action and EJM's Table 1.
-    convention_map = "IDENTITY: c1,c2,c3,c4 (Stage A) = c1,c2,c3,c4 (EJM gr-qc/0410001)"
+    convention_map = (
+        "IDENTITY OPERATOR LABELS AND SIGNS; "
+        "alpha_i(EJM)=(M_U^2/M_P^2)*c_i(Stage A)"
+    )
 
     # ------------------------------------------------------------------
     # 2. EJM Table 1 mode speeds (quoted, using the verified identity map).
@@ -128,10 +131,27 @@ def run() -> int:
     c13 = c1 + c3
     c14 = c1 + c4
     c123 = c1 + c2 + c3
+    r_u = sp.symbols("r_U", positive=True)
+    alpha1, alpha2, alpha3, alpha4 = (
+        r_u * c1,
+        r_u * c2,
+        r_u * c3,
+        r_u * c4,
+    )
+    alpha13 = sp.simplify(alpha1 + alpha3)
+    alpha14 = sp.simplify(alpha1 + alpha4)
+    alpha123 = sp.simplify(alpha1 + alpha2 + alpha3)
 
-    s_tensor_sq = 1 / (1 - c13)
-    s_vector_sq = (c1 - c1**2 / 2 + c3**2 / 2) / (c14 * (1 - c13))
-    s_scalar_sq = c123 * (2 - c14) / (c14 * (1 - c13) * (2 + c13 + 3 * c2))
+    s_tensor_sq = sp.simplify(1 / (1 - alpha13))
+    s_vector_sq = sp.simplify(
+        (alpha1 - alpha1**2 / 2 + alpha3**2 / 2)
+        / (alpha14 * (1 - alpha13))
+    )
+    s_scalar_sq = sp.simplify(
+        alpha123
+        * (2 - alpha14)
+        / (alpha14 * (1 - alpha13) * (2 + alpha13 + 3 * alpha2))
+    )
 
     # ------------------------------------------------------------------
     # 3. Weak-metric-coupling limit: EJM state the stability conditions
@@ -140,21 +160,18 @@ def run() -> int:
     #    c1,c2,c3,c4 -> eps*c1,eps*c2,eps*c3,eps*c4 and take the leading
     #    eps->0 behavior of each ratio.
     # ------------------------------------------------------------------
-    eps = sp.symbols("epsilon", positive=True)
-    subs_small = {c1: eps * c1, c2: eps * c2, c3: eps * c3, c4: eps * c4}
-
-    vector_leading = sp.limit(s_vector_sq.subs(subs_small), eps, 0, dir="+")
-    scalar_leading = sp.limit(s_scalar_sq.subs(subs_small), eps, 0, dir="+")
+    vector_leading = sp.limit(s_vector_sq, r_u, 0, dir="+")
+    scalar_leading = sp.limit(s_scalar_sq, r_u, 0, dir="+")
 
     expected_vector_decoupled = sp.simplify(c1 / c14)
     expected_scalar_decoupled = sp.simplify(c123 / c14)
 
     require(
-        "vector speed reduces to Stage-A decoupled c1/c14 for uniformly small c_i",
+        "vector speed reduces to Stage-A decoupled c1/c14 for r_U -> 0",
         sp.simplify(vector_leading - expected_vector_decoupled) == 0,
     )
     require(
-        "scalar speed reduces to Stage-A decoupled c123/c14 for uniformly small c_i",
+        "scalar speed reduces to Stage-A decoupled c123/c14 for r_U -> 0",
         sp.simplify(scalar_leading - expected_scalar_decoupled) == 0,
     )
     vector_leading_coeff = vector_leading
@@ -163,12 +180,18 @@ def run() -> int:
     # ------------------------------------------------------------------
     # 4. No-ghost / positivity conditions (EJM Table 1 discussion, quoted).
     # ------------------------------------------------------------------
-    stability_conditions_small_ci = ["c1/c14 >= 0", "c123/c14 >= 0"]
-    energy_positivity_exact = [
-        "(2*c1 - c1**2 + c3**2)/(1 - c13) > 0  # vector mode",
-        "c14*(2 - c14) > 0  # trace/scalar mode",
+    stability_conditions_small_alpha = [
+        "alpha1/alpha14 >= 0",
+        "alpha123/alpha14 >= 0",
     ]
-    light_cone_condition = "c4=0, c3=-c1, c2=c1/(1-2*c1)"
+    energy_positivity_exact = [
+        "(2*alpha1 - alpha1**2 + alpha3**2)/(1 - alpha13) > 0  # vector mode",
+        "alpha14*(2 - alpha14) > 0  # trace/scalar mode",
+    ]
+    light_cone_condition = (
+        "alpha4=0, alpha3=-alpha1, "
+        "alpha2=alpha1/(1-2*alpha1)"
+    )
 
     summary = {
         "gate": "UVIR-003",
@@ -176,6 +199,11 @@ def run() -> int:
         "method": "literature_substitution_verified",
         "source": "Eling, Jacobson, Mattingly, arXiv:gr-qc/0410001, Table 1",
         "convention_map": convention_map,
+        "normalization_map": {
+            "ratio": "r_U=M_U^2/M_P^2",
+            "published_coefficients": "alpha_i=r_U*c_i",
+            "bare_identity_valid_only_if": "M_U=M_P",
+        },
         "convention_checks": {
             "c1": "PASS: invariant under global signature flip",
             "c2": "PASS: invariant under global signature flip",
@@ -188,14 +216,14 @@ def run() -> int:
             "spin_0_scalar": str(s_scalar_sq),
         },
         "consistency_with_stage_a_decoupled_limit": {
-            "scaling": "c1,c2,c3,c4 -> eps*(c1,c2,c3,c4), eps->0+",
+            "scaling": "r_U=M_U^2/M_P^2 -> 0+ with fixed c_i ratios",
             "vector_leading": str(vector_leading_coeff),
             "expected_vector": str(expected_vector_decoupled),
             "scalar_leading": str(scalar_leading_coeff),
             "expected_scalar": str(expected_scalar_decoupled),
             "verdict": "CONSISTENT",
         },
-        "stability_conditions_small_ci": stability_conditions_small_ci,
+        "stability_conditions_small_alpha": stability_conditions_small_alpha,
         "energy_positivity_exact": energy_positivity_exact,
         "light_cone_condition": light_cone_condition,
         "not_yet_done": [
@@ -212,6 +240,7 @@ def run() -> int:
         handle.write("\n")
 
     print("UVIR-003 Stage B frame-sector mode speeds: literature substitution VERIFIED")
+    print("Aether normalization: alpha_i=(M_U^2/M_P^2)*c_i")
     print("Consistency with Stage-A decoupled limit: CONSISTENT")
     print("STATUS: PARTIAL_PROGRESS_FRAME_SECTOR_ONLY")
     return 0

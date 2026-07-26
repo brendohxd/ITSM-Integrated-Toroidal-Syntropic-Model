@@ -186,3 +186,98 @@ the structural part of UVIR-003 while MAT-001 remains downstream.
 Hamiltonians, nonzero-gradient force mixing, covariant regulator, physical
 cutoff and technical naturalness. Nothing was abandoned except the attempt to
 derive a standalone numerical `K_Q` from an EFT in which it is not identifiable.
+
+## 2026-07-26 - Scalar ADM readiness audit
+
+Gate: UVIR-003 (Stage B prerequisite for the metric-aether-condensate block)
+
+**Attempted next step:** begin the scalar ADM reduction around the Stage-A
+background `g=eta`, `Phi=rho0 exp(i mu t)/sqrt(2)`, constant `U` and constant
+`psi_bar`.
+
+**Readiness finding:** the finite-density condensate has
+`rho_Phi+p_Phi=mu^2*rho0^2>0`. A constant vacuum-energy subtraction shifts
+energy density and pressure oppositely and cannot cancel this enthalpy.
+Therefore the declared Minkowski background is not an exact solution of the
+declared coupled Einstein equations.
+
+**Constraint consequence:** any reservoir or driver that supports exact
+Minkowski must carry `rho_R+p_R=-mu^2*rho0^2`, so it is not a cosmological
+constant. Its scalar perturbations generally enter the lapse and shift
+constraints. Eliminating those constraints without declaring the support
+sector would produce an off-shell, completion-dependent kinetic matrix.
+
+**Frame correction:** EJM factor the aether operators with `M_P^2/2`, while
+Stage A uses `M_U^2/2`. The exact published speeds therefore use
+`alpha_i=(M_U^2/M_P^2)c_i`. The prior sign map survives, and the Stage-A
+ratios remain the `M_U^2/M_P^2 -> 0` limit, but bare coefficient identity
+requires `M_U=M_P`.
+
+**Decision:** record a passed readiness audit and block the scalar ADM
+reduction pending an on-shell reservoir/driver, controlled rigid-support, or
+cosmological completion. The zero-gradient force-block partial pass survives.
+
+## 2026-07-26 - Background-completion screen
+
+Gate: UVIR-003 (Stage B route selection after the ADM readiness blocker)
+
+**Candidates tested:** constant vacuum energy, a homogeneous minimally coupled
+`P(X)` support scalar, the ghost-condensate point, prescribed rigid support, a
+new higher-derivative NEC-violating sector and a self-consistent evolving
+flat-FRW background.
+
+**Finding:** exact Minkowski support needs
+`rho_R+p_R=-mu^2*rho0^2<0`. Vacuum energy and the ghost-condensate point have
+zero enthalpy. For `L_R=P(X_R)`, the support condition requires `P_X<0`, while
+the two-derivative spatial-gradient health condition is `P_X>0`. The minimal
+local scalar route therefore cannot be healthy on the required homogeneous
+support state. Stable NEC violation would require added operator structure and
+a separate theory gate.
+
+**Rigid boundary:** a prescribed counterstress may label a controlled local
+decoupling calculation, but it has no action-derived scalar constraint
+response and cannot close the full ADM reduction.
+
+**Route decision:** select a self-consistent evolving flat-FRW background
+using the declared sectors. For isolated condensate charge,
+`dot(n)+3Hn=0`; exact constant density in expansion would require a separately
+declared charge-transfer source `S_N=3Hn`, which is not automatically the
+stress-energy exchange vector `Q_syn^nu`.
+
+**Status:** the route is selected, but no background solution is yet claimed.
+The next task is to derive and verify an on-shell homogeneous branch, then
+perform the metric-aether-condensate scalar constraint reduction on it.
+UVIR-003 remains in progress and MAT-001 remains blocked.
+
+## 2026-07-26 - Evolving flat-FRW background
+
+Gate: UVIR-003 (Stage B background construction)
+
+**Homogeneous ansatz:** flat FRW with lapse `N(t)`, comoving unit aether
+`U^mu=(1/N,0,0,0)`, evolving complex condensate
+`Phi=rho(t) exp(i Theta(t))/sqrt(2)`, constant force background and no
+reservoir exchange.
+
+**Aether result:** the four Stage-A contractions reduce to
+`O1=3H_N^2`, `O2=9H_N^2`, `O3=3H_N^2`, `a_mu a^mu=0`. The combined
+minisuperspace coefficient is therefore
+`M_cos^2=M_P^2+(M_U^2/2)(c1+3c2+c3)`, consistent with the corrected
+`alpha_i=(M_U^2/M_P^2)c_i` normalization.
+
+**Condensate result:** lapse, amplitude and phase variation give the
+Friedmann equation, radial equation and exact conservation of
+`a^3 rho^2 mu`. The alignment term vanishes because the homogeneous current is
+parallel to the aether; every constant-force derivative also vanishes.
+
+**Existence check:** integrated a representative dimensionless branch with
+DOP853 from `t=0` to `t=8`. It stays regular and expanding. The maximum
+relative Friedmann residual is `2.124e-10`, charge drift is `2.220e-16`, and
+the relative continuity residual is `1.898e-15`. The scale factor grows by
+`4.5716`; these numbers are diagnostics of the chosen dimensionless example,
+not cosmological predictions.
+
+**Decision:** the absence-of-background blocker is removed. The remaining
+scalar ADM reduction is ready to begin on the evolving branch. UVIR-003
+remains in progress because no scalar perturbation kinetic/gradient matrix,
+physical cutoff or low-k cosmological stability result has been derived.
+MAT-001 remains blocked.

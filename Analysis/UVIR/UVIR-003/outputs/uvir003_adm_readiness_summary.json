@@ -1,0 +1,45 @@
+{
+  "adm_reduction_status": "BLOCKED_PENDING_ON_SHELL_BACKGROUND_COMPLETION",
+  "aether_normalization": {
+    "bare_identity_valid_only_if": "M_U=M_P",
+    "published_coefficients": "alpha_i=r_U*c_i",
+    "ratio": "r_U=M_U**2/M_P**2",
+    "spin_0_speed_squared": "(r_U*(c1 + c4) - 2)*(c1 + c2 + c3)/((c1 + c4)*(r_U*(c1 + c3) - 1)*(3*c2*r_U + r_U*(c1 + c3) + 2))",
+    "spin_1_speed_squared": "(c1**2*r_U - 2*c1 - c3**2*r_U)/(2*(c1 + c4)*(r_U*(c1 + c3) - 1))",
+    "spin_2_speed_squared": "-1/(r_U*(c1 + c3) - 1)",
+    "weak_coupling_scalar": "(c1 + c2 + c3)/(c1 + c4)",
+    "weak_coupling_vector": "c1/(c1 + c4)"
+  },
+  "calculation_status": "PASS",
+  "condensate": {
+    "branch_equation_zero": "-lambda4*s/2 - m2 + mu**2 - lambda6*s**2/(4*Lambda**2)",
+    "energy_density": "s*(3*Lambda**2*(lambda4*s + 4*m2 + 4*mu**2) + lambda6*s**2)/(24*Lambda**2)",
+    "enthalpy": "mu**2*s",
+    "minkowski_obstruction": "rho_phi+p_phi=s*mu**2>0, so no constant vacuum-energy counterterm can set both rho_total and p_total to zero.",
+    "on_shell_pressure": "lambda4*s**2/8 + lambda6*s**3/(12*Lambda**2)",
+    "pressure": "s*(3*Lambda**2*(-lambda4*s - 4*m2 + 4*mu**2) - lambda6*s**2)/(24*Lambda**2)"
+  },
+  "declared_background": {
+    "aether": "U^mu=(1,0,0,0)",
+    "condensate": "Phi=(rho0/sqrt(2))*exp(i*mu*t), s=rho0^2>0",
+    "force": "psi_bar=constant",
+    "metric": "Minkowski"
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_inputs": [
+    "an on-shell background completion including support-sector stress",
+    "the support sector's quadratic scalar response or an explicit controlled rigidity limit",
+    "a declared value or retained symbolic ratio r_U=M_U^2/M_P^2",
+    "a declared cosmological or subhorizon background for the low-k audit"
+  ],
+  "required_background_completion": {
+    "constraint_requirement": "Declare the reservoir/driver action or a controlled rigid support approximation and include its scalar perturbations in the lapse and shift constraints.",
+    "support_energy_density": "-s*(3*Lambda**2*(lambda4*s + 4*m2 + 4*mu**2) + lambda6*s**2)/(24*Lambda**2)",
+    "support_enthalpy": "-mu**2*s",
+    "support_pressure": "-s*(3*Lambda**2*(-lambda4*s - 4*m2 + 4*mu**2) - lambda6*s**2)/(24*Lambda**2)"
+  },
+  "safe_existing_result": "The zero-gradient force block still factorizes at quadratic order; this readiness obstruction concerns the remaining metric-aether-condensate block.",
+  "stage": "B_SCALAR_ADM_READINESS"
+}
