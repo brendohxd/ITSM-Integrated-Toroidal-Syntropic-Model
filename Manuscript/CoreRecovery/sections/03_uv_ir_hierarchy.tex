@@ -561,22 +561,60 @@ minisuperspace action and the complete finite-$q$ quadratic constraint matrix
 and source already reported.  Thus the quadratic $g+U+\Phi+$alignment system
 has verified nonlinear action provenance.
 
-The same statement cannot yet be made for the complete force sector.  Stage A
-defined $\Delta_U$ in the constant hypersurface-orthogonal frame but deferred
-its generally covariant completion on an accelerated, curved foliation.
-Furthermore, about the selected zero-gradient background
-$Y=\epsilon^2Y_2$ gives
+At the preceding action-provenance checkpoint, the complete force sector was
+not yet fixed: Stage A had defined $\Delta_U$ only in the constant
+hypersurface-orthogonal frame.  A separate issue remains at the selected
+zero-gradient background, where $Y=\epsilon^2Y_2$ gives
 \begin{equation}
  Y^{3/2}=|\epsilon|^3Y_2^{3/2}.
  \label{eq:force-nonanalytic-origin}
 \end{equation}
 This is even under $\epsilon\to-\epsilon$, whereas a nonzero homogeneous cubic
 Taylor polynomial is odd.  Consequently an ordinary analytic cubic vertex is
-not defined there.  A nonlinear covariant regulator and either a controlled
-non-analytic prescription or a smooth microscopic completion are required
-before the full $J_2$, its quartic Schur complement or a physical scalar
-cutoff can be claimed.  The parent-block provenance passes; the full source is
-on an action-completion hold.
+not defined there.  Track A resolves the action-definition hold below while
+retaining this exact non-analytic functional; it does not turn the local force
+interaction into a homogeneous perturbative amplitude.
+
+A bounded completion audit identifies the rest-space Laplacian
+\begin{equation}
+ \Delta_U\psi:=D_\mu D^\mu\psi
+ =h^{\mu\nu}\nabla_\mu\nabla_\nu\psi+\Theta_U\mathcal Q,
+ \qquad \Theta_U:=\nabla_\mu U^\mu .
+ \label{eq:rest-space-laplacian-candidate}
+\end{equation}
+as the minimal evolving-frame operator.  Track A now adopts
+Eq.~\eqref{eq:rest-space-laplacian-candidate}, retains exact $Y^{3/2}$ and
+assigns its ordinary perturbative force analysis to a declared local
+nonzero-gradient background.  No smoothing scale or canonical linear-$Y$ term
+is introduced.
+
+On the homogeneous zero-gradient FRW branch, with
+$N_i=\partial_i\beta$, $h_{ij}=a^2e^{2\mathcal R}\delta_{ij}$ and
+$\psi=\bar\psi+\pi$, the adopted operator is
+\begin{equation}
+ D_\mu D^\mu\psi
+ =a^{-2}e^{-2\mathcal R}
+  (\partial^2\pi+\partial_i\mathcal R\,\partial_i\pi).
+ \label{eq:track-a-adm-laplacian}
+\end{equation}
+Its exact symbolic expansion, together with $\mathcal Q^2$ and the retained IR
+functional, reproduces the quadratic $z=2$ block and is verified through
+direct quartic order.  Before finite-$q$ scalar-shift normalization, the force
+contribution to the quadratic constraint source is
+\begin{align}
+ J_{2,\delta N}^{(\psi)}={}&-\frac{a^3K_Q}{2}\dot\pi^2
+ -\frac{\gamma}{2M_*^2a}(\partial^2\pi)^2,
+ \nonumber\\
+ J_{2,\beta}^{(\psi)}={}&aK_Q\partial_i
+ (\dot\pi\,\partial_i\pi).
+ \label{eq:track-a-force-j2}
+\end{align}
+The regulator has no shift source.  Exact $Y^{3/2}$ is constraint independent
+at cubic amplitude order on the zero-gradient branch, so its contribution to
+$J_2$ there is zero; this does not make it an analytic three-point vertex.
+The force component passes, but the complete
+$g+U+\Phi+\mathrm{alignment}+\psi$ source and the physical amplitude are not yet
+assembled.
 
 \subsection{Causality and cutoff status}
 

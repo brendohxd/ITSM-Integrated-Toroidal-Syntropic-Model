@@ -270,6 +270,23 @@ its perturbative prescription before forming the full `J2` and quartic Schur
 complement. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_NONLINEAR_ADM_ACTION_PROVENANCE.md`.
 
+UVIR-003 Stage-B force-completion comparison and selection (2026-07-26):
+**Track A selected; the rest-space Laplacian is adopted for derivation and
+exact `Y^(3/2)` is retained on a declared local nonzero-gradient force
+background**. The comparison proves that no analytic smoothing at `Y=0`
+preserves the exact deep-IR branch. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FORCE_COMPLETION_OPTIONS.md`.
+
+UVIR-003 Stage-B Track-A force ADM result (2026-07-26): **the homogeneous
+zero-gradient force action is verified through direct quartic order and its
+lapse/shift `J2` component is derived**. The temporal `Q^2` term supplies lapse
+and scalar-shift sources, the adopted regulator supplies a lapse source only,
+and exact `Y^(3/2)` is constraint independent at cubic amplitude order on
+this background. The complete multi-sector `J2` is not yet assembled and the
+non-analytic physical force amplitude remains assigned to the separate
+nonzero-gradient local calculation. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md`.
+
 ### MAT-001 -- Matter coupling and `C_proj`
 
 Derive the baryon--phonon vertex and calculate the observable Wilson

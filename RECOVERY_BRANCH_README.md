@@ -39,9 +39,12 @@ through a Schur complement. The physical strong-coupling scale therefore still
 requires the complete gauge-regular constrained cosmological `2-to-2`
 amplitude. The exact nonlinear `g+U+Phi+alignment` ADM parent block now has
 verified FRW and finite-`q` quadratic provenance. The full cosmological `J2`
-is nevertheless on hold because the force regulator lacks an evolving-frame
-covariant completion and `Y^(3/2)` needs a declared non-analytic prescription
-or smooth completion at `Y=0`. These bounded results do not establish full
+is not yet assembled. Track A now adopts the rest-space Laplacian
+`D_mu D^mu psi` and retains exact `Y^(3/2)` for a declared local
+nonzero-gradient perturbative force analysis. The homogeneous zero-gradient
+force action is verified through direct quartic order and its lapse/shift `J2`
+component is derived, but the complete multi-sector source and physical
+amplitude remain open. These bounded results do not establish full
 perturbative stability, observational viability, or a completed cosmology.
 
 ## Repository rules for recovery work

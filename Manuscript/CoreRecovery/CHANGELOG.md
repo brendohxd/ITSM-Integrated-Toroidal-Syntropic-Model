@@ -5,7 +5,21 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
-_No changes recorded._
+### Added
+
+- Added the bounded force-completion option audit, including the covariant
+  rest-space Laplacian identities and symbolic smoothing expansions.
+- Added the Track-A force ADM expansion through direct quartic order and the
+  verified force-sector lapse/shift `J2` component.
+
+### Changed
+
+- Refined the force-sector hold into an explicit architecture choice between
+  preserving the exact `Y^(3/2)` branch on a nonzero-gradient local background
+  and adopting a smooth homogeneous completion with a new crossover scale.
+- Selected Track A: adopted the rest-space Laplacian for derivation, retained
+  exact `Y^(3/2)` and assigned its perturbative force test to a declared local
+  nonzero-gradient background.
 
 ## 12.0-alpha.3 - 2026-07-26
 

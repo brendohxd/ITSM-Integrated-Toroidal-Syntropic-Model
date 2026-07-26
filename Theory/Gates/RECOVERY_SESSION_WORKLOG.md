@@ -464,3 +464,54 @@ from the complete nonlinear scalar amplitude.
 full cosmological `J2`, quartic Schur complement or physical cutoff until the
 force completion and perturbative prescription are declared. UVIR-003 remains
 in progress and MAT-001 remains blocked.
+
+## 2026-07-26 - Force-completion option audit
+
+Gate: UVIR-003 (Stage B force-sector action completion)
+
+**Regulator comparison:** verified the rest-space identity
+`D_mu D^mu psi=h^{mu nu}nabla_mu nabla_nu psi+theta Q`, its homogeneous-FRW
+cancellation and its constant-frame Stage-A limit. The rest-space Laplacian is
+recommended for explicit derivation but is not yet adopted. The projected
+Hessian alone changes the homogeneous FRW action; the spacetime divergence
+adds an acceleration/lapse-gradient coupling.
+
+**Non-analytic branch:** verified the nonzero-gradient expansion through
+quartic order and the zero-gradient series of two smooth completions. The
+exact branch supports a local expansion only on a nonzero spatial gradient,
+whose quartic transverse coefficient diverges as the background gradient
+vanishes. An unsubtracted smoothing generates a canonical `Y` term; a
+linear-subtracted smoothing begins at `Y^2`. Both change the exact deep-IR
+law.
+
+**Decision:** record `HOLD_ARCHITECTURE_DECISION_REQUIRED`. Track A preserves
+exact `Y^(3/2)` but moves the force calculation to a local nonzero-gradient
+background. Track B preserves a homogeneous analytic amplitude but introduces
+a smoothing scale and requires the weak-field law to be re-tested. Do not
+derive the full force-inclusive `J2` until a track is selected. UVIR-003
+remains in progress and MAT-001 remains blocked.
+
+## 2026-07-26 - Track A force ADM expansion
+
+Gate: UVIR-003 (Stage B force-sector nonlinear completion)
+
+**Architecture selection:** selected Track A. Adopted
+`Delta_U psi=D_mu D^mu psi`, retained exact `Y^(3/2)` and assigned its ordinary
+perturbative force analysis to a declared local nonzero-gradient background.
+No smoothing scale or canonical linear-`Y` term was introduced.
+
+**ADM expansion:** on the homogeneous zero-gradient FRW branch, verified the
+exact rest-space regulator, temporal `Q^2` term and exact IR functional through
+direct quartic order. The completed regulator exactly preserves the prior
+quadratic `z=2` force block.
+
+**Constraint source:** derived
+`J2_deltaN,force=-a^3 K_Q pi_dot^2/2-gamma(partial^2 pi)^2/(2M_*^2 a)` and,
+after spatial integration by parts,
+`J2_beta,force=a K_Q partial_i(pi_dot partial_i pi)`. The regulator supplies no
+shift source and exact `Y^(3/2)` supplies no `J2` term at zero gradient.
+
+**Decision:** record `PASS_FORCE_SECTOR_J2_COMPONENT`. The complete
+`g+U+Phi+alignment+psi` source is not yet assembled, and the non-analytic local
+force amplitude, quartic Schur complement, physical eigenmode projection and
+cutoff remain open. UVIR-003 remains in progress and MAT-001 remains blocked.

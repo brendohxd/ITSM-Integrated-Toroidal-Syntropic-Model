@@ -54,7 +54,9 @@ Release `12.0-alpha.3` records the low-`q` gauge-orbit audit, the complete
 three-dimensional flat-decoupling khronon cubic and quartic operator bases,
 the cubic and quartic constraint-order identities, and nonlinear ADM action
 provenance for the exact `g+U+Phi+alignment` block. The full cosmological `J2`
-remains on hold until the force regulator has an evolving-frame covariant
-completion and a controlled treatment of `Y^(3/2)` at `Y=0`. The physical
-interaction scale remains open pending the gauge-regular constrained
-cosmological `2-to-2` amplitude.
+is not yet assembled. Track A now adopts `D_mu D^mu psi`, retains exact
+`Y^(3/2)` and assigns its perturbative force test to a declared local
+nonzero-gradient background. The homogeneous zero-gradient force action is
+verified through direct quartic order and its lapse/shift `J2` component is
+derived. The physical interaction scale remains open pending the complete
+multi-sector source and gauge-regular constrained `2-to-2` amplitude.

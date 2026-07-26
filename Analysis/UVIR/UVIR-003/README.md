@@ -177,9 +177,38 @@ python Analysis/UVIR/UVIR-003/uvir003_nonlinear_adm_action_provenance.py
 
 This verifies that the exact nonlinear
 `gravity+aether+condensate+alignment` ADM parent block reproduces the FRW
-minisuperspace and finite-`q` quadratic constraint matrix and source. It also
-records why the full cosmological `J2` cannot yet be claimed: the force
-regulator lacks its evolving-frame covariant completion, while `Y^(3/2)` has
-no ordinary analytic cubic Taylor vertex at the zero-gradient background.
-The result is an action-provenance pass with a force-completion hold, not a
-physical amplitude or cutoff.
+minisuperspace and finite-`q` quadratic constraint matrix and source. At that
+checkpoint the force completion and its perturbative rule were still open.
+The subsequent Track-A audit below resolves the regulator definition and
+derives the force-sector `J2` component, while retaining the non-analytic local
+force-amplitude boundary.
+
+## Force-completion options
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_force_completion_options.py
+```
+
+This checks three nonlinear completions of the Stage-A spatial regulator and
+the two controlled treatments of exact `Y^(3/2)`. Track A is now selected:
+`Delta_U psi = D_mu D^mu psi` is adopted for derivation, the exact deep-IR
+operator is retained and its ordinary perturbative force analysis is assigned
+to a declared local nonzero-gradient background.
+
+## Track A force ADM expansion
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_track_a_force_adm_cubic.py
+```
+
+This expands `Q^2`, exact `Y^(3/2)` and the adopted regulator through direct
+quartic ADM order on the homogeneous zero-gradient FRW branch. It verifies the
+force contribution to the quadratic lapse/shift source: `Q^2` supplies lapse
+and scalar-shift terms, the regulator supplies a lapse term only, and exact
+`Y^(3/2)` supplies no `J2` term at the zero-gradient origin. The result is
+`PASS_FORCE_SECTOR_J2_COMPONENT`; the complete multi-sector `J2`, physical
+amplitude and cutoff remain open.
