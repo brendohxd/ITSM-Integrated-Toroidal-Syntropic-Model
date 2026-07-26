@@ -431,3 +431,17 @@ Full UVIR-003 gate: IN_PROGRESS
 MAT-001: BLOCKED
 STATUS: PASS_SCALAR_ADM_PRINCIPAL_SYMBOL
 ```
+
+## Subsequent finite-q status
+
+The next bounded calculation has now been completed. The full quadratic
+finite-`q` metric-aether-condensate action retains the evolving background and
+eliminates the lapse and momentum constraints for every `q_phys>0`. The
+representative scan has three positive and no negative kinetic eigenvalues,
+but the exact reduced determinant is proportional to `q_phys^2` and loses one
+rank at the homogeneous endpoint. See
+`UVIR-003_STAGE_B_SCALAR_ADM_FINITE_Q.md`.
+
+This supersedes the statement that the finite-`q` quadratic system is wholly
+open. It does not close UVIR-003: the cubic low-`q` normalization, physical
+cutoff, matter response and global causal domain remain unresolved.

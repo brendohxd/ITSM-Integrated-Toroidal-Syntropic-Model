@@ -337,6 +337,69 @@ is positive, but its cone is wider than the metric cone.  This is a bounded
 subhorizon result with a multicone-causality flag, not a full finite-$k$ or
 low-$k$ cosmological stability proof.
 
+\subsection{Time-dependent finite-wavenumber scalar reduction}
+
+The complete quadratic scalar reduction retains the evolving background and
+all terms through the homogeneous order.  Define
+\begin{equation}
+ \Sigma=q_{\rm phys}^2\beta,\qquad
+ D_{123}=M_U^2c_{123},\qquad C_{14}=M_U^2c_{14},\qquad
+ M=M_{\rm cos}^2.
+ \label{eq:finite-q-definitions}
+\end{equation}
+For every $q_{\rm phys}>0$, the lapse and momentum constraints can be written
+\begin{equation}
+ \mathcal L^{(2)}=\mathcal L_0+\mathbf z^{\mathsf T}\mathbf J
+ +\frac12\mathbf z^{\mathsf T}\mathbf C\mathbf z,
+ \qquad \mathbf z=(\delta N,\Sigma)^{\mathsf T},
+ \label{eq:finite-q-constraint-form}
+\end{equation}
+with
+\begin{equation}
+ \mathbf C=
+ \begin{pmatrix}
+ C_{14}q_{\rm phys}^2-2V & 2MH\\
+ 2MH & -D_{123}
+ \end{pmatrix}.
+ \label{eq:finite-q-constraint-matrix}
+\end{equation}
+The source vector retains $H$, $\dot\rho$, $\mu$ and the amplitude-potential
+terms.  Exact elimination gives
+\begin{equation}
+ \mathbf z=-\mathbf C^{-1}\mathbf J,
+ \qquad
+ \mathcal L_{\rm red}^{(2)}=\mathcal L_0
+ -\frac12\mathbf J^{\mathsf T}\mathbf C^{-1}\mathbf J.
+ \label{eq:finite-q-schur}
+\end{equation}
+Coefficient derivatives in the reduced equations include $\dot H$,
+$\ddot\rho$, $\dot\mu$ and
+$\dot q_{\rm phys}=-Hq_{\rm phys}$ for a fixed comoving mode.
+
+On the background equations, the exact reduced velocity-Hessian determinant is
+\begin{equation}
+ \det\mathbf K_{\rm red}=
+ \frac{2M\rho^2(2M-3D_{123})C_{14}q_{\rm phys}^2}
+ {C_{14}D_{123}q_{\rm phys}^2-2D_{123}V+4M^2H^2}.
+ \label{eq:finite-q-kinetic-determinant}
+\end{equation}
+Its high-wavenumber limit reproduces the principal curvature and condensate
+blocks above.  A scan of 801 background times and 61 logarithmic wavenumbers,
+$10^{-3}\le q_{\rm phys}/H\le10^3$, finds three positive and no negative
+kinetic eigenvalues at all 48,861 nonzero-wavenumber samples.  The constraint
+matrix remains nonsingular; its smallest sampled singular value is
+$0.0501148$.
+
+Equation~\eqref{eq:finite-q-kinetic-determinant} also exposes the unresolved
+endpoint.  The smallest normalized eigenvalue scales numerically as
+$q_{\rm phys}^{2.00066}$, and the kinetic rank falls from three to two at
+$q_{\rm phys}=0$.  Since $\Sigma=q_{\rm phys}^2\beta$ is not an independent
+exactly homogeneous perturbation, this is not classified as a ghost.  It is a
+strict low-wavenumber hold: the cubic action must be expanded in the
+collapsing eigenbasis and canonically normalized before deciding whether the
+limit is gauge-only or introduces a physical strong-coupling scale.  Thus the
+finite-$q$ constraint elimination passes, but UVIR-003 remains open.
+
 \subsection{Causality and cutoff status}
 
 Around a nonzero spatial background gradient of magnitude $q$, the force

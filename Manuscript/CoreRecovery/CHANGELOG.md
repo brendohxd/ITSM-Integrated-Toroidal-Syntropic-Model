@@ -10,6 +10,10 @@ root `CHANGELOG.md` records legacy project history.
 - Added the aether-unitary scalar ADM principal-symbol reduction.
 - Added the finite-wavenumber condensate kinetic determinant and the
   associated `q_ADM` validity scale.
+- Added the complete time-dependent quadratic finite-`q` scalar constraint
+  reduction and compact eigenvalue scan.
+- Added the exact `q_phys^2` low-wavenumber kinetic-determinant factor and the
+  resulting cubic-normalization hold point.
 
 ### Changed
 
@@ -19,6 +23,9 @@ root `CHANGELOG.md` records legacy project history.
 - Recorded the representative spin-0 superluminality as a multicone causality
   flag rather than classifying it as either a local instability or a completed
   causal theory.
+- Advanced the working manuscript from a principal-only scalar result to
+  finite-`q` constraint elimination with positive representative kinetic
+  inertia and an explicit strict low-`q` rank-loss hold.
 
 ## 12.0-alpha.2 - 2026-07-26
 

@@ -21,12 +21,15 @@ frame-sector normalization correction, ADM-readiness and
 background-completion screens, and the representative FRW background
 existence derivation.
 
-The scalar perturbation ADM programme has now passed its controlled
-subhorizon principal-symbol subgate. The next major calculation is the full
-time-dependent finite-wavenumber constraint reduction through the strict
-low-wavenumber limit. Passing a principal-symbol check, numerical trajectory,
-or background-existence test does not by itself establish full perturbative
-stability, observational viability, or a completed cosmology.
+The scalar perturbation ADM programme has now passed finite-wavenumber
+constraint elimination on the representative evolving branch. Across
+`10^-3 <= q_phys/H <= 10^3`, the sampled reduced kinetic matrices have three
+positive and no negative eigenvalues and the constraints remain nonsingular.
+The exact determinant nevertheless scales as `q_phys^2`, leaving a strict
+low-wavenumber kinetic-rank hold. The next major calculation is the cubic
+low-`q` action and canonical interaction-scale audit. These bounded results do
+not establish full perturbative stability, observational viability, or a
+completed cosmology.
 
 ## Repository rules for recovery work
 

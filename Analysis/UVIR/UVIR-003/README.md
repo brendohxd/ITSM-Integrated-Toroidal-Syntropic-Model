@@ -35,6 +35,8 @@ python Analysis/UVIR/UVIR-003/uvir003_zero_gradient_force_block.py
 python Analysis/UVIR/UVIR-003/uvir003_causality_check.py
 python Analysis/UVIR/UVIR-003/uvir003_force_strong_coupling_estimate.py
 python Analysis/UVIR/UVIR-003/uvir003_conditional_kq_estimate.py
+python Analysis/UVIR/UVIR-003/uvir003_scalar_adm_principal.py
+python Analysis/UVIR/UVIR-003/uvir003_scalar_adm_finite_q.py
 ```
 
 The zero-gradient force-block check proves quadratic factorization only for
@@ -81,4 +83,21 @@ Run:
 
 ```powershell
 python Analysis/UVIR/UVIR-003/uvir003_scalar_adm_principal.py
+```
+
+The time-dependent finite-`q` calculation completes the quadratic
+metric-aether-condensate constraint elimination on the same FRW branch. It
+retains all background, `q_phys^0` and `q_phys^2` terms, includes the
+coefficient derivatives along the trajectory, and scans 48,861 matrices over
+`10^-3 <= q_phys/H <= 10^3`. Every sampled nonzero-wavenumber kinetic matrix
+has three positive and no negative eigenvalues, while the constraints remain
+nonsingular. The exact reduced kinetic determinant is proportional to
+`q_phys^2`, however, so one direction loses kinetic rank as `q_phys -> 0`.
+This is a low-`q` hold pending cubic canonical normalization, not a ghost
+verdict or a completed stability proof.
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_scalar_adm_finite_q.py
 ```

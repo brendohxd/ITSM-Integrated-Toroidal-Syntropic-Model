@@ -205,6 +205,18 @@ causality open. The next calculation must retain the full time dependence and
 all finite-`q` terms through the strict low-`q` limit. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_SCALAR_ADM_PRINCIPAL.md`.
 
+UVIR-003 Stage-B finite-`q` scalar result (2026-07-26): **quadratic
+finite-wavenumber constraints eliminated; strict low-wavenumber kinetic-rank
+hold**. The exact time-dependent quadratic action retains the background,
+`q_phys^0`, `q_phys^2` and scalar-shift `q_phys^4` terms. Its reduced kinetic
+determinant is proportional to `q_phys^2`. Across 48,861 representative
+samples with `10^-3 <= q_phys/H <= 10^3`, every kinetic matrix has three
+positive and no negative eigenvalues and the constraints remain nonsingular.
+One direction loses kinetic rank at `q_phys=0`, so the next task is the cubic
+low-`q` action and canonical interaction-scale audit. This is not a ghost
+verdict or a full stability pass. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_SCALAR_ADM_FINITE_Q.md`.
+
 ### MAT-001 -- Matter coupling and `C_proj`
 
 Derive the baryon--phonon vertex and calculate the observable Wilson

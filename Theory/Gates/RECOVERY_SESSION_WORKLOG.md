@@ -314,3 +314,36 @@ dimensionless point is not a physical parameter selection.
 UVIR-003 closed. Next retain the full time dependence and all finite-`q`
 terms, solve the constraints along the trajectory and track the reduced
 eigenvalues toward `q_phys=0`. MAT-001 remains blocked.
+
+## 2026-07-26 - Time-dependent finite-q scalar ADM reduction
+
+Gate: UVIR-003 (Stage B scalar perturbations)
+
+**Quadratic system:** expanded the full declared two-derivative
+metric-aether-condensate scalar action on the verified FRW trajectory in
+aether-unitary gauge. Used `Sigma=q_phys^2 beta` for the nonzero-wavenumber
+momentum constraint, retained all background, `q_phys^0`, `q_phys^2` and
+scalar-shift `q_phys^4` terms, and kept the constant-background force scalar as
+its separately factorized `z=2` block.
+
+**Constraint result:** the lapse and momentum constraints are algebraic and
+nonsingular over the representative scan. Their exact elimination gives
+`L_red=L_0-J^T C^(-1)J/2`. The high-`q` limit reproduces the earlier principal
+curvature, amplitude and phase Hessians.
+
+**Finite-q scan:** evaluated 801 background times and 61 logarithmic
+wavenumbers from `q_phys/H=10^-3` to `10^3`, for 48,861 matrices. Every
+nonzero-`q` kinetic matrix has inertia `3 positive, 0 negative`; the smallest
+constraint singular value is `0.0501148`.
+
+**Low-q result:** the exact on-shell kinetic determinant is proportional to
+`q_phys^2`. The fitted smallest-eigenvalue power is `2.00066271`, and the
+strict `q=0` reduced kinetic rank is two of three. This is not classified as a
+ghost because `Sigma` is not an independent exactly homogeneous perturbation.
+It is a hold pending the cubic action and canonical normalization of the
+collapsing eigenmode.
+
+**Decision:** record `PASS_FINITE_Q_CONSTRAINT_ELIMINATION` together with
+`HOLD_KINETIC_RANK_LOSS_AT_Q_TO_ZERO`. UVIR-003 remains in progress. The next
+calculation is the cubic low-`q` interaction-scale audit; MAT-001 remains
+blocked.
