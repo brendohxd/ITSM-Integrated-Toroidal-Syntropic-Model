@@ -49,3 +49,8 @@ The release script refuses to overwrite an existing version directory.
 The manuscript intentionally distinguishes derived, conditional, open, and
 rejected claims. `13/12`, `H0=72.97`, automatic Solar-System compliance, and
 the historical SPARC `p=0.62` are not live predictions in this draft.
+
+The current working draft additionally records the low-`q` gauge-orbit audit
+and bounded longitudinal Stueckelberg cubic vertex basis. These are unreleased
+changes after `12.0-alpha.2`; no new frozen manuscript version has yet been
+created. The physical cubic interaction scale remains open.

@@ -212,10 +212,31 @@ hold**. The exact time-dependent quadratic action retains the background,
 determinant is proportional to `q_phys^2`. Across 48,861 representative
 samples with `10^-3 <= q_phys/H <= 10^3`, every kinetic matrix has three
 positive and no negative eigenvalues and the constraints remain nonsingular.
-One direction loses kinetic rank at `q_phys=0`, so the next task is the cubic
-low-`q` action and canonical interaction-scale audit. This is not a ghost
-verdict or a full stability pass. See
+One direction loses kinetic rank at `q_phys=0`, so the follow-on task is the
+low-`q` gauge-orbit and cubic interaction audit. This is not a ghost verdict or
+a full stability pass. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_SCALAR_ADM_FINITE_Q.md`.
+
+UVIR-003 Stage-B low-`q` scalar result (2026-07-26): **homogeneous gauge orbit
+identified; physical `q=0` kinetic block positive on the representative
+branch**. The exact null direction `(H,rho_dot,mu)` is the tangent to the FRW
+background under a homogeneous time translation. The invariant variables
+`Q_rho=delta_rho-(rho_dot/H)R` and
+`Q_theta=vartheta-(mu/H)R` retain two positive kinetic eigenvalues at all 801
+trajectory points. The smallest finite-`q` eigenvector converges to the same
+orbit. A cutoff inferred by normalizing its vanishing eigenvalue is therefore
+rejected as gauge dependent. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_SCALAR_LOW_Q_GAUGE.md`.
+
+UVIR-003 Stage-B bounded cubic result (2026-07-26): **longitudinal
+flat-decoupling Stueckelberg vertex basis derived; physical interaction scale
+open**. Restoring `T=t+pi` gives the quadratic combinations `c14` and `c123`
+and four checked cubic longitudinal operators. This is a readiness result, not
+the cosmological cubic action. The next calculation must retain non-collinear
+momentum triads, solve lapse and shift through second perturbative order, and
+project onto the complete physical eigenmodes before assigning an invariant
+strong-coupling scale. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_AETHER_STUECKELBERG_CUBIC.md`.
 
 ### MAT-001 -- Matter coupling and `C_proj`
 

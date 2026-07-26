@@ -347,3 +347,44 @@ collapsing eigenmode.
 `HOLD_KINETIC_RANK_LOSS_AT_Q_TO_ZERO`. UVIR-003 remains in progress. The next
 calculation is the cubic low-`q` interaction-scale audit; MAT-001 remains
 blocked.
+
+## 2026-07-26 - Low-q scalar gauge-orbit audit
+
+Gate: UVIR-003 (Stage B scalar perturbations)
+
+**Exact endpoint:** the on-shell `q=0` kinetic matrix annihilates
+`(H,rho_dot,mu)`, which is the tangent to the homogeneous background under a
+time translation. The invariant combinations
+`Q_rho=delta_rho-(rho_dot/H)R` and
+`Q_theta=vartheta-(mu/H)R` remove this direction.
+
+**Representative check:** the normalized two-field `q=0` physical block has
+inertia `2 positive, 0 negative` at all 801 trajectory points, minimum
+eigenvalue `0.9372858341` and maximum condition number `1.066910396`. At
+`q_phys/H=10^-3`, the smallest finite-`q` eigenvector has minimum alignment
+cosine `0.9999999999999994` with the time-shift orbit.
+
+**Decision:** replace the low-`q` kinetic-rank hold with
+`PASS_LOW_Q_GAUGE_ORBIT_AUDIT`. Reject a strong-coupling scale inferred by
+canonically normalizing the vanishing gauge direction. UVIR-003 remains in
+progress and MAT-001 remains blocked.
+
+## 2026-07-26 - Bounded aether Stueckelberg cubic audit
+
+Gate: UVIR-003 (Stage B cubic readiness)
+
+**Controlled scope:** restored `T=t+pi` and expanded the normalized
+hypersurface-orthogonal aether through cubic order for a one-dimensional
+longitudinal profile with the metric held flat.
+
+**Result:** with the overall `M_U^2` factor suppressed,
+`L2=[c14 pi_tx^2-c123 pi_xx^2]/2`, while
+`L3=-c14 pi_t pi_tx^2+c123 pi_t pi_xx^2-c14 pi_tt pi_tx pi_x
++(2c123-c14) pi_tx pi_x pi_xx`. The nonzero Fourier mode is normalized by
+`chi_k=M_U sqrt(c14)|k|pi_k` and has speed squared `c123/c14`.
+
+**Decision:** record `PASS_BOUNDED_VERTEX_BASIS`, not a physical cutoff. The
+one-dimensional decoupling truncation omits non-collinear triads, second-order
+lapse and shift response, the evolving background and coupled physical-mode
+projection. The physical interaction scale is `NOT_YET_DERIVED`; UVIR-003
+remains in progress and MAT-001 remains blocked.

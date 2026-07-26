@@ -390,15 +390,58 @@ kinetic eigenvalues at all 48,861 nonzero-wavenumber samples.  The constraint
 matrix remains nonsingular; its smallest sampled singular value is
 $0.0501148$.
 
-Equation~\eqref{eq:finite-q-kinetic-determinant} also exposes the unresolved
-endpoint.  The smallest normalized eigenvalue scales numerically as
+Equation~\eqref{eq:finite-q-kinetic-determinant} also exposes a homogeneous
+rank change.  The smallest normalized eigenvalue scales numerically as
 $q_{\rm phys}^{2.00066}$, and the kinetic rank falls from three to two at
-$q_{\rm phys}=0$.  Since $\Sigma=q_{\rm phys}^2\beta$ is not an independent
-exactly homogeneous perturbation, this is not classified as a ghost.  It is a
-strict low-wavenumber hold: the cubic action must be expanded in the
-collapsing eigenbasis and canonically normalized before deciding whether the
-limit is gauge-only or introduces a physical strong-coupling scale.  Thus the
-finite-$q$ constraint elimination passes, but UVIR-003 remains open.
+$q_{\rm phys}=0$.  The follow-on audit evaluates the endpoint exactly and
+finds
+\begin{equation}
+ \mathbf K_{\rm red}(0)
+ \begin{pmatrix}H&\dot\rho&\mu\end{pmatrix}^{\mathsf T}=0.
+ \label{eq:low-q-time-shift-null}
+\end{equation}
+This vector is tangent to $(\ln a,\rho,\Theta)$ under a homogeneous time
+translation.  The two combinations
+\begin{equation}
+ Q_\rho=\delta\rho-\frac{\dot\rho}{H}\mathcal R,
+ \qquad
+ Q_\Theta=\vartheta-\frac{\mu}{H}\mathcal R
+ \label{eq:low-q-invariants}
+\end{equation}
+annihilate that orbit.  After phase normalization by $\rho$, their physical
+$q=0$ kinetic block has two positive and no negative eigenvalues at every one
+of the 801 representative trajectory points; its minimum eigenvalue is
+$0.937286$.  At $q_{\rm phys}/H=10^{-3}$ the smallest finite-$q$ eigenvector
+has minimum alignment cosine $0.9999999999999994$ with the time-shift orbit.
+The rank loss is therefore a gauge endpoint, not a third physical homogeneous
+scalar.  Canonically normalizing its vanishing norm would manufacture a
+gauge-dependent strong-coupling scale.
+
+\subsection{Bounded khronon cubic readiness result}
+
+As a controlled next step, use the hypersurface-orthogonal aether--khronon equivalence \cite{jacobson2010} and restore the preferred-time scalar through
+\begin{equation}
+ T=t+\pi,\qquad
+ U_\mu=-\frac{\partial_\mu T}{\sqrt{-(\partial T)^2}}.
+ \label{eq:khronon-definition}
+\end{equation}
+For a one-dimensional longitudinal profile with the metric held flat, the
+four-operator aether action gives, after suppressing the overall $M_U^2$
+factor,
+\begin{align}
+ \mathcal L_2={}&\frac12\left[c_{14}\pi_{tx}^2
+                 -c_{123}\pi_{xx}^2\right],\label{eq:khronon-l2}\\
+ \mathcal L_3={}&-c_{14}\pi_t\pi_{tx}^2
+ +c_{123}\pi_t\pi_{xx}^2-c_{14}\pi_{tt}\pi_{tx}\pi_x\nonumber\\
+ &+(2c_{123}-c_{14})\pi_{tx}\pi_x\pi_{xx}.
+ \label{eq:khronon-l3}
+\end{align}
+For every nonzero Fourier mode,
+$\chi_k=M_U\sqrt{c_{14}}\lvert k\rvert\pi_k$ supplies the quadratic canonical
+normalization and $c_s^2=c_{123}/c_{14}$.  This bounded vertex basis is not the
+physical cosmological cubic action.  It omits non-collinear momentum triads,
+the second-order lapse and scalar-shift response, evolving-background terms
+and condensate--metric mode projection.  Consequently no invariant physical strong-coupling scale is assigned; the action-dependent warnings and healthy-extension results in Refs.~\cite{blas2010,papazoglou2009} reinforce that boundary.  UVIR-003 remains open.
 
 \subsection{Causality and cutoff status}
 

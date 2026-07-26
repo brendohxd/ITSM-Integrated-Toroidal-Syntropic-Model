@@ -101,3 +101,26 @@ Run:
 ```powershell
 python Analysis/UVIR/UVIR-003/uvir003_scalar_adm_finite_q.py
 ```
+
+## Low-q gauge-orbit and bounded cubic audits
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_scalar_low_q_gauge.py
+python Analysis/UVIR/UVIR-003/uvir003_aether_stueckelberg_cubic.py
+```
+
+The low-`q` audit proves that the collapsing finite-wavenumber kinetic
+direction approaches the homogeneous time-translation orbit. The two
+independent gauge-invariant matter combinations retain a positive regular
+`q=0` kinetic block across the representative trajectory. A strong-coupling
+scale obtained by normalizing the vanishing gauge direction is therefore
+rejected as gauge dependent.
+
+The bounded Stueckelberg calculation derives the longitudinal one-dimensional
+flat-decoupling quadratic and cubic aether vertex basis and identifies the
+canonical nonzero Fourier mode. It does not supply the physical cosmological
+strong-coupling scale. That requires non-collinear momentum triads, the
+second-order lapse and shift response, evolving-background terms and
+projection onto the complete physical eigenmode basis.

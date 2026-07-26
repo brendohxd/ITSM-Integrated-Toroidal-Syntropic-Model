@@ -144,10 +144,16 @@ evolving branch. For all 48,861 representative samples with
 `10^-3 <= q_phys/H <= 10^3`, the reduced kinetic inertia is three positive and
 zero negative and the lapse-momentum constraint matrix is nonsingular. The
 exact on-shell determinant is proportional to `q_phys^2`, so one kinetic
-direction loses rank as `q_phys -> 0`. This is held for cubic canonical
-normalization rather than classified as a ghost or a low-wavenumber stability
-pass. The representative spin-0 cone is also wider than the metric cone,
-leaving the global multicone-causality test open.
+direction loses rank as `q_phys -> 0`. The follow-on gauge audit identifies
+that direction exactly as `(H,rho_dot,mu)`, the homogeneous time-translation
+orbit. Two gauge-invariant matter combinations retain a positive regular
+`q=0` kinetic block across the representative trajectory. The rank loss is
+therefore a gauge endpoint rather than a third physical homogeneous scalar.
+A bounded longitudinal Stueckelberg expansion derives the flat-decoupling
+quadratic and cubic aether vertex basis, but it omits the second-order
+cosmological constraints and non-collinear momentum triads needed for a
+physical interaction scale. Nonlinear weak coupling, the physical cutoff and
+the global multicone-causality test remain open.
 
 ### 3.4 Infrared phonon sector
 

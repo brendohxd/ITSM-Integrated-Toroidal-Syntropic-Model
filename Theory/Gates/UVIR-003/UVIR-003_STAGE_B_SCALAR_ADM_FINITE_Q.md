@@ -366,3 +366,18 @@ Full UVIR-003 gate: IN_PROGRESS
 MAT-001: BLOCKED
 STATUS: PASS_FINITE_Q_REDUCTION_WITH_LOW_Q_HOLD
 ```
+
+## 9. Subsequent low-q gauge status
+
+The follow-on audit in
+`UVIR-003_STAGE_B_SCALAR_LOW_Q_GAUGE.md` now identifies the exact `q=0` null
+vector as `(H,rho_dot,mu)`, the homogeneous time-translation orbit of the FRW
+background. Its two gauge-invariant matter combinations have a positive
+regular kinetic block on all 801 representative trajectory points, and the
+smallest finite-`q` eigenvector converges to that orbit.
+
+The earlier low-`q` hold is therefore resolved as a gauge endpoint, not a
+physical ghost or a physical strong-coupling scale. Nonlinear weak coupling is
+still open. A separate bounded Stueckelberg audit derives the one-dimensional
+flat-decoupling cubic aether vertex basis, but the physical cutoff still
+requires non-collinear triads and the second-order cosmological constraints.

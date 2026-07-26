@@ -21,15 +21,17 @@ frame-sector normalization correction, ADM-readiness and
 background-completion screens, and the representative FRW background
 existence derivation.
 
-The scalar perturbation ADM programme has now passed finite-wavenumber
-constraint elimination on the representative evolving branch. Across
-`10^-3 <= q_phys/H <= 10^3`, the sampled reduced kinetic matrices have three
-positive and no negative eigenvalues and the constraints remain nonsingular.
-The exact determinant nevertheless scales as `q_phys^2`, leaving a strict
-low-wavenumber kinetic-rank hold. The next major calculation is the cubic
-low-`q` action and canonical interaction-scale audit. These bounded results do
-not establish full perturbative stability, observational viability, or a
-completed cosmology.
+The scalar perturbation ADM programme has passed finite-wavenumber constraint
+elimination on the representative evolving branch. The apparent strict
+low-wavenumber rank loss is now identified as the homogeneous time-translation
+gauge orbit: the two gauge-invariant matter scalars retain a positive regular
+`q=0` kinetic block across the trajectory. A bounded longitudinal Stueckelberg
+calculation also derives the flat-decoupling cubic aether vertex basis and the
+nonzero-mode canonical normalization. It does not determine the physical
+strong-coupling scale. The next major calculation is the non-collinear cubic
+cosmological action with lapse and shift solved through second order. These
+bounded results do not establish full perturbative stability, observational
+viability, or a completed cosmology.
 
 ## Repository rules for recovery work
 

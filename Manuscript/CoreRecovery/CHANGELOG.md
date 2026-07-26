@@ -14,6 +14,10 @@ root `CHANGELOG.md` records legacy project history.
   reduction and compact eigenvalue scan.
 - Added the exact `q_phys^2` low-wavenumber kinetic-determinant factor and the
   resulting cubic-normalization hold point.
+- Added the exact homogeneous time-translation null identity, gauge-invariant
+  `q=0` scalar basis and representative positivity scan.
+- Added the bounded longitudinal Stueckelberg quadratic and cubic aether
+  vertex basis with an explicit no-cutoff claim boundary.
 
 ### Changed
 
@@ -25,7 +29,11 @@ root `CHANGELOG.md` records legacy project history.
   causal theory.
 - Advanced the working manuscript from a principal-only scalar result to
   finite-`q` constraint elimination with positive representative kinetic
-  inertia and an explicit strict low-`q` rank-loss hold.
+  inertia.
+- Resolved the strict `q=0` rank-loss hold as a homogeneous gauge orbit while
+  keeping nonlinear weak coupling and the physical interaction scale open.
+- Replaced the planned canonical normalization of the collapsing eigenvector
+  with the correct gauge-invariant, non-collinear cubic cosmological task.
 
 ## 12.0-alpha.2 - 2026-07-26
 
