@@ -21,10 +21,12 @@ frame-sector normalization correction, ADM-readiness and
 background-completion screens, and the representative FRW background
 existence derivation.
 
-The next major scientific gate is the scalar perturbation ADM reduction.
-Passing a symbolic check, numerical trajectory, or background-existence test
-does not by itself establish perturbative stability, observational viability,
-or a completed cosmology.
+The scalar perturbation ADM programme has now passed its controlled
+subhorizon principal-symbol subgate. The next major calculation is the full
+time-dependent finite-wavenumber constraint reduction through the strict
+low-wavenumber limit. Passing a principal-symbol check, numerical trajectory,
+or background-existence test does not by itself establish full perturbative
+stability, observational viability, or a completed cosmology.
 
 ## Repository rules for recovery work
 

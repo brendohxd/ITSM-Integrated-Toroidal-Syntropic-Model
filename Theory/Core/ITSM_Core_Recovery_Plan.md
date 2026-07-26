@@ -191,6 +191,20 @@ next UVIR-003 task is the time-dependent scalar perturbation and constraint
 reduction on this background. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FRW_BACKGROUND.md`.
 
+UVIR-003 Stage-B scalar-ADM principal result (2026-07-26):
+**subhorizon principal block reduced and positive at the representative
+dimensionless point; full finite-wavelength system remains open**. In
+aether-unitary scalar gauge, lapse and scalar shift elimination gives
+`K_R=2 M_P^2 F(1-alpha13)/alpha123` and
+`G_R=M_P^2(2-alpha14)/alpha14`, independently reproducing the published
+Einstein-aether spin-0 speed. The condensate kinetic determinant introduces
+`q_ADM^2=(rho_dot^2+rho^2 mu^2)/(M_U^2 c14)`, so the frozen-coefficient audit
+is controlled only for `q_phys >> max(H,q_ADM)`. The representative point
+passes principal positivity but has `s0^2=1.31018`, leaving multicone global
+causality open. The next calculation must retain the full time dependence and
+all finite-`q` terms through the strict low-`q` limit. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_SCALAR_ADM_PRINCIPAL.md`.
+
 ### MAT-001 -- Matter coupling and `C_proj`
 
 Derive the baryon--phonon vertex and calculate the observable Wilson

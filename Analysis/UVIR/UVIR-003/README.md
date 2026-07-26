@@ -66,3 +66,19 @@ dimensionless expanding branch with independently monitored Friedmann,
 continuity and charge residuals. This removes the background blocker: the
 scalar ADM reduction is ready to begin on the evolving branch, but is not yet
 performed.
+
+The scalar ADM principal-symbol calculation now performs the first controlled
+part of that reduction. In aether-unitary scalar gauge it eliminates the lapse
+and scalar shift for frozen background coefficients at `q_phys=k/a >> H`,
+independently recovers the published Einstein-aether spin-0 speed, and derives
+the finite-`q` condensate kinetic determinant. The representative branch
+passes principal positivity, but its scalar aether speed is superluminal
+relative to the metric and the audit is controlled only above the additional
+`q_ADM` scale. The full time-dependent, finite-`q` and strict low-`q` system
+remains open.
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_scalar_adm_principal.py
+```

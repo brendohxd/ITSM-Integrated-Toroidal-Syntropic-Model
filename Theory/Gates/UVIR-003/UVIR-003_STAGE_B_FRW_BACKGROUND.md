@@ -327,3 +327,15 @@ Full UVIR-003 gate: IN_PROGRESS
 MAT-001: BLOCKED
 STATUS: PASS_EVOLVING_FRW_BACKGROUND
 ```
+
+## Subsequent scalar ADM status
+
+The next bounded subgate has now been completed. In aether-unitary scalar
+gauge, the frozen-coefficient subhorizon principal reduction eliminates the
+lapse and scalar shift, independently recovers the exact Einstein-aether
+spin-0 speed and derives the condensate `q_ADM` validity scale. See
+`UVIR-003_STAGE_B_SCALAR_ADM_PRINCIPAL.md`.
+
+This advances the scalar programme but does not alter the boundary of the
+present report: the full time-dependent finite-wavenumber and strict low-k
+system remains open.

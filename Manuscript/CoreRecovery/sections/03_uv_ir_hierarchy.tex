@@ -269,6 +269,74 @@ this time-dependent background.  A subhorizon limit can test local modes only fo
 $k/a\gg H$; the strict low-$k$ question remains part of the complete
 cosmological perturbation system.
 
+\subsection{Scalar ADM principal-symbol reduction}
+
+The first scalar constraint subgate uses aether-unitary gauge,
+\begin{equation}
+ N=1+\delta N,\qquad N_i=\partial_i\beta,\qquad
+ h_{ij}=a^2e^{2\mathcal R}\delta_{ij},\qquad U^\mu=n^\mu,
+ \label{eq:scalar-adm-gauge}
+\end{equation}
+and freezes the evolving background coefficients over a wavelength.  For
+$q_{\rm phys}=k/a\gg H$, the principal lapse and scalar-shift solutions are
+\begin{equation}
+ \delta N=-\frac{2M_P^2}{M_U^2c_{14}}\mathcal R
+ +\frac{\dot\rho\,\delta\dot\rho+\rho^2\mu\dot\vartheta}
+ {M_U^2c_{14}q_{\rm phys}^2},
+ \label{eq:scalar-adm-lapse}
+\end{equation}
+\begin{equation}
+ \beta=-\frac{2M_{\rm cos}^2\dot{\mathcal R}
+ +\dot\rho\,\delta\rho+\rho^2\mu\vartheta}
+ {M_U^2c_{123}q_{\rm phys}^2}.
+ \label{eq:scalar-adm-shift}
+\end{equation}
+With $F=M_{\rm cos}^2/M_P^2
+=1+(\alpha_{13}+3\alpha_2)/2$, their elimination gives
+\begin{equation}
+ \mathcal L_{\mathcal R}^{(2)}
+ =\mathcal K_{\mathcal R}\dot{\mathcal R}^2
+ -\mathcal G_{\mathcal R}q_{\rm phys}^2\mathcal R^2,
+ \quad
+ \mathcal K_{\mathcal R}
+ =\frac{2M_P^2F(1-\alpha_{13})}{\alpha_{123}},
+ \quad
+ \mathcal G_{\mathcal R}
+ =\frac{M_P^2(2-\alpha_{14})}{\alpha_{14}}.
+ \label{eq:scalar-adm-reduced}
+\end{equation}
+Their ratio independently recovers the exact coupled Einstein--aether spin-0
+speed \cite{elingjacobsonmattingly2004},
+\begin{equation}
+ s_0^2=
+ \frac{\alpha_{123}(2-\alpha_{14})}
+ {\alpha_{14}(1-\alpha_{13})(2+\alpha_{13}+3\alpha_2)}.
+ \label{eq:scalar-adm-spin-zero}
+\end{equation}
+
+The condensate velocity Hessian retains a leading lapse-induced correction
+whose determinant factorizes as
+\begin{equation}
+ \det\mathbf K_\Phi(q_{\rm phys})
+ =\rho^2\left[
+ 1-\frac{\dot\rho^2+\rho^2\mu^2}
+ {M_U^2c_{14}q_{\rm phys}^2}\right].
+ \label{eq:scalar-adm-condensate-determinant}
+\end{equation}
+Thus the controlled domain is not merely $q_{\rm phys}\gg H$ but
+\begin{equation}
+ q_{\rm phys}\gg\max(H,q_{\rm ADM}),\qquad
+ q_{\rm ADM}^2=
+ \frac{\dot\rho^2+\rho^2\mu^2}{M_U^2c_{14}}.
+ \label{eq:scalar-adm-validity}
+\end{equation}
+At the representative dimensionless point,
+$\mathcal K_{\mathcal R}=39.94375$,
+$\mathcal G_{\mathcal R}=52.33333$ and $s_0^2=1.31018$.  The principal block
+is positive, but its cone is wider than the metric cone.  This is a bounded
+subhorizon result with a multicone-causality flag, not a full finite-$k$ or
+low-$k$ cosmological stability proof.
+
 \subsection{Causality and cutoff status}
 
 Around a nonzero spatial background gradient of magnitude $q$, the force

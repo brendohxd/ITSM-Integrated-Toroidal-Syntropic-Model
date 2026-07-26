@@ -281,3 +281,36 @@ scalar ADM reduction is ready to begin on the evolving branch. UVIR-003
 remains in progress because no scalar perturbation kinetic/gradient matrix,
 physical cutoff or low-k cosmological stability result has been derived.
 MAT-001 remains blocked.
+
+## 2026-07-26 - Scalar ADM principal-symbol reduction
+
+Gate: UVIR-003 (Stage B scalar perturbations)
+
+**Controlled scope:** aether-unitary scalar gauge on the verified evolving
+FRW branch, with background coefficients frozen over a wavelength and
+`q_phys=k/a >> H`. Retained the principal time derivatives, `q_phys^2`
+terms, the force `q_phys^4` regulator and the leading lapse-induced
+`1/q_phys^2` condensate kinetic correction.
+
+**Constraint result:** the lapse and scalar shift are algebraic in the
+principal truncation. Their elimination gives
+`K_R=2 M_P^2 F(1-alpha13)/alpha123` and
+`G_R=M_P^2(2-alpha14)/alpha14`. Their ratio exactly reproduces the published
+Einstein-aether spin-0 speed, providing an independent ADM cross-check of the
+earlier literature substitution.
+
+**Condensate result:** the reduced two-field velocity Hessian has determinant
+`rho^2[1-(rho_dot^2+rho^2 mu^2)/(M_U^2 c14 q_phys^2)]`. Define
+`q_ADM^2=(rho_dot^2+rho^2 mu^2)/(M_U^2 c14)`. The principal signs are
+interpretable only for `q_phys >> q_ADM` as well as `q_phys >> H`.
+
+**Representative check:** `K_R=39.94375`, `G_R=52.33333`,
+`s0^2=1.310175768`. The principal block is positive. The 801-point trajectory
+has `max(a q_ADM)=5.95264` and `max(aH)=0.632766`. The scalar cone is wider
+than the metric cone, so global multicone causality remains open; the
+dimensionless point is not a physical parameter selection.
+
+**Decision:** record a passed scalar ADM principal-symbol subgate. Do not call
+UVIR-003 closed. Next retain the full time dependence and all finite-`q`
+terms, solve the constraints along the trajectory and track the reduced
+eigenvalues toward `q_phys=0`. MAT-001 remains blocked.

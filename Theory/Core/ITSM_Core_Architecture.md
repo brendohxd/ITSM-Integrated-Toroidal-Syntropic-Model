@@ -131,6 +131,16 @@ verified one regular dimensionless on-shell branch with conserved
 `a^3 rho^2 dot(Theta)`. This is a background existence result, not a
 cosmological parameter fit or perturbation-stability result.
 
+The first scalar ADM subgate has now been completed in a controlled
+frozen-coefficient, subhorizon limit. In aether-unitary scalar gauge, lapse
+and scalar shift elimination independently reproduces the exact
+Einstein-aether spin-0 speed and yields a positive principal block at the
+representative dimensionless point. The condensate constraint introduces
+`q_ADM^2=(rho_dot^2+rho^2 mu^2)/(M_U^2 c14)`, so this result is restricted to
+`q_phys >> max(H,q_ADM)`. It is not a low-wavenumber cosmological stability
+proof. The representative spin-0 cone is also wider than the metric cone,
+leaving the global multicone-causality test open.
+
 ### 3.4 Infrared phonon sector
 
 The local low-acceleration field is an emergent phonon `psi`, normalized so

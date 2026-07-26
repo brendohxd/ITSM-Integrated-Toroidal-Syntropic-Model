@@ -5,7 +5,20 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
-- No manuscript changes recorded yet.
+### Added
+
+- Added the aether-unitary scalar ADM principal-symbol reduction.
+- Added the finite-wavenumber condensate kinetic determinant and the
+  associated `q_ADM` validity scale.
+
+### Changed
+
+- Advanced UVIR-003 from “scalar ADM ready to begin” to “subhorizon principal
+  block reduced,” while keeping the full time-dependent low-wavenumber system
+  open.
+- Recorded the representative spin-0 superluminality as a multicone causality
+  flag rather than classifying it as either a local instability or a completed
+  causal theory.
 
 ## 12.0-alpha.2 - 2026-07-26
 
