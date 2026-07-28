@@ -13,8 +13,8 @@ This directory is the manuscript workspace for the
 - `releases/v<version>/` contains immutable source and PDF snapshots.
 
 The current frozen release is
-[`v12.0-alpha.3`](releases/v12.0-alpha.3/). The previous release is
-[`v12.0-alpha.2`](releases/v12.0-alpha.2/); all versioned source and PDF trees
+[`v12.0-alpha.4`](releases/v12.0-alpha.4/). The previous release is
+[`v12.0-alpha.3`](releases/v12.0-alpha.3/); all versioned source and PDF trees
 are immutable snapshots.
 
 ## Versioning rule
@@ -35,7 +35,7 @@ alpha number; this keeps every cited PDF unambiguous.
 4. When the manuscript is ready to freeze, run:
 
    ```powershell
-   .\New-ManuscriptRelease.ps1 -Version 12.0-alpha.4 -Label "Next verified checkpoint"
+   .\New-ManuscriptRelease.ps1 -Version 12.0-alpha.5 -Label "Next verified checkpoint"
    ```
 
 5. Inspect the new PDF, add `RELEASE_NOTES.md`, move the `Unreleased` entries
@@ -50,13 +50,15 @@ The manuscript intentionally distinguishes derived, conditional, open, and
 rejected claims. `13/12`, `H0=72.97`, automatic Solar-System compliance, and
 the historical SPARC `p=0.62` are not live predictions in this draft.
 
-Release `12.0-alpha.3` records the low-`q` gauge-orbit audit, the complete
-three-dimensional flat-decoupling khronon cubic and quartic operator bases,
-the cubic and quartic constraint-order identities, and nonlinear ADM action
-provenance for the exact `g+U+Phi+alignment` block. The full cosmological `J2`
-is not yet assembled. Track A now adopts `D_mu D^mu psi`, retains exact
-`Y^(3/2)` and assigns its perturbative force test to a declared local
-nonzero-gradient background. The homogeneous zero-gradient force action is
-verified through direct quartic order and its lapse/shift `J2` component is
-derived. The physical interaction scale remains open pending the complete
-multi-sector source and gauge-regular constrained `2-to-2` amplitude.
+Release `12.0-alpha.4` records the Track-A regulator selection, the complete
+homogeneous zero-gradient force action through direct quartic order, and the
+assembled finite-`q` multi-sector `J2`. The source regresses exactly to the
+previous linear constraint system and yields the verified
+`-J2^T C^(-1)J2/2` quartic Schur functional. The inverse-Laplacian shift
+representation is restricted to `q_phys>0`; the homogeneous gauge-orbit
+result is unchanged.
+
+The direct multi-sector cubic and quartic contact actions, regular
+physical-scalar projection, gauge-regular constrained `2-to-2` amplitude,
+physical cutoff and local nonzero-gradient exact-`Y` reduction remain open.
+UVIR-003 is in progress and MAT-001 remains blocked.

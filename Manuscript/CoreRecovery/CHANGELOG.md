@@ -5,12 +5,18 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+## 12.0-alpha.4 - 2026-07-29
+
 ### Added
 
 - Added the bounded force-completion option audit, including the covariant
   rest-space Laplacian identities and symbolic smoothing expansions.
 - Added the Track-A force ADM expansion through direct quartic order and the
   verified force-sector lapse/shift `J2` component.
+- Added the complete finite-`q` multi-sector `J2` derivation, including exact
+  regression to the previous linear constraint source.
+- Added the verified constraint-induced quartic Schur functional
+  `-J2^T C^(-1)J2/2`.
 
 ### Changed
 
@@ -20,6 +26,15 @@ root `CHANGELOG.md` records legacy project history.
 - Selected Track A: adopted the rest-space Laplacian for derivation, retained
   exact `Y^(3/2)` and assigned its perturbative force test to a declared local
   nonzero-gradient background.
+- Replaced the complete-`J2` hold with the next bounded requirement: derive
+  the direct multi-sector cubic and quartic contact actions and project them
+  onto the regular physical-scalar basis.
+
+### Status boundary
+
+- The complete finite-`q` constraint source and its quartic Schur block pass.
+- The direct quartic contact action, physical `2-to-2` amplitude, cutoff,
+  nonzero-gradient exact-`Y` reduction and MAT-001 remain open.
 
 ## 12.0-alpha.3 - 2026-07-26
 

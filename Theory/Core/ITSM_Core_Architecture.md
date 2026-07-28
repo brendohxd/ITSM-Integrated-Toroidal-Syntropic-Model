@@ -164,16 +164,21 @@ through `-J2^T C^(-1) J2/2`; third-order constraint solutions are unnecessary.
 Consequently the physical interaction scale still requires the complete
 gauge-regular constrained cosmological `2-to-2` amplitude and physical
 eigenmode projection. The exact nonlinear `g+U+Phi+alignment` ADM parent block
-now reproduces the FRW and finite-`q` quadratic constraint data. The full
-cosmological `J2` is not yet assembled, however. Track A now adopts the
+reproduces the FRW and finite-`q` quadratic constraint data. Track A adopts the
 rest-space Laplacian
 `D_mu D^mu psi=h^{mu nu}nabla_mu nabla_nu psi+theta Q` and retains exact
 `Y^(3/2)` for a declared local nonzero-gradient perturbative force analysis.
 The homogeneous zero-gradient force action is verified through direct quartic
 order: `Q^2` supplies lapse and scalar-shift `J2` components, the regulator
 supplies a lapse component only, and exact `Y^(3/2)` is constraint independent
-at cubic amplitude order on that background. Nonlinear weak coupling, the
-physical cutoff and the global multicone-causality test remain open.
+at cubic amplitude order on that background. The complete finite-`q`
+multi-sector `J2` is now assembled in the
+`(delta_N,Sigma=q_phys^2 beta)` convention and its exact
+`-J2^T C^(-1)J2/2` quartic Schur functional is verified. This result is
+restricted to `q_phys>0`; it does not reclassify the homogeneous gauge orbit.
+The direct multi-sector quartic contact action, physical scalar projection,
+gauge-regular amplitude, physical cutoff and global multicone-causality test
+remain open.
 
 ### 3.4 Infrared phonon sector
 

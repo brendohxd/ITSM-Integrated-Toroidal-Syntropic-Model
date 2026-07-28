@@ -16,10 +16,11 @@ not the scientific status authority for this branch.
 
 ## Manuscript status
 
-The newest frozen manuscript release is `12.0-alpha.3`. It includes the
-finite-`q` and low-`q` scalar ADM results, the three-dimensional cubic and
-quartic interaction-readiness audits, and the nonlinear ADM action-provenance
-checkpoint. Earlier releases remain immutable under `releases/`.
+The newest frozen manuscript release is `12.0-alpha.4`. It includes the
+Track-A force completion, complete finite-`q` multi-sector `J2` and verified
+constraint-induced quartic Schur functional, together with the earlier
+finite-`q`, low-`q`, cubic, quartic and nonlinear-action provenance audits.
+Earlier releases remain immutable under `releases/`.
 
 The scalar perturbation ADM programme has passed finite-wavenumber constraint
 elimination on the representative evolving branch. The apparent strict
@@ -38,14 +39,16 @@ orbit. At quartic order the second-order constraint source is genuinely needed
 through a Schur complement. The physical strong-coupling scale therefore still
 requires the complete gauge-regular constrained cosmological `2-to-2`
 amplitude. The exact nonlinear `g+U+Phi+alignment` ADM parent block now has
-verified FRW and finite-`q` quadratic provenance. The full cosmological `J2`
-is not yet assembled. Track A now adopts the rest-space Laplacian
+verified FRW and finite-`q` quadratic provenance. Track A adopts the rest-space
+Laplacian
 `D_mu D^mu psi` and retains exact `Y^(3/2)` for a declared local
 nonzero-gradient perturbative force analysis. The homogeneous zero-gradient
-force action is verified through direct quartic order and its lapse/shift `J2`
-component is derived, but the complete multi-sector source and physical
-amplitude remain open. These bounded results do not establish full
-perturbative stability, observational viability, or a completed cosmology.
+force action is verified through direct quartic order. Its source combines
+with the parent block to give the complete finite-`q` multi-sector `J2` and
+the exact constraint-induced quartic Schur functional. The direct contact
+action, physical eigenmode projection and gauge-regular amplitude remain
+open. These bounded results do not establish full perturbative stability,
+observational viability, or a completed cosmology.
 
 ## Repository rules for recovery work
 

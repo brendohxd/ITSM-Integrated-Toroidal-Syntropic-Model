@@ -515,3 +515,29 @@ shift source and exact `Y^(3/2)` supplies no `J2` term at zero gradient.
 `g+U+Phi+alignment+psi` source is not yet assembled, and the non-analytic local
 force amplitude, quartic Schur complement, physical eigenmode projection and
 cutoff remain open. UVIR-003 remains in progress and MAT-001 remains blocked.
+
+## 2026-07-29 - Complete finite-q J2 and quartic Schur block
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Source assembly:** expanded the fixed nonlinear
+`gravity+aether+condensate+alignment` ADM parent action to the quadratic
+lapse/scalar-shift source and combined it with the Track-A force component.
+The linear terms regress exactly to the previous finite-`q` `J1` in the
+`(delta_N,Sigma=q_phys^2 beta)` convention.
+
+**Complete result:** derived the full `J2_N` and `J2_Sigma` for
+`q_phys>0`. The latter is a finite-wavenumber inverse-Laplacian convolution,
+as required by the normalized scalar shift. The exact zero-gradient
+`Y^(3/2)` source remains zero under the declared Track-A rule.
+
+**Quartic constraint block:** inverted the exact `2x2` constraint matrix and
+verified both by matrix multiplication and direct completion of the square
+that second-order constraint elimination contributes
+`-J2^T C^(-1)J2/2`.
+
+**Decision:** record `PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR`. The direct
+multi-sector quartic contact action, physical scalar eigenmode projection,
+gauge-regular cosmological `2-to-2` amplitude, unitarity criterion and
+nonzero-gradient exact-`Y` reduction remain open. UVIR-003 remains in progress
+and MAT-001 remains blocked.

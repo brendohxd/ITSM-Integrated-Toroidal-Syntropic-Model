@@ -282,10 +282,18 @@ zero-gradient force action is verified through direct quartic order and its
 lapse/shift `J2` component is derived**. The temporal `Q^2` term supplies lapse
 and scalar-shift sources, the adopted regulator supplies a lapse source only,
 and exact `Y^(3/2)` is constraint independent at cubic amplitude order on
-this background. The complete multi-sector `J2` is not yet assembled and the
-non-analytic physical force amplitude remains assigned to the separate
-nonzero-gradient local calculation. See
+this background. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md`.
+
+UVIR-003 Stage-B complete finite-`q` source result (2026-07-29): **the
+multi-sector `J2` and constraint-induced quartic Schur functional are
+assembled and verified for `q_phys>0`**. The exact nonlinear parent action
+regresses to the previous `J1`, combines with the Track-A force component and
+gives `-J2^T C^(-1)J2/2`. The inverse-Laplacian shift representation does not
+alter the homogeneous gauge-orbit result. Direct multi-sector quartic contact
+terms, physical eigenmode projection, the gauge-regular `2-to-2` amplitude
+and the separate nonzero-gradient exact-`Y` calculation remain open. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_COMPLETE_J2_SCHUR.md`.
 
 ### MAT-001 -- Matter coupling and `C_proj`
 

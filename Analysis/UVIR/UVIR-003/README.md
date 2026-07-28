@@ -210,5 +210,26 @@ quartic ADM order on the homogeneous zero-gradient FRW branch. It verifies the
 force contribution to the quadratic lapse/shift source: `Q^2` supplies lapse
 and scalar-shift terms, the regulator supplies a lapse term only, and exact
 `Y^(3/2)` supplies no `J2` term at the zero-gradient origin. The result is
-`PASS_FORCE_SECTOR_J2_COMPONENT`; the complete multi-sector `J2`, physical
-amplitude and cutoff remain open.
+`PASS_FORCE_SECTOR_J2_COMPONENT`.
+
+## Complete finite-q J2 and Schur block
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_full_j2_schur.py
+```
+
+This expands the fixed nonlinear parent action and combines its
+`gravity+aether+condensate+alignment` source with the Track-A force result. It
+regresses exactly to the previous finite-`q` linear source, assembles the
+complete quadratic lapse/scalar-shift source in the
+`(delta_N, Sigma=q_phys^2 beta)` convention, and verifies the
+constraint-induced quartic functional
+`-J2^T C^(-1)J2/2`.
+
+The result is `PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR`. The inverse-Laplacian
+shift representation applies only at `q_phys>0`; the existing homogeneous
+gauge-orbit result is unchanged. The direct multi-sector quartic contact
+action, regular physical-scalar projection, cosmological `2-to-2` amplitude
+and cutoff remain open.

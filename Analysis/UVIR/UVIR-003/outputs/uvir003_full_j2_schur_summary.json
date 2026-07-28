@@ -1,0 +1,86 @@
+{
+  "calculation_status": "PASS",
+  "direct_quartic_contact_status": "NOT_YET_DERIVED",
+  "full_J2_status": "ASSEMBLED_AND_VERIFIED_AT_FINITE_Q",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "derive the direct gravity+aether+condensate+alignment cubic and quartic contact action in the same conventions",
+    "combine the direct quartic contact block with the verified constraint-induced Schur functional",
+    "project cubic and quartic interactions onto the regular physical scalar eigenmode basis",
+    "evaluate the gauge-regular cosmological 2-to-2 exchange-plus-contact amplitude and unitarity criterion"
+  ],
+  "physical_2_to_2_status": "NOT_YET_DERIVED",
+  "quartic_constraint_block_status": "ASSEMBLED_AND_VERIFIED",
+  "scientific_boundary": "The complete finite-q J2 and its quartic Schur complement are verified on the homogeneous zero-gradient force branch. This does not yet supply the direct multi-sector quartic contact action, physical eigenmode projection, 2-to-2 amplitude or cutoff. The inverse-Laplacian Sigma representation is restricted to q_phys>0; the q=0 gauge orbit is not reclassified.",
+  "stage": "B_COMPLETE_FINITE_Q_J2_AND_SCHUR",
+  "subgate_status": "PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR",
+  "symbolic_audit": {
+    "complete_J2": {
+      "beta_density_before_integration_by_parts": "2*M_cos_sq*[(R*R_dot+H*R^2/2)*D^2(beta)+(R_dot+H*R)*D_i(R)D_i(beta)]-D_i(beta)*[delta_rho_dot*D_i(delta_rho)+R*rho_dot*D_i(delta_rho)+rho^2*vartheta_dot*D_i(vartheta)+2*rho*mu*delta_rho*D_i(vartheta)+R*rho^2*mu*D_i(vartheta)+K_Q*pi_dot*D_i(pi)]",
+      "beta_symbolic_representative": "D2_beta*H*M_cos_sq*R**2 + 2*D2_beta*M_cos_sq*R*R_dot + 2*D_R*D_beta*H*M_cos_sq*R + 2*D_R*D_beta*M_cos_sq*R_dot - D_beta*D_delta_rho*R*rho_dot - D_beta*D_delta_rho*delta_rho_dot - D_beta*D_pi*K_Q*pi_dot - D_beta*D_vartheta*R*mu*rho**2 - 2*D_beta*D_vartheta*delta_rho*mu*rho - D_beta*D_vartheta*rho**2*vartheta_dot",
+      "exact_Y_three_halves_zero_gradient_J2": "0",
+      "lapse_physical_density": "3*M_cos_sq*R_dot^2+18*M_cos_sq*H*R*R_dot-2*M_P_sq*R*D^2(R)-M_P_sq*D_i(R)D_i(R)-delta_rho_dot^2/2-mu^2*delta_rho^2/2-2*rho*mu*delta_rho*vartheta_dot-rho^2*vartheta_dot^2/2-3*R*(rho_dot*delta_rho_dot+rho*mu^2*delta_rho+rho^2*mu*vartheta_dot+V_rho*delta_rho)-V_rhorho*delta_rho^2/2-[D_i(delta_rho)D_i(delta_rho)+rho^2*(1+zeta_align*rho^2)*D_i(vartheta)D_i(vartheta)]/2-K_Q*pi_dot^2/2-gamma*[D^2(pi)]^2/(2*M_star_sq)",
+      "lapse_symbolic_representative": "-(4*D2_R*M_P_sq*M_star_sq*R + D2_pi**2*gamma + 2*D_R**2*M_P_sq*M_star_sq + D_delta_rho**2*M_star_sq + D_vartheta**2*M_star_sq*rho**4*zeta_align + D_vartheta**2*M_star_sq*rho**2 - 36*H*M_cos_sq*M_star_sq*R*R_dot + K_Q*M_star_sq*pi_dot**2 - 6*M_cos_sq*M_star_sq*R_dot**2 + 6*M_star_sq*R*V_rho*delta_rho + 6*M_star_sq*R*delta_rho*mu**2*rho + 6*M_star_sq*R*delta_rho_dot*rho_dot + 6*M_star_sq*R*mu*rho**2*vartheta_dot + M_star_sq*V_rhorho*delta_rho**2 + M_star_sq*delta_rho**2*mu**2 + 4*M_star_sq*delta_rho*mu*rho*vartheta_dot + M_star_sq*delta_rho_dot**2 + M_star_sq*rho**2*vartheta_dot**2)/(2*M_star_sq)",
+      "sector_coverage": [
+        "gravity",
+        "Einstein-aether in aether-unitary gauge",
+        "canonical condensate amplitude and phase",
+        "current alignment",
+        "Track-A Q^2 force kinetic term",
+        "Track-A rest-space regulator"
+      ],
+      "sigma_physical_density": "-2*M_cos_sq*(R*R_dot+H*R^2/2)+(D^2)^(-1) D_i{2*M_cos_sq*(R_dot+H*R)*D_i R-delta_rho_dot*D_i(delta_rho)-R*rho_dot*D_i(delta_rho)-rho^2*vartheta_dot*D_i(vartheta)-2*rho*mu*delta_rho*D_i(vartheta)-R*rho^2*mu*D_i(vartheta)-K_Q*pi_dot*D_i(pi)}",
+      "status": "PASS_COMPLETE_MULTI_SECTOR_J2",
+      "zero_mode_boundary": "(D^2)^(-1) is defined only for the finite-q constraint sector; the homogeneous time-translation orbit is treated by the existing low-q gauge audit"
+    },
+    "constraint_matrix": {
+      "C": "Matrix([[C_14*q_phys**2 - 2*V, 2*H*M_cos_sq], [2*H*M_cos_sq, -D_123]])",
+      "determinant": "-C_14*D_123*q_phys**2 + 2*D_123*V - 4*H**2*M_cos_sq**2",
+      "domain": "q_phys>0 and det(C)!=0",
+      "inverse": "Matrix([[D_123/(C_14*D_123*q_phys**2 - 2*D_123*V + 4*H**2*M_cos_sq**2), 2*H*M_cos_sq/(C_14*D_123*q_phys**2 - 2*D_123*V + 4*H**2*M_cos_sq**2)], [2*H*M_cos_sq/(C_14*D_123*q_phys**2 - 2*D_123*V + 4*H**2*M_cos_sq**2), (-C_14*q_phys**2 + 2*V)/(C_14*D_123*q_phys**2 - 2*D_123*V + 4*H**2*M_cos_sq**2)]])"
+    },
+    "conventions": {
+      "constraints": [
+        "delta_N",
+        "Sigma=-D^2(beta)=q_phys^2*beta at nonzero Fourier momentum"
+      ],
+      "dynamical_fields": [
+        "R",
+        "delta_rho",
+        "vartheta",
+        "pi"
+      ],
+      "force_background": "psi_bar is homogeneous and spatially constant; exact Y^(3/2) has no zero-gradient J2 Taylor component",
+      "gauge": "U^mu=n^mu; N=1+delta_N; N_i=partial_i(beta); h_ij=a^2 exp(2R) delta_ij",
+      "spatial_derivative": "D_i is the physical derivative on the unperturbed FRW leaf"
+    },
+    "quartic_schur": {
+      "constraint_solution": "Matrix([[(-D_123*J2_N - 2*H*J2_Sigma*M_cos_sq)/(C_14*D_123*q_phys**2 - 2*D_123*V + 4*H**2*M_cos_sq**2)], [(-2*H*J2_N*M_cos_sq + J2_Sigma*(C_14*q_phys**2 - 2*V))/(C_14*D_123*q_phys**2 - 2*D_123*V + 4*H**2*M_cos_sq**2)]])",
+      "elimination_identity": "VERIFIED",
+      "expression": "(C_14*J2_Sigma**2*q_phys**2 - D_123*J2_N**2 - 4*H*J2_N*J2_Sigma*M_cos_sq - 2*J2_Sigma**2*V)/(2*(C_14*D_123*q_phys**2 - 2*D_123*V + 4*H**2*M_cos_sq**2))",
+      "functional_form": "-1/2 integral d^3k J2(-k)^T C(k)^(-1) J2(k)",
+      "status": "PASS_CONSTRAINT_INDUCED_QUARTIC_BLOCK"
+    },
+    "regressions": {
+      "finite_q_J1_lapse": "-2*D2_R*M_P_sq + 6*H*M_cos_sq*R_dot - V_rho*delta_rho - delta_rho*mu**2*rho - delta_rho_dot*rho_dot - mu*rho**2*vartheta_dot",
+      "finite_q_J1_sigma": "-2*M_cos_sq*R_dot - delta_rho*rho_dot - mu*rho**2*vartheta",
+      "status": "PASS"
+    },
+    "scientific_boundary": {
+      "derived": [
+        "complete finite-q quadratic constraint source J2",
+        "exact 2x2 finite-q constraint inverse",
+        "constraint-induced quartic Schur functional"
+      ],
+      "not_derived": [
+        "direct multi-sector quartic contact action",
+        "regular physical scalar eigenmode projection",
+        "cosmological 2-to-2 exchange-plus-contact amplitude",
+        "unitarity bound or physical cutoff",
+        "nonzero-gradient local reduction of exact Y^(3/2)"
+      ]
+    }
+  }
+}
