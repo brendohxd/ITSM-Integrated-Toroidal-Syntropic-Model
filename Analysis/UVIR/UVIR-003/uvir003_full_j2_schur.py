@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""UVIR-003 Stage B: complete finite-q J2 and quartic Schur audit.
+"""UVIR-003 Stage B: origin-linear finite-q J2 component audit.
 
 Expands the fixed gravity+aether+condensate+alignment ADM parent action and
 the adopted Track-A force action to the order needed for the quadratic
-lapse/scalar-shift source J2.  The source is written in the same
+coefficient linear in lapse/scalar shift at the constraint origin. The
+source is written in the same
 
     z = (delta_N, Sigma),  Sigma := -D^2 beta
 
@@ -11,15 +12,15 @@ finite-wavenumber convention used by ``uvir003_scalar_adm_finite_q.py``.
 Here D_i is the physical spatial derivative on the unperturbed FRW leaf.
 
 The calculation verifies that the first-order source J1 regresses exactly to
-the previous finite-q reduction, assembles the complete multi-sector J2 on
-the homogeneous zero-gradient force branch, and forms
+the previous finite-q reduction, assembles the multi-sector origin-linear
+coefficient J2_origin on the homogeneous zero-gradient force branch, and
+forms the algebraic component
 
-    -J2^T C^{-1} J2 / 2.
+    -J2_origin^T C^{-1} J2_origin / 2.
 
-This is the constraint-induced quartic block.  It is not the complete reduced
-quartic action: the direct gravity+aether+condensate+alignment contact block,
-the regular physical eigenmode projection and the 2-to-2 amplitude remain
-separate calculations.
+The later constraint-dressing audit proves this is not the complete
+second-order source: the full source is S2=partial_z L3[x,z1]. This file is
+retained to verify the origin-linear component and its algebra only.
 """
 
 from __future__ import annotations
@@ -446,7 +447,7 @@ def symbolic_audit() -> dict[str, object]:
             "finite_q_J1_sigma": str(shift_j1_sigma),
             "status": "PASS",
         },
-        "complete_J2": {
+        "origin_linear_J2": {
             "lapse_physical_density": lapse_j2_covariant,
             "lapse_symbolic_representative": str(lapse_j2),
             "beta_density_before_integration_by_parts": (
@@ -468,7 +469,7 @@ def symbolic_audit() -> dict[str, object]:
                 "Track-A rest-space regulator",
             ],
             "exact_Y_three_halves_zero_gradient_J2": "0",
-            "status": "PASS_COMPLETE_MULTI_SECTOR_J2",
+            "status": "PASS_MULTI_SECTOR_ORIGIN_LINEAR_J2_COMPONENT",
         },
         "constraint_matrix": {
             "C": str(constraint_matrix),
@@ -488,11 +489,12 @@ def symbolic_audit() -> dict[str, object]:
         },
         "scientific_boundary": {
             "derived": [
-                "complete finite-q quadratic constraint source J2",
+                "finite-q origin-linear constraint coefficient J2_origin",
                 "exact 2x2 finite-q constraint inverse",
-                "constraint-induced quartic Schur functional",
+                "origin-linear algebraic Schur component",
             ],
             "not_derived": [
+                "complete S2=partial_z L3[x,z1]",
                 "direct multi-sector quartic contact action",
                 "regular physical scalar eigenmode projection",
                 "cosmological 2-to-2 exchange-plus-contact amplitude",
@@ -509,32 +511,35 @@ def run() -> int:
     symbolic = symbolic_audit()
     summary = {
         "gate": "UVIR-003",
-        "stage": "B_COMPLETE_FINITE_Q_J2_AND_SCHUR",
+        "stage": "B_ORIGIN_LINEAR_FINITE_Q_J2_COMPONENT",
         "calculation_status": "PASS",
-        "subgate_status": "PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR",
-        "full_J2_status": "ASSEMBLED_AND_VERIFIED_AT_FINITE_Q",
-        "quartic_constraint_block_status": "ASSEMBLED_AND_VERIFIED",
-        "direct_quartic_contact_status": "NOT_YET_DERIVED",
+        "subgate_status": "PASS_ORIGIN_LINEAR_J2_COMPONENT",
+        "origin_linear_J2_status": "ASSEMBLED_AND_VERIFIED_AT_FINITE_Q",
+        "complete_S2_status": "NOT_YET_DERIVED",
+        "quartic_constraint_block_status": (
+            "PROVISIONAL_ORIGIN_LINEAR_COMPONENT"
+        ),
+        "direct_quartic_contact_status": "VERIFIED_SEPARATE_CHECKPOINT",
         "physical_2_to_2_status": "NOT_YET_DERIVED",
         "full_gate_status": "IN_PROGRESS",
         "mat001_status": "BLOCKED",
         "symbolic_audit": symbolic,
         "scientific_boundary": (
-            "The complete finite-q J2 and its quartic Schur complement are "
-            "verified on the homogeneous zero-gradient force branch. This "
-            "does not yet supply the direct multi-sector quartic contact "
-            "action, physical eigenmode projection, 2-to-2 amplitude or "
-            "cutoff. The inverse-Laplacian Sigma representation is restricted "
-            "to q_phys>0; the q=0 gauge orbit is not reclassified."
+            "The finite-q origin-linear J2 component and its algebraic Schur "
+            "functional are verified. The constraint-dressing audit shows "
+            "that the complete second-order source is instead "
+            "S2=partial_z L3[x,z1]. The inverse-Laplacian Sigma "
+            "representation remains restricted to q_phys>0 and the q=0 "
+            "gauge orbit is not reclassified."
         ),
         "next_required_calculation": [
             (
-                "derive the direct gravity+aether+condensate+alignment "
-                "cubic and quartic contact action in the same conventions"
+                "derive the full finite-q cubic constraint dependence and "
+                "evaluate S2=partial_z L3[x,z1]"
             ),
             (
-                "combine the direct quartic contact block with the verified "
-                "constraint-induced Schur functional"
+                "derive L3[x,z1] and L4[x,z1], then combine L4 with "
+                "-S2^T C^(-1) S2/2"
             ),
             (
                 "project cubic and quartic interactions onto the regular "
@@ -555,13 +560,16 @@ def run() -> int:
         handle.write("\n")
 
     print("Finite-q J1 regression: VERIFIED")
-    print("Complete multi-sector finite-q J2: VERIFIED")
-    print("Constraint-induced quartic Schur block: VERIFIED")
-    print("Direct multi-sector quartic contact: NOT_YET_DERIVED")
+    print("Multi-sector origin-linear finite-q J2: VERIFIED")
+    print("Complete S2=partial_z L3[x,z1]: NOT_YET_DERIVED")
+    print(
+        "Quartic Schur: PROVISIONAL_ORIGIN_LINEAR_COMPONENT"
+    )
+    print("Direct multi-sector x-only contact: VERIFIED_SEPARATELY")
     print("Physical 2-to-2 amplitude: NOT_YET_DERIVED")
     print("UVIR-003: IN_PROGRESS")
     print("MAT-001: BLOCKED")
-    print("STATUS: PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR")
+    print("STATUS: PASS_ORIGIN_LINEAR_J2_COMPONENT")
     return 0
 
 

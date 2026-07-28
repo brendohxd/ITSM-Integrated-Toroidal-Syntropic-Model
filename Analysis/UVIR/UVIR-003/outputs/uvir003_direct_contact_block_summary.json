@@ -1,0 +1,76 @@
+{
+  "calculation_status": "PASS",
+  "complete_finite_q_S2_status": "NOT_YET_DERIVED",
+  "constraint_dressed_contact_status": "NOT_YET_DERIVED",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "expand the complete action through quartic order while retaining terms that depend on first-order delta_N and beta",
+    "substitute z1=-C^(-1)J1 to form L3[x,z1] and L4[x,z1]",
+    "combine L4[x,z1] with -S2^T C^(-1)S2/2",
+    "project onto the regular physical scalar basis and derive the gauge-regular 2-to-2 amplitude"
+  ],
+  "origin_linear_finite_q_J2_status": "VERIFIED_PREVIOUS_CHECKPOINT",
+  "physical_2_to_2_status": "NOT_YET_DERIVED",
+  "scientific_boundary": "The complete x-only direct cubic and quartic physical-field contact blocks are verified. They are components, not the full constrained vertices. The next calculation must retain the first-order lapse/shift solution in L3[x,z1] and L4[x,z1] before combining the latter with the dressed-source Schur functional -S2^T C^(-1) S2/2.",
+  "stage": "B_DIRECT_X_ONLY_CONTACT_BLOCK",
+  "subgate_status": "PASS_X_ONLY_DIRECT_CONTACT_BLOCK",
+  "symbolic_audit": {
+    "building_blocks": {
+      "B0": "-V + mu**2*rho**2/2 + rho_dot**2/2",
+      "B1": "-V_rho*delta_rho + delta_rho*mu**2*rho + delta_rho_dot*rho_dot + mu*rho**2*vartheta_dot",
+      "B2": "-V_rhorho*delta_rho**2/2 + delta_rho**2*mu**2/2 + 2*delta_rho*mu*rho*vartheta_dot + delta_rho_dot**2/2 + rho**2*vartheta_dot**2/2",
+      "B3": "-V_rhorhorho*delta_rho**3/6 + delta_rho**2*mu*vartheta_dot + delta_rho*rho*vartheta_dot**2",
+      "B4": "-V_rhorhorhorho*delta_rho**4/24 + delta_rho**2*vartheta_dot**2/2",
+      "phase_stiffness_F0": "rho**2*(rho**2*zeta_align + 1)",
+      "phase_stiffness_F1": "4*rho**3*zeta_align + 2*rho",
+      "phase_stiffness_F2": "12*rho**2*zeta_align + 2"
+    },
+    "conventions": {
+      "background_constraints": "delta_N=0; beta=0",
+      "density": "per unperturbed physical FRW volume a^3",
+      "physical_fields": [
+        "R",
+        "delta_rho",
+        "vartheta",
+        "pi"
+      ],
+      "spatial_curvature_boundary_rule": "integral sqrt(h) M_P^2 R3/2 = integral a^3 M_P^2 exp(R) D_iR D_iR"
+    },
+    "direct_contact": {
+      "complete_L3_x0": "-A_IR*grad_pi_sq_three_halves - 27*H**2*M_cos_sq*R**3/2 - 27*H*M_cos_sq*R**2*R_dot + 3*K_Q*R*pi_dot**2/2 + M_P_sq*R*grad_R_sq - 9*M_cos_sq*R*R_dot**2 - 9*R**3*V/2 + 9*R**3*mu**2*rho**2/4 + 9*R**3*rho_dot**2/4 - 9*R**2*V_rho*delta_rho/2 + 9*R**2*delta_rho*mu**2*rho/2 + 9*R**2*delta_rho_dot*rho_dot/2 + 9*R**2*mu*rho**2*vartheta_dot/2 - 3*R*V_rhorho*delta_rho**2/2 + 3*R*delta_rho**2*mu**2/2 + 6*R*delta_rho*mu*rho*vartheta_dot + 3*R*delta_rho_dot**2/2 - R*grad_delta_rho_sq/2 - R*grad_vartheta_sq*rho**4*zeta_align/2 - R*grad_vartheta_sq*rho**2/2 + 3*R*rho**2*vartheta_dot**2/2 - V_rhorhorho*delta_rho**3/6 + delta_rho**2*mu*vartheta_dot - 2*delta_rho*grad_vartheta_sq*rho**3*zeta_align - delta_rho*grad_vartheta_sq*rho + delta_rho*rho*vartheta_dot**2 + R*gamma*lap_pi**2/(2*M_star_sq) - gamma*grad_R_dot_grad_pi*lap_pi/M_star_sq",
+      "complete_L4_x0": "-81*H**2*M_cos_sq*R**4/8 - 27*H*M_cos_sq*R**3*R_dot + 9*K_Q*R**2*pi_dot**2/4 + M_P_sq*R**2*grad_R_sq/2 - 27*M_cos_sq*R**2*R_dot**2/2 - 27*R**4*V/8 + 27*R**4*mu**2*rho**2/16 + 27*R**4*rho_dot**2/16 - 9*R**3*V_rho*delta_rho/2 + 9*R**3*delta_rho*mu**2*rho/2 + 9*R**3*delta_rho_dot*rho_dot/2 + 9*R**3*mu*rho**2*vartheta_dot/2 - 9*R**2*V_rhorho*delta_rho**2/4 + 9*R**2*delta_rho**2*mu**2/4 + 9*R**2*delta_rho*mu*rho*vartheta_dot + 9*R**2*delta_rho_dot**2/4 - R**2*grad_delta_rho_sq/4 - R**2*grad_vartheta_sq*rho**4*zeta_align/4 - R**2*grad_vartheta_sq*rho**2/4 + 9*R**2*rho**2*vartheta_dot**2/4 - R*V_rhorhorho*delta_rho**3/2 + 3*R*delta_rho**2*mu*vartheta_dot - 2*R*delta_rho*grad_vartheta_sq*rho**3*zeta_align - R*delta_rho*grad_vartheta_sq*rho + 3*R*delta_rho*rho*vartheta_dot**2 - V_rhorhorhorho*delta_rho**4/24 - 3*delta_rho**2*grad_vartheta_sq*rho**2*zeta_align - delta_rho**2*grad_vartheta_sq/2 + delta_rho**2*vartheta_dot**2/2 - R**2*gamma*lap_pi**2/(4*M_star_sq) + R*gamma*grad_R_dot_grad_pi*lap_pi/M_star_sq - gamma*grad_R_dot_grad_pi**2/(2*M_star_sq)",
+      "condensate_alignment_L3_x0": "9*R**3*(-V + mu**2*rho**2/2 + rho_dot**2/2)/2 + 9*R**2*(-V_rho*delta_rho + delta_rho*mu**2*rho + delta_rho_dot*rho_dot + mu*rho**2*vartheta_dot)/2 - R*(grad_delta_rho_sq + grad_vartheta_sq*rho**2*(rho**2*zeta_align + 1))/2 + 3*R*(-V_rhorho*delta_rho**2/2 + delta_rho**2*mu**2/2 + 2*delta_rho*mu*rho*vartheta_dot + delta_rho_dot**2/2 + rho**2*vartheta_dot**2/2) - V_rhorhorho*delta_rho**3/6 + delta_rho**2*mu*vartheta_dot - delta_rho*grad_vartheta_sq*(4*rho**3*zeta_align + 2*rho)/2 + delta_rho*rho*vartheta_dot**2",
+      "condensate_alignment_L4_x0": "27*R**4*(-V + mu**2*rho**2/2 + rho_dot**2/2)/8 + 9*R**3*(-V_rho*delta_rho + delta_rho*mu**2*rho + delta_rho_dot*rho_dot + mu*rho**2*vartheta_dot)/2 - R**2*(grad_delta_rho_sq + grad_vartheta_sq*rho**2*(rho**2*zeta_align + 1))/4 + 9*R**2*(-V_rhorho*delta_rho**2/2 + delta_rho**2*mu**2/2 + 2*delta_rho*mu*rho*vartheta_dot + delta_rho_dot**2/2 + rho**2*vartheta_dot**2/2)/2 - R*delta_rho*grad_vartheta_sq*(4*rho**3*zeta_align + 2*rho)/2 + 3*R*(-V_rhorhorho*delta_rho**3/6 + delta_rho**2*mu*vartheta_dot + delta_rho*rho*vartheta_dot**2) - V_rhorhorhorho*delta_rho**4/24 - delta_rho**2*grad_vartheta_sq*(12*rho**2*zeta_align + 2)/4 + delta_rho**2*vartheta_dot**2/2",
+      "force_L3_x0_analytic": "3*K_Q*R*pi_dot**2/2 + R*gamma*lap_pi**2/(2*M_star_sq) - gamma*grad_R_dot_grad_pi*lap_pi/M_star_sq",
+      "force_L3_x0_with_exact_IR_functional": "-A_IR*grad_pi_sq_three_halves + 3*K_Q*R*pi_dot**2/2 + R*gamma*lap_pi**2/(2*M_star_sq) - gamma*grad_R_dot_grad_pi*lap_pi/M_star_sq",
+      "force_L4_x0": "9*K_Q*R**2*pi_dot**2/4 - R**2*gamma*lap_pi**2/(4*M_star_sq) + R*gamma*grad_R_dot_grad_pi*lap_pi/M_star_sq - gamma*grad_R_dot_grad_pi**2/(2*M_star_sq)",
+      "gravity_L3_x0": "M_P_sq*R*grad_R_sq - 3*M_cos_sq*(9*H**2*R**3/2 + 9*H*R**2*R_dot + 3*R*R_dot**2)",
+      "gravity_L4_x0": "M_P_sq*R**2*grad_R_sq/2 - 3*M_cos_sq*(27*H**2*R**4/8 + 9*H*R**3*R_dot + 9*R**2*R_dot**2/2)",
+      "status": "PASS_X_ONLY_DIRECT_CONTACT_BLOCK"
+    },
+    "regressions": {
+      "Track_A_Q_squared_cubic": "3*K_Q*R*pi_dot^2/2",
+      "Track_A_Q_squared_quartic": "9*K_Q*R^2*pi_dot^2/4",
+      "Track_A_regulator_cubic": "R*gamma*lap_pi**2/(2*M_star_sq) - gamma*grad_R_dot_grad_pi*lap_pi/M_star_sq",
+      "Track_A_regulator_quartic": "-R**2*gamma*lap_pi**2/(4*M_star_sq) + R*gamma*grad_R_dot_grad_pi*lap_pi/M_star_sq - gamma*grad_R_dot_grad_pi**2/(2*M_star_sq)",
+      "status": "PASS"
+    },
+    "scientific_boundary": {
+      "derived": [
+        "complete direct L3[x,0] physical-field contact block",
+        "complete direct L4[x,0] physical-field contact block",
+        "gravity, condensate, alignment and Track-A force decomposition"
+      ],
+      "exact_Y_three_halves_rule": "retained as a classical |epsilon|^3 functional; not promoted to a homogeneous analytic cubic vertex",
+      "not_derived": [
+        "constraint-dressed L3[x,z1]",
+        "constraint-dressed direct quartic block L4[x,z1]",
+        "regular physical scalar eigenmode projection",
+        "cosmological 2-to-2 amplitude or cutoff"
+      ],
+      "required_combination": "Lred4=L4[x,z1]-S2^T*C^(-1)*S2/2"
+    }
+  }
+}

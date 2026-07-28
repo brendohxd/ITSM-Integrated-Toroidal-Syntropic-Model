@@ -212,7 +212,7 @@ and scalar-shift terms, the regulator supplies a lapse term only, and exact
 `Y^(3/2)` supplies no `J2` term at the zero-gradient origin. The result is
 `PASS_FORCE_SECTOR_J2_COMPONENT`.
 
-## Complete finite-q J2 and Schur block
+## Origin-linear finite-q J2 component
 
 Run:
 
@@ -223,13 +223,53 @@ python Analysis/UVIR/UVIR-003/uvir003_full_j2_schur.py
 This expands the fixed nonlinear parent action and combines its
 `gravity+aether+condensate+alignment` source with the Track-A force result. It
 regresses exactly to the previous finite-`q` linear source, assembles the
-complete quadratic lapse/scalar-shift source in the
+coefficient linear in lapse/scalar shift at the constraint origin in the
 `(delta_N, Sigma=q_phys^2 beta)` convention, and verifies the
-constraint-induced quartic functional
+corresponding algebraic component
 `-J2^T C^(-1)J2/2`.
 
-The result is `PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR`. The inverse-Laplacian
-shift representation applies only at `q_phys>0`; the existing homogeneous
-gauge-orbit result is unchanged. The direct multi-sector quartic contact
-action, regular physical-scalar projection, cosmological `2-to-2` amplitude
-and cutoff remain open.
+The result is `PASS_ORIGIN_LINEAR_J2_COMPONENT`. The later dressing audit
+shows that the complete second-order source is
+`S2=partial_z L3[x,z1]`; consequently the earlier Schur interpretation is
+provisional. The inverse-Laplacian shift representation still applies only
+at `q_phys>0`, and the homogeneous gauge-orbit result is unchanged.
+
+## Direct physical-field contact block
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_direct_contact_block.py
+```
+
+This expands the fixed nonlinear parent action with the lapse and scalar shift
+held at their background values. It verifies the complete constraint-free
+direct cubic and quartic physical-field components `L3[x,0]` and `L4[x,0]`
+for `x=(R,delta_rho,vartheta,pi)`, including exact regression of the Track-A
+force terms to the preceding ADM expansion.
+
+The result is `PASS_X_ONLY_DIRECT_CONTACT_BLOCK`. It is not the
+constraint-dressed `L3[x,z1]` or `L4[x,z1]`, a physical eigenmode projection,
+or a cosmological `2-to-2` amplitude. Those require substituting
+`z1=-C^(-1)J1` into every constraint-dependent cubic and quartic term and
+combining the result with `-S2^T C^(-1)S2/2`.
+
+## Constraint-dressing completeness audit
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_constraint_dressing_audit.py
+```
+
+The exact homogeneous lapse block proves that cubic constraint dependence is
+not affine. In particular,
+
+```text
+S2_N - J2_N,origin = 2 B1 delta_N1 + 3 V delta_N1^2.
+```
+
+The result is `PASS_CONSTRAINT_DRESSING_COMPLETENESS_AUDIT`. The previously
+derived `J2` and Schur expression remain verified origin-linear components,
+but the full finite-`q` calculation must derive `S2` at `z1`, all scalar-shift
+dressing, `L3[x,z1]` and `L4[x,z1]` before physical projection.

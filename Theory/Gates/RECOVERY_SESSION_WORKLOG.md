@@ -433,8 +433,8 @@ kernel vanishes: it is the homogeneous preferred-time gauge orbit and cannot
 be inverted or dropped in the flat decoupling description.
 
 **Constraint order:** quartic reduction genuinely requires the second-order
-constraint source via `Lred4=L4[x,z1]-J2^T C^(-1)J2/2`; third-order constraint
-solutions cancel at this order.
+constraint source via `Lred4=L4[x,z1]-S2^T C^(-1)S2/2`, where
+`S2=partial_z L3[x,z1]`; third-order constraint solutions cancel at this order.
 
 **Decision:** record `PASS_QUARTIC_BASIS_WITH_2_TO_2_GAUGE_HOLD`. Do not assign
 a physical cutoff. The next target is the full evolving-FRW constrained cubic
@@ -536,8 +536,60 @@ verified both by matrix multiplication and direct completion of the square
 that second-order constraint elimination contributes
 `-J2^T C^(-1)J2/2`.
 
-**Decision:** record `PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR`. The direct
+**Historical decision (superseded by the dressing audit below):** recorded `PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR`. The direct
 multi-sector quartic contact action, physical scalar eigenmode projection,
 gauge-regular cosmological `2-to-2` amplitude, unitarity criterion and
 nonzero-gradient exact-`Y` reduction remain open. UVIR-003 remains in progress
 and MAT-001 remains blocked.
+
+## 2026-07-29 - Direct physical-field contact block
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Expansion:** set the lapse and scalar shift to their background values and
+expanded the fixed nonlinear
+`gravity+aether+condensate+alignment+Track-A force` parent action through
+quartic order in `x=(R,delta_rho,vartheta,pi)`. This fixes the complete
+constraint-free direct blocks `L3[x,0]` and `L4[x,0]`.
+
+**Regression:** the gravity, condensate/alignment and Track-A force formulas
+all pass independent symbolic coefficient checks. The force terms regress
+exactly to the constraint-free part of the prior ADM expansion. Exact
+`Y^(3/2)` remains a classical `|epsilon|^3` functional rather than an analytic
+homogeneous cubic Taylor vertex.
+
+**Decision:** record `PASS_X_ONLY_DIRECT_CONTACT_BLOCK`. This is not
+`L3[x,z1]`, `L4[x,z1]`, a physical eigenmode projection or an interaction
+cutoff. The next calculation must retain all constraint-dependent cubic and
+quartic terms, substitute `z1=-C^(-1)J1`, and combine the result with the
+verified `-J2^T C^(-1)J2/2` block. UVIR-003 remains in progress and MAT-001
+remains blocked.
+
+## 2026-07-29 - Constraint-dressing completeness correction
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Audit:** expanded the exact homogeneous gravity-plus-condensate lapse
+action through quartic order while retaining the first-order lapse. The cubic
+action contains `delta_N^2 B1-delta_N^3 B0`, so it is not affine in the
+constraint.
+
+**Exact correction:** on the Friedmann background,
+
+```text
+S2_N - J2_N,origin =
+  2 B1 delta_N1 + 3 V delta_N1^2.
+```
+
+The correct general source and quartic reduction are
+
+```text
+S2 = partial_z L3[x,z1],
+L4_red = L4[x,z1] - S2^T C^(-1) S2/2.
+```
+
+**Decision:** record `PASS_CONSTRAINT_DRESSING_COMPLETENESS_AUDIT`.
+Reclassify the preceding `J2` and Schur result as a verified origin-linear
+component, not the complete second-order source or quartic constraint block.
+Complete finite-`q` scalar-shift dressing remains open. UVIR-003 remains in
+progress and MAT-001 remains blocked.

@@ -5,6 +5,29 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+### Added
+
+- Added the complete constraint-free direct cubic and quartic physical-field
+  contact blocks `L3[x,0]` and `L4[x,0]` for the fixed
+  `gravity+aether+condensate+alignment+Track-A force` action.
+- Added symbolic regressions for the gravity, condensate/alignment and Track-A
+  force components.
+
+### Corrected
+
+- Reclassified the alpha.4 finite-`q` `J2` result as the verified
+  origin-linear constraint component rather than the complete second-order
+  source. The correct source is `S2=partial_z L3[x,z1]`.
+- Reclassified `-J2^T C^(-1)J2/2` as a provisional origin-linear Schur
+  component pending the complete finite-`q` constraint dressing.
+
+### Status boundary
+
+- The constraint-dressed `L3[x,z1]` and `L4[x,z1]`, regular physical-scalar
+  projection, cosmological exchange-plus-contact amplitude and cutoff remain
+  open. Complete `S2` must include lapse and scalar-shift dressing evaluated
+  at `z1`. This checkpoint does not create a new manuscript version.
+
 ## 12.0-alpha.4 - 2026-07-29
 
 ### Added
@@ -13,10 +36,11 @@ root `CHANGELOG.md` records legacy project history.
   rest-space Laplacian identities and symbolic smoothing expansions.
 - Added the Track-A force ADM expansion through direct quartic order and the
   verified force-sector lapse/shift `J2` component.
-- Added the complete finite-`q` multi-sector `J2` derivation, including exact
-  regression to the previous linear constraint source.
-- Added the verified constraint-induced quartic Schur functional
-  `-J2^T C^(-1)J2/2`.
+- Added the finite-`q` multi-sector origin-linear `J2` derivation, initially
+  labelled as complete, including exact regression to the previous linear
+  constraint source.
+- Added the corresponding algebraic Schur component
+  `-J2_origin^T C^(-1)J2_origin/2`.
 
 ### Changed
 
@@ -32,7 +56,7 @@ root `CHANGELOG.md` records legacy project history.
 
 ### Status boundary
 
-- The complete finite-`q` constraint source and its quartic Schur block pass.
+- At release time, the finite-`q` source and Schur block were recorded as complete; this interpretation is corrected under `Unreleased`.
 - The direct quartic contact action, physical `2-to-2` amplitude, cutoff,
   nonzero-gradient exact-`Y` reduction and MAT-001 remain open.
 

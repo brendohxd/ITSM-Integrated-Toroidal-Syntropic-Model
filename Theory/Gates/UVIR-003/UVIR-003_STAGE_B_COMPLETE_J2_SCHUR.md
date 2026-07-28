@@ -1,8 +1,23 @@
-# UVIR-003 Stage B complete finite-q J2 and Schur block
+# UVIR-003 Stage B origin-linear finite-q J2 component
 
 Date: 2026-07-29  
 Branch: `recovery/v12-core-architecture`  
 Scope: homogeneous zero-gradient force branch at finite scalar momentum
+
+## Correction notice
+
+The constraint-dressing completeness audit supersedes this report's original
+interpretation. Every displayed origin-linear source formula and the algebraic
+`-J2^T C^(-1)J2/2` identity remain verified, but they are components rather
+than the complete second-order source and quartic constraint block.
+
+The correct source after first-order constraint substitution is
+
+```text
+S2 = partial_z L3[x,z] evaluated at z=-C^(-1)J1.
+```
+
+See `UVIR-003_STAGE_B_CONSTRAINT_DRESSING_AUDIT.md`.
 
 ## Decision
 
@@ -24,7 +39,7 @@ Sigma := -D^2 beta = q_phys^2 beta,
 the result is
 
 ```text
-PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR.
+HISTORICAL_STATUS_SUPERSEDED_BY_CONSTRAINT_DRESSING_AUDIT.
 ```
 
 The exact `Y^(3/2)` term has no `J2` Taylor component at the homogeneous
@@ -237,11 +252,11 @@ S4_constraint =
 Verified:
 
 - exact regression to the previous finite-`q` `J1`;
-- complete multi-sector `J2_N`;
-- complete multi-sector `J2_Sigma` for `q_phys>0`;
+- origin-linear multi-sector `J2_N`;
+- origin-linear multi-sector `J2_Sigma` for `q_phys>0`;
 - Track-A force-source regression;
 - the exact finite-`q` constraint inverse;
-- the complete constraint-induced quartic Schur functional.
+- the origin-linear algebraic quartic Schur component.
 
 Not yet derived:
 
@@ -264,12 +279,12 @@ Expected footer:
 ```text
 Finite-q J1 regression: VERIFIED
 Complete multi-sector finite-q J2: VERIFIED
-Constraint-induced quartic Schur block: VERIFIED
+Origin-linear quartic Schur component: VERIFIED
 Direct multi-sector quartic contact: NOT_YET_DERIVED
 Physical 2-to-2 amplitude: NOT_YET_DERIVED
 UVIR-003: IN_PROGRESS
 MAT-001: BLOCKED
-STATUS: PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR
+STATUS: PASS_ORIGIN_LINEAR_J2_COMPONENT
 ```
 
 Machine-readable output:
@@ -287,7 +302,7 @@ gravity + aether + condensate + alignment
 ```
 
 cubic and quartic contact actions in the same conventions. Combine the direct
-quartic block with the verified Schur functional, then project the cubic and
+quartic block with the corrected dressed-source Schur functional, then project
 quartic interactions onto the regular physical-scalar basis. Only that
 combined result can support the gauge-regular cosmological `2-to-2` amplitude
 and a physical unitarity criterion.
@@ -295,11 +310,11 @@ and a physical unitarity criterion.
 ## Status
 
 ```text
-Complete finite-q J2: ASSEMBLED_AND_VERIFIED
+Origin-linear finite-q J2: ASSEMBLED_AND_VERIFIED
 Constraint-induced quartic block: ASSEMBLED_AND_VERIFIED
 Direct multi-sector quartic contact: NOT_YET_DERIVED
 Physical 2-to-2 amplitude: NOT_YET_DERIVED
 UVIR-003: IN_PROGRESS
 MAT-001: BLOCKED
-STATUS: PASS_COMPLETE_FINITE_Q_J2_AND_SCHUR
+STATUS: PASS_ORIGIN_LINEAR_J2_COMPONENT
 ```

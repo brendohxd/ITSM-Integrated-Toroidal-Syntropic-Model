@@ -285,15 +285,29 @@ and exact `Y^(3/2)` is constraint independent at cubic amplitude order on
 this background. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md`.
 
-UVIR-003 Stage-B complete finite-`q` source result (2026-07-29): **the
-multi-sector `J2` and constraint-induced quartic Schur functional are
+UVIR-003 Stage-B origin-linear source result (2026-07-29): **the multi-sector
+constraint coefficient `J2_origin` and its algebraic Schur component are
 assembled and verified for `q_phys>0`**. The exact nonlinear parent action
-regresses to the previous `J1`, combines with the Track-A force component and
-gives `-J2^T C^(-1)J2/2`. The inverse-Laplacian shift representation does not
-alter the homogeneous gauge-orbit result. Direct multi-sector quartic contact
-terms, physical eigenmode projection, the gauge-regular `2-to-2` amplitude
+regresses to the previous `J1`, and the inverse-Laplacian shift representation
+does not alter the homogeneous gauge-orbit result.
+
+A subsequent constraint-dressing audit reclassifies the earlier "complete"
+label. The full second-order source is
+`S2=partial_z L3[x,z1]`, not generally `J2_origin`, because the exact cubic ADM
+action contains lapse-squared and lapse-cubed terms. Complete scalar-shift
+dressing, physical eigenmode projection, the gauge-regular `2-to-2` amplitude
 and the separate nonzero-gradient exact-`Y` calculation remain open. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_COMPLETE_J2_SCHUR.md`.
+
+UVIR-003 Stage-B direct-contact result (2026-07-29): **the complete
+constraint-free direct cubic and quartic physical-field blocks `L3[x,0]` and
+`L4[x,0]` are assembled and symbolically verified** for
+`x=(R,delta_rho,vartheta,pi)`. This fixes the gravity/aether, condensate,
+alignment and Track-A force contact components and regresses the force terms
+to the preceding ADM expansion. It does not yet give `L3[x,z1]`,
+`L4[x,z1]`, a regular physical-scalar projection, a cosmological `2-to-2`
+amplitude or a cutoff. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_DIRECT_CONTACT_BLOCK.md`.
 
 ### MAT-001 -- Matter coupling and `C_proj`
 

@@ -114,18 +114,19 @@ z = z1 + z2 + ...,
 z1 = -C^(-1) J1.
 ```
 
-At quartic order, the derivative of the cubic action supplies a quadratic
-constraint source `J2`. The second-order solution is
+At quartic order, the derivative of the cubic action evaluated at the
+first-order constraint solution supplies the quadratic source `S2`. The
+second-order solution is
 
 ```text
-z2 = -C^(-1) J2.
+z2 = -C^(-1) S2.
 ```
 
 Combining the quadratic and cubic contributions gives the Schur complement
 
 ```text
 Lred^(4) =
-  L4[x,z1] - J2^T C^(-1) J2/2.
+  L4[x,z1] - S2^T C^(-1) S2/2.
 ```
 
 Thus second-order lapse and shift information is genuinely required for the

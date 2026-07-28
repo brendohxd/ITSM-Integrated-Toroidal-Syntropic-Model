@@ -50,15 +50,18 @@ The manuscript intentionally distinguishes derived, conditional, open, and
 rejected claims. `13/12`, `H0=72.97`, automatic Solar-System compliance, and
 the historical SPARC `p=0.62` are not live predictions in this draft.
 
-Release `12.0-alpha.4` records the Track-A regulator selection, the complete
+Release `12.0-alpha.4` records the Track-A regulator selection, the
 homogeneous zero-gradient force action through direct quartic order, and the
-assembled finite-`q` multi-sector `J2`. The source regresses exactly to the
-previous linear constraint system and yields the verified
-`-J2^T C^(-1)J2/2` quartic Schur functional. The inverse-Laplacian shift
-representation is restricted to `q_phys>0`; the homogeneous gauge-orbit
-result is unchanged.
+finite-`q` coefficient linear in lapse/scalar shift at the constraint origin.
+A subsequent dressing audit corrected the interpretation: this `J2_origin`
+and `-J2_origin^T C^(-1)J2_origin/2` are verified components, not the complete
+second-order source and quartic constraint correction.
 
-The direct multi-sector cubic and quartic contact actions, regular
-physical-scalar projection, gauge-regular constrained `2-to-2` amplitude,
-physical cutoff and local nonzero-gradient exact-`Y` reduction remain open.
-UVIR-003 is in progress and MAT-001 remains blocked.
+The correct source is `S2=partial_z L3[x,z1]`, with
+`z1=-C^(-1)J1`. The inverse-Laplacian shift representation remains restricted
+to `q_phys>0`; the homogeneous gauge-orbit result is unchanged.
+
+The complete finite-`q` constraint dressing, regular physical-scalar
+projection, gauge-regular constrained `2-to-2` amplitude, physical cutoff and
+local nonzero-gradient exact-`Y` reduction remain open. UVIR-003 is in
+progress and MAT-001 remains blocked.

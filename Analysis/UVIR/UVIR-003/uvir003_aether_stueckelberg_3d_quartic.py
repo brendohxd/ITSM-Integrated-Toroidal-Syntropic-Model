@@ -494,17 +494,17 @@ def elastic_contact_identity(
         ),
     }
 def quartic_constraint_identity() -> dict[str, str]:
-    c, j2, z2 = sp.symbols("C J_2 z_2", nonzero=True)
-    quartic_constraint_terms = c * z2**2 / 2 + j2 * z2
-    reduced = sp.expand(quartic_constraint_terms.subs(z2, -j2 / c))
+    c, s2, z2 = sp.symbols("C S_2 z_2", nonzero=True)
+    quartic_constraint_terms = c * z2**2 / 2 + s2 * z2
+    reduced = sp.expand(quartic_constraint_terms.subs(z2, -s2 / c))
     require_zero(
         "quartic second-order constraint Schur complement",
-        reduced + j2**2 / (2 * c),
+        reduced + s2**2 / (2 * c),
     )
     return {
-        "second_order_solution": "z2=-C^{-1}J2",
+        "second_order_solution": "z2=-C^{-1}S2",
         "reduced_quartic_action": (
-            "L_reduced^(4)=L4[x,z1]-J2^T*C^{-1}*J2/2"
+            "L_reduced^(4)=L4[x,z1]-S2^T*C^{-1}*S2/2"
         ),
         "third_order_solution": "not required at quartic order",
         "scope": (
