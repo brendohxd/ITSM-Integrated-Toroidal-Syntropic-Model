@@ -180,9 +180,16 @@ The constraint-dressing audit reclassifies this coefficient as
 `S2=partial_z L3[x,z1]`; the associated quartic correction is
 `-S2^T C^(-1)S2/2`. The origin-linear formulas remain verified components.
 This result is restricted to `q_phys>0` and does not reclassify the
-homogeneous gauge orbit. Complete scalar-shift dressing, physical scalar
-projection, gauge-regular amplitude, physical cutoff and global
-multicone-causality testing remain open.
+homogeneous gauge orbit. The generic three-dimensional gravity/aether
+constraint density and its nonlinear lapse/shift functional operators are now
+verified at `q_phys>0`. Adding the condensate temporal shift-advection
+operators completes the multi-sector finite-`q` `S2`; the Track-A force cubic
+block is affine in the constraints and therefore adds no nonlinear correction
+beyond `J2_origin`. The complete generic `L4[x,z1]` contact and reduced
+quartic functionals are also assembled. The basis
+`(Xi,Q_rho,Q_chi)` has a finite positive low-`q` kinetic limit, with no
+exactly homogeneous `Xi` mode. Explicit vertex projection, the gauge-regular
+amplitude, physical cutoff and global multicone-causality testing remain open.
 
 ### 3.4 Infrared phonon sector
 

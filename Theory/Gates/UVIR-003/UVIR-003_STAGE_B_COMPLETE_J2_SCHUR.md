@@ -294,6 +294,11 @@ Analysis/UVIR/UVIR-003/outputs/uvir003_full_j2_schur_summary.json
 ```
 
 ## 8. Next bounded calculation
+Superseding checkpoint: the complete dressed source and corrected Schur
+functional are now recorded in
+`UVIR-003_STAGE_B_COMPLETE_S2_OPERATOR.md`. The `J2_origin` result below
+remains a verified component rather than the complete source.
+
 
 Derive the direct
 

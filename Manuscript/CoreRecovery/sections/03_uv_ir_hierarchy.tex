@@ -615,13 +615,13 @@ $J_2$ there is zero; this does not make it an analytic three-point vertex.
 The force component passes and can therefore be combined with the fixed
 nonlinear parent block.
 
-\subsection{Complete finite-wavenumber constraint source}
+\subsection{Origin-linear and dressed finite-wavenumber sources}
 
 Let $M=M_{\rm cos}^2$ and let $D_i$ denote the physical derivative on the
-unperturbed FRW leaf.  Expanding the complete parent action and using the
-Friedmann equation gives the lapse component
+unperturbed FRW leaf.  The coefficient linear in the constraints at their
+origin is a verified component of the second-order source.  Its lapse part is
 \begin{align}
- J_{2,N}={}&3M\dot{\mathcal R}^{\,2}
+ J_{2,N}^{\rm origin}={}&3M\dot{\mathcal R}^{\,2}
  +18MH\mathcal R\dot{\mathcal R}
  -2M_P^2\mathcal R D^2\mathcal R
  -M_P^2D_i\mathcal R D_i\mathcal R \nonumber\\
@@ -641,7 +641,7 @@ Friedmann equation gives the lapse component
 \end{align}
 With $\Sigma=-D^2\beta=q_{\rm phys}^2\beta$, the shift component is
 \begin{align}
- J_{2,\Sigma}={}&-2M\left(\mathcal R\dot{\mathcal R}
+ J_{2,\Sigma}^{\rm origin}={}&-2M\left(\mathcal R\dot{\mathcal R}
  +\frac12H\mathcal R^2\right)+(D^2)^{-1}D_iW_i,
  \label{eq:complete-j2-shift}\\
  W_i={}&2M(\dot{\mathcal R}+H\mathcal R)D_i\mathcal R
@@ -652,28 +652,88 @@ With $\Sigma=-D^2\beta=q_{\rm phys}^2\beta$, the shift component is
  -\mathcal R\varrho^2\mu D_i\vartheta
  -K_Q\dot\pi D_i\pi .
 \end{align}
-The linear terms of the same expansion regress exactly to the previously
-verified $J_1$.  The inverse Laplacian in
+The inverse Laplacian in
 Eq.~\eqref{eq:complete-j2-shift} is defined only at
 $q_{\rm phys}>0$, the domain in which $\Sigma$ is an independent constraint;
 it does not alter the homogeneous gauge-orbit result.
 
-Writing
+The origin-linear coefficient is not the complete source because the cubic
+ADM action contains nonlinear lapse and scalar-shift dependence.  With
+$z_1=-C^{-1}J_1$, the correct functional is
 \begin{equation}
- \mathcal D=C_{14}D_{123}q_{\rm phys}^2-2D_{123}V+4M^2H^2,
+ S_2=\left.\frac{\partial L_3[x,z]}{\partial z}\right|_{z=z_1}
+ =J_2^{\rm origin}+\Delta S_2^{(g+U)}+\Delta S_2^{(\Phi)} .
+ \label{eq:complete-dressed-s2}
 \end{equation}
-direct completion of the square gives
+The generic gravity--aether term retains all Hessian,
+$D_i\mathcal R D_i\beta$ and lapse-gradient contractions.  The condensate
+term includes temporal lapse and shift advection.  The Track-A force cubic
+block is affine in the constraints, so it adds no nonlinear correction beyond
+$J_2^{\rm origin}$ on the declared homogeneous zero-gradient branch.
+
+The complete generic fourth-order contact functional has also been expanded
+at $z_1$.  Eliminating the second-order constraints therefore gives
 \begin{equation}
- \mathcal L_{4,\rm constraint}
- =\frac{(C_{14}q_{\rm phys}^2-2V)J_{2,\Sigma}^2
- -D_{123}J_{2,N}^2-4MHJ_{2,N}J_{2,\Sigma}}{2\mathcal D}
- =-\frac12J_2^{\mathsf T}C^{-1}J_2 .
- \label{eq:complete-j2-schur}
+ \mathcal L_{\rm red}^{(4)}
+ =L_4[x,z_1]-\frac12S_2^{\mathsf T}C^{-1}S_2 .
+ \label{eq:complete-s2-schur}
 \end{equation}
-Thus the complete finite-$q$ source and constraint-induced quartic functional
-pass.  Equation~\eqref{eq:complete-j2-schur} is not the complete quartic
-action: the direct multi-sector contact block, regular physical-scalar
-projection and gauge-regular $2\!\to\!2$ amplitude remain open.
+This supersedes the provisional expression using $J_2^{\rm origin}$ alone.
+The complete $S_2$, generic $L_4[x,z_1]$ contact and reduced quartic
+functional pass at $q_{\rm phys}>0$.  This is still an unprojected functional,
+not a physical scattering amplitude.
+
+\subsection{Regular finite-wavenumber physical basis}
+
+The homogeneous time-shift orbit can be separated from the finite-wavenumber
+preferred-time gradient by defining
+\begin{equation}
+ \Xi=\frac{q_{\rm phys}}{H}\mathcal R,\qquad
+ Q_\rho=\delta\rho-\frac{\dot\rho}{H}\mathcal R,\qquad
+ Q_\chi=\rho\left(\vartheta-\frac{\mu}{H}\mathcal R\right).
+ \label{eq:physical-scalar-basis}
+\end{equation}
+For $q_{\rm phys}>0$ the inverse map is
+\begin{equation}
+ \mathcal R=\frac{H}{q_{\rm phys}}\Xi,\quad
+ \delta\rho=Q_\rho+\frac{\dot\rho}{q_{\rm phys}}\Xi,\quad
+ \vartheta=\frac{Q_\chi}{\rho}+\frac{\mu}{q_{\rm phys}}\Xi .
+ \label{eq:physical-scalar-inverse}
+\end{equation}
+The first column is the time-shift vector
+$(H,\dot\rho,\mu)^{\mathsf T}/q_{\rm phys}$.  It converts the verified
+$q_{\rm phys}^2$ kinetic collapse into a finite gradient-mode normalization
+without introducing an exactly homogeneous $\Xi$ degree of freedom.
+
+If $T$ denotes Eq.~\eqref{eq:physical-scalar-inverse}, the transformed
+determinant is
+\begin{equation}
+ \det K_{\rm phys}
+ =\frac{2MH^2(2M-3D_{123})C_{14}}
+ {C_{14}D_{123}q_{\rm phys}^2-2D_{123}V+4M^2H^2}.
+ \label{eq:physical-scalar-determinant}
+\end{equation}
+It has a finite nonzero on-shell limit as $q_{\rm phys}\to0$.  A scan of
+801 background times and 49 logarithmic wavenumbers over
+$10^{-3}\le q_{\rm phys}/H\le10^3$ finds three positive and no negative
+eigenvalues in all 39,249 transformed matrices.  At exactly zero momentum
+$\Xi$ is absent, while $(Q_\rho,Q_\chi)$ reduce to the previously verified
+two-dimensional homogeneous physical block.
+
+For fixed comoving momentum, $\dot q_{\rm phys}=-Hq_{\rm phys}$, so vertex
+projection uses $\dot y=T\dot p+\dot T p$.  Cubic and quartic momentum-space
+kernels must be transformed leg by leg:
+\begin{align}
+ V^{\rm phys}_{abc}&=
+ T^i{}_a(k_1)T^j{}_b(k_2)T^k{}_c(k_3)V_{ijk},\nonumber\\
+ W^{\rm phys}_{abcd}&=
+ T^i{}_a(k_1)T^j{}_b(k_2)T^k{}_c(k_3)T^\ell{}_d(k_4)W_{ijk\ell}.
+ \label{eq:physical-vertex-projection}
+\end{align}
+The basis and projection map pass.  The explicit projected kernels,
+gauge-regular exchange-plus-contact amplitude and unitarity scale remain open;
+in particular, a homogeneous internal channel may not be inverted as an
+$\Xi$ propagator.
 
 \subsection{Causality and cutoff status}
 

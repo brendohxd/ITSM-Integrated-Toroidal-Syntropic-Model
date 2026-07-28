@@ -309,7 +309,54 @@ to the preceding ADM expansion. It does not yet give `L3[x,z1]`,
 amplitude or a cutoff. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_DIRECT_CONTACT_BLOCK.md`.
 
+UVIR-003 Stage-B scalar-shift dressing result (2026-07-29): **the exact
+gravity/aether soft-curvature shift channel is verified at `q_phys>0`**.
+The calculation substitutes `z1=-C^(-1)J1`, derives nonzero nonlinear
+corrections to both `S2_N` and `S2_Sigma`, and generates `L3[x,z1]` and
+`L4[x,z1]` for that declared channel. It does not yet provide the generic
+non-collinear three-momentum kernel, arbitrary `D_iR D_i beta` contractions,
+or condensate/Track-A force shift-advection dressing. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_SCALAR_SHIFT_DRESSING.md`.
+
+UVIR-003 Stage-B generic shift-kernel result (2026-07-29): **the complete
+three-dimensional gravity/aether cubic constraint density and functional
+dressing operators are verified at `q_phys>0`**. The derivation retains the
+generic Hessian, conformal-gradient and lapse-gradient structures, separates
+the origin-linear source from nonlinear constraint degree, and regresses
+exactly to the preceding soft-curvature channel. Complete finite-`q` `S2`
+still requires condensate and Track-A force shift-advection. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_GENERIC_SHIFT_KERNEL.md`.
+UVIR-003 Stage-B complete-source result (2026-07-29): **the complete
+multi-sector finite-`q` functional source
+`S2=partial_z L3[x,z1]` is assembled and verified at `q_phys>0`**. The result
+combines the origin-linear source, generic gravity/aether nonlinear dressing
+and condensate temporal lapse/shift-advection. The Track-A force cubic block
+is affine in the constraints and contributes no additional nonlinear
+dressing. The corrected Schur functional is `-S2^T C^(-1)S2/2`. Complete
+generic `L4[x,z1]`, physical projection, amplitude and cutoff remain open. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_COMPLETE_S2_OPERATOR.md`.
+
+UVIR-003 Stage-B complete-quartic result (2026-07-29): **the complete generic
+`L4[x,z1]` contact functional and reduced quartic functional are assembled at
+`q_phys>0`**. The result covers gravity/aether, condensate/alignment and the
+homogeneous zero-gradient Track-A force branch, and regresses to both the
+direct and soft-curvature calculations. Physical-mode projection, the
+gauge-regular amplitude and cutoff remain open. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_COMPLETE_L4_CONTACT.md`.
+
+
+
+
 ### MAT-001 -- Matter coupling and `C_proj`
+UVIR-003 Stage-B physical-basis result (2026-07-29): **the finite-`q` basis
+`(Xi,Q_rho,Q_chi)` and leg-wise vertex-projection map are verified**. The
+transformed kinetic matrix has a finite positive low-`q` limit over the
+validated representative domain, while the exactly homogeneous `Xi` mode is
+excluded as gauge. Explicit momentum-space vertex projection, the
+exchange-plus-contact amplitude and cutoff remain open. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_PHYSICAL_SCALAR_BASIS.md`.
+
+
 
 Derive the baryon--phonon vertex and calculate the observable Wilson
 coefficient. The geometric `2/3` trace ratio is an input motivation, not the

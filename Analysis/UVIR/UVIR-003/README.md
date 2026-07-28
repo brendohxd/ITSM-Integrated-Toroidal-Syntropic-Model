@@ -273,3 +273,95 @@ The result is `PASS_CONSTRAINT_DRESSING_COMPLETENESS_AUDIT`. The previously
 derived `J2` and Schur expression remain verified origin-linear components,
 but the full finite-`q` calculation must derive `S2` at `z1`, all scalar-shift
 dressing, `L3[x,z1]` and `L4[x,z1]` before physical projection.
+
+## Finite-q scalar-shift dressing sub-block
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_scalar_shift_dressing.py
+```
+
+This derives the exact gravity/aether extrinsic-curvature block through
+quartic order for a nonzero-momentum scalar shift with one homogeneous soft
+curvature leg. It verifies the nonlinear corrections to both `S2_N` and
+`S2_Sigma` after substituting the finite-`q` solution `z1=-C^(-1)J1`.
+
+The result is `PASS_SOFT_CURVATURE_SHIFT_DRESSING_SUBBLOCK`. It fixes a
+genuine part of `L3[x,z1]` and `L4[x,z1]`, but it is not the complete
+non-collinear three-momentum kernel. Generic `D_iR D_i beta` terms plus
+condensate and Track-A force shift-advection dressing remain open. The
+homogeneous gauge-orbit classification is unchanged.
+
+## Generic gravity/aether scalar-shift kernel
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_generic_shift_kernel.py
+```
+
+This removes the soft-curvature restriction and retains the full
+three-dimensional conformal-ADM structures `D_iD_j beta`,
+`D_iR D_j beta`, `D_iR D_i beta`, and `(D delta_N)^2`. Constraint-degree
+bookkeeping separates `J2_origin` from the nonlinear density contributing to
+`S2=partial_z L3[x,z1]`.
+
+The result is `PASS_GENERIC_GRAVITY_AETHER_SHIFT_DRESSING_KERNEL`. The generic
+lapse and beta functional operators regress exactly to the verified soft
+channel. Complete finite-`q` `S2` still requires condensate temporal
+shift-advection and Track-A force shift-advection before the corrected Schur
+functional and physical projection can be assembled.
+
+## Complete finite-q S2 functional
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_complete_s2_operator.py
+```
+
+This adds the condensate temporal lapse/shift-advection dressing to the
+generic gravity/aether operators and audits the Track-A force cubic block.
+The force dependence is affine in lapse and scalar shift, so it contributes
+no nonlinear correction beyond its verified `J2_origin` component.
+
+The result is `PASS_COMPLETE_FINITE_Q_S2_FUNCTIONAL`. The complete
+multi-sector source `S2=partial_z L3[x,z1]` and corrected Schur functional
+`-S2^T C^(-1)S2/2` are assembled at `q_phys>0`. Complete generic
+`L4[x,z1]`, physical scalar projection, the exchange-plus-contact amplitude,
+and a physical cutoff remain open.
+
+## Complete generic L4 contact functional
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_complete_l4_contact.py
+```
+
+This expands every fixed sector through fourth order while retaining the
+generic first-order lapse and scalar shift `z1=-C^(-1)J1`. It verifies exact
+regression to the direct `L4[x,0]` block and the soft-curvature shift channel.
+
+The result is `PASS_COMPLETE_GENERIC_L4_X_Z1_CONTACT`. Combined with the
+complete `S2`, the reduced quartic functional is assembled. Physical scalar
+projection, the gauge-regular exchange-plus-contact amplitude, and a
+physical cutoff remain open.
+
+## Regular finite-q physical scalar basis
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_physical_scalar_basis.py
+```
+
+This introduces `Xi=(q_phys/H)R` and the gauge-invariant matter variables
+`Q_rho` and `Q_chi`. The transformed kinetic matrix has a finite positive
+low-`q` limit over the validated domain, while the exactly homogeneous `Xi`
+mode remains excluded as the time-translation gauge orbit.
+
+The result is `PASS_REGULAR_FINITE_Q_PHYSICAL_SCALAR_BASIS`. The leg-wise
+cubic/quartic projection map is fixed, but projected momentum-space kernels,
+the exchange-plus-contact amplitude, and a physical cutoff remain open.

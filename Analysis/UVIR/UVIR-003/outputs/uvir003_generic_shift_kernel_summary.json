@@ -1,0 +1,73 @@
+{
+  "calculation_status": "PASS",
+  "complete_finite_q_S2_status": "NOT_YET_DERIVED",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "gravity_aether_generic_S2_status": "ASSEMBLED_AND_VERIFIED",
+  "mat001_status": "BLOCKED",
+  "matter_force_shift_advection_status": "NOT_YET_DERIVED",
+  "next_required_calculation": [
+    "derive condensate temporal shift-advection dressing at z1",
+    "derive Track-A force shift-advection dressing at z1",
+    "combine all sectors into complete finite-q S2 and -S2^T C^(-1)S2/2",
+    "project onto the regular physical scalar basis"
+  ],
+  "physical_2_to_2_status": "NOT_YET_DERIVED",
+  "scientific_boundary": "The generic real-space gravity/aether nonlinear constraint density and its lapse/shift functional dressing operators are verified at finite q. Complete S2 still requires condensate and Track-A force shift-advection sectors before physical projection.",
+  "stage": "B_GENERIC_GRAVITY_AETHER_SHIFT_KERNEL",
+  "subgate_status": "PASS_GENERIC_GRAVITY_AETHER_SHIFT_DRESSING_KERNEL",
+  "symbolic_audit": {
+    "conventions": {
+      "density": "per unperturbed physical FRW volume a^3",
+      "derivatives": "D_i are physical background-leaf derivatives",
+      "domain": "finite-q scalar constraint sector; q_phys>0",
+      "gauge": "U^mu=n^mu; N=1+delta_N; N_i=D_i beta; h_ij=a^2 exp(2R) delta_ij"
+    },
+    "cubic_action": {
+      "L2": "C_14*D_delta_N_sq/2 + D2_beta**2*D_123/4 - D2_beta**2*M_cos_sq/2 + 2*D2_beta*H*M_cos_sq*R - 2*D2_beta*H*M_cos_sq*delta_N + 2*D2_beta*M_cos_sq*R_dot - 3*D_123*Dij_beta_sq/4 + 2*D_R_dot_D_beta*H*M_cos_sq + Dij_beta_sq*M_cos_sq/2 - 27*H**2*M_cos_sq*R**2/2 + 9*H**2*M_cos_sq*R*delta_N - 3*H**2*M_cos_sq*delta_N**2 - 18*H*M_cos_sq*R*R_dot + 6*H*M_cos_sq*R_dot*delta_N - 3*M_cos_sq*R_dot**2",
+      "L3_complete_gravity_aether": "C_14*D_delta_N_sq*R/2 - C_14*D_delta_N_sq*delta_N/2 - D2_beta**2*D_123*R/4 - D2_beta**2*D_123*delta_N/4 + D2_beta**2*M_cos_sq*R/2 + D2_beta**2*M_cos_sq*delta_N/2 - D2_beta*D_123*D_R_dot_D_beta + D2_beta*H*M_cos_sq*R**2 - 2*D2_beta*H*M_cos_sq*R*delta_N + 2*D2_beta*H*M_cos_sq*delta_N**2 + 2*D2_beta*M_cos_sq*R*R_dot - 2*D2_beta*M_cos_sq*R_dot*delta_N + 3*D_123*Dij_beta_Di_R_Dj_beta + 3*D_123*Dij_beta_sq*R/4 + 3*D_123*Dij_beta_sq*delta_N/4 + 2*D_R_dot_D_beta*H*M_cos_sq*R - 2*D_R_dot_D_beta*H*M_cos_sq*delta_N + 2*D_R_dot_D_beta*M_cos_sq*R_dot - 2*Dij_beta_Di_R_Dj_beta*M_cos_sq - Dij_beta_sq*M_cos_sq*R/2 - Dij_beta_sq*M_cos_sq*delta_N/2 - 27*H**2*M_cos_sq*R**3/2 + 27*H**2*M_cos_sq*R**2*delta_N/2 - 9*H**2*M_cos_sq*R*delta_N**2 + 3*H**2*M_cos_sq*delta_N**3 - 27*H*M_cos_sq*R**2*R_dot + 18*H*M_cos_sq*R*R_dot*delta_N - 6*H*M_cos_sq*R_dot*delta_N**2 - 9*M_cos_sq*R*R_dot**2 + 3*M_cos_sq*R_dot**2*delta_N",
+      "L3_direct_x0": "-27*H**2*M_cos_sq*R**3/2 - 27*H*M_cos_sq*R**2*R_dot - 9*M_cos_sq*R*R_dot**2",
+      "L3_nonlinear_constraint_dressing": "(2*C_14*D_delta_N_sq*R - 2*C_14*D_delta_N_sq*delta_N - D2_beta**2*D_123*R - D2_beta**2*D_123*delta_N + 2*D2_beta**2*M_cos_sq*R + 2*D2_beta**2*M_cos_sq*delta_N - 4*D2_beta*D_123*D_R_dot_D_beta - 8*D2_beta*H*M_cos_sq*R*delta_N + 8*D2_beta*H*M_cos_sq*delta_N**2 - 8*D2_beta*M_cos_sq*R_dot*delta_N + 12*D_123*Dij_beta_Di_R_Dj_beta + 3*D_123*Dij_beta_sq*R + 3*D_123*Dij_beta_sq*delta_N - 8*D_R_dot_D_beta*H*M_cos_sq*delta_N - 8*Dij_beta_Di_R_Dj_beta*M_cos_sq - 2*Dij_beta_sq*M_cos_sq*R - 2*Dij_beta_sq*M_cos_sq*delta_N - 36*H**2*M_cos_sq*R*delta_N**2 + 12*H**2*M_cos_sq*delta_N**3 - 24*H*M_cos_sq*R_dot*delta_N**2)/4",
+      "L3_origin_linear_constraints": "D2_beta*H*M_cos_sq*R**2 + 2*D2_beta*M_cos_sq*R*R_dot + 2*D_R_dot_D_beta*H*M_cos_sq*R + 2*D_R_dot_D_beta*M_cos_sq*R_dot + 27*H**2*M_cos_sq*R**2*delta_N/2 + 18*H*M_cos_sq*R*R_dot*delta_N + 3*M_cos_sq*R_dot**2*delta_N",
+      "status": "PASS_GENERIC_GRAVITY_AETHER_CUBIC_CONSTRAINT_DENSITY"
+    },
+    "dressed_functional_source": {
+      "beta_hessian_sq_coefficient_at_z1": "(3*D_123 - 2*M_cos_sq)*(R + delta_N_1)/4",
+      "beta_laplacian_coefficient_at_z1": "-(D2_beta_1*D_123*R + D2_beta_1*D_123*delta_N_1 - 2*D2_beta_1*M_cos_sq*R - 2*D2_beta_1*M_cos_sq*delta_N_1 + 2*D_123*D_R_dot_D_beta_1 + 4*H*M_cos_sq*R*delta_N_1 - 4*H*M_cos_sq*delta_N_1**2 + 4*M_cos_sq*R_dot*delta_N_1)/2",
+      "beta_operator": "DeltaS2_beta=D^2(f_B)+D_iD_j[2 f_B2 B1_ij+f_W D_(iR D_j)beta1]-D_i[f_u D_iR+f_W B1_ji D_jR]",
+      "beta_u_coefficient_at_z1": "-D2_beta_1*D_123 - 2*H*M_cos_sq*delta_N_1",
+      "beta_w_coefficient_at_z1": "3*D_123 - 2*M_cos_sq",
+      "lapse_algebraic_at_z1": "-(2*C_14*D_delta_N_1_sq + D2_beta_1**2*D_123 - 2*D2_beta_1**2*M_cos_sq + 8*D2_beta_1*H*M_cos_sq*R - 16*D2_beta_1*H*M_cos_sq*delta_N_1 + 8*D2_beta_1*M_cos_sq*R_dot - 3*D_123*Dij_beta_1_sq + 8*D_R_dot_D_beta_1*H*M_cos_sq + 2*Dij_beta_1_sq*M_cos_sq + 72*H**2*M_cos_sq*R*delta_N_1 - 36*H**2*M_cos_sq*delta_N_1**2 + 48*H*M_cos_sq*R_dot*delta_N_1)/4",
+      "lapse_gradient_coefficient_at_z1": "C_14*(R - delta_N_1)/2",
+      "lapse_operator": "DeltaS2_N=lapse_algebraic-2 D_i[lapse_gradient_coefficient D_i(delta_N1)]",
+      "sigma_normalization": "DeltaS2_Sigma=-(D^2)^(-1)DeltaS2_beta for q_phys>0",
+      "status": "PASS_GENERIC_GRAVITY_AETHER_SHIFT_DRESSING_OPERATOR"
+    },
+    "regressions": {
+      "generic_to_soft_L2": "PASS",
+      "generic_to_soft_L3": "PASS",
+      "generic_to_soft_S2_N": "PASS",
+      "generic_to_soft_S2_Sigma": "PASS"
+    },
+    "scientific_boundary": {
+      "derived": [
+        "generic 3D gravity/aether cubic constraint density",
+        "origin-linear versus nonlinear constraint decomposition",
+        "lapse functional dressing operator at z1",
+        "scalar-shift functional dressing operator at z1"
+      ],
+      "not_derived": [
+        "condensate shift-advection dressing",
+        "Track-A force shift-advection dressing",
+        "complete combined finite-q S2",
+        "physical scalar projection or amplitude"
+      ]
+    },
+    "tensor_identities": {
+      "T_ij": "D_iD_j beta-D_iR D_jbeta-D_jR D_ibeta+delta_ij D_kR D_kbeta",
+      "TijTij_through_cubic": "(D_iD_j beta)^2+2[-2(D_iD_j beta)D_iR D_jbeta+(D^2 beta)D_iR D_i beta]",
+      "status": "VERIFIED_BY_CONTRACTION",
+      "trace_T": "D^2 beta+D_iR D_i beta"
+    }
+  }
+}

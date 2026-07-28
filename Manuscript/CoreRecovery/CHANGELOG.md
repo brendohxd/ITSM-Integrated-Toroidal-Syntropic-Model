@@ -12,6 +12,19 @@ root `CHANGELOG.md` records legacy project history.
   `gravity+aether+condensate+alignment+Track-A force` action.
 - Added symbolic regressions for the gravity, condensate/alignment and Track-A
   force components.
+- Added the verified finite-`q` soft-curvature scalar-shift dressing sub-block
+  and explicit nonlinear corrections to both components of `S2`.
+- Added the condensate temporal lapse/shift-advection dressing, the Track-A
+  affine-constraint audit, and the complete multi-sector finite-`q` `S2`
+  functional.
+- Added the corrected quartic Schur functional
+  `-S2^T C^(-1)S2/2`.
+- Added the complete generic `L4[x,z1]` contact functional and assembled the
+  full reduced quartic functional before physical-mode projection.
+- Added the regular finite-`q` physical-scalar basis and leg-wise interaction
+  projection map.
+- Added the generic three-dimensional gravity/aether lapse/shift dressing
+  kernel and its functional source operators at `z1`.
 
 ### Corrected
 
@@ -20,13 +33,16 @@ root `CHANGELOG.md` records legacy project history.
   source. The correct source is `S2=partial_z L3[x,z1]`.
 - Reclassified `-J2^T C^(-1)J2/2` as a provisional origin-linear Schur
   component pending the complete finite-`q` constraint dressing.
+- Updated and rebuilt the working manuscript with the corrected dressed
+  source, complete quartic functional, and regular physical-basis boundary.
 
 ### Status boundary
 
-- The constraint-dressed `L3[x,z1]` and `L4[x,z1]`, regular physical-scalar
-  projection, cosmological exchange-plus-contact amplitude and cutoff remain
-  open. Complete `S2` must include lapse and scalar-shift dressing evaluated
-  at `z1`. This checkpoint does not create a new manuscript version.
+- The complete finite-`q` `S2`, generic `L4[x,z1]`, reduced quartic
+  functional and regular physical-scalar basis are verified at `q_phys>0`.
+- Explicit projection of the momentum-space vertices, the
+  exchange-plus-contact amplitude and cutoff remain open. This checkpoint
+  does not create a new manuscript version.
 
 ## 12.0-alpha.4 - 2026-07-29
 

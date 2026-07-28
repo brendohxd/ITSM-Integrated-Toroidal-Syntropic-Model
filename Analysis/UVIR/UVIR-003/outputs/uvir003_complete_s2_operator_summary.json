@@ -1,0 +1,78 @@
+{
+  "calculation_status": "PASS",
+  "complete_L4_x_z1_status": "NOT_YET_DERIVED",
+  "complete_finite_q_S2_status": "ASSEMBLED_AND_VERIFIED",
+  "corrected_quartic_schur_status": "ASSEMBLED_AS_FUNCTIONAL_OF_COMPLETE_S2",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "derive the complete generic L4[x,z1] contact functional",
+    "combine L4[x,z1] with -S2^T C^(-1)S2/2",
+    "project cubic and quartic vertices onto physical scalar modes",
+    "evaluate the gauge-regular cosmological 2-to-2 amplitude and unitarity scale"
+  ],
+  "physical_2_to_2_status": "NOT_YET_DERIVED",
+  "scientific_boundary": "The complete multi-sector second-order constraint-source functional S2 is assembled at finite q on the homogeneous zero-gradient Track-A force branch. The corrected Schur functional now uses S2. Complete L4[x,z1], physical projection, amplitude and cutoff remain open.",
+  "stage": "B_COMPLETE_FINITE_Q_S2_OPERATOR",
+  "subgate_status": "PASS_COMPLETE_FINITE_Q_S2_FUNCTIONAL",
+  "symbolic_audit": {
+    "complete_finite_q_S2": {
+      "beta": "S2_beta=J2_beta_origin+DeltaS2_beta_gravity_aether+DeltaS2_beta_condensate",
+      "domain": "q_phys>0 and det(C)!=0",
+      "lapse": "S2_N=J2_N_origin+DeltaS2_N_gravity_aether+DeltaS2_N_condensate",
+      "quartic_schur": "-1/2 integral d^3k S2(-k)^T C(k)^(-1) S2(k)",
+      "sector_coverage": [
+        "gravity",
+        "Einstein-aether",
+        "canonical condensate amplitude and phase",
+        "current alignment",
+        "Track-A Q^2",
+        "Track-A rest-space regulator",
+        "exact Y^(3/2) under the declared zero-gradient rule"
+      ],
+      "sigma": "S2_Sigma=-(D^2)^(-1)S2_beta for q_phys>0",
+      "status": "PASS_COMPLETE_FINITE_Q_S2_FUNCTIONAL"
+    },
+    "condensate_temporal_sector": {
+      "DeltaS2_N_at_z1": "(2*D_beta_1_dot_D_delta_rho*rho_dot + 2*D_beta_1_dot_D_vartheta*mu*rho**2 + 6*R*delta_N_1*mu**2*rho**2 + 6*R*delta_N_1*rho_dot**2 - 3*delta_N_1**2*mu**2*rho**2 - 3*delta_N_1**2*rho_dot**2 + 4*delta_N_1*delta_rho*mu**2*rho + 4*delta_N_1*delta_rho_dot*rho_dot + 4*delta_N_1*mu*rho**2*vartheta_dot)/2",
+      "DeltaS2_beta_at_z1": "-D_i[delta_N1*(rho_dot*D_i(delta_rho)+rho^2*mu*D_i(vartheta))]",
+      "L3_complete": "-D_beta_dot_D_delta_rho*R*rho_dot + D_beta_dot_D_delta_rho*delta_N*rho_dot - D_beta_dot_D_delta_rho*delta_rho_dot - D_beta_dot_D_vartheta*R*mu*rho**2 + D_beta_dot_D_vartheta*delta_N*mu*rho**2 - 2*D_beta_dot_D_vartheta*delta_rho*mu*rho - D_beta_dot_D_vartheta*rho**2*vartheta_dot + 9*R**3*mu**2*rho**2/4 + 9*R**3*rho_dot**2/4 - 9*R**2*delta_N*mu**2*rho**2/4 - 9*R**2*delta_N*rho_dot**2/4 + 9*R**2*delta_rho*mu**2*rho/2 + 9*R**2*delta_rho_dot*rho_dot/2 + 9*R**2*mu*rho**2*vartheta_dot/2 + 3*R*delta_N**2*mu**2*rho**2/2 + 3*R*delta_N**2*rho_dot**2/2 - 3*R*delta_N*delta_rho*mu**2*rho - 3*R*delta_N*delta_rho_dot*rho_dot - 3*R*delta_N*mu*rho**2*vartheta_dot + 3*R*delta_rho**2*mu**2/2 + 6*R*delta_rho*mu*rho*vartheta_dot + 3*R*delta_rho_dot**2/2 + 3*R*rho**2*vartheta_dot**2/2 - delta_N**3*mu**2*rho**2/2 - delta_N**3*rho_dot**2/2 + delta_N**2*delta_rho*mu**2*rho + delta_N**2*delta_rho_dot*rho_dot + delta_N**2*mu*rho**2*vartheta_dot - delta_N*delta_rho**2*mu**2/2 - 2*delta_N*delta_rho*mu*rho*vartheta_dot - delta_N*delta_rho_dot**2/2 - delta_N*rho**2*vartheta_dot**2/2 + delta_rho**2*mu*vartheta_dot + delta_rho*rho*vartheta_dot**2",
+      "L3_direct_x0": "9*R**3*mu**2*rho**2/4 + 9*R**3*rho_dot**2/4 + 9*R**2*delta_rho*mu**2*rho/2 + 9*R**2*delta_rho_dot*rho_dot/2 + 9*R**2*mu*rho**2*vartheta_dot/2 + 3*R*delta_rho**2*mu**2/2 + 6*R*delta_rho*mu*rho*vartheta_dot + 3*R*delta_rho_dot**2/2 + 3*R*rho**2*vartheta_dot**2/2 + delta_rho**2*mu*vartheta_dot + delta_rho*rho*vartheta_dot**2",
+      "L3_nonlinear_constraint_dressing": "delta_N*(2*D_beta_dot_D_delta_rho*rho_dot + 2*D_beta_dot_D_vartheta*mu*rho**2 + 3*R*delta_N*mu**2*rho**2 + 3*R*delta_N*rho_dot**2 - delta_N**2*mu**2*rho**2 - delta_N**2*rho_dot**2 + 2*delta_N*delta_rho*mu**2*rho + 2*delta_N*delta_rho_dot*rho_dot + 2*delta_N*mu*rho**2*vartheta_dot)/2",
+      "L3_origin_linear_constraints": "-D_beta_dot_D_delta_rho*R*rho_dot - D_beta_dot_D_delta_rho*delta_rho_dot - D_beta_dot_D_vartheta*R*mu*rho**2 - 2*D_beta_dot_D_vartheta*delta_rho*mu*rho - D_beta_dot_D_vartheta*rho**2*vartheta_dot - 9*R**2*delta_N*mu**2*rho**2/4 - 9*R**2*delta_N*rho_dot**2/4 - 3*R*delta_N*delta_rho*mu**2*rho - 3*R*delta_N*delta_rho_dot*rho_dot - 3*R*delta_N*mu*rho**2*vartheta_dot - delta_N*delta_rho**2*mu**2/2 - 2*delta_N*delta_rho*mu*rho*vartheta_dot - delta_N*delta_rho_dot**2/2 - delta_N*rho**2*vartheta_dot**2/2",
+      "beta_flux_amplitude_coefficient": "delta_N_1*rho_dot",
+      "beta_flux_phase_coefficient": "delta_N_1*mu*rho**2",
+      "status": "PASS_CONDENSATE_SHIFT_ADVECTION_DRESSING"
+    },
+    "dependencies": {
+      "generic_gravity_aether_dressing": "PASS_GENERIC_GRAVITY_AETHER_SHIFT_DRESSING_OPERATOR",
+      "origin_linear_multi_sector": "PASS_MULTI_SECTOR_ORIGIN_LINEAR_J2_COMPONENT",
+      "status": "VERIFIED"
+    },
+    "scientific_boundary": {
+      "derived": [
+        "condensate nonlinear lapse/shift-advection dressing",
+        "Track-A cubic affine-constraint audit",
+        "complete multi-sector finite-q S2 functional operator",
+        "corrected quartic Schur functional in terms of S2"
+      ],
+      "not_derived": [
+        "complete generic L4[x,z1] contact functional",
+        "regular physical scalar eigenmode projection",
+        "cosmological exchange-plus-contact amplitude",
+        "physical strong-coupling scale or cutoff",
+        "nonzero-gradient exact-Y local reduction"
+      ]
+    },
+    "track_a_force_sector": {
+      "DeltaS2_at_z1_beyond_origin": "0",
+      "L3": "D2_pi**2*R*gamma/(2*M_star_sq) - D2_pi**2*delta_N*gamma/(2*M_star_sq) - D2_pi*D_R_dot_D_pi*gamma/M_star_sq - D_beta_dot_D_pi*K_Q*pi_dot + 3*K_Q*R*pi_dot**2/2 - K_Q*delta_N*pi_dot**2/2",
+      "L3_expected": "(D2_pi**2*R*gamma - D2_pi**2*delta_N*gamma - 2*D2_pi*D_R_dot_D_pi*gamma - 2*D_beta_dot_D_pi*K_Q*M_star_sq*pi_dot + 3*K_Q*M_star_sq*R*pi_dot**2 - K_Q*M_star_sq*delta_N*pi_dot**2)/(2*M_star_sq)",
+      "exact_Y_three_halves": "constraint independent at cubic amplitude order on the homogeneous zero-gradient branch",
+      "interpretation": "Track-A Q^2 and regulator cubic constraint dependence is affine; its complete S2 contribution is J2_origin",
+      "nonlinear_constraint_degree": "0",
+      "status": "PASS_FORCE_CUBIC_AFFINE_CONSTRAINT_AUDIT"
+    }
+  }
+}

@@ -593,3 +593,97 @@ Reclassify the preceding `J2` and Schur result as a verified origin-linear
 component, not the complete second-order source or quartic constraint block.
 Complete finite-`q` scalar-shift dressing remains open. UVIR-003 remains in
 progress and MAT-001 remains blocked.
+
+## 2026-07-29 - Finite-q scalar-shift dressing sub-block
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Expansion:** derived the exact gravity/aether extrinsic-curvature action
+through quartic order for a finite-`q` scalar shift with one homogeneous soft
+curvature leg. The quadratic constraint sub-matrix regresses exactly to the
+verified finite-`q` lapse/shear block.
+
+**Dressing:** substituted `z1=-C^(-1)J1` and verified explicit nonzero
+corrections to both `S2_N` and `S2_Sigma`. The declared channel now has
+symbolic `L3[x,z1]` and `L4[x,z1]` sub-blocks.
+
+**Decision:** record `PASS_SOFT_CURVATURE_SHIFT_DRESSING_SUBBLOCK`. This does
+not establish the generic non-collinear three-momentum shift kernel,
+arbitrary `D_iR D_i beta` contractions, condensate/force shift-advection,
+physical projection, amplitude or cutoff. The `q=0` gauge-orbit result is
+unchanged. UVIR-003 remains in progress and MAT-001 remains blocked.
+
+## 2026-07-29 - Generic gravity/aether shift kernel
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Tensor expansion:** retained the arbitrary three-dimensional conformal-ADM
+structures `D_iD_j beta`, `D_iR D_j beta`, `D_iR D_i beta` and
+`(D delta_N)^2` through cubic order.
+
+**Constraint dressing:** separated the direct, origin-linear and nonlinear
+constraint-degree pieces of `L3`, then derived the lapse and beta Euler
+operators at `z1`. The generic calculation regresses exactly to the preceding
+soft-curvature `L2`, `L3`, `S2_N` and `S2_Sigma` results.
+
+**Decision:** record `PASS_GENERIC_GRAVITY_AETHER_SHIFT_DRESSING_KERNEL`.
+Condensate and Track-A force shift-advection, combined complete finite-`q`
+`S2`, physical projection, amplitude and cutoff remain open. The `q=0`
+gauge-orbit result is unchanged. UVIR-003 remains in progress and MAT-001
+remains blocked.
+
+## 2026-07-29 - Complete finite-q S2 functional
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Condensate dressing:** expanded the exact temporal ADM block and derived
+the nonlinear lapse and scalar-shift advection operators at
+`z1=-C^(-1)J1`.
+
+**Force audit:** verified that the Track-A cubic force block is affine in the
+constraints. It contributes no nonlinear correction beyond its existing
+`J2_origin` component on the homogeneous zero-gradient branch.
+
+**Assembly:** combined the origin-linear source, generic gravity/aether
+dressing and condensate dressing into the complete finite-`q`
+`S2=partial_z L3[x,z1]`. The corrected constraint functional is
+`-S2^T C^(-1)S2/2`.
+
+**Decision:** record `PASS_COMPLETE_FINITE_Q_S2_FUNCTIONAL`. Complete generic
+`L4[x,z1]`, physical scalar projection, the exchange-plus-contact amplitude,
+physical cutoff and the local nonzero-gradient exact-`Y` reduction remain
+open. The `q=0` gauge-orbit result is unchanged. UVIR-003 remains in progress
+and MAT-001 remains blocked.
+
+## 2026-07-29 - Complete generic L4 contact functional
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Expansion:** retained every generic gravity/aether, condensate/alignment
+and homogeneous zero-gradient Track-A quartic term at
+`z1=-C^(-1)J1`.
+
+**Regression:** recovered the independently verified direct `L4[x,0]` and
+soft-curvature gravity/aether `L4[x,z1]` blocks exactly.
+
+**Decision:** record `PASS_COMPLETE_GENERIC_L4_X_Z1_CONTACT`. The complete
+reduced quartic functional is assembled before physical projection. The
+physical scalar basis, amplitude and cutoff remain open.
+
+## 2026-07-29 - Regular finite-q physical scalar basis
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Basis:** defined `Xi=(q_phys/H)R`,
+`Q_rho=delta_rho-(rho_dot/H)R`, and
+`Q_chi=rho[vartheta-(mu/H)R]`.
+
+**Verification:** the transformed kinetic determinant and `q_phys -> 0`
+matrix are finite and nonzero on shell. The representative scan has positive
+inertia across 39,249 matrices over `10^-3 <= q_phys/H <= 10^3`.
+
+**Projection:** fixed the time-dependent, leg-wise cubic and quartic
+projection maps. The exactly homogeneous `Xi` leg remains excluded as gauge.
+
+**Decision:** record `PASS_REGULAR_FINITE_Q_PHYSICAL_SCALAR_BASIS`. Explicit
+projected vertices, amplitude and cutoff remain open.

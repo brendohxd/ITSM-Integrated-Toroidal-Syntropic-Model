@@ -1,0 +1,61 @@
+{
+  "basis_status": "DERIVED_AND_VERIFIED",
+  "calculation_status": "PASS",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "express the complete cubic functional as momentum-space kernels",
+    "apply the leg-wise physical-basis map to cubic and quartic kernels",
+    "assemble exchange and contact contributions in a declared local adiabatic regime",
+    "test the homogeneous internal channel with the gauge-regular projection",
+    "apply a declared unitarity criterion only if the amplitude is finite"
+  ],
+  "physical_2_to_2_status": "NOT_YET_DERIVED",
+  "projected_vertex_status": "NOT_YET_EVALUATED",
+  "representative_branch": {
+    "inertia": "3_POSITIVE_0_NEGATIVE_FOR_Q_GT_0",
+    "low_q_minimum_eigenvalue_variation_ratio": 1.0361735092835214,
+    "maximum_condition_number": 12544.336319196202,
+    "minimum_eigenvalue": 7.971725044311283e-05,
+    "q0_interpretation": "Xi has no exactly homogeneous mode; Q_rho and Q_chi reduce to the verified two-dimensional q=0 physical block",
+    "q_over_H_maximum": 1000.0,
+    "q_over_H_minimum": 0.001,
+    "q_samples": 49,
+    "total_matrix_samples": 39249,
+    "trajectory_samples": 801
+  },
+  "scientific_boundary": "The finite-q physical-scalar basis has a finite positive low-q kinetic limit and excludes the exactly homogeneous Xi gauge mode. The leg-wise vertex projection map is fixed, but the projected cubic/quartic kernels and 2-to-2 amplitude have not yet been evaluated.",
+  "stage": "B_PHYSICAL_SCALAR_BASIS",
+  "subgate_status": "PASS_REGULAR_FINITE_Q_PHYSICAL_SCALAR_BASIS",
+  "symbolic_result": {
+    "field_and_velocity_map": {
+      "R": "H*Xi/q_phys",
+      "R_dot": "H*Xi_dot/q_phys+(H_dot/q_phys+H^2/q_phys)*Xi",
+      "delta_rho": "Q_rho+rho_dot*Xi/q_phys",
+      "delta_rho_dot": "Q_rho_dot+rho_dot*Xi_dot/q_phys+(rho_ddot/q_phys+H*rho_dot/q_phys)*Xi",
+      "vartheta": "Q_chi/rho+mu*Xi/q_phys",
+      "vartheta_dot": "Q_chi_dot/rho-rho_dot*Q_chi/rho^2+mu*Xi_dot/q_phys+(mu_dot/q_phys+H*mu/q_phys)*Xi"
+    },
+    "forward_map": "Matrix([[q_phys/H, 0, 0], [-rho_dot/H, 1, 0], [-mu*rho/H, 0, rho]])",
+    "inverse_map": "Matrix([[H/q_phys, 0, 0], [rho_dot/q_phys, 1, 0], [mu/q_phys, 0, 1/rho]])",
+    "physical_determinant": "-24*C_14*H**2*Lambda**2*M_cos_sq*(3*D_123 - 2*M_cos_sq)/(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)",
+    "physical_determinant_q0": "C_14*(3*D_123 - 2*M_cos_sq)*(3*Lambda**2*lambda4*rho**4 + 12*Lambda**2*m_squared*rho**2 + 12*Lambda**2*mu**2*rho**2 + 12*Lambda**2*rho_dot**2 + lambda6*rho**6)/(9*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 3*D_123*lambda6*rho**6 - 6*Lambda**2*M_cos_sq*lambda4*rho**4 - 24*Lambda**2*M_cos_sq*m_squared*rho**2 - 24*Lambda**2*M_cos_sq*mu**2*rho**2 - 24*Lambda**2*M_cos_sq*rho_dot**2 - 2*M_cos_sq*lambda6*rho**6)",
+    "physical_kinetic_matrix": "Matrix([[(-2*H**2*M_cos_sq*(-36*C_14*D_123*Lambda**2*q_phys**2 + 24*C_14*Lambda**2*M_cos_sq*q_phys**2 - 216*D_123*H**2*Lambda**2*M_cos_sq + 9*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 3*D_123*lambda6*rho**6 + 144*H**2*Lambda**2*M_cos_sq**2 - 6*Lambda**2*M_cos_sq*lambda4*rho**4 - 24*Lambda**2*M_cos_sq*m_squared*rho**2 + Lambda**2*mu**2*rho**2*(36*D_123 - 24*M_cos_sq) + Lambda**2*rho_dot**2*(36*D_123 - 24*M_cos_sq) - 2*M_cos_sq*lambda6*rho**6) + (mu**2*rho**2 + rho_dot**2)*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2 - 24*H**2*Lambda**2*M_cos_sq*(3*D_123 - 2*M_cos_sq)))/(q_phys**2*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)), D_123*rho_dot*(12*C_14*Lambda**2*q_phys**2 + 72*H**2*Lambda**2*M_cos_sq - 3*Lambda**2*lambda4*rho**4 - 12*Lambda**2*m_squared*rho**2 - 12*Lambda**2*mu**2*rho**2 - 12*Lambda**2*rho_dot**2 - lambda6*rho**6)/(q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), D_123*mu*rho*(12*C_14*Lambda**2*q_phys**2 + 72*H**2*Lambda**2*M_cos_sq - 3*Lambda**2*lambda4*rho**4 - 12*Lambda**2*m_squared*rho**2 - 12*Lambda**2*mu**2*rho**2 - 12*Lambda**2*rho_dot**2 - lambda6*rho**6)/(q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2))], [D_123*rho_dot*(12*C_14*Lambda**2*q_phys**2 + 72*H**2*Lambda**2*M_cos_sq - 3*Lambda**2*lambda4*rho**4 - 12*Lambda**2*m_squared*rho**2 - 12*Lambda**2*mu**2*rho**2 - 12*Lambda**2*rho_dot**2 - lambda6*rho**6)/(q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), (-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), 12*D_123*Lambda**2*mu*rho*rho_dot/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)], [D_123*mu*rho*(12*C_14*Lambda**2*q_phys**2 + 72*H**2*Lambda**2*M_cos_sq - 3*Lambda**2*lambda4*rho**4 - 12*Lambda**2*m_squared*rho**2 - 12*Lambda**2*mu**2*rho**2 - 12*Lambda**2*rho_dot**2 - lambda6*rho**6)/(q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), 12*D_123*Lambda**2*mu*rho*rho_dot/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), (-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)]])",
+    "physical_q0_limit": "Matrix([[C_14, 0, 0], [0, (9*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 36*D_123*Lambda**2*rho_dot**2 + 3*D_123*lambda6*rho**6 - 6*Lambda**2*M_cos_sq*lambda4*rho**4 - 24*Lambda**2*M_cos_sq*m_squared*rho**2 - 24*Lambda**2*M_cos_sq*mu**2*rho**2 - 24*Lambda**2*M_cos_sq*rho_dot**2 - 2*M_cos_sq*lambda6*rho**6)/(9*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 3*D_123*lambda6*rho**6 - 6*Lambda**2*M_cos_sq*lambda4*rho**4 - 24*Lambda**2*M_cos_sq*m_squared*rho**2 - 24*Lambda**2*M_cos_sq*mu**2*rho**2 - 24*Lambda**2*M_cos_sq*rho_dot**2 - 2*M_cos_sq*lambda6*rho**6), 36*D_123*Lambda**2*mu*rho*rho_dot/(9*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 3*D_123*lambda6*rho**6 - 6*Lambda**2*M_cos_sq*lambda4*rho**4 - 24*Lambda**2*M_cos_sq*m_squared*rho**2 - 24*Lambda**2*M_cos_sq*mu**2*rho**2 - 24*Lambda**2*M_cos_sq*rho_dot**2 - 2*M_cos_sq*lambda6*rho**6)], [0, 36*D_123*Lambda**2*mu*rho*rho_dot/(9*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 3*D_123*lambda6*rho**6 - 6*Lambda**2*M_cos_sq*lambda4*rho**4 - 24*Lambda**2*M_cos_sq*m_squared*rho**2 - 24*Lambda**2*M_cos_sq*mu**2*rho**2 - 24*Lambda**2*M_cos_sq*rho_dot**2 - 2*M_cos_sq*lambda6*rho**6), (9*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 36*D_123*Lambda**2*mu**2*rho**2 + 3*D_123*lambda6*rho**6 - 6*Lambda**2*M_cos_sq*lambda4*rho**4 - 24*Lambda**2*M_cos_sq*m_squared*rho**2 - 24*Lambda**2*M_cos_sq*mu**2*rho**2 - 24*Lambda**2*M_cos_sq*rho_dot**2 - 2*M_cos_sq*lambda6*rho**6)/(9*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 3*D_123*lambda6*rho**6 - 6*Lambda**2*M_cos_sq*lambda4*rho**4 - 24*Lambda**2*M_cos_sq*m_squared*rho**2 - 24*Lambda**2*M_cos_sq*mu**2*rho**2 - 24*Lambda**2*M_cos_sq*rho_dot**2 - 2*M_cos_sq*lambda6*rho**6)]])",
+    "status": "PASS_REGULAR_FINITE_Q_PHYSICAL_SCALAR_BASIS",
+    "symbolic_velocity_map": "Matrix([[H*Xi_dot/q_phys + Xi*(H**2/q_phys + H_dot/q_phys)], [Q_rho_dot + Xi*(H*rho_dot/q_phys + rho_ddot/q_phys) + Xi_dot*rho_dot/q_phys], [-Q_chi*rho_dot/rho**2 + Q_chi_dot/rho + Xi*(H*mu/q_phys + mu_dot/q_phys) + Xi_dot*mu/q_phys]])",
+    "variables": [
+      "Xi=(q_phys/H)R",
+      "Q_rho=delta_rho-(rho_dot/H)R",
+      "Q_chi=rho[vartheta-(mu/H)R]"
+    ],
+    "vertex_projection": {
+      "cubic": "V_phys_abc(k1,k2,k3)=T^i_a(k1)T^j_b(k2)T^k_c(k3)V_ijk",
+      "momentum_rule": "each external leg carries its own nonzero q_phys; the exactly homogeneous Xi leg is excluded as gauge",
+      "quartic": "W_phys_abcd(k1,k2,k3,k4)=T^i_a(k1)T^j_b(k2)T^k_c(k3)T^l_d(k4)W_ijkl",
+      "time_dependence": "replace dot(y)=T dot(p)+dot(T)p using q_dot=-H q"
+    }
+  },
+  "vertex_projection_map_status": "DEFINED"
+}

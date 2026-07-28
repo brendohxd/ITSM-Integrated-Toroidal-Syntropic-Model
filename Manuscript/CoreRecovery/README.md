@@ -61,7 +61,11 @@ The correct source is `S2=partial_z L3[x,z1]`, with
 `z1=-C^(-1)J1`. The inverse-Laplacian shift representation remains restricted
 to `q_phys>0`; the homogeneous gauge-orbit result is unchanged.
 
-The complete finite-`q` constraint dressing, regular physical-scalar
-projection, gauge-regular constrained `2-to-2` amplitude, physical cutoff and
-local nonzero-gradient exact-`Y` reduction remain open. UVIR-003 is in
-progress and MAT-001 remains blocked.
+The complete multi-sector finite-`q` source `S2=partial_z L3[x,z1]` and the
+complete generic `L4[x,z1]` contact functional are now verified. Their
+combination assembles the reduced quartic functional. A regular finite-`q`
+physical-scalar basis and leg-wise projection map are also verified without
+restoring the homogeneous gauge mode. Explicit projected vertices, the
+gauge-regular constrained `2-to-2` amplitude, physical cutoff and local
+nonzero-gradient exact-`Y` reduction remain open. UVIR-003 is in progress and
+MAT-001 remains blocked.
