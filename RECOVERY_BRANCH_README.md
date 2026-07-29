@@ -44,10 +44,13 @@ Laplacian
 `D_mu D^mu psi` and retains exact `Y^(3/2)` for a declared local
 nonzero-gradient perturbative force analysis. The homogeneous zero-gradient
 force action is verified through direct quartic order. Its source combines
-with the parent block to give the complete finite-`q` multi-sector `J2` and
-the exact constraint-induced quartic Schur functional. The direct contact
-action, physical eigenmode projection and gauge-regular amplitude remain
-open. These bounded results do not establish full perturbative stability,
+with the parent block to give the complete finite-`q` dressed source and
+corrected quartic Schur functional. The generic cubic and quartic functionals,
+regular physical-scalar basis, and factorized analytic cubic momentum kernel
+are verified for nonzero external momenta. The exact zero-gradient
+`|grad(pi)|^3` Taylor kernel, reduced quartic momentum kernel, homogeneous
+internal-channel prescription and gauge-regular amplitude remain open.
+These bounded results do not establish full perturbative stability,
 observational viability, or a completed cosmology.
 
 ## Repository rules for recovery work

@@ -65,7 +65,9 @@ The complete multi-sector finite-`q` source `S2=partial_z L3[x,z1]` and the
 complete generic `L4[x,z1]` contact functional are now verified. Their
 combination assembles the reduced quartic functional. A regular finite-`q`
 physical-scalar basis and leg-wise projection map are also verified without
-restoring the homogeneous gauge mode. Explicit projected vertices, the
-gauge-regular constrained `2-to-2` amplitude, physical cutoff and local
-nonzero-gradient exact-`Y` reduction remain open. UVIR-003 is in progress and
-MAT-001 remains blocked.
+restoring the homogeneous gauge mode. The complete analytic cubic functional
+is now polarized into a factorized finite-`q` physical-basis kernel with
+exact per-leg lapse/shear resolvers. The reduced quartic momentum kernel, a
+gauge-regular homogeneous internal-channel prescription, the constrained
+`2-to-2` amplitude, physical cutoff and local nonzero-gradient exact-`Y`
+reduction remain open. UVIR-003 is in progress and MAT-001 remains blocked.

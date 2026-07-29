@@ -687,3 +687,26 @@ projection maps. The exactly homogeneous `Xi` leg remains excluded as gauge.
 
 **Decision:** record `PASS_REGULAR_FINITE_Q_PHYSICAL_SCALAR_BASIS`. Explicit
 projected vertices, amplitude and cutoff remain open.
+
+## 2026-07-29 - Complete factorized cubic momentum kernel
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Cubic assembly:** consolidated and regressed the complete generic
+multi-sector `L3[x,z1]` functional against the direct, generic
+gravity/aether, condensate temporal, Track-A and soft-curvature audits.
+
+**Fourier polarization:** polarized the analytic cubic functional over three
+non-collinear legs, inserted exact finite-`q` per-leg lapse/shear resolvers,
+and applied the time-dependent `(Xi,Q_rho,Q_chi,Pi)` map.
+
+**Boundary:** the exact `|grad(pi)|^3` term has no ordinary Taylor kernel at
+the homogeneous zero-gradient background. The exactly homogeneous internal
+`Xi` channel is outside the finite-`q` map and cannot be obtained by naive
+substitution.
+
+**Decision:** record
+`PASS_FACTORIZED_FINITE_Q_PHYSICAL_CUBIC_KERNEL`. The reduced quartic
+momentum kernel, gauge-regular homogeneous internal-channel prescription,
+exchange-plus-contact amplitude and cutoff remain open. UVIR-003 remains in
+progress and MAT-001 remains blocked.

@@ -365,3 +365,23 @@ mode remains excluded as the time-translation gauge orbit.
 The result is `PASS_REGULAR_FINITE_Q_PHYSICAL_SCALAR_BASIS`. The leg-wise
 cubic/quartic projection map is fixed, but projected momentum-space kernels,
 the exchange-plus-contact amplitude, and a physical cutoff remain open.
+
+## Complete factorized cubic momentum kernel
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_cubic_momentum_kernel.py
+```
+
+This polarizes the complete analytic `L3[x,z1]` functional over three
+non-collinear Fourier legs, supplies the exact finite-`q` lapse/shear
+resolver for every leg, and applies the full time-dependent map to
+`(Xi,Q_rho,Q_chi,Pi)`.
+
+The result is `PASS_FACTORIZED_FINITE_Q_PHYSICAL_CUBIC_KERNEL`. The exact
+`|grad(pi)|^3` term has no ordinary Taylor kernel at the homogeneous
+zero-gradient background, and the exactly homogeneous internal `Xi` channel
+is not defined by the finite-`q` map. The reduced quartic momentum kernel,
+gauge-regular exchange-plus-contact amplitude, and physical cutoff remain
+open.

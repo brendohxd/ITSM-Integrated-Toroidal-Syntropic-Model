@@ -23,6 +23,8 @@ root `CHANGELOG.md` records legacy project history.
   full reduced quartic functional before physical-mode projection.
 - Added the regular finite-`q` physical-scalar basis and leg-wise interaction
   projection map.
+- Added the complete analytic cubic Fourier polarization, exact per-leg
+  finite-`q` constraint resolvers, and factorized physical-basis kernel.
 - Added the generic three-dimensional gravity/aether lapse/shift dressing
   kernel and its functional source operators at `z1`.
 
@@ -39,8 +41,10 @@ root `CHANGELOG.md` records legacy project history.
 ### Status boundary
 
 - The complete finite-`q` `S2`, generic `L4[x,z1]`, reduced quartic
-  functional and regular physical-scalar basis are verified at `q_phys>0`.
-- Explicit projection of the momentum-space vertices, the
+  functional, regular physical-scalar basis, and factorized analytic cubic
+  momentum kernel are verified at `q_phys>0`.
+- The exact `|grad(pi)|^3` Taylor kernel at zero gradient, reduced quartic
+  momentum kernel, homogeneous internal-channel prescription,
   exchange-plus-contact amplitude and cutoff remain open. This checkpoint
   does not create a new manuscript version.
 

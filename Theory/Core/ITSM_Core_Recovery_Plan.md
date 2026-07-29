@@ -347,7 +347,6 @@ gauge-regular amplitude and cutoff remain open. See
 
 
 
-### MAT-001 -- Matter coupling and `C_proj`
 UVIR-003 Stage-B physical-basis result (2026-07-29): **the finite-`q` basis
 `(Xi,Q_rho,Q_chi)` and leg-wise vertex-projection map are verified**. The
 transformed kinetic matrix has a finite positive low-`q` limit over the
@@ -356,8 +355,16 @@ excluded as gauge. Explicit momentum-space vertex projection, the
 exchange-plus-contact amplitude and cutoff remain open. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_PHYSICAL_SCALAR_BASIS.md`.
 
+UVIR-003 Stage-B cubic-momentum-kernel result (2026-07-29): **the complete
+analytic cubic functional is polarized into a factorized finite-`q`
+physical-basis kernel with exact per-leg lapse/shear resolvers**. The exact
+`|grad(pi)|^3` term has no ordinary Taylor kernel at zero gradient, and the
+homogeneous internal `Xi` channel is not defined by the finite-`q` map. The
+reduced quartic momentum kernel, gauge-regular internal-channel prescription,
+exchange-plus-contact amplitude and cutoff remain open. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_CUBIC_MOMENTUM_KERNEL.md`.
 
-
+### MAT-001 -- Matter coupling and `C_proj`
 Derive the baryon--phonon vertex and calculate the observable Wilson
 coefficient. The geometric `2/3` trace ratio is an input motivation, not the
 answer. Field redefinitions and kinetic normalization must be fixed before the
