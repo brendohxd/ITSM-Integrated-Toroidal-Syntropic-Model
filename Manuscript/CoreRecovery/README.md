@@ -13,8 +13,8 @@ This directory is the manuscript workspace for the
 - `releases/v<version>/` contains immutable source and PDF snapshots.
 
 The current frozen release is
-[`v12.0-alpha.6`](releases/v12.0-alpha.6/). The previous release is
-[`v12.0-alpha.5`](releases/v12.0-alpha.5/); all versioned source and PDF trees
+[`v12.0-alpha.7`](releases/v12.0-alpha.7/). The previous release is
+[`v12.0-alpha.6`](releases/v12.0-alpha.6/); all versioned source and PDF trees
 are immutable snapshots.
 
 ## Versioning rule
@@ -35,7 +35,7 @@ alpha number; this keeps every cited PDF unambiguous.
 4. When the manuscript is ready to freeze, run:
 
    ```powershell
-   .\New-ManuscriptRelease.ps1 -Version 12.0-alpha.6 -Label "Next verified checkpoint"
+   .\New-ManuscriptRelease.ps1 -Version 12.0-alpha.8 -Label "Next verified checkpoint"
    ```
 
 5. Inspect the new PDF, add `RELEASE_NOTES.md`, move the `Unreleased` entries
@@ -91,6 +91,11 @@ dimensionless neighborhood, not an all-background instability theorem. The
 Track-A force mode `Pi` remains factorized at quadratic order and is outside
 this coupled quartet audit rather than omitted from the full framework.
 
-The `q_phys/H=100` trajectory remains a controlled adiabatic subset. A
-controlled real-pole exchange domain, constrained `2-to-2` amplitude,
-physical cutoff, and local nonzero-gradient exact-`Y` reduction remain open.
+A controlled sampled high-momentum exchange domain is now established on the
+representative branch. Initial `q_phys/H=47.5,50,75,100` passes the real-pole,
+subhorizon and `max |omega_dot/omega^2|<0.1` criteria; the `45` sample fails
+only the adiabatic threshold. This is a sampled bracket, not a continuous or
+all-background boundary. Every nonzero internal exchange momentum must pass
+the same gate independently, while exact `q_K=0` uses the separate homogeneous
+projector. The mode-projected exchange-plus-contact amplitude, physical
+cutoff, and local nonzero-gradient exact-`Y` reduction remain open.

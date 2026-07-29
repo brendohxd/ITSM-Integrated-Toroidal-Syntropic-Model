@@ -7,6 +7,32 @@ root `CHANGELOG.md` records legacy project history.
 
 No unreleased manuscript changes.
 
+## 12.0-alpha.7 - 2026-07-29
+
+### Added
+
+- Added the controlled fixed-comoving exchange-domain map with explicit
+  real-pole, positive-kinetic, subhorizon, coupled-mode adiabaticity and
+  factorized-force adiabaticity criteria.
+- Added tracked high-momentum phase-space eigenspace projectors and the rule
+  that every nonzero internal channel must independently pass the same domain
+  gate.
+
+### Corrected
+
+- Removed the attempted use of the infrared `Xi`-pure
+  `gauge_continuation_Xi` initialization rule at high momentum. The controlled
+  domain tracks all three coupled finite-`q` physical pairs without assigning
+  that infrared label.
+
+### Status boundary
+
+- Initial `q/H=47.5,50,75,100` passes on the representative branch; `45`
+  fails the `0.1` adiabatic threshold. This sampled bracket is not a continuous
+  or all-background boundary.
+- Physical vertex contraction, exchange-plus-contact amplitude, unitarity
+  bound, strong-coupling scale and physical cutoff remain unfinished.
+
 ## 12.0-alpha.6 - 2026-07-29
 
 ### Added
