@@ -5,6 +5,10 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+No unreleased manuscript changes.
+
+## 12.0-alpha.5 - 2026-07-29
+
 ### Added
 
 - Added the complete constraint-free direct cubic and quartic physical-field
@@ -32,10 +36,13 @@ root `CHANGELOG.md` records legacy project history.
   propagator, and separate exact-`q=0` projected response kernel, together
   with pole, residue, inverse-closure, and kinetic-inertia diagnostics.
 - Added the generic three-dimensional gravity/aether lapse/shift dressing
+  kernel and its functional source operators at `z1`.
 - Added fixed-comoving pole tracking, adiabaticity measures, and converged
   kinetic-normalized time-domain transfer matrices with an independent
   canonical-Hamiltonian equivalence check.
-  kernel and its functional source operators at `z1`.
+- Added kinetic-normalized pole-pair frames, principal-angle assignment,
+  Procrustes parallel transport, and a five-case on-shell
+  background/alignment robustness audit.
 
 ### Corrected
 
@@ -47,7 +54,8 @@ root `CHANGELOG.md` records legacy project history.
 - Updated and rebuilt the working manuscript with the corrected dressed source,
   cubic and reduced-quartic momentum kernels, the exact homogeneous
   internal-channel projector boundary, local propagator HOLD, and the
-  follow-on mode-attribution HOLD from the converged time-domain transfer.
+  follow-on fixed-comoving and complex-quartet mode-attribution HOLDs from
+  the converged time-domain transfer.
 
 ### Status boundary
 
@@ -62,13 +70,16 @@ root `CHANGELOG.md` records legacy project history.
   converged and shows that frozen-pole exponentiation is invalid in the
   nonadiabatic domain.
 - The initial `q_phys/H=0.01` trajectory retains a converged maximum
-  kinetic-normalized phase-space gain of `1.37708e27`. This is held pending
-  projection onto continuously tracked physical eigenmodes and robustness
-  checks; it is not yet classified as instability or gauge behavior.
+  kinetic-normalized phase-space gain of `1.37708e27`. The five-case
+  follow-on finds an `Xi`-seeded dominant input in every case, but every
+  trajectory enters an off-axis complex quartet that prevents a unique real
+  rank-two gauge/matter pole split. Matter-seeded subspaces also amplify. The
+  result is `HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`, not an instability
+  finding or pure gauge-artifact dismissal.
 - The exact `|grad(pi)|^3` Taylor kernel at zero gradient, local adiabatic
-  mode attribution, exchange-plus-reduced-contact amplitude, unitarity
-  criterion, and cutoff remain open. This checkpoint does not create a new
-  manuscript version.
+  source-projected retained-observable response, exchange-plus-reduced-contact
+  amplitude, unitarity criterion, and cutoff remain open. This checkpoint
+  is frozen as manuscript release `v12.0-alpha.5`.
 
 ## 12.0-alpha.4 - 2026-07-29
 
@@ -98,7 +109,7 @@ root `CHANGELOG.md` records legacy project history.
 
 ### Status boundary
 
-- At release time, the finite-`q` source and Schur block were recorded as complete; this interpretation is corrected under `Unreleased`.
+- At release time, the finite-`q` source and Schur block were recorded as complete; this interpretation is corrected in `v12.0-alpha.5`.
 - The direct quartic contact action, physical `2-to-2` amplitude, cutoff,
   nonzero-gradient exact-`Y` reduction and MAT-001 remain open.
 

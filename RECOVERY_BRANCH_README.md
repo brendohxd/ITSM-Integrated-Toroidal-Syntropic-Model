@@ -53,14 +53,19 @@ projectors remove the scalar shift and `Xi` gauge coordinates while retaining
 the lapse constraint and `(Q_rho,Q_chi,Pi)` subspace. The exact zero-gradient
 `|grad(pi)|^3` Taylor kernel remains open. The finite-`q` physical inverse
 quadratic kernel and separate exact-`q=0` projected response are constructed.
-The fixed-comoving follow-on is numerically converged and verifies the full
-time-dependent physical equations against their canonical Hamiltonian form.
-Frozen-pole exponentiation fails in the nonadiabatic domain. The deepest
-sampled infrared trajectory nevertheless retains a maximum normalized
-phase-space gain of `1.37708e27`, which remains held pending attribution to a
-continuously tracked physical eigenmode and robustness checks. The high-`q`
-trajectory is a controlled adiabatic subset. No exchange-plus-contact
-amplitude, unitarity criterion, or physical cutoff is derived.
+The fixed-comoving transfer is numerically converged and verifies the full
+time-dependent equations against their canonical Hamiltonian form.
+Frozen-pole exponentiation fails in the nonadiabatic domain. A five-case
+mode-resolved follow-on finds that every deepest-infrared transfer is seeded
+overwhelmingly by the finite-`q` `Xi` gauge-continuation subspace, but every
+case enters an off-axis complex quartet where no unique continuous real
+rank-two gauge/matter pole split exists. Matter-seeded subspaces also
+amplify. The result is
+`HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`, not an instability pass or a pure
+gauge-artifact dismissal. A source-projected retained-observable response is
+required next. The high-`q` trajectory remains a controlled adiabatic subset.
+No exchange-plus-contact amplitude, unitarity criterion, or physical cutoff
+is derived.
 These bounded results do not establish full perturbative stability,
 observational viability, or a completed cosmology.
 

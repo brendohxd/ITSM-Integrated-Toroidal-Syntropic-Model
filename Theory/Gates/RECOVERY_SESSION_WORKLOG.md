@@ -806,3 +806,36 @@ transfer mode by mode, and repeat any retained growing mode under nearby
 branch/parameter variations. No amplitude, unitarity scale, strong-coupling
 scale, or physical cutoff is claimed. UVIR-003 remains in progress and
 MAT-001 remains blocked.
+
+## 2026-07-29 - Mode-resolved infrared transfer and robustness
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Mode construction:** formed kinetic-normalized frozen pole-pair frames in
+`u=(K^(1/2)p,K^(1/2)p_dot/H)`, paired eigenvalues under
+`lambda -> -lambda`, assigned adjacent frames by principal-angle overlap, and
+parallel-transported their orientations with orthogonal Procrustes rotations.
+
+**Transfer projection:** projected the converged exact fixed-comoving transfer
+by each initial rank-two physical subspace. In the baseline case the maximum
+full gain is `1.37708e27`; its maximizing initial vector has `0.999931`
+projection onto the initial `Xi` gauge-continuation subspace. A nominal
+retained-matter-seeded subspace nevertheless reaches `3.23731e24`.
+
+**Structural hold:** an off-axis complex quartet appears for `3.62047%` of
+the baseline trajectory. Its real invariant subspace has rank four, so the
+nominal gauge-continuation and retained-matter pole pairs have no unique
+continuous real rank-two split through that interval. This is not a transfer
+convergence, pole-pairing, or eigenvector-phase failure.
+
+**Robustness:** repeated initial `q/H=0.01` for the reference branch, on-shell
+`rho_initial=0.95` and `1.05` branches, and `zeta_align=0.8` and `1.2`.
+Coarse/fine errors remain below `1.91e-4`; every case is Xi seeded and every
+case enters a complex quartet. Gain magnitudes remain branch-sensitive.
+
+**Decision:** record `HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`. Neither a
+retained-matter instability nor a pure gauge artifact is established. Next
+construct a source-projected retarded response that removes the homogeneous
+time-translation source and measures retained `Q_rho,Q_chi` observables
+through the quartet interval. No amplitude, unitarity, strong-coupling, or
+cutoff claim is made. UVIR-003 remains in progress; MAT-001 remains blocked.

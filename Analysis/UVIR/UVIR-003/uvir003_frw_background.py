@@ -247,6 +247,8 @@ def symbolic_derivation() -> dict[str, str]:
 def integrate_representative_branch(
     t_end: float,
     samples: int,
+    parameter_overrides: dict[str, float] | None = None,
+    initial_condition_overrides: dict[str, float] | None = None,
 ) -> tuple[dict[str, object], list[dict[str, float]]]:
     require("positive t_end", t_end > 0)
     require("sufficient samples", samples >= 3)
@@ -265,6 +267,15 @@ def integrate_representative_branch(
         "lambda6": 0.20,
         "Lambda": 2.0,
     }
+    if parameter_overrides:
+        unknown_parameters = set(parameter_overrides) - set(params)
+        require("known parameter overrides", not unknown_parameters)
+        params.update(
+            {
+                key: float(value)
+                for key, value in parameter_overrides.items()
+            }
+        )
     c_theta = params["c1"] + 3 * params["c2"] + params["c3"]
     c14 = params["c1"] + params["c4"]
     c123 = params["c1"] + params["c2"] + params["c3"]
@@ -296,9 +307,23 @@ def integrate_representative_branch(
             / (4 * params["Lambda"] ** 2)
         )
 
-    a_initial = 1.0
-    rho_initial = 1.0
-    rho_dot_initial = 0.0
+    initial_overrides = initial_condition_overrides or {}
+    known_initial_conditions = {
+        "a",
+        "rho",
+        "rho_dot",
+        "Theta",
+    }
+    require(
+        "known initial-condition overrides",
+        not (set(initial_overrides) - known_initial_conditions),
+    )
+    a_initial = float(initial_overrides.get("a", 1.0))
+    rho_initial = float(initial_overrides.get("rho", 1.0))
+    rho_dot_initial = float(initial_overrides.get("rho_dot", 0.0))
+    theta_initial = float(initial_overrides.get("Theta", 0.0))
+    require("positive initial scale factor", a_initial > 0)
+    require("positive initial amplitude", rho_initial > 0)
     mu_initial = float(
         np.sqrt(potential_prime(rho_initial) / rho_initial)
     )
@@ -313,7 +338,6 @@ def integrate_representative_branch(
     hubble_initial = float(
         np.sqrt(energy_initial / (3 * m_cos_sq))
     )
-    theta_initial = 0.0
 
     def rhs(_time: float, state: np.ndarray) -> np.ndarray:
         scale, rho, rho_dot, theta, hubble = state

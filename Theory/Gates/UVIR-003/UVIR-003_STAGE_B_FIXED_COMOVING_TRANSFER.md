@@ -5,6 +5,14 @@ Branch: `recovery/v12-core-architecture`
 Scope: full time-dependent finite-`q` scalar transfer on the representative
 evolving branch
 
+Follow-on status: the required mode-resolved and nearby-robustness audit is
+complete. Transfer and pair-assignment numerics pass, but an off-axis
+complex quartet prevents a unique continuous real rank-two split between
+the gauge-continuation and retained-matter pole pairs. The current status is
+`HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`; see
+`UVIR-003_STAGE_B_MODE_RESOLVED_TRANSFER_ROBUSTNESS.md`. This report remains
+the full-transfer checkpoint and not the latest attribution result.
+
 ## Decision
 
 The local frozen-pole HOLD has been advanced to a converged time-dependent

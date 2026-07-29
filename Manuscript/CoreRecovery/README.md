@@ -13,8 +13,8 @@ This directory is the manuscript workspace for the
 - `releases/v<version>/` contains immutable source and PDF snapshots.
 
 The current frozen release is
-[`v12.0-alpha.4`](releases/v12.0-alpha.4/). The previous release is
-[`v12.0-alpha.3`](releases/v12.0-alpha.3/); all versioned source and PDF trees
+[`v12.0-alpha.5`](releases/v12.0-alpha.5/). The previous release is
+[`v12.0-alpha.4`](releases/v12.0-alpha.4/); all versioned source and PDF trees
 are immutable snapshots.
 
 ## Versioning rule
@@ -35,7 +35,7 @@ alpha number; this keeps every cited PDF unambiguous.
 4. When the manuscript is ready to freeze, run:
 
    ```powershell
-   .\New-ManuscriptRelease.ps1 -Version 12.0-alpha.5 -Label "Next verified checkpoint"
+   .\New-ManuscriptRelease.ps1 -Version 12.0-alpha.6 -Label "Next verified checkpoint"
    ```
 
 5. Inspect the new PDF, add `RELEASE_NOTES.md`, move the `Unreleased` entries
@@ -75,10 +75,15 @@ The fixed-comoving follow-on restores coefficient derivatives and Hubble
 dilution and produces converged kinetic-normalized transfer matrices. It shows
 that frozen-pole exponentiation is invalid in the nonadiabatic domain, while
 the initial `q_phys/H=0.01` trajectory retains a maximum normalized
-phase-space gain of `1.37708e27`. Because that gain has not yet been assigned
-to a continuously tracked physical eigenmode, the result remains on HOLD and
-is not classified as instability or gauge-continuation behavior. The
-`q_phys/H=100` trajectory is a controlled adiabatic high-`q` subset. The
-constrained `2-to-2` exchange-plus-reduced-contact amplitude, physical cutoff,
-and local nonzero-gradient exact-`Y` reduction remain open. UVIR-003 is in
-progress and MAT-001 remains blocked.
+phase-space gain of `1.37708e27`. The subsequent five-case mode-resolved audit
+finds that the dominant singular input is `Xi` seeded in every tested case.
+However, each trajectory enters an off-axis complex quartet whose real
+invariant subspace has rank four, preventing a unique continuous rank-two
+split between the gauge-continuation and retained-matter pole pairs.
+Matter-seeded initial subspaces also amplify. The result remains on
+`HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`; it is neither a retained-matter
+instability finding nor a pure gauge-artifact dismissal. The next low-`q`
+step is a source-projected retained-observable response audit. The
+`q_phys/H=100` trajectory remains a controlled adiabatic subset. The
+constrained `2-to-2` amplitude, physical cutoff, and local nonzero-gradient
+exact-`Y` reduction remain open. UVIR-003 is in progress and MAT-001 blocked.

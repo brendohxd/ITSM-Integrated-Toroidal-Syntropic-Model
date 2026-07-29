@@ -456,3 +456,35 @@ That gain must be projected onto continuously tracked physical eigenmodes
 before it can be classified as instability, gauge-continuation behavior, or
 background squeezing. No `2-to-2` amplitude, unitarity bound,
 strong-coupling scale, or physical cutoff is claimed.
+
+## Mode-resolved infrared transfer and robustness
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_mode_resolved_transfer_robustness.py
+```
+
+This constructs instantaneous kinetic-normalized pole-pair frames, assigns
+them by principal-angle overlap, parallel-transports them by orthogonal
+Procrustes rotations, and projects the exact transfer by each initial
+physical subspace.
+
+Transfer convergence and pair assignment pass across all five tested cases.
+The dominant singular input is `Xi` seeded in every case, with initial
+projection fractions from `0.999776` to `0.999961`, but every case enters an
+off-axis complex-quartet interval. There the real invariant space has rank
+four, so the nominal gauge-continuation and retained-matter pole pairs do not
+admit a unique continuous rank-two split. Matter-seeded subspaces also
+amplify strongly.
+
+The result is `HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`. The obstruction is
+not a transfer-convergence, eigenvalue-pairing, or arbitrary-phase failure.
+It prevents classifying the infrared transfer as either a retained-matter
+instability or a pure gauge artifact in the tested neighborhood.
+
+The next required calculation is a source-to-observable retarded-response
+audit using source covectors that remove the homogeneous time-translation
+orbit and retained observables built from `Q_rho` and `Q_chi`. No physical
+`2-to-2` amplitude, unitarity bound, strong-coupling scale, or cutoff is
+claimed.

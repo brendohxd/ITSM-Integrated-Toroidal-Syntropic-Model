@@ -399,6 +399,22 @@ subset. Mode-resolved transfer and parameter/background robustness are
 required before an exchange domain is declared. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FIXED_COMOVING_TRANSFER.md`.
 
+UVIR-003 Stage-B mode-resolved robustness result (2026-07-29): **the
+time-dependent transfer and pair-assignment numerics pass, but an off-axis
+complex quartet prevents a unique real rank-two physical-mode split**. Five
+initial-`q/H=0.01` cases were tested: the reference branch, on-shell
+`rho_initial=0.95` and `1.05` branches, and `zeta_align=0.8` and `1.2`.
+All have converged coarse/fine errors below `1.91e-4`, an `Xi`-seeded
+maximizing initial vector with projection fraction above `0.99977`, and a
+complex-quartet interval occupying `3.25%` to `3.62%` of the trajectory.
+Matter-seeded subspaces also amplify, so the result is neither a proved
+retained-matter instability nor a pure gauge artifact. Record
+`HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`. The next low-`q` calculation is
+a source-to-observable retarded-response audit that removes the homogeneous
+time-translation source direction and measures retained `Q_rho,Q_chi`
+observables through the quartet interval. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_MODE_RESOLVED_TRANSFER_ROBUSTNESS.md`.
+
 ### MAT-001 -- Matter coupling and `C_proj`
 Derive the baryon--phonon vertex and calculate the observable Wilson
 coefficient. The geometric `2/3` trace ratio is an input motivation, not the
