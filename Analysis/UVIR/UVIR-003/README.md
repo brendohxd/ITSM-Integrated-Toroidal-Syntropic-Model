@@ -407,3 +407,52 @@ subspace. This rule is algebraically audited but has not yet been inserted
 into a propagating exchange calculation. The exchange-plus-reduced-contact
 amplitude, unitarity criterion, physical cutoff, and local nonzero-gradient
 exact-`Y` reduction remain open.
+
+## Physical quadratic propagators and adiabaticity hold
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_physical_quadratic_propagators.py
+```
+
+This constructs the local frozen-time inverse quadratic kernel in the
+finite-`q` physical basis `(Xi,Q_rho,Q_chi,Pi)` and the separately projected
+exact-`q=0` response on `(Q_rho,Q_chi,Pi)`. It verifies positive kinetic
+inertia, nonsingular finite-`q` constraints, inverse closure, pole pairing,
+and positive residues for every sampled real positive-frequency pole.
+
+The result is `HOLD_LOCAL_ADIABATIC_PHYSICAL_QUADRATIC_PROPAGATORS` rather
+than a pass. All five `q_phys/H=100` samples have four real positive-frequency
+modes with positive residues, but complex frozen-background pole pairs occur
+at lower and intermediate momenta and in later exact-`q=0` snapshots. A
+fixed-comoving-momentum WKB and time-domain transfer audit was therefore
+required; its completed result is reported in the next section. No `2-to-2` amplitude, unitarity bound,
+strong-coupling scale, or physical cutoff is claimed.
+
+## Fixed-comoving adiabaticity and time-domain transfer
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_propagator_adiabaticity_transfer.py
+```
+
+This follows fixed comoving modes with `q_phys=k/a`, restores the exact
+`K_dot`, `P_dot`, and `3H` terms in the physical second-order equations, and
+evolves the kinetic-normalized gauge-invariant phase-space transfer. An
+independent canonical reconstruction verifies the Hamiltonian form.
+
+The transfer numerics pass: the maximum coarse/fine error is `1.30353e-4`,
+the maximum second-order/canonical residual is `1.05500e-4`, and the maximum
+local Hamiltonian-generator defect is `4.06385e-16`. The `q/H=100` trajectory
+is a controlled adiabatic high-momentum subset.
+
+The result is `HOLD_TIME_DEPENDENT_INFRARED_TRANSFER_INTERPRETATION`.
+Frozen-pole exponentiation is quantitatively invalid in the nonadiabatic
+domain, but the deepest sampled infrared trajectory (`q/H=0.01` initially)
+still has a converged maximum normalized phase-space gain of `1.37708e27`.
+That gain must be projected onto continuously tracked physical eigenmodes
+before it can be classified as instability, gauge-continuation behavior, or
+background squeezing. No `2-to-2` amplitude, unitarity bound,
+strong-coupling scale, or physical cutoff is claimed.

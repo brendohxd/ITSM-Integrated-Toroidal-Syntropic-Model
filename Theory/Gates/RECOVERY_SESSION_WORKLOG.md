@@ -739,3 +739,70 @@ bound, strong-coupling scale, or physical cutoff is claimed.
 `PASS_FACTORIZED_FINITE_Q_REDUCED_QUARTIC_KERNEL` and
 `PASS_ALGEBRAIC_GAUGE_REGULAR_Q0_PROJECTOR_PRESCRIPTION`. UVIR-003 remains in
 progress and MAT-001 remains blocked.
+
+## 2026-07-29 - Physical quadratic propagators and adiabaticity hold
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Kernel construction:** transformed the complete reduced finite-`q`
+quadratic action into `(Xi,Q_rho,Q_chi,Pi)`, including the time derivative of
+the basis map for fixed comoving momentum. Constructed
+`D(omega,q)=omega^2 K+i omega(P-P^T)+C` and its inverse. The factorized force
+mode contributes `K_Q omega^2-gamma q^4/M_star^2`.
+
+**Homogeneous channel:** constructed the separate exact-`q=0` response on
+`(Q_rho,Q_chi,Pi)` after removing `Sigma` and the homogeneous `Xi` gauge
+orbit while retaining the lapse constraint.
+
+**Verification:** across 25 finite-`q` samples, the minimum kinetic eigenvalue
+is `0.006583568808`, the minimum constraint singular value is
+`0.06125947922`, and the maximum inverse residual is `8.9134e-14`. All five
+`q_phys/H=100` snapshots have four real positive-frequency modes and positive
+residues.
+
+**Hold:** complex frozen-background pole pairs occur at lower/intermediate
+momentum and in later exact-`q=0` snapshots. This may be an infrared
+instability or a breakdown of the local adiabatic approximation for modes not
+separated from `H`; the present audit does not decide between them.
+
+**Decision:** record
+`HOLD_LOCAL_ADIABATIC_PHYSICAL_QUADRATIC_PROPAGATORS`. Next perform a
+fixed-comoving-momentum WKB and time-domain transfer audit. No physical
+`2-to-2` amplitude, unitarity bound, strong-coupling scale, or cutoff is
+claimed. UVIR-003 remains in progress and MAT-001 remains blocked.
+
+## 2026-07-29 - Fixed-comoving adiabaticity and transfer audit
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Time-dependent equations:** followed fixed comoving momenta with
+`q_phys=k/a` and restored the complete
+`K p_ddot+[K_dot+3HK+P-P^T]p_dot+[P_dot+3HP-C]p=0` system in
+`p=(Xi,Q_rho,Q_chi)`.
+
+**Independent verification:** reconstructed the canonical momentum
+`pi_p=a^3(K p_dot+Pp)`. The maximum second-order/canonical generator residual
+is `1.05500e-4`, and the maximum local Hamiltonian-generator defect is
+`4.06385e-16`.
+
+**Transfer convergence:** midpoint-Magnus coarse/fine errors are below
+`1.30353e-4` across all five fixed-comoving trajectories. The deepest
+infrared trajectory uses 32 adaptive substeps; the remaining trajectories use
+four.
+
+**Result:** frozen-pole exponentiation fails quantitatively in the
+nonadiabatic domain. The `q/H=100` trajectory is a controlled adiabatic
+high-momentum subset. The initial `q/H=0.01` trajectory nevertheless has a
+converged maximum kinetic-normalized phase-space gain of `1.37708e27`.
+
+**Boundary:** the gain is a full-transfer singular value, not a mode-resolved
+Lyapunov exponent. It has not yet been assigned to the finite-`q`
+continuation of the homogeneous gauge orbit or to a retained matter mode.
+
+**Decision:** record
+`HOLD_TIME_DEPENDENT_INFRARED_TRANSFER_INTERPRETATION`. Next construct and
+parallel-transport kinetic-normalized physical eigenvectors, project the
+transfer mode by mode, and repeat any retained growing mode under nearby
+branch/parameter variations. No amplitude, unitarity scale, strong-coupling
+scale, or physical cutoff is claimed. UVIR-003 remains in progress and
+MAT-001 remains blocked.

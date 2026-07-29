@@ -370,6 +370,35 @@ the exchange-plus-reduced-contact amplitude, unitarity criterion and cutoff
 remain open. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_REDUCED_QUARTIC_MOMENTUM_KERNEL.md`.
 
+UVIR-003 Stage-B physical-propagator result (2026-07-29): **the finite-`q`
+physical inverse quadratic kernel and separately projected exact-`q=0`
+response kernel are constructed, but the representative local adiabatic pole
+audit is held**. Kinetic inertia is positive, finite-`q` constraints are
+nonsingular, numerical inverses close, and every sampled real
+positive-frequency pole has a positive residue. The `q_phys/H=100` subset has
+four real positive-frequency modes at all five snapshots. Lower and
+intermediate momenta develop complex frozen-background pole pairs, however,
+so a fixed-comoving-momentum WKB and time-domain transfer audit was required;
+its completed follow-on is recorded below. No
+`2-to-2` amplitude, unitarity bound, strong-coupling scale, or physical cutoff
+is derived. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_PHYSICAL_QUADRATIC_PROPAGATORS.md`.
+
+UVIR-003 Stage-B fixed-comoving transfer result (2026-07-29): **the full
+time-dependent physical second-order system is evolved with converged transfer
+matrices, but the infrared interpretation remains held**. The calculation
+restores `K_dot`, `P_dot`, and `3H` terms, follows `q_phys=k/a`, and verifies
+equivalence to the canonical Hamiltonian system. Frozen-pole exponentiation
+is quantitatively invalid in the nonadiabatic domain. Nevertheless, the
+deepest sampled trajectory, initially `q_phys/H=0.01`, has a converged maximum
+kinetic-normalized phase-space gain of `1.37708e27`. Because this full-transfer
+singular value is not yet attributed to a continuously tracked physical
+eigenmode, it is not classified as either a physical instability or a gauge
+artifact. The `q_phys/H=100` trajectory is a controlled adiabatic high-`q`
+subset. Mode-resolved transfer and parameter/background robustness are
+required before an exchange domain is declared. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FIXED_COMOVING_TRANSFER.md`.
+
 ### MAT-001 -- Matter coupling and `C_proj`
 Derive the baryon--phonon vertex and calculate the observable Wilson
 coefficient. The geometric `2/3` trace ratio is an input motivation, not the

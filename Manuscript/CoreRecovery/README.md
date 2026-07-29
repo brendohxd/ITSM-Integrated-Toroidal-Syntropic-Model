@@ -69,7 +69,16 @@ The quartic result contains the complete physical pair-source kernel and all
 three finite-channel Schur pairings. At exact zero internal momentum,
 separate algebraic projectors remove `Sigma=-D^2 beta` and the homogeneous
 `Xi` gauge orbit while retaining the lapse constraint and
-`(Q_rho,Q_chi,Pi)` subspace. Local adiabatic propagators, the constrained
-`2-to-2` exchange-plus-reduced-contact amplitude, physical cutoff, and local
-nonzero-gradient exact-`Y` reduction remain open. UVIR-003 is in progress and
-MAT-001 remains blocked.
+`(Q_rho,Q_chi,Pi)` subspace. The corresponding finite-`q` physical inverse
+quadratic kernel and exact projected `q=0` response are now constructed.
+The fixed-comoving follow-on restores coefficient derivatives and Hubble
+dilution and produces converged kinetic-normalized transfer matrices. It shows
+that frozen-pole exponentiation is invalid in the nonadiabatic domain, while
+the initial `q_phys/H=0.01` trajectory retains a maximum normalized
+phase-space gain of `1.37708e27`. Because that gain has not yet been assigned
+to a continuously tracked physical eigenmode, the result remains on HOLD and
+is not classified as instability or gauge-continuation behavior. The
+`q_phys/H=100` trajectory is a controlled adiabatic high-`q` subset. The
+constrained `2-to-2` exchange-plus-reduced-contact amplitude, physical cutoff,
+and local nonzero-gradient exact-`Y` reduction remain open. UVIR-003 is in
+progress and MAT-001 remains blocked.

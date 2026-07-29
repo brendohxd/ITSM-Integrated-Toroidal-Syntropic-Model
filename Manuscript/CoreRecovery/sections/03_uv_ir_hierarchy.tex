@@ -759,11 +759,47 @@ retains the homogeneous lapse constraint and the
 $(Q_\rho,Q_\chi,\Pi)$ subspace while annihilating the two excluded gauge
 coordinates.  Projector idempotence, the projected constraint-inverse
 identity, the three-pair combinatorics and a finite centre-of-mass lapse-source
-limit are verified.  This supplies the internal-channel rule required by the
-next calculation, but not its propagating quadratic Green functions.  The
+limit are verified.
+
+The corresponding local frozen-time quadratic kernels have now been
+constructed.  With $A_p=P_p-P_p^{\mathsf T}$, the finite-wavenumber convention is
+\begin{equation}
+ D(\omega,q)=\omega^2K_p+i\omega A_p+C_p,
+ \qquad G_F=i[D+i\epsilon]^{-1}.
+ \label{eq:physical-quadratic-propagator}
+\end{equation}
+This includes the time derivative of the physical-basis map at fixed comoving
+momentum.  A separate exact-$q=0$ Hessian is formed only after the projectors
+in Eq.~\eqref{eq:homogeneous-internal-projectors} are applied.  Across the
+representative scan the kinetic inertia is positive, finite-$q$ constraints
+remain nonsingular and every sampled real positive-frequency pole has positive
+residue.  All five $q/H=100$ snapshots have four real positive-frequency
+poles.  Lower and intermediate momenta, however, develop complex
+frozen-background pole pairs, as do later projected $q=0$ snapshots.
+
+The required follow-on now tracks fixed comoving momentum, $q=k/a$, and
+evolves the complete physical equation
+\begin{equation}
+ K_p\ddot p+
+ \left(\dot K_p+3HK_p+P_p-P_p^{\mathsf T}\right)\dot p+
+ \left(\dot P_p+3HP_p-C_p\right)p=0.
+ \label{eq:fixed-comoving-transfer}
+\end{equation}
+Its kinetic-normalized transfer matrices converge with maximum coarse/fine
+error $1.31\times10^{-4}$ and reproduce an independent canonical-Hamiltonian
+generator to $1.06\times10^{-4}$.  Frozen-pole exponentiation is not
+quantitatively valid in the nonadiabatic domain.  The $q/H=100$ trajectory is
+a controlled high-momentum subset, with
+$\max|\dot\omega/\omega^2|=0.0222$.  The trajectory beginning at $q/H=0.01$
+nevertheless retains a converged maximum kinetic-normalized phase-space gain
+of $1.38\times10^{27}$.  Because this is a full-transfer singular value rather
+than a projection onto a continuously tracked physical eigenmode, it is held
+without classification as either an instability or gauge-continuation
+behaviour.  Mode-resolved transfer and nearby branch/parameter checks are
+required before a global exchange domain is declared.  The
 exchange-plus-reduced-contact amplitude and unitarity scale therefore remain
-open; in addition, the exact $|\nabla\pi|^3$ interaction still requires its
-declared local nonzero-gradient background.
+open; the exact $|\nabla\pi|^3$ interaction also still requires its declared
+local nonzero-gradient background.
 
 \subsection{Causality and cutoff status}
 

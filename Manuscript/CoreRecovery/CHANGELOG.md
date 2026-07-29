@@ -28,7 +28,13 @@ root `CHANGELOG.md` records legacy project history.
 - Added the factorized reduced quartic momentum kernel, complete physical
   pair-source kernel, three finite-channel Schur pairings, and exact
   homogeneous constraint/physical projectors.
+- Added the finite-`q` physical inverse quadratic kernel, factorized force
+  propagator, and separate exact-`q=0` projected response kernel, together
+  with pole, residue, inverse-closure, and kinetic-inertia diagnostics.
 - Added the generic three-dimensional gravity/aether lapse/shift dressing
+- Added fixed-comoving pole tracking, adiabaticity measures, and converged
+  kinetic-normalized time-domain transfer matrices with an independent
+  canonical-Hamiltonian equivalence check.
   kernel and its functional source operators at `z1`.
 
 ### Corrected
@@ -39,8 +45,9 @@ root `CHANGELOG.md` records legacy project history.
 - Reclassified `-J2^T C^(-1)J2/2` as a provisional origin-linear Schur
   component pending the complete finite-`q` constraint dressing.
 - Updated and rebuilt the working manuscript with the corrected dressed source,
-  cubic and reduced-quartic momentum kernels, and the exact homogeneous
-  internal-channel projector boundary.
+  cubic and reduced-quartic momentum kernels, the exact homogeneous
+  internal-channel projector boundary, local propagator HOLD, and the
+  follow-on mode-attribution HOLD from the converged time-domain transfer.
 
 ### Status boundary
 
@@ -49,10 +56,19 @@ root `CHANGELOG.md` records legacy project history.
   momentum kernel are verified for their declared nonzero-momentum domains.
 - Exact homogeneous constraint and physical projectors are defined and
   algebraically audited; they are not a naive finite-`q` substitution.
+- Local physical quadratic propagators are constructed. The high-`q`
+  representative subset has real positive-frequency poles with positive
+  residues. The required fixed-comoving transfer audit is now numerically
+  converged and shows that frozen-pole exponentiation is invalid in the
+  nonadiabatic domain.
+- The initial `q_phys/H=0.01` trajectory retains a converged maximum
+  kinetic-normalized phase-space gain of `1.37708e27`. This is held pending
+  projection onto continuously tracked physical eigenmodes and robustness
+  checks; it is not yet classified as instability or gauge behavior.
 - The exact `|grad(pi)|^3` Taylor kernel at zero gradient, local adiabatic
-  propagators, exchange-plus-reduced-contact amplitude, unitarity criterion,
-  and cutoff remain open. This checkpoint does not create a new manuscript
-  version.
+  mode attribution, exchange-plus-reduced-contact amplitude, unitarity
+  criterion, and cutoff remain open. This checkpoint does not create a new
+  manuscript version.
 
 ## 12.0-alpha.4 - 2026-07-29
 

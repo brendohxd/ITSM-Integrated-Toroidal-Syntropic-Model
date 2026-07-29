@@ -1,0 +1,1181 @@
+{
+  "calculation_status": "HOLD",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "separate the frozen kernel into leading WKB and first adiabatic corrections",
+    "calculate mode-by-mode adiabaticity on fixed comoving momenta",
+    "evolve the time-dependent gauge-invariant quadratic initial-value system",
+    "decide whether the complex low-q poles persist in transfer matrices",
+    "assemble exchange amplitudes only inside the resulting controlled domain"
+  ],
+  "physical_2_to_2_status": "NOT_YET_DERIVED",
+  "representative_branch": {
+    "exact_q0": {
+      "projected_constraint_inverse": "diag(-1/(2V),0), V!=0",
+      "rule": "Remove Sigma and Xi before inversion; retain the lapse constraint and (Q_rho,Q_chi,Pi).",
+      "samples": [
+        {
+          "minimum_kinetic_eigenvalue": 1.0,
+          "pole_diagnostics": {
+            "maximum_abs_imaginary_pole_over_scale": 0.0,
+            "maximum_pole_kernel_relative_residual": 8.544889164370221e-17,
+            "minimum_positive_frequency_residue_denominator": 2.488642012045659,
+            "ordered_poles_imag": [
+              0.0,
+              0.0,
+              0.0,
+              -0.0,
+              0.0,
+              0.0
+            ],
+            "ordered_poles_real": [
+              -2.366431913239846,
+              0.0,
+              0.0,
+              -0.0,
+              1.8046694988918507e-16,
+              2.366431913239846
+            ],
+            "plus_minus_pairing_relative_error": 7.62612052683614e-17,
+            "pole_count": 6.0,
+            "positive_pole_count": 1.0,
+            "real_pole_count": 6.0,
+            "zero_pole_count": 4.0
+          },
+          "t": 0.0,
+          "variables": [
+            "Q_rho",
+            "Q_chi",
+            "Pi"
+          ]
+        },
+        {
+          "minimum_kinetic_eigenvalue": 1.0,
+          "pole_diagnostics": {
+            "maximum_abs_imaginary_pole_over_scale": 0.8281153865308051,
+            "maximum_pole_kernel_relative_residual": 1.0752625652163707e-16,
+            "minimum_positive_frequency_residue_denominator": 2.424641717156784,
+            "ordered_poles_imag": [
+              -1.3322676295501878e-15,
+              1.27895759057741,
+              0.0,
+              -0.0,
+              -1.2789575905774107,
+              1.618858099930352e-15
+            ],
+            "ordered_poles_real": [
+              -1.5444195475407154,
+              -4.215378046623641e-16,
+              0.0,
+              -0.0,
+              1.1257719875235321e-15,
+              1.5444195475407092
+            ],
+            "plus_minus_pairing_relative_error": 4.029896399350323e-15,
+            "pole_count": 6.0,
+            "positive_pole_count": 1.0,
+            "real_pole_count": 4.0,
+            "zero_pole_count": 2.0
+          },
+          "t": 2.0,
+          "variables": [
+            "Q_rho",
+            "Q_chi",
+            "Pi"
+          ]
+        },
+        {
+          "minimum_kinetic_eigenvalue": 1.0,
+          "pole_diagnostics": {
+            "maximum_abs_imaginary_pole_over_scale": 0.08893950545069325,
+            "maximum_pole_kernel_relative_residual": 6.305249127928456e-16,
+            "minimum_positive_frequency_residue_denominator": 0.8715870653508038,
+            "ordered_poles_imag": [
+              3.3046482217358175e-16,
+              0.0,
+              -0.0,
+              -0.08869882709986693,
+              0.088698827099867,
+              -2.7755575615628914e-17
+            ],
+            "ordered_poles_real": [
+              -0.9972939094994218,
+              0.0,
+              -0.0,
+              3.622721441940091e-17,
+              2.3464973364403845e-16,
+              0.99729390949942
+            ],
+            "plus_minus_pairing_relative_error": 1.8068541355580917e-15,
+            "pole_count": 6.0,
+            "positive_pole_count": 1.0,
+            "real_pole_count": 4.0,
+            "zero_pole_count": 2.0
+          },
+          "t": 4.0,
+          "variables": [
+            "Q_rho",
+            "Q_chi",
+            "Pi"
+          ]
+        },
+        {
+          "minimum_kinetic_eigenvalue": 0.9999999999999998,
+          "pole_diagnostics": {
+            "maximum_abs_imaginary_pole_over_scale": 0.30454390947052334,
+            "maximum_pole_kernel_relative_residual": 2.8801142715568545e-16,
+            "minimum_positive_frequency_residue_denominator": 3.328642371392882,
+            "ordered_poles_imag": [
+              5.898059818321144e-17,
+              0.8329895157352512,
+              0.0,
+              -0.0,
+              -0.8329895157352528,
+              1.4964158384644932e-15
+            ],
+            "ordered_poles_real": [
+              -2.7352033313799557,
+              -1.9847403232850782e-15,
+              0.0,
+              -0.0,
+              2.2078191475590326e-15,
+              2.7352033313799615
+            ],
+            "plus_minus_pairing_relative_error": 2.1859493395424513e-15,
+            "pole_count": 6.0,
+            "positive_pole_count": 1.0,
+            "real_pole_count": 4.0,
+            "zero_pole_count": 2.0
+          },
+          "t": 6.0,
+          "variables": [
+            "Q_rho",
+            "Q_chi",
+            "Pi"
+          ]
+        },
+        {
+          "minimum_kinetic_eigenvalue": 1.0,
+          "pole_diagnostics": {
+            "maximum_abs_imaginary_pole_over_scale": 0.6356132464195849,
+            "maximum_pole_kernel_relative_residual": 2.6974994848612574e-16,
+            "minimum_positive_frequency_residue_denominator": 1.4870306280657613,
+            "ordered_poles_imag": [
+              -7.964154508601251e-16,
+              0.7671538018630464,
+              0.0,
+              -0.0,
+              -0.7671538018630444,
+              -3.3306690738754696e-16
+            ],
+            "ordered_poles_real": [
+              -1.2069506200262967,
+              -3.196228004487267e-16,
+              0.0,
+              -0.0,
+              5.102935939736309e-16,
+              1.2069506200262983
+            ],
+            "plus_minus_pairing_relative_error": 1.66326352674338e-15,
+            "pole_count": 6.0,
+            "positive_pole_count": 1.0,
+            "real_pole_count": 4.0,
+            "zero_pole_count": 2.0
+          },
+          "t": 8.0,
+          "variables": [
+            "Q_rho",
+            "Q_chi",
+            "Pi"
+          ]
+        }
+      ]
+    },
+    "finite_q_checks": {
+      "maximum_abs_imaginary_pole_over_local_pole_scale": 1.0,
+      "maximum_offshell_inverse_residual": 8.91341598519667e-14,
+      "maximum_plus_minus_pairing_relative_error": 3.868998969326438e-15,
+      "maximum_pole_kernel_relative_residual": 1.4226502691812887e-15,
+      "minimum_constraint_singular_value": 0.061259479216032656,
+      "minimum_kinetic_eigenvalue": 0.006583568808003011,
+      "minimum_positive_frequency_residue_denominator": 7.684069611780126e-05,
+      "pole_and_residue_status": "HOLD_LOCAL_ADIABATIC_POLE_OR_RESIDUE_AUDIT"
+    },
+    "finite_q_domain": {
+      "q_over_H_values": [
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "sample_count": 25,
+      "snapshot_count": 5,
+      "variables": [
+        "Xi",
+        "Q_rho",
+        "Q_chi",
+        "Pi"
+      ]
+    },
+    "finite_q_samples": [
+      {
+        "constraint_minimum_singular_value": 0.805188159365641,
+        "minimum_kinetic_eigenvalue": 0.0374999982462713,
+        "offshell_inverse_residual": 2.107561995634568e-14,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.0008763260799289533,
+          "maximum_pole_kernel_relative_residual": 6.527058827260579e-17,
+          "minimum_positive_frequency_residue_denominator": 7.684069611780126e-05,
+          "ordered_poles_imag": [
+            1.7486012637846216e-15,
+            2.8757190896537306e-15,
+            -1.1081013125578126e-17,
+            1.5394775136967946,
+            -1.539477513696797,
+            -1.1077712610310554e-17,
+            -4.713799927382706e-16,
+            -1.5543122344752192e-15
+          ],
+          "ordered_poles_real": [
+            -1756.7404975800846,
+            -1.985166894441614,
+            -3.842034805890397e-05,
+            -3.1320432358761252e-15,
+            3.964826063450737e-15,
+            3.842034805890063e-05,
+            1.985166894441619,
+            1756.7404975800878
+          ],
+          "plus_minus_pairing_relative_error": 1.8120100643887843e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 3.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 0.01,
+        "t": 0.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.8052318886128715,
+        "minimum_kinetic_eigenvalue": 0.03749982368958121,
+        "offshell_inverse_residual": 1.5516438861018935e-15,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.008754236385647195,
+          "maximum_pole_kernel_relative_residual": 4.629307394618369e-17,
+          "minimum_positive_frequency_residue_denominator": 0.007684069611780453,
+          "ordered_poles_imag": [
+            2.220446049250313e-15,
+            -2.780561147173753e-15,
+            2.0802795003598145e-17,
+            1.5381531883789628,
+            -1.538153188378964,
+            2.079180011889609e-17,
+            3.125456917793155e-15,
+            5.329070518200751e-15
+          ],
+          "ordered_poles_real": [
+            -175.70386731854785,
+            -1.9874141716177463,
+            -0.0038420348058902237,
+            4.2032349822918036e-15,
+            4.548465165467e-15,
+            0.0038420348058902263,
+            1.9874141716177434,
+            175.70386731854848
+          ],
+          "plus_minus_pairing_relative_error": 3.558960831471581e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 3.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 0.1,
+        "t": 0.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.8096205043321626,
+        "minimum_kinetic_eigenvalue": 0.03748237716494051,
+        "offshell_inverse_residual": 6.866350197783356e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.07867786421736453,
+          "maximum_pole_kernel_relative_residual": 1.5444524216021265e-16,
+          "minimum_positive_frequency_residue_denominator": 0.7684069611780455,
+          "ordered_poles_imag": [
+            -8.326672684688674e-16,
+            -3.8308491640855927e-16,
+            6.938893903907228e-17,
+            1.4065203334159397,
+            -1.4065203334159397,
+            -6.938893903907228e-18,
+            3.208615201018088e-17,
+            -1.8943180357666733e-15
+          ],
+          "ordered_poles_real": [
+            -17.876951127322478,
+            -2.1936095945392253,
+            -0.38420348058902276,
+            5.972022406578999e-17,
+            4.890505924246823e-16,
+            0.38420348058902276,
+            2.1936095945392267,
+            17.876951127322453
+          ],
+          "plus_minus_pairing_relative_error": 1.399459072654849e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 3.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 1.0,
+        "t": 0.0
+      },
+      {
+        "constraint_minimum_singular_value": 1.1680182290608854,
+        "minimum_kinetic_eigenvalue": 0.035816179527514126,
+        "offshell_inverse_residual": 2.503356842941849e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 5.580683998542086e-17,
+          "maximum_pole_kernel_relative_residual": 4.613174274733688e-16,
+          "minimum_positive_frequency_residue_denominator": 0.9532682809041861,
+          "ordered_poles_imag": [
+            -2.1441182163073336e-15,
+            -1.2235221516498918e-16,
+            -3.7777796111834914e-16,
+            1.556225667320404e-16,
+            -3.320866663876218e-16,
+            5.681776352554131e-16,
+            -7.184456982795706e-16,
+            3.8857805861880464e-16
+          ],
+          "ordered_poles_real": [
+            -38.42034805890226,
+            -10.518000817253045,
+            -6.56264523778254,
+            -5.209442107722742,
+            5.20944210772274,
+            6.562645237782536,
+            10.518000817253078,
+            38.42034805890226
+          ],
+          "plus_minus_pairing_relative_error": 8.787336135626342e-16,
+          "pole_count": 8.0,
+          "positive_pole_count": 4.0,
+          "real_pole_count": 8.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 10.0,
+        "t": 0.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.06156738046330333,
+        "minimum_kinetic_eigenvalue": 0.006584282754979655,
+        "offshell_inverse_residual": 5.1611308085314425e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 7.439467160771414e-17,
+          "maximum_pole_kernel_relative_residual": 6.677891299570809e-19,
+          "minimum_positive_frequency_residue_denominator": 0.9351673759621288,
+          "ordered_poles_imag": [
+            2.858269176896112e-13,
+            -3.368137439779322e-14,
+            2.9810312294660395e-14,
+            5.843701531114991e-16,
+            7.536028743802151e-16,
+            -1.2712053631958042e-14,
+            5.329070518200751e-15,
+            -2.8562482240479525e-13
+          ],
+          "ordered_poles_real": [
+            -3842.034805890227,
+            -87.99298624427686,
+            -70.65301075568097,
+            -61.946856138221996,
+            61.94685613822199,
+            70.65301075568095,
+            87.99298624427702,
+            3842.0348058902273
+          ],
+          "plus_minus_pairing_relative_error": 1.183610817622205e-16,
+          "pole_count": 8.0,
+          "positive_pole_count": 4.0,
+          "real_pole_count": 8.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 100.0,
+        "t": 0.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.4326932715957582,
+        "minimum_kinetic_eigenvalue": 0.03749954077737257,
+        "offshell_inverse_residual": 2.3583147432578286e-14,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.0012738104734175077,
+          "maximum_pole_kernel_relative_residual": 1.624574512630551e-18,
+          "minimum_positive_frequency_residue_denominator": 0.5678742258587849,
+          "ordered_poles_imag": [
+            3.469446951953614e-18,
+            -5.862066075585722e-18,
+            -4.350333664399661e-17,
+            -1.6140539542507977,
+            1.6140539542508017,
+            -4.350299055758291e-17,
+            -2.0585731033701353e-15,
+            2.3418766925686896e-17
+          ],
+          "ordered_poles_real": [
+            -1267.1068325576366,
+            -0.6962307686732448,
+            -5.991611877119932e-06,
+            1.7957416642764486e-16,
+            3.3306690738754696e-15,
+            5.9916118771173676e-06,
+            0.6962307686732446,
+            1267.1068325576366
+          ],
+          "plus_minus_pairing_relative_error": 4.198084149262767e-18,
+          "pole_count": 8.0,
+          "positive_pole_count": 2.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 2.0
+        },
+        "q_over_H": 0.01,
+        "t": 2.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.4327038276940768,
+        "minimum_kinetic_eigenvalue": 0.03749981900795622,
+        "offshell_inverse_residual": 3.4130355490047364e-15,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.012738127257357948,
+          "maximum_pole_kernel_relative_residual": 7.048987700119136e-17,
+          "minimum_positive_frequency_residue_denominator": 0.0011983223754237385,
+          "ordered_poles_imag": [
+            -2.2570092250732495e-16,
+            1.996965386646829e-15,
+            4.367617528164923e-17,
+            1.6141560686886707,
+            -1.614156068688672,
+            4.368170084814108e-17,
+            -4.1509967617613125e-16,
+            1.0470396005794265e-16
+          ],
+          "ordered_poles_real": [
+            -126.71847565004379,
+            -0.6970063927206901,
+            -0.0005991611877118608,
+            -5.551115123125783e-16,
+            1.3322676295501878e-15,
+            0.0005991611877118692,
+            0.6970063927206882,
+            126.71847565004347
+          ],
+          "plus_minus_pairing_relative_error": 2.467192140251722e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 3.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 0.1,
+        "t": 2.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.4337606627667394,
+        "minimum_kinetic_eigenvalue": 0.037482366443183236,
+        "offshell_inverse_residual": 1.807157757924843e-15,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.12718496952479488,
+          "maximum_pole_kernel_relative_residual": 1.7237980640675237e-16,
+          "minimum_positive_frequency_residue_denominator": 0.11983223754237296,
+          "ordered_poles_imag": [
+            -7.173081573164097e-16,
+            -2.0688568830718674e-15,
+            -9.288363507046563e-17,
+            1.623144155185513,
+            -1.623144155185514,
+            -8.823233784323788e-17,
+            -6.566526683893704e-16,
+            -1.4155343563970746e-15
+          ],
+          "ordered_poles_real": [
+            -12.762075277056065,
+            -0.7688109545117853,
+            -0.059916118771186494,
+            -1.378807886656486e-15,
+            6.606122000601558e-16,
+            0.05991611877118648,
+            0.7688109545117866,
+            12.76207527705605
+          ],
+          "plus_minus_pairing_relative_error": 1.1259938055465113e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 3.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 1.0,
+        "t": 2.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.47875728080541347,
+        "minimum_kinetic_eigenvalue": 0.03581524994831754,
+        "offshell_inverse_residual": 2.1970088341170365e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 8.338329840576667e-17,
+          "maximum_pole_kernel_relative_residual": 6.233866296510042e-16,
+          "minimum_positive_frequency_residue_denominator": 0.24553247057834382,
+          "ordered_poles_imag": [
+            4.996003610813204e-16,
+            4.942496328155735e-16,
+            2.667724605645176e-16,
+            -4.826352271706342e-16,
+            -2.3423073713036914e-16,
+            -3.5765225043983984e-17,
+            3.178880769727499e-16,
+            -2.22044604925032e-16
+          ],
+          "ordered_poles_real": [
+            -5.991611877118652,
+            -3.77095369371342,
+            -2.6497275796959694,
+            -0.9320293738955101,
+            0.9320293738955112,
+            2.6497275796959756,
+            3.770953693713424,
+            5.991611877118653
+          ],
+          "plus_minus_pairing_relative_error": 1.0383748516490816e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 4.0,
+          "real_pole_count": 8.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 10.0,
+        "t": 2.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.06150227513557166,
+        "minimum_kinetic_eigenvalue": 0.00658372404458773,
+        "offshell_inverse_residual": 6.071096242914058e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 1.3461770287064336e-16,
+          "maximum_pole_kernel_relative_residual": 2.307998019585747e-16,
+          "minimum_positive_frequency_residue_denominator": 0.3785146409288875,
+          "ordered_poles_imag": [
+            8.065770273901762e-14,
+            -8.881784197001252e-16,
+            2.7966972387772234e-15,
+            -4.929257414569566e-16,
+            8.606312991097173e-16,
+            2.606241182350829e-15,
+            -1.3435280680326313e-15,
+            -7.771561172376199e-14
+          ],
+          "ordered_poles_real": [
+            -599.1611877118648,
+            -27.99747137179897,
+            -26.247370565448623,
+            -23.89230014576524,
+            23.892300145765287,
+            26.247370565448644,
+            27.99747137179897,
+            599.1611877118651
+          ],
+          "plus_minus_pairing_relative_error": 3.7951842314643876e-16,
+          "pole_count": 8.0,
+          "positive_pole_count": 4.0,
+          "real_pole_count": 8.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 100.0,
+        "t": 2.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.20411464361696158,
+        "minimum_kinetic_eigenvalue": 0.03749879029213556,
+        "offshell_inverse_residual": 2.3882200721405216e-15,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 1.0,
+          "maximum_pole_kernel_relative_residual": 5.036359389857214e-19,
+          "minimum_positive_frequency_residue_denominator": 0.31183749585536324,
+          "ordered_poles_imag": [
+            -3.502481151152446e-15,
+            4.772555924826336e-16,
+            -1.6662957538338535e-18,
+            -885.5829841975553,
+            885.582984197555,
+            -1.6662124253942573e-18,
+            -4.3567484170390436e-16,
+            6.913326975683219e-15
+          ],
+          "ordered_poles_real": [
+            -1.3926127090622176,
+            -0.10339983988528118,
+            -1.7469929237198662e-06,
+            8.526512829121202e-14,
+            2.2737367544323206e-13,
+            1.7469929237196752e-06,
+            0.10339983988528188,
+            1.3926127090622225
+          ],
+          "plus_minus_pairing_relative_error": 5.224489597338621e-16,
+          "pole_count": 8.0,
+          "positive_pole_count": 2.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 2.0
+        },
+        "q_over_H": 0.01,
+        "t": 4.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.20411763956068654,
+        "minimum_kinetic_eigenvalue": 0.037499811809832466,
+        "offshell_inverse_residual": 5.342933512587956e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 1.0,
+          "maximum_pole_kernel_relative_residual": 1.2570173018860605e-17,
+          "minimum_positive_frequency_residue_denominator": 0.00034939858474395595,
+          "ordered_poles_imag": [
+            2.1105547558395778e-16,
+            -1.5964268489255996e-16,
+            4.723426227709113e-18,
+            88.57201344833695,
+            -88.57201344833693,
+            4.685271820965071e-18,
+            1.0502448518782621e-16,
+            -4.50066118005846e-17
+          ],
+          "ordered_poles_real": [
+            -1.3926109074011659,
+            -0.10399097033362263,
+            -0.0001746992923719763,
+            -5.684341886080802e-14,
+            -3.907985046680551e-14,
+            0.00017469929237197798,
+            0.10399097033362226,
+            1.3926109074011679
+          ],
+          "plus_minus_pairing_relative_error": 1.094817743159802e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 3.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 0.1,
+        "t": 4.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.20441742590361026,
+        "minimum_kinetic_eigenvalue": 0.03748239698169199,
+        "offshell_inverse_residual": 1.7735577925581335e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 1.0,
+          "maximum_pole_kernel_relative_residual": 1.2806540085004609e-15,
+          "minimum_positive_frequency_residue_denominator": 0.0349398584743954,
+          "ordered_poles_imag": [
+            -3.058925785420184e-17,
+            3.20883510381871e-17,
+            -3.134683649634169e-18,
+            -9.004653184594147,
+            9.004653184594149,
+            -3.660770488593005e-20,
+            4.315221793990414e-17,
+            1.2608716664957516e-17
+          ],
+          "ordered_poles_real": [
+            -1.3929473674141675,
+            -0.15178127195140217,
+            -0.017469929237197708,
+            -3.1086244689504383e-15,
+            -1.7763568394002505e-15,
+            0.0174699292371977,
+            0.1517812719514021,
+            1.3929473674141652
+          ],
+          "plus_minus_pairing_relative_error": 5.772494318578083e-16,
+          "pole_count": 8.0,
+          "positive_pole_count": 3.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 1.0,
+        "t": 4.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.2363263579298974,
+        "minimum_kinetic_eigenvalue": 0.03581791590651559,
+        "offshell_inverse_residual": 1.422080255363321e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.4664844423083332,
+          "maximum_pole_kernel_relative_residual": 1.4226502691812887e-15,
+          "minimum_positive_frequency_residue_denominator": 3.000942000231163,
+          "ordered_poles_imag": [
+            2.955633694055449e-16,
+            -2.775557561562892e-17,
+            -7.51126774547087e-17,
+            0.9293525377611264,
+            -0.929352537761126,
+            -3.734081175014928e-16,
+            -1.0408340855860843e-17,
+            5.64636502954304e-17
+          ],
+          "ordered_poles_real": [
+            -1.9922476581691664,
+            -1.7469929237197699,
+            -1.138008224718099,
+            -5.551115123125783e-16,
+            -3.0531133177191805e-16,
+            1.1380082247181011,
+            1.7469929237197699,
+            1.9922476581691637
+          ],
+          "plus_minus_pairing_relative_error": 1.3490736478446537e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 3.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 10.0,
+        "t": 4.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.06153511332222816,
+        "minimum_kinetic_eigenvalue": 0.006585328157449129,
+        "offshell_inverse_residual": 2.5584479574214984e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 1.5760528069042396e-16,
+          "maximum_pole_kernel_relative_residual": 4.244067748319043e-16,
+          "minimum_positive_frequency_residue_denominator": 0.20016742637179435,
+          "ordered_poles_imag": [
+            -2.4424906541753444e-14,
+            2.54387285656951e-16,
+            6.191726769050649e-16,
+            -2.8724186949614307e-16,
+            -9.067456068970661e-16,
+            2.2030451871508425e-16,
+            5.551115123125783e-17,
+            2.7533531010703892e-14
+          ],
+          "ordered_poles_real": [
+            -174.6992923719771,
+            -15.059538448745975,
+            -14.034799082118031,
+            -13.02411345580675,
+            13.024113455806766,
+            14.034799082118038,
+            15.059538448745958,
+            174.6992923719771
+          ],
+          "plus_minus_pairing_relative_error": 1.0169629853403137e-16,
+          "pole_count": 8.0,
+          "positive_pole_count": 4.0,
+          "real_pole_count": 8.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 100.0,
+        "t": 4.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.15990994213998316,
+        "minimum_kinetic_eigenvalue": 0.03749621000537651,
+        "offshell_inverse_residual": 2.1448861059505816e-14,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.0020335510238989655,
+          "maximum_pole_kernel_relative_residual": 6.543936752449119e-17,
+          "minimum_positive_frequency_residue_denominator": 97.43761042652606,
+          "ordered_poles_imag": [
+            1.304512053934559e-15,
+            6.062621443821591e-17,
+            -2.642165310267702,
+            2.6421653102677074,
+            1.1034031552860486,
+            -1.1034031552860495,
+            6.062647255189836e-17,
+            2.886579864025407e-15
+          ],
+          "ordered_poles_real": [
+            -1299.2864596049471,
+            -8.346833671291062e-07,
+            -3.2637923413370614e-14,
+            -1.865174681370263e-14,
+            2.3253302696171554e-15,
+            3.2559800012047673e-14,
+            8.346833671220748e-07,
+            1299.2864596049499
+          ],
+          "plus_minus_pairing_relative_error": 2.0999890393784744e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 1.0,
+          "real_pole_count": 4.0,
+          "zero_pole_count": 2.0
+        },
+        "q_over_H": 0.01,
+        "t": 6.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.15991164886289386,
+        "minimum_kinetic_eigenvalue": 0.037499785670897214,
+        "offshell_inverse_residual": 3.550997552759352e-15,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.02031574254414574,
+          "maximum_pole_kernel_relative_residual": 1.8072924652133046e-17,
+          "minimum_positive_frequency_residue_denominator": 0.00016693667342510053,
+          "ordered_poles_imag": [
+            8.881784197001252e-16,
+            -3.324121575367643e-17,
+            -1.1033324853889932,
+            1.1033324853889963,
+            -2.6407888160924253,
+            2.6407888160924213,
+            -3.323994520425555e-17,
+            -1.3652273755937472e-15
+          ],
+          "ordered_poles_real": [
+            -129.9873145347279,
+            -8.346833671256782e-05,
+            -4.256144879468061e-15,
+            8.820735603202345e-17,
+            3.681170700722268e-15,
+            5.3290705182007506e-15,
+            8.346833671255027e-05,
+            129.98731453472755
+          ],
+          "plus_minus_pairing_relative_error": 2.6238010071596605e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 2.0,
+          "real_pole_count": 4.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 0.1,
+        "t": 6.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.16008238411033718,
+        "minimum_kinetic_eigenvalue": 0.03748236314154863,
+        "offshell_inverse_residual": 1.7258255329418998e-14,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.18491666549338828,
+          "maximum_pole_kernel_relative_residual": 6.174449960136925e-17,
+          "minimum_positive_frequency_residue_denominator": 0.016693667342511917,
+          "ordered_poles_imag": [
+            -1.1657341758564144e-15,
+            -2.7836529869344936e-16,
+            -2.5170235634751084,
+            2.5170235634751075,
+            1.0961523419337718,
+            -1.0961523419337724,
+            -2.782676965506345e-16,
+            2.3314683517128287e-15
+          ],
+          "ordered_poles_real": [
+            -13.611664242156177,
+            -0.008346833671255856,
+            -5.724231059448151e-15,
+            -5.321369135158485e-15,
+            7.854560940330962e-16,
+            7.723810407450625e-15,
+            0.008346833671255958,
+            13.61166424215616
+          ],
+          "plus_minus_pairing_relative_error": 1.3078325791348151e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 2.0,
+          "real_pole_count": 4.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 1.0,
+        "t": 6.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.17777923369656728,
+        "minimum_kinetic_eigenvalue": 0.03581499146807115,
+        "offshell_inverse_residual": 1.280720919187165e-15,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.3112880658876349,
+          "maximum_pole_kernel_relative_residual": 1.4406316000943082e-16,
+          "minimum_positive_frequency_residue_denominator": 0.09397770140782008,
+          "ordered_poles_imag": [
+            4.163336342344337e-16,
+            -2.1003185542465424e-15,
+            -2.5673907444456745e-16,
+            1.1620729810696275,
+            -1.1620729810696264,
+            6.158268339717665e-17,
+            -1.1161542510931179e-15,
+            -4.570996359198887e-16
+          ],
+          "ordered_poles_real": [
+            -3.7331112510079207,
+            -0.889703697658118,
+            -0.8346833671255908,
+            -9.80859143576246e-17,
+            2.842372871910882e-15,
+            0.8346833671255905,
+            0.8897036976581156,
+            3.733111251007929
+          ],
+          "plus_minus_pairing_relative_error": 2.260257704086268e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 3.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 10.0,
+        "t": 6.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.06130113131953579,
+        "minimum_kinetic_eigenvalue": 0.006583568808003011,
+        "offshell_inverse_residual": 3.0660961402148164e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 6.916586523021192e-17,
+          "maximum_pole_kernel_relative_residual": 1.2196346219102831e-15,
+          "minimum_positive_frequency_residue_denominator": 0.14320243687672168,
+          "ordered_poles_imag": [
+            -7.196601785564886e-16,
+            -6.818038780091825e-16,
+            1.2019232360683202e-15,
+            -2.2423191516239016e-15,
+            -4.440892098500626e-16,
+            5.773159728050814e-15,
+            -5.56678062588876e-15,
+            -2.2402939237489433e-16
+          ],
+          "ordered_poles_real": [
+            -83.46833671255905,
+            -10.990084156020457,
+            -10.42092638175501,
+            -7.53609828782701,
+            7.536098287826997,
+            10.42092638175499,
+            10.99008415602046,
+            83.46833671255912
+          ],
+          "plus_minus_pairing_relative_error": 8.513472627704988e-16,
+          "pole_count": 8.0,
+          "positive_pole_count": 4.0,
+          "real_pole_count": 8.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 100.0,
+        "t": 6.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.12531328220985213,
+        "minimum_kinetic_eigenvalue": 0.03749506450940451,
+        "offshell_inverse_residual": 8.91341598519667e-14,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.0020935009323548863,
+          "maximum_pole_kernel_relative_residual": 2.413444595397785e-18,
+          "minimum_positive_frequency_residue_denominator": 48.3127807140765,
+          "ordered_poles_imag": [
+            5.551115123125783e-17,
+            2.2639949680751865e-18,
+            -1.3487366829418126,
+            1.3487366829418153,
+            -0.6950202825013805,
+            0.6950202825013813,
+            2.263871105606796e-18,
+            5.551115123125783e-17
+          ],
+          "ordered_poles_real": [
+            -644.2493825043016,
+            -5.837764942809973e-07,
+            -9.183192400952223e-15,
+            -8.43769498715119e-15,
+            1.6991661718907306e-16,
+            8.37304369979807e-15,
+            5.837764942791775e-07,
+            644.2493825043002
+          ],
+          "plus_minus_pairing_relative_error": 2.1175682805839438e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 1.0,
+          "real_pole_count": 4.0,
+          "zero_pole_count": 2.0
+        },
+        "q_over_H": 0.01,
+        "t": 8.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.12531447445501856,
+        "minimum_kinetic_eigenvalue": 0.03749977436596412,
+        "offshell_inverse_residual": 3.764315463494006e-15,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.02092187552823335,
+          "maximum_pole_kernel_relative_residual": 6.189955371777838e-18,
+          "minimum_positive_frequency_residue_denominator": 0.00011675529885603136,
+          "ordered_poles_imag": [
+            -1.124100812432971e-15,
+            -2.2519263065239217e-17,
+            1.3483464921682815,
+            -0.6949061429905393,
+            -1.348346492168281,
+            0.6949061429905389,
+            -2.2537807531006035e-17,
+            1.07032438467769e-15
+          ],
+          "ordered_poles_real": [
+            -64.4467313816457,
+            -5.837764942800176e-05,
+            -1.8616255245524148e-15,
+            -5.234257038216894e-16,
+            -4.440892098500976e-16,
+            1.3445448429261224e-15,
+            5.837764942801568e-05,
+            64.44673138164562
+          ],
+          "plus_minus_pairing_relative_error": 1.3230328896679955e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 2.0,
+          "real_pole_count": 4.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 0.1,
+        "t": 8.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.1254337358107728,
+        "minimum_kinetic_eigenvalue": 0.03748237800202442,
+        "offshell_inverse_residual": 4.091336124083322e-15,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.19620908185175107,
+          "maximum_pole_kernel_relative_residual": 2.618838492958377e-17,
+          "minimum_positive_frequency_residue_denominator": 0.011675529885601768,
+          "ordered_poles_imag": [
+            1.9984014443252818e-15,
+            4.7786959346589755e-17,
+            0.6835139301060532,
+            -0.6835139301060534,
+            -1.3131771665728378,
+            1.313177166572837,
+            4.892387443911724e-17,
+            -5.551115123125783e-17
+          ],
+          "ordered_poles_real": [
+            -6.692744057408256,
+            -0.005837764942800863,
+            -2.419772829304807e-15,
+            -5.220656750523007e-17,
+            1.5543027344480129e-15,
+            2.8710548199424004e-15,
+            0.005837764942800884,
+            6.69274405740826
+          ],
+          "plus_minus_pairing_relative_error": 6.744030862839541e-16,
+          "pole_count": 8.0,
+          "positive_pole_count": 2.0,
+          "real_pole_count": 4.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 1.0,
+        "t": 8.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.13772531879929695,
+        "minimum_kinetic_eigenvalue": 0.03581629533785272,
+        "offshell_inverse_residual": 3.556993460607266e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 0.416775531136803,
+          "maximum_pole_kernel_relative_residual": 2.8191329741325713e-16,
+          "minimum_positive_frequency_residue_denominator": 0.08582217456486771,
+          "ordered_poles_imag": [
+            -3.469446951953614e-16,
+            2.9662292722492227e-16,
+            6.844111251763176e-17,
+            -0.7953544070100165,
+            0.7953544070100169,
+            1.4012462699890758e-17,
+            4.968471981903163e-17,
+            -5.602072625232601e-16
+          ],
+          "ordered_poles_real": [
+            -1.9083519726808185,
+            -0.6561576228449291,
+            -0.5837764942800877,
+            -1.0009926859669674e-15,
+            -9.547309560320686e-16,
+            0.5837764942800875,
+            0.6561576228449306,
+            1.9083519726808258
+          ],
+          "plus_minus_pairing_relative_error": 3.868998969326438e-15,
+          "pole_count": 8.0,
+          "positive_pole_count": 3.0,
+          "real_pole_count": 6.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 10.0,
+        "t": 8.0
+      },
+      {
+        "constraint_minimum_singular_value": 0.061259479216032656,
+        "minimum_kinetic_eigenvalue": 0.00658435241025969,
+        "offshell_inverse_residual": 3.395837688188096e-16,
+        "pole_diagnostics": {
+          "maximum_abs_imaginary_pole_over_scale": 8.282000055236124e-17,
+          "maximum_pole_kernel_relative_residual": 3.85231110812695e-16,
+          "minimum_positive_frequency_residue_denominator": 0.12074083602518591,
+          "ordered_poles_imag": [
+            4.5016074201598144e-15,
+            -4.440892098500626e-16,
+            7.045011032927443e-16,
+            -2.9282132274488504e-15,
+            1.938223477026487e-15,
+            1.0867797977364002e-15,
+            -2.3814309795431904e-16,
+            -4.834836957873234e-15
+          ],
+          "ordered_poles_real": [
+            -58.37764942800873,
+            -8.731682557755798,
+            -8.342693648845387,
+            -7.038137479581395,
+            7.038137479581401,
+            8.342693648845385,
+            8.731682557755798,
+            58.37764942800872
+          ],
+          "plus_minus_pairing_relative_error": 1.2184863584487703e-16,
+          "pole_count": 8.0,
+          "positive_pole_count": 4.0,
+          "real_pole_count": 8.0,
+          "zero_pole_count": 0.0
+        },
+        "q_over_H": 100.0,
+        "t": 8.0
+      }
+    ],
+    "parameter_scope": "Dimensionless representative branch only. K_Q=gamma=M_star_sq=1 is a diagnostic normalization for the factorized Pi block and is not a physical parameter selection."
+  },
+  "scientific_boundary": "The local adiabatic inverse quadratic kernels and propagators are constructed in the finite-q physical basis and in the separate exact q=0 projected sector. This is a representative dimensionless pole/residue audit, not a physical parameter selection, scattering amplitude, unitarity bound, strong-coupling scale or cutoff.",
+  "stage": "B_PHYSICAL_QUADRATIC_PROPAGATORS",
+  "subgate_status": "HOLD_LOCAL_ADIABATIC_PHYSICAL_QUADRATIC_PROPAGATORS",
+  "symbolic_result": {
+    "determinant_factorization": "det D_4=det D_(Xi,Q_rho,Q_chi)*(K_Q*omega^2-gamma*q_phys^4/M_star_sq)",
+    "exact_q0_coordinate": "Matrix([[2*lambda4**2*rho**6/(2*lambda4*rho**4 + 8*m_squared*rho**2 + 2*lambda6*rho**6/(3*Lambda**2)) + 2*lambda4*lambda6*rho**8/(2*Lambda**2*lambda4*rho**4 + 8*Lambda**2*m_squared*rho**2 + 2*lambda6*rho**6/3) + 2*lambda4*m_squared*rho**4/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + 2*lambda4*mu**2*rho**4/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - 3*lambda4*rho**2/2 + 2*lambda6**2*rho**10/(8*Lambda**4*lambda4*rho**4 + 32*Lambda**4*m_squared*rho**2 + 8*Lambda**2*lambda6*rho**6/3) + 2*lambda6*m_squared*rho**6/(Lambda**2*lambda4*rho**4 + 4*Lambda**2*m_squared*rho**2 + lambda6*rho**6/3) + 2*lambda6*mu**2*rho**6/(Lambda**2*lambda4*rho**4 + 4*Lambda**2*m_squared*rho**2 + lambda6*rho**6/3) + 2*m_squared**2*rho**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + 4*m_squared*mu**2*rho**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - m_squared + 2*mu**4*rho**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + mu**2 - 5*lambda6*rho**4/(4*Lambda**2), -lambda4*mu*rho**3*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - lambda6*mu*rho**5*rho_dot/(Lambda**2*lambda4*rho**4 + 4*Lambda**2*m_squared*rho**2 + lambda6*rho**6/3) - 2*m_squared*mu*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - 2*mu**3*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - 2*mu*rho_dot/rho], [-lambda4*mu*rho**3*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - lambda6*mu*rho**5*rho_dot/(Lambda**2*lambda4*rho**4 + 4*Lambda**2*m_squared*rho**2 + lambda6*rho**6/3) - 2*m_squared*mu*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - 2*mu**3*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - 2*mu*rho_dot/rho, 2*mu**2*rho_dot**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + rho_dot**2/rho**2]])",
+    "exact_q0_gyroscopic": "Matrix([[0, mu*(-12*Lambda**2*lambda4*rho**4 - 36*Lambda**2*m_squared*rho**2 - 12*Lambda**2*mu**2*rho**2 - 12*Lambda**2*rho_dot**2 - 5*lambda6*rho**6)/(rho**2*(3*Lambda**2*lambda4*rho**2 + 12*Lambda**2*m_squared + lambda6*rho**4))], [mu*(12*Lambda**2*lambda4*rho**4 + 36*Lambda**2*m_squared*rho**2 + 12*Lambda**2*mu**2*rho**2 + 12*Lambda**2*rho_dot**2 + 5*lambda6*rho**6)/(rho**2*(3*Lambda**2*lambda4*rho**2 + 12*Lambda**2*m_squared + lambda6*rho**4)), 0]])",
+    "exact_q0_kinetic": "Matrix([[2*rho_dot**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + 1, 2*mu*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2))], [2*mu*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)), 2*mu**2*rho**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + 1]])",
+    "exact_q0_projected_constraint_inverse": "Matrix([[-1/(lambda4*rho**4/4 + m_squared*rho**2 + lambda6*rho**6/(12*Lambda**2)), 0], [0, 0]])",
+    "exact_q0_reduced_lagrangian": "Q_chi**2*mu**2*rho_dot**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + Q_chi**2*rho_dot**2/(2*rho**2) - 2*Q_chi*Q_chi_dot*mu**2*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - Q_chi*Q_chi_dot*rho_dot/rho - Q_chi*Q_rho*lambda4*mu*rho**3*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - Q_chi*Q_rho*lambda6*mu*rho**5*rho_dot/(Lambda**2*lambda4*rho**4 + 4*Lambda**2*m_squared*rho**2 + lambda6*rho**6/3) - 2*Q_chi*Q_rho*m_squared*mu*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - 2*Q_chi*Q_rho*mu**3*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - 2*Q_chi*Q_rho*mu*rho_dot/rho - 2*Q_chi*Q_rho_dot*mu*rho_dot**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + Q_chi_dot**2*mu**2*rho**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + Q_chi_dot**2/2 + Q_chi_dot*Q_rho*lambda4*mu*rho**4/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + Q_chi_dot*Q_rho*lambda6*mu*rho**6/(Lambda**2*lambda4*rho**4 + 4*Lambda**2*m_squared*rho**2 + lambda6*rho**6/3) + 2*Q_chi_dot*Q_rho*m_squared*mu*rho**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + 2*Q_chi_dot*Q_rho*mu**3*rho**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + 2*Q_chi_dot*Q_rho*mu + 2*Q_chi_dot*Q_rho_dot*mu*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + Q_rho**2*lambda4**2*rho**6/(2*lambda4*rho**4 + 8*m_squared*rho**2 + 2*lambda6*rho**6/(3*Lambda**2)) + Q_rho**2*lambda4*lambda6*rho**8/(2*Lambda**2*lambda4*rho**4 + 8*Lambda**2*m_squared*rho**2 + 2*lambda6*rho**6/3) + Q_rho**2*lambda4*m_squared*rho**4/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + Q_rho**2*lambda4*mu**2*rho**4/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - 3*Q_rho**2*lambda4*rho**2/4 + Q_rho**2*lambda6**2*rho**10/(8*Lambda**4*lambda4*rho**4 + 32*Lambda**4*m_squared*rho**2 + 8*Lambda**2*lambda6*rho**6/3) + Q_rho**2*lambda6*m_squared*rho**6/(Lambda**2*lambda4*rho**4 + 4*Lambda**2*m_squared*rho**2 + lambda6*rho**6/3) + Q_rho**2*lambda6*mu**2*rho**6/(Lambda**2*lambda4*rho**4 + 4*Lambda**2*m_squared*rho**2 + lambda6*rho**6/3) + Q_rho**2*m_squared**2*rho**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + 2*Q_rho**2*m_squared*mu**2*rho**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) - Q_rho**2*m_squared/2 + Q_rho**2*mu**4*rho**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + Q_rho**2*mu**2/2 + Q_rho*Q_rho_dot*lambda4*rho**3*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + Q_rho*Q_rho_dot*lambda6*rho**5*rho_dot/(Lambda**2*lambda4*rho**4 + 4*Lambda**2*m_squared*rho**2 + lambda6*rho**6/3) + 2*Q_rho*Q_rho_dot*m_squared*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + 2*Q_rho*Q_rho_dot*mu**2*rho*rho_dot/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + Q_rho_dot**2*rho_dot**2/(lambda4*rho**4/2 + 2*m_squared*rho**2 + lambda6*rho**6/(6*Lambda**2)) + Q_rho_dot**2/2 - 5*Q_rho**2*lambda6*rho**4/(8*Lambda**2)",
+    "finite_q_coordinate": "Matrix([[(-8064*C_14*D_123*H**4*Lambda**6*M_cos_sq**2*q_phys**2 + 384*C_14*D_123*H**2*Lambda**6*M_P_sq*M_cos_sq*q_phys**4 - 432*C_14*D_123*H**2*Lambda**6*M_cos_sq*lambda4*q_phys**2*rho**4 - 1728*C_14*D_123*H**2*Lambda**6*M_cos_sq*m_squared*q_phys**2*rho**2 + 3072*C_14*D_123*H**2*Lambda**6*M_cos_sq*mu**2*q_phys**2*rho**2 + 3072*C_14*D_123*H**2*Lambda**6*M_cos_sq*q_phys**2*rho_dot**2 - 144*C_14*D_123*H**2*Lambda**4*M_cos_sq*lambda6*q_phys**2*rho**6 - 768*C_14*D_123*H*Lambda**6*M_cos_sq*lambda4*q_phys**2*rho**3*rho_dot - 1536*C_14*D_123*H*Lambda**6*M_cos_sq*m_squared*q_phys**2*rho*rho_dot - 768*C_14*D_123*H*Lambda**6*M_cos_sq*mu**2*q_phys**2*rho*rho_dot - 384*C_14*D_123*H*Lambda**4*M_cos_sq*lambda6*q_phys**2*rho**5*rho_dot + 48*C_14*D_123*Lambda**6*M_cos_sq*lambda4**2*q_phys**2*rho**6 + 192*C_14*D_123*Lambda**6*M_cos_sq*lambda4*m_squared*q_phys**2*rho**4 - 192*C_14*D_123*Lambda**6*M_cos_sq*lambda4*mu**2*q_phys**2*rho**4 - 288*C_14*D_123*Lambda**6*M_cos_sq*lambda4*q_phys**2*rho**2*rho_dot**2 + 192*C_14*D_123*Lambda**6*M_cos_sq*m_squared**2*q_phys**2*rho**2 - 384*C_14*D_123*Lambda**6*M_cos_sq*m_squared*mu**2*q_phys**2*rho**2 - 192*C_14*D_123*Lambda**6*M_cos_sq*m_squared*q_phys**2*rho_dot**2 + 192*C_14*D_123*Lambda**6*M_cos_sq*mu**4*q_phys**2*rho**2 - 192*C_14*D_123*Lambda**6*M_cos_sq*mu**2*q_phys**4*rho**4*zeta_align - 192*C_14*D_123*Lambda**6*M_cos_sq*mu**2*q_phys**4*rho**2 - 576*C_14*D_123*Lambda**6*M_cos_sq*mu**2*q_phys**2*rho_dot**2 - 192*C_14*D_123*Lambda**6*M_cos_sq*q_phys**4*rho_dot**2 - 288*C_14*D_123*Lambda**6*mu**4*q_phys**2*rho**4 - 576*C_14*D_123*Lambda**6*mu**2*q_phys**2*rho**2*rho_dot**2 - 288*C_14*D_123*Lambda**6*q_phys**2*rho_dot**4 + 48*C_14*D_123*Lambda**4*M_cos_sq*lambda4*lambda6*q_phys**2*rho**8 + 96*C_14*D_123*Lambda**4*M_cos_sq*lambda6*m_squared*q_phys**2*rho**6 - 96*C_14*D_123*Lambda**4*M_cos_sq*lambda6*mu**2*q_phys**2*rho**6 - 240*C_14*D_123*Lambda**4*M_cos_sq*lambda6*q_phys**2*rho**4*rho_dot**2 + 12*C_14*D_123*Lambda**2*M_cos_sq*lambda6**2*q_phys**2*rho**10 + 768*C_14*H**4*Lambda**6*M_cos_sq**3*q_phys**2 - 6912*D_123*H**6*Lambda**6*M_cos_sq**3 - 4608*D_123*H**4*Lambda**6*M_P_sq*M_cos_sq**2*q_phys**2 + 2016*D_123*H**4*Lambda**6*M_cos_sq**2*lambda4*rho**4 + 8064*D_123*H**4*Lambda**6*M_cos_sq**2*m_squared*rho**2 + 2304*D_123*H**4*Lambda**6*M_cos_sq**2*mu**2*rho**2 + 2304*D_123*H**4*Lambda**6*M_cos_sq**2*rho_dot**2 + 672*D_123*H**4*Lambda**4*M_cos_sq**2*lambda6*rho**6 - 768*D_123*H**2*Lambda**6*M_P_sq**2*M_cos_sq*q_phys**4 - 96*D_123*H**2*Lambda**6*M_P_sq*M_cos_sq*lambda4*q_phys**2*rho**4 - 384*D_123*H**2*Lambda**6*M_P_sq*M_cos_sq*m_squared*q_phys**2*rho**2 + 768*D_123*H**2*Lambda**6*M_P_sq*M_cos_sq*mu**2*q_phys**2*rho**2 + 768*D_123*H**2*Lambda**6*M_P_sq*M_cos_sq*q_phys**2*rho_dot**2 + 108*D_123*H**2*Lambda**6*M_cos_sq*lambda4**2*rho**8 + 864*D_123*H**2*Lambda**6*M_cos_sq*lambda4*m_squared*rho**6 - 768*D_123*H**2*Lambda**6*M_cos_sq*lambda4*mu**2*rho**6 - 768*D_123*H**2*Lambda**6*M_cos_sq*lambda4*rho**4*rho_dot**2 + 1728*D_123*H**2*Lambda**6*M_cos_sq*m_squared**2*rho**4 - 3072*D_123*H**2*Lambda**6*M_cos_sq*m_squared*mu**2*rho**4 - 3072*D_123*H**2*Lambda**6*M_cos_sq*m_squared*rho**2*rho_dot**2 - 192*D_123*H**2*Lambda**6*M_cos_sq*mu**4*rho**4 - 384*D_123*H**2*Lambda**6*M_cos_sq*mu**2*rho**2*rho_dot**2 - 192*D_123*H**2*Lambda**6*M_cos_sq*rho_dot**4 - 32*D_123*H**2*Lambda**4*M_P_sq*M_cos_sq*lambda6*q_phys**2*rho**6 + 72*D_123*H**2*Lambda**4*M_cos_sq*lambda4*lambda6*rho**10 + 288*D_123*H**2*Lambda**4*M_cos_sq*lambda6*m_squared*rho**8 - 256*D_123*H**2*Lambda**4*M_cos_sq*lambda6*mu**2*rho**8 - 256*D_123*H**2*Lambda**4*M_cos_sq*lambda6*rho**6*rho_dot**2 + 12*D_123*H**2*Lambda**2*M_cos_sq*lambda6**2*rho**12 + 192*D_123*H*Lambda**6*M_cos_sq*lambda4**2*rho**7*rho_dot + 1152*D_123*H*Lambda**6*M_cos_sq*lambda4*m_squared*rho**5*rho_dot + 192*D_123*H*Lambda**6*M_cos_sq*lambda4*mu**2*rho**5*rho_dot + 1536*D_123*H*Lambda**6*M_cos_sq*m_squared**2*rho**3*rho_dot + 768*D_123*H*Lambda**6*M_cos_sq*m_squared*mu**2*rho**3*rho_dot + 160*D_123*H*Lambda**4*M_cos_sq*lambda4*lambda6*rho**9*rho_dot + 512*D_123*H*Lambda**4*M_cos_sq*lambda6*m_squared*rho**7*rho_dot + 64*D_123*H*Lambda**4*M_cos_sq*lambda6*mu**2*rho**7*rho_dot + 32*D_123*H*Lambda**2*M_cos_sq*lambda6**2*rho**11*rho_dot - 12*D_123*Lambda**6*M_cos_sq*lambda4**3*rho**10 - 96*D_123*Lambda**6*M_cos_sq*lambda4**2*m_squared*rho**8 + 48*D_123*Lambda**6*M_cos_sq*lambda4**2*mu**2*rho**8 + 72*D_123*Lambda**6*M_cos_sq*lambda4**2*rho**6*rho_dot**2 - 240*D_123*Lambda**6*M_cos_sq*lambda4*m_squared**2*rho**6 + 288*D_123*Lambda**6*M_cos_sq*lambda4*m_squared*mu**2*rho**6 + 336*D_123*Lambda**6*M_cos_sq*lambda4*m_squared*rho**4*rho_dot**2 - 48*D_123*Lambda**6*M_cos_sq*lambda4*mu**4*rho**6 + 48*D_123*Lambda**6*M_cos_sq*lambda4*mu**2*q_phys**2*rho**8*zeta_align + 48*D_123*Lambda**6*M_cos_sq*lambda4*mu**2*q_phys**2*rho**6 + 144*D_123*Lambda**6*M_cos_sq*lambda4*mu**2*rho**4*rho_dot**2 + 48*D_123*Lambda**6*M_cos_sq*lambda4*q_phys**2*rho**4*rho_dot**2 - 192*D_123*Lambda**6*M_cos_sq*m_squared**3*rho**4 + 384*D_123*Lambda**6*M_cos_sq*m_squared**2*mu**2*rho**4 + 192*D_123*Lambda**6*M_cos_sq*m_squared**2*rho**2*rho_dot**2 - 192*D_123*Lambda**6*M_cos_sq*m_squared*mu**4*rho**4 + 192*D_123*Lambda**6*M_cos_sq*m_squared*mu**2*q_phys**2*rho**6*zeta_align + 192*D_123*Lambda**6*M_cos_sq*m_squared*mu**2*q_phys**2*rho**4 + 576*D_123*Lambda**6*M_cos_sq*m_squared*mu**2*rho**2*rho_dot**2 + 192*D_123*Lambda**6*M_cos_sq*m_squared*q_phys**2*rho**2*rho_dot**2 + 72*D_123*Lambda**6*lambda4*mu**4*rho**8 + 144*D_123*Lambda**6*lambda4*mu**2*rho**6*rho_dot**2 + 72*D_123*Lambda**6*lambda4*rho**4*rho_dot**4 + 288*D_123*Lambda**6*m_squared*mu**4*rho**6 + 576*D_123*Lambda**6*m_squared*mu**2*rho**4*rho_dot**2 + 288*D_123*Lambda**6*m_squared*rho**2*rho_dot**4 - 16*D_123*Lambda**4*M_cos_sq*lambda4**2*lambda6*rho**12 - 88*D_123*Lambda**4*M_cos_sq*lambda4*lambda6*m_squared*rho**10 + 40*D_123*Lambda**4*M_cos_sq*lambda4*lambda6*mu**2*rho**10 + 84*D_123*Lambda**4*M_cos_sq*lambda4*lambda6*rho**8*rho_dot**2 - 112*D_123*Lambda**4*M_cos_sq*lambda6*m_squared**2*rho**8 + 128*D_123*Lambda**4*M_cos_sq*lambda6*m_squared*mu**2*rho**8 + 256*D_123*Lambda**4*M_cos_sq*lambda6*m_squared*rho**6*rho_dot**2 - 16*D_123*Lambda**4*M_cos_sq*lambda6*mu**4*rho**8 + 16*D_123*Lambda**4*M_cos_sq*lambda6*mu**2*q_phys**2*rho**10*zeta_align + 16*D_123*Lambda**4*M_cos_sq*lambda6*mu**2*q_phys**2*rho**8 + 48*D_123*Lambda**4*M_cos_sq*lambda6*mu**2*rho**6*rho_dot**2 + 16*D_123*Lambda**4*M_cos_sq*lambda6*q_phys**2*rho**6*rho_dot**2 + 24*D_123*Lambda**4*lambda6*mu**4*rho**10 + 48*D_123*Lambda**4*lambda6*mu**2*rho**8*rho_dot**2 + 24*D_123*Lambda**4*lambda6*rho**6*rho_dot**4 - 7*D_123*Lambda**2*M_cos_sq*lambda4*lambda6**2*rho**14 - 20*D_123*Lambda**2*M_cos_sq*lambda6**2*m_squared*rho**12 + 8*D_123*Lambda**2*M_cos_sq*lambda6**2*mu**2*rho**12 + 20*D_123*Lambda**2*M_cos_sq*lambda6**2*rho**10*rho_dot**2 - D_123*M_cos_sq*lambda6**3*rho**16 - 23040*H**6*Lambda**6*M_cos_sq**4 + 4608*H**4*Lambda**6*M_P_sq*M_cos_sq**3*q_phys**2 - 1920*H**4*Lambda**6*M_cos_sq**3*lambda4*rho**4 - 7680*H**4*Lambda**6*M_cos_sq**3*m_squared*rho**2 + 10752*H**4*Lambda**6*M_cos_sq**3*mu**2*rho**2 + 10752*H**4*Lambda**6*M_cos_sq**3*rho_dot**2 - 640*H**4*Lambda**4*M_cos_sq**3*lambda6*rho**6 - 3072*H**3*Lambda**6*M_cos_sq**3*lambda4*rho**3*rho_dot - 6144*H**3*Lambda**6*M_cos_sq**3*m_squared*rho*rho_dot - 3072*H**3*Lambda**6*M_cos_sq**3*mu**2*rho*rho_dot - 1536*H**3*Lambda**4*M_cos_sq**3*lambda6*rho**5*rho_dot + 192*H**2*Lambda**6*M_cos_sq**3*lambda4**2*rho**6 + 768*H**2*Lambda**6*M_cos_sq**3*lambda4*m_squared*rho**4 - 768*H**2*Lambda**6*M_cos_sq**3*lambda4*mu**2*rho**4 - 1152*H**2*Lambda**6*M_cos_sq**3*lambda4*rho**2*rho_dot**2 + 768*H**2*Lambda**6*M_cos_sq**3*m_squared**2*rho**2 - 1536*H**2*Lambda**6*M_cos_sq**3*m_squared*mu**2*rho**2 - 768*H**2*Lambda**6*M_cos_sq**3*m_squared*rho_dot**2 + 768*H**2*Lambda**6*M_cos_sq**3*mu**4*rho**2 - 768*H**2*Lambda**6*M_cos_sq**3*mu**2*q_phys**2*rho**4*zeta_align - 768*H**2*Lambda**6*M_cos_sq**3*mu**2*q_phys**2*rho**2 - 2304*H**2*Lambda**6*M_cos_sq**3*mu**2*rho_dot**2 - 768*H**2*Lambda**6*M_cos_sq**3*q_phys**2*rho_dot**2 - 1152*H**2*Lambda**6*M_cos_sq**2*mu**4*rho**4 - 2304*H**2*Lambda**6*M_cos_sq**2*mu**2*rho**2*rho_dot**2 - 1152*H**2*Lambda**6*M_cos_sq**2*rho_dot**4 + 192*H**2*Lambda**4*M_cos_sq**3*lambda4*lambda6*rho**8 + 384*H**2*Lambda**4*M_cos_sq**3*lambda6*m_squared*rho**6 - 384*H**2*Lambda**4*M_cos_sq**3*lambda6*mu**2*rho**6 - 960*H**2*Lambda**4*M_cos_sq**3*lambda6*rho**4*rho_dot**2 + 48*H**2*Lambda**2*M_cos_sq**3*lambda6**2*rho**10)/(16*Lambda**4*M_cos_sq*q_phys**2*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), (-72*C_14*D_123*H*Lambda**4*lambda4*q_phys**2*rho**3 - 144*C_14*D_123*H*Lambda**4*m_squared*q_phys**2*rho - 48*C_14*D_123*H*Lambda**4*mu**2*q_phys**2*rho - 36*C_14*D_123*H*Lambda**2*lambda6*q_phys**2*rho**5 - 72*C_14*D_123*Lambda**4*lambda4*q_phys**2*rho**2*rho_dot - 48*C_14*D_123*Lambda**4*m_squared*q_phys**2*rho_dot - 144*C_14*D_123*Lambda**4*mu**2*q_phys**2*rho_dot - 48*C_14*D_123*Lambda**4*q_phys**4*rho_dot - 60*C_14*D_123*Lambda**2*lambda6*q_phys**2*rho**4*rho_dot + 96*C_14*H**2*Lambda**4*M_cos_sq*q_phys**2*rho_dot + 144*D_123*H**3*Lambda**4*M_cos_sq*lambda4*rho**3 + 288*D_123*H**3*Lambda**4*M_cos_sq*m_squared*rho + 288*D_123*H**3*Lambda**4*M_cos_sq*mu**2*rho + 72*D_123*H**3*Lambda**2*M_cos_sq*lambda6*rho**5 + 48*D_123*H*Lambda**4*M_P_sq*lambda4*q_phys**2*rho**3 + 96*D_123*H*Lambda**4*M_P_sq*m_squared*q_phys**2*rho + 96*D_123*H*Lambda**4*M_P_sq*mu**2*q_phys**2*rho + 18*D_123*H*Lambda**4*lambda4**2*rho**7 + 108*D_123*H*Lambda**4*lambda4*m_squared*rho**5 - 12*D_123*H*Lambda**4*lambda4*mu**2*rho**5 - 24*D_123*H*Lambda**4*lambda4*rho**3*rho_dot**2 + 144*D_123*H*Lambda**4*m_squared**2*rho**3 - 48*D_123*H*Lambda**4*m_squared*rho*rho_dot**2 - 48*D_123*H*Lambda**4*mu**4*rho**3 - 48*D_123*H*Lambda**4*mu**2*rho*rho_dot**2 + 24*D_123*H*Lambda**2*M_P_sq*lambda6*q_phys**2*rho**5 + 15*D_123*H*Lambda**2*lambda4*lambda6*rho**9 + 48*D_123*H*Lambda**2*lambda6*m_squared*rho**7 - 8*D_123*H*Lambda**2*lambda6*mu**2*rho**7 - 12*D_123*H*Lambda**2*lambda6*rho**5*rho_dot**2 + 3*D_123*H*lambda6**2*rho**11 + 18*D_123*Lambda**4*lambda4**2*rho**6*rho_dot + 84*D_123*Lambda**4*lambda4*m_squared*rho**4*rho_dot + 36*D_123*Lambda**4*lambda4*mu**2*rho**4*rho_dot + 12*D_123*Lambda**4*lambda4*q_phys**2*rho**4*rho_dot + 48*D_123*Lambda**4*m_squared**2*rho**2*rho_dot + 144*D_123*Lambda**4*m_squared*mu**2*rho**2*rho_dot + 48*D_123*Lambda**4*m_squared*q_phys**2*rho**2*rho_dot + 21*D_123*Lambda**2*lambda4*lambda6*rho**8*rho_dot + 64*D_123*Lambda**2*lambda6*m_squared*rho**6*rho_dot + 12*D_123*Lambda**2*lambda6*mu**2*rho**6*rho_dot + 4*D_123*Lambda**2*lambda6*q_phys**2*rho**6*rho_dot + 5*D_123*lambda6**2*rho**10*rho_dot + 576*H**4*Lambda**4*M_cos_sq**2*rho_dot - 384*H**3*Lambda**4*M_cos_sq**2*lambda4*rho**3 - 768*H**3*Lambda**4*M_cos_sq**2*m_squared*rho - 384*H**3*Lambda**4*M_cos_sq**2*mu**2*rho - 192*H**3*Lambda**2*M_cos_sq**2*lambda6*rho**5 + 192*H**2*Lambda**4*M_P_sq*M_cos_sq*q_phys**2*rho_dot - 288*H**2*Lambda**4*M_cos_sq**2*lambda4*rho**2*rho_dot - 192*H**2*Lambda**4*M_cos_sq**2*m_squared*rho_dot - 576*H**2*Lambda**4*M_cos_sq**2*mu**2*rho_dot - 192*H**2*Lambda**4*M_cos_sq**2*q_phys**2*rho_dot - 24*H**2*Lambda**4*M_cos_sq*lambda4*rho**4*rho_dot - 96*H**2*Lambda**4*M_cos_sq*m_squared*rho**2*rho_dot - 96*H**2*Lambda**4*M_cos_sq*mu**2*rho**2*rho_dot - 96*H**2*Lambda**4*M_cos_sq*rho_dot**3 - 240*H**2*Lambda**2*M_cos_sq**2*lambda6*rho**4*rho_dot - 8*H**2*Lambda**2*M_cos_sq*lambda6*rho**6*rho_dot)/(4*Lambda**2*q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), mu*(-12*C_14*D_123*H*Lambda**2*q_phys**2*rho_dot - 12*C_14*D_123*Lambda**2*q_phys**4*rho**3*zeta_align - 12*C_14*D_123*Lambda**2*q_phys**4*rho + 24*C_14*H**2*Lambda**2*M_cos_sq*q_phys**2*rho - 72*D_123*H**3*Lambda**2*M_cos_sq*rho_dot - 24*D_123*H*Lambda**2*M_P_sq*q_phys**2*rho_dot + 3*D_123*H*Lambda**2*lambda4*rho**4*rho_dot + 12*D_123*H*Lambda**2*m_squared*rho**2*rho_dot + 12*D_123*H*Lambda**2*mu**2*rho**2*rho_dot + 12*D_123*H*Lambda**2*rho_dot**3 + D_123*H*lambda6*rho**6*rho_dot + 3*D_123*Lambda**2*lambda4*q_phys**2*rho**7*zeta_align + 3*D_123*Lambda**2*lambda4*q_phys**2*rho**5 + 12*D_123*Lambda**2*m_squared*q_phys**2*rho**5*zeta_align + 12*D_123*Lambda**2*m_squared*q_phys**2*rho**3 + D_123*lambda6*q_phys**2*rho**9*zeta_align + D_123*lambda6*q_phys**2*rho**7 + 144*H**4*Lambda**2*M_cos_sq**2*rho + 48*H**2*Lambda**2*M_P_sq*M_cos_sq*q_phys**2*rho - 48*H**2*Lambda**2*M_cos_sq**2*q_phys**2*rho**3*zeta_align - 48*H**2*Lambda**2*M_cos_sq**2*q_phys**2*rho - 6*H**2*Lambda**2*M_cos_sq*lambda4*rho**5 - 24*H**2*Lambda**2*M_cos_sq*m_squared*rho**3 - 24*H**2*Lambda**2*M_cos_sq*mu**2*rho**3 - 24*H**2*Lambda**2*M_cos_sq*rho*rho_dot**2 - 2*H**2*M_cos_sq*lambda6*rho**7)/(q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2))], [(-72*C_14*D_123*H*Lambda**4*lambda4*q_phys**2*rho**3 - 144*C_14*D_123*H*Lambda**4*m_squared*q_phys**2*rho - 48*C_14*D_123*H*Lambda**4*mu**2*q_phys**2*rho - 36*C_14*D_123*H*Lambda**2*lambda6*q_phys**2*rho**5 - 72*C_14*D_123*Lambda**4*lambda4*q_phys**2*rho**2*rho_dot - 48*C_14*D_123*Lambda**4*m_squared*q_phys**2*rho_dot - 144*C_14*D_123*Lambda**4*mu**2*q_phys**2*rho_dot - 48*C_14*D_123*Lambda**4*q_phys**4*rho_dot - 60*C_14*D_123*Lambda**2*lambda6*q_phys**2*rho**4*rho_dot + 96*C_14*H**2*Lambda**4*M_cos_sq*q_phys**2*rho_dot + 144*D_123*H**3*Lambda**4*M_cos_sq*lambda4*rho**3 + 288*D_123*H**3*Lambda**4*M_cos_sq*m_squared*rho + 288*D_123*H**3*Lambda**4*M_cos_sq*mu**2*rho + 72*D_123*H**3*Lambda**2*M_cos_sq*lambda6*rho**5 + 48*D_123*H*Lambda**4*M_P_sq*lambda4*q_phys**2*rho**3 + 96*D_123*H*Lambda**4*M_P_sq*m_squared*q_phys**2*rho + 96*D_123*H*Lambda**4*M_P_sq*mu**2*q_phys**2*rho + 18*D_123*H*Lambda**4*lambda4**2*rho**7 + 108*D_123*H*Lambda**4*lambda4*m_squared*rho**5 - 12*D_123*H*Lambda**4*lambda4*mu**2*rho**5 - 24*D_123*H*Lambda**4*lambda4*rho**3*rho_dot**2 + 144*D_123*H*Lambda**4*m_squared**2*rho**3 - 48*D_123*H*Lambda**4*m_squared*rho*rho_dot**2 - 48*D_123*H*Lambda**4*mu**4*rho**3 - 48*D_123*H*Lambda**4*mu**2*rho*rho_dot**2 + 24*D_123*H*Lambda**2*M_P_sq*lambda6*q_phys**2*rho**5 + 15*D_123*H*Lambda**2*lambda4*lambda6*rho**9 + 48*D_123*H*Lambda**2*lambda6*m_squared*rho**7 - 8*D_123*H*Lambda**2*lambda6*mu**2*rho**7 - 12*D_123*H*Lambda**2*lambda6*rho**5*rho_dot**2 + 3*D_123*H*lambda6**2*rho**11 + 18*D_123*Lambda**4*lambda4**2*rho**6*rho_dot + 84*D_123*Lambda**4*lambda4*m_squared*rho**4*rho_dot + 36*D_123*Lambda**4*lambda4*mu**2*rho**4*rho_dot + 12*D_123*Lambda**4*lambda4*q_phys**2*rho**4*rho_dot + 48*D_123*Lambda**4*m_squared**2*rho**2*rho_dot + 144*D_123*Lambda**4*m_squared*mu**2*rho**2*rho_dot + 48*D_123*Lambda**4*m_squared*q_phys**2*rho**2*rho_dot + 21*D_123*Lambda**2*lambda4*lambda6*rho**8*rho_dot + 64*D_123*Lambda**2*lambda6*m_squared*rho**6*rho_dot + 12*D_123*Lambda**2*lambda6*mu**2*rho**6*rho_dot + 4*D_123*Lambda**2*lambda6*q_phys**2*rho**6*rho_dot + 5*D_123*lambda6**2*rho**10*rho_dot + 576*H**4*Lambda**4*M_cos_sq**2*rho_dot - 384*H**3*Lambda**4*M_cos_sq**2*lambda4*rho**3 - 768*H**3*Lambda**4*M_cos_sq**2*m_squared*rho - 384*H**3*Lambda**4*M_cos_sq**2*mu**2*rho - 192*H**3*Lambda**2*M_cos_sq**2*lambda6*rho**5 + 192*H**2*Lambda**4*M_P_sq*M_cos_sq*q_phys**2*rho_dot - 288*H**2*Lambda**4*M_cos_sq**2*lambda4*rho**2*rho_dot - 192*H**2*Lambda**4*M_cos_sq**2*m_squared*rho_dot - 576*H**2*Lambda**4*M_cos_sq**2*mu**2*rho_dot - 192*H**2*Lambda**4*M_cos_sq**2*q_phys**2*rho_dot - 24*H**2*Lambda**4*M_cos_sq*lambda4*rho**4*rho_dot - 96*H**2*Lambda**4*M_cos_sq*m_squared*rho**2*rho_dot - 96*H**2*Lambda**4*M_cos_sq*mu**2*rho**2*rho_dot - 96*H**2*Lambda**4*M_cos_sq*rho_dot**3 - 240*H**2*Lambda**2*M_cos_sq**2*lambda6*rho**4*rho_dot - 8*H**2*Lambda**2*M_cos_sq*lambda6*rho**6*rho_dot)/(4*Lambda**2*q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), (18*C_14*D_123*Lambda**4*lambda4*q_phys**2*rho**2 + 12*C_14*D_123*Lambda**4*m_squared*q_phys**2 - 12*C_14*D_123*Lambda**4*mu**2*q_phys**2 + 12*C_14*D_123*Lambda**4*q_phys**4 + 15*C_14*D_123*Lambda**2*lambda6*q_phys**2*rho**4 - 12*C_14*Lambda**4*q_phys**2*rho_dot**2 - 3*D_123*Lambda**4*lambda4**2*rho**6/2 - 9*D_123*Lambda**4*lambda4*m_squared*rho**4 + 15*D_123*Lambda**4*lambda4*mu**2*rho**4 - 3*D_123*Lambda**4*lambda4*q_phys**2*rho**4 + 36*D_123*Lambda**4*m_squared*mu**2*rho**2 - 12*D_123*Lambda**4*m_squared*q_phys**2*rho**2 + 12*D_123*Lambda**4*mu**4*rho**2 - 9*D_123*Lambda**2*lambda4*lambda6*rho**8/4 - 10*D_123*Lambda**2*lambda6*m_squared*rho**6 + 7*D_123*Lambda**2*lambda6*mu**2*rho**6 - D_123*Lambda**2*lambda6*q_phys**2*rho**6 - D_123*lambda6**2*rho**10/2 + 72*H**2*Lambda**4*M_cos_sq**2*lambda4*rho**2 + 48*H**2*Lambda**4*M_cos_sq**2*m_squared - 48*H**2*Lambda**4*M_cos_sq**2*mu**2 + 48*H**2*Lambda**4*M_cos_sq**2*q_phys**2 + 60*H**2*Lambda**2*M_cos_sq**2*lambda6*rho**4 + 24*H*Lambda**4*M_cos_sq*lambda4*rho**3*rho_dot + 48*H*Lambda**4*M_cos_sq*m_squared*rho*rho_dot + 48*H*Lambda**4*M_cos_sq*mu**2*rho*rho_dot + 12*H*Lambda**2*M_cos_sq*lambda6*rho**5*rho_dot + 3*Lambda**4*lambda4*rho**4*rho_dot**2 + 12*Lambda**4*m_squared*rho**2*rho_dot**2 + Lambda**2*lambda6*rho**6*rho_dot**2)/(Lambda**2*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)), mu*(rho**2*(-12*C_14*Lambda**2*q_phys**2*rho_dot + 12*H*Lambda**2*M_cos_sq*lambda4*rho**3 + 24*H*Lambda**2*M_cos_sq*m_squared*rho + 24*H*Lambda**2*M_cos_sq*mu**2*rho + 6*H*M_cos_sq*lambda6*rho**5 + 3*Lambda**2*lambda4*rho**4*rho_dot + 12*Lambda**2*m_squared*rho**2*rho_dot + lambda6*rho**6*rho_dot) - rho_dot*(-24*C_14*D_123*Lambda**2*q_phys**2 + 12*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 5*D_123*lambda6*rho**6 - 96*H**2*Lambda**2*M_cos_sq**2 + 24*H*Lambda**2*M_cos_sq*rho*rho_dot))/(rho*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2))], [mu*(-12*C_14*D_123*H*Lambda**2*q_phys**2*rho_dot - 12*C_14*D_123*Lambda**2*q_phys**4*rho**3*zeta_align - 12*C_14*D_123*Lambda**2*q_phys**4*rho + 24*C_14*H**2*Lambda**2*M_cos_sq*q_phys**2*rho - 72*D_123*H**3*Lambda**2*M_cos_sq*rho_dot - 24*D_123*H*Lambda**2*M_P_sq*q_phys**2*rho_dot + 3*D_123*H*Lambda**2*lambda4*rho**4*rho_dot + 12*D_123*H*Lambda**2*m_squared*rho**2*rho_dot + 12*D_123*H*Lambda**2*mu**2*rho**2*rho_dot + 12*D_123*H*Lambda**2*rho_dot**3 + D_123*H*lambda6*rho**6*rho_dot + 3*D_123*Lambda**2*lambda4*q_phys**2*rho**7*zeta_align + 3*D_123*Lambda**2*lambda4*q_phys**2*rho**5 + 12*D_123*Lambda**2*m_squared*q_phys**2*rho**5*zeta_align + 12*D_123*Lambda**2*m_squared*q_phys**2*rho**3 + D_123*lambda6*q_phys**2*rho**9*zeta_align + D_123*lambda6*q_phys**2*rho**7 + 144*H**4*Lambda**2*M_cos_sq**2*rho + 48*H**2*Lambda**2*M_P_sq*M_cos_sq*q_phys**2*rho - 48*H**2*Lambda**2*M_cos_sq**2*q_phys**2*rho**3*zeta_align - 48*H**2*Lambda**2*M_cos_sq**2*q_phys**2*rho - 6*H**2*Lambda**2*M_cos_sq*lambda4*rho**5 - 24*H**2*Lambda**2*M_cos_sq*m_squared*rho**3 - 24*H**2*Lambda**2*M_cos_sq*mu**2*rho**3 - 24*H**2*Lambda**2*M_cos_sq*rho*rho_dot**2 - 2*H**2*M_cos_sq*lambda6*rho**7)/(q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), mu*(rho**2*(-12*C_14*Lambda**2*q_phys**2*rho_dot + 12*H*Lambda**2*M_cos_sq*lambda4*rho**3 + 24*H*Lambda**2*M_cos_sq*m_squared*rho + 24*H*Lambda**2*M_cos_sq*mu**2*rho + 6*H*M_cos_sq*lambda6*rho**5 + 3*Lambda**2*lambda4*rho**4*rho_dot + 12*Lambda**2*m_squared*rho**2*rho_dot + lambda6*rho**6*rho_dot) - rho_dot*(-24*C_14*D_123*Lambda**2*q_phys**2 + 12*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 5*D_123*lambda6*rho**6 - 96*H**2*Lambda**2*M_cos_sq**2 + 24*H*Lambda**2*M_cos_sq*rho*rho_dot))/(rho*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)), (-48*H*Lambda**2*M_cos_sq*mu**2*rho**3*rho_dot + rho**2*(12*C_14*D_123*Lambda**2*q_phys**4*rho**2*zeta_align + 12*C_14*D_123*Lambda**2*q_phys**4 - 12*C_14*Lambda**2*mu**2*q_phys**2*rho**2 - 3*D_123*Lambda**2*lambda4*q_phys**2*rho**6*zeta_align - 3*D_123*Lambda**2*lambda4*q_phys**2*rho**4 - 12*D_123*Lambda**2*m_squared*q_phys**2*rho**4*zeta_align - 12*D_123*Lambda**2*m_squared*q_phys**2*rho**2 - D_123*lambda6*q_phys**2*rho**8*zeta_align - D_123*lambda6*q_phys**2*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2*q_phys**2*rho**2*zeta_align + 48*H**2*Lambda**2*M_cos_sq**2*q_phys**2 + 3*Lambda**2*lambda4*mu**2*rho**6 + 12*Lambda**2*m_squared*mu**2*rho**4 + lambda6*mu**2*rho**8) + rho_dot**2*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2))/(rho**2*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2))]])",
+    "finite_q_gyroscopic": "Matrix([[0, (-48*C_14*D_123*H*Lambda**4*q_phys**2*rho_dot + 24*C_14*D_123*Lambda**4*lambda4*q_phys**2*rho**3 + 48*C_14*D_123*Lambda**4*m_squared*q_phys**2*rho + 48*C_14*D_123*Lambda**4*mu**2*q_phys**2*rho + 12*C_14*D_123*Lambda**2*lambda6*q_phys**2*rho**5 + 96*C_14*H*Lambda**4*M_cos_sq*q_phys**2*rho_dot - 288*D_123*H**3*Lambda**4*M_cos_sq*rho_dot + 144*D_123*H**2*Lambda**4*M_cos_sq*lambda4*rho**3 + 288*D_123*H**2*Lambda**4*M_cos_sq*m_squared*rho + 288*D_123*H**2*Lambda**4*M_cos_sq*mu**2*rho + 72*D_123*H**2*Lambda**2*M_cos_sq*lambda6*rho**5 - 96*D_123*H*Lambda**4*M_P_sq*q_phys**2*rho_dot + 12*D_123*H*Lambda**4*lambda4*rho**4*rho_dot + 48*D_123*H*Lambda**4*m_squared*rho**2*rho_dot + 48*D_123*H*Lambda**4*mu**2*rho**2*rho_dot + 48*D_123*H*Lambda**4*rho_dot**3 + 4*D_123*H*Lambda**2*lambda6*rho**6*rho_dot - 6*D_123*Lambda**4*lambda4**2*rho**7 - 36*D_123*Lambda**4*lambda4*m_squared*rho**5 - 36*D_123*Lambda**4*lambda4*mu**2*rho**5 - 24*D_123*Lambda**4*lambda4*rho**3*rho_dot**2 - 48*D_123*Lambda**4*m_squared**2*rho**3 - 96*D_123*Lambda**4*m_squared*mu**2*rho**3 - 48*D_123*Lambda**4*m_squared*rho*rho_dot**2 - 48*D_123*Lambda**4*mu**4*rho**3 - 48*D_123*Lambda**4*mu**2*rho*rho_dot**2 - 5*D_123*Lambda**2*lambda4*lambda6*rho**9 - 16*D_123*Lambda**2*lambda6*m_squared*rho**7 - 16*D_123*Lambda**2*lambda6*mu**2*rho**7 - 12*D_123*Lambda**2*lambda6*rho**5*rho_dot**2 - D_123*lambda6**2*rho**11 + 576*H**3*Lambda**4*M_cos_sq**2*rho_dot - 24*H*Lambda**4*M_cos_sq*lambda4*rho**4*rho_dot - 96*H*Lambda**4*M_cos_sq*m_squared*rho**2*rho_dot - 96*H*Lambda**4*M_cos_sq*mu**2*rho**2*rho_dot - 96*H*Lambda**4*M_cos_sq*rho_dot**3 - 8*H*Lambda**2*M_cos_sq*lambda6*rho**6*rho_dot)/(4*Lambda**2*q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), mu*(-D_123*H*rho*(-12*C_14*Lambda**2*q_phys**2 - 72*H**2*Lambda**2*M_cos_sq - 24*Lambda**2*M_P_sq*q_phys**2 + 3*Lambda**2*lambda4*rho**4 + 12*Lambda**2*m_squared*rho**2 + 12*Lambda**2*mu**2*rho**2 + 12*Lambda**2*rho_dot**2 + lambda6*rho**6) + 2*H*M_cos_sq*rho*(-12*C_14*Lambda**2*q_phys**2 - 72*H**2*Lambda**2*M_cos_sq + 3*Lambda**2*lambda4*rho**4 + 12*Lambda**2*m_squared*rho**2 + 12*Lambda**2*mu**2*rho**2 + 12*Lambda**2*rho_dot**2 + lambda6*rho**6) - rho_dot*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2 - 24*H**2*Lambda**2*M_cos_sq*(3*D_123 - 2*M_cos_sq)))/(q_phys*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2))], [(48*C_14*D_123*H*Lambda**4*q_phys**2*rho_dot - 24*C_14*D_123*Lambda**4*lambda4*q_phys**2*rho**3 - 48*C_14*D_123*Lambda**4*m_squared*q_phys**2*rho - 48*C_14*D_123*Lambda**4*mu**2*q_phys**2*rho - 12*C_14*D_123*Lambda**2*lambda6*q_phys**2*rho**5 - 96*C_14*H*Lambda**4*M_cos_sq*q_phys**2*rho_dot + 288*D_123*H**3*Lambda**4*M_cos_sq*rho_dot - 144*D_123*H**2*Lambda**4*M_cos_sq*lambda4*rho**3 - 288*D_123*H**2*Lambda**4*M_cos_sq*m_squared*rho - 288*D_123*H**2*Lambda**4*M_cos_sq*mu**2*rho - 72*D_123*H**2*Lambda**2*M_cos_sq*lambda6*rho**5 + 96*D_123*H*Lambda**4*M_P_sq*q_phys**2*rho_dot - 12*D_123*H*Lambda**4*lambda4*rho**4*rho_dot - 48*D_123*H*Lambda**4*m_squared*rho**2*rho_dot - 48*D_123*H*Lambda**4*mu**2*rho**2*rho_dot - 48*D_123*H*Lambda**4*rho_dot**3 - 4*D_123*H*Lambda**2*lambda6*rho**6*rho_dot + 6*D_123*Lambda**4*lambda4**2*rho**7 + 36*D_123*Lambda**4*lambda4*m_squared*rho**5 + 36*D_123*Lambda**4*lambda4*mu**2*rho**5 + 24*D_123*Lambda**4*lambda4*rho**3*rho_dot**2 + 48*D_123*Lambda**4*m_squared**2*rho**3 + 96*D_123*Lambda**4*m_squared*mu**2*rho**3 + 48*D_123*Lambda**4*m_squared*rho*rho_dot**2 + 48*D_123*Lambda**4*mu**4*rho**3 + 48*D_123*Lambda**4*mu**2*rho*rho_dot**2 + 5*D_123*Lambda**2*lambda4*lambda6*rho**9 + 16*D_123*Lambda**2*lambda6*m_squared*rho**7 + 16*D_123*Lambda**2*lambda6*mu**2*rho**7 + 12*D_123*Lambda**2*lambda6*rho**5*rho_dot**2 + D_123*lambda6**2*rho**11 - 576*H**3*Lambda**4*M_cos_sq**2*rho_dot + 24*H*Lambda**4*M_cos_sq*lambda4*rho**4*rho_dot + 96*H*Lambda**4*M_cos_sq*m_squared*rho**2*rho_dot + 96*H*Lambda**4*M_cos_sq*mu**2*rho**2*rho_dot + 96*H*Lambda**4*M_cos_sq*rho_dot**3 + 8*H*Lambda**2*M_cos_sq*lambda6*rho**6*rho_dot)/(4*Lambda**2*q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), 0, mu*(-24*C_14*D_123*Lambda**2*q_phys**2 + 12*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + 5*D_123*lambda6*rho**6 - 96*H**2*Lambda**2*M_cos_sq**2)/(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)], [mu*(D_123*H*rho*(-12*C_14*Lambda**2*q_phys**2 - 72*H**2*Lambda**2*M_cos_sq - 24*Lambda**2*M_P_sq*q_phys**2 + 3*Lambda**2*lambda4*rho**4 + 12*Lambda**2*m_squared*rho**2 + 12*Lambda**2*mu**2*rho**2 + 12*Lambda**2*rho_dot**2 + lambda6*rho**6) - 2*H*M_cos_sq*rho*(-12*C_14*Lambda**2*q_phys**2 - 72*H**2*Lambda**2*M_cos_sq + 3*Lambda**2*lambda4*rho**4 + 12*Lambda**2*m_squared*rho**2 + 12*Lambda**2*mu**2*rho**2 + 12*Lambda**2*rho_dot**2 + lambda6*rho**6) + rho_dot*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2 - 24*H**2*Lambda**2*M_cos_sq*(3*D_123 - 2*M_cos_sq)))/(q_phys*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)), mu*(24*C_14*D_123*Lambda**2*q_phys**2 - 12*D_123*Lambda**2*lambda4*rho**4 - 36*D_123*Lambda**2*m_squared*rho**2 - 12*D_123*Lambda**2*mu**2*rho**2 - 12*D_123*Lambda**2*rho_dot**2 - 5*D_123*lambda6*rho**6 + 96*H**2*Lambda**2*M_cos_sq**2)/(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2), 0]])",
+    "finite_q_kinetic": "Matrix([[(-2*H**2*M_cos_sq*(-36*C_14*D_123*Lambda**2*q_phys**2 + 24*C_14*Lambda**2*M_cos_sq*q_phys**2 - 216*D_123*H**2*Lambda**2*M_cos_sq + 9*D_123*Lambda**2*lambda4*rho**4 + 36*D_123*Lambda**2*m_squared*rho**2 + 3*D_123*lambda6*rho**6 + 144*H**2*Lambda**2*M_cos_sq**2 - 6*Lambda**2*M_cos_sq*lambda4*rho**4 - 24*Lambda**2*M_cos_sq*m_squared*rho**2 + Lambda**2*mu**2*rho**2*(36*D_123 - 24*M_cos_sq) + Lambda**2*rho_dot**2*(36*D_123 - 24*M_cos_sq) - 2*M_cos_sq*lambda6*rho**6) + (mu**2*rho**2 + rho_dot**2)*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2 - 24*H**2*Lambda**2*M_cos_sq*(3*D_123 - 2*M_cos_sq)))/(q_phys**2*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)), D_123*rho_dot*(12*C_14*Lambda**2*q_phys**2 + 72*H**2*Lambda**2*M_cos_sq - 3*Lambda**2*lambda4*rho**4 - 12*Lambda**2*m_squared*rho**2 - 12*Lambda**2*mu**2*rho**2 - 12*Lambda**2*rho_dot**2 - lambda6*rho**6)/(q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), D_123*mu*rho*(12*C_14*Lambda**2*q_phys**2 + 72*H**2*Lambda**2*M_cos_sq - 3*Lambda**2*lambda4*rho**4 - 12*Lambda**2*m_squared*rho**2 - 12*Lambda**2*mu**2*rho**2 - 12*Lambda**2*rho_dot**2 - lambda6*rho**6)/(q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2))], [D_123*rho_dot*(12*C_14*Lambda**2*q_phys**2 + 72*H**2*Lambda**2*M_cos_sq - 3*Lambda**2*lambda4*rho**4 - 12*Lambda**2*m_squared*rho**2 - 12*Lambda**2*mu**2*rho**2 - 12*Lambda**2*rho_dot**2 - lambda6*rho**6)/(q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), (-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), 12*D_123*Lambda**2*mu*rho*rho_dot/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)], [D_123*mu*rho*(12*C_14*Lambda**2*q_phys**2 + 72*H**2*Lambda**2*M_cos_sq - 3*Lambda**2*lambda4*rho**4 - 12*Lambda**2*m_squared*rho**2 - 12*Lambda**2*mu**2*rho**2 - 12*Lambda**2*rho_dot**2 - lambda6*rho**6)/(q_phys*(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)), 12*D_123*Lambda**2*mu*rho*rho_dot/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), (-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)]])",
+    "force_inverse": "K_Q*omega**2 - gamma*q_phys**4/M_star_sq",
+    "inverse_kernel_convention": "D(omega,q)=omega^2 K+i omega(P-P^T)+C; G_F=i[D+i epsilon]^{-1}",
+    "transform": "Matrix([[H/q_phys, 0, 0], [rho_dot/q_phys, 1, 0], [mu/q_phys, 0, 1/rho]])",
+    "transform_dot": "Matrix([[(H**2 + (-mu**2*rho**2 - rho_dot**2)/(2*M_cos_sq))/q_phys, 0, 0], [(-2*H*rho_dot - lambda4*rho**3/2 - m_squared*rho + mu**2*rho - lambda6*rho**5/(4*Lambda**2))/q_phys, 0, 0], [(H*mu + mu*(-3*H - 2*rho_dot/rho))/q_phys, 0, -rho_dot/rho**2]])",
+    "variables_exact_q0": [
+      "Q_rho",
+      "Q_chi",
+      "Pi"
+    ],
+    "variables_finite_q": [
+      "Xi",
+      "Q_rho",
+      "Q_chi",
+      "Pi"
+    ]
+  }
+}

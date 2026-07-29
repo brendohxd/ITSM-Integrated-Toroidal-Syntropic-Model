@@ -51,9 +51,16 @@ factorized analytic cubic and reduced-quartic momentum kernels are verified
 for their declared nonzero-momentum domains. Separate exact homogeneous
 projectors remove the scalar shift and `Xi` gauge coordinates while retaining
 the lapse constraint and `(Q_rho,Q_chi,Pi)` subspace. The exact zero-gradient
-`|grad(pi)|^3` Taylor kernel, local adiabatic propagators,
-exchange-plus-reduced-contact amplitude, unitarity criterion, and physical
-cutoff remain open.
+`|grad(pi)|^3` Taylor kernel remains open. The finite-`q` physical inverse
+quadratic kernel and separate exact-`q=0` projected response are constructed.
+The fixed-comoving follow-on is numerically converged and verifies the full
+time-dependent physical equations against their canonical Hamiltonian form.
+Frozen-pole exponentiation fails in the nonadiabatic domain. The deepest
+sampled infrared trajectory nevertheless retains a maximum normalized
+phase-space gain of `1.37708e27`, which remains held pending attribution to a
+continuously tracked physical eigenmode and robustness checks. The high-`q`
+trajectory is a controlled adiabatic subset. No exchange-plus-contact
+amplitude, unitarity criterion, or physical cutoff is derived.
 These bounded results do not establish full perturbative stability,
 observational viability, or a completed cosmology.
 
