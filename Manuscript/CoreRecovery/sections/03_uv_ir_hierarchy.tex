@@ -730,10 +730,40 @@ kernels must be transformed leg by leg:
  T^i{}_a(k_1)T^j{}_b(k_2)T^k{}_c(k_3)T^\ell{}_d(k_4)W_{ijk\ell}.
  \label{eq:physical-vertex-projection}
 \end{align}
-The basis and projection map pass.  The explicit projected kernels,
-gauge-regular exchange-plus-contact amplitude and unitarity scale remain open;
-in particular, a homogeneous internal channel may not be inverted as an
-$\Xi$ propagator.
+The basis and projection map pass.  Applying that map to the complete
+analytic interactions gives a factorized cubic kernel and a reduced quartic
+kernel
+\begin{equation}
+ W_{\rm red}=W_{\rm contact}
+ -\sum_{(ab|cd)}B_{ab}(-K)^{\mathsf T}C(K)^{-1}B_{cd}(K),
+ \qquad (ab|cd)=(12|34),(13|24),(14|23),
+ \label{eq:reduced-quartic-momentum-kernel}
+\end{equation}
+where
+$B_{ab}=\partial^3L_3/(\partial\epsilon_a\partial\epsilon_b\partial z_K)$
+is the complete physical two-leg constraint source.  The four-leg contact,
+the pair source, and the three Schur pairings pass in factorized form for
+nonzero external momenta and nonzero $K$.
+
+At exact $K=0$ one must not substitute into the finite-wavenumber inverse.
+The homogeneous scalar-shift coordinate $\Sigma=-D^2\beta$ is absent, just as
+$\Xi$ is absent from the homogeneous physical space.  For $V\ne0$, the audited algebraic prescription is
+\begin{equation}
+ P_z^{(0)}=\operatorname{diag}(1,0),\qquad
+ G_z^{(0)}=\operatorname{diag}\!\left(-\frac{1}{2V},0\right),\qquad
+ P_{\rm phys}^{(0)}=\operatorname{diag}(0,1,1,1),
+ \label{eq:homogeneous-internal-projectors}
+\end{equation}
+on $(\delta N,\Sigma)$ and $(\Xi,Q_\rho,Q_\chi,\Pi)$ respectively.  It
+retains the homogeneous lapse constraint and the
+$(Q_\rho,Q_\chi,\Pi)$ subspace while annihilating the two excluded gauge
+coordinates.  Projector idempotence, the projected constraint-inverse
+identity, the three-pair combinatorics and a finite centre-of-mass lapse-source
+limit are verified.  This supplies the internal-channel rule required by the
+next calculation, but not its propagating quadratic Green functions.  The
+exchange-plus-reduced-contact amplitude and unitarity scale therefore remain
+open; in addition, the exact $|\nabla\pi|^3$ interaction still requires its
+declared local nonzero-gradient background.
 
 \subsection{Causality and cutoff status}
 

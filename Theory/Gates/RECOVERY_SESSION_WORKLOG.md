@@ -710,3 +710,32 @@ substitution.
 momentum kernel, gauge-regular homogeneous internal-channel prescription,
 exchange-plus-contact amplitude and cutoff remain open. UVIR-003 remains in
 progress and MAT-001 remains blocked.
+
+## 2026-07-29 - Reduced quartic momentum kernel and q=0 projectors
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Contact polarization:** polarized the complete analytic `L4[x,z1]`
+functional over four non-collinear legs and applied the time-dependent
+`(Xi,Q_rho,Q_chi,Pi)` map with exact per-leg lapse/shear resolvers.
+
+**Schur assembly:** derived the complete physical two-leg source
+`B_ab=d^3L3/(d epsilon_a d epsilon_b d z_K)` and assembled the three
+finite-channel pairings in
+`W_Schur=-sum B_ab^T C(K)^(-1)B_cd`. A symbolic regression verifies the
+pairing combinatorics and sign.
+
+**Homogeneous channel:** defined separate exact-`q_K=0` projectors that remove
+`Sigma=-D^2 beta` and the homogeneous `Xi` time-translation orbit before
+inversion. The lapse constraint and `(Q_rho,Q_chi,Pi)` physical subspace are
+retained. This is an algebraically audited prescription, not a naive
+finite-`q` substitution or a completed propagating exchange calculation.
+
+**Boundary:** the exact `|grad(pi)|^3` quartic Taylor kernel remains
+nonanalytic at zero gradient. No exchange-plus-contact amplitude, unitarity
+bound, strong-coupling scale, or physical cutoff is claimed.
+
+**Decision:** record
+`PASS_FACTORIZED_FINITE_Q_REDUCED_QUARTIC_KERNEL` and
+`PASS_ALGEBRAIC_GAUGE_REGULAR_Q0_PROJECTOR_PRESCRIPTION`. UVIR-003 remains in
+progress and MAT-001 remains blocked.

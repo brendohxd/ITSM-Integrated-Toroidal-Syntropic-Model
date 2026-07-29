@@ -382,6 +382,28 @@ resolver for every leg, and applies the full time-dependent map to
 The result is `PASS_FACTORIZED_FINITE_Q_PHYSICAL_CUBIC_KERNEL`. The exact
 `|grad(pi)|^3` term has no ordinary Taylor kernel at the homogeneous
 zero-gradient background, and the exactly homogeneous internal `Xi` channel
-is not defined by the finite-`q` map. The reduced quartic momentum kernel,
-gauge-regular exchange-plus-contact amplitude, and physical cutoff remain
-open.
+is not defined by the finite-`q` map. The reduced quartic kernel and exact
+homogeneous projectors are addressed in the next checkpoint; the propagating
+exchange-plus-reduced-contact amplitude and physical cutoff remain open.
+
+## Reduced quartic momentum kernel and homogeneous projectors
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_reduced_quartic_momentum_kernel.py
+```
+
+This polarizes the complete analytic four-leg contact and derives the
+physical two-leg constraint source directly from the verified cubic
+functional. The three Schur pairings are assembled as
+`-B_ab^T C(K)^(-1) B_cd` for nonzero internal momentum.
+
+The result is `PASS_FACTORIZED_FINITE_Q_REDUCED_QUARTIC_KERNEL`. At exact
+zero internal momentum, separate projectors remove the nonexistent
+homogeneous `Sigma=-D^2 beta` coordinate and the `Xi` time-translation orbit,
+while retaining the lapse constraint and `(Q_rho,Q_chi,Pi)` physical
+subspace. This rule is algebraically audited but has not yet been inserted
+into a propagating exchange calculation. The exchange-plus-reduced-contact
+amplitude, unitarity criterion, physical cutoff, and local nonzero-gradient
+exact-`Y` reduction remain open.

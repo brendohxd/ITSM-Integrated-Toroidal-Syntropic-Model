@@ -61,13 +61,15 @@ The correct source is `S2=partial_z L3[x,z1]`, with
 `z1=-C^(-1)J1`. The inverse-Laplacian shift representation remains restricted
 to `q_phys>0`; the homogeneous gauge-orbit result is unchanged.
 
-The complete multi-sector finite-`q` source `S2=partial_z L3[x,z1]` and the
-complete generic `L4[x,z1]` contact functional are now verified. Their
-combination assembles the reduced quartic functional. A regular finite-`q`
-physical-scalar basis and leg-wise projection map are also verified without
-restoring the homogeneous gauge mode. The complete analytic cubic functional
-is now polarized into a factorized finite-`q` physical-basis kernel with
-exact per-leg lapse/shear resolvers. The reduced quartic momentum kernel, a
-gauge-regular homogeneous internal-channel prescription, the constrained
-`2-to-2` amplitude, physical cutoff and local nonzero-gradient exact-`Y`
-reduction remain open. UVIR-003 is in progress and MAT-001 remains blocked.
+The complete multi-sector finite-`q` source `S2=partial_z L3[x,z1]`, generic
+`L4[x,z1]` contact, and regular physical-scalar basis are verified. The
+analytic cubic and reduced quartic functionals are now polarized into
+factorized physical-basis kernels with exact external constraint resolvers.
+The quartic result contains the complete physical pair-source kernel and all
+three finite-channel Schur pairings. At exact zero internal momentum,
+separate algebraic projectors remove `Sigma=-D^2 beta` and the homogeneous
+`Xi` gauge orbit while retaining the lapse constraint and
+`(Q_rho,Q_chi,Pi)` subspace. Local adiabatic propagators, the constrained
+`2-to-2` exchange-plus-reduced-contact amplitude, physical cutoff, and local
+nonzero-gradient exact-`Y` reduction remain open. UVIR-003 is in progress and
+MAT-001 remains blocked.

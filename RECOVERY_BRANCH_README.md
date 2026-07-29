@@ -46,10 +46,14 @@ nonzero-gradient perturbative force analysis. The homogeneous zero-gradient
 force action is verified through direct quartic order. Its source combines
 with the parent block to give the complete finite-`q` dressed source and
 corrected quartic Schur functional. The generic cubic and quartic functionals,
-regular physical-scalar basis, and factorized analytic cubic momentum kernel
-are verified for nonzero external momenta. The exact zero-gradient
-`|grad(pi)|^3` Taylor kernel, reduced quartic momentum kernel, homogeneous
-internal-channel prescription and gauge-regular amplitude remain open.
+regular physical-scalar basis, and
+factorized analytic cubic and reduced-quartic momentum kernels are verified
+for their declared nonzero-momentum domains. Separate exact homogeneous
+projectors remove the scalar shift and `Xi` gauge coordinates while retaining
+the lapse constraint and `(Q_rho,Q_chi,Pi)` subspace. The exact zero-gradient
+`|grad(pi)|^3` Taylor kernel, local adiabatic propagators,
+exchange-plus-reduced-contact amplitude, unitarity criterion, and physical
+cutoff remain open.
 These bounded results do not establish full perturbative stability,
 observational viability, or a completed cosmology.
 

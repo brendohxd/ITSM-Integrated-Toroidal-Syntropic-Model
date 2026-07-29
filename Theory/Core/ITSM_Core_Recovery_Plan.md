@@ -351,18 +351,24 @@ UVIR-003 Stage-B physical-basis result (2026-07-29): **the finite-`q` basis
 `(Xi,Q_rho,Q_chi)` and leg-wise vertex-projection map are verified**. The
 transformed kinetic matrix has a finite positive low-`q` limit over the
 validated representative domain, while the exactly homogeneous `Xi` mode is
-excluded as gauge. Explicit momentum-space vertex projection, the
-exchange-plus-contact amplitude and cutoff remain open. See
+excluded as gauge. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_PHYSICAL_SCALAR_BASIS.md`.
 
 UVIR-003 Stage-B cubic-momentum-kernel result (2026-07-29): **the complete
 analytic cubic functional is polarized into a factorized finite-`q`
 physical-basis kernel with exact per-leg lapse/shear resolvers**. The exact
 `|grad(pi)|^3` term has no ordinary Taylor kernel at zero gradient, and the
-homogeneous internal `Xi` channel is not defined by the finite-`q` map. The
-reduced quartic momentum kernel, gauge-regular internal-channel prescription,
-exchange-plus-contact amplitude and cutoff remain open. See
+homogeneous internal `Xi` channel is not defined by the finite-`q` map. See
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_CUBIC_MOMENTUM_KERNEL.md`.
+
+UVIR-003 Stage-B reduced-quartic result (2026-07-29): **the analytic four-leg
+contact and complete constraint Schur term are assembled as a factorized
+physical-basis momentum kernel**. All three nonzero-channel pairings are
+explicit. At exact zero internal momentum, audited projectors remove `Sigma`
+and the homogeneous `Xi` orbit before inversion. Local adiabatic propagators,
+the exchange-plus-reduced-contact amplitude, unitarity criterion and cutoff
+remain open. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_REDUCED_QUARTIC_MOMENTUM_KERNEL.md`.
 
 ### MAT-001 -- Matter coupling and `C_proj`
 Derive the baryon--phonon vertex and calculate the observable Wilson

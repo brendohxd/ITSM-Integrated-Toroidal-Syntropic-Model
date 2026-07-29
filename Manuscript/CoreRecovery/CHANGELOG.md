@@ -25,6 +25,9 @@ root `CHANGELOG.md` records legacy project history.
   projection map.
 - Added the complete analytic cubic Fourier polarization, exact per-leg
   finite-`q` constraint resolvers, and factorized physical-basis kernel.
+- Added the factorized reduced quartic momentum kernel, complete physical
+  pair-source kernel, three finite-channel Schur pairings, and exact
+  homogeneous constraint/physical projectors.
 - Added the generic three-dimensional gravity/aether lapse/shift dressing
   kernel and its functional source operators at `z1`.
 
@@ -35,18 +38,21 @@ root `CHANGELOG.md` records legacy project history.
   source. The correct source is `S2=partial_z L3[x,z1]`.
 - Reclassified `-J2^T C^(-1)J2/2` as a provisional origin-linear Schur
   component pending the complete finite-`q` constraint dressing.
-- Updated and rebuilt the working manuscript with the corrected dressed
-  source, complete quartic functional, and regular physical-basis boundary.
+- Updated and rebuilt the working manuscript with the corrected dressed source,
+  cubic and reduced-quartic momentum kernels, and the exact homogeneous
+  internal-channel projector boundary.
 
 ### Status boundary
 
-- The complete finite-`q` `S2`, generic `L4[x,z1]`, reduced quartic
-  functional, regular physical-scalar basis, and factorized analytic cubic
-  momentum kernel are verified at `q_phys>0`.
-- The exact `|grad(pi)|^3` Taylor kernel at zero gradient, reduced quartic
-  momentum kernel, homogeneous internal-channel prescription,
-  exchange-plus-contact amplitude and cutoff remain open. This checkpoint
-  does not create a new manuscript version.
+- The complete finite-`q` `S2`, generic `L4[x,z1]`, regular physical-scalar
+  basis, factorized analytic cubic kernel, and factorized reduced quartic
+  momentum kernel are verified for their declared nonzero-momentum domains.
+- Exact homogeneous constraint and physical projectors are defined and
+  algebraically audited; they are not a naive finite-`q` substitution.
+- The exact `|grad(pi)|^3` Taylor kernel at zero gradient, local adiabatic
+  propagators, exchange-plus-reduced-contact amplitude, unitarity criterion,
+  and cutoff remain open. This checkpoint does not create a new manuscript
+  version.
 
 ## 12.0-alpha.4 - 2026-07-29
 
