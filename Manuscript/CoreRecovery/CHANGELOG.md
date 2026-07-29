@@ -7,6 +7,31 @@ root `CHANGELOG.md` records legacy project history.
 
 No unreleased manuscript changes.
 
+## 12.0-alpha.8 - 2026-07-29
+
+### Added
+
+- Added residue-normalized local coupled modes using the positive-pole
+  derivative of the finite-`q` inverse kernel.
+- Added the physical cubic pair-source contraction with two on-shell external
+  legs and one off-shell channel covector.
+- Added sum- and difference-frequency channel prescriptions over 48 admitted
+  equilateral mode/sign cases.
+- Added nonzero-channel inverse-kernel response, pole-separation, constraint
+  margin and external-leg permutation audits.
+
+### Clarified
+
+- Clarified that two coupled external legs produce no factorized `Pi` source
+  in the verified analytic cubic kernel. This does not remove `Pi` from the
+  theory or resolve the held nonanalytic local-gradient vertex.
+
+### Status boundary
+
+- Record `PASS_MODE_PROJECTED_CUBIC_PAIR_SOURCE`.
+- Matched left/right source contraction, channel summation, reduced quartic
+  contact, the physical amplitude and any unitarity scale remain unfinished.
+
 ## 12.0-alpha.7 - 2026-07-29
 
 ### Added
