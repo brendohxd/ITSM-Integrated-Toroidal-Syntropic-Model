@@ -13,8 +13,8 @@ This directory is the manuscript workspace for the
 - `releases/v<version>/` contains immutable source and PDF snapshots.
 
 The current frozen release is
-[`v12.0-alpha.5`](releases/v12.0-alpha.5/). The previous release is
-[`v12.0-alpha.4`](releases/v12.0-alpha.4/); all versioned source and PDF trees
+[`v12.0-alpha.6`](releases/v12.0-alpha.6/). The previous release is
+[`v12.0-alpha.5`](releases/v12.0-alpha.5/); all versioned source and PDF trees
 are immutable snapshots.
 
 ## Versioning rule
@@ -80,10 +80,17 @@ finds that the dominant singular input is `Xi` seeded in every tested case.
 However, each trajectory enters an off-axis complex quartet whose real
 invariant subspace has rank four, preventing a unique continuous rank-two
 split between the gauge-continuation and retained-matter pole pairs.
-Matter-seeded initial subspaces also amplify. The result remains on
-`HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`; it is neither a retained-matter
-instability finding nor a pure gauge-artifact dismissal. The next low-`q`
-step is a source-projected retained-observable response audit. The
-`q_phys/H=100` trajectory remains a controlled adiabatic subset. The
-constrained `2-to-2` amplitude, physical cutoff, and local nonzero-gradient
-exact-`Y` reduction remain open. UVIR-003 is in progress and MAT-001 blocked.
+
+The source-to-observable follow-on removes direct `Xi` and homogeneous
+time-translation source support and reads only retained `(Q_rho,Q_chi)`.
+Every tested case retains amplified through-quartet response, ranging from
+`2.67849e17` to `9.75967e19`. Record
+`PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE`. This resolves the
+direct gauge-source attribution question for the tested finite-duration
+dimensionless neighborhood, not an all-background instability theorem. The
+Track-A force mode `Pi` remains factorized at quadratic order and is outside
+this coupled quartet audit rather than omitted from the full framework.
+
+The `q_phys/H=100` trajectory remains a controlled adiabatic subset. A
+controlled real-pole exchange domain, constrained `2-to-2` amplitude,
+physical cutoff, and local nonzero-gradient exact-`Y` reduction remain open.

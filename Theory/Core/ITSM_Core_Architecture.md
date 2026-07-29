@@ -188,8 +188,14 @@ block is affine in the constraints and therefore adds no nonlinear correction
 beyond `J2_origin`. The complete generic `L4[x,z1]` contact and reduced
 quartic functionals are also assembled. The basis
 `(Xi,Q_rho,Q_chi)` has a finite positive low-`q` kinetic limit, with no
-exactly homogeneous `Xi` mode. Explicit vertex projection, the gauge-regular
-amplitude, physical cutoff and global multicone-causality testing remain open.
+exactly homogeneous `Xi` mode. A source-to-observable retarded-response audit
+removes direct `Xi` and homogeneous time-translation source support and reads
+only retained `(Q_rho,Q_chi)`. All five tested dimensionless cases retain
+amplified response through the complex-quartet interval. This resolves the
+direct gauge-source attribution question with scope, not an all-background
+instability theorem. The Track-A `Pi` mode remains factorized at quadratic
+order. Explicit vertex projection, the gauge-regular amplitude, physical
+cutoff and global multicone-causality testing remain open.
 
 ### 3.4 Infrared phonon sector
 

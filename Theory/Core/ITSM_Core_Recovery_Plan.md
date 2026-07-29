@@ -409,11 +409,20 @@ maximizing initial vector with projection fraction above `0.99977`, and a
 complex-quartet interval occupying `3.25%` to `3.62%` of the trajectory.
 Matter-seeded subspaces also amplify, so the result is neither a proved
 retained-matter instability nor a pure gauge artifact. Record
-`HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`. The next low-`q` calculation is
-a source-to-observable retarded-response audit that removes the homogeneous
-time-translation source direction and measures retained `Q_rho,Q_chi`
-observables through the quartet interval. See
-`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_MODE_RESOLVED_TRANSFER_ROBUSTNESS.md`.
+`HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION` at that intermediate checkpoint.
+The source-to-observable follow-on removes direct `Xi` and homogeneous
+time-translation source support and reads only retained `Q_rho,Q_chi`
+observables. All five cases retain amplified through-quartet response from
+`2.67849e17` to `9.75967e19`, with projection residuals at roundoff and
+coarse/fine errors below `5.48e-5`. Record
+`PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE`. This resolves the
+direct gauge-source attribution question for the tested dimensionless
+neighborhood but is not an all-background instability theorem, amplitude, or
+cutoff. The factorized Track-A `Pi` mode remains in the full framework and is
+outside the coupled quadratic quartet block. Next identify a controlled
+real-pole, adiabatic exchange domain and project the verified interaction
+kernels onto these retained channels. See
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_SOURCE_OBSERVABLE_RETARDED_RESPONSE.md`.
 
 ### MAT-001 -- Matter coupling and `C_proj`
 Derive the baryon--phonon vertex and calculate the observable Wilson

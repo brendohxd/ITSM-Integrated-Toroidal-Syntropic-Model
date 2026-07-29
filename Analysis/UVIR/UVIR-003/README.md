@@ -483,8 +483,47 @@ not a transfer-convergence, eigenvalue-pairing, or arbitrary-phase failure.
 It prevents classifying the infrared transfer as either a retained-matter
 instability or a pure gauge artifact in the tested neighborhood.
 
-The next required calculation is a source-to-observable retarded-response
-audit using source covectors that remove the homogeneous time-translation
-orbit and retained observables built from `Q_rho` and `Q_chi`. No physical
-`2-to-2` amplitude, unitarity bound, strong-coupling scale, or cutoff is
-claimed.
+The required source-to-observable retarded-response follow-on removes the
+homogeneous time-translation source direction and reads retained `Q_rho` and
+`Q_chi`; its completed result is reported next. At this intermediate
+checkpoint no physical `2-to-2` amplitude, unitarity bound, strong-coupling
+scale, or cutoff was claimed.
+
+## Gauge-projected source-to-observable retarded response
+
+Run:
+
+```powershell
+python Analysis/UVIR/UVIR-003/uvir003_source_observable_retarded_response.py
+```
+
+This applies generalized impulses only in the retained `(Q_rho,Q_chi)`
+coordinates, verifies that their original-field covectors annihilate the
+homogeneous time-translation orbit, and reads out only the corresponding
+gauge-invariant matter observables. Source and readout maps are normalized
+inside their two-dimensional kinetic-normalized subspaces. The exact
+time-dependent retarded response is propagated without assigning rank-two
+pole identities inside the complex quartet.
+
+The complete finite-`q` basis also contains the Track-A force mode `Pi`.
+It factorizes exactly from the coupled quadratic `(Xi,Q_rho,Q_chi)` block,
+so it is outside this specific complex-quartet mixing audit rather than
+omitted from the ITSM framework.
+
+All five reference, nearby on-shell-background, and alignment cases pass the
+projection and coarse/fine checks. Direct `Xi` source and readout support are
+below `7.61e-21` and `4.94e-21`, respectively, while time-orbit annihilation
+is below `5.66e-17`. The through-quartet normalized retained-matter response
+ranges from `2.67849e17` to `9.75967e19`; the baseline value is
+`1.43264e19`.
+
+The bounded result is
+`PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE`. The large
+response cannot be dismissed solely as direct sourcing or observation of the
+homogeneous time-translation continuation. This remains a finite-duration,
+dimensionless representative-branch response, not an all-background
+instability theorem, cosmological fit, scattering amplitude, unitarity
+violation, strong-coupling scale, or physical cutoff.
+
+The next required calculation is to identify a controlled real-pole,
+adiabatic exchange domain and project the verified cubic and quartic kernels

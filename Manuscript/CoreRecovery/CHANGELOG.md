@@ -7,6 +7,41 @@ root `CHANGELOG.md` records legacy project history.
 
 No unreleased manuscript changes.
 
+## 12.0-alpha.6 - 2026-07-29
+
+### Added
+
+- Added the gauge-projected source-to-observable retarded-response audit in
+  retained `(Q_rho,Q_chi)`.
+- Added exact checks that the original-field source covectors annihilate the
+  homogeneous time-translation orbit.
+- Added source/readout support, impulse/readout structure, orthonormality, and
+  coarse/fine response diagnostics.
+- Added every-source-time response summaries and the maximizing response
+  traces across five reference, nearby on-shell-background, and alignment
+  cases.
+
+### Clarified
+
+- Clarified that the complete finite-`q` physical basis still includes the
+  Track-A force mode `Pi`. It factorizes exactly at quadratic order and is
+  outside the coupled complex-quartet mixing block rather than omitted from
+  the ITSM framework.
+- Replaced the pending source-projected-response wording in the recovery
+  records and manuscript with the completed bounded result.
+
+### Status boundary
+
+- All five tested cases retain amplified through-quartet response in
+  `(Q_rho,Q_chi)` after direct `Xi` and homogeneous time-translation source
+  support are removed. Record
+  `PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE`.
+- This resolves the direct gauge-source attribution question only for the
+  tested finite-duration dimensionless neighborhood. It is not an
+  all-background instability theorem, physical fit, S-matrix amplitude,
+  unitarity result, strong-coupling scale, or physical cutoff.
+- A controlled real-pole adiabatic exchange domain, physical interaction
+
 ## 12.0-alpha.5 - 2026-07-29
 
 ### Added

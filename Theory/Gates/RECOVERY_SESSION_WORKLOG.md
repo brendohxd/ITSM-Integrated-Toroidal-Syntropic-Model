@@ -839,3 +839,41 @@ construct a source-projected retarded response that removes the homogeneous
 time-translation source and measures retained `Q_rho,Q_chi` observables
 through the quartet interval. No amplitude, unitarity, strong-coupling, or
 cutoff claim is made. UVIR-003 remains in progress; MAT-001 remains blocked.
+
+## 2026-07-29 - Gauge-projected source-to-observable retarded response
+
+Gate: UVIR-003 (Stage B constrained nonlinear scalar action)
+
+**Projection:** restricted generalized impulse covectors and observable
+readouts to `(Q_rho,Q_chi)`. In the original
+`(R,delta_rho,vartheta)` variables their covectors annihilate the homogeneous
+time-translation orbit `(H,rho_dot,mu)`. Direct `Xi` source and readout support
+remain below `7.61e-21` and `4.94e-21`, respectively.
+
+**Framework scope:** retained the coupled `(Xi,Q_rho,Q_chi)` scalar block.
+The Track-A force mode `Pi` remains part of the full finite-`q` framework but
+factorizes exactly at quadratic order and is outside the complex-quartet
+mixing calculation.
+
+**Retarded evolution:** propagated every source time to every later
+observation time with the exact kinetic-normalized generator including
+`K_dot`, `P_dot`, `3H`, and normalization derivatives. No rank-two pole
+identity is assigned inside the quartet.
+
+**Numerics:** all five reference, nearby on-shell-background and alignment
+cases pass. The largest coarse/fine error is `5.47691e-5`, time-orbit
+annihilation is below `5.66e-17`, source/readout orthonormality errors are
+below `1.74e-15`, and the source position jump and readout velocity support
+are exactly zero.
+
+**Result:** the normalized through-quartet retained-matter response ranges
+from `2.67849e17` to `9.75967e19`; the baseline response is `1.43264e19`.
+The maximizing baseline source and output are both predominantly `Q_rho`.
+
+**Decision:** record
+`PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE`. The response
+cannot be dismissed solely as direct sourcing or observation of the
+homogeneous time-translation continuation. This is not an all-background
+instability theorem, physical parameter fit, amplitude, unitarity result,
+strong-coupling scale, or cutoff. Next identify a controlled real-pole,
+adiabatic exchange domain and project the verified interaction kernels onto

@@ -217,3 +217,21 @@ Deterministic outputs:
 Analysis/UVIR/UVIR-003/outputs/uvir003_mode_resolved_transfer_robustness_summary.json
 Analysis/UVIR/UVIR-003/outputs/uvir003_mode_resolved_transfer_robustness.csv
 ```
+
+## 9. Follow-on resolution
+
+The required source-to-observable calculation is now complete. It applies
+generalized impulses and readouts only in retained `(Q_rho,Q_chi)`, with
+direct `Xi` source/readout support below `7.61e-21` and time-orbit
+annihilation residual below `5.66e-17`. All five cases retain amplified
+through-quartet response from `2.67849e17` to `9.75967e19`, with coarse/fine
+errors below `5.48e-5`.
+
+Record
+`PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE` for the follow-on
+subcalculation. This resolves the direct gauge-source attribution question
+without reinterpreting the present complex-quartet pole frames as uniquely
+rank two. It is not an all-background instability theorem, amplitude, or
+cutoff.
+
+See `UVIR-003_STAGE_B_SOURCE_OBSERVABLE_RETARDED_RESPONSE.md`.

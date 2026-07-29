@@ -59,13 +59,18 @@ Frozen-pole exponentiation fails in the nonadiabatic domain. A five-case
 mode-resolved follow-on finds that every deepest-infrared transfer is seeded
 overwhelmingly by the finite-`q` `Xi` gauge-continuation subspace, but every
 case enters an off-axis complex quartet where no unique continuous real
-rank-two gauge/matter pole split exists. Matter-seeded subspaces also
-amplify. The result is
-`HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`, not an instability pass or a pure
-gauge-artifact dismissal. A source-projected retained-observable response is
-required next. The high-`q` trajectory remains a controlled adiabatic subset.
-No exchange-plus-contact amplitude, unitarity criterion, or physical cutoff
-is derived.
+rank-two gauge/matter pole split exists. The subsequent gauge-projected
+retarded-response audit applies generalized impulses and readouts only in
+`(Q_rho,Q_chi)`, with no direct `Xi` or homogeneous time-translation source
+support. All five cases retain amplified matter response through the quartet,
+from `2.67849e17` to `9.75967e19`, with coarse/fine errors below `5.48e-5`.
+Record `PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE`. This
+resolves the direct gauge-source attribution question but is not an
+all-background instability theorem. The factorized Track-A `Pi` mode remains
+part of the full framework and lies outside this coupled quadratic audit.
+The high-`q` trajectory remains a controlled adiabatic subset. No
+exchange-plus-contact amplitude, unitarity criterion, or physical cutoff is
+derived.
 These bounded results do not establish full perturbative stability,
 observational viability, or a completed cosmology.
 
