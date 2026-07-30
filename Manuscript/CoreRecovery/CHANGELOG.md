@@ -7,6 +7,30 @@ root `CHANGELOG.md` records legacy project history.
 
 No unreleased manuscript changes.
 
+## 12.0-alpha.9 - 2026-07-30
+
+### Added
+
+- Added a regular-tetrahedral elastic four-leg slice with strictly nonzero
+  and independently admitted `s`, `t`, and `u` internal trajectories.
+- Added matched left/right cubic pair-source contractions through the full
+  physical finite-`q` propagator.
+- Added the analytic quartic contact and all three constraint-induced Schur
+  pairings in the same polarization and residue-normalization convention.
+- Added component-level permutation, pole-separation, inverse-closure and
+  cancellation diagnostics over 24 mode-pair cases and 72 channels.
+
+### Status boundary
+
+- Record
+  `PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL`.
+- The local frozen-time analytic four-leg kernel is assembled on the tested
+  slice. A cosmological S-matrix normalization, unitarity bound,
+  strong-coupling scale and physical cutoff are not established.
+- The combined kernel can be as small as `0.502%` of the sum of absolute
+  component magnitudes. This resolved cancellation remains a sensitivity,
+  not a derived suppression scale.
+
 ## 12.0-alpha.8 - 2026-07-29
 
 ### Added

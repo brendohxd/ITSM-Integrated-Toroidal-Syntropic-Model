@@ -13,8 +13,8 @@ This directory is the manuscript workspace for the
 - `releases/v<version>/` contains immutable source and PDF snapshots.
 
 The current frozen release is
-[`v12.0-alpha.8`](releases/v12.0-alpha.8/). The previous release is
-[`v12.0-alpha.7`](releases/v12.0-alpha.7/); all versioned source and PDF trees
+[`v12.0-alpha.9`](releases/v12.0-alpha.9/). The previous release is
+[`v12.0-alpha.8`](releases/v12.0-alpha.8/); all versioned source and PDF trees
 are immutable snapshots.
 
 ## Versioning rule
@@ -35,7 +35,7 @@ alpha number; this keeps every cited PDF unambiguous.
 4. When the manuscript is ready to freeze, run:
 
    ```powershell
-   .\New-ManuscriptRelease.ps1 -Version 12.0-alpha.9 -Label "Next verified checkpoint"
+   .\New-ManuscriptRelease.ps1 -Version 12.0-alpha.10 -Label "Next verified checkpoint"
    ```
 
 5. Inspect the new PDF, add `RELEASE_NOTES.md`, move the `Unreleased` entries
@@ -104,6 +104,14 @@ on-shell coupled modes in 48 admitted equilateral momentum/sign cases. Every
 case produces a finite nonzero off-shell pair-source covector and finite
 inverse-kernel response; permutation and inverse closure are below `6.2e-16`.
 The `Pi` source vanishes for two coupled external legs at this analytic cubic
-order. Matched left/right source contraction, channel summation, the reduced
-quartic contact, physical cutoff, and local nonzero-gradient exact-`Y`
-reduction remain open.
+order.
+
+A subsequent regular-tetrahedral elastic slice keeps every `s`, `t`, and `u`
+internal momentum nonzero and reruns each internal trajectory through the
+controlled-domain audit. Across 24 mode-pair cases and 72 channels, matched
+physical exchange contractions are combined with the analytic quartic contact
+and all three constraint-Schur pairings. The local frozen-time four-leg kernel
+is finite, real within numerical tolerance, nonzero, and permutation
+consistent. Component cancellations reach the `0.502%` level and remain an
+explicit sensitivity. A cosmological S-matrix normalization, physical cutoff,
+and local nonzero-gradient exact-`Y` reduction remain open.
