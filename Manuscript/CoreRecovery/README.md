@@ -49,69 +49,40 @@ The release script refuses to overwrite an existing version directory.
 The manuscript intentionally distinguishes derived, conditional, open, and
 rejected claims. `13/12`, `H0=72.97`, automatic Solar-System compliance, and
 the historical SPARC `p=0.62` are not live predictions in this draft.
+UVIR-003 remains in progress; MAT-001 is not unlocked.
 
-Release `12.0-alpha.4` records the Track-A regulator selection, the
-homogeneous zero-gradient force action through direct quartic order, and the
-finite-`q` coefficient linear in lapse/scalar shift at the constraint origin.
-A subsequent dressing audit corrected the interpretation: this `J2_origin`
-and `-J2_origin^T C^(-1)J2_origin/2` are verified components, not the complete
-second-order source and quartic constraint correction.
+Authoritative per-release bullets live in `CHANGELOG.md` and each freeze’s
+`RELEASE_NOTES.md`. Branch-level inventory (alpha.1–alpha.9) is also kept in
+the repository root
+[`RECOVERY_BRANCH_README.md`](../../RECOVERY_BRANCH_README.md). Summary of
+what each frozen release added:
 
-The correct source is `S2=partial_z L3[x,z1]`, with
-`z1=-C^(-1)J1`. The inverse-Laplacian shift representation remains restricted
-to `q_phys>0`; the homogeneous gauge-orbit result is unchanged.
+| Release | Date | Label / content |
+|---------|------|-----------------|
+| [`12.0-alpha.1`](releases/v12.0-alpha.1/) | 2026-07-26 | Baseline architecture freeze (`c836172`); zero-gradient force-block factorization; conditional weak-field; open-gate structure. Research-stage only. |
+| [`12.0-alpha.2`](releases/v12.0-alpha.2/) | 2026-07-26 | Scalar ADM-readiness; FRW minisuperspace + representative on-shell expanding branch. Closes background existence only. |
+| [`12.0-alpha.3`](releases/v12.0-alpha.3/) | 2026-07-26 | Finite-`q` scalar constraint reduction; gauge-orbit `q=0` resolution; 3D flat khronon cubic/quartic bases (96 monomials); elastic contact; vanishing elastic `t/u` exchange; parent-block nonlinear ADM provenance; force-sector completion hold. |
+| [`12.0-alpha.4`](releases/v12.0-alpha.4/) | 2026-07-29 | Track A (`D_mu D^mu psi`, exact `Y^(3/2)` on local nonzero-gradient); force ADM through direct quartic; origin-linear finite-`q` `J2` + Schur *(reclassified incomplete in alpha.5)*. |
+| [`12.0-alpha.5`](releases/v12.0-alpha.5/) | 2026-07-29 | Correct source `S2=partial_z L3[x,z1]`; full multi-sector `S2` / `L4[x,z1]`; factorized cubic and reduced-quartic kernels; physical inverse kernel; fixed-comoving transfer; complex-quartet IR HOLD (`HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`). |
+| [`12.0-alpha.6`](releases/v12.0-alpha.6/) | 2026-07-29 | Gauge-projected `(Q_rho,Q_chi)` response; amplified through-quartet matter survival (`PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE`); `Pi` clarified as factorized, not omitted. |
+| [`12.0-alpha.7`](releases/v12.0-alpha.7/) | 2026-07-29 | Controlled high-`q` exchange domain (`q/H=47.5–100` pass, `45` fail adiabatic); no IR `Xi`-pure init at high momentum. |
+| [`12.0-alpha.8`](releases/v12.0-alpha.8/) | 2026-07-29 | Residue-normalized modes; cubic pair sources over 48 equilateral cases (`PASS_MODE_PROJECTED_CUBIC_PAIR_SOURCE`). |
+| [`12.0-alpha.9`](releases/v12.0-alpha.9/) | 2026-07-30 | **Current freeze.** Regular-tetrahedral elastic four-leg kernel: 24 mode-pairs × 72 channels; exchange + quartic contact + Schur (`PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL`). Cancellation ratio down to ~0.5% is a sensitivity, not a suppression scale. |
 
-The complete multi-sector finite-`q` source `S2=partial_z L3[x,z1]`, generic
-`L4[x,z1]` contact, and regular physical-scalar basis are verified. The
-analytic cubic and reduced quartic functionals are now polarized into
-factorized physical-basis kernels with exact external constraint resolvers.
-The quartic result contains the complete physical pair-source kernel and all
-three finite-channel Schur pairings. At exact zero internal momentum,
-separate algebraic projectors remove `Sigma=-D^2 beta` and the homogeneous
-`Xi` gauge orbit while retaining the lapse constraint and
-`(Q_rho,Q_chi,Pi)` subspace. The corresponding finite-`q` physical inverse
-quadratic kernel and exact projected `q=0` response are now constructed.
-The fixed-comoving follow-on restores coefficient derivatives and Hubble
-dilution and produces converged kinetic-normalized transfer matrices. It shows
-that frozen-pole exponentiation is invalid in the nonadiabatic domain, while
-the initial `q_phys/H=0.01` trajectory retains a maximum normalized
-phase-space gain of `1.37708e27`. The subsequent five-case mode-resolved audit
-finds that the dominant singular input is `Xi` seeded in every tested case.
-However, each trajectory enters an off-axis complex quartet whose real
-invariant subspace has rank four, preventing a unique continuous rank-two
-split between the gauge-continuation and retained-matter pole pairs.
+### Current freeze boundary (`12.0-alpha.9`)
 
-The source-to-observable follow-on removes direct `Xi` and homogeneous
-time-translation source support and reads only retained `(Q_rho,Q_chi)`.
-Every tested case retains amplified through-quartet response, ranging from
-`2.67849e17` to `9.75967e19`. Record
-`PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE`. This resolves the
-direct gauge-source attribution question for the tested finite-duration
-dimensionless neighborhood, not an all-background instability theorem. The
-Track-A force mode `Pi` remains factorized at quadratic order and is outside
-this coupled quartet audit rather than omitted from the full framework.
+Alpha.9 closes only the local frozen-time analytic four-leg kernel on the
+tested regular-tetrahedral slice. It does **not** establish asymptotic
+cosmological in/out states; an S-matrix amplitude or cross section;
+optical-theorem or partial-wave unitarity; a strong-coupling scale or physical
+EFT cutoff; general four-leg kinematics; the held nonanalytic
+`|grad(pi)|^3` contribution on a nonzero-gradient background; or MAT-001.
 
-A controlled sampled high-momentum exchange domain is now established on the
-representative branch. Initial `q_phys/H=47.5,50,75,100` passes the real-pole,
-subhorizon and `max |omega_dot/omega^2|<0.1` criteria; the `45` sample fails
-only the adiabatic threshold. This is a sampled bracket, not a continuous or
-all-background boundary. Every nonzero internal exchange momentum must pass
-the same gate independently, while exact `q_K=0` uses the separate homogeneous
-projector.
+Reproduce:
 
-The analytic cubic kernel is now contracted with two residue-normalized
-on-shell coupled modes in 48 admitted equilateral momentum/sign cases. Every
-case produces a finite nonzero off-shell pair-source covector and finite
-inverse-kernel response; permutation and inverse closure are below `6.2e-16`.
-The `Pi` source vanishes for two coupled external legs at this analytic cubic
-order.
+```powershell
+python Analysis\UVIR\UVIR-003\uvir003_local_four_leg_kernel.py
+```
 
-A subsequent regular-tetrahedral elastic slice keeps every `s`, `t`, and `u`
-internal momentum nonzero and reruns each internal trajectory through the
-controlled-domain audit. Across 24 mode-pair cases and 72 channels, matched
-physical exchange contractions are combined with the analytic quartic contact
-and all three constraint-Schur pairings. The local frozen-time four-leg kernel
-is finite, real within numerical tolerance, nonzero, and permutation
-consistent. Component cancellations reach the `0.502%` level and remain an
-explicit sensitivity. A cosmological S-matrix normalization, physical cutoff,
-and local nonzero-gradient exact-`Y` reduction remain open.
+Expected:
+`PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL`.

@@ -16,63 +16,236 @@ not the scientific status authority for this branch.
 
 ## Manuscript status
 
-The newest frozen manuscript release is `12.0-alpha.4`. It includes the
-Track-A force completion, complete finite-`q` multi-sector `J2` and verified
-constraint-induced quartic Schur functional, together with the earlier
-finite-`q`, low-`q`, cubic, quartic and nonlinear-action provenance audits.
-Earlier releases remain immutable under `releases/`.
+The newest frozen manuscript release is
+[`12.0-alpha.9`](Manuscript/CoreRecovery/releases/v12.0-alpha.9/)
+(30 July 2026). Every freeze is immutable under
+`Manuscript/CoreRecovery/releases/v12.0-alpha.N/`. Working sources live in
+`Manuscript/CoreRecovery/`; authoritative per-release detail is in
+[`Manuscript/CoreRecovery/CHANGELOG.md`](Manuscript/CoreRecovery/CHANGELOG.md)
+and each release’s `RELEASE_NOTES.md`.
 
-The scalar perturbation ADM programme has passed finite-wavenumber constraint
-elimination on the representative evolving branch. The apparent strict
-low-wavenumber rank loss is now identified as the homogeneous time-translation
-gauge orbit: the two gauge-invariant matter scalars retain a positive regular
-`q=0` kinetic block across the trajectory. The flat-decoupling khronon cubic
-basis is now verified in three spatial dimensions and exactly reduces to the
-previous longitudinal result. A constraint-order identity shows that the
-first-order lapse and shift solutions suffice for the reduced cubic action;
-explicit second-order corrections cancel. Linear on-shell three-point
-kinematics force collinearity. The subsequent flat-decoupling quartic audit
-finds 96 expanded monomials, a finite exact elastic contact term and exactly
-vanishing elastic `t/u` cubic exchange. The centre-of-mass `s` channel carries
-zero spatial momentum and lies on the non-invertible homogeneous khronon gauge
-orbit. At quartic order the second-order constraint source is genuinely needed
-through a Schur complement. The physical strong-coupling scale therefore still
-requires the complete gauge-regular constrained cosmological `2-to-2`
-amplitude. The exact nonlinear `g+U+Phi+alignment` ADM parent block now has
-verified FRW and finite-`q` quadratic provenance. Track A adopts the rest-space
-Laplacian
-`D_mu D^mu psi` and retains exact `Y^(3/2)` for a declared local
-nonzero-gradient perturbative force analysis. The homogeneous zero-gradient
-force action is verified through direct quartic order. Its source combines
-with the parent block to give the complete finite-`q` dressed source and
-corrected quartic Schur functional. The generic cubic and quartic functionals,
-regular physical-scalar basis, and
-factorized analytic cubic and reduced-quartic momentum kernels are verified
-for their declared nonzero-momentum domains. Separate exact homogeneous
-projectors remove the scalar shift and `Xi` gauge coordinates while retaining
-the lapse constraint and `(Q_rho,Q_chi,Pi)` subspace. The exact zero-gradient
-`|grad(pi)|^3` Taylor kernel remains open. The finite-`q` physical inverse
-quadratic kernel and separate exact-`q=0` projected response are constructed.
-The fixed-comoving transfer is numerically converged and verifies the full
-time-dependent equations against their canonical Hamiltonian form.
-Frozen-pole exponentiation fails in the nonadiabatic domain. A five-case
-mode-resolved follow-on finds that every deepest-infrared transfer is seeded
-overwhelmingly by the finite-`q` `Xi` gauge-continuation subspace, but every
-case enters an off-axis complex quartet where no unique continuous real
-rank-two gauge/matter pole split exists. The subsequent gauge-projected
-retarded-response audit applies generalized impulses and readouts only in
-`(Q_rho,Q_chi)`, with no direct `Xi` or homogeneous time-translation source
-support. All five cases retain amplified matter response through the quartet,
-from `2.67849e17` to `9.75967e19`, with coarse/fine errors below `5.48e-5`.
-Record `PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE`. This
-resolves the direct gauge-source attribution question but is not an
-all-background instability theorem. The factorized Track-A `Pi` mode remains
-part of the full framework and lies outside this coupled quadratic audit.
-The high-`q` trajectory remains a controlled adiabatic subset. No
-exchange-plus-contact amplitude, unitarity criterion, or physical cutoff is
-derived.
-These bounded results do not establish full perturbative stability,
-observational viability, or a completed cosmology.
+Claim hygiene is unchanged across freezes: `13/12`, `H0=72.97`, automatic
+Solar-System compliance, and historical SPARC `p=0.62` are **not** live
+predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
+
+### Frozen releases (`12.0-alpha.1` … `12.0-alpha.9`)
+
+#### [`12.0-alpha.1`](Manuscript/CoreRecovery/releases/v12.0-alpha.1/) — 2026-07-26
+
+**Baseline architecture freeze** (Git commit `c836172`).
+
+- Corrected v12 core architecture through zero-gradient scalar force-block
+  factorization.
+- Conditional weak-field limit retained; open-gate structure explicit.
+- Research-stage reconstruction only — not a completed alternative cosmology.
+
+#### [`12.0-alpha.2`](Manuscript/CoreRecovery/releases/v12.0-alpha.2/) — 2026-07-26
+
+**Representative background-existence checkpoint.**
+
+- Scalar-sector ADM-readiness audit and background-completion candidate screen.
+- Homogeneous/isotropic FRW minisuperspace equations; representative on-shell
+  expanding branch verified (Friedmann residual at the reported level).
+- Frame-sector speed normalization corrected; UV/IR, exchange, cosmology,
+  open-gates, and references updated.
+- **Boundary:** closes only representative background existence. Scalar
+  perturbation stability, full cosmological viability, and observational
+  acceptance remain open.
+
+#### [`12.0-alpha.3`](Manuscript/CoreRecovery/releases/v12.0-alpha.3/) — 2026-07-26
+
+**Nonlinear scalar-readiness checkpoint.**
+
+- Aether-unitary scalar ADM principal-symbol reduction; finite-wavenumber
+  condensate kinetic determinant and `q_ADM` validity scale.
+- Complete time-dependent quadratic finite-`q` scalar constraint reduction and
+  compact eigenvalue scan; exact `q_phys^2` low-wavenumber kinetic factor.
+- Homogeneous time-translation null identity; gauge-invariant `q=0` scalar
+  basis; representative positivity scan. Strict low-`q` rank loss identified
+  as the homogeneous gauge orbit (not pure matter collapse).
+- Longitudinal Stueckelberg quadratic/cubic aether vertex basis; complete
+  3D flat-decoupling khronon cubic operator basis (collinear cross-check;
+  constraint-order identity: first-order lapse/shift suffice at cubic order).
+- On-shell three-point kinematics force collinearity; NDA diagnostic kept
+  non-cutoff.
+- Complete 3D flat-decoupling quartic khronon basis (96 expanded monomials);
+  finite elastic contact; elastic `t/u` cubic exchange vanishes; `s` channel
+  on homogeneous khronon gauge orbit; quartic Schur needs second-order
+  constraint source.
+- Nonlinear ADM provenance for exact
+  `gravity+aether+condensate+alignment` parent block.
+- Force-sector completion hold: evolving-frame `Delta_U` and non-analytic
+  `Y^(3/2)` at `Y=0` required before full cosmological `J2`.
+- Spin-0 superluminality recorded as multicone causality flag, not local
+  instability verdict.
+- **Boundary:** nonlinear scalar readiness advanced; full force-sector action,
+  cosmological `J2`, physical `2-to-2`, unitarity cutoff, and MAT-001 open.
+
+#### [`12.0-alpha.4`](Manuscript/CoreRecovery/releases/v12.0-alpha.4/) — 2026-07-29
+
+**Label:** Complete finite-`q` `J2` and Schur checkpoint *(interpretation later corrected in alpha.5)*.
+
+- Bounded force-completion option audit; covariant rest-space Laplacian
+  identities and symbolic smoothing expansions.
+- **Track A selected:** rest-space Laplacian
+  `D_mu D^mu psi`; exact `Y^(3/2)` retained for a declared local
+  nonzero-gradient perturbative force test (vs smooth homogeneous completion
+  with a new crossover scale).
+- Track-A force ADM expansion through direct quartic order; force-sector
+  lapse/shift `J2` component.
+- Finite-`q` multi-sector origin-linear `J2` (exact regression to prior linear
+  constraint source) and algebraic Schur component
+  `-J2_origin^T C^(-1)J2_origin/2`.
+- **Boundary at freeze:** origin-linear source/Schur recorded as complete
+  (reclassified in alpha.5). Direct quartic contact, physical `2-to-2`,
+  cutoff, nonzero-gradient exact-`Y` reduction, and MAT-001 remain open.
+
+#### [`12.0-alpha.5`](Manuscript/CoreRecovery/releases/v12.0-alpha.5/) — 2026-07-29
+
+**Label:** Mode-resolved complex-quartet transfer checkpoint.
+
+- **Correction of alpha.4:** finite-`q` `J2_origin` is the verified
+  origin-linear constraint component, not the complete second-order source.
+  Correct source: `S2 = partial_z L3[x,z1]` with `z1 = -C^(-1)J1`. Corrected
+  quartic Schur: `-S2^T C^(-1)S2/2`.
+- Complete constraint-free direct cubic/quartic physical contact blocks
+  `L3[x,0]`, `L4[x,0]` for
+  `gravity+aether+condensate+alignment+Track-A force`.
+- Soft-curvature scalar-shift dressing, condensate temporal lapse/shift-
+  advection dressing, Track-A affine-constraint audit; complete multi-sector
+  finite-`q` `S2`; generic `L4[x,z1]`; full reduced quartic before physical-
+  mode projection.
+- Regular finite-`q` physical-scalar basis; analytic cubic Fourier
+  polarization; factorized physical-basis cubic kernel; factorized reduced
+  quartic momentum kernel (pair-source + three finite-channel Schur pairings).
+- Exact homogeneous projectors remove scalar shift / `Xi` gauge coordinates
+  while retaining the lapse constraint and `(Q_rho,Q_chi,Pi)` subspace.
+- Finite-`q` physical inverse quadratic kernel, factorized force propagator,
+  exact-`q=0` projected response; pole/residue/inverse-closure/kinetic-inertia
+  diagnostics.
+- Fixed-comoving pole tracking and kinetic-normalized transfer matrices with
+  canonical-Hamiltonian equivalence check. Frozen-pole exponentiation fails in
+  the nonadiabatic domain. Initial `q_phys/H=0.01` max phase-space gain
+  `1.37708e27`.
+- Five-case on-shell background/alignment audit: `Xi`-seeded dominant input
+  every case, but every trajectory enters an off-axis complex quartet
+  preventing unique continuous rank-two gauge/matter pole split. Record
+  `HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION`.
+- **Boundary:** kernels verified on declared nonzero-momentum domains; exact
+  zero-gradient `|grad(pi)|^3` Taylor kernel, source-projected retained-
+  observable response, exchange-plus-contact amplitude, unitarity, and cutoff
+  remain open.
+
+#### [`12.0-alpha.6`](Manuscript/CoreRecovery/releases/v12.0-alpha.6/) — 2026-07-29
+
+**Label:** Gauge-projected matter response checkpoint.
+
+- Gauge-projected source-to-observable retarded-response audit in retained
+  `(Q_rho,Q_chi)` only (no direct `Xi` or homogeneous time-translation source
+  support).
+- Source covectors annihilate the homogeneous time-translation orbit;
+  source/readout support, impulse structure, orthonormality, and coarse/fine
+  diagnostics across five reference / nearby on-shell-background / alignment
+  cases.
+- All five cases retain amplified through-quartet matter response, ranging
+  from `2.67849e17` to `9.75967e19` (coarse/fine errors below the reported
+  threshold). Record
+  `PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE`.
+- Clarified: Track-A force mode `Pi` remains in the complete finite-`q`
+  physical basis; it factorizes at quadratic order and is outside the coupled
+  complex-quartet block, not omitted from the framework.
+- **Boundary:** resolves direct gauge-source attribution only for the tested
+  finite-duration dimensionless neighborhood — not an all-background
+  instability theorem, S-matrix, unitarity result, strong-coupling scale, or
+  physical cutoff.
+
+#### [`12.0-alpha.7`](Manuscript/CoreRecovery/releases/v12.0-alpha.7/) — 2026-07-29
+
+**Label:** Controlled exchange-domain checkpoint.
+
+- Controlled fixed-comoving exchange-domain map: real-pole, positive-kinetic,
+  subhorizon, coupled-mode adiabaticity, and factorized-force adiabaticity
+  criteria.
+- High-momentum phase-space eigenspace projectors; every nonzero internal
+  channel must independently pass the same domain gate.
+- Removed infrared `Xi`-pure `gauge_continuation_Xi` initialization at high
+  momentum; controlled domain tracks all three coupled finite-`q` physical
+  pairs without that IR label.
+- Sampled bracket on the representative branch: initial
+  `q/H = 47.5, 50, 75, 100` pass; `45` fails the `0.1` adiabatic threshold.
+  Sampled bracket only — not a continuous or all-background boundary.
+- **Boundary:** physical vertex contraction, exchange-plus-contact amplitude,
+  unitarity bound, strong-coupling scale, and physical cutoff remain unfinished.
+
+#### [`12.0-alpha.8`](Manuscript/CoreRecovery/releases/v12.0-alpha.8/) — 2026-07-29
+
+**Label:** Mode-projected cubic pair-source checkpoint.
+
+- Residue-normalized local coupled modes via positive-pole derivative of the
+  finite-`q` inverse kernel.
+- Physical cubic pair-source contraction: two on-shell external legs → one
+  off-shell channel covector in `(Xi,Q_rho,Q_chi,Pi)`; sum- and
+  difference-frequency channel prescriptions over 48 admitted equilateral
+  mode/sign cases.
+- Nonzero-channel inverse-kernel response, pole-separation, constraint margin,
+  and external-leg permutation audits (residuals ~`1e-15`–`1e-16` class).
+- Clarified: two coupled external legs produce no factorized `Pi` source in
+  the verified analytic cubic kernel — does not remove `Pi` from the theory
+  or resolve the held nonanalytic local-gradient vertex.
+- Record `PASS_MODE_PROJECTED_CUBIC_PAIR_SOURCE`.
+- **Boundary:** matched left/right source contraction, channel summation,
+  reduced quartic contact assembly into a four-leg kernel, physical amplitude,
+  and any unitarity scale remain unfinished.
+
+#### [`12.0-alpha.9`](Manuscript/CoreRecovery/releases/v12.0-alpha.9/) — 2026-07-30
+
+**Label:** Local four-leg kernel checkpoint. **← current freeze**
+
+- Completes the local analytic four-leg assembly requested by alpha.8.
+- Four residue-normalized coupled modes on shell at the initial frozen-time
+  snapshot (all-incoming elastic convention); equal-magnitude spatial momenta
+  at regular-tetrahedron vertices so every `s`, `t`, `u` partition has
+  strictly nonzero `q_K = 2q/sqrt(3)`.
+- Each internal trajectory independently rerun through the fixed-comoving
+  controlled-domain audit.
+- Per partition: matched left/right physical cubic pair sources + complete
+  finite-`q` physical propagator + polarized analytic quartic contact +
+  constraint-induced quartic Schur pairing.
+- Across 24 elastic mode-pair cases and 72 channel contractions: combined local
+  kernels finite, nonzero, real within numerical tolerance, and permutation
+  consistent.
+- Record `PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL`.
+- Representative audits: on-shell residual `3.41511e-15`; residue-norm error
+  `3.33067e-16`; pair-source swap `5.98691e-16`; component permutation
+  `1.70304e-14`; inverse-closure `4.74692e-16`; min pole distance `0.171148`;
+  max imag fraction `1.92562e-16`; real-kernel range `[-62.1674, 1.78508]`;
+  cancellation-ratio range `[0.00502092, 0.101546]` (kernel can be ~`0.5%` of
+  the sum of absolute component magnitudes — resolved cancellation, not a
+  derived suppression scale).
+- Reproduce from repository root:
+
+  ```powershell
+  python Analysis\UVIR\UVIR-003\uvir003_local_four_leg_kernel.py
+  ```
+
+  Expected: `PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL`.
+
+- **Boundary:** local frozen-time analytic four-leg kernel on the tested
+  regular-tetrahedral slice only. Does **not** establish asymptotic
+  cosmological in/out states; an S-matrix amplitude or cross section; optical-
+  theorem or partial-wave unitarity normalization; a strong-coupling scale or
+  physical EFT cutoff; robustness over general four-leg kinematics; the held
+  nonanalytic `|grad(pi)|^3` contribution on a nonzero-gradient background; or
+  MAT-001.
+
+### Current open boundary (after alpha.9)
+
+These bounded results do **not** establish full perturbative stability,
+observational viability, or a completed cosmology. UVIR-003 remains in
+progress. The next calculation should extend the local kernel away from the
+regular-tetrahedral slice, audit approach to internal poles and homogeneous
+channels, and define an adiabatic wave-packet or in-in observable
+normalization before any perturbative-unitarity criterion is attempted.
 
 ## Repository rules for recovery work
 
