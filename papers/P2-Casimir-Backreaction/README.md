@@ -47,6 +47,7 @@ python cbr001_stage3b_ratio_test.py
 - [x] Abstract ban-list review (B1–B16 packaging)  
 - [x] Rectangular \(T^3\) figure (not doughnut)  
 - [x] Stage-1 / Stage-3B tables from validated outputs  
-- [ ] Optional: embed Stage-2 stress panel + threshold \(\epsilon\) figure  
-- [ ] Final abstract freeze + cover letter  
+- [x] Stage-2 anisotropy + Stage-3B ratio/threshold figures  
+- [x] `CBR001_CHECKSUMS.md` + appendix anchors  
+- [x] Cover letter draft (`CoverLetter.txt`)  
 - [ ] arXiv / venue pass after internal hostile read  

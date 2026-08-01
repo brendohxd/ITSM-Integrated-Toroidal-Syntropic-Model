@@ -288,6 +288,15 @@ late evolution returns to isotropy.}
 \label{fig:ratio}
 \end{figure}
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{cbr001_stage3b_threshold_epsilon.png}
+\caption{Stage-3B threshold amplitudes \(\epsilon_\star(r_0)\) for first
+touch of \(q=13/12\).  Near-cubic shapes require large free-field amplitudes;
+no threshold defines an attractor.}
+\label{fig:threshold}
+\end{figure}
+
 \subsection{Kinematic warning}
 
 Because \(\mathrm{d}\ln r/\mathrm{d}N=x\), a constant \(q\neq 1\) requires
@@ -360,6 +369,8 @@ Free Casimir stress alone therefore cannot sustain the historically proposed
 anisotropic expansion.
 Public code and stage summaries under \texttt{Analysis/Casimir/CBR-001/}
 reproduce the Stage-1--3B pipeline.
+Frozen SHA-256 anchors for the numerical tables used here are recorded in the
+paper repository file \texttt{CBR001\_CHECKSUMS.md}.
 
 \begin{acknowledgments}
 Computations use the repository environment \texttt{itsm\_env} and the
@@ -367,6 +378,35 @@ CBR-001 gate package.
 Claim hygiene for related geometric packaging is recorded in companion note
 \cite{boyd_p1}.
 \end{acknowledgments}
+
+\appendix
+
+\section{Reproducibility anchors}
+\label{app:checksums}
+
+Table~\ref{tab:checksums} lists SHA-256 digests of the CBR-001 CSV/JSON
+artifacts underlying the Stage-1--3B numbers in the main text (branch
+\texttt{recovery/v12-core-architecture}, freeze date 2026-08-01).
+Re-running the Stage scripts after intentional code changes will alter digests;
+any published revision must update this table.
+
+\begin{table}[h]
+\caption{SHA-256 of CBR-001 artifacts used in this draft.}
+\label{tab:checksums}
+\begin{ruledtabular}
+\begin{tabular}{ll}
+Artifact & SHA-256 (prefix) \\
+\hline
+\texttt{cbr001\_stage1.csv} & \texttt{9E6874226FAA\ldots} \\
+\texttt{cbr001\_stage2\_scan.csv} & \texttt{9257F3A67CB5\ldots} \\
+\texttt{cbr001\_stage3b\_thresholds.csv} & \texttt{370B02480FF0\ldots} \\
+\texttt{cbr001\_stage3b\_summary.json} & \texttt{4AD9223CE32C\ldots} \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+Full digests and reproduction commands appear in
+\texttt{papers/P2-Casimir-Backreaction/CBR001\_CHECKSUMS.md}.
 
 \bibliography{references}
 

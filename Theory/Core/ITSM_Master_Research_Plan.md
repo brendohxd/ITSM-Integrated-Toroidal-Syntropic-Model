@@ -268,10 +268,14 @@ action drafts on identity pillars — only premature Derived packaging.
 - **Latest frozen manuscript (Git):** see `Manuscript/CoreRecovery/VERSION`  
 - **As of 2026-08-01:** `12.0-alpha.9` — local tetrahedral four-leg kernel only  
 - **MAT-001:** still **blocked**  
-- **Next UVIR-003 work (alpha.10 material):**  
-  1. Extend four-leg kernel off regular tetrahedron  
-  2. Pole / homogeneous-channel audit  
-  3. Wave-packet or in-in observable normalization  
+- **Post–alpha.9 working substep (not a manuscript freeze):**  
+  `PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT` — isosceles disphenoid off-tetra
+  local kernel + pole/domain diagnostics
+  (`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FOUR_LEG_KINEMATIC_DEFORMATION.md`)  
+- **Next UVIR-003 work (remaining alpha.10 material):**  
+  1. Optional denser approach to homogeneous channel edge  
+  2. Wave-packet or in-in observable normalization  
+  3. Nonzero-gradient `|grad(pi)|^3` sector  
   4. Only then a *declared* unitarity diagnostic (not “theory closed”)
 
 Reproduce alpha.9 baseline:
