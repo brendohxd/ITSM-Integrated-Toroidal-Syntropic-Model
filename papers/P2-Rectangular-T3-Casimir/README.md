@@ -1,4 +1,7 @@
-# P2 — Rectangular \(T^3\) Casimir stress and free-field backreaction
+# P2 — Anisotropic Casimir on rectangular \(T^3\) (free-field backreaction)
+
+**Directory:** `papers/P2-Rectangular-T3-Casimir/`  
+**Canonical PDF:** `Boyd_P2_Anisotropic_Casimir_Rectangular_T3.pdf` (from build script)
 
 **Status:** Draft scaffold (firewall-safe claims)  
 **Branch:** `recovery/v12-core-architecture`  
@@ -25,8 +28,8 @@ quasi-plateau or attractor.
 
 ```powershell
 conda activate itsm_env
-cd papers\P2-Casimir-Backreaction
-.\Build-P2.ps1
+cd papers\P2-Rectangular-T3-Casimir
+.\Build-P2-Rectangular-T3-Casimir.ps1
 ```
 
 ## Reproduce science

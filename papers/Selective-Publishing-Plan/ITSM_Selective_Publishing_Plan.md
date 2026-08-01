@@ -4,7 +4,8 @@
 **Branch authority:** `recovery/v12-core-architecture`  
 **Master research plan:** `Theory/Core/ITSM_Master_Research_Plan.md`  
 **Claim authority:** `Theory/Core/ITSM_Claim_Migration_Ledger.csv`  
-**P1 authority:** `papers/P1-Geometric-Invariants/` (reconstruction after Reject)  
+**P1 authority:** `papers/P1-Scale-Matching-Reconstruction/` (reconstruction after Reject)  
+**Naming table:** `papers/PAPERS_NAMING.md`  
 **Manuscript authority:** `Manuscript/CoreRecovery/` (see `VERSION` for current freeze)
 
 This document is the **binding claim firewall** for the staged paper program.  
@@ -23,7 +24,7 @@ A tier-1 technical referee report **rejected** the prior P1 framing that claimed
 on a cubic flat \(T^3\) with \(L=c/H_0\).
 
 **P1 was reconstructed** as a reconstruction / no-go note (see  
-`papers/P1-Geometric-Invariants/README.md`).  
+`papers/P1-Scale-Matching-Reconstruction/README.md`).  
 
 **Papers 2–4 must never re-inflate the withdrawn claims**, even as “companion geometric inputs,” “established in Paper I,” or soft abstract wording.  
 If a later paper needs a geometric derivation of \(a_0\) or \(C_{\rm obs}\), it must **close the reconstruction chain** (Sec.~0.2) and stand on its own math — not on citation of the old P1 title.
@@ -158,7 +159,7 @@ Drop from style rules: marketing phrases like “geometric origin” and “zero
 
 ### 4.1 P1 — Reconstruction (current)
 
-**Path:** `papers/P1-Geometric-Invariants/`
+**Path:** `papers/P1-Scale-Matching-Reconstruction/`
 
 **Allowed headline:** neither \(a_0\) nor \(2/3\) is yet a geometric derivation on cubic \(T^3\); \(\Cobs\) invariant is derived; compact compensated sources.
 
@@ -205,7 +206,7 @@ For a free massless scalar on a *rectangular* flat \(T^3\), renormalized lattice
 
 #### P2 drafting checklist
 
-- [x] Skeleton `papers/P2-Casimir-Backreaction/main.tex` (draft scaffold 2026-08-01)  
+- [x] Skeleton `papers/P2-Rectangular-T3-Casimir/main.tex` (draft scaffold 2026-08-01)  
 - [x] Port `06_topology_casimir.tex` + CBR-001 STAGE docs  
 - [x] Freeze Stage 1–3B checksums into paper appendix (`CBR001_CHECKSUMS.md`)  
 - [x] **Abstract ban-list review (Sec.~0.1)** (draft abstract uses whitelist wording)  
@@ -287,7 +288,7 @@ Do **not** write:
 |-------|------|
 | Claim ledger | `Theory/Core/ITSM_Claim_Migration_Ledger.csv` |
 | Recovery plan / gates | `Theory/Core/ITSM_Core_Recovery_Plan.md` |
-| P1 reconstruction | `papers/P1-Geometric-Invariants/` |
+| P1 reconstruction | `papers/P1-Scale-Matching-Reconstruction/` |
 | CBR-001 | `Analysis/Casimir/CBR-001/` |
 | Correct \(T^3\) figure script | `Scripts/itsm_t3_fundamental_domain.py` |
 | **Do not use as \(T^3\)** | `Scripts/itsm_3d_toroidal_manifold.py` (doughnut = \(\Ttwo\)) |

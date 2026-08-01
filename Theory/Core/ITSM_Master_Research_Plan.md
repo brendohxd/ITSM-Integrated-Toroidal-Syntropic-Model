@@ -9,7 +9,7 @@
 2. `ITSM_Claim_Migration_Ledger.csv`  
 3. Gate reports under `Theory/Gates/`  
 4. `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` (publication firewall)  
-5. `papers/P1-Geometric-Invariants/` (claim-hygiene manuscript)  
+5. `papers/P1-Scale-Matching-Reconstruction/` (claim-hygiene manuscript)  
 6. Legacy v11 manuscript / website / Notion Hub lower sections (provenance only)
 
 If two sources conflict on **live scientific claims**, prefer (1)–(3).  
@@ -336,8 +336,8 @@ Historical audit method: `Theory/History/00_CRITICAL_FINDINGS.md`, `Theory/Histo
 
 | Paper | Role | When |
 |-------|------|------|
-| **P1** | Reconstruction / no-gos / \(\Cobs\) invariant; firewall | Draft ready under `papers/P1-Geometric-Invariants/` |
-| **P2** | Rectangular \(T^3\) free Casimir + no free-field \(13/12\) attractor | Draft scaffold under `papers/P2-Casimir-Backreaction/` |
+| **P1** | Reconstruction / no-gos / \(\Cobs\) invariant; firewall | Draft ready under `papers/P1-Scale-Matching-Reconstruction/` |
+| **P2** | Rectangular \(T^3\) free Casimir + no free-field \(13/12\) attractor | Draft scaffold under `papers/P2-Rectangular-T3-Casimir/` |
 | **P3** | Gate-structured observational program | Only after derived observables |
 | **P4** | SPARC under declared \(\Cobs,a_0\) | After DISK-001 + STAT-001; never dual \(C=2/3\) + \(a_0=cH_0/2\pi\) as RAR |
 
@@ -389,7 +389,7 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 | Manuscript workflow | `Manuscript/CoreRecovery/README.md` |
 | Historical critical findings | `Theory/History/00_CRITICAL_FINDINGS.md` |
 | Selective publishing | `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` |
-| P1 | `papers/P1-Geometric-Invariants/` |
+| P1 | `papers/P1-Scale-Matching-Reconstruction/` |
 | Zenodo recovery drafts (2026-08-02) | `releases/zenodo/2026-08-02/` — CBR-001 `21745260`, UVIR-003 `21745270`, claim hygiene `21745276` (**draft only**; P2 arXiv deferred) |
 
 ---

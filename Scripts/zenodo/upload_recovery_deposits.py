@@ -137,7 +137,8 @@ GitHub</a>. Contact: brendon.boyd@itsm-cosmology.org</p>
         "metadata": {
             "title": (
                 "ITSM recovery-era claim hygiene archive "
-                "(master plan, publishing firewall, P1 reconstruction note)"
+                "(master plan, publishing firewall, "
+                "P1 scale-matching reconstruction note)"
             ),
             "upload_type": "other",
             "description": """
@@ -147,8 +148,10 @@ GitHub</a>. Contact: brendon.boyd@itsm-cosmology.org</p>
 <li>Master research plan (ideal identity, three-bucket claim disposition,
 open-options rule)</li>
 <li>Selective publishing firewall (abstract packaging bans)</li>
-<li>P1 geometric-invariants reconstruction note (no-gos +
-<em>C</em><sub>obs</sub> invariant)</li>
+<li>P1 scale-matching reconstruction note
+(<code>P1-Scale-Matching-Reconstruction</code>; no-gos +
+<em>C</em><sub>obs</sub> invariant;
+PDF <code>Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf</code>)</li>
 </ul>
 <p>This deposit archives <strong>claim hygiene and workflow authority</strong>.
 It does not reintroduce withdrawn geometric <em>a</em><sub>0</sub> or free-field

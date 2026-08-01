@@ -1,8 +1,15 @@
 # Zenodo recovery deposits — 2026-08-02
 
 **Status:** uploaded as **drafts only** (not published)  
-**Branch/commit:** `recovery/v12-core-architecture` @ `a57ed29`  
-**P2 arXiv:** skipped (endorsement pending)
+**Branch/commit:** `recovery/v12-core-architecture` (see git log)  
+**P2 arXiv:** skipped (endorsement pending)  
+**Paper paths:** see `papers/PAPERS_NAMING.md`  
+(`P1-Scale-Matching-Reconstruction`, `P2-Rectangular-T3-Casimir` — not the old
+`Geometric-Invariants` / short Casimir-Backreaction names)
+
+**Note:** After the paper rename, re-package and replace the file on draft
+`21745276` (claim hygiene) so the archive uses `P1-Scale-Matching-Reconstruction/`
+and `Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf`.
 
 ## Draft uploads
 

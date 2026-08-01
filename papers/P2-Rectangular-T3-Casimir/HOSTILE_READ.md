@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-01  
 **Reader role:** tier-1 referee style, claim firewall  
-**Manuscript:** `papers/P2-Casimir-Backreaction/main.tex`  
+**Manuscript:** `papers/P2-Rectangular-T3-Casimir/main.tex`  
 **Firewall:** Selective Publishing B1–B16  
 
 ## Verdict

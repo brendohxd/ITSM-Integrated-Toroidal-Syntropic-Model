@@ -1,4 +1,7 @@
-# Paper 1 — Present-epoch scale matching and \(C_{\mathrm{obs}}\) hygiene
+# P1 — Present-epoch scale matching and \(C_{\mathrm{obs}}\) hygiene
+
+**Directory:** `papers/P1-Scale-Matching-Reconstruction/`  
+**Canonical PDF:** `Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf` (from build script)
 
 **Genre:** Technical note (no-go results + one derived EFT identity)  
 **Status:** Submission-ready draft for arXiv / CQG-style note  
@@ -25,8 +28,8 @@ Activate the project env **once** in the terminal, then leave it active:
 
 ```powershell
 conda activate itsm_env
-cd papers\P1-Geometric-Invariants
-.\Build-P1.ps1
+cd papers\P1-Scale-Matching-Reconstruction
+.\Build-P1-Scale-Matching-Reconstruction.ps1
 ```
 
 See `SUBMISSION.md` for the full readiness checklist and `CoverLetter.txt` for
@@ -38,7 +41,7 @@ arXiv/journal text.
 |------|------|
 | `main.tex` | Manuscript |
 | `references.bib` | Bibliography |
-| `Build-P1.ps1` | Build helper |
+| `Build-P1-Scale-Matching-Reconstruction.ps1` | Build helper |
 | `SUBMISSION.md` | Pre-flight / venue notes |
 | `CoverLetter.txt` | Cover letter draft |
 | `main.pdf` | Built PDF |

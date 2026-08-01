@@ -69,20 +69,22 @@ def package_cbr001(out_dir: Path, git_sha: str) -> Path:
         readme,
         "CBR-001",
         f"""
-# ITSM CBR-001 — Rectangular \(T^3\) Casimir and free-field backreaction
+# ITSM CBR-001 — Rectangular T^3 Casimir and free-field backreaction
 
 **Version:** 1.0.0  
 **Date:** {date.today().isoformat()}  
 **Git:** `{git_sha}` on `recovery/v12-core-architecture`  
 **License:** CC-BY-4.0 (data/docs); code under repository LICENSE  
+**Related paper dir (draft):** `papers/P2-Rectangular-T3-Casimir/`  
+**Canonical paper PDF name:** `Boyd_P2_Anisotropic_Casimir_Rectangular_T3.pdf`
 
 ## Claim boundary
 
 Validated: lattice Casimir energy density and directional pressures; biaxial
 shape scan; free-field biaxial backreaction; Stage-3B search finds **no**
-free-field \(H_t/H_p=13/12\) attractor (transient only).
+free-field Ht/Hp=13/12 attractor (transient only).
 
-**Not claimed:** parameter-free \(H_0=72.97\), geometric \(a_0\), completed
+**Not claimed:** parameter-free H0=72.97, geometric a0, completed
 cosmology, or driven anisotropy (CBR-002 open).
 
 ## Reproduce
@@ -108,7 +110,7 @@ https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model
         )
         files_added += add_path(
             zf,
-            REPO / "papers" / "P2-Casimir-Backreaction" / "CBR001_CHECKSUMS.md",
+            REPO / "papers" / "P2-Rectangular-T3-Casimir" / "CBR001_CHECKSUMS.md",
             "CBR001_CHECKSUMS.md",
         )
         files_added += add_path(zf, readme, "DEPOSIT_README.md")
@@ -323,14 +325,16 @@ def package_recovery_docs(out_dir: Path, git_sha: str) -> Path:
 ## Contents
 
 - Master research plan (identity, three-bucket disposition, open-options rule)
-- Selective publishing firewall (paper packaging bans B1–B16)
-- P1 geometric-invariants **reconstruction note** (no-gos + \(C_{{obs}}\) invariant)
+- Selective publishing firewall (paper packaging bans B1-B16)
+- P1 **scale-matching reconstruction** note under
+  `P1-Scale-Matching-Reconstruction/` (no-gos + C_obs invariant;
+  PDF: `Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf`)
 - Recovery branch README pointer
 
 ## Claim boundary
 
 Documentation and claim hygiene only. Does **not** restore withdrawn geometric
-\(a_0\) or free-field \(13/12\) attractor predictions. P2 arXiv deferred pending
+a0 or free-field 13/12 attractor predictions. P2 arXiv deferred pending
 endorsement; CBR-001 science is archived separately.
 
 ## Repository
@@ -347,19 +351,23 @@ https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model
         / "papers"
         / "Selective-Publishing-Plan"
         / "ITSM_Selective_Publishing_Plan.md",
-        REPO / "papers" / "P1-Geometric-Invariants" / "main.tex",
-        REPO / "papers" / "P1-Geometric-Invariants" / "main.pdf",
-        REPO / "papers" / "P1-Geometric-Invariants" / "README.md",
-        REPO / "papers" / "P1-Geometric-Invariants" / "references.bib",
-        REPO / "papers" / "P1-Geometric-Invariants" / "CoverLetter.txt",
+        REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "main.tex",
+        REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "main.pdf",
+        REPO
+        / "papers"
+        / "P1-Scale-Matching-Reconstruction"
+        / "Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf",
+        REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "README.md",
+        REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "references.bib",
+        REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "CoverLetter.txt",
     ]
     files_added: list[str] = []
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         for src in include:
             if not src.exists():
                 continue
-            if "P1-Geometric-Invariants" in src.parts:
-                arc = f"P1-Geometric-Invariants/{src.name}"
+            if "P1-Scale-Matching-Reconstruction" in src.parts:
+                arc = f"P1-Scale-Matching-Reconstruction/{src.name}"
             elif "Selective-Publishing-Plan" in src.parts:
                 arc = f"Selective-Publishing-Plan/{src.name}"
             elif "Theory" in src.parts:

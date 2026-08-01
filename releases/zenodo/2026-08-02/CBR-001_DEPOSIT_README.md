@@ -1,17 +1,19 @@
-# ITSM CBR-001 — Rectangular \(T^3\) Casimir and free-field backreaction
+# ITSM CBR-001 — Rectangular T^3 Casimir and free-field backreaction
 
 **Version:** 1.0.0  
 **Date:** 2026-08-02  
-**Git:** `a57ed29` on `recovery/v12-core-architecture`  
+**Git:** `9dffdaa` on `recovery/v12-core-architecture`  
 **License:** CC-BY-4.0 (data/docs); code under repository LICENSE  
+**Related paper dir (draft):** `papers/P2-Rectangular-T3-Casimir/`  
+**Canonical paper PDF name:** `Boyd_P2_Anisotropic_Casimir_Rectangular_T3.pdf`
 
 ## Claim boundary
 
 Validated: lattice Casimir energy density and directional pressures; biaxial
 shape scan; free-field biaxial backreaction; Stage-3B search finds **no**
-free-field \(H_t/H_p=13/12\) attractor (transient only).
+free-field Ht/Hp=13/12 attractor (transient only).
 
-**Not claimed:** parameter-free \(H_0=72.97\), geometric \(a_0\), completed
+**Not claimed:** parameter-free H0=72.97, geometric a0, completed
 cosmology, or driven anisotropy (CBR-002 open).
 
 ## Reproduce

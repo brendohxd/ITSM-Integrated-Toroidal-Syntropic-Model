@@ -2,7 +2,7 @@
 
 **Version:** 0.10.0-pre (working gate slice, not MAT-001 unlock)  
 **Date:** 2026-08-02  
-**Git:** `a57ed29` on `recovery/v12-core-architecture`  
+**Git:** `9dffdaa` on `recovery/v12-core-architecture`  
 
 ## Included subgates
 

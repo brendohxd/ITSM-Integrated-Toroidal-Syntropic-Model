@@ -26,8 +26,8 @@ the upload layout.
 
 ```powershell
 conda activate itsm_env
-cd papers\P1-Geometric-Invariants
-.\Build-P1.ps1
+cd papers\P1-Scale-Matching-Reconstruction
+.\Build-P1-Scale-Matching-Reconstruction.ps1
 ```
 
 ## Pre-flight checklist
