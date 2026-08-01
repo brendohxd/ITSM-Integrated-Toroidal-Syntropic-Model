@@ -50,4 +50,6 @@ python cbr001_stage3b_ratio_test.py
 - [x] Stage-2 anisotropy + Stage-3B ratio/threshold figures  
 - [x] `CBR001_CHECKSUMS.md` + appendix anchors  
 - [x] Cover letter draft (`CoverLetter.txt`)  
-- [ ] arXiv / venue pass after internal hostile read  
+- [x] Hostile internal read (`HOSTILE_READ.md`) + minor tex fixes  
+- [ ] Optional external co-read before journal submit  
+- [ ] arXiv upload when author freezes CBR-001 digests + final PDF

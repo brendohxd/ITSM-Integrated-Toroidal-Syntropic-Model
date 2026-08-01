@@ -94,9 +94,26 @@ Expected footer:
 STATUS: PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT
 ```
 
+## Dense-edge follow-up
+
+Optional denser scan toward the homogeneous edge:
+
+```powershell
+python uvir003_four_leg_kinematic_deformation.py `
+  --ratios 50 --deltas 0.0 0.10 0.20 0.25 0.28 0.30 0.31 `
+  --mode-pairs "0,0;1,1" --output-tag dense_edge
+```
+
+Outputs: `uvir003_four_leg_kinematic_deformation_dense_edge_summary.json`.  
+On 2026-08-01 this still returns `PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT`
+with more domain-admission failures as \(q_u/q\) decreases and smaller min pole
+separation — expected approach behavior, not unitarity.
+
 ## Next required calculation
 
-1. Optional denser `delta` scan toward homogeneous edge if capacity allows.  
-2. Define adiabatic wave-packet or in-in observable normalization.  
-3. Derive nonzero-gradient exact-`|grad(pi)|^3` contribution.  
-4. Only then formulate a declared perturbative-unitarity / EFT-validity criterion.
+1. ~~Optional denser `delta` scan~~ (done as `dense_edge` tag).  
+2. ~~Local adiabatic packet observable normalization~~ (see
+   `UVIR-003_STAGE_B_LOCAL_ADIABATIC_OBSERVABLE_NORM.md`).  
+3. Promote packet proxy toward true in-in correlator on FRW trajectory.  
+4. Derive nonzero-gradient exact-`|grad(pi)|^3` contribution.  
+5. Only then formulate a declared perturbative-unitarity / EFT-validity criterion.

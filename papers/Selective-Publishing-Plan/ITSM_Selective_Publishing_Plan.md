@@ -212,8 +212,9 @@ For a free massless scalar on a *rectangular* flat \(T^3\), renormalized lattice
 - [x] No cross-cite of withdrawn P1 geometric story as positive input  
 - [x] Limitations: free scalar only; rectangular moduli; de Sitter testbed; CBR-002 open  
 - [x] Cover letter draft  
-- [ ] Hostile internal read  
-- [ ] Submit / arXiv only after final freeze of CBR-001 outputs + hostile read
+- [x] Hostile internal read (`HOSTILE_READ.md`) + minor tex fixes  
+- [ ] Optional external co-read  
+- [ ] Submit / arXiv only after author final freeze of digests + PDF
 
 ---
 

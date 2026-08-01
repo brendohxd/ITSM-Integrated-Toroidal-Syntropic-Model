@@ -205,13 +205,13 @@ define
  r=\frac{a_t}{a_p}.
 \end{equation}
 The shear system is the biaxial specialization of Bianchi-I
-\cite{ellismaccallum1969},
+\cite{ellismaccallum1969}, with \(\kappa=8\pi G\),
 \begin{equation}
  \dot\delta+3H\delta=\kappa(p_t-p_p),\qquad
  \dot r=r\delta,
  \label{eq:shear-system}
 \end{equation}
-with Hamiltonian constraint
+and Hamiltonian constraint
 \begin{equation}
  3H^2-\frac{\delta^2}{3}=\kappa\rho_{\mathrm{total}}.
  \label{eq:hamiltonian-biaxial}
@@ -219,6 +219,8 @@ with Hamiltonian constraint
 Stage~3A treats the verified Casimir tensor as a small radiation-like
 perturbation (\(\propto a^{-4}\)) on a positive de~Sitter background and
 integrates in \(N=\ln a\).
+The dimensionless amplitude \(\epsilon\) absorbs \(\hbar c/L_\star^4\) relative
+to the de~Sitter density scale (CBR-001 Stage~3A convention).
 It validates the engine (perturbative limit, constraint and continuity
 residuals) but does \emph{not} by itself establish any preferred Hubble ratio.
 
@@ -362,15 +364,18 @@ open under an honest claim ladder.
 
 A free massless scalar on rectangular flat \(\Tthree\) yields a validated,
 shape-dependent anisotropic Casimir stress.
-When that stress backreacts on biaxial expansion, the ratio \(\Ht/\Hp=13/12\)
-appears at most as a brief transient at large free-field amplitudes, never as
-a quasi-plateau or attractor in the search reported here.
+When that stress backreacts as a small \(a^{-4}\) source on biaxial de~Sitter
+expansion, the ratio \(\Ht/\Hp=13/12\) appears at most as a brief transient at
+large free-field amplitudes, never as a quasi-plateau or attractor in the
+search reported here.
 Free Casimir stress alone therefore cannot sustain the historically proposed
-anisotropic expansion.
+anisotropic expansion, nor justify a free-field map to
+\(H_t=72.97\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\).
 Public code and stage summaries under \texttt{Analysis/Casimir/CBR-001/}
 reproduce the Stage-1--3B pipeline.
 Frozen SHA-256 anchors for the numerical tables used here are recorded in the
-paper repository file \texttt{CBR001\_CHECKSUMS.md}.
+paper repository file \texttt{CBR001\_CHECKSUMS.md} (data and code availability
+for this draft).
 
 \begin{acknowledgments}
 Computations use the repository environment \texttt{itsm\_env} and the

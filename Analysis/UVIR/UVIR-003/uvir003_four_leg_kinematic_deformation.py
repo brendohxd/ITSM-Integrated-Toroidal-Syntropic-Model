@@ -65,6 +65,12 @@ def parse_args() -> argparse.Namespace:
     base = Path(__file__).resolve().parent
     parser.add_argument("--output-dir", type=Path, default=base / "outputs")
     parser.add_argument(
+        "--output-tag",
+        type=str,
+        default="",
+        help="Optional suffix tag, e.g. 'dense_edge' -> ..._dense_edge_summary.json",
+    )
+    parser.add_argument(
         "--frw-summary",
         type=Path,
         default=base / "outputs" / "uvir003_frw_background_summary.json",
@@ -728,8 +734,14 @@ def main() -> None:
     }
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    out_json = args.output_dir / "uvir003_four_leg_kinematic_deformation_summary.json"
-    out_csv = args.output_dir / "uvir003_four_leg_kinematic_deformation.csv"
+    tag = f"_{args.output_tag}" if args.output_tag else ""
+    out_json = (
+        args.output_dir
+        / f"uvir003_four_leg_kinematic_deformation{tag}_summary.json"
+    )
+    out_csv = (
+        args.output_dir / f"uvir003_four_leg_kinematic_deformation{tag}.csv"
+    )
     with out_json.open("w", encoding="utf-8") as handle:
         json.dump(summary, handle, indent=2, sort_keys=True)
         handle.write("\n")
