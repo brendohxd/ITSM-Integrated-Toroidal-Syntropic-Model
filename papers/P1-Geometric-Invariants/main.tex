@@ -1,0 +1,560 @@
+% =============================================================================
+% Paper 1 — Present-epoch scale matching and C_obs hygiene on cubic T^3
+% Genre: technical note (no-gos + one derived EFT identity)
+% Class: Physical Review D (revtex4-2)
+% =============================================================================
+\documentclass[aps,prd,reprint,superscriptaddress,nofootinbib,floatfix]{revtex4-2}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+\graphicspath{{figures/}{../../Assets/Figures/}{../../Assets/Archive/}}
+
+\newcommand{\Tthree}{T^{3}}
+\newcommand{\Ttwo}{T^{2}}
+\newcommand{\Cobs}{C_{\mathrm{obs}}}
+\newcommand{\Cm}{C_{m}}
+\newcommand{\CIR}{C_{\mathrm{IR}}}
+\newcommand{\azero}{a_{0}}
+\newcommand{\Hzero}{H_{0}}
+
+\begin{document}
+
+\title{Present-epoch scale matching, the weak-field invariant
+\texorpdfstring{\(\Cobs\)}{C\_obs}, and no-go results for a cubic
+\texorpdfstring{\(\Tthree\)}{T3} geometric story}
+
+\author{Brendon Boyd}
+\email{brendon.boyd@itsm-cosmology.org}
+\affiliation{Independent Researcher, Burswood, Western Australia, Australia}
+\thanks{ORCID: \href{https://orcid.org/0009-0007-4177-2612}{0009-0007-4177-2612}.
+Code and claim ledger:
+\url{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model};
+Zenodo: \href{https://doi.org/10.5281/zenodo.18808348}{10.5281/zenodo.18808348}.}
+
+\date{\today}
+
+\begin{abstract}
+The coincidence \(2\pi\azero\sim c\Hzero\) is a standard observation in the
+MOND literature.  Several recent proposals attempt to elevate it to a
+\emph{geometric derivation} by combining (i)~a compact flat cubic three-torus
+of present-day side \(L=c/\Hzero\) with a putative ``circulation quantum''
+\(\kappa=cL\), and (ii)~the isotropic projector ratio
+\(\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3\) with the weak-field
+coefficient in an AQUAL-type action.  We show that neither step is presently
+a derivation.  Writing \(\kappa=cL\) does not quantize circulation; the package
+\(L=c/\Hzero\), \(\Gamma=cL\), and \(\omega=\Hzero\) is kinematically
+inconsistent if \(L\) is a circumference; and cubic \(E_1\) topology bounds
+require \(L\gtrsim\mathcal{O}(6)\,c/\Hzero\), excluding the \(\alpha=1\)
+matching that reproduces the MOND scale.  Exact tracking
+\(L_{\mathrm{phys}}(t)=c/H(t)\) is incompatible with fixed comoving moduli in
+ordinary FLRW except for a coasting expansion.  The projector identity is
+correct but topology-independent and does not appear in the weak-field action,
+so it cannot fix
+\(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\), which we derive as the unique invariant of
+field rescaling.  Imposing both \(\azero=c\Hzero/2\pi\) and \(\Cobs=2/3\)
+yields \(a_{0,\mathrm{eff}}=(4/9)\azero\), in conflict with the empirical RAR
+normalization.  What remains is a present-epoch phenomenological encoding of
+the coincidence, a clean EFT invariant, and an explicit reconstruction checklist
+for any future geometric claim.
+\end{abstract}
+
+\keywords{Modified Newtonian dynamics;
+cosmic topology;
+effective field theory;
+radial acceleration relation;
+compact manifolds}
+
+\maketitle
+
+% =============================================================================
+\section{Introduction}
+\label{sec:intro}
+
+Empirical galactic dynamics exhibit a characteristic acceleration
+\(\azero\sim 1.2\times 10^{-10}\,\mathrm{m\,s^{-2}}\) that organizes the
+radial acceleration relation (RAR) and the baryonic Tully--Fisher relation
+\cite{mond,famaey_mcgaugh,mcgaugh_rar,lelli_rar}.
+The numerical coincidence
+\begin{equation}
+  2\pi\,\azero \sim c\,\Hzero
+  \label{eq:coincidence}
+\end{equation}
+is well known \cite{mond,famaey_mcgaugh}.  It is a legitimate research question
+whether a compact flat three-torus \(\Tthree=S^{1}\times S^{1}\times S^{1}\)
+\cite{lachieze_rey_luminet,planck_topology} and a weak-field effective field
+theory (EFT) can turn that coincidence into a derivation.
+
+A recurring two-step proposal answers ``yes'':
+\begin{enumerate}
+\item[(A)] ``Circulation quantization'' on a domain of size \(L=c/\Hzero\)
+  yields \(\azero=c\Hzero/2\pi\);
+\item[(B)] the transverse-projector ratio \(2/3\) yields the EFT coefficient
+  \(\Cobs\) in a deep-MOND square-root law.
+\end{enumerate}
+Both steps fail under standard technical scrutiny.  This paper is a short
+technical note: it withdraws those derivations, records the associated no-go
+results, and isolates what \emph{does} follow cleanly from a static AQUAL-type
+action \cite{bekenstein_milgrom}.  Table~\ref{tab:status} summarizes the
+status of each claim.
+
+% Full-width, non-floating table: spans both columns; following text starts after it.
+\onecolumngrid
+\vspace{0.9em}
+\refstepcounter{table}\label{tab:status}
+\noindent
+\begin{minipage}{\textwidth}
+\small
+\noindent\textbf{TABLE~\thetable.\ }
+Status of claims discussed in this work.\\[0.55em]
+\begin{ruledtabular}
+\begin{tabular}{@{}p{0.50\textwidth}@{\hspace{0.8em}}p{0.12\textwidth}@{\hspace{0.8em}}p{0.30\textwidth}@{}}
+\textbf{Quantity / claim} & \textbf{Status} & \textbf{Note} \\
+\colrule
+Empirical coincidence \(2\pi\azero\sim c\Hzero\)
+  & Fact & Motivating observation only \\
+\hline
+\(\azero\equiv c\Hzero/2\pi\) at the present epoch
+  & Phen. & Named postulate; not derived \\
+\hline
+``Circulation quantization \(\Rightarrow\azero\)''
+  & Withdrawn & \(\kappa=cL\) is not \(h/m\) quantization \\
+\hline
+Package \((L,\Gamma=cL,\omega=\Hzero)\) as prior proposals
+  & Withdrawn & Inconsistent if \(L\) is a circumference \\
+\hline
+Cubic \(E_1\) with \(L=c/\Hzero\) vs.\ Planck topology
+  & Excluded & \(L\gtrsim\mathcal{O}(6)\,c/\Hzero\) required \\
+\hline
+\(L_{\mathrm{phys}}(t)=c/H(t)\) with fixed comoving moduli
+  & Excluded & Needs evolving moduli or coasting FLRW \\
+\hline
+Isotropic count \(\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3\)
+  & Derived & Generic 3D identity; not special to \(\Tthree\) \\
+\hline
+\(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\)
+  & Derived & Field-normalization invariant \\
+\hline
+\(\Cobs=2/3\) from the trace ratio
+  & Withdrawn & Projector absent from the action \\
+\hline
+Simultaneous \(\azero=c\Hzero/2\pi\) and \(\Cobs=2/3\) as RAR fit
+  & Excluded & Predicts \(a_{0,\mathrm{eff}}=(4/9)\azero\) \\
+\hline
+Compensated sources on compact \(\Tthree\)
+  & Derived & \(\int\mathrm{div}=0\) \\
+\hline
+Geometric derivation of \(\azero\) or \(\Cobs\)
+  & Open & Path in Sec.~\ref{sec:path} \\
+\end{tabular}
+\end{ruledtabular}
+\end{minipage}
+\vspace{1.0em}
+\twocolumngrid
+
+% =============================================================================
+\section{Cubic three-torus geometry and notation}
+\label{sec:t3}
+
+A flat three-torus is the quotient \(\mathbb{R}^{3}/\Lambda\) by a lattice of
+translations \cite{lachieze_rey_luminet}.  The correct schematic is a
+parallelepiped with opposite faces identified (Fig.~\ref{fig:t3}), not the
+doughnut surface of revolution in \(\mathbb{R}^{3}\).  That doughnut is an
+embedding of \(\Ttwo\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{itsm_t3_fundamental_domain.pdf}
+\caption{Flat cubic \(\Tthree\) fundamental domain: opposite faces identified
+(\(A\sim A'\), \(B\sim B'\), \(C\sim C'\)).  Edge lengths \(L_x,L_y,L_z\) are
+the three independent periods.  Cubic means \(L_x=L_y=L_z\).  This is not the
+embedded doughnut \(\Ttwo\).}
+\label{fig:t3}
+\end{figure}
+
+``\(\Tthree\)'' alone does not imply equal periods.  Isotropic statements
+require a \emph{cubic} (or explicitly isotropised) lattice.  Rectangular and
+twisted flat manifolds (\(E_2\), \(E_3\), \ldots) are different geometries with
+different CMB constraints \cite{planck_topology,compact_promise}.
+
+Throughout, \(L\) means a \emph{physical} edge length at the epoch under
+discussion unless ``comoving'' is written explicitly.  When a numerical Hubble
+scale is needed we take
+\(\Hzero=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\) for illustration; none of the
+no-go arguments depends on that choice at the factor-of-two level.
+
+% =============================================================================
+\section{\texorpdfstring{\(\azero=c\Hzero/2\pi\)}{a0 = c H0 / 2 pi}
+is not circulation quantization}
+\label{sec:a0}
+
+\subsection{What quantization requires}
+
+In a superfluid with order parameter \(\Psi=\sqrt{n}\,e^{i\theta}\), the
+velocity follows from the phase gradient and
+\begin{equation}
+  \Gamma = \oint \mathbf{v}\cdot d\mathbf{l}
+  = n\,\frac{h}{m}\,,
+  \qquad n\in\mathbb{Z}\,,
+  \label{eq:true-quant}
+\end{equation}
+with single-valuedness of \(\Psi\) on closed cycles
+\cite{onsager,feynman,volovik}.  Equation~\eqref{eq:true-quant} quantizes
+\emph{phase winding}, not ``length times a speed limit.''
+
+\subsection{What the geometric proposals actually write}
+
+Those proposals introduce
+\begin{equation}
+  \kappa_{\mathrm{cosmo}} \stackrel{?}{=} c\,L
+  \label{eq:fake-kappa}
+\end{equation}
+by multiplying a maximum speed by a length.  For constant speed on a cycle of
+length \(L\), one has only \(\Gamma=vL\); setting \(v=c\) yields \(\Gamma=cL\).
+No integer winding, no order parameter, and no mass \(m\) enter.  That is a
+kinematic assignment, not quantization.
+
+If one \emph{did} set the \(n=1\) quantum equal to \(c^{2}/\Hzero\),
+\begin{equation}
+  m = \frac{h\Hzero}{c^{2}}
+  \sim 10^{-32}\,\mathrm{eV}/c^{2}\,,
+  \label{eq:mass-pred}
+\end{equation}
+the microscopic mass reappears as a sharp prediction---the opposite of claiming
+that no microphysics is needed.
+
+\subsection{Internal inconsistency of the \texorpdfstring{\((L,\Gamma,\omega)\)}{(L, Gamma, omega)} package}
+
+Suppose \(L=c/\Hzero\) is the physical circumference of a closed cycle, so
+\(R=L/(2\pi)\).  Then:
+\begin{itemize}
+\item \(\Gamma=cL\) implies \(v=c\);
+\item \(\omega=\Hzero\) with \(v=\omega R\) implies
+  \(v=\Hzero L/(2\pi)=c/(2\pi)\), contradicting \(v=c\);
+\item the centripetal acceleration \(c^{2}/R\) is \(2\pi c\Hzero\), not
+  \(c\Hzero/2\pi\).
+\end{itemize}
+Thus one cannot simultaneously maintain
+\begin{equation}
+  L=\frac{c}{\Hzero}\,,
+  \qquad
+  \Gamma=cL\,,
+  \qquad
+  \omega=\Hzero
+  \label{eq:inconsistent}
+\end{equation}
+under that geometric reading of \(L\).  ``Distributing \(c\Hzero\) across a
+\(2\pi\) angular topology'' is not coordinate-invariant: the range of an
+angular chart can be rescaled.  A physical \(2\pi\) arises only from a defined
+phase convention coupled to velocity.
+
+\paragraph{Conclusion.}
+\begin{equation}
+  \azero \equiv \frac{c\Hzero}{2\pi}
+  \label{eq:a0-phen}
+\end{equation}
+may be retained only as a \emph{present-epoch phenomenological scale-matching
+postulate} that encodes Eq.~\eqref{eq:coincidence}.  For
+\(\Hzero=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\) one finds
+\(\azero\approx 1.1\times 10^{-10}\,\mathrm{m\,s^{-2}}\), of the observed
+order of magnitude \cite{mcgaugh_rar}.  All ``geometric derivation from
+circulation quantization'' language should be withdrawn.
+
+% =============================================================================
+\section{Cubic topology bounds exclude \texorpdfstring{\(L=c/\Hzero\)}{L = c/H0}}
+\label{sec:bounds}
+
+Planck topology analyses constrain cubic \(E_1\) three-tori tightly.  In terms
+of the radius \(R_i\) of the largest sphere inscribed in the fundamental
+domain, Planck reports \(R_i>0.97\,\chi_{\mathrm{rec}}\) for the cubic case at
+high confidence \cite{planck_topology}.  For a cube of side \(L\),
+\(R_i=L/2\), so
+\begin{equation}
+  L \gtrsim 1.94\,\chi_{\mathrm{rec}}\,.
+  \label{eq:L-chi}
+\end{equation}
+With \(\chi_{\mathrm{rec}}\simeq 3.15\,c/\Hzero\) in a Planck cosmology
+\cite{planck},
+\begin{equation}
+  L \gtrsim 6\,\frac{c}{\Hzero}
+  \label{eq:L-H}
+\end{equation}
+as an order-of-magnitude statement (exact numerical factors depend on the
+statistic and priors).  Recent topology surveys likewise place the shortest
+\(E_1\) side near the diameter scale of the last-scattering surface, not one
+Hubble radius \cite{compact_promise,planck_topology}.
+
+Write \(L=\alpha\,c/\Hzero\).  Empirical scale matching uses \(\alpha=1\);
+cubic bounds require \(\alpha\sim\mathcal{O}(6)\).  If the phenomenological
+formula is reinterpreted as \(\azero=c^{2}/(2\pi L)=c\Hzero/(2\pi\alpha)\),
+topology-safe \(\alpha\) yields
+\begin{equation}
+  \azero \lesssim \frac{1}{6}\times\frac{c\Hzero}{2\pi}
+  \sim 1.8\times 10^{-11}\,\mathrm{m\,s^{-2}}\,,
+  \label{eq:a0-suppressed}
+\end{equation}
+destroying the intended MOND-scale match.  Therefore the cubic-\(E_1\),
+\(\alpha=1\) package that simultaneously targets \(\azero\sim 10^{-10}\) and
+CMB non-detection is a no-go.
+
+Vague statements that a ``Hubble-scale domain is compatible with non-detection''
+are incorrect for cubic \(E_1\).
+
+% =============================================================================
+\section{Present-epoch matching versus fixed-comoving FLRW}
+\label{sec:dynamic}
+
+For fixed comoving moduli \(L^{\mathrm{(com)}}\),
+\begin{equation}
+  L_{\mathrm{phys}}(t)=a(t)\,L^{\mathrm{(com)}}\,,
+  \qquad
+  \frac{\dot L_{\mathrm{phys}}}{L_{\mathrm{phys}}}=H\,.
+  \label{eq:fixed}
+\end{equation}
+Requiring instead \(L_{\mathrm{phys}}(t)=c/H(t)\) gives
+\begin{equation}
+  \frac{\dot L_{\mathrm{phys}}}{L_{\mathrm{phys}}}
+  = -\frac{\dot H}{H}\,,
+  \label{eq:dsm-rate}
+\end{equation}
+and equating the two yields \(\dot H=-H^{2}\), i.e.\ deceleration parameter
+\(q=0\) (coasting).  Exact tracking is therefore incompatible with ordinary
+matter-, radiation-, or \(\Lambda\)-dominated FLRW evolution under fixed
+comoving moduli.
+
+The remaining alternatives are: (i)~present-epoch numerical identification
+only; or (ii)~an independent modulus sector with its own kinetic term and
+stress-energy.  No such sector is constructed here.
+
+The Hubble sphere \(c/H\) is also not generally a particle or event horizon;
+calling it a ``global causal domain'' is physically misleading
+\cite{davis_lineweaver_horizon}.
+
+% =============================================================================
+\section{The projector ratio does not determine
+\texorpdfstring{\(\Cobs\)}{C\_obs}}
+\label{sec:proj}
+
+\subsection{The identity}
+
+For any unit \(n^{i}\) in three-dimensional Riemannian geometry,
+\begin{equation}
+  h_{ij}=\gamma_{ij}-n_{i}n_{j}\,,
+  \qquad
+  \frac{\operatorname{Tr}(h)}{\operatorname{Tr}(\gamma)}=\frac{2}{3}\,.
+  \label{eq:trace}
+\end{equation}
+This is correct, topology-independent, and independent of superfluidity.  It
+discards tensorial orientation information and is not special to \(\Tthree\).
+
+\subsection{Static AQUAL-type action}
+
+A static AQUAL-type force sector \cite{bekenstein_milgrom} may be written
+\begin{align}
+  S_{\mathrm{WF}}
+  &= \int\! dt\,d^{3}x
+  \Biggl[
+  -\frac{|\nabla\Phi_{N}|^{2}}{8\pi G}
+  - \rho_{b}\Phi_{N}
+  \nonumber\\
+  &\qquad
+  - \frac{\CIR}{12\pi G\,\azero}\,|\nabla\psi|^{3}
+  - \Cm\,\rho_{b}\,\psi
+  \Biggr]\,,
+  \label{eq:SWF}
+\end{align}
+with \(q=|\nabla\psi|=\sqrt{\gamma^{ij}\partial_{i}\psi\partial_{j}\psi}\).
+Neither \(n^{i}\) nor \(h_{ij}\) appears.  The kinetic operator is fully
+three-dimensional and isotropic.  There is therefore no field-theoretic sense
+in which Eq.~\eqref{eq:trace} ``matches'' onto the EFT.
+
+Variation yields
+\begin{equation}
+  \nabla\cdot\!\left(\frac{|\nabla\psi|}{\azero}\,\nabla\psi\right)
+  = 4\pi G\,\frac{\Cm}{\CIR}\,\rho_{b}\,.
+  \label{eq:p3}
+\end{equation}
+In spherical symmetry, with \(g_{N}=|\nabla\Phi_{N}|\) and physical
+acceleration \(g_{P}=\Cm|\nabla\psi|\),
+\begin{equation}
+  g_{P} = \Cobs\sqrt{\azero\,g_{N}}\,,
+  \qquad
+  \boxed{
+  \Cobs = \frac{\Cm^{3/2}}{\sqrt{\CIR}}
+  }\,.
+  \label{eq:Cobs}
+\end{equation}
+
+\subsection{Field-rescaling invariance}
+
+Under \(\psi\mapsto s\psi\) with \(s>0\),
+\begin{equation}
+  \Cm\mapsto\frac{\Cm}{s}\,,
+  \qquad
+  \CIR\mapsto\frac{\CIR}{s^{3}}\,,
+  \label{eq:rescale}
+\end{equation}
+while \(\Cobs\) is invariant.  Thus \(\Cobs\) is the unique combination of the
+two positive coefficients that can enter observables.  Setting \(\Cm=\CIR\) so
+that \(\Cobs=C\) is a normalization convention, not a calculation of
+\(C=2/3\).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{itsm_23_factor_schematic.pdf}
+\caption{Isotropic degree-of-freedom cartoon only.  It does not appear in
+Eq.~\eqref{eq:SWF} and must not be read as a derivation of \(\Cobs\).}
+\label{fig:cproj}
+\end{figure}
+
+\paragraph{Withdrawn.}
+Any statement that \(\Cobs=2/3\) follows from \(\Tthree\) geometry, from
+Eq.~\eqref{eq:trace}, or from ``matching'' without inserting \(h^{ij}\) into
+the action and integrating out fields.
+
+\subsection{Compact sources}
+
+On compact \(\Tthree\), the integral of any pure divergence vanishes, so
+localized solutions must use a compensated density contrast (and, if present,
+a zero-mean exchange source).  For general morphology,
+\begin{equation}
+  \frac{|\nabla\varphi|}{\azero}\,\nabla\varphi
+  = \frac{\Cm}{\CIR}\,\nabla\Phi_{N} + \nabla\times\mathbf{H}\,,
+  \label{eq:curl}
+\end{equation}
+so pointwise square-root formulae are approximations for disks.  These
+statements remain valid; they do not resurrect \(\Cobs=2/3\).
+
+% =============================================================================
+\section{Mutual inconsistency with the empirical RAR scale}
+\label{sec:rar}
+
+In the deep-MOND regime, \(g_{P}=\Cobs\sqrt{\azero g_{N}}\) is equivalent to
+\begin{equation}
+  g_{P}=\sqrt{a_{0,\mathrm{eff}}\,g_{N}}\,,
+  \qquad
+  a_{0,\mathrm{eff}} = \Cobs^{2}\,\azero\,.
+  \label{eq:a0eff}
+\end{equation}
+Imposing both \(\azero=c\Hzero/2\pi\approx 1.1\times 10^{-10}\,\mathrm{m\,s^{-2}}\)
+and \(\Cobs=2/3\) yields
+\begin{equation}
+  a_{0,\mathrm{eff}} = \frac{4}{9}\azero
+  \approx 4.9\times 10^{-11}\,\mathrm{m\,s^{-2}}\,,
+  \label{eq:a0eff-num}
+\end{equation}
+whereas modern RAR determinations find
+\(a_0\simeq 1.2\times 10^{-10}\,\mathrm{m\,s^{-2}}\)
+\cite{mcgaugh_rar,lelli_rar}, a factor \(\sim 2.4\) discrepancy.
+Equivalently, asymptotic baryonic Tully--Fisher velocities scale as
+\(v^{4}\propto \Cobs^{2}\azero GM_{b}\); \(\Cobs=2/3\) lowers \(v\) by
+\(\sim 18\%\) at fixed baryonic mass, which is observationally large.
+
+Therefore one cannot simultaneously advertise
+\(\azero=c\Hzero/2\pi\) as the empirical MOND scale and impose a universal
+\(\Cobs=2/3\).  Consistent options for any future fit are:
+\begin{enumerate}
+\item set \(\Cobs=1\) (up to the definition of \(\azero\));
+\item redefine the input scale so that \(\Cobs^{2}\azero\) matches the RAR;
+\item drop universality and derive a morphology-dependent response from a
+  solved disk PDE before fitting.
+\end{enumerate}
+
+% =============================================================================
+\section{Outlook: retained results and a reconstruction path}
+\label{sec:path}
+
+\subsection{What this note establishes}
+
+\begin{enumerate}
+\item The coincidence \eqref{eq:coincidence} is empirical motivation only.
+\item \(\azero\equiv c\Hzero/2\pi\) is allowed solely as a
+  \emph{present-epoch phenomenological postulate}.
+\item The weak-field combination
+  \(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\) is a derived, normalization-invariant
+  observable coefficient [Eq.~\eqref{eq:Cobs}].
+\item On compact \(\Tthree\), sources must be compensated and disk solutions
+  generally admit a curl term [Eq.~\eqref{eq:curl}].
+\item The no-go results of Secs.~\ref{sec:a0}--\ref{sec:rar} rule out the
+  usual cubic geometric packaging of those two numbers.
+\end{enumerate}
+
+\subsection{Path required before any geometric-derivation claim}
+
+A subsequent work that claims to \emph{derive} \(\azero\) or \(\Cobs\) from
+topology or microphysics must close the following chain.  Items are grouped
+by sector; each is a separate technical gate, not a slogan.
+
+\paragraph{Microphysics and circulation.}
+\begin{enumerate}
+\item[(M1)] Define a condensate order parameter
+  \(\Psi=\sqrt{\rho}\,e^{i\theta}\)
+  (or a relativistic analogue) with a definite mass parameter \(m\).
+\item[(M2)] Obtain the circulation from \(\nabla\theta\) and impose integer
+  winding on non-contractible cycles of \(\Tthree\), yielding
+  \(\Gamma=n\,h/m\) rather than \(\Gamma=cL\).
+\item[(M3)] Fix a single geometric meaning of \(L\)
+  (cube edge, closed geodesic length, or circumference) and use it
+  consistently in every formula.
+\item[(M4)] Derive a map
+  \((\Gamma,m,n,L)\mapsto\azero\)
+  that does not rely on a chart-dependent ``distribution'' of \(c\Hzero\) over
+  an angular range of \(2\pi\).
+\end{enumerate}
+
+\paragraph{Cosmic scale and moduli.}
+\begin{enumerate}
+\item[(S1)] Either restrict scale matching to the present epoch, or supply a
+  modulus action for \(L_{\mathrm{phys}}(t)\) that does not force the
+  coasting condition \(q=0\).
+\item[(S2)] Confront the resulting \(L\) with Planck/COMPACT bounds for cubic
+  \(E_1\) and for twisted flat alternatives \cite{planck_topology,compact_promise}.
+\end{enumerate}
+
+\paragraph{Weak-field coefficient and data.}
+\begin{enumerate}
+\item[(E1)] If a projector \(h_{ij}\) is essential, insert it into the action,
+  specify the dynamics of \(n^{i}\), and compute
+  \(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\)
+  as a definite number independent of field normalization.
+\item[(E2)] Reconcile \(\Cobs^{2}\azero\) with the empirical RAR/BTFR
+  normalization (avoid the factor-\(4/9\) conflict of Sec.~\ref{sec:rar}).
+\item[(E3)] Solve the compensated periodic nonlinear equation for at least one
+  spherical and one disk baryonic source, including any curl contribution.
+\end{enumerate}
+
+\paragraph{Representation (already satisfied here).}
+\begin{enumerate}
+\item[(R1)] Use a face-identified parallelepiped for \(\Tthree\)
+  (Fig.~\ref{fig:t3}), never an embedded doughnut \(\Ttwo\).
+\end{enumerate}
+
+Until (M1)--(M4), (S1)--(S2), and (E1)--(E3) are closed, the defensible
+scientific product remains exactly what this note provides: present-epoch
+phenomenological matching of Eq.~\eqref{eq:coincidence}, the derived invariant
+\(\Cobs\), and the no-go results for the cubic geometric story---not a
+geometric derivation of the MOND scale.
+
+% =============================================================================
+\section*{Code and data availability}
+
+Figure~\ref{fig:t3} is produced by
+\texttt{Scripts/itsm\_t3\_fundamental\_domain.py} in the public archive
+\url{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}
+(Zenodo DOI~\href{https://doi.org/10.5281/zenodo.18808348}{10.5281/zenodo.18808348}).
+Scripts that render an embedded doughnut surface depict \(\Ttwo\) and should
+not be used as \(\Tthree\) schematics.  No new observational catalogue is
+analysed.
+
+\begin{acknowledgments}
+The author thanks colleagues who pressed for explicit claim status and for
+separation of postulates from derivations.  Remaining errors are the author's.
+\end{acknowledgments}
+
+\bibliography{references}
+
+\end{document}

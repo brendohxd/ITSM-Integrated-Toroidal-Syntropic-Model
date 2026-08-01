@@ -7,10 +7,13 @@ not the scientific status authority for this branch.
 
 ## Start here
 
+- **Master research plan (workflow + identity + bans + timeline):**
+  `Theory/Core/ITSM_Master_Research_Plan.md`
 - Core architecture: `Theory/Core/ITSM_Core_Architecture.md`
-- Recovery plan: `Theory/Core/ITSM_Core_Recovery_Plan.md`
+- Recovery plan (gate detail): `Theory/Core/ITSM_Core_Recovery_Plan.md`
 - Claim migration ledger: `Theory/Core/ITSM_Claim_Migration_Ledger.csv`
 - Gate worklog: `Theory/Gates/RECOVERY_SESSION_WORKLOG.md`
+- Selective publishing firewall: `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md`
 - Manuscript workflow: `Manuscript/CoreRecovery/README.md`
 - Manuscript changes: `Manuscript/CoreRecovery/CHANGELOG.md`
 

@@ -4,6 +4,11 @@ Version: 0.1
 Programme: CRA-001 / CRA-002  
 Branch: `recovery/v12-core-architecture`
 
+> **Workflow entry point:** for ideal identity, damage list, AQUAL IR branch,
+> reopenable trajectories, publishing timeline, and the session checklist, see
+> [`ITSM_Master_Research_Plan.md`](ITSM_Master_Research_Plan.md). This file remains
+> the detailed gate catalogue and recovery-programme history.
+
 ## Purpose
 
 This plan rebuilds the Integrated Toroidal-Syntropic Model (ITSM) around the
