@@ -1,7 +1,9 @@
 # P1 — Present-epoch scale matching and \(C_{\mathrm{obs}}\) hygiene
 
 **Directory:** `papers/P1-Scale-Matching-Reconstruction/`  
-**Canonical PDF:** `Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf` (from build script)
+**VERSION:** see `VERSION` (currently `0.1.0-draft`)  
+**Share PDF:** `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.1.0-draft.pdf`  
+(build script writes this from `main.pdf` + `VERSION`; see `papers/PAPERS_NAMING.md`)
 
 **Genre:** Technical note (no-go results + one derived EFT identity)  
 **Status:** Submission-ready draft for arXiv / CQG-style note  

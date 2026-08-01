@@ -151,7 +151,8 @@ open-options rule)</li>
 <li>P1 scale-matching reconstruction note
 (<code>P1-Scale-Matching-Reconstruction</code>; no-gos +
 <em>C</em><sub>obs</sub> invariant;
-PDF <code>Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf</code>)</li>
+versioned PDF
+<code>Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v*.pdf</code>)</li>
 </ul>
 <p>This deposit archives <strong>claim hygiene and workflow authority</strong>.
 It does not reintroduce withdrawn geometric <em>a</em><sub>0</sub> or free-field

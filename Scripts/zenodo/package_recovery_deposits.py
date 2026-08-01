@@ -328,7 +328,7 @@ def package_recovery_docs(out_dir: Path, git_sha: str) -> Path:
 - Selective publishing firewall (paper packaging bans B1-B16)
 - P1 **scale-matching reconstruction** note under
   `P1-Scale-Matching-Reconstruction/` (no-gos + C_obs invariant;
-  PDF: `Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf`)
+  versioned share PDF: `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v*.pdf`)
 - Recovery branch README pointer
 
 ## Claim boundary
@@ -353,14 +353,14 @@ https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model
         / "ITSM_Selective_Publishing_Plan.md",
         REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "main.tex",
         REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "main.pdf",
-        REPO
-        / "papers"
-        / "P1-Scale-Matching-Reconstruction"
-        / "Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf",
+        REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "VERSION",
         REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "README.md",
         REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "references.bib",
         REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "CoverLetter.txt",
     ]
+    # Versioned share PDF(s) if present (Boyd_2026_*_v*.pdf)
+    p1_dir = REPO / "papers" / "P1-Scale-Matching-Reconstruction"
+    include.extend(sorted(p1_dir.glob("Boyd_2026_*_v*.pdf")))
     files_added: list[str] = []
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         for src in include:

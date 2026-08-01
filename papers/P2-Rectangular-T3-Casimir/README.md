@@ -1,7 +1,9 @@
 # P2 — Anisotropic Casimir on rectangular \(T^3\) (free-field backreaction)
 
 **Directory:** `papers/P2-Rectangular-T3-Casimir/`  
-**Canonical PDF:** `Boyd_P2_Anisotropic_Casimir_Rectangular_T3.pdf` (from build script)
+**VERSION:** see `VERSION` (currently `0.1.0-draft`)  
+**Share PDF:** `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Free-Field_Backreaction_v0.1.0-draft.pdf`  
+(build script writes this from `main.pdf` + `VERSION`; see `papers/PAPERS_NAMING.md`)
 
 **Status:** Draft scaffold (firewall-safe claims)  
 **Branch:** `recovery/v12-core-architecture`  
