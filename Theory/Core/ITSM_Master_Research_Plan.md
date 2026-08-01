@@ -390,6 +390,7 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 | Historical critical findings | `Theory/History/00_CRITICAL_FINDINGS.md` |
 | Selective publishing | `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` |
 | P1 | `papers/P1-Geometric-Invariants/` |
+| Zenodo recovery drafts (2026-08-02) | `releases/zenodo/2026-08-02/` — CBR-001 `21745260`, UVIR-003 `21745270`, claim hygiene `21745276` (**draft only**; P2 arXiv deferred) |
 
 ---
 
