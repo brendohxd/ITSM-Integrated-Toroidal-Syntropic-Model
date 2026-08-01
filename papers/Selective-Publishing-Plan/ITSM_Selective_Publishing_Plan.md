@@ -205,12 +205,14 @@ For a free massless scalar on a *rectangular* flat \(T^3\), renormalized lattice
 
 #### P2 drafting checklist
 
-- [ ] Skeleton `papers/P2-Casimir-Backreaction/main.tex`  
-- [ ] Port `06_topology_casimir.tex` + CBR-001 STAGE docs  
-- [ ] Freeze Stage 1–3B checksums  
-- [ ] **Abstract ban-list review (Sec.~0.1)**  
-- [ ] No cross-cite of withdrawn P1 geometric story as positive input  
-- [ ] Limitations: free scalar only; rectangular moduli; de Sitter testbed; CBR-002 open  
+- [x] Skeleton `papers/P2-Casimir-Backreaction/main.tex` (draft scaffold 2026-08-01)  
+- [x] Port `06_topology_casimir.tex` + CBR-001 STAGE docs  
+- [ ] Freeze Stage 1–3B checksums into paper appendix / Zenodo tag  
+- [x] **Abstract ban-list review (Sec.~0.1)** (draft abstract uses whitelist wording)  
+- [x] No cross-cite of withdrawn P1 geometric story as positive input  
+- [x] Limitations: free scalar only; rectangular moduli; de Sitter testbed; CBR-002 open  
+- [ ] Hostile internal read + optional cover letter  
+- [ ] Submit / arXiv only after freeze of CBR-001 outputs
 
 ---
 

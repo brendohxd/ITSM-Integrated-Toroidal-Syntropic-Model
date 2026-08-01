@@ -334,7 +334,7 @@ Historical audit method: `Theory/History/00_CRITICAL_FINDINGS.md`, `Theory/Histo
 | Paper | Role | When |
 |-------|------|------|
 | **P1** | Reconstruction / no-gos / \(\Cobs\) invariant; firewall | Draft ready under `papers/P1-Geometric-Invariants/` |
-| **P2** | Rectangular \(T^3\) free Casimir + no free-field \(13/12\) attractor | Next draftable science paper |
+| **P2** | Rectangular \(T^3\) free Casimir + no free-field \(13/12\) attractor | Draft scaffold under `papers/P2-Casimir-Backreaction/` |
 | **P3** | Gate-structured observational program | Only after derived observables |
 | **P4** | SPARC under declared \(\Cobs,a_0\) | After DISK-001 + STAT-001; never dual \(C=2/3\) + \(a_0=cH_0/2\pi\) as RAR |
 
