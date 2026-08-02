@@ -1,37 +1,37 @@
 # Zenodo recovery deposits — 2026-08-02
 
-**Status:** uploaded as **drafts only** (not published)  
-**Branch/commit:** `recovery/v12-core-architecture` (see git log)  
 **P2 arXiv:** skipped (endorsement pending)  
 **Paper paths:** see `papers/PAPERS_NAMING.md`  
-(`P1-Scale-Matching-Reconstruction`, `P2-Rectangular-T3-Casimir` — not the old
-`Geometric-Invariants` / short Casimir-Backreaction names)
+**Metadata source:** `Scripts/zenodo/zenodo_deposit_metadata.py`  
+(inclusive descriptions; ORCID; website; GitHub; legacy DOI links)
 
-**Note:** After the paper rename, re-package and replace the file on draft
-`21745276` (claim hygiene) so the archive uses `P1-Scale-Matching-Reconstruction/`
-and `Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf`.
+## Records (after metadata refresh)
 
-## Draft uploads
+| Package | Status | ID | Review URL |
+|---------|--------|-----|------------|
+| CBR-001 | Published v1 + **new-version draft** (inclusive meta) | draft `21753798` (was `21745260`) | https://zenodo.org/uploads/21753798 |
+| UVIR-003 | Published v1 + **new-version draft** | draft `21753799` (was `21745270`) | https://zenodo.org/uploads/21753799 |
+| Claim hygiene | **Draft** (meta updated in place) | `21745276` | https://zenodo.org/uploads/21745276 |
 
-| Package | Deposition | Reserved DOI (active after publish) | Review URL |
-|---------|------------|-------------------------------------|------------|
-| CBR-001 Casimir gate | `21745260` | `10.5281/zenodo.21745260` | https://zenodo.org/uploads/21745260 |
-| UVIR-003 four-leg slice | `21745270` | `10.5281/zenodo.21745270` | https://zenodo.org/uploads/21745270 |
-| Recovery claim hygiene | `21745276` | `10.5281/zenodo.21745276` | https://zenodo.org/uploads/21745276 |
+See `ZENODO_LATEST_DRAFTS.json` and `ZENODO_METADATA_UPDATE.json`.
 
-`published: false` in `ZENODO_UPLOAD_RESULTS.json`.
+## Shared author metadata (all three)
 
-## Local packages
+- **Creator:** Boyd, Brendon  
+- **ORCID:** https://orcid.org/0009-0007-4177-2612  
+- **Website:** https://www.itsm-cosmology.org  
+- **GitHub:** https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model  
+- **Contact:** brendon.boyd@itsm-cosmology.org  
+- **License:** CC-BY-4.0  
 
-See `INDEX.json` and the three zip archives in this folder.
+## Publish later
 
-## Publish later (manual or script)
+Review the draft URLs in the Zenodo UI, then click **Publish** for each new
+version when ready (CBR/UVIR drafts supersede v1 metadata; claim-hygiene is
+still first public version when published).
 
 ```powershell
-# After reviewing drafts in the Zenodo UI, either click Publish there, or:
-$env:ZENODO_TOKEN = '...'   # do not commit; rotate if ever pasted in chat
-python Scripts/zenodo/upload_recovery_deposits.py `
-  --package-dir releases/zenodo/2026-08-02 --publish
+# Re-apply metadata only (no publish):
+$env:ZENODO_TOKEN = '...'   # never commit; rotate if pasted in chat
+python Scripts/zenodo/update_zenodo_draft_metadata.py
 ```
-
-Prefer **UI publish** if drafts already exist (the upload script always creates *new* depositions).
