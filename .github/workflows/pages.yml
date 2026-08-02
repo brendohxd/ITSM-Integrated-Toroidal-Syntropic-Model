@@ -1,16 +1,10 @@
-# Optional explicit Pages deploy from docs/ on recovery branch.
-# You can also use Settings → Pages → Deploy from branch → /docs without Actions.
+# Optional Actions deploy. Primary config is Settings → Pages →
+# Deploy from branch recovery/v12-core-architecture, folder /docs (legacy).
+# The github-pages environment may block non-default branches; prefer branch deploy.
 
 name: github-pages
 
 on:
-  push:
-    branches:
-      - recovery/v12-core-architecture
-      - main
-    paths:
-      - "docs/**"
-      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -29,17 +23,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
-
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
