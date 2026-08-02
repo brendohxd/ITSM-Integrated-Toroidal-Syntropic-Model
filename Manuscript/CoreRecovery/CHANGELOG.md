@@ -7,6 +7,28 @@ root `CHANGELOG.md` records legacy project history.
 
 No unreleased manuscript changes.
 
+## 12.0-alpha.10 - 2026-08-03
+
+### Added
+
+- Recorded the post--alpha.9 UVIR-003 working subgate chain in the open-gates
+  narrative: FRW in-in path declaration, multi-slice mode-projected Green,
+  Track-A nonzero-gradient $|\nabla\pi|^3$ local expansion, declared scoped
+  unitarity/EFT criterion, and $K_Q$ matching inventory (invariants + routes).
+- Clarified that these subgates do not establish an S-matrix, optical theorem,
+  matched physical cutoff, or numeric $K_Q$, and that MAT-001 remains blocked.
+
+### Status boundary
+
+- Checkpoint label: post--alpha.9 UVIR-003 path package (not full UVIR-003 PASS).
+- Subgate tags include (non-exhaustive):
+  `PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED`,
+  `PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN`,
+  `PASS_NONZERO_GRADIENT_FORCE_LOCAL`,
+  `PASS_DECLARED_UNITARITY_EFT_CRITERION`,
+  `PASS_KQ_MATCHING_INVENTORY_OPEN`.
+- Full UVIR-003 gate and MAT-001 remain open / blocked respectively.
+
 ## 12.0-alpha.9 - 2026-07-30
 
 ### Added

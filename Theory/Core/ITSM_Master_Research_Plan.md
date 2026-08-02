@@ -266,7 +266,9 @@ action drafts on identity pillars — only premature Derived packaging.
 ### 5.2 Current freeze boundary (update when freezing)
 
 - **Latest frozen manuscript (Git):** see `Manuscript/CoreRecovery/VERSION`  
-- **As of 2026-08-01:** `12.0-alpha.9` — local tetrahedral four-leg kernel only  
+- **As of 2026-08-03:** `12.0-alpha.10` — post–alpha.9 UVIR-003 path package (Green, Track-A \(|\nabla\pi|^3\), declared unitarity criterion, \(K_Q\) inventory); full UVIR-003 still IN PROGRESS  
+- **Prior freeze:** `12.0-alpha.9` — local tetrahedral four-leg kernel only  
+
 - **MAT-001:** still **blocked**  
 - **Post–alpha.9 working substeps (not a manuscript freeze):**  
   - `PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT` — off-tetra disphenoid kernel  
