@@ -4,12 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ITSM — Integrated Toroidal-Syntropic Model</title>
-  <meta name="description" content="Recovery-era research site for the Integrated Toroidal-Syntropic Model: architecture, papers, and reproducible science under rigorous claim hygiene." />
+  <meta name="description" content="Recovery-era research site for the Integrated Toroidal-Syntropic Model: vision, architecture, papers, and claim hygiene." />
   <meta name="author" content="Brendon Boyd" />
   <meta property="og:title" content="ITSM — Integrated Toroidal-Syntropic Model" />
-  <meta property="og:description" content="Open, carefully rebuilt research on an active toroidal plenum — identity first, mechanisms second, predictions only afterward." />
+  <meta property="og:description" content="Open research on an active toroidal plenum — identity first, mechanisms second, predictions only afterward." />
   <meta property="og:url" content="https://itsm-cosmology.com/" />
-  <meta property="og:type" content="website" />
   <link rel="canonical" href="https://itsm-cosmology.com/" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -32,15 +31,17 @@
 
   <nav class="nav">
     <div class="wrap nav-inner">
-      <a class="brand" href="/">
+      <a class="brand" href="index.html">
         <span class="brand-mark" aria-hidden="true"></span>
         ITSM Cosmology
       </a>
       <ul class="nav-links">
-        <li><a href="#read">Read first</a></li>
-        <li><a href="#papers">Papers</a></li>
-        <li><a href="#identity">Identity</a></li>
-        <li><a href="#reproduce">Reproduce</a></li>
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="papers.html">Papers</a></li>
+        <li><a href="claims.html">Claims</a></li>
+        <li><a href="reproduce.html">Reproduce</a></li>
         <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">GitHub</a></li>
       </ul>
     </div>
@@ -52,13 +53,14 @@
         <p class="eyebrow">Open research · Recovery era · v12</p>
         <h1>Integrated <em>Toroidal-Syntropic</em> Model</h1>
         <p class="lede">
-          A long-horizon research programme into an open, finite-density vacuum plenum —
-          rebuilt with the discipline the problem deserves: preserve physical identity,
-          derive mechanisms, and only then restore predictions.
+          A long-horizon programme into whether an open, finite-density vacuum
+          plenum — with toroidal topology, fluid wake response, and dual
+          entropy/syntropy exchange — can become a disciplined effective
+          framework for gravity and cosmology.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Core/ITSM_Master_Research_Plan.md">Master research plan</a>
-          <a class="btn btn-ghost" href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture">Explore the repository</a>
+          <a class="btn btn-primary" href="vision.html">What ITSM hopes to achieve</a>
+          <a class="btn btn-ghost" href="research.html">Current research path</a>
         </div>
         <div class="meta-row">
           <span>Brendon Boyd</span>
@@ -68,23 +70,23 @@
       </div>
 
       <aside class="hero-panel reveal reveal-delay-1">
-        <h2>Programme status</h2>
+        <h2>At a glance</h2>
         <ul class="stat-list">
           <li>
+            <span class="stat-k">Stage</span>
+            <span class="stat-v">Research-stage layered EFT — not a finished alternative cosmology</span>
+          </li>
+          <li>
             <span class="stat-k">Branch</span>
-            <span class="stat-v"><code>recovery/v12-core-architecture</code> — canonical live status</span>
+            <span class="stat-v"><code>recovery/v12-core-architecture</code></span>
           </li>
           <li>
-            <span class="stat-k">Method</span>
-            <span class="stat-v">Gate-structured reconstruction: architecture, UVIR, Casimir, papers</span>
+            <span class="stat-k">Rule</span>
+            <span class="stat-v">Identity → mechanisms → predictions (never reverse to “balance” fits)</span>
           </li>
           <li>
-            <span class="stat-k">Hygiene</span>
-            <span class="stat-v">Withdrawn packaging is logged — not re-sold as finished cosmology</span>
-          </li>
-          <li>
-            <span class="stat-k">Archive</span>
-            <span class="stat-v">Papers when ready; gate numerics stay in Git until a manuscript freezes them</span>
+            <span class="stat-k">Focus now</span>
+            <span class="stat-v">UVIR field sector, Casimir gate science, claim-hygiene papers</span>
           </li>
         </ul>
       </aside>
@@ -92,153 +94,92 @@
   </header>
 
   <main class="wrap">
-    <section class="section" id="read">
+    <section class="section">
       <div class="card rule span-2 reveal">
         <span class="rule-label">Governing rule</span>
         <p class="rule-quote">Identity first → mechanisms second → predictions only afterward.</p>
         <p>
-          This site tracks the recovery programme. Live scientific status is
-          <em>not</em> the legacy v11 marketing surface (zero free parameters, free-field
-          \(H_0=72.97\), topology-alone \(a_0\), and similar packaging). Those claims are
-          historical and constrained — see the selective publishing firewall and master plan.
+          This site documents the <strong>recovery programme</strong>: keep the
+          physical intuitions that started ITSM, withdraw packaging that failed
+          under scrutiny, and rebuild mechanisms under named gates before
+          restoring observational claims.
         </p>
       </div>
     </section>
 
     <section class="section">
       <div class="section-head">
-        <h2>Start here</h2>
-        <p>Authoritative documents on GitHub</p>
+        <h2>Explore the project</h2>
+        <p>Structured documentation across the recovery scope</p>
+      </div>
+      <div class="feature-map reveal">
+        <a class="feature-link" href="vision.html">
+          <strong>Vision &amp; aims</strong>
+          <span>What the model is for relative to ΛCDM, MOND-like laws, and open thermodynamics — and what success would look like.</span>
+        </a>
+        <a class="feature-link" href="architecture.html">
+          <strong>Architecture</strong>
+          <span>Condensate, preferred frame, IR force sector, matter, reservoir, topology, and non-negotiable separations.</span>
+        </a>
+        <a class="feature-link" href="research.html">
+          <strong>Research path</strong>
+          <span>Gate map from UVIR to MAT to disks and cosmology; where work stands after alpha.9.</span>
+        </a>
+        <a class="feature-link" href="papers.html">
+          <strong>Papers</strong>
+          <span>P1 scale-matching reconstruction, P2 rectangular T³ Casimir, publishing firewall.</span>
+        </a>
+        <a class="feature-link" href="claims.html">
+          <strong>Claim hygiene</strong>
+          <span>Derived / Conditional / Open / Rejected; three-bucket disposition; what is not live.</span>
+        </a>
+        <a class="feature-link" href="reproduce.html">
+          <strong>Reproduce</strong>
+          <span>Clone the recovery branch, activate itsm_env, run Casimir and UVIR gate scripts.</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Pillars we keep</h2>
+        <p>Identity blocks — not automatic numbers</p>
       </div>
       <div class="grid">
         <article class="card reveal">
-          <h3>Recovery entry</h3>
+          <h3>Physical identity</h3>
           <ul>
-            <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/RECOVERY_BRANCH_README.md">Recovery branch README</a></li>
-            <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Core/ITSM_Master_Research_Plan.md">Master research plan</a></li>
-            <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Core/ITSM_Core_Architecture.md">Core architecture</a></li>
-            <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md">Selective publishing firewall</a></li>
+            <li>Open dual polarity — entropy exhaust / syntropy intake</li>
+            <li>Toroidal circuit / compact flat topology</li>
+            <li>Fluid plenum &amp; continuous wake response</li>
+            <li>Winding–resonance ordering (principle open)</li>
+            <li>GR tensor sector under minimal coupling</li>
           </ul>
+          <p style="margin:0.8rem 0 0;"><a href="vision.html">Read the full vision →</a></p>
         </article>
         <article class="card reveal reveal-delay-1">
-          <h3>Why the rebuild</h3>
-          <p>
-            Years of work exposed load-bearing overclaims. Recovery keeps the
-            <strong>physical intuition</strong> that made the project possible — open dual
-            polarity, toroidal circuit, fluid wake, winding/resonance — while refusing
-            false numerical packaging.
-          </p>
-          <p class="small" style="color: var(--faint); margin: 0; font-size: 0.9rem;">
-            Untested routes stay open. Only proven-false packaging is hard-banned.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="papers">
-      <div class="section-head">
-        <h2>Papers</h2>
-        <p>Working drafts · versioned share PDFs</p>
-      </div>
-      <div class="card span-2 reveal">
-        <div class="paper">
-          <div class="paper-id">P1</div>
-          <div>
-            <h3>
-              <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture/papers/P1-Scale-Matching-Reconstruction">Scale-matching reconstruction</a>
-            </h3>
-            <p>
-              Present-epoch scale matching, the weak-field invariant \(C_{\mathrm{obs}}\),
-              and no-go results for a cubic \(T^3\) geometric story.
-            </p>
-          </div>
-          <div class="tags">
-            <span class="tag gold">claim hygiene</span>
-            <span class="tag">0.1.0-draft</span>
-          </div>
-        </div>
-        <div class="paper">
-          <div class="paper-id">P2</div>
-          <div>
-            <h3>
-              <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture/papers/P2-Rectangular-T3-Casimir">Rectangular \(T^3\) Casimir</a>
-            </h3>
-            <p>
-              Anisotropic free-field Casimir stress and the absence of a free-field
-              \(H_t/H_p=13/12\) attractor. ArXiv deferred pending endorsement.
-            </p>
-          </div>
-          <div class="tags">
-            <span class="tag gold">validated numerics</span>
-            <span class="tag">0.1.0-draft</span>
-          </div>
-        </div>
-        <p style="margin: 1rem 0 0; color: var(--faint); font-size: 0.88rem;">
-          Naming scheme:
-          <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/papers/PAPERS_NAMING.md">PAPERS_NAMING.md</a>
-          · Zenodo: papers only when ready, not every gate micro-slice.
-        </p>
-      </div>
-    </section>
-
-    <section class="section" id="identity">
-      <div class="section-head">
-        <h2>Identity &amp; boundaries</h2>
-        <p>What the programme is for — and what it will not pretend</p>
-      </div>
-      <div class="grid">
-        <article class="card reveal">
-          <h3>Pillars we keep</h3>
+          <h3>What we refuse to re-sell</h3>
           <ul>
-            <li>Open thermodynamics — entropy / syntropy dual, not a closed steam engine</li>
-            <li>Toroidal / compact flat topology as a serious research preference</li>
-            <li>Fluid plenum / continuous wake before collisionless halo particles</li>
-            <li>Winding–resonance structure (principle open; broken packaging rejected)</li>
-            <li>GR tensor sector under minimal-coupling constraints</li>
+            <li>Topology-alone “derivation” of \(a_0\) as quantization</li>
+            <li>Free-field \(13/12\) attractor → \(H_0=72.97\)</li>
+            <li>Projector \(2/3\) as proven \(C_{\mathrm{obs}}\)</li>
+            <li>SPARC as independent cosmic \(H_0\)</li>
+            <li>“Zero free parameters / all tensions resolved”</li>
           </ul>
-          <p style="margin: 0.9rem 0 0; color: var(--faint); font-size: 0.88rem;">
-            Pillars are identity, not automatic Wilson coefficients.
-          </p>
+          <p style="margin:0.8rem 0 0;"><a href="claims.html">Claim hygiene details →</a></p>
         </article>
-        <article class="card reveal reveal-delay-1">
-          <h3>Not live as Derived claims</h3>
-          <ul>
-            <li>Topology-alone derivation of \(a_0\) as completed quantization</li>
-            <li>Free-field Casimir attractor \(13/12\) → parameter-free \(H_0=72.97\)</li>
-            <li>Projector \(2/3\) as proven Wilson \(C_{\mathrm{obs}}\)</li>
-            <li>SPARC \(p=0.62\) / SPARC as independent cosmic \(H_0\)</li>
-            <li>“Zero free theoretical parameters / all tensions resolved”</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="reproduce">
-      <div class="section-head">
-        <h2>Reproduce</h2>
-        <p>Public code · conda env <code>itsm_env</code></p>
-      </div>
-      <div class="card span-2 reveal">
-        <pre><code>git clone https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model.git
-cd ITSM-Integrated-Toroidal-Syntropic-Model
-git checkout recovery/v12-core-architecture
-conda activate itsm_env
-
-# examples
-python Analysis/Casimir/CBR-001/casimir_t3_lattice.py
-python Analysis/UVIR/UVIR-003/uvir003_local_four_leg_kernel.py</code></pre>
       </div>
     </section>
 
     <section class="section">
       <div class="section-head">
         <h2>Connect</h2>
-        <p>Repository, ORCID, archives</p>
+        <p>Source, identity, contact</p>
       </div>
       <div class="link-grid reveal">
         <a class="link-tile" href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">
           <strong>GitHub</strong>
-          <span>Source, gates, papers</span>
+          <span>Code, gates, papers</span>
         </a>
         <a class="link-tile" href="https://orcid.org/0009-0007-4177-2612">
           <strong>ORCID</strong>
@@ -247,10 +188,6 @@ python Analysis/UVIR/UVIR-003/uvir003_local_four_leg_kernel.py</code></pre>
         <a class="link-tile" href="https://doi.org/10.5281/zenodo.18808348">
           <strong>Zenodo</strong>
           <span>Legacy DOI family</span>
-        </a>
-        <a class="link-tile" href="https://www.itsm-cosmology.org">
-          <strong>itsm-cosmology.org</strong>
-          <span>Project explorer (if separate)</span>
         </a>
         <a class="link-tile" href="mailto:brendon.boyd@itsm-cosmology.org">
           <strong>Contact</strong>
@@ -262,8 +199,18 @@ python Analysis/UVIR/UVIR-003/uvir003_local_four_leg_kernel.py</code></pre>
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p>© Brendon Boyd · Recovery-era research status · itsm-cosmology.com</p>
-      <p>Licensed materials follow the repository LICENSE / CC-BY where stated.</p>
+      <div>
+        <p>© Brendon Boyd · Recovery-era research status · itsm-cosmology.com</p>
+        <p>Licensed materials follow the repository LICENSE / CC-BY where stated.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="vision.html">Vision</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="research.html">Research</a>
+        <a href="papers.html">Papers</a>
+        <a href="claims.html">Claims</a>
+        <a href="reproduce.html">Reproduce</a>
+      </nav>
     </div>
   </footer>
 </body>
