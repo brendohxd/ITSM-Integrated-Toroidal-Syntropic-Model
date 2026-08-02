@@ -345,8 +345,11 @@ Historical audit method: `Theory/History/00_CRITICAL_FINDINGS.md`, `Theory/Histo
 |-------|------|------|
 | **P1** | Reconstruction / no-gos / \(\Cobs\) invariant; firewall | Draft ready under `papers/P1-Scale-Matching-Reconstruction/` |
 | **P2** | Rectangular \(T^3\) free Casimir + no free-field \(13/12\) attractor | Draft scaffold under `papers/P2-Rectangular-T3-Casimir/` |
-| **P3** | Gate-structured observational program | Only after derived observables |
+| **P3** | Gate-structured observational program | Only after derived observables; **outline-only** skeleton under `papers/P3-Observational-Program/` until trigger |
 | **P4** | SPARC under declared \(\Cobs,a_0\) | After DISK-001 + STAT-001; never dual \(C=2/3\) + \(a_0=cH_0/2\pi\) as RAR |
+
+**P3/P4 readiness map:** `Theory/Gates/P3_P4_READINESS.md`  
+(MAT / DISK / STAT readiness notes under `Theory/Gates/{MAT-001,DISK-001,STAT-001}/`.)
 
 **Pre-submit:** ban-list checklist in Selective Publishing Plan §9.
 
@@ -396,6 +399,8 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 | Manuscript workflow | `Manuscript/CoreRecovery/README.md` |
 | Historical critical findings | `Theory/History/00_CRITICAL_FINDINGS.md` |
 | Selective publishing | `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` |
+| P3/P4 readiness | `Theory/Gates/P3_P4_READINESS.md` |
+| P3 outline (not full draft) | `papers/P3-Observational-Program/` |
 | P1 | `papers/P1-Scale-Matching-Reconstruction/` |
 | Zenodo policy | **Papers only** (not every gate micro-slice). Segment deposits from 2026-08-02 are to be scrapped; see `Scripts/zenodo/README.md` |
 
