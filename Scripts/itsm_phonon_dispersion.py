@@ -61,7 +61,7 @@ v_g  = np.where(valid,
 # ─────────────────────────────────────────────────────────────────────────────
 # FIGURE LAYOUT
 # ─────────────────────────────────────────────────────────────────────────────
-fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 10))
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(9, 11.5), dpi=150)
 fig.suptitle("ITSM Phonon Field: Causality Analysis", fontsize=15, fontweight="bold", y=1.01)
 
 # ── LEFT: sound speed ─────────────────────────────────────────────────────────
@@ -154,10 +154,8 @@ ax2.set_ylim(-0.5, 1.3)
 
 # ── Save ──────────────────────────────────────────────────────────────────────
 fig.tight_layout()
-out_path = (
-    r"c:\Users\brend\OneDrive\Documents\ITSM - Github"
-    r"\ITSM-Integrated-Toroidal-Syntropic-Model"
-    r"\Assets\Figures\itsm_phonon_dispersion.png"
-)
-fig.savefig(out_path, bbox_inches="tight")
-print(f"Figure saved to: {out_path}")
+from pathlib import Path
+out_path = Path(__file__).resolve().parents[1] / "Assets" / "Figures" / "itsm_phonon_dispersion.png"
+out_path.parent.mkdir(parents=True, exist_ok=True)
+fig.savefig(out_path, dpi=400, bbox_inches="tight", facecolor="white")
+print(f"Figure saved to: {out_path} ({out_path.stat().st_size // 1024} KB)")

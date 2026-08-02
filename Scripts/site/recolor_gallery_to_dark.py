@@ -23,8 +23,8 @@ SRC = REPO / "Assets" / "Figures"
 WEB = REPO / "docs" / "assets" / "web"
 
 VOID = np.array([5, 6, 12], dtype=np.float32)
-CARD = (1400, 1050)  # 4:3, larger than before for retina cards
-FULL_MAX = 2000
+CARD = (2000, 1500)  # 4:3 @ ~2–3× display size for sharp retina cards
+FULL_MAX = 2800
 
 
 def white_and_grey_to_void(im: Image.Image) -> Image.Image:
@@ -193,18 +193,19 @@ def process(src_name: str, stem: str, *, mode: str = "cover") -> None:
     full_rgb = Image.new("RGB", full.size, tuple(int(v) for v in VOID))
     full_rgb.paste(full.convert("RGB"), mask=full.split()[-1] if full.mode == "RGBA" else None)
     full_bg.paste(full_rgb, (pad, pad))
-    full_bg.save(WEB / f"full_{stem}.png", "PNG", optimize=True)
-    full_bg.save(WEB / f"full_{stem}.webp", "WEBP", quality=90, method=6)
+    full_bg.save(WEB / f"full_{stem}.png", "PNG", optimize=False)
+    full_bg.save(WEB / f"full_{stem}.webp", "WEBP", quality=95, method=6)
 
     # Card: cover for landscape-ish, contain for tall plots that need full content
     if mode == "cover":
         card = fit_cover(im, CARD)
     else:
-        card = fit_contain_tight(im, CARD, pad_frac=0.03)
+        card = fit_contain_tight(im, CARD, pad_frac=0.02)
     rgb = Image.new("RGB", card.size, tuple(int(v) for v in VOID))
     rgb.paste(card, mask=card.split()[-1])
-    rgb.save(WEB / f"{stem}.png", "PNG", optimize=True)
-    rgb.save(WEB / f"{stem}.webp", "WEBP", quality=88, method=6)
+    # High-quality encode — scientific plots need sharp axes/text
+    rgb.save(WEB / f"{stem}.png", "PNG", optimize=False)
+    rgb.save(WEB / f"{stem}.webp", "WEBP", quality=95, method=6)
     print(f"  card {rgb.size}  full {full_bg.size}")
 
 

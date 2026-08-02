@@ -206,7 +206,8 @@ def draw_t3_domain(
 
     for ext in ("png", "pdf"):
         path = os.path.join(out_dir, f"{out_stem}.{ext}")
-        fig.savefig(path, dpi=220, bbox_inches="tight", facecolor="white")
+        # 400 dpi → crisp site cards + lightbox after dark recolor
+        fig.savefig(path, dpi=400, bbox_inches="tight", facecolor="white")
         print(f"Wrote {path}")
     plt.close(fig)
 

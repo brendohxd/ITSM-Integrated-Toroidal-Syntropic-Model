@@ -1161,15 +1161,15 @@ figure.visual-card,
   font-weight: 500;
 }
 
-/* Pillar split with image */
+/* Pillar split with image — give the schematic more width so dual panels aren't cropped */
 .home-split {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 1rem;
+  grid-template-columns: 1.25fr 0.85fr;
+  gap: 1.1rem;
   align-items: stretch;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .home-split {
     grid-template-columns: 1fr;
   }
@@ -1180,25 +1180,34 @@ figure.visual-card,
   overflow: hidden;
   border: 1px solid var(--stroke);
   aspect-ratio: 14 / 9;
-  min-height: 220px;
+  min-height: 280px;
   position: relative;
   box-shadow: var(--shadow);
   background: #05060c;
 }
 
+.home-split-visual picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .home-split-visual img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  /* contain: show full dual panel (torus + polarity); never crop against the text column */
+  object-fit: contain;
+  object-position: left center;
 }
 
 .home-split-visual::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(5, 6, 12, 0.55));
+  /* lighter fade so labels on the right panel stay readable */
+  background: linear-gradient(180deg, transparent 55%, rgba(5, 6, 12, 0.35));
   pointer-events: none;
+  z-index: 1;
 }
 
 .home-split .card {
@@ -1232,12 +1241,14 @@ a.img-zoom:focus-visible {
 .home-hero-media .img-zoom {
   position: absolute;
   inset: 0;
+  z-index: 0;
 }
 
 .home-split-visual .img-zoom img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: left center;
 }
 
 /* Lightbox */

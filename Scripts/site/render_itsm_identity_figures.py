@@ -342,17 +342,22 @@ def render_pillars_split():
 
     WEB.mkdir(parents=True, exist_ok=True)
     raw = WEB / "_split_raw.png"
-    fig.savefig(raw, dpi=100, facecolor=VOID)
+    # 200 dpi × 14×9 in ≈ 2800×1800 native — keep full res for retina + lightbox
+    fig.savefig(raw, dpi=200, facecolor=VOID)
     plt.close(fig)
     im = Image.open(raw).convert("RGB")
-    im = im.resize((1400, 900), Image.Resampling.LANCZOS)
-    im.save(WEB / "split_open_circuit.png", "PNG", optimize=True)
-    im.save(WEB / "split_open_circuit.webp", "WEBP", quality=85, method=6)
+    # Only downscale if larger than 2800 on the long edge
+    max_w = 2800
+    if im.width > max_w:
+        nh = int(round(im.height * max_w / im.width))
+        im = im.resize((max_w, nh), Image.Resampling.LANCZOS)
+    im.save(WEB / "split_open_circuit.png", "PNG", optimize=False)
+    im.save(WEB / "split_open_circuit.webp", "WEBP", quality=95, method=6)
     # also alias for site index name
-    im.save(WEB / "split_fluid.png", "PNG", optimize=True)
-    im.save(WEB / "split_fluid.webp", "WEBP", quality=85, method=6)
+    im.save(WEB / "split_fluid.png", "PNG", optimize=False)
+    im.save(WEB / "split_fluid.webp", "WEBP", quality=95, method=6)
     raw.unlink(missing_ok=True)
-    print("split_open_circuit / split_fluid 1400x900 OK")
+    print(f"split_open_circuit / split_fluid {im.size[0]}x{im.size[1]} OK")
 
 
 def main():
