@@ -1,0 +1,30 @@
+{
+  "calculation_status": "PASS",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "DISK-001",
+  "ir_policy": "Conditional AQUAL-class with declared C_obs~1, phenomenological a0",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "Nonlinear AQUAL/Poisson (or equivalent) 2D/3D solver for potential structure",
+    "Resolution/box convergence study",
+    "Optional SPARC single-galaxy *diagnostic* curves under declared inputs (not STAT-001)",
+    "DISK-001_GATE_REPORT.md only after sphere+disk+curl+convergence PASS criteria"
+  ],
+  "scientific_boundary": "Stage-0 tooling only under Conditional IR. No SPARC validation, no Derived C_obs, no morphology-independent coupling claim, no DISK-001 full-gate PASS.",
+  "scripts": [
+    {
+      "returncode": 0,
+      "script": "disk001_sphere_benchmark.py"
+    },
+    {
+      "returncode": 0,
+      "script": "disk001_disk_midplane.py"
+    },
+    {
+      "returncode": 0,
+      "script": "disk001_curl_residual.py"
+    }
+  ],
+  "stage": "STAGE0_SCAFFOLD_SUITE",
+  "subgate_status": "PASS_DISK001_STAGE0_SCAFFOLD"
+}

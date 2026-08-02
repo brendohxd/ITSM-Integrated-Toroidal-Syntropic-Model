@@ -1,6 +1,6 @@
 # DISK-001 — Readiness checklist (disk / morphology solver)
 
-**Status:** **Not started as a closed gate** (readiness only)  
+**Status:** **IN PROGRESS** — Stage 0 scaffold **PASS** (`DISK-001_STAGE0_SCAFFOLD.md`); full gate open  
 **Branch:** `recovery/v12-core-architecture`  
 **Date:** 2026-08-03  
 **Authority:** Master Research Plan §5.1; Selective Publishing Plan §4.4 (P4)
@@ -36,10 +36,11 @@ Full P4 draft also needs **STAT-001**.
 
 ### Physics / numerics
 
-- [ ] Declare IR law used (matched MAT vs Conditional AQUAL \(\Cobs\sim 1\))  
-- [ ] Sphere test: known potential / force profile benchmarks  
-- [ ] Thin/thick disk: Poisson or effective force equation under declared IR  
-- [ ] Quantify curl / non-gradient residual (report norm, not “zero by assertion”)  
+- [x] Declare IR law used (matched MAT vs Conditional AQUAL \(\Cobs\sim 1\)) — Stage 0 Conditional  
+- [x] Sphere test: Plummer deep-MOND / AQUAL benchmark (Stage 0)  
+- [x] Thin disk: midplane exponential + AQUAL (Stage 0; not full 2D/3D Poisson)  
+- [x] Quantify curl residual of algebraic AQUAL map (Stage 0 diagnostic)  
+- [ ] Nonlinear AQUAL/Poisson potential solver (2D/3D)  
 - [ ] Compact-domain option: compensated source protocol (P1 hygiene)  
 - [ ] Convergence: resolution / box-size study  
 

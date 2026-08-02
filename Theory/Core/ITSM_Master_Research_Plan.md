@@ -281,10 +281,11 @@ action drafts on identity pillars — only premature Derived packaging.
 - **Post–alpha.10 working notes:**  
   - `PASS_KQ_MATCHING_INVENTORY_OPEN` — invariants \(Aq/K_Q\), \(A/K_Q^{3/2}\); routes R1–R5; **numeric \(K_Q\) still NOT_DERIVED**  
 - **Next working priorities:**  
-  1. MAT-001 interface prep / R2 when force sector is matching-ready (still **blocked** for Derived)  
-  2. Optional parallel: R3 condensate-microscopic \(K_Q\) sketch (Open)  
-  3. Optional: couple local anisotropic force vertex into multi-slice FRW Green  
-  4. Manuscript freeze **alpha.10** when ready to seal the post–alpha.9 UVIR chain  
+  1. DISK-001 Stage 1: nonlinear AQUAL/Poisson solver + convergence (Stage 0 scaffold PASS)  
+  2. MAT-001 remains **blocked** for Derived until UVIR-003 full pass  
+  3. Optional parallel: VOR-001 spectrum-with-units (P3 full-draft trigger)  
+  4. Optional: couple local anisotropic force vertex into multi-slice FRW Green  
+
 
 Reproduce alpha.9 baseline:
 

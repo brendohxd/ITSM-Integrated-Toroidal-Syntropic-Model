@@ -1,0 +1,28 @@
+{
+  "calculation_status": "PASS",
+  "diagnostics": {
+    "all_finite_nonneg": true,
+    "outer_mean_v_over_vN": 1.9517907291678736,
+    "vN_flat_proxy_kms": 59.29877086520034,
+    "v_flat_proxy_kms": 132.21109005944285
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "DISK-001",
+  "ir": {
+    "C_obs": 1.0,
+    "C_obs_origin": "Conditional_default_Cobs_sim_1_MasterPlan_sec6",
+    "a0": 3700.0,
+    "a0_origin": "phenomenological_input",
+    "ban_B9_dual_rar": true,
+    "label": "Conditional_AQUAL_baseline"
+  },
+  "model": {
+    "Rd_kpc": 3.0,
+    "n_radial": 48,
+    "profile": "razor_thin_exponential",
+    "sigma0_Msun_pc2": 300.0
+  },
+  "scientific_boundary": "1D midplane Conditional AQUAL on thin exponential disk. Not a SPARC fit; not morphology-complete DISK-001 PASS; curl not measured in this reduction.",
+  "stage": "STAGE0_DISK_MIDPLANE",
+  "subgate_status": "PASS_DISK001_EXP_DISK_MIDPLANE_AQUAL"
+}
