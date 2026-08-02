@@ -1,0 +1,155 @@
+{
+  "calculation_status": "PASS",
+  "criterion_package": {
+    "joint": "both sector diagnostics PASS and domain non-empty",
+    "not_theory_closed": true,
+    "sector_G_high_q_green": "DECLARED_GREEN_HEALTH: prior PASS + span<=span_max + finite G_proxy + causal diag match; IR HOLD modes out of scope",
+    "sector_L_local_force": "DECLARED_WEAK_COUPLING: q/\u039b_|| <= r_max AND u_L(q) <= u_max"
+  },
+  "dependencies": {
+    "force_subgate": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+    "green_subgate": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+    "nda_stage": "B_ITEM_9_PARTIAL_LONGITUDINAL_IR_ONLY",
+    "nda_status": "OPEN_PENDING_K_Q_MATCHING_CONDITION",
+    "packet_subgate": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION"
+  },
+  "diagnostics": {
+    "joint_pass": true,
+    "kernel_span": 0.03893481274135339,
+    "r_eff_window": 0.3,
+    "sector_G_pass": true,
+    "sector_L_pass": true
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "joint": {
+    "default_point": {
+      "A_IR": 1.0,
+      "K_Q": 1.0,
+      "Lambda_parallel": 1.0,
+      "r_eff_window": 0.3
+    },
+    "optical_theorem_status": "NOT_COMPUTED",
+    "pass": true,
+    "physical_cutoff_status": "NOT_ESTABLISHED_K_Q_MATCHING_OPEN",
+    "s_matrix_status": "NOT_ESTABLISHED"
+  },
+  "mat001_status": "BLOCKED",
+  "method": "declared_scoped_tree_NDA_plus_prior_proxy_health",
+  "next_required_calculation": [
+    "K_Q / force normalization matching (shared blocker with causality NDA)",
+    "optional: feed anisotropic force vertex into multi-slice Green as source",
+    "manuscript freeze alpha.10 recording post-alpha.9 subgate chain when ready"
+  ],
+  "scientific_boundary": "Declares a scoped perturbative-unitarity / EFT-validity *criterion* for (L) the Track-A local nonzero-gradient force sector using a tree s-wave proxy against NDA scale \u039b_||, and (G) the high-q mode-projected Green proxy health inherited from prior PASS. This does not compute the optical theorem, does not fix K_Q by matching, does not establish a physical strong-coupling cutoff, does not promote the local force vertex to a homogeneous FRW S-matrix, does not close UVIR-003, and does not unlock MAT-001.",
+  "sector_G": {
+    "G_proxy_abs_diagnostic": 73.24784358998507,
+    "IR_modes_in_scope": false,
+    "IR_transfer_status": "HOLD",
+    "criterion": "DECLARED_GREEN_HEALTH: prior PASS + span<=span_max + finite G_proxy + causal diag match; IR HOLD modes out of scope",
+    "diagonal_matches_local_kernel": true,
+    "green_structure_ok": true,
+    "high_q_finite_hits": 23,
+    "kernel_abs_relative_span": 0.03893481274135339,
+    "name": "high_q_mode_projected_Green_proxy",
+    "pass": true,
+    "prior_subgate": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+    "proxy_finite_positive": true,
+    "span_max": 0.25,
+    "span_ok": true
+  },
+  "sector_L": {
+    "Lambda_parallel": 1.0,
+    "criterion": "DECLARED_WEAK_COUPLING: q/\u039b_|| <= r_max AND u_L(q) <= u_max",
+    "domain_nonempty": true,
+    "name": "local_Track_A_force_nonzero_gradient",
+    "nda_formula_reference": "K_Q**(3/4)/sqrt(A)",
+    "nda_matching_status": "OPEN_PENDING_K_Q_MATCHING_CONDITION",
+    "parameters": {
+      "A_IR": 1.0,
+      "K_Q": 1.0,
+      "r_max": 0.3,
+      "u_max": 1.0
+    },
+    "pass": true,
+    "r_eff_window": 0.3,
+    "r_star_u_max": 2.0309825951265186,
+    "scan": [
+      {
+        "Lambda_parallel": 1.0,
+        "V_parallel_abs": 0.0007500000000000002,
+        "inside_r_window": true,
+        "inside_u_window": true,
+        "q": 0.05,
+        "q_over_Lambda_parallel": 0.05,
+        "u_swave_proxy": 1.4920775914865193e-05,
+        "weak_coupling_declared": true
+      },
+      {
+        "Lambda_parallel": 1.0,
+        "V_parallel_abs": 0.006000000000000002,
+        "inside_r_window": true,
+        "inside_u_window": true,
+        "q": 0.1,
+        "q_over_Lambda_parallel": 0.1,
+        "u_swave_proxy": 0.00011936620731892155,
+        "weak_coupling_declared": true
+      },
+      {
+        "Lambda_parallel": 1.0,
+        "V_parallel_abs": 0.048000000000000015,
+        "inside_r_window": true,
+        "inside_u_window": true,
+        "q": 0.2,
+        "q_over_Lambda_parallel": 0.2,
+        "u_swave_proxy": 0.0009549296585513724,
+        "weak_coupling_declared": true
+      },
+      {
+        "Lambda_parallel": 1.0,
+        "V_parallel_abs": 0.16199999999999998,
+        "inside_r_window": true,
+        "inside_u_window": true,
+        "q": 0.3,
+        "q_over_Lambda_parallel": 0.3,
+        "u_swave_proxy": 0.0032228875976108803,
+        "weak_coupling_declared": true
+      },
+      {
+        "Lambda_parallel": 1.0,
+        "V_parallel_abs": 0.75,
+        "inside_r_window": false,
+        "inside_u_window": true,
+        "q": 0.5,
+        "q_over_Lambda_parallel": 0.5,
+        "u_swave_proxy": 0.014920775914865188,
+        "weak_coupling_declared": false
+      },
+      {
+        "Lambda_parallel": 1.0,
+        "V_parallel_abs": 3.072000000000001,
+        "inside_r_window": false,
+        "inside_u_window": true,
+        "q": 0.8,
+        "q_over_Lambda_parallel": 0.8,
+        "u_swave_proxy": 0.06111549814728783,
+        "weak_coupling_declared": false
+      },
+      {
+        "Lambda_parallel": 1.0,
+        "V_parallel_abs": 6.0,
+        "inside_r_window": false,
+        "inside_u_window": true,
+        "q": 1.0,
+        "q_over_Lambda_parallel": 1.0,
+        "u_swave_proxy": 0.1193662073189215,
+        "weak_coupling_declared": false
+      }
+    ],
+    "swave_proxy": "u_L = |V_|||/(16\u03c0)",
+    "tree_vertex": "6*A_IR*q^3/K_Q^(3/2) (canonical chi)",
+    "u_monotone_in_q": true
+  },
+  "stage": "B_DECLARED_UNITARITY_EFT_CRITERION",
+  "subgate_status": "PASS_DECLARED_UNITARITY_EFT_CRITERION"
+}

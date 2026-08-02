@@ -275,10 +275,11 @@ action drafts on identity pillars — only premature Derived packaging.
   - `PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED` — FRW attach + high-\(q\) transfer skeleton for \(G_{\rm proxy}\); full in-in integrals **not** computed  
   - `PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN` — multi-slice high-\(q\) \(K_{\rm nn}(t)\) + causal mode-projected \(G_{\rm mp}(t_{\rm out},t_{\rm in})\); full in-in still **not** computed  
   - `PASS_NONZERO_GRADIENT_FORCE_LOCAL` — Track-A local expansion of exact \(|\nabla\pi|^3\) about \(v>0\); positive Hessian; **not** homogeneous S-matrix  
-- **Next UVIR-003 work (remaining alpha.10 material):**  
-  1. *Declared* perturbative-unitarity / EFT-validity criterion with explicit scope (high-\(q\) Green + local force sector) — **not** “theory closed”  
+  - `PASS_DECLARED_UNITARITY_EFT_CRITERION` — scoped tree/NDA unitarity + high-\(q\) Green health criterion; optical theorem / physical cutoff / MAT **not** claimed  
+- **Post–alpha.10 working priorities (after the declared criterion):**  
+  1. \(K_Q\) / force normalization matching (shared blocker with causality NDA)  
   2. Optional: couple local anisotropic force vertex into multi-slice FRW Green proxy  
-  3. Optional denser multi-slice kernel recompute at FRW-local backgrounds (not NN)
+  3. Manuscript freeze **alpha.10** when ready to record the subgate chain immutably  
 
 Reproduce alpha.9 baseline:
 
