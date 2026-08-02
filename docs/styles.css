@@ -1072,9 +1072,15 @@ body.home .torus-mark {
 .visual-card img {
   width: 100%;
   height: 100%;
-  object-fit: fill; /* purpose-built 4:3 assets — full frame, no crop */
+  object-fit: contain; /* dark-recolored originals, fully visible */
   display: block;
   flex: 1;
+  background: #05060c;
+}
+
+.visual-card .img-zoom {
+  position: absolute;
+  inset: 0 0 2.6rem 0; /* leave caption band clickable-friendly */
 }
 
 .visual-card figcaption {
@@ -1183,4 +1189,114 @@ body.home .torus-mark {
 .home-split .card {
   margin: 0;
   height: 100%;
+}
+
+/* Clickable images */
+button.img-zoom,
+a.img-zoom {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+}
+
+button.img-zoom:focus-visible,
+a.img-zoom:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.visual-card .img-zoom,
+.home-split-visual .img-zoom,
+.home-hero-media .img-zoom {
+  position: absolute;
+  inset: 0;
+}
+
+.visual-card {
+  /* ensure absolute zoom target fills card */
+}
+
+.home-split-visual .img-zoom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: rgba(2, 3, 8, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox-inner {
+  position: relative;
+  max-width: min(1200px, 96vw);
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.lightbox-inner img {
+  max-width: 100%;
+  max-height: calc(92vh - 3rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 176, 106, 0.35);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.65);
+  background: #05060c;
+}
+
+.lightbox-cap {
+  color: #c5cde0;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 176, 106, 0.45);
+  background: #0a0d18;
+  color: #f2f4fa;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.lightbox-close:hover {
+  background: #151b2e;
+  color: var(--gold);
+}
+
+body.lightbox-open {
+  overflow: hidden;
 }

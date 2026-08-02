@@ -13,6 +13,7 @@
   <!-- Hero: embedded torus circuit schematic with poloidal/toroidal flow — not flat T³ -->
   <link rel="canonical" href="https://itsm-cosmology.com/" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="lightbox.js" defer></script>
 </head>
 <body class="home">
   <div class="sky" aria-hidden="true"></div>
@@ -36,16 +37,25 @@
   </nav>
 
   <header class="home-hero">
-    <div class="home-hero-media" aria-hidden="true">
-      <picture>
-        <source srcset="assets/web/hero_toroidal.webp" type="image/webp" />
-        <img
-          src="assets/web/hero_toroidal.png"
-          alt=""
-          width="1920"
-          height="1080"
-        />
-      </picture>
+    <div class="home-hero-media">
+      <button
+        type="button"
+        class="img-zoom"
+        data-lightbox="assets/web/hero_toroidal.png"
+        data-caption="Open toroidal circuit schematic — poloidal +φ syntropy intake, toroidal +θ entropy/circuit flow (not flat T³)"
+        data-alt="Toroidal circuit with dual flow directions"
+        aria-label="Expand hero circuit figure"
+      >
+        <picture>
+          <source srcset="assets/web/hero_toroidal.webp" type="image/webp" />
+          <img
+            src="assets/web/hero_toroidal.png"
+            alt="Toroidal circuit with dual flow directions"
+            width="1920"
+            height="1080"
+          />
+        </picture>
+      </button>
     </div>
     <div class="wrap home-hero-inner">
       <div class="reveal">
@@ -96,37 +106,64 @@
     <section class="visual-band reveal">
       <div class="section-head">
         <h2>Identity in pictures</h2>
-        <p>Purpose-built 4:3 dark cards for this page (no crop)</p>
+        <p>Dark-recolored research figures · click any image to expand</p>
       </div>
       <div class="visual-band-grid">
         <figure class="visual-card">
-          <picture>
-            <source srcset="assets/web/card_wake.webp" type="image/webp" />
-            <img src="assets/web/card_wake.png" alt="Continuous plenum wake and streamlines around a baryonic node" width="1200" height="900" loading="lazy" />
-          </picture>
+          <button
+            type="button"
+            class="img-zoom"
+            data-lightbox="assets/web/full_card_wake.png"
+            data-caption="Wake / fluid response — continuous plenum drag vs collisionless halo particles"
+            data-alt="Continuous plenum wake and streamlines around a baryonic node"
+            aria-label="Expand wake figure"
+          >
+            <picture>
+              <source srcset="assets/web/card_wake.webp" type="image/webp" />
+              <img src="assets/web/card_wake.png" alt="Continuous plenum wake and streamlines around a baryonic node" width="1200" height="900" loading="lazy" />
+            </picture>
+          </button>
           <figcaption>
             <span>Pillar · Wake</span>
             Continuous plenum drag / acoustic wake — not collisionless halo DM
           </figcaption>
         </figure>
         <figure class="visual-card">
-          <picture>
-            <source srcset="assets/web/card_t3.webp" type="image/webp" />
-            <img src="assets/web/card_t3.png" alt="Flat T3 rectangular fundamental domain with face identifications" width="1200" height="900" loading="lazy" />
-          </picture>
+          <button
+            type="button"
+            class="img-zoom"
+            data-lightbox="assets/web/full_card_t3.png"
+            data-caption="Flat T³ fundamental domain — opposite faces identified (not the doughnut T²)"
+            data-alt="Flat T3 rectangular fundamental domain with face identifications"
+            aria-label="Expand T3 domain figure"
+          >
+            <picture>
+              <source srcset="assets/web/card_t3.webp" type="image/webp" />
+              <img src="assets/web/card_t3.png" alt="Flat T3 rectangular fundamental domain with face identifications" width="1200" height="900" loading="lazy" />
+            </picture>
+          </button>
           <figcaption>
             <span>Flat \(T^3\) domain</span>
             Rectangular domain, opposite faces identified — not the doughnut \(T^2\)
           </figcaption>
         </figure>
         <figure class="visual-card">
-          <picture>
-            <source srcset="assets/web/card_phonon.webp" type="image/webp" />
-            <img src="assets/web/card_phonon.png" alt="Schematic IR phonon dispersion distinct from UV condensate sector" width="1200" height="900" loading="lazy" />
-          </picture>
+          <button
+            type="button"
+            class="img-zoom"
+            data-lightbox="assets/web/full_card_phonon.png"
+            data-caption="Phonon / IR force-sector diagnostics — UV condensate ≠ IR force"
+            data-alt="Phonon dispersion diagnostics"
+            aria-label="Expand phonon figure"
+          >
+            <picture>
+              <source srcset="assets/web/card_phonon.webp" type="image/webp" />
+              <img src="assets/web/card_phonon.png" alt="Phonon dispersion diagnostics" width="1200" height="900" loading="lazy" />
+            </picture>
+          </button>
           <figcaption>
             <span>Sector · IR</span>
-            Phonon branch schematic — UV condensate ≠ IR force sector
+            Phonon diagnostics — UV condensate ≠ IR force sector
           </figcaption>
         </figure>
       </div>
@@ -193,10 +230,19 @@
       </div>
       <div class="home-split reveal">
         <div class="home-split-visual">
-          <picture>
-            <source srcset="assets/web/split_open_circuit.webp" type="image/webp" />
-            <img src="assets/web/split_open_circuit.png" alt="Open dual polarity: syntropic intake and entropy exhaust on a toroidal circuit" width="1400" height="900" loading="lazy" />
-          </picture>
+          <button
+            type="button"
+            class="img-zoom"
+            data-lightbox="assets/web/split_open_circuit.png"
+            data-caption="Open dual polarity: poloidal syntropic intake and toroidal entropy/circuit transport (identity schematic)"
+            data-alt="Open dual polarity circuit schematic"
+            aria-label="Expand open-circuit figure"
+          >
+            <picture>
+              <source srcset="assets/web/split_open_circuit.webp" type="image/webp" />
+              <img src="assets/web/split_open_circuit.png" alt="Open dual polarity: syntropic intake and entropy exhaust on a toroidal circuit" width="1400" height="900" loading="lazy" />
+            </picture>
+          </button>
         </div>
         <div class="grid" style="grid-template-columns: 1fr; gap: 0.85rem;">
           <article class="card">
