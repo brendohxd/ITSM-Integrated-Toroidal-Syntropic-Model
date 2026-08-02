@@ -1,10 +1,10 @@
 # ITSM GitHub Pages
 
-Static site for the recovery-era project, served from this `docs/` folder.
+Static recovery-era site from this `docs/` folder.
+
+**Custom domain:** `itsm-cosmology.com` (see `CNAME`)
 
 ## Local preview
-
-Open `index.html` in a browser, or:
 
 ```powershell
 cd docs
@@ -15,14 +15,52 @@ python -m http.server 8080
 ## Enable on GitHub
 
 1. Repo **Settings → Pages**
-2. **Source:** Deploy from a branch
-3. **Branch:** `recovery/v12-core-architecture` (or `main` once merged) · folder **`/docs`**
-4. Save → site at  
-   `https://brendohxd.github.io/ITSM-Integrated-Toroidal-Syntropic-Model/`
+2. Source: **GitHub Actions** (workflow `github-pages`) *or* branch `recovery/v12-core-architecture` → folder `/docs`
+3. Under **Custom domain**, enter `itsm-cosmology.com` and save  
+   (GitHub will use the `docs/CNAME` file after the next deploy)
+4. Enable **Enforce HTTPS** once DNS has propagated and the certificate is ready
 
-Optional custom domain: add `docs/CNAME` with e.g. `research.itsm-cosmology.org` and point DNS per GitHub docs. Keep or separate from the main explorer on `www.itsm-cosmology.org`.
+Site URLs:
+
+- Custom: https://itsm-cosmology.com  
+- Fallback: https://brendohxd.github.io/ITSM-Integrated-Toroidal-Syntropic-Model/
+
+## DNS at your domain registrar (itsm-cosmology.com)
+
+Point the domain at GitHub Pages. Use **one** of these setups.
+
+### Option A — Apex only (`itsm-cosmology.com`)
+
+| Type | Name / Host | Value |
+|------|-------------|--------|
+| **A** | `@` | `185.199.108.153` |
+| **A** | `@` | `185.199.109.153` |
+| **A** | `@` | `185.199.110.153` |
+| **A** | `@` | `185.199.111.153` |
+| **AAAA** (optional IPv6) | `@` | `2606:50c0:8000::153` |
+| **AAAA** | `@` | `2606:50c0:8001::153` |
+| **AAAA** | `@` | `2606:50c0:8002::153` |
+| **AAAA** | `@` | `2606:50c0:8003::153` |
+
+### Option B — Also serve `www.itsm-cosmology.com`
+
+Add Option A, plus:
+
+| Type | Name / Host | Value |
+|------|-------------|--------|
+| **CNAME** | `www` | `brendohxd.github.io` |
+
+In GitHub Pages settings you can set the primary custom domain to `itsm-cosmology.com` and check “Redirect www → apex” if offered.
+
+### If the registrar only allows CNAME on apex
+
+Use their **ALIAS / ANAME / flattened CNAME** feature (Cloudflare “CNAME flattening”, etc.) pointing `@` → `brendohxd.github.io`.
+
+## Relation to itsm-cosmology.org
+
+`.com` can host this recovery research Pages site.  
+`.org` can stay as the separate explorer/brand site if you want both. Avoid two sites contradicting claim hygiene — either align `.org` or link clearly.
 
 ## Content policy
 
-This site must follow recovery claim hygiene (master plan + selective publishing).
-Do not reintroduce withdrawn packaging (parameter-free \(H_0=72.97\), geometric \(a_0\), etc.).
+Recovery claim hygiene only (master plan + selective publishing). No withdrawn packaging as live predictions.

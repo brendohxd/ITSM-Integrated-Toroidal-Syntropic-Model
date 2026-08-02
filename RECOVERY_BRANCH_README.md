@@ -7,8 +7,8 @@ not the scientific status authority for this branch.
 
 ## Start here
 
-- **GitHub Pages (recovery site):** `docs/` — enable under Settings → Pages → branch `/docs`
-  (URL once enabled: `https://brendohxd.github.io/ITSM-Integrated-Toroidal-Syntropic-Model/`)
+- **GitHub Pages (recovery site):** `docs/` — custom domain **itsm-cosmology.com**
+  (see `docs/README.md` for DNS; fallback `https://brendohxd.github.io/ITSM-Integrated-Toroidal-Syntropic-Model/`)
 - **Master research plan (workflow + identity + bans + timeline):**
   `Theory/Core/ITSM_Master_Research_Plan.md`
 - Core architecture: `Theory/Core/ITSM_Core_Architecture.md`
