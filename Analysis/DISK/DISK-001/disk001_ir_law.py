@@ -86,11 +86,26 @@ def aqual_g_from_gN(g_N_vec: np.ndarray, ir: DeclaredIR) -> np.ndarray:
     return (g_mag / nrm) * g_N_vec
 
 
+def a0_effective(ir: DeclaredIR) -> float:
+    """a0_eff = C_obs^2 a0 so deep MOND is |g|=C_obs sqrt(a0 |g_N|)."""
+    return float((ir.C_obs**2) * ir.a0)
+
+
 def aqual_g_magnitude(g_N_mag: np.ndarray | float, ir: DeclaredIR) -> np.ndarray | float:
-    """Scalar |g| given |g_N| under simple-mu AQUAL with a0_eff = C_obs^2 a0."""
+    """Scalar |g| given |g_N| under simple-mu AQUAL with a0_eff = C_obs^2 a0.
+
+    Solves |g| mu(|g|/a0_eff) = |g_N| with mu(x)=x/sqrt(1+x^2).
+    """
     g_N_mag = np.asarray(g_N_mag, dtype=float)
-    a0_eff = (ir.C_obs**2) * ir.a0
+    a0_eff = a0_effective(ir)
     y = g_N_mag / a0_eff
     y2 = y * y
     z = 0.5 * (y2 + np.sqrt(y2 * y2 + 4.0 * y2))
     return np.sqrt(z) * a0_eff
+
+
+def mu_of_grad_phi(grad_mag: np.ndarray | float, ir: DeclaredIR) -> np.ndarray | float:
+    """μ(|∇Φ|/a0_eff) for the AQUAL divergence form ∇·(μ ∇Φ)=4πGρ."""
+    a0_eff = a0_effective(ir)
+    x = np.asarray(grad_mag, dtype=float) / a0_eff
+    return simple_mu_interpolating(x)
