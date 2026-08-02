@@ -281,7 +281,8 @@ action drafts on identity pillars — only premature Derived packaging.
 - **Post–alpha.10 working notes:**  
   - `PASS_KQ_MATCHING_INVENTORY_OPEN` — invariants \(Aq/K_Q\), \(A/K_Q^{3/2}\); routes R1–R5; **numeric \(K_Q\) still NOT_DERIVED**  
 - **Next working priorities:**  
-  1. DISK-001 Stage 2: tighter residuals, better BC, \(R\)–\(z\)/3D (Stage 0–1 PASS)  
+  1. DISK-001 Stage 3: axisymmetric \(R\)–\(z\) nonlinear AQUAL (Stages 0–2 PASS; 2D residual \(\sim10^{-9}\))  
+
 
   2. MAT-001 remains **blocked** for Derived until UVIR-003 full pass  
   3. Optional parallel: VOR-001 spectrum-with-units (P3 full-draft trigger)  

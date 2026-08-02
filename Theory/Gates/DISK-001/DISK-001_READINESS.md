@@ -1,6 +1,7 @@
 # DISK-001 — Readiness checklist (disk / morphology solver)
 
-**Status:** **IN PROGRESS** — Stage 0 scaffold **PASS**; Stage 1 nonlinear AQUAL **PASS** (`DISK-001_STAGE1_NONLINEAR_AQUAL.md`); full gate open  
+**Status:** **IN PROGRESS** — Stages 0–2 **PASS** (Stage 2: discrete residual \({\sim}10^{-9}\), 2D log BC); full gate open until \(R\)–\(z\)/3D  
+
 
 **Branch:** `recovery/v12-core-architecture`  
 **Date:** 2026-08-03  
@@ -41,10 +42,12 @@ Full P4 draft also needs **STAT-001**.
 - [x] Sphere test: Plummer deep-MOND / AQUAL benchmark (Stage 0)  
 - [x] Thin disk: midplane exponential + AQUAL (Stage 0; not full 2D/3D Poisson)  
 - [x] Quantify curl residual of algebraic AQUAL map (Stage 0 diagnostic)  
-- [x] Nonlinear AQUAL/Poisson potential solver (2D Picard FD — Stage 1)  
+- [x] Nonlinear AQUAL/Poisson potential solver (2D Picard FD — Stages 1–2)  
+- [x] Discrete residual = same operator as solve; 2D log free-space BC (Stage 2)  
 - [ ] Axisymmetric \(R\)–\(z\) or 3D thin-disk solver  
 - [ ] Compact-domain option: compensated source protocol (P1 hygiene)  
-- [x] Convergence: resolution study started (Stage 1; tighten residual targets)  
+- [x] Convergence: multi-resolution table with \(\varepsilon\sim10^{-9}\) (Stage 2)  
+
 
 
 ### Claim hygiene
