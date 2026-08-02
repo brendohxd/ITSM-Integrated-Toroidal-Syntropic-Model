@@ -2,7 +2,7 @@
 
 **Status:** Canonical workflow document for the recovery era  
 **Branch:** `recovery/v12-core-architecture`  
-**Last updated:** 2026-08-02  
+**Last updated:** 2026-08-03  
 **Authority order (highest first):**
 
 1. This plan + `ITSM_Core_Architecture.md` + `ITSM_Core_Recovery_Plan.md`  
@@ -273,9 +273,10 @@ action drafts on identity pillars — only premature Derived packaging.
   - denser edge scan tag `dense_edge` (domain failures rise near edge; kernel still finite)  
   - `PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION` — Gaussian packet proxy of local \(K(q)\), **not** an S-matrix  
   - `PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED` — FRW attach + high-\(q\) transfer skeleton for \(G_{\rm proxy}\); full in-in integrals **not** computed  
+  - `PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN` — multi-slice high-\(q\) \(K_{\rm nn}(t)\) + causal mode-projected \(G_{\rm mp}(t_{\rm out},t_{\rm in})\); full in-in still **not** computed  
 - **Next UVIR-003 work (remaining alpha.10 material):**  
-  1. Multi-slice high-\(q\) kernel/response on FRW + mode-projected two-time Green function  
-  2. Nonzero-gradient `|grad(pi)|^3` sector  
+  1. Nonzero-gradient `|grad(pi)|^3` sector on a declared background  
+  2. Optional denser multi-slice kernel recompute at FRW-local backgrounds (not NN)  
   3. Only then a *declared* unitarity diagnostic (not “theory closed”)
 
 Reproduce alpha.9 baseline:
