@@ -1,0 +1,182 @@
+{
+  "calculation_status": "PASS",
+  "derived_claim_requirements": [
+    "Select one primary route (recommend R2 MAT-001 once UVIR force sector ready, or R3 if UV data available)",
+    "State premises as Conditional matching hypotheses, not Derived",
+    "Compute the invariant A*q/K_Q (or A/K_Q^{3/2}) from that calculation",
+    "Re-evaluate q_cross and declared unitarity window with matched invariants",
+    "Only then upgrade status of K_Q-related claims in the ledger"
+  ],
+  "diagnostics": {
+    "Lambda_parallel_invariant": true,
+    "invariants_ok": true,
+    "n_routes": 5,
+    "primary_invariant_named": true
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "invariants": {
+    "causality": {
+      "R_c": "3*A*q*(cos_theta**2 + 1)/K_Q",
+      "primary_invariant": "A*q/K_Q",
+      "q_cross": "K_Q/(3*A*(cos_theta**2 + 1))",
+      "superluminal_when": "R_c > 1 (long-wavelength Stage-A addendum convention)"
+    },
+    "field_redefinition": "psi -> s * psi, s>0",
+    "invariance_checks": {
+      "A_over_K_Q_to_3_2": true,
+      "A_q_over_K_Q": true,
+      "C_m_over_sqrt_K_Q": true,
+      "C_obs_combo": true,
+      "gamma_over_K_Q": true
+    },
+    "invariants": {
+      "A_over_K_Q_to_3_2": "A/K_Q**(3/2)",
+      "A_q_over_K_Q": "A*q/K_Q",
+      "C_m_over_sqrt_K_Q": "C_m/sqrt(K_Q)",
+      "C_obs_combo": "C_m**(3/2)/sqrt(A)",
+      "gamma_over_K_Q": "gamma/K_Q"
+    },
+    "nda_Lambda_parallel": {
+      "equals": "1/sqrt(A/K_Q**(3/2))",
+      "expression": "K_Q**(3/4)/sqrt(A)",
+      "redefinition_invariant": true
+    },
+    "transforms": {
+      "A": "A/s**3",
+      "C_m": "C_m/s",
+      "K_Q": "K_Q/s**2",
+      "gamma": "gamma/s**2",
+      "q_background": "q*s"
+    }
+  },
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_status": "BLOCKED",
+  "matching_status": "OPEN_WITH_CONDITIONAL_CANDIDATES",
+  "next_required_calculation": [
+    "When MAT-001 unblocks: execute R2 vertex matching for C_m, C_IR, K_Q invariants",
+    "Optional parallel: R3 condensate-microscopic sketch under identity dig-harder rule",
+    "Optional: manuscript freeze alpha.10 recording post-alpha.9 UVIR chain"
+  ],
+  "prior_artifacts": {
+    "causality_addendum": "OPEN",
+    "conditional_kq_estimate": "SPECULATIVE_NOT_A_DERIVATION",
+    "declared_unitarity_eft": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+    "zero_gradient_force_block": "PARTIAL_PASS_ZERO_GRADIENT_FORCE_BLOCK_ONLY"
+  },
+  "route_R1_implications": {
+    "Lambda_parallel_expression": "2**(3/4)*sqrt(3)*sqrt(a0)*k_Q**(3/4)/(4*pi**(1/4)*sqrt(C_IR)*G**(1/4))",
+    "Lambda_parallel_over_a0_at_naive_point": "3*2**(1/4)/(4*pi**(1/4)*G**(1/4)*sqrt(a0))",
+    "not_a_derivation": true,
+    "q_cross_rows": [
+      {
+        "direction": "parallel",
+        "q_cross_over_a0_at_kQ1_CIR23": 0.375,
+        "q_cross_over_a0_symbolic": "k_Q/(4*C_IR)"
+      },
+      {
+        "direction": "perp",
+        "q_cross_over_a0_at_kQ1_CIR23": 0.75,
+        "q_cross_over_a0_symbolic": "k_Q/(2*C_IR)"
+      }
+    ],
+    "status": "Conditional_R1_implications_only",
+    "warning": "Naive (k_Q,C_IR)=(1,2/3) places q_cross \u2272 a0; treat as priority flag only (see CONDITIONAL_KQ_ESTIMATE)."
+  },
+  "routes": [
+    {
+      "does_not_fix": [
+        "k_Q",
+        "C_IR",
+        "physical cutoff alone"
+      ],
+      "fixes": [
+        "K_Q / M_P^2 = k_Q (up to k_Q)"
+      ],
+      "id": "R1_dimensional_MP_a0",
+      "name": "Dimensional analogy K_Q = k_Q M_P^2",
+      "premises": [
+        "Temporal Q-kinetic uses same M_P^2 a0^2 prefactor logic as Y sector",
+        "Q0=0 (no subtracted background kinetic)",
+        "k_Q is an O(1) Wilson coefficient (unfixed)"
+      ],
+      "prior_artifact": "UVIR-003_CONDITIONAL_KQ_ESTIMATE (SPECULATIVE_NOT_A_DERIVATION)",
+      "priority": "baseline candidate; must not be cited as Derived",
+      "status": "Conditional"
+    },
+    {
+      "does_not_fix": [
+        "anything until UVIR-003 admits a force sector ready for MAT"
+      ],
+      "fixes": [
+        "C_m / sqrt(K_Q) class combinations once vertex computed",
+        "possibly absolute K_Q once C_m and C_IR are independently fixed"
+      ],
+      "id": "R2_matter_vertex_MAT001",
+      "name": "Matter\u2013force vertex matching (MAT-001)",
+      "premises": [
+        "Single interaction generates force and exchange (architecture)",
+        "C_obs = C_m^{3/2}/sqrt(C_IR) from static weak-field reduction",
+        "Canonical force kinetic enters the vertex normalization"
+      ],
+      "prior_artifact": "MAT-001 blocked; architecture \u00a7 force law",
+      "priority": "canonical long-term route per Master Plan critical path",
+      "status": "Open"
+    },
+    {
+      "does_not_fix": [
+        "IR-only bottom-up EFT without UV data"
+      ],
+      "fixes": [
+        "K_Q in terms of UV parameters of S_\u03a6 + S_\u03c8"
+      ],
+      "id": "R3_condensate_microscopic",
+      "name": "UV condensate / microscopic completion",
+      "premises": [
+        "Force mediator emerges from or couples to condensate \u03a6",
+        "Matching scale set by \u03c1_\u03a6 or phonon residue (not free)"
+      ],
+      "prior_artifact": "UVIR-001/002 route selection; CRA sectors",
+      "priority": "research-open; dig-harder option under identity pillars",
+      "status": "Open"
+    },
+    {
+      "does_not_fix": [
+        "absolute A q / K_Q causality ratio alone"
+      ],
+      "fixes": [
+        "gamma/K_Q",
+        "possibly relative IR/UV force split"
+      ],
+      "id": "R4_regulator_k_cross",
+      "name": "Regulator crossover matching \u03b3, M_*, K_Q",
+      "premises": [
+        "k^4 regulator scale is tied to a named physical scale (e.g. a0)",
+        "invariant gamma/K_Q fixed by that matching"
+      ],
+      "prior_artifact": "Stage A regulator + causality addendum",
+      "priority": "secondary; does not replace A q / K_Q matching",
+      "status": "Open"
+    },
+    {
+      "does_not_fix": [
+        "K_Q without additional dynamical input"
+      ],
+      "fixes": [
+        "C_obs combination involving C_m, C_IR"
+      ],
+      "id": "R5_observational_IR_baseline",
+      "name": "Conditional IR baseline (AQUAL-class) as external anchor",
+      "premises": [
+        "Master plan Bucket C: C_obs ~ 1 as empirical hypothesis until MAT-001",
+        "Does not by itself determine K_Q without dynamics of time-dependent force"
+      ],
+      "prior_artifact": "Master Plan \u00a76 force-law divergence",
+      "priority": "phenomenology anchor only; not a K_Q derivation",
+      "status": "Conditional"
+    }
+  ],
+  "scientific_boundary": "Inventories redefinition invariants and candidate matching routes for the force kinetic coefficient K_Q. Does not derive a numeric K_Q, does not confirm the dimensional-analogy candidate, does not resolve C_IR, does not unlock MAT-001, and does not close UVIR-003. The naive (k_Q,C_IR)=(1,2/3) q_cross \u2272 a0 result remains a priority flag only (SPECULATIVE_NOT_A_DERIVATION).",
+  "stage": "B_KQ_MATCHING_INVENTORY",
+  "subgate_status": "PASS_KQ_MATCHING_INVENTORY_OPEN"
+}

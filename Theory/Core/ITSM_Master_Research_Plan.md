@@ -276,10 +276,13 @@ action drafts on identity pillars — only premature Derived packaging.
   - `PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN` — multi-slice high-\(q\) \(K_{\rm nn}(t)\) + causal mode-projected \(G_{\rm mp}(t_{\rm out},t_{\rm in})\); full in-in still **not** computed  
   - `PASS_NONZERO_GRADIENT_FORCE_LOCAL` — Track-A local expansion of exact \(|\nabla\pi|^3\) about \(v>0\); positive Hessian; **not** homogeneous S-matrix  
   - `PASS_DECLARED_UNITARITY_EFT_CRITERION` — scoped tree/NDA unitarity + high-\(q\) Green health criterion; optical theorem / physical cutoff / MAT **not** claimed  
-- **Post–alpha.10 working priorities (after the declared criterion):**  
-  1. \(K_Q\) / force normalization matching (shared blocker with causality NDA)  
-  2. Optional: couple local anisotropic force vertex into multi-slice FRW Green proxy  
-  3. Manuscript freeze **alpha.10** when ready to record the subgate chain immutably  
+- **Post–alpha.10 working notes:**  
+  - `PASS_KQ_MATCHING_INVENTORY_OPEN` — invariants \(Aq/K_Q\), \(A/K_Q^{3/2}\); routes R1–R5; **numeric \(K_Q\) still NOT_DERIVED**  
+- **Next working priorities:**  
+  1. MAT-001 interface prep / R2 when force sector is matching-ready (still **blocked** for Derived)  
+  2. Optional parallel: R3 condensate-microscopic \(K_Q\) sketch (Open)  
+  3. Optional: couple local anisotropic force vertex into multi-slice FRW Green  
+  4. Manuscript freeze **alpha.10** when ready to seal the post–alpha.9 UVIR chain  
 
 Reproduce alpha.9 baseline:
 
