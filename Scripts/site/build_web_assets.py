@@ -107,14 +107,18 @@ def save_pair(im: Image.Image, stem: str) -> None:
 
 
 def build() -> None:
+    # NOTE: Prefer Scripts/site/render_itsm_identity_figures.py for
+    # hero_toroidal and split_fluid (documented poloidal/toroidal flow).
+    # This pipeline only re-frames remaining archive figures.
     jobs = [
         {
             "src": "itsm_3d_toroidal_manifold.png",
-            "stem": "hero_toroidal",
+            "stem": "hero_toroidal_legacy_reframe",
             "size": (1920, 1080),
             "mode": "contain",
             "frame": False,
             "scale_boost": 0.95,
+            "skip_if": "hero from render_itsm_identity_figures.py",
         },
         {
             "src": "itsm_3d_wake_analogy.png",
@@ -153,6 +157,9 @@ def build() -> None:
     print(f"Source: {SRC}")
     print(f"Output: {OUT}")
     for job in jobs:
+        if job["stem"].endswith("_legacy_reframe"):
+            print(f"  SKIP {job['stem']} ({job.get('skip_if','')})")
+            continue
         path = SRC / job["src"]
         if not path.exists():
             print(f"  SKIP missing {path}")
