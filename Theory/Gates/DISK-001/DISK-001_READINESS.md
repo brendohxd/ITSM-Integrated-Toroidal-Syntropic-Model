@@ -1,6 +1,7 @@
 # DISK-001 — Readiness checklist (disk / morphology solver)
 
-**Status:** **IN PROGRESS** — Stages 0–3 **PASS** (Stage 3: axisymmetric \(R\)–\(z\) nonlinear AQUAL, residual \({\sim}10^{-9}\)); full gate open until multipole-BC + report  
+**Status:** **IN PROGRESS** — Stages 0–4 **PASS** (Stage 4: domain BC sensitivity \({\sim}4.8\%\) interior + midplane \(g(R)\)); full gate open until formal gate report  
+
 
 
 
@@ -50,6 +51,8 @@ Full P4 draft also needs **STAT-001**.
 
 - [ ] Compact-domain option: compensated source protocol (P1 hygiene)  
 - [x] Convergence: multi-resolution table with \(\varepsilon\sim10^{-9}\) (Stage 2)  
+- [x] Domain / BC truncation sensitivity + midplane \(g(R)\) (Stage 4; \({\sim}4.8\%\) interior)  
+
 
 
 
