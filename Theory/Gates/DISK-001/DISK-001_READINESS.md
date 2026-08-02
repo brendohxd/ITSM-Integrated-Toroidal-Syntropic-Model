@@ -1,6 +1,7 @@
 # DISK-001 — Readiness checklist (disk / morphology solver)
 
-**Status:** **IN PROGRESS** — Stages 0–2 **PASS** (Stage 2: discrete residual \({\sim}10^{-9}\), 2D log BC); full gate open until \(R\)–\(z\)/3D  
+**Status:** **IN PROGRESS** — Stages 0–3 **PASS** (Stage 3: axisymmetric \(R\)–\(z\) nonlinear AQUAL, residual \({\sim}10^{-9}\)); full gate open until multipole-BC + report  
+
 
 
 **Branch:** `recovery/v12-core-architecture`  
@@ -44,7 +45,9 @@ Full P4 draft also needs **STAT-001**.
 - [x] Quantify curl residual of algebraic AQUAL map (Stage 0 diagnostic)  
 - [x] Nonlinear AQUAL/Poisson potential solver (2D Picard FD — Stages 1–2)  
 - [x] Discrete residual = same operator as solve; 2D log free-space BC (Stage 2)  
-- [ ] Axisymmetric \(R\)–\(z\) or 3D thin-disk solver  
+- [x] Axisymmetric \(R\)–\(z\) nonlinear AQUAL (Stage 3)  
+- [ ] 3D thin-disk solver (optional upgrade)  
+
 - [ ] Compact-domain option: compensated source protocol (P1 hygiene)  
 - [x] Convergence: multi-resolution table with \(\varepsilon\sim10^{-9}\) (Stage 2)  
 

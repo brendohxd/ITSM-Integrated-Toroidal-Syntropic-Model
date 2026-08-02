@@ -1,0 +1,144 @@
+{
+  "a0_eff": 3700.0,
+  "bc": {
+    "axis_R0": "Neumann regularity d_R Phi = 0",
+    "outer": "Dirichlet 3D soft Newtonian monopole"
+  },
+  "calculation_status": "PASS",
+  "convergence": [
+    {
+      "R_inner": 0.30303030303030304,
+      "axis_dphi_dR_rms_over_g_char": 0.19583756984486117,
+      "dR": 0.6060606060606061,
+      "discrete_rel_residual": 9.237358639174643e-10,
+      "dz": 0.5,
+      "final_max_dphi": 5.845504347234964e-07,
+      "g_probe_midplane_R_eq_Rd": 1169.000730956638,
+      "history_tail": [
+        {
+          "discrete_rel_residual": 8.026287796844492e-09,
+          "iter": 17,
+          "max_dphi": 4.844310751650482e-06
+        },
+        {
+          "discrete_rel_residual": 2.754466740586926e-09,
+          "iter": 18,
+          "max_dphi": 2.3217799025587738e-06
+        },
+        {
+          "discrete_rel_residual": 9.44082956785789e-10,
+          "iter": 19,
+          "max_dphi": 5.845504347234964e-07
+        }
+      ],
+      "nr": 33,
+      "nz": 33,
+      "picard_iters": 20
+    },
+    {
+      "R_inner": 0.20408163265306123,
+      "axis_dphi_dR_rms_over_g_char": 0.14237992375311506,
+      "dR": 0.40816326530612246,
+      "discrete_rel_residual": 1.2614903702121716e-09,
+      "dz": 0.33333333333333304,
+      "final_max_dphi": 5.192523531150073e-07,
+      "g_probe_midplane_R_eq_Rd": 1151.4928985009105,
+      "history_tail": [
+        {
+          "discrete_rel_residual": 1.0459648359626644e-08,
+          "iter": 17,
+          "max_dphi": 4.128909495193511e-06
+        },
+        {
+          "discrete_rel_residual": 3.649619590963532e-09,
+          "iter": 18,
+          "max_dphi": 2.12654413189739e-06
+        },
+        {
+          "discrete_rel_residual": 1.2705566733795592e-09,
+          "iter": 19,
+          "max_dphi": 5.192523531150073e-07
+        }
+      ],
+      "nr": 49,
+      "nz": 49,
+      "picard_iters": 20
+    },
+    {
+      "R_inner": 0.15384615384615385,
+      "axis_dphi_dR_rms_over_g_char": 0.11158908051173307,
+      "dR": 0.3076923076923077,
+      "discrete_rel_residual": 1.441207373400715e-09,
+      "dz": 0.25,
+      "final_max_dphi": 4.4145963329356164e-07,
+      "g_probe_midplane_R_eq_Rd": 1141.6347370444203,
+      "history_tail": [
+        {
+          "discrete_rel_residual": 1.1584457626627222e-08,
+          "iter": 17,
+          "max_dphi": 3.401561116334051e-06
+        },
+        {
+          "discrete_rel_residual": 4.085852001453472e-09,
+          "iter": 18,
+          "max_dphi": 1.8953942344523966e-06
+        },
+        {
+          "discrete_rel_residual": 1.4372221163856414e-09,
+          "iter": 19,
+          "max_dphi": 4.4145963329356164e-07
+        }
+      ],
+      "nr": 65,
+      "nz": 65,
+      "picard_iters": 20
+    }
+  ],
+  "coordinates": "axisymmetric cylindrical (R,z)",
+  "diagnostics": {
+    "axis_metric_nonincreasing": true,
+    "axis_ok": true,
+    "finest_axis_dphi_dR_rms_over_g_char": 0.11158908051173307,
+    "finest_discrete_rel_residual": 1.441207373400715e-09,
+    "refine_ok": true,
+    "res_ok": true
+  },
+  "equation": "(1/R) d_R [R mu d_R Phi] + d_z [mu d_z Phi] = 4 pi G rho",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "DISK-001",
+  "ir": {
+    "C_obs": 1.0,
+    "C_obs_origin": "Conditional_default_Cobs_sim_1_MasterPlan_sec6",
+    "a0": 3700.0,
+    "a0_origin": "phenomenological_input",
+    "ban_B9_dual_rar": true,
+    "label": "Conditional_AQUAL_baseline"
+  },
+  "mat001_status": "BLOCKED",
+  "method": {
+    "nonlinear": "under-relaxed Picard + sparse direct",
+    "omega": 0.65,
+    "picard_tol": 1e-10
+  },
+  "model": {
+    "Rd_kpc": 3.0,
+    "Rmax": 20.0,
+    "Zmax": 8.0,
+    "density": "exp(-R/Rd) sech^2(z/(2 zd))",
+    "mass_Msun": 5000000000.0,
+    "zd_kpc": 0.3
+  },
+  "next_required_calculation": [
+    "Multipole / larger-domain BC sensitivity",
+    "Compare midplane g(R) to thin-disk limits",
+    "DISK-001_GATE_REPORT when full criteria agreed"
+  ],
+  "pass_criteria": {
+    "axis_dphi_dR_rms_over_g_char_lt": 0.15,
+    "finest_discrete_rel_residual_lt": 0.001
+  },
+  "residual_definition": "||A[mu(Phi)] Phi - b||_2 / ||b||_2 interior DOFs, same A as solve",
+  "scientific_boundary": "Axisymmetric R\u2013z nonlinear AQUAL under declared Conditional IR. Outer BC is soft 3D monopole (multipoles of the disk not matched). Not SPARC fitting, not Derived C_obs, not full DISK-001 PASS (full PASS still wants multipole BC audit, thicker resolution study, and optional comparison to independent MOND disk codes).",
+  "stage": "STAGE3_POISSON_RZ_AQUAL",
+  "subgate_status": "PASS_DISK001_RZ_NONLINEAR_AQUAL"
+}
