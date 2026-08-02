@@ -1,66 +1,35 @@
-# Zenodo recovery deposits
+# Zenodo policy (recovery era)
 
-P2 arXiv is deferred (endorsement pending). Use these scripts to archive
-validated **gate packages** and **claim-hygiene docs** on Zenodo instead.
+## Decision (2026-08-02)
 
-## 1. Package
+**Do not** deposit every gate micro-progression (CBR stage zips, UVIR subgate
+slices, claim-hygiene mini-archives) — that clutters Zenodo.
 
-```powershell
-conda activate itsm_env
-cd <repo-root>
-python Scripts/zenodo/package_recovery_deposits.py --git-sha (git rev-parse --short HEAD)
-```
+**Do** deposit **paper packages** when a manuscript is ready for a public
+archive (versioned share PDF + sources + checksums), e.g.:
 
-Output: `releases/zenodo/YYYY-MM-DD/`
+| Paper | Directory | When to Zenodo |
+|-------|-----------|----------------|
+| **P1** | `papers/P1-Scale-Matching-Reconstruction/` | When you want a public DOI for the reconstruction note |
+| **P2** | `papers/P2-Rectangular-T3-Casimir/` | After endorsement / arXiv path (or as preprint package if you choose) |
+| Later P3/P4 | as written | After upstream gates close for their claims |
 
-| Zip | Content |
-|-----|---------|
-| `ITSM_CBR-001_Casimir_T3_v1.0.0.zip` | Stages 1–3B Casimir + backreaction |
-| `ITSM_UVIR-003_LocalFourLeg_v0.10.0-pre.zip` | Four-leg / deformation / packet proxy |
-| `ITSM_Recovery_ClaimHygiene_v1.3.0.zip` | Master plan, firewall, P1 reconstruction |
+Gate numerics stay in **GitHub** (`Analysis/…`, `Theory/Gates/…`) until a paper
+needs a citable freeze of its supporting code.
 
-## 2. Metadata (inclusive + ORCID + website)
-
-Shared metadata lives in `zenodo_deposit_metadata.py`:
-
-- Creator: Brendon Boyd, affiliation, **ORCID** `0009-0007-4177-2612`
-- Links: **https://www.itsm-cosmology.org**, GitHub repo, contact email
-- Related identifiers: GitHub, website, legacy Zenodo DOI family
-- Broader keywords and “who it is for” language; honest claim boundaries
-
-Update **existing drafts** without re-uploading files:
+## Scrap prior segment deposits
 
 ```powershell
 $env:ZENODO_TOKEN = 'YOUR_TOKEN'   # never commit; rotate if exposed
-python Scripts/zenodo/update_zenodo_draft_metadata.py
+python Scripts/zenodo/scrap_gate_deposits.py --dry-run
+python Scripts/zenodo/scrap_gate_deposits.py
 ```
 
-## 3. Upload (new deposits)
+Or delete manually: https://zenodo.org/me/uploads  
+IDs listed in `scrap_gate_deposits.py`.
 
-```powershell
-# Token: https://zenodo.org/account/settings/applications/
-# Scopes: deposit:write  (+ deposit:actions to publish)
-$env:ZENODO_TOKEN = 'YOUR_TOKEN'   # never commit
+## Legacy tooling (optional)
 
-# Draft only (recommended first):
-python Scripts/zenodo/upload_recovery_deposits.py `
-  --package-dir releases/zenodo/YYYY-MM-DD
-
-# Publish after reviewing drafts in the Zenodo UI:
-python Scripts/zenodo/upload_recovery_deposits.py `
-  --package-dir releases/zenodo/YYYY-MM-DD --publish
-```
-
-Creates **new** depositions (does not version the legacy v11 Cosmology DOI).
-
-## 3. Record DOIs
-
-After publish, copy DOIs into:
-
-- `releases/zenodo/YYYY-MM-DD/ZENODO_UPLOAD_RESULTS.json` (auto)
-- `Theory/Core/ITSM_Master_Research_Plan.md` related links
-- optional README badge later
-
-## Security
-
-Never commit `ZENODO_TOKEN` or `zenodo_secrets.json`.
+Older scripts (`package_recovery_deposits.py`, `upload_recovery_deposits.py`,
+`zenodo_deposit_metadata.py`) remain for reference but are **not** the default
+workflow. Prefer paper-folder packaging when you do archive.

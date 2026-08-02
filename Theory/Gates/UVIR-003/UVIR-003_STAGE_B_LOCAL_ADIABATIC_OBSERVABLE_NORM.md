@@ -62,7 +62,9 @@ Depends on:
 
 ## Next
 
-1. Optional denser homogeneous-edge deformation scan.  
-2. Promote proxy toward a true in-in correlator on the FRW trajectory.  
+1. ~~Promote proxy toward FRW in-in path~~ — see
+   `UVIR-003_STAGE_B_FRW_IN_IN_OBSERVABLE_PATH.md`
+   (`PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED`).  
+2. Multi-slice kernel / mode-projected two-time Green function.  
 3. Nonzero-gradient `|grad(pi)|^3`.  
 4. Declared unitarity criterion only after the above.

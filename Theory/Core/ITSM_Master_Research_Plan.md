@@ -2,7 +2,7 @@
 
 **Status:** Canonical workflow document for the recovery era  
 **Branch:** `recovery/v12-core-architecture`  
-**Last updated:** 2026-08-01  
+**Last updated:** 2026-08-02  
 **Authority order (highest first):**
 
 1. This plan + `ITSM_Core_Architecture.md` + `ITSM_Core_Recovery_Plan.md`  
@@ -272,8 +272,9 @@ action drafts on identity pillars — only premature Derived packaging.
   - `PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT` — off-tetra disphenoid kernel  
   - denser edge scan tag `dense_edge` (domain failures rise near edge; kernel still finite)  
   - `PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION` — Gaussian packet proxy of local \(K(q)\), **not** an S-matrix  
+  - `PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED` — FRW attach + high-\(q\) transfer skeleton for \(G_{\rm proxy}\); full in-in integrals **not** computed  
 - **Next UVIR-003 work (remaining alpha.10 material):**  
-  1. Promote packet proxy toward true in-in correlator on FRW trajectory  
+  1. Multi-slice high-\(q\) kernel/response on FRW + mode-projected two-time Green function  
   2. Nonzero-gradient `|grad(pi)|^3` sector  
   3. Only then a *declared* unitarity diagnostic (not “theory closed”)
 
@@ -351,8 +352,8 @@ Historical audit method: `Theory/History/00_CRITICAL_FINDINGS.md`, `Theory/Histo
 
 | Phase | Focus |
 |-------|--------|
-| **Now** | Keep this plan + architecture + ledger as workflow; P1 as claim firewall; UVIR-003 post–alpha.9 substeps |
-| **Months 0–2** | Draft/submit P2 Casimir (independent of geometric \(a_0\)) |
+| **Now** | Keep this plan + architecture + ledger as workflow; P1 as claim firewall; UVIR-003 post–alpha.9 → **in-in / FRW observable path**; Zenodo only for paper packages |
+| **Months 0–2** | Draft P2 Casimir (arXiv deferred pending endorsement); optional Zenodo **paper** package later |
 | **Months 2–6** | UVIR-003 → freeze alpha.10+ → approach MAT-001; AQUAL IR baseline note; **parallel** TOP/VOR (SWNT principle)/WAK/reservoir sketches as capacity allows (identity tracks — not locked behind UVIR completion) |
 | **Later** | P3/P4 only with closed upstream gates |
 | **Synthesis** | Full multi-scale manuscript only after reconstruction chain or permanent abandonment of geometric \(a_0/C_{\rm obs}\) claims |
@@ -390,7 +391,7 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 | Historical critical findings | `Theory/History/00_CRITICAL_FINDINGS.md` |
 | Selective publishing | `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` |
 | P1 | `papers/P1-Scale-Matching-Reconstruction/` |
-| Zenodo recovery drafts (2026-08-02) | `releases/zenodo/2026-08-02/` — CBR-001 `21745260`, UVIR-003 `21745270`, claim hygiene `21745276` (**draft only**; P2 arXiv deferred) |
+| Zenodo policy | **Papers only** (not every gate micro-slice). Segment deposits from 2026-08-02 are to be scrapped; see `Scripts/zenodo/README.md` |
 
 ---
 
