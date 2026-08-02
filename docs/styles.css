@@ -1,0 +1,120 @@
+:root {
+  --bg: #0b1020;
+  --card: #141b2f;
+  --text: #e8eefc;
+  --muted: #a9b4d0;
+  --accent: #7eb6ff;
+  --warn: #3a2f14;
+  --warn-border: #c9a227;
+  --border: #24304d;
+  --radius: 14px;
+  --max: 920px;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 20% -10%, #1a2748 0%, var(--bg) 55%);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.site-header {
+  padding: 3rem 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 4vw, 2.4rem);
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+}
+
+.lede {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 42rem;
+}
+
+.meta { color: var(--muted); font-size: 0.95rem; }
+
+main { padding: 1.5rem 0 3rem; }
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 1rem 0;
+}
+
+.card {
+  background: color-mix(in srgb, var(--card) 92%, black);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.card h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.15rem;
+}
+
+.card.warn {
+  background: var(--warn);
+  border-color: var(--warn-border);
+}
+
+.card ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
+.card li { margin: 0.35rem 0; }
+
+.tag {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.small { color: var(--muted); font-size: 0.9rem; }
+
+pre {
+  overflow-x: auto;
+  background: #0a0e18;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  font-size: 0.82rem;
+  color: #d7e4ff;
+}
+
+.links { list-style: none; padding: 0; }
+.links li { margin: 0.45rem 0; }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0 2.5rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
