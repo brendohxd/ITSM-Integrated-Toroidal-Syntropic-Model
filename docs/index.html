@@ -9,25 +9,12 @@
   <meta property="og:title" content="ITSM — Integrated Toroidal-Syntropic Model" />
   <meta property="og:description" content="Open research on an active toroidal plenum — identity first, mechanisms second, predictions only afterward." />
   <meta property="og:url" content="https://itsm-cosmology.com/" />
+  <meta property="og:image" content="https://itsm-cosmology.com/assets/itsm_3d_toroidal_manifold.png" />
   <link rel="canonical" href="https://itsm-cosmology.com/" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="home">
   <div class="sky" aria-hidden="true"></div>
-  <svg class="torus-mark" viewBox="0 0 400 400" aria-hidden="true">
-    <defs>
-      <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#8eb6ff" stop-opacity="0.55" />
-        <stop offset="55%" stop-color="#d4b06a" stop-opacity="0.35" />
-        <stop offset="100%" stop-color="#8eb6ff" stop-opacity="0.1" />
-      </linearGradient>
-    </defs>
-    <ellipse cx="200" cy="200" rx="150" ry="88" fill="none" stroke="url(#g1)" stroke-width="1.2" opacity="0.9" />
-    <ellipse cx="200" cy="200" rx="108" ry="62" fill="none" stroke="url(#g1)" stroke-width="1" opacity="0.55" />
-    <ellipse cx="200" cy="200" rx="62" ry="36" fill="none" stroke="url(#g1)" stroke-width="0.9" opacity="0.4" />
-    <ellipse cx="200" cy="200" rx="150" ry="88" fill="none" stroke="#d4b06a" stroke-width="0.6" opacity="0.25" transform="rotate(28 200 200)" />
-    <circle cx="200" cy="200" r="4" fill="#d4b06a" opacity="0.7" />
-  </svg>
 
   <nav class="nav">
     <div class="wrap nav-inner">
@@ -47,16 +34,23 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="wrap hero-grid">
+  <header class="home-hero">
+    <div class="home-hero-media" aria-hidden="true">
+      <img
+        src="assets/itsm_3d_toroidal_manifold.png"
+        alt=""
+        width="1600"
+        height="900"
+      />
+    </div>
+    <div class="wrap home-hero-inner">
       <div class="reveal">
         <p class="eyebrow">Open research · Recovery era · v12</p>
         <h1>Integrated <em>Toroidal-Syntropic</em> Model</h1>
         <p class="lede">
-          A long-horizon programme into whether an open, finite-density vacuum
-          plenum — with toroidal topology, fluid wake response, and dual
-          entropy/syntropy exchange — can become a disciplined effective
-          framework for gravity and cosmology.
+          Years of independent research into an open, finite-density vacuum plenum —
+          rebuilt with the discipline the problem deserves: preserve physical identity,
+          derive mechanisms, restore predictions only when earned.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="vision.html">What ITSM hopes to achieve</a>
@@ -69,7 +63,7 @@
         </div>
       </div>
 
-      <aside class="hero-panel reveal reveal-delay-1">
+      <aside class="home-hero-panel reveal reveal-delay-1">
         <h2>At a glance</h2>
         <ul class="stat-list">
           <li>
@@ -82,11 +76,11 @@
           </li>
           <li>
             <span class="stat-k">Rule</span>
-            <span class="stat-v">Identity → mechanisms → predictions (never reverse to “balance” fits)</span>
+            <span class="stat-v">Identity → mechanisms → predictions</span>
           </li>
           <li>
-            <span class="stat-k">Focus now</span>
-            <span class="stat-v">UVIR field sector, Casimir gate science, claim-hygiene papers</span>
+            <span class="stat-k">Focus</span>
+            <span class="stat-v">UVIR field sector · Casimir gates · claim-hygiene papers</span>
           </li>
         </ul>
       </aside>
@@ -94,6 +88,36 @@
   </header>
 
   <main class="wrap">
+    <section class="visual-band reveal">
+      <div class="section-head">
+        <h2>From the research archive</h2>
+        <p>Figures produced inside the ITSM programme</p>
+      </div>
+      <div class="visual-band-grid">
+        <figure class="visual-card tall">
+          <img src="assets/itsm_3d_wake_analogy.png" alt="Acoustic wake analogy visualization from ITSM" width="900" height="600" loading="lazy" />
+          <figcaption>
+            <span>Wake / fluid response</span>
+            Continuous plenum drag vs collisionless halo particles
+          </figcaption>
+        </figure>
+        <figure class="visual-card">
+          <img src="assets/itsm_t3_fundamental_domain.png" alt="T3 fundamental domain schematic" width="600" height="400" loading="lazy" />
+          <figcaption>
+            <span>Topology</span>
+            Flat three-torus fundamental domain
+          </figcaption>
+        </figure>
+        <figure class="visual-card">
+          <img src="assets/itsm_phonon_dispersion.png" alt="Phonon dispersion diagram" width="600" height="400" loading="lazy" />
+          <figcaption>
+            <span>IR sector</span>
+            Phonon / force-sector diagnostics
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="section">
       <div class="card rule span-2 reveal">
         <span class="rule-label">Governing rule</span>
@@ -110,30 +134,36 @@
     <section class="section">
       <div class="section-head">
         <h2>Explore the project</h2>
-        <p>Structured documentation across the recovery scope</p>
+        <p>Documentation across the recovery scope</p>
       </div>
-      <div class="feature-map reveal">
+      <div class="feature-map home-features reveal">
         <a class="feature-link" href="vision.html">
+          <div class="feature-ico" aria-hidden="true">V</div>
           <strong>Vision &amp; aims</strong>
           <span>What the model is for relative to ΛCDM, MOND-like laws, and open thermodynamics — and what success would look like.</span>
         </a>
         <a class="feature-link" href="architecture.html">
+          <div class="feature-ico" aria-hidden="true">A</div>
           <strong>Architecture</strong>
           <span>Condensate, preferred frame, IR force sector, matter, reservoir, topology, and non-negotiable separations.</span>
         </a>
         <a class="feature-link" href="research.html">
+          <div class="feature-ico" aria-hidden="true">R</div>
           <strong>Research path</strong>
           <span>Gate map from UVIR to MAT to disks and cosmology; where work stands after alpha.9.</span>
         </a>
         <a class="feature-link" href="papers.html">
+          <div class="feature-ico" aria-hidden="true">P</div>
           <strong>Papers</strong>
           <span>P1 scale-matching reconstruction, P2 rectangular T³ Casimir, publishing firewall.</span>
         </a>
         <a class="feature-link" href="claims.html">
+          <div class="feature-ico" aria-hidden="true">C</div>
           <strong>Claim hygiene</strong>
           <span>Derived / Conditional / Open / Rejected; three-bucket disposition; what is not live.</span>
         </a>
         <a class="feature-link" href="reproduce.html">
+          <div class="feature-ico" aria-hidden="true">Ω</div>
           <strong>Reproduce</strong>
           <span>Clone the recovery branch, activate itsm_env, run Casimir and UVIR gate scripts.</span>
         </a>
@@ -145,29 +175,34 @@
         <h2>Pillars we keep</h2>
         <p>Identity blocks — not automatic numbers</p>
       </div>
-      <div class="grid">
-        <article class="card reveal">
-          <h3>Physical identity</h3>
-          <ul>
-            <li>Open dual polarity — entropy exhaust / syntropy intake</li>
-            <li>Toroidal circuit / compact flat topology</li>
-            <li>Fluid plenum &amp; continuous wake response</li>
-            <li>Winding–resonance ordering (principle open)</li>
-            <li>GR tensor sector under minimal coupling</li>
-          </ul>
-          <p style="margin:0.8rem 0 0;"><a href="vision.html">Read the full vision →</a></p>
-        </article>
-        <article class="card reveal reveal-delay-1">
-          <h3>What we refuse to re-sell</h3>
-          <ul>
-            <li>Topology-alone “derivation” of \(a_0\) as quantization</li>
-            <li>Free-field \(13/12\) attractor → \(H_0=72.97\)</li>
-            <li>Projector \(2/3\) as proven \(C_{\mathrm{obs}}\)</li>
-            <li>SPARC as independent cosmic \(H_0\)</li>
-            <li>“Zero free parameters / all tensions resolved”</li>
-          </ul>
-          <p style="margin:0.8rem 0 0;"><a href="claims.html">Claim hygiene details →</a></p>
-        </article>
+      <div class="home-split reveal">
+        <div class="home-split-visual">
+          <img src="assets/itsm_3d_fluid_dynamics_publication.png" alt="ITSM fluid dynamics visualization" width="800" height="600" loading="lazy" />
+        </div>
+        <div class="grid" style="grid-template-columns: 1fr; gap: 0.85rem;">
+          <article class="card">
+            <h3>Physical identity</h3>
+            <ul>
+              <li>Open dual polarity — entropy exhaust / syntropy intake</li>
+              <li>Toroidal circuit / compact flat topology</li>
+              <li>Fluid plenum &amp; continuous wake response</li>
+              <li>Winding–resonance ordering (principle open)</li>
+              <li>GR tensor sector under minimal coupling</li>
+            </ul>
+            <p style="margin:0.8rem 0 0;"><a href="vision.html">Read the full vision →</a></p>
+          </article>
+          <article class="card">
+            <h3>What we refuse to re-sell</h3>
+            <ul>
+              <li>Topology-alone “derivation” of \(a_0\) as quantization</li>
+              <li>Free-field \(13/12\) attractor → \(H_0=72.97\)</li>
+              <li>Projector \(2/3\) as proven \(C_{\mathrm{obs}}\)</li>
+              <li>SPARC as independent cosmic \(H_0\)</li>
+              <li>“Zero free parameters / all tensions resolved”</li>
+            </ul>
+            <p style="margin:0.8rem 0 0;"><a href="claims.html">Claim hygiene details →</a></p>
+          </article>
+        </div>
       </div>
     </section>
 
