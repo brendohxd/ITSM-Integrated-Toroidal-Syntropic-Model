@@ -19,7 +19,23 @@ Output: `releases/zenodo/YYYY-MM-DD/`
 | `ITSM_UVIR-003_LocalFourLeg_v0.10.0-pre.zip` | Four-leg / deformation / packet proxy |
 | `ITSM_Recovery_ClaimHygiene_v1.3.0.zip` | Master plan, firewall, P1 reconstruction |
 
-## 2. Upload
+## 2. Metadata (inclusive + ORCID + website)
+
+Shared metadata lives in `zenodo_deposit_metadata.py`:
+
+- Creator: Brendon Boyd, affiliation, **ORCID** `0009-0007-4177-2612`
+- Links: **https://www.itsm-cosmology.org**, GitHub repo, contact email
+- Related identifiers: GitHub, website, legacy Zenodo DOI family
+- Broader keywords and “who it is for” language; honest claim boundaries
+
+Update **existing drafts** without re-uploading files:
+
+```powershell
+$env:ZENODO_TOKEN = 'YOUR_TOKEN'   # never commit; rotate if exposed
+python Scripts/zenodo/update_zenodo_draft_metadata.py
+```
+
+## 3. Upload (new deposits)
 
 ```powershell
 # Token: https://zenodo.org/account/settings/applications/
