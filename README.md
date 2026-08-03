@@ -1,8 +1,152 @@
 > [!IMPORTANT]
-> This branch is the v12 core-recovery workspace. Its claim status and current
-> manuscript differ materially from the legacy v11 material below. Start with
-> [RECOVERY_BRANCH_README.md](RECOVERY_BRANCH_README.md) and
-> [Manuscript/CoreRecovery/README.md](Manuscript/CoreRecovery/README.md).
+> This is the **v12 core-recovery branch**. Its scientific status differs
+> materially from the pre-v12 material retained at the bottom of this page.
+> Current claims are governed by the
+> [Master Research Plan](Theory/Core/ITSM_Master_Research_Plan.md), not by the
+> archived README or an earlier manuscript.
+
+# 🌌 Integrated Toroidal-Syntropic Model (ITSM)
+
+**v12 Core Recovery — Covariant Architecture, Open-System Dynamics, and
+Gate-Based Falsifiability**
+
+🌍 **Recovery website:** [itsm-cosmology.com](https://itsm-cosmology.com) |
+📘 **Current manuscript:** [v12.0-alpha.10](Manuscript/CoreRecovery/releases/v12.0-alpha.10/ITSM_Core_v12.0-alpha.10.pdf) |
+📧 **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
+
+## 📖 Project Overview
+
+The **Integrated Toroidal-Syntropic Model** is being reconstructed as a
+research framework for an active finite-density vacuum, compact toroidal
+topology, open-system thermodynamics, and emergent low-acceleration dynamics.
+Its central physical identity is retained, while every mechanism and numerical
+prediction is being re-tested from declared actions and explicit assumptions.
+
+The recovery programme follows a strict order:
+
+> **Preserve the identity → derive the mechanisms → restore predictions only
+> after their scientific gates pass.**
+
+This prevents a failed argument from automatically discarding a potentially
+valid physical route, while also preventing an attractive idea from being
+presented as a derivation. Every live statement is classified as **Derived**,
+**Conditional**, **Open**, or **Rejected**.
+
+## 💡 Core Identity Under Recovery
+
+- 🌌 **Active vacuum / plenum:** a finite-density condensate is retained as a
+  physical postulate; its complete microscopic force sector remains open.
+- ♻️ **Open thermodynamic circuit:** matter and the observable plenum may
+  exchange energy with a reservoir, but the complete declared system must
+  remain covariantly conserved.
+- 🌀 **Toroidal topology:** compact flat `T³`, twisted boundary conditions,
+  moduli, winding and defects remain active research structures—not automatic
+  sources of `2/3`, `13/12`, or any other Wilson coefficient.
+- 🌊 **Wake and memory:** causal plenum relaxation or retarded response remains
+  an Open identity route. A mathematical template is not yet a physical wake
+  law or a Bullet Cluster solution.
+- 📐 **AQUAL-class infrared response:** reopened as the Conditional static
+  baseline. `C_obs ≈ 1` is the present empirical hypothesis until matter
+  matching computes otherwise; it is not yet a final ITSM prediction.
+- 💡 **Syntropy:** retained as the intake/ordering side of an open
+  thermodynamic description, pending a derived reservoir interaction and
+  constitutive law.
+
+## 🧭 Current Recovery Status
+
+| Area | Current status | What that means |
+|---|---|---|
+| **Manuscript** | `v12.0-alpha.10` frozen | Immutable post-alpha.9 UVIR path package; later working notes do not overwrite it |
+| **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
+| **MAT-001** | **Blocked for PASS / downstream Derived use** | A scoped Conditional matching calculation may prepare provisional invariants, but cannot certify the matter coupling before the UVIR closure stage |
+| **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
+| **WAK-001** | **Open** | The minimal relaxation template passes its mathematical screen; source, stress tensor, energy exchange and observable matching are not derived |
+| **TOP/VOR** | **Open scaffolds; math templates pass** | Fixed-volume shape and winding-separation checks pass; no modulus/winding action or physical identity claim is derived |
+| **Reservoir** | **Open parallel identity gate** | Syntropic throughput may be formalised without restoring rejected historical packaging |
+| **Full cosmology** | **Not yet reconstructed** | CMB, growth, lensing, Solar-System and multi-scale claims require their named upstream gates |
+
+For the full dependency chain and current blockers, use the
+[Recovery Branch Guide](RECOVERY_BRANCH_README.md) and
+[UVIR-003 closure checklist](Theory/Gates/UVIR-003/UVIR-003_FULL_GATE_CLOSURE_CHECKLIST.md).
+
+## 🔬 What the Recovery Has Established
+
+- A claim ledger and gate system now separate verified calculations from
+  assumptions, hypotheses and rejected derivation forms.
+- The Einstein–Hilbert metric, condensate, preferred frame, infrared force,
+  matter, reservoir, topology and optional wake sectors have distinct roles;
+  they cannot be silently identified or double-counted.
+- Complete-system stress-energy conservation is mandatory. Matter–plenum
+  exchange, reservoir throughput and condensate charge transfer are separate
+  objects until an interaction derives their relationship.
+- The old trace-ratio argument does not derive the observable `2/3` coupling.
+  The invariant normalization must be obtained through matter matching.
+- The homogeneous scalar kinetic-rank loss is aligned with a time-translation
+  gauge orbit. It is not, by itself, a physical strong-coupling scale.
+- Free rectangular-torus Casimir stress produces anisotropy but does not
+  establish a persistent `13/12` attractor.
+- AQUAL was not physically disproven by the failed geometric packaging. It is
+  therefore tested honestly as a Conditional IR baseline rather than excluded
+  to protect a fixed coefficient.
+
+These are controlled recovery statements—not a declaration that the complete
+ITSM cosmology has been validated.
+
+## 🚦 Claim and Publication Boundary
+
+Historical claims including a parameter-free `H₀ = 72.97`, a derived
+`a₀ = cH₀/(2π)`, a geometric `C = 2/3`, fixed NANOGrav bounds, automatic
+Solar-System compliance, a quantitative Bullet Cluster wake, and SPARC
+`p = 0.62` validation are **not live v12 claims**.
+
+Only **Bucket A** false packaging and governance failures are hard-banned.
+Underlying Bucket B/C topics may return through new gates, new mathematics and
+new evidence—but never by restoring the old wording as Derived.
+
+## 📂 Recovery Repository Map
+
+| Directory or file | Current role |
+|---|---|
+| [`Theory/Core/`](Theory/Core/) | Canonical architecture, master plan, recovery plan and claim ledger |
+| [`Theory/Gates/`](Theory/Gates/) | Scientific gate reports, status boundaries and reproducible decision records |
+| [`Analysis/`](Analysis/) | Gate-specific symbolic and numerical diagnostics |
+| [`Manuscript/CoreRecovery/`](Manuscript/CoreRecovery/) | Working v12 manuscript plus immutable versioned releases |
+| [`papers/`](papers/) | Selective paper programme governed by the publication firewall |
+| [`Theory/History/`](Theory/History/) | Preserved provenance and historical audit; not current scientific authority |
+| [`RECOVERY_BRANCH_README.md`](RECOVERY_BRANCH_README.md) | Detailed branch orientation, release history and active dependency chain |
+
+## 🛠️ Working With the Recovery Branch
+
+1. Read the [Master Research Plan](Theory/Core/ITSM_Master_Research_Plan.md).
+2. Select exactly one gate and read its owning report before changing equations.
+3. Activate the reproducible environment with `conda activate itsm_env` before
+   running scientific code.
+4. Run the owning gate's focused reproduction command and retain negative
+   controls; a passing script establishes only the scope stated by its report.
+5. Update the claim ledger, gate report and manuscript together when—and only
+   when—a scientific status changes.
+6. Freeze a new manuscript version instead of overwriting an earlier release.
+
+The broad legacy `Scripts/run_all.py` runner is not a proof of recovery status.
+Gate-specific reports and their declared reproduction commands are the
+authoritative path.
+
+## 📜 Current Recovery Documents
+
+- [Master Research Plan](Theory/Core/ITSM_Master_Research_Plan.md)
+- [Core Architecture](Theory/Core/ITSM_Core_Architecture.md)
+- [Claim Migration Ledger](Theory/Core/ITSM_Claim_Migration_Ledger.csv)
+- [Recovery Branch Guide](RECOVERY_BRANCH_README.md)
+- [Core-Recovery Manuscript Guide](Manuscript/CoreRecovery/README.md)
+- [Selective Publishing Plan](papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md)
+
+The original pre-v12 README is retained below for historical provenance. It is
+collapsed by default because its scientific assertions do not represent the
+current recovery branch.
+
+<details>
+<summary><strong>📦 Expand the archived pre-v12 README — provenance only, not current claim status</strong></summary>
+
 # 🌌 Integrated Toroidal-Syntropic Model (ITSM)
 **Relativistic Field Equations, Superfluid Dynamics, and Multi-Scale Falsifiability**
 
@@ -237,6 +381,7 @@ This project relies on and builds upon several major open-source scientific tool
 
 ### Observational Datasets
 * **SPARC Database:** *Source: Lelli, F., McGaugh, S. S., & Schombert, J. M. (2016). SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry. The Astronomical Journal, 152(6), 157.*
+
 * **DESI 2024 BAO:** *Source: DESI Collaboration et al. (2024). DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations.*
 * **NANOGrav 15-year Data Set:** *Source: Agazie, G. et al. (2023). The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background. The Astrophysical Journal Letters, 951(1), L8.*
 * **Planck 2018 Results:** *Source: Planck Collaboration et al. (2020). Planck 2018 results. VI. Cosmological parameters. Astronomy & Astrophysics, 641, A6.*
@@ -258,3 +403,5 @@ To replicate the results locally:
 ## 🖋️ Citation
 If utilizing this framework or the associated computational scripts in your research, please cite:
 > Boyd, B. (2026). The Integrated Toroidal-Syntropic Model: Relativistic Field Equations, Topology-Induced Superfluid Dynamics, and Multi-Scale Falsifiability. DOI: [10.5281/zenodo.18808348](https://doi.org/10.5281/zenodo.18808348)
+
+</details>

@@ -1,0 +1,130 @@
+{
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "control_type": "positive",
+      "n_x_round": 0,
+      "n_y_round": 0,
+      "name": "holonomy_recover_n=(0,0)",
+      "ok": true,
+      "w_x": 0.0,
+      "w_y": 0.0
+    },
+    {
+      "control_type": "positive",
+      "n_x_round": 1,
+      "n_y_round": 0,
+      "name": "holonomy_recover_n=(1,0)",
+      "ok": true,
+      "w_x": 1.0,
+      "w_y": 0.0
+    },
+    {
+      "control_type": "positive",
+      "n_x_round": 0,
+      "n_y_round": 1,
+      "name": "holonomy_recover_n=(0,1)",
+      "ok": true,
+      "w_x": 0.0,
+      "w_y": 1.0
+    },
+    {
+      "control_type": "positive",
+      "n_x_round": 1,
+      "n_y_round": -1,
+      "name": "holonomy_recover_n=(1,-1)",
+      "ok": true,
+      "w_x": 0.9999999999999997,
+      "w_y": -0.9999999999999997
+    },
+    {
+      "control_type": "positive",
+      "n_x_round": 2,
+      "n_y_round": 1,
+      "name": "holonomy_recover_n=(2,1)",
+      "ok": true,
+      "w_x": 2.0,
+      "w_y": 1.0
+    },
+    {
+      "control_type": "positive_separation",
+      "name": "local_fluctuation_preserves_winding_integers",
+      "ok": true,
+      "w_after": [
+        1.0000000000000002,
+        0.0
+      ],
+      "w_before": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "E_00": 0.0,
+      "E_10": 39.351745734184036,
+      "E_20": 155.89471741688476,
+      "control_type": "positive_template_energy",
+      "name": "toy_dirichlet_energy_monotone_in_nx",
+      "note": "Dimensionless template only; not a physical tension",
+      "ok": true
+    },
+    {
+      "control_type": "negative",
+      "name": "negative_control_trivial_winding",
+      "ok": true,
+      "w_x": 0.0,
+      "w_y": 0.0
+    },
+    {
+      "control_type": "negative",
+      "core_fraction_floored": 0.0,
+      "core_fraction_raw": 0.000244140625,
+      "name": "negative_control_forced_smooth_density_kills_core_indicator",
+      "ok": true
+    },
+    {
+      "control_type": "negative",
+      "fake_w": 1.37,
+      "name": "negative_control_non_integer_fake_holonomy_rejected",
+      "ok": true
+    },
+    {
+      "control_type": "negative",
+      "grid_points_x": 64,
+      "n_x": 32,
+      "name": "negative_control_under_resolved_winding_rejected",
+      "ok": true
+    }
+  ],
+  "derived_claims": [],
+  "forbidden_packaging_not_used": [
+    "lunar_SWNT",
+    "a0=cH0/2pi_as_circulation_quantum",
+    "C=2/3",
+    "13/12",
+    "PTA_interval_from_a0_units",
+    "automatic_cosmology_or_lensing"
+  ],
+  "gate": "VOR-001",
+  "grid": {
+    "Lx": 1.0,
+    "Ly": 1.0,
+    "N": 64
+  },
+  "label": "mathematical-template-only",
+  "next_research_stages": [
+    "S1 finite-density background under a named V(rho)",
+    "S2 winding-sector energy from declared action",
+    "S3 true defect core ODE/PDE",
+    "S4.0 define resonance before any spectrum packaging"
+  ],
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "Toy 2D periodic phase template illustrating holonomy integers, local fluctuation separation, and negative controls. Not a condensate action, not VOR-001 research PASS, not claim restoration.",
+  "separations_demonstrated": [
+    "local_phase_fluctuation_vs_global_winding_integers",
+    "topological_integers_vs_absent_Wilson_coefficients",
+    "defect_core_indicator_vs_forced_smooth_density"
+  ],
+  "subgate_status": "PASS_VOR001_MATH_TEMPLATE_ONLY"
+}

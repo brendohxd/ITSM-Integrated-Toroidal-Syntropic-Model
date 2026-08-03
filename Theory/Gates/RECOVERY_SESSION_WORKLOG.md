@@ -877,3 +877,117 @@ homogeneous time-translation continuation. This is not an all-background
 instability theorem, physical parameter fit, amplitude, unitarity result,
 strong-coupling scale, or cutoff. Next identify a controlled real-pole,
 adiabatic exchange domain and project the verified interaction kernels onto
+
+## 2026-08-03 - WAK-001 causal wake scaffold and relaxation template
+
+Gate: WAK-001 (parallel Open identity track)
+
+**Scaffold:** opened an explicit wake/memory gate while retaining the
+AQUAL-class force law as the Conditional static IR baseline. The gate requires
+a choice between two mutually exclusive bookkeeping routes: an internal
+plenum constitutive variable already included in `T_P^{mu nu}`, or an
+independent `T_W^{mu nu}` sector with a separately derived exchange current.
+The two descriptions may not be combined.
+
+**Template:** tested
+`tau_W (partial_t + v_W partial_x) W + W = kappa_W S` on a periodic domain.
+The declared toy point has decay rate `-0.4`, characteristic speed `0.4`,
+static gain `0.7`, high-frequency gain `0.0279776268442`, and energy ratio
+`0.0407622039784`. Three negative controls reject non-positive relaxation time
+and transport outside the declared matter cone.
+
+**Result:** `PASS_WAK001_RELAXATION_TEMPLATE_MATH` establishes only that a
+minimal causal-decay template is mathematically possible. It does not derive
+a covariant wake action, source, stress tensor, sector exchange, matter/metric
+observable, galactic force, detached cluster wake, or maintained anisotropy.
+
+**Decision:** WAK-001 remains `OPEN`; physical wake law
+`NOT_YET_DERIVED`. Next select the bookkeeping route from candidate
+microphysics and derive its energy/exchange accounting. Do not choose a route
+to obtain a desired galaxy or cluster outcome.
+
+## 2026-08-03 - VOR-001 SWNT-principle recovery scaffold
+
+Gate: VOR-001 (parallel Open identity track)
+
+**Scaffold:** formalised the retained winding/circulation/resonance principle
+as a complex-condensate research gate on fixed compact `T^3` or declared
+twisted flat boundary conditions. Local phase fluctuations, global winding
+integers, Wilson coefficients, boundary conditions, force laws, smooth
+circulation and defect cores are explicitly separated.
+
+**Independent review:** reproduced the saved default JSON exactly by SHA-256
+and reran at `N=128`. The dimensionless `n_x=1` energy error relative to the
+continuum template fell from `3.2086e-3` at `N=64` to `8.0293e-4`; the
+`n_x=2` error fell from `1.2785e-2` to `3.2086e-3`.
+
+**Robustness fix:** added explicit finite positive domain validation and a
+sampling-resolution guard `2*abs(n_i) < N_i`. The audit now passes eleven
+checks including four negative controls; invalid `N=2` and `Lx=0` fail
+explicitly.
+
+**Result:** `PASS_VOR001_MATH_TEMPLATE_ONLY`, with `physics_pass: false` and
+gate status `OPEN_SCAFFOLD_ONLY`. No lunar SWNT, `a0=cH0/(2*pi)`, `C=2/3`,
+`13/12`, PTA interval, lensing, SPARC or cosmological packaging is restored.
+
+**Decision:** accept the package as an Open gate scaffold after review, not as
+`PASS_VOR001_RESEARCH`. Next substantive stages are a named finite-density
+potential, action-derived winding-sector energy, a genuine defect solution,
+and an operational definition of resonance before any spectrum claim.
+
+## 2026-08-03 - WAK-001 Stage-2 bookkeeping and free-field screen
+
+Gate: WAK-001 (Route-II Conditional calculation lane)
+
+**Route decision:** compare internal-plenum and independent-sector accounting.
+Select the independent `T_W^{mu nu}` route only as the most auditable first
+calculation because it exposes the Hamiltonian, characteristics, metric/frame
+variation and exchange cancellation. This is not an ontological claim. Route I
+remains the fallback if the new field duplicates an existing mode.
+
+**Free screen:** the local source-free quadratic template at `Z_W=1.2`,
+`c_W^2=0.36`, `M_W^2=0.8` passes ten checks. Its dispersion is positive, the
+sampled quadratic Hamiltonian is non-negative, the characteristic lies inside
+the declared matter cone and the massive static susceptibility is finite.
+Five negative controls reject zero/ghost kinetic coefficient, negative
+gradient coefficient, acausal declared speed and tachyonic mass.
+
+**Result:** `PASS_WAK001_ROUTE2_FREE_TEMPLATE` with `physics_pass: false`.
+WAK-001 remains Open. No source, exchange current, dissipation, stress
+variation, mode independence, AQUAL correction or observable is derived.
+
+**Decision:** keep `J_W=0`. Next derive `W`, metric and frame variations from
+one trial action, then compare the free mode against `Phi`, `U` and `psi`
+before proposing an interaction or dissipative completion.
+## 2026-08-03 - TOP-001 shape-modulus scaffold review
+
+Gate: TOP-001 (parallel Open identity track)
+
+**Scaffold:** formalised compact flat `T^3` boundary conditions and global
+shape moduli as a research object distinct from metric dynamics, local force
+coefficients, VOR winding sectors, free Casimir stress, driven wake stress and
+cosmological observables.
+
+**Independent review:** reproduced the submitted five-check JSON exactly at
+SHA-256
+`D1A88FDE0F22EADA53BBCAEE4E5CE39B1C10C5AC5B5BB550D56175FE0024947A`.
+At fixed `V=1`, the `r=2` diagnostic changes from `0.265520685092164` at
+`n_max=6` to `0.26563937759788736` at `n_max=10`, a relative change of
+`0.000446818189368864`.
+
+**Robustness fix:** reject non-finite or non-positive geometry, empty mode
+lattices, malformed diagnostic arrays and non-refining cutoffs. The refinement
+guardrail is tightened to 1%, and the non-cubic result is scoped to the tested
+biaxial chart rather than stated as an if-and-only-if theorem. Two independent
+reviewed runs match at SHA-256
+`846B82E89E315B38A1D5BBD03244FDC131462BD3DA0CA55355FCA4E6BDEF35FB`.
+
+**Result:** `PASS_TOP001_MATH_TEMPLATE_ONLY` with nine checks,
+`physics_pass: false` and gate status `OPEN_SCAFFOLD_ONLY`. No modulus action,
+Casimir stress, twisted-boundary preference, backreaction, `13/12` attractor,
+`H0`, `a0`, `Cobs` or cosmological observable is derived.
+
+**Decision:** accept the reviewed package as an Open scaffold, not as
+`PASS_TOP001_RESEARCH`. Next substantive work is the declared staged choice
+between fixed-boundary and dynamical-modulus routes, followed by energy,
+constraint, stability and covariance tests.
