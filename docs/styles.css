@@ -950,6 +950,11 @@ body.home .torus-mark {
   position: absolute;
   inset: 0;
   z-index: 0;
+  /* Slot matches rebuilt 16:9 hero canvas */
+  aspect-ratio: 16 / 9;
+  max-height: none;
+  width: 100%;
+  height: 100%;
 }
 
 .home-hero-media img,
@@ -960,9 +965,9 @@ body.home .torus-mark {
 }
 
 .home-hero-media img {
+  /* Cover only after 16:9 rebuild — source is already landscape */
   object-fit: cover;
   object-position: center center;
-  /* rebuilt 16:9 web asset — no brutal crop of portrait source */
   filter: saturate(1.04) contrast(1.05) brightness(0.88);
 }
 
@@ -1090,12 +1095,17 @@ figure.visual-card,
 .visual-card img {
   width: 100%;
   height: 100%;
-  /* contain: cards are already void-dark; gutters match site bg and stay invisible */
+  /* contain inside fixed 4:3 slot; rebuilt cards letterbox on void */
   object-fit: contain;
   object-position: center;
   display: block;
   background: #05060c;
 }
+
+/* Explicit slot classes if needed by future markup */
+.slot-16x9 { aspect-ratio: 16 / 9; }
+.slot-4x3 { aspect-ratio: 4 / 3; }
+.slot-14x9 { aspect-ratio: 14 / 9; }
 
 .visual-card figcaption {
   position: absolute;

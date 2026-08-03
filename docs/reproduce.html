@@ -6,7 +6,7 @@
   <title>Reproduce — ITSM</title>
   <meta name="description" content="How to clone the ITSM recovery branch and reproduce Casimir and UVIR gate calculations." />
   <link rel="canonical" href="https://itsm-cosmology.com/reproduce.html" />
-  <link rel="stylesheet" href="styles.css?v=20260803a" />
+  <link rel="stylesheet" href="styles.css?v=20260804a" />
 </head>
 <body>
   <div class="sky" aria-hidden="true"></div>
@@ -70,11 +70,21 @@ python cbr001_stage3b_ratio_test.py</code></pre>
         </article>
         <article class="card">
           <h3>UVIR-003 — field sector</h3>
-          <p>Local four-leg kernel and post–alpha.9 path diagnostics.</p>
+          <p>α.9 kernel baseline + post–α.10 path / domain audits.</p>
           <pre><code>cd Analysis/UVIR/UVIR-003
 python uvir003_local_four_leg_kernel.py
-python uvir003_local_adiabatic_observable_norm.py
-python uvir003_frw_in_in_observable_path.py</code></pre>
+python uvir003_frw_multi_slice_mode_green.py
+python uvir003_nonzero_gradient_force_local.py
+python uvir003_declared_unitarity_eft_criterion.py
+python uvir003_declared_weak_coupling_domain.py
+python uvir003_full_gate_closure_audit.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>Identity tracks (optional)</h3>
+          <p>Open scaffolds — mathematical templates only, <code>physics_pass: false</code>.</p>
+          <pre><code>python Analysis/TOP/TOP-001/top001_s1_triaxial_fixed_volume_audit.py
+python Analysis/VOR/VOR-001/vor001_winding_template_audit.py
+# WAK-001: see Theory/Gates/WAK-001/</code></pre>
         </article>
       </div>
     </section>
