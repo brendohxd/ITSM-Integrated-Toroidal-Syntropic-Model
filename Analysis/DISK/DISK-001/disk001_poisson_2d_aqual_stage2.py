@@ -300,7 +300,7 @@ def main() -> None:
         results.append(row)
         print(
             f"  res={row['discrete_rel_residual']:.3e}  "
-            f"curl_Φ={row['curl_potential_rel']:.3e}  "
+            f"curl_phi={row['curl_potential_rel']:.3e}  "
             f"curl_alg={row['curl_algebraic_map_rel']:.3e}  "
             f"iters={row['picard_iters']}"
         )

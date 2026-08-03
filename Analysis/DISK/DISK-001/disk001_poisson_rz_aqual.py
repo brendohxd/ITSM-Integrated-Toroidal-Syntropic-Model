@@ -331,7 +331,7 @@ def main() -> None:
         results.append(row)
         print(
             f"  res={row['discrete_rel_residual']:.3e}  "
-            f"axis_dφ/dR={row['axis_dphi_dR_rms_over_g_char']:.3e}  "
+            f"axis_dphi_dR={row['axis_dphi_dR_rms_over_g_char']:.3e}  "
             f"iters={row['picard_iters']}"
         )
 
