@@ -1,0 +1,110 @@
+{
+  "blocking_for_full_pass": [
+    "M2_stability_declared_domain",
+    "M3_causality_declared_domain",
+    "M6_physical_cutoff",
+    "M7_matter_ready_for_MAT"
+  ],
+  "calculation_status": "PASS",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "master_plan_criteria": {
+    "M1_selected_action_declared": {
+      "note": "Stage A + Track A force architecture on branch",
+      "status": "PASS_BOUNDED"
+    },
+    "M2_stability_declared_domain": {
+      "note": "Many kinetic/transfer PASSes; IR HOLD modes remain",
+      "status": "PARTIAL"
+    },
+    "M3_causality_declared_domain": {
+      "note": "q_cross needs matched A q / K_Q; long-wavelength Open",
+      "status": "PARTIAL"
+    },
+    "M4_unitarity_path_with_scope": {
+      "note": "Declared tree/NDA criterion; optical theorem not computed",
+      "status": "PASS_SCOPED"
+    },
+    "M5_invariant_ratios": {
+      "note": "Invariants listed; numeric K_Q NOT_DERIVED",
+      "status": "PASS_INVENTORY"
+    },
+    "M6_physical_cutoff": {
+      "note": "Blocked on matching; NDA Lambda_parallel only",
+      "status": "OPEN"
+    },
+    "M7_matter_ready_for_MAT": {
+      "note": "MAT-001 remains BLOCKED for Derived vertex",
+      "status": "OPEN"
+    }
+  },
+  "mat001_status": "BLOCKED",
+  "mismatched_required_summaries": [],
+  "missing_required_summaries": [],
+  "next_required_calculation": [
+    "Matching of invariant A q / K_Q via named route (toward M3 Derived + M6)",
+    "Re-evaluate causality domain after matching",
+    "Only then reconsider MAT-001 unblock under Master Plan wording"
+  ],
+  "optional_subgate_evidence": {
+    "uvir003_four_leg_kinematic_deformation_summary.json": {
+      "expected": "PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT",
+      "got": "PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_local_adiabatic_observable_norm_summary.json": {
+      "expected": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+      "got": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+      "ok": true,
+      "present": true
+    }
+  },
+  "required_subgate_evidence": {
+    "uvir003_declared_unitarity_eft_criterion_summary.json": {
+      "expected": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+      "got": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+      "ok": true,
+      "path": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\UVIR\\UVIR-003\\outputs\\uvir003_declared_unitarity_eft_criterion_summary.json",
+      "required": true
+    },
+    "uvir003_frw_in_in_observable_path_summary.json": {
+      "expected": "PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED",
+      "got": "PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED",
+      "ok": true,
+      "path": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\UVIR\\UVIR-003\\outputs\\uvir003_frw_in_in_observable_path_summary.json",
+      "required": true
+    },
+    "uvir003_frw_multi_slice_mode_green_summary.json": {
+      "expected": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+      "got": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+      "ok": true,
+      "path": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\UVIR\\UVIR-003\\outputs\\uvir003_frw_multi_slice_mode_green_summary.json",
+      "required": true
+    },
+    "uvir003_kq_matching_inventory_summary.json": {
+      "expected": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "got": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "ok": true,
+      "path": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\UVIR\\UVIR-003\\outputs\\uvir003_kq_matching_inventory_summary.json",
+      "required": true
+    },
+    "uvir003_local_four_leg_kernel_summary.json": {
+      "expected": "PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL",
+      "got": "PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL",
+      "ok": true,
+      "path": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\UVIR\\UVIR-003\\outputs\\uvir003_local_four_leg_kernel_summary.json",
+      "required": true
+    },
+    "uvir003_nonzero_gradient_force_local_summary.json": {
+      "expected": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+      "got": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+      "ok": true,
+      "path": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\UVIR\\UVIR-003\\outputs\\uvir003_nonzero_gradient_force_local_summary.json",
+      "required": true
+    }
+  },
+  "scientific_boundary": "Audits presence of post-alpha.9/10 subgate summaries and scores Master Plan UVIR-003 criteria as PASS_BOUNDED/PARTIAL/OPEN. Does not close UVIR-003, derive K_Q, compute optical theorem, or unlock MAT-001.",
+  "stage": "FULL_GATE_CLOSURE_AUDIT",
+  "subgate_status": "PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT"
+}

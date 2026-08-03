@@ -1,0 +1,341 @@
+{
+  "analytic": {
+    "R_c": "2*C_IR*q_over_a0*(cos_theta**2 + 1)/k_Q",
+    "naive_parallel_q_cross_over_a0": 0.375,
+    "q_cross_over_a0": "k_Q/(2*C_IR*(cos_theta**2 + 1))"
+  },
+  "calculation_status": "PASS",
+  "claim_status": "Conditional",
+  "diagnostics": {
+    "identity_Rc_equals_q_over_qcross": true,
+    "n_scan_rows": 320,
+    "naive_parallel_qc_is_3_8": true
+  },
+  "domain_summary": [
+    {
+      "C_IR": 0.5,
+      "direction": "parallel",
+      "k_Q": 0.25,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.125
+    },
+    {
+      "C_IR": 0.5,
+      "direction": "perp",
+      "k_Q": 0.25,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.25
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "direction": "parallel",
+      "k_Q": 0.25,
+      "max_sampled_q_over_a0_with_Rc_le_1": NaN,
+      "q_cross_over_a0": 0.09375
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "direction": "perp",
+      "k_Q": 0.25,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.1875
+    },
+    {
+      "C_IR": 1.0,
+      "direction": "parallel",
+      "k_Q": 0.25,
+      "max_sampled_q_over_a0_with_Rc_le_1": NaN,
+      "q_cross_over_a0": 0.0625
+    },
+    {
+      "C_IR": 1.0,
+      "direction": "perp",
+      "k_Q": 0.25,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.125
+    },
+    {
+      "C_IR": 1.5,
+      "direction": "parallel",
+      "k_Q": 0.25,
+      "max_sampled_q_over_a0_with_Rc_le_1": NaN,
+      "q_cross_over_a0": 0.041666666666666664
+    },
+    {
+      "C_IR": 1.5,
+      "direction": "perp",
+      "k_Q": 0.25,
+      "max_sampled_q_over_a0_with_Rc_le_1": NaN,
+      "q_cross_over_a0": 0.08333333333333333
+    },
+    {
+      "C_IR": 0.5,
+      "direction": "parallel",
+      "k_Q": 0.5,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.25
+    },
+    {
+      "C_IR": 0.5,
+      "direction": "perp",
+      "k_Q": 0.5,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.5,
+      "q_cross_over_a0": 0.5
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "direction": "parallel",
+      "k_Q": 0.5,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.1875
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "direction": "perp",
+      "k_Q": 0.5,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.3,
+      "q_cross_over_a0": 0.375
+    },
+    {
+      "C_IR": 1.0,
+      "direction": "parallel",
+      "k_Q": 0.5,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.125
+    },
+    {
+      "C_IR": 1.0,
+      "direction": "perp",
+      "k_Q": 0.5,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.25
+    },
+    {
+      "C_IR": 1.5,
+      "direction": "parallel",
+      "k_Q": 0.5,
+      "max_sampled_q_over_a0_with_Rc_le_1": NaN,
+      "q_cross_over_a0": 0.08333333333333333
+    },
+    {
+      "C_IR": 1.5,
+      "direction": "perp",
+      "k_Q": 0.5,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.16666666666666666
+    },
+    {
+      "C_IR": 0.5,
+      "direction": "parallel",
+      "k_Q": 1.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.5,
+      "q_cross_over_a0": 0.5
+    },
+    {
+      "C_IR": 0.5,
+      "direction": "perp",
+      "k_Q": 1.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 1.0,
+      "q_cross_over_a0": 1.0
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "direction": "parallel",
+      "k_Q": 1.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.3,
+      "q_cross_over_a0": 0.375
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "direction": "perp",
+      "k_Q": 1.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.75,
+      "q_cross_over_a0": 0.75
+    },
+    {
+      "C_IR": 1.0,
+      "direction": "parallel",
+      "k_Q": 1.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.25
+    },
+    {
+      "C_IR": 1.0,
+      "direction": "perp",
+      "k_Q": 1.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.5,
+      "q_cross_over_a0": 0.5
+    },
+    {
+      "C_IR": 1.5,
+      "direction": "parallel",
+      "k_Q": 1.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.1,
+      "q_cross_over_a0": 0.16666666666666666
+    },
+    {
+      "C_IR": 1.5,
+      "direction": "perp",
+      "k_Q": 1.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.3,
+      "q_cross_over_a0": 0.3333333333333333
+    },
+    {
+      "C_IR": 0.5,
+      "direction": "parallel",
+      "k_Q": 2.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 1.0,
+      "q_cross_over_a0": 1.0
+    },
+    {
+      "C_IR": 0.5,
+      "direction": "perp",
+      "k_Q": 2.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 2.0,
+      "q_cross_over_a0": 2.0
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "direction": "parallel",
+      "k_Q": 2.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.75,
+      "q_cross_over_a0": 0.75
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "direction": "perp",
+      "k_Q": 2.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 1.5,
+      "q_cross_over_a0": 1.5
+    },
+    {
+      "C_IR": 1.0,
+      "direction": "parallel",
+      "k_Q": 2.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.5,
+      "q_cross_over_a0": 0.5
+    },
+    {
+      "C_IR": 1.0,
+      "direction": "perp",
+      "k_Q": 2.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 1.0,
+      "q_cross_over_a0": 1.0
+    },
+    {
+      "C_IR": 1.5,
+      "direction": "parallel",
+      "k_Q": 2.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.3,
+      "q_cross_over_a0": 0.3333333333333333
+    },
+    {
+      "C_IR": 1.5,
+      "direction": "perp",
+      "k_Q": 2.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.5,
+      "q_cross_over_a0": 0.6666666666666666
+    },
+    {
+      "C_IR": 0.5,
+      "direction": "parallel",
+      "k_Q": 4.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 2.0,
+      "q_cross_over_a0": 2.0
+    },
+    {
+      "C_IR": 0.5,
+      "direction": "perp",
+      "k_Q": 4.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 3.0,
+      "q_cross_over_a0": 4.0
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "direction": "parallel",
+      "k_Q": 4.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 1.5,
+      "q_cross_over_a0": 1.5
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "direction": "perp",
+      "k_Q": 4.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 3.0,
+      "q_cross_over_a0": 3.0
+    },
+    {
+      "C_IR": 1.0,
+      "direction": "parallel",
+      "k_Q": 4.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 1.0,
+      "q_cross_over_a0": 1.0
+    },
+    {
+      "C_IR": 1.0,
+      "direction": "perp",
+      "k_Q": 4.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 2.0,
+      "q_cross_over_a0": 2.0
+    },
+    {
+      "C_IR": 1.5,
+      "direction": "parallel",
+      "k_Q": 4.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 0.5,
+      "q_cross_over_a0": 0.6666666666666666
+    },
+    {
+      "C_IR": 1.5,
+      "direction": "perp",
+      "k_Q": 4.0,
+      "max_sampled_q_over_a0_with_Rc_le_1": 1.0,
+      "q_cross_over_a0": 1.3333333333333333
+    }
+  ],
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "master_plan_criterion": "M3_causality_declared_domain (documentation only)",
+  "mat001_status": "BLOCKED",
+  "naive_point_q_over_a0_equals_1": [
+    {
+      "C_IR": 0.6666666666666666,
+      "R_c": 2.6666666666666665,
+      "causal_Rc_le_1": false,
+      "direction": "parallel",
+      "k_Q": 1.0,
+      "q_cross_over_a0": 0.375,
+      "q_over_a0": 1.0
+    },
+    {
+      "C_IR": 0.6666666666666666,
+      "R_c": 1.3333333333333333,
+      "causal_Rc_le_1": false,
+      "direction": "perp",
+      "k_Q": 1.0,
+      "q_cross_over_a0": 0.75,
+      "q_over_a0": 1.0
+    }
+  ],
+  "next_required_calculation": [
+    "Replace Conditional (k_Q, C_IR) with matched invariants from R2/R3",
+    "Re-evaluate domain after matching",
+    "Physical cutoff once normalization fixed"
+  ],
+  "not_a_derivation_of": [
+    "k_Q",
+    "C_IR",
+    "K_Q",
+    "physical cutoff",
+    "MAT-001 vertex"
+  ],
+  "premises": [
+    "K_Q = k_Q M_P^2 with M_P^2 = 1/(8 pi G) (R1 dimensional analogy \u2014 Conditional)",
+    "A = C_IR/(12 pi G a0) (architecture force normalization)",
+    "R_c = 3 A q (1+cos^2 theta)/K_Q; causal when R_c <= 1 (Stage-A LW convention)",
+    "k_Q and C_IR are free Conditional Wilson coefficients in this scan"
+  ],
+  "scientific_boundary": "Maps the Conditional causality domain under R1-structure matching premises. Does not derive k_Q or C_IR. Does not close UVIR-003 M3 as Derived. Does not unlock MAT-001. The naive (k_Q,C_IR)=(1,2/3) point still places q_cross ~ 0.375 a0 (parallel), so background gradients of order a0 sit outside the Conditional causal window \u2014 a priority flag for real matching, not a proof of theory failure.",
+  "stage": "B_CAUSALITY_DOMAIN_CONDITIONAL_MATCHING",
+  "subgate_status": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING"
+}
