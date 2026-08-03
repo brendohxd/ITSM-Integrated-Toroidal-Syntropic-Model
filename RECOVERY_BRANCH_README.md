@@ -261,9 +261,10 @@ predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
 These bounded results do **not** establish full perturbative stability,
 observational viability, or a completed cosmology. Post-alpha.10 work has
 documented a Conditional causality domain, route maps, and an evidence-bounded
-M2 claim domain. The next scientific action is Stage 2a: attempt an R3 bound
-or derivation for `Z_psi` and `r_rho`; otherwise record an explicit incomplete
-result and adopt only a named Conditional floor.
+M2 claim domain. Stage 2a has now audited the R3 residue route and found no
+action-level value or rigorous bound for `Z_psi r_rho` in the declared source
+set (`INCOMPLETE_R3_UV_RESIDUE`). The next scientific action is Stage 2b: write
+a named Conditional matching floor and its scoped MAT-calculation handoff.
 
 ## Parallel identity-gate checkpoint - 2026-08-04
 

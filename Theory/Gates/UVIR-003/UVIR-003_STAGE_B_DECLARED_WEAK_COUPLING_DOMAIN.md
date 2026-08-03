@@ -73,9 +73,9 @@ python Analysis\UVIR\UVIR-003\uvir003_declared_weak_coupling_domain.py
 
 ## Next (serial Stage 2 only)
 
-1. Stage 2a — dig-harder R3 (\(Z_\psi,r_\rho\))  
-2. Stage 2b — Conditional matching floor if 2a incomplete  
-3. Stage 2c — re-evaluate causality/NDA under floor  
-4. **Then** Stage 3 MAT-001  
+1. Stage 2a — **DONE:** `INCOMPLETE_R3_UV_RESIDUE`
+2. Stage 2b — **NEXT:** write the Conditional matching floor and scope
+3. Stage 2c — re-evaluate causality/NDA under that floor
+4. **Then** Stage 3 scoped MAT calculation, subject to the written handoff
 
 Do **not** start MAT Derived work before Stage 2 exit is recorded.

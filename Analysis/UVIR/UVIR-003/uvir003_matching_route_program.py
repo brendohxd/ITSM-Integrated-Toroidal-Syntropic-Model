@@ -374,18 +374,19 @@ def scan_r3_conditional(
 
 def dof_and_closure_map() -> dict[str, Any]:
     return {
-        "primary_invariant_for_M3": "A*q/K_Q (or I_a0 = A*a0/K_Q at MOND scale)",
+        "primary_invariant_for_M3": "A*q/K_Q",
+        "I_a0_status": "chart-fixed q=a0 diagnostic; not invariant for external fixed a0",
         "primary_invariant_for_M6_NDA": "A/K_Q**(3/2)  (Lambda_|| = 1/sqrt of that)",
         "routes": {
             "R1": {
-                "fixes": "I_a0 = (2/3) C_IR / k_Q once (k_Q, C_IR) chosen",
+                "fixes": "chart-fixed I_a0 = (2/3) C_IR / k_Q once (k_Q, C_IR) chosen",
                 "free_after_form": ["k_Q", "C_IR"],
                 "status": "Conditional",
                 "closes_M3_Derived": False,
             },
             "R2": {
                 "fixes": (
-                    "I_a0 once (C_obs, C_IR, V=C_m/sqrt(K_Q), G) known; "
+                    "chart-fixed I_a0 once (C_obs, C_IR, V=C_m/sqrt(K_Q), G) known; "
                     "MAT must compute V and preferably C_obs"
                 ),
                 "free_after_interface_algebra": [
@@ -400,7 +401,7 @@ def dof_and_closure_map() -> dict[str, Any]:
                 ),
             },
             "R3": {
-                "fixes": "I_a0 = (2/3) C_IR / (Z_psi r_rho) under residual ansatz",
+                "fixes": "chart-fixed I_a0 = (2/3) C_IR / (Z_psi r_rho) under residual ansatz",
                 "free_after_ansatz": ["Z_psi", "r_rho", "C_IR"],
                 "status": "Open_Conditional_sketch",
                 "closes_M3_Derived": False,
@@ -524,15 +525,17 @@ def main() -> None:
         },
         "scientific_boundary": (
             "Executes the matching-route *program*: closed-form invariant maps "
-            "for R1/R2/R3 and Conditional scans. Proves structurally that static "
+            "for Aq/K_Q plus chart-fixed q=a0 diagnostics and Conditional scans. "
+            "Proves structurally that static "
             "C_obs alone cannot fix Aq/K_Q (needs vertex residual "
             "V=C_m/sqrt(K_Q)). R3 residual ansatz recovers R1 as Z_psi*r_rho=k_Q. "
+            "I_a0=A*a0/K_Q is not invariant when a0 is held external. "
             "Does not derive K_Q, does not unlock MAT-001, does not close UVIR-003 "
             "M3/M6 as Derived."
         ),
         "next_required_calculation": [
             "When programme accepts Conditional UVIR domain for MAT-only: compute V from S_int (R2)",
-            "Parallel dig-harder: derive Z_psi, r_rho from S_Phi (R3) if UV path chosen",
+            "Stage 2a R3 audit complete as INCOMPLETE; proceed to Stage 2b Conditional floor",
             "After either: re-evaluate causality domain + Lambda_|| (M3/M6)",
             "Do not promote R1 naive (k_Q,C_IR)=(1,2/3) to Derived",
         ],

@@ -284,9 +284,10 @@ action drafts on identity pillars — only premature Derived packaging.
   - PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING — M3 documented Conditional R1; **not** Derived  
   - PASS_MATCHING_ROUTE_PROGRAM_OPEN — R2: static \(\Cobs\) alone cannot fix \(Aq/K_Q\); target \(V=C_m/\sqrt{K_Q}\)  
   - PASS_DECLARED_WEAK_COUPLING_DOMAIN — **Stage 1 / M2 PASS_BOUNDED**: high-\(q\)+Track-A in; IR HOLD **out** of weakly-coupled domain  
+  - PASS_R3_UV_RESIDUE_AUDIT_INCOMPLETE — **Stage 2a Classification C**: no action-level \(Z_\psi r_\rho\) value or rigorous bound in the audited declared sources; \(I_{a_0}\) is chart-fixed, while \(Aq/K_Q\) is invariant
   - Serial order: Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md  
 - **Next working priorities (serial — complete each before next):**  
-  1. **Stage 2** matching floor without MAT: 2a R3 dig-harder \(Z_\psi,r_\rho\) → else 2b Conditional floor → 2c re-eval causality/NDA  
+  1. **Stage 2** matching floor without MAT: 2a R3 audit **DONE / Classification C** → 2b Conditional floor **NEXT** → 2c re-eval causality/NDA
   2. **Stage 3** scoped MAT calculation only after Stage 2 exit + written Conditional handoff; compute provisional \(V\), \(\Cobs\), but no MAT PASS or downstream Derived use before Stage 5
   3. **Stage 4–5** upgrade M3/M6 → UVIR full PASS  
   4. **Stage 6–7** DISK/STAT full → P3/P4 (not before Stage 5–6)  

@@ -115,14 +115,14 @@ Authoritative process doc: **`UVIR-003_SERIAL_STAGE_ORDER.md`**.
 |-------|---------|--------|
 | 0 | Path package, inventory, M3 doc, route maps | **DONE** |
 | **1** | M2 domain freeze (exclude IR HOLD) | **DONE** (`PASS_DECLARED_WEAK_COUPLING_DOMAIN`) |
-| **2** | Matching floor without MAT (R3 attempt → Conditional floor) | **NEXT** |
+| **2** | Matching floor without MAT (R3 attempt → Conditional floor) | **IN PROGRESS** (2a Classification C; 2b next) |
 | 3 | Scoped MAT calculation (\(V\), \(\Cobs\)) | requires Stage 2 exit + written Conditional handoff; no MAT PASS |
 | 4 | Upgrade M3/M6 with matched \(V\) | after Stage 3 |
 | 5 | UVIR-003 full-gate PASS | after Stage 4 |
 | 6 | DISK full + STAT | after Stage 5 for claim-grade obs |
 | 7 | P3/P4 full drafts | after Stage 5–6 triggers |
 
-**Next single action:** Stage **2a** — dig-harder R3 bound/derive \(Z_\psi,r_\rho\) (or record explicit incomplete → Stage 2b Conditional floor).  
+**Next single action:** Stage **2b** — write the explicit Conditional matching floor and scoped MAT-calculation handoff; no MAT PASS or Derived use.
 **Never** promote R1 naive to Derived. **Never** start MAT Derived before Stage 2 exit.
 
 Parallel methods only: DISK Conditional lane; TOP/VOR/WAK sketches.
@@ -137,3 +137,4 @@ Parallel methods only: DISK Conditional lane; TOP/VOR/WAK sketches.
 | 1.1 | 2026-08-03 | Ran audit + Conditional causality domain; M3 documented; next = matching |
 | 1.2 | 2026-08-03 | Matching-route program PASS; R2 \(V\) target explicit; next = A/B/C decision |
 | 1.3 | 2026-08-03 | Serial order adopted; Stage 1 M2 domain freeze PASS_BOUNDED |
+| 1.4 | 2026-08-04 | Stage 2a R3 audit exits Classification C; Stage 2b Conditional floor next |

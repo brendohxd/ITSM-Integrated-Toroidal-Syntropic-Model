@@ -62,7 +62,7 @@ matching that does not require MAT (R3 attempt + Conditional scope)**, then
 
 | Step | Action | Exit |
 |------|--------|------|
-| 2a | Dig-harder **R3**: bound or derive \(Z_\psi,r_\rho\) from declared UV / condensate structure | Either Derived-under-premises or **explicit fail → Conditional floor** |
+| 2a | **DONE:** R3 audit of \(Z_\psi,r_\rho\) against declared UV / condensate sources | `INCOMPLETE_R3_UV_RESIDUE`; no value or rigorous bound → Conditional floor |
 | 2b | If 2a incomplete: freeze **Conditional** matched floor (R1 structure + excluded naive packaging) with referee domain tables already on disk | M3/M6 remain Conditional/OPEN with **scope**, not fake Derived |
 | 2c | Re-run causality + NDA diagnostics under that floor | Domain tables updated |
 
@@ -124,5 +124,5 @@ Only after Stage 5 (and Stage 6 for P4 SPARC claims).
 |-------|--------|----------------|
 | 0 | **DONE** | α.10 + inventory + causality Conditional + matching maps |
 | 1 | **DONE** | `PASS_DECLARED_WEAK_COUPLING_DOMAIN` — M2 PASS_BOUNDED |
-| 2 | **NEXT** | Matching floor without MAT (R3 → Conditional floor) |
+| 2 | **IN PROGRESS** | 2a R3 audit complete as Classification C; **2b Conditional floor next** |
 | 3–7 | pending | — |

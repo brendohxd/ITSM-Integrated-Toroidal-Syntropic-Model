@@ -17,6 +17,18 @@ root `CHANGELOG.md` records legacy project history.
   checkpoint. A future alpha.11 may incorporate the results only after a
   dedicated manuscript integration and review.
 
+
+### UVIR-003 Stage 2a
+
+- Audited the R3 condensate-residue route and found no action-level derivation
+  or rigorous bound for \(Z_\psi r_\rho\) in the declared source set.
+- Recorded Classification C, `INCOMPLETE_R3_UV_RESIDUE`, without deriving
+  numeric \(K_Q\), unlocking MAT-001, or closing UVIR-003.
+- Clarified that \(Aq/K_Q\) is field-redefinition invariant, whereas
+  \(I_{a_0}=A a_0/K_Q\) with externally fixed \(a_0\) is a chart-fixed
+  Conditional diagnostic.
+- Advanced the serial next action to Stage 2b, the written Conditional
+  matching floor and scoped MAT-calculation handoff.
 ### Corrected
 
 - Hardened the post-alpha.10 M2 audit so missing IR-HOLD evidence or missing
@@ -112,6 +124,7 @@ These changes are **not yet a frozen manuscript release**. The next freeze is al
   that every nonzero internal channel must independently pass the same domain
   gate.
 
+
 ### Corrected
 
 - Removed the attempted use of the infrared `Xi`-pure
@@ -198,6 +211,7 @@ These changes are **not yet a frozen manuscript release**. The next freeze is al
 - Added kinetic-normalized pole-pair frames, principal-angle assignment,
   Procrustes parallel transport, and a five-case on-shell
   background/alignment robustness audit.
+
 
 ### Corrected
 

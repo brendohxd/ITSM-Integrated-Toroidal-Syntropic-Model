@@ -344,7 +344,7 @@ def main() -> None:
         ),
         "next_required_calculation": [
             "When MAT-001 unblocks: execute R2 vertex matching for C_m, C_IR, K_Q invariants",
-            "Optional parallel: R3 condensate-microscopic sketch under identity dig-harder rule",
+            "Stage 2a R3 audit complete as INCOMPLETE; proceed to Stage 2b Conditional floor",
             "Optional: manuscript freeze alpha.10 recording post-alpha.9 UVIR chain",
         ],
         "diagnostics": {

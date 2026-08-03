@@ -1053,3 +1053,26 @@ The combined TOP/VOR/WAK package is recorded in
 `Theory/Gates/IDENTITY_GATE_CHECKPOINT_2026-08-04.md`. It advances bounded
 mathematical and Conditional research objects only. No claim-ledger class is
 promoted and no frozen manuscript release is created.
+
+## 2026-08-04 - UVIR-003 Stage 2a R3 residue audit
+
+Gate: UVIR-003 (serial Stage 2a)
+
+**Independent review:** reproduced the existing matching-inventory and
+matching-route baselines, reviewed Grok's four-file return packet, and checked
+the declared core architecture plus UVIR-001 source record. The R3-specific
+relation \(K_Q=Z_\psi\rho_\Phi/a_0^2\) occurs as a Conditional matching ansatz;
+the audited declared sources do not compute \(Z_\psi\), \(\rho_\Phi\), or a
+rigorous bound on \(Z_\psi r_\rho\).
+
+**Correction during review:** the initial report called
+\(I_{a_0}=A a_0/K_Q\) invariant while its machine audit correctly found it
+chart-dependent for externally fixed \(a_0\). The accepted record now reserves
+invariant status for \(Aq/K_Q\) and labels \(I_{a_0}\) a named \(q=a_0\)
+field-chart diagnostic.
+
+**Decision:** accept Classification C,
+`INCOMPLETE_R3_UV_RESIDUE`, with `physics_pass: false`, numeric \(K_Q\)
+`NOT_DERIVED`, UVIR-003 `IN_PROGRESS`, and MAT-001 `BLOCKED`. Stage 2a is
+complete; Stage 2b Conditional matching-floor and scoped-handoff drafting is
+the next serial action.

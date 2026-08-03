@@ -51,6 +51,11 @@ I_{a_0} \equiv \frac{A a_0}{K_Q}
 = \frac{C_{\mathrm{IR}}^{1/3}\, V^{2}}{12\pi G\, \Cobs^{4/3}}.
 \]
 
+Here \(Aq/K_Q\) is the field-redefinition invariant. The displayed
+\(I_{a_0}\) is its named \(q=a_0\) field-chart diagnostic; if \(a_0\) is held
+external under \(\psi\mapsto s\psi\), then \(I_{a_0}\mapsto I_{a_0}/s\).
+The route algebra below remains valid on that declared chart.
+
 **MAT-001 must compute \(V\) (and preferably \(\Cobs\)) from one \(S_{\mathrm{int}}\).**
 Until then R2 remains Open; the *interface algebra* is ready.
 
@@ -58,9 +63,9 @@ Until then R2 remains Open; the *interface algebra* is ready.
 
 | Route | Status | What it maps | Free after form |
 |-------|--------|--------------|-----------------|
-| **R1** | Conditional | \(I_{a_0}=(2/3)C_{\mathrm{IR}}/k_Q\) | \(k_Q\), \(C_{\mathrm{IR}}\) |
-| **R2** | Open (interface ready) | \(I_{a_0}\) via \((\Cobs,C_{\mathrm{IR}},V,G)\) | \(V\) (MAT), \(\Cobs\), \(C_{\mathrm{IR}}\) |
-| **R3** | Open (Conditional sketch) | \(I_{a_0}=(2/3)C_{\mathrm{IR}}/(Z_\psi r_\rho)\) | \(Z_\psi\), \(r_\rho\), \(C_{\mathrm{IR}}\) |
+| **R1** | Conditional | chart-fixed \(I_{a_0}=(2/3)C_{\mathrm{IR}}/k_Q\) | \(k_Q\), \(C_{\mathrm{IR}}\) |
+| **R2** | Open (interface ready) | chart-fixed \(I_{a_0}\) via \((\Cobs,C_{\mathrm{IR}},V,G)\) | \(V\) (MAT), \(\Cobs\), \(C_{\mathrm{IR}}\) |
+| **R3** | Open (Conditional sketch) | chart-fixed \(I_{a_0}=(2/3)C_{\mathrm{IR}}/(Z_\psi r_\rho)\) | \(Z_\psi\), \(r_\rho\), \(C_{\mathrm{IR}}\) |
 | **R5** | Conditional phenom | \(\Cobs\) only | does **not** fix \(K_Q\) alone |
 
 **R3 ↔ R1:** under the residual ansatz \(K_Q=Z_\psi\rho_\Phi/a_0^2\) with
@@ -102,8 +107,8 @@ Outputs:
 
 ## Next required calculation
 
-1. **Programme decision:** either (i) explicit Conditional UVIR domain for MAT-only handoff, or (ii) continue force-domain residual (M2 IR HOLD) before MAT.  
-2. **R2:** compute \(V=C_m/\sqrt{K_Q}\) from declared \(S_{\mathrm{int}}\) when unblocked.  
-3. **R3 parallel:** dig-harder UV residue if identity path chosen.  
-4. Re-evaluate causality + \(\Lambda_\parallel\) after either match (M3/M6).  
-5. **Never** promote R1 naive \((1,2/3)\) to Derived.
+1. **Stage 2a complete:** `INCOMPLETE_R3_UV_RESIDUE`; no action-level value or bound found.
+2. **Stage 2b next:** write the explicit Conditional matching floor and MAT-only handoff scope.
+3. **R2:** compute \(V=C_m/\sqrt{K_Q}\) only when the scoped handoff permits calculation.
+4. Re-evaluate causality + \(\Lambda_\parallel\) under the Stage 2b floor (Stage 2c).
+5. **Never** promote R1/R3 naive values to Derived.

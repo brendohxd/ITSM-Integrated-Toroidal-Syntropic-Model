@@ -218,7 +218,7 @@ def main() -> None:
             "or unlock MAT-001."
         ),
         "next_required_calculation": [
-            "Serial Stage 2a: dig-harder R3 Z_psi, r_rho (or 2b Conditional floor)",
+            "Serial Stage 2b: write Conditional matching floor and scoped MAT-calculation handoff",
             "Stage 2c: re-evaluate causality + Lambda_|| under floor",
             "Stage 3 MAT only after Stage 2 exit (compute V from S_int)",
         ],
