@@ -22,8 +22,8 @@ not the scientific status authority for this branch.
 ## Manuscript status
 
 The newest frozen manuscript release is
-[`12.0-alpha.9`](Manuscript/CoreRecovery/releases/v12.0-alpha.9/)
-(30 July 2026). Every freeze is immutable under
+[`12.0-alpha.10`](Manuscript/CoreRecovery/releases/v12.0-alpha.10/)
+(03 August 2026). Every freeze is immutable under
 `Manuscript/CoreRecovery/releases/v12.0-alpha.N/`. Working sources live in
 `Manuscript/CoreRecovery/`; authoritative per-release detail is in
 [`Manuscript/CoreRecovery/CHANGELOG.md`](Manuscript/CoreRecovery/CHANGELOG.md)
@@ -33,7 +33,7 @@ Claim hygiene is unchanged across freezes: `13/12`, `H0=72.97`, automatic
 Solar-System compliance, and historical SPARC `p=0.62` are **not** live
 predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
 
-### Frozen releases (`12.0-alpha.1` … `12.0-alpha.9`)
+### Frozen releases (`12.0-alpha.1` … `12.0-alpha.10`)
 
 #### [`12.0-alpha.1`](Manuscript/CoreRecovery/releases/v12.0-alpha.1/) — 2026-07-26
 
@@ -204,7 +204,7 @@ predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
 
 #### [`12.0-alpha.9`](Manuscript/CoreRecovery/releases/v12.0-alpha.9/) — 2026-07-30
 
-**Label:** Local four-leg kernel checkpoint. **← current freeze**
+**Label:** Local four-leg kernel checkpoint.
 
 - Completes the local analytic four-leg assembly requested by alpha.8.
 - Four residue-normalized coupled modes on shell at the initial frozen-time
@@ -243,14 +243,27 @@ predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
   nonanalytic `|grad(pi)|^3` contribution on a nonzero-gradient background; or
   MAT-001.
 
-### Current open boundary (after alpha.9)
+#### [`12.0-alpha.10`](Manuscript/CoreRecovery/releases/v12.0-alpha.10/) — 2026-08-03
+
+**Label:** Post-alpha.9 UVIR-003 path package. **← current freeze**
+
+- Records the FRW in-in observable path declaration and multi-slice
+  mode-projected Green proxy.
+- Records the local Track-A nonzero-gradient `|grad(pi)|^3` expansion and
+  scoped tree/NDA criterion.
+- Records the matching-invariant inventory while leaving numeric `K_Q` and
+  the physical cutoff unmatched.
+- **Boundary:** no cosmological S-matrix or optical theorem, no matched
+  physical cutoff, no full UVIR-003 PASS, and no MAT-001 unlock.
+
+### Current open boundary (after alpha.10)
 
 These bounded results do **not** establish full perturbative stability,
-observational viability, or a completed cosmology. UVIR-003 remains in
-progress. The next calculation should extend the local kernel away from the
-regular-tetrahedral slice, audit approach to internal poles and homogeneous
-channels, and define an adiabatic wave-packet or in-in observable
-normalization before any perturbative-unitarity criterion is attempted.
+observational viability, or a completed cosmology. Post-alpha.10 work has
+documented a Conditional causality domain, route maps, and an evidence-bounded
+M2 claim domain. The next scientific action is Stage 2a: attempt an R3 bound
+or derivation for `Z_psi` and `r_rho`; otherwise record an explicit incomplete
+result and adopt only a named Conditional floor.
 
 ## Parallel identity-gate checkpoint - 2026-08-04
 
@@ -282,6 +295,6 @@ modify a frozen manuscript release.
 6. Update the manuscript changelog and `VERSION` in the same commit as a new
    release.
 
-The root `README.md` and root `CHANGELOG.md` contain substantial legacy v11
-history. They are retained for provenance and must not be read as the current
-v12 recovery claim set.
+The root `README.md` is now a recovery-native landing page. The root
+`CHANGELOG.md` retains substantial legacy v11 history for provenance and must
+not be read as the current v12 recovery claim set.

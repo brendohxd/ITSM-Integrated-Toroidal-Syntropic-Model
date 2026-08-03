@@ -15,7 +15,7 @@ not speed. Conditional lanes (DISK methods, phenom \(\Cobs\sim 1\)) may run
 
 | Constraint | Implication |
 |------------|-------------|
-| Master Plan: MAT blocked until UVIR-003 passes | No Derived MAT before UVIR domain is declared |
+| Master Plan: MAT gate PASS and downstream Derived use require UVIR-003 PASS | A scoped MAT calculation needs the explicit Conditional handoff recorded at Stage 2 |
 | R2 matching *is* MAT (\(V=C_m/\sqrt{K_Q}\)) | Cannot finish Derived M3/M6 via R2 before MAT |
 | R1 naive is Conditional only | Never promote \((k_Q,C_{\mathrm{IR}})=(1,2/3)\) to Derived |
 | IR HOLD / complex-quartet modes are structural | Must **exclude or control** before claiming “stable domain” |
@@ -67,15 +67,15 @@ matching that does not require MAT (R3 attempt + Conditional scope)**, then
 | 2c | Re-run causality + NDA diagnostics under that floor | Domain tables updated |
 
 **Exit criterion:** written matching status for M3/M6 (Derived *or* Conditional-with-scope).  
-**Do not** open MAT Derived until Stage 1 + Stage 2 exit are recorded.
+**Do not** issue a MAT PASS tag or use MAT output for downstream Derived claims before UVIR Stage 5. Stage 2 may authorize only a scoped Conditional calculation handoff.
 
 ### Stage 3 — **MAT-001** (R2 vertex)
 
 **Goal:** compute \(\Cobs\) and \(V=C_m/\sqrt{K_Q}\) from one \(S_{\mathrm{int}}\).
 
-Prerequisites: Stage 1 PASS_BOUNDED; Stage 2 exit recorded; force sector slice frozen as MAT input.
+Prerequisites: Stage 1 PASS_BOUNDED; Stage 2 exit plus explicit Conditional handoff amendment; force-sector slice frozen as MAT input.
 
-**Exit criterion:** \(\Cobs\) and \(V\) reported under named premises; claim ledger updated; still no SPARC/\(H_0\) validation from this gate alone.
+**Exit criterion:** provisional \(\Cobs\) and \(V\) under named premises; claim ledger updated; no MAT PASS tag and no downstream Derived use until Stage 5.
 
 ### Stage 4 — **UVIR M3/M6 upgrade** (post-MAT)
 
@@ -87,7 +87,7 @@ Prerequisites: Stage 1 PASS_BOUNDED; Stage 2 exit recorded; force sector slice f
 
 **Goal:** checklist M1–M6 all non-blocking under declared policy; M7 ready for MAT handoff *after* Stage 3–4 if not already sequential-complete.
 
-**Exit criterion:** `full_gate_status = PASS` in audit; MAT unblocked for downstream Derived use.
+**Exit criterion:** `full_gate_status = PASS` in audit; the provisional MAT result may proceed to its own gate decision and downstream Derived use only if the MAT checklist also passes.
 
 ### Stage 6 — **DISK-001 full + STAT-001** (observational pipeline)
 

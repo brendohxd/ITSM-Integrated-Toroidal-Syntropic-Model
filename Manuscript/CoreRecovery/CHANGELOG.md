@@ -17,6 +17,18 @@ root `CHANGELOG.md` records legacy project history.
   checkpoint. A future alpha.11 may incorporate the results only after a
   dedicated manuscript integration and review.
 
+### Corrected
+
+- Hardened the post-alpha.10 M2 audit so missing IR-HOLD evidence or missing
+  quantitative-domain support fails rather than silently passing.
+- Limited M2 `PASS_BOUNDED` to the recorded analytic and discrete sampled
+  support; no continuous-neighbourhood or dynamical no-leakage theorem is
+  claimed.
+- Clarified the serial dependency: Stage 3 may become a scoped Conditional MAT
+  calculation only after a written Stage-2 handoff. MAT gate PASS and
+  downstream Derived use remain blocked until UVIR Stage 5.
+
+These changes are **not yet a frozen manuscript release**. The next freeze is alpha.11.
 
 ## 12.0-alpha.10 - 2026-08-03
 

@@ -33,9 +33,10 @@ Break into **must** criteria (M1–M5) and **supporting** evidence (S*).
 
 **Interpretation for MAT-001**
 
-- Master Plan: MAT blocked until UVIR-003 **passes**.  
+- MAT gate PASS and downstream Derived use remain blocked until UVIR-003 **passes**.
 - Honest reading today: **M4–M5** support a *matching programme*; **M3/M6** still block a claim of “stable+causal+cutoff closed.”  
 - Do **not** open MAT Derived claims until the programme either (i) closes M3/M6 under a named matching route, or (ii) **explicitly** accepts a Conditional UVIR domain for MAT (written amendment to this checklist—programme decision).
+- Serial Stage 3 is therefore a **scoped Conditional calculation handoff**, not a MAT PASS and not authorization for downstream Derived claims.
 
 ---
 
@@ -115,7 +116,7 @@ Authoritative process doc: **`UVIR-003_SERIAL_STAGE_ORDER.md`**.
 | 0 | Path package, inventory, M3 doc, route maps | **DONE** |
 | **1** | M2 domain freeze (exclude IR HOLD) | **DONE** (`PASS_DECLARED_WEAK_COUPLING_DOMAIN`) |
 | **2** | Matching floor without MAT (R3 attempt → Conditional floor) | **NEXT** |
-| 3 | MAT-001 (\(V\), \(\Cobs\)) | blocked until Stage 2 exit |
+| 3 | Scoped MAT calculation (\(V\), \(\Cobs\)) | requires Stage 2 exit + written Conditional handoff; no MAT PASS |
 | 4 | Upgrade M3/M6 with matched \(V\) | after Stage 3 |
 | 5 | UVIR-003 full-gate PASS | after Stage 4 |
 | 6 | DISK full + STAT | after Stage 5 for claim-grade obs |

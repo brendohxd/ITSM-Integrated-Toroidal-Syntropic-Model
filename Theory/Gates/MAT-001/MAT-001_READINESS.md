@@ -1,6 +1,6 @@
 # MAT-001 — Readiness checklist (R2 force–matter matching)
 
-**Status:** **BLOCKED** for Derived matching  
+**Status:** gate PASS and downstream Derived use **BLOCKED**; scoped calculation awaits Stage-2 Conditional handoff
 **Branch:** `recovery/v12-core-architecture`  
 **Date:** 2026-08-03  
 **Authority:** Master Research Plan §5; UVIR-003 force sector; Selective Publishing Plan (P3/P4 downstream)
@@ -25,9 +25,11 @@ invariants (`UVIR-003_STAGE_B_KQ_MATCHING_INVENTORY`).
 | Stable/causal domain | Partial (Stage A + many Stage B subgates) | Matching without a declared domain is packaging |
 | \(K_Q\) absolute value | **NOT_DERIVED** (inventory Open) | Absolute norm entangled with \(C_m\), \(A\); invariants ready |
 | Declared unitarity/EFT criterion | PASS (scoped, not theory closed) | Bounds the domain where a vertex is meaningful |
-| Full UVIR-003 gate close | **Not closed** | Master Plan: MAT blocked until UVIR-003 passes |
+| Full UVIR-003 gate close | **Not closed** | Blocks MAT gate PASS and downstream Derived use; does not forbid a written scoped calculation handoff |
 
 **Do not** open MAT-001 Derived claims or a MAT “pass report” while the table above remains red on UVIR-003 full gate + matching domain.
+
+A Stage-2 handoff may authorize calculation of provisional matched quantities under named Conditional premises. It does **not** authorize a MAT PASS tag or downstream Derived claims before UVIR Stage 5.
 
 ## Handoff interface (what UVIR must deliver to MAT)
 
@@ -73,7 +75,8 @@ This does **not** unblock MAT; it makes the MAT target quantity explicit.
 
 ## MAT-001 open checklist (when unblocked)
 
-- [ ] UVIR-003 full-gate status upgraded from IN_PROGRESS (or explicit Conditional domain written for MAT-only)  
+- [ ] For calculation start: Stage-2 exit plus explicit Conditional MAT-only handoff
+- [ ] For MAT gate PASS/downstream Derived use: UVIR-003 full-gate status upgraded from IN_PROGRESS
 - [ ] Declare interaction \(S_{\mathrm{int}}[\Psi_m,\psi,U,g]\)  
 - [ ] Derive static weak-field reduction → \(C_m\), \(C_{\mathrm{IR}}\) (or \(A\))  
 - [ ] Report \(\Cobs\) as **Derived under named premises**  
