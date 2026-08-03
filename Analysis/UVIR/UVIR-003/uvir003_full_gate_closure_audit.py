@@ -43,6 +43,12 @@ OPTIONAL_SUBGATES: dict[str, str] = {
     "uvir003_four_leg_kinematic_deformation_summary.json": (
         "PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT"
     ),
+    "uvir003_causality_domain_conditional_summary.json": (
+        "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING"
+    ),
+    "uvir003_matching_route_program_summary.json": (
+        "PASS_MATCHING_ROUTE_PROGRAM_OPEN"
+    ),
 }
 
 
@@ -113,7 +119,10 @@ def main() -> None:
         },
         "M3_causality_declared_domain": {
             "status": "PARTIAL",
-            "note": "q_cross needs matched A q / K_Q; long-wavelength Open",
+            "note": (
+                "Documented Conditional R1 domain + route maps (R2 V target); "
+                "Derived close still needs matched A q / K_Q"
+            ),
         },
         "M4_unitarity_path_with_scope": {
             "status": "PASS_SCOPED" if evidence[
@@ -190,9 +199,9 @@ def main() -> None:
             "or unlock MAT-001."
         ),
         "next_required_calculation": [
-            "Matching of invariant A q / K_Q via named route (toward M3 Derived + M6)",
-            "Re-evaluate causality domain after matching",
-            "Only then reconsider MAT-001 unblock under Master Plan wording",
+            "Programme fork: A Conditional MAT handoff / B M2 residual / C R3 UV",
+            "Compute V=C_m/sqrt(K_Q) from S_int (R2) or Z_psi*r_rho (R3)",
+            "Re-evaluate causality + Lambda_|| after matched invariants",
         ],
     }
 

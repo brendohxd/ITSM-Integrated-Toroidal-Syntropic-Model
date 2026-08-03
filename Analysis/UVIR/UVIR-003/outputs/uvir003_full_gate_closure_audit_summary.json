@@ -18,7 +18,7 @@
       "status": "PARTIAL"
     },
     "M3_causality_declared_domain": {
-      "note": "q_cross needs matched A q / K_Q; long-wavelength Open",
+      "note": "Documented Conditional R1 domain + route maps (R2 V target); Derived close still needs matched A q / K_Q",
       "status": "PARTIAL"
     },
     "M4_unitarity_path_with_scope": {
@@ -42,11 +42,17 @@
   "mismatched_required_summaries": [],
   "missing_required_summaries": [],
   "next_required_calculation": [
-    "Matching of invariant A q / K_Q via named route (toward M3 Derived + M6)",
-    "Re-evaluate causality domain after matching",
-    "Only then reconsider MAT-001 unblock under Master Plan wording"
+    "Programme fork: A Conditional MAT handoff / B M2 residual / C R3 UV",
+    "Compute V=C_m/sqrt(K_Q) from S_int (R2) or Z_psi*r_rho (R3)",
+    "Re-evaluate causality + Lambda_|| after matched invariants"
   ],
   "optional_subgate_evidence": {
+    "uvir003_causality_domain_conditional_summary.json": {
+      "expected": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+      "got": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+      "ok": true,
+      "present": true
+    },
     "uvir003_four_leg_kinematic_deformation_summary.json": {
       "expected": "PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT",
       "got": "PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT",
@@ -56,6 +62,12 @@
     "uvir003_local_adiabatic_observable_norm_summary.json": {
       "expected": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
       "got": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_matching_route_program_summary.json": {
+      "expected": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "got": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
       "ok": true,
       "present": true
     }

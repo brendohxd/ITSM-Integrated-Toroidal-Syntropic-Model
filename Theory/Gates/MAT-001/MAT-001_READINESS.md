@@ -40,8 +40,9 @@ When starting MAT, import these as *inputs*, not re-derive casually:
 2. **Redefinition invariants** (must match, not bare \(K_Q\))  
    - \(A q / K_Q\) (causality)  
    - \(A / K_Q^{3/2}\) (NDA \(\Lambda_\parallel\))  
-   - \(C_m / \sqrt{K_Q}\) (vertex norm)  
-   See `UVIR-003_STAGE_B_KQ_MATCHING_INVENTORY.md`.
+   - \(C_m / \sqrt{K_Q}\) (vertex residual \(V\))  
+   See `UVIR-003_STAGE_B_KQ_MATCHING_INVENTORY.md` and  
+   `UVIR-003_STAGE_B_MATCHING_ROUTE_PROGRAM.md`.
 
 3. **Scoped EFT window**  
    Declared criterion package  
@@ -50,13 +51,35 @@ When starting MAT, import these as *inputs*, not re-derive casually:
 4. **Scientific boundary language**  
    No homogeneous FRW S-matrix from exact \(Y^{3/2}\) at zero gradient; no dual RAR packaging.
 
+### R2 structural result (2026-08-03 matching-route program)
+
+**Static \(\Cobs\) alone cannot fix \(Aq/K_Q\).** MAT must deliver the invariant
+vertex residual
+
+\[
+V := \frac{C_m}{\sqrt{K_Q}}
+\]
+
+(from one \(S_{\mathrm{int}}\)). With Conditional or Derived \((\Cobs,C_{\mathrm{IR}},V)\),
+
+\[
+I_{a_0}=\frac{A a_0}{K_Q}
+=\frac{C_{\mathrm{IR}}^{1/3}\,V^{2}}{12\pi G\,\Cobs^{4/3}}.
+\]
+
+Subgate: `PASS_MATCHING_ROUTE_PROGRAM_OPEN`  
+Script: `Analysis/UVIR/UVIR-003/uvir003_matching_route_program.py`  
+This does **not** unblock MAT; it makes the MAT target quantity explicit.
+
 ## MAT-001 open checklist (when unblocked)
 
 - [ ] UVIR-003 full-gate status upgraded from IN_PROGRESS (or explicit Conditional domain written for MAT-only)  
 - [ ] Declare interaction \(S_{\mathrm{int}}[\Psi_m,\psi,U,g]\)  
 - [ ] Derive static weak-field reduction → \(C_m\), \(C_{\mathrm{IR}}\) (or \(A\))  
 - [ ] Report \(\Cobs\) as **Derived under named premises**  
-- [ ] Map result onto invariant list (do not only quote bare \(K_Q\))  
+- [ ] **Compute \(V=C_m/\sqrt{K_Q}\)** (primary R2 target for causality/NDA)  
+- [ ] Map \(I_{a_0}\), \(\Lambda_\parallel\) from \((\Cobs,C_{\mathrm{IR}},V)\) via matching-route formulas  
+- [ ] Map result onto full invariant list (do not only quote bare \(K_Q\))  
 - [ ] Update claim ledger + Selective Publishing ban-list cross-check  
 - [ ] **Not** claim SPARC / cosmic \(H_0\) validation from this gate alone  
 
@@ -78,7 +101,9 @@ When starting MAT, import these as *inputs*, not re-derive casually:
 
 ```text
 Theory/Gates/UVIR-003/UVIR-003_STAGE_B_KQ_MATCHING_INVENTORY.md
+Theory/Gates/UVIR-003/UVIR-003_STAGE_B_MATCHING_ROUTE_PROGRAM.md
 Analysis/UVIR/UVIR-003/uvir003_kq_matching_inventory.py
+Analysis/UVIR/UVIR-003/uvir003_matching_route_program.py
 Analysis/UVIR/UVIR-003/uvir003_declared_unitarity_eft_criterion.py
 Analysis/UVIR/UVIR-003/uvir003_nonzero_gradient_force_local.py
 ```

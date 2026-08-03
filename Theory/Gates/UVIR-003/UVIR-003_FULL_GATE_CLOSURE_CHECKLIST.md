@@ -53,6 +53,7 @@ Break into **must** criteria (M1–M5) and **supporting** evidence (S*).
 | Declared unitarity/EFT criterion | Scoped | `PASS_DECLARED_UNITARITY_EFT_CRITERION` |
 | \(K_Q\) matching inventory | Invariants + routes | `PASS_KQ_MATCHING_INVENTORY_OPEN` |
 | Causality domain (Conditional R1) | M3 documentation | `PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING` |
+| Matching-route program (R2/R3 maps) | Toward M3/M6 | `PASS_MATCHING_ROUTE_PROGRAM_OPEN` |
 | Full-gate checklist audit | Evidence ledger | `PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT` |
 
 Machine audit:  
@@ -60,6 +61,9 @@ Machine audit:
 
 Conditional M3 domain:  
 `python Analysis/UVIR/UVIR-003/uvir003_causality_domain_under_conditional_matching.py`
+
+Matching-route program:  
+`python Analysis/UVIR/UVIR-003/uvir003_matching_route_program.py`
 
 ---
 
@@ -102,17 +106,21 @@ Conditional M3 domain:
 
 ## 5. Next single critical-path action
 
-**Done (v1.1):** Conditional causality domain under R1 premises — M3 **documented**.
+**Done (v1.1):** Conditional causality domain under R1 premises — M3 **documented**.  
+**Done (v1.2):** Matching-route program — R2 interface + R3 sketch + DOF maps  
+(`PASS_MATCHING_ROUTE_PROGRAM_OPEN`). Structural theorem: static \(\Cobs\) alone
+cannot fix \(Aq/K_Q\); MAT target is \(V=C_m/\sqrt{K_Q}\).
 
-**Now — toward Derived M3/M6 (full UVIR PASS):**
+**Now — fork requiring programme decision:**
 
-1. **Match** invariant \(Aq/K_Q\) (or \(A/K_Q^{3/2}\)) via a **named route**  
-   - Prefer **R2** (MAT interface) once Conditional force domain is accepted for that step  
-   - **R3** if UV/strong-coupling data fix the scale  
-   - Do **not** promote naive R1 \((k_Q,C_{\mathrm{IR}})=(1,2/3)\) to Derived  
-2. **Re-evaluate** \(q_\times(\theta)\) and \(R_c\le 1\) after matching  
-3. **Physical cutoff** with matched normalization (M6)  
-4. Only then: programme decision on MAT-001 unblock under Master Plan wording  
+| Option | Action | Unlocks |
+|--------|--------|---------|
+| **A (default Master Plan)** | Explicit **Conditional UVIR domain for MAT-only** handoff (written amendment below when chosen) → start MAT \(S_{\mathrm{int}}\) → compute \(V\) and \(\Cobs\) | R2 Derived path toward M3/M6 |
+| **B** | Finish residual UVIR M2 (IR HOLD control/exclude) before any MAT | Cleaner “full UVIR PASS” story |
+| **C (parallel)** | Dig-harder R3: derive \(Z_\psi,r_\rho\) from \(S_\Phi\) | Alternate M3/M6 without MAT vertex first |
+
+After A or C delivers matched invariants: re-evaluate \(q_\times\), \(\Lambda_\parallel\) (M3/M6).  
+**Never** promote R1 naive \((k_Q,C_{\mathrm{IR}})=(1,2/3)\) to Derived.
 
 Parallel (not MAT-critical): DISK/STAT Conditional lane; TOP/VOR/WAK sketches.
 
@@ -124,3 +132,4 @@ Parallel (not MAT-critical): DISK/STAT Conditional lane; TOP/VOR/WAK sketches.
 |---------|------|------|
 | 1.0 | 2026-08-03 | Initial closure map + machine audit |
 | 1.1 | 2026-08-03 | Ran audit + Conditional causality domain; M3 documented; next = matching |
+| 1.2 | 2026-08-03 | Matching-route program PASS; R2 \(V\) target explicit; next = A/B/C decision |

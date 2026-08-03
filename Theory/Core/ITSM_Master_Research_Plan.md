@@ -282,14 +282,14 @@ action drafts on identity pillars — only premature Derived packaging.
   - PASS_KQ_MATCHING_INVENTORY_OPEN — invariants \(Aq/K_Q\), \(A/K_Q^{3/2}\); routes R1–R5; **numeric \(K_Q\) still NOT_DERIVED**  
   - PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT — machine ledger of Master Plan M1–M7 vs on-disk subgates; full gate still **IN_PROGRESS**  
   - PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING — M3 **documented** under Conditional R1 (\(k_Q,C_{\mathrm{IR}}\) free); naive parallel \(q_\times/a_0=0.375\); **not** Derived  
+  - PASS_MATCHING_ROUTE_PROGRAM_OPEN — R2 interface: static \(\Cobs\) alone **cannot** fix \(Aq/K_Q\); MAT target \(V=C_m/\sqrt{K_Q}\); R3 residual sketch \(Z_\psi r_\rho\sim k_Q\); **K_Q still NOT_DERIVED**  
   - Full-gate map: Theory/Gates/UVIR-003/UVIR-003_FULL_GATE_CLOSURE_CHECKLIST.md  
 - **Next working priorities (Master Plan critical path first):**  
-  1. **UVIR-003 matching (toward M3 Derived + M6):** match \(Aq/K_Q\) or \(A/K_Q^{3/2}\) via named route (prefer R2; R3 if UV data); re-evaluate causality domain; physical cutoff after normalization — see full-gate checklist §5  
-  2. **UVIR-003 residual M2:** IR transfer HOLD modes — control or permanently exclude from weakly-coupled domain  
-  3. **DISK-001 full closure / STAT-001 start** (methods package already in DISK-001_GATE_REPORT.md; Conditional lane may proceed without Derived \(\Cobs\))  
-  4. **MAT-001** remains **blocked** for Derived until UVIR-003 full pass (or explicit Conditional handoff amendment on the UVIR checklist)  
-  5. Optional parallel: VOR-001 spectrum-with-units (P3 full-draft trigger); identity TOP/WAK/\(Q_{\rm syn}\) sketches  
-  6. Optional: couple local anisotropic force vertex into multi-slice FRW Green  
+  1. **Programme fork (checklist §5):** **A** Conditional UVIR domain for MAT-only → compute \(V\); **B** residual M2 IR HOLD; **C** dig-harder R3 \(S_\Phi\) — then re-evaluate causality + \(\Lambda_\parallel\) (M3/M6)  
+  2. **Do not** promote R1 naive \((k_Q,C_{\mathrm{IR}})=(1,2/3)\) to Derived  
+  3. **DISK-001 full closure / STAT-001 start** (methods package recorded; Conditional lane OK without Derived \(\Cobs\))  
+  4. **MAT-001** remains **blocked** for Derived until UVIR full pass **or** explicit Conditional handoff amendment  
+  5. Optional parallel: VOR-001 / identity TOP/WAK/\(Q_{\rm syn}\) sketches  
 
 
 Reproduce alpha.9 baseline:

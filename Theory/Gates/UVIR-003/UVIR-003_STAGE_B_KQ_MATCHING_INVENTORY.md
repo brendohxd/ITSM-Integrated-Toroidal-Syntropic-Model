@@ -96,6 +96,9 @@ python Analysis\UVIR\UVIR-003\uvir003_kq_matching_inventory.py
 
 ## Next
 
-- MAT-001 path remains blocked; prepare R2 interface when force sector is frozen for matching.  
-- Optional parallel: R3 sketch under dig-harder identity rule.  
-- Optional: freeze manuscript **alpha.10** recording the post–alpha.9 UVIR chain.  
+- **Done:** R2 interface + R3 sketch in  
+  `UVIR-003_STAGE_B_MATCHING_ROUTE_PROGRAM.md`  
+  (`PASS_MATCHING_ROUTE_PROGRAM_OPEN`). MAT target \(V=C_m/\sqrt{K_Q}\).  
+- MAT-001 remains **blocked** for Derived until UVIR full pass or Conditional handoff.  
+- Optional: dig-harder R3 from \(S_\Phi\); residual M2 IR HOLD.  
+
