@@ -281,7 +281,8 @@ action drafts on identity pillars — only premature Derived packaging.
 - **Post–alpha.10 working notes:**  
   - `PASS_KQ_MATCHING_INVENTORY_OPEN` — invariants \(Aq/K_Q\), \(A/K_Q^{3/2}\); routes R1–R5; **numeric \(K_Q\) still NOT_DERIVED**  
 - **Next working priorities:**  
-  1. DISK-001 formal gate report / optional multipole BC (Stages 0–4 PASS)  
+  1. DISK-001 full closure (multipole BC optional) or STAT-001 start; methods package recorded in `DISK-001_GATE_REPORT.md`  
+
 
 
 

@@ -15,7 +15,7 @@ This is a **navigation document**, not a paper draft and not a gate PASS.
 | UVIR-003 | Yellow | IN PROGRESS; many Stage-B subgates; full gate open |
 | \(K_Q\) matching | Yellow | Inventory PASS; numeric NOT_DERIVED |
 | MAT-001 | Red | BLOCKED until UVIR-003 passes (Derived) |
-| DISK-001 | Red | Readiness only |
+| DISK-001 | Yellow | Methods package PARTIAL PASS (Stages 0–4); full gate open |
 | STAT-001 | Red | Readiness only |
 | VOR-001 spectrum (units) | Red | Identity track; P3 alternate trigger |
 | **Full P3 draft** | Red | Trigger not met |

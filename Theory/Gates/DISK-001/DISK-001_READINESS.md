@@ -1,6 +1,8 @@
 # DISK-001 — Readiness checklist (disk / morphology solver)
 
-**Status:** **IN PROGRESS** — Stages 0–4 **PASS** (Stage 4: domain BC sensitivity \({\sim}4.8\%\) interior + midplane \(g(R)\)); full gate open until formal gate report  
+**Status:** **PARTIAL PASS (methods)** — `DISK-001_GATE_REPORT.md`  
+(`PASS_DISK001_METHODS_PACKAGE_STAGES_0_TO_4`); full Master Plan DISK-001 still open for morphology-independent coupling  
+
 
 
 
@@ -58,16 +60,17 @@ Full P4 draft also needs **STAT-001**.
 
 ### Claim hygiene
 
-- [ ] Inputs table: \(a_0\), \(\Cobs\), distance scale, \(\Upsilon_\star\) policy  
-- [ ] **Never** default dual \(a_0=cH_0/2\pi\) + \(\Cobs=2/3\) as RAR (**B9**)  
-- [ ] No SPARC global \(H_0\) claim from fits (**B15**)  
-- [ ] Ledger update when PASS  
+- [x] Inputs table: \(a_0\), \(\Cobs\) declared in IR module + gate report  
+- [x] **Never** default dual \(a_0=cH_0/2\pi\) + \(\Cobs=2/3\) as RAR (**B9**) — guarded in code  
+- [x] No SPARC global \(H_0\) claim from fits (**B15**) — no SPARC fits in package  
+- [ ] Ledger update when **full** DISK-001 PASS (not only methods package)  
 
 ### Deliverables for PASS report
 
-- [ ] `Theory/Gates/DISK-001/DISK-001_GATE_REPORT.md`  
-- [ ] Reproducible scripts under `Analysis/` (or `Scripts/`) with seed + env  
-- [ ] Figures suitable for P4 methods (not science claims beyond the gate)  
+- [x] `Theory/Gates/DISK-001/DISK-001_GATE_REPORT.md` (methods partial PASS)  
+- [x] Reproducible scripts under `Analysis/DISK/DISK-001/`  
+- [ ] Figures suitable for P4 methods (optional polish)  
+
 
 ## Minimal path to P4 (two lanes)
 
