@@ -991,3 +991,65 @@ Casimir stress, twisted-boundary preference, backreaction, `13/12` attractor,
 `PASS_TOP001_RESEARCH`. Next substantive work is the declared staged choice
 between fixed-boundary and dynamical-modulus routes, followed by energy,
 constraint, stability and covariance tests.
+
+## 2026-08-04 - TOP-001 full-triaxial fixed-volume continuation
+
+Gate: TOP-001 (Open identity track)
+
+**Result:** the independent two-coordinate log-shape chart passes nine checks,
+including fixed volume, cubic and non-cubic controls, smooth approach to the
+cubic point, axis-permutation covariance, refinement below 1%, uniform-volume
+scale invariance, malformed inputs and the packaging firewall. Independent
+reruns reproduce summary SHA-256
+`27922C6398BD16E71813A171A1A817105DC4F1EE5AAC846175F750B2C4B41F8A`.
+
+**Decision:** record `PASS_TOP001_S1_TRIAXIAL_FIXED_VOLUME_TEMPLATE` with
+`physics_pass: false` and `OPEN_SCAFFOLD_ONLY`. The reviewed biaxial scaffold
+is unchanged. No modulus action, Casimir tensor, twisted preference,
+backreaction, `13/12`, `H0`, `a0`, `Cobs` or cosmology is derived.
+
+## 2026-08-04 - VOR-001 finite-density and smooth-winding correction
+
+Gate: VOR-001 (Open identity track)
+
+**Correction:** the inherited draft failed because it compared a
+second-order finite-difference energy directly with the continuum result under
+tolerances below the known discretization error. The replacement verifies the
+exact discrete formula and independently measures second-order convergence.
+
+**Result:** all thirteen aggregate checks pass, including the stable
+finite-density minimum, global `U(1)` shift, integer sectors, positivity,
+reflection, permutation covariance, zero winding, selected norm monotonicity,
+convergence and malformed inputs. The deterministic summary SHA-256 is
+`7A2590C15F3920FECA02836FAE8B1F37E9CA121CEFB4723D54624360C55D2ADD`.
+
+**Decision:** record `PASS_VOR001_S1_AND_S2PRE_MATH_TEMPLATE_ONLY` with
+`physics_pass: false` and `OPEN_SCAFFOLD_ONLY`. Parent-action fluctuation
+stability, defects, resonance and every physical observable remain open.
+
+## 2026-08-04 - WAK-001 constrained preparation and identity hold
+
+Gate: WAK-001 (Route-II Conditional calculation lane)
+
+**Results:** local constrained variation, finite-`q` mode-counting and
+parent-Hessian readiness audits pass. The trial W-dependent density
+factorizes at quadratic order only on the declared `Wbar=0`,
+`nabla Wbar=0`, `J_W=0` background without an explicit bilinear operator.
+Metric/frame coupling returns at cubic order. Negative controls restore
+quadratic mixing for changed assumptions.
+
+The canonical evidence inventory finds no map from `W` to
+`(Xi,Q_rho,Q_chi,Pi)`, no independent microscopic parent derivation and no
+internal constitutive closure. The microscopic identity remains `UNRESOLVED`.
+
+**Decision:** WAK-001 remains Open with `physics_pass: false`. Keep `J_W=0`
+and retain `HOLD_WAK001_MICROSCOPIC_IDENTITY_MAP_UNDECLARED` plus the
+cubic-constraint hold. No physical wake law, source, exchange, damping, AQUAL
+correction, cluster offset or observable is derived.
+
+## 2026-08-04 - Parallel identity-gate checkpoint decision
+
+The combined TOP/VOR/WAK package is recorded in
+`Theory/Gates/IDENTITY_GATE_CHECKPOINT_2026-08-04.md`. It advances bounded
+mathematical and Conditional research objects only. No claim-ledger class is
+promoted and no frozen manuscript release is created.

@@ -42,6 +42,7 @@ It is **not**:
 |------|------|
 | `Theory/Gates/VOR-001/README.md` | This index |
 | `Theory/Gates/VOR-001/VOR-001_GATE_SPEC.md` | Full gate specification (question, DOF, routes, tests, falsifiers, firewall) |
+| `Theory/Gates/VOR-001/VOR-001_STAGE_S1_S2PRE_SMOOTH_WINDING.md` | Reviewed finite-density and smooth-winding template checkpoint |
 | `Analysis/VOR/VOR-001/vor001_winding_template_audit.py` | **Optional** mathematical-template-only toy (negative controls); **not** a physics pass |
 | `Analysis/VOR/VOR-001/README.md` | Toy audit scope and non-claims |
 

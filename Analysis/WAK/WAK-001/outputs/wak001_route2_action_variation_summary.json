@@ -1,0 +1,62 @@
+{
+  "calculation_pass": true,
+  "checks": {
+    "canonical_hamiltonian_matches_positive_quadratic_form": true,
+    "canonical_momentum_is_Z_times_W_t": true,
+    "constrained_density_returns_free_rest_lagrangian": true,
+    "constraint_multiplier_solves_temporal_frame_equation": true,
+    "covariant_density_reduces_to_declared_rest_lagrangian": true,
+    "dispersion_matches_free_field_screen": true,
+    "generic_spatial_gradient_sources_shared_frame_equation": true,
+    "hilbert_T00_matches_canonical_energy_with_constraint_response": true,
+    "luminal_limit_removes_wake_frame_response": true,
+    "negative_control_omitting_constraint_response_mismatches_energy": true,
+    "rest_projector_is_spatial": true,
+    "sample_hamiltonian_is_positive": true,
+    "static_susceptibility_matches_free_field_screen": true,
+    "unit_frame_normalization": true
+  },
+  "conventions": {
+    "frame_constraint": "g_mu_nu U^mu U^nu = -1",
+    "metric_signature": "(-,+,+,+)",
+    "metric_variation": "contravariant U^mu held independent; lambda_U enforces unit norm",
+    "projector": "h^{mu nu} = g^{mu nu} + U^mu U^nu"
+  },
+  "gate": "WAK-001",
+  "hold": "HOLD_COUPLED_FRAME_COMPLETION_AND_MODE_INVENTORY",
+  "label": "symbolic-local-action-template-only",
+  "next": [
+    "perform W2.5 coupled mode inventory against Phi, U and psi",
+    "fix parent-action ownership of the unit constraint before naming a separate T_W",
+    "retain J_W=0 and do not open W2.6 exchange until mode independence is established"
+  ],
+  "physical_wake_law": "NOT_YET_DERIVED",
+  "physics_pass": false,
+  "sample_exact": {
+    "hamiltonian": "1007/3125",
+    "missing_constraint_response": "-384/3125",
+    "spatial_frame_response": [
+      "288/3125",
+      "-192/3125",
+      "96/3125"
+    ]
+  },
+  "scientific_boundary": "The constrained local identities and rest-frame energy accounting pass. A generic W gradient sources the shared U equation, so allocation of constraint stress and independence from existing Phi/U/psi modes require the coupled parent action. No exchange current or dissipation is derived.",
+  "source": "J_W=0",
+  "stage": "W2.1 local constrained action variation",
+  "stage2_status": "IN_PROGRESS",
+  "status": "PASS_WAK001_W2_1_LOCAL_VARIATION_IDENTITIES",
+  "variation_identities": {
+    "field_equation": "nabla_mu[Z_W (D_U W) U^mu - Z_W c_W^2 h^{mu nu} nabla_nu W] + M_W^2 W = 0",
+    "frame_response_covector": "R_mu^(W) = Z_W (1-c_W^2) (D_U W) nabla_mu W + 2 lambda_U U_mu",
+    "metric_stress_with_constraint": "T_mu_nu^(W+constraint) = Z_W c_W^2 nabla_mu W nabla_nu W + g_mu_nu L_W + 2 lambda_U U_mu U_nu",
+    "missing_T00_if_constraint_response_omitted": "W_t**2*Z_W*(c_W_sq - 1)",
+    "rest_constraint_multiplier": "W_t**2*Z_W*(1 - c_W_sq)/2",
+    "rest_hamiltonian": "M_W_sq*W**2/2 + W_t**2*Z_W/2 + W_x**2*Z_W*c_W_sq/2 + W_y**2*Z_W*c_W_sq/2 + W_z**2*Z_W*c_W_sq/2",
+    "spatial_frame_response": [
+      "W_t*W_x*Z_W*(1 - c_W_sq)",
+      "W_t*W_y*Z_W*(1 - c_W_sq)",
+      "W_t*W_z*Z_W*(1 - c_W_sq)"
+    ]
+  }
+}

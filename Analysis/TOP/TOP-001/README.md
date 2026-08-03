@@ -14,15 +14,28 @@ refinement and negative controls. Supports Stage S0.4 / S1 of the gate spec only
 
 | File | Role |
 |------|------|
-| `top001_shape_template_audit.py` | Template audit (no ITSM packaging constants) |
-| `outputs/` (created on run) | Deterministic JSON summary |
+| `top001_shape_template_audit.py` | **Reviewed biaxial** fixed-volume template (do not overwrite) |
+| `top001_s1_triaxial_fixed_volume_audit.py` | **Stage S1** full-triaxial fixed-volume log-shape audit (separate) |
+| `outputs/` (created on run) | Deterministic JSON summaries + sha256 sidecars |
 
 ## Run
+
+Biaxial scaffold (reviewed):
 
 ```powershell
 python Analysis\TOP\TOP-001\top001_shape_template_audit.py
 # expect: PASS_TOP001_MATH_TEMPLATE_ONLY
 # physics_pass: false
+```
+
+Stage S1 full triaxial (independent chart; hardened continuation):
+
+```powershell
+python Analysis\TOP\TOP-001\top001_s1_triaxial_fixed_volume_audit.py
+# expect: PASS_TOP001_S1_TRIAXIAL_FIXED_VOLUME_TEMPLATE
+# physics_pass: false
+# 9 checks: volume, cubic, non-cubic, smooth cubic approach, permutation
+# covariance, refinement <=1%, V-scale invariance, malformed, firewall
 ```
 
 ## Explicit non-claims

@@ -238,6 +238,8 @@ external baseline; T2/T3 only after firewall review of any potential.
 | S1.2 | Fixed-volume shape scan invariants | **PASS** if \(V\) held fixed; ratios vary |
 | S1.3 | Negative control: cubic \(L_1=L_2=L_3\) | **PASS** if directional mode anisotropy diagnostic vanishes |
 | S1.4 | No \(13/12\) insertion | **FAIL** if target ratio hard-coded into potential/template as “attractor” |
+| S1.5 | Full-triaxial log-shape chart (two independent coords) | **PASS** template: `PASS_TOP001_S1_TRIAXIAL_FIXED_VOLUME_TEMPLATE` (see `TOP-001_STAGE_S1_TRIAXIAL.md`); biaxial scaffold retained separately |
+| S1.6 | Axis-permutation covariance of directional moments | **PASS** if moments transform under \(L_i\) permutations; \(A\) invariant |
 
 ### Stage S2 — Free Casimir / vacuum stress interface
 

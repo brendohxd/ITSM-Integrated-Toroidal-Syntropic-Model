@@ -49,7 +49,8 @@ This scaffold does **not** claim that pass.
 | `Theory/Gates/TOP-001/README.md` | This index |
 | `Theory/Gates/TOP-001/TOP-001_GATE_SPEC.md` | Full gate specification |
 | `Theory/Gates/TOP-001/TOP-001_TEMPLATE_REVIEW.md` | Independent reproduction and hardening record |
-| `Analysis/TOP/TOP-001/` | Optional mathematical-template-only tools |
+| `Theory/Gates/TOP-001/TOP-001_STAGE_S1_TRIAXIAL.md` | Stage S1 full-triaxial fixed-volume audit note |
+| `Analysis/TOP/TOP-001/` | Mathematical-template-only tools (biaxial + S1 triaxial) |
 
 ## Interfaces (scaffold may proceed without closing them)
 

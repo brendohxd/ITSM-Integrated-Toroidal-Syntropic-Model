@@ -106,7 +106,7 @@ a causal characteristic cone are necessary but not sufficient conditions.
 |---|---|---|
 | 0. Interface freeze | Declare W0, bookkeeping fork, source and observable interfaces | **This document - complete as a scaffold** |
 | 1. Linear template | Dispersion, characteristics, decay and static-limit audit | **Template only; not physical matching** |
-| 2. Energy accounting | Positive/bounded energy or non-negative entropy production; exact exchange cancellation | **Route II selected for Conditional calculation; free template passes; stress variation and exchange remain Open** |
+| 2. Energy accounting | Positive/bounded energy or non-negative entropy production; exact exchange cancellation | **Route II selected; free template, local constrained variations, mode-counting, readiness, zero-background factorization and identity-inventory audits pass; microscopic identity, cubic constraints and exchange remain Open** |
 | 3. Covariant completion | Action or controlled constitutive theory on the evolving FRW branch | Open |
 | 4. Coupled perturbations | No ghosts/gradient instabilities and causal global cone structure with UVIR modes | Blocked by Stages 2-3 and UVIR-003 |
 | 5. Matter/metric matching | Derive source, matter vertex, physical metric and lensing response | Blocked by MAT-001 |
@@ -182,6 +182,15 @@ force sector.
 Route II is selected only as the first Conditional calculation route; see
 `WAK-001_STAGE2_BOOKKEEPING_ROUTE.md`. Its free local template passes the
 declared Hamiltonian, dispersion, cone, susceptibility and negative-control
-screen. Next vary one declared trial action with respect to `W`, `g_mu_nu` and
-`U^mu`, then compare the resulting mode against `Phi`, `U` and `psi`. Keep
-`J_W=0` until duplication is excluded. Do not promote the physical wake claim.
+screen. The local constrained action audit now derives consistent `W`,
+`g_mu_nu` and `U^mu` identities, but a generic `W` gradient sources the shared
+frame equation. The W2.5 algebraic pre-screen now classifies the direct-sum,
+mixed and identified-field alternatives, but independence is not established.
+The zero-background audit derives factorization only for `Wbar=0`,
+`nabla Wbar=0`, `J_W=0` and no explicit bilinear cross-sector operator; the
+same expansion restores metric/frame coupling at cubic order. The evidence
+inventory finds no map from `W` to `(Xi,Q_rho,Q_chi,Pi)`, no independent
+microscopic parent derivation and no internal constitutive closure. Keep the
+unit constraint in the parent `U` sector once. Next choose a microscopic
+identity closure only when a construction exists, then build the cubic parent
+constraints. Keep `J_W=0`. Do not promote the physical wake claim.

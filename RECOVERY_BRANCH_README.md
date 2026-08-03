@@ -252,6 +252,25 @@ regular-tetrahedral slice, audit approach to internal poles and homogeneous
 channels, and define an adiabatic wave-packet or in-in observable
 normalization before any perturbative-unitarity criterion is attempted.
 
+## Parallel identity-gate checkpoint - 2026-08-04
+
+TOP-001, VOR-001 and WAK-001 advanced as parallel Open/Conditional research
+lanes. The detailed bounded record is
+[`Theory/Gates/IDENTITY_GATE_CHECKPOINT_2026-08-04.md`](Theory/Gates/IDENTITY_GATE_CHECKPOINT_2026-08-04.md).
+
+- TOP-001: the full-triaxial fixed-volume log-shape template passes nine
+  geometry, covariance, refinement and firewall checks.
+- VOR-001: the finite-density minimum and smooth integer-winding template pass
+  after separating the exact discrete energy from continuum convergence.
+- WAK-001: constrained variation, mode-counting, readiness,
+  zero-background factorization and identity-inventory audits pass within
+  their declared mathematical scope.
+
+All three gates remain Open. No modulus action, parent condensate validation,
+defect/resonance mechanism, microscopic wake identity, source, exchange
+current or physical observable is derived. This checkpoint does not create or
+modify a frozen manuscript release.
+
 ## Repository rules for recovery work
 
 1. Treat the claim migration ledger and gate reports as the status record.

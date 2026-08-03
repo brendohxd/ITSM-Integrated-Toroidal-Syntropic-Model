@@ -60,8 +60,8 @@ presented as a derivation. Every live statement is classified as **Derived**,
 | **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
 | **MAT-001** | **Blocked for PASS / downstream Derived use** | A scoped Conditional matching calculation may prepare provisional invariants, but cannot certify the matter coupling before the UVIR closure stage |
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
-| **WAK-001** | **Open** | The minimal relaxation template passes its mathematical screen; source, stress tensor, energy exchange and observable matching are not derived |
-| **TOP/VOR** | **Open scaffolds; math templates pass** | Fixed-volume shape and winding-separation checks pass; no modulus/winding action or physical identity claim is derived |
+| **WAK-001** | **Open; constrained templates pass** | Local variation, mode-counting, zero-background factorization and identity-inventory audits pass, but microscopic identity, cubic constraints, source, exchange and observables remain unresolved |
+| **TOP/VOR** | **Open scaffolds; extended math templates pass** | TOP full-triaxial fixed-volume and VOR finite-density/smooth-winding checks pass; no modulus action, parent condensate validation, defect/resonance mechanism or physical identity claim is derived |
 | **Reservoir** | **Open parallel identity gate** | Syntropic throughput may be formalised without restoring rejected historical packaging |
 | **Full cosmology** | **Not yet reconstructed** | CMB, growth, lensing, Solar-System and multi-scale claims require their named upstream gates |
 

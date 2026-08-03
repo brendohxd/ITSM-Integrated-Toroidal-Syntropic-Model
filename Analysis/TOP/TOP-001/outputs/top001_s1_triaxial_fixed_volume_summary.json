@@ -1,0 +1,377 @@
+{
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "V_target": 1.0,
+      "control_type": "constraint",
+      "max_abs_volume_error": 2.220446049250313e-16,
+      "name": "fixed_volume_preserved_under_triaxial_log_shape",
+      "ok": true
+    },
+    {
+      "anisotropy_A": 1.6653345369377348e-15,
+      "control_type": "negative",
+      "name": "cubic_limit_anisotropy_vanishes",
+      "ok": true
+    },
+    {
+      "A_by_name": {
+        "near_cubic": 0.013715605138867881,
+        "nearly_biaxial": 0.4173850515160664,
+        "strong_triaxial": 0.3751843968470003,
+        "triaxial_A": 0.26368325817088856,
+        "triaxial_B": 0.3087666491661012,
+        "triaxial_C": 0.35764374141559696
+      },
+      "control_type": "positive_template",
+      "name": "non_cubic_shapes_have_positive_anisotropy",
+      "note": "Chart sample result, not a global monotonic theorem",
+      "ok": true
+    },
+    {
+      "A_near_cubic": 0.013715605138867881,
+      "A_strong_triaxial": 0.3751843968470003,
+      "control_type": "continuity_template",
+      "name": "smooth_approach_to_cubic_small_alphas_small_A",
+      "ok": true
+    },
+    {
+      "control_type": "covariance",
+      "name": "axis_permutation_covariance_of_directional_moments",
+      "ok": true,
+      "permutations": [
+        {
+          "A": 0.26368325817088856,
+          "m_expected": [
+            0.17510288721298176,
+            0.38611096740314915,
+            0.43878614538387034
+          ],
+          "m_got": [
+            0.17510288721298176,
+            0.38611096740314915,
+            0.43878614538387034
+          ],
+          "ok": true,
+          "order": "xyz"
+        },
+        {
+          "A": 0.263683258170889,
+          "m_expected": [
+            0.38611096740314915,
+            0.17510288721298176,
+            0.43878614538387034
+          ],
+          "m_got": [
+            0.3861109674031485,
+            0.1751028872129812,
+            0.43878614538387023
+          ],
+          "ok": true,
+          "order": "yxz"
+        },
+        {
+          "A": 0.2636832581708885,
+          "m_expected": [
+            0.43878614538387034,
+            0.17510288721298176,
+            0.38611096740314915
+          ],
+          "m_got": [
+            0.4387861453838703,
+            0.17510288721298178,
+            0.38611096740314904
+          ],
+          "ok": true,
+          "order": "zxy"
+        },
+        {
+          "A": 0.26368325817088856,
+          "m_expected": [
+            0.17510288721298176,
+            0.43878614538387034,
+            0.38611096740314915
+          ],
+          "m_got": [
+            0.1751028872129817,
+            0.4387861453838703,
+            0.38611096740314904
+          ],
+          "ok": true,
+          "order": "xzy"
+        },
+        {
+          "A": 0.2636832581708884,
+          "m_expected": [
+            0.43878614538387034,
+            0.38611096740314915,
+            0.17510288721298176
+          ],
+          "m_got": [
+            0.43878614538387006,
+            0.38611096740314915,
+            0.17510288721298167
+          ],
+          "ok": true,
+          "order": "zyx"
+        },
+        {
+          "A": 0.263683258170889,
+          "m_expected": [
+            0.38611096740314915,
+            0.43878614538387034,
+            0.17510288721298176
+          ],
+          "m_got": [
+            0.38611096740314843,
+            0.43878614538387034,
+            0.1751028872129813
+          ],
+          "ok": true,
+          "order": "yzx"
+        }
+      ],
+      "reference_shape": "triaxial_A"
+    },
+    {
+      "A_n_max": 0.3087666491661012,
+      "A_n_max_refined": 0.3089393259583086,
+      "control_type": "refinement",
+      "n_max": 6,
+      "n_max_refined": 10,
+      "name": "refinement_control_anisotropy_within_rel_max",
+      "ok": true,
+      "refinement_rel_max": 0.01,
+      "relative_change": 0.0005589343204260641
+    },
+    {
+      "A_8V": 0.26368325817088856,
+      "A_V": 0.26368325817088856,
+      "V": 1.0,
+      "V_scaled": 8.0,
+      "control_type": "scale_invariance",
+      "name": "volume_scale_invariance_of_hatk_diagnostics",
+      "note": "hat{k} moments are scale-free for uniform L rescaling at fixed alphas",
+      "ok": true
+    },
+    {
+      "cases": [
+        {
+          "label": "V_nonpositive",
+          "rejected": true
+        },
+        {
+          "label": "V_negative",
+          "rejected": true
+        },
+        {
+          "label": "V_nan",
+          "rejected": true
+        },
+        {
+          "label": "V_inf",
+          "rejected": true
+        },
+        {
+          "label": "alpha_inf",
+          "rejected": true
+        },
+        {
+          "label": "alpha_nan",
+          "rejected": true
+        },
+        {
+          "label": "n_max_zero",
+          "rejected": true
+        },
+        {
+          "label": "n_max_refined_not_greater",
+          "rejected": true
+        },
+        {
+          "label": "n_max_refined_smaller",
+          "rejected": true
+        }
+      ],
+      "control_type": "malformed",
+      "name": "malformed_inputs_rejected",
+      "ok": true
+    },
+    {
+      "control_type": "firewall",
+      "flags": {
+        "claims_13_12_attractor": false,
+        "claims_Cobs": false,
+        "claims_H0": false,
+        "claims_a0_from_topology": false,
+        "claims_backreaction": false,
+        "claims_casimir_tensor": false,
+        "claims_cosmology": false,
+        "claims_modulus_action": false,
+        "claims_twisted_preferred": false
+      },
+      "name": "claim_firewall_packaging_flags_false",
+      "ok": true
+    }
+  ],
+  "derived_claims": [],
+  "fixed_volume": 1.0,
+  "forbidden_packaging_not_used": [
+    "claims_modulus_action",
+    "claims_casimir_tensor",
+    "claims_twisted_preferred",
+    "claims_backreaction",
+    "claims_13_12_attractor",
+    "claims_H0",
+    "claims_a0_from_topology",
+    "claims_Cobs",
+    "claims_cosmology"
+  ],
+  "gate": "TOP-001",
+  "label": "mathematical-template-only",
+  "log_shape_chart": {
+    "biaxial_scaffold_file": "top001_shape_template_audit.py",
+    "cubic_point": {
+      "alpha_x": 0.0,
+      "alpha_y": 0.0
+    },
+    "definition": "L_i = V**(1/3)*exp(alpha_i), alpha_z = -(alpha_x+alpha_y), independent coordinates (alpha_x, alpha_y)",
+    "independent_from_biaxial_r_chart": true,
+    "name": "fixed_volume_log_shape_two_coords"
+  },
+  "n_checks": 9,
+  "next_research_stages": [
+    "S1 complete as geometry template; optional dual-run hash freeze",
+    "S2 CBR-001 interface without packaging (separate task)",
+    "S3 dynamical S_mod only without forbidden targets"
+  ],
+  "physics_pass": false,
+  "refinement_rel_max_default": 0.01,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "Fixed-volume full-triaxial rectangular T^3 geometry and free-scalar mode-lattice diagnostics only. Does not compute Casimir tensors, backreaction, dynamical moduli actions, twisted BC preference, or any cosmological / force-law observable. physics_pass remains false.",
+  "separations_demonstrated": [
+    "fixed_volume_vs_two_log_shape_coordinates",
+    "full_triaxial_vs_reviewed_biaxial_scaffold",
+    "cubic_negative_control_vs_non_cubic_diagnostics",
+    "axis_permutation_covariance_of_moments",
+    "volume_scale_invariance_of_hatk_moments",
+    "template_vs_physical_prediction"
+  ],
+  "stage": "S1_FIXED_BOUNDARY_TRIAXIAL",
+  "stage_revision": "S1_hardened_continuation",
+  "subgate_status": "PASS_TOP001_S1_TRIAXIAL_FIXED_VOLUME_TEMPLATE",
+  "triaxial_scan": [
+    {
+      "Lx": 1.0,
+      "Ly": 1.0,
+      "Lz": 1.0,
+      "alpha_x": 0.0,
+      "alpha_y": 0.0,
+      "alpha_z": -0.0,
+      "anisotropy_A": 1.6653345369377348e-15,
+      "m_x": 0.33333333333333404,
+      "m_y": 0.33333333333333237,
+      "m_z": 0.33333333333333237,
+      "n_modes": 2196,
+      "name": "cubic",
+      "sum_alpha": 0.0,
+      "volume": 1.0
+    },
+    {
+      "Lx": 1.0202013400267558,
+      "Ly": 0.9900498337491681,
+      "Lz": 0.9900498337491681,
+      "alpha_x": 0.02,
+      "alpha_y": -0.01,
+      "alpha_z": -0.01,
+      "anisotropy_A": 0.013715605138867881,
+      "m_x": 0.32418959657409085,
+      "m_y": 0.33790520171295874,
+      "m_z": 0.33790520171295857,
+      "n_modes": 2196,
+      "name": "near_cubic",
+      "sum_alpha": 0.0,
+      "volume": 1.0000000000000002
+    },
+    {
+      "Lx": 1.4918246976412703,
+      "Ly": 0.8607079764250578,
+      "Lz": 0.7788007830714049,
+      "alpha_x": 0.4,
+      "alpha_y": -0.15,
+      "alpha_z": -0.25,
+      "anisotropy_A": 0.26368325817088856,
+      "m_x": 0.17510288721298176,
+      "m_y": 0.38611096740314915,
+      "m_z": 0.43878614538387034,
+      "n_modes": 2196,
+      "name": "triaxial_A",
+      "sum_alpha": 0.0,
+      "volume": 1.0000000000000002
+    },
+    {
+      "Lx": 0.7408182206817179,
+      "Ly": 1.6487212707001282,
+      "Lz": 0.8187307530779818,
+      "alpha_x": -0.3,
+      "alpha_y": 0.5,
+      "alpha_z": -0.2,
+      "anisotropy_A": 0.3087666491661012,
+      "m_x": 0.45414397685240493,
+      "m_y": 0.14537732768630376,
+      "m_z": 0.40047869546129067,
+      "n_modes": 2196,
+      "name": "triaxial_B",
+      "sum_alpha": 0.0,
+      "volume": 1.0
+    },
+    {
+      "Lx": 1.2840254166877414,
+      "Ly": 1.2840254166877414,
+      "Lz": 0.6065306597126334,
+      "alpha_x": 0.25,
+      "alpha_y": 0.25,
+      "alpha_z": -0.5,
+      "anisotropy_A": 0.35764374141559696,
+      "m_x": 0.21411875286146756,
+      "m_y": 0.2141187528614676,
+      "m_z": 0.5717624942770645,
+      "n_modes": 2196,
+      "name": "triaxial_C",
+      "sum_alpha": 0.0,
+      "volume": 0.9999999999999999
+    },
+    {
+      "Lx": 1.6487212707001282,
+      "Ly": 1.0,
+      "Lz": 0.6065306597126334,
+      "alpha_x": 0.5,
+      "alpha_y": 0.0,
+      "alpha_z": -0.5,
+      "anisotropy_A": 0.4173850515160664,
+      "m_x": 0.14196976679920337,
+      "m_y": 0.2986754148855269,
+      "m_z": 0.5593548183152698,
+      "n_modes": 2196,
+      "name": "nearly_biaxial",
+      "sum_alpha": 0.0,
+      "volume": 1.0
+    },
+    {
+      "Lx": 1.8221188003905089,
+      "Ly": 0.6703200460356393,
+      "Lz": 0.8187307530779819,
+      "alpha_x": 0.6,
+      "alpha_y": -0.4,
+      "alpha_z": -0.19999999999999996,
+      "anisotropy_A": 0.3751843968470003,
+      "m_x": 0.11936610860346868,
+      "m_y": 0.49455050545046897,
+      "m_z": 0.3860833859460624,
+      "n_modes": 2196,
+      "name": "strong_triaxial",
+      "sum_alpha": 0.0,
+      "volume": 1.0
+    }
+  ]
+}

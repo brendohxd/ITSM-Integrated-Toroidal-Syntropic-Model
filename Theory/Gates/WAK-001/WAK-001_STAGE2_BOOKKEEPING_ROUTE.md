@@ -127,11 +127,11 @@ parameter and no dissipative stress tensor is claimed.
 
 | ID | Calculation | Required result |
 |---|---|---|
-| W2.1 | Vary the conservative trial family with respect to `W`, `g_mu_nu` and `U^mu` | Equation, stress tensor and frame response from one declared action |
+| W2.1 | Vary the conservative trial family with respect to `W`, `g_mu_nu` and `U^mu` | Local constrained identities pass; coupled constraint ownership remains on hold |
 | W2.2 | Canonical energy on a frozen local background | Positive quadratic Hamiltonian in the declared domain |
 | W2.3 | Principal symbol | Hyperbolic characteristics and declared cone relation |
 | W2.4 | Source-free and static limits | Decay/propagation separated; no duplicated AQUAL force |
-| W2.5 | Mode inventory against `Phi`, `U` and `psi` | HOLD or FAIL if `W` is only a renamed existing mode |
+| W2.5 | Mode inventory against `Phi`, `U` and `psi` | Mode-counting pre-screen passes; microscopic identity and coupled mixing remain on hold |
 | W2.6 | Interaction bookkeeping | Derive `I_W^nu`; verify the total divergence cancels identically |
 | W2.7 | Negative controls | Wrong kinetic sign, acausal `c_W`, tachyonic mass and wrong exchange sign must fail |
 
@@ -169,7 +169,14 @@ free-energy/entropy functional and cannot reuse the separate `T_W^{mu nu}`.
 
 ## Next action
 
-Derive the free Route-II quadratic equation, canonical energy and principal
-symbol in a fixed local preferred-frame patch. Keep `J_W = 0` for that first
-screen. Only after the free mode inventory passes should an interaction source
-or dissipative completion be proposed.
+The free local screen and W2.1 constrained action-variation identities pass.
+The W2.5 mode-counting pre-screen classifies the independent, mixed and
+identified-field alternatives. The readiness audit correctly fails closed on
+the incomplete cross-sector inputs. A later expansion derives factorization
+of the W-dependent quadratic density only for the declared zero background
+with `J_W=0` and no explicit bilinear interaction; coupling returns at cubic
+order. The canonical evidence inventory leaves microscopic identity
+`UNRESOLVED`. Keep the unit constraint in the parent `U` sector once. Do not
+select Route I, Route II independence or an identification map from the free
+template. Only after one microscopic closure passes should an interaction
+source or dissipative completion be proposed.

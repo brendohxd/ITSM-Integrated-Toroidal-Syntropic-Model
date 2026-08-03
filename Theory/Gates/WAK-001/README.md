@@ -18,6 +18,16 @@ Stage 2 selects Route II only as the first Conditional calculation route in
 [`WAK-001_STAGE2_BOOKKEEPING_ROUTE.md`](WAK-001_STAGE2_BOOKKEEPING_ROUTE.md).
 Its source-free template screen is recorded in
 [`WAK-001_STAGE2_FREE_FIELD_SCREEN.md`](WAK-001_STAGE2_FREE_FIELD_SCREEN.md).
+The local constrained field, metric and frame identities are recorded in
+[`WAK-001_STAGE2_ACTION_VARIATION.md`](WAK-001_STAGE2_ACTION_VARIATION.md).
+The finite-`q` mode-counting alternatives are recorded in
+[`WAK-001_STAGE2_MODE_INVENTORY_PRESCREEN.md`](WAK-001_STAGE2_MODE_INVENTORY_PRESCREEN.md).
+The cross-sector input contract and fail-closed stop are recorded in
+[`WAK-001_STAGE2_COUPLED_HESSIAN_READINESS.md`](WAK-001_STAGE2_COUPLED_HESSIAN_READINESS.md).
+The background-specific quadratic factorization is recorded in
+[`WAK-001_STAGE2_ZERO_BACKGROUND_FACTORIZATION.md`](WAK-001_STAGE2_ZERO_BACKGROUND_FACTORIZATION.md).
+The canonical microscopic-identity evidence inventory is recorded in
+[`WAK-001_STAGE2_MICROSCOPIC_IDENTITY_INVENTORY.md`](WAK-001_STAGE2_MICROSCOPIC_IDENTITY_INVENTORY.md).
 
 ## Governing boundary
 
@@ -42,6 +52,20 @@ This is a constitutive template, not an adopted ITSM equation. Passing its
 checks demonstrates that a causal decaying memory model is possible in
 principle; it does not select `tau_W`, `v_W`, `kappa_W`, the source `S`, or the
 observable coupled to `W`.
+
+The conservative Route-II screen and W2.1 symbolic audit additionally verify
+the free Hamiltonian and the local constrained variation identities. A generic
+spatial `W` gradient sources the shared `U^mu` equation. The W2.5 pre-screen
+then classifies the direct-sum, mixed and identified-field alternatives, but
+cannot establish microscopic independence without one coupled parent action.
+The readiness audit confirms that the prior reduced pieces did not declare
+`W` cross-sector or constraint blocks, so a block-diagonal graft could not be
+assumed. The subsequent zero-background audit derives factorization of the
+W-dependent quadratic density specifically for `Wbar=0`, `nabla Wbar=0`,
+`J_W=0` and no explicit bilinear interaction. Metric and frame coupling
+returns at cubic order. The evidence inventory finds no canonical
+identification map or independent microscopic derivation. Stage 2 remains in
+progress under the microscopic-identity and cubic-constraint holds.
 
 ## Entry condition for substantive WAK-001 work
 

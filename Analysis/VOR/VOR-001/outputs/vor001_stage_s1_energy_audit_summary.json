@@ -1,0 +1,150 @@
+{
+  "calculation_pass": true,
+  "checks": {
+    "S1_1_finite_density_minimum": true,
+    "S1_2_global_U1_shift_is_gapless_control": true,
+    "S1_3_no_force_operator_or_packaging_parameter_used": true,
+    "S2pre_1_integer_holonomy_is_declared": true,
+    "S2pre_2_numeric_energy_matches_exact_discrete_formula": true,
+    "S2pre_3_nontrivial_sector_energy_is_positive": true,
+    "S2pre_4_reflection_degeneracy": true,
+    "S2pre_5_isotropic_axis_permutation_covariance": true,
+    "S2pre_6_trivial_winding_recovers_background": true,
+    "S2pre_7_energy_increases_across_selected_norm_sequence": true,
+    "S2pre_8_second_order_convergence_to_continuum_energy": true,
+    "S2pre_9_all_malformed_inputs_are_rejected": true,
+    "result_is_not_promoted_to_research_or_physics_pass": true
+  },
+  "derived_claims": [],
+  "finite_density_minimum": {
+    "potential_first_derivative": 0.0,
+    "potential_second_derivative": 2.0,
+    "rho0": 1.0
+  },
+  "forbidden_inferences": {
+    "SWNT_mechanism_is_derived": false,
+    "a0_or_force_normalization_is_derived": false,
+    "cosmology_lensing_PTA_or_SPARC_claim_is_supported": false,
+    "defect_solution_is_derived": false,
+    "resonance_spectrum_is_derived": false
+  },
+  "gate": "VOR-001",
+  "hold": "HOLD_PARENT_ACTION_LOCAL_FLUCTUATIONS_AND_DEFECT_SECTOR",
+  "label": "mathematical-template-only",
+  "malformed_input_controls": {
+    "boolean_grid_rejected": true,
+    "nonfinite_length_rejected": true,
+    "noninteger_winding_rejected": true,
+    "nonpositive_lambda_rejected": true,
+    "nonpositive_v_rejected": true,
+    "shape_mismatch_rejected": true,
+    "small_grid_rejected": true,
+    "underresolved_winding_rejected": true,
+    "zero_length_rejected": true
+  },
+  "next": [
+    "derive the same sector split from one declared parent condensate action",
+    "expand local amplitude and phase fluctuations about nonzero winding",
+    "defer defect cores to S3 and define resonance operationally before S4"
+  ],
+  "parameters": {
+    "N": 32,
+    "lambda": 1.0,
+    "lengths": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "v": 1.0
+  },
+  "physics_pass": false,
+  "refinement": {
+    "continuum_energy": 19.739208802178716,
+    "energies": [
+      18.74516600406096,
+      19.486839677110588,
+      19.67587286709202
+    ],
+    "observed_orders": [
+      1.977772546514061,
+      1.994439238286263
+    ],
+    "points": [
+      16,
+      32,
+      64
+    ],
+    "relative_errors": [
+      0.05035879644821628,
+      0.012785169233341961,
+      0.0032086359550390874
+    ]
+  },
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "This fixed-background dimensionless toy verifies a stable finite-density minimum and the numerical energy accounting of smooth integer-winding sectors. It is not the UVIR parent condensate action, a local fluctuation stability result, a defect solution, or a resonance mechanism.",
+  "sector_energies": {
+    "continuum": {
+      "(0, 0, 1)": 19.739208802178716,
+      "(0, 1, 0)": 19.739208802178716,
+      "(0, 1, 1)": 39.47841760435743,
+      "(1, 0, 0)": 19.739208802178716,
+      "(1, 0, 1)": 39.47841760435743,
+      "(1, 1, 0)": 39.47841760435743,
+      "(1, 1, 1)": 59.21762640653615,
+      "(2, 0, 0)": 78.95683520871486
+    },
+    "exact_discrete": {
+      "(0, 0, 1)": 19.486839677110588,
+      "(0, 1, 0)": 19.486839677110588,
+      "(0, 1, 1)": 38.973679354221176,
+      "(1, 0, 0)": 19.486839677110588,
+      "(1, 0, 1)": 38.973679354221176,
+      "(1, 1, 0)": 38.973679354221176,
+      "(1, 1, 1)": 58.46051903133176,
+      "(2, 0, 0)": 74.98066401624384
+    },
+    "numeric": {
+      "(0, 0, 1)": 19.486839677110588,
+      "(0, 1, 0)": 19.486839677110588,
+      "(0, 1, 1)": 38.973679354221176,
+      "(1, 0, 0)": 19.486839677110588,
+      "(1, 0, 1)": 38.973679354221176,
+      "(1, 1, 0)": 38.973679354221176,
+      "(1, 1, 1)": 58.46051903133177,
+      "(2, 0, 0)": 74.98066401624382
+    },
+    "numeric_vs_discrete_relative_error": {
+      "(0, 0, 1)": 0.0,
+      "(0, 1, 0)": 0.0,
+      "(0, 1, 1)": 0.0,
+      "(1, 0, 0)": 0.0,
+      "(1, 0, 1)": 0.0,
+      "(1, 1, 0)": 0.0,
+      "(1, 1, 1)": 1.215423242101711e-16,
+      "(2, 0, 0)": 1.895269253967044e-16
+    }
+  },
+  "stage": "S1 finite-density plus S2 smooth-winding pre-screen",
+  "status": "PASS_VOR001_S1_AND_S2PRE_MATH_TEMPLATE_ONLY",
+  "symmetry_controls": {
+    "permutation_energies": {
+      "(0, 1, 2)": 94.46750369335442,
+      "(0, 2, 1)": 94.46750369335442,
+      "(1, 0, 2)": 94.46750369335442,
+      "(1, 2, 0)": 94.46750369335442,
+      "(2, 0, 1)": 94.46750369335442,
+      "(2, 1, 0)": 94.46750369335442
+    },
+    "permutation_spread": 0.0,
+    "reflection_absolute_differences": {
+      "(0, 0, 1)": 0.0,
+      "(0, 1, 0)": 0.0,
+      "(0, 1, 1)": 0.0,
+      "(1, 0, 0)": 0.0,
+      "(1, 0, 1)": 0.0,
+      "(1, 1, 0)": 0.0,
+      "(1, 1, 1)": 0.0,
+      "(2, 0, 0)": 0.0
+    }
+  }
+}

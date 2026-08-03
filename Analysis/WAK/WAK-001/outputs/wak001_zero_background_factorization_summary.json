@@ -1,0 +1,73 @@
+{
+  "calculation_pass": true,
+  "checks": {
+    "cubic_coupling_vanishes_when_metric_and_frame_perturbations_vanish": true,
+    "explicit_bilinear_interaction_restores_quadratic_mixing": true,
+    "metric_or_frame_coupling_reappears_at_cubic_order": true,
+    "nonconstant_W_background_restores_quadratic_mixing": true,
+    "quadratic_W_block_is_independent_of_metric_and_frame_perturbations": true,
+    "quadratic_W_density_matches_free_block": true,
+    "result_is_not_promoted_to_physical_wake_law": true,
+    "source_is_kept_zero": true,
+    "unit_constraint_is_not_duplicated_in_trial_W_density": true,
+    "zero_background_has_no_W_tadpole": true
+  },
+  "cubic_return": {
+    "constraint_warning": "Lapse, shift and frame constraints must be re-eliminated before any nonlinear stability or strong-coupling statement.",
+    "nonzero_coupling_derivatives": {
+      "dL3_ddelta_U0": "-Z_W*w_t**2*(c_W_sq - 1)",
+      "dL3_ddelta_Ux": "-Z_W*w_t*w_x*(c_W_sq - 1)",
+      "dL3_ddelta_Uy": "-Z_W*w_t*w_y*(c_W_sq - 1)",
+      "dL3_ddelta_Uz": "-Z_W*w_t*w_z*(c_W_sq - 1)",
+      "dL3_ddelta_g00": "-Z_W*c_W_sq*w_t**2/2",
+      "dL3_ddelta_g0x": "-Z_W*c_W_sq*w_t*w_x",
+      "dL3_ddelta_g0y": "-Z_W*c_W_sq*w_t*w_y",
+      "dL3_ddelta_g0z": "-Z_W*c_W_sq*w_t*w_z",
+      "dL3_ddelta_gxx": "-Z_W*c_W_sq*w_x**2/2",
+      "dL3_ddelta_gxy": "-Z_W*c_W_sq*w_x*w_y",
+      "dL3_ddelta_gxz": "-Z_W*c_W_sq*w_x*w_z",
+      "dL3_ddelta_gyy": "-Z_W*c_W_sq*w_y**2/2",
+      "dL3_ddelta_gyz": "-Z_W*c_W_sq*w_y*w_z",
+      "dL3_ddelta_gzz": "-Z_W*c_W_sq*w_z**2/2"
+    },
+    "status": "METRIC_AND_FRAME_COUPLINGS_PRESENT"
+  },
+  "declared_background": {
+    "explicit_bilinear_cross_sector_operator": "ABSENT_FROM_TRIAL_DENSITY",
+    "frame": "Ubar^mu=(1,0,0,0)",
+    "metric": "local Minkowski inverse metric diag(-1,1,1,1)",
+    "wake": "Wbar=0 and nabla_mu Wbar=0"
+  },
+  "epsilon_expansion": {
+    "L_W_order_0": "0",
+    "L_W_order_1": "0",
+    "L_W_order_2": "-(M_W_sq*w**2 + Z_W*c_W_sq*w_x**2 + Z_W*c_W_sq*w_y**2 + Z_W*c_W_sq*w_z**2 - Z_W*w_t**2)/2",
+    "L_W_order_3": "-Z_W*(2*c_W_sq*delta_U0*w_t**2 + 2*c_W_sq*delta_Ux*w_t*w_x + 2*c_W_sq*delta_Uy*w_t*w_y + 2*c_W_sq*delta_Uz*w_t*w_z + c_W_sq*delta_g00*w_t**2 + 2*c_W_sq*delta_g0x*w_t*w_x + 2*c_W_sq*delta_g0y*w_t*w_y + 2*c_W_sq*delta_g0z*w_t*w_z + c_W_sq*delta_gxx*w_x**2 + 2*c_W_sq*delta_gxy*w_x*w_y + 2*c_W_sq*delta_gxz*w_x*w_z + c_W_sq*delta_gyy*w_y**2 + 2*c_W_sq*delta_gyz*w_y*w_z + c_W_sq*delta_gzz*w_z**2 - 2*delta_U0*w_t**2 - 2*delta_Ux*w_t*w_x - 2*delta_Uy*w_t*w_y - 2*delta_Uz*w_t*w_z)/2"
+  },
+  "gate": "WAK-001",
+  "hold": "HOLD_MICROSCOPIC_MODE_IDENTITY_AND_CUBIC_CONSTRAINT_COMPLETION",
+  "label": "background-specific-local-template-only",
+  "negative_controls": {
+    "explicit_bilinear_probe": "g_mix",
+    "nonconstant_background_probe": "-2*B_t*Z_W*(c_W_sq - 1)"
+  },
+  "next": [
+    "derive or reject microscopic independence of W from existing UVIR modes",
+    "construct the cubic parent constraint system before nonlinear claims",
+    "repeat the Hessian audit if a source, interaction or nonzero W background is declared"
+  ],
+  "physical_wake_law": "NOT_YET_DERIVED",
+  "physics_pass": false,
+  "quadratic_factorization": {
+    "cross_derivative_count": 70,
+    "nonzero_cross_derivative_count": 0,
+    "scope": "W-dependent part of the declared local trial density only; not the complete UVIR plus W parent Hessian",
+    "status": "DERIVED_FOR_DECLARED_ZERO_BACKGROUND"
+  },
+  "scientific_boundary": "Zero quadratic W-sector mixing is derived only for Wbar=0, nabla Wbar=0, J_W=0 and the trial density with no explicit bilinear cross-sector operator. It is not a physical mode-identification result.",
+  "source": "J_W=0",
+  "stage": "W2.5 zero-background quadratic factorization",
+  "stage2_status": "IN_PROGRESS",
+  "status": "PASS_WAK001_ZERO_BACKGROUND_QUADRATIC_FACTORIZATION_TEMPLATE",
+  "unit_constraint_owner": "PARENT_U_SECTOR_ONCE; NOT_DUPLICATED_IN_S_W"
+}

@@ -15,6 +15,7 @@ periodic cell can be separated from continuous local phase data, with
 | File | Role |
 |------|------|
 | `vor001_winding_template_audit.py` | Template audit (no physical constants from ITSM packaging) |
+| `vor001_stage_s1_energy_audit.py` | S1 finite-density and S2 smooth-winding pre-screen; mathematical template only |
 | `outputs/` (created on run) | JSON summary of template checks |
 
 ## Run
@@ -22,6 +23,12 @@ periodic cell can be separated from continuous local phase data, with
 ```powershell
 python Analysis\VOR\VOR-001\vor001_winding_template_audit.py
 # expect: PASS_VOR001_MATH_TEMPLATE_ONLY
+```
+
+```powershell
+python Analysis\VOR\VOR-001\vor001_stage_s1_energy_audit.py
+# expect: PASS_VOR001_S1_AND_S2PRE_MATH_TEMPLATE_ONLY
+# research gate remains OPEN_SCAFFOLD_ONLY
 ```
 
 ## Explicit non-claims

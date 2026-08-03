@@ -5,7 +5,18 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
-No unreleased manuscript changes.
+### Parallel identity-gate checkpoint
+
+- Added bounded post-alpha.10 gate records for TOP-001 full-triaxial
+  fixed-volume geometry, VOR-001 finite-density/smooth-winding energy, and
+  WAK-001 constrained Route-II preparation.
+- All results remain mathematical-template or Conditional inputs with
+  `physics_pass: false`; TOP/VOR remain `OPEN_SCAFFOLD_ONLY` and WAK remains
+  Open under microscopic-identity and cubic-constraint holds.
+- No working manuscript equations or frozen release were changed by this
+  checkpoint. A future alpha.11 may incorporate the results only after a
+  dedicated manuscript integration and review.
+
 
 ## 12.0-alpha.10 - 2026-08-03
 
