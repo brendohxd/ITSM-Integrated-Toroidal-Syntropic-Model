@@ -49,6 +49,9 @@ OPTIONAL_SUBGATES: dict[str, str] = {
     "uvir003_matching_route_program_summary.json": (
         "PASS_MATCHING_ROUTE_PROGRAM_OPEN"
     ),
+    "uvir003_declared_weak_coupling_domain_summary.json": (
+        "PASS_DECLARED_WEAK_COUPLING_DOMAIN"
+    ),
 }
 
 
@@ -114,8 +117,23 @@ def main() -> None:
             "note": "Stage A + Track A force architecture on branch",
         },
         "M2_stability_declared_domain": {
-            "status": "PARTIAL",
-            "note": "Many kinetic/transfer PASSes; IR HOLD modes remain",
+            "status": (
+                "PASS_BOUNDED"
+                if (
+                    args.summaries_dir
+                    / "uvir003_declared_weak_coupling_domain_summary.json"
+                ).exists()
+                and load_subgate(
+                    args.summaries_dir
+                    / "uvir003_declared_weak_coupling_domain_summary.json"
+                )
+                == "PASS_DECLARED_WEAK_COUPLING_DOMAIN"
+                else "PARTIAL"
+            ),
+            "note": (
+                "PASS_BOUNDED if Stage-1 domain freeze present: high-q+Track-A in; "
+                "IR HOLD excluded from weakly-coupled domain"
+            ),
         },
         "M3_causality_declared_domain": {
             "status": "PARTIAL",
@@ -157,6 +175,7 @@ def main() -> None:
         and k in ("M3_causality_declared_domain", "M2_stability_declared_domain")
     ]
     # Stricter: full gate closed only if no OPEN and no PARTIAL on M2,M3,M6
+    # PASS_BOUNDED is allowed for M2 (declared domain)
     blocking = [
         k
         for k, v in criteria.items()
@@ -199,9 +218,9 @@ def main() -> None:
             "or unlock MAT-001."
         ),
         "next_required_calculation": [
-            "Programme fork: A Conditional MAT handoff / B M2 residual / C R3 UV",
-            "Compute V=C_m/sqrt(K_Q) from S_int (R2) or Z_psi*r_rho (R3)",
-            "Re-evaluate causality + Lambda_|| after matched invariants",
+            "Serial Stage 2a: dig-harder R3 Z_psi, r_rho (or 2b Conditional floor)",
+            "Stage 2c: re-evaluate causality + Lambda_|| under floor",
+            "Stage 3 MAT only after Stage 2 exit (compute V from S_int)",
         ],
     }
 

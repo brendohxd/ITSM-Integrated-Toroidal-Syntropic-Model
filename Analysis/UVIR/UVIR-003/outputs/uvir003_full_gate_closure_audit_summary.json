@@ -1,6 +1,5 @@
 {
   "blocking_for_full_pass": [
-    "M2_stability_declared_domain",
     "M3_causality_declared_domain",
     "M6_physical_cutoff",
     "M7_matter_ready_for_MAT"
@@ -14,8 +13,8 @@
       "status": "PASS_BOUNDED"
     },
     "M2_stability_declared_domain": {
-      "note": "Many kinetic/transfer PASSes; IR HOLD modes remain",
-      "status": "PARTIAL"
+      "note": "PASS_BOUNDED if Stage-1 domain freeze present: high-q+Track-A in; IR HOLD excluded from weakly-coupled domain",
+      "status": "PASS_BOUNDED"
     },
     "M3_causality_declared_domain": {
       "note": "Documented Conditional R1 domain + route maps (R2 V target); Derived close still needs matched A q / K_Q",
@@ -42,14 +41,20 @@
   "mismatched_required_summaries": [],
   "missing_required_summaries": [],
   "next_required_calculation": [
-    "Programme fork: A Conditional MAT handoff / B M2 residual / C R3 UV",
-    "Compute V=C_m/sqrt(K_Q) from S_int (R2) or Z_psi*r_rho (R3)",
-    "Re-evaluate causality + Lambda_|| after matched invariants"
+    "Serial Stage 2a: dig-harder R3 Z_psi, r_rho (or 2b Conditional floor)",
+    "Stage 2c: re-evaluate causality + Lambda_|| under floor",
+    "Stage 3 MAT only after Stage 2 exit (compute V from S_int)"
   ],
   "optional_subgate_evidence": {
     "uvir003_causality_domain_conditional_summary.json": {
       "expected": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
       "got": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_declared_weak_coupling_domain_summary.json": {
+      "expected": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+      "got": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
       "ok": true,
       "present": true
     },

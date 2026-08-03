@@ -280,16 +280,17 @@ action drafts on identity pillars — only premature Derived packaging.
   - `PASS_DECLARED_UNITARITY_EFT_CRITERION` — scoped tree/NDA unitarity + high-\(q\) Green health criterion; optical theorem / physical cutoff / MAT **not** claimed  
 - **Post–alpha.10 working notes:**  
   - PASS_KQ_MATCHING_INVENTORY_OPEN — invariants \(Aq/K_Q\), \(A/K_Q^{3/2}\); routes R1–R5; **numeric \(K_Q\) still NOT_DERIVED**  
-  - PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT — machine ledger of Master Plan M1–M7 vs on-disk subgates; full gate still **IN_PROGRESS**  
-  - PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING — M3 **documented** under Conditional R1 (\(k_Q,C_{\mathrm{IR}}\) free); naive parallel \(q_\times/a_0=0.375\); **not** Derived  
-  - PASS_MATCHING_ROUTE_PROGRAM_OPEN — R2 interface: static \(\Cobs\) alone **cannot** fix \(Aq/K_Q\); MAT target \(V=C_m/\sqrt{K_Q}\); R3 residual sketch \(Z_\psi r_\rho\sim k_Q\); **K_Q still NOT_DERIVED**  
-  - Full-gate map: Theory/Gates/UVIR-003/UVIR-003_FULL_GATE_CLOSURE_CHECKLIST.md  
-- **Next working priorities (Master Plan critical path first):**  
-  1. **Programme fork (checklist §5):** **A** Conditional UVIR domain for MAT-only → compute \(V\); **B** residual M2 IR HOLD; **C** dig-harder R3 \(S_\Phi\) — then re-evaluate causality + \(\Lambda_\parallel\) (M3/M6)  
-  2. **Do not** promote R1 naive \((k_Q,C_{\mathrm{IR}})=(1,2/3)\) to Derived  
-  3. **DISK-001 full closure / STAT-001 start** (methods package recorded; Conditional lane OK without Derived \(\Cobs\))  
-  4. **MAT-001** remains **blocked** for Derived until UVIR full pass **or** explicit Conditional handoff amendment  
-  5. Optional parallel: VOR-001 / identity TOP/WAK/\(Q_{\rm syn}\) sketches  
+  - PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT — machine ledger M1–M7; full gate **IN_PROGRESS**  
+  - PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING — M3 documented Conditional R1; **not** Derived  
+  - PASS_MATCHING_ROUTE_PROGRAM_OPEN — R2: static \(\Cobs\) alone cannot fix \(Aq/K_Q\); target \(V=C_m/\sqrt{K_Q}\)  
+  - PASS_DECLARED_WEAK_COUPLING_DOMAIN — **Stage 1 / M2 PASS_BOUNDED**: high-\(q\)+Track-A in; IR HOLD **out** of weakly-coupled domain  
+  - Serial order: Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md  
+- **Next working priorities (serial — complete each before next):**  
+  1. **Stage 2** matching floor without MAT: 2a R3 dig-harder \(Z_\psi,r_\rho\) → else 2b Conditional floor → 2c re-eval causality/NDA  
+  2. **Stage 3** MAT-001 only after Stage 2 exit (compute \(V\), \(\Cobs\))  
+  3. **Stage 4–5** upgrade M3/M6 → UVIR full PASS  
+  4. **Stage 6–7** DISK/STAT full → P3/P4 (not before Stage 5–6)  
+  5. Parallel methods only: DISK Conditional lane; identity TOP/VOR/WAK sketches  
 
 
 Reproduce alpha.9 baseline:

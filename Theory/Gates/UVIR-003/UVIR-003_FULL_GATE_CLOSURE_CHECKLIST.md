@@ -24,7 +24,7 @@ Break into **must** criteria (M1–M5) and **supporting** evidence (S*).
 | ID | Criterion | Status | Evidence / notes |
 |----|-----------|--------|------------------|
 | **M1** | Selected two-sector preferred-frame action declared | **PASS (bounded)** | Stage A + UVIR-002 route; Track A force retention of exact \(Y^{3/2}\) |
-| **M2** | Stability / positivity in declared domain | **PARTIAL** | Finite-\(q\) kinetic positivity, many Stage B ADM/propagator passes; IR transfer HOLD retained for some modes |
+| **M2** | Stability / positivity in declared domain | **PASS_BOUNDED** | Stage 1 domain freeze: high-\(q\)+Track-A in; IR HOLD / complex-quartet **out** (`PASS_DECLARED_WEAK_COUPLING_DOMAIN`) |
 | **M3** | Causality in declared domain | **PARTIAL (DOCUMENTED)** | Stage A + addendum; Conditional R1 domain mapped (`PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING`); naive \(q_\times/a_0=0.375\) parallel — **Derived** close still needs matched \(Aq/K_Q\) |
 | **M4** | Weak coupling / unitarity **path stated with scope** | **PASS (scoped)** | `PASS_DECLARED_UNITARITY_EFT_CRITERION` — tree/NDA + Green health; **not** optical theorem |
 | **M5** | Invariant ratios for force normalization | **PASS (inventory)** | `PASS_KQ_MATCHING_INVENTORY_OPEN` — \(Aq/K_Q\), \(A/K_Q^{3/2}\), …; **numeric \(K_Q\) NOT_DERIVED** |
@@ -54,7 +54,9 @@ Break into **must** criteria (M1–M5) and **supporting** evidence (S*).
 | \(K_Q\) matching inventory | Invariants + routes | `PASS_KQ_MATCHING_INVENTORY_OPEN` |
 | Causality domain (Conditional R1) | M3 documentation | `PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING` |
 | Matching-route program (R2/R3 maps) | Toward M3/M6 | `PASS_MATCHING_ROUTE_PROGRAM_OPEN` |
+| Declared weakly-coupled domain | Stage 1 / M2 | `PASS_DECLARED_WEAK_COUPLING_DOMAIN` |
 | Full-gate checklist audit | Evidence ledger | `PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT` |
+| Serial stage order | Process control | `UVIR-003_SERIAL_STAGE_ORDER.md` |
 
 Machine audit:  
 `python Analysis/UVIR/UVIR-003/uvir003_full_gate_closure_audit.py`
@@ -104,25 +106,25 @@ Matching-route program:
 
 ---
 
-## 5. Next single critical-path action
+## 5. Serial order (each stage complete before next)
 
-**Done (v1.1):** Conditional causality domain under R1 premises — M3 **documented**.  
-**Done (v1.2):** Matching-route program — R2 interface + R3 sketch + DOF maps  
-(`PASS_MATCHING_ROUTE_PROGRAM_OPEN`). Structural theorem: static \(\Cobs\) alone
-cannot fix \(Aq/K_Q\); MAT target is \(V=C_m/\sqrt{K_Q}\).
+Authoritative process doc: **`UVIR-003_SERIAL_STAGE_ORDER.md`**.
 
-**Now — fork requiring programme decision:**
+| Stage | Content | Status |
+|-------|---------|--------|
+| 0 | Path package, inventory, M3 doc, route maps | **DONE** |
+| **1** | M2 domain freeze (exclude IR HOLD) | **DONE** (`PASS_DECLARED_WEAK_COUPLING_DOMAIN`) |
+| **2** | Matching floor without MAT (R3 attempt → Conditional floor) | **NEXT** |
+| 3 | MAT-001 (\(V\), \(\Cobs\)) | blocked until Stage 2 exit |
+| 4 | Upgrade M3/M6 with matched \(V\) | after Stage 3 |
+| 5 | UVIR-003 full-gate PASS | after Stage 4 |
+| 6 | DISK full + STAT | after Stage 5 for claim-grade obs |
+| 7 | P3/P4 full drafts | after Stage 5–6 triggers |
 
-| Option | Action | Unlocks |
-|--------|--------|---------|
-| **A (default Master Plan)** | Explicit **Conditional UVIR domain for MAT-only** handoff (written amendment below when chosen) → start MAT \(S_{\mathrm{int}}\) → compute \(V\) and \(\Cobs\) | R2 Derived path toward M3/M6 |
-| **B** | Finish residual UVIR M2 (IR HOLD control/exclude) before any MAT | Cleaner “full UVIR PASS” story |
-| **C (parallel)** | Dig-harder R3: derive \(Z_\psi,r_\rho\) from \(S_\Phi\) | Alternate M3/M6 without MAT vertex first |
+**Next single action:** Stage **2a** — dig-harder R3 bound/derive \(Z_\psi,r_\rho\) (or record explicit incomplete → Stage 2b Conditional floor).  
+**Never** promote R1 naive to Derived. **Never** start MAT Derived before Stage 2 exit.
 
-After A or C delivers matched invariants: re-evaluate \(q_\times\), \(\Lambda_\parallel\) (M3/M6).  
-**Never** promote R1 naive \((k_Q,C_{\mathrm{IR}})=(1,2/3)\) to Derived.
-
-Parallel (not MAT-critical): DISK/STAT Conditional lane; TOP/VOR/WAK sketches.
+Parallel methods only: DISK Conditional lane; TOP/VOR/WAK sketches.
 
 ---
 
@@ -133,3 +135,4 @@ Parallel (not MAT-critical): DISK/STAT Conditional lane; TOP/VOR/WAK sketches.
 | 1.0 | 2026-08-03 | Initial closure map + machine audit |
 | 1.1 | 2026-08-03 | Ran audit + Conditional causality domain; M3 documented; next = matching |
 | 1.2 | 2026-08-03 | Matching-route program PASS; R2 \(V\) target explicit; next = A/B/C decision |
+| 1.3 | 2026-08-03 | Serial order adopted; Stage 1 M2 domain freeze PASS_BOUNDED |
