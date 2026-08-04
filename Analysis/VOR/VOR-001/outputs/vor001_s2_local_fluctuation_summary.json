@@ -1,0 +1,157 @@
+{
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "m2": 2.0,
+      "name": "amplitude_mass_positive",
+      "ok": true
+    },
+    {
+      "name": "goldstone_massless",
+      "ok": true
+    },
+    {
+      "name": "amp_symbols_nonnegative",
+      "ok": true
+    },
+    {
+      "name": "phase_symbols_nonnegative",
+      "ok": true
+    },
+    {
+      "name": "goldstone_zero_mode",
+      "ok": true
+    },
+    {
+      "name": "amplitude_zero_mode_mass",
+      "ok": true
+    },
+    {
+      "name": "realspace_quadratic_matches_continuum",
+      "norm2": 1.0,
+      "ok": true,
+      "relative_error": 0.021546962152718802
+    },
+    {
+      "name": "template_not_parent_itsm_action",
+      "note": "Toy U(1) energy only; HOLD parent action remains",
+      "ok": true
+    },
+    {
+      "flags": {
+        "Cobs_from_vortex": false,
+        "PTA_spectrum": false,
+        "SWNT_packaging": false,
+        "VOR_research_gate_PASS": false,
+        "a0_from_winding": false,
+        "defect_sector": false,
+        "force_law": false,
+        "parent_UVIR_action_validated": false,
+        "physics_pass": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "Cobs_from_vortex": false,
+    "PTA_spectrum": false,
+    "SWNT_packaging": false,
+    "VOR_research_gate_PASS": false,
+    "a0_from_winding": false,
+    "defect_sector": false,
+    "force_law": false,
+    "parent_UVIR_action_validated": false,
+    "physics_pass": false
+  },
+  "continuum_masses": {
+    "V_second_at_v": 2.0,
+    "m2_amplitude": 2.0,
+    "m2_phase_goldstone": 0.0,
+    "potential": "lambda (rho^2 - v^2)^2 / 4"
+  },
+  "gate": "VOR-001",
+  "hold": "HOLD_PARENT_ACTION_AND_DEFECT_SECTOR",
+  "n_checks": 9,
+  "next_required": [
+    "Declare or import parent S_Phi for ITSM (not this toy alone)",
+    "Defect sector with rho=0 cores only after parent action",
+    "Resonance / spectrum only after defects and TOP mode lattice"
+  ],
+  "parameters": {
+    "L": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "N": 24,
+    "lambda": 1.0,
+    "v": 1.0
+  },
+  "physics_pass": false,
+  "realspace_check": {
+    "E_continuum_symbol": 41.47841760435743,
+    "E_quadratic_realspace": 40.58468371008168,
+    "mode": [
+      1,
+      0,
+      0
+    ],
+    "norm2": 1.0,
+    "relative_error": 0.021546962152718802
+  },
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "Quadratic local fluctuations of the fixed-background U(1) toy energy about the finite-density minimum. Massive amplitude and gapless phase mode verified as a mathematical template. Does not validate the parent ITSM condensate action, defects, or observables.",
+  "stage": "S2_LOCAL_FLUCTUATIONS",
+  "subgate_status": "PASS_VOR001_S2_LOCAL_FLUCTUATION_TEMPLATE",
+  "symbol_scan": {
+    "amp_quadratic_symbols_nonnegative": true,
+    "amplitude_mass_at_zero_mode": true,
+    "dispersion_samples": [
+      {
+        "k2": 39.47841760435743,
+        "n": [
+          1,
+          0,
+          0
+        ],
+        "omega2_amplitude_continuum": 41.47841760435743,
+        "omega2_phase_continuum": 39.47841760435743
+      },
+      {
+        "k2": 39.47841760435743,
+        "n": [
+          0,
+          1,
+          0
+        ],
+        "omega2_amplitude_continuum": 41.47841760435743,
+        "omega2_phase_continuum": 39.47841760435743
+      },
+      {
+        "k2": 78.95683520871486,
+        "n": [
+          1,
+          1,
+          0
+        ],
+        "omega2_amplitude_continuum": 80.95683520871486,
+        "omega2_phase_continuum": 78.95683520871486
+      },
+      {
+        "k2": 118.4352528130723,
+        "n": [
+          1,
+          1,
+          1
+        ],
+        "omega2_amplitude_continuum": 120.4352528130723,
+        "omega2_phase_continuum": 118.4352528130723
+      }
+    ],
+    "goldstone_zero_mode": true,
+    "min_amp_symbol": 2.0,
+    "min_phase_symbol": 0.0,
+    "phase_quadratic_symbols_nonnegative": true
+  }
+}

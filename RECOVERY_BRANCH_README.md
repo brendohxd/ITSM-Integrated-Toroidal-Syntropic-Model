@@ -310,6 +310,18 @@ defect/resonance mechanism, microscopic wake identity, source, exchange
 current or physical observable is derived. This checkpoint does not create or
 modify a frozen manuscript release.
 
+### Identity continuation (same day)
+
+Further scaffold-only executables (still `physics_pass: false`):
+
+- TOP-001 S2-pre CBR interface template  
+- VOR-001 S2 local fluctuation template (toy \(U(1)\) energy)  
+- WAK-001 identity closure-routes catalog (identity still UNRESOLVED)  
+- **RES-001** opened: \(Q_{\mathrm{syn}}\) constitutive inventory  
+
+See `Theory/Gates/IDENTITY_GATE_CHECKPOINT_2026-08-04.md` and
+`Theory/Gates/RES-001/`.
+
 ## Repository rules for recovery work
 
 1. Treat the claim migration ledger and gate reports as the status record.

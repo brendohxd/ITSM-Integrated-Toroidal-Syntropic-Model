@@ -1,0 +1,187 @@
+{
+  "calculation_status": "PASS",
+  "cbr001_interface": {
+    "CBR001_owns": [
+      "renormalized_free_scalar_Casimir_stress",
+      "biaxial_or_triaxial_stress_scan",
+      "free_field_backreaction_negative_13_12_result"
+    ],
+    "TOP_owns": [
+      "rectangular_T3_side_lengths_L_i",
+      "optional_fixed_volume_log_shape_alphas",
+      "BC_class_declaration_default_periodic"
+    ],
+    "forbidden_smuggling": [
+      "insert_13_12_into_modulus_potential",
+      "claim_persistent_free_field_attractor",
+      "derive_a0_or_Cobs_from_shape_alone",
+      "prefer_twisted_BC_without_energy_comparison"
+    ],
+    "handoff_object": {
+      "equivalent_fixed_V": "(V, alpha_x, alpha_y) with sum alpha_i = 0",
+      "mode_lattice_template": "k_i = 2*pi*n_i/L_i, n in Z^3 \\ {0}",
+      "primary": "(L1, L2, L3)"
+    },
+    "status": "INTERFACE_DECLARED_TEMPLATE_ONLY"
+  },
+  "checks": [
+    {
+      "L": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "name": "cubic_volume",
+      "ok": true
+    },
+    {
+      "moments": {
+        "anisotropy_A": 4.440892098500626e-15,
+        "frac_kx2": 0.33333333333333565,
+        "frac_ky2": 0.33333333333333715,
+        "frac_kz2": 0.33333333333333687,
+        "mean_k2": 1185.2430187533753,
+        "n_modes": 1330.0
+      },
+      "name": "cubic_mode_fractions_isotropic",
+      "ok": true
+    },
+    {
+      "L": [
+        1.161834242728283,
+        0.8607079764250578,
+        1.0
+      ],
+      "name": "biaxial_volume",
+      "ok": true
+    },
+    {
+      "A": 0.8221188003905135,
+      "name": "biaxial_anisotropy_positive",
+      "ok": true
+    },
+    {
+      "L": [
+        1.2214027581601699,
+        0.951229424500714,
+        0.8607079764250578
+      ],
+      "name": "triaxial_volume",
+      "ok": true
+    },
+    {
+      "A": 1.0137527074704766,
+      "name": "triaxial_anisotropy_positive",
+      "ok": true
+    },
+    {
+      "A_vals": [
+        1.0137527074704766,
+        1.0137527074704646,
+        1.0137527074704447
+      ],
+      "name": "anisotropy_permutation_invariant",
+      "ok": true
+    },
+    {
+      "name": "shape_diagnostics_volume_scale_invariant",
+      "ok": true
+    },
+    {
+      "name": "interface_declared_without_casimir_recompute",
+      "ok": true
+    },
+    {
+      "flags": {
+        "Cobs_from_topology": false,
+        "Derived_Casimir_from_this_package": false,
+        "Derived_topology": false,
+        "H0_72_97": false,
+        "TOP_research_gate_PASS": false,
+        "a0_from_topology": false,
+        "modulus_action_S_mod": false,
+        "persistent_13_12": false,
+        "physics_pass": false,
+        "twisted_preference": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "Cobs_from_topology": false,
+    "Derived_Casimir_from_this_package": false,
+    "Derived_topology": false,
+    "H0_72_97": false,
+    "TOP_research_gate_PASS": false,
+    "a0_from_topology": false,
+    "modulus_action_S_mod": false,
+    "persistent_13_12": false,
+    "physics_pass": false,
+    "twisted_preference": false
+  },
+  "claim_status": "Conditional_interface_template",
+  "gate": "TOP-001",
+  "n_checks": 10,
+  "next_required": [
+    "Optional: call CBR-001 lattice tools with declared (L1,L2,L3) samples",
+    "S2: modulus action only after firewall review of any potential",
+    "Twisted BC only after energy/stability comparison (not Derived yet)"
+  ],
+  "parameters": {
+    "V": 1.0,
+    "n_max": 5
+  },
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "samples": {
+    "biaxial": {
+      "L": [
+        1.161834242728283,
+        0.8607079764250578,
+        1.0
+      ],
+      "moments": {
+        "anisotropy_A": 0.8221188003905135,
+        "frac_kx2": 0.2396944792058486,
+        "frac_ky2": 0.43675181691078974,
+        "frac_kz2": 0.3235537038833619,
+        "mean_k2": 1221.0677903213011,
+        "n_modes": 1330.0
+      }
+    },
+    "cubic": {
+      "L": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "moments": {
+        "anisotropy_A": 4.440892098500626e-15,
+        "frac_kx2": 0.33333333333333565,
+        "frac_ky2": 0.33333333333333715,
+        "frac_kz2": 0.33333333333333687,
+        "mean_k2": 1185.2430187533753,
+        "n_modes": 1330.0
+      }
+    },
+    "triaxial": {
+      "L": [
+        1.2214027581601699,
+        0.951229424500714,
+        0.8607079764250578
+      ],
+      "moments": {
+        "anisotropy_A": 1.0137527074704766,
+        "frac_kx2": 0.21447840881942348,
+        "frac_ky2": 0.3536151147265022,
+        "frac_kz2": 0.43190647645407376,
+        "mean_k2": 1234.7663326849406,
+        "n_modes": 1330.0
+      }
+    }
+  },
+  "scientific_boundary": "Declares TOP\u2192CBR-001 geometry handoff and free-scalar mode lattice diagnostics on fixed rectangular T^3. Does not evaluate Casimir stress, does not write S_mod, does not restore 13/12 packaging.",
+  "stage": "S2PRE_CBR_INTERFACE",
+  "subgate_status": "PASS_TOP001_S2PRE_CBR_INTERFACE_TEMPLATE"
+}

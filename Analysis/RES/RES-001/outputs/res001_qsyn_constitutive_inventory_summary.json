@@ -1,0 +1,111 @@
+{
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "architecture_file_present",
+      "ok": true
+    },
+    {
+      "name": "architecture_mentions_Q_syn_or_reservoir",
+      "ok": true
+    },
+    {
+      "name": "architecture_separates_Q_mp_and_Q_syn",
+      "ok": true
+    },
+    {
+      "name": "conservation_sum_identity_declared",
+      "ok": true
+    },
+    {
+      "name": "Q_mp_not_identical_to_Q_syn",
+      "ok": true
+    },
+    {
+      "name": "candidates_include_control_and_open_routes",
+      "ok": true
+    },
+    {
+      "name": "no_candidate_marked_Derived",
+      "ok": true
+    },
+    {
+      "flags": {
+        "13_12_from_reservoir": false,
+        "Derived_creation_rate": false,
+        "H0_from_Q_syn": false,
+        "NEC_violating_Minkowski_support": false,
+        "Q_syn_is_S_N_automatic": false,
+        "RES_research_gate_PASS": false,
+        "physics_pass": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "13_12_from_reservoir": false,
+    "Derived_creation_rate": false,
+    "H0_from_Q_syn": false,
+    "NEC_violating_Minkowski_support": false,
+    "Q_syn_is_S_N_automatic": false,
+    "RES_research_gate_PASS": false,
+    "physics_pass": false
+  },
+  "conservation_partition": {
+    "exchange_currents": {
+      "Q_mp": "matter\u2013plenum local exchange",
+      "Q_syn": "reservoir\u2013plenum throughput (syntropy/entropy channel)"
+    },
+    "identities": [
+      "nabla_mu T_m^{mu nu} = Q_mp^nu",
+      "nabla_mu T_P^{mu nu} = -Q_mp^nu + Q_syn^nu",
+      "nabla_mu T_R^{mu nu} = -Q_syn^nu",
+      "sum_sectors nabla_mu T^{mu nu} = 0"
+    ],
+    "optional_wake": "If WAK Route II is chosen later, I_W appears with its own T_W; still must sum to zero with Q_mp and Q_syn",
+    "sectors": [
+      "matter",
+      "plenum",
+      "reservoir"
+    ],
+    "separation_rule": "Q_mp is not identical to Q_syn"
+  },
+  "constitutive_candidates": [
+    {
+      "description": "Q_syn = 0; closed plenum+matter subsystem for tests",
+      "id": "R0_NO_THROUGHPUT_CONTROL",
+      "status": "CONTROL"
+    },
+    {
+      "description": "Q_syn^nu = constitutive functional of declared fields (U, rho, gradients) with energy accounting",
+      "forbidden": "free tunable creation rate without action/constitutive law",
+      "id": "R1_DECLARED_CONSTITUTIVE_VECTOR",
+      "status": "OPEN"
+    },
+    {
+      "description": "S_R + interaction S_int[plenum, reservoir] derives Q_syn",
+      "forbidden": "NEC-violating fluid as silent exact Minkowski support",
+      "id": "R2_ACTION_COUPLED_RESERVOIR",
+      "status": "OPEN"
+    },
+    {
+      "description": "Master Plan preference: lock throughput to T^3 moduli/topology rather than free generic creation \u2014 still Conditional until derived",
+      "forbidden": "infer 2/3 or 13/12 from cycle counting alone",
+      "id": "R3_TOPOLOGY_LOCKED_THROUGHPUT",
+      "status": "OPEN_CONDITIONAL"
+    }
+  ],
+  "gate": "RES-001",
+  "n_checks": 8,
+  "next_required": [
+    "Choose R1 or R2 and write a minimal constitutive/action draft",
+    "Keep R3 topology-locked throughput Conditional until derived",
+    "Interface later with WAK Route I/II without double-counting currents"
+  ],
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "Inventories reservoir throughput Q_syn as an Open identity object with total conservation bookkeeping and exclusive constitutive candidate routes. No creation-rate law or cosmology is Derived.",
+  "stage": "QSYN_CONSTITUTIVE_INVENTORY",
+  "subgate_status": "PASS_RES001_QSYN_CONSTITUTIVE_INVENTORY_OPEN"
+}
