@@ -256,6 +256,7 @@ def main() -> None:
         "gate": "MAT-001",
         "stage": "SCOPED_CALCULATION_UVIR_SERIAL_STAGE_3",
         "serial_stage": 3,
+        "serial_stage_status": "PARTIAL_PROVISIONAL_V_NOT_COMPUTED",
         "calculation_status": "PASS" if all_ok else "FAIL",
         "subgate_status": subgate,
         "mat001_gate_status": "BLOCKED_PASS_TAG_FORBIDDEN",
@@ -302,7 +303,7 @@ def main() -> None:
         ),
         "next_required": [
             "Compute V from declared S_int once force kinetic chart / K_Q matching available",
-            "UVIR Stages 4–5 before any MAT PASS or Derived downstream packaging",
+            "Reopen UVIR Stage 4A with the matched invariant; Stage 5 remains held",
             "Optional: explicit interaction Lagrangian beyond static -C_m rho psi",
         ],
     }

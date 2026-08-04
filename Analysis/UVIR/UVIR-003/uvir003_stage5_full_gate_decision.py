@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""UVIR-003 Stage 5: tier-1 full-gate decision under declared Conditional policy.
+"""UVIR-003 Stage 5: tier-1 full-gate decision audit.
 
 Master Plan §5.1 UVIR-003 pass wording:
   Selected action stable/causal/weakly coupled in declared domain;
@@ -7,38 +7,31 @@ Master Plan §5.1 UVIR-003 pass wording:
 
 Tier-1 / peer-review standard (this package)
 --------------------------------------------
-Does **not** issue an unqualified Derived theory close. Issues:
+Records a successful *decision audit* but holds the physics gate while
+mandatory physics remains Conditional or outside the relevant tested domain.
 
-  full_gate_status = PASS_BOUNDED_CONDITIONAL
+Current output:
+  decision = HOLD_TIER1_CLOSURE
+  full_gate_status = IN_PROGRESS
 
-when and only when:
-  * M1–M2 PASS_BOUNDED (action + declared weak-coupling domain)
-  * M3 permanent Conditional-with-scope (Stage 4 branch B)
-  * M4 unitarity path stated with scope + optical theorem permanently
-    excluded from UVIR-003 gate scope
-  * M5 invariant inventory present (K_Q still NOT_DERIVED — stated)
-  * M6 permanent Conditional NDA diagnostic (Stage 4 branch B)
-  * M7 force sector ready for MAT *handoff* only (MAT PASS still blocked)
-  * Full in-in nested integrals permanently deferred from UVIR-003 PASS claims
-  * Claim firewall: no Derived K_Q/V, no SPARC/H0, no dual RAR packaging
-
-Why not plain PASS
-------------------
-A referee reading plain PASS would infer Derived matched Aq/K_Q and a
-physical cutoff. Those remain Conditional. The bounded tag is intentional.
+Evidence required before a later independent closure review:
+  * matched Aq/K_Q (or an equivalent field-redefinition invariant)
+  * causality over the physical domain used by downstream claims
+  * a gauge-invariant, canonically normalized physical cutoff/unitarity result
+  * control of the relevant infrared complex-quartet response
 
 Does NOT:
   - derive K_Q or V
   - issue MAT-001 PASS
   - authorize downstream Derived SCR/LEN/DISK/P3/P4 packaging
   - promote R1 naive (P,C_IR)=(1,2/3)
-  - claim optical theorem
+  - convert an exclusion or policy declaration into a physics pass
 
 Exit:
-  PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL
-  full_gate_status: PASS_BOUNDED_CONDITIONAL
-  mat001_status: BLOCKED_PASS_TAG_FORBIDDEN (calculation handoff already authorized)
-  physics_pass_under_declared_conditional_policy: true
+  PASS_STAGE5_DECISION_HOLD_TIER1
+  full_gate_status: IN_PROGRESS
+  mat001_status: BLOCKED_PASS_TAG_FORBIDDEN
+  physics_pass_under_declared_conditional_policy: false
   physics_pass_derived_theory_closed: false
 """
 
@@ -98,8 +91,8 @@ def check_true(name: str, ok: bool, checks: list[dict[str, Any]], **extra: Any) 
     return ok
 
 
-def permanent_scope_exclusions() -> dict[str, Any]:
-    """P1 items permanently out of UVIR-003 PASS claims (referee scope)."""
+def scoped_or_deferred_items() -> dict[str, Any]:
+    """Scoped or deferred items; these never count as positive closure evidence."""
     return {
         "optical_theorem_multi_channel_unitarity": {
             "status": "PERMANENTLY_EXCLUDED_FROM_UVIR003_GATE",
@@ -119,8 +112,8 @@ def permanent_scope_exclusions() -> dict[str, Any]:
             "evidence": "PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED; multi-slice Green is high-q proxy only",
         },
         "IR_HOLD_complex_quartet_modes": {
-            "status": "PERMANENTLY_EXCLUDED_FROM_WEAKLY_COUPLED_DOMAIN",
-            "rationale": "Stage 1 domain freeze: not in weakly-coupled claim domain.",
+            "status": "UNRESOLVED_RELEVANT_IR_HOLD",
+            "rationale": "High-q evidence does not control the relevant IR complex-quartet response.",
             "evidence": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
         },
         "homogeneous_zero_gradient_Y32_S_matrix": {
@@ -266,7 +259,7 @@ def main() -> None:
         checks,
     )
     check_eq(
-        "stage4_permanent_conditional",
+        "stage4_conditional_record",
         subgate(art["stage4"]),
         "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
         checks,
@@ -311,8 +304,8 @@ def main() -> None:
     # Stage 4 exit integrity
     s4_exit = (art["stage4"] or {}).get("stage_4_exit", {})
     check_true(
-        "stage4_exit_permanent_conditional_m3_m6",
-        s4_exit.get("status") == "PERMANENT_CONDITIONAL_M3_M6",
+        "stage4_exit_holds_matched_reopen",
+        s4_exit.get("status") == "HOLD_MATCHED_STAGE4A_REQUIRED",
         checks,
         exit=s4_exit.get("status"),
     )
@@ -320,78 +313,84 @@ def main() -> None:
     check_eq(
         "stage4_M3_status",
         s4_criteria.get("M3"),
-        "PERMANENT_CONDITIONAL_WITH_SCOPE",
+        "HOLD_MATCHED_INVARIANT_REQUIRED",
         checks,
     )
     check_eq(
         "stage4_M6_status",
         s4_criteria.get("M6"),
-        "PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC",
+        "HOLD_PHYSICAL_CUTOFF_REQUIRED",
         checks,
     )
 
-    # Criteria under declared Conditional policy (tier-1)
+    # Criteria assessed against a tier-1 closure standard.
     criteria: dict[str, Any] = {
         "M1": {
             "status": "PASS_BOUNDED",
-            "note": "Stage A + Track-A force architecture; four-leg kernel α.9",
+            "tier1_met": True,
+            "note": "Selected action and bounded Track-A architecture are declared",
         },
         "M2": {
-            "status": "PASS_BOUNDED",
-            "note": "Declared weakly-coupled domain; IR HOLD excluded",
+            "status": "PARTIAL_BOUNDED_HIGH_Q_ONLY",
+            "tier1_met": False,
+            "note": "High-q slice is bounded; relevant IR complex-quartet control remains held",
             "evidence": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
         },
         "M3": {
-            "status": "PERMANENT_CONDITIONAL_WITH_SCOPE",
-            "note": "Stage 4 branch B programme limit; Conditional domain tables",
-            "evidence": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+            "status": "HOLD_MATCHED_INVARIANT_REQUIRED",
+            "tier1_met": False,
+            "note": "Conditional domain tables do not replace matched Aq/K_Q",
+            "evidence": "Stage 4 Conditional programme-limit record",
         },
         "M4": {
             "status": "PASS_SCOPED",
-            "note": "Tree/NDA unitarity path; optical theorem permanently out of gate",
+            "tier1_met": True,
+            "note": "A scoped tree/NDA unitarity path is declared; no optical-theorem claim",
             "evidence": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
         },
         "M5": {
             "status": "PASS_INVENTORY_K_Q_NOT_DERIVED",
-            "note": "Invariants inventoried; numeric K_Q NOT_DERIVED (stated)",
+            "tier1_met": True,
+            "note": "Field-redefinition invariants are identified; matching remains M3/M6 work",
             "evidence": "PASS_KQ_MATCHING_INVENTORY_OPEN",
         },
         "M6": {
-            "status": "PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC",
-            "note": "Stage 4 branch B; Lambda_|| diagnostic under floor P",
-            "evidence": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+            "status": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
+            "tier1_met": False,
+            "note": "Conditional NDA diagnostic is not a matched physical cutoff",
+            "evidence": "Stage 4 Conditional programme-limit record",
         },
         "M7": {
-            "status": "PASS_SCOPED_FORCE_HANDOFF",
-            "note": (
-                "Force sector + Conditional domain authorize MAT *calculation* "
-                "handoff only; MAT-001 PASS tag remains forbidden until MAT checklist"
-            ),
-            "evidence": "Stage 2b handoff + Stage 3 scoped calc; mat001_pass=false",
+            "status": "PARTIAL_SCOPED_HANDOFF_ONLY",
+            "tier1_met": False,
+            "note": "MAT engineering may continue, but MAT PASS and Derived use remain blocked",
+            "evidence": "Stage 2b handoff + Stage 3 provisional calculation",
         },
     }
 
     wording = master_plan_wording_map(criteria)
     wording_ok = all(v.get("met_under_policy") for v in wording.values())
-    check_true("master_plan_wording_met_under_conditional_policy", wording_ok, checks)
-
-    exclusions = permanent_scope_exclusions()
     check_true(
-        "optical_theorem_permanently_excluded",
-        exclusions["optical_theorem_multi_channel_unitarity"]["status"].startswith(
-            "PERMANENTLY"
-        ),
+        "master_plan_wording_not_fully_met_for_tier1",
+        wording_ok is False,
         checks,
-    )
-    check_true(
-        "full_in_in_permanently_deferred",
-        exclusions["full_in_in_nested_integrals"]["status"].startswith("PERMANENTLY"),
-        checks,
+        all_clauses_met=wording_ok,
     )
 
-    # Tier-1 firewall: must not claim Derived close or MAT PASS
+    exclusions = scoped_or_deferred_items()
+    exclusion_statuses = {k: v["status"] for k, v in exclusions.items()}
+    check_true(
+        "scope_items_include_unresolved_ir_and_do_not_close_gate",
+        exclusion_statuses.get("IR_HOLD_complex_quartet_modes")
+        == "UNRESOLVED_RELEVANT_IR_HOLD",
+        checks,
+        statuses=exclusion_statuses,
+    )
+
+    # Tier-1 firewall: the decision package must record a hold, not a physics pass.
     firewall = {
         "unqualified_full_gate_PASS": False,
+        "bounded_conditional_full_gate_PASS": False,
         "Derived_theory_closed": False,
         "Derived_K_Q": False,
         "Derived_V": False,
@@ -404,56 +403,42 @@ def main() -> None:
         "dual_RAR_a0_cH0_C_2_3": False,
         "optical_theorem_claimed": False,
         "full_in_in_claimed_computed": False,
-        "PASS_BOUNDED_CONDITIONAL_recorded": True,
     }
     check_true(
         "claim_firewall",
-        all(
-            (v is True)
-            if k == "PASS_BOUNDED_CONDITIONAL_recorded"
-            else (v is False)
-            for k, v in firewall.items()
-        ),
+        all(v is False for v in firewall.values()),
         checks,
         flags=firewall,
     )
 
-    # Blocking set under Conditional policy: none of M1–M7 may be OPEN/PARTIAL/FAIL
-    blocking_statuses = ("OPEN", "FAIL_MISSING", "PARTIAL", "FAIL")
-    blocking = [
-        mid
-        for mid, c in criteria.items()
-        if c["status"] in blocking_statuses
-        or str(c["status"]).startswith("PARTIAL")
-    ]
+    blocking = [mid for mid, criterion in criteria.items() if not criterion["tier1_met"]]
     check_true(
-        "no_open_partial_must_criteria_under_policy",
-        len(blocking) == 0,
+        "tier1_blockers_recorded",
+        blocking == ["M2", "M3", "M6", "M7"],
         checks,
         blocking=blocking,
     )
 
-    # Naive not promoted (from floor if present)
+    # Naive point remains comparison-only.
     floor = art["stage2b_floor"] or {}
     naive_ok = floor.get("claim_firewall", {}).get(
         "R1_naive_promoted_to_Derived", False
     ) is False
     check_true("naive_R1_not_promoted", naive_ok, checks)
 
-    prerequisites_ok = all(c["ok"] for c in checks)
-    # Decision
-    if prerequisites_ok and wording_ok and len(blocking) == 0:
-        full_gate = "PASS_BOUNDED_CONDITIONAL"
-        subgate_status = "PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL"
+    evidence_integrity_ok = all(c["ok"] for c in checks)
+    if evidence_integrity_ok:
+        full_gate = "IN_PROGRESS"
+        subgate_status = "PASS_STAGE5_DECISION_HOLD_TIER1"
         calc = "PASS"
-        decision = "ACCEPT_FULL_GATE_UNDER_DECLARED_CONDITIONAL_POLICY"
+        decision = "HOLD_TIER1_CLOSURE"
     else:
         full_gate = "IN_PROGRESS"
-        subgate_status = "FAIL_STAGE5_FULL_GATE_DECISION"
+        subgate_status = "FAIL_STAGE5_DECISION_AUDIT"
         calc = "FAIL"
-        decision = "HOLD_FULL_GATE"
+        decision = "HOLD_EVIDENCE_INTEGRITY_FAILURE"
 
-    # MAT: PASS tag still forbidden; handoff for further MAT work is open under Conditional UVIR
+    # MAT: PASS tag still forbidden; handoff for further MAT work is open under Conditional UVIR.
     mat001_status = "BLOCKED_PASS_TAG_FORBIDDEN"
     mat_handoff = {
         "allows_MAT_calculation_work": True,
@@ -465,8 +450,8 @@ def main() -> None:
             "MAT-001 checklist complete with claim ledger",
         ],
         "note": (
-            "UVIR PASS_BOUNDED_CONDITIONAL unblocks *programme permission* for "
-            "MAT gate engineering, not a MAT PASS and not Derived observational packaging."
+            "The scoped Stage-2/3 handoff permits provisional MAT engineering only; "
+            "UVIR remains IN_PROGRESS and no MAT PASS or Derived packaging is authorized."
         ),
     }
 
@@ -485,7 +470,7 @@ def main() -> None:
         },
         {
             "risk": "Optical theorem absent",
-            "mitigation": "Permanent exclusion from UVIR-003 gate; M4 path-with-scope only",
+            "mitigation": "Deferred from the present scoped path; M4 records only a path-with-scope",
         },
     ]
 
@@ -497,9 +482,8 @@ def main() -> None:
         "subgate_status": subgate_status,
         "decision": decision,
         "full_gate_status": full_gate,
-        "claim_status": "Conditional_bounded_programme_pass",
-        "physics_pass_under_declared_conditional_policy": full_gate
-        == "PASS_BOUNDED_CONDITIONAL",
+        "claim_status": "Open_tier1_closure_hold",
+        "physics_pass_under_declared_conditional_policy": False,
         "physics_pass_derived_theory_closed": False,
         "mat001_status": mat001_status,
         "mat_handoff": mat_handoff,
@@ -507,30 +491,27 @@ def main() -> None:
         "V_status": "NOT_COMPUTED",
         "master_plan_criteria": criteria,
         "master_plan_wording_map": wording,
-        "permanent_scope_exclusions": exclusions,
-        "blocking_for_full_pass": blocking,
+        "unresolved_scope_items": exclusions,
+        "blocking_for_tier1_closure": blocking,
         "residual_peer_review_risks": residual_peer_review_risks,
         "prior_artifacts": {k: subgate(v) for k, v in art.items()},
         "checks": checks,
         "n_checks": len(checks),
         "claim_firewall": firewall,
         "scientific_boundary": (
-            "Stage 5 tier-1 decision: UVIR-003 full gate is "
-            "PASS_BOUNDED_CONDITIONAL under declared Conditional M3/M6 policy, "
-            "declared weak-coupling domain, scoped unitarity path, and permanent "
-            "exclusions (optical theorem, full in-in claims, IR HOLD, zero-gradient "
-            "S-matrix). This is not Derived theory closure, not MAT PASS, and not "
-            "authorization for downstream Derived observational packaging. Numeric "
-            "K_Q remains NOT_DERIVED; V remains NOT_COMPUTED."
+            "Stage 5 decision audit executed successfully but holds UVIR-003 at "
+            "IN_PROGRESS for tier-1 closure. The bounded high-q and Track-A evidence "
+            "is retained, while matched causality, a physical cutoff, and relevant "
+            "infrared control remain mandatory blockers. This is not MAT PASS and "
+            "does not authorize downstream Derived observational packaging."
         ),
         "next_required": [
-            "Stage 6: DISK-001 full + STAT-001 as needed for observational claims",
-            "Optional: compute V and reopen Stage 4 branch A for Derived upgrade path",
-            "MAT-001 PASS only after MAT checklist (V, claim ledger) — still blocked",
-            "P3/P4 full drafts only with Conditional claim language or after further Derived work",
-            "Optional α.11 freeze recording PASS_BOUNDED_CONDITIONAL path package",
-        ],
-    }
+            "Compute V=C_m/sqrt(K_Q), or an equivalent matched invariant, from one declared action/field chart",
+            "Reopen Stage 4A and re-evaluate causality with the matched invariant",
+            "Establish a gauge-invariant physical cutoff/unitarity result in the declared claim domain",
+            "Resolve or control the relevant infrared complex-quartet response",
+            "Run a later independent Stage 5 closure review; MAT PASS remains blocked",
+        ],    }
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     out = args.output_dir / "uvir003_stage5_full_gate_decision_summary.json"
@@ -541,10 +522,10 @@ def main() -> None:
         f"{h}  {out.name}\n".encode("utf-8")
     )
 
-    print("UVIR-003 Stage 5 full-gate decision (tier-1)")
+    print("UVIR-003 Stage 5 tier-1 closure decision audit")
     print(f"  decision: {decision}")
     print(f"  full_gate_status: {full_gate}")
-    print("  derived_theory_closed: False")
+    print("  physics_pass: False | derived_theory_closed: False")
     print(f"  MAT-001: {mat001_status}")
     print(f"  K_Q: NOT_DERIVED | V: NOT_COMPUTED")
     for mid, c in criteria.items():

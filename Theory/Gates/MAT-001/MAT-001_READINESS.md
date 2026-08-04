@@ -5,7 +5,7 @@
 **Date:** 2026-08-04  
 **Authority:** Master Research Plan §5; UVIR-003 force sector; Selective Publishing Plan (P3/P4 downstream)  
 **Scoped package:** `MAT-001_SCOPED_CALCULATION.md`  
-**UVIR Stage 5:** `PASS_BOUNDED_CONDITIONAL` — authorizes continued MAT *engineering* under Conditional policy; **still not MAT PASS**
+**UVIR Stage 5:** `PASS_STAGE5_DECISION_HOLD_TIER1` — decision audit passed fail-closed; UVIR physics remains **IN_PROGRESS**
 
 ## What MAT-001 is
 
@@ -27,11 +27,11 @@ invariants (`UVIR-003_STAGE_B_KQ_MATCHING_INVENTORY`).
 | Stable/causal domain | Partial (Stage A + many Stage B subgates) | Matching without a declared domain is packaging |
 | \(K_Q\) absolute value | **NOT_DERIVED** (inventory Open) | Absolute norm entangled with \(C_m\), \(A\); invariants ready |
 | Declared unitarity/EFT criterion | PASS (scoped, not theory closed) | Bounds the domain where a vertex is meaningful |
-| Full UVIR-003 gate close | **`PASS_BOUNDED_CONDITIONAL`** (not Derived closed) | Unblocks programme permission for MAT engineering; still blocks MAT PASS until MAT checklist; \(V\) still NOT_COMPUTED |
+| Full UVIR-003 gate close | **IN_PROGRESS / HOLD_TIER1_CLOSURE** | M2/M3/M6/M7 remain incomplete; \(V\) NOT_COMPUTED; MAT PASS blocked |
 
 **Do not** open MAT-001 Derived claims or a MAT “pass report” while the table above remains red on UVIR-003 full gate + matching domain.
 
-A Stage-2 handoff may authorize calculation of provisional matched quantities under named Conditional premises. It does **not** authorize a MAT PASS tag or downstream Derived claims before UVIR Stage 5.
+A Stage-2 handoff authorizes only provisional engineering under named Conditional premises. It does **not** authorize a MAT PASS tag or downstream Derived claims before genuine UVIR closure plus the MAT checklist.
 
 ## Handoff interface (what UVIR must deliver to MAT)
 
@@ -78,7 +78,7 @@ This does **not** unblock MAT; it makes the MAT target quantity explicit.
 ## MAT-001 open checklist (when unblocked)
 
 - [x] For calculation start: Stage-2 exit plus explicit Conditional MAT-only handoff  
-- [ ] For MAT gate PASS/downstream Derived use: UVIR-003 full-gate status upgraded from IN_PROGRESS  
+- [ ] For MAT gate PASS/downstream Derived use: UVIR-003 tier-1 gate genuinely closed after matched Stage 4A + independent Stage 5 review  
 - [x] Declare interaction \(S_{\mathrm{int}}\) **form** (\(-\,C_m\rho_b\psi\); architecture)  
 - [x] Static weak-field reduction **form** → \(\Cobs=C_m^{3/2}/\sqrt{C_{\mathrm{IR}}}\)  
 - [ ] Report \(\Cobs\) as **Derived from micro \(S_{\mathrm{int}}\)** (still Conditional baseline only)  

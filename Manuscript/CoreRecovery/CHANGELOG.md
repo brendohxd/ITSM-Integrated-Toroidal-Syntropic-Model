@@ -5,6 +5,23 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+### UVIR-003 tier-1 hold correction
+
+- Superseded the post-alpha.10 `PASS_BOUNDED_CONDITIONAL` programme
+  interpretation. Stage 5 now records `PASS_STAGE5_DECISION_HOLD_TIER1` while
+  the UVIR-003 physics gate remains `IN_PROGRESS`.
+- Reclassified Stage 1/M2 as bounded high-q evidence with the relevant IR
+  response still open, Stage 3 as partial provisional forms, and Stage 4 as a
+  Conditional record that must reopen as matched Stage 4A.
+- Made the closure audit fail closed unless the Stage 5 hold record is present
+  and internally consistent. MAT PASS and downstream Derived packaging remain
+  forbidden.
+- Set the serial next calculation to a matched \(V\), or equivalent invariant,
+  followed by causality, relevant IR, and physical-cutoff analysis before a
+  later independent Stage 5 review.
+- No working manuscript equation or frozen release was changed. Alpha.11 may
+  record this checkpoint only after manuscript integration and author review.
+
 ### Parallel identity-gate checkpoint
 
 - Added bounded post-alpha.10 gate records for TOP-001 full-triaxial

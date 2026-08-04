@@ -270,22 +270,23 @@ freeze):**
 
 | Stage | Subgate / exit | Boundary |
 |-------|----------------|----------|
-| 1 | `PASS_DECLARED_WEAK_COUPLING_DOMAIN` | M2 PASS_BOUNDED; IR HOLD out of weakly-coupled domain |
+| 1 | `PASS_DECLARED_WEAK_COUPLING_DOMAIN` | Evidence-package pass only; M2 remains partial because the relevant IR response is uncontrolled |
 | 2a | `INCOMPLETE_R3_UV_RESIDUE` | No action-level \(Z_\psi r_\rho\) |
 | 2b | `PASS_CONDITIONAL_MATCHING_FLOOR` | Conditional-with-scope floor; scoped MAT handoff text only |
 | 2c | `PASS_STAGE2C_FLOOR_DIAGNOSTICS` | Causality/NDA under floor; Conditional only |
-| 3 | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` | Forms frozen; \(V\) NOT_COMPUTED; no MAT PASS |
-| 4 | `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` | Programme Conditional M3/M6 limit (reopenable if \(V\) computed) |
-| 5 | `PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL` | Ledger `PASS_BOUNDED_CONDITIONAL`; **not** Derived closed |
+| 3 | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` | **PARTIAL** provisional forms; \(V\) NOT_COMPUTED; no MAT PASS |
+| 4 | `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` | Conditional record preserved; insufficient for tier-1 closure; reopen Stage 4A after matching |
+| 5 | `PASS_STAGE5_DECISION_HOLD_TIER1` | Decision audit complete; physics gate **`IN_PROGRESS`**; M2/M3/M6/M7 block closure |
 
 Still **not** claimed: Derived numeric \(K_Q\), computed \(V\), optical theorem,
 matched physical cutoff, MAT PASS, or downstream Derived packaging.
 
-**Next scientific actions (ordered):** (1) optional compute \(V\) and reopen
-Stage 4 branch A for Derived upgrade; (2) Stage 6 DISK-001 full + STAT-001
-methods under Conditional labels; (3) MAT PASS only after MAT checklist;
-(4) α.11 freeze only after deliberate working-manuscript integration and
-author review — freezes record path, not automatic claim upgrades.
+**Next scientific actions (ordered):** (1) compute \(V\), or an equivalent
+matched invariant, from one declared action/field chart; (2) reopen Stage 4A
+for matched causality, relevant IR control, and a physical cutoff/unitarity
+result; (3) run a later independent Stage 5 closure review; (4) complete MAT,
+then DISK/STAT, before full P3/P4 claim packaging. Alpha.11 may be compiled as
+an honest checkpoint after reviewed integration, but cannot upgrade these claims.
 
 Authoritative process detail:
 `Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md` and

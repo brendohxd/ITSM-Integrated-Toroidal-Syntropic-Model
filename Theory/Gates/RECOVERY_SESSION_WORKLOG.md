@@ -1076,3 +1076,33 @@ field-chart diagnostic.
 `NOT_DERIVED`, UVIR-003 `IN_PROGRESS`, and MAT-001 `BLOCKED`. Stage 2a is
 complete; Stage 2b Conditional matching-floor and scoped-handoff drafting is
 the next serial action.
+
+## 2026-08-04 - UVIR-003 Stage 5 fail-closed correction
+
+Gate: UVIR-003 (serial Stages 3–5 and closure audit)
+
+**Independent consistency review:** the prior Stage 5 programme policy treated
+Conditional M3/M6 diagnostics and scope exclusions as sufficient for
+`PASS_BOUNDED_CONDITIONAL`. That status exceeded the evidence: the relevant IR
+complex-quartet response was not controlled, \(V\) and numeric \(K_Q\) were not
+computed, causality was not re-evaluated with a matched invariant, and the NDA
+diagnostic was not a matched physical cutoff.
+
+**Correction:** Stage 3 is partial provisional structure; Stage 4 preserves a
+Conditional record but exits `HOLD_MATCHED_STAGE4A_REQUIRED`; Stage 5 records
+`PASS_STAGE5_DECISION_HOLD_TIER1` with `full_gate_status: IN_PROGRESS` and
+blockers M2/M3/M6/M7. The closure audit now accepts only an internally
+consistent fail-closed Stage 5 record and never copies a physics-pass status.
+
+**Verification:** the MAT → Stage 4 → Stage 5 → closure chain ran successfully.
+Seven tracked JSON/hash artefacts were byte-identical across a second run. A
+corrupted Stage 4 exit caused Stage 5 to exit nonzero with
+`FAIL_STAGE5_DECISION_AUDIT`; an old policy-pass-shaped Stage 5 summary caused
+the closure audit to exit nonzero with
+`FAIL_UVIR003_CLOSURE_CHECKLIST_AUDIT`.
+
+**Decision:** UVIR-003 remains `IN_PROGRESS`; MAT-001 remains blocked for PASS.
+The serial next move is to compute \(V\), or an equivalent matched invariant,
+then reopen Stage 4A for causality, relevant IR control, and the physical
+cutoff before a later independent Stage 5 review. No alpha.11 freeze or P3
+claim upgrade is created by this correction.

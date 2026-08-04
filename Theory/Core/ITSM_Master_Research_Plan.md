@@ -2,7 +2,7 @@
 
 **Status:** Canonical workflow document for the recovery era  
 **Branch:** `recovery/v12-core-architecture`  
-**Last updated:** 2026-08-03  
+**Last updated:** 2026-08-04  
 **Authority order (highest first):**
 
 1. This plan + `ITSM_Core_Architecture.md` + `ITSM_Core_Recovery_Plan.md`  
@@ -269,9 +269,9 @@ action drafts on identity pillars — only premature Derived packaging.
 - **As of 2026-08-03:** `12.0-alpha.10` — post–alpha.9 UVIR-003 path package (Green, Track-A \(|\nabla\pi|^3\), declared unitarity criterion, \(K_Q\) inventory); full UVIR-003 still IN PROGRESS  
 - **Prior freeze:** `12.0-alpha.9` — local tetrahedral four-leg kernel only  
 
-- **Dual status (do not collapse):**
-  - **Frozen manuscript (α.10):** UVIR-003 still **in progress**; MAT-001 **not unlocked** (public/citation voice until α.11+ freeze reviews otherwise).  
-  - **Programme / gate ledger (post–α.10 Stages 1–5):** UVIR-003 recorded as `PASS_BOUNDED_CONDITIONAL` under declared Conditional policy — **not** Derived theory closed; \(K_Q\) NOT_DERIVED; \(V\) NOT_COMPUTED; MAT PASS tag still **forbidden**.  
+- **Authoritative status:**
+  - **Frozen manuscript (α.10):** UVIR-003 is **in progress**; MAT-001 is **not unlocked**.  
+  - **Programme / gate ledger (post–α.10 Stages 1–5):** the earlier `PASS_BOUNDED_CONDITIONAL` interpretation is superseded. Stage 5 now records `PASS_STAGE5_DECISION_HOLD_TIER1`, while the physics gate remains **`IN_PROGRESS`** with M2, M3, M6 and M7 incomplete at tier 1; \(K_Q\) is NOT_DERIVED, \(V\) is NOT_COMPUTED, and a MAT PASS tag is forbidden.  
 - **MAT-001:** still **blocked** for PASS tag (scoped calculation package exists under Conditional handoff only)  
 - **Post–alpha.9 working substeps (not a manuscript freeze):**  
   - `PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT` — off-tetra disphenoid kernel  
@@ -286,21 +286,22 @@ action drafts on identity pillars — only premature Derived packaging.
   - PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT — machine ledger infrastructure; scores M1–M7 from Stage 4/5 artefacts when present  
   - PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING — M3 documented Conditional R1; **not** Derived  
   - PASS_MATCHING_ROUTE_PROGRAM_OPEN — R2: static \(\Cobs\) alone cannot fix \(Aq/K_Q\); target \(V=C_m/\sqrt{K_Q}\)  
-  - PASS_DECLARED_WEAK_COUPLING_DOMAIN — **Stage 1 / M2 PASS_BOUNDED**: high-\(q\)+Track-A in; IR HOLD **out** of weakly-coupled domain  
+  - PASS_DECLARED_WEAK_COUPLING_DOMAIN — **Stage 1 evidence package**: high-\(q\)+Track-A bounded; relevant IR complex-quartet response still uncontrolled, so M2 is `PARTIAL_BOUNDED_HIGH_Q_ONLY`  
   - PASS_R3_UV_RESIDUE_AUDIT_INCOMPLETE — **Stage 2a Classification C**: no action-level \(Z_\psi r_\rho\) value or rigorous bound in the audited declared sources; \(I_{a_0}\) is chart-fixed, while \(Aq/K_Q\) is invariant
   - PASS_CONDITIONAL_MATCHING_FLOOR — **Stage 2b**: Conditional-with-scope floor; Stage 2 exit `CONDITIONAL_WITH_SCOPE`
   - PASS_STAGE2C_FLOOR_DIAGNOSTICS — **Stage 2c**: causality + NDA under floor
   - PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL — **Stage 3**: forms frozen; \(V\) NOT_COMPUTED; **no MAT PASS**
-  - PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT — **Stage 4 branch B**: M3 permanent Conditional-with-scope; M6 permanent Conditional NDA diagnostic
-  - PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL — **Stage 5 tier-1**: `full_gate_status=PASS_BOUNDED_CONDITIONAL` (not Derived closed; no MAT PASS)
+  - PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT — **Stage 4 record**: useful Conditional M3/M6 diagnostics, but insufficient for tier-1 closure; Stage 4A must reopen after matching
+  - PASS_STAGE5_DECISION_HOLD_TIER1 — **Stage 5 decision audit**: `full_gate_status=IN_PROGRESS`; M2/M3/M6/M7 block tier-1 closure; no MAT PASS
   - Serial order: Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md  
-- **Next working priorities (serial — complete each before next):**  
-  1. **Stage 6** — DISK-001 full + STAT-001 for observational claim-grade path (Conditional \(\Cobs\sim 1\) only with labels)
-  2. **Optional high-value Derived reopen** — compute \(V\) from force kinetic / \(K_Q\) chart → Stage 4 branch A → upgrade M3/M6 toward Derived
-  3. **MAT-001 PASS** only after MAT checklist (\(V\), claim ledger) — still blocked
-  4. **Stage 7** P3/P4 — Conditional claim language only until further Derived work
-  5. Parallel methods only: identity TOP/VOR/WAK sketches
-  6. **α.11 freeze** — only after deliberate working-manuscript integration + author review; freezes record path, not Derived claim upgrades
+- **Next working priorities (serial critical path):**  
+  1. Compute \(V=C_m/\sqrt{K_Q}\), or an equivalent matched invariant, from one declared action and field chart.
+  2. Reopen **Stage 4A**: re-evaluate causality, the relevant IR complex-quartet response, and the physical cutoff/unitarity result in the intended claim domain.
+  3. Run a later independent **Stage 5** closure review; until then UVIR-003 remains `IN_PROGRESS`.
+  4. Complete the MAT-001 checklist before any MAT PASS or downstream Derived use.
+  5. Then complete DISK-001 + STAT-001 before full P3/P4 claim packaging.
+  6. Continue TOP/VOR/WAK/reservoir identity work in parallel without presenting it as UVIR closure.
+  7. Freeze **α.11** only after a substantive reviewed manuscript integration; a checkpoint build may record the open gate but cannot upgrade its claims.
 
 
 Reproduce alpha.9 baseline:
@@ -433,3 +434,4 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 | 1.1 | 2026-08-01 | (superseded) AQUAL “not banned” table only |
 | 1.2 | 2026-08-01 | **§4 rewritten as three buckets:** hard ban vs packaging-rejected/topic-open vs reassess under new outlook; AQUAL as past divergence, not ban-list item |
 | 1.3 | 2026-08-01 | **Open-options rule:** untested ≠ banned; identity tracks parallel to UVIR critical path; SWNT *principle* as Open founding intuition (not forced); dig harder at walls; Track B not hard-banned |
+| 1.4 | 2026-08-04 | Corrected Stage 5 from policy-defined bounded pass to fail-closed tier-1 hold; restored UVIR-003 IN_PROGRESS and made matched invariant, IR control, causality and physical cutoff the serial critical path |

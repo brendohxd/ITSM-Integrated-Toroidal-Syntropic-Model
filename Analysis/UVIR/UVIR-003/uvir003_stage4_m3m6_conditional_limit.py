@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
-"""UVIR-003 Stage 4: M3/M6 upgrade OR permanent Conditional programme limit.
+"""UVIR-003 Stage 4: matched M3/M6 upgrade or Conditional hold record.
 
 Serial Stage 4 (UVIR-003_SERIAL_STAGE_ORDER / Master Plan critical path):
-  Goal: substitute matched V (and C_obs) into route maps → re-evaluate
-  q_x, Lambda_||  — *or* accept permanent Conditional M3/M6 scope.
+  Goal: substitute matched V (or an equivalent invariant) into route maps,
+  then re-evaluate causality, the relevant IR response, and the physical cutoff.
 
-Exit criterion (either branch):
-  A. Derived path: M3 not OPEN/PARTIAL once matched V + invariants applied
-  B. Programme path: explicit permanent Conditional limit for M3/M6
-
-This package executes branch B when Stage 3 leaves V NOT_COMPUTED
-(K_Q NOT_DERIVED). It does NOT invent a numeric V, promote R1 naive, or
-claim physical cutoff as Derived.
+Tier-1 exit requires the matched branch-A calculation. When Stage 3 leaves V
+NOT_COMPUTED, this package preserves a useful Conditional record but explicitly
+holds Stage 4A open. It does NOT invent V, promote R1 naive, or convert a
+programme scope choice into physics closure.
 
 Does NOT:
   - compute V or K_Q
@@ -22,7 +19,7 @@ Does NOT:
 
 Exit:
   PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT
-  stage_4_exit_status: PERMANENT_CONDITIONAL_M3_M6
+  stage_4_exit_status: HOLD_MATCHED_STAGE4A_REQUIRED
   physics_pass: false
   full_gate_status: IN_PROGRESS
 """
@@ -117,13 +114,13 @@ def upgrade_identities_if_v_known() -> dict[str, Any]:
     }
 
 
-def permanent_conditional_policy() -> dict[str, Any]:
-    """Programme decision text for Stage 4 exit branch B."""
+def conditional_hold_record() -> dict[str, Any]:
+    """Conditional diagnostics retained while matched Stage 4A remains open."""
     return {
-        "decision": "PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+        "decision": "CONDITIONAL_M3_M6_LIMIT_REOPEN_REQUIRED",
         "authority": (
             "UVIR-003_SERIAL_STAGE_ORDER Stage 4 exit B; "
-            "UVIR-003_FULL_GATE_CLOSURE_CHECKLIST programme decision; "
+            "UVIR-003_FULL_GATE_CLOSURE_CHECKLIST fail-closed correction; "
             "Master Plan §5 serial critical path"
         ),
         "rationale": [
@@ -134,7 +131,7 @@ def permanent_conditional_policy() -> dict[str, Any]:
             "R1 naive (P,C_IR)=(1,2/3) forbidden as Derived packaging",
         ],
         "M3_policy": {
-            "status": "PERMANENT_CONDITIONAL_WITH_SCOPE",
+            "status": "HOLD_MATCHED_INVARIANT_REQUIRED",
             "meaning": (
                 "Causality domain documented under Stage 2b Conditional floor "
                 "(free P, C_IR) and Stage 2c diagnostics. Referee-grade "
@@ -151,7 +148,7 @@ def permanent_conditional_policy() -> dict[str, Any]:
             ],
         },
         "M6_policy": {
-            "status": "PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC",
+            "status": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
             "meaning": (
                 "Physical cutoff remains Conditional NDA diagnostic under "
                 "floor parameter P (Lambda_|| structure). Not a Derived "
@@ -284,15 +281,15 @@ def main() -> None:
         m6_status = "OPEN_PENDING_V_SUBSTITUTION"
         branch_ok = False  # force explicit implementation before PASS
     else:
-        branch = "B_PERMANENT_CONDITIONAL"
-        decision = permanent_conditional_policy()
+        branch = "B_CONDITIONAL_RECORD_REOPEN_REQUIRED"
+        decision = conditional_hold_record()
         stage4_exit = {
-            "status": "PERMANENT_CONDITIONAL_M3_M6",
+            "status": "HOLD_MATCHED_STAGE4A_REQUIRED",
             "branch": branch,
             "M3": decision["M3_policy"]["status"],
             "M6": decision["M6_policy"]["status"],
             "M7": "OPEN_MAT_BLOCKED_FOR_PASS",
-            "allows_stage5_programme_decision": True,
+            "allows_stage5_decision_audit": True,
             "allows_UVIR_full_PASS": False,
             "allows_MAT_PASS": False,
             "allows_downstream_Derived": False,
@@ -305,7 +302,7 @@ def main() -> None:
     checks.append(
         {
             "name": "branch_selected_honestly_from_V_status",
-            "ok": (not v_computed and branch == "B_PERMANENT_CONDITIONAL")
+            "ok": (not v_computed and branch == "B_CONDITIONAL_RECORD_REOPEN_REQUIRED")
             or (v_computed and branch == "A_DERIVED_V_UPGRADE"),
             "V_status": v_status,
             "kq_numeric_status": kq_status,
@@ -314,9 +311,9 @@ def main() -> None:
     )
     checks.append(
         {
-            "name": "stage4_exit_permanent_conditional_when_V_missing",
+            "name": "stage4_holds_for_matched_reopen_when_V_missing",
             "ok": branch_ok
-            and stage4_exit["status"] == "PERMANENT_CONDITIONAL_M3_M6"
+            and stage4_exit["status"] == "HOLD_MATCHED_STAGE4A_REQUIRED"
             and stage4_exit["allows_UVIR_full_PASS"] is False
             and stage4_exit["allows_MAT_PASS"] is False,
             "exit": stage4_exit["status"],
@@ -355,13 +352,13 @@ def main() -> None:
         "UVIR003_full_PASS": False,
         "downstream_Derived_use_authorized": False,
         "observational_claim": False,
-        "permanent_Conditional_M3_M6_recorded": True,
+        "conditional_M3_M6_recorded": True,
     }
     checks.append(
         {
             "name": "claim_firewall",
             "ok": all(
-                (v is True) if k == "permanent_Conditional_M3_M6_recorded" else (v is False)
+                (v is True) if k == "conditional_M3_M6_recorded" else (v is False)
                 for k, v in firewall.items()
             ),
             "flags": firewall,
@@ -371,9 +368,9 @@ def main() -> None:
     # Stage 5 still required for full gate
     checks.append(
         {
-            "name": "stage5_still_required_for_full_gate",
+            "name": "later_stage5_review_still_required_for_full_gate",
             "ok": stage4_exit.get("allows_UVIR_full_PASS") is False
-            and stage4_exit.get("allows_stage5_programme_decision") is True,
+            and stage4_exit.get("allows_stage5_decision_audit") is True,
         }
     )
 
@@ -386,17 +383,16 @@ def main() -> None:
 
     master_plan_criteria = {
         "M1": "PASS_BOUNDED",
-        "M2": "PASS_BOUNDED",
+        "M2": "PARTIAL_BOUNDED_HIGH_Q_ONLY",
         "M3": m3_status,
         "M4": "PASS_SCOPED",
         "M5": "PASS_INVENTORY_K_Q_NOT_DERIVED",
         "M6": m6_status,
         "M7": "OPEN_MAT_BLOCKED_FOR_PASS",
         "interpretation": (
-            "Stage 4 exit B freezes M3/M6 as permanent Conditional-with-scope "
-            "(programme limit). This is not Derived close and not full-gate PASS. "
-            "Stage 5 must decide whether Conditional M3/M6 + M1–M5 are sufficient "
-            "for full_gate_status=PASS under declared policy."
+            "Stage 4 retains Conditional M3/M6 diagnostics but fails closed. "
+            "Matched Stage 4A work is required before a later independent Stage 5 "
+            "review can consider tier-1 closure."
         ),
     }
 
@@ -406,7 +402,8 @@ def main() -> None:
         "serial_stage": 4,
         "calculation_status": "PASS" if all_ok else "FAIL",
         "subgate_status": subgate,
-        "claim_status": "Conditional_permanent_programme_limit",
+        "claim_status": "Conditional_limit_recorded_reopen_required",
+        "tier1_closure_sufficient": False,
         "physics_pass": False,
         "full_gate_status": "IN_PROGRESS",
         "mat001_status": "BLOCKED",
@@ -428,17 +425,17 @@ def main() -> None:
         "n_checks": len(checks),
         "claim_firewall": firewall,
         "scientific_boundary": (
-            "Stage 4 programme decision: permanent Conditional M3/M6 limit "
-            "because matched V is not available. Documents referee-grade "
-            "Conditional-with-scope for causality and NDA cutoff diagnostics. "
-            "Does not derive K_Q/V, does not close UVIR full gate, does not "
-            "issue MAT PASS, does not authorize downstream Derived use."
+            "Stage 4 records the present Conditional M3/M6 limit because matched "
+            "V is unavailable. It preserves useful causality and NDA diagnostics "
+            "but is insufficient for tier-1 UVIR closure. It does not derive "
+            "K_Q/V, establish a physical cutoff, issue MAT PASS, or authorize "
+            "downstream Derived use."
         ),
         "next_required": [
-            "Stage 5: UVIR-003 full-gate programme decision under declared policy "
-            "(Conditional M3/M6 accepted or not for PASS)",
-            "Optional reopen: compute V and re-run Stage 4 branch A for Derived upgrade",
-            "No MAT PASS or downstream Derived packaging before Stage 5",
+            "Compute V or an equivalent matched invariant from one declared action/field chart",
+            "Reopen Stage 4 branch A and re-evaluate causality and the physical cutoff",
+            "Control the relevant IR complex-quartet response before tier-1 closure",
+            "No MAT PASS or downstream Derived packaging before a later Stage-5 review",
         ],
     }
 
@@ -451,7 +448,7 @@ def main() -> None:
         args.output_dir / "uvir003_stage4_m3m6_conditional_limit_summary.sha256"
     ).write_bytes(f"{h}  {out.name}\n".encode("utf-8"))
 
-    print("UVIR-003 Stage 4 M3/M6 permanent Conditional limit")
+    print("UVIR-003 Stage 4 M3/M6 Conditional record; matched reopen required")
     print(f"  branch: {branch}")
     print(f"  stage_4_exit: {stage4_exit['status']}")
     print(f"  M3: {m3_status}")

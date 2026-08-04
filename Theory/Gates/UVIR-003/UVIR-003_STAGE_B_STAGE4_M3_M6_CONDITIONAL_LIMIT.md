@@ -1,14 +1,14 @@
-# UVIR-003 Stage B — Stage 4 permanent Conditional M3/M6 limit
+# UVIR-003 Stage B — Stage 4 Conditional M3/M6 record
 
 **Date:** 2026-08-04  
 **Branch:** `recovery/v12-core-architecture`  
 **Serial stage:** **4**  
 **Subgate:** `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT`  
-**Branch taken:** **B — permanent Conditional programme limit**  
-**Stage 4 exit:** `PERMANENT_CONDITIONAL_M3_M6`  
-**Claim status:** Conditional permanent programme limit  
+**Record:** **Conditional programme limit pending matched Stage 4A reopen**  
+**Stage 4 status:** `HOLD_MATCHED_STAGE4A_REQUIRED`  
+**Claim status:** Conditional diagnostic record; insufficient for tier-1 closure  
 **physics_pass:** **false**  
-**Full UVIR-003 gate:** still **IN PROGRESS** (Stage 5)  
+**Full UVIR-003 gate:** **IN PROGRESS**; Stage 5 decision is `HOLD_TIER1_CLOSURE`  
 **MAT-001:** still **BLOCKED** for PASS  
 **Numeric \(K_Q\):** **NOT_DERIVED**  
 **\(V\):** **NOT_COMPUTED**
@@ -25,21 +25,21 @@ Exit criterion (either branch):
 | Branch | Criterion |
 |--------|-----------|
 | **A** | Derived path: M3 not OPEN/PARTIAL once matched \(V\) applied |
-| **B** | Explicit **permanent Conditional** limit accepted by programme for M3/M6 |
+| **B record** | Preserve Conditional diagnostics when matching is unavailable; this does not satisfy tier-1 closure |
 
 Stage 3 left \(V=C_m/\sqrt{K_Q}\) **NOT_COMPUTED** and \(K_Q\) **NOT_DERIVED**.
-Honest path is **branch B** — not inventing \(V\), not promoting R1 naive.
+The honest record is a **Conditional branch-B diagnostic**, not an accepted physics close. Stage 4A must reopen once \(V\), or an equivalent invariant, is matched.
 
-## Programme decision (branch B)
+## Programme record (branch B)
 
-**Decision:** `PERMANENT_CONDITIONAL_M3_M6_LIMIT`  
-(“Permanent” = **programme Conditional limit until reopen**, not a ban on later Derived upgrade when \(V\) exists.)
+**Record:** `CONDITIONAL_M3_M6_LIMIT_REOPEN_REQUIRED`  
+The historical “permanent” label means only that the Conditional diagnostic remains on record until replaced; it is not a physics pass and not a ban on a later Derived upgrade.
 
 ### M3 — causality
 
 | Field | Value |
 |-------|--------|
-| Status | **`PERMANENT_CONDITIONAL_WITH_SCOPE`** |
+| Status | **`HOLD_MATCHED_INVARIANT_REQUIRED`** |
 | Meaning | Causality domain documented under Stage 2b floor (free \(P,C_{\mathrm{IR}}\)) + 2c diagnostics |
 | Evidence | Conditional causality domain; matching floor; 2c scan (320 rows) |
 | Not claimed | Derived matched \(Aq/K_Q\); naive \(q_\times/a_0=0.375\) as Derived |
@@ -48,7 +48,7 @@ Honest path is **branch B** — not inventing \(V\), not promoting R1 naive.
 
 | Field | Value |
 |-------|--------|
-| Status | **`PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC`** |
+| Status | **`HOLD_PHYSICAL_CUTOFF_REQUIRED`** |
 | Meaning | Cutoff remains Conditional NDA diagnostic under floor \(P\); tree/NDA unitarity path still scoped |
 | Evidence | Declared unitarity criterion + floor/2c \(\Lambda_\parallel\) structure |
 | Not claimed | Derived matched strong-coupling scale; optical theorem |
@@ -88,11 +88,11 @@ Machine scaffold recorded under `branch_A_scaffold_if_V_later` (status
 | ID | Status |
 |----|--------|
 | M1 | PASS_BOUNDED |
-| M2 | PASS_BOUNDED |
-| M3 | **PERMANENT_CONDITIONAL_WITH_SCOPE** |
+| M2 | PARTIAL_BOUNDED_HIGH_Q_ONLY |
+| M3 | **HOLD_MATCHED_INVARIANT_REQUIRED** |
 | M4 | PASS_SCOPED |
 | M5 | PASS_INVENTORY (\(K_Q\) NOT_DERIVED) |
-| M6 | **PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC** |
+| M6 | **HOLD_PHYSICAL_CUTOFF_REQUIRED** |
 | M7 | OPEN — MAT blocked for PASS |
 
 ## Reproduce
@@ -109,7 +109,8 @@ python Analysis\UVIR\UVIR-003\uvir003_stage4_m3m6_conditional_limit.py
 
 ## Next
 
-- **Stage 5 — DONE (tier-1):** `PASS_BOUNDED_CONDITIONAL` (not Derived closed).  
-- **Stage 6 next:** DISK/STAT claim-grade path; optional \(V\) for Stage 4A.  
-- **Optional:** α.11 freeze recording Conditional bounded close.  
+- Compute \(V\), or an equivalent matched invariant, from one declared action/field chart.  
+- Reopen **Stage 4A** for matched causality, relevant IR control, and a physical cutoff/unitarity result.  
+- Run a later independent Stage 5 closure review; current decision is `HOLD_TIER1_CLOSURE`.  
+- Alpha.11 may record this open checkpoint after review, but must not describe a bounded Conditional close.  
 - Never promote R1 naive to Derived.

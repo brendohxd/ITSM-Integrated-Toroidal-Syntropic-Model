@@ -1,6 +1,6 @@
 {
   "V_status": "NOT_COMPUTED",
-  "branch": "B_PERMANENT_CONDITIONAL",
+  "branch": "B_CONDITIONAL_RECORD_REOPEN_REQUIRED",
   "branch_A_scaffold_if_V_later": {
     "Aq_over_KQ": "C_IR**(1/3)*V**2*q/(12*pi*C_obs**(4/3)*G*a0)",
     "I_a0_from_Cobs_CIR_V": "C_IR**(1/3)*V**2/(12*pi*C_obs**(4/3)*G)",
@@ -39,14 +39,14 @@
     },
     {
       "V_status": "NOT_COMPUTED",
-      "branch": "B_PERMANENT_CONDITIONAL",
+      "branch": "B_CONDITIONAL_RECORD_REOPEN_REQUIRED",
       "kq_numeric_status": "NOT_DERIVED",
       "name": "branch_selected_honestly_from_V_status",
       "ok": true
     },
     {
-      "exit": "PERMANENT_CONDITIONAL_M3_M6",
-      "name": "stage4_exit_permanent_conditional_when_V_missing",
+      "exit": "HOLD_MATCHED_STAGE4A_REQUIRED",
+      "name": "stage4_holds_for_matched_reopen_when_V_missing",
       "ok": true
     },
     {
@@ -66,15 +66,15 @@
         "MAT001_PASS": false,
         "R1_naive_promoted_to_Derived": false,
         "UVIR003_full_PASS": false,
+        "conditional_M3_M6_recorded": true,
         "downstream_Derived_use_authorized": false,
-        "observational_claim": false,
-        "permanent_Conditional_M3_M6_recorded": true
+        "observational_claim": false
       },
       "name": "claim_firewall",
       "ok": true
     },
     {
-      "name": "stage5_still_required_for_full_gate",
+      "name": "later_stage5_review_still_required_for_full_gate",
       "ok": true
     }
   ],
@@ -86,30 +86,31 @@
     "MAT001_PASS": false,
     "R1_naive_promoted_to_Derived": false,
     "UVIR003_full_PASS": false,
+    "conditional_M3_M6_recorded": true,
     "downstream_Derived_use_authorized": false,
-    "observational_claim": false,
-    "permanent_Conditional_M3_M6_recorded": true
+    "observational_claim": false
   },
-  "claim_status": "Conditional_permanent_programme_limit",
+  "claim_status": "Conditional_limit_recorded_reopen_required",
   "full_gate_status": "IN_PROGRESS",
   "gate": "UVIR-003",
   "kq_numeric_status": "NOT_DERIVED",
   "master_plan_criteria_after_stage4": {
     "M1": "PASS_BOUNDED",
-    "M2": "PASS_BOUNDED",
-    "M3": "PERMANENT_CONDITIONAL_WITH_SCOPE",
+    "M2": "PARTIAL_BOUNDED_HIGH_Q_ONLY",
+    "M3": "HOLD_MATCHED_INVARIANT_REQUIRED",
     "M4": "PASS_SCOPED",
     "M5": "PASS_INVENTORY_K_Q_NOT_DERIVED",
-    "M6": "PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC",
+    "M6": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
     "M7": "OPEN_MAT_BLOCKED_FOR_PASS",
-    "interpretation": "Stage 4 exit B freezes M3/M6 as permanent Conditional-with-scope (programme limit). This is not Derived close and not full-gate PASS. Stage 5 must decide whether Conditional M3/M6 + M1\u2013M5 are sufficient for full_gate_status=PASS under declared policy."
+    "interpretation": "Stage 4 retains Conditional M3/M6 diagnostics but fails closed. Matched Stage 4A work is required before a later independent Stage 5 review can consider tier-1 closure."
   },
   "mat001_status": "BLOCKED",
   "n_checks": 11,
   "next_required": [
-    "Stage 5: UVIR-003 full-gate programme decision under declared policy (Conditional M3/M6 accepted or not for PASS)",
-    "Optional reopen: compute V and re-run Stage 4 branch A for Derived upgrade",
-    "No MAT PASS or downstream Derived packaging before Stage 5"
+    "Compute V or an equivalent matched invariant from one declared action/field chart",
+    "Reopen Stage 4 branch A and re-evaluate causality and the physical cutoff",
+    "Control the relevant IR complex-quartet response before tier-1 closure",
+    "No MAT PASS or downstream Derived packaging before a later Stage-5 review"
   ],
   "physics_pass": false,
   "prior_artifacts": {
@@ -131,7 +132,7 @@
         "Promote naive q_x/a0=0.375 parallel as Derived"
       ],
       "meaning": "Causality domain documented under Stage 2b Conditional floor (free P, C_IR) and Stage 2c diagnostics. Referee-grade Conditional-with-scope \u2014 not Derived matched Aq/K_Q.",
-      "status": "PERMANENT_CONDITIONAL_WITH_SCOPE"
+      "status": "HOLD_MATCHED_INVARIANT_REQUIRED"
     },
     "M6_policy": {
       "domain_basis": [
@@ -144,10 +145,10 @@
         "Optical theorem / S-matrix unitarity from this package"
       ],
       "meaning": "Physical cutoff remains Conditional NDA diagnostic under floor parameter P (Lambda_|| structure). Not a Derived matched strong-coupling scale.",
-      "status": "PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC"
+      "status": "HOLD_PHYSICAL_CUTOFF_REQUIRED"
     },
-    "authority": "UVIR-003_SERIAL_STAGE_ORDER Stage 4 exit B; UVIR-003_FULL_GATE_CLOSURE_CHECKLIST programme decision; Master Plan \u00a75 serial critical path",
-    "decision": "PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+    "authority": "UVIR-003_SERIAL_STAGE_ORDER Stage 4 exit B; UVIR-003_FULL_GATE_CLOSURE_CHECKLIST fail-closed correction; Master Plan \u00a75 serial critical path",
+    "decision": "CONDITIONAL_M3_M6_LIMIT_REOPEN_REQUIRED",
     "does_not_authorize": [
       "UVIR-003 full_gate_status = PASS (Stage 5 programme decision)",
       "MAT-001 PASS",
@@ -167,24 +168,25 @@
       "Then re-run Stage 4 branch A: substitute into I_a0, q_x, Lambda_||"
     ]
   },
-  "scientific_boundary": "Stage 4 programme decision: permanent Conditional M3/M6 limit because matched V is not available. Documents referee-grade Conditional-with-scope for causality and NDA cutoff diagnostics. Does not derive K_Q/V, does not close UVIR full gate, does not issue MAT PASS, does not authorize downstream Derived use.",
+  "scientific_boundary": "Stage 4 records the present Conditional M3/M6 limit because matched V is unavailable. It preserves useful causality and NDA diagnostics but is insufficient for tier-1 UVIR closure. It does not derive K_Q/V, establish a physical cutoff, issue MAT PASS, or authorize downstream Derived use.",
   "serial_stage": 4,
   "stage": "B_STAGE4_M3_M6_LIMIT",
   "stage_4_exit": {
-    "M3": "PERMANENT_CONDITIONAL_WITH_SCOPE",
-    "M6": "PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC",
+    "M3": "HOLD_MATCHED_INVARIANT_REQUIRED",
+    "M6": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
     "M7": "OPEN_MAT_BLOCKED_FOR_PASS",
     "allows_MAT_PASS": false,
     "allows_UVIR_full_PASS": false,
     "allows_downstream_Derived": false,
-    "allows_stage5_programme_decision": true,
-    "branch": "B_PERMANENT_CONDITIONAL",
+    "allows_stage5_decision_audit": true,
+    "branch": "B_CONDITIONAL_RECORD_REOPEN_REQUIRED",
     "reopen_to_branch_A_when": [
       "Compute V from declared S_int once force kinetic / K_Q chart available",
       "Or derive Z_psi r_rho (R3) or independent k_Q (R1) as Derived",
       "Then re-run Stage 4 branch A: substitute into I_a0, q_x, Lambda_||"
     ],
-    "status": "PERMANENT_CONDITIONAL_M3_M6"
+    "status": "HOLD_MATCHED_STAGE4A_REQUIRED"
   },
-  "subgate_status": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT"
+  "subgate_status": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+  "tier1_closure_sufficient": false
 }

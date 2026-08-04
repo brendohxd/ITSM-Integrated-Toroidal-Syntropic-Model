@@ -1,6 +1,6 @@
 # P3 / P4 readiness map
 
-**Date:** 2026-08-03  
+**Date:** 2026-08-04  
 **Branch:** `recovery/v12-core-architecture`  
 **Authority:** Master Research Plan §8–9; Selective Publishing Plan §3–4
 
@@ -12,9 +12,9 @@ This is a **navigation document**, not a paper draft and not a gate PASS.
 |------|-------|------|
 | P1 claim firewall | Green (draft) | Cite for hygiene only |
 | P2 Casimir | Green (draft) | arXiv endorsement pending |
-| UVIR-003 | Yellow | IN PROGRESS; many Stage-B subgates; full gate open |
+| UVIR-003 | Yellow | `PASS_STAGE5_DECISION_HOLD_TIER1`; physics gate IN_PROGRESS; M2/M3/M6/M7 open |
 | \(K_Q\) matching | Yellow | Inventory PASS; numeric NOT_DERIVED |
-| MAT-001 | Red | BLOCKED until UVIR-003 passes (Derived) |
+| MAT-001 | Red | BLOCKED; scoped provisional forms are not a gate pass |
 | DISK-001 | Yellow | Methods package PARTIAL PASS (Stages 0–4); full gate open |
 | STAT-001 | Red | Readiness only |
 | VOR-001 spectrum (units) | Red | Identity track; P3 alternate trigger |
@@ -58,8 +58,8 @@ UVIR-003 ──► MAT-001 ──► SCR/LEN ──► DISK-001 ──► STAT-0
 
 ## Recommended order of work (capacity-aware)
 
-1. Keep UVIR-003 critical path until MAT can open (or freeze alpha.10).  
-2. Optional parallel: VOR-001 dimensionful spectrum sketch → **P3 trigger**.  
-3. DISK-001 under Conditional IR for tooling (no Derived packaging).  
-4. STAT-001 after DISK predictions exist.  
-5. Full P3/P4 only on green triggers.  
+1. Compute the matched \(V\) (or equivalent invariant) and reopen UVIR Stage 4A.  
+2. Re-run the independent Stage 5 closure decision; keep MAT blocked until it genuinely passes.  
+3. Continue VOR/TOP/WAK identity work and DISK tooling in parallel under Open/Conditional labels.  
+4. Start STAT-001 only when DISK predictions with declared provenance exist.  
+5. Keep P3 outline-only; open full P3/P4 drafts only when their green triggers fire.  

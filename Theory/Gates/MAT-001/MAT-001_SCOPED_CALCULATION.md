@@ -48,7 +48,7 @@ python Analysis\MAT\MAT-001\mat001_scoped_calculation.py
 
 ## Next
 
-- UVIR Stage **4** — **DONE (branch B):** permanent Conditional M3/M6 limit  
-- UVIR Stage **5** — **DONE (tier-1):** `PASS_BOUNDED_CONDITIONAL`  
-- **Still required for MAT PASS:** compute \(V\); complete MAT checklist; claim ledger  
-- Optional Derived UVIR upgrade: \(V\) → Stage 4 branch A
+- Compute \(V=C_m/\sqrt{K_Q}\), or an equivalent matched invariant, from one declared action/field chart.  
+- Reopen UVIR Stage **4A** for matched causality, relevant IR control, and physical-cutoff analysis.  
+- Run a later independent Stage **5** closure review; current decision is `HOLD_TIER1_CLOSURE`.  
+- MAT PASS still requires genuine UVIR closure, the MAT checklist, and claim-ledger update.

@@ -1,6 +1,6 @@
 # UVIR-003 → MAT → papers — serial stage order
 
-**Date:** 2026-08-03  
+**Date:** 2026-08-04  
 **Branch:** `recovery/v12-core-architecture`  
 **Rule:** complete each stage before the next begins (no parallel shortcutting of blockers).  
 **Authority:** Master Research Plan §5; full-gate checklist.
@@ -39,7 +39,7 @@ matching that does not require MAT (R3 attempt + Conditional scope)**, then
 | Route maps | `PASS_MATCHING_ROUTE_PROGRAM_OPEN` |
 | α.10 path package | multi-slice Green, nonzero-grad force, … |
 
-### Stage 1 — **M2 domain freeze** ← **DONE**
+### Stage 1 — **M2 bounded-domain evidence** ← **PARTIAL (high-q only)**
 
 **Goal:** Master Plan “stable / weakly coupled **in declared domain**.”
 
@@ -52,9 +52,9 @@ matching that does not require MAT (R3 attempt + Conditional scope)**, then
    - full in-in nested integrals (Open, later gate)  
    - optical theorem (NOT_COMPUTED; out of UVIR scope or later gate)  
 3. Machine audit: `PASS_DECLARED_WEAK_COUPLING_DOMAIN`  
-4. M2 status → **PASS_BOUNDED** (not “all modes healthy”)
+4. M2 status → **PARTIAL_BOUNDED_HIGH_Q_ONLY** while the relevant IR response is held
 
-**Exit criterion:** weakly-coupled domain written + audited; no smuggling of HOLD modes as PASS.
+**Recorded result:** bounded high-\(q\)+Track-A domain is written and audited, but excluding a relevant HOLD mode is not tier-1 stability closure.
 
 ### Stage 2 — **Matching without MAT first** (R3 attempt → Conditional floor)
 
@@ -67,9 +67,9 @@ matching that does not require MAT (R3 attempt + Conditional scope)**, then
 | 2c | **DONE:** causality + NDA diagnostics under Conditional floor | `PASS_STAGE2C_FLOOR_DIAGNOSTICS`; domain tables remain Conditional documentation |
 
 **Exit criterion (Stage 2):** written matching status for M3/M6 as **Conditional-with-scope** (met by 2b).  
-**Do not** issue a MAT PASS tag or use MAT output for downstream Derived claims before UVIR Stage 5. Stage 2 authorizes only a scoped Conditional calculation handoff.
+**Do not** issue a MAT PASS tag or use MAT output for downstream Derived claims before UVIR closure and the MAT checklist. Stage 2 authorizes only a scoped Conditional calculation handoff.
 
-### Stage 3 — **MAT-001** (R2 vertex) ← **DONE (scoped calc only)**
+### Stage 3 — **MAT-001** (R2 vertex) ← **PARTIAL (scoped forms only)**
 
 **Goal:** compute \(\Cobs\) and \(V=C_m/\sqrt{K_Q}\) from one \(S_{\mathrm{int}}\).
 
@@ -78,47 +78,42 @@ Prerequisites: Stage 1 PASS_BOUNDED; Stage 2 exit plus explicit Conditional hand
 **Exit criterion (met as provisional structure):** scoped package
 `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` freezes static-reduction forms and
 Conditional \(\Cobs\sim 1\) baseline; \(V\) remains **NOT_COMPUTED** (\(K_Q\)
-NOT_DERIVED). No MAT PASS tag; no downstream Derived use until Stage 5.
+NOT_DERIVED). Stage 3 is therefore partial. No MAT PASS tag and no downstream Derived use before UVIR closure plus the MAT checklist.
 
-### Stage 4 — **UVIR M3/M6 upgrade** (post-MAT) ← **DONE (branch B)**
+### Stage 4 — **UVIR M3/M6 matched upgrade** ← **HOLD; REOPEN 4A**
 
-**Goal:** substitute matched \(V\) (and \(\Cobs\)) into route maps → re-evaluate \(q_\times\), \(\Lambda_\parallel\).
+**Goal:** substitute matched \(V\) (or an equivalent invariant) into the route
+maps, then re-evaluate causality, the relevant IR response, and the physical
+cutoff/unitarity result in the intended claim domain.
 
-**Exit criterion:** M3 not OPEN/PARTIAL on Derived path *or* explicit permanent Conditional limit accepted by programme; M6 physical cutoff stated with matched norm or permanent Conditional scope.
+**Current record:** `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` preserves
+useful Conditional diagnostics, but is **not sufficient for tier-1 closure**.
+Stage 3 left \(V\) NOT_COMPUTED, so Stage 4A must reopen after matching.
 
-**Exit met (branch B):** Stage 3 left \(V\) **NOT_COMPUTED**. Programme
-records **permanent Conditional M3/M6 limit**
-(`PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT`):
-M3 = `PERMANENT_CONDITIONAL_WITH_SCOPE`;
-M6 = `PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC`.
-Branch A scaffold (maps if \(V\) later Derived) recorded, not applied as Derived.
-Does **not** set UVIR full-gate PASS.
+### Stage 5 — **UVIR-003 full-gate decision** ← **AUDIT DONE; PHYSICS HOLD**
 
-### Stage 5 — **UVIR-003 full-gate decision** ← **DONE (tier-1 bounded)**
+**Goal:** independently decide whether every tier-1 closure requirement is
+physically satisfied, without converting scope exclusions into positive results.
 
-**Goal:** checklist M1–M6 all non-blocking under declared policy; M7 ready for MAT handoff *after* Stage 3–4 if not already sequential-complete.
-
-**Exit criterion (tier-1):** not an unqualified Derived close. Stage 5 records
+**Current decision:**
 
 ```text
-full_gate_status = PASS_BOUNDED_CONDITIONAL
+decision = HOLD_TIER1_CLOSURE
+full_gate_status = IN_PROGRESS
 ```
 
-when Master Plan wording is met **under declared Conditional policy** + permanent
-scope exclusions (optical theorem, full in-in claims, IR HOLD, zero-gradient
-S-matrix). `physics_pass_derived_theory_closed = false`. MAT PASS remains
-forbidden; downstream Derived packaging remains forbidden until MAT/DISK/STAT
-checklists and claim language allow it.
+M2, M3, M6 and M7 remain incomplete. The audit tag
+`PASS_STAGE5_DECISION_HOLD_TIER1` means the decision machinery passed and failed
+closed; it is not a physics PASS. MAT PASS and downstream Derived packaging
+remain forbidden.
 
-**Exit met:** `PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL`.
-
-### Stage 6 — **DISK-001 full + STAT-001** (observational pipeline) ← **NEXT**
+### Stage 6 — **DISK-001 full + STAT-001** (observational pipeline) ← **CONDITIONAL METHODS ONLY**
 
 Methods package already partial PASS. Full multipole/BC/STAT after force+matter story is frozen for claims that need them.
 
 ### Stage 7 — **P3 / P4 full drafts** (Selective Publishing Plan)
 
-Only after Stage 5 (and Stage 6 for P4 SPARC claims).
+Only after UVIR-003 and the relevant MAT/DISK/STAT triggers are genuinely closed.
 
 ---
 
@@ -146,10 +141,10 @@ Only after Stage 5 (and Stage 6 for P4 SPARC claims).
 | Stage | Status | Commit / note |
 |-------|--------|----------------|
 | 0 | **DONE** | α.10 + inventory + causality Conditional + matching maps |
-| 1 | **DONE** | `PASS_DECLARED_WEAK_COUPLING_DOMAIN` — M2 PASS_BOUNDED |
-| 2 | **DONE (Conditional-with-scope)** | 2a C; 2b floor; 2c `PASS_STAGE2C_FLOOR_DIAGNOSTICS` |
-| 3 | **DONE (scoped calc only)** | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` — **no MAT PASS**; \(V\) NOT_COMPUTED |
-| 4 | **DONE (branch B)** | `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` — permanent Conditional M3/M6 |
-| 5 | **DONE (tier-1 bounded, ledger only)** | `PASS_BOUNDED_CONDITIONAL` on gate ledger; frozen α.10 still says UVIR in progress; not Derived closed; no MAT PASS |
-| 6 | **NEXT** | DISK-001 full + STAT-001 for claim-grade observational path |
-| 7 | pending | P3/P4 only with Conditional language or further Derived work |
+| 1 | **PARTIAL** | bounded high-\(q\)+Track-A evidence; relevant IR response held |
+| 2 | **DONE (Conditional record)** | 2a C; 2b floor; 2c `PASS_STAGE2C_FLOOR_DIAGNOSTICS` |
+| 3 | **PARTIAL** | provisional forms only; no MAT PASS; \(V\) NOT_COMPUTED |
+| 4 | **HOLD / reopen 4A** | Conditional M3/M6 record is insufficient for tier-1 closure |
+| 5 | **HOLD** | `PASS_STAGE5_DECISION_HOLD_TIER1`; full gate `IN_PROGRESS` |
+| 6 | conditional methods only | Derived observational path waits for UVIR/MAT |
+| 7 | outline only | Full P3/P4 awaits the documented triggers |
