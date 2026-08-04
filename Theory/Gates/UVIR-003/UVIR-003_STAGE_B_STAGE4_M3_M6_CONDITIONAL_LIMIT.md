@@ -108,8 +108,7 @@ python Analysis\UVIR\UVIR-003\uvir003_stage4_m3m6_conditional_limit.py
 
 ## Next
 
-- **Stage 5:** programme decision whether Conditional M3/M6 + M1–M5 are
-  sufficient for `full_gate_status = PASS` under declared policy.  
-- **Optional reopen:** compute \(V\) → re-run Stage 4 branch A.  
-- **Not yet:** α.11 freeze (optional after Stage 5 or as path snapshot).  
+- **Stage 5 — DONE (tier-1):** `PASS_BOUNDED_CONDITIONAL` (not Derived closed).  
+- **Stage 6 next:** DISK/STAT claim-grade path; optional \(V\) for Stage 4A.  
+- **Optional:** α.11 freeze recording Conditional bounded close.  
 - Never promote R1 naive to Derived.

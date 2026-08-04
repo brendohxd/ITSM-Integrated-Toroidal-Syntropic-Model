@@ -3,8 +3,9 @@
 **Date:** 2026-08-03  
 **Branch:** `recovery/v12-core-architecture`  
 **Authority:** Master Research Plan §5.1  
-**Full gate status:** **IN_PROGRESS**  
-**MAT-001:** **BLOCKED** until this gate’s pass condition is met under declared scope  
+**Full gate status:** **`PASS_BOUNDED_CONDITIONAL`** (Stage 5; **not** Derived theory closed)  
+**MAT-001:** **BLOCKED** for PASS tag; scoped calculation handoff already authorized  
+
 
 This document is the **single map** from Master Plan wording to evidence on disk.
 It does **not** close UVIR-003 by itself. Closing requires every **must** row below
@@ -29,14 +30,14 @@ Break into **must** criteria (M1–M5) and **supporting** evidence (S*).
 | **M4** | Weak coupling / unitarity **path stated with scope** | **PASS (scoped)** | `PASS_DECLARED_UNITARITY_EFT_CRITERION` — tree/NDA + Green health; **not** optical theorem |
 | **M5** | Invariant ratios for force normalization | **PASS (inventory)** | `PASS_KQ_MATCHING_INVENTORY_OPEN` — \(Aq/K_Q\), \(A/K_Q^{3/2}\), …; **numeric \(K_Q\) NOT_DERIVED** |
 | **M6** | Physical cutoff | **PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC** | Stage 4 branch B: NDA \(\Lambda_\parallel\) diagnostic under floor \(P\); **not** Derived matched cutoff |
-| **M7** | Matter sector ready for MAT handoff | **OPEN** | Force sector methods + scoped MAT structure exist; MAT still blocked for Derived vertex / PASS |
+| **M7** | Matter sector ready for MAT handoff | **PASS_SCOPED_FORCE_HANDOFF** | Stage 5: force + Conditional domain authorize MAT *calculation* only; **MAT PASS still forbidden** |
 
 **Interpretation for MAT-001**
 
 - MAT gate PASS and downstream Derived use remain blocked until UVIR-003 **passes**.
-- Honest reading today: **M1–M2, M4–M5** support a declared domain + matching inventory; **M3/M6** are **permanent Conditional** (Stage 4 branch B), not Derived “stable+causal+cutoff closed.”  
-- Stage 4 recorded the **programme Conditional limit** for M3/M6. Stage **5** must still decide whether that is sufficient for `full_gate_status=PASS`.  
-- Do **not** open MAT Derived claims or MAT PASS until UVIR Stage 5 (or a later Derived reopen of Stage 4 branch A after \(V\) is computed).
+- Honest reading today: Stage **5** accepted full gate as **`PASS_BOUNDED_CONDITIONAL`** under declared Conditional M3/M6 policy + permanent scope exclusions.  
+- This is **not** Derived force-theory closure (\(K_Q\) NOT_DERIVED, \(V\) NOT_COMPUTED).  
+- Do **not** issue MAT PASS or downstream Derived packaging until the MAT checklist (and claim language) allow it. Optional Derived upgrade: compute \(V\) → Stage 4 branch A.  
 - Serial Stage 3 remains a **scoped Conditional calculation handoff**, not a MAT PASS.
 
 ---
@@ -61,6 +62,7 @@ Break into **must** criteria (M1–M5) and **supporting** evidence (S*).
 | Floor diagnostics | Stage 2c | `PASS_STAGE2C_FLOOR_DIAGNOSTICS` |
 | MAT scoped calc (provisional) | Stage 3 | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` (no MAT PASS) |
 | Permanent Conditional M3/M6 | Stage 4 branch B | `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` |
+| Full-gate decision (tier-1) | Stage 5 | `PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL` → `PASS_BOUNDED_CONDITIONAL` |
 | Full-gate checklist audit | Evidence ledger | `PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT` |
 | Serial stage order | Process control | `UVIR-003_SERIAL_STAGE_ORDER.md` |
 
@@ -107,8 +109,10 @@ Matching-route program:
 | Manuscript freezes recording path package (α.10) | Yes |
 | Conditional AQUAL disk methods (DISK methods package) | Yes |
 | Declaring MAT interface (readiness) without Derived vertex | Yes |
-| Claiming UVIR-003 closed / MAT open | **No** |
-| P3/P4 full drafts | **No** |
+| Claiming UVIR-003 **Derived** closed / MAT PASS | **No** |
+| Citing UVIR-003 `PASS_BOUNDED_CONDITIONAL` with Conditional language | **Yes** (Stage 5) |
+| MAT engineering under scoped handoff | **Yes** (no MAT PASS tag) |
+| P3/P4 full drafts with Derived packaging | **No** (Conditional language only until further work) |
 
 ---
 
@@ -123,12 +127,12 @@ Authoritative process doc: **`UVIR-003_SERIAL_STAGE_ORDER.md`**.
 | **2** | Matching floor without MAT (R3 → Conditional floor + 2c) | **DONE** Conditional-with-scope |
 | **3** | Scoped MAT calculation (\(V\), \(\Cobs\)) | **DONE** provisional structure — **no MAT PASS**; \(V\) still NOT_COMPUTED |
 | **4** | Upgrade M3/M6 with matched \(V\) *or* permanent Conditional | **DONE (branch B)** — `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` |
-| **5** | UVIR-003 full-gate PASS | **NEXT** — programme decision under declared policy |
-| 6 | DISK full + STAT | after Stage 5 for claim-grade obs |
-| 7 | P3/P4 full drafts | after Stage 5–6 triggers |
+| **5** | UVIR-003 full-gate decision | **DONE** — `PASS_BOUNDED_CONDITIONAL` (tier-1; not Derived closed) |
+| **6** | DISK full + STAT | **NEXT** for claim-grade obs |
+| 7 | P3/P4 full drafts | Conditional language only until further Derived work |
 
-**Next single action:** Stage **5** — decide whether permanent Conditional M3/M6 + M1–M5 are sufficient for `full_gate_status=PASS` (or keep IN_PROGRESS / reopen Stage 4 branch A if \(V\) is computed).  
-**Never** promote R1 naive to Derived. **Never** MAT PASS before UVIR Stage 5.
+**Next single action:** Stage **6** — DISK-001 full + STAT-001 for observational claim-grade path; **and/or** optional compute \(V\) for Stage 4A Derived reopen.  
+**Never** promote R1 naive to Derived. **Never** MAT PASS without MAT checklist.
 
 Parallel methods only: DISK Conditional lane; TOP/VOR/WAK sketches.
 
@@ -146,3 +150,4 @@ Parallel methods only: DISK Conditional lane; TOP/VOR/WAK sketches.
 | 1.5 | 2026-08-04 | Stage 2b Conditional matching floor PASS; Stage 2 exit CONDITIONAL_WITH_SCOPE; next Stage 3 scoped MAT calc |
 | 1.6 | 2026-08-04 | Stages 2c + 3: floor diagnostics PASS; MAT scoped calc provisional (no PASS); next Stage 4 |
 | 1.7 | 2026-08-04 | Stage 4 branch B: permanent Conditional M3/M6 limit PASS; next Stage 5 full-gate decision |
+| 1.8 | 2026-08-04 | Stage 5 tier-1: PASS_BOUNDED_CONDITIONAL; not Derived closed; MAT PASS still forbidden; next Stage 6 |

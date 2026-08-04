@@ -1,11 +1,7 @@
 {
-  "blocking_for_full_pass": [
-    "M3_causality_declared_domain",
-    "M6_physical_cutoff",
-    "M7_matter_ready_for_MAT"
-  ],
+  "blocking_for_full_pass": [],
   "calculation_status": "PASS",
-  "full_gate_status": "IN_PROGRESS",
+  "full_gate_status": "PASS_BOUNDED_CONDITIONAL",
   "gate": "UVIR-003",
   "master_plan_criteria": {
     "M1_selected_action_declared": {
@@ -17,8 +13,8 @@
       "status": "PASS_BOUNDED"
     },
     "M3_causality_declared_domain": {
-      "note": "Documented Conditional R1 domain + route maps (R2 V target); Derived close still needs matched A q / K_Q",
-      "status": "PARTIAL"
+      "note": "Stage 4 branch B permanent Conditional-with-scope if present; else Conditional domain only (Derived Aq/K_Q still open)",
+      "status": "PERMANENT_CONDITIONAL_WITH_SCOPE"
     },
     "M4_unitarity_path_with_scope": {
       "note": "Declared tree/NDA criterion; optical theorem not computed",
@@ -29,26 +25,32 @@
       "status": "PASS_INVENTORY"
     },
     "M6_physical_cutoff": {
-      "note": "Blocked on matching; NDA Lambda_parallel only",
-      "status": "OPEN"
+      "note": "Stage 4 branch B permanent Conditional NDA diagnostic if present; else blocked on matching",
+      "status": "PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC"
     },
     "M7_matter_ready_for_MAT": {
-      "note": "MAT-001 remains BLOCKED for Derived vertex",
-      "status": "OPEN"
+      "note": "Stage 5: force handoff only; MAT-001 PASS tag remains forbidden",
+      "status": "PASS_SCOPED_FORCE_HANDOFF"
     }
   },
-  "mat001_status": "BLOCKED",
+  "mat001_status": "BLOCKED_PASS_TAG_FORBIDDEN",
   "mismatched_required_summaries": [],
   "missing_required_summaries": [],
   "next_required_calculation": [
-    "Serial Stage 2b: write Conditional matching floor and scoped MAT-calculation handoff",
-    "Stage 2c: re-evaluate causality + Lambda_|| under floor",
-    "Stage 3 MAT only after Stage 2 exit (compute V from S_int)"
+    "Optional: compute V and reopen Stage 4 branch A for Derived upgrade",
+    "Stage 6 DISK/STAT for observational claim-grade work",
+    "MAT-001 PASS only after MAT checklist"
   ],
   "optional_subgate_evidence": {
     "uvir003_causality_domain_conditional_summary.json": {
       "expected": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
       "got": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_conditional_matching_floor_summary.json": {
+      "expected": "PASS_CONDITIONAL_MATCHING_FLOOR",
+      "got": "PASS_CONDITIONAL_MATCHING_FLOOR",
       "ok": true,
       "present": true
     },
@@ -73,6 +75,24 @@
     "uvir003_matching_route_program_summary.json": {
       "expected": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
       "got": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_stage2c_floor_diagnostics_summary.json": {
+      "expected": "PASS_STAGE2C_FLOOR_DIAGNOSTICS",
+      "got": "PASS_STAGE2C_FLOOR_DIAGNOSTICS",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_stage4_m3m6_conditional_limit_summary.json": {
+      "expected": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+      "got": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_stage5_full_gate_decision_summary.json": {
+      "expected": "PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL",
+      "got": "PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL",
       "ok": true,
       "present": true
     }
@@ -121,7 +141,9 @@
       "required": true
     }
   },
-  "scientific_boundary": "Audits presence of post-alpha.9/10 subgate summaries and scores Master Plan UVIR-003 criteria as PASS_BOUNDED/PARTIAL/OPEN. Does not close UVIR-003, derive K_Q, compute optical theorem, or unlock MAT-001.",
+  "scientific_boundary": "Audits presence of post-alpha.9/10 subgate summaries and scores Master Plan UVIR-003 criteria. If Stage 5 is present, reports PASS_BOUNDED_CONDITIONAL (not Derived theory closed). Does not derive K_Q, compute optical theorem, or issue MAT-001 PASS.",
   "stage": "FULL_GATE_CLOSURE_AUDIT",
+  "stage4_policy_present": true,
+  "stage5_decision_present": true,
   "subgate_status": "PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT"
 }

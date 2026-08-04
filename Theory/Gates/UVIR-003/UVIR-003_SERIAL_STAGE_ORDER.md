@@ -94,13 +94,25 @@ M6 = `PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC`.
 Branch A scaffold (maps if \(V\) later Derived) recorded, not applied as Derived.
 Does **not** set UVIR full-gate PASS.
 
-### Stage 5 — **UVIR-003 full-gate PASS** ← **NEXT**
+### Stage 5 — **UVIR-003 full-gate decision** ← **DONE (tier-1 bounded)**
 
 **Goal:** checklist M1–M6 all non-blocking under declared policy; M7 ready for MAT handoff *after* Stage 3–4 if not already sequential-complete.
 
-**Exit criterion:** `full_gate_status = PASS` in audit; the provisional MAT result may proceed to its own gate decision and downstream Derived use only if the MAT checklist also passes.
+**Exit criterion (tier-1):** not an unqualified Derived close. Stage 5 records
 
-### Stage 6 — **DISK-001 full + STAT-001** (observational pipeline)
+```text
+full_gate_status = PASS_BOUNDED_CONDITIONAL
+```
+
+when Master Plan wording is met **under declared Conditional policy** + permanent
+scope exclusions (optical theorem, full in-in claims, IR HOLD, zero-gradient
+S-matrix). `physics_pass_derived_theory_closed = false`. MAT PASS remains
+forbidden; downstream Derived packaging remains forbidden until MAT/DISK/STAT
+checklists and claim language allow it.
+
+**Exit met:** `PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL`.
+
+### Stage 6 — **DISK-001 full + STAT-001** (observational pipeline) ← **NEXT**
 
 Methods package already partial PASS. Full multipole/BC/STAT after force+matter story is frozen for claims that need them.
 
@@ -137,6 +149,7 @@ Only after Stage 5 (and Stage 6 for P4 SPARC claims).
 | 1 | **DONE** | `PASS_DECLARED_WEAK_COUPLING_DOMAIN` — M2 PASS_BOUNDED |
 | 2 | **DONE (Conditional-with-scope)** | 2a C; 2b floor; 2c `PASS_STAGE2C_FLOOR_DIAGNOSTICS` |
 | 3 | **DONE (scoped calc only)** | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` — **no MAT PASS**; \(V\) NOT_COMPUTED |
-| 4 | **DONE (branch B)** | `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` — permanent Conditional M3/M6; not full PASS |
-| 5 | **NEXT** | Full-gate programme decision under declared policy |
-| 6–7 | pending | — |
+| 4 | **DONE (branch B)** | `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` — permanent Conditional M3/M6 |
+| 5 | **DONE (tier-1 bounded)** | `PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL` — `full_gate_status=PASS_BOUNDED_CONDITIONAL`; not Derived closed; no MAT PASS |
+| 6 | **NEXT** | DISK-001 full + STAT-001 for claim-grade observational path |
+| 7 | pending | P3/P4 only with Conditional language or further Derived work |

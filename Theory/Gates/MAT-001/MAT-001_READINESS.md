@@ -5,7 +5,7 @@
 **Date:** 2026-08-04  
 **Authority:** Master Research Plan §5; UVIR-003 force sector; Selective Publishing Plan (P3/P4 downstream)  
 **Scoped package:** `MAT-001_SCOPED_CALCULATION.md`  
-**UVIR Stage 4:** permanent Conditional M3/M6 limit recorded — still **not** UVIR full PASS; still **not** MAT PASS
+**UVIR Stage 5:** `PASS_BOUNDED_CONDITIONAL` — authorizes continued MAT *engineering* under Conditional policy; **still not MAT PASS**
 
 ## What MAT-001 is
 
@@ -27,7 +27,7 @@ invariants (`UVIR-003_STAGE_B_KQ_MATCHING_INVENTORY`).
 | Stable/causal domain | Partial (Stage A + many Stage B subgates) | Matching without a declared domain is packaging |
 | \(K_Q\) absolute value | **NOT_DERIVED** (inventory Open) | Absolute norm entangled with \(C_m\), \(A\); invariants ready |
 | Declared unitarity/EFT criterion | PASS (scoped, not theory closed) | Bounds the domain where a vertex is meaningful |
-| Full UVIR-003 gate close | **Not closed** | Blocks MAT gate PASS and downstream Derived use; does not forbid a written scoped calculation handoff |
+| Full UVIR-003 gate close | **`PASS_BOUNDED_CONDITIONAL`** (not Derived closed) | Unblocks programme permission for MAT engineering; still blocks MAT PASS until MAT checklist; \(V\) still NOT_COMPUTED |
 
 **Do not** open MAT-001 Derived claims or a MAT “pass report” while the table above remains red on UVIR-003 full gate + matching domain.
 

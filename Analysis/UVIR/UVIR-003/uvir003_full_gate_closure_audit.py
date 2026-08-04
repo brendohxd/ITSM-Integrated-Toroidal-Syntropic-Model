@@ -52,6 +52,18 @@ OPTIONAL_SUBGATES: dict[str, str] = {
     "uvir003_declared_weak_coupling_domain_summary.json": (
         "PASS_DECLARED_WEAK_COUPLING_DOMAIN"
     ),
+    "uvir003_conditional_matching_floor_summary.json": (
+        "PASS_CONDITIONAL_MATCHING_FLOOR"
+    ),
+    "uvir003_stage2c_floor_diagnostics_summary.json": (
+        "PASS_STAGE2C_FLOOR_DIAGNOSTICS"
+    ),
+    "uvir003_stage4_m3m6_conditional_limit_summary.json": (
+        "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT"
+    ),
+    "uvir003_stage5_full_gate_decision_summary.json": (
+        "PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL"
+    ),
 }
 
 
@@ -110,6 +122,21 @@ def main() -> None:
 
     required_ok = len(missing) == 0 and len(mismatch) == 0
 
+    # Stage 4/5 optional artefacts (tier-1 Conditional policy path)
+    stage4_ok = optional_ev.get(
+        "uvir003_stage4_m3m6_conditional_limit_summary.json", {}
+    ).get("ok", False)
+    stage5_ok = optional_ev.get(
+        "uvir003_stage5_full_gate_decision_summary.json", {}
+    ).get("ok", False)
+    stage5 = None
+    stage5_path = (
+        args.summaries_dir / "uvir003_stage5_full_gate_decision_summary.json"
+    )
+    if stage5_path.exists():
+        with stage5_path.open("r", encoding="utf-8") as f:
+            stage5 = json.load(f)
+
     # Master Plan criteria scoring (manual policy encoded explicitly)
     criteria = {
         "M1_selected_action_declared": {
@@ -136,10 +163,14 @@ def main() -> None:
             ),
         },
         "M3_causality_declared_domain": {
-            "status": "PARTIAL",
+            "status": (
+                "PERMANENT_CONDITIONAL_WITH_SCOPE"
+                if stage4_ok
+                else "PARTIAL"
+            ),
             "note": (
-                "Documented Conditional R1 domain + route maps (R2 V target); "
-                "Derived close still needs matched A q / K_Q"
+                "Stage 4 branch B permanent Conditional-with-scope if present; "
+                "else Conditional domain only (Derived Aq/K_Q still open)"
             ),
         },
         "M4_unitarity_path_with_scope": {
@@ -155,31 +186,33 @@ def main() -> None:
             "note": "Invariants listed; numeric K_Q NOT_DERIVED",
         },
         "M6_physical_cutoff": {
-            "status": "OPEN",
-            "note": "Blocked on matching; NDA Lambda_parallel only",
+            "status": (
+                "PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC"
+                if stage4_ok
+                else "OPEN"
+            ),
+            "note": (
+                "Stage 4 branch B permanent Conditional NDA diagnostic if present; "
+                "else blocked on matching"
+            ),
         },
         "M7_matter_ready_for_MAT": {
-            "status": "OPEN",
-            "note": "MAT-001 remains BLOCKED for Derived vertex",
+            "status": (
+                "PASS_SCOPED_FORCE_HANDOFF"
+                if stage5_ok
+                else ("OPEN" if not stage4_ok else "OPEN_MAT_PASS_BLOCKED")
+            ),
+            "note": (
+                "Stage 5: force handoff only; MAT-001 PASS tag remains forbidden"
+            ),
         },
     }
 
-    # Full gate: all of M1–M6 closed at least PARTIAL→PASS without OPEN musts
-    # Policy: full PASS requires M1 ok, M2 not OPEN, M3 not OPEN, M4 pass,
-    # M5 pass, M6 not OPEN. Today M3 and M6 OPEN/PARTIAL → full not closed.
-    open_musts = [
-        k
-        for k, v in criteria.items()
-        if v["status"] in ("OPEN", "FAIL_MISSING")
-        or str(v["status"]).startswith("PARTIAL")
-        and k in ("M3_causality_declared_domain", "M2_stability_declared_domain")
-    ]
-    # Stricter: full gate closed only if no OPEN and no PARTIAL on M2,M3,M6
-    # PASS_BOUNDED is allowed for M2 (declared domain)
+    # Blocking under Conditional policy: OPEN/PARTIAL/FAIL on M2–M7
     blocking = [
         k
         for k, v in criteria.items()
-        if v["status"] in ("OPEN", "FAIL_MISSING", "PARTIAL")
+        if v["status"] in ("OPEN", "FAIL_MISSING", "PARTIAL", "OPEN_MAT_PASS_BLOCKED")
         and k
         in (
             "M2_stability_declared_domain",
@@ -189,8 +222,15 @@ def main() -> None:
         )
     ]
 
-    full_gate = "IN_PROGRESS"
-    mat001 = "BLOCKED"
+    if stage5_ok and stage5 is not None:
+        full_gate = stage5.get("full_gate_status", "PASS_BOUNDED_CONDITIONAL")
+        mat001 = stage5.get("mat001_status", "BLOCKED_PASS_TAG_FORBIDDEN")
+    elif stage4_ok and len(blocking) == 0:
+        full_gate = "IN_PROGRESS_STAGE5_PENDING"
+        mat001 = "BLOCKED"
+    else:
+        full_gate = "IN_PROGRESS"
+        mat001 = "BLOCKED"
     # Audit of *checklist infrastructure* passes if required subgates present
     audit_pass = required_ok
 
@@ -211,17 +251,26 @@ def main() -> None:
         "optional_subgate_evidence": optional_ev,
         "missing_required_summaries": missing,
         "mismatched_required_summaries": mismatch,
+        "stage4_policy_present": stage4_ok,
+        "stage5_decision_present": stage5_ok,
         "scientific_boundary": (
             "Audits presence of post-alpha.9/10 subgate summaries and scores "
-            "Master Plan UVIR-003 criteria as PASS_BOUNDED/PARTIAL/OPEN. "
-            "Does not close UVIR-003, derive K_Q, compute optical theorem, "
-            "or unlock MAT-001."
+            "Master Plan UVIR-003 criteria. If Stage 5 is present, reports "
+            "PASS_BOUNDED_CONDITIONAL (not Derived theory closed). Does not "
+            "derive K_Q, compute optical theorem, or issue MAT-001 PASS."
         ),
-        "next_required_calculation": [
-            "Serial Stage 2b: write Conditional matching floor and scoped MAT-calculation handoff",
-            "Stage 2c: re-evaluate causality + Lambda_|| under floor",
-            "Stage 3 MAT only after Stage 2 exit (compute V from S_int)",
-        ],
+        "next_required_calculation": (
+            [
+                "Optional: compute V and reopen Stage 4 branch A for Derived upgrade",
+                "Stage 6 DISK/STAT for observational claim-grade work",
+                "MAT-001 PASS only after MAT checklist",
+            ]
+            if stage5_ok
+            else [
+                "Complete Stages 4–5 Conditional full-gate decision if not present",
+                "Or compute V for Derived upgrade path",
+            ]
+        ),
     }
 
     args.output_dir.mkdir(parents=True, exist_ok=True)

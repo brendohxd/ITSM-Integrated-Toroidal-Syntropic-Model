@@ -49,6 +49,6 @@ python Analysis\MAT\MAT-001\mat001_scoped_calculation.py
 ## Next
 
 - UVIR Stage **4** — **DONE (branch B):** permanent Conditional M3/M6 limit  
-  (`PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT`)  
-- UVIR Stage **5** before any MAT PASS or Derived downstream use  
-- Optional: compute \(V\) when force kinetic / \(K_Q\) chart is available → reopen Stage 4 branch A
+- UVIR Stage **5** — **DONE (tier-1):** `PASS_BOUNDED_CONDITIONAL`  
+- **Still required for MAT PASS:** compute \(V\); complete MAT checklist; claim ledger  
+- Optional Derived UVIR upgrade: \(V\) → Stage 4 branch A

@@ -269,7 +269,8 @@ action drafts on identity pillars — only premature Derived packaging.
 - **As of 2026-08-03:** `12.0-alpha.10` — post–alpha.9 UVIR-003 path package (Green, Track-A \(|\nabla\pi|^3\), declared unitarity criterion, \(K_Q\) inventory); full UVIR-003 still IN PROGRESS  
 - **Prior freeze:** `12.0-alpha.9` — local tetrahedral four-leg kernel only  
 
-- **MAT-001:** still **blocked**  
+- **MAT-001:** still **blocked** for PASS tag (scoped calculation exists; UVIR is `PASS_BOUNDED_CONDITIONAL`, not Derived closed)  
+- **UVIR-003 full gate (2026-08-04):** `PASS_BOUNDED_CONDITIONAL` — Conditional M3/M6 policy + permanent scope exclusions; **not** Derived theory closed; \(K_Q\) NOT_DERIVED; \(V\) NOT_COMPUTED  
 - **Post–alpha.9 working substeps (not a manuscript freeze):**  
   - `PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT` — off-tetra disphenoid kernel  
   - denser edge scan tag `dense_edge` (domain failures rise near edge; kernel still finite)  
@@ -288,14 +289,16 @@ action drafts on identity pillars — only premature Derived packaging.
   - PASS_CONDITIONAL_MATCHING_FLOOR — **Stage 2b**: Conditional-with-scope floor; Stage 2 exit `CONDITIONAL_WITH_SCOPE`
   - PASS_STAGE2C_FLOOR_DIAGNOSTICS — **Stage 2c**: causality + NDA under floor
   - PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL — **Stage 3**: forms frozen; \(V\) NOT_COMPUTED; **no MAT PASS**
-  - PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT — **Stage 4 branch B**: M3 permanent Conditional-with-scope; M6 permanent Conditional NDA diagnostic; not full-gate PASS
+  - PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT — **Stage 4 branch B**: M3 permanent Conditional-with-scope; M6 permanent Conditional NDA diagnostic
+  - PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL — **Stage 5 tier-1**: `full_gate_status=PASS_BOUNDED_CONDITIONAL` (not Derived closed; no MAT PASS)
   - Serial order: Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md  
 - **Next working priorities (serial — complete each before next):**  
-  1. **Stage 5** — UVIR-003 full-gate programme decision under declared policy (Conditional M3/M6 accepted for PASS or keep IN_PROGRESS / reopen Stage 4 branch A if \(V\) computed)
-  2. **Optional reopen Stage 4A** — compute \(V\) from force kinetic / \(K_Q\) chart, then substitute into \(I_{a_0}\), \(q_\times\), \(\Lambda_\parallel\)
-  3. **Stage 6–7** DISK/STAT full → P3/P4 (not before Stage 5–6)
-  4. Parallel methods only: DISK Conditional lane; identity TOP/VOR/WAK sketches
-  5. **α.11 freeze** — after Stage 5 (preferred) or as optional path snapshot; not automatic after Stage 4
+  1. **Stage 6** — DISK-001 full + STAT-001 for observational claim-grade path (Conditional \(\Cobs\sim 1\) only with labels)
+  2. **Optional high-value Derived reopen** — compute \(V\) from force kinetic / \(K_Q\) chart → Stage 4 branch A → upgrade M3/M6 toward Derived
+  3. **MAT-001 PASS** only after MAT checklist (\(V\), claim ledger) — still blocked
+  4. **Stage 7** P3/P4 — Conditional claim language only until further Derived work
+  5. Parallel methods only: identity TOP/VOR/WAK sketches
+  6. **α.11 freeze** — optional now to record `PASS_BOUNDED_CONDITIONAL` path; not automatic
 
 
 Reproduce alpha.9 baseline:
