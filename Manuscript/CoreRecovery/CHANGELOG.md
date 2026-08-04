@@ -5,6 +5,24 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+_No changes yet._
+
+## 12.0-alpha.11 - 2026-08-04
+
+### Alpha.11 manuscript integration
+
+- Integrated the post-alpha.10 Stage 1--5 serial decision without promoting a
+  physics pass: `PASS_STAGE5_DECISION_HOLD_TIER1`, UVIR-003 `IN_PROGRESS`,
+  MAT-001 `BLOCKED`, and $V=C_m/\sqrt{K_Q}$ `NOT_COMPUTED`.
+- Added the fail-closed MAT kinetic-chart blocker inventory; its machine PASS
+  validates the blocker map only and does not compute $V$.
+- Integrated reviewed TOP S2 CBR and VOR S2b parent-action templates as
+  `OPEN_SCAFFOLD_ONLY` with `physics_pass: false`.
+- Recorded WAK C2 and RES R1 only as `NOT_SELECTED` decision packets. All
+  catalogued identity/constitutive alternatives remain Open.
+- Advanced P3 to `0.0.2-outline` solely to synchronize the gate map. The full
+  P3 manuscript trigger remains unmet.
+
 ### UVIR-003 tier-1 hold correction
 
 - Superseded the post-alpha.10 `PASS_BOUNDED_CONDITIONAL` programme
@@ -19,8 +37,8 @@ root `CHANGELOG.md` records legacy project history.
 - Set the serial next calculation to a matched \(V\), or equivalent invariant,
   followed by causality, relevant IR, and physical-cutoff analysis before a
   later independent Stage 5 review.
-- No working manuscript equation or frozen release was changed. Alpha.11 may
-  record this checkpoint only after manuscript integration and author review.
+- Integrated this checkpoint in alpha.11 without altering any earlier frozen
+  release.
 
 ### Parallel identity-gate checkpoint
 
@@ -30,9 +48,8 @@ root `CHANGELOG.md` records legacy project history.
 - All results remain mathematical-template or Conditional inputs with
   `physics_pass: false`; TOP/VOR remain `OPEN_SCAFFOLD_ONLY` and WAK remains
   Open under microscopic-identity and cubic-constraint holds.
-- No working manuscript equations or frozen release were changed by this
-  checkpoint. A future alpha.11 may incorporate the results only after a
-  dedicated manuscript integration and review.
+- Integrated the reviewed status boundary in alpha.11; no underlying identity
+  gate or earlier frozen release was promoted or modified.
 
 
 ### UVIR-003 Stage 2a
@@ -57,7 +74,7 @@ root `CHANGELOG.md` records legacy project history.
   calculation only after a written Stage-2 handoff. MAT gate PASS and
   downstream Derived use remain blocked until UVIR Stage 5.
 
-These changes are **not yet a frozen manuscript release**. The next freeze is alpha.11.
+These changes are frozen in `12.0-alpha.11`; all earlier releases remain immutable.
 
 ## 12.0-alpha.10 - 2026-08-03
 

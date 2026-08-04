@@ -1,0 +1,111 @@
+{
+  "bookkeeping": {
+    "damping": "UNDECLARED_IN_THIS_PACKAGE",
+    "div_T_W": "I_W",
+    "forbidden": [
+      "silent I_W = Q_mp",
+      "silent I_W = Q_syn",
+      "static AQUAL double-count as wake"
+    ],
+    "plenum": "div T_P = -Q_mp + Q_syn - I_W",
+    "route": "II_independent_wake_sector",
+    "source_J_W": "UNDECLARED_IN_THIS_PACKAGE"
+  },
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "prior_routes_catalog_present",
+      "ok": true
+    },
+    {
+      "name": "C2_is_evaluated_not_selected",
+      "ok": true
+    },
+    {
+      "name": "all_identity_routes_retained_open",
+      "ok": true
+    },
+    {
+      "name": "hamiltonian_positive_definite_structure",
+      "ok": true
+    },
+    {
+      "name": "dispersion_hyperbolic_template",
+      "ok": true
+    },
+    {
+      "name": "source_and_damping_still_undeclared",
+      "ok": true
+    },
+    {
+      "name": "parent_marked_incomplete",
+      "ok": true
+    },
+    {
+      "flags": {
+        "AQUAL_double_count": false,
+        "Bullet_Cluster": false,
+        "C1_identification_claimed": false,
+        "C3_internal_claimed": false,
+        "WAK_research_gate_PASS": false,
+        "identity_closed": false,
+        "physics_pass": false,
+        "route_selected": false,
+        "source_derived": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "AQUAL_double_count": false,
+    "Bullet_Cluster": false,
+    "C1_identification_claimed": false,
+    "C3_internal_claimed": false,
+    "WAK_research_gate_PASS": false,
+    "identity_closed": false,
+    "physics_pass": false,
+    "route_selected": false,
+    "source_derived": false
+  },
+  "decision": {
+    "candidate_under_evaluation": "C2_INDEPENDENT_PARENT_ACTION",
+    "decision_status": "NOT_SELECTED",
+    "identity_status": "UNRESOLVED",
+    "retained_open": [
+      "C1_IDENTIFY_WITH_EXISTING_UVIR_MODE",
+      "C2_INDEPENDENT_PARENT_ACTION",
+      "C3_INTERNAL_CONSTITUTIVE_OF_PLENUM"
+    ],
+    "rule": "No route activates before an explicit evidence-backed comparison decision",
+    "selected_candidate": null
+  },
+  "gate": "WAK-001",
+  "hold": "HOLD_WAK001_IDENTITY_ROUTE_UNSELECTED",
+  "n_checks": 8,
+  "next_required": [
+    "Compare C1/C2/C3 against one declared evidence rubric",
+    "For C2, derive T_W^{mu nu} and I_W from S_W + S_int",
+    "Record an explicit selection decision before activating any route"
+  ],
+  "parent_template": {
+    "S_W_template": "\u222b \u00bd Z_W (U\u00b7\u2207W)\u00b2 - \u00bd Z_W c_W\u00b2 |h\u00b7\u2207W|\u00b2 - \u00bd M_W\u00b2 W\u00b2   (flat rest-frame reduction audited)",
+    "completeness_missing": [
+      "covariant completion on curved/FRW backgrounds",
+      "stress tensor T_W^{\u03bc\u03bd} from Noether/metric variation",
+      "interaction S_int generating I_W",
+      "initial-data well-posedness theorem"
+    ],
+    "parameters_positive": [
+      "Z_W",
+      "c_W\u00b2",
+      "M_W\u00b2"
+    ],
+    "status": "CANDIDATE_TEMPLATE_INCOMPLETE"
+  },
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "Evaluates C2 as one unselected identity candidate and records a minimal hyperbolic S_W comparison template. C1/C2/C3 remain Open; identity is unresolved and no source, damping, or observable follows.",
+  "stage": "C2_DECISION_PACKET",
+  "subgate_status": "PASS_WAK001_C2_DECISION_PACKET_OPEN"
+}

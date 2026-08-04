@@ -1,8 +1,9 @@
 # P3 — Gate-structured observational program (**outline only**)
 
 **Directory:** `papers/P3-Observational-Program/`  
-**VERSION:** `0.0.1-outline` (see `VERSION`)  
+**VERSION:** `0.0.2-outline` (see `VERSION`)
 **Status:** **Outline only — full draft not triggered**  
+**Current boundary:** UVIR-003 Stage 5 tier-1 hold; MAT \(V\) not computed; TOP/VOR scaffold-only; WAK/RES routes not selected.
 **Authority:** `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` §4.3  
 **Branch:** `recovery/v12-core-architecture`
 

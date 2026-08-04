@@ -11,7 +11,7 @@
 Gate-Based Falsifiability**
 
 🌍 **Recovery website:** [itsm-cosmology.com](https://itsm-cosmology.com) |
-📘 **Current manuscript:** [v12.0-alpha.10](Manuscript/CoreRecovery/releases/v12.0-alpha.10/ITSM_Core_v12.0-alpha.10.pdf) |
+📘 **Current manuscript:** [v12.0-alpha.11](Manuscript/CoreRecovery/releases/v12.0-alpha.11/ITSM_Core_v12.0-alpha.11.pdf) |
 📧 **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
 
 ## 📖 Project Overview
@@ -56,13 +56,13 @@ presented as a derivation. Every live statement is classified as **Derived**,
 
 | Area | Current status | What that means |
 |---|---|---|
-| **Manuscript** | `v12.0-alpha.10` frozen | Immutable post-alpha.9 UVIR path package; later working notes do not overwrite it |
+| **Manuscript** | `v12.0-alpha.11` frozen | Immutable tier-1 closure hold and identity-decision checkpoint; alpha.10 remains untouched |
 | **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
-| **MAT-001** | **Blocked for PASS / downstream Derived use** | A scoped Conditional matching calculation may prepare provisional invariants, but cannot certify the matter coupling before the UVIR closure stage |
+| **MAT-001** | **Blocked; $V$ not computed** | The blocker map passes, but $C_m/\sqrt{K_Q}$ still requires one same-chart action-level match |
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
-| **WAK-001** | **Open; constrained templates pass** | Local variation, mode-counting, zero-background factorization and identity-inventory audits pass, but microscopic identity, cubic constraints, source, exchange and observables remain unresolved |
-| **TOP/VOR** | **Open scaffolds; extended math templates pass** | TOP full-triaxial fixed-volume and VOR finite-density/smooth-winding checks pass; no modulus action, parent condensate validation, defect/resonance mechanism or physical identity claim is derived |
-| **Reservoir** | **Open parallel identity gate** | Syntropic throughput may be formalised without restoring rejected historical packaging |
+| **WAK-001** | **Open; no identity route selected** | C2 is an audited comparison template only; C1/C2/C3 remain Open and source, exchange and observables are unresolved |
+| **TOP/VOR** | **Open scaffolds; S2 templates pass** | TOP CBR bridge and VOR toy parent-action checks pass with `physics_pass: false`; no modulus dynamics or validated spectrum follows |
+| **Reservoir** | **Open; no constitutive route selected** | RES R1 is a Conditional decision packet; R1/R2/R3 remain Open and no creation rate or cosmology is derived |
 | **Full cosmology** | **Not yet reconstructed** | CMB, growth, lensing, Solar-System and multi-scale claims require their named upstream gates |
 
 For the full dependency chain and current blockers, use the

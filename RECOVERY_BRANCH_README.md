@@ -22,8 +22,8 @@ not the scientific status authority for this branch.
 ## Manuscript status
 
 The newest frozen manuscript release is
-[`12.0-alpha.10`](Manuscript/CoreRecovery/releases/v12.0-alpha.10/)
-(03 August 2026). Every freeze is immutable under
+[`12.0-alpha.11`](Manuscript/CoreRecovery/releases/v12.0-alpha.11/)
+(04 August 2026). Every freeze is immutable under
 `Manuscript/CoreRecovery/releases/v12.0-alpha.N/`. Working sources live in
 `Manuscript/CoreRecovery/`; authoritative per-release detail is in
 [`Manuscript/CoreRecovery/CHANGELOG.md`](Manuscript/CoreRecovery/CHANGELOG.md)
@@ -33,7 +33,7 @@ Claim hygiene is unchanged across freezes: `13/12`, `H0=72.97`, automatic
 Solar-System compliance, and historical SPARC `p=0.62` are **not** live
 predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
 
-### Frozen releases (`12.0-alpha.1` … `12.0-alpha.10`)
+### Frozen releases (`12.0-alpha.1` ... `12.0-alpha.11`)
 
 #### [`12.0-alpha.1`](Manuscript/CoreRecovery/releases/v12.0-alpha.1/) — 2026-07-26
 
@@ -245,7 +245,7 @@ predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
 
 #### [`12.0-alpha.10`](Manuscript/CoreRecovery/releases/v12.0-alpha.10/) — 2026-08-03
 
-**Label:** Post-alpha.9 UVIR-003 path package. **← current freeze**
+**Label:** Post-alpha.9 UVIR-003 path package.
 
 - Records the FRW in-in observable path declaration and multi-slice
   mode-projected Green proxy.
@@ -256,12 +256,26 @@ predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
 - **Boundary:** no cosmological S-matrix or optical theorem, no matched
   physical cutoff, no full UVIR-003 PASS, and no MAT-001 unlock.
 
-### Current open boundary (after alpha.10)
+#### [`12.0-alpha.11`](Manuscript/CoreRecovery/releases/v12.0-alpha.11/) - 2026-08-04
+
+**Label:** Tier-1 closure hold and identity decision checkpoint. **Current freeze**
+
+- Integrates the post-alpha.10 Stage 1--5 record through
+  `PASS_STAGE5_DECISION_HOLD_TIER1`; UVIR-003 remains `IN_PROGRESS`.
+- Records the fail-closed MAT blocker map with $V=C_m/\sqrt{K_Q}$ still
+  `NOT_COMPUTED`; MAT-001 remains `BLOCKED`.
+- Integrates TOP/VOR scaffold-only templates and WAK/RES `NOT_SELECTED`
+  decision packets, all with `physics_pass: false` where applicable.
+- Synchronizes P3 as `0.0.2-outline`; the full paper trigger remains unmet.
+- **Boundary:** no tier-1 UVIR closure, matched cutoff, MAT PASS, selected
+  wake/reservoir route, derived observable, or full P3 manuscript.
+
+### Current open boundary (after alpha.11)
 
 These bounded results do **not** establish full perturbative stability,
 observational viability, or a completed cosmology.
 
-**Manuscript freeze voice (α.10, still authoritative for citations):** UVIR-003
+**Manuscript freeze voice (alpha.11, authoritative for citations):** UVIR-003
 remains **in progress**; MAT-001 is **not unlocked**. Claim hygiene above is
 unchanged.
 
@@ -285,8 +299,8 @@ matched physical cutoff, MAT PASS, or downstream Derived packaging.
 matched invariant, from one declared action/field chart; (2) reopen Stage 4A
 for matched causality, relevant IR control, and a physical cutoff/unitarity
 result; (3) run a later independent Stage 5 closure review; (4) complete MAT,
-then DISK/STAT, before full P3/P4 claim packaging. Alpha.11 may be compiled as
-an honest checkpoint after reviewed integration, but cannot upgrade these claims.
+then DISK/STAT, before full P3/P4 claim packaging. Alpha.11 freezes this
+honest checkpoint without upgrading those claims.
 
 Authoritative process detail:
 `Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md` and
@@ -308,17 +322,18 @@ lanes. The detailed bounded record is
 
 All three gates remain Open. No modulus action, parent condensate validation,
 defect/resonance mechanism, microscopic wake identity, source, exchange
-current or physical observable is derived. This checkpoint does not create or
-modify a frozen manuscript release.
+current or physical observable is derived. Alpha.11 integrates this status
+boundary without promoting the underlying gates.
 
 ### Identity continuation (same day)
 
-Further scaffold-only executables (still `physics_pass: false`):
+Further scaffold-only executables and decision records:
 
-- TOP-001 S2-pre CBR interface template  
-- VOR-001 S2 local fluctuation template (toy \(U(1)\) energy)  
-- WAK-001 identity closure-routes catalog (identity still UNRESOLVED)  
-- **RES-001** opened: \(Q_{\mathrm{syn}}\) constitutive inventory  
+- TOP-001 S2 CBR bridge template (`physics_pass: false`)
+- VOR-001 S2b toy parent-action template (`physics_pass: false`)
+- WAK-001 C2 decision packet: `NOT_SELECTED`; C1/C2/C3 remain Open
+- RES-001 R1 decision packet: `NOT_SELECTED`; R1/R2/R3 remain Open
+- MAT-001 kinetic-chart blocker inventory: $V$ remains `NOT_COMPUTED`
 
 See `Theory/Gates/IDENTITY_GATE_CHECKPOINT_2026-08-04.md` and
 `Theory/Gates/RES-001/`.

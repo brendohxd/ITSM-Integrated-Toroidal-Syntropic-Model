@@ -33,14 +33,19 @@ Table: gate → observable class → status → what “fail” means.
 
 | Gate | Observable class | Status (update live) | Failure mode (conditional) |
 |------|------------------|----------------------|----------------------------|
-| UVIR-003 | IR force sector domain | IN PROGRESS | No stable IR for MAT |
-| MAT-001 | \(\Cobs\) matching | BLOCKED | No matched weak-field coefficient |
+| UVIR-003 | IR force sector domain | IN PROGRESS; Stage 5 tier-1 hold | No stable matched IR for MAT |
+| MAT-001 | \(\Cobs\) matching | BLOCKED; \(V\) not computed | No matched weak-field coefficient |
 | DISK-001 | Disk/sphere dynamics | readiness only | Morphology claims invalid |
 | STAT-001 | Inference pipeline | readiness only | No global significance |
 | CBR-002 | Driven anisotropy | open | Free-field attractor remains banned |
-| VOR-001 | Winding / PTA-class modes | open | No dimensionful spectrum |
-| WAK-001 | Wake / continuous drag | open | Qualitative only |
-| TOP-001 | Topology / BC | open preference | Not automatic Wilson numbers |
+| VOR-001 | Winding / PTA-class modes | open scaffold | No validated dimensionful spectrum |
+| WAK-001 | Wake / continuous drag | open; no identity route selected | Qualitative only |
+| TOP-001 | Topology / BC | open scaffold | Not dynamics or automatic Wilson numbers |
+| RES-001 | Reservoir throughput | open; no constitutive route selected | No creation-rate or cosmology claim |
+
+The 2026-08-04 identity and Stage 5 checkpoints do not trigger a full P3
+draft: TOP/VOR remain scaffold-only, WAK/RES select no route, and MAT has not
+computed \(V\). This file remains an outline and contains no derived observable.
 
 ## 3. Near-term *theoretical* falsifiers (not data claims)
 
@@ -89,4 +94,5 @@ Pull structure from CoreRecovery `sections/10_falsifiability.tex` when drafting.
 
 | Ver | Date | Note |
 |-----|------|------|
+| 0.0.2-outline | 2026-08-04 | Gate-map sync: Stage 5 hold, MAT \(V\) open, identity routes unselected; no `main.tex` |
 | 0.0.1-outline | 2026-08-03 | Initial firewall-safe outline; no `main.tex` |
