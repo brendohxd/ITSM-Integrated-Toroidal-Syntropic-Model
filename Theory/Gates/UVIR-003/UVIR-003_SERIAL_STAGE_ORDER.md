@@ -150,6 +150,6 @@ Only after Stage 5 (and Stage 6 for P4 SPARC claims).
 | 2 | **DONE (Conditional-with-scope)** | 2a C; 2b floor; 2c `PASS_STAGE2C_FLOOR_DIAGNOSTICS` |
 | 3 | **DONE (scoped calc only)** | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` — **no MAT PASS**; \(V\) NOT_COMPUTED |
 | 4 | **DONE (branch B)** | `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` — permanent Conditional M3/M6 |
-| 5 | **DONE (tier-1 bounded)** | `PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL` — `full_gate_status=PASS_BOUNDED_CONDITIONAL`; not Derived closed; no MAT PASS |
+| 5 | **DONE (tier-1 bounded, ledger only)** | `PASS_BOUNDED_CONDITIONAL` on gate ledger; frozen α.10 still says UVIR in progress; not Derived closed; no MAT PASS |
 | 6 | **NEXT** | DISK-001 full + STAT-001 for claim-grade observational path |
 | 7 | pending | P3/P4 only with Conditional language or further Derived work |

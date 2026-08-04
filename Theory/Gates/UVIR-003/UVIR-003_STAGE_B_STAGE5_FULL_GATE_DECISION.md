@@ -5,11 +5,22 @@
 **Serial stage:** **5**  
 **Subgate:** `PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL`  
 **Decision:** `ACCEPT_FULL_GATE_UNDER_DECLARED_CONDITIONAL_POLICY`  
-**`full_gate_status`:** **`PASS_BOUNDED_CONDITIONAL`**  
+**`full_gate_status` (programme / gate ledger only):** **`PASS_BOUNDED_CONDITIONAL`**  
+**Frozen manuscript (α.10) voice:** UVIR-003 still **in progress**; MAT not unlocked  
 **Derived theory closed:** **false**  
 **MAT-001 PASS:** **forbidden** (`BLOCKED_PASS_TAG_FORBIDDEN`)  
 **Numeric \(K_Q\):** **NOT_DERIVED**  
 **\(V\):** **NOT_COMPUTED**
+
+## Dual-status hygiene (required)
+
+| Layer | UVIR-003 wording | Why |
+|-------|------------------|-----|
+| Gate ledger / serial Stages 1–5 | `PASS_BOUNDED_CONDITIONAL` | Master Plan “stated with scope” under Conditional M3/M6 + exclusions |
+| Frozen manuscript until α.11+ | **in progress** | Freezes do not auto-upgrade; packaging ban |
+| Derived / peer-review theory close | **false** | \(K_Q\), \(V\), matched cutoff absent |
+
+Do **not** collapse these layers. Stage 5 is a **programme decision package**, not a manuscript freeze and not Derived closure.
 
 ## Why not unqualified PASS
 
@@ -66,10 +77,10 @@ Derived force-theory closure.
 
 | Unlocks | Does not unlock |
 |---------|-----------------|
-| Programme permission to treat UVIR force sector as **gate-closed under Conditional policy** | MAT-001 PASS |
+| Programme ledger permission to treat UVIR as **bounded Conditional gate-closed** | MAT-001 PASS |
 | Continued MAT *engineering* under existing scoped handoff | Derived observational papers |
-| Stage 6 methods toward claim-grade DISK/STAT | α.11 freeze (optional, separate) |
-| Honest manuscript language: Conditional bounded close | Plain “theory closed” prose |
+| Stage 6 methods toward claim-grade DISK/STAT | Automatic α.11 freeze or working-ms rewrite |
+| Future freeze *candidates* describing Stages 1–5 honestly | Plain “theory closed” or unqualified full PASS prose |
 
 ## Residual peer-review risks (stated)
 

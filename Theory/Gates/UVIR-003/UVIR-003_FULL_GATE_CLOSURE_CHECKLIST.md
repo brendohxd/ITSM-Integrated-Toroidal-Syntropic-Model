@@ -3,7 +3,8 @@
 **Date:** 2026-08-03  
 **Branch:** `recovery/v12-core-architecture`  
 **Authority:** Master Research Plan §5.1  
-**Full gate status:** **`PASS_BOUNDED_CONDITIONAL`** (Stage 5; **not** Derived theory closed)  
+**Full gate status (programme ledger):** **`PASS_BOUNDED_CONDITIONAL`** (Stage 5; **not** Derived theory closed)  
+**Frozen manuscript (α.10):** UVIR-003 still **in progress** until a reviewed freeze upgrades wording  
 **MAT-001:** **BLOCKED** for PASS tag; scoped calculation handoff already authorized  
 
 

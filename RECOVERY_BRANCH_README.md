@@ -259,12 +259,37 @@ predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
 ### Current open boundary (after alpha.10)
 
 These bounded results do **not** establish full perturbative stability,
-observational viability, or a completed cosmology. Post-alpha.10 work has
-documented a Conditional causality domain, route maps, and an evidence-bounded
-M2 claim domain. Stage 2a has now audited the R3 residue route and found no
-action-level value or rigorous bound for `Z_psi r_rho` in the declared source
-set (`INCOMPLETE_R3_UV_RESIDUE`). The next scientific action is Stage 2b: write
-a named Conditional matching floor and its scoped MAT-calculation handoff.
+observational viability, or a completed cosmology.
+
+**Manuscript freeze voice (α.10, still authoritative for citations):** UVIR-003
+remains **in progress**; MAT-001 is **not unlocked**. Claim hygiene above is
+unchanged.
+
+**Programme / gate ledger (post–α.10 serial Stages 1–5 — not a manuscript
+freeze):**
+
+| Stage | Subgate / exit | Boundary |
+|-------|----------------|----------|
+| 1 | `PASS_DECLARED_WEAK_COUPLING_DOMAIN` | M2 PASS_BOUNDED; IR HOLD out of weakly-coupled domain |
+| 2a | `INCOMPLETE_R3_UV_RESIDUE` | No action-level \(Z_\psi r_\rho\) |
+| 2b | `PASS_CONDITIONAL_MATCHING_FLOOR` | Conditional-with-scope floor; scoped MAT handoff text only |
+| 2c | `PASS_STAGE2C_FLOOR_DIAGNOSTICS` | Causality/NDA under floor; Conditional only |
+| 3 | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` | Forms frozen; \(V\) NOT_COMPUTED; no MAT PASS |
+| 4 | `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` | Programme Conditional M3/M6 limit (reopenable if \(V\) computed) |
+| 5 | `PASS_STAGE5_FULL_GATE_BOUNDED_CONDITIONAL` | Ledger `PASS_BOUNDED_CONDITIONAL`; **not** Derived closed |
+
+Still **not** claimed: Derived numeric \(K_Q\), computed \(V\), optical theorem,
+matched physical cutoff, MAT PASS, or downstream Derived packaging.
+
+**Next scientific actions (ordered):** (1) optional compute \(V\) and reopen
+Stage 4 branch A for Derived upgrade; (2) Stage 6 DISK-001 full + STAT-001
+methods under Conditional labels; (3) MAT PASS only after MAT checklist;
+(4) α.11 freeze only after deliberate working-manuscript integration and
+author review — freezes record path, not automatic claim upgrades.
+
+Authoritative process detail:
+`Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md` and
+`Theory/Gates/UVIR-003/UVIR-003_STAGE_B_STAGE5_FULL_GATE_DECISION.md`.
 
 ## Parallel identity-gate checkpoint - 2026-08-04
 

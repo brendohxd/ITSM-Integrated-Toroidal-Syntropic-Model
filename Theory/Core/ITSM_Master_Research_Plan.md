@@ -269,8 +269,10 @@ action drafts on identity pillars — only premature Derived packaging.
 - **As of 2026-08-03:** `12.0-alpha.10` — post–alpha.9 UVIR-003 path package (Green, Track-A \(|\nabla\pi|^3\), declared unitarity criterion, \(K_Q\) inventory); full UVIR-003 still IN PROGRESS  
 - **Prior freeze:** `12.0-alpha.9` — local tetrahedral four-leg kernel only  
 
-- **MAT-001:** still **blocked** for PASS tag (scoped calculation exists; UVIR is `PASS_BOUNDED_CONDITIONAL`, not Derived closed)  
-- **UVIR-003 full gate (2026-08-04):** `PASS_BOUNDED_CONDITIONAL` — Conditional M3/M6 policy + permanent scope exclusions; **not** Derived theory closed; \(K_Q\) NOT_DERIVED; \(V\) NOT_COMPUTED  
+- **Dual status (do not collapse):**
+  - **Frozen manuscript (α.10):** UVIR-003 still **in progress**; MAT-001 **not unlocked** (public/citation voice until α.11+ freeze reviews otherwise).  
+  - **Programme / gate ledger (post–α.10 Stages 1–5):** UVIR-003 recorded as `PASS_BOUNDED_CONDITIONAL` under declared Conditional policy — **not** Derived theory closed; \(K_Q\) NOT_DERIVED; \(V\) NOT_COMPUTED; MAT PASS tag still **forbidden**.  
+- **MAT-001:** still **blocked** for PASS tag (scoped calculation package exists under Conditional handoff only)  
 - **Post–alpha.9 working substeps (not a manuscript freeze):**  
   - `PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT` — off-tetra disphenoid kernel  
   - denser edge scan tag `dense_edge` (domain failures rise near edge; kernel still finite)  
@@ -281,7 +283,7 @@ action drafts on identity pillars — only premature Derived packaging.
   - `PASS_DECLARED_UNITARITY_EFT_CRITERION` — scoped tree/NDA unitarity + high-\(q\) Green health criterion; optical theorem / physical cutoff / MAT **not** claimed  
 - **Post–alpha.10 working notes:**  
   - PASS_KQ_MATCHING_INVENTORY_OPEN — invariants \(Aq/K_Q\), \(A/K_Q^{3/2}\); routes R1–R5; **numeric \(K_Q\) still NOT_DERIVED**  
-  - PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT — machine ledger M1–M7; full gate **IN_PROGRESS**  
+  - PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT — machine ledger infrastructure; scores M1–M7 from Stage 4/5 artefacts when present  
   - PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING — M3 documented Conditional R1; **not** Derived  
   - PASS_MATCHING_ROUTE_PROGRAM_OPEN — R2: static \(\Cobs\) alone cannot fix \(Aq/K_Q\); target \(V=C_m/\sqrt{K_Q}\)  
   - PASS_DECLARED_WEAK_COUPLING_DOMAIN — **Stage 1 / M2 PASS_BOUNDED**: high-\(q\)+Track-A in; IR HOLD **out** of weakly-coupled domain  
@@ -298,7 +300,7 @@ action drafts on identity pillars — only premature Derived packaging.
   3. **MAT-001 PASS** only after MAT checklist (\(V\), claim ledger) — still blocked
   4. **Stage 7** P3/P4 — Conditional claim language only until further Derived work
   5. Parallel methods only: identity TOP/VOR/WAK sketches
-  6. **α.11 freeze** — optional now to record `PASS_BOUNDED_CONDITIONAL` path; not automatic
+  6. **α.11 freeze** — only after deliberate working-manuscript integration + author review; freezes record path, not Derived claim upgrades
 
 
 Reproduce alpha.9 baseline:

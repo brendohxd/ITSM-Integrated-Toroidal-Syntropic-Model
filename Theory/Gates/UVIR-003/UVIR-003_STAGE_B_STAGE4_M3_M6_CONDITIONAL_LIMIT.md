@@ -32,7 +32,8 @@ Honest path is **branch B** — not inventing \(V\), not promoting R1 naive.
 
 ## Programme decision (branch B)
 
-**Decision:** `PERMANENT_CONDITIONAL_M3_M6_LIMIT`
+**Decision:** `PERMANENT_CONDITIONAL_M3_M6_LIMIT`  
+(“Permanent” = **programme Conditional limit until reopen**, not a ban on later Derived upgrade when \(V\) exists.)
 
 ### M3 — causality
 
