@@ -285,13 +285,17 @@ action drafts on identity pillars — only premature Derived packaging.
   - PASS_MATCHING_ROUTE_PROGRAM_OPEN — R2: static \(\Cobs\) alone cannot fix \(Aq/K_Q\); target \(V=C_m/\sqrt{K_Q}\)  
   - PASS_DECLARED_WEAK_COUPLING_DOMAIN — **Stage 1 / M2 PASS_BOUNDED**: high-\(q\)+Track-A in; IR HOLD **out** of weakly-coupled domain  
   - PASS_R3_UV_RESIDUE_AUDIT_INCOMPLETE — **Stage 2a Classification C**: no action-level \(Z_\psi r_\rho\) value or rigorous bound in the audited declared sources; \(I_{a_0}\) is chart-fixed, while \(Aq/K_Q\) is invariant
+  - PASS_CONDITIONAL_MATCHING_FLOOR — **Stage 2b**: Conditional-with-scope floor; Stage 2 exit `CONDITIONAL_WITH_SCOPE`
+  - PASS_STAGE2C_FLOOR_DIAGNOSTICS — **Stage 2c**: causality + NDA under floor
+  - PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL — **Stage 3**: forms frozen; \(V\) NOT_COMPUTED; **no MAT PASS**
+  - PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT — **Stage 4 branch B**: M3 permanent Conditional-with-scope; M6 permanent Conditional NDA diagnostic; not full-gate PASS
   - Serial order: Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md  
 - **Next working priorities (serial — complete each before next):**  
-  1. **Stage 2** matching floor without MAT: 2a R3 audit **DONE / Classification C** → 2b Conditional floor **NEXT** → 2c re-eval causality/NDA
-  2. **Stage 3** scoped MAT calculation only after Stage 2 exit + written Conditional handoff; compute provisional \(V\), \(\Cobs\), but no MAT PASS or downstream Derived use before Stage 5
-  3. **Stage 4–5** upgrade M3/M6 → UVIR full PASS  
-  4. **Stage 6–7** DISK/STAT full → P3/P4 (not before Stage 5–6)  
-  5. Parallel methods only: DISK Conditional lane; identity TOP/VOR/WAK sketches  
+  1. **Stage 5** — UVIR-003 full-gate programme decision under declared policy (Conditional M3/M6 accepted for PASS or keep IN_PROGRESS / reopen Stage 4 branch A if \(V\) computed)
+  2. **Optional reopen Stage 4A** — compute \(V\) from force kinetic / \(K_Q\) chart, then substitute into \(I_{a_0}\), \(q_\times\), \(\Lambda_\parallel\)
+  3. **Stage 6–7** DISK/STAT full → P3/P4 (not before Stage 5–6)
+  4. Parallel methods only: DISK Conditional lane; identity TOP/VOR/WAK sketches
+  5. **α.11 freeze** — after Stage 5 (preferred) or as optional path snapshot; not automatic after Stage 4
 
 
 Reproduce alpha.9 baseline:

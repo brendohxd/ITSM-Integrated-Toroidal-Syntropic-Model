@@ -4,7 +4,8 @@
 **Branch:** `recovery/v12-core-architecture`  
 **Date:** 2026-08-04  
 **Authority:** Master Research Plan §5; UVIR-003 force sector; Selective Publishing Plan (P3/P4 downstream)  
-**Scoped package:** `MAT-001_SCOPED_CALCULATION.md`
+**Scoped package:** `MAT-001_SCOPED_CALCULATION.md`  
+**UVIR Stage 4:** permanent Conditional M3/M6 limit recorded — still **not** UVIR full PASS; still **not** MAT PASS
 
 ## What MAT-001 is
 

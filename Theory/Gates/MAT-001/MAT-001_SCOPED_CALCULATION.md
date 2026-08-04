@@ -48,5 +48,7 @@ python Analysis\MAT\MAT-001\mat001_scoped_calculation.py
 
 ## Next
 
-- Compute \(V\) when force kinetic / \(K_Q\) chart is available  
-- UVIR Stages 4–5 before any MAT PASS or Derived downstream use  
+- UVIR Stage **4** — **DONE (branch B):** permanent Conditional M3/M6 limit  
+  (`PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT`)  
+- UVIR Stage **5** before any MAT PASS or Derived downstream use  
+- Optional: compute \(V\) when force kinetic / \(K_Q\) chart is available → reopen Stage 4 branch A

@@ -92,5 +92,6 @@ python Analysis\UVIR\UVIR-003\uvir003_conditional_matching_floor.py
 
 - **2c — DONE:** `PASS_STAGE2C_FLOOR_DIAGNOSTICS` (causality + NDA under this floor).  
 - **Stage 3 — DONE (scoped):** `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` — still no MAT PASS; \(V\) NOT_COMPUTED.  
-- **Stage 4 next:** compute \(V\) or accept permanent Conditional M3/M6 limit.  
+- **Stage 4 — DONE (branch B):** `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT`.  
+- **Stage 5 next:** full-gate programme decision (or reopen Stage 4A if \(V\) computed).  
 - Never promote R1/R3 naive \(O(1)\) to Derived.

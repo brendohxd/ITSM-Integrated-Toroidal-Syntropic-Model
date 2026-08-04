@@ -80,13 +80,21 @@ Prerequisites: Stage 1 PASS_BOUNDED; Stage 2 exit plus explicit Conditional hand
 Conditional \(\Cobs\sim 1\) baseline; \(V\) remains **NOT_COMPUTED** (\(K_Q\)
 NOT_DERIVED). No MAT PASS tag; no downstream Derived use until Stage 5.
 
-### Stage 4 — **UVIR M3/M6 upgrade** (post-MAT) ← **NEXT**
+### Stage 4 — **UVIR M3/M6 upgrade** (post-MAT) ← **DONE (branch B)**
 
 **Goal:** substitute matched \(V\) (and \(\Cobs\)) into route maps → re-evaluate \(q_\times\), \(\Lambda_\parallel\).
 
 **Exit criterion:** M3 not OPEN/PARTIAL on Derived path *or* explicit permanent Conditional limit accepted by programme; M6 physical cutoff stated with matched norm or permanent Conditional scope.
 
-### Stage 5 — **UVIR-003 full-gate PASS**
+**Exit met (branch B):** Stage 3 left \(V\) **NOT_COMPUTED**. Programme
+records **permanent Conditional M3/M6 limit**
+(`PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT`):
+M3 = `PERMANENT_CONDITIONAL_WITH_SCOPE`;
+M6 = `PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC`.
+Branch A scaffold (maps if \(V\) later Derived) recorded, not applied as Derived.
+Does **not** set UVIR full-gate PASS.
+
+### Stage 5 — **UVIR-003 full-gate PASS** ← **NEXT**
 
 **Goal:** checklist M1–M6 all non-blocking under declared policy; M7 ready for MAT handoff *after* Stage 3–4 if not already sequential-complete.
 
@@ -129,5 +137,6 @@ Only after Stage 5 (and Stage 6 for P4 SPARC claims).
 | 1 | **DONE** | `PASS_DECLARED_WEAK_COUPLING_DOMAIN` — M2 PASS_BOUNDED |
 | 2 | **DONE (Conditional-with-scope)** | 2a C; 2b floor; 2c `PASS_STAGE2C_FLOOR_DIAGNOSTICS` |
 | 3 | **DONE (scoped calc only)** | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` — **no MAT PASS**; \(V\) NOT_COMPUTED |
-| 4 | **NEXT** | M3/M6 upgrade path (needs \(V\) or permanent Conditional limit) |
-| 5–7 | pending | — |
+| 4 | **DONE (branch B)** | `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` — permanent Conditional M3/M6; not full PASS |
+| 5 | **NEXT** | Full-gate programme decision under declared policy |
+| 6–7 | pending | — |

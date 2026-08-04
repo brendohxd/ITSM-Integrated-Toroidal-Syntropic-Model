@@ -25,18 +25,19 @@ Break into **must** criteria (M1–M5) and **supporting** evidence (S*).
 |----|-----------|--------|------------------|
 | **M1** | Selected two-sector preferred-frame action declared | **PASS (bounded)** | Stage A + UVIR-002 route; Track A force retention of exact \(Y^{3/2}\) |
 | **M2** | Stability / positivity in declared domain | **PASS_BOUNDED** | Stage 1 domain freeze: high-\(q\)+Track-A in; IR HOLD / complex-quartet **out** (`PASS_DECLARED_WEAK_COUPLING_DOMAIN`) |
-| **M3** | Causality in declared domain | **PARTIAL (DOCUMENTED)** | Stage A + addendum; Conditional R1 domain mapped (`PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING`); naive \(q_\times/a_0=0.375\) parallel — **Derived** close still needs matched \(Aq/K_Q\) |
+| **M3** | Causality in declared domain | **PERMANENT_CONDITIONAL_WITH_SCOPE** | Stage 4 branch B: Conditional floor + 2c diagnostics are the programme limit until matched \(Aq/K_Q\) (`PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT`); naive \(q_\times/a_0=0.375\) still **not** Derived |
 | **M4** | Weak coupling / unitarity **path stated with scope** | **PASS (scoped)** | `PASS_DECLARED_UNITARITY_EFT_CRITERION` — tree/NDA + Green health; **not** optical theorem |
 | **M5** | Invariant ratios for force normalization | **PASS (inventory)** | `PASS_KQ_MATCHING_INVENTORY_OPEN` — \(Aq/K_Q\), \(A/K_Q^{3/2}\), …; **numeric \(K_Q\) NOT_DERIVED** |
-| **M6** | Physical cutoff | **OPEN** | Blocked on matching (\(K_Q\), possibly \(C_{\mathrm{IR}}\)); NDA scale only |
-| **M7** | Matter sector ready for MAT handoff | **OPEN** | Force sector methods exist; MAT still blocked for Derived vertex |
+| **M6** | Physical cutoff | **PERMANENT_CONDITIONAL_NDA_DIAGNOSTIC** | Stage 4 branch B: NDA \(\Lambda_\parallel\) diagnostic under floor \(P\); **not** Derived matched cutoff |
+| **M7** | Matter sector ready for MAT handoff | **OPEN** | Force sector methods + scoped MAT structure exist; MAT still blocked for Derived vertex / PASS |
 
 **Interpretation for MAT-001**
 
 - MAT gate PASS and downstream Derived use remain blocked until UVIR-003 **passes**.
-- Honest reading today: **M4–M5** support a *matching programme*; **M3/M6** still block a claim of “stable+causal+cutoff closed.”  
-- Do **not** open MAT Derived claims until the programme either (i) closes M3/M6 under a named matching route, or (ii) **explicitly** accepts a Conditional UVIR domain for MAT (written amendment to this checklist—programme decision).
-- Serial Stage 3 is therefore a **scoped Conditional calculation handoff**, not a MAT PASS and not authorization for downstream Derived claims.
+- Honest reading today: **M1–M2, M4–M5** support a declared domain + matching inventory; **M3/M6** are **permanent Conditional** (Stage 4 branch B), not Derived “stable+causal+cutoff closed.”  
+- Stage 4 recorded the **programme Conditional limit** for M3/M6. Stage **5** must still decide whether that is sufficient for `full_gate_status=PASS`.  
+- Do **not** open MAT Derived claims or MAT PASS until UVIR Stage 5 (or a later Derived reopen of Stage 4 branch A after \(V\) is computed).
+- Serial Stage 3 remains a **scoped Conditional calculation handoff**, not a MAT PASS.
 
 ---
 
@@ -56,6 +57,10 @@ Break into **must** criteria (M1–M5) and **supporting** evidence (S*).
 | Causality domain (Conditional R1) | M3 documentation | `PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING` |
 | Matching-route program (R2/R3 maps) | Toward M3/M6 | `PASS_MATCHING_ROUTE_PROGRAM_OPEN` |
 | Declared weakly-coupled domain | Stage 1 / M2 | `PASS_DECLARED_WEAK_COUPLING_DOMAIN` |
+| Conditional matching floor | Stage 2b | `PASS_CONDITIONAL_MATCHING_FLOOR` |
+| Floor diagnostics | Stage 2c | `PASS_STAGE2C_FLOOR_DIAGNOSTICS` |
+| MAT scoped calc (provisional) | Stage 3 | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` (no MAT PASS) |
+| Permanent Conditional M3/M6 | Stage 4 branch B | `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` |
 | Full-gate checklist audit | Evidence ledger | `PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT` |
 | Serial stage order | Process control | `UVIR-003_SERIAL_STAGE_ORDER.md` |
 
@@ -117,12 +122,12 @@ Authoritative process doc: **`UVIR-003_SERIAL_STAGE_ORDER.md`**.
 | **1** | M2 domain freeze (exclude IR HOLD) | **DONE** (`PASS_DECLARED_WEAK_COUPLING_DOMAIN`) |
 | **2** | Matching floor without MAT (R3 → Conditional floor + 2c) | **DONE** Conditional-with-scope |
 | **3** | Scoped MAT calculation (\(V\), \(\Cobs\)) | **DONE** provisional structure — **no MAT PASS**; \(V\) still NOT_COMPUTED |
-| **4** | Upgrade M3/M6 with matched \(V\) | **NEXT** — needs computed \(V\) or permanent Conditional M3/M6 limit |
-| 5 | UVIR-003 full-gate PASS | after Stage 4 |
+| **4** | Upgrade M3/M6 with matched \(V\) *or* permanent Conditional | **DONE (branch B)** — `PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT` |
+| **5** | UVIR-003 full-gate PASS | **NEXT** — programme decision under declared policy |
 | 6 | DISK full + STAT | after Stage 5 for claim-grade obs |
 | 7 | P3/P4 full drafts | after Stage 5–6 triggers |
 
-**Next single action:** Stage **4** — either compute \(V\) (force kinetic chart) and re-evaluate causality/cutoff, or programme decision on permanent Conditional M3/M6 scope.  
+**Next single action:** Stage **5** — decide whether permanent Conditional M3/M6 + M1–M5 are sufficient for `full_gate_status=PASS` (or keep IN_PROGRESS / reopen Stage 4 branch A if \(V\) is computed).  
 **Never** promote R1 naive to Derived. **Never** MAT PASS before UVIR Stage 5.
 
 Parallel methods only: DISK Conditional lane; TOP/VOR/WAK sketches.
@@ -140,3 +145,4 @@ Parallel methods only: DISK Conditional lane; TOP/VOR/WAK sketches.
 | 1.4 | 2026-08-04 | Stage 2a R3 audit exits Classification C; Stage 2b Conditional floor next |
 | 1.5 | 2026-08-04 | Stage 2b Conditional matching floor PASS; Stage 2 exit CONDITIONAL_WITH_SCOPE; next Stage 3 scoped MAT calc |
 | 1.6 | 2026-08-04 | Stages 2c + 3: floor diagnostics PASS; MAT scoped calc provisional (no PASS); next Stage 4 |
+| 1.7 | 2026-08-04 | Stage 4 branch B: permanent Conditional M3/M6 limit PASS; next Stage 5 full-gate decision |
