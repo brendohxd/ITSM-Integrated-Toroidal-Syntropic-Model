@@ -39,7 +39,7 @@ matching that does not require MAT (R3 attempt + Conditional scope)**, then
 | Route maps | `PASS_MATCHING_ROUTE_PROGRAM_OPEN` |
 | α.10 path package | multi-slice Green, nonzero-grad force, … |
 
-### Stage 1 — **M2 domain freeze** ← **CURRENT**
+### Stage 1 — **M2 domain freeze** ← **DONE**
 
 **Goal:** Master Plan “stable / weakly coupled **in declared domain**.”
 
@@ -63,21 +63,24 @@ matching that does not require MAT (R3 attempt + Conditional scope)**, then
 | Step | Action | Exit |
 |------|--------|------|
 | 2a | **DONE:** R3 audit of \(Z_\psi,r_\rho\) against declared UV / condensate sources | `INCOMPLETE_R3_UV_RESIDUE`; no value or rigorous bound → Conditional floor |
-| 2b | If 2a incomplete: freeze **Conditional** matched floor (R1 structure + excluded naive packaging) with referee domain tables already on disk | M3/M6 remain Conditional/OPEN with **scope**, not fake Derived |
-| 2c | Re-run causality + NDA diagnostics under that floor | Domain tables updated |
+| 2b | **DONE:** freeze **Conditional** matching floor (R1/R3 structure + naive excluded as packaging) | `PASS_CONDITIONAL_MATCHING_FLOOR`; M3/M6 Conditional-with-scope |
+| 2c | **DONE:** causality + NDA diagnostics under Conditional floor | `PASS_STAGE2C_FLOOR_DIAGNOSTICS`; domain tables remain Conditional documentation |
 
-**Exit criterion:** written matching status for M3/M6 (Derived *or* Conditional-with-scope).  
-**Do not** issue a MAT PASS tag or use MAT output for downstream Derived claims before UVIR Stage 5. Stage 2 may authorize only a scoped Conditional calculation handoff.
+**Exit criterion (Stage 2):** written matching status for M3/M6 as **Conditional-with-scope** (met by 2b).  
+**Do not** issue a MAT PASS tag or use MAT output for downstream Derived claims before UVIR Stage 5. Stage 2 authorizes only a scoped Conditional calculation handoff.
 
-### Stage 3 — **MAT-001** (R2 vertex)
+### Stage 3 — **MAT-001** (R2 vertex) ← **DONE (scoped calc only)**
 
 **Goal:** compute \(\Cobs\) and \(V=C_m/\sqrt{K_Q}\) from one \(S_{\mathrm{int}}\).
 
 Prerequisites: Stage 1 PASS_BOUNDED; Stage 2 exit plus explicit Conditional handoff amendment; force-sector slice frozen as MAT input.
 
-**Exit criterion:** provisional \(\Cobs\) and \(V\) under named premises; claim ledger updated; no MAT PASS tag and no downstream Derived use until Stage 5.
+**Exit criterion (met as provisional structure):** scoped package
+`PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` freezes static-reduction forms and
+Conditional \(\Cobs\sim 1\) baseline; \(V\) remains **NOT_COMPUTED** (\(K_Q\)
+NOT_DERIVED). No MAT PASS tag; no downstream Derived use until Stage 5.
 
-### Stage 4 — **UVIR M3/M6 upgrade** (post-MAT)
+### Stage 4 — **UVIR M3/M6 upgrade** (post-MAT) ← **NEXT**
 
 **Goal:** substitute matched \(V\) (and \(\Cobs\)) into route maps → re-evaluate \(q_\times\), \(\Lambda_\parallel\).
 
@@ -124,5 +127,7 @@ Only after Stage 5 (and Stage 6 for P4 SPARC claims).
 |-------|--------|----------------|
 | 0 | **DONE** | α.10 + inventory + causality Conditional + matching maps |
 | 1 | **DONE** | `PASS_DECLARED_WEAK_COUPLING_DOMAIN` — M2 PASS_BOUNDED |
-| 2 | **IN PROGRESS** | 2a R3 audit complete as Classification C; **2b Conditional floor next** |
-| 3–7 | pending | — |
+| 2 | **DONE (Conditional-with-scope)** | 2a C; 2b floor; 2c `PASS_STAGE2C_FLOOR_DIAGNOSTICS` |
+| 3 | **DONE (scoped calc only)** | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL` — **no MAT PASS**; \(V\) NOT_COMPUTED |
+| 4 | **NEXT** | M3/M6 upgrade path (needs \(V\) or permanent Conditional limit) |
+| 5–7 | pending | — |

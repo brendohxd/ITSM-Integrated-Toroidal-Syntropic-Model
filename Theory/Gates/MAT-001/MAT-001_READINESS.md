@@ -1,9 +1,10 @@
 # MAT-001 — Readiness checklist (R2 force–matter matching)
 
-**Status:** gate PASS and downstream Derived use **BLOCKED**; scoped calculation awaits Stage-2 Conditional handoff
+**Status:** gate PASS and downstream Derived use **BLOCKED**; scoped calculation **run** (`PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL`) — **not** MAT PASS  
 **Branch:** `recovery/v12-core-architecture`  
-**Date:** 2026-08-03  
-**Authority:** Master Research Plan §5; UVIR-003 force sector; Selective Publishing Plan (P3/P4 downstream)
+**Date:** 2026-08-04  
+**Authority:** Master Research Plan §5; UVIR-003 force sector; Selective Publishing Plan (P3/P4 downstream)  
+**Scoped package:** `MAT-001_SCOPED_CALCULATION.md`
 
 ## What MAT-001 is
 
@@ -75,16 +76,16 @@ This does **not** unblock MAT; it makes the MAT target quantity explicit.
 
 ## MAT-001 open checklist (when unblocked)
 
-- [ ] For calculation start: Stage-2 exit plus explicit Conditional MAT-only handoff
-- [ ] For MAT gate PASS/downstream Derived use: UVIR-003 full-gate status upgraded from IN_PROGRESS
-- [ ] Declare interaction \(S_{\mathrm{int}}[\Psi_m,\psi,U,g]\)  
-- [ ] Derive static weak-field reduction → \(C_m\), \(C_{\mathrm{IR}}\) (or \(A\))  
-- [ ] Report \(\Cobs\) as **Derived under named premises**  
-- [ ] **Compute \(V=C_m/\sqrt{K_Q}\)** (primary R2 target for causality/NDA)  
-- [ ] Map \(I_{a_0}\), \(\Lambda_\parallel\) from \((\Cobs,C_{\mathrm{IR}},V)\) via matching-route formulas  
-- [ ] Map result onto full invariant list (do not only quote bare \(K_Q\))  
-- [ ] Update claim ledger + Selective Publishing ban-list cross-check  
-- [ ] **Not** claim SPARC / cosmic \(H_0\) validation from this gate alone  
+- [x] For calculation start: Stage-2 exit plus explicit Conditional MAT-only handoff  
+- [ ] For MAT gate PASS/downstream Derived use: UVIR-003 full-gate status upgraded from IN_PROGRESS  
+- [x] Declare interaction \(S_{\mathrm{int}}\) **form** (\(-\,C_m\rho_b\psi\); architecture)  
+- [x] Static weak-field reduction **form** → \(\Cobs=C_m^{3/2}/\sqrt{C_{\mathrm{IR}}}\)  
+- [ ] Report \(\Cobs\) as **Derived from micro \(S_{\mathrm{int}}\)** (still Conditional baseline only)  
+- [ ] **Compute \(V=C_m/\sqrt{K_Q}\)** from dynamics (\(K_Q\) still NOT_DERIVED)  
+- [x] Map \(I_{a_0}\) formula in \((\Cobs,C_{\mathrm{IR}},V)\) (form only)  
+- [ ] Map numeric result onto full invariant list  
+- [ ] Update claim ledger + Selective Publishing ban-list on real MAT PASS  
+- [x] **Not** claim SPARC / cosmic \(H_0\) validation from this gate alone  
 
 ## What MAT unlocks
 
