@@ -266,11 +266,11 @@ action drafts on identity pillars — only premature Derived packaging.
 ### 5.2 Current freeze boundary (update when freezing)
 
 - **Latest frozen manuscript (Git):** see `Manuscript/CoreRecovery/VERSION`  
-- **As of 2026-08-03:** `12.0-alpha.10` — post–alpha.9 UVIR-003 path package (Green, Track-A \(|\nabla\pi|^3\), declared unitarity criterion, \(K_Q\) inventory); full UVIR-003 still IN PROGRESS  
-- **Prior freeze:** `12.0-alpha.9` — local tetrahedral four-leg kernel only  
+- **As of 2026-08-04:** `12.0-alpha.11` — tier-1 closure hold and identity-decision checkpoint; full UVIR-003 remains IN PROGRESS and MAT-001 remains BLOCKED
+- **Prior freeze:** `12.0-alpha.10` — post-alpha.9 UVIR-003 path package
 
 - **Authoritative status:**
-  - **Frozen manuscript (α.10):** UVIR-003 is **in progress**; MAT-001 is **not unlocked**.  
+  - **Frozen manuscript (alpha.11):** UVIR-003 is **in progress**; MAT-001 is **not unlocked**; \(V\) is **NOT_COMPUTED**.
   - **Programme / gate ledger (post–α.10 Stages 1–5):** the earlier `PASS_BOUNDED_CONDITIONAL` interpretation is superseded. Stage 5 now records `PASS_STAGE5_DECISION_HOLD_TIER1`, while the physics gate remains **`IN_PROGRESS`** with M2, M3, M6 and M7 incomplete at tier 1; \(K_Q\) is NOT_DERIVED, \(V\) is NOT_COMPUTED, and a MAT PASS tag is forbidden.  
 - **MAT-001:** still **blocked** for PASS tag (scoped calculation package exists under Conditional handoff only)  
 - **Post–alpha.9 working substeps (not a manuscript freeze):**  
@@ -294,14 +294,18 @@ action drafts on identity pillars — only premature Derived packaging.
   - PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT — **Stage 4 record**: useful Conditional M3/M6 diagnostics, but insufficient for tier-1 closure; Stage 4A must reopen after matching
   - PASS_STAGE5_DECISION_HOLD_TIER1 — **Stage 5 decision audit**: `full_gate_status=IN_PROGRESS`; M2/M3/M6/M7 block tier-1 closure; no MAT PASS
   - Serial order: Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md  
+- **Post-alpha.11 MAT normalization preparation:**
+  - `PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY` — proves the same-action form \(V=g_\phi/\sqrt{Z_\phi}\), not a numerical match
+  - `PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT` — distinguishes canonical vertex, mixed response and source-source exchange coefficients; \(V\) remains `NOT_COMPUTED`
+  - `PASS_MAT001_UNIT_CHART_CONTRACT_OPEN` — separates covariant and coordinate-time SI coefficient charts; no SI observable chart or microscopic coefficient is selected
 - **Next working priorities (serial critical path):**  
-  1. Compute \(V=C_m/\sqrt{K_Q}\), or an equivalent matched invariant, from one declared action and field chart.
+  1. Compute \(V=C_m/\sqrt{K_Q}\), or an equivalent projected source invariant, from one declared action, physical mode and named field/unit chart.
   2. Reopen **Stage 4A**: re-evaluate causality, the relevant IR complex-quartet response, and the physical cutoff/unitarity result in the intended claim domain.
   3. Run a later independent **Stage 5** closure review; until then UVIR-003 remains `IN_PROGRESS`.
   4. Complete the MAT-001 checklist before any MAT PASS or downstream Derived use.
   5. Then complete DISK-001 + STAT-001 before full P3/P4 claim packaging.
   6. Continue TOP/VOR/WAK/reservoir identity work in parallel without presenting it as UVIR closure.
-  7. Freeze **α.11** only after a substantive reviewed manuscript integration; a checkpoint build may record the open gate but cannot upgrade its claims.
+  7. Keep **alpha.11** immutable. Do not freeze alpha.12 merely for structural identities; require a substantive reviewed manuscript integration without claim promotion.
 
 
 Reproduce alpha.9 baseline:

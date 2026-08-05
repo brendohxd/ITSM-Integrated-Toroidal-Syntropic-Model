@@ -1106,3 +1106,28 @@ The serial next move is to compute \(V\), or an equivalent matched invariant,
 then reopen Stage 4A for causality, relevant IR control, and the physical
 cutoff before a later independent Stage 5 review. No alpha.11 freeze or P3
 claim upgrade is created by this correction.
+## 2026-08-05 - MAT-001 normalization and SI coefficient-chart contract
+
+Gate: MAT-001 (post-alpha.11 matching preparation)
+
+**J1 result:** a single parent action with kinetic coefficient \(Z_\phi\),
+matter coefficient \(g_\phi\), and chart map \(\psi=f_\phi\phi\) gives
+\(K_Q=Z_\phi/f_\phi^2\), \(C_m=g_\phi/f_\phi\), and the invariant
+\(V=g_\phi/\sqrt{Z_\phi}\). The coefficients themselves remain unmatched.
+
+**R2 correction:** the canonical source vertex is \(V\), the mixed
+field-source response is \(V/P\), and the source-source exchange coefficient
+is proportional to \(V^2/P\). The repaired audit is ASCII-safe in default
+Windows PowerShell, rejects non-finite inputs, locks \(V\) to `NOT_COMPUTED`,
+and does not claim a live physical-eigenmode extraction.
+
+**Unit decision:** the existing natural/covariant chart is dimensionally
+closed. With SI potential units, the coordinate-time coefficient is
+\(K_Q^{(t)}=K_Q^{(x^0)}/c^2\). Therefore an explicit \(c^2\) belongs in the
+coordinate-time ratio but not the covariant \(x^0=ct\) ratio. Neither chart is
+selected as a numerical observable convention by this audit.
+
+**Decision:** record the three structural subgate passes while preserving
+MAT-001 `BLOCKED`, UVIR-003 `IN_PROGRESS`, \(K_Q\) `NOT_DERIVED`, \(V\)
+`NOT_COMPUTED`, `physics_pass: false`, and Stage 4A closed. No frozen release
+or downstream Derived claim is created.

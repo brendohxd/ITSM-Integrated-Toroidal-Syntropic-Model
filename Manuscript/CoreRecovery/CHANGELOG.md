@@ -5,7 +5,16 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
-_No changes yet._
+### MAT-001 normalization preparation
+
+- Added post-alpha.11 supporting records for the same-action identity,
+  canonical response taxonomy, and natural/SI coefficient-chart contract.
+- Distinguished the covariant \(x^0=ct\) coefficient from the coordinate-time
+  coefficient, \(K_Q^{(t)}=K_Q^{(x^0)}/c^2\), without inserting a universal
+  extra \(c^{-2}\) into the existing natural-unit formulae.
+- Preserved \(V\) as `NOT_COMPUTED`, MAT-001 as `BLOCKED`, UVIR-003 as
+  `IN_PROGRESS`, and Stage 4A as closed. No working manuscript section or
+  frozen release is promoted by these repository-side preparation records.
 
 ## 12.0-alpha.11 - 2026-08-04
 

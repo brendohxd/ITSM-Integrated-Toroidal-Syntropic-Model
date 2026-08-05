@@ -434,6 +434,15 @@ Derive the baryon--phonon vertex and calculate the observable Wilson
 coefficient. The geometric `2/3` trace ratio is an input motivation, not the
 answer. Field redefinitions and kinetic normalization must be fixed before the
 coefficient can be compared with data.
+Post-alpha.11 preparation fixes the calculation contract without claiming the
+answer. J1 proves that a parent action with kinetic coefficient \(Z_\phi\) and
+matter coefficient \(g_\phi\) gives
+\(V=C_m/\sqrt{K_Q}=g_\phi/\sqrt{Z_\phi}\). R2 distinguishes the canonical
+vertex from mixed and source-source response residues. The natural/SI chart
+contract records \(K_Q^{(t)}=K_Q^{(x^0)}/c^2\), so powers of \(c\) may not be
+inserted without naming the coefficient chart. These are structural passes;
+\(V\) remains `NOT_COMPUTED` and Stage 4A remains closed. See
+`Theory/Gates/MAT-001/MAT-001_UNIT_CHART_CONTRACT.md`.
 
 ### SCR-001 -- High-gradient screening
 

@@ -74,6 +74,19 @@ I_{a_0}=\frac{A a_0}{K_Q}
 Subgate: `PASS_MATCHING_ROUTE_PROGRAM_OPEN`  
 Script: `Analysis/UVIR/UVIR-003/uvir003_matching_route_program.py`  
 This does **not** unblock MAT; it makes the MAT target quantity explicit.
+### Post-alpha.11 normalization preparation (2026-08-05)
+
+| Package | Established | Still open |
+|---|---|---|
+| J1 joint-action identity | \(V=g_\phi/\sqrt{Z_\phi}\) when both coefficients come from one parent action | Microscopic \(g_\phi,Z_\phi\) |
+| R2 canonical response | Vertex \(V\), mixed response \(V/P\), exchange coefficient \(V^2/P\) are distinct | Live constraint reduction and physical-mode projection |
+| Unit-chart contract | \(K_Q^{(t)}=K_Q^{(x^0)}/c^2\); current natural/covariant ratios are dimensionally closed | Selected SI observable/action chart |
+
+Subgates: `PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY`,
+`PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT`, and
+`PASS_MAT001_UNIT_CHART_CONTRACT_OPEN`. All three preserve
+`V: NOT_COMPUTED`, `mat001_pass: false`, `physics_pass: false`, UVIR-003
+`IN_PROGRESS`, and Stage 4A closed.
 
 ## MAT-001 open checklist (when unblocked)
 
@@ -111,4 +124,7 @@ Analysis/UVIR/UVIR-003/uvir003_kq_matching_inventory.py
 Analysis/UVIR/UVIR-003/uvir003_matching_route_program.py
 Analysis/UVIR/UVIR-003/uvir003_declared_unitarity_eft_criterion.py
 Analysis/UVIR/UVIR-003/uvir003_nonzero_gradient_force_local.py
+Analysis/MAT/MAT-001/J1_JOINT_ACTION/mat001_j1_joint_action_normalization.py
+Analysis/MAT/MAT-001/R2_DIRECT_RESIDUE/mat001_r2_direct_residue_audit.py
+Analysis/MAT/MAT-001/UNIT_CHART/mat001_unit_chart_contract.py
 ```

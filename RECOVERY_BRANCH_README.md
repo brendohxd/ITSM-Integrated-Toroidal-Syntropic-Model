@@ -302,6 +302,27 @@ result; (3) run a later independent Stage 5 closure review; (4) complete MAT,
 then DISK/STAT, before full P3/P4 claim packaging. Alpha.11 freezes this
 honest checkpoint without upgrading those claims.
 
+### Post-alpha.11 MAT normalization preparation - 2026-08-05
+
+Three post-freeze structural audits now make the matching target unambiguous:
+
+- J1 derives the same-action identity
+  \(V=C_m/\sqrt{K_Q}=g_\phi/\sqrt{Z_\phi}\) without supplying either
+  microscopic coefficient.
+- R2 distinguishes the canonical source vertex \(V\), the mixed response
+  coefficient \(V/P\), and the source-source exchange coefficient
+  proportional to \(V^2/P\).
+- The unit-chart contract separates the covariant \(x^0=ct\) coefficient from
+  the coordinate-time coefficient,
+  \(K_Q^{(t)}=K_Q^{(x^0)}/c^2\), and rejects a universal extra \(c^{-2}\).
+
+These are evidence-integrity and dimensional-contract passes only. Numerical
+\(K_Q\) remains `NOT_DERIVED`, \(V\) remains `NOT_COMPUTED`, MAT-001 remains
+`BLOCKED`, UVIR-003 remains `IN_PROGRESS`, and Stage 4A remains closed. See
+`Theory/Gates/MAT-001/MAT-001_J1_JOINT_ACTION_NORMALIZATION.md`,
+`MAT-001_R2_DIRECT_RESIDUE_AUDIT.md`, and
+`MAT-001_UNIT_CHART_CONTRACT.md`. No frozen manuscript release is modified.
+
 Authoritative process detail:
 `Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md` and
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_STAGE5_FULL_GATE_DECISION.md`.
@@ -334,6 +355,8 @@ Further scaffold-only executables and decision records:
 - WAK-001 C2 decision packet: `NOT_SELECTED`; C1/C2/C3 remain Open
 - RES-001 R1 decision packet: `NOT_SELECTED`; R1/R2/R3 remain Open
 - MAT-001 kinetic-chart blocker inventory: $V$ remains `NOT_COMPUTED`
+- MAT-001 J1/R2/unit-chart preparation: structural identities and coefficient
+  charts pass; microscopic matching remains open
 
 See `Theory/Gates/IDENTITY_GATE_CHECKPOINT_2026-08-04.md` and
 `Theory/Gates/RES-001/`.
