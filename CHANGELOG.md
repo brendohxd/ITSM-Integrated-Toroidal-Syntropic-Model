@@ -8,6 +8,10 @@
 - **Execution trajectory:** Published the ordered live-export inventory, conditional MAT wiring, Stage 4A reopen, independent Stage 5 review and bounded parallel-work queue.
 - **Responsive presentation:** Added desktop, tablet and mobile status-card layouts while retaining the recovery site's existing visual language.
 - **Validation:** Local links and assets resolve, HTML structure parses, desktop/mobile views have no horizontal overflow, and the browser console reports no warnings or errors.
+- **Purpose-built site figures:** Replaced the five live visual slots with a coherent original v2 set (open-plenum hero, wake response, compact-domain topology, IR mode response and dual flow). The new figures are explicitly scoped as conceptual illustrations; previous assets remain retained.
+- **Responsive hardening:** Removed the fixed mobile minimum-height constraint that forced the dual-flow visual beyond a narrow viewport; the image now scales within the available column.
+- **Purpose-built site figures:** Replaced the five live visual slots with a coherent original v2 set (open-plenum hero, wake response, compact-domain topology, IR mode response and dual flow). The new figures are explicitly scoped as conceptual illustrations; previous assets remain retained.
+- **Responsive hardening:** Removed the fixed mobile minimum-height constraint that forced the dual-flow visual beyond a narrow viewport; the image now scales within the available column.
 
 ## Version 11.4.2 — Red-Team Diagnostics & Independence Audits (2026-07-14)
 

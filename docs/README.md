@@ -15,6 +15,12 @@ Multi-page recovery-era research site.
 **Live domain:** https://itsm-cosmology.com  
 **Deploy:** `gh-pages` branch root (see repo Settings → Pages)
 
+## Visual assets
+
+The assets/web/*_v2.png figures are purpose-built conceptual illustrations
+for the recovery-era site. They are not numerical outputs, observational
+evidence, or replacements for executable gate reports. Earlier assets are
+retained as provenance and fallback material.
 ```powershell
 cd docs
 python -m http.server 8080

@@ -1257,16 +1257,11 @@ figure.visual-card,
 
 /* Pillar split with image — give the schematic more width so dual panels aren't cropped */
 .home-split {
+  min-width: 0;
   display: grid;
   grid-template-columns: 1.25fr 0.85fr;
   gap: 1.1rem;
   align-items: stretch;
-}
-
-@media (max-width: 900px) {
-  .home-split {
-    grid-template-columns: 1fr;
-  }
 }
 
 .home-split-visual {
@@ -1278,6 +1273,18 @@ figure.visual-card,
   position: relative;
   box-shadow: var(--shadow);
   background: #05060c;
+}
+
+@media (max-width: 900px) {
+  .home-split {
+    grid-template-columns: 1fr;
+  }
+
+  .home-split-visual {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+  }
 }
 
 .home-split-visual picture {
