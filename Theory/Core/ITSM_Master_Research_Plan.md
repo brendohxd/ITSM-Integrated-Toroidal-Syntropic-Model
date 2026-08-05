@@ -274,6 +274,7 @@ action drafts on identity pillars — only premature Derived packaging.
   - **Programme / gate ledger (post–α.10 Stages 1–5):** the earlier `PASS_BOUNDED_CONDITIONAL` interpretation is superseded. Stage 5 now records `PASS_STAGE5_DECISION_HOLD_TIER1`, while the physics gate remains **`IN_PROGRESS`** with M2, M3, M6 and M7 incomplete at tier 1; \(K_Q\) is NOT_DERIVED, \(V\) is NOT_COMPUTED, and a MAT PASS tag is forbidden.  
 - **MAT-001:** still **blocked** for PASS tag (scoped calculation package exists under Conditional handoff only)  
 - **Post-alpha.11 handoff audit:** the eight-record UVIR-to-MAT contract is internally consistent and fail closed; a symbolic physical-mode projection audit is authorized, but numerical \(V\), Stage 4A reopening and MAT/UVIR PASS remain forbidden
+- **Post-alpha.11 J2 projection:** the constraint-dressed canonical coupling \(g_{\rm can}=c_{\rm eff}^Tu/\sqrt{u^TKu}\) is basis invariant on an exact template; the live same-action matrices are not yet exported, so \(V\) remains NOT_COMPUTED
 - **Post–alpha.9 working substeps (not a manuscript freeze):**  
   - `PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT` — off-tetra disphenoid kernel  
   - denser edge scan tag `dense_edge` (domain failures rise near edge; kernel still finite)  

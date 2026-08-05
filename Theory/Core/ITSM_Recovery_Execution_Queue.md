@@ -14,7 +14,7 @@ outputs remain the evidence authority.
 | Priority | Task | Status | Definition of done |
 |---|---|---|---|
 | P0 | UVIR-to-MAT fail-closed handoff audit | **completed** | Eight exact upstream contracts pass; corrupted/mismatched input fails; docs and checkpoint pushed |
-| P0 | MAT basis-covariant physical-mode vertex projection | **queued** | Projection identity, field-basis covariance, kinetic normalization and negative controls pass without computing \(V\) |
+| P0 | MAT basis-covariant physical-mode vertex projection | **completed** | Projection identity, field-basis covariance, kinetic normalization and negative controls pass without computing \(V\) |
 | P1 | TOP S1M physical-eigenvalue cutoff invariance | **queued** | Modularly reindexed spectra agree under a physical cutoff; raw coordinate-box cutoff hazard reproduced |
 
 ## Capacity and sequencing
@@ -49,4 +49,4 @@ change the next task before additional claims are built on it.
 - reopening UVIR Stage 4A;
 - full UVIR/MAT physics PASS;
 - alpha.12 manuscript freeze;
-- cosmological, SPARC, lensing or (H_0) packaging.
+- cosmological, SPARC, lensing or \(H_0\) packaging.

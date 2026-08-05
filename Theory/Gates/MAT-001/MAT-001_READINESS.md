@@ -82,14 +82,17 @@ This does **not** unblock MAT; it makes the MAT target quantity explicit.
 | R2 canonical response | Vertex \(V\), mixed response \(V/P\), exchange coefficient \(V^2/P\) are distinct | Live constraint reduction and physical-mode projection |
 | Unit-chart contract | \(K_Q^{(t)}=K_Q^{(x^0)}/c^2\); current natural/covariant ratios are dimensionally closed | Selected SI observable/action chart |
 | UVIR handoff contract | Eight UVIR/MAT records form a consistent fail-closed interface for a scoped projection audit | Action-level source vector, kinetic metric and numerical matching |
+| J2 mode projection | \(g_{\rm can}=c_{\rm eff}^Tu/\sqrt{u^TKu}\) after constraint elimination is basis invariant | Live same-action \(K,C,B,d,h,u\) export and numerical matching |
 
 Subgates: `PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY`,
-`PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT`, and
-`PASS_MAT001_UNIT_CHART_CONTRACT_OPEN`, and
-`PASS_MAT001_UVIR_HANDOFF_CONTRACT_BLOCKED`. All four preserve \(V\) as
+`PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT`,
+`PASS_MAT001_UNIT_CHART_CONTRACT_OPEN`,
+`PASS_MAT001_UVIR_HANDOFF_CONTRACT_BLOCKED`, and
+`PASS_MAT001_J2_BASIS_COVARIANT_MODE_PROJECTION_TEMPLATE`. All five preserve \(V\) as
 `NOT_COMPUTED`, `mat001_pass: false`, `physics_pass: false`, UVIR-003
-`IN_PROGRESS`, and Stage 4A closed. The handoff subgate authorizes only the
-next symbolic physical-mode projection audit.
+`IN_PROGRESS`, and Stage 4A closed. The handoff subgate authorized only the
+symbolic physical-mode projection audit; J2 derives that method on exact
+template matrices but receives no live action export.
 
 ## MAT-001 open checklist (when unblocked)
 
@@ -131,4 +134,5 @@ Analysis/MAT/MAT-001/J1_JOINT_ACTION/mat001_j1_joint_action_normalization.py
 Analysis/MAT/MAT-001/R2_DIRECT_RESIDUE/mat001_r2_direct_residue_audit.py
 Analysis/MAT/MAT-001/UNIT_CHART/mat001_unit_chart_contract.py
 Analysis/MAT/MAT-001/HANDOFF/mat001_uvir_handoff_contract_audit.py
+Analysis/MAT/MAT-001/J2_MODE_PROJECTION/mat001_j2_basis_covariant_mode_projection.py
 ```

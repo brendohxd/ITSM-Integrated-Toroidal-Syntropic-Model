@@ -1,0 +1,254 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "upstream_fail_closed_handoff_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "mat001_uvir_handoff_contract_summary.json"
+    },
+    {
+      "A_eff": [
+        [
+          "8",
+          "0"
+        ],
+        [
+          "0",
+          "27"
+        ]
+      ],
+      "c_eff": [
+        "5",
+        "7"
+      ],
+      "formula": "A_eff=A-B*C^-1*B^T; c_eff=d-B*C^-1*h",
+      "name": "constraint_elimination_recovers_effective_blocks",
+      "ok": true
+    },
+    {
+      "modes": [
+        {
+          "canonical_source_coupling": "5/2",
+          "e": [
+            "1/2",
+            "0"
+          ],
+          "generalized_eigen_equation_exact": true,
+          "generalized_eigenvalue": "2",
+          "kinetic_norm": "1",
+          "name": "mode_1"
+        },
+        {
+          "canonical_source_coupling": "7/3",
+          "e": [
+            "0",
+            "1/3"
+          ],
+          "generalized_eigen_equation_exact": true,
+          "generalized_eigenvalue": "3",
+          "kinetic_norm": "1",
+          "name": "mode_2"
+        }
+      ],
+      "name": "generalized_modes_are_K_orthonormal",
+      "ok": true
+    },
+    {
+      "constraint_basis_map": "z=S*w",
+      "dynamical_basis_map": "x=R*y",
+      "name": "schur_blocks_transform_covariantly",
+      "ok": true
+    },
+    {
+      "identity": "g_can=(c_eff^T*u)/sqrt(u^T*K*u)",
+      "name": "canonical_mode_couplings_are_basis_invariant",
+      "ok": true,
+      "results": [
+        {
+          "exact": true,
+          "g_original": "5/2",
+          "g_transformed": "5/2",
+          "name": "mode_1"
+        },
+        {
+          "exact": true,
+          "g_original": "7/3",
+          "g_transformed": "7/3",
+          "name": "mode_2"
+        }
+      ]
+    },
+    {
+      "name": "single_field_limit_recovers_J1_identity",
+      "ok": true,
+      "relation_to_J1": "This is the structural V identity, not a numerical V computation.",
+      "result": "g_phi/sqrt(Z_phi)"
+    },
+    {
+      "cases": {
+        "euclidean_normalization_is_not_basis_invariant": true,
+        "omitting_constraint_source_dressing_changes_result": true,
+        "untransformed_mode_vector_changes_result": true,
+        "untransformed_source_covector_changes_result": true
+      },
+      "name": "projection_negative_controls_detect_inconsistent_operations",
+      "ok": true
+    },
+    {
+      "cases": {
+        "indefinite_kinetic_matrix": true,
+        "nonsymmetric_kinetic_matrix": true,
+        "singular_basis_map": true,
+        "singular_constraint_matrix": true,
+        "wrong_source_shape": true,
+        "zero_kinetic_norm_mode": true
+      },
+      "name": "malformed_projection_inputs_rejected",
+      "ok": true
+    },
+    {
+      "flags": {
+        "claims_MAT_pass": false,
+        "claims_UVIR_pass": false,
+        "claims_downstream_Derived": false,
+        "computes_numeric_V": false,
+        "derives_numeric_K_Q": false,
+        "physics_pass": false,
+        "reopens_stage4A": false,
+        "uses_live_UVIR_action_matrices": false
+      },
+      "live_export": {
+        "action_level_algebraic_constraint_matrix": "NOT_PROVIDED_TO_THIS_TEMPLATE",
+        "action_level_dynamical_kinetic_metric": "NOT_PROVIDED_TO_THIS_TEMPLATE",
+        "action_level_matter_source_covectors": "NOT_PROVIDED_TO_THIS_TEMPLATE",
+        "numeric_V": "NOT_COMPUTED",
+        "physical_mode_direction_in_same_chart": "NOT_PROVIDED_TO_THIS_TEMPLATE"
+      },
+      "name": "live_export_and_claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "claims_MAT_pass": false,
+    "claims_UVIR_pass": false,
+    "claims_downstream_Derived": false,
+    "computes_numeric_V": false,
+    "derives_numeric_K_Q": false,
+    "physics_pass": false,
+    "reopens_stage4A": false,
+    "uses_live_UVIR_action_matrices": false
+  },
+  "exact_template": {
+    "A": [
+      [
+        "41/5",
+        "2/5"
+      ],
+      [
+        "2/5",
+        "139/5"
+      ]
+    ],
+    "A_eff": [
+      [
+        "8",
+        "0"
+      ],
+      [
+        "0",
+        "27"
+      ]
+    ],
+    "B": [
+      [
+        "1"
+      ],
+      [
+        "2"
+      ]
+    ],
+    "C": [
+      [
+        "5"
+      ]
+    ],
+    "K": [
+      [
+        "4",
+        "0"
+      ],
+      [
+        "0",
+        "9"
+      ]
+    ],
+    "c_eff": [
+      "5",
+      "7"
+    ],
+    "d": [
+      "27/5",
+      "39/5"
+    ],
+    "h": [
+      "2"
+    ],
+    "modes": [
+      {
+        "canonical_source_coupling": "5/2",
+        "e": [
+          "1/2",
+          "0"
+        ],
+        "generalized_eigen_equation_exact": true,
+        "generalized_eigenvalue": "2",
+        "kinetic_norm": "1",
+        "name": "mode_1"
+      },
+      {
+        "canonical_source_coupling": "7/3",
+        "e": [
+          "0",
+          "1/3"
+        ],
+        "generalized_eigen_equation_exact": true,
+        "generalized_eigenvalue": "3",
+        "kinetic_norm": "1",
+        "name": "mode_2"
+      }
+    ]
+  },
+  "gate": "MAT-001",
+  "kq_numeric_status": "NOT_DERIVED",
+  "label": "exact_symbolic_template_not_live_matching",
+  "live_action_export": {
+    "action_level_algebraic_constraint_matrix": "NOT_PROVIDED_TO_THIS_TEMPLATE",
+    "action_level_dynamical_kinetic_metric": "NOT_PROVIDED_TO_THIS_TEMPLATE",
+    "action_level_matter_source_covectors": "NOT_PROVIDED_TO_THIS_TEMPLATE",
+    "numeric_V": "NOT_COMPUTED",
+    "physical_mode_direction_in_same_chart": "NOT_PROVIDED_TO_THIS_TEMPLATE"
+  },
+  "live_action_export_status": "NOT_PROVIDED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 9,
+  "numeric_matching_status": "BLOCKED_LIVE_ACTION_EXPORT_REQUIRED",
+  "physics_pass": false,
+  "projection_identity_status": "DERIVED_TEMPLATE",
+  "quadratic_convention": {
+    "basis_maps": "x=R*y; z=S*w; u_y=R^-1*u; c_eff_y=R^T*c_eff; K_y=R^T*K*R",
+    "canonical_projection": "g_can=(c_eff^T*u)/sqrt(u^T*K*u)",
+    "constraint_solution": "z=C^-1(rho*h-B^T*x)",
+    "effective_operator": "A_eff=A-B*C^-1*B^T",
+    "effective_source": "c_eff=d-B*C^-1*h",
+    "lagrangian": "1/2 xdot^T K xdot - 1/2 x^T A x - x^T B z - 1/2 z^T C z + rho(d^T x + h^T z)"
+  },
+  "scientific_boundary": "A PASS derives and verifies the canonical source-projection identity, including constraint-source dressing and field-basis covariance, on an exact symbolic template. It does not show that the current UVIR action exports the required matrices, identify a live physical eigenmode, compute V or K_Q, reopen Stage 4A, or authorize MAT/UVIR/downstream physics claims.",
+  "serial_next": "Inventory the live UVIR quadratic reduction for K, C, B, d and h in one named field chart. Wire them only if their action-level provenance and dimensions are explicit; otherwise retain BLOCKED_LIVE_ACTION_EXPORT_REQUIRED.",
+  "stage": "J2_BASIS_COVARIANT_PHYSICAL_MODE_PROJECTION",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_J2_BASIS_COVARIANT_MODE_PROJECTION_TEMPLATE",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

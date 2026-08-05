@@ -5,6 +5,16 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+### MAT-001 J2 physical-mode projection method
+
+- Added an exact constraint-dressed canonical source-projection identity and
+  proved its covariance under simultaneous dynamical/constraint basis changes.
+- Reproduced the J1 single-field limit and added negative controls for incorrect
+  source/mode transformations, Euclidean normalization and omitted constraint dressing.
+- Kept every live UVIR matrix as not provided, \(V\) as `NOT_COMPUTED`,
+  MAT-001 as `BLOCKED`, Stage 4A closed and `physics_pass: false`; no working
+  manuscript section or frozen release is promoted.
+
 ### UVIR-to-MAT handoff contract
 
 - Added a fail-closed eight-record audit of the current UVIR closure boundary

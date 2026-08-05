@@ -1170,3 +1170,21 @@ projection audit only. Numerical \(V\) matching remains unready because the
 same-action physical source vector and kinetic metric are not yet jointly
 exported in one declared chart. MAT-001 remains `BLOCKED`, UVIR-003 remains
 `IN_PROGRESS`, Stage 4A remains closed, and no downstream Derived use or
+frozen release is authorized.
+
+## 2026-08-05 - MAT-001 J2 basis-covariant mode projection
+
+Gate: MAT-001 scoped matching method
+
+**Exact result:** after eliminating algebraic constraints, the effective source
+is \(c_{\rm eff}=d-BC^{-1}h\) and its canonical coupling to mode \(u\) is
+\(g_{\rm can}=c_{\rm eff}^Tu/\sqrt{u^TKu}\). The audit proves covariance
+under invertible dynamical and constraint-field basis changes and reproduces
+the J1 single-field identity.
+
+**Boundary:** all live UVIR action matrices remain
+`NOT_PROVIDED_TO_THIS_TEMPLATE`; the executable uses exact rational template
+matrices only. The method subgate passes, but \(V\) remains `NOT_COMPUTED`,
+MAT-001 remains `BLOCKED`, UVIR-003 remains `IN_PROGRESS`, Stage 4A remains
+closed, and no physics PASS, downstream Derived claim or frozen release is
+authorized.
