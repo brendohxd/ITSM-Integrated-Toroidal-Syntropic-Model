@@ -55,11 +55,42 @@ body {
   position: fixed;
   inset: 0;
   z-index: -2;
+  overflow: hidden;
   background:
     radial-gradient(ellipse 900px 500px at 15% -5%, rgba(80, 110, 200, 0.22), transparent 60%),
     radial-gradient(ellipse 700px 480px at 90% 10%, rgba(180, 130, 60, 0.1), transparent 55%),
     radial-gradient(ellipse 1000px 700px at 50% 100%, rgba(40, 60, 120, 0.18), transparent 50%),
     linear-gradient(180deg, #070a14 0%, var(--void) 40%, #06080f 100%);
+}
+
+.sky::before {
+  content: "";
+  position: absolute;
+  width: clamp(680px, 92vw, 1180px);
+  height: clamp(360px, 52vw, 650px);
+  left: 55%;
+  top: 38%;
+  border-radius: 50%;
+  background:
+    repeating-conic-gradient(
+      from 18deg at 50% 50%,
+      rgba(142, 182, 255, 0.11) 0deg 1deg,
+      transparent 1.5deg 12deg
+    ),
+    radial-gradient(
+      ellipse at center,
+      rgba(212, 176, 106, 0.16) 0%,
+      rgba(142, 182, 255, 0.06) 34%,
+      rgba(142, 182, 255, 0.12) 48%,
+      transparent 70%
+    );
+  -webkit-mask-image: radial-gradient(ellipse at center, transparent 0 29%, #000 38% 59%, transparent 70%);
+  mask-image: radial-gradient(ellipse at center, transparent 0 29%, #000 38% 59%, transparent 70%);
+  mix-blend-mode: screen;
+  opacity: 0.48;
+  transform: translate3d(-50%, -50%, 0) rotate(-9deg);
+  transform-origin: center;
+  pointer-events: none;
 }
 
 .sky::after {
@@ -979,6 +1010,14 @@ code {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .sky::before {
+    animation: ambient-field-orbit 72s linear infinite;
+  }
+
+  .sky::after {
+    animation: ambient-star-drift 120s linear infinite;
+  }
+
   .reveal {
     animation: rise 0.9s var(--ease) both;
   }
@@ -987,6 +1026,27 @@ code {
   }
   .reveal-delay-2 {
     animation-delay: 0.16s;
+  }
+}
+
+@keyframes ambient-field-orbit {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(-9deg) scale(1);
+  }
+  50% {
+    transform: translate3d(-48%, -52%, 0) rotate(171deg) scale(1.04);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(351deg) scale(1);
+  }
+}
+
+@keyframes ambient-star-drift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 700px 280px;
   }
 }
 
@@ -1017,6 +1077,16 @@ body.home .sky {
 
 body.home .torus-mark {
   opacity: 0.18;
+}
+
+@media (max-width: 700px) {
+  .sky::before {
+    width: 150vw;
+    height: 82vw;
+    left: 60%;
+    top: 28%;
+    opacity: 0.32;
+  }
 }
 
 /* Full-bleed cinema hero */

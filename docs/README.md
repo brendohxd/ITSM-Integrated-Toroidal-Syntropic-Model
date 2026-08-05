@@ -31,6 +31,11 @@ The assets/web/*_v2.png figures are purpose-built conceptual illustrations
 for the recovery-era site. They are not numerical outputs, observational
 evidence, or replacements for executable gate reports. Earlier assets are
 retained as provenance and fallback material.
+
+The shared background adds a slow CSS-only toroidal field and star drift. This
+motion is decorative rather than a numerical simulation, does not receive
+pointer input, and remains static when the visitor requests reduced motion.
+
 ```powershell
 cd docs
 python -m http.server 8080
