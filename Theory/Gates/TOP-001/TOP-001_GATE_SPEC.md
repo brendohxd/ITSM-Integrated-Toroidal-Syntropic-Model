@@ -240,6 +240,7 @@ external baseline; T2/T3 only after firewall review of any potential.
 | S1.4 | No \(13/12\) insertion | **FAIL** if target ratio hard-coded into potential/template as “attractor” |
 | S1.5 | Full-triaxial log-shape chart (two independent coords) | **PASS** template: `PASS_TOP001_S1_TRIAXIAL_FIXED_VOLUME_TEMPLATE` (see `TOP-001_STAGE_S1_TRIAXIAL.md`); biaxial scaffold retained separately |
 | S1.6 | Axis-permutation covariance of directional moments | **PASS** if moments transform under \(L_i\) permutations; \(A\) invariant |
+| S1.7 | Modular-basis redundancy \(B\sim BM\), \(M\in SL(3,\mathbb Z)\) | **PASS** template: exact direct/reciprocal/winding reindexing, Gram covariance and volume invariance; physical deformation kept separate (see `TOP-001_STAGE_S1M_MODULAR_BASIS.md`) |
 
 ### Stage S2 — Free Casimir / vacuum stress interface
 
@@ -358,10 +359,11 @@ Falsifier F1–F6 under named premises, or gate used only to re-package rejected
 ## 10. Suggested calculation order
 
 1. Freeze rectangular \(T^3\), fixed \(V\), scan shape ratios (S1 template).
-2. Cite/use CBR-001 for free stress baseline (S2); do not re-open attractor.
-3. Only then draft \(S_{\mathrm{mod}}\) (S3) if dynamical route chosen.
-4. Twisted comparison (S4) before any identity preference upgrade.
-5. Joint VOR/WAK/reservoir audits (S5) before CBR-002 packaging.
+2. Quotient exact modular-basis relabellings before treating a shear chart as a physical modulus (S1.7).
+3. Cite/use CBR-001 for free stress baseline (S2); do not re-open attractor.
+4. Only then draft \(S_{\mathrm{mod}}\) (S3) if dynamical route chosen.
+5. Twisted comparison (S4) before any identity preference upgrade.
+6. Joint VOR/WAK/reservoir audits (S5) before CBR-002 packaging.
 
 ---
 

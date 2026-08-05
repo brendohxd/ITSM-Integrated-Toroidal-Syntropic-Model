@@ -7,8 +7,9 @@
 ## Purpose
 
 Provide a **tiny, deterministic** check of fixed-volume rectangular-torus
-**shape diagnostics** and free-scalar **mode-lattice anisotropy**, with
-refinement and negative controls. Supports Stage S0.4 / S1 of the gate spec only.
+**shape diagnostics**, free-scalar **mode-lattice anisotropy**, and exact
+modular-basis identities, with refinement and negative controls. Supports
+Stage S0.4 / S1 of the gate spec only.
 
 ## Contents
 
@@ -16,6 +17,7 @@ refinement and negative controls. Supports Stage S0.4 / S1 of the gate spec only
 |------|------|
 | `top001_shape_template_audit.py` | **Reviewed biaxial** fixed-volume template (do not overwrite) |
 | `top001_s1_triaxial_fixed_volume_audit.py` | **Stage S1** full-triaxial fixed-volume log-shape audit (separate) |
+| `top001_s1m_modular_basis_equivalence_audit.py` | **Stage S1.7 / S1M** exact \(SL(3,\mathbb Z)\) basis-equivalence and deformation-separation audit |
 | `outputs/` (created on run) | Deterministic JSON summaries + sha256 sidecars |
 
 ## Run
@@ -38,12 +40,22 @@ python Analysis\TOP\TOP-001\top001_s1_triaxial_fixed_volume_audit.py
 # covariance, refinement <=1%, V-scale invariance, malformed, firewall
 ```
 
+Stage S1.7 / S1M modular-basis identity:
+
+```powershell
+python Analysis\TOP\TOP-001\top001_s1m_modular_basis_equivalence_audit.py
+# expect: PASS_TOP001_S1M_MODULAR_BASIS_EQUIVALENCE_TEMPLATE
+# physics_pass: false
+# exact basis/reindexing identities; not a preferred physical shear
+```
+
 ## Explicit non-claims
 
 - Not free Casimir stress (use CBR-001 for that)
 - Not \(13/12\) attractor, \(H_0\), \(a_0\), or \(\Cobs\)
 - Not dynamical modulus action
 - Not twisted \(E_2/E_3\) preference
+- Not physical significance for the labels \(1,4,7\)
 - Not cosmology, lensing, SPARC, or NANOGrav
 
 ## Negative / refinement controls

@@ -1131,3 +1131,27 @@ selected as a numerical observable convention by this audit.
 MAT-001 `BLOCKED`, UVIR-003 `IN_PROGRESS`, \(K_Q\) `NOT_DERIVED`, \(V\)
 `NOT_COMPUTED`, `physics_pass: false`, and Stage 4A closed. No frozen release
 or downstream Derived claim is created.
+
+## 2026-08-05 - TOP-001 S1.7 modular-basis equivalence
+
+Gate: TOP-001 (fixed-boundary geometry scaffold)
+
+**Exact result:** for a direct-lattice basis \(B\) and each declared
+\(M\in SL(3,\mathbb Z)\), the audit verifies that \(B'=BM\) generates the
+same lattice. Direct labels transform with \(M^{-1}\), while reciprocal-mode
+and winding labels transform with \(M^T\). Direct points, reciprocal vectors,
+winding covectors, paired Laplacian eigenvalues and fundamental volume agree
+exactly; the coordinate Gram matrix obeys \(G'=M^TGM\).
+
+**Separation control:** leaving a reciprocal label untransformed changes the
+coordinate comparison, while a separate left-acting, volume-preserving
+ambient deformation changes a sampled reciprocal norm. The former catches a
+label-cutoff error; the latter is a genuine shape change rather than a modular
+basis relabelling.
+
+**Decision:** accept
+`PASS_TOP001_S1M_MODULAR_BASIS_EQUIVALENCE_TEMPLATE` as an exact mathematical
+identity only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` and `physics_pass: false`.
+No preferred shear, significance of \(1,4,7\), modulus action, stability,
+Casimir comparison, twisted-boundary preference or cosmology is derived. No
+frozen manuscript release is modified.

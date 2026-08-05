@@ -64,7 +64,7 @@ def parse_args() -> argparse.Namespace:
         "--scale",
         type=float,
         default=1.7,
-        help="uniform length scale factor for rho,p ∝ s^{-4} test",
+        help="uniform length scale factor for rho,p proportional to s^{-4} test",
     )
     return p.parse_args()
 

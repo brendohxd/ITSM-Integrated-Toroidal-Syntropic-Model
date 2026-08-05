@@ -5,6 +5,17 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+### TOP-001 modular-basis identity
+
+- Added a post-alpha.11 fixed-boundary audit proving exact direct-lattice,
+  reciprocal-mode and winding reindexing under declared
+  \(SL(3,\mathbb Z)\) basis maps.
+- Separated modular relabelling \(B\mapsto BM\) from a genuine ambient
+  shape deformation and documented the coordinate-cutoff hazard.
+- Preserved TOP-001 as `OPEN_SCAFFOLD_ONLY` with `physics_pass: false`; no
+  preferred shear, modulus action, twisted-boundary preference, working
+  manuscript section or frozen release is promoted.
+
 ### MAT-001 normalization preparation
 
 - Added post-alpha.11 supporting records for the same-action identity,

@@ -1,0 +1,266 @@
+{
+  "base_basis": [
+    [
+      "2",
+      "1/3",
+      "1/5"
+    ],
+    [
+      "0",
+      "3",
+      "2/7"
+    ],
+    [
+      "0",
+      "0",
+      "5"
+    ]
+  ],
+  "base_gram": [
+    [
+      "4",
+      "2/3",
+      "2/5"
+    ],
+    [
+      "2/3",
+      "82/9",
+      "97/105"
+    ],
+    [
+      "2/5",
+      "97/105",
+      "30774/1225"
+    ]
+  ],
+  "base_volume": "30",
+  "basis_convention": {
+    "direct_label_map": "n_prime=M^-1*n",
+    "direct_lattice": "Lambda(B)={B*n | n in Z^3}; columns of B are basis vectors",
+    "gram_map": "G_prime=M^T*G*M",
+    "reciprocal_and_winding_label_map": "m_prime=M^T*m; w_prime=M^T*w",
+    "reciprocal_vector": "k(B,m)=2*pi*B^-T*m",
+    "same_lattice_map": "B_prime=B*M with M in SL(3,Z)"
+  },
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "n_maps": 4,
+      "name": "declared_maps_are_SL3Z",
+      "ok": true
+    },
+    {
+      "name": "direct_lattice_reindexing_is_exact",
+      "ok": true,
+      "rule": "B_prime=B*M; n_prime=M^-1*n"
+    },
+    {
+      "name": "reciprocal_mode_reindexing_is_exact",
+      "ok": true,
+      "rule": "m_prime=M^T*m"
+    },
+    {
+      "name": "winding_covector_reindexing_is_exact",
+      "ok": true,
+      "rule": "w_prime=M^T*w"
+    },
+    {
+      "name": "gram_matrix_transforms_covariantly",
+      "ok": true,
+      "rule": "G_prime=M^T*G*M"
+    },
+    {
+      "base_volume": "30",
+      "name": "fundamental_volume_is_invariant",
+      "ok": true
+    },
+    {
+      "cutoff_warning": "Coordinate-box cutoffs must be reindexed with labels; identical raw label boxes are not basis invariant.",
+      "name": "paired_laplacian_eigenvalues_are_exactly_invariant",
+      "ok": true
+    },
+    {
+      "name": "negative_control_untransformed_label_is_not_claimed_invariant",
+      "ok": true,
+      "purpose": "Prevents comparing coordinate labels without the required M^T reindexing."
+    },
+    {
+      "F": [
+        [
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/2"
+        ]
+      ],
+      "deformation": "B_physical=F*B",
+      "name": "physical_shape_deformation_is_separate_from_basis_identity",
+      "ok": true,
+      "sampled_reciprocal_norm_changed": true,
+      "volume_preserved": true
+    },
+    {
+      "cases": {
+        "determinant_two_map": true,
+        "non_integer_map": true,
+        "orientation_reversing_map": true,
+        "singular_basis": true,
+        "wrong_shape_basis": true
+      },
+      "name": "malformed_and_out_of_domain_maps_rejected",
+      "ok": true
+    },
+    {
+      "flags": {
+        "claims_13_12_attractor": false,
+        "claims_147_significance": false,
+        "claims_H0_or_a0_or_Cobs": false,
+        "claims_backreaction_or_stability": false,
+        "claims_casimir_tensor": false,
+        "claims_cosmology": false,
+        "claims_modulus_action": false,
+        "claims_preferred_shear": false,
+        "claims_twisted_E2_E3_preference": false
+      },
+      "name": "claim_firewall_packaging_flags_false",
+      "ok": true
+    }
+  ],
+  "cutoff_caution": "A coordinate-label box is not invariant under a general modular map. Spectral comparisons must transform labels or use a physical eigenvalue cutoff.",
+  "derived_claims": [],
+  "forbidden_packaging_not_used": [
+    "claims_preferred_shear",
+    "claims_modulus_action",
+    "claims_casimir_tensor",
+    "claims_backreaction_or_stability",
+    "claims_twisted_E2_E3_preference",
+    "claims_147_significance",
+    "claims_13_12_attractor",
+    "claims_H0_or_a0_or_Cobs",
+    "claims_cosmology"
+  ],
+  "gate": "TOP-001",
+  "label": "mathematical-template-only",
+  "modular_map_results": [
+    {
+      "M": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "det_M": "1",
+      "direct_reindexing_exact": true,
+      "gram_covariance_exact": true,
+      "name": "identity",
+      "reciprocal_reindexing_exact": true,
+      "volume_invariant_exact": true,
+      "winding_reindexing_exact": true
+    },
+    {
+      "M": [
+        [
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "det_M": "1",
+      "direct_reindexing_exact": true,
+      "gram_covariance_exact": true,
+      "name": "elementary_shear_12",
+      "reciprocal_reindexing_exact": true,
+      "volume_invariant_exact": true,
+      "winding_reindexing_exact": true
+    },
+    {
+      "M": [
+        [
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "det_M": "1",
+      "direct_reindexing_exact": true,
+      "gram_covariance_exact": true,
+      "name": "compound_shear",
+      "reciprocal_reindexing_exact": true,
+      "volume_invariant_exact": true,
+      "winding_reindexing_exact": true
+    },
+    {
+      "M": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "det_M": "1",
+      "direct_reindexing_exact": true,
+      "gram_covariance_exact": true,
+      "name": "orientation_preserving_cycle",
+      "reciprocal_reindexing_exact": true,
+      "volume_invariant_exact": true,
+      "winding_reindexing_exact": true
+    }
+  ],
+  "n_checks": 11,
+  "next_research_step": "Use this identity as a quotient/redundancy guardrail before any dynamical-modulus or twisted-boundary comparison; no such calculation is performed here.",
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "Exact fixed-boundary lattice-basis equivalence under declared SL(3,Z) maps only. This identifies coordinate descriptions of the same flat T^3 and separates them from an explicit ambient shape deformation. It does not select a shear, construct modulus dynamics, compare Casimir energies, or establish physical preference.",
+  "stage": "S1.7_S1M_FIXED_BOUNDARY_MODULAR_BASIS_IDENTITY",
+  "subgate_status": "PASS_TOP001_S1M_MODULAR_BASIS_EQUIVALENCE_TEMPLATE"
+}
