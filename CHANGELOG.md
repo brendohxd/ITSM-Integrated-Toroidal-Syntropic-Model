@@ -1,5 +1,14 @@
 # ITSM Changelog & Archive History
 
+## Recovery branch — GitHub Pages status sync (2026-08-05)
+
+### Public recovery status
+- **Current checkpoint:** Updated the homepage and Research page from alpha.10 / matching Stage 2 to the frozen alpha.11 Tier-1 hold and the live UVIR-to-MAT action-export bottleneck.
+- **Evidence map:** Added a scoped status board for UVIR-003, MAT-001, TOP-001, CBR-001, DISK/STAT and P3/P4 without promoting mathematical-template passes to physics passes.
+- **Execution trajectory:** Published the ordered live-export inventory, conditional MAT wiring, Stage 4A reopen, independent Stage 5 review and bounded parallel-work queue.
+- **Responsive presentation:** Added desktop, tablet and mobile status-card layouts while retaining the recovery site's existing visual language.
+- **Validation:** Local links and assets resolve, HTML structure parses, desktop/mobile views have no horizontal overflow, and the browser console reports no warnings or errors.
+
 ## Version 11.4.2 — Red-Team Diagnostics & Independence Audits (2026-07-14)
 
 ### Team Infrastructure & Adversarial Setup

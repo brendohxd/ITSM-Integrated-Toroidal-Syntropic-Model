@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research path — ITSM</title>
-  <meta name="description" content="ITSM recovery research path: UVIR, MAT, disks, topology, Casimir, and current freeze status." />
+  <meta name="description" content="Current ITSM recovery status: alpha.11, the UVIR-to-MAT critical path, verified topology scaffolds, and the next evidence-gated tasks." />
   <link rel="canonical" href="https://itsm-cosmology.com/research.html" />
-  <link rel="stylesheet" href="styles.css?v=20260804a" />
+  <link rel="stylesheet" href="styles.css?v=20260805a" />
 </head>
 <body>
   <div class="sky" aria-hidden="true"></div>
@@ -39,6 +39,44 @@
   <main class="wrap">
     <section class="section">
       <div class="section-head">
+        <h2>Where recovery stands</h2>
+        <p>Verified 5 August 2026 · controlled mid-stage</p>
+      </div>
+      <div class="status-board reveal">
+        <article class="status-card" data-state="green">
+          <span class="status-key">Manuscript</span>
+          <strong class="status-value">α.11 frozen</strong>
+          <p>Immutable, reproducible checkpoint. α.12 waits for a substantive live gate advance.</p>
+        </article>
+        <article class="status-card" data-state="amber">
+          <span class="status-key">UVIR-003</span>
+          <strong class="status-value">In progress</strong>
+          <p>Finite-<code>q</code> and scoped subgates pass; matched causality, IR control and physical cutoff remain open.</p>
+        </article>
+        <article class="status-card" data-state="red">
+          <span class="status-key">MAT-001</span>
+          <strong class="status-value">Blocked</strong>
+          <p>The invariant projection is derived, but live same-action matrices and numeric <code>V</code> are not provided.</p>
+        </article>
+        <article class="status-card" data-state="amber">
+          <span class="status-key">Downstream</span>
+          <strong class="status-value">Gated</strong>
+          <p>DISK methods are partial; STAT, full P3 and full P4 wait for upstream predictions.</p>
+        </article>
+      </div>
+      <div class="card rule span-2 reveal">
+        <span class="rule-label">Current bottleneck</span>
+        <p class="rule-quote">UVIR-003 → MAT-001 → SCR/LEN → DISK-001 → STAT-001 → full P4</p>
+        <p>
+          Recovery has moved beyond architecture repair into live action matching.
+          The next decision is evidential: either the existing UVIR reduction exports
+          a consistent <code>K, C, B, d, h, u</code> set for MAT, or the interface remains blocked
+          with an explicit missing-input record.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head">
         <h2>Critical path (Derived claims)</h2>
         <p>Do not skip when asserting those claims</p>
       </div>
@@ -55,8 +93,8 @@
           <div>
             <h3>UVIR-001 → 003 — field sector</h3>
             <p>
-              Condensate / preferred-frame / force completion. UVIR-003 is the
-              current critical path; MAT-001 stays blocked until it passes.
+              Condensate / preferred-frame / force completion. UVIR-003 remains
+              on the critical path with M2, M3, M6 and M7 still open.
             </p>
           </div>
         </div>
@@ -65,8 +103,8 @@
           <div>
             <h3>MAT-001 — matter matching</h3>
             <p>
-              Matter–phonon vertex from one action;
-              \(C_{\mathrm{obs}}=C_m^{3/2}/\sqrt{C_{\mathrm{IR}}}\) matched, not assumed \(2/3\).
+              Extract the constraint-dressed canonical matter–mode coupling from
+              one action and one field chart; do not assume \(V\), \(K_Q\), or \(C_{\mathrm{obs}}\).
             </p>
           </div>
         </div>
@@ -120,8 +158,8 @@
 
     <section class="section">
       <div class="section-head">
-        <h2>Freeze snapshot</h2>
-        <p>Not a finished theory — working boundary</p>
+        <h2>Evidence snapshot</h2>
+        <p>Pass labels are scoped; they do not imply a finished theory</p>
       </div>
       <div class="table-wrap">
         <table>
@@ -131,43 +169,43 @@
           <tbody>
             <tr>
               <td>Manuscript freeze</td>
-              <td><span class="badge badge-cond">12.0-alpha.10</span> post–α.9 UVIR path package (Green, Track-A \(|\nabla\pi|^3\), unitarity criterion, \(K_Q\) inventory); full UVIR-003 still IN PROGRESS</td>
+              <td><span class="badge badge-ok">12.0-alpha.11</span> frozen Tier-1 hold checkpoint; full UVIR-003 remains IN PROGRESS</td>
             </tr>
             <tr>
               <td>Prior freeze</td>
-              <td><span class="badge badge-cond">12.0-alpha.9</span> local tetrahedral four-leg kernel only</td>
+              <td><span class="badge badge-cond">12.0-alpha.10</span> UVIR path package retained as immutable history</td>
             </tr>
             <tr>
-              <td>MAT-001</td>
-              <td><span class="badge badge-rej">Blocked</span> until UVIR-003 full pass (or explicit Conditional handoff)</td>
+              <td>UVIR-003</td>
+              <td><span class="badge badge-cond">Tier-1 hold</span> Stage 5 decision executed; M2/M3/M6/M7 remain blockers</td>
             </tr>
             <tr>
-              <td>Multi-slice Green · Track-A force</td>
-              <td><span class="badge badge-ok">PASS</span> high-\(q\) \(G_{\mathrm{mp}}\); nonzero-gradient \(|\nabla\pi|^3\) local</td>
+              <td>UVIR→MAT handoff</td>
+              <td><span class="badge badge-ok">Contract PASS</span> eight upstream contracts fail closed; this does not provide live action matrices</td>
             </tr>
             <tr>
-              <td>Declared unitarity / weak-coupling domain</td>
-              <td><span class="badge badge-ok">PASS scoped</span> tree/NDA + M2 domain freeze; optical theorem / physical cutoff open</td>
+              <td>MAT-001 projection</td>
+              <td><span class="badge badge-cond">Template PASS</span> <code>g_can = c_eff^T u / sqrt(u^T K u)</code> is basis invariant; live <code>K, C, B, d, h, u</code> and <code>V</code> remain NOT PROVIDED / NOT COMPUTED</td>
             </tr>
             <tr>
-              <td>\(K_Q\) matching · causality</td>
-              <td><span class="badge badge-open">Inventory open</span> numeric \(K_Q\) NOT_DERIVED; M3 Conditional R1 documented</td>
+              <td><code>K_Q</code> matching · causality</td>
+              <td><span class="badge badge-open">Open</span> numeric <code>K_Q</code> NOT_DERIVED; Stage 4A stays closed until a matched invariant exists</td>
             </tr>
             <tr>
-              <td>Identity tracks TOP / VOR / WAK</td>
-              <td><span class="badge badge-open">Open scaffolds</span> parallel; actions + energy accounting not closed</td>
+              <td>TOP-001</td>
+              <td><span class="badge badge-ok">Math audit PASS</span> certified physical-cutoff spectra are modular invariant; no preferred shear, modulus action or topology is claimed</td>
             </tr>
             <tr>
-              <td>Next serial priority (§5.2)</td>
-              <td><span class="badge badge-open">Stage 2</span> matching floor without MAT (R3 dig-harder or Conditional floor) → then scoped MAT</td>
+              <td>VOR / WAK / reservoir</td>
+              <td><span class="badge badge-open">Open scaffolds</span> candidate actions and identities only; no physically selected completion</td>
             </tr>
             <tr>
               <td>CBR-001 Casimir free-field</td>
               <td><span class="badge badge-ok">Validated</span> no free-field 13/12 attractor</td>
             </tr>
             <tr>
-              <td>Zenodo policy (§9 / §11)</td>
-              <td><span class="badge badge-cond">Papers only</span> not every gate micro-slice</td>
+              <td>DISK / STAT · P3 / P4</td>
+              <td><span class="badge badge-rej">Not ready</span> DISK methods partial; STAT awaits predictions; P3 outline-only; full P3/P4 triggers unmet</td>
             </tr>
           </tbody>
         </table>
@@ -180,6 +218,54 @@
         · numerics
         <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture/Analysis">Analysis/</a>.
       </p>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Next evidence-gated tasks</h2>
+        <p>Work in order; fail closed at every handoff</p>
+      </div>
+      <div class="pipeline task-queue reveal">
+        <div class="pipe-step">
+          <div class="pipe-dot"></div>
+          <div>
+            <h3>1 · Inventory the live UVIR quadratic export</h3>
+            <p>Locate <code>K, C, B, d, h, u</code>, or exact equivalents, and prove their action, chart, units and provenance are mutually consistent. Begin read-only.</p>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-dot"></div>
+          <div>
+            <h3>2 · Wire MAT only if the inventory supports it</h3>
+            <p>Feed the live export into the validated canonical projection. Missing or mismatched inputs produce a blocker record—not a substituted value.</p>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-dot"></div>
+          <div>
+            <h3>3 · Reopen UVIR Stage 4A conditionally</h3>
+            <p>Only after a genuine matched invariant exists, revisit matched causality and the physical-cutoff / unitarity path.</p>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-dot"></div>
+          <div>
+            <h3>4 · Run an independent Stage 5 closure review</h3>
+            <p>Advance only if every Tier-1 condition is supported. Retaining the hold remains a valid scientific result.</p>
+          </div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-dot"></div>
+          <div>
+            <h3>5 · Continue bounded parallel work</h3>
+            <p>VOR action-derived spectra and Conditional DISK solver validation may progress without being promoted to established ITSM physics.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Core/ITSM_Recovery_Execution_Queue.md">Execution queue</a>
+        <a class="btn btn-ghost" href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Gates/P3_P4_READINESS.md">P3 / P4 readiness</a>
+      </div>
     </section>
 
     <section class="section">
