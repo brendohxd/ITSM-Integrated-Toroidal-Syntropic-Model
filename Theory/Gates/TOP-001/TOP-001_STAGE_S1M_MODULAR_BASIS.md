@@ -9,18 +9,18 @@
 ## Purpose
 
 Determine which apparent torus shears are only changes of the integer lattice
-basis and therefore describe the same fixed flat (T^3). This is a quotient
+basis and therefore describe the same fixed flat \(T^3\). This is a quotient
 and redundancy guardrail for later TOP work, not evidence that a sheared torus
 is dynamically preferred.
 
-Let the columns of (B) be a direct-lattice basis,
+Let the columns of \(B\) be a direct-lattice basis,
 
 \[
   \Lambda(B)=\{B\mathbf n:\mathbf n\in\mathbb Z^3\}.
 \]
 
-For (M\in SL(3,\mathbb Z)), define (B'=BM). Because (M) is an
-invertible integer map of (mathbb Z^3), (B) and (B') generate exactly
+For \(M\in SL(3,\mathbb Z)\), define \(B'=BM\). Because \(M\) is an
+invertible integer map of \(\mathbb Z^3\), \(B\) and \(B'\) generate exactly
 the same lattice. The required label maps are
 
 \[
@@ -43,7 +43,7 @@ covectors exactly:
 \]
 
 The coordinate Gram matrix changes covariantly,
-(G'=M^TGM), while the fundamental volume is unchanged.
+\(G'=M^TGM\), while the fundamental volume is unchanged.
 
 ## Executable record
 
@@ -70,7 +70,7 @@ Accepted deterministic SHA-256:
 
 The audit runs 11 checks:
 
-1. all declared maps are in (SL(3,\mathbb Z));
+1. all declared maps are in \(SL(3,\mathbb Z)\);
 2. exact direct-lattice reindexing;
 3. exact reciprocal-mode reindexing;
 4. exact winding-covector reindexing;
@@ -84,8 +84,8 @@ The audit runs 11 checks:
 
 ## Cutoff caution
 
-A raw cubical label cutoff such as (|m_i|\leq N) is coordinate dependent.
-Under a modular map, labels must be transformed with (M^T), or a physical
+A raw cubical label cutoff such as \(|m_i|\leq N\) is coordinate dependent.
+Under a modular map, labels must be transformed with \(M^T\), or a physical
 eigenvalue cutoff must be used. Comparing identical raw label boxes in two
 bases can create a false difference even though the underlying spectrum is
 the same.
@@ -93,19 +93,19 @@ the same.
 ## Physical-deformation separation
 
 The audit separately applies a left-acting, volume-preserving ambient map
-(B_{\rm physical}=FB) with
-(F=\operatorname{diag}(2,1,1/2)). A sampled reciprocal norm changes. This
+\(B_{\rm physical}=FB\) with
+\(F=\operatorname{diag}(2,1,1/2)\). A sampled reciprocal norm changes. This
 is a genuine metric/shape deformation in the declared ambient frame, not an
-integer relabelling (B\mapsto BM).
+integer relabelling \(B\mapsto BM\).
 
 ## Scientific boundary
 
 - No preferred modular shear or numerical pattern is inferred.
-- No physical significance is assigned to the illustrated labels (1,4,7).
+- No physical significance is assigned to the illustrated labels \(1,4,7\).
 - No modulus action, energy minimum, Hessian, stability or backreaction is
   computed.
-- No Casimir tensor or twisted (E_2/E_3) comparison is performed.
-- No (13/12), (H_0), (a_0), (C_{\rm obs}), or cosmological result is
+- No Casimir tensor or twisted \(E_2/E_3\) comparison is performed.
+- No \(13/12\), \(H_0\), \(a_0\), \(C_{\rm obs}\), or cosmological result is
   produced.
 
 This closes only an exact fixed-boundary basis identity. TOP-001 remains

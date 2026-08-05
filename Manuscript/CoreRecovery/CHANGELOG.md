@@ -25,6 +25,16 @@ root `CHANGELOG.md` records legacy project history.
 - No working manuscript section or frozen release is promoted by this
   interface-integrity checkpoint.
 
+
+### TOP-001 physical-cutoff spectrum robustness
+
+- Independently enumerated complete reciprocal spectra in four modularly
+  equivalent bases using a certified physical eigenvalue cutoff.
+- Verified 358 modes, 179 exact eigenvalues and identical degeneracies; a
+  raw coordinate-label box reproduces the expected false discrepancy.
+- Separated modular basis identity from a genuine volume-preserving ambient
+  deformation, while keeping TOP-001 `OPEN_SCAFFOLD_ONLY`,
+  `physics_pass: false` and all manuscript releases unchanged.
 ### TOP-001 modular-basis identity
 
 - Added a post-alpha.11 fixed-boundary audit proving exact direct-lattice,

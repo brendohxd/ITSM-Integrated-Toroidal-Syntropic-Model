@@ -51,6 +51,7 @@ This scaffold does **not** claim that pass.
 | `Theory/Gates/TOP-001/TOP-001_TEMPLATE_REVIEW.md` | Independent reproduction and hardening record |
 | `Theory/Gates/TOP-001/TOP-001_STAGE_S1_TRIAXIAL.md` | Stage S1 full-triaxial fixed-volume audit note |
 | `Theory/Gates/TOP-001/TOP-001_STAGE_S1M_MODULAR_BASIS.md` | Stage S1.7 exact modular-basis identity and physical-deformation separation |
+| `Theory/Gates/TOP-001/TOP-001_STAGE_S1M_PHYSICAL_CUTOFF_SPECTRUM.md` | Stage S1.8 complete physical-cutoff spectrum invariance and raw-label-box negative control |
 | `Analysis/TOP/TOP-001/` | Mathematical-template-only tools (biaxial, triaxial and modular-basis audits) |
 
 ## Interfaces (scaffold may proceed without closing them)
@@ -72,6 +73,9 @@ The Stage S1.7 / S1M audit establishes that \(B\) and \(BM\), for declared
 \(M\in SL(3,\mathbb Z)\), are exact basis descriptions of the same lattice
 when direct, reciprocal and winding labels are reindexed consistently. It
 does not establish a preferred shear, modulus action or physical stability.
+The S1.8 robustness audit independently confirms the same reciprocal spectrum
+and degeneracies under a certified-complete physical eigenvalue cutoff; raw
+coordinate-label boxes are explicitly rejected as basis-dependent cutoffs.
 
 ## Non-integration note
 

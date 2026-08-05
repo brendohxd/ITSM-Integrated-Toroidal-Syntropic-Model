@@ -18,6 +18,7 @@ Stage S0.4 / S1 of the gate spec only.
 | `top001_shape_template_audit.py` | **Reviewed biaxial** fixed-volume template (do not overwrite) |
 | `top001_s1_triaxial_fixed_volume_audit.py` | **Stage S1** full-triaxial fixed-volume log-shape audit (separate) |
 | `top001_s1m_modular_basis_equivalence_audit.py` | **Stage S1.7 / S1M** exact \(SL(3,\mathbb Z)\) basis-equivalence and deformation-separation audit |
+| `top001_s1m_physical_cutoff_spectrum_audit.py` | **Stage S1.8 / S1M robustness** complete physical-eigenvalue cutoff spectrum and raw-label-box negative control |
 | `outputs/` (created on run) | Deterministic JSON summaries + sha256 sidecars |
 
 ## Run
@@ -47,6 +48,15 @@ python Analysis\TOP\TOP-001\top001_s1m_modular_basis_equivalence_audit.py
 # expect: PASS_TOP001_S1M_MODULAR_BASIS_EQUIVALENCE_TEMPLATE
 # physics_pass: false
 # exact basis/reindexing identities; not a preferred physical shear
+```
+
+Stage S1.8 / S1M physical-cutoff spectrum:
+
+```powershell
+python Analysis\TOP\TOP-001\top001_s1m_physical_cutoff_spectrum_audit.py
+# expect: PASS_TOP001_S1M_PHYSICAL_CUTOFF_SPECTRUM_INVARIANCE
+# 358 modes / 179 eigenvalues in every tested modular chart
+# physics_pass: false
 ```
 
 ## Explicit non-claims

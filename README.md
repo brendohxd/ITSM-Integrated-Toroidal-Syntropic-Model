@@ -61,7 +61,7 @@ presented as a derivation. Every live statement is classified as **Derived**,
 | **MAT-001** | **Blocked; $V$ not computed** | J1/R2, unit chart, handoff and basis-covariant J2 projection methods pass structurally; the live same-action matrix export and numerical match are still required |
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
 | **WAK-001** | **Open; no identity route selected** | C2 is an audited comparison template only; C1/C2/C3 remain Open and source, exchange and observables are unresolved |
-| **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, exact modular-basis identity, and VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear, modulus dynamics or validated physical spectrum follows |
+| **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, modular-basis identity and physical-cutoff spectrum audits, plus VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear or modulus dynamics follows |
 | **Reservoir** | **Open; no constitutive route selected** | RES R1 is a Conditional decision packet; R1/R2/R3 remain Open and no creation rate or cosmology is derived |
 | **Full cosmology** | **Not yet reconstructed** | CMB, growth, lensing, Solar-System and multi-scale claims require their named upstream gates |
 

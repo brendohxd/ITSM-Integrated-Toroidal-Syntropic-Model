@@ -1188,3 +1188,23 @@ matrices only. The method subgate passes, but \(V\) remains `NOT_COMPUTED`,
 MAT-001 remains `BLOCKED`, UVIR-003 remains `IN_PROGRESS`, Stage 4A remains
 closed, and no physics PASS, downstream Derived claim or frozen release is
 authorized.
+
+## 2026-08-05 - TOP-001 S1M physical-cutoff spectrum robustness
+
+Gate: TOP-001 fixed-boundary modular identity
+
+**Exact result:** with \(\ell=m^T(B^{-1}B^{-T})m\), cutoff \(\ell\leq2\)
+and certified-complete boxes, all four tested \(SL(3,\mathbb Z)\) charts
+independently return 358 modes across 179 exact eigenvalues, maximum degeneracy
+2, and the same canonical spectrum SHA-256. The transformed-label bijection is
+exact and refinement from \(N=10\) to \(N=12\) changes nothing.
+
+**Controls:** identical raw coordinate-label boxes produce different spectra
+under an elementary shear because the box is not modular invariant. A separate
+volume-preserving ambient deformation passes its completeness certificate and
+changes the spectrum.
+
+**Decision:** accept the result as a fixed-boundary mathematical identity and
+cutoff-method correction only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` with
+`physics_pass: false`; no preferred shear, modulus dynamics, Casimir result,
+twisted-boundary preference, cosmology, Derived claim or frozen release follows.
