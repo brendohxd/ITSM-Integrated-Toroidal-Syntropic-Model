@@ -1269,3 +1269,33 @@ changes the spectrum.
 cutoff-method correction only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` with
 `physics_pass: false`; no preferred shear, modulus dynamics, Casimir result,
 twisted-boundary preference, cosmology, Derived claim or frozen release follows.
+
+## 2026-08-06 - VOR-001 S2c UVIR parent-interface inventory
+
+Gate: VOR-001 (identity scaffold; not UVIR parent validation)
+
+**What changed:** executable comparison of the VOR S2b flat-space parent template
+against the live UVIR nonlinear ADM / condensate parent record. Shared polar
+normalization `Phi = rho exp(i Theta)/sqrt(2)` is recorded as a Conditional
+convention overlap only. Background, potential, finite-density selection,
+frame/alignment, force sector and constraints remain distinct; action identity
+is held undeclared (`HOLD_VOR_TO_UVIR_PARENT_IDENTIFICATION_UNDECLARED`).
+
+**Decision:** accept
+`PASS_VOR001_UVIR_PARENT_INTERFACE_INVENTORY_OPEN` as an interface inventory.
+VOR remains scaffold-only, `physics_pass: false`, no winding-to-force or
+resonance packaging, no MAT unlock, no frozen-release change.
+
+**What was abandoned:** any identification of the VOR toy parent with the live
+UVIR condensate sector, or any packaging of VOR winding as a force coefficient.
+
+## 2026-08-06 - P1/P2 contact block and T3 figure readability
+
+Gates: papers P1, P2 (presentation only)
+
+**What changed:** restored aligned ORCID / GitHub / Zenodo (and P2 gate path)
+title-page footnotes; regenerated the flat `T^3` fundamental-domain figure with
+clearer labels (white halos, softer grid, boxed cycle annotation); rebuilt P1/P2
+PDFs.
+
+**Decision:** presentation fix only; no scientific claim change.

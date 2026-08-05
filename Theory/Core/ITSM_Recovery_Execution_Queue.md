@@ -21,7 +21,7 @@ outputs remain the evidence authority.
 | P0 | Same-chart MAT action export | **blocked by inventory** | Requires derived action-level \(d,h\), isolated \(B\), explicit dimensions and selected \(u\); no placeholder wiring allowed |
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; C2 calculation priority is not identity selection |
 | P1 | RES R1/R2/R3 constitutive-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; R0 remains control and R1 is not activated |
-| P1 | VOR-to-UVIR parent-identity interface inventory | **queued** | Compare the VOR toy parent and live UVIR condensate conventions without identifying them or packaging resonance numbers |
+| P1 | VOR-to-UVIR parent-identity interface inventory | **completed** | Shared polar convention noted; action identification held undeclared; no resonance/force packaging; `physics_pass: false` |
 
 ## Capacity and sequencing
 

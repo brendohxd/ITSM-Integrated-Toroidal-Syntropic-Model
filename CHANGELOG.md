@@ -1,5 +1,27 @@
 # ITSM Changelog & Archive History
 
+
+## Recovery branch - VOR-to-UVIR parent interface inventory (2026-08-06)
+
+### Identity tracks
+- **Interface inventory:** Compared the VOR S2b flat-space parent template with the live UVIR condensate/ADM parent record without equating the actions.
+- **Shared convention only:** Recorded the polar order-parameter form as a Conditional overlap, not an identification.
+- **Hold preserved:** `HOLD_VOR_TO_UVIR_PARENT_IDENTIFICATION_UNDECLARED`; no winding-to-force, resonance, MAT or cosmology packaging.
+
+## Recovery branch - P1/P2 contact and T3 figure (2026-08-06)
+
+### Papers presentation
+- **Contact footnotes:** Aligned ORCID, GitHub and Zenodo (P2 also lists the CBR-001 gate path) on the title page for both P1 and P2.
+- **Figure 1 readability:** Regenerated the flat cubic `T^3` fundamental-domain schematic with higher-contrast labels and a boxed non-contractible-cycle annotation.
+
+## Recovery branch - site ambient field motion (2026-08-05)
+
+### Public presentation
+- **Purpose-built motion:** Added a subtle CSS-only toroidal field and slow star drift to the shared recovery-era site background.
+- **Scientific firewall:** Documented the field as decorative conceptual motion, not numerical output or observational evidence.
+- **Accessibility:** Kept the background non-interactive and static under `prefers-reduced-motion`.
+- **Responsive restraint:** Reduced the field intensity and adjusted its position on narrow screens to preserve content legibility.
+
 ## Recovery branch - RES constitutive-route evidence rubric (2026-08-05)
 
 ### Reservoir governance
