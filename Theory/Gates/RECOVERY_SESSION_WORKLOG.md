@@ -1155,3 +1155,18 @@ identity only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` and `physics_pass: false`.
 No preferred shear, significance of \(1,4,7\), modulus action, stability,
 Casimir comparison, twisted-boundary preference or cosmology is derived. No
 frozen manuscript release is modified.
+
+## 2026-08-05 - MAT-001 fail-closed UVIR handoff contract
+
+Gate: UVIR-003 to MAT-001 interface
+
+**Audit result:** eight current UVIR/MAT JSON records satisfy their exact
+status contracts and all available SHA-256 sidecars match. A substituted
+Stage-5 input is rejected with a nonzero exit. The deterministic subgate is
+`PASS_MAT001_UVIR_HANDOFF_CONTRACT_BLOCKED`.
+
+**Decision:** authorize the next basis-covariant symbolic physical-mode source
+projection audit only. Numerical \(V\) matching remains unready because the
+same-action physical source vector and kinetic metric are not yet jointly
+exported in one declared chart. MAT-001 remains `BLOCKED`, UVIR-003 remains
+`IN_PROGRESS`, Stage 4A remains closed, and no downstream Derived use or

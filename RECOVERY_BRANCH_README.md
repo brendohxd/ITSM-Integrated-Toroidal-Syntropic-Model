@@ -18,6 +18,7 @@ not the scientific status authority for this branch.
 - Selective publishing firewall: `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md`
 - Manuscript workflow: `Manuscript/CoreRecovery/README.md`
 - Manuscript changes: `Manuscript/CoreRecovery/CHANGELOG.md`
+- Current bounded execution queue: `Theory/Core/ITSM_Recovery_Execution_Queue.md`
 
 ## Manuscript status
 

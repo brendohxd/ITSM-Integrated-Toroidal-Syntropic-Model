@@ -58,7 +58,7 @@ presented as a derivation. Every live statement is classified as **Derived**,
 |---|---|---|
 | **Manuscript** | `v12.0-alpha.11` frozen | Immutable tier-1 closure hold and identity-decision checkpoint; alpha.10 remains untouched |
 | **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
-| **MAT-001** | **Blocked; $V$ not computed** | J1, R2 response taxonomy and the natural/SI unit-chart contract pass as structural audits; one same-action physical-mode match is still required |
+| **MAT-001** | **Blocked; $V$ not computed** | J1, R2, unit-chart and fail-closed UVIR handoff audits pass structurally; a same-action physical-mode projection and match are still required |
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
 | **WAK-001** | **Open; no identity route selected** | C2 is an audited comparison template only; C1/C2/C3 remain Open and source, exchange and observables are unresolved |
 | **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, exact modular-basis identity, and VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear, modulus dynamics or validated physical spectrum follows |

@@ -5,6 +5,16 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+### UVIR-to-MAT handoff contract
+
+- Added a fail-closed eight-record audit of the current UVIR closure boundary
+  and MAT structural inputs.
+- Authorized only a scoped symbolic physical-mode projection audit while
+  preserving \(V\) as `NOT_COMPUTED`, MAT-001 as `BLOCKED`, UVIR-003 as
+  `IN_PROGRESS`, Stage 4A as closed and `physics_pass: false`.
+- No working manuscript section or frozen release is promoted by this
+  interface-integrity checkpoint.
+
 ### TOP-001 modular-basis identity
 
 - Added a post-alpha.11 fixed-boundary audit proving exact direct-lattice,
