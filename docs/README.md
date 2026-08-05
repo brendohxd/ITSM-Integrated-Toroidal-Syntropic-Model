@@ -5,6 +5,8 @@ Multi-page recovery-era research site.
 Current public gate snapshot: MAT-001 live-export inventory completed fail closed;
 partial cross-chart matrices do not yet form the required same-action bundle and
 `V` remains `NOT_COMPUTED`.
+WAK-001 also remains Open: its common identity-route rubric selects none of
+C1/C2/C3, with C2 retained only as the most developed calculation scaffold.
 
 | Page | Purpose |
 |------|---------|

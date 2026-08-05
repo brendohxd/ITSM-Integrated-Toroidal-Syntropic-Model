@@ -21,5 +21,8 @@ python Analysis\WAK\WAK-001\wak001_identity_closure_routes.py
 
 ## Next
 
-Pick exactly one of C1/C2/C3 and supply the required declaration before any
-wake sourcing.
+The shared evidence rubric finds `NO_ROUTE_SELECTABLE_ON_CURRENT_EVIDENCE`.
+Keep C1/C2/C3 open and do not source or damp the wake. C2 remains the most
+developed calculation scaffold only; it is not selected. Supply a C1 map, a
+complete C2 parent/exchange package, or a C3 constitutive closure, then rerun
+the rubric before activation.

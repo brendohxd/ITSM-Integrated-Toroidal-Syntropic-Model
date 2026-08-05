@@ -60,7 +60,7 @@ presented as a derivation. Every live statement is classified as **Derived**,
 | **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
 | **MAT-001** | **Blocked; $V$ not computed** | J1/R2, unit chart, handoff and J2 methods pass structurally. The live inventory finds partial \(K,C\) evidence in different charts, embedded \(B\), no exported \(d,h\), and no selected same-chart mode \(u\) |
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
-| **WAK-001** | **Open; no identity route selected** | C2 is an audited comparison template only; C1/C2/C3 remain Open and source, exchange and observables are unresolved |
+| **WAK-001** | **Open; no identity route selectable** | The common evidence rubric keeps C1/C2/C3 Open. C2 is the most developed calculation scaffold, not a selected identity; source, exchange, stress and observables remain unresolved |
 | **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, modular-basis identity and physical-cutoff spectrum audits, plus VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear or modulus dynamics follows |
 | **Reservoir** | **Open; no constitutive route selected** | RES R1 is a Conditional decision packet; R1/R2/R3 remain Open and no creation rate or cosmology is derived |
 | **Full cosmology** | **Not yet reconstructed** | CMB, growth, lensing, Solar-System and multi-scale claims require their named upstream gates |

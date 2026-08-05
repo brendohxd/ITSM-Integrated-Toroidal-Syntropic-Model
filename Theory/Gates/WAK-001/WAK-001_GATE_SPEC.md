@@ -194,3 +194,10 @@ microscopic parent derivation and no internal constitutive closure. Keep the
 unit constraint in the parent `U` sector once. Next choose a microscopic
 identity closure only when a construction exists, then build the cubic parent
 constraints. Keep `J_W=0`. Do not promote the physical wake claim.
+
+The common C1/C2/C3 evidence rubric now returns
+`NO_ROUTE_SELECTABLE_ON_CURRENT_EVIDENCE`. C2 remains the most developed
+calculation scaffold, not a selected identity. Its next admissible calculation
+is a covariant `S_W+S_int` derivation of `T_W` and `I_W`, followed by the joined
+constrained Hessian. C1 or C3 may supersede that calculation priority only by
+supplying their missing identification map or constitutive closure.

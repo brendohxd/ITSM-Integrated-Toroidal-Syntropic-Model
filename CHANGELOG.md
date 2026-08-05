@@ -1,5 +1,13 @@
 # ITSM Changelog & Archive History
 
+## Recovery branch - WAK identity-route evidence rubric (2026-08-05)
+
+### Open-route governance
+- **Common rubric:** Compared C1 existing-mode, C2 independent-sector and C3 internal-constitutive routes under eight hard evidence requirements.
+- **Fail-closed decision:** No route is currently selectable; identity remains unresolved and the WAK research gate remains Open.
+- **Priority distinction:** Recorded C2 as the most developed calculation scaffold only, not a selected identity or physical wake law.
+- **Nonlinear firewall:** Preserved the result that zero-background quadratic factorization does not imply cubic decoupling or coupled-mode independence.
+
 ## Recovery branch - MAT live-export inventory (2026-08-05)
 
 ### UVIR-to-MAT critical path

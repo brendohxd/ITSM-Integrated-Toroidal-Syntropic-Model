@@ -19,7 +19,8 @@ outputs remain the evidence authority.
 | P1 | TOP S1M physical-eigenvalue cutoff invariance | **completed** | Modularly reindexed spectra agree under a physical cutoff; raw coordinate-box cutoff hazard reproduced |
 | P0 | Live UVIR quadratic-export inventory | **completed** | Required \(K,C,B,d,h,u\) roles are mapped from current outputs; chart/role gaps fail closed; \(V\) remains `NOT_COMPUTED` |
 | P0 | Same-chart MAT action export | **blocked by inventory** | Requires derived action-level \(d,h\), isolated \(B\), explicit dimensions and selected \(u\); no placeholder wiring allowed |
-| P1 | Route next independent bounded checkpoint | **queued** | Select a task that does not depend on the missing MAT source covectors and retain all gate firewalls |
+| P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; C2 calculation priority is not identity selection |
+| P1 | RES R1/R2/R3 constitutive-route evidence rubric | **queued** | Apply the same no-selection discipline to the reservoir candidates without deriving cosmology |
 
 ## Capacity and sequencing
 

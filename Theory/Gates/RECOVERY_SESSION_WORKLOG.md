@@ -11,6 +11,25 @@ abandoned or superseded.
 
 ---
 
+## 2026-08-05 - WAK-001 identity-route evidence rubric
+
+Gate: WAK-001 (Stage 2 identity decision readiness)
+
+**What changed:** compared C1, C2 and C3 under one executable eight-item
+evidence rubric. C1 lacks a gauge-regular map to existing UVIR modes; C2 has
+the most developed free calculation scaffold but lacks microscopic
+independence, `T_W`, `I_W` and the joined constrained Hessian; C3 lacks a
+plenum free-energy or constitutive closure with entropy production.
+
+**Decision:** `NO_ROUTE_SELECTABLE_ON_CURRENT_EVIDENCE`. C2 may remain the
+first calculation priority without being selected as the wake identity. No
+source, damping, separate stress tensor, AQUAL duplication or observational
+packaging is activated.
+
+**What was abandoned:** the instruction to pick a route before its declaration
+exists was superseded by a fail-closed comparison rule. No candidate or prior
+template was deleted.
+
 ## 2026-08-05 - MAT-001 live UVIR export inventory
 
 Gate: MAT-001 (post-J2 live-input audit)

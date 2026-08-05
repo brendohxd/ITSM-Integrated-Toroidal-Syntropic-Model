@@ -28,6 +28,9 @@ The background-specific quadratic factorization is recorded in
 [`WAK-001_STAGE2_ZERO_BACKGROUND_FACTORIZATION.md`](WAK-001_STAGE2_ZERO_BACKGROUND_FACTORIZATION.md).
 The canonical microscopic-identity evidence inventory is recorded in
 [`WAK-001_STAGE2_MICROSCOPIC_IDENTITY_INVENTORY.md`](WAK-001_STAGE2_MICROSCOPIC_IDENTITY_INVENTORY.md).
+The common C1/C2/C3 comparison rubric and fail-closed no-selection decision are
+recorded in
+[WAK-001_STAGE2_IDENTITY_ROUTE_EVIDENCE_RUBRIC.md](WAK-001_STAGE2_IDENTITY_ROUTE_EVIDENCE_RUBRIC.md).
 
 ## Governing boundary
 
@@ -64,8 +67,10 @@ assumed. The subsequent zero-background audit derives factorization of the
 W-dependent quadratic density specifically for `Wbar=0`, `nabla Wbar=0`,
 `J_W=0` and no explicit bilinear interaction. Metric and frame coupling
 returns at cubic order. The evidence inventory finds no canonical
-identification map or independent microscopic derivation. Stage 2 remains in
-progress under the microscopic-identity and cubic-constraint holds.
+identification map or independent microscopic derivation. The shared evidence
+rubric therefore selects no route: C2 is the most developed calculation
+scaffold only, while C1/C2/C3 remain Open. Stage 2 remains in progress under
+the microscopic-identity and cubic-constraint holds.
 
 ## Entry condition for substantive WAK-001 work
 

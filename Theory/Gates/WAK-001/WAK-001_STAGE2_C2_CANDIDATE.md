@@ -11,6 +11,10 @@ C1, C2 and C3 all remain Open until an explicit comparison decision is
 supported by the required identity evidence. The recorded free-field parent
 is a comparison template only; it supplies no source, damping or observable.
 
+The subsequent common evidence rubric retains that boundary and returns
+`NO_ROUTE_SELECTABLE_ON_CURRENT_EVIDENCE`. C2 is the most developed
+calculation scaffold, not a selected identity route.
+
 ```powershell
 python Analysis\WAK\WAK-001\wak001_c2_independent_parent_candidate.py
 ```
