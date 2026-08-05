@@ -11,6 +11,28 @@ abandoned or superseded.
 
 ---
 
+## 2026-08-05 - MAT-001 live UVIR export inventory
+
+Gate: MAT-001 (post-J2 live-input audit)
+
+**What changed:** added an executable inventory for the live UVIR objects
+required by the basis-covariant MAT projection: `K,C,B,d,h,u`. The current
+outputs contain a symbolic physical kinetic matrix in the
+`(Xi,Q_rho,Q_chi)` chart and a constraint matrix/source in the original
+`(R,delta_rho,vartheta;delta_N,Sigma)` chart. The constraint source embeds
+field- and velocity-dependent mixing rather than exporting the J2 `B` block.
+No action-level matter-source covectors `d,h` or selected same-chart mode `u`
+are exported.
+
+**Decision:** retain `BLOCKED_LIVE_ACTION_EXPORT_REQUIRED`. The
+`Q_rho,Q_chi` retarded-response impulses are diagnostic probes and were
+explicitly rejected as substitutes for matter-interaction covectors. The
+inventory is a blocker-map pass only; `V` remains `NOT_COMPUTED`, MAT remains
+blocked, UVIR remains in progress and Stage 4A remains closed.
+
+**What was abandoned:** no prior evidence was removed. Placeholder wiring and
+cross-chart matrix combination were rejected before implementation.
+
 ## 2026-07-24 — UVIR-003 causality addendum opened
 
 Gate: UVIR-003 (Stage A)

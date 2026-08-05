@@ -3,7 +3,8 @@
 **Branch:** `recovery/v12-core-architecture`
 **Queue opened:** 2026-08-05
 **Sprint goal:** advance the UVIR-to-MAT critical-path interface without
-overstating matching, then harden the independent TOP basis audit.
+overstating matching, then route the next bounded task from executable
+evidence.
 
 This is a short-lived execution queue for remote check-ins. The Master Research
 Plan remains the scientific workflow authority; gate reports and deterministic
@@ -16,13 +17,17 @@ outputs remain the evidence authority.
 | P0 | UVIR-to-MAT fail-closed handoff audit | **completed** | Eight exact upstream contracts pass; corrupted/mismatched input fails; docs and checkpoint pushed |
 | P0 | MAT basis-covariant physical-mode vertex projection | **completed** | Projection identity, field-basis covariance, kinetic normalization and negative controls pass without computing \(V\) |
 | P1 | TOP S1M physical-eigenvalue cutoff invariance | **completed** | Modularly reindexed spectra agree under a physical cutoff; raw coordinate-box cutoff hazard reproduced |
+| P0 | Live UVIR quadratic-export inventory | **completed** | Required \(K,C,B,d,h,u\) roles are mapped from current outputs; chart/role gaps fail closed; \(V\) remains `NOT_COMPUTED` |
+| P0 | Same-chart MAT action export | **blocked by inventory** | Requires derived action-level \(d,h\), isolated \(B\), explicit dimensions and selected \(u\); no placeholder wiring allowed |
+| P1 | Route next independent bounded checkpoint | **queued** | Select a task that does not depend on the missing MAT source covectors and retain all gate firewalls |
 
 ## Capacity and sequencing
 
-The queue is intentionally scoped to three bounded checkpoints. Validation,
-documentation and Git publication are included in each task rather than left
-as end-of-sprint cleanup. Work proceeds serially so an upstream correction can
-change the next task before additional claims are built on it.
+The queue began with three bounded checkpoints and now continues through the
+live-export inventory. Validation, documentation and Git publication are
+included in each task rather than left as end-of-sprint cleanup. Work proceeds
+serially so an upstream correction can change the next task before additional
+claims are built on it.
 
 ## Definition of done for every checkpoint
 
@@ -42,6 +47,8 @@ change the next task before additional claims are built on it.
 | A field-coordinate coefficient is mistaken for an invariant | Test simultaneous source and kinetic transformations under invertible basis changes |
 | A label cutoff creates a false torus-spectrum difference | Compare a physical eigenvalue cutoff and separately reproduce the raw-label-box hazard |
 | Documentation drifts from executable status | Update canonical gate notes and changelog in the same checkpoint |
+| Diagnostic response probes are mistaken for matter vertices | Reject \(Q_\rho,Q_\chi\) impulses as substitutes for action-derived \(d,h\) |
+| Partial matrices from different charts are silently combined | Require one explicit chart, normalization and dimension contract before wiring J2 |
 
 ## Out of scope for this queue
 

@@ -56,7 +56,7 @@
         <article class="status-card" data-state="red">
           <span class="status-key">MAT-001</span>
           <strong class="status-value">Blocked</strong>
-          <p>The invariant projection is derived, but live same-action matrices and numeric <code>V</code> are not provided.</p>
+          <p>The live inventory finds partial matrices in different charts; source covectors <code>d,h</code>, selected <code>u</code>, and numeric <code>V</code> remain absent.</p>
         </article>
         <article class="status-card" data-state="amber">
           <span class="status-key">Downstream</span>
@@ -69,9 +69,9 @@
         <p class="rule-quote">UVIR-003 → MAT-001 → SCR/LEN → DISK-001 → STAT-001 → full P4</p>
         <p>
           Recovery has moved beyond architecture repair into live action matching.
-          The next decision is evidential: either the existing UVIR reduction exports
-          a consistent <code>K, C, B, d, h, u</code> set for MAT, or the interface remains blocked
-          with an explicit missing-input record.
+          The executable inventory now records the interface as blocked: <code>K</code>
+          and <code>C</code> are partial cross-chart exports, <code>B</code> is embedded,
+          and action-derived <code>d, h, u</code> are not yet available as one bundle.
         </p>
       </div>
     </section>
@@ -185,7 +185,11 @@
             </tr>
             <tr>
               <td>MAT-001 projection</td>
-              <td><span class="badge badge-cond">Template PASS</span> <code>g_can = c_eff^T u / sqrt(u^T K u)</code> is basis invariant; live <code>K, C, B, d, h, u</code> and <code>V</code> remain NOT PROVIDED / NOT COMPUTED</td>
+              <td><span class="badge badge-cond">Template PASS</span> <code>g_can = c_eff^T u / sqrt(u^T K u)</code> is basis invariant; this is a method result, not live matching</td>
+            </tr>
+            <tr>
+              <td>MAT live-export inventory</td>
+              <td><span class="badge badge-cond">Blocker-map PASS</span> partial <code>K,C</code> evidence is cross-chart, <code>B</code> is embedded, and <code>d,h,u</code> remain unavailable as one same-action bundle; <code>V</code> is NOT_COMPUTED</td>
             </tr>
             <tr>
               <td><code>K_Q</code> matching · causality</td>

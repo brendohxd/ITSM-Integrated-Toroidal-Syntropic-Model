@@ -58,7 +58,7 @@ presented as a derivation. Every live statement is classified as **Derived**,
 |---|---|---|
 | **Manuscript** | `v12.0-alpha.11` frozen | Immutable tier-1 closure hold and identity-decision checkpoint; alpha.10 remains untouched |
 | **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
-| **MAT-001** | **Blocked; $V$ not computed** | J1/R2, unit chart, handoff and basis-covariant J2 projection methods pass structurally; the live same-action matrix export and numerical match are still required |
+| **MAT-001** | **Blocked; $V$ not computed** | J1/R2, unit chart, handoff and J2 methods pass structurally. The live inventory finds partial \(K,C\) evidence in different charts, embedded \(B\), no exported \(d,h\), and no selected same-chart mode \(u\) |
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
 | **WAK-001** | **Open; no identity route selected** | C2 is an audited comparison template only; C1/C2/C3 remain Open and source, exchange and observables are unresolved |
 | **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, modular-basis identity and physical-cutoff spectrum audits, plus VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear or modulus dynamics follows |
@@ -69,7 +69,9 @@ For the full dependency chain and current blockers, use the
 [Recovery Branch Guide](RECOVERY_BRANCH_README.md) and
 [UVIR-003 closure checklist](Theory/Gates/UVIR-003/UVIR-003_FULL_GATE_CLOSURE_CHECKLIST.md).
 The current MAT normalization boundary is recorded in the
-[unit-chart contract](Theory/Gates/MAT-001/MAT-001_UNIT_CHART_CONTRACT.md).
+[unit-chart contract](Theory/Gates/MAT-001/MAT-001_UNIT_CHART_CONTRACT.md),
+and the executable live-export blocker map is recorded in the
+[UVIR export inventory](Theory/Gates/MAT-001/MAT-001_LIVE_UVIR_EXPORT_INVENTORY.md).
 
 ## 🔬 What the Recovery Has Established
 

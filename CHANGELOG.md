@@ -1,5 +1,13 @@
 # ITSM Changelog & Archive History
 
+## Recovery branch - MAT live-export inventory (2026-08-05)
+
+### UVIR-to-MAT critical path
+- **Executable inventory:** Added a deterministic audit of the live UVIR exports required by the MAT J2 projection: \(K,C,B,d,h,u\).
+- **Concrete blocker map:** Confirmed that \(K\) is exported in the physical scalar chart while \(C\) and the embedded constraint source remain in the original chart; action-level \(d,h\) are absent and no same-chart \(u\) is selected.
+- **Role firewall:** Explicitly rejected the gauge-projected \(Q_\rho,Q_\chi\) response impulses as substitutes for matter-interaction source covectors.
+- **Gate boundary:** Inventory passes as `PASS_MAT001_LIVE_UVIR_EXPORT_INVENTORY_BLOCKED`; \(V\) remains `NOT_COMPUTED`, MAT remains blocked, UVIR remains in progress and Stage 4A stays closed.
+
 ## Recovery branch — GitHub Pages status sync (2026-08-05)
 
 ### Public recovery status
@@ -8,8 +16,6 @@
 - **Execution trajectory:** Published the ordered live-export inventory, conditional MAT wiring, Stage 4A reopen, independent Stage 5 review and bounded parallel-work queue.
 - **Responsive presentation:** Added desktop, tablet and mobile status-card layouts while retaining the recovery site's existing visual language.
 - **Validation:** Local links and assets resolve, HTML structure parses, desktop/mobile views have no horizontal overflow, and the browser console reports no warnings or errors.
-- **Purpose-built site figures:** Replaced the five live visual slots with a coherent original v2 set (open-plenum hero, wake response, compact-domain topology, IR mode response and dual flow). The new figures are explicitly scoped as conceptual illustrations; previous assets remain retained.
-- **Responsive hardening:** Removed the fixed mobile minimum-height constraint that forced the dual-flow visual beyond a narrow viewport; the image now scales within the available column.
 - **Purpose-built site figures:** Replaced the five live visual slots with a coherent original v2 set (open-plenum hero, wake response, compact-domain topology, IR mode response and dual flow). The new figures are explicitly scoped as conceptual illustrations; previous assets remain retained.
 - **Responsive hardening:** Removed the fixed mobile minimum-height constraint that forced the dual-flow visual beyond a narrow viewport; the image now scales within the available column.
 

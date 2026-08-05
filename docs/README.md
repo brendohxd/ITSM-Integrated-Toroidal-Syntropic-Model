@@ -2,6 +2,10 @@
 
 Multi-page recovery-era research site.
 
+Current public gate snapshot: MAT-001 live-export inventory completed fail closed;
+partial cross-chart matrices do not yet form the required same-action bundle and
+`V` remains `NOT_COMPUTED`.
+
 | Page | Purpose |
 |------|---------|
 | `index.html` | Home / entry |
