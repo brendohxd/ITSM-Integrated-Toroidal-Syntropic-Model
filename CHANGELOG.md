@@ -1,5 +1,13 @@
 # ITSM Changelog & Archive History
 
+## Recovery branch - RES constitutive-route evidence rubric (2026-08-05)
+
+### Reservoir governance
+- **Common rubric:** Compared R1 constitutive, R2 action-coupled and R3 topology-locked throughput under eight hard evidence requirements while retaining R0 as control.
+- **Fail-closed decision:** No route is currently selectable; the RES research gate remains Open and `Q_syn` is not activated.
+- **Priority distinction:** Recorded R1 as the most developed calculation scaffold only, not a selected creation or throughput law.
+- **Packaging firewall:** Preserved the separation of `Q_syn`, `Q_mp`, condensate-number transfer and WAK currents; no `H0`, `13/12`, creation pressure or cosmology follows.
+
 ## Recovery branch - WAK identity-route evidence rubric (2026-08-05)
 
 ### Open-route governance

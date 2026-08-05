@@ -11,6 +11,26 @@ abandoned or superseded.
 
 ---
 
+## 2026-08-05 - RES-001 constitutive-route evidence rubric
+
+Gate: RES-001 (Stage 1 route decision readiness)
+
+**What changed:** compared R1, R2 and R3 under one executable eight-item
+evidence rubric while retaining R0 as the no-throughput control. R1 has a
+bounded Conditional flat-rest-frame form but lacks thermodynamic origin,
+`T_R` matching, entropy production and parameter closure. R2 lacks a reservoir
+parent action and interaction. R3 lacks a topology/modulus-to-current
+mechanism and cannot use cycle counting as numerical matching.
+
+**Decision:** `NO_ROUTE_SELECTABLE_ON_CURRENT_EVIDENCE`. R1 may remain the
+first calculation priority without being selected or activated. `Q_syn`
+remains distinct from `Q_mp`, condensate-number transfer and WAK currents. No
+creation rate, `H0`, `13/12`, Minkowski support or cosmology is derived.
+
+**What was abandoned:** the instruction to choose R1 or R2 before a complete
+declaration exists was superseded by the evidence-rubric gate. No candidate or
+prior draft was deleted.
+
 ## 2026-08-05 - WAK-001 identity-route evidence rubric
 
 Gate: WAK-001 (Stage 2 identity decision readiness)

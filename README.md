@@ -62,7 +62,7 @@ presented as a derivation. Every live statement is classified as **Derived**,
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
 | **WAK-001** | **Open; no identity route selectable** | The common evidence rubric keeps C1/C2/C3 Open. C2 is the most developed calculation scaffold, not a selected identity; source, exchange, stress and observables remain unresolved |
 | **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, modular-basis identity and physical-cutoff spectrum audits, plus VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear or modulus dynamics follows |
-| **Reservoir** | **Open; no constitutive route selected** | RES R1 is a Conditional decision packet; R1/R2/R3 remain Open and no creation rate or cosmology is derived |
+| **Reservoir** | **Open; no constitutive route selectable** | The common R1/R2/R3 rubric selects none and retains R0 as control. R1 is the most developed scaffold only; no throughput, creation rate or cosmology is derived |
 | **Full cosmology** | **Not yet reconstructed** | CMB, growth, lensing, Solar-System and multi-scale claims require their named upstream gates |
 
 For the full dependency chain and current blockers, use the

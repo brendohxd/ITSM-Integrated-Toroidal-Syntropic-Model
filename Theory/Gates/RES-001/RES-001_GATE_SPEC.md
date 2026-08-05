@@ -24,6 +24,11 @@ PASS_RES001_QSYN_CONSTITUTIVE_INVENTORY_OPEN
 Analysis/RES/RES-001/res001_qsyn_constitutive_inventory.py
 ```
 
+The common R1/R2/R3 evidence rubric now returns
+`NO_ROUTE_SELECTABLE_ON_CURRENT_EVIDENCE`. R1 is retained only as the most
+developed calculation scaffold; R0 remains the no-throughput control. See
+`RES-001_STAGE1_CONSTITUTIVE_ROUTE_EVIDENCE_RUBRIC.md`.
+
 ## Non-claims
 
 No Derived creation law, NEC-violating Minkowski support, cosmology, or
