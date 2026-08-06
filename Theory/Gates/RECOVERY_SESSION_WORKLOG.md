@@ -1270,6 +1270,22 @@ cutoff-method correction only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` with
 `physics_pass: false`; no preferred shear, modulus dynamics, Casimir result,
 twisted-boundary preference, cosmology, Derived claim or frozen release follows.
 
+## 2026-08-06 - H1.3 parent-action source derivation audit
+
+Gate: MAT-001 H1.3
+
+**What changed:** audited architecture, Master Plan, J1, UVIR-001, R3, Track-A
+force/\(S_{\rm int}\), and H1.1–H1.2 for any derivation of \(Z_\phi\) or \(g_\phi\).
+None found. Froze research requirements RR1–RR5. H1 remains incomplete; H2–H5
+blocked. Stage 4A closed; \(V\) `NOT_COMPUTED`.
+
+**Decision:** accept
+`PASS_MAT001_PARENT_ACTION_H13_INCOMPLETE_SOURCES_AUDITED` as peer-review-grade
+incompleteness, not a matching success.
+
+**What was abandoned:** treating architecture \(C_m=C_{\rm IR}\) convention or
+R3/R1 sketches as parent-action derivation.
+
 ## 2026-08-06 - Tier-1 forward plan + H1.1–H1.2 parent-action matching
 
 Gate: plan + MAT-001 H1

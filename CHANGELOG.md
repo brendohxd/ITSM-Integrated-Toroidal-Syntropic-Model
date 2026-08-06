@@ -1,6 +1,13 @@
 # ITSM Changelog & Archive History
 
 
+## Recovery branch - H1.3 parent-action source audit incomplete (2026-08-06)
+
+### Derived matching
+- **H1.3:** Audited declared sources for \(Z_\phi/g_\phi\); none derive absolute coefficients.
+- **RR1–RR5:** Frozen research requirements; H2–H5 remain blocked until RR1–RR3 close.
+- **Subgate:** `PASS_MAT001_PARENT_ACTION_H13_INCOMPLETE_SOURCES_AUDITED`; Stage 4A closed.
+
 ## Recovery branch - tier-1 forward plan and H1 parent-action start (2026-08-06)
 
 ### Planning and Derived path

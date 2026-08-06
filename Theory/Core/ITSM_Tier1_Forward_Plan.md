@@ -71,11 +71,23 @@ Conditional work may run in parallel for methods only.
 |---|---|---|
 | H1.1 | Declare selected parent-action chart and map to Track-A | Executable declaration + gate note |
 | H1.2 | Inventory repo for any \(Z_\phi,g_\phi,f_\phi\) or equivalent exports | Fail-closed inventory (expected: incomplete) |
-| H1.3 | Attempt derivation or bound from declared \(S_\Phi+S_{\rm int}\) sources | PASS with value **or** PASS_INCOMPLETE with missing list |
-| H1.4 | If incomplete: freeze missing micro inputs as research requirements | Queue + Master Plan cross-links |
+| H1.3 | Attempt derivation or bound from declared \(S_\Phi+S_{\rm int}\) sources | **DONE (incomplete):** `PASS_MAT001_PARENT_ACTION_H13_INCOMPLETE_SOURCES_AUDITED` — no \(Z_\phi/g_\phi\) from declared sources |
+| H1.4 | Freeze missing micro inputs as research requirements RR1–RR5 | **DONE** in H1.3 output + this plan; keep OPEN until micro matching exists |
 
 **Exit (success):** Derived \(V\) or \((C_m,K_Q)\) with provenance SHA.  
-**Exit (honest fail):** `INCOMPLETE_PARENT_ACTION_MATCHING` with non-empty missing list — still advances peer-review honesty.
+**Exit (honest fail):** `INCOMPLETE_PARENT_ACTION_MATCHING` with non-empty missing list — **met by H1.3**.
+
+### Frozen research requirements (from H1.3)
+
+| ID | Requirement | Status |
+|---|---|---|
+| RR1 | Complete parent action with both \(Z_\phi\) kinetic and \(g_\phi\) vertex | OPEN |
+| RR2 | Derive/bound \(Z_\phi,g_\phi\) or compute residue \(V\) directly | OPEN |
+| RR3 | Verify \(f_\phi\) map into Track-A \(\pi\) chart | OPEN_CONDITIONAL_MAP_ONLY |
+| RR4 | Alternate: \(S_\Phi\) → \(Z_\psi,\rho_\Phi\) (R3 incomplete) | OPEN_R3_INCOMPLETE |
+| RR5 | Never promote \(C_m=C_{\rm IR}\), \(C_{\rm obs}\sim1\), \(k_Q\sim1\) to Derived | ACTIVE_FIREWALL |
+
+**H1 gate for H2–H5:** blocked until RR1–RR3 close (or residue \(V\) path succeeds).
 
 ---
 

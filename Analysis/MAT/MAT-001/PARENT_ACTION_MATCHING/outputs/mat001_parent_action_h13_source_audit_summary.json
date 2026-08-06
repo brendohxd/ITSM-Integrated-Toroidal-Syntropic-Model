@@ -1,0 +1,360 @@
+{
+  "C_m_numeric_status": "NOT_DERIVED_FORM_ONLY",
+  "H1_exit": {
+    "H1_complete": false,
+    "blocks_H2_H3": true,
+    "honest_incompleteness_acceptable_for_peer_review": true,
+    "reason": "No declared source derives absolute Z_phi or g_phi; Stage 4A and Derived V remain blocked by plan."
+  },
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Declare a complete parent action S_parent containing both the force-phonon kinetic term with coefficient Z_phi and the matter coupling -g_phi rho_b phi (same action).",
+    "Derive numeric or parameter-mapped values (or rigorous bounds) for Z_phi and g_phi from that action, or compute the on-shell invariant residue V directly.",
+    "Declare and verify the field map f_phi (phi -> Track-A pi) so induced C_m and K_Q live in the same chart as the Track-A host kit."
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "h12_upstream",
+      "ok": true
+    },
+    {
+      "name": "j1_upstream",
+      "ok": true
+    },
+    {
+      "name": "r3_upstream_incomplete",
+      "ok": true
+    },
+    {
+      "name": "uvir001_upstream_present",
+      "ok": true
+    },
+    {
+      "name": "track_a_and_s_int_upstream",
+      "ok": true
+    },
+    {
+      "name": "h12_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "j1_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "r3_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "uvir001_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_force_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_s_int_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "architecture_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "master_plan_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "no_source_derives_numeric_Z_phi_or_g_phi",
+      "ok": true
+    },
+    {
+      "name": "r3_reports_no_rigorous_residue_bound",
+      "ok": true
+    },
+    {
+      "name": "architecture_lacks_Z_phi_g_phi_symbols",
+      "ok": true
+    },
+    {
+      "name": "j1_still_lists_unmatched_micro_inputs",
+      "ok": true
+    },
+    {
+      "name": "research_requirements_frozen_nonempty",
+      "ok": true
+    },
+    {
+      "name": "verdict_incomplete",
+      "ok": true
+    },
+    {
+      "flags": {
+        "H13_sources_audited": true,
+        "H1_complete": false,
+        "architecture_C_m_equals_C_IR_as_Derived": false,
+        "claims_MAT_pass": false,
+        "numeric_K_Q_derived": false,
+        "numeric_V_computed": false,
+        "numeric_Z_phi_derived": false,
+        "numeric_g_phi_derived": false,
+        "physics_pass": false,
+        "r3_incomplete_promoted_Derived": false,
+        "reopens_stage4A": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "H13_sources_audited": true,
+    "H1_complete": false,
+    "architecture_C_m_equals_C_IR_as_Derived": false,
+    "claims_MAT_pass": false,
+    "numeric_K_Q_derived": false,
+    "numeric_V_computed": false,
+    "numeric_Z_phi_derived": false,
+    "numeric_g_phi_derived": false,
+    "physics_pass": false,
+    "r3_incomplete_promoted_Derived": false,
+    "reopens_stage4A": false
+  },
+  "derivation_verdict": "INCOMPLETE_NO_Z_phi_g_phi_FROM_DECLARED_SOURCES",
+  "evidence": {
+    "architecture": {
+      "parse_error": null,
+      "sha256": "82A05933C82C41CF0AF88A6BEB4D1EA68A4E19D27995C1A6161D7AF7552DD226",
+      "source": "ITSM_Core_Architecture.md"
+    },
+    "h12": {
+      "parse_error": null,
+      "sha256": "ACD47A7CF0E7427526EBA314336A33F55015474D7E5BED2C30B30AAE53E05BE2",
+      "source": "mat001_parent_action_matching_summary.json"
+    },
+    "j1": {
+      "parse_error": null,
+      "sha256": "D3347CA262861F685FB348FB813C776D8F6CFE00AA9F1A707774BF232C83159F",
+      "source": "mat001_j1_joint_action_normalization_summary.json"
+    },
+    "master_plan": {
+      "parse_error": null,
+      "sha256": "BE8AD727A0EAE35F1B5C59DCB5D2C768D97C6CD14708560F4F2348B2652FC1D4",
+      "source": "ITSM_Master_Research_Plan.md"
+    },
+    "r3": {
+      "parse_error": null,
+      "sha256": "0E16A71CDCACFF2DFFF3084F99C7165871F5318FDFE456B8D3FD92E5201E1417",
+      "source": "uvir003_r3_uv_residue_audit_summary.json"
+    },
+    "track_a_force": {
+      "parse_error": null,
+      "sha256": "6A829A1CC05BF0B4B7F4F6044689580D740E4A6AD24857C85A9A474DF3A10A62",
+      "source": "uvir003_track_a_force_adm_cubic_summary.json"
+    },
+    "track_a_s_int": {
+      "parse_error": null,
+      "sha256": "EB4D07370A7FD007C68051FFD0A10E03BB0770AE957826128283C25C90E519C8",
+      "source": "mat001_track_a_s_int_embed_summary.json"
+    },
+    "uvir001": {
+      "parse_error": null,
+      "sha256": "4DC2A924243C29823776B3F1C62804BBC07355F43F740FCF57F9D914E79FE4E6",
+      "source": "uvir001_summary.json"
+    }
+  },
+  "form_identities": {
+    "C_m": "g_phi/f_phi",
+    "K_Q": "Z_phi/f_phi**2",
+    "V": "g_phi/sqrt(Z_phi)",
+    "status": "STRUCTURAL_ONLY"
+  },
+  "gate": "MAT-001",
+  "inadmissible_substitutions": {
+    "C_m_equals_C_IR_as_micro_match": "REJECTED",
+    "C_obs_approx_1_as_g_phi": "REJECTED",
+    "Z_psi_equals_1_as_Z_phi": "REJECTED",
+    "incomplete_R3_as_parent_match": "REJECTED",
+    "k_Q_equals_1_as_parent_kinetic": "REJECTED"
+  },
+  "interface": "PARENT_ACTION_H13_SOURCE_DERIVATION",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "matching_status": "INCOMPLETE_AFTER_SOURCE_AUDIT",
+  "n_checks": 20,
+  "physics_pass": false,
+  "plan_step": "H1.3",
+  "research_requirements_frozen": [
+    {
+      "id": "RR1",
+      "priority": "critical_for_H1",
+      "requirement": "Declare a complete parent action S_parent containing both the force-phonon kinetic term with coefficient Z_phi and the matter coupling -g_phi rho_b phi (same action).",
+      "status": "OPEN"
+    },
+    {
+      "id": "RR2",
+      "priority": "critical_for_H1",
+      "requirement": "Derive numeric or parameter-mapped values (or rigorous bounds) for Z_phi and g_phi from that action, or compute the on-shell invariant residue V directly.",
+      "status": "OPEN"
+    },
+    {
+      "id": "RR3",
+      "priority": "critical_for_H1",
+      "requirement": "Declare and verify the field map f_phi (phi -> Track-A pi) so induced C_m and K_Q live in the same chart as the Track-A host kit.",
+      "status": "OPEN_CONDITIONAL_MAP_ONLY"
+    },
+    {
+      "id": "RR4",
+      "priority": "alternate_route",
+      "requirement": "If using S_Phi amplitude integration: compute Z_psi and identify rho_Phi so K_Q = Z_psi rho_Phi/a0^2 is Derived, not dimensional.",
+      "status": "OPEN_R3_INCOMPLETE"
+    },
+    {
+      "id": "RR5",
+      "priority": "governance",
+      "requirement": "Do not promote C_m = C_IR, C_obs ~ 1, k_Q ~ 1, or Conditional samples to Derived parent matching.",
+      "status": "ACTIVE_FIREWALL"
+    }
+  ],
+  "scientific_boundary": "A PASS means H1.3 audited all named declared sources for a parent Z_phi/g_phi derivation and found none. Research requirements are frozen for peer review. This does not compute V, derive K_Q, or reopen Stage 4A.",
+  "serial_next": "H1.4: link frozen RR1\u2013RR5 into Master Plan / recovery plan as open research requirements; hold Derived H2\u2013H5 until RR1\u2013RR3 close. Lane B Conditional work may continue dual-status only.",
+  "source_audits": {
+    "architecture_weak_field": {
+      "derives_numeric_C_m": false,
+      "derives_numeric_K_Q": false,
+      "derives_numeric_Z_phi": false,
+      "derives_numeric_g_phi": false,
+      "evidence": {
+        "has_C_m_rho_b_psi": true,
+        "has_C_obs_form": true,
+        "has_Z_phi": false,
+        "has_g_phi": false
+      },
+      "provides": [
+        "form -C_m rho_b psi",
+        "form C_obs = C_m^{3/2}/sqrt(C_IR)",
+        "optional convention C_m = C_IR = C (not a derivation of C_m)"
+      ],
+      "source": "ITSM_Core_Architecture.md \u00a75 weak-field S_WF"
+    },
+    "h12_declaration": {
+      "derives_numeric_C_m": false,
+      "derives_numeric_K_Q": false,
+      "derives_numeric_Z_phi": false,
+      "derives_numeric_g_phi": false,
+      "evidence": {
+        "matching_status": "DECLARED_INCOMPLETE",
+        "micro_status": "NOT_DERIVED_NUMERIC_ABSENT"
+      },
+      "provides": [
+        "selected route PARENT_ACTION_Z_phi_g_phi_TO_TRACK_A",
+        "inventory: NOT_DERIVED_NUMERIC_ABSENT"
+      ],
+      "source": "mat001_parent_action_matching H1.1-H1.2"
+    },
+    "j1_joint_action_template": {
+      "derives_numeric_C_m": false,
+      "derives_numeric_K_Q": false,
+      "derives_numeric_Z_phi": false,
+      "derives_numeric_g_phi": false,
+      "evidence": {
+        "V_status": "NOT_COMPUTED",
+        "subgate": "PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY",
+        "unmatched": [
+          "Z_phi from a declared microscopic parent action",
+          "g_phi from the matter coupling in that same parent action",
+          "a justified map from the parent field phi to the live IR force field psi"
+        ]
+      },
+      "provides": [
+        "structural V = g_phi/sqrt(Z_phi) = C_m/sqrt(K_Q)",
+        "lists unmatched Z_phi and g_phi as open inputs"
+      ],
+      "source": "mat001_j1_joint_action_normalization"
+    },
+    "master_plan_MAT": {
+      "derives_numeric_C_m": false,
+      "derives_numeric_K_Q": false,
+      "derives_numeric_Z_phi": false,
+      "derives_numeric_g_phi": false,
+      "evidence": {
+        "mentions_C_obs_hypothesis": true
+      },
+      "provides": [
+        "MAT-001 goal V = C_m/sqrt(K_Q)",
+        "Conditional empirical C_obs ~ 1 until MAT computes otherwise"
+      ],
+      "source": "ITSM_Master_Research_Plan.md MAT / C_obs hypothesis"
+    },
+    "r3_uv_residue": {
+      "derives_numeric_C_m": false,
+      "derives_numeric_K_Q": false,
+      "derives_numeric_Z_phi": false,
+      "derives_numeric_g_phi": false,
+      "evidence": {
+        "classification": "INCOMPLETE_R3_UV_RESIDUE",
+        "missing": [
+          "Microscopic S_Phi (or S_Phi+S_psi matching) that yields temporal force kinetic K_Q",
+          "Computed residue Z_psi from amplitude integration / wave-function renormalization",
+          "Physical identification of rho_Phi as the density entering that matching",
+          "Fixed IR field chart / matching scheme so residue is redefinition-safe",
+          "Independent determination or bound on C_IR if quoted in I_a0"
+        ],
+        "rigorous_bound": false
+      },
+      "provides": [
+        "classification INCOMPLETE_R3_UV_RESIDUE",
+        "missing Z_psi, rho_Phi, r_rho",
+        "no rigorous bound on Z_psi r_rho"
+      ],
+      "source": "uvir003_r3_uv_residue_audit"
+    },
+    "track_a_force_and_s_int": {
+      "derives_numeric_C_m": false,
+      "derives_numeric_K_Q": false,
+      "derives_numeric_Z_phi": false,
+      "derives_numeric_g_phi": false,
+      "evidence": {
+        "K_Q_in_force_L": true,
+        "force_subgate": "PASS_FORCE_SECTOR_J2_COMPONENT",
+        "s_int_status": "EMBEDDED_CONDITIONAL_ON_TRACK_A_HOST"
+      },
+      "provides": [
+        "symbolic K_Q as free IR kinetic coefficient in force Lagrangian",
+        "form d = -C_m on host",
+        "no absolute Z_phi or g_phi"
+      ],
+      "source": "Track-A force ADM + Conditional S_int embed"
+    },
+    "uvir001_minimally_kinetic_scalar": {
+      "derives_numeric_C_m": false,
+      "derives_numeric_K_Q": false,
+      "derives_numeric_Z_phi": false,
+      "derives_numeric_g_phi": false,
+      "evidence": {
+        "candidate_verdict": "FAIL",
+        "validation_status": "PASS",
+        "verdict_scope": "The declared minimally kinetic single complex scalar with analytic mass, quartic, and sextic potential does not generate a leading spatial Y^(3/2) operator on its stable timelike finite-density branch."
+      },
+      "provides": [
+        "tests minimally kinetic complex scalar vs Y^{3/2} origin",
+        "does not supply force-phonon Z_phi/g_phi matching"
+      ],
+      "source": "uvir001_summary.json"
+    }
+  },
+  "stage": "H1_3_PARENT_ACTION_SOURCE_AUDIT",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_PARENT_ACTION_H13_INCOMPLETE_SOURCES_AUDITED",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}
