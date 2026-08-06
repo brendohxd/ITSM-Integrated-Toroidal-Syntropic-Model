@@ -2,10 +2,10 @@
 
 Multi-page recovery-era research site.
 
-Current public gate snapshot: MAT-001 Track-A host kit is symbolically complete;
-the `K_Q` derivation dig finds no ready numeric path; a dual-status Conditional
-matching branch is open for labeled probes only. Derived `V`/`K_Q` remain open
-as NOT_COMPUTED/NOT_DERIVED; Stage 4A and MAT physics PASS stay closed.
+Current public gate snapshot: Tier-1 peer-review readiness audit **retains**
+the Stage 5 hold (M2/M3/M6/M7 unmet). Track-A Conditional MAT kit and dual-status
+probes exist; Derived `V`/`K_Q` remain NOT_COMPUTED/NOT_DERIVED; Stage 4A closed;
+MAT physics PASS forbidden.
 
 WAK-001 also remains Open: its common identity-route rubric selects none of
 C1/C2/C3, with C2 retained only as the most developed calculation scaffold.

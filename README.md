@@ -58,7 +58,7 @@ presented as a derivation. Every live statement is classified as **Derived**,
 |---|---|---|
 | **Manuscript** | `v12.0-alpha.11` frozen | Immutable tier-1 closure hold and identity-decision checkpoint; alpha.10 remains untouched |
 | **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
-| **MAT-001** | **Blocked; $V$ not computed** | Track-A host kit complete (symbolic). \(K_Q\) derivation dig finds no ready numeric path. Dual-status Conditional matching branch is open for probes only; Derived \(V\)/`K_Q` and Stage 4A stay closed |
+| **MAT-001** | **Blocked; $V$ not computed** | Track-A Conditional kit + dual-status probes + join map form-ready; tier-1 peer-review audit **retains** Stage 5 hold (M2/M3/M6/M7 unmet); Stage 4A closed; no Derived \(V\)/\(K_Q\) |
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
 | **WAK-001** | **Open; no identity route selectable** | The common evidence rubric keeps C1/C2/C3 Open. C2 is the most developed calculation scaffold, not a selected identity; source, exchange, stress and observables remain unresolved |
 | **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, modular-basis identity and physical-cutoff spectrum audits, plus VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear or modulus dynamics follows |
@@ -84,8 +84,10 @@ host \(K_Q\) readiness in
 [Track-A \(K_Q\) readiness](Theory/Gates/MAT-001/MAT-001_TRACK_A_KQ_READINESS.md),
 the derivation dig in
 [\(K_Q\) derivation dig](Theory/Gates/MAT-001/MAT-001_KQ_DERIVATION_DIG.md),
-and the dual-status Conditional branch in
-[Conditional matching branch](Theory/Gates/MAT-001/MAT-001_CONDITIONAL_MATCHING_BRANCH.md).
+the dual-status Conditional branch in
+[Conditional matching branch](Theory/Gates/MAT-001/MAT-001_CONDITIONAL_MATCHING_BRANCH.md),
+and the tier-1 hold audit in
+[tier-1 peer-review readiness](Theory/Gates/UVIR-003/UVIR-003_TIER1_PEER_REVIEW_READINESS.md).
 
 ## 🔬 What the Recovery Has Established
 

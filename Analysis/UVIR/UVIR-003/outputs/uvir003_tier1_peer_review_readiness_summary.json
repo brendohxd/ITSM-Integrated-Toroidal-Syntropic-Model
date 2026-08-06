@@ -1,0 +1,455 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "blocking_for_tier1_closure": [
+    "M2",
+    "M3",
+    "M6",
+    "M7"
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "stage5_readable_contract",
+      "ok": true
+    },
+    {
+      "name": "stage4_readable",
+      "ok": true
+    },
+    {
+      "name": "closure_audit_readable_or_optional",
+      "ok": true,
+      "present": true
+    },
+    {
+      "name": "stage5_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "stage4_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_s_int_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "kq_readiness_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "kq_dig_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "conditional_branch_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "j2_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "join_readable_or_absent",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "stage5_hold_tier1_intact",
+      "ok": true
+    },
+    {
+      "blockers": [
+        "M2",
+        "M3",
+        "M6",
+        "M7"
+      ],
+      "criteria_snapshot": {
+        "M2": {
+          "status": "PARTIAL_BOUNDED_HIGH_Q_ONLY",
+          "tier1_met": false
+        },
+        "M3": {
+          "status": "HOLD_MATCHED_INVARIANT_REQUIRED",
+          "tier1_met": false
+        },
+        "M4": {
+          "status": "PASS_SCOPED",
+          "tier1_met": true
+        },
+        "M5": {
+          "status": "PASS_INVENTORY_K_Q_NOT_DERIVED",
+          "tier1_met": true
+        },
+        "M6": {
+          "status": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
+          "tier1_met": false
+        },
+        "M7": {
+          "status": "PARTIAL_SCOPED_HANDOFF_ONLY",
+          "tier1_met": false
+        }
+      },
+      "name": "tier1_blockers_include_M2_M3_M6_M7",
+      "ok": true
+    },
+    {
+      "name": "stage4_permanent_conditional_not_matched_reopen",
+      "ok": true
+    },
+    {
+      "name": "required_mat_records_present",
+      "ok": true
+    },
+    {
+      "name": "mat_dual_status_V_and_pass_fail_closed",
+      "ok": true,
+      "records": [
+        {
+          "V_status": "NOT_COMPUTED",
+          "mat001_pass": false,
+          "name": "track_a_s_int",
+          "ok": true,
+          "physics_pass": false,
+          "present": true
+        },
+        {
+          "V_status": "NOT_COMPUTED",
+          "mat001_pass": false,
+          "name": "kq_readiness",
+          "ok": true,
+          "physics_pass": false,
+          "present": true
+        },
+        {
+          "V_status": "NOT_COMPUTED",
+          "mat001_pass": false,
+          "name": "kq_dig",
+          "ok": true,
+          "physics_pass": false,
+          "present": true
+        },
+        {
+          "V_status": "NOT_COMPUTED",
+          "mat001_pass": false,
+          "name": "conditional_branch",
+          "ok": true,
+          "physics_pass": false,
+          "present": true
+        },
+        {
+          "V_status": "NOT_COMPUTED",
+          "mat001_pass": false,
+          "name": "join",
+          "ok": true,
+          "physics_pass": false,
+          "present": true
+        },
+        {
+          "V_status": "NOT_COMPUTED",
+          "mat001_pass": false,
+          "name": "j2",
+          "ok": true,
+          "physics_pass": false,
+          "present": true
+        }
+      ]
+    },
+    {
+      "name": "conditional_branch_not_promoted_Derived",
+      "ok": true
+    },
+    {
+      "name": "stage4A_reopen_not_authorized",
+      "ok": true
+    },
+    {
+      "name": "claim_ledger_nonempty_deny_list",
+      "ok": true
+    },
+    {
+      "name": "mat_handoff_still_forbids_PASS_and_Derived",
+      "ok": true
+    },
+    {
+      "flags": {
+        "K_Q_numeric_Derived": false,
+        "MAT001_PASS": false,
+        "V_numeric_Derived": false,
+        "conditional_samples_as_Derived": false,
+        "downstream_Derived_from_MAT": false,
+        "hold_tier1_retained": true,
+        "mat_calculation_work_still_allowed": true,
+        "physics_pass": false,
+        "stage4A_reopened": false,
+        "tier1_uv_ir_closed": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "K_Q_numeric_Derived": false,
+    "MAT001_PASS": false,
+    "V_numeric_Derived": false,
+    "conditional_samples_as_Derived": false,
+    "downstream_Derived_from_MAT": false,
+    "hold_tier1_retained": true,
+    "mat_calculation_work_still_allowed": true,
+    "physics_pass": false,
+    "stage4A_reopened": false,
+    "tier1_uv_ir_closed": false
+  },
+  "criteria_snapshot": {
+    "M2": {
+      "status": "PARTIAL_BOUNDED_HIGH_Q_ONLY",
+      "tier1_met": false
+    },
+    "M3": {
+      "status": "HOLD_MATCHED_INVARIANT_REQUIRED",
+      "tier1_met": false
+    },
+    "M4": {
+      "status": "PASS_SCOPED",
+      "tier1_met": true
+    },
+    "M5": {
+      "status": "PASS_INVENTORY_K_Q_NOT_DERIVED",
+      "tier1_met": true
+    },
+    "M6": {
+      "status": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
+      "tier1_met": false
+    },
+    "M7": {
+      "status": "PARTIAL_SCOPED_HANDOFF_ONLY",
+      "tier1_met": false
+    }
+  },
+  "decision": "HOLD_TIER1_CLOSURE_RETAINED",
+  "evidence": {
+    "closure_audit": {
+      "parse_error": null,
+      "sha256": "0389374E664FEB5D3DF4C42E2EB0A3244D4FDA03BAF8D7EDDE0E7D91ABA56C91",
+      "source": "uvir003_full_gate_closure_audit_summary.json"
+    },
+    "conditional_branch": {
+      "parse_error": null,
+      "sha256": "1BB9DE0646CDA8A8C577B19D37B6DFE1D04B29A3AECBA182519BC93A431975EC",
+      "source": "mat001_conditional_matching_branch_summary.json"
+    },
+    "j2": {
+      "parse_error": null,
+      "sha256": "599065CD407A499BE8414FFF226C10889CA6BFE668E74A2C8E11E251D3C0D82E",
+      "source": "mat001_j2_basis_covariant_mode_projection_summary.json"
+    },
+    "join": {
+      "parse_error": null,
+      "sha256": "958EFE959811B5BAF983196C784C71518C4531F50A1EAD9E7F71B47923916FC7",
+      "source": "mat001_track_a_join_readiness_summary.json"
+    },
+    "kq_dig": {
+      "parse_error": null,
+      "sha256": "4107BD08FE1DFF755711DAF5C8AE6C762C8C8DDDE4BE41A5B7D16D72885FDAB1",
+      "source": "mat001_kq_derivation_dig_summary.json"
+    },
+    "kq_readiness": {
+      "parse_error": null,
+      "sha256": "301A1FD112F81646B79C8CB8153D89ADBE041A0E0D845E7339F97CDEE4BE73E2",
+      "source": "mat001_track_a_kq_readiness_summary.json"
+    },
+    "stage4": {
+      "parse_error": null,
+      "sha256": "DA8E4A59F866CE69831AC4DB96F212AD8C99B6093070886701EFF9D513357342",
+      "source": "uvir003_stage4_m3m6_conditional_limit_summary.json"
+    },
+    "stage5": {
+      "parse_error": null,
+      "sha256": "7ED771F58118254AE4C39C222A69454F4570D1F8F4C449F2C4538F1DA1FECE05",
+      "source": "uvir003_stage5_full_gate_decision_summary.json"
+    },
+    "track_a_s_int": {
+      "parse_error": null,
+      "sha256": "EB4D07370A7FD007C68051FFD0A10E03BB0770AE957826128283C25C90E519C8",
+      "source": "mat001_track_a_s_int_embed_summary.json"
+    }
+  },
+  "gate": "UVIR-003_TIER1_PEER_REVIEW",
+  "interface": "UVIR_STAGE5_PLUS_MAT_CLAIM_SURFACE",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "mat_dual_status_surface": [
+    {
+      "V_status": "NOT_COMPUTED",
+      "mat001_pass": false,
+      "name": "track_a_s_int",
+      "ok": true,
+      "physics_pass": false,
+      "present": true
+    },
+    {
+      "V_status": "NOT_COMPUTED",
+      "mat001_pass": false,
+      "name": "kq_readiness",
+      "ok": true,
+      "physics_pass": false,
+      "present": true
+    },
+    {
+      "V_status": "NOT_COMPUTED",
+      "mat001_pass": false,
+      "name": "kq_dig",
+      "ok": true,
+      "physics_pass": false,
+      "present": true
+    },
+    {
+      "V_status": "NOT_COMPUTED",
+      "mat001_pass": false,
+      "name": "conditional_branch",
+      "ok": true,
+      "physics_pass": false,
+      "present": true
+    },
+    {
+      "V_status": "NOT_COMPUTED",
+      "mat001_pass": false,
+      "name": "join",
+      "ok": true,
+      "physics_pass": false,
+      "present": true
+    },
+    {
+      "V_status": "NOT_COMPUTED",
+      "mat001_pass": false,
+      "name": "j2",
+      "ok": true,
+      "physics_pass": false,
+      "present": true
+    }
+  ],
+  "mat_handoff": {
+    "allows_MAT001_PASS": false,
+    "allows_MAT_calculation_work": true,
+    "allows_downstream_Derived_from_MAT": false,
+    "note": "The scoped Stage-2/3 handoff permits provisional MAT engineering only; UVIR remains IN_PROGRESS and no MAT PASS or Derived packaging is authorized.",
+    "requires_for_MAT_PASS": [
+      "Compute V from S_int / force kinetic chart",
+      "Report C_obs as Derived from micro S_int or keep Conditional baseline explicit",
+      "MAT-001 checklist complete with claim ledger"
+    ]
+  },
+  "n_checks": 21,
+  "next_required_for_tier1": [
+    "Compute V=C_m/sqrt(K_Q), or an equivalent matched invariant, from one declared action/field chart",
+    "Reopen Stage 4A and re-evaluate causality with the matched invariant",
+    "Establish a gauge-invariant physical cutoff/unitarity result in the declared claim domain",
+    "Resolve or control the relevant infrared complex-quartet response",
+    "Run a later independent Stage 5 closure review; MAT PASS remains blocked"
+  ],
+  "peer_review_claim_ledger": {
+    "dual_status_required_for": [
+      "Any numeric Conditional sample from the matching branch",
+      "Any use of C_obs~1 or C_IR=2/3 as a working hypothesis",
+      "Track-A Conditional host embed (not full multi-sector UVIR completion)"
+    ],
+    "may_state": [
+      "UVIR-003 remains IN_PROGRESS under Stage 5 HOLD_TIER1_CLOSURE",
+      "Bounded high-q / Track-A / methods subgates pass within declared scope only",
+      "MAT calculation work is permitted; MAT PASS and Derived packaging are forbidden",
+      "Track-A Conditional host exports matter d,h form and symbolic K_Q; V form holds symbolically",
+      "Conditional dual-status probes exist and are labeled Conditional only",
+      "M2/M3/M6/M7 remain blockers for tier-1 UVIR closure",
+      "Stage 4A remains closed until a matched invariant exists"
+    ],
+    "must_not_state": [
+      "UVIR-003 physics PASS or full gate closed",
+      "MAT-001 PASS or V numerically computed as Derived",
+      "K_Q Derived from R1 dimensional analogy or Conditional samples",
+      "Stage 4A reopened without matched Aq/K_Q (or equivalent invariant)",
+      "Free-sector ADM identified with Track-A force host without a map",
+      "Conditional C_obs~1 or C_IR=2/3 as Derived microphysics",
+      "Downstream SPARC/H0/lensing Derived from current MAT state"
+    ]
+  },
+  "physics_pass": false,
+  "post_mat_kit_peer_review_notes": [
+    "Track-A Conditional host kit advances MAT calculation work without authorizing MAT PASS",
+    "Symbolic V form is not a matched invariant for Stage 4A",
+    "K_Q dig incomplete: referee must not be told K_Q is Derived",
+    "Conditional matching branch must remain dual-status in any manuscript text",
+    "Join readiness: matter-only static channel form is not multi-sector completion"
+  ],
+  "residual_peer_review_risks": [
+    {
+      "mitigation": "Claim status Conditional; no Derived packaging; Stage 4A reopen path documented",
+      "risk": "Referee may demand Derived Aq/K_Q before accepting force-sector claims"
+    },
+    {
+      "mitigation": "Only redefinition invariants used in domain statements; free P explicit",
+      "risk": "K_Q NOT_DERIVED leaves absolute normalization free"
+    },
+    {
+      "mitigation": "Stated NOT_COMPUTED; MAT PASS forbidden; optional Stage 4A",
+      "risk": "V NOT_COMPUTED blocks R2 Derived upgrade"
+    },
+    {
+      "mitigation": "Deferred from the present scoped path; M4 records only a path-with-scope",
+      "risk": "Optical theorem absent"
+    }
+  ],
+  "scientific_boundary": "A PASS means a peer-review readiness audit confirms the Tier-1 hold must be retained: M2/M3/M6/M7 unmet, Stage 4A closed, V and K_Q not Derived, MAT PASS forbidden, and Conditional MAT work dual-status only. It is not UVIR or MAT physics PASS and does not reopen Stage 4A.",
+  "serial_next": "Either produce a genuine matched invariant (V or Aq/K_Q) under one declared chart and only then reopen Stage 4A, or retain HOLD_TIER1 and keep all Conditional packaging dual-status for peer review.",
+  "stage": "TIER1_PEER_REVIEW_READINESS",
+  "stage4A_reopen_contract": {
+    "all_reopen_conditions_met": false,
+    "conditions": {
+      "causality_re_evaluated_with_matched_invariant": {
+        "currently_met": false,
+        "note": "Only Conditional causality domain tables exist",
+        "required": true
+      },
+      "independent_stage5_review_after_4A": {
+        "currently_met": false,
+        "note": "Cannot run until 4A reopen path is satisfied",
+        "required": true
+      },
+      "matched_invariant_V_or_Aq_over_KQ_Derived": {
+        "currently_met": false,
+        "evidence": {
+          "V_status": "NOT_COMPUTED",
+          "kq_dig": "INCOMPLETE_NO_NUMERIC_K_Q_PATH_READY",
+          "kq_numeric_status": "NOT_DERIVED"
+        },
+        "required": true
+      },
+      "physical_cutoff_or_unitarity_with_matched_invariant": {
+        "currently_met": false,
+        "note": "M6 remains HOLD_PHYSICAL_CUTOFF_REQUIRED",
+        "required": true
+      },
+      "same_action_chart_for_C_m_and_K_Q_or_residue": {
+        "currently_met": false,
+        "form_host_present": true,
+        "note": "Track-A Conditional host has form-level d and symbolic K_Q, but absolute coefficients are not Derived",
+        "required": true
+      }
+    },
+    "policy": "Stage 4A reopens only when a genuine matched invariant exists and M3/M6 are re-evaluated under that invariant. Conditional samples and symbolic V form are insufficient.",
+    "reopen_authorized": false,
+    "stage4A_status": "CLOSED"
+  },
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_TIER1_PEER_REVIEW_READINESS_HOLD_RETAINED",
+  "tier1_closure_status": "NOT_MET",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

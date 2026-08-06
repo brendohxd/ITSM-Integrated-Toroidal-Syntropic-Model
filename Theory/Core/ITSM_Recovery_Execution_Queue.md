@@ -25,7 +25,12 @@ outputs remain the evidence authority.
 | P0 | Track-A host \(K_Q\) readiness | **completed (symbolic only)** | Host \(K=K_Q\) exported symbolically; on-host \(V\) form + rescaling identity hold; numeric \(K_Q\) still `NOT_DERIVED`; Conditional estimate rejected as Derived |
 | P0 | \(K_Q\) microscopic derivation dig | **completed (incomplete)** | P1–P4 paths checked; none ready for numeric \(K_Q\); R3 remains incomplete; R1 not a derivation |
 | P0 | Conditional matching branch (dual status) | **completed (open Conditional)** | Branch open with labeled Conditional samples; Derived \(V\)/`K_Q` stay closed; Stage 4A closed |
-| P0 | Numeric Derived \(V\) / Stage 4A | **blocked** | Still requires real \(K_Q\) or residue derivation; Conditional probes are not substitutes |
+| P0 | Track-A matter/free-force join readiness | **completed (partial)** | Matter-only static channel form-ready; free-force J2 is velocity-quadratic residual; full multi-sector J2 not assembled |
+| P0 | Tier-1 peer-review readiness (hold retained) | **completed** | Stage 5 HOLD re-verified; M2/M3/M6/M7 unmet; Stage 4A reopen contract all false; MAT dual-status surface consistent; claim ledger deny-list executable |
+| P0 | Tier-1 forward plan (H0–H7) | **active** | Plan at `Theory/Core/ITSM_Tier1_Forward_Plan.md`; Lane A Derived critical path H1→H5; Lane B Conditional parallel only |
+| P0 | H1.1–H1.2 parent-action matching declare + inventory | **completed (incomplete)** | Derived route declared (Z_φ,g_φ→Track-A); repo inventory finds no numeric micro coefficients |
+| P0 | H1.3 parent-action derivation attempt | **next** | Derive/bound Z_φ,g_φ from declared sources or freeze incompleteness requirements |
+| P0 | Numeric Derived \(V\) / Stage 4A / tier-1 UVIR close | **blocked (H1–H5)** | Requires genuine matched invariant; Conditional probes are not substitutes |
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; C2 calculation priority is not identity selection |
 | P1 | RES R1/R2/R3 constitutive-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; R0 remains control and R1 is not activated |
 | P1 | VOR-to-UVIR parent-identity interface inventory | **completed** | Shared polar convention noted; action identification held undeclared; no resonance/force packaging; `physics_pass: false` |

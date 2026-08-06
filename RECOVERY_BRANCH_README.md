@@ -382,6 +382,20 @@ matching branch is open for labeled probes only; Derived \(V\) and \(K_Q\) stay
 closed. Subgates: `PASS_MAT001_KQ_DERIVATION_DIG_INCOMPLETE`,
 `PASS_MAT001_CONDITIONAL_MATCHING_BRANCH_OPEN_DUAL_STATUS`.
 
+### Track-A join readiness - 2026-08-06
+
+Matter-only static channel form-ready; free-force constraint J2 is
+velocity-quadratic (not pure static \(B\)); full multi-sector J2 not assembled.
+Subgate: `PASS_MAT001_TRACK_A_JOIN_READINESS_PARTIAL_MATTER_CHANNEL_ONLY`.
+
+### Tier-1 peer-review readiness - 2026-08-06
+
+Executable hold-retention audit after the Track-A Conditional MAT kit: Stage 5
+`HOLD_TIER1_CLOSURE` retained; Stage 4A reopen contract all false; MAT dual-status
+surface consistent; peer-review allow/deny ledger published. Subgate:
+`PASS_TIER1_PEER_REVIEW_READINESS_HOLD_RETAINED`. See
+`Theory/Gates/UVIR-003/UVIR-003_TIER1_PEER_REVIEW_READINESS.md`.
+
 Authoritative process detail:
 `Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md` and
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_STAGE5_FULL_GATE_DECISION.md`.

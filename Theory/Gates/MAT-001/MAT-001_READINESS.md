@@ -91,12 +91,12 @@ This does **not** unblock MAT; it makes the MAT target quantity explicit.
 | Track-A \(K_Q\) readiness | Host time-kinetic \(K_Q\) exported symbolically; on-host \(V\) form + rescaling identity hold | Numeric \(K_Q\) still `NOT_DERIVED`; Conditional dimensional estimate rejected as Derived |
 | \(K_Q\) derivation dig | Four paths audited; none ready for numeric \(K_Q\) | Microscopic matching still incomplete |
 | Conditional matching branch | Dual-status branch open; Conditional samples labeled only | Derived \(V\)/`K_Q` closed; Stage 4A closed |
+| Track-A join readiness | Matter-only static channel form-ready; free-force J2 residual; full multi-sector not assembled | Numeric matching still blocked on \(K_Q\) |
 
 Subgates include
-`PASS_MAT001_TRACK_A_KQ_SYMBOLIC_HOST_NUMERIC_BLOCKED`,
-`PASS_MAT001_KQ_DERIVATION_DIG_INCOMPLETE`, and
-`PASS_MAT001_CONDITIONAL_MATCHING_BRANCH_OPEN_DUAL_STATUS`. All preserve Derived
-\(V\) as `NOT_COMPUTED`, `mat001_pass: false`, Stage 4A closed.
+`PASS_MAT001_CONDITIONAL_MATCHING_BRANCH_OPEN_DUAL_STATUS` and
+`PASS_MAT001_TRACK_A_JOIN_READINESS_PARTIAL_MATTER_CHANNEL_ONLY`. All preserve
+Derived \(V\) as `NOT_COMPUTED`, `mat001_pass: false`, Stage 4A closed.
 
 ## MAT-001 open checklist (when unblocked)
 

@@ -1270,6 +1270,53 @@ cutoff-method correction only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` with
 `physics_pass: false`; no preferred shear, modulus dynamics, Casimir result,
 twisted-boundary preference, cosmology, Derived claim or frozen release follows.
 
+## 2026-08-06 - Tier-1 forward plan + H1.1–H1.2 parent-action matching
+
+Gate: plan + MAT-001 H1
+
+**What changed:** published `ITSM_Tier1_Forward_Plan.md` covering hurdles H0–H7
+(Derived Lane A H1→H5, Conditional Lane B parallel). Started H1 with parent-action
+route declaration \(Z_\phi,g_\phi\to\) Track-A and a deterministic repo inventory
+finding no numeric micro coefficients (`DECLARED_INCOMPLETE`).
+
+**Decision:** plan active; H1.1–H1.2 complete as incompleteness; H1.3 next.
+Stage 4A remains closed; \(V\) `NOT_COMPUTED`.
+
+**What was abandoned:** using R1/Conditional samples as the Derived matching route.
+
+## 2026-08-06 - Tier-1 peer-review readiness hold retained
+
+Gate: UVIR-003 Stage 5 + MAT claim surface (peer-review bar)
+
+**What changed:** executable audit re-pins `HOLD_TIER1_CLOSURE`, verifies
+M2/M3/M6/M7 still unmet, freezes a Stage 4A reopen contract (all conditions
+false), checks MAT dual-status records keep \(V\) `NOT_COMPUTED` and MAT PASS
+false, and publishes an allow/deny claim ledger for peer review after the
+Track-A Conditional kit.
+
+**Decision:** accept `PASS_TIER1_PEER_REVIEW_READINESS_HOLD_RETAINED`. This is
+a hold-retention pass, not UVIR/MAT physics PASS.
+
+**What was abandoned:** any silent Stage 4A reopen or Derived upgrade from
+Conditional samples or symbolic \(V\) form.
+
+## 2026-08-06 - MAT-001 Track-A join readiness
+
+Gate: MAT-001 (matter vs free-force join)
+
+**What changed:** classified Track-A join of matter \(d,h\) with free-force
+constraint J2. Matter-only static channel is form-ready
+(\(h=0\Rightarrow c_{\rm eff}=d\)). Free-force lapse/shift sources are
+velocity-quadratic residuals outside pure static \(B\). Full multi-sector J2
+and free-sector identification remain not ready.
+
+**Decision:** accept
+`PASS_MAT001_TRACK_A_JOIN_READINESS_PARTIAL_MATTER_CHANNEL_ONLY`. Operational
+channel is matter-only static on Track-A host. \(V\) still `NOT_COMPUTED`.
+
+**What was abandoned:** treating \(\dot\pi^2\) force J2 as static \(B\); silent
+free-sector/Track-A identification.
+
 ## 2026-08-06 - MAT-001 K_Q dig + Conditional dual-status branch
 
 Gate: MAT-001 (derivation dig and Conditional branch)

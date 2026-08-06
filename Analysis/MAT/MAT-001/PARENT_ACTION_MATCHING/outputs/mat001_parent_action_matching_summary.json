@@ -1,0 +1,249 @@
+{
+  "C_m_numeric_status": "NOT_DERIVED_FORM_ONLY",
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Numeric Z_phi from a declared parent action (same action as g_phi)",
+    "Numeric g_phi from the same parent matter coupling",
+    "Justified f_phi (or equivalent) map from phi to Track-A pi chart",
+    "Provenance that parent kinetic is the Track-A K_Q time piece",
+    "Optional backup: dynamical residue computation of V without bare K_Q"
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "track_a_s_int_upstream",
+      "ok": true
+    },
+    {
+      "name": "j1_upstream",
+      "ok": true
+    },
+    {
+      "name": "kq_dig_upstream_incomplete",
+      "ok": true
+    },
+    {
+      "name": "tier1_hold_upstream",
+      "ok": true
+    },
+    {
+      "name": "r3_still_incomplete_upstream",
+      "ok": true
+    },
+    {
+      "name": "track_a_s_int_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "j1_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "kq_dig_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "tier1_readiness_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "r3_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "parent_route_declared",
+      "ok": true
+    },
+    {
+      "name": "symbolic_V_identities_hold",
+      "ok": true
+    },
+    {
+      "name": "inventory_finds_no_numeric_micro_coefficients",
+      "ok": true
+    },
+    {
+      "name": "forbidden_routes_listed",
+      "ok": true
+    },
+    {
+      "flags": {
+        "claims_MAT_pass": false,
+        "matching_complete": false,
+        "numeric_K_Q_derived": false,
+        "numeric_V_computed": false,
+        "numeric_Z_phi_derived": false,
+        "numeric_g_phi_derived": false,
+        "parent_route_declared": true,
+        "physics_pass": false,
+        "reopens_stage4A": false,
+        "uses_R1_as_Derived": false,
+        "uses_conditional_samples_as_Derived": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "claims_MAT_pass": false,
+    "matching_complete": false,
+    "numeric_K_Q_derived": false,
+    "numeric_V_computed": false,
+    "numeric_Z_phi_derived": false,
+    "numeric_g_phi_derived": false,
+    "parent_route_declared": true,
+    "physics_pass": false,
+    "reopens_stage4A": false,
+    "uses_R1_as_Derived": false,
+    "uses_conditional_samples_as_Derived": false
+  },
+  "declaration": {
+    "IR_Track_A_chart": {
+      "field_map": "psi = f_phi * phi  (Conditional force-role map to Track-A: psi=psi_bar+pi)",
+      "host": "R2_TRACK_A_FORCE_PHONON",
+      "induced_C_m": "g_phi/f_phi",
+      "induced_K_Q": "Z_phi/f_phi**2",
+      "induced_V": "g_phi/sqrt(Z_phi)"
+    },
+    "backup_route": {
+      "id": "DIRECT_ON_SHELL_RESIDUE_V",
+      "note": "R2 identity: canonical residue equals V without bare K_Q once dynamics exist",
+      "status": "DECLARED_NOT_ATTEMPTED_IN_THIS_CHECKPOINT"
+    },
+    "forbidden_as_Derived": [
+      "R1 K_Q = k_Q M_P^2 with k_Q ~ 1",
+      "R3 incomplete Z_psi r_rho without micro matching",
+      "Conditional matching-branch samples",
+      "Free-sector ADM fields as force phonon without map"
+    ],
+    "parent_chart": {
+      "field": "phi",
+      "kinetic_term": "(Z_phi/2)*(U.grad(phi))^2",
+      "matter_vertex": "-g_phi*rho_b*phi",
+      "required_coefficients": [
+        "Z_phi",
+        "g_phi"
+      ]
+    },
+    "selected_derived_route": "PARENT_ACTION_Z_phi_g_phi_TO_TRACK_A",
+    "status": "DECLARED_NOT_COMPLETED",
+    "symbolic_identities_verified": {
+      "C_m_equals_g_over_f": true,
+      "K_Q_equals_Z_over_f_squared": true,
+      "V_parent_equals_C_m_over_sqrt_K_Q": true
+    }
+  },
+  "evidence": {
+    "j1": {
+      "parse_error": null,
+      "sha256": "D3347CA262861F685FB348FB813C776D8F6CFE00AA9F1A707774BF232C83159F",
+      "source": "mat001_j1_joint_action_normalization_summary.json"
+    },
+    "kq_dig": {
+      "parse_error": null,
+      "sha256": "4107BD08FE1DFF755711DAF5C8AE6C762C8C8DDDE4BE41A5B7D16D72885FDAB1",
+      "source": "mat001_kq_derivation_dig_summary.json"
+    },
+    "r3": {
+      "parse_error": null,
+      "sha256": "0E16A71CDCACFF2DFFF3084F99C7165871F5318FDFE456B8D3FD92E5201E1417",
+      "source": "uvir003_r3_uv_residue_audit_summary.json"
+    },
+    "tier1_readiness": {
+      "parse_error": null,
+      "sha256": "7F1F28FAC07EEECC6B974D1D41FCA6F0C01DF2006B78B93135F7EA4CEB46C281",
+      "source": "uvir003_tier1_peer_review_readiness_summary.json"
+    },
+    "track_a_s_int": {
+      "parse_error": null,
+      "sha256": "EB4D07370A7FD007C68051FFD0A10E03BB0770AE957826128283C25C90E519C8",
+      "source": "mat001_track_a_s_int_embed_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "inadmissible_substitutions": {
+    "conditional_sample_as_parent_match": "REJECTED",
+    "k_Q_equals_1_as_Z_phi": "REJECTED",
+    "symbolic_identity_as_numeric_V": "REJECTED"
+  },
+  "interface": "PARENT_ACTION_TO_TRACK_A",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "matching_status": "DECLARED_INCOMPLETE",
+  "missing_microscopic_inputs": [
+    "Numeric Z_phi from a declared parent action (same action as g_phi)",
+    "Numeric g_phi from the same parent matter coupling",
+    "Justified f_phi (or equivalent) map from phi to Track-A pi chart",
+    "Provenance that parent kinetic is the Track-A K_Q time piece",
+    "Optional backup: dynamical residue computation of V without bare K_Q"
+  ],
+  "n_checks": 15,
+  "next_work_packages": [
+    "H1.3: derive or bound Z_phi and g_phi from declared S_Phi + S_int, or prove absence in all declared sources",
+    "H1.4: freeze research requirements for parent kinetic matching in Master Plan / queue",
+    "H2: only after numeric or residue success \u2014 redefinition invariance package for peer review"
+  ],
+  "physics_pass": false,
+  "plan_step": "H1.1_H1.2",
+  "repo_inventory": {
+    "hit_paths_capped": {
+      "Z_phi": [
+        "Analysis/MAT/MAT-001/J1_JOINT_ACTION/mat001_j1_joint_action_normalization.py",
+        "Analysis/MAT/MAT-001/J1_JOINT_ACTION/outputs/mat001_j1_joint_action_normalization_summary.json",
+        "Analysis/MAT/MAT-001/J2_MODE_PROJECTION/mat001_j2_basis_covariant_mode_projection.py",
+        "Analysis/MAT/MAT-001/J2_MODE_PROJECTION/outputs/mat001_j2_basis_covariant_mode_projection_summary.json",
+        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/mat001_kq_derivation_dig_audit.py",
+        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/outputs/mat001_kq_derivation_dig_summary.json",
+        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_matching_attempt.py",
+        "Analysis/MAT/MAT-001/S_INT_DH_EXPORT/mat001_s_int_dh_export_audit.py",
+        "Analysis/MAT/MAT-001/S_INT_DH_EXPORT/outputs/mat001_s_int_dh_export_summary.json",
+        "Analysis/MAT/MAT-001/TRACK_A_KQ/mat001_track_a_kq_readiness_audit.py",
+        "Analysis/MAT/MAT-001/TRACK_A_KQ/outputs/mat001_track_a_kq_readiness_summary.json"
+      ],
+      "Z_psi": [
+        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/mat001_kq_derivation_dig_audit.py",
+        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/outputs/mat001_kq_derivation_dig_summary.json",
+        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_matching_attempt.py",
+        "Analysis/MAT/MAT-001/TRACK_A_KQ/mat001_track_a_kq_readiness_audit.py",
+        "Analysis/MAT/MAT-001/TRACK_A_KQ/outputs/mat001_track_a_kq_readiness_summary.json",
+        "Analysis/UVIR/UVIR-003/outputs/uvir003_conditional_matching_floor_summary.json",
+        "Analysis/UVIR/UVIR-003/outputs/uvir003_matching_route_program_summary.json",
+        "Analysis/UVIR/UVIR-003/outputs/uvir003_r3_uv_residue_audit_summary.json",
+        "Analysis/UVIR/UVIR-003/outputs/uvir003_stage2c_floor_diagnostics_summary.json",
+        "Analysis/UVIR/UVIR-003/outputs/uvir003_stage4_m3m6_conditional_limit_summary.json",
+        "Analysis/UVIR/UVIR-003/uvir003_conditional_matching_floor.py",
+        "Analysis/UVIR/UVIR-003/uvir003_matching_route_program.py"
+      ],
+      "g_phi": [
+        "Analysis/MAT/MAT-001/J1_JOINT_ACTION/mat001_j1_joint_action_normalization.py",
+        "Analysis/MAT/MAT-001/J1_JOINT_ACTION/outputs/mat001_j1_joint_action_normalization_summary.json",
+        "Analysis/MAT/MAT-001/J2_MODE_PROJECTION/mat001_j2_basis_covariant_mode_projection.py",
+        "Analysis/MAT/MAT-001/J2_MODE_PROJECTION/outputs/mat001_j2_basis_covariant_mode_projection_summary.json",
+        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/mat001_kq_derivation_dig_audit.py",
+        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/outputs/mat001_kq_derivation_dig_summary.json",
+        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_matching_attempt.py",
+        "Analysis/MAT/MAT-001/S_INT_DH_EXPORT/mat001_s_int_dh_export_audit.py",
+        "Analysis/MAT/MAT-001/S_INT_DH_EXPORT/outputs/mat001_s_int_dh_export_summary.json"
+      ],
+      "numeric_Z_phi_assignment": [],
+      "numeric_g_phi_assignment": []
+    },
+    "interpretation": "Symbol mentions of Z_phi/g_phi are expected from J1 templates. Absence of numeric assignment means parent-action matching is incomplete.",
+    "microscopic_coefficients_status": "NOT_DERIVED_NUMERIC_ABSENT",
+    "numeric_Z_phi_or_g_phi_assignment_found": false,
+    "scanned_files": 221,
+    "symbol_mentions_present": true
+  },
+  "scientific_boundary": "A PASS declares the parent-action Derived route for Track-A matching and inventories the repo for microscopic Z_phi/g_phi. Finding them absent is an incompleteness result, not a derivation of V or K_Q.",
+  "serial_next": "H1.3 derivation attempt from declared architecture/UVIR sources, or explicit incompleteness bound; do not open Stage 4A.",
+  "stage": "H1_PARENT_ACTION_MATCHING",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_PARENT_ACTION_MATCHING_DECLARED_INCOMPLETE",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

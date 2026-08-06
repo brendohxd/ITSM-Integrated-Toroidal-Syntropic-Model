@@ -1,6 +1,27 @@
 # ITSM Changelog & Archive History
 
 
+## Recovery branch - tier-1 forward plan and H1 parent-action start (2026-08-06)
+
+### Planning and Derived path
+- **Forward plan:** Added `Theory/Core/ITSM_Tier1_Forward_Plan.md` for hurdles H0–H7 under the peer-review bar.
+- **H1.1–H1.2:** Declared parent-action Derived route to Track-A; inventory finds no numeric \(Z_\phi/g_\phi\); matching `DECLARED_INCOMPLETE`.
+- **Also packaged:** Track-A join readiness and tier-1 hold-retention audit for remote publication.
+
+## Recovery branch - tier-1 peer-review readiness hold retained (2026-08-06)
+
+### UVIR / MAT governance
+- **Hold re-verified:** Stage 5 `HOLD_TIER1_CLOSURE` retained; M2/M3/M6/M7 still unmet for tier-1 UVIR closure.
+- **Stage 4A contract:** Explicit reopen conditions recorded; all currently false; reopen not authorized.
+- **Claim ledger:** Peer-review allow/deny surface after Track-A Conditional MAT kit; dual-status MAT records checked fail closed.
+- **Subgate:** `PASS_TIER1_PEER_REVIEW_READINESS_HOLD_RETAINED` — not physics PASS.
+
+## Recovery branch - MAT Track-A join readiness (2026-08-06)
+
+### UVIR-to-MAT critical path
+- **Join map:** Matter-only static Track-A channel form-ready; free-force constraint J2 is a velocity-quadratic residual; full multi-sector J2 not assembled.
+- **Subgate:** `PASS_MAT001_TRACK_A_JOIN_READINESS_PARTIAL_MATTER_CHANNEL_ONLY`; \(V\) still `NOT_COMPUTED`.
+
 ## Recovery branch - MAT K_Q dig and Conditional branch (2026-08-06)
 
 ### UVIR-to-MAT critical path
