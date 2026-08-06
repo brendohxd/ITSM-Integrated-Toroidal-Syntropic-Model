@@ -84,19 +84,17 @@ This does **not** unblock MAT; it makes the MAT target quantity explicit.
 | UVIR handoff contract | Eight UVIR/MAT records form a consistent fail-closed interface for a scoped projection audit | Action-level source vector, kinetic metric and numerical matching |
 | J2 mode projection | \(g_{\rm can}=c_{\rm eff}^Tu/\sqrt{u^TKu}\) after constraint elimination is basis invariant | Live same-action \(K,C,B,d,h,u\) export and numerical matching |
 | Live UVIR export inventory | Partial live \(K,C\) and constraint-source evidence is identified without substitution | Same-chart bundle remains absent: \(d,h\) are not exported, \(B\) is not isolated, and \(u\) is not selected |
+| Same-chart free-sector export | Original-chart free \(K,C\) plus exact \(M_x,M_v\) source decomposition; physical free \(K\) transformed | Pure static J2 \(B\) blocked by nonzero \(M_v\); matter \(d,h\) and mode \(u\) still absent |
+| \(S_{\rm int}\) + \(d,h\) placement | Conditional form \(-C_m\rho_b\psi\) declared; IR \(d=(-C_m)\), \(h=\emptyset\) recover \(\lvert V\rvert\) | Live free-sector chart lacks force field \(\psi\); live UVIR \(d,h\) remain `NOT_EXPORTED` |
+| Force hosting readiness | Five host routes inventoried; Track-A has force without matter; full ADM force completion blocked | Inventory stage: no host selected until the Track-A embed checkpoint |
+| Track-A \(S_{\rm int}\) embed | Track-A selected Conditional; \(d=(-C_m)\), \(h=(0,0)\) exported on host; \(\lvert V\rvert\) form recovered with symbolic \(K_Q\) | Numeric \(K_Q\)/`V` not derived; free-sector join not declared; MAT still blocked |
 
-Subgates: `PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY`,
-`PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT`,
-`PASS_MAT001_UNIT_CHART_CONTRACT_OPEN`,
-`PASS_MAT001_UVIR_HANDOFF_CONTRACT_BLOCKED`, and
-`PASS_MAT001_J2_BASIS_COVARIANT_MODE_PROJECTION_TEMPLATE`, and
-`PASS_MAT001_LIVE_UVIR_EXPORT_INVENTORY_BLOCKED`. All six preserve \(V\) as
+Subgates include
+`PASS_MAT001_FORCE_HOSTING_READINESS_BLOCKED` and
+`PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL`. All preserve \(V\) as
 `NOT_COMPUTED`, `mat001_pass: false`, `physics_pass: false`, UVIR-003
-`IN_PROGRESS`, and Stage 4A closed. The handoff subgate authorized only the
-symbolic physical-mode projection audit; J2 derives that method on exact
-template matrices. The live inventory now shows why wiring is still forbidden:
-the partial exports do not form one same-chart action bundle, and the matter
-source covectors are absent.
+`IN_PROGRESS`, and Stage 4A closed. Matter-channel \(d,h\) now exist on the
+Track-A Conditional host, but numeric matching and multi-sector joins remain open.
 
 ## MAT-001 open checklist (when unblocked)
 

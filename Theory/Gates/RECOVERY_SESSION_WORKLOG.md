@@ -1270,6 +1270,89 @@ cutoff-method correction only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` with
 `physics_pass: false`; no preferred shear, modulus dynamics, Casimir result,
 twisted-boundary preference, cosmology, Derived claim or frozen release follows.
 
+## 2026-08-06 - MAT-001 Track-A S_int embed and d,h export
+
+Gate: MAT-001 (Conditional force host selection)
+
+**What changed:** selected Track-A as the Conditional live force host; declared
+the force-role map \(\psi_{\rm IR}:=\psi_{\rm TrackA}=\psi_{\rm bar}+\pi\);
+embedded \(S_{\rm int}=-C_m\rho_b\psi\); exported matter-channel
+\(d=(-C_m)\), \(h=(0,0)\) on \(x=(\pi)\), \(z=(\delta N,\beta)\); recovered
+\(\lvert g_{\rm can}\rvert=V\) form with symbolic host \(K_Q\). Free-sector
+ADM remains a distinct chart; free-sector \(d,h\) stay `NOT_EXPORTED`.
+
+**Decision:** accept
+`PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL`. This is a
+Conditional host embed, not numeric matching. \(V\) remains `NOT_COMPUTED`,
+\(K_Q\) `NOT_DERIVED`, MAT blocked, Stage 4A closed.
+
+**What was abandoned:** free-sector identification with Track-A; numeric \(V\)
+from symbolic \(C_m/\sqrt{K_Q}\) alone; treating free-force cubic vertices as
+matter covectors.
+
+## 2026-08-06 - MAT-001 force-field hosting readiness
+
+Gate: MAT-001 (force host map for live \(S_{\rm int}\))
+
+**What changed:** inventoried five candidate hosts for matter coupling: free-sector
+ADM, Track-A local force, complete finite-\(q\) \(S_2\) Track-A block, full
+nonlinear ADM force completion, and IR template. Only Track-A currently hosts a
+force phonon, and it lacks declared \(\rho_b\)/\(S_{\rm int}\). Full ADM
+\(\psi\)-inclusive J2 remains blocked on \(\Delta_U\) and \(Y^{3/2}\). No host
+route is selected.
+
+**Decision:** accept `PASS_MAT001_FORCE_HOSTING_READINESS_BLOCKED`. This is a
+blocker-map pass, not force completion or MAT unlock. \(V\) remains
+`NOT_COMPUTED`.
+
+**What was abandoned:** silent free-sector/Track-A identification; treating the
+Track-A cubic force vertex as matter \(S_{\rm int}\); promoting the IR template
+to a live UVIR host.
+
+## 2026-08-06 - MAT-001 S_int declaration and d,h live-chart placement
+
+Gate: MAT-001 (matter-source channel after free-sector export)
+
+**What changed:** declared Conditional \(S_{\rm int}\supset -C_m\rho_b\psi\)
+(architecture/J1/R2 form); derived IR single-field J2 covectors
+\(d=(-C_m)\), \(h=\emptyset\) and verified \(\lvert g_{\rm can}\rvert=V\);
+audited placement into the live free-sector UVIR chart
+\((R,\delta\rho,\vartheta)\). Force field \(\psi\) is absent there, so live
+\(d,h\) remain `NOT_EXPORTED`. Rejected \(\delta\rho\) as \(\rho_b\), diagnostic
+impulses as \(d,h\), and Newtonian \(\Phi_N\) as the force vertex.
+
+**Decision:** accept
+`PASS_MAT001_S_INT_DH_DECLARATION_LIVE_CHART_BLOCKED`. Form and IR template are
+progress; live same-action matching stays blocked. \(V\) remains
+`NOT_COMPUTED`, MAT blocked, Stage 4A closed.
+
+**What was abandoned:** pasting IR-template \(d,h\) into the free-sector
+bundle; treating free-sector condensate fields as baryonic sources.
+
+## 2026-08-06 - MAT-001 same-chart free-sector quadratic export
+
+Gate: MAT-001 (post-inventory free-sector export)
+
+**What changed:** exported free-sector \(K\) and \(C\) in the original
+\((R,\delta\rho,\vartheta;\delta N,\Sigma)\) chart from the live finite-\(q\)
+reduction; decomposed the constraint source exactly into field map \(M_x\) and
+velocity map \(M_v\); recorded the static J2 candidate \(B=M_x^{T}\) while
+retaining the nonzero \(M_v\) residual; transformed free \(K\) into the physical
+\((\Xi,Q_\rho,Q_\chi)\) chart. Matter covectors \(d,h\) and mode \(u\) remain
+absent.
+
+**Decision:** accept
+`PASS_MAT001_SAME_CHART_FREE_QUADRATIC_EXPORT_PARTIAL` as a free-sector export
+advance only. Live bundle status is
+`PARTIAL_FREE_SECTOR_SAME_CHART_MATTER_SOURCES_ABSENT`. \(V\) remains
+`NOT_COMPUTED`, MAT remains blocked, UVIR remains in progress and Stage 4A
+remains closed. Full same-chart MAT action export still requires declared
+\(S_{\rm int}\) and a pure-static or extended J2 treatment of \(M_v\).
+
+**What was abandoned:** placeholder wiring of incomplete objects into live J2
+matching; erasure of velocity mixing; promotion of free eigenmodes to matter
+vertex modes; diagnostic \(Q_\rho,Q_\chi\) impulses as \(d,h\).
+
 ## 2026-08-06 - VOR-001 S2c UVIR parent-interface inventory
 
 Gate: VOR-001 (identity scaffold; not UVIR parent validation)

@@ -1,6 +1,37 @@
 # ITSM Changelog & Archive History
 
 
+## Recovery branch - MAT Track-A S_int embed (2026-08-06)
+
+### UVIR-to-MAT critical path
+- **Host selected:** Track-A force phonon chart selected as Conditional live host for matter coupling.
+- **Embed + export:** \(S_{\rm int}=-C_m\rho_b\psi\) with \(\psi=\psi_{\rm bar}+\pi\); matter \(d=(-C_m)\), \(h=(0,0)\) exported on that host.
+- **Boundary:** \(\lvert V\rvert\) form recovered with symbolic \(K_Q\) only; free-sector not identified; numeric \(V\) still `NOT_COMPUTED`; MAT blocked; Stage 4A closed.
+- **Subgate:** `PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL`.
+
+## Recovery branch - MAT force-hosting readiness (2026-08-06)
+
+### UVIR-to-MAT critical path
+- **Host inventory:** Compared free-sector ADM, Track-A force, complete \(S_2\), full ADM force completion and IR template as candidate \(S_{\rm int}\) hosts.
+- **Result:** No live host is ready; Track-A has force without matter; full ADM force completion remains blocked.
+- **Gate boundary:** Subgate `PASS_MAT001_FORCE_HOSTING_READINESS_BLOCKED`; \(V\) remains `NOT_COMPUTED`, MAT blocked, Stage 4A closed.
+
+## Recovery branch - MAT S_int form and d,h placement (2026-08-06)
+
+### UVIR-to-MAT critical path
+- **Declared interaction:** Recorded Conditional \(S_{\rm int}\supset -C_m\rho_b\psi\) with parent-chart map \(\psi=f_\phi\phi\).
+- **IR template:** Derived J2 covectors \(d=(-C_m)\), \(h=\emptyset\) that recover \(\lvert V\rvert\) in the single-field IR chart.
+- **Live placement:** Proved the free-sector UVIR chart lacks the force field \(\psi\); live \(d,h\) stay `NOT_EXPORTED`.
+- **Gate boundary:** Subgate `PASS_MAT001_S_INT_DH_DECLARATION_LIVE_CHART_BLOCKED`; no numeric \(V\), no MAT unlock, Stage 4A closed.
+
+## Recovery branch - MAT same-chart free-sector quadratic export (2026-08-06)
+
+### UVIR-to-MAT critical path
+- **Free-sector export:** Published original-chart free \(K,C\) and an exact field/velocity decomposition of the live constraint source.
+- **Chart transform:** Transformed the free kinetic metric into the physical scalar chart without inventing matter couplings.
+- **Residual retained:** Isolated a static J2 \(B\) candidate from \(M_x\) while keeping the nonzero \(M_v\) residual explicit.
+- **Gate boundary:** Subgate `PASS_MAT001_SAME_CHART_FREE_QUADRATIC_EXPORT_PARTIAL`; \(V\) remains `NOT_COMPUTED`, MAT remains blocked, Stage 4A stays closed.
+
 ## Recovery branch - VOR-to-UVIR parent interface inventory (2026-08-06)
 
 ### Identity tracks

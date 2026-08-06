@@ -1,0 +1,228 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Declare one external-matter interaction in the live quadratic action and derive action-level d and h.",
+    "Either reduce the velocity-linear constraint mixing into the pure static J2 B convention or extend the projection identity to the Mv residual.",
+    "Select physical mode u in the same chart only after c_eff is defined from d,h and B,C.",
+    "Fix one absolute unit/normalization system for every exported coefficient before numerical matching."
+  ],
+  "calculation_status": "PASS",
+  "chart_declaration": {
+    "constraint_chart": [
+      "delta_N",
+      "Sigma=q_phys^2*beta"
+    ],
+    "normalization_convention": "UVIR finite-q reduced quadratic Lagrangian; aether-unitary scalar gauge; no external-matter density chart declared",
+    "physical_scalar_chart": "Xi_Q_rho_Q_chi",
+    "primary_export_chart": "original_R_delta_rho_vartheta"
+  },
+  "checks": [
+    {
+      "name": "finite_q_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "physical_basis_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "j2_template_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "live_inventory_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "finite_q_reduction_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "physical_scalar_basis_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "MAT_J2_template_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "live_export_inventory_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "original_chart_K_C_exported",
+      "ok": true
+    },
+    {
+      "name": "constraint_source_decomposed_linear_exact",
+      "ok": true
+    },
+    {
+      "name": "velocity_mixing_residual_recorded_not_erased",
+      "ok": true
+    },
+    {
+      "name": "physical_chart_K_transformed",
+      "ok": true
+    },
+    {
+      "name": "matter_source_covectors_remain_absent",
+      "ok": true
+    },
+    {
+      "flags": {
+        "claims_MAT_pass": false,
+        "claims_UVIR_pass": false,
+        "claims_downstream_Derived": false,
+        "computes_numeric_V": false,
+        "derives_numeric_K_Q": false,
+        "free_sector_same_chart_objects_exported": true,
+        "live_same_chart_bundle_complete": false,
+        "numeric_matching_ready": false,
+        "physics_pass": false,
+        "pure_static_J2_B_ready": false,
+        "reopens_stage4A": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "claims_MAT_pass": false,
+    "claims_UVIR_pass": false,
+    "claims_downstream_Derived": false,
+    "computes_numeric_V": false,
+    "derives_numeric_K_Q": false,
+    "free_sector_same_chart_objects_exported": true,
+    "live_same_chart_bundle_complete": false,
+    "numeric_matching_ready": false,
+    "physics_pass": false,
+    "pure_static_J2_B_ready": false,
+    "reopens_stage4A": false
+  },
+  "evidence": {
+    "MAT_J2_template": {
+      "parse_error": null,
+      "sha256": "599065CD407A499BE8414FFF226C10889CA6BFE668E74A2C8E11E251D3C0D82E",
+      "source": "mat001_j2_basis_covariant_mode_projection_summary.json"
+    },
+    "finite_q_reduction": {
+      "parse_error": null,
+      "sha256": "AEDD8579E6DC9330E1B35B8F81E31AA085DF841C59ADC6F1AE399E2963CF7858",
+      "source": "uvir003_scalar_adm_finite_q_summary.json"
+    },
+    "live_export_inventory": {
+      "parse_error": null,
+      "sha256": "6378B8DBF852B213BAA7156B47B480E2D0E0022ECEC70276CC3F56122B6F4BB8",
+      "source": "mat001_live_uvir_export_inventory_summary.json"
+    },
+    "physical_scalar_basis": {
+      "parse_error": null,
+      "sha256": "9177BFA76F25CBD9BE29EE81C2A5771E12656B7E6D8F8D49F01D821B1C632212",
+      "source": "uvir003_physical_scalar_basis_summary.json"
+    }
+  },
+  "free_sector_export": {
+    "original_chart": {
+      "C": "Matrix([[C_14*q_phys**2 - lambda4*rho**4/4 - m_squared*rho**2 - lambda6*rho**6/(12*Lambda**2), 2*H*M_cos_sq], [2*H*M_cos_sq, -D_123]])",
+      "J2_static_B_candidate_from_Mx_transpose": "Matrix([[2*M_P_sq*q_phys**2, 0], [-lambda4*rho**3/2 - m_squared*rho - mu**2*rho - lambda6*rho**5/(4*Lambda**2), -rho_dot], [0, -mu*rho**2]])",
+      "K": "Matrix([[2*M_cos_sq*(36*C_14*D_123*Lambda**2*q_phys**2 - 24*C_14*Lambda**2*M_cos_sq*q_phys**2 + 216*D_123*H**2*Lambda**2*M_cos_sq - 9*D_123*Lambda**2*lambda4*rho**4 - 36*D_123*Lambda**2*m_squared*rho**2 - 3*D_123*lambda6*rho**6 - 144*H**2*Lambda**2*M_cos_sq**2 + 6*Lambda**2*M_cos_sq*lambda4*rho**4 + 24*Lambda**2*M_cos_sq*m_squared*rho**2 + 2*M_cos_sq*lambda6*rho**6)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), 24*H*Lambda**2*M_cos_sq*rho_dot*(-3*D_123 + 2*M_cos_sq)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), 24*H*Lambda**2*M_cos_sq*mu*rho**2*(-3*D_123 + 2*M_cos_sq)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)], [24*H*Lambda**2*M_cos_sq*rho_dot*(-3*D_123 + 2*M_cos_sq)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), (-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), 12*D_123*Lambda**2*mu*rho**2*rho_dot/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)], [24*H*Lambda**2*M_cos_sq*mu*rho**2*(-3*D_123 + 2*M_cos_sq)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), 12*D_123*Lambda**2*mu*rho**2*rho_dot/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), rho**2*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)]])",
+      "constraint_fields": [
+        "delta_N",
+        "Sigma=q_phys^2*beta"
+      ],
+      "constraint_source_field_map_Mx": "Matrix([[2*M_P_sq*q_phys**2, -lambda4*rho**3/2 - m_squared*rho - mu**2*rho - lambda6*rho**5/(4*Lambda**2), 0], [0, -rho_dot, -mu*rho**2]])",
+      "constraint_source_velocity_map_Mv": "Matrix([[6*H*M_cos_sq, -rho_dot, -mu*rho**2], [-2*M_cos_sq, 0, 0]])",
+      "dynamical_fields": [
+        "R",
+        "delta_rho",
+        "vartheta"
+      ],
+      "j2_template_comparison": "J2 uses -x^T B z - (1/2) z^T C z with z = C^{-1}(rho h - B^T x). Only the static field map Mx can supply a B candidate; nonzero Mv is a residual outside the pure static template.",
+      "lagrangian_constraint_sector": "L contains + z^T (Mx x + Mv xdot) + (1/2) z^T C z; stationary z = -C^{-1}(Mx x + Mv xdot)",
+      "velocities": [
+        "R_dot",
+        "delta_rho_dot",
+        "vartheta_dot"
+      ]
+    },
+    "physical_chart": {
+      "C_unchanged_by_dynamical_basis": "Matrix([[C_14*q_phys**2 - lambda4*rho**4/4 - m_squared*rho**2 - lambda6*rho**6/(12*Lambda**2), 2*H*M_cos_sq], [2*H*M_cos_sq, -D_123]])",
+      "K": "Matrix([[(-2*H*M_cos_sq*(-H*(36*C_14*D_123*Lambda**2*q_phys**2 - 24*C_14*Lambda**2*M_cos_sq*q_phys**2 + 216*D_123*H**2*Lambda**2*M_cos_sq - 9*D_123*Lambda**2*lambda4*rho**4 - 36*D_123*Lambda**2*m_squared*rho**2 - 3*D_123*lambda6*rho**6 - 144*H**2*Lambda**2*M_cos_sq**2 + 6*Lambda**2*M_cos_sq*lambda4*rho**4 + 24*Lambda**2*M_cos_sq*m_squared*rho**2 + 2*M_cos_sq*lambda6*rho**6) + 12*H*Lambda**2*mu**2*rho**2*(3*D_123 - 2*M_cos_sq) + 12*H*Lambda**2*rho_dot**2*(3*D_123 - 2*M_cos_sq)) + (mu**2*rho**2 + rho_dot**2)*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 24*H*H*Lambda**2*M_cos_sq*(3*D_123 - 2*M_cos_sq) - 48*H**2*Lambda**2*M_cos_sq**2))/(q_phys**2*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)), rho_dot*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 24*H*H*Lambda**2*M_cos_sq*(3*D_123 - 2*M_cos_sq) - 48*H**2*Lambda**2*M_cos_sq**2)/(q_phys*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)), mu*rho*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 24*H*H*Lambda**2*M_cos_sq*(3*D_123 - 2*M_cos_sq) - 48*H**2*Lambda**2*M_cos_sq**2)/(q_phys*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2))], [rho_dot*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 24*H*H*Lambda**2*M_cos_sq*(3*D_123 - 2*M_cos_sq) - 48*H**2*Lambda**2*M_cos_sq**2)/(q_phys*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)), (-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), 12*D_123*Lambda**2*mu*rho*rho_dot/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)], [mu*rho*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + 12*D_123*Lambda**2*rho_dot**2 + D_123*lambda6*rho**6 - 24*H*H*Lambda**2*M_cos_sq*(3*D_123 - 2*M_cos_sq) - 48*H**2*Lambda**2*M_cos_sq**2)/(q_phys*(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)), 12*D_123*Lambda**2*mu*rho*rho_dot/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2), (-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + 12*D_123*Lambda**2*mu**2*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)/(-12*C_14*D_123*Lambda**2*q_phys**2 + 3*D_123*Lambda**2*lambda4*rho**4 + 12*D_123*Lambda**2*m_squared*rho**2 + D_123*lambda6*rho**6 - 48*H**2*Lambda**2*M_cos_sq**2)]])",
+      "constraint_fields": [
+        "delta_N",
+        "Sigma=q_phys^2*beta"
+      ],
+      "constraint_source_field_map_Mx_T": "Matrix([[(8*H*Lambda**2*M_P_sq*q_phys**2 - rho*rho_dot*(2*Lambda**2*(lambda4*rho**2 + 2*m_squared + 2*mu**2) + lambda6*rho**4))/(4*Lambda**2*q_phys), -lambda4*rho**3/2 - m_squared*rho - mu**2*rho - lambda6*rho**5/(4*Lambda**2), 0], [(-mu**2*rho**2 - rho_dot**2)/q_phys, -rho_dot, -mu*rho]])",
+      "constraint_source_velocity_map_Mv_T": "Matrix([[(6*H*H*M_cos_sq - mu**2*rho**2 - rho_dot**2)/q_phys, -rho_dot, -mu*rho], [-2*H*M_cos_sq/q_phys, 0, 0]])",
+      "dynamical_fields": [
+        "Xi=(q_phys/H)R",
+        "Q_rho=delta_rho-(rho_dot/H)R",
+        "Q_chi=rho[vartheta-(mu/H)R]"
+      ],
+      "time_dependent_T_dot_terms": "NOT_INCLUDED_IN_THIS_EXPORT; full velocity map under evolving background uses the separate physical-basis field_and_velocity_map",
+      "transform_y_equals_T_p": "Matrix([[H/q_phys, 0, 0], [rho_dot/q_phys, 1, 0], [mu/q_phys, 0, 1/rho]])"
+    }
+  },
+  "gate": "MAT-001",
+  "inadmissible_substitutions": {
+    "cross_chart_silent_K_C_combination": "REJECTED_CHART_MISMATCH",
+    "diagnostic_Q_rho_Q_chi_impulses_for_d_h": "REJECTED_ROLE_MISMATCH",
+    "free_sector_eigenmode_for_matter_vertex_u": "REJECTED_CHANNEL_MISSING",
+    "static_B_from_Mx_while_erasing_Mv": "REJECTED_CONVENTION_MISMATCH"
+  },
+  "interface": "UVIR-003_TO_MAT-001",
+  "kq_numeric_status": "NOT_DERIVED",
+  "live_action_export_status": "PARTIAL_FREE_SECTOR_SAME_CHART_MATTER_SOURCES_ABSENT",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 14,
+  "numeric_matching_status": "BLOCKED_MATTER_SOURCE_AND_STATIC_B_REQUIRED",
+  "physics_pass": false,
+  "required_object_status": {
+    "B": {
+      "dimensions_in_export": "ROLE_DECLARED: linear maps from dynamical fields/velocities into the constraint source; absolute SI unit system not fixed",
+      "isolated_pure_static_J2_B": false,
+      "ready_for_J2_live_matching": false,
+      "static_field_block": "ISOLATED_AS_Mx_WITH_J2_CANDIDATE_B_EQUALS_Mx_TRANSPOSE",
+      "velocity_block": "ISOLATED_AS_Mv_NONZERO_RESIDUAL_OUTSIDE_PURE_STATIC_J2"
+    },
+    "C": {
+      "dimensions_in_export": "ROLE_DECLARED: coefficient of (1/2) z^T C z; absolute SI unit system not fixed in this export",
+      "original_chart": "EXPORTED_CONSTRAINT_HESSIAN",
+      "physical_chart": "SAME_MATRIX_CONSTRAINT_BASIS_UNCHANGED",
+      "ready_for_J2_live_matching": false
+    },
+    "K": {
+      "dimensions_in_export": "ROLE_DECLARED: coefficient of (1/2) xdot^T K xdot in the reduced quadratic Lagrangian density; absolute SI unit system not fixed in this export",
+      "original_chart": "EXPORTED_FROM_FINITE_Q_REDUCED_HESSIAN",
+      "physical_chart": "EXPORTED_VIA_STATIC_BASIS_TRANSFORM",
+      "ready_for_J2_live_matching": false
+    },
+    "d": {
+      "ready_for_J2_live_matching": false,
+      "reason": "live finite-q quadratic reduction has no declared external matter density interaction providing a source covector on dynamical fields",
+      "status": "NOT_EXPORTED"
+    },
+    "h": {
+      "ready_for_J2_live_matching": false,
+      "reason": "live finite-q quadratic reduction has no declared external matter density interaction providing a source covector on algebraic constraints",
+      "status": "NOT_EXPORTED"
+    },
+    "u": {
+      "ready_for_J2_live_matching": false,
+      "reason": "selecting a physical eigenmode for g_can requires the matter source channel c_eff; free-sector spectra alone do not authorize a MAT vertex mode",
+      "status": "NOT_SELECTED"
+    }
+  },
+  "scientific_boundary": "A PASS exports free-sector K, C and the exact linear decomposition of the constraint source in one original chart, and the transformed free kinetic metric in the physical chart. It does not supply matter covectors d,h, does not erase velocity mixing, does not compute V or K_Q, and does not authorize MAT, UVIR or downstream physics claims.",
+  "serial_next": "Declare S_int with external matter density, derive d and h in the same original or physical chart used here, resolve the Mv residual relative to the J2 static template, select u from the resulting c_eff channel, then rerun the live J2 projection.",
+  "stage": "SAME_CHART_FREE_QUADRATIC_EXPORT",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_SAME_CHART_FREE_QUADRATIC_EXPORT_PARTIAL",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

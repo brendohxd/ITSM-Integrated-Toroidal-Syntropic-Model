@@ -2,9 +2,10 @@
 
 Multi-page recovery-era research site.
 
-Current public gate snapshot: MAT-001 live-export inventory completed fail closed;
-partial cross-chart matrices do not yet form the required same-action bundle and
-`V` remains `NOT_COMPUTED`.
+Current public gate snapshot: MAT-001 free-sector export and Track-A Conditional
+`S_int` embed are complete as fail-closed partial passes. Track-A hosts matter
+`d=(-C_m)`, `h=(0,0)` with symbolic `K_Q` only. Numeric `V` remains
+`NOT_COMPUTED`; free-sector join and MAT physics PASS remain closed.
 
 WAK-001 also remains Open: its common identity-route rubric selects none of
 C1/C2/C3, with C2 retained only as the most developed calculation scaffold.

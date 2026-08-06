@@ -56,7 +56,7 @@
         <article class="status-card" data-state="red">
           <span class="status-key">MAT-001</span>
           <strong class="status-value">Blocked</strong>
-          <p>The live inventory finds partial matrices in different charts; source covectors <code>d,h</code>, selected <code>u</code>, and numeric <code>V</code> remain absent.</p>
+          <p>Track-A Conditional host embeds <code>S_int</code> with host <code>d,h</code>; free-sector join and numeric <code>K_Q</code>/<code>V</code> remain open. MAT physics PASS stays closed.</p>
         </article>
         <article class="status-card" data-state="amber">
           <span class="status-key">Downstream</span>
@@ -69,9 +69,10 @@
         <p class="rule-quote">UVIR-003 → MAT-001 → SCR/LEN → DISK-001 → STAT-001 → full P4</p>
         <p>
           Recovery has moved beyond architecture repair into live action matching.
-          The executable inventory now records the interface as blocked: <code>K</code>
-          and <code>C</code> are partial cross-chart exports, <code>B</code> is embedded,
-          and action-derived <code>d, h, u</code> are not yet available as one bundle.
+          Free-sector <code>K,C</code> and Track-A Conditional matter-channel
+          <code>d,h</code> are executable. Numeric matching still requires host
+          <code>K_Q</code> (or an invariant residue) and any multi-sector join must
+          be declared; Stage 4A and MAT physics PASS remain closed.
         </p>
       </div>
     </section>
@@ -189,7 +190,23 @@
             </tr>
             <tr>
               <td>MAT live-export inventory</td>
-              <td><span class="badge badge-cond">Blocker-map PASS</span> partial <code>K,C</code> evidence is cross-chart, <code>B</code> is embedded, and <code>d,h,u</code> remain unavailable as one same-action bundle; <code>V</code> is NOT_COMPUTED</td>
+              <td><span class="badge badge-cond">Blocker-map PASS</span> prior inventory: partial <code>K,C</code> were cross-chart, <code>B</code> embedded, and <code>d,h,u</code> unavailable as one same-action bundle</td>
+            </tr>
+            <tr>
+              <td>MAT free-sector same-chart export</td>
+              <td><span class="badge badge-cond">Partial PASS</span> original-chart free <code>K,C</code> and exact <code>Mx,Mv</code> split exported; pure static J2 <code>B</code> and mode <code>u</code> still absent</td>
+            </tr>
+            <tr>
+              <td>MAT <code>S_int</code> / <code>d,h</code> placement</td>
+              <td><span class="badge badge-cond">Form PASS / live blocked</span> IR <code>d=(-C_m)</code>, <code>h=empty</code> recover <code>|V|</code>; live free-sector chart lacks <code>psi</code>, so UVIR <code>d,h</code> stay NOT_EXPORTED</td>
+            </tr>
+            <tr>
+              <td>MAT force-host readiness</td>
+              <td><span class="badge badge-cond">Blocker-map PASS</span> inventory stage: no host ready until Track-A embed</td>
+            </tr>
+            <tr>
+              <td>MAT Track-A <code>S_int</code> embed</td>
+              <td><span class="badge badge-cond">Conditional PASS</span> host selected; matter <code>d=(-C_m)</code>, <code>h=(0,0)</code> exported; <code>|V|</code> form with symbolic <code>K_Q</code> only; free-sector not identified; <code>V</code> is NOT_COMPUTED</td>
             </tr>
             <tr>
               <td><code>K_Q</code> matching · causality</td>
@@ -241,14 +258,14 @@
         <div class="pipe-step">
           <div class="pipe-dot"></div>
           <div>
-            <h3>1 · Inventory the live UVIR quadratic export</h3>
-            <p>Locate <code>K, C, B, d, h, u</code>, or exact equivalents, and prove their action, chart, units and provenance are mutually consistent. Begin read-only.</p>
+            <h3>1 · Derive host <code>K_Q</code> or an invariant residue</h3>
+            <p>Track-A Conditional <code>d,h</code> exist. Numeric <code>V</code> still needs host <code>K_Q</code> (or on-shell residue) under explicit Conditional scope; multi-sector joins only with a declared chart.</p>
           </div>
         </div>
         <div class="pipe-step">
           <div class="pipe-dot"></div>
           <div>
-            <h3>2 · Wire MAT only if the inventory supports it</h3>
+            <h3>2 · Wire MAT only if the full bundle supports it</h3>
             <p>Feed the live export into the validated canonical projection. Missing or mismatched inputs produce a blocker record—not a substituted value.</p>
           </div>
         </div>

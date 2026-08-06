@@ -1,0 +1,260 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Choose one live force host chart (Track-A pi sector or completed ADM force sector) and declare it explicitly for MAT matching.",
+    "Embed Conditional S_int = -C_m rho_b psi (or parent equivalent / justified pi chart map) in that host action.",
+    "Export action-level d,h from that expansion in the same chart as the host kinetic objects.",
+    "Do not identify free-sector (R,delta_rho,vartheta) with Track-A pi without a declared map.",
+    "Resolve free-sector Mv residual only in the chart actually used for constraint elimination with matter sources."
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "s_int_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "free_sector_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "nonlinear_adm_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "force_local_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "s2_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "kinetic_inventory_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "s_int_dh_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "free_sector_export_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "nonlinear_adm_provenance_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "force_local_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "complete_s2_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "kinetic_inventory_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "free_sector_not_selected_as_force_host",
+      "ok": true
+    },
+    {
+      "name": "track_a_hosts_force_without_matter",
+      "ok": true
+    },
+    {
+      "name": "full_adm_force_completion_still_blocked",
+      "ok": true
+    },
+    {
+      "name": "no_live_route_ready_for_d_h",
+      "ok": true
+    },
+    {
+      "name": "IR_template_not_promoted_to_live_host",
+      "ok": true
+    },
+    {
+      "flags": {
+        "claims_MAT_pass": false,
+        "claims_UVIR_pass": false,
+        "claims_downstream_Derived": false,
+        "computes_numeric_V": false,
+        "derives_numeric_K_Q": false,
+        "force_host_route_selected": false,
+        "identifies_free_sector_with_Track_A": false,
+        "live_S_int_embedded": false,
+        "live_UVIR_d_h_exported": false,
+        "live_same_chart_bundle_complete": false,
+        "numeric_matching_ready": false,
+        "physics_pass": false,
+        "reopens_stage4A": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "claims_MAT_pass": false,
+    "claims_UVIR_pass": false,
+    "claims_downstream_Derived": false,
+    "computes_numeric_V": false,
+    "derives_numeric_K_Q": false,
+    "force_host_route_selected": false,
+    "identifies_free_sector_with_Track_A": false,
+    "live_S_int_embedded": false,
+    "live_UVIR_d_h_exported": false,
+    "live_same_chart_bundle_complete": false,
+    "numeric_matching_ready": false,
+    "physics_pass": false,
+    "reopens_stage4A": false
+  },
+  "cross_cutting_blockers": [
+    "No live UVIR quadratic currently exports action-level d,h from declared S_int.",
+    "Free-sector ADM chart and Track-A force chart are distinct; silent identification is forbidden.",
+    "Full psi-inclusive ADM J2 remains blocked on force covariant completion and Y^(3/2) treatment.",
+    "Numeric K_Q / V remain NOT_DERIVED / NOT_COMPUTED independent of hosting readiness."
+  ],
+  "evidence": {
+    "complete_s2": {
+      "parse_error": null,
+      "sha256": "6009E5D33F3FE3A87C745A0F2D0FA97B5F5AABDC984B3908B60D5D1D424DB11C",
+      "source": "uvir003_complete_s2_operator_summary.json"
+    },
+    "force_local": {
+      "parse_error": null,
+      "sha256": "57DFC39128ECC6BD19A0921DADDE1F90F31203C132E58DEC8D75009EC2A282B0",
+      "source": "uvir003_nonzero_gradient_force_local_summary.json"
+    },
+    "free_sector_export": {
+      "parse_error": null,
+      "sha256": "6DE89DB28C85FAA42A67E5221FB039F488F1D85E83F863693A5FEB37E648F807",
+      "source": "mat001_same_chart_quadratic_export_summary.json"
+    },
+    "kinetic_inventory": {
+      "parse_error": null,
+      "sha256": "27F4A154A40CE1506D3C5803E4FCEADB87505629CAF2D35B4ADB9E79A21E3985",
+      "source": "mat001_v_kinetic_chart_inventory_summary.json"
+    },
+    "nonlinear_adm_provenance": {
+      "parse_error": null,
+      "sha256": "AC847B68752473101AECE2B3C9DD1B1A33D075C1DE0143A16684AE5ACE89A1B8",
+      "source": "uvir003_nonlinear_adm_action_provenance_summary.json"
+    },
+    "s_int_dh": {
+      "parse_error": null,
+      "sha256": "AF8488CE3F4F2FC985E108A123BEA70B21408755EB6A6A26E1D67DE97402021E",
+      "source": "mat001_s_int_dh_export_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "hosting_status": "NO_LIVE_HOST_READY_FOR_S_INT",
+  "inadmissible_substitutions": {
+    "IR_template_as_live_UVIR_host": "REJECTED_PROVENANCE_MISMATCH",
+    "Track_A_force_vertex_as_matter_S_int": "REJECTED_ROLE_MISMATCH",
+    "force_completion_placeholder_for_Delta_U_or_Y": "REJECTED_INCOMPLETE_ACTION",
+    "free_sector_as_force_host_without_psi": "REJECTED_CHART_MISMATCH",
+    "silent_free_sector_Track_A_identification": "REJECTED_UNDECLARED_MAP"
+  },
+  "interface": "FORCE_HOST_TO_S_INT",
+  "kq_numeric_status": "NOT_DERIVED",
+  "live_UVIR_d_h_export_status": "NOT_EXPORTED",
+  "live_action_export_status": "PARTIAL_FORCE_PRESENT_MATTER_NOT_HOSTED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 18,
+  "numeric_matching_status": "BLOCKED_LIVE_FORCE_MATTER_HOST_REQUIRED",
+  "physics_pass": false,
+  "preferred_serial_path": "Declare and expand S_int on the Track-A force host (pi) in one named chart, exporting action-level d,h without claiming FRW free-sector equivalence; or complete the nonlinear force sector and only then attach S_int to the joined ADM quadratic.",
+  "route_inventory": {
+    "R1_free_sector_ADM_scalar_chart": {
+      "host_fields": [
+        "R",
+        "delta_rho",
+        "vartheta"
+      ],
+      "hosts_declared_S_int": false,
+      "hosts_external_rho_b_source": false,
+      "hosts_force_phonon": false,
+      "ready_for_live_d_h_export": false,
+      "reason": "Finite-q free-sector dynamical chart is (R, delta_rho, vartheta); force phonon is factorized out and not a dynamical coordinate of that export.",
+      "status": "NOT_A_FORCE_HOST"
+    },
+    "R2_track_A_local_nonzero_gradient_force": {
+      "evidence_subgate": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+      "host_fields": [
+        "pi"
+      ],
+      "hosts_declared_S_int": false,
+      "hosts_external_rho_b_source": false,
+      "hosts_force_phonon": true,
+      "local_cubic_vertex": "PASS_LOCAL_CUBIC_FORCE_VERTEX",
+      "matter_coupling_mentioned_in_boundary": false,
+      "optional_next_from_source": [
+        "declared perturbative-unitarity / EFT-validity criterion on the combined high-q Green proxy + local nonzero-gradient force sector (scope-limited; not 'theory closed')",
+        "optional: couple local force vertex into the multi-slice FRW Green proxy as an anisotropic source term"
+      ],
+      "ready_for_live_d_h_export": false,
+      "reason": "Track-A hosts a force fluctuation pi and a local cubic vertex, but no declared external-matter density source and no exported action-level d,h from S_int.",
+      "scope": "Local expansion of |grad(pi)|^3 about a nonzero spatial gradient background; not the free-sector FRW ADM chart.",
+      "status": "FORCE_PRESENT_MATTER_ABSENT"
+    },
+    "R3_complete_finite_q_S2_with_Track_A_force_block": {
+      "hosts_declared_S_int": false,
+      "hosts_external_rho_b_source": false,
+      "hosts_force_phonon": true,
+      "ready_for_live_d_h_export": false,
+      "reason": "Complete finite-q S2 includes a Track-A force sector block on the homogeneous zero-gradient branch, but that is a free force constraint/cubic structure, not a declared S_int matter vertex.",
+      "status": "FORCE_BLOCK_IN_S2_WITHOUT_MATTER",
+      "track_a_keys": [
+        "DeltaS2_at_z1_beyond_origin",
+        "L3",
+        "L3_expected",
+        "exact_Y_three_halves",
+        "interpretation",
+        "nonlinear_constraint_degree",
+        "status"
+      ],
+      "track_a_present": true
+    },
+    "R4_full_nonlinear_ADM_with_force_completion": {
+      "Delta_U_covariant_completion": "NOT_DECLARED_FOR_THE_EVOLVING_NONLINEAR_FRAME",
+      "Y_three_halves_rule": "Y2**(3/2)*epsilon**2*Abs(epsilon)",
+      "analytic_cubic_vertex": "NOT_DEFINED_BY_AN_ORDINARY_TAYLOR_EXPANSION",
+      "full_g_U_Phi_psi_J2": "BLOCKED_ON_FORCE_COVARIANT_COMPLETION_AND_NONANALYTIC_RULE",
+      "hosts_declared_S_int": false,
+      "hosts_external_rho_b_source": false,
+      "hosts_force_phonon": false,
+      "ready_for_live_d_h_export": false,
+      "reason": "Parent gravity-aether-condensate-alignment block is fixed, but force completion needed for full psi-inclusive J2 remains blocked on covariant Delta_U and the nonanalytic Y^(3/2) rule.",
+      "status": "BLOCKED_FORCE_COVARIANT_COMPLETION"
+    },
+    "R5_IR_template_only": {
+      "IR_d_h_export_status": "FORM_DERIVED_IR_SINGLE_FIELD_TEMPLATE",
+      "S_int_status": "DECLARED_CONDITIONAL_FORM",
+      "hosts_declared_S_int": true,
+      "hosts_external_rho_b_source": true,
+      "hosts_force_phonon": true,
+      "live_UVIR_d_h_export_status": "NOT_EXPORTED",
+      "ready_for_live_d_h_export": false,
+      "reason": "IR single-field template declares S_int and d,h form, but is not the live UVIR quadratic action used for free-sector K,C.",
+      "status": "TEMPLATE_NOT_LIVE_UVIR_ACTION"
+    }
+  },
+  "scientific_boundary": "A PASS maps which live UVIR sectors host a force phonon and proves none is yet ready to export action-level d,h from declared S_int. It does not embed S_int, compute V or K_Q, complete the force sector, or authorize MAT/UVIR/downstream physics claims.",
+  "selected_host_route": "NONE",
+  "serial_next": "Declare and expand S_int on the Track-A force host (pi) in one named chart, exporting action-level d,h without claiming FRW free-sector equivalence; or complete the nonlinear force sector and only then attach S_int to the joined ADM quadratic.",
+  "stage": "FORCE_HOSTING_READINESS",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_FORCE_HOSTING_READINESS_BLOCKED",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

@@ -58,7 +58,7 @@ presented as a derivation. Every live statement is classified as **Derived**,
 |---|---|---|
 | **Manuscript** | `v12.0-alpha.11` frozen | Immutable tier-1 closure hold and identity-decision checkpoint; alpha.10 remains untouched |
 | **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
-| **MAT-001** | **Blocked; $V$ not computed** | J1/R2, unit chart, handoff and J2 methods pass structurally. The live inventory finds partial \(K,C\) evidence in different charts, embedded \(B\), no exported \(d,h\), and no selected same-chart mode \(u\) |
+| **MAT-001** | **Blocked; $V$ not computed** | Free-sector \(K,C\) exported; Track-A selected as Conditional force host with embedded \(S_{\rm int}\) and host \(d,h=(-C_m),(0,0)\). Numeric \(K_Q\)/`V` still not derived; free-sector join undeclared; MAT physics PASS closed |
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
 | **WAK-001** | **Open; no identity route selectable** | The common evidence rubric keeps C1/C2/C3 Open. C2 is the most developed calculation scaffold, not a selected identity; source, exchange, stress and observables remain unresolved |
 | **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, modular-basis identity and physical-cutoff spectrum audits, plus VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear or modulus dynamics follows |
@@ -70,8 +70,16 @@ For the full dependency chain and current blockers, use the
 [UVIR-003 closure checklist](Theory/Gates/UVIR-003/UVIR-003_FULL_GATE_CLOSURE_CHECKLIST.md).
 The current MAT normalization boundary is recorded in the
 [unit-chart contract](Theory/Gates/MAT-001/MAT-001_UNIT_CHART_CONTRACT.md),
-and the executable live-export blocker map is recorded in the
-[UVIR export inventory](Theory/Gates/MAT-001/MAT-001_LIVE_UVIR_EXPORT_INVENTORY.md).
+the executable live-export blocker map in the
+[UVIR export inventory](Theory/Gates/MAT-001/MAT-001_LIVE_UVIR_EXPORT_INVENTORY.md),
+the free-sector same-chart export in
+[same-chart free quadratic export](Theory/Gates/MAT-001/MAT-001_SAME_CHART_FREE_QUADRATIC_EXPORT.md),
+the \(S_{\rm int}\)/\(d,h\) placement (IR form only; live UVIR blocked) in
+[\(S_{\rm int}\) d,h declaration](Theory/Gates/MAT-001/MAT-001_S_INT_DH_DECLARATION.md),
+the force-host inventory in
+[force hosting readiness](Theory/Gates/MAT-001/MAT-001_FORCE_HOSTING_READINESS.md),
+and the Track-A Conditional embed in
+[Track-A \(S_{\rm int}\) embed](Theory/Gates/MAT-001/MAT-001_TRACK_A_S_INT_EMBED.md).
 
 ## 🔬 What the Recovery Has Established
 

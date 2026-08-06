@@ -324,6 +324,49 @@ These are evidence-integrity and dimensional-contract passes only. Numerical
 `MAT-001_R2_DIRECT_RESIDUE_AUDIT.md`, and
 `MAT-001_UNIT_CHART_CONTRACT.md`. No frozen manuscript release is modified.
 
+### Post-inventory free-sector same-chart export - 2026-08-06
+
+After the live-export inventory blocker map, a free-sector export checkpoint
+published original-chart free \(K\) and \(C\), decomposed the constraint source
+exactly into field map \(M_x\) and velocity map \(M_v\), recorded the static
+J2 candidate \(B=M_x^{T}\) while retaining the nonzero \(M_v\) residual, and
+transformed free \(K\) into the physical scalar chart.
+
+This does **not** complete the live same-action bundle: matter covectors
+\(d,h\) are still not exported, pure static J2 \(B\) is not ready, and mode
+\(u\) is not selected. Subgate:
+`PASS_MAT001_SAME_CHART_FREE_QUADRATIC_EXPORT_PARTIAL`. See
+`Theory/Gates/MAT-001/MAT-001_SAME_CHART_FREE_QUADRATIC_EXPORT.md` and
+`Theory/Gates/MAT-001/MAT-001_LIVE_UVIR_EXPORT_INVENTORY.md`.
+
+### Declared \(S_{\rm int}\) and IR \(d,h\) form - 2026-08-06
+
+A follow-on audit declares Conditional
+\(S_{\rm int}\supset -C_m\rho_b\psi\), derives IR J2 covectors
+\(d=(-C_m)\), \(h=\emptyset\) that recover \(\lvert V\rvert\), and proves the
+live free-sector chart cannot host those covectors because it lacks the force
+field \(\psi\). Live UVIR \(d,h\) remain `NOT_EXPORTED`. Subgate:
+`PASS_MAT001_S_INT_DH_DECLARATION_LIVE_CHART_BLOCKED`. See
+`Theory/Gates/MAT-001/MAT-001_S_INT_DH_DECLARATION.md`.
+
+### Force-field hosting readiness - 2026-08-06
+
+A five-route inventory shows no live host is ready for matter coupling:
+free-sector ADM is not a force host; Track-A hosts \(\pi\) without \(S_{\rm int}\);
+full ADM force completion remains blocked on \(\Delta_U\) and \(Y^{3/2}\).
+Subgate: `PASS_MAT001_FORCE_HOSTING_READINESS_BLOCKED`. See
+`Theory/Gates/MAT-001/MAT-001_FORCE_HOSTING_READINESS.md`.
+
+### Track-A Conditional \(S_{\rm int}\) embed - 2026-08-06
+
+Track-A is selected as the Conditional force host. With
+\(\psi=\psi_{\rm bar}+\pi\), \(S_{\rm int}=-C_m\rho_b\psi\) is embedded and
+matter-channel \(d=(-C_m)\), \(h=(0,0)\) are exported on that host. The
+\(\lvert V\rvert\) form recovers with symbolic \(K_Q\) only. Free-sector ADM is
+not identified with Track-A. Subgate:
+`PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL`. See
+`Theory/Gates/MAT-001/MAT-001_TRACK_A_S_INT_EMBED.md`.
+
 Authoritative process detail:
 `Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md` and
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_STAGE5_FULL_GATE_DECISION.md`.
