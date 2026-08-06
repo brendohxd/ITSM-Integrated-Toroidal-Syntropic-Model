@@ -105,7 +105,15 @@ def import_uvir_reduction() -> dict[str, Any]:
 
 
 def matrix_string(matrix: sp.MatrixBase) -> str:
-    return str(sp.Matrix(matrix.applyfunc(sp.simplify)))
+    simplified = sp.Matrix(matrix.applyfunc(sp.simplify))
+    rows = []
+    for row in range(simplified.rows):
+        entries = ", ".join(
+            sp.sstr(simplified[row, col], order="lex")
+            for col in range(simplified.cols)
+        )
+        rows.append("[{0}]".format(entries))
+    return "Matrix([{0}])".format(", ".join(rows))
 
 
 def build_free_sector_export() -> dict[str, Any]:
@@ -178,7 +186,34 @@ def build_free_sector_export() -> dict[str, Any]:
     physical_field_map = sp.simplify(field_map * transform)
     physical_velocity_map = sp.simplify(velocity_map * transform)
 
-    j2_static_B = sp.simplify(field_map.T)
+    # Convention bridge (do not identify the ADM Hessian/source signs with J2):
+    #
+    #   L_ADM,z = +z^T(Mx x + Mv xdot) + (1/2) z^T C_ADM z
+    #   L_J2,z  = -x^T B z - (1/2) z^T C_J2 z
+    #
+    # Matching the static field and quadratic constraint terms therefore gives
+    # B = -Mx^T and C_J2 = -C_ADM. Mv remains a separately retained residual.
+    j2_static_B = sp.simplify(-field_map.T)
+    j2_constraint_matrix = sp.simplify(-constraint_matrix)
+    constraint_vec = sp.Matrix(sp.symbols("delta_N Sigma", real=True))
+    adm_static_field_term = (constraint_vec.T * field_map * coord_vec)[0]
+    j2_static_field_term = -(coord_vec.T * j2_static_B * constraint_vec)[0]
+    adm_constraint_term = (
+        sp.Rational(1, 2)
+        * (constraint_vec.T * constraint_matrix * constraint_vec)[0]
+    )
+    j2_constraint_term = (
+        -sp.Rational(1, 2)
+        * (constraint_vec.T * j2_constraint_matrix * constraint_vec)[0]
+    )
+    require(
+        sp.simplify(adm_static_field_term - j2_static_field_term) == 0,
+        "J2 B sign bridge does not reconstruct the ADM static field term",
+    )
+    require(
+        sp.simplify(adm_constraint_term - j2_constraint_term) == 0,
+        "J2 C sign bridge does not reconstruct the ADM constraint term",
+    )
     velocity_residual_present = any(
         sp.simplify(value) != 0 for value in velocity_map
     )
@@ -188,18 +223,23 @@ def build_free_sector_export() -> dict[str, Any]:
         "constraint_fields": ["delta_N", "Sigma=q_phys^2*beta"],
         "velocities": ["R_dot", "delta_rho_dot", "vartheta_dot"],
         "K": matrix_string(kinetic),
-        "C": matrix_string(constraint_matrix),
+        "C_ADM_constraint_hessian": matrix_string(constraint_matrix),
+        "C_J2_equals_minus_C_ADM": matrix_string(j2_constraint_matrix),
         "constraint_source_field_map_Mx": matrix_string(field_map),
         "constraint_source_velocity_map_Mv": matrix_string(velocity_map),
-        "J2_static_B_candidate_from_Mx_transpose": matrix_string(j2_static_B),
+        "J2_static_B_candidate_equals_minus_Mx_transpose": matrix_string(
+            j2_static_B
+        ),
         "lagrangian_constraint_sector": (
             "L contains + z^T (Mx x + Mv xdot) + (1/2) z^T C z; "
             "stationary z = -C^{-1}(Mx x + Mv xdot)"
         ),
         "j2_template_comparison": (
-            "J2 uses -x^T B z - (1/2) z^T C z with z = C^{-1}(rho h - B^T x). "
-            "Only the static field map Mx can supply a B candidate; nonzero Mv "
-            "is a residual outside the pure static template."
+            "J2 uses -x^T B z - (1/2) z^T C_J2 z with "
+            "z = C_J2^{-1}(rho h - B^T x). Matching the ADM convention gives "
+            "B=-Mx^T and C_J2=-C_ADM. Only the static field map Mx can supply "
+            "a B candidate; nonzero Mv is a residual outside the pure static "
+            "template."
         ),
     }
     physical_chart = {
@@ -211,7 +251,8 @@ def build_free_sector_export() -> dict[str, Any]:
         "constraint_fields": ["delta_N", "Sigma=q_phys^2*beta"],
         "transform_y_equals_T_p": matrix_string(transform),
         "K": matrix_string(physical_kinetic),
-        "C_unchanged_by_dynamical_basis": matrix_string(constraint_matrix),
+        "C_ADM_unchanged_by_dynamical_basis": matrix_string(constraint_matrix),
+        "C_J2_equals_minus_C_ADM": matrix_string(j2_constraint_matrix),
         "constraint_source_field_map_Mx_T": matrix_string(physical_field_map),
         "constraint_source_velocity_map_Mv_T": matrix_string(
             physical_velocity_map
@@ -237,14 +278,15 @@ def build_free_sector_export() -> dict[str, Any]:
             "original_chart": "EXPORTED_CONSTRAINT_HESSIAN",
             "physical_chart": "SAME_MATRIX_CONSTRAINT_BASIS_UNCHANGED",
             "dimensions_in_export": (
-                "ROLE_DECLARED: coefficient of (1/2) z^T C z; absolute SI unit "
-                "system not fixed in this export"
+                "ROLE_DECLARED: C_ADM is the coefficient of +(1/2) z^T C_ADM z; "
+                "the J2 template uses C_J2=-C_ADM in -(1/2) z^T C_J2 z; "
+                "absolute SI unit system not fixed in this export"
             ),
             "ready_for_J2_live_matching": False,
         },
         "B": {
             "static_field_block": (
-                "ISOLATED_AS_Mx_WITH_J2_CANDIDATE_B_EQUALS_Mx_TRANSPOSE"
+                "ISOLATED_AS_Mx_WITH_J2_CANDIDATE_B_EQUALS_MINUS_Mx_TRANSPOSE"
             ),
             "velocity_block": (
                 "ISOLATED_AS_Mv_NONZERO_RESIDUAL_OUTSIDE_PURE_STATIC_J2"
@@ -293,6 +335,7 @@ def build_free_sector_export() -> dict[str, Any]:
         "physical_chart": physical_chart,
         "object_status": object_status,
         "reconstruction_residual_zero": True,
+        "j2_sign_bridge_reconstruction_zero": True,
     }
 
 
@@ -352,7 +395,21 @@ def build_summary(
         checks,
         "original_chart_K_C_exported",
         bool(free["original_chart"]["K"].startswith("Matrix("))
-        and bool(free["original_chart"]["C"].startswith("Matrix(")),
+        and bool(
+            free["original_chart"]["C_ADM_constraint_hessian"].startswith(
+                "Matrix("
+            )
+        )
+        and bool(
+            free["original_chart"]["C_J2_equals_minus_C_ADM"].startswith(
+                "Matrix("
+            )
+        ),
+    )
+    add_check(
+        checks,
+        "adm_to_j2_sign_bridge_reconstructed_exactly",
+        free["j2_sign_bridge_reconstruction_zero"] is True,
     )
     add_check(
         checks,

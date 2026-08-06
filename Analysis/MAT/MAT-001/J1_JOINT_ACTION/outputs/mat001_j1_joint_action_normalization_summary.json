@@ -34,41 +34,56 @@
       "ok": true
     },
     {
+      "name": "field_orientation_reversal_flips_signed_residue",
+      "ok": true,
+      "orientation_rule": "phi_or_mode -> -(phi_or_mode) implies V_signed -> -V_signed"
+    },
+    {
       "cases": [
         {
           "case": "missing_inventory_rejected",
-          "ok": true,
-          "rejected": true
+          "expected_behavior_observed": true,
+          "ok": true
         },
         {
           "case": "premature_computed_V_rejected",
-          "ok": true,
-          "rejected": true
+          "expected_behavior_observed": true,
+          "ok": true
         },
         {
           "case": "zero_Z_phi_rejected",
-          "ok": true,
-          "rejected": true
+          "expected_behavior_observed": true,
+          "ok": true
         },
         {
           "case": "negative_Z_phi_rejected",
-          "ok": true,
-          "rejected": true
+          "expected_behavior_observed": true,
+          "ok": true
         },
         {
           "case": "zero_chart_scale_rejected",
-          "ok": true,
-          "rejected": true
+          "expected_behavior_observed": true,
+          "ok": true
+        },
+        {
+          "case": "zero_matter_coefficient_rejected",
+          "expected_behavior_observed": true,
+          "ok": true
+        },
+        {
+          "case": "negative_matter_coefficient_admitted",
+          "expected_behavior_observed": true,
+          "ok": true
         },
         {
           "case": "nonfinite_coefficient_rejected",
-          "ok": true,
-          "rejected": true
+          "expected_behavior_observed": true,
+          "ok": true
         },
         {
           "case": "boolean_coefficient_rejected",
-          "ok": true,
-          "rejected": true
+          "expected_behavior_observed": true,
+          "ok": true
         }
       ],
       "name": "negative_controls_fail_closed",
@@ -111,7 +126,8 @@
       "Z_phi_prime": "Z_phi/r**2",
       "g_phi_prime": "g_phi/r",
       "map": "phi_prime=r*phi"
-    }
+    },
+    "scope": "r>0 and s>0 are orientation-preserving; an orientation reversal flips the signed residue"
   },
   "gate": "MAT-001",
   "joint_action_template": {
@@ -121,46 +137,58 @@
     "induced_K_Q": "Z_phi/f_phi**2",
     "invariant_V": "g_phi/sqrt(Z_phi)",
     "kinetic_term": "(Z_phi/2)*(U.grad(phi))^2",
-    "matter_vertex": "-g_phi*rho_b*phi"
+    "matter_vertex": "-g_phi*rho_b*phi",
+    "orientation_anchor": "parent field phi and IR field psi have aligned positive orientation because f_phi>0",
+    "signed_invariant_V": "g_phi/sqrt(Z_phi)"
   },
   "kq_numeric_status": "NOT_DERIVED",
   "mat001_pass": false,
-  "n_checks": 9,
+  "n_checks": 10,
   "negative_controls": [
     {
       "case": "missing_inventory_rejected",
-      "ok": true,
-      "rejected": true
+      "expected_behavior_observed": true,
+      "ok": true
     },
     {
       "case": "premature_computed_V_rejected",
-      "ok": true,
-      "rejected": true
+      "expected_behavior_observed": true,
+      "ok": true
     },
     {
       "case": "zero_Z_phi_rejected",
-      "ok": true,
-      "rejected": true
+      "expected_behavior_observed": true,
+      "ok": true
     },
     {
       "case": "negative_Z_phi_rejected",
-      "ok": true,
-      "rejected": true
+      "expected_behavior_observed": true,
+      "ok": true
     },
     {
       "case": "zero_chart_scale_rejected",
-      "ok": true,
-      "rejected": true
+      "expected_behavior_observed": true,
+      "ok": true
+    },
+    {
+      "case": "zero_matter_coefficient_rejected",
+      "expected_behavior_observed": true,
+      "ok": true
+    },
+    {
+      "case": "negative_matter_coefficient_admitted",
+      "expected_behavior_observed": true,
+      "ok": true
     },
     {
       "case": "nonfinite_coefficient_rejected",
-      "ok": true,
-      "rejected": true
+      "expected_behavior_observed": true,
+      "ok": true
     },
     {
       "case": "boolean_coefficient_rejected",
-      "ok": true,
-      "rejected": true
+      "expected_behavior_observed": true,
+      "ok": true
     }
   ],
   "next_required": [

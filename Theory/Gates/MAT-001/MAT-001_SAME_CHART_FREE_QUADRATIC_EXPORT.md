@@ -18,8 +18,9 @@ exports free-sector objects without inventing matter couplings:
 1. \(K\) and \(C\) in the original \((R,\delta\rho,\vartheta;\delta N,\Sigma)\) chart;
 2. exact linear decomposition of the constraint source into field map \(M_x\) and
    velocity map \(M_v\);
-3. a static J2 \(B\) candidate \(B=M_x^{T}\) together with an explicit nonzero
-   \(M_v\) residual;
+3. a convention-correct static J2 candidate \(B=-M_x^{T}\) and
+   \(C_{\rm J2}=-C_{\rm ADM}\), together with an explicit nonzero \(M_v\)
+   residual;
 4. free kinetic metric transformed into the physical \((\Xi,Q_\rho,Q_\chi)\) chart.
 
 ## Result
@@ -28,8 +29,9 @@ exports free-sector objects without inventing matter couplings:
 |---|---|
 | \(K\) (original) | Exported from the finite-\(q\) reduced kinetic Hessian |
 | \(K\) (physical) | Exported via the static basis transform \(y=Tp\) |
-| \(C\) | Exported; constraint basis unchanged under dynamical redefinition |
-| \(B\) static candidate | Isolated as \(M_x^{T}\); not pure-static-J2 ready |
+| \(C_{\rm ADM}\) | Exported; constraint basis unchanged under dynamical redefinition |
+| \(C_{\rm J2}\) | Exported as \(-C_{\rm ADM}\) under the declared J2 sign convention |
+| \(B\) static candidate | Isolated as \(-M_x^{T}\); not pure-static-J2 ready |
 | \(M_v\) residual | Nonzero and retained (not erased) |
 | \(d,h\) | Still `NOT_EXPORTED` (no declared external-matter \(S_{\rm int}\)) |
 | \(u\) | Still `NOT_SELECTED` (matter channel \(c_{\rm eff}\) absent) |
@@ -40,6 +42,20 @@ This is a free-sector export advance, not a MAT unlock. Numerical matching,
 \(V\), \(K_Q\), Stage 4A reopen and physics claims remain forbidden. The pure
 static J2 template is still incomplete because \(M_v\neq 0\), and the matter
 vertex channel is still missing.
+
+The sign bridge reconstructs the same Lagrangian constraint sector in both
+conventions:
+
+\[
+z^T M_xx+\frac12z^TC_{\rm ADM}z
+=-x^TBz-\frac12z^TC_{\rm J2}z,
+\qquad
+B=-M_x^T,\quad C_{\rm J2}=-C_{\rm ADM}.
+\]
+
+The export checks both identities symbolically. This correction does not remove
+the nonzero \(M_v\dot x\) residual and therefore does not make the free sector a
+pure-static J2 bundle.
 
 ## Blocking requirements retained
 
@@ -71,9 +87,12 @@ reject promotion of complete-bundle, numeric-matching, \(V\), MAT-pass and
 physics-pass flags without writing outputs.
 
 ```text
-SHA-256: 6DE89DB28C85FAA42A67E5221FB039F488F1D85E83F863693A5FEB37E648F807
+SHA-256: 33FCD3A4AB8F8531E611DFACDD91CCB7598CF9ADE49A8279A87B5EB954D4A469
 ```
 
+The serializer was also checked under two distinct Python hash seeds; both
+produced this byte-identical digest. Lexicographic SymPy serialization is now
+explicit rather than dependent on process hash ordering.
 ## Scientific boundary
 
 A pass means free-sector \(K\), \(C\) and the exact source decomposition are now

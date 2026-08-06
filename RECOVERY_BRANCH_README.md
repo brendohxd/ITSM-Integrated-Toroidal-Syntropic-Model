@@ -23,8 +23,8 @@ not the scientific status authority for this branch.
 ## Manuscript status
 
 The newest frozen manuscript release is
-[`12.0-alpha.11`](Manuscript/CoreRecovery/releases/v12.0-alpha.11/)
-(04 August 2026). Every freeze is immutable under
+[`12.0-alpha.12`](Manuscript/CoreRecovery/releases/v12.0-alpha.12/)
+(06 August 2026). Every freeze is immutable under
 `Manuscript/CoreRecovery/releases/v12.0-alpha.N/`. Working sources live in
 `Manuscript/CoreRecovery/`; authoritative per-release detail is in
 [`Manuscript/CoreRecovery/CHANGELOG.md`](Manuscript/CoreRecovery/CHANGELOG.md)
@@ -34,7 +34,7 @@ Claim hygiene is unchanged across freezes: `13/12`, `H0=72.97`, automatic
 Solar-System compliance, and historical SPARC `p=0.62` are **not** live
 predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
 
-### Frozen releases (`12.0-alpha.1` ... `12.0-alpha.11`)
+### Frozen releases (`12.0-alpha.1` ... `12.0-alpha.12`)
 
 #### [`12.0-alpha.1`](Manuscript/CoreRecovery/releases/v12.0-alpha.1/) — 2026-07-26
 
@@ -259,7 +259,7 @@ predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
 
 #### [`12.0-alpha.11`](Manuscript/CoreRecovery/releases/v12.0-alpha.11/) - 2026-08-04
 
-**Label:** Tier-1 closure hold and identity decision checkpoint. **Current freeze**
+**Label:** Tier-1 closure hold and identity decision checkpoint. **Prior freeze**
 
 - Integrates the post-alpha.10 Stage 1--5 record through
   `PASS_STAGE5_DECISION_HOLD_TIER1`; UVIR-003 remains `IN_PROGRESS`.
@@ -271,12 +271,21 @@ predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
 - **Boundary:** no tier-1 UVIR closure, matched cutoff, MAT PASS, selected
   wake/reservoir route, derived observable, or full P3 manuscript.
 
-### Current open boundary (after alpha.11)
+#### [`12.0-alpha.12`](Manuscript/CoreRecovery/releases/v12.0-alpha.12/) - 2026-08-06
+
+**Label:** Dual-status MAT interface and Tier-1 hold checkpoint. **Current freeze**
+
+- Retains `HOLD_TIER1_CLOSURE`; UVIR-003 remains `IN_PROGRESS`.
+- Records the Track-A Conditional matter channel and parent-matching incompleteness without promoting them to Derived matching.
+- Keeps `V` `NOT_COMPUTED`, `K_Q` `NOT_DERIVED`, MAT-001 `BLOCKED`, and Stage 4A `CLOSED`.
+- **Boundary:** no MAT/UVIR physics PASS, numeric residue, physical cutoff, downstream observable, or full cosmology follows.
+
+### Current open boundary (after alpha.12)
 
 These bounded results do **not** establish full perturbative stability,
 observational viability, or a completed cosmology.
 
-**Manuscript freeze voice (alpha.11, authoritative for citations):** UVIR-003
+**Manuscript freeze voice (alpha.12, authoritative for citations):** UVIR-003
 remains **in progress**; MAT-001 is **not unlocked**. Claim hygiene above is
 unchanged.
 
@@ -300,8 +309,20 @@ matched physical cutoff, MAT PASS, or downstream Derived packaging.
 matched invariant, from one declared action/field chart; (2) reopen Stage 4A
 for matched causality, relevant IR control, and a physical cutoff/unitarity
 result; (3) run a later independent Stage 5 closure review; (4) complete MAT,
-then DISK/STAT, before full P3/P4 claim packaging. Alpha.11 freezes this
+then DISK/STAT, before full P3/P4 claim packaging. Alpha.12 freezes this
 honest checkpoint without upgrading those claims.
+
+### Post-alpha.12 MAT Tier-1 R1-R4 remediation - 2026-08-07
+
+The post-freeze evidence chain was scrutinized and repaired without changing any global gate:
+
+- R1 corrects the ADM-to-J2 convention bridge to `B=-M_x^T`, `C_J2=-C_ADM` and retains the nonzero velocity-mixing obstruction.
+- R2 replaces circular source-absence assertions with source-backed provenance and fail-closed mutation cases.
+- R3 selects the covariant conformal matter action `S_m[Psi_m,A(psi)^2 g]` and derives exact lapse/shift variation. The Track-A `d=(-C_m)`, `h=(0,0)` result is only the normalized comoving linear limit; mixed lapse and moving-matter shift vertices remain.
+- R4 carries the signed coupling through canonical normalization and mode projection: for the anchored `u_psi=+1` convention, `g_can=-C_m/sqrt(K_Q)=-V_signed`. Magnitude-only diagnostics cannot satisfy the matching contract.
+- The consolidated 21-output runner executes available mutation suites and verifies every JSON/SHA-256 pair.
+
+Scoped remediation passes do not supply microscopic `C_m`, numeric `K_Q`, a live joined eigenmode, a UV completion, lensing closure or a physical cutoff. Tier-1 remains `NOT_MET`; MAT-001 remains `BLOCKED`; Stage 4A remains `CLOSED`. See `Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md`.
 
 ### Post-alpha.11 MAT normalization preparation - 2026-08-05
 
@@ -328,8 +349,8 @@ These are evidence-integrity and dimensional-contract passes only. Numerical
 
 After the live-export inventory blocker map, a free-sector export checkpoint
 published original-chart free \(K\) and \(C\), decomposed the constraint source
-exactly into field map \(M_x\) and velocity map \(M_v\), recorded the static
-J2 candidate \(B=M_x^{T}\) while retaining the nonzero \(M_v\) residual, and
+exactly into field map \(M_x\) and velocity map \(M_v\), recorded the convention-correct static
+J2 candidate \(B=-M_x^{T}\), \(C_{\rm J2}=-C_{\rm ADM}\), while retaining the nonzero \(M_v\) residual, and
 transformed free \(K\) into the physical scalar chart.
 
 This does **not** complete the live same-action bundle: matter covectors
@@ -343,7 +364,7 @@ This does **not** complete the live same-action bundle: matter covectors
 
 A follow-on audit declares Conditional
 \(S_{\rm int}\supset -C_m\rho_b\psi\), derives IR J2 covectors
-\(d=(-C_m)\), \(h=\emptyset\) that recover \(\lvert V\rvert\), and proves the
+\(d=(-C_m)\), \(h=\emptyset\) that recover signed \(g_{\rm can}=-V\) in the anchored field orientation, and proves the
 live free-sector chart cannot host those covectors because it lacks the force
 field \(\psi\). Live UVIR \(d,h\) remain `NOT_EXPORTED`. Subgate:
 `PASS_MAT001_S_INT_DH_DECLARATION_LIVE_CHART_BLOCKED`. See
@@ -361,8 +382,8 @@ Subgate: `PASS_MAT001_FORCE_HOSTING_READINESS_BLOCKED`. See
 
 Track-A is selected as the Conditional force host. With
 \(\psi=\psi_{\rm bar}+\pi\), \(S_{\rm int}=-C_m\rho_b\psi\) is embedded and
-matter-channel \(d=(-C_m)\), \(h=(0,0)\) are exported on that host. The
-\(\lvert V\rvert\) form recovers with symbolic \(K_Q\) only. Free-sector ADM is
+matter-channel \(d=(-C_m)\), \(h=(0,0)\) are exported on that host. The signed relation
+\(g_{\rm can}=-V\) recovers with symbolic \(K_Q\) only in the anchored orientation. Free-sector ADM is
 not identified with Track-A. Subgate:
 `PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL`. See
 `Theory/Gates/MAT-001/MAT-001_TRACK_A_S_INT_EMBED.md`.

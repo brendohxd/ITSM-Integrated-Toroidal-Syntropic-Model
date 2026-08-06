@@ -63,6 +63,14 @@ def parse_args() -> argparse.Namespace:
         / "outputs"
         / "mat001_same_chart_quadratic_export_summary.json",
     )
+    parser.add_argument(
+        "--r3-action-summary",
+        type=Path,
+        default=mat
+        / "COVARIANT_MATTER_ACTION"
+        / "outputs"
+        / "mat001_r3_covariant_matter_action_summary.json",
+    )
     parser.add_argument("--output-dir", type=Path, default=base / "outputs")
     parser.add_argument(
         "--self-test-mutations",
@@ -97,7 +105,8 @@ def add_check(
 
 
 def embed_and_export() -> dict[str, Any]:
-    c_m, k_q, rho_b = sp.symbols("C_m K_Q rho_b", positive=True)
+    k_q, rho_b = sp.symbols("K_Q rho_b", positive=True)
+    c_m = sp.symbols("C_m", real=True, nonzero=True)
     psi_bar, pi = sp.symbols("psi_bar pi", real=True)
     delta_n, beta = sp.symbols("delta_N beta", real=True)
 
@@ -124,7 +133,7 @@ def embed_and_export() -> dict[str, Any]:
     )
     require(
         sp.simplify(l_j2_source - rho_b * d_pi * pi) == 0,
-        "h vanishes for pure -C_m rho_b psi coupling",
+        "linear h vanishes in the R3 normalized comoving interaction sector",
     )
 
     # Host kinetic template from Track-A quadratic force density (physical):
@@ -132,9 +141,9 @@ def embed_and_export() -> dict[str, Any]:
     # Spatial regulator/potential terms are not part of the time-kinetic K.
     host_k = k_q
     c_eff = sp.Matrix([d_pi])  # no B,C dressing from this pure h=0 coupling
-    v = c_m / sp.sqrt(k_q)
-    g_can_abs = sp.simplify(sp.Abs(c_eff[0]) / sp.sqrt(host_k))
-    require(sp.simplify(g_can_abs - v) == 0, "|g_can| must recover V form on host")
+    v_signed = c_m / sp.sqrt(k_q)
+    g_can_signed = sp.simplify(c_eff[0] / sp.sqrt(host_k))
+    require(sp.simplify(g_can_signed + v_signed) == 0, "signed g_can must equal -V")
 
     # Background piece couples matter to psi_bar; recorded, not used as d,h.
     l_background = -c_m * rho_b * psi_bar
@@ -178,8 +187,10 @@ def embed_and_export() -> dict[str, Any]:
                 "linear matter covectors. This export is the matter S_int channel "
                 "only. Joining free-force B,C with matter d,h remains a later step."
             ),
-            "abs_g_can_equals_V_form_on_single_field_host": True,
-            "V_definition": "C_m/sqrt(K_Q)",
+            "signed_g_can": str(g_can_signed),
+            "signed_g_can_equals_minus_V_on_oriented_host": True,
+            "V_signed_definition": "C_m/sqrt(K_Q)",
+            "mode_orientation": "u_pi=+1 in the architecture psi chart",
             "export_status": "EXPORTED_CONDITIONAL_ON_TRACK_A_HOST",
             "ready_for_joined_live_matching": False,
             "dimensions_in_export": (
@@ -189,8 +200,8 @@ def embed_and_export() -> dict[str, Any]:
         },
         "symbolic_checks": {
             "L_int_pi_matches_d": True,
-            "h_vanishes_for_pure_psi_coupling": True,
-            "abs_g_can_equals_V_form": True,
+            "linear_h_zero_only_in_R3_controlled_limit": True,
+            "signed_g_can_equals_minus_V": True,
         },
     }
 
@@ -201,8 +212,22 @@ def validate_upstream(
     track_a: dict[str, Any] | None,
     force_local: dict[str, Any] | None,
     free: dict[str, Any] | None,
+    r3_action: dict[str, Any] | None,
 ) -> list[dict[str, Any]]:
     checks: list[dict[str, Any]] = []
+    add_check(
+        checks,
+        "r3_covariant_action_upstream_contract",
+        bool(
+            r3_action
+            and r3_action.get("subgate_status")
+            == "PASS_MAT001_R3_COVARIANT_MATTER_ACTION_SCOPED"
+            and (r3_action.get("controlled_linear_limit") or {}).get(
+                "J2_extra_force_covectors"
+            )
+            == {"d": ["-C_m"], "h": ["0", "0"]}
+        ),
+    )
     add_check(
         checks,
         "force_hosting_upstream_contract",
@@ -296,7 +321,7 @@ def build_summary(
         d_h["export_status"] == "EXPORTED_CONDITIONAL_ON_TRACK_A_HOST"
         and d_h["d"] == ["-C_m"]
         and d_h["h"] == ["0", "0"]
-        and d_h["abs_g_can_equals_V_form_on_single_field_host"] is True,
+        and d_h["signed_g_can_equals_minus_V_on_oriented_host"] is True,
     )
     add_check(
         checks,
@@ -385,8 +410,9 @@ def build_summary(
         "scientific_boundary": (
             "A PASS selects Track-A as the Conditional force host, embeds "
             "S_int = -C_m rho_b psi with psi = psi_bar + pi, and exports "
-            "matter-channel d,h in that host chart, recovering the |V| form "
-            "when the host time-kinetic coefficient is symbolic K_Q. It does "
+            "the R3-controlled linear matter-channel d,h in that host chart, "
+            "recovering signed g_can=-V in the oriented psi chart when the host "
+            "time-kinetic coefficient is symbolic K_Q. It does "
             "not derive numeric K_Q or V, does not complete free-sector joins, "
             "and does not authorize MAT/UVIR/downstream physics claims."
         ),
@@ -400,7 +426,19 @@ def build_summary(
     }
 
 
+def signed_contract_valid(summary: dict[str, Any]) -> bool:
+    export = summary.get("exported_d_h") or {}
+    return bool(
+        export.get("d") == ["-C_m"]
+        and export.get("signed_g_can") == "-C_m/sqrt(K_Q)"
+        and export.get("signed_g_can_equals_minus_V_on_oriented_host") is True
+        and export.get("mode_orientation") == "u_pi=+1 in the architecture psi chart"
+    )
+
+
+
 def mutation_suite(summary: dict[str, Any]) -> None:
+    require(signed_contract_valid(summary), "baseline signed Track-A contract")
     banned_true_required_false = [
         "computes_numeric_V",
         "derives_numeric_K_Q",
@@ -423,6 +461,10 @@ def mutation_suite(summary: dict[str, Any]) -> None:
         summary["live_UVIR_free_sector_d_h_export_status"] == "NOT_EXPORTED",
         "free-sector d,h must stay absent",
     )
+    sign_mutant = copy.deepcopy(summary)
+    sign_mutant["exported_d_h"]["signed_g_can"] = "C_m/sqrt(K_Q)"
+    require(not signed_contract_valid(sign_mutant), "sign-flipped Track-A coupling must fail")
+
 
 
 def main() -> None:
@@ -432,6 +474,7 @@ def main() -> None:
     track_a, track_a_err, track_a_sha = load_json(args.track_a_summary)
     force_local, force_err, force_sha = load_json(args.force_local_summary)
     free, free_err, free_sha = load_json(args.free_sector_summary)
+    r3_action, r3_err, r3_sha = load_json(args.r3_action_summary)
 
     evidence = {
         "force_hosting": {
@@ -459,9 +502,14 @@ def main() -> None:
             "sha256": free_sha,
             "parse_error": free_err,
         },
+        "r3_covariant_action": {
+            "source": args.r3_action_summary.name,
+            "sha256": r3_sha,
+            "parse_error": r3_err,
+        },
     }
 
-    checks = validate_upstream(hosting, s_int, track_a, force_local, free)
+    checks = validate_upstream(hosting, s_int, track_a, force_local, free, r3_action)
     for name, err in (
         ("force_hosting", hosting_err),
         ("s_int_form", s_int_err),
@@ -469,11 +517,13 @@ def main() -> None:
         ("force_local", force_err),
         ("free_sector_export", free_err),
     ):
+        ("r3_covariant_action", r3_err),
         add_check(checks, f"{name}_readable", err is None, parse_error=err)
 
     embed = embed_and_export()
     summary = build_summary(embed, checks, evidence)
 
+    require(signed_contract_valid(summary), "signed Track-A contract")
     if args.self_test_mutations:
         mutation_suite(summary)
         print("MUTATION_SUITE: PASS")

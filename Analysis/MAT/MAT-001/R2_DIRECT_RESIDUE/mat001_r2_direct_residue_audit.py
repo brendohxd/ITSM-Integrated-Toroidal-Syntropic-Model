@@ -235,9 +235,7 @@ def quadratic_template_identities() -> dict[str, Any]:
     Vp = sp.simplify(C_mp / sp.sqrt(K_Qp))
     inv_ok = sp.simplify(Vp - V) == 0
 
-    # Sign of V tracks sign of C_m
-    sign_ok = sp.simplify(sp.sign(V) - sp.sign(C_m)) == 0 or True
-    # For symbols, check V * sqrt(K_Q) / C_m == 1
+    # Exact signed contract: V * sqrt(K_Q) / C_m == 1.
     sign_struct = sp.simplify(V * sp.sqrt(K_Q) / C_m) == 1
 
     return {

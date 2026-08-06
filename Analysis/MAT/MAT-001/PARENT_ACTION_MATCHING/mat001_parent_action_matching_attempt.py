@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """MAT-001 H1.1–H1.2: parent-action matching declaration + repo inventory.
 
-Selects the Derived route for absolute C_m and K_Q (or V): one parent action
+Selects the Derived route for independently normalized signed C_m and K_Q (or V): one parent action
 with kinetic Z_phi and coupling g_phi, mapped to the Track-A force host.
 Inventories the repository for those microscopic inputs. Expected outcome is
 INCOMPLETE until a genuine derivation exists. Does not invent numerics.
@@ -103,12 +103,14 @@ def add_check(
 
 
 def declare_parent_route() -> dict[str, Any]:
-    z_phi, g_phi, f_phi = sp.symbols("Z_phi g_phi f_phi", positive=True)
+    z_phi, f_phi = sp.symbols("Z_phi f_phi", positive=True)
+    g_phi = sp.symbols("g_phi", real=True, finite=True, nonzero=True)
     c_m = sp.simplify(g_phi / f_phi)
     k_q = sp.simplify(z_phi / f_phi**2)
     v = sp.simplify(g_phi / sp.sqrt(z_phi))
     v_alt = sp.simplify(c_m / sp.sqrt(k_q))
     require(sp.simplify(v - v_alt) == 0, "parent and IR V must agree")
+    require(sp.simplify(v.subs(g_phi, -g_phi) + v) == 0, "signed V must flip with field orientation")
 
     return {
         "selected_derived_route": "PARENT_ACTION_Z_phi_g_phi_TO_TRACK_A",
@@ -141,7 +143,9 @@ def declare_parent_route() -> dict[str, Any]:
             "V_parent_equals_C_m_over_sqrt_K_Q": True,
             "C_m_equals_g_over_f": True,
             "K_Q_equals_Z_over_f_squared": True,
+            "signed_V_flips_under_orientation_reversal": True,
         },
+        "orientation_anchor": "f_phi>0 aligns phi and psi; reversing the physical mode flips the signed residue",
     }
 
 

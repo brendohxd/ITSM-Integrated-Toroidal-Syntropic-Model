@@ -1,5 +1,14 @@
 # ITSM Changelog & Archive History
 
+## Recovery branch - MAT Tier-1 R1-R4 remediation (2026-08-07)
+
+### Scoped convention, provenance, action and residue repair
+- **R1 sign bridge:** Corrected the ADM-to-J2 map to `B=-M_x^T` and `C_J2=-C_ADM`; retained the nonzero velocity-mixing residual and added deterministic reconstruction/mutation checks.
+- **R2 provenance:** Replaced circular H1.3 absence assertions with source-backed classification and fail-closed injected-derivation/lost-backing controls.
+- **R3 covariant matter action:** Selected `S_m[Psi_m,A(psi)^2 g]`, derived exact ADM lapse/shift sources and the controlled comoving `d=(-C_m)`, `h=(0,0)` limit while retaining mixed lapse and moving-matter shift vertices.
+- **R4 signed residue:** Propagated signed real nonzero matter coefficients through J1, J2, Track-A and RR2; anchored mode orientation and rejected sign-flipped or magnitude-only substitutions.
+- **Automation:** Added a 21-output R1-R4 remediation runner with mutation suites, JSON/SHA-256 verification and a narrow retry for OneDrive file-handle transients.
+- **Boundary:** Tier-1 closure remains `NOT_MET`; MAT-001 `BLOCKED`; `V` `NOT_COMPUTED`; `K_Q` `NOT_DERIVED`; Stage 4A `CLOSED`; no frozen manuscript or physics gate is promoted.
 
 ## Recovery branch - RR2 residue pathway attempt (2026-08-06)
 
@@ -66,7 +75,7 @@
 ### UVIR-to-MAT critical path
 - **Host selected:** Track-A force phonon chart selected as Conditional live host for matter coupling.
 - **Embed + export:** \(S_{\rm int}=-C_m\rho_b\psi\) with \(\psi=\psi_{\rm bar}+\pi\); matter \(d=(-C_m)\), \(h=(0,0)\) exported on that host.
-- **Boundary:** \(\lvert V\rvert\) form recovered with symbolic \(K_Q\) only; free-sector not identified; numeric \(V\) still `NOT_COMPUTED`; MAT blocked; Stage 4A closed.
+- **Boundary (superseded by R4 on 2026-08-07):** This checkpoint recorded a magnitude-only form. The current contract retains signed `g_can=-V`; free-sector remains unidentified, numeric \(V\) remains `NOT_COMPUTED`, MAT remains blocked and Stage 4A remains closed.
 - **Subgate:** `PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL`.
 
 ## Recovery branch - MAT force-hosting readiness (2026-08-06)
@@ -80,7 +89,7 @@
 
 ### UVIR-to-MAT critical path
 - **Declared interaction:** Recorded Conditional \(S_{\rm int}\supset -C_m\rho_b\psi\) with parent-chart map \(\psi=f_\phi\phi\).
-- **IR template:** Derived J2 covectors \(d=(-C_m)\), \(h=\emptyset\) that recover \(\lvert V\rvert\) in the single-field IR chart.
+- **IR template (superseded by R4 on 2026-08-07):** Derived J2 covectors \(d=(-C_m)\), \(h=\emptyset\); the current anchored contract retains signed \(g_{\rm can}=-V\), not only its magnitude.
 - **Live placement:** Proved the free-sector UVIR chart lacks the force field \(\psi\); live \(d,h\) stay `NOT_EXPORTED`.
 - **Gate boundary:** Subgate `PASS_MAT001_S_INT_DH_DECLARATION_LIVE_CHART_BLOCKED`; no numeric \(V\), no MAT unlock, Stage 4A closed.
 

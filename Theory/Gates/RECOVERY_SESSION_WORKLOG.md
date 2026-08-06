@@ -1523,3 +1523,13 @@ clearer labels (white halos, softer grid, boxed cycle annotation); rebuilt P1/P2
 PDFs.
 
 **Decision:** presentation fix only; no scientific claim change.
+
+## 2026-08-07 - MAT-001 Tier-1 R1-R4 remediation
+
+Gate: MAT-001 / UVIR-003 interface integrity
+
+**What changed:** corrected the ADM-to-J2 bridge to `B=-M_x^T` and `C_J2=-C_ADM`; replaced circular H1.3 absence assertions with source-backed provenance; selected `S_m[Psi_m,A(psi)^2 g]` as a scoped covariant MAT matter action and derived its exact ADM lapse/shift variation; propagated a signed, orientation-anchored residue through J1, J2, Track-A and RR2. Added a 21-output remediation runner with mutation suites and checksum verification.
+
+**Decision:** accept scoped R1-R4 remediation passes only. The normalized comoving linear limit gives `d=(-C_m)`, `h=(0,0)`, but mixed lapse and moving-matter shift vertices remain. In the anchored `u_psi=+1` chart, `g_can=-C_m/sqrt(K_Q)=-V_signed`; magnitude-only substitutions are rejected. Tier-1 remains `NOT_MET`, MAT-001 `BLOCKED`, `V` `NOT_COMPUTED`, `K_Q` `NOT_DERIVED`, and Stage 4A `CLOSED`.
+
+**What was abandoned or superseded:** the old `B=+M_x^T` bridge, self-attested H1.3 source absence, global interpretation of `h=0`, and magnitude-only `|g_can|=V` as a matching contract. Earlier worklog entries remain as provenance and are superseded where these conventions conflict.

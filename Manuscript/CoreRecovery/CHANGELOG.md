@@ -5,6 +5,13 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+### Post-alpha.12 repository-side MAT remediation
+
+- Corrected the ADM-to-J2 sign bridge and retained the non-static velocity-mixing obstruction.
+- Added a source-backed H1.3 audit, a covariant conformal matter-action/ADM-source derivation, and a signed orientation-anchored residue contract.
+- Added consolidated mutation/checksum automation for the 21-output R1-R4 dependency cone.
+- Preserved alpha.12 as immutable: Tier-1 remains `NOT_MET`, MAT-001 remains `BLOCKED`, `V` remains `NOT_COMPUTED`, `K_Q` remains `NOT_DERIVED`, and Stage 4A remains `CLOSED`.
+
 ## 12.0-alpha.12 - 2026-08-06
 
 ### Dual-status post-alpha.11 boundary (status freeze, not physics closure)

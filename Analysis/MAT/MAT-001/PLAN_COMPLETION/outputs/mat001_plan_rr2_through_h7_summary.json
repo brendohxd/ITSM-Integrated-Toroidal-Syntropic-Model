@@ -81,6 +81,8 @@
       "K_Q = C_m^2/V^2 (blocked: absolute C_m and V absent)",
       "direct on-shell residue V (no live dynamical residue export)"
     ],
+    "rr2_attempt_status": "ATTEMPTED_INCOMPLETE",
+    "rr2_pathway_verdict": "SYMBOLIC_RESIDUE_IDENTITY_HOLDS_LIVE_NUMERIC_ROUTE_ABSENT",
     "status": "INCOMPLETE_NO_DERIVATION_AVAILABLE"
   },
   "RR3": {
@@ -99,6 +101,10 @@
   "checks": [
     {
       "name": "rr1_upstream",
+      "ok": true
+    },
+    {
+      "name": "rr2_upstream",
       "ok": true
     },
     {
@@ -123,6 +129,11 @@
     },
     {
       "name": "rr1_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "rr2_readable",
       "ok": true,
       "parse_error": null
     },
@@ -218,23 +229,28 @@
   "evidence": {
     "conditional": {
       "parse_error": null,
-      "sha256": "1BB9DE0646CDA8A8C577B19D37B6DFE1D04B29A3AECBA182519BC93A431975EC",
+      "sha256": "A5B483D7DBB8BF56271A6B927E8F58FA4B1A1FC17FDF7D8CDE606EC7EEBBA6A8",
       "source": "mat001_conditional_matching_branch_summary.json"
     },
     "h13": {
       "parse_error": null,
-      "sha256": "E6BA7F2EB9A712380F46066C3ED00742A89535B0156C9CCEEE10073323E6DE01",
+      "sha256": "B1813BEE4477AB93D42AA3DFF276FD081853C0DB214BFBA4A07465A1A45A91B5",
       "source": "mat001_parent_action_h13_source_audit_summary.json"
     },
     "join": {
       "parse_error": null,
-      "sha256": "958EFE959811B5BAF983196C784C71518C4531F50A1EAD9E7F71B47923916FC7",
+      "sha256": "F5AA83ECE1A6F6829F2610B703C7A471BC7E7413FF0E1C5DD0F1B47877BE9537",
       "source": "mat001_track_a_join_readiness_summary.json"
     },
     "rr1": {
       "parse_error": null,
-      "sha256": "7EBCBD6E8C4D06EAA3E0E5BD98FD403A5FDE42EA12EA5CBB2E53CF387EFEA6D6",
+      "sha256": "988F857D206EC3E281E832CEE82ECEDCAA9D0C671A19FB1E9DCD11A03121C49F",
       "source": "mat001_rr1_parent_action_skeleton_summary.json"
+    },
+    "rr2": {
+      "parse_error": null,
+      "sha256": "47E69CEFF7AC493D92CB65CEEABE7795E61F500E96778587E4721A1E8C741309",
+      "source": "mat001_rr2_residue_pathway_summary.json"
     },
     "stage5": {
       "parse_error": null,
@@ -243,7 +259,7 @@
     },
     "tier1": {
       "parse_error": null,
-      "sha256": "7F1F28FAC07EEECC6B974D1D41FCA6F0C01DF2006B78B93135F7EA4CEB46C281",
+      "sha256": "43FB26DD0A6063368B34ACBE438E82F3B1F0440B3BE0F92AB2FD31E4AE1A644E",
       "source": "uvir003_tier1_peer_review_readiness_summary.json"
     }
   },
@@ -252,7 +268,7 @@
   "kq_numeric_status": "NOT_DERIVED",
   "mat001_pass": false,
   "mat001_status": "BLOCKED",
-  "n_checks": 21,
+  "n_checks": 23,
   "overall": {
     "Derived_critical_path_closed": false,
     "bounded_steps_completed": [

@@ -2,7 +2,7 @@
 
 **Status:** Canonical workflow document for the recovery era  
 **Branch:** `recovery/v12-core-architecture`  
-**Last updated:** 2026-08-04  
+**Last updated:** 2026-08-07
 **Authority order (highest first):**
 
 1. This plan + `ITSM_Core_Architecture.md` + `ITSM_Core_Recovery_Plan.md`  
@@ -265,6 +265,11 @@ action drafts on identity pillars — only premature Derived packaging.
 
 ### 5.2 Current freeze boundary (update when freezing)
 
+**Active bounded remediation:**
+[`MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md`](../Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md).
+This subordinate addendum repairs the post-alpha.12 MAT evidence chain without
+changing the authority order or promoting any gate status.
+
 - **Latest frozen manuscript (Git):** see `Manuscript/CoreRecovery/VERSION`  
 - **As of 2026-08-06:** `12.0-alpha.12` — hold retained; dual-status MAT Conditional interface and parent-matching incompleteness; full UVIR-003 remains IN PROGRESS and MAT-001 remains BLOCKED
 - **Prior freeze:** `12.0-alpha.11` — tier-1 closure hold and identity-decision checkpoint
@@ -441,3 +446,4 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 | 1.2 | 2026-08-01 | **§4 rewritten as three buckets:** hard ban vs packaging-rejected/topic-open vs reassess under new outlook; AQUAL as past divergence, not ban-list item |
 | 1.3 | 2026-08-01 | **Open-options rule:** untested ≠ banned; identity tracks parallel to UVIR critical path; SWNT *principle* as Open founding intuition (not forced); dig harder at walls; Track B not hard-banned |
 | 1.4 | 2026-08-04 | Corrected Stage 5 from policy-defined bounded pass to fail-closed tier-1 hold; restored UVIR-003 IN_PROGRESS and made matched invariant, IR control, causality and physical cutoff the serial critical path |
+| 1.5 | 2026-08-07 | Linked bounded MAT Tier-1 remediation addendum; no gate promotion |

@@ -35,14 +35,6 @@ def parse_args() -> argparse.Namespace:
         default=base / "outputs" / "mat001_rr1_parent_action_skeleton_summary.json",
     )
     parser.add_argument(
-        "--plan-h7",
-        type=Path,
-        default=mat
-        / "PLAN_COMPLETION"
-        / "outputs"
-        / "mat001_plan_rr2_through_h7_summary.json",
-    )
-    parser.add_argument(
         "--track-a-s-int",
         type=Path,
         default=mat
@@ -102,7 +94,8 @@ def add_check(
 
 def residue_identities() -> dict[str, Any]:
     """Single-field Track-A matter channel residue identities."""
-    c_m, k_q = sp.symbols("C_m K_Q", positive=True)
+    k_q = sp.symbols("K_Q", positive=True)
+    c_m = sp.symbols("C_m", real=True, nonzero=True)
     # Quadratic: L = (K_Q/2) pi_dot^2 + ... - C_m rho_b pi  (IR chart)
     # Canonical chi = sqrt(K_Q) pi => L_source = - V rho_b chi with V = C_m/sqrt(K_Q)
     d = -c_m
@@ -110,16 +103,16 @@ def residue_identities() -> dict[str, Any]:
     k = sp.Matrix([[k_q]])
     c_eff = sp.Matrix([d])  # h=0 matter-only channel
     g_can = sp.simplify((c_eff.T * u)[0] / sp.sqrt((u.T * k * u)[0]))
-    v = sp.simplify(c_m / sp.sqrt(k_q))
-    # |g_can| = V; sign from d = -C_m
-    require(sp.simplify(sp.Abs(g_can) - v) == 0, "|g_can| equals V")
+    v_signed = sp.simplify(c_m / sp.sqrt(k_q))
+    # In the oriented Track-A chart u_pi=+1, the Lagrangian covector is g_can=-V.
+    require(sp.simplify(g_can + v_signed) == 0, "signed g_can equals -V")
 
     # Bare-K_Q-free path: if a measured mixed response R = chi/rho_b = V/P
     # then V is fixed only if operator P is known independently of the free K_Q
     # chart, or if an S-matrix amplitude supplies V^2.
     p_op = sp.symbols("P", positive=True)
-    mixed_response = sp.simplify(v / p_op)
-    exchange_coeff = sp.simplify(v**2 / p_op)
+    mixed_response = sp.simplify(-v_signed / p_op)
+    exchange_coeff = sp.simplify(v_signed**2 / p_op)
 
     return {
         "joint_quadratic_convention": {
@@ -132,17 +125,20 @@ def residue_identities() -> dict[str, Any]:
             "c_eff": str(c_eff[0]),
             "u": ["1"],
             "g_can": str(g_can),
-            "abs_g_can": str(sp.Abs(g_can)),
-            "V": str(v),
-            "identity_abs_g_can_equals_V": True,
+            "V_signed": str(v_signed),
+            "identity_signed_g_can_equals_minus_V": True,
+            "mode_orientation": "u_pi=+1 in the architecture psi chart",
+            "orientation_reversal": "u_pi->-u_pi flips g_can; chart orientation must accompany the sign",
+            "magnitude_only_matching_sufficient": False,
         },
         "bare_K_Q_free_routes": {
-            "mixed_response_R_equals_V_over_P": str(mixed_response),
+            "mixed_response_R_equals_minus_V_over_P": str(mixed_response),
             "exchange_coefficient_V2_over_P": str(exchange_coeff),
             "requires_independent_P_or_amplitude": True,
             "live_export_of_P_or_amplitude_for_Track_A_matter": False,
         },
         "absolute_inputs_still_required": [
+            "Here absolute means independently normalized/dimensionful, not an absolute value; the sign is retained",
             "numeric C_m (or g_phi and f_phi)",
             "numeric K_Q (or Z_phi and f_phi)",
             "OR live dynamical residue/amplitude that isolates V without free K_Q",
@@ -176,8 +172,8 @@ def build_summary(
 ) -> dict[str, Any]:
     add_check(
         checks,
-        "canonical_residue_equals_V_symbolically",
-        identities["canonical_projection"]["identity_abs_g_can_equals_V"] is True,
+        "signed_canonical_covector_equals_minus_V_symbolically",
+        identities["canonical_projection"]["identity_signed_g_can_equals_minus_V"] is True,
     )
     add_check(
         checks,
@@ -257,7 +253,7 @@ def build_summary(
         "scientific_boundary": (
             "A PASS means the Track-A + S_int residue pathway was constructed "
             "and shown to recover V symbolically, while every live numeric "
-            "route to absolute V remains absent. RR2 stays incomplete."
+            "route to an independently normalized signed V remains absent. RR2 stays incomplete."
         ),
         "serial_next": (
             "RR2 remains the Derived wall: supply UV parent Z_phi/g_phi or a "
@@ -269,7 +265,6 @@ def build_summary(
 
 def validate_upstream(
     rr1: dict[str, Any] | None,
-    plan: dict[str, Any] | None,
     s_int: dict[str, Any] | None,
     r2: dict[str, Any] | None,
     j2: dict[str, Any] | None,
@@ -283,16 +278,6 @@ def validate_upstream(
             and rr1.get("subgate_status")
             == "PASS_MAT001_RR1_PARENT_ACTION_SKELETON_DECLARED_UNMATCHED"
             and rr1.get("V_status") == "NOT_COMPUTED"
-        ),
-    )
-    add_check(
-        checks,
-        "plan_h7_upstream",
-        bool(
-            plan
-            and plan.get("subgate_status")
-            == "PASS_MAT001_PLAN_RR2_H7_BOUNDED_COMPLETION"
-            and plan.get("V_status") == "NOT_COMPUTED"
         ),
     )
     add_check(
@@ -327,7 +312,21 @@ def validate_upstream(
     return checks
 
 
+def signed_contract_valid(summary: dict[str, Any]) -> bool:
+    projection = ((summary.get("residue_identities") or {}).get("canonical_projection") or {})
+    return bool(
+        projection.get("g_can") == "-C_m/sqrt(K_Q)"
+        and projection.get("V_signed") == "C_m/sqrt(K_Q)"
+        and projection.get("identity_signed_g_can_equals_minus_V") is True
+        and projection.get("magnitude_only_matching_sufficient") is False
+        and projection.get("mode_orientation")
+        == "u_pi=+1 in the architecture psi chart"
+    )
+
+
+
 def mutation_suite(summary: dict[str, Any]) -> None:
+    require(signed_contract_valid(summary), "baseline signed residue contract")
     for key in (
         "numeric_V_computed",
         "RR2_closed",
@@ -341,12 +340,19 @@ def mutation_suite(summary: dict[str, Any]) -> None:
         require(mutant["claim_firewall"][key] is True, key)
     require(summary["RR2_status"] == "ATTEMPTED_INCOMPLETE", "incomplete")
     require(summary["V_status"] == "NOT_COMPUTED", "V")
+    sign_mutant = copy.deepcopy(summary)
+    sign_mutant["residue_identities"]["canonical_projection"]["g_can"] = "C_m/sqrt(K_Q)"
+    require(not signed_contract_valid(sign_mutant), "sign-flipped g_can must fail")
+    magnitude_mutant = copy.deepcopy(summary)
+    magnitude_mutant["residue_identities"]["canonical_projection"][
+        "magnitude_only_matching_sufficient"
+    ] = True
+    require(not signed_contract_valid(magnitude_mutant), "magnitude-only promotion must fail")
 
 
 def main() -> None:
     args = parse_args()
     rr1, e1, s1 = load_json(args.rr1)
-    plan, e2, s2 = load_json(args.plan_h7)
     s_int, e3, s3 = load_json(args.track_a_s_int)
     r2, e4, s4 = load_json(args.r2_template)
     j2, e5, s5 = load_json(args.j2_template)
@@ -354,7 +360,6 @@ def main() -> None:
 
     evidence = {
         "rr1": {"source": args.rr1.name, "sha256": s1, "parse_error": e1},
-        "plan_h7": {"source": args.plan_h7.name, "sha256": s2, "parse_error": e2},
         "track_a_s_int": {
             "source": args.track_a_s_int.name,
             "sha256": s3,
@@ -376,10 +381,9 @@ def main() -> None:
             "parse_error": e6,
         },
     }
-    checks = validate_upstream(rr1, plan, s_int, r2, j2)
+    checks = validate_upstream(rr1, s_int, r2, j2)
     for name, err in (
         ("rr1", e1),
-        ("plan_h7", e2),
         ("track_a_s_int", e3),
         ("r2_template", e4),
         ("j2_template", e5),
@@ -391,6 +395,7 @@ def main() -> None:
     live = audit_live_exports(src)
     summary = build_summary(identities, live, checks, evidence)
 
+    require(signed_contract_valid(summary), "signed residue contract")
     if args.self_test_mutations:
         mutation_suite(summary)
         print("MUTATION_SUITE: PASS")

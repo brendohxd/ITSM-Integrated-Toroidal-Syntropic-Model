@@ -250,7 +250,8 @@ def main() -> None:
         identity="g_can=(c_eff^T*u)/sqrt(u^T*K*u)",
     )
 
-    Z_phi, g_phi, alpha = sp.symbols("Z_phi g_phi alpha", positive=True)
+    Z_phi, alpha = sp.symbols("Z_phi alpha", positive=True)
+    g_phi = sp.symbols("g_phi", real=True, nonzero=True)
     K_single = sp.Matrix([[Z_phi]])
     c_single = sp.Matrix([g_phi])
     u_single = sp.Matrix([1])
@@ -265,6 +266,18 @@ def main() -> None:
         and sp.simplify(g_single - g_rescaled) == 0,
         result="g_phi/sqrt(Z_phi)",
         relation_to_J1="This is the structural V identity, not a numerical V computation.",
+    )
+
+    oriented_mode = modes["mode_2"]["e"]
+    oriented_coupling = canonical_coupling(K, c_eff, oriented_mode)
+    reversed_coupling = canonical_coupling(K, c_eff, -oriented_mode)
+    add_check(
+        checks,
+        "mode_orientation_reversal_flips_signed_coupling",
+        sp.simplify(reversed_coupling + oriented_coupling) == 0,
+        oriented_coupling=str(oriented_coupling),
+        reversed_coupling=str(reversed_coupling),
+        rule="u -> -u implies g_can -> -g_can; an eigenvector orientation anchor is mandatory",
     )
 
     # Use the second mode because it has components along both transformed
@@ -284,6 +297,10 @@ def main() -> None:
         "untransformed_mode_vector_changes_result": sp.simplify(correct - wrong_untransformed_mode) != 0,
         "euclidean_normalization_is_not_basis_invariant": sp.simplify(euclidean_original - euclidean_transformed) != 0,
         "omitting_constraint_source_dressing_changes_result": sp.simplify(correct - wrong_omit_constraint) != 0,
+        "absolute_value_erases_mode_orientation": (
+            sp.simplify(sp.Abs(correct) - sp.Abs(-correct)) == 0
+            and sp.simplify(correct - (-correct)) != 0
+        ),
     }
     add_check(
         checks,
@@ -367,6 +384,7 @@ def main() -> None:
             "effective_operator": "A_eff=A-B*C^-1*B^T",
             "effective_source": "c_eff=d-B*C^-1*h",
             "canonical_projection": "g_can=(c_eff^T*u)/sqrt(u^T*K*u)",
+            "signed_residue_rule": "g_can is signed in an anchored mode orientation; u -> -u flips g_can",
             "basis_maps": "x=R*y; z=S*w; u_y=R^-1*u; c_eff_y=R^T*c_eff; K_y=R^T*K*R",
         },
         "exact_template": {

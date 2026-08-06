@@ -10,6 +10,10 @@
   "calculation_status": "PASS",
   "checks": [
     {
+      "name": "r3_covariant_action_upstream_contract",
+      "ok": true
+    },
+    {
       "name": "force_hosting_upstream_contract",
       "ok": true
     },
@@ -121,7 +125,7 @@
   "evidence": {
     "force_hosting": {
       "parse_error": null,
-      "sha256": "8F4099D38A73989CEB4C99047B5B42AB6DE36AE0C5BA8F0685FEB90D57B16503",
+      "sha256": "288F5633AF2851E9292BF591A26C21ED9203BB1CF0611C0C78AE834324E761B0",
       "source": "mat001_force_hosting_readiness_summary.json"
     },
     "force_local": {
@@ -131,12 +135,17 @@
     },
     "free_sector_export": {
       "parse_error": null,
-      "sha256": "6DE89DB28C85FAA42A67E5221FB039F488F1D85E83F863693A5FEB37E648F807",
+      "sha256": "33FCD3A4AB8F8531E611DFACDD91CCB7598CF9ADE49A8279A87B5EB954D4A469",
       "source": "mat001_same_chart_quadratic_export_summary.json"
+    },
+    "r3_covariant_action": {
+      "parse_error": null,
+      "sha256": "99F712392F0DD42820D760FDAA7D1CDAEA1E301D04D610D5C4B49C663377F676",
+      "source": "mat001_r3_covariant_matter_action_summary.json"
     },
     "s_int_form": {
       "parse_error": null,
-      "sha256": "AF8488CE3F4F2FC985E108A123BEA70B21408755EB6A6A26E1D67DE97402021E",
+      "sha256": "785A4A2274B97B635E9C103DEEA970E4C54BBCFBDC24DFA1EA63B95E92FF2A86",
       "source": "mat001_s_int_dh_export_summary.json"
     },
     "track_a_force_adm": {
@@ -146,8 +155,7 @@
     }
   },
   "exported_d_h": {
-    "V_definition": "C_m/sqrt(K_Q)",
-    "abs_g_can_equals_V_form_on_single_field_host": true,
+    "V_signed_definition": "C_m/sqrt(K_Q)",
     "c_eff_without_free_force_B_dressing": [
       "-C_m"
     ],
@@ -161,8 +169,11 @@
       "0",
       "0"
     ],
+    "mode_orientation": "u_pi=+1 in the architecture psi chart",
     "note_on_B_dressing": "Track-A free-force action has constraint sources quadratic in pi velocities; those are free-sector force J2 components, not linear matter covectors. This export is the matter S_int channel only. Joining free-force B,C with matter d,h remains a later step.",
-    "ready_for_joined_live_matching": false
+    "ready_for_joined_live_matching": false,
+    "signed_g_can": "-C_m/sqrt(K_Q)",
+    "signed_g_can_equals_minus_V_on_oriented_host": true
   },
   "field_map": {
     "IR_psi_to_Track_A": "psi_IR := psi_TrackA = psi_bar + pi",
@@ -201,10 +212,10 @@
   "live_action_export_status": "PARTIAL_TRACK_A_MATTER_CHANNEL_EXPORTED",
   "mat001_pass": false,
   "mat001_status": "BLOCKED",
-  "n_checks": 16,
+  "n_checks": 17,
   "numeric_matching_status": "BLOCKED_K_Q_AND_JOINED_BUNDLE_REQUIRED",
   "physics_pass": false,
-  "scientific_boundary": "A PASS selects Track-A as the Conditional force host, embeds S_int = -C_m rho_b psi with psi = psi_bar + pi, and exports matter-channel d,h in that host chart, recovering the |V| form when the host time-kinetic coefficient is symbolic K_Q. It does not derive numeric K_Q or V, does not complete free-sector joins, and does not authorize MAT/UVIR/downstream physics claims.",
+  "scientific_boundary": "A PASS selects Track-A as the Conditional force host, embeds S_int = -C_m rho_b psi with psi = psi_bar + pi, and exports the R3-controlled linear matter-channel d,h in that host chart, recovering signed g_can=-V in the oriented psi chart when the host time-kinetic coefficient is symbolic K_Q. It does not derive numeric K_Q or V, does not complete free-sector joins, and does not authorize MAT/UVIR/downstream physics claims.",
   "selected_host_route": "R2_TRACK_A_FORCE_PHONON",
   "serial_next": "Either derive K_Q (or the invariant residue) on the Track-A host for a numeric V attempt under explicit Conditional scope, or join the matter channel with free-force B,C / free-sector ADM only under a declared multi-sector chart; keep Stage 4A closed until a matched invariant exists.",
   "stage": "TRACK_A_S_INT_EMBED_AND_DH_EXPORT",

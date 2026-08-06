@@ -45,6 +45,14 @@ def parse_args() -> argparse.Namespace:
         / "mat001_rr1_parent_action_skeleton_summary.json",
     )
     parser.add_argument(
+        "--rr2",
+        type=Path,
+        default=mat
+        / "PARENT_ACTION_MATCHING"
+        / "outputs"
+        / "mat001_rr2_residue_pathway_summary.json",
+    )
+    parser.add_argument(
         "--h13",
         type=Path,
         default=mat
@@ -107,7 +115,7 @@ def add_check(
     checks.append({"name": name, "ok": bool(ok), **details})
 
 
-def rr2_package(h13: dict[str, Any] | None) -> dict[str, Any]:
+def rr2_package(h13: dict[str, Any] | None, rr2: dict[str, Any] | None) -> dict[str, Any]:
     return {
         "status": "INCOMPLETE_NO_DERIVATION_AVAILABLE",
         "routes_attempted_or_audited": [
@@ -121,6 +129,8 @@ def rr2_package(h13: dict[str, Any] | None) -> dict[str, Any]:
         "numeric_g_phi": "NOT_DERIVED",
         "numeric_V": "NOT_COMPUTED",
         "h13_verdict": (h13 or {}).get("derivation_verdict"),
+        "rr2_attempt_status": (rr2 or {}).get("RR2_status"),
+        "rr2_pathway_verdict": (rr2 or {}).get("pathway_verdict"),
         "peer_review_statement": (
             "RR2 cannot be closed with current declared sources without new UV "
             "dynamics or a residue calculation. Incompleteness is frozen."
@@ -431,6 +441,7 @@ def build_summary(
 
 def validate_upstream(
     rr1: dict[str, Any] | None,
+    rr2: dict[str, Any] | None,
     h13: dict[str, Any] | None,
     join: dict[str, Any] | None,
     tier1: dict[str, Any] | None,
@@ -446,6 +457,16 @@ def validate_upstream(
             and rr1.get("subgate_status")
             == "PASS_MAT001_RR1_PARENT_ACTION_SKELETON_DECLARED_UNMATCHED"
             and rr1.get("V_status") == "NOT_COMPUTED"
+        ),
+    )
+    add_check(
+        checks,
+        "rr2_upstream",
+        bool(
+            rr2
+            and rr2.get("subgate_status")
+            == "PASS_MAT001_RR2_RESIDUE_PATHWAY_ATTEMPTED_INCOMPLETE"
+            and rr2.get("V_status") == "NOT_COMPUTED"
         ),
     )
     add_check(
@@ -525,6 +546,7 @@ def main() -> None:
     stage5, e5, s5 = load_json(args.stage5)
     cond, e6, s6 = load_json(args.conditional)
 
+    rr2_attempt, e7, s7 = load_json(args.rr2)
     evidence = {
         "rr1": {"source": args.rr1.name, "sha256": s1, "parse_error": e1},
         "h13": {"source": args.h13.name, "sha256": s2, "parse_error": e2},
@@ -532,10 +554,12 @@ def main() -> None:
         "tier1": {"source": args.tier1.name, "sha256": s4, "parse_error": e4},
         "stage5": {"source": args.stage5.name, "sha256": s5, "parse_error": e5},
         "conditional": {"source": args.conditional.name, "sha256": s6, "parse_error": e6},
+        "rr2": {"source": args.rr2.name, "sha256": s7, "parse_error": e7},
     }
-    checks = validate_upstream(rr1, h13, join, tier1, stage5, cond)
+    checks = validate_upstream(rr1, rr2_attempt, h13, join, tier1, stage5, cond)
     for name, err in (
         ("rr1", e1),
+        ("rr2", e7),
         ("h13", e2),
         ("join", e3),
         ("tier1", e4),
@@ -544,7 +568,7 @@ def main() -> None:
     ):
         add_check(checks, f"{name}_readable", err is None, parse_error=err)
 
-    rr2 = rr2_package(h13)
+    rr2 = rr2_package(h13, rr2_attempt)
     rr3 = rr3_package()
     h2 = h2_package()
     h3 = h3_package(tier1, stage5)

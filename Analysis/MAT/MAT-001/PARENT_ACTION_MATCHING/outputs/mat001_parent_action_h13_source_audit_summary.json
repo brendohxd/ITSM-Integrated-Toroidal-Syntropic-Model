@@ -4,7 +4,7 @@
     "H1_complete": false,
     "blocks_H2_H3": true,
     "honest_incompleteness_acceptable_for_peer_review": true,
-    "reason": "No declared source derives absolute Z_phi or g_phi; Stage 4A and Derived V remain blocked by plan."
+    "reason": "Source-backed attestations find no absolute Z_phi or g_phi derivation; Stage 4A and Derived V remain blocked by plan."
   },
   "V_status": "NOT_COMPUTED",
   "blocking_requirements": [
@@ -75,7 +75,11 @@
       "parse_error": null
     },
     {
-      "name": "no_source_derives_numeric_Z_phi_or_g_phi",
+      "name": "declared_sources_support_absence_verdict",
+      "ok": true
+    },
+    {
+      "name": "all_declared_sources_classified",
       "ok": true
     },
     {
@@ -138,17 +142,17 @@
     },
     "h12": {
       "parse_error": null,
-      "sha256": "ACD47A7CF0E7427526EBA314336A33F55015474D7E5BED2C30B30AAE53E05BE2",
+      "sha256": "C3F7A2936669AFEE92B86565B64FC8CBC477431ACF3E275A28047824E7FE2F62",
       "source": "mat001_parent_action_matching_summary.json"
     },
     "j1": {
       "parse_error": null,
-      "sha256": "D3347CA262861F685FB348FB813C776D8F6CFE00AA9F1A707774BF232C83159F",
+      "sha256": "CD5F9A0F9863D56A52B94950C4E88736581A5C4CE93086778D941B4CCBD936DF",
       "source": "mat001_j1_joint_action_normalization_summary.json"
     },
     "master_plan": {
       "parse_error": null,
-      "sha256": "BE8AD727A0EAE35F1B5C59DCB5D2C768D97C6CD14708560F4F2348B2652FC1D4",
+      "sha256": "9D4015EBF3AE3CE8684CA3AA7DA3FFDD67899657B83E836C6D70D608DB6BAD41",
       "source": "ITSM_Master_Research_Plan.md"
     },
     "r3": {
@@ -163,7 +167,7 @@
     },
     "track_a_s_int": {
       "parse_error": null,
-      "sha256": "EB4D07370A7FD007C68051FFD0A10E03BB0770AE957826128283C25C90E519C8",
+      "sha256": "B7FA92BEEA85A8606F1F452BE5C4E02D7139AC8174203549A78D5E1DF1C419EB",
       "source": "mat001_track_a_s_int_embed_summary.json"
     },
     "uvir001": {
@@ -191,7 +195,7 @@
   "mat001_pass": false,
   "mat001_status": "BLOCKED",
   "matching_status": "INCOMPLETE_AFTER_SOURCE_AUDIT",
-  "n_checks": 20,
+  "n_checks": 21,
   "physics_pass": false,
   "plan_step": "H1.3",
   "research_requirements_frozen": [
@@ -226,15 +230,22 @@
       "status": "ACTIVE_FIREWALL"
     }
   ],
-  "scientific_boundary": "A PASS means H1.3 audited all named declared sources for a parent Z_phi/g_phi derivation and found none. Research requirements are frozen for peer review. This does not compute V, derive K_Q, or reopen Stage 4A.",
+  "scientific_boundary": "A PASS means H1.3 classified source-backed attestations from every named declared source and found no Z_phi/g_phi derivation. Requirements are frozen for peer review. This does not compute V, derive K_Q, or reopen Stage 4A.",
   "serial_next": "H1.4: link frozen RR1\u2013RR5 into Master Plan / recovery plan as open research requirements; hold Derived H2\u2013H5 until RR1\u2013RR3 close. Lane B Conditional work may continue dual-status only.",
   "source_audits": {
     "architecture_weak_field": {
-      "derives_numeric_C_m": false,
-      "derives_numeric_K_Q": false,
-      "derives_numeric_Z_phi": false,
-      "derives_numeric_g_phi": false,
+      "assessment": "FORM_ONLY_NO_PARENT_COEFFICIENT_DERIVATION",
       "evidence": {
+        "form_lines": [
+          {
+            "line": 316,
+            "text": "-C_m rho_b psi"
+          },
+          {
+            "line": 325,
+            "text": "C_obs = C_m^(3/2) / sqrt(C_IR),"
+          }
+        ],
         "has_C_m_rho_b_psi": true,
         "has_C_obs_form": true,
         "has_Z_phi": false,
@@ -245,13 +256,11 @@
         "form C_obs = C_m^{3/2}/sqrt(C_IR)",
         "optional convention C_m = C_IR = C (not a derivation of C_m)"
       ],
-      "source": "ITSM_Core_Architecture.md \u00a75 weak-field S_WF"
+      "source": "ITSM_Core_Architecture.md \u00a75 weak-field S_WF",
+      "source_backed": true
     },
     "h12_declaration": {
-      "derives_numeric_C_m": false,
-      "derives_numeric_K_Q": false,
-      "derives_numeric_Z_phi": false,
-      "derives_numeric_g_phi": false,
+      "assessment": "EXPLICIT_NOT_DERIVED",
       "evidence": {
         "matching_status": "DECLARED_INCOMPLETE",
         "micro_status": "NOT_DERIVED_NUMERIC_ABSENT"
@@ -260,13 +269,11 @@
         "selected route PARENT_ACTION_Z_phi_g_phi_TO_TRACK_A",
         "inventory: NOT_DERIVED_NUMERIC_ABSENT"
       ],
-      "source": "mat001_parent_action_matching H1.1-H1.2"
+      "source": "mat001_parent_action_matching H1.1-H1.2",
+      "source_backed": true
     },
     "j1_joint_action_template": {
-      "derives_numeric_C_m": false,
-      "derives_numeric_K_Q": false,
-      "derives_numeric_Z_phi": false,
-      "derives_numeric_g_phi": false,
+      "assessment": "EXPLICIT_NOT_DERIVED",
       "evidence": {
         "V_status": "NOT_COMPUTED",
         "subgate": "PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY",
@@ -280,27 +287,49 @@
         "structural V = g_phi/sqrt(Z_phi) = C_m/sqrt(K_Q)",
         "lists unmatched Z_phi and g_phi as open inputs"
       ],
-      "source": "mat001_j1_joint_action_normalization"
+      "source": "mat001_j1_joint_action_normalization",
+      "source_backed": true
     },
     "master_plan_MAT": {
-      "derives_numeric_C_m": false,
-      "derives_numeric_K_Q": false,
-      "derives_numeric_Z_phi": false,
-      "derives_numeric_g_phi": false,
+      "assessment": "EXPLICIT_NOT_DERIVED",
       "evidence": {
+        "explicit_status_lines": [
+          {
+            "line": 278,
+            "text": "- **Frozen manuscript (alpha.12):** UVIR-003 is **in progress**; MAT-001 is **not unlocked**; \\(V\\) is **NOT_COMPUTED**; Stage 4A is **closed**; Conditional Track-A form kit is **not** Derived matching."
+          },
+          {
+            "line": 279,
+            "text": "- **Programme / gate ledger (post\u2013\u03b1.10 Stages 1\u20135):** the earlier `PASS_BOUNDED_CONDITIONAL` interpretation is superseded. Stage 5 now records `PASS_STAGE5_DECISION_HOLD_TIER1`, while the physics gate remains **`IN_PROGRESS`** with M2, M3, M6 and M7 incomplete at tier 1; \\(K_Q\\) is NOT_DERIVED, \\(V\\) is NOT_COMPUTED, and a MAT PASS tag is forbidden."
+          },
+          {
+            "line": 282,
+            "text": "- **Post-alpha.11 J2 projection and later MAT kit:** J2 template is basis invariant; free-sector export, Track-A Conditional \\(S_{\\rm int}/d,h\\), symbolic \\(K_Q\\), and parent-action incompleteness audits exist, but \\(V\\) remains NOT_COMPUTED"
+          },
+          {
+            "line": 292,
+            "text": "- PASS_KQ_MATCHING_INVENTORY_OPEN \u2014 invariants \\(Aq/K_Q\\), \\(A/K_Q^{3/2}\\); routes R1\u2013R5; **numeric \\(K_Q\\) still NOT_DERIVED**"
+          },
+          {
+            "line": 300,
+            "text": "- PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL \u2014 **Stage 3**: forms frozen; \\(V\\) NOT_COMPUTED; **no MAT PASS**"
+          },
+          {
+            "line": 306,
+            "text": "- `PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT` \u2014 distinguishes canonical vertex, mixed response and source-source exchange coefficients; \\(V\\) remains `NOT_COMPUTED`"
+          }
+        ],
         "mentions_C_obs_hypothesis": true
       },
       "provides": [
         "MAT-001 goal V = C_m/sqrt(K_Q)",
         "Conditional empirical C_obs ~ 1 until MAT computes otherwise"
       ],
-      "source": "ITSM_Master_Research_Plan.md MAT / C_obs hypothesis"
+      "source": "ITSM_Master_Research_Plan.md MAT / C_obs hypothesis",
+      "source_backed": true
     },
     "r3_uv_residue": {
-      "derives_numeric_C_m": false,
-      "derives_numeric_K_Q": false,
-      "derives_numeric_Z_phi": false,
-      "derives_numeric_g_phi": false,
+      "assessment": "EXPLICIT_INCOMPLETE_NO_BOUND",
       "evidence": {
         "classification": "INCOMPLETE_R3_UV_RESIDUE",
         "missing": [
@@ -317,16 +346,16 @@
         "missing Z_psi, rho_Phi, r_rho",
         "no rigorous bound on Z_psi r_rho"
       ],
-      "source": "uvir003_r3_uv_residue_audit"
+      "source": "uvir003_r3_uv_residue_audit",
+      "source_backed": true
     },
     "track_a_force_and_s_int": {
-      "derives_numeric_C_m": false,
-      "derives_numeric_K_Q": false,
-      "derives_numeric_Z_phi": false,
-      "derives_numeric_g_phi": false,
+      "assessment": "CONDITIONAL_HOST_FORM_ONLY",
       "evidence": {
         "K_Q_in_force_L": true,
         "force_subgate": "PASS_FORCE_SECTOR_J2_COMPONENT",
+        "s_int_V_status": "NOT_COMPUTED",
+        "s_int_kq_status": "NOT_DERIVED",
         "s_int_status": "EMBEDDED_CONDITIONAL_ON_TRACK_A_HOST"
       },
       "provides": [
@@ -334,13 +363,11 @@
         "form d = -C_m on host",
         "no absolute Z_phi or g_phi"
       ],
-      "source": "Track-A force ADM + Conditional S_int embed"
+      "source": "Track-A force ADM + Conditional S_int embed",
+      "source_backed": true
     },
     "uvir001_minimally_kinetic_scalar": {
-      "derives_numeric_C_m": false,
-      "derives_numeric_K_Q": false,
-      "derives_numeric_Z_phi": false,
-      "derives_numeric_g_phi": false,
+      "assessment": "PARAMETRIC_CANDIDATE_NOT_MAPPED_TO_PARENT_VERTEX",
       "evidence": {
         "candidate_verdict": "FAIL",
         "validation_status": "PASS",
@@ -350,7 +377,8 @@
         "tests minimally kinetic complex scalar vs Y^{3/2} origin",
         "does not supply force-phonon Z_phi/g_phi matching"
       ],
-      "source": "uvir001_summary.json"
+      "source": "uvir001_summary.json",
+      "source_backed": true
     }
   },
   "stage": "H1_3_PARENT_ACTION_SOURCE_AUDIT",

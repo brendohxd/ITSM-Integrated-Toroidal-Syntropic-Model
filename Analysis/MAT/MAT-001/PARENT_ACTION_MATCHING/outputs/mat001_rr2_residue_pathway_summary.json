@@ -3,6 +3,7 @@
   "RR2_status": "ATTEMPTED_INCOMPLETE",
   "V_status": "NOT_COMPUTED",
   "blocking_requirements": [
+    "Here absolute means independently normalized/dimensionful, not an absolute value; the sign is retained",
     "numeric C_m (or g_phi and f_phi)",
     "numeric K_Q (or Z_phi and f_phi)",
     "OR live dynamical residue/amplitude that isolates V without free K_Q"
@@ -11,10 +12,6 @@
   "checks": [
     {
       "name": "rr1_upstream",
-      "ok": true
-    },
-    {
-      "name": "plan_h7_upstream",
       "ok": true
     },
     {
@@ -31,11 +28,6 @@
     },
     {
       "name": "rr1_readable",
-      "ok": true,
-      "parse_error": null
-    },
-    {
-      "name": "plan_h7_readable",
       "ok": true,
       "parse_error": null
     },
@@ -60,7 +52,7 @@
       "parse_error": null
     },
     {
-      "name": "canonical_residue_equals_V_symbolically",
+      "name": "signed_canonical_covector_equals_minus_V_symbolically",
       "ok": true
     },
     {
@@ -105,13 +97,8 @@
   "evidence": {
     "j2_template": {
       "parse_error": null,
-      "sha256": "599065CD407A499BE8414FFF226C10889CA6BFE668E74A2C8E11E251D3C0D82E",
+      "sha256": "5C385FDB10336AD727D1E9D16CAA68027599C2D157BE903E549748C0294CF865",
       "source": "mat001_j2_basis_covariant_mode_projection_summary.json"
-    },
-    "plan_h7": {
-      "parse_error": null,
-      "sha256": "8DDE7DBE94BE71199B3D2D37D692363E359CF7E86D0672973658E8D4D33DB1A6",
-      "source": "mat001_plan_rr2_through_h7_summary.json"
     },
     "r2_template": {
       "parse_error": null,
@@ -120,7 +107,7 @@
     },
     "rr1": {
       "parse_error": null,
-      "sha256": "7EBCBD6E8C4D06EAA3E0E5BD98FD403A5FDE42EA12EA5CBB2E53CF387EFEA6D6",
+      "sha256": "988F857D206EC3E281E832CEE82ECEDCAA9D0C671A19FB1E9DCD11A03121C49F",
       "source": "mat001_rr1_parent_action_skeleton_summary.json"
     },
     "source_response": {
@@ -130,7 +117,7 @@
     },
     "track_a_s_int": {
       "parse_error": null,
-      "sha256": "EB4D07370A7FD007C68051FFD0A10E03BB0770AE957826128283C25C90E519C8",
+      "sha256": "B7FA92BEEA85A8606F1F452BE5C4E02D7139AC8174203549A78D5E1DF1C419EB",
       "source": "mat001_track_a_s_int_embed_summary.json"
     }
   },
@@ -156,12 +143,13 @@
   },
   "mat001_pass": false,
   "mat001_status": "BLOCKED",
-  "n_checks": 16,
+  "n_checks": 14,
   "pathway_verdict": "SYMBOLIC_RESIDUE_IDENTITY_HOLDS_LIVE_NUMERIC_ROUTE_ABSENT",
   "physics_pass": false,
   "plan_step": "RR2",
   "residue_identities": {
     "absolute_inputs_still_required": [
+      "Here absolute means independently normalized/dimensionful, not an absolute value; the sign is retained",
       "numeric C_m (or g_phi and f_phi)",
       "numeric K_Q (or Z_phi and f_phi)",
       "OR live dynamical residue/amplitude that isolates V without free K_Q"
@@ -169,15 +157,17 @@
     "bare_K_Q_free_routes": {
       "exchange_coefficient_V2_over_P": "C_m**2/(K_Q*P)",
       "live_export_of_P_or_amplitude_for_Track_A_matter": false,
-      "mixed_response_R_equals_V_over_P": "C_m/(sqrt(K_Q)*P)",
+      "mixed_response_R_equals_minus_V_over_P": "-C_m/(sqrt(K_Q)*P)",
       "requires_independent_P_or_amplitude": true
     },
     "canonical_projection": {
-      "V": "C_m/sqrt(K_Q)",
-      "abs_g_can": "C_m/sqrt(K_Q)",
+      "V_signed": "C_m/sqrt(K_Q)",
       "c_eff": "-C_m",
       "g_can": "-C_m/sqrt(K_Q)",
-      "identity_abs_g_can_equals_V": true,
+      "identity_signed_g_can_equals_minus_V": true,
+      "magnitude_only_matching_sufficient": false,
+      "mode_orientation": "u_pi=+1 in the architecture psi chart",
+      "orientation_reversal": "u_pi->-u_pi flips g_can; chart orientation must accompany the sign",
       "u": [
         "1"
       ]
@@ -189,7 +179,7 @@
       "time_kinetic": "K_Q * pi_dot**2 / 2"
     }
   },
-  "scientific_boundary": "A PASS means the Track-A + S_int residue pathway was constructed and shown to recover V symbolically, while every live numeric route to absolute V remains absent. RR2 stays incomplete.",
+  "scientific_boundary": "A PASS means the Track-A + S_int residue pathway was constructed and shown to recover V symbolically, while every live numeric route to an independently normalized signed V remains absent. RR2 stays incomplete.",
   "serial_next": "RR2 remains the Derived wall: supply UV parent Z_phi/g_phi or a live dynamical amplitude/residue that isolates V. No further inventory substitutes for that physics.",
   "stage": "RR2_RESIDUE_PATHWAY_ATTEMPT",
   "stage4A_status": "CLOSED",

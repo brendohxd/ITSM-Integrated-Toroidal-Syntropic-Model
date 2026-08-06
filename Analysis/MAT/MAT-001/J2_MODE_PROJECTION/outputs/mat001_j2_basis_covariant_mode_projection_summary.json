@@ -87,7 +87,15 @@
       "result": "g_phi/sqrt(Z_phi)"
     },
     {
+      "name": "mode_orientation_reversal_flips_signed_coupling",
+      "ok": true,
+      "oriented_coupling": "7/3",
+      "reversed_coupling": "-7/3",
+      "rule": "u -> -u implies g_can -> -g_can; an eigenvector orientation anchor is mandatory"
+    },
+    {
       "cases": {
+        "absolute_value_erases_mode_orientation": true,
         "euclidean_normalization_is_not_basis_invariant": true,
         "omitting_constraint_source_dressing_changes_result": true,
         "untransformed_mode_vector_changes_result": true,
@@ -233,7 +241,7 @@
   "live_action_export_status": "NOT_PROVIDED",
   "mat001_pass": false,
   "mat001_status": "BLOCKED",
-  "n_checks": 9,
+  "n_checks": 10,
   "numeric_matching_status": "BLOCKED_LIVE_ACTION_EXPORT_REQUIRED",
   "physics_pass": false,
   "projection_identity_status": "DERIVED_TEMPLATE",
@@ -243,7 +251,8 @@
     "constraint_solution": "z=C^-1(rho*h-B^T*x)",
     "effective_operator": "A_eff=A-B*C^-1*B^T",
     "effective_source": "c_eff=d-B*C^-1*h",
-    "lagrangian": "1/2 xdot^T K xdot - 1/2 x^T A x - x^T B z - 1/2 z^T C z + rho(d^T x + h^T z)"
+    "lagrangian": "1/2 xdot^T K xdot - 1/2 x^T A x - x^T B z - 1/2 z^T C z + rho(d^T x + h^T z)",
+    "signed_residue_rule": "g_can is signed in an anchored mode orientation; u -> -u flips g_can"
   },
   "scientific_boundary": "A PASS derives and verifies the canonical source-projection identity, including constraint-source dressing and field-basis covariance, on an exact symbolic template. It does not show that the current UVIR action exports the required matrices, identify a live physical eigenmode, compute V or K_Q, reopen Stage 4A, or authorize MAT/UVIR/downstream physics claims.",
   "serial_next": "Inventory the live UVIR quadratic reduction for K, C, B, d and h in one named field chart. Wire them only if their action-level provenance and dimensions are explicit; otherwise retain BLOCKED_LIVE_ACTION_EXPORT_REQUIRED.",

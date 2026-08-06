@@ -108,7 +108,9 @@ def derive_ir_source_covectors() -> dict[str, Any]:
     participate in the interaction. Matching signs requires
         d = (-C_m,),  h = empty.
     """
-    c_m, k_q, rho_b, psi = sp.symbols("C_m K_Q rho_b psi", positive=True)
+    k_q, rho_b = sp.symbols("K_Q rho_b", positive=True)
+    c_m = sp.symbols("C_m", real=True, nonzero=True)
+    psi = sp.symbols("psi", real=True)
     # Single-field IR kinetic chart used by J1/R2.
     l_kin = (k_q / 2) * sp.Symbol("psi_dot", real=True) ** 2
     l_int = -c_m * rho_b * psi
@@ -125,12 +127,13 @@ def derive_ir_source_covectors() -> dict[str, Any]:
     d = sp.Matrix([d_psi])
     c_eff = d  # no B,C dressing when h empty / no constraints
     # Mode u along psi with kinetic norm K_Q: g_can = c_eff / sqrt(K_Q) = -V
-    # with V = C_m/sqrt(K_Q). Absolute sign is chart convention; |g_can|=V.
-    v = c_m / sp.sqrt(k_q)
-    g_can_abs = sp.simplify(sp.Abs(c_eff[0]) / sp.sqrt(k_q))
-    require(sp.simplify(g_can_abs - v) == 0, "|g_can| must recover V in IR chart")
+    # with signed V = C_m/sqrt(K_Q) in the oriented architecture psi chart.
+    v_signed = c_m / sp.sqrt(k_q)
+    g_can_signed = sp.simplify(c_eff[0] / sp.sqrt(k_q))
+    require(sp.simplify(g_can_signed + v_signed) == 0, "signed g_can must equal -V")
 
-    parent_g, parent_z, f_phi = sp.symbols("g_phi Z_phi f_phi", positive=True)
+    parent_z, f_phi = sp.symbols("Z_phi f_phi", positive=True)
+    parent_g = sp.symbols("g_phi", real=True, nonzero=True)
     # Parent chart: L_int = -g_phi rho_b phi, psi = f_phi phi.
     d_parent = -parent_g
     d_ir_from_parent = sp.simplify(d_parent / f_phi)  # after phi=psi/f_phi
@@ -166,9 +169,11 @@ def derive_ir_source_covectors() -> dict[str, Any]:
             "d": [str(d_psi)],
             "h": [],
             "c_eff": [str(c_eff[0])],
-            "canonical_coupling_abs": str(g_can_abs),
-            "recovers_V_abs": True,
-            "V_definition": "C_m/sqrt(K_Q)",
+            "canonical_coupling_signed": str(g_can_signed),
+            "signed_g_can_equals_minus_V": True,
+            "V_signed_definition": "C_m/sqrt(K_Q)",
+            "mode_orientation": "u_psi=+1 in the architecture psi chart",
+            "magnitude_only_matching_sufficient": False,
             "dimensions_in_export": (
                 "ROLE_DECLARED: d multiplies rho_b*psi in the Lagrangian "
                 "density; absolute SI unit system not fixed"
@@ -188,7 +193,7 @@ def derive_ir_source_covectors() -> dict[str, Any]:
         },
         "symbolic_checks": {
             "L_int_matches_J2_source": True,
-            "abs_g_can_equals_V": True,
+            "signed_g_can_equals_minus_V": True,
         },
     }
 
@@ -346,10 +351,10 @@ def build_summary(
     )
     add_check(
         checks,
-        "IR_d_h_form_derived_and_recovers_V_abs",
+        "IR_d_h_form_derived_and_recovers_signed_minus_V",
         ir["IR_single_field_chart"]["export_status"]
         == "FORM_DERIVED_IR_SINGLE_FIELD_TEMPLATE"
-        and ir["IR_single_field_chart"]["recovers_V_abs"] is True
+        and ir["IR_single_field_chart"]["signed_g_can_equals_minus_V"] is True
         and ir["IR_single_field_chart"]["d"] == ["-C_m"]
         and ir["IR_single_field_chart"]["h"] == [],
     )
@@ -435,7 +440,7 @@ def build_summary(
         "claim_firewall": firewall,
         "scientific_boundary": (
             "A PASS declares the Conditional S_int form, derives IR-template "
-            "d,h that recover |V| in the single-field chart, and proves that "
+            "d,h that recover signed g_can=-V in the oriented single-field chart, and proves that "
             "those covectors are not yet exportable into the live free-sector "
             "UVIR chart. It does not compute numeric V or K_Q, does not paste "
             "IR templates into the free-sector bundle, and does not authorize "
@@ -450,7 +455,20 @@ def build_summary(
     }
 
 
+def signed_contract_valid(summary: dict[str, Any]) -> bool:
+    export = summary.get("IR_single_field_export") or {}
+    return bool(
+        export.get("d") == ["-C_m"]
+        and export.get("canonical_coupling_signed") == "-C_m/sqrt(K_Q)"
+        and export.get("signed_g_can_equals_minus_V") is True
+        and export.get("magnitude_only_matching_sufficient") is False
+        and export.get("mode_orientation")
+        == "u_psi=+1 in the architecture psi chart"
+    )
+
+
 def mutation_suite(summary: dict[str, Any]) -> None:
+    require(signed_contract_valid(summary), "baseline signed export contract")
     banned = [
         "live_UVIR_d_h_exported",
         "live_same_chart_bundle_complete",
@@ -484,6 +502,14 @@ def mutation_suite(summary: dict[str, Any]) -> None:
         == "REJECTED_ROLE_MISMATCH",
         "delta_rho substitution must remain rejected",
     )
+    sign_mutant = copy.deepcopy(summary)
+    sign_mutant["IR_single_field_export"]["canonical_coupling_signed"] = "C_m/sqrt(K_Q)"
+    require(not signed_contract_valid(sign_mutant), "sign-flipped coupling must fail")
+    magnitude_mutant = copy.deepcopy(summary)
+    magnitude_mutant["IR_single_field_export"][
+        "magnitude_only_matching_sufficient"
+    ] = True
+    require(not signed_contract_valid(magnitude_mutant), "magnitude-only promotion must fail")
 
 
 def main() -> None:
@@ -535,6 +561,7 @@ def main() -> None:
     ir = derive_ir_source_covectors()
     placement = live_chart_placement(free)
     summary = build_summary(ir, placement, checks, evidence)
+    require(signed_contract_valid(summary), "signed export contract")
 
     if args.self_test_mutations:
         mutation_suite(summary)

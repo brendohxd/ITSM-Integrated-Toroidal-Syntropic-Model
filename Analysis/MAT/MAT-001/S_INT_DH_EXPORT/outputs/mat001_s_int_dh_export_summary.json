@@ -2,11 +2,11 @@
   "IR_d_h_export_status": "FORM_DERIVED_IR_SINGLE_FIELD_TEMPLATE",
   "IR_single_field_export": {
     "J2_source_sector": "rho_b*(d^T x + h^T z)",
-    "V_definition": "C_m/sqrt(K_Q)",
+    "V_signed_definition": "C_m/sqrt(K_Q)",
     "c_eff": [
       "-C_m"
     ],
-    "canonical_coupling_abs": "C_m/sqrt(K_Q)",
+    "canonical_coupling_signed": "-C_m/sqrt(K_Q)",
     "constraint_fields": [],
     "d": [
       "-C_m"
@@ -18,8 +18,10 @@
     "export_status": "FORM_DERIVED_IR_SINGLE_FIELD_TEMPLATE",
     "external_source": "rho_b",
     "h": [],
+    "magnitude_only_matching_sufficient": false,
+    "mode_orientation": "u_psi=+1 in the architecture psi chart",
     "ready_for_J2_live_matching": false,
-    "recovers_V_abs": true
+    "signed_g_can_equals_minus_V": true
   },
   "S_int_status": "DECLARED_CONDITIONAL_FORM",
   "V_status": "NOT_COMPUTED",
@@ -81,7 +83,7 @@
       "ok": true
     },
     {
-      "name": "IR_d_h_form_derived_and_recovers_V_abs",
+      "name": "IR_d_h_form_derived_and_recovers_signed_minus_V",
       "ok": true
     },
     {
@@ -145,12 +147,12 @@
   "evidence": {
     "MAT_J1_template": {
       "parse_error": null,
-      "sha256": "D3347CA262861F685FB348FB813C776D8F6CFE00AA9F1A707774BF232C83159F",
+      "sha256": "CD5F9A0F9863D56A52B94950C4E88736581A5C4CE93086778D941B4CCBD936DF",
       "source": "mat001_j1_joint_action_normalization_summary.json"
     },
     "MAT_J2_template": {
       "parse_error": null,
-      "sha256": "599065CD407A499BE8414FFF226C10889CA6BFE668E74A2C8E11E251D3C0D82E",
+      "sha256": "5C385FDB10336AD727D1E9D16CAA68027599C2D157BE903E549748C0294CF865",
       "source": "mat001_j2_basis_covariant_mode_projection_summary.json"
     },
     "MAT_R2_template": {
@@ -165,7 +167,7 @@
     },
     "free_sector_export": {
       "parse_error": null,
-      "sha256": "6DE89DB28C85FAA42A67E5221FB039F488F1D85E83F863693A5FEB37E648F807",
+      "sha256": "33FCD3A4AB8F8531E611DFACDD91CCB7598CF9ADE49A8279A87B5EB954D4A469",
       "source": "mat001_same_chart_quadratic_export_summary.json"
     }
   },
@@ -240,7 +242,7 @@
     ]
   },
   "physics_pass": false,
-  "scientific_boundary": "A PASS declares the Conditional S_int form, derives IR-template d,h that recover |V| in the single-field chart, and proves that those covectors are not yet exportable into the live free-sector UVIR chart. It does not compute numeric V or K_Q, does not paste IR templates into the free-sector bundle, and does not authorize MAT, UVIR or downstream physics claims.",
+  "scientific_boundary": "A PASS declares the Conditional S_int form, derives IR-template d,h that recover signed g_can=-V in the oriented single-field chart, and proves that those covectors are not yet exportable into the live free-sector UVIR chart. It does not compute numeric V or K_Q, does not paste IR templates into the free-sector bundle, and does not authorize MAT, UVIR or downstream physics claims.",
   "serial_next": "Either complete a live force-sector quadratic with declared S_int and extract d,h there, or declare a justified map from the live UVIR fields onto the IR force phonon and re-export the full same-chart K,C,B,d,h bundle; then resolve Mv and select u.",
   "stage": "S_INT_DH_DECLARATION_AND_PLACEMENT",
   "stage4A_status": "CLOSED",

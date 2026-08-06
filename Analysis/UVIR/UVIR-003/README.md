@@ -527,3 +527,8 @@ violation, strong-coupling scale, or physical cutoff.
 
 The next required calculation is to identify a controlled real-pole,
 adiabatic exchange domain and project the verified cubic and quartic kernels
+onto it.
+
+## MAT-001 R1-R4 interface remediation - 2026-08-07
+
+The post-alpha.12 MAT evidence interface now uses the corrected ADM-to-J2 sign bridge, a source-backed parent-action audit, a scoped covariant conformal matter action, and a signed orientation-anchored canonical residue. These are interface and derivation-method advances only. They do not provide a numerical `C_m`, derive `K_Q`, compute `V`, assemble the live joined physical mode, or close the UVIR physical cubic/cutoff programme. The executable Tier-1 audit therefore remains `HOLD_TIER1_CLOSURE_RETAINED` with Stage 4A closed. See the [MAT Tier-1 R1-R4 remediation addendum](../../../Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md).

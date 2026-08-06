@@ -73,6 +73,7 @@ def admissible_coefficients(z_phi: Any, f_phi: Any, g_phi: Any) -> bool:
         all(math.isfinite(value) for value in (z_value, f_value, g_value))
         and z_value > 0.0
         and f_value > 0.0
+        and g_value != 0.0
     )
 
 
@@ -93,10 +94,15 @@ def negative_controls() -> list[dict[str, Any]]:
         ("zero_Z_phi_rejected", not admissible_coefficients(0.0, 1.0, 1.0)),
         ("negative_Z_phi_rejected", not admissible_coefficients(-1.0, 1.0, 1.0)),
         ("zero_chart_scale_rejected", not admissible_coefficients(1.0, 0.0, 1.0)),
+        ("zero_matter_coefficient_rejected", not admissible_coefficients(1.0, 1.0, 0.0)),
+        ("negative_matter_coefficient_admitted", admissible_coefficients(1.0, 1.0, -1.0)),
         ("nonfinite_coefficient_rejected", not admissible_coefficients(1.0, 1.0, float("nan"))),
         ("boolean_coefficient_rejected", not admissible_coefficients(True, 1.0, 1.0)),
     ]
-    return [{"case": name, "ok": rejected, "rejected": rejected} for name, rejected in cases]
+    return [
+        {"case": name, "ok": observed, "expected_behavior_observed": observed}
+        for name, observed in cases
+    ]
 
 
 def main() -> None:
@@ -106,7 +112,7 @@ def main() -> None:
     z_phi, f_phi, r, s = sp.symbols(
         "Z_phi f_phi r s", positive=True, finite=True
     )
-    g_phi = sp.symbols("g_phi", real=True, finite=True)
+    g_phi = sp.symbols("g_phi", real=True, finite=True, nonzero=True)
 
     # Parent chart: L_kin = Z_phi/2 (U.grad phi)^2 and L_int = -g_phi rho_b phi.
     # IR chart definition psi = f_phi*phi implies phi = psi/f_phi.
@@ -152,6 +158,11 @@ def main() -> None:
         {"name": "parent_field_rescaling_covariance", "ok": sp.simplify(v_parent_prime - v_parent) == 0},
         {"name": "IR_chart_rescaling_covariance", "ok": sp.simplify(v_ir_prime - v_ir) == 0},
         {"name": "canonical_source_residue_equals_V", "ok": sp.simplify(canonical_source_residue - v_parent) == 0},
+        {
+            "name": "field_orientation_reversal_flips_signed_residue",
+            "ok": sp.simplify(v_parent.subs(g_phi, -g_phi) + v_parent) == 0,
+            "orientation_rule": "phi_or_mode -> -(phi_or_mode) implies V_signed -> -V_signed",
+        },
         {"name": "negative_controls_fail_closed", "ok": all(row["ok"] for row in negatives), "cases": negatives},
         {"name": "claim_firewall", "ok": all(value is False for value in firewall.values()), "flags": firewall},
     ]
@@ -182,7 +193,9 @@ def main() -> None:
             "induced_K_Q": str(k_q),
             "induced_C_m": str(c_m),
             "invariant_V": str(v_ir),
+            "signed_invariant_V": str(v_ir),
             "canonical_source_residue": str(canonical_source_residue),
+            "orientation_anchor": "parent field phi and IR field psi have aligned positive orientation because f_phi>0",
         },
         "field_rescaling_covariance": {
             "parent_chart": {
@@ -197,6 +210,7 @@ def main() -> None:
                 "C_m_prime": str(c_m_prime),
                 "V_prime": str(v_ir_prime),
             },
+            "scope": "r>0 and s>0 are orientation-preserving; an orientation reversal flips the signed residue",
         },
         "unmatched_physical_inputs": [
             "Z_phi from a declared microscopic parent action",

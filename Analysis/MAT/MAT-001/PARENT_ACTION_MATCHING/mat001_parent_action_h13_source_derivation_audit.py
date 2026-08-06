@@ -117,6 +117,30 @@ def add_check(
     checks.append({"name": name, "ok": bool(ok), **details})
 
 
+def line_attestations(text: str | None, needles: tuple[str, ...]) -> list[dict[str, Any]]:
+    if text is None:
+        return []
+    rows = []
+    for line_number, line in enumerate(text.splitlines(), start=1):
+        if any(needle in line for needle in needles):
+            rows.append({"line": line_number, "text": line.strip()})
+    return rows
+
+
+def source_absence_supported(sources: dict[str, Any]) -> bool:
+    accepted = {
+        "FORM_ONLY_NO_PARENT_COEFFICIENT_DERIVATION",
+        "EXPLICIT_NOT_DERIVED",
+        "PARAMETRIC_CANDIDATE_NOT_MAPPED_TO_PARENT_VERTEX",
+        "EXPLICIT_INCOMPLETE_NO_BOUND",
+        "CONDITIONAL_HOST_FORM_ONLY",
+    }
+    return bool(sources) and all(
+        row.get("assessment") in accepted and row.get("source_backed") is True
+        for row in sources.values()
+    )
+
+
 def audit_sources(
     arch: str | None,
     master: str | None,
@@ -142,15 +166,15 @@ def audit_sources(
                 "form C_obs = C_m^{3/2}/sqrt(C_IR)",
                 "optional convention C_m = C_IR = C (not a derivation of C_m)",
             ],
-            "derives_numeric_Z_phi": False,
-            "derives_numeric_g_phi": False,
-            "derives_numeric_C_m": False,
-            "derives_numeric_K_Q": False,
             "evidence": {
                 "has_C_m_rho_b_psi": bool(arch and "C_m" in arch and "rho_b" in arch),
                 "has_C_obs_form": bool(arch and "C_obs" in arch),
                 "has_Z_phi": bool(arch and "Z_phi" in arch),
                 "has_g_phi": bool(arch and "g_phi" in arch),
+                "form_lines": line_attestations(
+                    arch,
+                    ("-C_m rho_b psi", "C_obs = C_m^(3/2) / sqrt(C_IR)"),
+                ),
             },
         },
         "master_plan_MAT": {
@@ -159,10 +183,6 @@ def audit_sources(
                 "MAT-001 goal V = C_m/sqrt(K_Q)",
                 "Conditional empirical C_obs ~ 1 until MAT computes otherwise",
             ],
-            "derives_numeric_Z_phi": False,
-            "derives_numeric_g_phi": False,
-            "derives_numeric_C_m": False,
-            "derives_numeric_K_Q": False,
             "evidence": {
                 "mentions_C_obs_hypothesis": bool(
                     master
@@ -173,6 +193,9 @@ def audit_sources(
                         or "Cobs" in master
                     )
                 ),
+                "explicit_status_lines": line_attestations(
+                    master, ("NOT_COMPUTED", "NOT_DERIVED")
+                ),
             },
         },
         "j1_joint_action_template": {
@@ -181,10 +204,6 @@ def audit_sources(
                 "structural V = g_phi/sqrt(Z_phi) = C_m/sqrt(K_Q)",
                 "lists unmatched Z_phi and g_phi as open inputs",
             ],
-            "derives_numeric_Z_phi": False,
-            "derives_numeric_g_phi": False,
-            "derives_numeric_C_m": False,
-            "derives_numeric_K_Q": False,
             "evidence": {
                 "subgate": (j1 or {}).get("subgate_status"),
                 "V_status": (j1 or {}).get("V_status"),
@@ -197,10 +216,6 @@ def audit_sources(
                 "tests minimally kinetic complex scalar vs Y^{3/2} origin",
                 "does not supply force-phonon Z_phi/g_phi matching",
             ],
-            "derives_numeric_Z_phi": False,
-            "derives_numeric_g_phi": False,
-            "derives_numeric_C_m": False,
-            "derives_numeric_K_Q": False,
             "evidence": {
                 "validation_status": (uvir001 or {}).get("validation_status"),
                 "candidate_verdict": (uvir001 or {}).get("candidate_verdict"),
@@ -215,10 +230,6 @@ def audit_sources(
                 "missing Z_psi, rho_Phi, r_rho",
                 "no rigorous bound on Z_psi r_rho",
             ],
-            "derives_numeric_Z_phi": False,
-            "derives_numeric_g_phi": False,
-            "derives_numeric_C_m": False,
-            "derives_numeric_K_Q": False,
             "evidence": {
                 "classification": (r3 or {}).get("classification"),
                 "rigorous_bound": ((r3 or {}).get("provenance") or {}).get(
@@ -234,13 +245,11 @@ def audit_sources(
                 "form d = -C_m on host",
                 "no absolute Z_phi or g_phi",
             ],
-            "derives_numeric_Z_phi": False,
-            "derives_numeric_g_phi": False,
-            "derives_numeric_C_m": False,
-            "derives_numeric_K_Q": False,
             "evidence": {
                 "force_subgate": (track_a or {}).get("subgate_status"),
                 "s_int_status": (s_int or {}).get("S_int_status"),
+                "s_int_V_status": (s_int or {}).get("V_status"),
+                "s_int_kq_status": (s_int or {}).get("kq_numeric_status"),
                 "K_Q_in_force_L": "K_Q"
                 in str(
                     ((track_a or {}).get("symbolic_audit") or {})
@@ -255,10 +264,6 @@ def audit_sources(
                 "selected route PARENT_ACTION_Z_phi_g_phi_TO_TRACK_A",
                 "inventory: NOT_DERIVED_NUMERIC_ABSENT",
             ],
-            "derives_numeric_Z_phi": False,
-            "derives_numeric_g_phi": False,
-            "derives_numeric_C_m": False,
-            "derives_numeric_K_Q": False,
             "evidence": {
                 "matching_status": (h12 or {}).get("matching_status"),
                 "micro_status": ((h12 or {}).get("repo_inventory") or {}).get(
@@ -267,17 +272,91 @@ def audit_sources(
             },
         },
     }
-
-    any_derived = any(
-        row["derives_numeric_Z_phi"]
-        or row["derives_numeric_g_phi"]
-        or row["derives_numeric_C_m"]
-        or row["derives_numeric_K_Q"]
-        for row in sources.values()
-    )
     rigorous_bound = ((r3 or {}).get("provenance") or {}).get(
         "rigorous_bound_Z_psi_r_rho_found"
     )
+
+    arch_e = sources["architecture_weak_field"]["evidence"]
+    master_e = sources["master_plan_MAT"]["evidence"]
+    j1_e = sources["j1_joint_action_template"]["evidence"]
+    uvir_e = sources["uvir001_minimally_kinetic_scalar"]["evidence"]
+    r3_e = sources["r3_uv_residue"]["evidence"]
+    track_e = sources["track_a_force_and_s_int"]["evidence"]
+    h12_e = sources["h12_declaration"]["evidence"]
+
+    unmatched = j1_e.get("unmatched") or []
+    unmatched_text = " ".join(str(value) for value in unmatched)
+    uvir_scope = str(uvir_e.get("verdict_scope") or "").lower()
+    assessments = {
+        "architecture_weak_field": (
+            "FORM_ONLY_NO_PARENT_COEFFICIENT_DERIVATION"
+            if arch_e.get("has_C_m_rho_b_psi") is True
+            and arch_e.get("has_C_obs_form") is True
+            and len(arch_e.get("form_lines") or []) >= 2
+            and arch_e.get("has_Z_phi") is False
+            and arch_e.get("has_g_phi") is False
+            else "UNCLASSIFIED_ARCHITECTURE_SOURCE"
+        ),
+        "master_plan_MAT": (
+            "EXPLICIT_NOT_DERIVED"
+            if master_e.get("mentions_C_obs_hypothesis") is True
+            and len(master_e.get("explicit_status_lines") or []) >= 2
+            else "UNCLASSIFIED_MASTER_PLAN_SOURCE"
+        ),
+        "j1_joint_action_template": (
+            "EXPLICIT_NOT_DERIVED"
+            if j1_e.get("V_status") == "NOT_COMPUTED"
+            and "Z_phi" in unmatched_text
+            and "g_phi" in unmatched_text
+            else "DERIVATION_CLAIM_PRESENT_REQUIRES_REVIEW"
+        ),
+        "uvir001_minimally_kinetic_scalar": (
+            "PARAMETRIC_CANDIDATE_NOT_MAPPED_TO_PARENT_VERTEX"
+            if uvir_e.get("candidate_verdict") == "FAIL"
+            and "does not generate" in uvir_scope
+            else "UNCLASSIFIED_UVIR001_SOURCE"
+        ),
+        "r3_uv_residue": (
+            "EXPLICIT_INCOMPLETE_NO_BOUND"
+            if r3_e.get("classification") == "INCOMPLETE_R3_UV_RESIDUE"
+            and r3_e.get("rigorous_bound") is False
+            else "DERIVATION_CLAIM_PRESENT_REQUIRES_REVIEW"
+        ),
+        "track_a_force_and_s_int": (
+            "CONDITIONAL_HOST_FORM_ONLY"
+            if track_e.get("s_int_status")
+            == "EMBEDDED_CONDITIONAL_ON_TRACK_A_HOST"
+            and track_e.get("s_int_V_status") == "NOT_COMPUTED"
+            and track_e.get("s_int_kq_status") == "NOT_DERIVED"
+            else "UNCLASSIFIED_TRACK_A_SOURCE"
+        ),
+        "h12_declaration": (
+            "EXPLICIT_NOT_DERIVED"
+            if h12_e.get("matching_status") == "DECLARED_INCOMPLETE"
+            and h12_e.get("micro_status") == "NOT_DERIVED_NUMERIC_ABSENT"
+            else "DERIVATION_CLAIM_PRESENT_REQUIRES_REVIEW"
+        ),
+    }
+    for source_name, row in sources.items():
+        assessment = assessments[source_name]
+        row["assessment"] = assessment
+        row["source_backed"] = not assessment.startswith("UNCLASSIFIED_")
+
+    all_sources_classified = all(
+        not assessment.startswith("UNCLASSIFIED_")
+        for assessment in assessments.values()
+    )
+    absence_supported = source_absence_supported(sources)
+    any_derived = any(
+        assessment == "DERIVATION_CLAIM_PRESENT_REQUIRES_REVIEW"
+        for assessment in assessments.values()
+    )
+    if any_derived:
+        verdict = "SOURCE_CLAIM_PRESENT_REQUIRES_DERIVATION_REVIEW"
+    elif not all_sources_classified:
+        verdict = "HOLD_UNCLASSIFIED_DECLARED_SOURCE"
+    else:
+        verdict = "INCOMPLETE_NO_Z_phi_g_phi_FROM_DECLARED_SOURCES"
 
     research_requirements = [
         {
@@ -338,8 +417,10 @@ def audit_sources(
         },
         "source_audits": sources,
         "any_numeric_coefficient_derived": any_derived,
+        "all_sources_classified": all_sources_classified,
+        "source_absence_supported": absence_supported,
         "rigorous_bound_Z_psi_r_rho_found": bool(rigorous_bound),
-        "derivation_verdict": "INCOMPLETE_NO_Z_phi_g_phi_FROM_DECLARED_SOURCES",
+        "derivation_verdict": verdict,
         "research_requirements_frozen": research_requirements,
     }
 
@@ -352,12 +433,16 @@ def build_summary(
     sources = audit["source_audits"]
     add_check(
         checks,
-        "no_source_derives_numeric_Z_phi_or_g_phi",
+        "declared_sources_support_absence_verdict",
         audit["any_numeric_coefficient_derived"] is False
-        and all(
-            not s["derives_numeric_Z_phi"] and not s["derives_numeric_g_phi"]
-            for s in sources.values()
-        ),
+        and audit["source_absence_supported"] is True
+        and source_absence_supported(sources),
+    )
+    add_check(
+        checks,
+        "all_declared_sources_classified",
+        audit["all_sources_classified"] is True
+        and all(row.get("source_backed") is True for row in sources.values()),
     )
     add_check(
         checks,
@@ -447,7 +532,7 @@ def build_summary(
             "honest_incompleteness_acceptable_for_peer_review": True,
             "blocks_H2_H3": True,
             "reason": (
-                "No declared source derives absolute Z_phi or g_phi; Stage 4A "
+                "Source-backed attestations find no absolute Z_phi or g_phi derivation; Stage 4A "
                 "and Derived V remain blocked by plan."
             ),
         },
@@ -468,8 +553,8 @@ def build_summary(
         "n_checks": len(checks),
         "claim_firewall": firewall,
         "scientific_boundary": (
-            "A PASS means H1.3 audited all named declared sources for a parent "
-            "Z_phi/g_phi derivation and found none. Research requirements are "
+            "A PASS means H1.3 classified source-backed attestations from every "
+            "named declared source and found no Z_phi/g_phi derivation. Requirements are "
             "frozen for peer review. This does not compute V, derive K_Q, or "
             "reopen Stage 4A."
         ),
@@ -559,6 +644,20 @@ def mutation_suite(summary: dict[str, Any]) -> None:
         mutant = copy.deepcopy(summary)
         mutant["claim_firewall"][key] = True
         require(mutant["claim_firewall"][key] is True, key)
+    assessment_mutant = copy.deepcopy(summary)
+    assessment_mutant["source_audits"]["h12_declaration"]["assessment"] = (
+        "DERIVATION_CLAIM_PRESENT_REQUIRES_REVIEW"
+    )
+    require(
+        source_absence_supported(assessment_mutant["source_audits"]) is False,
+        "source assessment mutation must invalidate absence verdict",
+    )
+    backing_mutant = copy.deepcopy(summary)
+    backing_mutant["source_audits"]["master_plan_MAT"]["source_backed"] = False
+    require(
+        source_absence_supported(backing_mutant["source_audits"]) is False,
+        "unbacked source mutation must invalidate absence verdict",
+    )
     require(
         summary["derivation_verdict"]
         == "INCOMPLETE_NO_Z_phi_g_phi_FROM_DECLARED_SOURCES",
