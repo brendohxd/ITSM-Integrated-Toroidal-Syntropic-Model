@@ -1,6 +1,13 @@
 # ITSM Changelog & Archive History
 
 
+## Recovery branch - MAT Track-A host K_Q readiness (2026-08-06)
+
+### UVIR-to-MAT critical path
+- **Symbolic host \(K\):** Exported Track-A time-kinetic coefficient as symbolic \(K_Q\) with on-host \(V\) form identity and rescaling covariance.
+- **Numeric firewall:** Confirmed \(K_Q\) remains `NOT_DERIVED` across inventories; rejected Conditional dimensional estimates as Derived.
+- **Subgate:** `PASS_MAT001_TRACK_A_KQ_SYMBOLIC_HOST_NUMERIC_BLOCKED`; \(V\) still `NOT_COMPUTED`; MAT blocked; Stage 4A closed.
+
 ## Recovery branch - MAT Track-A S_int embed (2026-08-06)
 
 ### UVIR-to-MAT critical path

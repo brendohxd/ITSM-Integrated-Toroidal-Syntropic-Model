@@ -88,13 +88,14 @@ This does **not** unblock MAT; it makes the MAT target quantity explicit.
 | \(S_{\rm int}\) + \(d,h\) placement | Conditional form \(-C_m\rho_b\psi\) declared; IR \(d=(-C_m)\), \(h=\emptyset\) recover \(\lvert V\rvert\) | Live free-sector chart lacks force field \(\psi\); live UVIR \(d,h\) remain `NOT_EXPORTED` |
 | Force hosting readiness | Five host routes inventoried; Track-A has force without matter; full ADM force completion blocked | Inventory stage: no host selected until the Track-A embed checkpoint |
 | Track-A \(S_{\rm int}\) embed | Track-A selected Conditional; \(d=(-C_m)\), \(h=(0,0)\) exported on host; \(\lvert V\rvert\) form recovered with symbolic \(K_Q\) | Numeric \(K_Q\)/`V` not derived; free-sector join not declared; MAT still blocked |
+| Track-A \(K_Q\) readiness | Host time-kinetic \(K_Q\) exported symbolically; on-host \(V\) form + rescaling identity hold | Numeric \(K_Q\) still `NOT_DERIVED`; Conditional dimensional estimate rejected as Derived |
 
 Subgates include
-`PASS_MAT001_FORCE_HOSTING_READINESS_BLOCKED` and
-`PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL`. All preserve \(V\) as
+`PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL` and
+`PASS_MAT001_TRACK_A_KQ_SYMBOLIC_HOST_NUMERIC_BLOCKED`. All preserve \(V\) as
 `NOT_COMPUTED`, `mat001_pass: false`, `physics_pass: false`, UVIR-003
-`IN_PROGRESS`, and Stage 4A closed. Matter-channel \(d,h\) now exist on the
-Track-A Conditional host, but numeric matching and multi-sector joins remain open.
+`IN_PROGRESS`, and Stage 4A closed. Host chart, \(d,h\) and symbolic \(K\) are
+in place; numeric matching remains open.
 
 ## MAT-001 open checklist (when unblocked)
 

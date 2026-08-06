@@ -1,0 +1,311 @@
+{
+  "V_form_status": "ON_HOST_IDENTITY_HOLDS_SYMBOLICALLY",
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Derive numeric K_Q from a microscopic/matching argument on the Track-A host, or compute an invariant on-shell residue V without quoting bare K_Q.",
+    "If using a Conditional ansatz (e.g. dimensional R1), label it Conditional only and never as Derived.",
+    "Numeric C_m remains form-level (-C_m from d); independent coefficient matching is still required for absolute V if both C_m and K_Q are unknown.",
+    "Keep Stage 4A closed until a matched invariant exists; do not issue MAT physics PASS."
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "track_a_s_int_embed_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "track_a_force_quadratic_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "kq_inventory_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "matching_program_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "conditional_kq_estimate_not_derivation",
+      "ok": true
+    },
+    {
+      "name": "v_kinetic_inventory_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "j1_identity_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "track_a_s_int_embed_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_force_adm_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "kq_matching_inventory_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "matching_route_program_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "conditional_kq_estimate_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "v_kinetic_inventory_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "j1_identity_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "host_K_symbolic_exported",
+      "ok": true
+    },
+    {
+      "name": "on_host_V_form_and_rescaling_identity",
+      "ok": true
+    },
+    {
+      "name": "numeric_K_Q_still_not_derived_across_sources",
+      "ok": true
+    },
+    {
+      "name": "conditional_estimate_rejected_as_Derived",
+      "ok": true
+    },
+    {
+      "name": "progress_scorecard_partial_only",
+      "ok": true
+    },
+    {
+      "flags": {
+        "claims_MAT_pass": false,
+        "claims_UVIR_pass": false,
+        "claims_downstream_Derived": false,
+        "conditional_estimate_promoted_Derived": false,
+        "host_K_symbolic_exported": true,
+        "numeric_K_Q_derived": false,
+        "numeric_V_computed": false,
+        "numeric_matching_ready": false,
+        "on_host_V_form_ready": true,
+        "physics_pass": false,
+        "stage4A_reopened": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "claims_MAT_pass": false,
+    "claims_UVIR_pass": false,
+    "claims_downstream_Derived": false,
+    "conditional_estimate_promoted_Derived": false,
+    "host_K_symbolic_exported": true,
+    "numeric_K_Q_derived": false,
+    "numeric_V_computed": false,
+    "numeric_matching_ready": false,
+    "on_host_V_form_ready": true,
+    "physics_pass": false,
+    "stage4A_reopened": false
+  },
+  "evidence": {
+    "conditional_kq_estimate": {
+      "parse_error": null,
+      "sha256": "0B1EE00860723B7246BB18C0A4C73E08984B82FA71759D09C7624002E79A5C04",
+      "source": "uvir003_conditional_kq_estimate_summary.json"
+    },
+    "j1_identity": {
+      "parse_error": null,
+      "sha256": "D3347CA262861F685FB348FB813C776D8F6CFE00AA9F1A707774BF232C83159F",
+      "source": "mat001_j1_joint_action_normalization_summary.json"
+    },
+    "kq_matching_inventory": {
+      "parse_error": null,
+      "sha256": "17BB1162B22B524A615B8FCD2BEEAAA6A70AC20BCEC9F2FE1FF4CB784487D91E",
+      "source": "uvir003_kq_matching_inventory_summary.json"
+    },
+    "matching_route_program": {
+      "parse_error": null,
+      "sha256": "41C936A6910318460BA8728BEEAF3B7E6D3E768EE523C8371DF8921F4CE4F9A9",
+      "source": "uvir003_matching_route_program_summary.json"
+    },
+    "track_a_force_adm": {
+      "parse_error": null,
+      "sha256": "6A829A1CC05BF0B4B7F4F6044689580D740E4A6AD24857C85A9A474DF3A10A62",
+      "source": "uvir003_track_a_force_adm_cubic_summary.json"
+    },
+    "track_a_s_int_embed": {
+      "parse_error": null,
+      "sha256": "EB4D07370A7FD007C68051FFD0A10E03BB0770AE957826128283C25C90E519C8",
+      "source": "mat001_track_a_s_int_embed_summary.json"
+    },
+    "v_kinetic_inventory": {
+      "parse_error": null,
+      "sha256": "27F4A154A40CE1506D3C5803E4FCEADB87505629CAF2D35B4ADB9E79A21E3985",
+      "source": "mat001_v_kinetic_chart_inventory_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "host_K_export_status": "SYMBOLIC_HOST_COEFFICIENT_EXPORTED",
+  "host_time_kinetic": {
+    "K_coefficient": "K_Q",
+    "L_time_quadratic": "K_Q * pi_dot**2 / 2",
+    "chart": "Track-A force host; physical density for pi_dot",
+    "export_status": "SYMBOLIC_HOST_COEFFICIENT_EXPORTED",
+    "numeric_status": "NOT_DERIVED",
+    "provenance": "uvir003_track_a_force_adm_cubic verified quadratic_force_density"
+  },
+  "inadmissible_substitutions": {
+    "C_obs_alone_as_K_Q": "REJECTED_STRUCTURAL_THEOREM",
+    "conditional_kq_estimate_as_Derived": "REJECTED_SPECULATIVE_NOT_A_DERIVATION",
+    "naive_k_Q_equals_1_as_matching": "REJECTED_UNFIXED_WILSON_COEFFICIENT",
+    "symbolic_V_form_as_numeric_V": "REJECTED_NOT_COMPUTED"
+  },
+  "interface": "TRACK_A_HOST_KQ",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "mode_u_single_field": {
+    "direction": [
+      "1"
+    ],
+    "note": "On a one-dimensional force fluctuation chart, mode selection is the unit direction in pi; this is not free-sector multi-mode selection and does not by itself yield numeric V.",
+    "status": "TRIVIAL_SINGLE_FIELD_HOST_DIRECTION"
+  },
+  "n_checks": 20,
+  "numeric_matching_status": "BLOCKED_NUMERIC_K_Q_OR_RESIDUE_REQUIRED",
+  "numeric_route_inventory": {
+    "conditional_dimensional_estimate": {
+      "admissible_as_Derived": false,
+      "reason": "SPECULATIVE_NOT_A_DERIVATION / Conditional dimensional analogy; premises unconfirmed; must not be promoted to host K_Q Derived",
+      "status": "SPECULATIVE_NOT_A_DERIVATION"
+    },
+    "matching_routes_from_inventory": [
+      {
+        "does_not_fix": [
+          "k_Q",
+          "C_IR",
+          "physical cutoff alone"
+        ],
+        "id": "R1_dimensional_MP_a0",
+        "name": "Dimensional analogy K_Q = k_Q M_P^2",
+        "priority": "baseline candidate; must not be cited as Derived",
+        "status": "Conditional"
+      },
+      {
+        "does_not_fix": [
+          "anything until UVIR-003 admits a force sector ready for MAT"
+        ],
+        "id": "R2_matter_vertex_MAT001",
+        "name": "Matter\u2013force vertex matching (MAT-001)",
+        "priority": "canonical long-term route per Master Plan critical path",
+        "status": "Open"
+      },
+      {
+        "does_not_fix": [
+          "IR-only bottom-up EFT without UV data"
+        ],
+        "id": "R3_condensate_microscopic",
+        "name": "UV condensate / microscopic completion",
+        "priority": "research-open; dig-harder option under identity pillars",
+        "status": "Open"
+      },
+      {
+        "does_not_fix": [
+          "absolute A q / K_Q causality ratio alone"
+        ],
+        "id": "R4_regulator_k_cross",
+        "name": "Regulator crossover matching \u03b3, M_*, K_Q",
+        "priority": "secondary; does not replace A q / K_Q matching",
+        "status": "Open"
+      },
+      {
+        "does_not_fix": [
+          "K_Q without additional dynamical input"
+        ],
+        "id": "R5_observational_IR_baseline",
+        "name": "Conditional IR baseline (AQUAL-class) as external anchor",
+        "priority": "phenomenology anchor only; not a K_Q derivation",
+        "status": "Conditional"
+      }
+    ],
+    "numeric_K_Q_status_consensus": {
+      "all_NOT_DERIVED": true,
+      "kq_matching_inventory": "NOT_DERIVED",
+      "matching_route_program": "NOT_DERIVED",
+      "v_kinetic_chart_inventory": "NOT_DERIVED"
+    },
+    "still_open_after_track_a_embed": [
+      "Numeric value of K_Q on the Track-A host",
+      "Numeric value of C_m (d exports the form -C_m only)",
+      "Numeric V",
+      "Joined free-force B,C dressing with matter d,h if required"
+    ],
+    "what_would_derive_numeric_K_Q": [
+      "Microscopic parent kinetic coefficient Z_phi (or Z_psi) with a declared map to Track-A K_Q",
+      "Independent fixing of C_m and an invariant residue measurement of V, then K_Q=C_m^2/V^2",
+      "A declared Conditional ansatz (e.g. R1 k_Q M_P^2) labeled Conditional only, never Derived"
+    ]
+  },
+  "on_host_V_form": {
+    "K": "K_Q",
+    "V_definition": "C_m/sqrt(K_Q)",
+    "abs_g_can": "Abs(d)/sqrt(K)",
+    "d": "-C_m",
+    "identity_holds_symbolically": true,
+    "numeric_V_status": "NOT_COMPUTED",
+    "rescaling_covariance_holds": true
+  },
+  "physics_pass": false,
+  "progress_scorecard": {
+    "S_int_embedded_on_host": true,
+    "chart_selected": true,
+    "d_h_exported_on_host": true,
+    "host_K_symbolic_exported": true,
+    "host_V_form_identity": true,
+    "mat001_pass_ready": false,
+    "numeric_C_m": false,
+    "numeric_K_Q": false,
+    "numeric_V": false,
+    "stage4A_reopen_ready": false
+  },
+  "required_for_numeric_V": [
+    {
+      "item": "Host chart and S_int / d,h",
+      "status": "COMPLETE_CONDITIONAL_TRACK_A"
+    },
+    {
+      "item": "Symbolic host time-kinetic coefficient K_Q",
+      "status": "EXPORTED_SYMBOLIC"
+    },
+    {
+      "item": "Numeric C_m (or equivalent residue input)",
+      "status": "NOT_DERIVED_FORM_ONLY"
+    },
+    {
+      "item": "Numeric K_Q (or direct on-shell V)",
+      "status": "NOT_DERIVED"
+    }
+  ],
+  "scientific_boundary": "A PASS exports the Track-A host time-kinetic coefficient as symbolic K_Q, proves the on-host V form and its rescaling invariance, and shows numeric K_Q remains NOT_DERIVED across matching inventories. It rejects Conditional dimensional estimates as Derived and does not compute numeric V, reopen Stage 4A, or authorize MAT/UVIR physics PASS.",
+  "serial_next": "Pursue a real K_Q derivation path (microscopic Z_phi/Z_psi map, or independent C_m plus residue V), or open an explicitly labeled Conditional matching branch without Derived packaging; keep dual status for any Conditional numeric probe.",
+  "stage": "TRACK_A_KQ_READINESS",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_TRACK_A_KQ_SYMBOLIC_HOST_NUMERIC_BLOCKED",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

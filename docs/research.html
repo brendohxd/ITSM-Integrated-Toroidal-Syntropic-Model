@@ -56,7 +56,7 @@
         <article class="status-card" data-state="red">
           <span class="status-key">MAT-001</span>
           <strong class="status-value">Blocked</strong>
-          <p>Track-A Conditional host embeds <code>S_int</code> with host <code>d,h</code>; free-sector join and numeric <code>K_Q</code>/<code>V</code> remain open. MAT physics PASS stays closed.</p>
+          <p>Track-A Conditional host kit complete (<code>S_int</code>, <code>d,h</code>, symbolic <code>K_Q</code>, on-host <code>V</code> form); numeric <code>K_Q</code>/<code>V</code> still open. MAT physics PASS stays closed.</p>
         </article>
         <article class="status-card" data-state="amber">
           <span class="status-key">Downstream</span>
@@ -69,10 +69,10 @@
         <p class="rule-quote">UVIR-003 → MAT-001 → SCR/LEN → DISK-001 → STAT-001 → full P4</p>
         <p>
           Recovery has moved beyond architecture repair into live action matching.
-          Free-sector <code>K,C</code> and Track-A Conditional matter-channel
-          <code>d,h</code> are executable. Numeric matching still requires host
-          <code>K_Q</code> (or an invariant residue) and any multi-sector join must
-          be declared; Stage 4A and MAT physics PASS remain closed.
+          Track-A Conditional host exports <code>d,h</code> and symbolic
+          <code>K_Q</code> with an on-host <code>V</code> form. Numeric matching still
+          requires a real <code>K_Q</code> derivation or residue; Stage 4A and MAT
+          physics PASS remain closed.
         </p>
       </div>
     </section>
@@ -206,7 +206,11 @@
             </tr>
             <tr>
               <td>MAT Track-A <code>S_int</code> embed</td>
-              <td><span class="badge badge-cond">Conditional PASS</span> host selected; matter <code>d=(-C_m)</code>, <code>h=(0,0)</code> exported; <code>|V|</code> form with symbolic <code>K_Q</code> only; free-sector not identified; <code>V</code> is NOT_COMPUTED</td>
+              <td><span class="badge badge-cond">Conditional PASS</span> host selected; matter <code>d=(-C_m)</code>, <code>h=(0,0)</code> exported; free-sector not identified</td>
+            </tr>
+            <tr>
+              <td>MAT Track-A <code>K_Q</code> readiness</td>
+              <td><span class="badge badge-cond">Symbolic PASS / numeric blocked</span> host <code>K_Q</code> exported symbolically; on-host <code>V</code> form holds; numeric <code>K_Q</code> NOT_DERIVED; Conditional estimates not Derived; <code>V</code> is NOT_COMPUTED</td>
             </tr>
             <tr>
               <td><code>K_Q</code> matching · causality</td>
@@ -258,8 +262,8 @@
         <div class="pipe-step">
           <div class="pipe-dot"></div>
           <div>
-            <h3>1 · Derive host <code>K_Q</code> or an invariant residue</h3>
-            <p>Track-A Conditional <code>d,h</code> exist. Numeric <code>V</code> still needs host <code>K_Q</code> (or on-shell residue) under explicit Conditional scope; multi-sector joins only with a declared chart.</p>
+            <h3>1 · Derive numeric <code>K_Q</code> or an invariant residue</h3>
+            <p>Symbolic host kit is complete. Numeric <code>V</code> needs a real <code>K_Q</code> derivation (or residue). Conditional dimensional probes must stay dual-status, never Derived.</p>
           </div>
         </div>
         <div class="pipe-step">

@@ -367,6 +367,14 @@ not identified with Track-A. Subgate:
 `PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL`. See
 `Theory/Gates/MAT-001/MAT-001_TRACK_A_S_INT_EMBED.md`.
 
+### Track-A host \(K_Q\) readiness - 2026-08-06
+
+Host time-kinetic \(K_Q\) is exported symbolically and the on-host \(V\) form
+holds with rescaling covariance. Numeric \(K_Q\) remains `NOT_DERIVED`; the
+Conditional dimensional estimate stays non-Derived. Subgate:
+`PASS_MAT001_TRACK_A_KQ_SYMBOLIC_HOST_NUMERIC_BLOCKED`. See
+`Theory/Gates/MAT-001/MAT-001_TRACK_A_KQ_READINESS.md`.
+
 Authoritative process detail:
 `Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md` and
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_STAGE5_FULL_GATE_DECISION.md`.

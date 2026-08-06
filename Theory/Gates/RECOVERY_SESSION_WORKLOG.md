@@ -1270,6 +1270,23 @@ cutoff-method correction only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` with
 `physics_pass: false`; no preferred shear, modulus dynamics, Casimir result,
 twisted-boundary preference, cosmology, Derived claim or frozen release follows.
 
+## 2026-08-06 - MAT-001 Track-A host K_Q readiness
+
+Gate: MAT-001 (post-embed kinetic readiness)
+
+**What changed:** exported Track-A host time-kinetic coefficient as symbolic
+\(K_Q\); proved on-host \(\lvert d\rvert/\sqrt{K}=C_m/\sqrt{K_Q}\) with field
+rescaling covariance; confirmed numeric \(K_Q\) remains `NOT_DERIVED` across
+matching inventories; rejected the Conditional dimensional \(K_Q\) estimate as
+Derived.
+
+**Decision:** accept
+`PASS_MAT001_TRACK_A_KQ_SYMBOLIC_HOST_NUMERIC_BLOCKED`. Symbolic host kit is
+complete; numeric \(V\) still blocked. Stage 4A closed; MAT blocked.
+
+**What was abandoned:** promoting R1/`k_Q~1` Conditional estimates to Derived;
+treating the symbolic \(V\) form as numeric \(V\).
+
 ## 2026-08-06 - MAT-001 Track-A S_int embed and d,h export
 
 Gate: MAT-001 (Conditional force host selection)
