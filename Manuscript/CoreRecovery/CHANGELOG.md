@@ -5,6 +5,21 @@ root `CHANGELOG.md` records legacy project history.
 
 ## Unreleased
 
+## 12.0-alpha.12 - 2026-08-06
+
+### Dual-status post-alpha.11 boundary (status freeze, not physics closure)
+
+- Documented the dual-status post-alpha.11 recovery boundary: Tier-1 hold retained;
+  Track-A Conditional matter-channel kit and dual-status probes are methods-only;
+  $V$ remains `NOT_COMPUTED`, Stage 4A closed, MAT PASS forbidden.
+- Recorded parent-action matching incompleteness (no absolute $Z_\phi,g_\phi$ from
+  declared sources; research requirements RR1--RR5 open).
+- Updated open-gates table MAT/UVIR wording without claim promotion.
+- Integrated gate-ledger progress (handoff, J1/R2, J2 template, free-sector export,
+  force host, Conditional branch, join readiness, tier-1 hold audit) only as
+  fail-closed methods status, not Derived matching.
+- Frozen as immutable release `v12.0-alpha.12`; alpha.11 remains immutable.
+
 ### MAT-001 J2 physical-mode projection method
 
 - Added an exact constraint-dressed canonical source-projection identity and

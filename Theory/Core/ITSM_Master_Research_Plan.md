@@ -307,7 +307,7 @@ action drafts on identity pillars — only premature Derived packaging.
   4. Complete the MAT-001 checklist before any MAT PASS or downstream Derived use.
   5. Then complete DISK-001 + STAT-001 before full P3/P4 claim packaging.
   6. Continue TOP/VOR/WAK/reservoir identity work in parallel without presenting it as UVIR closure.
-  7. Keep **alpha.11** immutable. Do not freeze alpha.12 merely for structural identities; require a substantive reviewed manuscript integration without claim promotion.
+  7. Keep **alpha.11** and **alpha.12** immutable. Do not freeze alpha.13 merely for more inventories; require a substantive reviewed integration (preferably a matched invariant or peer-reviewed incompleteness advance) without claim promotion.
 
 
 Reproduce alpha.9 baseline:
