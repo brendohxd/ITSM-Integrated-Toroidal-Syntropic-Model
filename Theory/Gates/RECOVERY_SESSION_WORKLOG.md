@@ -1270,6 +1270,19 @@ cutoff-method correction only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` with
 `physics_pass: false`; no preferred shear, modulus dynamics, Casimir result,
 twisted-boundary preference, cosmology, Derived claim or frozen release follows.
 
+## 2026-08-06 - RR2 residue pathway attempt (incomplete)
+
+Gate: MAT-001 RR2
+
+**What changed:** constructed Track-A + \(S_{\rm int}\) single-field residue
+pathway; proved \(|g_{\rm can}|=V\) symbolically; confirmed no live bare-\(K_Q\)-free
+amplitude/response export; rejected \(Q_\rho,Q_\chi\) diagnostics as \(V\).
+
+**Decision:** `PASS_MAT001_RR2_RESIDUE_PATHWAY_ATTEMPTED_INCOMPLETE`. RR2 remains
+the Derived wall. Stage 4A closed; \(V\) `NOT_COMPUTED`.
+
+**What was abandoned:** using retarded-response impulses or \(K_Q=1\) to quote \(V\).
+
 ## 2026-08-06 - Plan RR2–H7 bounded completion package
 
 Gate: MAT-001 / tier-1 forward plan

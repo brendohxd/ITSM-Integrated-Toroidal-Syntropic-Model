@@ -1,6 +1,12 @@
 # ITSM Changelog & Archive History
 
 
+## Recovery branch - RR2 residue pathway attempt (2026-08-06)
+
+### Derived matching
+- **RR2 attempt:** Track-A matter-channel residue identity \(|g_{\rm can}|=V\) holds symbolically; live numeric route absent.
+- **Subgate:** `PASS_MAT001_RR2_RESIDUE_PATHWAY_ATTEMPTED_INCOMPLETE`; \(V\) still `NOT_COMPUTED`.
+
 ## Recovery branch - plan RR2–H7 bounded completion (2026-08-06)
 
 ### Tier-1 forward plan
