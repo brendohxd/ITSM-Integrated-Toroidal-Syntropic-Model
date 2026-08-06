@@ -375,6 +375,13 @@ Conditional dimensional estimate stays non-Derived. Subgate:
 `PASS_MAT001_TRACK_A_KQ_SYMBOLIC_HOST_NUMERIC_BLOCKED`. See
 `Theory/Gates/MAT-001/MAT-001_TRACK_A_KQ_READINESS.md`.
 
+### \(K_Q\) dig and Conditional dual-status branch - 2026-08-06
+
+Four numeric-\(K_Q\) derivation paths are incomplete. A dual-status Conditional
+matching branch is open for labeled probes only; Derived \(V\) and \(K_Q\) stay
+closed. Subgates: `PASS_MAT001_KQ_DERIVATION_DIG_INCOMPLETE`,
+`PASS_MAT001_CONDITIONAL_MATCHING_BRANCH_OPEN_DUAL_STATUS`.
+
 Authoritative process detail:
 `Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md` and
 `Theory/Gates/UVIR-003/UVIR-003_STAGE_B_STAGE5_FULL_GATE_DECISION.md`.

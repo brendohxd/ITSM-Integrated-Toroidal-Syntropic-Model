@@ -1,6 +1,13 @@
 # ITSM Changelog & Archive History
 
 
+## Recovery branch - MAT K_Q dig and Conditional branch (2026-08-06)
+
+### UVIR-to-MAT critical path
+- **Derivation dig:** Four numeric-\(K_Q\) paths audited; none ready; R3 incomplete; R1 not a derivation.
+- **Conditional branch:** Dual-status matching branch opened with labeled Conditional-only samples; Derived \(V\)/`K_Q` remain closed.
+- **Subgates:** `PASS_MAT001_KQ_DERIVATION_DIG_INCOMPLETE`, `PASS_MAT001_CONDITIONAL_MATCHING_BRANCH_OPEN_DUAL_STATUS`.
+
 ## Recovery branch - MAT Track-A host K_Q readiness (2026-08-06)
 
 ### UVIR-to-MAT critical path

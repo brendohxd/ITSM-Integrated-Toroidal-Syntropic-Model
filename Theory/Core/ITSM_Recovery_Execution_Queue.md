@@ -23,7 +23,9 @@ outputs remain the evidence authority.
 | P0 | Force-field hosting readiness inventory | **completed (no host ready)** | Five host routes compared; only Track-A has a force phonon and it lacks matter; full ADM force completion blocked; no live \(d,h\) host selected |
 | P0 | Track-A Conditional \(S_{\rm int}\) embed + \(d,h\) export | **completed (Conditional host)** | Track-A selected; \(S_{\rm int}=-C_m\rho_b\psi\) embedded with \(\psi=\psi_{\rm bar}+\pi\); \(d=(-C_m)\), \(h=(0,0)\) exported; free-sector still not identified; \(V\) not computed |
 | P0 | Track-A host \(K_Q\) readiness | **completed (symbolic only)** | Host \(K=K_Q\) exported symbolically; on-host \(V\) form + rescaling identity hold; numeric \(K_Q\) still `NOT_DERIVED`; Conditional estimate rejected as Derived |
-| P0 | Numeric \(V\) / joined multi-sector matching | **blocked by numeric \(K_Q\) (or residue) + optional join** | Requires real \(K_Q\) derivation or invariant residue; optional free-force \(B,C\) join only if declared; no Stage 4A; no MAT physics PASS |
+| P0 | \(K_Q\) microscopic derivation dig | **completed (incomplete)** | P1–P4 paths checked; none ready for numeric \(K_Q\); R3 remains incomplete; R1 not a derivation |
+| P0 | Conditional matching branch (dual status) | **completed (open Conditional)** | Branch open with labeled Conditional samples; Derived \(V\)/`K_Q` stay closed; Stage 4A closed |
+| P0 | Numeric Derived \(V\) / Stage 4A | **blocked** | Still requires real \(K_Q\) or residue derivation; Conditional probes are not substitutes |
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; C2 calculation priority is not identity selection |
 | P1 | RES R1/R2/R3 constitutive-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; R0 remains control and R1 is not activated |
 | P1 | VOR-to-UVIR parent-identity interface inventory | **completed** | Shared polar convention noted; action identification held undeclared; no resonance/force packaging; `physics_pass: false` |

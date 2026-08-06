@@ -1270,6 +1270,23 @@ cutoff-method correction only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` with
 `physics_pass: false`; no preferred shear, modulus dynamics, Casimir result,
 twisted-boundary preference, cosmology, Derived claim or frozen release follows.
 
+## 2026-08-06 - MAT-001 K_Q dig + Conditional dual-status branch
+
+Gate: MAT-001 (derivation dig and Conditional branch)
+
+**What changed:** (1) Dig of four numeric-\(K_Q\) paths (parent \(Z_\phi\), R3
+residue, R1 dimensional, \(K_Q=C_m^2/V^2\)) — all incomplete/not ready.
+(2) Opened dual-status Conditional matching branch with labeled
+`CONDITIONAL_ONLY` samples under explicit premises; Derived-layer \(V\) and
+\(K_Q\) remain `NOT_COMPUTED` / `NOT_DERIVED`.
+
+**Decision:** accept `PASS_MAT001_KQ_DERIVATION_DIG_INCOMPLETE` and
+`PASS_MAT001_CONDITIONAL_MATCHING_BRANCH_OPEN_DUAL_STATUS`. Conditional probes
+are diagnostics only; Stage 4A and MAT PASS stay closed.
+
+**What was abandoned:** promoting Conditional samples or R1/R3 sketches to
+Derived \(K_Q\)/`V`.
+
 ## 2026-08-06 - MAT-001 Track-A host K_Q readiness
 
 Gate: MAT-001 (post-embed kinetic readiness)

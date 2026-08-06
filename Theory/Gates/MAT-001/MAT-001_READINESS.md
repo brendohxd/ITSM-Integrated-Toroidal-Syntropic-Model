@@ -89,13 +89,14 @@ This does **not** unblock MAT; it makes the MAT target quantity explicit.
 | Force hosting readiness | Five host routes inventoried; Track-A has force without matter; full ADM force completion blocked | Inventory stage: no host selected until the Track-A embed checkpoint |
 | Track-A \(S_{\rm int}\) embed | Track-A selected Conditional; \(d=(-C_m)\), \(h=(0,0)\) exported on host; \(\lvert V\rvert\) form recovered with symbolic \(K_Q\) | Numeric \(K_Q\)/`V` not derived; free-sector join not declared; MAT still blocked |
 | Track-A \(K_Q\) readiness | Host time-kinetic \(K_Q\) exported symbolically; on-host \(V\) form + rescaling identity hold | Numeric \(K_Q\) still `NOT_DERIVED`; Conditional dimensional estimate rejected as Derived |
+| \(K_Q\) derivation dig | Four paths audited; none ready for numeric \(K_Q\) | Microscopic matching still incomplete |
+| Conditional matching branch | Dual-status branch open; Conditional samples labeled only | Derived \(V\)/`K_Q` closed; Stage 4A closed |
 
 Subgates include
-`PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL` and
-`PASS_MAT001_TRACK_A_KQ_SYMBOLIC_HOST_NUMERIC_BLOCKED`. All preserve \(V\) as
-`NOT_COMPUTED`, `mat001_pass: false`, `physics_pass: false`, UVIR-003
-`IN_PROGRESS`, and Stage 4A closed. Host chart, \(d,h\) and symbolic \(K\) are
-in place; numeric matching remains open.
+`PASS_MAT001_TRACK_A_KQ_SYMBOLIC_HOST_NUMERIC_BLOCKED`,
+`PASS_MAT001_KQ_DERIVATION_DIG_INCOMPLETE`, and
+`PASS_MAT001_CONDITIONAL_MATCHING_BRANCH_OPEN_DUAL_STATUS`. All preserve Derived
+\(V\) as `NOT_COMPUTED`, `mat001_pass: false`, Stage 4A closed.
 
 ## MAT-001 open checklist (when unblocked)
 

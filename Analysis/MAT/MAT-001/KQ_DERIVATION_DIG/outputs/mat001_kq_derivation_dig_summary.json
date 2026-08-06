@@ -1,0 +1,214 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Supply numeric Z_phi and g_phi from one parent action with a Track-A field map, or",
+    "Complete microscopic S_Phi -> force kinetic matching for Z_psi and rho_Phi, or",
+    "Obtain independent absolute C_m and invariant residue V, then K_Q=C_m^2/V^2, or",
+    "Use only an explicitly Conditional ansatz branch (never Derived)."
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "kq_readiness_upstream",
+      "ok": true
+    },
+    {
+      "name": "track_a_s_int_upstream",
+      "ok": true
+    },
+    {
+      "name": "r3_upstream_incomplete",
+      "ok": true
+    },
+    {
+      "name": "matching_upstream",
+      "ok": true
+    },
+    {
+      "name": "j1_upstream",
+      "ok": true
+    },
+    {
+      "name": "conditional_kq_not_derivation",
+      "ok": true
+    },
+    {
+      "name": "kq_readiness_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_s_int_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "r3_residue_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "matching_program_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "j1_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "conditional_kq_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "no_path_ready_for_numeric_K_Q",
+      "ok": true
+    },
+    {
+      "name": "parent_path_form_only",
+      "ok": true
+    },
+    {
+      "name": "r3_path_incomplete",
+      "ok": true
+    },
+    {
+      "name": "r1_not_a_derivation",
+      "ok": true
+    },
+    {
+      "name": "v_then_kq_blocked_on_absolute_coefficients",
+      "ok": true
+    },
+    {
+      "flags": {
+        "Z_phi_numeric_matched": false,
+        "claims_MAT_pass": false,
+        "claims_downstream_Derived": false,
+        "microscopic_Z_psi_derived": false,
+        "numeric_K_Q_derived": false,
+        "numeric_V_computed": false,
+        "physics_pass": false,
+        "r1_promoted_Derived": false,
+        "r3_promoted_Derived": false,
+        "stage4A_reopened": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "Z_phi_numeric_matched": false,
+    "claims_MAT_pass": false,
+    "claims_downstream_Derived": false,
+    "microscopic_Z_psi_derived": false,
+    "numeric_K_Q_derived": false,
+    "numeric_V_computed": false,
+    "physics_pass": false,
+    "r1_promoted_Derived": false,
+    "r3_promoted_Derived": false,
+    "stage4A_reopened": false
+  },
+  "derivation_paths": {
+    "path_P1_parent_Z_phi_g_phi": {
+      "induced_C_m": "g_phi/f_phi",
+      "induced_K_Q": "Z_phi/f_phi**2",
+      "induced_V": "g_phi/sqrt(Z_phi)",
+      "numeric_inputs_present_in_repo": false,
+      "ready_to_derive_numeric_K_Q": false,
+      "requires": [
+        "numeric Z_phi",
+        "numeric g_phi",
+        "map phi->Track-A pi"
+      ],
+      "status": "FORM_IDENTITY_ONLY"
+    },
+    "path_P2_R3_residue_ansatz": {
+      "ansatz": "K_Q = Z_psi * rho_Phi / a0**2 = Z_psi * r_rho * M_P**2",
+      "classification_from_r3_audit": "INCOMPLETE_R3_UV_RESIDUE",
+      "form": "M_P**2*Z_psi*r_rho",
+      "missing": [
+        "Z_psi",
+        "rho_Phi",
+        "r_rho",
+        "S_Phi matching"
+      ],
+      "ready_to_derive_numeric_K_Q": false,
+      "status": "CONDITIONAL_ANSATZ_INCOMPLETE"
+    },
+    "path_P3_R1_dimensional": {
+      "ansatz": "K_Q = k_Q * M_P**2",
+      "form": "M_P**2*k_Q",
+      "ready_to_derive_numeric_K_Q": false,
+      "status": "CONDITIONAL_NOT_DERIVATION",
+      "unfixed": [
+        "k_Q"
+      ]
+    },
+    "path_P4_residue_V_then_K_Q": {
+      "identity": "K_Q = C_m**2 / V**2 once V and C_m known",
+      "note": "Track-A exports d=-C_m (form) only; does not supply absolute C_m",
+      "ready_to_derive_numeric_K_Q": false,
+      "requires": [
+        "numeric C_m from S_int microphysics or fit under Conditional scope",
+        "numeric invariant residue V from dynamics"
+      ],
+      "status": "BLOCKED_ON_NUMERIC_V_OR_C_m"
+    }
+  },
+  "dig_status": "INCOMPLETE_NO_NUMERIC_K_Q_PATH_READY",
+  "evidence": {
+    "conditional_kq": {
+      "parse_error": null,
+      "sha256": "0B1EE00860723B7246BB18C0A4C73E08984B82FA71759D09C7624002E79A5C04",
+      "source": "uvir003_conditional_kq_estimate_summary.json"
+    },
+    "j1": {
+      "parse_error": null,
+      "sha256": "D3347CA262861F685FB348FB813C776D8F6CFE00AA9F1A707774BF232C83159F",
+      "source": "mat001_j1_joint_action_normalization_summary.json"
+    },
+    "kq_readiness": {
+      "parse_error": null,
+      "sha256": "301A1FD112F81646B79C8CB8153D89ADBE041A0E0D845E7339F97CDEE4BE73E2",
+      "source": "mat001_track_a_kq_readiness_summary.json"
+    },
+    "matching_program": {
+      "parse_error": null,
+      "sha256": "41C936A6910318460BA8728BEEAF3B7E6D3E768EE523C8371DF8921F4CE4F9A9",
+      "source": "uvir003_matching_route_program_summary.json"
+    },
+    "r3_residue": {
+      "parse_error": null,
+      "sha256": "0E16A71CDCACFF2DFFF3084F99C7165871F5318FDFE456B8D3FD92E5201E1417",
+      "source": "uvir003_r3_uv_residue_audit_summary.json"
+    },
+    "track_a_s_int": {
+      "parse_error": null,
+      "sha256": "EB4D07370A7FD007C68051FFD0A10E03BB0770AE957826128283C25C90E519C8",
+      "source": "mat001_track_a_s_int_embed_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "inadmissible_substitutions": {
+    "Z_psi_equals_1_as_Derived": "REJECTED",
+    "incomplete_R3_as_Derived_K_Q": "REJECTED",
+    "k_Q_equals_1_as_Derived": "REJECTED",
+    "r_rho_equals_1_as_Derived": "REJECTED"
+  },
+  "interface": "KQ_DERIVATION_DIG",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 18,
+  "physics_pass": false,
+  "scientific_boundary": "A PASS means the microscopic/residue derivation dig completed and found no ready path to numeric K_Q. It is an incompleteness result, not a derivation of K_Q or V.",
+  "serial_next": "Open the dual-status Conditional matching branch for labeled probes, and/or continue genuine UV/microscopic matching outside placeholder Wilson coefficients.",
+  "stage": "KQ_MICROSCOPIC_DERIVATION_DIG",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_KQ_DERIVATION_DIG_INCOMPLETE",
+  "terminal_classification": "INCOMPLETE_MICROSCOPIC_K_Q_DERIVATION",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}
