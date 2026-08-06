@@ -1,0 +1,214 @@
+{
+  "C_m_numeric_status": "NOT_DERIVED_FORM_ONLY",
+  "RR1_status": "DECLARED_SKELETON_COEFFICIENTS_UNMATCHED",
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Supply a complete action (or UV completion) that fixes Z_phi > 0",
+    "Supply the same-action matter coupling that fixes g_phi",
+    "Fix or eliminate f_phi by a declared field chart convention",
+    "Show K_Q on Track-A equals Z_phi/f_phi^2 in that chart"
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "h13_upstream",
+      "ok": true
+    },
+    {
+      "name": "h12_upstream",
+      "ok": true
+    },
+    {
+      "name": "j1_upstream",
+      "ok": true
+    },
+    {
+      "name": "track_a_s_int_upstream",
+      "ok": true
+    },
+    {
+      "name": "track_a_force_upstream",
+      "ok": true
+    },
+    {
+      "name": "h13_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "h12_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "j1_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_s_int_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_force_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "skeleton_status_declared_unmatched",
+      "ok": true
+    },
+    {
+      "name": "both_kinetic_and_vertex_terms_present",
+      "ok": true
+    },
+    {
+      "name": "induced_V_identity_holds",
+      "ok": true
+    },
+    {
+      "name": "all_micro_coefficients_marked_unmatched",
+      "ok": true
+    },
+    {
+      "name": "h13_still_incomplete_upstream",
+      "ok": true
+    },
+    {
+      "name": "RR1_advanced_not_closed",
+      "ok": true
+    },
+    {
+      "flags": {
+        "H1_complete": false,
+        "RR1_complete": false,
+        "RR1_skeleton_declared": true,
+        "claims_MAT_pass": false,
+        "claims_full_UVIR_parent": false,
+        "numeric_K_Q_derived": false,
+        "numeric_V_computed": false,
+        "numeric_Z_phi_derived": false,
+        "numeric_g_phi_derived": false,
+        "physics_pass": false,
+        "reopens_stage4A": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "H1_complete": false,
+    "RR1_complete": false,
+    "RR1_skeleton_declared": true,
+    "claims_MAT_pass": false,
+    "claims_full_UVIR_parent": false,
+    "numeric_K_Q_derived": false,
+    "numeric_V_computed": false,
+    "numeric_Z_phi_derived": false,
+    "numeric_g_phi_derived": false,
+    "physics_pass": false,
+    "reopens_stage4A": false
+  },
+  "evidence": {
+    "h12": {
+      "parse_error": null,
+      "sha256": "ACD47A7CF0E7427526EBA314336A33F55015474D7E5BED2C30B30AAE53E05BE2",
+      "source": "mat001_parent_action_matching_summary.json"
+    },
+    "h13": {
+      "parse_error": null,
+      "sha256": "E6BA7F2EB9A712380F46066C3ED00742A89535B0156C9CCEEE10073323E6DE01",
+      "source": "mat001_parent_action_h13_source_audit_summary.json"
+    },
+    "j1": {
+      "parse_error": null,
+      "sha256": "D3347CA262861F685FB348FB813C776D8F6CFE00AA9F1A707774BF232C83159F",
+      "source": "mat001_j1_joint_action_normalization_summary.json"
+    },
+    "track_a_force": {
+      "parse_error": null,
+      "sha256": "6A829A1CC05BF0B4B7F4F6044689580D740E4A6AD24857C85A9A474DF3A10A62",
+      "source": "uvir003_track_a_force_adm_cubic_summary.json"
+    },
+    "track_a_s_int": {
+      "parse_error": null,
+      "sha256": "EB4D07370A7FD007C68051FFD0A10E03BB0770AE957826128283C25C90E519C8",
+      "source": "mat001_track_a_s_int_embed_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "inadmissible_substitutions": {
+    "equating_skeleton_to_full_UVIR_parent": "REJECTED",
+    "setting_Z_phi_equals_1": "REJECTED",
+    "setting_g_phi_from_C_obs_alone": "REJECTED",
+    "skeleton_as_Derived_match": "REJECTED"
+  },
+  "interface": "RR1_PARENT_ACTION_SKELETON",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 17,
+  "parent_action_skeleton": {
+    "explicitly_not_included_in_this_skeleton": [
+      "Full g+U+Phi+alignment multi-sector join",
+      "Numeric values for any free coefficient",
+      "Stage 4A reopen",
+      "MAT physics PASS"
+    ],
+    "fields": {
+      "IR_force_field": "psi = f_phi * phi",
+      "Track_A_split": "psi = psi_bar + pi",
+      "external_baryon_density": "rho_b (external source, not condensate delta_rho)",
+      "frame": "U^mu preferred frame (architecture independent constrained aether)",
+      "parent_force_phonon": "phi"
+    },
+    "free_coefficients_unmatched": {
+      "A_or_C_IR": "IR_WILSON_OPEN",
+      "C_m": "FORM_ONLY_FROM_D_EQUALS_MINUS_C_m",
+      "K_Q": "SYMBOLIC_ON_TRACK_A_HOST",
+      "Z_phi": "NOT_DERIVED",
+      "f_phi": "NOT_DERIVED_MAP_SCALE",
+      "g_phi": "NOT_DERIVED"
+    },
+    "induced_identities": {
+      "C_m": "g_phi/f_phi",
+      "K_Q_from_parent": "Z_phi/f_phi**2",
+      "V": "g_phi/sqrt(Z_phi)",
+      "identities_hold_symbolically": true,
+      "matching_condition_K_Q_IR_equals_induced": "Eq(K_Q, Z_phi/f_phi**2)"
+    },
+    "lagrangian_density_terms": {
+      "L_force_IR_Track_A_adopted": "K_Q * Q^2/2 - A * Y^(3/2) - gamma*(D_mu D^mu psi)^2/(2*M_star^2)",
+      "L_force_spatial_IR_architecture": "- C_IR * |grad psi|^3 / (12 pi G a0)  [weak-field architecture form]",
+      "L_int_parent": "- g_phi * rho_b * phi",
+      "L_kin_parent": "(Z_phi/2) * (U.grad(phi))^2",
+      "note": "Parent kinetic is the UV/microscopic normalization of the IR time kinetic K_Q after field rescaling. Spatial Y^{3/2} and regulator remain IR EFT sectors; matching them is separate from V."
+    },
+    "parent_action_name": "S_parent_force_matter_minimal",
+    "rr_id": "RR1",
+    "scope": "Minimal same-action skeleton for Derived MAT vertex matching only. Does not claim full UVIR multi-sector completion (g+U+Phi+alignment).",
+    "status": "DECLARED_SKELETON_COEFFICIENTS_UNMATCHED",
+    "what_completes_RR1": [
+      "Supply a complete action (or UV completion) that fixes Z_phi > 0",
+      "Supply the same-action matter coupling that fixes g_phi",
+      "Fix or eliminate f_phi by a declared field chart convention",
+      "Show K_Q on Track-A equals Z_phi/f_phi^2 in that chart"
+    ]
+  },
+  "physics_pass": false,
+  "plan_step": "RR1",
+  "research_requirement_status": {
+    "RR1": "DECLARED_SKELETON_COEFFICIENTS_UNMATCHED",
+    "RR2": "OPEN",
+    "RR3": "OPEN_CONDITIONAL_MAP_ONLY",
+    "RR4": "OPEN_R3_INCOMPLETE",
+    "RR5": "ACTIVE_FIREWALL"
+  },
+  "scientific_boundary": "A PASS declares the minimal parent-action term structure required for Derived MAT vertex matching and verifies symbolic induced identities. All microscopic coefficients remain unmatched. This is not a derivation of V or K_Q and does not reopen Stage 4A.",
+  "serial_next": "RR2: derive or bound Z_phi and g_phi from a UV completion / declared dynamics, or compute residue V; RR3: fix f_phi chart. Do not open Stage 4A until RR1-RR3 close.",
+  "stage": "RR1_PARENT_ACTION_SKELETON_DECLARATION",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_RR1_PARENT_ACTION_SKELETON_DECLARED_UNMATCHED",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

@@ -1,6 +1,12 @@
 # ITSM Changelog & Archive History
 
 
+## Recovery branch - RR1 parent-action skeleton declared (2026-08-06)
+
+### Derived matching path
+- **RR1:** Declared minimal parent kinetic + matter vertex skeleton mapped to Track-A; coefficients remain unmatched.
+- **Subgate:** `PASS_MAT001_RR1_PARENT_ACTION_SKELETON_DECLARED_UNMATCHED`; next is RR2 (derive/bound coeffs or residue \(V\)).
+
 ## Recovery branch - H1.3 parent-action source audit incomplete (2026-08-06)
 
 ### Derived matching

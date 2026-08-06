@@ -31,7 +31,9 @@ outputs remain the evidence authority.
 | P0 | H1.1–H1.2 parent-action matching declare + inventory | **completed (incomplete)** | Derived route declared (Z_φ,g_φ→Track-A); repo inventory finds no numeric micro coefficients |
 | P0 | H1.3 parent-action source derivation audit | **completed (incomplete)** | All named declared sources audited; no \(Z_\phi/g_\phi\); RR1–RR5 frozen; H1 not complete |
 | P0 | H1.4 research requirements published | **completed** | RR1–RR5 in plan + H1.3 JSON; governance firewall RR5 active |
-| P0 | H2–H5 Derived invariant / Stage 4A / tier-1 close | **blocked on RR1–RR3** | Requires parent-action micro matching or residue \(V\); Conditional probes not substitutes |
+| P0 | RR1 parent-action skeleton declaration | **completed (unmatched coeffs)** | Minimal \(Z_\phi\) kinetic + \(g_\phi\) vertex + Track-A map declared; all micro coeffs still NOT_DERIVED |
+| P0 | RR2 derive/bound \(Z_\phi,g_\phi\) or residue \(V\) | **next** | Requires new UV/micro dynamics or residue calculation |
+| P0 | H2–H5 Derived invariant / Stage 4A / tier-1 close | **blocked on RR1–RR3** | RR1 skeleton only; coeffs unmatched; Conditional probes not substitutes |
 | P0 | Lane B Conditional dual-status methods | **open (parallel only)** | Probes allowed; never substitute H1–H5 |
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; C2 calculation priority is not identity selection |
 | P1 | RES R1/R2/R3 constitutive-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; R0 remains control and R1 is not activated |

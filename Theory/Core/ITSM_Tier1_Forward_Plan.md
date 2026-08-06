@@ -81,7 +81,7 @@ Conditional work may run in parallel for methods only.
 
 | ID | Requirement | Status |
 |---|---|---|
-| RR1 | Complete parent action with both \(Z_\phi\) kinetic and \(g_\phi\) vertex | OPEN |
+| RR1 | Complete parent action with both \(Z_\phi\) kinetic and \(g_\phi\) vertex | **DECLARED_SKELETON_COEFFICIENTS_UNMATCHED** (terms fixed; coeffs open) |
 | RR2 | Derive/bound \(Z_\phi,g_\phi\) or compute residue \(V\) directly | OPEN |
 | RR3 | Verify \(f_\phi\) map into Track-A \(\pi\) chart | OPEN_CONDITIONAL_MAP_ONLY |
 | RR4 | Alternate: \(S_\Phi\) → \(Z_\psi,\rho_\Phi\) (R3 incomplete) | OPEN_R3_INCOMPLETE |

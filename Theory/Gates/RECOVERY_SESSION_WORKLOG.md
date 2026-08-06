@@ -1270,6 +1270,23 @@ cutoff-method correction only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` with
 `physics_pass: false`; no preferred shear, modulus dynamics, Casimir result,
 twisted-boundary preference, cosmology, Derived claim or frozen release follows.
 
+## 2026-08-06 - RR1 parent-action skeleton declared (coeffs unmatched)
+
+Gate: MAT-001 RR1
+
+**What changed:** declared the minimal same-action skeleton
+\(L_{\rm kin}=(Z_\phi/2)(U\cdot\nabla\phi)^2\), \(L_{\rm int}=-g_\phi\rho_b\phi\),
+with map to Track-A and induced \(C_m,K_Q,V\) identities. All microscopic
+coefficients remain unmatched. RR1 advances from empty OPEN to
+`DECLARED_SKELETON_COEFFICIENTS_UNMATCHED`.
+
+**Decision:** accept
+`PASS_MAT001_RR1_PARENT_ACTION_SKELETON_DECLARED_UNMATCHED`. Not Derived
+matching; Stage 4A closed; \(V\) `NOT_COMPUTED`.
+
+**What was abandoned:** claiming full UVIR multi-sector parent equality from
+this minimal skeleton.
+
 ## 2026-08-06 - H1.3 parent-action source derivation audit
 
 Gate: MAT-001 H1.3
