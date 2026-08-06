@@ -1,6 +1,12 @@
 # ITSM Changelog & Archive History
 
 
+## Recovery branch - plan RR2–H7 bounded completion (2026-08-06)
+
+### Tier-1 forward plan
+- **Bounded completion:** RR2 incompleteness freeze; RR3 Conditional chart convention; H2 symbolic \(V\) invariance; H3–H6 holds/firewalls; H7 hygiene.
+- **Subgate:** `PASS_MAT001_PLAN_RR2_H7_BOUNDED_COMPLETION` — Derived path still open on true RR2 micro/residue work only.
+
 ## Recovery branch - RR1 parent-action skeleton declared (2026-08-06)
 
 ### Derived matching path

@@ -1,0 +1,294 @@
+{
+  "H2": {
+    "IR_rescaling_covariance": true,
+    "cross_chart_identity": true,
+    "invariant": "V = g_phi/sqrt(Z_phi) = C_m/sqrt(K_Q)",
+    "note": "H2 form-level package complete for the RR1 skeleton. Numeric matching still requires RR2 coefficients or residue.",
+    "numeric_V_status": "NOT_COMPUTED",
+    "parent_rescaling_covariance": true,
+    "status": "PASS_SYMBOLIC_REDEFINITION_INVARIANCE"
+  },
+  "H3": {
+    "all_reopen_conditions_met": false,
+    "bounded_completion": true,
+    "policy": "Stage 4A stays closed until a Derived matched invariant exists. H2 symbolic invariance and Conditional probes are insufficient.",
+    "reopen_authorized": false,
+    "stage4A_status": "CLOSED",
+    "stage5_decision": "HOLD_TIER1_CLOSURE",
+    "status": "CLOSED_REOPEN_NOT_AUTHORIZED"
+  },
+  "H4": {
+    "M2_status": "PARTIAL_BOUNDED_HIGH_Q_ONLY",
+    "M2_tier1_met": false,
+    "bounded_completion": true,
+    "claim_domain_policy": {
+      "may_cite_high_q_Track_A_bounded_domain": true,
+      "may_claim_as_Derived_stability": false,
+      "must_label_IR_complex_quartet": "HOLD_UNRESOLVED_FOR_TIER1",
+      "permanent_exclude_from_UVIR_PASS_if_unresolved": true
+    },
+    "note": "H4 cannot mark M2 tier1_met without IR control. Bounded package records the claim-domain policy for peer review.",
+    "status": "PARTIAL_BOUNDED_HIGH_Q_ONLY_IR_HOLD_UNRESOLVED"
+  },
+  "H5": {
+    "allows_MAT001_PASS": false,
+    "allows_MAT_calculation_work": true,
+    "allows_downstream_Derived_from_MAT": false,
+    "ban_list": [
+      "mat001_pass: true",
+      "V_status: COMPUTED as Derived without RR2 closure",
+      "downstream Derived SPARC/H0/lensing from MAT form kit",
+      "Conditional samples packaged as Derived V or K_Q",
+      "Stage 4A reopened from Conditional causality tables",
+      "alpha.13 freeze claiming UVIR closed"
+    ],
+    "bounded_completion": true,
+    "conditional_branch_status": "OPEN_CONDITIONAL_DUAL_STATUS",
+    "status": "PASS_MAT_PACKAGING_BANLIST_ACTIVE"
+  },
+  "H6": {
+    "bounded_completion": true,
+    "free_force_static_B_joined": false,
+    "free_sector_identified_with_Track_A": false,
+    "full_multi_sector_joined": false,
+    "join_status": "PARTIAL_MATTER_CHANNEL_ONLY",
+    "selected_operational_channel": "MATTER_ONLY_STATIC_ON_TRACK_A_HOST",
+    "status": "PARTIAL_MATTER_CHANNEL_ONLY_RECONFIRMED"
+  },
+  "H7": {
+    "bounded_completion": true,
+    "requirements": [
+      "dual-run byte-identical JSON",
+      "SHA-256 sidecar",
+      "no absolute workstation paths",
+      "claim firewall fail closed",
+      "dual-status wording for Conditional vs Derived",
+      "plan and queue updated in same change set",
+      "alpha.11 and alpha.12 remain immutable"
+    ],
+    "status": "PASS_HYGIENE_CONTRACT_FOR_PACKAGE"
+  },
+  "RR2": {
+    "h13_verdict": "INCOMPLETE_NO_Z_phi_g_phi_FROM_DECLARED_SOURCES",
+    "numeric_V": "NOT_COMPUTED",
+    "numeric_Z_phi": "NOT_DERIVED",
+    "numeric_g_phi": "NOT_DERIVED",
+    "peer_review_statement": "RR2 cannot be closed with current declared sources without new UV dynamics or a residue calculation. Incompleteness is frozen.",
+    "routes_attempted_or_audited": [
+      "parent Z_phi/g_phi from declared sources (H1.3: none)",
+      "R3 Z_psi r_rho residual (incomplete, no bound)",
+      "R1 k_Q M_P^2 (Conditional, forbidden as Derived)",
+      "K_Q = C_m^2/V^2 (blocked: absolute C_m and V absent)",
+      "direct on-shell residue V (no live dynamical residue export)"
+    ],
+    "status": "INCOMPLETE_NO_DERIVATION_AVAILABLE"
+  },
+  "RR3": {
+    "completes_RR3": false,
+    "convention_name": "IR_FORCE_MAP_psi_equals_f_phi_phi",
+    "definition": "psi = f_phi * phi, with Track-A split psi = psi_bar + pi",
+    "f_phi_status": "FREE_MAP_SCALE_NOT_NUMERICALLY_FIXED",
+    "recommended_Derived_strategy": "Prefer computing V directly (f_phi drops out) over fixing f_phi alone",
+    "redefinition_note": "V = g_phi/sqrt(Z_phi) is independent of f_phi; C_m and K_Q each depend on f_phi but V does not. Absolute C_m still needs g_phi and f_phi.",
+    "status": "DECLARED_CONDITIONAL_CHART_CONVENTION",
+    "symbolic_f_phi_independence_of_V": true,
+    "why_not_complete": "A Conditional convention is declared, but a Derived chart still needs a justified numerical or dynamical fix of f_phi (or elimination by working only with V)."
+  },
+  "V_status": "NOT_COMPUTED",
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "rr1_upstream",
+      "ok": true
+    },
+    {
+      "name": "h13_upstream",
+      "ok": true
+    },
+    {
+      "name": "join_upstream",
+      "ok": true
+    },
+    {
+      "name": "tier1_upstream",
+      "ok": true
+    },
+    {
+      "name": "stage5_upstream",
+      "ok": true
+    },
+    {
+      "name": "conditional_upstream",
+      "ok": true
+    },
+    {
+      "name": "rr1_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "h13_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "join_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "tier1_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "stage5_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "conditional_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "RR2_incomplete_frozen",
+      "ok": true
+    },
+    {
+      "name": "RR3_chart_convention_declared",
+      "ok": true
+    },
+    {
+      "name": "H2_symbolic_invariance_pass",
+      "ok": true
+    },
+    {
+      "name": "H3_stage4A_still_closed",
+      "ok": true
+    },
+    {
+      "name": "H4_M2_not_falsely_closed",
+      "ok": true
+    },
+    {
+      "name": "H5_MAT_PASS_forbidden",
+      "ok": true
+    },
+    {
+      "name": "H6_matter_only_reconfirmed",
+      "ok": true
+    },
+    {
+      "name": "H7_hygiene_contract_present",
+      "ok": true
+    },
+    {
+      "flags": {
+        "H1_Derived_complete": false,
+        "M2_tier1_falsely_met": false,
+        "RR2_closed_with_numerics": false,
+        "claims_MAT_pass": false,
+        "claims_UVIR_pass": false,
+        "claims_downstream_Derived": false,
+        "numeric_K_Q_derived": false,
+        "numeric_V_computed": false,
+        "physics_pass": false,
+        "plan_bounded_completion_recorded": true,
+        "stage4A_reopened": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "H1_Derived_complete": false,
+    "M2_tier1_falsely_met": false,
+    "RR2_closed_with_numerics": false,
+    "claims_MAT_pass": false,
+    "claims_UVIR_pass": false,
+    "claims_downstream_Derived": false,
+    "numeric_K_Q_derived": false,
+    "numeric_V_computed": false,
+    "physics_pass": false,
+    "plan_bounded_completion_recorded": true,
+    "stage4A_reopened": false
+  },
+  "completion_mode": "BOUNDED_PEER_REVIEW_MAXIMAL",
+  "evidence": {
+    "conditional": {
+      "parse_error": null,
+      "sha256": "1BB9DE0646CDA8A8C577B19D37B6DFE1D04B29A3AECBA182519BC93A431975EC",
+      "source": "mat001_conditional_matching_branch_summary.json"
+    },
+    "h13": {
+      "parse_error": null,
+      "sha256": "E6BA7F2EB9A712380F46066C3ED00742A89535B0156C9CCEEE10073323E6DE01",
+      "source": "mat001_parent_action_h13_source_audit_summary.json"
+    },
+    "join": {
+      "parse_error": null,
+      "sha256": "958EFE959811B5BAF983196C784C71518C4531F50A1EAD9E7F71B47923916FC7",
+      "source": "mat001_track_a_join_readiness_summary.json"
+    },
+    "rr1": {
+      "parse_error": null,
+      "sha256": "7EBCBD6E8C4D06EAA3E0E5BD98FD403A5FDE42EA12EA5CBB2E53CF387EFEA6D6",
+      "source": "mat001_rr1_parent_action_skeleton_summary.json"
+    },
+    "stage5": {
+      "parse_error": null,
+      "sha256": "7ED771F58118254AE4C39C222A69454F4570D1F8F4C449F2C4538F1DA1FECE05",
+      "source": "uvir003_stage5_full_gate_decision_summary.json"
+    },
+    "tier1": {
+      "parse_error": null,
+      "sha256": "7F1F28FAC07EEECC6B974D1D41FCA6F0C01DF2006B78B93135F7EA4CEB46C281",
+      "source": "uvir003_tier1_peer_review_readiness_summary.json"
+    }
+  },
+  "gate": "MAT-001_PLAN_COMPLETION",
+  "interface": "TIER1_FORWARD_PLAN_RR2_H7",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 21,
+  "overall": {
+    "Derived_critical_path_closed": false,
+    "bounded_steps_completed": [
+      "RR2 incompleteness freeze",
+      "RR3 Conditional chart convention",
+      "H2 symbolic redefinition invariance",
+      "H3 Stage 4A closed reaffirmation",
+      "H4 M2 claim-domain policy",
+      "H5 MAT packaging ban-list",
+      "H6 matter-only join reaffirmation",
+      "H7 hygiene contract"
+    ],
+    "reason_not_closed": "RR2 has no numeric Z_phi/g_phi or residue V; H3-H5 correctly remain holds/firewalls rather than false PASS",
+    "still_open_for_true_Derived_closure": [
+      "RR2 micro/residue derivation",
+      "RR3 Derived f_phi fix or pure-V route",
+      "H3 Stage 4A after matched invariant",
+      "H4 M2 IR control if claimed",
+      "H5 MAT PASS after UVIR tier-1 + V"
+    ]
+  },
+  "physics_pass": false,
+  "scientific_boundary": "A PASS means every plan step RR2\u2013H7 has been advanced to the maximum peer-review-honest state: incompleteness freezes, symbolic invariance, and hold/firewall packages. It does not complete Derived matching or tier-1 UVIR closure.",
+  "serial_next": "True Derived work remains RR2 (UV parent or residue V). Until then retain HOLD_TIER1, dual-status Conditional probes only, immutable alpha.11/alpha.12.",
+  "stage": "BOUNDED_PLAN_COMPLETION_PACKAGE",
+  "stage4A_status": "CLOSED",
+  "stages": {
+    "H2": "PASS_SYMBOLIC_REDEFINITION_INVARIANCE",
+    "H3": "CLOSED_REOPEN_NOT_AUTHORIZED",
+    "H4": "PARTIAL_BOUNDED_HIGH_Q_ONLY_IR_HOLD_UNRESOLVED",
+    "H5": "PASS_MAT_PACKAGING_BANLIST_ACTIVE",
+    "H6": "PARTIAL_MATTER_CHANNEL_ONLY_RECONFIRMED",
+    "H7": "PASS_HYGIENE_CONTRACT_FOR_PACKAGE",
+    "RR2": "INCOMPLETE_NO_DERIVATION_AVAILABLE",
+    "RR3": "DECLARED_CONDITIONAL_CHART_CONVENTION"
+  },
+  "subgate_status": "PASS_MAT001_PLAN_RR2_H7_BOUNDED_COMPLETION",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

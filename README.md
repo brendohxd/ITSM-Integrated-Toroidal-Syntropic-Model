@@ -58,7 +58,7 @@ presented as a derivation. Every live statement is classified as **Derived**,
 |---|---|---|
 | **Manuscript** | `v12.0-alpha.11` frozen | Immutable tier-1 closure hold and identity-decision checkpoint; alpha.10 remains untouched |
 | **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
-| **MAT-001** | **Blocked; $V$ not computed** | Track-A Conditional kit + dual-status probes + join map form-ready; tier-1 peer-review audit **retains** Stage 5 hold (M2/M3/M6/M7 unmet); Stage 4A closed; no Derived \(V\)/\(K_Q\) |
+| **MAT-001** | **Blocked; $V$ not computed** | Plan RR2–H7 at peer-review-maximal bounded completion; RR1 skeleton declared; RR2 micro/residue still open; Stage 4A closed; α.12 freeze holds dual-status boundary |
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
 | **WAK-001** | **Open; no identity route selectable** | The common evidence rubric keeps C1/C2/C3 Open. C2 is the most developed calculation scaffold, not a selected identity; source, exchange, stress and observables remain unresolved |
 | **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, modular-basis identity and physical-cutoff spectrum audits, plus VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear or modulus dynamics follows |

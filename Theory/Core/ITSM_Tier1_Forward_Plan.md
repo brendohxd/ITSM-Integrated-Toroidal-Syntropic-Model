@@ -185,11 +185,28 @@ Every checkpoint:
 
 ## Immediate execution order (this sprint)
 
-1. **H0** — commit/push outstanding audits + this plan.  
-2. **H1.1–H1.2** — parent-action matching declaration + repo inventory (start now).  
-3. **H1.3** — derivation attempt or incompleteness PASS.  
-4. Stop at H1 exit; do not open H3 without Derived invariant.  
-5. H6/H7 continuous; H2 bundled with H1 success path.
+1. **H0** — commit/push outstanding audits + this plan. **DONE**  
+2. **H1.1–H1.4 / RR1** — parent matching + skeleton. **DONE (incomplete coeffs)**  
+3. **RR2–H7 bounded package** — **DONE** (`PASS_MAT001_PLAN_RR2_H7_BOUNDED_COMPLETION`)  
+4. **True Derived remaining:** RR2 micro/residue only — cannot be closed without new physics.  
+5. Do not open H3 Stage 4A without Derived invariant.
+
+### Bounded completion snapshot (2026-08-06)
+
+| Step | Bounded status | Derived-closed? |
+|---|---|---|
+| H0 | done | n/a |
+| H1 / RR1 | skeleton + incompleteness audits | **No** |
+| RR2 | incompleteness freeze | **No** |
+| RR3 | Conditional chart convention | **No** (Derived map open) |
+| H2 | symbolic redefinition invariance | form **Yes** / numeric **No** |
+| H3 | Stage 4A closed reaffirmed | reopen **No** |
+| H4 | M2 claim-domain policy | tier1_met **No** |
+| H5 | MAT ban-list active | PASS **No** |
+| H6 | matter-only join reconfirmed | multi-sector **No** |
+| H7 | hygiene contract | package **Yes** |
+
+**Interpretation:** plan steps are complete at the **peer-review maximal** level. The Derived critical path remains open solely on RR2 (and Derived RR3 / later H3–H5).
 
 ---
 

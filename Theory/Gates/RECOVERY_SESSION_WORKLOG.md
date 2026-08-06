@@ -1270,6 +1270,20 @@ cutoff-method correction only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` with
 `physics_pass: false`; no preferred shear, modulus dynamics, Casimir result,
 twisted-boundary preference, cosmology, Derived claim or frozen release follows.
 
+## 2026-08-06 - Plan RR2–H7 bounded completion package
+
+Gate: MAT-001 / tier-1 forward plan
+
+**What changed:** single fail-closed package advances RR2 (incompleteness freeze),
+RR3 (Conditional \(f_\phi\) chart convention), H2 (symbolic \(V\) redefinition
+invariance), H3–H5 (Stage 4A closed, M2 policy, MAT ban-list), H6 (matter-only
+join reaffirm), H7 (hygiene contract). Derived critical path remains open on RR2.
+
+**Decision:** accept `PASS_MAT001_PLAN_RR2_H7_BOUNDED_COMPLETION` as
+peer-review-maximal plan completion, not Derived matching or tier-1 UVIR close.
+
+**What was abandoned:** inventing coefficients to “finish” RR2; false M2/Stage 4A PASS.
+
 ## 2026-08-06 - RR1 parent-action skeleton declared (coeffs unmatched)
 
 Gate: MAT-001 RR1
