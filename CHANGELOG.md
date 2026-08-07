@@ -1,11 +1,5 @@
 # ITSM Changelog & Archive History
 
-## Version 12.0-alpha.13
-- **Theoretical Core Closed:** Rigorously derived matched invariant $V = 1/f$ via symbolic diagonalisation of the scale-compensator action, passing MAT-001 R5-P1.
-- **Causality & Unitarity Verified:** Executed Stage 4A causality (proving $c_s = 1.0$) and Stage C5 exact physical amplitude UV-cutoff. UVIR-003 is officially marked CLOSED.
-- **Topological Scaffolding Complete:** VOR-001 computational bounds (S0-S4) verified, including resonance definitions and 2D/3D defect profiles without phenomenological insertions.
-- **Authorization:** Downstream observational tests (DISK/STAT) are fully unblocked.
-
 
 ## Recovery branch - MAT remediation R5 identifiability hold (2026-08-07)
 

@@ -244,16 +244,14 @@ predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
   nonanalytic `|grad(pi)|^3` contribution on a nonzero-gradient background;
 
 ## Current Status (2026-08-07)
-*   **Target:** `v12.0-alpha.13`
-*   **MAT-001 (Microscopic Matching):** PASS_TAG_AUTHORIZED (V=1/f derived symbolically)
-*   **UVIR-003 (Causality & Unitarity):** CLOSED (Physical cutoff established, causality proven)
-*   **VOR-001 (Topological Sector):** PASS_SCAFFOLD (S0-S4 mathematical proofs completed)
-*   **Next Milestone:** DISK-001 & STAT-001 (Galactic Dynamics & Statistical Limits)
+*   **Target:** `v12.0-alpha.12`
+*   **MAT-001 (Microscopic Matching):** BLOCKED (V=1/f NOT_COMPUTED, identifiability hold)
+*   **UVIR-003 (Causality & Unitarity):** IN_PROGRESS (Blocked by MAT-001)
+*   **VOR-001 (Topological Sector):** PASS_SCAFFOLD (S1 completed)
+*   **Next Milestone:** UVIR-003 completion
 
 ### Mission Brief
-The theoretical physics engine has been successfully reconstructed and verified. The microscopic scale-compensator action cleanly diagonalizes in the high-q limit, yielding $V=1/f$ without importing phenomenological constants. This breakthrough successfully closes the UVIR-003 gate, locking the physical UV cutoff $\Lambda$ and proving causal propagation ($c_s \le 1.0$). 
-
-With the theoretical core fully closed, the recovery branch is now authorized to resume macroscopic observational testing (SPARC rotation curves, BTFR limits).
+The recovery branch is attempting to remediate the MAT-001 physics wall. The declared action underdetermines $V$. The R5-P1 scale-compensator fork is currently being evaluated to see if it can algebraically derive $V=1/f$. UVIR-003 remains on a Tier-1 closure hold until the matched invariant is verified.
 
 #### [`12.0-alpha.10`](Manuscript/CoreRecovery/releases/v12.0-alpha.10/) — 2026-08-03
 
