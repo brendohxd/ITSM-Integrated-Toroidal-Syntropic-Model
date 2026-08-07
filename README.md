@@ -58,7 +58,7 @@ presented as a derivation. Every live statement is classified as **Derived**,
 |---|---|---|
 | **Manuscript** | `v12.0-alpha.12` frozen | Immutable dual-status MAT boundary with Tier-1 hold retained; earlier freezes remain untouched |
 | **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
-| **MAT-001** | **Blocked; $V$ not computed** | Scoped R1-R4 remediation passes; covariant action and signed residue contract are recorded, but microscopic `C_m`, numeric `K_Q`, live joined mode and Stage 4A remain open |
+| **MAT-001** | **Blocked; $V$ not computed** | Scoped R1-R5 remediation passes; R5 proves the declared action underdetermines the invariant residue, so microscopic matching or a live normalized residue and Stage 4A remain open |
 | **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
 | **WAK-001** | **Open; no identity route selectable** | The common evidence rubric keeps C1/C2/C3 Open. C2 is the most developed calculation scaffold, not a selected identity; source, exchange, stress and observables remain unresolved |
 | **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, modular-basis identity and physical-cutoff spectrum audits, plus VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear or modulus dynamics follows |
@@ -88,7 +88,8 @@ the dual-status Conditional branch in
 [Conditional matching branch](Theory/Gates/MAT-001/MAT-001_CONDITIONAL_MATCHING_BRANCH.md),
 the [R3 covariant matter action](Theory/Gates/MAT-001/MAT-001_R3_COVARIANT_MATTER_ACTION.md),
 the [R4 signed residue contract](Theory/Gates/MAT-001/MAT-001_R4_SIGNED_RESIDUE_CONTRACT.md),
-the [R1-R4 remediation addendum](Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md),
+the [R5 microscopic matching decision](Theory/Gates/MAT-001/MAT-001_R5_MICROSCOPIC_MATCHING_DECISION.md),
+the [R5 pathway survey](Theory/Gates/MAT-001/MAT-001_R5_PATHWAY_SURVEY_2026-08-07.md),
 and the tier-1 hold audit in
 [tier-1 peer-review readiness](Theory/Gates/UVIR-003/UVIR-003_TIER1_PEER_REVIEW_READINESS.md).
 
@@ -160,7 +161,7 @@ authoritative path.
 - [Core Architecture](Theory/Core/ITSM_Core_Architecture.md)
 - [Claim Migration Ledger](Theory/Core/ITSM_Claim_Migration_Ledger.csv)
 - [Recovery Branch Guide](RECOVERY_BRANCH_README.md)
-- [MAT Tier-1 R1-R4 Remediation Addendum](Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md)
+- [MAT Tier-1 R1-R5 Remediation Addendum](Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md)
 - [Core-Recovery Manuscript Guide](Manuscript/CoreRecovery/README.md)
 - [Selective Publishing Plan](papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md)
 

@@ -267,6 +267,10 @@ action drafts on identity pillars — only premature Derived packaging.
 
 **Active bounded remediation:**
 [`MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md`](../Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md).
+R5 action-identifiability decision:
+[`MAT-001_R5_MICROSCOPIC_MATCHING_DECISION.md`](../Gates/MAT-001/MAT-001_R5_MICROSCOPIC_MATCHING_DECISION.md).
+Bounded pathway survey:
+[MAT-001_R5_PATHWAY_SURVEY_2026-08-07.md](../Gates/MAT-001/MAT-001_R5_PATHWAY_SURVEY_2026-08-07.md).
 This subordinate addendum repairs the post-alpha.12 MAT evidence chain without
 changing the authority order or promoting any gate status.
 
@@ -305,6 +309,8 @@ changing the authority order or promoting any gate status.
   - `PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY` — proves the same-action form \(V=g_\phi/\sqrt{Z_\phi}\), not a numerical match
   - `PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT` — distinguishes canonical vertex, mixed response and source-source exchange coefficients; \(V\) remains `NOT_COMPUTED`
   - `PASS_MAT001_UNIT_CHART_CONTRACT_OPEN` — separates covariant and coordinate-time SI coefficient charts; no SI observable chart or microscopic coefficient is selected
+- **Post-R1--R4 remediation R5:** `PASS_MAT001_R5_IDENTIFIABILITY_AUDIT_HOLD` proves the declared action underdetermines `V`; matching verdict `HOLD_DECLARED_ACTION_UNDERDETERMINES_V`; no status promotion.
+- **R5-P1 research route:** minimal shift-symmetric density portal rejected as a standalone static-force source; scale-compensator/superfluid parent advanced only to a bounded mode-residue and stability fork.
 - **Next working priorities (serial critical path):**  
   1. Compute \(V=C_m/\sqrt{K_Q}\), or an equivalent projected source invariant, from one declared action, physical mode and named field/unit chart.
   2. Reopen **Stage 4A**: re-evaluate causality, the relevant IR complex-quartet response, and the physical cutoff/unitarity result in the intended claim domain.
@@ -447,3 +453,5 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 | 1.3 | 2026-08-01 | **Open-options rule:** untested ≠ banned; identity tracks parallel to UVIR critical path; SWNT *principle* as Open founding intuition (not forced); dig harder at walls; Track B not hard-banned |
 | 1.4 | 2026-08-04 | Corrected Stage 5 from policy-defined bounded pass to fail-closed tier-1 hold; restored UVIR-003 IN_PROGRESS and made matched invariant, IR control, causality and physical cutoff the serial critical path |
 | 1.5 | 2026-08-07 | Linked bounded MAT Tier-1 remediation addendum; no gate promotion |
+| 1.7 | 2026-08-07 | Added bounded R5 pathway survey and R5-P1 scale-compensator parent-action fork; no gate promotion |
+| 1.6 | 2026-08-07 | Recorded R5 action-identifiability HOLD; declared action underdetermines `V`; no gate promotion |

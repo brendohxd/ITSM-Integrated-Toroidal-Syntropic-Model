@@ -9,7 +9,10 @@ root `CHANGELOG.md` records legacy project history.
 
 - Corrected the ADM-to-J2 sign bridge and retained the non-static velocity-mixing obstruction.
 - Added a source-backed H1.3 audit, a covariant conformal matter-action/ADM-source derivation, and a signed orientation-anchored residue contract.
-- Added consolidated mutation/checksum automation for the 21-output R1-R4 dependency cone.
+- Added the R5 action-identifiability HOLD: the declared independent `C_m` and `K_Q` coefficients do not determine `V`; microscopic matching or a live normalized signed residue remains required.
+- Added the research-only R5 pathway survey: minimal density portal rejected for a static source; scale-compensator/superfluid parent advanced to a bounded fork.
+- Made H1 provenance acyclic by excluding downstream MAT governance/products from the microscopic-source inventory and H1.3 derivation evidence.
+- Added consolidated mutation/checksum automation for the 22-output R1-R5 dependency cone.
 - Preserved alpha.12 as immutable: Tier-1 remains `NOT_MET`, MAT-001 remains `BLOCKED`, `V` remains `NOT_COMPUTED`, `K_Q` remains `NOT_DERIVED`, and Stage 4A remains `CLOSED`.
 
 ## 12.0-alpha.12 - 2026-08-06

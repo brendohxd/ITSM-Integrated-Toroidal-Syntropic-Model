@@ -18,14 +18,14 @@ V=\frac{g_\phi}{\sqrt{Z_\phi}}.
 
 ## Inventory result
 
-Numeric \(Z_\phi\) / \(g_\phi\) assignments were **not** found in scanned Analysis/Theory sources. Symbol mentions exist (J1 templates). Matching remains incomplete.
+Numeric \(Z_\phi\) / \(g_\phi\) assignments were **not** found in the explicit upstream derivation-source set: `Analysis/UVIR`, `ITSM_Core_Architecture.md`, and `Theory/Gates/UVIR-003`. Downstream MAT gate products and the Master Research Plan are excluded so governance records cannot become evidence for their own conclusions. Matching remains incomplete.
 
 ## Reproduction
 
 ```text
 python -B Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_matching_attempt.py
 # STATUS: PASS_MAT001_PARENT_ACTION_MATCHING_DECLARED_INCOMPLETE
-# SHA-256: ACD47A7CF0E7427526EBA314336A33F55015474D7E5BED2C30B30AAE53E05BE2
+# SHA-256: BC3C3E0A580C4AFA3436DB74F9D1ADE86A62128A3E0B2FB104197D9477811102
 ```
 
 ## Next

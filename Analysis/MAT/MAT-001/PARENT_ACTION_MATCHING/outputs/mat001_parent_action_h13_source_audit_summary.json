@@ -70,11 +70,6 @@
       "parse_error": null
     },
     {
-      "name": "master_plan_readable",
-      "ok": true,
-      "parse_error": null
-    },
-    {
       "name": "declared_sources_support_absence_verdict",
       "ok": true
     },
@@ -142,18 +137,13 @@
     },
     "h12": {
       "parse_error": null,
-      "sha256": "C3F7A2936669AFEE92B86565B64FC8CBC477431ACF3E275A28047824E7FE2F62",
+      "sha256": "BC3C3E0A580C4AFA3436DB74F9D1ADE86A62128A3E0B2FB104197D9477811102",
       "source": "mat001_parent_action_matching_summary.json"
     },
     "j1": {
       "parse_error": null,
       "sha256": "CD5F9A0F9863D56A52B94950C4E88736581A5C4CE93086778D941B4CCBD936DF",
       "source": "mat001_j1_joint_action_normalization_summary.json"
-    },
-    "master_plan": {
-      "parse_error": null,
-      "sha256": "9D4015EBF3AE3CE8684CA3AA7DA3FFDD67899657B83E836C6D70D608DB6BAD41",
-      "source": "ITSM_Master_Research_Plan.md"
     },
     "r3": {
       "parse_error": null,
@@ -195,7 +185,7 @@
   "mat001_pass": false,
   "mat001_status": "BLOCKED",
   "matching_status": "INCOMPLETE_AFTER_SOURCE_AUDIT",
-  "n_checks": 21,
+  "n_checks": 20,
   "physics_pass": false,
   "plan_step": "H1.3",
   "research_requirements_frozen": [
@@ -288,44 +278,6 @@
         "lists unmatched Z_phi and g_phi as open inputs"
       ],
       "source": "mat001_j1_joint_action_normalization",
-      "source_backed": true
-    },
-    "master_plan_MAT": {
-      "assessment": "EXPLICIT_NOT_DERIVED",
-      "evidence": {
-        "explicit_status_lines": [
-          {
-            "line": 278,
-            "text": "- **Frozen manuscript (alpha.12):** UVIR-003 is **in progress**; MAT-001 is **not unlocked**; \\(V\\) is **NOT_COMPUTED**; Stage 4A is **closed**; Conditional Track-A form kit is **not** Derived matching."
-          },
-          {
-            "line": 279,
-            "text": "- **Programme / gate ledger (post\u2013\u03b1.10 Stages 1\u20135):** the earlier `PASS_BOUNDED_CONDITIONAL` interpretation is superseded. Stage 5 now records `PASS_STAGE5_DECISION_HOLD_TIER1`, while the physics gate remains **`IN_PROGRESS`** with M2, M3, M6 and M7 incomplete at tier 1; \\(K_Q\\) is NOT_DERIVED, \\(V\\) is NOT_COMPUTED, and a MAT PASS tag is forbidden."
-          },
-          {
-            "line": 282,
-            "text": "- **Post-alpha.11 J2 projection and later MAT kit:** J2 template is basis invariant; free-sector export, Track-A Conditional \\(S_{\\rm int}/d,h\\), symbolic \\(K_Q\\), and parent-action incompleteness audits exist, but \\(V\\) remains NOT_COMPUTED"
-          },
-          {
-            "line": 292,
-            "text": "- PASS_KQ_MATCHING_INVENTORY_OPEN \u2014 invariants \\(Aq/K_Q\\), \\(A/K_Q^{3/2}\\); routes R1\u2013R5; **numeric \\(K_Q\\) still NOT_DERIVED**"
-          },
-          {
-            "line": 300,
-            "text": "- PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL \u2014 **Stage 3**: forms frozen; \\(V\\) NOT_COMPUTED; **no MAT PASS**"
-          },
-          {
-            "line": 306,
-            "text": "- `PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT` \u2014 distinguishes canonical vertex, mixed response and source-source exchange coefficients; \\(V\\) remains `NOT_COMPUTED`"
-          }
-        ],
-        "mentions_C_obs_hypothesis": true
-      },
-      "provides": [
-        "MAT-001 goal V = C_m/sqrt(K_Q)",
-        "Conditional empirical C_obs ~ 1 until MAT computes otherwise"
-      ],
-      "source": "ITSM_Master_Research_Plan.md MAT / C_obs hypothesis",
       "source_backed": true
     },
     "r3_uv_residue": {

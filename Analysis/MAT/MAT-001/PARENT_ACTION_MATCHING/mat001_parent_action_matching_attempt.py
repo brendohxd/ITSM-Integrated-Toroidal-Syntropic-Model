@@ -110,7 +110,10 @@ def declare_parent_route() -> dict[str, Any]:
     v = sp.simplify(g_phi / sp.sqrt(z_phi))
     v_alt = sp.simplify(c_m / sp.sqrt(k_q))
     require(sp.simplify(v - v_alt) == 0, "parent and IR V must agree")
-    require(sp.simplify(v.subs(g_phi, -g_phi) + v) == 0, "signed V must flip with field orientation")
+    require(
+        sp.simplify(v.subs(g_phi, -g_phi) + v) == 0,
+        "signed V must flip with field orientation",
+    )
 
     return {
         "selected_derived_route": "PARENT_ACTION_Z_phi_g_phi_TO_TRACK_A",
@@ -150,51 +153,47 @@ def declare_parent_route() -> dict[str, Any]:
 
 
 def inventory_repo_for_micro_inputs(repo: Path) -> dict[str, Any]:
-    """Search tracked-ish analysis/theory text for numeric or derived Z_phi/g_phi.
+    """Search an explicit acyclic source set for numeric Z_phi/g_phi inputs.
 
-    This is a presence inventory, not a derivation. Hits that are only symbols
-    or unmatched inputs count as NOT_DERIVED.
+    This is a presence inventory, not a derivation. The scope is restricted to
+    upstream UVIR evidence and the core architecture. MAT gate products and the
+    Master Research Plan are deliberately excluded: they are downstream
+    governance/assessment records and must not become inputs to H1.1-H1.2.
     """
     patterns = {
         "Z_phi": re.compile(r"\bZ_phi\b"),
         "g_phi": re.compile(r"\bg_phi\b"),
         "Z_psi": re.compile(r"\bZ_psi\b"),
         "numeric_Z_phi_assignment": re.compile(
-            r"Z_phi\s*=\s*[0-9]", re.IGNORECASE
+            r"\bZ_phi\s*(?::=|=)\s*[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?",
+            re.IGNORECASE,
         ),
         "numeric_g_phi_assignment": re.compile(
-            r"g_phi\s*=\s*[0-9]", re.IGNORECASE
+            r"\bg_phi\s*(?::=|=)\s*[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?",
+            re.IGNORECASE,
         ),
     }
     roots = [
-        repo / "Analysis" / "MAT",
         repo / "Analysis" / "UVIR",
-        repo / "Theory" / "Core",
-        repo / "Theory" / "Gates" / "MAT-001",
+        repo / "Theory" / "Core" / "ITSM_Core_Architecture.md",
         repo / "Theory" / "Gates" / "UVIR-003",
     ]
     hits: dict[str, list[str]] = {key: [] for key in patterns}
     scanned_files = 0
-    # Exclude this package's live outputs to keep dual-runs byte-stable.
-    skip_names = {
-        "mat001_parent_action_matching_summary.json",
-        "mat001_parent_action_matching_summary.sha256",
-    }
     files: list[Path] = []
     for root in roots:
-        if not root.is_dir():
-            continue
-        for path in root.rglob("*"):
+        candidates = (
+            [root] if root.is_file() else root.rglob("*") if root.is_dir() else []
+        )
+        for path in candidates:
             if not path.is_file():
                 continue
             if path.suffix.lower() not in {".py", ".md", ".json", ".tex"}:
                 continue
-            if "ITSM-Cosmologist" in path.name:
-                continue
-            if path.name.endswith(".sha256") or path.name in skip_names:
+            if "ITSM-Cosmologist" in path.name or path.name.endswith(".sha256"):
                 continue
             files.append(path)
-    for path in sorted(files, key=lambda p: p.as_posix().lower()):
+    for path in sorted(set(files), key=lambda p: p.as_posix().lower()):
         try:
             text = path.read_text(encoding="utf-8", errors="replace")
         except OSError:
@@ -208,16 +207,20 @@ def inventory_repo_for_micro_inputs(repo: Path) -> dict[str, Any]:
             if rx.search(text):
                 hits[key].append(rel)
 
-    # Cap after full sort for deterministic output.
     hits_capped = {key: sorted(set(paths))[:12] for key, paths in hits.items()}
-
-    # Classification
     has_symbol_mentions = bool(hits_capped["Z_phi"] or hits_capped["g_phi"])
     has_numeric_assignment = bool(
         hits_capped["numeric_Z_phi_assignment"]
         or hits_capped["numeric_g_phi_assignment"]
     )
     return {
+        "inventory_scope": [
+            path.resolve().relative_to(repo.resolve()).as_posix() for path in roots
+        ],
+        "scope_exclusions": [
+            "Analysis/MAT downstream gate products",
+            "Theory/Core/ITSM_Master_Research_Plan.md governance record",
+        ],
         "scanned_files": scanned_files,
         "hit_paths_capped": hits_capped,
         "symbol_mentions_present": has_symbol_mentions,
@@ -228,8 +231,8 @@ def inventory_repo_for_micro_inputs(repo: Path) -> dict[str, Any]:
             else "NUMERIC_ASSIGNMENT_STRINGS_FOUND_REQUIRE_HUMAN_REVIEW"
         ),
         "interpretation": (
-            "Symbol mentions of Z_phi/g_phi are expected from J1 templates. "
-            "Absence of numeric assignment means parent-action matching is incomplete."
+            "No numeric Z_phi/g_phi assignment occurs in the explicit upstream "
+            "derivation-source set; parent-action matching remains incomplete."
         ),
     }
 
@@ -247,8 +250,7 @@ def build_summary(
     add_check(
         checks,
         "parent_route_declared",
-        declaration["selected_derived_route"]
-        == "PARENT_ACTION_Z_phi_g_phi_TO_TRACK_A"
+        declaration["selected_derived_route"] == "PARENT_ACTION_Z_phi_g_phi_TO_TRACK_A"
         and declaration["status"] == "DECLARED_NOT_COMPLETED",
     )
     add_check(

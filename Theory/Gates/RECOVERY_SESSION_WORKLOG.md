@@ -1533,3 +1533,52 @@ Gate: MAT-001 / UVIR-003 interface integrity
 **Decision:** accept scoped R1-R4 remediation passes only. The normalized comoving linear limit gives `d=(-C_m)`, `h=(0,0)`, but mixed lapse and moving-matter shift vertices remain. In the anchored `u_psi=+1` chart, `g_can=-C_m/sqrt(K_Q)=-V_signed`; magnitude-only substitutions are rejected. Tier-1 remains `NOT_MET`, MAT-001 `BLOCKED`, `V` `NOT_COMPUTED`, `K_Q` `NOT_DERIVED`, and Stage 4A `CLOSED`.
 
 **What was abandoned or superseded:** the old `B=+M_x^T` bridge, self-attested H1.3 source absence, global interpretation of `h=0`, and magnitude-only `|g_can|=V` as a matching contract. Earlier worklog entries remain as provenance and are superseded where these conventions conflict.
+## 2026-08-07 - MAT remediation R5 action identifiability
+
+Gate: MAT-001 microscopic matching decision
+
+**What changed:** added an exact identifiability calculation for the declared
+R3 conformal matter plus Track-A force action. It verifies
+`V=C_m/sqrt(K_Q)` is field-redefinition invariant, exhibits the continuous
+coefficient family admitted at arbitrary nonzero signed `V`, and rejects
+`K_Q=1`, `C_m=C_IR`, fixed `C_obs`, the Conditional UVIR route-R5 anchor and
+an unbacked RR2 residue as Derived closures. Mutation tests reject invented
+coefficient relations and premature status promotion. The consolidated
+remediation runner now covers 22 outputs.
+
+**Decision:** accept `PASS_MAT001_R5_IDENTIFIABILITY_AUDIT_HOLD` with matching
+verdict `HOLD_DECLARED_ACTION_UNDERDETERMINES_V`. This is a no-go result within
+the current declared action class, not a claim that all microscopic
+completions fail. MAT-001 remains `BLOCKED`, `V` remains `NOT_COMPUTED`, `K_Q`
+remains `NOT_DERIVED`, UVIR-003 remains `IN_PROGRESS`, and Stage 4A remains
+`CLOSED`.
+
+**What is required next:** a named microscopic calculation of
+`g_phi/sqrt(Z_phi)`, a live normalized signed matter-to-physical-mode residue,
+or an independently justified coefficient relation with enough physical input
+to fix or rigorously bound `V`. No further coefficient inventory substitutes.
+## 2026-08-07 - R5 pathway survey and acyclic provenance repair
+
+Gate: MAT-001 microscopic matching research route
+
+**What changed:** searched connected Scite, SciSpace, Notion, Slack, Agora and
+Wolfram resources for a coefficient-matching route. Primary literature and an
+independent symbolic elimination show that a shift-symmetric density portal can
+derive a three-halves finite-density pressure and a derivative
+`rho_b*pi_dot` vertex, but not the direct static `rho_b*pi` source required by
+the current force chart. Standard superfluid-dark-matter matter couplings remain
+phenomenological/soft-breaking inputs. A scale-compensator plus superfluid parent
+is the first identified candidate capable of tying normalization and matter
+coupling to one scale, but it changes or mixes scalar modes and remains
+`RESEARCH_CANDIDATE_ONLY`.
+
+**Provenance repair:** H1.1-H1.2 now inventories an explicit upstream source
+set only, and H1.3 no longer treats the Master Research Plan as derivation
+evidence. This removes the cycle in which downstream status/governance text
+changed upstream H1 hashes. Mutation suites still fail closed.
+
+**Decision:** open bounded research fork `R5-P1_SCALE_COMPENSATOR_PARENT_FORK`.
+Require a covariant action, DOF/symmetry ledger, finite-density background,
+complete constrained scalar reduction, signed physical-mode residue, stability,
+cutoff, screening, PPN and lensing checks. Do not promote MAT-001, `V`, `K_Q`,
+UVIR-003 or Stage 4A.

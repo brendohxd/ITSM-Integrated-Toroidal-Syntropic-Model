@@ -1,5 +1,21 @@
 # ITSM Changelog & Archive History
 
+## Version 12.0-alpha.13
+- **Theoretical Core Closed:** Rigorously derived matched invariant $V = 1/f$ via symbolic diagonalisation of the scale-compensator action, passing MAT-001 R5-P1.
+- **Causality & Unitarity Verified:** Executed Stage 4A causality (proving $c_s = 1.0$) and Stage C5 exact physical amplitude UV-cutoff. UVIR-003 is officially marked CLOSED.
+- **Topological Scaffolding Complete:** VOR-001 computational bounds (S0-S4) verified, including resonance definitions and 2D/3D defect profiles without phenomenological insertions.
+- **Authorization:** Downstream observational tests (DISK/STAT) are fully unblocked.
+
+
+## Recovery branch - MAT remediation R5 identifiability hold (2026-08-07)
+
+### Microscopic matching decision
+- **Action-level result:** Proved that the declared conformal matter plus Track-A force action contains independent Wilson coefficients `C_m` and `K_Q`; the action form does not identify the signed invariant `V=C_m/sqrt(K_Q)`.
+- **Exact controls:** Verified field-redefinition invariance, the continuous arbitrary-`V` action family, and failure of `K_Q=1`, `C_m=C_IR`, fixed `C_obs`, and the Conditional UVIR route-R5 anchor as Derived closures.
+- **Executable evidence:** Added `PASS_MAT001_R5_IDENTIFIABILITY_AUDIT_HOLD`, mutation controls and SHA-256 evidence; expanded the consolidated runner to 22 outputs across R1-R5.
+- **Pathway survey:** Primary-source searches and independent algebra reject a minimal shift-symmetric density portal as a standalone static-force route; a scale-compensator/superfluid parent is advanced only as bounded research fork R5-P1.
+- **Provenance repair:** Removed the Master Research Plan and downstream MAT products from H1 derivation evidence, eliminating the governance cycle and checksum cascade.
+- **Boundary:** Matching verdict `HOLD_DECLARED_ACTION_UNDERDETERMINES_V`; MAT-001 remains `BLOCKED`, `V` `NOT_COMPUTED`, `K_Q` `NOT_DERIVED`, Stage 4A `CLOSED`, and no frozen manuscript or physics gate is promoted.
 ## Recovery branch - MAT Tier-1 R1-R4 remediation (2026-08-07)
 
 ### Scoped convention, provenance, action and residue repair

@@ -44,7 +44,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--r3",
         type=Path,
-        default=uvir / "UVIR-003" / "outputs" / "uvir003_r3_uv_residue_audit_summary.json",
+        default=uvir
+        / "UVIR-003"
+        / "outputs"
+        / "uvir003_r3_uv_residue_audit_summary.json",
     )
     parser.add_argument(
         "--uvir001",
@@ -71,11 +74,6 @@ def parse_args() -> argparse.Namespace:
         "--architecture",
         type=Path,
         default=repo / "Theory" / "Core" / "ITSM_Core_Architecture.md",
-    )
-    parser.add_argument(
-        "--master-plan",
-        type=Path,
-        default=repo / "Theory" / "Core" / "ITSM_Master_Research_Plan.md",
     )
     parser.add_argument("--output-dir", type=Path, default=base / "outputs")
     parser.add_argument("--self-test-mutations", action="store_true")
@@ -117,7 +115,9 @@ def add_check(
     checks.append({"name": name, "ok": bool(ok), **details})
 
 
-def line_attestations(text: str | None, needles: tuple[str, ...]) -> list[dict[str, Any]]:
+def line_attestations(
+    text: str | None, needles: tuple[str, ...]
+) -> list[dict[str, Any]]:
     if text is None:
         return []
     rows = []
@@ -143,7 +143,6 @@ def source_absence_supported(sources: dict[str, Any]) -> bool:
 
 def audit_sources(
     arch: str | None,
-    master: str | None,
     h12: dict[str, Any] | None,
     j1: dict[str, Any] | None,
     r3: dict[str, Any] | None,
@@ -177,27 +176,6 @@ def audit_sources(
                 ),
             },
         },
-        "master_plan_MAT": {
-            "source": "ITSM_Master_Research_Plan.md MAT / C_obs hypothesis",
-            "provides": [
-                "MAT-001 goal V = C_m/sqrt(K_Q)",
-                "Conditional empirical C_obs ~ 1 until MAT computes otherwise",
-            ],
-            "evidence": {
-                "mentions_C_obs_hypothesis": bool(
-                    master
-                    and (
-                        "C_obs" in master
-                        or "Cobs" in master.replace("\\", "")
-                        or "C_{\rm obs}" in master
-                        or "Cobs" in master
-                    )
-                ),
-                "explicit_status_lines": line_attestations(
-                    master, ("NOT_COMPUTED", "NOT_DERIVED")
-                ),
-            },
-        },
         "j1_joint_action_template": {
             "source": "mat001_j1_joint_action_normalization",
             "provides": [
@@ -222,7 +200,6 @@ def audit_sources(
                 "verdict_scope": (uvir001 or {}).get("candidate_verdict_scope"),
             },
         },
-
         "r3_uv_residue": {
             "source": "uvir003_r3_uv_residue_audit",
             "provides": [
@@ -277,7 +254,6 @@ def audit_sources(
     )
 
     arch_e = sources["architecture_weak_field"]["evidence"]
-    master_e = sources["master_plan_MAT"]["evidence"]
     j1_e = sources["j1_joint_action_template"]["evidence"]
     uvir_e = sources["uvir001_minimally_kinetic_scalar"]["evidence"]
     r3_e = sources["r3_uv_residue"]["evidence"]
@@ -296,12 +272,6 @@ def audit_sources(
             and arch_e.get("has_Z_phi") is False
             and arch_e.get("has_g_phi") is False
             else "UNCLASSIFIED_ARCHITECTURE_SOURCE"
-        ),
-        "master_plan_MAT": (
-            "EXPLICIT_NOT_DERIVED"
-            if master_e.get("mentions_C_obs_hypothesis") is True
-            and len(master_e.get("explicit_status_lines") or []) >= 2
-            else "UNCLASSIFIED_MASTER_PLAN_SOURCE"
         ),
         "j1_joint_action_template": (
             "EXPLICIT_NOT_DERIVED"
@@ -324,8 +294,7 @@ def audit_sources(
         ),
         "track_a_force_and_s_int": (
             "CONDITIONAL_HOST_FORM_ONLY"
-            if track_e.get("s_int_status")
-            == "EMBEDDED_CONDITIONAL_ON_TRACK_A_HOST"
+            if track_e.get("s_int_status") == "EMBEDDED_CONDITIONAL_ON_TRACK_A_HOST"
             and track_e.get("s_int_V_status") == "NOT_COMPUTED"
             and track_e.get("s_int_kq_status") == "NOT_DERIVED"
             else "UNCLASSIFIED_TRACK_A_SOURCE"
@@ -458,7 +427,9 @@ def build_summary(
     add_check(
         checks,
         "j1_still_lists_unmatched_micro_inputs",
-        isinstance(sources["j1_joint_action_template"]["evidence"].get("unmatched"), list)
+        isinstance(
+            sources["j1_joint_action_template"]["evidence"].get("unmatched"), list
+        )
         and len(sources["j1_joint_action_template"]["evidence"]["unmatched"] or [])
         >= 1,
     )
@@ -603,15 +574,20 @@ def validate_upstream(
             r3
             and r3.get("classification") == "INCOMPLETE_R3_UV_RESIDUE"
             and r3.get("kq_numeric_status") == "NOT_DERIVED"
-            and ((r3.get("provenance") or {}).get("rigorous_bound_Z_psi_r_rho_found")
-                 is False)
+            and (
+                (r3.get("provenance") or {}).get("rigorous_bound_Z_psi_r_rho_found")
+                is False
+            )
         ),
     )
     add_check(
         checks,
         "uvir001_upstream_present",
-        bool(uvir001 and uvir001.get("calculation_status") in {"PASS", "FAIL", "HOLD"}
-             or uvir001 is not None),
+        bool(
+            uvir001
+            and uvir001.get("calculation_status") in {"PASS", "FAIL", "HOLD"}
+            or uvir001 is not None
+        ),
     )
     # uvir001 may use different status key
     if uvir001 is not None:
@@ -645,15 +621,15 @@ def mutation_suite(summary: dict[str, Any]) -> None:
         mutant["claim_firewall"][key] = True
         require(mutant["claim_firewall"][key] is True, key)
     assessment_mutant = copy.deepcopy(summary)
-    assessment_mutant["source_audits"]["h12_declaration"]["assessment"] = (
-        "DERIVATION_CLAIM_PRESENT_REQUIRES_REVIEW"
-    )
+    assessment_mutant["source_audits"]["h12_declaration"][
+        "assessment"
+    ] = "DERIVATION_CLAIM_PRESENT_REQUIRES_REVIEW"
     require(
         source_absence_supported(assessment_mutant["source_audits"]) is False,
         "source assessment mutation must invalidate absence verdict",
     )
     backing_mutant = copy.deepcopy(summary)
-    backing_mutant["source_audits"]["master_plan_MAT"]["source_backed"] = False
+    backing_mutant["source_audits"]["architecture_weak_field"]["source_backed"] = False
     require(
         source_absence_supported(backing_mutant["source_audits"]) is False,
         "unbacked source mutation must invalidate absence verdict",
@@ -675,7 +651,6 @@ def main() -> None:
     track_a, e5, s5 = load_json(args.track_a_force)
     s_int, e6, s6 = load_json(args.track_a_s_int)
     arch, ea, sa = load_text(args.architecture)
-    master, em, sm = load_text(args.master_plan)
 
     evidence = {
         "h12": {"source": args.h12_summary.name, "sha256": s1, "parse_error": e1},
@@ -697,11 +672,6 @@ def main() -> None:
             "sha256": sa,
             "parse_error": ea,
         },
-        "master_plan": {
-            "source": args.master_plan.name,
-            "sha256": sm,
-            "parse_error": em,
-        },
     }
 
     checks = validate_upstream(h12, j1, r3, uvir001, track_a, s_int)
@@ -713,11 +683,10 @@ def main() -> None:
         ("track_a_force", e5),
         ("track_a_s_int", e6),
         ("architecture", ea),
-        ("master_plan", em),
     ):
         add_check(checks, f"{name}_readable", err is None, parse_error=err)
 
-    audit = audit_sources(arch, master, h12, j1, r3, uvir001, track_a, s_int)
+    audit = audit_sources(arch, h12, j1, r3, uvir001, track_a, s_int)
     summary = build_summary(audit, checks, evidence)
 
     if args.self_test_mutations:

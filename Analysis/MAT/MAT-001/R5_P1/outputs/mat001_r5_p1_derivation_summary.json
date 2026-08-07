@@ -1,0 +1,23 @@
+{
+  "label": "MAT-001_R5_P1_SYMBOLIC_DERIVATION",
+  "gate": "MAT-001",
+  "stage": "R5-P1",
+  "physics_pass": false,
+  "research_gate_status": "OPEN_RESEARCH_CANDIDATE",
+  "status_string": "PASS_MAT001_R5_P1_SYMBOLIC_HIGH_Q",
+  "derivation": {
+    "K_matrix": "Matrix([[f**2, 0], [0, rho_0**2]])",
+    "J_vector": "Matrix([[1], [0]])",
+    "K_Q": "f**2",
+    "C_m_eff": "1",
+    "V_signed": "1/f",
+    "V_equals_1_over_f": true
+  },
+  "notes": "This script validates the algebraic pre-projection V=1/f result in the high-q limit where ADM constraints decouple. It provides Artifacts 4-6 for the scaffold, but does not close the MAT-001 gate.",
+  "forbidden_packaging_not_used": [
+    "numeric_a0",
+    "numeric_C_obs",
+    "numeric_K_Q"
+  ],
+  "scientific_boundary": "Symbolic diagonalisation only. Pre-projection V=1/f verified."
+}

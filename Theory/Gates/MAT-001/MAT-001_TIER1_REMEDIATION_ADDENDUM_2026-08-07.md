@@ -155,10 +155,11 @@ dates and changed citation status recorded explicitly.
   `derives_numeric_* = False` fields. It classifies attestations parsed from all
   declared sources; unreadable, unclassified, contradictory, or unbacked input
   fails closed.
+- The H1.1-H1.2 inventory is now restricted to an explicit upstream source set, and H1.3 no longer hashes the Master Research Plan. This removes downstream-governance feedback from the derivation graph.
 - H1.3 evidence mutations for a derivation claim and a lost source backing both
   invalidate the absence predicate. Normal status remains
   `PASS_MAT001_PARENT_ACTION_H13_INCOMPLETE_SOURCES_AUDITED`, with digest
-  `B1813BEE4477AB93D42AA3DFF276FD081853C0DB214BFBA4A07465A1A45A91B5`.
+  `C43E84A180D8F9C9DDA8BE1DAA3DCA8FFE3E83D67329B15066C698DEF0835013`.
 - RR1, RR2 and the bounded RR2-H7 package were regenerated from the new H1.3
   digest. No MAT, UVIR, \(V\), \(K_Q\), or Stage 4A status was promoted.
 ## R3-R4 close-out record
@@ -193,10 +194,36 @@ dates and changed citation status recorded explicitly.
   `S_INT_DH_EXPORT`, Track-A and RR2.
 - The consolidated runner
   `python -B Analysis/MAT/MAT-001/REMEDIATION/mat001_tier1_remediation_runner.py`
-  completed all 21 ordered outputs, ran every available mutation suite,
+  completed all 21 ordered outputs at the R1--R4 close-out, ran every available mutation suite,
   verified each JSON/SHA-256 pair, and ended with
   `MAT=BLOCKED | V=NOT_COMPUTED | K_Q=NOT_DERIVED | Stage4A=CLOSED`.
 - Final bounded-package digest:
-  `AFFBA6BE11468881AEAA8610961988947B1A1777153784E8660E0FE9868855A7`.
+  `D036D164892492AC3692E5186515781F8591B95341875D00E6AF8B39F5FFEC15`.
   Tier-1 readiness remains `NOT_MET`, with hold digest
   `43FB26DD0A6063368B34ACBE438E82F3B1F0440B3BE0F92AB2FD31E4AE1A644E`.
+## R5 microscopic matching decision
+
+- R5 is the post-R1--R4 MAT remediation item, not the pre-existing UVIR-003
+  Conditional AQUAL route R5.
+- The executable action-level identifiability audit proves
+  `V=C_m/sqrt(K_Q)` is invariant under positive field rescaling, while the
+  declared R3 matter action and Track-A force action provide no relation
+  between their independent `C_m` and `K_Q` Wilson coefficients.
+- For every `kappa>0` and nonzero signed `V_target`, the family
+  `K_Q=kappa`, `C_m=V_target*sqrt(kappa)` is admitted by the action form.
+  Hence the current action class does not select or bound `V`.
+- `K_Q=1`, `C_m=C_IR`, fixed `C_obs`, the Conditional UVIR route-R5 anchor,
+  and the symbolic RR2 identity all fail to provide Derived closure.
+- Scoped status: `PASS_MAT001_R5_IDENTIFIABILITY_AUDIT_HOLD`.
+  Matching verdict: `HOLD_DECLARED_ACTION_UNDERDETERMINES_V`.
+- R5 digest:
+  `20B6A0BD506755DCFB8933668C8F2DC99B90C8BC4917DF8982BB9F59C0C50F24`.
+- The research-only R5 pathway survey rejects a minimal shift-symmetric density portal as a standalone static-force source and advances a scale-compensator/superfluid parent only to bounded fork R5-P1.
+- The consolidated runner now verifies 22 ordered outputs across R1--R5 and
+  retains `MAT=BLOCKED | V=NOT_COMPUTED | K_Q=NOT_DERIVED | Stage4A=CLOSED`.
+
+The hold can be lifted only by a named microscopic calculation of
+`g_phi/sqrt(Z_phi)`, a live normalized signed matter-mode residue, or an
+independently justified relation with enough physical input to fix or bound
+`V`. Another inventory or normalization convention is not an admissible next
+step.

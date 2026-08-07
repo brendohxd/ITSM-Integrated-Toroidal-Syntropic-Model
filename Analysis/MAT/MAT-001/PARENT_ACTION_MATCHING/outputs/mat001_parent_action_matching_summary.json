@@ -195,56 +195,37 @@
   "plan_step": "H1.1_H1.2",
   "repo_inventory": {
     "hit_paths_capped": {
-      "Z_phi": [
-        "Analysis/MAT/MAT-001/J1_JOINT_ACTION/mat001_j1_joint_action_normalization.py",
-        "Analysis/MAT/MAT-001/J1_JOINT_ACTION/outputs/mat001_j1_joint_action_normalization_summary.json",
-        "Analysis/MAT/MAT-001/J2_MODE_PROJECTION/mat001_j2_basis_covariant_mode_projection.py",
-        "Analysis/MAT/MAT-001/J2_MODE_PROJECTION/outputs/mat001_j2_basis_covariant_mode_projection_summary.json",
-        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/mat001_kq_derivation_dig_audit.py",
-        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/outputs/mat001_kq_derivation_dig_summary.json",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_h13_source_derivation_audit.py",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_matching_attempt.py",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_rr1_parent_action_skeleton_declaration.py",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_rr2_residue_pathway_attempt.py",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/outputs/mat001_parent_action_h13_source_audit_summary.json",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/outputs/mat001_rr1_parent_action_skeleton_summary.json"
-      ],
+      "Z_phi": [],
       "Z_psi": [
-        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/mat001_kq_derivation_dig_audit.py",
-        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/outputs/mat001_kq_derivation_dig_summary.json",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_h13_source_derivation_audit.py",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_matching_attempt.py",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/outputs/mat001_parent_action_h13_source_audit_summary.json",
-        "Analysis/MAT/MAT-001/PLAN_COMPLETION/mat001_plan_rr2_through_h7_package.py",
-        "Analysis/MAT/MAT-001/PLAN_COMPLETION/outputs/mat001_plan_rr2_through_h7_summary.json",
-        "Analysis/MAT/MAT-001/TRACK_A_KQ/mat001_track_a_kq_readiness_audit.py",
-        "Analysis/MAT/MAT-001/TRACK_A_KQ/outputs/mat001_track_a_kq_readiness_summary.json",
         "Analysis/UVIR/UVIR-003/outputs/uvir003_conditional_matching_floor_summary.json",
         "Analysis/UVIR/UVIR-003/outputs/uvir003_matching_route_program_summary.json",
-        "Analysis/UVIR/UVIR-003/outputs/uvir003_r3_uv_residue_audit_summary.json"
+        "Analysis/UVIR/UVIR-003/outputs/uvir003_r3_uv_residue_audit_summary.json",
+        "Analysis/UVIR/UVIR-003/outputs/uvir003_stage2c_floor_diagnostics_summary.json",
+        "Analysis/UVIR/UVIR-003/outputs/uvir003_stage4_m3m6_conditional_limit_summary.json",
+        "Analysis/UVIR/UVIR-003/uvir003_conditional_matching_floor.py",
+        "Analysis/UVIR/UVIR-003/uvir003_matching_route_program.py",
+        "Analysis/UVIR/UVIR-003/uvir003_r3_uv_residue_audit.py",
+        "Analysis/UVIR/UVIR-003/uvir003_stage2c_floor_diagnostics.py",
+        "Analysis/UVIR/UVIR-003/uvir003_stage4_m3m6_conditional_limit.py"
       ],
-      "g_phi": [
-        "Analysis/MAT/MAT-001/J1_JOINT_ACTION/mat001_j1_joint_action_normalization.py",
-        "Analysis/MAT/MAT-001/J1_JOINT_ACTION/outputs/mat001_j1_joint_action_normalization_summary.json",
-        "Analysis/MAT/MAT-001/J2_MODE_PROJECTION/mat001_j2_basis_covariant_mode_projection.py",
-        "Analysis/MAT/MAT-001/J2_MODE_PROJECTION/outputs/mat001_j2_basis_covariant_mode_projection_summary.json",
-        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/mat001_kq_derivation_dig_audit.py",
-        "Analysis/MAT/MAT-001/KQ_DERIVATION_DIG/outputs/mat001_kq_derivation_dig_summary.json",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_h13_source_derivation_audit.py",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_matching_attempt.py",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_rr1_parent_action_skeleton_declaration.py",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_rr2_residue_pathway_attempt.py",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/outputs/mat001_parent_action_h13_source_audit_summary.json",
-        "Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/outputs/mat001_rr1_parent_action_skeleton_summary.json"
-      ],
+      "g_phi": [],
       "numeric_Z_phi_assignment": [],
       "numeric_g_phi_assignment": []
     },
-    "interpretation": "Symbol mentions of Z_phi/g_phi are expected from J1 templates. Absence of numeric assignment means parent-action matching is incomplete.",
+    "interpretation": "No numeric Z_phi/g_phi assignment occurs in the explicit upstream derivation-source set; parent-action matching remains incomplete.",
+    "inventory_scope": [
+      "Analysis/UVIR",
+      "Theory/Core/ITSM_Core_Architecture.md",
+      "Theory/Gates/UVIR-003"
+    ],
     "microscopic_coefficients_status": "NOT_DERIVED_NUMERIC_ABSENT",
     "numeric_Z_phi_or_g_phi_assignment_found": false,
-    "scanned_files": 240,
-    "symbol_mentions_present": true
+    "scanned_files": 166,
+    "scope_exclusions": [
+      "Analysis/MAT downstream gate products",
+      "Theory/Core/ITSM_Master_Research_Plan.md governance record"
+    ],
+    "symbol_mentions_present": false
   },
   "scientific_boundary": "A PASS declares the parent-action Derived route for Track-A matching and inventories the repo for microscopic Z_phi/g_phi. Finding them absent is an incompleteness result, not a derivation of V or K_Q.",
   "serial_next": "H1.3 derivation attempt from declared architecture/UVIR sources, or explicit incompleteness bound; do not open Stage 4A.",

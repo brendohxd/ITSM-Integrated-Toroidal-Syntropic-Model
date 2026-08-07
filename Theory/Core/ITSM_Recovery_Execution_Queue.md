@@ -34,7 +34,9 @@ outputs remain the evidence authority.
 | P0 | RR1 parent-action skeleton declaration | **completed (unmatched coeffs)** | Minimal \(Z_\phi\) kinetic + \(g_\phi\) vertex + Track-A map declared; all micro coeffs still NOT_DERIVED |
 | P0 | RR2–H7 bounded completion package | **completed (bounded)** | RR2 incompleteness freeze; RR3 chart convention; H2 symbolic invariance; H3–H6 holds/firewalls; H7 hygiene |
 | P0 | RR2 residue pathway attempt | **completed (incomplete)** | Symbolic \(|g_{\rm can}|=V\) on Track-A; no live bare-\(K_Q\)-free export; diagnostics rejected |
-| P0 | RR2 true Derived micro/residue | **open (physics wall)** | Needs UV \(Z_\phi,g_\phi\) or dynamical amplitude/residue — **no further inventory substitutes** |
+| P0 | MAT remediation R5 action identifiability | **completed (HOLD)** | Exact audit proves independent `C_m`,`K_Q` underdetermine signed `V`; shortcut closures and UVIR-route namespace collision rejected; new microscopic relation or live residue required |
+| P0 | R5-P1 scale-compensator parent fork | **open (research candidate)** | Minimal shift-symmetric density portal lacks a direct static `rho_b*pi` source; test one-scale compensator/superfluid action, physical-mode residue, stability, cutoff and local-gravity constraints |
+| P0 | RR2 true Derived micro/residue | **open (physics wall; R5 no-go proven)** | Declared action underdetermines `V`; needs microscopic \(g_\phi/\sqrt{Z_\phi}\) or live normalized signed residue — **no further inventory substitutes** |
 | P0 | H3–H5 true reopen/PASS | **blocked on RR2** | Stage 4A/M2/MAT PASS remain correctly closed |
 | P0 | Lane B Conditional dual-status methods | **open (parallel only)** | Probes allowed; never substitute H1–H5 |
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; C2 calculation priority is not identity selection |

@@ -89,6 +89,19 @@ Conditional work may run in parallel for methods only.
 
 **H1 gate for H2–H5:** blocked until RR1–RR3 close (or residue \(V\) path succeeds).
 
+### Remediation R5 identifiability decision (2026-08-07)
+
+`PASS_MAT001_R5_IDENTIFIABILITY_AUDIT_HOLD` proves that the declared R3
+conformal matter action plus Track-A force action leaves `C_m` and `K_Q` as
+independent Wilson coefficients. The action form therefore underdetermines the
+invariant `V=C_m/sqrt(K_Q)`. This is a substantive action-level no-go within
+the declared model class, not another coefficient inventory. Closure now
+requires a named microscopic calculation, a live normalized signed residue,
+or an independently justified relation with enough physical input to fix or
+bound `V`.
+
+The matching verdict is `HOLD_DECLARED_ACTION_UNDERDETERMINES_V`. H2--H5
+Derived work remains blocked. The bounded [R5 pathway survey](../Gates/MAT-001/MAT-001_R5_PATHWAY_SURVEY_2026-08-07.md) rejects the minimal symmetry-preserving density portal as a standalone static-force route and advances a scale-compensator/superfluid parent only as research candidate `R5-P1`.
 ---
 
 ## H2 — Matched invariant (redefinition-safe)
@@ -188,8 +201,10 @@ Every checkpoint:
 1. **H0** — commit/push outstanding audits + this plan. **DONE**  
 2. **H1.1–H1.4 / RR1** — parent matching + skeleton. **DONE (incomplete coeffs)**  
 3. **RR2–H7 bounded package** — **DONE** (`PASS_MAT001_PLAN_RR2_H7_BOUNDED_COMPLETION`)  
-4. **True Derived remaining:** RR2 micro/residue only — cannot be closed without new physics.  
-5. Do not open H3 Stage 4A without Derived invariant.
+4. **R5 identifiability:** DONE as `HOLD_DECLARED_ACTION_UNDERDETERMINES_V`; the declared action cannot fix `V`.
+5. **R5-P1 candidate:** test a scale-compensator plus finite-density parent action; first close the minimal density-portal static-source obstruction. This is `RESEARCH_CANDIDATE_ONLY`.
+6. **True Derived remaining:** compute the signed physical-mode residue after the full constraint/mode reduction; reject the fork if stability, cutoff, screening, PPN, or lensing domains fail.
+7. Do not open H3 Stage 4A without a Derived invariant.
 
 ### Bounded completion snapshot (2026-08-06)
 

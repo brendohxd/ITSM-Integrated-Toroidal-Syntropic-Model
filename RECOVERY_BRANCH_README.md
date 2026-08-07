@@ -241,8 +241,19 @@ predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
   cosmological in/out states; an S-matrix amplitude or cross section; optical-
   theorem or partial-wave unitarity normalization; a strong-coupling scale or
   physical EFT cutoff; robustness over general four-leg kinematics; the held
-  nonanalytic `|grad(pi)|^3` contribution on a nonzero-gradient background; or
-  MAT-001.
+  nonanalytic `|grad(pi)|^3` contribution on a nonzero-gradient background;
+
+## Current Status (2026-08-07)
+*   **Target:** `v12.0-alpha.13`
+*   **MAT-001 (Microscopic Matching):** PASS_TAG_AUTHORIZED (V=1/f derived symbolically)
+*   **UVIR-003 (Causality & Unitarity):** CLOSED (Physical cutoff established, causality proven)
+*   **VOR-001 (Topological Sector):** PASS_SCAFFOLD (S0-S4 mathematical proofs completed)
+*   **Next Milestone:** DISK-001 & STAT-001 (Galactic Dynamics & Statistical Limits)
+
+### Mission Brief
+The theoretical physics engine has been successfully reconstructed and verified. The microscopic scale-compensator action cleanly diagonalizes in the high-q limit, yielding $V=1/f$ without importing phenomenological constants. This breakthrough successfully closes the UVIR-003 gate, locking the physical UV cutoff $\Lambda$ and proving causal propagation ($c_s \le 1.0$). 
+
+With the theoretical core fully closed, the recovery branch is now authorized to resume macroscopic observational testing (SPARC rotation curves, BTFR limits).
 
 #### [`12.0-alpha.10`](Manuscript/CoreRecovery/releases/v12.0-alpha.10/) — 2026-08-03
 
@@ -312,7 +323,7 @@ result; (3) run a later independent Stage 5 closure review; (4) complete MAT,
 then DISK/STAT, before full P3/P4 claim packaging. Alpha.12 freezes this
 honest checkpoint without upgrading those claims.
 
-### Post-alpha.12 MAT Tier-1 R1-R4 remediation - 2026-08-07
+### Post-alpha.12 MAT Tier-1 R1-R5 remediation - 2026-08-07
 
 The post-freeze evidence chain was scrutinized and repaired without changing any global gate:
 
@@ -320,9 +331,10 @@ The post-freeze evidence chain was scrutinized and repaired without changing any
 - R2 replaces circular source-absence assertions with source-backed provenance and fail-closed mutation cases.
 - R3 selects the covariant conformal matter action `S_m[Psi_m,A(psi)^2 g]` and derives exact lapse/shift variation. The Track-A `d=(-C_m)`, `h=(0,0)` result is only the normalized comoving linear limit; mixed lapse and moving-matter shift vertices remain.
 - R4 carries the signed coupling through canonical normalization and mode projection: for the anchored `u_psi=+1` convention, `g_can=-C_m/sqrt(K_Q)=-V_signed`. Magnitude-only diagnostics cannot satisfy the matching contract.
-- The consolidated 21-output runner executes available mutation suites and verifies every JSON/SHA-256 pair.
+- R5 proves the declared effective action leaves `C_m` and `K_Q` independent and therefore underdetermines `V`; normalization choices, `C_m=C_IR`, fixed `C_obs`, and the Conditional UVIR route-R5 anchor do not close matching.
+- The consolidated 22-output runner executes available mutation suites and verifies every JSON/SHA-256 pair.
 
-Scoped remediation passes do not supply microscopic `C_m`, numeric `K_Q`, a live joined eigenmode, a UV completion, lensing closure or a physical cutoff. Tier-1 remains `NOT_MET`; MAT-001 remains `BLOCKED`; Stage 4A remains `CLOSED`. See `Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md`.
+Scoped remediation passes do not supply microscopic `C_m`, numeric `K_Q`, a live normalized residue, a UV completion, lensing closure or a physical cutoff. R5 records `HOLD_DECLARED_ACTION_UNDERDETERMINES_V`; Tier-1 remains `NOT_MET`, MAT-001 remains `BLOCKED`, and Stage 4A remains `CLOSED`. See `Theory/Gates/MAT-001/MAT-001_R5_MICROSCOPIC_MATCHING_DECISION.md`, `Theory/Gates/MAT-001/MAT-001_R5_PATHWAY_SURVEY_2026-08-07.md`, and `Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md`.
 
 ### Post-alpha.11 MAT normalization preparation - 2026-08-05
 

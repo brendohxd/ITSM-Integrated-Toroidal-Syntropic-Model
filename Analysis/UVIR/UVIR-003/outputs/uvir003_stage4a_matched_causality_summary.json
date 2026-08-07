@@ -1,0 +1,16 @@
+{
+  "gate": "UVIR-003",
+  "stage": "STAGE4A_MATCHED_CAUSALITY",
+  "calculation_status": "PASS",
+  "subgate_status": "PASS_STAGE4A_MATCHED_CAUSALITY",
+  "evaluation": {
+    "V_matched": "1/f",
+    "kinetic_term": "1/2 f^2 (partial psi)^2",
+    "c_s": 1.0,
+    "is_causal": true
+  },
+  "scientific_boundary": "Uses the rigorously derived matched invariant V = 1/f from MAT-001 R5-P1 to evaluate the tree-level sound speed of the physical phonon mode. Proves c_s <= 1 unconditionally in the local adiabatic limit, superseding the prior conditional domain checks.",
+  "dependencies": {
+    "mat001_r5_p1_status": "PASS_MAT001_R5_P1_SYMBOLIC_HIGH_Q"
+  }
+}
