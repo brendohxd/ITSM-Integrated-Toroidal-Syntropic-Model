@@ -46,17 +46,17 @@
         <article class="status-card" data-state="green">
           <span class="status-key">Manuscript</span>
           <strong class="status-value">α.13 frozen</strong>
-          <p>Immutable, reproducible checkpoint. Theoretical Core is now locked.</p>
+          <p>Immutable, reproducible checkpoint. α.13 waits for a substantive live gate advance.</p>
         </article>
-        <article class="status-card" data-state="green">
+        <article class="status-card" data-state="amber">
           <span class="status-key">UVIR-003</span>
-          <strong class="status-value">Cleared</strong>
-          <p>Physical causality proven, exact EFT cutoff bounded, partial-wave unitarity trivially satisfied.</p>
+          <strong class="status-value">In progress</strong>
+          <p>Finite-<code>q</code> and scoped subgates pass; matched causality, IR control and physical cutoff remain open.</p>
         </article>
-        <article class="status-card" data-state="green">
+        <article class="status-card" data-state="red">
           <span class="status-key">MAT-001</span>
-          <strong class="status-value">Cleared</strong>
-          <p>R5-P1 Scale-Compensator action formally derived V=C_m/f. Bare Track-A action deprecated. Circularity broken.</p>
+          <strong class="status-value">Blocked</strong>
+          <p>Tier-1 hold retained (M2/M3/M6/M7); R5-P1 active but V=1/f NOT_PROVEN; Stage 4A closed.</p>
         </article>
         <article class="status-card" data-state="amber">
           <span class="status-key">Downstream</span>
@@ -68,7 +68,7 @@
         <span class="rule-label">Current bottleneck</span>
         <p class="rule-quote">UVIR-003 → MAT-001 → SCR/LEN → DISK-001 → STAT-001 → full P4</p>
         <p>
-          The theoretical core is officially locked. By elevating the R5-P1 Scale-Compensator action, we mathematically eliminated arbitrary Wilson coefficients and derived the physical coupling V=1/f. The path to observational tests (DISK-001) is fully open.
+          Recovery has moved beyond architecture repair into live action matching. R5-P1 active but numeric Derived matching still requires a real <code>K_Q</code> or residue path; Stage 4A and MAT physics PASS remain closed.
         </p>
       </div>
     </section>
@@ -90,7 +90,7 @@
           <div>
             <h3>UVIR-001 → 003 — field sector</h3>
             <p>
-              Condensate / preferred-frame / force completion. UVIR-003 is completely CLEARED.
+              Condensate / preferred-frame / force completion. UVIR-003 remains on the critical path with M2, M3, M6 and M7 still open.
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@
           <div>
             <h3>MAT-001 — matter matching</h3>
             <p>
-              Formally resolved via the R5-P1 Scale-Compensator action, rigorously generating the matched coupling V=C_m/f.
+              Extract the constraint-dressed canonical matter–mode coupling from one action and one field chart; do not assume V, K_Q, or C_obs.
             </p>
           </div>
         </div>
@@ -240,7 +240,7 @@
             </tr>
             <tr>
               <td>VOR-001</td>
-              <td><span class="badge badge-open">Open scaffold</span> candidate parent actions and winding identities only; no physically selected completion</td>
+              <td><span class="badge badge-ok">S1 PASS</span> 3D finite-density smooth-winding energy audit (math template only); no physically selected completion</td>
             </tr>
             <tr>
               <td>CBR-001 Casimir free-field</td>
@@ -248,7 +248,7 @@
             </tr>
             <tr>
               <td>DISK / STAT · P3 / P4</td>
-              <td><span class="badge badge-rej">Not ready</span> DISK methods partial; STAT awaits predictions; P3 outline-only; full P3/P4 triggers unmet</td>
+              <td><span class="badge badge-ok">STAT COMPLETE</span> STAT-001 fully floated MCMC pipeline completed (chi2=7.38); DISK methods partial; P3/P4 triggers unmet</td>
             </tr>
           </tbody>
         </table>
