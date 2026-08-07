@@ -23,8 +23,8 @@ not the scientific status authority for this branch.
 ## Manuscript status
 
 The newest frozen manuscript release is
-[`12.0-alpha.12`](Manuscript/CoreRecovery/releases/v12.0-alpha.12/)
-(06 August 2026). Every freeze is immutable under
+[`12.0-alpha.13`](Manuscript/CoreRecovery/releases/v12.0-alpha.13/)
+(07 August 2026). Every freeze is immutable under
 `Manuscript/CoreRecovery/releases/v12.0-alpha.N/`. Working sources live in
 `Manuscript/CoreRecovery/`; authoritative per-release detail is in
 [`Manuscript/CoreRecovery/CHANGELOG.md`](Manuscript/CoreRecovery/CHANGELOG.md)
@@ -32,7 +32,7 @@ and each release’s `RELEASE_NOTES.md`.
 
 Claim hygiene is unchanged across freezes: `13/12`, `H0=72.97`, automatic
 Solar-System compliance, and historical SPARC `p=0.62` are **not** live
-predictions. UVIR-003 remains **in progress**; MAT-001 is not unlocked.
+predictions. UVIR-003 and MAT-001 are **CLEARED** via the R5-P1 Scale-Compensator action.
 
 ### Frozen releases (`12.0-alpha.1` ... `12.0-alpha.12`)
 

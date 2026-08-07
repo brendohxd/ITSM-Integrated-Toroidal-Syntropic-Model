@@ -1,0 +1,16 @@
+{
+  "gate": "UVIR-003",
+  "stage": "R5-P1 q=0 Channel",
+  "status": "PASS_Q0_HOMOGENEOUS_MODE_WELL_POSED",
+  "q0_kinetic_determinant": {
+    "value": "f**2",
+    "is_singular": false
+  },
+  "q0_propagator": "1/(M_mass**2 - f**2*omega**2)",
+  "homogeneous_source": "-C_m*rho_b_avg",
+  "checks": {
+    "mode_is_well_posed": true,
+    "avoids_Xi_gauge_singularity": true
+  },
+  "conclusion": "The q=0 limit of the dilaton mode evaluates to a strictly non-singular, well-posed physical degree of freedom. Its kinetic determinant is f^2 (non-zero), proving it does not collapse into a gauge orbit like the bare spatial curvature mode. The homogeneous mode correctly represents the cosmological drift of the scale compensator, sourced by the average background matter density."
+}

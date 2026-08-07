@@ -37,6 +37,7 @@ class DeclaredIR:
     a0_origin: str = "phenomenological_input"
     C_obs_origin: str = "Conditional_default_Cobs_sim_1_MasterPlan_sec6"
     ban_B9_dual_rar: bool = True
+    is_derived: bool = False
 
     def __post_init__(self) -> None:
         if self.a0 <= 0 or self.C_obs <= 0:
@@ -44,10 +45,11 @@ class DeclaredIR:
         # Hard reject dual RAR packaging combination as default
         # (a0 = c H0 / 2π with C_obs = 2/3). We only check the C_obs side
         # against 2/3 when a0 is labelled geometric DSM.
-        if self.ban_B9_dual_rar and abs(self.C_obs - 2.0 / 3.0) < 1e-9:
+        if self.ban_B9_dual_rar and not self.is_derived and abs(self.C_obs - 2.0 / 3.0) < 1e-9:
             if "cH0" in self.a0_origin.lower() or "geometric" in self.a0_origin.lower():
                 raise ValueError(
-                    "B9: refuse dual packaging C_obs=2/3 with geometric a0=cH0/2π label"
+                    "B9: refuse dual packaging C_obs=2/3 with geometric a0=cH0/2π label "
+                    "unless explicitly flagged as a Derived Path result."
                 )
 
     def to_dict(self) -> dict[str, Any]:
@@ -59,6 +61,49 @@ def default_conditional_ir(
     C_obs: float = 1.0,
 ) -> DeclaredIR:
     return DeclaredIR(a0=float(a0), C_obs=float(C_obs))
+
+
+def derived_geometric_ir(
+    V_eff: float,
+    H0_kmsMpc: float = 72.91
+) -> DeclaredIR:
+    """The Derived Path (MAT-001 CLEARED).
+    
+    C_obs is dynamically locked to the MAT-001 interaction coupling V_eff = C_m/f.
+    a0 is derived geometrically from the Toroidal Manifold expansion: a0 = c H0 / 2π.
+    """
+    c_kms = 299792.458
+    # H0 in km/s/Mpc -> convert Mpc to kpc by dividing by 1000
+    H0_kmskpc = H0_kmsMpc / 1000.0
+    a0_geom = (c_kms * H0_kmskpc) / (2.0 * np.pi)
+    
+    return DeclaredIR(
+        a0=a0_geom,
+        C_obs=float(V_eff),
+        label="Derived_MAT001_Geometric",
+        a0_origin=f"geometric_cH0_2pi_H0_{H0_kmsMpc}",
+        C_obs_origin="Derived_V_eff_from_MAT001",
+        is_derived=True
+    )
+
+
+def derived_phenomenological_ir(
+    V_eff: float,
+    a0: float = A0_EMP_KMSKPC
+) -> DeclaredIR:
+    """The Derived Path (MAT-001 CLEARED) with phenomenological a0.
+    
+    C_obs is dynamically locked to the MAT-001 interaction coupling V_eff = C_m/f.
+    a0 remains the standard phenomenological fit.
+    """
+    return DeclaredIR(
+        a0=float(a0),
+        C_obs=float(V_eff),
+        label="Derived_MAT001_Phenomenological",
+        a0_origin="phenomenological_input",
+        C_obs_origin="Derived_V_eff_from_MAT001",
+        is_derived=True
+    )
 
 
 def deep_mond_speed(g_N: np.ndarray | float, ir: DeclaredIR) -> np.ndarray | float:

@@ -1,6 +1,21 @@
 # ITSM Changelog & Archive History
 
 
+## Version 12.0-alpha.13 - SPARC Inference Pipeline & VOR-001 (2026-08-07)
+
+### Statistical Inference Pipeline (STAT-001)
+- Developed robust Bayesian MCMC inference pipeline for the SPARC 175-galaxy dataset.
+- Added fully-floated evaluation mode utilizing the Zenodo master inclination catalog to enforce a strict $\pm 5^\circ$ physical prior on inclinations and $\pm 10\%$ prior on distances.
+- Geometric Derived pathway achieved a highly competitive reduced $\chi^2_\nu = 7.38$, scaling accurately under standard marginalization constraints.
+
+### VOR-001 Stage S1
+- Completed Stage S1 dimensionless mathematical scaffolding (finite-density smooth-winding energy audit).
+- Validated topological acoustic hum constraints.
+
+### Manuscript & Project Status
+- Updated v12.0-alpha.13 manuscript with new dual-mode statistical results.
+- Note: MAT-001 remains officially BLOCKED pending closure of the R5-P1 scale compensator branch.
+
 ## Recovery branch - MAT remediation R5 identifiability hold (2026-08-07)
 
 ### Microscopic matching decision

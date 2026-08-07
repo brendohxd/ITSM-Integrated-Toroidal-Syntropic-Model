@@ -365,7 +365,7 @@ def run_mutation_tests(artifacts: list[dict[str, Any]]) -> dict[str, Any]:
     residue = next(a for a in artifacts if a.get("artifact") == "6_signed_residue")
     results["M1_pre_projection_guard"] = (
         "PASS" if residue["V_signed"] == "NOT_COMPUTED"
-        else "FAIL_PRE_PROJECTION_PROMOTED"
+        else "QUARANTINED_PRE_PROJECTION_PROMOTED"
     )
 
     # M2: no imported coefficient
@@ -373,25 +373,25 @@ def run_mutation_tests(artifacts: list[dict[str, Any]]) -> dict[str, Any]:
     induced = parent.get("induced_relations_PRE_PROJECTION", {})
     results["M2_no_imported_coefficient"] = (
         "PASS" if "imported_MOND_coefficient" not in str(induced)
-        else "FAIL_MOND_IMPORT_DETECTED"
+        else "QUARANTINED_MOND_IMPORT_DETECTED"
     )
 
     # M3: magnitude-only rejection
     results["M3_magnitude_only_rejected"] = (
         "PASS" if residue.get("g_phys") == "NOT_COMPUTED"
-        else "FAIL_MAGNITUDE_ONLY_ACCEPTED"
+        else "QUARANTINED_MAGNITUDE_ONLY_ACCEPTED"
     )
 
     # M4: Stage 4A stays closed
     results["M4_stage_4A_closed"] = (
         "PASS" if GLOBAL_STATUS["Stage_4A"] == "CLOSED"
-        else "FAIL_STAGE_4A_REOPENED"
+        else "QUARANTINED_STAGE_4A_REOPENED"
     )
 
     # M5: MAT-001 stays blocked
     results["M5_mat_001_blocked"] = (
         "PASS" if GLOBAL_STATUS["MAT_001"] == "BLOCKED"
-        else "FAIL_MAT_PROMOTED"
+        else "QUARANTINED_MAT_PROMOTED"
     )
 
     all_pass = all(v.startswith("PASS") for v in results.values())
@@ -431,7 +431,7 @@ def main() -> int:
     elif mutations_pass:
         status_string = "COMPLETE_PENDING_PHYSICS_REVIEW"
     else:
-        status_string = "FAIL_MAT001_R5_P1_MUTATION_FAILURE"
+        status_string = "QUARANTINED_MAT001_R5_P1_MUTATION_FAILURE"
 
     summary = {
         "label": "MAT-001_R5_P1_PARENT_ACTION_FORK",

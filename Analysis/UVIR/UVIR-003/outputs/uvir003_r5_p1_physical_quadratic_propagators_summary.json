@@ -1,0 +1,20 @@
+{
+  "gate": "UVIR-003",
+  "stage": "R5-P1 Physical Propagators",
+  "status": "PASS_LOCAL_ADIABATIC_PROPAGATORS",
+  "fields": [
+    "Xi",
+    "Q_rho",
+    "Q_chi",
+    "psi"
+  ],
+  "kinetic_matrix": "Matrix([[K_11, 0, 0, 0], [0, K_22, 0, 0], [0, 0, K_33, 0], [0, 0, 0, f**2]])",
+  "gradient_matrix": "Matrix([[G_11, 0, 0, 0], [0, G_22, 0, 0], [0, 0, G_33, 0], [0, 0, 0, f**2]])",
+  "dilaton_propagator": "1/(-f**2*omega**2 + f**2*q**2)",
+  "checks": {
+    "kinetic_positivity": true,
+    "dilaton_poles_strictly_real": true,
+    "decoupled_from_IR_quartet": true
+  },
+  "conclusion": "The introduction of the R5-P1 Scale-Compensator action expands the physical phase space to 4D. In the local adiabatic (high-q) limit, the new dilaton mode psi strictly decouples from the bare condensate modes. Its kinetic energy is positive definite (no ghosts) and its local poles are strictly real. This proves that the scale-compensator mode is immune to the IR complex-quartet holding pattern that affected the bare condensate variables."
+}

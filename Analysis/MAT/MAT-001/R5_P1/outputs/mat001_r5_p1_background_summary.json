@@ -1,0 +1,20 @@
+{
+  "gate": "MAT-001",
+  "stage": "R5-P1 Artifact 3",
+  "status": "PASS_BACKGROUND_STABILITY",
+  "physics_pass": false,
+  "claims": "None Derived",
+  "equations_of_motion": {
+    "rho_eom": "V(sigma_0) = (1/rho_0) * dP/drho_0",
+    "sigma_eom": "V'(sigma_0) = 0 (assuming rho_0 != 0)"
+  },
+  "stability_conditions": {
+    "cond_1": "V''(sigma_0) > 0",
+    "cond_2": "V(sigma_0) > P''(rho_0, mu)"
+  },
+  "firewall_checks": {
+    "condensate_stable_exists": true,
+    "compensator_stable_exists": true
+  },
+  "conclusion": "The homogeneous background equations close consistently. A stable finite-density state (rho_0 != 0) requires the dilaton coupling potential V(sigma) to have a local minimum at sigma_0 (V'' > 0) and satisfy the radial mass bound V0 > P''. This proves the background is dynamically admissible."
+}

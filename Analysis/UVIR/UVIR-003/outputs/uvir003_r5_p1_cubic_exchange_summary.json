@@ -1,0 +1,18 @@
+{
+  "gate": "UVIR-003",
+  "stage": "R5-P1 Cubic Exchange",
+  "status": "PASS_SURGICAL_EXCHANGE_AUDIT",
+  "vertices": {
+    "matter_dilaton_linear": "-C_m*rho_b_1"
+  },
+  "exchange_amplitude": {
+    "A_q": "-C_m**2*rho_b_1*rho_b_2/(f**2*q**2)",
+    "effective_coupling_squared": "C_m**2/f**2",
+    "matches_macroscopic_V": true
+  },
+  "strong_coupling_cutoff": {
+    "Lambda_UV": "f/C_m",
+    "trap_warning": "If C_m is O(1) and f is O(M_Pl), Lambda_UV is safely at the Planck scale. If C_m is extremely large, the cutoff drops proportionally, risking breakdown of the EFT at macroscopic scales."
+  },
+  "conclusion": "The surgical evaluation of the matter-dilaton cubic exchange strictly generates the claimed signed residue V = C_m/f at tree level. The exchange potential is attractive and correctly formed. The strong-coupling cutoff is identified as Lambda_UV = f/C_m, revealing a direct trade-off between the force strength and the EFT breakdown scale."
+}

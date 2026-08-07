@@ -11,7 +11,7 @@
 Gate-Based Falsifiability**
 
 🌍 **Recovery website:** [itsm-cosmology.com](https://itsm-cosmology.com) |
-📘 **Current manuscript:** [v12.0-alpha.12](Manuscript/CoreRecovery/releases/v12.0-alpha.12/ITSM_Core_v12.0-alpha.12.pdf) |
+📘 **Current manuscript:** [v12.0-alpha.13](Manuscript/CoreRecovery/releases/v12.0-alpha.13/ITSM_Core_Cosmology_v12.0-alpha.13.pdf) |
 📧 **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
 
 ## 📖 Project Overview
