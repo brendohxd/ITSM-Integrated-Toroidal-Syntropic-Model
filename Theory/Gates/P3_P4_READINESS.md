@@ -63,3 +63,11 @@ UVIR-003 ──► MAT-001 ──► SCR/LEN ──► DISK-001 ──► STAT-0
 3. Continue VOR/TOP/WAK identity work and DISK tooling in parallel under Open/Conditional labels.  
 4. Start STAT-001 only when DISK predictions with declared provenance exist.  
 5. Keep P3 outline-only; open full P3/P4 drafts only when their green triggers fire.  
+
+## Critical Open Risks (v12.0-alpha.14+)
+
+> [!WARNING]
+> **1. VOR-001 Topological Mapping Burden:** By accepting the Covariant Compensator in MAT-001, we mathematically proved that the coupling strength and kinetic normalization are dictated by a single scale $f$. Because ITSM is a fundamental topological theory (not a phenomenological MOND fit), we cannot tune $f$ by hand. VOR-001 is now strictly on the hook to organically derive the physical value of $f$ from the winding sector topology and toroidal moduli.
+
+> [!WARNING]
+> **2. CBR-002 Causality Tension:** In UVIR-003, we successfully regulated the $q=0$ divergence by expanding the fractional $|\nabla \pi|^3$ operator against the non-zero local adiabatic background gradient. However, this creates a major mathematical tension for highly dynamical, strong-field regimes where $\nabla \pi_0 \to 0$. CBR-002 (Hyperbolic Completion) must rigorously prove that these non-linear kinetic terms do not introduce superluminal phase velocities or acausal propagation in rapidly changing source environments.

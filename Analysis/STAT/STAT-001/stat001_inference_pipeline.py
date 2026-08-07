@@ -55,7 +55,7 @@ def load_sparc_data(filepath: Path) -> dict:
     }
 
 def fit_galaxy(args) -> dict:
-    gal, ir, float_dist, float_inc, i_nom = args
+    gal, ir, float_dist, float_inc, i_nom, flat_priors = args
     
     Rad = gal["Rad"]
     Vobs_orig = gal["Vobs"]
@@ -80,18 +80,20 @@ def fit_galaxy(args) -> dict:
             
         i_fit = params[idx] if float_inc else i_nom
         
-        # Prior penalties (log-normal for ups, normal for dist/inc)
-        prior_penalty = 0.5 * ((np.log10(ups_disk) - LOG10_UPS_DISK_MEAN) / LOG10_UPS_STD)**2
-        if has_bulge:
-            prior_penalty += 0.5 * ((np.log10(ups_bulge) - LOG10_UPS_BULGE_MEAN) / LOG10_UPS_STD)**2
-            
-        if float_dist:
-            # 10% gaussian prior on distance
-            prior_penalty += 0.5 * ((delta_D - 1.0) / 0.10)**2
-            
-        if float_inc:
-            # 5 degree gaussian prior on inclination
-            prior_penalty += 0.5 * ((i_fit - i_nom) / 5.0)**2
+        # Prior penalties
+        prior_penalty = 0.0
+        if not flat_priors:
+            prior_penalty += 0.5 * ((np.log10(ups_disk) - LOG10_UPS_DISK_MEAN) / LOG10_UPS_STD)**2
+            if has_bulge:
+                prior_penalty += 0.5 * ((np.log10(ups_bulge) - LOG10_UPS_BULGE_MEAN) / LOG10_UPS_STD)**2
+                
+            if float_dist:
+                # 10% gaussian prior on distance
+                prior_penalty += 0.5 * ((delta_D - 1.0) / 0.10)**2
+                
+            if float_inc:
+                # 5 degree gaussian prior on inclination
+                prior_penalty += 0.5 * ((i_fit - i_nom) / 5.0)**2
             
         # Physics: scale radial and velocity components by delta_D
         R_fit = Rad * delta_D
@@ -149,6 +151,10 @@ def run_pipeline():
     master_cat = pd.read_csv(SPARC_DIR / "SPARC_MassModels.csv")
     inc_dict = dict(zip(master_cat["Name"], master_cat["i"]))
     
+    # Load Qual catalog
+    qual_cat = pd.read_csv(SPARC_DIR / "SPARC_Qual.csv")
+    qual_dict = dict(zip(qual_cat["Name"], qual_cat["Qual"]))
+    
     dat_files = glob.glob(str(SPARC_DIR / "*_rotmod.dat"))
     dat_files = [f for f in dat_files if "ITSM-Cosmologist" not in f]
     
@@ -163,20 +169,32 @@ def run_pipeline():
     results = {}
     
     modes = [
-        ("Rigid (Fixed D, Fixed i)", False, False), 
-        ("Floated (Free D ±10%, Fixed i)", True, False),
-        ("Fully Floated (Free D ±10%, Free i ±5°)", True, True)
+        ("Rigid (Fixed D, Fixed i)", False, False, False, False), 
+        ("Floated (Free D ±10%, Fixed i)", True, False, False, False),
+        ("Fully Floated (Free D ±10%, Free i ±5°)", True, True, False, False),
+        ("Rigid [Q1+Q2 Only, Flat Priors]", False, False, True, True),
+        ("Fully Floated [Q1+Q2 Only, Flat Priors]", True, True, True, True)
     ]
     
-    for mode_name, float_dist, float_inc in modes:
+    for mode_name, float_dist, float_inc, filter_q3, flat_priors in modes:
         print(f"\n{'='*60}\nRUNNING MODE: {mode_name}\n{'='*60}")
+        
+        # Filter galaxies if needed
+        active_galaxies = []
+        for gal in galaxies:
+            if filter_q3 and qual_dict.get(gal["name"], 1) == 3:
+                continue
+            active_galaxies.append(gal)
+            
+        print(f"Using {len(active_galaxies)} galaxies for this mode.")
+        
         for name, ir in ir_models.items():
             print(f"\nEvaluating IR Law: {name} (a0={ir.a0:.3f}, C_obs={ir.C_obs:.3f})")
             t0 = time.time()
             
             pool = Pool(processes=cpu_count())
-            # Inject nominal inclination for each galaxy
-            fit_args = [(gal, ir, float_dist, float_inc, inc_dict.get(gal["name"], 60.0)) for gal in galaxies]
+            # Inject nominal inclination and flat_priors for each galaxy
+            fit_args = [(gal, ir, float_dist, float_inc, inc_dict.get(gal["name"], 60.0), flat_priors) for gal in active_galaxies]
             fits = pool.map(fit_galaxy, fit_args)
             pool.close()
             pool.join()
