@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="Assets/Figures/ITSM_Banner.png" alt="ITSM Banner" width="100%">
+</div>
+
 # 🌌 Integrated Toroidal-Syntropic Model (ITSM)
 **Relativistic Field Equations, Superfluid Dynamics, and Multi-Scale Falsifiability**
 
