@@ -1,12 +1,11 @@
 # MAT-001 R5-P1 Scale-Compensator Parent Fork — Specification
 
 **Stage:** R5-P1  
-**Date:** 2026-08-08  
-**Status:** `RESOLVED_BY_P2`  
+**Date:** 2026-08-07  
+**Status:** `OPEN_RESEARCH_CANDIDATE`  
 **Branch:** `recovery/v12-core-architecture`  
-**Claim:** Parameter $f$ is mathematically fixed by the cosmological boundary $c/H_0$ in P2.
-**Global status:** MAT-001 `CLEARED` | V `DERIVED` | K_Q `DERIVED`
-
+**Claim:** None Derived — research candidate only  
+**Global status:** MAT-001 `BLOCKED` | V `NOT_COMPUTED` | K_Q `NOT_DERIVED` | Stage 4A `CLOSED`
 
 ---
 

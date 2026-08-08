@@ -1,11 +1,3 @@
-## [12.0-alpha.13] - 2026-08-08
-### Added
-- Explicit parameter-free derivation of $V = 1/f$ via Scale-Compensator action utilizing topological causal boundaries.
-- SPARC MCMC fit integration detailing the $\chi^2_{\nu} = 6.86$ and localized $1.5-2.0$ bounds.
-
-### Changed
-- MAT-001 status changed from BLOCKED to CLEARED.
-
 # Core Recovery manuscript changelog
 
 This changelog applies only to the v12 core-recovery manuscript. The repository

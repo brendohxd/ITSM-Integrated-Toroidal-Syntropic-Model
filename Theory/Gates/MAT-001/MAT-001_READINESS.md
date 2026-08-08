@@ -1,8 +1,8 @@
 # MAT-001 — Readiness checklist (R2 force–matter matching)
 
-**Status:** gate PASS and downstream Derived use **CLEARED_BY_R5_P2**; scoped calculation **run** (`PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL`)
+**Status:** gate PASS and downstream Derived use **BLOCKED**; scoped calculation **run** (`PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL`) — **not** MAT PASS  
 **Branch:** `recovery/v12-core-architecture`  
-**Date:** 2026-08-08  
+**Date:** 2026-08-04  
 **Authority:** Master Research Plan §5; UVIR-003 force sector; Selective Publishing Plan (P3/P4 downstream)  
 **Scoped package:** `MAT-001_SCOPED_CALCULATION.md`  
 **UVIR Stage 5:** `PASS_STAGE5_DECISION_HOLD_TIER1` — decision audit passed fail-closed; UVIR physics remains **IN_PROGRESS**
