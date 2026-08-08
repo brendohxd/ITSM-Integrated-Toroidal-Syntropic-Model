@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/Figures/ITSM_Banner.png" alt="ITSM Banner" width="100%">
+</div>
+
 > [!IMPORTANT]
 > This is the **v12 core-recovery branch**. Its scientific status differs
 > materially from the pre-v12 material retained at the bottom of this page.

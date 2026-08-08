@@ -1,6 +1,16 @@
 # ITSM Changelog & Archive History
 
 
+## Version 12.0-alpha.14 - R5-P1 Scale-Compensator Progress (2026-08-08)
+
+### Core Theory & Interpolating Function
+- **R1 (Interpolating Function):** Derived the exact closed-form kinetic function $F(Y)$ that recovers $Y^{3/2}$ (MOND) in vacuum and $Y$ (canonical) in the Solar System. Resolved causality tension via the BMV theorem (superluminality pushed to deep-MOND vacuum).
+- **R2/R4 (Unitarity/Cutoff):** Derived $\Lambda_{strong} = Z^{9/8}/\ell$ via rigorous coordinate/field canonical normalization. Formalized the deep-vacuum strong coupling breakdown as a structural trade-off. Closed UVIR-003.
+
+### Field Equations & Degrees of Freedom
+- **MAT-001 R5-P1 Task 3 (DOF Ledger):** Proved physical DOF count ($4 \to 4$) and confirmed absence of ghosts/tachyons using the new interpolating kinetic function.
+- **MAT-001 R5-P1 Task 4 (Background Equations):** Derived the generalized non-linear field equation $\nabla \cdot ( F_Y \nabla \pi ) = \frac{\rho_b}{2f}$ and confirmed it reproduces BTFR and Cassini-compliant Newtonian limits.
+
 ## Version 12.0-alpha.13 - SPARC Inference Pipeline & VOR-001 (2026-08-07)
 
 ### Statistical Inference Pipeline (STAT-001)

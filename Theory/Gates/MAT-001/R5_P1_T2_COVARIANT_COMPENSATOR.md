@@ -41,24 +41,22 @@ And the potential becomes:
 
 $$ V(\pi) = \frac{\lambda f^4}{4} \left( e^{2\pi/f} - 1 \right)^2 $$
 
-### 5. Resolution of the $V$ Underdetermination
+### 5. Reparameterization of the $V$ Underdetermination
 In the R3 conformal matter action, the conformal coupling was written as $\tilde{g}_{\mu\nu} = e^{2V\pi} g_{\mu\nu}$, where $V$ and the kinetic normalization $K_Q$ were treated as independent parameters. 
 
-By demanding that the conformal coupling arises from a dynamical scale compensator with a finite-density parent action, the scale $f$ uniquely determines both the coupling strength and the kinetic normalization.
-
-Comparing the compensator conformal factor with the phenomenological one:
+By demanding that the conformal coupling arises from a dynamical scale compensator $\chi = f e^{\pi/f}$, we map the coupling directly to the scale $f$:
 $$ e^{2\pi/f} = e^{2V\pi} \implies V = \frac{1}{f} $$
 
-Crucially, the kinetic term for $\pi$ acquires a field-dependent normalization $e^{2\pi/f}$. Expanding around $\pi = 0$:
-$$ -\frac{1}{2} e^{2\pi/f} (\partial_\mu \pi)^2 \approx -\frac{1}{2} (\partial_\mu \pi)^2 $$
-This fixes the standard canonical normalization $K_Q = 1$ inherently. 
+However, as revealed by rigorous independent review, **this does not resolve the underdetermination problem; it merely relocates it.** Setting the canonical normalization $K_Q = 1$ via the expansion $-\frac{1}{2} e^{2\pi/f} (\partial_\mu \pi)^2 \approx -\frac{1}{2} (\partial_\mu \pi)^2$ is a standard normalization convention, not a physical derivation. 
 
-Thus, the family of solutions $C_m = V \sqrt{K_Q}$ collapses to:
-$$ C_m = \frac{1}{f} $$
+The physical content lives in the ratio that appears in observables. By relocating the unknown $K_Q$ into the vacuum expectation value $f$, the parameter $f$ remains entirely free. Furthermore, the length scale $\ell$ (which replaces $a_0$) also remains free. 
 
-### 6. Summary and Constraints
-The introduction of the covariant scale compensator definitively resolves the $V$ underdetermination problem identified in Gate R5. 
+### 6. Summary and Constraints (REOPENED)
+The introduction of the covariant scale compensator elegantly constructs the action, but it definitively fails to organically bypass the parameter fitting problem on its own.
 
-1. **Single Scale:** The entire coupling architecture is dictated by the single VEV scale $f$.
-2. **No Imported Targets:** $f$ is a fundamental scale of the symmetry breaking, not an imported MOND target (like $a_0$). The value of $f$ must be determined observationally or from deeper microscopic topological matching (e.g. VOR-001).
-3. **Pre-Projection Status:** While we have recovered $V = 1/f$, this is strictly a pre-projection result. We must still evaluate how the spatial gradients of $\pi$ are sourced in the non-linear regime (Track 2) to ensure the ADM obstruction is fully bypassed.
+1. **Parameter Relocation:** The free parameters have merely been renamed and relocated into $f$ (the VEV) and $\ell$ (the fractional kinetic length scale).
+2. **The Falsification Test:** The topological model can only be validated if $f$ and $\ell$ can be mathematically derived strictly from the torus geometry and winding sector constraints (e.g., in VOR-001). If they cannot be derived and must be fitted to rotation curves, the claim of a purely fundamental topological origin must be withdrawn.
+3. **Gate Status:** Because the parameters remain underdetermined, this task does not pass the gate.
+
+### Gate Status
+**MAT-001: HOLD_DECLARED_ACTION_UNDERDETERMINES_V**
