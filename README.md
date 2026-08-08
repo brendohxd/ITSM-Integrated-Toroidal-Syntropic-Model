@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/Figures/ITSM_Banner.png" alt="ITSM Banner" width="100%">
+  <img src="Assets/Figures/ITSM_Banner.png" alt="ITSM Banner" width="100%">
 </div>
 
 > [!IMPORTANT]
