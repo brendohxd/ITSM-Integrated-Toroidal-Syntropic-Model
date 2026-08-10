@@ -1,6 +1,5 @@
-# Optional Actions deploy. Primary config is Settings → Pages →
-# Deploy from branch recovery/v12-core-architecture, folder /docs (legacy).
-# The github-pages environment may block non-default branches; prefer branch deploy.
+# Canonical Pages deployment. Repository Settings → Pages must use GitHub Actions.
+# Manual dispatch is intentional: public scientific claims require review.
 
 name: github-pages
 
@@ -24,6 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Validate public scientific-claim boundary
+        run: python .github/scripts/validate_pages.py
       - uses: actions/configure-pages@v5
         with:
           enablement: true

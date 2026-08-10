@@ -24,7 +24,9 @@ R1 as an unselected Conditional scaffold.
 | `reproduce.html` | Clone & run gates |
 
 **Live domain:** https://itsm-cosmology.com  
-**Deploy:** `gh-pages` branch root (see repo Settings → Pages)
+**Deploy:** reviewed `docs/` artifact via `.github/workflows/pages.yml`. GitHub
+Pages must use **GitHub Actions** as its single build source; the workflow is
+manual so an unreviewed branch push cannot silently replace the public record.
 
 ## Visual assets
 
