@@ -35,6 +35,30 @@ The quarantined claim families include:
   inference did not support the claimed scale or Solar-System resolution;
 - inconsistent Solar-System bounds and downstream manuscript conclusions.
 
+## Public Pages repair
+
+The public site at `https://itsm-cosmology.com` was repaired from the isolated
+forensic branch without modifying the separate `.org` site.
+
+- **Site commit:** `b179036270e6da573f15a905413319259dfcf996`
+- **Successful deployment:** GitHub Actions run `31383904047`
+- **Deployment authority:** Pages `build_type=workflow`, HTTPS enforced, and the
+  `github-pages` environment restricted to `codex/recovery-forensic-rebuild`
+- **Pre-deployment gate:** `.github/scripts/validate_pages.py` requires the
+  alpha.12 fail-closed boundary, rejects known pseudo-closure claims, rejects
+  moving links to the quarantined recovery branch, and verifies local assets
+- **Production verification:** all 14 referenced resources were byte-identical
+  to the deployed `docs/` artifact; homepage SHA-256
+  `32E4496FEBAE1E4D9FEF95F25A3AFAD97DAA3D705DE770C9B5590BF8A7587D7F` and
+  research-page SHA-256
+  `F9DE1FF66782C2D89B21B415741C43F2E01D7FC2E7B7030E55F56AFED2082636`
+- **Transport:** plain HTTP returns `301` to HTTPS
+
+An initial run (`31383683840`) failed before runner allocation because the
+legacy environment allow-list excluded the forensic branch. It deployed
+nothing. The stale `gh-pages`, `main`, and unsafe recovery-branch policies were
+replaced with the single reviewed forensic source before the successful run.
+
 ## Recovery rule
 
 Benign documentation or implementation work in the quarantined range is not

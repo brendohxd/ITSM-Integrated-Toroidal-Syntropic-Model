@@ -13,7 +13,7 @@
 ### Public-site repair
 - **Status correction:** Updated the Pages snapshot to the authorized `12.0-alpha.12` freeze and the fail-closed UVIR/MAT boundary; removed the stale alpha.11 presentation without admitting alpha.13 or downstream STAT promotion.
 - **Immutable provenance:** Repointed public research, reproduction, and paper links away from the unsafe moving recovery branch to the reviewed forensic checkpoint `d46f7ba`.
-- **Deployment authority:** Made the reviewed GitHub Actions artifact the sole documented Pages source and added a fail-closed pre-deployment claim/link validator.
+- **Deployment authority:** Made the reviewed GitHub Actions artifact the sole Pages source, enforced HTTPS, restricted deployment to the forensic branch, added a fail-closed pre-deployment claim/link validator, and verified successful run `31383904047` byte-for-byte in production.
 
 
 ## Recovery branch - MAT remediation R5 identifiability hold (2026-08-07)
