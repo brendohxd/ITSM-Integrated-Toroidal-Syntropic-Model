@@ -2,17 +2,18 @@
 
 **Status:** Canonical workflow document for the recovery era  
 **Branch:** `recovery/v12-core-architecture`  
-**Last updated:** 2026-08-07
+**Last updated:** 2026-08-10
 **Authority order (highest first):**
 
 1. This plan + `ITSM_Core_Architecture.md` + `ITSM_Core_Recovery_Plan.md`  
-2. `ITSM_Claim_Migration_Ledger.csv`  
-3. Gate reports under `Theory/Gates/`  
-4. `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` (publication firewall)  
-5. `papers/P1-Scale-Matching-Reconstruction/` (claim-hygiene manuscript)  
-6. Legacy v11 manuscript / website / Notion Hub lower sections (provenance only)
+2. `ITSM_Active_Research_Status.md` (status projection governed by this plan)
+3. `ITSM_Claim_Migration_Ledger.csv`
+4. Gate reports under `Theory/Gates/` and their deterministic evidence
+5. `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` (publication firewall)
+6. `papers/P1-Scale-Matching-Reconstruction/` (claim-hygiene manuscript)
+7. Legacy v11 manuscript / website / Notion Hub lower sections (provenance only)
 
-If two sources conflict on **live scientific claims**, prefer (1)–(3).  
+If two sources conflict on **live scientific claims**, prefer (1)–(4).
 If Notion freeze line lags Git (e.g. Hub still citing alpha.4 while repo is alpha.9), **Git freezes win**.
 
 ---
@@ -28,6 +29,13 @@ routes stay available for development**; what is forbidden is claiming them as
 **Derived** under failed packaging.
 
 **Corollary:** no observational claim may outrank its **upstream field sector**.
+
+**Status-propagation rule:** when an upstream claim is downgraded, held, or
+reopened, every downstream conclusion that depends on it reopens immediately.
+A downstream script result, fit, manuscript sentence, or publication status
+cannot silently survive an upstream downgrade. Re-promotion requires a fresh
+dependency audit and synchronized updates to evidence, gate report, claim
+ledger, active status, and affected public surfaces.
 
 **Open-options rule (do not over-lock):**
 
@@ -432,6 +440,9 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 | Architecture | `Theory/Core/ITSM_Core_Architecture.md` |
 | Recovery plan (gates detail) | `Theory/Core/ITSM_Core_Recovery_Plan.md` |
 | Claim ledger | `Theory/Core/ITSM_Claim_Migration_Ledger.csv` |
+| Active research status | `Theory/Core/ITSM_Active_Research_Status.md` |
+| Core identity briefing | `Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md` |
+| Forensic repair record | `Theory/Gates/RECOVERY_FORENSIC_REPAIR_2026-08-10.md` |
 | Branch README | `RECOVERY_BRANCH_README.md` |
 | Manuscript workflow | `Manuscript/CoreRecovery/README.md` |
 | Historical critical findings | `Theory/History/00_CRITICAL_FINDINGS.md` |
@@ -455,3 +466,4 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 | 1.5 | 2026-08-07 | Linked bounded MAT Tier-1 remediation addendum; no gate promotion |
 | 1.7 | 2026-08-07 | Added bounded R5 pathway survey and R5-P1 scale-compensator parent-action fork; no gate promotion |
 | 1.6 | 2026-08-07 | Recorded R5 action-identifiability HOLD; declared action underdetermines `V`; no gate promotion |
+| 1.8 | 2026-08-10 | Added fail-closed status propagation, active-status authority, and forensic quarantine boundary; no gate promotion |

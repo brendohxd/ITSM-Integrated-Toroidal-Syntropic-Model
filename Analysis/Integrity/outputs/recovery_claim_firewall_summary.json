@@ -1,0 +1,52 @@
+{
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "r5_identifiability_hold",
+      "ok": true,
+      "source": "Analysis/MAT/MAT-001/R5_IDENTIFIABILITY/outputs/mat001_r5_microscopic_matching_decision_summary.json"
+    },
+    {
+      "name": "bounded_plan_remains_fail_closed",
+      "ok": true,
+      "source": "Analysis/MAT/MAT-001/PLAN_COMPLETION/outputs/mat001_plan_rr2_through_h7_summary.json"
+    },
+    {
+      "name": "uvir_tier1_hold",
+      "ok": true,
+      "source": "Analysis/UVIR/UVIR-003/outputs/uvir003_tier1_peer_review_readiness_summary.json"
+    },
+    {
+      "name": "r5_p1_is_scaffold_only",
+      "ok": true,
+      "source": "Analysis/MAT/MAT-001/R5_P1/outputs/mat001_r5_p1_scaffold_summary.json"
+    },
+    {
+      "name": "r5_p1_spec_all_artifacts_todo",
+      "ok": true,
+      "source": "Theory/Gates/MAT-001/MAT-001_R5_P1_SPEC.md"
+    },
+    {
+      "name": "frozen_release_boundary_alpha12",
+      "ok": true,
+      "version": "12.0-alpha.12"
+    },
+    {
+      "forbidden_paths_present": [],
+      "name": "known_pseudo_closure_artifacts_absent",
+      "ok": true
+    },
+    {
+      "name": "readme_retains_recovery_boundary",
+      "ok": true
+    }
+  ],
+  "gate": "RECOVERY_CLAIM_FIREWALL",
+  "n_checks": 8,
+  "n_failed": 0,
+  "physics_pass": false,
+  "quarantined_scientific_range": "c3386f0..4310a9a",
+  "reconstruction_anchor": "4682a51",
+  "scientific_boundary": "This check verifies repository status consistency and known quarantine guards. It does not validate an action, derivation, stability domain, physical amplitude, cutoff, observation, or physics gate.",
+  "subgate_status": "PASS_RECOVERY_AUTHORITY_CONSISTENT_FAIL_CLOSED"
+}

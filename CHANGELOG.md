@@ -1,6 +1,16 @@
 # ITSM Changelog & Archive History
 
 
+## Recovery branch - forensic fail-closed reconstruction (2026-08-10)
+
+### Authority and evidence repair
+- **Anchor:** Reconstructed an isolated repair branch from reviewed fail-closed commit `4682a51`; the original dirty working checkout was preserved.
+- **Quarantine:** Scientific changes from `c3386f0` through `4310a9a` are withheld pending fresh, scoped review rather than inherited as valid because they were committed.
+- **Canonical status:** Added a single active research dashboard and core identity briefing retaining UVIR-003 `IN_PROGRESS`, Tier-1 `NOT_MET`, MAT-001 `BLOCKED`, `V` `NOT_COMPUTED`, `K_Q` `NOT_DERIVED`, and Stage 4A `CLOSED`.
+- **Automation:** Added a deterministic recovery claim firewall with SHA-256 evidence. Its PASS is repository-integrity evidence only and cannot promote a physics gate.
+- **Governance:** Added upstream-to-downstream downgrade propagation and explicit rejection records for pseudo-closure, hard-coded inference, and unsupported scale/screening claims.
+
+
 ## Recovery branch - MAT remediation R5 identifiability hold (2026-08-07)
 
 ### Microscopic matching decision

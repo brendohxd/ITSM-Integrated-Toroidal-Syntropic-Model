@@ -67,6 +67,10 @@ presented as a derivation. Every live statement is classified as **Derived**,
 
 For the full dependency chain and current blockers, use the
 [Recovery Branch Guide](RECOVERY_BRANCH_README.md) and
+[Active Research Status](Theory/Core/ITSM_Active_Research_Status.md). The
+reconstruction and quarantine decision is recorded in the
+[2026-08-10 forensic repair report](Theory/Gates/RECOVERY_FORENSIC_REPAIR_2026-08-10.md).
+Also consult the
 [UVIR-003 closure checklist](Theory/Gates/UVIR-003/UVIR-003_FULL_GATE_CLOSURE_CHECKLIST.md).
 The current MAT normalization boundary is recorded in the
 [unit-chart contract](Theory/Gates/MAT-001/MAT-001_UNIT_CHART_CONTRACT.md),
@@ -159,8 +163,11 @@ authoritative path.
 
 - [Master Research Plan](Theory/Core/ITSM_Master_Research_Plan.md)
 - [Core Architecture](Theory/Core/ITSM_Core_Architecture.md)
+- [Core Identity Briefing](Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md)
+- [Active Research Status](Theory/Core/ITSM_Active_Research_Status.md)
 - [Claim Migration Ledger](Theory/Core/ITSM_Claim_Migration_Ledger.csv)
 - [Recovery Branch Guide](RECOVERY_BRANCH_README.md)
+- [Forensic Repair Record](Theory/Gates/RECOVERY_FORENSIC_REPAIR_2026-08-10.md)
 - [MAT Tier-1 R1-R5 Remediation Addendum](Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md)
 - [Core-Recovery Manuscript Guide](Manuscript/CoreRecovery/README.md)
 - [Selective Publishing Plan](papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md)

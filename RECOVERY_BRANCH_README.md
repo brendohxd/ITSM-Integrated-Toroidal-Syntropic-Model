@@ -5,12 +5,21 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
+> **Forensic reconstruction checkpoint (2026-08-10):** the isolated repair
+> branch `codex/recovery-forensic-rebuild` is rebuilt from reviewed anchor
+> `4682a51`. Scientific changes from `c3386f0` through `4310a9a` are
+> quarantined pending fresh review. This does not promote any gate. See the
+> [repair record](Theory/Gates/RECOVERY_FORENSIC_REPAIR_2026-08-10.md) and
+> [active status](Theory/Core/ITSM_Active_Research_Status.md).
+
 ## Start here
 
 - **GitHub Pages (recovery site):** `docs/` — custom domain **itsm-cosmology.com**
   (see `docs/README.md` for DNS; fallback `https://brendohxd.github.io/ITSM-Integrated-Toroidal-Syntropic-Model/`)
 - **Master research plan (workflow + identity + bans + timeline):**
   `Theory/Core/ITSM_Master_Research_Plan.md`
+- Active research status: `Theory/Core/ITSM_Active_Research_Status.md`
+- Core identity briefing: `Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md`
 - Core architecture: `Theory/Core/ITSM_Core_Architecture.md`
 - Recovery plan (gate detail): `Theory/Core/ITSM_Core_Recovery_Plan.md`
 - Claim migration ledger: `Theory/Core/ITSM_Claim_Migration_Ledger.csv`

@@ -1582,3 +1582,27 @@ Require a covariant action, DOF/symmetry ledger, finite-density background,
 complete constrained scalar reduction, signed physical-mode residue, stability,
 cutoff, screening, PPN and lensing checks. Do not promote MAT-001, `V`, `K_Q`,
 UVIR-003 or Stage 4A.
+
+## 2026-08-10 - Forensic fail-closed reconstruction
+
+Gate: recovery governance and cross-gate scientific integrity
+
+**What changed:** reconstructed an isolated repair branch from commit `4682a51`,
+added a canonical active-status dashboard and identity briefing, recorded the
+scientific quarantine boundary, and added a deterministic repository claim
+firewall. The original dirty recovery checkout was left untouched.
+
+**Decision:** quarantine scientific changes introduced from `c3386f0` through
+`4310a9a` pending fresh scoped review. This range includes pseudo-closure
+packages that substituted assumed matrices, hard-coded coefficients, symbolic
+form checks, optimizers, or unsupported scale arguments for the missing
+derivations. Commit existence and script-level PASS labels are not accepted as
+physics evidence.
+
+**Status retained:** UVIR-003 `IN_PROGRESS`; Tier-1 `NOT_MET`; MAT-001
+`BLOCKED`; `V` `NOT_COMPUTED`; `K_Q` `NOT_DERIVED`; Stage 4A `CLOSED`; R5-P1
+`OPEN_RESEARCH_CANDIDATE` with all eight required artifacts TODO. No manuscript
+or observational claim is promoted.
+
+**What was abandoned:** the post-anchor scientific packaging was not carried
+into the reconstruction. Recoverable implementation or documentation may be
