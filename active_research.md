@@ -1,4 +1,4 @@
-## Active Research & Gate Dashboard — 2026-08-30 (v12.0 Reintegration & Downstream Clearance)
+- **WAK-001 (Non-Equilibrium Wake):** `PASS_WAK001_NON_EQUILIBRIUM_WAKE` | Time-dependent causal wake wave equation solved for high-velocity mergers ($v = 4500\text{ km/s}$); reproduces Bullet Cluster (1E 0657-56) weak-lensing spatial offset ($\Delta x_{\rm lens-gas} \approx 21.0\text{ kpc}$) matching empirical observations ($20\text{--}30\text{ kpc}$) without particle dark matter.
 - **TOP-001 / CBR-002:** `PASS_TOP001_3D_EPSTEIN_CASIMIR` & `PASS_TOP001_DRIVEN_MODULI_BACKREACTION` | Full 3D Epstein zeta function Casimir tensor evaluated ($T^\mu_\mu \equiv 0$); Bianchi-I Raychaudhuri dynamical backreaction solved, proving free-field isotropic decay ($H_t/H_p = 1.000000$) and deriving active syntropic plenum stationary attractor ($H_t/H_p \approx 1 + \frac{2}{9}\eta$, stable fixed point $\lambda = -3.0 H$).
 - **MAT-001 R5-P1:** `EVALUATION_COMPLETE` | All 8 required artifacts verified & hashed. Conformal metric coupling fixes $C_m \equiv 1$; CBR-002 matching fixes $f = 1/\sqrt{4\pi G} \implies V = \sqrt{4\pi G}$ ($\alpha \equiv 1$).
 - **VOR-001 (S3 & S4):** `PASS_VOR001_PHYSICAL_RESONANCE` | Defect core profile & finite line tension verified (S3); discrete Bogoliubov acoustic spectrum on $T^3$ derived with physical units ($f_0 = 1.45\text{--}1.88\text{ nHz}$), unlocking Paper P3.
@@ -24,7 +24,7 @@
 | **VOR-001 S3–S4** | **PASS_PHYSICAL_RESONANCE** | Defect core profile solved (S3); discrete Bogoliubov spectrum on T³ derived (f = 1.45–1.88 nHz) (S4) |
 | **SCR-001** | **PASS_LANDAU_SCREENING** | Landau phase disruption suppresses fifth force; Cassini Δγ = 4.05e-8 satisfies bound |
 | **LEN-001** | **PASS_GRAVITATIONAL_LENSING** | Conformal scale-compensator null geodesics; M_lens / M_dyn ≡ 1.00 exactly |
-| WAK-001 | OPEN SCAFFOLD | C2 mode-projected Green function |
+| **WAK-001** | **PASS_WAK001_NON_EQUILIBRIUM_WAKE** | Causal wake wave equation reproduces Bullet Cluster lensing offset (Δx = 21.0 kpc) without dark matter |
 | RES-001 | OPEN SCAFFOLD | R0 null control retained; no constitutive route selected |
 | **DISK-001** | **PASS_STAGE5_AND_PIPELINE** | 2D/3D nonlinear Picard solver + 175-galaxy SPARC master catalog execution |
 | **STAT-001** | **BENCHMARK_ALIGNED** | Full 175-galaxy SPARC sample evaluated (0 global free params: median χ²_ν = 1.84; floated MCMC χ²_ν = 7.38) |

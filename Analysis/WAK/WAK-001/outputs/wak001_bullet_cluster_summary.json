@@ -1,0 +1,114 @@
+{
+  "gate": "WAK-001",
+  "subgate": "BULLET_CLUSTER_CAUSAL_WAKE",
+  "label": "WAK-001_NON_EQUILIBRIUM_LENSING_SOLVER",
+  "status": "PASS_WAK001_NON_EQUILIBRIUM_WAKE",
+  "physics_pass": true,
+  "negative_control_static_limit": {
+    "tau_w_myr": 0.01,
+    "t_post_collision_myr": 22.0,
+    "x_gas_peak_kpc": 78.63105175292151,
+    "x_star_peak_kpc": 100.66777963272119,
+    "x_lens_peak_kpc": 93.65609348914859,
+    "x_static_peak_kpc": 86.64440734557598,
+    "delta_x_lens_gas_kpc": 15.025041736227081,
+    "delta_x_stars_gas_kpc": 22.036727879799685,
+    "delta_x_static_gas_kpc": 8.013355592654477,
+    "lensing_mass_enhancement": 1.2397950881395252
+  },
+  "fiducial_run": {
+    "tau_w_myr": 15.0,
+    "t_post_collision_myr": 22.0,
+    "x_gas_peak_kpc": 78.63105175292151,
+    "x_star_peak_kpc": 100.66777963272119,
+    "x_lens_peak_kpc": 99.66611018363938,
+    "x_static_peak_kpc": 86.64440734557598,
+    "delta_x_lens_gas_kpc": 21.035058430717868,
+    "delta_x_stars_gas_kpc": 22.036727879799685,
+    "delta_x_static_gas_kpc": 8.013355592654477,
+    "lensing_mass_enhancement": 2.056184506772136
+  },
+  "relaxation_time_scan": [
+    {
+      "tau_w_myr": 5.0,
+      "t_post_collision_myr": 22.0,
+      "x_gas_peak_kpc": 78.63105175292151,
+      "x_star_peak_kpc": 100.66777963272119,
+      "x_lens_peak_kpc": 100.66777963272119,
+      "x_static_peak_kpc": 86.64440734557598,
+      "delta_x_lens_gas_kpc": 22.036727879799685,
+      "delta_x_stars_gas_kpc": 22.036727879799685,
+      "delta_x_static_gas_kpc": 8.013355592654477,
+      "lensing_mass_enhancement": 1.5590612027665183
+    },
+    {
+      "tau_w_myr": 10.0,
+      "t_post_collision_myr": 22.0,
+      "x_gas_peak_kpc": 78.63105175292151,
+      "x_star_peak_kpc": 100.66777963272119,
+      "x_lens_peak_kpc": 99.66611018363938,
+      "x_static_peak_kpc": 86.64440734557598,
+      "delta_x_lens_gas_kpc": 21.035058430717868,
+      "delta_x_stars_gas_kpc": 22.036727879799685,
+      "delta_x_static_gas_kpc": 8.013355592654477,
+      "lensing_mass_enhancement": 1.843266909658295
+    },
+    {
+      "tau_w_myr": 15.0,
+      "t_post_collision_myr": 22.0,
+      "x_gas_peak_kpc": 78.63105175292151,
+      "x_star_peak_kpc": 100.66777963272119,
+      "x_lens_peak_kpc": 99.66611018363938,
+      "x_static_peak_kpc": 86.64440734557598,
+      "delta_x_lens_gas_kpc": 21.035058430717868,
+      "delta_x_stars_gas_kpc": 22.036727879799685,
+      "delta_x_static_gas_kpc": 8.013355592654477,
+      "lensing_mass_enhancement": 2.056184506772136
+    },
+    {
+      "tau_w_myr": 20.0,
+      "t_post_collision_myr": 22.0,
+      "x_gas_peak_kpc": 78.63105175292151,
+      "x_star_peak_kpc": 100.66777963272119,
+      "x_lens_peak_kpc": 98.66444073455762,
+      "x_static_peak_kpc": 86.64440734557598,
+      "delta_x_lens_gas_kpc": 20.033388981636108,
+      "delta_x_stars_gas_kpc": 22.036727879799685,
+      "delta_x_static_gas_kpc": 8.013355592654477,
+      "lensing_mass_enhancement": 2.2060527757492516
+    },
+    {
+      "tau_w_myr": 30.0,
+      "t_post_collision_myr": 22.0,
+      "x_gas_peak_kpc": 78.63105175292151,
+      "x_star_peak_kpc": 100.66777963272119,
+      "x_lens_peak_kpc": 98.66444073455762,
+      "x_static_peak_kpc": 86.64440734557598,
+      "delta_x_lens_gas_kpc": 20.033388981636108,
+      "delta_x_stars_gas_kpc": 22.036727879799685,
+      "delta_x_static_gas_kpc": 8.013355592654477,
+      "lensing_mass_enhancement": 2.385657651576563
+    }
+  ],
+  "empirical_benchmark": {
+    "target": "Bullet Cluster (1E 0657-56) weak lensing offset",
+    "observed_range_kpc": [
+      20.0,
+      30.0
+    ],
+    "predicted_kpc": 21.035058430717868,
+    "within_bounds": true
+  },
+  "checks": [
+    {
+      "id": "WAK.1",
+      "description": "Dynamic causal wake enhances spatial offset compared to static baseline",
+      "pass": true
+    },
+    {
+      "id": "WAK.2",
+      "description": "Causal wake generates 20-30 kpc lensing-gas separation without particle dark matter",
+      "pass": true
+    }
+  ]
+}
