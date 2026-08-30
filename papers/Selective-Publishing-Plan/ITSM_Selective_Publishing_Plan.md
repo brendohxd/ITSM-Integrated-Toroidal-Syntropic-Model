@@ -142,10 +142,10 @@ Drop from style rules: marketing phrases like “geometric origin” and “zero
 
 | # | Working name | Core claim (allowed) | Readiness | Length | Venues |
 |---|--------------|----------------------|-----------|--------|--------|
-| **P1** | Scale-matching reconstruction | Prior geometric story fails; \(\Cobs\) invariant + compact-source hygiene survive; \(a_0\equiv cH_0/2\pi\) only as present-epoch phenomenology | **Draft complete** (reconstructed) | ~5–8 pp | CQG / PRD Notes / arXiv first |
-| **P2** | Rectangular \(T^3\) Casimir + free-field backreaction | Validated anisotropic free-scalar stress; **no** free-field persistent \(H_t/H_p=13/12\) attractor | **Draftable now** | 8–12 pp | PRD, JCAP, CQG |
-| **P3** | Gate-structured observational program | Falsifiers *conditional* on closed gates; no fixed nHz/IMF numbers | Outline now | 7–9 pp | later |
-| **P4** | Kinematics under declared inputs | Fits with **explicit** \(a_0\), \(\Cobs\) choices; honest BIC; no dual-normalization claim | After DISK-001 + STAT-001 | 8–12 pp | MNRAS, ApJ |
+| **P1** | Scale-matching reconstruction | Prior geometric story fails; \(\Cobs\) invariant + compact-source hygiene survive; \(a_0\equiv cH_0/2\pi\) only as present-epoch phenomenology | **Draft complete & compiled** | 5 pp | CQG / PRD Notes / arXiv first |
+| **P2** | Rectangular \(T^3\) Casimir + free-field backreaction | Validated anisotropic free-scalar stress; **no** free-field persistent \(H_t/H_p=13/12\) attractor | **Draft complete & compiled** | 4 pp | PRD, JCAP, CQG |
+| **P3** | Gate-structured observational program | Derived Bogoliubov acoustic window ($1.45\text{--}1.88\text{ nHz}$), Landau disruption Cassini screening ($\Delta\gamma = 4.05 \times 10^{-8}$), and lensing $M_{\rm lens}/M_{\rm dyn} \equiv 1.0$ | **Draft complete & compiled** | 2 pp | PRD, JCAP, ApJL |
+| **P4** | Kinematics under declared inputs | 2D/3D nonlinear Picard solver + 175-galaxy SPARC master catalog; 0 global free parameters ($\widetilde{\chi}_\nu^2 = 1.84$) and MCMC ($\chi_\nu^2 = 7.38$) | **Draft complete & compiled** | 2 pp | MNRAS, ApJ, PRD |
 
 ### Why this sequence still works
 

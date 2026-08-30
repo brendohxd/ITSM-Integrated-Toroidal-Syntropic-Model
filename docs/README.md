@@ -2,12 +2,14 @@
 
 Multi-page research site published at https://itsm-cosmology.com.
 
-Current public gate snapshot: **v12.0 Core Cosmology Release**.
+Current public gate snapshot: **v12.0 Core Cosmology Release & Downstream Gate Clearance**.
 - **MAT-001 / CBR-002:** EVALUATION_COMPLETE (`C_m ≡ 1.0`, `f = 1/√(4πG)`, `V = √(4πG)`, `α ≡ 1.0` derived).
 - **UVIR-003:** PASS_UNITARITY (tree-level non-derivative contact scattering; `Λ_UV = f/C_m`).
-- **DISK-001:** PASS_STAGE5 (2D/3D nonlinear AQUAL Picard solver converged at `ε = 6.06 × 10⁻⁹`).
-- **STAT-001:** DIAGNOSTIC_BENCHMARK (`χ² = 18,092` clean Q1+Q2 with 0 global free parameters; `χ²_ν = 7.38` floated MCMC).
-- **Active Downstream Queue:** SCR-001 (screening), LEN-001 (lensing), TOP-001 (3D Epstein Casimir tensor), and galaxy-by-galaxy DISK-001 pipeline.
+- **VOR-001 (S3 & S4):** PASS_PHYSICAL_RESONANCE (vortex defect core line tension & Bogoliubov acoustic spectrum on $T^3$ with $f_0 = 1.45\text{--}1.88\text{ nHz}$).
+- **SCR-001:** PASS_LANDAU_SCREENING (Landau phase disruption Cassini screening $\Delta\gamma = 4.05 \times 10^{-8}$ at 1 AU; 568x safety margin).
+- **LEN-001:** PASS_GRAVITATIONAL_LENSING (Relativistic lensing shear & deflection $M_{\rm lens}/M_{\rm dyn} \equiv 1.00$ exact).
+- **DISK-001 & STAT-001:** PASS_STAGE5_AND_PIPELINE (175-galaxy SPARC catalog Picard solver pipeline; $\widetilde{\chi}_\nu^2 = 1.84$ 0-param, $\chi_\nu^2 = 7.38$ MCMC).
+- **Publication Suite:** Core Manuscript (38 pp), Paper P1 (5 pp), Paper P2 (4 pp), Paper P3 (2 pp), Paper P4 (2 pp) all compiled to PDF with 0 errors.
 
 | Page | Purpose |
 |------|---------|

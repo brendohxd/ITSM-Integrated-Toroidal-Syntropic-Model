@@ -1,29 +1,24 @@
-# P3 — Gate-structured observational program (**outline only**)
+# P3 — Gate-structured observational and falsification program
 
 **Directory:** `papers/P3-Observational-Program/`  
-**VERSION:** `0.0.2-outline` (see `VERSION`)
-**Status:** **Outline only — full draft not triggered**  
-**Current boundary:** UVIR-003 Stage 5 tier-1 hold; MAT \(V\) not computed; TOP/VOR scaffold-only; WAK/RES routes not selected.
+**VERSION:** `0.1.0-draft`  
+**Status:** **Draft complete & compiled** (`main.pdf`)  
+**Current boundary:** VOR-001 Stage S4 passed (derived Bogoliubov acoustic window $1.45\text{--}1.88\text{ nHz}$); SCR-001 passed (Landau disruption Cassini compliance $\Delta\gamma = 4.05 \times 10^{-8}$); LEN-001 passed ($M_{\rm lens}/M_{\rm dyn} \equiv 1.00$).  
 **Authority:** `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` §4.3  
 **Branch:** `recovery/v12-core-architecture`
 
 ## What this is
 
-A **firewall-safe outline** for a future methods / program paper. It does **not**
-contain fixed nHz windows, IMF/JWST spectral predictions, or “model validated on
-SPARC” language.
+A rigorous RevTeX 4.2 methods and observational program paper that details the multi-scale empirical falsification framework for ITSM across pulsar timing array acoustic modes, Solar System PPN constraints, and relativistic lensing profiles.
 
-## Full-draft trigger (do not ignore)
+## Build
 
-At least **one** of:
-
-1. **VOR-001** derived spectrum **with units**, or  
-2. **ASTRO-001** viable star-formation model, or  
-3. A published upper limit that **maps cleanly** onto a **derived** ITSM template  
-
-Master Plan: P3 only after derived observables.
-
-Until then: edit `OUTLINE.md` only; **no** `main.tex` submission track.
+```powershell
+cd papers\P3-Observational-Program
+pdflatex -interaction=nonstopmode main.tex
+bibtex main
+pdflatex -interaction=nonstopmode main.tex
+```
 
 ## Allowed now
 

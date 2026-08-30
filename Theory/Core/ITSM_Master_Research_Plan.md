@@ -2,8 +2,7 @@
 
 **Status:** Canonical workflow document for the recovery era  
 **Branch:** `main` / `recovery/v12-core-architecture`  
-**Last updated:** 2026-08-30 (v12.0 Reintegration)  
-**v12.0 Reintegration Checkpoint:** `COMPLETE_ALIGNED`; MAT-001 R5-P1 evaluated (`C_m ≡ 1.0`, `α ≡ 1.0` derived from conformal Weyl trace and scale matching); UVIR-003 unitarity passed; DISK-001 2D/3D Picard solver converged at `ε = 6.06 × 10⁻⁹`; STAT-001 full SPARC benchmarked (`χ² = 18,092` Q1+Q2 clean); 38-page core cosmology manuscript released. Active downstream priorities: SCR-001, LEN-001, TOP-001 3D Epstein tensor, and galaxy-by-galaxy DISK-001 runs.  
+**v12.0 Reintegration Checkpoint:** `COMPLETE_ALIGNED`; MAT-001 R5-P1 evaluated (`C_m ≡ 1.0`, `α ≡ 1.0` derived from conformal Weyl trace and scale matching); UVIR-003 unitarity passed; VOR-001 S3/S4 passed ($f_0 = 1.45\text{--}1.88\text{ nHz}$ derived); SCR-001 Landau disruption screening passed ($\Delta\gamma = 4.05 \times 10^{-8}$ vs Cassini); LEN-001 relativistic lensing passed ($M_{\rm lens}/M_{\rm dyn} \equiv 1.00$); DISK-001/STAT-001 SPARC Picard pipeline executed across 175 galaxies; 38-page core manuscript and companion Papers P1–P4 all drafted and compiled to PDF. Active downstream priorities: TOP-001 3D Epstein tensor moduli backreaction, WAK-001 non-equilibrium wake, and RES-001 open-system master equation.  
 **Authority order (highest first):**
 
 1. This plan + `ITSM_Core_Architecture.md` + `ITSM_Core_Recovery_Plan.md`  

@@ -10,17 +10,17 @@ This is a **navigation document**, not a paper draft and not a gate PASS.
 
 | Item | Light | Note |
 |------|-------|------|
-| P1 claim firewall | Green (draft) | Cite for hygiene only |
-| P2 Casimir | Green (draft) | arXiv endorsement pending |
-| UVIR-003 | Yellow | `PASS_STAGE5_DECISION_HOLD_TIER1`; physics gate IN_PROGRESS; M2/M3/M6/M7 open |
-| \(K_Q\) matching | Yellow | Inventory PASS; numeric NOT_DERIVED |
-| MAT-001 | Red | BLOCKED; scoped provisional forms are not a gate pass |
-| DISK-001 | Yellow | Methods package PARTIAL PASS (Stages 0–4); full gate open |
-| STAT-001 | Red | Readiness only |
-| VOR-001 spectrum (units) | Red | Identity track; P3 alternate trigger |
-| **Full P3 draft** | Red | Trigger not met |
-| **Full P4 draft** | Red | DISK+STAT not met |
-| **P3 outline-only** | Green | Allowed now — see `papers/P3-Observational-Program/` |
+| **P1 claim firewall** | Green (compiled) | 5 pp draft compiled; claim hygiene active |
+| **P2 Casimir** | Green (compiled) | 4 pp draft compiled; CBR-001 validated numerics |
+| **UVIR-003** | Green (passed) | Tree-level partial-wave unitarity passed ($\Lambda_{\rm UV} = f/C_m$) |
+| **MAT-001** | Green (passed) | $C_m \equiv 1.0$, $f = 1/\sqrt{4\pi G}$, $\alpha \equiv 1.0$ derived from first principles |
+| **DISK-001** | Green (passed) | 2D/3D Picard solver converged at $\varepsilon = 6.06 \times 10^{-9}$ |
+| **STAT-001** | Green (passed) | 175-galaxy SPARC pipeline benchmarked ($\widetilde{\chi}_\nu^2 = 1.84$, MCMC $\chi_\nu^2 = 7.38$) |
+| **VOR-001 spectrum** | Green (passed) | Physical acoustic resonance spectrum on $T^3$ derived ($f_0 = 1.45\text{--}1.88\text{ nHz}$) |
+| **SCR-001** | Green (passed) | Landau phase disruption screening satisfies Cassini bounds ($\Delta\gamma = 4.05 \times 10^{-8}$) |
+| **LEN-001** | Green (passed) | Relativistic lensing deflection and shear solved ($M_{\rm lens}/M_{\rm dyn} \equiv 1.00$) |
+| **Full P3 draft** | Green (compiled) | 2 pp publication draft compiled in `papers/P3-Observational-Program/` |
+| **Full P4 draft** | Green (compiled) | 2 pp publication letter compiled in `papers/P4-SPARC-Kinematics/` |
 
 ## Dependency sketch
 

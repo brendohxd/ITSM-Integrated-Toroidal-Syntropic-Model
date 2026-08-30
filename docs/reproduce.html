@@ -67,9 +67,27 @@ python Analysis/UVIR/uvir003_r5_p1_2to2_amplitude.py
 python Analysis/VOR/vor001_healing_length_test.py</code></pre>
         </article>
         <article class="card">
-          <h3>DISK-001 — 2D/3D Nonlinear Poisson Solver</h3>
-          <p>Picard iteration solver with multipole boundary conditions (converged at \(\varepsilon = 6.06 \times 10^{-9}\)).</p>
-          <pre><code>python Analysis/Picard_Disk/disk001_stage5_multipole_aqual.py</code></pre>
+          <h3>VOR, SCR &amp; LEN — Phenomenological Gates</h3>
+          <p>Defect core line tension, Bogoliubov acoustic resonance on \(T^3\), Landau screening, and lensing.</p>
+          <pre><code>python Analysis/VOR/VOR-001/vor001_s3_physical_defect_core.py
+python Analysis/VOR/VOR-001/vor001_s4_physical_resonance.py
+python Analysis/Screening/SCR-001/scr001_landau_screening_solver.py
+python Analysis/Lensing/LEN-001/len001_gravitational_lensing_solver.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>DISK-001 &amp; STAT-001 — SPARC Pipeline</h3>
+          <p>175-galaxy SPARC database ingestion and 2D/3D AQUAL Picard solver evaluation.</p>
+          <pre><code>python Analysis/DISK/DISK-001/disk001_stage5_multipole_bc.py
+python Analysis/DISK/DISK-001/disk001_sparc_galaxy_pipeline.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>Modular Paper Suite Build (P1–P4)</h3>
+          <p>Multi-pass LaTeX builds for the four modular companion papers.</p>
+          <pre><code># Build P1, P2, P3, P4
+pdflatex -interaction=nonstopmode papers/P1-Scale-Matching-Reconstruction/main.tex
+pdflatex -interaction=nonstopmode papers/P2-Rectangular-T3-Casimir/main.tex
+pdflatex -interaction=nonstopmode papers/P3-Observational-Program/main.tex
+pdflatex -interaction=nonstopmode papers/P4-SPARC-Kinematics/main.tex</code></pre>
         </article>
         <article class="card">
           <h3>Core Manuscript Build (v12.0)</h3>
