@@ -19,9 +19,9 @@ Master Plan criterion: **M3** (causality in declared domain) — **documented**,
 
 ## Purpose
 
-Map the Stage-A long-wavelength causality window \(R_c\le 1\) under an **explicit
-Conditional matching hypothesis set** (R1 structure from the \(K_Q\) inventory /
-Conditional \(K_Q\) estimate), without promoting \(k_Q\) or \(C_{\mathrm{IR}}\)
+Map the Stage-A long-wavelength causality window $R_c\le 1$ under an **explicit
+Conditional matching hypothesis set** (R1 structure from the $K_Q$ inventory /
+Conditional $K_Q$ estimate), without promoting $k_Q$ or $C_{\mathrm{IR}}$
 to Derived.
 
 This is the Master Plan critical-path step: **document M3 under Conditional
@@ -31,11 +31,11 @@ premises**, not fake-close UVIR-003.
 
 | Symbol | Premiss |
 |--------|---------|
-| \(K_Q\) | \(K_Q = k_Q M_P^2 = k_Q/(8\pi G)\) — R1 dimensional analogy |
-| \(A\) | \(A = C_{\mathrm{IR}}/(12\pi G\,a_0)\) — architecture force normalization |
-| \(R_c\) | \(R_c(\theta)=3 A q (1+\cos^2\theta)/K_Q\); causal when \(R_c\le 1\) |
-| \(q_\times\) | \(q_\times(\theta)/a_0 = k_Q/[2 C_{\mathrm{IR}}(1+\cos^2\theta)]\) |
-| \(k_Q,C_{\mathrm{IR}}\) | Free Conditional Wilson coefficients on the scan grid |
+| $K_Q$ | $K_Q = k_Q M_P^2 = k_Q/(8\pi G)$ — R1 dimensional analogy |
+| $A$ | $A = C_{\mathrm{IR}}/(12\pi G\,a_0)$ — architecture force normalization |
+| $R_c$ | $R_c(\theta)=3 A q (1+\cos^2\theta)/K_Q$; causal when $R_c\le 1$ |
+| $q_\times$ | $q_\times(\theta)/a_0 = k_Q/[2 C_{\mathrm{IR}}(1+\cos^2\theta)]$ |
+| $k_Q,C_{\mathrm{IR}}$ | Free Conditional Wilson coefficients on the scan grid |
 
 Analytic identities (machine-checked):
 
@@ -51,10 +51,10 @@ Script:
 
 | Grid | Values |
 |------|--------|
-| \(k_Q\) | \(0.25, 0.5, 1, 2, 4\) |
-| \(C_{\mathrm{IR}}\) | \(0.5, 2/3, 1, 1.5\) |
-| \(q/a_0\) | \(0.1 \ldots 3\) |
-| directions | parallel (\(\cos\theta=1\)), perp (\(\cos\theta=0\)) |
+| $k_Q$ | $0.25, 0.5, 1, 2, 4$ |
+| $C_{\mathrm{IR}}$ | $0.5, 2/3, 1, 1.5$ |
+| $q/a_0$ | $0.1 \ldots 3$ |
+| directions | parallel ($\cos\theta=1$), perp ($\cos\theta=0$) |
 
 Outputs:
 
@@ -64,15 +64,15 @@ Outputs:
 
 ## Headline results (Conditional)
 
-| Point | Parallel \(q_\times/a_0\) | Note |
+| Point | Parallel $q_\times/a_0$ | Note |
 |-------|--------------------------|------|
-| Naive \((k_Q,C_{\mathrm{IR}})=(1,2/3)\) | **0.375** | Background gradients \(\sim a_0\) sit **outside** this Conditional causal window |
-| \((1,0.5)\) parallel | 0.5 | Milder |
-| \((2,2/3)\) parallel | 0.75 | Still \(q\sim a_0\) marginal/outside |
-| \((4,0.5)\) parallel | 2.0 | Larger \(k_Q\) opens room for \(q\sim a_0\) |
+| Naive $(k_Q,C_{\mathrm{IR}})=(1,2/3)$ | **0.375** | Background gradients $\sim a_0$ sit **outside** this Conditional causal window |
+| $(1,0.5)$ parallel | 0.5 | Milder |
+| $(2,2/3)$ parallel | 0.75 | Still $q\sim a_0$ marginal/outside |
+| $(4,0.5)$ parallel | 2.0 | Larger $k_Q$ opens room for $q\sim a_0$ |
 
 **Priority flag (not theory failure):** under the naive R1 point, the
-Conditional causal domain does **not** cover order-\(a_0\) gradients. That
+Conditional causal domain does **not** cover order-$a_0$ gradients. That
 motivates real matching (R2 MAT / R3 UV data), not a packaging claim that
 “the theory is superluminal.”
 
@@ -80,9 +80,9 @@ motivates real matching (R2 MAT / R3 UV data), not a packaging claim that
 
 | Claim | Status |
 |-------|--------|
-| \(k_Q\) Derived | **NOT_DERIVED** |
-| \(C_{\mathrm{IR}}\) Derived | **NOT_DERIVED** |
-| \(K_Q\) numeric from action | **NOT_DERIVED** |
+| $k_Q$ Derived | **NOT_DERIVED** |
+| $C_{\mathrm{IR}}$ Derived | **NOT_DERIVED** |
+| $K_Q$ numeric from action | **NOT_DERIVED** |
 | UVIR-003 M3 closed as Derived | **NO** — still PARTIAL until matched invariants |
 | Physical cutoff (M6) | **OPEN** |
 | MAT-001 unlock | **BLOCKED** |
@@ -104,7 +104,7 @@ python Analysis\UVIR\UVIR-003\uvir003_causality_domain_under_conditional_matchin
 
 ## Next required calculation
 
-1. Replace Conditional \((k_Q,C_{\mathrm{IR}})\) with matched invariants from a
+1. Replace Conditional $(k_Q,C_{\mathrm{IR}})$ with matched invariants from a
    **named route** (prefer R2 once force domain accepted; R3 if UV data exist).
-2. Re-evaluate \(q_\times(\theta)\) and the \(R_c\le 1\) domain after matching.
+2. Re-evaluate $q_\times(\theta)$ and the $R_c\le 1$ domain after matching.
 3. Physical cutoff / strong-coupling scale once normalization is fixed (M6).

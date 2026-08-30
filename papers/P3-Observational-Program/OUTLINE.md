@@ -14,7 +14,7 @@
 > framework (ITSM) in which each empirical test is attached to a named theory
 > gate. No fixed PTA frequency window, no IMF/JWST spectral prediction, and no
 > multi-tension cosmology claim are advanced. Companion work records claim
-> hygiene [P1] and free-field Casimir limits on rectangular \(T^3\) [P2].
+> hygiene [P1] and free-field Casimir limits on rectangular $T^3$ [P2].
 
 *(Full abstract only after trigger + ban-list review.)*
 
@@ -34,7 +34,7 @@ Table: gate → observable class → status → what “fail” means.
 | Gate | Observable class | Status (update live) | Failure mode (conditional) |
 |------|------------------|----------------------|----------------------------|
 | UVIR-003 | IR force sector domain | IN PROGRESS; Stage 5 tier-1 hold | No stable matched IR for MAT |
-| MAT-001 | \(\Cobs\) matching | BLOCKED; \(V\) not computed | No matched weak-field coefficient |
+| MAT-001 | $C_{\mathrm{obs}}$ matching | BLOCKED; $V$ not computed | No matched weak-field coefficient |
 | DISK-001 | Disk/sphere dynamics | readiness only | Morphology claims invalid |
 | STAT-001 | Inference pipeline | readiness only | No global significance |
 | CBR-002 | Driven anisotropy | open | Free-field attractor remains banned |
@@ -45,14 +45,14 @@ Table: gate → observable class → status → what “fail” means.
 
 The 2026-08-04 identity and Stage 5 checkpoints do not trigger a full P3
 draft: TOP/VOR remain scaffold-only, WAK/RES select no route, and MAT has not
-computed \(V\). This file remains an outline and contains no derived observable.
+computed $V$. This file remains an outline and contains no derived observable.
 
 ## 3. Near-term *theoretical* falsifiers (not data claims)
 
 Pull structure from CoreRecovery `sections/10_falsifiability.tex` when drafting.
 
 - UVIR: causality / EFT window violation in declared domain.  
-- MAT: matched \(\Cobs\) incompatible with Conditional IR baseline under stated premises.  
+- MAT: matched $C_{\mathrm{obs}}$ incompatible with Conditional IR baseline under stated premises.  
 - CBR-002: no driven solution if anisotropic expansion is asserted.  
 - DISK: uncontrolled curl / failure of sphere–disk consistency under declared IR.
 
@@ -66,16 +66,16 @@ Pull structure from CoreRecovery `sections/10_falsifiability.tex` when drafting.
 
 ## 5. Weak-field / galaxy program (points to P4)
 
-- Declared \((a_0,\Cobs)\) inputs only.  
+- Declared $(a_0,C_{\mathrm{obs}})$ inputs only.  
 - DISK-001 + STAT-001 required before kinematics paper (P4).  
 - Dual RAR packaging excluded (**X / B9**).  
-- SPARC-as-\(H_0\) excluded (**X / B15**).
+- SPARC-as-$H_0$ excluded (**X / B15**).
 
 ## 6. Cosmology / Casimir interface
 
-- Cite P2: free-field Casimir → no persistent \(13/12\) attractor.  
+- Cite P2: free-field Casimir → no persistent $13/12$ attractor.  
 - CBR-002 required for any driven anisotropy program item.  
-- No parameter-free \(H_0=72.97\) (**X / B12**).
+- No parameter-free $H_0=72.97$ (**X / B12**).
 
 ## 7. Reporting standard
 
@@ -94,5 +94,5 @@ Pull structure from CoreRecovery `sections/10_falsifiability.tex` when drafting.
 
 | Ver | Date | Note |
 |-----|------|------|
-| 0.0.2-outline | 2026-08-04 | Gate-map sync: Stage 5 hold, MAT \(V\) open, identity routes unselected; no `main.tex` |
+| 0.0.2-outline | 2026-08-04 | Gate-map sync: Stage 5 hold, MAT $V$ open, identity routes unselected; no `main.tex` |
 | 0.0.1-outline | 2026-08-03 | Initial firewall-safe outline; no `main.tex` |

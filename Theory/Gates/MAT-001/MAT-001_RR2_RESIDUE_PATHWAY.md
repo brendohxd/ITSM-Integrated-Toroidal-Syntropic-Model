@@ -2,7 +2,7 @@
 
 **Status:** `PASS_MAT001_RR2_RESIDUE_PATHWAY_ATTEMPTED_INCOMPLETE`  
 **RR2:** `ATTEMPTED_INCOMPLETE`  
-**Verdict:** symbolic residue \(=V\) holds; live numeric route **absent**  
+**Verdict:** symbolic residue $=V$ holds; live numeric route **absent**  
 **V:** **NOT_COMPUTED** · **Stage 4A:** **CLOSED**
 
 ## Result
@@ -15,9 +15,9 @@ L \supset \tfrac12 K_Q\dot\pi^2 - C_m\rho_b\pi,
 |g_{\rm can}|=C_m/\sqrt{K_Q}=V.
 \]
 
-Bare-\(K_Q\)-free routes (mixed response \(V/P\), exchange \(V^2/P\)) need a live
-dynamical \(P\) or amplitude export that the repository does **not** provide.
-\(Q_\rho,Q_\chi\) diagnostic impulses are **rejected** as \(V\).
+Bare-$K_Q$-free routes (mixed response $V/P$, exchange $V^2/P$) need a live
+dynamical $P$ or amplitude export that the repository does **not** provide.
+$Q_\rho,Q_\chi$ diagnostic impulses are **rejected** as $V$.
 
 ## Reproduction
 

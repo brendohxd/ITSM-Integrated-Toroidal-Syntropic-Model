@@ -58,7 +58,7 @@ UVIR-003 ──► MAT-001 ──► SCR/LEN ──► DISK-001 ──► STAT-0
 
 ## Recommended order of work (capacity-aware)
 
-1. Compute the matched \(V\) (or equivalent invariant) and reopen UVIR Stage 4A.  
+1. Compute the matched $V$ (or equivalent invariant) and reopen UVIR Stage 4A.  
 2. Re-run the independent Stage 5 closure decision; keep MAT blocked until it genuinely passes.  
 3. Continue VOR/TOP/WAK identity work and DISK tooling in parallel under Open/Conditional labels.  
 4. Start STAT-001 only when DISK predictions with declared provenance exist.  

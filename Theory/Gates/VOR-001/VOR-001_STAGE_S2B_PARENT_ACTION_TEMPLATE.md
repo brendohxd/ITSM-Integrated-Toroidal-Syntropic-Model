@@ -1,4 +1,4 @@
-# VOR-001 S2b — Parent \(S_\Phi\) template (hardened, not UVIR condensate)
+# VOR-001 S2b — Parent $S_\Phi$ template (hardened, not UVIR condensate)
 
 **Branch:** `recovery/v12-core-architecture`<br>
 **Status:** `OPEN_SCAFFOLD_ONLY`<br>
@@ -14,7 +14,7 @@
 \rho=\sqrt{2}\,|\Phi|.
 \]
 
-Flat fixed-background template (\(D_\mu=\partial_\mu\); **no** aether):
+Flat fixed-background template ($D_\mu=\partial_\mu$; **no** aether):
 
 \[
 \mathcal L = -g^{\mu\nu}(\partial_\mu\Phi)^\ast(\partial_\nu\Phi) - V(|\Phi|).
@@ -37,15 +37,15 @@ Static spatial energy density = S1 toy integrand.
 
 ## Machine-checked identities
 
-- \(V_{|\Phi|}(\rho/\sqrt{2})=V_\rho(\rho)\) (no factor-of-two ambiguity)
+- $V_{|\Phi|}(\rho/\sqrt{2})=V_\rho(\rho)$ (no factor-of-two ambiguity)
 - Polar kinetic decomposition
 - Static reduction to S1 toy energy
-- Stationary minimum at \(\rho=v\)
-- Amplitude mass \(m^2=V''(v)=2\lambda v^2\)
-- Massless Goldstone (potential independent of \(\Theta\))
+- Stationary minimum at $\rho=v$
+- Amplitude mass $m^2=V''(v)=2\lambda v^2$
+- Massless Goldstone (potential independent of $\Theta$)
 - Quadratic Hamiltonian with consistent phase convention
-  \(H_\Theta=p_\Theta^2/(2v^2)+(v^2/2)|\nabla\Theta|^2\)
-- Imported S2 amplitude mass equals declared \(2\lambda v^2\) (not mere positivity)
+  $H_\Theta=p_\Theta^2/(2v^2)+(v^2/2)|\nabla\Theta|^2$
+- Imported S2 amplitude mass equals declared $2\lambda v^2$ (not mere positivity)
 
 ## Negative controls (must raise)
 
@@ -64,5 +64,5 @@ python Analysis\VOR\VOR-001\vor001_s2b_parent_action_template.py
 
 - **Not** the ITSM UVIR condensate action
 - No UVIR validation; no aether/frame coupling
-- No defects, resonance, SWNT numbers, \(a_0\), \(\Cobs\), PTA, force claims
+- No defects, resonance, SWNT numbers, $a_0$, $C_{\mathrm{obs}}$, PTA, force claims
 - No VOR research-gate PASS

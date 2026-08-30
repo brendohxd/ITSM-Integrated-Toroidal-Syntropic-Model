@@ -28,4 +28,4 @@ python -B Analysis/MAT/MAT-001/PLAN_COMPLETION/mat001_plan_rr2_through_h7_packag
 ## Meaning
 
 Every plan step has been taken as far as honesty allows without inventing
-\(Z_\phi\), \(g_\phi\), or \(V\). True Derived closure still requires RR2 physics.
+$Z_\phi$, $g_\phi$, or $V$. True Derived closure still requires RR2 physics.

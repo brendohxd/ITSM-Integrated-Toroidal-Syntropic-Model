@@ -19,8 +19,8 @@ The Stage-A regulated force dispersion relation,
 \right],
 \]
 
-has phase velocity \(v_{\rm ph}^2=\omega^2/k^2\) that **grows without bound as
-\(k\to\infty\)** for every direction `theta` and every `q>0`, given the
+has phase velocity $v_{\rm ph}^2=\omega^2/k^2$ that **grows without bound as
+$k\to\infty$** for every direction `theta` and every `q>0`, given the
 already-established necessary signs `K_Q,A,gamma>0`. Group velocity diverges
 alongside it. This is a stronger and more specific statement than the generic
 "Not established: … strong-coupling scale" bullet in Section 7 of the Stage-A

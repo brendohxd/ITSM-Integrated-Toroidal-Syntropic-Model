@@ -99,7 +99,7 @@ c_\theta=c_1+3c_2+c_3.
 \]
 
 Using the corrected frame normalization
-\(\alpha_i=(M_U^2/M_P^2)c_i\), this is
+$\alpha_i=(M_U^2/M_P^2)c_i$, this is
 
 \[
 M_{\rm cos}^2
@@ -137,19 +137,19 @@ S_{\rm bg}
 \]
 
 The background alignment invariant is zero because
-\(J_\Phi^\mu\parallel U^\mu\):
+$J_\Phi^\mu\parallel U^\mu$:
 
 \[
 h_{\mu\nu}J_\Phi^\mu J_\Phi^\nu=0.
 \]
 
-Every derivative of the constant \(\bar\psi\) also vanishes, so the force
+Every derivative of the constant $\bar\psi$ also vanishes, so the force
 sector contributes zero at background order.
 
 ## 3. Background equations
 
-After variation, set \(N=1\) and define
-\(\mu=\dot\Theta\). Lapse variation gives
+After variation, set $N=1$ and define
+$\mu=\dot\Theta$. Lapse variation gives
 
 \[
 \boxed{
@@ -184,7 +184,7 @@ The phase equation is exact charge conservation:
 }
 \]
 
-Writing the conserved comoving charge as \(\mathcal N\),
+Writing the conserved comoving charge as $\mathcal N$,
 
 \[
 \mu(t)=\frac{\mathcal N}{a(t)^3\rho(t)^2}.
@@ -206,7 +206,7 @@ and satisfy
 \dot\rho_\Phi+3H(\rho_\Phi+p_\Phi)=0.
 \]
 
-These equations make explicit why constant \(\rho\) and constant \(\mu\)
+These equations make explicit why constant $\rho$ and constant $\mu$
 cannot generally persist during expansion without a charge-transfer source.
 
 ## 4. Representative branch
@@ -249,7 +249,7 @@ The initial chemical potential is placed on the instantaneous radial branch,
 \mu(0)^2=\frac{V_{,\rho}(\rho_0)}{\rho_0},
 \]
 
-and \(H(0)>0\) is fixed by the Friedmann constraint. Expansion then dilutes
+and $H(0)>0$ is fixed by the Friedmann constraint. Expansion then dilutes
 the conserved charge and drives a genuinely time-dependent solution.
 
 The exact numerical endpoint and residuals are recorded in
@@ -257,33 +257,33 @@ The exact numerical endpoint and residuals are recorded in
 sampled branch is in
 `Analysis/UVIR/UVIR-003/outputs/uvir003_frw_background_trajectory.csv`.
 
-For the default integration from \(t=0\) to \(t=8\):
+For the default integration from $t=0$ to $t=8$:
 
 | Quantity | Initial | Final |
 |---|---:|---:|
-| \(a\) | 1 | 4.571577 |
-| \(\rho\) | 1 | 0.134236 |
-| \(\mu\) | 1.123610 | 0.652648 |
-| \(H\) | 0.619841 | 0.076405 |
+| $a$ | 1 | 4.571577 |
+| $\rho$ | 1 | 0.134236 |
+| $\mu$ | 1.123610 | 0.652648 |
+| $H$ | 0.619841 | 0.076405 |
 
 The monitored maximum relative residuals are
 
 | Check | Maximum |
 |---|---:|
-| Friedmann constraint | \(2.124\times10^{-10}\) |
-| comoving-charge drift | \(2.220\times10^{-16}\) |
-| condensate continuity | \(1.898\times10^{-15}\) |
+| Friedmann constraint | $2.124\times10^{-10}$ |
+| comoving-charge drift | $2.220\times10^{-16}$ |
+| condensate continuity | $1.898\times10^{-15}$ |
 
 ## 5. Gate decision
 
 ### Derived and verified
 
 - the comoving aether renormalizes the homogeneous gravitational coefficient
-  to \(M_{\rm cos}^2\);
+  to $M_{\rm cos}^2$;
 - the alignment and constant-force terms vanish on this background;
 - the Friedmann, Raychaudhuri, amplitude and phase equations follow from the
   reduced action;
-- an isolated condensate has exactly conserved \(a^3\rho^2\mu\);
+- an isolated condensate has exactly conserved $a^3\rho^2\mu$;
 - a regular representative expanding branch exists and preserves the
   Friedmann constraint and continuity equation within the reported numerical
   tolerances.
@@ -294,7 +294,7 @@ The monitored maximum relative residuals are
 - a reservoir-driven background or charge-transfer law;
 - a cosmological attractor;
 - the reduced scalar kinetic and gradient matrices;
-- low-\(k\) cosmological perturbation stability;
+- low-$k$ cosmological perturbation stability;
 - CMB, growth or distance predictions.
 
 ### Consequence
@@ -302,8 +302,8 @@ The monitored maximum relative residuals are
 The scalar ADM calculation is no longer blocked by the absence of an on-shell
 background. It is now **ready to begin on the evolving FRW branch**. The
 calculation must retain the background time dependence; a subhorizon
-approximation is valid only for \(k/a\gg H\), and cannot answer the strict
-\(k\rightarrow0\) question.
+approximation is valid only for $k/a\gg H$, and cannot answer the strict
+$k\rightarrow0$ question.
 
 ## 6. Reproduction
 

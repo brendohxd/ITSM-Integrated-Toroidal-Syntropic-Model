@@ -7,9 +7,9 @@
 
 ## Sources audited
 
-Architecture weak-field action, J1 template, UVIR-001, R3 UV residue, Track-A force + \(S_{\rm int}\) embed, and the H1.1–H1.2 declaration. The Master Research Plan is governance context and is deliberately excluded from the derivation graph.
+Architecture weak-field action, J1 template, UVIR-001, R3 UV residue, Track-A force + $S_{\rm int}$ embed, and the H1.1–H1.2 declaration. The Master Research Plan is governance context and is deliberately excluded from the derivation graph.
 
-**None** derives numeric \(Z_\phi\) or \(g_\phi\). R3 reports no rigorous \(Z_\psi r_\rho\) bound. Architecture lacks \(Z_\phi/g_\phi\) symbols (only \(C_m\) form).
+**None** derives numeric $Z_\phi$ or $g_\phi$. R3 reports no rigorous $Z_\psi r_\rho$ bound. Architecture lacks $Z_\phi/g_\phi$ symbols (only $C_m$ form).
 
 ## Frozen research requirements
 
@@ -25,4 +25,4 @@ python -B Analysis/MAT/MAT-001/PARENT_ACTION_MATCHING/mat001_parent_action_h13_s
 
 ## Peer-review meaning
 
-Honest incompleteness at the parent-matching step is a valid scientific result. It is **not** a license to invent \(K_Q\) or reopen Stage 4A.
+Honest incompleteness at the parent-matching step is a valid scientific result. It is **not** a license to invent $K_Q$ or reopen Stage 4A.

@@ -108,9 +108,9 @@ Bounded follow-ons from the natural next tasks (still **no** manuscript freeze,
 | RES-001 (new) | `PASS_RES001_QSYN_CONSTITUTIVE_INVENTORY_OPEN` | `7B13D0E8C2F56A4E9E9FB02E0B7C49853851495C671F397D74C72644945C164B` |
 
 - TOP: mode-lattice / geometry handoff to CBR-001 declared; Casimir not recomputed.  
-- VOR: massive amplitude + gapless phase about \(\rho=v\) on the **toy** energy only.  
+- VOR: massive amplitude + gapless phase about $\rho=v$ on the **toy** energy only.  
 - WAK: exclusive C1/C2/C3 identity routes catalogued; identity still **UNRESOLVED**.  
-- RES-001: \(Q_{\mathrm{syn}}\) conservation partition + constitutive candidates R0–R3.
+- RES-001: $Q_{\mathrm{syn}}$ conservation partition + constitutive candidates R0–R3.
 
 All `physics_pass: false`. Research gates remain Open / scaffold-only.
 
@@ -120,12 +120,12 @@ All `physics_pass: false`. Research gates remain Open / scaffold-only.
 2. Retain WAK-001 as Open under
    `HOLD_WAK001_MICROSCOPIC_IDENTITY_MAP_UNDECLARED` and the cubic-constraint
    hold.
-3. Open RES-001 as a parallel reservoir/\(Q_{\mathrm{syn}}\) scaffold (inventory only).
+3. Open RES-001 as a parallel reservoir/$Q_{\mathrm{syn}}$ scaffold (inventory only).
 4. Do not write these results into a frozen manuscript release. They are
    candidates for the next working manuscript only after a dedicated
    manuscript integration and review.
 5. Natural next tasks (updated):
-   - TOP: optional call CBR-001 tools with declared \((L_i)\); \(S_{\mathrm{mod}}\) only after firewall review;
-   - VOR: parent \(S_\Phi\) (not toy alone) before defects/resonance;
+   - TOP: optional call CBR-001 tools with declared $(L_i)$; $S_{\mathrm{mod}}$ only after firewall review;
+   - VOR: parent $S_\Phi$ (not toy alone) before defects/resonance;
    - WAK: pick exactly one of C1/C2/C3 and declare it before sourcing;
    - RES: choose R1 or R2 constitutive/action draft (R3 remains Conditional).

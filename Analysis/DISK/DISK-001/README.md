@@ -28,8 +28,8 @@ python disk001_bc_sensitivity_midplane.py  # Stage 4 domain BC + midplane g(R)
 | `disk001_sphere_nonlinear_aqual.py` | Spherical AQUAL≡algebraic identity + mass convergence |
 | `disk001_poisson_2d_aqual.py` | 2D nonlinear AQUAL Poisson (Picard FD, Stage 1) |
 | `disk001_poisson_2d_aqual_stage2.py` | Stage 2: discrete residual + 2D log BC + convergence CSV |
-| `disk001_poisson_rz_aqual.py` | Stage 3: axisymmetric \((R,z)\) nonlinear AQUAL |
-| `disk001_bc_sensitivity_midplane.py` | Stage 4: domain BC sensitivity + midplane \(g(R)\) |
+| `disk001_poisson_rz_aqual.py` | Stage 3: axisymmetric $(R,z)$ nonlinear AQUAL |
+| `disk001_bc_sensitivity_midplane.py` | Stage 4: domain BC sensitivity + midplane $g(R)$ |
 | `disk001_stage1_run_all.py` | Stage 1 suite |
 
 ## Outputs

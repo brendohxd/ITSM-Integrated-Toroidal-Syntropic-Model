@@ -16,7 +16,7 @@ The verified flat-FRW branch removes the previous off-shell background
 blocker. The next bounded calculation is the scalar ADM principal symbol:
 freeze the evolving background coefficients over a wavelength, impose
 aether-unitary scalar gauge, eliminate the lapse and scalar shift, and retain
-the highest-derivative terms for physical wavenumber \(q=k/a\gg H\).
+the highest-derivative terms for physical wavenumber $q=k/a\gg H$.
 
 This calculation:
 
@@ -24,7 +24,7 @@ This calculation:
 - solves the principal lapse and scalar-shift constraints;
 - derives the reduced aether-curvature kinetic and gradient coefficients;
 - independently recovers the published Einstein-aether spin-0 speed;
-- derives the leading finite-\(q\) condensate kinetic correction;
+- derives the leading finite-$q$ condensate kinetic correction;
 - identifies the additional scale above which the principal reduction is
   controlled; and
 - retains the already-factorized zero-gradient force mode.
@@ -46,11 +46,11 @@ s_0^2=1.310175768,
 s_0=1.144629096.
 \]
 
-The value \(s_0>1\) is a multicone causality flag, not an exponential
+The value $s_0>1$ is a multicone causality flag, not an exponential
 instability. The representative coefficients were chosen only for background
 existence and are not a physical parameter point.
 
-This result does **not** determine the full time-dependent or strict low-\(q\)
+This result does **not** determine the full time-dependent or strict low-$q$
 system. UVIR-003 remains open.
 
 ## 1. Gauge and approximation
@@ -81,22 +81,22 @@ and perturb the condensate as
 \]
 
 The force background remains constant,
-\(\psi=\bar\psi+\pi\), with \(\partial_\mu\bar\psi=0\).
+$\psi=\bar\psi+\pi$, with $\partial_\mu\bar\psi=0$.
 
-The calculation freezes \(H,\rho,\dot\rho,\mu=\dot\Theta\) over one
+The calculation freezes $H,\rho,\dot\rho,\mu=\dot\Theta$ over one
 wavelength and retains:
 
 - the quadratic two-time-derivative terms;
-- the \(q^2\) spatial principal terms;
-- the force \(q^4\) regulator; and
-- the leading lapse-induced \(1/q^2\) condensate kinetic correction.
+- the $q^2$ spatial principal terms;
+- the force $q^4$ regulator; and
+- the leading lapse-induced $1/q^2$ condensate kinetic correction.
 
-Terms of order \(H/q\), \(\dot\mu/q\), masses, and the complete \(q^0\)
+Terms of order $H/q$, $\dot\mu/q$, masses, and the complete $q^0$
 constraint response are not promoted into this result.
 
 ## 2. Aether ADM dictionary
 
-For \(U^\mu=n^\mu\),
+For $U^\mu=n^\mu$,
 
 \[
 \nabla_\mu U_\nu=K_{\mu\nu}-U_\mu a_\nu.
@@ -154,7 +154,7 @@ quadratic scalar-shift term that is absent in pure GR.
 
 ## 3. Principal constraints
 
-For a Fourier mode with physical wavenumber \(q=k/a\), define
+For a Fourier mode with physical wavenumber $q=k/a$, define
 
 \[
 \mathcal P
@@ -187,8 +187,8 @@ and
 \]
 
 These are constraint solutions, not new propagating variables. The
-\(1/q^2\) terms also show why this principal reduction cannot be extrapolated
-to \(q=0\).
+$1/q^2$ terms also show why this principal reduction cannot be extrapolated
+to $q=0$.
 
 ## 4. Reduced aether-curvature block
 
@@ -205,7 +205,7 @@ F=1+\frac{\alpha_{13}+3\alpha_2}{2}
 =\frac{M_{\rm cos}^2}{M_P^2}.
 \]
 
-After eliminating \(\delta N\) and \(\beta\), the principal curvature block is
+After eliminating $\delta N$ and $\beta$, the principal curvature block is
 
 \[
 \mathcal L_{\mathcal R}^{(2)}
@@ -266,8 +266,8 @@ F>0,\qquad
 
 ## 5. Condensate principal block and validity scale
 
-The finite-\(q\) condensate velocity Hessian for
-\((\delta\rho,\vartheta)\) is
+The finite-$q$ condensate velocity Hessian for
+$(\delta\rho,\vartheta)$ is
 
 \[
 \mathbf K_\Phi(q)=
@@ -309,17 +309,17 @@ The principal condensate block is controlled only for
 q^2\gg q_{\rm ADM}^2
 \]
 
-in addition to \(q\gg H\). Near or below this scale, the omitted \(q^0\)
+in addition to $q\gg H$. Near or below this scale, the omitted $q^0$
 terms and full time dependence must be restored before signs are interpreted.
 
-At asymptotically high \(q\), the amplitude speed is unity. The phase gradient
+At asymptotically high $q$, the amplitude speed is unity. The phase gradient
 receives the alignment contribution
 
 \[
 c_\vartheta^2=1+\zeta_{\rm align}\rho^2.
 \]
 
-The declared \(\zeta_{\rm align}>0\) gives a positive phase gradient but opens
+The declared $\zeta_{\rm align}>0$ gives a positive phase gradient but opens
 another preferred-frame cone. Its global causal interpretation remains a
 separate gate.
 
@@ -339,7 +339,7 @@ with positive principal energy for
 K_Q>0,\qquad \gamma>0.
 \]
 
-This block does not repair or invalidate the low-\(q\) metric-aether-condensate
+This block does not repair or invalidate the low-$q$ metric-aether-condensate
 system.
 
 ## 7. Representative branch
@@ -357,19 +357,19 @@ The reduced coefficients and speed are
 
 | Quantity | Value |
 |---|---:|
-| \(\mathcal K_{\mathcal R}\) | 39.94375 |
-| \(\mathcal G_{\mathcal R}\) | 52.3333333 |
-| \(s_0^2\) | 1.310175768 |
-| \(s_0\) | 1.144629096 |
+| $\mathcal K_{\mathcal R}$ | 39.94375 |
+| $\mathcal G_{\mathcal R}$ | 52.3333333 |
+| $s_0^2$ | 1.310175768 |
+| $s_0$ | 1.144629096 |
 
 The 801-point trajectory scan gives
 
 | Validity diagnostic | Maximum | Time |
 |---|---:|---:|
-| \(q_{\rm ADM}\) | 5.802298 | 0.00 |
-| \(q_{\rm ADM}/H\) | 11.939072 | 2.52 |
-| \(a q_{\rm ADM}\) | 5.952641 | 1.99 |
-| \(aH\) | 0.632766 | 1.05 |
+| $q_{\rm ADM}$ | 5.802298 | 0.00 |
+| $q_{\rm ADM}/H$ | 11.939072 | 2.52 |
+| $a q_{\rm ADM}$ | 5.952641 | 1.99 |
+| $aH$ | 0.632766 | 1.05 |
 
 Thus a fixed comoving mode used in this audit must satisfy
 
@@ -377,7 +377,7 @@ Thus a fixed comoving mode used in this audit must satisfy
 k\gg \max_t(aq_{\rm ADM},aH),
 \]
 
-not merely \(k/a>H\) at the initial time.
+not merely $k/a>H$ at the initial time.
 
 ## 8. Gate decision
 
@@ -387,16 +387,16 @@ not merely \(k/a>H\) at the initial time.
 - the principal lapse and scalar-shift solutions;
 - the reduced aether-curvature kinetic and gradient coefficients;
 - exact agreement with the published Einstein-aether spin-0 speed;
-- the leading finite-\(q\) condensate kinetic matrix and its factorized
+- the leading finite-$q$ condensate kinetic matrix and its factorized
   determinant;
-- the additional \(q_{\rm ADM}\) validity scale;
+- the additional $q_{\rm ADM}$ validity scale;
 - positive principal coefficients at the representative dimensionless point.
 
 ### Still open
 
-- all \(H/q\), \(\dot\mu/q\), mass, and \(q^0\) terms;
-- finite-\(q\) eigenvalues outside the controlled principal domain;
-- the strict \(q\rightarrow0\) Hamiltonian and gradient audit;
+- all $H/q$, $\dot\mu/q$, mass, and $q^0$ terms;
+- finite-$q$ eigenvalues outside the controlled principal domain;
+- the strict $q\rightarrow0$ Hamiltonian and gradient audit;
 - a physical alignment coefficient and a phenomenologically selected aether
   domain;
 - global multicone causality;
@@ -407,7 +407,7 @@ not merely \(k/a>H\) at the initial time.
 
 The scalar ADM programme advances from “ready to begin” to
 **principal subhorizon reduction passed**. It does not close UVIR-003.
-The next calculation is the full time-dependent finite-\(q\) scalar quadratic
+The next calculation is the full time-dependent finite-$q$ scalar quadratic
 action along the evolving branch.
 
 ## 9. Reproduction

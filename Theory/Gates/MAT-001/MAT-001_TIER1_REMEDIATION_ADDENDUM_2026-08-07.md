@@ -7,8 +7,8 @@
 
 **Frozen releases:** alpha.11 and alpha.12 remain immutable
 
-**Gate status:** UVIR-003 `IN_PROGRESS`; MAT-001 `BLOCKED`; \(V\)
-`NOT_COMPUTED`; \(K_Q\) `NOT_DERIVED`; Stage 4A `CLOSED`
+**Gate status:** UVIR-003 `IN_PROGRESS`; MAT-001 `BLOCKED`; $V$
+`NOT_COMPUTED`; $K_Q$ `NOT_DERIVED`; Stage 4A `CLOSED`
 
 ## Purpose and quarantine
 
@@ -36,8 +36,8 @@ Their static terms agree only for
 B=-M_x^T,\qquad C_{\rm J2}=-C_{\rm ADM}.
 \]
 
-Correct the prior \(B=+M_x^T\) export, add exact symbolic reconstruction checks,
-regenerate the evidence, and trace every consumer. The nonzero \(M_v\dot x\)
+Correct the prior $B=+M_x^T$ export, add exact symbolic reconstruction checks,
+regenerate the evidence, and trace every consumer. The nonzero $M_v\dot x$
 block remains an obstruction and must not be erased.
 
 **Exit:** byte-reproducible output; exact reconstruction; dependency cone
@@ -55,19 +55,19 @@ unreadable or unclassified sources fail closed.
 
 ## R3 ? Covariant parent matter action
 
-The Track-A interaction \(L_{\rm int}=-C_m\rho_b\psi\) is a Conditional reduced
-ansatz. Its \(h=(0,0)\) result is not a covariant matter-source derivation.
+The Track-A interaction $L_{\rm int}=-C_m\rho_b\psi$ is a Conditional reduced
+ansatz. Its $h=(0,0)$ result is not a covariant matter-source derivation.
 Specify one covariant matter action, matter variables, metric signature,
 field/unit chart and conservation law. Derive lapse and shift sources by ADM
 variation in the same chart as the free sector.
 
-**Exit:** action provenance and covariance recorded; \(d,h\) obtained by
+**Exit:** action provenance and covariance recorded; $d,h$ obtained by
 variation; constraint/Bianchi consistency checked; any zero follows from the
 action or a declared controlled limit.
 
 ## R4 ? Signed residue contract
 
-Maintain signed finite \(C_m\) through canonical normalization and projected
+Maintain signed finite $C_m$ through canonical normalization and projected
 source matching. Magnitude-only diagnostics may be supplementary but cannot
 satisfy a signed matching contract.
 
@@ -84,7 +84,7 @@ sign-flipped mutation cases behave according to the declared contract.
 6. Run an independent Tier-1 review of the repaired bundle.
 7. Only then reconsider the MAT-001 checklist.
 
-TOP, VOR, WAK and reservoir/\(Q_{\rm syn}\) work may continue in parallel as
+TOP, VOR, WAK and reservoir/$Q_{\rm syn}$ work may continue in parallel as
 Conditional/Open research, but cannot bypass this remediation.
 
 ## Evidence control
@@ -139,7 +139,7 @@ dates and changed citation status recorded explicitly.
 
 ## Progress record
 
-- R1 convention corrected: \(B=-M_x^T\), \(C_{\rm J2}=-C_{\rm ADM}\).
+- R1 convention corrected: $B=-M_x^T$, $C_{\rm J2}=-C_{\rm ADM}$.
 - Wolfram generic-matrix residual: zero.
 - Mutation suite and two distinct Python hash seeds produce byte-identical JSON:
   `33FCD3A4AB8F8531E611DFACDD91CCB7598CF9ADE49A8279A87B5EB954D4A469`.
@@ -149,7 +149,7 @@ dates and changed citation status recorded explicitly.
   package now consumes the RR2 attempt as upstream evidence, giving the
   provenance direction RR1 ? RR2 ? RR2?H7 package.
 - Direct and transitive evidence outputs were regenerated. All retain
-  `MAT-001 BLOCKED`, \(V\) `NOT_COMPUTED`, \(K_Q\) `NOT_DERIVED`, and Stage 4A
+  `MAT-001 BLOCKED`, $V$ `NOT_COMPUTED`, $K_Q$ `NOT_DERIVED`, and Stage 4A
   `CLOSED`.
 - AUTO-03 completed: H1.3 no longer assigns and tests its own
   `derives_numeric_* = False` fields. It classifies attestations parsed from all
@@ -161,7 +161,7 @@ dates and changed citation status recorded explicitly.
   `PASS_MAT001_PARENT_ACTION_H13_INCOMPLETE_SOURCES_AUDITED`, with digest
   `C43E84A180D8F9C9DDA8BE1DAA3DCA8FFE3E83D67329B15066C698DEF0835013`.
 - RR1, RR2 and the bounded RR2-H7 package were regenerated from the new H1.3
-  digest. No MAT, UVIR, \(V\), \(K_Q\), or Stage 4A status was promoted.
+  digest. No MAT, UVIR, $V$, $K_Q$, or Stage 4A status was promoted.
 ## R3-R4 close-out record
 
 - R3 selected the universal conformal matter action

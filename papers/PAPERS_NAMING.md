@@ -36,8 +36,8 @@ Do **not** put “Geometric-Invariants” or “parameter-free” in filenames.
 
 Full titles (for metadata, not full filesystem strings):
 
-- **P1:** Present-epoch scale matching, the weak-field invariant \(C_{\rm obs}\), and no-go results for a cubic \(T^3\) geometric story  
-- **P2:** Anisotropic Casimir stress on rectangular flat \(T^3\) and the absence of a free-field \(H_t/H_p=13/12\) attractor  
+- **P1:** Present-epoch scale matching, the weak-field invariant $C_{\rm obs}$, and no-go results for a cubic $T^3$ geometric story  
+- **P2:** Anisotropic Casimir stress on rectangular flat $T^3$ and the absence of a free-field $H_t/H_p=13/12$ attractor  
 
 ## Build behaviour
 
@@ -58,7 +58,7 @@ Full titles (for metadata, not full filesystem strings):
 | Old path | Why wrong |
 |----------|-----------|
 | `papers/P1-Geometric-Invariants/` | Implies geometric invariants established |
-| `papers/P2-Casimir-Backreaction/` | Less specific than rectangular \(T^3\) free-field scope |
+| `papers/P2-Casimir-Backreaction/` | Less specific than rectangular $T^3$ free-field scope |
 
 ## Related
 

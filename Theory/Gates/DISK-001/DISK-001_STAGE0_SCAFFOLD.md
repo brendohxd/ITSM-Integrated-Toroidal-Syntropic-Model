@@ -13,7 +13,7 @@ Full DISK-001 gate: **IN PROGRESS** (not closed)
 | Exponential disk midplane boost | `PASS_DISK001_EXP_DISK_MIDPLANE_AQUAL` |
 | 2D curl residual measured | `PASS_DISK001_CURL_RESIDUAL_MEASURED` |
 
-IR policy: **Conditional** AQUAL-class with declared \(C_{\mathrm{obs}}\sim 1\) and phenomenological \(a_0\) (Master Plan §6). No Derived \(\Cobs\), no dual RAR packaging.
+IR policy: **Conditional** AQUAL-class with declared $C_{\mathrm{obs}}\sim 1$ and phenomenological $a_0$ (Master Plan §6). No Derived $C_{\mathrm{obs}}$, no dual RAR packaging.
 
 ## Code
 
@@ -30,7 +30,7 @@ python Analysis\DISK\DISK-001\disk001_stage0_run_all.py
 - Not SPARC validation or STAT-001.  
 - Not nonlinear AQUAL Poisson (potential structure).  
 - Not full DISK-001 PASS (sphere+disk+curl+**convergence** still incomplete).  
-- Algebraic map \(g=f(|g_N|)g_N\) curl is a **diagnostic**, not a claim of zero curl.
+- Algebraic map $g=f(|g_N|)g_N$ curl is a **diagnostic**, not a claim of zero curl.
 
 ## Next toward full DISK-001
 

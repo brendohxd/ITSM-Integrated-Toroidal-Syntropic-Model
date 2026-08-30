@@ -8,8 +8,8 @@
 **Full gate status:** **`IN_PROGRESS`**  
 **physics_pass:** **false**  
 **MAT-001 PASS:** **forbidden**  
-**Numeric \(K_Q\):** **NOT_DERIVED**  
-**\(V=C_m/\sqrt{K_Q}\):** **NOT_COMPUTED**
+**Numeric $K_Q$:** **NOT_DERIVED**  
+**$V=C_m/\sqrt{K_Q}$:** **NOT_COMPUTED**
 
 ## Decision
 
@@ -28,7 +28,7 @@ in progress and therefore requires no retroactive release edit.
 |----|----------------|----------------|
 | M1 selected action | `PASS_BOUNDED` | Met within the declared architecture |
 | M2 stability/domain | `PARTIAL_BOUNDED_HIGH_Q_ONLY` | **Blocked:** relevant IR complex-quartet control remains held |
-| M3 causality | `HOLD_MATCHED_INVARIANT_REQUIRED` | **Blocked:** Conditional tables do not replace matched \(Aq/K_Q\) |
+| M3 causality | `HOLD_MATCHED_INVARIANT_REQUIRED` | **Blocked:** Conditional tables do not replace matched $Aq/K_Q$ |
 | M4 unitarity path | `PASS_SCOPED` | Path declared; no optical-theorem claim |
 | M5 invariant inventory | `PASS_INVENTORY_K_Q_NOT_DERIVED` | Invariants identified; matching remains open |
 | M6 physical cutoff | `HOLD_PHYSICAL_CUTOFF_REQUIRED` | **Blocked:** NDA diagnostic is not a matched cutoff |
@@ -38,7 +38,7 @@ in progress and therefore requires no retroactive release edit.
 
 - Stage 2a R3 residue audit: `INCOMPLETE_R3_UV_RESIDUE`.
 - Stage 2b Conditional matching floor and Stage 2c diagnostic tables.
-- Stage 3 static-reduction forms and Conditional \(\Cobs\sim1\) baseline.
+- Stage 3 static-reduction forms and Conditional $C_{\mathrm{obs}}\sim1$ baseline.
 - Stage 4 Conditional M3/M6 limit record.
 - Local four-leg, Green-function, Track-A and scoped unitarity-path evidence.
 
@@ -46,7 +46,7 @@ These remain valid only within their stated mathematical or Conditional scope.
 
 ## Mandatory next calculations
 
-1. Derive \(V=C_m/\sqrt{K_Q}\), or an equivalent matched invariant, from one
+1. Derive $V=C_m/\sqrt{K_Q}$, or an equivalent matched invariant, from one
    declared action and one field-normalization chart.
 2. Reopen Stage 4A and recompute the causality domain using the matched
    invariant.
@@ -58,9 +58,9 @@ These remain valid only within their stated mathematical or Conditional scope.
 
 ## Explicit non-claims
 
-No UVIR full PASS; no Derived \(K_Q\), \(V\), matched \(Aq/K_Q\), physical
+No UVIR full PASS; no Derived $K_Q$, $V$, matched $Aq/K_Q$, physical
 cutoff, MAT PASS, downstream Derived SCR/LEN/DISK/P3/P4 packaging, SPARC or
-\(H_0\) validation, or dual-RAR restoration.
+$H_0$ validation, or dual-RAR restoration.
 
 ## Reproduce
 

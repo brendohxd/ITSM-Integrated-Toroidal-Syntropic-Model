@@ -32,11 +32,11 @@ peer-review-correct move: **do not smuggle HOLD modes as PASS**.
 
 | Sector | Explicit admitted support | Evidence |
 |--------|---------------------------|----------|
-| Track-A nonzero-gradient force | Analytic \(A_{\rm IR}>0,\ v>0\); sampled \(A_{\rm IR}=1\), \(v\in\{0.05,0.1,0.25,0.5,1,2\}\) | `PASS_NONZERO_GRADIENT_FORCE_LOCAL` |
-| High-\(q\) mode-projected Green proxy | Discrete \(q/H\in\{47.5,50,75,100\}\); representative two-time proxy \(t\in[0,8]\) | `PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN` |
-| Local adiabatic packet norm | \(q_0/H=50\), narrow \(\sigma_{\ln q}=0.02\), same discrete support | `PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION` |
-| Declared tree/NDA diagnostic | \(q/\Lambda_\parallel\le0.3\), \(u_L\le1\), evaluated at diagnostic \(A_{\rm IR}=K_Q=1\) | `PASS_DECLARED_UNITARITY_EFT_CRITERION` |
-| Invariants + route maps | Algebraic interface only; numeric \(K_Q\) and physical cutoff unmatched | inventory + matching-route program |
+| Track-A nonzero-gradient force | Analytic $A_{\rm IR}>0,\ v>0$; sampled $A_{\rm IR}=1$, $v\in\{0.05,0.1,0.25,0.5,1,2\}$ | `PASS_NONZERO_GRADIENT_FORCE_LOCAL` |
+| High-$q$ mode-projected Green proxy | Discrete $q/H\in\{47.5,50,75,100\}$; representative two-time proxy $t\in[0,8]$ | `PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN` |
+| Local adiabatic packet norm | $q_0/H=50$, narrow $\sigma_{\ln q}=0.02$, same discrete support | `PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION` |
+| Declared tree/NDA diagnostic | $q/\Lambda_\parallel\le0.3$, $u_L\le1$, evaluated at diagnostic $A_{\rm IR}=K_Q=1$ | `PASS_DECLARED_UNITARITY_EFT_CRITERION` |
+| Invariants + route maps | Algebraic interface only; numeric $K_Q$ and physical cutoff unmatched | inventory + matching-route program |
 
 These are analytic conditions plus discrete tested support, not a validated
 continuous neighbourhood. The present audit also does not prove that evolution
@@ -47,16 +47,16 @@ cannot mix admitted data into excluded IR modes.
 | Sector | Why |
 |--------|-----|
 | IR transfer HOLD / complex-quartet modes | Structural HOLD on disk |
-| Homogeneous zero-gradient \(Y^{3/2}\) S-matrix | Not Track-A programme |
+| Homogeneous zero-gradient $Y^{3/2}$ S-matrix | Not Track-A programme |
 | Full in-in nested integrals | Path only; not computed |
 | Optical theorem / multi-channel unitarity | NOT_COMPUTED; out of UVIR Stage-1 scope |
-| Derived \(K_Q\) / matched physical cutoff | Stages 2–4 |
+| Derived $K_Q$ / matched physical cutoff | Stages 2–4 |
 | MAT-001 Derived vertex | Stage 3 |
 
 ## Explicit non-claims
-- No continuous high-\(q\) interval is certified between sampled points.
+- No continuous high-$q$ interval is certified between sampled points.
 - No dynamical no-leakage/closure theorem for the admitted sector is established.
-- \(\Lambda_\parallel\) is a diagnostic NDA scale until matching fixes the normalization.
+- $\Lambda_\parallel$ is a diagnostic NDA scale until matching fixes the normalization.
 
 - IR modes are **not** declared healthy.  
 - M3/M6 are **not** Derived-closed.  

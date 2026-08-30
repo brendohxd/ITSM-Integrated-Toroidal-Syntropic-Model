@@ -26,11 +26,11 @@ The exact support requirement is
 \]
 
 A cosmological constant fails because its enthalpy is zero. A minimally
-coupled, shift-symmetric scalar with Lagrangian \(P_R(X_R)\) can have the
-required negative enthalpy only when \(P_{R,X}<0\). The same derivative is the
+coupled, shift-symmetric scalar with Lagrangian $P_R(X_R)$ can have the
+required negative enthalpy only when $P_{R,X}<0$. The same derivative is the
 coefficient of its two-derivative spatial-gradient term, so the required
 background is not a healthy short-wavelength support state. The
-ghost-condensate point \(P_{R,X}=0\) has zero enthalpy and is also
+ghost-condensate point $P_{R,X}=0$ has zero enthalpy and is also
 insufficient. A rigid prescribed stress can support a local decoupling
 calculation, but it has no action-derived lapse or shift response and cannot
 close the full ADM gate.
@@ -89,18 +89,18 @@ p_{\rm vac}=-\Lambda_{\rm vac},\qquad
 \rho_{\rm vac}+p_{\rm vac}=0.
 \]
 
-It cannot cancel \(s\mu^2\).
+It cannot cancel $s\mu^2$.
 
-### 2.2 Minimal local \(P_R(X_R)\) scalar - rejected as healthy support
+### 2.2 Minimal local $P_R(X_R)$ scalar - rejected as healthy support
 
-Use signature \((-+++)\) and
+Use signature $(-+++)$ and
 
 \[
 X_R=-\frac12\nabla_\mu\chi\nabla^\mu\chi>0
 \]
 
 on a homogeneous timelike background. For
-\(\mathcal L_R=P_R(X_R)\),
+$\mathcal L_R=P_R(X_R)$,
 
 \[
 p_R=P_R,\qquad
@@ -114,7 +114,7 @@ Matching the required exact-Minkowski counterstress gives
 P_{R,X}=-\frac{s\mu^2}{2X_R}<0.
 \]
 
-Writing \(\chi=\bar\chi(t)+\pi\), the principal two-derivative quadratic
+Writing $\chi=\bar\chi(t)+\pi$, the principal two-derivative quadratic
 action is
 
 \[
@@ -132,18 +132,18 @@ P_{R,X}+2X_RP_{R,XX}>0,\qquad P_{R,X}>0.
 The support requirement and spatial-gradient condition have opposite signs.
 If the time-kinetic coefficient is positive, the support state has a gradient
 instability; changing the time coefficient's sign instead introduces a
-ghost. Thus a healthy two-derivative \(P(X)\) scalar cannot provide the exact
+ghost. Thus a healthy two-derivative $P(X)$ scalar cannot provide the exact
 Minkowski support required here.
 
 ### 2.3 Ghost-condensate point - insufficient
 
-At \(P_{R,X}=0\),
+At $P_{R,X}=0$,
 
 \[
 \rho_R+p_R=0.
 \]
 
-Higher-spatial-derivative operators can supply a \(k^4\) fluctuation term, but
+Higher-spatial-derivative operators can supply a $k^4$ fluctuation term, but
 the point itself does not supply the missing nonzero background enthalpy.
 Moving to a stable NEC-violating construction requires additional operators
 and a new theory audit.
@@ -156,7 +156,7 @@ covariant completion: without an action it provides no reservoir perturbation,
 Hamiltonian constraint contribution or momentum-constraint response.
 
 It may therefore label a future decoupling check, but it cannot be used for
-the strict scalar ADM reduction or the \(k\rightarrow0\) Hamiltonian audit.
+the strict scalar ADM reduction or the $k\rightarrow0$ Hamiltonian audit.
 
 ### 2.5 Higher-derivative NEC-violating support - open new theory
 
@@ -186,26 +186,26 @@ For a spatially flat FRW metric, the background equations are
 
 Unlike exact Minkowski space, these equations do not require an added sector
 to cancel the condensate enthalpy. The condensate, frame and any explicitly
-declared reservoir stress instead determine \(H(t)\) and \(\dot H(t)\).
+declared reservoir stress instead determine $H(t)$ and $\dot H(t)$.
 
 The background cannot retain every Minkowski ansatz unchanged. If
-\(n=\mu\rho^2\) is the condensate charge density and the condensate \(U(1)\)
+$n=\mu\rho^2$ is the condensate charge density and the condensate $U(1)$
 charge is isolated, then
 
 \[
 \dot n+3Hn=0.
 \]
 
-Hence \(n\propto a^{-3}\), and the amplitude or chemical potential generally
-evolves. Exact constant \(n\) in an expanding state would require a separately
+Hence $n\propto a^{-3}$, and the amplitude or chemical potential generally
+evolves. Exact constant $n$ in an expanding state would require a separately
 declared charge-transfer source
 
 \[
 \dot n+3Hn=S_N,\qquad S_N=3Hn.
 \]
 
-\(S_N\) is not automatically the same object as the stress-energy exchange
-vector \(Q_{\rm syn}^{\nu}\). A model must derive their relationship if the
+$S_N$ is not automatically the same object as the stress-energy exchange
+vector $Q_{\rm syn}^{\nu}$. A model must derive their relationship if the
 reservoir transfers both energy-momentum and condensate charge.
 
 ## 4. Scope of the route decision
@@ -214,7 +214,7 @@ reservoir transfers both energy-momentum and condensate charge.
 
 - exact Minkowski support requires negative reservoir enthalpy;
 - constant vacuum energy cannot supply it;
-- a healthy two-derivative \(P(X)\) scalar cannot supply it on a homogeneous
+- a healthy two-derivative $P(X)$ scalar cannot supply it on a homogeneous
   timelike background;
 - the ghost-condensate point has insufficient enthalpy;
 - prescribed rigid support cannot close the full ADM constraints;
@@ -238,12 +238,12 @@ possible higher-derivative NEC-violating theory is pathological.
 The next UVIR-003 task is now concrete:
 
 1. derive the homogeneous equations for
-   \(a(t),\rho(t),\Theta(t),U^\mu(t)\) and any retained reservoir variables;
-2. conserve condensate charge, or declare and derive a distinct \(S_N\);
+   $a(t),\rho(t),\Theta(t),U^\mu(t)$ and any retained reservoir variables;
+2. conserve condensate charge, or declare and derive a distinct $S_N$;
 3. construct at least one verified on-shell evolving branch;
 4. reduce the metric-aether-condensate scalar constraints on that branch;
-5. use a subhorizon limit only when \(k/a\gg H\);
-6. reserve the strict low-\(k\) cosmological audit for the complete
+5. use a subhorizon limit only when $k/a\gg H$;
+6. reserve the strict low-$k$ cosmological audit for the complete
    perturbation system.
 
 This is background construction, not the COS-001 observational fit. COS-001

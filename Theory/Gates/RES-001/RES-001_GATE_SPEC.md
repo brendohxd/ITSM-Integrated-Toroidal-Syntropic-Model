@@ -1,4 +1,4 @@
-# RES-001 — Reservoir / \(Q_{\mathrm{syn}}\) constitutive gate (scaffold)
+# RES-001 — Reservoir / $Q_{\mathrm{syn}}$ constitutive gate (scaffold)
 
 **Document type:** Open gate specification  
 **Gate ID:** RES-001  
@@ -9,12 +9,12 @@
 
 ## Question
 
-Can reservoir–plenum throughput \(Q_{\mathrm{syn}}^\nu\) be realized as an
+Can reservoir–plenum throughput $Q_{\mathrm{syn}}^\nu$ be realized as an
 energy-accounted constitutive or action-level sector such that:
 
 1. total matter + plenum + reservoir conservation holds;
-2. \(Q_{\mathrm{mp}}\) (local matter–plenum) is not silently identified with \(Q_{\mathrm{syn}}\);
-3. no free generic creation rate, \(H_0\), or \(13/12\) packaging is smuggled;
+2. $Q_{\mathrm{mp}}$ (local matter–plenum) is not silently identified with $Q_{\mathrm{syn}}$;
+3. no free generic creation rate, $H_0$, or $13/12$ packaging is smuggled;
 4. optional later interface to WAK Route I/II does not double-count currents?
 
 ## First executable

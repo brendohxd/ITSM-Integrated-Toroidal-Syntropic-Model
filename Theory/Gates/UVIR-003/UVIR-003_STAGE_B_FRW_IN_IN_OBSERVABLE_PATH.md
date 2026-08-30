@@ -26,17 +26,17 @@ G_{\mathrm{proxy}}(t_{\mathrm{out}},t_{\mathrm{in}};\sigma)
 O[\sigma]\,T_{\mathrm{gain}}(q_{\mathrm{high}})
 \]
 
-- \(O[\sigma]\): local Gaussian packet average of the frozen four-leg kernel
+- $O[\sigma]$: local Gaussian packet average of the frozen four-leg kernel
   (`PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION`).
-- \(T_{\mathrm{gain}}\): endpoint normalized phase-space gain on a **controlled
-  high-\(q\)** fixed-comoving transfer sample (infrared transfer may remain
+- $T_{\mathrm{gain}}$: endpoint normalized phase-space gain on a **controlled
+  high-$q$** fixed-comoving transfer sample (infrared transfer may remain
   `HOLD` and is not used here).
 
 ## Pass criteria
 
 1. Verified FRW representative branch available.  
 2. Packet proxy summary PASS.  
-3. At least one high-\(q\) converged transfer sample.  
+3. At least one high-$q$ converged transfer sample.  
 4. Explicit scientific boundary written to JSON.
 
 ## Non-claims
@@ -60,7 +60,7 @@ python uvir003_frw_in_in_observable_path.py
 
 ## Next
 
-1. Multi-slice local kernel / response on admitted high-\(q\) FRW points.  
-2. Replace scalar \(T_{\mathrm{gain}}\) with mode-projected two-time Green’s function.  
-3. Nonzero-gradient \(|\nabla\pi|^3\).  
+1. Multi-slice local kernel / response on admitted high-$q$ FRW points.  
+2. Replace scalar $T_{\mathrm{gain}}$ with mode-projected two-time Green’s function.  
+3. Nonzero-gradient $|\nabla\pi|^3$.  
 4. Declared unitarity criterion only after the above.

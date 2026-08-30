@@ -1,4 +1,4 @@
-# P2 — Anisotropic Casimir on rectangular \(T^3\) (free-field backreaction)
+# P2 — Anisotropic Casimir on rectangular $T^3$ (free-field backreaction)
 
 **Directory:** `papers/P2-Rectangular-T3-Casimir/`  
 **VERSION:** see `VERSION` (currently `0.1.0-draft`)  
@@ -13,16 +13,16 @@
 
 ## Core claim (allowed)
 
-For a free massless scalar on rectangular flat \(T^3\), renormalized lattice
+For a free massless scalar on rectangular flat $T^3$, renormalized lattice
 Casimir stress is anisotropic and validated; free-field biaxial backreaction
-produces only *transient* passages near \(H_t/H_p=13/12\), with no
+produces only *transient* passages near $H_t/H_p=13/12$, with no
 quasi-plateau or attractor.
 
 ## Must not claim
 
-- Parameter-free \(H_0=72.97\) or persistent free-field \(13/12\) attractor  
-- Geometric \(a_0\) / MOND scale from this topology  
-- Doughnut \(T^2\) as flat \(T^3\)  
+- Parameter-free $H_0=72.97$ or persistent free-field $13/12$ attractor  
+- Geometric $a_0$ / MOND scale from this topology  
+- Doughnut $T^2$ as flat $T^3$  
 - Simulated box is Planck-safe cubic cosmology  
 - Companion P1 as establishing geometric invariants  
 
@@ -50,7 +50,7 @@ python cbr001_stage3b_ratio_test.py
 - [x] Skeleton `main.tex`  
 - [x] Port CoreRecovery §06 + CBR STAGE docs  
 - [x] Abstract ban-list review (B1–B16 packaging)  
-- [x] Rectangular \(T^3\) figure (not doughnut)  
+- [x] Rectangular $T^3$ figure (not doughnut)  
 - [x] Stage-1 / Stage-3B tables from validated outputs  
 - [x] Stage-2 anisotropy + Stage-3B ratio/threshold figures  
 - [x] `CBR001_CHECKSUMS.md` + appendix anchors  

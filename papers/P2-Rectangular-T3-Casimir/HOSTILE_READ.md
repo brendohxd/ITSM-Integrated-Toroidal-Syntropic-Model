@@ -26,14 +26,14 @@ Not overclaiming attractor / H0 / a0. Science rests on CBR-001 Stages 1–3B.
 
 ### Must fix (applied)
 
-1. **Undefined \(\kappa\)** in shear/Hamiltonian equations — define \(\kappa=8\pi G\).  
-2. **\(\epsilon\) amplitude** used in table without one-line definition linking to Stage-3A dimensionless Casimir fraction.  
+1. **Undefined $\kappa$** in shear/Hamiltonian equations — define $\kappa=8\pi G$.  
+2. **$\epsilon$ amplitude** used in table without one-line definition linking to Stage-3A dimensionless Casimir fraction.  
 3. **Bibliography after appendix** — move `\bibliography` before appendix for revtex hygiene, or keep single trailing bib (kept trailing; rebuild OK). Prefer bibliography before appendix if rebuild complains.
 
 ### Should fix (applied)
 
 4. One-sentence **data/code availability** in conclusions pointing at CBR-001 + checksums.  
-5. Explicit that **\(H_t=72.97\)** appears only as historical packaging under test, not as a secondary result.  
+5. Explicit that **$H_t=72.97$** appears only as historical packaging under test, not as a secondary result.  
 6. State Stage-3A de Sitter + small-source scope again in conclusions.
 
 ### Optional / later

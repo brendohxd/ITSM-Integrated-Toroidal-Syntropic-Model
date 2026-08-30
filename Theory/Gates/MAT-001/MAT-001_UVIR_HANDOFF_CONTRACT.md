@@ -62,7 +62,7 @@ consistent joint meaning is:
 | Boundary | Status |
 |---|---|
 | Scoped symbolic physical-mode projection audit | **authorized** |
-| Numerical \(V=C_m/\sqrt{K_Q}\) matching | **not ready** |
+| Numerical $V=C_m/\sqrt{K_Q}$ matching | **not ready** |
 | Stage 4A reopening | **not authorized** |
 | MAT-001 PASS | **not authorized** |
 | UVIR-003 full PASS | **not authorized** |
@@ -87,6 +87,6 @@ The audit also reproduces the active blockers:
 ## Scientific boundary
 
 This is an interface-integrity PASS, not a physics PASS. It does not derive
-\(C_m\), \(K_Q\), \(V\), \(C_{\rm obs}\), a physical cutoff, a stability domain
+$C_m$, $K_Q$, $V$, $C_{\rm obs}$, a physical cutoff, a stability domain
 or a cosmological observable. It does not modify alpha.11 or authorize a new
 manuscript freeze.

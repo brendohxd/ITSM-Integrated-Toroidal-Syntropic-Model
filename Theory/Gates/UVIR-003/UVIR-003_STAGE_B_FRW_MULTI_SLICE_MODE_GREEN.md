@@ -18,16 +18,16 @@ MAT-001: **BLOCKED**
 Advance the declared FRW in-in path by:
 
 1. Sampling the local four-leg kernel across **multiple FRW slices** in the
-   controlled high-\(q\) domain (not only the initial freeze).
-2. Replacing scalar endpoint \(T_{\mathrm{gain}}\) with a **causal
-   mode-projected two-time Green proxy** built from the existing high-\(q\)
+   controlled high-$q$ domain (not only the initial freeze).
+2. Replacing scalar endpoint $T_{\mathrm{gain}}$ with a **causal
+   mode-projected two-time Green proxy** built from the existing high-$q$
    transfer singular-value history.
 
 ## Definitions
 
 ### Multi-slice kernel
 
-For fixed-comoving high-\(q\) labels \(q_0/H|_{\mathrm{init}}\in\{10,100\}\),
+For fixed-comoving high-$q$ labels $q_0/H|_{\mathrm{init}}\in\{10,100\}$,
 
 \[
 \frac{q_{\mathrm{phys}}(t)}{H(t)}
@@ -47,7 +47,7 @@ K_{\mathrm{nn}}(t)
 
 ### Mode-projected two-time Green proxy
 
-On the high-\(q\) support of the primary transfer mode (\(q_0/H=100\)):
+On the high-$q$ support of the primary transfer mode ($q_0/H=100$):
 
 \[
 G_{\mathrm{mp}}(t_{\mathrm{out}},t_{\mathrm{in}})
@@ -60,24 +60,24 @@ K_{\mathrm{nn}}(t_{\mathrm{in}})\,
 \end{cases}
 \]
 
-where \(\mathrm{SV}\) is the largest endpoint-normalized singular value of the
+where $\mathrm{SV}$ is the largest endpoint-normalized singular value of the
 gauge-invariant fixed-comoving transfer integrator.
 
-At equal times, \(\mathrm{SV}\) ratio \(=1\), so the Green diagonal recovers
+At equal times, $\mathrm{SV}$ ratio $=1$, so the Green diagonal recovers
 the local multi-slice kernel.
 
 ## Pass criteria (this subgate)
 
 1. FRW branch + local four-leg kernel + packet proxy prior PASS available.  
-2. ≥ 6 high-\(q\) multi-slice kernel hits finite.  
-3. Causal Green grid finite; diagonal matches local \(K\).  
+2. ≥ 6 high-$q$ multi-slice kernel hits finite.  
+3. Causal Green grid finite; diagonal matches local $K$.  
 4. Scientific boundary written (no S-matrix / unitarity / MAT unlock).
 
 ## Non-claims
 
 - Not nested interaction-picture in-in integrals.  
 - Not optical theorem / unitarity.  
-- Not \(|\nabla\pi|^3\) (still held).  
+- Not $|\nabla\pi|^3$ (still held).  
 - Not MAT-001.
 
 ## Reproduction
@@ -97,6 +97,6 @@ Outputs:
 
 ## Next (remaining alpha.10)
 
-1. Nonzero-gradient \(|\nabla\pi|^3\) sector on a declared background.  
+1. Nonzero-gradient $|\nabla\pi|^3$ sector on a declared background.  
 2. Optional: recompute multi-slice kernels at FRW-local backgrounds (not NN).  
 3. Only then a *declared* perturbative-unitarity / EFT-validity criterion.

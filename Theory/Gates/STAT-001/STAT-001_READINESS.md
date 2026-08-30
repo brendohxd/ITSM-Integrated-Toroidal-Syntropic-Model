@@ -11,27 +11,27 @@ A **matched** inference pipeline for rotation-curve / SPARC-style comparisons un
 **declared** model inputs, so that:
 
 - likelihood / BIC / residual stats are defined once,  
-- nuisance parameters (\(\Upsilon_\star\), distances, inclination policy) are explicit,  
-- global \(p\)-values are not quoted without a fixed analysis plan.
+- nuisance parameters ($\Upsilon_\star$, distances, inclination policy) are explicit,  
+- global $p$-values are not quoted without a fixed analysis plan.
 
-**P4 rule:** STAT-001 matched pipeline **before any global \(p\)-value**.
+**P4 rule:** STAT-001 matched pipeline **before any global $p$-value**.
 
 ## Prerequisites
 
 | Item | Requirement |
 |------|-------------|
-| DISK-001 (or controlled disk approximation) | Model prediction \(v_{\mathrm{mod}}(R)\) under declared IR |
+| DISK-001 (or controlled disk approximation) | Model prediction $v_{\mathrm{mod}}(R)$ under declared IR |
 | Data interface | SPARC (or successor) loaders; quality cuts documented |
-| Declared \((a_0,\Cobs)\) | Inputs, not “derived from topology” |
+| Declared $(a_0,C_{\mathrm{obs}})$ | Inputs, not “derived from topology” |
 
 ## Open checklist
 
 - [ ] Analysis plan written **before** unblinding global metrics (or explicitly exploratory)  
 - [ ] Likelihood: Gaussian / Student-t / reported SPARC errors — pick one and stick  
-- [ ] \(\Upsilon_\star\): fixed grid vs free per galaxy — declare  
+- [ ] $\Upsilon_\star$: fixed grid vs free per galaxy — declare  
 - [ ] BIC / AIC definition fixed (parameter count rules)  
 - [ ] Cross-validation or holdout policy if claiming generality  
-- [ ] **Ban B15:** no \(p=0.62\) packaging; no “SPARC measures cosmic \(H_0\)”  
+- [ ] **Ban B15:** no $p=0.62$ packaging; no “SPARC measures cosmic $H_0$”  
 - [ ] **Ban B9:** no dual RAR normalization  
 - [ ] Reproduce script + seed + env pin  
 - [ ] `STAT-001_GATE_REPORT.md` on PASS  

@@ -3,8 +3,8 @@
 ## What this paper is (honest product)
 
 A **short technical note**: no-go results for a common geometric packaging of
-\(a_0\sim cH_0/(2\pi)\) on cubic \(T^3\), plus the derived weak-field invariant
-\(\Cobs=C_m^{3/2}/\sqrt{C_{\rm IR}}\).
+$a_0\sim cH_0/(2\pi)$ on cubic $T^3$, plus the derived weak-field invariant
+$C_{\mathrm{obs}}=C_m^{3/2}/\sqrt{C_{\rm IR}}$.
 
 It is **not** a derivation of MOND from topology and **not** a multi-tension
 cosmology paper. That is a feature: it is what can currently survive peer review.
@@ -34,14 +34,14 @@ cd papers\P1-Scale-Matching-Reconstruction
 
 ### Scientific (firewall)
 
-- [x] No circulation-quantization derivation of \(a_0\)
-- [x] No \((L,\Gamma=cL,\omega=H_0)\) consistency claim as physics
-- [x] Cubic \(E_1\) at \(L=c/H_0\) marked excluded vs Planck
-- [x] Fixed-moduli \(L_{\rm phys}(t)=c/H(t)\) excluded (needs \(q=0\) or moduli)
-- [x] Trace \(2/3\) does not determine \(\Cobs\)
-- [x] Dual \(a_0=cH_0/2\pi\) + \(\Cobs=2/3\) RAR no-go stated
-- [x] Doughnut not used as \(T^3\)
-- [x] \(\Cobs\) invariant derived via field rescaling
+- [x] No circulation-quantization derivation of $a_0$
+- [x] No $(L,\Gamma=cL,\omega=H_0)$ consistency claim as physics
+- [x] Cubic $E_1$ at $L=c/H_0$ marked excluded vs Planck
+- [x] Fixed-moduli $L_{\rm phys}(t)=c/H(t)$ excluded (needs $q=0$ or moduli)
+- [x] Trace $2/3$ does not determine $C_{\mathrm{obs}}$
+- [x] Dual $a_0=cH_0/2\pi$ + $C_{\mathrm{obs}}=2/3$ RAR no-go stated
+- [x] Doughnut not used as $T^3$
+- [x] $C_{\mathrm{obs}}$ invariant derived via field rescaling
 - [x] Reconstruction checklist for future geometric claims
 
 ### Presentation

@@ -34,7 +34,7 @@ routes stay available for development**; what is forbidden is claiming them as
 | May do anytime | Must not do |
 |----------------|-------------|
 | Formalize or sketch **identity pillars** as Conditional/Open (syntropy, toroid, wake, SWNT *principle*, twisted BC, reservoir law, alternate force completions) | Treat an untested route as **hard-banned** because recovery has not run it yet |
-| Work **parallel** gates (TOP / VOR / WAK / constitutive \(Q_{\rm syn}\)) while UVIR-003 is critical path | Treat UVIR-only as the *only* allowed research |
+| Work **parallel** gates (TOP / VOR / WAK / constitutive $Q_{\rm syn}$) while UVIR-003 is critical path | Treat UVIR-only as the *only* allowed research |
 | When a core gate stalls, **look harder** for missing structure among identity pillars (including winding/SWNT *principle*) before abandoning the pillar set | Force any one pillar (incl. SWNT) if math shows it is wrong or unused |
 | Reopen Bucket B/C topics under a **new gate** with new math | Re-publish old slogans as Derived (Bucket A packaging) |
 | Use AQUAL-class IR as Conditional baseline for honest fits | Replace whole identity stack with pure MOND packaging |
@@ -65,7 +65,7 @@ The observable vacuum is an **active finite-density condensate** (plenum) whose:
 
 - low-energy excitations (IR phonons / force sector),  
 - global circulation and winding,  
-- compact **\(T^3\)** (or twisted flat) boundary conditions,  
+- compact **$T^3$** (or twisted flat) boundary conditions,  
 - exchanges with **matter** and a **reservoir**,  
 
 may have gravitational consequences.
@@ -77,10 +77,10 @@ do **not** mean “park until UVIR finishes” or “abandon if numbers failed o
 
 | Pillar | Content | Formal home | Status |
 |--------|---------|-------------|--------|
-| **Open thermodynamics** | Cosmos is not assumed to be a closed steam engine; dual polarity **entropy (exhaust) / syntropy (intake)** | Reservoir + \(Q_{\rm syn}^\nu\); total system conserved | **Identity — Keep** |
-| **Toroidal shape** | Circuit geometry: compact flat \(T^3\); twisted \(E_2\)/\(E_3\) closer to recirculating stabilisers than pure cubic \(E_1\) alone | TOP-001; BC Conditional | **Identity — Open preference** |
-| **Fluid plenum / wake** | Galactic “DM”-like response as continuous drag / acoustic–torsional wake, not collisionless particles first | \(\psi\) + WAK-001 | **Identity — Keep** |
-| **Winding / resonance (SWNT principle)** | Ordered structure via quantized circulation, defects, and resonance — the *idea* that launched Phase-2 SWNT work | VOR-001 + condensate \(\Phi\) | **Identity — Keep principle** |
+| **Open thermodynamics** | Cosmos is not assumed to be a closed steam engine; dual polarity **entropy (exhaust) / syntropy (intake)** | Reservoir + $Q_{\rm syn}^\nu$; total system conserved | **Identity — Keep** |
+| **Toroidal shape** | Circuit geometry: compact flat $T^3$; twisted $E_2$/$E_3$ closer to recirculating stabilisers than pure cubic $E_1$ alone | TOP-001; BC Conditional | **Identity — Open preference** |
+| **Fluid plenum / wake** | Galactic “DM”-like response as continuous drag / acoustic–torsional wake, not collisionless particles first | $\psi$ + WAK-001 | **Identity — Keep** |
+| **Winding / resonance (SWNT principle)** | Ordered structure via quantized circulation, defects, and resonance — the *idea* that launched Phase-2 SWNT work | VOR-001 + condensate $\Phi$ | **Identity — Keep principle** |
 | **Minimal-coupling GR split** | Spin-2 on EH null cone when plenum is extra minimally coupled stress (GW170817-style) | Constraint on action; LEN/SCR | **Hard design constraint** |
 
 **SWNT clarity (do not force):** the Phase-2 **principle** (winding, circulation
@@ -92,13 +92,13 @@ pillars — and drop or demote it if a better derivation shows it is not needed.
 
 ### 2.3 What ideal identity is *not* (live)
 
-- Topology-alone derivation of \(a_0\) or \(C_{\rm obs}\)  
-- Free-field Casimir attractor \(H_t/H_p=13/12\) or \(H_0=72.97\) as parameter-free prediction  
+- Topology-alone derivation of $a_0$ or $C_{\rm obs}$  
+- Free-field Casimir attractor $H_t/H_p=13/12$ or $H_0=72.97$ as parameter-free prediction  
 - Global “zero free parameters” / “all tensions resolved”  
-- SPARC as independent cosmic \(H_0\)  
+- SPARC as independent cosmic $H_0$  
 - Finished multi-tension ΛCDM replacement without closed gates  
 
-**Phenomenological allowance:** \(a_0 \equiv cH_0/2\pi\) only as a **named present-epoch DSM / scale-matching postulate**, not as circulation quantization.
+**Phenomenological allowance:** $a_0 \equiv cH_0/2\pi$ only as a **named present-epoch DSM / scale-matching postulate**, not as circulation quantization.
 
 ---
 
@@ -112,22 +112,22 @@ S = S_EH + S_Φ + S_U + S_align + S_ψ + S_m + S_R + S_int + S_W
 
 | Sector | Role |
 |--------|------|
-| Metric \(g_{\mu\nu}\) | Einstein–Hilbert baseline |
-| Condensate \(\Phi=\rho e^{i\Theta}/\sqrt{2}\) | Density, phase, winding, defects |
-| Frame \(U^\mu\) | Preferred frame; \(h^{\mu\nu}=g^{\mu\nu}+U^\mu U^\nu\); independent constrained aether, aligned not identified with condensate current |
-| Force \(\psi\) | Separate preferred-frame IR mediator; \(Q\), \(Y\) invariants |
-| Matter \(\Psi_m\) | Vertex generates force **and** exchange from one interaction |
-| Topology \(L_i\) | BC, modes, moduli — not automatic Wilson numbers |
-| Reservoir \(R\) | Open observable subsystem; inside total conservation |
-| Wake \(W\) | Optional causal memory; only if hyperbolic/relaxation + energy accounting |
+| Metric $g_{\mu\nu}$ | Einstein–Hilbert baseline |
+| Condensate $\Phi=\rho e^{i\Theta}/\sqrt{2}$ | Density, phase, winding, defects |
+| Frame $U^\mu$ | Preferred frame; $h^{\mu\nu}=g^{\mu\nu}+U^\mu U^\nu$; independent constrained aether, aligned not identified with condensate current |
+| Force $\psi$ | Separate preferred-frame IR mediator; $Q$, $Y$ invariants |
+| Matter $\Psi_m$ | Vertex generates force **and** exchange from one interaction |
+| Topology $L_i$ | BC, modes, moduli — not automatic Wilson numbers |
+| Reservoir $R$ | Open observable subsystem; inside total conservation |
+| Wake $W$ | Optional causal memory; only if hyperbolic/relaxation + energy accounting |
 
 **Non-negotiable separations:**
 
 - UV condensate ≠ IR phonon  
-- \(Q_{\rm mp}^\nu\) (local matter–plenum) ≠ \(Q_{\rm syn}^\nu\) (reservoir throughput)  
-- Topology ≠ numerical coefficients (\(2/3\), \(13/12\))  
-- Energy throughput ≠ anisotropic pressure \(\Pi\) without constitutive law  
-- Stress-energy exchange ≠ condensate charge transfer \(S_N\) without declared link  
+- $Q_{\rm mp}^\nu$ (local matter–plenum) ≠ $Q_{\rm syn}^\nu$ (reservoir throughput)  
+- Topology ≠ numerical coefficients ($2/3$, $13/12$)  
+- Energy throughput ≠ anisotropic pressure $\Pi$ without constitutive law  
+- Stress-energy exchange ≠ condensate charge transfer $S_N$ without declared link  
 
 ---
 
@@ -155,11 +155,11 @@ Only items that failed as *claims* in a way that should not reappear under the s
 
 | Hard ban | Why |
 |----------|-----|
-| Presenting circulation quantization / \(\kappa=cL\) as a completed derivation of \(a_0\) | Not quantization; chart-dependent \(2\pi\) (P1) |
-| Presenting trace ratio alone as a finished Wilson coefficient \(C_{\rm obs}=2/3\) | Geometry ↛ matched vertex |
+| Presenting circulation quantization / $\kappa=cL$ as a completed derivation of $a_0$ | Not quantization; chart-dependent $2\pi$ (P1) |
+| Presenting trace ratio alone as a finished Wilson coefficient $C_{\rm obs}=2/3$ | Geometry ↛ matched vertex |
 | Born–Infeld Lagrangian as proven origin of the square-root force | Wrong IR limit; UVIR re-architecture |
-| Free-field Casimir **persistent attractor** \(13/12\) and **parameter-free** \(H_0=72.97\) from that | CBR-001: transient only |
-| SPARC \(p=0.62\) and SPARC as independent cosmic \(H_0\) as validation | Estimators failed |
+| Free-field Casimir **persistent attractor** $13/12$ and **parameter-free** $H_0=72.97$ from that | CBR-001: transient only |
+| SPARC $p=0.62$ and SPARC as independent cosmic $H_0$ as validation | Estimators failed |
 | Fabricated data, fabricated citations, lunar SWNT as “proof” | Critical Findings |
 | AI / process rule “never correct ITSM equations” | Anti-science governance |
 | Global package “zero free theoretical parameters / all tensions resolved” | Overclaim |
@@ -178,12 +178,12 @@ These were often dumped into “do not reintroduce.” Under new scope they mean
 
 | Topic | Rejected packaging | How it may return |
 |-------|--------------------|-------------------|
-| Scale \(a_0\sim cH_0\) | “Topology alone / circulation quantizes \(a_0\)” | Present-epoch **phenomenological DSM** (Conditional); later VOR matching |
-| Deep-MOND coefficient | “Geometry forces \(C=2/3\)”; “must not use AQUAL \(\alpha=1\)” | **AQUAL / \(\Cobs\sim 1\)** as Conditional IR baseline; MAT-001 computes \(\Cobs\) |
-| Hubble anisotropy | Cycle-count free-field \(13/12\) | Driven sector **CBR-002** if constitutive stress is derived |
-| PTA / NANOGrav | Fixed \([1.08,\pi]\) nHz as derived prediction | Open after VOR/PERT eigenmodes — **interval not sacred** |
-| BTFR \(4/9\) | “\(4/9\) is lower bound that RG-flows to 1” | Conditional tree-level **if** \(C=2/3\); else use \(\Cobs^2 a_0\) honestly |
-| Disk / SPARC fits | “\(p=0.62\) validates the model” | DISK-001 + STAT-001 honest pipelines |
+| Scale $a_0\sim cH_0$ | “Topology alone / circulation quantizes $a_0$” | Present-epoch **phenomenological DSM** (Conditional); later VOR matching |
+| Deep-MOND coefficient | “Geometry forces $C=2/3$”; “must not use AQUAL $\alpha=1$” | **AQUAL / $C_{\mathrm{obs}}\sim 1$** as Conditional IR baseline; MAT-001 computes $C_{\mathrm{obs}}$ |
+| Hubble anisotropy | Cycle-count free-field $13/12$ | Driven sector **CBR-002** if constitutive stress is derived |
+| PTA / NANOGrav | Fixed $[1.08,\pi]$ nHz as derived prediction | Open after VOR/PERT eigenmodes — **interval not sacred** |
+| BTFR $4/9$ | “$4/9$ is lower bound that RG-flows to 1” | Conditional tree-level **if** $C=2/3$; else use $C_{\mathrm{obs}}^2 a_0$ honestly |
+| Disk / SPARC fits | “$p=0.62$ validates the model” | DISK-001 + STAT-001 honest pipelines |
 | Wake / Bullet | Quantitative static-wake “solution” | WAK-001 qualitative → quantitative only with new calc |
 | SWNT programme | Lunar proxy / impossible field strengths as “proof” | **Keep SWNT principle** as identity pillar; formalize under VOR-001 (parallel-capable); never re-use lunar packaging |
 
@@ -192,25 +192,25 @@ These were often dumped into “do not reintroduce.” Under new scope they mean
 ### 4.4 Bucket C — Reassess under the new outlook (were sidelined for the wrong reason)
 
 These should **not** sit in a hard “do not reintroduce” dump. They were often
-pushed aside because later geometric exclusivity (\(C=2/3\), free-field Hubble
+pushed aside because later geometric exclusivity ($C=2/3$, free-field Hubble
 magic, “not MOND”) looked load-bearing. That exclusivity is now demoted.
 
 | Idea | Why it was sidelined | Status under new scope |
 |------|----------------------|------------------------|
-| **AQUAL / deep-MOND \(\Cobs\sim 1\) as IR force law** | Kept out so “geometric \(2/3\)” could stay special | **Primary IR reassessment route** (Sec. 6) — likely correct path at the force-law divergence |
-| Syntropy / open 2nd-law dual as lead identity | Recovery focus on UVIR ADM | **Identity pillar** — constitutive \(Q_{\rm syn}\) |
+| **AQUAL / deep-MOND $C_{\mathrm{obs}}\sim 1$ as IR force law** | Kept out so “geometric $2/3$” could stay special | **Primary IR reassessment route** (Sec. 6) — likely correct path at the force-law divergence |
+| Syntropy / open 2nd-law dual as lead identity | Recovery focus on UVIR ADM | **Identity pillar** — constitutive $Q_{\rm syn}$ |
 | Wake = halo ontology | Optional WAK; quantitative Bullet rejected | **Identity pillar** — WAK-001 |
-| Twisted \(E_2\)/\(E_3\) preference | Cubic \(E_1\) + DSM overclaim | **Open topology preference** with COMPACT honesty |
+| Twisted $E_2$/$E_3$ preference | Cubic $E_1$ + DSM overclaim | **Open topology preference** with COMPACT honesty |
 | GW170817 tensor–scalar split | Buried under multi-tension packaging | **Hard design constraint** |
 | V7.1 EFE / lensing formula | Silently dropped | **Re-log** Open or Reject with reason |
 | **Winding / resonance (SWNT *principle*)** | Whole SWNT *programme* abandoned after broken numbers | **Identity pillar — Keep principle** (VOR-001); old numbers Rejected |
 | Track B / alternate force completions | Track A prioritized | **Recorded alternative** — may be developed if Track A stalls; not hard-banned |
 
 **Historical note on AQUAL specifically:**  
-At the force-law fork, later drafts chose **fixed \(C=2/3\)** and treated AQUAL
-\(\alpha=1\) as an undesirable rival. That choice depended on geometric claims
+At the force-law fork, later drafts chose **fixed $C=2/3$** and treated AQUAL
+$\alpha=1$ as an undesirable rival. That choice depended on geometric claims
 that recovery and P1 no longer treat as true. Reopening **AQUAL-class IR**
-(\(\Cobs\sim 1\)) for testing is therefore not “reintroducing damage”; it is
+($C_{\mathrm{obs}}\sim 1$) for testing is therefore not “reintroducing damage”; it is
 **reverting a divergence that was justified by concepts we now reject.**
 
 ---
@@ -222,7 +222,7 @@ Two layers — do not collapse them:
 1. **Critical path for Derived weak-field / cosmology claims** (must not skip):  
    UVIR → MAT → SCR/LEN → DISK → driven CBR / COS when those claims are asserted.
 2. **Identity formalization tracks** (parallel-capable anytime as Conditional/Open):  
-   TOP-001, VOR-001 (SWNT *principle*), WAK-001, reservoir / \(Q_{\rm syn}\) constitutive law, Track B notes.
+   TOP-001, VOR-001 (SWNT *principle*), WAK-001, reservoir / $Q_{\rm syn}$ constitutive law, Track B notes.
 
 ```text
 CRA-001 (architecture) ── CRA-002 (ledger)
@@ -257,7 +257,7 @@ action drafts on identity pillars — only premature Derived packaging.
 | CRA-001 | Every equation maps to one sector; total conservation holds |
 | CRA-002 | Material claims classified with evidence + owning gate |
 | UVIR-003 | Selected action stable/causal/weakly coupled in declared domain; invariant ratios; physical cutoff/unitarity path stated with scope |
-| MAT-001 | Matter–phonon vertex from one action; \(\Cobs=C_m^{3/2}/\sqrt{C_{\rm IR}}\) matched (not assumed \(2/3\)) |
+| MAT-001 | Matter–phonon vertex from one action; $C_{\mathrm{obs}}=C_m^{3/2}/\sqrt{C_{\rm IR}}$ matched (not assumed $2/3$) |
 | DISK-001 | Periodic nonlinear solver; sphere + disk; curl quantified |
 | TOP/VOR/WAK | Actions + energy accounting for moduli / winding / wake |
 | CBR-002 | Untuned driven anisotropic solution if any; not free-field attractor |
@@ -279,40 +279,40 @@ changing the authority order or promoting any gate status.
 - **Prior freeze:** `12.0-alpha.11` — tier-1 closure hold and identity-decision checkpoint
 
 - **Authoritative status:**
-  - **Frozen manuscript (alpha.12):** UVIR-003 is **in progress**; MAT-001 is **not unlocked**; \(V\) is **NOT_COMPUTED**; Stage 4A is **closed**; Conditional Track-A form kit is **not** Derived matching.
-  - **Programme / gate ledger (post–α.10 Stages 1–5):** the earlier `PASS_BOUNDED_CONDITIONAL` interpretation is superseded. Stage 5 now records `PASS_STAGE5_DECISION_HOLD_TIER1`, while the physics gate remains **`IN_PROGRESS`** with M2, M3, M6 and M7 incomplete at tier 1; \(K_Q\) is NOT_DERIVED, \(V\) is NOT_COMPUTED, and a MAT PASS tag is forbidden.  
+  - **Frozen manuscript (alpha.12):** UVIR-003 is **in progress**; MAT-001 is **not unlocked**; $V$ is **NOT_COMPUTED**; Stage 4A is **closed**; Conditional Track-A form kit is **not** Derived matching.
+  - **Programme / gate ledger (post–α.10 Stages 1–5):** the earlier `PASS_BOUNDED_CONDITIONAL` interpretation is superseded. Stage 5 now records `PASS_STAGE5_DECISION_HOLD_TIER1`, while the physics gate remains **`IN_PROGRESS`** with M2, M3, M6 and M7 incomplete at tier 1; $K_Q$ is NOT_DERIVED, $V$ is NOT_COMPUTED, and a MAT PASS tag is forbidden.  
 - **MAT-001:** still **blocked** for PASS tag (Conditional Track-A form kit and dual-status probes exist under fail-closed handoff only)  
-- **Post-alpha.11 handoff audit:** the eight-record UVIR-to-MAT contract is internally consistent and fail closed; a symbolic physical-mode projection audit is authorized, but numerical \(V\), Stage 4A reopening and MAT/UVIR PASS remain forbidden
-- **Post-alpha.11 J2 projection and later MAT kit:** J2 template is basis invariant; free-sector export, Track-A Conditional \(S_{\rm int}/d,h\), symbolic \(K_Q\), and parent-action incompleteness audits exist, but \(V\) remains NOT_COMPUTED
+- **Post-alpha.11 handoff audit:** the eight-record UVIR-to-MAT contract is internally consistent and fail closed; a symbolic physical-mode projection audit is authorized, but numerical $V$, Stage 4A reopening and MAT/UVIR PASS remain forbidden
+- **Post-alpha.11 J2 projection and later MAT kit:** J2 template is basis invariant; free-sector export, Track-A Conditional $S_{\rm int}/d,h$, symbolic $K_Q$, and parent-action incompleteness audits exist, but $V$ remains NOT_COMPUTED
 - **Post–alpha.9 working substeps (not a manuscript freeze):**  
   - `PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT` — off-tetra disphenoid kernel  
   - denser edge scan tag `dense_edge` (domain failures rise near edge; kernel still finite)  
-  - `PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION` — Gaussian packet proxy of local \(K(q)\), **not** an S-matrix  
-  - `PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED` — FRW attach + high-\(q\) transfer skeleton for \(G_{\rm proxy}\); full in-in integrals **not** computed  
-  - `PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN` — multi-slice high-\(q\) \(K_{\rm nn}(t)\) + causal mode-projected \(G_{\rm mp}(t_{\rm out},t_{\rm in})\); full in-in still **not** computed  
-  - `PASS_NONZERO_GRADIENT_FORCE_LOCAL` — Track-A local expansion of exact \(|\nabla\pi|^3\) about \(v>0\); positive Hessian; **not** homogeneous S-matrix  
-  - `PASS_DECLARED_UNITARITY_EFT_CRITERION` — scoped tree/NDA unitarity + high-\(q\) Green health criterion; optical theorem / physical cutoff / MAT **not** claimed  
+  - `PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION` — Gaussian packet proxy of local $K(q)$, **not** an S-matrix  
+  - `PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED` — FRW attach + high-$q$ transfer skeleton for $G_{\rm proxy}$; full in-in integrals **not** computed  
+  - `PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN` — multi-slice high-$q$ $K_{\rm nn}(t)$ + causal mode-projected $G_{\rm mp}(t_{\rm out},t_{\rm in})$; full in-in still **not** computed  
+  - `PASS_NONZERO_GRADIENT_FORCE_LOCAL` — Track-A local expansion of exact $|\nabla\pi|^3$ about $v>0$; positive Hessian; **not** homogeneous S-matrix  
+  - `PASS_DECLARED_UNITARITY_EFT_CRITERION` — scoped tree/NDA unitarity + high-$q$ Green health criterion; optical theorem / physical cutoff / MAT **not** claimed  
 - **Post–alpha.10 working notes:**  
-  - PASS_KQ_MATCHING_INVENTORY_OPEN — invariants \(Aq/K_Q\), \(A/K_Q^{3/2}\); routes R1–R5; **numeric \(K_Q\) still NOT_DERIVED**  
+  - PASS_KQ_MATCHING_INVENTORY_OPEN — invariants $Aq/K_Q$, $A/K_Q^{3/2}$; routes R1–R5; **numeric $K_Q$ still NOT_DERIVED**  
   - PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT — machine ledger infrastructure; scores M1–M7 from Stage 4/5 artefacts when present  
   - PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING — M3 documented Conditional R1; **not** Derived  
-  - PASS_MATCHING_ROUTE_PROGRAM_OPEN — R2: static \(\Cobs\) alone cannot fix \(Aq/K_Q\); target \(V=C_m/\sqrt{K_Q}\)  
-  - PASS_DECLARED_WEAK_COUPLING_DOMAIN — **Stage 1 evidence package**: high-\(q\)+Track-A bounded; relevant IR complex-quartet response still uncontrolled, so M2 is `PARTIAL_BOUNDED_HIGH_Q_ONLY`  
-  - PASS_R3_UV_RESIDUE_AUDIT_INCOMPLETE — **Stage 2a Classification C**: no action-level \(Z_\psi r_\rho\) value or rigorous bound in the audited declared sources; \(I_{a_0}\) is chart-fixed, while \(Aq/K_Q\) is invariant
+  - PASS_MATCHING_ROUTE_PROGRAM_OPEN — R2: static $C_{\mathrm{obs}}$ alone cannot fix $Aq/K_Q$; target $V=C_m/\sqrt{K_Q}$  
+  - PASS_DECLARED_WEAK_COUPLING_DOMAIN — **Stage 1 evidence package**: high-$q$+Track-A bounded; relevant IR complex-quartet response still uncontrolled, so M2 is `PARTIAL_BOUNDED_HIGH_Q_ONLY`  
+  - PASS_R3_UV_RESIDUE_AUDIT_INCOMPLETE — **Stage 2a Classification C**: no action-level $Z_\psi r_\rho$ value or rigorous bound in the audited declared sources; $I_{a_0}$ is chart-fixed, while $Aq/K_Q$ is invariant
   - PASS_CONDITIONAL_MATCHING_FLOOR — **Stage 2b**: Conditional-with-scope floor; Stage 2 exit `CONDITIONAL_WITH_SCOPE`
   - PASS_STAGE2C_FLOOR_DIAGNOSTICS — **Stage 2c**: causality + NDA under floor
-  - PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL — **Stage 3**: forms frozen; \(V\) NOT_COMPUTED; **no MAT PASS**
+  - PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL — **Stage 3**: forms frozen; $V$ NOT_COMPUTED; **no MAT PASS**
   - PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT — **Stage 4 record**: useful Conditional M3/M6 diagnostics, but insufficient for tier-1 closure; Stage 4A must reopen after matching
   - PASS_STAGE5_DECISION_HOLD_TIER1 — **Stage 5 decision audit**: `full_gate_status=IN_PROGRESS`; M2/M3/M6/M7 block tier-1 closure; no MAT PASS
   - Serial order: Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md  
 - **Post-alpha.11 MAT normalization preparation:**
-  - `PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY` — proves the same-action form \(V=g_\phi/\sqrt{Z_\phi}\), not a numerical match
-  - `PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT` — distinguishes canonical vertex, mixed response and source-source exchange coefficients; \(V\) remains `NOT_COMPUTED`
+  - `PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY` — proves the same-action form $V=g_\phi/\sqrt{Z_\phi}$, not a numerical match
+  - `PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT` — distinguishes canonical vertex, mixed response and source-source exchange coefficients; $V$ remains `NOT_COMPUTED`
   - `PASS_MAT001_UNIT_CHART_CONTRACT_OPEN` — separates covariant and coordinate-time SI coefficient charts; no SI observable chart or microscopic coefficient is selected
 - **Post-R1--R4 remediation R5:** `PASS_MAT001_R5_IDENTIFIABILITY_AUDIT_HOLD` proves the declared action underdetermines `V`; matching verdict `HOLD_DECLARED_ACTION_UNDERDETERMINES_V`; no status promotion.
 - **R5-P1 research route:** minimal shift-symmetric density portal rejected as a standalone static-force source; scale-compensator/superfluid parent advanced only to a bounded mode-residue and stability fork.
 - **Next working priorities (serial critical path):**  
-  1. Compute \(V=C_m/\sqrt{K_Q}\), or an equivalent projected source invariant, from one declared action, physical mode and named field/unit chart.
+  1. Compute $V=C_m/\sqrt{K_Q}$, or an equivalent projected source invariant, from one declared action, physical mode and named field/unit chart.
   2. Reopen **Stage 4A**: re-evaluate causality, the relevant IR complex-quartet response, and the physical cutoff/unitarity result in the intended claim domain.
   3. Run a later independent **Stage 5** closure review; until then UVIR-003 remains `IN_PROGRESS`.
   4. Complete the MAT-001 checklist before any MAT PASS or downstream Derived use.
@@ -334,16 +334,16 @@ python Analysis\UVIR\UVIR-003\uvir003_local_four_leg_kernel.py
 ## 6. Force-law divergence: AQUAL-class IR as Conditional baseline
 
 **What happened historically:**  
-At a major fork, the programme kept **fixed \(C=2/3\)** and framed **AQUAL \(\alpha=1\)** as an undesirable alternative, even when controls showed \(\alpha=1\) fit better. That fork was justified by later geometric packaging (trace-ratio “derivation,” “not MOND,” parameter-free identity). Under the new scope those justifications are Bucket A/B failures — not grounds to keep AQUAL out of testing.
+At a major fork, the programme kept **fixed $C=2/3$** and framed **AQUAL $\alpha=1$** as an undesirable alternative, even when controls showed $\alpha=1$ fit better. That fork was justified by later geometric packaging (trace-ratio “derivation,” “not MOND,” parameter-free identity). Under the new scope those justifications are Bucket A/B failures — not grounds to keep AQUAL out of testing.
 
 **Policy under new outlook (Bucket C):**
 
 | Item | Policy |
 |------|--------|
-| Deep-MOND / AQUAL structure \(g_P=\Cobs\sqrt{a_0 g_N}\) | **Conditional IR baseline** of the weak-field sector |
-| \(\Cobs\simeq 1\) (under \(C_m=C_{\rm IR}\)) | **Preregistered empirical comparator** for exploratory fits; not a Derived coefficient |
-| \(\Cobs=2/3\) | **Preregistered historical comparator**; its trace-ratio derivation is rejected, while statistical selection remains unclosed |
-| Dual \(a_0=cH_0/2\pi\) and \(C=2/3\) as RAR | Still **excluded** (P1 \(4/9\) no-go) until numbers are redefined consistently |
+| Deep-MOND / AQUAL structure $g_P=C_{\mathrm{obs}}\sqrt{a_0 g_N}$ | **Conditional IR baseline** of the weak-field sector |
+| $C_{\mathrm{obs}}\simeq 1$ (under $C_m=C_{\rm IR}$) | **Preregistered empirical comparator** for exploratory fits; not a Derived coefficient |
+| $C_{\mathrm{obs}}=2/3$ | **Preregistered historical comparator**; its trace-ratio derivation is rejected, while statistical selection remains unclosed |
+| Dual $a_0=cH_0/2\pi$ and $C=2/3$ as RAR | Still **excluded** (P1 $4/9$ no-go) until numbers are redefined consistently |
 | ITSM uniqueness | Syntropy, toroid, condensate, wake, open circuit — **not** “worse SPARC fit because geometry” |
 
 **Do not:** replace the whole recovery stack with pure MOND.  
@@ -359,19 +359,19 @@ Do **not** silently drop or silently re-enter. Log disposition: Keep / Formalize
 
 | Trajectory | Historical locus | Suggested disposition |
 |------------|------------------|----------------------|
-| Syntropy / open 2nd law dual | v3+, Syntropic Thermodynamics paper | **Keep** — constitutive \(Q_{\rm syn}\) |
+| Syntropy / open 2nd law dual | v3+, Syntropic Thermodynamics paper | **Keep** — constitutive $Q_{\rm syn}$ |
 | Fluid drag / halo = wake | v3, v7.8 | **Keep** — WAK-001 |
-| Bianchi-safe exchange | v7.0 | **Keep** — already improved as \(Q_{\rm mp}/Q_{\rm syn}\) |
+| Bianchi-safe exchange | v7.0 | **Keep** — already improved as $Q_{\rm mp}/Q_{\rm syn}$ |
 | GW170817 tensor–scalar split | v7.6 | **Keep** — hard design constraint |
-| Hamiltonian / \(c_s\) hygiene | v7.0 | **Keep** — UVIR causality |
+| Hamiltonian / $c_s$ hygiene | v7.0 | **Keep** — UVIR causality |
 | Analytic growth / EFE / lensing formula | v7.1–v7.2 | **Re-log** — Open under LEN/DISK or Reject with reason |
-| Angular \(H_0(\theta)\) | v7.8 toy → later prose | **Open research** under CBR-002; cosine toy Rejected as *packaging*; no Derived \(H_0(\theta)\) before constitutive stress |
+| Angular $H_0(\theta)$ | v7.8 toy → later prose | **Open research** under CBR-002; cosine toy Rejected as *packaging*; no Derived $H_0(\theta)$ before constitutive stress |
 | SWNT principle (winding/resonance) | Phase-2 founding block | **Keep** — identity pillar; formal home VOR-001; parallel-capable |
 | Lunar SWNT proxy / impossible fields | v3–v5 toggles | **Rejected packaging** only (Bucket A/B) |
 | 5D bulk | mid-lineage | **Re-log** — Reject or new gate (do not silent-drop) |
 | Track B / non-standalone cubic | UVIR-002/003 | **Recorded alternative** — open if Track A stalls; not banned |
-| AQUAL \(\Cobs\sim 1\) IR | v11 control, never fair IR default | **Conditional baseline** (Sec. 6) |
-| \(a_0(z)\) evolution contradiction | Post-alpha.12 review | **Resolve before derivations** — If \(a_0 \propto c^2/L\), does \(a_0\) evolve because \(L\) is comoving, or is \(L\) a fixed physical scale? |
+| AQUAL $C_{\mathrm{obs}}\sim 1$ IR | v11 control, never fair IR default | **Conditional baseline** (Sec. 6) |
+| $a_0(z)$ evolution contradiction | Post-alpha.12 review | **Resolve before derivations** — If $a_0 \propto c^2/L$, does $a_0$ evolve because $L$ is comoving, or is $L$ a fixed physical scale? |
 
 Historical audit method: `Theory/History/00_CRITICAL_FINDINGS.md`, `Theory/History/DOCUMENT_INDEX.md`.
 
@@ -381,10 +381,10 @@ Historical audit method: `Theory/History/00_CRITICAL_FINDINGS.md`, `Theory/Histo
 
 | Paper | Role | When |
 |-------|------|------|
-| **P1** | Reconstruction / no-gos / \(\Cobs\) invariant; firewall | Draft ready under `papers/P1-Scale-Matching-Reconstruction/` |
-| **P2** | Rectangular \(T^3\) free Casimir + no free-field \(13/12\) attractor | Draft scaffold under `papers/P2-Rectangular-T3-Casimir/` |
+| **P1** | Reconstruction / no-gos / $C_{\mathrm{obs}}$ invariant; firewall | Draft ready under `papers/P1-Scale-Matching-Reconstruction/` |
+| **P2** | Rectangular $T^3$ free Casimir + no free-field $13/12$ attractor | Draft scaffold under `papers/P2-Rectangular-T3-Casimir/` |
 | **P3** | Gate-structured observational program | Only after derived observables; **outline-only** skeleton under `papers/P3-Observational-Program/` until trigger |
-| **P4** | SPARC under declared \(\Cobs,a_0\) | After DISK-001 + STAT-001; never dual \(C=2/3\) + \(a_0=cH_0/2\pi\) as RAR |
+| **P4** | SPARC under declared $C_{\mathrm{obs}},a_0$ | After DISK-001 + STAT-001; never dual $C=2/3$ + $a_0=cH_0/2\pi$ as RAR |
 
 **P3/P4 readiness map:** `Theory/Gates/P3_P4_READINESS.md`  
 (MAT / DISK / STAT readiness notes under `Theory/Gates/{MAT-001,DISK-001,STAT-001}/`.)
@@ -403,7 +403,7 @@ Historical audit method: `Theory/History/00_CRITICAL_FINDINGS.md`, `Theory/Histo
 | **Months 0–2** | Draft P2 Casimir (arXiv deferred pending endorsement); optional Zenodo **paper** package later |
 | **Months 2–6** | UVIR-003 → freeze alpha.10+ → approach MAT-001; AQUAL IR baseline note; **parallel** TOP/VOR (SWNT principle)/WAK/reservoir sketches as capacity allows (identity tracks — not locked behind UVIR completion) |
 | **Later** | P3/P4 only with closed upstream gates |
-| **Synthesis** | Full multi-scale manuscript only after reconstruction chain or permanent abandonment of geometric \(a_0/C_{\rm obs}\) claims |
+| **Synthesis** | Full multi-scale manuscript only after reconstruction chain or permanent abandonment of geometric $a_0/C_{\rm obs}$ claims |
 
 Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` when advancing alphas. Never overwrite a freeze.
 

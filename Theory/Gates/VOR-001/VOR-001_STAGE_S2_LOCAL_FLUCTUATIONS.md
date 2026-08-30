@@ -8,8 +8,8 @@
 
 ## Result
 
-Quadratic local fluctuations of the fixed-background \(U(1)\) toy energy about
-\(\rho=v\): massive amplitude mode \(m^2=2\lambda v^2\) and gapless phase
+Quadratic local fluctuations of the fixed-background $U(1)$ toy energy about
+$\rho=v$: massive amplitude mode $m^2=2\lambda v^2$ and gapless phase
 Goldstone. Mathematical template only.
 
 ## Reproduce
@@ -21,4 +21,4 @@ python Analysis\VOR\VOR-001\vor001_s2_local_fluctuation_template.py
 
 ## Non-claims
 
-No parent ITSM \(S_\Phi\), defects, SWNT packaging, \(a_0\), force law, or PTA.
+No parent ITSM $S_\Phi$, defects, SWNT packaging, $a_0$, force law, or PTA.

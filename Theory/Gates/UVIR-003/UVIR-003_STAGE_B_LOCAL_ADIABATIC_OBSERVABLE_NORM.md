@@ -4,7 +4,7 @@ Date: 2026-08-01
 
 Branch: `recovery/v12-core-architecture`
 
-Calculation status: **PASS** (2026-08-01 run: narrow \(\sigma=0.02\) rel.\ dev.\ \(\sim 2.5\times 10^{-4}\))
+Calculation status: **PASS** (2026-08-01 run: narrow $\sigma=0.02$ rel.\ dev.\ $\sim 2.5\times 10^{-4}$)
 
 Subgate:
 `PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION`
@@ -20,8 +20,8 @@ with an explicit, auditable **packet-averaged local observable proxy**.
 
 ## Definition
 
-On the admitted external ratios \(\{q_i/H\}\) from the tetrahedral four-leg
-summary, with centre \(q_0\) and width \(\sigma\) in \(\ln(q/q_0)\),
+On the admitted external ratios $\{q_i/H\}$ from the tetrahedral four-leg
+summary, with centre $q_0$ and width $\sigma$ in $\ln(q/q_0)$,
 
 \[
 O[\sigma]
@@ -31,14 +31,14 @@ O[\sigma]
 w_i=\exp\Bigl(-\frac{(\ln(q_i/q_0))^2}{2\sigma^2}\Bigr).
 \]
 
-\(K(q)\) is the residue-normalized local combined four-leg kernel (exchange +
+$K(q)$ is the residue-normalized local combined four-leg kernel (exchange +
 reduced contact) for a fixed mode pair.
 
 ## Pass criteria (this subgate)
 
 1. Finite positive weights on the admitted sample.
-2. Narrow \(\sigma\): \(O\to K(q_0)\) within declared relative tolerance.
-3. \(\mathrm{Im}\,O\) negligible when each \(K_i\) is real within tolerance.
+2. Narrow $\sigma$: $O\to K(q_0)$ within declared relative tolerance.
+3. $\mathrm{Im}\,O$ negligible when each $K_i$ is real within tolerance.
 
 ## Explicit non-claims
 

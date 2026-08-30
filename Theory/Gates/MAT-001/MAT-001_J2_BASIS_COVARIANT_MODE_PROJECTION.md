@@ -23,8 +23,8 @@ the ITSM UVIR matrices.
 
 ## Quadratic convention
 
-For dynamical fields \(x\), algebraic constraints \(z\), and matter source
-\(\rho\), take
+For dynamical fields $x$, algebraic constraints $z$, and matter source
+$\rho$, take
 
 \[
 L=\frac12\dot x^T K\dot x-\frac12x^TAx-x^TBz-\frac12z^TCz
@@ -45,19 +45,19 @@ A_{\rm eff}=A-BC^{-1}B^T,
 c_{\rm eff}=d-BC^{-1}h.
 \]
 
-For any nonzero physical-mode direction \(u\), its canonical source coupling
+For any nonzero physical-mode direction $u$, its canonical source coupling
 is
 
 \[
 g_{\rm can}=\frac{c_{\rm eff}^Tu}{\sqrt{u^TKu}}.
 \]
 
-The single-field limit is \(g_\phi/\sqrt{Z_\phi}\), reproducing the J1
-same-action structural identity for \(V\) without assigning it a number.
+The single-field limit is $g_\phi/\sqrt{Z_\phi}$, reproducing the J1
+same-action structural identity for $V$ without assigning it a number.
 
 ## Basis covariance
 
-Under \(x=Ry\) and \(z=Sw\),
+Under $x=Ry$ and $z=Sw$,
 
 \[
 K_y=R^TKR,
@@ -67,7 +67,7 @@ c_{{\rm eff},y}=R^Tc_{\rm eff},
 u_y=R^{-1}u.
 \]
 
-Therefore \(g_{{\rm can},y}=g_{\rm can}\). The executable verifies this
+Therefore $g_{{\rm can},y}=g_{\rm can}$. The executable verifies this
 exactly for two generalized eigenmodes while also transforming the constraint
 sector and reproducing the Schur-reduced blocks.
 
@@ -97,7 +97,7 @@ Nine checks cover:
 
 1. exact fail-closed handoff input;
 2. algebraic-constraint elimination;
-3. generalized \(K\)-orthonormal modes;
+3. generalized $K$-orthonormal modes;
 4. Schur-block covariance;
 5. canonical coupling invariance;
 6. the J1 single-field limit;
@@ -114,17 +114,17 @@ the kinetic norm, or constraint-source dressing is omitted.
 This template does not receive the following objects from one declared live
 UVIR action chart:
 
-- the dynamical kinetic metric \(K\);
-- the algebraic constraint matrix \(C\) and mixing block \(B\);
-- the matter source covectors \(d,h\); and
-- the physical mode direction \(u\) in that same chart.
+- the dynamical kinetic metric $K$;
+- the algebraic constraint matrix $C$ and mixing block $B$;
+- the matter source covectors $d,h$; and
+- the physical mode direction $u$ in that same chart.
 
 Until those objects have explicit action-level provenance, the projection
-method cannot produce a numerical \(V\).
+method cannot produce a numerical $V$.
 
 ## Scientific boundary
 
 This is a symbolic method PASS, not a live matching or physics PASS. It does
-not identify a live eigenmode, derive \(K_Q\), compute \(V\), reopen Stage 4A,
+not identify a live eigenmode, derive $K_Q$, compute $V$, reopen Stage 4A,
 pass MAT-001 or UVIR-003, or authorize downstream Derived observables or a new
 manuscript freeze.

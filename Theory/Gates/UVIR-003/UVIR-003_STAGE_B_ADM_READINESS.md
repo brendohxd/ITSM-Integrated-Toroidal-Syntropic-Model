@@ -64,8 +64,8 @@ the minimal condensate action is
 -V(\rho).
 \]
 
-On the homogeneous background \(\rho=\rho_0\), \(\Theta=\mu t\), define
-\(s=\rho_0^2\). Then
+On the homogeneous background $\rho=\rho_0$, $\Theta=\mu t$, define
+$s=\rho_0^2$. Then
 
 \[
 p_\Phi=\frac12s\mu^2-V(\rho_0),
@@ -81,7 +81,7 @@ and hence
 
 This agrees with the perfect-fluid form of a relativistic superfluid:
 the on-shell phase Lagrangian is its pressure, while
-\(\rho=\mu n-p\) with \(n=\mu s\).
+$\rho=\mu n-p$ with $n=\mu s$.
 
 For the declared mass-quartic-sextic potential,
 
@@ -109,7 +109,7 @@ positive pressure.
 
 ## 2. Why a constant subtraction is insufficient
 
-Add an arbitrary constant vacuum energy \(\Lambda_{\rm vac}\). It changes
+Add an arbitrary constant vacuum energy $\Lambda_{\rm vac}$. It changes
 
 \[
 \rho_{\rm total}=\rho_\Phi+\Lambda_{\rm vac},
@@ -125,13 +125,13 @@ but
 \]
 
 Flat space requires both background Einstein equations to vanish. Their sum
-would require \(s\mu^2=0\), contradicting the declared nonzero finite-density
+would require $s\mu^2=0$, contradicting the declared nonzero finite-density
 branch. A constant counterterm can cancel either the energy density or the
 pressure, not both.
 
 This is not a small bookkeeping tadpole. Eliminating lapse and shift about an
 off-shell background can generate gauge-dependent or spurious terms, and it
-cannot support the required \(k\rightarrow0\) Hamiltonian audit.
+cannot support the required $k\rightarrow0$ Hamiltonian audit.
 
 ## 3. Required support sector
 
@@ -155,10 +155,10 @@ reduction, the theory must provide one of the following:
 2. a declared external or rigid support approximation, together with the
    regime in which omitting its perturbations is controlled;
 3. a self-consistent cosmological background, followed by a subhorizon
-   reduction with an explicit hierarchy \(k/a\gg H\).
+   reduction with an explicit hierarchy $k/a\gg H$.
 
-Option 3 cannot answer the strict low-\(k\) question by itself because the
-subhorizon approximation fails as \(k\rightarrow0\).
+Option 3 cannot answer the strict low-$k$ question by itself because the
+subhorizon approximation fails as $k\rightarrow0$.
 
 ## 4. Aether normalization correction
 
@@ -182,7 +182,7 @@ The coefficient dictionary therefore has two parts:
 \]
 
 The previous sign and signature map remains correct, but a bare identity map
-\(\alpha_i=c_i\) is valid only after imposing \(M_U=M_P\).
+$\alpha_i=c_i$ is valid only after imposing $M_U=M_P$.
 
 The published coupled speeds must be read as
 
@@ -202,16 +202,16 @@ s_0^2=
 {\alpha_{14}(1-\alpha_{13})(2+\alpha_{13}+3\alpha_2)}.
 \]
 
-In the weak-gravity-coupling limit \(r_U\rightarrow0\), the vector and scalar
+In the weak-gravity-coupling limit $r_U\rightarrow0$, the vector and scalar
 speeds still reduce to the Stage-A frozen-metric ratios
-\(c_1/c_{14}\) and \(c_{123}/c_{14}\). Thus that consistency check survives,
+$c_1/c_{14}$ and $c_{123}/c_{14}$. Thus that consistency check survives,
 while the exact finite-coupling formulas require the corrected normalization.
 
 ## 5. Consequence for the force result
 
 The zero-gradient force scalar still factorizes at quadratic order because
-every derivative of \(\psi\) begins at first perturbative order. Its healthy
-\(z=2\) result for positive \(K_Q\) and \(\gamma\) is unaffected.
+every derivative of $\psi$ begins at first perturbative order. Its healthy
+$z=2$ result for positive $K_Q$ and $\gamma$ is unaffected.
 
 The blocker applies to the remaining metric-aether-condensate block. It does
 not reverse the force-block partial pass and does not close UVIR-003.
@@ -221,19 +221,19 @@ not reverse the force-block partial pass and does not close UVIR-003.
 ### Derived
 
 - the declared finite-density condensate has
-  \(\rho_\Phi+p_\Phi=s\mu^2>0\);
+  $\rho_\Phi+p_\Phi=s\mu^2>0$;
 - no constant vacuum-energy subtraction makes the declared Minkowski
   background on shell;
 - a supporting reservoir/driver must have non-vacuum stress and its scalar
   constraint response must be declared;
 - the exact Einstein-aether formulas use
-  \(\alpha_i=(M_U^2/M_P^2)c_i\).
+  $\alpha_i=(M_U^2/M_P^2)c_i$.
 
 ### Not derived
 
 - the reduced scalar kinetic or gradient matrix;
 - the lapse, shift and multiplier solutions;
-- the coupled low-\(k\) Hamiltonian;
+- the coupled low-$k$ Hamiltonian;
 - the support-sector perturbation spectrum.
 
 ### Next required theory decision

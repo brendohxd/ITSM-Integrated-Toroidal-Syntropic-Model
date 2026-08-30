@@ -30,12 +30,12 @@ pdflatex -interaction=nonstopmode main.tex
 
 | Forbidden | Ban / note |
 |-----------|------------|
-| Fixed NANOGrav \([1.08,\pi]\) nHz as prediction | B13 |
+| Fixed NANOGrav $[1.08,\pi]$ nHz as prediction | B13 |
 | Scalar PTA as guaranteed near-term result | B13 |
 | JWST CO/Na I as model-level falsifier from Jeans/IMF | B14 |
-| Withdrawn geometric \(a_0\) as positive input | B1 |
+| Withdrawn geometric $a_0$ as positive input | B1 |
 | Bullet Cluster quantitative “solution” | ledger |
-| Dual \(\Cobs=2/3\) + \(a_0=cH_0/2\pi\) as RAR | B9 (if kinematics appear) |
+| Dual $C_{\mathrm{obs}}=2/3$ + $a_0=cH_0/2\pi$ as RAR | B9 (if kinematics appear) |
 
 ## Files
 

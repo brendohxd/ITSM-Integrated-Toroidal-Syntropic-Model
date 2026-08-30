@@ -17,7 +17,7 @@ Stage S0.4 / S1 of the gate spec only.
 |------|------|
 | `top001_shape_template_audit.py` | **Reviewed biaxial** fixed-volume template (do not overwrite) |
 | `top001_s1_triaxial_fixed_volume_audit.py` | **Stage S1** full-triaxial fixed-volume log-shape audit (separate) |
-| `top001_s1m_modular_basis_equivalence_audit.py` | **Stage S1.7 / S1M** exact \(SL(3,\mathbb Z)\) basis-equivalence and deformation-separation audit |
+| `top001_s1m_modular_basis_equivalence_audit.py` | **Stage S1.7 / S1M** exact $SL(3,\mathbb Z)$ basis-equivalence and deformation-separation audit |
 | `top001_s1m_physical_cutoff_spectrum_audit.py` | **Stage S1.8 / S1M robustness** complete physical-eigenvalue cutoff spectrum and raw-label-box negative control |
 | `outputs/` (created on run) | Deterministic JSON summaries + sha256 sidecars |
 
@@ -62,15 +62,15 @@ python Analysis\TOP\TOP-001\top001_s1m_physical_cutoff_spectrum_audit.py
 ## Explicit non-claims
 
 - Not free Casimir stress (use CBR-001 for that)
-- Not \(13/12\) attractor, \(H_0\), \(a_0\), or \(\Cobs\)
+- Not $13/12$ attractor, $H_0$, $a_0$, or $C_{\mathrm{obs}}$
 - Not dynamical modulus action
-- Not twisted \(E_2/E_3\) preference
-- Not physical significance for the labels \(1,4,7\)
+- Not twisted $E_2/E_3$ preference
+- Not physical significance for the labels $1,4,7$
 - Not cosmology, lensing, SPARC, or NANOGrav
 
 ## Negative / refinement controls
 
-1. Cubic limit \(L_1=L_2=L_3\) → mode anisotropy diagnostic \(\approx 0\)
+1. Cubic limit $L_1=L_2=L_3$ → mode anisotropy diagnostic $\approx 0$
 2. Volume held fixed under shape scan
 3. Tested non-cubic biaxial shapes → nonzero diagnostic in this chart
 4. Grid refinement of truncated mode sums → diagnostic stable within 1%

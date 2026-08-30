@@ -106,7 +106,7 @@ python uvir003_four_leg_kinematic_deformation.py `
 
 Outputs: `uvir003_four_leg_kinematic_deformation_dense_edge_summary.json`.  
 On 2026-08-01 this still returns `PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT`
-with more domain-admission failures as \(q_u/q\) decreases and smaller min pole
+with more domain-admission failures as $q_u/q$ decreases and smaller min pole
 separation — expected approach behavior, not unitarity.
 
 ## Next required calculation

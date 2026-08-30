@@ -1,4 +1,4 @@
-# RES-001 Stage 0 — \(Q_{\mathrm{syn}}\) constitutive inventory
+# RES-001 Stage 0 — $Q_{\mathrm{syn}}$ constitutive inventory
 
 **Date:** 2026-08-04  
 **Status:** `OPEN_SCAFFOLD_ONLY`  

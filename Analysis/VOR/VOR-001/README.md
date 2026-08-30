@@ -33,7 +33,7 @@ python Analysis\VOR\VOR-001\vor001_stage_s1_energy_audit.py
 
 ## Explicit non-claims
 
-- Not a derivation of \(a_0\), \(\Cobs\), \(H_0\), or PTA frequencies
+- Not a derivation of $a_0$, $C_{\mathrm{obs}}$, $H_0$, or PTA frequencies
 - Not a superfluid action validation
 - Not UVIR / MAT / TOP closure
 - Not restoration of lunar SWNT or historical numbers
@@ -41,8 +41,8 @@ python Analysis\VOR\VOR-001\vor001_stage_s1_energy_audit.py
 
 ## Negative controls (must pass as controls)
 
-1. Trivial winding \(\mathbf{n}=\mathbf{0}\) → holonomy integrals vanish
-2. Forced smooth density floor \(\rho\ge\rho_{\min}\) on a defect-like profile →
+1. Trivial winding $\mathbf{n}=\mathbf{0}$ → holonomy integrals vanish
+2. Forced smooth density floor $\rho\ge\rho_{\min}$ on a defect-like profile →
    core indicator turns off
 3. Non-integer fake “winding” → rejected by integer check
 4. Under-resolved winding with phase advance at the Nyquist boundary → rejected

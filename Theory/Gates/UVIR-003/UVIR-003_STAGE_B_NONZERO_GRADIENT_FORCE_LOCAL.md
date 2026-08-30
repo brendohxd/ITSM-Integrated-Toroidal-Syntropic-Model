@@ -31,8 +31,8 @@ does not exist.
 \overline{\nabla\pi} = v\,\mathbf{e}_x,\qquad v>0.
 \]
 
-Fluctuations: \(\nabla\delta\pi = \varepsilon\,(x,y,z)\) with parallel \(x\) and
-transverse \(p_\perp^2=y^2+z^2\).
+Fluctuations: $\nabla\delta\pi = \varepsilon\,(x,y,z)$ with parallel $x$ and
+transverse $p_\perp^2=y^2+z^2$.
 
 ## Verified expansion
 
@@ -51,18 +51,18 @@ transverse \(p_\perp^2=y^2+z^2\).
 
 Symbolic match: **PASS**.
 
-## Local force dynamics (from \(L=-A_{\mathrm{IR}}|\nabla\pi|^3\))
+## Local force dynamics (from $L=-A_{\mathrm{IR}}|\nabla\pi|^3$)
 
-- Quadratic potential Hessian eigenvalues \(\{6A_{\mathrm{IR}}v,\,3A_{\mathrm{IR}}v\}\)
-  — **positive** for \(A_{\mathrm{IR}}>0\), \(v>0\) (Stage-A cubic Hessian claim).
+- Quadratic potential Hessian eigenvalues $\{6A_{\mathrm{IR}}v,\,3A_{\mathrm{IR}}v\}$
+  — **positive** for $A_{\mathrm{IR}}>0$, $v>0$ (Stage-A cubic Hessian claim).
 - Local cubic Fourier vertex for three force legs constructed and checked on
-  pure-parallel kinematics: \(6\mathrm{i}A_{\mathrm{IR}}q^3\).
-- Quartic coefficient \(\propto 1/v\) — **singular as** \(v\to 0\); zero-gradient
+  pure-parallel kinematics: $6\mathrm{i}A_{\mathrm{IR}}q^3$.
+- Quartic coefficient $\propto 1/v$ — **singular as** $v\to 0$; zero-gradient
   homogeneous limit is **not** taken.
 
 ## Non-claims
 
-- Not an isotropic FRW / homogeneous \(2\to 2\) amplitude.  
+- Not an isotropic FRW / homogeneous $2\to 2$ amplitude.  
 - Not nested in-in integrals.  
 - Not unitarity / strong-coupling scale.  
 - Not MAT-001.
@@ -83,6 +83,6 @@ Outputs:
 ## Next (remaining alpha.10)
 
 1. **Declared** perturbative-unitarity / EFT-validity criterion with explicit
-   scope (high-\(q\) Green proxy + this local force sector) — **not** “theory closed”.  
+   scope (high-$q$ Green proxy + this local force sector) — **not** “theory closed”.  
 2. Optional: feed the local anisotropic force vertex as a source into the
    multi-slice FRW Green proxy.

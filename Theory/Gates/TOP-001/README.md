@@ -15,8 +15,8 @@
 ## What this gate is
 
 A **rigorous Open gate** for the retained identity that spatial slices carry
-**compact flat \(T^3\)** (or twisted flat) **boundary conditions**, with
-**shape moduli** \(L_i\) (and ratios) that may eventually have an action and
+**compact flat $T^3$** (or twisted flat) **boundary conditions**, with
+**shape moduli** $L_i$ (and ratios) that may eventually have an action and
 energy accounting.
 
 Master Plan pass wording (TOP/VOR/WAK, when closed later):
@@ -25,9 +25,9 @@ This scaffold does **not** claim that pass.
 
 ## What this gate is not
 
-- A restoration of free-field **\(13/12\)** attractor or **\(H_0=72.97\)**
-- Topology-alone derivation of \(a_0\) or \(\Cobs=2/3\)
-- Preference for twisted \(E_2/E_3\) without energy/stability comparison
+- A restoration of free-field **$13/12$** attractor or **$H_0=72.97$**
+- Topology-alone derivation of $a_0$ or $C_{\mathrm{obs}}=2/3$
+- Preference for twisted $E_2/E_3$ without energy/stability comparison
 - Automatic CMB, lensing, SPARC, NANOGrav, or driven anisotropy
 - Ownership of winding/defects (VOR-001) or wake constitutive law (WAK-001)
 
@@ -35,11 +35,11 @@ This scaffold does **not** claim that pass.
 
 | Keep separate | Do not conflate with |
 |---------------|----------------------|
-| Topology class (\(T^3\), twisted flat) | Metric dynamics / Einstein equations |
+| Topology class ($T^3$, twisted flat) | Metric dynamics / Einstein equations |
 | Fixed boundary conditions | Evolving side lengths or shear moduli |
-| Rectangular \(T^3\) | Twisted \(E_2/E_3\) candidates (Open preference only) |
+| Rectangular $T^3$ | Twisted $E_2/E_3$ candidates (Open preference only) |
 | Free Casimir stress (CBR-001) | Driven / wake / reservoir / memory stress (CBR-002+) |
-| Global geometry \(L_i\) | Local Wilson coefficients and force laws \(\psi\) |
+| Global geometry $L_i$ | Local Wilson coefficients and force laws $\psi$ |
 | Mathematical template outputs | Physical or cosmological predictions |
 
 ## Package contents
@@ -58,19 +58,19 @@ This scaffold does **not** claim that pass.
 
 | Gate / sector | Relation |
 |---------------|----------|
-| **VOR-001** | Winding/circulation on the manifold TOP declares; TOP owns moduli, VOR owns \(\Phi\) topology sectors |
-| **CBR-001** | Free rectangular \(T^3\) Casimir baseline: anisotropy **yes**, persistent \(13/12\) **no** |
+| **VOR-001** | Winding/circulation on the manifold TOP declares; TOP owns moduli, VOR owns $\Phi$ topology sectors |
+| **CBR-001** | Free rectangular $T^3$ Casimir baseline: anisotropy **yes**, persistent $13/12$ **no** |
 | **CBR-002** | Driven anisotropic stress — **downstream** of shape + reservoir + wake |
 | **WAK-001** | Wake/memory stress — orthogonal constitutive track |
-| **Reservoir / \(Q_{\rm syn}\)** | Exchange and total conservation; not a substitute for a modulus action |
+| **Reservoir / $Q_{\rm syn}$** | Exchange and total conservation; not a substitute for a modulus action |
 | **UVIR / MAT / DISK** | Force and matter sectors; **not** TOP DOF |
 
 ## Status
 
 **Current overall gate status:** `OPEN_SCAFFOLD_ONLY`.
 
-The Stage S1.7 / S1M audit establishes that \(B\) and \(BM\), for declared
-\(M\in SL(3,\mathbb Z)\), are exact basis descriptions of the same lattice
+The Stage S1.7 / S1M audit establishes that $B$ and $BM$, for declared
+$M\in SL(3,\mathbb Z)$, are exact basis descriptions of the same lattice
 when direct, reciprocal and winding labels are reindexed consistently. It
 does not establish a preferred shear, modulus action or physical stability.
 The S1.8 robustness audit independently confirms the same reciprocal spectrum

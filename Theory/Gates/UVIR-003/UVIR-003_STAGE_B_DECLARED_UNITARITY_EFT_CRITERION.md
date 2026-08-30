@@ -19,10 +19,10 @@ State an explicit, machine-checked **perturbative-unitarity / EFT-validity
 criterion package** for the two sectors that alpha.10 has actually constructed:
 
 1. **L** — Track-A local nonzero-gradient force (`PASS_NONZERO_GRADIENT_FORCE_LOCAL`)
-2. **G** — high-\(q\) mode-projected Green proxy (`PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN`)
+2. **G** — high-$q$ mode-projected Green proxy (`PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN`)
 
 This is a **declared criterion**, not a completed optical theorem and not a
-physical cutoff with matched \(K_Q\).
+physical cutoff with matched $K_Q$.
 
 ## Sector L (local force)
 
@@ -33,7 +33,7 @@ g_3 = \frac{A_{\mathrm{IR}}}{K_Q^{3/2}},\qquad
 \Lambda_\parallel = \frac{K_Q^{3/4}}{\sqrt{A_{\mathrm{IR}}}}.
 \]
 
-Tree parallel vertex (canonical \(\chi=\sqrt{K_Q}\,\pi\)):
+Tree parallel vertex (canonical $\chi=\sqrt{K_Q}\,\pi$):
 
 \[
 |V_\parallel(q)| = \frac{6 A_{\mathrm{IR}} q^3}{K_Q^{3/2}}.
@@ -53,16 +53,16 @@ u_L(q) := \frac{|V_\parallel(q)|}{16\pi}.
 u_L(q)\le u_{\max}
 \]
 
-with defaults \(r_{\max}=0.3\), \(u_{\max}=1\).
+with defaults $r_{\max}=0.3$, $u_{\max}=1$.
 
-## Sector G (high-\(q\) Green)
+## Sector G (high-$q$ Green)
 
 Inherited health checks from the multi-slice Green PASS:
 
 - prior subgate PASS  
-- multi-slice \(|K|\) relative span \(\le 0.25\)  
-- finite positive \(G_{\mathrm{proxy}}\) diagnostic  
-- causal Green with diagonal = local \(K\)  
+- multi-slice $|K|$ relative span $\le 0.25$  
+- finite positive $G_{\mathrm{proxy}}$ diagnostic  
+- causal Green with diagonal = local $K$  
 - **IR transfer HOLD modes remain out of scope**
 
 ## Joint PASS meaning
@@ -75,7 +75,7 @@ It does **not** mean UVIR-003 is closed.
 | Claim | Status |
 |-------|--------|
 | Optical theorem / multi-channel unitarity | **NOT_COMPUTED** |
-| Physical strong-coupling cutoff | **NOT_ESTABLISHED** (\(K_Q\) matching open) |
+| Physical strong-coupling cutoff | **NOT_ESTABLISHED** ($K_Q$ matching open) |
 | Homogeneous FRW S-matrix | **NOT_ESTABLISHED** |
 | MAT-001 | **BLOCKED** |
 | Full UVIR-003 gate | **IN_PROGRESS** |
@@ -104,6 +104,6 @@ Outputs:
 
 ## Next
 
-- \(K_Q\) / force normalization matching (shared blocker with causality NDA)  
+- $K_Q$ / force normalization matching (shared blocker with causality NDA)  
 - Optional: anisotropic force vertex → multi-slice Green source  
 - Manuscript freeze **alpha.10** when ready to record the chain immutably  

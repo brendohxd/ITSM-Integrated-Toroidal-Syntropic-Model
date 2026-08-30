@@ -1122,18 +1122,18 @@ Gate: UVIR-003 (serial Stage 2a)
 **Independent review:** reproduced the existing matching-inventory and
 matching-route baselines, reviewed Grok's four-file return packet, and checked
 the declared core architecture plus UVIR-001 source record. The R3-specific
-relation \(K_Q=Z_\psi\rho_\Phi/a_0^2\) occurs as a Conditional matching ansatz;
-the audited declared sources do not compute \(Z_\psi\), \(\rho_\Phi\), or a
-rigorous bound on \(Z_\psi r_\rho\).
+relation $K_Q=Z_\psi\rho_\Phi/a_0^2$ occurs as a Conditional matching ansatz;
+the audited declared sources do not compute $Z_\psi$, $\rho_\Phi$, or a
+rigorous bound on $Z_\psi r_\rho$.
 
 **Correction during review:** the initial report called
-\(I_{a_0}=A a_0/K_Q\) invariant while its machine audit correctly found it
-chart-dependent for externally fixed \(a_0\). The accepted record now reserves
-invariant status for \(Aq/K_Q\) and labels \(I_{a_0}\) a named \(q=a_0\)
+$I_{a_0}=A a_0/K_Q$ invariant while its machine audit correctly found it
+chart-dependent for externally fixed $a_0$. The accepted record now reserves
+invariant status for $Aq/K_Q$ and labels $I_{a_0}$ a named $q=a_0$
 field-chart diagnostic.
 
 **Decision:** accept Classification C,
-`INCOMPLETE_R3_UV_RESIDUE`, with `physics_pass: false`, numeric \(K_Q\)
+`INCOMPLETE_R3_UV_RESIDUE`, with `physics_pass: false`, numeric $K_Q$
 `NOT_DERIVED`, UVIR-003 `IN_PROGRESS`, and MAT-001 `BLOCKED`. Stage 2a is
 complete; Stage 2b Conditional matching-floor and scoped-handoff drafting is
 the next serial action.
@@ -1145,7 +1145,7 @@ Gate: UVIR-003 (serial Stages 3–5 and closure audit)
 **Independent consistency review:** the prior Stage 5 programme policy treated
 Conditional M3/M6 diagnostics and scope exclusions as sufficient for
 `PASS_BOUNDED_CONDITIONAL`. That status exceeded the evidence: the relevant IR
-complex-quartet response was not controlled, \(V\) and numeric \(K_Q\) were not
+complex-quartet response was not controlled, $V$ and numeric $K_Q$ were not
 computed, causality was not re-evaluated with a matched invariant, and the NDA
 diagnostic was not a matched physical cutoff.
 
@@ -1163,7 +1163,7 @@ the closure audit to exit nonzero with
 `FAIL_UVIR003_CLOSURE_CHECKLIST_AUDIT`.
 
 **Decision:** UVIR-003 remains `IN_PROGRESS`; MAT-001 remains blocked for PASS.
-The serial next move is to compute \(V\), or an equivalent matched invariant,
+The serial next move is to compute $V$, or an equivalent matched invariant,
 then reopen Stage 4A for causality, relevant IR control, and the physical
 cutoff before a later independent Stage 5 review. No alpha.11 freeze or P3
 claim upgrade is created by this correction.
@@ -1171,25 +1171,25 @@ claim upgrade is created by this correction.
 
 Gate: MAT-001 (post-alpha.11 matching preparation)
 
-**J1 result:** a single parent action with kinetic coefficient \(Z_\phi\),
-matter coefficient \(g_\phi\), and chart map \(\psi=f_\phi\phi\) gives
-\(K_Q=Z_\phi/f_\phi^2\), \(C_m=g_\phi/f_\phi\), and the invariant
-\(V=g_\phi/\sqrt{Z_\phi}\). The coefficients themselves remain unmatched.
+**J1 result:** a single parent action with kinetic coefficient $Z_\phi$,
+matter coefficient $g_\phi$, and chart map $\psi=f_\phi\phi$ gives
+$K_Q=Z_\phi/f_\phi^2$, $C_m=g_\phi/f_\phi$, and the invariant
+$V=g_\phi/\sqrt{Z_\phi}$. The coefficients themselves remain unmatched.
 
-**R2 correction:** the canonical source vertex is \(V\), the mixed
-field-source response is \(V/P\), and the source-source exchange coefficient
-is proportional to \(V^2/P\). The repaired audit is ASCII-safe in default
-Windows PowerShell, rejects non-finite inputs, locks \(V\) to `NOT_COMPUTED`,
+**R2 correction:** the canonical source vertex is $V$, the mixed
+field-source response is $V/P$, and the source-source exchange coefficient
+is proportional to $V^2/P$. The repaired audit is ASCII-safe in default
+Windows PowerShell, rejects non-finite inputs, locks $V$ to `NOT_COMPUTED`,
 and does not claim a live physical-eigenmode extraction.
 
 **Unit decision:** the existing natural/covariant chart is dimensionally
 closed. With SI potential units, the coordinate-time coefficient is
-\(K_Q^{(t)}=K_Q^{(x^0)}/c^2\). Therefore an explicit \(c^2\) belongs in the
-coordinate-time ratio but not the covariant \(x^0=ct\) ratio. Neither chart is
+$K_Q^{(t)}=K_Q^{(x^0)}/c^2$. Therefore an explicit $c^2$ belongs in the
+coordinate-time ratio but not the covariant $x^0=ct$ ratio. Neither chart is
 selected as a numerical observable convention by this audit.
 
 **Decision:** record the three structural subgate passes while preserving
-MAT-001 `BLOCKED`, UVIR-003 `IN_PROGRESS`, \(K_Q\) `NOT_DERIVED`, \(V\)
+MAT-001 `BLOCKED`, UVIR-003 `IN_PROGRESS`, $K_Q$ `NOT_DERIVED`, $V$
 `NOT_COMPUTED`, `physics_pass: false`, and Stage 4A closed. No frozen release
 or downstream Derived claim is created.
 
@@ -1197,12 +1197,12 @@ or downstream Derived claim is created.
 
 Gate: TOP-001 (fixed-boundary geometry scaffold)
 
-**Exact result:** for a direct-lattice basis \(B\) and each declared
-\(M\in SL(3,\mathbb Z)\), the audit verifies that \(B'=BM\) generates the
-same lattice. Direct labels transform with \(M^{-1}\), while reciprocal-mode
-and winding labels transform with \(M^T\). Direct points, reciprocal vectors,
+**Exact result:** for a direct-lattice basis $B$ and each declared
+$M\in SL(3,\mathbb Z)$, the audit verifies that $B'=BM$ generates the
+same lattice. Direct labels transform with $M^{-1}$, while reciprocal-mode
+and winding labels transform with $M^T$. Direct points, reciprocal vectors,
 winding covectors, paired Laplacian eigenvalues and fundamental volume agree
-exactly; the coordinate Gram matrix obeys \(G'=M^TGM\).
+exactly; the coordinate Gram matrix obeys $G'=M^TGM$.
 
 **Separation control:** leaving a reciprocal label untransformed changes the
 coordinate comparison, while a separate left-acting, volume-preserving
@@ -1213,7 +1213,7 @@ basis relabelling.
 **Decision:** accept
 `PASS_TOP001_S1M_MODULAR_BASIS_EQUIVALENCE_TEMPLATE` as an exact mathematical
 identity only. TOP-001 remains `OPEN_SCAFFOLD_ONLY` and `physics_pass: false`.
-No preferred shear, significance of \(1,4,7\), modulus action, stability,
+No preferred shear, significance of $1,4,7$, modulus action, stability,
 Casimir comparison, twisted-boundary preference or cosmology is derived. No
 frozen manuscript release is modified.
 
@@ -1227,7 +1227,7 @@ Stage-5 input is rejected with a nonzero exit. The deterministic subgate is
 `PASS_MAT001_UVIR_HANDOFF_CONTRACT_BLOCKED`.
 
 **Decision:** authorize the next basis-covariant symbolic physical-mode source
-projection audit only. Numerical \(V\) matching remains unready because the
+projection audit only. Numerical $V$ matching remains unready because the
 same-action physical source vector and kinetic metric are not yet jointly
 exported in one declared chart. MAT-001 remains `BLOCKED`, UVIR-003 remains
 `IN_PROGRESS`, Stage 4A remains closed, and no downstream Derived use or
@@ -1238,14 +1238,14 @@ frozen release is authorized.
 Gate: MAT-001 scoped matching method
 
 **Exact result:** after eliminating algebraic constraints, the effective source
-is \(c_{\rm eff}=d-BC^{-1}h\) and its canonical coupling to mode \(u\) is
-\(g_{\rm can}=c_{\rm eff}^Tu/\sqrt{u^TKu}\). The audit proves covariance
+is $c_{\rm eff}=d-BC^{-1}h$ and its canonical coupling to mode $u$ is
+$g_{\rm can}=c_{\rm eff}^Tu/\sqrt{u^TKu}$. The audit proves covariance
 under invertible dynamical and constraint-field basis changes and reproduces
 the J1 single-field identity.
 
 **Boundary:** all live UVIR action matrices remain
 `NOT_PROVIDED_TO_THIS_TEMPLATE`; the executable uses exact rational template
-matrices only. The method subgate passes, but \(V\) remains `NOT_COMPUTED`,
+matrices only. The method subgate passes, but $V$ remains `NOT_COMPUTED`,
 MAT-001 remains `BLOCKED`, UVIR-003 remains `IN_PROGRESS`, Stage 4A remains
 closed, and no physics PASS, downstream Derived claim or frozen release is
 authorized.
@@ -1254,11 +1254,11 @@ authorized.
 
 Gate: TOP-001 fixed-boundary modular identity
 
-**Exact result:** with \(\ell=m^T(B^{-1}B^{-T})m\), cutoff \(\ell\leq2\)
-and certified-complete boxes, all four tested \(SL(3,\mathbb Z)\) charts
+**Exact result:** with $\ell=m^T(B^{-1}B^{-T})m$, cutoff $\ell\leq2$
+and certified-complete boxes, all four tested $SL(3,\mathbb Z)$ charts
 independently return 358 modes across 179 exact eigenvalues, maximum degeneracy
 2, and the same canonical spectrum SHA-256. The transformed-label bijection is
-exact and refinement from \(N=10\) to \(N=12\) changes nothing.
+exact and refinement from $N=10$ to $N=12$ changes nothing.
 
 **Controls:** identical raw coordinate-label boxes produce different spectra
 under an elementary shear because the box is not modular invariant. A separate
@@ -1274,21 +1274,21 @@ twisted-boundary preference, cosmology, Derived claim or frozen release follows.
 
 Gate: MAT-001 RR2
 
-**What changed:** constructed Track-A + \(S_{\rm int}\) single-field residue
-pathway; proved \(|g_{\rm can}|=V\) symbolically; confirmed no live bare-\(K_Q\)-free
-amplitude/response export; rejected \(Q_\rho,Q_\chi\) diagnostics as \(V\).
+**What changed:** constructed Track-A + $S_{\rm int}$ single-field residue
+pathway; proved $|g_{\rm can}|=V$ symbolically; confirmed no live bare-$K_Q$-free
+amplitude/response export; rejected $Q_\rho,Q_\chi$ diagnostics as $V$.
 
 **Decision:** `PASS_MAT001_RR2_RESIDUE_PATHWAY_ATTEMPTED_INCOMPLETE`. RR2 remains
-the Derived wall. Stage 4A closed; \(V\) `NOT_COMPUTED`.
+the Derived wall. Stage 4A closed; $V$ `NOT_COMPUTED`.
 
-**What was abandoned:** using retarded-response impulses or \(K_Q=1\) to quote \(V\).
+**What was abandoned:** using retarded-response impulses or $K_Q=1$ to quote $V$.
 
 ## 2026-08-06 - Plan RR2–H7 bounded completion package
 
 Gate: MAT-001 / tier-1 forward plan
 
 **What changed:** single fail-closed package advances RR2 (incompleteness freeze),
-RR3 (Conditional \(f_\phi\) chart convention), H2 (symbolic \(V\) redefinition
+RR3 (Conditional $f_\phi$ chart convention), H2 (symbolic $V$ redefinition
 invariance), H3–H5 (Stage 4A closed, M2 policy, MAT ban-list), H6 (matter-only
 join reaffirm), H7 (hygiene contract). Derived critical path remains open on RR2.
 
@@ -1302,14 +1302,14 @@ peer-review-maximal plan completion, not Derived matching or tier-1 UVIR close.
 Gate: MAT-001 RR1
 
 **What changed:** declared the minimal same-action skeleton
-\(L_{\rm kin}=(Z_\phi/2)(U\cdot\nabla\phi)^2\), \(L_{\rm int}=-g_\phi\rho_b\phi\),
-with map to Track-A and induced \(C_m,K_Q,V\) identities. All microscopic
+$L_{\rm kin}=(Z_\phi/2)(U\cdot\nabla\phi)^2$, $L_{\rm int}=-g_\phi\rho_b\phi$,
+with map to Track-A and induced $C_m,K_Q,V$ identities. All microscopic
 coefficients remain unmatched. RR1 advances from empty OPEN to
 `DECLARED_SKELETON_COEFFICIENTS_UNMATCHED`.
 
 **Decision:** accept
 `PASS_MAT001_RR1_PARENT_ACTION_SKELETON_DECLARED_UNMATCHED`. Not Derived
-matching; Stage 4A closed; \(V\) `NOT_COMPUTED`.
+matching; Stage 4A closed; $V$ `NOT_COMPUTED`.
 
 **What was abandoned:** claiming full UVIR multi-sector parent equality from
 this minimal skeleton.
@@ -1319,15 +1319,15 @@ this minimal skeleton.
 Gate: MAT-001 H1.3
 
 **What changed:** audited architecture, Master Plan, J1, UVIR-001, R3, Track-A
-force/\(S_{\rm int}\), and H1.1–H1.2 for any derivation of \(Z_\phi\) or \(g_\phi\).
+force/$S_{\rm int}$, and H1.1–H1.2 for any derivation of $Z_\phi$ or $g_\phi$.
 None found. Froze research requirements RR1–RR5. H1 remains incomplete; H2–H5
-blocked. Stage 4A closed; \(V\) `NOT_COMPUTED`.
+blocked. Stage 4A closed; $V$ `NOT_COMPUTED`.
 
 **Decision:** accept
 `PASS_MAT001_PARENT_ACTION_H13_INCOMPLETE_SOURCES_AUDITED` as peer-review-grade
 incompleteness, not a matching success.
 
-**What was abandoned:** treating architecture \(C_m=C_{\rm IR}\) convention or
+**What was abandoned:** treating architecture $C_m=C_{\rm IR}$ convention or
 R3/R1 sketches as parent-action derivation.
 
 ## 2026-08-06 - Tier-1 forward plan + H1.1–H1.2 parent-action matching
@@ -1336,11 +1336,11 @@ Gate: plan + MAT-001 H1
 
 **What changed:** published `ITSM_Tier1_Forward_Plan.md` covering hurdles H0–H7
 (Derived Lane A H1→H5, Conditional Lane B parallel). Started H1 with parent-action
-route declaration \(Z_\phi,g_\phi\to\) Track-A and a deterministic repo inventory
+route declaration $Z_\phi,g_\phi\to$ Track-A and a deterministic repo inventory
 finding no numeric micro coefficients (`DECLARED_INCOMPLETE`).
 
 **Decision:** plan active; H1.1–H1.2 complete as incompleteness; H1.3 next.
-Stage 4A remains closed; \(V\) `NOT_COMPUTED`.
+Stage 4A remains closed; $V$ `NOT_COMPUTED`.
 
 **What was abandoned:** using R1/Conditional samples as the Derived matching route.
 
@@ -1350,7 +1350,7 @@ Gate: UVIR-003 Stage 5 + MAT claim surface (peer-review bar)
 
 **What changed:** executable audit re-pins `HOLD_TIER1_CLOSURE`, verifies
 M2/M3/M6/M7 still unmet, freezes a Stage 4A reopen contract (all conditions
-false), checks MAT dual-status records keep \(V\) `NOT_COMPUTED` and MAT PASS
+false), checks MAT dual-status records keep $V$ `NOT_COMPUTED` and MAT PASS
 false, and publishes an allow/deny claim ledger for peer review after the
 Track-A Conditional kit.
 
@@ -1358,141 +1358,141 @@ Track-A Conditional kit.
 a hold-retention pass, not UVIR/MAT physics PASS.
 
 **What was abandoned:** any silent Stage 4A reopen or Derived upgrade from
-Conditional samples or symbolic \(V\) form.
+Conditional samples or symbolic $V$ form.
 
 ## 2026-08-06 - MAT-001 Track-A join readiness
 
 Gate: MAT-001 (matter vs free-force join)
 
-**What changed:** classified Track-A join of matter \(d,h\) with free-force
+**What changed:** classified Track-A join of matter $d,h$ with free-force
 constraint J2. Matter-only static channel is form-ready
-(\(h=0\Rightarrow c_{\rm eff}=d\)). Free-force lapse/shift sources are
-velocity-quadratic residuals outside pure static \(B\). Full multi-sector J2
+($h=0\Rightarrow c_{\rm eff}=d$). Free-force lapse/shift sources are
+velocity-quadratic residuals outside pure static $B$. Full multi-sector J2
 and free-sector identification remain not ready.
 
 **Decision:** accept
 `PASS_MAT001_TRACK_A_JOIN_READINESS_PARTIAL_MATTER_CHANNEL_ONLY`. Operational
-channel is matter-only static on Track-A host. \(V\) still `NOT_COMPUTED`.
+channel is matter-only static on Track-A host. $V$ still `NOT_COMPUTED`.
 
-**What was abandoned:** treating \(\dot\pi^2\) force J2 as static \(B\); silent
+**What was abandoned:** treating $\dot\pi^2$ force J2 as static $B$; silent
 free-sector/Track-A identification.
 
 ## 2026-08-06 - MAT-001 K_Q dig + Conditional dual-status branch
 
 Gate: MAT-001 (derivation dig and Conditional branch)
 
-**What changed:** (1) Dig of four numeric-\(K_Q\) paths (parent \(Z_\phi\), R3
-residue, R1 dimensional, \(K_Q=C_m^2/V^2\)) — all incomplete/not ready.
+**What changed:** (1) Dig of four numeric-$K_Q$ paths (parent $Z_\phi$, R3
+residue, R1 dimensional, $K_Q=C_m^2/V^2$) — all incomplete/not ready.
 (2) Opened dual-status Conditional matching branch with labeled
-`CONDITIONAL_ONLY` samples under explicit premises; Derived-layer \(V\) and
-\(K_Q\) remain `NOT_COMPUTED` / `NOT_DERIVED`.
+`CONDITIONAL_ONLY` samples under explicit premises; Derived-layer $V$ and
+$K_Q$ remain `NOT_COMPUTED` / `NOT_DERIVED`.
 
 **Decision:** accept `PASS_MAT001_KQ_DERIVATION_DIG_INCOMPLETE` and
 `PASS_MAT001_CONDITIONAL_MATCHING_BRANCH_OPEN_DUAL_STATUS`. Conditional probes
 are diagnostics only; Stage 4A and MAT PASS stay closed.
 
 **What was abandoned:** promoting Conditional samples or R1/R3 sketches to
-Derived \(K_Q\)/`V`.
+Derived $K_Q$/`V`.
 
 ## 2026-08-06 - MAT-001 Track-A host K_Q readiness
 
 Gate: MAT-001 (post-embed kinetic readiness)
 
 **What changed:** exported Track-A host time-kinetic coefficient as symbolic
-\(K_Q\); proved on-host \(\lvert d\rvert/\sqrt{K}=C_m/\sqrt{K_Q}\) with field
-rescaling covariance; confirmed numeric \(K_Q\) remains `NOT_DERIVED` across
-matching inventories; rejected the Conditional dimensional \(K_Q\) estimate as
+$K_Q$; proved on-host $\lvert d\rvert/\sqrt{K}=C_m/\sqrt{K_Q}$ with field
+rescaling covariance; confirmed numeric $K_Q$ remains `NOT_DERIVED` across
+matching inventories; rejected the Conditional dimensional $K_Q$ estimate as
 Derived.
 
 **Decision:** accept
 `PASS_MAT001_TRACK_A_KQ_SYMBOLIC_HOST_NUMERIC_BLOCKED`. Symbolic host kit is
-complete; numeric \(V\) still blocked. Stage 4A closed; MAT blocked.
+complete; numeric $V$ still blocked. Stage 4A closed; MAT blocked.
 
 **What was abandoned:** promoting R1/`k_Q~1` Conditional estimates to Derived;
-treating the symbolic \(V\) form as numeric \(V\).
+treating the symbolic $V$ form as numeric $V$.
 
 ## 2026-08-06 - MAT-001 Track-A S_int embed and d,h export
 
 Gate: MAT-001 (Conditional force host selection)
 
 **What changed:** selected Track-A as the Conditional live force host; declared
-the force-role map \(\psi_{\rm IR}:=\psi_{\rm TrackA}=\psi_{\rm bar}+\pi\);
-embedded \(S_{\rm int}=-C_m\rho_b\psi\); exported matter-channel
-\(d=(-C_m)\), \(h=(0,0)\) on \(x=(\pi)\), \(z=(\delta N,\beta)\); recovered
-\(\lvert g_{\rm can}\rvert=V\) form with symbolic host \(K_Q\). Free-sector
-ADM remains a distinct chart; free-sector \(d,h\) stay `NOT_EXPORTED`.
+the force-role map $\psi_{\rm IR}:=\psi_{\rm TrackA}=\psi_{\rm bar}+\pi$;
+embedded $S_{\rm int}=-C_m\rho_b\psi$; exported matter-channel
+$d=(-C_m)$, $h=(0,0)$ on $x=(\pi)$, $z=(\delta N,\beta)$; recovered
+$\lvert g_{\rm can}\rvert=V$ form with symbolic host $K_Q$. Free-sector
+ADM remains a distinct chart; free-sector $d,h$ stay `NOT_EXPORTED`.
 
 **Decision:** accept
 `PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL`. This is a
-Conditional host embed, not numeric matching. \(V\) remains `NOT_COMPUTED`,
-\(K_Q\) `NOT_DERIVED`, MAT blocked, Stage 4A closed.
+Conditional host embed, not numeric matching. $V$ remains `NOT_COMPUTED`,
+$K_Q$ `NOT_DERIVED`, MAT blocked, Stage 4A closed.
 
-**What was abandoned:** free-sector identification with Track-A; numeric \(V\)
-from symbolic \(C_m/\sqrt{K_Q}\) alone; treating free-force cubic vertices as
+**What was abandoned:** free-sector identification with Track-A; numeric $V$
+from symbolic $C_m/\sqrt{K_Q}$ alone; treating free-force cubic vertices as
 matter covectors.
 
 ## 2026-08-06 - MAT-001 force-field hosting readiness
 
-Gate: MAT-001 (force host map for live \(S_{\rm int}\))
+Gate: MAT-001 (force host map for live $S_{\rm int}$)
 
 **What changed:** inventoried five candidate hosts for matter coupling: free-sector
-ADM, Track-A local force, complete finite-\(q\) \(S_2\) Track-A block, full
+ADM, Track-A local force, complete finite-$q$ $S_2$ Track-A block, full
 nonlinear ADM force completion, and IR template. Only Track-A currently hosts a
-force phonon, and it lacks declared \(\rho_b\)/\(S_{\rm int}\). Full ADM
-\(\psi\)-inclusive J2 remains blocked on \(\Delta_U\) and \(Y^{3/2}\). No host
+force phonon, and it lacks declared $\rho_b$/$S_{\rm int}$. Full ADM
+$\psi$-inclusive J2 remains blocked on $\Delta_U$ and $Y^{3/2}$. No host
 route is selected.
 
 **Decision:** accept `PASS_MAT001_FORCE_HOSTING_READINESS_BLOCKED`. This is a
-blocker-map pass, not force completion or MAT unlock. \(V\) remains
+blocker-map pass, not force completion or MAT unlock. $V$ remains
 `NOT_COMPUTED`.
 
 **What was abandoned:** silent free-sector/Track-A identification; treating the
-Track-A cubic force vertex as matter \(S_{\rm int}\); promoting the IR template
+Track-A cubic force vertex as matter $S_{\rm int}$; promoting the IR template
 to a live UVIR host.
 
 ## 2026-08-06 - MAT-001 S_int declaration and d,h live-chart placement
 
 Gate: MAT-001 (matter-source channel after free-sector export)
 
-**What changed:** declared Conditional \(S_{\rm int}\supset -C_m\rho_b\psi\)
+**What changed:** declared Conditional $S_{\rm int}\supset -C_m\rho_b\psi$
 (architecture/J1/R2 form); derived IR single-field J2 covectors
-\(d=(-C_m)\), \(h=\emptyset\) and verified \(\lvert g_{\rm can}\rvert=V\);
+$d=(-C_m)$, $h=\emptyset$ and verified $\lvert g_{\rm can}\rvert=V$;
 audited placement into the live free-sector UVIR chart
-\((R,\delta\rho,\vartheta)\). Force field \(\psi\) is absent there, so live
-\(d,h\) remain `NOT_EXPORTED`. Rejected \(\delta\rho\) as \(\rho_b\), diagnostic
-impulses as \(d,h\), and Newtonian \(\Phi_N\) as the force vertex.
+$(R,\delta\rho,\vartheta)$. Force field $\psi$ is absent there, so live
+$d,h$ remain `NOT_EXPORTED`. Rejected $\delta\rho$ as $\rho_b$, diagnostic
+impulses as $d,h$, and Newtonian $\Phi_N$ as the force vertex.
 
 **Decision:** accept
 `PASS_MAT001_S_INT_DH_DECLARATION_LIVE_CHART_BLOCKED`. Form and IR template are
-progress; live same-action matching stays blocked. \(V\) remains
+progress; live same-action matching stays blocked. $V$ remains
 `NOT_COMPUTED`, MAT blocked, Stage 4A closed.
 
-**What was abandoned:** pasting IR-template \(d,h\) into the free-sector
+**What was abandoned:** pasting IR-template $d,h$ into the free-sector
 bundle; treating free-sector condensate fields as baryonic sources.
 
 ## 2026-08-06 - MAT-001 same-chart free-sector quadratic export
 
 Gate: MAT-001 (post-inventory free-sector export)
 
-**What changed:** exported free-sector \(K\) and \(C\) in the original
-\((R,\delta\rho,\vartheta;\delta N,\Sigma)\) chart from the live finite-\(q\)
-reduction; decomposed the constraint source exactly into field map \(M_x\) and
-velocity map \(M_v\); recorded the static J2 candidate \(B=M_x^{T}\) while
-retaining the nonzero \(M_v\) residual; transformed free \(K\) into the physical
-\((\Xi,Q_\rho,Q_\chi)\) chart. Matter covectors \(d,h\) and mode \(u\) remain
+**What changed:** exported free-sector $K$ and $C$ in the original
+$(R,\delta\rho,\vartheta;\delta N,\Sigma)$ chart from the live finite-$q$
+reduction; decomposed the constraint source exactly into field map $M_x$ and
+velocity map $M_v$; recorded the static J2 candidate $B=M_x^{T}$ while
+retaining the nonzero $M_v$ residual; transformed free $K$ into the physical
+$(\Xi,Q_\rho,Q_\chi)$ chart. Matter covectors $d,h$ and mode $u$ remain
 absent.
 
 **Decision:** accept
 `PASS_MAT001_SAME_CHART_FREE_QUADRATIC_EXPORT_PARTIAL` as a free-sector export
 advance only. Live bundle status is
-`PARTIAL_FREE_SECTOR_SAME_CHART_MATTER_SOURCES_ABSENT`. \(V\) remains
+`PARTIAL_FREE_SECTOR_SAME_CHART_MATTER_SOURCES_ABSENT`. $V$ remains
 `NOT_COMPUTED`, MAT remains blocked, UVIR remains in progress and Stage 4A
 remains closed. Full same-chart MAT action export still requires declared
-\(S_{\rm int}\) and a pure-static or extended J2 treatment of \(M_v\).
+$S_{\rm int}$ and a pure-static or extended J2 treatment of $M_v$.
 
 **What was abandoned:** placeholder wiring of incomplete objects into live J2
 matching; erasure of velocity mixing; promotion of free eigenmodes to matter
-vertex modes; diagnostic \(Q_\rho,Q_\chi\) impulses as \(d,h\).
+vertex modes; diagnostic $Q_\rho,Q_\chi$ impulses as $d,h$.
 
 ## 2026-08-06 - VOR-001 S2c UVIR parent-interface inventory
 

@@ -27,7 +27,7 @@ Open/Partial evidence.
 |--------|-----------------|-----|
 | MAT scoped calculation | `PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL`; (V) NOT_COMPUTED; MAT/physics false | Static interface and present hold |
 | (K_Q) inventory | `PASS_KQ_MATCHING_INVENTORY_OPEN`; numeric (K_Q) NOT_DERIVED | Confirms (C_m/\sqrt{K_Q}) is invariant |
-| Matching-route programme | `PASS_MATCHING_ROUTE_PROGRAM_OPEN`; R2 Open/MAT-blocked | Confirms static \(C_{\rm obs}\) alone cannot determine (V) |
+| Matching-route programme | `PASS_MATCHING_ROUTE_PROGRAM_OPEN`; R2 Open/MAT-blocked | Confirms static $C_{\rm obs}$ alone cannot determine (V) |
 | Nonzero-gradient force package | `PASS_NONZERO_GRADIENT_FORCE_LOCAL`; UVIR IN_PROGRESS; MAT blocked | Declared force-sector slice only |
 
 ## What is actually required to compute (V)
@@ -37,7 +37,7 @@ Open/Partial evidence.
 3. Preserve the field-rescaling/gauge convention connecting those quantities.
 4. Reopen UVIR Stage 4A only after that matched result exists.
 
-(C_{\rm IR}) is needed later for \(C_{\rm obs}\)/\(I_{a_0}\) maps, but it is
+(C_{\rm IR}) is needed later for $C_{\rm obs}$/$I_{a_0}$ maps, but it is
 not required merely to define (V); it is therefore recorded separately from
 the direct (V) blockers.
 

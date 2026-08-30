@@ -1,4 +1,4 @@
-# P1 — Present-epoch scale matching and \(C_{\mathrm{obs}}\) hygiene
+# P1 — Present-epoch scale matching and $C_{\mathrm{obs}}$ hygiene
 
 **Directory:** `papers/P1-Scale-Matching-Reconstruction/`  
 **VERSION:** see `VERSION` (currently `0.1.0-draft`)  
@@ -8,21 +8,21 @@
 **Genre:** Technical note (no-go results + one derived EFT identity)  
 **Status:** Submission-ready draft for arXiv / CQG-style note  
 
-**Title:** *Present-epoch scale matching, the weak-field invariant \(C_{\mathrm{obs}}\), and no-go results for a cubic \(T^3\) geometric story*
+**Title:** *Present-epoch scale matching, the weak-field invariant $C_{\mathrm{obs}}$, and no-go results for a cubic $T^3$ geometric story*
 
 ## Claims (allowed)
 
 | Claim | Status |
 |-------|--------|
-| \(2\pi a_0\sim cH_0\) coincidence | Empirical fact |
-| \(a_0\equiv cH_0/2\pi\) at \(t_0\) | **Phenomenological** postulate only |
-| Circulation quantization \(\Rightarrow a_0\) | **Withdrawn** |
-| Cubic \(E_1\), \(L=c/H_0\) vs Planck | **Excluded** |
-| Fixed-moduli \(L_{\mathrm{phys}}(t)=c/H(t)\) | **Excluded** |
-| \(\mathrm{Tr}(h)/\mathrm{Tr}(\gamma)=2/3\) | Derived identity (generic) |
-| \(C_{\mathrm{obs}}=C_m^{3/2}/\sqrt{C_{\mathrm{IR}}}\) | **Derived** (field rescaling) |
-| \(C_{\mathrm{obs}}=2/3\) from geometry | **Withdrawn** |
-| Dual \(a_0=cH_0/2\pi\) + \(C_{\mathrm{obs}}=2/3\) as RAR | **Excluded** |
+| $2\pi a_0\sim cH_0$ coincidence | Empirical fact |
+| $a_0\equiv cH_0/2\pi$ at $t_0$ | **Phenomenological** postulate only |
+| Circulation quantization $\Rightarrow a_0$ | **Withdrawn** |
+| Cubic $E_1$, $L=c/H_0$ vs Planck | **Excluded** |
+| Fixed-moduli $L_{\mathrm{phys}}(t)=c/H(t)$ | **Excluded** |
+| $\mathrm{Tr}(h)/\mathrm{Tr}(\gamma)=2/3$ | Derived identity (generic) |
+| $C_{\mathrm{obs}}=C_m^{3/2}/\sqrt{C_{\mathrm{IR}}}$ | **Derived** (field rescaling) |
+| $C_{\mathrm{obs}}=2/3$ from geometry | **Withdrawn** |
+| Dual $a_0=cH_0/2\pi$ + $C_{\mathrm{obs}}=2/3$ as RAR | **Excluded** |
 
 ## Build
 
