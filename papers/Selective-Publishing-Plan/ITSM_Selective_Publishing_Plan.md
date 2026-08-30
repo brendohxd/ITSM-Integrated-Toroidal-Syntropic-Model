@@ -37,6 +37,11 @@ anisotropy, PTA eigenmodes, honest SPARC pipelines) remain open under the
 master plan’s Bucket B/C and identity pillars. Do not treat B1–B16 as a
 research veto of untested routes.
 
+**Authoritative Reassessment & Frontier Policy:** See [`Theory/Core/ITSM_Ban_List_Reassessment_and_Frontier_Policy.md`](../../Theory/Core/ITSM_Ban_List_Reassessment_and_Frontier_Policy.md)
+for the formal delineation between permanently retired historical slogans (B3, B6, B10, B16),
+superseded derivations ($C_m \equiv 1.0$, $f = 1/\sqrt{4\pi G}$, Bogoliubov acoustic spectrum $1.45\text{--}1.88\text{ nHz}$,
+and 175-galaxy SPARC pipeline), and active research frontiers (CBR-002, TOP-001, ASTRO-001).
+
 These phrases and implications are **forbidden in papers** until a new manuscript closes the reconstruction chain and passes peer scrutiny:
 
 | Ban ID | Forbidden claim | Why |
