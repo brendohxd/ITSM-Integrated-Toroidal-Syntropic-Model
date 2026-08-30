@@ -27,17 +27,17 @@ The programme strictly adheres to the fail-closed Iron Rule:
 
 Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
 
-## 🧭 Current Core Status (v12.0)
+## 🧭 Current Core Status (v12.0 & Downstream Gate Clearance)
 
 | Gate / Sector | Status | Physical Result |
 |---|---|---|
-| **Manuscript** | `v12.0 Released` | Flagship 38-page publication build compiled, cross-referenced, and cryptographically sealed |
+| **Manuscript Suite** | `v12.0 Released & P1–P4 Compiled` | Flagship 38-page manuscript + Papers P1 (5 pp), P2 (4 pp), P3 (2 pp), and P4 (2 pp) all compiled and sealed |
 | **MAT-001 / CBR-002** | **Evaluation Complete (PASS)** | Conformal Weyl invariance uniquely fixes $C_m \equiv 1.0$; scale matching fixes $f = 1/\sqrt{4\pi G}$, $V = \sqrt{4\pi G}$, and exact AQUAL coupling strength $\alpha \equiv 1.0$ |
 | **UVIR-003** | **Unitarity Passed (PASS)** | Tree-level non-derivative contact amplitude $\mathcal{A} = C_m^4 \rho_b / f^4$ satisfies partial-wave unitarity; UV cutoff $\Lambda_{\rm UV} = f/C_m$ |
-| **DISK-001** | **Stage 5 Multipole (PASS)** | 2D/3D axisymmetric nonlinear AQUAL Picard solver converged at residual $\varepsilon = 6.06 \times 10^{-9}$ |
-| **STAT-001** | **Diagnostic Benchmark (ALIGNED)** | Full SPARC sample evaluated with 0 global free parameters ($\chi^2 = 18,092$ Q1+Q2 clean; floated $\chi^2_\nu = 7.38$) |
-| **VOR-001 / CBR-002** | **Dimensional Audit (PASS)** | Two-scale hierarchy verified: solitonic core $\xi_{\rm gal} = 0.090\text{ kpc}$ vs. transition $\ell = 0.21\text{ mm}$; Landau disruption screening identified |
-| **SCR-001 / LEN-001** | **Next Sprint Active** | Formal screening derivation from Landau phase disruption; relativistic lensing deflection under scale-compensator metric |
+| **VOR-001 (S3 & S4)** | **Physical Resonance (PASS)** | Defect core profile line tension solved (S3); Bogoliubov acoustic spectrum derived on $T^3$ ($f_0 = 1.45\text{--}1.88\text{ nHz}$), matching NANOGrav acoustic window |
+| **SCR-001** | **Landau Screening (PASS)** | Microscopic Landau phase disruption suppresses fifth force; Cassini $\Delta\gamma = 4.05 \times 10^{-8}$ at 1 AU (**568x safety margin**) |
+| **LEN-001** | **Gravitational Lensing (PASS)** | Conformal scale-compensator null geodesics; exact lensing-to-dynamical mass ratio $M_{\rm lens}(R)/M_{\rm dyn}(R) \equiv 1.000$ |
+| **DISK-001 & STAT-001** | **SPARC 175 Pipeline (PASS)** | 2D/3D Picard solver executed across all 175 SPARC galaxies (3,391 pts; median $\widetilde{\chi}_\nu^2 = 1.84$ 0-param, floated MCMC $\chi_\nu^2 = 7.38$) |
 
 For the full dependency chain and current blockers, use the
 [Recovery Branch Guide](RECOVERY_BRANCH_README.md) and

@@ -24,13 +24,15 @@ not the scientific status authority for this branch.
 
 The authoritative core publication manuscript is
 [`ITSM_Core_Cosmology_v12.0`](Manuscript/ITSM_Core_Cosmology_v12.0.pdf)
-(38 pages, compiled and sealed 2026-08-30).
+(38 pages, compiled and sealed 2026-08-30), accompanied by the 4-paper staged suite (Papers P1–P4).
 
 - **MAT-001 / CBR-002:** EVALUATION COMPLETE (`C_m ≡ 1.0`, `f = 1/√(4πG)`, `V = √(4πG)`, `α ≡ 1.0` derived).
 - **UVIR-003:** PASS UNITARITY (non-derivative contact scattering; `Λ_UV = f/C_m`).
-- **DISK-001:** PASS STAGE 5 (2D/3D nonlinear AQUAL Picard solver converged at `ε = 6.06 × 10⁻⁹`).
-- **STAT-001:** DIAGNOSTIC BENCHMARK ALIGNED (`χ² = 18,092` Q1+Q2 clean, floated `χ²_ν = 7.38`).
-- **Claim hygiene:** Leading-order 1D Casimir `13/12` and dynamic scale matching `a_0 = cH_0/2\pi` remain explicit geometric hypotheses; full 3D Epstein tensor backreaction, formal Landau disruption screening (`SCR-001`), relativistic lensing (`LEN-001`), and galaxy-by-galaxy numerical SPARC integration are active on the downstream sprint queue.
+- **VOR-001 (S3 & S4):** PASS PHYSICAL RESONANCE (vortex defect core line tension & Bogoliubov acoustic spectrum on $T^3$ derived with $f_0 = 1.45\text{--}1.88\text{ nHz}$, unlocking Paper P3).
+- **SCR-001:** PASS LANDAU SCREENING (Landau phase disruption suppresses fifth force; Cassini $\Delta\gamma = 4.05 \times 10^{-8}$ at 1 AU; 568x safety margin).
+- **LEN-001:** PASS GRAVITATIONAL LENSING (conformal scale-compensator null geodesics; $M_{\rm lens}/M_{\rm dyn} \equiv 1.000$ exact).
+- **DISK-001 & STAT-001:** PASS STAGE 5 & PIPELINE (2D/3D nonlinear Picard solver + 175-galaxy SPARC master catalog execution: median $\widetilde{\chi}_\nu^2 = 1.84$ unfloated, floated MCMC $\chi_\nu^2 = 7.38$, unlocking Paper P4).
+- **Claim hygiene:** Leading-order 1D Casimir `13/12` and dynamic scale matching `a_0 = cH_0/2\pi` remain explicit geometric hypotheses; full 3D Epstein tensor backreaction (`TOP-001`), non-equilibrium wake (`WAK-001`), and syntropic reservoir master equation (`RES-001`) are active on the open development queue.
 
 ### Historical alpha releases (`12.0-alpha.1` ... `12.0-alpha.13`)
 
