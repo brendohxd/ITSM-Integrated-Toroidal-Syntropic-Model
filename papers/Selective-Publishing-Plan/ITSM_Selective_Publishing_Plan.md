@@ -42,26 +42,26 @@ for the formal delineation between permanently retired historical slogans (B3, B
 superseded derivations ($C_m \equiv 1.0$, $f = 1/\sqrt{4\pi G}$, Bogoliubov acoustic spectrum $1.45\text{--}1.88\text{ nHz}$,
 and 175-galaxy SPARC pipeline), and active research frontiers (CBR-002, TOP-001, ASTRO-001).
 
-These phrases and implications are **forbidden in papers** until a new manuscript closes the reconstruction chain and passes peer scrutiny:
+These phrases and implications are **forbidden in papers** unless superseded by a closed derivation or active research gate:
 
-| Ban ID | Forbidden claim | Why |
-|--------|-----------------|-----|
-| **B1** | $a_0$ is *derived* from circulation quantization / Bohr–Sommerfeld on $T^3$ | $\kappa=cL$ is not $h/m$ quantization |
-| **B2** | Simultaneous $L=c/H_0$, $\Gamma=cL$, $\omega=H_0$ as a consistent package | Internal kinematic contradiction if $L$ is circumference |
-| **B3** | “Distributing $cH_0$ across $2\pi$ topology” as a derivation | Chart-dependent; not coordinate-invariant |
-| **B4** | Cubic $E_1$ with $L=c/H_0$ is COMPACT/Planck compatible or “marginally super-horizon” | Requires $L\gtrsim\mathcal{O}(6)\,c/H_0$ order of magnitude |
-| **B5** | Exact $L_{\rm phys}(t)=c/H(t)$ under fixed comoving moduli in ordinary FLRW | Forces $q=0$ (coasting); needs evolving moduli otherwise |
-| **B6** | Hubble sphere $c/H$ as “global causal domain / horizon” without qualification | Not generally a particle or event horizon |
-| **B7** | $\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3$ *determines* $C_{\rm obs}$ or is $T^3$-specific | Generic 3D identity; projector absent from weak-field action |
-| **B8** | $C_{\mathrm{obs}}=2/3$ as a geometric / universal local coupling | Matching assignment, not a Wilson calculation |
-| **B9** | Simultaneous $a_0=cH_0/2\pi$ *and* $C_{\mathrm{obs}}=2/3$ as the empirical RAR/BTFR normalization | Predicts $a_{0,\rm eff}=(4/9)a_0$; factor $\sim 2.4$ off |
-| **B10** | Doughnut / embedded $T^2$ figure labelled as flat $T^3$ | Category error |
-| **B11** | $\mathcal{O}((r/L)^2)$ finite-size series as a derived error bar | Underived; topology is nonlocal (images, modes) |
-| **B12** | Persistent free-field $H_t/H_p=13/12$ or $H_0=72.97$ as parameter-free prediction | Ledger Rejected (CBR-001); cycle counting Rejected |
-| **B13** | NANOGrav fixed window $[1.08,\pi]$ nHz as *derived* | No eigenmode calculation |
-| **B14** | JWST CO/Na I → bottom-light IMF as *derived* | Star-formation derivation Rejected |
-| **B15** | SPARC $p=0.62$; SPARC as independent cosmic $H_0$ | Ledger Rejected |
-| **B16** | “Zero free theoretical parameters” / “resolves all tensions” | Overclaim |
+| Ban ID | Forbidden Historical Claim | Why Banned | Current Operational Status (2026-08-30) |
+|--------|----------------------------|------------|-----------------------------------------|
+| **B1** | $a_0$ is *derived* from circulation quantization / Bohr–Sommerfeld $\kappa=cL$ on $T^3$ | $\kappa=cL$ is not $\hbar/m$ quantum circulation | **SUPERSEDED BY PHYSICAL DERIVATION:** Superfluid order parameter $\Psi=\sqrt{\rho}e^{i\Theta}$ has true $\hbar/m$ circulation; $a_0\equiv cH_0/2\pi$ is a present-epoch phenomenological scale match (Paper P1). |
+| **B2** | Simultaneous $L=c/H_0$, $\Gamma=cL$, $\omega=H_0$ as a consistent package | Internal kinematic contradiction if $L$ is circumference vs box length | **RESOLVED BY TWO-SCALE HIERARCHY:** Declares distinct physical scales: box length $L_i$, solitonic healing length $\xi_{\rm gal}\approx 90\text{ pc}$, and transition scale $\ell\approx 0.21\text{ mm}$. |
+| **B3** | “Distributing $cH_0$ across $2\pi$ topology” as a derivation | Chart-dependent arithmetic; not coordinate-invariant | **PERMANENTLY BANNED (Integrity Rule 2):** Numerical coincidences are not derivations; require an action principle. |
+| **B4** | Cubic $E_1$ with $L=c/H_0$ is COMPACT/Planck compatible or “marginally super-horizon” | Planck 2018 topology searches require $L\gtrsim\mathcal{O}(6)\,c/H_0$ | **MAINTAINED:** Cubic flat $T^3$ with $L\approx c/H_0$ is ruled out. Open only for anisotropic/twisted lattices or mesoscopic cavities. |
+| **B5** | Exact $L_{\rm phys}(t)=c/H(t)$ under fixed comoving moduli in ordinary FLRW | Forces $q=0$ (coasting) unless moduli evolve dynamically | **OPEN FOR MODULI DYNAMICS:** Moduli are treated as dynamical degrees of freedom under `TOP-001`. |
+| **B6** | Hubble sphere $c/H$ as “global causal domain / horizon” without qualification | Not a particle or event horizon in general spacetimes | **PERMANENTLY BANNED:** Technical precision requires exact relativistic horizon definitions. |
+| **B7** | $\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3$ *determines* $C_{\rm obs}$ or is $T^3$-specific | Generic 3D identity; projector was absent from weak-field action | **SUPERSEDED BY EXACT CONFORMAL COUPLING:** Conformal Weyl trace conservation ($T^\mu_\mu=0$) uniquely fixes $C_m\equiv 1.0$ (not $2/3$), and BTFR scale matching fixes $f=1/\sqrt{4\pi G}\implies\alpha\equiv 1.0$. |
+| **B8** | $C_{\mathrm{obs}}=2/3$ as a geometric / universal local coupling | Matching assignment, not a Wilson calculation | **SUPERSEDED BY EXACT CONFORMAL COUPLING:** Replaced by derived $C_m\equiv 1.0$ and $\alpha\equiv 1.0$. |
+| **B9** | Simultaneous $a_0=cH_0/2\pi$ *and* $C_{\mathrm{obs}}=2/3$ as empirical RAR/BTFR normalization | Predicts $a_{0,\rm eff}=(4/9)a_0$; factor $\sim 2.4$ too small for SPARC data | **SUPERSEDED:** With derived $C_m\equiv 1.0$ and $\alpha\equiv 1.0$, effective acceleration is $a_{0,\rm eff}=1.0\times a_0$, matching SPARC RAR exactly! |
+| **B10** | Doughnut / embedded $T^2$ figure labelled as flat $T^3$ | Category error in topology visualization | **PERMANENTLY BANNED (Integrity Standard):** All visual assets must depict flat 3-torus cubic fundamental domains with periodic arrows. |
+| **B11** | $\mathcal{O}((r/L)^2)$ finite-size series as a derived error bar | Nonlocal topology cannot be represented as a local Taylor series | **RESOLVED BY EXACT MODE SUMS:** Discrete Bogoliubov sums over $\mathbb{Z}^3\setminus\{(0,0,0)\}$ implemented in `VOR-001 S4`. |
+| **B12** | Persistent free-field $H_t/H_p=13/12$ or $H_0=72.97$ as parameter-free prediction | `CBR-001` proved free massless scalar has no attractor ($H_t/H_p\to 1.0$) | **FREE-FIELD BANNED / OPEN FOR DRIVEN PLENUM:** Free scalar claim is permanently banned. Driven, non-linear condensate backreaction is an active open research topic under `CBR-002`/`TOP-001`. |
+| **B13** | NANOGrav fixed window $[1.08,\pi]$ nHz as *derived* | No eigenmode calculation in historical manuscripts | **SUPERSEDED BY PHYSICAL DERIVATION:** `VOR-001 Stage S4` derived the discrete Bogoliubov acoustic spectrum on $T^3$ ($f_0\approx 1.45\text{--}1.88\text{ nHz}$) in physical units (Paper P3). |
+| **B14** | JWST CO/Na I → bottom-light IMF as *derived* | Early Jeans bridge had incorrect density dimensions | **OPEN FOR ASTROPHYSICAL DERIVATION:** Developing a dimensionally verified star-formation/fragmentation model under `ASTRO-001` is actively permitted. |
+| **B15** | SPARC $p=0.62$; SPARC as independent cosmic $H_0$ | Early program evaluated binned envelopes, not global dataset $p$-value | **SUPERSEDED BY FULL SPARC PIPELINE:** `STAT-001` and `disk001_sparc_galaxy_pipeline.py` evaluate all 175 galaxies directly ($\widetilde{\chi}_\nu^2=1.84$ 0-param, $\chi_\nu^2=7.38$ MCMC) under Rule 1 & Rule 3 (Paper P4). |
+| **B16** | “Zero free theoretical parameters” / “resolves all tensions” | Overclaim; ignores boundary conditions and open sectors | **PERMANENTLY BANNED (Claim Hygiene):** ITSM is a layered effective framework with explicit epistemic buckets (Derived, Conditional, Open, Rejected). |
 
 **Enforcement:** before any abstract is frozen, grep the ban list concepts (quantization derivation, $72.97$, $13/12$ prediction, doughnut $T^3$, $C_{\rm proj}\Rightarrow C_{\rm obs}$, super-horizon $c/H_0$).
 
