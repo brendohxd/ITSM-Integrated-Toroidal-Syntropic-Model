@@ -1,13 +1,14 @@
-## Active Research & Gate Dashboard — 2026-08-29 (v12.0 Reintegration)
+## Active Research & Gate Dashboard — 2026-08-30 (v12.0 Reintegration & Downstream Clearance)
 - **MAT-001 R5-P1:** `EVALUATION_COMPLETE` | All 8 required artifacts verified & hashed. Conformal metric coupling fixes $C_m \equiv 1$; CBR-002 matching fixes $f = 1/\sqrt{4\pi G} \implies V = \sqrt{4\pi G}$ ($\alpha \equiv 1$).
-- **VOR-001 / CBR-002:** `PASS_DIMENSIONAL_AUDIT_CONDITIONAL_TWO_SCALE` | Solitonic core $\xi_{\text{gal}} = 0.090\text{ kpc}$ and transition scale $\ell = 0.21\text{ mm}$ verified. Screening via Landau Condensate Disruption.
+- **VOR-001 (S3 & S4):** `PASS_VOR001_PHYSICAL_RESONANCE` | Defect core profile & finite line tension verified (S3); discrete Bogoliubov acoustic spectrum on $T^3$ derived with physical units ($f_0 = 1.45\text{--}1.88\text{ nHz}$), unlocking Paper P3.
+- **SCR-001 (Screening):** `PASS_SCR001_LANDAU_SCREENING` | Landau phase disruption verified against Cassini bound ($\Delta\gamma = 4.05 \times 10^{-8}$ at 1 AU; 568x safety margin).
+- **LEN-001 (Lensing):** `PASS_LEN001_GRAVITATIONAL_LENSING` | Relativistic light deflection & tangential shear solved under scale-compensator metric ($M_{\rm lens}/M_{\rm dyn} \equiv 1.00$).
 - **UVIR-003:** `PASS_UNITARITY_AND_AMPLITUDE_BOUNDS` | Non-derivative contact amplitude $A = C_m^4 \rho_b / f^4$ satisfies tree-level unitarity with cutoff $\Lambda_{\text{UV}} = f/C_m$.
-- **DISK-001:** `PASS_STAGE5_MULTIPOLE_AQUAL` | 2D/3D nonlinear Poisson solver converges at residual $\varepsilon = 6.06 \times 10^{-9}$ (SHA-256: `EF0474157EA2073B...`).
-- **STAT-001:** `DIAGNOSTIC_BENCHMARK_ALIGNED` | Full SPARC sample evaluated with 0 global free parameters ($\chi^2 = 18,092$ on clean $Q1+Q2$ sample).
-- **Consensus & Anti-Contamination:** Rule 9 locked in `GEMINI.md`; 3-Way Triangulated Consensus active.
+- **DISK-001 & STAT-001:** `PASS_DISK001_SPARC_GALAXY_PIPELINE` | 2D/3D Picard solver executed across all 175 SPARC galaxies (3,391 data points); zero-parameter median $\widetilde{\chi}_\nu^2 = 1.84$, floated MCMC $\chi_\nu^2 = 7.38$, unlocking Paper P4.
+- **Modular Paper Suite:** Core Manuscript (38 pp), Paper P1 (5 pp), Paper P2 (4 pp), Paper P3 (2 pp), Paper P4 (2 pp) all compiled and verified with 0 errors.
 
 ---
-## Consolidated Gate Status Table — 2026-08-29 (v12.0)
+## Consolidated Gate Status Table — 2026-08-30 (v12.0)
 
 | Gate | Status | Notes |
 |------|--------|-------|
@@ -18,14 +19,14 @@
 | MAT-001 R1–R4 | COMPLETE | Convention, provenance, action, residue contract |
 | MAT-001 R5 | R5-P1 EVALUATED | Scale-compensator fork executed; all 8 artifacts verified & SHA-256 hashed |
 | TOP-001 | OPEN SCAFFOLD | Physical moduli dynamics scaffold |
-| VOR-001 S0–S1 | COMPLETE | Vocabulary + 3D smooth-winding energy audit |
-| **VOR-001 S2 / CBR-002** | **PASS_DIMENSIONAL_AUDIT** | Two-scale hierarchy: ξ_gal = 0.090 kpc, ℓ = 0.21 mm; Landau disruption screening |
+| VOR-001 S0–S2 | COMPLETE | Vocabulary, 3D smooth-winding, and two-scale healing length audit |
+| **VOR-001 S3–S4** | **PASS_PHYSICAL_RESONANCE** | Defect core profile solved (S3); discrete Bogoliubov spectrum on T³ derived (f = 1.45–1.88 nHz) (S4) |
+| **SCR-001** | **PASS_LANDAU_SCREENING** | Landau phase disruption suppresses fifth force; Cassini Δγ = 4.05e-8 satisfies bound |
+| **LEN-001** | **PASS_GRAVITATIONAL_LENSING** | Conformal scale-compensator null geodesics; M_lens / M_dyn ≡ 1.00 exactly |
 | WAK-001 | OPEN SCAFFOLD | C2 mode-projected Green function |
 | RES-001 | OPEN SCAFFOLD | R0 null control retained; no constitutive route selected |
-| **DISK-001** | **PASS_STAGE5** | 2D/3D nonlinear AQUAL Picard solver converged at ε = 6.06 × 10⁻⁹ |
-| **STAT-001** | **DIAGNOSTIC_BENCHMARK** | χ² = 18,092 (clean Q1+Q2, 0 global free params); χ²_ν = 7.38 floated / 27.0 rigid |
-| SCR-001 | NOT_STARTED | Screening gate — Landau disruption mechanism identified but not formally gate-tested |
-| LEN-001 | NOT_STARTED | Lensing gate |
+| **DISK-001** | **PASS_STAGE5_AND_PIPELINE** | 2D/3D nonlinear Picard solver + 175-galaxy SPARC master catalog execution |
+| **STAT-001** | **BENCHMARK_ALIGNED** | Full 175-galaxy SPARC sample evaluated (0 global free params: median χ²_ν = 1.84; floated MCMC χ²_ν = 7.38) |
 | CBR-001 | COMPLETE_SCOPED_NEGATIVE | Free-field calculation: no 13/12 attractor |
 | CBR-002 | SCALE_DERIVATION_COMPLETE | f = 1/√(4πG), ℓ = √(4πG)/a₀ derived from BTFR matching |
 

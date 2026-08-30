@@ -1,0 +1,37 @@
+{
+  "gate": "SCR-001",
+  "label": "SCR-001_LANDAU_SCREENING_CASSINI",
+  "status": "PASS_SCR001_LANDAU_SCREENING",
+  "physics_pass": true,
+  "cassini_bound": 2.3e-05,
+  "earth_orbit_1AU": {
+    "g_N_m_s2": 0.005930262843244523,
+    "unscreened_ratio": 0.00014225045089049848,
+    "screened_ratio": 2.023519077855012e-08,
+    "delta_gamma_predicted": 4.047038155710024e-08,
+    "cassini_compliance": true,
+    "safety_margin_factor": 568.3168558109335
+  },
+  "earth_surface_llr": {
+    "g_N_m_s2": 9.820302293385645,
+    "screened_delta_gamma": 2.4439166211986094e-11,
+    "llr_compliance": true
+  },
+  "checks": [
+    {
+      "id": "SCR.1",
+      "description": "Cassini solar conjunction PPN gamma bound satisfied",
+      "pass": true
+    },
+    {
+      "id": "SCR.2",
+      "description": "Lunar Laser Ranging equivalence principle compliance",
+      "pass": true
+    },
+    {
+      "id": "SCR.3",
+      "description": "Unscreened fifth-force suppression factor > 10^3 in inner solar system",
+      "pass": true
+    }
+  ]
+}

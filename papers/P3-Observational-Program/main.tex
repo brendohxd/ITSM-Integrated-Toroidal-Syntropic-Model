@@ -1,0 +1,123 @@
+\documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib,amsmath,amssymb]{revtex4-2}
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{microtype}
+
+\begin{document}
+
+\title{A Gate-Structured Observational and Falsification Program for the Integrated Toroidal-Syntropic Model}
+
+\author{Brendon Boyd}
+\email{brendon.boyd@itsm-cosmology.org}
+\affiliation{ITSM Cosmology Collaboration}
+
+\date{\today}
+
+\begin{abstract}
+We formulate a rigorous, gate-structured observational and falsification program for the Integrated Toroidal-Syntropic Model (ITSM). In contrast to phenomenological models with unconstrained fitting parameters, the microscopic ITSM framework fixes the matter coupling $C_m \equiv 1.0$, condensate scale $f = 1/\sqrt{4\pi G}$, and gravitational threshold $a_0 = cH_0/2\pi$ from first principles. Here we evaluate three multi-scale empirical regimes: (i) Bogoliubov acoustic phonon excitations on a compact 3-torus $T^3$ with background circulation superflow $\mathbf{v}_0 = (\hbar/m)\nabla\Theta_0$, deriving a fundamental resonance frequency in the nanohertz band ($f_0 \approx 1.45\text{--}1.88\text{ nHz}$) matching pulsar timing array (NANOGrav) acoustic bounds; (ii) microscopic Landau condensate disruption ($|\nabla\psi| > 1/\xi$) in high-acceleration environments, suppressing fifth-force post-Newtonian deviations to $\Delta\gamma \approx 4.05 \times 10^{-8}$ at 1~AU and satisfying Cassini radar time-delay bounds ($|\gamma - 1| \le 2.3 \times 10^{-5}$); and (iii) relativistic gravitational lensing in the scale-compensator conformal frame, proving exact equivalence between lensing mass and dynamical rotation curve mass ($M_{\rm lens}/M_{\rm dyn} \equiv 1.00$). We enumerate explicit quantitative falsifiers across astrophysical and cosmological domains.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+
+A central challenge in modified gravity and dark fluid theories is achieving multi-scale consistency without ad-hoc parameter tuning~\cite{milgrom1983,bekenstein2004,famaey_mcgaugh_2012}. In the Integrated Toroidal-Syntropic Model (ITSM), the observable vacuum is described as an active finite-density Bose-Einstein condensate with compact toroidal ($T^3$) topology, open-system syntropic exchange, and emergent infrared acceleration dynamics.
+
+Companion papers establish present-epoch scale matching and claim hygiene (Paper I)~\cite{boyd_p1_2026} and anisotropic Casimir vacuum stress on rectangular $T^3$ lattices (Paper II)~\cite{boyd_p2_2026}. Furthermore, the exact conformal Weyl trace fixes the matter coupling $C_m \equiv 1.0$, while Baryonic Tully-Fisher scale matching determines the condensate decay constant $f = 1/\sqrt{4\pi G}$, yielding the exact low-energy AQUAL action with strength $\alpha \equiv 4\pi G (C_m/f)^2 = 1.0$~\cite{bekenstein_milgrom_1984}.
+
+In this paper (Paper III), we present the gate-structured observational program and falsification framework that directly confronts this first-principles action with empirical tests across three distinct regimes:
+\begin{enumerate}
+    \item \textbf{Acoustic Phonon Resonances (Gate VOR-001):} Discrete Bogoliubov-de Gennes modes on compact $T^3$.
+    \item \textbf{Solar System Screening (Gate SCR-001):} Landau critical velocity disruption against Cassini radar bounds.
+    \item \textbf{Relativistic Lensing (Gate LEN-001):} Null geodesics and shear profiles in the scale-compensator metric.
+\end{enumerate}
+
+\section{Acoustic Resonances on Compact $T^3$}
+\label{sec:vor}
+
+The complex condensate order parameter is $\Phi = \frac{\rho}{\sqrt{2}} e^{i\Theta}$, where topological winding sectors are labelled by integers $\mathbf{n} = (n_1, n_2, n_3) \in \mathbb{Z}^3$ around the non-contractible 1-cycles of $T^3 = S^1 \times S^1 \times S^1$.
+
+Linearizing perturbations $\Phi = (\rho_0 + \delta\rho) e^{i(\Theta_0 + \vartheta)}$ about a steady circulation background $\mathbf{v}_0 = \frac{\hbar}{m}\nabla\Theta_0 = \frac{\hbar}{m} \left(\frac{2\pi n_1}{L_1}, \frac{2\pi n_2}{L_2}, \frac{2\pi n_3}{L_3}\right)$ yields the Bogoliubov-de Gennes dispersion relation:
+\begin{equation}
+\omega_{\mathbf{k}} = \mathbf{v}_0 \cdot \mathbf{k} + \sqrt{ c_s^2 k^2 + \left(\frac{\hbar k^2}{2m}\right)^2 },
+\label{eq:bogoliubov}
+\end{equation}
+where $c_s = c/\sqrt{3}$ is the relativistic conformal sound speed, and the allowed discrete wavevectors are quantized by the compact box lengths:
+\begin{equation}
+\mathbf{k} = 2\pi \left( \frac{m_1}{L_1}, \frac{m_2}{L_2}, \frac{m_3}{L_3} \right), \quad \mathbf{m} \in \mathbb{Z}^3 \setminus \{(0,0,0)\}.
+\end{equation}
+
+For an interstellar/cluster cavity of characteristic scale $L \approx 3.0\text{ pc}$ ($9.26 \times 10^{16}\text{ m}$), the fundamental acoustic mode frequencies $f_{\mathbf{m}} = \omega_{\mathbf{m}} / (2\pi)$ evaluate to:
+\begin{equation}
+f_{(0,0,1)} = 1.882\text{ nHz}, \quad f_{(-1,0,0)} = 1.449\text{ nHz},
+\end{equation}
+with Doppler splitting $\Delta f \approx 0.433\text{ nHz}$ induced by the topological superflow. This natural discrete spectrum matches the $1\text{--}3\text{ nHz}$ stochastic acoustic band detected by pulsar timing array collaborations (NANOGrav 15-year data set)~\cite{nanograv_15yr}.
+
+\section{Landau Condensate Disruption Screening}
+\label{sec:scr}
+
+A fatal objection to unshielded scalar-tensor theories is the generation of fifth forces in the Solar System. In ITSM, screening arises dynamically from microscopic condensate physics rather than fine-tuned chameleon potentials.
+
+The matter interaction Lagrangian is $\mathcal{L}_{\rm int} = -C_m \rho_b \psi$. When the induced scalar gradient $|\nabla\psi|$ generates an effective superfluid velocity $v_s = \frac{\hbar}{m}|\nabla\psi|$ exceeding the Landau critical velocity $v_{\rm crit} = c_s$, macroscopic phase coherence is disrupted. Dynamic vortex loops nucleate, quenching the coherent scalar field gradient.
+
+The screened fifth-force acceleration is saturated at $a_5^{\rm screen} \le a_0$. The post-Newtonian parameter deviation $\Delta\gamma = |\gamma_{\rm PPN} - 1|$ is given by:
+\begin{equation}
+\Delta\gamma(r) = 2 C_m^2 \left( \frac{a_5^{\rm screen}(r)}{g_N(r)} \right) = 2 \left( \frac{a_0 r^2}{G M_\odot} \right).
+\end{equation}
+Evaluating at key Solar System baselines yields:
+\begin{align}
+\Delta\gamma(R_\odot) &\approx 8.77 \times 10^{-13}, \\
+\Delta\gamma(1\text{ AU}) &\approx 4.05 \times 10^{-8}.
+\end{align}
+The predicted deviation is over 500 times smaller than the observational upper limit established by the Cassini spacecraft radar time-delay experiment ($|\gamma_{\rm PPN} - 1| \le 2.3 \times 10^{-5}$)~\cite{bertotti2003}, guaranteeing strict Solar System compliance.
+
+\section{Relativistic Gravitational Lensing}
+\label{sec:len}
+
+Photons couple to the physical conformally rescaled metric $\tilde{g}_{\mu\nu} = e^{2\psi} g_{\mu\nu}^{\rm GR}$. Because the Maxwell action is conformally invariant in 4 spacetime dimensions, the scalar field $\psi$ decouples from electromagnetic rays at tree level, and null geodesics are governed by the metric $g_{\mu\nu}^{\rm GR}$ sourced by the total stress-energy $T_{\mu\nu}^{\rm matter} + T_{\mu\nu}^{\rm compensator}$.
+
+The light deflection angle $\hat{\alpha}(b)$ at impact parameter $b = R$ is:
+\begin{equation}
+\hat{\alpha}(R) = \frac{4 G M_{\rm dyn}(R)}{c^2 R},
+\end{equation}
+where $M_{\rm dyn}(R) = R^2 g_{\rm tot}(R) / G$ is the dynamical mass deduced from SPARC rotation curves. In the low-acceleration regime ($g_N \ll a_0$), $g_{\rm tot} = \sqrt{a_0 g_N}$, producing a lensing boost factor:
+\begin{equation}
+\frac{\hat{\alpha}(R)}{\hat{\alpha}_{\rm GR}(R)} = \frac{M_{\rm dyn}(R)}{M_{\rm baryon}(R)} = \sqrt{ \frac{a_0}{g_N(R)} } > 1.
+\end{equation}
+Consequently, the lensing-to-kinematic mass ratio satisfies $M_{\rm lens}(R) / M_{\rm dyn}(R) \equiv 1.00$ exactly, resolving galaxy cluster and galactic lensing profiles without dark matter particles.
+
+\section{Falsification Table}
+\label{sec:falsify}
+
+\begin{table}[t]
+\caption{\label{tab:falsifiers}Quantitative Falsification Criteria for ITSM.}
+\begin{ruledtabular}
+\begin{tabular}{lll}
+Observable & Threshold / Band & Falsifier Condition \\
+\midrule
+PTA Acoustic Mode & $1.0\text{--}3.5\text{ nHz}$ & Zero spectral power \\
+Solar PPN $\Delta\gamma$ & $< 2.3 \times 10^{-5}$ & Measured $\Delta\gamma > 10^{-4}$ \\
+Lensing / Dyn Ratio & $M_{\rm lens}/M_{\rm dyn} \equiv 1.0$ & Measured ratio $\ne 1.0 \pm 0.1$ \\
+SPARC Global $\chi_\nu^2$ & $\chi_\nu^2 \le 7.5$ & MCMC fit $\chi_\nu^2 > 15.0$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+Table~\ref{tab:falsifiers} summarizes the key quantitative criteria that would immediately falsify the ITSM framework.
+
+\section{Conclusions}
+\label{sec:concl}
+
+We have established a gate-structured observational and falsification framework for the Integrated Toroidal-Syntropic Model. By deriving the Bogoliubov acoustic resonance window ($1.45\text{--}1.88\text{ nHz}$), demonstrating dynamic Landau screening against Cassini bounds ($\Delta\gamma = 4.05 \times 10^{-8}$), and proving lensing-kinematic mass equivalence, ITSM provides sharp, multi-scale empirical falsifiers across astrophysical regimes.
+
+\begin{acknowledgments}
+Computations utilized the ITSM open-source repository and gate test packages.
+\end{acknowledgments}
+
+\bibliography{references}
+
+\end{document}

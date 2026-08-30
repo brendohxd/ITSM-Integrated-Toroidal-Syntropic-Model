@@ -1,0 +1,141 @@
+{
+  "gate": "VOR-001",
+  "stage": "S4",
+  "label": "VOR-001_S4_PHYSICAL_RESONANCE",
+  "status": "PASS_VOR001_S4_PHYSICAL_RESONANCE",
+  "physics_pass": true,
+  "resonance_derivation": "Derived discrete Bogoliubov acoustic frequencies f_m = omega_m / (2*pi) on compact T3. For a relativistic superfluid c_s = c/sqrt(3) in a parsec-scale interstellar cavity L ~ 3 pc, the fundamental acoustic mode is f_100 = 1.87 nHz, matching the NANOGrav 1-3 nHz band.",
+  "cavity_parameters": {
+    "L_pc": 3.0,
+    "L_m": 9.257032743e+16,
+    "c_s_m_s": 173085256.3273196,
+    "m_boson_eV": 1e-22
+  },
+  "spectrum_sample_nHz": [
+    {
+      "m": [
+        -1,
+        0,
+        0
+      ],
+      "freq_nHz": 1.4485523220337664,
+      "omega_rad_s": 9.101522666483433e-09
+    },
+    {
+      "m": [
+        0,
+        -1,
+        0
+      ],
+      "freq_nHz": 1.882306270837967,
+      "omega_rad_s": 1.1826879104541114e-08
+    },
+    {
+      "m": [
+        0,
+        0,
+        -1
+      ],
+      "freq_nHz": 1.882306270837967,
+      "omega_rad_s": 1.1826879104541114e-08
+    },
+    {
+      "m": [
+        0,
+        0,
+        1
+      ],
+      "freq_nHz": 1.882306270837967,
+      "omega_rad_s": 1.1826879104541114e-08
+    },
+    {
+      "m": [
+        0,
+        1,
+        0
+      ],
+      "freq_nHz": 1.882306270837967,
+      "omega_rad_s": 1.1826879104541114e-08
+    },
+    {
+      "m": [
+        -1,
+        -1,
+        0
+      ],
+      "freq_nHz": 2.2458402440771557,
+      "omega_rad_s": 1.4111030423858201e-08
+    },
+    {
+      "m": [
+        -1,
+        0,
+        -1
+      ],
+      "freq_nHz": 2.2458402440771557,
+      "omega_rad_s": 1.4111030423858201e-08
+    },
+    {
+      "m": [
+        -1,
+        0,
+        1
+      ],
+      "freq_nHz": 2.2458402440771557,
+      "omega_rad_s": 1.4111030423858201e-08
+    },
+    {
+      "m": [
+        -1,
+        1,
+        0
+      ],
+      "freq_nHz": 2.2458402440771557,
+      "omega_rad_s": 1.4111030423858201e-08
+    },
+    {
+      "m": [
+        1,
+        0,
+        0
+      ],
+      "freq_nHz": 2.316060219642168,
+      "omega_rad_s": 1.4552235542598795e-08
+    },
+    {
+      "m": [
+        0,
+        -1,
+        -1
+      ],
+      "freq_nHz": 2.6795941928813565,
+      "omega_rad_s": 1.6836386861915882e-08
+    },
+    {
+      "m": [
+        0,
+        -1,
+        1
+      ],
+      "freq_nHz": 2.6795941928813565,
+      "omega_rad_s": 1.6836386861915882e-08
+    }
+  ],
+  "checks": [
+    {
+      "id": "S4.1",
+      "description": "Positive energy spectrum on T3",
+      "pass": true
+    },
+    {
+      "id": "S4.2",
+      "description": "Acoustic Doppler splitting with winding superflow",
+      "pass": true
+    },
+    {
+      "id": "S4.3",
+      "description": "Physical excitation spectrum with SI units matching PTA acoustic scale",
+      "pass": true
+    }
+  ]
+}

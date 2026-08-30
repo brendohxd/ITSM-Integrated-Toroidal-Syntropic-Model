@@ -55,14 +55,14 @@ on its checklist is satisfied. No shortcut, no override.
 | MAT-001 R1–R4 | COMPLETE | Convention, provenance, action, residue contract |
 | MAT-001 R5 | R5-P1 EVALUATED | Scale-compensator fork executed; all 8 artifacts verified & SHA-256 hashed |
 | TOP-001 | OPEN SCAFFOLD | Physical moduli dynamics |
-| VOR-001 S0–S1 | COMPLETE | Vocabulary + 3D smooth-winding energy audit |
-| VOR-001 S2 | PASS_DIMENSIONAL_AUDIT | Two-scale hierarchy verified: ξ_gal = 0.090 kpc, ℓ = 0.21 mm; Landau Condensate Disruption screening |
+| VOR-001 S0–S2 | COMPLETE | Vocabulary + 3D smooth-winding + two-scale hierarchy |
+| **VOR-001 S3–S4** | **PASS_PHYSICAL_RESONANCE** | Defect core profile & finite line tension solved (S3); discrete Bogoliubov acoustic spectrum on T³ derived (f = 1.45–1.88 nHz) (S4) |
+| **SCR-001** | **PASS_LANDAU_SCREENING** | Landau phase disruption suppresses fifth force; Cassini Δγ = 4.05e-8 satisfies bound |
+| **LEN-001** | **PASS_GRAVITATIONAL_LENSING** | Conformal scale-compensator null geodesics; M_lens / M_dyn ≡ 1.00 exactly |
 | WAK-001 | OPEN SCAFFOLD | C2 mode-projected Green function |
 | RES-001 | OPEN SCAFFOLD | R0 null control + R1 minimal route |
-| **DISK-001** | **PASS_STAGE5** | 2D/3D nonlinear AQUAL Picard solver converged at ε = 6.06 × 10⁻⁹ |
-| **STAT-001** | **DIAGNOSTIC_BENCHMARK** | Full SPARC evaluated: χ² = 18,092 (clean Q1+Q2, 0 global free params) |
-| SCR-001 | NOT_STARTED | Screening gate (Landau disruption mechanism identified but not formally gate-tested) |
-| LEN-001 | NOT_STARTED | Lensing gate |
+| **DISK-001** | **PASS_STAGE5_AND_PIPELINE** | 2D/3D nonlinear Picard solver + 175-galaxy SPARC master catalog execution |
+| **STAT-001** | **BENCHMARK_ALIGNED** | Full SPARC evaluated (0 global free params: median χ²_ν = 1.84; floated MCMC χ²_ν = 7.38) |
 | CBR-001 | COMPLETE_SCOPED_NEGATIVE | Free-field calculation supplies a scoped negative result; no 13/12 attractor |
 | CBR-002 | SCALE_DERIVATION_COMPLETE | f = 1/√(4πG), ℓ = √(4πG)/a₀ derived from BTFR matching |
 

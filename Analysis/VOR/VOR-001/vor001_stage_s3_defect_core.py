@@ -81,7 +81,7 @@ def main():
         r_safe = np.where(r == 0, 1e-10, r)
         energy_density = 0.5 * sol.y[1]**2 + 0.5 * (rho**2) / (r_safe**2) + (lam/4.0)*(rho**2 - v**2)**2
         # Integrate energy density 2 pi r dr
-        total_energy = np.trapz(energy_density * 2 * np.pi * r, r)
+        total_energy = np.trapezoid(energy_density * 2 * np.pi * r, r)
         
         if total_energy > 0 and not np.isnan(total_energy):
             s3_1_pass = True
