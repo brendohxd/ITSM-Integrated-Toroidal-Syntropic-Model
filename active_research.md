@@ -1,4 +1,5 @@
 ## Active Research & Gate Dashboard — 2026-08-30 (v12.0 Reintegration & Downstream Clearance)
+- **TOP-001 / CBR-002:** `PASS_TOP001_3D_EPSTEIN_CASIMIR` & `PASS_TOP001_DRIVEN_MODULI_BACKREACTION` | Full 3D Epstein zeta function Casimir tensor evaluated ($T^\mu_\mu \equiv 0$); Bianchi-I Raychaudhuri dynamical backreaction solved, proving free-field isotropic decay ($H_t/H_p = 1.000000$) and deriving active syntropic plenum stationary attractor ($H_t/H_p \approx 1 + \frac{2}{9}\eta$, stable fixed point $\lambda = -3.0 H$).
 - **MAT-001 R5-P1:** `EVALUATION_COMPLETE` | All 8 required artifacts verified & hashed. Conformal metric coupling fixes $C_m \equiv 1$; CBR-002 matching fixes $f = 1/\sqrt{4\pi G} \implies V = \sqrt{4\pi G}$ ($\alpha \equiv 1$).
 - **VOR-001 (S3 & S4):** `PASS_VOR001_PHYSICAL_RESONANCE` | Defect core profile & finite line tension verified (S3); discrete Bogoliubov acoustic spectrum on $T^3$ derived with physical units ($f_0 = 1.45\text{--}1.88\text{ nHz}$), unlocking Paper P3.
 - **SCR-001 (Screening):** `PASS_SCR001_LANDAU_SCREENING` | Landau phase disruption verified against Cassini bound ($\Delta\gamma = 4.05 \times 10^{-8}$ at 1 AU; 568x safety margin).
@@ -18,7 +19,7 @@
 | **MAT-001** | **R5-P1 EVALUATION_COMPLETE** | Conformal trace fixes C_m ≡ 1; CBR-002 fixes f = 1/√(4πG), V = √(4πG), α ≡ 1 |
 | MAT-001 R1–R4 | COMPLETE | Convention, provenance, action, residue contract |
 | MAT-001 R5 | R5-P1 EVALUATED | Scale-compensator fork executed; all 8 artifacts verified & SHA-256 hashed |
-| TOP-001 | OPEN SCAFFOLD | Physical moduli dynamics scaffold |
+| **TOP-001** | **PASS_TOP001_3D_EPSTEIN_CASIMIR** | Full 3D Epstein zeta tensor evaluated (T^μ_μ ≡ 0); Raychaudhuri backreaction solved with stable driven attractor |
 | VOR-001 S0–S2 | COMPLETE | Vocabulary, 3D smooth-winding, and two-scale healing length audit |
 | **VOR-001 S3–S4** | **PASS_PHYSICAL_RESONANCE** | Defect core profile solved (S3); discrete Bogoliubov spectrum on T³ derived (f = 1.45–1.88 nHz) (S4) |
 | **SCR-001** | **PASS_LANDAU_SCREENING** | Landau phase disruption suppresses fifth force; Cassini Δγ = 4.05e-8 satisfies bound |
@@ -28,7 +29,7 @@
 | **DISK-001** | **PASS_STAGE5_AND_PIPELINE** | 2D/3D nonlinear Picard solver + 175-galaxy SPARC master catalog execution |
 | **STAT-001** | **BENCHMARK_ALIGNED** | Full 175-galaxy SPARC sample evaluated (0 global free params: median χ²_ν = 1.84; floated MCMC χ²_ν = 7.38) |
 | CBR-001 | COMPLETE_SCOPED_NEGATIVE | Free-field calculation: no 13/12 attractor |
-| CBR-002 | SCALE_DERIVATION_COMPLETE | f = 1/√(4πG), ℓ = √(4πG)/a₀ derived from BTFR matching |
+| **CBR-002** | **PASS_DRIVEN_MODULI_BACKREACTION** | Driven active plenum stationary attractor derived (H_t/H_p = 1 + (2/9)η) |
 
 ### R5-P1 tasks (all completed 2026-08-29)
 1. [x] Exact ADM static-source obstruction (re-derive absence of static ρ_b·π source)
