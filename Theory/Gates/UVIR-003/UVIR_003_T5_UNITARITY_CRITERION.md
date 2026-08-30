@@ -1,4 +1,7 @@
 # Gate UVIR-003: Physical Scattering Amplitude and Unitarity Bound
+
+> [!CAUTION]
+> **QUARANTINED ASSUMED-AMPLITUDE DRAFT (G0, 2026-08-25).** The unknown order-one coefficient is assumed, not derived; the quoted `2.6` scale is therefore not an exact physical cutoff and this file does not close UVIR-003.
 ## Task 5: Unitarity Criterion and the UV Cutoff Scale
 
 ### 1. Introduction

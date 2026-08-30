@@ -128,6 +128,13 @@ In the S1 limit (V_eff = (lambda/4)(rho^2 - v^2)^2, rho_0 = v):
 | **S2-T05** | Isotropy covariance (isotropic box) | E(n1,n2,n3) invariant under permutations for L1=L2=L3 | Relative deviation < 1e-10 |
 | **S2-T06** | Amplitude variation sourced by winding | For large winding norm, rho_0(n) < v (winding suppresses amplitude) | rho_0(n) monotonically decreasing in |n| for isotropic box |
 
+**Hostile-audit result (2026-08-25):** retain T02's preregistered criterion as
+written. Its exact deviation at `lambda=100, omega=1, v=1` is `1/200 = 0.5%`,
+so T02 is `FAIL_PREREGISTERED_NUMERICAL_CRITERION`. The earlier runner's
+`lambda=100000` substitution did not test this row. T01 and T03-T06 survive
+only with the exact broken/restored branch qualification recorded in the
+joint VOR/TOP S2 audit.
+
 ---
 
 ## 5. What this stage does NOT address

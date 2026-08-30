@@ -1,4 +1,7 @@
 # Gate MAT-001: R5-P1 Scale-Compensator Fork Task 4
+
+> [!CAUTION]
+> **QUARANTINED MATHEMATICAL DRAFT (G0, 2026-08-25).** The displayed normalization produces `sqrt(G M a_0)/r`, not the claimed extra `sqrt(2)`, and no Solar-System PPN result follows. This artifact is not gate evidence.
 ## Background Equations and Constrained Scalar Reduction
 
 ### 1. Introduction

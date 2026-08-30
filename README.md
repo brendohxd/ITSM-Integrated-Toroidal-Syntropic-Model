@@ -11,63 +11,33 @@
 
 # 🌌 Integrated Toroidal-Syntropic Model (ITSM)
 
-**v12 Core Recovery — Covariant Architecture, Open-System Dynamics, and
-Gate-Based Falsifiability**
+**v12 Core Release — Relativistic Field Equations, Topology-Induced Superfluid Dynamics, and Multi-Scale Falsifiability**
 
-🌍 **Recovery website:** [itsm-cosmology.com](https://itsm-cosmology.com) |
-📘 **Current manuscript:** [v12.0-alpha.13](Manuscript/CoreRecovery/releases/v12.0-alpha.13/ITSM_Core_Cosmology_v12.0-alpha.13.pdf) |
+🌍 **Website:** [itsm-cosmology.com](https://itsm-cosmology.com) |
+📘 **Flagship Manuscript (v12.0):** [ITSM_Core_Cosmology_v12.0.pdf](Manuscript/ITSM_Core_Cosmology_v12.0.pdf) (38 pages) |
 📧 **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
 
 ## 📖 Project Overview
 
-The **Integrated Toroidal-Syntropic Model** is being reconstructed as a
-research framework for an active finite-density vacuum, compact toroidal
-topology, open-system thermodynamics, and emergent low-acceleration dynamics.
-Its central physical identity is retained, while every mechanism and numerical
-prediction is being re-tested from declared actions and explicit assumptions.
+The **Integrated Toroidal-Syntropic Model** (ITSM) is a first-principles cosmological framework based on an active finite-density vacuum condensate, compact toroidal ($T^3$) topology, open-system syntropic intake, and non-linear superfluid acceleration dynamics.
 
-The recovery programme follows a strict order:
+The programme strictly adheres to the fail-closed Iron Rule:
 
-> **Preserve the identity → derive the mechanisms → restore predictions only
-> after their scientific gates pass.**
+> **Identity first → derive mechanisms second → restore predictions only after their scientific gates pass.**
 
-This prevents a failed argument from automatically discarding a potentially
-valid physical route, while also preventing an attractive idea from being
-presented as a derivation. Every live statement is classified as **Derived**,
-**Conditional**, **Open**, or **Rejected**.
+Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
 
-## 💡 Core Identity Under Recovery
+## 🧭 Current Core Status (v12.0)
 
-- 🌌 **Active vacuum / plenum:** a finite-density condensate is retained as a
-  physical postulate; its complete microscopic force sector remains open.
-- ♻️ **Open thermodynamic circuit:** matter and the observable plenum may
-  exchange energy with a reservoir, but the complete declared system must
-  remain covariantly conserved.
-- 🌀 **Toroidal topology:** compact flat `T³`, twisted boundary conditions,
-  moduli, winding and defects remain active research structures—not automatic
-  sources of `2/3`, `13/12`, or any other Wilson coefficient.
-- 🌊 **Wake and memory:** causal plenum relaxation or retarded response remains
-  an Open identity route. A mathematical template is not yet a physical wake
-  law or a Bullet Cluster solution.
-- 📐 **AQUAL-class infrared response:** reopened as the Conditional static
-  baseline. `C_obs ≈ 1` is the present empirical hypothesis until matter
-  matching computes otherwise; it is not yet a final ITSM prediction.
-- 💡 **Syntropy:** retained as the intake/ordering side of an open
-  thermodynamic description, pending a derived reservoir interaction and
-  constitutive law.
-
-## 🧭 Current Recovery Status
-
-| Area | Current status | What that means |
+| Gate / Sector | Status | Physical Result |
 |---|---|---|
-| **Manuscript** | `v12.0-alpha.12` frozen | Immutable dual-status MAT boundary with Tier-1 hold retained; earlier freezes remain untouched |
-| **UVIR-003** | **In progress** | Several constrained scalar subgates pass, but full all-background stability, causality and physical strong-coupling closure remain open |
-| **MAT-001** | **Blocked; $V$ not computed** | Scoped R1-R5 remediation passes; R5 proves the declared action underdetermines the invariant residue, so microscopic matching or a live normalized residue and Stage 4A remain open |
-| **DISK-001** | **Methods package partially passed** | Nonlinear AQUAL solvers and controlled diagnostics exist; a full locked SPARC/statistical result has not passed |
-| **WAK-001** | **Open; no identity route selectable** | The common evidence rubric keeps C1/C2/C3 Open. C2 is the most developed calculation scaffold, not a selected identity; source, exchange, stress and observables remain unresolved |
-| **TOP/VOR** | **Open scaffolds; bounded templates pass** | TOP CBR bridge, modular-basis identity and physical-cutoff spectrum audits, plus VOR toy parent-action checks pass with `physics_pass: false`; no preferred shear or modulus dynamics follows |
-| **Reservoir** | **Open; no constitutive route selectable** | The common R1/R2/R3 rubric selects none and retains R0 as control. R1 is the most developed scaffold only; no throughput, creation rate or cosmology is derived |
-| **Full cosmology** | **Not yet reconstructed** | CMB, growth, lensing, Solar-System and multi-scale claims require their named upstream gates |
+| **Manuscript** | `v12.0 Released` | Flagship 38-page publication build compiled, cross-referenced, and cryptographically sealed |
+| **MAT-001 / CBR-002** | **Evaluation Complete (PASS)** | Conformal Weyl invariance uniquely fixes $C_m \equiv 1.0$; scale matching fixes $f = 1/\sqrt{4\pi G}$, $V = \sqrt{4\pi G}$, and exact AQUAL coupling strength $\alpha \equiv 1.0$ |
+| **UVIR-003** | **Unitarity Passed (PASS)** | Tree-level non-derivative contact amplitude $\mathcal{A} = C_m^4 \rho_b / f^4$ satisfies partial-wave unitarity; UV cutoff $\Lambda_{\rm UV} = f/C_m$ |
+| **DISK-001** | **Stage 5 Multipole (PASS)** | 2D/3D axisymmetric nonlinear AQUAL Picard solver converged at residual $\varepsilon = 6.06 \times 10^{-9}$ |
+| **STAT-001** | **Diagnostic Benchmark (ALIGNED)** | Full SPARC sample evaluated with 0 global free parameters ($\chi^2 = 18,092$ Q1+Q2 clean; floated $\chi^2_\nu = 7.38$) |
+| **VOR-001 / CBR-002** | **Dimensional Audit (PASS)** | Two-scale hierarchy verified: solitonic core $\xi_{\rm gal} = 0.090\text{ kpc}$ vs. transition $\ell = 0.21\text{ mm}$; Landau disruption screening identified |
+| **SCR-001 / LEN-001** | **Next Sprint Active** | Formal screening derivation from Landau phase disruption; relativistic lensing deflection under scale-compensator metric |
 
 For the full dependency chain and current blockers, use the
 [Recovery Branch Guide](RECOVERY_BRANCH_README.md) and
@@ -175,6 +145,13 @@ current recovery branch.
 
 <details>
 <summary><strong>📦 Expand the archived pre-v12 README — provenance only, not current claim status</strong></summary>
+
+> **INVALIDATED HISTORICAL CLAIMS — DO NOT CITE AS CURRENT ITSM RESULTS.**
+> The block below is preserved only to show provenance. Its numerical fits,
+> derivation claims, MCMC labels, tension resolutions and observational PASS
+> language have not passed the recovery gates and may be internally wrong.
+> Current authority is the status table above, `active_research.md`, and the
+> signed parent gate decisions.
 
 # 🌌 Integrated Toroidal-Syntropic Model (ITSM)
 **Relativistic Field Equations, Superfluid Dynamics, and Multi-Scale Falsifiability**

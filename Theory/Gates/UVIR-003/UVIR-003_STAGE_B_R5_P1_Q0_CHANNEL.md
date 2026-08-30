@@ -1,5 +1,8 @@
 # UVIR-003 Stage B R5-P1 q=0 Centre-of-Mass Channel
 
+> [!CAUTION]
+> **QUARANTINED TOY CHANNEL (G0, 2026-08-25).** A one-dimensional scalar kernel with omitted cosmological/constraint terms is not the exact constrained homogeneous channel. No well-posedness or gate closure follows.
+
 Date: 2026-08-07
 Branch: `recovery/v12-core-architecture`
 Scope: Symbolic evaluation of the exact $q=0$ limit of the R5-P1 physical dilaton mode.

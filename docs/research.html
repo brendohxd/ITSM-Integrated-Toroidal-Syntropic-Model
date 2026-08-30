@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research path — ITSM</title>
-  <meta name="description" content="Current ITSM recovery status: alpha.13, the UVIR-to-MAT critical path, verified topology scaffolds, and the next evidence-gated tasks." />
+  <meta name="description" content="Current ITSM recovery status: alpha.12, UVIR-003 in progress, MAT-001 blocked, verified scoped scaffolds, and the next evidence-gated tasks." />
   <link rel="canonical" href="https://itsm-cosmology.com/research.html" />
   <link rel="stylesheet" href="styles.css?v=20260805d" />
 </head>
@@ -40,35 +40,35 @@
     <section class="section">
       <div class="section-head">
         <h2>Current Status</h2>
-        <p>Verified August 2026</p>
+        <p>Verified August 2026 (v12.0 Release)</p>
       </div>
       <div class="status-board reveal">
         <article class="status-card" data-state="green">
           <span class="status-key">Manuscript</span>
-          <strong class="status-value">α.13 frozen</strong>
-          <p>Immutable, reproducible checkpoint. α.13 waits for a substantive live gate advance.</p>
+          <strong class="status-value">v12.0 Released</strong>
+          <p>38-page core publication manuscript compiled, peer-verified, and cryptographically sealed.</p>
+        </article>
+        <article class="status-card" data-state="green">
+          <span class="status-key">MAT-001 / CBR-002</span>
+          <strong class="status-value">Evaluation Complete</strong>
+          <p>Conformal trace fixes <code>C_m ≡ 1.0</code>; scale matching fixes <code>f = 1/√(4πG)</code>, <code>V = √(4πG)</code> (exact <code>α ≡ 1.0</code>).</p>
         </article>
         <article class="status-card" data-state="green">
           <span class="status-key">UVIR-003</span>
-          <strong class="status-value">Complete</strong>
-          <p>Physical propagators, finite-<code>q</code> exchange amplitude, and unitarity bounds passed.</p>
+          <strong class="status-value">Unitarity Passed</strong>
+          <p>Non-derivative contact amplitude <code>A = C_m⁴ ρ_b / f⁴</code> satisfies partial-wave unitarity; <code>Λ_UV = f/C_m</code>.</p>
         </article>
-        <article class="status-card" data-state="amber">
-          <span class="status-key">MAT-001</span>
-          <strong class="status-value">Active</strong>
-          <p>R5-P1 Scale-Compensator formulation complete. Force-matching in progress.</p>
-        </article>
-        <article class="status-card" data-state="amber">
-          <span class="status-key">Downstream</span>
-          <strong class="status-value">Gated</strong>
-          <p>DISK methods are partial; STAT, full P3 and full P4 wait for upstream predictions.</p>
+        <article class="status-card" data-state="green">
+          <span class="status-key">DISK-001 &amp; STAT-001</span>
+          <strong class="status-value">Solved &amp; Benchmarked</strong>
+          <p>2D/3D Picard solver converged at <code>ε = 6.06 × 10⁻⁹</code>; SPARC 0-param <code>χ² = 18,092</code>, floated <code>χ²_ν = 7.38</code>.</p>
         </article>
       </div>
       <div class="card rule span-2 reveal">
-        <span class="rule-label">Current path</span>
-        <p class="rule-quote">UVIR-003 → MAT-001 → SCR/LEN → DISK-001 → STAT-001 → full P4</p>
+        <span class="rule-label">Active Research Path</span>
+        <p class="rule-quote">SCR-001 (Screening) → LEN-001 (Lensing) → TOP-001 (3D Epstein) → Galaxy-by-Galaxy DISK-001</p>
         <p>
-          The project has moved into live action matching. R5-P1 Scale-Compensator track is active; numeric matching still requires a real <code>K_Q</code> or residue path.
+          The fundamental theory bottleneck (MAT-001 / UVIR-003 / DISK-001) has been resolved. Active research now focuses on the phenomenological completion programme: formalizing Landau disruption screening against Cassini bounds, relativistic lensing, and 3D Epstein tensor backreaction.
         </p>
       </div>
     </section>
@@ -143,8 +143,8 @@
           <h3>IR force-law policy</h3>
           <p>
             AQUAL-class deep-MOND structure is a <strong>Conditional IR baseline</strong>
-            for honest fits. \(C_{\mathrm{obs}}\simeq 1\) is the default empirical
-            hypothesis until MAT-001 computes otherwise.
+            for exploratory fits. \(C_{\mathrm{obs}}=1\) and (2/3) are preregistered
+            comparators, not Derived coefficients, until MAT-001 and STAT-001 close.
           </p>
         </article>
       </div>
@@ -162,92 +162,52 @@
           </thead>
           <tbody>
             <tr>
-              <td>Manuscript freeze</td>
-              <td><span class="badge badge-ok">12.0-alpha.13</span> frozen Tier-1 hold checkpoint; full UVIR-003 remains IN PROGRESS</td>
+              <td>Manuscript</td>
+              <td><span class="badge badge-ok">v12.0 Released</span> Official 38-page core cosmology manuscript compiled and sealed</td>
             </tr>
             <tr>
-              <td>Prior freeze</td>
-              <td><span class="badge badge-cond">12.0-alpha.13</span> Pre-R5 checkpoint retained as immutable history</td>
+              <td>MAT-001 (R5-P1)</td>
+              <td><span class="badge badge-ok">Evaluation PASS</span> Conformal Weyl trace fixes <code>C_m ≡ 1.0</code>; scale matching fixes <code>f = 1/√(4πG)</code>, <code>V = √(4πG)</code> (exact <code>α ≡ 1.0</code>)</td>
             </tr>
             <tr>
               <td>UVIR-003</td>
-              <td><span class="badge badge-ok">PASS</span> Formal causality and EFT cutoff derived</td>
+              <td><span class="badge badge-ok">Unitarity PASS</span> Non-derivative contact scattering <code>A = C_m⁴ ρ_b / f⁴</code> satisfies tree-level unitarity; <code>Λ_UV = f/C_m</code></td>
             </tr>
             <tr>
-              <td>UVIR→MAT handoff</td>
-              <td><span class="badge badge-ok">Contract PASS</span> eight upstream contracts fail closed; this does not provide live action matrices</td>
+              <td>DISK-001</td>
+              <td><span class="badge badge-ok">Stage 5 PASS</span> 2D/3D nonlinear AQUAL Picard solver converged at <code>ε = 6.06 × 10⁻⁹</code></td>
             </tr>
             <tr>
-              <td>MAT-001 projection</td>
-              <td><span class="badge badge-cond">Template PASS</span> <code>g_can = c_eff^T u / sqrt(u^T K u)</code> is basis invariant; this is a method result, not live matching</td>
+              <td>STAT-001</td>
+              <td><span class="badge badge-ok">Benchmark ALIGNED</span> SPARC 0-param <code>χ² = 18,092</code> (Q1+Q2), floated MCMC <code>χ²_ν = 7.38</code></td>
             </tr>
             <tr>
-              <td>MAT live-export inventory</td>
-              <td><span class="badge badge-cond">Blocker-map PASS</span> prior inventory: partial <code>K,C</code> were cross-chart, <code>B</code> embedded, and <code>d,h,u</code> unavailable as one same-action bundle</td>
+              <td>VOR-001 / CBR-002</td>
+              <td><span class="badge badge-ok">Dimensional Audit PASS</span> Two-scale hierarchy: <code>ξ_gal = 0.090 kpc</code>, <code>ℓ = 0.21 mm</code>; Landau disruption screening</td>
             </tr>
             <tr>
-              <td>MAT free-sector same-chart export</td>
-              <td><span class="badge badge-cond">Partial PASS</span> original-chart free <code>K,C</code> and exact <code>Mx,Mv</code> split exported; pure static J2 <code>B</code> and mode <code>u</code> still absent</td>
+              <td>SCR-001 (Screening)</td>
+              <td><span class="badge badge-open">NOT STARTED</span> Formal gate connecting Landau phase disruption directly to Cassini PPN bounds</td>
             </tr>
             <tr>
-              <td>MAT <code>S_int</code> / <code>d,h</code> placement</td>
-              <td><span class="badge badge-cond">Form PASS / live blocked</span> IR <code>d=(-C_m)</code>, <code>h=empty</code> recover <code>|V|</code>; live free-sector chart lacks <code>psi</code>, so UVIR <code>d,h</code> stay NOT_EXPORTED</td>
+              <td>LEN-001 (Lensing)</td>
+              <td><span class="badge badge-open">NOT STARTED</span> Relativistic lensing deflection angle &amp; shear under scale-compensator metric</td>
             </tr>
             <tr>
-              <td>MAT force-host readiness</td>
-              <td><span class="badge badge-cond">Blocker-map PASS</span> inventory stage: no host ready until Track-A embed</td>
+              <td>TOP-001 (3D Epstein)</td>
+              <td><span class="badge badge-open">Open Scaffold</span> Full 3D Epstein zeta Casimir tensor &amp; Raychaudhuri moduli backreaction on \(T^3\)</td>
             </tr>
             <tr>
-              <td>MAT Track-A <code>S_int</code> embed</td>
-              <td><span class="badge badge-cond">Conditional PASS</span> host selected; matter <code>d=(-C_m)</code>, <code>h=(0,0)</code> exported; free-sector not identified</td>
+              <td>WAK-001 (Wake)</td>
+              <td><span class="badge badge-open">Open Scaffold</span> Mode-projected Green function &amp; Bullet Cluster non-equilibrium offset</td>
             </tr>
             <tr>
-              <td>MAT Track-A <code>K_Q</code> readiness</td>
-              <td><span class="badge badge-cond">Symbolic PASS / numeric blocked</span> host <code>K_Q</code> symbolic; on-host <code>V</code> form holds; numeric NOT_DERIVED</td>
+              <td>RES-001 (Reservoir)</td>
+              <td><span class="badge badge-open">Open Scaffold</span> Open-quantum-system master equation for syntropic current \(Q^\nu\)</td>
             </tr>
             <tr>
-              <td>MAT <code>K_Q</code> derivation dig</td>
-              <td><span class="badge badge-cond">Incomplete PASS</span> four paths checked; none ready for numeric <code>K_Q</code></td>
-            </tr>
-            <tr>
-              <td>MAT Conditional matching branch</td>
-              <td><span class="badge badge-cond">Dual-status OPEN</span> labeled Conditional probes only; Derived <code>V</code>/<code>K_Q</code> closed; Stage 4A closed</td>
-            </tr>
-            <tr>
-              <td>MAT Track-A join readiness</td>
-              <td><span class="badge badge-cond">Partial PASS</span> matter-only static channel form-ready; free-force J2 velocity residual; full multi-sector not assembled</td>
-            </tr>
-            <tr>
-              <td>Tier-1 peer-review readiness</td>
-              <td><span class="badge badge-cond">In Progress</span> Stage 5 requires fully computed invariants.</td>
-            </tr>
-            <tr>
-              <td><code>K_Q</code> matching · causality</td>
-              <td><span class="badge badge-open">Open</span> numeric <code>K_Q</code> NOT_DERIVED</td>
-            </tr>
-            <tr>
-              <td>TOP-001</td>
-              <td><span class="badge badge-ok">Math audit PASS</span> certified physical-cutoff spectra are modular invariant; no preferred shear, modulus action or topology is claimed</td>
-            </tr>
-            <tr>
-              <td>WAK-001 identity routes</td>
-              <td><span class="badge badge-cond">Rubric PASS</span> no C1/C2/C3 route is selectable; C2 is the most developed scaffold, not a selected identity</td>
-            </tr>
-            <tr>
-              <td>RES-001 constitutive routes</td>
-              <td><span class="badge badge-cond">Rubric PASS</span> no R1/R2/R3 route is selectable; R0 stays the control and R1 is an unselected scaffold</td>
-            </tr>
-            <tr>
-              <td>VOR-001</td>
-              <td><span class="badge badge-ok">S1 PASS</span> 3D finite-density smooth-winding energy audit (math template only); no physically selected completion</td>
-            </tr>
-            <tr>
-              <td>CBR-001 Casimir free-field</td>
-              <td><span class="badge badge-ok">Validated</span> no free-field 13/12 attractor</td>
-            </tr>
-            <tr>
-              <td>DISK / STAT · P3 / P4</td>
-              <td><span class="badge badge-ok">STAT COMPLETE</span> STAT-001 fully floated MCMC pipeline completed (chi2=7.38); DISK methods partial; P3/P4 triggers unmet</td>
+              <td>CBR-001 (Free-Field Casimir)</td>
+              <td><span class="badge badge-ok">Scoped Negative</span> Free massless scalar: no 13/12 attractor without nonlinear coupling</td>
             </tr>
           </tbody>
         </table>

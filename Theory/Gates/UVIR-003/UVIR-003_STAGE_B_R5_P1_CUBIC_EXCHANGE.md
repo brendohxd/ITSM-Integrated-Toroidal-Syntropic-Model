@@ -1,5 +1,8 @@
 # UVIR-003 Stage B R5-P1 Cubic Exchange 
 
+> [!CAUTION]
+> **QUARANTINED ALGEBRAIC PROXY (G0, 2026-08-25).** Expanding an assumed matter exponential does not derive the signed physical-mode residue, and the field-excursion scale is not a physical UV cutoff. This is not UVIR evidence.
+
 Date: 2026-08-07
 Branch: `recovery/v12-core-architecture`
 Scope: Surgical evaluation of the matter-dilaton fifth-force exchange and cutoff

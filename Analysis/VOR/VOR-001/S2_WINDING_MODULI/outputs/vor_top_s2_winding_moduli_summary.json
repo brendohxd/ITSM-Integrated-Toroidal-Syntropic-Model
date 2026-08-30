@@ -1,0 +1,131 @@
+{
+  "MAT_001_status": "BLOCKED",
+  "TOP_001_status": "OPEN_SCAFFOLD_ONLY",
+  "TOP_moduli_result": {
+    "dynamical_modulus_action": "NOT_DERIVED",
+    "generic_cubic_point": "NOT_STATIONARY_FOR_GENERIC_WINDING_VECTOR",
+    "generic_stabilization": "REJECTED_FOR_WINDING_ENERGY_ALONE",
+    "single_cycle_winding": "FIXED_VOLUME_RUNAWAY_TO_ZERO_WINDING_ENERGY",
+    "symmetric_absolute_winding": "CONDITIONAL_LOCAL_MINIMUM_WHILE_BROKEN_BRANCH_EXISTS"
+  },
+  "VOR_001_status": "OPEN_SCAFFOLD_ONLY",
+  "VOR_S2_overall": "FAIL_PREREGISTERED_T02; OTHER_SCOPED_CONTROLS_SURVIVE",
+  "VOR_S2_tests": {
+    "S2-T01": {
+      "result": "rho_0^2=v^2-omega_sq/lambda for omega_sq<lambda*v^2; rho_0=0 above threshold",
+      "status": "PASS_EXACT_BROKEN_BRANCH"
+    },
+    "S2-T02": {
+      "criterion": "relative deviation < 0.001 at lambda=100, omega=1, v=1",
+      "decimal_relative_deviation": 0.005,
+      "exact_relative_deviation": "1/200",
+      "prior_run_bypassed_preregistered_point": true,
+      "prior_run_lambda": 100000.0,
+      "status": "FAIL_PREREGISTERED_NUMERICAL_CRITERION"
+    },
+    "S2-T03": {
+      "result": "Delta e>0 for every nonzero omega_sq; it saturates at lambda*v^4/4 after symmetry restoration",
+      "status": "PASS_GLOBAL_MINIMUM_BRANCH"
+    },
+    "S2-T04": {
+      "result": "energy depends on n_i^2",
+      "status": "PASS_EXACT"
+    },
+    "S2-T05": {
+      "result": "sum_i n_i^2 is permutation invariant",
+      "status": "PASS_EXACT_ISOTROPIC_BOX"
+    },
+    "S2-T06": {
+      "result": "rho_0 decreases strictly below threshold and remains zero above it",
+      "status": "PASS_NONINCREASING_WITH_BRANCH_CAVEAT"
+    }
+  },
+  "audit": "VOR_TOP_S2_WINDING_AMPLITUDE_AND_MODULI",
+  "calculation_status": "PASS_HOSTILE_SYMBOLIC_AUDIT",
+  "checks": [
+    {
+      "broken_energy": "omega_sq*(2*lambda*v**2 - omega_sq)/(4*lambda)",
+      "broken_rho_sq": "v**2 - omega_sq/lambda",
+      "eom": "-rho*(-lambda*rho**2 + lambda*v**2 - omega_sq)",
+      "name": "exact_constant_amplitude_branches",
+      "ok": true,
+      "restored_energy": "lambda*v**4/4"
+    },
+    {
+      "broken_curvature": "2*(lambda*v**2 - omega_sq)",
+      "name": "branch_stability_exchange_at_threshold",
+      "ok": true,
+      "restored_curvature": "-lambda*v**2 + omega_sq",
+      "threshold": "omega_sq=lambda*v^2"
+    },
+    {
+      "exact_relative_deviation": "1/200",
+      "name": "preregistered_T02_failure_detected",
+      "ok": true,
+      "prior_lambda": 100000.0
+    },
+    {
+      "name": "remaining_T01_T03_T06_global_branch_logic",
+      "ok": true
+    },
+    {
+      "name": "reflection_and_isotropic_permutation_covariance_exact",
+      "ok": true
+    },
+    {
+      "gradient_at_cubic": "Matrix([[k0_sq*(-2*n1_sq + 2*n3_sq)], [k0_sq*(-2*n2_sq + 2*n3_sq)]])",
+      "hessian_at_cubic": "Matrix([[k0_sq*(4*n1_sq + 4*n3_sq), 4*k0_sq*n3_sq], [4*k0_sq*n3_sq, k0_sq*(4*n2_sq + 4*n3_sq)]])",
+      "name": "fixed_volume_shape_gradient_and_hessian",
+      "ok": true
+    },
+    {
+      "conditional_minimum": "positive only while 3*k0_sq < lambda*v^2 on the broken branch",
+      "name": "cubic_shape_stationary_only_for_symmetric_absolute_winding",
+      "ok": true,
+      "symmetric_hessian": "Matrix([[8*k0_sq, 4*k0_sq], [4*k0_sq, 8*k0_sq]])",
+      "symmetric_hessian_eigenvalues": [
+        "12*k0_sq",
+        "4*k0_sq"
+      ]
+    },
+    {
+      "limit": "0",
+      "name": "single_winding_fixed_volume_runaway",
+      "ok": true,
+      "omega_sq": "k0_sq*exp(-2*alpha)",
+      "path": "alpha1=t, alpha2=alpha3=-t/2"
+    },
+    {
+      "name": "modular_reindexing_covariance_exact",
+      "norm": "3820709/2480625",
+      "ok": true,
+      "transformed_norm": "3820709/2480625"
+    }
+  ],
+  "exact_branch": {
+    "broken_energy_density": "omega_sq*(2*lambda*v**2 - omega_sq)/(4*lambda)",
+    "broken_rho_sq": "v**2 - omega_sq/lambda",
+    "restored_energy_density": "lambda*v**4/4",
+    "restored_rho": "0",
+    "threshold": "omega_sq=lambda*v^2"
+  },
+  "forbidden_inferences": {
+    "13_over_12": false,
+    "2*pi_as_force_coefficient": false,
+    "2_over_3": false,
+    "L_equals_c_over_H": false,
+    "a0_from_topology": false,
+    "cosmological_attractor": false
+  },
+  "input_sha256": {
+    "core_architecture": "332489B09476A4403E8BBEBE81B3FF329A114005DAA1CF39E8B4738F95B9AC8A",
+    "top_gate": "B47E7164CACF6CB61E0DE66403A3646B37E4E908636FE23085D4D18DAF08F2F2",
+    "top_modular_prior": "112051EB62E28683A15E981B5BF29A9D7A58F40E461D915BA9846FDB4461FDE0",
+    "vor_gate": "7891E2C090284522AF6E4CDC957F499D24ECAD765BA545382B96776CB0E16484",
+    "vor_s2_prior": "78968B9FB7E4771698580D97648AEB4445677763E3DF70EEBEC076DD56832D51",
+    "vor_s2_spec": "05C238943BB397F7EDE027D5AC6DB8E2DD72BC51963B208187B77669F0477723"
+  },
+  "physics_pass": false,
+  "route_disposition": "REPAIR_VOR_S2_AND_REJECT_WINDING_ONLY_GENERIC_MODULI_STABILIZATION",
+  "scientific_boundary": "The result is exact for the declared quartic constant-amplitude smooth-winding toy and the rectangular fixed-volume log-shape slice. It is not the live evolving UVIR parent, a dynamical moduli action, a force/matter matching, or a cosmological solution."
+}

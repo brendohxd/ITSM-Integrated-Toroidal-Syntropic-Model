@@ -1,4 +1,7 @@
 # Gate MAT-001: R5-P1 Scale-Compensator Fork Task 6
+
+> [!CAUTION]
+> **QUARANTINED CONVENTION/CUTOFF DRAFT (G0, 2026-08-25).** The invariant changes sign/convention on the static branch and the claimed cutoff is only scaling power counting. Stability, causality and a physical cutoff remain open.
 ## Stability and Strong-Coupling Domain (EFT Cutoff)
 
 ### 1. Introduction

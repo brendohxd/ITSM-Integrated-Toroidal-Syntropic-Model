@@ -442,7 +442,7 @@ def main() -> None:
     output.write_bytes(payload)
     digest = hashlib.sha256(payload).hexdigest().upper()
     sidecar = output.with_suffix(".sha256")
-    sidecar.write_text(f"{digest}  {output.name}\n", encoding="ascii")
+    sidecar.write_bytes(f"{digest}  {output.name}\n".encode("ascii"))
 
     print("MAT-001 R5 microscopic matching identifiability decision")
     print("  verdict:", summary["matching_verdict"])

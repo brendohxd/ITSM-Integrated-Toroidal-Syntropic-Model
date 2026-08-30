@@ -1,3 +1,6 @@
+> [!CAUTION]
+> **QUARANTINED DUPLICATE DASHBOARD (G0, 2026-08-25).** Preserved for provenance only. It is not an authority surface and contains false STAT/MCMC and alpha.13 promotions. Use `active_research.md` exclusively.
+
 ## Gate Status Dashboard — 2026-08-07 (v12.0-alpha.13)
 STAT-001: COMPLETE \| Fully-floated Bayesian MCMC inference (chi2=7.38)
 MAT-001: BLOCKED \| R5 proves declared action underdetermines V (R5-P1 Scale-Compensator active)

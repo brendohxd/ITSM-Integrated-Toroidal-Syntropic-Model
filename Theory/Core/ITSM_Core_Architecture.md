@@ -17,6 +17,9 @@ ledger merely because it is compatible with this architecture.
 Conventions: metric signature `(-,+,+,+)`; `c = hbar = 1` except when restored
 for dimensions; `M_P^(-2) = 8 pi G`; and `kappa = 8 pi G`.
 
+> [!WARNING]
+> The convention `M_P^(-2) = 8 pi G` uses the reduced Planck mass. Be careful when importing external derivations that use the full Planck mass $M_{Pl} = 1/\sqrt{G}$, as this introduces a factor-of-$\sqrt{8\pi}$ difference (or $f = \sqrt{2} M_P$ mapping for the $1/\sqrt{4\pi G}$ scale).
+
 ## 2. Core physical proposition
 
 The recovered ITSM proposition is:
@@ -131,71 +134,11 @@ verified one regular dimensionless on-shell branch with conserved
 `a^3 rho^2 dot(Theta)`. This is a background existence result, not a
 cosmological parameter fit or perturbation-stability result.
 
-The first scalar ADM subgate was completed in a controlled frozen-coefficient,
-subhorizon limit. In aether-unitary scalar gauge, lapse and scalar shift
-elimination independently reproduces the exact Einstein-aether spin-0 speed
-and yields a positive principal block at the representative dimensionless
-point. The condensate constraint introduces
-`q_ADM^2=(rho_dot^2+rho^2 mu^2)/(M_U^2 c14)`, so that principal result is
-restricted to `q_phys >> max(H,q_ADM)`.
+Detailed finite-`q` reduction and constraint-dressing audits for UVIR-003 are maintained in [UVIR-003_PROGRESS.md](../Gates/UVIR-003/UVIR-003_PROGRESS.md).
 
-The complete quadratic finite-`q` reduction has now also been performed on the
-evolving branch. For all 48,861 representative samples with
-`10^-3 <= q_phys/H <= 10^3`, the reduced kinetic inertia is three positive and
-zero negative and the lapse-momentum constraint matrix is nonsingular. The
-exact on-shell determinant is proportional to `q_phys^2`, so one kinetic
-direction loses rank as `q_phys -> 0`. The follow-on gauge audit identifies
-that direction exactly as `(H,rho_dot,mu)`, the homogeneous time-translation
-orbit. Two gauge-invariant matter combinations retain a positive regular
-`q=0` kinetic block across the representative trajectory. The rank loss is
-therefore a gauge endpoint rather than a third physical homogeneous scalar.
-The flat-decoupling khronon expansion is now verified through cubic order in
-three spatial dimensions and exactly reproduces the earlier longitudinal
-basis. For algebraic lapse and shift constraints, stationarity of the
-first-order solution cancels every explicit second-order constraint correction
-from the reduced cubic action. Linear-dispersion energy and momentum
-conservation also force an on-shell three-point spatial triangle to be
-collinear. The follow-on three-dimensional flat-decoupling quartic audit
-contains 96 expanded monomials and gives the exact elastic contact form
-`4[c123^2/c14-(2c123-c14)cos^2(theta)]`. Elastic `t/u` cubic exchange vanishes
-exactly, while the centre-of-mass `s` channel is the non-invertible homogeneous
-khronon gauge orbit. At quartic order the second-order constraint source enters
-through `-J2^T C^(-1) J2/2`; third-order constraint solutions are unnecessary.
-Consequently the physical interaction scale still requires the complete
-gauge-regular constrained cosmological `2-to-2` amplitude and physical
-eigenmode projection. The exact nonlinear `g+U+Phi+alignment` ADM parent block
-reproduces the FRW and finite-`q` quadratic constraint data. Track A adopts the
-rest-space Laplacian
-`D_mu D^mu psi=h^{mu nu}nabla_mu nabla_nu psi+theta Q` and retains exact
-`Y^(3/2)` for a declared local nonzero-gradient perturbative force analysis.
-The homogeneous zero-gradient force action is verified through direct quartic
-order: `Q^2` supplies lapse and scalar-shift `J2` components, the regulator
-supplies a lapse component only, and exact `Y^(3/2)` is constraint independent
-at cubic amplitude order on that background. The finite-`q` multi-sector
-coefficient linear in constraints at the origin is assembled in the
-`(delta_N,Sigma=q_phys^2 beta)` convention.
+**U1 controlled complex-quartet interpretation (open UVIR-003 task)**
 
-The constraint-dressing audit reclassifies this coefficient as
-`J2_origin`, not the complete second-order source. The correct quantity is
-`S2=partial_z L3[x,z1]`; the associated quartic correction is
-`-S2^T C^(-1)S2/2`. The origin-linear formulas remain verified components.
-This result is restricted to `q_phys>0` and does not reclassify the
-homogeneous gauge orbit. The generic three-dimensional gravity/aether
-constraint density and its nonlinear lapse/shift functional operators are now
-verified at `q_phys>0`. Adding the condensate temporal shift-advection
-operators completes the multi-sector finite-`q` `S2`; the Track-A force cubic
-block is affine in the constraints and therefore adds no nonlinear correction
-beyond `J2_origin`. The complete generic `L4[x,z1]` contact and reduced
-quartic functionals are also assembled. The basis
-`(Xi,Q_rho,Q_chi)` has a finite positive low-`q` kinetic limit, with no
-exactly homogeneous `Xi` mode. A source-to-observable retarded-response audit
-removes direct `Xi` and homogeneous time-translation source support and reads
-only retained `(Q_rho,Q_chi)`. All five tested dimensionless cases retain
-amplified response through the complex-quartet interval. This resolves the
-direct gauge-source attribution question with scope, not an all-background
-instability theorem. The Track-A `Pi` mode remains factorized at quadratic
-order. Explicit vertex projection, the gauge-regular amplitude, physical
-cutoff and global multicone-causality testing remain open.
+The scoped progress record reports amplified response in five sampled dimensionless cases through a complex-quartet interval. That numerical statement has not yet been independently reproduced under a pinned environment and does not establish a general instability theorem. The next task is to determine whether the effect is a physical Jeans-like response, a background pathology, or a chart/domain artifact before creating or promoting any new gate.
 
 ### 3.4 Infrared phonon sector
 
@@ -239,11 +182,13 @@ Spatial slices have compact `T^3` boundary conditions with fundamental lengths
 - the treatment of zero modes;
 - shape-dependent Casimir stress.
 
+**Dynamic Scale Matching (Postulate):** The fundamental spatial boundary is provisionally identified with the comoving toroidal circumference `L_T = 2\pi c / H_0`. Aligning that boundary with the present-day causal horizon, and identifying the local threshold with `c^2/L_T`, are explicit assumptions requiring an independent dynamical derivation. Together they algebraically imply `a_0 = c H_0 / 2\pi`; neither the scale identification nor the inverse-`2\pi` coefficient is presently derived from circulation or the parent action.
+
 The side lengths or their ratios are moduli, not automatic numerical
 invariants. A biaxial calculation may use `r = L_t/L_p`, but a value of `r` or a
 Hubble-rate ratio must be dynamically derived.
 
-### 3.7 Reservoir sector
+### 3.7 Reservoir sector (RES-001)
 
 The observable matter--plenum subsystem may be thermodynamically open. A
 reservoir stress tensor `T_R^{mu nu}` accounts for the compensating exchange so
@@ -423,6 +368,8 @@ de Sitter model, that:
 - all valid target-reaching trajectories return to `H_t/H_p = 1`;
 - the required target-reaching amplitudes are marginal or nonperturbative.
 
+Before writing new driven-moduli algebra, a "cheap first screen" must be performed: adapt the existing backreaction solver to the volume modulus with $Q_{syn}$ driving, and verify if the trivial fixed point moves.
+
 For the physical biaxial lengths the source has the qualified scaling
 
 ```text
@@ -481,6 +428,7 @@ The canonical theory may not:
 
 Every observable claim must name its upstream sectors and gates. Examples:
 
+- the threshold acceleration $a_0$ depends on the Conditional Dynamic Scale Matching postulate; no dedicated gate has yet promoted that postulate;
 - galaxy rotation curves depend on UVIR-003, MAT-001 and DISK-001;
 - Solar-System statements depend on SCR-001 and LEN-001;
 - lensing depends on LEN-001;

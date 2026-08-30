@@ -1,4 +1,7 @@
 # Gate MAT-001: R5-P1 Scale-Compensator Fork Task 5
+
+> [!CAUTION]
+> **QUARANTINED SIGN/PROJECTION DRAFT (G0, 2026-08-25).** The action sign changes relative to Task 4 and the full finite-density constrained eigenbasis is not diagonalized. No signed physical residue or ghost-free completion is established.
 ## Signed Matter-to-Physical-Mode Residue (Project After Diagonalisation)
 
 ### 1. Introduction

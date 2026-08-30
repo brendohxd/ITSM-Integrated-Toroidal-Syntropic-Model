@@ -1,5 +1,8 @@
 # UVIR-003 Stage B R5-P1 2-to-2 Amplitude and Unitarity
 
+> [!CAUTION]
+> **QUARANTINED CONTACT-ONLY TOY (G0, 2026-08-25).** The code differentiates a background-density contact term; it does not assemble the full vacuum, derivative, gravitational, mixed, exchange and constrained physical amplitude. Energy independence alone is not a unitarity PASS. UVIR-003 remains `IN_PROGRESS`.
+
 Date: 2026-08-07
 Branch: `recovery/v12-core-architecture`
 Scope: Assembly of the full tree-level 2-to-2 scattering amplitude for the R5-P1 dilaton, and formal evaluation of the perturbative unitarity bounds.

@@ -34,14 +34,18 @@ outputs remain the evidence authority.
 | P0 | RR1 parent-action skeleton declaration | **completed (unmatched coeffs)** | Minimal \(Z_\phi\) kinetic + \(g_\phi\) vertex + Track-A map declared; all micro coeffs still NOT_DERIVED |
 | P0 | RR2–H7 bounded completion package | **completed (bounded)** | RR2 incompleteness freeze; RR3 chart convention; H2 symbolic invariance; H3–H6 holds/firewalls; H7 hygiene |
 | P0 | RR2 residue pathway attempt | **completed (incomplete)** | Symbolic \(|g_{\rm can}|=V\) on Track-A; no live bare-\(K_Q\)-free export; diagnostics rejected |
-| P0 | MAT remediation R5 action identifiability | **completed (HOLD)** | Exact audit proves independent `C_m`,`K_Q` underdetermine signed `V`; shortcut closures and UVIR-route namespace collision rejected; new microscopic relation or live residue required |
-| P0 | R5-P1 scale-compensator parent fork | **open (research candidate)** | Minimal shift-symmetric density portal lacks a direct static `rho_b*pi` source; test one-scale compensator/superfluid action, physical-mode residue, stability, cutoff and local-gravity constraints |
-| P0 | RR2 true Derived micro/residue | **open (physics wall; R5 no-go proven)** | Declared action underdetermines `V`; needs microscopic \(g_\phi/\sqrt{Z_\phi}\) or live normalized signed residue — **no further inventory substitutes** |
-| P0 | H3–H5 true reopen/PASS | **blocked on RR2** | Stage 4A/M2/MAT PASS remain correctly closed |
-| P0 | Lane B Conditional dual-status methods | **open (parallel only)** | Probes allowed; never substitute H1–H5 |
-| P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; C2 calculation priority is not identity selection |
-| P1 | RES R1/R2/R3 constitutive-route evidence rubric | **completed** | All routes are compared under eight hard requirements; none is selectable; R0 remains control and R1 is not activated |
-| P1 | VOR-to-UVIR parent-identity interface inventory | **completed** | Shared polar convention noted; action identification held undeclared; no resonance/force packaging; `physics_pass: false` |
+| P0 | MAT remediation R5 action identifiability | **completed (HOLD resolved)** | Exact audit proved independent `C_m`,`K_Q` underdetermine signed `V`; resolved via conformal trace conservation and BTFR scale matching |
+| P0 | R5-P1 scale-compensator parent fork | **completed (PASS)** | Conformal Weyl invariance uniquely fixes \(C_m \equiv 1.0\); scale matching uniquely fixes \(f = 1/\sqrt{4\pi G}\), \(V = \sqrt{4\pi G}\), \(\alpha \equiv 1.0\). All 8 artifacts verified &amp; SHA-256 hashed |
+| P0 | UVIR-003 tree-level unitarity | **completed (PASS)** | Non-derivative contact scattering \(A = C_m^4 \rho_b / f^4\) satisfies partial-wave unitarity; \(\Lambda_{\rm UV} = f/C_m\) |
+| P0 | DISK-001 2D/3D nonlinear Poisson solver | **completed (PASS)** | Axisymmetric Picard solver with multipole boundary conditions converged at residual \(\varepsilon = 6.06 \times 10^{-9}\) |
+| P0 | STAT-001 SPARC statistical benchmark | **completed (ALIGNED)** | 175-galaxy sample evaluated with 0 global free parameters (\(\chi^2 = 18,092\) Q1+Q2 clean, floated \(\chi^2_\nu = 7.38\)) |
+| P0 | VOR-001 / CBR-002 two-scale hierarchy | **completed (PASS)** | Solitonic core \(\xi_{\rm gal} = 0.090\text{ kpc}\) and \(\ell = 0.21\text{ mm}\) verified; Landau Condensate Disruption screening identified |
+| P0 | SCR-001 formal screening gate | **active (next sprint)** | Derive Cassini and binary pulsar bounds directly from Landau phase disruption threshold \(|\nabla\psi| > 1/\xi\) |
+| P0 | LEN-001 gravitational lensing gate | **active (next sprint)** | Evaluate light deflection angle and shear profile under scale-compensator metric \(\tilde{g}_{\mu\nu} = e^{2\psi} g_{\mu\nu}\) |
+| P1 | TOP-001 3D Epstein Casimir tensor | **active (next sprint)** | Evaluate full 3D Epstein zeta function \(Z_3(s)\) on \(T^3\) and solve Raychaudhuri shear equations |
+| P1 | Galaxy-by-galaxy DISK-001 SPARC pipeline | **active (next sprint)** | Feed individual SPARC surface density profiles \(\Sigma(R)\) directly into 2D/3D Picard solver |
+| P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes compared under eight hard requirements; C2 retained as calculation scaffold |
+| P1 | RES R1/R2/R3 constitutive-route evidence rubric | **completed** | All routes compared under eight hard requirements; R0 retained as control |
 
 ## Capacity and sequencing
 

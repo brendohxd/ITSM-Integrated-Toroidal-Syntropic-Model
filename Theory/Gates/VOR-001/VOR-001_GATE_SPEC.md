@@ -39,6 +39,7 @@ reason — **not** by recycling old packaging failures.
 | Circulation | Line integral of superfluid / condensate velocity around loops |
 | Resonance | Preference for ordered spectral / geometric alignments (to be *defined*, not assumed as PTA band) |
 | Finite density | Homogeneous \(\rho_0\neq 0\) background admitting phonons and defects |
+| Condensate disruption | Open Landau-criterion candidate route. No critical gradient, defect transition, matter metric or Solar-System screening solution is derived; it is not the primary mechanism unless a later gate establishes it. |
 
 ### 1.2 Rejected packaging (do not re-import)
 

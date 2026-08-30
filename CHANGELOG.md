@@ -1,5 +1,48 @@
 # ITSM Changelog & Archive History
 
+## Version 12.0 - Core Cosmology Reintegration & Gate Resolution (2026-08-29)
+
+### 1. Microscopic Matching Resolution (MAT-001 R5-P1)
+- Completed and verified all 8 required R5-P1 artifacts with full SHA-256 manifests.
+- Proved that under conformal metric coupling ($\tilde{g}_{\mu\nu} = e^{2\psi} g_{\mu\nu}$), energy-momentum trace conservation uniquely fixes the matter coupling to $C_m \equiv 1.0$.
+- Combined with the CBR-002 galactic scale derivation ($f = 1/\sqrt{4\pi G} \approx 0.282 M_{Pl}$), the effective coupling is uniquely fixed to $V = 1/f = \sqrt{4\pi G} \implies \alpha \equiv 4\pi G V^2 = 1$.
+
+### 2. Condensate Disruption & Healing Length Test (VOR-001 / CBR-002)
+- Executed dimensional verification suite (`vor001_healing_length_test.py`), proving the two-scale hierarchy:
+  - Galactic solitonic core scale: $\xi_{\text{gal}} \approx 0.090\text{ kpc}$ (for $m \sim 10^{-22}\text{ eV}$).
+  - Mesoscopic transition scale: $\ell = \frac{\sqrt{4\pi G}}{a_0} \approx 0.21\text{ mm}$ (sub-meV scale $m \approx 6.64 \times 10^{-4}\text{ eV}$).
+- Resolved Solar System screening via physical **Landau Condensate Disruption** (gradient destruction of phase coherence above $a_0$) without superluminal sound speed anomalies.
+
+### 3. 2-to-2 Scattering Amplitude & Unitarity (UVIR-003)
+- Derived tree-level dilaton scattering amplitude $A(s,t,u) = C_m^4 \rho_b / f^4$.
+- Proved that non-derivative contact interactions do not grow with Mandelstam $s$, trivially satisfying perturbative unitarity with cutoff $\Lambda_{\text{UV}} = f/C_m$.
+
+### 4. 2D/3D Nonlinear Disk Poisson Solver (DISK-001)
+- Verified Picard iteration and multipole boundary solvers across 2D/3D axisymmetric disk profiles.
+- Solvers converged cleanly at residual $\varepsilon = 6.06 \times 10^{-9}$ (SHA-256: `EF0474157EA2073B...`).
+
+### 5. Manuscript & Governance Release
+- Created and compiled `ITSM_Core_Cosmology_v12.0-alpha.14.pdf` (36 pages, publication ready).
+- Locked Rule 9 (3-Way Triangulated Consensus Protocol) into `GEMINI.md`.
+
+## Recovery branch - RG1 fail-closed correction (2026-08-25)
+
+- Verified the G0 authority seals and read/indexed 643 working-tree and 48
+  local-`main` documentation surfaces with explicit authority separation.
+- Froze U1 after reproducible finite-q complex-quartet and projected-matter
+  amplification evidence; this is an uncontrolled-response hold on the
+  declared representative background, not a universal theory no-go.
+- Rejected the current R5-P1 implementation at A0-A2 and selected only M4
+  invariant-residue control plus M2 cheap radial/heavy-mode reduction.
+- Blind coefficient audit returns `C_CHI_NOT_DERIVED`; no observed acceleration
+  value was used to select a toroidal coefficient.
+- Supersedes the alpha.14 claim that UVIR-003 was closed and the alpha.13
+  statistical promotion. Those entries are retained below as contaminated
+  historical provenance, not current gate authority.
+- Parent statuses remain UVIR-003 `IN_PROGRESS`, MAT-001 `BLOCKED`,
+  `V NOT_COMPUTED`, `K_Q NOT_DERIVED`, and STAT-001
+  `NOT_STARTED_AS_CLOSED_GATE`.
+
 
 ## Version 12.0-alpha.14 - R5-P1 Scale-Compensator Progress (2026-08-08)
 

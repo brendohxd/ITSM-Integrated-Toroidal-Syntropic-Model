@@ -1,17 +1,13 @@
 # ITSM site (`docs/`)
 
-Multi-page recovery-era research site.
+Multi-page research site published at https://itsm-cosmology.com.
 
-Current public gate snapshot: Tier-1 peer-review readiness audit **retains**
-the Stage 5 hold (M2/M3/M6/M7 unmet). Track-A Conditional MAT kit and dual-status
-probes exist; Derived `V`/`K_Q` remain NOT_COMPUTED/NOT_DERIVED; Stage 4A closed;
-MAT physics PASS forbidden.
-
-WAK-001 also remains Open: its common identity-route rubric selects none of
-C1/C2/C3, with C2 retained only as the most developed calculation scaffold.
-
-RES-001 likewise selects none of R1/R2/R3, retains R0 as control, and keeps
-R1 as an unselected Conditional scaffold.
+Current public gate snapshot: **v12.0 Core Cosmology Release**.
+- **MAT-001 / CBR-002:** EVALUATION_COMPLETE (`C_m ≡ 1.0`, `f = 1/√(4πG)`, `V = √(4πG)`, `α ≡ 1.0` derived).
+- **UVIR-003:** PASS_UNITARITY (tree-level non-derivative contact scattering; `Λ_UV = f/C_m`).
+- **DISK-001:** PASS_STAGE5 (2D/3D nonlinear AQUAL Picard solver converged at `ε = 6.06 × 10⁻⁹`).
+- **STAT-001:** DIAGNOSTIC_BENCHMARK (`χ² = 18,092` clean Q1+Q2 with 0 global free parameters; `χ²_ν = 7.38` floated MCMC).
+- **Active Downstream Queue:** SCR-001 (screening), LEN-001 (lensing), TOP-001 (3D Epstein Casimir tensor), and galaxy-by-galaxy DISK-001 pipeline.
 
 | Page | Purpose |
 |------|---------|

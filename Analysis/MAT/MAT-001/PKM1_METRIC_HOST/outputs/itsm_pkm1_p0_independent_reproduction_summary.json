@@ -1,0 +1,136 @@
+{
+  "audit": "PKM1_P0_INDEPENDENT_REPRODUCTION_AND_MUTATION",
+  "calculation_status": "PASS_INDEPENDENT_REPRODUCTION",
+  "checks": [
+    {
+      "critical_y": "0.65729810613837599082505552000480171164504768618926",
+      "name": "independent_P0_A_root_and_sign_reproduction",
+      "ok": true,
+      "radial_Hessian": "(2*y**3 + y**2 - 1)/((y + 1)**2*(y**2 + 1)**2)",
+      "root_residual": "0.0"
+    },
+    {
+      "J_Y": "-1/(y + 1)",
+      "J_radial": "-1/(y + 1)**2",
+      "name": "independent_P0_B_Hessian_reproduction",
+      "ok": true
+    },
+    {
+      "mutation_result": "REJECTED_FALSE_EQUIVALENCE",
+      "name": "mutation_static_ellipticity_cannot_substitute_for_khronon_Hessian",
+      "ok": true,
+      "required_negative_khronon_Hessian_at_y1": "1/8",
+      "static_radial_at_y1": "9/8"
+    },
+    {
+      "mutated_lagrangian_kinetic": "-2*M_P^2*(-J_Y)<0",
+      "mutation_result": "REJECTED",
+      "name": "mutation_reversed_J_sign_is_detected_as_kinetic_failure",
+      "ok": true
+    },
+    {
+      "K_QQ": "mu**2*rho**2*(6*Lambda**2*lambda4*rho**2 + 4*Lambda**2*m_squared + 12*Lambda**2*mu**2 + 5*lambda6*rho**4)/(M_P_sq*(6*Lambda**2*lambda4*rho**2 + 4*Lambda**2*m_squared - 4*Lambda**2*mu**2 + 5*lambda6*rho**4))",
+      "effective_M_P_sq_K_QQ": "mu**2*rho**2*(6*Lambda**2*lambda4*rho**2 + 4*Lambda**2*m_squared + 12*Lambda**2*mu**2 + 5*lambda6*rho**4)/(6*Lambda**2*lambda4*rho**2 + 4*Lambda**2*m_squared - 4*Lambda**2*mu**2 + 5*lambda6*rho**4)",
+      "f_NN": "mu**2*rho**2",
+      "f_Nrho": "-2*mu**2*rho",
+      "f_rhorho": "-3*lambda4*rho**2/2 - m_squared + mu**2 - 5*lambda6*rho**4/(4*Lambda**2)",
+      "name": "independent_original_action_Schur_K_QQ_reproduction",
+      "ok": true
+    },
+    {
+      "assumptions": [
+        "rho>0",
+        "mu>0",
+        "M_rho^2>0"
+      ],
+      "mutation": "set K_QQ=0",
+      "mutation_result": "REJECTED_BY_POSITIVE_SCHUR_COMPLEMENT",
+      "name": "mutation_exact_K_QQ_zero_conflicts_with_stable_finite_density",
+      "ok": true
+    },
+    {
+      "determinant": "(C_J*q**2 + mu**2*rho**2)/H**2",
+      "kinetic_matrix": "Matrix([[(C_J*q**2 + mu**2*rho**2 + rho_dot**2)/H**2, -rho_dot/H], [-rho_dot/H, 1]])",
+      "lapse_solution": "(2*M_P_sq*R_dot + delta_rho*rho_dot)/(2*H*M_P_sq)",
+      "name": "independent_direct_FRW_constraint_elimination_reproduction",
+      "ok": true,
+      "q0_determinant": "mu**2*rho**2/H**2",
+      "shift_solution": "(-2*C_J*M_P_sq*R_dot*q**2 - C_J*delta_rho*q**2*rho_dot - 12*H**2*M_P_sq**2*R_dot - 4*H*M_P_sq**2*R*q**2 + 2*H*M_P_sq*V_rho*delta_rho + 2*H*M_P_sq*delta_rho*mu**2*rho + 2*H*M_P_sq*delta_rho_dot*rho_dot + 4*M_P_sq*R_dot*V + 2*V*delta_rho*rho_dot)/(4*H**2*M_P_sq**2)"
+    },
+    {
+      "mutated_determinant": "0",
+      "mutation": "mu->0 at q=0",
+      "mutation_result": "DETECTED_RANK_LOSS",
+      "name": "mutation_deleted_finite_charge_triggers_q0_rank_loss",
+      "ok": true
+    },
+    {
+      "name": "primary_summary_is_fail_closed",
+      "ok": true,
+      "primary_check_count": 11,
+      "route_disposition": "HOLD_PKM1_P0_B_STABILITY_FIRST_CONTROL_ONLY_P0_A_REJECTED"
+    },
+    {
+      "files": [
+        {
+          "actual": "AF6DAE99C704075681DAA8B220DF4261DA7DD8EC9AF0DCAAD76E2B9DFF1B53ED",
+          "expected": "AF6DAE99C704075681DAA8B220DF4261DA7DD8EC9AF0DCAAD76E2B9DFF1B53ED",
+          "name": "itsm_pkm1_finite_density_parent_hamiltonian.py",
+          "ok": true
+        },
+        {
+          "actual": "C0E0F1414BEDA764079A775B9B7FA1CAAD522FEEB403F80B26BD5B5648424FF7",
+          "expected": "C0E0F1414BEDA764079A775B9B7FA1CAAD522FEEB403F80B26BD5B5648424FF7",
+          "name": "PKM1_P0_FINITE_DENSITY_PARENT_SPEC.md",
+          "ok": true
+        },
+        {
+          "actual": "3AA68FF5BAA4A6677495422A2518177B3E1C11660EF5C1825C4645AEC9497F1E",
+          "expected": "3AA68FF5BAA4A6677495422A2518177B3E1C11660EF5C1825C4645AEC9497F1E",
+          "name": "itsm_pkm1_finite_density_parent_hamiltonian_summary.json",
+          "ok": true
+        },
+        {
+          "actual": "8872E9FCDB68A39081A6FBADEDDC0226FAD2D6F1AF394FAB4669EC941E19DE71",
+          "expected": "8872E9FCDB68A39081A6FBADEDDC0226FAD2D6F1AF394FAB4669EC941E19DE71",
+          "name": "itsm_pkm1_p0_frw_trajectory.csv",
+          "ok": true
+        },
+        {
+          "actual": "22EEEE32EEEDD8FD7C84808AB9487565FDD33A93FA66BB490A43AC9A80D4F327",
+          "expected": "22EEEE32EEEDD8FD7C84808AB9487565FDD33A93FA66BB490A43AC9A80D4F327",
+          "name": "ITSM_PKM1_P0_FINITE_DENSITY_PARENT_HAMILTONIAN.md",
+          "ok": true
+        }
+      ],
+      "name": "primary_manifest_all_hashes_match",
+      "ok": true
+    }
+  ],
+  "gate_firewall": {
+    "K_Q": "NOT_DERIVED_IN_LIVE_ROUTE",
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "V": "NOT_COMPUTED_IN_LIVE_ROUTE",
+    "a0": "NOT_DERIVED",
+    "canonical_action_replaced": false,
+    "commit_push_publication": false,
+    "downstream_opened": false
+  },
+  "independence": "No import from the primary calculation; decisive J Hessians, original-action radial Schur complement and direct ADM constraint elimination were reconstructed separately.",
+  "input_sha256": {
+    "primary_manifest": "628F46E66EED5A580A316DFA0BE330432B301B89EB76AF7C8B64C762E16D5F70",
+    "primary_script": "AF6DAE99C704075681DAA8B220DF4261DA7DD8EC9AF0DCAAD76E2B9DFF1B53ED",
+    "primary_summary": "3AA68FF5BAA4A6677495422A2518177B3E1C11660EF5C1825C4645AEC9497F1E",
+    "spec": "C0E0F1414BEDA764079A775B9B7FA1CAAD522FEEB403F80B26BD5B5648424FF7"
+  },
+  "mutation_tests": {
+    "deleted_finite_charge_at_q0": "DETECTED_RANK_LOSS",
+    "forced_K_QQ_zero": "REJECTED",
+    "reversed_J_sign": "REJECTED",
+    "static_ellipticity_substituted_for_khronon_Hessian": "REJECTED"
+  },
+  "physics_pass": false,
+  "route_disposition": "HOLD_PKM1_P0_B_STABILITY_FIRST_CONTROL_ONLY_P0_A_REJECTED",
+  "scientific_boundary": "This reproduces algebra and detects scoped mutations. It does not independently derive J, a0, a physical locality window, nonlinear stability, PPN phenomenology or topology."
+}

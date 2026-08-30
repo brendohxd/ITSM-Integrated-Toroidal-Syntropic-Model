@@ -1,4 +1,7 @@
 # Gate MAT-001: R5-P1 Scale-Compensator Fork Task 7
+
+> [!CAUTION]
+> **QUARANTINED FAILED COMPLIANCE CLAIM (G0, 2026-08-25).** Its stated coupling fails its own Cassini inequality, and no derived PPN, lensing, GW or merging-cluster calculation is supplied. It establishes no observational PASS.
 ## Observational Compliance (Screening, PPN, Lensing, and GWs)
 
 ### 1. Introduction

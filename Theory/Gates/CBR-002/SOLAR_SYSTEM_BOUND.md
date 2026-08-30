@@ -1,8 +1,8 @@
 # Gate CBR-002: Causality and Solar System Bounds
-## The Falsification of the Standalone Cubic Operator
+## Diagnostic limits of the standalone cubic operator
 
 ### 1. Introduction
-Independent review has demonstrated that solving the field equations for the standalone $Y^{3/2} \propto |\nabla\pi|^3$ operator organically reproduces the Baryonic Tully-Fisher Relation (BTFR). However, this exact solution also formally falsifies the standalone operator in the Solar System. This document logs the calculations that necessitate a pivot to an interpolating function.
+The standalone $Y^{3/2}\propto|\nabla\pi|^3$ operator produces the structural BTFR scaling in a static spherical ansatz. The same ansatz exposes a large unscreened-force diagnostic, but it is not a relativistic PPN calculation and does not by itself falsify every completion. This document records that bounded result and the work still required.
 
 ### 2. The Genuine Success: BTFR
 Varying the purely fractional kinetic action $\mathcal{L}_{grad} \propto \ell^2 |\nabla \pi|^3$ yields the exact field equation:
@@ -14,9 +14,9 @@ $$ |\pi'| \propto \frac{\sqrt{M/\ell^2 f}}{r} $$
 The anomalous fifth force is $a_5 = \pi'/f \propto \frac{\sqrt{M/\ell^2 f^3}}{r}$. 
 Setting this equal to the centripetal acceleration $v^2/r$ gives a circular velocity:
 $$ v^2 \propto \sqrt{M} \implies v^4 \propto M $$
-This is the **Baryonic Tully-Fisher Relation**, derived structurally with no curve fitting. Matching this to MOND gives the parameter constraint: $\ell^2 f^3 = 1/(4\pi G a_0)$, making ITSM a one-parameter theory.
+This is the **Baryonic Tully-Fisher scaling**, derived structurally with no curve fitting. Matching its normalization to the empirical MOND scale imposes the target-conditioned relation $\ell^2 f^3=1/(4\pi G a_0)$; it is not a blind parameter prediction and does not make the full ITSM a one-parameter theory.
 
-### 3. The Fatal Flaw: The Solar System Bound
+### 3. The Solar-System force-ratio diagnostic
 Because $\ell$ and $f$ are locked by the BTFR matching, the ratio of the anomalous fifth force $a_5$ to Newtonian gravity $a_N = GM/r^2$ becomes independent of the free parameters:
 $$ \frac{a_5}{a_N} = \frac{\sqrt{GMa_0}/r}{GM/r^2} = \sqrt{\frac{a_0 r^2}{GM}} = \frac{r}{r_M} $$
 where $r_M = \sqrt{GM/a_0}$ is the MOND radius.
@@ -29,22 +29,18 @@ At 1 AU from the Sun ($M = M_\odot$):
 At $r = 1$ AU ($1.496 \times 10^{11}$ m):
 $$ \frac{a_5}{a_N} \approx \frac{1.496 \times 10^{11}}{1.05 \times 10^{15}} \approx 1.4 \times 10^{-4} $$
 
-Cassini data constrains post-Newtonian deviations to $|\gamma - 1| < 2.3 \times 10^{-5}$. The predicted anomalous force is roughly **seven orders of magnitude too large** at Saturn, and an order of magnitude too large at Earth. 
+Cassini constrains the metric PPN parameter $|\gamma-1|<2.3\times10^{-5}$. The displayed fifth-force ratio is not itself $|\gamma-1|$, so these quantities cannot be compared as identical observables. The $1.4\times10^{-4}$ force-ratio diagnostic nevertheless shows that a relativistic matter-metric and screening calculation is load-bearing; it does not by itself establish a Cassini exclusion or an order-of-magnitude count.
 
-### 4. Vainshtein Screening Fails
-Because the field equation for the standalone cubic was solved *exactly*, this $1.4 \times 10^{-4}$ deviation *is* the full non-linear solution. There is no additional Vainshtein mechanism available to suppress it further. Furthermore, the claimed Vainshtein suppression $1/\sqrt{Z}$ requires large $Z = \ell^2 g_0$. But at 1 AU, $Z \approx 560$, which induces longitudinal superluminality ($c_L = \sqrt{2}c$). 
+### 4. Limits of the standalone ansatz
+Within the declared static, spherical standalone-cubic ansatz, the displayed profile is the exact nonlinear radial solution. This does not constitute the full relativistic PPN solution and does not exclude screening supplied by additional action terms or a distinct microscopic phase. Any claim involving $Z$, longitudinal characteristics or Vainshtein behavior must be rederived from the complete kinetic matrix in the same background and convention.
 
-### 5. Conclusion: Pivot to Interpolating Function
-The standalone $|\nabla \pi|^3$ operator is structurally incompatible with Solar System ephemerides and causality. It cannot be the complete theory. To preserve the BTFR success while saving the Solar System, the cubic term must be the **deep-MOND limit** of an interpolating function that restores standard canonical kinetic terms ($K_Q \to 1$) in strong gradient regimes. 
+### 5. Conclusion: completion required
+The standalone $|\nabla \pi|^3$ operator is not yet a viable complete Solar-System theory. To preserve its structural BTFR scaling, a completion must supply a relativistic matter metric, a controlled characteristic cone and a derived high-gradient response. An interpolating function is one candidate route, not an established resolution.
 
-This requires the immediate execution of Task **R-1: Specify the interpolating function.**
+This motivates a fail-closed screening/completion gate rather than a physics PASS.
 
-### 6. Resolution (Task R-1 Execution)
-By deploying the closed-form interpolating kinetic function $F(Y)$ derived in `R1_INTERPOLATING_FUNCTION.md`, the Solar System bounds are formally satisfied.
+### 6. Open candidate: condensate disruption / Landau criterion
 
-**The Cassini Bound:**
-At 1 AU, the derivative of the kinetic function converges exactly to $F_Y \to 1$. Thus, there is no Vainshtein suppression, and the scalar fifth force is simply determined by its fundamental coupling $\alpha = \frac{1}{4\pi G f^2}$.
-By setting $f > 60 M_{Pl}$, the coupling $\alpha < 2.3 \times 10^{-5}$. The fifth force $a_5$ safely hides beneath the Cassini ephemeris bounds. The BTFR remains completely unaffected because it only constraints the product $\ell^2 f^3$, allowing us to simultaneously shrink $\ell$ to preserve the galactic dynamics.
+Condensate disruption is a physically motivated candidate within ITSM's finite-density identity, but it is presently **not derived**. A valid route must obtain the excitation spectrum and critical velocity from the parent action, solve the environmental profile and defect transition, project the physical matter metric, and calculate PPN and lensing observables. Until those steps pass, no claim that the Solar System destroys the condensate or shuts off the fifth force is authorized.
 
-**The Causality Bound:**
-Because $F_Y \to 1$ at 1 AU, the longitudinal sound speed evaluates to $c_L^2 \to 1$. The superluminal propagation ($33c$) that plagued the standalone cubic is completely purged from the Solar System, restoring exact strict luminality ($c_L = c$). The superluminality ($c_L = \sqrt{2}c$) is pushed safely out into the deep-MOND galactic vacuum, where the Babichev-Mukhanov-Vikman (BMV) theorem guarantees it cannot form closed timelike curves.
+The target-conditioned scale matching proposed in `CBR-002_SCALE_DERIVATION.md` does not fix $f$ and $\ell$ as a blind prediction and cannot be used to declare either kinetic screening falsified or condensate disruption proven. CBR-002 and VOR-001 therefore remain open.

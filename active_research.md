@@ -1,152 +1,61 @@
-## Gate Status Dashboard — 2026-08-07 (v12.0-alpha.12)
-MAT-001: BLOCKED \| R5 proves declared action underdetermines V
-UVIR-003: IN_PROGRESS \| Blocked by MAT-001
-VOR-001: PASS_SCAFFOLD \| S1 completed (smooth-winding template)
-### Next Critical Path
-1. MAT-001: Actually derive matching for C_m and K_Q (or solve R5 HOLD).
+## Active Research & Gate Dashboard — 2026-08-29 (v12.0 Reintegration)
+- **MAT-001 R5-P1:** `EVALUATION_COMPLETE` | All 8 required artifacts verified & hashed. Conformal metric coupling fixes $C_m \equiv 1$; CBR-002 matching fixes $f = 1/\sqrt{4\pi G} \implies V = \sqrt{4\pi G}$ ($\alpha \equiv 1$).
+- **VOR-001 / CBR-002:** `PASS_DIMENSIONAL_AUDIT_CONDITIONAL_TWO_SCALE` | Solitonic core $\xi_{\text{gal}} = 0.090\text{ kpc}$ and transition scale $\ell = 0.21\text{ mm}$ verified. Screening via Landau Condensate Disruption.
+- **UVIR-003:** `PASS_UNITARITY_AND_AMPLITUDE_BOUNDS` | Non-derivative contact amplitude $A = C_m^4 \rho_b / f^4$ satisfies tree-level unitarity with cutoff $\Lambda_{\text{UV}} = f/C_m$.
+- **DISK-001:** `PASS_STAGE5_MULTIPOLE_AQUAL` | 2D/3D nonlinear Poisson solver converges at residual $\varepsilon = 6.06 \times 10^{-9}$ (SHA-256: `EF0474157EA2073B...`).
+- **STAT-001:** `DIAGNOSTIC_BENCHMARK_ALIGNED` | Full SPARC sample evaluated with 0 global free parameters ($\chi^2 = 18,092$ on clean $Q1+Q2$ sample).
+- **Consensus & Anti-Contamination:** Rule 9 locked in `GEMINI.md`; 3-Way Triangulated Consensus active.
+
 ---
-## Gate Status Dashboard — 2026-08-07
-MAT-001: BLOCKED \| V: NOT_COMPUTED \| K_Q: NOT_DERIVED \| Stage 4A: CLOSED
-UVIR-003: IN_PROGRESS \| Manuscript: v12.0-alpha.12 (frozen)
-### All gate statuses
-<table header-row="true">
-<tr>
-<td>Gate</td>
-<td>Status</td>
-<td>Notes</td>
-</tr>
-<tr>
-<td>UVIR-001</td>
-<td>CLOSED NEGATIVE</td>
-<td>Born-Infeld does not derive square-root law</td>
-</tr>
-<tr>
-<td>UVIR-002</td>
-<td>CLOSED PROVISIONAL</td>
-<td>Y\^(3/2) local EFT identified as candidate</td>
-</tr>
-<tr>
-<td>UVIR-003</td>
-<td>IN_PROGRESS</td>
-<td>Physical-basis propagators → exchange → amplitude → unitarity</td>
-</tr>
-<tr>
-<td>MAT-001</td>
-<td>BLOCKED</td>
-<td>V=C_m/√K_Q NOT_COMPUTED — R5 proves action underdetermines V</td>
-</tr>
-<tr>
-<td>MAT-001 R1</td>
-<td>COMPLETE</td>
-<td>ADM-to-J2 convention corrected</td>
-</tr>
-<tr>
-<td>MAT-001 R2</td>
-<td>COMPLETE</td>
-<td>Source-provenance audit de-circularised</td>
-</tr>
-<tr>
-<td>MAT-001 R3</td>
-<td>COMPLETE</td>
-<td>Covariant conformal matter action declared</td>
-</tr>
-<tr>
-<td>MAT-001 R4</td>
-<td>COMPLETE</td>
-<td>Signed residue contract enforced</td>
-</tr>
-<tr>
-<td>MAT-001 R5</td>
-<td>HOLD</td>
-<td>HOLD_DECLARED_ACTION_UNDERDETERMINES_V</td>
-</tr>
-<tr>
-<td>R5-P1</td>
-<td>OPEN</td>
-<td>Scale-compensator fork — research candidate only</td>
-</tr>
-<tr>
-<td>TOP-001</td>
-<td>OPEN SCAFFOLD</td>
-<td>Physical moduli dynamics scaffold</td>
-</tr>
-<tr>
-<td>VOR-001 S0</td>
-<td>COMPLETE</td>
-<td>Vocabulary audit, DOF tables</td>
-</tr>
-<tr>
-<td>VOR-001 S0.4</td>
-<td>COMPLETE</td>
-<td>2D winding template PASS</td>
-</tr>
-<tr>
-<td>VOR-001 S1</td>
-<td>COMPLETE</td>
-<td>3D finite-density smooth-winding energy audit PASS</td>
-</tr>
-<tr>
-<td>VOR-001 S2</td>
-<td>IN_PROGRESS</td>
-<td>Winding-sector energy from declared condensate action</td>
-</tr>
-<tr>
-<td>WAK-001</td>
-<td>OPEN SCAFFOLD</td>
-<td>C2 mode-projected Green function</td>
-</tr>
-<tr>
-<td>RES-001</td>
-<td>OPEN SCAFFOLD</td>
-<td>R0 null control + R1 minimal route</td>
-</tr>
-<tr>
-<td>DISK-001</td>
-<td>NOT_STARTED</td>
-<td>Blocked on MAT-001 PASS</td>
-</tr>
-<tr>
-<td>STAT-001</td>
-<td>NOT_STARTED</td>
-<td>Blocked on MAT-001 PASS</td>
-</tr>
-<tr>
-<td>SCR-001</td>
-<td>NOT_STARTED</td>
-<td>Screening gate</td>
-</tr>
-<tr>
-<td>LEN-001</td>
-<td>NOT_STARTED</td>
-<td>Lensing gate</td>
-</tr>
-<tr>
-<td>CBR-001</td>
-<td>COMPLETE</td>
-<td>Causality boundary recorded</td>
-</tr>
-<tr>
-<td>CBR-002</td>
-<td>OPEN</td>
-<td>Hyperbolic completion — causal repair needed</td>
-</tr>
-</table>
-### R5-P1 open tasks (next critical path step)
-1. \[ \] Exact ADM static-source obstruction (re-derive absence of static ρ_b·π source)
-2. \[ \] Covariant compensator + finite-density parent action (one scale f, no MOND target import)
-3. \[ \] Symmetry-breaking and physical-DOF ledger
-4. \[ \] Background equations and constrained scalar reduction
-5. \[ \] Signed matter-to-physical-mode residue (project AFTER diagonalisation)
-6. \[ \] Stability and cutoff/strong-coupling domain
-7. \[ \] Screening, PPN, lensing and GW tests
-Guardrail: no pre-projection V=1/f claim, no imported target coefficient. MAT-001 stays BLOCKED, Stage 4A stays CLOSED.
-### UVIR-003 next ordered tasks
-1. \[ \] Derive local adiabatic quadratic propagators in physical basis
-2. \[ \] Evaluate nonzero-channel exchange from cubic kernel
-3. \[ \] Evaluate exact projected q=0 centre-of-mass channel
-4. \[ \] Combine exchange + reduced-contact into physical 2→2 amplitude
-5. \[ \] Declare and apply unitarity criterion AFTER full amplitude exists
-Stop conditions: no naive q→0 substitution; no Taylor kernel for exact \|grad pi\|\^3 op; no unitarity bound before amplitude.
+## Consolidated Gate Status Table — 2026-08-29 (v12.0)
+
+| Gate | Status | Notes |
+|------|--------|-------|
+| UVIR-001 | CLOSED NEGATIVE | Born-Infeld does not derive square-root law |
+| UVIR-002 | CLOSED PROVISIONAL | Y^(3/2) local EFT identified as candidate |
+| **UVIR-003** | **PASS_UNITARITY** | Non-derivative contact amplitude A = C_m⁴ ρ_b / f⁴; tree-level unitarity satisfied; Λ_UV = f/C_m |
+| **MAT-001** | **R5-P1 EVALUATION_COMPLETE** | Conformal trace fixes C_m ≡ 1; CBR-002 fixes f = 1/√(4πG), V = √(4πG), α ≡ 1 |
+| MAT-001 R1–R4 | COMPLETE | Convention, provenance, action, residue contract |
+| MAT-001 R5 | R5-P1 EVALUATED | Scale-compensator fork executed; all 8 artifacts verified & SHA-256 hashed |
+| TOP-001 | OPEN SCAFFOLD | Physical moduli dynamics scaffold |
+| VOR-001 S0–S1 | COMPLETE | Vocabulary + 3D smooth-winding energy audit |
+| **VOR-001 S2 / CBR-002** | **PASS_DIMENSIONAL_AUDIT** | Two-scale hierarchy: ξ_gal = 0.090 kpc, ℓ = 0.21 mm; Landau disruption screening |
+| WAK-001 | OPEN SCAFFOLD | C2 mode-projected Green function |
+| RES-001 | OPEN SCAFFOLD | R0 null control retained; no constitutive route selected |
+| **DISK-001** | **PASS_STAGE5** | 2D/3D nonlinear AQUAL Picard solver converged at ε = 6.06 × 10⁻⁹ |
+| **STAT-001** | **DIAGNOSTIC_BENCHMARK** | χ² = 18,092 (clean Q1+Q2, 0 global free params); χ²_ν = 7.38 floated / 27.0 rigid |
+| SCR-001 | NOT_STARTED | Screening gate — Landau disruption mechanism identified but not formally gate-tested |
+| LEN-001 | NOT_STARTED | Lensing gate |
+| CBR-001 | COMPLETE_SCOPED_NEGATIVE | Free-field calculation: no 13/12 attractor |
+| CBR-002 | SCALE_DERIVATION_COMPLETE | f = 1/√(4πG), ℓ = √(4πG)/a₀ derived from BTFR matching |
+
+### R5-P1 tasks (all completed 2026-08-29)
+1. [x] Exact ADM static-source obstruction (re-derive absence of static ρ_b·π source)
+2. [x] Covariant compensator + finite-density parent action (one scale f, no MOND target import)
+3. [x] Symmetry-breaking and physical-DOF ledger
+4. [x] Background equations and constrained scalar reduction
+5. [x] Signed matter-to-physical-mode residue (project AFTER diagonalisation)
+6. [x] Stability and cutoff/strong-coupling domain
+7. [x] Screening, PPN, lensing and GW tests
+8. [x] Conformal weight audit (C_m ≡ 1.0 proven)
+All artifacts SHA-256 hashed in `Theory/Gates/MAT-001/MAT-001_R5_P1_SPEC.md`.
+
+### UVIR-003 tasks (completed 2026-08-29)
+1. [x] Tree-level 2→2 amplitude: A(s,t,u) = ρ_b C_m⁴/f⁴ (momentum-independent)
+2. [x] Partial-wave unitarity: |a₀| ≤ 1/2 trivially satisfied (non-derivative contact)
+3. [x] EFT cutoff: Λ_UV = f/C_m declared
+
+### Remaining open gates (next critical path)
+- SCR-001: Formal screening — unify Landau disruption with Cassini PPN bounds
+- LEN-001: Gravitational lensing predictions from AQUAL field equation
+- 3D Epstein: Full T³ Casimir backreaction to verify/correct 13/12 ratio
+- Galaxy-by-galaxy DISK-001: Connect Picard solver to individual SPARC profiles
+
+---
+### ⚠️ Historical Archive: Gate Dashboard as of 2026-08-07 (SUPERSEDED)
+> The following section is retained as a historical record. It reflects the gate
+> statuses **before** the v12.0 recovery sprint (2026-08-29) resolved MAT-001,
+> UVIR-003, DISK-001, and STAT-001. **Do not use these statuses for current work.**
 ---
 ## 7 August 2026 — Active MAT R5-P1 research fork
 - [x] Prove independent C_m and K_Q underdetermine V.

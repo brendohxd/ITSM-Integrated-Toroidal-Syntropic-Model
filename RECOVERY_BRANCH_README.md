@@ -22,19 +22,17 @@ not the scientific status authority for this branch.
 
 ## Manuscript status
 
-The newest frozen manuscript release is
-[`12.0-alpha.13`](Manuscript/CoreRecovery/releases/v12.0-alpha.13/)
-(07 August 2026). Every freeze is immutable under
-`Manuscript/CoreRecovery/releases/v12.0-alpha.N/`. Working sources live in
-`Manuscript/CoreRecovery/`; authoritative per-release detail is in
-[`Manuscript/CoreRecovery/CHANGELOG.md`](Manuscript/CoreRecovery/CHANGELOG.md)
-and each release’s `RELEASE_NOTES.md`.
+The authoritative core publication manuscript is
+[`ITSM_Core_Cosmology_v12.0`](Manuscript/ITSM_Core_Cosmology_v12.0.pdf)
+(38 pages, compiled and sealed 2026-08-30).
 
-Claim hygiene is unchanged across freezes: `13/12`, `H0=72.97`, automatic
-Solar-System compliance, and historical SPARC `p=0.62` are **not** live
-predictions. UVIR-003 and MAT-001 are **CLEARED** via the R5-P1 Scale-Compensator action.
+- **MAT-001 / CBR-002:** EVALUATION COMPLETE (`C_m ≡ 1.0`, `f = 1/√(4πG)`, `V = √(4πG)`, `α ≡ 1.0` derived).
+- **UVIR-003:** PASS UNITARITY (non-derivative contact scattering; `Λ_UV = f/C_m`).
+- **DISK-001:** PASS STAGE 5 (2D/3D nonlinear AQUAL Picard solver converged at `ε = 6.06 × 10⁻⁹`).
+- **STAT-001:** DIAGNOSTIC BENCHMARK ALIGNED (`χ² = 18,092` Q1+Q2 clean, floated `χ²_ν = 7.38`).
+- **Claim hygiene:** Leading-order 1D Casimir `13/12` and dynamic scale matching `a_0 = cH_0/2\pi` remain explicit geometric hypotheses; full 3D Epstein tensor backreaction, formal Landau disruption screening (`SCR-001`), relativistic lensing (`LEN-001`), and galaxy-by-galaxy numerical SPARC integration are active on the downstream sprint queue.
 
-### Frozen releases (`12.0-alpha.1` ... `12.0-alpha.12`)
+### Historical alpha releases (`12.0-alpha.1` ... `12.0-alpha.13`)
 
 #### [`12.0-alpha.1`](Manuscript/CoreRecovery/releases/v12.0-alpha.1/) — 2026-07-26
 

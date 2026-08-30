@@ -1,5 +1,8 @@
 # UVIR-003 Stage B R5-P1 Physical Quadratic Propagators
 
+> [!CAUTION]
+> **QUARANTINED TOY KERNEL (G0, 2026-08-25).** The desired diagonal positive structure is assumed rather than obtained by full constraint reduction. This artifact does not establish physical propagators or a UVIR subgate PASS.
+
 Date: 2026-08-07
 Branch: `recovery/v12-core-architecture`
 Scope: local adiabatic finite-`q` propagators for the R5-P1 Scale-Compensator Parent Action

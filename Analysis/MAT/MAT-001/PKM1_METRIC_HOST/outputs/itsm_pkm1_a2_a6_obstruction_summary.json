@@ -1,0 +1,144 @@
+{
+  "A2_symmetry_DOF": {
+    "result": "The smooth timelike phase chart has no dot(N) or dot(N_i) in J(Y)+K(Q), consistent with a khronometric constraint structure; the exact rho-Theta-metric Dirac count is not done.",
+    "status": "PARTIAL_UNITARY_GAUGE_DEGENERACY_INDICATOR"
+  },
+  "A3_static_limit": "PASS_CONDITIONAL_METRIC_HOSTED_MODIFIED_POISSON_REDUCTION_EXACT_AQUAL_ONLY_FOR_STATIC_K_NULL_OR_LOCAL_LIMIT",
+  "A4_stability": {
+    "open": [
+      "full Hamiltonian",
+      "IR Jeans band",
+      "Y=0 join",
+      "front characteristics",
+      "radiative stability"
+    ],
+    "status": "PARTIAL_STATIC_ELLIPTICITY_ONLY"
+  },
+  "A5_relativistic_observables": {
+    "open": [
+      "full parent metric slip",
+      "full PPN",
+      "Shapiro delay",
+      "nonlinear lensing",
+      "GW damping",
+      "compact objects"
+    ],
+    "status": "PARTIAL_J_SECTOR_ORDER_COUNT_ONLY"
+  },
+  "A6_cutoff_naturalness": {
+    "microscopic_result": "STABLE_ALGEBRAIC_AFFINE_Y_HEAVY_MODE_CANNOT_GENERATE_CONVEX_Y^(3/2)_ENERGY; AN_EXPLICIT_NONAFFINE_AUXILIARY_REPRESENTATION_EXISTS_BUT_IS_CRITICAL_AT_Y_ZERO_AND_NOT_DERIVED",
+    "naive_scale": "Lambda_0=sqrt(a0*M_P)",
+    "status": "HOLD"
+  },
+  "audit": "PKM1_A2_A6_BOUNDED_OBSTRUCTION_AND_SURVIVABILITY",
+  "calculation_status": "PASS_SCOPED_A2_A6_AUDIT",
+  "checks": [
+    {
+      "name": "candidate_entered_from_exact_static_screen",
+      "ok": true
+    },
+    {
+      "Q": "1/N",
+      "U_mu": "(-N,0,0,0)",
+      "Y": "D_i ln N D^i ln N",
+      "a_i": "D_i ln N",
+      "name": "unitary_gauge_ADM_identity",
+      "ok": true,
+      "phase_gauge": "Theta=mu_Theta*t on rho>0 and timelike-gradient chart"
+    },
+    {
+      "J_velocity_inventory": "J(Y) contains spatial D_i N only",
+      "K_velocity_inventory": "K(1/N) is algebraic in N",
+      "limitation": "Necessary degeneracy indicator only; not a completed Dirac constraint count",
+      "name": "no_new_lapse_or_shift_velocity_in_candidate_ADM_form",
+      "ok": true
+    },
+    {
+      "JY_a_i_a_j_order": "O(epsilon^2)",
+      "a_i_order": "O(epsilon)",
+      "consequence": "this particular J_Y*a_i*a_j product cannot by itself source linear traceless slip around the zero-acceleration background",
+      "limitation": "does not prove Phi=Psi for the full ITSM parent; other khronon, susceptibility, amplitude and constraint terms are uncomputed",
+      "name": "leading_PN_J_sector_anisotropic_product_is_quadratic",
+      "ok": true
+    },
+    {
+      "dimensions": {
+        "Lambda_0": 1,
+        "M_P": 1,
+        "a0": 1
+      },
+      "interpretation": "naive cubic scale only; full constrained amplitude may differ",
+      "name": "NDA_scale_dimension_and_identity",
+      "ok": true,
+      "relation": "Lambda_0=sqrt(a0*M_P)"
+    },
+    {
+      "eliminated_parent_F_second": "-b_prime**2/D_stable",
+      "name": "stable_algebraic_affine_Y_parent_obstruction",
+      "ok": true,
+      "required_deep_energy_F_second": "3*C/(4*sqrt(Y))",
+      "scope": "one or many stable algebraic heavy modes whose static Y dependence is affine; propagating, nonlocal, non-affine or constrained parents are not excluded"
+    },
+    {
+      "eliminated_energy": "2*Y**(3/2)/(3*a0)",
+      "name": "constructive_nonaffine_auxiliary_evasion",
+      "ok": true,
+      "parent_static_energy": "F(Y,s)=Y^2/(2*a0^2*s)+(a0^2/6)*s^3, s>0",
+      "stationary_curvature": "2*sqrt(Y)*a0",
+      "stationary_point": "sqrt(Y)/a0",
+      "status": "CONSTRUCTED_EXACT_REPRESENTATION_NOT_MICROSCOPIC_DERIVATION",
+      "zero_gradient": "s_star and its stiffness vanish at Y=0; constraint rank/strong coupling must be audited"
+    },
+    {
+      "excluded": [
+        "defect cores rho=0",
+        "null/spacelike phase-gradient patches",
+        "unproved global time foliation in nonzero spatial winding sectors"
+      ],
+      "name": "smooth_phase_domain_is_explicitly_restricted",
+      "ok": true,
+      "required": [
+        "rho>0",
+        "-nabla_Theta^2>0",
+        "single-valued normalized one-form U_mu"
+      ]
+    },
+    {
+      "candidate_relation": "PKM1 is a replacement force-host action class, not evidence completing the live separate-psi parent",
+      "live_parent_status": "HOLD_FORCE_SECTOR_NONLINEAR_COMPLETION_REQUIRED",
+      "name": "live_parent_not_silently_reused",
+      "ok": true
+    }
+  ],
+  "constructive_nonaffine_parent": {
+    "classification": "ENGINEERED_EXACT_REPRESENTATION_NOT_MICROSCOPIC_DERIVATION",
+    "critical_boundary": "s_star and d2F/ds2 both vanish as Y approaches zero",
+    "elimination": "s_star=sqrt(Y)/a0 gives F_eff=(2/3)*Y^(3/2)/a0",
+    "static_energy": "F(Y,s)=Y^2/(2*a0^2*s)+(a0^2/6)*s^3, s>0"
+  },
+  "gate_firewall": {
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "canonical_action_replaced": false,
+    "downstream_opened": false,
+    "physics_pass": false
+  },
+  "input_sha256": {
+    "core_architecture": "332489B09476A4403E8BBEBE81B3FF329A114005DAA1CF39E8B4738F95B9AC8A",
+    "nonlinear_parent": "9BF7AE321395AE1BE069087A38BD196E507E6ADCE0CA3E7BBC3965886EFCB2BE",
+    "pkm1_screen": "FFAF65406E664BA92A563BCC4C2E3A4C31454531EFFD437DF3198A90DDFBE9D5",
+    "u2": "3E2C97ABF8091858DCD108A7E3D41C243D268D38B1C1E6A179F3B460CD78C4A2"
+  },
+  "kill_criteria_next": [
+    "extra Ostrogradsky/ghost DOF after the full constrained reduction",
+    "negative Hamiltonian in the galactic nonzero-gradient band",
+    "no globally valid smooth phase foliation in the claimed domain",
+    "a0 or J inserted solely to match the desired force law with no microscopic or controlled EFT status",
+    "singular or non-closing auxiliary constraint at the Y=0 boundary",
+    "failure to recover the GR high-acceleration limit or an observationally acceptable full-parent metric slip"
+  ],
+  "recommended_next_action": "Use the explicit non-affine susceptibility representation as a hostile parent-action control inside one finite-density rho-Theta-metric ADM/Dirac calculation; reject it if the Y=0 constraint-rank change, Hamiltonian, or galactic-band characteristics are unhealthy. Do not run phenomenology or migrate a gate first.",
+  "route_disposition": "ADVANCE_PKM1_TO_FULL_PARENT_HAMILTONIAN_ONLY",
+  "scientific_boundary": "This audit establishes exact kinematic identities, order counting, an NDA relation, a scoped convexity obstruction, and a deliberately engineered non-affine auxiliary representation. The representation proves mathematical availability, not microscopic origin. This is not a full Dirac/Hamiltonian calculation and cannot inherit published khronon stability, PPN, lensing or cosmology as an ITSM result.",
+  "surviving_resolution": "Metric hosting bypasses the separate MAT residue and yields a universally sourced modified-Poisson equation for the displayed designed J. Exact AQUAL additionally requires a static-null K curvature or a controlled local regime where its Helmholtz term is negligible. The origin of J(Y) must be non-affine, constrained, propagating/nonlocal, critical, or fundamental EFT data."
+}

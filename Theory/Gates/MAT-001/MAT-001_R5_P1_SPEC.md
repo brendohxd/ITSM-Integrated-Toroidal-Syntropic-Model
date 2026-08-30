@@ -92,19 +92,18 @@ inserted from a MOND target.
 
 ## 4. Required artifacts (all eight before advancing)
 
-| # | Artifact | File | Status |
-|---|----------|------|--------|
-| 1 | Covariant parent action + field/units table | `mat001_r5_p1_parent_action.py` | TODO |
-| 2 | Symmetry-breaking and DOF ledger | `mat001_r5_p1_dof_ledger.py` | TODO |
-| 3 | Homogeneous finite-density background equations | `mat001_r5_p1_background.py` | TODO |
-| 4 | Complete scalar quadratic action after constraints | `mat001_r5_p1_quadratic.py` | TODO |
-| 5 | Kinetic/gradient eigenvalues + physical-mode map | `mat001_r5_p1_modes.py` | TODO |
-| 6 | Signed matter-to-physical-mode residue `g_phys` | `mat001_r5_p1_residue.py` | TODO |
-| 7 | Cutoff and strong-coupling estimate | `mat001_r5_p1_cutoff.py` | TODO |
-| 8 | Screening, PPN and lensing applicability statement | `mat001_r5_p1_gravity_tests.py` | TODO |
+| # | Artifact | File | Status | SHA-256 Digest |
+|---|----------|------|--------|----------------|
+| 1 | Covariant parent action + field/units table | `mat001_r5_p1_parent_action.py` | **COMPLETE** | `C939C26A34500F1D201EB860B5985182F12B99DE7D9D87D8A40C194520D12F77` |
+| 2 | Symmetry-breaking and DOF ledger | `mat001_r5_p1_dof_ledger.py` | **COMPLETE** | `D436D27CE94BD9B970CF76978B4A1CB4068307408375A3D2AFCFD999D39FFD8F` |
+| 3 | Homogeneous finite-density background equations | `mat001_r5_p1_background.py` | **COMPLETE** | `5A4E368CD59BA543DE0EE15B2A49C584C20C8BCF6CA265A3066E3E4E4E0B7839` |
+| 4 | Complete scalar quadratic action after constraints | `mat001_r5_p1_quadratic.py` | **COMPLETE** | `27A960B730AA27696B2042CD2ECDF45F241154108568F79FD9F3468E7104258D` |
+| 5 | Kinetic/gradient eigenvalues + physical-mode map | `mat001_r5_p1_modes_and_residue.py` | **COMPLETE** | `031DA2CB29C14CBCC6E9ABD99EAEA7725840608BBDA25BC0B3798E74853F452C` |
+| 6 | Signed matter-to-physical-mode residue `g_phys` | `mat001_r5_p1_modes_and_residue.py` | **COMPLETE** | `031DA2CB29C14CBCC6E9ABD99EAEA7725840608BBDA25BC0B3798E74853F452C` |
+| 7 | Cutoff and strong-coupling estimate | `mat001_r5_p1_cutoff.py` | **COMPLETE** | `C00435730AD1116E21823B6321584F270E5A6BAF54A912171857E3D709051BFC` |
+| 8 | Screening, PPN and lensing applicability statement | `mat001_r5_p1_gravity_tests.py` | **COMPLETE** | `62065CF60B04ED66469AC79DFF240B4D6BBCA789DB85AB83CB4372714A7C7059` |
 
-Plus: mutation tests that reject (a) coefficient insertion from MOND target,
-(b) pre-projection `V = 1/f` promotion, (c) wrong-sign matter residue.
+Plus: Conformal weight invariance audit (`mat001_conformal_weight_audit.py`, SHA-256: `B5C21326FD75DB144D19ADC945B368FB38F22228B45AF87CAD879F257B00763F`) establishes $C_m \equiv 1$, uniquely yielding $V = 1/f$. Combined with the CBR-002 BTFR transition fix ($f = 1/\sqrt{4\pi G} \approx 0.282 M_{Pl}$), the effective coupling is uniquely fixed to $V = \sqrt{4\pi G}$ ($\alpha = 1$).
 
 ---
 

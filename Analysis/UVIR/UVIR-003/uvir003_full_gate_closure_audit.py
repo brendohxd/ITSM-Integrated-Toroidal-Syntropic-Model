@@ -10,6 +10,7 @@ Tier-1 use: reproducible status table for recovery sessions and gate reviews.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 from typing import Any
@@ -242,9 +243,11 @@ def main() -> None:
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     out = args.output_dir / "uvir003_full_gate_closure_audit_summary.json"
-    with out.open("w", encoding="utf-8") as f:
-        json.dump(summary, f, indent=2, sort_keys=True)
-        f.write("\n")
+    payload = (json.dumps(summary, indent=2, sort_keys=True) + "\n").encode("utf-8")
+    out.write_bytes(payload)
+    digest = hashlib.sha256(payload).hexdigest().upper()
+    sidecar = out.with_suffix(".sha256")
+    sidecar.write_bytes(f"{digest}  {out.name}\n".encode("utf-8"))
 
     print("UVIR-003 full gate:", full_gate)
     print("MAT-001:", mat001)
@@ -253,6 +256,7 @@ def main() -> None:
     for k, v in criteria.items():
         print(f"  {k}: {v['status']}")
     print(f"STATUS: {summary['subgate_status']}")
+    print(f"JSON_SHA256: {digest}")
     if not audit_pass:
         raise SystemExit(1)
 

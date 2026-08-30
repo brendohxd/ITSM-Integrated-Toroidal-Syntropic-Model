@@ -1,0 +1,93 @@
+{
+  "A0_identity": {
+    "note": "The exact nonanalytic force operator remains a separate conditional force-sector route inside the declared finite-density/toroidal/open-system identity; it is not substituted for the condensate parent.",
+    "status": "PASS_BOUNDED_IDENTITY_FIDELITY"
+  },
+  "A1_action": {
+    "note": "The local operator is exact for v>0, but the regulator's generally covariant completion and the v=0 interface are not fixed; K_Q and the physical cutoff are unmatched.",
+    "status": "HOLD_RESTRICTED_BACKGROUND_ACTION_NOT_FULL_DOMAIN"
+  },
+  "A2_symmetry_DOF": {
+    "note": "Positive spatial Hessian eigenvalues establish a local gradient-sector result only. They are not a constrained Hamiltonian/ghost count for the coupled condensate-frame-force action.",
+    "status": "HOLD_LOCAL_HESSIAN_ONLY_FULL_CONSTRAINT_DOF_UNRESOLVED"
+  },
+  "K_Q_status": "NOT_DERIVED",
+  "MAT_001_status": "BLOCKED",
+  "UVIR_003_status": "IN_PROGRESS",
+  "audit": "UVIR003_U2_A0_A2_EXACT_NONZERO_GRADIENT_SCREEN",
+  "calculation_status": "PASS_AUDIT_PIPELINE",
+  "checks": [
+    {
+      "coefficients": [
+        "v**3",
+        "3*v**2*x",
+        "3*v*(2*x**2 + y**2 + z**2)/2",
+        "x*(2*x**2 + 3*y**2 + 3*z**2)/2",
+        "3*(y**4 + 2*y**2*z**2 + z**4)/(8*v)"
+      ],
+      "name": "exact_nonzero_gradient_series",
+      "ok": true
+    },
+    {
+      "distinct_eigenvalues": [
+        "6*A_IR*v",
+        "3*A_IR*v"
+      ],
+      "longitudinal": "6*A_IR*v",
+      "matrix": "Matrix([[6*A_IR*v, 0, 0], [0, 3*A_IR*v, 0], [0, 0, 3*A_IR*v]])",
+      "name": "anisotropic_spatial_hessian",
+      "ok": true,
+      "transverse": "3*A_IR*v"
+    },
+    {
+      "name": "zero_gradient_boundary_is_singular",
+      "ok": true,
+      "quartic": "3*(y**2 + z**2)**2/(8*v)"
+    },
+    {
+      "name": "independent_reproduction_matches_prior_local_artifact",
+      "ok": true
+    },
+    {
+      "name": "A0_identity_fidelity_is_declared",
+      "ok": true
+    },
+    {
+      "name": "A1_restricted_action_limitation_is_explicit",
+      "ok": true
+    },
+    {
+      "blockers": [
+        "M2_stability_declared_domain",
+        "M3_causality_declared_domain",
+        "M6_physical_cutoff",
+        "M7_matter_ready_for_MAT"
+      ],
+      "name": "A2_and_domain_blockers_remain_live",
+      "ok": true
+    },
+    {
+      "name": "gate_firewall_preserved",
+      "ok": true
+    }
+  ],
+  "force_regime_overlap_below_cutoff": "NOT_ESTABLISHED",
+  "ghost_or_double_count_result": "NO_LOCAL_SPATIAL_HESSIAN_GHOST_FOUND; FULL_COUPLED_DOF_TEST_NOT_DONE",
+  "input_sha256": {
+    "closure_audit": "31FD6EF69D73F48563C144AA1C8426AB51D41599434B298E1CD064F13E8C59B1",
+    "core_architecture": "332489B09476A4403E8BBEBE81B3FF329A114005DAA1CF39E8B4738F95B9AC8A",
+    "local_exact": "15B6E9F8BECB3D36D116943F6D107CC0182B1C2A53D9F3860AB41672085B1277",
+    "stage_a": "F73004C07E031672669D5CB3F098FADCD487CC6AB21EA30546E951AD1EE7033B",
+    "tier1_programme": "F2F5077D35C4AAD97C0BDC6C82F694CB69FCEE3CAB6F84B9FCB964567854D850"
+  },
+  "local_exact_result": {
+    "background": "grad(psi_bar)=v e_x, v>0",
+    "hessian_longitudinal": "6*A_IR*v",
+    "hessian_transverse": "3*A_IR*v",
+    "quartic": "3*(y**2 + z**2)**2/(8*v)",
+    "zero_gradient_join": "SINGULAR_NOT_DEFINED_BY_THIS_PATCH"
+  },
+  "physics_pass": false,
+  "route_disposition": "FREEZE_U2_AT_A0_A2_INCOMPLETE_ACTION_DOMAIN_AND_DOF",
+  "scientific_boundary": "This screen exactly verifies the local nonzero-gradient Y^(3/2) patch and its positive anisotropic spatial Hessian. It does not establish a full covariant action domain, the coupled constrained DOF count, a physical cutoff, causality, the v=0 join, or overlap with the galaxy force regime."
+}

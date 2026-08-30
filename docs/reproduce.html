@@ -60,31 +60,32 @@ conda activate itsm_env
       </div>
       <div class="grid">
         <article class="card">
-          <h3>CBR-001 — Casimir</h3>
+          <h3>MAT-001 &amp; UVIR-003 — Coupling &amp; Unitarity</h3>
+          <p>Conformal weight audit (C_m ≡ 1.0) and non-derivative 2→2 contact scattering amplitude.</p>
+          <pre><code>python Analysis/Conformal_Weight/mat001_conformal_weight_audit.py
+python Analysis/UVIR/uvir003_r5_p1_2to2_amplitude.py
+python Analysis/VOR/vor001_healing_length_test.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>DISK-001 — 2D/3D Nonlinear Poisson Solver</h3>
+          <p>Picard iteration solver with multipole boundary conditions (converged at \(\varepsilon = 6.06 \times 10^{-9}\)).</p>
+          <pre><code>python Analysis/Picard_Disk/disk001_stage5_multipole_aqual.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>Core Manuscript Build (v12.0)</h3>
+          <p>Full 38-page RevTeX 4.2 publication build with verified references and citations.</p>
+          <pre><code>cd Manuscript
+pdflatex -interaction=nonstopmode ITSM_Core_Cosmology_v12.0.tex
+bibtex ITSM_Core_Cosmology_v12.0
+pdflatex -interaction=nonstopmode ITSM_Core_Cosmology_v12.0.tex
+pdflatex -interaction=nonstopmode ITSM_Core_Cosmology_v12.0.tex</code></pre>
+        </article>
+        <article class="card">
+          <h3>CBR-001 — Casimir (Historical Scaffold)</h3>
           <p>Rectangular \(T^3\) lattice stress and free-field backreaction search.</p>
           <pre><code>cd Analysis/Casimir/CBR-001
 python casimir_t3_lattice.py
-python cbr001_stage2_standalone.py
-python cbr001_stage3_backreaction.py
-python cbr001_stage3b_ratio_test.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>UVIR-003 — field sector</h3>
-          <p>α.9 kernel baseline + post–α.10 path / domain audits.</p>
-          <pre><code>cd Analysis/UVIR/UVIR-003
-python uvir003_local_four_leg_kernel.py
-python uvir003_frw_multi_slice_mode_green.py
-python uvir003_nonzero_gradient_force_local.py
-python uvir003_declared_unitarity_eft_criterion.py
-python uvir003_declared_weak_coupling_domain.py
-python uvir003_full_gate_closure_audit.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>Identity tracks (optional)</h3>
-          <p>Open scaffolds — mathematical templates only, <code>physics_pass: false</code>.</p>
-          <pre><code>python Analysis/TOP/TOP-001/top001_s1_triaxial_fixed_volume_audit.py
-python Analysis/VOR/VOR-001/vor001_winding_template_audit.py
-# WAK-001: see Theory/Gates/WAK-001/</code></pre>
+python cbr001_stage2_standalone.py</code></pre>
         </article>
       </div>
     </section>

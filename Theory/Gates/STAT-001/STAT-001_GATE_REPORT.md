@@ -1,8 +1,11 @@
 # STAT-001: Gate Report
 
+> [!CAUTION]
+> **QUARANTINED INVALID GATE REPORT (G0, 2026-08-25).** The producer is an L-BFGS-B optimizer, not Bayesian MCMC; its named `chi2` includes prior penalties; the upstream coupling is hardcoded; and the reported fit values do not meet a Tier-1 pass criterion. Preserve the raw outputs only as exploratory provenance. STAT-001 is `NOT_STARTED_AS_CLOSED_GATE`.
+
 **Date:** 2026-08-07
-**Status:** PASS
-**Focus:** Statistical inference on SPARC rotation curves utilizing the Derived Path
+**Status:** NOT_STARTED (Blocked on MAT-001 PASS)
+**Focus:** Exploratory optimization benchmark on SPARC rotation curves (Diagnostic Provenance Only)
 
 ## Execution Summary
 The statistical pipeline (`stat001_inference_pipeline.py`) successfully fitted 175 SPARC rotation curves utilizing an algebraic deep-MOND approximation derived from the nonlinear AQUAL field.
@@ -50,6 +53,6 @@ To ensure rigorous honesty and direct comparability with the literature (which t
 *(Note: The remaining residual gap to $\chi^2_\nu \sim 2$ observed in full MCMC literature is strictly due to the lack of the master inclination catalog in the current repository, preventing the application of the $\pm 5\%$ physical inclination prior.)*
 
 ## Conclusion
-The phenomenological path provides a marginally better fit, as expected, given that $3700 \text{ (km/s)}^2/\text{kpc}$ is tuned historically to such rotation curves. However, the Geometric Derived Path (with *zero* free global tuning parameters) provides a highly competitive fit (reduced $\chi^2$ of 27 vs 25 in Rigid mode, and 13.1 vs 11.9 in Floated mode). 
+The phenomenological path provides a marginally better fit, as expected, given that $3700 \text{ (km/s)}^2/\text{kpc}$ is tuned historically to such rotation curves. The Geometric exploratory path provides reduced $\chi^2$ values of 27.0 in Rigid mode and 13.1 in Floated mode. 
 
-This is a massive success for the ITSM framework. The topological derivation of $a_0$ holds its own incredibly well against empirical tuning on real astronomical data, and behaves exactly according to literature expectations when subjected to standard Bayesian marginalization. STAT-001 is CLEARED.
+These results serve strictly as an exploratory diagnostic benchmark. In accordance with GEMINI.md Rule 7 and the Master Research Plan, because the upstream microscopic coupling in MAT-001 remains `BLOCKED` (with $V = C_m/\sqrt{K_Q}$ `NOT_COMPUTED`), STAT-001 is **NOT_STARTED / BLOCKED** and cannot be cleared until the foundational matter-plenum coupling is derived from first principles.

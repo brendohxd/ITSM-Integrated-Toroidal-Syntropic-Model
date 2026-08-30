@@ -1,8 +1,9 @@
 # ITSM Master Research Plan
 
 **Status:** Canonical workflow document for the recovery era  
-**Branch:** `recovery/v12-core-architecture`  
-**Last updated:** 2026-08-07
+**Branch:** `main` / `recovery/v12-core-architecture`  
+**Last updated:** 2026-08-30 (v12.0 Reintegration)  
+**v12.0 Reintegration Checkpoint:** `COMPLETE_ALIGNED`; MAT-001 R5-P1 evaluated (`C_m ≡ 1.0`, `α ≡ 1.0` derived from conformal Weyl trace and scale matching); UVIR-003 unitarity passed; DISK-001 2D/3D Picard solver converged at `ε = 6.06 × 10⁻⁹`; STAT-001 full SPARC benchmarked (`χ² = 18,092` Q1+Q2 clean); 38-page core cosmology manuscript released. Active downstream priorities: SCR-001, LEN-001, TOP-001 3D Epstein tensor, and galaxy-by-galaxy DISK-001 runs.  
 **Authority order (highest first):**
 
 1. This plan + `ITSM_Core_Architecture.md` + `ITSM_Core_Recovery_Plan.md`  
@@ -341,8 +342,8 @@ At a major fork, the programme kept **fixed \(C=2/3\)** and framed **AQUAL \(\al
 | Item | Policy |
 |------|--------|
 | Deep-MOND / AQUAL structure \(g_P=\Cobs\sqrt{a_0 g_N}\) | **Conditional IR baseline** of the weak-field sector |
-| \(\Cobs\simeq 1\) (under \(C_m=C_{\rm IR}\)) | **Default empirical hypothesis** for fits until MAT-001 computes otherwise |
-| \(\Cobs=2/3\) | Matching *target* only if MAT-001 or disks force it; not default |
+| \(\Cobs\simeq 1\) (under \(C_m=C_{\rm IR}\)) | **Preregistered empirical comparator** for exploratory fits; not a Derived coefficient |
+| \(\Cobs=2/3\) | **Preregistered historical comparator**; its trace-ratio derivation is rejected, while statistical selection remains unclosed |
 | Dual \(a_0=cH_0/2\pi\) and \(C=2/3\) as RAR | Still **excluded** (P1 \(4/9\) no-go) until numbers are redefined consistently |
 | ITSM uniqueness | Syntropy, toroid, condensate, wake, open circuit — **not** “worse SPARC fit because geometry” |
 
@@ -371,6 +372,7 @@ Do **not** silently drop or silently re-enter. Log disposition: Keep / Formalize
 | 5D bulk | mid-lineage | **Re-log** — Reject or new gate (do not silent-drop) |
 | Track B / non-standalone cubic | UVIR-002/003 | **Recorded alternative** — open if Track A stalls; not banned |
 | AQUAL \(\Cobs\sim 1\) IR | v11 control, never fair IR default | **Conditional baseline** (Sec. 6) |
+| \(a_0(z)\) evolution contradiction | Post-alpha.12 review | **Resolve before derivations** — If \(a_0 \propto c^2/L\), does \(a_0\) evolve because \(L\) is comoving, or is \(L\) a fixed physical scale? |
 
 Historical audit method: `Theory/History/00_CRITICAL_FINDINGS.md`, `Theory/History/DOCUMENT_INDEX.md`.
 
@@ -422,6 +424,7 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 10. For manuscripts: edit working sources only; freeze via `New-ManuscriptRelease.ps1`.  
 11. For papers: run publishing ban-list before any abstract freeze (packaging only — see Selective Publishing §0).  
 12. If identity and recovery path diverge, **pause and record disposition** (Sec. 7) — do not silently choose.
+13. **Status Propagation Rule:** When a derived claim's status is downgraded, every rejection that cited it as justification MUST be re-opened.
 
 ---
 

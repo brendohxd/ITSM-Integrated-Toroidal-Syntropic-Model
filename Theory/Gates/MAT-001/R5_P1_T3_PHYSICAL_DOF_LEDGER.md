@@ -1,4 +1,7 @@
 # Gate MAT-001: R5-P1 Scale-Compensator Fork Task 3
+
+> [!CAUTION]
+> **QUARANTINED INCOMPLETE AUDIT (G0, 2026-08-25).** A spatial Hessian is not the full constrained kinetic/ghost analysis. No MAT or UVIR status may be inferred from this artifact.
 ## Symmetry-Breaking and Physical-DOF Ledger
 
 ### 1. Introduction

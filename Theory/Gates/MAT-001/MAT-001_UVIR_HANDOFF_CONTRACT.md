@@ -30,8 +30,9 @@ The audit consumes and hashes eight current records:
 7. MAT natural/SI unit-chart contract; and
 8. MAT kinetic-chart blocker inventory.
 
-Where a SHA-256 sidecar exists, its digest must match the source JSON. Missing,
-malformed, mismatched or policy-upgraded inputs fail closed.
+Every consumed canonical JSON must have a SHA-256 sidecar whose digest matches
+the final canonical-LF source bytes. Missing sidecars, missing inputs, malformed
+records, mismatched digests or policy-upgraded inputs fail closed.
 
 ## Executable record
 
@@ -50,7 +51,7 @@ Analysis/MAT/MAT-001/HANDOFF/outputs/mat001_uvir_handoff_contract_summary.sha256
 Accepted deterministic SHA-256:
 
 ```text
-C6A18DC8FBBF77C22E3924505E07108228178777DF481C6E9BDC15AD668354B9
+8E9ED21F25B6EFC122D56B1FB0EA0AAB5C1182E1A2202F80125F9529F62B5DE5
 ```
 
 ## Result

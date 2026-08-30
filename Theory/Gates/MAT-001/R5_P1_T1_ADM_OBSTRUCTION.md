@@ -1,4 +1,7 @@
 # Gate MAT-001: R5-P1 Scale-Compensator Fork Task 1
+
+> [!CAUTION]
+> **QUARANTINED FAILED DERIVATION (G0, 2026-08-25).** The calculation derives a static linear source while claiming an obstruction and does not analyze the specified finite-density constrained parent. It is non-authoritative and cannot satisfy R5-P1.
 ## Derivation of the ADM Static-Source Obstruction
 
 ### 1. Introduction and Setup

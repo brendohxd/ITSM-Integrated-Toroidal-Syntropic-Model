@@ -1582,3 +1582,63 @@ Require a covariant action, DOF/symmetry ledger, finite-density background,
 complete constrained scalar reduction, signed physical-mode residue, stability,
 cutoff, screening, PPN and lensing checks. Do not promote MAT-001, `V`, `K_Q`,
 UVIR-003 or Stage 4A.
+
+## 2026-08-25 - PKM1 metric-hosted condensate-foliation broad-route screen
+
+Gates: alternate force-host research route; MAT-001 and UVIR-003 unchanged
+
+**What changed:** after the RG1-to-P2 negative checkpoint, a new action class
+was screened in which the smooth condensate phase defines the preferred
+foliation and the metric lapse hosts the low-acceleration response. Universal
+minimal metric coupling bypasses the separate direct `C_m/sqrt(K_Q)` residue
+inside this candidate. A deliberately designed `J(Y)` reproduces the AQUAL
+gradient operator exactly; a generic `K(Q)` adds a static Helmholtz term, so
+the exact AQUAL equation requires a static-`K` null/local limit. An engineered
+non-affine susceptibility represents the deep `Y^(3/2)` energy.
+
+**Hostile result:** stable algebraic heavy modes coupled affinely to `Y` cannot
+generate the required convex deep energy. The non-affine susceptibility is a
+local second-class auxiliary pair for `Y>0`, but its constraint bracket and
+stiffness vanish at `Y=0`. The representation is deep-regime only, does not
+derive `J` or `a0`, and supplies no high-acceleration GR join.
+
+**Decision:** record PKM1 as `OPEN_RESEARCH_CANDIDATE` and advance exactly one
+full finite-density parent ADM/Dirac calculation. It is the only survivor among
+the controls explicitly screened, not an exhaustive uniqueness theorem. The
+live separate-`psi` action remains a frozen control; no canonical action,
+gate, downstream stage, manuscript, website or publication status changes.
+
+## 2026-08-25 - PKM1-P0 finite-density parent Hamiltonian decision
+
+Gates: alternate force-host research route; MAT-001 and UVIR-003 unchanged
+
+**What changed:** froze one phase-defined, universally metric-coupled parent
+containing the canonical `rho,Theta` condensate and a fundamental EFT `J(Y)`,
+with no independent aether, force scalar, appended `K(Q)` or auxiliary
+susceptibility. Derived the exact unitary-gauge Hamiltonian and four-DOF Dirac
+count; proved the finite-charge `Y=0` branch retains both constraint and
+reduced-kinetic rank; reconstructed and integrated an on-shell canonical-
+condensate FRW existence branch; and independently reproduced the decisive
+Schur and ADM identities with four mutation controls.
+
+**Hostile findings:** the fast-transition interpolation used in the first
+PKM1 screen has
+`J_Y+2YJ_YY=(2y^3+y^2-1)/(1+y+y^2+y^3)^2` and changes radial khronon kinetic
+sign at `y=0.657298106138376...`; that control is rejected. The same canonical
+condensate enforces
+`K_QQ=rho_0^2 mu^2/(M_P^2 c_s^2)>0`, so exact AQUAL is not a P0 prediction.
+Stable pure-`J` kinetics also forbid a faster-than-`1/y` high-acceleration
+tail, creating a new PPN/locality burden.
+
+**What survives:** the stability-first comparator
+`mu=y/(1+y)`, `J=-2a0^2[y-ln(1+y)]` has positive static and khronon Hessians
+for every finite `y>0`. Its FRW two-scalar kinetic determinant is
+`(rho^2 mu^2+C_J q^2)/H^2>0`, including strict `q=0`. It remains fundamental
+EFT existence data only; `J`, `a0`, the locality window, nonlinear cutoff,
+stationary galactic Hamiltonian, PPN/GW tests, topology and reservoir remain
+underived.
+
+**Decision:** reject P0-A and retain P0-B on global `HOLD` for one bounded
+high-acceleration/locality falsification before any phenomenology. No canonical
+action is replaced. MAT-001 remains `BLOCKED`, UVIR-003 `IN_PROGRESS`, live
+`V` `NOT_COMPUTED`, live `K_Q` `NOT_DERIVED`, and no downstream gate opens.

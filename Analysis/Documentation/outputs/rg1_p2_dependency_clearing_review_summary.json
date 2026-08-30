@@ -1,0 +1,273 @@
+{
+  "audit": "RG1_P2_DEPENDENCY_CLEARING_REVIEW",
+  "calculation_status": "PASS_CROSS_PACKAGE_INTEGRITY_REVIEW",
+  "checkpoint_disposition": "NO_DOWNSTREAM_STAGE_OPENED",
+  "checks": [
+    {
+      "name": "M2_seal_valid",
+      "ok": true,
+      "seal": {
+        "files": [
+          {
+            "expected": "92BE47CD6F4DCFB4072A700DB47F4EB7E48B2D3925666966A27CEA18B382DE91",
+            "file": "mat001_m2_radial_heavy_reduction_summary.json",
+            "got": "92BE47CD6F4DCFB4072A700DB47F4EB7E48B2D3925666966A27CEA18B382DE91",
+            "ok": true
+          },
+          {
+            "expected": "1B4FA8AD9DEB5A370FEA157ED757BED7B2F4F7402BF7F38A9A46D63523870CA2",
+            "file": "MAT-001_M2_RADIAL_HEAVY_REDUCTION.md",
+            "got": "1B4FA8AD9DEB5A370FEA157ED757BED7B2F4F7402BF7F38A9A46D63523870CA2",
+            "ok": true
+          }
+        ],
+        "ok": true,
+        "seal": "Analysis\\MAT\\MAT-001\\M2_RADIAL_MATCHING\\outputs\\mat001_m2_radial_heavy_reduction.sha256"
+      }
+    },
+    {
+      "expected": "REJECT_MINIMAL_M2_CLASSES_SOFT_RESIDUE_NOT_DERIVED",
+      "got": "REJECT_MINIMAL_M2_CLASSES_SOFT_RESIDUE_NOT_DERIVED",
+      "name": "M2_disposition_exact",
+      "ok": true
+    },
+    {
+      "name": "M2_physics_pass_false",
+      "ok": true
+    },
+    {
+      "name": "U2_seal_valid",
+      "ok": true,
+      "seal": {
+        "files": [
+          {
+            "expected": "3E2C97ABF8091858DCD108A7E3D41C243D268D38B1C1E6A179F3B460CD78C4A2",
+            "file": "uvir003_u2_a0_a2_nonzero_gradient_summary.json",
+            "got": "3E2C97ABF8091858DCD108A7E3D41C243D268D38B1C1E6A179F3B460CD78C4A2",
+            "ok": true
+          },
+          {
+            "expected": "F6BCE2D0FFA336AE13223B84B7982369C3EB9802782C62953FCF9886FCAF958A",
+            "file": "UVIR-003_U2_A0_A2_NONZERO_GRADIENT.md",
+            "got": "F6BCE2D0FFA336AE13223B84B7982369C3EB9802782C62953FCF9886FCAF958A",
+            "ok": true
+          }
+        ],
+        "ok": true,
+        "seal": "Analysis\\UVIR\\UVIR-003\\U2_A0_A2\\outputs\\uvir003_u2_a0_a2_nonzero_gradient.sha256"
+      }
+    },
+    {
+      "expected": "FREEZE_U2_AT_A0_A2_INCOMPLETE_ACTION_DOMAIN_AND_DOF",
+      "got": "FREEZE_U2_AT_A0_A2_INCOMPLETE_ACTION_DOMAIN_AND_DOF",
+      "name": "U2_disposition_exact",
+      "ok": true
+    },
+    {
+      "name": "U2_physics_pass_false",
+      "ok": true
+    },
+    {
+      "name": "S0_seal_valid",
+      "ok": true,
+      "seal": {
+        "files": [
+          {
+            "expected": "18F2615AB9EA04050F45D202EA916D4C03F71425BACAAB67BF3485D16BA50B2F",
+            "file": "cbr002_s0_no_screening_control_summary.json",
+            "got": "18F2615AB9EA04050F45D202EA916D4C03F71425BACAAB67BF3485D16BA50B2F",
+            "ok": true
+          },
+          {
+            "expected": "8919932238085335BFE270E84E0143E15C36DF3F18EA82D12ABA3D5D0B062C71",
+            "file": "cbr002_s0_no_screening_benchmarks.csv",
+            "got": "8919932238085335BFE270E84E0143E15C36DF3F18EA82D12ABA3D5D0B062C71",
+            "ok": true
+          },
+          {
+            "expected": "BBD7D67853DCEB7C939123F6225B9444E6D2A34C3F58B6094977C5EB701DA57F",
+            "file": "CBR-002_S0_NO_SCREENING_CONTROL.md",
+            "got": "BBD7D67853DCEB7C939123F6225B9444E6D2A34C3F58B6094977C5EB701DA57F",
+            "ok": true
+          }
+        ],
+        "ok": true,
+        "seal": "Analysis\\CBR\\CBR-002\\S0_NO_SCREENING\\outputs\\cbr002_s0_no_screening_control.sha256"
+      }
+    },
+    {
+      "expected": "REJECT_S0_AS_COMPLETE_LOCAL_GRAVITY_ROUTE",
+      "got": "REJECT_S0_AS_COMPLETE_LOCAL_GRAVITY_ROUTE",
+      "name": "S0_disposition_exact",
+      "ok": true
+    },
+    {
+      "name": "S0_physics_pass_false",
+      "ok": true
+    },
+    {
+      "name": "VOR_TOP_S2_seal_valid",
+      "ok": true,
+      "seal": {
+        "files": [
+          {
+            "expected": "99008D6FAABFACB48BED50BE53F859FD6EBD5F57EAA90F007EFE7C59E3E35DC8",
+            "file": "vor_top_s2_winding_moduli_summary.json",
+            "got": "99008D6FAABFACB48BED50BE53F859FD6EBD5F57EAA90F007EFE7C59E3E35DC8",
+            "ok": true
+          },
+          {
+            "expected": "A23E94F0985A0D6867126F481C372F7D73F37F3752069911C4C683A426B7D53B",
+            "file": "VOR_TOP_S2_WINDING_MODULI_AUDIT.md",
+            "got": "A23E94F0985A0D6867126F481C372F7D73F37F3752069911C4C683A426B7D53B",
+            "ok": true
+          }
+        ],
+        "ok": true,
+        "seal": "Analysis\\VOR\\VOR-001\\S2_WINDING_MODULI\\outputs\\vor_top_s2_winding_moduli.sha256"
+      }
+    },
+    {
+      "expected": "REPAIR_VOR_S2_AND_REJECT_WINDING_ONLY_GENERIC_MODULI_STABILIZATION",
+      "got": "REPAIR_VOR_S2_AND_REJECT_WINDING_ONLY_GENERIC_MODULI_STABILIZATION",
+      "name": "VOR_TOP_S2_disposition_exact",
+      "ok": true
+    },
+    {
+      "name": "VOR_TOP_S2_physics_pass_false",
+      "ok": true
+    },
+    {
+      "name": "parent_gate_firewall",
+      "ok": true
+    },
+    {
+      "name": "vor_preregistered_failure_preserved",
+      "ok": true
+    },
+    {
+      "name": "no_downstream_stage_opened",
+      "ok": true
+    }
+  ],
+  "downstream": {
+    "SPARC": "CLOSED",
+    "cosmology": "CLOSED",
+    "disks": "CLOSED",
+    "lensing": "CLOSED",
+    "local_gravity": "CLOSED",
+    "publication": "CLOSED"
+  },
+  "package_results": {
+    "M2": {
+      "calculation_status": "PASS_CHEAP_SYMBOLIC_SCREEN",
+      "disposition": "REJECT_MINIMAL_M2_CLASSES_SOFT_RESIDUE_NOT_DERIVED",
+      "seal": {
+        "files": [
+          {
+            "expected": "92BE47CD6F4DCFB4072A700DB47F4EB7E48B2D3925666966A27CEA18B382DE91",
+            "file": "mat001_m2_radial_heavy_reduction_summary.json",
+            "got": "92BE47CD6F4DCFB4072A700DB47F4EB7E48B2D3925666966A27CEA18B382DE91",
+            "ok": true
+          },
+          {
+            "expected": "1B4FA8AD9DEB5A370FEA157ED757BED7B2F4F7402BF7F38A9A46D63523870CA2",
+            "file": "MAT-001_M2_RADIAL_HEAVY_REDUCTION.md",
+            "got": "1B4FA8AD9DEB5A370FEA157ED757BED7B2F4F7402BF7F38A9A46D63523870CA2",
+            "ok": true
+          }
+        ],
+        "ok": true,
+        "seal": "Analysis\\MAT\\MAT-001\\M2_RADIAL_MATCHING\\outputs\\mat001_m2_radial_heavy_reduction.sha256"
+      },
+      "summary_sha256": "92BE47CD6F4DCFB4072A700DB47F4EB7E48B2D3925666966A27CEA18B382DE91"
+    },
+    "S0": {
+      "calculation_status": "PASS_STATIC_NULL_CONTROL",
+      "disposition": "REJECT_S0_AS_COMPLETE_LOCAL_GRAVITY_ROUTE",
+      "seal": {
+        "files": [
+          {
+            "expected": "18F2615AB9EA04050F45D202EA916D4C03F71425BACAAB67BF3485D16BA50B2F",
+            "file": "cbr002_s0_no_screening_control_summary.json",
+            "got": "18F2615AB9EA04050F45D202EA916D4C03F71425BACAAB67BF3485D16BA50B2F",
+            "ok": true
+          },
+          {
+            "expected": "8919932238085335BFE270E84E0143E15C36DF3F18EA82D12ABA3D5D0B062C71",
+            "file": "cbr002_s0_no_screening_benchmarks.csv",
+            "got": "8919932238085335BFE270E84E0143E15C36DF3F18EA82D12ABA3D5D0B062C71",
+            "ok": true
+          },
+          {
+            "expected": "BBD7D67853DCEB7C939123F6225B9444E6D2A34C3F58B6094977C5EB701DA57F",
+            "file": "CBR-002_S0_NO_SCREENING_CONTROL.md",
+            "got": "BBD7D67853DCEB7C939123F6225B9444E6D2A34C3F58B6094977C5EB701DA57F",
+            "ok": true
+          }
+        ],
+        "ok": true,
+        "seal": "Analysis\\CBR\\CBR-002\\S0_NO_SCREENING\\outputs\\cbr002_s0_no_screening_control.sha256"
+      },
+      "summary_sha256": "18F2615AB9EA04050F45D202EA916D4C03F71425BACAAB67BF3485D16BA50B2F"
+    },
+    "U2": {
+      "calculation_status": "PASS_AUDIT_PIPELINE",
+      "disposition": "FREEZE_U2_AT_A0_A2_INCOMPLETE_ACTION_DOMAIN_AND_DOF",
+      "seal": {
+        "files": [
+          {
+            "expected": "3E2C97ABF8091858DCD108A7E3D41C243D268D38B1C1E6A179F3B460CD78C4A2",
+            "file": "uvir003_u2_a0_a2_nonzero_gradient_summary.json",
+            "got": "3E2C97ABF8091858DCD108A7E3D41C243D268D38B1C1E6A179F3B460CD78C4A2",
+            "ok": true
+          },
+          {
+            "expected": "F6BCE2D0FFA336AE13223B84B7982369C3EB9802782C62953FCF9886FCAF958A",
+            "file": "UVIR-003_U2_A0_A2_NONZERO_GRADIENT.md",
+            "got": "F6BCE2D0FFA336AE13223B84B7982369C3EB9802782C62953FCF9886FCAF958A",
+            "ok": true
+          }
+        ],
+        "ok": true,
+        "seal": "Analysis\\UVIR\\UVIR-003\\U2_A0_A2\\outputs\\uvir003_u2_a0_a2_nonzero_gradient.sha256"
+      },
+      "summary_sha256": "3E2C97ABF8091858DCD108A7E3D41C243D268D38B1C1E6A179F3B460CD78C4A2"
+    },
+    "VOR_TOP_S2": {
+      "calculation_status": "PASS_HOSTILE_SYMBOLIC_AUDIT",
+      "disposition": "REPAIR_VOR_S2_AND_REJECT_WINDING_ONLY_GENERIC_MODULI_STABILIZATION",
+      "seal": {
+        "files": [
+          {
+            "expected": "99008D6FAABFACB48BED50BE53F859FD6EBD5F57EAA90F007EFE7C59E3E35DC8",
+            "file": "vor_top_s2_winding_moduli_summary.json",
+            "got": "99008D6FAABFACB48BED50BE53F859FD6EBD5F57EAA90F007EFE7C59E3E35DC8",
+            "ok": true
+          },
+          {
+            "expected": "A23E94F0985A0D6867126F481C372F7D73F37F3752069911C4C683A426B7D53B",
+            "file": "VOR_TOP_S2_WINDING_MODULI_AUDIT.md",
+            "got": "A23E94F0985A0D6867126F481C372F7D73F37F3752069911C4C683A426B7D53B",
+            "ok": true
+          }
+        ],
+        "ok": true,
+        "seal": "Analysis\\VOR\\VOR-001\\S2_WINDING_MODULI\\outputs\\vor_top_s2_winding_moduli.sha256"
+      },
+      "summary_sha256": "99008D6FAABFACB48BED50BE53F859FD6EBD5F57EAA90F007EFE7C59E3E35DC8"
+    }
+  },
+  "parent_status": {
+    "K_Q": "NOT_DERIVED",
+    "MAT_001": "BLOCKED",
+    "SCR_001": "NOT_OPENED",
+    "TOP_001": "OPEN_SCAFFOLD_ONLY",
+    "UVIR_003": "IN_PROGRESS",
+    "V": "NOT_COMPUTED",
+    "VOR_001": "OPEN_SCAFFOLD_ONLY"
+  },
+  "physics_pass": false,
+  "plan_sha256": "D6190032CA18A0B3B3F2352A3DE8C96F9A1D597BD8A617C53142AAEC4B97F1DB",
+  "scientific_boundary": "This review verifies package integrity, deterministic seals, exact dispositions and gate firewalls. It does not independently upgrade any scientific result or authorize downstream execution, commit, push, deployment or publication."
+}

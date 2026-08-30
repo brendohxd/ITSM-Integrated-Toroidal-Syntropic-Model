@@ -1,5 +1,8 @@
 # MAT-001 R6 Gate Clearance
 
+> [!CAUTION]
+> **QUARANTINED / INVALID GATE DECISION (G0, 2026-08-25).** This child report contradicts the signed R5 parent decision and did not derive the required physical-mode residue. It does not clear MAT-001, compute `V`, derive `K_Q`, reopen Stage 4A or authorize downstream claims. Preserved only as contaminated provenance.
+
 Date: 2026-08-07
 Branch: `recovery/v12-core-architecture`
 Scope: Formal elevation of the R5-P1 Scale-Compensator Action to the Derived Core Architecture, clearing the MAT-001 Gate.

@@ -97,8 +97,8 @@ def sidecar_contract(path: Path, digest: str | None) -> dict[str, Any]:
     if not sidecar.is_file():
         return {
             "present": False,
-            "required": False,
-            "ok": True,
+            "required": True,
+            "ok": False,
             "recorded": None,
         }
     try:

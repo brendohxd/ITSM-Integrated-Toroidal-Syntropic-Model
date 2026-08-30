@@ -1,0 +1,95 @@
+{
+  "K_Q_status": "NOT_DERIVED",
+  "MAT_001_status": "BLOCKED",
+  "V_status": "NOT_COMPUTED",
+  "audit": "MAT001_M2_RADIAL_HEAVY_MODE_REDUCTION",
+  "calculation_status": "PASS_CHEAP_SYMBOLIC_SCREEN",
+  "candidate_action_results": {
+    "derivative_mixing": "NO_LONG_RANGE_SOURCE_POLE",
+    "direct_psi_matter_vertex": "INDEPENDENT_INPUT_NOT_RADIAL_DERIVATION",
+    "mass_mixing": "LIFTS_MASSLESS_MODE_UNLESS_TUNED",
+    "tuned_mass_mixing": "LONG_RANGE_RESIDUE_DEPENDS_ON_INDEPENDENT_WILSON_COMBINATION"
+  },
+  "checks": [
+    {
+      "name": "live_force_host_has_no_matter_vertex",
+      "ok": true
+    },
+    {
+      "name": "live_same_chart_bundle_absent",
+      "ok": true
+    },
+    {
+      "matter_metric": "g_tilde_munu=A(psi)^2*g_munu",
+      "name": "declared_matter_action_targets_force_scalar_not_radial_mode",
+      "ok": true
+    },
+    {
+      "dimensions": {
+        "T": 4,
+        "Z_psi": 0,
+        "Z_sigma": 0,
+        "eta": 0,
+        "g_psi": -1,
+        "g_sigma": -1,
+        "m": 1,
+        "mu": 2,
+        "p2": 2,
+        "psi": 1,
+        "sigma": 1
+      },
+      "name": "mass_dimensions_close",
+      "ok": true
+    },
+    {
+      "name": "derivative_mixing_has_no_soft_source_pole",
+      "ok": true,
+      "soft_response": "eta*g_sigma/(Z_psi*Z_sigma*m_sigma_sq)",
+      "soft_vertex": "0"
+    },
+    {
+      "induced_zero_momentum_operator": "-mu_mix**2/(Z_sigma*m_sigma_sq)",
+      "name": "mass_mixing_lifts_massless_force_mode",
+      "ok": true
+    },
+    {
+      "Z_eff": "(Z_psi*Z_sigma*m_sigma_sq**2 + mu_mix**2)/(Z_sigma*m_sigma_sq**2)",
+      "counterterm": "mu_mix**2/(Z_sigma*m_sigma_sq)",
+      "free_symbols": [
+        "Z_psi",
+        "Z_sigma",
+        "g_sigma",
+        "m_sigma_sq",
+        "mu_mix"
+      ],
+      "g_eff_soft": "-g_sigma*mu_mix/(Z_sigma*m_sigma_sq)",
+      "g_phys_over_sqrt_Z": "-g_sigma*mu_mix/(sqrt(Z_sigma)*sqrt(Z_psi*Z_sigma*m_sigma_sq**2 + mu_mix**2))",
+      "name": "tuned_massless_residue_remains_independent_wilson_combination",
+      "ok": true
+    },
+    {
+      "direct_residue": "g_psi/sqrt(Z_psi)",
+      "name": "direct_force_vertex_is_not_derived_by_radial_integration",
+      "ok": true
+    },
+    {
+      "name": "regular_uncoupled_limit",
+      "ok": true,
+      "values": [
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "input_sha256": {
+    "force_hosting": "288F5633AF2851E9292BF591A26C21ED9203BB1CF0611C0C78AE834324E761B0",
+    "live_export": "A455947CC8F3566A6660064DC91BAA89B8EF678018FCD8A38B111C9B9544494B",
+    "parent_condensate": "9BF7AE321395AE1BE069087A38BD196E507E6ADCE0CA3E7BBC3965886EFCB2BE",
+    "r3_matter": "99F712392F0DD42820D760FDAA7D1CDAEA1E301D04D610D5C4B49C663377F676"
+  },
+  "live_action_result": "STATIC_RADIAL_MATTER_SOURCE_ABSENT",
+  "physics_pass": false,
+  "route_disposition": "REJECT_MINIMAL_M2_CLASSES_SOFT_RESIDUE_NOT_DERIVED",
+  "scientific_boundary": "This is a quadratic soft-limit no-go for the live source inventory and the two minimal radial-to-force mixing classes tested. It is not a theorem against every nonlinear, symmetry-locked or multi-field UV completion."
+}

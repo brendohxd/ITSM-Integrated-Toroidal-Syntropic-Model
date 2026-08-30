@@ -1,4 +1,7 @@
 # Gate UVIR-003: Physical Scattering Amplitude and Unitarity Bound
+
+> [!CAUTION]
+> **QUARANTINED WRONG-BRANCH DRAFT (G0, 2026-08-25).** The static-gradient sign of the declared invariant is inconsistent and the anisotropic Hessian is replaced by an isotropic ansatz. This is not a physical-propagator derivation.
 ## Task 1: Local Adiabatic Quadratic Propagators in Physical Basis
 
 ### 1. Introduction

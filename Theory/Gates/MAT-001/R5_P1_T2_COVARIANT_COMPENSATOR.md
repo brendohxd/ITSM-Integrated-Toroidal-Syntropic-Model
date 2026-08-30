@@ -1,4 +1,7 @@
 # Gate MAT-001: R5-P1 Scale-Compensator Fork Task 2
+
+> [!CAUTION]
+> **QUARANTINED NEGATIVE TOY ROUTE (G0, 2026-08-25).** The real-scalar compensator is not the specified finite-density condensate parent and its own analysis leaves the controlling scales free. Retain only as a negative research note; it does not complete R5-P1.
 ## Covariant Compensator and Finite-Density Parent Action
 
 ### 1. Introduction

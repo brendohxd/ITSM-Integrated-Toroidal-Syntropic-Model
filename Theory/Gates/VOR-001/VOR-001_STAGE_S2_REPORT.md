@@ -1,7 +1,17 @@
 # VOR-001 Stage S2 — Winding-Sector Energy Report
 
+> [!CAUTION]
+> **SUPERSEDED PASS DISPOSITION (hostile audit, 2026-08-25).** The original
+> runner evaluated S2-T02 with `lambda=100000`, bypassing the preregistered
+> `lambda=100, omega=1` point. At that point the exact relative deviation is
+> `1/200 = 0.5%`, which fails the stated `<0.1%` criterion. The corrected
+> disposition is `FAIL_PREREGISTERED_T02; OTHER_SCOPED_CONTROLS_SURVIVE`.
+> See `Analysis/VOR/VOR-001/S2_WINDING_MODULI/outputs/` for the deterministic
+> hostile audit. The historical text below is retained as provenance and is
+> not the current result.
+
 **Date:** 2026-08-07
-**Status:** `OPEN_SCAFFOLD_ONLY`
+**Status:** `SUPERSEDED_PRIOR_PASS_PROVENANCE`
 **Branch:** `recovery/v12-core-architecture`
 **physics_pass:** false
 

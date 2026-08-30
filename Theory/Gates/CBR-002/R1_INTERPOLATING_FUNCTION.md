@@ -1,4 +1,7 @@
 # Gate CBR-002: Task R-1
+
+> [!CAUTION]
+> **QUARANTINED DESIGNED-CLOSURE DRAFT (G0, 2026-08-25).** This function is constructed to meet target asymptotics and does not establish a microscopic derivation, a complete relativistic characteristic analysis, or Solar-System compliance. It is non-authoritative CBR-002 provenance.
 ## The Exact Interpolating Function and the Causality Theorem
 
 ### 1. The Design Constraints

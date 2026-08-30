@@ -1,4 +1,9 @@
-# ITSM tier-1 forward plan (hurdles 1–7)
+# ITSM tier-1 forward plan (hurdles 1–7) — superseded
+
+> **Superseded on 2026-08-23:** Retained as recovery-programme history. The
+> current forward route-testing authority is
+> [`ITSM_Tier1_Route_Test_Programme.md`](ITSM_Tier1_Route_Test_Programme.md).
+> No completion or status statement below overrides the current gate dashboard.
 
 **Branch:** `recovery/v12-core-architecture`  
 **Opened:** 2026-08-06  
