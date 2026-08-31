@@ -60,11 +60,36 @@ conda activate itsm_env
       </div>
       <div class="grid">
         <article class="card">
-          <h3>MAT-001 &amp; UVIR-003 — Coupling &amp; Unitarity</h3>
-          <p>Conformal weight audit (C_m ≡ 1.0) and non-derivative 2→2 contact scattering amplitude.</p>
-          <pre><code>python Analysis/Conformal_Weight/mat001_conformal_weight_audit.py
-python Analysis/UVIR/uvir003_r5_p1_2to2_amplitude.py
-python Analysis/VOR/vor001_healing_length_test.py</code></pre>
+          <h3>TOP-001 &amp; CBR-002 — 3D Casimir &amp; Driven Moduli</h3>
+          <p>Full 3D Epstein zeta function tensor on flat \(T^3\) and Raychaudhuri dynamical backreaction solver.</p>
+          <pre><code>python Analysis/TOP/TOP-001/top001_3d_epstein_casimir_tensor.py
+python Analysis/TOP/TOP-001/top001_driven_moduli_backreaction_solver.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>WAK-001 — Bullet Cluster Causal Wake</h3>
+          <p>Retarded wave equation in finite-density superfluid vacuum reproducing weak-lensing separation (\(\Delta x = 21.0\text{ kpc}\)).</p>
+          <pre><code>python Analysis/WAK/WAK-001/wak001_bullet_cluster_solver.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>RES-001 — Syntropic Master Equation</h3>
+          <p>Lindblad open-system master equation proving 3-sector covariance (\(\nabla_\mu T^{\mu\nu}_{\rm total} \equiv 0\)) and Second Law (\(\dot{S}_{\rm total} \ge 0\)).</p>
+          <pre><code>python Analysis/RES/RES-001/res001_lindblad_master_equation.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>ASTRO-001 — Jeans Mass &amp; Stellar IMF</h3>
+          <p>Modified Jeans dispersion relation deriving SPARC stellar mass-to-light ratio \(\Upsilon_{\rm disk} \approx 0.50 M_\odot/L_\odot\).</p>
+          <pre><code>python Analysis/Astro/ASTRO-001/astro001_jeans_fragmentation_solver.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>COS-001 &amp; PERT-001 — Boltzmann CMB &amp; \(S_8\)</h3>
+          <p>Relativistic sound horizon \(r_s = 144.56\text{ Mpc}\) and dual-gravity growth reconciling \(S_8 = 0.798\).</p>
+          <pre><code>python Analysis/Cosmology/COS-001/cos001_pert001_boltzmann_solver.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>DISK-001 &amp; STAT-001 — SPARC Pipeline</h3>
+          <p>175-galaxy SPARC database ingestion and 2D/3D AQUAL Picard solver evaluation.</p>
+          <pre><code>python Analysis/DISK/DISK-001/disk001_stage5_multipole_bc.py
+python Analysis/DISK/DISK-001/disk001_sparc_galaxy_pipeline.py</code></pre>
         </article>
         <article class="card">
           <h3>VOR, SCR &amp; LEN — Phenomenological Gates</h3>
@@ -75,21 +100,6 @@ python Analysis/Screening/SCR-001/scr001_landau_screening_solver.py
 python Analysis/Lensing/LEN-001/len001_gravitational_lensing_solver.py</code></pre>
         </article>
         <article class="card">
-          <h3>DISK-001 &amp; STAT-001 — SPARC Pipeline</h3>
-          <p>175-galaxy SPARC database ingestion and 2D/3D AQUAL Picard solver evaluation.</p>
-          <pre><code>python Analysis/DISK/DISK-001/disk001_stage5_multipole_bc.py
-python Analysis/DISK/DISK-001/disk001_sparc_galaxy_pipeline.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>Modular Paper Suite Build (P1–P4)</h3>
-          <p>Multi-pass LaTeX builds for the four modular companion papers.</p>
-          <pre><code># Build P1, P2, P3, P4
-pdflatex -interaction=nonstopmode papers/P1-Scale-Matching-Reconstruction/main.tex
-pdflatex -interaction=nonstopmode papers/P2-Rectangular-T3-Casimir/main.tex
-pdflatex -interaction=nonstopmode papers/P3-Observational-Program/main.tex
-pdflatex -interaction=nonstopmode papers/P4-SPARC-Kinematics/main.tex</code></pre>
-        </article>
-        <article class="card">
           <h3>Core Manuscript Build (v12.0)</h3>
           <p>Full 38-page RevTeX 4.2 publication build with verified references and citations.</p>
           <pre><code>cd Manuscript
@@ -97,13 +107,6 @@ pdflatex -interaction=nonstopmode ITSM_Core_Cosmology_v12.0.tex
 bibtex ITSM_Core_Cosmology_v12.0
 pdflatex -interaction=nonstopmode ITSM_Core_Cosmology_v12.0.tex
 pdflatex -interaction=nonstopmode ITSM_Core_Cosmology_v12.0.tex</code></pre>
-        </article>
-        <article class="card">
-          <h3>CBR-001 — Casimir (Historical Scaffold)</h3>
-          <p>Rectangular \(T^3\) lattice stress and free-field backreaction search.</p>
-          <pre><code>cd Analysis/Casimir/CBR-001
-python casimir_t3_lattice.py
-python cbr001_stage2_standalone.py</code></pre>
         </article>
       </div>
     </section>
