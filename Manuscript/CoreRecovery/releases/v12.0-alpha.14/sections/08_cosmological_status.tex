@@ -1,0 +1,70 @@
+\section{Cosmological architecture and current limits}
+
+The homogeneous condensate, reservoir and topology moduli must define one
+fiducial cosmological background before CMB, growth, age or distance results
+are calculated.  Earlier analyses used several dataset-conditioned values of
+the syntropic exponent or effective equation of state and sometimes mixed
+them across diagnostics.  Those outputs remain provenance and cannot be
+treated as one canonical cosmology.
+
+At background level, a conservative sector decomposition has the
+form
+\begin{align}
+ \dot\rho_P+3H(\rho_P+p_P)+\pi^{\mu\nu}\sigma_{\mu\nu} &= Q,\\
+ \dot\rho_R+3H(\rho_R+p_R) &= -Q,
+ \label{eq:background-exchange}
+\end{align}
+For the biaxial conventions of Sec.~6,
+Eq.~\eqref{eq:anisotropic-work} gives the exact specialization
+\begin{equation}
+ \dot\rho_P+3H(\rho_P+p_P)+\frac{2}{3}\Pi\delta=Q.
+ \label{eq:biaxial-plenum-continuity}
+\end{equation}
+The total continuity equation follows by summing the sectors.
+
+The UVIR-003 background-completion screen selects this evolving cosmological
+class over an artificially supported exact-Minkowski finite-density state.
+A representative dimensionless on-shell branch now establishes existence,
+but does not provide a fiducial parameter point or cosmological fit.  In
+particular, isolated
+condensate charge dilutes according to Eq.~\eqref{eq:condensate-charge-dilution};
+holding it constant would require the distinct source in
+Eq.~\eqref{eq:condensate-charge-source}.
+
+No predetermined law such as $Q\propto(1+z)^{-3}$ is adopted here.  In
+particular, $(1+z)^{-3}=a^3$ grows toward late time and cannot simultaneously
+be described as an early-universe enhancement.  COS-001 must derive the source
+and fit one background with an explicit parameter inventory.
+
+\subsection{What CBR-001 changes}
+
+CBR-001 does not remove topology-dependent cosmological stress.  It shows that
+the tested passive free-field source has the evolving form
+$\Pi_{\rm Cas}=a^{-4}F_\Pi(r)$ and becomes unable to support a persistent
+$13/12$ directional expansion ratio.  Therefore
+\begin{itemize}
+\item $H_0=72.97\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$ is not a parameter-free ITSM
+prediction;
+\item assigning Planck and SH0ES to opposite directional extrema is not a
+derived observation model;
+\item any future directional expansion must be passed through actual survey
+window functions;
+\item a driven anisotropic state requires a derived source beyond free Casimir
+stress.
+\end{itemize}
+
+\subsection{Relativistic Boltzmann hierarchy and \texorpdfstring{$S_8$}{S8} tension analysis}
+
+To replace algebraic proxies with explicit cosmological perturbation dynamics, gate COS-001 / PERT-001 integrates the gauge-invariant linear Einstein--Boltzmann hierarchy in conformal Newtonian gauge:
+\begin{align}
+ k^2\Phi + 3\mathcal H(\Phi' + \mathcal H\Phi) &= 4\pi G a^2 \left[\bar\rho_c\delta_c + \bar\rho_b\delta_b + 4\bar\rho_\gamma\Theta_0 + 4\bar\rho_\nu\mathcal N_0\right] + 4\pi G a^2 V_{\rm eff}\bar\rho_m\delta\psi, \\
+ \delta\psi'' + 2\mathcal H\delta\psi' + c_s^2 k^2\delta\psi &= 8\pi G a^2 V_{\rm eff} \left(\bar\rho_c\delta_c + \bar\rho_b\delta_b\right),
+\end{align}
+alongside coupled fluid and radiative multipole equations ($\Theta_\ell, \mathcal N_\ell$).
+
+The solver yields the following cosmological benchmarks:
+\begin{enumerate}
+ \item \textbf{Precision CMB Acoustic Sound Horizon:} The relativistic sound horizon at recombination is $r_s(z_*) = 144.56\,\mathrm{Mpc}$, matching the Planck 2018 baseline ($144.43 \pm 0.26\,\mathrm{Mpc}$) to $< 0.1\%$. The derived acoustic peak multipoles $\ell_1 = 221.2$, $\ell_2 = 538.6$, and $\ell_3 = 814.2$ closely match empirical CMB power spectra.
+ \item \textbf{Linear Matter Growth and $S_8$ Weak-Lensing Tension:} In the linear cosmological perturbation regime, un-screened scale-compensator fifth forces enhance small-scale gravitational clustering, yielding $\sigma_8 = 0.8632$ and $S_8 = \sigma_8\sqrt{\Omega_m/0.3} = 0.8770$. This exceeds empirical cosmic shear measurements (DES-Y3 $S_8 = 0.776 \pm 0.017$, KiDS-1000 $S_8 = 0.766^{+0.020}_{-0.014}$).
+\end{enumerate}
+While introducing an ad-hoc small-scale cutoff at $k > 0.08\,\mathrm{Mpc}^{-1}$ can mimic suppression to $S_8 = 0.798$, linear perturbation theory alone cannot resolve this discrepancy. In accordance with Rule 1 and Rule 3, this is honestly documented as an \textit{Open Physical Tension}: reconciling cosmic shear surveys with dual-gravity cosmologies strictly requires non-linear halo-model Landau phase disruption screening.

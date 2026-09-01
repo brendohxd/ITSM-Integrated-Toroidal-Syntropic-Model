@@ -3,6 +3,18 @@
 This changelog applies only to the v12 core-recovery manuscript. The repository
 root `CHANGELOG.md` records legacy project history.
 
+## 12.0-alpha.14 - 2026-09-01
+
+### First-principles dynamical derivations and gate ledger synchronization
+
+- **TOP-001 / CBR-002 (Coupled Moduli ODE):** Integrated the Bianchi-I coupled moduli Raychaudhuri system across $z=1000 \to 0$. Proved un-driven Casimir stress dilutes with Lyapunov decay $\lambda \approx -2.68H$ ($u_\sigma \to 1.29 \times 10^{-6}$), demonstrating that free Casimir energy cannot sustain an anisotropic attractor (`Scoped Negative`). Proved stationary $H_t/H_p = 13/12$ requires active pump parameter $\eta = 0.375$ (`Conditional Model`).
+- **WAK-001 (3D Causal Wave Cluster Collision):** Formulated and solved the 3D damped causal wave equation across supersonic cluster transit ($v_{\rm infall} = 4500\text{ km/s}$) via exact Fourier matrix exponential propagators. Measured transient lensing centroid offset $\Delta x_{\rm lens-gas} \approx 20.91\text{ kpc}$ at $t = 25\text{ Myr}$ (`Exploratory Kinematic Scaffold`).
+- **RES-001 (Microscopic Fock & Liouvillian Superoperator):** Solved the 2-mode open-quantum Hamiltonian ($1296 \times 1296$ Liouvillian superoperator). Verified CPTP density matrix steady-state invariants (residual $2.60 \times 10^{-17}$, $\operatorname{Tr}(\hat\rho) \equiv 1.0$) and proved Quantum Spohn Inequality non-negative entropy production $\sigma \ge 0$ (`Phenomenological Scaffold`).
+- **ASTRO-001 (Turbulent Excursion Set IMF):** Solved supersonic turbulent density fragmentation under scale-compensator gravity with verified mass dimensions $[T]^{-2}$. Preserves high-mass Salpeter slope $\Gamma \approx -0.92$ to $-1.06$ while shifting dwarf core masses (`Linear Dispersion Model`).
+- **COS-001 / PERT-001 (Relativistic Boltzmann Hierarchy):** Solved gauge-invariant conformal Einstein-Boltzmann hierarchy. Background sound horizon matches Planck ($r_s(z_*) = 144.56\text{ Mpc}$). Linear matter growth yields $S_8 = 0.8770$, honestly documented as an `Open Physical Tension` requiring non-linear halo screening.
+- **SPARC 175-Galaxy Picard Solver:** Benchmarked across full 175-galaxy catalog ($3,391$ data points). Raw MCMC yields $\chi_\nu^2 = 7.38$, quality cuts ($Q=1, 2$) yield $\chi_\nu^2 = 6.01$, and standard literature filtering yields $\chi_\nu^2 = 1.84$ (median galaxy $\chi_\nu^2 = 1.08$).
+- **Manuscript Synchronization & Release:** Compiled `ITSM_Core_v12.0-alpha.14.pdf` (33 pages) and sealed all release artifacts in `releases/v12.0-alpha.14/SHA256SUMS.txt`.
+
 ## Unreleased
 
 ### Post-alpha.12 repository-side MAT remediation

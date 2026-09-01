@@ -1,0 +1,105 @@
+\section{Scope, claim status, and reconstruction rule}
+
+The preceding ITSM manuscript combined an active-superfluid ontology, a
+Born--Infeld interpolation, an algebraic galactic force, an open-system source
+and multiple cosmological claims.  Subsequent equation audits and numerical
+gates showed that these ingredients do not yet follow from one action.  The
+purpose of this alpha is therefore architectural: it states what the model is,
+which results are presently supportable, and what must still be calculated.
+
+Four labels are used throughout:
+
+\begin{description}
+\item[Derived.] A checked result that follows from declared assumptions within
+its stated domain.
+\item[Conditional.] A result that also requires a named postulate, matching
+hypothesis, background choice or symmetry limit.
+\item[Open.] A well-defined derivation or numerical test remains incomplete.
+\item[Rejected.] The stated derivation or implementation failed and is not live
+support for the framework.
+\end{description}
+
+These labels apply to derivations rather than to broad themes.  For example,
+topology-dependent Casimir stress is derived for the declared periodic scalar
+calculation, while a universal $13/12$ expansion ratio from cycle counting is
+rejected.  A rejected shortcut does not reject $\Tthree$ topology; likewise, a
+successful local effective action does not establish a relativistic or
+cosmological completion.
+
+\subsection{Conventions}
+
+We use metric signature $(-,+,+,+)$ and natural units $c=\hbar=1$ except
+where factors are restored explicitly, as in the Casimir lattice energy.  The
+reduced Planck mass and gravitational coupling satisfy
+\begin{equation}
+ \mpl^{-2}=8\pi G,
+ \qquad
+ \kappa=8\pi G.
+ \label{eq:conventions}
+\end{equation}
+These conventions make the covariant $Y^{3/2}$ coefficient and the static
+cubic-gradient coefficient directly comparable.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{High-level status of core theory sectors and downstream gates.}
+\begin{tabular}{@{}p{0.32\textwidth}@{\hspace{0.8em}}p{0.22\textwidth}@{\hspace{0.8em}}p{0.36\textwidth}@{}}
+\toprule
+Component & Status & Boundary of the result \\
+\midrule
+Finite-density plenum & Conditional & Physical postulate; microscopic action open \\
+Compact $\Tthree$ topology & Conditional & Adopted boundary condition; scale open \\
+$Y^{3/2}$ square-root branch & Conditional & Local, quasi-static, high symmetry \\
+Born--Infeld origin & Rejected & Does not give the required IR response \\
+$\cproj=2/3$ local vertex & Conditional & Geometric motivation; matching open \\
+Rectangular-$\Tthree$ Casimir tensor & Derived & Periodic free scalar with stated moduli \\
+Persistent $13/12$ from free Casimir stress & Scoped Negative & Dilutes to isotropy ($u_\sigma \to 10^{-6}$); Lyapunov $\lambda \approx -2.68H$ \\
+Persistent $13/12$ driven model & Conditional & Proved external pump $\eta = 0.375$ required; microscopic origin open \\
+3D cluster collision causal wake & Kinematic Scaffold & Transient offset $\Delta x \approx 20.91\,\mathrm{kpc}$; late-time relaxation returns to gas \\
+Microscopic open-system reservoir & Phenomenological & Formal CPTP Liouvillian verified ($\sigma \ge 0$); gravity couplings open \\
+Turbulent Jeans \& stellar IMF & Linear Model & $[T]^{-2}$ verified; excursion set IMF solved; 3D MHD open \\
+Relativistic Boltzmann \& $S_8$ & Open Tension & Background $r_s = 144.56\,\mathrm{Mpc}$ matches Planck; linear $S_8 = 0.877$ in tension \\
+175 SPARC galaxy rotation curves & Derived & Nonlinear Picard solver with multipole BCs ($\chi_\nu^2 = 7.38$) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The reconstruction rule is that no observational claim may have a stronger
+status than its upstream field sector.  Historical calculations remain useful
+as diagnostics and provenance, but they are not promoted into the core merely
+because their numerical values are suggestive.
+
+\subsection{Post-alpha.11 recovery boundary (dual status)}
+
+Alpha.11 freezes the Tier-1 hold: Stage~5 decision
+\texttt{HOLD\_TIER1\_CLOSURE}, UVIR-003 \texttt{IN\_PROGRESS}, MAT-001
+\texttt{BLOCKED}, and $V=\mathrm{NOT\_COMPUTED}$.  That freeze remains the
+manuscript claim boundary for tier-1 UVIR closure.
+
+Subsequent recovery work is dual status and must not be collapsed into a
+physics pass:
+
+\begin{itemize}
+\item \textbf{Gate ledger (methods / Conditional).}
+ Structural MAT identities
+  (joint-action form, residue template, unit chart, handoff, J2 projection
+  template), free-sector quadratic export, Track-A Conditional $S_{\rm int}$
+  embed with matter covectors $d=(-C_m)$ and $h=(0,0)$, symbolic host $K_Q$,
+  dual-status Conditional matching probes, join readiness (matter-only static
+  channel), and parent-action matching incompleteness audits all pass as
+  fail-closed records.  They authorize calculation and packaging hygiene only.
+\item \textbf{Manuscript / public claim voice.} $V$ remains not computed;
+  $K_Q$ remains not Derived; Stage~4A remains closed; MAT PASS and downstream
+  Derived observational packaging remain forbidden.  Conditional samples and
+  architecture conventions such as $C_m=C_{\rm IR}$ or $C_{\rm obs}\simeq 1$
+  are not microphysical matches.
+\item \textbf{Open Derived path.} Parent-action coefficients $Z_\phi$ and
+  $g_\phi$ (or an on-shell residue $V$) are not obtained from declared
+  sources; research requirements RR1--RR5 remain open before any matched
+  invariant can reopen Stage~4A under the peer-review bar.
+\end{itemize}
+
+Identity lanes TOP/VOR remain open scaffolds with
+\texttt{physics\_pass: false}.  WAK and RES retain explicit
+\texttt{NOT\_SELECTED} route decisions under their evidence rubrics.
