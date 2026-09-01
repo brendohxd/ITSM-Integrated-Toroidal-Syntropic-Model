@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reproduce — ITSM</title>
-  <meta name="description" content="How to clone the ITSM recovery branch and reproduce Casimir and UVIR gate calculations." />
+  <meta name="description" content="How to clone the ITSM recovery branch and run verified analysis scripts." />
   <link rel="canonical" href="https://itsm-cosmology.com/reproduce.html" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -36,8 +36,7 @@
       <p class="breadcrumb"><a href="index.html">Home</a> / Reproduce</p>
       <h1>Reproduce the <em>gates</em></h1>
       <p class="lede">
-        Public code, declared environments, and machine-readable status lines.
-        Critique is welcome — especially when it runs the same scripts.
+        Deterministic analysis scripts, verified outputs, and SHA-256 checksums.
       </p>
     </div>
   </header>
@@ -46,114 +45,65 @@
     <section class="section">
       <div class="section-head">
         <h2>Setup</h2>
-        <p>Windows / PowerShell examples; Linux analogous</p>
+        <p>Clone recovery branch and inspect authority documents</p>
       </div>
       <div class="card span-2">
         <pre><code>git clone https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model.git
 cd ITSM-Integrated-Toroidal-Syntropic-Model
 git checkout recovery/v12-core-architecture
 
-# Session checklist: branch + env + which gate/paper is in scope
-conda activate itsm_env
-# Read Theory/Core/ITSM_Master_Research_Plan.md before editing equations</code></pre>
+# Verify active gates and authority ledgers
+# Read active_research.md and Theory/Core/ITSM_Master_Research_Plan.md</code></pre>
       </div>
     </section>
 
     <section class="section">
       <div class="section-head">
-        <h2>Representative runs</h2>
-        <p>Expect PASS footers in gate packages</p>
+        <h2>Scoped Analysis Solvers</h2>
+        <p>Run deterministic Python solvers with .sha256 sidecars</p>
       </div>
       <div class="grid">
         <article class="card">
-          <h3>TOP-001 &amp; CBR-002 — 3D Casimir &amp; Driven Moduli</h3>
-          <p>Full 3D Epstein zeta function tensor on flat \(T^3\) and Raychaudhuri dynamical backreaction solver.</p>
-          <pre><code>python Analysis/TOP/TOP-001/top001_3d_epstein_casimir_tensor.py
-python Analysis/TOP/TOP-001/top001_driven_moduli_backreaction_solver.py</code></pre>
+          <h3>COS-001 &amp; PERT-001 — Growth Proxy</h3>
+          <p>Eisenstein-Hu growth proxy evaluating sound horizon \(r_s = 144.43\,\mathrm{Mpc}\) and linear growth \(\sigma_8 = 1.0861\).</p>
+          <pre><code>python Analysis/Cosmology/COS-001/cos001_genuine_boltzmann_growth_solver.py</code></pre>
         </article>
         <article class="card">
-          <h3>WAK-001 — Bullet Cluster Causal Wake</h3>
-          <p>Retarded wave equation in finite-density superfluid vacuum reproducing weak-lensing separation (\(\Delta x = 21.0\text{ kpc}\)).</p>
-          <pre><code>python Analysis/WAK/WAK-001/wak001_bullet_cluster_solver.py</code></pre>
+          <h3>TOP-001 &amp; CBR-002 — Moduli Phase Space</h3>
+          <p>Free Casimir shear dilution to isotropy (\(H_t/H_p 	o 1.000\)) and driven parameter stability probe.</p>
+          <pre><code>python Analysis/TOP/TOP-001/top001_moduli_phase_space_analysis.py</code></pre>
         </article>
         <article class="card">
-          <h3>RES-001 — Syntropic Master Equation</h3>
-          <p>Lindblad open-system master equation proving 3-sector covariance (\(\nabla_\mu T^{\mu\nu}_{\rm total} \equiv 0\)) and Second Law (\(\dot{S}_{\rm total} \ge 0\)).</p>
-          <pre><code>python Analysis/RES/RES-001/res001_lindblad_master_equation.py</code></pre>
+          <h3>WAK-001 — 2D Retarded Wave Toy</h3>
+          <p>Exact Fourier matrix exponential wave propagator measuring transient centroid offset (\(\Delta x = 6.25 - 18.75\,\mathrm{kpc}\)).</p>
+          <pre><code>python Analysis/WAK/WAK-001/wak001_retarded_wave_lensing_solver.py</code></pre>
         </article>
         <article class="card">
-          <h3>ASTRO-001 — Jeans Mass &amp; Stellar IMF</h3>
-          <p>Modified Jeans dispersion relation deriving SPARC stellar mass-to-light ratio \(\Upsilon_{\rm disk} \approx 0.50 M_\odot/L_\odot\).</p>
-          <pre><code>python Analysis/Astro/ASTRO-001/astro001_jeans_fragmentation_solver.py</code></pre>
+          <h3>RES-001 — 2-Mode GKSL Master Equation</h3>
+          <p>Lindblad master equation proving CPTP positivity and Spohn relative entropy rate \(\sigma_{m NESS} \ge 0\).</p>
+          <pre><code>python Analysis/RES/RES-001/res001_microscopic_lindblad_spohn_solver.py</code></pre>
         </article>
         <article class="card">
-          <h3>COS-001 &amp; PERT-001 — Boltzmann CMB &amp; \(S_8\)</h3>
-          <p>Relativistic sound horizon \(r_s = 144.56\text{ Mpc}\) and dual-gravity growth reconciling \(S_8 = 0.798\).</p>
-          <pre><code>python Analysis/Cosmology/COS-001/cos001_pert001_boltzmann_solver.py</code></pre>
+          <h3>ASTRO-001 — Jeans Excursion Set IMF</h3>
+          <p>Single-scale excursion set IMF evaluating modified Jeans mass across HSB vs LSB environments.</p>
+          <pre><code>python Analysis/Astro/ASTRO-001/astro001_genuine_excursion_set_imf.py</code></pre>
         </article>
         <article class="card">
-          <h3>DISK-001 &amp; STAT-001 — SPARC Pipeline</h3>
-          <p>175-galaxy SPARC database ingestion and 2D/3D AQUAL Picard solver evaluation.</p>
-          <pre><code>python Analysis/DISK/DISK-001/disk001_stage5_multipole_bc.py
-python Analysis/DISK/DISK-001/disk001_sparc_galaxy_pipeline.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>VOR, SCR &amp; LEN — Phenomenological Gates</h3>
-          <p>Defect core line tension, Bogoliubov acoustic resonance on \(T^3\), Landau screening, and lensing.</p>
-          <pre><code>python Analysis/VOR/VOR-001/vor001_s3_physical_defect_core.py
-python Analysis/VOR/VOR-001/vor001_s4_physical_resonance.py
-python Analysis/Screening/SCR-001/scr001_landau_screening_solver.py
-python Analysis/Lensing/LEN-001/len001_gravitational_lensing_solver.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>Core Manuscript Build (v12.0)</h3>
-          <p>Full 38-page RevTeX 4.2 publication build with verified references and citations.</p>
-          <pre><code>cd Manuscript
-pdflatex -interaction=nonstopmode ITSM_Core_Cosmology_v12.0.tex
-bibtex ITSM_Core_Cosmology_v12.0
-pdflatex -interaction=nonstopmode ITSM_Core_Cosmology_v12.0.tex
-pdflatex -interaction=nonstopmode ITSM_Core_Cosmology_v12.0.tex</code></pre>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Where to read results</h2>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <h3>Documents</h3>
-          <ul>
-            <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Core/ITSM_Master_Research_Plan.md">Master research plan</a></li>
-            <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture/Theory/Gates">Gate notes</a></li>
-            <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/RECOVERY_BRANCH_README.md">Recovery branch README</a></li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Papers</h3>
-          <ul>
-            <li><a href="papers.html">Site overview of P1–P4</a></li>
-            <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture/papers">papers/ on GitHub</a></li>
-          </ul>
-          <p style="margin:0.5rem 0 0;color:var(--faint);font-size:0.88rem">
-            Contact: <a href="mailto:brendon.boyd@itsm-cosmology.org">brendon.boyd@itsm-cosmology.org</a>
-          </p>
+          <h3>DISK-001 &amp; STAT-001 — SPARC Multi-Tier Benchmark</h3>
+          <p>Multi-tier rotation curve benchmark across 175 SPARC galaxies (unfloated \(\chi^2_
+u = 47.20\), floated \(\chi^2_
+u = 11.08\)).</p>
+          <pre><code>python Analysis/DISK/DISK-001/disk001_sparc_multitier_mcmc_benchmark.py</code></pre>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="wrap footer-inner">
-      <p>© Brendon Boyd · itsm-cosmology.com</p>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="papers.html">Papers</a>
-        <a href="claims.html">Claims</a>
-      </nav>
+      <p>© 2026 Brendon Boyd · Open Science under CC-BY-4.0 / GPLv3</p>
+      <p><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">Source Code on GitHub</a></p>
     </div>
   </footer>
 </body>
-</html>
+</html>\n

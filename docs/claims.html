@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Claim hygiene — ITSM</title>
-  <meta name="description" content="ITSM claim statuses, three-bucket disposition, and withdrawn packaging." />
+  <meta name="description" content="ITSM claim statuses, four-tier categorization, and fail-closed ledger." />
   <link rel="canonical" href="https://itsm-cosmology.com/claims.html" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -36,8 +36,7 @@
       <p class="breadcrumb"><a href="index.html">Home</a> / Claims</p>
       <h1>Claim <em>hygiene</em></h1>
       <p class="lede">
-        The ITSM programme treats intellectual honesty and mathematical rigor as load-bearing.
-        Status labels keep track of open research routes and rigorous derivations.
+        The ITSM programme enforces fail-closed claim discipline: no claim is promoted beyond its verified gate status.
       </p>
     </div>
   </header>
@@ -45,8 +44,8 @@
   <main class="wrap">
     <section class="section">
       <div class="section-head">
-        <h2>Status of every claim</h2>
-        <p>Exactly one label</p>
+        <h2>Status Definitions</h2>
+        <p>Exactly one label per scientific claim</p>
       </div>
       <div class="table-wrap">
         <table>
@@ -67,132 +66,70 @@
               <td>Defined calculation or test incomplete — <strong>default for untested routes</strong></td>
             </tr>
             <tr>
-              <td><span class="badge badge-rej">Rejected</span></td>
-              <td>Stated derivation form failed; may return only with a new gate and new math — not by slogan</td>
+              <td><span class="badge badge-rej">Rejected / Quarantined</span></td>
+              <td>Stated derivation form failed or quarantined for code-to-claim violations</td>
             </tr>
           </tbody>
         </table>
       </div>
+    </section>
+
     <section class="section">
       <div class="section-head">
         <h2>Key Quantities &amp; Epistemic Status</h2>
-        <p>Authoritative matrix aligned with v12.0 core architecture and gate clearance ledger</p>
+        <p>Authoritative matrix aligned with canonical v12.0-alpha.12 baseline</p>
       </div>
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Quantity / Component</th><th>Epistemic Status</th><th>Derivation / Origin</th></tr>
+            <tr><th>Quantity / Component</th><th>Epistemic Status</th><th>Canonical Scope &amp; Origin</th></tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Yield Threshold (\(a_0\))</strong></td>
+              <td><strong>Conformal Matter Coupling (\(C_m\))</strong></td>
               <td><span class="badge badge-ok">Derived</span></td>
-              <td>\(a_0 = cH_0/2\pi\) derived from macroscopic \(T^3\) circulation quantization under Dynamic Scale Matching.</td>
+              <td>\(C_m \equiv 1.0\) fixed by conformal Weyl trace invariance under \(	ilde{g}_{\mu
+u} = e^{2\psi} g_{\mu
+u}\).</td>
             </tr>
             <tr>
-              <td><strong>Projection Factor (\(C_{\rm proj}\))</strong></td>
-              <td><span class="badge badge-ok">Derived</span></td>
-              <td>\(C_{\rm proj} = 2/3\) derived from the fixed 3D bulk to 2D transverse shear trace ratio.</td>
+              <td><strong>Matter Vertex Residue (\(V\))</strong></td>
+              <td><span class="badge badge-cond">Blocked / Conditional</span></td>
+              <td>\(V = C_m / \sqrt{K_Q} = 1/f\); calibration \(f = 1/\sqrt{4\pi G}\) is empirical, not derived from parent action.</td>
             </tr>
             <tr>
-              <td><strong>Matter Coupling (\(C_m\))</strong></td>
-              <td><span class="badge badge-ok">Derived</span></td>
-              <td>\(C_m \equiv 1.0\) fixed uniquely by conformal Weyl trace conservation under \(\tilde{g}_{\mu\nu} = e^{2\psi} g_{\mu\nu}\) (MAT-001).</td>
+              <td><strong>Acceleration Scale (\(a_0\))</strong></td>
+              <td><span class="badge badge-cond">Conditional Scale</span></td>
+              <td>Empirical MOND/AQUAL transition acceleration \(a_0 pprox 1.20 	imes 10^{-10}\,\mathrm{m/s^2}\); ab-initio derivation open.</td>
             </tr>
             <tr>
-              <td><strong>Condensate Scale (\(f\))</strong></td>
-              <td><span class="badge badge-ok">Derived</span></td>
-              <td>\(f = 1/\sqrt{4\pi G} \approx 0.282\,M_{Pl}\) uniquely fixed by BTFR transition scale matching (\(\ell^2 f^3 = 1/(4\pi G a_0)\)).</td>
+              <td><strong>SPARC Catalog Performance</strong></td>
+              <td><span class="badge badge-cond">Methods Benchmark</span></td>
+              <td>Raw rigid unfloated \(\chi^2_
+u = 47.20\) (median 10.51); floated optimizer \(\chi^2_
+u = 11.08\) (median 3.43).</td>
             </tr>
             <tr>
-              <td><strong>AQUAL Strength (\(\alpha\))</strong></td>
-              <td><span class="badge badge-ok">Derived</span></td>
-              <td>\(\alpha \equiv 4\pi G V_{\rm eff}^2 = 1.0\) (exact), where \(V_{\rm eff} = C_m/f = \sqrt{4\pi G}\).</td>
+              <td><strong>Moduli Phase Space (TOP-001)</strong></td>
+              <td><span class="badge badge-rej">Scoped Negative (Free)</span></td>
+              <td>Free Casimir stress dilutes to spatial isotropy (\(H_t/H_p 	o 1.000\)). Driven 13/12 requires active pump \(\eta = 27/76\) with steady drift.</td>
             </tr>
             <tr>
-              <td><strong>Gravitational Lensing (\(M_{\rm lens}/M_{\rm dyn}\))</strong></td>
-              <td><span class="badge badge-ok">Derived</span></td>
-              <td>Conformal scale-compensator null geodesics prove exact \(M_{\rm lens}/M_{\rm dyn} \equiv 1.00\) matching SPARC galactic kinematics (LEN-001).</td>
-            </tr>
-            <tr>
-              <td><strong>Free Casimir Backreaction (\(H_t/H_p\))</strong></td>
-              <td><span class="badge badge-ok">Scoped Negative</span></td>
-              <td>Free massless scalar Casimir stress strictly decays to exact isotropy (\(H_t/H_p = 1.000000\)); no free-field \(13/12\) attractor exists (CBR-001).</td>
-            </tr>
-            <tr>
-              <td><strong>Driven Moduli Attractor (\(H_t/H_p\))</strong></td>
-              <td><span class="badge badge-cond">Conditional Model</span></td>
-              <td>Full 3D Epstein zeta tensor evaluated (\(T^\mu_\mu \equiv 0\)); driven Bianchi-I model yields \(H_t/H_p = 1 + \frac{2}{9}\eta\), which is conditional on external driving parameter \(\eta \approx 0.375\) (TOP-001 / CBR-002).</td>
-            </tr>
-            <tr>
-              <td><strong>Bullet Cluster Lensing Offset (\(\Delta x_{\rm lens-gas}\))</strong></td>
-              <td><span class="badge badge-open">Exploratory Scaffold</span></td>
-              <td>Simplified 1D/2D retarded wave equation (\(c_s = c/\sqrt{3}\)) models qualitative 1E 0657-56 offset \(\Delta x = 21.0\text{ kpc}\) as a kinematic proof-of-concept; full 3D hydrodynamic collision remains open (WAK-001).</td>
-            </tr>
-            <tr>
-              <td><strong>Syntropic Reservoir Thermodynamics (\(\nabla_\mu T^{\mu\nu}\))</strong></td>
-              <td><span class="badge badge-open">Phenomenological Scaffold</span></td>
-              <td>Lindblad CPTP master equation verifies formal mathematical consistency (\(\nabla_\mu T^{\mu\nu}_{\rm total} \equiv 0\)) and Second Law (\(\dot{S}_{\rm total} \ge 0\)); microscopic Hamiltonian remains open (RES-001).</td>
-            </tr>
-            <tr>
-              <td><strong>Jeans Mass Scaling (\(M_J\))</strong></td>
-              <td><span class="badge badge-cond">Linear Dispersion</span></td>
-              <td>Modified linear Jeans dispersion with \([T]^{-2}\) dimensions shows qualitative environmental \(M_J\) suppression; full non-linear turbulent IMF and star formation remain open (ASTRO-001).</td>
-            </tr>
-            <tr>
-              <td><strong>\(S_8\) Weak-Lensing Tension</strong></td>
-              <td><span class="badge badge-open">Open Physical Tension</span></td>
-              <td>Honestly unsolved: un-screened action predicts \(S_8 = 0.863\); linear growth proxy demonstrates high-\(k\) damping sensitivity, but a full Einstein-Boltzmann perturbation solver (CAMB/CLASS) remains an active open tension (COS-001 / PERT-001).</td>
+              <td><strong>Cosmological Perturbations (COS-001)</strong></td>
+              <td><span class="badge badge-open">Proxy / Open</span></td>
+              <td>Background sound horizon \(r_s = 144.43\,\mathrm{Mpc}\) verified; full Einstein-Boltzmann hierarchy and non-linear screening open.</td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
-
-
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Open-options rule</h2>
-        <p>Do not over-lock the programme</p>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <h3>Active Principles</h3>
-          <ul>
-            <li>Formalize identity pillars as Conditional/Open</li>
-            <li>Work parallel TOP / VOR / WAK / \(Q_{\mathrm{syn}}\)</li>
-            <li>When a core gate stalls, dig harder among pillars (including winding principle)</li>
-            <li>Use AQUAL-class IR as Conditional baseline for honest fits</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="card rule span-2">
-        <span class="rule-label">Authority</span>
-        <p>
-          <strong>Authority order (highest first):</strong> Master Research Plan +
-          Core Architecture → claim ledger → gate reports.
-        </p>
-        <p style="margin:0">
-          <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Core/ITSM_Master_Research_Plan.md">Master research plan →</a>
-        </p>
-      </div>
-    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="wrap footer-inner">
-      <p>© Brendon Boyd · itsm-cosmology.com</p>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="vision.html">Vision</a>
-        <a href="papers.html">Papers</a>
-        <a href="research.html">Research</a>
-      </nav>
+      <p>© 2026 Brendon Boyd · Open Science under CC-BY-4.0 / GPLv3</p>
+      <p><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">Source Code on GitHub</a></p>
     </div>
   </footer>
 </body>
-</html>
+</html>\n
