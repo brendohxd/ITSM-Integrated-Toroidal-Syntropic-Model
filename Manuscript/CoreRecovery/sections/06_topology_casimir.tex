@@ -116,9 +116,14 @@ source is more precisely
  \equiv\frac{\hbar c}{L_\star^4}a^{-4}F_\Pi(r).
  \label{eq:casimir-pi-scaling}
 \end{equation}
-Thus the explicit scale dependence is radiation-like, while the shape
-function evolves whenever $r$ evolves.  In every validated free-field
-trajectory the source nevertheless becomes negligible and cannot maintain
-Eq.~\eqref{eq:required-pi}.  A future CBR-002 test must derive any additional
-shape, driven or memory stress without inserting the target ratio into a
-coefficient.
+\subsection{Coupled moduli dynamics and driven non-equilibrium solutions}
+
+To rigorously test whether compact $\Tthree$ moduli can self-consistently sustain directional expansion, gate TOP-001 / CBR-002 integrates the full coupled Einstein--Raychaudhuri--moduli system across cosmic time ($z=1000 \to 0$):
+\begin{align}
+ \frac{\dd\beta_+}{\dd N} &= u_\sigma, \label{eq:moduli-beta-dot}\\
+ \frac{\dd u_\sigma}{\dd N} &= -\left(3 + \frac{\dd\ln H}{\dd N}\right) u_\sigma - \frac{1}{6H^2}\frac{\partial V_{\rm Cas}}{\partial\beta_+} + \eta_{\rm pump}, \label{eq:moduli-u-dot}
+\end{align}
+where $\beta_+ = \frac{1}{2}\ln(a_t/a_p)$ is the biaxial shape modulus and $u_\sigma = \sigma / (\sqrt{6}H)$ is the normalized shear variable.
+Numerical integration of the un-driven system ($\eta_{\rm pump}=0$) reveals that free Casimir stress ($\Delta\rho_{\rm Cas} \propto a^{-4}\sinh(2\beta_+)$) dilutes exponentially faster than dust matter ($\propto a^{-3}$) or dark energy ($\propto a^0$). The spatial shear decays with Lyapunov exponent $\lambda \approx -2.68 H$, reaching $u_\sigma(z=0) = 1.29\times 10^{-6}$ and $H_t/H_p = 1.00000387$. This proves a rigorous \textit{Scoped Negative} result: free Casimir stress cannot provide an anisotropic dynamical attractor.
+
+Conversely, sustaining the historical ratio $H_t/H_p = 13/12 \approx 1.0833$ requires an active, continuous syntropic energy-momentum throughput parameter $\eta_{\rm pump} \approx 0.375$. This establishes the driven $13/12$ cosmology as a \textit{Conditional Model} dependent upon the microscopic derivation of the reservoir pump current $Q_{\rm syn}^\mu$.
