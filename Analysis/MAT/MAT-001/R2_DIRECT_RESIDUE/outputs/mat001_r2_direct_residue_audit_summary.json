@@ -1,0 +1,506 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "audit_verdict": {
+    "branch_numeric_level": "NOT_COMPUTED: this audit does not extract V from live eigenmodes; constraint reduction, mode projection, and same-action matching remain absent.",
+    "form_level": "YES: canonical vertex V equals mixed response pole coefficient in the quadratic template; exchange pole carries V^2; standalone numeric K_Q need not be quoted once V is known."
+  },
+  "blockers_to_compute_V": [
+    "Declared microscopic action with both kinetic and matter couplings",
+    "Constraint reduction to physical modes",
+    "Mode projection / same-action matching to live IR force field",
+    "Separate provenance contract before any V_status promotion"
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "contract": {
+        "contract_kq_numeric_status": {
+          "expected": "NOT_DERIVED",
+          "got": "NOT_DERIVED",
+          "ok": true
+        },
+        "contract_mat001_status": {
+          "expected": "BLOCKED",
+          "got": "BLOCKED",
+          "ok": true
+        },
+        "expected_subgate": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+        "got_subgate": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+        "ok": true,
+        "path": "Analysis/UVIR/UVIR-003/outputs/uvir003_matching_route_program_summary.json"
+      },
+      "name": "upstream_matching_contract",
+      "ok": true
+    },
+    {
+      "contract": {
+        "contract_kq_numeric_status": {
+          "expected": "NOT_DERIVED",
+          "got": "NOT_DERIVED",
+          "ok": true
+        },
+        "expected_subgate": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+        "got_subgate": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+        "ok": true,
+        "path": "Analysis/UVIR/UVIR-003/outputs/uvir003_kq_matching_inventory_summary.json"
+      },
+      "name": "upstream_inventory_contract",
+      "ok": true
+    },
+    {
+      "contract": {
+        "contract_V_status": {
+          "expected": "NOT_COMPUTED",
+          "got": "NOT_COMPUTED",
+          "ok": true
+        },
+        "contract_mat001_pass": {
+          "expected": false,
+          "got": false,
+          "ok": true
+        },
+        "expected_subgate": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL",
+        "got_subgate": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL",
+        "ok": true,
+        "path": "Analysis/MAT/MAT-001/outputs/mat001_scoped_calculation_summary.json"
+      },
+      "name": "upstream_scoped_mat_contract",
+      "ok": true
+    },
+    {
+      "contract": {
+        "contract_V_form_status": {
+          "expected": "SAME_ACTION_IDENTITY_DERIVED",
+          "got": "SAME_ACTION_IDENTITY_DERIVED",
+          "ok": true
+        },
+        "contract_V_status": {
+          "expected": "NOT_COMPUTED",
+          "got": "NOT_COMPUTED",
+          "ok": true
+        },
+        "contract_mat001_pass": {
+          "expected": false,
+          "got": false,
+          "ok": true
+        },
+        "contract_physics_pass": {
+          "expected": false,
+          "got": false,
+          "ok": true
+        },
+        "expected_subgate": "PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY",
+        "got_subgate": "PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY",
+        "ok": true,
+        "path": "Analysis/MAT/MAT-001/J1_JOINT_ACTION/outputs/mat001_j1_joint_action_normalization_summary.json"
+      },
+      "name": "upstream_j1_joint_action_contract",
+      "ok": true
+    },
+    {
+      "name": "optional_force_package",
+      "note": "Track-A force summary is optional; not used as V residue",
+      "ok": true,
+      "path": "Analysis/UVIR/UVIR-003/outputs/uvir003_nonzero_gradient_force_local_summary.json",
+      "present": true,
+      "required": false,
+      "subgate": "PASS_NONZERO_GRADIENT_FORCE_LOCAL"
+    },
+    {
+      "name": "identity_mixed_response_chi_over_rho_equals_V_over_P",
+      "ok": true
+    },
+    {
+      "name": "identity_exchange_Seff_proportional_to_minus_half_V2",
+      "ok": true
+    },
+    {
+      "name": "identity_V_redefinition_invariant",
+      "ok": true
+    },
+    {
+      "name": "identity_V_tracks_sign_of_C_m",
+      "ok": true
+    },
+    {
+      "name": "all_template_identities",
+      "ok": true
+    },
+    {
+      "absent": [
+        "constraint reduction",
+        "physical mode projection",
+        "same-action matching to live UVIR eigenmode"
+      ],
+      "name": "template_not_live_eigenmode_extraction",
+      "ok": true
+    },
+    {
+      "name": "coefficient_roles_distinguished",
+      "ok": true,
+      "roles": {
+        "canonical_matter_source_vertex": "V",
+        "mixed_field_source_response_pole": "V  (chi/rho_b = V/P)",
+        "source_source_exchange_pole": "V**2  (S_eff ~ -1/2 V^2 rho_b P^{-1} rho_b)"
+      }
+    },
+    {
+      "detail": "No V_status/V_computed_this_stage promotion path; future computation needs separate provenance contract",
+      "name": "V_status_locked_NOT_COMPUTED",
+      "ok": true
+    },
+    {
+      "kq_numeric_status": "NOT_DERIVED",
+      "name": "no_standalone_numeric_K_Q",
+      "ok": true
+    },
+    {
+      "name": "json_paths_repo_relative",
+      "ok": true,
+      "paths": {
+        "force_optional": "Analysis/UVIR/UVIR-003/outputs/uvir003_nonzero_gradient_force_local_summary.json",
+        "inventory": "Analysis/UVIR/UVIR-003/outputs/uvir003_kq_matching_inventory_summary.json",
+        "j1": "Analysis/MAT/MAT-001/J1_JOINT_ACTION/outputs/mat001_j1_joint_action_normalization_summary.json",
+        "matching": "Analysis/UVIR/UVIR-003/outputs/uvir003_matching_route_program_summary.json",
+        "scoped_mat": "Analysis/MAT/MAT-001/outputs/mat001_scoped_calculation_summary.json"
+      }
+    },
+    {
+      "cases": [
+        {
+          "case": "K_Q_nonpositive",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "K_Q_negative",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "K_Q_nan",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "K_Q_pos_inf",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "K_Q_neg_inf",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "scale_nonpositive",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "C_m_zero",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "C_m_nan",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "C_m_pos_inf",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "C_m_neg_inf",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "rescaling_s_zero",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "missing_upstream_file",
+          "error": "FileNotFoundError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "upstream_contract_mismatch",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        }
+      ],
+      "name": "malformed_input_negative_controls",
+      "ok": true
+    },
+    {
+      "name": "status_voice_and_stage4A_closed",
+      "ok": true,
+      "voice": {
+        "MAT-001": "BLOCKED",
+        "UVIR-003": "IN_PROGRESS",
+        "V_status": "NOT_COMPUTED",
+        "physics_pass": false,
+        "stage4A": "CLOSED"
+      }
+    },
+    {
+      "flags": {
+        "Derived_K_Q": false,
+        "SPARC_or_H0": false,
+        "UVIR_full_PASS": false,
+        "V_computed": false,
+        "dual_RAR": false,
+        "live_eigenmode_extraction_claimed": false,
+        "mat001_pass": false,
+        "physics_pass": false,
+        "stage4A_unlocked": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "Derived_K_Q": false,
+    "SPARC_or_H0": false,
+    "UVIR_full_PASS": false,
+    "V_computed": false,
+    "dual_RAR": false,
+    "live_eigenmode_extraction_claimed": false,
+    "mat001_pass": false,
+    "physics_pass": false,
+    "stage4A_unlocked": false
+  },
+  "explicit_non_claims": [
+    "No MAT-001 PASS",
+    "No physics_pass",
+    "No UVIR-003 full PASS",
+    "No numeric Derived K_Q",
+    "No computed V (locked NOT_COMPUTED in this audit)",
+    "No Stage 4A unlock",
+    "No live physical eigenmode extraction",
+    "No SPARC / H0 / dual RAR packaging",
+    "Audit PASS is not a numeric residue extraction"
+  ],
+  "gate": "MAT-001",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 18,
+  "negative_controls": [
+    {
+      "case": "K_Q_nonpositive",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "K_Q_negative",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "K_Q_nan",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "K_Q_pos_inf",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "K_Q_neg_inf",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "scale_nonpositive",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "C_m_zero",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "C_m_nan",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "C_m_pos_inf",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "C_m_neg_inf",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "rescaling_s_zero",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "missing_upstream_file",
+      "error": "FileNotFoundError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "upstream_contract_mismatch",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    }
+  ],
+  "optional_force_package": {
+    "path": "Analysis/UVIR/UVIR-003/outputs/uvir003_nonzero_gradient_force_local_summary.json",
+    "present": true,
+    "required": false
+  },
+  "paths": {
+    "force_optional": "Analysis/UVIR/UVIR-003/outputs/uvir003_nonzero_gradient_force_local_summary.json",
+    "inventory": "Analysis/UVIR/UVIR-003/outputs/uvir003_kq_matching_inventory_summary.json",
+    "j1": "Analysis/MAT/MAT-001/J1_JOINT_ACTION/outputs/mat001_j1_joint_action_normalization_summary.json",
+    "matching": "Analysis/UVIR/UVIR-003/outputs/uvir003_matching_route_program_summary.json",
+    "scoped_mat": "Analysis/MAT/MAT-001/outputs/mat001_scoped_calculation_summary.json"
+  },
+  "physics_pass": false,
+  "quadratic_template": {
+    "Seff": "-C_m**2*rho_b**2/(2*K_Q*P)",
+    "Seff_expected": "-C_m**2*rho_b**2/(2*K_Q*P)",
+    "absent_in_this_template": [
+      "constraint reduction",
+      "physical mode projection",
+      "same-action matching to live UVIR eigenmode"
+    ],
+    "all_ok": true,
+    "coefficient_roles": {
+      "canonical_matter_source_vertex": "V",
+      "mixed_field_source_response_pole": "V  (chi/rho_b = V/P)",
+      "source_source_exchange_pole": "V**2  (S_eff ~ -1/2 V^2 rho_b P^{-1} rho_b)"
+    },
+    "identities": {
+      "V_redefinition_invariant": true,
+      "V_tracks_sign_of_C_m": true,
+      "exchange_Seff_proportional_to_minus_half_V2": true,
+      "mixed_response_chi_over_rho_equals_V_over_P": true
+    },
+    "mixed_expected": "C_m/(sqrt(K_Q)*P)",
+    "mixed_response": "C_m/(sqrt(K_Q)*P)",
+    "template": {
+      "D": "K_Q * P",
+      "L2": "1/2 * psi * D * psi - C_m * rho_b * psi",
+      "V_vertex": "C_m / sqrt(K_Q)",
+      "chi": "sqrt(K_Q) * psi"
+    },
+    "template_not_live_eigenmode": true
+  },
+  "scientific_boundary": "Structural quadratic-template audit of canonical response poles. Distinguishes vertex V, mixed pole V, and exchange pole V^2. Not an extraction from the live UVIR physical eigenmode. V remains NOT_COMPUTED; MAT BLOCKED; UVIR IN_PROGRESS; Stage 4A closed.",
+  "stage": "R2_DIRECT_RESIDUE_AUDIT",
+  "stage4A_status": "CLOSED",
+  "stage4A_unlock": false,
+  "subgate_status": "PASS_MAT001_R2_DIRECT_RESIDUE_AUDIT",
+  "upstream_contracts": {
+    "inventory": {
+      "contract_kq_numeric_status": {
+        "expected": "NOT_DERIVED",
+        "got": "NOT_DERIVED",
+        "ok": true
+      },
+      "expected_subgate": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "got_subgate": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "ok": true,
+      "path": "Analysis/UVIR/UVIR-003/outputs/uvir003_kq_matching_inventory_summary.json"
+    },
+    "j1_joint_action": {
+      "contract_V_form_status": {
+        "expected": "SAME_ACTION_IDENTITY_DERIVED",
+        "got": "SAME_ACTION_IDENTITY_DERIVED",
+        "ok": true
+      },
+      "contract_V_status": {
+        "expected": "NOT_COMPUTED",
+        "got": "NOT_COMPUTED",
+        "ok": true
+      },
+      "contract_mat001_pass": {
+        "expected": false,
+        "got": false,
+        "ok": true
+      },
+      "contract_physics_pass": {
+        "expected": false,
+        "got": false,
+        "ok": true
+      },
+      "expected_subgate": "PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY",
+      "got_subgate": "PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY",
+      "ok": true,
+      "path": "Analysis/MAT/MAT-001/J1_JOINT_ACTION/outputs/mat001_j1_joint_action_normalization_summary.json"
+    },
+    "matching": {
+      "contract_kq_numeric_status": {
+        "expected": "NOT_DERIVED",
+        "got": "NOT_DERIVED",
+        "ok": true
+      },
+      "contract_mat001_status": {
+        "expected": "BLOCKED",
+        "got": "BLOCKED",
+        "ok": true
+      },
+      "expected_subgate": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "got_subgate": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "ok": true,
+      "path": "Analysis/UVIR/UVIR-003/outputs/uvir003_matching_route_program_summary.json"
+    },
+    "scoped_mat": {
+      "contract_V_status": {
+        "expected": "NOT_COMPUTED",
+        "got": "NOT_COMPUTED",
+        "ok": true
+      },
+      "contract_mat001_pass": {
+        "expected": false,
+        "got": false,
+        "ok": true
+      },
+      "expected_subgate": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL",
+      "got_subgate": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL",
+      "ok": true,
+      "path": "Analysis/MAT/MAT-001/outputs/mat001_scoped_calculation_summary.json"
+    }
+  },
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

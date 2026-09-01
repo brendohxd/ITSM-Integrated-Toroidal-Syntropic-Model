@@ -1,0 +1,32 @@
+{
+  "calculation_status": "PASS",
+  "diagnostics": {
+    "curl_aqual_map_rms": 2.0838148268683474,
+    "curl_aqual_rel_to_g_over_dx": 0.00029183366142598367,
+    "curl_newton_rel_to_g_over_dx": 0.00027829121529839983,
+    "curl_newton_rms": 1.1422907400043245,
+    "curl_over_strain_aqual": 0.008360977103670376,
+    "newton_curl_small": true,
+    "note": "Algebraic AQUAL map g=f(|gN|)gN on a curl-free gN is not guaranteed curl-free; nonlinear AQUAL Poisson would restore potential structure. Reported residual is the Stage-0 diagnostic.",
+    "strain_proxy_rms": 249.23101702474173
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "DISK-001",
+  "grid": {
+    "dx_kpc": 0.3000000000000007,
+    "half_box_kpc": 12.0,
+    "n": 81
+  },
+  "ir": {
+    "C_obs": 1.0,
+    "C_obs_origin": "Conditional_default_Cobs_sim_1_MasterPlan_sec6",
+    "a0": 3700.0,
+    "a0_origin": "phenomenological_input",
+    "ban_B9_dual_rar": true,
+    "is_derived": false,
+    "label": "Conditional_AQUAL_baseline"
+  },
+  "scientific_boundary": "2D finite-difference curl diagnostic of the *algebraic* Conditional AQUAL map. Not a full nonlinear AQUAL Poisson solve; not DISK-001 PASS.",
+  "stage": "STAGE0_CURL_RESIDUAL",
+  "subgate_status": "PASS_DISK001_CURL_RESIDUAL_MEASURED"
+}

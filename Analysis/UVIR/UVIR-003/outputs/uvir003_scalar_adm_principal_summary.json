@@ -1,0 +1,97 @@
+{
+  "calculation_status": "PASS",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "gauge_and_scope": {
+    "approximation": "frozen background coefficients and q_phys=k/a well above H",
+    "gauge": "aether-unitary scalar gauge: U^mu is the ADM unit normal",
+    "metric": "N=1+delta_N, N_i=partial_i beta, h_ij=a^2 exp(2R) delta_ij",
+    "retained": "principal two-time-derivative, q_phys^2 and force q_phys^4 terms, plus the leading lapse-induced 1/q_phys^2 condensate kinetic correction"
+  },
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "retain H, rho_dot, mu_dot and all q^0 terms in the time-dependent scalar quadratic action",
+    "solve the full finite-k lapse, scalar-shift and aether-multiplier constraints along the FRW branch",
+    "track the reduced eigenvalues through q_phys/H from the controlled subhorizon domain toward q_phys=0",
+    "fix or bound the alignment coefficient and physical aether parameter domain before causal interpretation"
+  ],
+  "reduction_status": "PASS_SUBHORIZON_PRINCIPAL_REDUCTION",
+  "representative_branch": {
+    "causality_flag": "MULTICONE_GLOBAL_CAUSALITY_REMAINS_OPEN; superluminality alone is not classified as a local instability in the preferred-frame EFT.",
+    "normalized_coefficients": {
+      "alpha1": 0.025,
+      "alpha123": 0.05,
+      "alpha13": 0.037500000000000006,
+      "alpha14": 0.037500000000000006,
+      "alpha2": 0.0125,
+      "alpha3": 0.0125,
+      "alpha4": 0.0125,
+      "alpha_theta": 0.075,
+      "r_U": 0.25
+    },
+    "parameter_scope": "Dimensionless existence example only; not a physical aether or cosmological parameter point.",
+    "principal_positivity": "PASS",
+    "reduced_aether_scalar": {
+      "curvature_gradient_coefficient": 52.33333333333332,
+      "curvature_kinetic_coefficient": 39.94375,
+      "metric_superluminal_at_representative_point": true,
+      "published_formula_match": true,
+      "spin_0_speed": 1.1446290962609211,
+      "spin_0_speed_squared": 1.310175768007093
+    },
+    "trajectory_validity_scan": {
+      "interpretation": "The frozen-coefficient principal audit is controlled only for q_phys well above both H and q_adm; for a fixed comoving mode this means k well above the reported maxima of a*H and a*q_adm.",
+      "maximum_comoving_aH": 0.632765664416245,
+      "maximum_comoving_aH_time": 1.05,
+      "maximum_comoving_k_adm": 5.952641027564236,
+      "maximum_comoving_k_adm_time": 1.99,
+      "maximum_q_adm": 5.802298395176402,
+      "maximum_q_adm_over_H": 11.939072241503354,
+      "maximum_q_adm_over_H_time": 2.52,
+      "maximum_q_adm_time": 0.0,
+      "minimum_rho": 0.09254673475232361,
+      "samples": 801
+    }
+  },
+  "scientific_boundary": "This independently derives the scalar aether principal block and its lapse/shift constraints, and verifies the high-q condensate and force blocks. It does not determine the full time-dependent or strict low-k kinetic/gradient system, global multicone causality, a physical cutoff, or a phenomenologically selected parameter point.",
+  "stage": "B_SCALAR_ADM_PRINCIPAL_SYMBOL",
+  "symbolic_reduction": {
+    "adm_dictionary": {
+      "K_squared_coefficient": "-M_P_sq - M_U_sq*c2",
+      "Kij_Kij_coefficient": "M_P_sq - M_U_sq*(c1 + c3)",
+      "M_cos_squared": "M_P_sq + M_U_sq*(c1 + 3*c2 + c3)/2",
+      "acceleration_squared_coefficient": "M_U_sq*(c1 + c4)"
+    },
+    "constraints": {
+      "lapse_solution_principal": "(-2*M_P_sq*R*q_phys**2 + delta_rho_dot*rho_dot + mu*rho**2*vartheta_dot)/(M_U_sq*q_phys**2*(c1 + c4))",
+      "lapse_velocity_source": "delta_rho_dot*rho_dot + mu*rho**2*vartheta_dot",
+      "momentum_source": "delta_rho*rho_dot + mu*rho**2*vartheta",
+      "scalar_shift_solution_principal": "(-2*M_P_sq*R_dot - M_U_sq*R_dot*c1 - 3*M_U_sq*R_dot*c2 - M_U_sq*R_dot*c3 - delta_rho*rho_dot - mu*rho**2*vartheta)/(M_U_sq*q_phys**2*(c1 + c2 + c3))"
+    },
+    "positivity_domain": {
+      "aether_scalar_gradient": "0<alpha14<2",
+      "aether_scalar_no_ghost": "alpha123>0 and 1-alpha13>0, with 1+alpha_theta/2>0",
+      "alignment_phase_gradient": "1+zeta_align*rho^2>0; declared zeta_align>0",
+      "condensate": "rho>0 and q_phys^2 >> (rho_dot^2+rho^2*mu^2)/(M_U^2*c14)",
+      "cosmological_gravity": "1 + alpha_theta/2 > 0",
+      "force": "K_Q>0 and gamma>0"
+    },
+    "reduced_scalar_principal_block": {
+      "amplitude_speed_squared_high_q": "1",
+      "curvature_gradient_coefficient": "-M_P_sq*(c1*r_U + c4*r_U - 2)/(r_U*(c1 + c4))",
+      "curvature_kinetic_coefficient": "-M_P_sq*(c1*r_U + c3*r_U - 1)*(c1*r_U + 3*c2*r_U + c3*r_U + 2)/(r_U*(c1 + c2 + c3))",
+      "finite_q_condensate_kinetic_determinant": "rho**2*(M_U_sq*c1*q_phys**2 + M_U_sq*c4*q_phys**2 - mu**2*rho**2 - rho_dot**2)/(M_U_sq*q_phys**2*(c1 + c4))",
+      "finite_q_condensate_kinetic_matrix": "Matrix([[1 - rho_dot**2/(M_U_sq*q_phys**2*(c1 + c4)), -mu*rho**2*rho_dot/(M_U_sq*q_phys**2*(c1 + c4))], [-mu*rho**2*rho_dot/(M_U_sq*q_phys**2*(c1 + c4)), rho**2 - mu**2*rho**4/(M_U_sq*q_phys**2*(c1 + c4))]])",
+      "force_zero_gradient_dispersion": "gamma*q_phys**4/(K_Q*M_star**2)",
+      "literature_spin_0_speed_squared": "(c1 + c2 + c3)*(c1*r_U + c4*r_U - 2)/((c1 + c4)*(c1*r_U + c3*r_U - 1)*(c1*r_U + 3*c2*r_U + c3*r_U + 2))",
+      "phase_speed_squared_high_q": "rho**2*zeta_align + 1",
+      "principal_validity_scale_squared": "(mu**2*rho**2 + rho_dot**2)/(M_U_sq*(c1 + c4))",
+      "spin_0_speed_squared": "(c1 + c2 + c3)*(c1*r_U + c4*r_U - 2)/((c1 + c4)*(c1*r_U + c3*r_U - 1)*(c1*r_U + 3*c2*r_U + c3*r_U + 2))"
+    },
+    "symbols": {
+      "M_P_squared": "M_P_sq",
+      "M_U_squared": "M_U_sq",
+      "physical_wavenumber": "q_phys"
+    }
+  }
+}

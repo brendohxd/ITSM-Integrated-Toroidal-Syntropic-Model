@@ -1,0 +1,185 @@
+{
+  "calculation_priority": {
+    "reason": "Only C2 has a bounded free parent template; the evidence required for identity selection remains absent.",
+    "route": "C2_INDEPENDENT_PARENT_ACTION",
+    "status": "MOST_DEVELOPED_SCAFFOLD_NOT_SELECTED"
+  },
+  "calculation_status": "PASS",
+  "candidate_comparison": {
+    "C1_IDENTIFY_WITH_EXISTING_UVIR_MODE": {
+      "eligible_for_selection": false,
+      "evidence_state": {
+        "complete_parent_action_or_controlled_constitutive_closure": "NOT_TESTABLE_BEFORE_MAP",
+        "controlled_static_limit_without_AQUAL_double_count": "NOT_ESTABLISHED",
+        "coupled_mode_independence_or_no_added_rank": "NOT_ESTABLISHED",
+        "covariant_completion_in_declared_domain": "NOT_DERIVED",
+        "exact_conservation_exchange_bookkeeping": "STRUCTURE_ONLY",
+        "interaction_derived_source_and_observable": "NOT_DERIVED",
+        "microscopic_identity_or_constitutive_origin": "MISSING_GAUGE_REGULAR_MAP",
+        "stress_energy_or_entropy_accounting": "MISSING_SINGLE_ALLOCATION_PROOF"
+      },
+      "primary_blocker": "No declared W=F[Xi,Q_rho,Q_chi,Pi] map.",
+      "route_role": "identified_existing_mode"
+    },
+    "C2_INDEPENDENT_PARENT_ACTION": {
+      "eligible_for_selection": false,
+      "evidence_state": {
+        "complete_parent_action_or_controlled_constitutive_closure": "PARTIAL_FREE_TEMPLATE_ONLY",
+        "controlled_static_limit_without_AQUAL_double_count": "FIREWALL_DECLARED_NOT_MATCHED",
+        "coupled_mode_independence_or_no_added_rank": "NOT_ESTABLISHED_HESSIAN_UNAVAILABLE",
+        "covariant_completion_in_declared_domain": "NOT_DERIVED",
+        "exact_conservation_exchange_bookkeeping": "STRUCTURE_DECLARED_IW_UNDERIVED",
+        "interaction_derived_source_and_observable": "NOT_DERIVED",
+        "microscopic_identity_or_constitutive_origin": "MISSING_INDEPENDENT_ORIGIN",
+        "stress_energy_or_entropy_accounting": "FREE_HAMILTONIAN_ONLY_TW_MISSING"
+      },
+      "primary_blocker": "Free template exists, but T_W, I_W, the joined Hessian and microscopic independence are not derived.",
+      "route_role": "independent_wake_sector"
+    },
+    "C3_INTERNAL_CONSTITUTIVE_OF_PLENUM": {
+      "eligible_for_selection": false,
+      "evidence_state": {
+        "complete_parent_action_or_controlled_constitutive_closure": "NOT_DECLARED",
+        "controlled_static_limit_without_AQUAL_double_count": "NOT_ESTABLISHED",
+        "coupled_mode_independence_or_no_added_rank": "NOT_ESTABLISHED",
+        "covariant_completion_in_declared_domain": "NOT_DERIVED",
+        "exact_conservation_exchange_bookkeeping": "ROUTE_I_STRUCTURE_ONLY_NO_SEPARATE_TW",
+        "interaction_derived_source_and_observable": "NOT_DERIVED",
+        "microscopic_identity_or_constitutive_origin": "MISSING_INTERNAL_CONSTITUTIVE_ORIGIN",
+        "stress_energy_or_entropy_accounting": "PLENUM_FREE_ENERGY_OR_ENTROPY_LAW_MISSING"
+      },
+      "primary_blocker": "No plenum free-energy or constitutive closure with entropy production is declared.",
+      "route_role": "internal_plenum_variable"
+    }
+  },
+  "checks": [
+    {
+      "name": "routes_catalog_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "wak001_identity_closure_routes_summary.json"
+    },
+    {
+      "name": "identity_inventory_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "wak001_microscopic_identity_inventory_summary.json"
+    },
+    {
+      "name": "C2_candidate_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "wak001_c2_independent_parent_candidate_summary.json"
+    },
+    {
+      "name": "coupled_hessian_readiness_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "wak001_coupled_hessian_readiness_summary.json"
+    },
+    {
+      "name": "zero_background_factorization_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "wak001_zero_background_factorization_summary.json"
+    },
+    {
+      "name": "rubric_covers_every_hard_requirement_for_every_route",
+      "ok": true
+    },
+    {
+      "name": "no_route_is_eligible_on_current_evidence",
+      "ok": true
+    },
+    {
+      "calculation_priority": "C2_ROUTE_II_MOST_DEVELOPED_SCAFFOLD",
+      "identity_selection": "NONE",
+      "name": "C2_calculation_priority_not_misreported_as_identity_selection",
+      "ok": true
+    },
+    {
+      "name": "zero_background_factorization_not_extrapolated_to_cubic_decoupling",
+      "ok": true
+    },
+    {
+      "flags": {
+        "AQUAL_double_count_allowed": false,
+        "Bullet_Cluster_packaging": false,
+        "WAK_research_gate_PASS": false,
+        "W_identified_with_UVIR_mode": false,
+        "identity_route_selected": false,
+        "independent_W_mode_derived": false,
+        "internal_constitutive_law_derived": false,
+        "physics_pass": false,
+        "source_or_damping_activated": false
+      },
+      "name": "decision_and_claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "AQUAL_double_count_allowed": false,
+    "Bullet_Cluster_packaging": false,
+    "WAK_research_gate_PASS": false,
+    "W_identified_with_UVIR_mode": false,
+    "identity_route_selected": false,
+    "independent_W_mode_derived": false,
+    "internal_constitutive_law_derived": false,
+    "physics_pass": false,
+    "source_or_damping_activated": false
+  },
+  "decision_status": "NO_ROUTE_SELECTABLE_ON_CURRENT_EVIDENCE",
+  "evidence": {
+    "C2_candidate": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "380E39ACE75CE7B17C5A71DD96B8CD1F9D1B90C20C9A8769883F023817E93F98",
+      "source": "wak001_c2_independent_parent_candidate_summary.json"
+    },
+    "coupled_hessian_readiness": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "D82F5D61BB9B97E115300C34165D9B2BB41111863E41E50B629543C9315AB5BF",
+      "source": "wak001_coupled_hessian_readiness_summary.json"
+    },
+    "identity_inventory": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "D085E8EEF798C1877B0CEB0C09C4F0AA3731EEBA9E09A2B5907FDBF5CD8C81AB",
+      "source": "wak001_microscopic_identity_inventory_summary.json"
+    },
+    "routes_catalog": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "182C95325DD535595783B69D8F6E005DF8A679E5196F691D72C749C2FBB343B2",
+      "source": "wak001_identity_closure_routes_summary.json"
+    },
+    "zero_background_factorization": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "D969D2BC8E8EC12E302B13F20AB15271BFCD70779A858074A5438AAF92B5DA62",
+      "source": "wak001_zero_background_factorization_summary.json"
+    }
+  },
+  "gate": "WAK-001",
+  "hard_requirements": [
+    "microscopic_identity_or_constitutive_origin",
+    "complete_parent_action_or_controlled_constitutive_closure",
+    "stress_energy_or_entropy_accounting",
+    "exact_conservation_exchange_bookkeeping",
+    "coupled_mode_independence_or_no_added_rank",
+    "controlled_static_limit_without_AQUAL_double_count",
+    "interaction_derived_source_and_observable",
+    "covariant_completion_in_declared_domain"
+  ],
+  "hold": "HOLD_WAK001_NO_IDENTITY_ROUTE_SELECTABLE",
+  "identity_status": "UNRESOLVED",
+  "n_checks": 10,
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "A PASS means C1/C2/C3 were compared under one explicit hard-requirement rubric and none is currently selectable. C2 is the most developed calculation scaffold, not a chosen identity or physical wake law.",
+  "selected_candidate": null,
+  "serial_next": "Keep all routes open. If C2 continues as the calculation priority, derive T_W and I_W from one covariant S_W+S_int and construct the joined constrained Hessian before any identity selection; alternatively supply the missing C1 map or C3 constitutive closure and rerun this rubric.",
+  "stage": "IDENTITY_ROUTE_EVIDENCE_RUBRIC",
+  "subgate_status": "PASS_WAK001_IDENTITY_ROUTE_EVIDENCE_RUBRIC_NO_SELECTION"
+}

@@ -1,0 +1,207 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "K is exported in the physical Xi/Q_rho/Q_chi chart while C and the embedded constraint source are exported in the original R/delta_rho/vartheta chart.",
+    "The mixing block B is not isolated under the J2 quadratic convention and the live constraint source contains velocity-dependent terms.",
+    "The action-level matter source covectors d and h are not exported.",
+    "No physical eigenmode direction u is selected in the same chart as a complete K,C,B,d,h bundle.",
+    "Object dimensions and one shared normalization convention are not explicit across the live exports.",
+    "Gauge-projected Q_rho/Q_chi diagnostic impulses are response probes, not the missing matter interaction covectors."
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "finite_q_reduction_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "uvir003_scalar_adm_finite_q_summary.json"
+    },
+    {
+      "name": "physical_scalar_basis_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "uvir003_physical_scalar_basis_summary.json"
+    },
+    {
+      "name": "projected_source_response_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "uvir003_source_observable_retarded_response_summary.json"
+    },
+    {
+      "name": "stage5_decision_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "uvir003_stage5_full_gate_decision_summary.json"
+    },
+    {
+      "name": "MAT_J2_template_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "mat001_j2_basis_covariant_mode_projection_summary.json"
+    },
+    {
+      "name": "partial_K_C_and_constraint_source_exports_detected",
+      "ok": true
+    },
+    {
+      "name": "diagnostic_impulses_not_relabelled_as_matter_vertex_covectors",
+      "ok": true
+    },
+    {
+      "constraint_dynamical_chart": [
+        "R",
+        "delta_rho",
+        "vartheta"
+      ],
+      "kinetic_chart": [
+        "Xi",
+        "Q_rho",
+        "Q_chi"
+      ],
+      "name": "same_chart_bundle_absent",
+      "ok": true
+    },
+    {
+      "flags": {
+        "claims_MAT_pass": false,
+        "claims_UVIR_pass": false,
+        "claims_downstream_Derived": false,
+        "computes_numeric_V": false,
+        "derives_numeric_K_Q": false,
+        "live_same_chart_bundle_complete": false,
+        "numeric_matching_ready": false,
+        "physics_pass": false,
+        "reopens_stage4A": false
+      },
+      "name": "inventory_decision_and_claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "claims_MAT_pass": false,
+    "claims_UVIR_pass": false,
+    "claims_downstream_Derived": false,
+    "computes_numeric_V": false,
+    "derives_numeric_K_Q": false,
+    "live_same_chart_bundle_complete": false,
+    "numeric_matching_ready": false,
+    "physics_pass": false,
+    "reopens_stage4A": false
+  },
+  "evidence": {
+    "MAT_J2_template": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "5C385FDB10336AD727D1E9D16CAA68027599C2D157BE903E549748C0294CF865",
+      "source": "mat001_j2_basis_covariant_mode_projection_summary.json"
+    },
+    "finite_q_reduction": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "AEDD8579E6DC9330E1B35B8F81E31AA085DF841C59ADC6F1AE399E2963CF7858",
+      "source": "uvir003_scalar_adm_finite_q_summary.json"
+    },
+    "physical_scalar_basis": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "9177BFA76F25CBD9BE29EE81C2A5771E12656B7E6D8F8D49F01D821B1C632212",
+      "source": "uvir003_physical_scalar_basis_summary.json"
+    },
+    "projected_source_response": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "18C45A3BCF0F42808BED3651FB711602754F2C77EB0863419599B6D11AC10676",
+      "source": "uvir003_source_observable_retarded_response_summary.json"
+    },
+    "stage5_decision": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "7ED771F58118254AE4C39C222A69454F4570D1F8F4C449F2C4538F1DA1FECE05",
+      "source": "uvir003_stage5_full_gate_decision_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "inadmissible_substitutions": {
+    "Q_rho_Q_chi_response_impulses_for_d_h": "REJECTED_ROLE_MISMATCH",
+    "basis_map_for_selected_mode_u": "REJECTED_MAP_IS_NOT_MODE_SELECTION",
+    "constraint_source_for_static_B_without_decomposition": "REJECTED_CONVENTION_MISMATCH"
+  },
+  "interface": "UVIR-003_TO_MAT-001",
+  "inventory_status": "COMPLETE_BLOCKER_MAP_LIVE_BUNDLE_NOT_READY",
+  "kq_numeric_status": "NOT_DERIVED",
+  "live_action_export_status": "PARTIAL_NOT_SAME_CHART",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 9,
+  "numeric_matching_status": "BLOCKED_LIVE_ACTION_EXPORT_REQUIRED",
+  "physics_pass": false,
+  "required_object_inventory": {
+    "B": {
+      "chart": [
+        "R",
+        "delta_rho",
+        "vartheta",
+        "delta_N",
+        "Sigma"
+      ],
+      "dimensions_in_export": "NOT_EXPLICIT",
+      "isolated_template_block": false,
+      "ready_for_J2_live_matching": false,
+      "representation": "field_and_velocity_dependent_J1_constraint_source",
+      "source": "uvir003_scalar_adm_finite_q_summary.json",
+      "status": "PARTIAL_EMBEDDED_IN_CONSTRAINT_SOURCE"
+    },
+    "C": {
+      "constraint_chart": [
+        "delta_N",
+        "Sigma=q_phys^2*beta"
+      ],
+      "dimensions_in_export": "NOT_EXPLICIT",
+      "dynamical_chart": [
+        "R",
+        "delta_rho",
+        "vartheta"
+      ],
+      "ready_for_J2_live_matching": false,
+      "representation": "exact_symbolic_constraint_matrix",
+      "source": "uvir003_scalar_adm_finite_q_summary.json",
+      "status": "PARTIAL_EXPORTED_ORIGINAL_CHART"
+    },
+    "K": {
+      "action_level_provenance": "UVIR_scalar_ADM_reduction",
+      "chart": [
+        "Xi",
+        "Q_rho",
+        "Q_chi"
+      ],
+      "dimensions_in_export": "NOT_EXPLICIT",
+      "ready_for_J2_live_matching": false,
+      "representation": "exact_symbolic_physical_kinetic_matrix",
+      "source": "uvir003_physical_scalar_basis_summary.json",
+      "status": "PARTIAL_EXPORTED_PHYSICAL_CHART"
+    },
+    "d": {
+      "ready_for_J2_live_matching": false,
+      "required_role": "direct_matter_source_covector_on_dynamical_fields",
+      "status": "NOT_EXPORTED"
+    },
+    "h": {
+      "ready_for_J2_live_matching": false,
+      "required_role": "matter_source_covector_on_algebraic_constraints",
+      "status": "NOT_EXPORTED"
+    },
+    "u": {
+      "available_precursor": "physical_basis_map_only",
+      "projected_vertex_status": "NOT_YET_EVALUATED",
+      "ready_for_J2_live_matching": false,
+      "status": "NOT_SELECTED_IN_SAME_CHART"
+    }
+  },
+  "scientific_boundary": "A PASS means the repository's current live UVIR outputs have been inventoried against the MAT J2 contract and the missing same-chart bundle has been identified without substitution. It is a blocker-map pass, not a matter-coupling calculation or physics pass.",
+  "serial_next": "Derive and export d and h from one declared matter interaction in the live quadratic action, transform K/C/B into that same named chart with explicit dimensions, then select u and rerun the J2 projection.",
+  "stage": "LIVE_UVIR_QUADRATIC_EXPORT_INVENTORY",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_LIVE_UVIR_EXPORT_INVENTORY_BLOCKED",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

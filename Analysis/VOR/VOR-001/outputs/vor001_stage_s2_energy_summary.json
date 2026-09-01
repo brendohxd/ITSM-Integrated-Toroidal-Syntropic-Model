@@ -1,0 +1,44 @@
+{
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "stage": "S2",
+  "forbidden_packaging_not_used": [
+    "a0",
+    "C_obs",
+    "resonance",
+    "UVIR"
+  ],
+  "scientific_boundary": "Tests EOM and energy for purely smooth winding sector with physical parameters but no observational mapping.",
+  "checks": [
+    {
+      "id": "S2-T01",
+      "name": "EOM rho correction",
+      "pass": true
+    },
+    {
+      "id": "S2-T02",
+      "name": "S1 limit recovery",
+      "pass": true
+    },
+    {
+      "id": "S2-T03",
+      "name": "Winding increases energy",
+      "pass": true
+    },
+    {
+      "id": "S2-T04",
+      "name": "Reflection degeneracy",
+      "pass": true
+    },
+    {
+      "id": "S2-T05",
+      "name": "Isotropy covariance",
+      "pass": true
+    },
+    {
+      "id": "S2-T06",
+      "name": "Amplitude suppression",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reproduce — ITSM</title>
+  <meta name="description" content="How to clone the ITSM recovery branch and run verified analysis scripts." />
+  <link rel="canonical" href="https://itsm-cosmology.com/reproduce.html" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="theme-color" content="#0c1427" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ITSM Cosmology" />
+  <link rel="stylesheet" href="styles.css?v=20260805d" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a>
+      <ul class="nav-links">
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="papers.html">Papers</a></li>
+        <li><a href="claims.html">Claims</a></li>
+        <li><a href="reproduce.html" aria-current="page">Reproduce</a></li>
+        <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Reproduce</p>
+      <h1>Reproduce the <em>gates</em></h1>
+      <p class="lede">
+        Deterministic analysis scripts, verified outputs, and SHA-256 checksums.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section">
+      <div class="section-head">
+        <h2>Setup</h2>
+        <p>Clone recovery branch and inspect authority documents</p>
+      </div>
+      <div class="card span-2">
+        <pre><code>git clone https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model.git
+cd ITSM-Integrated-Toroidal-Syntropic-Model
+git checkout recovery/v12-core-architecture
+
+# Verify active gates and authority ledgers
+# Read active_research.md and Theory/Core/ITSM_Master_Research_Plan.md</code></pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Scoped Analysis Solvers</h2>
+        <p>Run deterministic Python solvers with .sha256 sidecars</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>COS-001 &amp; PERT-001 — Growth Proxy</h3>
+          <p>Eisenstein-Hu growth proxy evaluating sound horizon \(r_s = 144.43\,\mathrm{Mpc}\) and linear growth \(\sigma_8 = 1.0861\).</p>
+          <pre><code>python Analysis/Cosmology/COS-001/cos001_genuine_boltzmann_growth_solver.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>TOP-001 &amp; CBR-002 — Moduli Phase Space</h3>
+          <p>Free Casimir shear dilution to isotropy (\(H_t/H_p 	o 1.000\)) and driven parameter stability probe.</p>
+          <pre><code>python Analysis/TOP/TOP-001/top001_moduli_phase_space_analysis.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>WAK-001 — 2D Retarded Wave Toy</h3>
+          <p>Exact Fourier matrix exponential wave propagator measuring transient centroid offset (\(\Delta x = 6.25 - 18.75\,\mathrm{kpc}\)).</p>
+          <pre><code>python Analysis/WAK/WAK-001/wak001_retarded_wave_lensing_solver.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>RES-001 — 2-Mode GKSL Master Equation</h3>
+          <p>Lindblad master equation proving CPTP positivity and Spohn relative entropy rate \(\sigma_{
+m NESS} \ge 0\).</p>
+          <pre><code>python Analysis/RES/RES-001/res001_microscopic_lindblad_spohn_solver.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>ASTRO-001 — Jeans Excursion Set IMF</h3>
+          <p>Single-scale excursion set IMF evaluating modified Jeans mass across HSB vs LSB environments.</p>
+          <pre><code>python Analysis/Astro/ASTRO-001/astro001_genuine_excursion_set_imf.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>DISK-001 &amp; STAT-001 — SPARC Multi-Tier Benchmark</h3>
+          <p>Multi-tier rotation curve benchmark across 175 SPARC galaxies (unfloated \(\chi^2_
+u = 47.20\), floated \(\chi^2_
+u = 11.08\)).</p>
+          <pre><code>python Analysis/DISK/DISK-001/disk001_sparc_multitier_mcmc_benchmark.py</code></pre>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Brendon Boyd · Open Science under CC-BY-4.0 / GPLv3</p>
+      <p><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">Source Code on GitHub</a></p>
+    </div>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./sw.js').then(function(reg) {
+          console.log('ITSM Service Worker registered with scope: ', reg.scope);
+        }).catch(function(err) {
+          console.warn('ITSM Service Worker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>\n

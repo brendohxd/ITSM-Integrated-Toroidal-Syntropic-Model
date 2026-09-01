@@ -1,0 +1,95 @@
+{
+  "audit": "PKM1_NONAFFINE_AUXILIARY_CONSTRAINT_RANK",
+  "calculation_status": "PASS_LOCAL_DIRAC_SUBBLOCK",
+  "checks": [
+    {
+      "name": "route_enters_as_new_fail_closed_action_class",
+      "ok": true
+    },
+    {
+      "effective_energy": "2*Y**(3/2)/(3*a0)",
+      "name": "exact_nonaffine_elimination_identity",
+      "ok": true,
+      "on_shell_hessian": "2*sqrt(Y)*a0",
+      "secondary_constraint": "-Y**2/(2*a0**2*s**2) + a0**2*s**2/2",
+      "static_energy": "Y**2/(2*a0**2*s) + a0**2*s**3/6",
+      "stationary_point": "sqrt(Y)/a0"
+    },
+    {
+      "local_propagating_auxiliary_DOF": 0,
+      "name": "local_second_class_auxiliary_pair_for_positive_Y",
+      "ok": true,
+      "phase_space_variables": 2,
+      "poisson_bracket": "-2*sqrt(Y)*a0",
+      "primary_constraint": "p_s=0",
+      "scope": "strictly Y>0 only; metric, phase and amplitude constraints are not counted here",
+      "second_class_constraints": 2,
+      "secondary_constraint": "C_s=dF/ds=0"
+    },
+    {
+      "bracket_limit": "0",
+      "consequence": "the second-class test degenerates and the strict s>0 chart ends at Y=0",
+      "name": "zero_gradient_constraint_rank_loss",
+      "ok": true,
+      "s_star_limit": "0 from the positive-s branch",
+      "stiffness_limit": "0"
+    },
+    {
+      "effective_energy": "-Y**2*g**2/(2*m_sq)",
+      "implication": "with a nonsingular heavy Hessian, the implicit function theorem gives an analytic integer-power effective action near Y=0; an exact Y^(3/2) term requires a critical, singular, gapless, nonlocal, or explicitly nonanalytic ingredient",
+      "name": "gapped_analytic_parent_control_has_integer_power_series",
+      "ok": true,
+      "stationary_point": "-Y*g/m_sq"
+    },
+    {
+      "F_over_Y": "2*sqrt(Y)/(3*a0)",
+      "consequence": "this auxiliary block cannot supply the high-acceleration GR join; it must not be advertised as a global J(Y)",
+      "high_Y_limit": "infinity",
+      "name": "constructed_parent_is_deep_regime_only",
+      "ok": true
+    },
+    {
+      "dimensions": {
+        "F": 2,
+        "Y": 2,
+        "a0": 1,
+        "s": 0
+      },
+      "name": "mass_dimensions_close",
+      "ok": true
+    }
+  ],
+  "constructed_parent": {
+    "classification": "ENGINEERED_NONAFFINE_DEEP_IR_CONTROL_NOT_MICROSCOPIC_DERIVATION",
+    "corresponding_deep_J": "J_deep(Y,s)=-Y+F(Y,s)",
+    "weak_static_total_energy": "F(Y,s)=Y^2/(2*a0^2*s)+(a0^2/6)*s^3, s>0"
+  },
+  "gate_firewall": {
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "canonical_action_replaced": false,
+    "downstream_opened": false,
+    "physics_pass": false
+  },
+  "hard_boundary": {
+    "domain": "Y=0",
+    "interpretation": "criticality is not optional for this exact fractional-power representation",
+    "result": "CONSTRAINT_RANK_LOSS_AND_END_OF_STRICT_POSITIVE_S_CHART"
+  },
+  "input_sha256": {
+    "core_identity": "635E3A4E770B2336E89DCFB87313FC5A262F77999ADF919ED7C1A547410C9C71",
+    "pkm1_obstruction": "1C75F2A4E85566B46DDDE395288674B3A4EF33B83BDCE010FCE01A38EBC64EE7",
+    "pkm1_screen": "FFAF65406E664BA92A563BCC4C2E3A4C31454531EFFD437DF3198A90DDFBE9D5",
+    "tier1_programme": "F2F5077D35C4AAD97C0BDC6C82F694CB69FCEE3CAB6F84B9FCB964567854D850"
+  },
+  "local_constraint_result": {
+    "auxiliary_DOF": 0,
+    "bracket": "-2*a0*sqrt(Y)",
+    "domain": "Y>0",
+    "primary": "p_s=0",
+    "secondary": "dF/ds=0"
+  },
+  "next_calculation": "Embed this block in one covariant finite-density rho-Theta-metric parent, specify a global high-acceleration join, and perform the complete ADM/Dirac and characteristic analysis across Y>0 and Y=0.",
+  "route_disposition": "HOLD_PKM1_GLOBAL_PARENT_LOCAL_AUXILIARY_SECOND_CLASS_FOR_Y_GT_0",
+  "scientific_boundary": "The calculation establishes only the local constraint class of one deliberately engineered deep-static auxiliary block. It neither derives that block from condensate microphysics nor counts the metric, phase, amplitude, topology, reservoir, or matter degrees of freedom."
+}

@@ -1,0 +1,30 @@
+{
+  "gate": "TOP-001 / CBR-002",
+  "description": "Coupled Bianchi-I moduli ODE and stability analysis on T^3 (Exploratory Toy)",
+  "free_casimir_dilution": {
+    "initial_scale_factor": 0.001,
+    "final_scale_factor": 1.0,
+    "initial_beta_plus": 0.05,
+    "final_beta_plus": -0.0009581651816235704,
+    "final_dot_beta_plus": -0.0006746386316180751,
+    "final_Ht_over_Hp": 0.9979788112491719,
+    "scale_factor_decay_slope": 4.838180928373252,
+    "verdict": "SCOPED_NEGATIVE_FREE_DILUTION"
+  },
+  "driven_moduli_analysis": {
+    "target_13_12_ratio": 1.0833333333333333,
+    "exact_required_eta": 0.35526315789473684,
+    "exact_required_eta_fraction": "27/76",
+    "steady_flow_velocity_v_over_H": 0.02631578947368421,
+    "achieved_Ht_over_Hp": 1.0833333333333333,
+    "jacobian_eigenvalues": [
+      "-0.1541356251437742",
+      "-2.845864374856226"
+    ],
+    "modulus_drift_note": "Steady velocity v != 0 causes continuous modulus drift unless an un-modeled potential provides stationary stabilization."
+  },
+  "epistemic_verdict": {
+    "status": "SCOPED_NEGATIVE_AND_CONDITIONAL_TOY",
+    "finding": "Free Casimir stress decays strictly to spatial isotropy Ht/Hp = 1.000000 at a=1 (z=0). Driven model requires exact eta = 27/76 (~0.3553) for Ht/Hp = 13/12, but steady velocity causes modulus drift without potential stabilization."
+  }
+}

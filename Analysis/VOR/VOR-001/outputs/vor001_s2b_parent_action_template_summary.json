@@ -1,0 +1,300 @@
+{
+  "action_convention": {
+    "D_mu": "partial_mu (template; no aether/gauge coupling)",
+    "Lagrangian_density": "- g^{mu nu} (partial_mu Phi)^* (partial_nu Phi) - V(|Phi|)",
+    "Phi": "rho/sqrt(2) * exp(i*Theta)",
+    "S1_toy_match": "E = integral [ |grad rho|^2/2 + rho^2 |grad Theta|^2/2 + lambda/4 (rho^2-v^2)^2 ]",
+    "V_abs": "lambda*(|Phi|**2 - v**2/2)**2",
+    "V_rho": "(lambda/4)*(rho**2 - v**2)**2",
+    "hold": "HOLD_PARENT_ACTION_NOT_UVIR_VALIDATED",
+    "metric_signature": "(-,+,+,+)",
+    "rho": "sqrt(2) * |Phi|",
+    "static_spatial_energy_density": "(1/2)|grad rho|^2 + (rho**2/2)|grad Theta|^2 + V_rho(rho)",
+    "status": "TEMPLATE_DECLARED_NOT_UVIR_VALIDATED"
+  },
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "identity_V_abs_matches_V_rho",
+      "ok": true,
+      "value": true
+    },
+    {
+      "name": "identity_polar_kinetic_decomposition",
+      "ok": true,
+      "value": true
+    },
+    {
+      "name": "identity_static_reduction_to_S1_toy",
+      "ok": true,
+      "value": true
+    },
+    {
+      "name": "identity_stationary_minimum_at_rho_v",
+      "ok": true,
+      "value": true
+    },
+    {
+      "name": "identity_amplitude_mass_sq_equals_2_lambda_v2",
+      "ok": true,
+      "value": true
+    },
+    {
+      "name": "identity_goldstone_potential_independent_of_Theta",
+      "ok": true,
+      "value": true
+    },
+    {
+      "name": "identity_quadratic_amplitude_mass_from_series",
+      "ok": true,
+      "value": true
+    },
+    {
+      "name": "identity_quadratic_hamiltonian_hessian_structure",
+      "ok": true,
+      "value": true
+    },
+    {
+      "expression": "2*lambda*v**2",
+      "name": "identity_amplitude_mass_sq_expression",
+      "ok": true
+    },
+    {
+      "name": "identity_m2_equals_2_lambda_v2_symbolic",
+      "ok": true
+    },
+    {
+      "name": "all_core_symbolic_identities",
+      "ok": true
+    },
+    {
+      "name": "prior_S2_fluctuation_package_present",
+      "ok": true,
+      "subgate": "PASS_VOR001_S2_LOCAL_FLUCTUATION_TEMPLATE"
+    },
+    {
+      "expected_2_lambda_v2": 2.0,
+      "lambda": 1.0,
+      "m2_amplitude_from_S2": 2.0,
+      "name": "S2_mass_equals_2_lambda_v2",
+      "ok": true,
+      "v": 1.0
+    },
+    {
+      "m2_phase_goldstone": 0.0,
+      "name": "S2_goldstone_massless_compatible",
+      "ok": true
+    },
+    {
+      "cases": [
+        {
+          "case": "lambda_nonpositive",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "lambda_negative",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "v_nonpositive",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "v_negative",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "lambda_nan",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "v_inf",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "inconsistent_normalization_Phi_eq_rho",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "missing_s2_summary",
+          "error": "FileNotFoundError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "malformed_s2_subgate",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        }
+      ],
+      "name": "negative_controls_all_raise",
+      "ok": true
+    },
+    {
+      "domain": "lambda > 0, v > 0, flat fixed chart, rho near v",
+      "name": "declared_parameter_domain",
+      "ok": true
+    },
+    {
+      "flags": {
+        "Cobs_from_vortex": false,
+        "PTA_claim": false,
+        "SWNT_packaging": false,
+        "UVIR_parent_validated": false,
+        "VOR_research_gate_PASS": false,
+        "a0_from_winding": false,
+        "aether_frame_coupling": false,
+        "defect_sector": false,
+        "force_law_claim": false,
+        "identified_as_ITSM_UVIR_condensate": false,
+        "physics_pass": false,
+        "resonance_spectrum": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    },
+    {
+      "hold": "HOLD_PARENT_ACTION_NOT_UVIR_VALIDATED",
+      "name": "hold_parent_not_uvir_validated",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "Cobs_from_vortex": false,
+    "PTA_claim": false,
+    "SWNT_packaging": false,
+    "UVIR_parent_validated": false,
+    "VOR_research_gate_PASS": false,
+    "a0_from_winding": false,
+    "aether_frame_coupling": false,
+    "defect_sector": false,
+    "force_law_claim": false,
+    "identified_as_ITSM_UVIR_condensate": false,
+    "physics_pass": false,
+    "resonance_spectrum": false
+  },
+  "explicit_non_claims": [
+    "Not the ITSM UVIR condensate action",
+    "No UVIR-001/002/003 reopen or validation",
+    "No SWNT numbers, a0, Cobs, PTA, force claims",
+    "No VOR research-gate PASS",
+    "physics_pass remains false"
+  ],
+  "gate": "VOR-001",
+  "hold": "HOLD_PARENT_ACTION_NOT_UVIR_VALIDATED",
+  "n_checks": 18,
+  "negative_controls": [
+    {
+      "case": "lambda_nonpositive",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "lambda_negative",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "v_nonpositive",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "v_negative",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "lambda_nan",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "v_inf",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "inconsistent_normalization_Phi_eq_rho",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "missing_s2_summary",
+      "error": "FileNotFoundError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "malformed_s2_subgate",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    }
+  ],
+  "next_required": [
+    "Joint gate if mapping to architecture Phi / UVIR",
+    "Defects only after parent validation policy",
+    "No resonance spectrum packaging"
+  ],
+  "physics_pass": false,
+  "remaining_holds": [
+    "HOLD_PARENT_ACTION_NOT_UVIR_VALIDATED",
+    "No aether/frame coupling",
+    "No defect sector",
+    "No resonance/PTA packaging"
+  ],
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "Hardened parent S_Phi *template* under unambiguous Phi=rho/sqrt(2) exp(i Theta). Potential consistent in rho and |Phi|. Reduces to existing VOR toy energy on static flat charts. Does not identify this template as the ITSM UVIR condensate.",
+  "stage": "S2B_PARENT_ACTION_TEMPLATE",
+  "subgate_status": "PASS_VOR001_S2B_PARENT_ACTION_TEMPLATE_DECLARED",
+  "symbolic_block": {
+    "V_abs": "lambda (|Phi|^2 - v^2/2)^2",
+    "V_rho": "lambda*(rho**2 - v**2)**2/4",
+    "all_ok": true,
+    "hamiltonian_hessian_diagonals": {
+      "d2H_ddelta_rho2": "2*lambda*v**2",
+      "d2H_dgrad_Theta2": "v**2",
+      "d2H_dgrad_rho2": "1",
+      "d2H_dp_Theta2": "v**(-2)",
+      "d2H_dpi_rho2": "1",
+      "phase_convention": "H = p_Theta**2/(2*v**2) + (v**2/2)*|grad Theta|**2"
+    },
+    "identities": {
+      "V_abs_matches_V_rho": true,
+      "amplitude_mass_sq": "2*lambda*v**2",
+      "amplitude_mass_sq_equals_2_lambda_v2": true,
+      "goldstone_potential_independent_of_Theta": true,
+      "polar_kinetic_decomposition": true,
+      "quadratic_amplitude_mass_from_series": true,
+      "quadratic_hamiltonian_hessian_structure": true,
+      "static_reduction_to_S1_toy": true,
+      "stationary_minimum_at_rho_v": true
+    },
+    "kinetic_polar": "dTheta**2*rho**2/2 + drho**2/2",
+    "m2_expr": "2*lambda*v**2",
+    "normalization": "Phi = rho/sqrt(2) * exp(i*Theta); |Phi|=rho/sqrt(2)"
+  }
+}

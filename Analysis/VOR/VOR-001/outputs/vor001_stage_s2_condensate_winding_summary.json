@@ -1,0 +1,343 @@
+{
+  "label": "VOR-001_STAGE_S2_CONDENSATE_WINDING_ENERGY",
+  "gate": "VOR-001",
+  "stage": "S2",
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "status_string": "PASS_VOR001_S2_CONDENSATE_WINDING_MATH_TEMPLATE_ONLY",
+  "n_pass": 6,
+  "n_fail": 0,
+  "n_total": 6,
+  "forbidden_packaging_not_used": [
+    "force_law",
+    "resonance_spectrum",
+    "UVIR_gate_advance",
+    "MAT_gate_advance",
+    "a0_claim",
+    "H0_claim",
+    "C_obs_claim",
+    "PTA_claim",
+    "SPARC_claim",
+    "lensing_claim"
+  ],
+  "scientific_boundary": "Tests whether smooth winding backgrounds are self-consistent solutions to the declared condensate EOM, with amplitude allowed to vary. Does NOT validate a force law, connect winding to any observable, or advance any gate above OPEN_SCAFFOLD_ONLY.",
+  "checks": [
+    {
+      "test": "S2-T01",
+      "description": "EOM amplitude correction finite; large-lambda limit recovers v",
+      "status": "PASS",
+      "results": [
+        {
+          "n": [
+            1,
+            0,
+            0
+          ],
+          "rho_0": 0.9800620298713092,
+          "rho_0_vs_v": -0.019937970128690807,
+          "omega2": 39.47841760435743,
+          "is_finite": true
+        },
+        {
+          "n": [
+            0,
+            1,
+            0
+          ],
+          "rho_0": 0.9800620298713092,
+          "rho_0_vs_v": -0.019937970128690807,
+          "omega2": 39.47841760435743,
+          "is_finite": true
+        },
+        {
+          "n": [
+            1,
+            1,
+            0
+          ],
+          "rho_0": 0.9597099378412651,
+          "rho_0_vs_v": -0.040290062158734874,
+          "omega2": 78.95683520871486,
+          "is_finite": true
+        },
+        {
+          "n": [
+            1,
+            1,
+            1
+          ],
+          "rho_0": 0.9389167946026569,
+          "rho_0_vs_v": -0.06108320539734313,
+          "omega2": 118.4352528130723,
+          "is_finite": true
+        }
+      ],
+      "large_lambda_recovery": {
+        "rho_0": 0.9999802605963469,
+        "deviation": 1.9739403653074028e-05
+      }
+    },
+    {
+      "test": "S2-T02",
+      "description": "S2 energy reduces to S1 analytic in strong-coupling (lambda>>1, mu=0)",
+      "status": "PASS",
+      "lambda": 100000.0,
+      "results": [
+        {
+          "n": [
+            1,
+            0,
+            0
+          ],
+          "E_S2": 19.735312438537356,
+          "E_S1_analytic": 19.739208802178716,
+          "rel_deviation": 0.00019739208802177274,
+          "rho_0": 0.9998025884263135
+        },
+        {
+          "n": [
+            0,
+            1,
+            0
+          ],
+          "E_S2": 19.735312438537356,
+          "E_S1_analytic": 19.739208802178716,
+          "rel_deviation": 0.00019739208802177274,
+          "rho_0": 0.9998025884263135
+        },
+        {
+          "n": [
+            1,
+            1,
+            1
+          ],
+          "E_S2": 59.18255913376391,
+          "E_S1_analytic": 59.21762640653615,
+          "rel_deviation": 0.0005921762640653183,
+          "rho_0": 0.9994076482956639
+        }
+      ]
+    },
+    {
+      "test": "S2-T03",
+      "description": "E(n) > E(0) for all nonzero winding vectors at EOM rho_0",
+      "status": "PASS",
+      "results": [
+        {
+          "n": [
+            1,
+            0,
+            0
+          ],
+          "E_n": 19.349572438042706,
+          "E_0": 0.0,
+          "E_n_gt_E_0": true
+        },
+        {
+          "n": [
+            0,
+            1,
+            0
+          ],
+          "E_n": 19.349572438042706,
+          "E_0": 0.0,
+          "E_n_gt_E_0": true
+        },
+        {
+          "n": [
+            0,
+            0,
+            1
+          ],
+          "E_n": 19.349572438042706,
+          "E_0": 0.0,
+          "E_n_gt_E_0": true
+        },
+        {
+          "n": [
+            1,
+            1,
+            0
+          ],
+          "E_n": 37.91987214781339,
+          "E_0": 0.0,
+          "E_n_gt_E_0": true
+        },
+        {
+          "n": [
+            1,
+            1,
+            1
+          ],
+          "E_n": 55.71089912931206,
+          "E_0": 0.0,
+          "E_n_gt_E_0": true
+        },
+        {
+          "n": [
+            2,
+            0,
+            0
+          ],
+          "E_n": 72.72265338253871,
+          "E_0": 0.0,
+          "E_n_gt_E_0": true
+        }
+      ]
+    },
+    {
+      "test": "S2-T04",
+      "description": "E(n) = E(-n) exact degeneracy",
+      "status": "PASS",
+      "tolerance": 1e-10,
+      "results": [
+        {
+          "n": [
+            1,
+            0,
+            0
+          ],
+          "E_n": 19.349572438042706,
+          "E_neg_n": 19.349572438042706,
+          "rel_diff": 0.0
+        },
+        {
+          "n": [
+            1,
+            1,
+            0
+          ],
+          "E_n": 37.91987214781339,
+          "E_neg_n": 37.91987214781339,
+          "rel_diff": 0.0
+        },
+        {
+          "n": [
+            1,
+            2,
+            3
+          ],
+          "E_n": 199.98019585984412,
+          "E_neg_n": 199.98019585984412,
+          "rel_diff": 0.0
+        },
+        {
+          "n": [
+            2,
+            0,
+            1
+          ],
+          "E_n": 88.95513490749335,
+          "E_neg_n": 88.95513490749335,
+          "rel_diff": 0.0
+        }
+      ]
+    },
+    {
+      "test": "S2-T05",
+      "description": "Axis-permutation covariance (isotropic box)",
+      "status": "PASS",
+      "n_test": [
+        1,
+        2,
+        0
+      ],
+      "E_ref": 88.95513490749335,
+      "results": [
+        {
+          "perm": [
+            0,
+            2,
+            1
+          ],
+          "E_perm": 88.95513490749335,
+          "rel_diff": 0.0
+        },
+        {
+          "perm": [
+            1,
+            2,
+            0
+          ],
+          "E_perm": 88.95513490749335,
+          "rel_diff": 0.0
+        },
+        {
+          "perm": [
+            2,
+            1,
+            0
+          ],
+          "E_perm": 88.95513490749335,
+          "rel_diff": 0.0
+        },
+        {
+          "perm": [
+            2,
+            0,
+            1
+          ],
+          "E_perm": 88.95513490749335,
+          "rel_diff": 0.0
+        },
+        {
+          "perm": [
+            0,
+            1,
+            2
+          ],
+          "E_perm": 88.95513490749335,
+          "rel_diff": 0.0
+        },
+        {
+          "perm": [
+            1,
+            0,
+            2
+          ],
+          "E_perm": 88.95513490749335,
+          "rel_diff": 0.0
+        }
+      ]
+    },
+    {
+      "test": "S2-T06",
+      "description": "rho_0(n) monotonically suppressed by increasing winding norm",
+      "status": "PASS",
+      "rho_0_sequence": [
+        {
+          "n": [
+            0,
+            0,
+            0
+          ],
+          "rho_0": 1.0
+        },
+        {
+          "n": [
+            1,
+            0,
+            0
+          ],
+          "rho_0": 0.9800620298713092
+        },
+        {
+          "n": [
+            2,
+            0,
+            0
+          ],
+          "rho_0": 0.9176526192315754
+        },
+        {
+          "n": [
+            3,
+            0,
+            0
+          ],
+          "rho_0": 0.8029285407561392
+        }
+      ]
+    }
+  ]
+}

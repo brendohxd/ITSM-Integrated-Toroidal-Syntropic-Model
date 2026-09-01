@@ -1,0 +1,24 @@
+{
+  "calculation_status": "PASS",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "DISK-001",
+  "next_required_calculation": [
+    "Tighten residual targets and BC (free multipole / larger box)",
+    "Axisymmetric R\u2013z or 3D thin-disk solver",
+    "Resolution study table for manuscript methods",
+    "Then DISK-001_GATE_REPORT when criteria met"
+  ],
+  "scientific_boundary": "Stage-1 methods package under Conditional IR: spherical AQUAL identity theorem + residual/convergence; 2D Picard FD nonlinear AQUAL Poisson with PDE residual and curl diagnostics. Not full DISK-001 PASS (no 3D/R\u2013z, no SPARC, no Derived C_obs).",
+  "scripts": [
+    {
+      "returncode": 0,
+      "script": "disk001_sphere_nonlinear_aqual.py"
+    },
+    {
+      "returncode": 0,
+      "script": "disk001_poisson_2d_aqual.py"
+    }
+  ],
+  "stage": "STAGE1_NONLINEAR_AQUAL",
+  "subgate_status": "PASS_DISK001_STAGE1_NONLINEAR_AQUAL"
+}

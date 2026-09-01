@@ -1,0 +1,62 @@
+{
+  "gate": "TOP-001",
+  "subgate": "DRIVEN_MODULI_BACKREACTION",
+  "label": "TOP-001_CBR002_RAYCHAUDHURI_SOLVER",
+  "status": "PASS_TOP001_DRIVEN_MODULI_BACKREACTION",
+  "physics_pass": true,
+  "passive_free_field_decay": {
+    "initial_Ht_over_Hp": 1.157687382958756,
+    "final_Ht_over_Hp": 1.0000000000082585,
+    "final_shear": 5.505519153297806e-12,
+    "convergence_to_isotropic": true
+  },
+  "driven_syntropic_attractors": [
+    {
+      "eta_drive": 0.01,
+      "final_Ht_over_Hp": 1.003337037039928,
+      "final_shear": 0.002222220855447757,
+      "final_aspect_ratio": 1.0784594193278132
+    },
+    {
+      "eta_drive": 0.03,
+      "final_Ht_over_Hp": 1.0100333329740605,
+      "final_shear": 0.006666629637693512,
+      "final_aspect_ratio": 1.1350090602962626
+    },
+    {
+      "eta_drive": 0.05,
+      "final_Ht_over_Hp": 1.016759256409809,
+      "final_shear": 0.01111093965799385,
+      "final_aspect_ratio": 1.1945207498493307
+    },
+    {
+      "eta_drive": 0.08,
+      "final_Ht_over_Hp": 1.0269036849845237,
+      "final_shear": 0.017777075547307432,
+      "final_aspect_ratio": 1.2896793053285962
+    },
+    {
+      "eta_drive": 0.12,
+      "final_Ht_over_Hp": 1.040533238558229,
+      "final_shear": 0.026664297037339895,
+      "final_aspect_ratio": 1.4284200169008665
+    }
+  ],
+  "analytical_conclusion": {
+    "free_field_attractor": "Isotropic Ht/Hp = 1.000 (re-confirms CBR-001 negative result)",
+    "driven_condensate_attractor": "Stationary anisotropic expansion Ht/Hp = 1 + (2/9)*eta/H_bg maintained by syntropic flux Q^mu_syn",
+    "stability": "Globally stable fixed point (Lyapunov exponent lambda = -3.0 H)"
+  },
+  "checks": [
+    {
+      "id": "TOP.3",
+      "description": "Free Casimir stress decays to exact isotropic expansion Ht/Hp = 1.000",
+      "pass": true
+    },
+    {
+      "id": "TOP.4",
+      "description": "Driven syntropic flux sustains stable stationary anisotropic expansion without fine-tuning",
+      "pass": true
+    }
+  ]
+}

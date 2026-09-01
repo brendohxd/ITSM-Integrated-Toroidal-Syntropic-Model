@@ -1,0 +1,33 @@
+{
+  "label": "VOR-001_S3_DEFECT_CORE",
+  "gate": "VOR-001",
+  "stage": "S3",
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "status_string": "PASS_VOR001_S3_MATH_TEMPLATE_ONLY",
+  "checks": [
+    {
+      "id": "S3.1",
+      "description": "Core solution rho->0 with finite energy",
+      "pass": true,
+      "energy": 10.609565248960795
+    },
+    {
+      "id": "S3.2",
+      "description": "Linking of core vorticity with winding",
+      "pass": true
+    },
+    {
+      "id": "S3.3",
+      "description": "Negative control: forced rho >= rho_min",
+      "pass": true
+    }
+  ],
+  "forbidden_packaging_not_used": [
+    "numeric_a0",
+    "numeric_C_obs",
+    "H0_claims",
+    "cosmology_claims"
+  ],
+  "scientific_boundary": "Demonstrates 2D radial profile of a defect core in a U(1) condensate. Energy remains finite due to rho->0 at core."
+}

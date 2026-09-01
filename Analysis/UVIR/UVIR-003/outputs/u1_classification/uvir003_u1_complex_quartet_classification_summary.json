@@ -1,0 +1,57 @@
+{
+  "audit": "UVIR-003_U1_CONTROLLED_COMPLEX_QUARTET_CLASSIFICATION",
+  "boundary": "This is a bounded dimensionless representative-background result. It freezes U1 under the uncontrolled-response kill criterion but does not reject every ITSM action or background.",
+  "calculation_status": "PASS_REPRODUCIBLE_CLASSIFICATION_PIPELINE",
+  "classification": "UNRESOLVED_BACKGROUND_PATHOLOGY_OR_UNCONTROLLED_RESPONSE",
+  "evidence": {
+    "all_cases_contain_off_axis_quartet": true,
+    "baseline_full_transfer_gain": 1.377081089918594e+27,
+    "baseline_gauge_projected_matter_response": 1.4326365788625392e+19,
+    "baseline_matter_seeded_gain": 3.237311586477927e+24,
+    "baseline_quartet_interval_q_over_H": [
+      0.014761444920810992,
+      0.017849031858841125
+    ],
+    "baseline_quartet_interval_t": [
+      2.9,
+      6.19
+    ],
+    "baseline_quartet_time_fraction": 0.03620474406991261,
+    "maximum_pairing_residual": 9.125263965941562e-13,
+    "maximum_time_orbit_annihilation_residual": 5.653347439506728e-17,
+    "minimum_kinetic_eigenvalue": 0.037491147698620324,
+    "normalization_specific_linearity_ceiling": 6.98013728501867e-20,
+    "tested_cases": 5
+  },
+  "input_sha256": {
+    "adiabaticity": "B56DF4312578C8DD6EF9FED86AACDB7A35EAABDA4703AF987B872FEB71F22182",
+    "background": "155A6362DB73E98E3A96ADD65BDF8175EEE2F92C366F6D79ADD317C46A57C1B0",
+    "mode_resolved": "5DA3C14848EB10AB9C89C7F44190E8ED054B3C21033CFA6381B7AC73E7A63920",
+    "source_response": "022422409B8C63C0C36100683B37198C95F04F3AC093029732C72920E7494A55"
+  },
+  "interpretation": {
+    "backreaction_statement": "the normalization-specific ceiling is not a cosmological amplitude bound; it shows the declared linear calculation cannot control generic larger normalized sources",
+    "energy_statement": "positive reduced kinetic eigenvalues do not supply the missing signed Hamiltonian-energy/Krein classification",
+    "gauge_statement": "projected Q_rho/Q_chi source and readout retain the amplified response while the time-orbit residual remains numerical-small",
+    "high_q_principal_sector": "real/hyperbolic in the existing control; finite-q quartet is not by itself proof of PDE non-hyperbolicity"
+  },
+  "missing_for_promotion": [
+    "dimensionful calibrated background and physical parameter domain",
+    "signed Hamiltonian-energy/Krein classification through the quartet",
+    "nonlinear backreaction evolution",
+    "independent derivation and verification of the full reduced action"
+  ],
+  "not_classified_as": [
+    "controlled_physical_Jeans_like_growth",
+    "chart_or_gauge_artifact",
+    "global_ITSM_no_go_theorem"
+  ],
+  "physics_status": "HOLD_TIER1_CLOSURE",
+  "runtime": {
+    "numpy": "2.4.6",
+    "python": "3.13.9",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "u1_disposition": "FREEZE_UNCONTROLLED_LINEAR_RESPONSE_ON_DECLARED_BACKGROUND"
+}

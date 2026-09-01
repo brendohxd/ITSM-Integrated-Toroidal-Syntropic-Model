@@ -1,0 +1,129 @@
+{
+  "K_Q_status": "NOT_DERIVED",
+  "V_status": "NOT_COMPUTED",
+  "audit": "MAT001_M4_INVARIANT_SOURCE_POLE_RESIDUE_CONTROL",
+  "calculation_status": "PASS_GENERIC_INVARIANCE_AND_NEGATIVE_CONTROLS",
+  "checks": [
+    {
+      "name": "parent_handoff_remains_fail_closed",
+      "ok": true
+    },
+    {
+      "name": "prior_templates_explicitly_not_live",
+      "ok": true
+    },
+    {
+      "name": "R5_identifiability_hold_preserved",
+      "ok": true
+    },
+    {
+      "A_eff": "Matrix([[8, 0], [0, 27]])",
+      "c_eff": "Matrix([[5], [7]])",
+      "name": "constraint_schur_reduction",
+      "ok": true
+    },
+    {
+      "coupling": "5/2",
+      "name": "mode_1_generalized_eigenpair",
+      "norm": "1",
+      "ok": true
+    },
+    {
+      "coupling": "7/3",
+      "name": "mode_2_generalized_eigenpair",
+      "norm": "1",
+      "ok": true
+    },
+    {
+      "name": "positive_kinetic_norms",
+      "ok": true
+    },
+    {
+      "name": "schur_blocks_transform_covariantly",
+      "ok": true
+    },
+    {
+      "name": "signed_K_metric_coupling_chart_invariant",
+      "ok": true,
+      "results": [
+        {
+          "exact": true,
+          "mode": 1,
+          "original": "5/2",
+          "transformed": "5/2"
+        },
+        {
+          "exact": true,
+          "mode": 2,
+          "original": "7/3",
+          "transformed": "7/3"
+        }
+      ]
+    },
+    {
+      "name": "mode_orientation_flips_signed_residue",
+      "ok": true,
+      "positive": "5/2",
+      "reversed": "-5/2"
+    },
+    {
+      "euclidean_difference": "7 - 7*sqrt(2)/2",
+      "name": "negative_controls_reject_naive_euclidean_or_untransported_projection",
+      "ok": true,
+      "untransformed_mode_difference": "-7/3 + 12*sqrt(13)/13"
+    },
+    {
+      "export_status": "UNKNOWN",
+      "live_matrix_keys": [],
+      "name": "live_action_export_required_and_absent",
+      "ok": true
+    }
+  ],
+  "disposition": "M4_CONTROL_PASS_LIVE_RESIDUE_BLOCKED",
+  "generic_result": {
+    "chart_transformed_couplings": [
+      {
+        "exact": true,
+        "mode": 1,
+        "original": "5/2",
+        "transformed": "5/2"
+      },
+      {
+        "exact": true,
+        "mode": 2,
+        "original": "7/3",
+        "transformed": "7/3"
+      }
+    ],
+    "couplings": [
+      "5/2",
+      "7/3"
+    ],
+    "orientation_rule": "u -> -u flips signed g_can",
+    "rule": "g_can=(c_eff.T*u)/sqrt(u.T*K*u), with c_eff=d-B*C^-1*h"
+  },
+  "input_sha256": {
+    "handoff": "8E9ED21F25B6EFC122D56B1FB0EA0AAB5C1182E1A2202F80125F9529F62B5DE5",
+    "j2": "5C385FDB10336AD727D1E9D16CAA68027599C2D157BE903E549748C0294CF865",
+    "live_inventory": "A455947CC8F3566A6660064DC91BAA89B8EF678018FCD8A38B111C9B9544494B",
+    "r2": "415AD2D5631C5AB65AA3EA611002D332775D094F534A7E122146F255929A4144",
+    "r5": "20B6A0BD506755DCFB8933668C8F2DC99B90C8BC4917DF8982BB9F59C0C50F24"
+  },
+  "live_export": {
+    "available": false,
+    "consequence": "No numeric V can be computed until the complete same-action export is present and dimensionally verified.",
+    "required": [
+      "K",
+      "A",
+      "B",
+      "C",
+      "d",
+      "h",
+      "physical_mode_direction"
+    ],
+    "status": "UNKNOWN"
+  },
+  "physics_pass": false,
+  "physics_status": "MAT-001_BLOCKED",
+  "scientific_boundary": "This proves the invariant projection method on an explicit generic constrained quadratic form. It does not extract a live UVIR residue, compute V, derive K_Q, or promote MAT-001."
+}

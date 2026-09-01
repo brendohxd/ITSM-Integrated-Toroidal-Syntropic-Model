@@ -1,0 +1,123 @@
+{
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "prior_microscopic_inventory_present",
+      "ok": true,
+      "path": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\WAK\\WAK-001\\outputs\\wak001_microscopic_identity_inventory_summary.json"
+    },
+    {
+      "name": "route_I_bookkeeping_declared",
+      "ok": true
+    },
+    {
+      "name": "route_II_bookkeeping_declared",
+      "ok": true
+    },
+    {
+      "name": "no_route_falsely_closed_as_Derived",
+      "ok": true,
+      "statuses": {
+        "C1_IDENTIFY_WITH_EXISTING_UVIR_MODE": "BLOCKED_NO_DECLARED_MAP",
+        "C2_INDEPENDENT_PARENT_ACTION": "OPEN_UNDECLARED",
+        "C3_INTERNAL_CONSTITUTIVE_OF_PLENUM": "OPEN_UNDECLARED"
+      }
+    },
+    {
+      "identity_status": "UNRESOLVED",
+      "name": "identity_remains_unresolved_or_open",
+      "ok": true
+    },
+    {
+      "name": "routes_are_exclusive_candidates",
+      "ok": true
+    },
+    {
+      "flags": {
+        "AQUAL_double_count": false,
+        "Bullet_Cluster_packaging": false,
+        "WAK_research_gate_PASS": false,
+        "W_identified_with_UVIR_mode": false,
+        "damping_declared": false,
+        "identity_closed": false,
+        "physics_pass": false,
+        "source_declared": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "AQUAL_double_count": false,
+    "Bullet_Cluster_packaging": false,
+    "WAK_research_gate_PASS": false,
+    "W_identified_with_UVIR_mode": false,
+    "damping_declared": false,
+    "identity_closed": false,
+    "physics_pass": false,
+    "source_declared": false
+  },
+  "closure_routes": [
+    {
+      "current_evidence": "mode inventory + identity inventory: no map",
+      "id": "C1_IDENTIFY_WITH_EXISTING_UVIR_MODE",
+      "requires": "Explicit map W -> subset of (Xi,Q_rho,Q_chi,Pi) with domain",
+      "status": "BLOCKED_NO_DECLARED_MAP"
+    },
+    {
+      "current_evidence": "Route-II local trial family only; no parent action",
+      "id": "C2_INDEPENDENT_PARENT_ACTION",
+      "requires": "S_W[W; background] + stress T_W + causal initial data",
+      "status": "OPEN_UNDECLARED"
+    },
+    {
+      "current_evidence": "zero-background factorization template only",
+      "id": "C3_INTERNAL_CONSTITUTIVE_OF_PLENUM",
+      "requires": "W internal to T_P; no separate T_W; constitutive law",
+      "status": "OPEN_UNDECLARED"
+    }
+  ],
+  "conservation_bookkeeping": {
+    "Route_II_independent": {
+      "I_W_allowed": true,
+      "equations": [
+        "div T_m = Q_mp",
+        "div T_P = -Q_mp + Q_syn - I_W",
+        "div T_W = I_W",
+        "div T_R = -Q_syn"
+      ],
+      "forbidden_silent_ids": [
+        "I_W == Q_mp",
+        "I_W == Q_syn",
+        "I_W == S_N number source without declaration"
+      ],
+      "ok": true,
+      "sum_identity": "div(T_m+T_P+T_W+T_R) = 0"
+    },
+    "Route_I_internal": {
+      "I_W_allowed": false,
+      "equations": [
+        "div T_m = Q_mp",
+        "div T_P = -Q_mp + Q_syn",
+        "div T_R = -Q_syn"
+      ],
+      "ok": true,
+      "sum_identity": "div(T_m+T_P+T_R) = 0"
+    }
+  },
+  "exclusive_rule": "At most one of C1/C2/C3 may eventually close; currently none closed",
+  "gate": "WAK-001",
+  "hold": "HOLD_WAK001_MICROSCOPIC_IDENTITY_MAP_UNDECLARED",
+  "microscopic_identity_status": "UNRESOLVED",
+  "n_checks": 7,
+  "next_required": [
+    "Pick exactly one of C1/C2/C3 and supply the required declaration",
+    "Do not source or damp W until identity route is chosen",
+    "Keep AQUAL static baseline unduplicated"
+  ],
+  "physics_pass": false,
+  "research_gate_status": "OPEN",
+  "scientific_boundary": "Catalogues exclusive microscopic-identity closure routes and conservation bookkeeping for Route I/II. Identity remains UNRESOLVED. No wake source, damping, or observable law is derived.",
+  "stage": "IDENTITY_CLOSURE_ROUTES",
+  "subgate_status": "PASS_WAK001_IDENTITY_CLOSURE_ROUTES_CATALOG"
+}

@@ -1,0 +1,201 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "error": null,
+      "name": "scoped_summary_present_parseable_object",
+      "ok": true,
+      "source": "mat001_scoped_calculation_summary.json"
+    },
+    {
+      "error": null,
+      "name": "inventory_summary_present_parseable_object",
+      "ok": true,
+      "source": "uvir003_kq_matching_inventory_summary.json"
+    },
+    {
+      "error": null,
+      "name": "matching_summary_present_parseable_object",
+      "ok": true,
+      "source": "uvir003_matching_route_program_summary.json"
+    },
+    {
+      "error": null,
+      "name": "force_summary_present_parseable_object",
+      "ok": true,
+      "source": "uvir003_nonzero_gradient_force_local_summary.json"
+    },
+    {
+      "name": "scoped_mat_exact_open_contract",
+      "ok": true,
+      "source": "mat001_scoped_calculation_summary.json"
+    },
+    {
+      "name": "kq_inventory_exact_open_contract",
+      "ok": true,
+      "source": "uvir003_kq_matching_inventory_summary.json"
+    },
+    {
+      "name": "matching_route_R2_exact_V_contract",
+      "ok": true,
+      "source": "uvir003_matching_route_program_summary.json"
+    },
+    {
+      "name": "force_local_exact_open_contract",
+      "ok": true,
+      "source": "uvir003_nonzero_gradient_force_local_summary.json"
+    },
+    {
+      "name": "V_blocker_map_complete_and_non_derived",
+      "ok": true
+    },
+    {
+      "cases": [
+        {
+          "case": "scoped_missing_rejected",
+          "ok": true,
+          "rejected": true
+        },
+        {
+          "case": "scoped_false_V_claim_rejected",
+          "ok": true,
+          "rejected": true
+        },
+        {
+          "case": "inventory_wrong_subgate_rejected",
+          "ok": true,
+          "rejected": true
+        },
+        {
+          "case": "matching_letter_V_only_rejected",
+          "ok": true,
+          "rejected": true
+        },
+        {
+          "case": "force_presence_without_contract_rejected",
+          "ok": true,
+          "rejected": true
+        }
+      ],
+      "name": "negative_contract_controls_fail_closed",
+      "ok": true
+    },
+    {
+      "flags": {
+        "Derived_K_Q": false,
+        "SPARC_H0": false,
+        "UVIR003_pass": false,
+        "V_computed": false,
+        "downstream_Derived": false,
+        "dual_RAR": false,
+        "mat001_pass": false,
+        "stage4A_unblocked": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "Derived_K_Q": false,
+    "SPARC_H0": false,
+    "UVIR003_pass": false,
+    "V_computed": false,
+    "downstream_Derived": false,
+    "dual_RAR": false,
+    "mat001_pass": false,
+    "stage4A_unblocked": false
+  },
+  "downstream_not_required_to_define_V": [
+    {
+      "item": "C_IR matching for C_obs/I_a0 maps",
+      "status": "OPEN_CONDITIONAL"
+    },
+    {
+      "item": "Stage 4A causality, relevant IR response, and physical cutoff",
+      "status": "BLOCKED_UNTIL_MATCHED_V_OR_EQUIVALENT"
+    }
+  ],
+  "gate": "MAT-001",
+  "inventory_status": "COMPLETE_BLOCKER_MAP_V_OPEN",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_gate_status": "BLOCKED_PASS_TAG_FORBIDDEN",
+  "mat001_pass": false,
+  "n_checks": 11,
+  "negative_controls": [
+    {
+      "case": "scoped_missing_rejected",
+      "ok": true,
+      "rejected": true
+    },
+    {
+      "case": "scoped_false_V_claim_rejected",
+      "ok": true,
+      "rejected": true
+    },
+    {
+      "case": "inventory_wrong_subgate_rejected",
+      "ok": true,
+      "rejected": true
+    },
+    {
+      "case": "matching_letter_V_only_rejected",
+      "ok": true,
+      "rejected": true
+    },
+    {
+      "case": "force_presence_without_contract_rejected",
+      "ok": true,
+      "rejected": true
+    }
+  ],
+  "next_required": [
+    "Choose one declared action and psi field-normalization chart",
+    "Derive C_m and K_Q in that same chart, or compute the invariant on-shell residual V directly",
+    "Then reopen UVIR Stage 4A; C_IR matching is downstream of defining V"
+  ],
+  "physics_pass": false,
+  "prior_artifacts": {
+    "force": {
+      "parse_error": null,
+      "source": "uvir003_nonzero_gradient_force_local_summary.json",
+      "subgate_status": "PASS_NONZERO_GRADIENT_FORCE_LOCAL"
+    },
+    "inventory": {
+      "parse_error": null,
+      "source": "uvir003_kq_matching_inventory_summary.json",
+      "subgate_status": "PASS_KQ_MATCHING_INVENTORY_OPEN"
+    },
+    "matching": {
+      "parse_error": null,
+      "source": "uvir003_matching_route_program_summary.json",
+      "subgate_status": "PASS_MATCHING_ROUTE_PROGRAM_OPEN"
+    },
+    "scoped": {
+      "parse_error": null,
+      "source": "mat001_scoped_calculation_summary.json",
+      "subgate_status": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL"
+    }
+  },
+  "required_for_V": [
+    {
+      "item": "C_m normalization from one declared dynamical S_int in the chosen psi chart",
+      "status": "NOT_DERIVED_STATIC_FORM_ONLY"
+    },
+    {
+      "item": "K_Q time-kinetic normalization in the same psi chart",
+      "status": "NOT_DERIVED"
+    },
+    {
+      "item": "Alternative direct on-shell invariant vertex residual V",
+      "status": "NOT_COMPUTED"
+    },
+    {
+      "item": "Field-rescaling/gauge convention connecting C_m and K_Q",
+      "status": "INVARIANT_IDENTIFIED_CHART_MATCHING_OPEN"
+    }
+  ],
+  "scientific_boundary": "Fail-closed inventory of blockers for V=C_m/sqrt(K_Q). PASS means the blocker map matches exact upstream Open/Partial evidence; it does not compute V, derive K_Q, close Stage 4A, or issue MAT/UVIR PASS.",
+  "stage": "V_KINETIC_CHART_INVENTORY",
+  "subgate_status": "PASS_MAT001_V_KINETIC_CHART_INVENTORY_OPEN"
+}

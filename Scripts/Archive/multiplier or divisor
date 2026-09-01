@@ -1,0 +1,98 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import os
+from sklearn.metrics import mean_squared_error, mean_absolute_error
+
+# ====================== ITSM GLOBAL CENSUS: 175 GALAXIES ======================
+# Logic 1: a0 = cH0 / 2pi (Divisor - Topological Distribution)
+# Logic 2: a0 = 2pi * c * H0 (Multiplier - Magnified Circulation)
+# Goal: Falsify the "Parallel Shift" via Global Residual Analysis
+# ==============================================================================
+
+# 1. THE MASTER CONSTANTS
+H0_si = 70.0 * 1000 / 3.08567758e22
+c = 299792458
+sparc_conv = 3.08567758e13
+
+# The Two Contenders
+a0_div = (c * H0_si / (2 * np.pi)) * sparc_conv
+a0_mult = (2 * np.pi * c * H0_si) * sparc_conv
+
+# 2. THE TOTAL CENSUS ENGINE
+def run_full_census(data_dir):
+    all_g_bar = []
+    all_g_obs = []
+    count = 0
+    
+    # Recursive search for all 175 galaxies
+    for root, dirs, files in os.walk(data_dir):
+        for file in files:
+            if file.endswith((".txt", ".dat")):
+                try:
+                    df = pd.read_csv(os.path.join(root, file), sep=r'\s+', comment='#', header=None, on_bad_lines='skip')
+                    if df.shape[1] >= 6:
+                        df = df[(df[1] > 0) & (df[0] > 0)].dropna()
+                        # g_bar = (V_gas^2 + 0.5*V_disk^2 + 0.7*V_bul^2) / R
+                        v_bar_sq = df[3]**2 + 0.5 * df[4]**2 + 0.7 * df[5]**2
+                        all_g_bar.extend(v_bar_sq / df[0])
+                        all_g_obs.extend(df[1]**2 / df[0])
+                        count += 1
+                except: continue
+
+    return np.array(all_g_bar), np.array(all_g_obs), count
+
+# 3. EXECUTION & ANALYSIS
+g_bar, g_obs, total = run_full_census('SPARC_Data')
+
+# Model Predictions
+pred_div = g_bar + a0_div * (np.sqrt(1 + 2 * g_bar / a0_div) - 1)
+pred_mult = g_bar + a0_mult * (np.sqrt(1 + 2 * g_bar / a0_mult) - 1)
+
+# Statistical Metrics (Log-Space for Causal Accuracy)
+rmse_div = np.sqrt(mean_squared_error(np.log10(g_obs), np.log10(pred_div)))
+rmse_mult = np.sqrt(mean_squared_error(np.log10(g_obs), np.log10(pred_mult)))
+
+# 4. FINAL TRUTH REPORT
+print("\n" + "█"*60)
+print(f"{'ITSM GLOBAL CENSUS REPORT':^60}")
+print("█"*60)
+print(f"Total Galaxies Processed:   {total}")
+print(f"Total Data Points (N):      {len(g_bar)}")
+print("-" * 60)
+print(f"Divisor a0:     {a0_div:<15.4f} | RMSE: {rmse_div:.4f}")
+print(f"Multiplier a0:  {a0_mult:<15.4f} | RMSE: {rmse_mult:.4f}")
+print("-" * 60)
+
+winner = "DIVISOR" if rmse_div < rmse_mult else "MULTIPLIER"
+improvement = ((rmse_mult - rmse_div) / rmse_mult) * 100
+print(f"STATISTICAL VERDICT: {winner} is the superior derivation.")
+print(f"Improvement Factor:  {abs(improvement):.2f}% reduction in error.")
+print("█"*60 + "\n")
+
+# 5. VISUALIZATION (THE SLEDGEHAMMER)
+plt.rcParams.update({'font.family': 'serif', 'figure.facecolor': 'white'})
+fig, ax = plt.subplots(figsize=(12, 8))
+
+# Global Data Cloud
+hb = ax.hexbin(g_bar, g_obs, gridsize=80, bins='log', cmap='Greys', alpha=0.4)
+fig.colorbar(hb, ax=ax, label='Point Density (log10)')
+
+# Theoretical Curves
+x_range = np.logspace(np.log10(min(g_bar)), np.log10(max(g_bar)), 500)
+y_div = x_range + a0_div * (np.sqrt(1 + 2 * x_range / a0_div) - 1)
+y_mult = x_range + a0_mult * (np.sqrt(1 + 2 * x_range / a0_mult) - 1)
+
+ax.plot(x_range, y_div, color='#e63946', lw=3, label=rf'Divisor ($a_0 = \frac{{cH_0}}{{2\pi}}$)')
+ax.plot(x_range, y_mult, color='#ffb703', lw=2, linestyle=':', label=rf'Multiplier ($a_0 = 2\pi cH_0$)')
+ax.plot(x_range, x_range, '--', color='#1f77b4', alpha=0.8, label='Newtonian Baseline')
+
+ax.set_xscale('log'); ax.set_yscale('log')
+ax.set_xlabel(r'$g_{bar}$ (Baryonic Acceleration)'); ax.set_ylabel(r'$g_{obs}$ (Observed Acceleration)')
+ax.set_title('ITSM Global Validation: 175-Galaxy Sledgehammer Plot')
+ax.legend(loc='upper left', frameon=True, edgecolor='black')
+ax.grid(True, which='both', linestyle=':', alpha=0.3)
+
+plt.tight_layout()
+plt.savefig('itsm_global_sledgehammer_results.png', dpi=300)
+plt.show()

@@ -1,0 +1,84 @@
+{
+  "calculation_pass": true,
+  "checks": {
+    "characteristic_inside_matter_cone": true,
+    "dispersion_positive": true,
+    "hamiltonian_nonnegative": true,
+    "negative_acausal_characteristic_rejected": true,
+    "negative_ghost_kinetic_rejected": true,
+    "negative_gradient_instability_rejected": true,
+    "negative_tachyonic_mass_rejected": true,
+    "negative_zero_kinetic_rejected": true,
+    "nontrivial_energy_positive": true,
+    "static_susceptibility_finite": true
+  },
+  "dispersion": [
+    {
+      "omega_sq": 0.6666666666666667,
+      "wave_number": 0.0
+    },
+    {
+      "omega_sq": 0.7566666666666667,
+      "wave_number": 0.5
+    },
+    {
+      "omega_sq": 1.0266666666666668,
+      "wave_number": 1.0
+    },
+    {
+      "omega_sq": 2.1066666666666665,
+      "wave_number": 2.0
+    },
+    {
+      "omega_sq": 36.666666666666664,
+      "wave_number": 10.0
+    }
+  ],
+  "energy_samples": [
+    0.0,
+    0.4,
+    0.6,
+    0.216,
+    0.6570400000000001
+  ],
+  "gate": "WAK-001",
+  "label": "mathematical-template-only",
+  "next": [
+    "derive metric and preferred-frame variation from one declared trial action",
+    "compare the W mode against the Phi, U and psi mode inventory",
+    "retain J_W=0 until the free mode avoids duplication"
+  ],
+  "parameters": {
+    "kinetic": 1.2,
+    "mass_sq": 0.8,
+    "speed_sq": 0.36
+  },
+  "physical_wake_law": "NOT_YET_DERIVED",
+  "physics_pass": false,
+  "scientific_boundary": "Local frozen preferred-frame free-field template only. No metric/frame variation, interaction-derived exchange, dissipation, UVIR mode inventory, AQUAL correction, lensing, galaxy, cluster or anisotropy claim.",
+  "source": "J_W=0",
+  "stage": "Stage 2 Route-II free-field screen",
+  "static_susceptibility": [
+    {
+      "response": 1.25,
+      "wave_number": 0.0
+    },
+    {
+      "response": 1.1013215859030836,
+      "wave_number": 0.5
+    },
+    {
+      "response": 0.8116883116883117,
+      "wave_number": 1.0
+    },
+    {
+      "response": 0.39556962025316456,
+      "wave_number": 2.0
+    },
+    {
+      "response": 0.022727272727272728,
+      "wave_number": 10.0
+    }
+  ],
+  "status": "PASS_WAK001_ROUTE2_FREE_TEMPLATE"
+}

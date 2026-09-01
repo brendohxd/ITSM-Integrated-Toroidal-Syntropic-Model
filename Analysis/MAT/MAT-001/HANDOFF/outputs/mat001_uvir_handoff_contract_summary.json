@@ -1,0 +1,207 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "authorized_next_operations": [
+    "derive and audit the basis-covariant physical-mode source projection symbolically",
+    "identify the exact action-level source vector and kinetic metric required from the live UVIR reduction",
+    "keep every numerical matching output disabled until both inputs are present in one declared chart"
+  ],
+  "blocking_requirements": {
+    "M2": "relevant IR complex-quartet response control",
+    "M3": "causality re-evaluated with a matched invariant",
+    "M6": "gauge-invariant physical cutoff/unitarity result",
+    "M7": "same-action physical-mode matter vertex and kinetic normalization"
+  },
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "UVIR_stage5_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "sidecar_ok": true,
+      "source": "uvir003_stage5_full_gate_decision_summary.json"
+    },
+    {
+      "name": "UVIR_closure_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "sidecar_ok": true,
+      "source": "uvir003_full_gate_closure_audit_summary.json"
+    },
+    {
+      "name": "UVIR_matching_floor_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "sidecar_ok": true,
+      "source": "uvir003_conditional_matching_floor_summary.json"
+    },
+    {
+      "name": "UVIR_stage4_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "sidecar_ok": true,
+      "source": "uvir003_stage4_m3m6_conditional_limit_summary.json"
+    },
+    {
+      "name": "MAT_J1_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "sidecar_ok": true,
+      "source": "mat001_j1_joint_action_normalization_summary.json"
+    },
+    {
+      "name": "MAT_R2_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "sidecar_ok": true,
+      "source": "mat001_r2_direct_residue_audit_summary.json"
+    },
+    {
+      "name": "MAT_unit_chart_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "sidecar_ok": true,
+      "source": "mat001_unit_chart_contract_summary.json"
+    },
+    {
+      "name": "MAT_kinetic_inventory_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "sidecar_ok": true,
+      "source": "mat001_v_kinetic_chart_inventory_summary.json"
+    },
+    {
+      "boundary": {
+        "MAT_pass_authorized": false,
+        "UVIR_full_pass_authorized": false,
+        "downstream_Derived_authorized": false,
+        "numeric_V_matching_ready": false,
+        "physics_pass": false,
+        "scoped_projection_audit_authorized": true,
+        "stage4A_reopen_ready": false,
+        "structural_handoff_ready": true
+      },
+      "name": "handoff_boundary_fail_closed",
+      "ok": true
+    }
+  ],
+  "evidence": {
+    "MAT_J1": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "CD5F9A0F9863D56A52B94950C4E88736581A5C4CE93086778D941B4CCBD936DF",
+      "sidecar": {
+        "ok": true,
+        "present": true,
+        "recorded": "CD5F9A0F9863D56A52B94950C4E88736581A5C4CE93086778D941B4CCBD936DF",
+        "required": true
+      },
+      "source": "mat001_j1_joint_action_normalization_summary.json"
+    },
+    "MAT_R2": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "415AD2D5631C5AB65AA3EA611002D332775D094F534A7E122146F255929A4144",
+      "sidecar": {
+        "ok": true,
+        "present": true,
+        "recorded": "415AD2D5631C5AB65AA3EA611002D332775D094F534A7E122146F255929A4144",
+        "required": true
+      },
+      "source": "mat001_r2_direct_residue_audit_summary.json"
+    },
+    "MAT_kinetic_inventory": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "27F4A154A40CE1506D3C5803E4FCEADB87505629CAF2D35B4ADB9E79A21E3985",
+      "sidecar": {
+        "ok": true,
+        "present": true,
+        "recorded": "27F4A154A40CE1506D3C5803E4FCEADB87505629CAF2D35B4ADB9E79A21E3985",
+        "required": true
+      },
+      "source": "mat001_v_kinetic_chart_inventory_summary.json"
+    },
+    "MAT_unit_chart": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "B6F8974D4C3648886DFC23DB9CD31F4C78BCB5B09C65E5DC32039FC80FA891CF",
+      "sidecar": {
+        "ok": true,
+        "present": true,
+        "recorded": "B6F8974D4C3648886DFC23DB9CD31F4C78BCB5B09C65E5DC32039FC80FA891CF",
+        "required": true
+      },
+      "source": "mat001_unit_chart_contract_summary.json"
+    },
+    "UVIR_closure": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "31FD6EF69D73F48563C144AA1C8426AB51D41599434B298E1CD064F13E8C59B1",
+      "sidecar": {
+        "ok": true,
+        "present": true,
+        "recorded": "31FD6EF69D73F48563C144AA1C8426AB51D41599434B298E1CD064F13E8C59B1",
+        "required": true
+      },
+      "source": "uvir003_full_gate_closure_audit_summary.json"
+    },
+    "UVIR_matching_floor": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "9C8E1ABE577A6E6EEF1DC02C69FAF65F22BD16B6EE2101EE1AEDE8BC710F6BB9",
+      "sidecar": {
+        "ok": true,
+        "present": true,
+        "recorded": "9C8E1ABE577A6E6EEF1DC02C69FAF65F22BD16B6EE2101EE1AEDE8BC710F6BB9",
+        "required": true
+      },
+      "source": "uvir003_conditional_matching_floor_summary.json"
+    },
+    "UVIR_stage4": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "DA8E4A59F866CE69831AC4DB96F212AD8C99B6093070886701EFF9D513357342",
+      "sidecar": {
+        "ok": true,
+        "present": true,
+        "recorded": "DA8E4A59F866CE69831AC4DB96F212AD8C99B6093070886701EFF9D513357342",
+        "required": true
+      },
+      "source": "uvir003_stage4_m3m6_conditional_limit_summary.json"
+    },
+    "UVIR_stage5": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "7ED771F58118254AE4C39C222A69454F4570D1F8F4C449F2C4538F1DA1FECE05",
+      "sidecar": {
+        "ok": true,
+        "present": true,
+        "recorded": "7ED771F58118254AE4C39C222A69454F4570D1F8F4C449F2C4538F1DA1FECE05",
+        "required": true
+      },
+      "source": "uvir003_stage5_full_gate_decision_summary.json"
+    }
+  },
+  "forbidden_next_operations": [
+    "assign a numerical V from the structural identities",
+    "reopen Stage 4A before a matched invariant exists",
+    "issue MAT-001 or UVIR-003 physics PASS",
+    "use the handoff for downstream Derived observables"
+  ],
+  "gate": "MAT-001",
+  "handoff_audit_pass": true,
+  "interface": "UVIR-003_TO_MAT-001",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 9,
+  "numeric_matching_status": "BLOCKED_INPUTS_NOT_DERIVED",
+  "physics_pass": false,
+  "scientific_boundary": "A PASS means the current UVIR and MAT records form a consistent, fail-closed engineering handoff for a symbolic physical-mode projection audit. It does not supply the missing action-level coefficients, compute V, reopen Stage 4A, close UVIR-003, pass MAT-001, or authorize downstream Derived claims.",
+  "serial_next": "Construct the basis-covariant physical-mode vertex projection identity and negative controls; then test whether the live UVIR action exports the required source vector and kinetic metric in one chart.",
+  "stage": "FAIL_CLOSED_HANDOFF_CONTRACT",
+  "stage4A_status": "CLOSED",
+  "structural_handoff_status": "READY_FOR_SCOPED_PROJECTION_AUDIT",
+  "subgate_status": "PASS_MAT001_UVIR_HANDOFF_CONTRACT_BLOCKED",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

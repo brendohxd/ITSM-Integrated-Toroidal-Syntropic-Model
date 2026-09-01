@@ -1,0 +1,14 @@
+{
+  "gate": "MAT-001",
+  "stage": "R5-P1 Task C1a",
+  "status": "PASS_OBSTRUCTION_PROVEN",
+  "physics_pass": false,
+  "claims": "None Derived",
+  "delta_X_1st": "-2*delta_N*mu**2 + 2*mu*pi_dot",
+  "constraint_eq_for_delta_N": "6*P_X*delta_N*mu**2 - 2*P_X*mu**2 - 4*P_X*mu*pi_dot + 4*P_XX*delta_N*mu**4 - 4*P_XX*mu**3*pi_dot - rho_b",
+  "delta_N_solution": "(P_X*mu**2 + 2*P_X*mu*pi_dot + 2*P_XX*mu**3*pi_dot + rho_b/2)/(mu**2*(3*P_X + 2*P_XX*mu**2))",
+  "effective_vertex_pi_dot_rho_b": "6*P_X**2*mu/(9*P_X**2*mu**2 + 12*P_X*P_XX*mu**4 + 4*P_XX**2*mu**6) + 6*P_X*P_XX*mu**3/(9*P_X**2*mu**2 + 12*P_X*P_XX*mu**4 + 4*P_XX**2*mu**6) + 4*P_X*P_XX*mu/(9*P_X**2 + 12*P_X*P_XX*mu**2 + 4*P_XX**2*mu**4) - 2*P_X*mu/(3*P_X*mu**2 + 2*P_XX*mu**4) - 2*P_X/(3*P_X*mu + 2*P_XX*mu**3) + 4*P_XX**2*mu**3/(9*P_X**2 + 12*P_X*P_XX*mu**2 + 4*P_XX**2*mu**4) - 2*P_XX*mu**3/(3*P_X*mu**2 + 2*P_XX*mu**4) - 2*P_XX*mu/(3*P_X + 2*P_XX*mu**2)",
+  "effective_vertex_pi_rho_b": "0",
+  "has_static_source": false,
+  "conclusion": "The ADM constraint equation ties the baryon density strictly to the TIME DERIVATIVE of the phase (pi_dot). A static baryon source (where time derivatives vanish) produces NO linear source for the bare phase pi. The static force must therefore be mediated by explicit symmetry breaking or dilaton mixing."
+}

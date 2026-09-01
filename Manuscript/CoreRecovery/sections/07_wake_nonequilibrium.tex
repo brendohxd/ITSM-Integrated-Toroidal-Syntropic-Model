@@ -1,0 +1,64 @@
+\section{Wake, circulation, and non-equilibrium hypotheses}
+
+The original ITSM described baryonic matter as exciting a torsional or
+acoustic wake in a rotational medium.  The static equation
+Eq.~\eqref{eq:periodic-p3} has no independent memory: for specified boundary
+data it tracks the instantaneous source.  A persistent, advected or detached
+wake therefore requires additional dynamics.
+
+A schematic relaxation equation is
+\begin{equation}
+ \tau_W U^\mu\nabla_\mu W+W
+ =\mathcal F[\psi,\rho_b,r,Q_{\rm syn}],
+ \label{eq:wake-schematic}
+\end{equation}
+or, if wave propagation is essential, a hyperbolic field equation with a
+second time derivative.  Equation~\eqref{eq:wake-schematic} is not adopted as a
+law.  It identifies the quantities that WAK-001 must derive or bound.
+Its first-order form is motivated only as a causal-relaxation template of the
+Israel--Stewart type~\cite{israelstewart1979}; it is not a derivation of an
+ITSM constitutive law.
+
+A viable wake sector must satisfy all of the following:
+\begin{enumerate}
+\item a well-posed initial-value problem;
+\item causal characteristic speeds in the physical frame;
+\item a positive or bounded energy accounting;
+\item a controlled static limit reproducing the IR field equation;
+\item explicit momentum exchange with matter and the reservoir;
+\item decay or transport laws rather than indefinite unsupported memory.
+\end{enumerate}
+
+Similarly, circulation is represented naturally by the phase in
+Eq.~\eqref{eq:complex-order},
+\begin{equation}
+ \oint \nabla_i\Theta\,\dd x^i=2\pi n,
+ \qquad n\in\mathbb Z,
+\end{equation}
+where zeros of $\rho$ permit defect cores.  The relationship between these
+microscopic winding sectors and a global toroidal current is the VOR-001 gate.
+No black-hole, lensing or galactic coefficient follows from the winding number
+without further dynamics.
+
+\subsection{Three-dimensional retarded-field kinematic control}
+
+The repaired WAK-001 calculation evolves a dimensionally consistent scalar
+control in units of kpc, Myr and $M_\odot$,
+\begin{equation}
+ \partial_t^2\Phi+\tau^{-1}\partial_t\Phi-c_s^2\nabla^2\Phi
+ =-4\pi G\alpha c_s^2\,\delta\rho .
+ \label{eq:causal-wave-3d}
+\end{equation}
+Here $\Phi$ has units kpc$^2$/Myr$^2$, so every term has units
+kpc$^2$/Myr$^4$.  The source consists of prescribed three-dimensional
+Gaussian mass profiles, ballistic stellar motion and an explicitly chosen gas
+drag law.  The signal speed, damping time and $\alpha$ are comparator inputs,
+not ITSM predictions.
+
+The code computes a scalar response-density proxy and checks a 1.0/0.5 Myr
+time-step diagnostic.  It does \emph{not} solve multi-fluid hydrodynamics,
+shocks, self-consistent baryonic trajectories, metric potentials, photon
+geodesics, or a weak-lensing map.  Therefore no Bullet Cluster fit or lensing
+centroid separation follows from this control.  WAK-001 remains a kinematic
+retarded-field scaffold pending an action-derived coupling, hydrodynamics,
+lensing observable and spatial-convergence study.

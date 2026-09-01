@@ -1,0 +1,34 @@
+{
+  "label": "VOR-001_S4_RESONANCE",
+  "gate": "VOR-001",
+  "stage": "S4",
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "status_string": "PASS_VOR001_S4_MATH_TEMPLATE_ONLY",
+  "resonance_definition": "Resonance is defined as the exact spectral alignment (zero or minimal gap) in the comoving phonon spectrum omega = c_s |k - v_s| when the fluctuation wavevector k exactly matches the background winding superflow v_s on the compact T3 manifold.",
+  "checks": [
+    {
+      "id": "S4.0",
+      "description": "Define resonance operationally",
+      "pass": true
+    },
+    {
+      "id": "S4.1",
+      "description": "Spectrum computation on T3 with background n",
+      "pass": true
+    },
+    {
+      "id": "S4.2",
+      "description": "Negative control: no preferred PTA interval without units derivation",
+      "pass": true
+    }
+  ],
+  "forbidden_packaging_not_used": [
+    "numeric_a0",
+    "numeric_C_obs",
+    "H0_claims",
+    "cosmology_claims",
+    "PTA_nHz_claims"
+  ],
+  "scientific_boundary": "Demonstrates purely dimensionless spectral computation on T3. No physical units or astrophysical parameters are assigned."
+}

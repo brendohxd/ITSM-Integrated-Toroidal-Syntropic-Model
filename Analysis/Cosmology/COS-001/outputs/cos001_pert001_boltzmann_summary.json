@@ -1,0 +1,72 @@
+{
+  "gate": "COS-001_PERT-001",
+  "subgates": [
+    "BACKGROUND_EXPANSION_CMB",
+    "LINEAR_DUAL_GRAVITY_PERTURBATIONS"
+  ],
+  "label": "COS001_PERT001_BOLTZMANN_GROWTH_SOLVER",
+  "status": "PASS_COS001_PERT001_BOLTZMANN_SOLVER",
+  "physics_pass": true,
+  "cmb_background_cos001": {
+    "z_star": 1091.7272348016566,
+    "r_s_mpc": 144.55803339779075,
+    "D_M_mpc": 13906.859877914485,
+    "theta_star_rad": 0.010394728548848304,
+    "100_theta_star": 1.0394728548848304,
+    "ell_A": 302.2294078028492,
+    "ell_1": 221.23192651168563,
+    "ell_2": 538.5728047046773,
+    "ell_3": 814.2060246208757
+  },
+  "perturbation_s8_pert001": {
+    "unscreened_control": {
+      "screened": false,
+      "sigma_8": 0.855,
+      "Omega_m": 0.30964144154550644,
+      "S_8": 0.8686304062637992,
+      "f_sigma_8": {
+        "z_0.38": 0.4490667231318541,
+        "z_0.51": 0.4391595629268356,
+        "z_0.61": 0.4297117377353442
+      }
+    },
+    "screened_fiducial": {
+      "screened": true,
+      "sigma_8": 0.785,
+      "Omega_m": 0.30964144154550644,
+      "S_8": 0.797514466569687,
+      "f_sigma_8": {
+        "z_0.38": 0.412301026501176,
+        "z_0.51": 0.40320497882756257,
+        "z_0.61": 0.39453065979209967
+      }
+    },
+    "benchmarks": {
+      "Planck_2018_S8": 0.832,
+      "KiDS1000_DESY3_S8": 0.776,
+      "ITSM_screened_S8": 0.797514466569687
+    }
+  },
+  "rsd_growth_rates": {
+    "z_0.38": 0.412301026501176,
+    "z_0.51": 0.40320497882756257,
+    "z_0.61": 0.39453065979209967
+  },
+  "checks": [
+    {
+      "id": "COS.1",
+      "description": "CMB sound horizon r_s and acoustic peak multipoles (ell_1, ell_2, ell_3) match Planck 2018",
+      "pass": true
+    },
+    {
+      "id": "PERT.1",
+      "description": "Landau screening and acoustic cutoff reconcile S_8 parameter with KiDS/DES weak lensing",
+      "pass": true
+    },
+    {
+      "id": "PERT.2",
+      "description": "Growth rate f*sigma_8(z) agrees with BOSS DR12 RSD measurements across all redshift bins",
+      "pass": true
+    }
+  ]
+}

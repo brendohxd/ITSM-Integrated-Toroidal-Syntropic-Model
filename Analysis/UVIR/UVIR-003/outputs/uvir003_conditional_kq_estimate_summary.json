@@ -1,0 +1,30 @@
+{
+  "addendum": "CONDITIONAL_K_Q_ESTIMATE",
+  "gate": "UVIR-003",
+  "interpretation": "IF all three premises hold, q_cross falls in the range ~0.375-0.75 times a0 - i.e. the same order as a0 itself, and below it. Since the force operator is designed to be physically relevant for background gradients q at and above a0, this would put the long-wavelength force mode at or past its own superluminal threshold across most of the regime the theory is built to describe. This does NOT confirm a problem - every premise is unconfirmed - but it means the missing K_Q matching condition is not a routine bookkeeping gap: filling it with the most naively expected values lands close to or past the causality threshold, which is a reason to prioritize deriving K_Q rigorously rather than treating it as a formality.",
+  "not_yet_done": [
+    "an actual derivation of K_Q from a microscopic or matching argument",
+    "checking whether the M_P^2*a0^2 prefactor candidate for the Q-kinetic term is even the right structure (vs. e.g. a different scale entirely)",
+    "resolving C_IR itself, which the ledger already lists as unresolved"
+  ],
+  "premises_none_confirmed": [
+    "K_Q = k_Q * M_P^2 with Q0=0 (candidate dimensional-analogy matching introduced only by this conditional-estimate note; not derived from the action or prior architecture)",
+    "k_Q ~ O(1) (no derivation exists; pure NDA-style guess)",
+    "C_IR ~ 2/3 (already only a 'Conditional' matching hypothesis per the ledger, not confirmed)"
+  ],
+  "q_cross_estimates": [
+    {
+      "direction": "theta=0 (along background gradient)",
+      "q_cross_formula": "a0*k_Q/(4*C_IR)",
+      "q_cross_over_a0_at_kQ1_CIR23": "3/8",
+      "q_cross_over_a0_numeric": 0.375
+    },
+    {
+      "direction": "theta=90deg (perpendicular)",
+      "q_cross_formula": "a0*k_Q/(2*C_IR)",
+      "q_cross_over_a0_at_kQ1_CIR23": "3/4",
+      "q_cross_over_a0_numeric": 0.75
+    }
+  ],
+  "status": "SPECULATIVE_NOT_A_DERIVATION"
+}

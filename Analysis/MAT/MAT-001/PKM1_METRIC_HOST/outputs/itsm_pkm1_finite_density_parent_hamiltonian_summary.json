@@ -1,0 +1,699 @@
+{
+  "ADM_Dirac_result": {
+    "constraint_determinant": "-4*H**2*M_P_sq**2",
+    "constraint_solution": "Matrix([[(M_P_sq*R_dot + delta_rho*rho_dot/2)/(H*M_P_sq)], [(2*H*M_P_sq*(-6*H*M_P_sq*R_dot - 2*M_P_sq*R*q_phys**2 + delta_rho*(V_rho + mu**2*rho) + delta_rho_dot*rho_dot) - (C_J*q_phys**2 - 2*V)*(2*M_P_sq*R_dot + delta_rho*rho_dot))/(4*H**2*M_P_sq**2)]])",
+    "physical_DOF": 4,
+    "reduced_FRW_kinetic_determinant": "(C_J*q_phys**2 + mu**2*rho**2)/H**2",
+    "reduced_FRW_kinetic_matrix": "Matrix([[(C_J*q_phys**2 + mu**2*rho**2 + rho_dot**2)/H**2, -rho_dot/H], [-rho_dot/H, 1]])"
+  },
+  "FRW_background": {
+    "diagnostics": {
+      "expansion_factor": 3.938974385402079,
+      "max_relative_charge_drift": 2.220446049250313e-16,
+      "max_relative_continuity_residual": 1.4436688111078463e-15,
+      "max_relative_friedmann_residual": 2.4003311520576187e-10,
+      "minimum_H": 0.09169844660955116,
+      "minimum_rho": 0.08934786805380011
+    },
+    "endpoint": {
+      "H": 0.09169844660955116,
+      "Theta": 6.013704243043827,
+      "a": 3.938974385402079,
+      "mu": 1.756916049202285,
+      "rho": 0.1022957537368767,
+      "rho_dot": 0.08759236557453885
+    },
+    "initial_conditions": {
+      "H": 0.6313565641625271,
+      "Theta": 0.0,
+      "a": 1.0,
+      "charge": 1.1236102527122116,
+      "mu": 1.1236102527122116,
+      "rho": 1.0,
+      "rho_dot": 0.0
+    },
+    "integration": {
+      "atol": 1e-13,
+      "function_evaluations": 1382,
+      "method": "scipy.solve_ivp_DOP853",
+      "rtol": 1e-11,
+      "samples": 601,
+      "t_end": 6.0,
+      "t_start": 0.0
+    },
+    "parameters": {
+      "Lambda": 2.0,
+      "M_P": 1.0,
+      "lambda4": 0.5,
+      "lambda6": 0.2,
+      "m_squared": 1.0
+    },
+    "scope": "existence and matrix validation only; not a cosmological fit",
+    "status": "PASS_ON_SHELL_DIMENSIONLESS_EXISTENCE_BRANCH"
+  },
+  "audit": "PKM1_P0_FINITE_DENSITY_PARENT_ADM_DIRAC_HAMILTONIAN",
+  "calculation_status": "PASS_BOUNDED_PARENT_AUDIT",
+  "checks": [
+    {
+      "J_Y": "-1/((y + 1)*(y**2 + 1))",
+      "consequence": "the radial lapse/khronon principal kinetic coefficient changes sign; prior static ellipticity did not test this condition",
+      "critical_y": 0.657298106138376,
+      "mu_y": "y*(y**2 + y + 1)/((y + 1)*(y**2 + 1))",
+      "name": "P0_A_inherited_fast_transition_control_rejected",
+      "ok": true,
+      "radial_khronon_Hessian": "(2*y**3 + y**2 - 1)/((y + 1)**2*(y**2 + 1)**2)",
+      "sign_domain": "J_Y+2Y*J_YY<0 for 0<y<y_critical; >0 for y>y_critical"
+    },
+    {
+      "J_series": "-a0**2*y**2 + 2*a0**2*y**3/3 - a0**2*y**4/2 + 2*a0**2*y**5/5 - a0**2*y**6/3 + O(y**7)",
+      "J_y": "-2*a0**2*(y - log(y + 1))",
+      "classification": "STABILITY_FIRST_EFT_EXISTENCE_CONTROL_NOT_ITSM_DERIVATION",
+      "high_acceleration": "mu->1 and J/Y->0, but J itself does not approach a constant",
+      "khronon_kinetic_radial": "(y + 1)**(-2)",
+      "khronon_kinetic_transverse": "1/(y + 1)",
+      "mu_y": "y/(y + 1)",
+      "name": "P0_B_stability_first_control_passes_local_symbolic_conditions",
+      "ok": true,
+      "static_radial": "y*(y + 2)/(y + 1)**2",
+      "static_transverse": "y/(y + 1)"
+    },
+    {
+      "boundary": "this is an action-class tradeoff, not yet a Solar-System exclusion; PPN/ephemeris bounds require a separate test",
+      "finite_J_implication": "because dJ/dy=-2*a0^2*y*delta, the same conditions forbid a finite constant J at y->infinity",
+      "identity": "J_Y+2Y*J_YY=-[delta+y*delta']; radial kinetic positivity requires (y*delta)'>=0, where delta=1-mu>0",
+      "implication": "after any y0 with delta(y0)>0, delta(y)>=y0*delta(y0)/y; a globally stable pure-J control cannot have a faster-than-1/y approach to mu=1",
+      "name": "pure_J_stable_tail_tradeoff_derived",
+      "ok": true
+    },
+    {
+      "conclusion": "exact K_QQ=0 is incompatible with s>0, mu>0 and stable finite M_rho; radial relaxation strengthens rather than cancels the term",
+      "enhancement_factor": "(M_rho_sq + 4*mu**2)/M_rho_sq",
+      "fixed_amplitude_K_QQ": "mu**2*s/M_P_sq",
+      "m_K_squared": "mu**2*s*(M_rho_sq + 4*mu**2)/(2*M_P_sq*M_rho_sq)",
+      "name": "same_condensate_forces_positive_Helmholtz_susceptibility",
+      "ok": true,
+      "relaxed_K_QQ": "mu**2*s*(M_rho_sq + 4*mu**2)/(M_P_sq*M_rho_sq)",
+      "sound_speed_squared": "M_rho_sq/(M_rho_sq + 4*mu**2)"
+    },
+    {
+      "FRW_form": "3*H**2*R**2*f_h*(M_rho_sq + 4*mu**2)/(2*M_rho_sq*lambda_stat)",
+      "conditions": [
+        "m_K^2/(lambda_stat*k^2)<<1 with k~1/R",
+        "k^2<<M_rho^2 for Thomas-Fermi radial elimination",
+        "window exists only if m_K^2/(lambda_stat*M_rho^2)<<1"
+      ],
+      "locality_ratio": "R**2*mu**2*s*(M_rho_sq + 4*mu**2)/(2*M_P_sq*M_rho_sq*lambda_stat)",
+      "name": "local_AQUAL_window_is_conditional_not_algebraically_empty",
+      "ok": true,
+      "status": "PARAMETRIC_DOMAIN_CONDITION_DERIVED; NO ITSM PARAMETER POINT OR GALACTIC DOMAIN ESTABLISHED"
+    },
+    {
+      "Hamiltonian": "H=int[N*H0+N^i*H_i+M_P^2*N*sqrt(h)*J(Y)-sqrt(h)*rho^2*mu_Theta^2/(2N)]",
+      "Y0_local_bracket_coefficient": "-mu**2*s",
+      "canonical_momenta": {
+        "p_N": "0",
+        "p_i": "0",
+        "p_rho": "sqrt(h)*(dot(rho)-N^i D_i rho)/N",
+        "pi_ij": "(M_P^2/2)*sqrt(h)*(K^ij-h^ij*K)"
+      },
+      "covariant_count": "12 configuration variables, 8 first-class constraints -> 4 DOF",
+      "lapse_constraint": "C_N=H0+M_P^2*sqrt(h)*(J-2YJ_Y)-D_i[2*M_P^2*sqrt(h)*J_Y*D^iN/N]+sqrt(h)*rho^2*mu_Theta^2/(2N^2)",
+      "name": "ADM_Dirac_count_regular_on_finite_charge_Y0_branch",
+      "ok": true,
+      "physical_DOF": [
+        "2 tensor",
+        "1 phase/khronon",
+        "1 amplitude"
+      ],
+      "result": "the fundamental-J parent has no constraint-rank loss at Y=0 while rho*mu is nonzero; this does not regularize its cubic nonanalyticity",
+      "unitary_count": "11 configuration variables; 6 spatial-diffeomorphism first-class constraints and (p_N,C_N) second class -> 4 DOF"
+    },
+    {
+      "Hamiltonian_principal_eigenvalues": [
+        "2*M_P^2*J_Y/N",
+        "2*M_P^2*(J_Y+2Y*J_YY)/N"
+      ],
+      "Lagrangian_kinetic_eigenvalues": [
+        "-2*M_P^2*J_Y",
+        "-2*M_P^2*(J_Y+2Y*J_YY)"
+      ],
+      "P0_B_values": [
+        "2*M_P^2/(1+y)",
+        "2*M_P^2/(1+y)^2"
+      ],
+      "domain": "every finite y>0 on a smooth timelike phase chart",
+      "name": "P0_B_generic_Y_constraint_principal_symbol_is_nonzero",
+      "ok": true
+    },
+    {
+      "energy_density": "V + mu**2*s/2",
+      "name": "stationary_finite_density_Minkowski_no_go_with_only_Lambda_counterterm",
+      "ok": true,
+      "pressure": "-V + mu**2*s/2",
+      "reason": "a cosmological constant can shift rho and p oppositely but cannot cancel rho+p=s*mu^2>0; exact stationary Minkowski therefore requires loss of finite charge or a new counterstress sector",
+      "retained_background": "evolving flat FRW",
+      "rho_plus_p": "mu**2*s"
+    },
+    {
+      "boundary": "J(Y) vanishes and has no homogeneous variation at Y=0; the background is the canonical condensate FRW branch, not LambdaCDM",
+      "equations": {
+        "Friedmann": "3*M_P^2*H^2=(rho_dot^2+rho^2*mu^2)/2+V",
+        "Raychaudhuri": "(-mu**2*rho**2 - rho_dot**2)/(2*M_P_sq)",
+        "charge": "3*H*mu*rho**2 + Theta_ddot*rho**2 + 2*mu*rho*rho_dot",
+        "radial": "3*H*rho_dot + V_rho - mu**2*rho + rho_ddot"
+      },
+      "name": "P0_FRW_equations_close_without_J_background_contribution",
+      "ok": true
+    },
+    {
+      "P0_B_FRW_coefficient": "C_J=-2*M_P^2*J_Y(0)=2*M_P^2",
+      "conclusion": "two positive scalar kinetic directions persist at q=0 on the finite-charge expanding branch; this is a quadratic no-ghost result, not a complete time-dependent stability proof",
+      "constraint_determinant": "-4*H**2*M_P_sq**2",
+      "constraint_matrix": "Matrix([[C_J*q_phys**2 - 2*V, 2*H*M_P_sq], [2*H*M_P_sq, 0]])",
+      "constraints": [
+        "delta_N",
+        "Sigma=q_phys^2*beta"
+      ],
+      "name": "P0_B_FRW_scalar_kinetic_matrix_is_positive_at_finite_and_zero_q",
+      "ok": true,
+      "reduced_kinetic_determinant": "(C_J*q_phys**2 + mu**2*rho**2)/H**2",
+      "reduced_kinetic_matrix": "Matrix([[(C_J*q_phys**2 + mu**2*rho**2 + rho_dot**2)/H**2, -rho_dot/H], [-rho_dot/H, 1]])",
+      "strict_q0_determinant": "mu**2*rho**2/H**2",
+      "variables": [
+        "R in uniform-phase gauge",
+        "delta_rho"
+      ]
+    },
+    {
+      "dispersion": "M_rho_sq*k**2*mu**2*s/(2*M_P_sq*M_rho_sq*k**2 + M_rho_sq*mu**2*s + 4*mu**4*s)",
+      "formal_high_k": "mu**2*s/(2*M_P_sq)",
+      "front_speed": "formal omega/k -> 0",
+      "implication": "the J term supplies a positive k^2-dependent time kinetic term; the full amplitude-metric characteristics and cutoff remain open",
+      "low_k": "omega^2=c_s^2*k^2",
+      "name": "controlled_decoupling_phase_characteristic_is_non_ghost_but_nonrelativistic",
+      "ok": true,
+      "validity": "the Thomas-Fermi expression requires k^2<<M_rho^2, so its literal k->infinity plateau is a scaling diagnostic, not a UV prediction"
+    }
+  ],
+  "control_decisions": {
+    "P0_A": {
+      "J": "a0**2*(log(y + 1) - log(y**2 + 1)/2 - atan(y))",
+      "J_Y": "-1/((y + 1)*(y**2 + 1))",
+      "J_Y_plus_2YJ_YY": "(2*y**3 + y**2 - 1)/((y + 1)**2*(y**2 + 1)**2)",
+      "critical_y": 0.657298106138376,
+      "disposition": "REJECT_FINITE_Y_RADIAL_KHRONON_KINETIC_SIGN_CHANGE",
+      "mu": "y*(y**2 + y + 1)/((y + 1)*(y**2 + 1))"
+    },
+    "P0_B": {
+      "J": "-2*a0**2*(y - log(y + 1))",
+      "J_Y": "-1/(y + 1)",
+      "J_Y_plus_2YJ_YY": "-1/(y + 1)**2",
+      "disposition": "RETAIN_AS_STABILITY_FIRST_EFT_CONTROL_ONLY",
+      "mu": "y/(y + 1)",
+      "static_radial": "y*(y + 2)/(y + 1)**2"
+    }
+  },
+  "derived": [
+    "P0-A has a radial khronon kinetic sign change at finite y",
+    "P0-B passes the bounded static and khronon Hessian inequalities",
+    "the canonical condensate supplies a strictly positive K_QQ and Helmholtz scale",
+    "radial relaxation enhances K_QQ by 1/c_s^2",
+    "the fundamental-J parent carries four local physical DOF",
+    "the finite-charge Y=0 branch has no Dirac or reduced-kinetic rank loss",
+    "stationary finite-density Minkowski is impossible in P0 with only a Lambda counterterm",
+    "an on-shell expanding FRW existence branch and positive two-scalar kinetic matrix were verified",
+    "a local AQUAL regime is a parameter-window question, not an exact equation"
+  ],
+  "external_primary_context": [
+    {
+      "citation": "Blanchet and Marsat (2011)",
+      "url": "https://arxiv.org/abs/1107.5264",
+      "use": "metric-hosted MOND action-class precedent"
+    },
+    {
+      "citation": "Bonetti and Barausse (2015)",
+      "url": "https://arxiv.org/abs/1502.05554",
+      "use": "high-acceleration GR versus strong-coupling and PPN completion precedent; no result inherited"
+    },
+    {
+      "citation": "Flanagan (2023)",
+      "url": "https://arxiv.org/abs/2302.14846",
+      "use": "stationary low-acceleration khronon kinetic conditions and nonstationary caveat; no stability inherited"
+    },
+    {
+      "citation": "Blanchet and Skordis (2024)",
+      "url": "https://arxiv.org/abs/2404.06584",
+      "use": "J(Y)+K(Q) Hamiltonian and cosmology precedent"
+    }
+  ],
+  "frozen_parent": {
+    "J_classification": "FUNDAMENTAL_CONTROLLED_IR_EFT_DATA_NOT_DERIVED",
+    "action": "S=int sqrt(-g){(M_P^2/2)[R-2J(Y)]-(nabla rho)^2/2-rho^2(nabla Theta)^2/2-V(rho)}+S_m[Psi_m,g]",
+    "excluded": [
+      "independent aether",
+      "independent force psi",
+      "appended free K(Q)",
+      "engineered non-affine auxiliary s",
+      "reservoir and topology completion"
+    ],
+    "matter": "single universally and minimally coupled metric",
+    "phase_map": "U_mu=-nabla_mu Theta/sqrt(Z), Z=-nabla_Theta^2>0, Y=(U.nabla U)^2"
+  },
+  "gate_firewall": {
+    "K_Q": "NOT_DERIVED_IN_LIVE_ROUTE",
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "V": "NOT_COMPUTED_IN_LIVE_ROUTE",
+    "a0": "NOT_DERIVED",
+    "canonical_action_replaced": false,
+    "commit_push_publication": false,
+    "downstream_opened": false
+  },
+  "input_sha256": {
+    "core_identity": "635E3A4E770B2336E89DCFB87313FC5A262F77999ADF919ED7C1A547410C9C71",
+    "route_decision": "4725512C46A0F7AAA6A7CED90A390661C0447E9E61C38D2062FD1B44038B01FE",
+    "spec": "C0E0F1414BEDA764079A775B9B7FA1CAAD522FEEB403F80B26BD5B5648424FF7",
+    "uvir001_summary": "CD8D283AE01252060A1F9D3EF078DF42221C0E3008F4406C3EFECC006820F914"
+  },
+  "open_or_not_derived": [
+    "microscopic origin and radiative stability of J_B and a0",
+    "a physical ITSM parameter point satisfying the local-AQUAL window",
+    "complete stationary nonzero-gradient galactic background and Hamiltonian",
+    "nonlinear zero-gradient strong-coupling scale and physical cutoff",
+    "Jeans band from the complete time-dependent perturbation system",
+    "PPN, ephemeris, Shapiro, lensing, GW and compact-object limits",
+    "winding, defect cores, compact T3 topology and reservoir compatibility"
+  ],
+  "phase_characteristic": {
+    "formal_plateau": "mu**2*s/(2*M_P_sq)",
+    "low_k_speed_squared": "M_rho_sq/(M_rho_sq + 4*mu**2)",
+    "omega_squared": "M_rho_sq*k**2*mu**2*s/(2*M_P_sq*M_rho_sq*k**2 + M_rho_sq*mu**2*s + 4*mu**4*s)"
+  },
+  "physics_pass": false,
+  "quadratic_FRW_validation": {
+    "kinetic_scan": {
+      "minimum_absolute_constraint_determinant": 0.03363442044241879,
+      "minimum_kinetic_determinant": 0.6797551449436424,
+      "minimum_q0_kinetic_determinant": 0.6797551449436424,
+      "minimum_raw_kinetic_eigenvalue": 0.20095045604500805,
+      "negative_eigenvalue_count": 0,
+      "numerical_zero_count": 0,
+      "q_over_H_samples": 32,
+      "status": "PASS_VALIDATION_OF_SYMBOLIC_POSITIVITY",
+      "total_matrix_samples": 1952,
+      "trajectory_snapshots": 61
+    },
+    "local_equation_generator": {
+      "included_background_derivatives": [
+        "H_dot",
+        "rho_dot",
+        "rho_ddot",
+        "mu_dot",
+        "q_phys_dot=-H*q_phys",
+        "d(a^3)/dt=3H*a^3"
+      ],
+      "interpretation": "instantaneous FRW generator only; real parts are not a basis-invariant global instability rate and no conserved FRW Hamiltonian is claimed",
+      "maximum_directional_derivative_relative_error": 3.1655144002413315e-09,
+      "samples": [
+        {
+          "directional_derivative_relative_error": 5.028014442789483e-10,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -1.6818739287363043
+            },
+            {
+              "imag": -3.384514452888607,
+              "real": -0.7548953034267428
+            },
+            {
+              "imag": 3.384514452888607,
+              "real": -0.7548953034267428
+            },
+            {
+              "imag": 0.0,
+              "real": -0.0006828796543799144
+            }
+          ],
+          "max_abs_imag_over_q": 33.84514452888607,
+          "q_over_H": 0.1,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 4.3031225398131167e-10,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -1.5792101831958392
+            },
+            {
+              "imag": -2.8918510859792304,
+              "real": -1.5249147363209612
+            },
+            {
+              "imag": 2.8918510859792304,
+              "real": -1.5249147363209612
+            },
+            {
+              "imag": 0.0,
+              "real": -0.08642081253889597
+            }
+          ],
+          "max_abs_imag_over_q": 2.8918510859792304,
+          "q_over_H": 1.0,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 1.2393133606105933e-09,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -3.676932269306876
+            },
+            {
+              "imag": -9.965832373331297,
+              "real": -1.5023975938747243
+            },
+            {
+              "imag": 9.965832373331297,
+              "real": -1.5023975938747243
+            },
+            {
+              "imag": 0.0,
+              "real": -0.42316248872467865
+            }
+          ],
+          "max_abs_imag_over_q": 0.9965832373331297,
+          "q_over_H": 10.0,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 5.548878154730483e-10,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -3.743666487645695
+            },
+            {
+              "imag": -99.99565888502708,
+              "real": -1.5000002589683763
+            },
+            {
+              "imag": 99.99565888502708,
+              "real": -1.5000002589683763
+            },
+            {
+              "imag": 0.0,
+              "real": -0.42294703182466437
+            }
+          ],
+          "max_abs_imag_over_q": 0.9999565888502708,
+          "q_over_H": 100.0,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 1.7749650154477999e-10,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -3.744299095600102
+            },
+            {
+              "imag": -999.9995649054069,
+              "real": -1.5000000000259455
+            },
+            {
+              "imag": 999.9995649054069,
+              "real": -1.5000000000259455
+            },
+            {
+              "imag": 0.0,
+              "real": -0.42294195661752704
+            }
+          ],
+          "max_abs_imag_over_q": 0.999999564905407,
+          "q_over_H": 1000.0,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 1.74644177042024e-10,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": 0.0004976812177227714
+            },
+            {
+              "imag": -13.495370592851726,
+              "real": 1.2076733603102674
+            },
+            {
+              "imag": 13.495370592851726,
+              "real": 1.2076733603102674
+            },
+            {
+              "imag": 0.0,
+              "real": 3.6050528302653646
+            }
+          ],
+          "max_abs_imag_over_q": 134.95370592851725,
+          "q_over_H": 0.1,
+          "t": 3.0
+        },
+        {
+          "directional_derivative_relative_error": 3.2797532439500697e-10,
+          "lambda_over_H": [
+            {
+              "imag": -10.964999112826575,
+              "real": -1.4903601017444639
+            },
+            {
+              "imag": 10.964999112826575,
+              "real": -1.4903601017444639
+            },
+            {
+              "imag": 0.0,
+              "real": 0.05284112584351974
+            },
+            {
+              "imag": 0.0,
+              "real": 3.404222788690283
+            }
+          ],
+          "max_abs_imag_over_q": 10.964999112826575,
+          "q_over_H": 1.0,
+          "t": 3.0
+        },
+        {
+          "directional_derivative_relative_error": 2.6170831721915e-09,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -6.708600978170239
+            },
+            {
+              "imag": 0.0,
+              "real": -1.0140932993208742
+            },
+            {
+              "imag": -8.870464124902318,
+              "real": -0.13676657500732708
+            },
+            {
+              "imag": 8.870464124902318,
+              "real": -0.13676657500732708
+            }
+          ],
+          "max_abs_imag_over_q": 0.8870464124902318,
+          "q_over_H": 10.0,
+          "t": 3.0
+        },
+        {
+          "directional_derivative_relative_error": 2.1033140093568213e-09,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -6.036206975312573
+            },
+            {
+              "imag": 0.0,
+              "real": -0.8192829035725236
+            },
+            {
+              "imag": -99.84875667895565,
+              "real": -0.6780235898433956
+            },
+            {
+              "imag": 99.84875667895565,
+              "real": -0.6780235898433956
+            }
+          ],
+          "max_abs_imag_over_q": 0.9984875667895565,
+          "q_over_H": 100.0,
+          "t": 3.0
+        },
+        {
+          "directional_derivative_relative_error": 1.7937815547898053e-09,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -6.0247300528173415
+            },
+            {
+              "imag": 0.0,
+              "real": -0.8177106002288541
+            },
+            {
+              "imag": -999.9848319964879,
+              "real": -0.685641347079317
+            },
+            {
+              "imag": 999.9848319964879,
+              "real": -0.685641347079317
+            }
+          ],
+          "max_abs_imag_over_q": 0.9999848319964879,
+          "q_over_H": 1000.0,
+          "t": 3.0
+        },
+        {
+          "directional_derivative_relative_error": 3.519774402846668e-10,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -0.00014362970556898612
+            },
+            {
+              "imag": -18.96482487048487,
+              "real": 1.0347214599491226
+            },
+            {
+              "imag": 18.96482487048487,
+              "real": 1.0347214599491226
+            },
+            {
+              "imag": 0.0,
+              "real": 11.735062070354472
+            }
+          ],
+          "max_abs_imag_over_q": 189.64824870484867,
+          "q_over_H": 0.1,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 3.3966859569638865e-10,
+          "lambda_over_H": [
+            {
+              "imag": -15.63917058018866,
+              "real": -3.204854545221189
+            },
+            {
+              "imag": 15.63917058018866,
+              "real": -3.204854545221189
+            },
+            {
+              "imag": 0.0,
+              "real": -0.011035976255835385
+            },
+            {
+              "imag": 0.0,
+              "real": 12.578811244585717
+            }
+          ],
+          "max_abs_imag_over_q": 15.63917058018866,
+          "q_over_H": 1.0,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 2.083547343202691e-09,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -16.87644596235175
+            },
+            {
+              "imag": 0.0,
+              "real": -2.020022530169322
+            },
+            {
+              "imag": -3.0922404113969386,
+              "real": 5.2849572250277985
+            },
+            {
+              "imag": 3.0922404113969386,
+              "real": 5.2849572250277985
+            }
+          ],
+          "max_abs_imag_over_q": 0.3092240411396939,
+          "q_over_H": 10.0,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 3.1655144002413315e-09,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -15.67095542769296
+            },
+            {
+              "imag": 0.0,
+              "real": -0.916752304834333
+            },
+            {
+              "imag": -99.2996594346937,
+              "real": 3.9190901186220812
+            },
+            {
+              "imag": 99.2996594346937,
+              "real": 3.9190901186220812
+            }
+          ],
+          "max_abs_imag_over_q": 0.992996594346937,
+          "q_over_H": 100.0,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 8.099461329400112e-10,
+          "lambda_over_H": [
+            {
+              "imag": 0.0,
+              "real": -15.584455443294495
+            },
+            {
+              "imag": 0.0,
+              "real": -0.9114247138944004
+            },
+            {
+              "imag": -999.9292645306895,
+              "real": 3.8710208462690563
+            },
+            {
+              "imag": 999.9292645306895,
+              "real": 3.8710208462690563
+            }
+          ],
+          "max_abs_imag_over_q": 0.9999292645306894,
+          "q_over_H": 1000.0,
+          "t": 6.0
+        }
+      ],
+      "volume_factor_derivative_included": true
+    }
+  },
+  "route_disposition": "HOLD_PKM1_P0_B_STABILITY_FIRST_CONTROL_ONLY_P0_A_REJECTED",
+  "route_level_interpretation": "The earlier finite-constant fast-transition interpolation is not a healthy global PKM1 control because its radial khronon kinetic Hessian changes sign. A stability-first pure-J comparator exists and the same finite-density parent has a regular quadratic FRW constraint count, so the action class is not rejected. However, global pure-J kinetic stability enforces a slow high-acceleration tail, while the canonical condensate produces a nonzero Helmholtz term. These are new PPN/locality burdens, not solved predictions.",
+  "same_action_condensate_result": {
+    "K_QQ_fixed_amplitude": "mu**2*s/M_P_sq",
+    "K_QQ_relaxed": "mu**2*s*(M_rho_sq + 4*mu**2)/(M_P_sq*M_rho_sq)",
+    "TF_window_ratio": "mu**2*s*(M_rho_sq + 4*mu**2)/(2*M_P_sq*M_rho_sq**2*lambda_stat)",
+    "c_s_squared": "M_rho_sq/(M_rho_sq + 4*mu**2)",
+    "locality_FRW_form": "3*H**2*R**2*f_h*(M_rho_sq + 4*mu**2)/(2*M_rho_sq*lambda_stat)",
+    "locality_ratio": "R**2*mu**2*s*(M_rho_sq + 4*mu**2)/(2*M_P_sq*M_rho_sq*lambda_stat)",
+    "m_K_squared": "mu**2*s*(M_rho_sq + 4*mu**2)/(2*M_P_sq*M_rho_sq)"
+  },
+  "scientific_boundary": "A PASS_BOUNDED_PARENT_AUDIT means the displayed algebra, representative FRW integration and matrix checks reproduced. It does not establish a microscopic J, a physical parameter window, a nonlinear stable theory, MOND phenomenology, cosmological viability, or a Tier-1 physics pass.",
+  "software": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  }
+}

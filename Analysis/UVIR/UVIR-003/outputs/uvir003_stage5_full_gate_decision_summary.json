@@ -1,0 +1,365 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "blocking_for_tier1_closure": [
+    "M2",
+    "M3",
+    "M6",
+    "M7"
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "expected": "PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL",
+      "got": "PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL",
+      "name": "alpha10_four_leg",
+      "ok": true
+    },
+    {
+      "expected": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+      "got": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+      "name": "alpha10_green",
+      "ok": true
+    },
+    {
+      "expected": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+      "got": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+      "name": "alpha10_track_a",
+      "ok": true
+    },
+    {
+      "expected": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+      "got": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+      "name": "M4_unitarity_criterion",
+      "ok": true
+    },
+    {
+      "expected": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "got": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "name": "M5_inventory",
+      "ok": true
+    },
+    {
+      "expected": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+      "got": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+      "name": "M2_domain_freeze",
+      "ok": true
+    },
+    {
+      "expected": "PASS_CONDITIONAL_MATCHING_FLOOR",
+      "got": "PASS_CONDITIONAL_MATCHING_FLOOR",
+      "name": "stage2b_floor",
+      "ok": true
+    },
+    {
+      "expected": "PASS_STAGE2C_FLOOR_DIAGNOSTICS",
+      "got": "PASS_STAGE2C_FLOOR_DIAGNOSTICS",
+      "name": "stage2c_diagnostics",
+      "ok": true
+    },
+    {
+      "expected": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+      "got": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+      "name": "stage4_conditional_record",
+      "ok": true
+    },
+    {
+      "expected": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL",
+      "got": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL",
+      "name": "stage3_mat_scoped_no_pass",
+      "ok": true
+    },
+    {
+      "mat001_pass": false,
+      "name": "mat001_pass_still_false",
+      "ok": true
+    },
+    {
+      "V_status": "NOT_COMPUTED",
+      "name": "V_still_not_computed",
+      "ok": true
+    },
+    {
+      "expected": "PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED",
+      "got": "PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED",
+      "name": "in_in_path_declared",
+      "ok": true
+    },
+    {
+      "expected": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+      "got": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+      "name": "causality_conditional_domain",
+      "ok": true
+    },
+    {
+      "expected": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "got": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "name": "matching_route_program",
+      "ok": true
+    },
+    {
+      "exit": "HOLD_MATCHED_STAGE4A_REQUIRED",
+      "name": "stage4_exit_holds_matched_reopen",
+      "ok": true
+    },
+    {
+      "expected": "HOLD_MATCHED_INVARIANT_REQUIRED",
+      "got": "HOLD_MATCHED_INVARIANT_REQUIRED",
+      "name": "stage4_M3_status",
+      "ok": true
+    },
+    {
+      "expected": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
+      "got": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
+      "name": "stage4_M6_status",
+      "ok": true
+    },
+    {
+      "all_clauses_met": false,
+      "name": "master_plan_wording_not_fully_met_for_tier1",
+      "ok": true
+    },
+    {
+      "name": "scope_items_include_unresolved_ir_and_do_not_close_gate",
+      "ok": true,
+      "statuses": {
+        "Derived_numeric_K_Q": "NOT_CLAIMED",
+        "IR_HOLD_complex_quartet_modes": "UNRESOLVED_RELEVANT_IR_HOLD",
+        "full_in_in_nested_integrals": "PERMANENTLY_DEFERRED_FROM_UVIR003_PASS_CLAIMS",
+        "homogeneous_zero_gradient_Y32_S_matrix": "PERMANENTLY_EXCLUDED_FROM_UVIR003_FORCE_PASS_CLAIMS",
+        "optical_theorem_multi_channel_unitarity": "PERMANENTLY_EXCLUDED_FROM_UVIR003_GATE"
+      }
+    },
+    {
+      "flags": {
+        "Derived_K_Q": false,
+        "Derived_V": false,
+        "Derived_matched_Aq_over_KQ": false,
+        "Derived_physical_cutoff": false,
+        "Derived_theory_closed": false,
+        "MAT001_PASS": false,
+        "R1_naive_promoted_to_Derived": false,
+        "SPARC_or_H0_validation": false,
+        "bounded_conditional_full_gate_PASS": false,
+        "downstream_Derived_SCR_LEN_DISK_P3_P4": false,
+        "dual_RAR_a0_cH0_C_2_3": false,
+        "full_in_in_claimed_computed": false,
+        "optical_theorem_claimed": false,
+        "unqualified_full_gate_PASS": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    },
+    {
+      "blocking": [
+        "M2",
+        "M3",
+        "M6",
+        "M7"
+      ],
+      "name": "tier1_blockers_recorded",
+      "ok": true
+    },
+    {
+      "name": "naive_R1_not_promoted",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "Derived_K_Q": false,
+    "Derived_V": false,
+    "Derived_matched_Aq_over_KQ": false,
+    "Derived_physical_cutoff": false,
+    "Derived_theory_closed": false,
+    "MAT001_PASS": false,
+    "R1_naive_promoted_to_Derived": false,
+    "SPARC_or_H0_validation": false,
+    "bounded_conditional_full_gate_PASS": false,
+    "downstream_Derived_SCR_LEN_DISK_P3_P4": false,
+    "dual_RAR_a0_cH0_C_2_3": false,
+    "full_in_in_claimed_computed": false,
+    "optical_theorem_claimed": false,
+    "unqualified_full_gate_PASS": false
+  },
+  "claim_status": "Open_tier1_closure_hold",
+  "decision": "HOLD_TIER1_CLOSURE",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "kq_numeric_status": "NOT_DERIVED",
+  "master_plan_criteria": {
+    "M1": {
+      "note": "Selected action and bounded Track-A architecture are declared",
+      "status": "PASS_BOUNDED",
+      "tier1_met": true
+    },
+    "M2": {
+      "evidence": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+      "note": "High-q slice is bounded; relevant IR complex-quartet control remains held",
+      "status": "PARTIAL_BOUNDED_HIGH_Q_ONLY",
+      "tier1_met": false
+    },
+    "M3": {
+      "evidence": "Stage 4 Conditional programme-limit record",
+      "note": "Conditional domain tables do not replace matched Aq/K_Q",
+      "status": "HOLD_MATCHED_INVARIANT_REQUIRED",
+      "tier1_met": false
+    },
+    "M4": {
+      "evidence": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+      "note": "A scoped tree/NDA unitarity path is declared; no optical-theorem claim",
+      "status": "PASS_SCOPED",
+      "tier1_met": true
+    },
+    "M5": {
+      "evidence": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "note": "Field-redefinition invariants are identified; matching remains M3/M6 work",
+      "status": "PASS_INVENTORY_K_Q_NOT_DERIVED",
+      "tier1_met": true
+    },
+    "M6": {
+      "evidence": "Stage 4 Conditional programme-limit record",
+      "note": "Conditional NDA diagnostic is not a matched physical cutoff",
+      "status": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
+      "tier1_met": false
+    },
+    "M7": {
+      "evidence": "Stage 2b handoff + Stage 3 provisional calculation",
+      "note": "MAT engineering may continue, but MAT PASS and Derived use remain blocked",
+      "status": "PARTIAL_SCOPED_HANDOFF_ONLY",
+      "tier1_met": false
+    }
+  },
+  "master_plan_wording_map": {
+    "causal_in_declared_domain": {
+      "clause": "causal ... in declared domain",
+      "criterion": "M3",
+      "met_under_policy": false,
+      "note": "Conditional domain + floor; not Derived matched Aq/K_Q",
+      "status": "HOLD_MATCHED_INVARIANT_REQUIRED"
+    },
+    "invariant_ratios": {
+      "clause": "invariant ratios",
+      "criterion": "M5",
+      "met_under_policy": true,
+      "status": "PASS_INVENTORY_K_Q_NOT_DERIVED"
+    },
+    "physical_cutoff_stated_with_scope": {
+      "clause": "physical cutoff ... stated with scope",
+      "criterion": "M6",
+      "met_under_policy": false,
+      "note": "NDA diagnostic under floor P; not Derived matched scale",
+      "status": "HOLD_PHYSICAL_CUTOFF_REQUIRED"
+    },
+    "selected_action": {
+      "clause": "Selected action",
+      "criterion": "M1",
+      "met_under_policy": true,
+      "status": "PASS_BOUNDED"
+    },
+    "stable_in_declared_domain": {
+      "clause": "stable ... in declared domain",
+      "criterion": "M2",
+      "met_under_policy": false,
+      "status": "PARTIAL_BOUNDED_HIGH_Q_ONLY"
+    },
+    "unitarity_path_stated_with_scope": {
+      "clause": "unitarity path stated with scope",
+      "criterion": "M4 + optical theorem exclusion",
+      "met_under_policy": true,
+      "status": "PASS_SCOPED"
+    },
+    "weakly_coupled_in_declared_domain": {
+      "clause": "weakly coupled in declared domain",
+      "criterion": "M2+M4",
+      "met_under_policy": false,
+      "status": "PARTIAL_BOUNDED_HIGH_Q_ONLY+PASS_SCOPED"
+    }
+  },
+  "mat001_status": "BLOCKED_PASS_TAG_FORBIDDEN",
+  "mat_handoff": {
+    "allows_MAT001_PASS": false,
+    "allows_MAT_calculation_work": true,
+    "allows_downstream_Derived_from_MAT": false,
+    "note": "The scoped Stage-2/3 handoff permits provisional MAT engineering only; UVIR remains IN_PROGRESS and no MAT PASS or Derived packaging is authorized.",
+    "requires_for_MAT_PASS": [
+      "Compute V from S_int / force kinetic chart",
+      "Report C_obs as Derived from micro S_int or keep Conditional baseline explicit",
+      "MAT-001 checklist complete with claim ledger"
+    ]
+  },
+  "n_checks": 23,
+  "next_required": [
+    "Compute V=C_m/sqrt(K_Q), or an equivalent matched invariant, from one declared action/field chart",
+    "Reopen Stage 4A and re-evaluate causality with the matched invariant",
+    "Establish a gauge-invariant physical cutoff/unitarity result in the declared claim domain",
+    "Resolve or control the relevant infrared complex-quartet response",
+    "Run a later independent Stage 5 closure review; MAT PASS remains blocked"
+  ],
+  "physics_pass_derived_theory_closed": false,
+  "physics_pass_under_declared_conditional_policy": false,
+  "prior_artifacts": {
+    "audit": "PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT",
+    "causality_cond": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+    "four_leg": "PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL",
+    "green": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+    "in_in_path": "PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED",
+    "inventory": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+    "mat": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL",
+    "matching_routes": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+    "stage1_domain": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+    "stage2a_r3": "PASS_R3_UV_RESIDUE_AUDIT_INCOMPLETE",
+    "stage2b_floor": "PASS_CONDITIONAL_MATCHING_FLOOR",
+    "stage2c": "PASS_STAGE2C_FLOOR_DIAGNOSTICS",
+    "stage4": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+    "track_a": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+    "unitarity": "PASS_DECLARED_UNITARITY_EFT_CRITERION"
+  },
+  "residual_peer_review_risks": [
+    {
+      "mitigation": "Claim status Conditional; no Derived packaging; Stage 4A reopen path documented",
+      "risk": "Referee may demand Derived Aq/K_Q before accepting force-sector claims"
+    },
+    {
+      "mitigation": "Only redefinition invariants used in domain statements; free P explicit",
+      "risk": "K_Q NOT_DERIVED leaves absolute normalization free"
+    },
+    {
+      "mitigation": "Stated NOT_COMPUTED; MAT PASS forbidden; optional Stage 4A",
+      "risk": "V NOT_COMPUTED blocks R2 Derived upgrade"
+    },
+    {
+      "mitigation": "Deferred from the present scoped path; M4 records only a path-with-scope",
+      "risk": "Optical theorem absent"
+    }
+  ],
+  "scientific_boundary": "Stage 5 decision audit executed successfully but holds UVIR-003 at IN_PROGRESS for tier-1 closure. The bounded high-q and Track-A evidence is retained, while matched causality, a physical cutoff, and relevant infrared control remain mandatory blockers. This is not MAT PASS and does not authorize downstream Derived observational packaging.",
+  "serial_stage": 5,
+  "stage": "STAGE5_FULL_GATE_DECISION",
+  "subgate_status": "PASS_STAGE5_DECISION_HOLD_TIER1",
+  "unresolved_scope_items": {
+    "Derived_numeric_K_Q": {
+      "evidence": "PASS_KQ_MATCHING_INVENTORY_OPEN; Stage 4 branch B",
+      "rationale": "Inventory Open; R3 incomplete; Stage 3 V NOT_COMPUTED.",
+      "status": "NOT_CLAIMED"
+    },
+    "IR_HOLD_complex_quartet_modes": {
+      "evidence": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+      "rationale": "High-q evidence does not control the relevant IR complex-quartet response.",
+      "status": "UNRESOLVED_RELEVANT_IR_HOLD"
+    },
+    "full_in_in_nested_integrals": {
+      "evidence": "PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED; multi-slice Green is high-q proxy only",
+      "rationale": "Path declared (PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED); full nested in-in integrals are not computed and are not smuggled as PASS.",
+      "status": "PERMANENTLY_DEFERRED_FROM_UVIR003_PASS_CLAIMS"
+    },
+    "homogeneous_zero_gradient_Y32_S_matrix": {
+      "evidence": "PASS_NONZERO_GRADIENT_FORCE_LOCAL; Stage 1 exclude list",
+      "rationale": "Track-A programme is nonzero-gradient local force only.",
+      "status": "PERMANENTLY_EXCLUDED_FROM_UVIR003_FORCE_PASS_CLAIMS"
+    },
+    "optical_theorem_multi_channel_unitarity": {
+      "evidence": "PASS_DECLARED_UNITARITY_EFT_CRITERION (tree/NDA only)",
+      "rationale": "Master Plan requires unitarity *path stated with scope* (M4), not a completed optical theorem. Optical theorem deferred to a later dedicated gate if claimed observationally.",
+      "status": "PERMANENTLY_EXCLUDED_FROM_UVIR003_GATE"
+    }
+  }
+}

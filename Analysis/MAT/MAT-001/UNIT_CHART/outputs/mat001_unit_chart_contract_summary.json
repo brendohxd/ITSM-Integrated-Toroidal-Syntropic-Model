@@ -1,0 +1,270 @@
+{
+  "SI_dimensions_M_L_T": {
+    "A_SI": {
+      "L": "-4",
+      "M": "1",
+      "T": "4"
+    },
+    "G": {
+      "L": "3",
+      "M": "-1",
+      "T": "-2"
+    },
+    "K_Q_t": {
+      "L": "-5",
+      "M": "1",
+      "T": "4"
+    },
+    "K_Q_x0": {
+      "L": "-3",
+      "M": "1",
+      "T": "2"
+    },
+    "V_t": {
+      "L": "5/2",
+      "M": "-1/2",
+      "T": "-2"
+    },
+    "V_x0": {
+      "L": "3/2",
+      "M": "-1/2",
+      "T": "-1"
+    },
+    "a0_SI": {
+      "L": "1",
+      "M": "0",
+      "T": "-2"
+    },
+    "c": {
+      "L": "1",
+      "M": "0",
+      "T": "-1"
+    },
+    "psi_SI": {
+      "L": "2",
+      "M": "0",
+      "T": "-2"
+    },
+    "q_SI": {
+      "L": "1",
+      "M": "0",
+      "T": "-2"
+    }
+  },
+  "V_status": "NOT_COMPUTED",
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "error": null,
+      "name": "upstream_J1_exact_contract",
+      "ok": true,
+      "source": "mat001_j1_joint_action_normalization_summary.json"
+    },
+    {
+      "error": null,
+      "name": "upstream_R2_exact_contract",
+      "ok": true,
+      "source": "mat001_r2_direct_residue_audit_summary.json"
+    },
+    {
+      "name": "natural_Q2_term_has_dimension_4",
+      "ok": true
+    },
+    {
+      "name": "natural_Y32_term_has_dimension_4",
+      "ok": true
+    },
+    {
+      "name": "natural_matter_vertex_has_dimension_4",
+      "ok": true
+    },
+    {
+      "name": "natural_Aq_over_KQ_dimensionless",
+      "ok": true
+    },
+    {
+      "name": "natural_Aa0_over_KQ_dimensionless",
+      "ok": true
+    },
+    {
+      "name": "natural_V_has_mass_dimension_minus_1",
+      "ok": true
+    },
+    {
+      "name": "SI_x0_kinetic_term_is_energy_density",
+      "ok": true
+    },
+    {
+      "name": "SI_t_kinetic_term_is_energy_density",
+      "ok": true
+    },
+    {
+      "name": "SI_spatial_term_is_energy_density",
+      "ok": true
+    },
+    {
+      "name": "SI_mass_density_vertex_is_energy_density",
+      "ok": true
+    },
+    {
+      "name": "SI_conformal_exponent_dimensionless",
+      "ok": true
+    },
+    {
+      "name": "SI_Kt_equals_Kx_over_c2",
+      "ok": true
+    },
+    {
+      "name": "SI_x0_Aq_over_Kx_dimensionless",
+      "ok": true
+    },
+    {
+      "name": "SI_x0_Aa0_over_Kx_dimensionless",
+      "ok": true
+    },
+    {
+      "name": "SI_t_Aq_over_Kt_c2_dimensionless",
+      "ok": true
+    },
+    {
+      "name": "SI_t_Aa0_over_Kt_c2_dimensionless",
+      "ok": true
+    },
+    {
+      "name": "SI_x0_V_has_sqrtG_dimensions",
+      "ok": true
+    },
+    {
+      "name": "SI_t_V_has_sqrtG_times_c_dimensions",
+      "ok": true
+    },
+    {
+      "cases": [
+        {
+          "case": "missing_J1_rejected",
+          "ok": true
+        },
+        {
+          "case": "missing_R2_rejected",
+          "ok": true
+        },
+        {
+          "case": "premature_R2_V_computed_rejected",
+          "ok": true
+        },
+        {
+          "case": "extra_c2_in_x0_chart_not_dimensionless",
+          "ok": true
+        },
+        {
+          "case": "missing_c2_in_t_chart_not_dimensionless",
+          "ok": true
+        }
+      ],
+      "name": "negative_controls_fail_closed",
+      "ok": true
+    },
+    {
+      "flags": {
+        "K_Q_numeric_derived": false,
+        "SI_chart_selected_for_observables": false,
+        "UVIR003_pass": false,
+        "V_numeric_computed": false,
+        "mat001_pass": false,
+        "physics_pass": false,
+        "stage4A_unblocked": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "K_Q_numeric_derived": false,
+    "SI_chart_selected_for_observables": false,
+    "UVIR003_pass": false,
+    "V_numeric_computed": false,
+    "mat001_pass": false,
+    "physics_pass": false,
+    "stage4A_unblocked": false
+  },
+  "coefficient_chart_map": {
+    "SI_t_chart": "coordinate time t; K_Q_t multiplies (d psi_SI/dt)^2",
+    "SI_x0_chart": "x^0=ct; K_Q_x0 multiplies (U.grad psi_SI)^2",
+    "relation": "K_Q_t = K_Q_x0/c^2",
+    "repository_chart": "natural units; covariant derivative U^mu nabla_mu with c=hbar=1",
+    "t_causality_ratio": "3*A*q*(1+cos(theta)^2)/(K_Q_t*c^2)",
+    "t_vertex_invariant": "V_t=C_m/sqrt(K_Q_t)=c*V_x0, dimensions sqrt(G)*c",
+    "x0_causality_ratio": "3*A*q*(1+cos(theta)^2)/K_Q_x0",
+    "x0_vertex_invariant": "V_x0=C_m/sqrt(K_Q_x0), dimensions sqrt(G)"
+  },
+  "gate": "MAT-001",
+  "interpretation": {
+    "SI_observable_packaging": "OPEN until one coordinate, action-measure, density, and coefficient chart is selected",
+    "current_repository_formulas": "dimensionally closed in the declared natural/covariant chart",
+    "reason": "a c^2 factor belongs to the definition change K_Q_x0 <-> K_Q_t, not to every chart",
+    "universal_extra_c_minus_2": "REJECTED"
+  },
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 22,
+  "natural_unit_mass_dimensions": {
+    "A": 1,
+    "C_m": 0,
+    "K_Q": 2,
+    "L_density": 4,
+    "Q_unnormalized": 1,
+    "V": -1,
+    "Y_unnormalized": 2,
+    "a0": 1,
+    "gamma": 2,
+    "psi": 0,
+    "q": 1,
+    "rho_b": 4
+  },
+  "negative_controls": [
+    {
+      "case": "missing_J1_rejected",
+      "ok": true
+    },
+    {
+      "case": "missing_R2_rejected",
+      "ok": true
+    },
+    {
+      "case": "premature_R2_V_computed_rejected",
+      "ok": true
+    },
+    {
+      "case": "extra_c2_in_x0_chart_not_dimensionless",
+      "ok": true
+    },
+    {
+      "case": "missing_c2_in_t_chart_not_dimensionless",
+      "ok": true
+    }
+  ],
+  "next_required": [
+    "derive the kinetic and matter coefficients from one declared action",
+    "state whether the final SI action uses x0=ct or coordinate time t",
+    "project the source onto the physical canonical mode",
+    "then compute V in that named chart and reopen UVIR Stage 4A"
+  ],
+  "physics_pass": false,
+  "prior_artifacts": {
+    "J1": {
+      "parse_error": null,
+      "source": "mat001_j1_joint_action_normalization_summary.json"
+    },
+    "R2": {
+      "parse_error": null,
+      "source": "mat001_r2_direct_residue_audit_summary.json"
+    }
+  },
+  "scientific_boundary": "A PASS establishes dimensional consistency and the relation between covariant-length and coordinate-time coefficient charts. It does not select an SI observable chart, derive K_Q or C_m, compute V, unlock Stage 4A, or issue MAT/UVIR/physics PASS.",
+  "stage": "UNIT_CHART_CONTRACT",
+  "stage4A_unlock": false,
+  "subgate_status": "PASS_MAT001_UNIT_CHART_CONTRACT_OPEN",
+  "unit_contract_status": "FORMALIZED_COEFFICIENT_CHARTS_MATCHING_OPEN",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

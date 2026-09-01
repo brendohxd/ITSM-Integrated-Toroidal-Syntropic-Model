@@ -1,0 +1,164 @@
+{
+  "calculation_status": "PASS",
+  "definition": {
+    "SV": "largest_normalized_singular_value of fixed-comoving transfer",
+    "full_in_in_time_integrals": "NOT_COMPUTED",
+    "mode_projected_two_time_green": "G_mp(t_out,t_in) = K_nn(q(t_in)) * SV(t_out)/SV(t_in) for t_out>=t_in; 0 otherwise",
+    "multi_slice_kernel": "nearest-neighbour exchange_plus_reduced_contact at q_phys(t)/H(t) for fixed-comoving high-q labels",
+    "nonzero_gradient_grad_pi_cubed": "HELD",
+    "not_a_cross_section": true,
+    "not_a_unitarity_bound": true,
+    "not_an_s_matrix": true
+  },
+  "dependencies": {
+    "admitted_external_q_over_H": [
+      47.5,
+      50.0,
+      75.0,
+      100.0
+    ],
+    "exchange_domain_subgate": "PASS_CONTROLLED_REAL_POLE_ADIABATIC_EXCHANGE_DOMAIN",
+    "frw_background_status": "ON_SHELL_REPRESENTATIVE_BRANCH_VERIFIED",
+    "kernel_subgate": "PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL",
+    "packet_subgate": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+    "transfer_calculation_status": "HOLD"
+  },
+  "diagnostics": {
+    "diag_ok": true,
+    "finite_hits": true,
+    "green_ok": true,
+    "high_q_mode_count": 2
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "mode_projected_green": {
+    "G_proxy_abs_diagnostic": 73.24784358998507,
+    "causal_structure": "strictly_upper_zero_for_t_out_lt_t_in",
+    "diagonal_matches_local_kernel": true,
+    "formula_G_proxy_diagnostic": "abs(O[sigma]) * abs(SV_endpoint primary high-q)",
+    "matrix_G_mp": [
+      [
+        1.7733450290001525,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        115.15323787115146,
+        1.7733450290001525,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        94.47532740746051,
+        1.454907871619248,
+        1.7850846686195165,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        112.84228738666211,
+        1.7377566892391791,
+        2.132123197807317,
+        1.7850846686195165,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        90.00587988344178,
+        1.3860789555104003,
+        1.7006357180706002,
+        1.4238289562050526,
+        1.7850846686195165,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        90.22104123468208,
+        1.3893924126020878,
+        1.7047011311251854,
+        1.4272326556361217,
+        1.7893519590440523,
+        1.7850846686195165,
+        0.0,
+        0.0
+      ],
+      [
+        77.9789365483817,
+        1.2008655774796428,
+        1.4733900154420423,
+        1.2335712730706618,
+        1.5465545616356833,
+        1.542866300397567,
+        1.7850846686195165,
+        0.0
+      ],
+      [
+        75.38390832765894,
+        1.1609024771760024,
+        1.4243576890287297,
+        1.1925197736839637,
+        1.495087423072668,
+        1.4915219019285049,
+        1.7256795869847719,
+        1.7850846686195165
+      ]
+    ],
+    "times": [
+      0.0,
+      1.1400000000000001,
+      2.29,
+      3.43,
+      4.57,
+      5.71,
+      6.86,
+      8.0
+    ]
+  },
+  "multi_slice": {
+    "high_q_finite_hits": 23,
+    "kernel_abs_max": 1.7850846686195165,
+    "kernel_abs_median": 1.7733450290001525,
+    "kernel_abs_min": 1.7155827313193548,
+    "kernel_abs_relative_span": 0.03893481274135339,
+    "max_kernel_q_rel_error": 4.484827557301445,
+    "total_records": 24
+  },
+  "next_required_calculation": [
+    "nonzero-gradient |grad(pi)|^3 sector on a declared background",
+    "optional: denser multi-slice kernel recompute (not NN lookup) at FRW-local backgrounds",
+    "only then declared perturbative-unitarity / EFT-validity criterion"
+  ],
+  "parameters": {
+    "green_grid": 8,
+    "high_q_min": 10.0,
+    "high_q_mode_labels": [
+      10.0,
+      100.0
+    ],
+    "n_slices_requested": 12,
+    "packet_O_abs": 1.7230958462738883,
+    "packet_q0_over_H": 50.0,
+    "prefer_mode_pair": "physical_pair_1",
+    "primary_mode_initial_q_over_H": 100.0
+  },
+  "physical_2_to_2_status": "MULTI_SLICE_GREEN_PROXY_ESTABLISHED_FULL_IN_IN_NOT_COMPUTED",
+  "scientific_boundary": "Promotes the declared FRW in-in path by (i) sampling the local four-leg kernel across multiple FRW slices in the high-q domain and (ii) assembling a causal mode-projected two-time Green proxy from existing transfer singular values. Does not evaluate nested in-in interaction integrals, does not establish unitarity, does not open the nonzero-gradient |grad(pi)|^3 sector, and does not unlock MAT-001.",
+  "stage": "B_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+  "subgate_status": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN"
+}

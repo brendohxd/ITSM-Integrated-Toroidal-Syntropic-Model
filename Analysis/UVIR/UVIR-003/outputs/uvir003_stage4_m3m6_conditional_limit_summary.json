@@ -1,0 +1,192 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "branch": "B_CONDITIONAL_RECORD_REOPEN_REQUIRED",
+  "branch_A_scaffold_if_V_later": {
+    "Aq_over_KQ": "C_IR**(1/3)*V**2*q/(12*pi*C_obs**(4/3)*G*a0)",
+    "I_a0_from_Cobs_CIR_V": "C_IR**(1/3)*V**2/(12*pi*C_obs**(4/3)*G)",
+    "K_Q_from_Cobs_CIR_V": "C_IR**(2/3)*C_obs**(4/3)/V**2",
+    "Lambda_parallel_structural": "2*sqrt(3)*sqrt(pi)*C_obs*sqrt(G)*sqrt(a0)/V**(3/2)",
+    "note": "Branch A upgrade maps. Not applied numerically because Stage 3 left V NOT_COMPUTED / K_Q NOT_DERIVED.",
+    "status": "SCAFFOLD_ONLY_REQUIRES_DERIVED_V"
+  },
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "got": "PASS_CONDITIONAL_MATCHING_FLOOR",
+      "name": "stage_2b_floor_and_exit_present",
+      "ok": true
+    },
+    {
+      "got": "PASS_STAGE2C_FLOOR_DIAGNOSTICS",
+      "name": "stage_2c_diagnostics_present",
+      "ok": true
+    },
+    {
+      "got": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL",
+      "mat001_pass": false,
+      "name": "stage_3_mat_scoped_present_no_pass",
+      "ok": true
+    },
+    {
+      "got": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "name": "matching_route_program_present",
+      "ok": true
+    },
+    {
+      "got": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+      "name": "stage1_weak_coupling_domain_present",
+      "ok": true
+    },
+    {
+      "V_status": "NOT_COMPUTED",
+      "branch": "B_CONDITIONAL_RECORD_REOPEN_REQUIRED",
+      "kq_numeric_status": "NOT_DERIVED",
+      "name": "branch_selected_honestly_from_V_status",
+      "ok": true
+    },
+    {
+      "exit": "HOLD_MATCHED_STAGE4A_REQUIRED",
+      "name": "stage4_holds_for_matched_reopen_when_V_missing",
+      "ok": true
+    },
+    {
+      "name": "branch_A_scaffold_present_not_applied_as_Derived",
+      "ok": true
+    },
+    {
+      "name": "naive_R1_not_promoted",
+      "ok": true
+    },
+    {
+      "flags": {
+        "Derived_K_Q": false,
+        "Derived_M3_close": false,
+        "Derived_V": false,
+        "Derived_physical_cutoff_M6": false,
+        "MAT001_PASS": false,
+        "R1_naive_promoted_to_Derived": false,
+        "UVIR003_full_PASS": false,
+        "conditional_M3_M6_recorded": true,
+        "downstream_Derived_use_authorized": false,
+        "observational_claim": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    },
+    {
+      "name": "later_stage5_review_still_required_for_full_gate",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "Derived_K_Q": false,
+    "Derived_M3_close": false,
+    "Derived_V": false,
+    "Derived_physical_cutoff_M6": false,
+    "MAT001_PASS": false,
+    "R1_naive_promoted_to_Derived": false,
+    "UVIR003_full_PASS": false,
+    "conditional_M3_M6_recorded": true,
+    "downstream_Derived_use_authorized": false,
+    "observational_claim": false
+  },
+  "claim_status": "Conditional_limit_recorded_reopen_required",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "kq_numeric_status": "NOT_DERIVED",
+  "master_plan_criteria_after_stage4": {
+    "M1": "PASS_BOUNDED",
+    "M2": "PARTIAL_BOUNDED_HIGH_Q_ONLY",
+    "M3": "HOLD_MATCHED_INVARIANT_REQUIRED",
+    "M4": "PASS_SCOPED",
+    "M5": "PASS_INVENTORY_K_Q_NOT_DERIVED",
+    "M6": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
+    "M7": "OPEN_MAT_BLOCKED_FOR_PASS",
+    "interpretation": "Stage 4 retains Conditional M3/M6 diagnostics but fails closed. Matched Stage 4A work is required before a later independent Stage 5 review can consider tier-1 closure."
+  },
+  "mat001_status": "BLOCKED",
+  "n_checks": 11,
+  "next_required": [
+    "Compute V or an equivalent matched invariant from one declared action/field chart",
+    "Reopen Stage 4 branch A and re-evaluate causality and the physical cutoff",
+    "Control the relevant IR complex-quartet response before tier-1 closure",
+    "No MAT PASS or downstream Derived packaging before a later Stage-5 review"
+  ],
+  "physics_pass": false,
+  "prior_artifacts": {
+    "matching_route": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+    "stage_1_domain": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+    "stage_2b": "PASS_CONDITIONAL_MATCHING_FLOOR",
+    "stage_2c": "PASS_STAGE2C_FLOOR_DIAGNOSTICS",
+    "stage_3_mat": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL"
+  },
+  "programme_decision": {
+    "M3_policy": {
+      "domain_basis": [
+        "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+        "PASS_CONDITIONAL_MATCHING_FLOOR",
+        "PASS_STAGE2C_FLOOR_DIAGNOSTICS"
+      ],
+      "forbidden": [
+        "Claim Derived causality close without matched Aq/K_Q",
+        "Promote naive q_x/a0=0.375 parallel as Derived"
+      ],
+      "meaning": "Causality domain documented under Stage 2b Conditional floor (free P, C_IR) and Stage 2c diagnostics. Referee-grade Conditional-with-scope \u2014 not Derived matched Aq/K_Q.",
+      "status": "HOLD_MATCHED_INVARIANT_REQUIRED"
+    },
+    "M6_policy": {
+      "domain_basis": [
+        "PASS_DECLARED_UNITARITY_EFT_CRITERION (tree/NDA path)",
+        "PASS_CONDITIONAL_MATCHING_FLOOR",
+        "PASS_STAGE2C_FLOOR_DIAGNOSTICS"
+      ],
+      "forbidden": [
+        "Claim physical cutoff as Derived without matched norm",
+        "Optical theorem / S-matrix unitarity from this package"
+      ],
+      "meaning": "Physical cutoff remains Conditional NDA diagnostic under floor parameter P (Lambda_|| structure). Not a Derived matched strong-coupling scale.",
+      "status": "HOLD_PHYSICAL_CUTOFF_REQUIRED"
+    },
+    "authority": "UVIR-003_SERIAL_STAGE_ORDER Stage 4 exit B; UVIR-003_FULL_GATE_CLOSURE_CHECKLIST fail-closed correction; Master Plan \u00a75 serial critical path",
+    "decision": "CONDITIONAL_M3_M6_LIMIT_REOPEN_REQUIRED",
+    "does_not_authorize": [
+      "UVIR-003 full_gate_status = PASS (Stage 5 programme decision)",
+      "MAT-001 PASS",
+      "Downstream Derived SCR/LEN/DISK/P3/P4 packaging",
+      "SPARC / H0 validation"
+    ],
+    "rationale": [
+      "Stage 3 scoped MAT left V=C_m/sqrt(K_Q) NOT_COMPUTED",
+      "K_Q remains NOT_DERIVED (inventory + R3 incomplete)",
+      "R2 cannot close Derived Aq/K_Q without V",
+      "R3 residue audit Classification C \u2014 no Z_psi r_rho",
+      "R1 naive (P,C_IR)=(1,2/3) forbidden as Derived packaging"
+    ],
+    "reopen_criteria_for_Derived_upgrade": [
+      "Compute V from declared S_int once force kinetic / K_Q chart available",
+      "Or derive Z_psi r_rho (R3) or independent k_Q (R1) as Derived",
+      "Then re-run Stage 4 branch A: substitute into I_a0, q_x, Lambda_||"
+    ]
+  },
+  "scientific_boundary": "Stage 4 records the present Conditional M3/M6 limit because matched V is unavailable. It preserves useful causality and NDA diagnostics but is insufficient for tier-1 UVIR closure. It does not derive K_Q/V, establish a physical cutoff, issue MAT PASS, or authorize downstream Derived use.",
+  "serial_stage": 4,
+  "stage": "B_STAGE4_M3_M6_LIMIT",
+  "stage_4_exit": {
+    "M3": "HOLD_MATCHED_INVARIANT_REQUIRED",
+    "M6": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
+    "M7": "OPEN_MAT_BLOCKED_FOR_PASS",
+    "allows_MAT_PASS": false,
+    "allows_UVIR_full_PASS": false,
+    "allows_downstream_Derived": false,
+    "allows_stage5_decision_audit": true,
+    "branch": "B_CONDITIONAL_RECORD_REOPEN_REQUIRED",
+    "reopen_to_branch_A_when": [
+      "Compute V from declared S_int once force kinetic / K_Q chart available",
+      "Or derive Z_psi r_rho (R3) or independent k_Q (R1) as Derived",
+      "Then re-run Stage 4 branch A: substitute into I_a0, q_x, Lambda_||"
+    ],
+    "status": "HOLD_MATCHED_STAGE4A_REQUIRED"
+  },
+  "subgate_status": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+  "tier1_closure_sufficient": false
+}

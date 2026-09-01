@@ -1,0 +1,57 @@
+{
+  "calculation_status": "PASS_BOUNDED_VERTEX_BASIS",
+  "gate_status": {
+    "MAT-001": "BLOCKED",
+    "UVIR-003": "IN_PROGRESS"
+  },
+  "interpretation": {
+    "missing_for_physical_scale": [
+      "FULL_COSMOLOGICAL_CUBIC_VERTEX_ON_FIRST_ORDER_CONSTRAINTS",
+      "EVOLVING_FRW_BACKGROUND_TERMS",
+      "CONDENSATE_AND_METRIC_MODE_MIXING",
+      "PHYSICAL_EIGENMODE_PROJECTION",
+      "QUARTIC_CONTACT_AND_2_TO_2_AMPLITUDE"
+    ],
+    "naive_low_q_cutoff_status": "REJECTED_AS_GAUGE_NORMALIZATION",
+    "physical_strong_coupling_scale_status": "NOT_YET_DERIVED",
+    "quadratic_canonical_mode_status": "IDENTIFIED_FOR_NONZERO_K",
+    "vertex_basis_status": "DERIVED_IN_ONE_DIMENSIONAL_FLAT_DECOUPLING_LIMIT"
+  },
+  "representative_branch": {
+    "canonical_fourier_mode": "chi_k=M_U*sqrt(c14)*abs(k)*pi_k, for k!=0",
+    "canonical_prefactor": 0.19364916731037085,
+    "dimensionless_cubic_coefficients_before_canonicalization": {
+      "pi_t_pi_tx_squared": -0.15000000000000002,
+      "pi_t_pi_xx_squared": 0.2,
+      "pi_tt_pi_tx_pi_x": -0.15000000000000002,
+      "pi_tx_pi_x_pi_xx": 0.25
+    },
+    "parameters": {
+      "M_U": 0.5,
+      "c1": 0.1,
+      "c123": 0.2,
+      "c14": 0.15000000000000002,
+      "c2": 0.05,
+      "c3": 0.05,
+      "c4": 0.05
+    },
+    "scalar_speed_squared": 1.3333333333333333
+  },
+  "scope": {
+    "aether": "HYPERSURFACE_ORTHOGONAL",
+    "geometry": "FLAT_METRIC_DECOUPLING_LIMIT",
+    "order": "CUBIC_IN_PI",
+    "profile": "ONE_DIMENSIONAL_LONGITUDINAL"
+  },
+  "stage": "B_AETHER_STUECKELBERG_CUBIC_BOUNDED",
+  "symbolic_result": {
+    "cubic_lagrangian": "-c_1*pi_t*pi_tx**2 + c_1*pi_t*pi_xx**2 - c_1*pi_tt*pi_tx*pi_x + c_1*pi_tx*pi_x*pi_xx + c_2*pi_t*pi_xx**2 + 2*c_2*pi_tx*pi_x*pi_xx + c_3*pi_t*pi_xx**2 + 2*c_3*pi_tx*pi_x*pi_xx - c_4*pi_t*pi_tx**2 - c_4*pi_tt*pi_tx*pi_x - c_4*pi_tx*pi_x*pi_xx",
+    "invariant_convention": "-(M_U^2/2)*(c1*I1+c2*I2+c3*I3-c4*I4)",
+    "overall_factor": "M_U^2",
+    "quadratic_lagrangian": "c_1*pi_tx**2/2 - c_1*pi_xx**2/2 - c_2*pi_xx**2/2 - c_3*pi_xx**2/2 + c_4*pi_tx**2/2",
+    "surviving_combinations": [
+      "c14=c1+c4",
+      "c123=c1+c2+c3"
+    ]
+  }
+}

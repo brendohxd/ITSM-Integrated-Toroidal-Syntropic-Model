@@ -1,0 +1,101 @@
+{
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "prior_inventory_present",
+      "ok": true
+    },
+    {
+      "name": "timelike_piece_linear_in_density_contrast",
+      "ok": true
+    },
+    {
+      "name": "vanishes_at_reference_when_sigma_unused",
+      "ok": true
+    },
+    {
+      "name": "draft_status_conditional_not_Derived",
+      "ok": true
+    },
+    {
+      "name": "Q_mp_kept_independent_in_draft",
+      "ok": true
+    },
+    {
+      "name": "R1_is_evaluated_not_selected",
+      "ok": true
+    },
+    {
+      "name": "positive_density_domain_declared",
+      "ok": true
+    },
+    {
+      "flags": {
+        "13_12_from_reservoir": false,
+        "Derived_creation_rate": false,
+        "H0_from_Q_syn": false,
+        "NEC_violating_Minkowski_support": false,
+        "Q_syn_is_S_N": false,
+        "RES_research_gate_PASS": false,
+        "physics_pass": false,
+        "route_selected": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "13_12_from_reservoir": false,
+    "Derived_creation_rate": false,
+    "H0_from_Q_syn": false,
+    "NEC_violating_Minkowski_support": false,
+    "Q_syn_is_S_N": false,
+    "RES_research_gate_PASS": false,
+    "physics_pass": false,
+    "route_selected": false
+  },
+  "decision": {
+    "candidate_under_evaluation": "R1_DECLARED_CONSTITUTIVE_VECTOR",
+    "control_retained": "R0_NO_THROUGHPUT_CONTROL",
+    "decision_status": "NOT_SELECTED",
+    "retained_open": [
+      "R1_DECLARED_CONSTITUTIVE_VECTOR",
+      "R2_ACTION_COUPLED_RESERVOIR",
+      "R3_TOPOLOGY_LOCKED_THROUGHPUT"
+    ],
+    "selected_candidate": null
+  },
+  "draft": {
+    "Q_syn_mu": "\u0393_syn (\u03c1_P - \u03c1_*) U^\u03bc + \u03c3_syn \u03a0^{\u03bc\u03bd} \u2207_\u03bd ln \u03c1_P   (flat rest-frame schematic; \u03a0 projector orthogonal to U)",
+    "bookkeeping": {
+      "Q_mp": "independent symbol; not set equal to Q_syn",
+      "div_T_P_includes": "+Q_syn",
+      "div_T_R": "-Q_syn"
+    },
+    "id": "R1_DECLARED_CONSTITUTIVE_VECTOR",
+    "parameters": {
+      "Gamma_syn": ">=0 Conditional rate",
+      "rho_P": ">0 domain required by ln(rho_P)",
+      "rho_star": ">0 Conditional reference density",
+      "sigma_syn": "Conditional spatial coupling"
+    },
+    "requires_for_Derived": [
+      "action or irreversible thermodynamics derivation of \u0393,\u03c3",
+      "covariant completion and energy conditions stated",
+      "matching to reservoir stress T_R"
+    ],
+    "status": "CANDIDATE_FORM_UNSELECTED_CONDITIONAL"
+  },
+  "gate": "RES-001",
+  "n_checks": 8,
+  "next_required": [
+    "Compare R1/R2/R3 against one declared evidence rubric",
+    "For R1, provide a covariant form and T_R matching",
+    "Record an explicit selection decision before activating any route"
+  ],
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "Evaluates an unselected Conditional R1 form for Q_syn with independent Q_mp and total-conservation bookkeeping. R1/R2/R3 remain Open; parameters remain free and no Derived creation rate or cosmology follows.",
+  "stage": "R1_DECISION_PACKET",
+  "subgate_status": "PASS_RES001_R1_DECISION_PACKET_OPEN"
+}

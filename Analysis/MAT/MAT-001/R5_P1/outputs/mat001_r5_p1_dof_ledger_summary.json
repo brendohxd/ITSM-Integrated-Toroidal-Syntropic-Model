@@ -1,0 +1,40 @@
+{
+  "gate": "MAT-001",
+  "stage": "R5-P1 Artifact 2",
+  "status": "PASS_DOF_LEDGER_CONSERVED",
+  "physics_pass": false,
+  "claims": "None Derived",
+  "unbroken_phase": {
+    "metric_g_mu_nu": 2,
+    "dilaton_sigma": 1,
+    "condensate_Phi": 2,
+    "total_DOFs": 5,
+    "symmetries": {
+      "diffeomorphism": "Diff(M)",
+      "global_U1": "U(1)_particle_number",
+      "conformal": "Broken by f (decay scale), non-linearly realized by sigma"
+    }
+  },
+  "broken_phase_full": {
+    "metric_g_mu_nu": 2,
+    "radial_mode_delta_rho": 1,
+    "phase_mode_pi": 1,
+    "dilaton_sigma": 1,
+    "total_DOFs": 5,
+    "symmetries_broken": [
+      "global_U1"
+    ],
+    "mixing": "sigma and pi mix dynamically due to background V(sigma)rho^2 coupling"
+  },
+  "eft_phase": {
+    "metric_g_mu_nu": 2,
+    "mixed_scalar_sector": 2,
+    "total_light_DOFs": 4,
+    "ghost_check": "PASS - The kinetic matrix for the 2 mixed scalars must be positive definite."
+  },
+  "firewall_checks": {
+    "dof_conservation": true,
+    "no_higher_derivative_ghosts": true
+  },
+  "conclusion": "The DOF ledger is strictly conserved (5 DOFs before and after SSB). The low-energy EFT contains 2 light scalar DOFs which will mix. No extra ghosts or unstable modes are introduced by the action's algebraic form."
+}

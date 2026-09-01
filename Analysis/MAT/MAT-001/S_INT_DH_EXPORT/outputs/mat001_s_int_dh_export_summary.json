@@ -1,0 +1,251 @@
+{
+  "IR_d_h_export_status": "FORM_DERIVED_IR_SINGLE_FIELD_TEMPLATE",
+  "IR_single_field_export": {
+    "J2_source_sector": "rho_b*(d^T x + h^T z)",
+    "V_signed_definition": "C_m/sqrt(K_Q)",
+    "c_eff": [
+      "-C_m"
+    ],
+    "canonical_coupling_signed": "-C_m/sqrt(K_Q)",
+    "constraint_fields": [],
+    "d": [
+      "-C_m"
+    ],
+    "dimensions_in_export": "ROLE_DECLARED: d multiplies rho_b*psi in the Lagrangian density; absolute SI unit system not fixed",
+    "dynamical_fields": [
+      "psi"
+    ],
+    "export_status": "FORM_DERIVED_IR_SINGLE_FIELD_TEMPLATE",
+    "external_source": "rho_b",
+    "h": [],
+    "magnitude_only_matching_sufficient": false,
+    "mode_orientation": "u_psi=+1 in the architecture psi chart",
+    "ready_for_J2_live_matching": false,
+    "signed_g_can_equals_minus_V": true
+  },
+  "S_int_status": "DECLARED_CONDITIONAL_FORM",
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Embed the force field (psi or parent phi) in the live quadratic action used for MAT matching, or declare an explicit field map from free-sector variables onto that force field.",
+    "Expand declared S_int = -C_m rho_b psi (or parent equivalent) to obtain action-level d,h in that same live chart.",
+    "Resolve the free-sector Mv residual relative to pure static J2 B (or extend the projection identity).",
+    "Select u only after c_eff is defined from live d,h and B,C; do not use free eigenmodes as a substitute matter channel."
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "free_sector_export_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "j2_template_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "j1_template_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "r2_template_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "scoped_mat_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "free_sector_export_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "MAT_J2_template_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "MAT_J1_template_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "MAT_R2_template_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "MAT_scoped_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "S_int_form_declared_conditional",
+      "ok": true
+    },
+    {
+      "name": "IR_d_h_form_derived_and_recovers_signed_minus_V",
+      "ok": true
+    },
+    {
+      "name": "live_free_sector_lacks_force_field_psi",
+      "ok": true
+    },
+    {
+      "name": "live_d_h_remain_not_exported",
+      "ok": true
+    },
+    {
+      "name": "inadmissible_substitutions_rejected",
+      "ok": true
+    },
+    {
+      "flags": {
+        "IR_template_d_h_form_derived": true,
+        "S_int_form_declared": true,
+        "claims_MAT_pass": false,
+        "claims_UVIR_pass": false,
+        "claims_downstream_Derived": false,
+        "computes_numeric_V": false,
+        "derives_numeric_K_Q": false,
+        "live_UVIR_d_h_exported": false,
+        "live_same_chart_bundle_complete": false,
+        "numeric_matching_ready": false,
+        "physics_pass": false,
+        "reopens_stage4A": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "IR_template_d_h_form_derived": true,
+    "S_int_form_declared": true,
+    "claims_MAT_pass": false,
+    "claims_UVIR_pass": false,
+    "claims_downstream_Derived": false,
+    "computes_numeric_V": false,
+    "derives_numeric_K_Q": false,
+    "live_UVIR_d_h_exported": false,
+    "live_same_chart_bundle_complete": false,
+    "numeric_matching_ready": false,
+    "physics_pass": false,
+    "reopens_stage4A": false
+  },
+  "declared_interaction": {
+    "IR_chart_definition": "psi=f_phi*phi",
+    "architecture_weak_field_form": "-C_m*rho_b*psi",
+    "not_a_microscopic_match": true,
+    "parent_chart_form": "-g_phi*rho_b*phi",
+    "provenance": [
+      "Theory/Core/ITSM_Core_Architecture.md weak-field S_WF",
+      "MAT-001 J1 joint-action template",
+      "MAT-001 R2 direct-residue template",
+      "MAT-001 scoped calculation declared_S_int form"
+    ],
+    "status": "DECLARED_CONDITIONAL_FORM"
+  },
+  "evidence": {
+    "MAT_J1_template": {
+      "parse_error": null,
+      "sha256": "CD5F9A0F9863D56A52B94950C4E88736581A5C4CE93086778D941B4CCBD936DF",
+      "source": "mat001_j1_joint_action_normalization_summary.json"
+    },
+    "MAT_J2_template": {
+      "parse_error": null,
+      "sha256": "5C385FDB10336AD727D1E9D16CAA68027599C2D157BE903E549748C0294CF865",
+      "source": "mat001_j2_basis_covariant_mode_projection_summary.json"
+    },
+    "MAT_R2_template": {
+      "parse_error": null,
+      "sha256": "415AD2D5631C5AB65AA3EA611002D332775D094F534A7E122146F255929A4144",
+      "source": "mat001_r2_direct_residue_audit_summary.json"
+    },
+    "MAT_scoped": {
+      "parse_error": null,
+      "sha256": "C66F2AC11F85CB662F5CF8DF92FFEE1B5D3D5727836F54D663054A3F0076020E",
+      "source": "mat001_scoped_calculation_summary.json"
+    },
+    "free_sector_export": {
+      "parse_error": null,
+      "sha256": "33FCD3A4AB8F8531E611DFACDD91CCB7598CF9ADE49A8279A87B5EB954D4A469",
+      "source": "mat001_same_chart_quadratic_export_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "inadmissible_substitutions": {
+    "IR_template_d_h_silently_pasted_into_free_sector_bundle": "REJECTED_CHART_MISMATCH",
+    "Newtonian_Phi_N_matter_coupling_as_force_vertex": "REJECTED_SECTOR_MISMATCH",
+    "Q_rho_Q_chi_diagnostic_impulses_as_d_h": "REJECTED_ROLE_MISMATCH",
+    "delta_rho_as_rho_b": "REJECTED_ROLE_MISMATCH"
+  },
+  "interface": "S_INT_TO_LIVE_UVIR_CHART",
+  "kq_numeric_status": "NOT_DERIVED",
+  "live_UVIR_d_h_export_status": "NOT_EXPORTED",
+  "live_action_export_status": "PARTIAL_S_INT_FORM_LIVE_DH_BLOCKED",
+  "live_chart_placement": {
+    "baryonic_density_present_as_field": false,
+    "blockers": [
+      "Live free-sector dynamical chart is (R, delta_rho, vartheta), not the IR force field psi.",
+      "External baryonic density rho_b is not a free-sector dynamical field; it must enter as a declared external source, not as condensate delta_rho.",
+      "No declared map identifies a linear combination of free-sector fields with the force phonon used by S_int.",
+      "Force-sector nonlinear completion remains open in UVIR-003; matter coupling cannot be silently attached to the free ADM reduction alone."
+    ],
+    "condensate_fields_present_without_baryon_label": true,
+    "constraint_fields": [
+      "delta_N",
+      "Sigma=q_phys^2*beta"
+    ],
+    "force_field_psi_in_original_chart": false,
+    "force_field_psi_in_physical_chart": false,
+    "inadmissible_substitutions": {
+      "IR_template_d_h_silently_pasted_into_free_sector_bundle": "REJECTED_CHART_MISMATCH",
+      "Newtonian_Phi_N_matter_coupling_as_force_vertex": "REJECTED_SECTOR_MISMATCH",
+      "Q_rho_Q_chi_diagnostic_impulses_as_d_h": "REJECTED_ROLE_MISMATCH",
+      "delta_rho_as_rho_b": "REJECTED_ROLE_MISMATCH"
+    },
+    "live_UVIR_free_sector_d_h_export_status": "NOT_EXPORTED",
+    "live_action_export_status": "PARTIAL_FREE_SECTOR_SAME_CHART_MATTER_SOURCES_ABSENT",
+    "live_free_sector_subgate": "PASS_MAT001_SAME_CHART_FREE_QUADRATIC_EXPORT_PARTIAL",
+    "original_dynamical_fields": [
+      "R",
+      "delta_rho",
+      "vartheta"
+    ],
+    "physical_dynamical_fields": [
+      "Xi=(q_phys/H)R",
+      "Q_rho=delta_rho-(rho_dot/H)R",
+      "Q_chi=rho[vartheta-(mu/H)R]"
+    ],
+    "placement_attempt_result": "BLOCKED_LIVE_CHART_LACKS_FORCE_FIELD",
+    "placement_ready_for_live_J2": false,
+    "prior_free_sector_d_status": "NOT_EXPORTED",
+    "prior_free_sector_h_status": "NOT_EXPORTED",
+    "would_be_live_export_only_if": [
+      "Declare the force field psi (or parent phi) inside the live quadratic action used for matching",
+      "Declare S_int = -C_m rho_b psi (or parent equivalent) in that same action",
+      "Expand to quadratic order and extract d on dynamical fields and h on algebraic constraints in one named chart",
+      "Keep free-sector K,C,B objects in that same chart with the Mv residual resolved"
+    ]
+  },
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 16,
+  "numeric_matching_status": "BLOCKED_LIVE_FORCE_FIELD_AND_DH_REQUIRED",
+  "parent_to_IR_map": {
+    "d_IR_equals_d_parent_over_f_phi": true,
+    "induced_C_m": "g_phi/f_phi",
+    "psi_equals_f_phi_phi": true,
+    "unmatched_microscopic_inputs": [
+      "numeric g_phi from a live parent action",
+      "numeric f_phi / field map to the live UVIR force field",
+      "numeric Z_phi / K_Q from the same action"
+    ]
+  },
+  "physics_pass": false,
+  "scientific_boundary": "A PASS declares the Conditional S_int form, derives IR-template d,h that recover signed g_can=-V in the oriented single-field chart, and proves that those covectors are not yet exportable into the live free-sector UVIR chart. It does not compute numeric V or K_Q, does not paste IR templates into the free-sector bundle, and does not authorize MAT, UVIR or downstream physics claims.",
+  "serial_next": "Either complete a live force-sector quadratic with declared S_int and extract d,h there, or declare a justified map from the live UVIR fields onto the IR force phonon and re-export the full same-chart K,C,B,d,h bundle; then resolve Mv and select u.",
+  "stage": "S_INT_DH_DECLARATION_AND_PLACEMENT",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_S_INT_DH_DECLARATION_LIVE_CHART_BLOCKED",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

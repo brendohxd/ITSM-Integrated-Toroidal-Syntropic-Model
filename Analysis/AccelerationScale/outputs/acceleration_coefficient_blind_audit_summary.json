@@ -1,0 +1,24 @@
+{
+  "audit": "BLIND_ACCELERATION_COEFFICIENT",
+  "boundary": "The scan reconstructs provenance; document occurrences are not evidence of derivation.",
+  "candidate_status": {
+    "1/(2*pi)": "numerically_motivated_provisional_not_derived",
+    "2*pi": "historical_written_form_observationally_mismatched_not_derived",
+    "C_derived": "open",
+    "sqrt(1-q)/(2*pi)": "external_curvature_closure_not_ITSM_derived"
+  },
+  "logic": [
+    "circulation quantization fixes a cycle integral/velocity scale, not a unique local acceleration",
+    "c^2/L becomes cH times a coefficient only after a physical length and radius-versus-circumference convention are selected",
+    "choosing L_cycle=2*pi*c/H returns 1/(2*pi) algebraically but that scale-identification is an extra postulate",
+    "the declared action does not yet provide normalized modulus/winding-to-matter force matching",
+    "observed MOND, SPARC, bTFR, weak-lensing and desired H0 values were not used to choose C_chi"
+  ],
+  "output_sha256": {
+    "acceleration_coefficient_provenance_hits.csv": "93600F46D7BA57340E351DE1BA787D95C004D5968F6F49D8705CB4166B3D382F"
+  },
+  "parameterization": "a0_internal = C_chi c H0",
+  "provenance_hit_count": 499,
+  "status": "PHENOMENOLOGICAL_RELATION_ONLY",
+  "verdict": "C_CHI_NOT_DERIVED"
+}

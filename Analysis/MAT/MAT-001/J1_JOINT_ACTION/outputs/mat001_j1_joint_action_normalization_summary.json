@@ -1,0 +1,216 @@
+{
+  "V_form_status": "SAME_ACTION_IDENTITY_DERIVED",
+  "V_status": "NOT_COMPUTED",
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "error": null,
+      "name": "upstream_inventory_exact_open_contract",
+      "ok": true,
+      "source": "mat001_v_kinetic_chart_inventory_summary.json"
+    },
+    {
+      "name": "IR_chart_K_Q_equals_Z_over_f_squared",
+      "ok": true
+    },
+    {
+      "name": "IR_chart_C_m_equals_g_over_f",
+      "ok": true
+    },
+    {
+      "name": "same_action_V_identity",
+      "ok": true
+    },
+    {
+      "name": "parent_field_rescaling_covariance",
+      "ok": true
+    },
+    {
+      "name": "IR_chart_rescaling_covariance",
+      "ok": true
+    },
+    {
+      "name": "canonical_source_residue_equals_V",
+      "ok": true
+    },
+    {
+      "name": "field_orientation_reversal_flips_signed_residue",
+      "ok": true,
+      "orientation_rule": "phi_or_mode -> -(phi_or_mode) implies V_signed -> -V_signed"
+    },
+    {
+      "cases": [
+        {
+          "case": "missing_inventory_rejected",
+          "expected_behavior_observed": true,
+          "ok": true
+        },
+        {
+          "case": "premature_computed_V_rejected",
+          "expected_behavior_observed": true,
+          "ok": true
+        },
+        {
+          "case": "zero_Z_phi_rejected",
+          "expected_behavior_observed": true,
+          "ok": true
+        },
+        {
+          "case": "negative_Z_phi_rejected",
+          "expected_behavior_observed": true,
+          "ok": true
+        },
+        {
+          "case": "zero_chart_scale_rejected",
+          "expected_behavior_observed": true,
+          "ok": true
+        },
+        {
+          "case": "zero_matter_coefficient_rejected",
+          "expected_behavior_observed": true,
+          "ok": true
+        },
+        {
+          "case": "negative_matter_coefficient_admitted",
+          "expected_behavior_observed": true,
+          "ok": true
+        },
+        {
+          "case": "nonfinite_coefficient_rejected",
+          "expected_behavior_observed": true,
+          "ok": true
+        },
+        {
+          "case": "boolean_coefficient_rejected",
+          "expected_behavior_observed": true,
+          "ok": true
+        }
+      ],
+      "name": "negative_controls_fail_closed",
+      "ok": true
+    },
+    {
+      "flags": {
+        "K_Q_numeric_derived": false,
+        "UVIR003_pass": false,
+        "V_numeric_computed": false,
+        "downstream_Derived": false,
+        "mat001_pass": false,
+        "microscopic_coefficients_matched": false,
+        "physics_pass": false,
+        "stage4A_unblocked": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "K_Q_numeric_derived": false,
+    "UVIR003_pass": false,
+    "V_numeric_computed": false,
+    "downstream_Derived": false,
+    "mat001_pass": false,
+    "microscopic_coefficients_matched": false,
+    "physics_pass": false,
+    "stage4A_unblocked": false
+  },
+  "field_rescaling_covariance": {
+    "IR_chart": {
+      "C_m_prime": "g_phi/(f_phi*s)",
+      "K_Q_prime": "Z_phi/(f_phi**2*s**2)",
+      "V_prime": "g_phi/sqrt(Z_phi)",
+      "map": "psi_prime=s*psi"
+    },
+    "parent_chart": {
+      "V_prime": "g_phi/sqrt(Z_phi)",
+      "Z_phi_prime": "Z_phi/r**2",
+      "g_phi_prime": "g_phi/r",
+      "map": "phi_prime=r*phi"
+    },
+    "scope": "r>0 and s>0 are orientation-preserving; an orientation reversal flips the signed residue"
+  },
+  "gate": "MAT-001",
+  "joint_action_template": {
+    "IR_chart_definition": "psi=f_phi*phi",
+    "canonical_source_residue": "g_phi/sqrt(Z_phi)",
+    "induced_C_m": "g_phi/f_phi",
+    "induced_K_Q": "Z_phi/f_phi**2",
+    "invariant_V": "g_phi/sqrt(Z_phi)",
+    "kinetic_term": "(Z_phi/2)*(U.grad(phi))^2",
+    "matter_vertex": "-g_phi*rho_b*phi",
+    "orientation_anchor": "parent field phi and IR field psi have aligned positive orientation because f_phi>0",
+    "signed_invariant_V": "g_phi/sqrt(Z_phi)"
+  },
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "n_checks": 10,
+  "negative_controls": [
+    {
+      "case": "missing_inventory_rejected",
+      "expected_behavior_observed": true,
+      "ok": true
+    },
+    {
+      "case": "premature_computed_V_rejected",
+      "expected_behavior_observed": true,
+      "ok": true
+    },
+    {
+      "case": "zero_Z_phi_rejected",
+      "expected_behavior_observed": true,
+      "ok": true
+    },
+    {
+      "case": "negative_Z_phi_rejected",
+      "expected_behavior_observed": true,
+      "ok": true
+    },
+    {
+      "case": "zero_chart_scale_rejected",
+      "expected_behavior_observed": true,
+      "ok": true
+    },
+    {
+      "case": "zero_matter_coefficient_rejected",
+      "expected_behavior_observed": true,
+      "ok": true
+    },
+    {
+      "case": "negative_matter_coefficient_admitted",
+      "expected_behavior_observed": true,
+      "ok": true
+    },
+    {
+      "case": "nonfinite_coefficient_rejected",
+      "expected_behavior_observed": true,
+      "ok": true
+    },
+    {
+      "case": "boolean_coefficient_rejected",
+      "expected_behavior_observed": true,
+      "ok": true
+    }
+  ],
+  "next_required": [
+    "Identify a declared microscopic action containing both Z_phi and g_phi",
+    "derive both coefficients in one field chart or extract the equivalent on-shell residue",
+    "only then compute V and reopen the MAT-to-UVIR Stage 4A handoff"
+  ],
+  "physics_pass": false,
+  "prior_artifact": {
+    "parse_error": null,
+    "source": "mat001_v_kinetic_chart_inventory_summary.json",
+    "subgate_status": "PASS_MAT001_V_KINETIC_CHART_INVENTORY_OPEN"
+  },
+  "research_gate_status": "BLOCKED_MATCHING_INPUTS_OPEN",
+  "scientific_boundary": "A PASS proves only the algebraic equivalence between the same-action canonical matter residue and C_m/sqrt(K_Q). It does not supply Z_phi or g_phi, compute a numerical V, validate a microscopic action, unlock UVIR Stage 4A, or issue MAT/UVIR/physics PASS.",
+  "stage": "J1_JOINT_ACTION_NORMALIZATION",
+  "stage4A_unlock": false,
+  "subgate_status": "PASS_MAT001_J1_JOINT_ACTION_NORMALIZATION_IDENTITY",
+  "unmatched_physical_inputs": [
+    "Z_phi from a declared microscopic parent action",
+    "g_phi from the matter coupling in that same parent action",
+    "a justified map from the parent field phi to the live IR force field psi"
+  ],
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

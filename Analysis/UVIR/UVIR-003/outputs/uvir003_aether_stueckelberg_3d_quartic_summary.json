@@ -1,0 +1,317 @@
+{
+  "calculation_status": "PASS_QUARTIC_BASIS_WITH_2_TO_2_GAUGE_HOLD",
+  "constraint_elimination": {
+    "reduced_quartic_action": "L_reduced^(4)=L4[x,z1]-S2^T*C^{-1}*S2/2",
+    "scope": "algebraic constraints with an invertible quadratic constraint matrix",
+    "second_order_solution": "z2=-C^{-1}S2",
+    "third_order_solution": "not required at quartic order"
+  },
+  "gate_status": {
+    "MAT-001": "BLOCKED",
+    "UVIR-003": "IN_PROGRESS"
+  },
+  "interpretation": {
+    "complete_2_to_2_amplitude_status": "NOT_YET_DERIVED",
+    "elastic_com_t_u_exchange_status": "VANISHES_EXACTLY",
+    "next_required_calculation": [
+      "FULL_COSMOLOGICAL_CUBIC_VERTEX_ON_FIRST_ORDER_CONSTRAINTS",
+      "FULL_COSMOLOGICAL_QUARTIC_VERTEX_WITH_SECOND_ORDER_CONSTRAINT_SCHUR_COMPLEMENT",
+      "PHYSICAL_SCALAR_EIGENMODE_PROJECTION",
+      "GAUGE_REGULAR_COMPLETE_2_TO_2_AMPLITUDE",
+      "PARTIAL_WAVE_UNITARITY_CRITERION"
+    ],
+    "physical_strong_coupling_scale_status": "NOT_YET_DERIVED",
+    "quartic_constraint_order": "SECOND_ORDER_CONSTRAINT_SOURCE_REQUIRED",
+    "quartic_contact_basis_status": "DERIVED_AND_VERIFIED",
+    "s_channel_status": "HOMOGENEOUS_GAUGE_MODE_NOT_INVERTIBLE"
+  },
+  "representative_branch": {
+    "parameters": {
+      "M_U": 0.5,
+      "c1": 0.1,
+      "c123": 0.2,
+      "c14": 0.15000000000000002,
+      "c2": 0.05,
+      "c3": 0.05,
+      "c4": 0.05
+    },
+    "scattering_readiness": {
+      "contact_identity": {
+        "angular_average": "4*(2*c_1**2 + 4*c_1*c_2 + 4*c_1*c_3 + 3*c_2**2 + 6*c_2*c_3 - 2*c_2*c_4 + 3*c_3**2 - 2*c_3*c_4 + c_4**2)/(3*(c_1 + c_4))",
+        "scope": "contact term only; not the complete gauge-regular amplitude",
+        "unit_momentum_contact": "-4*(c_1**2*x**2 - c_1**2 + 2*c_1*c_2*x**2 - 2*c_1*c_2 + 2*c_1*c_3*x**2 - 2*c_1*c_3 - c_2**2 - 2*c_2*c_3 + 2*c_2*c_4*x**2 - c_3**2 + 2*c_3*c_4*x**2 - c_4**2*x**2)/(c_1 + c_4)"
+      },
+      "external_energy": 1.1547005383792515,
+      "external_momentum": 1.0,
+      "kinematics": "CENTRE_OF_MASS_ALL_INCOMING",
+      "physical_interpretation": "The flat-decoupling contact term is reproducible and elastic t/u cubic exchange vanishes exactly, but the COM s-channel probes the homogeneous khronon gauge orbit. The full constrained cosmological scalar system is required before an invariant 2-to-2 amplitude or cutoff can be assigned.",
+      "samples": [
+        {
+          "angle_degrees": 30.0,
+          "canonical_partial_amplitude_at_k_equals_1": 56.29629629629521,
+          "channels": {
+            "s": {
+              "internal_k_squared": 0.0,
+              "internal_omega": -2.309401076758503,
+              "inverse_kernel": 0.0,
+              "status": "HOMOGENEOUS_GAUGE_MODE_NOT_INVERTIBLE"
+            },
+            "t": {
+              "exchange_contribution": 0.0,
+              "internal_k_squared": 0.26794919243112264,
+              "internal_omega": -0.0,
+              "inverse_kernel": -0.01435935394489816,
+              "left_vertex": {
+                "imaginary": -2.220446049250313e-16,
+                "real": 0.0
+              },
+              "right_vertex": {
+                "imaginary": -2.220446049250313e-16,
+                "real": 0.0
+              },
+              "status": "VANISHES_EXACTLY_IN_ELASTIC_COM"
+            },
+            "u": {
+              "exchange_contribution": 0.0,
+              "internal_k_squared": 3.732050807568878,
+              "internal_omega": -0.0,
+              "inverse_kernel": -2.7856406460551035,
+              "left_vertex": {
+                "imaginary": -4.440892098500626e-16,
+                "real": 0.0
+              },
+              "right_vertex": {
+                "imaginary": -4.440892098500626e-16,
+                "real": 0.0
+              },
+              "status": "VANISHES_EXACTLY_IN_ELASTIC_COM"
+            }
+          },
+          "contact_coefficient": 0.31666666666666066,
+          "contact_plus_resolved_exchange": 0.31666666666666066,
+          "resolved_exchange_sum": 0.0,
+          "status": "INCOMPLETE_S_CHANNEL_GAUGE_OBSTRUCTION"
+        },
+        {
+          "angle_degrees": 60.0,
+          "canonical_partial_amplitude_at_k_equals_1": 145.18518518518488,
+          "channels": {
+            "s": {
+              "internal_k_squared": 0.0,
+              "internal_omega": -2.309401076758503,
+              "inverse_kernel": 0.0,
+              "status": "HOMOGENEOUS_GAUGE_MODE_NOT_INVERTIBLE"
+            },
+            "t": {
+              "exchange_contribution": 0.0,
+              "internal_k_squared": 0.9999999999999998,
+              "internal_omega": -0.0,
+              "inverse_kernel": -0.1999999999999999,
+              "left_vertex": {
+                "imaginary": -5.551115123125783e-17,
+                "real": 0.0
+              },
+              "right_vertex": {
+                "imaginary": -5.551115123125783e-17,
+                "real": 0.0
+              },
+              "status": "VANISHES_EXACTLY_IN_ELASTIC_COM"
+            },
+            "u": {
+              "exchange_contribution": 0.0,
+              "internal_k_squared": 3.0,
+              "internal_omega": -0.0,
+              "inverse_kernel": -1.8000000000000003,
+              "left_vertex": {
+                "imaginary": -4.440892098500626e-16,
+                "real": 0.0
+              },
+              "right_vertex": {
+                "imaginary": -4.440892098500626e-16,
+                "real": 0.0
+              },
+              "status": "VANISHES_EXACTLY_IN_ELASTIC_COM"
+            }
+          },
+          "contact_coefficient": 0.8166666666666651,
+          "contact_plus_resolved_exchange": 0.8166666666666651,
+          "resolved_exchange_sum": 0.0,
+          "status": "INCOMPLETE_S_CHANNEL_GAUGE_OBSTRUCTION"
+        },
+        {
+          "angle_degrees": 90.0,
+          "canonical_partial_amplitude_at_k_equals_1": 189.6296296296294,
+          "channels": {
+            "s": {
+              "internal_k_squared": 0.0,
+              "internal_omega": -2.309401076758503,
+              "inverse_kernel": 0.0,
+              "status": "HOMOGENEOUS_GAUGE_MODE_NOT_INVERTIBLE"
+            },
+            "t": {
+              "exchange_contribution": 0.0,
+              "internal_k_squared": 1.9999999999999998,
+              "internal_omega": -0.0,
+              "inverse_kernel": -0.7999999999999998,
+              "left_vertex": {
+                "imaginary": -4.440892098500626e-16,
+                "real": 0.0
+              },
+              "right_vertex": {
+                "imaginary": -4.440892098500626e-16,
+                "real": 0.0
+              },
+              "status": "VANISHES_EXACTLY_IN_ELASTIC_COM"
+            },
+            "u": {
+              "exchange_contribution": 0.0,
+              "internal_k_squared": 2.0,
+              "internal_omega": -0.0,
+              "inverse_kernel": -0.8,
+              "left_vertex": {
+                "imaginary": 0.0,
+                "real": 0.0
+              },
+              "right_vertex": {
+                "imaginary": 0.0,
+                "real": 0.0
+              },
+              "status": "VANISHES_EXACTLY_IN_ELASTIC_COM"
+            }
+          },
+          "contact_coefficient": 1.0666666666666655,
+          "contact_plus_resolved_exchange": 1.0666666666666655,
+          "resolved_exchange_sum": 0.0,
+          "status": "INCOMPLETE_S_CHANNEL_GAUGE_OBSTRUCTION"
+        },
+        {
+          "angle_degrees": 120.0,
+          "canonical_partial_amplitude_at_k_equals_1": 145.1851851851851,
+          "channels": {
+            "s": {
+              "internal_k_squared": 0.0,
+              "internal_omega": -2.309401076758503,
+              "inverse_kernel": 0.0,
+              "status": "HOMOGENEOUS_GAUGE_MODE_NOT_INVERTIBLE"
+            },
+            "t": {
+              "exchange_contribution": 0.0,
+              "internal_k_squared": 2.9999999999999996,
+              "internal_omega": -0.0,
+              "inverse_kernel": -1.7999999999999996,
+              "left_vertex": {
+                "imaginary": 8.881784197001252e-16,
+                "real": 0.0
+              },
+              "right_vertex": {
+                "imaginary": 8.881784197001252e-16,
+                "real": 0.0
+              },
+              "status": "VANISHES_EXACTLY_IN_ELASTIC_COM"
+            },
+            "u": {
+              "exchange_contribution": 0.0,
+              "internal_k_squared": 1.0000000000000004,
+              "internal_omega": -0.0,
+              "inverse_kernel": -0.20000000000000018,
+              "left_vertex": {
+                "imaginary": -1.6653345369377348e-16,
+                "real": 0.0
+              },
+              "right_vertex": {
+                "imaginary": -1.6653345369377348e-16,
+                "real": 0.0
+              },
+              "status": "VANISHES_EXACTLY_IN_ELASTIC_COM"
+            }
+          },
+          "contact_coefficient": 0.8166666666666664,
+          "contact_plus_resolved_exchange": 0.8166666666666664,
+          "resolved_exchange_sum": 0.0,
+          "status": "INCOMPLETE_S_CHANNEL_GAUGE_OBSTRUCTION"
+        },
+        {
+          "angle_degrees": 150.0,
+          "canonical_partial_amplitude_at_k_equals_1": 56.29629629629584,
+          "channels": {
+            "s": {
+              "internal_k_squared": 0.0,
+              "internal_omega": -2.309401076758503,
+              "inverse_kernel": 0.0,
+              "status": "HOMOGENEOUS_GAUGE_MODE_NOT_INVERTIBLE"
+            },
+            "t": {
+              "exchange_contribution": 0.0,
+              "internal_k_squared": 3.732050807568878,
+              "internal_omega": -0.0,
+              "inverse_kernel": -2.7856406460551035,
+              "left_vertex": {
+                "imaginary": -4.440892098500626e-16,
+                "real": 0.0
+              },
+              "right_vertex": {
+                "imaginary": -4.440892098500626e-16,
+                "real": 0.0
+              },
+              "status": "VANISHES_EXACTLY_IN_ELASTIC_COM"
+            },
+            "u": {
+              "exchange_contribution": 0.0,
+              "internal_k_squared": 0.26794919243112264,
+              "internal_omega": -0.0,
+              "inverse_kernel": -0.01435935394489816,
+              "left_vertex": {
+                "imaginary": -2.220446049250313e-16,
+                "real": 0.0
+              },
+              "right_vertex": {
+                "imaginary": -2.220446049250313e-16,
+                "real": 0.0
+              },
+              "status": "VANISHES_EXACTLY_IN_ELASTIC_COM"
+            }
+          },
+          "contact_coefficient": 0.3166666666666642,
+          "contact_plus_resolved_exchange": 0.3166666666666642,
+          "resolved_exchange_sum": 0.0,
+          "status": "INCOMPLETE_S_CHANNEL_GAUGE_OBSTRUCTION"
+        }
+      ],
+      "sound_speed": 1.1547005383792515,
+      "static_exchange_identity": {
+        "angular_identity": "x^2+y^2=1",
+        "consequence": "elastic COM t/u cubic exchange vertices vanish exactly",
+        "quotient": "-I*omega*(-c_1*omega**2 + 2*c_1*x**2 - 3*c_1*x + 2*c_1*y**2 + 2*c_1 + 2*c_2*x**2 - 2*c_2*x + 2*c_2*y**2 + 2*c_2 + 2*c_3*x**2 - 2*c_3*x + 2*c_3*y**2 + 2*c_3 - c_4*omega**2 - c_4*x)",
+        "vertex_factorization": "-I*omega*(x**2 + y**2 - 1)*(-c_1*omega**2 + 2*c_1*x**2 - 3*c_1*x + 2*c_1*y**2 + 2*c_1 + 2*c_2*x**2 - 2*c_2*x + 2*c_2*y**2 + 2*c_2 + 2*c_3*x**2 - 2*c_3*x + 2*c_3*y**2 + 2*c_3 - c_4*omega**2 - c_4*x)"
+      },
+      "status": "PARTIAL_ONLY_S_CHANNEL_GAUGE_OBSTRUCTION"
+    }
+  },
+  "scope": {
+    "aether": "HYPERSURFACE_ORTHOGONAL",
+    "geometry": "FLAT_METRIC_DECOUPLING_LIMIT",
+    "order": "QUARTIC_IN_PI",
+    "spatial_dimension": 3
+  },
+  "stage": "B_AETHER_STUECKELBERG_3D_QUARTIC",
+  "symbolic_result": {
+    "collinear_quartic_lagrangian": "-H_11**2*c_1*p_1**2 - 3*H_11**2*c_1*pi_t**2/2 - 3*H_11**2*c_2*p_1**2/2 - 3*H_11**2*c_2*pi_t**2/2 - 3*H_11**2*c_3*p_1**2/2 - 3*H_11**2*c_3*pi_t**2/2 + H_11**2*c_4*p_1**2/2 - 3*H_11*c_1*p_1*pi_t*v_1 - H_11*c_2*p_1**2*pi_tt - 6*H_11*c_2*p_1*pi_t*v_1 - H_11*c_3*p_1**2*pi_tt - 6*H_11*c_3*p_1*pi_t*v_1 + H_11*c_4*p_1**2*pi_tt + 3*H_11*c_4*p_1*pi_t*v_1 + c_1*p_1**2*pi_tt**2/2 + c_1*p_1**2*v_1**2/2 + 3*c_1*p_1*pi_t*pi_tt*v_1 + 3*c_1*pi_t**2*v_1**2/2 - 2*c_2*p_1**2*v_1**2 - 2*c_3*p_1**2*v_1**2 + c_4*p_1**2*pi_tt**2/2 + 5*c_4*p_1**2*v_1**2/2 + 3*c_4*p_1*pi_t*pi_tt*v_1 + 3*c_4*pi_t**2*v_1**2/2",
+    "cubic_regression": "PASS",
+    "elastic_contact_identity": {
+      "angular_average": "4*(2*c_1**2 + 4*c_1*c_2 + 4*c_1*c_3 + 3*c_2**2 + 6*c_2*c_3 - 2*c_2*c_4 + 3*c_3**2 - 2*c_3*c_4 + c_4**2)/(3*(c_1 + c_4))",
+      "scope": "contact term only; not the complete gauge-regular amplitude",
+      "unit_momentum_contact": "-4*(c_1**2*x**2 - c_1**2 + 2*c_1*c_2*x**2 - 2*c_1*c_2 + 2*c_1*c_3*x**2 - 2*c_1*c_3 - c_2**2 - 2*c_2*c_3 + 2*c_2*c_4*x**2 - c_3**2 + 2*c_3*c_4*x**2 - c_4**2*x**2)/(c_1 + c_4)"
+    },
+    "elastic_static_exchange_identity": {
+      "angular_identity": "x^2+y^2=1",
+      "consequence": "elastic COM t/u cubic exchange vertices vanish exactly",
+      "quotient": "-I*omega*(-c_1*omega**2 + 2*c_1*x**2 - 3*c_1*x + 2*c_1*y**2 + 2*c_1 + 2*c_2*x**2 - 2*c_2*x + 2*c_2*y**2 + 2*c_2 + 2*c_3*x**2 - 2*c_3*x + 2*c_3*y**2 + 2*c_3 - c_4*omega**2 - c_4*x)",
+      "vertex_factorization": "-I*omega*(x**2 + y**2 - 1)*(-c_1*omega**2 + 2*c_1*x**2 - 3*c_1*x + 2*c_1*y**2 + 2*c_1 + 2*c_2*x**2 - 2*c_2*x + 2*c_2*y**2 + 2*c_2 + 2*c_3*x**2 - 2*c_3*x + 2*c_3*y**2 + 2*c_3 - c_4*omega**2 - c_4*x)"
+    },
+    "expanded_term_count": 96,
+    "independent_one_dimensional_reduction": "PASS",
+    "overall_factor": "M_U^2",
+    "quadratic_regression": "PASS",
+    "quartic_lagrangian": "-H_11**2*c_1*p_1**2 - H_11**2*c_1*p_2**2/2 - H_11**2*c_1*p_3**2/2 - 3*H_11**2*c_1*pi_t**2/2 - 3*H_11**2*c_2*p_1**2/2 - H_11**2*c_2*p_2**2/2 - H_11**2*c_2*p_3**2/2 - 3*H_11**2*c_2*pi_t**2/2 - 3*H_11**2*c_3*p_1**2/2 - H_11**2*c_3*p_2**2/2 - H_11**2*c_3*p_3**2/2 - 3*H_11**2*c_3*pi_t**2/2 + H_11**2*c_4*p_1**2/2 - H_11*H_12*c_1*p_1*p_2 - 2*H_11*H_12*c_2*p_1*p_2 - 2*H_11*H_12*c_3*p_1*p_2 + H_11*H_12*c_4*p_1*p_2 - H_11*H_13*c_1*p_1*p_3 - 2*H_11*H_13*c_2*p_1*p_3 - 2*H_11*H_13*c_3*p_1*p_3 + H_11*H_13*c_4*p_1*p_3 - 2*H_11*H_22*c_2*p_1**2 - 2*H_11*H_22*c_2*p_2**2 - H_11*H_22*c_2*p_3**2 - 3*H_11*H_22*c_2*pi_t**2 - 2*H_11*H_23*c_2*p_2*p_3 - 2*H_11*H_33*c_2*p_1**2 - H_11*H_33*c_2*p_2**2 - 2*H_11*H_33*c_2*p_3**2 - 3*H_11*H_33*c_2*pi_t**2 - 3*H_11*c_1*p_1*pi_t*v_1 - H_11*c_2*p_1**2*pi_tt - 6*H_11*c_2*p_1*pi_t*v_1 - H_11*c_2*p_2**2*pi_tt - 6*H_11*c_2*p_2*pi_t*v_2 - H_11*c_2*p_3**2*pi_tt - 6*H_11*c_2*p_3*pi_t*v_3 - H_11*c_3*p_1**2*pi_tt - 6*H_11*c_3*p_1*pi_t*v_1 + H_11*c_4*p_1**2*pi_tt + 3*H_11*c_4*p_1*pi_t*v_1 - 3*H_12**2*c_1*p_1**2/2 - 3*H_12**2*c_1*p_2**2/2 - H_12**2*c_1*p_3**2 - 3*H_12**2*c_1*pi_t**2 - 2*H_12**2*c_3*p_1**2 - 2*H_12**2*c_3*p_2**2 - H_12**2*c_3*p_3**2 - 3*H_12**2*c_3*pi_t**2 + H_12**2*c_4*p_1**2/2 + H_12**2*c_4*p_2**2/2 - H_12*H_13*c_1*p_2*p_3 - 2*H_12*H_13*c_3*p_2*p_3 + H_12*H_13*c_4*p_2*p_3 - H_12*H_22*c_1*p_1*p_2 - 2*H_12*H_22*c_2*p_1*p_2 - 2*H_12*H_22*c_3*p_1*p_2 + H_12*H_22*c_4*p_1*p_2 - H_12*H_23*c_1*p_1*p_3 - 2*H_12*H_23*c_3*p_1*p_3 + H_12*H_23*c_4*p_1*p_3 - 2*H_12*H_33*c_2*p_1*p_2 - 3*H_12*c_1*p_1*pi_t*v_2 - 3*H_12*c_1*p_2*pi_t*v_1 - 2*H_12*c_3*p_1*p_2*pi_tt - 6*H_12*c_3*p_1*pi_t*v_2 - 6*H_12*c_3*p_2*pi_t*v_1 + 2*H_12*c_4*p_1*p_2*pi_tt + 3*H_12*c_4*p_1*pi_t*v_2 + 3*H_12*c_4*p_2*pi_t*v_1 - 3*H_13**2*c_1*p_1**2/2 - H_13**2*c_1*p_2**2 - 3*H_13**2*c_1*p_3**2/2 - 3*H_13**2*c_1*pi_t**2 - 2*H_13**2*c_3*p_1**2 - H_13**2*c_3*p_2**2 - 2*H_13**2*c_3*p_3**2 - 3*H_13**2*c_3*pi_t**2 + H_13**2*c_4*p_1**2/2 + H_13**2*c_4*p_3**2/2 - 2*H_13*H_22*c_2*p_1*p_3 - H_13*H_23*c_1*p_1*p_2 - 2*H_13*H_23*c_3*p_1*p_2 + H_13*H_23*c_4*p_1*p_2 - H_13*H_33*c_1*p_1*p_3 - 2*H_13*H_33*c_2*p_1*p_3 - 2*H_13*H_33*c_3*p_1*p_3 + H_13*H_33*c_4*p_1*p_3 - 3*H_13*c_1*p_1*pi_t*v_3 - 3*H_13*c_1*p_3*pi_t*v_1 - 2*H_13*c_3*p_1*p_3*pi_tt - 6*H_13*c_3*p_1*pi_t*v_3 - 6*H_13*c_3*p_3*pi_t*v_1 + 2*H_13*c_4*p_1*p_3*pi_tt + 3*H_13*c_4*p_1*pi_t*v_3 + 3*H_13*c_4*p_3*pi_t*v_1 - H_22**2*c_1*p_1**2/2 - H_22**2*c_1*p_2**2 - H_22**2*c_1*p_3**2/2 - 3*H_22**2*c_1*pi_t**2/2 - H_22**2*c_2*p_1**2/2 - 3*H_22**2*c_2*p_2**2/2 - H_22**2*c_2*p_3**2/2 - 3*H_22**2*c_2*pi_t**2/2 - H_22**2*c_3*p_1**2/2 - 3*H_22**2*c_3*p_2**2/2 - H_22**2*c_3*p_3**2/2 - 3*H_22**2*c_3*pi_t**2/2 + H_22**2*c_4*p_2**2/2 - H_22*H_23*c_1*p_2*p_3 - 2*H_22*H_23*c_2*p_2*p_3 - 2*H_22*H_23*c_3*p_2*p_3 + H_22*H_23*c_4*p_2*p_3 - H_22*H_33*c_2*p_1**2 - 2*H_22*H_33*c_2*p_2**2 - 2*H_22*H_33*c_2*p_3**2 - 3*H_22*H_33*c_2*pi_t**2 - 3*H_22*c_1*p_2*pi_t*v_2 - H_22*c_2*p_1**2*pi_tt - 6*H_22*c_2*p_1*pi_t*v_1 - H_22*c_2*p_2**2*pi_tt - 6*H_22*c_2*p_2*pi_t*v_2 - H_22*c_2*p_3**2*pi_tt - 6*H_22*c_2*p_3*pi_t*v_3 - H_22*c_3*p_2**2*pi_tt - 6*H_22*c_3*p_2*pi_t*v_2 + H_22*c_4*p_2**2*pi_tt + 3*H_22*c_4*p_2*pi_t*v_2 - H_23**2*c_1*p_1**2 - 3*H_23**2*c_1*p_2**2/2 - 3*H_23**2*c_1*p_3**2/2 - 3*H_23**2*c_1*pi_t**2 - H_23**2*c_3*p_1**2 - 2*H_23**2*c_3*p_2**2 - 2*H_23**2*c_3*p_3**2 - 3*H_23**2*c_3*pi_t**2 + H_23**2*c_4*p_2**2/2 + H_23**2*c_4*p_3**2/2 - H_23*H_33*c_1*p_2*p_3 - 2*H_23*H_33*c_2*p_2*p_3 - 2*H_23*H_33*c_3*p_2*p_3 + H_23*H_33*c_4*p_2*p_3 - 3*H_23*c_1*p_2*pi_t*v_3 - 3*H_23*c_1*p_3*pi_t*v_2 - 2*H_23*c_3*p_2*p_3*pi_tt - 6*H_23*c_3*p_2*pi_t*v_3 - 6*H_23*c_3*p_3*pi_t*v_2 + 2*H_23*c_4*p_2*p_3*pi_tt + 3*H_23*c_4*p_2*pi_t*v_3 + 3*H_23*c_4*p_3*pi_t*v_2 - H_33**2*c_1*p_1**2/2 - H_33**2*c_1*p_2**2/2 - H_33**2*c_1*p_3**2 - 3*H_33**2*c_1*pi_t**2/2 - H_33**2*c_2*p_1**2/2 - H_33**2*c_2*p_2**2/2 - 3*H_33**2*c_2*p_3**2/2 - 3*H_33**2*c_2*pi_t**2/2 - H_33**2*c_3*p_1**2/2 - H_33**2*c_3*p_2**2/2 - 3*H_33**2*c_3*p_3**2/2 - 3*H_33**2*c_3*pi_t**2/2 + H_33**2*c_4*p_3**2/2 - 3*H_33*c_1*p_3*pi_t*v_3 - H_33*c_2*p_1**2*pi_tt - 6*H_33*c_2*p_1*pi_t*v_1 - H_33*c_2*p_2**2*pi_tt - 6*H_33*c_2*p_2*pi_t*v_2 - H_33*c_2*p_3**2*pi_tt - 6*H_33*c_2*p_3*pi_t*v_3 - H_33*c_3*p_3**2*pi_tt - 6*H_33*c_3*p_3*pi_t*v_3 + H_33*c_4*p_3**2*pi_tt + 3*H_33*c_4*p_3*pi_t*v_3 + c_1*p_1**2*pi_tt**2/2 + c_1*p_1**2*v_1**2/2 + c_1*p_1*p_2*v_1*v_2 + c_1*p_1*p_3*v_1*v_3 + 3*c_1*p_1*pi_t*pi_tt*v_1 + c_1*p_2**2*pi_tt**2/2 + c_1*p_2**2*v_2**2/2 + c_1*p_2*p_3*v_2*v_3 + 3*c_1*p_2*pi_t*pi_tt*v_2 + c_1*p_3**2*pi_tt**2/2 + c_1*p_3**2*v_3**2/2 + 3*c_1*p_3*pi_t*pi_tt*v_3 + 3*c_1*pi_t**2*v_1**2/2 + 3*c_1*pi_t**2*v_2**2/2 + 3*c_1*pi_t**2*v_3**2/2 - 2*c_2*p_1**2*v_1**2 - 4*c_2*p_1*p_2*v_1*v_2 - 4*c_2*p_1*p_3*v_1*v_3 - 2*c_2*p_2**2*v_2**2 - 4*c_2*p_2*p_3*v_2*v_3 - 2*c_2*p_3**2*v_3**2 - 2*c_3*p_1**2*v_1**2 - c_3*p_1**2*v_2**2 - c_3*p_1**2*v_3**2 - 2*c_3*p_1*p_2*v_1*v_2 - 2*c_3*p_1*p_3*v_1*v_3 - c_3*p_2**2*v_1**2 - 2*c_3*p_2**2*v_2**2 - c_3*p_2**2*v_3**2 - 2*c_3*p_2*p_3*v_2*v_3 - c_3*p_3**2*v_1**2 - c_3*p_3**2*v_2**2 - 2*c_3*p_3**2*v_3**2 + c_4*p_1**2*pi_tt**2/2 + 5*c_4*p_1**2*v_1**2/2 + c_4*p_1**2*v_2**2 + c_4*p_1**2*v_3**2 + 3*c_4*p_1*p_2*v_1*v_2 + 3*c_4*p_1*p_3*v_1*v_3 + 3*c_4*p_1*pi_t*pi_tt*v_1 + c_4*p_2**2*pi_tt**2/2 + c_4*p_2**2*v_1**2 + 5*c_4*p_2**2*v_2**2/2 + c_4*p_2**2*v_3**2 + 3*c_4*p_2*p_3*v_2*v_3 + 3*c_4*p_2*pi_t*pi_tt*v_2 + c_4*p_3**2*pi_tt**2/2 + c_4*p_3**2*v_1**2 + c_4*p_3**2*v_2**2 + 5*c_4*p_3**2*v_3**2/2 + 3*c_4*p_3*pi_t*pi_tt*v_3 + 3*c_4*pi_t**2*v_1**2/2 + 3*c_4*pi_t**2*v_2**2/2 + 3*c_4*pi_t**2*v_3**2/2"
+  }
+}

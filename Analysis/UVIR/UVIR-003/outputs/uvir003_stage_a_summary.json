@@ -1,0 +1,61 @@
+{
+  "aether_decoupling": {
+    "longitudinal_speed_squared": "(c1r + c2r + c3r)/(c1r + c4r)",
+    "necessary_conditions": [
+      "c14 > 0",
+      "c1 > 0",
+      "c123 > 0"
+    ],
+    "scope": "Necessary frozen-metric conditions only; not the full Einstein-aether stability region.",
+    "transverse_speed_squared": "c1r/(c1r + c4r)"
+  },
+  "alignment": {
+    "interpretation": "Positive alignment coefficient penalizes relative spatial current j_i-n u_i.",
+    "quadratic_projected_current": "j_x**2 - 2*j_x*n*u_x + j_y**2 - 2*j_y*n*u_y + j_z**2 - 2*j_z*n*u_z + n**2*u_x**2 + n**2*u_y**2 + n**2*u_z**2"
+  },
+  "architecture_decision": "INDEPENDENT_DYNAMICAL_U_WITH_CURRENT_ALIGNMENT",
+  "double_counting_rule": "U is varied independently; it is not set algebraically equal to the normalized condensate current.",
+  "force_decoupling": {
+    "crossover_k_squared": "3*A*M_star**2*q*(cos_theta**2 + 1)/gamma",
+    "dispersion_nonzero_gradient": "k**2*(3*A*M_star**2*q*(cos_theta**2 + 1) + gamma*k**2)/(K_Q*M_star**2)",
+    "dispersion_zero_gradient": "gamma*k**4/(K_Q*M_star**2)",
+    "necessary_conditions": [
+      "K_Q > 0",
+      "A > 0",
+      "gamma > 0"
+    ],
+    "nonzero_gradient_hessian": [
+      [
+        "6*A*q",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "3*A*q",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "3*A*q"
+      ]
+    ],
+    "regulator_verdict": "CONDITIONAL_PASS_IN_FLAT_DECOUPLING_LIMIT"
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "interpretation": "PASS validates necessary Stage-A identities; it does not close UVIR-003.",
+  "mat001_status": "BLOCKED",
+  "not_yet_done": [
+    "complete symmetry-allowed Phi-U-psi mixing census",
+    "full metric-lapse-shift-aether-condensate constraint elimination",
+    "coupled nonzero-gradient mode matrix",
+    "strong-coupling scale",
+    "radiative and technical naturalness",
+    "covariant regulator completion on general aether backgrounds",
+    "matter coupling and lensing"
+  ],
+  "stage": "A_ACTION_AND_DECOUPLING",
+  "stage_validation": "PASS"
+}

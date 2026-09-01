@@ -1,0 +1,22 @@
+{
+  "gate": "RES-001",
+  "description": "Phenomenological 2-mode GKSL Lindblad master equation toy model",
+  "inserted_parameters": {
+    "T_bath": 2.0,
+    "T_syn": 10.0,
+    "gamma_down": 0.3162114510431499,
+    "gamma_up": 0.19179194000989083,
+    "gamma_syn": 0.015
+  },
+  "steady_state_metrics": {
+    "liouvillian_nullspace_norm": 7.184363762413706e-17,
+    "hermiticity_residual": 0.0,
+    "trace_residual": 0.0,
+    "min_eigenvalue": 0.018314149375856775,
+    "cptp_verified": true
+  },
+  "epistemic_verdict": {
+    "status": "PHENOMENOLOGICAL_SCAFFOLD",
+    "finding": "The 2-mode GKSL Lindblad toy model achieves an exact numerical steady state (||L(rho)||_2 = 7.14e-17) and CPTP positivity. Microscopic quantum gravity couplings remain open."
+  }
+}

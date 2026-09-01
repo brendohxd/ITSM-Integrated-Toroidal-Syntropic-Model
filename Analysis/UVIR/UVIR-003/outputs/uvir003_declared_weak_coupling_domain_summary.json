@@ -1,0 +1,187 @@
+{
+  "calculation_status": "PASS",
+  "domain_exclude": [
+    {
+      "evidence": [
+        "uvir003_mode_resolved_transfer_robustness_summary.json",
+        "uvir003_propagator_adiabaticity_transfer_summary.json"
+      ],
+      "reason": "Complex-quartet nonseparability / IR gain attribution HOLD; not weakly coupled under present diagnostics",
+      "sector": "IR_transfer_HOLD_complex_quartet_modes",
+      "status": "OUT_OF_DOMAIN",
+      "until": "Future gate controls or reclassifies IR modes"
+    },
+    {
+      "reason": "Exact Y^{3/2} at zero gradient not a healthy homogeneous S-matrix sector",
+      "sector": "homogeneous_zero_gradient_Y32_S_matrix",
+      "status": "OUT_OF_DOMAIN",
+      "until": "Not claimed under Track-A nonzero-gradient programme"
+    },
+    {
+      "reason": "Path declared only; integrals not computed",
+      "sector": "full_in_in_nested_time_integrals",
+      "status": "OUT_OF_DOMAIN",
+      "until": "Later gate or explicit Open schedule"
+    },
+    {
+      "reason": "NOT_COMPUTED; excluded from current UVIR weakly-coupled claim set",
+      "sector": "optical_theorem_multi_channel_unitarity",
+      "status": "OUT_OF_DOMAIN",
+      "until": "Optional later gate; not required for Stage 1 exit"
+    },
+    {
+      "reason": "Matching Stage 2\u20134; K_Q NOT_DERIVED",
+      "sector": "Derived_K_Q_and_matched_physical_cutoff",
+      "status": "OUT_OF_DOMAIN",
+      "until": "Stage 2 floor + Stage 3\u20134 MAT upgrade"
+    },
+    {
+      "reason": "Serial order: MAT is Stage 3 after domain freeze + matching floor",
+      "sector": "MAT001_Derived_vertex",
+      "status": "OUT_OF_DOMAIN",
+      "until": "Stage 3"
+    }
+  ],
+  "domain_include": [
+    {
+      "evidence": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+      "scope": "analytic A_IR>0, v>0; sampled v=[0.05,2.0] at A_IR=1",
+      "sector": "L_local_Track_A_nonzero_gradient_force",
+      "status": "IN_DOMAIN"
+    },
+    {
+      "evidence": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+      "scope": "discrete q/H={47.5,50,75,100}; proxy time t=[0,8]",
+      "sector": "G_high_q_mode_projected_Green_proxy",
+      "status": "IN_DOMAIN"
+    },
+    {
+      "evidence": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+      "scope": "packet q0/H=50, sigma_ln=0.02 on same discrete support",
+      "sector": "packet_local_adiabatic_observable_norm",
+      "status": "IN_DOMAIN"
+    },
+    {
+      "evidence": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+      "scope": "diagnostic q/Lambda<=0.3, u_L<=1; normalization unmatched",
+      "sector": "declared_tree_NDA_unitarity_criterion",
+      "status": "IN_DOMAIN"
+    },
+    {
+      "evidence": "PASS_KQ_MATCHING_INVENTORY_OPEN + PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "scope": "invariants + R2 V target; numeric K_Q not Derived",
+      "sector": "redefinition_invariants_and_route_maps",
+      "status": "IN_DOMAIN"
+    }
+  ],
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "include_evidence": {
+    "uvir003_declared_unitarity_eft_criterion_summary.json": {
+      "expected": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+      "got": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+      "ok": true
+    },
+    "uvir003_frw_multi_slice_mode_green_summary.json": {
+      "expected": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+      "got": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+      "ok": true
+    },
+    "uvir003_kq_matching_inventory_summary.json": {
+      "expected": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "got": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "ok": true
+    },
+    "uvir003_local_adiabatic_observable_norm_summary.json": {
+      "expected": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+      "got": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+      "ok": true
+    },
+    "uvir003_matching_route_program_summary.json": {
+      "expected": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "got": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "ok": true
+    },
+    "uvir003_nonzero_gradient_force_local_summary.json": {
+      "expected": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+      "got": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+      "ok": true
+    }
+  },
+  "ir_hold_confirmed_files": [
+    "uvir003_mode_resolved_transfer_robustness_summary.json",
+    "uvir003_propagator_adiabaticity_transfer_summary.json"
+  ],
+  "ir_hold_evidence": {
+    "uvir003_mode_resolved_transfer_robustness_summary.json": {
+      "got": "HOLD_COMPLEX_QUARTET_IR_MODE_ATTRIBUTION",
+      "path": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\UVIR\\UVIR-003\\outputs\\uvir003_mode_resolved_transfer_robustness_summary.json"
+    },
+    "uvir003_propagator_adiabaticity_transfer_summary.json": {
+      "got": "HOLD_TIME_DEPENDENT_INFRARED_TRANSFER_INTERPRETATION",
+      "path": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\UVIR\\UVIR-003\\outputs\\uvir003_propagator_adiabaticity_transfer_summary.json"
+    }
+  },
+  "master_plan_M2": {
+    "meaning": "Evidence-bounded diagnostic claim only inside domain_include; no continuum-neighbourhood or no-leakage theorem is claimed",
+    "status": "PASS_BOUNDED"
+  },
+  "mat001_status": "BLOCKED",
+  "mismatched_include_summaries": [],
+  "missing_include_summaries": [],
+  "next_required_calculation": [
+    "Stage 2a: COMPLETE as INCOMPLETE_R3_UV_RESIDUE",
+    "Stage 2b: write Conditional matching floor with scope",
+    "Stage 2c: re-run causality/NDA under floor",
+    "Only then Stage 3 MAT-001"
+  ],
+  "quantitative_domain": {
+    "checks": {
+      "force_A_IR_positive_and_v_positive": true,
+      "force_tested_v_support_present": true,
+      "green_discrete_q_over_H_support_and_time_interval": true,
+      "packet_support_matches_green_support": true,
+      "tree_NDA_diagnostic_window_scoped_and_unmatched": true
+    },
+    "force": {
+      "analytic_conditions": [
+        "A_IR>0",
+        "v>0"
+      ],
+      "tested_A_IR": 1.0,
+      "tested_v_values": [
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ]
+    },
+    "green_and_packet": {
+      "admitted_discrete_q_over_H": [
+        47.5,
+        50.0,
+        75.0,
+        100.0
+      ],
+      "packet_narrow_sigma_ln": 0.02,
+      "packet_q0_over_H": 50.0,
+      "representative_time_interval": [
+        0.0,
+        8.0
+      ]
+    },
+    "tree_NDA_diagnostic": {
+      "normalization": "A_IR=K_Q=1 diagnostic only",
+      "physical_cutoff": "NOT_ESTABLISHED_K_Q_MATCHING_OPEN",
+      "q_over_Lambda_parallel_max": 0.3,
+      "u_L_max": 1.0
+    }
+  },
+  "scientific_boundary": "Freezes an evidence-bounded diagnostic claim domain for UVIR-003 M2. Does not solve IR complex-quartet physics; excludes it. Does not derive K_Q, close M3/M6 as Derived, or unlock MAT-001. The admitted high-q support is discrete and representative; no open-neighbourhood stability or dynamical no-leakage theorem is claimed. Stage 2 matching floor may begin only after this PASS.",
+  "serial_order_doc": "Theory/Gates/UVIR-003/UVIR-003_SERIAL_STAGE_ORDER.md",
+  "serial_stage": 1,
+  "stage": "B_DECLARED_WEAK_COUPLING_DOMAIN",
+  "subgate_status": "PASS_DECLARED_WEAK_COUPLING_DOMAIN"
+}

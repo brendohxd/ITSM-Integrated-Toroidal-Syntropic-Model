@@ -1,0 +1,88 @@
+{
+  "calculation_status": "PASS",
+  "diagnostics": {
+    "boost_ok": true,
+    "penultimate_vs_largest_max_rel": 0.04753274722574,
+    "res_ok": true,
+    "sens_ok": true
+  },
+  "domains": [
+    {
+      "Rmax": 16.0,
+      "Zmax": 6.4,
+      "residual": 1.3255256570593857e-09
+    },
+    {
+      "Rmax": 20.0,
+      "Zmax": 8.0,
+      "residual": 1.2705566733795592e-09
+    },
+    {
+      "Rmax": 28.0,
+      "Zmax": 11.200000000000001,
+      "residual": 1.1602088838913614e-09
+    },
+    {
+      "Rmax": 40.0,
+      "Zmax": 16.0,
+      "residual": 3.0929961933093587e-09
+    }
+  ],
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "DISK-001",
+  "ir": {
+    "C_obs": 1.0,
+    "C_obs_origin": "Conditional_default_Cobs_sim_1_MasterPlan_sec6",
+    "a0": 3700.0,
+    "a0_origin": "phenomenological_input",
+    "ban_B9_dual_rar": true,
+    "is_derived": false,
+    "label": "Conditional_AQUAL_baseline"
+  },
+  "mat001_status": "BLOCKED",
+  "method": {
+    "bc": "Dirichlet soft 3D Newtonian monopole",
+    "sensitivity": "vary Rmax (Zmax=aspect*Rmax), fixed mass/Rd/zd; max relative midplane |g| difference for R<=compare_Rmax vs largest domain",
+    "solver": "Stage-3 R\u2013z Picard AQUAL"
+  },
+  "midplane_largest_domain": {
+    "compare_Rmax": 7.0,
+    "max_rel_diff_potential_vs_algebraic_AQUAL": 0.2999134347087712,
+    "mean_g_over_gN_boost": 2.378313374686265,
+    "note_algebraic_vs_potential": "Algebraic AQUAL map on midplane g_N is not identical to |-grad Phi| from the nonlinear R\u2013z solve; difference is expected and reported, not forced to zero.",
+    "vc_flatness_std_over_mean_outer": 0.04035952461568031
+  },
+  "next_required_calculation": [
+    "Optional multipole expansion BC",
+    "Optional single-galaxy diagnostic under declared inputs",
+    "DISK-001_GATE_REPORT when full-pass criteria are formally signed off"
+  ],
+  "pass_criteria": {
+    "domain_sens_max_rel_lt": 0.05,
+    "largest_residual_lt": 0.001,
+    "mean_boost_gt": 1.02
+  },
+  "scientific_boundary": "Domain-truncation sensitivity for monopole Dirichlet BC and midplane g(R) diagnostics under Conditional IR. Not a full multipole BC implementation; not SPARC; not Derived C_obs; not full DISK-001 PASS.",
+  "sensitivity_vs_largest": [
+    {
+      "Rmax": 16.0,
+      "Zmax": 6.4,
+      "max_rel_diff_vs_largest_domain": 0.11403694917592319,
+      "residual": 1.3255256570593857e-09
+    },
+    {
+      "Rmax": 20.0,
+      "Zmax": 8.0,
+      "max_rel_diff_vs_largest_domain": 0.09596704958652484,
+      "residual": 1.2705566733795592e-09
+    },
+    {
+      "Rmax": 28.0,
+      "Zmax": 11.200000000000001,
+      "max_rel_diff_vs_largest_domain": 0.04753274722574,
+      "residual": 1.1602088838913614e-09
+    }
+  ],
+  "stage": "STAGE4_BC_SENSITIVITY_MIDPLANE",
+  "subgate_status": "PASS_DISK001_BC_SENSITIVITY_MIDPLANE"
+}

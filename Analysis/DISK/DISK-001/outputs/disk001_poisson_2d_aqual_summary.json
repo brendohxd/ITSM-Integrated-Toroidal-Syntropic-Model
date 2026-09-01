@@ -1,0 +1,125 @@
+{
+  "a0_eff": 3700.0,
+  "calculation_status": "PASS",
+  "convergence": [
+    {
+      "curl_algebraic_map_rel": 0.003138789175361249,
+      "curl_potential_rel": 3.298525178769076e-17,
+      "dx": 0.625,
+      "final_max_dphi": 0.0005719929345104902,
+      "g_probe": 11157.986887703824,
+      "n": 33,
+      "picard_history_tail": [
+        {
+          "iter": 21,
+          "max_dphi": 0.002276585662002617,
+          "rel_pde_residual": 0.08882095947926995
+        },
+        {
+          "iter": 22,
+          "max_dphi": 0.0011413052693569625,
+          "rel_pde_residual": 0.08882095828167975
+        },
+        {
+          "iter": 23,
+          "max_dphi": 0.0005719929345104902,
+          "rel_pde_residual": 0.08882095888367983
+        }
+      ],
+      "picard_iters": 24,
+      "rel_pde_residual": 0.08882095888367983
+    },
+    {
+      "curl_algebraic_map_rel": 0.0014277932430719342,
+      "curl_potential_rel": 3.3646162966869623e-17,
+      "dx": 0.4166666666666661,
+      "final_max_dphi": 0.0005667098994308617,
+      "g_probe": 11711.714292795914,
+      "n": 49,
+      "picard_history_tail": [
+        {
+          "iter": 25,
+          "max_dphi": 0.0017089752896026766,
+          "rel_pde_residual": 0.05180667342101144
+        },
+        {
+          "iter": 26,
+          "max_dphi": 0.0009843141688179458,
+          "rel_pde_residual": 0.051806672259088575
+        },
+        {
+          "iter": 27,
+          "max_dphi": 0.0005667098994308617,
+          "rel_pde_residual": 0.051806672928881546
+        }
+      ],
+      "picard_iters": 28,
+      "rel_pde_residual": 0.051806672928881546
+    },
+    {
+      "curl_algebraic_map_rel": 0.0007861529164350373,
+      "curl_potential_rel": 3.240817654454212e-17,
+      "dx": 0.3125,
+      "final_max_dphi": 0.0006639541434196872,
+      "g_probe": 11142.386156282319,
+      "n": 65,
+      "picard_history_tail": [
+        {
+          "iter": 28,
+          "max_dphi": 0.0017049316334123432,
+          "rel_pde_residual": 0.035293803758965535
+        },
+        {
+          "iter": 29,
+          "max_dphi": 0.0010640532736942987,
+          "rel_pde_residual": 0.03529380506987507
+        },
+        {
+          "iter": 30,
+          "max_dphi": 0.0006639541434196872,
+          "rel_pde_residual": 0.03529380424956579
+        }
+      ],
+      "picard_iters": 31,
+      "rel_pde_residual": 0.03529380424956579
+    }
+  ],
+  "diagnostics": {
+    "curl_ok": true,
+    "finest_curl_algebraic_map_rel": 0.0007861529164350373,
+    "finest_curl_potential_rel": 3.240817654454212e-17,
+    "finest_rel_pde_residual": 0.03529380424956579,
+    "refine_ok": true,
+    "res_ok": true
+  },
+  "equation": "div(mu(|grad Phi|/a0_eff) grad Phi) = 4 pi G Sigma",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "DISK-001",
+  "ir": {
+    "C_obs": 1.0,
+    "C_obs_origin": "Conditional_default_Cobs_sim_1_MasterPlan_sec6",
+    "a0": 3700.0,
+    "a0_origin": "phenomenological_input",
+    "ban_B9_dual_rar": true,
+    "is_derived": false,
+    "label": "Conditional_AQUAL_baseline"
+  },
+  "mat001_status": "BLOCKED",
+  "method": {
+    "discretization": "cell-centred 5-point FD with face-averaged mu",
+    "nonlinear": "Picard linearisation + scipy.sparse.linalg.spsolve",
+    "picard_tol": 1e-08
+  },
+  "model": {
+    "bc": "Dirichlet Phi = soft Newtonian monopole on boundary",
+    "density": "elliptical_gaussian_surface_density",
+    "half_box_kpc": 10.0,
+    "mass_Msun": 5000000000.0,
+    "sigma_x_kpc": 2.0,
+    "sigma_y_kpc": 1.0
+  },
+  "mu": "x/sqrt(1+x^2)",
+  "scientific_boundary": "2D midplane nonlinear AQUAL Poisson with Picard FD method under declared Conditional IR. Dirichlet Newtonian soft BC; not a full 3D disk, not SPARC fitting, not Derived C_obs. Algebraic AQUAL map is reported only as a contrast diagnostic (generally nonzero curl). Full DISK-001 PASS still requires stricter residual targets, 3D or axisymmetric R\u2013z, and published convergence tables.",
+  "stage": "STAGE1_POISSON_2D_AQUAL",
+  "subgate_status": "PASS_DISK001_2D_NONLINEAR_AQUAL_PICARD"
+}

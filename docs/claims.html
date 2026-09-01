@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claim hygiene — ITSM</title>
+  <meta name="description" content="ITSM claim statuses, four-tier categorization, and fail-closed ledger." />
+  <link rel="canonical" href="https://itsm-cosmology.com/claims.html" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="theme-color" content="#0c1427" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ITSM Cosmology" />
+  <link rel="stylesheet" href="styles.css?v=20260805d" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a>
+      <ul class="nav-links">
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="papers.html">Papers</a></li>
+        <li><a href="claims.html" aria-current="page">Claims</a></li>
+        <li><a href="reproduce.html">Reproduce</a></li>
+        <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Claims</p>
+      <h1>Claim <em>hygiene</em></h1>
+      <p class="lede">
+        The ITSM programme enforces fail-closed claim discipline: no claim is promoted beyond its verified gate status.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section">
+      <div class="section-head">
+        <h2>Status Definitions</h2>
+        <p>Exactly one label per scientific claim</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Label</th><th>Meaning</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge badge-ok">Derived</span></td>
+              <td>Checked calculation from declared assumptions in a stated domain</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-cond">Conditional</span></td>
+              <td>Requires a named postulate, matching hypothesis, or restricted limit</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-open">Open</span></td>
+              <td>Defined calculation or test incomplete — <strong>default for untested routes</strong></td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-rej">Rejected / Quarantined</span></td>
+              <td>Stated derivation form failed or quarantined for code-to-claim violations</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Key Quantities &amp; Epistemic Status</h2>
+        <p>Authoritative matrix aligned with canonical v12.0-alpha.12 baseline</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Quantity / Component</th><th>Epistemic Status</th><th>Canonical Scope &amp; Origin</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Conformal Matter Coupling (\(C_m\))</strong></td>
+              <td><span class="badge badge-ok">Derived</span></td>
+              <td>\(C_m \equiv 1.0\) fixed by conformal Weyl trace invariance under \(	ilde{g}_{\mu
+u} = e^{2\psi} g_{\mu
+u}\).</td>
+            </tr>
+            <tr>
+              <td><strong>Matter Vertex Residue (\(V\))</strong></td>
+              <td><span class="badge badge-cond">Blocked / Conditional</span></td>
+              <td>\(V = C_m / \sqrt{K_Q} = 1/f\); calibration \(f = 1/\sqrt{4\pi G}\) is empirical, not derived from parent action.</td>
+            </tr>
+            <tr>
+              <td><strong>Acceleration Scale (\(a_0\))</strong></td>
+              <td><span class="badge badge-cond">Conditional Scale</span></td>
+              <td>Empirical MOND/AQUAL transition acceleration \(a_0 pprox 1.20 	imes 10^{-10}\,\mathrm{m/s^2}\); ab-initio derivation open.</td>
+            </tr>
+            <tr>
+              <td><strong>SPARC Catalog Performance</strong></td>
+              <td><span class="badge badge-cond">Methods Benchmark</span></td>
+              <td>Raw rigid unfloated \(\chi^2_
+u = 47.20\) (median 10.51); floated optimizer \(\chi^2_
+u = 11.08\) (median 3.43).</td>
+            </tr>
+            <tr>
+              <td><strong>Moduli Phase Space (TOP-001)</strong></td>
+              <td><span class="badge badge-rej">Scoped Negative (Free)</span></td>
+              <td>Free Casimir stress dilutes to spatial isotropy (\(H_t/H_p 	o 1.000\)). Driven 13/12 requires active pump \(\eta = 27/76\) with steady drift.</td>
+            </tr>
+            <tr>
+              <td><strong>Cosmological Perturbations (COS-001)</strong></td>
+              <td><span class="badge badge-open">Proxy / Open</span></td>
+              <td>Background sound horizon \(r_s = 144.43\,\mathrm{Mpc}\) verified; full Einstein-Boltzmann hierarchy and non-linear screening open.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Brendon Boyd · Open Science under CC-BY-4.0 / GPLv3</p>
+      <p><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">Source Code on GitHub</a></p>
+    </div>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./sw.js').then(function(reg) {
+          console.log('ITSM Service Worker registered with scope: ', reg.scope);
+        }).catch(function(err) {
+          console.warn('ITSM Service Worker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>\n

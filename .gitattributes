@@ -1,0 +1,14 @@
+# Canonical repository text policy. This overrides each contributor's
+# core.autocrlf setting and prevents false whole-worktree modifications.
+* text=auto eol=lf
+
+# Binary assets must never undergo line-ending conversion.
+*.pdf binary
+*.png binary
+*.webp binary
+
+# Windows command scripts retain their native convention when introduced.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Nested projects may provide more-specific rules in their own attributes.

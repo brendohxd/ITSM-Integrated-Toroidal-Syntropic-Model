@@ -1,0 +1,30 @@
+{
+  "gate": "COS-001 / PERT-001",
+  "description": "Eisenstein-Hu growth proxy calibration probe (NOT a full Boltzmann solver)",
+  "methodology": "Eisenstein-Hu (1998) fitting formula + single-mode growth ODE + top-hat quadrature",
+  "background_sound_horizon": {
+    "z_star": 1091.7272348016566,
+    "r_s_Mpc": 144.4332827614522,
+    "chi_star_Mpc": 13906.6630653659,
+    "theta_star_rad": 0.010385905093304424,
+    "ell_star": 302.4861699935148
+  },
+  "matter_clustering_proxy_results": {
+    "lcdm_control": {
+      "model_type": "lcdm",
+      "sigma_8": 1.0247485871981492,
+      "S_8": 1.0410851246972896,
+      "integration_rel_err": 1.0176383610474565e-07
+    },
+    "dual_gravity_proxy": {
+      "model_type": "dual_gravity",
+      "sigma_8": 1.0861273849162345,
+      "S_8": 1.103442422940382,
+      "integration_rel_err": 1.0199262940303896e-07
+    }
+  },
+  "epistemic_verdict": {
+    "status": "PROXY_CALIBRATION_ONLY",
+    "finding": "Sound horizon r_s = 144.43 Mpc matches Planck. Growth proxy yields sigma_8 = 1.0247 (LCDM) and 1.0861 (dual gravity). Unscreened linear dual gravity enhances growth. A full Einstein-Boltzmann code (CAMB/CLASS) and non-linear halo screening remain open."
+  }
+}

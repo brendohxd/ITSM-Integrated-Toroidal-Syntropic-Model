@@ -1,0 +1,65 @@
+{
+  "calculation_status": "PASS",
+  "date": "2026-07-26",
+  "full_J2_status": "NOT_YET_ASSEMBLED",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "assemble the already fixed g+U+Phi+alignment cubic ADM vertices with this force-sector J2 component",
+    "form the complete finite-q J2 vector in the existing lapse/scalar-shift convention",
+    "evaluate the quartic Schur complement and direct quartic contact block on the regular physical scalar basis",
+    "separately reduce the exact Y^(3/2) sector on a declared local nonzero-gradient background"
+  ],
+  "physical_2_to_2_status": "NOT_YET_DERIVED",
+  "stage": "B_TRACK_A_FORCE_ADM_CUBIC",
+  "subgate_status": "PASS_FORCE_SECTOR_J2_COMPONENT",
+  "symbolic_audit": {
+    "constraint_source": {
+      "Y_three_halves_J2_at_zero_gradient": "0",
+      "beta_J2_after_spatial_integration_by_parts": "a*K_Q*partial_i(pi_dot*partial_i(pi))",
+      "lapse_J2_comoving_density": "-K_Q*a**3*pi_dot**2/2 - gamma*lap_pi**2/(2*M_star_sq*a)",
+      "lapse_J2_physical_density": "-K_Q*pi_dot^2/2-gamma*(lap_physical(pi))^2/(2*M_star^2)",
+      "regulator_shift_J2": "0",
+      "status": "PASS_FORCE_SECTOR_J2_COMPONENT",
+      "variables": "delta_N and beta before finite-q scalar-shift normalization"
+    },
+    "exact_adm_building_blocks": {
+      "Q": "Q=[pi_dot-a^-2 exp(-2R)*partial_i beta partial_i pi]/N",
+      "Y": "Y=a^-2 exp(-2R)*partial_i pi partial_i pi",
+      "gauge": "N=1+delta_N; N_i=partial_i beta; h_ij=a^2 exp(2R) delta_ij; psi=psi_bar+pi",
+      "rest_laplacian": "D^2 psi=a^-2 exp(-2R)*(partial^2 pi+partial_i R partial_i pi)"
+    },
+    "scientific_boundary": {
+      "derived": "complete homogeneous zero-gradient force-sector ADM expansion through direct quartic order and its J2 component",
+      "nonanalytic_rule": "Y^(3/2) is kept as an exact classical functional. Its ordinary perturbative force analysis is performed only about a declared nonzero spatial gradient.",
+      "not_derived": [
+        "assembled J2 for the complete g+U+Phi+alignment+psi scalar system",
+        "nonzero-gradient local constraint reduction for the exact Y^(3/2) branch",
+        "gauge-regular physical 2-to-2 amplitude",
+        "physical cutoff or unitarity bound"
+      ]
+    },
+    "track_a_action": {
+      "Delta_U": "D_mu D^mu psi",
+      "background": "flat FRW; U^mu=n^mu; spatially constant psi_bar",
+      "force_lagrangian": "K_Q*Q^2/2-A*Y^(3/2)-gamma*(D_mu D^mu psi)^2/(2*M_star^2)",
+      "interpretation": "exact Y^(3/2) is retained; its perturbative force test is assigned to a declared local nonzero-gradient background",
+      "status": "ADOPTED_FOR_DERIVATION"
+    },
+    "verified_expansion": {
+      "Q_squared_cubic": "3*K_Q*R*a**3*pi_dot**2/2 - K_Q*a**3*delta_N*pi_dot**2/2 - K_Q*a*grad_beta_dot_grad_pi*pi_dot",
+      "Q_squared_quartic": "9*K_Q*R**2*a**3*pi_dot**2/4 - 3*K_Q*R*a**3*delta_N*pi_dot**2/2 - K_Q*R*a*grad_beta_dot_grad_pi*pi_dot + K_Q*a**3*delta_N**2*pi_dot**2/2 + K_Q*a*delta_N*grad_beta_dot_grad_pi*pi_dot + K_Q*grad_beta_dot_grad_pi**2/(2*a)",
+      "Y_three_halves_cubic": "-A*grad_pi_sq**(3/2)",
+      "Y_three_halves_quartic": "-A*delta_N*grad_pi_sq**(3/2)",
+      "cubic_force_density": "-A*grad_pi_sq**(3/2) + 3*K_Q*R*a**3*pi_dot**2/2 - K_Q*a**3*delta_N*pi_dot**2/2 - K_Q*a*grad_beta_dot_grad_pi*pi_dot + R*gamma*lap_pi**2/(2*M_star_sq*a) - delta_N*gamma*lap_pi**2/(2*M_star_sq*a) - gamma*grad_R_dot_grad_pi*lap_pi/(M_star_sq*a)",
+      "direct_quartic_force_density": "-A*delta_N*grad_pi_sq**(3/2) + 9*K_Q*R**2*a**3*pi_dot**2/4 - 3*K_Q*R*a**3*delta_N*pi_dot**2/2 - K_Q*R*a*grad_beta_dot_grad_pi*pi_dot + K_Q*a**3*delta_N**2*pi_dot**2/2 + K_Q*a*delta_N*grad_beta_dot_grad_pi*pi_dot + K_Q*grad_beta_dot_grad_pi**2/(2*a) - R**2*gamma*lap_pi**2/(4*M_star_sq*a) + R*delta_N*gamma*lap_pi**2/(2*M_star_sq*a) + R*gamma*grad_R_dot_grad_pi*lap_pi/(M_star_sq*a) - delta_N*gamma*grad_R_dot_grad_pi*lap_pi/(M_star_sq*a) - gamma*grad_R_dot_grad_pi**2/(2*M_star_sq*a)",
+      "quadratic_force_density": "K_Q*a**3*pi_dot**2/2 - gamma*lap_pi**2/(2*M_star_sq*a)",
+      "regulator_cubic": "R*gamma*lap_pi**2/(2*M_star_sq*a) - delta_N*gamma*lap_pi**2/(2*M_star_sq*a) - gamma*grad_R_dot_grad_pi*lap_pi/(M_star_sq*a)",
+      "regulator_quadratic": "-gamma*lap_pi**2/(2*M_star_sq*a)",
+      "regulator_quartic": "-R**2*gamma*lap_pi**2/(4*M_star_sq*a) + R*delta_N*gamma*lap_pi**2/(2*M_star_sq*a) + R*gamma*grad_R_dot_grad_pi*lap_pi/(M_star_sq*a) - delta_N*gamma*grad_R_dot_grad_pi*lap_pi/(M_star_sq*a) - gamma*grad_R_dot_grad_pi**2/(2*M_star_sq*a)",
+      "status": "VERIFIED_THROUGH_QUARTIC_ORDER"
+    }
+  },
+  "track_a_status": "SELECTED"
+}

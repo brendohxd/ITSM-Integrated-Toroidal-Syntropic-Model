@@ -1,0 +1,98 @@
+{
+  "calculation_status": "PASS",
+  "cubic_readiness_status": "REQUIRES_STUECKELBERG_OR_GAUGE_INVARIANT_TRIAD_ACTION",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "gauge_orbit_status": "IDENTIFIED_HOMOGENEOUS_TIME_TRANSLATION",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "restore the preferred-time St\u00fcckelberg/khronon scalar or use an explicitly gauge-invariant cubic basis",
+    "substitute the first-order lapse and scalar-shift constraints into the complete cosmological cubic action",
+    "derive the quartic contact vertex and combine it with the cubic-exchange contribution",
+    "canonically normalize only the physical propagating modes and derive an invariant 2-to-2 unitarity scale",
+    "compare the resulting scales with H, physical momenta and the declared EFT cutoff"
+  ],
+  "representative_branch": {
+    "finite_q_alignment_scan": [
+      {
+        "maximum_smallest_kinetic_eigenvalue": 1.9354841618302032e-08,
+        "mean_time_shift_alignment_cosine": 1.0,
+        "minimum_smallest_kinetic_eigenvalue": 5.869890760956675e-09,
+        "minimum_time_shift_alignment_cosine": 0.9999999999999994,
+        "q_over_H": 0.001
+      },
+      {
+        "maximum_smallest_kinetic_eigenvalue": 1.9507007116281727e-06,
+        "mean_time_shift_alignment_cosine": 0.9999999999998523,
+        "minimum_smallest_kinetic_eigenvalue": 5.909732328848727e-07,
+        "minimum_time_shift_alignment_cosine": 0.9999999999995369,
+        "q_over_H": 0.01
+      },
+      {
+        "maximum_smallest_kinetic_eigenvalue": 0.00019507366696863704,
+        "mean_time_shift_alignment_cosine": 0.9999999985235891,
+        "minimum_smallest_kinetic_eigenvalue": 5.909585753804958e-05,
+        "minimum_time_shift_alignment_cosine": 0.9999999953682775,
+        "q_over_H": 0.1
+      },
+      {
+        "maximum_smallest_kinetic_eigenvalue": 0.019324126365724226,
+        "mean_time_shift_alignment_cosine": 0.9999853089938802,
+        "minimum_smallest_kinetic_eigenvalue": 0.005880510923666288,
+        "minimum_time_shift_alignment_cosine": 0.9999536228783938,
+        "q_over_H": 1.0
+      },
+      {
+        "maximum_smallest_kinetic_eigenvalue": 0.763618539517867,
+        "mean_time_shift_alignment_cosine": 0.9484159061056253,
+        "minimum_smallest_kinetic_eigenvalue": 0.3861134149593687,
+        "minimum_time_shift_alignment_cosine": 0.8461618629161758,
+        "q_over_H": 10.0
+      }
+    ],
+    "gauge_invariant_variables": [
+      "Q_rho=delta_rho-(rho_dot/H)*R",
+      "Q_theta=vartheta-(mu/H)*R"
+    ],
+    "parameter_scope": "Dimensionless representative branch only; no physical aether or cosmological parameter selection.",
+    "physical_q0_slice": {
+      "inertia": "2_POSITIVE_0_NEGATIVE",
+      "maximum_condition_number": 1.0669103955506192,
+      "maximum_kinetic_eigenvalue": 1.0000000000000002,
+      "minimum_constraint_singular_value": 0.12495300026779832,
+      "minimum_kinetic_eigenvalue": 0.9372858340966043,
+      "q0_rank_failures": 0,
+      "variables": [
+        "Q_rho in R=0 slicing",
+        "rho*Q_theta in R=0 slicing"
+      ]
+    },
+    "strong_coupling_decision": {
+      "naive_scale_from_collapsing_eigenvalue": "REJECTED_AS_GAUGE_DEPENDENT",
+      "physical_scale_status": "NOT_YET_DERIVED",
+      "reason": "The collapsing eigenvector converges to the homogeneous time-translation orbit. Dividing cubic vertices by its vanishing quadratic norm would canonically normalize a gauge direction and can manufacture a spurious q-dependent strong-coupling scale."
+    },
+    "time_shift_orbit": {
+      "instantaneously_phase_normalized_direction": "(H, rho_dot, rho*mu)",
+      "interpretation": "This is the tangent to (ln a(t), rho(t), Theta(t)) under a homogeneous time translation.",
+      "raw_velocity_direction": "(H, rho_dot, mu)"
+    }
+  },
+  "scientific_boundary": "The q->0 rank loss has been identified as the homogeneous time-translation orbit, and the two gauge-invariant matter combinations have a positive regular q=0 kinetic block on the representative branch. This rejects a naive physical strong-coupling scale inferred solely from the vanishing eigenvalue. It does not prove nonlinear weak coupling. A The complete three-dimensional flat-decoupling cubic basis has subsequently been derived. A physical interaction scale still requires the constrained cosmological 2-to-2 amplitude.",
+  "stage": "B_SCALAR_LOW_Q_GAUGE_ORBIT",
+  "strong_coupling_scale_status": "NOT_YET_DERIVED",
+  "symbolic_result": {
+    "gauge_invariant_map": "Matrix([[-rho_dot/H, 1, 0], [-mu/H, 0, 1]])",
+    "physical_q0_determinant": "(3*D_123 - 2*M_cos_sq)*(2*V + mu**2*rho**2 + rho_dot**2)/(2*(3*D_123*V - 2*M_cos_sq*V - M_cos_sq*mu**2*rho**2 - M_cos_sq*rho_dot**2))",
+    "physical_q0_kinetic_matrix": "Matrix([[(D_123*V + D_123*rho_dot**2/2 - 2*H**2*M_cos_sq**2)/(D_123*V - 2*H**2*M_cos_sq**2), D_123*mu*rho*rho_dot/(2*(D_123*V - 2*H**2*M_cos_sq**2))], [D_123*mu*rho*rho_dot/(2*(D_123*V - 2*H**2*M_cos_sq**2)), (D_123*V + D_123*mu**2*rho**2/2 - 2*H**2*M_cos_sq**2)/(D_123*V - 2*H**2*M_cos_sq**2)]])",
+    "physical_q0_trace": "(12*D_123*V + 3*D_123*mu**2*rho**2 + 3*D_123*rho_dot**2 - 8*M_cos_sq*V - 4*M_cos_sq*mu**2*rho**2 - 4*M_cos_sq*rho_dot**2)/(2*(3*D_123*V - 2*M_cos_sq*V - M_cos_sq*mu**2*rho**2 - M_cos_sq*rho_dot**2))",
+    "positive_symbolic_domain": [
+      "M_cos_sq>0",
+      "D_123>0",
+      "2*M_cos_sq-3*D_123>0",
+      "-3*D_123*V+2*M_cos_sq*V+M_cos_sq*(rho_dot^2+rho^2*mu^2)>0"
+    ],
+    "q0_null_identity": "K_red(q=0)*(H,rho_dot,mu)^T=0 on the Friedmann background",
+    "q0_null_vector": "Matrix([[H], [rho_dot], [mu]])"
+  }
+}

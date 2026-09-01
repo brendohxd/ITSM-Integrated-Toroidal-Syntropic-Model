@@ -1,0 +1,44 @@
+{
+  "gate": "UVIR-001",
+  "validation_status": "PASS",
+  "candidate_verdict": "FAIL",
+  "candidate_verdict_scope": "The declared minimally kinetic single complex scalar with analytic mass, quartic, and sextic potential does not generate a leading spatial Y^(3/2) operator on its stable timelike finite-density branch.",
+  "broader_architecture_status": "OPEN",
+  "mat001_status": "BLOCKED_PENDING_ALTERNATIVE_UVIR_ROUTE",
+  "expressions": {
+    "potential_in_s": "lambda4*s**2/8 + m2*s/2 + lambda6*s**3/(24*Lambda**2)",
+    "background_equation": "Z - lambda4*s/2 - m2 - lambda6*s**2/(4*Lambda**2)",
+    "pressure_on_shell": "lambda4*s**2/8 + lambda6*s**3/(12*Lambda**2)",
+    "radial_curvature_squared": "lambda4*s + lambda6*s**2/Lambda**2",
+    "physical_gap_squared": "3*lambda4*s + 4*m2 + 2*lambda6*s**2/Lambda**2",
+    "P_Z": "s/2",
+    "P_ZZ": "Lambda**2/(Lambda**2*lambda4 + lambda6*s)",
+    "sound_speed_squared": "s*(Lambda**2*lambda4 + lambda6*s)/(3*Lambda**2*lambda4*s + 4*Lambda**2*m2 + 2*lambda6*s**2)",
+    "charge_density": "mu*s",
+    "charge_compressibility": "(4*Lambda**2*mu**2 + s*(Lambda**2*lambda4 + lambda6*s))/(Lambda**2*lambda4 + lambda6*s)",
+    "pure_sextic_rho_squared": "2*Lambda*sqrt(Z - m2)/sqrt(lambda6)",
+    "pure_sextic_pressure": "2*Lambda*(Z - m2)**(3/2)/(3*sqrt(lambda6))",
+    "pure_sextic_sound_speed_squared": "(Z - m2)/(2*Z - m2)",
+    "static_series": "-sqrt(Delta0)*Lambda*q**2/sqrt(lambda6) + Lambda*q**4/(4*sqrt(Delta0)*sqrt(lambda6))",
+    "high_density_quadratic": "Lambda*mu*(2*dt**2 - grad2)/sqrt(lambda6)",
+    "high_density_cubic": "Lambda*dt*(2*dt**2 - 3*grad2)/(3*sqrt(lambda6))",
+    "canonical_normalization_F_squared": "4*Lambda*mu/sqrt(lambda6)",
+    "cubic_strong_coupling_estimate": "2*sqrt(3)*Lambda**(1/4)*mu**(3/4)/lambda6**(1/8)",
+    "dispersion_omega_minus_squared": "(Lambda**2*(2*k2 + 3*lambda4*s + 4*m2) + 2*lambda6*s**2 - sqrt(4*Lambda**2*k2*(2*Lambda**2*(lambda4*s + 2*m2) + lambda6*s**2) + (Lambda**2*(3*lambda4*s + 4*m2) + 2*lambda6*s**2)**2))/(2*Lambda**2)",
+    "dispersion_omega_plus_squared": "(Lambda**2*(2*k2 + 3*lambda4*s + 4*m2) + 2*lambda6*s**2 + sqrt(4*Lambda**2*k2*(2*Lambda**2*(lambda4*s + 2*m2) + lambda6*s**2) + (Lambda**2*(3*lambda4*s + 4*m2) + 2*lambda6*s**2)**2))/(2*Lambda**2)"
+  },
+  "validation": {
+    "positive_condensate_branch": true,
+    "positive_radial_curvature": true,
+    "positive_physical_gap": true,
+    "positive_compressibility": true,
+    "subluminal_positive_sound_speed": true,
+    "static_power_is_quadratic": true,
+    "static_q2_coefficient_matches_PZ": true,
+    "symbolic_identities": true
+  },
+  "numerical_grid_rows": 9,
+  "outputs": {
+    "parameter_grid_csv": "uvir001_parameter_grid.csv"
+  }
+}

@@ -1,0 +1,137 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{9}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Birrell}\ and\ \citenamefont
+  {Davies}(1982)}]{birrell_davies_1982}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~D.}\ \bibnamefont
+  {Birrell}}\ and\ \bibinfo {author} {\bibfnamefont {P.~C.~W.}\ \bibnamefont
+  {Davies}},\ }\href {https://doi.org/10.1017/CBO9780511622632} {\emph
+  {\bibinfo {title} {Quantum Fields in Curved Space}}}\ (\bibinfo  {publisher}
+  {Cambridge University Press},\ \bibinfo {year} {1982})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lachi\`eze-Rey}\ and\ \citenamefont
+  {Luminet}(1995)}]{lachieze_luminet_1995}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Lachi\`eze-Rey}}\ and\ \bibinfo {author} {\bibfnamefont {J.-P.}\
+  \bibnamefont {Luminet}},\ }\bibfield  {title} {\bibinfo {title} {Cosmic
+  topology},\ }\href {https://doi.org/10.1016/0370-1573(94)00085-H} {\bibfield
+  {journal} {\bibinfo  {journal} {Physics Reports}\ }\textbf {\bibinfo {volume}
+  {254}},\ \bibinfo {pages} {135} (\bibinfo {year} {1995})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Edery}(2006)}]{edery2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Edery}},\ }\bibfield  {title} {\bibinfo {title} {Multidimensional cut-off
+  technique, odd-dimensional {E}pstein zeta functions and {C}asimir energy of
+  massless scalar fields},\ }\href {https://doi.org/10.1088/0305-4470/39/3/017}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Physics A:
+  Mathematical and General}\ }\textbf {\bibinfo {volume} {39}},\ \bibinfo
+  {pages} {685} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Boyd}(2026)}]{boyd_p1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Boyd}},\ }\bibfield  {title} {\bibinfo {title} {Present-epoch scale
+  matching, the weak-field invariant \(c_{\mathrm{obs}}\), and no-go results
+  for a cubic \(t^{3}\) geometric story},\ }\href@noop {} {\  (\bibinfo {year}
+  {2026})},\ \bibinfo {note} {companion reconstruction note; working draft
+  under papers/P1-Scale-Matching-Reconstruction/}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ellis}\ and\ \citenamefont
+  {MacCallum}(1969)}]{ellismaccallum1969}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~F.~R.}\
+  \bibnamefont {Ellis}}\ and\ \bibinfo {author} {\bibfnamefont {M.~A.~H.}\
+  \bibnamefont {MacCallum}},\ }\bibfield  {title} {\bibinfo {title} {A class of
+  homogeneous cosmological models},\ }\href
+  {https://doi.org/10.1007/BF01645908} {\bibfield  {journal} {\bibinfo
+  {journal} {Communications in Mathematical Physics}\ }\textbf {\bibinfo
+  {volume} {12}},\ \bibinfo {pages} {108} (\bibinfo {year} {1969})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Planck Collaboration}}(2016)}]{planck_topology}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Planck
+  Collaboration}}},\ }\bibfield  {title} {\bibinfo {title} {{Planck} 2015
+  results. {XVIII}. background geometry and topology of the {U}niverse},\
+  }\href {https://doi.org/10.1051/0004-6361/201525829} {\bibfield  {journal}
+  {\bibinfo  {journal} {Astronomy \& Astrophysics}\ }\textbf {\bibinfo {volume}
+  {594}},\ \bibinfo {pages} {A18} (\bibinfo {year} {2016})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Akrami}\ \emph {et~al.}(2024)\citenamefont {Akrami}
+  \emph {et~al.}}]{compact_promise}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Akrami}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {Promise of
+  future searches for cosmic topology},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.132.171501} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume}
+  {132}},\ \bibinfo {pages} {171501} (\bibinfo {year} {2024})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Planck Collaboration}}(2020)}]{planck}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Planck
+  Collaboration}}},\ }\bibfield  {title} {\bibinfo {title} {{Planck} 2018
+  results. {VI}. cosmological parameters},\ }\href
+  {https://doi.org/10.1051/0004-6361/201833910} {\bibfield  {journal} {\bibinfo
+   {journal} {Astronomy \& Astrophysics}\ }\textbf {\bibinfo {volume} {641}},\
+  \bibinfo {pages} {A6} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Riess}\ \emph {et~al.}(2022)\citenamefont {Riess}
+  \emph {et~al.}}]{riess2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont
+  {Riess}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {A
+  comprehensive measurement of the local value of the {H}ubble constant with
+  1~{k}m~{s}$^{-1}$~{M}pc$^{-1}$ uncertainty from the {H}ubble space telescope
+  and the {SH0ES} team},\ }\href {https://doi.org/10.3847/2041-8213/ac5c5b}
+  {\bibfield  {journal} {\bibinfo  {journal} {Astrophysical Journal Letters}\
+  }\textbf {\bibinfo {volume} {934}},\ \bibinfo {pages} {L7} (\bibinfo {year}
+  {2022})}\BibitemShut {NoStop}%
+\end{thebibliography}%

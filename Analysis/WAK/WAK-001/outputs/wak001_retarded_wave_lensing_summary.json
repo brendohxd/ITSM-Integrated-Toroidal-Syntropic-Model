@@ -1,0 +1,15 @@
+{
+  "gate": "WAK-001",
+  "description": "Prescribed 2D kinematic ballistic & retarded wave toy model",
+  "methodology": "Prescribed ram-pressure drag + 2D Fourier matrix exponential propagator",
+  "measured_results": {
+    "max_transit_offset_kpc": 6.25,
+    "transit_time_Myr": 10.0,
+    "late_time_offset_kpc": 18.75,
+    "late_time_Myr": 50.0
+  },
+  "epistemic_verdict": {
+    "status": "EXPLORATORY_KINEMATIC_SCAFFOLD",
+    "finding": "Measured transient offset is 6.25 kpc during transit and 18.75 kpc at t=50 Myr. This 2D ballistic toy demonstrates causal retardation, but 3D hydrodynamic shocks and non-linear screening remain open."
+  }
+}

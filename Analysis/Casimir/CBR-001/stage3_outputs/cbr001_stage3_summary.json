@@ -1,0 +1,257 @@
+{
+  "stage": "CBR-001 Stage 3A",
+  "status": "PASS",
+  "scope_statement": "Stage 3A does not test or establish the ITSM 13/12 ratio. It validates the cosmological backreaction engine required for that later test.",
+  "conventions": {
+    "H_bg": 1.0,
+    "kappa": 1.0,
+    "rho_bg": 3.0,
+    "source_prefactor": "hbar*c/L_*^4 absorbed into epsilon",
+    "independent_variable": "N=ln(a)"
+  },
+  "run_matrix": {
+    "r0": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "epsilon": [
+      0.0,
+      1e-08,
+      1e-06,
+      0.0001
+    ],
+    "N_max": 10.0,
+    "samples": 501
+  },
+  "runs": [
+    {
+      "r0": 0.5,
+      "epsilon": 0.0,
+      "final_r": 0.5,
+      "final_delta_over_H": 0.0,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 0.0,
+      "max_abs_delta_over_H": 0.0,
+      "max_abs_casimir_fraction": 0.0,
+      "max_constraint_residual": 0.0,
+      "max_continuity_residual": 1.8183480153022998e-16
+    },
+    {
+      "r0": 0.5,
+      "epsilon": 1e-08,
+      "final_r": 0.49999999949640345,
+      "final_delta_over_H": -6.474210265621029e-21,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 1.0071931072018338e-09,
+      "max_abs_delta_over_H": 1.274269061023545e-09,
+      "max_abs_casimir_fraction": 3.6640718535462977e-09,
+      "max_constraint_residual": 1.4802973715907913e-16,
+      "max_continuity_residual": 3.2970845998487755e-16
+    },
+    {
+      "r0": 0.5,
+      "epsilon": 1e-06,
+      "final_r": 0.4999999496403451,
+      "final_delta_over_H": -7.168701558421172e-20,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 1.0071931485347309e-07,
+      "max_abs_delta_over_H": 1.274269316490696e-07,
+      "max_abs_casimir_fraction": 3.664073182663611e-07,
+      "max_constraint_residual": 1.4802979085586636e-16,
+      "max_continuity_residual": 3.3646008738550723e-16
+    },
+    {
+      "r0": 0.5,
+      "epsilon": 0.0001,
+      "final_r": 0.4999949639741268,
+      "final_delta_over_H": -1.1298038065255892e-17,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 1.0072102469866354e-05,
+      "max_abs_delta_over_H": 1.2742933242060373e-05,
+      "max_abs_casimir_fraction": 3.6642060992647225e-05,
+      "max_constraint_residual": 1.4803474369146975e-16,
+      "max_continuity_residual": 3.74818518373512e-16
+    },
+    {
+      "r0": 1.0,
+      "epsilon": 0.0,
+      "final_r": 1.0,
+      "final_delta_over_H": 0.0,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 0.0,
+      "max_abs_delta_over_H": 0.0,
+      "max_abs_casimir_fraction": 0.0,
+      "max_constraint_residual": 0.0,
+      "max_continuity_residual": 1.4791937682551154e-16
+    },
+    {
+      "r0": 1.0,
+      "epsilon": 1e-08,
+      "final_r": 1.0,
+      "final_delta_over_H": 5.50660378707833e-19,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 3.33066907387547e-16,
+      "max_abs_delta_over_H": 1.1435012160729241e-15,
+      "max_abs_casimir_fraction": 2.7917863177664896e-09,
+      "max_constraint_residual": 1.4802973694177519e-16,
+      "max_continuity_residual": 2.588138081784489e-16
+    },
+    {
+      "r0": 1.0,
+      "epsilon": 1e-06,
+      "final_r": 1.0,
+      "final_delta_over_H": 2.2389765896383872e-18,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 4.440892098500627e-16,
+      "max_abs_delta_over_H": 1.5631436723396275e-15,
+      "max_abs_casimir_fraction": 2.791787089379716e-07,
+      "max_constraint_residual": 1.4802977794343827e-16,
+      "max_continuity_residual": 2.1446341858610156e-16
+    },
+    {
+      "r0": 1.0,
+      "epsilon": 0.0001,
+      "final_r": 1.0,
+      "final_delta_over_H": -4.543694533576164e-17,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 4.440892098500627e-16,
+      "max_abs_delta_over_H": 1.6044123952050014e-15,
+      "max_abs_casimir_fraction": 2.7918642528564225e-05,
+      "max_constraint_residual": 1.480335516538578e-16,
+      "max_continuity_residual": 2.740101925092947e-16
+    },
+    {
+      "r0": 2.0,
+      "epsilon": 0.0,
+      "final_r": 2.0,
+      "final_delta_over_H": 0.0,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 0.0,
+      "max_abs_delta_over_H": 0.0,
+      "max_abs_casimir_fraction": 0.0,
+      "max_constraint_residual": 0.0,
+      "max_continuity_residual": 1.4297180701300888e-16
+    },
+    {
+      "r0": 2.0,
+      "epsilon": 1e-08,
+      "final_r": 2.0000000041658854,
+      "final_delta_over_H": -3.4139438061212434e-19,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 2.082942705035113e-09,
+      "max_abs_delta_over_H": 2.6352740155697284e-09,
+      "max_abs_casimir_fraction": 4.223018881870377e-09,
+      "max_constraint_residual": 1.4802973719375745e-16,
+      "max_continuity_residual": 2.6409191836407324e-16
+    },
+    {
+      "r0": 2.0,
+      "epsilon": 1e-06,
+      "final_r": 2.0000004165887004,
+      "final_delta_over_H": 2.1051624611891867e-19,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 2.0829432851914723e-07,
+      "max_abs_delta_over_H": 2.635274669108484e-07,
+      "max_abs_casimir_fraction": 4.223020647426073e-07,
+      "max_constraint_residual": 1.4802979432370102e-16,
+      "max_continuity_residual": 3.0989494312350327e-16
+    },
+    {
+      "r0": 2.0,
+      "epsilon": 0.0001,
+      "final_r": 2.0000416604753735,
+      "final_delta_over_H": 2.3393718816511912e-17,
+      "final_H_t_over_H_p": 1.0,
+      "max_abs_log_shape_change": 2.0830020740342517e-05,
+      "max_abs_delta_over_H": 2.6353417191299993e-05,
+      "max_abs_casimir_fraction": 4.223197210451351e-05,
+      "max_constraint_residual": 1.480333075163723e-16,
+      "max_continuity_residual": 3.248956598952124e-16
+    }
+  ],
+  "validations": {
+    "source_interpolation": {
+      "rho_max_abs_error": 2.485172781252487e-05,
+      "rho_global_relative_error": 5.098663340484155e-06,
+      "p_p_global_relative_error": 6.245447971801237e-07,
+      "p_t_global_relative_error": 1.9747690409899258e-06,
+      "cube_delta_p": 9.43689570931383e-16,
+      "threshold": 0.0001,
+      "passed": true
+    },
+    "epsilon_zero": {
+      "max_abs_delta": 0.0,
+      "max_abs_r_minus_r0": 0.0,
+      "max_abs_H_minus_one": 0.0,
+      "passed": true
+    },
+    "isotropic_r0_one": {
+      "max_abs_delta": 1.6044123952050014e-15,
+      "max_abs_r_minus_one": 4.440892098500626e-16,
+      "max_abs_Ht_minus_Hp": 1.6653345369377348e-15,
+      "passed": true
+    },
+    "hamiltonian_constraint": {
+      "maximum_normalized_residual": 1.4803474369146975e-16,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    "casimir_continuity": {
+      "maximum_normalized_residual": 3.74818518373512e-16,
+      "threshold": 1e-07,
+      "passed": true
+    },
+    "small_epsilon_benchmark": {
+      "epsilon": 1e-08,
+      "cases": [
+        {
+          "r0": 0.5,
+          "epsilon": 1e-08,
+          "S": -1.208631571111175e-08,
+          "shear_relative_error": 1.812921153736657e-07,
+          "shape_relative_error": 2.204588454041165e-07
+        },
+        {
+          "r0": 2.0,
+          "epsilon": 1e-08,
+          "S": 2.4995312294078315e-08,
+          "shear_relative_error": 6.037349563846516e-08,
+          "shape_relative_error": 1.0660139818393858e-07
+        }
+      ],
+      "maximum_relative_error": 2.204588454041165e-07,
+      "passed": true
+    },
+    "tolerance_crosscheck": {
+      "epsilon": 0.0001,
+      "tight_rtol": 1e-13,
+      "tight_atol": 1e-18,
+      "cases": [
+        {
+          "r0": 0.5,
+          "epsilon": 0.0001,
+          "r_relative_difference": 2.220446049250313e-16,
+          "shear_relative_difference": 5.798502830886715e-11,
+          "hubble_ratio_deviation_relative_difference": 5.227520705903118e-11
+        },
+        {
+          "r0": 2.0,
+          "epsilon": 0.0001,
+          "r_relative_difference": 6.6611993933843e-16,
+          "shear_relative_difference": 2.259835142793845e-11,
+          "hubble_ratio_deviation_relative_difference": 2.527649855311061e-11
+        }
+      ],
+      "maximum_relative_difference": 5.798502830886715e-11,
+      "passed": true
+    }
+  },
+  "outputs": {
+    "csv": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3_outputs\\cbr001_stage3_runs.csv",
+    "summary": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3_outputs\\cbr001_stage3_summary.json",
+    "shape": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3_outputs\\cbr001_stage3_shape.png",
+    "shear": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3_outputs\\cbr001_stage3_shear.png",
+    "hubble_ratio": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3_outputs\\cbr001_stage3_hubble_ratio.png"
+  }
+}

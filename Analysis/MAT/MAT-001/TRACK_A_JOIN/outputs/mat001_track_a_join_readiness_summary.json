@@ -1,0 +1,249 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Numeric K_Q (or residue V) still required for numeric matching on the matter-only channel.",
+    "Treat free-force velocity-quadratic constraint sources as residuals outside pure static J2 B unless an extended projection identity is declared.",
+    "Assemble full g+U+Phi+alignment+psi J2 only under a declared multi-sector expansion.",
+    "Do not identify free-sector ADM with Track-A without a field map."
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "track_a_s_int_upstream",
+      "ok": true
+    },
+    {
+      "name": "kq_readiness_upstream",
+      "ok": true
+    },
+    {
+      "name": "conditional_branch_upstream",
+      "ok": true
+    },
+    {
+      "name": "track_a_force_upstream",
+      "ok": true
+    },
+    {
+      "name": "j2_template_upstream",
+      "ok": true
+    },
+    {
+      "name": "free_sector_upstream_distinct",
+      "ok": true
+    },
+    {
+      "name": "nonlinear_adm_upstream",
+      "ok": true
+    },
+    {
+      "name": "track_a_s_int_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "kq_readiness_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "conditional_branch_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_force_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "j2_template_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "free_sector_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "nonlinear_adm_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "matter_channel_static_form_ready",
+      "ok": true
+    },
+    {
+      "name": "free_force_not_pure_static_B",
+      "ok": true
+    },
+    {
+      "name": "full_multi_sector_not_ready",
+      "ok": true
+    },
+    {
+      "name": "free_sector_not_identified",
+      "ok": true
+    },
+    {
+      "name": "numeric_matching_still_blocked",
+      "ok": true
+    },
+    {
+      "flags": {
+        "claims_MAT_pass": false,
+        "claims_UVIR_pass": false,
+        "claims_downstream_Derived": false,
+        "computes_numeric_V": false,
+        "derives_numeric_K_Q": false,
+        "free_force_static_B_joined": false,
+        "free_sector_identified_with_Track_A": false,
+        "full_multi_sector_joined": false,
+        "matter_only_static_channel_form_complete": true,
+        "numeric_matching_ready": false,
+        "physics_pass": false,
+        "reopens_stage4A": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "claims_MAT_pass": false,
+    "claims_UVIR_pass": false,
+    "claims_downstream_Derived": false,
+    "computes_numeric_V": false,
+    "derives_numeric_K_Q": false,
+    "free_force_static_B_joined": false,
+    "free_sector_identified_with_Track_A": false,
+    "full_multi_sector_joined": false,
+    "matter_only_static_channel_form_complete": true,
+    "numeric_matching_ready": false,
+    "physics_pass": false,
+    "reopens_stage4A": false
+  },
+  "evidence": {
+    "conditional_branch": {
+      "parse_error": null,
+      "sha256": "A5B483D7DBB8BF56271A6B927E8F58FA4B1A1FC17FDF7D8CDE606EC7EEBBA6A8",
+      "source": "mat001_conditional_matching_branch_summary.json"
+    },
+    "free_sector": {
+      "parse_error": null,
+      "sha256": "33FCD3A4AB8F8531E611DFACDD91CCB7598CF9ADE49A8279A87B5EB954D4A469",
+      "source": "mat001_same_chart_quadratic_export_summary.json"
+    },
+    "j2_template": {
+      "parse_error": null,
+      "sha256": "5C385FDB10336AD727D1E9D16CAA68027599C2D157BE903E549748C0294CF865",
+      "source": "mat001_j2_basis_covariant_mode_projection_summary.json"
+    },
+    "kq_readiness": {
+      "parse_error": null,
+      "sha256": "29924D74880A5030489B011DC15A100E56C3E652742F4C4EB6AAA8DD5C4818C7",
+      "source": "mat001_track_a_kq_readiness_summary.json"
+    },
+    "nonlinear_adm": {
+      "parse_error": null,
+      "sha256": "AC847B68752473101AECE2B3C9DD1B1A33D075C1DE0143A16684AE5ACE89A1B8",
+      "source": "uvir003_nonlinear_adm_action_provenance_summary.json"
+    },
+    "track_a_force": {
+      "parse_error": null,
+      "sha256": "6A829A1CC05BF0B4B7F4F6044689580D740E4A6AD24857C85A9A474DF3A10A62",
+      "source": "uvir003_track_a_force_adm_cubic_summary.json"
+    },
+    "track_a_s_int": {
+      "parse_error": null,
+      "sha256": "B7FA92BEEA85A8606F1F452BE5C4E02D7139AC8174203549A78D5E1DF1C419EB",
+      "source": "mat001_track_a_s_int_embed_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "inadmissible_substitutions": {
+    "free_force_pi_dot_squared_J2_as_static_B": "REJECTED_CONVENTION_MISMATCH",
+    "free_sector_as_Track_A_host": "REJECTED_CHART_MISMATCH",
+    "matter_only_form_as_numeric_V": "REJECTED_NOT_COMPUTED",
+    "partial_join_as_MAT_pass": "REJECTED"
+  },
+  "interface": "TRACK_A_MATTER_FREE_FORCE_JOIN",
+  "join_inventory": {
+    "free_force_constraint_channel": {
+      "Y_three_halves_J2_at_zero_gradient": "0",
+      "beta_J2": "a*K_Q*partial_i(pi_dot*partial_i(pi))",
+      "lapse_J2_physical": "-K_Q*pi_dot^2/2-gamma*(lap_physical(pi))^2/(2*M_star^2)",
+      "static_linear_B_isolated": false,
+      "status": "FREE_FORCE_J2_OUTSIDE_PURE_STATIC_B",
+      "structure": "Constraint sources are quadratic in pi velocities/gradients (e.g. pi_dot^2, partial(pi_dot partial pi)), not a static linear B^T x block of the J2 template alone.",
+      "velocity_quadratic_residual": true
+    },
+    "free_sector_adm": {
+      "identified_with_Track_A": false,
+      "live_action_export_status": "PARTIAL_FREE_SECTOR_SAME_CHART_MATTER_SOURCES_ABSENT",
+      "status": "DISTINCT_CHART_NOT_JOINED"
+    },
+    "full_multi_sector_join": {
+      "assembled_g_U_Phi_alignment_psi_J2": "NOT_YET_ASSEMBLED",
+      "full_J2_status_field": "HOLD_FORCE_SECTOR_NONLINEAR_COMPLETION_REQUIRED",
+      "nonlinear_full_g_U_Phi_psi_J2": "BLOCKED_ON_FORCE_COVARIANT_COMPLETION_AND_NONANALYTIC_RULE",
+      "status": "FULL_MULTI_SECTOR_JOIN_NOT_READY"
+    },
+    "j2_template_lagrangian": "1/2 xdot^T K xdot - 1/2 x^T A x - x^T B z - 1/2 z^T C z + rho(d^T x + h^T z)",
+    "join_decision": {
+      "free_force_static_B_join": "NOT_READY_VELOCITY_QUADRATIC_RESIDUAL",
+      "free_sector_join": "NOT_DECLARED_DISTINCT_CHART",
+      "full_g_U_Phi_join": "NOT_READY",
+      "ready_for_numeric_live_matching": false,
+      "reason": "Matter d,h define a static J2 source channel with h=0 and c_eff=d on the Track-A host. Free-force constraint sources are velocity-quadratic residuals outside pure static B. Full multi-sector J2 is not assembled. Numeric K_Q remains open.",
+      "selected_operational_channel": "MATTER_ONLY_STATIC_ON_TRACK_A_HOST"
+    },
+    "matter_channel": {
+      "c_eff_matter_only": [
+        "-C_m"
+      ],
+      "channel": "S_int = -C_m rho_b psi on Track-A host",
+      "compatible_with_static_J2_source_sector": true,
+      "d": [
+        "-C_m"
+      ],
+      "h": [
+        "0",
+        "0"
+      ],
+      "linear_in_external_rho_b": true,
+      "status": "MATTER_CHANNEL_READY_FORM",
+      "x": [
+        "pi"
+      ],
+      "z": [
+        "delta_N",
+        "beta"
+      ]
+    },
+    "matter_only_static_projection": {
+      "J2_effective_source": "c_eff = d - B C^{-1} h",
+      "free_force_velocity_J2_included": false,
+      "g_can_form": "Abs(c_eff)/sqrt(K) = C_m/sqrt(K_Q) on single-field host",
+      "requires_numeric_K_Q_for_numeric_V": true,
+      "status": "MATTER_ONLY_STATIC_CHANNEL_FORM_COMPLETE",
+      "with_h_zero": "c_eff = d",
+      "with_no_static_linear_B_from_matter": "c_eff = (-C_m)"
+    }
+  },
+  "join_status": "PARTIAL_MATTER_CHANNEL_ONLY",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 20,
+  "numeric_matching_status": "BLOCKED_NUMERIC_K_Q_AND_FULL_JOIN",
+  "physics_pass": false,
+  "scientific_boundary": "A PASS classifies the Track-A join: matter-channel d,h form a static J2 source sector with c_eff=d when h=0, while free-force constraint J2 is velocity-quadratic and outside pure static B, and full multi-sector J2 is not assembled. It does not compute V or authorize MAT/UVIR physics PASS.",
+  "selected_operational_channel": "MATTER_ONLY_STATIC_ON_TRACK_A_HOST",
+  "serial_next": "Operate on the matter-only static Track-A channel for Conditional probes; keep free-force residuals explicit; continue numeric K_Q or residue work for Derived V; retain Stage 4A closed.",
+  "stage": "TRACK_A_JOIN_READINESS",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_TRACK_A_JOIN_READINESS_PARTIAL_MATTER_CHANNEL_ONLY",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

@@ -1,0 +1,64 @@
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.synctex(busy)
+*.synctex
+*.blg
+*.fls
+*.fdb_latexmk
+
+# Python
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+itsm_env/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.idea/
+.vscode/
+
+# ITSM Security & Large Datasets
+NANOGrav_data/
+DESI_data/
+*.zip
+Analysis/Experimental/CLASS_Sim/build/
+.agents/
+temp_chi2.py
+.local_build_notes.md
+scripts/local_env_sync.py
+*.cachebin
+ITSM_Computational_Engines_v10.0.0.zip
+ORIGINAL_REQUEST.md
+PROJECT.md
+zenodo_secrets.json
+
+# Local tool-generated mirror copies; originals remain authoritative.
+# Files are retained on disk and are not deleted by this rule.
+*-ITSM-Cosmologist.*
+*-ITSM-Cosmologist
+
+# Ark Vault & Endgame Applications
+Endgame_Applications/
+*.arkvault
+ark_vault.arkvault
+ark_vault.py
+sync_version.py
+
+# Local historical research archive (contains restricted/private material)
+/Theory/History/
+/.codex-remote-attachments/
+
+# Local non-physics/private archives
+/papers/Al-Jabr-Reunification/
+/papers/The-Anachronistic-Archive/
+/THEOLOGICAL_SYNTHESIS.md
+/Scripts/Archive/rebuild_itsm_tex.py

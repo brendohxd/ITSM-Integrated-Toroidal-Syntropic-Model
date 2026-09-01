@@ -1,0 +1,111 @@
+{
+  "checks": [
+    {
+      "name": "density_auxiliary_stationary",
+      "ok": true
+    },
+    {
+      "name": "density_portal_effective_pressure",
+      "ok": true
+    },
+    {
+      "name": "phase_shift_invariance",
+      "ok": true
+    },
+    {
+      "name": "shift_symmetry_forbids_direct_static_pi_rho_source",
+      "ok": true
+    },
+    {
+      "name": "density_portal_generates_derivative_rho_pi_dot_vertex",
+      "ok": true
+    },
+    {
+      "name": "dilaton_chart_residue_invariant",
+      "ok": true
+    },
+    {
+      "name": "dilaton_candidate_residue_is_one_over_f",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "changes_mode_count": false,
+    "claims_MAT_pass": false,
+    "closes_R5": false,
+    "computes_numeric_V": false,
+    "derives_ITSM_K_Q": false,
+    "reopens_stage4A": false,
+    "validates_dilaton_parent": false
+  },
+  "density_portal": {
+    "decision": "REJECT_AS_STANDALONE_STATIC_FORCE_MATCHING_ROUTE",
+    "direct_static_pi_rho_source": "0",
+    "effective_pressure": "2*(X_0 - eta*rho - pi_dot)**(3/2)/(3*sqrt(lambda))",
+    "linear_density_source_at_background": "-sqrt(X_0)*eta/sqrt(lambda)",
+    "parent_lagrangian": "n*X - lambda*n^3/3 - eta*n*rho_b",
+    "phase_shift_residual": "0",
+    "positive_branch_n": "sqrt(X_0 - eta*rho - pi_dot)/sqrt(lambda)",
+    "reason": "A U(1)-preserving density portal depends on the phase through derivatives. It can generate a rho_b*pi_dot vertex but no direct static rho_b*pi source.",
+    "rho_pi_dot_vertex": "eta/(2*sqrt(X_0)*sqrt(lambda))"
+  },
+  "dilaton_compensator": {
+    "decision": "ADVANCE_TO_BOUNDED_PARENT_ACTION_FORK",
+    "psi_equals_sigma_over_f_chart": {
+      "C_m": "1",
+      "K_Q": "f**2",
+      "V": "1/f"
+    },
+    "sigma_chart": {
+      "C_m": "1/f",
+      "K_Q": "1",
+      "V": "1/f"
+    },
+    "unresolved": [
+      "finite-density phonon-dilaton mode count and kinetic mixing",
+      "signed residue of the physical eigenmode after constraint reduction",
+      "ghost, gradient and strong-coupling domains",
+      "screening, post-Newtonian and lensing constraints"
+    ]
+  },
+  "external_primary_anchors": [
+    {
+      "doi": "10.1103/PhysRevD.92.103510",
+      "role": "superfluid dark matter parent proposal; matter coupling introduced phenomenologically"
+    },
+    {
+      "doi": "10.1088/1475-7516/2018/09/021",
+      "role": "relativistic completion discussion; unusual soft U(1)-breaking baryon coupling remains an assumption"
+    },
+    {
+      "doi": "10.1007/JHEP09(2022)066",
+      "role": "radial-mode integration and relativistic superfluid EFT matching methodology"
+    },
+    {
+      "doi": "10.48550/arXiv.2108.07275",
+      "role": "microscopic impurity/probe coupling matching methodology"
+    },
+    {
+      "doi": "10.1103/PhysRevD.102.076011",
+      "role": "finite-density phonon-dilaton mixing and Ward-identity constraints"
+    },
+    {
+      "doi": "10.1007/JHEP10(2020)044",
+      "role": "conformal-compensator matter coupling through a dilaton scale"
+    }
+  ],
+  "global_status": {
+    "K_Q": "NOT_DERIVED",
+    "MAT-001": "BLOCKED",
+    "Stage4A": "CLOSED",
+    "V": "NOT_COMPUTED"
+  },
+  "recommended_route_order": [
+    "Prove the minimal shift-symmetric portal static-source obstruction in the declared ITSM chart.",
+    "Construct a scale-compensator plus finite-density parent action with one declared decay scale f.",
+    "Reduce the full scalar constraint system and project the signed matter residue onto the physical mode.",
+    "Reject the fork unless stability, cutoff and local-gravity constraints close in the same parameter domain."
+  ],
+  "scope": "RESEARCH_CANDIDATE_ALGEBRA_ONLY",
+  "status": "PASS_MAT001_R5_PATHWAY_ALGEBRA_RESEARCH_ONLY"
+}

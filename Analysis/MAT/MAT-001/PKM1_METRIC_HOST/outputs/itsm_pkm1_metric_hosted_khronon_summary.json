@@ -1,0 +1,146 @@
+{
+  "A0_identity": "PASS_CANDIDATE_CONDENSATE_PHASE_DEFINES_PREFERRED_FOLIATION",
+  "A1_action": "PARTIAL_COVARIANT_IR_ACTION_MICROSCOPIC_ORIGIN_OF_J_AND_K_OPEN",
+  "A2_symmetry_DOF": "HOLD_FULL_CONDENSATE_AMPLITUDE_KHRONON_METRIC_CONSTRAINT_COUNT_REQUIRED",
+  "A3_static_limit": "PASS_CONDITIONAL_METRIC_HOSTED_MODIFIED_POISSON_REDUCTION_EXACT_AQUAL_ONLY_FOR_STATIC_K_NULL_OR_LOCAL_LIMIT",
+  "A4_stability": "HOLD_ZERO_GRADIENT_DEGENERACY_IR_JEANS_AND_STRONG_COUPLING_REVIEW_REQUIRED",
+  "A5_A6": "NOT_RUN",
+  "audit": "PKM1_METRIC_HOSTED_CONDENSATE_KHRONON_BROAD_ROUTE",
+  "calculation_status": "PASS_BOUNDED_SYMBOLIC_ROUTE_SCREEN",
+  "candidate_action": {
+    "IR_action": "S=(M_P^2/2) integral sqrt(-g)[R-2 J(Y)+2 K(Q)] + S_m[Psi_m,g]",
+    "acceleration_invariant": "a_mu=U^nu nabla_nu U_mu; Y=a_mu a^mu",
+    "condensate_phase_map": "U_mu=-nabla_mu Theta/sqrt(-nabla_Theta^2); Q=sqrt(-nabla_Theta^2)/mu_Theta",
+    "explicit_control_J": "a0**2*(log(y + 1) - log(y**2 + 1)/2 - atan(y))",
+    "explicit_control_mu": "y*(y**2 + y + 1)/((y + 1)*(y**2 + 1))",
+    "matter_host": "single metric g_mu_nu; no direct psi*T vertex"
+  },
+  "checks": [
+    {
+      "name": "baseline_requires_new_force_host",
+      "ok": true
+    },
+    {
+      "name": "identity_contains_phase_and_frame_inputs",
+      "ok": true
+    },
+    {
+      "J_Y": "-1/(y**3 + y**2 + y + 1)",
+      "J_y": "a0**2*(log(y + 1) - log(y**2 + 1)/2 - atan(y))",
+      "mu_y": "y*(y**2 + y + 1)/((y + 1)*(y**2 + 1))",
+      "name": "explicit_interpolating_function_identity",
+      "ok": true
+    },
+    {
+      "J_series": "-a0**2*y**2 + 2*a0**2*y**3/3 - a0**2*y**6/3 + O(y**7)",
+      "name": "deep_acceleration_limit_exact",
+      "ok": true,
+      "required_form": "J=-Y+(2/(3*a0))*Y^(3/2)+O(Y^3/a0^4)"
+    },
+    {
+      "J_infinity": "-pi*a0**2/2",
+      "mu_infinity": "1",
+      "name": "high_acceleration_GR_limit",
+      "ok": true
+    },
+    {
+      "name": "static_ellipticity_for_positive_gradient",
+      "ok": true,
+      "radial_eigenvalue": "y*(y**5 + 2*y**4 + 3*y**3 + 6*y**2 + 4*y + 2)/((y + 1)**2*(y**2 + 1)**2)",
+      "transverse_eigenvalue": "y*(y**2 + y + 1)/((y + 1)*(y**2 + 1))",
+      "zero_gradient": "DEGENERATE_AS_EXPECTED_FOR_DEEP_P3_BRANCH"
+    },
+    {
+      "euler_lagrange_gradient_factor": "q*(a0**2 + a0*q + q**2)/(a0**3 + a0**2*q + a0*q**2 + q**3)",
+      "exact_AQUAL_subcase": "K_QQ(1)=0, or a declared local regime in which m_K^2*Phi_N is negligible",
+      "field_equation": "div[mu(|grad Phi_N|/a0) grad Phi_N]+m_K^2*Phi_N=4*pi*G*rho_b, with m_K^2=K_QQ(1)/2",
+      "independent_C_m_present": false,
+      "independent_K_Q_residue_needed": false,
+      "name": "minimal_metric_source_normalization_and_variation",
+      "ok": true,
+      "source_prefactor": "4*pi*G",
+      "static_mass_prefactor": "K_QQ_at_1/2",
+      "weak_field_action": "L=-M_P^2[Y+J(Y)]+(M_P^2/2)*K_QQ(1)*Phi_N^2-rho_b*Phi_N"
+    },
+    {
+      "a0_status": "INPUT_SCALE_NOT_DERIVED",
+      "coefficient_status": "FIXED_TO_ONE_BY_MINIMAL_METRIC_SOURCE_NORMALIZATION",
+      "domain": "exact K_QQ(1)=0 subcase or local regime with negligible m_K^2*Phi_N",
+      "name": "deep_spherical_scaling",
+      "ok": true,
+      "result": "g=sqrt(a0*g_N)"
+    },
+    {
+      "canonical_residue": "g_sigma*kappa/sqrt(Z_psi + Z_sigma*kappa**2)",
+      "name": "helical_portal_control_remains_underdetermined",
+      "ok": true,
+      "protected_heavy_coordinate": "sigma-kappa*psi",
+      "symmetry_breaking": "g_sigma*sigma*T breaks the joint shift unless the matter sector transforms"
+    },
+    {
+      "dimensions": {
+        "J": 2,
+        "K": 2,
+        "M_P": 1,
+        "R": 2,
+        "Theta": 0,
+        "U": 0,
+        "Y=a^2": 2,
+        "a0": 1,
+        "a_mu": 1,
+        "rho": 1
+      },
+      "name": "mass_dimensions_close",
+      "ok": true
+    }
+  ],
+  "external_primary_precedent": [
+    {
+      "citation": "Blanchet and Marsat, Phys. Rev. D 84, 044056 (2011)",
+      "url": "https://arxiv.org/abs/1107.5264",
+      "use": "metric-hosted preferred-foliation MOND precedent"
+    },
+    {
+      "citation": "Blanchet and Skordis, JCAP 11 (2024) 040",
+      "url": "https://arxiv.org/abs/2404.06584",
+      "use": "covariant J(Y)+K(Q) action, weak-field limit and published stability caveats"
+    },
+    {
+      "citation": "Flanagan, Astrophys. J. 958, 107 (2023)",
+      "url": "https://arxiv.org/abs/2302.14846",
+      "use": "nonrelativistic consistency and symmetric-background perturbation precedent"
+    }
+  ],
+  "gate_firewall": {
+    "K_Q": "NOT_DERIVED_IN_LIVE_ROUTE",
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "V": "NOT_COMPUTED_IN_LIVE_ROUTE",
+    "downstream_opened": false,
+    "physics_pass": false
+  },
+  "input_sha256": {
+    "core_architecture": "332489B09476A4403E8BBEBE81B3FF329A114005DAA1CF39E8B4738F95B9AC8A",
+    "force_hosting": "288F5633AF2851E9292BF591A26C21ED9203BB1CF0611C0C78AE834324E761B0",
+    "m2": "92BE47CD6F4DCFB4072A700DB47F4EB7E48B2D3925666966A27CEA18B382DE91",
+    "tier1_programme": "F2F5077D35C4AAD97C0BDC6C82F694CB69FCEE3CAB6F84B9FCB964567854D850",
+    "u2": "3E2C97ABF8091858DCD108A7E3D41C243D268D38B1C1E6A179F3B460CD78C4A2"
+  },
+  "resolved_bottleneck": "SEPARATE_DIRECT_MATTER_RESIDUE_BYPASSED_AT_IR_ACTION_LEVEL_BY_UNIVERSAL_MINIMAL_METRIC_COUPLING",
+  "route_disposition": "SELECT_PKM1_FOR_A2_A6_DERIVATION_NOT_GATE_PROMOTION",
+  "route_results": {
+    "PKM1_metric_hosted_condensate_khronon": "SURVIVES_A0_A1_STATIC_HOSTING_SCREEN",
+    "helical_symmetry_locked_scalar_portal": "REJECT_FREE_RESIDUE_AND_SYMMETRY_BREAKING_SPURION",
+    "minimal_healthy_universal_vector_force_control": "REJECT_AS_DIRECT_ATTRACTIVE_FORCE_CONTROL_BECAUSE_EQUAL_SIGN_CHARGES_REPEL; DOES_NOT_EXCLUDE_GENERAL_VECTOR_TENSOR_GRAVITY",
+    "minimal_radial_M2": "REJECTED_PREVIOUSLY"
+  },
+  "scientific_boundary": "PKM1 is a new controlled IR action class. The displayed J was deliberately constructed from a target interpolating function, so the weak-field calculation is an existence and normalization check, not an ITSM derivation of J or MOND. A generic K(Q) adds a static Helmholtz term; exact AQUAL requires K_QQ(1)=0 or a declared local regime where that term is negligible. Minimal metric coupling bypasses the separate matter-residue parameter within this candidate action. The audit does not derive J, K or a0 microscopically, complete the coupled DOF/stability analysis, or modify any live gate status.",
+  "unresolved_burdens": [
+    "derive J(Y) and its scale a0 from a finite-density condensate parent rather than selecting a MOND asymptotic",
+    "derive K(Q) from the same complex-condensate amplitude/phase action without double counting",
+    "perform the full ADM/Hamiltonian DOF count including rho, Theta and metric",
+    "control the Y=0 degeneracy, IR Jeans sector and physical strong-coupling scale",
+    "prove the smooth-phase map across winding sectors and specify defect-core completion",
+    "derive PPN, lensing and cosmology inside the ITSM action rather than inheriting another theory's results"
+  ]
+}

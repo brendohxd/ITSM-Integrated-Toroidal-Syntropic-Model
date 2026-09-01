@@ -1,0 +1,365 @@
+{
+  "calculation_status": "PASS",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "gauge_and_scope": {
+    "force_background": "psi_bar=constant; the quadratic z=2 force mode remains factorized",
+    "gauge": "aether-unitary scalar gauge with U^mu equal to the ADM unit normal",
+    "metric": "N=1+delta_N, N_i=partial_i beta, h_ij=a^2 exp(2R) delta_ij",
+    "retained": "all quadratic q_phys^4, q_phys^2 and q_phys^0 terms in the declared two-derivative metric-aether-condensate sector, plus full evolving-background coefficient derivatives"
+  },
+  "low_q_status": "HOLD_KINETIC_RANK_LOSS_AT_Q_TO_ZERO",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "expand the scalar action to cubic order in the low-q eigenbasis and canonically normalize the collapsing mode",
+    "determine whether the inferred interaction scale stays above H and the physical momenta used by the EFT",
+    "derive the matter/reservoir perturbation response before testing phenomenology",
+    "complete vector and tensor Hamiltonians and return to the multicone causal-domain audit"
+  ],
+  "reduction_status": "PASS_FINITE_Q_CONSTRAINT_ELIMINATION",
+  "representative_branch": {
+    "alignment_scope": "zeta_align enters only the phase-gradient stiffness in this background. The constraint matrix, kinetic inertia and q->0 rank result are independent of the diagnostic numeric choice.",
+    "finite_q_kinetic_inertia": {
+      "inertia_at_every_scanned_q_gt_0": "3_POSITIVE_0_NEGATIVE",
+      "minimum_constraint_singular_value": 0.05011479985706854,
+      "negative_eigenvalue_count": 0,
+      "numerical_zero_count": 0
+    },
+    "local_equation_generator": {
+      "included_background_derivatives": [
+        "H_dot",
+        "rho_dot",
+        "rho_ddot",
+        "mu_dot",
+        "q_phys_dot=-H*q_phys for fixed comoving k"
+      ],
+      "interpretation": "These instantaneous first-order eigenvalues retain the time derivatives of the reduced coefficients. Their real parts are basis- and background-normalization-dependent and are recorded as diagnostics, not as invariant instability rates.",
+      "maximum_directional_derivative_relative_error": 3.4744338110216137e-09,
+      "samples": [
+        {
+          "directional_derivative_relative_error": 4.961504249271083e-10,
+          "maximum_abs_imag_lambda_over_H": 1414.2708373403245,
+          "maximum_real_lambda_over_H": 1.9713887018220728e-05,
+          "q_over_H": 1000.0,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 2.8346328486865874e-10,
+          "maximum_abs_imag_lambda_over_H": 141.97386500620036,
+          "maximum_real_lambda_over_H": 0.001949097133711563,
+          "q_over_H": 100.0,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 1.6319555563975123e-09,
+          "maximum_abs_imag_lambda_over_H": 16.45403226705961,
+          "maximum_real_lambda_over_H": 0.04996687607027796,
+          "q_over_H": 10.0,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 1.4148091918079868e-10,
+          "maximum_abs_imag_lambda_over_H": 25.116570963055178,
+          "maximum_real_lambda_over_H": 0.7208329876771956,
+          "q_over_H": 1.0,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 6.603154458165653e-10,
+          "maximum_abs_imag_lambda_over_H": 265.4419893559921,
+          "maximum_real_lambda_over_H": 0.8102993711401607,
+          "q_over_H": 0.1,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 2.2571289108387183e-10,
+          "maximum_abs_imag_lambda_over_H": 2655.838455171606,
+          "maximum_real_lambda_over_H": 0.8112686037225159,
+          "q_over_H": 0.01,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 6.030088635609434e-10,
+          "maximum_abs_imag_lambda_over_H": 26558.52636830349,
+          "maximum_real_lambda_over_H": 0.8112783042789259,
+          "q_over_H": 0.001,
+          "t": 0.0
+        },
+        {
+          "directional_derivative_relative_error": 5.281049655743104e-10,
+          "maximum_abs_imag_lambda_over_H": 1144.5123124901645,
+          "maximum_real_lambda_over_H": 5.189616126110729,
+          "q_over_H": 1000.0,
+          "t": 2.0
+        },
+        {
+          "directional_derivative_relative_error": 9.910267115003071e-11,
+          "maximum_abs_imag_lambda_over_H": 113.35292396241579,
+          "maximum_real_lambda_over_H": 4.1297170862844474,
+          "q_over_H": 100.0,
+          "t": 2.0
+        },
+        {
+          "directional_derivative_relative_error": 3.4744338110216137e-09,
+          "maximum_abs_imag_lambda_over_H": 13.977487433014195,
+          "maximum_real_lambda_over_H": 4.443854042153174,
+          "q_over_H": 10.0,
+          "t": 2.0
+        },
+        {
+          "directional_derivative_relative_error": 4.655271824461361e-10,
+          "maximum_abs_imag_lambda_over_H": 16.930278781850376,
+          "maximum_real_lambda_over_H": 6.166931015603875,
+          "q_over_H": 1.0,
+          "t": 2.0
+        },
+        {
+          "directional_derivative_relative_error": 7.05385856732108e-10,
+          "maximum_abs_imag_lambda_over_H": 208.0201839633053,
+          "maximum_real_lambda_over_H": 6.543757297940023,
+          "q_over_H": 0.1,
+          "t": 2.0
+        },
+        {
+          "directional_derivative_relative_error": 5.825079548145547e-10,
+          "maximum_abs_imag_lambda_over_H": 2083.7025487834853,
+          "maximum_real_lambda_over_H": 6.546004717718243,
+          "q_over_H": 0.01,
+          "t": 2.0
+        },
+        {
+          "directional_derivative_relative_error": 5.28870823463665e-10,
+          "maximum_abs_imag_lambda_over_H": 20849.968357586615,
+          "maximum_real_lambda_over_H": 6.54602707822238,
+          "q_over_H": 0.001,
+          "t": 2.0
+        },
+        {
+          "directional_derivative_relative_error": 2.9484279312203578e-09,
+          "maximum_abs_imag_lambda_over_H": 1144.5870779464926,
+          "maximum_real_lambda_over_H": 0.6672405014337051,
+          "q_over_H": 1000.0,
+          "t": 4.0
+        },
+        {
+          "directional_derivative_relative_error": 3.33069463336305e-10,
+          "maximum_abs_imag_lambda_over_H": 114.01947606897231,
+          "maximum_real_lambda_over_H": 0.5019147848921505,
+          "q_over_H": 100.0,
+          "t": 4.0
+        },
+        {
+          "directional_derivative_relative_error": 7.083299689204305e-10,
+          "maximum_abs_imag_lambda_over_H": 15.146509367545814,
+          "maximum_real_lambda_over_H": 3.86044461500869,
+          "q_over_H": 10.0,
+          "t": 4.0
+        },
+        {
+          "directional_derivative_relative_error": 1.7392148229096967e-10,
+          "maximum_abs_imag_lambda_over_H": 36.26026585297717,
+          "maximum_real_lambda_over_H": 21.35817819848075,
+          "q_over_H": 1.0,
+          "t": 4.0
+        },
+        {
+          "directional_derivative_relative_error": 1.9919197647527595e-10,
+          "maximum_abs_imag_lambda_over_H": 321.3254367279524,
+          "maximum_real_lambda_over_H": 29.55706001321041,
+          "q_over_H": 0.1,
+          "t": 4.0
+        },
+        {
+          "directional_derivative_relative_error": 3.803566041894426e-10,
+          "maximum_abs_imag_lambda_over_H": 3203.9170554633447,
+          "maximum_real_lambda_over_H": 29.79633234647691,
+          "q_over_H": 0.01,
+          "t": 4.0
+        },
+        {
+          "directional_derivative_relative_error": 3.801044547906847e-10,
+          "maximum_abs_imag_lambda_over_H": 32089.42269507454,
+          "maximum_real_lambda_over_H": 29.798786948275662,
+          "q_over_H": 0.001,
+          "t": 4.0
+        },
+        {
+          "directional_derivative_relative_error": 2.3191491551814303e-09,
+          "maximum_abs_imag_lambda_over_H": 1144.5015242965867,
+          "maximum_real_lambda_over_H": -0.0043086403192338606,
+          "q_over_H": 1000.0,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 1.8449082611558378e-09,
+          "maximum_abs_imag_lambda_over_H": 119.54679046310254,
+          "maximum_real_lambda_over_H": -0.34333343275558437,
+          "q_over_H": 100.0,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 6.364266513143686e-10,
+          "maximum_abs_imag_lambda_over_H": 38.60845952241907,
+          "maximum_real_lambda_over_H": 12.425179889997194,
+          "q_over_H": 10.0,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 4.702571345893199e-10,
+          "maximum_abs_imag_lambda_over_H": 41.96990038282819,
+          "maximum_real_lambda_over_H": 45.19000773197577,
+          "q_over_H": 1.0,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 1.8949773516159398e-10,
+          "maximum_abs_imag_lambda_over_H": 4.425772213898226,
+          "maximum_real_lambda_over_H": 416.80759187393767,
+          "q_over_H": 0.1,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 2.8222970302111297e-10,
+          "maximum_abs_imag_lambda_over_H": 4.433468023049487,
+          "maximum_real_lambda_over_H": 3971.631811816389,
+          "q_over_H": 0.01,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 2.8587238788882194e-10,
+          "maximum_abs_imag_lambda_over_H": 4.433544621994976,
+          "maximum_real_lambda_over_H": 39668.87867218274,
+          "q_over_H": 0.001,
+          "t": 6.0
+        },
+        {
+          "directional_derivative_relative_error": 1.5194224569298024e-09,
+          "maximum_abs_imag_lambda_over_H": 1144.53858694291,
+          "maximum_real_lambda_over_H": 7.672101347940071,
+          "q_over_H": 1000.0,
+          "t": 8.0
+        },
+        {
+          "directional_derivative_relative_error": 2.9066504975226617e-09,
+          "maximum_abs_imag_lambda_over_H": 113.60156396254439,
+          "maximum_real_lambda_over_H": 5.90978644369058,
+          "q_over_H": 100.0,
+          "t": 8.0
+        },
+        {
+          "directional_derivative_relative_error": 2.1221992362905618e-09,
+          "maximum_abs_imag_lambda_over_H": 20.83647620892771,
+          "maximum_real_lambda_over_H": 9.230547966634079,
+          "q_over_H": 10.0,
+          "t": 8.0
+        },
+        {
+          "directional_derivative_relative_error": 2.874302333709105e-10,
+          "maximum_abs_imag_lambda_over_H": 20.761732081161234,
+          "maximum_real_lambda_over_H": 30.3715377683415,
+          "q_over_H": 1.0,
+          "t": 8.0
+        },
+        {
+          "directional_derivative_relative_error": 3.145590746423335e-10,
+          "maximum_abs_imag_lambda_over_H": 0.0,
+          "maximum_real_lambda_over_H": 276.75870783620246,
+          "q_over_H": 0.1,
+          "t": 8.0
+        },
+        {
+          "directional_derivative_relative_error": 2.9937020871337606e-10,
+          "maximum_abs_imag_lambda_over_H": 0.0,
+          "maximum_real_lambda_over_H": 2647.2504791069246,
+          "q_over_H": 0.01,
+          "t": 8.0
+        },
+        {
+          "directional_derivative_relative_error": 2.904918683285216e-10,
+          "maximum_abs_imag_lambda_over_H": 0.0,
+          "maximum_real_lambda_over_H": 26497.088910823564,
+          "q_over_H": 0.001,
+          "t": 8.0
+        }
+      ]
+    },
+    "low_q_limit": {
+      "fitted_log_intercept": -5.128715892603663,
+      "fitted_smallest_eigenvalue_power": 2.0006627081229285,
+      "interpretation": "The reduced kinetic matrix is positive for every scanned q_phys>0 but loses one rank as q_phys approaches zero. Because Sigma=q_phys^2 beta is not an independent exactly homogeneous perturbation, the strict q=0 endpoint is not classified as a ghost. Cubic normalization is required to decide whether the approach signals strong coupling.",
+      "strict_q0_samples": [
+        {
+          "constraint_determinant": -1.5977777777777777,
+          "kinetic_rank_tolerance_1e_9": 2,
+          "normalized_kinetic_eigenvalues": [
+            2.498001805406602e-16,
+            0.9999999999999999,
+            4.116687130563282
+          ],
+          "t": 0.0
+        },
+        {
+          "constraint_determinant": -0.024232229581133923,
+          "kinetic_rank_tolerance_1e_9": 2,
+          "normalized_kinetic_eigenvalues": [
+            -1.1942127842168304e-10,
+            1.0000000000000002,
+            3.975530820556509
+          ],
+          "t": 8.0
+        }
+      ],
+      "symbolic_kinetic_determinant_power": "q_phys^2"
+    },
+    "parameter_scope": "Dimensionless existence example only; not a physical aether, alignment or cosmological parameter point.",
+    "parameters": {
+      "C_14": 0.037500000000000006,
+      "D_123": 0.05,
+      "Lambda": 2.0,
+      "M_P_sq": 1.0,
+      "M_cos_sq": 1.0375,
+      "lambda4": 0.5,
+      "lambda6": 0.2,
+      "m_squared": 1.0,
+      "zeta_align": 1.0
+    },
+    "scan_domain": {
+      "q_over_H_maximum": 1000.0,
+      "q_over_H_minimum": 0.001,
+      "q_over_H_samples": 61,
+      "total_finite_q_matrix_samples": 48861,
+      "trajectory_samples": 801
+    }
+  },
+  "scientific_boundary": "The finite-q algebra and representative kinetic-inertia scan are verified. The q->0 rank loss is a hold point, not a ghost claim: the exactly homogeneous momentum constraint has different gauge content, and the cubic action is required to measure the canonical interaction scale. Matter coupling, reservoir response, vector/tensor completion and physical parameter selection remain open.",
+  "stage": "B_SCALAR_ADM_FINITE_Q_TIME_DEPENDENT",
+  "symbolic_reduction": {
+    "constraint_matrix": "Matrix([[C_14*q_phys**2 - lambda4*rho**4/4 - m_squared*rho**2 - lambda6*rho**6/(12*Lambda**2), 2*H*M_cos_sq], [2*H*M_cos_sq, -D_123]])",
+    "constraint_solution": "z=-C_constraint^{-1}*source; full symbolic matrix verified",
+    "constraint_source": "Matrix([[6*H*M_cos_sq*R_dot + 2*M_P_sq*R*q_phys**2 - delta_rho*(lambda4*rho**3/2 + m_squared*rho + mu**2*rho + lambda6*rho**5/(4*Lambda**2)) - delta_rho_dot*rho_dot - mu*rho**2*vartheta_dot], [-2*M_cos_sq*R_dot - delta_rho*rho_dot - mu*rho**2*vartheta]])",
+    "force_block": "K_Q*pi_dot^2/2-gamma*q_phys^4*pi^2/(2*M_star^2)",
+    "high_q_curvature_velocity_hessian": "-2*M_cos_sq*(3*D_123 - 2*M_cos_sq)/D_123",
+    "independent_quadratic_adm_reconstruction": "VERIFIED_ON_SHELL_AGAINST_UNSIMPLIFIED_MODE_EXPANSION",
+    "kinetic_determinant_on_shell": "-24*C_14*Lambda**2*M_cos_sq*q_phys**2*rho**2*(3*D_123 - 2*M_cos_sq)/(12*C_14*D_123*Lambda**2*q_phys**2 - 3*D_123*Lambda**2*lambda4*rho**4 - 12*D_123*Lambda**2*m_squared*rho**2 - D_123*lambda6*rho**6 + 48*H**2*Lambda**2*M_cos_sq**2)",
+    "potential": "lambda4*rho**4/8 + m_squared*rho**2/2 + lambda6*rho**6/(24*Lambda**2)",
+    "potential_prime": "lambda4*rho**3/2 + m_squared*rho + lambda6*rho**5/(4*Lambda**2)",
+    "potential_second": "3*lambda4*rho**2/2 + m_squared + 5*lambda6*rho**4/(4*Lambda**2)",
+    "reduced_lagrangian": "L_reduced=L_unconstrained-source^T*C_constraint^{-1}*source/2",
+    "variables": {
+      "constraints": [
+        "delta_N",
+        "Sigma=q_phys^2*beta"
+      ],
+      "dynamical": [
+        "R",
+        "delta_rho",
+        "vartheta"
+      ],
+      "velocities": [
+        "R_dot",
+        "delta_rho_dot",
+        "vartheta_dot"
+      ]
+    }
+  }
+}

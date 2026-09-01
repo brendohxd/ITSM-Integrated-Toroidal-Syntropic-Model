@@ -1,0 +1,282 @@
+> [!CAUTION]
+> **QUARANTINED DUPLICATE DASHBOARD (G0, 2026-08-25).** Preserved for provenance only. It is not an authority surface and contains false STAT/MCMC and alpha.13 promotions. Use `active_research.md` exclusively.
+
+## Gate Status Dashboard — 2026-08-07 (v12.0-alpha.13)
+STAT-001: COMPLETE \| Fully-floated Bayesian MCMC inference (chi2=7.38)
+MAT-001: BLOCKED \| R5 proves declared action underdetermines V (R5-P1 Scale-Compensator active)
+UVIR-003: IN_PROGRESS \| Blocked by MAT-001
+VOR-001: PASS_SCAFFOLD \| S1 completed (smooth-winding template)
+### Next Critical Path
+1. MAT-001: Actually derive matching for C_m and K_Q (or solve R5 HOLD).
+---
+## Gate Status Dashboard — 2026-08-07
+MAT-001: BLOCKED \| V: NOT_COMPUTED \| K_Q: NOT_DERIVED \| Stage 4A: CLOSED
+UVIR-003: IN_PROGRESS \| Manuscript: v12.0-alpha.13 (frozen)
+### All gate statuses
+<table header-row="true">
+<tr>
+<td>Gate</td>
+<td>Status</td>
+<td>Notes</td>
+</tr>
+<tr>
+<td>UVIR-001</td>
+<td>CLOSED NEGATIVE</td>
+<td>Born-Infeld does not derive square-root law</td>
+</tr>
+<tr>
+<td>UVIR-002</td>
+<td>CLOSED PROVISIONAL</td>
+<td>Y\^(3/2) local EFT identified as candidate</td>
+</tr>
+<tr>
+<td>UVIR-003</td>
+<td>IN_PROGRESS</td>
+<td>Physical-basis propagators → exchange → amplitude → unitarity</td>
+</tr>
+<tr>
+<td>MAT-001</td>
+<td>BLOCKED</td>
+<td>V=C_m/√K_Q NOT_COMPUTED — R5 proves action underdetermines V</td>
+</tr>
+<tr>
+<td>MAT-001 R1</td>
+<td>COMPLETE</td>
+<td>ADM-to-J2 convention corrected</td>
+</tr>
+<tr>
+<td>MAT-001 R2</td>
+<td>COMPLETE</td>
+<td>Source-provenance audit de-circularised</td>
+</tr>
+<tr>
+<td>MAT-001 R3</td>
+<td>COMPLETE</td>
+<td>Covariant conformal matter action declared</td>
+</tr>
+<tr>
+<td>MAT-001 R4</td>
+<td>COMPLETE</td>
+<td>Signed residue contract enforced</td>
+</tr>
+<tr>
+<td>MAT-001 R5</td>
+<td>HOLD</td>
+<td>HOLD_DECLARED_ACTION_UNDERDETERMINES_V</td>
+</tr>
+<tr>
+<td>R5-P1</td>
+<td>OPEN</td>
+<td>Scale-compensator fork — research candidate only</td>
+</tr>
+<tr>
+<td>TOP-001</td>
+<td>OPEN SCAFFOLD</td>
+<td>Physical moduli dynamics scaffold</td>
+</tr>
+<tr>
+<td>VOR-001 S0</td>
+<td>COMPLETE</td>
+<td>Vocabulary audit, DOF tables</td>
+</tr>
+<tr>
+<td>VOR-001 S0.4</td>
+<td>COMPLETE</td>
+<td>2D winding template PASS</td>
+</tr>
+<tr>
+<td>VOR-001 S1</td>
+<td>COMPLETE</td>
+<td>3D finite-density smooth-winding energy audit PASS</td>
+</tr>
+<tr>
+<td>VOR-001 S2</td>
+<td>IN_PROGRESS</td>
+<td>Winding-sector energy from declared condensate action</td>
+</tr>
+<tr>
+<td>WAK-001</td>
+<td>OPEN SCAFFOLD</td>
+<td>C2 mode-projected Green function</td>
+</tr>
+<tr>
+<td>RES-001</td>
+<td>OPEN SCAFFOLD</td>
+<td>R0 null control + R1 minimal route</td>
+</tr>
+<tr>
+<td>DISK-001</td>
+<td>NOT_STARTED</td>
+<td>Blocked on MAT-001 PASS</td>
+</tr>
+<tr>
+<td>STAT-001</td>
+<td>COMPLETE</td>
+<td>Bayesian MCMC Fully-Floated (chi2=7.38)</td>
+</tr>
+<tr>
+<td>SCR-001</td>
+<td>NOT_STARTED</td>
+<td>Screening gate</td>
+</tr>
+<tr>
+<td>LEN-001</td>
+<td>NOT_STARTED</td>
+<td>Lensing gate</td>
+</tr>
+<tr>
+<td>CBR-001</td>
+<td>COMPLETE</td>
+<td>Causality boundary recorded</td>
+</tr>
+<tr>
+<td>CBR-002</td>
+<td>OPEN</td>
+<td>Hyperbolic completion — causal repair needed</td>
+</tr>
+</table>
+### R5-P1 open tasks (next critical path step)
+1. \[ \] Exact ADM static-source obstruction (re-derive absence of static ρ_b·π source)
+2. \[ \] Covariant compensator + finite-density parent action (one scale f, no MOND target import)
+3. \[ \] Symmetry-breaking and physical-DOF ledger
+4. \[ \] Background equations and constrained scalar reduction
+5. \[ \] Signed matter-to-physical-mode residue (project AFTER diagonalisation)
+6. \[ \] Stability and cutoff/strong-coupling domain
+7. \[ \] Screening, PPN, lensing and GW tests
+Guardrail: no pre-projection V=1/f claim, no imported target coefficient. MAT-001 stays BLOCKED, Stage 4A stays CLOSED.
+### UVIR-003 next ordered tasks
+1. \[ \] Derive local adiabatic quadratic propagators in physical basis
+2. \[ \] Evaluate nonzero-channel exchange from cubic kernel
+3. \[ \] Evaluate exact projected q=0 centre-of-mass channel
+4. \[ \] Combine exchange + reduced-contact into physical 2→2 amplitude
+5. \[ \] Declare and apply unitarity criterion AFTER full amplitude exists
+Stop conditions: no naive q→0 substitution; no Taylor kernel for exact \|grad pi\|\^3 op; no unitarity bound before amplitude.
+---
+## 7 August 2026 — Active MAT R5-P1 research fork
+- [x] Prove independent C_m and K_Q underdetermine V.
+- [x] Verify field-chart invariance and arbitrary signed-V families.
+- [x] Reject normalization/phenomenological shortcuts as Derived matching.
+- [x] Remove H1 provenance cycle.
+- [x] Verify 22-output cone, mutations, checksums, determinism.
+- [x] Search primary literature and test density-portal/compensator algebra.
+R5-P1 open tasks:
+1. \[ \] Exact ADM static-source obstruction.
+2. \[ \] Covariant compensator plus finite-density parent.
+3. \[ \] Symmetry, breaking and physical-DOF ledger.
+4. \[ \] Background and constrained scalar reduction.
+5. \[ \] Signed matter-to-physical-mode residue.
+6. \[ \] Stability and cutoff/strong-coupling domain.
+7. \[ \] Screening, PPN, lensing and gravitational-wave tests.
+Guardrail: no pre-projection 1/f match and no imported target coefficient. Keep MAT-001 blocked and Stage 4A closed.
+---
+## 29 July 2026 — Active UVIR-003 calculation
+**Completed in the current recovery checkpoint**
+- [x] Complete generic `L3[X,Z1]` cubic functional.
+- [x] Factorized finite-q physical cubic momentum kernel.
+- [x] Analytic quartic contact kernel.
+- [x] Complete physical pair-source kernel and the `(12|34)`, `(13|24)`, `(14|23)` Schur pairings.
+- [x] Exact algebraic q=0 gauge-projector prescription.
+**Current ordered task**
+1. Derive local adiabatic quadratic propagators in the physical basis.
+2. Evaluate nonzero-channel exchange from the cubic kernel.
+3. Evaluate the exact projected q=0 centre-of-mass channel.
+4. Combine exchange and reduced-contact contributions into the physical `2→2` amplitude.
+5. Declare and apply a unitarity criterion only after the full amplitude exists.
+**Stop conditions / claim guardrails**
+- Do not obtain the exact q=0 channel by naive finite-q substitution.
+- Do not assign a zero-gradient Taylor kernel to the exact `|grad pi|^3` operator.
+- Do not claim a unitarity bound, strong-coupling scale or physical cutoff before the physical amplitude is derived.
+- Keep UVIR-003 `IN_PROGRESS` and MAT-001 `BLOCKED` until these gates close.
+**Code checkpoints:** `4a76fee`, `1a5a01c`; branch `recovery/v12-core-architecture`.
+---
+## 16 July 2026 — Weak-Field Gate Consolidation
+The original Priority 1 decision has now advanced beyond a binary derive/falsify attempt.
+**Current result:**
+- The present Born–Infeld action does **not** derive the square-root galactic law.
+- A local low-acceleration infrared EFT proportional to `|grad psi|^3` / `Y^(3/2)` does derive `g_P = C sqrt(a0 g_N)` in the quasi-static high-symmetry limit.
+- A finite-density complex condensate with an effective sextic / three-body interaction is a plausible microscopic route to that `X^(3/2)` phonon action, but the UV-to-IR matching and coefficient normalization are not yet derived.
+- On periodic `T^3`, the source must be a compensated overdensity with the zero mode treated separately; an isolated asymptotically-flat source is only a local approximation.
+- The open-system current must be split into local matter–plenum exchange and cosmological reservoir/syntropic exchange.
+- The immediate computational test is a periodic `p=3` nonlinear disk solver, followed by SPARC reruns using field solutions rather than the algebraic spherical approximation.
+**Canonical detail:** [Weak-Field Coupling — Current Gate & Compute Plan](https://app.notion.com/p/39f36fb4bd1d81b29084c6535e9bf451)
+**Revised decision:** pursue the layered EFT and numerical route while retaining the current rotation law as a closure until disk, screening, lensing and relativistic gates pass.
+> **Purpose:** The full detail on ITSM's genuinely open research questions — pulled out of the Project Hub into its own dedicated page given the scope of what's involved. Check the \[❌ Rejected & Superseded Work Register\] before attempting any of these — several approaches have already been tried and ruled out.
+---
+## 🔴 PRIORITY 1 — Weak-Field Closure Decision ($`C_{\text{proj}}=2/3`$)
+**The question:** can $`g_{tot}=g_{bar}+C\sqrt{g_{bar}a_0}`$ — and specifically $`C=2/3`$ — be derived from the matter–plenum action, rather than inserted as a closure assumption?
+**Why this is the top priority:** five independent findings converge on this as the manuscript's real point of structural exposure — the unresolved transverse-projector gap, the GPE simulation's honest \~15% ceiling (vs. needed 67%), AQUAL ($`\alpha=1`$) beating ITSM's own coefficient on raw fit, the 4/9-vs-1 BTFR undershoot, and a confirmed-empty literature search across four adjacent fields.
+**The task:**
+1. Build the minimal static matter–plenum action: $`S=S_{EH}+S_\Phi+S_m+S_{int}[g_{\mu\nu},\Phi,\rho_b]`$
+2. Specify the simplest covariant baryon–plenum interaction consistent with symmetries and conservation laws
+3. Vary with respect to $`g_{\mu\nu}`$, $`\Phi`$, and matter variables
+4. Take the static, spherically symmetric, weak-field limit
+5. Derive the modified Poisson equation
+6. Solve its deep-acceleration asymptotic behavior
+7. Determine whether the response naturally gives $`g_\Phi=C\sqrt{g_{bar}a_0}`$, and what fixes $`C`$
+8. Check conservation, dimensions, stability, Solar-System recovery, BTFR normalization
+**The calculation must be allowed to return **$`C=1`$**, **$`C=2/3`$**, a scale-dependent **$`C(r)`$**, or no square-root law at all — the answer cannot be decided in advance.**
+**Decision gate:**
+<table header-row="true">
+<tr>
+<td>Result</td>
+<td>Consequence</td>
+</tr>
+<tr>
+<td>$`C=2/3`$ genuinely derived</td>
+<td>Keep present ITSM law; explain BTFR renormalization rigorously</td>
+</tr>
+<tr>
+<td>$`C=1`$ derived</td>
+<td>Adopt empirically correct normalization; retire the 2/3 claim</td>
+</tr>
+<tr>
+<td>$`C=C(X)`$ or $`C(r)`$</td>
+<td>Derive the interpolation; rerun SPARC/BTFR</td>
+</tr>
+<tr>
+<td>Square-root law emerges, coefficient undetermined</td>
+<td>Present explicitly as an EFT parameter/closure</td>
+</tr>
+<tr>
+<td>Law does not emerge at all</td>
+<td>Remove the galaxy sector from the fundamental derivation; publish separately as phenomenology</td>
+</tr>
+</table>
+**Operating rule:** three separate confident theoretical "derivations" of this exact coefficient already failed under verification (see Rejected Register #1–3). Whatever this produces needs the same step-by-step numerical verification that caught those three — do not accept a plausible-looking result on formalism alone.
+### 14 July 2026 action-to-closure result
+**Outcome:** the present manuscript action does not derive the algebraic square-root law as written. Its low-X expansion has a linear leading operator, and the field-equation action contains no explicit baryonic source/coupling that fixes scalar charge as a function of baryonic mass. Therefore the current galactic law remains a phenomenological closure.
+**Minimal repair candidate:** a non-relativistic auxiliary potential psi with gradient term \|grad psi\|\^3/(12 pi G C\^2 a0) and universal matter coupling yields div(\|grad psi\| grad psi)=4 pi G C\^2 a0 rho_b. For an isolated spherical source this gives g_psi=C sqrt(g_N a0) exactly.
+**Limits:** this operator is absent from the present Born–Infeld action; its coefficient is not fixed by a 2D/3D trace alone; and the algebraic relation is not exact for disk geometry because the nonlinear field can contain geometry/curl corrections. A real action-based SPARC test must solve the nonlinear field equation for disk mass maps.
+**Decision now narrowed to three honest paths:** (A) retain and label the law as phenomenology; (B) develop the cubic-gradient EFT, covariant matter/lensing coupling and disk PDE solver; or (C) supply another explicit source-to-force derivation. No manuscript promotion is authorised from this audit.
+---
+## 🔴 PRIORITY 1B — Characteristic Speed and Causal Completion
+**Confirmed blocker (14 July 2026):** the current microcausality repair fails its own formula. For the quoted c_s\^2=1.11, the proposed group velocity is already 1.054c at k=0; near k/Lambda=0.99 its magnitude is about 7.17c and diverges as the cutoff is approached. The later quadratic-action check also drops its own c_s\^2 factor and does not use the derivative of the full Lagrangian.
+**Required outcome:** either (A) construct a subluminal hyperbolic operator and rederive phenomenology, (B) define and prove a consistent preferred-frame causal structure including matter/photon coupling, or (C) derive a dispersive UV completion from an explicit action and verify every pole plus group/front velocity. A cutoff, Hamiltonian positivity or a signed negative group velocity is not a causality proof.
+**Immediate wording gate:** remove/hold all claims that the acoustic cone is nested, microcausality is resolved, commutators vanish outside the metric light cone, or CTCs are forbidden by Hamiltonian positivity.
+---
+## 🔴 PRIORITY 1C — Mass-to-Light / IMF Boundary Interpretation
+**Confirmed blocker (14 July 2026):** the displayed Jeans bridge is dimensionally and algebraically invalid. a0/G is a surface density, not a volume density; the claimed ratio is not dimensionless; and adding a positive density to the Jeans denominator makes the Jeans length smaller, not larger. The chain from optimizer boundary to Upsilon about 0.01 is not a stellar-population derivation.
+**Required outcome:** treat low-Upsilon boundary hits as unresolved optimization/model/data diagnostics. Perform deterministic prior/bound sensitivity, dust/inclination controls and a real stellar-population forward model before assigning physical meaning. JWST spectral features are candidate observations, not a clean falsifier until metallicity, age, dust and selection effects are modeled.
+---
+## 🔴 PRIORITY 1D — SPARC Hierarchical H0 Inference
+**Confirmed blocker (14 July 2026):** none of the three saved Stage-2 values is a cosmic H0 measurement. The raw-sample result overcounts posterior draws; the Gaussian approximation is inadequate for broad non-Gaussian chains; and the importance-sampling result mu_H0=55.110 \[55.027, 55.292\] is pinned to its imposed lower hyperprior mu_H0\>55. The Stage-1 chains are nearly flat, and boundary-clipped galaxies were down-weighted by an ad-hoc factor of 0.1.
+**Interpretation gate:** H0 enters the galaxy model only through the assumed relation a0=cH0/(2pi), so the fit is an acceleration-normalization diagnostic conditioned on that hypothesis. The likelihood contains no sky coordinates or torus orientation and therefore cannot turn population scatter into a toroidal-anisotropy prediction.
+**Required outcome:** use a point-level joint likelihood; declare one global acceleration scale or derive an angular anisotropy field; replace quality weights with a generative selection/outlier model; run prior-bound expansion, simulation calibration and held-out tests; and show likelihood identification before any H0 claim.
+---
+## 🔴 PRIORITY 1E — SPARC Goodness-of-Fit / Claimed p=0.62
+**Confirmed provenance failure (14 July 2026):** the cited `itsm_bootstrapped_rar.py` does not calculate a chi-square for each of its 5,000 realizations, does not construct a null distribution, and does not calculate any p-value. It pools every mock point into acceleration bins solely to draw percentile envelopes. No executable source for the manuscript's "62% exceed chi2_nu=8.57" statement has been found.
+**Additional method mismatches:** distance and inclination factors are sampled independently for every radial point rather than once per galaxy; exceptions are silently suppressed; no random seed or run metadata is saved; the mock uses nominal mass-to-light ratios while the reported empirical statistic uses optimized nuisances; and visual containment in pooled pointwise envelopes is not a dataset-level goodness-of-fit test.
+**Immediate claim gate:** p=0.62, "all residual excess is observational noise," "statistically perfect fit," and "proves the scatter is entirely accounted for" are unsupported and must be removed/held.
+**Required outcome:** define one discrepancy statistic before simulation; generate full mock datasets with galaxy-level correlated distance/inclination nuisances and a declared covariance/error model; apply the identical fitting and selection pipeline to observed and mock datasets; save one statistic per realization; compute a finite-sample posterior-predictive or parametric-bootstrap tail probability; include alternate discrepancy statistics, outlier sensitivity, calibration/injection tests, seeds, hashes and independent reproduction.
+---
+## 🟡 PRIORITY 2 — Obstacle-Geometry GPE Scan (secondary support for Priority 1, not a substitute)
+**Status:** partially run. Smooth wide Gaussian obstacle tested (peak \~15% transverse, resolution-checked). Sharp/point-like obstacle regime untested — needs N\>300 or a rescaled box at current parameters to properly resolve.
+**Important:** even a positive result here (sharp obstacle → 2/3 transverse energy) would NOT by itself derive the gravitational response coefficient from the covariant action — it would support one candidate microscopic mechanism, not replace Priority 1's direct derivation.
+---
+## 🟡 PRIORITY 3 — Full Casimir Derivation (13/12 ratio)
+**Confirmed blocker (14 July 2026):** the current calculation does not derive 13/12. A flat equal-modulus T3 has three equivalent S1 directions, not an invariant one-poloidal/two-toroidal stress split. The one-dimensional value zeta(-1) is dimensionless and cannot be used as Delta rho/rho without the dimensional renormalized stress tensor and its denominator. The extra factor of two is unsupported, and isotropic delta H/H = (1/2) delta rho/rho does not replace the directional Einstein/shear equations.
+**Scale problem:** for one conventional massless field at L=c/H0, hbar c/L\^4 is approximately 1.2e-121 of the critical energy density. Producing an 8% background effect therefore needs an explicit new energy scale, enormous multiplicity, or modified coupling; none exists in the current zero-parameter chain.
+**Required outcome:** specify field content, compactification moduli, boundary conditions and vacuum; calculate the scheme-independent renormalized stress tensor; solve an anisotropic cosmology; and test a single sky-axis forward model against isotropic controls. Negro et al. 2026 ([arXiv:2603.12319](https://arxiv.org/abs/2603.12319)) is a real methodological reference and explicitly finds scale suppression during expansion; it does not supply ITSM's 13/12 amplitude.
+**Allowed claim:** topology-dependent Casimir stress is a plausible research mechanism. The value 13/12 and the claimed Hubble-tension resolution are open, not derived.
+---
+*Do not attempt Priority 1 and Priority 3 simultaneously — each deserves full, unhurried attention. Updated 13 July 2026.*

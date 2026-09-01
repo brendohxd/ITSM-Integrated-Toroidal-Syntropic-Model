@@ -1,0 +1,87 @@
+{
+  "background": {
+    "U_bar": "(1,0,0,0)",
+    "metric_bar": "Minkowski",
+    "psi_bar": "constant"
+  },
+  "dependency_result": {
+    "MAT_001_matching_role": "Fix the physical normalization and select a point in that domain through matter or microscopic matching.",
+    "UVIR_003_structural_role": "Determine a stable parameter domain in field-rescaling invariants; a numeric K_Q is not required for this structural task."
+  },
+  "field_rescaling": {
+    "K_Q_alone_identifiable": false,
+    "definition": "psi_c = s * psi, s > 0",
+    "invariants": {
+      "A_over_K_Q_3_over_2": "A/K_Q**(3/2)",
+      "A_q_over_K_Q": "A*q/K_Q",
+      "C_m_over_sqrt_K_Q": "C_m/sqrt(K_Q)",
+      "gamma_over_K_Q": "gamma/K_Q"
+    },
+    "matching_requirement": "Fix the physical force-field normalization through a parent microscopic matching calculation or the matter vertex; then match redefinition-invariant coefficient combinations.",
+    "transformed_coefficients": {
+      "A": "A/s**3",
+      "C_m": "C_m/s",
+      "K_Q": "K_Q/s**2",
+      "gamma": "gamma/s**2",
+      "q": "q*s"
+    }
+  },
+  "full_UVIR_003_gate": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "healthy_samples": [
+    {
+      "hamiltonian_hessian_eigenvalues": [
+        0.5,
+        1.2e-05
+      ],
+      "k": 0.1,
+      "omega_squared": 6.000000000000001e-06
+    },
+    {
+      "hamiltonian_hessian_eigenvalues": [
+        0.5,
+        0.12
+      ],
+      "k": 1.0,
+      "omega_squared": 0.06
+    },
+    {
+      "hamiltonian_hessian_eigenvalues": [
+        0.5,
+        1200.0
+      ],
+      "k": 10.0,
+      "omega_squared": 600.0
+    }
+  ],
+  "quadratic_factorization": {
+    "Q_squared_coefficient": "pi_t**2",
+    "Y_3_over_2_perturbative_order": 3,
+    "Y_coefficient": "pi_x**2 + pi_y**2 + pi_z**2",
+    "mixing_with_metric_aether_condensate": "ABSENT_AT_QUADRATIC_ORDER_IN_DECLARED_TRUNCATION",
+    "projected_laplacian_squared_coefficient": "lap_pi**2",
+    "zero_gradient_cubic_hessian": "Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]])"
+  },
+  "reduced_force_block": {
+    "canonical_momentum": "K_Q*pi_dot",
+    "dispersion_omega_squared": "gamma*k**4/(K_Q*M_star**2)",
+    "dynamical_scaling": "z=2",
+    "hamiltonian": "gamma*lap_pi**2/(2*M_star**2) + p_pi**2/(2*K_Q)",
+    "lagrangian": "K_Q*pi_dot**2/2 - gamma*lap_pi**2/(2*M_star**2)",
+    "positive_domain": [
+      "K_Q > 0",
+      "gamma > 0",
+      "M_star^2 > 0"
+    ],
+    "propagating_degrees_of_freedom": 1
+  },
+  "scope_limits": [
+    "Does not reduce the remaining metric-aether-condensate block.",
+    "Does not cover a nonzero force-gradient background.",
+    "Assumes no additional quadratic mixing operators beyond the declared Stage-A truncation.",
+    "Does not supply a covariant completion of Delta_U.",
+    "Does not establish the physical EFT cutoff or radiative naturalness."
+  ],
+  "stage": "B_ZERO_GRADIENT_FORCE_BLOCK",
+  "status": "PARTIAL_PASS_ZERO_GRADIENT_FORCE_BLOCK_ONLY"
+}

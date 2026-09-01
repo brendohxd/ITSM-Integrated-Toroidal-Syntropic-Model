@@ -1,0 +1,26 @@
+{
+  "gate": "MAT-001",
+  "stage": "R5-P1 Artifact 1",
+  "status": "PASS_PARENT_ACTION_DECLARED",
+  "physics_pass": false,
+  "claims": "None Derived",
+  "fields": {
+    "sigma": "Dilaton field (mass dim 1)",
+    "f": "Dilaton decay scale (mass dim 1)",
+    "psi": "Dimensionless dilaton (sigma/f)",
+    "Phi": "Complex condensate field (mass dim 1)",
+    "A_psi": "exp(C_m * (sigma/f - psi_star))"
+  },
+  "lagrangian": {
+    "L_dilaton": "X_sigma",
+    "L_cond": "P(X_Theta)",
+    "L_coupling": "-rho**2*V(sigma)/2",
+    "L_m": "-rho_b*exp(C_m*(-psi_star + sigma/f))",
+    "L_total": "X_sigma - rho**2*V(sigma)/2 - rho_b*exp(C_m*(-psi_star + sigma/f)) + P(X_Theta)"
+  },
+  "firewall_checks": {
+    "no_banned_MOND_terms": true,
+    "f_and_C_m_independent": true
+  },
+  "conclusion": "The covariant scale-compensator parent action is formally declared. It introduces a physical scale f and a matter coupling C_m independently, without importing any phenomenological MOND constants. This satisfies the R5-P1 Step 2 requirement."
+}

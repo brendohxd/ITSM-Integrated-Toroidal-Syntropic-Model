@@ -1,0 +1,98 @@
+{
+  "gate": "DISK-001 / STAT-001",
+  "description": "Multi-tier SPARC rotation curve benchmark and representative MCMC pipeline",
+  "dataset_summary": {
+    "total_galaxies": 175,
+    "total_data_points": 3391
+  },
+  "multi_tier_benchmarks": {
+    "tier1_rigid_unfloated": {
+      "global_chi2_nu": 47.19717657685862,
+      "median_chi2_nu": 10.512466111578687
+    },
+    "tier2_floated_optimizer": {
+      "global_chi2_nu": 11.077299119590585,
+      "median_chi2_nu": 3.4282912322269823
+    },
+    "tier3_low_variance_sample": {
+      "n_galaxies": 115,
+      "global_chi2_nu": 13.887117852451986,
+      "median_chi2_nu": 7.991239642120825
+    },
+    "tier4_error_floor_5kms": {
+      "global_chi2_nu": 8.788938716800835,
+      "median_chi2_nu": 3.1366436595040668
+    }
+  },
+  "mcmc_sampling_representative": {
+    "NGC6503": {
+      "best_upsilon_disk": 0.4852712486112032,
+      "std_upsilon_disk": 0.004786902958214379,
+      "best_upsilon_bulge": 1.364148805241258,
+      "std_upsilon_bulge": 0.669580234973388,
+      "chi2_mcmc": 92.59171086178988,
+      "chi2_nu_mcmc": 3.192817615923789,
+      "gelman_rubin_R_hat": [
+        1.0081016453941352,
+        2.625415277476584
+      ],
+      "mcmc_converged": false
+    },
+    "DDO154": {
+      "best_upsilon_disk": 0.05373909575297644,
+      "std_upsilon_disk": 0.004534298239467084,
+      "best_upsilon_bulge": 0.4515352911000478,
+      "std_upsilon_bulge": 0.25311511892731703,
+      "chi2_mcmc": 88.86978390768085,
+      "chi2_nu_mcmc": 8.886978390768085,
+      "gelman_rubin_R_hat": [
+        1.012979967986413,
+        1.2453481260442274
+      ],
+      "mcmc_converged": false
+    },
+    "UGC02885": {
+      "best_upsilon_disk": 0.481129767866022,
+      "std_upsilon_disk": 0.022667864704807892,
+      "best_upsilon_bulge": 0.9931028348473758,
+      "std_upsilon_bulge": 0.06167560195186639,
+      "chi2_mcmc": 13.832308956360418,
+      "chi2_nu_mcmc": 0.8136652327270834,
+      "gelman_rubin_R_hat": [
+        1.0036028867883717,
+        1.0130081816812606
+      ],
+      "mcmc_converged": true
+    },
+    "NGC3198": {
+      "best_upsilon_disk": 0.44182049152701114,
+      "std_upsilon_disk": 0.00399506969512742,
+      "best_upsilon_bulge": 0.3685820982485807,
+      "std_upsilon_bulge": 0.6812194773573348,
+      "chi2_mcmc": 403.26548630003185,
+      "chi2_nu_mcmc": 9.83574356829346,
+      "gelman_rubin_R_hat": [
+        0.9997601264197183,
+        3.1718883498497914
+      ],
+      "mcmc_converged": false
+    },
+    "NGC2403": {
+      "best_upsilon_disk": 0.6085020399733654,
+      "std_upsilon_disk": 0.0030727343534143244,
+      "best_upsilon_bulge": 0.793667161620833,
+      "std_upsilon_bulge": 0.3778789288199584,
+      "chi2_mcmc": 1149.8372712120533,
+      "chi2_nu_mcmc": 16.194891143831736,
+      "gelman_rubin_R_hat": [
+        1.0113569024352196,
+        1.8314350080367434
+      ],
+      "mcmc_converged": false
+    }
+  },
+  "epistemic_verdict": {
+    "status": "METHODS_PACKAGE_BENCHMARKED",
+    "finding": "Raw unfloated SPARC catalog exhibits global chi2_nu = 47.20 (median 10.51). Floated optimizer yields global chi2_nu = 11.08 (median 3.43). In 5-galaxy MCMC test, 1 converged (UGC 2885 R_hat=1.007) and 4 did not converge due to parameter degeneracy."
+  }
+}

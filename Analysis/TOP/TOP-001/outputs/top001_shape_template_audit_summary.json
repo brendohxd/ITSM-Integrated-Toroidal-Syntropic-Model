@@ -1,0 +1,153 @@
+{
+  "biaxial_scan": [
+    {
+      "Lx": 0.6299605249474366,
+      "Ly": 1.2599210498948732,
+      "Lz": 1.2599210498948732,
+      "anisotropy_A": 0.3315577953788229,
+      "m_x": 0.5543718635858828,
+      "m_y": 0.22281406820705987,
+      "m_z": 0.2228140682070599,
+      "n_modes": 2196,
+      "r": 0.5,
+      "volume": 1.0
+    },
+    {
+      "Lx": 1.0,
+      "Ly": 1.0,
+      "Lz": 1.0,
+      "anisotropy_A": 1.6653345369377348e-15,
+      "m_x": 0.33333333333333404,
+      "m_y": 0.33333333333333237,
+      "m_z": 0.33333333333333237,
+      "n_modes": 2196,
+      "r": 1.0,
+      "volume": 1.0
+    },
+    {
+      "Lx": 1.3103706971044484,
+      "Ly": 0.8735804647362989,
+      "Lz": 0.8735804647362989,
+      "anisotropy_A": 0.16994990864077947,
+      "m_x": 0.22003339423947949,
+      "m_y": 0.38998330288025895,
+      "m_z": 0.38998330288025884,
+      "n_modes": 2196,
+      "r": 1.5,
+      "volume": 1.0000000000000002
+    },
+    {
+      "Lx": 1.5874010519681996,
+      "Ly": 0.7937005259840998,
+      "Lz": 0.7937005259840998,
+      "anisotropy_A": 0.265520685092164,
+      "m_x": 0.1563195432718909,
+      "m_y": 0.4218402283640548,
+      "m_z": 0.4218402283640549,
+      "n_modes": 2196,
+      "r": 2.0,
+      "volume": 1.0000000000000002
+    }
+  ],
+  "calculation_status": "PASS",
+  "cbr001_baseline_reminder": "Free-field Casimir anisotropy exists (CBR-001); persistent free-field 13/12 attractor does not. This template does not recompute CBR-001.",
+  "checks": [
+    {
+      "V_target": 1.0,
+      "control_type": "constraint",
+      "name": "fixed_volume_under_biaxial_scan",
+      "ok": true
+    },
+    {
+      "anisotropy_A": 1.6653345369377348e-15,
+      "control_type": "negative",
+      "name": "negative_control_cubic_mode_anisotropy_vanishes",
+      "ok": true
+    },
+    {
+      "A_cubic": 1.6653345369377348e-15,
+      "A_values": {
+        "0.5": 0.3315577953788229,
+        "1.0": 1.6653345369377348e-15,
+        "1.5": 0.16994990864077947,
+        "2.0": 0.265520685092164
+      },
+      "control_type": "positive_template",
+      "name": "tested_noncubic_shapes_have_nonzero_anisotropy_diagnostic",
+      "ok": true
+    },
+    {
+      "A_n_max": 0.265520685092164,
+      "A_n_max_refined": 0.26563937759788736,
+      "control_type": "refinement",
+      "n_max": 6,
+      "n_max_refined": 10,
+      "name": "refinement_control_anisotropy_stable_order",
+      "ok": true,
+      "relative_change": 0.00044681818936895214
+    },
+    {
+      "control_type": "firewall",
+      "flags": {
+        "claims_13_12_attractor": false,
+        "claims_Cobs_2_3_from_geometry": false,
+        "claims_H0_72_97": false,
+        "claims_a0_from_topology": false,
+        "claims_casimir_stress_computed": false,
+        "claims_cosmology": false,
+        "claims_twisted_preferred_without_comparison": false
+      },
+      "name": "claim_firewall_packaging_flags_false",
+      "ok": true
+    },
+    {
+      "control_type": "negative",
+      "name": "negative_control_nonpositive_volume_rejected",
+      "ok": true
+    },
+    {
+      "control_type": "negative",
+      "name": "negative_control_nonfinite_volume_rejected",
+      "ok": true
+    },
+    {
+      "control_type": "negative",
+      "name": "negative_control_empty_mode_lattice_rejected",
+      "ok": true
+    },
+    {
+      "control_type": "negative",
+      "name": "negative_control_nonrefining_cutoff_rejected",
+      "ok": true
+    }
+  ],
+  "derived_claims": [],
+  "fixed_volume": 1.0,
+  "forbidden_packaging_not_used": [
+    "claims_13_12_attractor",
+    "claims_H0_72_97",
+    "claims_a0_from_topology",
+    "claims_Cobs_2_3_from_geometry",
+    "claims_twisted_preferred_without_comparison",
+    "claims_casimir_stress_computed",
+    "claims_cosmology"
+  ],
+  "gate": "TOP-001",
+  "label": "mathematical-template-only",
+  "next_research_stages": [
+    "S1 full triaxial charts if needed",
+    "S2 interface to CBR-001 pipeline without packaging",
+    "S3 dynamical S_mod only without forbidden targets",
+    "S4 twisted comparison before any preference upgrade"
+  ],
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "Fixed-volume rectangular T^3 shape and free-scalar mode-lattice anisotropy diagnostics only. Does not compute Casimir tensors, backreaction, 13/12 attractors, dynamical moduli actions, twisted BC preference, or any cosmological observable.",
+  "separations_demonstrated": [
+    "fixed_volume_vs_shape_ratio",
+    "mode_lattice_geometry_vs_casimir_stress",
+    "cubic_negative_control_vs_elongated_shape",
+    "template_vs_physical_prediction"
+  ],
+  "subgate_status": "PASS_TOP001_MATH_TEMPLATE_ONLY"
+}

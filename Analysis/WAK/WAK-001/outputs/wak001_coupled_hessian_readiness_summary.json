@@ -1,0 +1,87 @@
+{
+  "calculation_pass": true,
+  "checks": {
+    "all_prerequisites_match_declared_statuses": true,
+    "coupled_inputs_are_detected_as_incomplete": true,
+    "full_force_constraint_source_is_not_assembled": true,
+    "readiness_audit_fails_closed_without_fabricating_zero_mixing": true,
+    "track_a_force_component_passes": true,
+    "track_a_force_mode_is_selected": true,
+    "uvir_finite_q_inertia_is_three_positive": true,
+    "uvir_full_gate_remains_in_progress": true,
+    "uvir_physical_basis_passes": true,
+    "wak_inputs_keep_physics_pass_false": true,
+    "wak_local_action_variation_passes": true,
+    "wak_mode_counting_prescreen_passes": true,
+    "wak_source_remains_zero": true
+  },
+  "coupled_hessian_status": "NOT_CONSTRUCTIBLE_FROM_DECLARED_INPUTS",
+  "declared_interface": {
+    "W_constraint_mixing": false,
+    "W_cross_kinetic_mixing": false,
+    "W_gradient_mass_mixing": false,
+    "existing_reduced_physical_block": true,
+    "factorized_force_component": true,
+    "free_W_kinetic_term": true,
+    "joined_reduced_hessian": false,
+    "unit_constraint_parent_owner": false
+  },
+  "gate": "WAK-001",
+  "hold": "HOLD_WAK001_COUPLED_PARENT_HESSIAN_UNDECLARED",
+  "input_files": {
+    "track_a_force": {
+      "path": "C:/Users/brend/OneDrive/Documents/ITSM - Github/ITSM-Integrated-Toroidal-Syntropic-Model/Analysis/UVIR/UVIR-003/outputs/uvir003_track_a_force_adm_cubic_summary.json",
+      "sha256": "6A829A1CC05BF0B4B7F4F6044689580D740E4A6AD24857C85A9A474DF3A10A62"
+    },
+    "uvir_physical_basis": {
+      "path": "C:/Users/brend/OneDrive/Documents/ITSM - Github/ITSM-Integrated-Toroidal-Syntropic-Model/Analysis/UVIR/UVIR-003/outputs/uvir003_physical_scalar_basis_summary.json",
+      "sha256": "9177BFA76F25CBD9BE29EE81C2A5771E12656B7E6D8F8D49F01D821B1C632212"
+    },
+    "wak_action_variation": {
+      "path": "C:/Users/brend/OneDrive/Documents/ITSM - Github/ITSM-Integrated-Toroidal-Syntropic-Model/Analysis/WAK/WAK-001/outputs/wak001_route2_action_variation_summary.json",
+      "sha256": "16890ED3F02A6532838F98130859DCEE5FB0740DED89A82A6944C5356230D5EE"
+    },
+    "wak_mode_prescreen": {
+      "path": "C:/Users/brend/OneDrive/Documents/ITSM - Github/ITSM-Integrated-Toroidal-Syntropic-Model/Analysis/WAK/WAK-001/outputs/wak001_route2_mode_inventory_prescreen_summary.json",
+      "sha256": "673CB9B8183D070830FEF51F0746FA277816A772987D83E93A049579399508E8"
+    }
+  },
+  "label": "cross-sector-input-readiness-only",
+  "missing_coupled_inputs": [
+    "W_cross_kinetic_mixing",
+    "W_constraint_mixing",
+    "W_gradient_mass_mixing",
+    "unit_constraint_parent_owner",
+    "joined_reduced_hessian"
+  ],
+  "mode_independence_status": "NOT_YET_ESTABLISHED",
+  "next": [
+    "derive one complete pre-constraint quadratic parent action in the declared field order",
+    "include W couplings to lapse, shift and the unit-frame sector",
+    "derive the joined Schur complement and compare rank/inertia with W removed"
+  ],
+  "physical_wake_law": "NOT_YET_DERIVED",
+  "physics_pass": false,
+  "required_parent_contract": {
+    "background_domain": "one declared finite-q background and parameter domain shared by all sectors",
+    "constraint_field_order": "lapse, scalar shift, unit-frame multiplier and any additional auxiliary fields",
+    "constraint_hessian": "invertible finite-q auxiliary block with declared singular-domain handling",
+    "dynamic_constraint_mixing": "all W couplings to lapse, shift, frame and existing scalar variables",
+    "dynamic_field_order": [
+      "Xi",
+      "Q_rho",
+      "Q_chi",
+      "Pi",
+      "W"
+    ],
+    "gradient_mass_block": "complete spatial and algebraic quadratic block in the same normalization",
+    "preconstraint_kinetic_block": "complete velocity Hessian before eliminating shared constraints",
+    "reduced_hessian_provenance": "symbolic Schur complement derived from the declared parent blocks",
+    "unit_constraint_owner": "one parent-sector allocation for lambda_U and its stress contribution"
+  },
+  "scientific_boundary": "Verified reduced UVIR and free WAK pieces are available, but their direct sum is not a derived coupled theory. No W cross-sector or constraint blocks are declared, and zero mixing may not be assumed.",
+  "source": "J_W=0",
+  "stage": "W2.5 coupled finite-q parent-Hessian readiness",
+  "stage2_status": "IN_PROGRESS",
+  "status": "PASS_WAK001_COUPLED_HESSIAN_READINESS_AUDIT"
+}

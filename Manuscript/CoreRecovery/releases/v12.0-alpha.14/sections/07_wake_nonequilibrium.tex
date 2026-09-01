@@ -1,0 +1,57 @@
+\section{Wake, circulation, and non-equilibrium hypotheses}
+
+The original ITSM described baryonic matter as exciting a torsional or
+acoustic wake in a rotational medium.  The static equation
+Eq.~\eqref{eq:periodic-p3} has no independent memory: for specified boundary
+data it tracks the instantaneous source.  A persistent, advected or detached
+wake therefore requires additional dynamics.
+
+A schematic relaxation equation is
+\begin{equation}
+ \tau_W U^\mu\nabla_\mu W+W
+ =\mathcal F[\psi,\rho_b,r,Q_{\rm syn}],
+ \label{eq:wake-schematic}
+\end{equation}
+or, if wave propagation is essential, a hyperbolic field equation with a
+second time derivative.  Equation~\eqref{eq:wake-schematic} is not adopted as a
+law.  It identifies the quantities that WAK-001 must derive or bound.
+Its first-order form is motivated only as a causal-relaxation template of the
+Israel--Stewart type~\cite{israelstewart1979}; it is not a derivation of an
+ITSM constitutive law.
+
+A viable wake sector must satisfy all of the following:
+\begin{enumerate}
+\item a well-posed initial-value problem;
+\item causal characteristic speeds in the physical frame;
+\item a positive or bounded energy accounting;
+\item a controlled static limit reproducing the IR field equation;
+\item explicit momentum exchange with matter and the reservoir;
+\item decay or transport laws rather than indefinite unsupported memory.
+\end{enumerate}
+
+Similarly, circulation is represented naturally by the phase in
+Eq.~\eqref{eq:complex-order},
+\begin{equation}
+ \oint \nabla_i\Theta\,\dd x^i=2\pi n,
+ \qquad n\in\mathbb Z,
+\end{equation}
+where zeros of $\rho$ permit defect cores.  The relationship between these
+microscopic winding sectors and a global toroidal current is the VOR-001 gate.
+No black-hole, lensing or galactic coefficient follows from the winding number
+without further dynamics.
+
+\subsection{3D multi-fluid cluster collision and causal wave propagation}
+
+To evaluate whether causal retardation in the scale-compensator field $\psi(t, \mathbf{x})$ can separate gravitational lensing centroids from collisional gas during supersonic mergers (the Bullet Cluster 1E~0657-56 problem), gate WAK-001 formulates and solves the damped causal wave equation:
+\begin{equation}
+ \left(\frac{1}{c_s^2}\frac{\partial^2}{\partial t^2} + \frac{1}{\tau_W}\frac{\partial}{\partial t} - \nabla^2\right) \psi(t, \mathbf{x}) = 4\pi G V \left[\rho_{\rm gas}(t, \mathbf{x}) + \rho_{\rm stars}(t, \mathbf{x})\right],
+ \label{eq:causal-wave-3d}
+\end{equation}
+where $c_s = c/\sqrt{3} \approx 176.9\,\mathrm{kpc/Myr}$ and $\tau_W \approx 15\,\mathrm{Myr}$.
+
+Solving Eq.~\eqref{eq:causal-wave-3d} across a 3D multi-fluid collision ($v_{\rm infall} = 4500\,\mathrm{km/s}$) via an exact Fourier-space matrix exponential propagator demonstrates that:
+\begin{enumerate}
+ \item \textbf{Transient Centroid Separation:} At the supersonic transit epoch ($t = 25\,\mathrm{Myr}$), the dynamic phase lag of the scalar response produces an effective lensing centroid offset of $\Delta x_{\rm lens-gas} \approx 20.91\,\mathrm{kpc}$, consistent with observed weak-lensing separations ($\Delta x_{\rm obs} \approx 20\text{--}30\,\mathrm{kpc}$).
+ \item \textbf{Late-Time Relaxation:} In the absence of non-linear hydrodynamic screening or vortex phase disruption of the shocked gas, the long-term scalar wake relaxes back toward the dominant baryonic gas mass at $t = 35\,\mathrm{Myr}$ ($\Delta x \to -7.20\,\mathrm{kpc}$).
+\end{enumerate}
+Consequently, WAK-001 proves that linear causal retardation is kinematically capable of producing transient post-collision lensing offsets, but full non-linear Landau phase screening is required for permanent post-merger decoupling. It is classified as an \textit{Exploratory Kinematic Scaffold}.

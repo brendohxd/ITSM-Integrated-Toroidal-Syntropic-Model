@@ -1,0 +1,156 @@
+{
+  "calculation_priority": {
+    "reason": "R1 alone has a bounded Conditional form, but its origin, stress matching and parameters are not derived.",
+    "route": "R1_DECLARED_CONSTITUTIVE_VECTOR",
+    "status": "MOST_DEVELOPED_SCAFFOLD_NOT_SELECTED"
+  },
+  "calculation_status": "PASS",
+  "candidate_comparison": {
+    "R1_DECLARED_CONSTITUTIVE_VECTOR": {
+      "eligible_for_selection": false,
+      "evidence_state": {
+        "covariant_action_or_controlled_constitutive_closure": "PARTIAL_FLAT_REST_FRAME_FORM",
+        "current_separation_and_WAK_compatibility": "Q_MP_SEPARATION_DECLARED_INTERFACE_OPEN",
+        "energy_conditions_or_entropy_production": "NOT_DERIVED",
+        "microscopic_or_thermodynamic_origin": "NOT_DERIVED",
+        "observable_and_cosmology_firewall": "ENFORCED_NO_DERIVED_COSMOLOGY",
+        "parameter_matching_without_free_creation_rate": "FREE_GAMMA_SIGMA_RHO_STAR",
+        "reservoir_stress_and_exchange_derivation": "T_R_MATCHING_MISSING",
+        "stable_causal_perturbation_domain": "NOT_TESTED"
+      },
+      "primary_blocker": "The Conditional form lacks thermodynamic derivation, T_R matching and parameter closure.",
+      "route_role": "phenomenological_constitutive_vector"
+    },
+    "R2_ACTION_COUPLED_RESERVOIR": {
+      "eligible_for_selection": false,
+      "evidence_state": {
+        "covariant_action_or_controlled_constitutive_closure": "S_R_PLUS_S_INT_MISSING",
+        "current_separation_and_WAK_compatibility": "BOOKKEEPING_ONLY",
+        "energy_conditions_or_entropy_production": "NOT_DERIVED",
+        "microscopic_or_thermodynamic_origin": "NOT_DECLARED",
+        "observable_and_cosmology_firewall": "ENFORCED_NO_DERIVED_COSMOLOGY",
+        "parameter_matching_without_free_creation_rate": "NOT_AVAILABLE",
+        "reservoir_stress_and_exchange_derivation": "T_R_AND_Q_SYN_NOT_DERIVED",
+        "stable_causal_perturbation_domain": "NOT_TESTED"
+      },
+      "primary_blocker": "No reservoir action or interaction deriving Q_syn is declared.",
+      "route_role": "action_coupled_reservoir"
+    },
+    "R3_TOPOLOGY_LOCKED_THROUGHPUT": {
+      "eligible_for_selection": false,
+      "evidence_state": {
+        "covariant_action_or_controlled_constitutive_closure": "NOT_DECLARED",
+        "current_separation_and_WAK_compatibility": "BOOKKEEPING_ONLY",
+        "energy_conditions_or_entropy_production": "NOT_DERIVED",
+        "microscopic_or_thermodynamic_origin": "NO_TOPOLOGY_TO_CURRENT_MECHANISM",
+        "observable_and_cosmology_firewall": "ENFORCED_NO_13_12_OR_H0",
+        "parameter_matching_without_free_creation_rate": "CYCLE_COUNTING_FORBIDDEN",
+        "reservoir_stress_and_exchange_derivation": "T_R_AND_Q_SYN_NOT_DERIVED",
+        "stable_causal_perturbation_domain": "NOT_TESTED"
+      },
+      "primary_blocker": "No action-level map from topology/moduli to a conserved throughput current exists.",
+      "route_role": "topology_locked_conditional"
+    }
+  },
+  "checks": [
+    {
+      "name": "constitutive_inventory_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "res001_qsyn_constitutive_inventory_summary.json"
+    },
+    {
+      "name": "R1_decision_packet_exact_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "res001_r1_constitutive_draft_summary.json"
+    },
+    {
+      "name": "rubric_covers_every_hard_requirement_for_every_route",
+      "ok": true
+    },
+    {
+      "control": "R0_NO_THROUGHPUT_CONTROL",
+      "name": "R0_no_throughput_control_retained",
+      "ok": true
+    },
+    {
+      "name": "no_route_is_eligible_on_current_evidence",
+      "ok": true
+    },
+    {
+      "calculation_priority": "R1_MOST_DEVELOPED_SCAFFOLD",
+      "name": "R1_calculation_priority_not_misreported_as_route_selection",
+      "ok": true,
+      "route_selection": "NONE"
+    },
+    {
+      "name": "topology_route_does_not_infer_numeric_packaging",
+      "ok": true
+    },
+    {
+      "flags": {
+        "13_12_from_reservoir": false,
+        "Derived_creation_rate": false,
+        "H0_from_Q_syn": false,
+        "NEC_violating_Minkowski_support": false,
+        "Q_syn_activated": false,
+        "Q_syn_identified_with_Q_mp": false,
+        "Q_syn_identified_with_condensate_number_source": false,
+        "RES_research_gate_PASS": false,
+        "constitutive_route_selected": false,
+        "physics_pass": false
+      },
+      "name": "decision_and_claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "13_12_from_reservoir": false,
+    "Derived_creation_rate": false,
+    "H0_from_Q_syn": false,
+    "NEC_violating_Minkowski_support": false,
+    "Q_syn_activated": false,
+    "Q_syn_identified_with_Q_mp": false,
+    "Q_syn_identified_with_condensate_number_source": false,
+    "RES_research_gate_PASS": false,
+    "constitutive_route_selected": false,
+    "physics_pass": false
+  },
+  "control_retained": "R0_NO_THROUGHPUT_CONTROL",
+  "decision_status": "NO_ROUTE_SELECTABLE_ON_CURRENT_EVIDENCE",
+  "evidence": {
+    "R1_decision_packet": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "DB02336FC9940BBC7924D681CD1B809926F191C3514E89AF4D507D1CC669BD8D",
+      "source": "res001_r1_constitutive_draft_summary.json"
+    },
+    "constitutive_inventory": {
+      "exact_contract_ok": true,
+      "parse_error": null,
+      "sha256": "7B13D0E8C2F56A4E9E9FB02E0B7C49853851495C671F397D74C72644945C164B",
+      "source": "res001_qsyn_constitutive_inventory_summary.json"
+    }
+  },
+  "gate": "RES-001",
+  "hard_requirements": [
+    "microscopic_or_thermodynamic_origin",
+    "covariant_action_or_controlled_constitutive_closure",
+    "reservoir_stress_and_exchange_derivation",
+    "energy_conditions_or_entropy_production",
+    "parameter_matching_without_free_creation_rate",
+    "stable_causal_perturbation_domain",
+    "current_separation_and_WAK_compatibility",
+    "observable_and_cosmology_firewall"
+  ],
+  "hold": "HOLD_RES001_NO_CONSTITUTIVE_ROUTE_SELECTABLE",
+  "n_checks": 8,
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "A PASS means R1/R2/R3 were compared under one explicit hard-requirement rubric and none is currently selectable. R1 is the most developed calculation scaffold, not an activated Q_syn law or cosmology.",
+  "selected_candidate": null,
+  "serial_next": "Keep R0 as the control and R1/R2/R3 open. For R1, derive a covariant irreversible-thermodynamics closure with T_R matching and entropy production; or supply an R2 parent action or R3 topology-to-current mechanism before rerunning this rubric.",
+  "stage": "CONSTITUTIVE_ROUTE_EVIDENCE_RUBRIC",
+  "subgate_status": "PASS_RES001_CONSTITUTIVE_ROUTE_EVIDENCE_RUBRIC_NO_SELECTION"
+}

@@ -1,0 +1,61 @@
+{
+  "calculation_status": "PASS",
+  "complete_finite_q_S2_status": "NOT_YET_DERIVED",
+  "constraint_dressed_contact_status": "NOT_YET_DERIVED",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "expand the full finite-q cubic ADM action including all lapse and scalar-shift powers",
+    "substitute z1=-C^(-1)J1 and derive S2=partial_z L3[x,z1]",
+    "derive L3[x,z1] and L4[x,z1], then combine L4 with -S2^T C^(-1) S2/2",
+    "project the corrected vertices onto the regular physical scalar basis"
+  ],
+  "origin_linear_J2_status": "VERIFIED_COMPONENT_NOT_COMPLETE_SECOND_ORDER_SOURCE",
+  "physical_2_to_2_status": "NOT_YET_DERIVED",
+  "previous_quartic_schur_status": "RECLASSIFIED_PROVISIONAL_ORIGIN_LINEAR_COMPONENT",
+  "scientific_boundary": "The previous origin-linear J2 and its algebraic Schur functional remain verified as components. They are not the complete second-order source and quartic constraint correction because the exact ADM cubic action contains nonlinear first-order constraint terms. The full finite-q S2 must be evaluated at z1.",
+  "stage": "B_CONSTRAINT_DRESSING_COMPLETENESS_AUDIT",
+  "subgate_status": "PASS_CONSTRAINT_DRESSING_COMPLETENESS_AUDIT",
+  "symbolic_audit": {
+    "checkpoint_correction": {
+      "explicit_counterterm": "S2_N-J2_N_origin=2*B1*delta_N_1+3*V*delta_N_1^2",
+      "finding": "J2_origin is not the complete second-order source when L3 contains z^2*x or z^3 terms",
+      "full_constraint_dressing": "NOT_YET_DERIVED",
+      "origin_linear_source": "J2_origin=partial_z L3[x,z]|z=0",
+      "previous_schur_interpretation": "PROVISIONAL_ORIGIN_LINEAR_COMPONENT_ONLY"
+    },
+    "general_reduction_identity": {
+      "cubic_reduced": "L3_red=L3[x,z1]",
+      "first_order_solution": "z1=-C^(-1)J1",
+      "quartic_reduced": "L4_red=L4[x,z1]-S2^T C^(-1) S2/2",
+      "second_order_solution": "z2=-C^(-1)S2",
+      "second_order_source": "S2=partial_z L3[x,z]|z=z1",
+      "verified_schur": "-(C_11*S2_Sigma**2 - 2*C_12*S2_N*S2_Sigma + C_22*S2_N**2)/(2*(C_11*C_22 - C_12**2))"
+    },
+    "homogeneous_lapse_subblock": {
+      "C_NN": "-6*H**2*M_cos_sq + mu**2*rho**2 + rho_dot**2",
+      "J1_at_origin": "9*H**2*M_cos_sq*R + 6*H*M_cos_sq*R_dot - 3*R*mu**2*rho**2/2 - 3*R*rho_dot**2/2 - 3*R*(3*H**2*M_cos_sq - mu**2*rho**2/2 - rho_dot**2/2) - V_rho*delta_rho - delta_rho*mu**2*rho - delta_rho_dot*rho_dot - mu*rho**2*vartheta_dot",
+      "J2_at_origin": "27*H**2*M_cos_sq*R**2/2 + 18*H*M_cos_sq*R*R_dot + 3*M_cos_sq*R_dot**2 - 9*R**2*mu**2*rho**2/4 - 9*R**2*rho_dot**2/4 - 9*R**2*(3*H**2*M_cos_sq - mu**2*rho**2/2 - rho_dot**2/2)/2 - 3*R*V_rho*delta_rho - 3*R*delta_rho*mu**2*rho - 3*R*delta_rho_dot*rho_dot - 3*R*mu*rho**2*vartheta_dot - V_rhorho*delta_rho**2/2 - delta_rho**2*mu**2/2 - 2*delta_rho*mu*rho*vartheta_dot - delta_rho_dot**2/2 - rho**2*vartheta_dot**2/2",
+      "L2": "-27*H**2*M_cos_sq*R**2/2 + 9*H**2*M_cos_sq*R*delta_N - 3*H**2*M_cos_sq*delta_N**2 - 18*H*M_cos_sq*R*R_dot + 6*H*M_cos_sq*R_dot*delta_N - 3*M_cos_sq*R_dot**2 + 9*R**2*mu**2*rho**2/4 + 9*R**2*rho_dot**2/4 - 9*R**2*(3*H**2*M_cos_sq - mu**2*rho**2/2 - rho_dot**2/2)/2 - 3*R*V_rho*delta_rho - 3*R*delta_N*mu**2*rho**2/2 - 3*R*delta_N*rho_dot**2/2 - 3*R*delta_N*(3*H**2*M_cos_sq - mu**2*rho**2/2 - rho_dot**2/2) + 3*R*delta_rho*mu**2*rho + 3*R*delta_rho_dot*rho_dot + 3*R*mu*rho**2*vartheta_dot - V_rho*delta_N*delta_rho - V_rhorho*delta_rho**2/2 + delta_N**2*mu**2*rho**2/2 + delta_N**2*rho_dot**2/2 - delta_N*delta_rho*mu**2*rho - delta_N*delta_rho_dot*rho_dot - delta_N*mu*rho**2*vartheta_dot + delta_rho**2*mu**2/2 + 2*delta_rho*mu*rho*vartheta_dot + delta_rho_dot**2/2 + rho**2*vartheta_dot**2/2",
+      "L3": "-27*H**2*M_cos_sq*R**3/2 + 27*H**2*M_cos_sq*R**2*delta_N/2 - 9*H**2*M_cos_sq*R*delta_N**2 + 3*H**2*M_cos_sq*delta_N**3 - 27*H*M_cos_sq*R**2*R_dot + 18*H*M_cos_sq*R*R_dot*delta_N - 6*H*M_cos_sq*R_dot*delta_N**2 - 9*M_cos_sq*R*R_dot**2 + 3*M_cos_sq*R_dot**2*delta_N + 9*R**3*mu**2*rho**2/4 + 9*R**3*rho_dot**2/4 - 9*R**3*(3*H**2*M_cos_sq - mu**2*rho**2/2 - rho_dot**2/2)/2 - 9*R**2*V_rho*delta_rho/2 - 9*R**2*delta_N*mu**2*rho**2/4 - 9*R**2*delta_N*rho_dot**2/4 - 9*R**2*delta_N*(3*H**2*M_cos_sq - mu**2*rho**2/2 - rho_dot**2/2)/2 + 9*R**2*delta_rho*mu**2*rho/2 + 9*R**2*delta_rho_dot*rho_dot/2 + 9*R**2*mu*rho**2*vartheta_dot/2 - 3*R*V_rho*delta_N*delta_rho - 3*R*V_rhorho*delta_rho**2/2 + 3*R*delta_N**2*mu**2*rho**2/2 + 3*R*delta_N**2*rho_dot**2/2 - 3*R*delta_N*delta_rho*mu**2*rho - 3*R*delta_N*delta_rho_dot*rho_dot - 3*R*delta_N*mu*rho**2*vartheta_dot + 3*R*delta_rho**2*mu**2/2 + 6*R*delta_rho*mu*rho*vartheta_dot + 3*R*delta_rho_dot**2/2 + 3*R*rho**2*vartheta_dot**2/2 - V_rhorho*delta_N*delta_rho**2/2 - V_rhorhorho*delta_rho**3/6 - delta_N**3*mu**2*rho**2/2 - delta_N**3*rho_dot**2/2 + delta_N**2*delta_rho*mu**2*rho + delta_N**2*delta_rho_dot*rho_dot + delta_N**2*mu*rho**2*vartheta_dot - delta_N*delta_rho**2*mu**2/2 - 2*delta_N*delta_rho*mu*rho*vartheta_dot - delta_N*delta_rho_dot**2/2 - delta_N*rho**2*vartheta_dot**2/2 + delta_rho**2*mu*vartheta_dot + delta_rho*rho*vartheta_dot**2",
+      "L4": "-81*H**2*M_cos_sq*R**4/8 + 27*H**2*M_cos_sq*R**3*delta_N/2 - 27*H**2*M_cos_sq*R**2*delta_N**2/2 + 9*H**2*M_cos_sq*R*delta_N**3 - 3*H**2*M_cos_sq*delta_N**4 - 27*H*M_cos_sq*R**3*R_dot + 27*H*M_cos_sq*R**2*R_dot*delta_N - 18*H*M_cos_sq*R*R_dot*delta_N**2 + 6*H*M_cos_sq*R_dot*delta_N**3 - 27*M_cos_sq*R**2*R_dot**2/2 + 9*M_cos_sq*R*R_dot**2*delta_N - 3*M_cos_sq*R_dot**2*delta_N**2 + 27*R**4*mu**2*rho**2/16 + 27*R**4*rho_dot**2/16 - 27*R**4*(3*H**2*M_cos_sq - mu**2*rho**2/2 - rho_dot**2/2)/8 - 9*R**3*V_rho*delta_rho/2 - 9*R**3*delta_N*mu**2*rho**2/4 - 9*R**3*delta_N*rho_dot**2/4 - 9*R**3*delta_N*(3*H**2*M_cos_sq - mu**2*rho**2/2 - rho_dot**2/2)/2 + 9*R**3*delta_rho*mu**2*rho/2 + 9*R**3*delta_rho_dot*rho_dot/2 + 9*R**3*mu*rho**2*vartheta_dot/2 - 9*R**2*V_rho*delta_N*delta_rho/2 - 9*R**2*V_rhorho*delta_rho**2/4 + 9*R**2*delta_N**2*mu**2*rho**2/4 + 9*R**2*delta_N**2*rho_dot**2/4 - 9*R**2*delta_N*delta_rho*mu**2*rho/2 - 9*R**2*delta_N*delta_rho_dot*rho_dot/2 - 9*R**2*delta_N*mu*rho**2*vartheta_dot/2 + 9*R**2*delta_rho**2*mu**2/4 + 9*R**2*delta_rho*mu*rho*vartheta_dot + 9*R**2*delta_rho_dot**2/4 + 9*R**2*rho**2*vartheta_dot**2/4 - 3*R*V_rhorho*delta_N*delta_rho**2/2 - R*V_rhorhorho*delta_rho**3/2 - 3*R*delta_N**3*mu**2*rho**2/2 - 3*R*delta_N**3*rho_dot**2/2 + 3*R*delta_N**2*delta_rho*mu**2*rho + 3*R*delta_N**2*delta_rho_dot*rho_dot + 3*R*delta_N**2*mu*rho**2*vartheta_dot - 3*R*delta_N*delta_rho**2*mu**2/2 - 6*R*delta_N*delta_rho*mu*rho*vartheta_dot - 3*R*delta_N*delta_rho_dot**2/2 - 3*R*delta_N*rho**2*vartheta_dot**2/2 + 3*R*delta_rho**2*mu*vartheta_dot + 3*R*delta_rho*rho*vartheta_dot**2 - V_rhorhorho*delta_N*delta_rho**3/6 - V_rhorhorhorho*delta_rho**4/24 + delta_N**4*mu**2*rho**2/2 + delta_N**4*rho_dot**2/2 - delta_N**3*delta_rho*mu**2*rho - delta_N**3*delta_rho_dot*rho_dot - delta_N**3*mu*rho**2*vartheta_dot + delta_N**2*delta_rho**2*mu**2/2 + 2*delta_N**2*delta_rho*mu*rho*vartheta_dot + delta_N**2*delta_rho_dot**2/2 + delta_N**2*rho**2*vartheta_dot**2/2 - delta_N*delta_rho**2*mu*vartheta_dot - delta_N*delta_rho*rho*vartheta_dot**2 + delta_rho**2*vartheta_dot**2/2",
+      "L4_at_delta_N_1_minus_L4_x0": "-delta_N_1*(162*H**2*M_cos_sq*R**2*delta_N_1 - 108*H**2*M_cos_sq*R*delta_N_1**2 + 36*H**2*M_cos_sq*delta_N_1**3 - 324*H*M_cos_sq*R**2*R_dot + 216*H*M_cos_sq*R*R_dot*delta_N_1 - 72*H*M_cos_sq*R_dot*delta_N_1**2 - 108*M_cos_sq*R*R_dot**2 + 36*M_cos_sq*R_dot**2*delta_N_1 + 54*R**2*V_rho*delta_rho - 27*R**2*delta_N_1*mu**2*rho**2 - 27*R**2*delta_N_1*rho_dot**2 + 54*R**2*delta_rho*mu**2*rho + 54*R**2*delta_rho_dot*rho_dot + 54*R**2*mu*rho**2*vartheta_dot + 18*R*V_rhorho*delta_rho**2 + 18*R*delta_N_1**2*mu**2*rho**2 + 18*R*delta_N_1**2*rho_dot**2 - 36*R*delta_N_1*delta_rho*mu**2*rho - 36*R*delta_N_1*delta_rho_dot*rho_dot - 36*R*delta_N_1*mu*rho**2*vartheta_dot + 18*R*delta_rho**2*mu**2 + 72*R*delta_rho*mu*rho*vartheta_dot + 18*R*delta_rho_dot**2 + 18*R*rho**2*vartheta_dot**2 + 2*V_rhorhorho*delta_rho**3 - 6*delta_N_1**3*mu**2*rho**2 - 6*delta_N_1**3*rho_dot**2 + 12*delta_N_1**2*delta_rho*mu**2*rho + 12*delta_N_1**2*delta_rho_dot*rho_dot + 12*delta_N_1**2*mu*rho**2*vartheta_dot - 6*delta_N_1*delta_rho**2*mu**2 - 24*delta_N_1*delta_rho*mu*rho*vartheta_dot - 6*delta_N_1*delta_rho_dot**2 - 6*delta_N_1*rho**2*vartheta_dot**2 + 12*delta_rho**2*mu*vartheta_dot + 12*delta_rho*rho*vartheta_dot**2)/12",
+      "S2_at_delta_N_1": "27*H**2*M_cos_sq*R**2/2 - 18*H**2*M_cos_sq*R*delta_N_1 + 9*H**2*M_cos_sq*delta_N_1**2 + 18*H*M_cos_sq*R*R_dot - 12*H*M_cos_sq*R_dot*delta_N_1 + 3*M_cos_sq*R_dot**2 - 9*R**2*mu**2*rho**2/4 - 9*R**2*rho_dot**2/4 - 9*R**2*(3*H**2*M_cos_sq - mu**2*rho**2/2 - rho_dot**2/2)/2 - 3*R*V_rho*delta_rho + 3*R*delta_N_1*mu**2*rho**2 + 3*R*delta_N_1*rho_dot**2 - 3*R*delta_rho*mu**2*rho - 3*R*delta_rho_dot*rho_dot - 3*R*mu*rho**2*vartheta_dot - V_rhorho*delta_rho**2/2 - 3*delta_N_1**2*mu**2*rho**2/2 - 3*delta_N_1**2*rho_dot**2/2 + 2*delta_N_1*delta_rho*mu**2*rho + 2*delta_N_1*delta_rho_dot*rho_dot + 2*delta_N_1*mu*rho**2*vartheta_dot - delta_rho**2*mu**2/2 - 2*delta_rho*mu*rho*vartheta_dot - delta_rho_dot**2/2 - rho**2*vartheta_dot**2/2",
+      "S2_minus_J2_origin": "-delta_N_1*(36*H**2*M_cos_sq*R - 18*H**2*M_cos_sq*delta_N_1 + 24*H*M_cos_sq*R_dot - 6*R*mu**2*rho**2 - 6*R*rho_dot**2 + 3*delta_N_1*mu**2*rho**2 + 3*delta_N_1*rho_dot**2 - 4*delta_rho*mu**2*rho - 4*delta_rho_dot*rho_dot - 4*mu*rho**2*vartheta_dot)/2",
+      "status": "NONLINEAR_CONSTRAINT_DRESSING_VERIFIED"
+    },
+    "scientific_boundary": {
+      "derived": [
+        "exact homogeneous lapse L2, L3 and L4 dressing",
+        "nonzero correction from J2_origin to S2 at z1",
+        "general second-order constraint-elimination identity"
+      ],
+      "not_derived": [
+        "complete finite-q S2 including scalar-shift dressing",
+        "complete L3[x,z1] and L4[x,z1]",
+        "physical scalar projection or amplitude"
+      ]
+    }
+  }
+}

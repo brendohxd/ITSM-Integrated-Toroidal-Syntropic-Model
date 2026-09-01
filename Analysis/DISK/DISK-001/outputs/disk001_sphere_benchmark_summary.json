@@ -1,0 +1,30 @@
+{
+  "calculation_status": "PASS",
+  "diagnostics": {
+    "curl_radial_reduction": 0.0,
+    "deep_mond_identity_max_rel": 0.0,
+    "inner_aqual_vs_newton_max_rel": NaN,
+    "outer_aqual_vs_deep_max_rel": 0.010917173412118987
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "DISK-001",
+  "ir": {
+    "C_obs": 1.0,
+    "C_obs_origin": "Conditional_default_Cobs_sim_1_MasterPlan_sec6",
+    "a0": 3700.0,
+    "a0_origin": "phenomenological_input",
+    "ban_B9_dual_rar": true,
+    "is_derived": false,
+    "label": "Conditional_AQUAL_baseline"
+  },
+  "mat001_status": "BLOCKED",
+  "model": {
+    "mass_Msun": 10000000000.0,
+    "n_radial": 64,
+    "profile": "Plummer",
+    "scale_kpc": 1.0
+  },
+  "scientific_boundary": "Spherical Conditional AQUAL/deep-MOND benchmark only. Not a SPARC fit, not Derived C_obs, not DISK-001 full PASS.",
+  "stage": "STAGE0_SPHERE_BENCHMARK",
+  "subgate_status": "PASS_DISK001_SPHERE_PLUMMER_AQUAL"
+}

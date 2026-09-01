@@ -1,0 +1,121 @@
+{
+  "C_obs_status": "NOT_DERIVED",
+  "MAT_001_status": "BLOCKED",
+  "SCR_001_status": "NOT_OPENED_BY_THIS_CONTROL",
+  "audit": "CBR002_S0_NO_SCREENING_CONTROL",
+  "benchmarks": [
+    {
+      "MOND_radius_m": 1051651293640941.9,
+      "a5_over_aN_per_unit_C_obs": 0.00014225045089049848,
+      "domain": "solar_system",
+      "failure_condition_for_fractional_limit_epsilon": "abs(C_obs) > epsilon/0.00014225045089",
+      "g_N_m_s2": 0.005930262843244523,
+      "mass_kg": 1.98847e+30,
+      "name": "Sun at 1 AU",
+      "radius_m": 149597870700.0,
+      "validity": "STATIC_ISOLATED_SPHERICAL_FORCE_RATIO_ONLY"
+    },
+    {
+      "MOND_radius_m": 1822549826936.6099,
+      "a5_over_aN_per_unit_C_obs": 3.4956520287341314e-06,
+      "domain": "solar_system",
+      "failure_condition_for_fractional_limit_epsilon": "abs(C_obs) > epsilon/3.49565202873e-06",
+      "g_N_m_s2": 9.820302293385645,
+      "mass_kg": 5.9722e+24,
+      "name": "Earth surface",
+      "radius_m": 6371000.0,
+      "validity": "STATIC_ISOLATED_SPHERICAL_FORCE_RATIO_ONLY"
+    },
+    {
+      "MOND_radius_m": 0.745782586727973,
+      "a5_over_aN_per_unit_C_obs": 0.1340873356117597,
+      "domain": "laboratory",
+      "failure_condition_for_fractional_limit_epsilon": "abs(C_obs) > epsilon/0.134087335612",
+      "g_N_m_s2": 6.674299999999998e-09,
+      "mass_kg": 1.0,
+      "name": "1 kg source at 0.1 m",
+      "radius_m": 0.1,
+      "validity": "CONDITIONAL_ISOLATED_SOURCE; EXTERNAL_FIELD_AND_APPARATUS_BVP_OMITTED"
+    },
+    {
+      "MOND_radius_m": 1244330591435946.8,
+      "a5_over_aN_per_unit_C_obs": 8.036449532643962e-07,
+      "domain": "pulsar",
+      "failure_condition_for_fractional_limit_epsilon": "abs(C_obs) > epsilon/8.03644953264e-07",
+      "g_N_m_s2": 185.80303449399997,
+      "mass_kg": 2.783858e+30,
+      "name": "1.4 Msun binary scale at 1e9 m",
+      "radius_m": 1000000000.0,
+      "validity": "WEAK_FIELD_STATIC_RATIO_ONLY; RADIATION_AND_SENSITIVITIES_OMITTED"
+    },
+    {
+      "MOND_radius_m": 1244330591435946.8,
+      "a5_over_aN_per_unit_C_obs": 9.643739439172755e-12,
+      "domain": "compact_object",
+      "failure_condition_for_fractional_limit_epsilon": "abs(C_obs) > epsilon/9.64373943917e-12",
+      "g_N_m_s2": 1290298850652.7776,
+      "mass_kg": 2.783858e+30,
+      "name": "1.4 Msun object at 12 km",
+      "radius_m": 12000.0,
+      "validity": "OUTSIDE_DERIVED_WEAK_FIELD_DOMAIN; BENCHMARK_ONLY"
+    }
+  ],
+  "calculation_status": "PASS_STATIC_NULL_CONTROL",
+  "checks": [
+    {
+      "name": "canonical_invariant_force_law_present",
+      "ok": true
+    },
+    {
+      "name": "force_ratio_not_misidentified_as_ppn",
+      "ok": true
+    },
+    {
+      "name": "like_for_like_requirement_present",
+      "ok": true
+    },
+    {
+      "name": "s0_scope_present",
+      "ok": true
+    },
+    {
+      "name": "sun_1au_reproduces_bounded_diagnostic",
+      "ok": true,
+      "ratio": 0.00014225045089049848
+    },
+    {
+      "name": "all_benchmark_ratios_finite_positive",
+      "ok": true
+    }
+  ],
+  "control_inputs": {
+    "AU_m": 149597870700.0,
+    "G_m3_kg_s2": 6.6743e-11,
+    "M_sun_kg": 1.98847e+30,
+    "a0_m_s2": 1.2e-10,
+    "a0_status": "DIAGNOSTIC_CONTROL_VALUE_NOT_DERIVED_BY_MAT_001"
+  },
+  "domain_results": {
+    "compact_object": "WEAK_FIELD_SCALING_CANNOT_BE_EXTRAPOLATED_AS_A_STRONG_FIELD_PREDICTION",
+    "laboratory": "ISOLATED_SOURCE_SCALING_EXPOSED; NONLINEAR_EXTERNAL_FIELD_AND_APPARATUS_SOLUTION_NOT_DERIVED",
+    "pulsar": "STATIC_WEAK_FIELD_SCALING_EXPOSED; DIPOLE_RADIATION_AND_STRONG_FIELD_SENSITIVITIES_NOT_DERIVED",
+    "solar_system": "NONZERO_FORCE_RATIO_EXPOSED; PPN_AND_EPHEMERIS_OBSERVABLES_NOT_DERIVED"
+  },
+  "exact_static_spherical_relations": {
+    "failure_domain_for_like_for_like_fractional_limit_epsilon": "abs(C_obs) > epsilon*sqrt(g_N/a0) = epsilon*r_M/r",
+    "force": "g_P = C_obs*sqrt(a0*g_N)",
+    "r_M": "sqrt(G*M/a0)",
+    "ratio": "g_P/g_N = C_obs*sqrt(a0/g_N) = C_obs*r/r_M"
+  },
+  "input_sha256": {
+    "core_architecture": "332489B09476A4403E8BBEBE81B3FF329A114005DAA1CF39E8B4738F95B9AC8A",
+    "recovery_plan": "113325BE2974968C65974F2D587F2AAEC2317D7FE6BD2DC6AFAD23FFA1E8FCBD",
+    "solar_bound": "5D913D5086FDACF438DDEA79E4E17AEF45F3B35BC557E35F1739C08597E2F14D",
+    "tier1_programme": "F2F5077D35C4AAD97C0BDC6C82F694CB69FCEE3CAB6F84B9FCB964567854D850"
+  },
+  "like_for_like_observational_pass": false,
+  "physics_pass": false,
+  "route_disposition": "REJECT_S0_AS_COMPLETE_LOCAL_GRAVITY_ROUTE",
+  "scientific_boundary": "The exact isolated spherical cubic-force ratio is a null-control prediction. It is not a PPN parameter, an ephemeris residual, a laboratory apparatus solution, a pulsar radiation calculation, or a compact-object solution. S0 therefore cannot establish observational compliance and does not select any screening mechanism.",
+  "screening_mechanism_imported": false
+}

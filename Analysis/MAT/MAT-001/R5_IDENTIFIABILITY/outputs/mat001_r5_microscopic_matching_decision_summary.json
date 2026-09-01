@@ -1,0 +1,157 @@
+{
+  "C_m_numeric_status": "NOT_DERIVED_FORM_ONLY",
+  "V_status": "NOT_COMPUTED",
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "r3_covariant_matter_action_scoped",
+      "ok": true
+    },
+    {
+      "name": "rr1_parent_skeleton_unmatched",
+      "ok": true
+    },
+    {
+      "name": "rr2_live_residue_absent",
+      "ok": true
+    },
+    {
+      "name": "unit_chart_keeps_matching_open",
+      "ok": true
+    },
+    {
+      "name": "signed_residue_redefinition_invariant",
+      "ok": true
+    },
+    {
+      "name": "declared_action_has_two_independent_wilson_coefficients",
+      "ok": true
+    },
+    {
+      "name": "arbitrary_signed_V_family_exists",
+      "ok": true
+    },
+    {
+      "name": "shortcut_closures_leave_K_Q_or_matching_open",
+      "ok": true
+    }
+  ],
+  "decision_status": "HOLD",
+  "direct_residue_route": {
+    "live_normalized_residue_available": false,
+    "reason": "RR2 has no action-derived Track-A matter response or amplitude that isolates the normalized signed residue."
+  },
+  "evidence": {
+    "r3_matter": {
+      "parse_error": null,
+      "sha256": "99F712392F0DD42820D760FDAA7D1CDAEA1E301D04D610D5C4B49C663377F676",
+      "source": "mat001_r3_covariant_matter_action_summary.json"
+    },
+    "rr1_parent_skeleton": {
+      "parse_error": null,
+      "sha256": "439D2EFAEAF98343F61250E36F7608F78772F0DCD77D839E274D0717C12F5BEC",
+      "source": "mat001_rr1_parent_action_skeleton_summary.json"
+    },
+    "rr2_residue_pathway": {
+      "parse_error": null,
+      "sha256": "B67DD14F6D60C2DDA8AE6337CB6311BF927D7A10DBEFC90B363A947EAC98FC3C",
+      "source": "mat001_rr2_residue_pathway_summary.json"
+    },
+    "unit_chart": {
+      "parse_error": null,
+      "sha256": "B6F8974D4C3648886DFC23DB9CD31F4C78BCB5B09C65E5DC32039FC80FA891CF",
+      "source": "mat001_unit_chart_contract_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "matching_verdict": "HOLD_DECLARED_ACTION_UNDERDETERMINES_V",
+  "n_checks": 8,
+  "physics_pass": false,
+  "remediation_item": "R5_MICROSCOPIC_MATCHING_DECISION",
+  "route_namespace_note": "This remediation R5 is distinct from UVIR-003 K_Q route R5 (Conditional AQUAL-class IR anchor).",
+  "scientific_boundary": "The audit proves non-identifiability within the declared action class. It is not a theorem that no UV completion can predict V; it states exactly what the current declared action does not predict.",
+  "stage4A_status": "CLOSED",
+  "status_firewall": {
+    "C_m_numeric_derived": false,
+    "K_Q_numeric_derived": false,
+    "MAT001_pass": false,
+    "UVIR003_pass": false,
+    "V_computed": false,
+    "physics_pass": false,
+    "stage4A_reopened": false
+  },
+  "subgate_status": "PASS_MAT001_R5_IDENTIFIABILITY_AUDIT_HOLD",
+  "symbolic_result": {
+    "declared_joint_EFT": {
+      "force_time_kinetic": "K_Q*(U.nabla(psi))^2/2",
+      "independent_wilson_coefficients": [
+        "C_m",
+        "K_Q"
+      ],
+      "matter_metric": "g_tilde_munu=exp(2*C_m*(psi-psi_star))*g_munu",
+      "n_declared_action_relations_between_C_m_and_K_Q": 0,
+      "n_independent_wilson_coefficients": 2,
+      "signed_canonical_residue": "C_m/sqrt(K_Q)"
+    },
+    "field_redefinition": {
+      "C_m_prime": "C_m/s",
+      "K_Q_prime": "K_Q/s**2",
+      "V_invariant": true,
+      "V_prime": "C_m/sqrt(K_Q)",
+      "map": "psi_prime=s*psi with s>0",
+      "meaning": "Field normalization removes neither the physical residue nor the need to determine it."
+    },
+    "identifiability": {
+      "V_identified_by_declared_action_form": false,
+      "continuous_family": {
+        "C_m": "V_target*sqrt(kappa)",
+        "K_Q": "kappa",
+        "V": "V_target",
+        "domain": "kappa>0 and V_target real nonzero",
+        "recovers_arbitrary_target_V": true
+      },
+      "fixed_V_fibre_dimension": 1,
+      "jacobian": [
+        [
+          "1/sqrt(K_Q)",
+          "-C_m/(2*K_Q**(3/2))"
+        ]
+      ],
+      "jacobian_rank": 1,
+      "map": "F(C_m,K_Q)=C_m/sqrt(K_Q)",
+      "parameter_dimension": 2
+    },
+    "proposed_shortcuts": {
+      "C_m_equals_C_IR": {
+        "V": "C_IR/sqrt(K_Q)",
+        "disposition": "REJECTED_AS_DERIVED_CLOSURE",
+        "still_depends_on_K_Q": true
+      },
+      "UVIR_R5_AQUAL_anchor": {
+        "disposition": "CONDITIONAL_PHENOMENOLOGY_FIXES_C_obs_NOT_V"
+      },
+      "fixed_C_obs_and_C_IR": {
+        "C_m_positive_branch": "C_IR**(1/3)*C_obs**(2/3)",
+        "V": "C_IR**(1/3)*C_obs**(2/3)/sqrt(K_Q)",
+        "disposition": "INSUFFICIENT_WITHOUT_K_Q_OR_RESIDUE",
+        "still_depends_on_K_Q": true
+      },
+      "set_K_Q_equal_1": {
+        "disposition": "FIELD_NORMALIZATION_NOT_A_PHYSICAL_MATCH"
+      }
+    }
+  },
+  "tier1_decision": {
+    "finding": "Placing C_m and K_Q in one declared EFT action is necessary but does not relate independent Wilson coefficients. The action class admits a continuous one-parameter family at fixed V and admits arbitrary nonzero signed V across the family.",
+    "minimum_new_physics_for_closure": [
+      "a microscopic calculation of g_phi/sqrt(Z_phi) in a named parent action",
+      "or a live on-shell signed matter-to-physical-mode residue",
+      "or an independently justified coefficient relation plus enough physical input to fix V"
+    ],
+    "next_action": "Do not perform another coefficient inventory. Supply one named microscopic completion or derive the live normalized residue; otherwise retain HOLD."
+  },
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

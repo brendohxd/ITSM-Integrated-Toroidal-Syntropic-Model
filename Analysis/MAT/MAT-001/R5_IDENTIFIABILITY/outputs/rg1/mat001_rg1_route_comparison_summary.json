@@ -1,0 +1,78 @@
+{
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "audit": "MAT-001_RG1_R5_P1_M1_M5_A0_A2",
+  "calculation_status": "PASS_DETERMINISTIC_DISPOSITION_MATRIX",
+  "evidence_sha256": {
+    "Theory/Core/ITSM_Tier1_Route_Test_Programme.md": "F2F5077D35C4AAD97C0BDC6C82F694CB69FCEE3CAB6F84B9FCB964567854D850",
+    "Theory/Gates/MAT-001/MAT-001_R5_P1_SPEC.md": "051C3D162A886C86BCF5635B8FB3E9400ECA0AD635DA6DD29C93946017C2B478",
+    "Theory/Gates/MAT-001/R5_P1_T2_COVARIANT_COMPENSATOR.md": "6C035856F0CAE0C513132F1FB30A7769392C72C312AB52033A26B3BBE8D7594F",
+    "Theory/Gates/MAT-001/R5_P1_T7_OBSERVATIONAL_COMPLIANCE.md": "1856BE30FFF13F94900A6D6576E47BC98D5E13047D6DA866D0008F53CF6369B4"
+  },
+  "physics_status": "MAT-001_BLOCKED",
+  "routes": [
+    {
+      "A0": "FAIL",
+      "A1": "FAIL",
+      "A2": "FAIL",
+      "disposition": "REJECT_CURRENT_INSTANTIATION",
+      "id": "R5-P1/M1-current",
+      "identity": "PARTIAL",
+      "reason": "real compensator toy replaces the required finite-density complex condensate; f and ell remain free; no constrained signed physical residue; Cassini inequality fails its own numbers"
+    },
+    {
+      "A0": "OPEN",
+      "A1": "OPEN",
+      "A2": "OPEN",
+      "disposition": "DO_NOT_ADVANCE_RG1",
+      "id": "M1-redesign",
+      "identity": "HIGH_IF_CONDENSATE_RETAINED",
+      "reason": "requires a new complete parent action and cannot inherit evidence from rejected R5-P1"
+    },
+    {
+      "A0": "OPEN",
+      "A1": "OPEN",
+      "A2": "OPEN",
+      "disposition": "ADVANCE_CHEAP_REDUCTION",
+      "id": "M2",
+      "identity": "HIGH",
+      "reason": "closest microscopic test of whether the declared condensate radial/heavy sector generates a static matter vertex; falsifiable by absent source or independent soft coefficient"
+    },
+    {
+      "A0": "OPEN",
+      "A1": "OPEN",
+      "A2": "OPEN",
+      "disposition": "HOLD",
+      "id": "M3",
+      "identity": "MEDIUM",
+      "reason": "no single parent portal currently prevents appended coupling or double counting"
+    },
+    {
+      "A0": "PASS_METHOD",
+      "A1": "BLOCKED_BY_PARENT",
+      "A2": "OPEN",
+      "disposition": "ADVANCE_INVARIANT_RESIDUE_CONTROL",
+      "id": "M4",
+      "identity": "HIGH",
+      "reason": "directly asks for the chart-invariant source-pole residue and can kill normalization artifacts without assigning bare K_Q"
+    },
+    {
+      "A0": "OPEN",
+      "A1": "OPEN",
+      "A2": "OPEN",
+      "disposition": "HOLD_PENDING_T1_T2",
+      "id": "M5",
+      "identity": "HIGHEST",
+      "reason": "normalized moduli/winding modes and matter coupling are absent; inserting L=c/H, 2*pi, 2/3, or a cycle count is forbidden"
+    }
+  ],
+  "rules": [
+    "no ordinal score is a physics result",
+    "current R5-P1 rejection does not reject every possible M1 action",
+    "advancement authorizes only the named cheap reduction/control, not MAT promotion"
+  ],
+  "selected_for_next_cheap_work": [
+    "M4",
+    "M2"
+  ]
+}

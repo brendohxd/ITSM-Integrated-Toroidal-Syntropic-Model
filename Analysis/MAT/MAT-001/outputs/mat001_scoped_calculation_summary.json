@@ -1,0 +1,134 @@
+{
+  "C_obs_micro_status": "NOT_DERIVED",
+  "V_status": "NOT_COMPUTED",
+  "calculation_status": "PASS",
+  "checklist": {
+    "MAT_PASS": false,
+    "SPARC_H0_ban": true,
+    "compute_V_from_S_int": false,
+    "declare_S_int_form": true,
+    "map_I_a0_Lambda_formula": true,
+    "report_C_obs_Derived_from_S_int": false,
+    "stage2_exit_and_handoff": true,
+    "static_reduction_C_obs_form": true
+  },
+  "checks": [
+    {
+      "got": {
+        "M3": "PARTIAL_DOCUMENTED_CONDITIONAL_WITH_SCOPE",
+        "M6": "OPEN_CONDITIONAL_NDA_DIAGNOSTIC_ONLY",
+        "M7": "OPEN_MAT_BLOCKED_FOR_PASS",
+        "allows_MAT_PASS": false,
+        "allows_UVIR_full_PASS": false,
+        "allows_stage3_scoped_MAT_calculation": true,
+        "status": "CONDITIONAL_WITH_SCOPE"
+      },
+      "name": "uv_stage2b_handoff_authorizes_scoped_calc_only",
+      "ok": true
+    },
+    {
+      "got": "PASS_STAGE2C_FLOOR_DIAGNOSTICS",
+      "name": "stage2c_diagnostics_present",
+      "ok": true
+    },
+    {
+      "name": "matching_route_R2_interface_present",
+      "ok": true
+    },
+    {
+      "name": "static_reduction_identities_ok",
+      "ok": true
+    },
+    {
+      "name": "conditional_Cobs_baseline_not_labelled_Derived",
+      "ok": true
+    },
+    {
+      "name": "V_not_falsely_claimed_computed",
+      "ok": true
+    },
+    {
+      "flags": {
+        "Derived_C_obs_from_this_gate": false,
+        "Derived_K_Q": false,
+        "Derived_V_from_S_int": false,
+        "MAT001_PASS": false,
+        "SPARC_or_H0_validation": false,
+        "UVIR_full_PASS": false,
+        "downstream_Derived_use_authorized": false,
+        "dual_RAR_a0_cH0_C_2_3": false
+      },
+      "name": "claim_firewall_MAT_PASS_forbidden",
+      "ok": true
+    },
+    {
+      "name": "no_dual_RAR_packaging",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "Derived_C_obs_from_this_gate": false,
+    "Derived_K_Q": false,
+    "Derived_V_from_S_int": false,
+    "MAT001_PASS": false,
+    "SPARC_or_H0_validation": false,
+    "UVIR_full_PASS": false,
+    "downstream_Derived_use_authorized": false,
+    "dual_RAR_a0_cH0_C_2_3": false
+  },
+  "claim_status": "Conditional_provisional_structure",
+  "conditional_baseline": {
+    "C_IR_status": "OPEN_Wilson",
+    "C_obs_hypothesis": 1.0,
+    "K_Q_status": "NOT_DERIVED",
+    "V_status": "NOT_COMPUTED",
+    "claim_status": "Conditional",
+    "convention_note": "Under C_m = C_IR = C, C_obs = C; Master Plan default empirical hypothesis C_obs ~ 1 until MAT computes otherwise \u2014 Conditional, not Derived from S_int in this package",
+    "label": "CONDITIONAL_AQUAL_IR_BASELINE"
+  },
+  "declared_S_int": {
+    "form": "-C_m rho_b psi (+ architecture completion terms as declared)",
+    "source": "ITSM_Core_Architecture.md \u00a73.5 / \u00a75 weak-field",
+    "status": "DECLARED_FORM_NOT_FULL_MICRO_MATCHING"
+  },
+  "gate": "MAT-001",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_gate_status": "BLOCKED_PASS_TAG_FORBIDDEN",
+  "mat001_pass": false,
+  "n_checks": 8,
+  "next_required": [
+    "Compute V from declared S_int once force kinetic chart / K_Q matching available",
+    "Reopen UVIR Stage 4A with the matched invariant; Stage 5 remains held",
+    "Optional: explicit interaction Lagrangian beyond static -C_m rho psi"
+  ],
+  "physics_pass": false,
+  "provisional_invariant_map": {
+    "C_obs_computed_from_micro_S_int": false,
+    "I_a0": "C_IR**(1/3)*V**2/(12*pi*C_obs**(4/3)*G)",
+    "V_computed_this_stage": false,
+    "note": "Once V is computed from S_int (requires force kinetic chart / K_Q), substitute Conditional or matched (C_obs, C_IR, V) here"
+  },
+  "scientific_boundary": "Scoped MAT-001 calculation under UVIR Stage 2 Conditional handoff. Freezes architecture static-reduction identities and Conditional C_obs~1 baseline hypothesis. Does not compute V from S_int (K_Q open), does not issue MAT PASS, does not authorize downstream Derived use, does not close UVIR-003.",
+  "serial_stage": 3,
+  "serial_stage_status": "PARTIAL_PROVISIONAL_V_NOT_COMPUTED",
+  "stage": "SCOPED_CALCULATION_UVIR_SERIAL_STAGE_3",
+  "static_reduction": {
+    "C_m_from_Cobs_CIR": "C_IR**(1/3)*C_obs**(2/3)",
+    "C_obs_form": "C_m**(3/2)/sqrt(C_IR)",
+    "I_a0_in_Cobs_CIR_V": "C_IR**(1/3)*V**2/(12*pi*C_obs**(4/3)*G)",
+    "S_int_declared_form": "S_int contains -C_m rho_b psi (architecture weak-field)",
+    "V_definition": "C_m/sqrt(K_Q)",
+    "form_status": "Derived_under_architecture_premises",
+    "numeric_C_obs_status": "NOT_DERIVED_from_S_int_microphysics",
+    "numeric_V_status": "NOT_COMPUTED_requires_K_Q_or_vertex_dynamics",
+    "special_convention_Cm_eq_CIR": "C_obs = C"
+  },
+  "subgate_status": "PASS_MAT001_SCOPED_CALCULATION_PROVISIONAL",
+  "uv_handoff": {
+    "allows_MAT_PASS": false,
+    "allows_this_calculation": true,
+    "floor_subgate": "PASS_CONDITIONAL_MATCHING_FLOOR",
+    "stage2c_subgate": "PASS_STAGE2C_FLOOR_DIAGNOSTICS"
+  },
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

@@ -1,0 +1,634 @@
+{
+  "stage": "CBR-001 Stage 3B",
+  "status": "PASS",
+  "target": {
+    "q": 1.0833333333333333,
+    "x": 0.07894736842105263,
+    "identity": "q=(1+x/3)/(1-2x/3)"
+  },
+  "analytic_check": {
+    "q_target": 1.0833333333333333,
+    "x_target": 0.07894736842105263,
+    "q_from_x_target": 1.0833333333333333,
+    "x_from_q_target": 0.07894736842105257,
+    "analytic_peak_N": 0.28768207245178085,
+    "numeric_peak_N": 0.287675,
+    "analytic_profile_maximum": 0.10546875,
+    "numeric_profile_maximum": 0.10546874996834649,
+    "analytic_S_minimum": 0.7485380116959064,
+    "numeric_S_minimum": 0.7485380119205592,
+    "outside_strict_small_perturbation_regime": true,
+    "passed": true
+  },
+  "scope": {
+    "mathematical_reachability": "Bracketed thresholds found for 5 of 8 initial shapes.",
+    "transient_crossing": "A threshold touch or crossing is classified separately from a maintained state.",
+    "dynamical_attraction": "ATTRACTOR requires five e-folds within 1%, nearby-trajectory convergence, and no subsequent decay toward q=1.",
+    "physically_plausible_amplitude": "Thresholds are labeled PERTURBATIVE, MARGINAL, or NONPERTURBATIVE using the maximum Casimir fraction."
+  },
+  "asymptotic_expectation": {
+    "expected": "delta/H -> 0 and q -> 1 because the source redshifts as a^-4",
+    "maximum_candidate_abs_q20_minus_one": 9.992007221626409e-16,
+    "confirmed": true
+  },
+  "run_grid": {
+    "r0": [
+      1.01,
+      1.05,
+      1.1,
+      1.25,
+      1.5,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "epsilon_min": 1e-06,
+    "epsilon_max": 10.0,
+    "epsilon_points": 49,
+    "N_max": 20.0,
+    "samples": 2001,
+    "total_integrations_recorded": 463,
+    "valid_integrations": 377
+  },
+  "thresholds": [
+    {
+      "r0": 1.01,
+      "bracket_low": null,
+      "bracket_high": null,
+      "epsilon_threshold": null,
+      "analytic_small_source_epsilon": 44.662994897682125,
+      "root_residual": null,
+      "classification": "NO_CROSSING",
+      "max_q": null,
+      "N_at_max_q": null,
+      "first_crossing_N": null,
+      "last_crossing_N": null,
+      "dwell_time_within_0p1_percent": null,
+      "dwell_time_within_1_percent": null,
+      "q_at_N_10": null,
+      "q_at_N_20": null,
+      "max_abs_casimir_fraction": null,
+      "amplitude_regime": "UNAVAILABLE",
+      "decays_toward_one": null,
+      "attractor": false
+    },
+    {
+      "r0": 1.05,
+      "bracket_low": null,
+      "bracket_high": null,
+      "epsilon_threshold": null,
+      "analytic_small_source_epsilon": 8.920700409404985,
+      "root_residual": null,
+      "classification": "NO_CROSSING",
+      "max_q": null,
+      "N_at_max_q": null,
+      "first_crossing_N": null,
+      "last_crossing_N": null,
+      "dwell_time_within_0p1_percent": null,
+      "dwell_time_within_1_percent": null,
+      "q_at_N_10": null,
+      "q_at_N_20": null,
+      "max_abs_casimir_fraction": null,
+      "amplitude_regime": "UNAVAILABLE",
+      "decays_toward_one": null,
+      "attractor": false
+    },
+    {
+      "r0": 1.1,
+      "bracket_low": 1.865663578576915,
+      "bracket_high": 2.6101572156825386,
+      "epsilon_threshold": 2.552842620154975,
+      "analytic_small_source_epsilon": 4.432260060271228,
+      "root_residual": 1.106670310946356e-12,
+      "classification": "TRANSIENT_CROSSING",
+      "max_q": 1.0833333333322266,
+      "N_at_max_q": 0.21,
+      "first_crossing_N": 0.21,
+      "last_crossing_N": 0.21,
+      "dwell_time_within_0p1_percent": 0.07,
+      "dwell_time_within_1_percent": 0.27,
+      "q_at_N_10": 1.0000000000000628,
+      "q_at_N_20": 1.0,
+      "max_abs_casimir_fraction": 2.535730672105811,
+      "amplitude_regime": "NONPERTURBATIVE",
+      "decays_toward_one": true,
+      "attractor": false
+    },
+    {
+      "r0": 1.25,
+      "bracket_low": 1.333521432163324,
+      "bracket_high": 1.865663578576915,
+      "epsilon_threshold": 1.3378351477505195,
+      "analytic_small_source_epsilon": 1.70600298960523,
+      "root_residual": 3.527045322471167e-11,
+      "classification": "TRANSIENT_CROSSING",
+      "max_q": 1.0833333333686037,
+      "N_at_max_q": 0.26,
+      "first_crossing_N": 0.259999991301086,
+      "last_crossing_N": 0.26000000513288674,
+      "dwell_time_within_0p1_percent": 0.07999999999999999,
+      "dwell_time_within_1_percent": 0.28,
+      "q_at_N_10": 1.0000000000000697,
+      "q_at_N_20": 1.0,
+      "max_abs_casimir_fraction": 0.6318241817762505,
+      "amplitude_regime": "NONPERTURBATIVE",
+      "decays_toward_one": true,
+      "attractor": false
+    },
+    {
+      "r0": 1.5,
+      "bracket_low": 0.4869675251658631,
+      "bracket_high": 0.6812920690579622,
+      "epsilon_threshold": 0.6757299265902508,
+      "analytic_small_source_epsilon": 0.7693131918954423,
+      "root_residual": 1.199040866595169e-14,
+      "classification": "TRANSIENT_CROSSING",
+      "max_q": 1.0833333333333452,
+      "N_at_max_q": 0.28,
+      "first_crossing_N": 0.27999999998670383,
+      "last_crossing_N": 0.28000000000128333,
+      "dwell_time_within_0p1_percent": 0.08000000000000002,
+      "dwell_time_within_1_percent": 0.29000000000000004,
+      "q_at_N_10": 1.0000000000000726,
+      "q_at_N_20": 1.0,
+      "max_abs_casimir_fraction": 0.27288564281273836,
+      "amplitude_regime": "NONPERTURBATIVE",
+      "decays_toward_one": true,
+      "attractor": false
+    },
+    {
+      "r0": 2.0,
+      "bracket_low": 0.24879023672388398,
+      "bracket_high": 0.3480700588428413,
+      "epsilon_threshold": 0.27793342217988126,
+      "analytic_small_source_epsilon": 0.29947135802469804,
+      "root_residual": 2.220446049250313e-16,
+      "classification": "TRANSIENT_CROSSING",
+      "max_q": 1.0833333333333335,
+      "N_at_max_q": 0.28,
+      "first_crossing_N": 0.279999999999978,
+      "last_crossing_N": 0.28000000000038716,
+      "dwell_time_within_0p1_percent": 0.08000000000000002,
+      "dwell_time_within_1_percent": 0.30000000000000004,
+      "q_at_N_10": 1.000000000000074,
+      "q_at_N_20": 1.0,
+      "max_abs_casimir_fraction": 0.13297989981400185,
+      "amplitude_regime": "NONPERTURBATIVE",
+      "decays_toward_one": true,
+      "attractor": false
+    },
+    {
+      "r0": 3.0,
+      "bracket_low": 0.06493816315762113,
+      "bracket_high": 0.0908517575651688,
+      "epsilon_threshold": 0.089182243676456,
+      "analytic_small_source_epsilon": 0.09400499277647566,
+      "root_residual": 1.554312234475219e-14,
+      "classification": "TRANSIENT_CROSSING",
+      "max_q": 1.0833333333333488,
+      "N_at_max_q": 0.29,
+      "first_crossing_N": 0.2899999999948611,
+      "last_crossing_N": 0.29000000000220216,
+      "dwell_time_within_0p1_percent": 0.08000000000000002,
+      "dwell_time_within_1_percent": 0.29000000000000004,
+      "q_at_N_10": 1.0000000000000742,
+      "q_at_N_20": 0.999999999999999,
+      "max_abs_casimir_fraction": 0.08207134935941789,
+      "amplitude_regime": "MARGINAL",
+      "decays_toward_one": true,
+      "attractor": false
+    },
+    {
+      "r0": 4.0,
+      "bracket_low": null,
+      "bracket_high": null,
+      "epsilon_threshold": null,
+      "analytic_small_source_epsilon": 0.04287456350705043,
+      "root_residual": null,
+      "classification": "INVALID",
+      "max_q": null,
+      "N_at_max_q": null,
+      "first_crossing_N": null,
+      "last_crossing_N": null,
+      "dwell_time_within_0p1_percent": null,
+      "dwell_time_within_1_percent": null,
+      "q_at_N_10": null,
+      "q_at_N_20": null,
+      "max_abs_casimir_fraction": null,
+      "amplitude_regime": "UNAVAILABLE",
+      "decays_toward_one": null,
+      "attractor": false
+    }
+  ],
+  "stability_tests": {
+    "r0=1.1": {
+      "cases": [
+        {
+          "perturbation": "r0_x_0p99",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.00990287908566323,
+          "dwell_1_percent_change": -0.2,
+          "late_q_change": 8.881784197001252e-16,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "r0_x_1p01",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.09729492845496725,
+          "maximum_q_change": 0.010123853583524411,
+          "dwell_1_percent_change": 0.08999999999999997,
+          "late_q_change": 6.661338147750939e-16,
+          "classification": "TRANSIENT_CROSSING"
+        },
+        {
+          "perturbation": "epsilon_x_0p99",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.0016656169798419107,
+          "dwell_1_percent_change": -0.030000000000000027,
+          "late_q_change": 0.0,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "epsilon_x_1p01",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.047645686442877366,
+          "maximum_q_change": 0.0017042131681810346,
+          "dwell_1_percent_change": 0.020000000000000018,
+          "late_q_change": 6.661338147750939e-16,
+          "classification": "TRANSIENT_CROSSING"
+        },
+        {
+          "perturbation": "delta0_minus_1pct_target",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.0006566447632101458,
+          "dwell_1_percent_change": -0.010000000000000009,
+          "late_q_change": 0.0,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "delta0_plus_1pct_target",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.031176170024594912,
+          "maximum_q_change": 0.0006571975677927,
+          "dwell_1_percent_change": 0.0,
+          "late_q_change": 0.0,
+          "classification": "TRANSIENT_CROSSING"
+        }
+      ],
+      "late_q_spread": 8.881784197001252e-16,
+      "nearby_trajectories_converge": true,
+      "decays_toward_one": true,
+      "attractor": false,
+      "final_classification": "TRANSIENT_CROSSING"
+    },
+    "r0=1.25": {
+      "cases": [
+        {
+          "perturbation": "r0_x_0p99",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.004849762372322264,
+          "dwell_1_percent_change": -0.07000000000000003,
+          "late_q_change": 0.0,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "r0_x_1p01",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.08301140215197109,
+          "maximum_q_change": 0.004950905035910225,
+          "dwell_1_percent_change": 0.06,
+          "late_q_change": 0.0,
+          "classification": "TRANSIENT_CROSSING"
+        },
+        {
+          "perturbation": "epsilon_x_0p99",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.0011327729615120408,
+          "dwell_1_percent_change": -0.010000000000000009,
+          "late_q_change": 0.0,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "epsilon_x_1p01",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.04400314762345231,
+          "maximum_q_change": 0.0011413315915425049,
+          "dwell_1_percent_change": 0.019999999999999962,
+          "late_q_change": 0.0,
+          "classification": "TRANSIENT_CROSSING"
+        },
+        {
+          "perturbation": "delta0_minus_1pct_target",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.00047706164934413486,
+          "dwell_1_percent_change": 0.0,
+          "late_q_change": 0.0,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "delta0_plus_1pct_target",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.030771695998789317,
+          "maximum_q_change": 0.0004773550448926578,
+          "dwell_1_percent_change": 0.009999999999999953,
+          "late_q_change": 0.0,
+          "classification": "TRANSIENT_CROSSING"
+        }
+      ],
+      "late_q_spread": 0.0,
+      "nearby_trajectories_converge": true,
+      "decays_toward_one": true,
+      "attractor": false,
+      "final_classification": "TRANSIENT_CROSSING"
+    },
+    "r0=1.5": {
+      "cases": [
+        {
+          "perturbation": "r0_x_0p99",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.0033406481635167573,
+          "dwell_1_percent_change": -0.04000000000000006,
+          "late_q_change": 0.0,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "r0_x_1p01",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.0758719513975884,
+          "maximum_q_change": 0.003413827770832878,
+          "dwell_1_percent_change": 0.039999999999999925,
+          "late_q_change": 6.661338147750939e-16,
+          "classification": "TRANSIENT_CROSSING"
+        },
+        {
+          "perturbation": "epsilon_x_0p99",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.001002221231188205,
+          "dwell_1_percent_change": -0.010000000000000009,
+          "late_q_change": 0.0,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "epsilon_x_1p01",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.04533233826954497,
+          "maximum_q_change": 0.001006400771396354,
+          "dwell_1_percent_change": 0.020000000000000018,
+          "late_q_change": 2.220446049250313e-16,
+          "classification": "TRANSIENT_CROSSING"
+        },
+        {
+          "perturbation": "delta0_minus_1pct_target",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.00042280447434994706,
+          "dwell_1_percent_change": 0.0,
+          "late_q_change": 0.0,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "delta0_plus_1pct_target",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.032632159124677984,
+          "maximum_q_change": 0.0004258850973546391,
+          "dwell_1_percent_change": 0.0,
+          "late_q_change": 0.0,
+          "classification": "TRANSIENT_CROSSING"
+        }
+      ],
+      "late_q_spread": 6.661338147750939e-16,
+      "nearby_trajectories_converge": true,
+      "decays_toward_one": true,
+      "attractor": false,
+      "final_classification": "TRANSIENT_CROSSING"
+    },
+    "r0=2": {
+      "cases": [
+        {
+          "perturbation": "r0_x_0p99",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.0027287818112518014,
+          "dwell_1_percent_change": -0.050000000000000044,
+          "late_q_change": 0.0,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "r0_x_1p01",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.0622161509875202,
+          "maximum_q_change": 0.0027921285241381266,
+          "dwell_1_percent_change": 0.029999999999999916,
+          "late_q_change": 2.220446049250313e-16,
+          "classification": "TRANSIENT_CROSSING"
+        },
+        {
+          "perturbation": "epsilon_x_0p99",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.0009476615566128554,
+          "dwell_1_percent_change": -0.020000000000000018,
+          "late_q_change": 2.220446049250313e-16,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "epsilon_x_1p01",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.0361153796936462,
+          "maximum_q_change": 0.0009503140265301191,
+          "dwell_1_percent_change": 0.010000000000000009,
+          "late_q_change": 2.220446049250313e-16,
+          "classification": "TRANSIENT_CROSSING"
+        },
+        {
+          "perturbation": "delta0_minus_1pct_target",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.0004046975384575102,
+          "dwell_1_percent_change": -0.010000000000000009,
+          "late_q_change": 0.0,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "delta0_plus_1pct_target",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.023603274201747404,
+          "maximum_q_change": 0.0004103242258672868,
+          "dwell_1_percent_change": 0.0,
+          "late_q_change": -3.3306690738754696e-16,
+          "classification": "TRANSIENT_CROSSING"
+        }
+      ],
+      "late_q_spread": 5.551115123125783e-16,
+      "nearby_trajectories_converge": true,
+      "decays_toward_one": true,
+      "attractor": false,
+      "final_classification": "TRANSIENT_CROSSING"
+    },
+    "r0=3": {
+      "cases": [
+        {
+          "perturbation": "r0_x_0p99",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.002508701652061518,
+          "dwell_1_percent_change": -0.030000000000000027,
+          "late_q_change": 1.6653345369377348e-15,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "r0_x_1p01",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.0664699223930906,
+          "maximum_q_change": 0.0025641063272059395,
+          "dwell_1_percent_change": 0.029999999999999916,
+          "late_q_change": -1.3322676295501878e-15,
+          "classification": "TRANSIENT_CROSSING"
+        },
+        {
+          "perturbation": "epsilon_x_0p99",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.0009266622530412771,
+          "dwell_1_percent_change": -0.010000000000000009,
+          "late_q_change": 6.661338147750939e-16,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "epsilon_x_1p01",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.04229861099138135,
+          "maximum_q_change": 0.0009287742350201356,
+          "dwell_1_percent_change": 0.020000000000000018,
+          "late_q_change": -2.9976021664879227e-15,
+          "classification": "TRANSIENT_CROSSING"
+        },
+        {
+          "perturbation": "delta0_minus_1pct_target",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": null,
+          "maximum_q_change": -0.00039421032237063613,
+          "dwell_1_percent_change": 0.0,
+          "late_q_change": 1.4432899320127035e-15,
+          "classification": "NO_CROSSING"
+        },
+        {
+          "perturbation": "delta0_plus_1pct_target",
+          "valid": true,
+          "invalid_reason": "",
+          "crossing_time_change": -0.030148685372002826,
+          "maximum_q_change": 0.00039440956231562296,
+          "dwell_1_percent_change": 0.010000000000000009,
+          "late_q_change": 1.6653345369377348e-15,
+          "classification": "TRANSIENT_CROSSING"
+        }
+      ],
+      "late_q_spread": 4.6629367034256575e-15,
+      "nearby_trajectories_converge": true,
+      "decays_toward_one": true,
+      "attractor": false,
+      "final_classification": "TRANSIENT_CROSSING"
+    }
+  },
+  "classification_counts_by_initial_shape": {
+    "ATTRACTOR": 0,
+    "INVALID": 1,
+    "NO_CROSSING": 2,
+    "QUASI_PLATEAU": 0,
+    "TRANSIENT_CROSSING": 5
+  },
+  "validations": {
+    "q_x_identity": {
+      "error": 0.0,
+      "passed": true
+    },
+    "analytic_small_source": {
+      "q_target": 1.0833333333333333,
+      "x_target": 0.07894736842105263,
+      "q_from_x_target": 1.0833333333333333,
+      "x_from_q_target": 0.07894736842105257,
+      "analytic_peak_N": 0.28768207245178085,
+      "numeric_peak_N": 0.287675,
+      "analytic_profile_maximum": 0.10546875,
+      "numeric_profile_maximum": 0.10546874996834649,
+      "analytic_S_minimum": 0.7485380116959064,
+      "numeric_S_minimum": 0.7485380119205592,
+      "outside_strict_small_perturbation_regime": true,
+      "passed": true
+    },
+    "hamiltonian_constraint": {
+      "maximum_residual": 2.957685255872484e-16,
+      "threshold": 1e-09,
+      "passed": true
+    },
+    "casimir_continuity": {
+      "maximum_residual": 4.391785391958858e-16,
+      "threshold": 1e-07,
+      "passed": true
+    },
+    "bracketed_roots": {
+      "root_count": 5,
+      "maximum_target_residual": 3.527045322471167e-11,
+      "threshold": 1e-07,
+      "passed": true
+    },
+    "late_time_decay": {
+      "maximum_candidate_abs_q20_minus_one": 9.992007221626409e-16,
+      "threshold": 1e-06,
+      "passed": true
+    },
+    "classification_vocabulary": {
+      "used": [
+        "INVALID",
+        "NO_CROSSING",
+        "TRANSIENT_CROSSING"
+      ],
+      "passed": true
+    }
+  },
+  "outputs": {
+    "runs_csv": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3b_outputs\\cbr001_stage3b_runs.csv",
+    "thresholds_csv": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3b_outputs\\cbr001_stage3b_thresholds.csv",
+    "summary_json": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3b_outputs\\cbr001_stage3b_summary.json",
+    "ratio_plot": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3b_outputs\\cbr001_stage3b_ratio.png",
+    "phase_space_plot": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3b_outputs\\cbr001_stage3b_phase_space.png",
+    "threshold_plot": "C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\Casimir\\CBR-001\\stage3b_outputs\\cbr001_stage3b_threshold_epsilon.png"
+  }
+}

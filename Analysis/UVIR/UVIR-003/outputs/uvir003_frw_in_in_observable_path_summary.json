@@ -1,0 +1,365 @@
+{
+  "calculation_status": "PASS",
+  "declared_proxy": {
+    "G_proxy_abs": 73.24784358998507,
+    "G_proxy_real_diagnostic": 73.24784358998507,
+    "formula": "abs(O)*abs(T_gain)"
+  },
+  "definition": {
+    "T_gain": "endpoint_normalized_phase_space_gain on controlled high-q fixed-comoving transfer sample",
+    "full_in_in_time_integrals": "NOT_COMPUTED",
+    "local_packet_proxy": "O[sigma] from local adiabatic observable norm",
+    "not_a_cross_section": true,
+    "not_a_unitarity_bound": true,
+    "not_an_s_matrix": true,
+    "two_time_skeleton": "G_proxy = O[sigma] * T_gain(high-q transfer)"
+  },
+  "dependencies": {
+    "admitted_external_q_over_H": [
+      47.5,
+      50.0,
+      75.0,
+      100.0
+    ],
+    "exchange_domain_subgate": "PASS_CONTROLLED_REAL_POLE_ADIABATIC_EXCHANGE_DOMAIN",
+    "frw_background_status": "ON_SHELL_REPRESENTATIVE_BRANCH_VERIFIED",
+    "packet_subgate": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+    "transfer_calculation_status": "HOLD",
+    "transfer_hold_retained": true
+  },
+  "diagnostics": {
+    "high_q_transfer_available": true,
+    "packet_nonzero": true,
+    "proxy_finite": true
+  },
+  "frw_window": {
+    "H_final": 0.07640526776866156,
+    "H_initial": 0.6198414963432367,
+    "a_final": 4.571577111625282,
+    "a_initial": 1.0,
+    "samples": 801,
+    "t_final": 8.0,
+    "t_initial": 0.0
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "next_required_calculation": [
+    "evaluate local kernel (or reduced response) at multiple FRW slices in the admitted high-q domain, not only the initial freeze",
+    "replace scalar T_gain with mode-projected two-time Green's function from the reduced quadratic system",
+    "nonzero-gradient |grad(pi)|^3 sector",
+    "only then declared perturbative-unitarity / EFT-validity criterion"
+  ],
+  "packet_selection": {
+    "mode_pair": {
+      "left": "physical_pair_1",
+      "right": "physical_pair_1"
+    },
+    "observable_abs": 1.7230958462738883,
+    "observable_real": 1.7230958462738883,
+    "q0_over_H": 50.0,
+    "requested_sigma_ln": 0.05,
+    "used_sigma_ln": 0.05
+  },
+  "physical_2_to_2_status": "IN_IN_PATH_DECLARED_FULL_DIAGRAM_NOT_ESTABLISHED",
+  "scientific_boundary": "Declares how a local packet proxy will attach to the FRW branch and to controlled high-q transfer diagnostics. Does not evaluate full in-in nested time integrals, does not establish unitarity, and does not unlock MAT-001. Transfer summary may remain HOLD for infrared modes; only high-q controlled samples enter the proxy.",
+  "stage": "B_FRW_IN_IN_OBSERVABLE_PATH",
+  "subgate_status": "PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED",
+  "trajectory_fixed_comoving_q_over_H_sample": [
+    {
+      "H": 0.6198414963432367,
+      "a": 1.0,
+      "q_phys_over_H_fixed_comoving": 50.0,
+      "rho": 1.0,
+      "t": 0.0
+    },
+    {
+      "H": 0.532260604773906,
+      "a": 1.1210140434531841,
+      "q_phys_over_H_fixed_comoving": 51.9415942639581,
+      "rho": 0.9953830839858641,
+      "t": 0.2
+    },
+    {
+      "H": 0.4838236899982208,
+      "a": 1.2404179101750525,
+      "q_phys_over_H_fixed_comoving": 51.64110113584938,
+      "rho": 0.9717785751436788,
+      "t": 0.4
+    },
+    {
+      "H": 0.45044645503611774,
+      "a": 1.3617085107340527,
+      "q_phys_over_H_fixed_comoving": 50.5269782938846,
+      "rho": 0.9254767260196903,
+      "t": 0.6
+    },
+    {
+      "H": 0.4214157745525783,
+      "a": 1.4857254518060925,
+      "q_phys_over_H_fixed_comoving": 49.49955564532067,
+      "rho": 0.8594157655047725,
+      "t": 0.8
+    },
+    {
+      "H": 0.3924450993997713,
+      "a": 1.611722827969745,
+      "q_phys_over_H_fixed_comoving": 48.998341964134646,
+      "rho": 0.7785894910222584,
+      "t": 1.0
+    },
+    {
+      "H": 0.36245859806979325,
+      "a": 1.7381311737957352,
+      "q_phys_over_H_fixed_comoving": 49.193723596662856,
+      "rho": 0.6881684863613149,
+      "t": 1.2
+    },
+    {
+      "H": 0.3318224377199275,
+      "a": 1.8631019886087752,
+      "q_phys_over_H_fixed_comoving": 50.13121989520335,
+      "rho": 0.5928101604556626,
+      "t": 1.4000000000000001
+    },
+    {
+      "H": 0.30140197720468576,
+      "a": 1.9848707465347735,
+      "q_phys_over_H_fixed_comoving": 51.805077026695436,
+      "rho": 0.49658656236127735,
+      "t": 1.6
+    },
+    {
+      "H": 0.2721185833096015,
+      "a": 2.1019799156181733,
+      "q_phys_over_H_fixed_comoving": 54.183104939397616,
+      "rho": 0.40327804229316644,
+      "t": 1.8
+    },
+    {
+      "H": 0.2447776925522146,
+      "a": 2.2134028970599102,
+      "q_phys_over_H_fixed_comoving": 57.20293880135263,
+      "rho": 0.31700519348262574,
+      "t": 2.0
+    },
+    {
+      "H": 0.22002106920072123,
+      "a": 2.318599766171692,
+      "q_phys_over_H_fixed_comoving": 60.75200188136908,
+      "rho": 0.24340249971631697,
+      "t": 2.2
+    },
+    {
+      "H": 0.19832162377687412,
+      "a": 2.417523617620081,
+      "q_phys_over_H_fixed_comoving": 64.64126646640813,
+      "rho": 0.19130202483691425,
+      "t": 2.4
+    },
+    {
+      "H": 0.17998250324031778,
+      "a": 2.510586826992855,
+      "q_phys_over_H_fixed_comoving": 68.58752290555623,
+      "rho": 0.17116810561871676,
+      "t": 2.6
+    },
+    {
+      "H": 0.1651278478249288,
+      "a": 2.5985911936391264,
+      "q_phys_over_H_fixed_comoving": 72.22580131366426,
+      "rho": 0.18300182916443297,
+      "t": 2.8000000000000003
+    },
+    {
+      "H": 0.15368750885652038,
+      "a": 2.6826248636360126,
+      "q_phys_over_H_fixed_comoving": 75.17131285580584,
+      "rho": 0.21218970750545815,
+      "t": 3.0
+    },
+    {
+      "H": 0.14538647563615212,
+      "a": 2.7639316747390965,
+      "q_phys_over_H_fixed_comoving": 77.1257393014788,
+      "rho": 0.24457623666935793,
+      "t": 3.2
+    },
+    {
+      "H": 0.1397528223592184,
+      "a": 2.843763983726799,
+      "q_phys_over_H_fixed_comoving": 77.98238525018638,
+      "rho": 0.2723980140858517,
+      "t": 3.4
+    },
+    {
+      "H": 0.13615497319954295,
+      "a": 2.923236064290431,
+      "q_phys_over_H_fixed_comoving": 77.86696628254721,
+      "rho": 0.29198755163017637,
+      "t": 3.6
+    },
+    {
+      "H": 0.13387013404942802,
+      "a": 3.0031989840768647,
+      "q_phys_over_H_fixed_comoving": 77.0873018621467,
+      "rho": 0.3017820690112488,
+      "t": 3.8000000000000003
+    },
+    {
+      "H": 0.13217385988612765,
+      "a": 3.084156901245978,
+      "q_phys_over_H_fixed_comoving": 76.02713325867744,
+      "rho": 0.30142085263034124,
+      "t": 4.0
+    },
+    {
+      "H": 0.13043145110470547,
+      "a": 3.166238048425238,
+      "q_phys_over_H_fixed_comoving": 75.04551845787601,
+      "rho": 0.29134248110460464,
+      "t": 4.2
+    },
+    {
+      "H": 0.12817013834323526,
+      "a": 3.2492229043343412,
+      "q_phys_over_H_fixed_comoving": 74.41907930367535,
+      "rho": 0.2725715993911636,
+      "t": 4.4
+    },
+    {
+      "H": 0.1251176523294168,
+      "a": 3.332620730504713,
+      "q_phys_over_H_fixed_comoving": 74.32692630208011,
+      "rho": 0.24658755564596704,
+      "t": 4.6000000000000005
+    },
+    {
+      "H": 0.1212038990568349,
+      "a": 3.4157774134303733,
+      "q_phys_over_H_fixed_comoving": 74.85908221403207,
+      "rho": 0.2152584871007683,
+      "t": 4.8
+    },
+    {
+      "H": 0.11653241004471314,
+      "a": 3.4979943506539897,
+      "q_phys_over_H_fixed_comoving": 76.02997010389576,
+      "rho": 0.18087840503953503,
+      "t": 5.0
+    },
+    {
+      "H": 0.11133329744359335,
+      "a": 3.5786396493618793,
+      "q_phys_over_H_fixed_comoving": 77.78710529905518,
+      "rho": 0.1464121339765125,
+      "t": 5.2
+    },
+    {
+      "H": 0.1059093649647125,
+      "a": 3.657237382335342,
+      "q_phys_over_H_fixed_comoving": 80.01347596476852,
+      "rho": 0.1161366277788077,
+      "t": 5.4
+    },
+    {
+      "H": 0.10058394035685246,
+      "a": 3.7335260657119154,
+      "q_phys_over_H_fixed_comoving": 82.52828477638606,
+      "rho": 0.09644737864414328,
+      "t": 5.6000000000000005
+    },
+    {
+      "H": 0.09565541861217434,
+      "a": 3.807482554673087,
+      "q_phys_over_H_fixed_comoving": 85.0948256946695,
+      "rho": 0.09361044055949509,
+      "t": 5.8
+    },
+    {
+      "H": 0.09136100738967311,
+      "a": 3.879311737262119,
+      "q_phys_over_H_fixed_comoving": 87.44502206976638,
+      "rho": 0.10621923301541272,
+      "t": 6.0
+    },
+    {
+      "H": 0.0878510965738734,
+      "a": 3.9494058657831497,
+      "q_phys_over_H_fixed_comoving": 89.32472711625573,
+      "rho": 0.12620584836285487,
+      "t": 6.2
+    },
+    {
+      "H": 0.08517551715140445,
+      "a": 4.01828035989939,
+      "q_phys_over_H_fixed_comoving": 90.55149773568948,
+      "rho": 0.14689334442252705,
+      "t": 6.4
+    },
+    {
+      "H": 0.0832828516178634,
+      "a": 4.086495492595585,
+      "q_phys_over_H_fixed_comoving": 91.0634375610394,
+      "rho": 0.16459494528584917,
+      "t": 6.6000000000000005
+    },
+    {
+      "H": 0.08203317573096389,
+      "a": 4.154575223152345,
+      "q_phys_over_H_fixed_comoving": 90.93571804655349,
+      "rho": 0.1774023542215781,
+      "t": 6.8
+    },
+    {
+      "H": 0.08122289526725336,
+      "a": 4.222935010990921,
+      "q_phys_over_H_fixed_comoving": 90.35616454753068,
+      "rho": 0.1843737391641946,
+      "t": 7.0
+    },
+    {
+      "H": 0.08061807072263755,
+      "a": 4.2918292107351945,
+      "q_phys_over_H_fixed_comoving": 89.57273182176955,
+      "rho": 0.18517454683912687,
+      "t": 7.2
+    },
+    {
+      "H": 0.0799906596292554,
+      "a": 4.3613254809195094,
+      "q_phys_over_H_fixed_comoving": 88.83679354948912,
+      "rho": 0.1799178710327858,
+      "t": 7.4
+    },
+    {
+      "H": 0.07915135121640589,
+      "a": 4.431309002043499,
+      "q_phys_over_H_fixed_comoving": 88.3609310720232,
+      "rho": 0.1690842125519915,
+      "t": 7.6000000000000005
+    },
+    {
+      "H": 0.07797354797300106,
+      "a": 4.501514183817758,
+      "q_phys_over_H_fixed_comoving": 88.29675291743906,
+      "rho": 0.1534801469902487,
+      "t": 7.8
+    },
+    {
+      "H": 0.07640526776866156,
+      "a": 4.571577111625282,
+      "q_phys_over_H_fixed_comoving": 88.72812416512359,
+      "rho": 0.13423610021701785,
+      "t": 8.0
+    }
+  ],
+  "transfer_selection": {
+    "chosen_initial_q_over_H": 100.0,
+    "endpoint_normalized_phase_space_gain": 42.50944237860012,
+    "high_q_min_initial": 10.0,
+    "high_q_sample_count": 2,
+    "maximum_real_mode_adiabaticity": 0.022154557261157573,
+    "numerical_status": "CONVERGED_GAUGE_INVARIANT_TRANSFER"
+  }
+}

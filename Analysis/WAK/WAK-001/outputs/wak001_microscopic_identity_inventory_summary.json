@@ -1,0 +1,101 @@
+{
+  "calculation_pass": true,
+  "candidate_dispositions": {
+    "W_equals_existing_finite_q_combination": "UNRESOLVED; no gauge-regular identification map is declared",
+    "W_equals_static_force_field_psi": "NOT_ESTABLISHED; static psi has no independent memory",
+    "W_is_independent_microscopic_mode": "UNRESOLVED; Route II is a Conditional calculation route",
+    "W_is_internal_constitutive_variable": "UNRESOLVED; Route I remains the fallback"
+  },
+  "checks": {
+    "actual_identity_is_unresolved": true,
+    "architecture_requires_autonomous_wake_data_and_dynamics": true,
+    "architecture_retains_wake_as_research_hypothesis": true,
+    "control_conflicting_routes_fail_closed": true,
+    "control_identification_map_changes_classification": true,
+    "control_parent_derivation_changes_classification": true,
+    "finite_q_basis_has_no_declared_W_coordinate": true,
+    "finite_q_physical_basis_is_verified_but_gate_is_open": true,
+    "mode_inventory_withholds_W_distinctness": true,
+    "quadratic_factorization_is_template_not_identity": true,
+    "recovery_plan_requires_new_causal_wake_derivation": true,
+    "track_a_force_field_is_pi_not_a_declared_W_map": true
+  },
+  "declared_existing_modes": [
+    {
+      "label": "Xi",
+      "role": "finite-q gauge-regular metric/frame continuation"
+    },
+    {
+      "label": "Q_rho",
+      "role": "retained condensate-density scalar"
+    },
+    {
+      "label": "Q_chi",
+      "role": "retained condensate-phase scalar"
+    },
+    {
+      "label": "Pi",
+      "role": "quadratically factorized Track-A force mode"
+    }
+  ],
+  "gate": "WAK-001",
+  "hold": "HOLD_WAK001_MICROSCOPIC_IDENTITY_MAP_UNDECLARED",
+  "identity_route_evidence": {
+    "free_zero_background_W": "adds a coordinate by construction; does not establish origin",
+    "independent_parent_action_derivation": "NOT_DECLARED",
+    "internal_constitutive_closure_derivation": "NOT_DECLARED",
+    "map_W_to_existing_mode": "NOT_DECLARED"
+  },
+  "identity_status": "UNRESOLVED",
+  "input_files": {
+    "core_architecture": {
+      "path": "C:/Users/brend/OneDrive/Documents/ITSM - Github/ITSM-Integrated-Toroidal-Syntropic-Model/Theory/Core/ITSM_Core_Architecture.md",
+      "sha256": "82A05933C82C41CF0AF88A6BEB4D1EA68A4E19D27995C1A6161D7AF7552DD226"
+    },
+    "core_recovery_plan": {
+      "path": "C:/Users/brend/OneDrive/Documents/ITSM - Github/ITSM-Integrated-Toroidal-Syntropic-Model/Theory/Core/ITSM_Core_Recovery_Plan.md",
+      "sha256": "D3BAB45B8DE0C0A0D45FFFAE719C5A0B911BAD3FE2FE36D72C81B389DF56C0A3"
+    },
+    "track_a_force": {
+      "path": "C:/Users/brend/OneDrive/Documents/ITSM - Github/ITSM-Integrated-Toroidal-Syntropic-Model/Analysis/UVIR/UVIR-003/outputs/uvir003_track_a_force_adm_cubic_summary.json",
+      "sha256": "6A829A1CC05BF0B4B7F4F6044689580D740E4A6AD24857C85A9A474DF3A10A62"
+    },
+    "uvir_physical_basis": {
+      "path": "C:/Users/brend/OneDrive/Documents/ITSM - Github/ITSM-Integrated-Toroidal-Syntropic-Model/Analysis/UVIR/UVIR-003/outputs/uvir003_physical_scalar_basis_summary.json",
+      "sha256": "9177BFA76F25CBD9BE29EE81C2A5771E12656B7E6D8F8D49F01D821B1C632212"
+    },
+    "wak_mode_inventory": {
+      "path": "C:/Users/brend/OneDrive/Documents/ITSM - Github/ITSM-Integrated-Toroidal-Syntropic-Model/Analysis/WAK/WAK-001/outputs/wak001_route2_mode_inventory_prescreen_summary.json",
+      "sha256": "673CB9B8183D070830FEF51F0746FA277816A772987D83E93A049579399508E8"
+    },
+    "wak_zero_background_factorization": {
+      "path": "C:/Users/brend/OneDrive/Documents/ITSM - Github/ITSM-Integrated-Toroidal-Syntropic-Model/Analysis/WAK/WAK-001/outputs/wak001_zero_background_factorization_summary.json",
+      "sha256": "D969D2BC8E8EC12E302B13F20AB15271BFCD70779A858074A5438AAF92B5DA62"
+    }
+  },
+  "label": "fail-closed-canonical-evidence-inventory",
+  "minimum_closure_packet": {
+    "identified_route": [
+      "declare a gauge-regular W=F[Xi,Q_rho,Q_chi,Pi] map",
+      "show no added kinetic rank and allocate stress once"
+    ],
+    "independent_route": [
+      "derive W and its cross operators from one parent action",
+      "show one additional healthy constrained canonical pair",
+      "state the microscopic symmetry or constitutive origin"
+    ],
+    "internal_route": [
+      "derive a plenum free-energy or constitutive closure",
+      "derive entropy production and keep W inside T_P"
+    ]
+  },
+  "next": "Choose one closure packet only after a microscopic construction is available; do not infer the choice from the free template.",
+  "physical_wake_law": "NOT_YET_DERIVED",
+  "physics_pass": false,
+  "route_status": "ROUTE_II_CONDITIONAL; ROUTE_I_REMAINS_FALLBACK",
+  "scientific_boundary": "The canon permits a wake research sector and requires autonomous causal dynamics, but it neither identifies W with an existing finite-q mode nor derives an independent microscopic field.",
+  "source": "J_W=0",
+  "stage": "W2.5 microscopic identity evidence inventory",
+  "stage2_status": "IN_PROGRESS",
+  "status": "PASS_WAK001_MICROSCOPIC_IDENTITY_EVIDENCE_INVENTORY"
+}

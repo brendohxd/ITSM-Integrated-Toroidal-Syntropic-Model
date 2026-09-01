@@ -1,0 +1,250 @@
+{
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "got": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "name": "prior_inventory_summary_present",
+      "ok": true
+    },
+    {
+      "got": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "name": "prior_matching_route_program_present",
+      "ok": true
+    },
+    {
+      "I_a0_canonical": "2*C_IR/(3*Z_psi*r_rho)",
+      "name": "r3_invariant_formula_recovered",
+      "ok": true
+    },
+    {
+      "got": "Open_Conditional_sketch",
+      "name": "matching_program_labels_r3_as_open_conditional_sketch",
+      "ok": true
+    },
+    {
+      "name": "psi_rescaling_primary_invariant_ok",
+      "ok": true
+    },
+    {
+      "name": "bare_Z_psi_r_rho_not_auto_invariant_under_psi_rescaling",
+      "note": "Bare Z_psi and r_rho (or their product) are not automatically UV-only Derived numbers: under the residual ansatz they inherit K_Q's field-normalization map. The redefinition-invariant object is A*q/K_Q (q = background |grad psi|). Evaluating at q=a0 with a0 an external fixed scale picks a field chart. A numerical 'match' that depends on arbitrary psi normalization is not a physical R3 derivation.",
+      "ok": true
+    },
+    {
+      "missing": [
+        "Z_psi",
+        "rho_Phi",
+        "r_rho"
+      ],
+      "name": "uv_residue_symbols_not_numerically_derivable_in_repo",
+      "ok": true
+    },
+    {
+      "name": "naive_point_labelled_non_derived_comparison_only",
+      "ok": true
+    },
+    {
+      "name": "dimensional_ansatz_internal_consistency",
+      "ok": true
+    },
+    {
+      "evidence": "ITSM_Core_Architecture \u00a73.2 defines Phi, rho0, V_eff; no Z_psi, rho_Phi, or K_Q = Z_psi rho_Phi/a0^2. UVIR-001 rejects pure sextic as direct Y^{3/2} origin; physical charge-setting open.",
+      "name": "reviewed_declared_sources_lack_Z_psi_rho_Phi_matching_formula",
+      "ok": true
+    },
+    {
+      "classification": "INCOMPLETE_R3_UV_RESIDUE",
+      "name": "terminal_classification_is_C_incomplete",
+      "ok": true
+    },
+    {
+      "flags": {
+        "MAT001_unlocked": false,
+        "UVIR003_full_PASS": false,
+        "exploratory_scan_promoted_to_derivation": false,
+        "numeric_Derived_K_Q": false,
+        "observational_or_cosmological_claim": false,
+        "physical_cutoff_claimed": false,
+        "silent_C_IR_equals_2_3_as_Derived": false,
+        "silent_Z_psi_equals_1_as_Derived": false,
+        "silent_r_rho_equals_1_as_Derived": false
+      },
+      "name": "claim_firewall_all_false",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "MAT001_unlocked": false,
+    "UVIR003_full_PASS": false,
+    "exploratory_scan_promoted_to_derivation": false,
+    "numeric_Derived_K_Q": false,
+    "observational_or_cosmological_claim": false,
+    "physical_cutoff_claimed": false,
+    "silent_C_IR_equals_2_3_as_Derived": false,
+    "silent_Z_psi_equals_1_as_Derived": false,
+    "silent_r_rho_equals_1_as_Derived": false
+  },
+  "classification": "INCOMPLETE_R3_UV_RESIDUE",
+  "classification_code": "C",
+  "classification_reason": "Declared architecture and UVIR-001/002/003 provide Phi, rho0 branch existence, and a two-sector force route, but do not compute Z_psi, rho_Phi, or r_rho from S_Phi. R3 is a Conditional dimensional residual ansatz (matching_route_program) with free Wilson/residue parameters. No rigorous inequality bounding Z_psi r_rho from the microscopic action is present. Stage 2a therefore terminates as incomplete UV residue matching \u2014 an acceptable serial-order result.",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_status": "BLOCKED",
+  "missing_microscopic_inputs": [
+    "Microscopic S_Phi (or S_Phi+S_psi matching) that yields temporal force kinetic K_Q",
+    "Computed residue Z_psi from amplitude integration / wave-function renormalization",
+    "Physical identification of rho_Phi as the density entering that matching",
+    "Fixed IR field chart / matching scheme so residue is redefinition-safe",
+    "Independent determination or bound on C_IR if quoted in I_a0"
+  ],
+  "n_checks": 12,
+  "naive_comparison_only": {
+    "I_a0": 0.4444444444444444,
+    "assumptions": {
+      "C_IR": 0.6666666666666666,
+      "Z_psi": 1.0,
+      "r_rho": 1.0
+    },
+    "label": "NON_DERIVED_COMPARISON_ONLY",
+    "q_cross_parallel_over_a0": 0.375,
+    "warning": "Do not cite as Derived. Identical to R1 naive (k_Q,C_IR)=(1,2/3)."
+  },
+  "next_required": [
+    "Stage 2b: Conditional matching floor with scope (if programme accepts)",
+    "or continue genuine UV/microscopic matching of S_Phi -> force kinetic",
+    "Stage 2c: re-evaluate causality/NDA under chosen floor",
+    "Never promote R1/R3 naive O(1) points to Derived"
+  ],
+  "physics_pass": false,
+  "provenance": {
+    "derivable_from_action_form_only": [
+      "A expression given C_IR, G, a0",
+      "I_a0 map under Conditional R3 ansatz identities",
+      "redefinition invariants Aq/K_Q, A/K_Q^{3/2}"
+    ],
+    "dimensional_ansatze_or_conventions": [
+      "K_Q = Z_psi rho_Phi / a0^2 (Conditional residual sketch)",
+      "R1 K_Q = k_Q M_P^2 (Conditional dimensional analogy)",
+      "naive O(1) guesses k_Q~1, Z_psi~1, r_rho~1 (non-derived comparison only)"
+    ],
+    "explicitly_declared_inputs": [
+      "Phi form",
+      "U^mu frame (independent constrained aether choice)",
+      "a0 as IR normalization scale",
+      "C_IR as Wilson coefficient",
+      "K_Q as free IR kinetic coeff until matching"
+    ],
+    "requires_external_UV_completion": [
+      "Z_psi from integrating out amplitude / matching residue",
+      "rho_Phi absolute scale tied to force kinetic",
+      "r_rho numeric value",
+      "microscopic S_Phi that produces S_psi temporal kinetic"
+    ],
+    "rigorous_bound_Z_psi_r_rho_found": false,
+    "symbols": {
+      "A": {
+        "class": "derived_from_architecture_form_given_C_IR",
+        "derivable_numeric": false,
+        "note": "Form Derived under architecture; value needs C_IR",
+        "role": "force spatial coefficient A = C_IR/(12 pi G a0)",
+        "source": "Core Architecture weak-field"
+      },
+      "C_IR": {
+        "class": "Wilson_coefficient_open",
+        "derivable_numeric": false,
+        "role": "IR force Wilson coefficient",
+        "source": "Architecture L_IR; not fixed by R3"
+      },
+      "I_a0": {
+        "class": "conditional_chart_fixed_map",
+        "derivable_numeric": false,
+        "note": "Algebraic map holds under the ansatz; it is not invariant with fixed external a0",
+        "role": "A a0 / K_Q on the named q=a0 field chart",
+        "source": "R3 sketch identity I_a0=(2/3)C_IR/(Z_psi r_rho)"
+      },
+      "K_Q": {
+        "class": "IR_EFT_coefficient_not_derived",
+        "derivable_numeric": false,
+        "role": "IR force temporal kinetic coefficient",
+        "source": "UVIR-003 Stage A / inventory; R1 Conditional or R3 ansatz",
+        "status": "NOT_DERIVED"
+      },
+      "Phi": {
+        "class": "declared_input_architecture",
+        "derivable_numeric": false,
+        "role": "complex condensate order parameter",
+        "source": "ITSM_Core_Architecture.md \u00a73.2"
+      },
+      "S_Phi": {
+        "class": "partial_UVIR001_candidate_not_canonical_micro_action",
+        "derivable_numeric": false,
+        "note": "No matching of K_Q from S_Phi present in repo",
+        "role": "condensate action",
+        "source": "UVIR-001 tested P(Z); rejected as direct Y^{3/2} origin"
+      },
+      "S_psi": {
+        "class": "declared_two_sector_route_UVIR002_003",
+        "derivable_numeric": false,
+        "role": "preferred-frame force sector",
+        "source": "UVIR-002/003 Track A"
+      },
+      "Z_psi": {
+        "class": "requires_external_UV_or_matching",
+        "derivable_numeric": false,
+        "in_architecture": false,
+        "role": "phonon/force kinetic residue after amplitude integration",
+        "source": "Conditional residual ansatz; not computed from S_Phi"
+      },
+      "a0": {
+        "class": "declared_IR_input_or_DSM_postulate",
+        "derivable_numeric": false,
+        "note": "Not derived from topology/circulation under recovery",
+        "role": "IR acceleration scale in Y, Q normalizations",
+        "source": "Architecture \u00a7 force; Master Plan DSM Conditional"
+      },
+      "r_rho": {
+        "class": "dimensional_definition_plus_unknown_rho_Phi",
+        "derivable_numeric": false,
+        "role": "rho_Phi/(M_P^2 a0^2) dimensionless density fraction",
+        "source": "Definition only; value free without rho_Phi"
+      },
+      "rho0": {
+        "class": "declared_with_branch_existence_UVIR001",
+        "derivable_numeric": false,
+        "note": "Existence/stability domain only; not rho_Phi matching scale",
+        "role": "homogeneous finite-density amplitude (VEV)",
+        "source": "Architecture V_eff; UVIR-001 stable branch"
+      },
+      "rho_Phi": {
+        "class": "requires_external_UV_or_matching",
+        "derivable_numeric": false,
+        "in_UVIR001_action": false,
+        "in_architecture": false,
+        "role": "background energy/charge density scale in R3 ansatz",
+        "source": "Introduced in matching_route_program R3 sketch only"
+      }
+    }
+  },
+  "psi_rescaling": {
+    "I_a0_via_A_times_external_a0_over_KQ": "NOT invariant (chart-dependent)",
+    "bare_Z_psi_r_rho_product_invariant_if_tracks_KQ": false,
+    "primary_invariant_Aq_over_KQ": "invariant under psi -> s psi",
+    "psi_rescaling_test_ok": true,
+    "scientific_conclusion": "Bare Z_psi and r_rho (or their product) are not automatically UV-only Derived numbers: under the residual ansatz they inherit K_Q's field-normalization map. The redefinition-invariant object is A*q/K_Q (q = background |grad psi|). Evaluating at q=a0 with a0 an external fixed scale picks a field chart. A numerical 'match' that depends on arbitrary psi normalization is not a physical R3 derivation."
+  },
+  "r3_map": {
+    "I_a0_canonical": "2*C_IR/(3*Z_psi*r_rho)",
+    "I_a0_via_r": "2*C_IR/(3*Z_psi*r_rho)",
+    "I_a0_via_rho": "C_IR*a0**2/(12*pi*G*Z_psi*rho_Phi)",
+    "ansatz_K_Q": "Z_psi*rho_Phi/a0**2",
+    "identity_check_ok": true,
+    "is_action_derivation": false,
+    "provenance": "Conditional residual ansatz in uvir003_matching_route_program.symbolic_r3_sketch",
+    "r_rho_definition": "rho_Phi/(M_P^2 a0^2) with M_P^2=1/(8 pi G)"
+  },
+  "scientific_boundary": "Stage 2a dig-harder R3 audit: maps Conditional residual identities and finds no action-level derivation or bound of Z_psi, r_rho in the audited declared sources. Classification C is an acceptable Stage-2a exit. Does not unlock MAT-001, does not close UVIR-003, does not claim Derived K_Q.",
+  "serial_stage": "2a",
+  "stage": "B_R3_UV_RESIDUE_AUDIT_STAGE_2A",
+  "subgate_status": "PASS_R3_UV_RESIDUE_AUDIT_INCOMPLETE"
+}

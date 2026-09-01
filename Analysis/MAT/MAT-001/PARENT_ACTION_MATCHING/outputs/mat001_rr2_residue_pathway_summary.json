@@ -1,0 +1,188 @@
+{
+  "C_m_numeric_status": "NOT_DERIVED_FORM_ONLY",
+  "RR2_status": "ATTEMPTED_INCOMPLETE",
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Here absolute means independently normalized/dimensionful, not an absolute value; the sign is retained",
+    "numeric C_m (or g_phi and f_phi)",
+    "numeric K_Q (or Z_phi and f_phi)",
+    "OR live dynamical residue/amplitude that isolates V without free K_Q"
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "rr1_upstream",
+      "ok": true
+    },
+    {
+      "name": "track_a_s_int_upstream",
+      "ok": true
+    },
+    {
+      "name": "r2_template_upstream",
+      "ok": true
+    },
+    {
+      "name": "j2_template_upstream",
+      "ok": true
+    },
+    {
+      "name": "rr1_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_s_int_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "r2_template_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "j2_template_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "source_response_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "signed_canonical_covector_equals_minus_V_symbolically",
+      "ok": true
+    },
+    {
+      "name": "bare_K_Q_free_route_lacks_live_export",
+      "ok": true
+    },
+    {
+      "name": "diagnostic_response_rejected_as_V",
+      "ok": true
+    },
+    {
+      "name": "absolute_inputs_still_listed",
+      "ok": true
+    },
+    {
+      "flags": {
+        "RR2_closed": false,
+        "claims_MAT_pass": false,
+        "diagnostic_impulses_used_as_V": false,
+        "numeric_K_Q_derived": false,
+        "numeric_V_computed": false,
+        "physics_pass": false,
+        "reopens_stage4A": false,
+        "residue_pathway_attempted": true,
+        "symbolic_V_form_on_Track_A": true
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "RR2_closed": false,
+    "claims_MAT_pass": false,
+    "diagnostic_impulses_used_as_V": false,
+    "numeric_K_Q_derived": false,
+    "numeric_V_computed": false,
+    "physics_pass": false,
+    "reopens_stage4A": false,
+    "residue_pathway_attempted": true,
+    "symbolic_V_form_on_Track_A": true
+  },
+  "evidence": {
+    "j2_template": {
+      "parse_error": null,
+      "sha256": "5C385FDB10336AD727D1E9D16CAA68027599C2D157BE903E549748C0294CF865",
+      "source": "mat001_j2_basis_covariant_mode_projection_summary.json"
+    },
+    "r2_template": {
+      "parse_error": null,
+      "sha256": "415AD2D5631C5AB65AA3EA611002D332775D094F534A7E122146F255929A4144",
+      "source": "mat001_r2_direct_residue_audit_summary.json"
+    },
+    "rr1": {
+      "parse_error": null,
+      "sha256": "439D2EFAEAF98343F61250E36F7608F78772F0DCD77D839E274D0717C12F5BEC",
+      "source": "mat001_rr1_parent_action_skeleton_summary.json"
+    },
+    "source_response": {
+      "parse_error": null,
+      "sha256": "18C45A3BCF0F42808BED3651FB711602754F2C77EB0863419599B6D11AC10676",
+      "source": "uvir003_source_observable_retarded_response_summary.json"
+    },
+    "track_a_s_int": {
+      "parse_error": null,
+      "sha256": "B7FA92BEEA85A8606F1F452BE5C4E02D7139AC8174203549A78D5E1DF1C419EB",
+      "source": "mat001_track_a_s_int_embed_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "inadmissible_substitutions": {
+    "Q_rho_Q_chi_impulses_as_V": "REJECTED_ROLE_MISMATCH",
+    "setting_K_Q_equals_1_to_quote_V": "REJECTED",
+    "symbolic_g_can_as_numeric_V": "REJECTED_NOT_COMPUTED"
+  },
+  "interface": "RR2_RESIDUE_PATHWAY",
+  "kq_numeric_status": "NOT_DERIVED",
+  "live_export_audit": {
+    "boundary_excerpt": "An amplified Q_rho/Q_chi retarded response from a source with no Xi or homogeneous time-translation support is a gauge-projected finite-duration response on the tested dimensionless branch. It is not by itself an all-background instability ",
+    "is_Track_A_matter_vertex_residue": false,
+    "reason": "Source-observable retarded response uses Q_rho/Q_chi diagnostic impulses, not action-level d from S_int on Track-A pi.",
+    "rejected_as_V": true,
+    "role": "diagnostic gauge-projected Q_rho/Q_chi impulses",
+    "source_covectors": [
+      "Q_rho",
+      "Q_chi"
+    ],
+    "source_response_subgate": "PASS_GAUGE_PROJECTED_MATTER_RESPONSE_SURVIVES_WITH_SCOPE"
+  },
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 14,
+  "pathway_verdict": "SYMBOLIC_RESIDUE_IDENTITY_HOLDS_LIVE_NUMERIC_ROUTE_ABSENT",
+  "physics_pass": false,
+  "plan_step": "RR2",
+  "residue_identities": {
+    "absolute_inputs_still_required": [
+      "Here absolute means independently normalized/dimensionful, not an absolute value; the sign is retained",
+      "numeric C_m (or g_phi and f_phi)",
+      "numeric K_Q (or Z_phi and f_phi)",
+      "OR live dynamical residue/amplitude that isolates V without free K_Q"
+    ],
+    "bare_K_Q_free_routes": {
+      "exchange_coefficient_V2_over_P": "C_m**2/(K_Q*P)",
+      "live_export_of_P_or_amplitude_for_Track_A_matter": false,
+      "mixed_response_R_equals_minus_V_over_P": "-C_m/(sqrt(K_Q)*P)",
+      "requires_independent_P_or_amplitude": true
+    },
+    "canonical_projection": {
+      "V_signed": "C_m/sqrt(K_Q)",
+      "c_eff": "-C_m",
+      "g_can": "-C_m/sqrt(K_Q)",
+      "identity_signed_g_can_equals_minus_V": true,
+      "magnitude_only_matching_sufficient": false,
+      "mode_orientation": "u_pi=+1 in the architecture psi chart",
+      "orientation_reversal": "u_pi->-u_pi flips g_can; chart orientation must accompany the sign",
+      "u": [
+        "1"
+      ]
+    },
+    "joint_quadratic_convention": {
+      "dynamical_field": "pi (Track-A fluctuation)",
+      "h_constraints": "0 (matter-only static channel)",
+      "matter_source": "- C_m * rho_b * pi",
+      "time_kinetic": "K_Q * pi_dot**2 / 2"
+    }
+  },
+  "scientific_boundary": "A PASS means the Track-A + S_int residue pathway was constructed and shown to recover V symbolically, while every live numeric route to an independently normalized signed V remains absent. RR2 stays incomplete.",
+  "serial_next": "RR2 remains the Derived wall: supply UV parent Z_phi/g_phi or a live dynamical amplitude/residue that isolates V. No further inventory substitutes for that physics.",
+  "stage": "RR2_RESIDUE_PATHWAY_ATTEMPT",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_RR2_RESIDUE_PATHWAY_ATTEMPTED_INCOMPLETE",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

@@ -1,0 +1,102 @@
+"""
+Software Dependencies & Attributions:
+This script utilizes the emcee (The MCMC Hammer) and corner.py packages for Bayesian inference and visualization.
+- emcee: Foreman-Mackey, D., Hogg, D. W., Lang, D., & Goodman, J. (2013). Publications of the Astronomical Society of the Pacific, 125(925), 306.
+- corner.py: Foreman-Mackey, D. (2016). The Journal of Open Source Software, 1(2), 24.
+"""
+
+"""
+ITSM Diagnostic — Running Syntropic Decay Index (Stabilized + Visualized)
+Author: Brendon Boyd
+Standards: Tier-1 Peer-Reviewed Physics Journal Framework (revtex4-2)
+Protocol: Testing local stability of n(z) and plotting the evolutionary trend
+Environment: Windows / Antigravity IDE Workspace Compatible
+"""
+
+import numpy as np
+import emcee
+import pandas as pd
+import matplotlib.pyplot as plt
+import sys
+import os
+from itsm_plot_style import apply_tier1_style
+apply_tier1_style()
+import os
+
+
+
+# 1. Configuration
+H0_fixed = 78.63
+Om_fixed = 0.240
+script_dir = os.path.dirname(os.path.abspath(__file__))
+data_path = os.path.abspath(os.path.join(script_dir, "..", "Data", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_mean.txt"))
+cov_path = os.path.abspath(os.path.join(script_dir, "..", "Data", "DESI_data", "bao_data-master", "desi_bao_dr2", "desi_gaussian_bao_ALL_GCcomb_cov.txt"))
+
+df = pd.read_csv(data_path, sep=r'\s+', comment='#', names=['z', 'value', 'observable'], header=None)
+cov = np.loadtxt(cov_path)
+df['variance'] = np.diag(cov)
+
+df_h = df[df['observable'] == 'DH_over_rs'].copy()
+df_h['H_obs'] = 299792.458 / (df_h['value'] * 147.09)
+df_h['err_H'] = df_h['H_obs'] * (np.sqrt(df_h['variance']) / df_h['value'])
+
+def log_likelihood(n, z_b, H_b, err_b):
+    if n < 0.0 or n > 5.0: return -np.inf
+    radicand = Om_fixed * (1 + z_b)**3 + (1 - Om_fixed) * (1 + z_b)**-n
+    if np.any(radicand <= 0): return -np.inf
+    H_model = H0_fixed * np.sqrt(radicand)
+    return -0.5 * np.sum(((H_b - H_model) / err_b)**2)
+
+# 2. Binning and Data Storage
+bins = [(0.0, 0.8), (0.8, 1.4), (1.4, 2.5)]
+z_centers = []
+n_means = []
+n_stds = []
+
+print(f"--- DETECTING REDSHIFT-DEPENDENT PHASE TRANSITIONS (STABILIZED) ---")
+
+for z_min, z_max in bins:
+    df_bin = df_h[(df_h['z'] >= z_min) & (df_h['z'] < z_max)]
+    if len(df_bin) < 2: continue
+    
+    z_b, H_b, err_b = df_bin['z'].values, df_bin['H_obs'].values, df_bin['err_H'].values
+    
+    sampler = emcee.EnsembleSampler(32, 1, lambda p: log_likelihood(p[0], z_b, H_b, err_b))
+    sampler.run_mcmc(np.random.uniform(0.5, 1.5, size=(32, 1)), 1000, progress=False)
+    
+    samples = sampler.get_chain(discard=200, flat=True)
+    
+    try:
+        tau = sampler.get_autocorr_time(quiet=True)
+        tau_str = f"tau={tau[0]:.1f}"
+    except Exception:
+        tau_str = "tau=N/A"
+        
+    z_centers.append((z_min + z_max) / 2)
+    n_means.append(np.mean(samples))
+    n_stds.append(np.std(samples))
+    print(f"Bin {z_min}-{z_max}: Optimized n = {n_means[-1]:.4f} +/- {n_stds[-1]:.4f} ({tau_str})")
+
+# 3. Visualization
+plt.figure(figsize=(8, 5))
+
+# Convert to numpy arrays for element-wise operations
+z_arr = np.array(z_centers)
+n_arr = np.array(n_means)
+std_arr = np.array(n_stds)
+
+# 2-sigma and 1-sigma confidence bands
+plt.fill_between(z_arr, n_arr - 2*std_arr, n_arr + 2*std_arr, color='lightblue', alpha=0.3, label=r'$2\sigma$ Confidence')
+plt.fill_between(z_arr, n_arr - std_arr, n_arr + std_arr, color='royalblue', alpha=0.4, label=r'$1\sigma$ Confidence')
+
+plt.errorbar(z_centers, n_means, yerr=n_stds, fmt='-o', capsize=5, color='darkblue', label=r'ITSM Running Index $n(z)$')
+
+plt.xlabel(r'Redshift ($z$)')
+plt.ylabel(r'Syntropic Decay Index ($n$)')
+plt.title(r'ITSM: Redshift-Dependent Vacuum Evolution', fontsize=16, pad=15)
+plt.grid(True, linestyle=':', alpha=0.6)
+plt.legend()
+
+out_path = os.path.abspath(os.path.join(script_dir, "..", "Assets", "Figures", "itsm_n_evolution.png"))
+plt.savefig(out_path)
+print(f"Visualization generated: {out_path}")

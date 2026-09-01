@@ -1,0 +1,105 @@
+{
+  "calculation_status": "PASS",
+  "definition": {
+    "not_a_cross_section": true,
+    "not_a_unitarity_bound": true,
+    "not_an_s_matrix": true,
+    "observable": "Gaussian average of local combined four-leg kernel over admitted external q/H samples in ln(q/q0).",
+    "weight": "w = exp(-(ln(q/q0))^2 / (2 sigma^2))"
+  },
+  "diagnostics": {
+    "imaginary_ok": true,
+    "monotone_deviation_with_width_diagnostic": true,
+    "narrow_ok": true,
+    "narrow_relative_deviation": 0.000248788117262243,
+    "narrow_sigma": 0.02,
+    "narrow_tolerance": 0.05,
+    "wide_relative_deviation": 0.005839115080587804
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "mode_pair": {
+    "left": "physical_pair_1",
+    "right": "physical_pair_1"
+  },
+  "next_required_calculation": [
+    "optional denser homogeneous-edge deformation scan",
+    "promote packet proxy to true in-in correlator on FRW trajectory",
+    "nonzero-gradient |grad(pi)|^3 sector",
+    "only then declared unitarity / EFT-validity criterion"
+  ],
+  "on_shell_kernel": {
+    "abs": 1.7275349377996534,
+    "imag": 1.3857358175944622e-15,
+    "real": 1.7275349377996534
+  },
+  "packet_results": [
+    {
+      "effective_support_count": 2,
+      "imaginary_fraction": 7.757181954239292e-16,
+      "observable_abs": 1.7271051476349735,
+      "observable_imag": 1.3397468884307804e-15,
+      "observable_real": 1.7271051476349735,
+      "on_shell_abs": 1.7275349377996534,
+      "relative_deviation_from_on_shell": 0.000248788117262243,
+      "sigma_ln": 0.02,
+      "weight_sum": 1.0373003502830525
+    },
+    {
+      "effective_support_count": 2,
+      "imaginary_fraction": 5.285479371495303e-16,
+      "observable_abs": 1.7230958462738883,
+      "observable_imag": 9.107387550589878e-16,
+      "observable_real": 1.7230958462738883,
+      "on_shell_abs": 1.7275349377996534,
+      "relative_deviation_from_on_shell": 0.002569610274521615,
+      "sigma_ln": 0.05,
+      "weight_sum": 1.5908456815353988
+    },
+    {
+      "effective_support_count": 2,
+      "imaginary_fraction": 4.575413824629758e-16,
+      "observable_abs": 1.7219587177452584,
+      "observable_imag": 7.878673722613386e-16,
+      "observable_real": 1.7219587177452584,
+      "on_shell_abs": 1.7275349377996534,
+      "relative_deviation_from_on_shell": 0.0032278479192422807,
+      "sigma_ln": 0.1,
+      "weight_sum": 1.8770045362450694
+    },
+    {
+      "effective_support_count": 3,
+      "imaginary_fraction": 3.3987374813487994e-16,
+      "observable_abs": 1.724887016099422,
+      "observable_imag": 5.862438152708996e-16,
+      "observable_real": 1.724887016099422,
+      "on_shell_abs": 1.7275349377996534,
+      "relative_deviation_from_on_shell": 0.0015327746156057198,
+      "sigma_ln": 0.2,
+      "weight_sum": 2.0982018516117815
+    },
+    {
+      "effective_support_count": 4,
+      "imaginary_fraction": 1.0821043598070433e-16,
+      "observable_abs": 1.7376222131072017,
+      "observable_imag": 1.8802885725008663e-16,
+      "observable_real": 1.7376222131072017,
+      "on_shell_abs": 1.7275349377996534,
+      "relative_deviation_from_on_shell": 0.005839115080587804,
+      "sigma_ln": 0.4,
+      "weight_sum": 2.812870615628607
+    }
+  ],
+  "physical_2_to_2_status": "LOCAL_PACKET_PROXY_DEFINED_S_MATRIX_NOT_ESTABLISHED",
+  "q0_over_H": 50.0,
+  "sampled_ratios": [
+    47.5,
+    50.0,
+    75.0,
+    100.0
+  ],
+  "scientific_boundary": "Defines a local adiabatic packet-averaged proxy for the frozen kernel only. Does not construct FRW asymptotic states, optical theorem checks, strong-coupling scales, or MAT-001 matching.",
+  "stage": "B_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+  "subgate_status": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION"
+}

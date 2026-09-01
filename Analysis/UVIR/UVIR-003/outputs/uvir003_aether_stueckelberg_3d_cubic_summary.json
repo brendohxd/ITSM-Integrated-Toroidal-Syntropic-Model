@@ -1,0 +1,102 @@
+{
+  "calculation_status": "PASS_3D_CUBIC_AND_CONSTRAINT_IDENTITY",
+  "constraint_elimination": {
+    "cubic_consequence": "L_reduced^(3)=L3[x,z1]; explicit z2 is unnecessary",
+    "identity": "L2[z1+z2]=L2[z1]+(C*z1+J)*z2+C*z2^2/2",
+    "placeholder": "L_3",
+    "scope": "algebraic constraints with an invertible quadratic constraint matrix",
+    "stationary_solution": "z1=-C^{-1}J"
+  },
+  "gate_status": {
+    "MAT-001": "BLOCKED",
+    "UVIR-003": "IN_PROGRESS"
+  },
+  "interpretation": {
+    "basis_nda_status": "COMPUTED_DIAGNOSTIC_ONLY",
+    "next_required_calculation": [
+      "FULL_COSMOLOGICAL_CUBIC_VERTEX_WITH_FIRST_ORDER_CONSTRAINTS",
+      "COMPLETE_PHYSICAL_SCALAR_EIGENMODE_PROJECTION",
+      "FULL_COSMOLOGICAL_QUARTIC_WITH_SECOND_ORDER_CONSTRAINT_SCHUR_COMPLEMENT",
+      "GAUGE_REGULAR_ON_SHELL_2_TO_2_AMPLITUDE"
+    ],
+    "physical_strong_coupling_scale_status": "NOT_YET_DERIVED",
+    "second_order_constraint_solution_status": "NOT_REQUIRED_EXPLICITLY_FOR_REDUCED_CUBIC_ACTION",
+    "three_dimensional_vertex_status": "DERIVED_AND_VERIFIED"
+  },
+  "representative_branch": {
+    "nda_diagnostic": {
+      "basis_dependent_nda_energy": 0.14523687548277814,
+      "basis_dependent_nda_momentum": 0.1257788237343632,
+      "basis_nda_momentum_over_H": {
+        "maximum": 1.6462061767153797,
+        "minimum": 0.2029209474944757
+      },
+      "canonical_cubic_denominator": 0.029047375096555632,
+      "canonical_mode": "chi_k=M_U*sqrt(c14)*abs(k)*pi_k",
+      "derivative_counting": "abs(omega)~c_s*abs(k); each canonical cubic operator scales as coefficient*k^2*chi^3/[M_U*c14^(3/2)]",
+      "limitations": [
+        "OPERATOR_BASIS_DEPENDENT_UNDER_FIELD_REDEFINITIONS",
+        "NO_METRIC_OR_CONDENSATE_MIXING",
+        "NO_EXCHANGE_OR_QUARTIC_CONTACT_AMPLITUDE",
+        "REPRESENTATIVE_PARAMETERS_ARE_DIMENSIONLESS_AND_UNSELECTED"
+      ],
+      "operator_coefficient_bounds": {
+        "p_H_v": 0.17320508075688776,
+        "pi_t_Hij_squared": 0.17320508075688776,
+        "pi_t_traceH_squared": 0.057735026918962574,
+        "pi_t_v_squared": 0.23094010767585033,
+        "pi_tt_p_dot_v": 0.23094010767585033,
+        "traceH_p_dot_v": 0.11547005383792515
+      },
+      "operator_momentum_scales": {
+        "p_H_v": 0.16770509831248423,
+        "pi_t_Hij_squared": 0.16770509831248423,
+        "pi_t_traceH_squared": 0.5031152949374528,
+        "pi_t_v_squared": 0.1257788237343632,
+        "pi_tt_p_dot_v": 0.1257788237343632,
+        "traceH_p_dot_v": 0.2515576474687264
+      },
+      "representative_hubble_range": {
+        "maximum": 0.6198414963432367,
+        "minimum": 0.07640526776866156
+      },
+      "sound_speed": 1.1547005383792515,
+      "status": "DIAGNOSTIC_ONLY_NOT_PHYSICAL_CUTOFF"
+    },
+    "parameters": {
+      "M_U": 0.5,
+      "c1": 0.1,
+      "c123": 0.2,
+      "c14": 0.15000000000000002,
+      "c2": 0.05,
+      "c3": 0.05,
+      "c4": 0.05
+    }
+  },
+  "scope": {
+    "aether": "HYPERSURFACE_ORTHOGONAL",
+    "geometry": "FLAT_METRIC_DECOUPLING_LIMIT",
+    "order": "CUBIC_IN_PI",
+    "spatial_dimension": 3
+  },
+  "stage": "B_AETHER_STUECKELBERG_3D_CUBIC",
+  "symbolic_result": {
+    "collinear_reduction": "H_11**2*c_1*pi_t + H_11**2*c_2*pi_t + H_11**2*c_3*pi_t + H_11*c_1*p_1*v_1 + 2*H_11*c_2*p_1*v_1 + 2*H_11*c_3*p_1*v_1 - H_11*c_4*p_1*v_1 - c_1*p_1*pi_tt*v_1 - c_1*pi_t*v_1**2 - c_4*p_1*pi_tt*v_1 - c_4*pi_t*v_1**2",
+    "compact_notation": {
+      "H": "trace(H_ij)=Delta pi",
+      "H_ij": "partial_i partial_j pi",
+      "p_i": "partial_i pi",
+      "v_i": "partial_i dot(pi)"
+    },
+    "cubic_lagrangian": "H_11**2*c_1*pi_t + H_11**2*c_2*pi_t + H_11**2*c_3*pi_t + 2*H_11*H_22*c_2*pi_t + 2*H_11*H_33*c_2*pi_t + H_11*c_1*p_1*v_1 + 2*H_11*c_2*p_1*v_1 + 2*H_11*c_2*p_2*v_2 + 2*H_11*c_2*p_3*v_3 + 2*H_11*c_3*p_1*v_1 - H_11*c_4*p_1*v_1 + 2*H_12**2*c_1*pi_t + 2*H_12**2*c_3*pi_t + H_12*c_1*p_1*v_2 + H_12*c_1*p_2*v_1 + 2*H_12*c_3*p_1*v_2 + 2*H_12*c_3*p_2*v_1 - H_12*c_4*p_1*v_2 - H_12*c_4*p_2*v_1 + 2*H_13**2*c_1*pi_t + 2*H_13**2*c_3*pi_t + H_13*c_1*p_1*v_3 + H_13*c_1*p_3*v_1 + 2*H_13*c_3*p_1*v_3 + 2*H_13*c_3*p_3*v_1 - H_13*c_4*p_1*v_3 - H_13*c_4*p_3*v_1 + H_22**2*c_1*pi_t + H_22**2*c_2*pi_t + H_22**2*c_3*pi_t + 2*H_22*H_33*c_2*pi_t + H_22*c_1*p_2*v_2 + 2*H_22*c_2*p_1*v_1 + 2*H_22*c_2*p_2*v_2 + 2*H_22*c_2*p_3*v_3 + 2*H_22*c_3*p_2*v_2 - H_22*c_4*p_2*v_2 + 2*H_23**2*c_1*pi_t + 2*H_23**2*c_3*pi_t + H_23*c_1*p_2*v_3 + H_23*c_1*p_3*v_2 + 2*H_23*c_3*p_2*v_3 + 2*H_23*c_3*p_3*v_2 - H_23*c_4*p_2*v_3 - H_23*c_4*p_3*v_2 + H_33**2*c_1*pi_t + H_33**2*c_2*pi_t + H_33**2*c_3*pi_t + H_33*c_1*p_3*v_3 + 2*H_33*c_2*p_1*v_1 + 2*H_33*c_2*p_2*v_2 + 2*H_33*c_2*p_3*v_3 + 2*H_33*c_3*p_3*v_3 - H_33*c_4*p_3*v_3 - c_1*p_1*pi_tt*v_1 - c_1*p_2*pi_tt*v_2 - c_1*p_3*pi_tt*v_3 - c_1*pi_t*v_1**2 - c_1*pi_t*v_2**2 - c_1*pi_t*v_3**2 - c_4*p_1*pi_tt*v_1 - c_4*p_2*pi_tt*v_2 - c_4*p_3*pi_tt*v_3 - c_4*pi_t*v_1**2 - c_4*pi_t*v_2**2 - c_4*pi_t*v_3**2",
+    "overall_factor": "M_U^2",
+    "quadratic_lagrangian": "-H_11**2*c_1/2 - H_11**2*c_2/2 - H_11**2*c_3/2 - H_11*H_22*c_2 - H_11*H_33*c_2 - H_12**2*c_1 - H_12**2*c_3 - H_13**2*c_1 - H_13**2*c_3 - H_22**2*c_1/2 - H_22**2*c_2/2 - H_22**2*c_3/2 - H_22*H_33*c_2 - H_23**2*c_1 - H_23**2*c_3 - H_33**2*c_1/2 - H_33**2*c_2/2 - H_33**2*c_3/2 + c_1*v_1**2/2 + c_1*v_2**2/2 + c_1*v_3**2/2 + c_4*v_1**2/2 + c_4*v_2**2/2 + c_4*v_3**2/2"
+  },
+  "three_point_kinematics": {
+    "linear_dispersion": "abs(omega)=c_s*abs(k)",
+    "momentum_conservation": "k1+k2+k3=0",
+    "on_shell_noncollinear_three_point": "KINEMATICALLY_FORBIDDEN",
+    "physical_scale_consequence": "A noncollinear on-shell cubic amplitude cannot define the cutoff. Use the complete 2-to-2 amplitude.",
+    "reason": "Energy conservation requires one momentum magnitude to equal the sum of the other two; equality in the triangle inequality forces collinearity."
+  }
+}

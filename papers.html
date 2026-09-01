@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Papers — ITSM</title>
+  <meta name="description" content="ITSM selective paper programme and working recovery draft." />
+  <link rel="canonical" href="https://itsm-cosmology.com/papers.html" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="theme-color" content="#0c1427" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ITSM Cosmology" />
+  <link rel="stylesheet" href="styles.css?v=20260805d" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a>
+      <ul class="nav-links">
+        <li><a href="vision.html">Vision</a></li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="papers.html" aria-current="page">Papers</a></li>
+        <li><a href="claims.html">Claims</a></li>
+        <li><a href="reproduce.html">Reproduce</a></li>
+        <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Papers</p>
+      <h1>Selective <em>paper</em> programme</h1>
+      <p class="lede">
+        Modular research manuscripts tracking evidence under strict fail-closed governance.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section">
+      <div class="card span-2">
+        <div class="paper" style="border-left: 3px solid var(--accent, #4da6ff); padding-left: 1rem; margin-bottom: 1.5rem;">
+          <div class="paper-id" style="background: rgba(77, 166, 255, 0.15); color: #4da6ff; font-weight: 700;">Working Draft</div>
+          <div>
+            <h3>
+              <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture/Manuscript/CoreRecovery">The Integrated Toroidal–Syntropic Model: Core Architecture, Conditional Weak-Field Limit, and Open Research Gates</a>
+            </h3>
+            <p>
+              Canonical 32-page working draft. Reconstructs the layered field hierarchy, proves minimal condensate quadratic IR response (UVIR-001 negative), verifies Einstein-aether frame mode speeds, details the flat-FRW minisuperspace background, and establishes the dependency-ordered research gates.
+            </p>
+            <p style="margin-top:0.55rem;font-size:0.88rem;color:var(--faint)">
+              LaTeX Source: <code>Manuscript/CoreRecovery/ITSM_Core_working.tex</code> ·
+              Compiled PDF: <code>Manuscript/CoreRecovery/ITSM_Core_working.pdf</code> (32 pages)
+            </p>
+          </div>
+          <div class="tags">
+            <span class="tag gold">Working Draft</span>
+            <span class="tag">v12.0-alpha.12 Baseline</span>
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-id">P1</div>
+          <div>
+            <h3>
+              <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture/papers/P1-Scale-Matching-Reconstruction">Present-epoch scale matching &amp; \(C_{\mathrm{obs}}\) hygiene</a>
+            </h3>
+            <p>
+              Scale invariant bounds on macroscopic \(C_{\mathrm{obs}}\). Proves \(C_m \equiv 1.0\) under conformal Weyl trace invariance.
+            </p>
+            <p style="margin-top:0.55rem;font-size:0.88rem;color:var(--faint)">
+              Directory: <code>papers/P1-Scale-Matching-Reconstruction/</code>
+            </p>
+          </div>
+          <div class="tags">
+            <span class="tag gold">Claim Hygiene</span>
+            <span class="tag">Stage 4A</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Brendon Boyd · Open Science under CC-BY-4.0 / GPLv3</p>
+      <p><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">Source Code on GitHub</a></p>
+    </div>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./sw.js').then(function(reg) {
+          console.log('ITSM Service Worker registered with scope: ', reg.scope);
+        }).catch(function(err) {
+          console.warn('ITSM Service Worker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>\n

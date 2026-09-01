@@ -1,0 +1,178 @@
+{
+  "label": "MAT-001_R5_P1_PARENT_ACTION_FORK",
+  "gate": "MAT-001",
+  "stage": "R5-P1",
+  "physics_pass": false,
+  "research_gate_status": "OPEN_RESEARCH_CANDIDATE",
+  "global_status": {
+    "MAT_001": "BLOCKED",
+    "V": "NOT_COMPUTED",
+    "K_Q": "NOT_DERIVED",
+    "Stage_4A": "CLOSED",
+    "UVIR_003": "IN_PROGRESS",
+    "physics_pass": false,
+    "research_gate_status": "OPEN_RESEARCH_CANDIDATE"
+  },
+  "status_string": "SCAFFOLD_MAT001_R5_P1_OPEN_RESEARCH_CANDIDATE",
+  "stubs_remaining": 8,
+  "artifacts_total": 8,
+  "mutation_results": {
+    "M1_pre_projection_guard": "PASS",
+    "M2_no_imported_coefficient": "PASS",
+    "M3_magnitude_only_rejected": "PASS",
+    "M4_stage_4A_closed": "PASS",
+    "M5_mat_001_blocked": "PASS",
+    "overall": "PASS"
+  },
+  "forbidden_packaging_not_used": [
+    "numeric_V",
+    "numeric_K_Q",
+    "numeric_C_m",
+    "numeric_g_phi",
+    "numeric_Z_phi",
+    "numeric_f_claim",
+    "Stage_4A_reopen",
+    "MAT_001_PASS",
+    "UVIR_003_PASS",
+    "a0_claim",
+    "H0_claim",
+    "C_obs_claim",
+    "PTA_claim",
+    "SPARC_claim",
+    "lensing_claim",
+    "cosmological_packaging",
+    "pre_projection_V_equals_1_over_f",
+    "imported_MOND_coefficient"
+  ],
+  "scientific_boundary": "This scaffold tests whether a conformal compensator plus finite-density condensate parent action can correlate K_Q and C_m through one physical scale f. It does NOT compute V, does NOT open Stage 4A, and does NOT constitute a MAT-001 or UVIR-003 pass. All eight required artifacts must be completed and all rejection gates must be tested before any advance.",
+  "artifacts": [
+    {
+      "artifact": "1_parent_action",
+      "status": "STUB",
+      "fields": {
+        "g_mu_nu": "spacetime metric, signature (-,+,+,+)",
+        "sigma": "conformal compensator / dilaton field [mass]",
+        "f": "dilaton decay scale [mass] \u2014 NOT_ASSIGNED_NUMERIC_VALUE",
+        "Phi": "complex condensate order parameter (rho/sqrt(2)) exp(i Theta)",
+        "U_mu": "preferred frame unit timelike vector",
+        "Psi_m": "matter fields",
+        "psi": "dimensionless compensator psi = sigma / f",
+        "C_m": "conformal matter coupling \u2014 NOT_ASSIGNED_NUMERIC_VALUE",
+        "psi_star": "reference value \u2014 NOT_ASSIGNED_NUMERIC_VALUE"
+      },
+      "symmetries": {
+        "diffeomorphism": "DECLARED",
+        "local_Weyl_breaking": "OPEN \u2014 must specify breaking mechanism",
+        "U1_condensate": "DECLARED \u2014 phase rotation of Phi",
+        "matter_conservation": "DECLARED \u2014 Bianchi via conformal coupling",
+        "screening_symmetry": "OPEN \u2014 must verify whether shift symmetry is broken"
+      },
+      "induced_relations_PRE_PROJECTION": {
+        "K_Q_form": "K_Q = f^2 (in psi chart)",
+        "C_m_form": "C_m = 1 (in psi chart)",
+        "V_form_PRE_PROJECTION": "V = 1/f \u2014 PRE-PROJECTION ONLY, NOT DERIVED",
+        "warning": "V = 1/f is a pre-projection symbolic result. The physical signed residue requires full kinetic matrix diagonalisation after integrating out nondynamical fields. This form CANNOT be promoted to a Derived V value."
+      },
+      "physics_pass": false,
+      "V_status": "NOT_COMPUTED"
+    },
+    {
+      "artifact": "2_dof_ledger",
+      "status": "STUB",
+      "UV_fields": {
+        "metric": 10,
+        "compensator_sigma": 1,
+        "condensate_rho": 1,
+        "condensate_Theta": 1,
+        "aether_U": 4,
+        "matter": "TBD"
+      },
+      "constraints": "TBD \u2014 lapse, shift, U unit constraint, condensate EOM",
+      "physical_modes_after_constraints": "TBD",
+      "warning_mode_count": "If the compensator introduces additional physical scalar modes beyond the Track-A psi phonon, this changes the declared architecture and requires an explicit decision before proceeding.",
+      "physics_pass": false
+    },
+    {
+      "artifact": "3_background",
+      "status": "STUB",
+      "required_checks": [
+        "V_eff(rho; mu) has minimum at rho_0 != 0",
+        "d^2 V_eff / d rho^2 > 0 at rho_0 (stability)",
+        "Compensator sigma has a stable background value sigma_0",
+        "Background equations close consistently"
+      ],
+      "condensate_stable": "TBD",
+      "compensator_stable": "TBD",
+      "physics_pass": false
+    },
+    {
+      "artifact": "4_quadratic_action",
+      "status": "STUB",
+      "kinetic_matrix_K": "TBD \u2014 must be computed after constraint elimination",
+      "gradient_matrix_G": "TBD",
+      "matter_coupling_vector": "TBD",
+      "required_checks": [
+        "All nondynamical fields eliminated",
+        "Matrix is symmetric",
+        "Determinant and eigenvalues computed",
+        "No hidden constraints remain"
+      ],
+      "physics_pass": false
+    },
+    {
+      "artifact": "5_physical_modes",
+      "status": "STUB",
+      "eigenvalues": "TBD",
+      "physical_basis": "TBD",
+      "matter_coupling_in_physical_basis": "TBD",
+      "ghost_check": "TBD \u2014 all eigenvalues must be positive",
+      "gradient_stability_check": "TBD \u2014 all spatial kinetic eigenvalues must be positive",
+      "physics_pass": false
+    },
+    {
+      "artifact": "6_signed_residue",
+      "status": "STUB",
+      "g_phys": "NOT_COMPUTED",
+      "V_signed": "NOT_COMPUTED",
+      "K_Q_numeric": "NOT_DERIVED",
+      "C_m_numeric": "NOT_DERIVED",
+      "required_checks": [
+        "Residue computed in physical basis (post-diagonalisation)",
+        "Sign tracked explicitly (not magnitude-only)",
+        "Pre-projection V=1/f NOT promoted",
+        "No coefficient imported from MOND target",
+        "Mutation: sign flip detected",
+        "Mutation: magnitude-only rejected",
+        "Mutation: pre-projection value rejected"
+      ],
+      "global_status": {
+        "MAT_001": "BLOCKED",
+        "V": "NOT_COMPUTED",
+        "K_Q": "NOT_DERIVED",
+        "Stage_4A": "CLOSED",
+        "UVIR_003": "IN_PROGRESS",
+        "physics_pass": false,
+        "research_gate_status": "OPEN_RESEARCH_CANDIDATE"
+      },
+      "physics_pass": false
+    },
+    {
+      "artifact": "7_cutoff",
+      "status": "STUB",
+      "strong_coupling_scale": "TBD",
+      "UV_cutoff": "TBD",
+      "galactic_regime_check": "TBD \u2014 strong coupling scale >> galactic acceleration?",
+      "physics_pass": false
+    },
+    {
+      "artifact": "8_gravity_tests",
+      "status": "STUB",
+      "PPN_check": "TBD",
+      "fifth_force_check": "TBD",
+      "screening_mechanism": "TBD \u2014 chameleon, Vainshtein, or none?",
+      "lensing_signature": "TBD",
+      "GW_polarisation_modes": "TBD",
+      "physics_pass": false
+    }
+  ]
+}

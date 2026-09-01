@@ -1,0 +1,880 @@
+\section{Ultraviolet--infrared hierarchy}
+
+\subsection{UVIR-001: the minimal condensate route closes negative}
+
+The tested microscopic candidate is
+\begin{equation}
+ S_\Phi=\int \dd^4x\sqrt{-g}\left[
+ -\nabla_\mu\Phi^*\nabla^\mu\Phi
+ -m^2|\Phi|^2
+ -\frac{\lambda_4}{2}|\Phi|^4
+ -\frac{\lambda_6}{3\Lambda^2}|\Phi|^6\right].
+ \label{eq:candidate-uv}
+\end{equation}
+Writing $\Phi=\rho e^{i\Theta}/\sqrt2$ and
+$Z=-\nabla_\mu\Theta\nabla^\mu\Theta$, its stable finite-density branch can
+be reduced to a phase action $P(Z)$.  In the pure-sextic limit the explicit
+amplitude integration gives
+\begin{equation}
+ P(Z)=\frac{2\Lambda}{3\sqrt{\lambda_6}}(Z-m^2)^{3/2}.
+ \label{eq:sextic-pz}
+\end{equation}
+This nonanalytic power does not supply the required static spatial operator.
+About a timelike background $Z_0=\mu^2$, a static phase gradient
+$q=|\nabla\vartheta|$ instead yields
+\begin{equation}
+ P(\mu^2-q^2)-P(\mu^2)=-P_Z(\mu^2)q^2+\mathcal O(q^4),
+ \qquad P_Z=\frac{\rho_0^2}{2}>0.
+ \label{eq:uvir001-static}
+\end{equation}
+The leading response is therefore quadratic for every stable nonzero branch
+with the canonical phase kinetic term.  UVIR-001 is closed negative for this
+minimal candidate.  The result rejects neither the condensate's density and
+topology roles nor a bottom-up spatial $Y^{3/2}$ EFT.
+
+\subsection{UVIR-002: provisional two-sector route}
+
+UVIR-002 also rejects a standalone nonrelativistic gradient-dominated branch:
+the branch producing the desired cubic spatial action has a negative quadratic
+time kinetic coefficient.  The least-incomplete route tested separates the
+jobs of the condensate and force mediator.  The independent invariants are
+\begin{equation}
+ \mathcal Q=U^\mu\nabla_\mu\psi,
+ \qquad
+ \mathcal Y=h^{\mu\nu}\nabla_\mu\psi\nabla_\nu\psi.
+ \label{eq:preferred-invariants}
+\end{equation}
+Here $\Phi$ retains finite density, circulation, defects and topology, while
+$(\psi,U^\mu)$ carries the conditional low-acceleration response.  This is a
+provisional architecture selection, not microscopic closure.
+
+\subsection{UVIR-003 Stage A action and limited pass}
+
+Stage A chooses an independent unit vector and retains the complete
+Einstein--aether two-derivative basis,
+\begin{align}
+ \mathcal L_U=-\frac{M_U^2}{2}\big[&c_1(\nabla_\mu U_\nu)(\nabla^\mu U^\nu)
+ +c_2(\nabla_\mu U^\mu)^2 \nonumber\\
+ &+c_3(\nabla_\mu U_\nu)(\nabla^\nu U^\mu)-c_4a_\mu a^\mu\big]
+ +\frac{\lambda}{2}(U^\mu U_\mu+1),
+ \label{eq:aether-action}
+\end{align}
+where $a_\mu=U^\nu\nabla_\nu U_\mu$.  A positive alignment energy couples
+the frame to the condensate current without imposing equality.  The regulated
+force truncation is
+\begin{equation}
+ \mathcal L_\psi=\frac{K_Q}{2}\mathcal Q^2-A\mathcal Y^{3/2}
+ -\frac{\gamma}{2M_*^2}(\Delta_U\psi)^2.
+ \label{eq:stage-a-force}
+\end{equation}
+The symbolic Stage-A calculation gives the necessary frozen-metric conditions
+\begin{equation}
+ c_{14}>0,\qquad c_1>0,\qquad c_{123}>0,
+ \qquad K_Q>0,\quad A>0,\quad\gamma>0,
+ \label{eq:stage-a-signs}
+\end{equation}
+and at zero background gradient the regulator produces
+\begin{equation}
+ \omega^2=\frac{\gamma}{K_QM_*^2}k^4.
+ \label{eq:k4-dispersion}
+\end{equation}
+This is a pass only in the declared flat, constant-frame decoupling limit.
+
+\subsection{Stage B frame-sector diagnostic}
+
+A verified sign map to the Einstein--aether review
+\cite{elingjacobsonmattingly2004} preserves all four operator labels.  Its
+normalization also requires
+\begin{equation}
+ \alpha_i=r_Uc_i,\qquad r_U=\frac{M_U^2}{M_P^2},
+ \label{eq:aether-normalization}
+\end{equation}
+because the source places the aether operators under the Einstein--Hilbert
+prefactor, while the Stage-A action declares an independent $M_U$.  The
+published coupled metric--aether result therefore gives
+\begin{align}
+ s_2^2&=\frac{1}{1-\alpha_{13}},\\
+ s_1^2&=\frac{\alpha_1-\tfrac12\alpha_1^2+\tfrac12\alpha_3^2}
+ {\alpha_{14}(1-\alpha_{13})},\\
+ s_0^2&=\frac{\alpha_{123}(2-\alpha_{14})}
+ {\alpha_{14}(1-\alpha_{13})(2+\alpha_{13}+3\alpha_2)}.
+ \label{eq:aether-speeds}
+\end{align}
+As $r_U\to0$ at fixed $c_i$ ratios, the spin-1 and spin-0 expressions
+reduce to the Stage-A ratios $c_1/c_{14}$ and $c_{123}/c_{14}$.  This confirms
+that those ratios are weak-metric-coupling limits, not the full mode speeds.
+It is a checked literature substitution, not an independent ITSM-side
+linearized Einstein-equation derivation, and it excludes the coupled
+$\Phi$--$U$--$\psi$ system.
+
+\subsection{Zero-gradient force-block factorization}
+
+On the declared background $\bar\psi=\text{constant}$, every derivative of
+the force field begins at first perturbative order.  Consequently,
+\begin{equation}
+ \mathcal Q^2=\dot\pi^2+\mathcal O(3),\qquad
+ \mathcal Y^{3/2}=\mathcal O(3),\qquad
+ (\Delta_U\psi)^2=(\nabla^2\pi)^2+\mathcal O(3),
+\end{equation}
+where metric and frame corrections enter only in the indicated higher-order
+terms.  The force scalar therefore factorizes from the lapse, shift, frame and
+condensate blocks at quadratic order for the declared truncation:
+\begin{equation}
+ S_\pi^{(2)}=\frac12\int\dd^4x\left[
+ K_Q\dot\pi^2-\frac{\gamma}{M_*^2}(\nabla^2\pi)^2\right].
+ \label{eq:zero-gradient-force-block}
+\end{equation}
+It carries one nonnegative $z=2$ scalar mode for $K_Q,\gamma>0$.  This bounded
+result does not reduce the remaining metric--frame--condensate block.
+
+A constant field redefinition $\psi_c=s\psi$ sends
+\begin{equation}
+ K_Q\to\frac{K_Q}{s^2},\quad
+ A\to\frac{A}{s^3},\quad
+ \gamma\to\frac{\gamma}{s^2},\quad
+ C_m\to\frac{C_m}{s},\quad q\to sq.
+\end{equation}
+Thus $\gamma/K_Q$, $A/K_Q^{3/2}$, $C_m/\sqrt{K_Q}$ and $Aq/K_Q$ are invariant,
+whereas $K_Q$ alone is not.  UVIR-003 can determine a structural stability
+domain in invariant ratios, but a parent microscopic calculation or MAT-001
+must fix the physical normalization and select a point in that domain.  The
+earlier $K_Q\sim M_P^2$ estimate remains a speculative dimensional analogy.
+\subsection{Scalar ADM readiness}
+
+The intended coupled reduction was to be performed around Minkowski space
+with $\Phi=\rho_0e^{i\mu t}/\sqrt2$, constant $U^\mu$ and constant
+$\bar\psi$.  This background is not on shell for the declared gravitational
+action.  Writing $s=\rho_0^2$, the homogeneous condensate has
+\begin{equation}
+ p_\Phi=\frac12s\mu^2-V(\rho_0),\qquad
+ \rho_\Phi=\frac12s\mu^2+V(\rho_0),\qquad
+ \rho_\Phi+p_\Phi=s\mu^2>0.
+ \label{eq:condensate-enthalpy}
+\end{equation}
+A constant vacuum-energy subtraction shifts $\rho$ and $p$ oppositely, so it
+cannot cancel their sum.  It therefore cannot make both flat-background
+Einstein equations vanish on the nonzero finite-density branch.
+
+An exact stationary completion would need a reservoir or driver satisfying
+\begin{equation}
+ \rho_R=-\rho_\Phi,\qquad p_R=-p_\Phi,\qquad
+ \rho_R+p_R=-s\mu^2.
+ \label{eq:required-support-stress}
+\end{equation}
+This is non-vacuum stress.  Its scalar perturbations generally enter the
+lapse and shift constraints and cannot be silently omitted.  Until a
+covariant support action, a controlled rigid-support limit, or a consistent
+cosmological background is declared, eliminating the ADM constraints would
+produce an off-shell kinetic matrix.  The scalar reduction is therefore
+blocked at readiness rather than counted as a stability failure.  The
+zero-gradient force factorization remains valid because that block is
+quadratically independent on the declared constant-force background.
+
+\subsection{Background-completion screen}
+
+For a minimally coupled shift-symmetric support scalar with
+$X_R=-\nabla_\mu\chi\nabla^\mu\chi/2>0$ and
+$\mathcal L_R=P_R(X_R)$,
+\begin{equation}
+ \rho_R+p_R=2X_RP_{R,X}.
+ \label{eq:px-support-enthalpy}
+\end{equation}
+Exact Minkowski support would therefore require
+\begin{equation}
+ P_{R,X}=-\frac{s\mu^2}{2X_R}<0.
+ \label{eq:px-support-sign}
+\end{equation}
+The principal quadratic fluctuation action is
+\begin{equation}
+ \mathcal L_R^{(2)}
+ =\frac12(P_{R,X}+2X_RP_{R,XX})\dot\pi_R^2
+ -\frac12P_{R,X}(\nabla\pi_R)^2.
+ \label{eq:px-support-quadratic}
+\end{equation}
+A healthy two-derivative short-wavelength scalar requires both
+$P_{R,X}+2X_RP_{R,XX}>0$ and $P_{R,X}>0$, in conflict with
+Eq.~\eqref{eq:px-support-sign}.  This is the local version of the familiar
+instability obstruction for simple phantom-like scalar backgrounds
+\cite{vikman2005}.  The ghost-condensate point has $P_{R,X}=0$ and hence zero
+enthalpy; its $k^4$ excitation does not by itself supply the missing
+background stress \cite{arkani-hamed2004}.
+
+Stable NEC violation can be engineered with additional EFT structure
+\cite{creminelli2006}, but importing that structure would add a new
+microscopic sector, cutoff and stability gate.  A prescribed rigid stress is
+also insufficient for the full problem because it has no action-derived
+lapse or shift response.  The screen therefore selects no new exact-Minkowski
+support field.
+
+The least-assumptive route is a self-consistent evolving flat-FRW background,
+\begin{equation}
+ M_{\rm cos}^2=M_P^2+\frac{M_U^2}{2}(c_1+3c_2+c_3),
+ \label{eq:cosmological-planck-mass}
+\end{equation}
+\begin{equation}
+ 3M_{\rm cos}^2H^2=\rho_{\rm total},\qquad
+ -2M_{\rm cos}^2\dot H=\rho_{\rm total}+p_{\rm total}.
+ \label{eq:selected-frw-background}
+\end{equation}
+For isolated condensate charge $n=\mu\rho^2$,
+\begin{equation}
+ \dot n+3Hn=0.
+ \label{eq:condensate-charge-dilution}
+\end{equation}
+Thus the amplitude or chemical potential generally evolves.  Exact constant
+$n$ in expansion would require a separately declared charge source
+$S_N=3Hn$; the stress-energy exchange vector $Q_{\rm syn}^{\nu}$ is not
+automatically that source.
+
+\subsection{Evolving FRW existence check}
+
+For the comoving unit aether, the Stage-A contractions reduce to
+$3H_N^2$, $9H_N^2$, $3H_N^2$ and zero acceleration squared.  The alignment
+projector annihilates the parallel homogeneous condensate current, and the
+constant force field has no background derivatives.  The reduced action is
+\begin{equation}
+ S_{\rm bg}=\int\dd t\left[
+ -\frac{3M_{\rm cos}^2a\dot a^2}{N}
+ +\frac{a^3}{2N}(\dot\rho^2+\rho^2\dot\Theta^2)
+ -Na^3V(\rho)\right].
+ \label{eq:frw-minisuperspace-action}
+\end{equation}
+Its amplitude and phase equations are
+\begin{equation}
+ \ddot\rho+3H\dot\rho-\rho\mu^2+V_{,\rho}=0,
+ \qquad
+ \frac{\dd}{\dd t}(a^3\rho^2\mu)=0.
+ \label{eq:frw-condensate-equations}
+\end{equation}
+
+A representative dimensionless integration, not a parameter fit, uses
+$M_P=1$, $M_U=0.5$, $(c_1,c_2,c_3,c_4)=(0.10,0.05,0.05,0.05)$ and positive
+mass--quartic--sextic couplings.  From $t=0$ to $8$, it remains regular and
+expanding:
+\begin{equation}
+ (a,\rho,\mu,H):
+ (1,1,1.123610,0.619841)
+ \longrightarrow
+ (4.571577,0.134236,0.652648,0.076405).
+ \label{eq:frw-existence-endpoints}
+\end{equation}
+The maximum relative Friedmann residual is $2.124\times10^{-10}$, charge drift
+is $2.220\times10^{-16}$ and the continuity residual is
+$1.898\times10^{-15}$.  This verifies an on-shell existence branch and removes
+the background blocker.  It does not select a fiducial cosmology or establish
+perturbation stability.
+
+The metric--frame--condensate constraint reduction is now ready to begin on
+this time-dependent background.  A subhorizon limit can test local modes only for
+$k/a\gg H$; the strict low-$k$ question remains part of the complete
+cosmological perturbation system.
+
+\subsection{Scalar ADM principal-symbol reduction}
+
+The first scalar constraint subgate uses aether-unitary gauge,
+\begin{equation}
+ N=1+\delta N,\qquad N_i=\partial_i\beta,\qquad
+ h_{ij}=a^2e^{2\mathcal R}\delta_{ij},\qquad U^\mu=n^\mu,
+ \label{eq:scalar-adm-gauge}
+\end{equation}
+and freezes the evolving background coefficients over a wavelength.  For
+$q_{\rm phys}=k/a\gg H$, the principal lapse and scalar-shift solutions are
+\begin{equation}
+ \delta N=-\frac{2M_P^2}{M_U^2c_{14}}\mathcal R
+ +\frac{\dot\rho\,\delta\dot\rho+\rho^2\mu\dot\vartheta}
+ {M_U^2c_{14}q_{\rm phys}^2},
+ \label{eq:scalar-adm-lapse}
+\end{equation}
+\begin{equation}
+ \beta=-\frac{2M_{\rm cos}^2\dot{\mathcal R}
+ +\dot\rho\,\delta\rho+\rho^2\mu\vartheta}
+ {M_U^2c_{123}q_{\rm phys}^2}.
+ \label{eq:scalar-adm-shift}
+\end{equation}
+With $F=M_{\rm cos}^2/M_P^2
+=1+(\alpha_{13}+3\alpha_2)/2$, their elimination gives
+\begin{equation}
+ \mathcal L_{\mathcal R}^{(2)}
+ =\mathcal K_{\mathcal R}\dot{\mathcal R}^2
+ -\mathcal G_{\mathcal R}q_{\rm phys}^2\mathcal R^2,
+ \quad
+ \mathcal K_{\mathcal R}
+ =\frac{2M_P^2F(1-\alpha_{13})}{\alpha_{123}},
+ \quad
+ \mathcal G_{\mathcal R}
+ =\frac{M_P^2(2-\alpha_{14})}{\alpha_{14}}.
+ \label{eq:scalar-adm-reduced}
+\end{equation}
+Their ratio independently recovers the exact coupled Einstein--aether spin-0
+speed \cite{elingjacobsonmattingly2004},
+\begin{equation}
+ s_0^2=
+ \frac{\alpha_{123}(2-\alpha_{14})}
+ {\alpha_{14}(1-\alpha_{13})(2+\alpha_{13}+3\alpha_2)}.
+ \label{eq:scalar-adm-spin-zero}
+\end{equation}
+
+The condensate velocity Hessian retains a leading lapse-induced correction
+whose determinant factorizes as
+\begin{equation}
+ \det\mathbf K_\Phi(q_{\rm phys})
+ =\rho^2\left[
+ 1-\frac{\dot\rho^2+\rho^2\mu^2}
+ {M_U^2c_{14}q_{\rm phys}^2}\right].
+ \label{eq:scalar-adm-condensate-determinant}
+\end{equation}
+Thus the controlled domain is not merely $q_{\rm phys}\gg H$ but
+\begin{equation}
+ q_{\rm phys}\gg\max(H,q_{\rm ADM}),\qquad
+ q_{\rm ADM}^2=
+ \frac{\dot\rho^2+\rho^2\mu^2}{M_U^2c_{14}}.
+ \label{eq:scalar-adm-validity}
+\end{equation}
+At the representative dimensionless point,
+$\mathcal K_{\mathcal R}=39.94375$,
+$\mathcal G_{\mathcal R}=52.33333$ and $s_0^2=1.31018$.  The principal block
+is positive, but its cone is wider than the metric cone.  This is a bounded
+subhorizon result with a multicone-causality flag, not a full finite-$k$ or
+low-$k$ cosmological stability proof.
+
+\subsection{Time-dependent finite-wavenumber scalar reduction}
+
+The complete quadratic scalar reduction retains the evolving background and
+all terms through the homogeneous order.  Define
+\begin{equation}
+ \Sigma=q_{\rm phys}^2\beta,\qquad
+ D_{123}=M_U^2c_{123},\qquad C_{14}=M_U^2c_{14},\qquad
+ M=M_{\rm cos}^2.
+ \label{eq:finite-q-definitions}
+\end{equation}
+For every $q_{\rm phys}>0$, the lapse and momentum constraints can be written
+\begin{equation}
+ \mathcal L^{(2)}=\mathcal L_0+\mathbf z^{\mathsf T}\mathbf J
+ +\frac12\mathbf z^{\mathsf T}\mathbf C\mathbf z,
+ \qquad \mathbf z=(\delta N,\Sigma)^{\mathsf T},
+ \label{eq:finite-q-constraint-form}
+\end{equation}
+with
+\begin{equation}
+ \mathbf C=
+ \begin{pmatrix}
+ C_{14}q_{\rm phys}^2-2V & 2MH\\
+ 2MH & -D_{123}
+ \end{pmatrix}.
+ \label{eq:finite-q-constraint-matrix}
+\end{equation}
+The source vector retains $H$, $\dot\rho$, $\mu$ and the amplitude-potential
+terms.  Exact elimination gives
+\begin{equation}
+ \mathbf z=-\mathbf C^{-1}\mathbf J,
+ \qquad
+ \mathcal L_{\rm red}^{(2)}=\mathcal L_0
+ -\frac12\mathbf J^{\mathsf T}\mathbf C^{-1}\mathbf J.
+ \label{eq:finite-q-schur}
+\end{equation}
+Coefficient derivatives in the reduced equations include $\dot H$,
+$\ddot\rho$, $\dot\mu$ and
+$\dot q_{\rm phys}=-Hq_{\rm phys}$ for a fixed comoving mode.
+
+On the background equations, the exact reduced velocity-Hessian determinant is
+\begin{equation}
+ \det\mathbf K_{\rm red}=
+ \frac{2M\rho^2(2M-3D_{123})C_{14}q_{\rm phys}^2}
+ {C_{14}D_{123}q_{\rm phys}^2-2D_{123}V+4M^2H^2}.
+ \label{eq:finite-q-kinetic-determinant}
+\end{equation}
+Its high-wavenumber limit reproduces the principal curvature and condensate
+blocks above.  A scan of 801 background times and 61 logarithmic wavenumbers,
+$10^{-3}\le q_{\rm phys}/H\le10^3$, finds three positive and no negative
+kinetic eigenvalues at all 48,861 nonzero-wavenumber samples.  The constraint
+matrix remains nonsingular; its smallest sampled singular value is
+$0.0501148$.
+
+Equation~\eqref{eq:finite-q-kinetic-determinant} also exposes a homogeneous
+rank change.  The smallest normalized eigenvalue scales numerically as
+$q_{\rm phys}^{2.00066}$, and the kinetic rank falls from three to two at
+$q_{\rm phys}=0$.  The follow-on audit evaluates the endpoint exactly and
+finds
+\begin{equation}
+ \mathbf K_{\rm red}(0)
+ \begin{pmatrix}H&\dot\rho&\mu\end{pmatrix}^{\mathsf T}=0.
+ \label{eq:low-q-time-shift-null}
+\end{equation}
+This vector is tangent to $(\ln a,\rho,\Theta)$ under a homogeneous time
+translation.  The two combinations
+\begin{equation}
+ Q_\rho=\delta\rho-\frac{\dot\rho}{H}\mathcal R,
+ \qquad
+ Q_\Theta=\vartheta-\frac{\mu}{H}\mathcal R
+ \label{eq:low-q-invariants}
+\end{equation}
+annihilate that orbit.  After phase normalization by $\rho$, their physical
+$q=0$ kinetic block has two positive and no negative eigenvalues at every one
+of the 801 representative trajectory points; its minimum eigenvalue is
+$0.937286$.  At $q_{\rm phys}/H=10^{-3}$ the smallest finite-$q$ eigenvector
+has minimum alignment cosine $0.9999999999999994$ with the time-shift orbit.
+The rank loss is therefore a gauge endpoint, not a third physical homogeneous
+scalar.  Canonically normalizing its vanishing norm would manufacture a
+gauge-dependent strong-coupling scale.
+
+\subsection{Bounded khronon cubic readiness result}
+
+As a controlled next step, use the hypersurface-orthogonal aether--khronon equivalence \cite{jacobson2010} and restore the preferred-time scalar through
+\begin{equation}
+ T=t+\pi,\qquad
+ U_\mu=-\frac{\partial_\mu T}{\sqrt{-(\partial T)^2}}.
+ \label{eq:khronon-definition}
+\end{equation}
+For a one-dimensional longitudinal profile with the metric held flat, the
+four-operator aether action gives, after suppressing the overall $M_U^2$
+factor,
+\begin{align}
+ \mathcal L_2={}&\frac12\left[c_{14}\pi_{tx}^2
+                 -c_{123}\pi_{xx}^2\right],\label{eq:khronon-l2}\\
+ \mathcal L_3={}&-c_{14}\pi_t\pi_{tx}^2
+ +c_{123}\pi_t\pi_{xx}^2-c_{14}\pi_{tt}\pi_{tx}\pi_x\nonumber\\
+ &+(2c_{123}-c_{14})\pi_{tx}\pi_x\pi_{xx}.
+ \label{eq:khronon-l3}
+\end{align}
+For every nonzero Fourier mode,
+$\chi_k=M_U\sqrt{c_{14}}\lvert k\rvert\pi_k$ supplies the quadratic canonical
+normalization and $c_s^2=c_{123}/c_{14}$.  This longitudinal result is a
+one-dimensional check on the complete three-dimensional basis below.
+
+\subsection{Three-dimensional cubic and constraint-order result}
+
+Let $p_i=\partial_i\pi$, $v_i=\partial_i\dot\pi$,
+$H_{ij}=\partial_i\partial_j\pi$ and $H=\Delta\pi$.  With the overall
+$M_U^2$ factor suppressed, direct expansion of the hypersurface-orthogonal
+aether action in flat decoupling gives
+\begin{align}
+ \mathcal L_2={}&\frac12\left[
+ c_{14}v_iv_i-(c_1+c_3)H_{ij}H_{ij}-c_2H^2\right],
+ \label{eq:khronon-3d-l2}\\
+ \mathcal L_3={}&-c_{14}\left(\ddot\pi\,p_iv_i+\dot\pi\,v_iv_i\right)
+ +(c_1+2c_3-c_4)p_iH_{ij}v_j
+ +2c_2Hp_iv_i\nonumber\\
+ &+(c_1+c_3)\dot\pi\,H_{ij}H_{ij}
+ +c_2\dot\pi\,H^2 .
+ \label{eq:khronon-3d-l3}
+\end{align}
+Suppressing transverse derivatives reduces this expression exactly to
+Eqs.~\eqref{eq:khronon-l2}--\eqref{eq:khronon-l3}.
+
+The perturbative constraint order can also be fixed without guessing the
+second-order lapse or shift.  For nondynamical variables $z$ with
+\begin{equation}
+ \mathcal L_2=\mathcal L_{2,\mathrm{phys}}+z^{\mathsf T}J
+ +\frac12z^{\mathsf T}Cz,\qquad z_1=-C^{-1}J,
+ \label{eq:cubic-constraint-order}
+\end{equation}
+substitution of $z=z_1+z_2+\cdots$ makes the term linear in $z_2$ vanish by
+$Cz_1+J=0$; the remaining quadratic term starts at fourth order.  Replacing
+$z_1$ by $z_1+z_2$ inside $\mathcal L_3$ likewise first changes quartic
+order.  Hence the reduced cubic action requires the first-order constraints,
+not explicit second-order lapse and shift solutions.
+
+A representative operator-basis estimate gives
+\begin{equation}
+ q_{\mathrm{NDA}}=0.125778823734,\qquad
+ 0.2029209475\leq\frac{q_{\mathrm{NDA}}}{H}\leq1.6462061767
+ \label{eq:khronon-basis-nda}
+\end{equation}
+along the sampled trajectory.  These values are not a physical cutoff: they
+change under field
+redefinitions and omit cosmological mixing.  Moreover, for linear dispersion
+$|\omega|=c_s|\mathbf k|$, on-shell three-point conservation saturates the
+triangle inequality and forces the momenta to be collinear.  A non-collinear
+on-shell cubic three-point amplitude therefore cannot define the desired
+interaction scale.  The next invariant calculation is the complete
+constrained scalar $2\!\to\!2$ amplitude, including cubic exchange, the
+quartic contact vertex, physical eigenmode projection and a stated unitarity
+criterion.  The action-dependent warnings and healthy-extension results in
+Refs.~\cite{blas2010,papazoglou2009} reinforce this boundary.  UVIR-003
+remains open.
+
+\subsection{Quartic contact and exchange readiness result}
+
+The normalized khronon expansion has also been carried through fourth order in
+three spatial dimensions.  The expanded flat-decoupling action contains 96
+quartic monomials, reproduces the quadratic and cubic results above and reduces
+exactly to an independently generated longitudinal quartic action.  For unit
+external momentum in elastic centre-of-mass kinematics, its on-shell contact
+coefficient reduces to
+\begin{equation}
+ C_4(\theta)=4\left[\frac{c_{123}^2}{c_{14}}
+ -(2c_{123}-c_{14})\cos^2\theta\right].
+ \label{eq:khronon-quartic-contact}
+\end{equation}
+This is a contact coefficient, not a partial-wave amplitude or a cutoff.
+
+For static momentum transfer, the polarized cubic vertex factorizes by
+$x^2+y^2-1$ where $(y,0,x)$ is the outgoing unit direction.  Hence elastic
+$t/u$ cubic exchange vanishes exactly.  The centre-of-mass $s$ channel instead
+has internal momentum $q_s=(-2\omega,\mathbf 0)$.  Since the flat khronon
+inverse kernel is
+\begin{equation}
+ D_\pi(q)=M_U^2c_{14}|\mathbf q|^2
+ \left(q_0^2-c_s^2|\mathbf q|^2\right),
+ \label{eq:khronon-flat-kernel}
+\end{equation}
+it cannot be inverted on that homogeneous gauge orbit.  Dropping the channel
+would not produce a physical amplitude.
+
+The required quartic constraint order is also fixed.  If $J_2$ denotes the
+quadratic source for the second-order lapse and shift solution, then
+\begin{equation}
+ z_2=-C^{-1}J_2,\qquad
+ \mathcal L_{\rm red}^{(4)}=\mathcal L_4[x,z_1]
+ -\frac12J_2^{\mathsf T}C^{-1}J_2.
+ \label{eq:quartic-constraint-schur}
+\end{equation}
+Third-order constraint solutions cancel at this order.  The next invariant
+calculation is therefore the evolving-FRW cubic and quartic action with this
+Schur complement, followed by physical scalar projection and a gauge-regular
+$2\!\to\!2$ unitarity amplitude.  The flat quartic basis passes as a readiness
+result, while the physical scale and UVIR-003 remain open.
+
+\subsection{Nonlinear ADM action provenance}
+
+Before computing the cosmological quadratic constraint source $J_2$, the
+nonlinear parent action must be fixed rather than inferred from the reduced
+quadratic system.  In aether-unitary gauge the exact two-derivative
+$g+U+\Phi$ ADM density is
+\begin{align}
+ \mathcal L_{gU\Phi}=\frac{N\sqrt h}{2}\big[&
+ M_P^2{}^{(3)}R+(M_P^2-M_U^2c_{13})K_{ij}K^{ij}
+ -(M_P^2+M_U^2c_2)K^2+M_U^2c_{14}a_i a^i\nonumber\\
+ &+n(\varrho)^2+\varrho^2n(\theta)^2
+ -h^{ij}\{D_i\varrho D_j\varrho
+ +\varrho^2D_i\theta D_j\theta\}-2V(\varrho)\big].
+ \label{eq:nonlinear-adm-parent}
+\end{align}
+Since $J_\Phi^\mu=-\varrho^2\nabla^\mu\theta$, the alignment term becomes
+\begin{equation}
+ \mathcal L_{\rm align}=-\frac{N\sqrt h}{2}\zeta_{\rm align}
+ \varrho^4h^{ij}D_i\theta D_j\theta .
+ \label{eq:nonlinear-adm-alignment}
+\end{equation}
+Symbolic expansion of this parent block exactly reproduces the FRW
+minisuperspace action and the complete finite-$q$ quadratic constraint matrix
+and source already reported.  Thus the quadratic $g+U+\Phi+$alignment system
+has verified nonlinear action provenance.
+
+At the preceding action-provenance checkpoint, the complete force sector was
+not yet fixed: Stage A had defined $\Delta_U$ only in the constant
+hypersurface-orthogonal frame.  A separate issue remains at the selected
+zero-gradient background, where $Y=\epsilon^2Y_2$ gives
+\begin{equation}
+ Y^{3/2}=|\epsilon|^3Y_2^{3/2}.
+ \label{eq:force-nonanalytic-origin}
+\end{equation}
+This is even under $\epsilon\to-\epsilon$, whereas a nonzero homogeneous cubic
+Taylor polynomial is odd.  Consequently an ordinary analytic cubic vertex is
+not defined there.  Track A resolves the action-definition hold below while
+retaining this exact non-analytic functional; it does not turn the local force
+interaction into a homogeneous perturbative amplitude.
+
+A bounded completion audit identifies the rest-space Laplacian
+\begin{equation}
+ \Delta_U\psi:=D_\mu D^\mu\psi
+ =h^{\mu\nu}\nabla_\mu\nabla_\nu\psi+\Theta_U\mathcal Q,
+ \qquad \Theta_U:=\nabla_\mu U^\mu .
+ \label{eq:rest-space-laplacian-candidate}
+\end{equation}
+as the minimal evolving-frame operator.  Track A now adopts
+Eq.~\eqref{eq:rest-space-laplacian-candidate}, retains exact $Y^{3/2}$ and
+assigns its ordinary perturbative force analysis to a declared local
+nonzero-gradient background.  No smoothing scale or canonical linear-$Y$ term
+is introduced.
+
+On the homogeneous zero-gradient FRW branch, with
+$N_i=\partial_i\beta$, $h_{ij}=a^2e^{2\mathcal R}\delta_{ij}$ and
+$\psi=\bar\psi+\pi$, the adopted operator is
+\begin{equation}
+ D_\mu D^\mu\psi
+ =a^{-2}e^{-2\mathcal R}
+  (\partial^2\pi+\partial_i\mathcal R\,\partial_i\pi).
+ \label{eq:track-a-adm-laplacian}
+\end{equation}
+Its exact symbolic expansion, together with $\mathcal Q^2$ and the retained IR
+functional, reproduces the quadratic $z=2$ block and is verified through
+direct quartic order.  Before finite-$q$ scalar-shift normalization, the force
+contribution to the quadratic constraint source is
+\begin{align}
+ J_{2,\delta N}^{(\psi)}={}&-\frac{a^3K_Q}{2}\dot\pi^2
+ -\frac{\gamma}{2M_*^2a}(\partial^2\pi)^2,
+ \nonumber\\
+ J_{2,\beta}^{(\psi)}={}&aK_Q\partial_i
+ (\dot\pi\,\partial_i\pi).
+ \label{eq:track-a-force-j2}
+\end{align}
+The regulator has no shift source.  Exact $Y^{3/2}$ is constraint independent
+at cubic amplitude order on the zero-gradient branch, so its contribution to
+$J_2$ there is zero; this does not make it an analytic three-point vertex.
+The force component passes and can therefore be combined with the fixed
+nonlinear parent block.
+
+\subsection{Origin-linear and dressed finite-wavenumber sources}
+
+Let $M=M_{\rm cos}^2$ and let $D_i$ denote the physical derivative on the
+unperturbed FRW leaf.  The coefficient linear in the constraints at their
+origin is a verified component of the second-order source.  Its lapse part is
+\begin{align}
+ J_{2,N}^{\rm origin}={}&3M\dot{\mathcal R}^{\,2}
+ +18MH\mathcal R\dot{\mathcal R}
+ -2M_P^2\mathcal R D^2\mathcal R
+ -M_P^2D_i\mathcal R D_i\mathcal R \nonumber\\
+ &-\frac12\left(\dot{\delta\varrho}^{\,2}
+ +\mu^2\delta\varrho^2+4\varrho\mu\delta\varrho\dot\vartheta
+ +\varrho^2\dot\vartheta^2+V_{\varrho\varrho}\delta\varrho^2\right)
+ \nonumber\\
+ &-3\mathcal R\left(\dot\varrho\dot{\delta\varrho}
+ +\varrho\mu^2\delta\varrho+\varrho^2\mu\dot\vartheta
+ +V_\varrho\delta\varrho\right)\nonumber\\
+ &-\frac12\left[D_i\delta\varrho D_i\delta\varrho
+ +\varrho^2(1+\zeta_{\rm align}\varrho^2)
+ D_i\vartheta D_i\vartheta\right]\nonumber\\
+ &-\frac{K_Q}{2}\dot\pi^2
+ -\frac{\gamma}{2M_*^2}(D^2\pi)^2 .
+ \label{eq:complete-j2-lapse}
+\end{align}
+With $\Sigma=-D^2\beta=q_{\rm phys}^2\beta$, the shift component is
+\begin{align}
+ J_{2,\Sigma}^{\rm origin}={}&-2M\left(\mathcal R\dot{\mathcal R}
+ +\frac12H\mathcal R^2\right)+(D^2)^{-1}D_iW_i,
+ \label{eq:complete-j2-shift}\\
+ W_i={}&2M(\dot{\mathcal R}+H\mathcal R)D_i\mathcal R
+ -\dot{\delta\varrho}D_i\delta\varrho
+ -\mathcal R\dot\varrho D_i\delta\varrho\nonumber\\
+ &-\varrho^2\dot\vartheta D_i\vartheta
+ -2\varrho\mu\delta\varrho D_i\vartheta
+ -\mathcal R\varrho^2\mu D_i\vartheta
+ -K_Q\dot\pi D_i\pi .
+\end{align}
+The inverse Laplacian in
+Eq.~\eqref{eq:complete-j2-shift} is defined only at
+$q_{\rm phys}>0$, the domain in which $\Sigma$ is an independent constraint;
+it does not alter the homogeneous gauge-orbit result.
+
+The origin-linear coefficient is not the complete source because the cubic
+ADM action contains nonlinear lapse and scalar-shift dependence.  With
+$z_1=-C^{-1}J_1$, the correct functional is
+\begin{equation}
+ S_2=\left.\frac{\partial L_3[x,z]}{\partial z}\right|_{z=z_1}
+ =J_2^{\rm origin}+\Delta S_2^{(g+U)}+\Delta S_2^{(\Phi)} .
+ \label{eq:complete-dressed-s2}
+\end{equation}
+The generic gravity--aether term retains all Hessian,
+$D_i\mathcal R D_i\beta$ and lapse-gradient contractions.  The condensate
+term includes temporal lapse and shift advection.  The Track-A force cubic
+block is affine in the constraints, so it adds no nonlinear correction beyond
+$J_2^{\rm origin}$ on the declared homogeneous zero-gradient branch.
+
+The complete generic fourth-order contact functional has also been expanded
+at $z_1$.  Eliminating the second-order constraints therefore gives
+\begin{equation}
+ \mathcal L_{\rm red}^{(4)}
+ =L_4[x,z_1]-\frac12S_2^{\mathsf T}C^{-1}S_2 .
+ \label{eq:complete-s2-schur}
+\end{equation}
+This supersedes the provisional expression using $J_2^{\rm origin}$ alone.
+The complete $S_2$, generic $L_4[x,z_1]$ contact and reduced quartic
+functional pass at $q_{\rm phys}>0$.  This is still an unprojected functional,
+not a physical scattering amplitude.
+
+\subsection{Regular finite-wavenumber physical basis}
+
+The homogeneous time-shift orbit can be separated from the finite-wavenumber
+preferred-time gradient by defining
+\begin{equation}
+ \Xi=\frac{q_{\rm phys}}{H}\mathcal R,\qquad
+ Q_\rho=\delta\rho-\frac{\dot\rho}{H}\mathcal R,\qquad
+ Q_\chi=\rho\left(\vartheta-\frac{\mu}{H}\mathcal R\right).
+ \label{eq:physical-scalar-basis}
+\end{equation}
+For $q_{\rm phys}>0$ the inverse map is
+\begin{equation}
+ \mathcal R=\frac{H}{q_{\rm phys}}\Xi,\quad
+ \delta\rho=Q_\rho+\frac{\dot\rho}{q_{\rm phys}}\Xi,\quad
+ \vartheta=\frac{Q_\chi}{\rho}+\frac{\mu}{q_{\rm phys}}\Xi .
+ \label{eq:physical-scalar-inverse}
+\end{equation}
+The first column is the time-shift vector
+$(H,\dot\rho,\mu)^{\mathsf T}/q_{\rm phys}$.  It converts the verified
+$q_{\rm phys}^2$ kinetic collapse into a finite gradient-mode normalization
+without introducing an exactly homogeneous $\Xi$ degree of freedom.
+
+If $T$ denotes Eq.~\eqref{eq:physical-scalar-inverse}, the transformed
+determinant is
+\begin{equation}
+ \det K_{\rm phys}
+ =\frac{2MH^2(2M-3D_{123})C_{14}}
+ {C_{14}D_{123}q_{\rm phys}^2-2D_{123}V+4M^2H^2}.
+ \label{eq:physical-scalar-determinant}
+\end{equation}
+It has a finite nonzero on-shell limit as $q_{\rm phys}\to0$.  A scan of
+801 background times and 49 logarithmic wavenumbers over
+$10^{-3}\le q_{\rm phys}/H\le10^3$ finds three positive and no negative
+eigenvalues in all 39,249 transformed matrices.  At exactly zero momentum
+$\Xi$ is absent, while $(Q_\rho,Q_\chi)$ reduce to the previously verified
+two-dimensional homogeneous physical block.
+
+For fixed comoving momentum, $\dot q_{\rm phys}=-Hq_{\rm phys}$, so vertex
+projection uses $\dot y=T\dot p+\dot T p$.  Cubic and quartic momentum-space
+kernels must be transformed leg by leg:
+\begin{align}
+ V^{\rm phys}_{abc}&=
+ T^i{}_a(k_1)T^j{}_b(k_2)T^k{}_c(k_3)V_{ijk},\nonumber\\
+ W^{\rm phys}_{abcd}&=
+ T^i{}_a(k_1)T^j{}_b(k_2)T^k{}_c(k_3)T^\ell{}_d(k_4)W_{ijk\ell}.
+ \label{eq:physical-vertex-projection}
+\end{align}
+The basis and projection map pass.  Applying that map to the complete
+analytic interactions gives a factorized cubic kernel and a reduced quartic
+kernel
+\begin{equation}
+ W_{\rm red}=W_{\rm contact}
+ -\sum_{(ab|cd)}B_{ab}(-K)^{\mathsf T}C(K)^{-1}B_{cd}(K),
+ \qquad (ab|cd)=(12|34),(13|24),(14|23),
+ \label{eq:reduced-quartic-momentum-kernel}
+\end{equation}
+where
+$B_{ab}=\partial^3L_3/(\partial\epsilon_a\partial\epsilon_b\partial z_K)$
+is the complete physical two-leg constraint source.  The four-leg contact,
+the pair source, and the three Schur pairings pass in factorized form for
+nonzero external momenta and nonzero $K$.
+
+At exact $K=0$ one must not substitute into the finite-wavenumber inverse.
+The homogeneous scalar-shift coordinate $\Sigma=-D^2\beta$ is absent, just as
+$\Xi$ is absent from the homogeneous physical space.  For $V\ne0$, the audited algebraic prescription is
+\begin{equation}
+ P_z^{(0)}=\operatorname{diag}(1,0),\qquad
+ G_z^{(0)}=\operatorname{diag}\!\left(-\frac{1}{2V},0\right),\qquad
+ P_{\rm phys}^{(0)}=\operatorname{diag}(0,1,1,1),
+ \label{eq:homogeneous-internal-projectors}
+\end{equation}
+on $(\delta N,\Sigma)$ and $(\Xi,Q_\rho,Q_\chi,\Pi)$ respectively.  It
+retains the homogeneous lapse constraint and the
+$(Q_\rho,Q_\chi,\Pi)$ subspace while annihilating the two excluded gauge
+coordinates.  Projector idempotence, the projected constraint-inverse
+identity, the three-pair combinatorics and a finite centre-of-mass lapse-source
+limit are verified.
+
+The corresponding local frozen-time quadratic kernels have now been
+constructed.  With $A_p=P_p-P_p^{\mathsf T}$, the finite-wavenumber convention is
+\begin{equation}
+ D(\omega,q)=\omega^2K_p+i\omega A_p+C_p,
+ \qquad G_F=i[D+i\epsilon]^{-1}.
+ \label{eq:physical-quadratic-propagator}
+\end{equation}
+This includes the time derivative of the physical-basis map at fixed comoving
+momentum.  A separate exact-$q=0$ Hessian is formed only after the projectors
+in Eq.~\eqref{eq:homogeneous-internal-projectors} are applied.  Across the
+representative scan the kinetic inertia is positive, finite-$q$ constraints
+remain nonsingular and every sampled real positive-frequency pole has positive
+residue.  All five $q/H=100$ snapshots have four real positive-frequency
+poles.  Lower and intermediate momenta, however, develop complex
+frozen-background pole pairs, as do later projected $q=0$ snapshots.
+
+The required follow-on now tracks fixed comoving momentum, $q=k/a$, and
+evolves the complete physical equation
+\begin{equation}
+ K_p\ddot p+
+ \left(\dot K_p+3HK_p+P_p-P_p^{\mathsf T}\right)\dot p+
+ \left(\dot P_p+3HP_p-C_p\right)p=0.
+ \label{eq:fixed-comoving-transfer}
+\end{equation}
+Its kinetic-normalized transfer matrices converge with maximum coarse/fine
+error $1.31\times10^{-4}$ and reproduce an independent canonical-Hamiltonian
+generator to $1.06\times10^{-4}$.  Frozen-pole exponentiation is not
+quantitatively valid in the nonadiabatic domain.  The $q/H=100$ trajectory is
+a controlled high-momentum subset, with
+$\max|\dot\omega/\omega^2|=0.0222$.  The trajectory beginning at $q/H=0.01$
+nevertheless retains a converged maximum kinetic-normalized phase-space gain
+of $1.38\times10^{27}$.  A five-case mode-resolved follow-on constructs
+kinetic-normalized pole-pair frames, assigns them by principal-angle overlap
+and parallel-transports their real orientations.  In every tested case the
+maximizing initial singular vector is seeded by the finite-$q$ $\Xi$
+gauge-continuation subspace at fraction greater than $0.99977$.  Each
+trajectory nevertheless enters an off-axis complex quartet for
+$3.25$--$3.62$ percent of the sampled interval.  Its real invariant space has
+rank four, so no unique continuous real rank-two split between the
+gauge-continuation and retained-matter pole pairs exists there.
+
+The source-to-observable follow-on avoids assigning such pole identities.
+Generalized impulses and readouts are restricted to $(Q_\rho,Q_\chi)$; their
+original-field covectors annihilate the homogeneous time-translation orbit,
+and direct $\Xi$ support is below $7.61\times10^{-21}$.  All five cases retain
+amplified through-quartet response from $2.68\times10^{17}$ to
+$9.76\times10^{19}$, with coarse/fine errors below $5.48\times10^{-5}$.
+Record
+\texttt{PASS\_GAUGE\_PROJECTED\_MATTER\_RESPONSE\_SURVIVES\_WITH\_SCOPE}.
+This resolves the direct gauge-source attribution question in the tested
+dimensionless neighborhood, not an all-background instability theorem.  The
+Track-A force mode $\Pi$ factorizes from this coupled quadratic block and
+remains in the full finite-$q$ framework.
+
+A subsequent fixed-comoving domain map applies the declared conditions that
+all coupled poles remain real, $\max|\dot\omega/\omega^2|<0.1$, every
+frequency has $|\omega|/H\geq10$, and the factorized $\Pi$ mode satisfies the
+same adiabatic bound.  On the representative branch, samples beginning at
+$q/H=47.5,50,75,100$ pass, while $q/H=45$ reaches $0.1103$ and fails the
+adiabatic criterion.  This brackets a sampled transition between $45$ and
+$47.5$; it is not a continuous or all-background boundary.  The high-$q$
+frames are tracked without imposing the infrared $\Xi$-pure label.  Each
+nonzero internal exchange momentum must independently pass the same domain
+gate, while exact $q_K=0$ uses the separate homogeneous projector.
+The exchange-plus-reduced-contact amplitude and unitarity scale remain open;
+the exact $|\nabla\pi|^3$ interaction also still requires its declared local
+nonzero-gradient background.
+
+\subsection{Causality and cutoff status}
+
+Around a nonzero spatial background gradient of magnitude $q$, the force
+fluctuation has
+\begin{equation}
+ \omega^2=\frac{3Aq(1+\cos^2\theta)}{K_Q}k^2
+ +\frac{\gamma}{K_QM_*^2}k^4.
+ \label{eq:force-dispersion}
+\end{equation}
+Thus the long-wavelength metric-light-cone threshold depends on the unmatched
+ratio $Aq/K_Q$, while phase and group velocities grow without bound at large
+$k$ inside the truncated dispersion.  Preferred-frame metric superluminality
+is not by itself a proof of acausality, but the foliation-causality test and the
+physical EFT domain have not been established.
+
+Expansion of the cubic vertex supplies only the restricted, time-normalized
+longitudinal IR NDA scale
+\begin{equation}
+ \Lambda_{\rm NDA,long}^{\rm (IR)}\sim\frac{K_Q^{3/4}}{\sqrt A}.
+ \label{eq:long-nda}
+\end{equation}
+It is not the physical cutoff $\Lambda_{\rm EFT}$: transverse normalization,
+$k^4$-dominated power counting and a loop or unitarity analysis remain open.
+The comparison of the light-cone crossing scale with $\Lambda_{\rm EFT}$
+therefore cannot yet be made.
+
+A separate dimensional analogy, $K_Q=k_QM_P^2$, would place the
+long-wavelength threshold at order $a_0$ for order-unity coefficients.  That
+exercise is explicitly speculative: it is introduced only as a priority
+signal for deriving $K_Q$, not as a property of ITSM.
+
+\subsection{Conditional infrared operator}
+
+Define the normalized spatial invariant
+\begin{equation}
+ Y=\frac{h^{\mu\nu}\nabla_\mu\psi\nabla_\nu\psi}{a_0^2}.
+ \label{eq:Y}
+\end{equation}
+The target low-acceleration operator remains
+\begin{equation}
+ \mathcal L_{\psi,\rm IR}
+ =-\frac{2C_{\rm IR}}{3}\mpl^2a_0^2Y^{3/2}
+ +\mathcal O(Y^2,\nabla^2/\Lambda_{\rm EFT}^2).
+ \label{eq:ir-action}
+\end{equation}
+Neither $C_{\rm IR}$, $K_Q$ nor the normalized matter vertex has been derived.
+The preceding analytic Born--Infeld expression also remains rejected as the
+source of this branch because its small-invariant equation is linear at
+leading order.  UVIR-003 is therefore in progress and MAT-001 remains blocked.

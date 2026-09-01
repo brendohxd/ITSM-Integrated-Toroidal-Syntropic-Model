@@ -1,0 +1,168 @@
+{
+  "a0_eff": 3700.0,
+  "bc": "Dirichlet from 2D log multipole on outer boundary; Newtonian start",
+  "calculation_status": "PASS",
+  "convergence": [
+    {
+      "curl_algebraic_map_rel": 0.0022680010933295333,
+      "curl_potential_rel": 6.6432391107213016e-18,
+      "discrete_rel_residual": 8.694875809263148e-10,
+      "dx": 1.0,
+      "final_max_dphi": 1.0680843843147159e-05,
+      "g_probe": 11476.348760908273,
+      "half_box_kpc": 24.0,
+      "history_tail": [
+        {
+          "discrete_rel_residual": 9.543011765287336e-09,
+          "iter": 13,
+          "max_dphi": 0.00013820480671711266
+        },
+        {
+          "discrete_rel_residual": 2.8760838221341247e-09,
+          "iter": 14,
+          "max_dphi": 3.8281461456790566e-05
+        },
+        {
+          "discrete_rel_residual": 8.663558670740694e-10,
+          "iter": 15,
+          "max_dphi": 1.0680843843147159e-05
+        }
+      ],
+      "n": 49,
+      "picard_iters": 16
+    },
+    {
+      "curl_algebraic_map_rel": 0.0019278721174989227,
+      "curl_potential_rel": 3.3974339188643316e-17,
+      "discrete_rel_residual": 2.1755215691866706e-09,
+      "dx": 0.6666666666666679,
+      "final_max_dphi": 1.435447484254837e-05,
+      "g_probe": 11465.448398535123,
+      "half_box_kpc": 24.0,
+      "history_tail": [
+        {
+          "discrete_rel_residual": 2.372184780570882e-08,
+          "iter": 12,
+          "max_dphi": 0.00018888810882344842
+        },
+        {
+          "discrete_rel_residual": 7.165489220652376e-09,
+          "iter": 13,
+          "max_dphi": 5.1753566367551684e-05
+        },
+        {
+          "discrete_rel_residual": 2.163113329421747e-09,
+          "iter": 14,
+          "max_dphi": 1.435447484254837e-05
+        }
+      ],
+      "n": 73,
+      "picard_iters": 15
+    },
+    {
+      "curl_algebraic_map_rel": 0.001650285916856924,
+      "curl_potential_rel": 5.877631448071107e-18,
+      "discrete_rel_residual": 1.6792228385449514e-09,
+      "dx": 0.5,
+      "final_max_dphi": 8.594768587499857e-06,
+      "g_probe": 11451.891165444918,
+      "half_box_kpc": 24.0,
+      "history_tail": [
+        {
+          "discrete_rel_residual": 1.8266161030979983e-08,
+          "iter": 12,
+          "max_dphi": 0.00011891924077644944
+        },
+        {
+          "discrete_rel_residual": 5.52124518439679e-09,
+          "iter": 13,
+          "max_dphi": 3.17645026370883e-05
+        },
+        {
+          "discrete_rel_residual": 1.6681373932924292e-09,
+          "iter": 14,
+          "max_dphi": 8.594768587499857e-06
+        }
+      ],
+      "n": 97,
+      "picard_iters": 15
+    },
+    {
+      "curl_algebraic_map_rel": 0.0013759755788211806,
+      "curl_potential_rel": 3.144516636087469e-17,
+      "discrete_rel_residual": 1.2414139480287684e-09,
+      "dx": 0.375,
+      "final_max_dphi": 5.745561793446541e-06,
+      "g_probe": 11098.66962824013,
+      "half_box_kpc": 24.0,
+      "history_tail": [
+        {
+          "discrete_rel_residual": 1.3470908987941327e-08,
+          "iter": 12,
+          "max_dphi": 8.547335164621472e-05
+        },
+        {
+          "discrete_rel_residual": 4.0755783320099996e-09,
+          "iter": 13,
+          "max_dphi": 2.1982210455462337e-05
+        },
+        {
+          "discrete_rel_residual": 1.2323556434477834e-09,
+          "iter": 14,
+          "max_dphi": 5.745561793446541e-06
+        }
+      ],
+      "n": 129,
+      "picard_iters": 15
+    }
+  ],
+  "diagnostics": {
+    "all_grids_at_solver_floor_1e-8": true,
+    "all_grids_residual_lt_1e-3": true,
+    "coarsest_discrete_rel_residual": 8.694875809263148e-10,
+    "curl_ok": true,
+    "finest_curl_potential_rel": 3.144516636087469e-17,
+    "finest_discrete_rel_residual": 1.2414139480287684e-09,
+    "refine_ok": true,
+    "res_ok": true
+  },
+  "equation": "div(mu(|grad Phi|/a0_eff) grad Phi) = 4 pi G Sigma",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "DISK-001",
+  "ir": {
+    "C_obs": 1.0,
+    "C_obs_origin": "Conditional_default_Cobs_sim_1_MasterPlan_sec6",
+    "a0": 3700.0,
+    "a0_origin": "phenomenological_input",
+    "ban_B9_dual_rar": true,
+    "is_derived": false,
+    "label": "Conditional_AQUAL_baseline"
+  },
+  "mat001_status": "BLOCKED",
+  "method": {
+    "nonlinear": "under-relaxed Picard + sparse direct solve",
+    "omega": 0.7,
+    "picard_tol": 1e-10
+  },
+  "model": {
+    "density": "elliptical_gaussian_Sigma",
+    "half_box_kpc": 24.0,
+    "mass_Msun": 5000000000.0,
+    "sigma_x_kpc": 2.0,
+    "sigma_y_kpc": 1.0
+  },
+  "next_required_calculation": [
+    "Axisymmetric R\u2013z nonlinear AQUAL",
+    "Multipole BC expansion beyond monopole",
+    "DISK-001_GATE_REPORT when full pass criteria met"
+  ],
+  "pass_criteria": {
+    "curl_potential_rel_lt": 1e-10,
+    "finest_discrete_rel_residual_lt": 0.001,
+    "residual_improves_vs_coarsest": true
+  },
+  "residual_definition": "||A[mu(Phi)] Phi - b||_2 / ||b||_2 on interior DOFs (same discrete operator as the linear solve)",
+  "scientific_boundary": "Stage-2 methods tightening for 2D midplane Conditional AQUAL. Not 3D/R\u2013z, not SPARC, not Derived C_obs, not full DISK-001 PASS. 2D log BC is the correct free-space monopole for planar Poisson; higher multipoles of the elliptical source are not matched on \u2202\u03a9.",
+  "stage": "STAGE2_POISSON_2D_AQUAL_TIGHT",
+  "subgate_status": "PASS_DISK001_2D_AQUAL_STAGE2_RESIDUAL_BC"
+}

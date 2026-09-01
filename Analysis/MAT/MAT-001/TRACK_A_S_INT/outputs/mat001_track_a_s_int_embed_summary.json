@@ -1,0 +1,226 @@
+{
+  "S_int_status": "EMBEDDED_CONDITIONAL_ON_TRACK_A_HOST",
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements": [
+    "Keep free-sector ADM and Track-A force host as distinct charts unless a field map is declared and verified.",
+    "Join matter d,h with free-force constraint blocks B,C only in a declared multi-sector quadratic if that join is required.",
+    "Derive numeric K_Q (or an invariant on-shell residue) from the same host action before claiming numeric V.",
+    "Do not treat this Conditional embed as MAT physics PASS or Stage 4A reopen."
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "r3_covariant_action_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "force_hosting_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "s_int_form_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "track_a_force_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "force_local_upstream_contract",
+      "ok": true
+    },
+    {
+      "name": "free_sector_upstream_not_identified",
+      "ok": true
+    },
+    {
+      "name": "force_hosting_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "s_int_form_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_force_adm_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "force_local_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "free_sector_export_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_host_selected_conditional",
+      "ok": true
+    },
+    {
+      "name": "S_int_embedded_on_track_a_host",
+      "ok": true
+    },
+    {
+      "name": "d_h_exported_on_track_a_host",
+      "ok": true
+    },
+    {
+      "name": "joined_live_matching_still_not_ready",
+      "ok": true
+    },
+    {
+      "name": "free_sector_not_silently_identified",
+      "ok": true
+    },
+    {
+      "flags": {
+        "S_int_embedded_on_track_a": true,
+        "claims_MAT_pass": false,
+        "claims_UVIR_pass": false,
+        "claims_downstream_Derived": false,
+        "computes_numeric_V": false,
+        "d_h_exported_on_track_a_host": true,
+        "derives_numeric_K_Q": false,
+        "identifies_free_sector_with_Track_A": false,
+        "joined_free_sector_force_bundle_complete": false,
+        "live_same_chart_bundle_complete": false,
+        "numeric_matching_ready": false,
+        "physics_pass": false,
+        "reopens_stage4A": false,
+        "track_a_host_selected_conditional": true
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "S_int_embedded_on_track_a": true,
+    "claims_MAT_pass": false,
+    "claims_UVIR_pass": false,
+    "claims_downstream_Derived": false,
+    "computes_numeric_V": false,
+    "d_h_exported_on_track_a_host": true,
+    "derives_numeric_K_Q": false,
+    "identifies_free_sector_with_Track_A": false,
+    "joined_free_sector_force_bundle_complete": false,
+    "live_same_chart_bundle_complete": false,
+    "numeric_matching_ready": false,
+    "physics_pass": false,
+    "reopens_stage4A": false,
+    "track_a_host_selected_conditional": true
+  },
+  "declared_S_int_on_host": {
+    "background_sector": "-C_m*psi_bar*rho_b",
+    "expanded": "-C_m*pi*rho_b - C_m*psi_bar*rho_b",
+    "fluctuation_sector": "-C_m*pi*rho_b",
+    "form": "-C_m*rho_b*psi",
+    "status": "EMBEDDED_CONDITIONAL_ON_TRACK_A_HOST"
+  },
+  "evidence": {
+    "force_hosting": {
+      "parse_error": null,
+      "sha256": "288F5633AF2851E9292BF591A26C21ED9203BB1CF0611C0C78AE834324E761B0",
+      "source": "mat001_force_hosting_readiness_summary.json"
+    },
+    "force_local": {
+      "parse_error": null,
+      "sha256": "57DFC39128ECC6BD19A0921DADDE1F90F31203C132E58DEC8D75009EC2A282B0",
+      "source": "uvir003_nonzero_gradient_force_local_summary.json"
+    },
+    "free_sector_export": {
+      "parse_error": null,
+      "sha256": "33FCD3A4AB8F8531E611DFACDD91CCB7598CF9ADE49A8279A87B5EB954D4A469",
+      "source": "mat001_same_chart_quadratic_export_summary.json"
+    },
+    "r3_covariant_action": {
+      "parse_error": null,
+      "sha256": "99F712392F0DD42820D760FDAA7D1CDAEA1E301D04D610D5C4B49C663377F676",
+      "source": "mat001_r3_covariant_matter_action_summary.json"
+    },
+    "s_int_form": {
+      "parse_error": null,
+      "sha256": "785A4A2274B97B635E9C103DEEA970E4C54BBCFBDC24DFA1EA63B95E92FF2A86",
+      "source": "mat001_s_int_dh_export_summary.json"
+    },
+    "track_a_force_adm": {
+      "parse_error": null,
+      "sha256": "6A829A1CC05BF0B4B7F4F6044689580D740E4A6AD24857C85A9A474DF3A10A62",
+      "source": "uvir003_track_a_force_adm_cubic_summary.json"
+    }
+  },
+  "exported_d_h": {
+    "V_signed_definition": "C_m/sqrt(K_Q)",
+    "c_eff_without_free_force_B_dressing": [
+      "-C_m"
+    ],
+    "chart": "Track-A force host; x=(pi); z=(delta_N, beta); rho=rho_b",
+    "d": [
+      "-C_m"
+    ],
+    "dimensions_in_export": "ROLE_DECLARED: d multiplies rho_b*pi in the Lagrangian density; absolute SI unit system not fixed; K_Q remains symbolic",
+    "export_status": "EXPORTED_CONDITIONAL_ON_TRACK_A_HOST",
+    "h": [
+      "0",
+      "0"
+    ],
+    "mode_orientation": "u_pi=+1 in the architecture psi chart",
+    "note_on_B_dressing": "Track-A free-force action has constraint sources quadratic in pi velocities; those are free-sector force J2 components, not linear matter covectors. This export is the matter S_int channel only. Joining free-force B,C with matter d,h remains a later step.",
+    "ready_for_joined_live_matching": false,
+    "signed_g_can": "-C_m/sqrt(K_Q)",
+    "signed_g_can_equals_minus_V_on_oriented_host": true
+  },
+  "field_map": {
+    "IR_psi_to_Track_A": "psi_IR := psi_TrackA = psi_bar + pi",
+    "does_not_identify_free_sector_fields": true,
+    "status": "DECLARED_CONDITIONAL_FORCE_ROLE_MAP"
+  },
+  "gate": "MAT-001",
+  "host_quadratic_kinetic_template": {
+    "K_Q_numeric_status": "NOT_DERIVED",
+    "physical_time_kinetic_coefficient_K": "K_Q",
+    "spatial_terms": "regulator/potential; not the time-kinetic K used for g_can",
+    "track_a_quadratic_force_density": "K_Q*a**3*pi_dot**2/2 - gamma*lap_pi**2/(2*M_star_sq*a)"
+  },
+  "host_selection": {
+    "constraint_fields_recorded": [
+      "delta_N",
+      "beta"
+    ],
+    "dynamical_fluctuation": "pi",
+    "force_field": "psi=psi_bar+pi",
+    "not_free_sector_ADM": true,
+    "not_full_g_U_Phi_alignment_join": true,
+    "route": "R2_TRACK_A_FORCE_PHONON",
+    "status": "SELECTED_CONDITIONAL"
+  },
+  "host_selection_status": "SELECTED_CONDITIONAL",
+  "inadmissible_substitutions": {
+    "Track_A_cubic_force_vertex_as_matter_d_h": "REJECTED_ROLE_MISMATCH",
+    "background_psi_bar_term_as_fluctuation_d": "REJECTED_MODE_MISMATCH",
+    "free_sector_R_delta_rho_vartheta_as_pi": "REJECTED_CHART_MISMATCH",
+    "numeric_V_from_symbolic_C_m_over_sqrt_K_Q_without_K_Q": "REJECTED_NOT_COMPUTED"
+  },
+  "interface": "TRACK_A_FORCE_HOST_S_INT",
+  "kq_numeric_status": "NOT_DERIVED",
+  "live_UVIR_free_sector_d_h_export_status": "NOT_EXPORTED",
+  "live_action_export_status": "PARTIAL_TRACK_A_MATTER_CHANNEL_EXPORTED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 17,
+  "numeric_matching_status": "BLOCKED_K_Q_AND_JOINED_BUNDLE_REQUIRED",
+  "physics_pass": false,
+  "scientific_boundary": "A PASS selects Track-A as the Conditional force host, embeds S_int = -C_m rho_b psi with psi = psi_bar + pi, and exports the R3-controlled linear matter-channel d,h in that host chart, recovering signed g_can=-V in the oriented psi chart when the host time-kinetic coefficient is symbolic K_Q. It does not derive numeric K_Q or V, does not complete free-sector joins, and does not authorize MAT/UVIR/downstream physics claims.",
+  "selected_host_route": "R2_TRACK_A_FORCE_PHONON",
+  "serial_next": "Either derive K_Q (or the invariant residue) on the Track-A host for a numeric V attempt under explicit Conditional scope, or join the matter channel with free-force B,C / free-sector ADM only under a declared multi-sector chart; keep Stage 4A closed until a matched invariant exists.",
+  "stage": "TRACK_A_S_INT_EMBED_AND_DH_EXPORT",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_TRACK_A_S_INT_EMBED_DH_EXPORTED_CONDITIONAL",
+  "track_a_d_h_export_status": "EXPORTED_CONDITIONAL_ON_TRACK_A_HOST",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

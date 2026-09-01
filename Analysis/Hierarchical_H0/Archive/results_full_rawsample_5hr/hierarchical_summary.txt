@@ -1,0 +1,43 @@
+
+================================================================================
+ITSM HIERARCHICAL BAYESIAN H0 INFERENCE — SUMMARY
+================================================================================
+
+DATASET
+-------
+  Total galaxies loaded      : 176
+  High-quality (unconstrainted): 164
+  Boundary-clipped (down-weighted): 12
+
+HIERARCHICAL MODEL
+------------------
+  Prior on mu_H0  : Uniform [55.0, 90.0] km/s/Mpc
+  Prior on sig_H0 : Uniform [0.1, 20.0] km/s/Mpc
+  Clipped weight  : 10% (physically motivated — inclination/dust corruption)
+
+POSTERIOR RESULTS (68% Credible Interval)
+-----------------------------------------
+  mu_H0    = 69.089  [69.083, 69.094]  km/s/Mpc
+  sigma_H0 = 14.565  [14.561, 14.568]  km/s/Mpc
+
+HUBBLE TENSION CONTEXT
+----------------------
+  Planck 2018 (CMB)     : 67.4 ± 0.5  km/s/Mpc
+  SH0ES (Local ladder)  : 73.0 ± 1.0  km/s/Mpc
+  ITSM Hierarchical     : 69.09 ± 0.01  km/s/Mpc
+
+  Offset from Planck    : +1.69 km/s/Mpc
+  Offset from SH0ES     : -3.91 km/s/Mpc
+
+PHYSICAL INTERPRETATION
+-----------------------
+The ITSM derives H0 from galactic rotation mechanics alone, with zero
+calibration against any external distance ladder or CMB measurement.
+The resulting population mean is geometrically anchored to a0 = c*H0/2pi,
+meaning the 175 galaxies are not independently measuring H0 — they are
+all probing the same toroidal manifold boundary through different viewing
+angles. The sigma_H0 = 14.56 km/s/Mpc intrinsic scatter is therefore
+a physical prediction: it reflects the genuine angular anisotropy of the
+toroidal expansion rate across different observational sightlines.
+
+================================================================================

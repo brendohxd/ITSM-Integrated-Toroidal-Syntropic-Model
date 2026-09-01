@@ -1,0 +1,148 @@
+{
+  "action_freeze": {
+    "adm_worldline_domain": "N>0 and D^2=N^2-h_ij*w^i*w^j>0",
+    "conformal_factor_SI": "A(psi_SI)=exp(C_m*(psi_SI-psi_star_SI)/c^2)",
+    "conformal_factor_natural_units": "A(psi)=exp(C_m*(psi-psi_star))",
+    "dust_representative": "S_pp=-sum_A m_A integral A(psi) ds_g",
+    "interaction_definition": "S_int=S_m[Psi_m,A^2*g]-S_m[Psi_m,g]",
+    "matter_action": "S_m[Psi_m,g_tilde]",
+    "matter_metric": "g_tilde_munu=A(psi)^2*g_munu",
+    "metric_signature": "(-,+,+,+)",
+    "no_double_counting": true,
+    "normalization_point": "A(psi_star)=1",
+    "worldline_orientation": "future-directed timelike"
+  },
+  "adm_convention": {
+    "functional_sources": {
+      "delta_Sm_delta_N": "-sqrt(h)*E_m",
+      "delta_Sm_delta_Ni": "+sqrt(h)*j_i_m",
+      "delta_Sm_delta_hij": "+N*sqrt(h)*S_m^ij/2"
+    },
+    "line_element": "ds^2=-N^2 dt^2+h_ij(dx^i+N^i dt)(dx^j+N^j dt)",
+    "particle_D": "D=sqrt(N^2-h_ij(v^i+N^i)(v^j+N^j))",
+    "particle_L": "L_A=-m_A*A(psi)*D"
+  },
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "conformal_factor_positive",
+      "ok": true
+    },
+    {
+      "name": "exact_lapse_variation",
+      "ok": true
+    },
+    {
+      "name": "exact_shift_variation",
+      "ok": true
+    },
+    {
+      "name": "weak_newtonian_vertex",
+      "ok": true
+    },
+    {
+      "name": "weak_phonon_vertex",
+      "ok": true
+    },
+    {
+      "name": "weak_kinetic_term",
+      "ok": true
+    },
+    {
+      "name": "linear_d_equals_minus_C_m",
+      "ok": true
+    },
+    {
+      "name": "linear_interaction_h_zero_on_normalized_comoving_background",
+      "ok": true
+    },
+    {
+      "name": "mixed_lapse_vertex_retained",
+      "ok": true
+    },
+    {
+      "name": "comoving_mixed_shift_zero",
+      "ok": true
+    },
+    {
+      "name": "moving_matter_mixed_shift_retained",
+      "ok": true
+    },
+    {
+      "name": "dust_exchange_sign",
+      "ok": true
+    }
+  ],
+  "conservation_exchange": {
+    "alpha": "C_m",
+    "dust_exchange": "Q_mp_nu=-C_m*rho_m*nabla_nu(psi)",
+    "dust_trace": "-rho_m",
+    "force_sector_balance": "nabla_mu T_psi^mu{}_nu=-Q_mp_nu on shell",
+    "status": "PASS_SCOPED_WARD_IDENTITY_FULL_MULTI_SECTOR_JOIN_NOT_RUN",
+    "total_matter_plus_force_conserved": true,
+    "ward_identity": "nabla_mu T_m^mu{}_nu=alpha*T_m*nabla_nu(psi)"
+  },
+  "controlled_linear_limit": {
+    "J2_extra_force_covectors": {
+      "d": [
+        "-C_m"
+      ],
+      "h": [
+        "0",
+        "0"
+      ]
+    },
+    "background": "N=1, N^i=0, v^i=0, psi=psi_star",
+    "coefficients": {
+      "mixed_psi_lapse": "-C_m*m",
+      "mixed_psi_shift_comoving": "0",
+      "mixed_psi_shift_moving": "C_m*m*v/sqrt(1 - v**2)",
+      "psi_vertex": "-C_m*m",
+      "pure_lapse_source": "0",
+      "pure_shift_source": "0"
+    },
+    "scope": "h=(0,0) applies only to the linear extra-force source sector at the normalized comoving background. It does not erase the mixed rho_b*pi*delta_N vertex or moving-matter shift source."
+  },
+  "exact_one_direction_representative": {
+    "dL_int_dN": "N*m*(1 - exp(C_m*psi))/sqrt(N**2 - (beta + v)**2)",
+    "dL_int_dbeta": "m*(beta + v)*(exp(C_m*psi) - 1)/sqrt(N**2 - (beta + v)**2)",
+    "dL_int_dpsi": "-C_m*m*sqrt(N**2 - (beta + v)**2)*exp(C_m*psi)",
+    "dL_m_dN": "-N*m*exp(C_m*psi)/sqrt(N**2 - (beta + v)**2)",
+    "dL_m_dbeta": "m*(beta + v)*exp(C_m*psi)/sqrt(N**2 - (beta + v)**2)"
+  },
+  "gate": "MAT-001",
+  "matter_variables": {
+    "baryon_density": "rho_b is rest-mass density in the controlled NR limit",
+    "continuum_limit": "pressureless conserved-number dust",
+    "dynamical_not_external": true,
+    "fundamental_representative": "massive worldlines x_A^mu(lambda)"
+  },
+  "n_checks": 12,
+  "remediation_item": "R3",
+  "scientific_boundaries": [
+    "The conformal action is a selected MAT matter-force completion, not a UV completion.",
+    "C_m remains an unmatched Wilson coefficient; K_Q and V are not computed.",
+    "A purely conformal coupling does not complete the relativistic lensing gate.",
+    "The full gravity+aether+condensate+force+dust constraint propagation is not run here."
+  ],
+  "status_firewall": {
+    "C_m_numeric_derived": false,
+    "K_Q_numeric_derived": false,
+    "MAT001_pass": false,
+    "UVIR003_pass": false,
+    "V_computed": false,
+    "physics_pass": false,
+    "stage4A_reopened": false
+  },
+  "subgate_status": "PASS_MAT001_R3_COVARIANT_MATTER_ACTION_SCOPED",
+  "weak_field_recovery": {
+    "coefficients": {
+      "Phi_N": "-m",
+      "psi": "-C_m*m",
+      "rest": "-m",
+      "v2": "m/2"
+    },
+    "continuum_interaction": "L_int_NR=-C_m*rho_b*psi",
+    "lagrangian_order": "m*v^2/2-m*Phi_N-m*C_m*psi plus rest mass"
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "V_status": "NOT_COMPUTED",
+  "blocking_requirements_for_Derived": [
+    "Numeric K_Q or invariant residue V from a derivation path, not Conditional samples",
+    "Independent absolute C_m if quoting absolute V without pure residue route",
+    "Independent Stage 4A reopen only after matched invariant exists"
+  ],
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "kq_dig_upstream",
+      "ok": true
+    },
+    {
+      "name": "kq_readiness_upstream",
+      "ok": true
+    },
+    {
+      "name": "track_a_s_int_upstream",
+      "ok": true
+    },
+    {
+      "name": "matching_upstream",
+      "ok": true
+    },
+    {
+      "name": "conditional_kq_speculative_upstream",
+      "ok": true
+    },
+    {
+      "name": "kq_dig_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "kq_readiness_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "track_a_s_int_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "matching_program_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "conditional_kq_readable",
+      "ok": true,
+      "parse_error": null
+    },
+    {
+      "name": "dual_status_derived_layer_fail_closed",
+      "ok": true
+    },
+    {
+      "name": "conditional_samples_all_labeled_not_Derived",
+      "ok": true
+    },
+    {
+      "name": "static_Cobs_structural_theorem_retained",
+      "ok": true
+    },
+    {
+      "name": "branch_open_conditional",
+      "ok": true
+    },
+    {
+      "flags": {
+        "claims_MAT_pass": false,
+        "claims_UVIR_pass": false,
+        "claims_downstream_Derived": false,
+        "conditional_branch_open": true,
+        "conditional_samples_present": true,
+        "conditional_samples_promoted_Derived": false,
+        "numeric_K_Q_promoted_Derived": false,
+        "numeric_V_promoted_Derived": false,
+        "physics_pass": false,
+        "stage4A_reopened_from_conditional": false
+      },
+      "name": "claim_firewall_fail_closed",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "claims_MAT_pass": false,
+    "claims_UVIR_pass": false,
+    "claims_downstream_Derived": false,
+    "conditional_branch_open": true,
+    "conditional_samples_present": true,
+    "conditional_samples_promoted_Derived": false,
+    "numeric_K_Q_promoted_Derived": false,
+    "numeric_V_promoted_Derived": false,
+    "physics_pass": false,
+    "stage4A_reopened_from_conditional": false
+  },
+  "conditional_branch_status": "OPEN_CONDITIONAL_DUAL_STATUS",
+  "conditional_probe": {
+    "branch_status": "OPEN_CONDITIONAL_DUAL_STATUS",
+    "conditional_samples": [
+      {
+        "I_a0_conditional_G1": 0.005793110381304047,
+        "claim_class": "Conditional",
+        "induced_C_m_conditional": 0.8735804647362989,
+        "induced_K_Q_conditional": 3.052571313475552,
+        "label": "CONDITIONAL_ONLY",
+        "not_Derived": true,
+        "premises": {
+          "C_IR": 0.6666666666666666,
+          "C_obs": 1.0,
+          "G": 1.0,
+          "V_conditional": 0.5,
+          "note": "G=1 chart units for relative probe only"
+        }
+      },
+      {
+        "I_a0_conditional_G1": 0.02317244152521619,
+        "claim_class": "Conditional",
+        "induced_C_m_conditional": 0.8735804647362989,
+        "induced_K_Q_conditional": 0.763142828368888,
+        "label": "CONDITIONAL_ONLY",
+        "not_Derived": true,
+        "premises": {
+          "C_IR": 0.6666666666666666,
+          "C_obs": 1.0,
+          "G": 1.0,
+          "V_conditional": 1.0,
+          "note": "G=1 chart units for relative probe only"
+        }
+      },
+      {
+        "I_a0_conditional_G1": 0.09268976610086475,
+        "claim_class": "Conditional",
+        "induced_C_m_conditional": 0.8735804647362989,
+        "induced_K_Q_conditional": 0.190785707092222,
+        "label": "CONDITIONAL_ONLY",
+        "not_Derived": true,
+        "premises": {
+          "C_IR": 0.6666666666666666,
+          "C_obs": 1.0,
+          "G": 1.0,
+          "V_conditional": 2.0,
+          "note": "G=1 chart units for relative probe only"
+        }
+      },
+      {
+        "K_Q_conditional": 0.5,
+        "claim_class": "Conditional",
+        "label": "CONDITIONAL_ONLY",
+        "not_Derived": true,
+        "premises": {
+          "C_IR": 0.6666666666666666,
+          "R1_ansatz": "K_Q = k_Q * M_P^2 with M_P=1 chart",
+          "k_Q": 0.5,
+          "note": "R1 dimensional Conditional; not a derivation"
+        },
+        "q_cross_over_a0_parallel_conditional": 0.1875,
+        "q_cross_over_a0_perp_conditional": 0.375
+      },
+      {
+        "K_Q_conditional": 1.0,
+        "claim_class": "Conditional",
+        "label": "CONDITIONAL_ONLY",
+        "not_Derived": true,
+        "premises": {
+          "C_IR": 0.6666666666666666,
+          "R1_ansatz": "K_Q = k_Q * M_P^2 with M_P=1 chart",
+          "k_Q": 1.0,
+          "note": "R1 dimensional Conditional; not a derivation"
+        },
+        "q_cross_over_a0_parallel_conditional": 0.375,
+        "q_cross_over_a0_perp_conditional": 0.75
+      },
+      {
+        "K_Q_conditional": 2.0,
+        "claim_class": "Conditional",
+        "label": "CONDITIONAL_ONLY",
+        "not_Derived": true,
+        "premises": {
+          "C_IR": 0.6666666666666666,
+          "R1_ansatz": "K_Q = k_Q * M_P^2 with M_P=1 chart",
+          "k_Q": 2.0,
+          "note": "R1 dimensional Conditional; not a derivation"
+        },
+        "q_cross_over_a0_parallel_conditional": 0.75,
+        "q_cross_over_a0_perp_conditional": 1.5
+      }
+    ],
+    "dual_status_contract": {
+      "Conditional_layer": {
+        "may_inform_priority_flags": true,
+        "may_not_reopen_stage4A_as_Derived": true,
+        "probe_status": "OPEN_CONDITIONAL_ONLY",
+        "samples_are_Derived": false
+      },
+      "Derived_layer": {
+        "V_status": "NOT_COMPUTED",
+        "claims_downstream_Derived": false,
+        "kq_numeric_status": "NOT_DERIVED",
+        "mat001_pass": false,
+        "physics_pass": false,
+        "stage4A_status": "CLOSED"
+      }
+    },
+    "premises_declared": [
+      "Track-A Conditional host with S_int and d,h form (not free-sector)",
+      "Symbolic host K_Q and on-host V form (not numeric Derived)",
+      "Optional probe premises: C_obs~1 and C_IR=2/3 are Conditional empirical/matching hypotheses",
+      "Optional R1 k_Q M_P^2 is Conditional dimensional analogy only"
+    ],
+    "structural_identities": {
+      "A_IR": "C_IR/(12*pi*G*a0)",
+      "C_obs_form": "C_m**(3/2)/sqrt(C_IR)",
+      "I_a0_closed_in_Cobs_CIR_V": "C_IR**(1/3)*V**2/(12*pi*C_obs**(4/3)*G)",
+      "K_Q_from_V_Cm": "C_m**2/V**2",
+      "V_form": "C_m/sqrt(K_Q)",
+      "static_Cobs_alone_fixes_K_Q": false
+    }
+  },
+  "evidence": {
+    "conditional_kq": {
+      "parse_error": null,
+      "sha256": "0B1EE00860723B7246BB18C0A4C73E08984B82FA71759D09C7624002E79A5C04",
+      "source": "uvir003_conditional_kq_estimate_summary.json"
+    },
+    "kq_dig": {
+      "parse_error": null,
+      "sha256": "050B7922DD6C3DBC89719883783B57774909950904B6E7A3C0E79CE052E191A1",
+      "source": "mat001_kq_derivation_dig_summary.json"
+    },
+    "kq_readiness": {
+      "parse_error": null,
+      "sha256": "29924D74880A5030489B011DC15A100E56C3E652742F4C4EB6AAA8DD5C4818C7",
+      "source": "mat001_track_a_kq_readiness_summary.json"
+    },
+    "matching_program": {
+      "parse_error": null,
+      "sha256": "41C936A6910318460BA8728BEEAF3B7E6D3E768EE523C8371DF8921F4CE4F9A9",
+      "source": "uvir003_matching_route_program_summary.json"
+    },
+    "track_a_s_int": {
+      "parse_error": null,
+      "sha256": "B7FA92BEEA85A8606F1F452BE5C4E02D7139AC8174203549A78D5E1DF1C419EB",
+      "source": "mat001_track_a_s_int_embed_summary.json"
+    }
+  },
+  "gate": "MAT-001",
+  "inadmissible_substitutions": {
+    "C_IR_equals_2_3_as_Derived": "REJECTED_GEOMETRIC_PACKAGING",
+    "C_obs_equals_1_as_Derived": "REJECTED_EMPIRICAL_HYPOTHESIS",
+    "conditional_k_Q_as_Derived_K_Q": "REJECTED_DUAL_STATUS",
+    "conditional_sample_as_Derived_V": "REJECTED_DUAL_STATUS",
+    "stage4A_reopen_from_conditional_scan": "REJECTED"
+  },
+  "interface": "CONDITIONAL_MATCHING_BRANCH",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_pass": false,
+  "mat001_status": "BLOCKED",
+  "n_checks": 15,
+  "physics_pass": false,
+  "scientific_boundary": "A PASS opens a dual-status Conditional matching branch on the Track-A host kit: structural identities and labeled Conditional sample probes are available for priority flags only. Derived-layer V and K_Q remain NOT_COMPUTED / NOT_DERIVED. Conditional numerics must never be packaged as Derived, MAT PASS, or Stage 4A reopen.",
+  "serial_next": "Use Conditional probes only as dual-status diagnostics; continue genuine K_Q/V derivation, or keep the Tier-1 hold. Do not freeze alpha.12 from Conditional samples alone.",
+  "stage": "CONDITIONAL_MATCHING_BRANCH_DUAL_STATUS",
+  "stage4A_status": "CLOSED",
+  "subgate_status": "PASS_MAT001_CONDITIONAL_MATCHING_BRANCH_OPEN_DUAL_STATUS",
+  "uv_ir_full_gate_status": "IN_PROGRESS"
+}

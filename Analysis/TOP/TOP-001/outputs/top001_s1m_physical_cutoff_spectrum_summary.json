@@ -1,0 +1,265 @@
+{
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "upstream_modular_basis_contract",
+      "ok": true,
+      "parse_error": null,
+      "source": "top001_s1m_modular_basis_equivalence_summary.json"
+    },
+    {
+      "n_maps": 4,
+      "name": "declared_maps_are_SL3Z",
+      "ok": true
+    },
+    {
+      "certificates": {
+        "compound_shear": {
+          "complete": true,
+          "cutoff": "2",
+          "inverse_infinity_norm": "531941/11025",
+          "minimum_eigenvalue_lower_bound": "11025/531941",
+          "outside_box_lower_bound": "1334025/531941",
+          "outside_box_lower_bound_numeric": 2.5078439150206506,
+          "proof": "lambda_min(Q) >= 1/||Q^-1||_infinity"
+        },
+        "elementary_shear_12": {
+          "complete": true,
+          "cutoff": "2",
+          "inverse_infinity_norm": "98657/3675",
+          "minimum_eigenvalue_lower_bound": "3675/98657",
+          "outside_box_lower_bound": "444675/98657",
+          "outside_box_lower_bound_numeric": 4.507282808112957,
+          "proof": "lambda_min(Q) >= 1/||Q^-1||_infinity"
+        },
+        "identity": {
+          "complete": true,
+          "cutoff": "2",
+          "inverse_infinity_norm": "97187/3675",
+          "minimum_eigenvalue_lower_bound": "3675/97187",
+          "outside_box_lower_bound": "444675/97187",
+          "outside_box_lower_bound_numeric": 4.575457622933109,
+          "proof": "lambda_min(Q) >= 1/||Q^-1||_infinity"
+        },
+        "orientation_preserving_cycle": {
+          "complete": true,
+          "cutoff": "2",
+          "inverse_infinity_norm": "97187/3675",
+          "minimum_eigenvalue_lower_bound": "3675/97187",
+          "outside_box_lower_bound": "444675/97187",
+          "outside_box_lower_bound_numeric": 4.575457622933109,
+          "proof": "lambda_min(Q) >= 1/||Q^-1||_infinity"
+        }
+      },
+      "name": "physical_cutoff_enumerations_are_complete",
+      "ok": true
+    },
+    {
+      "map_digests": {
+        "compound_shear": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C",
+        "elementary_shear_12": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C",
+        "identity": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C",
+        "orientation_preserving_cycle": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C"
+      },
+      "name": "exact_spectrum_multisets_are_modular_invariant",
+      "ok": true,
+      "spectrum_sha256": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C"
+    },
+    {
+      "maximum_degeneracy": 2,
+      "n_distinct_eigenvalues": 179,
+      "name": "degeneracy_profiles_are_modular_invariant",
+      "ok": true
+    },
+    {
+      "name": "physical_cutoff_label_bijection_is_exact",
+      "ok": true,
+      "results": [
+        {
+          "exact": true,
+          "name": "identity"
+        },
+        {
+          "exact": true,
+          "name": "elementary_shear_12"
+        },
+        {
+          "exact": true,
+          "name": "compound_shear"
+        },
+        {
+          "exact": true,
+          "name": "orientation_preserving_cycle"
+        }
+      ],
+      "rule": "m_prime=M^T*m"
+    },
+    {
+      "n_max": 10,
+      "n_max_refined": 12,
+      "name": "physical_cutoff_spectrum_is_box_refinement_stable",
+      "ok": true
+    },
+    {
+      "mapped_labels_leave_box": true,
+      "name": "negative_control_raw_label_box_creates_false_difference",
+      "ok": true,
+      "raw_base_digest": "5110122161B5926F498416450FE96AC6FC36423BDF8EDAF811E262DD3CFAD567",
+      "raw_box_n": 2,
+      "raw_shear_digest": "611D9FC25D4529A759ACF9434CBFF3B10E8E88A18A97CE07F8E1560E33A5CAD9"
+    },
+    {
+      "base_spectrum_sha256": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C",
+      "completeness_certificate": {
+        "complete": true,
+        "cutoff": "2",
+        "inverse_infinity_norm": "304/15",
+        "minimum_eigenvalue_lower_bound": "15/304",
+        "outside_box_lower_bound": "1815/304",
+        "outside_box_lower_bound_numeric": 5.970394736842105,
+        "proof": "lambda_min(Q) >= 1/||Q^-1||_infinity"
+      },
+      "deformation": "B_physical=F*B",
+      "det_F": "1",
+      "name": "volume_preserving_physical_deformation_changes_spectrum",
+      "ok": true,
+      "physical_spectrum_sha256": "BBE6CFAFFFF62DAD200A1D799D481A408A6F4D3B6CBFA212C2BC85309A0CFC5F"
+    },
+    {
+      "cases": {
+        "determinant_two_map": true,
+        "negative_cutoff": true,
+        "non_integer_map": true,
+        "non_rational_cutoff": true,
+        "singular_basis": true,
+        "zero_cutoff": true,
+        "zero_n_max": true
+      },
+      "name": "malformed_cutoff_basis_and_maps_rejected",
+      "ok": true
+    },
+    {
+      "flags": {
+        "claims_13_12_or_H0_or_a0_or_Cobs": false,
+        "claims_147_significance": false,
+        "claims_casimir_energy": false,
+        "claims_cosmology": false,
+        "claims_modulus_action": false,
+        "claims_physical_stability": false,
+        "claims_preferred_shear": false,
+        "claims_twisted_boundary_preference": false,
+        "physics_pass": false
+      },
+      "name": "claim_firewall_packaging_flags_false",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "claims_13_12_or_H0_or_a0_or_Cobs": false,
+    "claims_147_significance": false,
+    "claims_casimir_energy": false,
+    "claims_cosmology": false,
+    "claims_modulus_action": false,
+    "claims_physical_stability": false,
+    "claims_preferred_shear": false,
+    "claims_twisted_boundary_preference": false,
+    "physics_pass": false
+  },
+  "cutoff_convention": {
+    "completeness_rule": "(n_max+1)^2/||Q^-1||_infinity > cutoff",
+    "cutoff_ell": "2",
+    "dimensionless_eigenvalue": "ell=m^T*(B^-1*B^-T)*m",
+    "n_max": 10,
+    "physical_relation": "|k|^2=(2*pi)^2*ell"
+  },
+  "derived_claims": [],
+  "gate": "TOP-001",
+  "label": "mathematical-template-only",
+  "modular_map_results": [
+    {
+      "completeness_certificate": {
+        "complete": true,
+        "cutoff": "2",
+        "inverse_infinity_norm": "97187/3675",
+        "minimum_eigenvalue_lower_bound": "3675/97187",
+        "outside_box_lower_bound": "444675/97187",
+        "outside_box_lower_bound_numeric": 4.575457622933109,
+        "proof": "lambda_min(Q) >= 1/||Q^-1||_infinity"
+      },
+      "maximum_degeneracy": 2,
+      "maximum_ell": "19840139/9922500",
+      "minimum_ell": "1/25",
+      "n_distinct_eigenvalues": 179,
+      "n_modes_below_cutoff": 358,
+      "name": "identity",
+      "spectrum_sha256": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C"
+    },
+    {
+      "completeness_certificate": {
+        "complete": true,
+        "cutoff": "2",
+        "inverse_infinity_norm": "98657/3675",
+        "minimum_eigenvalue_lower_bound": "3675/98657",
+        "outside_box_lower_bound": "444675/98657",
+        "outside_box_lower_bound_numeric": 4.507282808112957,
+        "proof": "lambda_min(Q) >= 1/||Q^-1||_infinity"
+      },
+      "maximum_degeneracy": 2,
+      "maximum_ell": "19840139/9922500",
+      "minimum_ell": "1/25",
+      "n_distinct_eigenvalues": 179,
+      "n_modes_below_cutoff": 358,
+      "name": "elementary_shear_12",
+      "spectrum_sha256": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C"
+    },
+    {
+      "completeness_certificate": {
+        "complete": true,
+        "cutoff": "2",
+        "inverse_infinity_norm": "531941/11025",
+        "minimum_eigenvalue_lower_bound": "11025/531941",
+        "outside_box_lower_bound": "1334025/531941",
+        "outside_box_lower_bound_numeric": 2.5078439150206506,
+        "proof": "lambda_min(Q) >= 1/||Q^-1||_infinity"
+      },
+      "maximum_degeneracy": 2,
+      "maximum_ell": "19840139/9922500",
+      "minimum_ell": "1/25",
+      "n_distinct_eigenvalues": 179,
+      "n_modes_below_cutoff": 358,
+      "name": "compound_shear",
+      "spectrum_sha256": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C"
+    },
+    {
+      "completeness_certificate": {
+        "complete": true,
+        "cutoff": "2",
+        "inverse_infinity_norm": "97187/3675",
+        "minimum_eigenvalue_lower_bound": "3675/97187",
+        "outside_box_lower_bound": "444675/97187",
+        "outside_box_lower_bound_numeric": 4.575457622933109,
+        "proof": "lambda_min(Q) >= 1/||Q^-1||_infinity"
+      },
+      "maximum_degeneracy": 2,
+      "maximum_ell": "19840139/9922500",
+      "minimum_ell": "1/25",
+      "n_distinct_eigenvalues": 179,
+      "n_modes_below_cutoff": 358,
+      "name": "orientation_preserving_cycle",
+      "spectrum_sha256": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C"
+    }
+  ],
+  "n_checks": 11,
+  "physics_pass": false,
+  "reference_spectrum": {
+    "maximum_degeneracy": 2,
+    "n_distinct_eigenvalues": 179,
+    "n_modes": 358,
+    "spectrum_sha256": "0DFB9BABC04832AAA37FCD65C7A5EC2B49B2A5F77587A41ABF6A8F2D4EF3D96C"
+  },
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "A PASS proves exact equality of the enumerated reciprocal spectrum and degeneracies under declared SL(3,Z) basis changes for a certified-complete physical eigenvalue cutoff. It also demonstrates why identical raw coordinate label boxes are invalid comparisons. It does not compute Casimir energy, select a shear or topology, supply modulus dynamics, or establish a physics preference.",
+  "serial_next": "Treat modularly equivalent bases as one fixed-boundary geometry before any inequivalent modulus or twisted-boundary energy comparison.",
+  "stage": "S1M_PHYSICAL_CUTOFF_SPECTRUM_ROBUSTNESS",
+  "subgate_status": "PASS_TOP001_S1M_PHYSICAL_CUTOFF_SPECTRUM_INVARIANCE"
+}

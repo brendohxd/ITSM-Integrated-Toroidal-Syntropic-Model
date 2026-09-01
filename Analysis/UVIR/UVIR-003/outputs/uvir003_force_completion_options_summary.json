@@ -1,0 +1,98 @@
+{
+  "date": "2026-07-26",
+  "decision_tracks": {
+    "A_preserve_exact_ir_branch": "Keep exact Y^(3/2); use a nonzero-gradient local background for force-sector perturbation theory and do not call it the homogeneous cosmological 2-to-2 amplitude.",
+    "B_preserve_homogeneous_analytic_amplitude": "Choose a smooth completion and a crossover sigma; accept and test the resulting modification of the deep-IR law."
+  },
+  "gate": "UVIR-003",
+  "mat001_status": "BLOCKED",
+  "regulator_comparison": {
+    "projected_hessian_only": {
+      "assessment": "NOT_RECOMMENDED: it is nonzero for homogeneous psi on an evolving FRW background.",
+      "difference": "-theta Q relative to D_mu D^mu psi",
+      "operator": "h^{mu nu} nabla_mu nabla_nu psi"
+    },
+    "selected_rest_space_laplacian": {
+      "boundary": "Track A adopts this operator for the next derivation.",
+      "operator": "Delta_U psi := D_mu D^mu psi = h^{mu nu} nabla_mu nabla_nu psi + theta Q",
+      "reasons": [
+        "generally covariant scalar built from g, U and psi",
+        "reduces to the Stage-A spatial Laplacian for constant U",
+        "annihilates fields homogeneous on the aether rest space",
+        "has a purely spatial second-derivative principal part",
+        "in aether-unitary ADM it is the intrinsic leaf Laplacian"
+      ]
+    },
+    "spacetime_divergence": {
+      "assessment": "VIABLE_BUT_NONMINIMAL: it is divergence-form but adds an acceleration/lapse-gradient coupling.",
+      "difference": "+a^mu D_mu psi relative to D_mu D^mu psi",
+      "operator": "nabla_mu(h^{mu nu} nabla_nu psi)"
+    }
+  },
+  "scientific_boundary": "The regulator comparison identifies the operator now adopted by Track A. No option simultaneously keeps the exact asymptotic Y^(3/2) law at Y=0 and supplies an ordinary analytic zero-background vertex. UVIR-003 and MAT-001 therefore remain open.",
+  "selected_decision": "Track A: retain exact Y^(3/2), adopt D_mu D^mu psi, and assign force perturbation theory to a declared nonzero-gradient local background.",
+  "stage": "B_FORCE_COMPLETION_OPTIONS",
+  "status": "TRACK_A_SELECTED",
+  "uvir003_status": "IN_PROGRESS",
+  "verified_identities": [
+    {
+      "label": "D_mu D^mu psi = hessian_perp + theta Q",
+      "residual": "0",
+      "status": "VERIFIED"
+    },
+    {
+      "label": "nabla_mu(h^{mu nu} nabla_nu psi) = D^2 psi + a.D psi",
+      "residual": "0",
+      "status": "VERIFIED"
+    },
+    {
+      "label": "D^2 psi vanishes for homogeneous psi on flat FRW",
+      "residual": "0",
+      "status": "VERIFIED"
+    }
+  ],
+  "verified_nonzero_background_series": [
+    {
+      "label": "nonzero-gradient Y^(3/2) expansion through quartic order",
+      "residual": "0",
+      "status": "VERIFIED"
+    }
+  ],
+  "verified_smoothing_series": [
+    {
+      "label": "unsubtracted smoothing generates a canonical Y term",
+      "residual": "0",
+      "status": "VERIFIED"
+    },
+    {
+      "label": "linear-subtracted smoothing begins at Y^2",
+      "residual": "0",
+      "status": "VERIFIED"
+    }
+  ],
+  "y_three_halves_comparison": {
+    "exact_zero_gradient_branch": {
+      "ordinary_taylor_vertex_at_Y_zero": false,
+      "preserves_target_ir_law": true,
+      "use": "classical nonlinear boundary-value problems; not a standard zero-background perturbative S-matrix vertex"
+    },
+    "nonzero_gradient_background": {
+      "cost": "background selects a spatial direction; the quartic coefficient contains 1/|grad psi_0| and has no regular zero-gradient limit",
+      "ordinary_local_expansion": true,
+      "preserves_exact_operator": true,
+      "use": "local weak-field response, not isotropic FRW scattering"
+    },
+    "smooth_linear_subtracted": {
+      "benefit": "analytic at Y=0 without a canonical Y term; the leading interaction is quartic in spatial gradients",
+      "cost": "introduces a crossover scale and replaces the exact deep-IR Y^(3/2) law by Y^2",
+      "function": "(Y+sigma^2)^(3/2)-sigma^3-(3/2)sigma Y",
+      "series": "-Y**3/(16*sigma**3) + 3*Y**2/(8*sigma)"
+    },
+    "smooth_with_linear_term": {
+      "benefit": "analytic at Y=0 and supplies quadratic spatial stiffness",
+      "cost": "the generated (3/2) sigma Y term dominates in the deep IR and changes the target asymptotic branch",
+      "function": "(Y+sigma^2)^(3/2)-sigma^3",
+      "series": "-Y**3/(16*sigma**3) + 3*Y**2/(8*sigma) + 3*Y*sigma/2"
+    }
+  }
+}

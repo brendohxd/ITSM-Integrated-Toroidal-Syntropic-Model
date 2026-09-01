@@ -1,0 +1,101 @@
+{
+  "calculation_status": "PASS",
+  "claim_firewall": {
+    "V_computed": false,
+    "a0_or_Cobs_derived": false,
+    "mat001_unblocked": false,
+    "physics_pass": false,
+    "resonance_number_derived": false,
+    "same_parent_action": false,
+    "stage4a_reopened": false,
+    "uvir_completed_by_vor": false,
+    "vor_validated_by_uvir": false
+  },
+  "gate": "VOR-001",
+  "hold": "HOLD_VOR_TO_UVIR_PARENT_IDENTIFICATION_UNDECLARED",
+  "inputs": {
+    "uvir_parent": {
+      "note": "hash pinned here; no upstream sidecar",
+      "path": "Analysis/UVIR/UVIR-003/outputs/uvir003_nonlinear_adm_action_provenance_summary.json",
+      "sha256": "AC847B68752473101AECE2B3C9DD1B1A33D075C1DE0143A16684AE5ACE89A1B8",
+      "sidecar_verified": false
+    },
+    "vor_s2b": {
+      "path": "Analysis/VOR/VOR-001/outputs/vor001_s2b_parent_action_template_summary.json",
+      "sha256": "86DD1BC30C3850D7F7C86E3B3CD125DB5B74133D4E813260B7FED04B813E0A83",
+      "sidecar_verified": true
+    }
+  },
+  "negative_controls": [
+    {
+      "case": "vor_physics_promoted",
+      "error": "ValueError",
+      "ok": true
+    },
+    {
+      "case": "vor_parent_identified",
+      "error": "ValueError",
+      "ok": true
+    },
+    {
+      "case": "vor_aether_smuggled",
+      "error": "ValueError",
+      "ok": true
+    },
+    {
+      "case": "uvir_gate_promoted",
+      "error": "ValueError",
+      "ok": true
+    },
+    {
+      "case": "mat_unblocked",
+      "error": "ValueError",
+      "ok": true
+    },
+    {
+      "case": "force_hold_erased",
+      "error": "ValueError",
+      "ok": true
+    },
+    {
+      "case": "alignment_removed",
+      "error": "ValueError",
+      "ok": true
+    },
+    {
+      "case": "delta_u_declared",
+      "error": "ValueError",
+      "ok": true
+    },
+    {
+      "case": "cubic_vertex_claimed",
+      "error": "ValueError",
+      "ok": true
+    }
+  ],
+  "next_required": [
+    "declare one common parent action and finite-density ensemble",
+    "derive compact winding on that background",
+    "derive any Phi-psi or matter interaction",
+    "repeat stability and energy accounting before promotion"
+  ],
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "The records share a compatible polar complex-field convention only; their parent actions, backgrounds, frame/alignment content, compact winding realization and force/matter interfaces are not identified.",
+  "shared_conventions": {
+    "action_identity_established": false,
+    "amplitude_phase_split": true,
+    "complex_polar_field": true
+  },
+  "stage": "S2C_UVIR_PARENT_INTERFACE_INVENTORY",
+  "subgate_status": "PASS_VOR001_UVIR_PARENT_INTERFACE_INVENTORY_OPEN",
+  "unresolved_bridges": {
+    "aether_alignment_in_vor": "ABSENT_BY_TEMPLATE_SCOPE",
+    "common_background_and_chart": "NOT_DECLARED",
+    "compact_winding_on_live_uvir_background": "NOT_COMPUTED",
+    "finite_density_ensemble_map": "NOT_DECLARED",
+    "matter_vertex": "NOT_DERIVED",
+    "phi_to_psi_interaction": "NOT_DERIVED",
+    "potential_parameter_map": "NOT_DECLARED"
+  }
+}

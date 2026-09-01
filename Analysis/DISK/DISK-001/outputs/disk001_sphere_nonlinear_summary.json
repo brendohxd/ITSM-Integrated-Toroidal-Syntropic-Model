@@ -1,0 +1,64 @@
+{
+  "a0_eff": 3700.0,
+  "calculation_status": "PASS",
+  "convergence": [
+    {
+      "gN_num_vs_exact_max_rel_err": 0.004699779618958144,
+      "mass_enclosed_max_rel_err": 0.004699779618957997,
+      "n": 64,
+      "outer_gN": 26.855506529126536,
+      "outer_g_aqual": 315.7952463518248,
+      "spherical_aqual_identity_max_rel_err": 3.373883386993244e-16
+    },
+    {
+      "gN_num_vs_exact_max_rel_err": 0.0011552859052951876,
+      "mass_enclosed_max_rel_err": 0.0011552859052950588,
+      "n": 128,
+      "outer_gN": 26.855506529126536,
+      "outer_g_aqual": 315.7952463518248,
+      "spherical_aqual_identity_max_rel_err": 3.528566150985639e-16
+    },
+    {
+      "gN_num_vs_exact_max_rel_err": 0.00028648518521424336,
+      "mass_enclosed_max_rel_err": 0.00028648518521420455,
+      "n": 256,
+      "outer_gN": 26.855506529126536,
+      "outer_g_aqual": 315.7952463518248,
+      "spherical_aqual_identity_max_rel_err": 5.436677453480246e-16
+    },
+    {
+      "gN_num_vs_exact_max_rel_err": 7.133589251101414e-05,
+      "mass_enclosed_max_rel_err": 7.133589251091817e-05,
+      "n": 512,
+      "outer_gN": 26.855506529126536,
+      "outer_g_aqual": 315.7952463518248,
+      "spherical_aqual_identity_max_rel_err": 5.097843611875076e-16
+    }
+  ],
+  "diagnostics": {
+    "error_improves_with_n": true,
+    "finest_mass_rel_err": 7.133589251091817e-05,
+    "identity_ok": true,
+    "mass_ok": true
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "DISK-001",
+  "ir": {
+    "C_obs": 1.0,
+    "C_obs_origin": "Conditional_default_Cobs_sim_1_MasterPlan_sec6",
+    "a0": 3700.0,
+    "a0_origin": "phenomenological_input",
+    "ban_B9_dual_rar": true,
+    "is_derived": false,
+    "label": "Conditional_AQUAL_baseline"
+  },
+  "model": {
+    "b_kpc": 1.0,
+    "mass_Msun": 10000000000.0,
+    "profile": "Plummer"
+  },
+  "scientific_boundary": "Documents spherical AQUAL\u2261algebraic map and numerical mass-integral convergence. Does not constitute a non-spherical nonlinear PDE solve; see disk001_poisson_2d_aqual.py for that. Conditional IR only; not Derived C_obs; not full DISK-001 PASS.",
+  "stage": "STAGE1_SPHERE_NONLINEAR_IDENTITY",
+  "subgate_status": "PASS_DISK001_SPHERE_AQUAL_IDENTITY_CONVERGENCE",
+  "theorem": "Spherical AQUAL integrates to |g| \u03bc(|g|/a0)=|g_N|; 1D nonlinear solve is not independent of the algebraic map."
+}

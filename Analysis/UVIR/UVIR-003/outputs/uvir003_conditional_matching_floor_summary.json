@@ -1,0 +1,179 @@
+{
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "got": {
+        "classification": "INCOMPLETE_R3_UV_RESIDUE",
+        "code": "C",
+        "subgate": "PASS_R3_UV_RESIDUE_AUDIT_INCOMPLETE"
+      },
+      "name": "stage_2a_r3_incomplete_present",
+      "ok": true
+    },
+    {
+      "got": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "name": "matching_route_program_present",
+      "ok": true
+    },
+    {
+      "got": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "name": "kq_inventory_present",
+      "ok": true
+    },
+    {
+      "got": {
+        "claim_status": "Conditional",
+        "subgate": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING"
+      },
+      "name": "causality_conditional_domain_present",
+      "ok": true
+    },
+    {
+      "got": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+      "name": "stage1_weak_coupling_domain_present",
+      "ok": true
+    },
+    {
+      "name": "floor_identities_symbolic_ok",
+      "ok": true
+    },
+    {
+      "name": "naive_point_not_promoted",
+      "ok": true
+    },
+    {
+      "naive_parallel_q_cross_over_a0": 0.375,
+      "name": "causality_naive_qc_consistent_when_present",
+      "ok": true
+    },
+    {
+      "flags": {
+        "MAT001_PASS": false,
+        "R1_naive_promoted_to_Derived": false,
+        "UVIR003_full_PASS": false,
+        "numeric_Derived_K_Q": false,
+        "observational_claim": false,
+        "physical_cutoff_Derived": false,
+        "stage2_authorizes_only_scoped_MAT_calculation": true
+      },
+      "name": "claim_firewall",
+      "ok": true
+    },
+    {
+      "name": "stage2_exit_conditional_with_scope",
+      "ok": true
+    }
+  ],
+  "claim_firewall": {
+    "MAT001_PASS": false,
+    "R1_naive_promoted_to_Derived": false,
+    "UVIR003_full_PASS": false,
+    "numeric_Derived_K_Q": false,
+    "observational_claim": false,
+    "physical_cutoff_Derived": false,
+    "stage2_authorizes_only_scoped_MAT_calculation": true
+  },
+  "claim_status": "Conditional_with_scope",
+  "floor_identities": {
+    "I_a0": "2*C_IR/(3*P)",
+    "R_c": "2*C_IR*q_over_a0*(cos_theta**2 + 1)/P",
+    "claim_status": "Conditional_structure_only",
+    "is_derived_numeric": false,
+    "product_parameter": "P := k_Q (R1) OR Z_psi*r_rho (R3 residual rename)",
+    "q_cross_over_a0": "P/(2*C_IR*(cos_theta**2 + 1))"
+  },
+  "floor_premises": [
+    "Stage 2a R3 audit: INCOMPLETE_R3_UV_RESIDUE (no action-level Z_psi, r_rho)",
+    "Matching uses redefinition-invariant A*q/K_Q class objects, not bare K_Q alone",
+    "Conditional structure: I_a0 = (2/3)*C_IR/P with free P>0, C_IR>0",
+    "P may be interpreted as R1 k_Q or R3 Z_psi*r_rho (same algebra; not Derived)",
+    "Causality domain tables under R1 structure remain Conditional documentation",
+    "Naive (P,C_IR)=(1,2/3) is NON_DERIVED_COMPARISON_ONLY priority flag",
+    "M2 weakly-coupled domain freeze remains in force (IR HOLD excluded)",
+    "MAT-001 may receive only a scoped Conditional calculation handoff after Stage 2 exit; no MAT PASS"
+  ],
+  "floor_scope": {
+    "M3_status_after_floor": "PARTIAL_DOCUMENTED_CONDITIONAL_WITH_SCOPE",
+    "M6_status_after_floor": "OPEN_CONDITIONAL_NDA_DIAGNOSTIC_ONLY",
+    "M7_status_after_floor": "OPEN_MAT_BLOCKED_FOR_PASS",
+    "in_scope_Conditional": [
+      "Referee documentation of M3 under free (P, C_IR) with domain tables",
+      "NDA Lambda_|| diagnostic expressed in invariants once P,C_IR chosen Conditional",
+      "Priority flag that naive O(1) points place q_cross ~ 0.375 a0 (parallel)",
+      "Stage 3 scoped MAT calculation of V=C_m/sqrt(K_Q) under named Conditional handoff"
+    ],
+    "out_of_scope_forbidden": [
+      "Derived numeric K_Q or Derived Z_psi, r_rho from this floor",
+      "MAT-001 gate PASS or Derived C_obs packaging",
+      "UVIR-003 full_gate_status PASS",
+      "Physical cutoff as Derived strong-coupling scale",
+      "Observational SPARC/H0/cosmology claims",
+      "Promoting (P,C_IR)=(1,2/3) to Derived"
+    ]
+  },
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "kq_numeric_status": "NOT_DERIVED",
+  "mat001_status": "BLOCKED",
+  "mat_scoped_handoff_amendment": {
+    "authorizes": [
+      "Declare S_int[Psi_m, psi, U, g] as a calculation task",
+      "Compute provisional V = C_m/sqrt(K_Q) and C_obs under named premises",
+      "Map results onto invariant list without claiming Derived K_Q alone"
+    ],
+    "does_not_authorize": [
+      "MAT-001 subgate PASS report",
+      "Downstream Derived use of C_obs or V before UVIR Stage 5 full-gate PASS",
+      "SPARC / H0 validation from MAT alone",
+      "UVIR-003 full PASS"
+    ],
+    "required_inputs_from_UVIR": [
+      "Track-A force slice + regulator structure",
+      "Redefinition invariants Aq/K_Q, A/K_Q^{3/2}, C_m/sqrt(K_Q)",
+      "Declared weak-coupling domain (Stage 1)",
+      "This Conditional matching floor (Stage 2b)"
+    ],
+    "status": "HANDOFF_TEXT_ONLY_NOT_MAT_PASS",
+    "title": "Conditional UVIR domain for scoped MAT calculation only"
+  },
+  "n_checks": 10,
+  "naive_comparison_only": {
+    "C_IR": 0.6666666666666666,
+    "I_a0": 0.4444444444444444,
+    "P": 1.0,
+    "R_c_parallel_at_q_eq_a0": 2.6666666666666665,
+    "label": "NON_DERIVED_COMPARISON_ONLY",
+    "q_cross_parallel_over_a0": 0.375,
+    "warning": "Priority flag only \u2014 not Derived matching"
+  },
+  "next_required": [
+    "Stage 2c: re-evaluate causality + NDA diagnostics under this floor (optional re-run of existing Conditional domain scripts)",
+    "Stage 3: scoped MAT calculation of V and C_obs under handoff premises only",
+    "No MAT PASS or downstream Derived use before UVIR Stage 5"
+  ],
+  "physics_pass": false,
+  "prior_artifacts": {
+    "causality_conditional": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+    "inventory": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+    "matching_program": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+    "r3_audit": "PASS_R3_UV_RESIDUE_AUDIT_INCOMPLETE",
+    "weak_coupling_domain": "PASS_DECLARED_WEAK_COUPLING_DOMAIN"
+  },
+  "scientific_boundary": "Freezes a Conditional matching floor after Stage 2a R3 incomplete. Documents M3/M6 under Conditional-with-scope structure (free P, C_IR) without Derived K_Q. Authorizes only a written scoped MAT calculation handoff text \u2014 not MAT PASS, not UVIR full PASS, not observations.",
+  "serial_stage": "2b",
+  "stage": "B_CONDITIONAL_MATCHING_FLOOR_STAGE_2B",
+  "stage_2_exit": {
+    "M3": "PARTIAL_DOCUMENTED_CONDITIONAL_WITH_SCOPE",
+    "M6": "OPEN_CONDITIONAL_NDA_DIAGNOSTIC_ONLY",
+    "M7": "OPEN_MAT_BLOCKED_FOR_PASS",
+    "allows_MAT_PASS": false,
+    "allows_UVIR_full_PASS": false,
+    "allows_stage3_scoped_MAT_calculation": true,
+    "status": "CONDITIONAL_WITH_SCOPE"
+  },
+  "stage_2a_input": {
+    "present": true,
+    "required": "INCOMPLETE_R3_UV_RESIDUE"
+  },
+  "subgate_status": "PASS_CONDITIONAL_MATCHING_FLOOR"
+}

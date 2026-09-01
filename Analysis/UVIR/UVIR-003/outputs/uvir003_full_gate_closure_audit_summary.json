@@ -1,0 +1,164 @@
+{
+  "blocking_for_full_pass": [
+    "M2_stability_declared_domain",
+    "M3_causality_declared_domain",
+    "M6_physical_cutoff",
+    "M7_matter_ready_for_MAT"
+  ],
+  "calculation_status": "PASS",
+  "full_gate_status": "IN_PROGRESS",
+  "gate": "UVIR-003",
+  "master_plan_criteria": {
+    "M1_selected_action_declared": {
+      "note": "Selected action and bounded Track-A architecture are declared",
+      "status": "PASS_BOUNDED",
+      "tier1_met": true
+    },
+    "M2_stability_declared_domain": {
+      "note": "Relevant IR complex-quartet control remains held",
+      "status": "PARTIAL_BOUNDED_HIGH_Q_ONLY",
+      "tier1_met": false
+    },
+    "M3_causality_declared_domain": {
+      "note": "Conditional domain tables do not replace matched Aq/K_Q",
+      "status": "HOLD_MATCHED_INVARIANT_REQUIRED",
+      "tier1_met": false
+    },
+    "M4_unitarity_path_with_scope": {
+      "note": "Scoped path only; no optical-theorem claim",
+      "status": "PASS_SCOPED",
+      "tier1_met": true
+    },
+    "M5_invariant_ratios": {
+      "note": "Invariant combinations identified; matching remains M3/M6 work",
+      "status": "PASS_INVENTORY_K_Q_NOT_DERIVED",
+      "tier1_met": true
+    },
+    "M6_physical_cutoff": {
+      "note": "Conditional NDA diagnostic is not a physical matched cutoff",
+      "status": "HOLD_PHYSICAL_CUTOFF_REQUIRED",
+      "tier1_met": false
+    },
+    "M7_matter_ready_for_MAT": {
+      "note": "MAT engineering handoff exists; MAT PASS and Derived use remain blocked",
+      "status": "PARTIAL_SCOPED_HANDOFF_ONLY",
+      "tier1_met": false
+    }
+  },
+  "mat001_status": "BLOCKED_PASS_TAG_FORBIDDEN",
+  "mismatched_required_summaries": [],
+  "missing_required_summaries": [],
+  "next_required_calculation": [
+    "Compute V or an equivalent matched invariant from one declared action/field chart",
+    "Re-evaluate causality with the matched invariant",
+    "Establish the physical cutoff/unitarity result in the claim domain",
+    "Control the relevant IR complex-quartet response",
+    "Run a later independent Stage-5 closure review"
+  ],
+  "optional_subgate_evidence": {
+    "uvir003_causality_domain_conditional_summary.json": {
+      "expected": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+      "got": "PASS_CAUSALITY_DOMAIN_UNDER_CONDITIONAL_MATCHING",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_conditional_matching_floor_summary.json": {
+      "expected": "PASS_CONDITIONAL_MATCHING_FLOOR",
+      "got": "PASS_CONDITIONAL_MATCHING_FLOOR",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_declared_weak_coupling_domain_summary.json": {
+      "expected": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+      "got": "PASS_DECLARED_WEAK_COUPLING_DOMAIN",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_four_leg_kinematic_deformation_summary.json": {
+      "expected": "PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT",
+      "got": "PASS_FOUR_LEG_KINEMATIC_DEFORMATION_AUDIT",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_local_adiabatic_observable_norm_summary.json": {
+      "expected": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+      "got": "PASS_LOCAL_ADIABATIC_OBSERVABLE_NORMALIZATION",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_matching_route_program_summary.json": {
+      "expected": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "got": "PASS_MATCHING_ROUTE_PROGRAM_OPEN",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_stage2c_floor_diagnostics_summary.json": {
+      "expected": "PASS_STAGE2C_FLOOR_DIAGNOSTICS",
+      "got": "PASS_STAGE2C_FLOOR_DIAGNOSTICS",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_stage4_m3m6_conditional_limit_summary.json": {
+      "expected": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+      "got": "PASS_STAGE4_PERMANENT_CONDITIONAL_M3_M6_LIMIT",
+      "ok": true,
+      "present": true
+    },
+    "uvir003_stage5_full_gate_decision_summary.json": {
+      "expected": "PASS_STAGE5_DECISION_HOLD_TIER1",
+      "got": "PASS_STAGE5_DECISION_HOLD_TIER1",
+      "ok": true,
+      "present": true
+    }
+  },
+  "required_subgate_evidence": {
+    "uvir003_declared_unitarity_eft_criterion_summary.json": {
+      "expected": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+      "got": "PASS_DECLARED_UNITARITY_EFT_CRITERION",
+      "ok": true,
+      "path": "uvir003_declared_unitarity_eft_criterion_summary.json",
+      "required": true
+    },
+    "uvir003_frw_in_in_observable_path_summary.json": {
+      "expected": "PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED",
+      "got": "PASS_FRW_IN_IN_OBSERVABLE_PATH_DECLARED",
+      "ok": true,
+      "path": "uvir003_frw_in_in_observable_path_summary.json",
+      "required": true
+    },
+    "uvir003_frw_multi_slice_mode_green_summary.json": {
+      "expected": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+      "got": "PASS_FRW_MULTI_SLICE_MODE_PROJECTED_GREEN",
+      "ok": true,
+      "path": "uvir003_frw_multi_slice_mode_green_summary.json",
+      "required": true
+    },
+    "uvir003_kq_matching_inventory_summary.json": {
+      "expected": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "got": "PASS_KQ_MATCHING_INVENTORY_OPEN",
+      "ok": true,
+      "path": "uvir003_kq_matching_inventory_summary.json",
+      "required": true
+    },
+    "uvir003_local_four_leg_kernel_summary.json": {
+      "expected": "PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL",
+      "got": "PASS_LOCAL_EXCHANGE_PLUS_REDUCED_CONTACT_FOUR_LEG_KERNEL",
+      "ok": true,
+      "path": "uvir003_local_four_leg_kernel_summary.json",
+      "required": true
+    },
+    "uvir003_nonzero_gradient_force_local_summary.json": {
+      "expected": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+      "got": "PASS_NONZERO_GRADIENT_FORCE_LOCAL",
+      "ok": true,
+      "path": "uvir003_nonzero_gradient_force_local_summary.json",
+      "required": true
+    }
+  },
+  "scientific_boundary": "Audits evidence integrity and the fail-closed Stage-5 decision. UVIR-003 remains IN_PROGRESS because M2, M3, M6 and M7 are not tier-1 complete. This audit does not derive K_Q or V, establish a physical cutoff, control the relevant IR response, or issue MAT PASS.",
+  "stage": "FULL_GATE_CLOSURE_AUDIT",
+  "stage4_policy_present": true,
+  "stage5_decision_consistent": true,
+  "stage5_decision_present": true,
+  "subgate_status": "PASS_UVIR003_CLOSURE_CHECKLIST_AUDIT"
+}

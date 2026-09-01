@@ -1,0 +1,88 @@
+{
+  "calculation_pass": true,
+  "checks": {
+    "declared_existing_finite_q_mode_labels_are_unique": true,
+    "decoupled_finite_q_inertia_is_five_positive": true,
+    "direct_sum_determinant_factorizes": true,
+    "identified_W_map_adds_no_independent_coordinate": true,
+    "negative_control_large_mixing_creates_ghost": true,
+    "negative_control_unit_mixing_causes_rank_loss": true,
+    "negative_control_zero_W_kinetic_adds_no_rank": true,
+    "positive_decoupled_W_adds_one_kinetic_rank": true,
+    "small_declared_mixing_has_positive_schur_complement": true,
+    "small_declared_mixing_remains_positive_definite": true
+  },
+  "classification": {
+    "decoupled_independent_W": "adds one positive canonical pair by construction when Z_W>0",
+    "identified_W": "adds no independent coordinate; assigning a second T_W would double count",
+    "mixed_independent_W": "requires positive kinetic Schur complement Z_W-b^T K_existing^-1 b"
+  },
+  "domain": "finite nonzero q; the exactly homogeneous Xi mode is excluded as gauge",
+  "existing_declared_modes": [
+    {
+      "label": "Xi",
+      "role": "finite-q gauge-regular metric/frame continuation"
+    },
+    {
+      "label": "Q_rho",
+      "role": "retained condensate-density scalar"
+    },
+    {
+      "label": "Q_chi",
+      "role": "retained condensate-phase scalar"
+    },
+    {
+      "label": "Pi",
+      "role": "quadratically factorized Track-A force mode"
+    }
+  ],
+  "forbidden_inferences": {
+    "dissipation_is_derived": false,
+    "exchange_current_is_derived": false,
+    "independent_physical_wake_exists": false,
+    "interaction_source_is_derived": false,
+    "static_AQUAL_correction_is_derived": false,
+    "wake_is_distinct_from_Phi_U_psi": false
+  },
+  "gate": "WAK-001",
+  "hold": "HOLD_MICROSCOPIC_MODE_IDENTITY_AND_COUPLED_MIXING",
+  "label": "symbolic-mode-counting-template-only",
+  "mode_independence_status": "NOT_YET_ESTABLISHED",
+  "next": [
+    "supply one parent quadratic S_UV+S_psi+S_W action with declared mixing",
+    "compute its constrained finite-q Hessian before and after adding W",
+    "reject Route II if W is an identified combination or produces rank loss/ghost"
+  ],
+  "physical_wake_law": "NOT_YET_DERIVED",
+  "physics_pass": false,
+  "sample_exact": {
+    "decoupled_inertia": [
+      5,
+      0,
+      0
+    ],
+    "ghost_inertia": [
+      4,
+      0,
+      1
+    ],
+    "ghost_mixing_schur_complement": "-3",
+    "healthy_mixed_inertia": [
+      5,
+      0,
+      0
+    ],
+    "healthy_mixing_schur_complement": "47/50",
+    "rank_loss_inertia": [
+      4,
+      1,
+      0
+    ],
+    "rank_loss_schur_complement": "0"
+  },
+  "scientific_boundary": "The pre-screen classifies kinetic-rank outcomes. With no mixing or identification map declared, the trial action adds W as a new mode by construction, not by derivation. The actual coupled Hessian, microscopic identity and constraint ownership remain unmatched.",
+  "source": "J_W=0",
+  "stage": "W2.5 finite-q scalar mode-inventory pre-screen",
+  "stage2_status": "IN_PROGRESS",
+  "status": "PASS_WAK001_W2_5_MODE_COUNTING_PRESCREEN"
+}

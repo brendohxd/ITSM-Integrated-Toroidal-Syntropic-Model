@@ -1,0 +1,481 @@
+{
+  "calculation_status": "PASS",
+  "cbr_module": "Analysis/Casimir/CBR-001/casimir_t3_lattice.py",
+  "cbr_numerical_authority": "casimir_t3_lattice.lattice_stress",
+  "checks": [
+    {
+      "detail": 1.0,
+      "name": "V_finite_positive",
+      "ok": true
+    },
+    {
+      "detail": 40,
+      "name": "cutoff_valid_integer",
+      "ok": true
+    },
+    {
+      "cutoffs": [
+        20,
+        30,
+        40,
+        60,
+        80
+      ],
+      "detail": "",
+      "name": "cutoffs_strictly_increasing_refining",
+      "ok": true
+    },
+    {
+      "L": [
+        1.2840254166877414,
+        0.9048374180359595,
+        0.8607079764250578
+      ],
+      "name": "triaxial_sample_genuinely_triaxial",
+      "ok": true
+    },
+    {
+      "L": [
+        1.1274968515793757,
+        1.1274968515793757,
+        0.7866278610665535
+      ],
+      "name": "biaxial_sample_two_equal_lengths",
+      "note": "alpha_x=alpha_y => Lx=Ly \u2260 Lz at fixed V",
+      "ok": true
+    },
+    {
+      "Lx": 1.1274968515793757,
+      "Ly": 1.1274968515793757,
+      "Lz": 0.7866278610665535,
+      "name": "biaxial_Lx_equals_Ly",
+      "ok": true
+    },
+    {
+      "Lz": 0.7866278610665535,
+      "name": "biaxial_Lz_distinct",
+      "ok": true
+    },
+    {
+      "V": 1.0,
+      "name": "fixed_volume_cubic",
+      "ok": true,
+      "volume": 1.0
+    },
+    {
+      "V": 1.0,
+      "name": "fixed_volume_biaxial",
+      "ok": true,
+      "volume": 1.0
+    },
+    {
+      "V": 1.0,
+      "name": "fixed_volume_triaxial",
+      "ok": true,
+      "volume": 1.0
+    },
+    {
+      "name": "cubic_pressure_isotropy",
+      "ok": true,
+      "p": [
+        -0.2748241306084255,
+        -0.27482413060842636,
+        -0.27482413060842636
+      ],
+      "p_spread": 8.881784197001252e-16,
+      "tol": 1e-12
+    },
+    {
+      "name": "anisotropic_pressure_biaxial",
+      "ok": true,
+      "p": [
+        -0.03241409602145505,
+        -0.03241409602145469,
+        -0.8463306714650515
+      ],
+      "p_spread": 0.8139165754435967
+    },
+    {
+      "name": "anisotropic_pressure_triaxial",
+      "ok": true,
+      "p": [
+        0.09523901652152118,
+        -0.4326473839330416,
+        -0.5623085250571724
+      ],
+      "p_spread": 0.6575475415786937
+    },
+    {
+      "name": "axis_permutation_covariance",
+      "ok": true,
+      "p_rel_err": 3.788599422607863e-15,
+      "rho_rel_err": 3.7019079020919567e-16
+    },
+    {
+      "measured": {
+        "energy_relative_error": 0.0,
+        "pressure_max_relative_error": 4.6629367034256575e-15,
+        "rho_relative_error": 0.0
+      },
+      "name": "uniform_length_scaling_rho_p_s_m4",
+      "ok": true,
+      "pass_rule": "CBR-001 scaling_test relative errors each < 1e-9 (tool identity)",
+      "scale": 1.7
+    },
+    {
+      "final_pair_rel_change": 0.0026216879877315404,
+      "first_pair_rel_change": 0.010419585868900438,
+      "monotone_nonincreasing": false,
+      "name": "multi_cutoff_refinement_improves_successive_change",
+      "ok": true,
+      "pass_rule": "PASS if refining ladder is strictly increasing integers and the final successive |\u0394\u03c1|/|\u03c1| is strictly smaller than the first successive change (measured improvement). Absolute tolerance is not imposed."
+    },
+    {
+      "cases": [
+        {
+          "case": "V_nonpositive",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "V_negative",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "V_nan",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "V_inf",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "alpha_nan",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "cutoff_zero",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "cutoff_negative",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "L_nonpositive",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        },
+        {
+          "case": "L_nan",
+          "error": "ValueError",
+          "ok": true,
+          "raised": true
+        }
+      ],
+      "name": "malformed_input_rejection",
+      "ok": true
+    },
+    {
+      "flags": {
+        "Cobs_from_topology": false,
+        "H0_from_Casimir": false,
+        "S_mod_introduced": false,
+        "TOP_research_gate_PASS": false,
+        "a0_from_topology": false,
+        "cosmology_claim": false,
+        "persistent_13_12": false,
+        "physics_pass": false,
+        "template_PASS_equals_physics_PASS": false,
+        "twisted_preference": false
+      },
+      "name": "claim_firewall",
+      "ok": true
+    },
+    {
+      "name": "status_labels_scaffold_only",
+      "note": "subgate template PASS is not TOP physics/gate PASS",
+      "ok": true,
+      "physics_pass": false,
+      "research_gate_status": "OPEN_SCAFFOLD_ONLY"
+    }
+  ],
+  "claim_firewall": {
+    "Cobs_from_topology": false,
+    "H0_from_Casimir": false,
+    "S_mod_introduced": false,
+    "TOP_research_gate_PASS": false,
+    "a0_from_topology": false,
+    "cosmology_claim": false,
+    "persistent_13_12": false,
+    "physics_pass": false,
+    "template_PASS_equals_physics_PASS": false,
+    "twisted_preference": false
+  },
+  "explicit_non_claims": [
+    "No TOP research-gate PASS",
+    "No physics_pass",
+    "No S_mod / dynamical shape potential",
+    "No twisted E2/E3 preference",
+    "No persistent free-field 13/12 attractor",
+    "No H0, a0, Cobs, or cosmology from this bridge",
+    "No MAT/UVIR claim upgrade"
+  ],
+  "gate": "TOP-001",
+  "limitations": [
+    "Finite lattice cutoff N; continuum Casimir is extrapolated only diagnostically",
+    "Free massless scalar on rectangular T^3 only (CBR-001 Stage-1 authority)",
+    "Fixed BC / fixed volume template \u2014 no dynamical moduli",
+    "No driven anisotropic stress (CBR-002)",
+    "No renormalization-scheme comparison beyond CBR-001 tool"
+  ],
+  "malformed_controls": [
+    {
+      "case": "V_nonpositive",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "V_negative",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "V_nan",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "V_inf",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "alpha_nan",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "cutoff_zero",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "cutoff_negative",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "L_nonpositive",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    },
+    {
+      "case": "L_nan",
+      "error": "ValueError",
+      "ok": true,
+      "raised": true
+    }
+  ],
+  "multi_cutoff_convergence": {
+    "L": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "cutoffs": [
+      20,
+      30,
+      40,
+      60,
+      80
+    ],
+    "extrapolated_rho_inf_order2": -0.8375354614382676,
+    "final_pair_rel_change": 0.0026216879877315404,
+    "first_pair_rel_change": 0.010419585868900438,
+    "geometry": "cubic_unit_volume_reference",
+    "max_successive_rel_change_upper_half": 0.005237890182909509,
+    "monotone_nonincreasing_successive_changes": false,
+    "ok": true,
+    "pass_rule": "PASS if refining ladder is strictly increasing integers and the final successive |\u0394\u03c1|/|\u03c1| is strictly smaller than the first successive change (measured improvement). Absolute tolerance is not imposed.",
+    "refinement_reduces_successive_change": true,
+    "rows": [
+      {
+        "cutoff": 20,
+        "p": [
+          -0.27057733360068836,
+          -0.27057733360068836,
+          -0.27057733360068836
+        ],
+        "rho": -0.8117320008020658,
+        "successive_rel_change_rho": null
+      },
+      {
+        "cutoff": 30,
+        "p": [
+          -0.2733966373623192,
+          -0.27339663736231934,
+          -0.2733966373623195
+        ],
+        "rho": -0.8201899120869572,
+        "successive_rel_change_rho": 0.010419585868900438
+      },
+      {
+        "cutoff": 40,
+        "p": [
+          -0.2748241306084255,
+          -0.27482413060842636,
+          -0.27482413060842636
+        ],
+        "rho": -0.8244723918252785,
+        "successive_rel_change_rho": 0.005221327006357116
+      },
+      {
+        "cutoff": 60,
+        "p": [
+          -0.27626362922416536,
+          -0.27626362922416625,
+          -0.2762636292241665
+        ],
+        "rho": -0.8287908876725001,
+        "successive_rel_change_rho": 0.005237890182909509
+      },
+      {
+        "cutoff": 80,
+        "p": [
+          -0.27698790626235087,
+          -0.2769879062623503,
+          -0.27698790626235015
+        ],
+        "rho": -0.8309637187870524,
+        "successive_rel_change_rho": 0.0026216879877315404
+      }
+    ],
+    "successive_rel_changes": [
+      0.010419585868900438,
+      0.005221327006357116,
+      0.005237890182909509,
+      0.0026216879877315404
+    ]
+  },
+  "n_checks": 19,
+  "next_required": [
+    "Author review of measured multi-cutoff table before any freeze language",
+    "S_mod only after explicit firewall review of any potential",
+    "CBR-002 for driven persistence (not free field)"
+  ],
+  "parameters": {
+    "V": 1.0,
+    "cutoff": 40,
+    "cutoffs": [
+      20,
+      30,
+      40,
+      60,
+      80
+    ],
+    "scale": 1.7
+  },
+  "pass_distinction": {
+    "TOP_physics_pass": false,
+    "TOP_research_gate_PASS": false,
+    "template_or_calculation_PASS": true
+  },
+  "physics_pass": false,
+  "research_gate_status": "OPEN_SCAFFOLD_ONLY",
+  "scientific_boundary": "Referee-grade scaffold bridging TOP-owned fixed-volume rectangular T^3 geometry samples into the existing CBR-001 free-scalar Casimir lattice tool. Free-field anisotropic stress is a mechanism input only. Template PASS is not TOP physics or research-gate PASS.",
+  "shape_samples": {
+    "biaxial": [
+      1.1274968515793757,
+      1.1274968515793757,
+      0.7866278610665535
+    ],
+    "cubic": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "triaxial": [
+      1.2840254166877414,
+      0.9048374180359595,
+      0.8607079764250578
+    ]
+  },
+  "stage": "S2_CBR001_BRIDGE",
+  "stress_at_primary_cutoff": {
+    "biaxial": {
+      "L": [
+        1.1274968515793757,
+        1.1274968515793757,
+        0.7866278610665535
+      ],
+      "cutoff": 40,
+      "energy": -0.9111588635079626,
+      "p": [
+        -0.03241409602145505,
+        -0.03241409602145469,
+        -0.8463306714650515
+      ],
+      "rho": -0.9111588635079626,
+      "trace": 1.3322676295501878e-15,
+      "volume": 1.0
+    },
+    "cubic": {
+      "L": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cutoff": 40,
+      "energy": -0.8244723918252785,
+      "p": [
+        -0.2748241306084255,
+        -0.27482413060842636,
+        -0.27482413060842636
+      ],
+      "rho": -0.8244723918252785,
+      "trace": 3.3306690738754696e-16,
+      "volume": 1.0
+    },
+    "triaxial": {
+      "L": [
+        1.2840254166877414,
+        0.9048374180359595,
+        0.8607079764250578
+      ],
+      "cutoff": 40,
+      "energy": -0.8997168924686918,
+      "p": [
+        0.09523901652152118,
+        -0.4326473839330416,
+        -0.5623085250571724
+      ],
+      "rho": -0.8997168924686918,
+      "trace": -9.992007221626409e-16,
+      "volume": 1.0
+    }
+  },
+  "subgate_status": "PASS_TOP001_S2_CBR001_BRIDGE_TEMPLATE"
+}

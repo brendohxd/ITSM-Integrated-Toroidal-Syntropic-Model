@@ -1,0 +1,54 @@
+{
+  "gate": "ASTRO-001",
+  "subgate": "JEANS_MASS_AND_STELLAR_IMF",
+  "label": "ASTRO-001_MODIFIED_JEANS_SOLVER",
+  "status": "PASS_ASTRO001_JEANS_FRAGMENTATION",
+  "physics_pass": true,
+  "cloud_parameters": {
+    "T_kelvin": 10.0,
+    "density_kg_m3": 7.79877795e-18,
+    "sound_speed_m_s": 188.16695699069112
+  },
+  "environmental_benchmarks": {
+    "HSB_core": {
+      "g_N_over_a0": 10.0,
+      "M_J_mod_Msun": 2.259068218570804,
+      "suppression": 0.35223497412715543,
+      "predicted_upsilon_3_6": 0.5165676180392356
+    },
+    "Milky_Way_solar": {
+      "g_N_over_a0": 1.0,
+      "M_J_mod_Msun": 1.709752872435282,
+      "suppression": 0.2665854682188722,
+      "predicted_upsilon_3_6": 0.510842872172877
+    },
+    "LSB_dwarf": {
+      "g_N_over_a0": 0.1,
+      "M_J_mod_Msun": 0.17460665226329072,
+      "suppression": 0.02722475095563911,
+      "predicted_upsilon_3_6": 0.4662860639731632
+    }
+  },
+  "sparc_alignment": {
+    "mean_predicted_upsilon": 0.49789885139509193,
+    "sparc_benchmark": 0.5,
+    "consistent": true
+  },
+  "checks": [
+    {
+      "id": "ASTRO.1",
+      "description": "Strict dimensional integrity verified for all dispersion and mass scales (Rule 4)",
+      "pass": true
+    },
+    {
+      "id": "ASTRO.2",
+      "description": "Modified Jeans mass correctly suppressed in low-acceleration MOND regime (g_N << a0)",
+      "pass": true
+    },
+    {
+      "id": "ASTRO.3",
+      "description": "Predicted 3.6um stellar mass-to-light ratio matches SPARC benchmark Upsilon ~ 0.50 M_sun/L_sun",
+      "pass": true
+    }
+  ]
+}

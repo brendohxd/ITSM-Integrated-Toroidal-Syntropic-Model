@@ -1,0 +1,76 @@
+{
+  "gate": "LEN-001",
+  "label": "LEN-001_GRAVITATIONAL_LENSING_SOLVER",
+  "status": "PASS_LEN001_GRAVITATIONAL_LENSING",
+  "physics_pass": true,
+  "galaxy_baryon_mass_solar": 50000000000.0,
+  "evaluation_points": [
+    {
+      "R_kpc": 2.0,
+      "g_N_m_s2": 1.7423431390253316e-09,
+      "g_tot_m_s2": 1.8550521924594749e-09,
+      "M_dyn_solar": 53234410344.02651,
+      "alpha_lensing_arcsec": 1.0509459783050088,
+      "alpha_GR_arcsec": 0.987092720209811,
+      "lensing_boost_factor": 1.0646882068805306,
+      "M_lens_over_M_dyn": 1.0
+    },
+    {
+      "R_kpc": 5.0,
+      "g_N_m_s2": 2.78774902244053e-10,
+      "g_tot_m_s2": 3.6934799077955487e-10,
+      "M_dyn_solar": 66244842668.11971,
+      "alpha_lensing_arcsec": 0.523118415593162,
+      "alpha_GR_arcsec": 0.3948370880839244,
+      "lensing_boost_factor": 1.3248968533623942,
+      "M_lens_over_M_dyn": 1.0
+    },
+    {
+      "R_kpc": 10.0,
+      "g_N_m_s2": 6.969372556101325e-11,
+      "g_tot_m_s2": 1.3271182542273648e-10,
+      "M_dyn_solar": 95210741249.98106,
+      "alpha_lensing_arcsec": 0.375927318294545,
+      "alpha_GR_arcsec": 0.1974185440419622,
+      "lensing_boost_factor": 1.904214824999621,
+      "M_lens_over_M_dyn": 1.0
+    },
+    {
+      "R_kpc": 20.0,
+      "g_N_m_s2": 1.742343139025331e-11,
+      "g_tot_m_s2": 5.525960240529979e-11,
+      "M_dyn_solar": 158578414227.32632,
+      "alpha_lensing_arcsec": 0.3130631965324195,
+      "alpha_GR_arcsec": 0.0987092720209811,
+      "lensing_boost_factor": 3.1715682845465265,
+      "M_lens_over_M_dyn": 1.0
+    },
+    {
+      "R_kpc": 50.0,
+      "g_N_m_s2": 2.7877490224405303e-12,
+      "g_tot_m_s2": 1.973706858547825e-11,
+      "M_dyn_solar": 353996511640.7693,
+      "alpha_lensing_arcsec": 0.27954190369621684,
+      "alpha_GR_arcsec": 0.03948370880839245,
+      "lensing_boost_factor": 7.079930232815386,
+      "M_lens_over_M_dyn": 1.0
+    }
+  ],
+  "checks": [
+    {
+      "id": "LEN.1",
+      "description": "Lensing deflection angle boosted in low-acceleration regime",
+      "pass": true
+    },
+    {
+      "id": "LEN.2",
+      "description": "Exact equality of lensing mass and dynamical mass M_lens = M_dyn",
+      "pass": true
+    },
+    {
+      "id": "LEN.3",
+      "description": "Inner asymptotic recovery to general relativistic deflection",
+      "pass": true
+    }
+  ]
+}
