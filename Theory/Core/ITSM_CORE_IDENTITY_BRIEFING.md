@@ -47,38 +47,33 @@ on its checklist is satisfied. No shortcut, no override.
 ### Current Gate Statuses (authoritative source: `active_research.md`)
 
 | Gate | Status | Key Note |
+| Gate | Status | Key Note |
 |------|--------|----------|
 | UVIR-001 | CLOSED NEGATIVE | Born-Infeld does not derive square-root law |
 | UVIR-002 | CLOSED PROVISIONAL | Y^(3/2) local EFT identified as candidate |
-| **UVIR-003** | **PASS_UNITARITY** | Non-derivative contact amplitude A = C_m⁴ ρ_b / f⁴ satisfies tree-level unitarity; cutoff Λ_UV = f/C_m |
-| **MAT-001** | **R5-P1 EVALUATION_COMPLETE** | Conformal trace conservation fixes C_m ≡ 1; CBR-002 scale matching fixes f = 1/√(4πG), V = √(4πG), α ≡ 1 |
+| **UVIR-003** | **IN_PROGRESS** | Stage 5 holds tier-1 closure (M2/M3/M6/M7 hold); physical interaction scale, matching, and EFT cutoff remain open |
+| **MAT-001** | **BLOCKED** | Conditional Track-A form kit only; $V = C_m/\sqrt{K_Q}$ not computed; parent $Z_\phi, g_\phi$ incomplete |
 | MAT-001 R1–R4 | COMPLETE | Convention, provenance, action, residue contract |
-| MAT-001 R5 | R5-P1 EVALUATED | Scale-compensator fork executed; all 8 artifacts verified & SHA-256 hashed |
-| TOP-001 | OPEN SCAFFOLD | Physical moduli dynamics |
-| VOR-001 S0–S2 | COMPLETE | Vocabulary + 3D smooth-winding + two-scale hierarchy |
-| **VOR-001 S3–S4** | **PASS_PHYSICAL_RESONANCE** | Defect core profile & finite line tension solved (S3); discrete Bogoliubov acoustic spectrum on T³ derived (f = 1.45–1.88 nHz) (S4) |
-| **SCR-001** | **PASS_LANDAU_SCREENING** | Landau phase disruption suppresses fifth force; Cassini Δγ = 4.05e-8 satisfies bound |
-| **LEN-001** | **PASS_GRAVITATIONAL_LENSING** | Conformal scale-compensator null geodesics; M_lens / M_dyn ≡ 1.00 exactly |
-| WAK-001 | OPEN SCAFFOLD | C2 mode-projected Green function |
-| RES-001 | OPEN SCAFFOLD | R0 null control + R1 minimal route |
-| **DISK-001** | **PASS_STAGE5_AND_PIPELINE** | 2D/3D nonlinear Picard solver + 175-galaxy SPARC master catalog execution |
-| **STAT-001** | **BENCHMARK_ALIGNED** | Full SPARC evaluated (0 global free params: median χ²_ν = 1.84; floated MCMC χ²_ν = 7.38) |
-| CBR-001 | COMPLETE_SCOPED_NEGATIVE | Free-field calculation supplies a scoped negative result; no 13/12 attractor |
-| CBR-002 | SCALE_DERIVATION_COMPLETE | f = 1/√(4πG), ℓ = √(4πG)/a₀ derived from BTFR matching |
+| MAT-001 R5 | RESEARCH_FORK | Scale-compensator exploratory fork; parent matching remains underdetermined |
+| TOP-001 / CBR-002 | SCOPED_NEGATIVE | Free Casimir energy dilutes to isotropy; persistent $13/12$ is an unstable driven toy model |
+| VOR-001 | OPEN SCAFFOLD | Bogoliubov acoustic phonons on $\mathbb{T}^3$; macroscopic circulation matching open |
+| SCR-001 | OPEN | Universal coupling unproven; Landau disruption is an unverified heuristic mechanism |
+| LEN-001 | OPEN | Lensing potentials, metric, and wave propagation unclosed downstream of $V$ |
+| DISK-001 | METHODS_ONLY | 2D/axisymmetric Picard solver methods package; raw SPARC $\chi_\nu^2 = 38.96$, median $\chi_\nu^2 = 10.51$; no morphology-independent coupling derived |
+| STAT-001 | QUARANTINED_INVALID_GATE | Optimizer-only fit ($k=557$ parameters); genuine MCMC and $1.84$ / $1.08$ claims lack executable pipeline provenance |
+| WAK-001 | EXPLORATORY_TOY | Kinematic ballistic toy with arbitrary drag; 3D multi-fluid hydrodynamics, shocks, and lensing metric remain open |
+| RES-001 | PHENOMENOLOGICAL_TOY | Toy Lindblad model with inserted phenomenological rates; microscopic Hamiltonian and genuine Spohn functional open |
+| ASTRO-001 | LINEAR_DISPERSION_TOY | Excursion set toy with clipped $[0.35, 0.85]$ mass-to-light ratio; full non-linear star formation and IMF open |
+| COS-001 / PERT-001 | PROXY_CALIBRATION_ONLY | Background integral is a $\Lambda\mathrm{CDM}$ parameter calibration test; hard-coded $\sigma_8$ quarantined; Boltzmann hierarchy and $S_8$ tension open |
 
-### What Has Been Derived (v12.0 Results)
+### Current Canonical Boundary (v12.0-alpha.12 Baseline)
 
-The following parameters were previously `NOT_COMPUTED` and have now been derived
-via the R5-P1 scale-compensator evaluation:
-
-- **C_m ≡ 1.0** — Fixed uniquely by conformal Weyl trace conservation (T^μ_μ)
-- **K_Q = f²** — The dilaton kinetic normalization from the scale-compensator action
-- **V = C_m / √K_Q = 1/f = √(4πG)** — The effective matter coupling residue
-- **α ≡ 4πG V² = 1.0** — The dimensionless AQUAL coupling strength (exact)
-- **f = 1/√(4πG) ≈ 0.282 M_Pl** — The symmetry-breaking condensate scale
-- **ℓ = √(4πG)/a₀ ≈ 0.21 mm** — The mesoscopic transition healing length
-
-All derivation artifacts are SHA-256 hashed in `Theory/Gates/MAT-001/MAT-001_R5_P1_SPEC.md` and their respective gate directories.
+In the canonical v12.0-alpha.12 authority baseline:
+- **$V = C_m/\sqrt{K_Q}$** remains **`NOT_COMPUTED`**
+- **$K_Q$** remains **`NOT_DERIVED`**
+- **$\text{MAT-001}$** remains **`BLOCKED`**
+- **$\text{UVIR-003}$** remains **`IN_PROGRESS`** (Tier-1 hold)
+- **Downstream "Derived" claims** for screening, lensing, disk dynamics, and cosmology are strictly forbidden until upstream gates close.
 
 ## 5. Claim Hygiene — What Remains Open
 

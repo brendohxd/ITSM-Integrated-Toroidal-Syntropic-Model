@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
-"""TOP-001 / CBR-002: Coupled 3D Moduli & Vacuum Stress ODE Solver.
+"""QUARANTINED SCRIPT — EXPLORATORY MODULI ODE TOY MODEL.
 
-Rigorous first-principles dynamical solver for the shear moduli beta_+(t), beta_-(t)
-and directional Hubble expansion rates (H_t, H_p) on a triaxial flat 3-torus (T3).
-
-Integrates the full coupled Einstein-Raychaudhuri-Moduli system:
-  ddot{beta}_+ + 3H dot{beta}_+ = (4pi G / 3) * Delta T_shear(a, beta_+)
-from recombination (z = 1000) to the present day (z = 0).
-
-Evaluates:
-  1. Free Casimir shear stress dilution (proving exact isotropic decay H_t/H_p -> 1.000).
-  2. Condensate superflow / winding backreaction.
-  3. Scale compensator kinetic stress.
-  4. Phase space portrait and stability analysis (Lyapunov exponents).
-
-Complies strictly with GEMINI.md Rules 1, 3, 4, 6 (Fail-closed, no smuggled numbers).
+DISCLAIMER / AUDIT NOTICE (2026-09-01):
+  This script is QUARANTINED as an exploratory toy model, NOT a full 3D moduli solver.
+  
+  Audit findings:
+  1. Free Casimir dilution: Correctly demonstrates that free Casimir stress dilutes exponentially
+     to spatial isotropy (lambda ~ -2.68 H, u_sigma -> 10^-6), confirming a Scoped Negative result.
+  2. Driven model failure: Selected eta = 0.375 targeting 13/12 = 1.0833, but actually obtained
+     H_t/H_p = 1.0728 with a positive Lyapunov exponent (+1.088), demonstrating an unstable mode
+     rather than a stable stationary attractor.
+  3. The solver omits beta_- and inserts an unmotivated 10^-6 Casimir amplitude.
+  
+  Do NOT cite as a derived 13/12 attractor. CBR-002 remains OPEN / SCOPED NEGATIVE.
 """
 
 import json

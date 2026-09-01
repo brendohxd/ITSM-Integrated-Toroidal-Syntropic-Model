@@ -1,21 +1,15 @@
 #!/usr/bin/env python3
-"""ASTRO-001: Turbulent Fragmentation & Stellar IMF in Dual-Gravity Superfluid Cosmology.
+"""QUARANTINED SCRIPT — LINEAR EXCURSION SET TOY MODEL.
 
-Rigorous first-principles solver for turbulent molecular cloud fragmentation and the
-resulting stellar initial mass function (IMF) under scale-compensator modified gravity.
-
-Integrates the non-linear Hennebelle-Chabrier / Hopkins excursion set core mass spectrum:
-  dN/dlnM = (M_cloud / M) * p(s_crit(M)) * |ds_crit/dlnM|
-where the critical collapse threshold s_crit(M) is derived from the modified virial
-equation of motion with AQUAL scale-compensator acceleration.
-
-Evaluates:
-  1. Log-normal supersonic turbulent density PDF p(s).
-  2. Modified Jeans and turbulent virial collapse density s_crit(M).
-  3. IMF differential mass spectrum dN/dlnM across HSB vs. LSB galaxies.
-  4. Characteristic stellar mass M_char and synthesized mass-to-light ratio Upsilon_*.
-
-Complies strictly with GEMINI.md Rules 1, 3, 4, 6 (Fail-closed, no smuggled numbers).
+DISCLAIMER / AUDIT NOTICE (2026-09-01):
+  This script is QUARANTINED as a toy excursion-set parameter study, NOT a derived stellar IMF.
+  
+  Audit findings:
+  1. The mass-to-light ratio was artificially clipped into [0.35, 0.85] and pegged to 0.85.
+  2. The characteristic mass hits the lower grid boundary rather than emerging from a true minimum.
+  3. High-mass slopes -0.92 to -1.06 do not preserve the empirical Salpeter slope (-1.35).
+  
+  Do NOT cite as a derived stellar IMF or star-formation law. Gate ASTRO-001 remains OPEN / TOY.
 """
 
 import json

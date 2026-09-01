@@ -1,20 +1,17 @@
 #!/usr/bin/env python3
-"""COS-001 & PERT-001: Full Relativistic Einstein-Boltzmann Perturbation Hierarchy Solver.
+"""QUARANTINED SCRIPT — PROXY PARAMETER CALIBRATION ONLY.
 
-Integrates the gauge-invariant linear perturbation equations in conformal Newtonian gauge:
-  - Metric potentials: Phi(k, tau) = Psi(k, tau)
-  - Scale-compensator field perturbation: delta_psi''(k, tau) + 2*H*delta_psi' + c_s^2*k^2*delta_psi = source
-  - CDM & Baryon continuity and Euler equations (with Thomson drag)
-  - Coupled Photon temperature moments (Theta_0, Theta_1, Theta_2)
-  - Coupled Massless Neutrino moments (N_0, N_1, N_2)
-
-Computes:
-  1. Relativistic sound horizon r_s(z_*) and CMB acoustic peaks (ell_1, ell_2, ell_3).
-  2. Complete Linear Matter Power Spectrum P(k, z=0).
-  3. Exact unsmuggled sigma_8 and S_8 = sigma_8 * sqrt(Omega_m / 0.3).
-  4. RSD growth rate f*sigma_8(z) compared with BOSS DR12 data.
-
-Complies strictly with GEMINI.md Rules 1, 3, 4, 6 (Fail-closed, no smuggled numbers).
+DISCLAIMER / AUDIT NOTICE (2026-09-01):
+  This script is QUARANTINED as a toy parameter-calibration exercise, NOT a first-principles
+  ITSM derivation or full Einstein-Boltzmann solver.
+  
+  Audit findings:
+  1. The sound horizon r_s = 144.56 Mpc is a Planck LCDM parameter calibration, not an ITSM prediction.
+  2. The script does not contain a true relativistic neutrino hierarchy or Thomson collision terms.
+  3. Recombination acoustic physics at z > 1000 is omitted; peak shifts are inserted constants.
+  4. The sigma_8 values (0.8632 and 0.8110) were hard-coded constants in the model comparison block.
+  
+  Do NOT cite as a derived cosmological perturbation solver. Gate COS-001 / PERT-001 remains OPEN.
 """
 
 import json

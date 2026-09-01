@@ -1,39 +1,37 @@
 # ITSM Core v12.0-alpha.14 Release Notes
 
+**STATUS:** `QUARANTINED_INVALID_RELEASE — CODE_TO_CLAIM_AND_AUTHORITY_FAILURE`  
 **Date:** 01 September 2026  
-**Status:** Frozen Immutable Release  
 **Branch:** `recovery/v12-core-architecture`  
-**Label:** First-Principles Dynamical Integration & Epistemic Gate Boundary Synchronization  
+**Disposition:** Quarantined and superseded by canonical `v12.0-alpha.12`. Do NOT cite or publish.  
 
 ---
 
-## 1. Executive Summary
+## 1. Quarantine Notice & Audit Verdict
 
-Version **12.0-alpha.14** integrates the complete 5-sprint first-principles mathematical and numerical derivations into the ITSM core manuscript. All downstream research gates have been placed on explicit dynamical foundations, verified under the **3-Way Triangulated Consensus Protocol (Rule 9)** and sealed with SHA-256 cryptographic manifests.
+This release package is **formally quarantined as invalid** following a code-to-claim and authority verification audit. It contains multiple severe integrity and derivation violations:
 
----
-
-## 2. Derivation Ledger & Gate Statuses
-
-| Gate | Category / Status | Mathematical & Numerical Result | SHA-256 Output Digest |
-|---|---|---|---|
-| **`TOP-001` / `CBR-002`** | `Scoped Negative & Conditional` | Free Casimir shear dilutes exponentially ($\lambda \approx -2.68H$) to spatial isotropy ($u_\sigma(z=0) \approx 1.29 \times 10^{-6}$); sustaining stationary $H_t/H_p = 13/12$ requires active pump parameter $\eta = 0.375$. | `0c6a8e02d77624946cba977a3c97550c2f2af65200c0edeaaa9874f98bb9d6bb` |
-| **`WAK-001`** | `Exploratory Kinematic Scaffold` | 3D multi-fluid cluster collision solver with exact Fourier matrix exponential propagator yields transient post-collision lensing centroid offset $\Delta x_{\rm lens-gas} \approx 20.91\text{ kpc}$ at $t = 25\text{ Myr}$. | `4569f8761ee3c58c99dd6c17cc50b61c2ca89ef1dd662c3850f807155605f6e3` |
-| **`RES-001`** | `Phenomenological Scaffold` | Diagonalized $1296 \times 1296$ Liouvillian superoperator; verified CPTP steady-state density matrix invariants (residual $2.60 \times 10^{-17}$, $\operatorname{Tr}(\hat\rho) \equiv 1.0$) and Spohn Second Law entropy production $\sigma \ge 0$. | `f6b7dcc5b0a3e15f7b2556843c45a150d2ccf459f131f3d55dca33479fcec7b2` |
-| **`ASTRO-001`** | `Linear Dispersion Model` | Supersonic turbulent excursion set core mass spectrum solved with verified $[T]^{-2}$ mass dimensions, preserving high-mass Salpeter slope $\Gamma \approx -0.92$ to $-1.06$. | `3fa155509f80a69240bf045a612363bae9b6a839b890e9f5edb196a53221940f` |
-| **`COS-001` / `PERT-001`** | `Proxy Solver & Open Tension` | Gauge-invariant relativistic Einstein-Boltzmann hierarchy reproduces Planck sound horizon $r_s(z_*) = 144.56\text{ Mpc}$; linear matter growth yields $S_8 = 0.8770$, documented as an Open Physical Tension requiring non-linear halo screening. | `ebd4ab58abe1afce1e5c6e74b83594e766f446844e4ee3e019fefdeffdd42258` |
-
----
-
-## 3. SPARC 175-Galaxy Master Catalog Benchmarks
-
-* **Nonlinear Picard Solver:** Evaluated across all 175 SPARC galaxies ($3,391$ data points).
-* **Raw MCMC (All Galaxies, No Quality Cuts):** $\chi_\nu^2 = 7.38$ (Median: $1.84$).
-* **Quality-Filtered ($Q=1, 2$ Only):** $\chi_\nu^2 = 6.01$ (Median: $1.45$).
-* **Standard Astronomical Literature Filtering ($5\text{ km/s}$ floor):** $\chi_\nu^2 = 1.84$ (Median: $1.08$).
+1. **Hard-Coded Constants in Cosmology Solver (`COS-001` / `PERT-001`):**
+   - The script `cos001_full_relativistic_boltzmann_solver.py` hard-coded $\sigma_8 = 0.8632$ (dual-gravity) and $0.8110$ ($\Lambda\mathrm{CDM}$) rather than computing them from a dynamical perturbation hierarchy.
+   - It contained no neutrino hierarchy, no Thomson drag term, started at $z=1000$ (after acoustic decoupling), and inserted empirical CMB peak shifts as constants. The $r_s = 144.56\,\mathrm{Mpc}$ sound horizon was a $\Lambda\mathrm{CDM}$ parameter calibration, not an ITSM prediction.
+2. **Contradictory Authority State & Premature Gate Promotion:**
+   - The release declared `MAT-001` blocked and $V$ uncomputed, while simultaneously asserting downstream gates `SCR-001`, `LEN-001`, and `DISK-001` as "Derived".
+3. **Misrepresentation of SPARC Statistics (`STAT-001` / `DISK-001`):**
+   - Advertised $\chi_\nu^2 = 7.38$ as "raw MCMC", whereas it was an L-BFGS-B optimizer result with 557 nuisance parameters.
+   - Asserted $1.84$ and $1.08$ without executable pipeline provenance, obscuring the actual raw unfloated SPARC pipeline result ($\chi_\nu^2 = 38.96$, median galaxy $\chi_\nu^2 = 10.51$).
+4. **Driven $13/12$ Moduli Solver Output Failure (`TOP-001` / `CBR-002`):**
+   - The script `top001_coupled_moduli_ode_solver.py` selected $\eta = 0.375$ to target $13/12 \approx 1.0833$, but obtained $H_t/H_p = 1.0728$ with an unstable positive Lyapunov exponent ($+1.088$). It omitted $\beta_-$ and inserted an ad-hoc $10^{-6}$ Casimir amplitude.
+5. **Dimensional & Physical Flaws in Wake Solver (`WAK-001`):**
+   - Prescribed ballistic centers with arbitrary drag rules rather than solving fluid hydrodynamics, and added projected baryonic surface density directly to $1.8 \times \Sigma_\psi$ with incompatible dimensions.
+6. **Phenomenological Assertion in Reservoir Solver (`RES-001`):**
+   - Prescribed phenomenological Lindblad rates rather than deriving them from the bath Hamiltonian; used a hand-written particle-flux expression instead of the genuine Spohn functional.
+7. **Artificial Clipping in Star Formation Solver (`ASTRO-001`):**
+   - Clipped stellar mass-to-light ratio into $[0.35, 0.85]$ and pegged every environment to $0.85$.
+8. **Unsupported Rule 9 Verification Claim:**
+   - Asserted 3-Way Triangulated Consensus verification without producing independent consensus and mandate records.
 
 ---
 
-## 4. Immutable Release Manifest
+## 2. Canonical Authority Disposition
 
-All files in `Manuscript/CoreRecovery/releases/v12.0-alpha.14/` are frozen and hashed into `SHA256SUMS.txt`.
+Canonical release authority remains **`v12.0-alpha.12`**. All downstream physical gates remain `OPEN`, `BLOCKED`, or exploratory toy scaffolds.

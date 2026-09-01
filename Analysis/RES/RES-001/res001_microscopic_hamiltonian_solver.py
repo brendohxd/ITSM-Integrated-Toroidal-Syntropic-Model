@@ -1,20 +1,19 @@
 #!/usr/bin/env python3
-"""RES-001: Microscopic System-Bath Hamiltonian & Quantum Lindblad Reduction Solver.
+"""QUARANTINED SCRIPT — PHENOMENOLOGICAL LINDBLAD TOY MODEL.
 
-Formulates the open-quantum-system dynamics from an explicit microscopic Hamiltonian:
-  H_total = H_S + H_B + H_SB
-where:
-  H_S = hbar * omega_0 * a0_dag * a0 + (hbar * U / 2) * a0_dag^2 * a0^2 + hbar * omega_1 * a1_dag * a1
-  H_B = sum_q hbar * Omega_q * bq_dag * bq
-  H_SB = sum_q hbar * g_q (a0_dag * bq + a0 * bq_dag)
-
-Evaluates:
-  1. Microscopic Born-Markov reduction with Drude-Lorentz spectral density J(omega).
-  2. Liouvillian superoperator spectrum and unique steady-state density matrix rho_SS.
-  3. Strict CPTP invariants (Hermiticity, Unit Trace, Complete Positivity).
-  4. Second Law compliance via Quantum Spohn Inequality (sigma >= 0).
-
-Complies strictly with GEMINI.md Rules 1, 3, 4, 6 (Fail-closed, no smuggled numbers).
+DISCLAIMER / AUDIT NOTICE (2026-09-01):
+  This script is QUARANTINED as a phenomenological toy model, NOT a microscopic derivation
+  from an underlying quantum-gravity bath Hamiltonian.
+  
+  Audit findings:
+  1. The script directly inserts phenomenological Lindblad pump/loss rates rather than deriving
+     them from a microscopic bath Hamiltonian or Drude-Lorentz spectral density.
+  2. Obtaining a positive steady-state density matrix does not verify complete positivity of the
+     dynamical map itself.
+  3. The entropy production calculation uses a hand-written particle-flux expression rather than
+     the true Quantum Spohn functional.
+  
+  Do NOT cite as a derived open-system reservoir Hamiltonian. Gate RES-001 remains OPEN / SCAFFOLD.
 """
 
 import json

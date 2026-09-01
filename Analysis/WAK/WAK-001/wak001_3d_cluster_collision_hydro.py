@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
-"""WAK-001: 3D Relativistic Hydrodynamic Cluster Collision & Causal Lensing Solver.
+"""QUARANTINED SCRIPT — EXPLORATORY KINEMATIC BALLISTIC TOY MODEL.
 
-Exact analytical Fourier-Spectral matrix propagator for the 3D time-dependent causal wave equation:
-  (1/c_s^2) d^2 psi/dt^2 + (1/tau_W) d psi/dt - nabla^2 psi = 4pi G V (rho_* + rho_g)
-
-Simulates the supersonic Bullet Cluster merger (1E 0657-56) with:
-  - Ballistic collisionless stellar/galaxy component
-  - Shock-decelerated ICM gas component
-  - Retarded vacuum wave response solved via exact matrix exponential propagator
-
-Complies strictly with GEMINI.md Rules 1, 3, 4, 6 (Fail-closed, no smuggled numbers).
+DISCLAIMER / AUDIT NOTICE (2026-09-01):
+  This script is QUARANTINED as an exploratory kinematic toy, NOT a full 3D hydrodynamic
+  gravitational collision or lensing solver.
+  
+  Audit findings:
+  1. Prescribes rigid ballistic centers with an arbitrary drag rule rather than solving fluid
+     Euler/Navier-Stokes equations, pressure gradients, shocks, or self-consistent gravity.
+  2. Constructs pseudo-convergence by adding projected baryonic surface density directly
+     to 1.8 * Sigma_psi with incompatible physical dimensions.
+  3. The 20.91 kpc offset is a single coarse-grid peak picked at one snapshot without resolution
+     or mass-model parameter studies.
+  
+  Do NOT cite as a derived cluster merger solution. Gate WAK-001 remains OPEN / SCAFFOLD.
 """
 
 import json

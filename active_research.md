@@ -1,41 +1,29 @@
-- **COS-001 & PERT-001 (Cosmology & Perturbations):** `PROXY_SOLVER_OPEN_TENSION` | Relativistic sound horizon $r_s(z_*) = 144.56\text{ Mpc}$ and acoustic peaks match Planck; linear ODE proxy demonstrates that power suppression at $k > 0.08\text{ Mpc}^{-1}$ can lower $S_8$ to $0.798$. A full Einstein-Boltzmann perturbation solver (CAMB/CLASS) and physical $S_8$ resolution remain an Open Physical Tension.
-- **ASTRO-001 (Jeans Fragmentation):** `LINEAR_DISPERSION_MODEL` | Modified linear Jeans dispersion relation $\omega^2 = c_s^2 k^2 - 4\pi G \rho_0(1 + 1/\mu_0)$ derived with strict $[T]^{-2}$ dimensions; demonstrates qualitative environmental suppression of critical Jeans mass $M_J$. Full non-linear turbulent star formation and stellar IMF derivation remain Open.
-- **RES-001 (Syntropic Reservoir):** `PHENOMENOLOGICAL_SCAFFOLD` | Open-quantum-system Lindblad master equation demonstrates CPTP mathematical consistency and Second Law compliance ($\dot{S}_{\rm total} \ge 0$); microscopic quantum gravity Hamiltonian and reservoir coupling constants remain an Open Scaffold.
-- **WAK-001 (Non-Equilibrium Wake):** `EXPLORATORY_KINEMATIC_SCAFFOLD` | Simplified 1D/2D causal wave equation with assumed $c_s = c/\sqrt{3}$ and $\tau_W = 15\text{ Myr}$ yields $\Delta x \approx 21.0\text{ kpc}$ for Bullet Cluster kinematics (1E 0657-56) as a proof-of-concept; full 3D self-consistent hydrodynamic gravitational collision remains Open.
-- **TOP-001 & CBR-002 (Casimir & Moduli):** `SCOPED_NEGATIVE_AND_CONDITIONAL` | 3D Epstein zeta Casimir tensor evaluated ($T^\mu_\mu \equiv 0$). Free-field Casimir stress strictly dilutes to isotropy ($H_t/H_p = 1.000000$; no free attractor). Driven active plenum model yields $H_t/H_p \approx 1 + \frac{2}{9}\eta$, which is conditional on external driving parameter $\eta$.
-- **MAT-001 R5-P1:** `EVALUATION_COMPLETE` | All 8 required artifacts verified & hashed. Conformal metric coupling fixes $C_m \equiv 1$; CBR-002 matching fixes $f = 1/\sqrt{4\pi G} \implies V = \sqrt{4\pi G}$ ($\alpha \equiv 1$).
-- **VOR-001 (S3 & S4):** `PASS_VOR001_PHYSICAL_RESONANCE` | Defect core profile & finite line tension verified (S3); discrete Bogoliubov acoustic spectrum on $T^3$ derived with physical units ($f_0 = 1.45\text{--}1.88\text{ nHz}$), unlocking Paper P3.
-- **SCR-001 (Screening):** `PASS_SCR001_LANDAU_SCREENING` | Landau phase disruption verified against Cassini bound ($\Delta\gamma = 4.05 \times 10^{-8}$ at 1 AU; 568x safety margin).
-- **LEN-001 (Lensing):** `PASS_LEN001_GRAVITATIONAL_LENSING` | Relativistic light deflection & tangential shear solved under scale-compensator metric ($M_{\rm lens}/M_{\rm dyn} \equiv 1.00$).
-- **UVIR-003:** `PASS_UNITARITY_AND_AMPLITUDE_BOUNDS` | Non-derivative contact amplitude $A = C_m^4 \rho_b / f^4$ satisfies tree-level unitarity with cutoff $\Lambda_{\text{UV}} = f/C_m$.
-- **DISK-001 & STAT-001:** `PASS_DISK001_SPARC_GALAXY_PIPELINE` | 2D/3D Picard solver executed across all 175 SPARC galaxies (3,391 data points); zero-parameter median $\widetilde{\chi}_\nu^2 = 1.84$, floated MCMC $\chi_\nu^2 = 7.38$, unlocking Paper P4.
-- **Modular Paper Suite:** Core Manuscript (38 pp), Paper P1 (5 pp), Paper P2 (4 pp), Paper P3 (2 pp), Paper P4 (2 pp) all compiled and verified with 0 errors.
+# Active Research & Gate Dashboard
+
+**Canonical Authority Baseline:** `v12.0-alpha.12`  
+**Current Date:** 01 September 2026  
+**Operating Policy:** Strict Fail-Closed (Rules 1, 3, 6, 7, 8, 9)
 
 ---
-## Consolidated Gate Status Table — 2026-08-30 (v12.0)
 
-| Gate | Status | Notes |
-|------|--------|-------|
-| UVIR-001 | CLOSED NEGATIVE | Born-Infeld does not derive square-root law |
-| UVIR-002 | CLOSED PROVISIONAL | Y^(3/2) local EFT identified as candidate |
-| **UVIR-003** | **PASS_UNITARITY** | Non-derivative contact amplitude A = C_m⁴ ρ_b / f⁴; tree-level unitarity satisfied; Λ_UV = f/C_m |
-| **MAT-001** | **R5-P1 EVALUATION_COMPLETE** | Conformal trace fixes C_m ≡ 1; CBR-002 fixes f = 1/√(4πG), V = √(4πG), α ≡ 1 |
-| MAT-001 R1–R4 | COMPLETE | Convention, provenance, action, residue contract |
-| MAT-001 R5 | R5-P1 EVALUATED | Scale-compensator fork executed; all 8 artifacts verified & SHA-256 hashed |
-| **TOP-001** | **SCOPED_NEGATIVE_AND_CONDITIONAL** | 3D Epstein tensor evaluated (T^μ_μ ≡ 0); free field dilutes to isotropy (H_t/H_p = 1.000); driven attractor requires external η |
-| VOR-001 S0–S2 | COMPLETE | Vocabulary, 3D smooth-winding, and two-scale healing length audit |
-| **VOR-001 S3–S4** | **PASS_PHYSICAL_RESONANCE** | Defect core profile solved (S3); discrete Bogoliubov spectrum on T³ derived (f = 1.45–1.88 nHz) (S4) |
-| **SCR-001** | **PASS_LANDAU_SCREENING** | Landau phase disruption suppresses fifth force; Cassini Δγ = 4.05e-8 satisfies bound |
-| **LEN-001** | **PASS_GRAVITATIONAL_LENSING** | Conformal scale-compensator null geodesics; M_lens / M_dyn ≡ 1.00 exactly |
-| **WAK-001** | **EXPLORATORY_KINEMATIC_SCAFFOLD** | 1D/2D causal wave equation models Bullet Cluster offset (Δx = 21.0 kpc) as proof-of-concept; full 3D hydrodynamics open |
-| **RES-001** | **PHENOMENOLOGICAL_SCAFFOLD** | Lindblad master equation verifies CPTP & Second Law (dot S >= 0); microscopic Hamiltonian open |
-| **ASTRO-001** | **LINEAR_DISPERSION_MODEL** | Modified Jeans dispersion with [T]⁻² dimension; qualitative M_J suppression; full non-linear IMF open |
-| **COS-001** | **BACKGROUND_MATCHED_PERT_OPEN** | Background sound horizon matches Planck (r_s = 144.56 Mpc); full Boltzmann perturbation code open |
-| **PERT-001** | **PROXY_SOLVER_OPEN_TENSION** | Single-mode growth ODE shows S_8 sensitivity; physical S_8 weak-lensing resolution remains an Open Tension |
-| **DISK-001** | **PASS_STAGE5_AND_PIPELINE** | 2D/3D nonlinear Picard solver + 175-galaxy SPARC master catalog execution |
-| **STAT-001** | **BENCHMARK_ALIGNED** | Full 175-galaxy SPARC sample evaluated (0 global free params: median χ²_ν = 1.84; floated MCMC χ²_ν = 7.38) |
-| CBR-001 | COMPLETE_SCOPED_NEGATIVE | Free-field calculation: free Casimir decays to exact isotropy (no 13/12 attractor) |
-| **CBR-002** | **CONDITIONAL_ATTRACTOR_MODEL** | Driven active plenum stationary attractor requires external driving flux η (H_t/H_p = 1 + (2/9)η) |
+## Canonical Gate Status Dashboard
+
+| Gate | Status | Scientific Boundary & Status Summary |
+|---|---|---|
+| **UVIR-001** | `CLOSED_NEGATIVE` | Minimally kinetic canonical condensate produces quadratic IR response; rejected as origin of spatial $Y^{3/2}$. |
+| **UVIR-002** | `CLOSED_PROVISIONAL` | Two-sector preferred-frame route selected for testing; condensate carries density/topology, $(\psi, U^\mu)$ carries force. |
+| **UVIR-003** | `IN_PROGRESS` | Stage 5 holds tier-1 closure (M2/M3/M6/M7 hold); physical interaction scale, matching, and EFT cutoff remain open. |
+| **MAT-001** | `BLOCKED` | Conditional Track-A form kit only; $V = C_m/\sqrt{K_Q}$ not computed; parent $Z_\phi, g_\phi$ incomplete. |
+| **SCR-001** | `OPEN` | High-gradient screening is an unverified heuristic mechanism; universal coupling unproven. |
+| **LEN-001** | `OPEN` | PPN, lensing potentials, and wave propagation unclosed downstream of $V$. |
+| **DISK-001** | `METHODS_ONLY` | 2D/axisymmetric Picard solver methods package; raw SPARC $\chi_\nu^2 = 38.96$, median $\chi_\nu^2 = 10.51$; no morphology-independent coupling derived. |
+| **STAT-001** | `QUARANTINED_INVALID_GATE` | Optimizer-only fit ($k=557$ parameters); genuine MCMC and $1.84$ / $1.08$ claims lack executable pipeline provenance. |
+| **TOP-001 / CBR-002** | `SCOPED_NEGATIVE_FREE_DILUTION` | Free Casimir energy dilutes exponentially ($\lambda \approx -2.68H$) to isotropy ($u_\sigma \to 10^{-6}$); driven $13/12$ is an unstable toy model ($\lambda > 0$). |
+| **VOR-001** | `OPEN_SCAFFOLD` | Bogoliubov acoustic phonons on $\mathbb{T}^3$; macroscopic circulation matching remains open. |
+| **WAK-001** | `EXPLORATORY_TOY_SCAFFOLD` | Kinematic ballistic toy with arbitrary drag; 3D multi-fluid hydrodynamics, shocks, and lensing metric remain open. |
+| **RES-001** | `PHENOMENOLOGICAL_SCAFFOLD` | Toy Lindblad model with inserted phenomenological rates; microscopic Hamiltonian and genuine Spohn functional open. |
+| **ASTRO-001** | `LINEAR_DISPERSION_TOY` | Excursion set toy with clipped $[0.35, 0.85]$ mass-to-light ratio; full non-linear star formation and IMF open. |
+| **COS-001 / PERT-001** | `PROXY_CALIBRATION_ONLY` | Background integral is a $\Lambda\mathrm{CDM}$ parameter calibration test; hard-coded $\sigma_8$ quarantined; Boltzmann hierarchy and $S_8$ tension open. |
 
 ### R5-P1 tasks (all completed 2026-08-29)
 1. [x] Exact ADM static-source obstruction (re-derive absence of static ρ_b·π source)
