@@ -116,14 +116,28 @@ source is more precisely
  \equiv\frac{\hbar c}{L_\star^4}a^{-4}F_\Pi(r).
  \label{eq:casimir-pi-scaling}
 \end{equation}
-\subsection{Coupled moduli dynamics and driven non-equilibrium solutions}
+\subsection{Free dilution and the driven fixed-point obstruction}
 
-To rigorously test whether compact $\Tthree$ moduli can self-consistently sustain directional expansion, gate TOP-001 / CBR-002 integrates the full coupled Einstein--Raychaudhuri--moduli system across cosmic time ($z=1000 \to 0$):
-\begin{align}
- \frac{\dd\beta_+}{\dd N} &= u_\sigma, \label{eq:moduli-beta-dot}\\
- \frac{\dd u_\sigma}{\dd N} &= -\left(3 + \frac{\dd\ln H}{\dd N}\right) u_\sigma - \frac{1}{6H^2}\frac{\partial V_{\rm Cas}}{\partial\beta_+} + \eta_{\rm pump}, \label{eq:moduli-u-dot}
-\end{align}
-where $\beta_+ = \frac{1}{2}\ln(a_t/a_p)$ is the biaxial shape modulus and $u_\sigma = \sigma / (\sqrt{6}H)$ is the normalized shear variable.
-Numerical integration of the un-driven system ($\eta_{\rm pump}=0$) reveals that free Casimir stress ($\Delta\rho_{\rm Cas} \propto a^{-4}\sinh(2\beta_+)$) dilutes exponentially faster than dust matter ($\propto a^{-3}$) or dark energy ($\propto a^0$). The spatial shear decays with Lyapunov exponent $\lambda \approx -2.68 H$, reaching $u_\sigma(z=0) = 1.29\times 10^{-6}$ and $H_t/H_p = 1.00000387$. This proves a rigorous \textit{Scoped Negative} result: free Casimir stress cannot provide an anisotropic dynamical attractor.
+The canonical CBR-001 result is a scoped negative: its declared free Casimir
+source redshifts as $a^{-4}$ and does not provide a persistent anisotropic
+attractor.  A later driven implementation must not be used to overwrite that
+result without a covariant source and complete Einstein equations.
 
-Conversely, sustaining the historical ratio $H_t/H_p = 13/12 \approx 1.0833$ requires an active, continuous syntropic energy-momentum throughput parameter $\eta_{\rm pump} \approx 0.375$. This establishes the driven $13/12$ cosmology as a \textit{Conditional Model} dependent upon the microscopic derivation of the reservoir pump current $Q_{\rm syn}^\mu$.
+The repaired TOP-001 audit tests the specific phase-space ansatz introduced by
+the c50 implementation.  With $u=\dd\beta/\dd N=2\eta/27$ and the stated
+biaxial map,
+\begin{equation}
+ \frac{H_t}{H_p}=\frac{1+u}{1-2u}.
+ \label{eq:driven-ratio-audit}
+\end{equation}
+A modulus fixed point requires both $u=0$ and $\dd u/\dd N=0$.  Thus no
+nonzero $\eta$ in this ansatz is a stationary modulus, regardless of a
+Jacobian evaluated after the fact.  At $\eta=0.375$, the displayed ratio is
+$1.088235\ldots$, not $13/12$.  Solving the algebraic map for the historical
+ratio instead gives $\eta=27/76$ and $u=1/38$, which accumulates a finite
+modulus drift from $z=1000$ to the present.
+
+This rejects the advertised stationary driven attractor.  A nonzero
+directional ratio may only be investigated as a conditional scaling solution
+after an action-derived anisotropic source, its conservation law, and the full
+background dynamics have been supplied.  It is not a topological prediction.

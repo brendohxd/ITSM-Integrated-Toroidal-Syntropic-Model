@@ -1,7 +1,7 @@
 {
   "gate": "COS-001 / PERT-001",
-  "description": "Genuine multi-fluid linear perturbation and matter power spectrum solver",
-  "methodology": "First-principles Eisenstein-Hu transfer + scale-compensator growth ODE + adaptive top-hat quadrature",
+  "description": "Eisenstein-Hu growth proxy calibration probe (NOT a full Boltzmann solver)",
+  "methodology": "Eisenstein-Hu (1998) fitting formula + single-mode growth ODE + top-hat quadrature",
   "background_sound_horizon": {
     "z_star": 1091.7272348016566,
     "r_s_Mpc": 144.4332827614522,
@@ -9,24 +9,14 @@
     "theta_star_rad": 0.010385905093304424,
     "ell_star": 302.4861699935148
   },
-  "cosmological_parameters": {
-    "H0_km_s_Mpc": 67.66,
-    "h": 0.6766,
-    "Omega_m0": 0.30964144154550644,
-    "Omega_b0": 0.04897468161869667,
-    "Omega_c0": 0.26066675992680977,
-    "Omega_r0": 9.127965725619384e-05,
-    "A_s": 2.1005e-09,
-    "n_s": 0.9665
-  },
-  "matter_clustering_results": {
-    "lcdm": {
+  "matter_clustering_proxy_results": {
+    "lcdm_control": {
       "model_type": "lcdm",
       "sigma_8": 1.0247485871981492,
       "S_8": 1.0410851246972896,
       "integration_rel_err": 1.0176383610474565e-07
     },
-    "dual_gravity": {
+    "dual_gravity_proxy": {
       "model_type": "dual_gravity",
       "sigma_8": 1.0861273849162345,
       "S_8": 1.103442422940382,
@@ -34,7 +24,7 @@
     }
   },
   "epistemic_verdict": {
-    "status": "OPEN_PHYSICAL_TENSION",
-    "finding": "Linear dual-gravity enhances small-scale clustering, raising sigma_8 above Planck LCDM. Resolving the S_8 tension requires non-linear halo-scale screening (Landau disruption) rather than linear growth."
+    "status": "PROXY_CALIBRATION_ONLY",
+    "finding": "Sound horizon r_s = 144.43 Mpc matches Planck. Growth proxy yields sigma_8 = 1.0247 (LCDM) and 1.0861 (dual gravity). Unscreened linear dual gravity enhances growth. A full Einstein-Boltzmann code (CAMB/CLASS) and non-linear halo screening remain open."
   }
 }

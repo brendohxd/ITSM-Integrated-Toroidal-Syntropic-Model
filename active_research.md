@@ -16,42 +16,41 @@
 | **MAT-001** | `BLOCKED` | Conditional Track-A form kit only; $V = C_m/\sqrt{K_Q}$ not computed; parent $Z_\phi, g_\phi$ incomplete. |
 | **SCR-001** | `OPEN` | High-gradient screening is an unverified heuristic mechanism; universal coupling unproven. |
 | **LEN-001** | `OPEN` | PPN, lensing potentials, and wave propagation unclosed downstream of $V$. |
-| **DISK-001** | `METHODS_ONLY` | 2D/axisymmetric Picard solver methods package; raw SPARC $\chi_\nu^2 = 38.96$, median $\chi_\nu^2 = 10.51$; no morphology-independent coupling derived. |
-| **STAT-001** | `QUARANTINED_INVALID_GATE` | Optimizer-only fit ($k=557$ parameters); genuine MCMC and $1.84$ / $1.08$ claims lack executable pipeline provenance. |
-| **TOP-001 / CBR-002** | `SCOPED_NEGATIVE_FREE_DILUTION` | Free Casimir energy dilutes exponentially ($\lambda \approx -2.68H$) to isotropy ($u_\sigma \to 10^{-6}$); driven $13/12$ is an unstable toy model ($\lambda > 0$). |
+| **DISK-001** | `METHODS_ONLY` | Conditional AQUAL/Picard tooling remains methods-only. The repaired algebraic SPARC comparator uses outcome-independent $Q\in\{1,2\}$ and $i\ge30^\circ$ cuts; on 152 galaxies its profiled raw $\chi_\nu^2$ is 10.86 for declared $C=1$ and 25.70 for historical $C=2/3$. Neither is an ITSM prediction; no morphology-independent coupling is derived. |
+| **STAT-001** | `NOT_STARTED_AS_CLOSED_GATE` | The invalid optimizer/MCMC claims are quarantined. The repaired run is explicitly optimization-only, separates raw $\chi^2$ from prior penalty, performs no posterior sampling, and cannot open STAT-001 before MAT/DISK prerequisites. |
+| **TOP-001 / CBR-002** | `SCOPED_NEGATIVE_FREE_DILUTION` | Canonical CBR-001 retains the free-dilution negative result. The repaired c50 claim audit proves the advertised driven state is not stationary for nonzero $\eta$; $\eta=0.375$ gives the algebraic ratio 1.0882, while $13/12$ would require $\eta=27/76$, still with nonzero $\dot\beta$. |
 | **VOR-001** | `OPEN_SCAFFOLD` | Bogoliubov acoustic phonons on $\mathbb{T}^3$; macroscopic circulation matching remains open. |
-| **WAK-001** | `EXPLORATORY_TOY_SCAFFOLD` | Kinematic ballistic toy with arbitrary drag; 3D multi-fluid hydrodynamics, shocks, and lensing metric remain open. |
-| **RES-001** | `PHENOMENOLOGICAL_SCAFFOLD` | Toy Lindblad model with inserted phenomenological rates; microscopic Hamiltonian and genuine Spohn functional open. |
-| **ASTRO-001** | `LINEAR_DISPERSION_TOY` | Excursion set toy with clipped $[0.35, 0.85]$ mass-to-light ratio; full non-linear star formation and IMF open. |
-| **COS-001 / PERT-001** | `PROXY_CALIBRATION_ONLY` | Background integral is a $\Lambda\mathrm{CDM}$ parameter calibration test; hard-coded $\sigma_8$ quarantined; Boltzmann hierarchy and $S_8$ tension open. |
+| **WAK-001** | `KINEMATIC_RETARDED_FIELD_CONTROL_ONLY` | A dimensionally consistent 3D damped scalar-field control now runs with prescribed sources. It is not hydrodynamics, a cluster simulation, or metric lensing; the matter coupling, shocks, and photon observable remain open. |
+| **RES-001** | `PHENOMENOLOGICAL_TWO_BATH_GKSL_CONTROL_ONLY` | A paired-rate two-thermal-bath GKSL control satisfies local detailed balance and sampled Spohn checks. Its bath spectra and temperatures are inputs; no microscopic ITSM Hamiltonian or $Q^\mu$ is derived. |
+| **ASTRO-001** | `NEWTONIAN_SINGLE_SCALE_LOGNORMAL_CONTROL_ONLY` | The stated cloud gives a Newtonian thermal Jeans mass of 47.87 $M_\odot$; the unclipped single-scale lognormal control yields a raw high-mass slope $\Gamma=+0.775$, not Salpeter. No ITSM IMF or mass-to-light ratio is computed. |
+| **COS-001 / PERT-001** | `PROXY_CALIBRATION_ONLY` | Unmodified CAMB $\Lambda$CDM gives $\sigma_8=0.809386$ and $r_*=144.575$ Mpc for the declared inputs. No ITSM Boltzmann hierarchy, transfer functions, or $S_8$ prediction is computed. |
 
-### R5-P1 tasks (all completed 2026-08-29)
-1. [x] Exact ADM static-source obstruction (re-derive absence of static ρ_b·π source)
-2. [x] Covariant compensator + finite-density parent action (one scale f, no MOND target import)
-3. [x] Symmetry-breaking and physical-DOF ledger
-4. [x] Background equations and constrained scalar reduction
-5. [x] Signed matter-to-physical-mode residue (project AFTER diagonalisation)
-6. [x] Stability and cutoff/strong-coupling domain
-7. [x] Screening, PPN, lensing and GW tests
-8. [x] Conformal weight audit (C_m ≡ 1.0 proven)
-All artifacts SHA-256 hashed in `Theory/Gates/MAT-001/MAT-001_R5_P1_SPEC.md`.
+### Quarantined 29 August reintegration assertions
 
-### UVIR-003 tasks (completed 2026-08-29)
-1. [x] Tree-level 2→2 amplitude: A(s,t,u) = ρ_b C_m⁴/f⁴ (momentum-independent)
-2. [x] Partial-wave unitarity: |a₀| ≤ 1/2 trivially satisfied (non-derivative contact)
-3. [x] EFT cutoff: Λ_UV = f/C_m declared
+An earlier reintegration package marked R5-P1, UVIR-003, screening, lensing and
+SPARC tasks complete. Those checkmarks are **not accepted as parent-gate
+closures**. The invariant residue remains uncomputed, the quoted contact term
+is not the complete constrained physical amplitude, and downstream proxy runs
+cannot inherit a pass. SHA-256 integrity proves file identity, not physics.
 
-### Remaining open gates (next critical path)
-- SCR-001: Formal screening — unify Landau disruption with Cassini PPN bounds
-- LEN-001: Gravitational lensing predictions from AQUAL field equation
-- 3D Epstein: Full T³ Casimir backreaction to verify/correct 13/12 ratio
-- Galaxy-by-galaxy DISK-001: Connect Picard solver to individual SPARC profiles
+### Current Tier-1 critical path
+
+1. Run the one bounded PKM1 metric-hosted condensate-foliation parent test
+   specified in `Theory/Core/ITSM_PKM1_BROAD_ROUTE_DECISION_2026-08-25.md`.
+2. Complete the ADM/Dirac count and constraint-rank analysis on both $Y>0$ and
+   $Y=0$, then derive the reduced Hamiltonian, characteristics, cutoff and
+   source response without importing MOND targets.
+3. Reject or freeze PKM1 on any kill criterion. Only an A0--A6 survivor may
+   proceed to PPN, Shapiro delay, lensing, GW and topology/winding tests.
+4. Keep DISK, STAT and cosmology as comparator/methods work until those
+   upstream tests close.
 
 ---
-### ⚠️ Historical Archive: Gate Dashboard as of 2026-08-07 (SUPERSEDED)
-> The following section is retained as a historical record. It reflects the gate
-> statuses **before** the v12.0 recovery sprint (2026-08-29) resolved MAT-001,
-> UVIR-003, DISK-001, and STAT-001. **Do not use these statuses for current work.**
+### Historical Archive: Gate Dashboard as of 2026-08-07 (provenance only)
+> The following section is retained as a historical record. It does not show
+> the current September boundary and does not establish that any later sprint
+> resolved MAT-001, UVIR-003, DISK-001, or STAT-001. **Do not use these statuses
+> for current work.**
 ---
 ## 7 August 2026 — Active MAT R5-P1 research fork
 - [x] Prove independent C_m and K_Q underdetermine V.

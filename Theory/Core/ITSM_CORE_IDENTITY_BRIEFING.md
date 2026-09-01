@@ -47,7 +47,6 @@ on its checklist is satisfied. No shortcut, no override.
 ### Current Gate Statuses (authoritative source: `active_research.md`)
 
 | Gate | Status | Key Note |
-| Gate | Status | Key Note |
 |------|--------|----------|
 | UVIR-001 | CLOSED NEGATIVE | Born-Infeld does not derive square-root law |
 | UVIR-002 | CLOSED PROVISIONAL | Y^(3/2) local EFT identified as candidate |
@@ -59,12 +58,12 @@ on its checklist is satisfied. No shortcut, no override.
 | VOR-001 | OPEN SCAFFOLD | Bogoliubov acoustic phonons on $\mathbb{T}^3$; macroscopic circulation matching open |
 | SCR-001 | OPEN | Universal coupling unproven; Landau disruption is an unverified heuristic mechanism |
 | LEN-001 | OPEN | Lensing potentials, metric, and wave propagation unclosed downstream of $V$ |
-| DISK-001 | METHODS_ONLY | 2D/axisymmetric Picard solver methods package; raw SPARC $\chi_\nu^2 = 38.96$, median $\chi_\nu^2 = 10.51$; no morphology-independent coupling derived |
-| STAT-001 | QUARANTINED_INVALID_GATE | Optimizer-only fit ($k=557$ parameters); genuine MCMC and $1.84$ / $1.08$ claims lack executable pipeline provenance |
-| WAK-001 | EXPLORATORY_TOY | Kinematic ballistic toy with arbitrary drag; 3D multi-fluid hydrodynamics, shocks, and lensing metric remain open |
-| RES-001 | PHENOMENOLOGICAL_TOY | Toy Lindblad model with inserted phenomenological rates; microscopic Hamiltonian and genuine Spohn functional open |
-| ASTRO-001 | LINEAR_DISPERSION_TOY | Excursion set toy with clipped $[0.35, 0.85]$ mass-to-light ratio; full non-linear star formation and IMF open |
-| COS-001 / PERT-001 | PROXY_CALIBRATION_ONLY | Background integral is a $\Lambda\mathrm{CDM}$ parameter calibration test; hard-coded $\sigma_8$ quarantined; Boltzmann hierarchy and $S_8$ tension open |
+| DISK-001 | METHODS_ONLY | Conditional AQUAL/Picard methods plus a repaired algebraic SPARC comparator; no morphology-independent ITSM coupling derived |
+| STAT-001 | NOT_STARTED_AS_CLOSED_GATE | Invalid optimizer/MCMC claims quarantined; repaired comparator is optimization-only with raw likelihood separated from priors |
+| WAK-001 | KINEMATIC_RETARDED_FIELD_CONTROL_ONLY | Dimensionally consistent 3D scalar-field control with prescribed sources; no hydrodynamics, shocks, or lensing observable |
+| RES-001 | PHENOMENOLOGICAL_TWO_BATH_GKSL_CONTROL_ONLY | Detailed-balance thermal GKSL comparator; no microscopic ITSM Hamiltonian or $Q^\mu$ |
+| ASTRO-001 | NEWTONIAN_SINGLE_SCALE_LOGNORMAL_CONTROL_ONLY | Unclipped Newtonian Jeans/lognormal baseline fails to yield a Salpeter tail; no ITSM IMF or mass-to-light prediction |
+| COS-001 / PERT-001 | PROXY_CALIBRATION_ONLY | Unmodified CAMB $\Lambda$CDM reference only; no ITSM Boltzmann hierarchy, transfer functions, or $S_8$ prediction |
 
 ### Current Canonical Boundary (v12.0-alpha.12 Baseline)
 
@@ -91,18 +90,19 @@ Per `Theory/Core/ITSM_Ban_List_Reassessment_and_Frontier_Policy.md`:
 
 1. **Retain Scientific Integrity Bans (B3, B6, B10, B16):**
    - Strictly prohibit coordinate-dependent rituals (B3), causal horizon mischaracterizations (B6), 2D doughnut graphics representing $T^3$ (B10), and hyperbolic "resolves all tensions" marketing slogans (B16).
-2. **Formally Recognize Cleared Derivations (B1, B7/B8/B9, B13, B15):**
-   - B1, B7–B9, B13, and B15 are **cleared for publication** because historical shortcuts have been replaced by executable derivations ($C_m \equiv 1.0$, $f = 1/\sqrt{4\pi G}$, $\alpha \equiv 1.0$, Bogoliubov acoustic spectrum $1.45\text{--}1.88\text{ nHz}$, and the 175-galaxy SPARC Picard solver pipeline).
+2. **Retain the Derived-claim firewall (B1, B7/B8/B9, B13, B15):**
+   - These research topics may be investigated, but their historical or reintegrated numerical packaging is **not cleared as Derived**. In particular, $f$, $\alpha$, $V$, $a_0$, a physical PTA mode, and an ITSM SPARC prediction remain blocked or conditional under their parent gates.
 3. **Explicitly Protect Open Research Pathways (B12, B14):**
    - Agents and subagents MUST NOT treat investigating *driven non-linear Casimir backreaction* (`CBR-002`/`TOP-001`) or *physical star formation* (`ASTRO-001`) as forbidden research, provided all derivations obey dimensional consistency (Rule 4) and report exact measured results (Rule 1 & Rule 3).
 
 ## 7. Critical Path (Current Sprint)
 
 ```
-Active priorities:
-├─ TOP-001: Full 3D Epstein zeta Casimir tensor & moduli backreaction on T³
-├─ WAK-001: Mode-projected Green function for non-equilibrium Bullet Cluster wake
-└─ RES-001: Open-system Lindblad master equation for syntropic current Q^ν
+Active priority:
+└─ PKM1: one bounded A0–A6 metric-hosted condensate-foliation parent test
+   ├─ full ADM/Dirac count at Y>0 and Y=0
+   ├─ reduced Hamiltonian, characteristics, cutoff and source response
+   └─ only a survivor may open PPN/lensing/GW/topology tests
 ```
 
 ## 8. What Agents Must NOT Do
@@ -126,4 +126,4 @@ Active priorities:
 
 ---
 
-*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-08-30 (v12.0 downstream gate clearance).*
+*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-01 (fail-closed c50 repair; no downstream gate clearance).*

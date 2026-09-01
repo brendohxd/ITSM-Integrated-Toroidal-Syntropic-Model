@@ -1,30 +1,22 @@
 {
   "gate": "RES-001",
-  "description": "Microscopic Born-Markov master equation and Quantum Spohn entropy solver",
-  "microscopic_rates": {
-    "J_omega0": 0.019801980198019802,
-    "n_th": 1.5414940825367982,
+  "description": "Phenomenological 2-mode GKSL Lindblad master equation toy model",
+  "inserted_parameters": {
+    "T_bath": 2.0,
+    "T_syn": 10.0,
     "gamma_down": 0.3162114510431499,
     "gamma_up": 0.19179194000989083,
     "gamma_syn": 0.015
   },
-  "cptp_invariants": {
+  "steady_state_metrics": {
+    "liouvillian_nullspace_norm": 7.184363762413706e-17,
     "hermiticity_residual": 0.0,
     "trace_residual": 0.0,
     "min_eigenvalue": 0.018314149375856775,
-    "complete_positivity": true
-  },
-  "quantum_spohn_entropy": {
-    "spohn_ness_entropy_rate": 0.3314861027605185,
-    "spohn_ness_positive": true,
-    "system_entropy_rate": 0.29722016840742566,
-    "thermal_bath_entropy_rate": 0.07072329832324539,
-    "syntropic_reservoir_entropy_rate": -0.004983078986102267,
-    "total_thermodynamic_entropy_rate": 0.36296038774456874,
-    "second_law_satisfied": true
+    "cptp_verified": true
   },
   "epistemic_verdict": {
-    "status": "MICROSCOPIC_SCAFFOLD_VERIFIED",
-    "finding": "Derived microscopic Born-Markov Lindblad dissipators from Drude spectral density; proved CPTP density matrix evolution, valid Spohn NESS inequality (sigma_NESS >= 0), and Second Law compliance across the 3-sector system-bath-reservoir system."
+    "status": "PHENOMENOLOGICAL_SCAFFOLD",
+    "finding": "The 2-mode GKSL Lindblad toy model achieves an exact numerical steady state (||L(rho)||_2 = 7.14e-17) and CPTP positivity. Microscopic quantum gravity couplings remain open."
   }
 }

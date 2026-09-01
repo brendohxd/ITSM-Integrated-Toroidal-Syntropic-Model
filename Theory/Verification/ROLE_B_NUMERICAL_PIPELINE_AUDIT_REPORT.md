@@ -1,28 +1,21 @@
 # Role B: Numerical & Pipeline Auditor Report
 
 **Date:** 01 September 2026  
-**Auditor:** Role B (Numerical & Computational Pipeline Specialist)  
-**Mandate:** Verify numerical convergence, matrix eigenspaces, discrete residuals ($\varepsilon < 10^{-8}$), absence of hard-coded constants, and cryptographic integrity across all outputs.
+**Auditor Role:** Role B (Numerical & Computational Pipeline Specialist)  
+**Operating Policy:** GEMINI.md Rules 1, 3, 6, 7 (Fail-Closed Governance)  
+**Status:** Canonical Audit Record (Supersedes previous preliminary reports)
 
 ---
 
-## 1. Numerical Verification Digest
+## 1. Executable Script & Data Output Digest
 
-| Sector / Script | Output File | SHA-256 Digest | Key Numerical Metrics | Discrete Residuals / Convergence | Status |
-|---|---|---|---|---|---|
-| **`COS-001`** | `cos001_genuine_boltzmann_growth_summary.json` | `ea9680ae92b0a60bd89d2b1cb1b513c1f6674531ff31afd06240f35214298866` | $r_s(z_*) = 144.43\,\mathrm{Mpc}$, $\theta_* = 0.010386$, $\ell_* = 302.49$; $\Lambda\mathrm{CDM}$ $\sigma_8 = 1.0247$, $S_8 = 1.0411$; Dual-Gravity $\sigma_8 = 1.0861$, $S_8 = 1.1034$ | Adaptive quadrature error $< 10^{-7}$; ODE $atol = 10^{-10}$ | **VERIFIED (NO HARD-CODED CONSTANTS)** |
-| **`TOP-001`** | `top001_moduli_phase_space_summary.json` | `5bdc35cd36d4feccf824ef843b92e04329999d230830969216d5e082fec1839c` | Free dilution: $\lambda = -0.1535H$, $H_t/H_p(z=0) = 1.000000$; Driven ($\eta = 0.375$): $H_t/H_p = 1.0882$, eigenvalues $\lambda_1 = -0.1541, \lambda_2 = -2.8459$ | ODE RK45 $rtol = 10^{-9}$, $atol = 10^{-12}$ | **VERIFIED (STABLE ATTRACTOR UNDER DRIVING)** |
-| **`WAK-001`** | `wak001_retarded_wave_lensing_summary.json` | `963b23b4e73f8bafd216087d72117d9c7cd0f256cf06e0ad828fb45b0a3dba9b` | Max transient offset $\Delta x = 6.25 - 18.75\,\mathrm{kpc}$ during supersonic infall ($v = 4400\,\mathrm{km/s}$); late-time return to baryonic center | Fourier matrix exponential exact propagator (0 overflow, unconditional CFL stability) | **VERIFIED** |
-| **`RES-001`** | `res001_microscopic_lindblad_spohn_summary.json` | `c4c7c308be21b084728af13a1f92b84a3d596ba499ad0ad43f3caa600e6b78af` | $\Gamma_\downarrow = 0.3162, \Gamma_\uparrow = 0.1918, \Gamma_{\rm syn} = 0.015$; Spohn NESS $\sigma_{\rm NESS} = 0.3315 \ge 0$; Thermodynamic $\dot{S}_{\rm total} = 0.3630 \ge 0$ | Hermiticity err $= 0.00\mathrm{e}{+00}$; Trace err $= 0.00\mathrm{e}{+00}$; $\lambda_{\min} = 1.83 \times 10^{-2} > 0$ | **VERIFIED (CPTP & SECOND LAW SATISFIED)** |
-| **`ASTRO-001`** | `astro001_genuine_excursion_set_summary.json` | `f797c73a23453f42a62a20054ec13f0c251defcd1668b149fb1562c44ba30724` | HSB: $\langle M \rangle = 1.22\,M_\odot, \Upsilon_*(10\,\mathrm{Gyr}) = 4.90$; LSB: $\langle M \rangle = 0.12\,M_\odot, \Upsilon_*(10\,\mathrm{Gyr}) = 54.25$; high-mass tail exhibits single-scale Gaussian cutoff ($\Gamma = -22.6$) | Continuous integration over $M \in [0.08, 100]\,M_\odot$ without artificial clipping | **VERIFIED** |
-| **`DISK-001`** | `disk001_sparc_multitier_mcmc_summary.json` | `a297ad5d4d7b0ee1d14c8d01a38aa64c1de1905706c543440f17efed8b301ce3` | Tier 1 (rigid unfloated): global $\chi_\nu^2 = 47.20$, median $\chi_\nu^2 = 10.51$; Tier 2 (floated $\Upsilon_*$): global $\chi_\nu^2 = 11.08$, median $\chi_\nu^2 = 3.43$; Tier 3 (quality cut): global $\chi_\nu^2 = 13.89$, median $\chi_\nu^2 = 7.99$; Tier 4 ($5\,\mathrm{km/s}$ floor): global $\chi_\nu^2 = 8.79$, median $\chi_\nu^2 = 3.14$ | MCMC sampling with 4 chains $\times$ 3000 steps; Gelman-Rubin $\hat{R} = 1.000 - 1.010$ | **VERIFIED (MULTI-TIER PROVENANCE DOCUMENTED)** |
+| Script | JSON Output File | SHA-256 Digest | Status & Key Numerical Metrics |
+|---|---|---|---|
+| `Analysis/Cosmology/COS-001/cos001_genuine_boltzmann_growth_solver.py` | `cos001_genuine_boltzmann_growth_summary.json` | `68a9f5a2657b031604b651aca2bf0c687456cf90ddbeb2a44672378e3187d542` | $r_s(z_*) = 144.43\,\mathrm{Mpc}$, $\theta_* = 0.010386$, $\ell_* = 302.49$; $\Lambda\mathrm{CDM}$ $\sigma_8 = 1.0247$; Dual gravity $\sigma_8 = 1.0861$. **(Proxy Calibration Only)** |
+| `Analysis/TOP/TOP-001/top001_moduli_phase_space_analysis.py` | `top001_moduli_phase_space_summary.json` | `fa25ea4d352908b5199aff96ab09a5bef3e09258d233a89339a129e795e4a057` | Free: $\beta_+(z=0) = -9.58 \times 10^{-4}$, $H_t/H_p \to 0.998 \to 1.000$; Driven: exact $\eta = 27/76 \approx 0.355263$ achieves $H_t/H_p = 1.083333$, but $\dot\beta_+ \ne 0$. **(Scoped Negative / Conditional Toy)** |
+| `Analysis/WAK/WAK-001/wak001_retarded_wave_lensing_solver.py` | `wak001_retarded_wave_lensing_summary.json` | `2758389a33f756f232bb62b1208f0df2972da652bbebdb2544f46321cc134a91` | Transient transit offset $\Delta x = 6.25\,\mathrm{kpc}$ (at $t=10\,\mathrm{Myr}$); late-time offset $18.75\,\mathrm{kpc}$ ($t=50\,\mathrm{Myr}$). **(Exploratory Kinematic Toy)** |
+| `Analysis/RES/RES-001/res001_microscopic_lindblad_spohn_solver.py` | `res001_microscopic_lindblad_spohn_summary.json` | `4ffa7e89a353ec503b762ff517b0e5bae4aad07dc3028b979c3be56ecb5bbab5` | Nullspace residual $\|\mathcal{L}\rho_{\rm ss}\|_2 = 7.18 \times 10^{-17}$; Hermiticity err $= 0.00\mathrm{e}{+00}$; $\lambda_{\min} = 1.83 \times 10^{-2} > 0$. **(Phenomenological Scaffold)** |
+| `Analysis/Astro/ASTRO-001/astro001_genuine_excursion_set_imf.py` | `astro001_genuine_excursion_set_summary.json` | `7f255d2da9add0f3e66d9701def3c960f41ed6459ea2f80192c69b9ac1ed049e` | HSB: $\langle M \rangle = 1.22\,M_\odot, \Upsilon_*(10\,\mathrm{Gyr}) = 4.90, \Gamma = -22.64$; LSB: $\langle M \rangle = 0.12\,M_\odot, \Upsilon_*(10\,\mathrm{Gyr}) = 54.25, \Gamma = +0.505$. **(Linear Dispersion Toy)** |
+| `Analysis/DISK/DISK-001/disk001_sparc_multitier_mcmc_benchmark.py` | `disk001_sparc_multitier_mcmc_summary.json` | `6ac178d289dfc16f9acd1b32544f511c5d9255eae1bd880b4efe73ff92efdd46` | Tier 1 (rigid 0-param): global $\chi_\nu^2 = 47.20$, median $\chi_\nu^2 = 10.51$; Tier 2 (floated $\Upsilon_*$): global $\chi_\nu^2 = 11.08$, median $\chi_\nu^2 = 3.43$; Tier 3 (115 galaxies): global $\chi_\nu^2 = 13.89$, median $\chi_\nu^2 = 7.99$; Tier 4 ($5\,\mathrm{km/s}$ floor): global $\chi_\nu^2 = 8.79$, median $\chi_\nu^2 = 3.14$. MCMC converged on 1/5 test galaxies (UGC 2885 $\hat{R} = 1.007 < 1.05$). **(Methods Package Benchmarked)** |
 
----
-
-## 2. Computational Pipeline Integrity
-
-1. All six Python scripts run end-to-end with 0 runtime errors or warnings.
-2. Every output is directly computed by the algorithms from fundamental equations.
-3. No hard-coded `if model == ...: sigma_8 = ...` logic exists in any script.
-
-**Role B Verdict:** `NUMERICALLY_CONVERGED_AND_PROVENANCE_SEALED`.
+**Role B Summary:** All six scripts execute deterministically and generate verified JSON artifacts with matching `.sha256` sidecars.

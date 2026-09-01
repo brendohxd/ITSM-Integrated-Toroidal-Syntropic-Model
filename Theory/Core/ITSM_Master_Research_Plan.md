@@ -2,10 +2,11 @@
 
 **Status:** Canonical workflow document for the recovery era  
 **Branch:** `main` / `recovery/v12-core-architecture`  
-**v12.0 Reintegration Checkpoint:** `COMPLETE_ALIGNED`; MAT-001 R5-P1 evaluated (`C_m ≡ 1.0`, `α ≡ 1.0` derived from conformal Weyl trace and scale matching); UVIR-003 unitarity passed; VOR-001 S3/S4 passed ($f_0 = 1.45\text{--}1.88\text{ nHz}$ derived); SCR-001 Landau disruption screening passed ($\Delta\gamma = 4.05 \times 10^{-8}$ vs Cassini); LEN-001 relativistic lensing passed ($M_{\rm lens}/M_{\rm dyn} \equiv 1.00$); DISK-001/STAT-001 SPARC Picard pipeline executed across 175 galaxies; 38-page core manuscript and companion Papers P1–P4 all drafted and compiled to PDF. Active downstream priorities: TOP-001 3D Epstein tensor moduli backreaction, WAK-001 non-equilibrium wake, and RES-001 open-system master equation.  
+**Canonical Baseline:** `v12.0-alpha.12` (Fail-Closed Governance)  
+**Governance State:** MAT-001 is `BLOCKED` ($V=C_m/\sqrt{K_Q}$ not computed, $K_Q$ not derived, $f$ unconstrained); UVIR-003 is `IN_PROGRESS` (Tier-1 hold active); Stage 4A is `CLOSED`; downstream gates (SCR, LEN, DISK, COS, TOP, WAK, RES, ASTRO) remain strictly `OPEN`, `METHODS_ONLY`, or exploratory toy scaffolds. Packaging downstream claims as "Derived" is strictly forbidden until upstream gates close.
 **Authority order (highest first):**
 
-1. This plan + `ITSM_Core_Architecture.md` + `ITSM_Core_Recovery_Plan.md`  
+1. This plan + `active_research.md` + `Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md`  
 2. `ITSM_Claim_Migration_Ledger.csv`  
 3. Gate reports under `Theory/Gates/`  
 4. `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` (publication firewall)  
@@ -13,7 +14,7 @@
 6. Legacy v11 manuscript / website / Notion Hub lower sections (provenance only)
 
 If two sources conflict on **live scientific claims**, prefer (1)–(3).  
-If Notion freeze line lags Git (e.g. Hub still citing alpha.4 while repo is alpha.9), **Git freezes win**.
+If Notion freeze line lags Git (e.g. Hub still citing alpha.4 while repo is alpha.12), **Git freezes win**.
 
 ---
 

@@ -83,20 +83,28 @@ No fixed redshift law for $Q_{\rm syn}^{\nu}$ is adopted in this alpha.  Its
 background and perturbation dependence must follow from the reservoir model,
 and local decoupling must be tested rather than asserted from $\Theta\to0$.
 
-\subsection{Microscopic open-quantum Lindblad reduction}
+\subsection{Two-bath GKSL thermodynamic control}
 
-To ground the macroscopic energy-momentum throughput in fundamental open-system dynamics, gate RES-001 couples the discrete plenum condensate mode $\hat a_0$ and acoustic defect mode $\hat a_1$ to an environmental bath continuum $\hat b_q$:
+RES-001 presently supplies a finite-dimensional thermodynamic \emph{control},
+not a microscopic derivation of the ITSM reservoir.  A harmonic oscillator with
+$H=\omega\hat a^\dagger\hat a$ is coupled to two declared thermal baths,
 \begin{equation}
- \hat H_{\rm total} = \hbar\omega_0 \hat a_0^\dagger \hat a_0 + \hbar\omega_1 \hat a_1^\dagger \hat a_1 + \frac{\hbar U}{2}\hat a_0^{\dagger 2}\hat a_0^2 + \sum_q \hbar\Omega_q \hat b_q^\dagger \hat b_q + \sum_q \hbar g_q \left(\hat a_0^\dagger \hat b_q + \hat a_0 \hat b_q^\dagger\right).
-\end{equation}
-Under the standard Born--Markov reduction, the reduced density operator $\hat\rho_S(t) = \operatorname{Tr}_B(\hat\rho_{\rm total})$ satisfies the completely positive trace-preserving (CPTP) Lindblad master equation:
-\begin{equation}
- \frac{\dd\hat\rho_S}{\dd t} = -\frac{i}{\hbar}\left[\hat H_S, \hat\rho_S\right] + \gamma_{\rm syn}\mathcal D[\hat a_0^\dagger]\hat\rho_S + \gamma_{\rm diss}\mathcal D[\hat a_0]\hat\rho_S + \frac{\gamma_{\rm diss}}{2}\mathcal D[\hat a_1]\hat\rho_S,
+ \dot\rho=-i[H,\rho]+\sum_{r\in\{c,h\}}\left[
+ \gamma_r(\bar n_r+1)\mathcal D[\hat a]\rho+
+ \gamma_r\bar n_r\mathcal D[\hat a^\dagger]\rho\right],
  \label{eq:lindblad-master}
 \end{equation}
-where $\mathcal D[\hat A]\hat\rho = \hat A\hat\rho\hat A^\dagger - \frac{1}{2}\{\hat A^\dagger\hat A, \hat\rho\}$.
-Direct diagonalization of the $1296\times1296$ Liouvillian superoperator proves the existence of a unique non-equilibrium steady state (NESS) with nullspace residual $2.60\times10^{-17}$, exact trace preservation $\operatorname{Tr}(\hat\rho_{\rm SS})\equiv 1.0$, and complete positivity $\lambda_{\min}\ge 0$. Furthermore, the net entropy production rate satisfies the Quantum Spohn Inequality:
-\begin{equation}
- \sigma = -\operatorname{Tr}\left(\mathcal L[\hat\rho]\left[\ln\hat\rho - \ln\hat\rho_{\rm SS}\right]\right) \ge 0,
-\end{equation}
-confirming that observable vacuum syntropy operates in rigorous compliance with the Second Law of Thermodynamics. While mathematically self-consistent, this sector is classified as a \textit{Phenomenological Scaffold} until the microscopic gravitational couplings $g_q$ are independently derived.
+where $\bar n_r=(e^{\omega/T_r}-1)^{-1}$ and each paired rate satisfies local
+detailed balance.  The spectral densities, bath temperatures and oscillator
+truncation are declared comparator inputs; they do not follow from an ITSM
+action.  The primary cutoff-$12$ run has a positive steady-state density
+matrix, zero energy-balance residual at reported precision, and a sampled
+steady-state entropy-production rate $0.02551$ in units $\hbar=k_B=1$.
+Thirty-two deterministic full-rank test states give nonnegative sampled Spohn
+production.  This is a numerical consistency check, not a proof over all
+states.
+
+Neither a covariant plenum--matter action nor a mapping from this oscillator
+heat current to $Q_{\rm syn}^{\nu}$ is available.  Consequently the result
+does not establish microscopic syntropic throughput, cosmological exchange, or
+a second-law statement for the physical ITSM reservoir.
