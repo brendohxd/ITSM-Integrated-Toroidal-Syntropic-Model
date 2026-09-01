@@ -1,0 +1,64 @@
+{
+  "gate": "COS-001 / PERT-001",
+  "title": "Full Relativistic Einstein-Boltzmann Perturbation Hierarchy Solver",
+  "timestamp": "2026-09-01T12:00:00Z",
+  "epistemic_status": "PROXY_SOLVER_OPEN_TENSION",
+  "background_cmb": {
+    "z_star": 1091.7272348016566,
+    "r_s_mpc": 144.55803339779075,
+    "D_M_mpc": 13906.859877914485,
+    "theta_star_rad": 0.010394728548848304,
+    "ell_A": 302.2294078028492,
+    "ell_1": 221.23192651168563,
+    "ell_2": 538.5728047046773,
+    "ell_3": 814.2060246208757
+  },
+  "perturbation_results": {
+    "dual_gravity": {
+      "model_type": "dual_gravity",
+      "sigma_8": 0.8632,
+      "S_8": 0.8769611306279667,
+      "k_sample": [
+        0.001,
+        0.004951500669473132,
+        0.024517358879792867,
+        0.1213977189070074,
+        0.6011008864405581
+      ],
+      "P_k_sample": [
+        30.249015309466195,
+        70.58106203772378,
+        11703724.546066165,
+        37937265602.19104,
+        107635194533652.0
+      ]
+    },
+    "standard_gr": {
+      "model_type": "standard_gr",
+      "sigma_8": 0.811,
+      "S_8": 0.8239289584560716,
+      "k_sample": [
+        0.001,
+        0.004951500669473132,
+        0.024517358879792867,
+        0.1213977189070074,
+        0.6011008864405581
+      ],
+      "P_k_sample": [
+        30.249015309466195,
+        18.879803886481668,
+        166901.00762064345,
+        532860097.8765813,
+        1510590489217.3257
+      ]
+    },
+    "open_physical_tension": {
+      "detected": true,
+      "predicted_S8": 0.8769611306279667,
+      "planck_S8": 0.832,
+      "des_y3_S8": 0.776,
+      "kids_1000_S8": 0.766,
+      "tension_summary": "Linear dual-gravity enhances small-scale power, yielding S_8 = 0.877; resolving the cosmic shear tension requires non-linear halo-model Landau screening."
+    }
+  }
+}

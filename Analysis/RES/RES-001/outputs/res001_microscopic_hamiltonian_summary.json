@@ -1,0 +1,79 @@
+{
+  "gate": "RES-001",
+  "title": "Microscopic System-Bath Hamiltonian & Quantum Master Equation Solver",
+  "timestamp": "2026-09-01T11:30:00Z",
+  "epistemic_status": "PHENOMENOLOGICAL_SCAFFOLD",
+  "parameters": {
+    "omega_0": 1.0,
+    "omega_1": 2.5,
+    "u_kerr": 0.04,
+    "fock_dim": 36
+  },
+  "verifications": {
+    "cptp_invariance_verified": true,
+    "complete_positivity_verified": true,
+    "second_law_spohn_verified": true
+  },
+  "syntropic_inflow_scan": [
+    {
+      "gamma_syn": 0.0,
+      "gamma_diss": 0.12,
+      "n0_expectation": 0.0,
+      "n1_expectation": 0.0,
+      "trace": 1.0,
+      "purity": 1.0,
+      "min_eigenvalue": 0.0,
+      "von_neumann_entropy": 1.2439402213999872e-12,
+      "spohn_entropy_production": 0.0,
+      "nullspace_residual": 0.0
+    },
+    {
+      "gamma_syn": 0.04,
+      "gamma_diss": 0.12,
+      "n0_expectation": 0.49175824175824173,
+      "n1_expectation": 0.0,
+      "trace": 1.0,
+      "purity": 0.5013736263736264,
+      "min_eigenvalue": 0.0,
+      "von_neumann_entropy": 0.9443440717466576,
+      "spohn_entropy_production": 0.0006593406593406667,
+      "nullspace_residual": 1.1277787405292384e-17
+    },
+    {
+      "gamma_syn": 0.08,
+      "gamma_diss": 0.12,
+      "n0_expectation": 1.4225563909774435,
+      "n1_expectation": 0.0,
+      "trace": 1.0,
+      "purity": 0.23849624060150382,
+      "min_eigenvalue": 0.0,
+      "von_neumann_entropy": 1.583522578173954,
+      "spohn_entropy_production": 0.023097744360902284,
+      "nullspace_residual": 2.5962963631595152e-17
+    },
+    {
+      "gamma_syn": 0.1,
+      "gamma_diss": 0.12,
+      "n0_expectation": 1.978827623988915,
+      "n1_expectation": 0.0,
+      "trace": 1.0,
+      "purity": 0.18245976897003283,
+      "min_eigenvalue": 0.0,
+      "von_neumann_entropy": 1.7447275706936467,
+      "spohn_entropy_production": 0.06042344752022169,
+      "nullspace_residual": 3.7527806648313014e-17
+    },
+    {
+      "gamma_syn": 0.115,
+      "gamma_diss": 0.12,
+      "n0_expectation": 2.3760062295367232,
+      "n1_expectation": 0.0,
+      "trace": 1.0,
+      "purity": 0.16754605510966863,
+      "min_eigenvalue": 0.0,
+      "von_neumann_entropy": 1.7891223779059808,
+      "spohn_entropy_production": 0.10311996885231639,
+      "nullspace_residual": 4.046035655711836e-17
+    }
+  ]
+}
