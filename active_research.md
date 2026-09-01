@@ -1,8 +1,8 @@
-- **COS-001 & PERT-001 (Cosmology & Perturbations):** `PASS_COS001_PERT001_BOLTZMANN_SOLVER` | Exact relativistic sound horizon $r_s(z_*) = 144.56\text{ Mpc}$ and CMB acoustic peak multipoles ($\ell_1 = 221.2, \ell_2 = 538.6, \ell_3 = 814.2$) match Planck 2018; Landau-screened dual-gravity growth reconciles the weak-lensing $S_8$ tension ($S_8 = 0.798$) between Planck ($0.832$) and KiDS/DES ($0.776$).
-- **ASTRO-001 (Jeans Fragmentation & IMF):** `PASS_ASTRO001_JEANS_FRAGMENTATION` | Modified Jeans dispersion relation $\omega^2 = c_s^2 k^2 - 4\pi G \rho_0(1 + 1/\mu_0)$ derived with strict mass dimensions $[T]^{-2}$; demonstrates environmental suppression of Jeans mass $M_J$ in low-acceleration LSB galaxies ($g_N \ll a_0$) and derives the canonical SPARC stellar mass-to-light ratio $\Upsilon_{\rm disk} \approx 0.50 M_\odot/L_\odot$ from first principles.
-- **RES-001 (Syntropic Reservoir):** `PASS_RES001_LINDBLAD_MASTER_EQUATION` | Open-quantum-system Lindblad master equation solved with exact 3-sector stress-energy conservation ($\nabla_\mu T^{\mu\nu}_{\rm total} \equiv 0$); verifies non-negative total entropy production ($\dot{S}_{\rm total} \ge 0$, Second Law compliance) and derives steady-state condensate pumping flux $\eta = Q_{\rm syn} / (H \rho_{\rm vac})$.
-- **WAK-001 (Non-Equilibrium Wake):** `PASS_WAK001_NON_EQUILIBRIUM_WAKE` | Time-dependent causal wake wave equation solved for high-velocity mergers ($v = 4500\text{ km/s}$); reproduces Bullet Cluster (1E 0657-56) weak-lensing spatial offset ($\Delta x_{\rm lens-gas} \approx 21.0\text{ kpc}$) matching empirical observations ($20\text{--}30\text{ kpc}$) without particle dark matter.
-- **TOP-001 / CBR-002:** `PASS_TOP001_3D_EPSTEIN_CASIMIR` & `PASS_TOP001_DRIVEN_MODULI_BACKREACTION` | Full 3D Epstein zeta function Casimir tensor evaluated ($T^\mu_\mu \equiv 0$); Bianchi-I Raychaudhuri dynamical backreaction solved, proving free-field isotropic decay ($H_t/H_p = 1.000000$) and deriving active syntropic plenum stationary attractor ($H_t/H_p \approx 1 + \frac{2}{9}\eta$, stable fixed point $\lambda = -3.0 H$).
+- **COS-001 & PERT-001 (Cosmology & Perturbations):** `PROXY_SOLVER_OPEN_TENSION` | Relativistic sound horizon $r_s(z_*) = 144.56\text{ Mpc}$ and acoustic peaks match Planck; linear ODE proxy demonstrates that power suppression at $k > 0.08\text{ Mpc}^{-1}$ can lower $S_8$ to $0.798$. A full Einstein-Boltzmann perturbation solver (CAMB/CLASS) and physical $S_8$ resolution remain an Open Physical Tension.
+- **ASTRO-001 (Jeans Fragmentation):** `LINEAR_DISPERSION_MODEL` | Modified linear Jeans dispersion relation $\omega^2 = c_s^2 k^2 - 4\pi G \rho_0(1 + 1/\mu_0)$ derived with strict $[T]^{-2}$ dimensions; demonstrates qualitative environmental suppression of critical Jeans mass $M_J$. Full non-linear turbulent star formation and stellar IMF derivation remain Open.
+- **RES-001 (Syntropic Reservoir):** `PHENOMENOLOGICAL_SCAFFOLD` | Open-quantum-system Lindblad master equation demonstrates CPTP mathematical consistency and Second Law compliance ($\dot{S}_{\rm total} \ge 0$); microscopic quantum gravity Hamiltonian and reservoir coupling constants remain an Open Scaffold.
+- **WAK-001 (Non-Equilibrium Wake):** `EXPLORATORY_KINEMATIC_SCAFFOLD` | Simplified 1D/2D causal wave equation with assumed $c_s = c/\sqrt{3}$ and $\tau_W = 15\text{ Myr}$ yields $\Delta x \approx 21.0\text{ kpc}$ for Bullet Cluster kinematics (1E 0657-56) as a proof-of-concept; full 3D self-consistent hydrodynamic gravitational collision remains Open.
+- **TOP-001 & CBR-002 (Casimir & Moduli):** `SCOPED_NEGATIVE_AND_CONDITIONAL` | 3D Epstein zeta Casimir tensor evaluated ($T^\mu_\mu \equiv 0$). Free-field Casimir stress strictly dilutes to isotropy ($H_t/H_p = 1.000000$; no free attractor). Driven active plenum model yields $H_t/H_p \approx 1 + \frac{2}{9}\eta$, which is conditional on external driving parameter $\eta$.
 - **MAT-001 R5-P1:** `EVALUATION_COMPLETE` | All 8 required artifacts verified & hashed. Conformal metric coupling fixes $C_m \equiv 1$; CBR-002 matching fixes $f = 1/\sqrt{4\pi G} \implies V = \sqrt{4\pi G}$ ($\alpha \equiv 1$).
 - **VOR-001 (S3 & S4):** `PASS_VOR001_PHYSICAL_RESONANCE` | Defect core profile & finite line tension verified (S3); discrete Bogoliubov acoustic spectrum on $T^3$ derived with physical units ($f_0 = 1.45\text{--}1.88\text{ nHz}$), unlocking Paper P3.
 - **SCR-001 (Screening):** `PASS_SCR001_LANDAU_SCREENING` | Landau phase disruption verified against Cassini bound ($\Delta\gamma = 4.05 \times 10^{-8}$ at 1 AU; 568x safety margin).
@@ -22,20 +22,20 @@
 | **MAT-001** | **R5-P1 EVALUATION_COMPLETE** | Conformal trace fixes C_m ≡ 1; CBR-002 fixes f = 1/√(4πG), V = √(4πG), α ≡ 1 |
 | MAT-001 R1–R4 | COMPLETE | Convention, provenance, action, residue contract |
 | MAT-001 R5 | R5-P1 EVALUATED | Scale-compensator fork executed; all 8 artifacts verified & SHA-256 hashed |
-| **TOP-001** | **PASS_TOP001_3D_EPSTEIN_CASIMIR** | Full 3D Epstein zeta tensor evaluated (T^μ_μ ≡ 0); Raychaudhuri backreaction solved with stable driven attractor |
+| **TOP-001** | **SCOPED_NEGATIVE_AND_CONDITIONAL** | 3D Epstein tensor evaluated (T^μ_μ ≡ 0); free field dilutes to isotropy (H_t/H_p = 1.000); driven attractor requires external η |
 | VOR-001 S0–S2 | COMPLETE | Vocabulary, 3D smooth-winding, and two-scale healing length audit |
 | **VOR-001 S3–S4** | **PASS_PHYSICAL_RESONANCE** | Defect core profile solved (S3); discrete Bogoliubov spectrum on T³ derived (f = 1.45–1.88 nHz) (S4) |
 | **SCR-001** | **PASS_LANDAU_SCREENING** | Landau phase disruption suppresses fifth force; Cassini Δγ = 4.05e-8 satisfies bound |
 | **LEN-001** | **PASS_GRAVITATIONAL_LENSING** | Conformal scale-compensator null geodesics; M_lens / M_dyn ≡ 1.00 exactly |
-| **WAK-001** | **PASS_WAK001_NON_EQUILIBRIUM_WAKE** | Causal wake wave equation reproduces Bullet Cluster lensing offset (Δx = 21.0 kpc) without dark matter |
-| **RES-001** | **PASS_RES001_LINDBLAD_MASTER_EQUATION** | Lindblad open-system master equation; 3-sector covariance (div T = 0) and Second Law (dot S >= 0) verified |
-| **ASTRO-001** | **PASS_ASTRO001_JEANS_FRAGMENTATION** | Modified Jeans dispersion with verified dimensions [T]⁻²; derives SPARC stellar mass-to-light ratio Υ_disk ≈ 0.50 |
-| **COS-001** | **PASS_COS001_PERT001_BOLTZMANN_SOLVER** | Background expansion + CMB acoustic peaks (ell_1 = 221.2, ell_2 = 538.6, ell_3 = 814.2) match Planck |
-| **PERT-001** | **PASS_COS001_PERT001_BOLTZMANN_SOLVER** | Screened dual-gravity growth reconciles S_8 weak-lensing tension (S_8 = 0.798) and matches BOSS DR12 RSD |
+| **WAK-001** | **EXPLORATORY_KINEMATIC_SCAFFOLD** | 1D/2D causal wave equation models Bullet Cluster offset (Δx = 21.0 kpc) as proof-of-concept; full 3D hydrodynamics open |
+| **RES-001** | **PHENOMENOLOGICAL_SCAFFOLD** | Lindblad master equation verifies CPTP & Second Law (dot S >= 0); microscopic Hamiltonian open |
+| **ASTRO-001** | **LINEAR_DISPERSION_MODEL** | Modified Jeans dispersion with [T]⁻² dimension; qualitative M_J suppression; full non-linear IMF open |
+| **COS-001** | **BACKGROUND_MATCHED_PERT_OPEN** | Background sound horizon matches Planck (r_s = 144.56 Mpc); full Boltzmann perturbation code open |
+| **PERT-001** | **PROXY_SOLVER_OPEN_TENSION** | Single-mode growth ODE shows S_8 sensitivity; physical S_8 weak-lensing resolution remains an Open Tension |
 | **DISK-001** | **PASS_STAGE5_AND_PIPELINE** | 2D/3D nonlinear Picard solver + 175-galaxy SPARC master catalog execution |
 | **STAT-001** | **BENCHMARK_ALIGNED** | Full 175-galaxy SPARC sample evaluated (0 global free params: median χ²_ν = 1.84; floated MCMC χ²_ν = 7.38) |
-| CBR-001 | COMPLETE_SCOPED_NEGATIVE | Free-field calculation: no 13/12 attractor |
-| **CBR-002** | **PASS_DRIVEN_MODULI_BACKREACTION** | Driven active plenum stationary attractor derived (H_t/H_p = 1 + (2/9)η) |
+| CBR-001 | COMPLETE_SCOPED_NEGATIVE | Free-field calculation: free Casimir decays to exact isotropy (no 13/12 attractor) |
+| **CBR-002** | **CONDITIONAL_ATTRACTOR_MODEL** | Driven active plenum stationary attractor requires external driving flux η (H_t/H_p = 1 + (2/9)η) |
 
 ### R5-P1 tasks (all completed 2026-08-29)
 1. [x] Exact ADM static-source obstruction (re-derive absence of static ρ_b·π source)
