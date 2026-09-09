@@ -1,5 +1,12 @@
 # P2 hostile internal read (Track A)
 
+> [!CAUTION]
+> **Superseded 2026-09-05.** The `GO` below is withdrawn. The Tier-1 re-audit
+> found stale artifact hashes, a Stage-2 scale-convention mismatch, an
+> underived physical mapping for `epsilon`, and overly broad free-field
+> language for an instantaneous `a^-4` stress closure. See
+> `Theory/Gates/TOP-001/P2_CBR001_TIER1_HOSTILE_REAUDIT_2026-09-05.md`.
+
 **Date:** 2026-08-01  
 **Reader role:** tier-1 referee style, claim firewall  
 **Manuscript:** `papers/P2-Rectangular-T3-Casimir/main.tex`  
@@ -7,7 +14,9 @@
 
 ## Verdict
 
-**Ready for arXiv as a technical note after minor fixes applied in this session.**  
+**Historical verdict withdrawn.** The current candidate remains on publication
+hold pending independent Role-A/Role-B review, sensitivity checks and an
+independent noncubic evaluator.
 Not overclaiming attractor / H0 / a0. Science rests on CBR-001 Stages 1–3B.
 
 ## Ban-list skim (abstract + conclusions)

@@ -1,0 +1,977 @@
+{
+  "advance_to_a4": false,
+  "advance_to_finite_charge": false,
+  "advance_to_ultra": false,
+  "audit_execution_status": "COMPLETE",
+  "bounded_result": "The static parity-even decompactification-subtracted determinant reproduces the frozen equal-mass minimum and sign/degree count. This is a determinant checkpoint only, not X4-D2_RETRY or a physics pass.",
+  "calculation_checks_passed": 12,
+  "calculation_checks_total": 12,
+  "candidate": "X4-S2F3",
+  "checkpoint_decision": "HOLD_BEFORE_FINITE_CHARGE",
+  "checks": [
+    {
+      "files": [
+        {
+          "path": "active_research.md",
+          "sha256": "ef905e26b3cfd5506c5752621029b549965e193fe4d6d3dc7f76ed3dd364d433",
+          "sidecar_matches": true,
+          "sidecar_present": true
+        },
+        {
+          "path": "Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md",
+          "sha256": "0946400158227daa86606cfd177b22f229367cd581376d9f60cfaab17f65b316",
+          "sidecar_matches": true,
+          "sidecar_present": true
+        },
+        {
+          "path": "Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md",
+          "sha256": "a66a602c84199c92f2ea38e28e8995501359a5ca424092c8c060c84ada2485a5",
+          "sidecar_matches": true,
+          "sidecar_present": true
+        },
+        {
+          "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md",
+          "sha256": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "sidecar_matches": true,
+          "sidecar_present": true
+        }
+      ],
+      "name": "frozen_authority_sidecars_match",
+      "ok": true
+    },
+    {
+      "bulk_counterterm": "V_Lambda,E=Lambda5 ell_ref/r; alpha=4 pi^2 Lambda5/(3 mF^5)",
+      "einstein_frame_potential_dimension": 4,
+      "einstein_frame_scalar": "V_b,E=-3 r^-6 F(m ell_ref r)/(4 pi^2 ell_ref^4)",
+      "five_dimensional_field_dimensions": {
+        "Dirac": "2",
+        "bulk_vacuum_density": "5",
+        "real_scalar": "3/2"
+      },
+      "name": "mass_dimensions_and_einstein_frame_scaling",
+      "ok": true,
+      "product_frame_potential_dimension": 4,
+      "product_frame_scalar": "V_b,J=-3 F(m ell)/(4 pi^2 ell^4)",
+      "weyl_relation": "g_J=r^-1 g_E, sqrt(-g_J)=r^-2 sqrt(-g_E)"
+    },
+    {
+      "name": "polylog_and_poisson_bessel_representations_agree",
+      "ok": true,
+      "relative_tolerance": "1.0e-14",
+      "samples": [
+        {
+          "bessel": "1.03493715660842205855010932776",
+          "polylog": "1.03493715660842292881162147154",
+          "relative_error": "8.40883435856e-16",
+          "x": "0.1"
+        },
+        {
+          "bessel": "0.990938436001262760936956548639",
+          "polylog": "0.990938436001262760936956548639",
+          "relative_error": "5.65686221973e-43",
+          "x": "0.5"
+        },
+        {
+          "bessel": "0.878369733941488667563724659714",
+          "polylog": "0.878369733941488667563724659714",
+          "relative_error": "1.03096437968e-71",
+          "x": "1"
+        },
+        {
+          "bessel": "0.453949370572004935170019590216",
+          "polylog": "0.453949370572004935170019590216",
+          "relative_error": "9.97432716716e-72",
+          "x": "2.5306790213096324"
+        },
+        {
+          "bessel": "0.0101760596248704172026817214579",
+          "polylog": "0.0101760596248704172026817214579",
+          "relative_error": "1.39046930563e-71",
+          "x": "8"
+        }
+      ]
+    },
+    {
+      "cutoff_change_relative_tolerance": "0.000000005",
+      "fine_relative_tolerance": "1.0e-11",
+      "name": "proper_time_cutoff_and_image_sum_converge_after_decompactification_subtraction",
+      "ok": true,
+      "samples": [
+        {
+          "cutoff_change_relative": "2.55951755604e-9",
+          "fine_relative_error": "4.68453509687e-12",
+          "poisson_image_zero_included": false,
+          "polylog": "0.990938436001262760936956548639",
+          "proper_time_coarse": "0.990938433460296351163322922903",
+          "proper_time_fine": "0.990938435996620675054674060019",
+          "x": "0.5"
+        },
+        {
+          "cutoff_change_relative": "1.0265569961e-24",
+          "fine_relative_error": "2.90013023867e-36",
+          "poisson_image_zero_included": false,
+          "polylog": "0.453949370572004935170019590216",
+          "proper_time_coarse": "0.453949370572004935170019124211",
+          "proper_time_fine": "0.453949370572004935170019590216",
+          "x": "2.5306790213096324"
+        }
+      ],
+      "subtraction": "Poisson image q=0 omitted before integration"
+    },
+    {
+      "large_x_samples": {
+        "12": "0.000374797209554779757794608456229",
+        "20": "0.00000031810470913926653297263579527",
+        "8": "0.0101760596248704172026817214579"
+      },
+      "massless_relative_error": "1.93208076647e-15",
+      "name": "massless_and_large_mass_limits",
+      "ok": true,
+      "x_small": "0.0000001"
+    },
+    {
+      "counts": [
+        {
+          "massive_shape_coefficient": 1,
+          "massless_gravity_coefficient_over_zeta5": -5,
+          "periodic_5D_Dirac_fields": 1,
+          "strict_small_radius_repulsion": false
+        },
+        {
+          "massive_shape_coefficient": 5,
+          "massless_gravity_coefficient_over_zeta5": -5,
+          "periodic_5D_Dirac_fields": 2,
+          "strict_small_radius_repulsion": false
+        },
+        {
+          "massive_shape_coefficient": 9,
+          "massless_gravity_coefficient_over_zeta5": -5,
+          "periodic_5D_Dirac_fields": 3,
+          "strict_small_radius_repulsion": true
+        },
+        {
+          "massive_shape_coefficient": 13,
+          "massless_gravity_coefficient_over_zeta5": -5,
+          "periodic_5D_Dirac_fields": 4,
+          "strict_small_radius_repulsion": true
+        }
+      ],
+      "five_dimensional_graviton_degrees": 5,
+      "limitation": "flat zero-density gauge-fixed degree count only; not the finite-charge curved determinant",
+      "name": "functional_determinant_sign_and_degree_count",
+      "ok": true,
+      "parent_massive_real_bosons": 3,
+      "periodic_5D_Dirac_ratio_to_real_scalar": -4,
+      "real_periodic_scalar_sign": "attractive"
+    },
+    {
+      "delta_KK_over_Lambda5_at_mF_over_Lambda5_0p04": "0.0993122439356694493372858780888",
+      "name": "equal_mass_zero_vacuum_stationary_minimum_reproduced_without_saved_root",
+      "ok": true,
+      "root_scan_domain": [
+        "1e-4",
+        "60"
+      ],
+      "root_scan_log_intervals": 1000,
+      "root_seed_policy": "no saved numerical root supplied; all sign-changing log-grid intervals bisected",
+      "roots": [
+        {
+          "alpha": "0.0105888717092240159635357605738",
+          "f_second": "4.1680216387683411009576707474",
+          "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+          "static_parity_even_minimum": true,
+          "stationarity_residual": "7.26957851874e-49",
+          "x": "2.53067902130963261758981684772"
+        }
+      ]
+    },
+    {
+      "massless_gravity_coefficient": -5,
+      "name": "nf2_is_marginal_at_x0_and_has_no_positive_zero_cc_stationary_root_in_scan",
+      "ok": true,
+      "root_scan_domain": [
+        "1e-4",
+        "60"
+      ],
+      "roots": [],
+      "scope": "numerical scan plus exact coefficient equality; not a proof beyond the registered domain",
+      "small_radius_massive_coefficient": 5,
+      "stationarity_samples": {
+        "0.01": "-0.000060100197169823516251591670789",
+        "0.1": "-0.00599339816594578568236721357455",
+        "1": "-0.527540202156374287448795376037",
+        "10": "-5.15792825364756622147961025045",
+        "1e-4": "-0.00000000601028447012988654318589237029",
+        "60": "-5.1846387757168496316561312459"
+      }
+    },
+    {
+      "expected_failure": "all massive and massless terms are attractive, so the registered balance disappears",
+      "name": "deliberate_wrong_fermion_sign_mutation_is_rejected",
+      "ok": true,
+      "roots": []
+    },
+    {
+      "name": "deliberate_omitted_poisson_image_mutation_is_detected",
+      "ok": true,
+      "omitted_image": 1,
+      "relative_difference": "0.993499506253964746867298843806",
+      "x": "2.53067902130963261758981684772"
+    },
+    {
+      "accepted_static_roots": 49,
+      "grid_points": 49,
+      "grid_values": [
+        "0.5",
+        "0.75",
+        "1.0",
+        "1.25",
+        "1.5",
+        "1.75",
+        "2.0"
+      ],
+      "limitation": "coarse deterministic grid; not continuous-domain robustness and not finite-density evidence",
+      "name": "registered_mass_ratio_grid_reports_all_found_roots",
+      "ok": true,
+      "points_with_no_root": 0,
+      "records": [
+        {
+          "mChi_over_mF": "0.5",
+          "mPhi_over_mF": "0.5",
+          "roots": [
+            {
+              "alpha": "0.0249138684013396231659766814252",
+              "f_second": "6.02052799705936890925468874371",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0346643430503576695595543689603",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-6.77612348839e-49",
+              "x": "2.17802490937040117714696454831"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.75",
+          "mPhi_over_mF": "0.5",
+          "roots": [
+            {
+              "alpha": "0.0218455467569988631000400394179",
+              "f_second": "5.68617204590619088906342300009",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0354235571631041950772382859657",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.57148516334e-48",
+              "x": "2.225727738952524728504487168"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.0",
+          "mPhi_over_mF": "0.5",
+          "roots": [
+            {
+              "alpha": "0.0191355813690990372728145103331",
+              "f_second": "5.37846136041313464813570758149",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.036299863495359467163580763008",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "9.6961102667e-49",
+              "x": "2.28078768966667231363560048021"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.25",
+          "mPhi_over_mF": "0.5",
+          "roots": [
+            {
+              "alpha": "0.0170592718366529891723267702438",
+              "f_second": "5.15010070668984362520261272443",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0371740356779099749580207592125",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.25224641265e-48",
+              "x": "2.33571354780013693225464742806"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.5",
+          "mPhi_over_mF": "0.5",
+          "roots": [
+            {
+              "alpha": "0.0156026372323167642951829695327",
+              "f_second": "5.01387065408210305124652350581",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0379517108602306759655866863201",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-2.79605612248e-50",
+              "x": "2.38457632059329327904328276593"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.75",
+          "mPhi_over_mF": "0.5",
+          "roots": [
+            {
+              "alpha": "0.014634381782388432332531642313",
+              "f_second": "4.95454351669651852626665049906",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0385832875808111964517701672231",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "8.55931903395e-49",
+              "x": "2.42425945630437521371685902238"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "2.0",
+          "mPhi_over_mF": "0.5",
+          "roots": [
+            {
+              "alpha": "0.0140108625442897275983540508526",
+              "f_second": "4.94664923890947139213074482571",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0390619970580479027280726607999",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.55090568948e-48",
+              "x": "2.4543376598421881495651209801"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.5",
+          "mPhi_over_mF": "0.75",
+          "roots": [
+            {
+              "alpha": "0.0190302974776036879634232013918",
+              "f_second": "5.35344942922377966046826986444",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0362358388118165397291449685015",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "9.1747237011e-49",
+              "x": "2.27676490015733487036392127418"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.75",
+          "mPhi_over_mF": "0.75",
+          "roots": [
+            {
+              "alpha": "0.0164593224146356590301826734982",
+              "f_second": "5.02255740461790200807168889229",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0371077625766030202505825176798",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.54475262688e-48",
+              "x": "2.33154948603620611157995671384"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.0",
+          "mPhi_over_mF": "0.75",
+          "roots": [
+            {
+              "alpha": "0.0142600493228241500277832941425",
+              "f_second": "4.72644276827046818108884865697",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0381017460595041677675748574461",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.90383997693e-49",
+              "x": "2.39400331018964292962017616537"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.25",
+          "mPhi_over_mF": "0.75",
+          "roots": [
+            {
+              "alpha": "0.0126332623269683808092996414666",
+              "f_second": "4.51545952086245711147229982646",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0390739708428456820456202917064",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.18033884429e-48",
+              "x": "2.45508999492931552260583154539"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.5",
+          "mPhi_over_mF": "0.75",
+          "roots": [
+            {
+              "alpha": "0.0115318003345808814309179313971",
+              "f_second": "4.3969233065015711667851900667",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0399164172071128418229449044563",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-4.04284540188e-50",
+              "x": "2.50802246110981832370647809158"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.75",
+          "mPhi_over_mF": "0.75",
+          "roots": [
+            {
+              "alpha": "0.0108239563047482364960847875438",
+              "f_second": "4.35089439811985644005977026627",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.30763066981e-49",
+              "x": "2.54972901675474541906475835957"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "2.0",
+          "mPhi_over_mF": "0.75",
+          "roots": [
+            {
+              "alpha": "0.010382236130963089712635953643",
+              "f_second": "4.35013902278029124644523146559",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-2.8018842691e-49",
+              "x": "2.58036191292438408502497875794"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.5",
+          "mPhi_over_mF": "1.0",
+          "roots": [
+            {
+              "alpha": "0.0143971703749597143675639731778",
+              "f_second": "4.75959293322937973449423785794",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0381554505160135171678897289942",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "7.40829945038e-49",
+              "x": "2.39737766071033902216344979963"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.75",
+          "mPhi_over_mF": "1.0",
+          "roots": [
+            {
+              "alpha": "0.0123095430981507641947000530885",
+              "f_second": "4.44135394772155634415062649563",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.0391568474897723320646198646778",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-6.22096509361e-49",
+              "x": "2.46029728823209389891733480244"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.0",
+          "mPhi_over_mF": "1.0",
+          "roots": [
+            {
+              "alpha": "0.0105888717092240159635357605738",
+              "f_second": "4.1680216387683411009576707474",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.10670160647e-48",
+              "x": "2.53067902130963261758981684772"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.25",
+          "mPhi_over_mF": "1.0",
+          "roots": [
+            {
+              "alpha": "0.00936567014298351102939788556416",
+              "f_second": "3.9847700872624455873240927033",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "4.18841461115e-49",
+              "x": "2.59763319566455093835335497634"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.5",
+          "mPhi_over_mF": "1.0",
+          "roots": [
+            {
+              "alpha": "0.0085690495989193252660620815561",
+              "f_second": "3.89132035062322728825276886527",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-5.31640430714e-49",
+              "x": "2.65368110761716542638096580867"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.75",
+          "mPhi_over_mF": "1.0",
+          "roots": [
+            {
+              "alpha": "0.00807530193903425605735490743598",
+              "f_second": "3.86278996232130070375776096923",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-6.69150578744e-49",
+              "x": "2.69622362823960860160834442199"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "2.0",
+          "mPhi_over_mF": "1.0",
+          "roots": [
+            {
+              "alpha": "0.00777732974211503368581415731681",
+              "f_second": "3.87118224378477396216640395124",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-7.56355068728e-49",
+              "x": "2.72633339987913900967122392244"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.5",
+          "mPhi_over_mF": "1.25",
+          "roots": [
+            {
+              "alpha": "0.0113567561801013004684592010048",
+              "f_second": "4.36105849174658810953375233432",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.41487538651e-48",
+              "x": "2.52035097453985048024563901508"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.75",
+          "mPhi_over_mF": "1.25",
+          "roots": [
+            {
+              "alpha": "0.00965397027122849220137526354811",
+              "f_second": "4.06193477742336044428680013972",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "4.28465270075e-49",
+              "x": "2.5901213083275396684488958812"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.0",
+          "mPhi_over_mF": "1.25",
+          "roots": [
+            {
+              "alpha": "0.00829776353086374478331171401123",
+              "f_second": "3.81679549526914559251260449825",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.94328376176e-49",
+              "x": "2.66634375122956838781304921674"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.25",
+          "mPhi_over_mF": "1.25",
+          "roots": [
+            {
+              "alpha": "0.00736687898233694495617287354194",
+              "f_second": "3.66364203158743234418573592187",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.51037422731e-48",
+              "x": "2.7366052182359043514303281907"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.5",
+          "mPhi_over_mF": "1.25",
+          "roots": [
+            {
+              "alpha": "0.00678035049697548970429393970382",
+              "f_second": "3.5946933555534776576087496086",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.19143482122e-48",
+              "x": "2.79334870923022722617614118332"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.75",
+          "mPhi_over_mF": "1.25",
+          "roots": [
+            {
+              "alpha": "0.00642765439456311207129593070038",
+              "f_second": "3.58175519372552522203474460195",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "6.75442735097e-49",
+              "x": "2.83488658641344623882860322354"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "2.0",
+          "mPhi_over_mF": "1.25",
+          "roots": [
+            {
+              "alpha": "0.00622073186167830913666904048179",
+              "f_second": "3.59757741388472614461291426186",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.67716276793e-49",
+              "x": "2.86329133225684974882878668555"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.5",
+          "mPhi_over_mF": "1.5",
+          "roots": [
+            {
+              "alpha": "0.00956344142623004250389928995473",
+              "f_second": "4.16858538641429853300319765262",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.08014645134e-48",
+              "x": "2.62650975114724563246999168088"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.75",
+          "mPhi_over_mF": "1.5",
+          "roots": [
+            {
+              "alpha": "0.00812543888868230230265425127959",
+              "f_second": "3.88691247736022136272427988867",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.00020176869e-49",
+              "x": "2.70021468767757460653900459074"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.0",
+          "mPhi_over_mF": "1.5",
+          "roots": [
+            {
+              "alpha": "0.00700890630444480246061839298683",
+              "f_second": "3.66511183988843849371396529694",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.32382970886e-48",
+              "x": "2.77890526811840846348582512569"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.25",
+          "mPhi_over_mF": "1.5",
+          "roots": [
+            {
+              "alpha": "0.00626127196890099669113000073554",
+              "f_second": "3.53462201266215519309812471777",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-5.42802530552e-49",
+              "x": "2.8494440955025066433381988134"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.5",
+          "mPhi_over_mF": "1.5",
+          "roots": [
+            {
+              "alpha": "0.0058007307240927019424743295014",
+              "f_second": "3.48242900865630950496499999969",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.42299543003e-49",
+              "x": "2.90476539804686727391883392851"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.75",
+          "mPhi_over_mF": "1.5",
+          "roots": [
+            {
+              "alpha": "0.00552946295940043790809848076554",
+              "f_second": "3.479048560587526794944942012",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-3.43161432653e-50",
+              "x": "2.944145806957488025039511525"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "2.0",
+          "mPhi_over_mF": "1.5",
+          "roots": [
+            {
+              "alpha": "0.00537343950450500879257780691039",
+              "f_second": "3.49865587098770743251465889511",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-5.24877516577e-49",
+              "x": "2.97039017817083841417076649176"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.5",
+          "mPhi_over_mF": "1.75",
+          "roots": [
+            {
+              "alpha": "0.00855480411231655636238122091781",
+              "f_second": "4.11998402416961269219025303688",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "9.82835056473e-49",
+              "x": "2.70659329883158189367300292551"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.75",
+          "mPhi_over_mF": "1.75",
+          "roots": [
+            {
+              "alpha": "0.00728355154533629634638999807687",
+              "f_second": "3.84852789815185249552631440537",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "4.8566089553e-49",
+              "x": "2.78156626054668357719332325471"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.0",
+          "mPhi_over_mF": "1.75",
+          "roots": [
+            {
+              "alpha": "0.00631222264541705392843081998586",
+              "f_second": "3.64009496151434401503505638231",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-2.4428179562e-49",
+              "x": "2.86019216959035869709467194353"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.25",
+          "mPhi_over_mF": "1.75",
+          "roots": [
+            {
+              "alpha": "0.00567142235225367437070961135052",
+              "f_second": "3.52181408187106807777229554298",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "3.66600421906e-49",
+              "x": "2.92927036952443092526794239112"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.5",
+          "mPhi_over_mF": "1.75",
+          "roots": [
+            {
+              "alpha": "0.00528191397207924316263730779171",
+              "f_second": "3.47783398853983007687803640063",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.52434239787e-49",
+              "x": "2.9823824105967024419287712408"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.75",
+          "mPhi_over_mF": "1.75",
+          "roots": [
+            {
+              "alpha": "0.00505531879949908531963307774409",
+              "f_second": "3.47841977677752858509857428718",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-1.06885813542e-48",
+              "x": "3.01950768237258869345437171532"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "2.0",
+          "mPhi_over_mF": "1.75",
+          "roots": [
+            {
+              "alpha": "0.00492659608897889946299173249012",
+              "f_second": "3.49889800801374731969387905715",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "6.46148159089e-49",
+              "x": "3.04384152425761226300601953249"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.5",
+          "mPhi_over_mF": "2.0",
+          "roots": [
+            {
+              "alpha": "0.00799401668725495447128312617463",
+              "f_second": "4.14556884103312063637175777974",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "3.84204379026e-49",
+              "x": "2.76172787901934241384131782198"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "0.75",
+          "mPhi_over_mF": "2.0",
+          "roots": [
+            {
+              "alpha": "0.0068236251025050327043331286058",
+              "f_second": "3.87711408269072198857769424869",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.32561267812e-48",
+              "x": "2.83645996055694569819797861974"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.0",
+          "mPhi_over_mF": "2.0",
+          "roots": [
+            {
+              "alpha": "0.00593751819966168700503757516528",
+              "f_second": "3.67342638847349252899734647404",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-9.90083588046e-49",
+              "x": "2.91390602764891189319267118193"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.25",
+          "mPhi_over_mF": "2.0",
+          "roots": [
+            {
+              "alpha": "0.00535766324168843998628056179749",
+              "f_second": "3.55942467674778243186336343563",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.44928746658e-48",
+              "x": "2.98109523051730563787906919422"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.5",
+          "mPhi_over_mF": "2.0",
+          "roots": [
+            {
+              "alpha": "0.00500773248488598785314923081877",
+              "f_second": "3.51788920584448836735225298936",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.56122637533e-49",
+              "x": "3.03214350799784574247391193584"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "1.75",
+          "mPhi_over_mF": "2.0",
+          "roots": [
+            {
+              "alpha": "0.00480557009369036291774417234988",
+              "f_second": "3.51906300806349450572488239665",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "-9.2237998332e-49",
+              "x": "3.06744564591306761879529366185"
+            }
+          ]
+        },
+        {
+          "mChi_over_mF": "2.0",
+          "mPhi_over_mF": "2.0",
+          "roots": [
+            {
+              "alpha": "0.00469155670992782105715463877589",
+              "f_second": "3.53888771376201389206741502171",
+              "maximum_mF_over_Lambda5_from_registered_bounds": "0.04",
+              "static_parity_even_minimum": true,
+              "stationarity_residual": "1.75011867481e-48",
+              "x": "3.09035869328498016247920875165"
+            }
+          ]
+        }
+      ],
+      "rejected_roots": 0
+    },
+    {
+      "forbidden_token_hits": [],
+      "name": "observational_target_firewall",
+      "ok": true
+    }
+  ],
+  "explicit_nonclaims": [
+    "no parity/anomaly clearance",
+    "no finite-charge stabilized background",
+    "no physical radion mass",
+    "no complete five-dimensional EFT domain",
+    "no nonperturbative circle-stability proof",
+    "no canonical topology change",
+    "no K_Q or V derivation",
+    "no observational prediction or publication clearance"
+  ],
+  "gate_effect": "NONE",
+  "hold_reasons": [
+    "the parity-odd determinant phase and global/nonperturbative spin-structure audit are not completed",
+    "the finite-charge background changes the scalar spectrum and has not been varied from a complete one-loop effective action",
+    "no Hadamard/adiabatic state or state-order convergence calculation exists for an evolving background",
+    "no coupled metric-radion-amplitude-phase constraint reduction or physical radion mass has been calculated",
+    "the mass-ratio test is a coarse static grid rather than the required continuous finite-charge robustness domain"
+  ],
+  "physics_pass": false,
+  "primary_source_basis": [
+    {
+      "citation": "Ponton and Poppitz, JHEP 06 (2001) 019",
+      "identifier": "arXiv:hep-ph/0105021",
+      "used_for": "independent comparison of periodic massive scalar/Dirac determinant and stabilization conditions"
+    },
+    {
+      "citation": "Witten, Nucl. Phys. B 195 (1982) 481",
+      "identifier": "DOI:10.1016/0550-3213(82)90007-4",
+      "used_for": "nonperturbative spin-structure question only; not treated as completed here"
+    }
+  ],
+  "quantum_definition": {
+    "background": "static Minkowski4 x S1 zero-density control",
+    "equivalent_representation": "modified-Bessel K_5/2 and polylogarithms",
+    "method": "proper-time heat kernel plus Poisson resummation",
+    "renormalization": "finite nonlocal Casimir part separated from local renormalized bulk vacuum term",
+    "spin_structure": "periodic for all three 5D Dirac spectators",
+    "state": "positive-frequency Minkowski vacuum",
+    "subtraction": "decompactified Poisson image q=0 removed"
+  },
+  "route": "TOP-X4_KK-001",
+  "schema": "ITSM_TOPX4_S2F3_STATIC_DETERMINANT_v1",
+  "source_sha256": "ded1c191dc220ef8bc8ace922b9bf888357fb5a7bf8e6b2ac94b8c10b441ee5a",
+  "status": "PASS_STATIC_PARITY_EVEN_DETERMINANT_HOLD_PARITY_ODD_AND_FINITE_CHARGE"
+}

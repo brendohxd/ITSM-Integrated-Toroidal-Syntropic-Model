@@ -112,7 +112,9 @@ Run it from this directory with:
 
 ```powershell
 conda activate itsm_env
-python cbr001_stage3_backreaction.py
+python cbr001_stage3_backreaction.py `
+  --stage2-csv stage2_outputs\cbr001_stage2_scan.csv `
+  --output-dir stage3_outputs
 ```
 
 ## Validation

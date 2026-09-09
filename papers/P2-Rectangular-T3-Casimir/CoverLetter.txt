@@ -1,6 +1,10 @@
 Cover letter / arXiv comment for Paper 2
 ========================================
 
+Submission status: INTERNAL DRAFT / PUBLICATION HOLD. Do not submit until the
+independent Role-A/Role-B, sensitivity and noncubic-evaluator requirements in
+the repository gate report are complete.
+
 Suggested primary target: arXiv (gr-qc, cross-list hep-th, astro-ph.CO)
 Journal targets after arXiv: Physical Review D, JCAP, or CQG.
 
@@ -8,28 +12,33 @@ Journal targets after arXiv: Physical Review D, JCAP, or CQG.
 
 Dear Editor / arXiv moderators,
 
-Please find attached a technical paper on anisotropic Casimir stress for a free
-massless scalar on a rectangular flat three-torus, and on free-field biaxial
-backreaction of that stress.
+Please find attached a technical paper on an implemented periodic-scalar
+Casimir stress for a rectangular flat three-torus and an instantaneous
+biaxial-closure control using that static stress.
 
 The manuscript has a deliberately limited claim set:
 
-  (1) We validate a renormalized lattice Casimir energy density and directional
-      pressures (cutoff convergence, cubic isotropy, thermodynamic derivatives,
-      conformal trace, dimensional scaling), establishing shape-dependent
-      anisotropic vacuum stress as a concrete free-field mechanism.
+  (1) We test an already-renormalized lattice Casimir expression for energy
+      density and directional pressures against cutoff convergence, cubic
+      isotropy, thermodynamic derivatives, conformal trace and dimensional
+      scaling. An independent noncubic zeta/Ewald audit remains a stated
+      limitation.
 
-  (2) Coupling that stress to biaxial Bianchi-I expansion on a positive de Sitter
-      background, we search for the historically proposed ratio Ht/Hp = 13/12.
-      In the free-field scan reported here the ratio appears at most as a brief
-      transient; we find no quasi-plateau and no attractor. Every valid candidate
-      returns to isotropy by late expansion.
+  (2) Transporting that static stress through a declared instantaneous a^-4
+      closure on a positive de Sitter biaxial Bianchi-I background, we search
+      for the historically proposed ratio Ht/Hp = 13/12. In the bounded scan
+      the ratio appears at most as a brief transient; we find no quasi-plateau
+      and no attractor. Every valid candidate returns to isotropy by late
+      expansion within this closure.
 
 We do not claim a resolution of the Hubble tension, a parameter-free prediction
 H0 = 72.97 km/s/Mpc, a derivation of a galactic acceleration scale, or a
 completed cubic cosmology compatible with Planck topology bounds. Persistent
 anisotropy, if present in a fuller theory, requires a derived driven or memory
 stress beyond free Casimir (open programme, not this paper).
+
+The manuscript does not claim to evolve and renormalize quantum-field modes
+on a dynamical compact Bianchi-I spacetime.
 
 Public code and stage summaries are in the companion repository under
 Analysis/Casimir/CBR-001/.

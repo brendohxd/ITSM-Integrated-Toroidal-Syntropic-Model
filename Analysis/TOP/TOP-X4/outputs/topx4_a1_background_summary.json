@@ -1,0 +1,102 @@
+{
+  "calculation_status": "PASS",
+  "canonical_t3_replaced": false,
+  "checks": [
+    {
+      "name": "solver_completed_registered_interval",
+      "ok": true,
+      "points": 401,
+      "solver_message": "The solver successfully reached the end of the integration interval.",
+      "t_final_reached": 1.0
+    },
+    {
+      "min_a": 1.0,
+      "min_b": 1.0,
+      "min_rho": 0.6995359234543251,
+      "name": "finite_positive_background_domain",
+      "ok": true
+    },
+    {
+      "max_absolute_residual": 9.410250356722827e-13,
+      "name": "hamiltonian_constraint_propagated",
+      "ok": true,
+      "threshold": 1e-08
+    },
+    {
+      "final_charge": 1.0000000000000866,
+      "initial_charge": 1.0,
+      "max_relative_error": 1.7201795543542175e-12,
+      "name": "global_u1_charge_conserved",
+      "ok": true,
+      "threshold": 1e-09
+    },
+    {
+      "max_absolute_residual": 4.996003610813204e-16,
+      "name": "analytic_stress_continuity",
+      "ok": true,
+      "threshold": 1e-10
+    },
+    {
+      "changed_parameter": "g5",
+      "name": "literal_nested_zero_portal_limit",
+      "ok": true,
+      "zero_value": 0.0
+    },
+    {
+      "forbidden_token_hits": [],
+      "name": "observational_target_firewall",
+      "ok": true
+    }
+  ],
+  "checks_passed": 7,
+  "checks_total": 7,
+  "derived_claims": [],
+  "explicit_nonclaims": [
+    "no perturbative health result",
+    "no radion stabilization",
+    "no Standard Model or equivalence-principle matter result",
+    "no derived nonzero Q^mu",
+    "no K_Q or V",
+    "no screening or observational prediction"
+  ],
+  "final_state": {
+    "H_a": 0.27844558514132073,
+    "H_b": 0.2784455851413206,
+    "a": 1.410740520138881,
+    "b": 1.4107405201388812,
+    "chi": 0.0,
+    "chi_dot": 0.0,
+    "mu": 0.5159307273325826,
+    "rho": 0.6995359234543251,
+    "rho_dot": -0.5009084852085849
+  },
+  "gate_effect": "NONE",
+  "initial_state": {
+    "H_a": 0.4330127018922193,
+    "H_b": 0.4330127018922193,
+    "a": 1.0,
+    "b": 1.0,
+    "chi": 0.0,
+    "chi_dot": 0.0,
+    "mu": 1.0,
+    "rho": 1.0,
+    "rho_dot": 0.0
+  },
+  "next_entry_condition": "independent equation audit, then Max fixed-action KK/radion reduction",
+  "parameters": {
+    "M5_cubed": 1.0,
+    "U0": 0.0,
+    "g5": 0.1,
+    "lambda_chi5": 1.0,
+    "lambda_phi5": 1.0,
+    "m_chi_squared": 1.0,
+    "m_phi_squared": 1.0,
+    "winding_integer": 0.0
+  },
+  "parent": "X4-I1C_bulk_scalar_control",
+  "physics_pass": false,
+  "route": "TOP-X4_KK-001",
+  "schema": "ITSM_TOPX4_A1_v1",
+  "status": "PASS_TOPX4_A1_CONTROL_BACKGROUND_ONLY",
+  "units": "dimensionless control units with M5^3=m_phi^2=lambda_phi5=1"
+}

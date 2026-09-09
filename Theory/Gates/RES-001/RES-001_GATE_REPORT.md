@@ -1,13 +1,24 @@
 # RES-001 Gate Closure Report: Syntropic Reservoir Microscopic Hamiltonian & Master Equation
 
+> [!CAUTION]
+> **Superseded claim package (Tier-1 audit, 2026-09-05).** This report is
+> retained as provenance and is not a gate closure. The cited scripts do not
+> derive a microscopic reservoir, a covariant stress tensor or `Q_syn^mu`; the
+> current corrected GKSL script does not implement its claimed two-bath local
+> detailed-balance or Spohn tests. Authority is
+> `RES001_TIER1_CLAIM_AUDIT_AND_ULTRA_ENTRY_SPEC_2026-09-05.md` and the
+> fail-closed route decision `NO_ROUTE_SELECTABLE_ON_CURRENT_EVIDENCE`.
+
 **Gate ID:** `RES-001`  
-**Status:** `PHENOMENOLOGICAL_SCAFFOLD`  
+**Status:** `SUPERSEDED_PROVENANCE_NOT_GATE_CLOSURE`
 **Date:** 2026-09-01  
 **Branch:** `recovery/v12-core-architecture`  
 **Authority:** `Analysis/RES/RES-001/`  
 **Execution Scripts:**
 - `Analysis/RES/RES-001/res001_lindblad_master_equation.py`
 - `Analysis/RES/RES-001/res001_microscopic_hamiltonian_solver.py`
+- `Analysis/RES/RES-001/res001_microscopic_lindblad_spohn_solver.py` (corrected
+  single-mode steady-state control; not a Spohn/two-bath implementation)
 
 ---
 
@@ -37,6 +48,7 @@ This gate formalizes the open-quantum-system dynamics and energy-momentum exchan
 |---|---|---|
 | Master Equation Summary | `Analysis/RES/RES-001/outputs/res001_lindblad_master_equation_summary.json` | `3990b572cdbaad69e0fae08fe9cb975d4edc3be0ddc005d01c8338f3d0c9e1e1` |
 | Microscopic Hamiltonian Summary | `Analysis/RES/RES-001/outputs/res001_microscopic_hamiltonian_summary.json` | `f6b7dcc5b0a3e15f7b2556843c45a150d2ccf459f131f3d55dca33479fcec7b2` |
+| Corrected GKSL steady-state control | `Analysis/RES/RES-001/outputs/res001_microscopic_lindblad_spohn_summary.json` | `965f11b9851d9d80988b13e3365c43735d3313ebd940a048c779f6dfabfe146f` |
 
 ---
 

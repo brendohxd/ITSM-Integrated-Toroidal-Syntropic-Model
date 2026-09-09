@@ -1,11 +1,12 @@
-# P2 — Anisotropic Casimir on rectangular $T^3$ (free-field backreaction)
+# P2 — Anisotropic Casimir on rectangular $T^3$ (instantaneous-closure control)
 
 **Directory:** `papers/P2-Rectangular-T3-Casimir/`  
 **VERSION:** see `VERSION` (currently `0.1.0-draft`)  
-**Share PDF:** `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Free-Field_Backreaction_v0.1.0-draft.pdf`  
-(build script writes this from `main.pdf` + `VERSION`; see `papers/PAPERS_NAMING.md`)
+**Current locally verified PDF:** `main.pdf`
+**Versioned local share copy:** `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.1.0-draft.pdf`
+(created by the build script; both PDFs are byte-identical in the 2026-09-09 build; see `papers/PAPERS_NAMING.md`)
 
-**Status:** Draft scaffold (firewall-safe claims)  
+**Status:** `NO_GO_CURRENT_CANDIDATE`; locally repaired, independent Role-A/Role-B audits pending
 **Branch:** `recovery/v12-core-architecture`  
 **Science source:** `Analysis/Casimir/CBR-001/` (Stages 1–3B)  
 **Claim firewall:** `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md`  
@@ -13,10 +14,12 @@
 
 ## Core claim (allowed)
 
-For a free massless scalar on rectangular flat $T^3$, renormalized lattice
-Casimir stress is anisotropic and validated; free-field biaxial backreaction
-produces only *transient* passages near $H_t/H_p=13/12$, with no
-quasi-plateau or attractor.
+The implemented already-renormalized periodic-scalar stress is anisotropic on
+rectangular flat $T^3$ and passes the recorded internal controls. When that
+static stress is transported through the declared instantaneous $a^{-4}$
+Bianchi-I closure, the bounded scan produces only *transient* passages near
+$H_t/H_p=13/12$, with no quasi-plateau or attractor. This is not a general
+dynamical-QFT no-go theorem.
 
 ## Must not claim
 
@@ -25,6 +28,8 @@ quasi-plateau or attractor.
 - Doughnut $T^2$ as flat $T^3$  
 - Simulated box is Planck-safe cubic cosmology  
 - Companion P1 as establishing geometric invariants  
+- A general free-field result on evolving compact Bianchi-I spacetime
+- Publication readiness before independent analytic, numerical and PDF audits
 
 ## Build
 
@@ -40,10 +45,14 @@ cd papers\P2-Rectangular-T3-Casimir
 conda activate itsm_env
 cd Analysis\Casimir\CBR-001
 python casimir_t3_lattice.py
-python cbr001_stage2_standalone.py
-python cbr001_stage3_backreaction.py
-python cbr001_stage3b_ratio_test.py
+python cbr001_stage2_standalone.py --output-dir stage2_outputs
+python cbr001_stage3_backreaction.py --stage2-csv stage2_outputs\cbr001_stage2_scan.csv --output-dir stage3_outputs
+python cbr001_stage3b_ratio_test.py --stage2-csv stage2_outputs\cbr001_stage2_scan.csv --output-dir stage3b_outputs
 ```
+
+Do not omit the Stage-2 output flag in a fresh chained run: the Stage-2 default
+is the current directory, while the downstream defaults refer to
+`stage2_outputs/`.
 
 ## Draft checklist
 
@@ -53,8 +62,11 @@ python cbr001_stage3b_ratio_test.py
 - [x] Rectangular $T^3$ figure (not doughnut)  
 - [x] Stage-1 / Stage-3B tables from validated outputs  
 - [x] Stage-2 anisotropy + Stage-3B ratio/threshold figures  
-- [x] `CBR001_CHECKSUMS.md` + appendix anchors  
+- [x] Portable candidate hashes and explicit Stage-2 chain
 - [x] Cover letter draft (`CoverLetter.txt`)  
-- [x] Hostile internal read (`HOSTILE_READ.md`) + minor tex fixes  
-- [ ] Optional external co-read before journal submit  
-- [ ] arXiv upload when author freezes CBR-001 digests + final PDF
+- [x] Superseded hostile read retained with withdrawal warning
+- [ ] Grok Role-A analytic normalization/closure audit
+- [ ] Antigravity restricted Role-B execution witness
+- [ ] Sensitivity suite and independent noncubic evaluator
+- [x] Local PDF rebuilt and all five pages visually inspected; source/PDF hashes frozen
+- [ ] Explicit operator approval before any arXiv or journal action

@@ -1,5 +1,87 @@
 # ITSM Changelog & Archive History
 
+## Recovery branch — evidence integration and documentation sync (2026-09-09)
+
+**Scope:** reviewed and packaged the working-tree changes accumulated after
+the last pushed commit, `1fa3a86d879ec690f19df1793eccc0d235f2f1ea`, on
+`recovery/v12-core-architecture`. This entry is the current release note; the
+older alpha and reintegration entries below are retained as provenance and do
+not override the live fail-closed dashboard.
+
+### Current scientific and governance boundary
+
+- Synchronized the top-level README, recovery guide, active dashboard, core
+  route documents, reasoning-plan index and recovery worklog with the live
+  status: `MAT-001 BLOCKED`, `UVIR-003 IN_PROGRESS`, `K_Q NOT_DERIVED`, and
+  `V NOT_COMPUTED`.
+- Corrected the RES-001 description and gate report. The current executable
+  result is a single-mode GKSL steady-state control; the advertised two-bath
+  detailed-balance/Spohn calculation, microscopic reservoir Hamiltonian,
+  covariant reservoir stress and `Q^\mu` remain unimplemented. The old wording
+  is explicitly quarantined as superseded provenance.
+- Activated and indexed the cheap-screen route U3/M4/U5-U7 and added the
+  September primary-source evidence watch. These are consequence and method
+  requirements only; none promotes a gate or changes the canonical identity.
+
+### MAT-001 / M2/M3-U1 bounded reduction
+
+- Added the frozen RCP-0 action ledger, literature-to-ITSM delta, High-to-Max
+  handoff, Max fixed-background reduction and local verifier/audit outputs.
+- The healthy fixed-background scalar control yields a free-normalization
+  Yukawa/inverse-square response rather than a standalone MOND law. A sextic
+  `|Phi|^6` term is recorded only as an operator-shape candidate for a
+  three-halves phase-EFT scaling; it does not derive `a_0`, the matter portal,
+  `K_Q` or `V`.
+- The corrected local verifier is recorded as tooling evidence only. It does
+  not substitute for an independent Role-B review or open RCP-2/Ultra work.
+
+### P2 / CBR-001 reproducibility and paper repair
+
+- Added the isolated two-run A0 reproduction harness and repaired the science
+  pipeline's path/serialization boundaries: portable LF CSV, relative JSON
+  paths, explicit Stage-2 chaining and byte-identical isolated-run comparison.
+- Narrowed the manuscript and rebuilt PDF to describe an instantaneous closure
+  with the declared `a^{-4}` scaling, not full dynamical quantum mode evolution
+  or curved-space renormalization. The bounded Stage-3B result remains zero
+  attractors, zero quasi-plateaus, five transient threshold passages, two
+  no-crossings and one invalid boundary trajectory.
+- Publication remains on hold pending independent Role-A/Role-B review,
+  sensitivity checks and an independent noncubic evaluator. Checksum files and
+  the paper build metadata were refreshed with the repaired artifacts.
+
+### TOP-X4 / KK-001 Plan 11 checkpoint
+
+- Preserved the A0/A1/A2/A3/S0 controls and added the `X4-S2F3` Plan 11
+  static parity-even determinant checkpoint. Its 12/12 bounded checks reproduce
+  the equal-mass `N_F=3` witness `x=2.5306790213096326...`,
+  `alpha=0.0105888717092240...`, `f_second=4.16802163876834...` and the
+  cutoff ratio `0.09931224393566945`.
+- The checkpoint deliberately stops before the parity-odd determinant phase,
+  anomaly/counterterm audit, finite-charge state-dependent stress tensor,
+  evolving-state convergence and coupled physical radion Hessian.
+- Added the finite-charge entry gate and receipt. It verifies 9/9 required
+  inputs/policies and returns
+  `HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`; it does not reuse
+  the static vacuum solver as a dynamic background solver and does not open A4
+  or Ultra.
+- Rule 9 is explicitly incomplete for this checkpoint: Role A completed; Roles
+  B and C returned usage-limit errors and no output. No three-way agreement is
+  claimed.
+
+### Repository and evidence packaging
+
+- Added gate-oriented verification/adjudication records, route receipts and
+  SHA-256 sidecars for new executable and documentary artifacts.
+- The release-scoped hash audit covered 64 changed or new files that have
+  sidecars and found zero mismatches. Unrelated legacy outputs with pre-existing
+  stale sidecars were left untouched rather than silently rewriting historical
+  provenance.
+- Updated the recovery documentation indexes and worklog so each new route,
+  output, hold and publication boundary is discoverable from the root.
+- No deployment, website publication, manuscript promotion or canonical-model
+  revision is included in this release. A script `PASS_*` and a matching hash
+  establish bounded artifact/execution integrity only, not a physics result.
+
 ## Version 12.0-alpha.14 - QUARANTINED INVALID RELEASE (2026-09-01)
 
 ### Status: QUARANTINED / INVALID (Superseded by canonical v12.0-alpha.12)

@@ -675,7 +675,7 @@ def write_runs_csv(path: Path, runs: Sequence[RatioRun]) -> None:
         "invalid_reason",
     ]
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for run in sorted(runs, key=lambda item: item.run_id):
             writer.writerow(run.to_record())
@@ -704,7 +704,7 @@ def write_thresholds_csv(path: Path, thresholds: Sequence[dict[str, Any]]) -> No
         "attractor",
     ]
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for threshold in thresholds:
             writer.writerow({name: threshold.get(name) for name in fieldnames})
@@ -1075,12 +1075,13 @@ def main() -> int:
         "classification_counts_by_initial_shape": classifications,
         "validations": validations,
         "outputs": {
-            "runs_csv": str(runs_path),
-            "thresholds_csv": str(thresholds_path),
-            "summary_json": str(summary_path),
-            "ratio_plot": str(ratio_path),
-            "phase_space_plot": str(phase_path),
-            "threshold_plot": str(threshold_plot_path),
+            "path_base": "summary_directory",
+            "runs_csv": runs_path.name,
+            "thresholds_csv": thresholds_path.name,
+            "summary_json": summary_path.name,
+            "ratio_plot": ratio_path.name,
+            "phase_space_plot": phase_path.name,
+            "threshold_plot": threshold_plot_path.name,
         },
     }
     summary_path.write_text(json.dumps(summary, indent=2, default=json_default) + "\n", encoding="utf-8")

@@ -454,7 +454,7 @@ def write_runs_csv(path: Path, runs: Sequence[RunResult]) -> None:
         "epsilon",
     ]
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for run in runs:
             for index in range(len(run.N)):
@@ -700,9 +700,10 @@ def main() -> int:
         "runs": [run_summary(run) for run in runs],
         "validations": validations,
         "outputs": {
-            "csv": str(csv_path),
-            "summary": str(summary_path),
-            **{name: str(path) for name, path in plot_paths.items()},
+            "path_base": "summary_directory",
+            "csv": csv_path.name,
+            "summary": summary_path.name,
+            **{name: path.name for name, path in plot_paths.items()},
         },
     }
     summary_path.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")

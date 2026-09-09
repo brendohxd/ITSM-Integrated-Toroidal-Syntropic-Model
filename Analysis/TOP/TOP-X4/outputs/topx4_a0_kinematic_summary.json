@@ -1,0 +1,160 @@
+{
+  "calculation_status": "PASS",
+  "canonical_t3_replaced": false,
+  "checks": [
+    {
+      "name": "t4_betti_numbers",
+      "ok": true,
+      "values": [
+        1,
+        4,
+        6,
+        4,
+        1
+      ]
+    },
+    {
+      "name": "t4_euler_characteristic_zero",
+      "ok": true,
+      "value": 0
+    },
+    {
+      "circle_factors": 4,
+      "identity": "pi_1((S1)^4)=product_1^4 pi_1(S1)=Z^4",
+      "name": "fundamental_group_product_identity",
+      "ok": true,
+      "proof_type": "analytic product-space identity; not inferred numerically"
+    },
+    {
+      "convention": "lambda/(2*pi)^2=sum_i n_i^2/L_i^2",
+      "labels_tested": 2400,
+      "mismatches": [],
+      "name": "direct_t4_equals_t3_plus_kk_exactly",
+      "ok": true
+    },
+    {
+      "expected": {
+        "1": 8,
+        "2": 24,
+        "3": 32,
+        "4": 24
+      },
+      "measured": {
+        "1": 8,
+        "2": 24,
+        "3": 32,
+        "4": 24
+      },
+      "name": "isotropic_first_four_shell_degeneracies",
+      "ok": true
+    },
+    {
+      "circumference": 5.0,
+      "gap": 1.2566370614359172,
+      "name": "radius_circumference_kk_gap_identity",
+      "ok": true,
+      "radius": 0.7957747154594768
+    },
+    {
+      "correct_gap": 1.2566370614359172,
+      "mismatch_factor": 6.283185307179586,
+      "name": "negative_control_wrong_radius_convention_detected",
+      "ok": true,
+      "wrong_gap": 0.2
+    },
+    {
+      "circumferences": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "first_gaps": [
+        12.566370614359172,
+        6.283185307179586,
+        3.141592653589793
+      ],
+      "name": "small_circle_raises_kk_gap",
+      "ok": true
+    },
+    {
+      "equation": "[Phi_5]=[ell^-1/2]+[phi_4]",
+      "name": "field_normalization_dimensions",
+      "ok": true
+    },
+    {
+      "equation": "M_Pl^2=ell_4 M5^3",
+      "name": "planck_reduction_dimensions",
+      "ok": true
+    },
+    {
+      "equation": "lambda4=lambda5/ell_4",
+      "name": "quartic_reduction_dimensions",
+      "ok": true
+    },
+    {
+      "equation": "rho_w,5=rho0^2 w^2/(2 R^2)",
+      "name": "winding_energy_density_dimension_five",
+      "ok": true
+    },
+    {
+      "name": "winding_zero_and_positive_gradient_control",
+      "ok": true,
+      "sample_nonzero_winding_energy": 28.424460675137347,
+      "zero_winding_energy": 0.0
+    },
+    {
+      "flags": {
+        "H0": false,
+        "SPARC": false,
+        "observed_a0": false,
+        "target_2pi_coefficient": false,
+        "target_reservoir_current": false
+      },
+      "name": "observational_input_firewall",
+      "ok": true
+    }
+  ],
+  "checks_passed": 14,
+  "checks_total": 14,
+  "coordinate_convention": {
+    "kk_mass_squared": "m_n^2=m_0^2+n^2/R^2=m_0^2+(2*pi*n/ell_4)^2",
+    "physical_circumference": "ell_4=2*pi*R",
+    "physical_radius": "R",
+    "y_period": "2*pi"
+  },
+  "derived_claims": [],
+  "exact_lengths_for_spectrum_test": [
+    "1",
+    "6/5",
+    "7/5",
+    "3/4"
+  ],
+  "explicit_nonclaims": [
+    "no radion stabilization",
+    "no derived Q^mu",
+    "no matter pole residue",
+    "no K_Q or V",
+    "no a0 or H0 relation",
+    "no observational prediction"
+  ],
+  "gate_effect": "NONE",
+  "interpretation": "spatial/internal T3_obs x S1_y; Lorentzian time noncompact",
+  "mass_dimensions_natural_units": {
+    "M5_cubed": "3",
+    "MPl_squared": "2",
+    "Phi_5": "3/2",
+    "ell_minus_half": "1/2",
+    "inverse_radius_squared": "2",
+    "lambda4_quartic": "0",
+    "lambda5_quartic": "-1",
+    "length": "-1",
+    "phi_4": "1",
+    "rho0_squared": "3",
+    "rho_winding_5d": "5"
+  },
+  "next_entry_condition": "freeze one complete five-dimensional off-shell action and on-shell background",
+  "physics_pass": false,
+  "route": "TOP-X4_KK-001",
+  "schema": "ITSM_TOPX4_A0_v1",
+  "status": "PASS_TOPX4_A0_KINEMATIC_AND_DIMENSIONAL_CONTROL"
+}

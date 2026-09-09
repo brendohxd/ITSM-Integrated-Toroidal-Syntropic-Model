@@ -61,7 +61,7 @@ on its checklist is satisfied. No shortcut, no override.
 | DISK-001 | METHODS_ONLY | Conditional AQUAL/Picard methods plus a repaired algebraic SPARC comparator; no morphology-independent ITSM coupling derived |
 | STAT-001 | NOT_STARTED_AS_CLOSED_GATE | Invalid optimizer/MCMC claims quarantined; repaired comparator is optimization-only with raw likelihood separated from priors |
 | WAK-001 | KINEMATIC_RETARDED_FIELD_CONTROL_ONLY | Dimensionally consistent 3D scalar-field control with prescribed sources; no hydrodynamics, shocks, or lensing observable |
-| RES-001 | PHENOMENOLOGICAL_TWO_BATH_GKSL_CONTROL_ONLY | Detailed-balance thermal GKSL comparator; no microscopic ITSM Hamiltonian or $Q^\mu$ |
+| RES-001 | PHENOMENOLOGICAL_GKSL_STEADY_STATE_CONTROL_ONLY | Inserted single-mode GKSL steady-state control; claimed two-bath detailed balance/Spohn checks are unimplemented; no microscopic ITSM Hamiltonian or $Q^\mu$ |
 | ASTRO-001 | NEWTONIAN_SINGLE_SCALE_LOGNORMAL_CONTROL_ONLY | Unclipped Newtonian Jeans/lognormal baseline fails to yield a Salpeter tail; no ITSM IMF or mass-to-light prediction |
 | COS-001 / PERT-001 | PROXY_CALIBRATION_ONLY | Unmodified CAMB $\Lambda$CDM reference only; no ITSM Boltzmann hierarchy, transfer functions, or $S_8$ prediction |
 
@@ -103,6 +103,10 @@ Active priority:
    ├─ full ADM/Dirac count at Y>0 and Y=0
    ├─ reduced Hamiltonian, characteristics, cutoff and source response
    └─ only a survivor may open PPN/lensing/GW/topology tests
+Parallel cheap screens (no gate promotion):
+└─ U3 Track-B controls, M4 residue identity, U5 covariant phase space,
+   U6 Cartan/teleparallel A0–A2, U7 truncated T^3
+   spec: Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md
 ```
 
 ## 8. What Agents Must NOT Do
@@ -120,10 +124,11 @@ Active priority:
 | `GEMINI.md` | Scientific integrity rules (binding) |
 | `active_research.md` | Authoritative gate dashboard |
 | `Theory/Core/ITSM_Ban_List_Reassessment_and_Frontier_Policy.md` | Ban list reassessment & frontier policy |
+| `Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md` | Parallel cheap screens U3/M4/U5–U7; no gate promotion |
 | `Theory/Core/ITSM_Master_Research_Plan.md` | Master research workflow & identity |
 | `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` | Publication firewall & claim limits |
 | `Manuscript/ITSM_Core_Cosmology_v12.0.tex` | Official v12.0 core manuscript |
 
 ---
 
-*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-01 (fail-closed c50 repair; no downstream gate clearance).*
+*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-04 (cheap-screen activation listed; no downstream gate clearance).*

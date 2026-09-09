@@ -128,7 +128,7 @@ def evaluate_ratio(
 def write_scan_csv(path: Path, rows: Sequence[ScanRow]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.writer(handle)
+        writer = csv.writer(handle, lineterminator="\n")
         writer.writerow(
             [
                 "r",

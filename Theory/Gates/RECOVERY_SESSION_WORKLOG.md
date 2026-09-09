@@ -1642,3 +1642,86 @@ underived.
 high-acceleration/locality falsification before any phenomenology. No canonical
 action is replaced. MAT-001 remains `BLOCKED`, UVIR-003 `IN_PROGRESS`, live
 `V` `NOT_COMPUTED`, live `K_Q` `NOT_DERIVED`, and no downstream gate opens.
+
+## 2026-09-04 - Cheap-screen activation U3/M4/U5–U7
+
+Gates: MAT-001 and UVIR-003 unchanged; PKM1 remains the expensive lane
+
+**What changed:** under the 2026-09-01 frontier policy (topic may reopen;
+slogan stays banned), activated five cheap screens in
+`Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md`. U3 is Track-B
+B1/B2 as operator controls, not live IR. M4 is direct residue identity on the
+incomplete Track-A chart and the P0-B control. U5–U7 are method/host screens
+on the frozen PKM1-P0 parent (covariant phase space, Cartan/teleparallel A0–A2,
+truncated T^3). Wired into the Tier-1 programme v1.2, identity briefing,
+ban-list forward route, and `active_research.md` item 5.
+
+**Decision:** `ACTIVATE_CHEAP_SCREENS_ONLY`. PKM1 A0–A6 stays the only
+expensive microscopic test. No \(V\), \(K_Q\), Stage 4A, SPARC, or publication.
+
+**What was abandoned:** nothing. No prior route deleted. Cartan / covariant
+phase space / discrete \(T^3\) were not previously in the catalogue; they are
+now namespaced as U5–U7 rather than silent replacements of PKM1.
+
+## 2026-09-05 - M2/M3-U1 external adjudication and Max scalar reduction
+
+Gates: MAT-001 and UVIR-003 unchanged
+
+**External adjudication:** reviewed sealed Grok `G-A1` and Antigravity `A-B1`
+under the Role-C integration protocol. Grok's RCP-C0 scalar mechanism was
+accepted only after correcting the weak-distortion dimension, the exact/NR
+healing-length distinction, the conformal-photon interpretation and an
+unresolved factor-two source/probe normalization. Its unsolicited `G-A2` was
+quarantined. Antigravity reproduced the P2 science-bearing CSV/PNG payloads
+and transient classifications, but its JSON hashes remain path-dependent and
+its harness contains hard-coded comparison booleans and incomplete negative
+controls. P2 remains a bounded negative control and current-draft release
+hold.
+
+**Max result:** completed the RCP-C0 and zero-trace-probe RCP-I1-C
+fixed-background amplitude-phase reductions. Thirty deterministic symbolic,
+dimensional and limit checks passed twice with byte-identical JSON. The
+healthy comparator produces a free-normalization Yukawa/inverse-square force,
+not the required MOND-like acceleration. RCP-I1-C derives
+`g_sigma=alpha_1 rho_0` for a dust probe but leaves `A(s)`, dense-matter
+susceptibility and metric constraints open. The finite-density state has
+nonzero enthalpy, so the flat metric is not an on-shell gravitating
+background.
+
+**New bounded lead:** the algebraic parent classification proves that a
+monomial `|Phi|^6` potential, not the present quartic, is the unique monomial
+in this class giving a leading `P(X)` exponent `3/2`. This is an
+operator-shape candidate only; it does not fix the matter coupling, `a0`,
+`K_Q` or `V`.
+
+**Decision:** `NONEMPTY_HEALTHY_SCALAR_CONTROL_NO_STANDALONE_MOND`. Keep
+MAT-001 `BLOCKED`, UVIR-003 `IN_PROGRESS`, `K_Q NOT_DERIVED` and
+`V NOT_COMPUTED`. Stop before lapse/shift/metric constraint elimination. A
+sextic parent must be separately frozen before testing; it may not be mixed
+post hoc into RCP-C0.
+
+## 2026-09-09 - TOP-X4 Plan 11 static checkpoint and finite-charge entry hold
+
+Gates: TOP-X4 / KK-001; all parent MAT/UVIR and downstream statuses unchanged
+
+**What changed:** completed the first bounded Max job for the frozen `X4-S2F3`
+retry. The zero-density static `Minkowski4 x S1` parity-even determinant
+checkpoint passed `12/12` calculation checks and reproduced the declared
+equal-mass `N_F=3` stationary witness through the proper-time/Poisson and
+Bessel/polylog controls. The static result is explicitly held before parity-
+odd/anomaly work and finite charge.
+
+The fail-closed finite-charge entry gate revalidated the A1/A2/A3 controls and
+the static output with `9/9` provenance/policy checks, then returned
+`HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`. It confirms that a
+finite-charge determinant and state-dependent stress, evolving-state
+convergence, parity-odd counterterm data and the coupled physical Hessian are
+missing. The static solver is not reused as a dynamic-background solver.
+
+**Decision:** `physics_pass=false`, `gate_effect=NONE`; no finite-charge
+completion, A4, Ultra, phenomenology, publication or canonical-model revision
+opens. Rule-9 three-way clearance is not met: Role A completed a bounded review,
+while Roles B and C returned usage-limit errors with no reports. Receipts are
+`Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_STATIC_CHECKPOINT_RECEIPT_2026-09-09.md`
+and
+`Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_ENTRY_GATE_RECEIPT_2026-09-09.md`.

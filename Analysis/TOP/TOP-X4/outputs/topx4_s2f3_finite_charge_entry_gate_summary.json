@@ -1,0 +1,142 @@
+{
+  "advance_to_a4": false,
+  "advance_to_finite_charge": false,
+  "audit_execution_status": "COMPLETE",
+  "bounded_result": "The frozen classical charge control and static parity-even determinant are available as inputs, but no finite-charge quantum state or state-dependent determinant/stress tensor is defined. The continuation is held without inserting the static vacuum formula into a time-dependent background.",
+  "candidate": "X4-S2F3",
+  "checks": [
+    {
+      "name": "all_authority_and_input_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "11a43a73f0caf82210dbe81c9a783d86dbecde6ff9635984302b7483dbcb58de",
+          "expected": "11a43a73f0caf82210dbe81c9a783d86dbecde6ff9635984302b7483dbcb58de",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_a1_symbolic_audit_summary.json"
+        },
+        {
+          "actual": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+          "expected": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_a1_background_summary.json"
+        },
+        {
+          "actual": "d5a82f23204b5e02d046a8da43ce549dec53acebe9e0770c6f4c7cdabefddc5a",
+          "expected": "d5a82f23204b5e02d046a8da43ce549dec53acebe9e0770c6f4c7cdabefddc5a",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_a2a3_reduction_radion_summary.json"
+        },
+        {
+          "actual": "04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419",
+          "expected": "04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_static_determinant_summary.json"
+        },
+        {
+          "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+        },
+        {
+          "actual": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+          "expected": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md"
+        }
+      ]
+    },
+    {
+      "calculation_checks": "9/9",
+      "name": "a1_symbolic_action_metric_variation_control_is_complete",
+      "ok": true,
+      "status": "PASS_TOPX4_A1_INDEPENDENT_SYMBOLIC_AUDIT"
+    },
+    {
+      "calculation_checks": "7/7",
+      "max_charge_relative_error": null,
+      "max_constraint_residual": null,
+      "name": "a1_finite_charge_classical_background_control_is_complete",
+      "ok": true,
+      "status": "PASS_TOPX4_A1_CONTROL_BACKGROUND_ONLY"
+    },
+    {
+      "a3_disposition": "HOLD_UNSTABILIZED_RADION",
+      "calculation_checks": "15/15",
+      "name": "a2a3_classical_radion_boundary_is_explicit",
+      "ok": true,
+      "status": "HOLD_TOPX4_A2A3_UNSTABILIZED_CONTROL"
+    },
+    {
+      "calculation_checks": "12/12",
+      "name": "static_parity_even_determinant_checkpoint_is_complete",
+      "ok": true,
+      "quantum_definition": {
+        "background": "static Minkowski4 x S1 zero-density control",
+        "equivalent_representation": "modified-Bessel K_5/2 and polylogarithms",
+        "method": "proper-time heat kernel plus Poisson resummation",
+        "renormalization": "finite nonlocal Casimir part separated from local renormalized bulk vacuum term",
+        "spin_structure": "periodic for all three 5D Dirac spectators",
+        "state": "positive-frequency Minkowski vacuum",
+        "subtraction": "decompactified Poisson image q=0 removed"
+      },
+      "status": "PASS_STATIC_PARITY_EVEN_DETERMINANT_HOLD_PARITY_ODD_AND_FINITE_CHARGE"
+    },
+    {
+      "ensemble": "fixed nonzero global charge; no inserted chemical potential",
+      "equation": "d/dt(a^3 b rho^2 mu)=0",
+      "name": "classical_global_charge_equation_is_registered_before_quantum_extension",
+      "ok": true
+    },
+    {
+      "name": "finite_charge_quantum_state_and_stress_are_explicitly_unresolved",
+      "ok": true,
+      "required_missing": [
+        "Hadamard/adiabatic state",
+        "adiabatic-order convergence",
+        "finite-density spectrum",
+        "state-dependent backreaction stress tensor"
+      ],
+      "static_state": {
+        "background": "static Minkowski4 x S1 zero-density control",
+        "equivalent_representation": "modified-Bessel K_5/2 and polylogarithms",
+        "method": "proper-time heat kernel plus Poisson resummation",
+        "renormalization": "finite nonlocal Casimir part separated from local renormalized bulk vacuum term",
+        "spin_structure": "periodic for all three 5D Dirac spectators",
+        "state": "positive-frequency Minkowski vacuum",
+        "subtraction": "decompactified Poisson image q=0 removed"
+      }
+    },
+    {
+      "name": "no_static_loop_substitution_is_attempted_in_dynamic_background",
+      "ok": true,
+      "policy": "static Minkowski determinant is not inserted into evolving A1 background",
+      "static_solver_imported": false
+    },
+    {
+      "forbidden_token_hits": [],
+      "name": "observational_target_firewall",
+      "ok": true
+    }
+  ],
+  "gate_checks_passed": 9,
+  "gate_checks_total": 9,
+  "gate_effect": "NONE",
+  "hold_reasons": [
+    "finite-density spectrum and state-dependent one-loop stress tensor are not defined",
+    "Hadamard/adiabatic state and order-convergence evidence are absent",
+    "parity-odd determinant phase and global-anomaly audit remain open",
+    "coupled metric-radion-amplitude-phase Hessian and physical radion mass are absent"
+  ],
+  "physics_pass": false,
+  "required_next_artifacts": [
+    "finite-charge background-field determinant with declared state and counterterms",
+    "state-order convergence and cutoff/mass-ratio robustness scan",
+    "parity-odd phase/global anomaly and quantized counterterm audit",
+    "coupled canonical constraint reduction and Hessian"
+  ],
+  "route": "TOP-X4_KK-001",
+  "schema": "ITSM_TOPX4_S2F3_FINITE_CHARGE_ENTRY_GATE_v1",
+  "status": "HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION"
+}

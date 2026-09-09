@@ -1,0 +1,389 @@
+{
+  "all_mutations_detected": true,
+  "baseline_output_trees": [
+    {
+      "m2m3_u1_fixed_background_summary.json": {
+        "sha256": "391fcb099453ae493056c786b6f784b857d2b2f0a8f2626c8ed161cdc0f77c10",
+        "size": 6538
+      },
+      "m2m3_u1_fixed_background_summary.sha256": {
+        "sha256": "d2a81b11aac31a425401fb1facb4c4f85183e13da69e30efa0a0050d7478a4bc",
+        "size": 104
+      }
+    },
+    {
+      "m2m3_u1_fixed_background_summary.json": {
+        "sha256": "391fcb099453ae493056c786b6f784b857d2b2f0a8f2626c8ed161cdc0f77c10",
+        "size": 6538
+      },
+      "m2m3_u1_fixed_background_summary.sha256": {
+        "sha256": "d2a81b11aac31a425401fb1facb4c4f85183e13da69e30efa0a0050d7478a4bc",
+        "size": 104
+      }
+    }
+  ],
+  "baseline_runs": [
+    {
+      "command": "<ITSM_PYTHON> <TEMP_ROOT>/baseline_run1/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks.py",
+      "duration_seconds": 1.449401,
+      "ended_utc": "2026-09-09T10:56:37.717453+00:00",
+      "exit_code": 0,
+      "started_utc": "2026-09-09T10:56:36.268052+00:00",
+      "stderr": "",
+      "stdout": "PASS_BOUNDED_SYMBOLIC_IDENTITIES\nphysics_disposition={'RCP-C0': 'CONTROL_REPRODUCED_NO_STANDALONE_MOND_LAW', 'RCP-I1-C': 'HEALTHY_LINEAR_PROBE_DOMAIN_FREE_FUNCTION_NORMALIZATION', 'gravitating_background': 'BLOCKED_NONZERO_ENTHALPY_FIXED_BACKGROUND_ONLY', 'physical_metric_reduced_residue': 'NOT_COMPUTED'}\nchecks=30 passed=30\nsummary_sha256=391fcb099453ae493056c786b6f784b857d2b2f0a8f2626c8ed161cdc0f77c10\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+      "working_directory": "<TEMP_ROOT>/baseline_run1/Analysis/MAT/MAT-001/M2M3_U1"
+    },
+    {
+      "command": "<ITSM_PYTHON> <TEMP_ROOT>/baseline_run2/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks.py",
+      "duration_seconds": 1.543961,
+      "ended_utc": "2026-09-09T10:56:39.261531+00:00",
+      "exit_code": 0,
+      "started_utc": "2026-09-09T10:56:37.717570+00:00",
+      "stderr": "",
+      "stdout": "PASS_BOUNDED_SYMBOLIC_IDENTITIES\nphysics_disposition={'RCP-C0': 'CONTROL_REPRODUCED_NO_STANDALONE_MOND_LAW', 'RCP-I1-C': 'HEALTHY_LINEAR_PROBE_DOMAIN_FREE_FUNCTION_NORMALIZATION', 'gravitating_background': 'BLOCKED_NONZERO_ENTHALPY_FIXED_BACKGROUND_ONLY', 'physical_metric_reduced_residue': 'NOT_COMPUTED'}\nchecks=30 passed=30\nsummary_sha256=391fcb099453ae493056c786b6f784b857d2b2f0a8f2626c8ed161cdc0f77c10\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+      "working_directory": "<TEMP_ROOT>/baseline_run2/Analysis/MAT/MAT-001/M2M3_U1"
+    }
+  ],
+  "baseline_summary_sha256": [
+    "391fcb099453ae493056c786b6f784b857d2b2f0a8f2626c8ed161cdc0f77c10",
+    "391fcb099453ae493056c786b6f784b857d2b2f0a8f2626c8ed161cdc0f77c10"
+  ],
+  "baseline_tree_comparison": {
+    "content_mismatches": [],
+    "identical": true,
+    "left_only": [],
+    "right_only": []
+  },
+  "candidate_output_trees": [
+    {
+      "m2m3_u1_fixed_background_summary.json": {
+        "sha256": "391fcb099453ae493056c786b6f784b857d2b2f0a8f2626c8ed161cdc0f77c10",
+        "size": 6538
+      },
+      "m2m3_u1_fixed_background_summary.sha256": {
+        "sha256": "d2a81b11aac31a425401fb1facb4c4f85183e13da69e30efa0a0050d7478a4bc",
+        "size": 104
+      },
+      "m2m3_u1_fixed_background_summary_v2.json": {
+        "sha256": "69c2ffff9aea3137d32c9ae237316d62ab607b4a1b73d2a0f25d851658ebfce7",
+        "size": 13827
+      },
+      "m2m3_u1_fixed_background_summary_v2.sha256": {
+        "sha256": "ee06030a2019a80e5e2a8875c2af58657f3640cec9240779278361a1960b6ebb",
+        "size": 107
+      }
+    },
+    {
+      "m2m3_u1_fixed_background_summary.json": {
+        "sha256": "391fcb099453ae493056c786b6f784b857d2b2f0a8f2626c8ed161cdc0f77c10",
+        "size": 6538
+      },
+      "m2m3_u1_fixed_background_summary.sha256": {
+        "sha256": "d2a81b11aac31a425401fb1facb4c4f85183e13da69e30efa0a0050d7478a4bc",
+        "size": 104
+      },
+      "m2m3_u1_fixed_background_summary_v2.json": {
+        "sha256": "69c2ffff9aea3137d32c9ae237316d62ab607b4a1b73d2a0f25d851658ebfce7",
+        "size": 13827
+      },
+      "m2m3_u1_fixed_background_summary_v2.sha256": {
+        "sha256": "ee06030a2019a80e5e2a8875c2af58657f3640cec9240779278361a1960b6ebb",
+        "size": 107
+      }
+    }
+  ],
+  "candidate_runs": [
+    {
+      "command": "<ITSM_PYTHON> <TEMP_ROOT>/candidate_run1/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py",
+      "duration_seconds": 1.574305,
+      "ended_utc": "2026-09-09T10:56:40.883533+00:00",
+      "exit_code": 0,
+      "started_utc": "2026-09-09T10:56:39.309228+00:00",
+      "stderr": "",
+      "stdout": "PASS_SEMANTIC_V2_IDENTITIES\nchecks=32 passed=32\nsummary_v2_sha256=69c2ffff9aea3137d32c9ae237316d62ab607b4a1b73d2a0f25d851658ebfce7\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+      "working_directory": "<TEMP_ROOT>/candidate_run1/Analysis/MAT/MAT-001/M2M3_U1"
+    },
+    {
+      "command": "<ITSM_PYTHON> <TEMP_ROOT>/candidate_run2/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py",
+      "duration_seconds": 1.436563,
+      "ended_utc": "2026-09-09T10:56:42.320188+00:00",
+      "exit_code": 0,
+      "started_utc": "2026-09-09T10:56:40.883625+00:00",
+      "stderr": "",
+      "stdout": "PASS_SEMANTIC_V2_IDENTITIES\nchecks=32 passed=32\nsummary_v2_sha256=69c2ffff9aea3137d32c9ae237316d62ab607b4a1b73d2a0f25d851658ebfce7\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+      "working_directory": "<TEMP_ROOT>/candidate_run2/Analysis/MAT/MAT-001/M2M3_U1"
+    }
+  ],
+  "candidate_script_sha256": "3c6b3e1706ea3a067932bc81c4495299e412c8aad61a405bac4b4078e687b851",
+  "candidate_summary_sha256": [
+    "69c2ffff9aea3137d32c9ae237316d62ab607b4a1b73d2a0f25d851658ebfce7",
+    "69c2ffff9aea3137d32c9ae237316d62ab607b4a1b73d2a0f25d851658ebfce7"
+  ],
+  "candidate_tree_comparison": {
+    "content_mismatches": [],
+    "identical": true,
+    "left_only": [],
+    "right_only": []
+  },
+  "code_to_claim_limits": [
+    "The v2 result verifies fixed-background scalar identities only.",
+    "The independent matrix comparison verifies eigenfrequencies, not a metric-reduced physical residue.",
+    "No force normalization, K_Q, V, screening, PPN, lensing or a_0 is derived.",
+    "A calculation pass is not a physics-gate pass."
+  ],
+  "environment": {
+    "mpmath_version": "1.3.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_executable": "C:\\Users\\brend\\anaconda3\\envs\\itsm_env\\python.exe",
+    "python_version": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "sympy_version": "1.14.0"
+  },
+  "gate_boundary": {
+    "K_Q": "NOT_DERIVED",
+    "MAT-001": "BLOCKED",
+    "UVIR-003": "IN_PROGRESS",
+    "V": "NOT_COMPUTED",
+    "gate_effect": "NONE"
+  },
+  "mutation_declaration_before_execution": [
+    "MUT_01_KINETIC_MIXING",
+    "MUT_02_DELETE_SQRT2_SOURCE",
+    "MUT_03_DIMENSION_R_POWER",
+    "MUT_04_REVERSE_GRADIENT_SIGN",
+    "MUT_05_SPHERE_NUMERATOR",
+    "MUT_06_SIDECAR_BYTE_MUTATION",
+    "MUT_07_EXTRA_RUN2_FILE",
+    "MUT_08_MARKDOWN_FORMULA",
+    "MUT_09_REVERSE_K4_SIGN"
+  ],
+  "mutation_results": {
+    "MUT_01_KINETIC_MIXING": {
+      "detected": true,
+      "execution": {
+        "command": "<ITSM_PYTHON> <TEMP_ROOT>/mut_01_kinetic_mixing/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py --mutation MUT_01_KINETIC_MIXING",
+        "duration_seconds": 1.440372,
+        "ended_utc": "2026-09-09T10:56:43.823369+00:00",
+        "exit_code": 1,
+        "started_utc": "2026-09-09T10:56:42.382997+00:00",
+        "stderr": "FAILED_CHECKS=['independent_hamiltonian_roots']\n",
+        "stdout": "FAIL_SEMANTIC_V2_IDENTITIES\nchecks=32 passed=31\nsummary_v2_sha256=96fae471cf550b82983d6cce5bd06a628fa8c277290b805364a8aab1c4783d69\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+        "working_directory": "<TEMP_ROOT>/mut_01_kinetic_mixing/Analysis/MAT/MAT-001/M2M3_U1"
+      }
+    },
+    "MUT_02_DELETE_SQRT2_SOURCE": {
+      "detected": true,
+      "execution": {
+        "command": "<ITSM_PYTHON> <TEMP_ROOT>/mut_02_delete_sqrt2_source/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py --mutation MUT_02_DELETE_SQRT2_SOURCE",
+        "duration_seconds": 1.428719,
+        "ended_utc": "2026-09-09T10:56:45.275157+00:00",
+        "exit_code": 1,
+        "started_utc": "2026-09-09T10:56:43.846438+00:00",
+        "stderr": "FAILED_CHECKS=['canonical_source_matches_field_chart', 'lower_pole_overlap_low_k']\n",
+        "stdout": "FAIL_SEMANTIC_V2_IDENTITIES\nchecks=32 passed=30\nsummary_v2_sha256=634524e36636be7fdaa448f11107e7ef58c8c9c62aec3b472c17178c13a630bb\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+        "working_directory": "<TEMP_ROOT>/mut_02_delete_sqrt2_source/Analysis/MAT/MAT-001/M2M3_U1"
+      }
+    },
+    "MUT_03_DIMENSION_R_POWER": {
+      "detected": true,
+      "execution": {
+        "command": "<ITSM_PYTHON> <TEMP_ROOT>/mut_03_dimension_r_power/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py --mutation MUT_03_DIMENSION_R_POWER",
+        "duration_seconds": 1.370333,
+        "ended_utc": "2026-09-09T10:56:46.664130+00:00",
+        "exit_code": 1,
+        "started_utc": "2026-09-09T10:56:45.293797+00:00",
+        "stderr": "FAILED_CHECKS=['dimension_weak_distortion_zero']\n",
+        "stdout": "FAIL_SEMANTIC_V2_IDENTITIES\nchecks=32 passed=31\nsummary_v2_sha256=aa23499d2b6bfce73e98e17ecc92f542e6c5b5b5dc598d6e502ddcd47c491faa\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+        "working_directory": "<TEMP_ROOT>/mut_03_dimension_r_power/Analysis/MAT/MAT-001/M2M3_U1"
+      }
+    },
+    "MUT_04_REVERSE_GRADIENT_SIGN": {
+      "detected": true,
+      "execution": {
+        "command": "<ITSM_PYTHON> <TEMP_ROOT>/mut_04_reverse_gradient_sign/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py --mutation MUT_04_REVERSE_GRADIENT_SIGN",
+        "duration_seconds": 1.331257,
+        "ended_utc": "2026-09-09T10:56:48.014475+00:00",
+        "exit_code": 1,
+        "started_utc": "2026-09-09T10:56:46.683218+00:00",
+        "stderr": "FAILED_CHECKS=['lower_pole_overlap_low_k', 'healthy_domain_has_nonnegative_root_product']\n",
+        "stdout": "FAIL_SEMANTIC_V2_IDENTITIES\nchecks=32 passed=30\nsummary_v2_sha256=400c46d2666234990ead93936f409d42cbc5b380a0598ec7013d6b31663f21e6\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+        "working_directory": "<TEMP_ROOT>/mut_04_reverse_gradient_sign/Analysis/MAT/MAT-001/M2M3_U1"
+      }
+    },
+    "MUT_05_SPHERE_NUMERATOR": {
+      "detected": true,
+      "execution": {
+        "command": "<ITSM_PYTHON> <TEMP_ROOT>/mut_05_sphere_numerator/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py --mutation MUT_05_SPHERE_NUMERATOR",
+        "duration_seconds": 1.45611,
+        "ended_utc": "2026-09-09T10:56:49.491432+00:00",
+        "exit_code": 1,
+        "started_utc": "2026-09-09T10:56:48.035322+00:00",
+        "stderr": "FAILED_CHECKS=['uniform_sphere_charge_forms_agree', 'uniform_sphere_weak_limit']\n",
+        "stdout": "FAIL_SEMANTIC_V2_IDENTITIES\nchecks=32 passed=30\nsummary_v2_sha256=bf3e4fcfe67443288b1c71eb90484d4b3b10a84ccf7b1ae928ff0985a2d7ae63\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+        "working_directory": "<TEMP_ROOT>/mut_05_sphere_numerator/Analysis/MAT/MAT-001/M2M3_U1"
+      }
+    },
+    "MUT_06_SIDECAR_BYTE_MUTATION": {
+      "detected": true,
+      "execution": {
+        "command": "<ITSM_PYTHON> <TEMP_ROOT>/mut_06_sidecar_byte_mutation/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py",
+        "duration_seconds": 1.398004,
+        "ended_utc": "2026-09-09T10:56:52.325395+00:00",
+        "exit_code": 1,
+        "started_utc": "2026-09-09T10:56:50.927391+00:00",
+        "stderr": "FAILED_CHECKS=['sealed_sidecars_match']\n",
+        "stdout": "FAIL_SEMANTIC_V2_IDENTITIES\nchecks=32 passed=31\nsummary_v2_sha256=5a637f0a4031634af3a04482f85eca5543185bc49ba9cf01408c8a0d2a8254b4\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+        "working_directory": "<TEMP_ROOT>/mut_06_sidecar_byte_mutation/Analysis/MAT/MAT-001/M2M3_U1"
+      },
+      "mutated_target": "Analysis/MAT/MAT-001/M2M3_U1/outputs/m2m3_u1_fixed_background_summary.json"
+    },
+    "MUT_07_EXTRA_RUN2_FILE": {
+      "detected": true,
+      "tree_comparison": {
+        "content_mismatches": [],
+        "identical": false,
+        "left_only": [],
+        "right_only": [
+          "extra_unsolicited_artifact.txt"
+        ]
+      }
+    },
+    "MUT_08_MARKDOWN_FORMULA": {
+      "detected": true,
+      "execution": {
+        "command": "<ITSM_PYTHON> <TEMP_ROOT>/mut_08_markdown_formula/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py",
+        "duration_seconds": 1.370012,
+        "ended_utc": "2026-09-09T10:56:53.714394+00:00",
+        "exit_code": 1,
+        "started_utc": "2026-09-09T10:56:52.344382+00:00",
+        "stderr": "FAILED_CHECKS=['parsed_radial_mass_matches_report', 'sealed_sidecars_match']\n",
+        "stdout": "FAIL_SEMANTIC_V2_IDENTITIES\nchecks=32 passed=30\nsummary_v2_sha256=c980d744ab76e3d6d0649777177f9f5469dfaae67c01e5539e8fc46bf95e9f77\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+        "working_directory": "<TEMP_ROOT>/mut_08_markdown_formula/Analysis/MAT/MAT-001/M2M3_U1"
+      },
+      "replacement_count": 1
+    },
+    "MUT_09_REVERSE_K4_SIGN": {
+      "detected": true,
+      "execution": {
+        "command": "<ITSM_PYTHON> <TEMP_ROOT>/mut_09_reverse_k4_sign/Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py --mutation MUT_09_REVERSE_K4_SIGN",
+        "duration_seconds": 1.394431,
+        "ended_utc": "2026-09-09T10:56:50.904781+00:00",
+        "exit_code": 1,
+        "started_utc": "2026-09-09T10:56:49.510350+00:00",
+        "stderr": "FAILED_CHECKS=['positive_low_k_k4_symbolic']\n",
+        "stdout": "FAIL_SEMANTIC_V2_IDENTITIES\nchecks=32 passed=31\nsummary_v2_sha256=b6a2c6ab8c8a5e25c36a5e1cedef388f55480fb4a306c9f6d25d1990ad1f6fba\nMAT-001=BLOCKED K_Q=NOT_DERIVED V=NOT_COMPUTED gate_effect=NONE\n",
+        "working_directory": "<TEMP_ROOT>/mut_09_reverse_k4_sign/Analysis/MAT/MAT-001/M2M3_U1"
+      }
+    }
+  },
+  "package": "A-B4R_CODEX_PARENT_REPAIR_AND_AUDIT",
+  "primary_classification": "VERIFIER_V2_CANDIDATE_COMPLETE_ALL_PREDECLARED_MUTATIONS_DETECTED",
+  "schema_version": "1.0",
+  "source_copy_byte_equality": {
+    "Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks.py": true,
+    "Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks.py.sha256": true,
+    "Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py": true,
+    "Analysis/MAT/MAT-001/M2M3_U1/outputs/m2m3_u1_fixed_background_summary.json": true,
+    "Analysis/MAT/MAT-001/M2M3_U1/outputs/m2m3_u1_fixed_background_summary.sha256": true,
+    "GEMINI.md": true,
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": true,
+    "Theory/Core/Reasoning_Mode_Plans/03_MAX_BOUNDED_EXACT_REDUCTIONS/PLAN.md": true,
+    "Theory/Core/Reasoning_Mode_Plans/Handoffs/ANTIGRAVITY_HANDOFF_A-B4_VERIFIER_REPAIR.md": true,
+    "Theory/Core/Reasoning_Mode_Plans/Handoffs/ANTIGRAVITY_HANDOFF_A-B4_VERIFIER_REPAIR.md.sha256": true,
+    "Theory/Core/Reasoning_Mode_Plans/Handoffs/HANDOFF_SHA256.md": true,
+    "Theory/Core/Reasoning_Mode_Plans/README.md": true,
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_HIGH_HANDOFF_2026-09-05.md": true,
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_MAX_FIXED_BACKGROUND_REDUCTION_2026-09-05.md": true,
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_MAX_FIXED_BACKGROUND_REDUCTION_2026-09-05.md.sha256": true,
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_RCP0_ACTION_LEDGER_2026-09-05.md": true,
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_RCP0_ACTION_LEDGER_2026-09-05.md.sha256": true,
+    "Theory/Verification/G-A4_A-B3_ROLE_C_ADJUDICATION_2026-09-05.md": true,
+    "Theory/Verification/G-A4_A-B3_ROLE_C_ADJUDICATION_2026-09-05.md.sha256": true,
+    "active_research.md": true
+  },
+  "source_inventory": {
+    "Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks.py": {
+      "sha256": "50a6bd0242c227c9287ae178bc772d391ae282de3adf9dbe4f91e9d7e046dd0f",
+      "size": 17770
+    },
+    "Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks.py.sha256": {
+      "sha256": "d0998a8ce3aafbf84147356a2794131f6f4e0b28f34ac9c2af7de63c633dd1c3",
+      "size": 101
+    },
+    "Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks_v2.py": {
+      "sha256": "3c6b3e1706ea3a067932bc81c4495299e412c8aad61a405bac4b4078e687b851",
+      "size": 25760
+    },
+    "Analysis/MAT/MAT-001/M2M3_U1/outputs/m2m3_u1_fixed_background_summary.json": {
+      "sha256": "391fcb099453ae493056c786b6f784b857d2b2f0a8f2626c8ed161cdc0f77c10",
+      "size": 6538
+    },
+    "Analysis/MAT/MAT-001/M2M3_U1/outputs/m2m3_u1_fixed_background_summary.sha256": {
+      "sha256": "d2a81b11aac31a425401fb1facb4c4f85183e13da69e30efa0a0050d7478a4bc",
+      "size": 104
+    },
+    "GEMINI.md": {
+      "sha256": "5660cd00371b51566c63d07bcaed76b443c450220fc9ff5269fb61635fe183e7",
+      "size": 6934
+    },
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": {
+      "sha256": "82fb9e195fbcaf7f1ae5edfecf9b3ab08f9d708d18b9403ae085c636ba7306c8",
+      "size": 8935
+    },
+    "Theory/Core/Reasoning_Mode_Plans/03_MAX_BOUNDED_EXACT_REDUCTIONS/PLAN.md": {
+      "sha256": "0abc902c36f18ff3e081bcaa7bb96d3347a3e44974cc10aa7988c86dce750894",
+      "size": 4684
+    },
+    "Theory/Core/Reasoning_Mode_Plans/Handoffs/ANTIGRAVITY_HANDOFF_A-B4_VERIFIER_REPAIR.md": {
+      "sha256": "d49b2263076f6929da2ec415ab44cd5a03f63d1708e4cd42bcf9afa9e9f7177d",
+      "size": 7596
+    },
+    "Theory/Core/Reasoning_Mode_Plans/Handoffs/ANTIGRAVITY_HANDOFF_A-B4_VERIFIER_REPAIR.md.sha256": {
+      "sha256": "a30d3eeefe69d1625512748669fd4d057c8ae99078aaff7a569f52b3e51a5a27",
+      "size": 110
+    },
+    "Theory/Core/Reasoning_Mode_Plans/Handoffs/HANDOFF_SHA256.md": {
+      "sha256": "4decc543cc996ab209fd5b4da7b06e1c21ad81c9a2052633fdd54291acbccb2d",
+      "size": 4266
+    },
+    "Theory/Core/Reasoning_Mode_Plans/README.md": {
+      "sha256": "29b3e4468b4e718423106bb2e8e28e6719d41af1b9cd45f457a8e14f833e0523",
+      "size": 5190
+    },
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_HIGH_HANDOFF_2026-09-05.md": {
+      "sha256": "220f7302299e4e2ba9921a9a315f6eb04aa4e358c4f8e1ad56704b92bf11e098",
+      "size": 1570
+    },
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_MAX_FIXED_BACKGROUND_REDUCTION_2026-09-05.md": {
+      "sha256": "beb2bbbb65999e99c85cf7758ebb6eb0921409c4e09dd07f04b20d37ba12e7b2",
+      "size": 19786
+    },
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_MAX_FIXED_BACKGROUND_REDUCTION_2026-09-05.md.sha256": {
+      "sha256": "aae8faf628b3452e4a214758370c72eea0ffc175793b292a07f44c08ad3f20ae",
+      "size": 119
+    },
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_RCP0_ACTION_LEDGER_2026-09-05.md": {
+      "sha256": "d753a8ff3192d5842c6f1a86d18321cedbb8f484764f323e008654911d01f523",
+      "size": 9496
+    },
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_RCP0_ACTION_LEDGER_2026-09-05.md.sha256": {
+      "sha256": "e46a981e74f92c951febd776e3ed3234c3171f6d2683841d4a13079cca5c8724",
+      "size": 107
+    },
+    "Theory/Verification/G-A4_A-B3_ROLE_C_ADJUDICATION_2026-09-05.md": {
+      "sha256": "87246244271e8ac33365ce77d769be17d77f1fced64b9415f4f2e2cb182b4a2c",
+      "size": 9846
+    },
+    "Theory/Verification/G-A4_A-B3_ROLE_C_ADJUDICATION_2026-09-05.md.sha256": {
+      "sha256": "b461ba71871f879bbb6bfafb52666b6b8efde93c24df6a36aa48a493855c9750",
+      "size": 110
+    },
+    "active_research.md": {
+      "sha256": "ef905e26b3cfd5506c5752621029b549965e193fe4d6d3dc7f76ed3dd364d433",
+      "size": 25801
+    }
+  },
+  "temporary_execution": {
+    "retained_after_audit": false,
+    "root": "OS-managed unique directory; normalized as <TEMP_ROOT>"
+  }
+}

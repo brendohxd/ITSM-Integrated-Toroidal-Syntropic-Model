@@ -160,7 +160,9 @@ residuals are `2.96e-16` and `4.39e-16`, respectively.
 
 ```powershell
 conda activate itsm_env
-python cbr001_stage3b_ratio_test.py
+python cbr001_stage3b_ratio_test.py `
+  --stage2-csv stage2_outputs\cbr001_stage2_scan.csv `
+  --output-dir stage3b_outputs
 ```
 
 Outputs are written under `stage3b_outputs/`.

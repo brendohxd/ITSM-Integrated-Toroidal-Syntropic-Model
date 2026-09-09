@@ -1,7 +1,7 @@
 # Active Research & Gate Dashboard
 
 **Canonical Authority Baseline:** `v12.0-alpha.12`  
-**Current Date:** 01 September 2026  
+**Current Date:** 09 September 2026
 **Operating Policy:** Strict Fail-Closed (Rules 1, 3, 6, 7, 8, 9)
 
 ---
@@ -21,7 +21,7 @@
 | **TOP-001 / CBR-002** | `SCOPED_NEGATIVE_FREE_DILUTION` | Canonical CBR-001 retains the free-dilution negative result. The repaired c50 claim audit proves the advertised driven state is not stationary for nonzero $\eta$; $\eta=0.375$ gives the algebraic ratio 1.0882, while $13/12$ would require $\eta=27/76$, still with nonzero $\dot\beta$. |
 | **VOR-001** | `OPEN_SCAFFOLD` | Bogoliubov acoustic phonons on $\mathbb{T}^3$; macroscopic circulation matching remains open. |
 | **WAK-001** | `KINEMATIC_RETARDED_FIELD_CONTROL_ONLY` | A dimensionally consistent 3D damped scalar-field control now runs with prescribed sources. It is not hydrodynamics, a cluster simulation, or metric lensing; the matter coupling, shocks, and photon observable remain open. |
-| **RES-001** | `PHENOMENOLOGICAL_TWO_BATH_GKSL_CONTROL_ONLY` | A paired-rate two-thermal-bath GKSL control satisfies local detailed balance and sampled Spohn checks. Its bath spectra and temperatures are inputs; no microscopic ITSM Hamiltonian or $Q^\mu$ is derived. |
+| **RES-001** | `PHENOMENOLOGICAL_GKSL_STEADY_STATE_CONTROL_ONLY` | The tracked toy has a small stationary-state residual for an inserted single-mode GKSL generator. The advertised two-bath local-detailed-balance and Spohn tests are not implemented: $T_{\rm syn}$ is unused and its pump rate is inserted. No microscopic ITSM Hamiltonian, covariant reservoir stress or $Q^\mu$ is derived; no constitutive route is selected. |
 | **ASTRO-001** | `NEWTONIAN_SINGLE_SCALE_LOGNORMAL_CONTROL_ONLY` | The stated cloud gives a Newtonian thermal Jeans mass of 47.87 $M_\odot$; the unclipped single-scale lognormal control yields a raw high-mass slope $\Gamma=+0.775$, not Salpeter. No ITSM IMF or mass-to-light ratio is computed. |
 | **COS-001 / PERT-001** | `PROXY_CALIBRATION_ONLY` | Unmodified CAMB $\Lambda$CDM gives $\sigma_8=0.809386$ and $r_*=144.575$ Mpc for the declared inputs. No ITSM Boltzmann hierarchy, transfer functions, or $S_8$ prediction is computed. |
 
@@ -33,7 +33,38 @@ closures**. The invariant residue remains uncomputed, the quoted contact term
 is not the complete constrained physical amplitude, and downstream proxy runs
 cannot inherit a pass. SHA-256 integrity proves file identity, not physics.
 
-### Current Tier-1 critical path
+### Current operator-priority route — TOP-X4 / KK-001
+
+New derivation work is redirected to the controlled higher-dimensional fork
+`R_t x T3_obs x S1_y`. `X4-D0` passed its 14-check kinematic/dimensional
+control. The frozen `X4-I1C` bulk-scalar control then passed a 9/9 independent
+symbolic metric/action audit and a 7/7 finite-charge on-shell background test.
+Max A2/A3 recovered healthy bounded scalar/KK identities but also an exact
+classical radion runaway: the static-circle condition is incompatible with
+the registered positive potential, the A1 radius runs, the massless bosonic
+Casimir balance is a maximum, and no EFT hierarchy is established. Current
+status: the original parent remains `X4-D2 HOLD_UNSTABILIZED`; A4 and Ultra
+entry are closed.
+
+The completed High stabilization prescreen found that a changed Mexican-hat
+winding sector can conditionally stabilize `AdS4 x S1`, so the broad claim
+that winding can never stabilize a circle is rejected. That control has zero
+temporal charge and was not selected. The only frozen retry is `X4-S2F3`,
+which adds three periodic massive 5D Dirac spectators. Its 8/8 algebraic/sign
+prescreen exhibits a dimensionless stationary minimum and nonempty cutoff
+domain, but no determinant or finite-charge stabilized background has yet been
+calculated. Status: `X4-S2F3 FROZEN_FOR_ONE_MAX_RETRY`, `physics_pass=false`.
+
+Existing P2, MAT, UVIR, VOR and RES artifacts and statuses are preserved but
+their queued research and external dispatches are paused. No downstream
+observation, publication or canonical-identity revision opens from the A0--A3
+control results. A retry requires a separately frozen stabilization sector at
+High, not an alteration of the completed Max calculation. Authority:
+`Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md`.
+The registered next task is
+`Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md`.
+
+### Previously active Tier-1 critical path — preserved, temporarily suspended
 
 1. Run the one bounded PKM1 metric-hosted condensate-foliation parent test
    specified in `Theory/Core/ITSM_PKM1_BROAD_ROUTE_DECISION_2026-08-25.md`.
@@ -44,6 +75,74 @@ cannot inherit a pass. SHA-256 integrity proves file identity, not physics.
    proceed to PPN, Shapiro delay, lensing, GW and topology/winding tests.
 4. Keep DISK, STAT and cosmology as comparator/methods work until those
    upstream tests close.
+5. In parallel only, run the cheap screens activated in
+   `Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md` (U3, M4,
+   U5–U7). A screen pass does not compute \(V\), derive \(K_Q\), or open a
+   gate.
+
+### 6 September 2026 — M2/M3-U1 verifier and S6 checkpoint
+
+- Grok `G-A5` supports only
+  `S6_SHAPE_CONDITIONAL_ON_UNPROTECTED_TUNING`: a symmetry-allowed positive
+  quartic restores quadratic infrared behaviour, while the `3/2` interval
+  requires a sextic-dominated Wilsonian hierarchy that has not been derived.
+- The completed old-session Antigravity `A-B4` verifier is rejected. It used
+  the wrong low-`k` `k^4` sign and did not enforce the advertised semantic
+  checks. The fresh external rerun terminated without a valid final report.
+- The local replacement verifier passes 32/32 semantic checks in two isolated
+  runs and detects 9/9 registered mutations. This validates local tooling only;
+  it is not independent Role-B confirmation and is not a physics pass.
+- `MAT-001 BLOCKED`, `UVIR-003 IN_PROGRESS`, `K_Q NOT_DERIVED` and
+  `V=C_m/sqrt(K_Q) NOT_COMPUTED` are unchanged. The conditional pure-S6 route
+  does not open RCP-2 or justify Ultra coupled-metric work.
+- Binding adjudication:
+  `Theory/Verification/G-A5_A-B4R_ROLE_C_ADJUDICATION_2026-09-06.md`.
+
+### 6 September 2026 — P2 repair and evidence-watch checkpoint
+
+- The P2/CBR-001 local pipeline now has portable LF CSV output, relative JSON
+  paths, explicit Stage-2 chaining, two byte-identical isolated runs, and a
+  narrowed instantaneous-closure manuscript/PDF candidate checked page by
+  page. The headline numerical result is unchanged: zero attractors, zero
+  quasi-plateaus, five transient threshold passages, two no-crossings and one
+  invalid boundary trajectory in the declared Stage-3B scan.
+- This is local repair evidence only. P2 remains on publication hold pending
+  independent Role-A normalization/closure review, restricted Role-B
+  execution, sensitivity checks and an independent noncubic evaluator.
+- Six primary-source records dated 2--3 September were integrated into the
+  Tier-1 test programme. They require a pure-dark-matter-replacement
+  falsification clause, a nested-null `Q^mu` analysis, a distinct GW-friction
+  contract, and later JWST/Euclid/time-delay controls. None changes an upstream
+  gate or justifies diverting derivation work from `MAT-001`/`UVIR-003`.
+
+### 9 September 2026 — TOP-X4 Plan 11 static checkpoint and entry hold
+
+- The frozen `X4-S2F3` Plan 11 static parity-even determinant checkpoint passed
+  `12/12` bounded calculation checks with
+  `PASS_STATIC_PARITY_EVEN_DETERMINANT_HOLD_PARITY_ODD_AND_FINITE_CHARGE`.
+  The equal-mass `N_F=3` witness is
+  `x=2.53067902130963261758981684772`,
+  `alpha=0.0105888717092240159635357605738`,
+  `f_second=4.1680216387683411009576707474`, with cutoff ratio
+  `0.0993122439356694493372858780888` at `m_F/Lambda_5=0.04`.
+- This is a zero-density, static `Minkowski4 x S1` parity-even determinant
+  result only. Parity-odd phase/anomaly data, the finite-charge determinant and
+  state-dependent stress tensor, evolving-state convergence, coupled
+  metric-radion-amplitude-phase constraints and the physical Hessian remain
+  open. The checkpoint has `physics_pass=false` and `gate_effect=NONE`.
+- The finite-charge entry gate revalidated A1/A2/A3 and the static checkpoint
+  with `9/9` checks, then returned
+  `HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`. It does not import
+  the static determinant into a dynamic background and does not advance to
+  finite-charge completion, A4 or Ultra.
+- Rule 9 three-way clearance is not met for this checkpoint. Role A completed a
+  bounded review; Roles B and C returned usage-limit errors with no reports.
+  The route remains a hold, and no downstream gate, observation, publication
+  or canonical-identity status changes.
+- Authoritative receipts:
+  `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_STATIC_CHECKPOINT_RECEIPT_2026-09-09.md`
+  and
+  `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_ENTRY_GATE_RECEIPT_2026-09-09.md`.
 
 ---
 ### Historical Archive: Gate Dashboard as of 2026-08-07 (provenance only)

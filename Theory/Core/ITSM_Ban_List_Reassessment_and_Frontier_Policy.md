@@ -56,8 +56,9 @@ The September c50 repair provides bounded controls only:
   point;
 - a dimensionally consistent 3D retarded scalar-field kinematic control, not
   hydrodynamics or lensing;
-- a detailed-balance two-thermal-bath GKSL control, not a microscopic ITSM
-  reservoir or $Q^\mu$;
+- an inserted single-mode GKSL steady-state control; the claimed two-bath
+  detailed-balance/Spohn suite is unimplemented, and no microscopic ITSM
+  reservoir or $Q^\mu$ follows;
 - a Newtonian single-scale lognormal fragmentation baseline that does not
   recover a Salpeter high-mass tail;
 - outcome-independent SPARC comparator optimization with no MCMC and no ITSM
@@ -87,3 +88,10 @@ constraint analysis defined in
 `Theory/Core/ITSM_PKM1_BROAD_ROUTE_DECISION_2026-08-25.md`. No local-gravity,
 lensing, disk, SPARC, cosmology or publication stage opens unless that route
 survives its stated kill criteria and a separate signed gate decision.
+
+Parallel cheap screens, activated 2026-09-04 and subordinate to that PKM1
+decision, are U3 (Track-B operator controls), M4 (direct residue identity),
+U5 (covariant phase-space rewrite), U6 (Cartan/teleparallel A0–A2 host
+screen), and U7 (truncated \(T^3\) rank table). Specs:
+`Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md`. A cheap-screen
+pass does not compute \(V\) or open a gate.

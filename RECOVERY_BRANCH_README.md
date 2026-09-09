@@ -5,6 +5,23 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
+## Current evidence snapshot (2026-09-09)
+
+The branch remains fail-closed. `MAT-001` is `BLOCKED`, `UVIR-003` is
+`IN_PROGRESS`, `K_Q` is `NOT_DERIVED`, and `V` is `NOT_COMPUTED`. The current
+operator-priority fork is `TOP-X4 / KK-001`: its frozen `X4-S2F3` Plan 11
+static parity-even determinant checkpoint passed 12/12 bounded calculation
+checks, while the finite-charge entry gate passed 9/9 policy/provenance checks
+and correctly returned
+`HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`. No A4, Ultra,
+phenomenology, publication or canonical-model revision is opened.
+
+The current RES-001 control is a quarantined single-mode GKSL steady-state toy,
+not a two-bath detailed-balance/Spohn derivation. The P2/CBR-001 repair is a
+local reproducibility candidate on publication hold. The TOP-X4 Plan 11
+Rule-9 review is incomplete: Role A completed, while Roles B and C returned
+usage-limit errors and produced no reports.
+
 ## Start here
 
 - **GitHub Pages (recovery site):** `docs/` — custom domain **itsm-cosmology.com**
@@ -15,12 +32,21 @@ not the scientific status authority for this branch.
 - Recovery plan (gate detail): `Theory/Core/ITSM_Core_Recovery_Plan.md`
 - Claim migration ledger: `Theory/Core/ITSM_Claim_Migration_Ledger.csv`
 - Gate worklog: `Theory/Gates/RECOVERY_SESSION_WORKLOG.md`
+- Active dashboard: `active_research.md`
+- Current release notes: `CHANGELOG.md`
 - Selective publishing firewall: `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md`
 - Manuscript workflow: `Manuscript/CoreRecovery/README.md`
 - Manuscript changes: `Manuscript/CoreRecovery/CHANGELOG.md`
 - Current bounded execution queue: `Theory/Core/ITSM_Recovery_Execution_Queue.md`
+- Current TOP-X4 route: `Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md`
+- Current TOP-X4 Plan 11 receipts: `Analysis/TOP/TOP-X4/`
 
-## Manuscript status
+## Historical manuscript package (provenance only)
+
+The compiled v12.0 manuscript and staged paper suite below remain preserved
+artifacts. Their historical gate descriptions are not the current scientific
+status authority; use the evidence snapshot above, `active_research.md` and the
+owning gate reports for live work.
 
 The authoritative core publication manuscript is
 [`ITSM_Core_Cosmology_v12.0`](Manuscript/ITSM_Core_Cosmology_v12.0.pdf)

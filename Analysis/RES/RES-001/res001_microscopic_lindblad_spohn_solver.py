@@ -1,20 +1,27 @@
 #!/usr/bin/env python3
-"""RES-001: Phenomenological 2-Mode GKSL Lindblad Master Equation Toy Model.
+"""QUARANTINED: phenomenological single-mode GKSL steady-state toy.
+
+TIER-1 AUDIT NOTICE (2026-09-05):
+  The code below does not implement the advertised two-bath local-detailed-
+  balance or Spohn-functional tests. T_SYN is unused and GAMMA_SYN is an
+  inserted unpaired pump. The stored result is a steady-state numerical
+  control only. Do not cite it as a microscopic reservoir, two-bath thermal
+  model, Spohn verification, covariant Q_syn derivation, or physics-gate pass.
 
 DISCLAIMER / SCOPE:
   This script is a PHENOMENOLOGICAL OPEN-QUANTUM TOY MODEL, NOT a microscopic derivation
   from quantum gravity.
   
 Key Findings & Honest Limitations:
-  1. Solves the GKSL Lindblad master equation for a 2-mode Kerr system with inserted thermal
+  1. Solves a GKSL master equation for a single truncated Kerr mode with inserted thermal
      and syntropic dissipation rates.
   2. Finds an exact numerical non-equilibrium steady state (NESS) with nullspace residual
      ||L(rho_ss)||_2 = 7.14e-17.
-  3. Verifies CPTP invariants and Spohn's inequality with respect to the NESS invariant state
-     (sigma_NESS = 0.3315 >= 0).
+  3. Checks one numerical stationary state's trace, Hermiticity and eigenvalues.
+     It does not evaluate the Spohn functional or prove a two-bath second law.
   4. The microscopic bath couplings and physical syntropic reservoir Hamiltonian remain OPEN.
 
-Strictly adheres to GEMINI.md Rules 1, 3, 4, 6 (Fail-closed, exact measured outputs).
+The 2026-09-05 audit, not the historical docstring, controls interpretation.
 """
 
 import json
@@ -93,7 +100,7 @@ def compute_steady_state(L_total, dim=N_FOCK):
 
 def run_reservoir_suite():
     print("================================================================================")
-    print("RES-001: Phenomenological 2-Mode GKSL Master Equation Toy Model")
+    print("RES-001: Phenomenological Single-Mode GKSL Master Equation Toy Model")
     print("================================================================================")
     
     rates = derive_microscopic_rates()
@@ -121,7 +128,7 @@ def run_reservoir_suite():
     
     output_data = {
         "gate": "RES-001",
-        "description": "Phenomenological 2-mode GKSL Lindblad master equation toy model",
+        "description": "Phenomenological single-mode truncated Kerr GKSL steady-state toy model",
         "inserted_parameters": {
             "T_bath": T_BATH,
             "T_syn": T_SYN,
@@ -138,7 +145,13 @@ def run_reservoir_suite():
         },
         "epistemic_verdict": {
             "status": "PHENOMENOLOGICAL_SCAFFOLD",
-            "finding": "The 2-mode GKSL Lindblad toy model achieves an exact numerical steady state (||L(rho)||_2 = 7.14e-17) and CPTP positivity. Microscopic quantum gravity couplings remain open."
+            "finding": (
+                "The single-mode truncated Kerr GKSL toy model achieves an exact "
+                f"numerical steady state (||L(rho)||_2 = {l_norm:.6e}) and a "
+                "positive normalized density matrix. The code checks trace, "
+                "Hermiticity and eigenvalues only; it does not evaluate the "
+                "Spohn functional or derive microscopic quantum-gravity couplings."
+            )
         }
     }
     

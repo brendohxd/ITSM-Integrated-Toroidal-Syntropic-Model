@@ -1,6 +1,6 @@
 {
   "gate": "RES-001",
-  "description": "Phenomenological 2-mode GKSL Lindblad master equation toy model",
+  "description": "Phenomenological single-mode truncated Kerr GKSL steady-state toy model",
   "inserted_parameters": {
     "T_bath": 2.0,
     "T_syn": 10.0,
@@ -9,14 +9,14 @@
     "gamma_syn": 0.015
   },
   "steady_state_metrics": {
-    "liouvillian_nullspace_norm": 7.184363762413706e-17,
+    "liouvillian_nullspace_norm": 9.384427441447302e-17,
     "hermiticity_residual": 0.0,
-    "trace_residual": 0.0,
-    "min_eigenvalue": 0.018314149375856775,
+    "trace_residual": 1.1102230246251565e-16,
+    "min_eigenvalue": 0.01831414937585677,
     "cptp_verified": true
   },
   "epistemic_verdict": {
     "status": "PHENOMENOLOGICAL_SCAFFOLD",
-    "finding": "The 2-mode GKSL Lindblad toy model achieves an exact numerical steady state (||L(rho)||_2 = 7.14e-17) and CPTP positivity. Microscopic quantum gravity couplings remain open."
+    "finding": "The single-mode truncated Kerr GKSL toy model achieves an exact numerical steady state (||L(rho)||_2 = 9.384427e-17) and a positive normalized density matrix. The code checks trace, Hermiticity and eigenvalues only; it does not evaluate the Spohn functional or derive microscopic quantum-gravity couplings."
   }
 }

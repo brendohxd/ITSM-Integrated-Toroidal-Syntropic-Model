@@ -1,10 +1,10 @@
 # ITSM Tier-1 route-testing and recovery programme
 
-**Version:** 1.1-proposed
+**Version:** 1.2-proposed
 
 **Date:** 2026-08-23
 
-**Last evidence integration:** 2026-08-25
+**Last evidence integration:** 2026-09-06 (six downstream benchmarks; no gate change)
 
 **Branch:** `recovery/v12-core-architecture`
 
@@ -178,9 +178,19 @@ G0 authority repair
 | U2 | Exact nonzero-gradient `Y^(3/2)` | Physical modes and full constrained amplitude on declared gradient | Domain covers galaxy regime below cutoff | No overlap with force regime |
 | U3 | Analytic completion/Track-B | Declare altered operator and UV origin; rerun A1-A6 | Derives rather than smooths IR term | Smoothing only manufactures vertices |
 | U4 | Unified condensate-force parent | Integrate out heavy/amplitude modes and match EFT | Same parent yields density, force, normalization | Repeats UVIR-001 no-go/unstable modes |
+| U5 | Covariant phase-space rewrite of frozen PKM1-P0 | Presymplectic current and DOF vs existing ADM count | Rank comparison written; no new kinetic term | Split-artefact “fixed” by inserting operators |
+| U6 | Cartan/teleparallel host of PKM1 identity | A0–A2 tetrad/Weitzenböck action or named incompleteness | Healthy GR+condensate DOF without extra force | Slogan torsion; second expensive parent without a decision |
+| U7 | Truncated \(T^3\) Fourier/difference of P0-B | Mode-truncation rank table, two \(N\) values | Rank visible without \(L=c/H\) or winding-as-coupling | \(2\pi\) or cavity size imported to hit \(a_0\) |
 
 U1 is the highest-value immediate Tier-1 physics task because the quartet lies
 on the present action's viability path.
+
+Cheap-screen activation (2026-09-04): U3 and M4 are authorized as P1
+adversarial screens, not as a second expensive parent. U5–U7 are method or
+host screens on the frozen PKM1-P0 control. Specs, kill criteria and lane
+discipline are in
+`Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md`.
+PKM1 A0–A6 remains the only expensive microscopic lane.
 
 ### 7.2 MAT-001 normalized-residue routes
 
@@ -196,6 +206,9 @@ on the present action's viability path.
 
 After A0-A2, rank M1-M5 by identity fidelity, added parameters,
 calculability, stability risk, and falsifiability. Advance at most two.
+
+M4 is activated as a 2026-09-04 cheap screen on the live Track-A chart and
+the PKM1-P0-B control. It is not a second expensive parent.
 
 ### 7.3 Screening and high-acceleration routes
 
@@ -375,6 +388,26 @@ across templates/priors; it is not a universal sensitivity multiplier. Treat
 GW170817 speed/arrival, transient dispersion/damping, stochastic amplitude,
 and stochastic polarization as separate likelihood blocks.
 
+### 8.2 Evidence-watch benchmarks integrated on 2026-09-06
+
+Primary arXiv records were checked on 2026-09-06. These additions change test
+requirements only; they do not supply an ITSM derivation or change a gate.
+
+| Record | Verified scope | Programme consequence |
+|---|---|---|
+| [LUX-ZEPLIN Collaboration, arXiv:2609.02823](https://arxiv.org/abs/2609.02823) | Official collaboration preprint: one event consistent with a `248 +/- 23_stat +/- 23_sys keV` nuclear recoil in `2.84 tonne-year`, with `2.6 sigma` global and `3.4 sigma` maximum local background tension; explicitly not a dark-matter detection | Add a falsification clause for the **pure particle-dark-matter replacement** version only. Derive any plenum-excitation recoil spectrum and target scaling, or predeclare that a statistically secure cross-experiment particle spectrum falsifies that pure version; one event does not do so |
+| [Wang, Yu & Wu, arXiv:2609.03062](https://arxiv.org/abs/2609.03062) | For `Q=beta H rho_de`, the interacting CPL result has `beta=-0.35^{+0.77}_{-0.62}` and improves the matched noninteracting CPL best fit by only `Delta chi2_int=-0.03`; its AIC is higher than the noninteracting CPL result. Restricted trajectories give model-dependent signs and growth | Strengthen the COS/PERT nested-null contract: derive `Q^mu` and `w_p(z)` from one action, evolve perturbations, and compare distances plus growth. DESI cannot presently be cited as evidence for the Syntropic Source Vector |
+| [Lagos & Wolf, arXiv:2609.04112](https://arxiv.org/abs/2609.04112) | A particular nonminimally coupled scalar-tensor model predicts `c_M=-0.5+/-0.2`, `Xi_0=0.88+/-0.05`, `n=3.2+/-0.3`, consistent with current GWTC-5 siren constraints within about `1 sigma`; common parametrized fits can impose stability-prior tension | Add a distinct **GW-FRICTION** contract: derive `alpha_M(z)` and `D_L^GW/D_L^EM` from the surviving action before mapping to phenomenological parameters. Do not identify its fitted `n` with an ITSM exchange exponent or merge this test with GW speed/dispersion |
+| [Lagos et al., arXiv:2609.03537](https://arxiv.org/abs/2609.03537) | The `z=0`-calibrated Shark semi-analytic model reports UV-luminosity-function agreement through `z=17`, stellar-mass-function agreement through `z=10`, and star-formation-rate-density agreement through `z=15`, attributing high-redshift burstiness to violent disk instabilities | Remove any uniqueness inference from bright JWST galaxies. A later ITSM test must beat a bursty-LambdaCDM comparator jointly in luminosity, stellar mass, star-formation rate and scatter, using a preregistered residual observable |
+| [Euclid Collaboration, arXiv:2609.04192](https://arxiv.org/abs/2609.04192) | Simulation preparation paper compares density, mass, velocity-dispersion and excess-surface-density profiles to `5 r_500c`; low-mass `f(R)` cases differ by order `10%`, while other cases are often a few percent, with stack requirements strongly redshift dependent | Add a dependency-locked halo-profile suite `rho(r), M(<r), sigma_v(r), DeltaSigma(R)` after a viable force/lensing action exists. The quoted stack sizes are comparator-specific forecasts, not ITSM predictions |
+| [TDCOSMO XXIX, arXiv:2609.03089](https://arxiv.org/abs/2609.03089) | JWST/NIRSpec resolved kinematics for three time-delay lenses have `6--11%` per-bin uncertainty, about `1.2%` average correlation, and reduce integrated-dispersion uncertainty from `3.7%` to `2.4%`; no new `H_0` result is reported | Keep time-delay-lens `H_0` separate in the coefficient audit. Do not insert it into `a_0=cH_0/(2*pi)` until the ITSM lens potential, kinematic maps, time delays and line-of-sight convergence are fitted self-consistently |
+
+Immediate ordering remains upstream-first. The LZ and DESI records require
+claim-firewall checks now; GW friction, JWST formation, Euclid halo profiles
+and time-delay cosmography remain dependency-locked behind a surviving
+matter/metric action. None is a reason to divert Max/Ultra work from
+`MAT-001`, `UVIR-003`, the physical pole/residue, or the independent P2 audit.
+
 ## 9. Execution phases and review gates
 
 ### G0 — repair authority
@@ -438,6 +471,7 @@ papers may publish independently.
 | P1 | U1 quartet classification | Current-action viability blocker |
 | P1 | R5-P1 hostile audit plus M1-M5 A0-A2 comparison | MAT critical path/contamination source |
 | P1 | Blind `a0_internal`/`C_obs` audit | Prevent target-derived geometry |
+| P1 | Cheap screens U3/M4/U5 (then U7/U6 if named) | Parallel; cannot unlock PKM1 or MAT |
 | P2 | Screening controls and S2 admissibility | Solar-System survival mandatory |
 | P2 | Lensing/relativistic admissibility | Conformal force insufficient |
 | P2 | T1/T2 moduli/winding | Core identity and independent falsification |

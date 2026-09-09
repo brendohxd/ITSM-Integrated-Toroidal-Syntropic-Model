@@ -1,0 +1,67 @@
+{
+  "audit_independence": "metric tensor construction and action variation; no import from numerical RHS",
+  "calculation_status": "PASS",
+  "checks": [
+    {
+      "name": "einstein_00_hamiltonian",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "einstein_observed_space_pressure",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "einstein_circle_pressure",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter_radial_euler_lagrange",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "global_phase_euler_lagrange",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "matter_proxy_euler_lagrange",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "lapse_variation_energy_density",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "scale_factor_variation_pressure_a",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "circle_scale_variation_pressure_y",
+      "ok": true,
+      "residual": "0"
+    }
+  ],
+  "checks_passed": 9,
+  "checks_total": 9,
+  "derived_claims": [],
+  "explicit_nonclaims": [
+    "no perturbation or pole calculation",
+    "no radion stabilization",
+    "no physical-matter universality",
+    "no nonzero transfer-current derivation",
+    "no phenomenology"
+  ],
+  "gate_effect": "NONE",
+  "parent": "X4-I1C_bulk_scalar_control",
+  "physics_pass": false,
+  "route": "TOP-X4_KK-001",
+  "schema": "ITSM_TOPX4_A1_SYMBOLIC_v1",
+  "status": "PASS_TOPX4_A1_INDEPENDENT_SYMBOLIC_AUDIT"
+}

@@ -10,7 +10,7 @@ $PaperDir = $PSScriptRoot
 
 $Author = "Boyd"
 $Year = "2026"
-$ContentSlug = "Anisotropic_Casimir_Rectangular_T3_Free-Field_Backreaction"
+$ContentSlug = "Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control"
 $VersionFile = Join-Path $PaperDir "VERSION"
 if (-not (Test-Path $VersionFile)) {
     throw "Missing VERSION file in $PaperDir (expected e.g. 0.1.0-draft)"

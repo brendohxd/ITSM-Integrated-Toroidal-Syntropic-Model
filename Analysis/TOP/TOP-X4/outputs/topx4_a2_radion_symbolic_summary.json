@@ -1,0 +1,54 @@
+{
+  "audit_execution_status": "COMPLETE",
+  "checks": [
+    {
+      "expected": "sqrt(-G)=R_ref exp(-u)",
+      "name": "five_dimensional_measure",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "expected_bulk_density": "3*R_ref*Derivative(u(t), t)**2/2",
+      "name": "einstein_hilbert_radion_bulk_kinetic",
+      "ok": true,
+      "raw_density": "R_ref*(3*Derivative(u(t), t)**2 - 2*Derivative(u(t), (t, 2)))/2",
+      "removed_total_derivative": "-R_ref*Derivative(u(t), (t, 2))",
+      "residual": "0"
+    },
+    {
+      "definition": "sigma=sqrt(3/2) M_Pl ln(r)",
+      "name": "canonical_radion_definition",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "four_dimensional_mode_kinetic_normalization",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "einstein_frame_kk_mass_factor",
+      "ok": true,
+      "residual": "0"
+    },
+    {
+      "name": "einstein_frame_parent_mass_factor",
+      "ok": true,
+      "residual": "0"
+    }
+  ],
+  "checks_passed": 6,
+  "checks_total": 6,
+  "explicit_nonclaims": [
+    "no stationary radion background",
+    "no full coupled physical pole spectrum",
+    "no EFT hierarchy",
+    "no phenomenology"
+  ],
+  "gate_effect": "NONE",
+  "parent": "X4-I1C_bulk_scalar_control",
+  "physics_pass": false,
+  "route": "TOP-X4_KK-001",
+  "schema": "ITSM_TOPX4_A2_RADION_SYMBOLIC_v1",
+  "status": "PASS_TOPX4_A2_RADION_SYMBOLIC_IDENTITIES_ONLY"
+}

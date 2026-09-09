@@ -1,0 +1,109 @@
+{
+  "audited_discrepancies": {
+    "force_normalization": {
+      "displayed_action_coefficient": "v**2/(2*pi*Lambda**4)",
+      "disposition": "SOURCE_TO_PROBE_NORMALIZATION_UNRESOLVED",
+      "ratio": "2",
+      "review_quoted_coefficient": "v**2/(4*pi*Lambda**4)"
+    },
+    "healing_length_relation": "ell=1/sqrt(2 lambda_4 v^2) is exact in C0; ell approximately 1/(2 m c_s) only in the NR limit.",
+    "trace_control_sign": "With J=-T, -sJ/Lambda^2 maps to +sT/Lambda^2; the frozen ledger's -sT/Lambda^2 comparison has the opposite sign.",
+    "weak_distortion_condition": "x^2=rho R^2/Lambda^2 << 1"
+  },
+  "calculation": "M2M3_U1_MAX_FIXED_BACKGROUND_SYMBOLIC_CHECKS",
+  "calculation_status": "PASS_BOUNDED_SYMBOLIC_IDENTITIES",
+  "checks": {
+    "attractive_strong_source_has_soft_gradient_instability": true,
+    "background_linear_term_vanishes": true,
+    "background_radial_quadratic_coefficient": true,
+    "c0_source_coefficient_mass_dimension_minus_one": true,
+    "canonical_source_field_chart_invariant": true,
+    "conformal_linear_probe_matches_c0_for_positive_alpha": true,
+    "conformal_source_coefficient_mass_dimension_minus_one": true,
+    "core_chart_radial_mass_map": true,
+    "dispersion_root_product": true,
+    "dispersion_root_sum": true,
+    "finite_density_flat_background_enthalpy_obstruction": true,
+    "frozen_trace_comparator_sign_mismatch_detected": true,
+    "gapless_branch_at_zero_momentum": true,
+    "gapped_branch_at_zero_momentum": true,
+    "gp_bogoliubov_k4_retained": true,
+    "gp_sound_speed_nonrelativistic_limit": true,
+    "lower_pole_overlap_low_k": true,
+    "p_x_background_density": true,
+    "p_x_sound_speed_matches_exact_low_k": true,
+    "p_x_stationary_reduction": true,
+    "published_force_factor_two_mismatch_detected": true,
+    "repulsive_strong_source_sample_is_gradient_stable": true,
+    "sphere_x_dimensionless": true,
+    "three_halves_parent_shape_selects_sextic": true,
+    "uniform_sphere_charge_forms_agree": true,
+    "uniform_sphere_strong_scaled_limit": true,
+    "uniform_sphere_unscreened_limit": true,
+    "weak_distortion_combination_dimensionless": true,
+    "zero_density_removes_linear_source": true,
+    "zero_portal_coupling_removes_linear_source": true
+  },
+  "domain": {
+    "gp_domain": "k << m with k^4/(4m^2) retained",
+    "healthy_vacuum_scalar_control": "v>0, lambda_4>=0, real mu; lambda_4>0 for a nonzero linear sound speed",
+    "nonlinear_sphere_domain": "RCP-C0 only, lambda_4=0, static uniform J=+rho",
+    "p_x_derivative_domain": "positive-density algebraic branch and radial derivatives small; in the NR regime k << m c_s",
+    "rcp_i1c_probe_domain": "zero background matter trace; first-order prescribed dust probe; fixed metric",
+    "strong_source_sign_test": "For the C0 local strong-source dispersion at m=Lambda=rho=1 and k^2=1/2, J=-rho gives omega^2=-1/16 while J=+rho gives omega^2=3/16."
+  },
+  "gate_boundary": {
+    "K_Q": "NOT_DERIVED",
+    "MAT-001": "BLOCKED",
+    "UVIR-003": "IN_PROGRESS",
+    "V": "NOT_COMPUTED",
+    "gate_effect": "NONE"
+  },
+  "identities": {
+    "background": "mu^2 = m^2 + lambda_4 v^2",
+    "canonical_c0_source": "sqrt(2)*v/Lambda**2",
+    "canonical_conformal_probe_source": "sqrt(2)*alpha_1*v",
+    "canonical_fields": "sigma=sqrt(2) h; q=sqrt(2) v pi",
+    "canonical_radial_mass_squared": "2*lambda_4*v**2",
+    "conformal_matter_second_variation": "T_E_background*alpha_2 + alpha_1*dT_E_ds",
+    "conformal_nonzero_trace_radial_mass_squared": "rho_0**2*(-T_E_background*alpha_2 - alpha_1*dT_E_ds + lambda_4)",
+    "conformal_variation": "delta S_m=int sqrt(-g) alpha(s) T_E delta s",
+    "exact_low_k_k4_coefficient": "2*mu**4/(lambda_4*v**2 + 2*mu**2)**3",
+    "exact_low_k_sound_speed_squared": "lambda_4*v**2/(lambda_4*v**2 + 2*mu**2)",
+    "exact_omega_minus_squared": "k_squared + lambda_4*v**2 + 2*mu**2 - sqrt(4*k_squared*mu**2 + (lambda_4*v**2 + 2*mu**2)**2)",
+    "exact_omega_plus_squared": "k_squared + lambda_4*v**2 + 2*mu**2 + sqrt(4*k_squared*mu**2 + (lambda_4*v**2 + 2*mu**2)**2)",
+    "finite_density_enthalpy": "2*mu**2*v**2",
+    "gp_bogoliubov_dispersion": "k_squared**2/(4*m**2) + k_squared*lambda_4*v**2/(2*m**2)",
+    "gp_lagrangian": "i/2(psi* psi_dot-psi_dot* psi)-|grad psi|^2/(2m)-lambda_4|psi|^4/(8m^2)-J|psi|^2/(2m Lambda^2)",
+    "healing_force_range": "ell=1/sqrt(2 lambda_4 v^2)",
+    "lower_pole_overlap_squared": "2*v**2*(lambda_4*v**2 + 2*mu**2 - sqrt(4*k_squared*mu**2 + (lambda_4*v**2 + 2*mu**2)**2))**2/(Lambda**4*(4*k_squared*mu**2 + (lambda_4*v**2 + 2*mu**2 - sqrt(4*k_squared*mu**2 + (lambda_4*v**2 + 2*mu**2)**2))**2))",
+    "lower_pole_overlap_squared_over_k2_limit": "2*mu**2*v**2/(Lambda**4*(lambda_4*v**2 + 2*mu**2)**2)",
+    "p_x_j": "(J - Lambda**2*X + Lambda**2*m**2)**2/(2*Lambda**4*lambda_4)",
+    "parent_power_for_p_x_three_halves": "n=3 (|Phi|^6 shape screen only)",
+    "static_c0_kernel": "sigma(k)=-g_C0 J(k)/(k^2+M_sigma^2)",
+    "true_heavy_gap_squared": "2*lambda_4*v**2 + 4*mu**2",
+    "uniform_sphere_charge_ratio": "3*(x - tanh(x))/x**3"
+  },
+  "input_sha256": {
+    "Analysis/MAT/MAT-001/M2M3_U1/m2m3_u1_fixed_background_checks.py": "50a6bd0242c227c9287ae178bc772d391ae282de3adf9dbe4f91e9d7e046dd0f",
+    "GEMINI.md": "5660cd00371b51566c63d07bcaed76b443c450220fc9ff5269fb61635fe183e7",
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": "82fb9e195fbcaf7f1ae5edfecf9b3ab08f9d708d18b9403ae085c636ba7306c8",
+    "Theory/Core/Reasoning_Mode_Plans/03_MAX_BOUNDED_EXACT_REDUCTIONS/PLAN.md": "0abc902c36f18ff3e081bcaa7bb96d3347a3e44974cc10aa7988c86dce750894",
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_HIGH_HANDOFF_2026-09-05.md": "220f7302299e4e2ba9921a9a315f6eb04aa4e358c4f8e1ad56704b92bf11e098",
+    "Theory/Gates/MAT-001/M2M3_U1/M2M3_U1_RCP0_ACTION_LEDGER_2026-09-05.md": "d753a8ff3192d5842c6f1a86d18321cedbb8f484764f323e008654911d01f523"
+  },
+  "nonclaims": [
+    "No metric, lapse, or shift constraint was eliminated.",
+    "No PPN, lensing, or gravitational-wave observable was computed.",
+    "No MOND/RAR acceleration scale or observational value was used.",
+    "No numerical K_Q or V was computed.",
+    "The sextic parent-shape identity is not a complete parent or matching result."
+  ],
+  "physics_disposition": {
+    "RCP-C0": "CONTROL_REPRODUCED_NO_STANDALONE_MOND_LAW",
+    "RCP-I1-C": "HEALTHY_LINEAR_PROBE_DOMAIN_FREE_FUNCTION_NORMALIZATION",
+    "gravitating_background": "BLOCKED_NONZERO_ENTHALPY_FIXED_BACKGROUND_ONLY",
+    "physical_metric_reduced_residue": "NOT_COMPUTED"
+  },
+  "schema_version": "1.0"
+}

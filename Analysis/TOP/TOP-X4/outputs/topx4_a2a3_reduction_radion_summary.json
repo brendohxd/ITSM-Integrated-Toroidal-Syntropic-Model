@@ -1,0 +1,236 @@
+{
+  "a2_disposition": "PARTIAL_FIXED_BACKGROUND_CONTROL_ONLY",
+  "a3_disposition": "HOLD_UNSTABILIZED_RADION",
+  "advance_to_a4": false,
+  "audit_execution_status": "COMPLETE",
+  "calculation_checks_passed": 15,
+  "calculation_checks_total": 15,
+  "canonical_t3_replaced": false,
+  "checks": [
+    {
+      "actual": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+      "expected": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+      "name": "a1_input_hash_matches_sidecar",
+      "ok": true
+    },
+    {
+      "canonical_coefficient": 0.75,
+      "eh_coefficient": 0.75,
+      "name": "canonical_radion_kinetic_normalization",
+      "ok": true,
+      "sigma": "sqrt(3/2) M_Pl ln(r)"
+    },
+    {
+      "equation": "M_Pl^2=ell_ref M5^3",
+      "name": "planck_scale_reduction",
+      "ok": true,
+      "sample_value": 6.283185307179586
+    },
+    {
+      "formula": "m_n^2(r)=r^-1 m_5^2+r^-3 n^2/R_ref^2",
+      "minimum": 0.125,
+      "name": "vacuum_scalar_kk_tower_nonnegative",
+      "ok": true
+    },
+    {
+      "gaps": [
+        2.8284271247461903,
+        1.0,
+        0.3535533905932738,
+        0.04419417382415922
+      ],
+      "limiting_formula": "Delta_KK=1/(R_ref r^(3/2))",
+      "name": "kk_gap_small_circle_and_decompactification_limits",
+      "ok": true,
+      "radii": [
+        0.5,
+        1.0,
+        2.0,
+        8.0
+      ]
+    },
+    {
+      "example_residuals": [
+        0,
+        0,
+        0
+      ],
+      "name": "kk_vertex_selection_rule_explicit",
+      "ok": true,
+      "rule": "-n1+n2-n3+n4=0 for Phi* Phi Phi* Phi"
+    },
+    {
+      "dispersion": "(w2-p2-Mrho2)(w2-p2)-4 mu2 w2=0",
+      "endpoint_samples": [
+        {
+          "k": 0.0,
+          "n": 0.0,
+          "omega2_minus": 0.0,
+          "omega2_plus": 6.999999999999999
+        },
+        {
+          "k": 4.0,
+          "n": 0.0,
+          "omega2_minus": 9.095673976657595,
+          "omega2_plus": 29.904326023342406
+        },
+        {
+          "k": 0.0,
+          "n": 1.0,
+          "omega2_minus": 0.2279981273412348,
+          "omega2_plus": 8.772001872658766
+        },
+        {
+          "k": 4.0,
+          "n": 1.0,
+          "omega2_minus": 9.811220836784026,
+          "omega2_plus": 31.188779163215976
+        },
+        {
+          "k": 0.0,
+          "n": 2.0,
+          "omega2_minus": 1.479202710603853,
+          "omega2_plus": 13.520797289396146
+        },
+        {
+          "k": 4.0,
+          "n": 2.0,
+          "omega2_minus": 12.000000000000002,
+          "omega2_plus": 35.0
+        },
+        {
+          "k": 0.0,
+          "n": 3.0,
+          "omega2_minus": 4.360589701950147,
+          "omega2_plus": 20.639410298049853
+        },
+        {
+          "k": 4.0,
+          "n": 3.0,
+          "omega2_minus": 15.762260797143004,
+          "omega2_plus": 41.237739202857
+        },
+        {
+          "k": 0.0,
+          "n": 4.0,
+          "omega2_minus": 9.095673976657595,
+          "omega2_plus": 29.904326023342406
+        },
+        {
+          "k": 4.0,
+          "n": 4.0,
+          "omega2_minus": 21.208394072043546,
+          "omega2_plus": 49.791605927956454
+        }
+      ],
+      "goldstone_omega_squared": 0.0,
+      "minimum_omega_squared": 0.0,
+      "name": "fixed_background_condensate_tower_nonnegative",
+      "ok": true,
+      "sound_speed_squared": 0.14285714285714288
+    },
+    {
+      "formula": "omega_chi,n^2=k^2+n^2/R^2+m_chi^2+g5 rho0^2/2",
+      "name": "fixed_background_matter_proxy_tower_nonnegative",
+      "ok": true,
+      "zero_mode_mass_squared": 1.05
+    },
+    {
+      "name": "exact_static_circle_condition",
+      "ok": true,
+      "residual": "-2*(3*K_w + V)",
+      "stationarity_requirement": "V+3 K_w=0"
+    },
+    {
+      "frozen_K_w": 0.0,
+      "frozen_V": 0.625,
+      "interpretation": "positive value violates required V+3 K_w=0",
+      "name": "classical_frozen_control_has_no_static_circle",
+      "ok": true,
+      "stationarity_left_hand_side": 0.625
+    },
+    {
+      "final_H_b": 0.2784455851413206,
+      "final_b": 1.4107405201388812,
+      "initial_b": 1.0,
+      "name": "a1_sample_radius_is_dynamical_not_stabilized",
+      "ok": true
+    },
+    {
+      "derivative": "-(A*r**2 + 3*B)/r**4",
+      "name": "einstein_frame_classical_radion_runaway",
+      "ok": true,
+      "potential": "A/r+B/r^3 with A>0, B>=0",
+      "stationary_points": 0
+    },
+    {
+      "name": "periodic_boson_casimir_terms_are_monotone_attractive",
+      "ok": true,
+      "potential_shape": "V_C=-C r^-6 F(m ell_ref r), C>0",
+      "samples": [
+        {
+          "6F_minus_xFprime": 6.213582534159326,
+          "F": 1.034937156608423,
+          "F_prime": -0.03959594508789202,
+          "x": 0.1
+        },
+        {
+          "6F_minus_xFprime": 5.535468307501964,
+          "F": 0.8783697339414887,
+          "F_prime": -0.26524990385303204,
+          "x": 1.0
+        },
+        {
+          "6F_minus_xFprime": 0.9172605918154434,
+          "F": 0.09664025300729107,
+          "F_prime": -0.0674838147543394,
+          "x": 5.0
+        },
+        {
+          "6F_minus_xFprime": 0.0060827774285225605,
+          "F": 0.00037479720955478006,
+          "F_prime": -0.0003194995142661566,
+          "x": 12.0
+        }
+      ]
+    },
+    {
+      "interpretation": "strictly negative for A>0, B>=0",
+      "name": "massless_casimir_balance_is_a_maximum",
+      "ok": true,
+      "second_derivative_at_stationarity": "-(5*A*r**2 + 9*B)/r**5"
+    },
+    {
+      "forbidden_token_hits": [],
+      "name": "observational_target_firewall",
+      "ok": true
+    }
+  ],
+  "decision_failures": [
+    "the frozen classical finite-charge control has no static-circle solution",
+    "the A1 radius runs rather than stabilizes",
+    "the massless periodic-boson Casimir balance is a radion maximum, not a minimum",
+    "the full finite-density curved-background one-loop determinant is not defined by the frozen control",
+    "without a selected radius and specified five-dimensional cutoff, no EFT hierarchy is established"
+  ],
+  "explicit_nonclaims": [
+    "no healthy full metric-radion-condensate spectrum",
+    "no radion stabilization",
+    "no physical matter residue",
+    "no derived transfer current, K_Q or V",
+    "no observational prediction"
+  ],
+  "gate_effect": "NONE",
+  "parent": "X4-I1C_bulk_scalar_control",
+  "physics_pass": false,
+  "required_new_authority_for_retry": "a separately frozen parent or semiclassical completion with a declared stabilizing operator/field, boundary condition, quantum state, counterterms and cutoff",
+  "route": "TOP-X4_KK-001",
+  "schema": "ITSM_TOPX4_A2A3_v1",
+  "status": "HOLD_TOPX4_A2A3_UNSTABILIZED_CONTROL",
+  "surviving_bounded_results": [
+    "positive canonical radion kinetic sign in the zero-density Einstein-frame reduction",
+    "nonnegative vacuum scalar KK masses for positive parent masses",
+    "healthy fixed-background condensate and matter-proxy scalar towers",
+    "explicit integer KK momentum selection rule"
+  ]
+}

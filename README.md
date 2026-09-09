@@ -11,10 +11,10 @@
 
 # 🌌 Integrated Toroidal-Syntropic Model (ITSM)
 
-**v12 Core Release — Relativistic Field Equations, Topology-Induced Superfluid Dynamics, and Multi-Scale Falsifiability**
+**v12 core-recovery branch — evidence-controlled research snapshot**
 
 🌍 **Website:** [itsm-cosmology.com](https://itsm-cosmology.com) |
-📘 **Flagship Manuscript (v12.0):** [ITSM_Core_Cosmology_v12.0.pdf](Manuscript/ITSM_Core_Cosmology_v12.0.pdf) (38 pages) |
+📘 **Historical flagship manuscript (not current status authority):** [ITSM_Core_Cosmology_v12.0.pdf](Manuscript/ITSM_Core_Cosmology_v12.0.pdf) (38 pages) |
 📧 **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
 
 ## 📖 Project Overview
@@ -27,17 +27,23 @@ The programme strictly adheres to the fail-closed Iron Rule:
 
 Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
 
-## 🧭 Current Core Status (v12.0 & Downstream Gate Clearance)
+## 🧭 Current Core Status (recovery snapshot — 2026-09-09)
 
 | Gate / Sector | Status | Physical Result |
 |---|---|---|
-| **Manuscript Suite** | `v12.0 Released & P1–P4 Compiled` | Flagship 38-page manuscript + Papers P1 (5 pp), P2 (4 pp), P3 (2 pp), and P4 (2 pp) all compiled and sealed |
-| **MAT-001 / CBR-002** | **Evaluation Complete (PASS)** | Conformal Weyl invariance uniquely fixes $C_m \equiv 1.0$; scale matching fixes $f = 1/\sqrt{4\pi G}$, $V = \sqrt{4\pi G}$, and exact AQUAL coupling strength $\alpha \equiv 1.0$ |
-| **UVIR-003** | **Unitarity Passed (PASS)** | Tree-level non-derivative contact amplitude $\mathcal{A} = C_m^4 \rho_b / f^4$ satisfies partial-wave unitarity; UV cutoff $\Lambda_{\rm UV} = f/C_m$ |
-| **VOR-001 (S3 & S4)** | **Physical Resonance (PASS)** | Defect core profile line tension solved (S3); Bogoliubov acoustic spectrum derived on $T^3$ ($f_0 = 1.45\text{--}1.88\text{ nHz}$), matching NANOGrav acoustic window |
-| **SCR-001** | **Landau Screening (PASS)** | Microscopic Landau phase disruption suppresses fifth force; Cassini $\Delta\gamma = 4.05 \times 10^{-8}$ at 1 AU (**568x safety margin**) |
-| **LEN-001** | **Gravitational Lensing (PASS)** | Conformal scale-compensator null geodesics; exact lensing-to-dynamical mass ratio $M_{\rm lens}(R)/M_{\rm dyn}(R) \equiv 1.000$ |
-| **DISK-001 & STAT-001** | **SPARC 175 Pipeline (PASS)** | 2D/3D Picard solver executed across all 175 SPARC galaxies (3,391 pts; median $\widetilde{\chi}_\nu^2 = 1.84$ 0-param, floated MCMC $\chi_\nu^2 = 7.38$) |
+| **Core identity** | `CANONICAL; IDENTITY HELD` | Active finite-density condensate, topology, preferred frame and force/reservoir sectors remain distinct; identity-first governance is unchanged. |
+| **MAT-001** | **`BLOCKED`** | M2/M3-U1 fixed-background controls are bounded reductions only; `K_Q` remains `NOT_DERIVED` and `V` remains `NOT_COMPUTED`. |
+| **UVIR-003** | **`IN_PROGRESS`** | Tier-1 closure remains downstream of the MAT matching blocker; no physical cutoff or complete constrained amplitude is promoted. |
+| **TOP-X4 / KK-001** | **`S2F3 HOLD BEFORE FINITE CHARGE`** | Plan 11 parity-even static determinant checkpoint is 12/12 and the finite-charge entry gate is 9/9, but finite-charge quantum backreaction, parity/anomaly data and the physical Hessian remain open. |
+| **TOP-001 / CBR-002** | **`HOLD`** | P2/CBR-001 has a portable local-repair candidate and a narrowed instantaneous-closure result; independent-role, sensitivity and noncubic checks remain required. |
+| **RES-001** | **`OPEN_SCAFFOLD_ONLY`** | The corrected script is a single-mode GKSL steady-state control; the advertised two-bath detailed-balance/Spohn derivation, microscopic reservoir and `Q^\mu` remain absent. |
+| **VOR-001** | **`OPEN_SCAFFOLD_ONLY`** | Phase/winding normalization is a frozen calculation specification only; no physical resonance or gate closure follows. |
+| **Papers / publication** | **`PUBLICATION HOLD`** | Rebuilt P2 materials are retained as a bounded negative-result candidate, not as publication clearance. |
+| **Rule 9 evidence** | **`THREE-WAY CLEARANCE NOT MET`** | TOP-X4 Plan 11 Role A completed; Roles B and C returned usage-limit errors with no reports. No three-way consensus is claimed. |
+
+Script `PASS_*` labels in this table describe only their bounded executable
+scope. They do not constitute a physics-gate pass, downstream promotion or
+publication decision.
 
 For the full dependency chain and current blockers, use the
 [Recovery Branch Guide](RECOVERY_BRANCH_README.md) and
@@ -135,6 +141,11 @@ authoritative path.
 - [Core Architecture](Theory/Core/ITSM_Core_Architecture.md)
 - [Claim Migration Ledger](Theory/Core/ITSM_Claim_Migration_Ledger.csv)
 - [Recovery Branch Guide](RECOVERY_BRANCH_README.md)
+- [Active Research & Gate Dashboard](active_research.md)
+- [Current Recovery Changelog](CHANGELOG.md)
+- [TOP-X4 / KK-001 Route Plan](Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md)
+- [TOP-X4 Plan 11 Static Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_STATIC_CHECKPOINT_RECEIPT_2026-09-09.md)
+- [TOP-X4 Plan 11 Finite-Charge Entry Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_ENTRY_GATE_RECEIPT_2026-09-09.md)
 - [MAT Tier-1 R1-R5 Remediation Addendum](Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md)
 - [Core-Recovery Manuscript Guide](Manuscript/CoreRecovery/README.md)
 - [Selective Publishing Plan](papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md)

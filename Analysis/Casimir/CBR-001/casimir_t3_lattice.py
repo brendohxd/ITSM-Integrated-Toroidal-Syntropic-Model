@@ -225,7 +225,7 @@ def permutation_test(lengths: Sequence[float], cutoff: int) -> float:
 def write_csv(path: Path, results: Iterable[StressResult]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.writer(handle)
+        writer = csv.writer(handle, lineterminator="\n")
         writer.writerow(
             ["cutoff", "L1", "L2", "L3", "rho", "p1", "p2", "p3", "trace", "energy"]
         )
@@ -387,4 +387,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
