@@ -2,8 +2,10 @@
 
 **Directory:** `papers/P1-Scale-Matching-Reconstruction/`  
 **VERSION:** see `VERSION` (currently `0.1.0-draft`)  
-**Share PDF:** `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.1.0-draft.pdf`  
-(build script writes this from `main.pdf` + `VERSION`; see `papers/PAPERS_NAMING.md`)
+**Canonical PDF:** `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.1.0-draft.pdf`
+
+(the build script writes this named PDF directly and emits its `.sha256`
+sidecar; see `papers/PAPERS_NAMING.md`)
 
 **Genre:** Technical note (no-go results + one derived EFT identity)  
 **Status:** Submission-ready draft for arXiv / CQG-style note  
@@ -46,7 +48,7 @@ arXiv/journal text.
 | `Build-P1-Scale-Matching-Reconstruction.ps1` | Build helper |
 | `SUBMISSION.md` | Pre-flight / venue notes |
 | `CoverLetter.txt` | Cover letter draft |
-| `main.pdf` | Built PDF |
+| `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.1.0-draft.pdf` | Canonical built PDF |
 
 ## Firewall for later papers
 

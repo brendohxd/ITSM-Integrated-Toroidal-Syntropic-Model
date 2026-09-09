@@ -9,6 +9,17 @@
 *.fls
 *.fdb_latexmk
 
+# Canonical paper builds generate versioned bibliography byproducts beside the
+# tracked PDF; the source bibliography and canonical PDF are the deliverables.
+papers/P1-Scale-Matching-Reconstruction/Boyd_*.bbl
+papers/P1-Scale-Matching-Reconstruction/Boyd_*Notes.bib
+papers/P2-Rectangular-T3-Casimir/Boyd_*.bbl
+papers/P2-Rectangular-T3-Casimir/Boyd_*Notes.bib
+papers/P3-Observational-Program/Boyd_*.bbl
+papers/P3-Observational-Program/Boyd_*Notes.bib
+papers/P4-SPARC-Kinematics/Boyd_*.bbl
+papers/P4-SPARC-Kinematics/Boyd_*Notes.bib
+
 # Python
 __pycache__/
 *.pyc

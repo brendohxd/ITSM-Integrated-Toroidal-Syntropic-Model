@@ -1,6 +1,7 @@
 # ITSM Selective Publishing Plan
 
-**Status:** Working plan — **post–tier-1 referee reconstruction** (2026-08-01)  
+**Status:** Working plan — **fail-closed reconciliation** (2026-09-09)
+
 **Branch authority:** `recovery/v12-core-architecture`  
 **Master research plan:** `Theory/Core/ITSM_Master_Research_Plan.md`  
 **Claim authority:** `Theory/Core/ITSM_Claim_Migration_Ledger.csv`  
@@ -38,29 +39,30 @@ master plan’s Bucket B/C and identity pillars. Do not treat B1–B16 as a
 research veto of untested routes.
 
 **Authoritative Reassessment & Frontier Policy:** See [`Theory/Core/ITSM_Ban_List_Reassessment_and_Frontier_Policy.md`](../../Theory/Core/ITSM_Ban_List_Reassessment_and_Frontier_Policy.md)
-for the formal delineation between permanently retired historical slogans (B3, B6, B10, B16),
-superseded derivations ($C_m \equiv 1.0$, $f = 1/\sqrt{4\pi G}$, Bogoliubov acoustic spectrum $1.45\text{--}1.88\text{ nHz}$,
-and 175-galaxy SPARC pipeline), and active research frontiers (CBR-002, TOP-001, ASTRO-001).
+for the formal delineation between permanently retired historical slogans,
+quarantined 29 August gate promotions, bounded controls, and active research
+frontiers. No downstream result inherits a pass while MAT-001 is `BLOCKED` and
+UVIR-003 is `IN_PROGRESS`.
 
 These phrases and implications are **forbidden in papers** unless superseded by a closed derivation or active research gate:
 
-| Ban ID | Forbidden Historical Claim | Why Banned | Current Operational Status (2026-08-30) |
+| Ban ID | Forbidden Historical Claim | Why Banned | Current Operational Status (2026-09-09) |
 |--------|----------------------------|------------|-----------------------------------------|
-| **B1** | $a_0$ is *derived* from circulation quantization / Bohr–Sommerfeld $\kappa=cL$ on $T^3$ | $\kappa=cL$ is not $\hbar/m$ quantum circulation | **SUPERSEDED BY PHYSICAL DERIVATION:** Superfluid order parameter $\Psi=\sqrt{\rho}e^{i\Theta}$ has true $\hbar/m$ circulation; $a_0\equiv cH_0/2\pi$ is a present-epoch phenomenological scale match (Paper P1). |
-| **B2** | Simultaneous $L=c/H_0$, $\Gamma=cL$, $\omega=H_0$ as a consistent package | Internal kinematic contradiction if $L$ is circumference vs box length | **RESOLVED BY TWO-SCALE HIERARCHY:** Declares distinct physical scales: box length $L_i$, solitonic healing length $\xi_{\rm gal}\approx 90\text{ pc}$, and transition scale $\ell\approx 0.21\text{ mm}$. |
+| **B1** | $a_0$ is *derived* from circulation quantization / Bohr–Sommerfeld $\kappa=cL$ on $T^3$ | $\kappa=cL$ is not $\hbar/m$ quantum circulation | **OPEN / PHENOMENOLOGICAL ONLY:** True $\hbar/m$ circulation is structural input, but no action-derived map to $a_0$ exists. $a_0\equiv cH_0/2\pi$ is only a present-epoch phenomenological match. |
+| **B2** | Simultaneous $L=c/H_0$, $\Gamma=cL$, $\omega=H_0$ as a consistent package | Internal kinematic contradiction if $L$ is circumference vs box length | **UNRESOLVED:** Declaring separate scales does not derive their values or repair the historical package. |
 | **B3** | “Distributing $cH_0$ across $2\pi$ topology” as a derivation | Chart-dependent arithmetic; not coordinate-invariant | **PERMANENTLY BANNED (Integrity Rule 2):** Numerical coincidences are not derivations; require an action principle. |
 | **B4** | Cubic $E_1$ with $L=c/H_0$ is COMPACT/Planck compatible or “marginally super-horizon” | Planck 2018 topology searches require $L\gtrsim\mathcal{O}(6)\,c/H_0$ | **MAINTAINED:** Cubic flat $T^3$ with $L\approx c/H_0$ is ruled out. Open only for anisotropic/twisted lattices or mesoscopic cavities. |
 | **B5** | Exact $L_{\rm phys}(t)=c/H(t)$ under fixed comoving moduli in ordinary FLRW | Forces $q=0$ (coasting) unless moduli evolve dynamically | **OPEN FOR MODULI DYNAMICS:** Moduli are treated as dynamical degrees of freedom under `TOP-001`. |
 | **B6** | Hubble sphere $c/H$ as “global causal domain / horizon” without qualification | Not a particle or event horizon in general spacetimes | **PERMANENTLY BANNED:** Technical precision requires exact relativistic horizon definitions. |
-| **B7** | $\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3$ *determines* $C_{\rm obs}$ or is $T^3$-specific | Generic 3D identity; projector was absent from weak-field action | **SUPERSEDED BY EXACT CONFORMAL COUPLING:** Conformal Weyl trace conservation ($T^\mu_\mu=0$) uniquely fixes $C_m\equiv 1.0$ (not $2/3$), and BTFR scale matching fixes $f=1/\sqrt{4\pi G}\implies\alpha\equiv 1.0$. |
-| **B8** | $C_{\mathrm{obs}}=2/3$ as a geometric / universal local coupling | Matching assignment, not a Wilson calculation | **SUPERSEDED BY EXACT CONFORMAL COUPLING:** Replaced by derived $C_m\equiv 1.0$ and $\alpha\equiv 1.0$. |
-| **B9** | Simultaneous $a_0=cH_0/2\pi$ *and* $C_{\mathrm{obs}}=2/3$ as empirical RAR/BTFR normalization | Predicts $a_{0,\rm eff}=(4/9)a_0$; factor $\sim 2.4$ too small for SPARC data | **SUPERSEDED:** With derived $C_m\equiv 1.0$ and $\alpha\equiv 1.0$, effective acceleration is $a_{0,\rm eff}=1.0\times a_0$, matching SPARC RAR exactly! |
+| **B7** | $\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3$ *determines* $C_{\rm obs}$ or is $T^3$-specific | Generic 3D identity; projector was absent from weak-field action | **NOT DERIVED:** A conformal trace identity does not fix the normalized matter-to-physical-mode residue. |
+| **B8** | $C_{\mathrm{obs}}=2/3$ as a geometric / universal local coupling | Matching assignment, not a Wilson calculation | **NOT DERIVED:** $C_m$, $K_Q$ and the invariant response remain unresolved in the parent route. |
+| **B9** | Simultaneous $a_0=cH_0/2\pi$ *and* $C_{\mathrm{obs}}=2/3$ as empirical RAR/BTFR normalization | Predicts $a_{0,\rm eff}=(4/9)a_0$; factor $\sim 2.4$ too small for SPARC data | **EXCLUDED PACKAGING:** No alternate $C_m=1$, $\alpha=1$ assertion currently repairs or supersedes this ban. |
 | **B10** | Doughnut / embedded $T^2$ figure labelled as flat $T^3$ | Category error in topology visualization | **PERMANENTLY BANNED (Integrity Standard):** All visual assets must depict flat 3-torus cubic fundamental domains with periodic arrows. |
-| **B11** | $\mathcal{O}((r/L)^2)$ finite-size series as a derived error bar | Nonlocal topology cannot be represented as a local Taylor series | **RESOLVED BY EXACT MODE SUMS:** Discrete Bogoliubov sums over $\mathbb{Z}^3\setminus\{(0,0,0)\}$ implemented in `VOR-001 S4`. |
+| **B11** | $\mathcal{O}((r/L)^2)$ finite-size series as a derived error bar | Nonlocal topology cannot be represented as a local Taylor series | **OPEN / CONDITIONAL:** Exact sums are meaningful only for a declared field content, state, geometry and boundary conditions; no universal correction is derived. |
 | **B12** | Persistent free-field $H_t/H_p=13/12$ or $H_0=72.97$ as parameter-free prediction | `CBR-001` proved free massless scalar has no attractor ($H_t/H_p\to 1.0$) | **FREE-FIELD BANNED / OPEN FOR DRIVEN PLENUM:** Free scalar claim is permanently banned. Driven, non-linear condensate backreaction is an active open research topic under `CBR-002`/`TOP-001`. |
-| **B13** | NANOGrav fixed window $[1.08,\pi]$ nHz as *derived* | No eigenmode calculation in historical manuscripts | **SUPERSEDED BY PHYSICAL DERIVATION:** `VOR-001 Stage S4` derived the discrete Bogoliubov acoustic spectrum on $T^3$ ($f_0\approx 1.45\text{--}1.88\text{ nHz}$) in physical units (Paper P3). |
+| **B13** | NANOGrav fixed window $[1.08,\pi]$ nHz as *derived* | No eigenmode calculation in historical manuscripts | **OPEN:** The later $1.45\text{--}1.88$ nHz example depends on chosen cavity and state inputs; it is not a derived ITSM PTA prediction or detection. |
 | **B14** | JWST CO/Na I → bottom-light IMF as *derived* | Early Jeans bridge had incorrect density dimensions | **OPEN FOR ASTROPHYSICAL DERIVATION:** Developing a dimensionally verified star-formation/fragmentation model under `ASTRO-001` is actively permitted. |
-| **B15** | SPARC $p=0.62$; SPARC as independent cosmic $H_0$ | Early program evaluated binned envelopes, not global dataset $p$-value | **SUPERSEDED BY FULL SPARC PIPELINE:** `STAT-001` and `disk001_sparc_galaxy_pipeline.py` evaluate all 175 galaxies directly ($\widetilde{\chi}_\nu^2=1.84$ 0-param, $\chi_\nu^2=7.38$ MCMC) under Rule 1 & Rule 3 (Paper P4). |
+| **B15** | SPARC $p=0.62$; SPARC as independent cosmic $H_0$ | Early program evaluated binned envelopes, not global dataset $p$-value | **REJECTED / QUARANTINED:** The 175-galaxy zero-parameter/MCMC package is not a closed STAT result. The repaired 152-galaxy comparator is optimization-only and not an ITSM prediction. |
 | **B16** | “Zero free theoretical parameters” / “resolves all tensions” | Overclaim; ignores boundary conditions and open sectors | **PERMANENTLY BANNED (Claim Hygiene):** ITSM is a layered effective framework with explicit epistemic buckets (Derived, Conditional, Open, Rejected). |
 
 **Enforcement:** before any abstract is frozen, grep the ban list concepts (quantization derivation, $72.97$, $13/12$ prediction, doughnut $T^3$, $C_{\rm proj}\Rightarrow C_{\rm obs}$, super-horizon $c/H_0$).
@@ -149,8 +151,8 @@ Drop from style rules: marketing phrases like “geometric origin” and “zero
 |---|--------------|----------------------|-----------|--------|--------|
 | **P1** | Scale-matching reconstruction | Prior geometric story fails; $C_{\mathrm{obs}}$ invariant + compact-source hygiene survive; $a_0\equiv cH_0/2\pi$ only as present-epoch phenomenology | **Draft complete & compiled** | 5 pp | CQG / PRD Notes / arXiv first |
 | **P2** | Rectangular $T^3$ Casimir + free-field backreaction | Validated anisotropic free-scalar stress; **no** free-field persistent $H_t/H_p=13/12$ attractor | **Draft complete & compiled** | 4 pp | PRD, JCAP, CQG |
-| **P3** | Gate-structured observational program | Derived Bogoliubov acoustic window ($1.45\text{--}1.88\text{ nHz}$), Landau disruption Cassini screening ($\Delta\gamma = 4.05 \times 10^{-8}$), and lensing $M_{\rm lens}/M_{\rm dyn} \equiv 1.0$ | **Draft complete & compiled** | 2 pp | PRD, JCAP, ApJL |
-| **P4** | Kinematics under declared inputs | 2D/3D nonlinear Picard solver + 175-galaxy SPARC master catalog; 0 global free parameters ($\widetilde{\chi}_\nu^2 = 1.84$) and MCMC ($\chi_\nu^2 = 7.38$) | **Draft complete & compiled** | 2 pp | MNRAS, ApJ, PRD |
+| **P3** | Gate-structured observational program | Methodology and conditional falsifiers only; no fixed PTA, screening or lensing prediction while VOR/SCR/LEN remain open | **Outline-led; claim-bearing draft quarantined** | 7–9 pp if triggered | Reassess after trigger |
+| **P4** | Kinematics under declared inputs | Comparator methodology under explicit nuisance and acceleration inputs; no parent-derived coupling or closed STAT result | **Gated; claim-bearing draft quarantined** | TBD after gate closure | Reassess after MAT/DISK/STAT |
 
 ### Why this sequence still works
 
@@ -232,7 +234,7 @@ For a free massless scalar on a *rectangular* flat $T^3$, renormalized lattice C
 
 | Forbidden | Ban / gate |
 |-----------|------------|
-| Fixed NANOGrav $[1.08,\pi]$ nHz as ITSM prediction | B13 / VOR-001 |
+| Any fixed PTA window derived only from selected cavity/state inputs, including $[1.08,\pi]$ or $1.45\text{--}1.88$ nHz | B13 / VOR-001 |
 | Scalar polarization as guaranteed near-term PTA result without response calculation | B13 |
 | JWST CO/Na I suppression as model-level falsifier from Jeans/IMF bridge | B14 |
 | “Independent of acceleration formula” while still quoting withdrawn $a_0$ derivation | B1 |
@@ -248,13 +250,22 @@ For a free massless scalar on a *rectangular* flat $T^3$, renormalized lattice C
 
 #### P3 trigger to full draft
 
-At least one of: VOR-001 derived spectrum with units; ASTRO-001 viable star-formation model; or a published upper limit that *maps cleanly* onto a derived ITSM template.
+At least one of: VOR-001 derived spectrum with units; ASTRO-001 viable
+star-formation model; or a published upper limit that *maps cleanly* onto a
+derived ITSM template. **As of 2026-09-09 this trigger is not met.** The
+existing `main.tex` and named PDF are quarantined legacy scaffolds, not the
+full draft authorized by this trigger. A frequency obtained after choosing a
+cavity scale, sound speed or state does not satisfy the VOR trigger.
 
 ---
 
 ### 4.4 P4 — SPARC kinematics (optional, gated)
 
 **Core claim:** under *declared* inputs $(a_0,C_{\mathrm{obs}})$ and a solved or controlled disk approximation, compare to SPARC with honest noise / BIC.
+
+**Current hold (2026-09-09):** MAT-001 is `BLOCKED`, DISK-001 is
+`METHODS_ONLY`, and STAT-001 is `NOT_STARTED_AS_CLOSED_GATE`. The existing
+claim-bearing source/PDF is quarantined and is not a current paper draft.
 
 #### P4 absolute rules
 
@@ -394,6 +405,7 @@ Indefinite   Full multi-scale synthesis only after reconstruction chain
 | 0.1 | 2026-08-01 | Initial selective plan vs v12 ledger |
 | 0.2 | 2026-08-01 | **Post-referee firewall:** ban list B1–B16; P1 reconstruction; P2–P4 cannot re-inflate withdrawn geometric claims |
 | 0.3 | 2026-08-01 | Clarified: B1–B16 ban **paper packaging only**, not research routes / identity pillars (see master plan) |
+| 0.4 | 2026-09-09 | Reconciled quarantined 29 August gate promotions; P3/P4 returned to held, non-citable scaffold status |
 
 **Authority order when conflicts arise:**  
 For **paper wording:** (1) Sec.~0 ban list of this document → (2) claim ledger → (3) P1 reconstruction.  

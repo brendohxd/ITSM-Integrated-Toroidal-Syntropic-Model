@@ -82,6 +82,41 @@ not override the live fail-closed dashboard.
   revision is included in this release. A script `PASS_*` and a matching hash
   establish bounded artifact/execution integrity only, not a physics result.
 
+### Paper and manuscript filename normalization (2026-09-09)
+
+- Replaced the four active paper deliverable names `P1-P4/main.pdf` with
+  descriptive, title-and-versioned canonical PDFs and matching `.pdf.sha256`
+  sidecars.
+- Added canonical P3/P4 build helpers and corrected P3's stale outline version;
+  P4 now has an explicit `VERSION` file. P1/P2 build helpers now write named
+  PDFs directly and remove a leftover generic deliverable after verification.
+- Updated the paper naming registry, P1/P2 submission records, P3/P4 READMEs,
+  the P2 checksum ledger and the recovery Zenodo packager. CoreRecovery and
+  immutable release PDFs were audited and already use descriptive authority
+  names.
+- Historical changelogs and deposit manifests retain old paths where they are
+  immutable provenance, not current build instructions.
+
+### Fail-closed documentation reconciliation (2026-09-09)
+
+- Reconciled the execution queue, Core Identity Briefing, Ban List policy,
+  P3/P4 readiness map and Selective Publishing Plan with the 9 September
+  authority boundary. TOP-X4 / KK-001 Plan 11 is the selected bounded route;
+  PKM1 and cheap-screen work are preserved but suspended.
+- Corrected the stale current-route paragraph in `active_research.md`: the
+  static parity-even determinant checkpoint is complete, while finite-charge
+  entry remains held with `physics_pass=false` and `gate_effect=NONE`.
+- Moved the 29 August MAT/UVIR/VOR/SCR/LEN/DISK/STAT/P3/P4 pass assertions into
+  explicit quarantine provenance. The current statuses remain MAT blocked,
+  UVIR in progress, VOR/SCR/LEN open, DISK methods-only and STAT not started as
+  a closed gate.
+- Marked the P3/P4 LaTeX sources and rebuilt PDFs as visibly quarantined,
+  non-citable legacy scaffolds. Their versioned filenames now include the
+  `quarantined-draft` status; compilation and matching checksums establish
+  artifact integrity only.
+- Added explicit supersession warnings to four legacy UVIR scattering/cutoff
+  notes whose body text could otherwise be mistaken for current gate closure.
+
 ## Version 12.0-alpha.14 - QUARANTINED INVALID RELEASE (2026-09-01)
 
 ### Status: QUARANTINED / INVALID (Superseded by canonical v12.0-alpha.12)

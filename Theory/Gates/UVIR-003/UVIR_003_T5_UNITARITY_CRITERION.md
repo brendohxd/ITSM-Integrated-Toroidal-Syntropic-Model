@@ -1,7 +1,8 @@
 # Gate UVIR-003: Physical Scattering Amplitude and Unitarity Bound
 
 > [!CAUTION]
-> **QUARANTINED ASSUMED-AMPLITUDE DRAFT (G0, 2026-08-25).** The unknown order-one coefficient is assumed, not derived; the quoted `2.6` scale is therefore not an exact physical cutoff and this file does not close UVIR-003.
+> **QUARANTINED ASSUMED-AMPLITUDE DRAFT (G0, reaffirmed 2026-09-09).** The unknown order-one coefficient is assumed, not derived; the quoted `2.6` scale is therefore not an exact physical cutoff and this file does not close UVIR-003. The body is retained as provenance and is superseded by the current Stage 5 parent decision and `active_research.md`.
+
 ## Task 5: Unitarity Criterion and the UV Cutoff Scale
 
 ### 1. Introduction
@@ -43,4 +44,6 @@ $$ \Lambda_{\text{UV}} \propto |\nabla \pi_0|^{3/4} $$
 ### 5. Conclusion
 The exact physical $2 \to 2$ amplitude was assembled without "naive limits". The resulting unitarity bound explicitly links $\Lambda_{\text{UV}}$ to $\Lambda_{\text{strong}}$. The breakdown of the EFT in the absolute vacuum is not a bug, but a required feature of an emergent, superfluid-driven fifth force.
 
-The UVIR-003 gate is mathematically closed and fully consistent with the MAT-001 Scale-Compensator track.
+**Historical closing claim (superseded):** this draft stated that UVIR-003 was
+mathematically closed and consistent with the MAT-001 scale-compensator track.
+Current status is `UVIR-003 IN_PROGRESS` and `MAT-001 BLOCKED`.

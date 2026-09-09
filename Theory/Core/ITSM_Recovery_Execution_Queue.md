@@ -2,9 +2,9 @@
 
 **Branch:** `recovery/v12-core-architecture`
 **Queue opened:** 2026-08-05
-**Sprint goal:** advance the UVIR-to-MAT critical-path interface without
-overstating matching, then route the next bounded task from executable
-evidence.
+**Queue reconciled:** 2026-09-09
+**Sprint goal:** preserve the UVIR-to-MAT fail-closed boundary while routing
+new derivation work through the bounded TOP-X4 / KK-001 Plan 11 decision.
 
 This is a short-lived execution queue for remote check-ins. The Master Research
 Plan remains the scientific workflow authority; gate reports and deterministic
@@ -27,27 +27,36 @@ outputs remain the evidence authority.
 | P0 | Conditional matching branch (dual status) | **completed (open Conditional)** | Branch open with labeled Conditional samples; Derived $V$/`K_Q` stay closed; Stage 4A closed |
 | P0 | Track-A matter/free-force join readiness | **completed (partial)** | Matter-only static channel form-ready; free-force J2 is velocity-quadratic residual; full multi-sector J2 not assembled |
 | P0 | Tier-1 peer-review readiness (hold retained) | **completed** | Stage 5 HOLD re-verified; M2/M3/M6/M7 unmet; Stage 4A reopen contract all false; MAT dual-status surface consistent; claim ledger deny-list executable |
-| P0 | Tier-1 forward plan (H0–H7) | **active** | Plan at `Theory/Core/ITSM_Tier1_Forward_Plan.md`; Lane A Derived critical path H1→H5; Lane B Conditional parallel only |
+| P0 | Tier-1 forward plan (H0–H7) | **suspended by operator priority** | Plan remains preserved at `Theory/Core/ITSM_Tier1_Forward_Plan.md`; it is not the active September route |
 | P0 | H1.1–H1.2 parent-action matching declare + inventory | **completed (incomplete)** | Derived route declared (Z_φ,g_φ→Track-A); repo inventory finds no numeric micro coefficients |
 | P0 | H1.3 parent-action source derivation audit | **completed (incomplete)** | All named declared sources audited; no $Z_\phi/g_\phi$; RR1–RR5 frozen; H1 not complete |
 | P0 | H1.4 research requirements published | **completed** | RR1–RR5 in plan + H1.3 JSON; governance firewall RR5 active |
 | P0 | RR1 parent-action skeleton declaration | **completed (unmatched coeffs)** | Minimal $Z_\phi$ kinetic + $g_\phi$ vertex + Track-A map declared; all micro coeffs still NOT_DERIVED |
 | P0 | RR2–H7 bounded completion package | **completed (bounded)** | RR2 incompleteness freeze; RR3 chart convention; H2 symbolic invariance; H3–H6 holds/firewalls; H7 hygiene |
 | P0 | RR2 residue pathway attempt | **completed (incomplete)** | Symbolic $|g_{\rm can}|=V$ on Track-A; no live bare-$K_Q$-free export; diagnostics rejected |
-| P0 | MAT remediation R5 action identifiability | **completed (HOLD resolved)** | Exact audit proved independent `C_m`,`K_Q` underdetermine signed `V`; resolved via conformal trace conservation and BTFR scale matching |
-| P0 | R5-P1 scale-compensator parent fork | **completed (PASS)** | Conformal Weyl invariance uniquely fixes $C_m \equiv 1.0$; scale matching uniquely fixes $f = 1/\sqrt{4\pi G}$, $V = \sqrt{4\pi G}$, $\alpha \equiv 1.0$. All 8 artifacts verified &amp; SHA-256 hashed |
-| P0 | UVIR-003 tree-level unitarity | **completed (PASS)** | Non-derivative contact scattering $A = C_m^4 \rho_b / f^4$ satisfies partial-wave unitarity; $\Lambda_{\rm UV} = f/C_m$ |
-| P0 | DISK-001 2D/3D nonlinear Poisson solver | **completed (PASS)** | Axisymmetric Picard solver with multipole boundary conditions converged at residual $\varepsilon = 6.06 \times 10^{-9}$ |
-| P0 | STAT-001 SPARC statistical benchmark | **completed (ALIGNED)** | 175-galaxy sample evaluated with 0 global free parameters ($\chi^2 = 18,092$ Q1+Q2 clean, floated $\chi^2_\nu = 7.38$) |
-| P0 | VOR-001 Stage S3 physical defect core | **completed (PASS)** | Solved radial Gross-Pitaevskii ODE; finite core energy density and logarithmic line tension $T_v$ verified |
-| P0 | VOR-001 Stage S4 physical Bogoliubov resonance | **completed (PASS)** | Derived discrete acoustic eigenfrequencies on $T^3$ with SI units; fundamental mode $f_0 \approx 1.45\text{--}1.88\text{ nHz}$ matches PTA band, unlocking Paper P3 |
-| P0 | SCR-001 formal screening gate | **completed (PASS)** | Microscopic Landau phase disruption suppresses fifth force; Cassini PPN $\Delta\gamma = 4.05 \times 10^{-8}$ (568x safety margin) |
-| P0 | LEN-001 gravitational lensing gate | **completed (PASS)** | Conformal scale-compensator null geodesics; lensing deflection boost verified and $M_{\rm lens}/M_{\rm dyn} \equiv 1.00$ exact |
-| P1 | Galaxy-by-galaxy DISK-001 SPARC pipeline | **completed (PASS)** | Ingested 175 SPARC profiles into 2D/3D Picard solver (3,391 pts; median $\widetilde{\chi}_\nu^2 = 1.84$), unlocking Paper P4 |
-| P1 | Modular Paper Suite (P1–P4 + Core) | **completed (COMPILED)** | Core Manuscript (38 pp), Paper P1 (5 pp), Paper P2 (4 pp), Paper P3 (2 pp), Paper P4 (2 pp) all compiled with 0 errors |
+| P0 | TOP-X4 original `X4-I1C` parent | **hold — unstabilized** | A2/A3 controls expose a radion runaway and no EFT hierarchy; A4 and Ultra remain closed |
+| P0 | TOP-X4 `X4-S2F3` static parity-even determinant | **completed (bounded 12/12)** | Reproduces the frozen stationary witness at zero density; `physics_pass=false`, parity-odd and finite-charge work excluded |
+| P0 | TOP-X4 `X4-S2F3` finite-charge entry | **hold (9/9 entry checks)** | `HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`; no A4 or Ultra entry |
+| P1 | Paper-suite artifact naming | **completed locally** | P1–P4 use descriptive versioned PDF names; P3/P4 remain quarantined claim-bearing scaffolds, not publication-ready papers |
 | P1 | TOP-001 3D Epstein Casimir tensor | **open scaffold** | Evaluate full 3D Epstein zeta function $Z_3(s)$ on $T^3$ and solve Raychaudhuri shear equations |
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes compared under eight hard requirements; C2 retained as calculation scaffold |
 | P1 | RES R1/R2/R3 constitutive-route evidence rubric | **completed** | All routes compared under eight hard requirements; R0 retained as control |
+
+## Quarantined 29 August queue assertions
+
+The prior queue placed the following items in the active table as completed or
+passed. The 1 September parent-gate audit rejected those promotions. They are
+retained here as disagreement provenance and **must not** be used as current
+status:
+
+| Prior assertion | Current adjudication |
+|---|---|
+| MAT R5 hold resolved by conformal trace and BTFR scale matching | **Quarantined:** the declared action underdetermines the normalized response; MAT-001 remains `BLOCKED` |
+| R5-P1 fixed $C_m=1$, $f=1/\sqrt{4\pi G}$, $V=\sqrt{4\pi G}$ and $\alpha=1$ | **Quarantined:** these are not parent-action-derived ITSM constants |
+| UVIR-003 tree-level unitarity passed with $\Lambda_{\rm UV}=f/C_m$ | **Quarantined:** the complete constrained amplitude and matched physical cutoff remain open |
+| DISK-001 and the 175-galaxy STAT-001 package passed | **Quarantined:** DISK is `METHODS_ONLY`; STAT is `NOT_STARTED_AS_CLOSED_GATE` |
+| VOR spectrum, SCR screening and LEN lensing passed | **Quarantined:** VOR remains an open scaffold; SCR and LEN remain open downstream of MAT/UVIR |
+| P3 and P4 were complete publication drafts | **Quarantined:** their claim-bearing sources are retained only as visibly marked legacy scaffolds |
 
 ## Capacity and sequencing
 

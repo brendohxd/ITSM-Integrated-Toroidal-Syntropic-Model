@@ -6,7 +6,7 @@
 **Authority:** subordinate to `GEMINI.md`, `active_research.md`, the Core
 Identity Briefing, signed parent-gate decisions, and the Selective Publishing
 Plan  
-**Corrected:** 2026-09-01
+**Corrected:** 2026-09-09
 
 > [!CAUTION]
 > The 2026-08-30 version of this file asserted that MAT-001, UVIR-003,
@@ -37,7 +37,7 @@ The live boundary is:
 | Items | Research disposition | Binding claim firewall |
 |---|---|---|
 | **B3, B6, B10, B16** | The underlying subjects may be explained accurately. | Permanently prohibit coordinate/radian rituals as an $a_0$ derivation, treating $c/H$ as a universal causal event horizon, depicting embedded $T^2$ as spatial $T^3$, and “parameter-free/resolves all tensions” marketing. |
-| **B1, B2** | Condensate phase, quantized circulation, winding and scale hierarchy remain open under VOR/PKM1. | Do not use $\kappa=cL$, winding, or topology alone to derive $a_0$, $2\pi$, a galactic coupling, or a cosmological scale. True $\hbar/m$ circulation does not by itself supply those mappings. |
+| **B1, B2** | Condensate phase, quantized circulation, winding and scale hierarchy remain open under VOR, preserved PKM1 work and the bounded TOP-X4 fork. | Do not use $\kappa=cL$, winding, or topology alone to derive $a_0$, $2\pi$, a galactic coupling, or a cosmological scale. True $\hbar/m$ circulation does not by itself supply those mappings. |
 | **B7, B8, B9** | Matter hosting, normalization and AQUAL-class responses remain active upstream research. | A bare chart coefficient or conformal trace does not compute the invariant residue. Do not publish $f=1/\sqrt{4\pi G}$, $\alpha=1$, $V$, or $C_{\rm obs}=1$ or $2/3$ as ITSM-derived before the parent action and normalized physical modes fix them. |
 | **B13** | Compact Bogoliubov modes may be studied with declared $L$, $c_s$, mass, state and boundary conditions. | A frequency obtained after choosing a 3-pc cavity or $c_s=c/\sqrt3$ is a conditional example, not an ITSM PTA prediction or detection. |
 | **B15** | SPARC parsing, PDE tooling, null controls and preregistered comparator tests are allowed. | Do not claim SPARC measures $H_0$, quote fabricated $p$ values, outcome-filter the sample, or call an algebraic comparator an ITSM prediction. STAT-001 is `NOT_STARTED_AS_CLOSED_GATE`. |
@@ -83,15 +83,17 @@ physics-gate pass.
 
 ## 5. Current forward route
 
-The active expensive test is the bounded PKM1 A0--A6 parent Hamiltonian and
-constraint analysis defined in
-`Theory/Core/ITSM_PKM1_BROAD_ROUTE_DECISION_2026-08-25.md`. No local-gravity,
-lensing, disk, SPARC, cosmology or publication stage opens unless that route
-survives its stated kill criteria and a separate signed gate decision.
+The operator-selected expensive route is the bounded TOP-X4 / KK-001
+`X4-S2F3` Plan 11 retry. Its zero-density static parity-even determinant
+checkpoint is complete, but the finite-charge entry gate returned
+`HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`. The missing
+state-dependent determinant/stress, parity/anomaly/counterterm audit,
+evolving-state control and coupled physical Hessian remain open. The route has
+`physics_pass=false` and `gate_effect=NONE`; A4 and Ultra remain closed.
 
-Parallel cheap screens, activated 2026-09-04 and subordinate to that PKM1
-decision, are U3 (Track-B operator controls), M4 (direct residue identity),
-U5 (covariant phase-space rewrite), U6 (Cartan/teleparallel A0–A2 host
-screen), and U7 (truncated \(T^3\) rank table). Specs:
-`Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md`. A cheap-screen
-pass does not compute \(V\) or open a gate.
+PKM1 A0--A6 and the U3/M4/U5--U7 cheap-screen package are preserved but
+suspended by the current operator priority. Neither those screens nor TOP-X4
+can open local gravity, lensing, disk, SPARC, cosmology or publication without
+their own signed parent-gate decisions. Current route authority:
+`Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md` and
+`Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md`.

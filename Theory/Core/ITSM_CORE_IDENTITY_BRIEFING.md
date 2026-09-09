@@ -99,15 +99,18 @@ Per `Theory/Core/ITSM_Ban_List_Reassessment_and_Frontier_Policy.md`:
 
 ```
 Active priority:
-└─ PKM1: one bounded A0–A6 metric-hosted condensate-foliation parent test
-   ├─ full ADM/Dirac count at Y>0 and Y=0
-   ├─ reduced Hamiltonian, characteristics, cutoff and source response
-   └─ only a survivor may open PPN/lensing/GW/topology tests
-Parallel cheap screens (no gate promotion):
-└─ U3 Track-B controls, M4 residue identity, U5 covariant phase space,
-   U6 Cartan/teleparallel A0–A2, U7 truncated T^3
-   spec: Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md
+└─ TOP-X4 / KK-001 Plan 11: X4-S2F3 finite-charge quantum completion
+   ├─ static parity-even determinant checkpoint: bounded 12/12 complete
+   ├─ finite-charge entry: HOLD before determinant/stress and physical Hessian
+   └─ A4 and Ultra remain closed; physics_pass=false, gate_effect=NONE
+Preserved but suspended:
+└─ PKM1 A0–A6 and the U3/M4/U5–U7 cheap-screen package
 ```
+
+The active plan is
+`Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md`.
+No TOP-X4 checkpoint changes MAT-001, UVIR-003, downstream gates, publication
+readiness, or the canonical $T^3$ identity.
 
 ## 8. What Agents Must NOT Do
 
@@ -125,10 +128,12 @@ Parallel cheap screens (no gate promotion):
 | `active_research.md` | Authoritative gate dashboard |
 | `Theory/Core/ITSM_Ban_List_Reassessment_and_Frontier_Policy.md` | Ban list reassessment & frontier policy |
 | `Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md` | Parallel cheap screens U3/M4/U5–U7; no gate promotion |
+| `Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md` | Current higher-dimensional bounded fork and decision gates |
+| `Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md` | Active Plan 11 calculation and stop boundary |
 | `Theory/Core/ITSM_Master_Research_Plan.md` | Master research workflow & identity |
 | `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` | Publication firewall & claim limits |
 | `Manuscript/ITSM_Core_Cosmology_v12.0.tex` | Official v12.0 core manuscript |
 
 ---
 
-*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-04 (cheap-screen activation listed; no downstream gate clearance).*
+*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-09 (TOP-X4 Plan 11 entry hold; no downstream gate clearance).*

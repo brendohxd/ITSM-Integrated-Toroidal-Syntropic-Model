@@ -1,73 +1,91 @@
 # P3 / P4 readiness map
 
-**Date:** 2026-08-04  
-**Branch:** `recovery/v12-core-architecture`  
-**Authority:** Master Research Plan §8–9; Selective Publishing Plan §3–4
+**Date:** 2026-09-09
 
-This is a **navigation document**, not a paper draft and not a gate PASS.
+**Branch:** `recovery/v12-core-architecture`
+
+**Status:** `FAIL_CLOSED_RECONCILED`
+
+**Authority:** `active_research.md`, signed parent-gate decisions, Master
+Research Plan §8–9, then Selective Publishing Plan §3–4
+
+This is a **navigation document**, not a paper draft or gate PASS. A compiled PDF
+establishes buildability only. It does not establish scientific readiness,
+publication clearance or a parent-gate result.
 
 ## Current signal lights
 
-| Item | Light | Note |
-|------|-------|------|
-| **P1 claim firewall** | Green (compiled) | 5 pp draft compiled; claim hygiene active |
-| **P2 Casimir** | Green (compiled) | 4 pp draft compiled; CBR-001 validated numerics |
-| **UVIR-003** | Green (passed) | Tree-level partial-wave unitarity passed ($\Lambda_{\rm UV} = f/C_m$) |
-| **MAT-001** | Green (passed) | $C_m \equiv 1.0$, $f = 1/\sqrt{4\pi G}$, $\alpha \equiv 1.0$ derived from first principles |
-| **DISK-001** | Green (passed) | 2D/3D Picard solver converged at $\varepsilon = 6.06 \times 10^{-9}$ |
-| **STAT-001** | Green (passed) | 175-galaxy SPARC pipeline benchmarked ($\widetilde{\chi}_\nu^2 = 1.84$, MCMC $\chi_\nu^2 = 7.38$) |
-| **VOR-001 spectrum** | Green (passed) | Physical acoustic resonance spectrum on $T^3$ derived ($f_0 = 1.45\text{--}1.88\text{ nHz}$) |
-| **SCR-001** | Green (passed) | Landau phase disruption screening satisfies Cassini bounds ($\Delta\gamma = 4.05 \times 10^{-8}$) |
-| **LEN-001** | Green (passed) | Relativistic lensing deflection and shear solved ($M_{\rm lens}/M_{\rm dyn} \equiv 1.00$) |
-| **Full P3 draft** | Green (compiled) | 2 pp publication draft compiled in `papers/P3-Observational-Program/` |
-| **Full P4 draft** | Green (compiled) | 2 pp publication letter compiled in `papers/P4-SPARC-Kinematics/` |
+| Item | Current light | Boundary |
+|---|---|---|
+| **P1 claim firewall** | Amber — local draft compiled | Claim-hygiene candidate; author freeze and external submission are not verified here |
+| **P2 Casimir** | Amber — repaired local draft compiled | Bounded free-field result; publication remains on independent-review and sensitivity hold |
+| **UVIR-003** | Red — `IN_PROGRESS` | Complete constrained amplitude, matched invariant and physical EFT cutoff remain open |
+| **MAT-001** | Red — `BLOCKED` | `K_Q NOT_DERIVED`; `V=C_m/sqrt(K_Q) NOT_COMPUTED` |
+| **DISK-001** | Amber — `METHODS_ONLY` | Conditional numerical tooling is not a morphology-independent ITSM prediction |
+| **STAT-001** | Red — `NOT_STARTED_AS_CLOSED_GATE` | Earlier optimizer/MCMC claims are quarantined; repaired comparator is optimization-only |
+| **VOR-001** | Amber — `OPEN_SCAFFOLD` | Chosen cavity/mode examples do not establish an ITSM PTA prediction |
+| **SCR-001** | Red — `OPEN` | Landau disruption remains an unverified heuristic downstream of the matter coupling |
+| **LEN-001** | Red — `OPEN` | Lensing potentials and wave propagation remain unclosed downstream of `V` |
+| **Full P3 draft** | Red — quarantined scaffold | The claim-bearing `main.tex` and PDF are provenance artifacts, not citable results |
+| **Full P4 draft** | Red — quarantined scaffold | The claim-bearing `main.tex` and PDF are provenance artifacts, not citable results |
+
+TOP-X4 / KK-001 does not change this table. Its Plan 11 static parity-even
+determinant checkpoint is bounded, the finite-charge entry is held,
+`physics_pass=false`, and `gate_effect=NONE`.
 
 ## Dependency sketch
 
 ```text
-                    ┌── VOR-001 spectrum (units) ──┐
-                    │   or ASTRO-001 / mapped limit │
-                    └────────────┬─────────────────┘
-                                 │
-                                 ▼
-                              FULL P3
-                                 ▲
-                                 │ (also helped by derived weak-field)
-UVIR-003 ──► MAT-001 ──► SCR/LEN ──► DISK-001 ──► STAT-001 ──► FULL P4
-   │              │                      │
-   │              │                      └── Conditional AQUAL inputs
-   │              │                          allowed for solver *dev*
-   └── K_Q inventory (Open)                  but not Derived packaging
+UVIR-003 ──► MAT-001 ──► SCR/LEN ──► DISK-001 ──► STAT-001 ──► P4 review
+                         │
+VOR / ASTRO / mapped observable ─────────────────────────────► P3 review
+
+TOP-X4 Plan 11: separate bounded fork; no publication inheritance
 ```
+
+Conditional solvers and example spectra may be developed before these gates
+close, but they must retain their assumptions and cannot be packaged as
+Derived ITSM predictions.
 
 ## Documents
 
 | Path | Role |
-|------|------|
-| `Theory/Gates/MAT-001/MAT-001_READINESS.md` | R2 handoff + unblock criteria |
-| `Theory/Gates/DISK-001/DISK-001_READINESS.md` | Solver + P4 physics gate |
-| `Theory/Gates/STAT-001/STAT-001_READINESS.md` | Inference pipeline gate |
-| `papers/P3-Observational-Program/` | Outline-only skeleton (no fixed predictions) |
-| `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` | Binding firewall |
+|---|---|
+| `active_research.md` | Current gate and operator-priority dashboard |
+| `Theory/Gates/MAT-001/MAT-001_READINESS.md` | MAT handoff and unblock criteria |
+| `Theory/Gates/DISK-001/DISK-001_READINESS.md` | Solver and P4 physics boundary |
+| `Theory/Gates/STAT-001/STAT-001_READINESS.md` | Inference-pipeline boundary |
+| `papers/P3-Observational-Program/OUTLINE.md` | Current P3 planning authority |
+| `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` | Binding publication firewall |
 
-## Commit policy for this workstream
+## Current commit and publication policy
 
-- **Commit/push readiness + P3 outline** when content is self-contained (this package).  
-- **Do not** open `papers/P4-...` or full P3 `main.tex` until the Selective Publishing **triggers** fire.  
-- Prefer gate PASS reports over paper scaffolding when the science is still Open.
+- P1/P2 may be built and reviewed within their stated scopes; neither is
+  promoted here.
+- P3 stays outline-led. Its current full source/PDF is retained only as a
+  visibly quarantined legacy scaffold.
+- P4 stays gated behind MAT, DISK and STAT. Its current full source/PDF is
+  retained only as a visibly quarantined legacy scaffold.
+- Do not submit, archive or cite P3/P4 as results until a new signed readiness
+  decision replaces this hold.
+- Prefer parent-gate decisions over child scripts, dashboards, paper scaffolds
+  or matching checksum sidecars.
 
-## Recommended order of work (capacity-aware)
+## Recommended order of work
 
-1. Compute the matched $V$ (or equivalent invariant) and reopen UVIR Stage 4A.  
-2. Re-run the independent Stage 5 closure decision; keep MAT blocked until it genuinely passes.  
-3. Continue VOR/TOP/WAK identity work and DISK tooling in parallel under Open/Conditional labels.  
-4. Start STAT-001 only when DISK predictions with declared provenance exist.  
-5. Keep P3 outline-only; open full P3/P4 drafts only when their green triggers fire.  
+1. Complete the currently authorized TOP-X4 Plan 11 finite-charge quantum
+   requirements or record a closed-negative outcome at its decision boundary.
+2. Preserve MAT-001 as blocked and UVIR-003 as in progress unless their own
+   parent checklists close.
+3. Continue VOR, SCR, LEN, DISK and STAT only within their current Open,
+   Conditional or methods-only boundaries.
+4. Reassess P3 only after a derived observable maps cleanly to a test.
+5. Reassess P4 only after MAT, DISK and STAT prerequisites are independently
+   satisfied and the RAR-normalization firewall is obeyed.
 
-## Critical Open Risks (v12.0-alpha.14+)
+## Quarantined prior status map
 
-> [!WARNING]
-> **1. VOR-001 Topological Mapping Burden:** By accepting the Covariant Compensator in MAT-001, we mathematically proved that the coupling strength and kinetic normalization are dictated by a single scale $f$. Because ITSM is a fundamental topological theory (not a phenomenological MOND fit), we cannot tune $f$ by hand. VOR-001 is now strictly on the hook to organically derive the physical value of $f$ from the winding sector topology and toroidal moduli.
-
-> [!WARNING]
-> **2. CBR-002 Causality Tension:** In UVIR-003, we successfully regulated the $q=0$ divergence by expanding the fractional $|\nabla \pi|^3$ operator against the non-zero local adiabatic background gradient. However, this creates a major mathematical tension for highly dynamical, strong-field regimes where $\nabla \pi_0 \to 0$. CBR-002 (Hyperbolic Completion) must rigorously prove that these non-linear kinetic terms do not introduce superluminal phase velocities or acausal propagation in rapidly changing source environments.
+The 2026-08-30 revision displayed green lights for MAT, UVIR, VOR, SCR, LEN,
+DISK, STAT and the full P3/P4 drafts. The 1 September parent-gate audit rejected
+those promotions. Git history preserves the exact prior wording; it is not
+current authority.

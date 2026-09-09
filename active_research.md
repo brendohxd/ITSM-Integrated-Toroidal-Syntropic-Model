@@ -52,8 +52,11 @@ that winding can never stabilize a circle is rejected. That control has zero
 temporal charge and was not selected. The only frozen retry is `X4-S2F3`,
 which adds three periodic massive 5D Dirac spectators. Its 8/8 algebraic/sign
 prescreen exhibits a dimensionless stationary minimum and nonempty cutoff
-domain, but no determinant or finite-charge stabilized background has yet been
-calculated. Status: `X4-S2F3 FROZEN_FOR_ONE_MAX_RETRY`, `physics_pass=false`.
+domain. Plan 11 has since completed the zero-density static parity-even
+determinant checkpoint, but the finite-charge entry gate remains held before
+the missing state-dependent determinant/stress, anomaly/counterterm and
+coupled-Hessian work. Status: `X4-S2F3 PLAN11_FINITE_CHARGE_ENTRY_HOLD`,
+`physics_pass=false`, `gate_effect=NONE`.
 
 Existing P2, MAT, UVIR, VOR and RES artifacts and statuses are preserved but
 their queued research and external dispatches are paused. No downstream

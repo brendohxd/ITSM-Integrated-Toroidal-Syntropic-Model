@@ -1,5 +1,12 @@
 # Gate UVIR-003: Physical-Basis Propagators and Exchange Amplitude
-## Stage 5: Exact Derivation of the Strong-Coupling Cutoff
+## Stage 5: Strong-Coupling Cutoff Draft (QUARANTINED LEGACY DRAFT)
+
+> [!CAUTION]
+> This file is superseded provenance, not the current Stage 5 decision. Its
+> fixed-background anisotropic power counting omits the complete constrained
+> physical amplitude, matched invariant and full EFT-domain checks. Current
+> authority is `UVIR-003 IN_PROGRESS`, `MAT-001 BLOCKED`; use the signed Stage
+> 5 parent decision and `active_research.md`.
 
 ### 1. Introduction
 To strictly evaluate the strong coupling scale ($\Lambda_{strong}$) of the ITSM fractional kinetic Effective Field Theory (EFT), we must perform a rigorous power-counting analysis of the non-linear interaction vertices. Because the background gradient $\vec{g}_0$ drastically breaks local Lorentz invariance, the resulting kinetic term is highly anisotropic, yielding differing longitudinal and transverse sound speeds.
@@ -57,7 +64,11 @@ $$ \Lambda_{strong}^2 = \frac{Z^{9/4}}{\ell^2} $$
 $$ \Lambda_{strong} = \frac{Z^{9/8}}{\ell} $$
 
 ### 6. Conclusion
-The exact strong coupling cutoff of the ITSM fractional kinetic EFT is precisely $\Lambda_{strong} = Z^{9/8}/\ell$.
+This legacy draft asserted a strong-coupling scale
+$\Lambda_{strong} = Z^{9/8}/\ell$ for its fixed-background power-counting
+setup; that expression is not the current exact physical ITSM cutoff.
 By executing a rigorous canonical normalization that accounts for the extreme background anisotropies, we have eliminated the parameterization ambiguities. The cutoff is entirely determined by the dimensionless kinetic normalization factor $Z = \ell^2 g_0$ and the fundamental length scale $\ell$.
 
-Because $Z \propto g_0$, the strong coupling scale vanishes in the absolute vacuum ($\Lambda_{strong} \to 0$ as $g_0 \to 0$). This mathematically confirms that the deep-MOND tree-level calculations are operating near the strong coupling threshold, a known and accepted affliction of MOND-like effective field theories.
+Within the assumptions of this superseded draft, $Z \propto g_0$ would send
+the quoted scale to zero as $g_0\to0$. No current parent-gate conclusion follows
+until the omitted constraints, matching and cutoff-domain checks are completed.

@@ -31,6 +31,7 @@ usage-limit errors and produced no reports.
 - Core architecture: `Theory/Core/ITSM_Core_Architecture.md`
 - Recovery plan (gate detail): `Theory/Core/ITSM_Core_Recovery_Plan.md`
 - Claim migration ledger: `Theory/Core/ITSM_Claim_Migration_Ledger.csv`
+- Paper PDF naming registry: `papers/PAPERS_NAMING.md`
 - Gate worklog: `Theory/Gates/RECOVERY_SESSION_WORKLOG.md`
 - Active dashboard: `active_research.md`
 - Current release notes: `CHANGELOG.md`

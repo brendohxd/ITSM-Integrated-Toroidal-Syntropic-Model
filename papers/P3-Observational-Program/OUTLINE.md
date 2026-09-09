@@ -94,5 +94,7 @@ Pull structure from CoreRecovery `sections/10_falsifiability.tex` when drafting.
 
 | Ver | Date | Note |
 |-----|------|------|
+| 0.1.1-quarantined-draft | 2026-09-09 | Claim-bearing legacy source retained behind a visible quarantine notice; this outline remains the planning authority. |
+| 0.1.0-draft | 2026-09-09 | Descriptively named build exposed claim drift; superseded before commit. |
 | 0.0.2-outline | 2026-08-04 | Gate-map sync: Stage 5 hold, MAT $V$ open, identity routes unselected; no `main.tex` |
 | 0.0.1-outline | 2026-08-03 | Initial firewall-safe outline; no `main.tex` |

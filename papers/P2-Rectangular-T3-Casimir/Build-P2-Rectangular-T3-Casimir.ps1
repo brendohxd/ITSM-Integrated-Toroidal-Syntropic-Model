@@ -17,7 +17,10 @@ if (-not (Test-Path $VersionFile)) {
 }
 $Version = (Get-Content -Raw $VersionFile).Trim()
 if (-not $Version) { throw "VERSION file is empty" }
-$ShareName = "${Author}_${Year}_${ContentSlug}_v${Version}.pdf"
+$JobStem = "${Author}_${Year}_${ContentSlug}_v${Version}"
+$PdfName = "${JobStem}.pdf"
+$SidecarName = "${PdfName}.sha256"
+$SourceName = "main.tex"
 
 if ($env:CONDA_DEFAULT_ENV -and $env:CONDA_DEFAULT_ENV -ne "itsm_env") {
     Write-Warning "Current conda env is '$($env:CONDA_DEFAULT_ENV)', not itsm_env."
@@ -38,23 +41,37 @@ foreach ($cmd in @("pdflatex", "bibtex")) {
 Push-Location $PaperDir
 try {
     Write-Host "pdflatex pass 1 ..."
-    & pdflatex -interaction=nonstopmode main.tex | Out-Null
-    if ($LASTEXITCODE -ne 0) { throw "pdflatex pass 1 failed. See main.log" }
+    & pdflatex -interaction=nonstopmode "-jobname=$JobStem" $SourceName | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw "pdflatex pass 1 failed. See $JobStem.log" }
 
     Write-Host "bibtex ..."
-    & bibtex main | Out-Null
+    & bibtex $JobStem | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw "bibtex failed. See $JobStem.blg" }
 
     Write-Host "pdflatex pass 2 ..."
-    & pdflatex -interaction=nonstopmode main.tex | Out-Null
-    if ($LASTEXITCODE -ne 0) { throw "pdflatex pass 2 failed. See main.log" }
+    & pdflatex -interaction=nonstopmode "-jobname=$JobStem" $SourceName | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw "pdflatex pass 2 failed. See $JobStem.log" }
 
     Write-Host "pdflatex pass 3 ..."
-    & pdflatex -interaction=nonstopmode main.tex | Out-Null
-    if ($LASTEXITCODE -ne 0) { throw "pdflatex pass 3 failed. See main.log" }
+    & pdflatex -interaction=nonstopmode "-jobname=$JobStem" $SourceName | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw "pdflatex pass 3 failed. See $JobStem.log" }
 
-    $pdf = Get-Item (Join-Path $PaperDir "main.pdf")
-    $named = Join-Path $PaperDir $ShareName
-    Copy-Item -Force $pdf.FullName $named
+    $named = Join-Path $PaperDir $PdfName
+    $pdf = Get-Item $named
+    $hash = (Get-FileHash -Algorithm SHA256 -LiteralPath $pdf.FullName).Hash.ToLowerInvariant()
+    "$hash  $PdfName" | Set-Content -LiteralPath (Join-Path $PaperDir $SidecarName) -Encoding ascii
+
+    # Keep generated bibliography byproducts out of the paper directory.
+    @("$JobStem.bbl", "${JobStem}Notes.bib") | ForEach-Object {
+        $buildProduct = Join-Path $PaperDir $_
+        if (Test-Path $buildProduct) { Remove-Item -Force $buildProduct }
+    }
+
+    # Remove the generic deliverable name after the canonical output is verified.
+    @("main.pdf", "main.pdf.sha256") | ForEach-Object {
+        $legacy = Join-Path $PaperDir $_
+        if (Test-Path $legacy) { Remove-Item -Force $legacy }
+    }
 
     @(
         "Boyd_P2_Anisotropic_Casimir_Rectangular_T3.pdf"
@@ -63,8 +80,8 @@ try {
         if (Test-Path $old) { Remove-Item -Force $old }
     }
 
-    Write-Host "OK: $($pdf.FullName) ($([math]::Round($pdf.Length/1KB,1)) KB)"
-    Write-Host "OK share PDF: $named"
+    Write-Host "OK canonical PDF: $($pdf.FullName) ($([math]::Round($pdf.Length/1KB,1)) KB)"
+    Write-Host "OK PDF sidecar: $(Join-Path $PaperDir $SidecarName)"
     Write-Host "VERSION: $Version"
 }
 finally {

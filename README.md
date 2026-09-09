@@ -143,6 +143,7 @@ authoritative path.
 - [Recovery Branch Guide](RECOVERY_BRANCH_README.md)
 - [Active Research & Gate Dashboard](active_research.md)
 - [Current Recovery Changelog](CHANGELOG.md)
+- [Paper PDF Naming Registry](papers/PAPERS_NAMING.md)
 - [TOP-X4 / KK-001 Route Plan](Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md)
 - [TOP-X4 Plan 11 Static Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_STATIC_CHECKPOINT_RECEIPT_2026-09-09.md)
 - [TOP-X4 Plan 11 Finite-Charge Entry Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_ENTRY_GATE_RECEIPT_2026-09-09.md)

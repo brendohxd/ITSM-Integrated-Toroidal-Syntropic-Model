@@ -2,9 +2,9 @@
 
 **Directory:** `papers/P2-Rectangular-T3-Casimir/`  
 **VERSION:** see `VERSION` (currently `0.1.0-draft`)  
-**Current locally verified PDF:** `main.pdf`
-**Versioned local share copy:** `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.1.0-draft.pdf`
-(created by the build script; both PDFs are byte-identical in the 2026-09-09 build; see `papers/PAPERS_NAMING.md`)
+**Current locally verified PDF:** `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.1.0-draft.pdf`
+(written directly by the build script with a matching `.sha256` sidecar; see
+`papers/PAPERS_NAMING.md`)
 
 **Status:** `NO_GO_CURRENT_CANDIDATE`; locally repaired, independent Role-A/Role-B audits pending
 **Branch:** `recovery/v12-core-architecture`  
@@ -68,5 +68,5 @@ is the current directory, while the downstream defaults refer to
 - [ ] Grok Role-A analytic normalization/closure audit
 - [ ] Antigravity restricted Role-B execution witness
 - [ ] Sensitivity suite and independent noncubic evaluator
-- [x] Local PDF rebuilt and all five pages visually inspected; source/PDF hashes frozen
+- [x] Canonical named PDF rebuilt and all five pages visually inspected; source/PDF hashes frozen
 - [ ] Explicit operator approval before any arXiv or journal action

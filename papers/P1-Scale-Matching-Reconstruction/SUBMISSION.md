@@ -14,7 +14,7 @@ cosmology paper. That is a feature: it is what can currently survive peer review
 | File | Role |
 |------|------|
 | `main.tex` + `references.bib` | Source |
-| `main.pdf` | Built PDF |
+| `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.1.0-draft.pdf` | Canonical built PDF |
 | `CoverLetter.txt` | arXiv comment / journal cover letter |
 | Figures via `\graphicspath` to `Assets/Figures/` | Bundle `itsm_t3_fundamental_domain.pdf` and `itsm_23_factor_schematic.pdf` with the source zip |
 

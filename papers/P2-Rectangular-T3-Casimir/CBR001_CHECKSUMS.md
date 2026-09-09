@@ -46,8 +46,7 @@ Matplotlib 3.10.9
 |---|---|
 | `papers/P2-Rectangular-T3-Casimir/main.tex` | `49f1cf6c6ddd0a83d3dc5fe0f0323a47a84f2554baaaeed26c2f43df7458120e` |
 | `papers/P2-Rectangular-T3-Casimir/references.bib` | `4ee33f31f5ec9bbbf1ced19d8eab4a76525544fa6ba13f499bbd1f26fe744426` |
-| `papers/P2-Rectangular-T3-Casimir/main.pdf` | `ff3cc3834839753d770255a536f8d41ae0ae5a325047f712a444589ce945ec55` |
-| `papers/P2-Rectangular-T3-Casimir/Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.1.0-draft.pdf` | `ff3cc3834839753d770255a536f8d41ae0ae5a325047f712a444589ce945ec55` |
+| `papers/P2-Rectangular-T3-Casimir/Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.1.0-draft.pdf` | `000c3b047bd7d1b189f5bb67ef67eed43b85beeaf9fee1273c8ea9e2c3113e8a` |
 
 The PDF was rebuilt from the listed source on 2026-09-09, checked for
 unresolved citations and overfull text, rendered to five page images, and

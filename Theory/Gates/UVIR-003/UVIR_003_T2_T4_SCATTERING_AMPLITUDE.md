@@ -1,7 +1,8 @@
 # Gate UVIR-003: Physical Scattering Amplitude and Unitarity Bound
 
 > [!CAUTION]
-> **QUARANTINED INCOMPLETE AMPLITUDE DRAFT (G0, 2026-08-25).** It uses the prohibited naive homogeneous cancellation and leaves the amplitude coefficient unspecified while calling the result exact. It cannot support a cutoff or gate closure.
+> **QUARANTINED INCOMPLETE AMPLITUDE DRAFT (G0, reaffirmed 2026-09-09).** It uses the prohibited naive homogeneous cancellation and leaves the amplitude coefficient unspecified while calling the result exact. It cannot support a cutoff or gate closure. The body is retained as provenance and is superseded by the current Stage 5 parent decision and `active_research.md`.
+
 ## Task 2-4: Exact Nonzero-Channel Exchange and Full 2→2 Amplitude
 
 ### 1. Introduction

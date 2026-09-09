@@ -1,8 +1,18 @@
 # Gate UVIR-003: Physical-Basis Propagators and Exchange Amplitude
-## Stage 4: Unitarity Bounds and Transverse Channel Breakdown (CLOSED)
+## Stage 4: Unitarity Bounds and Transverse Channel Breakdown (QUARANTINED LEGACY DRAFT)
+
+> [!CAUTION]
+> This file is superseded provenance, not a current gate decision. It assumes
+> an interpolating function and coupling that were not derived from the parent
+> action, and its cutoff does not close the current constrained amplitude.
+> Current authority is `UVIR-003 IN_PROGRESS`, `MAT-001 BLOCKED`; use the Stage
+> 5 parent decision and `active_research.md`.
 
 ### 1. Introduction
-With the exact strong-coupling cutoff rigorously derived in Stage 5 ($\Lambda_{strong} = Z^{9/8}/\ell$), we must evaluate the perturbative unitarity bound $|a_0(s)| \le 1$ in the scattering channels where non-linear interactions survive. Stage 3 proved a kinematic identity: non-linear self-interactions vanish for strictly longitudinal fluctuations. Therefore, unitarity constraints are dominated entirely by the **transverse channel**, where the $\mathcal{O}(\delta\pi^3)$ and $\mathcal{O}(\delta\pi^4)$ vertices are active.
+This legacy draft assumes the Stage 5 expression
+$\Lambda_{strong}=Z^{9/8}/\ell$ and applies a perturbative unitarity bound in
+the surviving transverse channel. The current parent-gate decision does not
+accept that assumption as an exact ITSM cutoff.
 
 ### 2. The Transverse Channel Cutoff
 The interaction energy scales are strictly determined by the dimensionless kinetic normalization factor $Z = \ell^2 g_0$. The cutoff for the cubic transverse interactions was derived as:
@@ -32,6 +42,8 @@ The failure of perturbative unitarity in the $g_0 \to 0$ transverse channel is n
 Because the fractional kinetic operator $Y^{3/2}$ is required to structurally reproduce the Baryonic Tully-Fisher Relation ($v^4 \propto M$), the resulting vanishing cutoff $\Lambda \to 0$ in vacuum is an unavoidable theoretical trade-off. 
 The interpolating function successfully cures the Solar System causality and bounds, but the theory remains strongly coupled in the deep vacuum. Any quantum processes or high-energy scattering in the galactic outskirts must rely on a yet-unknown UV completion.
 
-### Gate Status
-**UVIR-003: CLOSED (PROVISIONAL)**
-*Provisional pending acceptance of the deep-vacuum strong coupling breakdown.*
+### Historical gate-status assertion (superseded)
+
+This draft recorded `UVIR-003: CLOSED (PROVISIONAL)`. That promotion is
+quarantined. Current status is `UVIR-003 IN_PROGRESS`; the complete constrained
+amplitude, matched invariant and physical cutoff remain open.

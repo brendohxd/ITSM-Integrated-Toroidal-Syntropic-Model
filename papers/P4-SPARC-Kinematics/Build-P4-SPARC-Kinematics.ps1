@@ -1,21 +1,19 @@
-# Build P1 PDF with content-title + versioned share name.
-# Prerequisite: conda activate itsm_env
+# Build P4 PDF directly to its canonical content-title + versioned name.
+# Prerequisite: conda activate itsm_env (if the local Python/TeX environment requires it)
 #
 # Usage:
-#   cd papers\P1-Scale-Matching-Reconstruction
-#   .\Build-P1-Scale-Matching-Reconstruction.ps1
+#   cd papers\P4-SPARC-Kinematics
+#   .\Build-P4-SPARC-Kinematics.ps1
 
 $ErrorActionPreference = "Stop"
 $PaperDir = $PSScriptRoot
-$RepoRoot = Resolve-Path (Join-Path $PaperDir "..\..")
 
-# Content slug (stable product identity) + VERSION file (bumped by author)
 $Author = "Boyd"
 $Year = "2026"
-$ContentSlug = "Present-Epoch_Scale_Matching_Cobs_Hygiene"
+$ContentSlug = "SPARC_Galactic_Kinematics_AQUAL_Picard_Solutions"
 $VersionFile = Join-Path $PaperDir "VERSION"
 if (-not (Test-Path $VersionFile)) {
-    throw "Missing VERSION file in $PaperDir (expected e.g. 0.1.0-draft)"
+    throw "Missing VERSION file in $PaperDir"
 }
 $Version = (Get-Content -Raw $VersionFile).Trim()
 if (-not $Version) { throw "VERSION file is empty" }
@@ -24,33 +22,18 @@ $PdfName = "${JobStem}.pdf"
 $SidecarName = "${PdfName}.sha256"
 $SourceName = "main.tex"
 
-if ($env:CONDA_DEFAULT_ENV -and $env:CONDA_DEFAULT_ENV -ne "itsm_env") {
-    Write-Warning "Current conda env is '$($env:CONDA_DEFAULT_ENV)', not itsm_env."
-}
-elseif (-not $env:CONDA_DEFAULT_ENV) {
-    Write-Warning "No conda env on CONDA_DEFAULT_ENV. If builds fail: conda activate itsm_env"
-}
-else {
-    Write-Host "Using conda env: $env:CONDA_DEFAULT_ENV"
-}
-
-$fig = Join-Path $RepoRoot "Assets\Figures\itsm_t3_fundamental_domain.pdf"
-$figScript = Join-Path $RepoRoot "Scripts\itsm_t3_fundamental_domain.py"
-if (-not (Test-Path $fig)) {
-    Write-Host "Generating T^3 fundamental-domain figure ..."
-    Push-Location $RepoRoot
-    try { python $figScript }
-    finally { Pop-Location }
-}
-
-foreach ($cmd in @("pdflatex", "bibtex")) {
+foreach ($cmd in @("python", "pdflatex", "bibtex")) {
     if (-not (Get-Command $cmd -ErrorAction SilentlyContinue)) {
-        throw "$cmd not found on PATH (system TeX required)."
+        throw "$cmd not found on PATH."
     }
 }
 
 Push-Location $PaperDir
 try {
+    Write-Host "Generating RAR figure ..."
+    & python generate_rar_figure.py | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw "generate_rar_figure.py failed" }
+
     Write-Host "pdflatex pass 1 ..."
     & pdflatex -interaction=nonstopmode "-jobname=$JobStem" $SourceName | Out-Null
     if ($LASTEXITCODE -ne 0) { throw "pdflatex pass 1 failed. See $JobStem.log" }
@@ -82,14 +65,6 @@ try {
     @("main.pdf", "main.pdf.sha256") | ForEach-Object {
         $legacy = Join-Path $PaperDir $_
         if (Test-Path $legacy) { Remove-Item -Force $legacy }
-    }
-
-    # Remove obsolete unversioned share names if present
-    @(
-        "Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf"
-    ) | ForEach-Object {
-        $old = Join-Path $PaperDir $_
-        if (Test-Path $old) { Remove-Item -Force $old }
     }
 
     Write-Host "OK canonical PDF: $($pdf.FullName) ($([math]::Round($pdf.Length/1KB,1)) KB)"

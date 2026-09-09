@@ -352,7 +352,6 @@ https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model
         / "Selective-Publishing-Plan"
         / "ITSM_Selective_Publishing_Plan.md",
         REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "main.tex",
-        REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "main.pdf",
         REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "VERSION",
         REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "README.md",
         REPO / "papers" / "P1-Scale-Matching-Reconstruction" / "references.bib",
