@@ -54,11 +54,48 @@ which adds three periodic massive 5D Dirac spectators. Its 8/8 algebraic/sign
 prescreen exhibits a dimensionless stationary minimum and nonempty cutoff
 domain. Plan 11 has since completed the zero-density static parity-even
 determinant checkpoint and a constant-background finite-charge operator/
-fixed-charge variation checkpoint. The evolving-state determinant remains
-held before the missing Hadamard/adiabatic state, renormalized stress,
-anomaly/counterterm and coupled-Hessian work. Status:
-`X4-S2F3 PLAN11_DYNAMIC_DETERMINANT_HOLD`, `physics_pass=false`,
-`gate_effect=NONE`.
+fixed-charge variation checkpoint. The preregistered dynamic
+state/subtraction checkpoint then returned 11/12: the exact evolving scalar
+operator and UV hierarchy passed, but three low-mode fourth-order WKB iterates
+became non-positive near the initial boundary. The tested branchwise state is
+rejected over the full registered grid; the coupled Hadamard/Dirac state,
+renormalized stress, anomaly/counterterm and coupled-Hessian work remain held.
+Status: `X4-S2F3 FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT`,
+`physics_pass=false`, `gate_effect=NONE`.
+
+A separately frozen retry preserves that failure and replaces only the
+low-mode state prescription. Positive-Hamiltonian scalar data at the original
+`t=0` surface undergo exact symplectic transport; a distinct first-order Dirac
+superadiabatic projector undergoes exact unitary transport. The retry passes
+18/18 bounded checks, but neither state is an infinite-order Hadamard
+construction and no covariant 5D subtraction or stress is computed. A
+subsequent 20/20 readiness audit validates the universal five-dimensional
+Hadamard/heat-kernel scaffold while recording every model-specific operator
+and state prerequisite as incomplete. The next fixed-metric covariant
+scalar/`chi` matrix checkpoint then passes 25/25 exact checks. It derives the
+off-shell rank-three Hessian, `E=-H`, zero bundle curvature and the
+scalar-induced counterterm structures through `b_2`, including `R*s` and
+`R*chi^2`. Current route status:
+`X4-S2F3 PASS_COVARIANT_SCALAR_CHI_MATRIX_OPERATOR_HOLD_STATES_GRAVITY_PARITY_AND_STRESS`,
+`counterterm_normalizations=NOT_FIXED`, `scalar_matrix_hadamard_state=NOT_CONSTRUCTED`,
+`renormalized_stress=NOT_COMPUTED`, `physics_pass=false`, `gate_effect=NONE`.
+
+The next local scalar-matrix Hadamard-parametrix checkpoint passes 22/22 with
+status
+`PASS_SCALAR_MATRIX_HADAMARD_PARAMETRIX_HOLD_GLOBAL_STATE_AND_STRESS`. It
+verifies the five-dimensional local singular structure, Cartesian `U_0`,
+matrix `U_1`/`U_2` coincidence/transport controls, the frozen `E=-H` sign,
+generic bundle-curvature data and phase-aligned derivative mixing. This is a
+local parametrix result through `U_2`, with a flat constant-matrix recurrence
+as the executable matrix realization; it does not construct arbitrary-
+background off-diagonal biscalars or a global smooth state. Current route
+status is therefore
+`scalar_matrix_hadamard_parametrix=DERIVED_LOCAL_U0_U2`,
+`scalar_matrix_hadamard_state=NOT_CONSTRUCTED`,
+`counterterm_normalizations=NOT_FIXED`, `renormalized_stress=NOT_COMPUTED`,
+`physics_pass=false`, `gate_effect=NONE`. The next single gate is a globally
+admissible infinite-order scalar-matrix state; stress, determinant, physical
+Hessian, gravity/ghost, parity/anomaly and all downstream gates remain held.
 
 Existing P2, MAT, UVIR, VOR and RES artifacts and statuses are preserved but
 their queued research and external dispatches are paused. No downstream
@@ -206,6 +243,72 @@ The registered next task is
   promotion is claimed. A4 and Ultra remain closed.
 - Authoritative receipt:
   `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_OPERATOR_CHECKPOINT_2026-09-12.md`.
+
+### 12 September 2026 — dynamic state/subtraction checkpoint
+
+- The preregistered evolving scalar-state checkpoint constructed the exact
+  volume-rescaled charged amplitude/phase system and reproduced the prior
+  constant-background determinant. Background, charge-law, mutation,
+  Wronskian and UV convergence checks passed.
+- The binding run returned `FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT` with
+  `11/12` checks. Three low-momentum fourth-order WKB iterates became
+  non-positive near the initial hypersurface: charged-minus `(k,n)=(1,0)` and
+  `(1,1)`, and chi `(1,0)`. All base scalar frequencies remained positive.
+- The UV subset `k_obs>=16` satisfies the order hierarchy; its maximum relative
+  fourth-order correction is `4.1338354829389994e-6`, and the 1601/801-point
+  envelope difference is `1.9412678207069711e-7`. This clean UV behavior does
+  not override the frozen all-mode failure.
+- No full Hadamard state, Dirac spinor state, covariant 5D subtraction,
+  renormalized stress or physical Hessian is claimed. A retry requires a new
+  freeze for coupled transport and the low-mode/initial-surface prescription.
+  Rule-9 clearance remains unmet; A4 and Ultra remain closed.
+- Authoritative receipt:
+  `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT_2026-09-12.md`.
+
+### 12 September 2026 — exact scalar/Dirac transport retry
+
+- The separately frozen retry retains the prior 11/12 WKB failure as an
+  immutable input. It does not relax or rerun the failed fourth-order
+  branchwise state criterion.
+- The retry passes `18/18` bounded checks with
+  `PASS_EXACT_SCALAR_DIRAC_TRANSPORT_HOLD_HADAMARD_STRESS_AND_HESSIAN`.
+  Charged and real scalar modes use positive-Hamiltonian data at `t=0` and
+  exact symplectic transport; the three prior low modes remain finite without
+  a WKB iterate.
+- A separate four-component Dirac construction uses a first-order,
+  exactly-retracted rank-two superadiabatic projector and exact unitary
+  evolution for the `N_F=3`, `m_F=1` equal-mass dimensionless control. The
+  maximum defect ratio is `0.1956287111447811`; the maximum spinor
+  inner-product residual is `7.059952142327541e-10`.
+- Scalar symplectic residual is `2.694307068596595e-9`; the 801/401-point
+  envelope difference is `4.4959119760434874e-10`. Registered scalar mixing
+  and Dirac leakage decrease along `k_obs=8,16,32` for every tested `n`.
+- This is exact finite-order transport, not a full Hadamard state or stress
+  calculation. Covariant 5D subtraction/counterterms, the semiclassical
+  background, physical Hessian, parity/anomaly audit and Rule-9 clearance
+  remain open. A4 and Ultra remain closed.
+- Authoritative receipt:
+  `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_EXACT_TRANSPORT_RETRY_CHECKPOINT_2026-09-12.md`.
+
+### 12 September 2026 — D5 Hadamard/subtraction readiness
+
+- The separately frozen readiness executable passes `20/20` bounded checks
+  with
+  `PASS_5D_HADAMARD_COUNTERTERM_SCAFFOLD_HOLD_FULL_OPERATORS_STATE_AND_STRESS`.
+- It recovers the scalar `D=5` Hadamard singularity through `U_2`, general
+  matrix Laplace-type coefficients through `b_2`, the `Lambda^5`, `Lambda^3`
+  and `Lambda` proper-time structure, and all five independent pure-gravity
+  counterterms. Six bad scope mutations are rejected.
+- The binding decision remains `HOLD`. The covariant charged-scalar/`chi`
+  matrix second variation, scalar and Dirac Hadamard states, curved
+  graviton/ghost operators, parity-odd phase and counterterm normalization are
+  all `NOT_COMPLETED`; no stress integral is authorized.
+- The next single gate is the off-shell covariant scalar/`chi` matrix operator
+  before homogeneous or fixed-charge reduction. `physics_pass=false`,
+  `gate_effect=NONE`; Rule-9 clearance remains unmet and A4/Ultra remain
+  closed.
+- Authoritative receipt:
+  `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_HADAMARD_SUBTRACTION_READINESS_2026-09-12.md`.
 
 ---
 ### Historical Archive: Gate Dashboard as of 2026-08-07 (provenance only)

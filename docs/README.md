@@ -6,10 +6,13 @@ Multi-page research site published at https://itsm-cosmology.com.
 
 Audited 12 September 2026 against the v12.0-alpha.12 recovery authority:
 
-- **TOP-X4 / X4-S2F3:** `PLAN11_DYNAMIC_DETERMINANT_HOLD`. Static
-  determinant 12/12, entry gate 9/9 and finite-charge operator checkpoint
-  16/16 are bounded script results only; `physics_pass=false` and
-  `gate_effect=NONE`.
+- **TOP-X4 / X4-S2F3:** `LOCAL_PARAMETRIX_PASS_GLOBAL_STATE_STRESS_HOLD`.
+  Static determinant 12/12, entry gate 9/9, finite-charge operator 16/16,
+  exact transport 18/18, D5 scaffold 20/20 and fixed-metric scalar-matrix
+  operator 25/25 remain bounded. The local scalar-matrix Hadamard-parametrix
+  checkpoint now passes 22/22 through `U_2`. A global/infinite-order state,
+  normalization, gravity/parity completion, determinant, stress and physical
+  Hessian remain held. `physics_pass=false` and `gate_effect=NONE`.
 - **MAT-001:** `BLOCKED`; `K_Q` is `NOT_DERIVED` and `V` is
   `NOT_COMPUTED`.
 - **UVIR-003:** `IN_PROGRESS`; no complete physical amplitude, unitarity

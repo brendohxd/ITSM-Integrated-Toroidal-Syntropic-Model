@@ -76,10 +76,15 @@ git checkout recovery/v12-core-architecture
       <div class="grid">
         <article class="card">
           <h3>TOP-X4 / X4-S2F3 — Plan 11</h3>
-          <p>Reproduces bounded static, finite-charge entry and operator/variation checks. All retain <code>physics_pass=false</code>; the dynamic-state calculation remains open.</p>
+          <p>Reproduces the bounded static and finite-charge checks, the preserved 11/12 dynamic WKB failure, the separate 18/18 exact scalar/first-order Dirac transport pass, the 20/20 D5 scaffold audit, the 25/25 fixed-metric scalar-matrix pass, and the 22/22 local scalar-matrix Hadamard-parametrix pass through <code>U_2</code>. All retain <code>physics_pass=false</code>; a global/infinite-order Hadamard state, normalization, gravity/parity completion, determinant, stress and the physical Hessian remain open.</p>
           <pre><code>python Analysis/TOP/TOP-X4/topx4_s2f3_static_determinant_checkpoint.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_entry_gate.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_operator_checkpoint.py</code></pre>
+python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_operator_checkpoint.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_dynamic_state_subtraction_checkpoint.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_exact_transport_retry_checkpoint.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_hadamard_subtraction_readiness.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_covariant_scalar_matrix_checkpoint.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_scalar_matrix_hadamard_parametrix_checkpoint.py</code></pre>
         </article>
         <article class="card">
           <h3>TOP-001 / CBR-002 — Moduli Control</h3>

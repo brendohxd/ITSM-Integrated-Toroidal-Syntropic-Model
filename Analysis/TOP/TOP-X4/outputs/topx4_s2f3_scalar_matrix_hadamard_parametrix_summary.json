@@ -1,0 +1,571 @@
+{
+  "advance_to_a4": false,
+  "advance_to_determinant": false,
+  "advance_to_global_state": false,
+  "advance_to_physical_hessian": false,
+  "advance_to_renormalized_stress": false,
+  "advance_to_semiclassical_background": false,
+  "advance_to_ultra": false,
+  "authority_receipts": [
+    {
+      "actual": "a6d1ffb25fb9445975a4ce72661fe734a98956e6537f0549ef8b88f96ca0ff14",
+      "expected": "a6d1ffb25fb9445975a4ce72661fe734a98956e6537f0549ef8b88f96ca0ff14",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_COVARIANT_SCALAR_MATRIX_CONTRACT_2026-09-12.md"
+    },
+    {
+      "actual": "393584ccd00a4ea79ba1c2c8228cbca78bb925fade462b8b0740fe1c64e42f07",
+      "expected": "393584ccd00a4ea79ba1c2c8228cbca78bb925fade462b8b0740fe1c64e42f07",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\topx4_s2f3_covariant_scalar_matrix_checkpoint.py"
+    },
+    {
+      "actual": "11125054bb284a4597587fbcb50e0d70358232ea8bd54f579b20a3948c202560",
+      "expected": "11125054bb284a4597587fbcb50e0d70358232ea8bd54f579b20a3948c202560",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_covariant_scalar_matrix_summary.json"
+    },
+    {
+      "actual": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+      "expected": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_HADAMARD_SUBTRACTION_READINESS_CONTRACT_2026-09-12.md"
+    },
+    {
+      "actual": "a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2",
+      "expected": "a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_hadamard_subtraction_readiness_summary.json"
+    },
+    {
+      "actual": "de3426c753e55da8b55a5f0151bc875b5060c4bf3d7fbae75ab044c93273a1d6",
+      "expected": "de3426c753e55da8b55a5f0151bc875b5060c4bf3d7fbae75ab044c93273a1d6",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_exact_transport_retry_summary.json"
+    },
+    {
+      "actual": "907d54d3f16ecf88fc0e59fd592c0dfb5c312d19b127a0581996d356841e8669",
+      "expected": "907d54d3f16ecf88fc0e59fd592c0dfb5c312d19b127a0581996d356841e8669",
+      "matches": true,
+      "path": "Theory\\Core\\Reasoning_Mode_Plans\\11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION\\PLAN.md"
+    },
+    {
+      "actual": "4f036104de14ac2e05f2a0edadf7aaf8da85a1209d6852e6ef5a13513d9ffc56",
+      "expected": "4f036104de14ac2e05f2a0edadf7aaf8da85a1209d6852e6ef5a13513d9ffc56",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_SCALAR_MATRIX_HADAMARD_PARAMETRIX_CONTRACT_2026-09-12.md"
+    }
+  ],
+  "calculation_checks_passed": 22,
+  "calculation_checks_total": 22,
+  "calculation_status": "PASS",
+  "candidate": "X4-S2F3",
+  "checkpoint_completed": "2026-09-12",
+  "checks": [
+    {
+      "name": "all_authority_and_input_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "a6d1ffb25fb9445975a4ce72661fe734a98956e6537f0549ef8b88f96ca0ff14",
+          "expected": "a6d1ffb25fb9445975a4ce72661fe734a98956e6537f0549ef8b88f96ca0ff14",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_COVARIANT_SCALAR_MATRIX_CONTRACT_2026-09-12.md"
+        },
+        {
+          "actual": "393584ccd00a4ea79ba1c2c8228cbca78bb925fade462b8b0740fe1c64e42f07",
+          "expected": "393584ccd00a4ea79ba1c2c8228cbca78bb925fade462b8b0740fe1c64e42f07",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\topx4_s2f3_covariant_scalar_matrix_checkpoint.py"
+        },
+        {
+          "actual": "11125054bb284a4597587fbcb50e0d70358232ea8bd54f579b20a3948c202560",
+          "expected": "11125054bb284a4597587fbcb50e0d70358232ea8bd54f579b20a3948c202560",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_covariant_scalar_matrix_summary.json"
+        },
+        {
+          "actual": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+          "expected": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_HADAMARD_SUBTRACTION_READINESS_CONTRACT_2026-09-12.md"
+        },
+        {
+          "actual": "a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2",
+          "expected": "a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_hadamard_subtraction_readiness_summary.json"
+        },
+        {
+          "actual": "de3426c753e55da8b55a5f0151bc875b5060c4bf3d7fbae75ab044c93273a1d6",
+          "expected": "de3426c753e55da8b55a5f0151bc875b5060c4bf3d7fbae75ab044c93273a1d6",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_exact_transport_retry_summary.json"
+        },
+        {
+          "actual": "907d54d3f16ecf88fc0e59fd592c0dfb5c312d19b127a0581996d356841e8669",
+          "expected": "907d54d3f16ecf88fc0e59fd592c0dfb5c312d19b127a0581996d356841e8669",
+          "matches": true,
+          "path": "Theory\\Core\\Reasoning_Mode_Plans\\11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION\\PLAN.md"
+        },
+        {
+          "actual": "4f036104de14ac2e05f2a0edadf7aaf8da85a1209d6852e6ef5a13513d9ffc56",
+          "expected": "4f036104de14ac2e05f2a0edadf7aaf8da85a1209d6852e6ef5a13513d9ffc56",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_SCALAR_MATRIX_HADAMARD_PARAMETRIX_CONTRACT_2026-09-12.md"
+        }
+      ]
+    },
+    {
+      "name": "preceding_scalar_operator_hold_is_preserved",
+      "ok": true,
+      "scalar_matrix_hadamard_state": "NOT_CONSTRUCTED",
+      "scalar_matrix_operator": "DERIVED_FIXED_METRIC_OFF_SHELL",
+      "status": "PASS_COVARIANT_SCALAR_CHI_MATRIX_OPERATOR_HOLD_STATES_GRAVITY_PARITY_AND_STRESS"
+    },
+    {
+      "hadamard_stress_ready": false,
+      "name": "preceding_hadamard_scaffold_hold_is_preserved",
+      "ok": true,
+      "readiness_decision": "HOLD",
+      "status": "PASS_5D_HADAMARD_COUNTERTERM_SCAFFOLD_HOLD_FULL_OPERATORS_STATE_AND_STRESS"
+    },
+    {
+      "covariant_5D_subtraction": "NOT_DERIVED",
+      "finite_order_only": true,
+      "full_Hadamard_state": false,
+      "name": "exact_transport_predecessor_remains_finite_order_only",
+      "ok": true,
+      "status": "PASS_EXACT_SCALAR_DIRAC_TRANSPORT_HOLD_HADAMARD_STRESS_AND_HESSIAN"
+    },
+    {
+      "dimension": 5,
+      "name": "D5_singular_power_and_prefactor_are_registered",
+      "ok": true,
+      "prefactor": "sqrt(2)*I/(32*pi**2)",
+      "singular_power": "3/2"
+    },
+    {
+      "Cartesian_parallel_transporter": "I3",
+      "U0": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "name": "U0_is_cartesian_parallel_transport_at_coincidence",
+      "ok": true
+    },
+    {
+      "coincidence_box_sigma": "5",
+      "name": "U0_transport_equation_has_the_D5_coincidence_coefficient",
+      "ok": true,
+      "transport_equation": "(2 sigma^A D_A + Box(sigma) - 5) U0 = 0"
+    },
+    {
+      "U1": [
+        [
+          "-(-R + 6*h11)/6",
+          "-h12",
+          "-h13"
+        ],
+        [
+          "-h12",
+          "-(-R + 6*h22)/6",
+          "-h23"
+        ],
+        [
+          "-h13",
+          "-h23",
+          "-(-R + 6*h33)/6"
+        ]
+      ],
+      "expected": "-H + R*I3/6",
+      "name": "U1_coincidence_equals_E_plus_R_over_6",
+      "ok": true
+    },
+    {
+      "Omega_term": "zero in Cartesian scalar bundle",
+      "name": "rank_three_U1_and_U2_coincidence_traces_match_matrix_b_map",
+      "ok": true,
+      "trace_U1": "R/2 - h11 - h22 - h33",
+      "trace_U2": "BoxH11/6 + BoxH22/6 + BoxH33/6 - BoxR/10 - R**2/24 + R*h11/6 + R*h22/6 + R*h33/6 + Ricci2/60 - Riemann2/60 - h11**2/2 - h12**2 - h13**2 - h22**2/2 - h23**2 - h33**2/2",
+      "trace_b2": "-BoxH11/6 - BoxH22/6 - BoxH33/6 + BoxR/10 + R**2/24 - R*h11/6 - R*h22/6 - R*h33/6 - Ricci2/60 + Riemann2/60 + h11**2/2 + h12**2 + h13**2 + h22**2/2 + h23**2 + h33**2/2"
+    },
+    {
+      "Omega_squared_coefficient": "1/12 in tr(b2)",
+      "b1": "R/2 - h11 - h22 - h33",
+      "b2": "-BoxH11/6 - BoxH22/6 - BoxH33/6 + BoxR/10 + R**2/24 - R*(h11 + h22 + h33)/6 - Ricci2/60 + Riemann2/60 + TrOmega2/12 + h11**2/2 + h12**2 + h13**2 + h22**2/2 + h23**2 + h33**2/2",
+      "name": "generic_matrix_b1_b2_map_retains_E_Omega_and_total_derivatives",
+      "ok": true
+    },
+    {
+      "U0": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "U1": [
+        [
+          "-f11",
+          "-f12",
+          "-f13"
+        ],
+        [
+          "-f12",
+          "-f22",
+          "-f23"
+        ],
+        [
+          "-f13",
+          "-f23",
+          "-f33"
+        ]
+      ],
+      "U2": [
+        [
+          "-(f11**2 + f12**2 + f13**2)/2",
+          "-(f11*f12 + f12*f22 + f13*f23)/2",
+          "-(f11*f13 + f12*f23 + f13*f33)/2"
+        ],
+        [
+          "-(f11*f12 + f12*f22 + f13*f23)/2",
+          "-(f12**2 + f22**2 + f23**2)/2",
+          "-(f12*f13 + f22*f23 + f23*f33)/2"
+        ],
+        [
+          "-(f11*f13 + f12*f23 + f13*f33)/2",
+          "-(f12*f13 + f22*f23 + f23*f33)/2",
+          "-(f13**2 + f23**2 + f33**2)/2"
+        ]
+      ],
+      "name": "flat_constant_matrix_transport_recursion_reproduces_U1_U2",
+      "ok": true,
+      "recurrence": "n=1,2 with L=Box-H and constant symmetric H"
+    },
+    {
+      "U1": "-R*xi + R/6 - m**2",
+      "U2": "BoxR*xi/6 - BoxR/30 - R**2/72 + R*(R*xi + m**2)/6 + Ricci2/180 - Riemann2/180 - (R*xi + m**2)**2/2",
+      "mass_factored": false,
+      "name": "free_scalar_nested_U1_U2_controls_match_registered_D5_formulas",
+      "ok": true
+    },
+    {
+      "U0_dimension": 0,
+      "U1_dimension": 2,
+      "U2_dimension": 4,
+      "name": "D5_parametrix_coincidence_coefficients_have_required_dimensions",
+      "ok": true,
+      "singular_power_dimension": 3
+    },
+    {
+      "name": "local_U_coefficients_are_covariant_under_constant_orthogonal_basis_change",
+      "ok": true,
+      "transformation": "H -> Q H Q^T, Box(H) -> Q Box(H) Q^T"
+    },
+    {
+      "Omega_AB": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "connection": "A_A=J*d_A(Theta)",
+      "first_derivative_coefficient": [
+        [
+          "0",
+          "2*mu",
+          "0"
+        ],
+        [
+          "-2*mu",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "name": "phase_aligned_connection_is_pure_gauge_but_retains_2mu_derivative_mixing",
+      "ok": true
+    },
+    {
+      "correct_free_U1": [
+        [
+          "-(-R + 6*m**2)/6",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-(-R + 6*m**2)/6",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-(-R + 6*m**2)/6"
+        ]
+      ],
+      "name": "wrong_E_plus_H_mutation_is_rejected_by_free_U1",
+      "ok": true,
+      "wrong_free_U1": [
+        [
+          "(R + 6*m**2)/6",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "(R + 6*m**2)/6",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "(R + 6*m**2)/6"
+        ]
+      ]
+    },
+    {
+      "canonical_relation": "U2=-b2",
+      "name": "wrong_U2_sign_mutation_is_rejected",
+      "ok": true
+    },
+    {
+      "name": "omitted_generic_Omega_squared_mutation_is_rejected",
+      "ok": true,
+      "required_difference": "tr(Omega_AB Omega^AB)/12"
+    },
+    {
+      "name": "componentwise_free_scalar_mutation_is_rejected_for_matrix_U2",
+      "ok": true,
+      "omitted_matrix_terms": [
+        [
+          "-(f12**2 + f13**2)/2",
+          "-(f11*f12 + f12*f22 + f13*f23)/2",
+          "-(f11*f13 + f12*f23 + f13*f33)/2"
+        ],
+        [
+          "-(f11*f12 + f12*f22 + f13*f23)/2",
+          "-(f12**2 + f23**2)/2",
+          "-(f12*f13 + f22*f23 + f23*f33)/2"
+        ],
+        [
+          "-(f11*f13 + f12*f23 + f13*f33)/2",
+          "-(f12*f13 + f22*f23 + f23*f33)/2",
+          "-(f13**2 + f23**2)/2"
+        ]
+      ]
+    },
+    {
+      "name": "local_parametrix_is_not_promoted_to_global_state",
+      "ok": true,
+      "state_boundary": {
+        "full_Hadamard_state": false,
+        "global_wavefront_condition": false,
+        "local_parametrix": true,
+        "positivity": false,
+        "smooth_state_bisolution": false
+      }
+    },
+    {
+      "name": "static_q0_subtraction_is_not_called_evolving_stress_renormalization",
+      "ok": true,
+      "q0_subtraction_scope": "STATIC_TOPOLOGY_ONLY"
+    },
+    {
+      "downstream_actions": {
+        "advance_to_a4": false,
+        "advance_to_ultra": false,
+        "determinant_or_mode_sum": false,
+        "fixed_charge_reduction": false,
+        "gate_or_publication_promotion": false,
+        "global_state_construction": false,
+        "homogeneous_reduction": false,
+        "physical_hessian": false,
+        "renormalized_stress": false,
+        "semiclassical_background": false
+      },
+      "forbidden_source_tokens": [],
+      "name": "state_boundary_and_downstream_action_firewalls_hold",
+      "ok": true,
+      "prohibited_predecessor_import": false
+    }
+  ],
+  "completion_inventory": {
+    "counterterm_normalization_conditions": "NOT_COMPLETED",
+    "curved_finite_charge_graviton_and_ghost_operators": "NOT_COMPLETED",
+    "dirac_hadamard_two_point_function": "NOT_COMPLETED",
+    "global_scalar_matrix_hadamard_state": "NOT_CONSTRUCTED",
+    "local_scalar_matrix_hadamard_parametrix_U0_U2": "COMPLETED",
+    "parity_odd_phase_and_quantized_counterterms": "NOT_COMPLETED",
+    "physical_hessian": "NOT_COMPLETED",
+    "renormalized_state_dependent_stress": "NOT_COMPUTED"
+  },
+  "counterterm_normalizations": "NOT_FIXED",
+  "derived_claims": [],
+  "determinant": "NOT_COMPUTED",
+  "explicit_nonclaims": [
+    "no global Hadamard state",
+    "no positivity or global wavefront proof",
+    "no determinant or mode sum",
+    "no renormalized stress tensor",
+    "no counterterm normalization",
+    "no curved graviton determinant",
+    "no parity or anomaly clearance",
+    "no self-consistent semiclassical background",
+    "no physical Hessian or radion mass",
+    "no A4, Ultra, architecture, gate or publication change"
+  ],
+  "gate_effect": "NONE",
+  "hold_reasons": [
+    "the smooth state-dependent matrix bisolution and positivity are not constructed",
+    "the existing exact transport remains finite-order and non-Hadamard",
+    "the Dirac Hadamard two-point function is not constructed",
+    "curved graviton/ghost/Jacobian operators and the physical Hessian remain open",
+    "parity-odd phase, global anomaly and counterterm normalization remain open",
+    "no determinant, mode sum, state-dependent stress or semiclassical background is computed"
+  ],
+  "local_parametrix": {
+    "U0": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "U1": [
+      [
+        "-(-R + 6*h11)/6",
+        "-h12",
+        "-h13"
+      ],
+      [
+        "-h12",
+        "-(-R + 6*h22)/6",
+        "-h23"
+      ],
+      [
+        "-h13",
+        "-h23",
+        "-(-R + 6*h33)/6"
+      ]
+    ],
+    "U2": [
+      [
+        "-(-60*BoxH11 + 12*BoxR + 5*R**2 - 60*R*h11 - 2*Ricci2 + 2*Riemann2 + 180*h11**2 + 180*h12**2 + 180*h13**2)/360",
+        "-(-BoxH12 - R*h12 + 3*h11*h12 + 3*h12*h22 + 3*h13*h23)/6",
+        "-(-BoxH13 - R*h13 + 3*h11*h13 + 3*h12*h23 + 3*h13*h33)/6"
+      ],
+      [
+        "-(-BoxH12 - R*h12 + 3*h11*h12 + 3*h12*h22 + 3*h13*h23)/6",
+        "-(-60*BoxH22 + 12*BoxR + 5*R**2 - 60*R*h22 - 2*Ricci2 + 2*Riemann2 + 180*h12**2 + 180*h22**2 + 180*h23**2)/360",
+        "-(-BoxH23 - R*h23 + 3*h12*h13 + 3*h22*h23 + 3*h23*h33)/6"
+      ],
+      [
+        "-(-BoxH13 - R*h13 + 3*h11*h13 + 3*h12*h23 + 3*h13*h33)/6",
+        "-(-BoxH23 - R*h23 + 3*h12*h13 + 3*h22*h23 + 3*h23*h33)/6",
+        "-(-60*BoxH33 + 12*BoxR + 5*R**2 - 60*R*h33 - 2*Ricci2 + 2*Riemann2 + 180*h13**2 + 180*h23**2 + 180*h33**2)/360"
+      ]
+    ],
+    "cartesian_Omega_AB": "0",
+    "cartesian_bundle_connection": "D_A=nabla_A*I3",
+    "coincidence_relation": "[U1]=b1; [U2]=-b2",
+    "dimension": 5,
+    "phase_aligned_Omega_AB": "0 on smooth patch",
+    "phase_aligned_connection": "A_A=J*d_A(Theta)",
+    "prefactor": "sqrt(2)*I/(32*pi**2)",
+    "series": "U0 + U1*sigma + U2*sigma^2 + O(sigma^3)",
+    "singular_exponent": "3/2"
+  },
+  "matrix_heat_kernel_map": {
+    "proper_time_powers": [
+      "Lambda^5",
+      "Lambda^3",
+      "Lambda"
+    ],
+    "trace_b0": "3",
+    "trace_b1": "R/2 - h11 - h22 - h33",
+    "trace_b2_cartesian": "-BoxH11/6 - BoxH22/6 - BoxH33/6 + BoxR/10 + R**2/24 - R*(h11 + h22 + h33)/6 - Ricci2/60 + Riemann2/60 + h11**2/2 + h12**2 + h13**2 + h22**2/2 + h23**2 + h33**2/2",
+    "trace_b2_generic": "-BoxH11/6 - BoxH22/6 - BoxH33/6 + BoxR/10 + R**2/24 - R*(h11 + h22 + h33)/6 - Ricci2/60 + Riemann2/60 + TrOmega2/12 + h11**2/2 + h12**2 + h13**2 + h22**2/2 + h23**2 + h33**2/2"
+  },
+  "next_required_calculation": "construct and independently audit a globally admissible infinite-order scalar matrix Hadamard state, or a justified pseudodifferential/adiabatic equivalent, with positivity and wavefront conditions",
+  "physics_pass": false,
+  "primary_source_basis": [
+    {
+      "id": "arXiv:gr-qc/0512118",
+      "scope": "D=5 scalar Hadamard coefficients, state-dependent smooth part and renormalization boundary"
+    },
+    {
+      "id": "arXiv:hep-th/0306138",
+      "scope": "Laplace-type connection, endomorphism and matrix heat-kernel coefficients"
+    }
+  ],
+  "renormalized_stress": "NOT_COMPUTED",
+  "route": "TOP-X4_KK-001",
+  "rule9_review": {
+    "completed_independent_reports": 0,
+    "effect": "no reviewer-consensus or gate-promotion claim",
+    "scope": "this local scalar-matrix Hadamard-parametrix checkpoint",
+    "status": "THREE_WAY_CLEARANCE_NOT_MET"
+  },
+  "scalar_matrix_hadamard_parametrix": "DERIVED_LOCAL_U0_U2",
+  "scalar_matrix_hadamard_state": "NOT_CONSTRUCTED",
+  "schema": "ITSM_TOPX4_S2F3_SCALAR_MATRIX_HADAMARD_PARAMETRIX_v1",
+  "source_sha256": "5a9d17c94a73d69caa87afd34b47617bbd18765ffb10f00dfac3e88af20a201c",
+  "state_boundary": {
+    "full_Hadamard_state": false,
+    "global_wavefront_condition": false,
+    "local_parametrix": true,
+    "positivity": false,
+    "smooth_state_bisolution": false
+  },
+  "status": "PASS_SCALAR_MATRIX_HADAMARD_PARAMETRIX_HOLD_GLOBAL_STATE_AND_STRESS"
+}

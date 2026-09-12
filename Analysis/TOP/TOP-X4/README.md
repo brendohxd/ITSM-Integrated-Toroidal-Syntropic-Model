@@ -137,6 +137,148 @@ The checkpoint passes 16/16 exact algebra, provenance and mutation checks. It
 derives the amplitude-phase mixing, Goldstone/amplitude branches and
 fixed-global-charge Routhian identities, while rejecting omitted-mixing and
 wrong-sign-Routhian mutations. It retains `physics_pass: false`, has no gate
-effect and does not advance to the evolving-state determinant. The required
-next calculation is the coupled time-dependent mode system, declared
-Hadamard/adiabatic state, subtraction terms and adiabatic-order convergence.
+effect and does not advance to the evolving-state determinant. The then-next
+calculation—the coupled time-dependent mode system, declared scalar adiabatic
+state ingredients and order-convergence test—is recorded below.
+
+## Plan 11 — dynamic state/subtraction checkpoint
+
+Run the preregistered evolving scalar-mode and finite-order adiabatic test with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_dynamic_state_subtraction_checkpoint.py
+```
+
+The recorded status is:
+
+```text
+FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT
+```
+
+The run clears 11/12 checks. The exact time-dependent charged-scalar mode
+system, charge-law regression, mutation controls and preregistered UV
+order-0/2/4 hierarchy pass. The all-mode positivity check fails because the
+fourth-order WKB iterate becomes negative for three low-momentum branch/mode
+combinations near the initial hypersurface. Base frequencies remain positive,
+so this is not recorded as a physical tachyon; it rejects the tested
+branchwise fourth-order candidate over the complete registered grid.
+
+The result retains `physics_pass: false`, `gate_effect: NONE`, and no advance
+to renormalized stress, A4 or Ultra. Coupled eigenvector transport, the Dirac
+adiabatic state, covariant five-dimensional subtraction/counterterms,
+renormalized stress, physical Hessian and Rule-9 clearance remain open.
+
+## Plan 11 — exact scalar/Dirac transport retry
+
+Run the separately frozen exact-transport retry with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_exact_transport_retry_checkpoint.py
+```
+
+The recorded bounded status is:
+
+```text
+PASS_EXACT_SCALAR_DIRAC_TRANSPORT_HOLD_HADAMARD_STRESS_AND_HESSIAN
+```
+
+The retry passes 18/18 checks. It preserves the failed WKB output as an input,
+then initializes the coupled scalar modes from the positive Hamiltonian on the
+original `t=0` surface and evolves them exactly. It separately constructs a
+first-order, exactly retracted rank-two Dirac projector and evolves its range
+unitarily. The three prior low-mode failures remain finite under this different
+transport prescription; they are not relabeled as WKB passes.
+
+The result verifies canonical normalization, static controls, rejecting
+mutations, decreasing registered UV endpoint mixing and a 801/401-point
+resolution witness. It remains a finite-order state candidate:
+`full_Hadamard_state: false`, `physics_pass: false`, `gate_effect: NONE`, and
+no advance to a stress tensor, semiclassical background, Hessian, A4 or Ultra.
+
+## Plan 11 — five-dimensional Hadamard/subtraction readiness
+
+Run the separately frozen local-scaffold and completion-inventory audit with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_hadamard_subtraction_readiness.py
+```
+
+The recorded bounded status is:
+
+```text
+PASS_5D_HADAMARD_COUNTERTERM_SCAFFOLD_HOLD_FULL_OPERATORS_STATE_AND_STRESS
+```
+
+All 20/20 checks pass. The executable recovers the scalar `D=5` Hadamard
+singularity through `U_2`, the general matrix Laplace-type `b_0,b_1,b_2` map,
+the `Lambda^5`, `Lambda^3`, `Lambda` proper-time structure, and the five
+independent pure-gravity counterterms. It rejects six scope mutations and
+keeps the static Poisson `q=0` subtraction separate from evolving
+state-dependent stress renormalization.
+
+The binding readiness decision is `HOLD`: the off-shell covariant
+charged-scalar/`chi` matrix second variation, scalar and Dirac Hadamard states,
+curved graviton/ghost operators, parity-odd phase and counterterm
+normalizations are not completed. Accordingly `hadamard_stress_ready: false`,
+`physics_pass: false`, `gate_effect: NONE`; no stress, background, Hessian, A4
+or Ultra follows.
+
+## Plan 11 — covariant scalar-matrix checkpoint
+
+Run the frozen fixed-metric off-shell scalar-operator checkpoint with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_covariant_scalar_matrix_checkpoint.py
+```
+
+The recorded bounded status is:
+
+```text
+PASS_COVARIANT_SCALAR_CHI_MATRIX_OPERATOR_HOLD_STATES_GRAVITY_PARITY_AND_STRESS
+```
+
+All 25/25 checks pass. The executable derives the rank-three Hessian for
+`(sqrt(2) Re Phi, sqrt(2) Im Phi, chi)` on an arbitrary fixed
+five-dimensional background before any homogeneous or fixed-charge ansatz.
+It verifies `E=-H`, zero Cartesian bundle curvature, the pure-gauge
+phase-aligned connection, `U(1)` and `chi -> -chi` covariance, and the
+scalar-induced counterterm structures through `b_2`. Seven bad mutations are
+rejected and three clean runs produce byte-identical JSON.
+
+The result completes only the fixed-metric scalar-operator inventory line.
+`counterterm_normalizations: NOT_FIXED`,
+`scalar_matrix_hadamard_state: NOT_CONSTRUCTED`,
+`determinant: NOT_COMPUTED`, `renormalized_stress: NOT_COMPUTED`,
+`physics_pass: false` and `gate_effect: NONE` remain binding. The next
+single gate is a scalar matrix Hadamard parametrix/state construction; gravity,
+spinor, parity, physical-Hessian, A4 and Ultra work remain closed or separate.
+
+## Plan 11 — scalar-matrix Hadamard parametrix
+
+Run the frozen local checkpoint with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_scalar_matrix_hadamard_parametrix_checkpoint.py
+```
+
+The recorded bounded status is:
+
+```text
+PASS_SCALAR_MATRIX_HADAMARD_PARAMETRIX_HOLD_GLOBAL_STATE_AND_STRESS
+```
+
+All 22/22 checks pass. The result verifies the D5 local singular structure,
+Cartesian `U_0`, the matrix `U_1`/`U_2` coincidence controls, the registered
+`E=-H` sign, the generic `Omega` contribution, and the phase-aligned
+pure-gauge connection with derivative mixing. A flat constant-matrix
+transport realization is included as the executable matrix recurrence check.
+
+The result derives only local parametrix data through `U_2`; it does not
+construct the arbitrary-background off-diagonal biscalars or the smooth,
+positive, globally admissible state term `W`. Therefore
+`scalar_matrix_hadamard_parametrix=DERIVED_LOCAL_U0_U2`,
+`scalar_matrix_hadamard_state=NOT_CONSTRUCTED`, `determinant=NOT_COMPUTED`,
+`renormalized_stress=NOT_COMPUTED`, `physics_pass=false`, and
+`gate_effect=NONE` remain binding. Counterterm normalizations, Dirac and
+graviton/ghost states, parity/anomaly, physical Hessian, A4 and Ultra remain
+closed or separate; no downstream promotion follows.

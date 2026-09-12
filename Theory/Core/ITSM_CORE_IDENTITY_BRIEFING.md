@@ -101,7 +101,12 @@ Per `Theory/Core/ITSM_Ban_List_Reassessment_and_Frontier_Policy.md`:
 Active priority:
 └─ TOP-X4 / KK-001 Plan 11: X4-S2F3 finite-charge quantum completion
    ├─ static parity-even determinant checkpoint: bounded 12/12 complete
-   ├─ finite-charge entry: HOLD before determinant/stress and physical Hessian
+   ├─ finite-charge operator checkpoint: bounded 16/16 complete
+   ├─ dynamic state/subtraction checkpoint: FAILED 11/12 on low-mode W4 positivity
+   ├─ exact scalar/Dirac transport retry: bounded 18/18; Hadamard/stress held
+   ├─ D5 Hadamard/counterterm readiness: bounded 20/20 scaffold; readiness HOLD
+   ├─ covariant scalar/chi matrix operator: bounded 25/25; states/stress held
+   ├─ scalar-matrix local Hadamard parametrix: bounded 22/22; global state/stress held
    └─ A4 and Ultra remain closed; physics_pass=false, gate_effect=NONE
 Preserved but suspended:
 └─ PKM1 A0–A6 and the U3/M4/U5–U7 cheap-screen package
@@ -136,4 +141,4 @@ readiness, or the canonical $T^3$ identity.
 
 ---
 
-*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-09 (TOP-X4 Plan 11 entry hold; no downstream gate clearance).*
+*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-12 (the TOP-X4 local scalar-matrix Hadamard parametrix passed its bounded checkpoint; global Hadamard states, gravity/parity completion, stress and all downstream gates remain closed).*

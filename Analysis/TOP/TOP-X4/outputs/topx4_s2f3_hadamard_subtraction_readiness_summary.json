@@ -1,0 +1,584 @@
+{
+  "advance_to_a4": false,
+  "advance_to_hessian": false,
+  "advance_to_semiclassical_background": false,
+  "advance_to_ultra": false,
+  "authority_receipts": [
+    {
+      "actual": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+      "expected": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_HADAMARD_SUBTRACTION_READINESS_CONTRACT_2026-09-12.md"
+    },
+    {
+      "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+      "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+    },
+    {
+      "actual": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "expected": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md"
+    },
+    {
+      "actual": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+      "expected": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md"
+    },
+    {
+      "actual": "1e065f737952520ab9ac482c397a46b9d8d6c5af95867a173d62a145db9a5b77",
+      "expected": "1e065f737952520ab9ac482c397a46b9d8d6c5af95867a173d62a145db9a5b77",
+      "matches": true,
+      "path": "Theory\\Core\\Reasoning_Mode_Plans\\11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION\\PLAN.md"
+    },
+    {
+      "actual": "53d9e3673224b68c4ebeedf861fbb88d7b830d48bbe2bc6a53180cb5db79885b",
+      "expected": "53d9e3673224b68c4ebeedf861fbb88d7b830d48bbe2bc6a53180cb5db79885b",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_finite_charge_operator_summary.json"
+    },
+    {
+      "actual": "5d974893aab0d9c5e75a2aafd34e10e31db78ffe790cf7a3eaf997e388314fc4",
+      "expected": "5d974893aab0d9c5e75a2aafd34e10e31db78ffe790cf7a3eaf997e388314fc4",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_dynamic_state_subtraction_summary.json"
+    },
+    {
+      "actual": "de3426c753e55da8b55a5f0151bc875b5060c4bf3d7fbae75ab044c93273a1d6",
+      "expected": "de3426c753e55da8b55a5f0151bc875b5060c4bf3d7fbae75ab044c93273a1d6",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_exact_transport_retry_summary.json"
+    },
+    {
+      "actual": "04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419",
+      "expected": "04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_static_determinant_summary.json"
+    }
+  ],
+  "calculation_checks_passed": 20,
+  "calculation_checks_total": 20,
+  "calculation_status": "PASS",
+  "candidate": "X4-S2F3",
+  "checkpoint_completed": "2026-09-12",
+  "checks": [
+    {
+      "name": "all_authority_and_input_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+          "expected": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_HADAMARD_SUBTRACTION_READINESS_CONTRACT_2026-09-12.md"
+        },
+        {
+          "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+        },
+        {
+          "actual": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+          "expected": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md"
+        },
+        {
+          "actual": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+          "expected": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md"
+        },
+        {
+          "actual": "1e065f737952520ab9ac482c397a46b9d8d6c5af95867a173d62a145db9a5b77",
+          "expected": "1e065f737952520ab9ac482c397a46b9d8d6c5af95867a173d62a145db9a5b77",
+          "matches": true,
+          "path": "Theory\\Core\\Reasoning_Mode_Plans\\11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION\\PLAN.md"
+        },
+        {
+          "actual": "53d9e3673224b68c4ebeedf861fbb88d7b830d48bbe2bc6a53180cb5db79885b",
+          "expected": "53d9e3673224b68c4ebeedf861fbb88d7b830d48bbe2bc6a53180cb5db79885b",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_finite_charge_operator_summary.json"
+        },
+        {
+          "actual": "5d974893aab0d9c5e75a2aafd34e10e31db78ffe790cf7a3eaf997e388314fc4",
+          "expected": "5d974893aab0d9c5e75a2aafd34e10e31db78ffe790cf7a3eaf997e388314fc4",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_dynamic_state_subtraction_summary.json"
+        },
+        {
+          "actual": "de3426c753e55da8b55a5f0151bc875b5060c4bf3d7fbae75ab044c93273a1d6",
+          "expected": "de3426c753e55da8b55a5f0151bc875b5060c4bf3d7fbae75ab044c93273a1d6",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_exact_transport_retry_summary.json"
+        },
+        {
+          "actual": "04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419",
+          "expected": "04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_static_determinant_summary.json"
+        }
+      ]
+    },
+    {
+      "checks_passed": 11,
+      "checks_total": 12,
+      "name": "failed_dynamic_state_result_is_preserved_as_negative_evidence",
+      "ok": true,
+      "status": "FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT"
+    },
+    {
+      "covariant_5D_subtraction": "NOT_DERIVED",
+      "full_Hadamard_state": false,
+      "name": "exact_transport_scope_remains_finite_order_and_non_hadamard",
+      "ok": true,
+      "renormalized_stress": "NOT_COMPUTED",
+      "state_scope": {
+        "Dirac": "first-order superadiabatic projector at t=0 plus exact unitary transport",
+        "Hadamard_claim": false,
+        "charged_scalar": "instantaneous positive-Hamiltonian data at t=0 plus exact symplectic transport",
+        "chi": "instantaneous positive-frequency data at t=0 plus exact symplectic transport",
+        "finite_order_only": true,
+        "low_mode_rule": "exact transport; no WKB iterate"
+      }
+    },
+    {
+      "alpha_5": "sqrt(2)/(16*pi**2)",
+      "exponent": "3/2",
+      "name": "five_dimensional_hadamard_exponent_and_prefactor",
+      "ok": true,
+      "propagator_prefactor": "sqrt(2)/(32*pi**2)",
+      "required_U_depth": [
+        "U0",
+        "U1",
+        "U2"
+      ]
+    },
+    {
+      "limitation": "single scalar control; not a coupled matrix parametrix",
+      "name": "scalar_U0_U1_U2_coincidence_controls",
+      "ok": true,
+      "u0": "1",
+      "u1": "-R*(xi - 1/6) - m**2",
+      "u2": "BoxR*xi/6 - BoxR/30 - R**2*xi**2/2 + R**2*xi/6 - R**2/72 - R*m**2*xi + R*m**2/6 + Ricci2/180 - Riemann2/180 - m**4/2"
+    },
+    {
+      "bulk_logarithm": false,
+      "finite_renormalization_ambiguity_still_present": true,
+      "name": "smooth_boundaryless_D5_has_no_bulk_logarithmic_heat_kernel_term",
+      "ok": true,
+      "would_require_integer_dewitt_index": "5/2"
+    },
+    {
+      "b0": "1",
+      "b1": "E + R/6",
+      "b2": "BoxE/6 + BoxR/30 + E**2/2 + E*R/6 + Omega2/12 + R**2/72 - Ricci2/180 + Riemann2/180",
+      "convention": "P=-(D^2+E)",
+      "indexing": "DeWitt b0,b1,b2 correspond to heat-kernel a0,a2,a4",
+      "name": "general_laplace_type_b0_b1_b2_map",
+      "ok": true
+    },
+    {
+      "integrated_b1": "R*(1/6 - xi)",
+      "integrated_b2": "R**2*xi**2/2 - R**2*xi/6 + R**2/72 - Ricci2/180 + Riemann2/180",
+      "mass_treatment": "mass factored as exp(-m^2 s)",
+      "name": "minimal_scalar_specialization_matches_integrated_dewitt_controls",
+      "ok": true,
+      "total_derivatives": "dropped only for this integrated boundaryless control"
+    },
+    {
+      "common_factor": "(4*pi)^(-5/2) times determinant/statistics prefactor",
+      "name": "proper_time_cutoff_powers_are_Lambda5_Lambda3_Lambda1",
+      "ok": true,
+      "terms": [
+        {
+          "cutoff_coefficient": "2/5",
+          "cutoff_power": 5,
+          "dewitt_coefficient": "b0"
+        },
+        {
+          "cutoff_coefficient": "2/3",
+          "cutoff_power": 3,
+          "dewitt_coefficient": "b1"
+        },
+        {
+          "cutoff_coefficient": "2",
+          "cutoff_power": 1,
+          "dewitt_coefficient": "b2"
+        }
+      ]
+    },
+    {
+      "ledger": [
+        {
+          "coefficient_dimension": 0,
+          "cutoff_dimension": 5,
+          "lagrangian_dimension": 5,
+          "term": "Lambda^5 b0"
+        },
+        {
+          "coefficient_dimension": 2,
+          "cutoff_dimension": 3,
+          "lagrangian_dimension": 5,
+          "term": "Lambda^3 b1"
+        },
+        {
+          "coefficient_dimension": 4,
+          "cutoff_dimension": 1,
+          "lagrangian_dimension": 5,
+          "term": "Lambda^1 b2"
+        }
+      ],
+      "name": "all_D5_local_divergence_terms_have_lagrangian_dimension_five",
+      "ok": true
+    },
+    {
+      "D5_euler_boundary": "Riemann-squared may not be removed using the D4 Euler identity",
+      "counterterms": [
+        {
+          "coefficient_dimension": 5,
+          "operator": "1",
+          "operator_dimension": 0
+        },
+        {
+          "coefficient_dimension": 3,
+          "operator": "R",
+          "operator_dimension": 2
+        },
+        {
+          "coefficient_dimension": 1,
+          "operator": "R^2",
+          "operator_dimension": 4
+        },
+        {
+          "coefficient_dimension": 1,
+          "operator": "R_AB R^AB",
+          "operator_dimension": 4
+        },
+        {
+          "coefficient_dimension": 1,
+          "operator": "R_ABCD R^ABCD",
+          "operator_dimension": 4
+        }
+      ],
+      "name": "five_independent_pure_gravity_counterterms_are_retained",
+      "ok": true
+    },
+    {
+      "map": {
+        "frozen_action_parameters": [
+          "m_Phi^2",
+          "m_chi^2",
+          "lambda_Phi5",
+          "lambda_chi5",
+          "g_5"
+        ],
+        "required_local_inputs": [
+          "tr(E)",
+          "tr(E^2)",
+          "tr(Omega_AB Omega^AB)",
+          "Box E before local variation"
+        ],
+        "status": "NOT_DERIVED_WITHOUT_COVARIANT_MATRIX_SECOND_VARIATION"
+      },
+      "name": "interacting_scalar_sector_requires_a_separate_matter_counterterm_map",
+      "ok": true
+    },
+    {
+      "circle": "periodic smooth S1",
+      "half_integer_boundary_coefficients": false,
+      "internal_boundary": false,
+      "name": "smooth_circle_has_no_internal_boundary_or_fixed_point_terms",
+      "noncompact_falloff_assumption": "must still be declared",
+      "ok": true
+    },
+    {
+      "covariant_dynamic_subtraction": "NOT_DERIVED",
+      "name": "static_q0_subtraction_is_not_promoted_to_dynamic_stress_renormalization",
+      "ok": true,
+      "static_background": "static Minkowski4 x S1 zero-density control",
+      "static_subtraction": "decompactified Poisson image q=0 removed"
+    },
+    {
+      "map": {
+        "D5_Hadamard_construction": "NOT_SUPPLIED_BY_CURRENT_EVIDENCE_OR_CITED_4D_EVEN_DIMENSION_CONTROLS",
+        "bundle_curvature": "Omega_AB contains spin curvature",
+        "free_spin_connection_endomorphism": "E=-R/4 I with mass factored separately",
+        "parity_even_magnitude": "from squared Dirac-type Laplace operator",
+        "parity_odd_phase": "NOT_CAPTURED_BY_SQUARING",
+        "spinor_dimension_in_D5": 4
+      },
+      "name": "dirac_square_scaffolds_only_the_parity_even_magnitude",
+      "ok": true
+    },
+    {
+      "inventory": {
+        "covariant_scalar_chi_matrix_second_variation": {
+          "evidence": "constant-background principal operator before gravity constraints",
+          "status": "NOT_COMPLETED"
+        },
+        "curved_finite_charge_graviton_and_ghost_operators": {
+          "evidence": "flat zero-density gauge-fixed degree count only; not the finite-charge curved determinant",
+          "status": "NOT_COMPLETED"
+        },
+        "dirac_hadamard_two_point_function": {
+          "evidence": "first-order superadiabatic projector at t=0 plus exact unitary transport",
+          "status": "NOT_COMPLETED"
+        },
+        "gravitational_and_matter_counterterm_normalizations": {
+          "evidence": "NOT_DERIVED",
+          "status": "NOT_COMPLETED"
+        },
+        "parity_odd_phase_and_quantized_counterterms": {
+          "evidence": "the parity-odd determinant phase and quantized counterterms remain unaudited",
+          "status": "NOT_COMPLETED"
+        },
+        "scalar_matrix_hadamard_state": {
+          "evidence": "instantaneous positive-Hamiltonian data at t=0 plus exact symplectic transport",
+          "status": "NOT_COMPLETED"
+        }
+      },
+      "name": "field_by_field_completion_inventory_is_fail_closed",
+      "ok": true
+    },
+    {
+      "decision": "HOLD",
+      "hadamard_stress_ready": false,
+      "name": "readiness_decision_holds_before_any_stress_integral",
+      "ok": true,
+      "renormalized_stress": "NOT_COMPUTED"
+    },
+    {
+      "name": "rule9_three_way_clearance_remains_open",
+      "ok": true,
+      "prior_review_records": [
+        {
+          "completed_independent_reports": 0,
+          "effect": "no reviewer-consensus or gate-promotion claim",
+          "scope": "this finite-charge operator checkpoint",
+          "status": "THREE_WAY_CLEARANCE_NOT_MET"
+        },
+        {
+          "completed_independent_reports": 0,
+          "effect": "no reviewer-consensus or gate-promotion claim",
+          "scope": "this dynamic scalar-state checkpoint",
+          "status": "THREE_WAY_CLEARANCE_NOT_MET"
+        },
+        {
+          "completed_independent_reports": 0,
+          "effect": "no reviewer-consensus or gate-promotion claim",
+          "scope": "this exact scalar/Dirac transport retry",
+          "status": "THREE_WAY_CLEARANCE_NOT_MET"
+        }
+      ]
+    },
+    {
+      "mutations": [
+        {
+          "name": "add_D5_bulk_logarithm",
+          "rejected": true
+        },
+        {
+          "name": "omit_Riemann_squared_counterterm",
+          "rejected": true
+        },
+        {
+          "name": "promote_q0_to_full_stress_subtraction",
+          "rejected": true
+        },
+        {
+          "name": "promote_finite_order_state_to_hadamard",
+          "rejected": true
+        },
+        {
+          "name": "omit_graviton_ghost_jacobian",
+          "rejected": true
+        },
+        {
+          "name": "omit_matrix_bundle_terms",
+          "rejected": true
+        }
+      ],
+      "name": "all_registered_scope_mutations_are_rejected",
+      "ok": true
+    },
+    {
+      "forbidden_source_tokens": [],
+      "name": "observational_target_firewall",
+      "ok": true
+    }
+  ],
+  "completion_inventory": {
+    "covariant_scalar_chi_matrix_second_variation": {
+      "evidence": "constant-background principal operator before gravity constraints",
+      "status": "NOT_COMPLETED"
+    },
+    "curved_finite_charge_graviton_and_ghost_operators": {
+      "evidence": "flat zero-density gauge-fixed degree count only; not the finite-charge curved determinant",
+      "status": "NOT_COMPLETED"
+    },
+    "dirac_hadamard_two_point_function": {
+      "evidence": "first-order superadiabatic projector at t=0 plus exact unitary transport",
+      "status": "NOT_COMPLETED"
+    },
+    "gravitational_and_matter_counterterm_normalizations": {
+      "evidence": "NOT_DERIVED",
+      "status": "NOT_COMPLETED"
+    },
+    "parity_odd_phase_and_quantized_counterterms": {
+      "evidence": "the parity-odd determinant phase and quantized counterterms remain unaudited",
+      "status": "NOT_COMPLETED"
+    },
+    "scalar_matrix_hadamard_state": {
+      "evidence": "instantaneous positive-Hamiltonian data at t=0 plus exact symplectic transport",
+      "status": "NOT_COMPLETED"
+    }
+  },
+  "derived_claims": [],
+  "dirac_parity_even_boundary": {
+    "D5_Hadamard_construction": "NOT_SUPPLIED_BY_CURRENT_EVIDENCE_OR_CITED_4D_EVEN_DIMENSION_CONTROLS",
+    "bundle_curvature": "Omega_AB contains spin curvature",
+    "free_spin_connection_endomorphism": "E=-R/4 I with mass factored separately",
+    "parity_even_magnitude": "from squared Dirac-type Laplace operator",
+    "parity_odd_phase": "NOT_CAPTURED_BY_SQUARING",
+    "spinor_dimension_in_D5": 4
+  },
+  "explicit_nonclaims": [
+    "no full scalar or spinor Hadamard state",
+    "no renormalized stress tensor",
+    "no finite-charge determinant",
+    "no curved graviton determinant",
+    "no anomaly clearance",
+    "no self-consistent semiclassical background",
+    "no physical Hessian or radion mass",
+    "no A4, Ultra, architecture, gate or publication change"
+  ],
+  "full_Hadamard_state": false,
+  "gate_effect": "NONE",
+  "hadamard_stress_ready": false,
+  "hold_reasons": [
+    "the interacting charged-scalar/chi covariant matrix second variation is not completed",
+    "no scalar matrix or Dirac Hadamard two-point function is constructed",
+    "no gauge-fixed curved finite-charge graviton Hessian and ghost/Jacobian operator set exists",
+    "the parity-odd determinant phase, global anomaly and quantized counterterms remain unaudited",
+    "the gravitational and matter counterterm normalization conditions are not fixed",
+    "no state-dependent renormalized stress or regulator/scale/state-order stability test is computed"
+  ],
+  "matter_counterterm_boundary": {
+    "frozen_action_parameters": [
+      "m_Phi^2",
+      "m_chi^2",
+      "lambda_Phi5",
+      "lambda_chi5",
+      "g_5"
+    ],
+    "required_local_inputs": [
+      "tr(E)",
+      "tr(E^2)",
+      "tr(Omega_AB Omega^AB)",
+      "Box E before local variation"
+    ],
+    "status": "NOT_DERIVED_WITHOUT_COVARIANT_MATRIX_SECOND_VARIATION"
+  },
+  "next_required_calculation": "derive the off-shell covariant scalar/chi matrix Laplace-type operator before the homogeneous ansatz, including its E and Omega data; keep spinor, graviton/ghost, parity-phase and state construction as separately receipted prerequisites",
+  "physics_pass": false,
+  "primary_source_basis": [
+    {
+      "id": "arXiv:gr-qc/0512118",
+      "scope": "D5 scalar Hadamard singularity, ambiguity and gravitational counterterms"
+    },
+    {
+      "id": "arXiv:hep-th/0306138",
+      "scope": "general Laplace-type heat-kernel coefficients and spin/gravity operator boundary"
+    },
+    {
+      "id": "arXiv:gr-qc/9906076",
+      "scope": "finite-order versus infinite-order Dirac adiabatic/Hadamard boundary; stated for even dimensions, not a D5 completion"
+    },
+    {
+      "id": "arXiv:math-ph/0109010",
+      "scope": "adiabatic states and Hadamard subclass boundary"
+    },
+    {
+      "id": "arXiv:1209.2604",
+      "scope": "pseudodifferential construction of scalar Hadamard states"
+    },
+    {
+      "id": "arXiv:2108.11630",
+      "scope": "pseudodifferential construction of Dirac Hadamard states under stated even-dimensional hypotheses; not a D5 completion"
+    }
+  ],
+  "readiness_decision": "HOLD",
+  "renormalized_stress": "NOT_COMPUTED",
+  "route": "TOP-X4_KK-001",
+  "rule9_review": {
+    "completed_independent_reports": 0,
+    "effect": "no reviewer-consensus or gate-promotion claim",
+    "scope": "this Hadamard/subtraction readiness checkpoint",
+    "status": "THREE_WAY_CLEARANCE_NOT_MET"
+  },
+  "schema": "ITSM_TOPX4_S2F3_HADAMARD_SUBTRACTION_READINESS_v1",
+  "source_sha256": "e90c6b813f00ed1ccd0a7f181def6e5a3c7c7208957953d3abfa4aa7571510e6",
+  "status": "PASS_5D_HADAMARD_COUNTERTERM_SCAFFOLD_HOLD_FULL_OPERATORS_STATE_AND_STRESS",
+  "universal_D5_scaffold": {
+    "bulk_logarithm": false,
+    "hadamard_U_depth": [
+      "U0",
+      "U1",
+      "U2"
+    ],
+    "hadamard_prefactor": "i/(16*sqrt(2)*pi^2)",
+    "hadamard_singular_power": "3/2",
+    "heat_kernel_index_map": "DeWitt b0,b1,b2 = heat-kernel a0,a2,a4",
+    "laplace_operator_convention": "P=-(D^2+E)",
+    "proper_time_cutoff_terms": [
+      {
+        "cutoff_coefficient": "2/5",
+        "cutoff_power": 5,
+        "dewitt_coefficient": "b0"
+      },
+      {
+        "cutoff_coefficient": "2/3",
+        "cutoff_power": 3,
+        "dewitt_coefficient": "b1"
+      },
+      {
+        "cutoff_coefficient": "2",
+        "cutoff_power": 1,
+        "dewitt_coefficient": "b2"
+      }
+    ],
+    "pure_gravity_counterterms": [
+      {
+        "coefficient_dimension": 5,
+        "operator": "1",
+        "operator_dimension": 0
+      },
+      {
+        "coefficient_dimension": 3,
+        "operator": "R",
+        "operator_dimension": 2
+      },
+      {
+        "coefficient_dimension": 1,
+        "operator": "R^2",
+        "operator_dimension": 4
+      },
+      {
+        "coefficient_dimension": 1,
+        "operator": "R_AB R^AB",
+        "operator_dimension": 4
+      },
+      {
+        "coefficient_dimension": 1,
+        "operator": "R_ABCD R^ABCD",
+        "operator_dimension": 4
+      }
+    ]
+  }
+}

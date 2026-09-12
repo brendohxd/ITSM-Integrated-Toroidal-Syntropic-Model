@@ -67,10 +67,10 @@ relabeled as energy entering through an external boundary.
 | Namespace | Meaning | Present status |
 |---|---|---|
 | `TOP-X4` | Geometric and spectral four-torus control | Active bounded fork |
-| `KK-001` | Dimensional reduction, radion and KK-mode physics | Original control held at D2; one S2F3 retry frozen |
+| `KK-001` | Dimensional reduction, radion and KK-mode physics | Original control held at D2; bounded S2F3 Plan 11 work active |
 | `X4-C0` | Free fixed-background scalar control | A0 only |
 | `X4-I1C` | Frozen interacting finite-charge bulk control | D2 hold: radion unstabilized |
-| `X4-S2F3` | `X4-I1C` plus three periodic massive 5D Dirac spectators | Frozen for one Max retry only |
+| `X4-S2F3` | `X4-I1C` plus three periodic massive 5D Dirac spectators | Fixed-metric scalar matrix operator passed; full retry held |
 | `X4-R1` | Candidate reduced open-EFT/reservoir description | Dependency locked |
 
 Equations, coefficients and passes cannot be inherited between namespaces.
@@ -190,8 +190,9 @@ While `TOP-X4 / KK-001` is the operator-selected priority:
 
 - **High complete:** plan 10 selected and froze `X4-S2F3`, consisting of three
   periodic massive 5D Dirac spectators added to `X4-I1C`.
-- **Max next:** plan 11 must independently calculate the determinant and
-  finite-charge semiclassical background; do not continue A4 from `X4-I1C`.
+- **Max active:** plan 11 has bounded determinant/transport/scaffold/operator
+  receipts, but states, stress, gravity/parity completion and the physical
+  Hessian remain open; do not continue A4 from `X4-I1C`.
 - **Ultra closed:** A5 still requires a healthy reduced parent, stable radion
   and derived nonzero exchange.
 - **Medium:** deterministic reruns, hashes and packaging.
@@ -239,3 +240,71 @@ rejected omitted-mixing and wrong-sign-Routhian mutations. Its status is
 renormalized stress, coupled physical Hessian, continuous robustness and
 parity/anomaly audit remain open. No three-way reviewer clearance exists for
 this operator checkpoint.
+
+The preregistered dynamic state/subtraction checkpoint next constructed the
+exact evolving charged-scalar mode system and tested scalar order-0/2/4
+adiabatic data on the A1 background. Its UV subset passed the order hierarchy
+with a maximum fourth-order correction of
+`4.1338354829389994e-6`, but the full run returned `11/12`: three low-mode
+fourth-order iterates became non-positive near the initial hypersurface. The
+binding status is `FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT`, with
+`physics_pass=false` and no gate effect. This is not a physical-tachyon claim;
+all base scalar frequencies remain positive. Any retry requires a separate
+freeze for coupled eigenvector transport, the neutral Dirac adiabatic state,
+and the low-mode/initial-surface prescription before covariant stress
+subtraction. A4 and Ultra remain closed, and no Rule-9 reviewer clearance
+exists for this checkpoint.
+
+The separately frozen exact-transport retry does not change that failed
+result. It initializes the charged and real scalar modes from positive
+Hamiltonians at the original `t=0` Cauchy surface and transports them
+symplectically without a low-mode WKB iterate. It independently constructs a
+first-order, exactly retracted rank-two Dirac superadiabatic projector and
+transports it unitarily. The retry passes `18/18` bounded checks with status
+`PASS_EXACT_SCALAR_DIRAC_TRANSPORT_HOLD_HADAMARD_STRESS_AND_HESSIAN`.
+
+This advances the exact mode-transport tooling only. The scalar state is not
+an infinite-order matrix adiabatic state, the Dirac projector is first order,
+and no covariant five-dimensional subtraction/counterterm map or renormalized
+stress is derived. This required a separately frozen Hadamard/subtraction
+readiness checkpoint before any high-order state construction. No
+semiclassical background, Hessian, A4, Ultra or Rule-9 clearance follows.
+
+The separately frozen five-dimensional Hadamard/subtraction readiness audit
+then passes `20/20` scaffold and fail-closed inventory checks with status
+`PASS_5D_HADAMARD_COUNTERTERM_SCAFFOLD_HOLD_FULL_OPERATORS_STATE_AND_STRESS`.
+It validates the universal scalar `D=5` singular structure, general matrix
+Laplace-type coefficients, proper-time power terms and pure-gravity
+counterterm basis. This does not complete the model-specific subtraction.
+`hadamard_stress_ready=false`, `physics_pass=false` and `gate_effect=NONE`
+remain binding because the covariant scalar/`chi` matrix second variation,
+scalar and spinor Hadamard states, curved graviton/ghost operators, parity-odd
+phase and normalization conditions are absent. The next single gate is the
+off-shell covariant scalar/`chi` matrix operator before homogeneous or
+fixed-charge reduction; no stress integral or downstream gate opens.
+
+That next scalar checkpoint now passes `25/25` checks with status
+`PASS_COVARIANT_SCALAR_CHI_MATRIX_OPERATOR_HOLD_STATES_GRAVITY_PARITY_AND_STRESS`.
+It derives the fixed-metric off-shell rank-three Hessian, the convention
+`E=-H`, zero Cartesian bundle curvature, the pure-gauge phase-aligned
+connection, and the scalar-induced counterterm structures through `b_2`.
+This completes only the scalar-operator inventory line. Hadamard states,
+counterterm normalization, curved graviton/ghost operators, parity-odd data,
+determinant, stress and the physical Hessian remain open. The next single gate
+is the scalar matrix Hadamard parametrix/state; no downstream promotion follows.
+
+The scalar-matrix local Hadamard-parametrix checkpoint then passes `22/22`
+with status
+`PASS_SCALAR_MATRIX_HADAMARD_PARAMETRIX_HOLD_GLOBAL_STATE_AND_STRESS`. It
+verifies the D5 local singular power and prefactor, Cartesian `U_0`, matrix
+`U_1`/`U_2` coincidence controls in the `E=-H` convention, the generic
+bundle-curvature term and the phase-aligned pure-gauge derivative mixing. A
+flat constant-matrix recurrence supplies the executable matrix transport
+realization. This advances only the local parametrix line:
+`scalar_matrix_hadamard_parametrix=DERIVED_LOCAL_U0_U2` while
+`scalar_matrix_hadamard_state=NOT_CONSTRUCTED` remains binding. Arbitrary-
+background off-diagonal biscalars, the smooth state term, positivity,
+wavefront, counterterm normalization, determinant, stress, physical Hessian,
+gravity/ghost and parity/anomaly work remain open. No A4, Ultra, Rule-9 or
+downstream promotion follows. The next single gate is a globally admissible
+infinite-order scalar-matrix state construction.

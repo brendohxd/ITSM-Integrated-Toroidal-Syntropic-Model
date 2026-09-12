@@ -5,7 +5,7 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
-## Current evidence snapshot (2026-09-09)
+## Current evidence snapshot (2026-09-12)
 
 The branch remains fail-closed. `MAT-001` is `BLOCKED`, `UVIR-003` is
 `IN_PROGRESS`, `K_Q` is `NOT_DERIVED`, and `V` is `NOT_COMPUTED`. The current
@@ -15,16 +15,35 @@ checks, while the finite-charge entry gate passed 9/9 policy/provenance checks
 and correctly returned
 `HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`. The subsequent
 finite-charge operator/fixed-charge variation checkpoint passed 16/16, but the
-evolving-state determinant, renormalized stress and physical Hessian remain
-held. No A4, Ultra, phenomenology, publication or canonical-model revision is
-opened.
+next preregistered dynamic state/subtraction checkpoint failed 11/12. Its exact
+evolving scalar operator and UV order hierarchy passed, while three low-mode
+fourth-order WKB iterates became non-positive near the initial boundary. A
+separately frozen exact-transport retry then passed 18/18 for
+positive-Hamiltonian scalar transport and a first-order Dirac projector,
+including those low modes without a WKB iterate. A subsequent 20/20 audit
+passed the universal five-dimensional Hadamard/counterterm scaffold but held
+readiness because the model-specific operators and states were incomplete.
+The next fixed-metric scalar-matrix checkpoint then passed 25/25, deriving
+the off-shell rank-three Hessian, `E=-H`, zero bundle curvature and
+scalar-induced counterterm structures through `b_2`. Scalar and Dirac
+Hadamard states, curved graviton/ghost operators, parity phase, counterterm
+normalizations, renormalized stress and the physical Hessian remain held. No A4, Ultra,
+phenomenology, publication or canonical-model revision is opened.
+
+The following local scalar-matrix Hadamard-parametrix checkpoint passed 22/22.
+It verifies the D5 local singular structure and matrix `U_0`--`U_2`
+coincidence/transport controls, including `E=-H`, generic bundle-curvature
+terms and phase-aligned derivative mixing. It does not construct the smooth
+state term or a globally admissible infinite-order Hadamard state. Global
+state, counterterm normalization, determinant, stress, physical Hessian,
+gravity/ghost, parity/anomaly and Rule-9 work therefore remain held; no A4,
+Ultra, phenomenology, publication or canonical-model revision is opened.
 
 The current RES-001 control is a quarantined single-mode GKSL steady-state toy,
 not a two-bath detailed-balance/Spohn derivation. The P2/CBR-001 repair is a
 local reproducibility candidate on publication hold. The TOP-X4 Plan 11
-Rule-9 review is incomplete: the static checkpoint had only Role A completed,
-and the finite-charge operator checkpoint has no completed independent reviewer
-set.
+Rule-9 review is incomplete: the exact-transport retry has no completed
+independent reviewer set, and neither do the readiness or scalar-matrix audits.
 
 ## Start here
 

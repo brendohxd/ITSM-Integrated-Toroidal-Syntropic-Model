@@ -1,0 +1,2613 @@
+{
+  "advance_to_a4": false,
+  "advance_to_hessian": false,
+  "advance_to_semiclassical_background": false,
+  "advance_to_ultra": false,
+  "authority_receipts": [
+    {
+      "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+      "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+    },
+    {
+      "actual": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "expected": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md"
+    },
+    {
+      "actual": "2c508afbe257052103eac3ed31614a0111d5569bfc6fafa70a6bb58688440db0",
+      "expected": "2c508afbe257052103eac3ed31614a0111d5569bfc6fafa70a6bb58688440db0",
+      "matches": true,
+      "path": "Theory\\Core\\Reasoning_Mode_Plans\\11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION\\PLAN.md"
+    },
+    {
+      "actual": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+      "expected": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md"
+    },
+    {
+      "actual": "47ec59b4afef3d937bdaa0b2756c6002b5bb771aa0b540eb24a4fddca323ad4f",
+      "expected": "47ec59b4afef3d937bdaa0b2756c6002b5bb771aa0b540eb24a4fddca323ad4f",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_DYNAMIC_STATE_SUBTRACTION_CONTRACT_2026-09-12.md"
+    },
+    {
+      "actual": "0cba0d6b36135e2cc3d1bd85462625e6090f47c1eec3327ff48558666a5ad9c8",
+      "expected": "0cba0d6b36135e2cc3d1bd85462625e6090f47c1eec3327ff48558666a5ad9c8",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_EXACT_TRANSPORT_RETRY_CONTRACT_2026-09-12.md"
+    },
+    {
+      "actual": "b1b88f8f73be763cdcd2378722cb331624ea273231ea77bf6c0f013b4972a812",
+      "expected": "b1b88f8f73be763cdcd2378722cb331624ea273231ea77bf6c0f013b4972a812",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\TOPX4_S2F3_PLAN11_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT_2026-09-12.md"
+    },
+    {
+      "actual": "5d974893aab0d9c5e75a2aafd34e10e31db78ffe790cf7a3eaf997e388314fc4",
+      "expected": "5d974893aab0d9c5e75a2aafd34e10e31db78ffe790cf7a3eaf997e388314fc4",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_dynamic_state_subtraction_summary.json"
+    },
+    {
+      "actual": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+      "expected": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_a1_background_summary.json"
+    },
+    {
+      "actual": "53d9e3673224b68c4ebeedf861fbb88d7b830d48bbe2bc6a53180cb5db79885b",
+      "expected": "53d9e3673224b68c4ebeedf861fbb88d7b830d48bbe2bc6a53180cb5db79885b",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_finite_charge_operator_summary.json"
+    }
+  ],
+  "calculation_checks_passed": 18,
+  "calculation_checks_total": 18,
+  "calculation_status": "PASS",
+  "candidate": "X4-S2F3",
+  "checkpoint_completed": "2026-09-12",
+  "checks": [
+    {
+      "name": "frozen_authority_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+        },
+        {
+          "actual": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+          "expected": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md"
+        },
+        {
+          "actual": "2c508afbe257052103eac3ed31614a0111d5569bfc6fafa70a6bb58688440db0",
+          "expected": "2c508afbe257052103eac3ed31614a0111d5569bfc6fafa70a6bb58688440db0",
+          "matches": true,
+          "path": "Theory\\Core\\Reasoning_Mode_Plans\\11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION\\PLAN.md"
+        },
+        {
+          "actual": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+          "expected": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md"
+        },
+        {
+          "actual": "47ec59b4afef3d937bdaa0b2756c6002b5bb771aa0b540eb24a4fddca323ad4f",
+          "expected": "47ec59b4afef3d937bdaa0b2756c6002b5bb771aa0b540eb24a4fddca323ad4f",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_DYNAMIC_STATE_SUBTRACTION_CONTRACT_2026-09-12.md"
+        },
+        {
+          "actual": "0cba0d6b36135e2cc3d1bd85462625e6090f47c1eec3327ff48558666a5ad9c8",
+          "expected": "0cba0d6b36135e2cc3d1bd85462625e6090f47c1eec3327ff48558666a5ad9c8",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_EXACT_TRANSPORT_RETRY_CONTRACT_2026-09-12.md"
+        },
+        {
+          "actual": "b1b88f8f73be763cdcd2378722cb331624ea273231ea77bf6c0f013b4972a812",
+          "expected": "b1b88f8f73be763cdcd2378722cb331624ea273231ea77bf6c0f013b4972a812",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\TOPX4_S2F3_PLAN11_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT_2026-09-12.md"
+        },
+        {
+          "actual": "5d974893aab0d9c5e75a2aafd34e10e31db78ffe790cf7a3eaf997e388314fc4",
+          "expected": "5d974893aab0d9c5e75a2aafd34e10e31db78ffe790cf7a3eaf997e388314fc4",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_dynamic_state_subtraction_summary.json"
+        },
+        {
+          "actual": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+          "expected": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_a1_background_summary.json"
+        },
+        {
+          "actual": "53d9e3673224b68c4ebeedf861fbb88d7b830d48bbe2bc6a53180cb5db79885b",
+          "expected": "53d9e3673224b68c4ebeedf861fbb88d7b830d48bbe2bc6a53180cb5db79885b",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_finite_charge_operator_summary.json"
+        }
+      ]
+    },
+    {
+      "failed_modes": [
+        [
+          "charged_minus",
+          1.0,
+          0
+        ],
+        [
+          "charged_minus",
+          1.0,
+          1
+        ],
+        [
+          "chi",
+          1.0,
+          0
+        ]
+      ],
+      "name": "prior_WKB_failure_is_preserved",
+      "ok": true,
+      "prior_checks": "11/12",
+      "prior_status": "FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT"
+    },
+    {
+      "absolute_mass_prediction": false,
+      "dimensions": {
+        "H_D": "1",
+        "K": "2",
+        "Psi": "2",
+        "momentum_mu_mF": "1",
+        "projector": "0",
+        "rho_sigma_pi": "3/2",
+        "scale_factors": "0"
+      },
+      "name": "five_dimensional_dimension_ledger",
+      "ok": true
+    },
+    {
+      "constant_frequency_residual": 1.3322676295501878e-15,
+      "name": "scalar_Hamilton_equations_and_constant_branch_regression",
+      "ok": true,
+      "symbolic": {
+        "Hamilton_generator_exact": true,
+        "Hamiltonian_matrix": "Matrix([[K11 + mu**2, K12, 0, -mu], [K12, K22 + mu**2, mu, 0], [0, mu, 1, 0], [-mu, 0, 0, 1]])",
+        "generator": "Matrix([[0, mu, 1, 0], [-mu, 0, 0, 1], [-K11 - mu**2, -K12, 0, mu], [-K12, -K22 - mu**2, -mu, 0]])",
+        "second_order_equation_exact": true
+      }
+    },
+    {
+      "limitation": "not the coupled gravity/radion physical Hessian",
+      "name": "registered_background_and_scalar_Hamiltonians_are_valid",
+      "ok": true,
+      "primary_charge_error": 1.7204015989591426e-12,
+      "primary_min_Hamiltonian": 0.4828799025122714,
+      "primary_min_K": 0.891283303349327,
+      "witness_charge_error": 1.7204015989591426e-12
+    },
+    {
+      "name": "initial_charged_scalar_modes_are_canonically_normalized",
+      "ok": true,
+      "primary_isotropy": 6.090165715188584e-16,
+      "primary_normalization": 6.667458442637182e-16
+    },
+    {
+      "name": "exact_charged_scalar_transport_preserves_symplectic_normalization",
+      "ok": true,
+      "primary_mode_isotropy": 2.378506009181205e-11,
+      "primary_mode_normalization": 4.87428921321968e-10,
+      "primary_symplectic": 2.694307068596595e-09,
+      "threshold": 5e-08
+    },
+    {
+      "name": "exact_chi_transport_is_positive_and_preserves_Wronskian",
+      "ok": true,
+      "primary_wronskian": 3.872481224576063e-10,
+      "threshold": 5e-08
+    },
+    {
+      "name": "previously_failed_low_modes_have_finite_exact_transport",
+      "ok": true,
+      "replacement_method": "positive-Hamiltonian Cauchy data plus exact transport; no WKB iterate",
+      "retroactive_WKB_pass": false
+    },
+    {
+      "convergence_claim": false,
+      "name": "scalar_UV_endpoint_mixing_strictly_decreases",
+      "ok": true,
+      "trend_grid": [
+        8.0,
+        16.0,
+        32.0
+      ]
+    },
+    {
+      "clifford_residual": 0.0,
+      "name": "Dirac_Clifford_algebra_and_Hamiltonians_are_Hermitian",
+      "ok": true,
+      "threshold": 1e-14
+    },
+    {
+      "name": "first_order_Dirac_projectors_are_exact_rank_two_projectors",
+      "ok": true,
+      "threshold": 1e-12
+    },
+    {
+      "name": "first_order_Dirac_projector_reduces_invariance_defect",
+      "ok": true,
+      "primary_max_ratio": 0.1956287111447811,
+      "threshold": 0.25,
+      "witness_max_ratio": 0.1956287106951899
+    },
+    {
+      "name": "exact_Dirac_transport_preserves_inner_products",
+      "ok": true,
+      "primary_max_residual": 7.059952142327541e-10,
+      "threshold": 5e-08
+    },
+    {
+      "convergence_claim": false,
+      "name": "Dirac_UV_endpoint_leakage_strictly_decreases",
+      "ok": true,
+      "trend_grid": [
+        8.0,
+        16.0,
+        32.0
+      ]
+    },
+    {
+      "controls": {
+        "chi_static_mixing": 1.5407439555097887e-32,
+        "dirac_static_leakage": -7.059926536643616e-18,
+        "scalar_frequency_regression_residual": 1.3322676295501878e-15,
+        "scalar_static_mixing": 1.179632090937182e-31
+      },
+      "name": "static_background_controls_have_zero_mixing",
+      "ok": true,
+      "threshold": 1e-10
+    },
+    {
+      "maximum_absolute_difference": 4.4959119760434874e-10,
+      "name": "primary_and_resolution_witness_envelopes_agree",
+      "ok": true,
+      "threshold": 2e-05
+    },
+    {
+      "broken_clifford_residual": 4.0,
+      "forbidden_source_tokens": [],
+      "name": "mutations_and_scope_firewalls_are_rejected",
+      "ok": true,
+      "prior_WKB_solver_imported": false,
+      "static_vacuum_solver_imported": false,
+      "wrong_symplectic_residual": 4.0
+    }
+  ],
+  "covariant_5D_subtraction": "NOT_DERIVED",
+  "derived_claims": [],
+  "dimension_ledger": {
+    "H_D": "1",
+    "K": "2",
+    "Psi": "2",
+    "momentum_mu_mF": "1",
+    "projector": "0",
+    "rho_sigma_pi": "3/2",
+    "scale_factors": "0"
+  },
+  "explicit_nonclaims": [
+    "no retroactive pass of the failed branchwise WKB checkpoint",
+    "no full Hadamard state",
+    "no covariant subtraction or renormalized quantum stress",
+    "no finite-charge semiclassical background",
+    "no physical radion mass or Hessian",
+    "no parity or anomaly clearance",
+    "no architecture, A4, Ultra, phenomenology, or publication change"
+  ],
+  "full_Hadamard_state": false,
+  "gate_effect": "NONE",
+  "hold_reasons": [
+    "the scalar instantaneous positive-Hamiltonian state is not an infinite-order adiabatic/Hadamard construction",
+    "the Dirac projector is first order, not the infinite-order state required for a Hadamard claim",
+    "no covariant five-dimensional subtraction or local counterterm map is derived",
+    "no renormalized stress, self-consistent semiclassical solution, or physical constrained Hessian is computed",
+    "the parity-odd determinant phase and quantized counterterms remain unaudited"
+  ],
+  "next_required_calculation": "derive a matrix/spinor high-order or pseudodifferential Hadamard construction and the covariant five-dimensional subtraction/counterterm map before any stress integral",
+  "physics_pass": false,
+  "primary_diagnostics": {
+    "chi": {
+      "all_finite": true,
+      "all_frequencies_positive": true,
+      "max_symplectic_residual": 5.476515467830639e-10,
+      "max_wronskian_residual": 3.872481224576063e-10,
+      "modes": [
+        {
+          "final_instantaneous_basis_mixing": 0.004239677841565484,
+          "finite_transport": true,
+          "k_obs": 1.0,
+          "max_symplectic_residual": 1.8705579123171718e-10,
+          "max_wronskian_residual": 1.322683074178599e-10,
+          "min_frequency_squared": 1.4709158634456398,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0053579489860538475,
+          "finite_transport": true,
+          "k_obs": 1.0,
+          "max_symplectic_residual": 5.305318866505596e-10,
+          "max_wronskian_residual": 3.751429167309084e-10,
+          "min_frequency_squared": 1.9733807513908272,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0034678631379706534,
+          "finite_transport": true,
+          "k_obs": 1.0,
+          "max_symplectic_residual": 6.356409412509156e-11,
+          "max_wronskian_residual": 4.4946601995832225e-11,
+          "min_frequency_squared": 3.48077541522639,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00038757682644664917,
+          "finite_transport": true,
+          "k_obs": 1.0,
+          "max_symplectic_residual": 1.4945003572604448e-10,
+          "max_wronskian_residual": 1.056772447327603e-10,
+          "min_frequency_squared": 9.51035407056864,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.004378532365259399,
+          "finite_transport": true,
+          "k_obs": 2.0,
+          "max_symplectic_residual": 1.4545273733548145e-10,
+          "max_wronskian_residual": 1.0285050588976219e-10,
+          "min_frequency_squared": 2.9783105272812027,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0034678631379706443,
+          "finite_transport": true,
+          "k_obs": 2.0,
+          "max_symplectic_residual": 6.356472216207503e-11,
+          "max_wronskian_residual": 4.494693506273961e-11,
+          "min_frequency_squared": 3.48077541522639,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0012315955160982603,
+          "finite_transport": true,
+          "k_obs": 2.0,
+          "max_symplectic_residual": 7.541656508644951e-11,
+          "max_wronskian_residual": 5.332756458642507e-11,
+          "min_frequency_squared": 4.988170079061954,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0007751418232181899,
+          "finite_transport": true,
+          "k_obs": 2.0,
+          "max_symplectic_residual": 1.6482767827563923e-10,
+          "max_wronskian_residual": 1.1655065801363662e-10,
+          "min_frequency_squared": 11.017748734404202,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00026787829211333795,
+          "finite_transport": true,
+          "k_obs": 4.0,
+          "max_symplectic_residual": 1.443337324401775e-10,
+          "max_wronskian_residual": 1.0205924994011184e-10,
+          "min_frequency_squared": 9.007889182623453,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00038757682644663383,
+          "finite_transport": true,
+          "k_obs": 4.0,
+          "max_symplectic_residual": 1.4945129180001141e-10,
+          "max_wronskian_residual": 1.0567802188887754e-10,
+          "min_frequency_squared": 9.51035407056864,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0007751418232181834,
+          "finite_transport": true,
+          "k_obs": 4.0,
+          "max_symplectic_residual": 1.6482846332186858e-10,
+          "max_wronskian_residual": 1.165513241474514e-10,
+          "min_frequency_squared": 11.017748734404202,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0011672449523845128,
+          "finite_transport": true,
+          "k_obs": 4.0,
+          "max_symplectic_residual": 2.32817077995531e-10,
+          "max_wronskian_residual": 1.646263125820724e-10,
+          "min_frequency_squared": 17.047327389746457,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00013227268265874256,
+          "finite_transport": true,
+          "k_obs": 8.0,
+          "max_symplectic_residual": 3.10157163353114e-10,
+          "max_wronskian_residual": 2.193141224182682e-10,
+          "min_frequency_squared": 33.12620380399246,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00015689795935062102,
+          "finite_transport": true,
+          "k_obs": 8.0,
+          "max_symplectic_residual": 3.115915998233675e-10,
+          "max_wronskian_residual": 2.2032864421817067e-10,
+          "min_frequency_squared": 33.62866869193765,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0002335915892472257,
+          "finite_transport": true,
+          "k_obs": 8.0,
+          "max_symplectic_residual": 3.2338597736375413e-10,
+          "max_wronskian_residual": 2.2866841753454992e-10,
+          "min_frequency_squared": 35.13606335577321,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00045859324007961806,
+          "finite_transport": true,
+          "k_obs": 8.0,
+          "max_symplectic_residual": 3.469248035043413e-10,
+          "max_wronskian_residual": 2.4531299214203273e-10,
+          "min_frequency_squared": 41.16564201111546,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 9.204579805672425e-05,
+          "finite_transport": true,
+          "k_obs": 16.0,
+          "max_symplectic_residual": 4.288073233541423e-10,
+          "max_wronskian_residual": 3.032124551438642e-10,
+          "min_frequency_squared": 129.59946228946848,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 9.588733468493596e-05,
+          "finite_transport": true,
+          "k_obs": 16.0,
+          "max_symplectic_residual": 4.207186780347411e-10,
+          "max_wronskian_residual": 2.9749303021020523e-10,
+          "min_frequency_squared": 130.10192717741367,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00010692221934395036,
+          "finite_transport": true,
+          "k_obs": 16.0,
+          "max_symplectic_residual": 4.046398321930982e-10,
+          "max_wronskian_residual": 2.8612368030422886e-10,
+          "min_frequency_squared": 131.60932184124923,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00013972117800894768,
+          "finite_transport": true,
+          "k_obs": 16.0,
+          "max_symplectic_residual": 4.1365530309086045e-10,
+          "max_wronskian_residual": 2.9249869193392897e-10,
+          "min_frequency_squared": 137.63890049659148,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 4.1256898636461806e-05,
+          "finite_transport": true,
+          "k_obs": 32.0,
+          "max_symplectic_residual": 5.476515467830639e-10,
+          "max_wronskian_residual": 3.872481224576063e-10,
+          "min_frequency_squared": 515.4924962313727,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 4.113361155359903e-05,
+          "finite_transport": true,
+          "k_obs": 32.0,
+          "max_symplectic_residual": 5.441554219053128e-10,
+          "max_wronskian_residual": 3.847759888486735e-10,
+          "min_frequency_squared": 515.9949611193178,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 4.0682779306875285e-05,
+          "finite_transport": true,
+          "k_obs": 32.0,
+          "max_symplectic_residual": 5.106436824856581e-10,
+          "max_wronskian_residual": 3.6107961065567906e-10,
+          "min_frequency_squared": 517.5023557831535,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 3.774003505702589e-05,
+          "finite_transport": true,
+          "k_obs": 32.0,
+          "max_symplectic_residual": 5.172697866797954e-10,
+          "max_wronskian_residual": 3.6576497386420215e-10,
+          "min_frequency_squared": 523.5319344384957,
+          "n": 4,
+          "solver_success": true
+        }
+      ],
+      "uv_endpoint_mixing_strictly_decreases": true,
+      "uv_max_endpoint_mixing": 0.00045859324007961806
+    },
+    "dirac": {
+      "N_F": 3,
+      "all_Hamiltonians_Hermitian": true,
+      "all_finite": true,
+      "all_first_order_defects_reduced": true,
+      "all_projectors_exact": true,
+      "all_projectors_rank_two": true,
+      "clifford_residual": 0.0,
+      "m_F_dimensionless_equal_mass_control": 1.0,
+      "max_defect_ratio": 0.1956287111447811,
+      "max_inner_product_residual": 7.059952142327541e-10,
+      "modes": [
+        {
+          "defect_ratio": 0.1956287111447811,
+          "final_negative_energy_leakage": 0.0008673720310595871,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.04235485839024708,
+          "initial_omega": 1.4142135623730951,
+          "k_obs": 1.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 7.81993969608513e-11,
+          "n": 0,
+          "projector_hermiticity_residual": 1.1199383359284507e-16,
+          "projector_idempotency_residual": 1.9634858205496768e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.21650635094610962
+        },
+        {
+          "defect_ratio": 0.09722910650913148,
+          "final_negative_energy_leakage": 0.0006337814939206684,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.01984680825784089,
+          "initial_omega": 1.7320508075688772,
+          "k_obs": 1.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 9.453997721499353e-11,
+          "n": 1,
+          "projector_hermiticity_residual": 1.0115093678808322e-17,
+          "projector_idempotency_residual": 1.7583990541085144e-16,
+          "projector_trace": 1.9999999999999996,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.2041241452319315
+        },
+        {
+          "defect_ratio": 0.02455498215841704,
+          "final_negative_energy_leakage": 0.0003047279063928159,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.003962543206915394,
+          "initial_omega": 2.449489742783178,
+          "k_obs": 1.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 4.199596953674083e-11,
+          "n": 2,
+          "projector_hermiticity_residual": 1.2461138894867604e-16,
+          "projector_idempotency_residual": 2.9376934557271194e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.16137430609197573
+        },
+        {
+          "defect_ratio": 0.0028354233996143305,
+          "final_negative_energy_leakage": 4.9620641145903386e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0002812357399022416,
+          "initial_omega": 4.242640687119285,
+          "k_obs": 1.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 1.5676187780204208e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 1.6603366898525674e-18,
+          "projector_idempotency_residual": 7.851504809190323e-17,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.09918650595198403
+        },
+        {
+          "defect_ratio": 0.036581592192059746,
+          "final_negative_energy_leakage": 0.00037923200794546586,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.00633611762984124,
+          "initial_omega": 2.23606797749979,
+          "k_obs": 2.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 6.39061387711749e-11,
+          "n": 0,
+          "projector_hermiticity_residual": 6.1331736667334966e-18,
+          "projector_idempotency_residual": 2.2215722539703296e-16,
+          "projector_trace": 1.9999999999999996,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.1732050807568877
+        },
+        {
+          "defect_ratio": 0.024554982158409355,
+          "final_negative_energy_leakage": 0.00030472790639176196,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.003962543206914154,
+          "initial_omega": 2.449489742783178,
+          "k_obs": 2.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 4.086008615114504e-11,
+          "n": 1,
+          "projector_hermiticity_residual": 1.2461138894867604e-16,
+          "projector_idempotency_residual": 2.9376934557271194e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.16137430609197573
+        },
+        {
+          "defect_ratio": 0.008020586611521352,
+          "final_negative_energy_leakage": 0.00017228256421799833,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0010914635908903132,
+          "initial_omega": 3.0,
+          "k_obs": 2.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 8.174827694855153e-11,
+          "n": 2,
+          "projector_hermiticity_residual": 1.5701164162106307e-16,
+          "projector_idempotency_residual": 2.221045011651535e-16,
+          "projector_trace": 2.0000000000000004,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.13608276348795434
+        },
+        {
+          "defect_ratio": 0.003749799379439019,
+          "final_negative_energy_leakage": 3.666036041710411e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.00034578358448062444,
+          "initial_omega": 4.58257569495584,
+          "k_obs": 2.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 1.9381386169817774e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 1.3544393281623241e-18,
+          "projector_idempotency_residual": 1.6654481600356105e-16,
+          "projector_trace": 1.9999999999999998,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.09221388919541468
+        },
+        {
+          "defect_ratio": 0.002402980142229394,
+          "final_negative_energy_leakage": 5.5489378973166904e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0002448284527011998,
+          "initial_omega": 4.123105625617661,
+          "k_obs": 4.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 1.991314508368372e-10,
+          "n": 0,
+          "projector_hermiticity_residual": 1.1105152125430272e-16,
+          "projector_idempotency_residual": 7.85145312383321e-17,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.10188534162169866
+        },
+        {
+          "defect_ratio": 0.0028354233996143305,
+          "final_negative_energy_leakage": 4.962064114620186e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0002812357399022416,
+          "initial_omega": 4.242640687119285,
+          "k_obs": 4.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 1.5798207515616076e-10,
+          "n": 1,
+          "projector_hermiticity_residual": 1.6603366898525674e-18,
+          "projector_idempotency_residual": 7.851504809190323e-17,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.09918650595198403
+        },
+        {
+          "defect_ratio": 0.003749799379439019,
+          "final_negative_energy_leakage": 3.66603604171017e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.00034578358448062444,
+          "initial_omega": 4.58257569495584,
+          "k_obs": 4.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 1.93813076652897e-10,
+          "n": 2,
+          "projector_hermiticity_residual": 1.5277732137893634e-18,
+          "projector_idempotency_residual": 1.6654201058297262e-16,
+          "projector_trace": 1.9999999999999998,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.09221388919541468
+        },
+        {
+          "defect_ratio": 0.004949069407564197,
+          "final_negative_energy_leakage": 1.5644927167338972e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.00036735438636819766,
+          "initial_omega": 5.744562646538029,
+          "k_obs": 4.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 2.386734443656791e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 8.673617379884035e-19,
+          "projector_idempotency_residual": 2.7195076796429086e-16,
+          "projector_trace": 2.0000000000000004,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.07422696190252055
+        },
+        {
+          "defect_ratio": 0.004728195764611899,
+          "final_negative_energy_leakage": 4.297309419954153e-06,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0002519838551519934,
+          "initial_omega": 8.06225774829855,
+          "k_obs": 8.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 4.4946612890005506e-10,
+          "n": 0,
+          "projector_hermiticity_residual": 6.097131197928649e-19,
+          "projector_idempotency_residual": 1.9229666568371957e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.0532938710021193
+        },
+        {
+          "defect_ratio": 0.004710875740850934,
+          "final_negative_energy_leakage": 4.166159337574656e-06,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0002491810593242814,
+          "initial_omega": 8.12403840463596,
+          "k_obs": 8.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 3.739205807167367e-10,
+          "n": 1,
+          "projector_hermiticity_residual": 5.105355390567903e-19,
+          "projector_idempotency_residual": 2.224781987101105e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.052894848650639925
+        },
+        {
+          "defect_ratio": 0.004658837670410467,
+          "final_negative_energy_leakage": 3.8077933862488317e-06,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0002410924332133018,
+          "initial_omega": 8.306623862918075,
+          "k_obs": 8.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 3.6900289412684933e-10,
+          "n": 2,
+          "projector_hermiticity_residual": 1.144398245992847e-16,
+          "projector_idempotency_residual": 1.9329547687671908e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.051749481366252535
+        },
+        {
+          "defect_ratio": 0.004454863810785028,
+          "final_negative_energy_leakage": 2.7732446740948906e-06,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0002130075722073151,
+          "initial_omega": 9.0,
+          "k_obs": 8.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 3.094879899490251e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 1.241283017112953e-16,
+          "projector_idempotency_residual": 1.1775693650635485e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.047814609212437235
+        },
+        {
+          "defect_ratio": 0.0028435273433262557,
+          "final_negative_energy_leakage": 2.8526518234175805e-07,
+          "finite_transport": true,
+          "first_order_invariance_defect": 7.665577947630233e-05,
+          "initial_omega": 16.0312195418814,
+          "k_obs": 16.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 5.910883901664761e-10,
+          "n": 0,
+          "projector_hermiticity_residual": 1.1267767012075766e-19,
+          "projector_idempotency_residual": 1.1102231575312657e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.0269579892228619
+        },
+        {
+          "defect_ratio": 0.0028386211398724564,
+          "final_negative_energy_leakage": 2.830541789495523e-07,
+          "finite_transport": true,
+          "first_order_invariance_defect": 7.637565089909428e-05,
+          "initial_omega": 16.06237840420901,
+          "k_obs": 16.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 5.113057904759132e-10,
+          "n": 1,
+          "projector_hermiticity_residual": 1.1123898586957032e-16,
+          "projector_idempotency_residual": 1.1113069634033938e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.02690589801727678
+        },
+        {
+          "defect_ratio": 0.002824051227300964,
+          "final_negative_energy_leakage": 2.765958555946115e-07,
+          "finite_transport": true,
+          "first_order_invariance_defect": 7.554737401136196e-05,
+          "initial_omega": 16.15549442140351,
+          "k_obs": 16.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 4.099087484666856e-10,
+          "n": 2,
+          "projector_hermiticity_residual": 1.1880981730565587e-19,
+          "projector_idempotency_residual": 1.7554169907911765e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.02675141770836962
+        },
+        {
+          "defect_ratio": 0.0027679071632380078,
+          "final_negative_energy_leakage": 2.5315186412141524e-07,
+          "finite_transport": true,
+          "first_order_invariance_defect": 7.24059007440121e-05,
+          "initial_omega": 16.522711641858304,
+          "k_obs": 16.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 4.909878520069276e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 1.1443924149863903e-16,
+          "projector_idempotency_residual": 2.263399046280549e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.026159078492830952
+        },
+        {
+          "defect_ratio": 0.001482989977430512,
+          "final_negative_energy_leakage": 1.8202232544531794e-08,
+          "finite_transport": true,
+          "first_order_invariance_defect": 2.0047718930927373e-05,
+          "initial_omega": 32.01562118716424,
+          "k_obs": 32.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 7.059952142327541e-10,
+          "n": 0,
+          "projector_hermiticity_residual": 1.800816747500718e-20,
+          "projector_idempotency_residual": 3.330669117992956e-16,
+          "projector_trace": 2.0000000000000004,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.013518445327366848
+        },
+        {
+          "defect_ratio": 0.0014822863778486731,
+          "final_negative_energy_leakage": 1.816797077003325e-08,
+          "finite_transport": true,
+          "first_order_invariance_defect": 2.0028449301272045e-05,
+          "initial_omega": 32.03123475609393,
+          "k_obs": 32.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 6.275598323755451e-10,
+          "n": 1,
+          "projector_hermiticity_residual": 1.1107651000937123e-16,
+          "projector_idempotency_residual": 2.3552664822080693e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.013511862215411084
+        },
+        {
+          "defect_ratio": 0.0014801815702317727,
+          "final_negative_energy_leakage": 1.8065773874449777e-08,
+          "finite_transport": true,
+          "first_order_invariance_defect": 1.9970862019305814e-05,
+          "initial_omega": 32.07802986469088,
+          "k_obs": 32.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 6.01961751472816e-10,
+          "n": 2,
+          "projector_hermiticity_residual": 1.3103520532145792e-20,
+          "projector_idempotency_residual": 3.1409514705145936e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.013492170434319552
+        },
+        {
+          "defect_ratio": 0.0014718510532024376,
+          "final_negative_energy_leakage": 1.7665271910281688e-08,
+          "finite_transport": true,
+          "first_order_invariance_defect": 1.974378618212581e-05,
+          "initial_omega": 32.264531609803356,
+          "k_obs": 32.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 5.891012811541085e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 1.118863088372163e-16,
+          "projector_idempotency_residual": 2.2204460742073414e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.013414255565580154
+        }
+      ],
+      "uv_endpoint_leakage_strictly_decreases": true,
+      "uv_max_endpoint_leakage": 4.297309419954153e-06
+    },
+    "finite_positive_background": true,
+    "max_charge_relative_error": 1.7204015989591426e-12,
+    "points": 801,
+    "scalar": {
+      "all_finite": true,
+      "all_positive_Hamiltonians": true,
+      "all_positive_K": true,
+      "max_initial_isotropy_residual": 6.090165715188584e-16,
+      "max_initial_normalization_residual": 6.667458442637182e-16,
+      "max_mode_isotropy_residual": 2.378506009181205e-11,
+      "max_mode_normalization_residual": 4.87428921321968e-10,
+      "max_symplectic_residual": 2.694307068596595e-09,
+      "modes": [
+        {
+          "final_instantaneous_basis_mixing": 0.034488449629645486,
+          "finite_transport": true,
+          "initial_frequencies": [
+            0.6816260977486142,
+            2.714538486778433
+          ],
+          "initial_isotropy_residual": 5.500309198801554e-16,
+          "initial_normalization_residual": 1.0041951288439076e-16,
+          "k_obs": 1.0,
+          "max_mode_isotropy_residual": 2.378506009181205e-11,
+          "max_mode_normalization_residual": 2.0533065421348214e-10,
+          "max_symplectic_residual": 3.561858606191187e-10,
+          "min_Hamiltonian_eigenvalue": 0.4828799025122714,
+          "min_K_eigenvalue": 0.891283303349327,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.021031492319948577,
+          "finite_transport": true,
+          "initial_frequencies": [
+            0.9628587290657227,
+            2.9843318182124596
+          ],
+          "initial_isotropy_residual": 1.4877763639477205e-16,
+          "initial_normalization_residual": 6.667458442637182e-16,
+          "k_obs": 1.0,
+          "max_mode_isotropy_residual": 1.85788063413302e-11,
+          "max_mode_normalization_residual": 1.0597997113142233e-10,
+          "max_symplectic_residual": 2.0844696882716169e-10,
+          "min_Hamiltonian_eigenvalue": 0.6398724812734407,
+          "min_K_eigenvalue": 1.3937481912945149,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0069240828189929896,
+          "finite_transport": true,
+          "initial_frequencies": [
+            1.6226657610089887,
+            3.633220219224602
+          ],
+          "initial_isotropy_residual": 5.502796580900447e-16,
+          "initial_normalization_residual": 4.150231354810518e-16,
+          "k_obs": 1.0,
+          "max_mode_isotropy_residual": 1.3001062058059492e-11,
+          "max_mode_normalization_residual": 5.1695245780375937e-11,
+          "max_symplectic_residual": 1.2562647568086412e-10,
+          "min_Hamiltonian_eigenvalue": 0.8212812997799988,
+          "min_K_eigenvalue": 2.901142855130077,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0011336886020188253,
+          "finite_transport": true,
+          "initial_frequencies": [
+            3.347185322764214,
+            5.350671336234836
+          ],
+          "initial_isotropy_residual": 3.22209346440031e-16,
+          "initial_normalization_residual": 2.1626001649421498e-16,
+          "k_obs": 1.0,
+          "max_mode_isotropy_residual": 6.731007386693451e-12,
+          "max_mode_normalization_residual": 1.3421578688784874e-10,
+          "max_symplectic_residual": 3.608033455553305e-10,
+          "min_Hamiltonian_eigenvalue": 0.9427717743432622,
+          "min_K_eigenvalue": 8.930721510472328,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.009987103726547604,
+          "finite_transport": true,
+          "initial_frequencies": [
+            1.4234464337045714,
+            3.4361509838345383
+          ],
+          "initial_isotropy_residual": 1.216355924414759e-16,
+          "initial_normalization_residual": 4.510741212971551e-16,
+          "k_obs": 2.0,
+          "max_mode_isotropy_residual": 1.4346528706994237e-11,
+          "max_mode_normalization_residual": 5.443975328883937e-11,
+          "max_symplectic_residual": 1.2499832165884128e-10,
+          "min_Hamiltonian_eigenvalue": 0.7841352987018573,
+          "min_K_eigenvalue": 2.3986779671848897,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.006924082818993007,
+          "finite_transport": true,
+          "initial_frequencies": [
+            1.6226657610089887,
+            3.633220219224602
+          ],
+          "initial_isotropy_residual": 5.502796580900447e-16,
+          "initial_normalization_residual": 4.150231354810518e-16,
+          "k_obs": 2.0,
+          "max_mode_isotropy_residual": 1.3001121379305279e-11,
+          "max_mode_normalization_residual": 5.169473892431466e-11,
+          "max_symplectic_residual": 1.256245890811174e-10,
+          "min_Hamiltonian_eigenvalue": 0.8212812997799988,
+          "min_K_eigenvalue": 2.901142855130077,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.001885088558413565,
+          "finite_transport": true,
+          "initial_frequencies": [
+            2.144458640230298,
+            4.151461245594729
+          ],
+          "initial_isotropy_residual": 0.0,
+          "initial_normalization_residual": 2.7755575615628914e-17,
+          "k_obs": 2.0,
+          "max_mode_isotropy_residual": 1.0972372610348417e-11,
+          "max_mode_normalization_residual": 9.65926218591639e-11,
+          "max_symplectic_residual": 2.1851978866839274e-10,
+          "min_Hamiltonian_eigenvalue": 0.8828195552435624,
+          "min_K_eigenvalue": 4.408537518965641,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0018904179989163634,
+          "finite_transport": true,
+          "initial_frequencies": [
+            3.6797116572692485,
+            5.682697902641856
+          ],
+          "initial_isotropy_residual": 4.948767959451598e-16,
+          "initial_normalization_residual": 5.040392276620361e-16,
+          "k_obs": 2.0,
+          "max_mode_isotropy_residual": 9.151184757942494e-12,
+          "max_mode_normalization_residual": 1.4850749025772588e-10,
+          "max_symplectic_residual": 4.2900703052059295e-10,
+          "min_Hamiltonian_eigenvalue": 0.9511373498081845,
+          "min_K_eigenvalue": 10.43811617430789,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.000870345901849375,
+          "finite_transport": true,
+          "initial_frequencies": [
+            3.2305258361234275,
+            5.234217816968682
+          ],
+          "initial_isotropy_residual": 4.910462595695867e-16,
+          "initial_normalization_residual": 2.7194799110210365e-16,
+          "k_obs": 4.0,
+          "max_mode_isotropy_residual": 7.058029013380944e-12,
+          "max_mode_normalization_residual": 1.3392902075482774e-10,
+          "max_symplectic_residual": 3.5438189642213123e-10,
+          "min_Hamiltonian_eigenvalue": 0.9393106515945105,
+          "min_K_eigenvalue": 8.428256622527142,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0011336886020188457,
+          "finite_transport": true,
+          "initial_frequencies": [
+            3.347185322764214,
+            5.350671336234836
+          ],
+          "initial_isotropy_residual": 3.22209346440031e-16,
+          "initial_normalization_residual": 2.1626001649421498e-16,
+          "k_obs": 4.0,
+          "max_mode_isotropy_residual": 6.731048723083747e-12,
+          "max_mode_normalization_residual": 1.342157830145029e-10,
+          "max_symplectic_residual": 3.6079749649767656e-10,
+          "min_Hamiltonian_eigenvalue": 0.9427717743432622,
+          "min_K_eigenvalue": 8.930721510472328,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0018904179989164393,
+          "finite_transport": true,
+          "initial_frequencies": [
+            3.6797116572692485,
+            5.682697902641856
+          ],
+          "initial_isotropy_residual": 4.948767959451598e-16,
+          "initial_normalization_residual": 5.040392276620361e-16,
+          "k_obs": 4.0,
+          "max_mode_isotropy_residual": 9.150072364156384e-12,
+          "max_mode_normalization_residual": 1.4850784153498273e-10,
+          "max_symplectic_residual": 4.2901303659318504e-10,
+          "min_Hamiltonian_eigenvalue": 0.9511373498081845,
+          "min_K_eigenvalue": 10.43811617430789,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0022673975690353882,
+          "finite_transport": true,
+          "initial_frequencies": [
+            4.822689738273816,
+            6.8245876814414075
+          ],
+          "initial_isotropy_residual": 2.4041985039473046e-16,
+          "initial_normalization_residual": 2.358409488099543e-16,
+          "k_obs": 4.0,
+          "max_mode_isotropy_residual": 1.2284929095530429e-11,
+          "max_mode_normalization_residual": 2.2043374627984765e-10,
+          "max_symplectic_residual": 7.658416913871008e-10,
+          "min_Hamiltonian_eigenvalue": 0.9691809710810336,
+          "min_K_eigenvalue": 16.467694829650146,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0003222413766020344,
+          "finite_transport": true,
+          "initial_frequencies": [
+            7.118367401719066,
+            9.119329957155664
+          ],
+          "initial_isotropy_residual": 4.710277376051325e-16,
+          "initial_normalization_residual": 0.0,
+          "k_obs": 8.0,
+          "max_mode_isotropy_residual": 7.810783803887195e-12,
+          "max_mode_normalization_residual": 2.768456277340719e-10,
+          "max_symplectic_residual": 1.161941921840782e-09,
+          "min_Hamiltonian_eigenvalue": 0.9844798066194448,
+          "min_K_eigenvalue": 32.546571243896146,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00037327052255918417,
+          "finite_transport": true,
+          "initial_frequencies": [
+            7.179728861006115,
+            9.180676816867535
+          ],
+          "initial_isotropy_residual": 7.412125763100508e-17,
+          "initial_normalization_residual": 2.25551361582914e-16,
+          "k_obs": 8.0,
+          "max_mode_isotropy_residual": 7.70053307453485e-12,
+          "max_mode_normalization_residual": 2.7576436842869475e-10,
+          "max_symplectic_residual": 1.1595989868056022e-09,
+          "min_Hamiltonian_eigenvalue": 0.9847169463194365,
+          "min_K_eigenvalue": 33.04903613184133,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0005276949309295634,
+          "finite_transport": true,
+          "initial_frequencies": [
+            7.361111083313973,
+            9.362017782104742
+          ],
+          "initial_isotropy_residual": 3.1845823373941834e-16,
+          "initial_normalization_residual": 1.3598091791273932e-16,
+          "k_obs": 8.0,
+          "max_mode_isotropy_residual": 7.472777692714447e-12,
+          "max_mode_normalization_residual": 2.7819379915925054e-10,
+          "max_symplectic_residual": 1.1765446205024848e-09,
+          "min_Hamiltonian_eigenvalue": 0.9853867996924224,
+          "min_K_eigenvalue": 34.55643079567691,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0009398247120850417,
+          "finite_transport": true,
+          "initial_frequencies": [
+            8.050353855162683,
+            10.05112611302836
+          ],
+          "initial_isotropy_residual": 3.3675204326027685e-16,
+          "initial_normalization_residual": 2.867462456191417e-16,
+          "k_obs": 8.0,
+          "max_mode_isotropy_residual": 7.98932398693034e-12,
+          "max_mode_normalization_residual": 2.987161787867142e-10,
+          "max_symplectic_residual": 1.2933732135397146e-09,
+          "min_Hamiltonian_eigenvalue": 0.9875666891674809,
+          "min_K_eigenvalue": 40.58600945101915,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00019281464721570106,
+          "finite_transport": true,
+          "initial_frequencies": [
+            15.059654939974983,
+            17.059898194954748
+          ],
+          "initial_isotropy_residual": 7.16215163257183e-17,
+          "initial_normalization_residual": 2.5134888744165815e-16,
+          "k_obs": 16.0,
+          "max_mode_isotropy_residual": 3.522136817660223e-12,
+          "max_mode_normalization_residual": 3.599754015658314e-10,
+          "max_symplectic_residual": 1.869465049322109e-09,
+          "min_Hamiltonian_eigenvalue": 0.9961001568103097,
+          "min_K_eigenvalue": 129.01982972937213,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00020034645414152328,
+          "finite_transport": true,
+          "initial_frequencies": [
+            15.090759004575727,
+            17.09100131645744
+          ],
+          "initial_isotropy_residual": 2.3551386880256624e-16,
+          "initial_normalization_residual": 7.850462293418876e-17,
+          "k_obs": 16.0,
+          "max_mode_isotropy_residual": 3.423896911980111e-12,
+          "max_mode_normalization_residual": 3.6357624724793256e-10,
+          "max_symplectic_residual": 1.888743091086883e-09,
+          "min_Hamiltonian_eigenvalue": 0.996115306277159,
+          "min_K_eigenvalue": 129.52229461731739,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00022183335407510626,
+          "finite_transport": true,
+          "initial_frequencies": [
+            15.183712512669889,
+            17.18395203862969
+          ],
+          "initial_isotropy_residual": 6.090165715188584e-16,
+          "initial_normalization_residual": 5.372978151851441e-16,
+          "k_obs": 16.0,
+          "max_mode_isotropy_residual": 3.40493631112754e-12,
+          "max_mode_normalization_residual": 3.6422347301680277e-10,
+          "max_symplectic_residual": 1.890167978214431e-09,
+          "min_Hamiltonian_eigenvalue": 0.9961600566214344,
+          "min_K_eigenvalue": 131.02968928115294,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0002836282190821043,
+          "finite_transport": true,
+          "initial_frequencies": [
+            15.55030657459178,
+            17.550535569307904
+          ],
+          "initial_isotropy_residual": 2.3620265491071617e-16,
+          "initial_normalization_residual": 4.644397377747507e-16,
+          "k_obs": 16.0,
+          "max_mode_isotropy_residual": 3.3414628757070244e-12,
+          "max_mode_normalization_residual": 3.6464455836884304e-10,
+          "max_symplectic_residual": 1.887516321119972e-09,
+          "min_Hamiltonian_eigenvalue": 0.9963292021098458,
+          "min_K_eigenvalue": 137.05926793649516,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 8.228165054207889e-05,
+          "finite_transport": true,
+          "initial_frequencies": [
+            31.029902474300403,
+            33.02996345394194
+          ],
+          "initial_isotropy_residual": 4.710277376051325e-16,
+          "initial_normalization_residual": 2.3551386880256624e-16,
+          "k_obs": 32.0,
+          "max_mode_isotropy_residual": 1.1956329127706483e-12,
+          "max_mode_normalization_residual": 4.795110423540708e-10,
+          "max_symplectic_residual": 2.5953689025283317e-09,
+          "min_Hamiltonian_eigenvalue": 0.9990238356328612,
+          "min_K_eigenvalue": 514.9128636712763,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 8.20053869937183e-05,
+          "finite_transport": true,
+          "initial_frequencies": [
+            31.045509100741103,
+            33.04557002094432
+          ],
+          "initial_isotropy_residual": 1.509879692977713e-16,
+          "initial_normalization_residual": 4.982563972540483e-16,
+          "k_obs": 32.0,
+          "max_mode_isotropy_residual": 1.2723685632091585e-12,
+          "max_mode_normalization_residual": 4.87428921321968e-10,
+          "max_symplectic_residual": 2.694307068596595e-09,
+          "min_Hamiltonian_eigenvalue": 0.9990247875995508,
+          "min_K_eigenvalue": 515.4153285592216,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 8.101629793746547e-05,
+          "finite_transport": true,
+          "initial_frequencies": [
+            31.092283442505206,
+            33.09234418508681
+          ],
+          "initial_isotropy_residual": 6.206335383118183e-17,
+          "initial_normalization_residual": 2.254873622441467e-16,
+          "k_obs": 32.0,
+          "max_mode_isotropy_residual": 1.2674478223359867e-12,
+          "max_mode_normalization_residual": 4.82177357173285e-10,
+          "max_symplectic_residual": 2.692328254753922e-09,
+          "min_Hamiltonian_eigenvalue": 0.9990276323917013,
+          "min_K_eigenvalue": 516.9227232230572,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 7.481426902571851e-05,
+          "finite_transport": true,
+          "initial_frequencies": [
+            31.278703018149365,
+            33.27876306048268
+          ],
+          "initial_isotropy_residual": 4.717716506554924e-16,
+          "initial_normalization_residual": 2.483881763037336e-16,
+          "k_obs": 32.0,
+          "max_mode_isotropy_residual": 1.1517617922429655e-12,
+          "max_mode_normalization_residual": 4.870320126521491e-10,
+          "max_symplectic_residual": 2.6503807836848728e-09,
+          "min_Hamiltonian_eigenvalue": 0.9990388475038663,
+          "min_K_eigenvalue": 522.9523018783995,
+          "n": 4,
+          "solver_success": true
+        }
+      ],
+      "uv_endpoint_mixing_strictly_decreases": true,
+      "uv_max_endpoint_mixing": 0.0009398247120850417
+    },
+    "solver_success": true
+  },
+  "prior_negative_evidence": {
+    "failed_modes": [
+      [
+        "charged_minus",
+        1.0,
+        0
+      ],
+      [
+        "charged_minus",
+        1.0,
+        1
+      ],
+      [
+        "chi",
+        1.0,
+        0
+      ]
+    ],
+    "retroactively_reclassified": false,
+    "status": "FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT"
+  },
+  "registered_control": {
+    "Cauchy_surface": 0.0,
+    "N_F": 3,
+    "UV_trend_grid": [
+      8.0,
+      16.0,
+      32.0
+    ],
+    "k_obs": [
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0,
+      32.0
+    ],
+    "m_F": 1.0,
+    "n": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "primary_points": 801,
+    "time_interval": [
+      0.0,
+      1.0
+    ],
+    "units": "dimensionless equal-mass A1 control; no absolute mass prediction",
+    "witness_points": 401
+  },
+  "renormalized_stress": "NOT_COMPUTED",
+  "resolution_envelope_difference": 4.4959119760434874e-10,
+  "resolution_witness": {
+    "chi": {
+      "all_finite": true,
+      "all_frequencies_positive": true,
+      "max_symplectic_residual": 5.525502352541574e-10,
+      "max_wronskian_residual": 3.907120182944368e-10,
+      "modes": [
+        {
+          "final_instantaneous_basis_mixing": 0.004239677841606909,
+          "finite_transport": true,
+          "k_obs": 1.0,
+          "max_symplectic_residual": 1.8369485131465868e-10,
+          "max_wronskian_residual": 1.2989187503364974e-10,
+          "min_frequency_squared": 1.4709158634456398,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0053579489861209275,
+          "finite_transport": true,
+          "k_obs": 1.0,
+          "max_symplectic_residual": 5.525502352541574e-10,
+          "max_wronskian_residual": 3.907120182944368e-10,
+          "min_frequency_squared": 1.9733807513908272,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.003467863137985438,
+          "finite_transport": true,
+          "k_obs": 1.0,
+          "max_symplectic_residual": 6.472784665546796e-11,
+          "max_wronskian_residual": 4.576949930168439e-11,
+          "min_frequency_squared": 3.48077541522639,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0003875768264558834,
+          "finite_transport": true,
+          "k_obs": 1.0,
+          "max_symplectic_residual": 1.4898152013637322e-10,
+          "max_wronskian_residual": 1.0534595418221215e-10,
+          "min_frequency_squared": 9.51035407056864,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.004378532365333336,
+          "finite_transport": true,
+          "k_obs": 2.0,
+          "max_symplectic_residual": 1.4815188328120474e-10,
+          "max_wronskian_residual": 1.0475920131369776e-10,
+          "min_frequency_squared": 2.9783105272812027,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.003467863137985311,
+          "finite_transport": true,
+          "k_obs": 2.0,
+          "max_symplectic_residual": 6.47281606739597e-11,
+          "max_wronskian_residual": 4.576983236859178e-11,
+          "min_frequency_squared": 3.48077541522639,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0012315955161247786,
+          "finite_transport": true,
+          "k_obs": 2.0,
+          "max_symplectic_residual": 7.750667216744934e-11,
+          "max_wronskian_residual": 5.480549347680608e-11,
+          "min_frequency_squared": 4.988170079061954,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.000775141823185859,
+          "finite_transport": true,
+          "k_obs": 2.0,
+          "max_symplectic_residual": 1.640661834331776e-10,
+          "max_wronskian_residual": 1.1601231086899588e-10,
+          "min_frequency_squared": 11.017748734404202,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0002678782921233369,
+          "finite_transport": true,
+          "k_obs": 4.0,
+          "max_symplectic_residual": 1.3627209271106568e-10,
+          "max_wronskian_residual": 9.635892084247644e-11,
+          "min_frequency_squared": 9.007889182623453,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0003875768264558982,
+          "finite_transport": true,
+          "k_obs": 4.0,
+          "max_symplectic_residual": 1.4898152013637322e-10,
+          "max_wronskian_residual": 1.0534595418221215e-10,
+          "min_frequency_squared": 9.51035407056864,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0007751418231858876,
+          "finite_transport": true,
+          "k_obs": 4.0,
+          "max_symplectic_residual": 1.640652413777024e-10,
+          "max_wronskian_residual": 1.1601186677978603e-10,
+          "min_frequency_squared": 11.017748734404202,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00116724495232201,
+          "finite_transport": true,
+          "k_obs": 4.0,
+          "max_symplectic_residual": 2.2768114855393052e-10,
+          "max_wronskian_residual": 1.6099488409082596e-10,
+          "min_frequency_squared": 17.047327389746457,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0001322726826849368,
+          "finite_transport": true,
+          "k_obs": 8.0,
+          "max_symplectic_residual": 3.006588890243065e-10,
+          "max_wronskian_residual": 2.1259805027540324e-10,
+          "min_frequency_squared": 33.12620380399246,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0001568979592964882,
+          "finite_transport": true,
+          "k_obs": 8.0,
+          "max_symplectic_residual": 3.07114167158939e-10,
+          "max_wronskian_residual": 2.1716251019654464e-10,
+          "min_frequency_squared": 33.62866869193765,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00023359158924923446,
+          "finite_transport": true,
+          "k_obs": 8.0,
+          "max_symplectic_residual": 3.235423585726391e-10,
+          "max_wronskian_residual": 2.2877888472550012e-10,
+          "min_frequency_squared": 35.13606335577321,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00045859324015160024,
+          "finite_transport": true,
+          "k_obs": 8.0,
+          "max_symplectic_residual": 3.471801005381233e-10,
+          "max_wronskian_residual": 2.4549362542813924e-10,
+          "min_frequency_squared": 41.16564201111546,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 9.204579805546651e-05,
+          "finite_transport": true,
+          "k_obs": 16.0,
+          "max_symplectic_residual": 3.919307187862824e-10,
+          "max_wronskian_residual": 2.771367579867956e-10,
+          "min_frequency_squared": 129.59946228946848,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 9.588733467737372e-05,
+          "finite_transport": true,
+          "k_obs": 16.0,
+          "max_symplectic_residual": 4.0024577143822577e-10,
+          "max_wronskian_residual": 2.8301649912521043e-10,
+          "min_frequency_squared": 130.10192717741367,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00010692221934721588,
+          "finite_transport": true,
+          "k_obs": 16.0,
+          "max_symplectic_residual": 3.9841567166838395e-10,
+          "max_wronskian_residual": 2.8172242316770735e-10,
+          "min_frequency_squared": 131.60932184124923,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00013972117800583158,
+          "finite_transport": true,
+          "k_obs": 16.0,
+          "max_symplectic_residual": 4.1859607003984653e-10,
+          "max_wronskian_residual": 2.95992008680912e-10,
+          "min_frequency_squared": 137.63890049659148,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 4.125689863306059e-05,
+          "finite_transport": true,
+          "k_obs": 32.0,
+          "max_symplectic_residual": 4.968658071422162e-10,
+          "max_wronskian_residual": 3.5133729259229085e-10,
+          "min_frequency_squared": 515.4924962313727,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 4.113361154921773e-05,
+          "finite_transport": true,
+          "k_obs": 32.0,
+          "max_symplectic_residual": 4.846584952851957e-10,
+          "max_wronskian_residual": 3.4270530857583026e-10,
+          "min_frequency_squared": 515.9949611193178,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 4.06827793059592e-05,
+          "finite_transport": true,
+          "k_obs": 32.0,
+          "max_symplectic_residual": 5.437429586164166e-10,
+          "max_wronskian_residual": 3.844844442824069e-10,
+          "min_frequency_squared": 517.5023557831535,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 3.774003505292997e-05,
+          "finite_transport": true,
+          "k_obs": 32.0,
+          "max_symplectic_residual": 5.019904319181142e-10,
+          "max_wronskian_residual": 3.549609495223649e-10,
+          "min_frequency_squared": 523.5319344384957,
+          "n": 4,
+          "solver_success": true
+        }
+      ],
+      "uv_endpoint_mixing_strictly_decreases": true,
+      "uv_max_endpoint_mixing": 0.00045859324015160024
+    },
+    "dirac": {
+      "N_F": 3,
+      "all_Hamiltonians_Hermitian": true,
+      "all_finite": true,
+      "all_first_order_defects_reduced": true,
+      "all_projectors_exact": true,
+      "all_projectors_rank_two": true,
+      "clifford_residual": 0.0,
+      "m_F_dimensionless_equal_mass_control": 1.0,
+      "max_defect_ratio": 0.1956287106951899,
+      "max_inner_product_residual": 7.060166459983811e-10,
+      "modes": [
+        {
+          "defect_ratio": 0.1956287106951899,
+          "final_negative_energy_leakage": 0.0008673720310877298,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.04235485829290773,
+          "initial_omega": 1.4142135623730951,
+          "k_obs": 1.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 6.93254698976534e-11,
+          "n": 0,
+          "projector_hermiticity_residual": 1.1199383359284507e-16,
+          "projector_idempotency_residual": 1.9634858205496768e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.21650635094610962
+        },
+        {
+          "defect_ratio": 0.0972291062682492,
+          "final_negative_energy_leakage": 0.0006337814939251331,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.019846808208671,
+          "initial_omega": 1.7320508075688772,
+          "k_obs": 1.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 9.442779411029958e-11,
+          "n": 1,
+          "projector_hermiticity_residual": 1.0115093678808322e-17,
+          "projector_idempotency_residual": 1.7583990541085144e-16,
+          "projector_trace": 1.9999999999999996,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.2041241452319315
+        },
+        {
+          "defect_ratio": 0.02455498204341357,
+          "final_negative_energy_leakage": 0.0003047279063923628,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.003962543188356789,
+          "initial_omega": 2.449489742783178,
+          "k_obs": 1.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 4.292224558192994e-11,
+          "n": 2,
+          "projector_hermiticity_residual": 1.2461138894867604e-16,
+          "projector_idempotency_residual": 2.9376934557271194e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.16137430609197573
+        },
+        {
+          "defect_ratio": 0.002835423458182725,
+          "final_negative_energy_leakage": 4.962064114589929e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.000281235745711436,
+          "initial_omega": 4.242640687119285,
+          "k_obs": 1.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 1.6071301547538012e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 1.6603366898525674e-18,
+          "projector_idempotency_residual": 7.851504809190323e-17,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.09918650595198403
+        },
+        {
+          "defect_ratio": 0.036581592056608776,
+          "final_negative_energy_leakage": 0.0003792320079458473,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.006336117606380445,
+          "initial_omega": 2.23606797749979,
+          "k_obs": 2.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 6.342686804911467e-11,
+          "n": 0,
+          "projector_hermiticity_residual": 6.1331736667334966e-18,
+          "projector_idempotency_residual": 2.2215722539703296e-16,
+          "projector_trace": 1.9999999999999996,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.1732050807568877
+        },
+        {
+          "defect_ratio": 0.02455498204341357,
+          "final_negative_energy_leakage": 0.0003047279063866876,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.003962543188356789,
+          "initial_omega": 2.449489742783178,
+          "k_obs": 2.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 4.050069199097998e-11,
+          "n": 1,
+          "projector_hermiticity_residual": 1.2461138894867604e-16,
+          "projector_idempotency_residual": 2.9376934557271194e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.16137430609197573
+        },
+        {
+          "defect_ratio": 0.008020586531207088,
+          "final_negative_energy_leakage": 0.0001722825642180416,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0010914635799609263,
+          "initial_omega": 3.0,
+          "k_obs": 2.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 8.165297233486664e-11,
+          "n": 2,
+          "projector_hermiticity_residual": 1.5701164162106307e-16,
+          "projector_idempotency_residual": 2.221045011651535e-16,
+          "projector_trace": 2.0000000000000004,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.13608276348795434
+        },
+        {
+          "defect_ratio": 0.0037497994311865785,
+          "final_negative_energy_leakage": 3.6660360416117515e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0003457835892524681,
+          "initial_omega": 4.58257569495584,
+          "k_obs": 2.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 1.9326613494333474e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 1.3544393281623241e-18,
+          "projector_idempotency_residual": 1.6654481600356105e-16,
+          "projector_trace": 1.9999999999999998,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.09221388919541468
+        },
+        {
+          "defect_ratio": 0.002402980203754135,
+          "final_negative_energy_leakage": 5.548937897428591e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.00024482845896966907,
+          "initial_omega": 4.123105625617661,
+          "k_obs": 4.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 1.991269760748001e-10,
+          "n": 0,
+          "projector_hermiticity_residual": 1.1105152125430272e-16,
+          "projector_idempotency_residual": 7.85145312383321e-17,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.10188534162169866
+        },
+        {
+          "defect_ratio": 0.0028354234581825124,
+          "final_negative_energy_leakage": 4.9620641143771885e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0002812357457114149,
+          "initial_omega": 4.242640687119285,
+          "k_obs": 4.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 1.5952217884922196e-10,
+          "n": 1,
+          "projector_hermiticity_residual": 1.6603366898525674e-18,
+          "projector_idempotency_residual": 7.851504809190323e-17,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.09918650595198403
+        },
+        {
+          "defect_ratio": 0.003749799431184616,
+          "final_negative_energy_leakage": 3.666036041619284e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.00034578358925228716,
+          "initial_omega": 4.58257569495584,
+          "k_obs": 4.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 1.9340979840492464e-10,
+          "n": 2,
+          "projector_hermiticity_residual": 1.5277732137893634e-18,
+          "projector_idempotency_residual": 1.6654201058297262e-16,
+          "projector_trace": 1.9999999999999998,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.09221388919541468
+        },
+        {
+          "defect_ratio": 0.00494906944681205,
+          "final_negative_energy_leakage": 1.564492716667233e-05,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.00036735438928144656,
+          "initial_omega": 5.744562646538029,
+          "k_obs": 4.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 2.378993887806365e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 8.673617379884035e-19,
+          "projector_idempotency_residual": 2.7195076796429086e-16,
+          "projector_trace": 2.0000000000000004,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.07422696190252055
+        },
+        {
+          "defect_ratio": 0.004728195791686547,
+          "final_negative_energy_leakage": 4.297309420262256e-06,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.0002519838565949062,
+          "initial_omega": 8.06225774829855,
+          "k_obs": 8.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 4.4948858122010257e-10,
+          "n": 0,
+          "projector_hermiticity_residual": 6.097131197928649e-19,
+          "projector_idempotency_residual": 1.9229666568371957e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.0532938710021193
+        },
+        {
+          "defect_ratio": 0.00471087576779422,
+          "final_negative_energy_leakage": 4.166159337802406e-06,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.00024918106074944243,
+          "initial_omega": 8.12403840463596,
+          "k_obs": 8.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 3.724110153217933e-10,
+          "n": 1,
+          "projector_hermiticity_residual": 5.105355390567903e-19,
+          "projector_idempotency_residual": 2.224781987101105e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.052894848650639925
+        },
+        {
+          "defect_ratio": 0.004658837696700191,
+          "final_negative_energy_leakage": 3.807793386350352e-06,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.00024109243457378144,
+          "initial_omega": 8.306623862918075,
+          "k_obs": 8.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 3.6892572408468145e-10,
+          "n": 2,
+          "projector_hermiticity_residual": 1.144398245992847e-16,
+          "projector_idempotency_residual": 1.9329547687671908e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.051749481366252535
+        },
+        {
+          "defect_ratio": 0.004454863834935098,
+          "final_negative_energy_leakage": 2.773244673986257e-06,
+          "finite_transport": true,
+          "first_order_invariance_defect": 0.00021300757336204122,
+          "initial_omega": 9.0,
+          "k_obs": 8.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 3.0632692280039447e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 1.241283017112953e-16,
+          "projector_idempotency_residual": 1.1775693650635485e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.047814609212437235
+        },
+        {
+          "defect_ratio": 0.0028435273566554085,
+          "final_negative_energy_leakage": 2.852651824637037e-07,
+          "finite_transport": true,
+          "first_order_invariance_defect": 7.665577983562949e-05,
+          "initial_omega": 16.0312195418814,
+          "k_obs": 16.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 5.759528558739691e-10,
+          "n": 0,
+          "projector_hermiticity_residual": 1.1267767012075766e-19,
+          "projector_idempotency_residual": 1.1102231575312657e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.0269579892228619
+        },
+        {
+          "defect_ratio": 0.002838621153099406,
+          "final_negative_energy_leakage": 2.830541789344064e-07,
+          "finite_transport": true,
+          "first_order_invariance_defect": 7.637565125497723e-05,
+          "initial_omega": 16.06237840420901,
+          "k_obs": 16.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 5.100071670030254e-10,
+          "n": 1,
+          "projector_hermiticity_residual": 1.1123898586957032e-16,
+          "projector_idempotency_residual": 1.1113069634033938e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.02690589801727678
+        },
+        {
+          "defect_ratio": 0.0028240512404764293,
+          "final_negative_energy_leakage": 2.765958555371546e-07,
+          "finite_transport": true,
+          "first_order_invariance_defect": 7.554737436382434e-05,
+          "initial_omega": 16.15549442140351,
+          "k_obs": 16.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 3.9427887056297007e-10,
+          "n": 2,
+          "projector_hermiticity_residual": 1.1880981730565587e-19,
+          "projector_idempotency_residual": 1.7554169907911765e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.02675141770836962
+        },
+        {
+          "defect_ratio": 0.0027679071761853393,
+          "final_negative_energy_leakage": 2.531518641592556e-07,
+          "finite_transport": true,
+          "first_order_invariance_defect": 7.240590108270236e-05,
+          "initial_omega": 16.522711641858304,
+          "k_obs": 16.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 4.80209481294376e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 1.1443924149863903e-16,
+          "projector_idempotency_residual": 2.263399046280549e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.026159078492830952
+        },
+        {
+          "defect_ratio": 0.0014829899840595334,
+          "final_negative_energy_leakage": 1.820223261495369e-08,
+          "finite_transport": true,
+          "first_order_invariance_defect": 2.0047719020541436e-05,
+          "initial_omega": 32.01562118716424,
+          "k_obs": 32.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 7.060166459983811e-10,
+          "n": 0,
+          "projector_hermiticity_residual": 1.800816747500718e-20,
+          "projector_idempotency_residual": 3.330669117992956e-16,
+          "projector_trace": 2.0000000000000004,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.013518445327366848
+        },
+        {
+          "defect_ratio": 0.0014822863844198748,
+          "final_negative_energy_leakage": 1.8167970867940895e-08,
+          "finite_transport": true,
+          "first_order_invariance_defect": 2.0028449390061217e-05,
+          "initial_omega": 32.03123475609393,
+          "k_obs": 32.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 6.016107573035212e-10,
+          "n": 1,
+          "projector_hermiticity_residual": 1.1107651000937123e-16,
+          "projector_idempotency_residual": 2.3552664822080693e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.013511862215411084
+        },
+        {
+          "defect_ratio": 0.0014801815768621025,
+          "final_negative_energy_leakage": 1.8065773881473993e-08,
+          "finite_transport": true,
+          "first_order_invariance_defect": 1.9970862108763352e-05,
+          "initial_omega": 32.07802986469088,
+          "k_obs": 32.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 6.019543720422854e-10,
+          "n": 2,
+          "projector_hermiticity_residual": 1.3103520532145792e-20,
+          "projector_idempotency_residual": 3.1409514705145936e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.013492170434319552
+        },
+        {
+          "defect_ratio": 0.001471851059733779,
+          "final_negative_energy_leakage": 1.7665271895932685e-08,
+          "finite_transport": true,
+          "first_order_invariance_defect": 1.9743786269738893e-05,
+          "initial_omega": 32.264531609803356,
+          "k_obs": 32.0,
+          "max_Hamiltonian_hermiticity_residual": 0.0,
+          "max_inner_product_residual": 5.601336248235439e-10,
+          "n": 4,
+          "projector_hermiticity_residual": 1.118863088372163e-16,
+          "projector_idempotency_residual": 2.2204460742073414e-16,
+          "projector_trace": 2.0,
+          "solver_success": true,
+          "zeroth_order_invariance_defect": 0.013414255565580154
+        }
+      ],
+      "uv_endpoint_leakage_strictly_decreases": true,
+      "uv_max_endpoint_leakage": 4.297309420262256e-06
+    },
+    "finite_positive_background": true,
+    "max_charge_relative_error": 1.7204015989591426e-12,
+    "points": 401,
+    "scalar": {
+      "all_finite": true,
+      "all_positive_Hamiltonians": true,
+      "all_positive_K": true,
+      "max_initial_isotropy_residual": 6.090165715188584e-16,
+      "max_initial_normalization_residual": 6.667458442637182e-16,
+      "max_mode_isotropy_residual": 2.1800566829729882e-11,
+      "max_mode_normalization_residual": 4.880345100005027e-10,
+      "max_symplectic_residual": 2.7334280055763127e-09,
+      "modes": [
+        {
+          "final_instantaneous_basis_mixing": 0.034488449629654375,
+          "finite_transport": true,
+          "initial_frequencies": [
+            0.6816260977486142,
+            2.714538486778433
+          ],
+          "initial_isotropy_residual": 5.500309198801554e-16,
+          "initial_normalization_residual": 1.0041951288439076e-16,
+          "k_obs": 1.0,
+          "max_mode_isotropy_residual": 2.1800566829729882e-11,
+          "max_mode_normalization_residual": 1.9945739978152446e-10,
+          "max_symplectic_residual": 3.45189184759036e-10,
+          "min_Hamiltonian_eigenvalue": 0.4828799025122714,
+          "min_K_eigenvalue": 0.891283303349327,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.02103149232005059,
+          "finite_transport": true,
+          "initial_frequencies": [
+            0.9628587290657227,
+            2.9843318182124596
+          ],
+          "initial_isotropy_residual": 1.4877763639477205e-16,
+          "initial_normalization_residual": 6.667458442637182e-16,
+          "k_obs": 1.0,
+          "max_mode_isotropy_residual": 1.8066816525194635e-11,
+          "max_mode_normalization_residual": 1.0874948963921604e-10,
+          "max_symplectic_residual": 2.1313710266484553e-10,
+          "min_Hamiltonian_eigenvalue": 0.6398724812734407,
+          "min_K_eigenvalue": 1.3937481912945144,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.006924082819289124,
+          "finite_transport": true,
+          "initial_frequencies": [
+            1.6226657610089887,
+            3.633220219224602
+          ],
+          "initial_isotropy_residual": 5.502796580900447e-16,
+          "initial_normalization_residual": 4.150231354810518e-16,
+          "k_obs": 1.0,
+          "max_mode_isotropy_residual": 1.301654470200887e-11,
+          "max_mode_normalization_residual": 5.143866617370165e-11,
+          "max_symplectic_residual": 1.249144547291859e-10,
+          "min_Hamiltonian_eigenvalue": 0.8212812997799988,
+          "min_K_eigenvalue": 2.901142855130077,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0011336886020147812,
+          "finite_transport": true,
+          "initial_frequencies": [
+            3.347185322764214,
+            5.350671336234836
+          ],
+          "initial_isotropy_residual": 3.22209346440031e-16,
+          "initial_normalization_residual": 2.1626001649421498e-16,
+          "k_obs": 1.0,
+          "max_mode_isotropy_residual": 6.6784982856538315e-12,
+          "max_mode_normalization_residual": 1.345491920738345e-10,
+          "max_symplectic_residual": 3.6227802663258363e-10,
+          "min_Hamiltonian_eigenvalue": 0.9427717743432622,
+          "min_K_eigenvalue": 8.930721510472326,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.009987103726487838,
+          "finite_transport": true,
+          "initial_frequencies": [
+            1.4234464337045714,
+            3.4361509838345383
+          ],
+          "initial_isotropy_residual": 1.216355924414759e-16,
+          "initial_normalization_residual": 4.510741212971551e-16,
+          "k_obs": 2.0,
+          "max_mode_isotropy_residual": 1.4346511011231007e-11,
+          "max_mode_normalization_residual": 5.448916306181649e-11,
+          "max_symplectic_residual": 1.251063651855785e-10,
+          "min_Hamiltonian_eigenvalue": 0.7841352987018573,
+          "min_K_eigenvalue": 2.3986779671848897,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.006924082819289157,
+          "finite_transport": true,
+          "initial_frequencies": [
+            1.6226657610089887,
+            3.633220219224602
+          ],
+          "initial_isotropy_residual": 5.502796580900447e-16,
+          "initial_normalization_residual": 4.150231354810518e-16,
+          "k_obs": 2.0,
+          "max_mode_isotropy_residual": 1.3017323476564616e-11,
+          "max_mode_normalization_residual": 5.1438397239396504e-11,
+          "max_symplectic_residual": 1.2491576342810441e-10,
+          "min_Hamiltonian_eigenvalue": 0.8212812997799988,
+          "min_K_eigenvalue": 2.901142855130077,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0018850885583841165,
+          "finite_transport": true,
+          "initial_frequencies": [
+            2.144458640230298,
+            4.151461245594729
+          ],
+          "initial_isotropy_residual": 0.0,
+          "initial_normalization_residual": 2.7755575615628914e-17,
+          "k_obs": 2.0,
+          "max_mode_isotropy_residual": 1.0967459355818953e-11,
+          "max_mode_normalization_residual": 9.677781676593741e-11,
+          "max_symplectic_residual": 2.187726910793692e-10,
+          "min_Hamiltonian_eigenvalue": 0.8828195552435624,
+          "min_K_eigenvalue": 4.40853751896564,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0018904179989064703,
+          "finite_transport": true,
+          "initial_frequencies": [
+            3.6797116572692485,
+            5.682697902641856
+          ],
+          "initial_isotropy_residual": 4.948767959451598e-16,
+          "initial_normalization_residual": 5.040392276620361e-16,
+          "k_obs": 2.0,
+          "max_mode_isotropy_residual": 7.966451166579138e-12,
+          "max_mode_normalization_residual": 1.374523155945237e-10,
+          "max_symplectic_residual": 3.8852791040270564e-10,
+          "min_Hamiltonian_eigenvalue": 0.9511373498081845,
+          "min_K_eigenvalue": 10.438116174307888,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0008703459018533429,
+          "finite_transport": true,
+          "initial_frequencies": [
+            3.2305258361234275,
+            5.234217816968682
+          ],
+          "initial_isotropy_residual": 4.910462595695867e-16,
+          "initial_normalization_residual": 2.7194799110210365e-16,
+          "k_obs": 4.0,
+          "max_mode_isotropy_residual": 7.0435139254354145e-12,
+          "max_mode_normalization_residual": 1.342982075557374e-10,
+          "max_symplectic_residual": 3.55167637625007e-10,
+          "min_Hamiltonian_eigenvalue": 0.9393106515945105,
+          "min_K_eigenvalue": 8.428256622527138,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.001133688602014784,
+          "finite_transport": true,
+          "initial_frequencies": [
+            3.347185322764214,
+            5.350671336234836
+          ],
+          "initial_isotropy_residual": 3.22209346440031e-16,
+          "initial_normalization_residual": 2.1626001649421498e-16,
+          "k_obs": 4.0,
+          "max_mode_isotropy_residual": 6.678532809450186e-12,
+          "max_mode_normalization_residual": 1.345494172160475e-10,
+          "max_symplectic_residual": 3.6227670258451295e-10,
+          "min_Hamiltonian_eigenvalue": 0.9427717743432622,
+          "min_K_eigenvalue": 8.930721510472326,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0018904179989063575,
+          "finite_transport": true,
+          "initial_frequencies": [
+            3.6797116572692485,
+            5.682697902641856
+          ],
+          "initial_isotropy_residual": 4.948767959451598e-16,
+          "initial_normalization_residual": 5.040392276620361e-16,
+          "k_obs": 4.0,
+          "max_mode_isotropy_residual": 7.96709244530724e-12,
+          "max_mode_normalization_residual": 1.3745289249582066e-10,
+          "max_symplectic_residual": 3.885296366467089e-10,
+          "min_Hamiltonian_eigenvalue": 0.9511373498081845,
+          "min_K_eigenvalue": 10.438116174307888,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0022673975690434243,
+          "finite_transport": true,
+          "initial_frequencies": [
+            4.822689738273816,
+            6.8245876814414075
+          ],
+          "initial_isotropy_residual": 2.4041985039473046e-16,
+          "initial_normalization_residual": 2.358409488099543e-16,
+          "k_obs": 4.0,
+          "max_mode_isotropy_residual": 1.2208220135230426e-11,
+          "max_mode_normalization_residual": 2.185579197911224e-10,
+          "max_symplectic_residual": 7.592222243850007e-10,
+          "min_Hamiltonian_eigenvalue": 0.9691809710810336,
+          "min_K_eigenvalue": 16.46769482965014,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00032224137660287055,
+          "finite_transport": true,
+          "initial_frequencies": [
+            7.118367401719066,
+            9.119329957155664
+          ],
+          "initial_isotropy_residual": 4.710277376051325e-16,
+          "initial_normalization_residual": 0.0,
+          "k_obs": 8.0,
+          "max_mode_isotropy_residual": 7.602386717128933e-12,
+          "max_mode_normalization_residual": 2.7685848065412953e-10,
+          "max_symplectic_residual": 1.1620510114338124e-09,
+          "min_Hamiltonian_eigenvalue": 0.9844798066194448,
+          "min_K_eigenvalue": 32.54657124389614,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0003732705225661735,
+          "finite_transport": true,
+          "initial_frequencies": [
+            7.179728861006115,
+            9.180676816867535
+          ],
+          "initial_isotropy_residual": 7.412125763100508e-17,
+          "initial_normalization_residual": 2.25551361582914e-16,
+          "k_obs": 8.0,
+          "max_mode_isotropy_residual": 7.572668442291708e-12,
+          "max_mode_normalization_residual": 2.757743266174709e-10,
+          "max_symplectic_residual": 1.1597909011411338e-09,
+          "min_Hamiltonian_eigenvalue": 0.9847169463194365,
+          "min_K_eigenvalue": 33.04903613184133,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0005276949309221304,
+          "finite_transport": true,
+          "initial_frequencies": [
+            7.361111083313973,
+            9.362017782104742
+          ],
+          "initial_isotropy_residual": 3.1845823373941834e-16,
+          "initial_normalization_residual": 1.3598091791273932e-16,
+          "k_obs": 8.0,
+          "max_mode_isotropy_residual": 7.375799606614391e-12,
+          "max_mode_normalization_residual": 2.78208668318775e-10,
+          "max_symplectic_residual": 1.1768184263258564e-09,
+          "min_Hamiltonian_eigenvalue": 0.9853867996924224,
+          "min_K_eigenvalue": 34.55643079567689,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0009398247120375742,
+          "finite_transport": true,
+          "initial_frequencies": [
+            8.050353855162683,
+            10.05112611302836
+          ],
+          "initial_isotropy_residual": 3.3675204326027685e-16,
+          "initial_normalization_residual": 2.867462456191417e-16,
+          "k_obs": 8.0,
+          "max_mode_isotropy_residual": 7.726313280263186e-12,
+          "max_mode_normalization_residual": 2.894794118667922e-10,
+          "max_symplectic_residual": 1.253474229014642e-09,
+          "min_Hamiltonian_eigenvalue": 0.9875666891674809,
+          "min_K_eigenvalue": 40.58600945101914,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.000192814647206897,
+          "finite_transport": true,
+          "initial_frequencies": [
+            15.059654939974983,
+            17.059898194954748
+          ],
+          "initial_isotropy_residual": 7.16215163257183e-17,
+          "initial_normalization_residual": 2.5134888744165815e-16,
+          "k_obs": 16.0,
+          "max_mode_isotropy_residual": 3.2396687595806605e-12,
+          "max_mode_normalization_residual": 3.583189226776383e-10,
+          "max_symplectic_residual": 1.8623935485652181e-09,
+          "min_Hamiltonian_eigenvalue": 0.9961001568103097,
+          "min_K_eigenvalue": 129.01982972937213,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0002003464541411069,
+          "finite_transport": true,
+          "initial_frequencies": [
+            15.090759004575727,
+            17.09100131645744
+          ],
+          "initial_isotropy_residual": 2.3551386880256624e-16,
+          "initial_normalization_residual": 7.850462293418876e-17,
+          "k_obs": 16.0,
+          "max_mode_isotropy_residual": 3.2781983479428072e-12,
+          "max_mode_normalization_residual": 3.596584430446066e-10,
+          "max_symplectic_residual": 1.8508701479828786e-09,
+          "min_Hamiltonian_eigenvalue": 0.996115306277159,
+          "min_K_eigenvalue": 129.52229461731733,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.0002218333540790172,
+          "finite_transport": true,
+          "initial_frequencies": [
+            15.183712512669889,
+            17.18395203862969
+          ],
+          "initial_isotropy_residual": 6.090165715188584e-16,
+          "initial_normalization_residual": 5.372978151851441e-16,
+          "k_obs": 16.0,
+          "max_mode_isotropy_residual": 3.322782191090115e-12,
+          "max_mode_normalization_residual": 3.642217574846783e-10,
+          "max_symplectic_residual": 1.8901966146827533e-09,
+          "min_Hamiltonian_eigenvalue": 0.9961600566214344,
+          "min_K_eigenvalue": 131.02968928115288,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 0.00028362821909396136,
+          "finite_transport": true,
+          "initial_frequencies": [
+            15.55030657459178,
+            17.550535569307904
+          ],
+          "initial_isotropy_residual": 2.3620265491071617e-16,
+          "initial_normalization_residual": 4.644397377747507e-16,
+          "k_obs": 16.0,
+          "max_mode_isotropy_residual": 3.34227988648852e-12,
+          "max_mode_normalization_residual": 3.6209396469160563e-10,
+          "max_symplectic_residual": 1.872625877762548e-09,
+          "min_Hamiltonian_eigenvalue": 0.9963292021098458,
+          "min_K_eigenvalue": 137.05926793649516,
+          "n": 4,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 8.228165054516404e-05,
+          "finite_transport": true,
+          "initial_frequencies": [
+            31.029902474300403,
+            33.02996345394194
+          ],
+          "initial_isotropy_residual": 4.710277376051325e-16,
+          "initial_normalization_residual": 2.3551386880256624e-16,
+          "k_obs": 32.0,
+          "max_mode_isotropy_residual": 1.2833895384368458e-12,
+          "max_mode_normalization_residual": 4.880345100005027e-10,
+          "max_symplectic_residual": 2.7334280055763127e-09,
+          "min_Hamiltonian_eigenvalue": 0.9990238356328612,
+          "min_K_eigenvalue": 514.9128636712763,
+          "n": 0,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 8.200538700077271e-05,
+          "finite_transport": true,
+          "initial_frequencies": [
+            31.045509100741103,
+            33.04557002094432
+          ],
+          "initial_isotropy_residual": 1.509879692977713e-16,
+          "initial_normalization_residual": 4.982563972540483e-16,
+          "k_obs": 32.0,
+          "max_mode_isotropy_residual": 1.0931213779685332e-12,
+          "max_mode_normalization_residual": 4.6109355719519127e-10,
+          "max_symplectic_residual": 2.6113153068247345e-09,
+          "min_Hamiltonian_eigenvalue": 0.9990247875995508,
+          "min_K_eigenvalue": 515.4153285592214,
+          "n": 1,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 8.101629794118415e-05,
+          "finite_transport": true,
+          "initial_frequencies": [
+            31.092283442505206,
+            33.09234418508681
+          ],
+          "initial_isotropy_residual": 6.206335383118183e-17,
+          "initial_normalization_residual": 2.254873622441467e-16,
+          "k_obs": 32.0,
+          "max_mode_isotropy_residual": 1.2693263137491323e-12,
+          "max_mode_normalization_residual": 4.831441709614846e-10,
+          "max_symplectic_residual": 2.7045008307288624e-09,
+          "min_Hamiltonian_eigenvalue": 0.9990276323917013,
+          "min_K_eigenvalue": 516.922723223057,
+          "n": 2,
+          "solver_success": true
+        },
+        {
+          "final_instantaneous_basis_mixing": 7.481426902406124e-05,
+          "finite_transport": true,
+          "initial_frequencies": [
+            31.278703018149365,
+            33.27876306048268
+          ],
+          "initial_isotropy_residual": 4.717716506554924e-16,
+          "initial_normalization_residual": 2.483881763037336e-16,
+          "k_obs": 32.0,
+          "max_mode_isotropy_residual": 1.213438536868114e-12,
+          "max_mode_normalization_residual": 4.721965006175179e-10,
+          "max_symplectic_residual": 2.6280172015193804e-09,
+          "min_Hamiltonian_eigenvalue": 0.9990388475038663,
+          "min_K_eigenvalue": 522.9523018783992,
+          "n": 4,
+          "solver_success": true
+        }
+      ],
+      "uv_endpoint_mixing_strictly_decreases": true,
+      "uv_max_endpoint_mixing": 0.0009398247120375742
+    },
+    "solver_success": true
+  },
+  "route": "TOP-X4_KK-001",
+  "rule9_review": {
+    "completed_independent_reports": 0,
+    "effect": "no reviewer-consensus or gate-promotion claim",
+    "scope": "this exact scalar/Dirac transport retry",
+    "status": "THREE_WAY_CLEARANCE_NOT_MET"
+  },
+  "schema": "ITSM_TOPX4_S2F3_EXACT_TRANSPORT_RETRY_v1",
+  "source_sha256": "b381df5bd94b253ae78cc434f225d0014f3e96b5859a638a7787f26363089644",
+  "state_scope": {
+    "Dirac": "first-order superadiabatic projector at t=0 plus exact unitary transport",
+    "Hadamard_claim": false,
+    "charged_scalar": "instantaneous positive-Hamiltonian data at t=0 plus exact symplectic transport",
+    "chi": "instantaneous positive-frequency data at t=0 plus exact symplectic transport",
+    "finite_order_only": true,
+    "low_mode_rule": "exact transport; no WKB iterate"
+  },
+  "static_controls": {
+    "chi_static_mixing": 1.5407439555097887e-32,
+    "dirac_static_leakage": -7.059926536643616e-18,
+    "scalar_frequency_regression_residual": 1.3322676295501878e-15,
+    "scalar_static_mixing": 1.179632090937182e-31
+  },
+  "status": "PASS_EXACT_SCALAR_DIRAC_TRANSPORT_HOLD_HADAMARD_STRESS_AND_HESSIAN",
+  "symbolic_checks": {
+    "Hamilton_generator_exact": true,
+    "Hamiltonian_matrix": "Matrix([[K11 + mu**2, K12, 0, -mu], [K12, K22 + mu**2, mu, 0], [0, mu, 1, 0], [-mu, 0, 0, 1]])",
+    "generator": "Matrix([[0, mu, 1, 0], [-mu, 0, 0, 1], [-K11 - mu**2, -K12, 0, mu], [-K12, -K22 - mu**2, -mu, 0]])",
+    "second_order_equation_exact": true
+  }
+}

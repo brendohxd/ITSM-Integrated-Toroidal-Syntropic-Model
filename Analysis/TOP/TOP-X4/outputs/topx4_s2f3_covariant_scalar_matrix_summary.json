@@ -1,0 +1,851 @@
+{
+  "advance_to_a4": false,
+  "advance_to_determinant": false,
+  "advance_to_fixed_charge_reduction": false,
+  "advance_to_homogeneous_reduction": false,
+  "advance_to_physical_hessian": false,
+  "advance_to_semiclassical_background": false,
+  "advance_to_state_construction": false,
+  "advance_to_ultra": false,
+  "authority_receipts": [
+    {
+      "actual": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "expected": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md"
+    },
+    {
+      "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+      "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+    },
+    {
+      "actual": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+      "expected": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md"
+    },
+    {
+      "actual": "a044317b3422b4a5680595c4f2a78e2be51b3dc79b8df91480852ba47d222482",
+      "expected": "a044317b3422b4a5680595c4f2a78e2be51b3dc79b8df91480852ba47d222482",
+      "matches": true,
+      "path": "Theory\\Core\\Reasoning_Mode_Plans\\11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION\\PLAN.md"
+    },
+    {
+      "actual": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+      "expected": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_HADAMARD_SUBTRACTION_READINESS_CONTRACT_2026-09-12.md"
+    },
+    {
+      "actual": "a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2",
+      "expected": "a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_hadamard_subtraction_readiness_summary.json"
+    },
+    {
+      "actual": "a6d1ffb25fb9445975a4ce72661fe734a98956e6537f0549ef8b88f96ca0ff14",
+      "expected": "a6d1ffb25fb9445975a4ce72661fe734a98956e6537f0549ef8b88f96ca0ff14",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_COVARIANT_SCALAR_MATRIX_CONTRACT_2026-09-12.md"
+    }
+  ],
+  "bounded_results": [
+    "fixed-metric off-shell rank-three scalar Hessian",
+    "Cartesian and phase-aligned Laplace-type E and Omega data",
+    "scalar-induced local counterterm structures through b2"
+  ],
+  "calculation_checks_passed": 25,
+  "calculation_checks_total": 25,
+  "calculation_status": "PASS",
+  "candidate": "X4-S2F3",
+  "canonical_field_definition": {
+    "Phi": "(phi1+i*phi2)/sqrt(2)",
+    "bundle_coordinates": [
+      "phi1",
+      "phi2",
+      "chi"
+    ],
+    "field_dimension": "3/2",
+    "s": "(phi1^2+phi2^2)/2"
+  },
+  "checkpoint_completed": "2026-09-12",
+  "checks": [
+    {
+      "name": "all_authority_and_input_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+          "expected": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md"
+        },
+        {
+          "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+        },
+        {
+          "actual": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+          "expected": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md"
+        },
+        {
+          "actual": "a044317b3422b4a5680595c4f2a78e2be51b3dc79b8df91480852ba47d222482",
+          "expected": "a044317b3422b4a5680595c4f2a78e2be51b3dc79b8df91480852ba47d222482",
+          "matches": true,
+          "path": "Theory\\Core\\Reasoning_Mode_Plans\\11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION\\PLAN.md"
+        },
+        {
+          "actual": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+          "expected": "e500004572f7211af499d61230a95c08afd63a8518c2489bd231c553723a1595",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_HADAMARD_SUBTRACTION_READINESS_CONTRACT_2026-09-12.md"
+        },
+        {
+          "actual": "a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2",
+          "expected": "a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_hadamard_subtraction_readiness_summary.json"
+        },
+        {
+          "actual": "a6d1ffb25fb9445975a4ce72661fe734a98956e6537f0549ef8b88f96ca0ff14",
+          "expected": "a6d1ffb25fb9445975a4ce72661fe734a98956e6537f0549ef8b88f96ca0ff14",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_COVARIANT_SCALAR_MATRIX_CONTRACT_2026-09-12.md"
+        }
+      ]
+    },
+    {
+      "hadamard_stress_ready": false,
+      "name": "prior_hadamard_readiness_hold_is_preserved",
+      "ok": true,
+      "readiness_decision": "HOLD",
+      "status": "PASS_5D_HADAMARD_COUNTERTERM_SCAFFOLD_HOLD_FULL_OPERATORS_STATE_AND_STRESS"
+    },
+    {
+      "canonical_fields": "Phi=(phi1+i*phi2)/sqrt(2)",
+      "invariant_s": "(phi1^2+phi2^2)/2",
+      "name": "frozen_complex_scalar_potential_rewrites_exactly_in_canonical_cartesian_fields",
+      "ok": true,
+      "potential": "U0 + chi**4*lambdaChi5/24 + chi**2*g5*(phi1**2 + phi2**2)/4 + chi**2*mChi2/2 + lambdaPhi5*(phi1**2 + phi2**2)**2/8 + mPhi2*(phi1**2 + phi2**2)/2"
+    },
+    {
+      "hessian": [
+        [
+          "(chi**2*g5 + 3*lambdaPhi5*phi1**2 + lambdaPhi5*phi2**2 + 2*mPhi2)/2",
+          "lambdaPhi5*phi1*phi2",
+          "chi*g5*phi1"
+        ],
+        [
+          "lambdaPhi5*phi1*phi2",
+          "(chi**2*g5 + lambdaPhi5*phi1**2 + 3*lambdaPhi5*phi2**2 + 2*mPhi2)/2",
+          "chi*g5*phi2"
+        ],
+        [
+          "chi*g5*phi1",
+          "chi*g5*phi2",
+          "(chi**2*lambdaChi5 + g5*phi1**2 + g5*phi2**2 + 2*mChi2)/2"
+        ]
+      ],
+      "name": "direct_symbolic_second_variation_matches_the_frozen_rank_three_hessian",
+      "ok": true,
+      "symmetric": true
+    },
+    {
+      "background_equation_used": false,
+      "first_variation": "Matrix([[-BoxPhi1 + chi**2*g5*phi1/2 + lambdaPhi5*phi1*(phi1**2 + phi2**2)/2 + mPhi2*phi1], [-BoxPhi2 + chi**2*g5*phi2/2 + lambdaPhi5*phi2*(phi1**2 + phi2**2)/2 + mPhi2*phi2], [-BoxChi + chi**3*lambdaChi5/6 + chi*g5*(phi1**2 + phi2**2)/2 + chi*mChi2]])",
+      "fixed_charge_reduction": false,
+      "fixed_metric": true,
+      "homogeneous_ansatz": false,
+      "name": "operator_is_minimal_fixed_metric_and_derived_without_background_equations",
+      "ok": true,
+      "principal_symbol": [
+        [
+          "k_squared",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "k_squared",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "k_squared"
+        ]
+      ]
+    },
+    {
+      "E": [
+        [
+          "-(chi**2*g5 + 3*lambdaPhi5*phi1**2 + lambdaPhi5*phi2**2 + 2*mPhi2)/2",
+          "-lambdaPhi5*phi1*phi2",
+          "-chi*g5*phi1"
+        ],
+        [
+          "-lambdaPhi5*phi1*phi2",
+          "-(chi**2*g5 + lambdaPhi5*phi1**2 + 3*lambdaPhi5*phi2**2 + 2*mPhi2)/2",
+          "-chi*g5*phi2"
+        ],
+        [
+          "-chi*g5*phi1",
+          "-chi*g5*phi2",
+          "-(chi**2*lambdaChi5 + g5*phi1**2 + g5*phi2**2 + 2*mChi2)/2"
+        ]
+      ],
+      "convention": "P=-(D^2+E)=-Box*I3+H",
+      "free_b1": [
+        [
+          "(R - 6*mPhi2)/6",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "(R - 6*mPhi2)/6",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "(R - 6*mChi2)/6"
+        ]
+      ],
+      "name": "laplace_type_sign_is_E_minus_H_with_correct_free_scalar_limit",
+      "ok": true
+    },
+    {
+      "Omega_AB": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "bundle_rank": 3,
+      "connection": "D_A=nabla_A*I3",
+      "name": "cartesian_scalar_bundle_connection_and_curvature_vanish",
+      "ok": true,
+      "reason": "neutral spacetime scalars with flat target-space kinetic metric"
+    },
+    {
+      "covariance_rule": "H(S*varphi)=S*H(varphi)*S^T",
+      "exact_test_rotation": {
+        "cos": "3/5",
+        "sin": "4/5"
+      },
+      "name": "global_u1_O2_covariance_of_the_hessian",
+      "ok": true
+    },
+    {
+      "identity": "H*J*varphi=J*grad(V)",
+      "name": "off_shell_global_u1_differential_identity",
+      "ok": true,
+      "residual": [
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ]
+    },
+    {
+      "covariance_rule": "H(phi1,phi2,-chi)=Z*H(phi1,phi2,chi)*Z",
+      "name": "chi_Z2_covariance_of_the_hessian",
+      "ok": true
+    },
+    {
+      "aligned_hessian": [
+        [
+          "(chi**2*g5 + 3*lambdaPhi5*rho**2 + 2*mPhi2)/2",
+          "0",
+          "chi*g5*rho"
+        ],
+        [
+          "0",
+          "(chi**2*g5 + lambdaPhi5*rho**2 + 2*mPhi2)/2",
+          "0"
+        ],
+        [
+          "chi*g5*rho",
+          "0",
+          "(chi**2*lambdaChi5 + g5*rho**2 + 2*mChi2)/2"
+        ]
+      ],
+      "chart_domain": "rho>0; Cartesian chart remains authoritative at rho=0",
+      "name": "phase_aligned_hessian_matches_radial_tangent_chi_projection",
+      "ok": true
+    },
+    {
+      "A_A": "J*d_A(Theta)",
+      "Omega_AB": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "generator": [
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "name": "phase_aligned_bundle_connection_is_pure_gauge_with_zero_curvature",
+      "ok": true
+    },
+    {
+      "A_t": [
+        [
+          "0",
+          "-mu",
+          "0"
+        ],
+        [
+          "mu",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "first_derivative_coefficient": [
+        [
+          "0",
+          "2*mu",
+          "0"
+        ],
+        [
+          "-2*mu",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "limitation": "basis/Wick signs are conventional; invariant mixing magnitude is 2*mu",
+      "name": "finite_charge_local_projection_recovers_required_derivative_mixing",
+      "ok": true,
+      "operator_expansion": "-(partial+A)^2 contains -2*A^A*partial_A"
+    },
+    {
+      "name": "trace_H_matches_the_U1_invariant_expression",
+      "ok": true,
+      "trace_H_r2_form": "chi**2*(g5 + lambdaChi5/2) + mChi2 + 2*mPhi2 + (g5/2 + 2*lambdaPhi5)*(phi1**2 + phi2**2)",
+      "trace_H_s_form": "2*mPhi2+mChi2+(4*lambdaPhi5+g5)*s+(g5+lambdaChi5/2)*chi^2"
+    },
+    {
+      "name": "trace_H_squared_matches_direct_and_aligned_invariant_derivations",
+      "off_diagonal_portal_contribution": "2*g5^2*r2*chi^2",
+      "ok": true,
+      "trace_H_squared_s_form": "chi2_invariant**2*(g5**2/2 + lambdaChi5**2/4) + chi2_invariant*g5*s_invariant*(4*g5 + lambdaChi5 + 4*lambdaPhi5) + chi2_invariant*(2*g5*mPhi2 + lambdaChi5*mChi2) + mChi2**2 + 2*mPhi2**2 + s_invariant**2*(g5**2 + 10*lambdaPhi5**2) + s_invariant*(2*g5*mChi2 + 8*lambdaPhi5*mPhi2)"
+    },
+    {
+      "indexing": "DeWitt b0,b1,b2 = heat-kernel a0,a2,a4",
+      "name": "rank_three_b0_b1_b2_trace_map_uses_E_minus_H_and_zero_Omega",
+      "ok": true,
+      "trace_b0": "3",
+      "trace_b1": "R/2 - chi**2*g5 - chi**2*lambdaChi5/2 - g5*phi1**2/2 - g5*phi2**2/2 - 2*lambdaPhi5*phi1**2 - 2*lambdaPhi5*phi2**2 - mChi2 - 2*mPhi2",
+      "trace_b2": "BoxR/10 - BoxTrH/6 + R**2/24 - R*(2*chi**2*g5 + chi**2*lambdaChi5 + g5*phi1**2 + g5*phi2**2 + 4*lambdaPhi5*phi1**2 + 4*lambdaPhi5*phi2**2 + 2*mChi2 + 4*mPhi2)/12 - Ricci2/60 + Riemann2/60 + (2*chi**4*g5**2 + chi**4*lambdaChi5**2 + 8*chi**2*g5**2*phi1**2 + 8*chi**2*g5**2*phi2**2 + 2*chi**2*g5*lambdaChi5*phi1**2 + 2*chi**2*g5*lambdaChi5*phi2**2 + 8*chi**2*g5*lambdaPhi5*phi1**2 + 8*chi**2*g5*lambdaPhi5*phi2**2 + 8*chi**2*g5*mPhi2 + 4*chi**2*lambdaChi5*mChi2 + g5**2*phi1**4 + 2*g5**2*phi1**2*phi2**2 + g5**2*phi2**4 + 4*g5*mChi2*phi1**2 + 4*g5*mChi2*phi2**2 + 10*lambdaPhi5**2*phi1**4 + 20*lambdaPhi5**2*phi1**2*phi2**2 + 10*lambdaPhi5**2*phi2**4 + 16*lambdaPhi5*mPhi2*phi1**2 + 16*lambdaPhi5*mPhi2*phi2**2 + 4*mChi2**2 + 8*mPhi2**2)/8"
+    },
+    {
+      "integrated_counterterm_structures": [
+        "1",
+        "R",
+        "R*chi^2",
+        "R*s",
+        "R^2",
+        "R_AB R^AB",
+        "R_ABCD R^ABCD",
+        "chi^2",
+        "chi^4",
+        "s",
+        "s*chi^2",
+        "s^2"
+      ],
+      "name": "scalar_heat_kernel_induces_the_complete_registered_bulk_basis_through_b2",
+      "normalization_status": "NOT_FIXED",
+      "ok": true,
+      "scope": "scalar one-loop proper-time divergence through b2",
+      "unknown_monomials": []
+    },
+    {
+      "expression": "-BoxChi2*Lambda*g5/6 - BoxChi2*Lambda*lambdaChi5/12 + BoxR*Lambda/10 - BoxS*Lambda*g5/6 - 2*BoxS*Lambda*lambdaPhi5/3",
+      "independent_wavefunction_divergence_through_b2": false,
+      "integrated_boundaryless_falloff_disposition": "may be removed only as complete total derivatives",
+      "local_terms": [
+        "Box(R)",
+        "Box(chi^2)",
+        "Box(s)"
+      ],
+      "name": "local_total_derivatives_are_retained_until_boundary_assumptions_are_applied",
+      "ok": true
+    },
+    {
+      "counterterm_ledger": [
+        {
+          "coefficient_dimension": 5,
+          "operator": "1",
+          "operator_dimension": 0
+        },
+        {
+          "coefficient_dimension": 2,
+          "operator": "s",
+          "operator_dimension": 3
+        },
+        {
+          "coefficient_dimension": 2,
+          "operator": "chi^2",
+          "operator_dimension": 3
+        },
+        {
+          "coefficient_dimension": -1,
+          "operator": "s^2",
+          "operator_dimension": 6
+        },
+        {
+          "coefficient_dimension": -1,
+          "operator": "s*chi^2",
+          "operator_dimension": 6
+        },
+        {
+          "coefficient_dimension": -1,
+          "operator": "chi^4",
+          "operator_dimension": 6
+        },
+        {
+          "coefficient_dimension": 3,
+          "operator": "R",
+          "operator_dimension": 2
+        },
+        {
+          "coefficient_dimension": 0,
+          "operator": "R*s",
+          "operator_dimension": 5
+        },
+        {
+          "coefficient_dimension": 0,
+          "operator": "R*chi^2",
+          "operator_dimension": 5
+        },
+        {
+          "coefficient_dimension": 1,
+          "operator": "R^2",
+          "operator_dimension": 4
+        },
+        {
+          "coefficient_dimension": 1,
+          "operator": "R_AB R^AB",
+          "operator_dimension": 4
+        },
+        {
+          "coefficient_dimension": 1,
+          "operator": "R_ABCD R^ABCD",
+          "operator_dimension": 4
+        },
+        {
+          "coefficient_dimension": 0,
+          "operator": "Box(s)",
+          "operator_dimension": 5
+        },
+        {
+          "coefficient_dimension": 0,
+          "operator": "Box(chi^2)",
+          "operator_dimension": 5
+        },
+        {
+          "coefficient_dimension": 1,
+          "operator": "Box(R)",
+          "operator_dimension": 4
+        }
+      ],
+      "cutoff_terms": [
+        "Lambda^5*b0",
+        "Lambda^3*b1",
+        "Lambda*b2"
+      ],
+      "field_dimensions": {
+        "chi": "3/2",
+        "phi1": "3/2",
+        "phi2": "3/2"
+      },
+      "name": "five_dimensional_mass_dimensions_close_for_operator_traces_and_counterterms",
+      "ok": true,
+      "operator_dimensions": {
+        "E": 2,
+        "H": 2,
+        "b0": 0,
+        "b1": 2,
+        "b2": 4
+      }
+    },
+    {
+      "free_hessian": [
+        [
+          "mPhi2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "mPhi2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "mChi2"
+        ]
+      ],
+      "name": "zero_portal_zero_Phi_zero_chi_and_free_nested_controls",
+      "ok": true,
+      "zero_Phi": "O2 condensate block is degenerate",
+      "zero_chi": "chi mixing entries vanish",
+      "zero_portal": "Phi and chi blocks decouple"
+    },
+    {
+      "mutations": [
+        {
+          "algebraic_witness": "2*mPhi2",
+          "name": "use_E_plus_H",
+          "rejected": true
+        },
+        {
+          "algebraic_witness": "2*chi**2*g5**2*(phi1**2 + phi2**2)",
+          "name": "omit_portal_off_diagonal_entries",
+          "rejected": true
+        },
+        {
+          "algebraic_witness": "TrOmega2/12",
+          "name": "declare_nonzero_cartesian_bundle_curvature",
+          "rejected": true
+        },
+        {
+          "algebraic_witness": [
+            [
+              "0",
+              "2*mu",
+              "0"
+            ],
+            [
+              "-2*mu",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "name": "omit_phase_aligned_connection",
+          "rejected": true
+        },
+        {
+          "algebraic_witness": "R*s_invariant",
+          "name": "omit_R_s_counterterm",
+          "rejected": true
+        },
+        {
+          "algebraic_witness": "R*chi2_invariant",
+          "name": "omit_R_chi_squared_counterterm",
+          "rejected": true
+        },
+        {
+          "algebraic_witness": [
+            [
+              "(chi**2*g5 + lambdaPhi5*rho**2 + 2*mPhi2)/2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "(chi**2*g5 + lambdaPhi5*rho**2 + 2*mPhi2)/2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "name": "impose_background_equation_inside_off_shell_hessian",
+          "rejected": true
+        }
+      ],
+      "name": "all_registered_operator_and_counterterm_mutations_are_rejected",
+      "ok": true
+    },
+    {
+      "action_path": "Theory\\Gates\\TOP-X4\\TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md",
+      "name": "frozen_action_parameters_and_dimensions_are_present_in_owning_ledger",
+      "ok": true
+    },
+    {
+      "inventory": {
+        "counterterm_normalization_conditions": {
+          "status": "NOT_COMPLETED"
+        },
+        "covariant_scalar_chi_matrix_second_variation": {
+          "scope": "rank-three scalar block before ansatz; no metric fluctuations",
+          "status": "COMPLETED_FIXED_METRIC_OFF_SHELL"
+        },
+        "curved_finite_charge_graviton_and_ghost_operators": {
+          "status": "NOT_COMPLETED"
+        },
+        "dirac_hadamard_two_point_function": {
+          "status": "NOT_COMPLETED"
+        },
+        "parity_odd_phase_and_quantized_counterterms": {
+          "status": "NOT_COMPLETED"
+        },
+        "renormalized_state_dependent_stress": {
+          "status": "NOT_COMPUTED"
+        },
+        "scalar_matrix_hadamard_state": {
+          "status": "NOT_COMPLETED"
+        }
+      },
+      "name": "completion_inventory_advances_only_the_fixed_metric_scalar_operator_line",
+      "ok": true
+    },
+    {
+      "current_completed_independent_reports": 0,
+      "name": "rule9_three_way_clearance_remains_open",
+      "ok": true,
+      "prior_rule9": {
+        "completed_independent_reports": 0,
+        "effect": "no reviewer-consensus or gate-promotion claim",
+        "scope": "this Hadamard/subtraction readiness checkpoint",
+        "status": "THREE_WAY_CLEARANCE_NOT_MET"
+      }
+    },
+    {
+      "downstream_actions": {
+        "advance_to_a4": false,
+        "advance_to_ultra": false,
+        "determinant_or_mode_sum": false,
+        "fixed_charge_reduction": false,
+        "gate_or_publication_promotion": false,
+        "homogeneous_reduction": false,
+        "physical_hessian": false,
+        "renormalized_stress": false,
+        "semiclassical_background": false,
+        "state_construction": false
+      },
+      "finite_charge_operator_script_imported": false,
+      "forbidden_source_tokens": [],
+      "name": "observational_target_and_downstream_action_firewalls",
+      "ok": true
+    }
+  ],
+  "completion_inventory": {
+    "counterterm_normalization_conditions": {
+      "status": "NOT_COMPLETED"
+    },
+    "covariant_scalar_chi_matrix_second_variation": {
+      "scope": "rank-three scalar block before ansatz; no metric fluctuations",
+      "status": "COMPLETED_FIXED_METRIC_OFF_SHELL"
+    },
+    "curved_finite_charge_graviton_and_ghost_operators": {
+      "status": "NOT_COMPLETED"
+    },
+    "dirac_hadamard_two_point_function": {
+      "status": "NOT_COMPLETED"
+    },
+    "parity_odd_phase_and_quantized_counterterms": {
+      "status": "NOT_COMPLETED"
+    },
+    "renormalized_state_dependent_stress": {
+      "status": "NOT_COMPUTED"
+    },
+    "scalar_matrix_hadamard_state": {
+      "status": "NOT_COMPLETED"
+    }
+  },
+  "counterterm_map": {
+    "integrated_bulk_structures_through_b2": [
+      "1",
+      "R",
+      "R*chi^2",
+      "R*s",
+      "R^2",
+      "R_AB R^AB",
+      "R_ABCD R^ABCD",
+      "chi^2",
+      "chi^4",
+      "s",
+      "s*chi^2",
+      "s^2"
+    ],
+    "local_total_derivatives": [
+      "Box(R)",
+      "Box(chi^2)",
+      "Box(s)"
+    ],
+    "nonminimal_terms_new_relative_to_tree_scalar_action": [
+      "R*s",
+      "R*chi^2"
+    ],
+    "normalization_status": "NOT_FIXED",
+    "scope_limit": "not the complete higher-order, higher-loop, graviton, spinor, or Wilsonian D5 EFT counterterm basis"
+  },
+  "counterterm_normalizations": "NOT_FIXED",
+  "derived_claims": [],
+  "determinant": "NOT_COMPUTED",
+  "explicit_nonclaims": [
+    "no homogeneous or fixed-charge background reduction",
+    "no scalar or spinor Hadamard state",
+    "no determinant or mode sum",
+    "no renormalized stress tensor",
+    "no curved graviton determinant",
+    "no anomaly clearance",
+    "no counterterm normalization",
+    "no self-consistent semiclassical background",
+    "no physical Hessian or radion mass",
+    "no A4, Ultra, architecture, gate or publication change"
+  ],
+  "gate_effect": "NONE",
+  "heat_kernel_traces": {
+    "proper_time_cutoff_powers": [
+      "Lambda^5",
+      "Lambda^3",
+      "Lambda"
+    ],
+    "trace_H": "chi**2*(g5 + lambdaChi5/2) + mChi2 + 2*mPhi2 + (g5/2 + 2*lambdaPhi5)*(phi1**2 + phi2**2)",
+    "trace_H_s_form": "2*mPhi2+mChi2+(4*lambdaPhi5+g5)*s+(g5+lambdaChi5/2)*chi^2",
+    "trace_H_squared_s_form": "chi2_invariant**2*(g5**2/2 + lambdaChi5**2/4) + chi2_invariant*g5*s_invariant*(4*g5 + lambdaChi5 + 4*lambdaPhi5) + chi2_invariant*(2*g5*mPhi2 + lambdaChi5*mChi2) + mChi2**2 + 2*mPhi2**2 + s_invariant**2*(g5**2 + 10*lambdaPhi5**2) + s_invariant*(2*g5*mChi2 + 8*lambdaPhi5*mPhi2)",
+    "trace_b0": "3",
+    "trace_b1": "R/2 - chi**2*g5 - chi**2*lambdaChi5/2 - g5*phi1**2/2 - g5*phi2**2/2 - 2*lambdaPhi5*phi1**2 - 2*lambdaPhi5*phi2**2 - mChi2 - 2*mPhi2",
+    "trace_b2": "BoxR/10 - BoxTrH/6 + R**2/24 - R*(2*chi**2*g5 + chi**2*lambdaChi5 + g5*phi1**2 + g5*phi2**2 + 4*lambdaPhi5*phi1**2 + 4*lambdaPhi5*phi2**2 + 2*mChi2 + 4*mPhi2)/12 - Ricci2/60 + Riemann2/60 + (2*chi**4*g5**2 + chi**4*lambdaChi5**2 + 8*chi**2*g5**2*phi1**2 + 8*chi**2*g5**2*phi2**2 + 2*chi**2*g5*lambdaChi5*phi1**2 + 2*chi**2*g5*lambdaChi5*phi2**2 + 8*chi**2*g5*lambdaPhi5*phi1**2 + 8*chi**2*g5*lambdaPhi5*phi2**2 + 8*chi**2*g5*mPhi2 + 4*chi**2*lambdaChi5*mChi2 + g5**2*phi1**4 + 2*g5**2*phi1**2*phi2**2 + g5**2*phi2**4 + 4*g5*mChi2*phi1**2 + 4*g5*mChi2*phi2**2 + 10*lambdaPhi5**2*phi1**4 + 20*lambdaPhi5**2*phi1**2*phi2**2 + 10*lambdaPhi5**2*phi2**4 + 16*lambdaPhi5*mPhi2*phi1**2 + 16*lambdaPhi5*mPhi2*phi2**2 + 4*mChi2**2 + 8*mPhi2**2)/8"
+  },
+  "hold_reasons": [
+    "no scalar matrix Hadamard state or two-point function is constructed",
+    "no five-dimensional Dirac Hadamard state is constructed",
+    "no gauge-fixed curved graviton Hessian or ghost/Jacobian operator set is derived",
+    "the parity-odd determinant phase, global anomaly and quantized counterterms remain unaudited",
+    "renormalized finite coefficients and normalization conditions are not fixed",
+    "no determinant, mode sum, state-dependent stress, semiclassical solution or physical Hessian is computed"
+  ],
+  "matter_counterterm_structures": "ENUMERATED_THROUGH_B2",
+  "next_required_calculation": "construct and independently audit the scalar matrix Hadamard parametrix/state using this off-shell operator; keep spinor, graviton/ghost, parity-phase and counterterm normalization as separate receipted prerequisites",
+  "off_shell_operator": {
+    "E": "-H",
+    "H": [
+      [
+        "(chi**2*g5 + 3*lambdaPhi5*phi1**2 + lambdaPhi5*phi2**2 + 2*mPhi2)/2",
+        "lambdaPhi5*phi1*phi2",
+        "chi*g5*phi1"
+      ],
+      [
+        "lambdaPhi5*phi1*phi2",
+        "(chi**2*g5 + lambdaPhi5*phi1**2 + 3*lambdaPhi5*phi2**2 + 2*mPhi2)/2",
+        "chi*g5*phi2"
+      ],
+      [
+        "chi*g5*phi1",
+        "chi*g5*phi2",
+        "(chi**2*lambdaChi5 + g5*phi1**2 + g5*phi2**2 + 2*mChi2)/2"
+      ]
+    ],
+    "background_equation_used": false,
+    "cartesian_Omega_AB": "0",
+    "cartesian_connection": "D_A=nabla_A*I3",
+    "euclidean_quadratic_operator": "P_sc=-Box*I3+H",
+    "laplace_type_convention": "P=-(D^2+E)",
+    "scope": "arbitrary smooth fixed five-dimensional metric and scalar background"
+  },
+  "phase_aligned_gauge": {
+    "H_aligned": [
+      [
+        "(chi**2*g5 + 3*lambdaPhi5*rho**2 + 2*mPhi2)/2",
+        "0",
+        "chi*g5*rho"
+      ],
+      [
+        "0",
+        "(chi**2*g5 + lambdaPhi5*rho**2 + 2*mPhi2)/2",
+        "0"
+      ],
+      [
+        "chi*g5*rho",
+        "0",
+        "(chi**2*lambdaChi5 + g5*rho**2 + 2*mChi2)/2"
+      ]
+    ],
+    "Omega_AB": "0",
+    "connection": "A_A=J*d_A(Theta)",
+    "domain": "rho>0 smooth patch",
+    "endomorphism": "E_aligned=-S^T*H*S",
+    "finite_charge_projection": "A_t=mu*J gives first-derivative mixing of invariant magnitude 2*mu",
+    "rho_zero_boundary": "use regular Cartesian chart"
+  },
+  "physics_pass": false,
+  "primary_source_basis": [
+    {
+      "id": "arXiv:hep-th/0306138",
+      "scope": "quadratic background-field expansion; unique Laplace-type connection/endomorphism; matrix a0,a2,a4 coefficients"
+    }
+  ],
+  "renormalized_stress": "NOT_COMPUTED",
+  "route": "TOP-X4_KK-001",
+  "rule9_review": {
+    "completed_independent_reports": 0,
+    "effect": "no reviewer-consensus or gate-promotion claim",
+    "scope": "this covariant scalar-matrix checkpoint",
+    "status": "THREE_WAY_CLEARANCE_NOT_MET"
+  },
+  "scalar_matrix_hadamard_state": "NOT_CONSTRUCTED",
+  "scalar_matrix_operator": "DERIVED_FIXED_METRIC_OFF_SHELL",
+  "schema": "ITSM_TOPX4_S2F3_COVARIANT_SCALAR_MATRIX_v1",
+  "source_sha256": "393584ccd00a4ea79ba1c2c8228cbca78bb925fade462b8b0740fe1c64e42f07",
+  "status": "PASS_COVARIANT_SCALAR_CHI_MATRIX_OPERATOR_HOLD_STATES_GRAVITY_PARITY_AND_STRESS"
+}

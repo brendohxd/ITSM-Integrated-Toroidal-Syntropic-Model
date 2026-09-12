@@ -1,5 +1,93 @@
 # ITSM Changelog & Archive History
 
+## TOP-X4 scalar-matrix Hadamard parametrix checkpoint (2026-09-12)
+
+- Added a preregistered local D5 scalar-matrix Hadamard-parametrix contract,
+  deterministic executable and receipt for the next single Plan 11 gate.
+- The bounded status is
+  `PASS_SCALAR_MATRIX_HADAMARD_PARAMETRIX_HOLD_GLOBAL_STATE_AND_STRESS`;
+  all 22/22 checks pass. The checkpoint verifies local `U_0`--`U_2`
+  coincidence/transport controls, the frozen `E=-H` sign, matrix bundle
+  curvature terms, phase-aligned derivative mixing and the registered
+  mutation/firewall controls.
+- This is a local parametrix result, not a global Hadamard state. The smooth
+  state term, positivity, wavefront condition, counterterm normalizations,
+  determinant, renormalized stress, physical Hessian, gravity/ghost and
+  parity sectors remain open. `physics_pass=false`, `gate_effect=NONE`; no
+  A4, Ultra, Rule-9 or downstream promotion follows.
+
+## TOP-X4 covariant scalar-matrix checkpoint (2026-09-12)
+
+- Added a preregistered fixed-metric off-shell scalar contract and a
+  deterministic 25-check executable for the canonical
+  `(sqrt(2) Re Phi, sqrt(2) Im Phi, chi)` fluctuation bundle.
+- The bounded status is
+  `PASS_COVARIANT_SCALAR_CHI_MATRIX_OPERATOR_HOLD_STATES_GRAVITY_PARITY_AND_STRESS`.
+  It derives `E=-H`, zero Cartesian bundle curvature, the pure-gauge
+  phase-aligned connection and the scalar counterterm structures through
+  `b_2`; all seven bad mutations are rejected and three clean runs are
+  byte-identical.
+- The new `R*s` and `R*chi^2` structures do not fix renormalized
+  coefficients. Scalar/spinor Hadamard states, graviton/ghost and parity
+  sectors, determinant, stress and physical Hessian remain open.
+  `physics_pass=false`, `gate_effect=NONE`; no A4, Ultra or Rule-9 promotion
+  follows.
+
+## TOP-X4 D5 Hadamard/subtraction readiness (2026-09-12)
+
+- Added a preregistered contract and deterministic 20-check executable for the
+  universal five-dimensional scalar Hadamard singularity, general matrix
+  Laplace-type heat-kernel coefficients, proper-time divergence powers,
+  counterterm dimensions and current field-by-field completion inventory.
+- The binding status is
+  `PASS_5D_HADAMARD_COUNTERTERM_SCAFFOLD_HOLD_FULL_OPERATORS_STATE_AND_STRESS`;
+  all six registered scope mutations are rejected, and three clean replays
+  produce byte-identical JSON.
+- The result is a scaffold pass with `hadamard_stress_ready=false`,
+  `physics_pass=false` and `gate_effect=NONE`. The covariant scalar/`chi`
+  matrix second variation, scalar and spinor Hadamard states, curved
+  graviton/ghost operators, parity-odd phase and counterterm normalization
+  remain incomplete. No stress, Hessian, A4, Ultra or Rule-9 promotion follows.
+
+## TOP-X4 exact scalar/Dirac transport retry (2026-09-12)
+
+- Preserved the prior `FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT` and its
+  three low-mode fourth-order WKB failures as negative authority inputs.
+- Added a separately frozen 18-check retry using positive-Hamiltonian scalar
+  data at the original `t=0` surface, exact charged/real-scalar symplectic
+  transport, and a distinct first-order Dirac superadiabatic projector with
+  exact unitary transport.
+- The binding status is
+  `PASS_EXACT_SCALAR_DIRAC_TRANSPORT_HOLD_HADAMARD_STRESS_AND_HESSIAN`.
+  Maximum scalar symplectic residual is `2.694307068596595e-9`, maximum Dirac
+  inner-product residual is `7.059952142327541e-10`, and the 801/401-point
+  envelope difference is `4.4959119760434874e-10`. Three final clean CLI
+  replays produced byte-identical JSON; a superseded pre-finalization artifact
+  showed only sub-`4.2e-12` residual drift and changed no decision.
+- The low-mode exact-transport result does not retroactively pass the failed
+  WKB state. Neither finite-order state establishes the Hadamard condition;
+  no covariant 5D subtraction, stress, semiclassical background, Hessian,
+  parity/anomaly clearance, A4, Ultra or Rule-9 promotion follows.
+
+## TOP-X4 dynamic state/subtraction checkpoint (2026-09-12)
+
+- Added a preregistered contract and deterministic executable for the exact
+  evolving charged-scalar mode system on the A1 background, scalar
+  order-0/2/4 adiabatic diagnostics, and the decompactified-reference
+  subtraction declaration.
+- The binding run returned `FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT` with
+  `11/12` checks. The exact operator, constant-background regression,
+  charge/mutation controls, Wronskian, resolution witness and UV order
+  hierarchy passed; three low-mode fourth-order WKB iterates became
+  non-positive near the initial hypersurface.
+- Two final executions produced byte-identical JSON. The UV maximum relative
+  fourth-order correction is `4.1338354829389994e-6`, but it does not override
+  the preregistered all-mode failure.
+- Retained `physics_pass=false`, `gate_effect=NONE`, and no advance to
+  renormalized stress, A4 or Ultra. Coupled scalar transport, the neutral
+  Dirac state, covariant five-dimensional subtraction/counterterms, physical
+  Hessian, parity/anomaly audit and Rule-9 clearance remain open.
+
 ## Public Papers mobile layout repair (2026-09-12)
 
 - Changed the Papers rows to a single-column stack below 760px so the paper

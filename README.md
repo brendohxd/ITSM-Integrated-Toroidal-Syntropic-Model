@@ -34,12 +34,12 @@ Every material claim is classified as **Derived**, **Conditional**, **Open**, or
 | **Core identity** | `CANONICAL; IDENTITY HELD` | Active finite-density condensate, topology, preferred frame and force/reservoir sectors remain distinct; identity-first governance is unchanged. |
 | **MAT-001** | **`BLOCKED`** | M2/M3-U1 fixed-background controls are bounded reductions only; `K_Q` remains `NOT_DERIVED` and `V` remains `NOT_COMPUTED`. |
 | **UVIR-003** | **`IN_PROGRESS`** | Tier-1 closure remains downstream of the MAT matching blocker; no physical cutoff or complete constrained amplitude is promoted. |
-| **TOP-X4 / KK-001** | **`S2F3 DYNAMIC DETERMINANT HOLD`** | Plan 11 static determinant is 12/12, entry gate 9/9 and finite-charge operator/variation checkpoint 16/16; evolving-state backreaction, parity/anomaly data and the physical Hessian remain open. |
+| **TOP-X4 / KK-001** | **`LOCAL PARAMETRIX PASS; GLOBAL STATE/STRESS HOLD`** | The branchwise WKB checkpoint remains failed 11/12, exact finite-order transport passed 18/18, the D5 scaffold passed 20/20, and the fixed-metric scalar/`chi` operator passed 25/25. The local scalar-matrix Hadamard-parametrix checkpoint now passes 22/22 through `U_2`; global states, normalization, graviton/ghosts, parity phase, determinant, stress and physical Hessian remain incomplete. |
 | **TOP-001 / CBR-002** | **`HOLD`** | P2/CBR-001 has a portable local-repair candidate and a narrowed instantaneous-closure result; independent-role, sensitivity and noncubic checks remain required. |
 | **RES-001** | **`OPEN_SCAFFOLD_ONLY`** | The corrected script is a single-mode GKSL steady-state control; the advertised two-bath detailed-balance/Spohn derivation, microscopic reservoir and `Q^\mu` remain absent. |
 | **VOR-001** | **`OPEN_SCAFFOLD_ONLY`** | Phase/winding normalization is a frozen calculation specification only; no physical resonance or gate closure follows. |
 | **Papers / publication** | **`PUBLICATION HOLD`** | Rebuilt P2 materials are retained as a bounded negative-result candidate, not as publication clearance. |
-| **Rule 9 evidence** | **`THREE-WAY CLEARANCE NOT MET`** | The static checkpoint had only Role A completed; the finite-charge operator checkpoint has no completed independent reviewer set. No three-way consensus is claimed. |
+| **Rule 9 evidence** | **`THREE-WAY CLEARANCE NOT MET`** | The scalar-matrix checkpoint has no completed independent reviewer set. No three-way consensus is claimed. |
 
 Script `PASS_*` labels in this table describe only their bounded executable
 scope. They do not constitute a physics-gate pass, downstream promotion or
@@ -148,6 +148,9 @@ authoritative path.
 - [TOP-X4 Plan 11 Static Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_STATIC_CHECKPOINT_RECEIPT_2026-09-09.md)
 - [TOP-X4 Plan 11 Finite-Charge Entry Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_ENTRY_GATE_RECEIPT_2026-09-09.md)
 - [TOP-X4 Plan 11 Finite-Charge Operator Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_OPERATOR_CHECKPOINT_2026-09-12.md)
+- [TOP-X4 Plan 11 Dynamic State/Subtraction Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT_2026-09-12.md)
+- [TOP-X4 Plan 11 Exact-Transport Retry Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_EXACT_TRANSPORT_RETRY_CHECKPOINT_2026-09-12.md)
+- [TOP-X4 Plan 11 Scalar-Matrix Hadamard Parametrix Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_SCALAR_MATRIX_HADAMARD_PARAMETRIX_CHECKPOINT_2026-09-12.md)
 - [MAT Tier-1 R1-R5 Remediation Addendum](Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md)
 - [Core-Recovery Manuscript Guide](Manuscript/CoreRecovery/README.md)
 - [Selective Publishing Plan](papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md)
