@@ -1,7 +1,7 @@
 # Active Research & Gate Dashboard
 
 **Canonical Authority Baseline:** `v12.0-alpha.12`  
-**Current Date:** 09 September 2026
+**Current Date:** 12 September 2026
 **Operating Policy:** Strict Fail-Closed (Rules 1, 3, 6, 7, 8, 9)
 
 ---
@@ -53,10 +53,12 @@ temporal charge and was not selected. The only frozen retry is `X4-S2F3`,
 which adds three periodic massive 5D Dirac spectators. Its 8/8 algebraic/sign
 prescreen exhibits a dimensionless stationary minimum and nonempty cutoff
 domain. Plan 11 has since completed the zero-density static parity-even
-determinant checkpoint, but the finite-charge entry gate remains held before
-the missing state-dependent determinant/stress, anomaly/counterterm and
-coupled-Hessian work. Status: `X4-S2F3 PLAN11_FINITE_CHARGE_ENTRY_HOLD`,
-`physics_pass=false`, `gate_effect=NONE`.
+determinant checkpoint and a constant-background finite-charge operator/
+fixed-charge variation checkpoint. The evolving-state determinant remains
+held before the missing Hadamard/adiabatic state, renormalized stress,
+anomaly/counterterm and coupled-Hessian work. Status:
+`X4-S2F3 PLAN11_DYNAMIC_DETERMINANT_HOLD`, `physics_pass=false`,
+`gate_effect=NONE`.
 
 Existing P2, MAT, UVIR, VOR and RES artifacts and statuses are preserved but
 their queued research and external dispatches are paused. No downstream
@@ -118,6 +120,24 @@ The registered next task is
   contract, and later JWST/Euclid/time-delay controls. None changes an upstream
   gate or justifies diverting derivation work from `MAT-001`/`UVIR-003`.
 
+### 8 September 2026 — external evidence-watch checkpoint
+
+- Five screened additions covering six primary arXiv records were integrated
+  into the Tier-1 test programme. They add a future Unite likelihood adapter
+  and host-mass systematic branches, prior-explicit nested evidence, an
+  interacting-emergent-DE control, sampled dark-siren host weighting, and an
+  LZ exothermic-DM forecast/multi-target falsification control.
+- The Unite papers were revised after the source packet. Their current v2
+  records report `3.3 sigma` MAP and `3.1 sigma` maximum-likelihood preference
+  for time-varying dark energy in the main analysis, and a `3.4` to `4.0 sigma`
+  MAP shift for the Pantheon+ subset under the host-mass replacement. These
+  values supersede the packet's earlier figures and remain distinct from the
+  papers' weak Bayesian preference.
+- No likelihood fit, nested-sampling run, dark-siren reanalysis or recoil
+  forecast was executed here. All are registered future tests, remain
+  dependency-locked, and change no ITSM gate or canonical identity. Full
+  record: `Theory/Core/ITSM_Tier1_Route_Test_Programme.md`, Section 8.3.
+
 ### 9 September 2026 — TOP-X4 Plan 11 static checkpoint and entry hold
 
 - The frozen `X4-S2F3` Plan 11 static parity-even determinant checkpoint passed
@@ -146,6 +166,46 @@ The registered next task is
   `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_STATIC_CHECKPOINT_RECEIPT_2026-09-09.md`
   and
   `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_ENTRY_GATE_RECEIPT_2026-09-09.md`.
+
+### 10 September 2026 — external evidence-watch checkpoint
+
+- Six newly screened preprints were checked against their primary arXiv
+  records and added to the Tier-1 test programme. They alter test requirements
+  only; no ITSM derivation, gate status, publication status or core identity
+  changes.
+- Bian et al. (`arXiv:2609.08536`) is the highest-priority new observational
+  SPARC/coefficient audit. Its reported `p<10^-34` is the significance of a
+  residual--gas-fraction correlation, not a direct model-rejection significance
+  for universal `a0`. Exact-sample reproduction, galaxy-level nested
+  cross-validation, nuisance/covariance treatment and matched evidence
+  comparison are required before an ITSM conclusion.
+- The strong-lens, scalar-tensor and sign-switching-history records strengthen
+  LEN/COS/PERT requirements for external convergence, action-derived
+  `G_eff`, PPN/BBN constraints, supernova-luminosity response and unretuned
+  action-level closure. The SIDM record adds initial-profile and tidal-history
+  controls to WAK/cluster comparisons. The DESI connected 4PCF record adds a
+  nonlinear-structure acceptance test after an ITSM perturbation sector exists.
+- These observational tasks remain dependency-locked and do not displace the
+  active TOP-X4 Plan 11 route. Full record:
+  `Theory/Core/ITSM_Tier1_Route_Test_Programme.md`, Section 8.4.
+
+### 12 September 2026 — finite-charge operator checkpoint
+
+- The charged-scalar constant-background operator and fixed-global-charge
+  variation checkpoint passed `16/16` exact algebra, provenance and mutation
+  checks with
+  `PASS_FINITE_CHARGE_OPERATOR_HOLD_DYNAMIC_STATE_STRESS_AND_HESSIAN`.
+- The result derives the amplitude-phase mixing, one Goldstone plus one gapped
+  amplitude branch, zero-charge factorization and fixed-charge Routhian
+  identities. Omitted-mixing and wrong-sign-Routhian mutations are rejected.
+- This is not the finite-charge determinant or a renormalized backreaction
+  calculation. The time-dependent coupled mode system, Hadamard/adiabatic
+  state and subtraction, order convergence, stress tensor, physical Hessian
+  and parity/anomaly audit remain open.
+- Rule-9 three-way clearance remains unmet; no reviewer consensus or gate
+  promotion is claimed. A4 and Ultra remain closed.
+- Authoritative receipt:
+  `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_OPERATOR_CHECKPOINT_2026-09-12.md`.
 
 ---
 ### Historical Archive: Gate Dashboard as of 2026-08-07 (provenance only)

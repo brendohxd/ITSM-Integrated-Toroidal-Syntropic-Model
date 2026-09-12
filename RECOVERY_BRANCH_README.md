@@ -13,14 +13,18 @@ operator-priority fork is `TOP-X4 / KK-001`: its frozen `X4-S2F3` Plan 11
 static parity-even determinant checkpoint passed 12/12 bounded calculation
 checks, while the finite-charge entry gate passed 9/9 policy/provenance checks
 and correctly returned
-`HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`. No A4, Ultra,
-phenomenology, publication or canonical-model revision is opened.
+`HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`. The subsequent
+finite-charge operator/fixed-charge variation checkpoint passed 16/16, but the
+evolving-state determinant, renormalized stress and physical Hessian remain
+held. No A4, Ultra, phenomenology, publication or canonical-model revision is
+opened.
 
 The current RES-001 control is a quarantined single-mode GKSL steady-state toy,
 not a two-bath detailed-balance/Spohn derivation. The P2/CBR-001 repair is a
 local reproducibility candidate on publication hold. The TOP-X4 Plan 11
-Rule-9 review is incomplete: Role A completed, while Roles B and C returned
-usage-limit errors and produced no reports.
+Rule-9 review is incomplete: the static checkpoint had only Role A completed,
+and the finite-charge operator checkpoint has no completed independent reviewer
+set.
 
 ## Start here
 

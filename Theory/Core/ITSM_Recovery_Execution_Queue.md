@@ -2,7 +2,7 @@
 
 **Branch:** `recovery/v12-core-architecture`
 **Queue opened:** 2026-08-05
-**Queue reconciled:** 2026-09-09
+**Queue reconciled:** 2026-09-12
 **Sprint goal:** preserve the UVIR-to-MAT fail-closed boundary while routing
 new derivation work through the bounded TOP-X4 / KK-001 Plan 11 decision.
 
@@ -37,6 +37,8 @@ outputs remain the evidence authority.
 | P0 | TOP-X4 original `X4-I1C` parent | **hold — unstabilized** | A2/A3 controls expose a radion runaway and no EFT hierarchy; A4 and Ultra remain closed |
 | P0 | TOP-X4 `X4-S2F3` static parity-even determinant | **completed (bounded 12/12)** | Reproduces the frozen stationary witness at zero density; `physics_pass=false`, parity-odd and finite-charge work excluded |
 | P0 | TOP-X4 `X4-S2F3` finite-charge entry | **hold (9/9 entry checks)** | `HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`; no A4 or Ultra entry |
+| P0 | TOP-X4 `X4-S2F3` finite-charge operator | **completed (bounded 16/16)** | Charged amplitude-phase operator and fixed-charge variation identities pass with two negative mutations; dynamic state/stress/Hessian and Rule-9 clearance remain open |
+| P0 | TOP-X4 `X4-S2F3` dynamic state/subtraction | **next — authorized bounded checkpoint** | Construct the coupled time-dependent mode system, declare the Hadamard/adiabatic state and subtraction terms, and test adiabatic-order convergence; stop before physical Hessian, parity/anomaly completion, A4 or Ultra |
 | P1 | Paper-suite artifact naming | **completed locally** | P1–P4 use descriptive versioned PDF names; P3/P4 remain quarantined claim-bearing scaffolds, not publication-ready papers |
 | P1 | TOP-001 3D Epstein Casimir tensor | **open scaffold** | Evaluate full 3D Epstein zeta function $Z_3(s)$ on $T^3$ and solve Raychaudhuri shear equations |
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes compared under eight hard requirements; C2 retained as calculation scaffold |

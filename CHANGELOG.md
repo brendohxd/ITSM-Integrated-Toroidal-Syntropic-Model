@@ -1,5 +1,41 @@
 # ITSM Changelog & Archive History
 
+## TOP-X4 finite-charge operator checkpoint (2026-09-12)
+
+- Added the covariant semiclassical variation and fixed-global-charge ensemble
+  contract for the frozen `X4-S2F3` Plan 11 route.
+- Added a deterministic charged-scalar operator checkpoint. Its `16/16`
+  bounded checks derive the amplitude-phase mixing, Goldstone/amplitude
+  branches, fixed-charge Routhian variations and zero-charge/neutral-fermion
+  controls, and reject omitted-mixing and wrong-sign-Routhian mutations.
+- Status is
+  `PASS_FINITE_CHARGE_OPERATOR_HOLD_DYNAMIC_STATE_STRESS_AND_HESSIAN`, with
+  `physics_pass=false`, `gate_effect=NONE` and no advance to A4 or Ultra.
+- The evolving Hadamard/adiabatic state, subtraction/order convergence,
+  renormalized state-dependent stress, coupled physical Hessian and
+  parity/anomaly audit remain open. Rule-9 three-way clearance is not met.
+- Reconciled the Tier-1 programme's stale immediate-next text with the signed
+  25 August G0 completion and registered the dynamic state/subtraction work as
+  the next bounded Plan 11 checkpoint. The newly added run command is portable
+  and contains no workstation-specific interpreter path.
+
+## External evidence-watch integration (2026-09-10)
+
+- Verified six newly screened preprints against their primary arXiv records
+  and integrated them into Section 8.4 of the Tier-1 Route Test Programme.
+- Registered Bian et al. (`arXiv:2609.08536`) as the highest-priority new
+  observational SPARC/coefficient audit while preserving the MAT/DISK
+  dependency lock. Its `p<10^-34` residual-correlation result is explicitly
+  separated from a direct rejection significance for universal `a0`.
+- Added downstream acceptance requirements from SDSS J0946+1006 strong-lens
+  cosmography, a locally viable phantom-crossing scalar-tensor competitor,
+  action-level regularity tests for sign-switching histories, initial-profile
+  controls for dark-matter-deficient satellites, and the DESI Y1 connected
+  galaxy four-point function.
+- These records change test requirements only. They do not promote an ITSM
+  gate, validate or refute the plenum, alter the canonical identity, or
+  displace TOP-X4 Plan 11.
+
 ## Recovery branch — evidence integration and documentation sync (2026-09-09)
 
 **Scope:** reviewed and packaged the working-tree changes accumulated after
@@ -116,6 +152,23 @@ not override the live fail-closed dashboard.
   artifact integrity only.
 - Added explicit supersession warnings to four legacy UVIR scattering/cutoff
   notes whose body text could otherwise be mistaken for current gate closure.
+
+## External evidence-watch integration (2026-09-08)
+
+- Verified five material additions spanning six arXiv records and integrated
+  them into Section 8.3 of the Tier-1 Route Test Programme without duplicating
+  the official LZ event record already registered in Section 8.2.
+- Registered future controls for the Unite supernova likelihood and host-mass
+  systematics, prior-explicit nested model evidence, interacting emergent dark
+  energy, sampled dark-siren host weighting/catalogue incompleteness, and the
+  exothermic-DM LZ count/sideband/multi-target forecast.
+- Rechecked the two Unite records after their 9 September v2 revisions. The
+  documentation uses the current significance values and marks the earlier
+  source-packet numbers as superseded rather than silently retaining them.
+- These are test-programme requirements only. No new likelihood, evidence,
+  siren or recoil analysis was run; no gate, manuscript, publication or
+  canonical-identity status changed, and TOP-X4 Plan 11 remains the active
+  calculation.
 
 ## Version 12.0-alpha.14 - QUARANTINED INVALID RELEASE (2026-09-01)
 

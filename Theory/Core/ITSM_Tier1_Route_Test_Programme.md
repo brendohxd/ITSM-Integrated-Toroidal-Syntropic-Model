@@ -390,16 +390,19 @@ and stochastic polarization as separate likelihood blocks.
 
 ### 8.2 Evidence-watch benchmarks integrated on 2026-09-06
 
-Primary arXiv records were checked on 2026-09-06. These additions change test
-requirements only; they do not supply an ITSM derivation or change a gate.
+Primary arXiv records were checked on 2026-09-06. A duplicate six-record
+source packet was reconciled against the same current records on 2026-09-12;
+the existing rows were enriched in place and no duplicate tranche was added.
+These additions change test requirements only; they do not supply an ITSM
+derivation or change a gate.
 
 | Record | Verified scope | Programme consequence |
 |---|---|---|
-| [LUX-ZEPLIN Collaboration, arXiv:2609.02823](https://arxiv.org/abs/2609.02823) | Official collaboration preprint: one event consistent with a `248 +/- 23_stat +/- 23_sys keV` nuclear recoil in `2.84 tonne-year`, with `2.6 sigma` global and `3.4 sigma` maximum local background tension; explicitly not a dark-matter detection | Add a falsification clause for the **pure particle-dark-matter replacement** version only. Derive any plenum-excitation recoil spectrum and target scaling, or predeclare that a statistically secure cross-experiment particle spectrum falsifies that pure version; one event does not do so |
-| [Wang, Yu & Wu, arXiv:2609.03062](https://arxiv.org/abs/2609.03062) | For `Q=beta H rho_de`, the interacting CPL result has `beta=-0.35^{+0.77}_{-0.62}` and improves the matched noninteracting CPL best fit by only `Delta chi2_int=-0.03`; its AIC is higher than the noninteracting CPL result. Restricted trajectories give model-dependent signs and growth | Strengthen the COS/PERT nested-null contract: derive `Q^mu` and `w_p(z)` from one action, evolve perturbations, and compare distances plus growth. DESI cannot presently be cited as evidence for the Syntropic Source Vector |
-| [Lagos & Wolf, arXiv:2609.04112](https://arxiv.org/abs/2609.04112) | A particular nonminimally coupled scalar-tensor model predicts `c_M=-0.5+/-0.2`, `Xi_0=0.88+/-0.05`, `n=3.2+/-0.3`, consistent with current GWTC-5 siren constraints within about `1 sigma`; common parametrized fits can impose stability-prior tension | Add a distinct **GW-FRICTION** contract: derive `alpha_M(z)` and `D_L^GW/D_L^EM` from the surviving action before mapping to phenomenological parameters. Do not identify its fitted `n` with an ITSM exchange exponent or merge this test with GW speed/dispersion |
+| [LUX-ZEPLIN Collaboration, arXiv:2609.02823](https://arxiv.org/abs/2609.02823); [HEPData 182472 v1](https://doi.org/10.17182/hepdata.182472.v1) | Official collaboration preprint with a linked public data release: one event consistent with a `248 +/- 23_stat +/- 23_sys keV` nuclear recoil in `2.84 tonne-year`, with `2.6 sigma` global and `3.4 sigma` maximum local background tension; explicitly not a dark-matter detection | Add a falsification clause for the **pure particle-dark-matter replacement** version only. Derive any plenum-excitation recoil spectrum and target scaling, or predeclare that a statistically secure cross-experiment particle spectrum falsifies that pure version; one event does not do so |
+| [Wang, Yu & Wu, arXiv:2609.03062](https://arxiv.org/abs/2609.03062) | For `Q=beta H rho_de`, using Planck/ACT CMB, DESI DR2 and DES-Dovekie with perturbations and a PPF treatment through `w=-1`, the interacting CPL result has `beta=-0.35^{+0.77}_{-0.62}` and improves the matched noninteracting CPL best fit by only `Delta chi2_int=-0.03`; its AIC is higher than the noninteracting CPL result. Restricted trajectories give model-dependent signs and growth | Strengthen the COS/PERT nested-null contract: derive `Q^mu` and `w_p(z)` from one action, evolve perturbations, and compare distances, `f sigma8(z)`, lensing and clustering. Report `Delta chi2`, AIC/BIC and Bayesian evidence against `Q^mu=0`. DESI cannot presently be cited as evidence for the Syntropic Source Vector |
+| [Lagos & Wolf, arXiv:2609.04112](https://arxiv.org/abs/2609.04112) | A particular nonminimally coupled scalar-tensor model predicts `c_M=-0.5+/-0.2`, `Xi_0=0.88+/-0.05`, `n=3.2+/-0.3`, consistent with current GWTC-5 siren constraints within about `1 sigma`. Common `c_M` and CPL fits place the same physical model in `2.2 sigma` and `3.6 sigma` tension respectively, partly because stability cuts impose strong implicit priors | Add a distinct **GW-FRICTION** contract: derive `alpha_M(z)` and `D_L^GW/D_L^EM` from the surviving action before mapping to phenomenological parameters. Do not identify its fitted `n` with an ITSM exchange exponent or merge this test with GW speed/dispersion |
 | [Lagos et al., arXiv:2609.03537](https://arxiv.org/abs/2609.03537) | The `z=0`-calibrated Shark semi-analytic model reports UV-luminosity-function agreement through `z=17`, stellar-mass-function agreement through `z=10`, and star-formation-rate-density agreement through `z=15`, attributing high-redshift burstiness to violent disk instabilities | Remove any uniqueness inference from bright JWST galaxies. A later ITSM test must beat a bursty-LambdaCDM comparator jointly in luminosity, stellar mass, star-formation rate and scatter, using a preregistered residual observable |
-| [Euclid Collaboration, arXiv:2609.04192](https://arxiv.org/abs/2609.04192) | Simulation preparation paper compares density, mass, velocity-dispersion and excess-surface-density profiles to `5 r_500c`; low-mass `f(R)` cases differ by order `10%`, while other cases are often a few percent, with stack requirements strongly redshift dependent | Add a dependency-locked halo-profile suite `rho(r), M(<r), sigma_v(r), DeltaSigma(R)` after a viable force/lensing action exists. The quoted stack sizes are comparator-specific forecasts, not ITSM predictions |
+| [Euclid Collaboration, arXiv:2609.04192](https://arxiv.org/abs/2609.04192) | Simulation preparation paper compares density, mass, velocity-dispersion and excess-surface-density profiles to `5 r_500c`; low-mass `f(R)` cases differ by order `10%`, while other cases are often a few percent. Under simplified assumptions, detecting those comparator differences requires roughly `10^5` stacked haloes at `z=1.1` but a few thousand at `z<=0.5` | Add a dependency-locked halo-profile suite `rho(r), M(<r), sigma_v(r), DeltaSigma(R)` after a viable force/lensing action exists. Freeze ITSM's outskirts sign and estimate its own required stack; the quoted stack sizes are comparator-specific forecasts, not ITSM predictions |
 | [TDCOSMO XXIX, arXiv:2609.03089](https://arxiv.org/abs/2609.03089) | JWST/NIRSpec resolved kinematics for three time-delay lenses have `6--11%` per-bin uncertainty, about `1.2%` average correlation, and reduce integrated-dispersion uncertainty from `3.7%` to `2.4%`; no new `H_0` result is reported | Keep time-delay-lens `H_0` separate in the coefficient audit. Do not insert it into `a_0=cH_0/(2*pi)` until the ITSM lens potential, kinematic maps, time delays and line-of-sight convergence are fitted self-consistently |
 
 Immediate ordering remains upstream-first. The LZ and DESI records require
@@ -408,11 +411,61 @@ and time-delay cosmography remain dependency-locked behind a surviving
 matter/metric action. None is a reason to divert Max/Ultra work from
 `MAT-001`, `UVIR-003`, the physical pole/residue, or the independent P2 audit.
 
+### 8.3 Evidence-watch benchmarks integrated on 2026-09-08
+
+Primary arXiv records first posted on 2026-09-04 were rechecked on
+2026-09-12. The two Unite papers were revised on 2026-09-09, after the source
+packet was prepared. The current v2 values below supersede the packet's
+earlier significance figures. These additions change test requirements only;
+they do not supply an ITSM derivation, change a gate, or displace TOP-X4 Plan
+11.
+
+| Record | Verified scope | Programme consequence |
+|---|---|---|
+| [Camilleri et al., arXiv:2609.05053v2](https://arxiv.org/abs/2609.05053) and [Lee et al., arXiv:2609.05321v2](https://arxiv.org/abs/2609.05321) | Unite combines Pantheon+ and DES-SN5YR into 2,884 likely Type-Ia supernovae with one analysis framework. With CMB and DESI DR2 it reports `(Omega_m,w0,wa)=(0.305+/-0.004,-0.861^{+0.044}_{-0.042},-0.60^{+0.17}_{-0.19})`, a roughly 30% smaller `w0-wa` confidence area, `3.3 sigma` MAP and `3.1 sigma` maximum-likelihood preference over flat LambdaCDM, but only weak Bayesian preference. The companion v2 host-mass audit moves the Unite-Pantheon+ subset from `3.4 sigma` to `4.0 sigma` MAP when its remeasured masses replace release masses, while the DES-SN5YR/DES-Dovekie subset is virtually unchanged. The Hubble diagram, likelihood, photometry and masses are promised upon journal acceptance, not yet public. | Prepare a versioned Unite likelihood adapter, but do not claim or run the fit until the public likelihood and covariance are available. Then refit action-derived `Q(z)`, `w_p(z)` and any defensible exchange exponent with `H0` and `r_d`, branching released versus remeasured host masses. Keep MAP/maximum-likelihood significance separate from Bayesian evidence. |
+| [Zapata, Carrion & Garcia-Arroyo, arXiv:2609.05410](https://arxiv.org/abs/2609.05410) | Unreviewed three-author comparison using DESI DR2, Pantheon+ and Planck 2018. With CMB it reports `ln B_(LambdaCDM,EDE)=12.44+/-0.05` and `ln B_(LambdaCDM,CPL)=2.33+/-0.06`, favouring LambdaCDM even though two-dimensional contours show multi-sigma displacement. Its learned harmonic-mean evidence estimator was checked against UltraNest only for cheaper background-level fits. | For any surviving early-only, late-only or complete ITSM cosmology, require independently reproducible nested-sampling evidence with all priors and convergence diagnostics frozen. Report posterior displacement, `Delta chi2`, AIC/BIC and `ln B` together; never translate contour exclusion into model preference without prior-volume accounting. |
+| [Zhang et al., arXiv:2609.04990](https://arxiv.org/abs/2609.04990) | Phys. Rev. D-accepted phenomenological study of `Q=3 H xi rho_DE`. In its continuity convention, `xi<0` means DE-to-DM transfer and is displaced from zero beyond 95% credibility in combined fits, but neither interacting model is favoured over LambdaCDM or CPL by `Delta chi2_min` and Bayesian evidence. For IPEDE, `H0` falls from `69.52+/-0.95` with CMB+DESI to `67.88^{+0.52}_{-0.53} km/s/Mpc` with DES-Dovekie added; representative `S8` values are about `0.63--0.69`. | Implement this model only as a sign-mapped control beside an action-derived ITSM exchange law. On identical data compare `H0`, `S8`, `f sigma8(z)`, `Delta chi2` and Bayesian evidence, and test the joint failure mode of losing high `H0` while over-suppressing structure. Do not transfer the sign of `xi` without mapping both continuity equations. |
+| [Gray, Williams & Papadopoulos, arXiv:2609.04991](https://arxiv.org/abs/2609.04991) | Unreviewed methods paper using `gwcosmo`, not an official LVK result. A sampled redshift prior permits joint inference of cosmology, GW population and host-galaxy weighting while accounting for incomplete catalogues. Its partial GWTC-5 reproduction gives `H0=71.9^{+9.1}_{-7.5} km/s/Mpc` at 68% credibility, too broad for sharp discrimination. | Replace fixed host-luminosity weighting in the coefficient audit with sampled host-population hyperparameters and catalogue incompleteness. Propagate the full non-Gaussian `H0` posterior into any `a0=cH0/(2 pi)` calibration, independently of GW friction, stochastic production and GW170817-type propagation tests. |
+| [Dent & Newstead, arXiv:2609.04673](https://arxiv.org/abs/2609.04673) | Short, highly provisional phenomenology fit to the single LZ high-energy event already registered in Section 8.2. An exothermic inelastic-DM spectrum can peak near 250 keV while avoiding the low-energy null; normalized to one event it forecasts about 4.5 signals in LZ's projected 1,000-live-day exposure. The empty high-energy sideband disfavors broad peaks, and extended-window XENONnT/PandaX-4T analyses provide multi-target tests. | Extend the pure-particle-DM-replacement falsification table with the 4.5-event forecast, high-energy sideband and cross-xenon spectrum. A consistent confirmed spectrum would challenge that pure replacement claim. Failure of this particular exothermic forecast rejects the competitor only and is not evidence for ITSM. |
+
+No new SPARC rotation-curve result, merging-cluster constraint, direct JWST
+high-redshift release, official DESI cosmological-parameter release, or
+GW170817 propagation bound was identified in this tranche. The cosmology,
+dark-siren and recoil tasks remain downstream and dependency-locked; they do
+not outrank the active derivation route or the Section 8.4 SPARC audit.
+
+### 8.4 Evidence-watch benchmarks integrated on 2026-09-10
+
+Primary arXiv records posted on 2026-09-08--09 were checked against their
+abstracts and, where needed, the full text. They change test requirements only.
+They do not derive an ITSM mechanism, promote a gate, or displace the active
+TOP-X4 Plan 11 calculation.
+
+| Record | Verified scope | Programme consequence |
+|---|---|---|
+| [Bian et al., arXiv:2609.08536](https://arxiv.org/abs/2609.08536) | Unreviewed four-author symbolic-regression methods preprint. From 175 SPARC galaxies it retains 163 and 3,269 points, reports BIC preference for `K=3`, and identifies near-Newtonian, square-root and constant-floor relations. It reports `a0` near `1.2e-10 m/s^2` for gas-poor galaxies and `0.55e-10 m/s^2` for gas-rich dwarfs, with leave-one-galaxy-out RMSE gains of 2.8% overall and 7.3% for gas-rich dwarfs. Its `p<1e-34` is attached to the residual--gas-fraction correlation (`r=-0.42`), not a direct likelihood-ratio rejection significance for universal `a0`; the paper does not demonstrate the ITSM-required nuisance marginalization or within-galaxy covariance treatment. | Make this the highest-priority **observational SPARC/coefficient audit**, dependency-locked behind MAT/DISK rather than a current refutation. Reproduce the exact sample and `K=1,2,3` analysis using galaxy-level nested cross-validation; marginalize distance, inclination, stellar mass-to-light ratio, gas uncertainties and within-galaxy covariance. Compare the fixed-`a0` Plenum Shear hypothesis with the three-law mixture using held-out likelihood, AIC/BIC and Bayesian evidence. Report residual-correlation significance separately from model-rejection significance. |
+| [Ballard et al., arXiv:2609.08573](https://arxiv.org/abs/2609.08573) | Unreviewed nine-author analysis of the double-source-plane lens SDSS J0946+1006, submitted to MNRAS. HST imaging plus VLT-MUSE kinematics help constrain the internal multi-plane mass-sheet degeneracy. Combined with DESI BAO, the fiducial model gives `(w0,wa)=(-0.87^{+0.10}_{-0.11},-0.22^{+0.28}_{-0.25})`, less than one standard deviation from LambdaCDM. External convergence remains unconstrained, and the third-source-plane reconstruction is explicitly incomplete. | Add J0946 as a supernova-independent expansion and lensing test after LEN/COS prerequisites. Jointly fit the ITSM lens potential, stellar Jeans kinematics, HST images, MUSE dispersion, external convergence and source-plane distance ratios; test rather than assume whether an ITSM effective history requires phantom crossing. |
+| [Argudo-Panes, Gonzalez-Fuentes & Gomez-Valent, arXiv:2609.10133](https://arxiv.org/abs/2609.10133) | Unreviewed 51-page covariant scalar-tensor analysis. The tested positive-coupling branch of `F(phi)=1+alpha phi^2` realizes phantom crossing while satisfying the paper's BBN and local-gravity tests; past `G_eff` deviations remain below about 0.3%, and the likelihood propagates varying `G` into supernova luminosity. The reported preference over LambdaCDM is about `2.14 sigma`, or `1.77 sigma` when the initial field is counted as an additional degree of freedom; some fine-tuning is acknowledged. | Crossing alone is not an ITSM discriminator. Derive `G_eff(k,z)`, `dot(G)/G`, PPN parameters and BBN limits from a surviving plenum action; include any action-derived `G` dependence of supernova luminosity; require simultaneous crossing, perturbative stability, Solar-System compliance and acceptable low-redshift growth. |
+| [Adil et al., arXiv:2609.09261](https://arxiv.org/abs/2609.09261) | Unreviewed formal-theory preprint with no new observational fit. Of three reconstructed sign-switching histories, one has a smooth finite-redshift realization, one reaches a `C1` but non-`C2`, non-Lipschitz endpoint with nonunique evolution, and the exact ladder history requires distributional kinetic stress in the adopted one-field action. Its unretuned closure test has a maximum absolute `Delta Omega_phi` mismatch of about `0.16`. | Treat a fitted `Q(z)` or `w_eff(z)` as phenomenology until generated by a regular action. For any ITSM exchange history, test field-map existence, invertibility, differentiability, uniqueness, hyperbolicity and ghost/gradient stability, then forward-integrate from independently fixed initial data and publish the unretuned closure residual. |
+| [Kihara et al., arXiv:2609.09729](https://arxiv.org/abs/2609.09729) | Unreviewed controlled N-body methods/test-case preprint submitted to ApJ, not an observational detection. For matched satellite-host simulations, increasing the velocity-dependent SIDM cross-section retains less dark matter from an initially cuspy NFW satellite but more from an initially cored Burkert satellite. The reversal is attributed to the direction of heat conduction and tidally accelerated gravothermal contraction. | Strengthen the downstream WAK/cluster comparator: freeze the same satellite mass, host, orbit and pericentric sequence, and test both cuspy and cored initial structures. Predict stellar structure, bound dynamical/lensing mass and plenum morphology after each passage; do not infer dark-matter-deficiency or ITSM uniqueness without initial-structure and tidal-history controls. |
+| [Leonard et al. / DESI Collaboration, arXiv:2609.09340](https://arxiv.org/abs/2609.09340) | Collaboration-scale 49-author DESI Y1 measurement preprint, not yet a cosmological-parameter fit. The connected even-parity LRG four-point correlation function is detected at about `12--17 sigma` in full-sky analyses and about `15 sigma` with a cross-patch estimator designed to reduce mock--data covariance mismatch. Hemisphere, redshift and completeness selections were tested. | Add a dependency-locked nonlinear-structure acceptance test after COS/PERT exists: generate ITSM mock catalogues under the same LRG selection and survey mask, calculate the finely binned connected 4PCF and covariance, and require one parameter set to fit DESI two-point clustering, BAO and four-point structure simultaneously. |
+
+The Bian et al. reproduction is first among the new observational-method tasks
+because it directly probes whether one acceleration law is adequate. It remains
+a preregistered comparator and coefficient audit, not permission to fit before
+the ITSM matter vertex and disk field solution exist. The other five records
+are dependency-locked acceptance tests. No new Bullet Cluster observation,
+direct JWST release, GW170817 propagation limit, or official DESI cosmological-
+parameter release was identified in this evidence-watch tranche.
+
 ## 9. Execution phases and review gates
 
 ### G0 — repair authority
 
-Complete G0.1-G0.8 and freeze a truthful baseline. No route status changes.
+Completed on 2026-08-25 with
+`PASS_G0_AUTHORITY_REPAIR_NO_PHYSICS_PROMOTION`; authority is
+`Theory/Core/ITSM_G0_AUTHORITY_REPAIR_REPORT.md`. This froze a truthful
+baseline without changing a physics gate.
 
 ### P1 — cheap adversarial screens
 
@@ -467,7 +520,7 @@ papers may publish independently.
 
 | Priority | Work package | Reason |
 |---|---|---|
-| P0 | G0 authority/evidence repair | Truthful baseline required |
+| P0 | G0 authority/evidence repair — completed 2026-08-25 | Truthful baseline frozen without physics promotion |
 | P1 | U1 quartet classification | Current-action viability blocker |
 | P1 | R5-P1 hostile audit plus M1-M5 A0-A2 comparison | MAT critical path/contamination source |
 | P1 | Blind `a0_internal`/`C_obs` audit | Prevent target-derived geometry |
@@ -512,13 +565,24 @@ No script `PASS_*`, fit gain, or attractive narrative is completion by itself.
 
 ## 13. Immediate next checkpoint
 
-Execute **G0 only**:
+G0 is complete. The current operator-selected route is TOP-X4 `X4-S2F3` Plan
+11. The static parity-even determinant and constant-background finite-charge
+operator checkpoints are bounded completions only; both retain
+`physics_pass=false` and `gate_effect=NONE`.
 
-1. non-destructive workspace/evidence manifest;
-2. contradiction ledger for promoted claims;
-3. recompute modified evidence/sidecars from corresponding code;
-4. exact keep/repair/quarantine dispositions;
-5. normalize `active_research.md` and queue only after review.
+Execute one bounded **dynamic-state and subtraction checkpoint**:
 
-Do not begin a new physics derivation or commit the dirty tree until this
-checkpoint establishes which artifacts are trustworthy.
+1. construct the coupled time-dependent amplitude/phase mode system on the A1
+   background without importing the static vacuum solver;
+2. declare the Hadamard/adiabatic state and all subtraction terms;
+3. test adiabatic-order convergence and the diffeomorphism/global-`U(1)` Ward
+   identities;
+4. report the renormalized state-dependent stress only if those checks close;
+5. stop on failure or at the resulting hold/continuation decision.
+
+Do not begin the coupled physical Hessian, parity/anomaly completion, A4,
+Ultra, phenomenology, manuscript revision or publication in this checkpoint.
+The binding scope is
+`Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md`
+and
+`Theory/Gates/TOP-X4/TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md`.
