@@ -1,5 +1,22 @@
 # ITSM Changelog & Archive History
 
+## Public Pages authority sync (2026-09-12)
+
+- Audited the live GitHub Pages deployment and all seven local HTML pages
+  against the v12.0-alpha.12 recovery authority and current execution queue.
+- Removed superseded public promotions of MAT-001, UVIR-003, LEN-001,
+  VOR-001, DISK-001 and STAT-001; restored the current blocked, open,
+  methods-only and quarantined boundaries.
+- Added the active TOP-X4 X4-S2F3 Plan 11 dynamic-determinant hold and its
+  bounded 12/12, 9/9 and 16/16 checkpoints with physics_pass=false and
+  gate_effect=NONE.
+- Rebuilt the Papers page around the canonical core and P1-P4 artifact names.
+  P3 and P4 remain visibly quarantined drafts; no compiled artifact is
+  presented as publication clearance.
+- Corrected the Pages workflow documentation, refreshed the site README, and
+  bumped the service-worker cache so the corrected claim surface can replace
+  stale cached pages after deployment.
+
 ## TOP-X4 finite-charge operator checkpoint (2026-09-12)
 
 - Added the covariant semiclassical variation and fixed-global-charge ensemble

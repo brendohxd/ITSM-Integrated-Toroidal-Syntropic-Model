@@ -27,7 +27,7 @@ The programme strictly adheres to the fail-closed Iron Rule:
 
 Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
 
-## 🧭 Current Core Status (recovery snapshot — 2026-09-09)
+## 🧭 Current Core Status (recovery snapshot — 2026-09-12)
 
 | Gate / Sector | Status | Physical Result |
 |---|---|---|

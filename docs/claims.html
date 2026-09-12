@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Claim hygiene — ITSM</title>
-  <meta name="description" content="ITSM claim statuses, four-tier categorization, and fail-closed ledger." />
+  <meta name="description" content="ITSM claim statuses and fail-closed public ledger, audited against the recovery authority." />
   <link rel="canonical" href="https://itsm-cosmology.com/claims.html" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
@@ -44,7 +44,8 @@
       <p class="breadcrumb"><a href="index.html">Home</a> / Claims</p>
       <h1>Claim <em>hygiene</em></h1>
       <p class="lede">
-        The ITSM programme enforces fail-closed claim discipline: no claim is promoted beyond its verified gate status.
+        No claim is promoted beyond its verified gate status. This public
+        matrix was audited against the recovery authority on 12 September 2026.
       </p>
     </div>
   </header>
@@ -75,7 +76,7 @@
             </tr>
             <tr>
               <td><span class="badge badge-rej">Rejected / Quarantined</span></td>
-              <td>Stated derivation form failed or quarantined for code-to-claim violations</td>
+              <td>Stated derivation failed or its earlier packaging violated the evidence boundary</td>
             </tr>
           </tbody>
         </table>
@@ -84,48 +85,49 @@
 
     <section class="section">
       <div class="section-head">
-        <h2>Key Quantities &amp; Epistemic Status</h2>
-        <p>Authoritative matrix aligned with canonical v12.0-alpha.12 baseline</p>
+        <h2>Key Quantities &amp; Current Status</h2>
+        <p>Canonical v12.0-alpha.12 authority baseline</p>
       </div>
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Quantity / Component</th><th>Epistemic Status</th><th>Canonical Scope &amp; Origin</th></tr>
+            <tr><th>Quantity / Component</th><th>Status</th><th>Canonical Scope &amp; Boundary</th></tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Conformal Matter Coupling (\(C_m\))</strong></td>
-              <td><span class="badge badge-ok">Derived</span></td>
-              <td>\(C_m \equiv 1.0\) fixed by conformal Weyl trace invariance under \(	ilde{g}_{\mu
-u} = e^{2\psi} g_{\mu
-u}\).</td>
+              <td><strong>Conformal matter coupling (<code>C_m</code>)</strong></td>
+              <td><span class="badge badge-cond">Research Fork</span></td>
+              <td>Conformal Weyl trace fixes <code>C_m = 1</code> inside the scale-compensator fork, but absolute parent-action matching remains underdetermined. This does not derive <code>K_Q</code> or <code>V</code>.</td>
             </tr>
             <tr>
-              <td><strong>Matter Vertex Residue (\(V\))</strong></td>
-              <td><span class="badge badge-cond">Blocked / Conditional</span></td>
-              <td>\(V = C_m / \sqrt{K_Q} = 1/f\); calibration \(f = 1/\sqrt{4\pi G}\) is empirical, not derived from parent action.</td>
+              <td><strong>Matter vertex residue (<code>V</code>)</strong></td>
+              <td><span class="badge badge-open">Blocked</span></td>
+              <td><code>V = C_m / sqrt(K_Q)</code>. The calibration <code>f = 1/sqrt(4πG)</code> is empirical, not derived from the parent action; <code>K_Q</code> is not derived and <code>V</code> is not computed.</td>
             </tr>
             <tr>
-              <td><strong>Acceleration Scale (\(a_0\))</strong></td>
-              <td><span class="badge badge-cond">Conditional Scale</span></td>
-              <td>Empirical MOND/AQUAL transition acceleration \(a_0 pprox 1.20 	imes 10^{-10}\,\mathrm{m/s^2}\); ab-initio derivation open.</td>
+              <td><strong>Acceleration scale (<code>a₀</code>)</strong></td>
+              <td><span class="badge badge-open">Open</span></td>
+              <td>The empirical MOND/AQUAL transition acceleration may be used only as a declared external input. The historical <code>a₀ = cH₀/(2π)</code> relation is not derived by ITSM.</td>
             </tr>
             <tr>
-              <td><strong>SPARC Catalog Performance</strong></td>
-              <td><span class="badge badge-cond">Methods Benchmark</span></td>
-              <td>Raw rigid unfloated \(\chi^2_
-u = 47.20\) (median 10.51); floated optimizer \(\chi^2_
-u = 11.08\) (median 3.43).</td>
+              <td><strong>SPARC catalogue performance</strong></td>
+              <td><span class="badge badge-cond">Methods Only</span></td>
+              <td>The repaired 152-galaxy comparator gives profiled raw <code>χ²_ν = 10.86</code> for declared <code>C=1</code> and <code>25.70</code> for historical <code>C=2/3</code>. Neither is an ITSM prediction; STAT-001 has not started as a closed gate.</td>
             </tr>
             <tr>
-              <td><strong>Moduli Phase Space (TOP-001)</strong></td>
-              <td><span class="badge badge-rej">Scoped Negative (Free)</span></td>
-              <td>Free Casimir stress dilutes to spatial isotropy (\(H_t/H_p 	o 1.000\)). Driven 13/12 requires active pump \(\eta = 27/76\) with steady drift.</td>
+              <td><strong>Free moduli phase space (TOP-001)</strong></td>
+              <td><span class="badge badge-rej">Scoped Negative</span></td>
+              <td>Free Casimir stress dilutes toward spatial isotropy. The advertised driven state is not stationary for nonzero <code>η</code>; <code>13/12</code> requires <code>η = 27/76</code> while the shape still drifts.</td>
             </tr>
             <tr>
-              <td><strong>Cosmological Perturbations (COS-001)</strong></td>
-              <td><span class="badge badge-open">Proxy / Open</span></td>
-              <td>Background sound horizon \(r_s = 144.43\,\mathrm{Mpc}\) verified; full Einstein-Boltzmann hierarchy and non-linear screening open.</td>
+              <td><strong>TOP-X4 / X4-S2F3</strong></td>
+              <td><span class="badge badge-open">Dynamic Hold</span></td>
+              <td>Plan 11 has bounded static and finite-charge operator identities only. The time-dependent state/subtraction checkpoint is next; <code>physics_pass=false</code> and <code>gate_effect=NONE</code>.</td>
+            </tr>
+            <tr>
+              <td><strong>Cosmological perturbations (COS-001 / PERT-001)</strong></td>
+              <td><span class="badge badge-open">Calibration / Open</span></td>
+              <td>Unmodified CAMB ΛCDM reproduces its declared calibration inputs. A full ITSM Einstein–Boltzmann hierarchy, transfer functions and <code>S₈</code> prediction remain open.</td>
             </tr>
           </tbody>
         </table>
@@ -151,4 +153,4 @@ u = 11.08\) (median 3.43).</td>
     }
   </script>
 </body>
-</html>\n
+</html>

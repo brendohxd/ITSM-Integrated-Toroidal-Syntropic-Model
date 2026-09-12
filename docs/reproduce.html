@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reproduce — ITSM</title>
-  <meta name="description" content="How to clone the ITSM recovery branch and run verified analysis scripts." />
+  <meta name="description" content="How to clone the ITSM recovery branch and reproduce bounded, checksum-tracked analysis checkpoints." />
   <link rel="canonical" href="https://itsm-cosmology.com/reproduce.html" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
@@ -42,9 +42,10 @@
   <header class="page-hero">
     <div class="wrap">
       <p class="breadcrumb"><a href="index.html">Home</a> / Reproduce</p>
-      <h1>Reproduce the <em>gates</em></h1>
+      <h1>Reproduce the <em>checkpoints</em></h1>
       <p class="lede">
-        Deterministic analysis scripts, verified outputs, and SHA-256 checksums.
+        Deterministic analysis scripts, bounded outputs, and SHA-256 checksums.
+        A script-level pass does not constitute a physics-gate pass.
       </p>
     </div>
   </header>
@@ -53,56 +54,57 @@
     <section class="section">
       <div class="section-head">
         <h2>Setup</h2>
-        <p>Clone recovery branch and inspect authority documents</p>
+        <p>Clone the recovery branch and read its authority documents first</p>
       </div>
       <div class="card span-2">
         <pre><code>git clone https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model.git
 cd ITSM-Integrated-Toroidal-Syntropic-Model
 git checkout recovery/v12-core-architecture
 
-# Verify active gates and authority ledgers
-# Read active_research.md and Theory/Core/ITSM_Master_Research_Plan.md</code></pre>
+# Read current authority and status before interpreting outputs
+# README.md
+# active_research.md
+# Theory/Core/ITSM_Master_Research_Plan.md</code></pre>
       </div>
     </section>
 
     <section class="section">
       <div class="section-head">
-        <h2>Scoped Analysis Solvers</h2>
-        <p>Run deterministic Python solvers with .sha256 sidecars</p>
+        <h2>Scoped Analysis Checkpoints</h2>
+        <p>Run deterministic Python entry points and verify their matching .sha256 sidecars</p>
       </div>
       <div class="grid">
         <article class="card">
-          <h3>COS-001 &amp; PERT-001 — Growth Proxy</h3>
-          <p>Eisenstein-Hu growth proxy evaluating sound horizon \(r_s = 144.43\,\mathrm{Mpc}\) and linear growth \(\sigma_8 = 1.0861\).</p>
-          <pre><code>python Analysis/Cosmology/COS-001/cos001_genuine_boltzmann_growth_solver.py</code></pre>
+          <h3>TOP-X4 / X4-S2F3 — Plan 11</h3>
+          <p>Reproduces bounded static, finite-charge entry and operator/variation checks. All retain <code>physics_pass=false</code>; the dynamic-state calculation remains open.</p>
+          <pre><code>python Analysis/TOP/TOP-X4/topx4_s2f3_static_determinant_checkpoint.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_entry_gate.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_operator_checkpoint.py</code></pre>
         </article>
         <article class="card">
-          <h3>TOP-001 &amp; CBR-002 — Moduli Phase Space</h3>
-          <p>Free Casimir shear dilution to isotropy (\(H_t/H_p 	o 1.000\)) and driven parameter stability probe.</p>
+          <h3>TOP-001 / CBR-002 — Moduli Control</h3>
+          <p>Free-Casimir dilution and driven-parameter control. The free result is scoped negative; the prescribed driven ratio is not a stationary attractor.</p>
           <pre><code>python Analysis/TOP/TOP-001/top001_moduli_phase_space_analysis.py</code></pre>
         </article>
         <article class="card">
-          <h3>WAK-001 — 2D Retarded Wave Toy</h3>
-          <p>Exact Fourier matrix exponential wave propagator measuring transient centroid offset (\(\Delta x = 6.25 - 18.75\,\mathrm{kpc}\)).</p>
+          <h3>DISK-001 / STAT-001 — Methods Audit</h3>
+          <p>Historical 175-galaxy methods entry point. The optimizer is not posterior sampling, and its output does not establish an ITSM prediction or open STAT-001.</p>
+          <pre><code>python Analysis/DISK/DISK-001/disk001_sparc_multitier_mcmc_benchmark.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>COS-001 / PERT-001 — Calibration Audit</h3>
+          <p>Historical proxy entry point retained for audit. Current authority classifies this sector as calibration-only; no ITSM Boltzmann hierarchy or <code>S₈</code> prediction is established.</p>
+          <pre><code>python Analysis/Cosmology/COS-001/cos001_genuine_boltzmann_growth_solver.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>WAK-001 — Retarded-Field Control</h3>
+          <p>Historical wave-toy entry point. It is not a hydrodynamic cluster collision or metric-lensing calculation.</p>
           <pre><code>python Analysis/WAK/WAK-001/wak001_retarded_wave_lensing_solver.py</code></pre>
         </article>
         <article class="card">
-          <h3>RES-001 — 2-Mode GKSL Master Equation</h3>
-          <p>Lindblad master equation proving CPTP positivity and Spohn relative entropy rate \(\sigma_{
-m NESS} \ge 0\).</p>
+          <h3>RES-001 — GKSL Control</h3>
+          <p>Inserted-rate single-mode steady-state control. It does not derive a microscopic ITSM reservoir or constitutive exchange current.</p>
           <pre><code>python Analysis/RES/RES-001/res001_microscopic_lindblad_spohn_solver.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>ASTRO-001 — Jeans Excursion Set IMF</h3>
-          <p>Single-scale excursion set IMF evaluating modified Jeans mass across HSB vs LSB environments.</p>
-          <pre><code>python Analysis/Astro/ASTRO-001/astro001_genuine_excursion_set_imf.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>DISK-001 &amp; STAT-001 — SPARC Multi-Tier Benchmark</h3>
-          <p>Multi-tier rotation curve benchmark across 175 SPARC galaxies (unfloated \(\chi^2_
-u = 47.20\), floated \(\chi^2_
-u = 11.08\)).</p>
-          <pre><code>python Analysis/DISK/DISK-001/disk001_sparc_multitier_mcmc_benchmark.py</code></pre>
         </article>
       </div>
     </section>
@@ -126,4 +128,4 @@ u = 11.08\)).</p>
     }
   </script>
 </body>
-</html>\n
+</html>

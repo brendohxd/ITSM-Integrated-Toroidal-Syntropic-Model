@@ -1,6 +1,7 @@
-# Optional Actions deploy. Primary config is Settings → Pages →
-# Deploy from branch recovery/v12-core-architecture, folder /docs (legacy).
-# The github-pages environment may block non-default branches; prefer branch deploy.
+# Manual Actions deploy for the public site. Dispatch this workflow from
+# recovery/v12-core-architecture; the selected ref's /docs tree is uploaded.
+# GitHub's Pages API can retain legacy gh-pages source metadata even though the
+# deployed artifact is supplied by actions/deploy-pages.
 
 name: github-pages
 
