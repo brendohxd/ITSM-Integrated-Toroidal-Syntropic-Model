@@ -9,8 +9,8 @@
 - Added safe wrapping for long canonical PDF filenames and refreshed the
   stylesheet/service-worker cache versions.
 - Rechecked the local Papers page at the browser preview and confirmed the
-  desktop grid remains bounded; the published Pages deployment will be
-  verified against this patch after release.
+  desktop grid remains bounded; the published Pages deployment was then
+  verified at itsm-cosmology.com with the same zero-overflow mobile audit.
 
 ## Public Pages authority sync (2026-09-12)
 
