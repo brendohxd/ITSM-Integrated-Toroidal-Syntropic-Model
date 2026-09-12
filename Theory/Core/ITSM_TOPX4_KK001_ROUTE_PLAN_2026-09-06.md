@@ -213,7 +213,7 @@ count is not a physics pass. The retry is frozen in
 continuation is
 `Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md`.
 
-## 10. 2026-09-09 Plan 11 checkpoint
+## 10. Plan 11 checkpoints through 2026-09-12
 
 The first bounded Plan 11 job is complete: the zero-density static parity-even
 determinant checkpoint passed `12/12` calculation checks and reproduced the
@@ -228,3 +228,14 @@ anomaly/counterterm audit and coupled physical Hessian remain explicit holds.
 The static solver is not reused as a dynamic-background solver. A4 and Ultra
 remain closed, and the three-way Rule-9 review is incomplete because Roles B
 and C returned usage-limit errors without reports.
+
+The next bounded checkpoint completed `16/16` exact checks for the
+constant-background charged amplitude-phase operator and the fixed-global-
+charge Routhian/variation identities. It found one Goldstone and one gapped
+amplitude branch, verified the zero-charge and neutral-spectator limits, and
+rejected omitted-mixing and wrong-sign-Routhian mutations. Its status is
+`PASS_FINITE_CHARGE_OPERATOR_HOLD_DYNAMIC_STATE_STRESS_AND_HESSIAN`, with
+`physics_pass=false` and no gate effect. The evolving Hadamard/adiabatic state,
+renormalized stress, coupled physical Hessian, continuous robustness and
+parity/anomaly audit remain open. No three-way reviewer clearance exists for
+this operator checkpoint.

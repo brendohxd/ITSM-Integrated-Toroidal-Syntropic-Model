@@ -1,0 +1,232 @@
+{
+  "advance_to_a4": false,
+  "advance_to_dynamic_determinant": false,
+  "advance_to_ultra": false,
+  "authority_receipts": [
+    {
+      "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+      "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+    },
+    {
+      "actual": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "expected": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md"
+    },
+    {
+      "actual": "4bf36306e64a66b673f9528215b3a17601f57880dc2d4a35b101af22b1808d42",
+      "expected": "4bf36306e64a66b673f9528215b3a17601f57880dc2d4a35b101af22b1808d42",
+      "matches": true,
+      "path": "Theory\\Core\\Reasoning_Mode_Plans\\11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION\\PLAN.md"
+    },
+    {
+      "actual": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+      "expected": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+      "matches": true,
+      "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md"
+    },
+    {
+      "actual": "04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419",
+      "expected": "04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419",
+      "matches": true,
+      "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_static_determinant_summary.json"
+    }
+  ],
+  "calculation_checks_passed": 16,
+  "calculation_checks_total": 16,
+  "calculation_status": "PASS",
+  "candidate": "X4-S2F3",
+  "checkpoint_completed": "2026-09-12",
+  "checks": [
+    {
+      "name": "frozen_authority_and_static_checkpoint_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+        },
+        {
+          "actual": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+          "expected": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md"
+        },
+        {
+          "actual": "4bf36306e64a66b673f9528215b3a17601f57880dc2d4a35b101af22b1808d42",
+          "expected": "4bf36306e64a66b673f9528215b3a17601f57880dc2d4a35b101af22b1808d42",
+          "matches": true,
+          "path": "Theory\\Core\\Reasoning_Mode_Plans\\11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION\\PLAN.md"
+        },
+        {
+          "actual": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+          "expected": "916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa",
+          "matches": true,
+          "path": "Theory\\Gates\\TOP-X4\\TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md"
+        },
+        {
+          "actual": "04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419",
+          "expected": "04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419",
+          "matches": true,
+          "path": "Analysis\\TOP\\TOP-X4\\outputs\\topx4_s2f3_static_determinant_summary.json"
+        }
+      ]
+    },
+    {
+      "discarded_boundary_term": "mu*rho*pi_dot=d(mu*rho*pi)/dt for constant background",
+      "linear_residual": "-U_r*sigma + mu**2*rho*sigma + mu*pi_dot*rho",
+      "name": "background_radial_stationarity_is_required_before_spectrum",
+      "ok": true,
+      "stationarity": "U_r=rho*mu^2 on a constant zero-winding control"
+    },
+    {
+      "canonical_phase_fluctuation": "pi=rho*delta_theta",
+      "name": "charged_amplitude_phase_quadratic_lagrangian",
+      "ok": true,
+      "quadratic_lagrangian": "-M_sigma2*sigma**2/2 - k2*(pi**2 + sigma**2)/2 + 2*mu*pi_dot*sigma + pi_dot**2/2 + sigma_dot**2/2"
+    },
+    {
+      "determinant_polynomial": "M_sigma2*k2 - M_sigma2*omega2 + k2**2 - 2*k2*omega2 - 4*mu**2*omega2 + omega2**2",
+      "name": "mixed_inverse_operator_determinant",
+      "off_diagonal_frequency_mixing": "+/- 2 i mu omega",
+      "ok": true
+    },
+    {
+      "name": "omitted_charge_mixing_mutation_is_rejected",
+      "ok": true,
+      "omitted_mixing_polynomial": "M_sigma2*k2 - M_sigma2*omega2 + k2**2 - 2*k2*omega2 + omega2**2",
+      "required_difference": "-4*mu^2*omega2"
+    },
+    {
+      "name": "one_goldstone_and_one_gapped_mode_at_zero_momentum",
+      "ok": true,
+      "roots": [
+        "0",
+        "M_sigma2+4*mu^2"
+      ],
+      "stability_condition": "M_sigma2>0"
+    },
+    {
+      "domain": "M_sigma2>0 and real mu",
+      "name": "low_momentum_goldstone_speed_is_positive_and_subluminal_in_stable_domain",
+      "ok": true,
+      "sound_speed_squared": "M_sigma2/(M_sigma2 + 4*mu**2)"
+    },
+    {
+      "factorization": "(k2 - omega2)*(M_sigma2 + k2 - omega2)",
+      "name": "zero_charge_operator_factorizes_to_radial_and_phase_controls",
+      "ok": true
+    },
+    {
+      "ensemble": "fixed conserved global charge; no inserted chemical potential",
+      "name": "fixed_charge_routhian_reproduces_radial_centrifugal_term",
+      "ok": true,
+      "radial_term": "-Q**2/(a**6*b**2*rho**3)",
+      "routhian": "-N*Q**2/(2*a**3*b*rho**2)"
+    },
+    {
+      "name": "wrong_sign_fixed_charge_routhian_mutation_is_rejected",
+      "ok": true,
+      "required_radial_term": "-Q**2/(a**6*b**2*rho**3)",
+      "wrong_sign_radial_term": "Q**2/(a**6*b**2*rho**3)"
+    },
+    {
+      "circle_pressure": "Q**2/(2*a**6*b**2*rho**2)",
+      "energy_density": "Q**2/(2*a**6*b**2*rho**2)",
+      "name": "fixed_charge_metric_variation_gives_consistent_energy_and_pressures",
+      "observed_space_pressure": "Q**2/(2*a**6*b**2*rho**2)",
+      "ok": true
+    },
+    {
+      "circumference": "2*pi*b",
+      "momentum_squared": "k_observed2 + n**2/b**2",
+      "name": "periodic_circle_momentum_enters_every_bosonic_branch",
+      "ok": true
+    },
+    {
+      "frequency_squared": "k_observed2 + m_F**2 + n**2/b**2",
+      "limitation": "metric evolution still makes the operator state dependent through a(t), b(t)",
+      "name": "neutral_spectator_fermion_operator_has_no_direct_charge_shift",
+      "ok": true
+    },
+    {
+      "contract": {
+        "diffeomorphism_ward_identity": "nabla^A T_AB^q=sum_i E_i^q nabla_B phi_i",
+        "effective_action": "Gamma=S_I1C+Gamma_even+Gamma_odd+Gamma_ct",
+        "fixed_charge_reduction": "perform only after covariant variation, using the Routhian",
+        "global_u1_identity": "Gamma_q is theta-shift invariant; corrected global charge is conserved",
+        "matter_proxy_source": "E_chi^q=+1/sqrt(-G) delta(Gamma_q)/delta(chi)",
+        "metric_source": "T_AB^q=-2/sqrt(-G) delta(Gamma_q)/delta(G^AB)",
+        "phase_source": "E_theta^q=+1/sqrt(-G) delta(Gamma_q)/delta(theta)",
+        "radial_source": "E_rho^q=+1/sqrt(-G) delta(Gamma_q)/delta(rho)",
+        "vary_before_ansatz": true
+      },
+      "name": "semiclassical_variation_contract_contains_all_required_sources",
+      "ok": true
+    },
+    {
+      "name": "static_vacuum_solver_is_not_reused_as_dynamic_determinant",
+      "ok": true,
+      "static_solver_imported": false
+    },
+    {
+      "forbidden_source_tokens": [],
+      "name": "observational_target_firewall",
+      "ok": true
+    }
+  ],
+  "derived_claims": [],
+  "explicit_nonclaims": [
+    "no finite-charge determinant",
+    "no renormalized quantum stress tensor",
+    "no stabilized finite-charge background",
+    "no physical radion mass",
+    "no anomaly clearance",
+    "no architecture or publication change"
+  ],
+  "finite_charge_spectrum": {
+    "determinant_polynomial_in_omega_squared": "M_sigma2*k2 - M_sigma2*omega2 + k2**2 - 2*k2*omega2 - 4*mu**2*omega2 + omega2**2",
+    "finite_density_degree_count": "one gapless phase mode plus one gapped amplitude mode",
+    "goldstone_speed_squared": "M_sigma2/(M_sigma2 + 4*mu**2)",
+    "scope": "constant-background principal operator before gravity constraints",
+    "zero_momentum_modes": [
+      "omega_-^2=0",
+      "omega_+^2=M_sigma2+4*mu^2"
+    ]
+  },
+  "gate_effect": "NONE",
+  "hold_reasons": [
+    "the constant-background principal operator is not an evolving Hadamard/adiabatic state",
+    "no adiabatic-order convergence or renormalized state-dependent stress tensor is calculated",
+    "the metric-radion-amplitude-phase constraints and physical Hessian are not reduced",
+    "the parity-odd determinant phase and quantized counterterms remain unaudited",
+    "continuous finite-charge mass-ratio, cutoff and state robustness remain uncomputed"
+  ],
+  "next_required_calculation": "construct the time-dependent coupled mode system on the A1 background, declare the Hadamard/adiabatic state and subtraction terms, and demonstrate adiabatic-order convergence",
+  "physics_pass": false,
+  "route": "TOP-X4_KK-001",
+  "rule9_review": {
+    "completed_independent_reports": 0,
+    "effect": "no reviewer-consensus or gate-promotion claim",
+    "scope": "this finite-charge operator checkpoint",
+    "status": "THREE_WAY_CLEARANCE_NOT_MET"
+  },
+  "schema": "ITSM_TOPX4_S2F3_FINITE_CHARGE_OPERATOR_v1",
+  "semiclassical_variation_contract": {
+    "diffeomorphism_ward_identity": "nabla^A T_AB^q=sum_i E_i^q nabla_B phi_i",
+    "effective_action": "Gamma=S_I1C+Gamma_even+Gamma_odd+Gamma_ct",
+    "fixed_charge_reduction": "perform only after covariant variation, using the Routhian",
+    "global_u1_identity": "Gamma_q is theta-shift invariant; corrected global charge is conserved",
+    "matter_proxy_source": "E_chi^q=+1/sqrt(-G) delta(Gamma_q)/delta(chi)",
+    "metric_source": "T_AB^q=-2/sqrt(-G) delta(Gamma_q)/delta(G^AB)",
+    "phase_source": "E_theta^q=+1/sqrt(-G) delta(Gamma_q)/delta(theta)",
+    "radial_source": "E_rho^q=+1/sqrt(-G) delta(Gamma_q)/delta(rho)",
+    "vary_before_ansatz": true
+  },
+  "source_sha256": "ed06de54970da29adf191dbb0ca2185ebaad8e0753d60894f5a8a26b29d18845",
+  "status": "PASS_FINITE_CHARGE_OPERATOR_HOLD_DYNAMIC_STATE_STRESS_AND_HESSIAN"
+}

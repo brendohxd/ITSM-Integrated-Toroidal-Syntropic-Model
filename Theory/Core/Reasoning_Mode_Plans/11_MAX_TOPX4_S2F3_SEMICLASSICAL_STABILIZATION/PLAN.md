@@ -11,17 +11,20 @@ Determine whether the frozen three-periodic-Dirac completion produces a
 self-consistent finite-charge compactification with a positive physical
 radion mass and a nonempty five-dimensional EFT domain.
 
-## Current checkpoint — 2026-09-09
+## Current checkpoint — 2026-09-12
 
 The zero-density static parity-even determinant checkpoint completed `12/12`
 bounded calculation checks. The finite-charge entry gate then completed `9/9`
 provenance and policy checks and returned
 `HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION`. Items 3--9 below
-remain open: finite-charge state-dependent variation, evolving-state control,
-physical Hessian, continuous robustness and parity/anomaly/counterterm audit.
-The static solver is not a substitute for those calculations. No A4 or Ultra
-work is opened, and Rule-9 three-way clearance is not met because Roles B and C
-returned usage-limit errors without reports.
+remain open. A subsequent 16/16 checkpoint derived the constant-background
+charged amplitude-phase operator, its Goldstone/amplitude branches and the
+fixed-global-charge Routhian/variation identities. It rejected omitted-mixing
+and wrong-sign-Routhian mutations, but did not construct an evolving quantum
+state or renormalized stress tensor. Item 3 is therefore only partially
+advanced; evolving-state control, physical Hessian, continuous robustness and
+parity/anomaly/counterterm audit remain open. No A4 or Ultra work is opened,
+and Rule-9 three-way clearance is not met.
 
 ## Required calculation
 

@@ -117,3 +117,26 @@ convergence and coupled physical Hessian keep finite-charge completion closed.
 No A4 or Ultra work is authorized. Rule-9 three-way independent clearance is
 also not met: Role A completed, while Roles B and C returned usage-limit
 errors without reports.
+
+## Plan 11 — finite-charge operator checkpoint
+
+Run the constant-background charged-scalar operator and fixed-charge
+variation checkpoint with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_finite_charge_operator_checkpoint.py
+```
+
+The recorded bounded status is:
+
+```text
+PASS_FINITE_CHARGE_OPERATOR_HOLD_DYNAMIC_STATE_STRESS_AND_HESSIAN
+```
+
+The checkpoint passes 16/16 exact algebra, provenance and mutation checks. It
+derives the amplitude-phase mixing, Goldstone/amplitude branches and
+fixed-global-charge Routhian identities, while rejecting omitted-mixing and
+wrong-sign-Routhian mutations. It retains `physics_pass: false`, has no gate
+effect and does not advance to the evolving-state determinant. The required
+next calculation is the coupled time-dependent mode system, declared
+Hadamard/adiabatic state, subtraction terms and adiabatic-order convergence.

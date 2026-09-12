@@ -1,9 +1,9 @@
 # TOP-X4 / KK-001 — higher-dimensional four-torus research fork
 
-**Status:** original `X4-D2 HOLD_UNSTABILIZED`; `X4-S2F3` Plan 11 static checkpoint complete, finite-charge entry held; A4 and Ultra entry closed
-**Date:** 2026-09-06
+**Status:** original `X4-D2 HOLD_UNSTABILIZED`; `X4-S2F3` finite-charge operator checkpoint complete, evolving-state determinant held; A4 and Ultra entry closed
+**Date:** 2026-09-12
 **Gate effect:** none
-**Rule-9 status:** Plan 11 Role A completed; Roles B and C returned usage-limit errors; three-way clearance not met
+**Rule-9 status:** static-checkpoint Role A completed, but no three-way clearance; the finite-charge operator checkpoint has no completed independent reviewer set
 
 ## Scope
 
@@ -59,14 +59,21 @@ an observational target?
 | `Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_entry_gate.py` | Fail-closed finite-charge transition gate |
 | `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_finite_charge_entry_gate_summary.json` | 9/9 entry checks; finite-charge completion held |
 | `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_ENTRY_GATE_RECEIPT_2026-09-09.md` | Entry-gate receipt and no-static-loop substitution boundary |
+| `Theory/Gates/TOP-X4/TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md` | Covariant variation, fixed-charge ensemble and charged-scalar operator contract |
+| `Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_operator_checkpoint.py` | Exact finite-charge operator and fixed-charge variation checkpoint |
+| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_finite_charge_operator_summary.json` | Deterministic 16/16 bounded result; dynamic state/stress/Hessian held |
+| `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_OPERATOR_CHECKPOINT_2026-09-12.md` | Operator-checkpoint decision, hashes and open quantum boundary |
 
 ## Entry to Max
 
 The Max A2/A3 task is complete for the exact `X4-I1C` control. Its bounded
 fixed-background scalar spectrum survives, but its radion is not stabilized
 and no EFT hierarchy is established. The High freeze is complete under
-`X4-S2F3`; Plan 11 completed the 12/12 static parity-even determinant
-checkpoint and then held at the 9/9 finite-charge entry gate. The next required
-work is the missing finite-charge state-dependent determinant/stress,
-parity/anomaly audit, evolving-state convergence and coupled physical Hessian.
-Do not begin A4 or Ultra work. No gate effect follows from the checkpoint.
+`X4-S2F3`; Plan 11 completed the 12/12 static parity-even determinant and the
+9/9 finite-charge entry gate, then completed a 16/16 constant-background
+charged-scalar operator and fixed-charge variation checkpoint. This does not
+open the evolving-state determinant. The next required work is the coupled
+time-dependent mode system, Hadamard/adiabatic state and subtraction scheme,
+state-order convergence and renormalized stress, followed by the physical
+constraint/Hessian and parity/anomaly audits. Do not begin A4 or Ultra work.
+No gate effect follows from the checkpoint.
