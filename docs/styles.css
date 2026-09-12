@@ -240,6 +240,48 @@ a:hover {
   }
 }
 
+@media (max-width: 760px) {
+  .nav-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.55rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    max-width: none;
+    justify-content: flex-start;
+    gap: 0.2rem 0.75rem;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .page-hero,
+  .page-hero .wrap,
+  main.wrap,
+  .card,
+  .section,
+  .paper {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .page-hero h1,
+  .page-hero .lede {
+    max-width: 100%;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -688,7 +730,7 @@ tr:last-child td {
 /* Papers */
 .paper {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 1rem;
   align-items: start;
   padding: 1.15rem 0;
@@ -740,6 +782,28 @@ tr:last-child td {
   background: var(--gold-soft);
   border-color: var(--gold-line);
   color: var(--gold);
+}
+
+@media (max-width: 760px) {
+  .paper {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .paper-id {
+    min-width: 0;
+  }
+
+  .paper h3,
+  .paper h3 a,
+  .paper p,
+  .paper code {
+    overflow-wrap: anywhere;
+  }
+
+  .paper .tags {
+    justify-content: flex-start;
+  }
 }
 
 /* Recovery status board */

@@ -1,5 +1,17 @@
 # ITSM Changelog & Archive History
 
+## Public Papers mobile layout repair (2026-09-12)
+
+- Changed the Papers rows to a single-column stack below 760px so the paper
+  identifier, descriptive content and status tags remain inside the card.
+- Made the mobile navigation two-row and constrained page-hero text so the
+  navigation, heading and lead paragraph cannot widen the document viewport.
+- Added safe wrapping for long canonical PDF filenames and refreshed the
+  stylesheet/service-worker cache versions.
+- Rechecked the local Papers page at the browser preview and confirmed the
+  desktop grid remains bounded; the published Pages deployment will be
+  verified against this patch after release.
+
 ## Public Pages authority sync (2026-09-12)
 
 - Audited the live GitHub Pages deployment and all seven local HTML pages
