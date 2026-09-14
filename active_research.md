@@ -1,7 +1,7 @@
 # Active Research & Gate Dashboard
 
 **Canonical Authority Baseline:** `v12.0-alpha.12`  
-**Current Date:** 12 September 2026
+**Current Date:** 14 September 2026
 **Operating Policy:** Strict Fail-Closed (Rules 1, 3, 6, 7, 8, 9)
 
 ---
@@ -105,6 +105,26 @@ High, not an alteration of the completed Max calculation. Authority:
 `Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md`.
 The registered next task is
 `Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md`.
+
+### 14 September 2026 — external evidence-watch update
+
+Six unreviewed arXiv preprints survived the dated duplicate/relevance screen;
+the two BBN analyses are the highest-priority additions. They require an
+early-plenum/`Q^mu` BBN likelihood with nuclear and abundance nuisance
+marginalization, an empirical-helium check independent of standard-BBN
+closure, JADES-matched halo clustering and cosmic-variance controls, a joint
+bright/dark-siren `H_0`--`Omega_m` inference before the `a_0` audit, an
+ITSM primordial-spectrum/LVK likelihood if such a spectrum is predicted, and
+intrinsic-alignment marginalization in weak-lensing mocks. Full source facts
+and bounded revision tasks are recorded in
+`Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md`.
+
+This is external evidence input only. It does not change `MAT-001 = BLOCKED`,
+`UVIR-003 = IN_PROGRESS`, the TOP-X4 global-state/stress hold,
+`physics_pass=false`, Rule-9 clearance, publication status or the canonical
+identity. The statement that no material new SPARC, merging-cluster, official
+DESI or GW170817 propagation result appeared is limited to this dated screen,
+not an exhaustive literature claim.
 
 ### Previously active Tier-1 critical path — preserved, temporarily suspended
 

@@ -27,7 +27,7 @@ The programme strictly adheres to the fail-closed Iron Rule:
 
 Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
 
-## 🧭 Current Core Status (recovery snapshot — 2026-09-12)
+## 🧭 Current Core Status (recovery snapshot — 2026-09-14)
 
 | Gate / Sector | Status | Physical Result |
 |---|---|---|
@@ -143,6 +143,7 @@ authoritative path.
 - [Recovery Branch Guide](RECOVERY_BRANCH_README.md)
 - [Active Research & Gate Dashboard](active_research.md)
 - [Current Recovery Changelog](CHANGELOG.md)
+- [14 September External Evidence Watch](Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md)
 - [Paper PDF Naming Registry](papers/PAPERS_NAMING.md)
 - [TOP-X4 / KK-001 Route Plan](Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md)
 - [TOP-X4 Plan 11 Static Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_STATIC_CHECKPOINT_RECEIPT_2026-09-09.md)

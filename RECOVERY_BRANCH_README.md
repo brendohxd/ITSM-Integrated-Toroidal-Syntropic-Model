@@ -5,7 +5,7 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
-## Current evidence snapshot (2026-09-12)
+## Current evidence snapshot (2026-09-14)
 
 The branch remains fail-closed. `MAT-001` is `BLOCKED`, `UVIR-003` is
 `IN_PROGRESS`, `K_Q` is `NOT_DERIVED`, and `V` is `NOT_COMPUTED`. The current
@@ -45,6 +45,13 @@ local reproducibility candidate on publication hold. The TOP-X4 Plan 11
 Rule-9 review is incomplete: the exact-transport retry has no completed
 independent reviewer set, and neither do the readiness or scalar-matrix audits.
 
+The 14 September external evidence watch records six unreviewed arXiv inputs,
+with BBN and empirical-helium constraints prioritized for later
+pre-recombination testing. It is an evidence register only: no gate, Rule-9
+clearance, publication status or canonical-identity revision changes. See
+`Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md` for the source facts
+and bounded follow-up tasks.
+
 ## Start here
 
 - **GitHub Pages (recovery site):** `docs/` — custom domain **itsm-cosmology.com**
@@ -64,6 +71,7 @@ independent reviewer set, and neither do the readiness or scalar-matrix audits.
 - Current bounded execution queue: `Theory/Core/ITSM_Recovery_Execution_Queue.md`
 - Current TOP-X4 route: `Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md`
 - Current TOP-X4 Plan 11 receipts: `Analysis/TOP/TOP-X4/`
+- 14 September external evidence watch: `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md`
 
 ## Historical manuscript package (provenance only)
 

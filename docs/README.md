@@ -4,7 +4,13 @@ Multi-page research site published at https://itsm-cosmology.com.
 
 ## Current public status
 
-Audited 12 September 2026 against the v12.0-alpha.12 recovery authority:
+Audited 14 September 2026 against the v12.0-alpha.12 recovery authority:
+
+- **External evidence watch:** six unreviewed arXiv inputs were screened on 14
+  September, with BBN and empirical-helium tests prioritized. This adds no
+  gate closure or publication clearance. The [canonical evidence
+  record](https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md)
+  contains the source facts and bounded follow-up tasks.
 
 - **TOP-X4 / X4-S2F3:** `LOCAL_PARAMETRIX_PASS_GLOBAL_STATE_STRESS_HOLD`.
   Static determinant 12/12, entry gate 9/9, finite-charge operator 16/16,

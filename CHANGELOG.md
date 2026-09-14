@@ -1,5 +1,19 @@
 # ITSM Changelog & Archive History
 
+## External evidence-watch update (2026-09-14)
+
+- Added six unreviewed arXiv inputs to
+  `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md` after duplicate and
+  relevance screening. The two BBN analyses are prioritized for a future
+  pre-recombination likelihood with explicit nuclear and abundance nuisance
+  marginalization.
+- Added bounded follow-up tasks for empirical helium, JADES clustering,
+  bright/dark sirens, primordial-curvature/LVK limits and intrinsic-alignment
+  controls in weak lensing.
+- No gate or publication status changed: `MAT-001` remains `BLOCKED`,
+  `UVIR-003` remains `IN_PROGRESS`, TOP-X4 remains on its global-state/stress
+  hold with `physics_pass=false`, and Rule-9 clearance remains unmet.
+
 ## TOP-X4 scalar-matrix Hadamard parametrix checkpoint (2026-09-12)
 
 - Added a preregistered local D5 scalar-matrix Hadamard-parametrix contract,

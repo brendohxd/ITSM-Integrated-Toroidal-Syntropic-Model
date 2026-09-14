@@ -136,9 +136,10 @@ readiness, or the canonical $T^3$ identity.
 | `Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md` | Current higher-dimensional bounded fork and decision gates |
 | `Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md` | Active Plan 11 calculation and stop boundary |
 | `Theory/Core/ITSM_Master_Research_Plan.md` | Master research workflow & identity |
+| `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md` | Dated unreviewed external evidence inputs and bounded follow-up tasks; no gate authority |
 | `papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md` | Publication firewall & claim limits |
 | `Manuscript/ITSM_Core_Cosmology_v12.0.tex` | Official v12.0 core manuscript |
 
 ---
 
-*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-12 (the TOP-X4 local scalar-matrix Hadamard parametrix passed its bounded checkpoint; global Hadamard states, gravity/parity completion, stress and all downstream gates remain closed).*
+*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-14 (the 14 September external evidence watch was recorded without changing the identity or gate boundaries; the TOP-X4 local scalar-matrix Hadamard parametrix remains a bounded checkpoint while global states, gravity/parity completion, stress and all downstream gates remain closed).*

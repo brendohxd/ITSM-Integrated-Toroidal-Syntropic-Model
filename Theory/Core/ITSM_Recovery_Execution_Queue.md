@@ -2,7 +2,7 @@
 
 **Branch:** `recovery/v12-core-architecture`
 **Queue opened:** 2026-08-05
-**Queue reconciled:** 2026-09-12
+**Queue reconciled:** 2026-09-14
 **Sprint goal:** preserve the UVIR-to-MAT fail-closed boundary while routing
 new derivation work through the bounded TOP-X4 / KK-001 Plan 11 decision.
 
@@ -47,6 +47,7 @@ outputs remain the evidence authority.
 | P1 | TOP-001 3D Epstein Casimir tensor | **open scaffold** | Evaluate full 3D Epstein zeta function $Z_3(s)$ on $T^3$ and solve Raychaudhuri shear equations |
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes compared under eight hard requirements; C2 retained as calculation scaffold |
 | P1 | RES R1/R2/R3 constitutive-route evidence rubric | **completed** | All routes compared under eight hard requirements; R0 retained as control |
+| P1 | 14 September external evidence watch | **recorded; no gate change** | Six unreviewed arXiv inputs recorded; BBN/helium, JWST clustering, siren, LVK-curvature and intrinsic-alignment follow-ups are dependency-locked in `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md` |
 
 ## Quarantined 29 August queue assertions
 
