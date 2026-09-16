@@ -51,7 +51,7 @@ outputs remain the evidence authority.
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes compared under eight hard requirements; C2 retained as calculation scaffold |
 | P1 | RES R1/R2/R3 constitutive-route evidence rubric | **completed** | All routes compared under eight hard requirements; R0 retained as control |
 | P1 | 14 September external evidence watch | **recorded; no gate change** | Six unreviewed arXiv inputs recorded; BBN/helium, JWST clustering, siren, LVK-curvature and intrinsic-alignment follow-ups are dependency-locked in `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md` |
-| P1 | BBN-001 bundled-table/CAMB and external-network controls | **completed locally; not yet published** | Six focused regression checks, five table schemas, PRIMAT 2024 compatibility, CAMB bridge and isolated AlterAlterBBN baseline/expansion controls pass; remains `CONTROL_ONLY`, `physics_pass=false`, `gate_effect=NONE` |
+| P1 | BBN-001 bundled-table/CAMB and external-network controls | **completed and published** | Six focused regression checks, five table schemas, PRIMAT 2024 compatibility, CAMB bridge and isolated AlterAlterBBN baseline/expansion controls pass; remains `CONTROL_ONLY`, `physics_pass=false`, `gate_effect=NONE` |
 | P1 | BBN-001 ITSM upstream-background interface preflight | **completed; upstream physics blocked** | Registered UVIR-003 export is checked for the external six-column history and ITSM closing inputs; missing physical temperature, units, plenum, transfer, charge-source and $G_{\rm eff}$ fields fail closed; no quantity is inferred |
 
 ## Quarantined 29 August queue assertions
