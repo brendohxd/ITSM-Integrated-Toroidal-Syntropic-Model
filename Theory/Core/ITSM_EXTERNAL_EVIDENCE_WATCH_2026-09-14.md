@@ -155,6 +155,25 @@ alignment prescriptions and goodness-of-fit tests.
 
 ## Gate and publication decision
 
+## Bounded BBN-001 implementation checkpoint
+
+On 14 September 2026 the local CAMB BBN adapter received a bounded schema
+repair and control receipt. The five bundled tables load through the default
+axis request; the PRIMAT 2024 `Ombh2` header is resolved by a unique,
+case-insensitive compatibility rule; malformed or ambiguous schemas fail
+closed; and the automatic path is numerically identical to the former
+explicit `function_of=("Ombh2", "DeltaN")` path. The focused six-test suite
+and the CAMB helium bridge pass, with two byte-identical receipt runs.
+
+The executable and receipt are
+`Analysis/Cosmology/BBN-001/bbn001_control.py` and
+`Analysis/Cosmology/BBN-001/outputs/bbn001_control_summary.json`. This is
+`CONTROL_ONLY`, `physics_pass=false`, `gate_effect=NONE` and
+`NOT_A_PHYSICS_CLAIM`. It does not implement the early-plenum action, `Q^mu`,
+`G_eff(z)`, perturbation matching, empirical-helium likelihood or Planck+DESI
+joint inference. Independent reproduction and three-way consensus remain
+outstanding.
+
 This evidence watch is an input register, not a gate receipt or independent
 review. The following statuses are unchanged:
 

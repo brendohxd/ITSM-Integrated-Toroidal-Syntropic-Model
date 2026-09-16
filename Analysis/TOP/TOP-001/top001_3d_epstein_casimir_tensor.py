@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""TOP-001: 3D Epstein Zeta Function Casimir Stress Tensor Solver.
+"""TOP-001: bounded finite-cutoff Epstein-zeta stress control.
 
 Computes the renormalized Casimir energy density and anisotropic directional pressures
-for a massless field on a triaxial rectangular 3-torus (T3) using the 3D Epstein zeta function.
-Verifies the exact conformal trace identity T^mu_mu = 0 and evaluates anisotropic stress
+for a massless field on a triaxial rectangular 3-torus (T3) using a truncated direct
+lattice sum with a Richardson extrapolation diagnostic. Verifies the algebraic
+trace identity of that truncated expression and evaluates anisotropic stress
 across triaxial shape configurations (Rule 1, 3, 4, 6).
+
+This is a static mathematical control only. It is not an independent Ewald or
+functional-equation evaluation, a dynamical curved-spacetime stress calculation,
+a modulus action, or a TOP-001 physics pass.
 """
 
 import json
@@ -115,14 +120,22 @@ def main():
     # Checks
     all_trace_pass = all(r["trace_residual"] < 1e-4 for r in grid_results)
     passed_all = cube_pass and all_trace_pass
-    status_str = "PASS_TOP001_3D_EPSTEIN_CASIMIR" if passed_all else "FAIL_TOP001"
+    status_str = "PASS_TOP001_STATIC_EPSTEIN_CONTROL" if passed_all else "FAIL_TOP001_STATIC_CONTROL"
 
     summary = {
         "gate": "TOP-001",
         "subgate": "3D_EPSTEIN_CASIMIR_TENSOR",
         "label": "TOP-001_EPSTEIN_ZETA_STRESS",
         "status": status_str,
-        "physics_pass": True,
+        "physics_pass": False,
+        "gate_effect": "NONE",
+        "publication_status": "NOT_A_PHYSICS_CLAIM",
+        "epistemic_status": "BOUNDED_STATIC_NUMERICAL_CONTROL",
+        "scientific_boundary": (
+            "Truncated direct lattice sums and an internal Richardson extrapolation "
+            "control only; no independent noncubic evaluator, modulus action, "
+            "dynamical stress tensor or cosmological result."
+        ),
         "cube_benchmark": {
             "computed_rho": cube_res["rho_Cas"],
             "expected_rho": CUBE_BENCHMARK_RHO,
@@ -131,9 +144,16 @@ def main():
         },
         "triaxial_grid_samples": grid_results,
         "checks": [
-            {"id": "TOP.1", "description": "Cubic lattice benchmark agreement with known analytic value to < 0.05%", "pass": bool(cube_pass)},
-            {"id": "TOP.2", "description": "Exact conformal trace identity T^mu_mu = 0 satisfied across all shape ratios", "pass": bool(all_trace_pass)}
-        ]
+            {"id": "TOP.1", "description": "Finite-cutoff cubic lattice benchmark agrees with the frozen reference within the local tolerance", "pass": bool(cube_pass)},
+            {"id": "TOP.2", "description": "Truncated-expression trace identity T^mu_mu = 0 is internally satisfied across the sampled shapes", "pass": bool(all_trace_pass)}
+        ],
+        "claim_firewall": {
+            "persistent_free_field_13_over_12": False,
+            "parameter_free_H0": False,
+            "topology_derived_a0": False,
+            "cosmological_prediction": False,
+            "physics_pass": False
+        }
     }
 
     out_json = output_dir / "top001_3d_epstein_casimir_summary.json"

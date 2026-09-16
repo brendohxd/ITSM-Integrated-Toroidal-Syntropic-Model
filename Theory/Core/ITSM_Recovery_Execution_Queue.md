@@ -2,7 +2,7 @@
 
 **Branch:** `recovery/v12-core-architecture`
 **Queue opened:** 2026-08-05
-**Queue reconciled:** 2026-09-14
+**Queue reconciled:** 2026-09-16
 **Sprint goal:** preserve the UVIR-to-MAT fail-closed boundary while routing
 new derivation work through the bounded TOP-X4 / KK-001 Plan 11 decision.
 
@@ -43,11 +43,16 @@ outputs remain the evidence authority.
 | P0 | TOP-X4 `X4-S2F3` D5 Hadamard/subtraction readiness | **scaffold completed (bounded 20/20); readiness hold** | Universal D5 local coefficients and counterterm basis pass; model-specific scalar matrix operator, Hadamard states, graviton/ghosts, parity phase and normalization remain incomplete; no stress or downstream entry |
 | P0 | TOP-X4 `X4-S2F3` covariant scalar matrix operator | **completed (bounded 25/25); state/stress hold** | Fixed-metric off-shell rank-three Hessian, `E`/`Omega` data and scalar counterterm structures through `b_2` pass; Hadamard states, normalization, gravity/parity, determinant, stress and physical Hessian remain open |
 | P0 | TOP-X4 `X4-S2F3` scalar-matrix Hadamard parametrix | **completed (bounded 22/22); global-state hold** | Local D5 `U_0`--`U_2` coincidence/transport controls pass with `E=-H`, matrix `Omega` and phase-mixing controls; global state, stress, determinant, physical Hessian and Rule-9 remain open |
+| P0 | TOP-X4 `X4-S2F3` global scalar-matrix state construction | **completed (theorem-backed 10/10); Dirac/stress/Hessian hold** | Route-A pseudodifferential construction records the arbitrary-order formal symbol, Borel/smoothing realization, positive low-mode patch, exact full-matrix transport and basis covariance; `physics_pass=false`, Rule-9 clearance is unmet, and Dirac/gravity/parity, determinant, stress and physical Hessian remain open |
+| P0 | TOP-X4 `X4-S2F3` finite-order adiabatic-symbol diagnostic | **completed (bounded 8/8); global-state hold** | Route-B Riccati witness is finite and transpose-symmetric through orders 0–6; stable orders 0–3 show decreasing high-frequency residuals, positive normalized data and exact finite-mode CCR transport for the full rank-three matrix; no Borel sum or global state is claimed |
+| P0 | TOP-X4 `X4-S2F3` physical-Hessian readiness audit | **completed (readiness 8/8); physical Hessian hold** | Confirms the complete varied action, state-dependent stress, gravity/ghost/parity sectors, finite-charge background and metric/radion constraint blocks are not exported; `physical_hessian=NOT_CONSTRUCTED`, `radion_mass=NOT_COMPUTED`, `physics_pass=false` |
 | P1 | Paper-suite artifact naming | **completed locally** | P1–P4 use descriptive versioned PDF names; P3/P4 remain quarantined claim-bearing scaffolds, not publication-ready papers |
-| P1 | TOP-001 3D Epstein Casimir tensor | **open scaffold** | Evaluate full 3D Epstein zeta function $Z_3(s)$ on $T^3$ and solve Raychaudhuri shear equations |
+| P1 | TOP-001 3D Epstein Casimir tensor | **bounded controls complete; research scaffold remains open** | Static finite-cutoff Epstein stress, passive dilution and inserted-source sensitivity controls pass twice byte-identically; action-derived modulus/reservoir stress, independent dynamical stress and research-gate closure remain open |
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes compared under eight hard requirements; C2 retained as calculation scaffold |
 | P1 | RES R1/R2/R3 constitutive-route evidence rubric | **completed** | All routes compared under eight hard requirements; R0 retained as control |
 | P1 | 14 September external evidence watch | **recorded; no gate change** | Six unreviewed arXiv inputs recorded; BBN/helium, JWST clustering, siren, LVK-curvature and intrinsic-alignment follow-ups are dependency-locked in `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md` |
+| P1 | BBN-001 bundled-table/CAMB and external-network controls | **completed locally; not yet published** | Six focused regression checks, five table schemas, PRIMAT 2024 compatibility, CAMB bridge and isolated AlterAlterBBN baseline/expansion controls pass; remains `CONTROL_ONLY`, `physics_pass=false`, `gate_effect=NONE` |
+| P1 | BBN-001 ITSM upstream-background interface preflight | **completed; upstream physics blocked** | Registered UVIR-003 export is checked for the external six-column history and ITSM closing inputs; missing physical temperature, units, plenum, transfer, charge-source and $G_{\rm eff}$ fields fail closed; no quantity is inferred |
 
 ## Quarantined 29 August queue assertions
 

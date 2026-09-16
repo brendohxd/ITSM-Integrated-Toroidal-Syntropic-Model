@@ -52,7 +52,7 @@ renormalized_stress=NOT_COMPUTED
 counterterm_normalizations=NOT_FIXED
 physics_pass=false
 gate_effect=NONE
-sha256=db3ad816b25fe0a2a4227f7bc070842959bf8791937f65507041d374764e596e
+sha256=becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08
 ```
 
 Artifact hashes:
@@ -61,11 +61,13 @@ Artifact hashes:
 |---|---|
 | `TOPX4_S2F3_SCALAR_MATRIX_HADAMARD_PARAMETRIX_CONTRACT_2026-09-12.md` | `4f036104de14ac2e05f2a0edadf7aaf8da85a1209d6852e6ef5a13513d9ffc56` |
 | `topx4_s2f3_scalar_matrix_hadamard_parametrix_checkpoint.py` | `5a9d17c94a73d69caa87afd34b47617bbd18765ffb10f00dfac3e88af20a201c` |
-| `topx4_s2f3_scalar_matrix_hadamard_parametrix_summary.json` | `db3ad816b25fe0a2a4227f7bc070842959bf8791937f65507041d374764e596e` |
+| `topx4_s2f3_scalar_matrix_hadamard_parametrix_summary.json` | `becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08` |
 
 The authority/input sidecars matched before calculation. Two clean CLI runs
-produced the same output hash. The output contains no absolute workstation
-paths or observational target tokens.
+produced the same output hash. The deterministic output was revalidated on
+2026-09-16 after authority-document synchronization; the `22/22` local
+parametrix result and global-state hold were unchanged. The output contains no
+absolute workstation paths or observational target tokens.
 
 ## 3. Local parametrix controls
 

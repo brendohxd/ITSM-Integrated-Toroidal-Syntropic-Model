@@ -49,6 +49,7 @@ This scaffold does **not** claim that pass.
 | `Theory/Gates/TOP-001/README.md` | This index |
 | `Theory/Gates/TOP-001/TOP-001_GATE_SPEC.md` | Full gate specification |
 | `Theory/Gates/TOP-001/TOP-001_TEMPLATE_REVIEW.md` | Independent reproduction and hardening record |
+| `Theory/Gates/TOP-001/TOP-001_CLAIM_FIREWALL_RECONCILIATION_2026-09-16.md` | Current receipt/status reconciliation for legacy Casimir and driven-toy outputs |
 | `Theory/Gates/TOP-001/TOP-001_STAGE_S1_TRIAXIAL.md` | Stage S1 full-triaxial fixed-volume audit note |
 | `Theory/Gates/TOP-001/TOP-001_STAGE_S1M_MODULAR_BASIS.md` | Stage S1.7 exact modular-basis identity and physical-deformation separation |
 | `Theory/Gates/TOP-001/TOP-001_STAGE_S1M_PHYSICAL_CUTOFF_SPECTRUM.md` | Stage S1.8 complete physical-cutoff spectrum invariance and raw-label-box negative control |
@@ -68,6 +69,11 @@ This scaffold does **not** claim that pass.
 ## Status
 
 **Current overall gate status:** `OPEN_SCAFFOLD_ONLY`.
+
+The 16 September 2026 claim-firewall reconciliation supersedes any legacy
+pass-like field in the older TOP-001/CBR-002 outputs. Current regenerated
+receipts explicitly set `physics_pass=false`; the static sum and driven ODE
+are bounded mathematical/conditional controls only.
 
 The Stage S1.7 / S1M audit establishes that $B$ and $BM$, for declared
 $M\in SL(3,\mathbb Z)$, are exact basis descriptions of the same lattice

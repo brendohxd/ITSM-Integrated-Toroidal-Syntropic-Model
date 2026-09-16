@@ -40,7 +40,7 @@ readiness_decision=HOLD
 hadamard_stress_ready=false
 physics_pass=false
 gate_effect=NONE
-sha256=a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2
+sha256=95395d22a459b72423ce8c1cb2df35e0d42f76581a3a339cbc0d5acf2e50ab90
 ```
 
 Artifact hashes:
@@ -48,13 +48,16 @@ Artifact hashes:
 | Artifact | SHA-256 |
 |---|---|
 | `topx4_s2f3_hadamard_subtraction_readiness.py` | `e90c6b813f00ed1ccd0a7f181def6e5a3c7c7208957953d3abfa4aa7571510e6` |
-| `topx4_s2f3_hadamard_subtraction_readiness_summary.json` | `a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2` |
+| `topx4_s2f3_hadamard_subtraction_readiness_summary.json` | `95395d22a459b72423ce8c1cb2df35e0d42f76581a3a339cbc0d5acf2e50ab90` |
 
 The executable verified the sidecars of all nine registered authority/input
 artifacts before evaluating the scaffold.
 
 Three final clean CLI replays produced the same output hash
-`a36658292ee7986f2be8828222e1a2a05cd7991da824a949a5eaf749aa58a1d2`.
+`95395d22a459b72423ce8c1cb2df35e0d42f76581a3a339cbc0d5acf2e50ab90`.
+
+The deterministic output was revalidated on 2026-09-16 after authority-document
+synchronization; the `20/20` scaffold pass and readiness hold were unchanged.
 
 ## 3. What the calculation establishes
 

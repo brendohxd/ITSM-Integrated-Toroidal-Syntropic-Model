@@ -2,8 +2,12 @@
   "gate": "TOP-001",
   "subgate": "DRIVEN_MODULI_BACKREACTION",
   "label": "TOP-001_CBR002_RAYCHAUDHURI_SOLVER",
-  "status": "PASS_TOP001_DRIVEN_MODULI_BACKREACTION",
-  "physics_pass": true,
+  "status": "PASS_TOP001_CBR002_CONDITIONAL_TOY_CONTROL",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "publication_status": "NOT_A_PHYSICS_CLAIM",
+  "epistemic_status": "SCOPED_NEGATIVE_AND_CONDITIONAL_TOY",
+  "scientific_boundary": "Passive dilution and inserted-source sensitivity in a dimensionless toy system only; no action-derived Q_syn, modulus potential, renormalized dynamical stress or cosmological prediction.",
   "passive_free_field_decay": {
     "initial_Ht_over_Hp": 1.157687382958756,
     "final_Ht_over_Hp": 1.0000000000082585,
@@ -44,8 +48,8 @@
   ],
   "analytical_conclusion": {
     "free_field_attractor": "Isotropic Ht/Hp = 1.000 (re-confirms CBR-001 negative result)",
-    "driven_condensate_attractor": "Stationary anisotropic expansion Ht/Hp = 1 + (2/9)*eta/H_bg maintained by syntropic flux Q^mu_syn",
-    "stability": "Globally stable fixed point (Lyapunov exponent lambda = -3.0 H)"
+    "driven_condensate_attractor": "Conditional toy response to an inserted eta_drive; Q^mu_syn and a sustaining action are not derived",
+    "stability": "Local stability statement for the inserted-source toy only; not a physical gate result"
   },
   "checks": [
     {
@@ -55,8 +59,13 @@
     },
     {
       "id": "TOP.4",
-      "description": "Driven syntropic flux sustains stable stationary anisotropic expansion without fine-tuning",
+      "description": "Inserted-source sensitivity is numerically stable in the conditional toy",
       "pass": true
     }
-  ]
+  ],
+  "claim_firewall": {
+    "persistent_free_field_13_over_12": false,
+    "derived_Q_syn": false,
+    "physics_pass": false
+  }
 }

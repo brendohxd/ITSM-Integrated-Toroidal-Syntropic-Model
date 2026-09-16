@@ -48,6 +48,9 @@ SHA-256: `da804ba76958277bf31b7b4d4e3dff8752aa9fcf610d01ed515cab5b63ef83fd`
 Gate output:
 
 `outputs/topx4_s2f3_finite_charge_entry_gate_summary.json`  
-SHA-256: `aaa582e9d0391b641910b7efe3193c234674bfd245d35ce8454a31f228a72c6a`
+SHA-256: `88ada4734e4054de5c1d91f6bedabbd666d1621697f86f5066ba6f1fe05a8021`
+
+The deterministic output was revalidated on 2026-09-16 after authority-document
+synchronization; the `9/9` hold and gate boundary were unchanged.
 
 No A4, Ultra, phenomenology, publication, or canonical-model revision is opened by this receipt.

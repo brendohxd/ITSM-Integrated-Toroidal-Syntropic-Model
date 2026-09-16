@@ -40,17 +40,19 @@ PASS_COVARIANT_SCALAR_CHI_MATRIX_OPERATOR_HOLD_STATES_GRAVITY_PARITY_AND_STRESS
 checks=25/25
 scalar_matrix_operator=DERIVED_FIXED_METRIC_OFF_SHELL
 matter_counterterm_structures=ENUMERATED_THROUGH_B2
-sha256=11125054bb284a4597587fbcb50e0d70358232ea8bd54f579b20a3948c202560
+sha256=c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777
 ```
 
 | Artifact | SHA-256 |
 |---|---|
 | `TOPX4_S2F3_COVARIANT_SCALAR_MATRIX_CONTRACT_2026-09-12.md` | `a6d1ffb25fb9445975a4ce72661fe734a98956e6537f0549ef8b88f96ca0ff14` |
 | `topx4_s2f3_covariant_scalar_matrix_checkpoint.py` | `393584ccd00a4ea79ba1c2c8228cbca78bb925fade462b8b0740fe1c64e42f07` |
-| `topx4_s2f3_covariant_scalar_matrix_summary.json` | `11125054bb284a4597587fbcb50e0d70358232ea8bd54f579b20a3948c202560` |
+| `topx4_s2f3_covariant_scalar_matrix_summary.json` | `c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777` |
 
 All seven registered authority/input sidecars matched. Three clean CLI
-executions produced the same output hash.
+executions produced the same output hash. The deterministic output was
+revalidated on 2026-09-16 after authority-document synchronization; the
+`25/25` fixed-metric operator result and state/stress hold were unchanged.
 
 ## 3. Derived operator
 

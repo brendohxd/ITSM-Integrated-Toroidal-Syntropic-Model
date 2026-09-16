@@ -107,6 +107,7 @@ Active priority:
    ├─ D5 Hadamard/counterterm readiness: bounded 20/20 scaffold; readiness HOLD
    ├─ covariant scalar/chi matrix operator: bounded 25/25; states/stress held
    ├─ scalar-matrix local Hadamard parametrix: bounded 22/22; global state/stress held
+   ├─ Route-A global scalar-matrix state: theorem-backed 10/10; Dirac/gravity/parity, determinant, stress and Hessian held
    └─ A4 and Ultra remain closed; physics_pass=false, gate_effect=NONE
 Preserved but suspended:
 └─ PKM1 A0–A6 and the U3/M4/U5–U7 cheap-screen package
@@ -142,4 +143,4 @@ readiness, or the canonical $T^3$ identity.
 
 ---
 
-*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-14 (the 14 September external evidence watch was recorded without changing the identity or gate boundaries; the TOP-X4 local scalar-matrix Hadamard parametrix remains a bounded checkpoint while global states, gravity/parity completion, stress and all downstream gates remain closed).*
+*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-16 (the theorem-backed Route-A scalar-matrix state construction is recorded as a bounded mathematical checkpoint; Dirac/gravity/parity completion, determinant, renormalized stress, physical Hessian and all downstream gates remain closed).*

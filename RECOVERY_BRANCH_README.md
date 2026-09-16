@@ -5,7 +5,7 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
-## Current evidence snapshot (2026-09-14)
+## Current evidence snapshot (2026-09-16)
 
 The branch remains fail-closed. `MAT-001` is `BLOCKED`, `UVIR-003` is
 `IN_PROGRESS`, `K_Q` is `NOT_DERIVED`, and `V` is `NOT_COMPUTED`. The current
@@ -39,6 +39,18 @@ state, counterterm normalization, determinant, stress, physical Hessian,
 gravity/ghost, parity/anomaly and Rule-9 work therefore remain held; no A4,
 Ultra, phenomenology, publication or canonical-model revision is opened.
 
+The bounded Route-B finite-order adiabatic-symbol diagnostic then passed 8/8.
+Its matrix Riccati recurrence is finite and transpose-symmetric through orders
+0--6, with orders 0--3 declared as the stable high-frequency witness. Positive
+normalized initial data and exact finite-mode CCR transport pass for the full
+coupled rank-three scalar matrix in all registered directions. The subsequent
+Route-A theorem-backed scalar-state construction passes 10/10 and records the
+formal all-order symbol, Borel/smoothing realization, positive low-mode patch,
+exact full-matrix Cauchy evolution and basis covariance. This is a mathematical
+scalar-state checkpoint, not independent peer review or a numerical physics
+pass: Dirac/gravity/ghost, parity/anomaly, counterterm normalization,
+determinant, stress, physical Hessian and Rule-9 remain held.
+
 The current RES-001 control is a quarantined single-mode GKSL steady-state toy,
 not a two-bath detailed-balance/Spohn derivation. The P2/CBR-001 repair is a
 local reproducibility candidate on publication hold. The TOP-X4 Plan 11
@@ -51,6 +63,12 @@ pre-recombination testing. It is an evidence register only: no gate, Rule-9
 clearance, publication status or canonical-identity revision changes. See
 `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md` for the source facts
 and bounded follow-up tasks.
+
+The 16 September BBN-001 controls now include the isolated external-network
+baseline and expansion-response checks plus a UVIR upstream-interface preflight.
+Those controls remain `CONTROL_ONLY`; the physical temperature/unit map,
+early-plenum density, distinct transfer and charge-source currents, and
+action-derived `G_eff` are not exported by the current UVIR branch.
 
 ## Start here
 
@@ -72,6 +90,7 @@ and bounded follow-up tasks.
 - Current TOP-X4 route: `Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md`
 - Current TOP-X4 Plan 11 receipts: `Analysis/TOP/TOP-X4/`
 - 14 September external evidence watch: `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md`
+- BBN-001 control and upstream-interface preflight: `Analysis/Cosmology/BBN-001/`
 
 ## Historical manuscript package (provenance only)
 

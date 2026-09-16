@@ -19,6 +19,10 @@ Stage S0.4 / S1 of the gate spec only.
 | `top001_s1_triaxial_fixed_volume_audit.py` | **Stage S1** full-triaxial fixed-volume log-shape audit (separate) |
 | `top001_s1m_modular_basis_equivalence_audit.py` | **Stage S1.7 / S1M** exact $SL(3,\mathbb Z)$ basis-equivalence and deformation-separation audit |
 | `top001_s1m_physical_cutoff_spectrum_audit.py` | **Stage S1.8 / S1M robustness** complete physical-eigenvalue cutoff spectrum and raw-label-box negative control |
+| `top001_3d_epstein_casimir_tensor.py` | bounded static finite-cutoff stress control; not an independent full-zeta or physics-gate result |
+| `top001_coupled_moduli_ode_solver.py` | quarantined dimensionless passive/inserted-source toy; conditional only |
+| `top001_driven_moduli_backreaction_solver.py` | bounded inserted-source sensitivity control; no derived `Q_syn` |
+| `top001_claim_firewall_audit.py` | fail-closed metadata, path and sidecar-hash regression audit |
 | `outputs/` (created on run) | Deterministic JSON summaries + sha256 sidecars |
 
 ## Run

@@ -1,7 +1,7 @@
 # TOP-X4 / KK-001 — higher-dimensional four-torus research fork
 
-**Status:** original `X4-D2 HOLD_UNSTABILIZED`; `X4-S2F3` local scalar-matrix Hadamard parametrix passed 22/22, but global states/gravity/parity/stress remain held; A4 and Ultra entry closed
-**Date:** 2026-09-12
+**Status:** original `X4-D2 HOLD_UNSTABILIZED`; `X4-S2F3` local scalar-matrix Hadamard parametrix passed 22/22, the finite-order Route-B symbol diagnostic passed 8/8 and the registered scalar state is theorem-backed at 10/10, but Dirac/gravity/parity/stress remain held; A4 and Ultra entry closed
+**Date:** 2026-09-16
 **Gate effect:** none
 **Rule-9 status:** no three-way clearance; the Plan 11 scalar-matrix checkpoints have no completed independent reviewer set
 
@@ -83,6 +83,19 @@ an observational target?
 | `Analysis/TOP/TOP-X4/topx4_s2f3_scalar_matrix_hadamard_parametrix_checkpoint.py` | Local `U_0`--`U_2` coincidence/transport, matrix and firewall executable |
 | `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_scalar_matrix_hadamard_parametrix_summary.json` | Deterministic 22/22 local-parametrix result; global state/stress HOLD |
 | `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_SCALAR_MATRIX_HADAMARD_PARAMETRIX_CHECKPOINT_2026-09-12.md` | Local-parametrix receipt, hashes, limitations and next boundary |
+| `Theory/Gates/TOP-X4/TOPX4_S2F3_GLOBAL_STATE_CONSTRUCTION_CONTRACT_2026-09-16.md` | Frozen all-order scalar-matrix state contract and theorem-backed execution boundary |
+| `Analysis/TOP/TOP-X4/topx4_s2f3_global_state_construction_preflight.py` | 9/9 prerequisite audit for the global-state construction |
+| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_global_state_construction_preflight_summary.json` | Deterministic 9/9 preflight result; predecessor hold preserved |
+| `Analysis/TOP/TOP-X4/topx4_s2f3_adiabatic_symbol_diagnostic.py` | Bounded Route-B finite-order matrix Riccati-symbol diagnostic |
+| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_adiabatic_symbol_diagnostic_summary.json` | Deterministic 8/8 finite-order witness including full rank-three transport; global-state hold remains binding |
+| `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_ADIABATIC_SYMBOL_DIAGNOSTIC_2026-09-16.md` | Finite-order symbol receipt, hashes and non-promotion boundary |
+| `Analysis/TOP/TOP-X4/topx4_s2f3_global_state_construction.py` | Route-A theorem-backed scalar-state construction and firewall executable |
+| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_global_state_construction_summary.json` | Deterministic 10/10 theorem-backed scalar-state result; physics and downstream holds retained |
+| `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_GLOBAL_STATE_CONSTRUCTION_2026-09-16.md` | Theorem-backed scalar-state receipt, hashes and non-promotion boundary |
+| `Theory/Gates/TOP-X4/TOPX4_S2F3_PHYSICAL_HESSIAN_READINESS_CONTRACT_2026-09-16.md` | Frozen single-gate readiness contract; no Hessian calculation |
+| `Analysis/TOP/TOP-X4/topx4_s2f3_physical_hessian_readiness.py` | Eight-check physical-Hessian input/readiness audit |
+| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json` | Deterministic 8/8 readiness hold; physical Hessian not constructed |
+| `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_PHYSICAL_HESSIAN_READINESS_2026-09-16.md` | Readiness receipt, missing-input inventory and stop boundary |
 
 ## Entry to Max
 
@@ -159,3 +172,54 @@ Hessian, gravity/ghost and parity sectors remain open. The binding fields are
 `gate_effect=NONE`; no A4, Ultra or downstream promotion follows. The next
 single gate is a globally admissible infinite-order scalar-matrix state
 construction.
+
+## Plan 11 — theorem-backed global scalar-state construction
+
+The registered Route-A construction now passes `10/10` under the binding
+status `PASS_GLOBAL_SCALAR_MATRIX_HADAMARD_STATE_HOLD_DIRAC_STRESS_AND_HESSIAN`.
+It records the arbitrary-order pseudodifferential symbol, its theorem-backed
+Borel/smoothing realization, a positive finite-rank low-mode patch, exact
+full-matrix Cauchy evolution and constant bundle-basis covariance. The finite
+transport values remain numerical consistency witnesses; the receipt is a
+mathematical scalar-state construction record, not independent peer review or
+a numerical physics pass.
+
+The predecessor preflight and finite-order diagnostic remain preserved as
+separate evidence. The scalar-state field is
+`THEOREM_BACKED_CONSTRUCTED`, while `physics_pass=false`, `gate_effect=NONE`,
+Rule-9 non-clearance, determinant, renormalized stress, physical Hessian,
+Dirac/gravity/ghost, parity/anomaly, A4 and Ultra remain held. No MAT, UVIR,
+cosmology, BBN or publication promotion follows.
+
+## Plan 11 — finite-order adiabatic-symbol diagnostic
+
+The bounded Route-B diagnostic is executed with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_adiabatic_symbol_diagnostic.py
+```
+
+It passes `8/8` checks under the binding status
+`HOLD_GLOBAL_STATE_CONSTRUCTION_NOT_ESTABLISHED`. The matrix Riccati
+recurrence is evaluated through orders `0`--`6`, with orders `0`--`3` named
+as the stable numerical witness. The witness has decreasing high-frequency
+residuals, positive normalized initial data and exact finite-mode CCR
+transport for the full coupled rank-three scalar matrix in all registered
+directions. The higher-order tail is diagnostic only; no all-order
+convergence or Borel sum is asserted. The global state, smoothing remainder,
+wavefront condition, stress, determinant, physical Hessian, Rule-9 and
+publication gates remain held with `physics_pass=false` and `gate_effect=NONE`.
+
+## Plan 11 — physical-Hessian readiness
+
+The single-gate readiness audit passes `8/8` under
+`HOLD_PHYSICAL_HESSIAN_INPUTS_NOT_CLOSED`. It verifies that the fixed-metric
+rank-three scalar operator and theorem-backed scalar state do not supply the
+complete constrained object. A finite-charge on-shell background, renormalized
+state-dependent stress, gravity/ghost/parity sectors, counterterm
+normalizations and the metric/radion auxiliary constraint blocks remain
+unavailable. The binding fields are
+`physical_hessian=NOT_CONSTRUCTED`, `radion_mass=NOT_COMPUTED`,
+`physics_pass=false` and `gate_effect=NONE`. No mixing block is inferred or
+set to zero, and no MAT, UVIR, cosmology, BBN, A4, Ultra or publication status
+changes.

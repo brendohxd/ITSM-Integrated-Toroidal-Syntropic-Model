@@ -1,0 +1,405 @@
+{
+  "authority_receipts": [
+    {
+      "actual": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+      "expected": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+      "matches": true,
+      "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_GLOBAL_STATE_CONSTRUCTION_CONTRACT_2026-09-16.md"
+    },
+    {
+      "actual": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+      "expected": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+      "matches": true,
+      "path": "Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md"
+    },
+    {
+      "actual": "2685f5c7c0fcdf9f036e7660efd11b3509b5611f49b5cf243614d6b78fa1518c",
+      "expected": "2685f5c7c0fcdf9f036e7660efd11b3509b5611f49b5cf243614d6b78fa1518c",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_global_state_construction_preflight_summary.json"
+    },
+    {
+      "actual": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+      "expected": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_scalar_matrix_hadamard_parametrix_summary.json"
+    },
+    {
+      "actual": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+      "expected": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_exact_transport_retry_summary.json"
+    }
+  ],
+  "blocking_reasons": [
+    "The executable evaluates only a finite set of formal adiabatic orders.",
+    "No Borel-summed symbol or explicit smoothing remainder is constructed.",
+    "No global bidistribution is materialized or independently checked as a wavefront object.",
+    "No renormalized stress, determinant, physical Hessian, gravity/ghost or parity sector is included."
+  ],
+  "calculation_status": "PASS_FINITE_ORDER_SYMBOL_DIAGNOSTIC",
+  "checks": [
+    {
+      "name": "authority_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+          "expected": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+          "matches": true,
+          "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_GLOBAL_STATE_CONSTRUCTION_CONTRACT_2026-09-16.md"
+        },
+        {
+          "actual": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+          "expected": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+          "matches": true,
+          "path": "Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md"
+        },
+        {
+          "actual": "2685f5c7c0fcdf9f036e7660efd11b3509b5611f49b5cf243614d6b78fa1518c",
+          "expected": "2685f5c7c0fcdf9f036e7660efd11b3509b5611f49b5cf243614d6b78fa1518c",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_global_state_construction_preflight_summary.json"
+        },
+        {
+          "actual": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+          "expected": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_scalar_matrix_hadamard_parametrix_summary.json"
+        },
+        {
+          "actual": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+          "expected": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_exact_transport_retry_summary.json"
+        }
+      ]
+    },
+    {
+      "name": "preflight_and_predecessor_holds_are_preserved",
+      "ok": true,
+      "preflight_checks": "9/9",
+      "preflight_status": "HOLD_GLOBAL_STATE_CONSTRUCTION_NOT_ESTABLISHED"
+    },
+    {
+      "arbitrary_order_loop": true,
+      "coefficient_finite": true,
+      "implemented_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "maximum_transpose_residual": 0.0,
+      "name": "finite_order_recurrence_witness_is_finite_and_transpose_symmetric",
+      "ok": true
+    },
+    {
+      "limitation": "orders 0-3 are the bounded numerical witness; orders 4-6 are retained as an asymptotic-tail diagnostic and are not required to decrease with truncation",
+      "name": "stable_low_order_symbol_residual_decreases_with_lambda",
+      "ok": true,
+      "residual_envelopes": {
+        "obs_0.000000_internal_1.000000": {
+          "0": 0.03973614456817325,
+          "1": 0.003639694940954333,
+          "2": 0.0008546504277076073,
+          "3": 0.0003030552717186618,
+          "4": 0.005930176542884613,
+          "5": 0.6292980631022084,
+          "6": 66.1465876969435
+        },
+        "obs_0.707107_internal_0.707107": {
+          "0": 0.03973614456881988,
+          "1": 0.003639694973604836,
+          "2": 0.0008546453279855832,
+          "3": 0.00030382820609531943,
+          "4": 0.0060892326141432146,
+          "5": 0.6556064828031856,
+          "6": 68.60796641411181
+        },
+        "obs_1.000000_internal_0.000000": {
+          "0": 0.03973614456817325,
+          "1": 0.003639694940954333,
+          "2": 0.0008546504277076872,
+          "3": 0.00030305527171866064,
+          "4": 0.005930176542881092,
+          "5": 0.6292980631011104,
+          "6": 66.14658769934586
+        }
+      },
+      "stable_orders": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "initial_isotropy_or_symmetry_residual": 1.9594015597845185e-17,
+      "initial_normalization_residual": 3.330669379597343e-16,
+      "minimum_hermitian_symbol_eigenvalue": 64.00658829658597,
+      "name": "high_frequency_initial_data_are_positive_and_canonically_normalized",
+      "ok": true
+    },
+    {
+      "max_mode_isotropy_residual": 3.0602004800782654e-13,
+      "max_mode_normalization_residual": 6.612797405625914e-10,
+      "max_symplectic_residual": 3.942600313031135e-09,
+      "name": "exact_transport_of_adiabatic_witness_preserves_ccr",
+      "ok": true,
+      "solver_success": true
+    },
+    {
+      "directions": {
+        "obs_0.000000_internal_1.000000": {
+          "finite_transport": true,
+          "matrix_rank": 3,
+          "max_full_matrix_mode_isotropy_residual": 3.742977197366101e-17,
+          "max_full_matrix_mode_normalization_residual": 1.3455511813456387e-09,
+          "max_full_matrix_symplectic_residual": 1.9028965371758317e-09,
+          "solver_success": true
+        },
+        "obs_0.707107_internal_0.707107": {
+          "finite_transport": true,
+          "matrix_rank": 3,
+          "max_full_matrix_mode_isotropy_residual": 3.885432206558012e-17,
+          "max_full_matrix_mode_normalization_residual": 1.3455581041506958e-09,
+          "max_full_matrix_symplectic_residual": 1.902906010312019e-09,
+          "solver_success": true
+        },
+        "obs_1.000000_internal_0.000000": {
+          "finite_transport": true,
+          "matrix_rank": 3,
+          "max_full_matrix_mode_isotropy_residual": 3.8886326451286825e-17,
+          "max_full_matrix_mode_normalization_residual": 1.345559256036763e-09,
+          "max_full_matrix_symplectic_residual": 1.90290818327174e-09,
+          "solver_success": true
+        }
+      },
+      "lambda_value": 64.0,
+      "limitation": "This is an exact finite-grid transport witness for the coupled rank-three matrix only; it is not a global Hadamard state.",
+      "name": "full_rank_three_matrix_transport_preserves_ccr",
+      "ok": true
+    },
+    {
+      "name": "zero_mode_is_handled_by_separate_positive_low_mode_rule",
+      "ok": true,
+      "rule": "finite low modes use exact positive-Hamiltonian Cauchy data; they are a smoothing finite-rank patch"
+    }
+  ],
+  "checks_passed": 8,
+  "checks_total": 8,
+  "derived_claims": [],
+  "diagnostics": {
+    "background_points": 801,
+    "directions": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    ],
+    "full_rank_three_matrix_transport": {
+      "obs_0.000000_internal_1.000000": {
+        "finite_transport": true,
+        "matrix_rank": 3,
+        "max_full_matrix_mode_isotropy_residual": 3.742977197366101e-17,
+        "max_full_matrix_mode_normalization_residual": 1.3455511813456387e-09,
+        "max_full_matrix_symplectic_residual": 1.9028965371758317e-09,
+        "solver_success": true
+      },
+      "obs_0.707107_internal_0.707107": {
+        "finite_transport": true,
+        "matrix_rank": 3,
+        "max_full_matrix_mode_isotropy_residual": 3.885432206558012e-17,
+        "max_full_matrix_mode_normalization_residual": 1.3455581041506958e-09,
+        "max_full_matrix_symplectic_residual": 1.902906010312019e-09,
+        "solver_success": true
+      },
+      "obs_1.000000_internal_0.000000": {
+        "finite_transport": true,
+        "matrix_rank": 3,
+        "max_full_matrix_mode_isotropy_residual": 3.8886326451286825e-17,
+        "max_full_matrix_mode_normalization_residual": 1.345559256036763e-09,
+        "max_full_matrix_symplectic_residual": 1.90290818327174e-09,
+        "solver_success": true
+      }
+    },
+    "higher_order_tail_is_not_a_convergence_claim": true,
+    "lambda_grid": [
+      8.0,
+      16.0,
+      32.0,
+      64.0
+    ],
+    "minimum_high_frequency_hermitian_symbol_eigenvalue": 7.243853621480913,
+    "residual_envelopes": {
+      "obs_0.000000_internal_1.000000": {
+        "0": 0.03973614456817325,
+        "1": 0.003639694940954333,
+        "2": 0.0008546504277076073,
+        "3": 0.0003030552717186618,
+        "4": 0.005930176542884613,
+        "5": 0.6292980631022084,
+        "6": 66.1465876969435
+      },
+      "obs_0.707107_internal_0.707107": {
+        "0": 0.03973614456881988,
+        "1": 0.003639694973604836,
+        "2": 0.0008546453279855832,
+        "3": 0.00030382820609531943,
+        "4": 0.0060892326141432146,
+        "5": 0.6556064828031856,
+        "6": 68.60796641411181
+      },
+      "obs_1.000000_internal_0.000000": {
+        "0": 0.03973614456817325,
+        "1": 0.003639694940954333,
+        "2": 0.0008546504277076872,
+        "3": 0.00030305527171866064,
+        "4": 0.005930176542881092,
+        "5": 0.6292980631011104,
+        "6": 66.14658769934586
+      }
+    },
+    "stable_lambda_residuals": {
+      "obs_0.000000_internal_1.000000": {
+        "0": [
+          0.03973614456817325,
+          0.010216503691033553,
+          0.0025723381024199904,
+          0.0006442317462056338
+        ],
+        "1": [
+          0.003639694940954333,
+          0.0004636897504328143,
+          5.824129976031917e-05,
+          7.288973562055332e-06
+        ],
+        "2": [
+          0.0008546504277076073,
+          5.488643959404221e-05,
+          3.4541135112528487e-06,
+          2.162555095082965e-07
+        ],
+        "3": [
+          0.0003030552717186618,
+          9.755850056484098e-06,
+          3.071678012671163e-07,
+          9.617079391866124e-09
+        ]
+      },
+      "obs_0.707107_internal_0.707107": {
+        "0": [
+          0.03973614456881988,
+          0.010216503691199901,
+          0.002572338102461828,
+          0.0006442317462160653
+        ],
+        "1": [
+          0.003639694973604836,
+          0.00046368975466806967,
+          5.824130029471578e-05,
+          7.2889736290139785e-06
+        ],
+        "2": [
+          0.0008546453279855832,
+          5.488610944088736e-05,
+          3.4540926924199143e-06,
+          2.1625420535720052e-07
+        ],
+        "3": [
+          0.00030382820609531943,
+          9.780845240069018e-06,
+          3.079556867047615e-07,
+          9.641754259257901e-09
+        ]
+      },
+      "obs_1.000000_internal_0.000000": {
+        "0": [
+          0.03973614456817325,
+          0.010216503691033553,
+          0.0025723381024199904,
+          0.0006442317462056338
+        ],
+        "1": [
+          0.003639694940954333,
+          0.0004636897504328143,
+          5.824129976031917e-05,
+          7.288973562055332e-06
+        ],
+        "2": [
+          0.0008546504277076872,
+          5.488643959404221e-05,
+          3.4541135112528487e-06,
+          2.162555095082965e-07
+        ],
+        "3": [
+          0.00030305527171866064,
+          9.755850056484098e-06,
+          3.071678012671163e-07,
+          9.617079391866124e-09
+        ]
+      }
+    }
+  },
+  "downstream_actions": {
+    "advance_to_a4": false,
+    "advance_to_determinant": false,
+    "advance_to_physical_hessian": false,
+    "advance_to_stress": false,
+    "advance_to_ultra": false,
+    "gate_or_publication_promotion": false
+  },
+  "explicit_nonclaims": [
+    "no global scalar-matrix Hadamard state",
+    "no all-order convergence proof",
+    "no wavefront or global positivity proof",
+    "no stress, determinant, Hessian, A4, Ultra or publication result"
+  ],
+  "formal_construction": {
+    "borel_sum": "NOT_IMPLEMENTED",
+    "exact_cauchy_evolution": "FINITE_MODE_WITNESS_ONLY",
+    "implemented_witness_orders": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "recurrence_defined_for_arbitrary_order": true,
+    "route": "ROUTE_B_ADIABATIC_RICCATI_SYMBOL",
+    "smooth_low_mode_patch": "FINITE_RANK_RULE_DECLARED",
+    "validated_stable_orders": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "gate_effect": "NONE",
+  "physics_pass": false,
+  "route": "X4-S2F3",
+  "schema": "ITSM_TOPX4_S2F3_ADIABATIC_SYMBOL_DIAGNOSTIC_v1",
+  "script_sha256": "7417cec43e5e085bc2a39b280c6a8bec35e88bf43af25cd1e9e4bfc8579fb872",
+  "state_conditions": {
+    "all_order_symbol_or_smoothing_remainder": "NOT_ESTABLISHED",
+    "ccr": "FINITE_WITNESS_ONLY",
+    "global_positivity": "NOT_ESTABLISHED",
+    "global_wavefront_condition": "NOT_ESTABLISHED",
+    "smooth_matrix_bisolution": "NOT_CONSTRUCTED_GLOBALLY"
+  },
+  "status": "HOLD_GLOBAL_STATE_CONSTRUCTION_NOT_ESTABLISHED"
+}

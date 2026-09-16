@@ -58,7 +58,7 @@ fixed-charge variation checkpoint. The preregistered dynamic
 state/subtraction checkpoint then returned 11/12: the exact evolving scalar
 operator and UV hierarchy passed, but three low-mode fourth-order WKB iterates
 became non-positive near the initial boundary. The tested branchwise state is
-rejected over the full registered grid; the coupled Hadamard/Dirac state,
+  rejected over the full registered grid; the Dirac state,
 renormalized stress, anomaly/counterterm and coupled-Hessian work remain held.
 Status: `X4-S2F3 FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT`,
 `physics_pass=false`, `gate_effect=NONE`.
@@ -76,8 +76,9 @@ scalar/`chi` matrix checkpoint then passes 25/25 exact checks. It derives the
 off-shell rank-three Hessian, `E=-H`, zero bundle curvature and the
 scalar-induced counterterm structures through `b_2`, including `R*s` and
 `R*chi^2`. Current route status:
-`X4-S2F3 PASS_COVARIANT_SCALAR_CHI_MATRIX_OPERATOR_HOLD_STATES_GRAVITY_PARITY_AND_STRESS`,
-`counterterm_normalizations=NOT_FIXED`, `scalar_matrix_hadamard_state=NOT_CONSTRUCTED`,
+`X4-S2F3 PASS_GLOBAL_SCALAR_MATRIX_HADAMARD_STATE_HOLD_DIRAC_STRESS_AND_HESSIAN`,
+`counterterm_normalizations=NOT_FIXED`,
+`scalar_matrix_hadamard_state=THEOREM_BACKED_CONSTRUCTED`,
 `renormalized_stress=NOT_COMPUTED`, `physics_pass=false`, `gate_effect=NONE`.
 
 The next local scalar-matrix Hadamard-parametrix checkpoint passes 22/22 with
@@ -88,13 +89,14 @@ matrix `U_1`/`U_2` coincidence/transport controls, the frozen `E=-H` sign,
 generic bundle-curvature data and phase-aligned derivative mixing. This is a
 local parametrix result through `U_2`, with a flat constant-matrix recurrence
 as the executable matrix realization; it does not construct arbitrary-
-background off-diagonal biscalars or a global smooth state. Current route
-status is therefore
+background off-diagonal biscalars or a global smooth state. The subsequent
+Route-A theorem-backed scalar-state construction is recorded separately below;
+it does not change the local scope or downstream holds. Current route status is
+therefore
 `scalar_matrix_hadamard_parametrix=DERIVED_LOCAL_U0_U2`,
-`scalar_matrix_hadamard_state=NOT_CONSTRUCTED`,
+`scalar_matrix_hadamard_state=THEOREM_BACKED_CONSTRUCTED`,
 `counterterm_normalizations=NOT_FIXED`, `renormalized_stress=NOT_COMPUTED`,
-`physics_pass=false`, `gate_effect=NONE`. The next single gate is a globally
-admissible infinite-order scalar-matrix state; stress, determinant, physical
+`physics_pass=false`, `gate_effect=NONE`. Stress, determinant, physical
 Hessian, gravity/ghost, parity/anomaly and all downstream gates remain held.
 
 Existing P2, MAT, UVIR, VOR and RES artifacts and statuses are preserved but
@@ -120,11 +122,63 @@ and bounded revision tasks are recorded in
 `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md`.
 
 This is external evidence input only. It does not change `MAT-001 = BLOCKED`,
-`UVIR-003 = IN_PROGRESS`, the TOP-X4 global-state/stress hold,
+`UVIR-003 = IN_PROGRESS`, the TOP-X4 theorem-backed-scalar/stress hold,
 `physics_pass=false`, Rule-9 clearance, publication status or the canonical
 identity. The statement that no material new SPARC, merging-cluster, official
 DESI or GW170817 propagation result appeared is limited to this dated screen,
 not an exhaustive literature claim.
+
+### 16 September 2026 — BBN/TOP bounded-control reconciliation
+
+- BBN-001 now has an optional fail-closed adapter for an explicitly supplied
+  AlterAlterBBN executable. An isolated standard-history baseline and
+  self-consistent `0.95`/`1.05` time-reparameterisation controls reproduce
+  byte-identically and respond to the expansion perturbation. They remain
+  `CONTROL_ONLY`; the input history is external and no action-derived early
+  plenum, `Q^mu`, `G_eff(z)`, perturbation match or likelihood exists.
+- The BBN-001 upstream-interface preflight then audited the registered UVIR-003
+  export. It found only a dimensionless `t`/`H` trajectory and rejected it as
+  insufficient for a physical network history: no photon-temperature history,
+  unit map, early-plenum density, distinct transfer currents, condensate
+  charge source or action-derived `G_eff` is exported. The expected result is
+  `BLOCKED_UPSTREAM_BACKGROUND`, with `physics_pass=false` and no inferred
+  values.
+- The TOP-001 static Epstein, passive/conditional driven and coupled toy
+  receipts were re-executed and their stale pass-like claim fields were
+  corrected to `physics_pass=false`, `gate_effect=NONE` and
+  `NOT_A_PHYSICS_CLAIM`. The static direct sum and inserted-source ODE remain
+  bounded controls only; the passive result remains the scoped negative free
+  dilution finding.
+- No gate, canonical identity, publication or Rule-9 status changes follow.
+  `MAT-001` remains `BLOCKED`, `K_Q` remains `NOT_DERIVED`, `V` remains
+  `NOT_COMPUTED`, UVIR-003 remains `IN_PROGRESS`, and TOP-X4 has a
+  theorem-backed scalar state while its Dirac/gravity/parity and
+  stress/Hessian work remains held.
+- The TOP-X4 global-state contract is now executed through its registered
+  Route-A theorem-backed construction. The executable passes `10/10` and
+  records an arbitrary-order formal symbol, Borel/smoothing realization,
+  positive finite-rank low-mode patch, exact full-matrix Cauchy evolution and
+  bundle-basis covariance. This is a mathematical scalar-state construction
+  checkpoint, not independent peer review or a numerical `physics_pass`.
+- The bounded Route-B adiabatic-symbol diagnostic then passed `8/8`. Its
+  finite Riccati recurrence is finite and transpose-symmetric through orders
+  `0`--`6`; orders `0`--`3` form the stable high-frequency witness, while the
+  higher-order tail is explicitly not a convergence claim. Positive normalized
+  initial data and exact finite-mode CCR transport pass for the full coupled
+  rank-three scalar matrix in all registered directions, but no Borel sum,
+  global bisolution, wavefront proof, stress, determinant or Hessian follows.
+- The Route-A receipt preserves the finite-order diagnostic and the prior WKB
+  failure as separate evidence. `physics_pass=false`, `gate_effect=NONE`,
+  Rule-9 clearance and all downstream MAT/UVIR/BBN boundaries remain
+  unchanged; Dirac/gravity/ghost, parity/anomaly, determinant, stress and the
+  physical Hessian are the next TOP-X4 completion boundary.
+- The single-gate physical-Hessian readiness audit passes `8/8` under
+  `HOLD_PHYSICAL_HESSIAN_INPUTS_NOT_CLOSED`. It confirms that the complete
+  varied semiclassical action, state-dependent stress, finite-charge on-shell
+  background and metric/radion constraint blocks are not available. It records
+  `physical_hessian=NOT_CONSTRUCTED`, `radion_mass=NOT_COMPUTED`,
+  `physics_pass=false` and `gate_effect=NONE`; no mixing is inferred and no
+  MAT, UVIR, cosmology, BBN, Rule-9 or publication status changes.
 
 ### Previously active Tier-1 critical path — preserved, temporarily suspended
 

@@ -110,9 +110,12 @@ Hadamard boundary described by Hollands,
 |---|---|
 | `Theory/Gates/TOP-X4/TOPX4_S2F3_EXACT_TRANSPORT_RETRY_CONTRACT_2026-09-12.md` | `0cba0d6b36135e2cc3d1bd85462625e6090f47c1eec3327ff48558666a5ad9c8` |
 | `Analysis/TOP/TOP-X4/topx4_s2f3_exact_transport_retry_checkpoint.py` | `b381df5bd94b253ae78cc434f225d0014f3e96b5859a638a7787f26363089644` |
-| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_exact_transport_retry_summary.json` | `de3426c753e55da8b55a5f0151bc875b5060c4bf3d7fbae75ab044c93273a1d6` |
+| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_exact_transport_retry_summary.json` | `94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747` |
 
 All ten frozen authority sidecars matched in the executable receipt.
+
+The deterministic output was revalidated on 2026-09-16 after authority-document
+synchronization; the `18/18` bounded result and hold boundary were unchanged.
 
 ## Scientific boundary and next admissible work
 

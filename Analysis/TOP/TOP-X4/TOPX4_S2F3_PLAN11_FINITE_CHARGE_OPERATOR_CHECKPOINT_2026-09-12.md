@@ -71,10 +71,13 @@ closed.
 - Source: `topx4_s2f3_finite_charge_operator_checkpoint.py`
 - Source SHA-256: `ed06de54970da29adf191dbb0ca2185ebaad8e0753d60894f5a8a26b29d18845`
 - Output: `outputs/topx4_s2f3_finite_charge_operator_summary.json`
-- Output SHA-256: `53d9e3673224b68c4ebeedf861fbb88d7b830d48bbe2bc6a53180cb5db79885b`
+- Output SHA-256: `b2440221e9bfd5bcd56a40f29e3a731b0fbd44d43d2ab86ef7f300e7c121c4e6`
 - Variation contract: `Theory/Gates/TOP-X4/TOPX4_S2F3_FINITE_CHARGE_VARIATION_CONTRACT_2026-09-09.md`
 - Contract SHA-256: `916e4beb4c295845e684c32da2bb921cde8942e7d48ea69f05eba92c1bb1a2fa`
 - Two consecutive executions produced byte-identical output.
+
+The deterministic output was revalidated on 2026-09-16 after authority-document
+synchronization; the `16/16` bounded result and hold boundary were unchanged.
 
 ## Rule-9 status
 

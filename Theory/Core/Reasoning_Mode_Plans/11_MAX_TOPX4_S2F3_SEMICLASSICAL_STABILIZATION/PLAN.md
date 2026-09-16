@@ -11,7 +11,7 @@ Determine whether the frozen three-periodic-Dirac completion produces a
 self-consistent finite-charge compactification with a positive physical
 radion mass and a nonempty five-dimensional EFT domain.
 
-## Current checkpoint — 2026-09-12
+## Current checkpoint — 2026-09-16
 
 The zero-density static parity-even determinant checkpoint completed `12/12`
 bounded calculation checks. The finite-charge entry gate then completed `9/9`
@@ -76,12 +76,43 @@ constant-matrix recurrence supplies the executable matrix transport
 realization. This derives local parametrix data through `U_2` only: the
 arbitrary-background off-diagonal biscalars, smooth state term `W`, positivity,
 wavefront condition, counterterm normalizations, determinant, stress and
-physical Hessian remain open. Thus
-`scalar_matrix_hadamard_parametrix=DERIVED_LOCAL_U0_U2`,
-`scalar_matrix_hadamard_state=NOT_CONSTRUCTED`, `physics_pass=false`, and
-`gate_effect=NONE` remain binding, and all downstream items stay closed. The
-next single gate is a globally admissible infinite-order scalar-matrix state
-construction.
+  physical Hessian remain open. Thus the local parametrix line remains
+`scalar_matrix_hadamard_parametrix=DERIVED_LOCAL_U0_U2`; the subsequent
+theorem-backed scalar-state result is recorded below and does not close the
+other quantum sectors or downstream items.
+
+### 16 September 2026 boundary reconciliation
+
+The global-state construction preflight passes `9/9` prerequisites, including
+finite positive zero-mode `K` and Hamiltonian eigenvalues across the registered
+A1 background. A separate bounded Route-B matrix Riccati-symbol diagnostic
+passes `8/8`: the recurrence is evaluated through orders `0`--`6`, orders
+`0`--`3` are the stable high-frequency witness, full rank-three finite
+transport passes and positive normalized data plus exact finite-mode CCR
+transport pass. The orders `4`--`6` tail is retained only as an asymptotic
+diagnostic; it is not an all-order convergence result.
+
+The registered Route-A theorem-backed scalar-state construction then passes
+`10/10`. It records the arbitrary-order pseudodifferential symbol,
+Borel/smoothing realization, positive finite-rank low-mode patch, exact
+full-matrix Cauchy evolution and bundle-basis covariance. This advances the
+scalar-state portion of Item 2 under the status
+`PASS_GLOBAL_SCALAR_MATRIX_HADAMARD_STATE_HOLD_DIRAC_STRESS_AND_HESSIAN`.
+It is a mathematical theorem-backed checkpoint, not independent peer review
+or a numerical `physics_pass`; Dirac/gravity/ghost, parity/anomaly, counterterm
+normalization, determinant, stress, physical Hessian, A4 and Ultra remain
+open or held. MAT, UVIR, cosmology, BBN, Rule-9 and publication status are
+unchanged.
+
+The subsequent single-gate physical-Hessian readiness audit passes `8/8` and
+returns `HOLD_PHYSICAL_HESSIAN_INPUTS_NOT_CLOSED`. It confirms that the
+fixed-metric scalar operator and theorem-backed scalar state do not provide
+the complete varied semiclassical action, state-dependent stress,
+finite-charge on-shell background or metric/radion constraint blocks needed
+for a physical reduced Hessian. It records
+`physical_hessian=NOT_CONSTRUCTED`, `radion_mass=NOT_COMPUTED`,
+`physics_pass=false` and `gate_effect=NONE`; no mixing is inferred and all
+downstream status remains unchanged.
 
 ## Required calculation
 

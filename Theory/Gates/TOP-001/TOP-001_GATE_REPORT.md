@@ -10,6 +10,15 @@
 - `Analysis/TOP/TOP-001/top001_coupled_moduli_ode_solver.py`
 - `Analysis/TOP/TOP-001/top001_driven_moduli_backreaction_solver.py`
 
+**16 September 2026 reconciliation.** This dated report preserves the
+historical bounded calculations, but its legacy executable outputs contained
+pass-like fields that were too easy to read as a research-gate pass. The
+current claim-firewall reconciliation is
+`TOP-001_CLAIM_FIREWALL_RECONCILIATION_2026-09-16.md`; the regenerated
+receipts set `physics_pass=false`, `gate_effect=NONE` and
+`publication_status=NOT_A_PHYSICS_CLAIM`. The finite direct sum, inserted
+`eta_drive` source and omitted dynamical stress terms do not close TOP-001.
+
 ---
 
 ## 1. Executive Summary
@@ -28,7 +37,12 @@ This gate formalizes the complete 3D Epstein zeta function Casimir stress tensor
 
 ---
 
-## 2. Cryptographic Verification & Artifact Hashes
+## 2. Historical cryptographic verification & artifact hashes
+
+The hashes in this section identify the 1 September historical outputs. They
+are retained for provenance and are not the current claim-bearing status
+receipts; see the 16 September reconciliation for the regenerated fail-closed
+hashes.
 
 | Artifact | Output Path | SHA-256 Digest |
 |---|---|---|

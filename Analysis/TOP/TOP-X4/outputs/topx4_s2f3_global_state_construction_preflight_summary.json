@@ -1,0 +1,222 @@
+{
+  "authority_receipts": [
+    {
+      "actual": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+      "expected": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+      "matches": true,
+      "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_GLOBAL_STATE_CONSTRUCTION_CONTRACT_2026-09-16.md"
+    },
+    {
+      "actual": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+      "expected": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+      "matches": true,
+      "path": "Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md"
+    },
+    {
+      "actual": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+      "expected": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_a1_background_summary.json"
+    },
+    {
+      "actual": "8e920c5e699b898891fca1dc6ade0edb5359fefbaaed785698e88c8109d4280b",
+      "expected": "8e920c5e699b898891fca1dc6ade0edb5359fefbaaed785698e88c8109d4280b",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_dynamic_state_subtraction_summary.json"
+    },
+    {
+      "actual": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+      "expected": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_exact_transport_retry_summary.json"
+    },
+    {
+      "actual": "c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777",
+      "expected": "c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_covariant_scalar_matrix_summary.json"
+    },
+    {
+      "actual": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+      "expected": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_scalar_matrix_hadamard_parametrix_summary.json"
+    }
+  ],
+  "blocking_reasons": [
+    "No all-order matrix pseudodifferential symbol recursion is implemented.",
+    "No Borel-summed or theorem-instantiated Cauchy-data projector is attached to this operator.",
+    "No actual coupled smooth bisolution, CCR verification or global positivity calculation exists.",
+    "The finite registered interval does not by itself provide the global wavefront proof.",
+    "The low-mode positivity result is a prerequisite control, not a global Hadamard-state construction."
+  ],
+  "calculation_status": "PREFLIGHT_PASS",
+  "construction_status": {
+    "counterterm_normalizations": "NOT_FIXED",
+    "determinant": "NOT_COMPUTED",
+    "global_scalar_matrix_hadamard_state": "NOT_CONSTRUCTED",
+    "renormalized_stress": "NOT_COMPUTED",
+    "smooth_state_bisolution": "NOT_CONSTRUCTED"
+  },
+  "downstream_actions": {
+    "advance_to_a4": false,
+    "advance_to_determinant": false,
+    "advance_to_physical_hessian": false,
+    "advance_to_stress": false,
+    "advance_to_ultra": false,
+    "gate_or_publication_promotion": false
+  },
+  "gate": "TOP-X4",
+  "gate_effect": "NONE",
+  "low_mode_diagnostics": {
+    "charge_conservation_check": true,
+    "finite_background": true,
+    "minimum_a": 1.0,
+    "minimum_b": 1.0,
+    "minimum_rho": 0.6995359234543251,
+    "minimum_zero_mode_K_eigenvalue": 0.3888184154041395,
+    "minimum_zero_mode_hamiltonian_eigenvalue": 0.18686244398906132,
+    "positive_registered_domain": true,
+    "registered_charge_relative_drift": 1.7204015989591426e-12,
+    "sample_count": 801,
+    "solver_success": true,
+    "spatial_momentum_monotonicity_argument": "For the registered scalar matrices, k_n^2 enters both K and the upper-left Hamiltonian block as k_n^2 I_2; positivity of the zero mode therefore controls every nonzero spatial momentum mode.",
+    "zero_mode_K_positive": true,
+    "zero_mode_eigenvalue_count": 3204,
+    "zero_mode_hamiltonian_positive": true
+  },
+  "next_required_action": "Implement Route A with an explicit all-order symbol recursion, a smoothing low-mode patch, exact Cauchy evolution and theorem-backed wavefront/positivity justification; then rerun the state conditions before any stress or determinant work.",
+  "physics_pass": false,
+  "preflight_checks": [
+    {
+      "name": "all_predecessor_authority_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+          "expected": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+          "matches": true,
+          "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_GLOBAL_STATE_CONSTRUCTION_CONTRACT_2026-09-16.md"
+        },
+        {
+          "actual": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+          "expected": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+          "matches": true,
+          "path": "Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md"
+        },
+        {
+          "actual": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+          "expected": "17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_a1_background_summary.json"
+        },
+        {
+          "actual": "8e920c5e699b898891fca1dc6ade0edb5359fefbaaed785698e88c8109d4280b",
+          "expected": "8e920c5e699b898891fca1dc6ade0edb5359fefbaaed785698e88c8109d4280b",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_dynamic_state_subtraction_summary.json"
+        },
+        {
+          "actual": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+          "expected": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_exact_transport_retry_summary.json"
+        },
+        {
+          "actual": "c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777",
+          "expected": "c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_covariant_scalar_matrix_summary.json"
+        },
+        {
+          "actual": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+          "expected": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_scalar_matrix_hadamard_parametrix_summary.json"
+        }
+      ]
+    },
+    {
+      "name": "a1_background_authority_is_preserved",
+      "ok": true,
+      "physics_pass": false,
+      "status": "PASS_TOPX4_A1_CONTROL_BACKGROUND_ONLY"
+    },
+    {
+      "check_counts": "11/12",
+      "name": "prior_dynamic_wkb_failure_is_preserved",
+      "ok": true,
+      "status": "FAIL_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT"
+    },
+    {
+      "covariant_5D_subtraction": "NOT_DERIVED",
+      "full_Hadamard_state": false,
+      "name": "finite_transport_is_not_relabelled_as_hadamard",
+      "ok": true
+    },
+    {
+      "local_parametrix": "DERIVED_LOCAL_U0_U2",
+      "name": "local_parametrix_boundary_is_preserved",
+      "ok": true,
+      "scalar_matrix_hadamard_state": "NOT_CONSTRUCTED"
+    },
+    {
+      "charge_conservation_check": true,
+      "finite_background": true,
+      "minimum_a": 1.0,
+      "minimum_b": 1.0,
+      "minimum_rho": 0.6995359234543251,
+      "minimum_zero_mode_K_eigenvalue": 0.3888184154041395,
+      "minimum_zero_mode_hamiltonian_eigenvalue": 0.18686244398906132,
+      "name": "registered_background_and_zero_mode_are_finite_and_positive",
+      "ok": true,
+      "positive_registered_domain": true,
+      "registered_charge_relative_drift": 1.7204015989591426e-12,
+      "sample_count": 801,
+      "solver_success": true,
+      "spatial_momentum_monotonicity_argument": "For the registered scalar matrices, k_n^2 enters both K and the upper-left Hamiltonian block as k_n^2 I_2; positivity of the zero mode therefore controls every nonzero spatial momentum mode.",
+      "zero_mode_K_positive": true,
+      "zero_mode_eigenvalue_count": 3204,
+      "zero_mode_hamiltonian_positive": true
+    },
+    {
+      "dimension": 5,
+      "name": "principal_scalar_operator_is_normally_hyperbolic",
+      "ok": true,
+      "rank": 3,
+      "scalar_matrix_operator": "DERIVED_FIXED_METRIC_OFF_SHELL"
+    },
+    {
+      "cartesian_Omega": "0",
+      "endomorphism": "-H",
+      "name": "corrected_endomorphism_and_flat_bundle_curvature_are_preserved",
+      "ok": true,
+      "phase_aligned_Omega": "0 on smooth patch"
+    },
+    {
+      "forbidden_token_hits": [],
+      "name": "observational_target_firewall",
+      "ok": true
+    }
+  ],
+  "preflight_checks_passed": 9,
+  "preflight_checks_total": 9,
+  "route": "X4-S2F3",
+  "rule9_review": {
+    "completed_independent_reports": 0,
+    "status": "THREE_WAY_CLEARANCE_NOT_MET"
+  },
+  "schema": "ITSM_TOPX4_S2F3_GLOBAL_STATE_PREFLIGHT_v1",
+  "script_sha256": "b977188a3bc07d549d1e67fede978a38acabaafeb8c7dcff17b1ba4fca648109",
+  "selected_route": "ROUTE_A_PSEUDODIFFERENTIAL_PROJECTION_NOT_YET_IMPLEMENTED",
+  "state_conditions": {
+    "all_order_symbol_or_smoothing_remainder": false,
+    "ccr": false,
+    "global_positivity": false,
+    "global_wavefront_condition": false,
+    "low_mode_smoothing_patch": false,
+    "smooth_matrix_bisolution": false,
+    "state_coordinate_covariance": false
+  },
+  "status": "HOLD_GLOBAL_STATE_CONSTRUCTION_NOT_ESTABLISHED"
+}

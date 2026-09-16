@@ -28,6 +28,37 @@ class BBNIterpolator(RectBivariateSpline):
     grid: np.ndarray
 
 
+def _resolve_column_index(columns, requested, interpolation_table):
+    """Resolve a requested table column without silently changing its meaning.
+
+    BBN tables in the wild use both ``ombh2`` and ``Ombh2`` for the same
+    physical axis.  An exact match is preferred; a unique case-insensitive
+    match is accepted as a schema compatibility rule.  Ambiguous or missing
+    columns fail closed so that a malformed table cannot be interpreted by
+    accident.
+    """
+
+    exact_matches = [index for index, column in enumerate(columns) if column == requested]
+    if len(exact_matches) == 1:
+        return exact_matches[0]
+    if len(exact_matches) > 1:
+        raise ValueError(f'Duplicate BBN table column "{requested}" in "{interpolation_table}"')
+
+    requested_folded = requested.casefold()
+    folded_matches = [index for index, column in enumerate(columns) if column.casefold() == requested_folded]
+    if len(folded_matches) == 1:
+        return folded_matches[0]
+    if len(folded_matches) > 1:
+        matches = [columns[index] for index in folded_matches]
+        raise ValueError(
+            f'Case-insensitive BBN column lookup for "{requested}" is ambiguous in "{interpolation_table}": {matches}'
+        )
+
+    raise ValueError(
+        f'BBN table column "{requested}" not found in "{interpolation_table}". Available columns: {list(columns)}'
+    )
+
+
 class BBNPredictor:
     """
     The base class for making BBN predictions for Helium abundance
@@ -81,6 +112,13 @@ class BBN_table_interpolator(BBNPredictor):
     """
 
     def __init__(self, interpolation_table=default_interpolation_table, function_of=("ombh2", "DeltaN")):
+        try:
+            function_of = tuple(function_of)
+        except TypeError as error:
+            raise TypeError("function_of must contain exactly two table column names") from error
+        if len(function_of) != 2 or any(not isinstance(name, str) for name in function_of):
+            raise ValueError("function_of must contain exactly two table column names")
+
         if os.sep not in interpolation_table and "/" not in interpolation_table:
             interpolation_table = os.path.normpath(os.path.join(os.path.dirname(__file__), interpolation_table))
         self.interpolation_table = interpolation_table
@@ -94,15 +132,32 @@ class BBN_table_interpolator(BBNPredictor):
                         comment = line[1:]
                     else:
                         break
-        assert comment
+        if comment is None:
+            raise ValueError(f'BBN table "{interpolation_table}" has no column header')
         columns = comment.split()
-        ombh2_i = columns.index(function_of[0])
-        DeltaN_i = columns.index(function_of[1])
+        folded_columns = [column.casefold() for column in columns]
+        if len(set(folded_columns)) != len(folded_columns):
+            raise ValueError(f"BBN table has duplicate column names under case-folding: {columns}")
+        ombh2_i = _resolve_column_index(columns, function_of[0], interpolation_table)
+        DeltaN_i = _resolve_column_index(columns, function_of[1], interpolation_table)
 
         table = np.loadtxt(interpolation_table)
+        if table.ndim != 2 or table.shape[1] != len(columns):
+            raise ValueError(
+                f'BBN table schema mismatch in "{interpolation_table}": '
+                f"header has {len(columns)} columns, numeric data has shape {table.shape}"
+            )
         deltans = list(np.unique(table[:, DeltaN_i]))
         ombh2s = list(np.unique(table[:, ombh2_i]))
-        assert table.shape[0] == len(ombh2s) * len(deltans)
+        expected_rows = len(ombh2s) * len(deltans)
+        if table.shape[0] != expected_rows:
+            raise ValueError(
+                f'BBN table grid is not rectangular in "{interpolation_table}": '
+                f"{table.shape[0]} rows for {len(ombh2s)} x {len(deltans)} axis values"
+            )
+        self.function_of = function_of
+        self.table_columns = tuple(columns)
+        self.axis_columns = (columns[ombh2_i], columns[DeltaN_i])
         self.interpolators = {}
         for i, col in enumerate(columns):
             if i not in (ombh2_i, DeltaN_i) and np.count_nonzero(table[:, i]):

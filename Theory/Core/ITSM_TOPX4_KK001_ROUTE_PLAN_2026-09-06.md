@@ -306,5 +306,10 @@ realization. This advances only the local parametrix line:
 background off-diagonal biscalars, the smooth state term, positivity,
 wavefront, counterterm normalization, determinant, stress, physical Hessian,
 gravity/ghost and parity/anomaly work remain open. No A4, Ultra, Rule-9 or
-downstream promotion follows. The next single gate is a globally admissible
-infinite-order scalar-matrix state construction.
+  downstream promotion follows. The registered Route-A theorem-backed
+  scalar-state construction subsequently passes `10/10`, recording the
+  arbitrary-order symbol, Borel/smoothing realization, positive low-mode patch,
+  exact full-matrix evolution and basis covariance. This is a mathematical
+  scalar-state checkpoint only; Dirac/gravity/ghost, parity/anomaly,
+  normalization, determinant, stress and physical Hessian remain open, and
+  no A4, Ultra, Rule-9 or downstream promotion follows.

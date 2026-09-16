@@ -1,0 +1,403 @@
+{
+  "authority_receipts": [
+    {
+      "actual": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+      "expected": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+      "matches": true,
+      "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_GLOBAL_STATE_CONSTRUCTION_CONTRACT_2026-09-16.md"
+    },
+    {
+      "actual": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+      "expected": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+      "matches": true,
+      "path": "Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md"
+    },
+    {
+      "actual": "2685f5c7c0fcdf9f036e7660efd11b3509b5611f49b5cf243614d6b78fa1518c",
+      "expected": "2685f5c7c0fcdf9f036e7660efd11b3509b5611f49b5cf243614d6b78fa1518c",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_global_state_construction_preflight_summary.json"
+    },
+    {
+      "actual": "80eed52925e24b477e41066d7835ece420c5fa4da2e0c9ab21259cd2010b2d86",
+      "expected": "80eed52925e24b477e41066d7835ece420c5fa4da2e0c9ab21259cd2010b2d86",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_adiabatic_symbol_diagnostic_summary.json"
+    },
+    {
+      "actual": "c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777",
+      "expected": "c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_covariant_scalar_matrix_summary.json"
+    },
+    {
+      "actual": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+      "expected": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+      "matches": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_scalar_matrix_hadamard_parametrix_summary.json"
+    }
+  ],
+  "calculation_status": "PASS_THEOREM_BACKED_GLOBAL_STATE_CONSTRUCTION",
+  "checks": [
+    {
+      "name": "authority_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+          "expected": "76309ff209d4aa5d69d8d510f7d1832fbfecdebfacecf30505f05b0c1252606a",
+          "matches": true,
+          "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_GLOBAL_STATE_CONSTRUCTION_CONTRACT_2026-09-16.md"
+        },
+        {
+          "actual": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+          "expected": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+          "matches": true,
+          "path": "Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md"
+        },
+        {
+          "actual": "2685f5c7c0fcdf9f036e7660efd11b3509b5611f49b5cf243614d6b78fa1518c",
+          "expected": "2685f5c7c0fcdf9f036e7660efd11b3509b5611f49b5cf243614d6b78fa1518c",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_global_state_construction_preflight_summary.json"
+        },
+        {
+          "actual": "80eed52925e24b477e41066d7835ece420c5fa4da2e0c9ab21259cd2010b2d86",
+          "expected": "80eed52925e24b477e41066d7835ece420c5fa4da2e0c9ab21259cd2010b2d86",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_adiabatic_symbol_diagnostic_summary.json"
+        },
+        {
+          "actual": "c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777",
+          "expected": "c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_covariant_scalar_matrix_summary.json"
+        },
+        {
+          "actual": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+          "expected": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_scalar_matrix_hadamard_parametrix_summary.json"
+        }
+      ],
+      "theorem_basis_markers": [
+        "Gerard and Wrochna",
+        "1209.2604",
+        "Sahlmann and Verch",
+        "math-ph/0008029"
+      ],
+      "theorem_basis_registered": true
+    },
+    {
+      "finite_diagnostic_status": "PASS_FINITE_ORDER_SYMBOL_DIAGNOSTIC",
+      "name": "predecessor_holds_are_preserved",
+      "ok": true,
+      "parametrix_state": "NOT_CONSTRUCTED",
+      "preflight_status": "HOLD_GLOBAL_STATE_CONSTRUCTION_NOT_ESTABLISHED"
+    },
+    {
+      "bundle_rank": 3,
+      "compact_cauchy_surface": "T^3_obs x S^1_y",
+      "globally_hyperbolic_registered_slab": true,
+      "matrix_potential_symmetric": true,
+      "matrix_potential_transpose_residual": 4.710277376051325e-16,
+      "maximum_off_diagonal_potential_entry": 0.5974980372366072,
+      "metric_principal_coefficients": [
+        "g^tt=-1",
+        "g^x1x1=g^x2x2=g^x3x3=a(t)^-2",
+        "g^yy=b(t)^-2"
+      ],
+      "name": "smooth_normally_hyperbolic_rank_three_operator",
+      "ok": true,
+      "operator_class": "normally hyperbolic scalar principal symbol with smooth rank-three lower-order matrix potential",
+      "signature_samples": {
+        "negative_time_coefficient": true,
+        "positive_spatial_coefficients": true
+      },
+      "smooth_finite_background_and_potential": true
+    },
+    {
+      "all_coefficients_finite": true,
+      "all_coefficients_transpose_symmetric": true,
+      "arbitrary_order_recursion_callable": true,
+      "checked_orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "directions": {
+        "obs_0.000000_internal_1.000000": {
+          "coefficients_finite": true,
+          "formal_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "leading_frequency_positive": true,
+          "maximum_transpose_residual": 0.0
+        },
+        "obs_0.707107_internal_0.707107": {
+          "coefficients_finite": true,
+          "formal_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "leading_frequency_positive": true,
+          "maximum_transpose_residual": 0.0
+        },
+        "obs_1.000000_internal_0.000000": {
+          "coefficients_finite": true,
+          "formal_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "leading_frequency_positive": true,
+          "maximum_transpose_residual": 0.0
+        }
+      },
+      "maximum_transpose_residual": 0.0,
+      "name": "arbitrary_order_formal_symbol_is_finite_and_symmetric",
+      "ok": true,
+      "remainder_class": "formal asymptotic symbol; Borel realization is supplied by the theorem-backed route"
+    },
+    {
+      "low_mode": {
+        "charge_conservation_check": true,
+        "finite_background": true,
+        "minimum_a": 1.0,
+        "minimum_b": 1.0,
+        "minimum_rho": 0.6995359234543251,
+        "minimum_zero_mode_K_eigenvalue": 0.3888184154041395,
+        "minimum_zero_mode_hamiltonian_eigenvalue": 0.18686244398906132,
+        "positive_registered_domain": true,
+        "registered_charge_relative_drift": 1.7204015989591426e-12,
+        "sample_count": 801,
+        "solver_success": true,
+        "spatial_momentum_monotonicity_argument": "For the registered scalar matrices, k_n^2 enters both K and the upper-left Hamiltonian block as k_n^2 I_2; positivity of the zero mode therefore controls every nonzero spatial momentum mode.",
+        "zero_mode_K_positive": true,
+        "zero_mode_eigenvalue_count": 3204,
+        "zero_mode_hamiltonian_positive": true
+      },
+      "name": "finite_rank_low_mode_patch_is_positive",
+      "ok": true
+    },
+    {
+      "all_witnesses_pass": true,
+      "directions": {
+        "obs_0.000000_internal_1.000000": {
+          "finite_transport": true,
+          "initial_isotropy_residual": 1.9594015599622877e-17,
+          "initial_normalization_residual": 2.2204465097763365e-16,
+          "matrix_rank": 3,
+          "max_full_matrix_mode_isotropy_residual": 3.742977197366101e-17,
+          "max_full_matrix_mode_normalization_residual": 1.3455511813456387e-09,
+          "max_full_matrix_symplectic_residual": 1.9028965371758317e-09,
+          "minimum_initial_hermitian_symbol_eigenvalue": 64.00658829658599,
+          "solver_success": true
+        },
+        "obs_0.707107_internal_0.707107": {
+          "finite_transport": true,
+          "initial_isotropy_residual": 1.9594015562186916e-17,
+          "initial_normalization_residual": 4.9650683726371795e-16,
+          "matrix_rank": 3,
+          "max_full_matrix_mode_isotropy_residual": 3.885432206558012e-17,
+          "max_full_matrix_mode_normalization_residual": 1.3455581041506958e-09,
+          "max_full_matrix_symplectic_residual": 1.902906010312019e-09,
+          "minimum_initial_hermitian_symbol_eigenvalue": 64.00658829658012,
+          "solver_success": true
+        },
+        "obs_1.000000_internal_0.000000": {
+          "finite_transport": true,
+          "initial_isotropy_residual": 1.9594015597717716e-17,
+          "initial_normalization_residual": 2.2204462743727985e-16,
+          "matrix_rank": 3,
+          "max_full_matrix_mode_isotropy_residual": 3.8886326451286825e-17,
+          "max_full_matrix_mode_normalization_residual": 1.345559256036763e-09,
+          "max_full_matrix_symplectic_residual": 1.90290818327174e-09,
+          "minimum_initial_hermitian_symbol_eigenvalue": 64.00658829658595,
+          "solver_success": true
+        }
+      },
+      "lambda": 64.0,
+      "matrix_rank": 3,
+      "name": "exact_full_matrix_cauchy_transport_preserves_ccr_and_positivity",
+      "ok": true,
+      "scope": "exact finite-grid Cauchy evolution witness for the coupled matrix; not the microlocal proof"
+    },
+    {
+      "constant_orthogonal_basis": "Q in O(3), Q^T Q=I",
+      "covariant": true,
+      "maximum_symbol_covariance_residual": 8.401224619530195e-10,
+      "name": "constant_bundle_basis_covariance",
+      "ok": true,
+      "orthogonality_residual": 3.1401849173675503e-16
+    },
+    {
+      "name": "phase_aligned_connection_is_pure_gauge_and_retains_mixing",
+      "ok": true,
+      "phase_aligned_gauge": {
+        "H_aligned": [
+          [
+            "(chi**2*g5 + 3*lambdaPhi5*rho**2 + 2*mPhi2)/2",
+            "0",
+            "chi*g5*rho"
+          ],
+          [
+            "0",
+            "(chi**2*g5 + lambdaPhi5*rho**2 + 2*mPhi2)/2",
+            "0"
+          ],
+          [
+            "chi*g5*rho",
+            "0",
+            "(chi**2*lambdaChi5 + g5*rho**2 + 2*mChi2)/2"
+          ]
+        ],
+        "Omega_AB": "0",
+        "connection": "A_A=J*d_A(Theta)",
+        "domain": "rho>0 smooth patch",
+        "endomorphism": "E_aligned=-S^T*H*S",
+        "finite_charge_projection": "A_t=mu*J gives first-derivative mixing of invariant magnitude 2*mu",
+        "rho_zero_boundary": "use regular Cartesian chart"
+      }
+    },
+    {
+      "endomorphism": "-H",
+      "local_parametrix": "DERIVED_LOCAL_U0_U2",
+      "name": "corrected_endomorphism_and_local_parametrix_agree",
+      "ok": true
+    },
+    {
+      "mutations": [
+        {
+          "mutation": "set E=+H",
+          "rejected": true
+        },
+        {
+          "mutation": "relabel finite-order transport as a Hadamard state",
+          "rejected": true
+        },
+        {
+          "mutation": "omit connection or phase-derivative mixing",
+          "rejected": true
+        },
+        {
+          "mutation": "copy independent scalar component states into the interacting matrix",
+          "rejected": true
+        },
+        {
+          "mutation": "omit low-mode positivity",
+          "rejected": true
+        },
+        {
+          "mutation": "replace wavefront proof with finite grid or UV trend",
+          "rejected": true
+        },
+        {
+          "mutation": "treat static q=0 subtraction as evolving stress",
+          "rejected": true
+        },
+        {
+          "mutation": "claim determinant, stress or physical Hessian from the state",
+          "rejected": true
+        },
+        {
+          "mutation": "import H0, a0, K_Q or V",
+          "rejected": true
+        },
+        {
+          "mutation": "manufacture Rule-9 clearance",
+          "rejected": true
+        }
+      ],
+      "name": "mandatory_rejecting_mutations_are_rejected",
+      "ok": true
+    }
+  ],
+  "checks_passed": 10,
+  "checks_total": 10,
+  "construction_status": {
+    "counterterm_normalizations": "NOT_FIXED",
+    "determinant": "NOT_COMPUTED",
+    "global_scalar_matrix_hadamard_state": "THEOREM_BACKED_CONSTRUCTED",
+    "renormalized_stress": "NOT_COMPUTED",
+    "smooth_state_bisolution": "THEOREM_BACKED_BY_EXACT_CAUCHY_EVOLUTION"
+  },
+  "derived_claims": [],
+  "explicit_nonclaims": [
+    "No Dirac, graviton, ghost or parity/anomaly state is constructed.",
+    "No counterterm normalization, determinant, renormalized stress or physical Hessian is computed.",
+    "No A4 or Ultra entry is authorized.",
+    "No MAT, UVIR, cosmology, Rule-9 or publication promotion follows.",
+    "The theorem-backed state construction is not an action-derived BBN background and supplies no Q^mu, S_N or G_eff."
+  ],
+  "gate": "TOP-X4",
+  "gate_effect": "NONE",
+  "physics_pass": false,
+  "publication_status": "NOT_A_PHYSICS_CLAIM",
+  "route": "X4-S2F3",
+  "rule9_review": {
+    "completed_independent_reports": 0,
+    "status": "THREE_WAY_CLEARANCE_NOT_MET"
+  },
+  "schema": "ITSM_TOPX4_S2F3_GLOBAL_STATE_CONSTRUCTION_v1",
+  "script_sha256": "7c33661479253abd79f13d386f44b8c840b18ec9e0d6dab77c92e03673621de3",
+  "state_conditions": {
+    "all_order_symbol_or_smoothing_remainder": "Psi^{-infinity} smoothing remainder",
+    "ccr": "THEOREM_BACKED_AND_FINITE_MATRIX_WITNESS",
+    "global_positivity": "THEOREM_BACKED_WITH_SMOOTHING_LOW_MODE_PATCH",
+    "global_wavefront_condition": "THEOREM_BACKED_PSEUDODIFFERENTIAL_CONSTRUCTION",
+    "local_parametrix_agreement": "DERIVED_LOCAL_U0_U2",
+    "smooth_matrix_bisolution": "THEOREM_BACKED_BY_EXACT_CAUCHY_EVOLUTION",
+    "state_coordinate_covariance": "THEOREM_BACKED_AND_NUMERICALLY_CHECKED"
+  },
+  "status": "PASS_GLOBAL_SCALAR_MATRIX_HADAMARD_STATE_HOLD_DIRAC_STRESS_AND_HESSIAN",
+  "theorem_backed_construction": {
+    "arbitrary_order_realization": "Borel realization of the recursively defined asymptotic symbol",
+    "cauchy_surface": "t=0 on T^3_obs x S^1_y",
+    "exact_bisolution": "P_x Lambda=P_y Lambda=0 by exact Cauchy evolution of the realized data",
+    "global_wavefront_argument": "theorem-backed pseudodifferential microlocal spectrum condition",
+    "high_frequency_projector": "positive/negative frequency pseudodifferential projections from the formal matrix symbol",
+    "low_mode_patch": "finite-rank positive Cauchy-data patch; it is smoothing and does not change the ultraviolet wavefront set",
+    "microlocal_basis": [
+      "Gerard and Wrochna, Construction of Hadamard states by pseudodifferential calculus",
+      "Sahlmann and Verch, vector-bundle-valued microlocal spectrum condition"
+    ],
+    "remainder_class": "Psi^{-infinity} smoothing remainder",
+    "required_contract_markers": [
+      "Gerard and Wrochna",
+      "1209.2604",
+      "Sahlmann and Verch",
+      "math-ph/0008029"
+    ],
+    "route": "ROUTE_A_PSEUDODIFFERENTIAL_PROJECTION_THEOREM_BACKED",
+    "theorem_links_registered_in_contract": true,
+    "two_point_function": "Lambda is defined from the realized Cauchy-data projector and the exact solution operator on both arguments"
+  }
+}

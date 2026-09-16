@@ -2,8 +2,12 @@
   "gate": "TOP-001",
   "subgate": "3D_EPSTEIN_CASIMIR_TENSOR",
   "label": "TOP-001_EPSTEIN_ZETA_STRESS",
-  "status": "PASS_TOP001_3D_EPSTEIN_CASIMIR",
-  "physics_pass": true,
+  "status": "PASS_TOP001_STATIC_EPSTEIN_CONTROL",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "publication_status": "NOT_A_PHYSICS_CLAIM",
+  "epistemic_status": "BOUNDED_STATIC_NUMERICAL_CONTROL",
+  "scientific_boundary": "Truncated direct lattice sums and an internal Richardson extrapolation control only; no independent noncubic evaluator, modulus action, dynamical stress tensor or cosmological result.",
   "cube_benchmark": {
     "computed_rho": -0.8374896777147043,
     "expected_rho": -0.83753691,
@@ -105,13 +109,20 @@
   "checks": [
     {
       "id": "TOP.1",
-      "description": "Cubic lattice benchmark agreement with known analytic value to < 0.05%",
+      "description": "Finite-cutoff cubic lattice benchmark agrees with the frozen reference within the local tolerance",
       "pass": true
     },
     {
       "id": "TOP.2",
-      "description": "Exact conformal trace identity T^mu_mu = 0 satisfied across all shape ratios",
+      "description": "Truncated-expression trace identity T^mu_mu = 0 is internally satisfied across the sampled shapes",
       "pass": true
     }
-  ]
+  ],
+  "claim_firewall": {
+    "persistent_free_field_13_over_12": false,
+    "parameter_free_H0": false,
+    "topology_derived_a0": false,
+    "cosmological_prediction": false,
+    "physics_pass": false
+  }
 }

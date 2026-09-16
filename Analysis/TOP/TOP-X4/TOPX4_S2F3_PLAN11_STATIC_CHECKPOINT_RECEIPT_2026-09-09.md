@@ -50,7 +50,10 @@ The calculation uses the decompactification-subtracted finite Casimir term, prop
 The calculation output is:
 
 `outputs/topx4_s2f3_static_determinant_summary.json`  
-SHA-256: `04d7d96758285dc5e1133a95f6a1a9b1c2f6732dde38f21ecc9771668a36c419`
+SHA-256: `b2addbfc34f6e3aec3fc0141342f30de4d56cb31a5dff37c59d7ff15281e493a`
+
+The deterministic output was revalidated on 2026-09-16 after authority-document
+synchronization; the status and numerical witness were unchanged.
 
 The sealed source is:
 

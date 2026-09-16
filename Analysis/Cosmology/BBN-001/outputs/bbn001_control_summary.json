@@ -1,0 +1,328 @@
+{
+  "camb_bridge": {
+    "CAMB_YHe": 0.2456560393606866,
+    "CAMB_Y_p_nucleon_fraction": 0.24698697263894845,
+    "H0": 67.7,
+    "bridge_check": true,
+    "ombh2": 0.02237,
+    "omch2": 0.12,
+    "table": "PRIMAT_Yp_DH_ErrorMC_2024.dat"
+  },
+  "frozen_inputs": {
+    "DeltaN": 0.0,
+    "common_observables": [
+      "Yp^BBN",
+      "D/H"
+    ],
+    "ombh2": 0.02237
+  },
+  "gate": "BBN-001",
+  "gate_effect": "NONE",
+  "limitations": [
+    "The bundled tables encode external BBN calculations; this receipt does not reproduce their nuclear network.",
+    "DeltaN is a control coordinate here, not an action-derived ITSM transfer or plenum parameter.",
+    "Y_p is a helium nucleon fraction; Y_He is the mass fraction passed to CAMB.",
+    "No BBN, empirical-helium, Planck, DESI, or posterior likelihood is evaluated.",
+    "No gate or publication status changes follow from this receipt."
+  ],
+  "physics_pass": false,
+  "publication_status": "NOT_A_PHYSICS_CLAIM",
+  "record_type": "BOUNDED_BBN_CONTROL_RECEIPT",
+  "response_sanity": {
+    "DeltaN_plus_1": {
+      "D/H": 2.9295343618085483e-05,
+      "Y_He_mass_fraction": 0.2579012604499739,
+      "Y_p_nucleon_fraction": 0.25927573399705006
+    },
+    "baseline_DeltaN": {
+      "D/H": 2.5855788253072582e-05,
+      "Y_He_from_Y_p_check": 0.24539541400188705,
+      "Y_He_mass_fraction": 0.24539541400188705,
+      "Y_p_nucleon_fraction": 0.24672539708329763
+    },
+    "interpretation": "Interpolation response sanity check, not an ITSM expansion-history result.",
+    "table": "PArthENoPE_880.2_standard.dat"
+  },
+  "review_state": {
+    "ITSM_mapping": "NOT_DERIVED",
+    "external_BBN_likelihood": "NOT_IMPLEMENTED",
+    "independent_reproduction": "NOT_COMPLETED",
+    "three_way_consensus": "NOT_MET"
+  },
+  "runtime": {
+    "camb": "1.6.7",
+    "numpy": "2.3.5",
+    "python": "3.13.9",
+    "scipy": "1.16.3"
+  },
+  "schema_equivalence": {
+    "actual_table_axis": [
+      "Ombh2",
+      "DeltaN"
+    ],
+    "automatic_default_axis_request": [
+      "ombh2",
+      "DeltaN"
+    ],
+    "comparisons": {
+      "D/H": {
+        "automatic": 2.446399134054883e-05,
+        "equal": true,
+        "explicit_default_spelling": 2.446399134054883e-05,
+        "explicit_table_spelling": 2.446399134054883e-05
+      },
+      "Yp^BBN": {
+        "automatic": 0.2469869726389484,
+        "equal": true,
+        "explicit_default_spelling": 0.2469869726389484,
+        "explicit_table_spelling": 0.2469869726389484
+      }
+    },
+    "former_workaround": [
+      "Ombh2",
+      "DeltaN"
+    ],
+    "interpretation": "Schema compatibility only; no numerical or physical transformation is applied.",
+    "table": "PRIMAT_Yp_DH_ErrorMC_2024.dat"
+  },
+  "scope": "Bundled BBN table schema, interpolation, and CAMB bridge only. No ITSM early-time action, plenum density, Q^mu, G_eff(z), or likelihood is implemented.",
+  "script_sha256": "4820e46cd322e3e98a5f66a297e9b397412316aae1d04c155bd1394390db1e6e",
+  "status": "CONTROL_ONLY",
+  "table_results": [
+    {
+      "control_point": {
+        "DeltaN": 0.0,
+        "ombh2": 0.02237
+      },
+      "domain": {
+        "DeltaN": [
+          -3.0,
+          7.0
+        ],
+        "ombh2": [
+          0.00499,
+          0.03993
+        ]
+      },
+      "grid_shape": {
+        "DeltaN": 11,
+        "ombh2": 48,
+        "rows": 528
+      },
+      "header_columns": [
+        "ombh2",
+        "eta10",
+        "DeltaN",
+        "Yp",
+        "Yp^BBN",
+        "sigma_Yp",
+        "D/H",
+        "err_D/H"
+      ],
+      "outputs": {
+        "D/H": 2.5855788253072582e-05,
+        "Y_He_from_Y_p_check": 0.24539541400188705,
+        "Y_He_mass_fraction": 0.24539541400188705,
+        "Y_p_nucleon_fraction": 0.24672539708329763
+      },
+      "requested_function_of": [
+        "ombh2",
+        "DeltaN"
+      ],
+      "resolved_axis_columns": [
+        "ombh2",
+        "DeltaN"
+      ],
+      "sha256": "99e82051a70b8a73eed112959a5bf42bc1ea9e0e08860d65ae75fe97ce09b187",
+      "table": "PArthENoPE_880.2_standard.dat"
+    },
+    {
+      "control_point": {
+        "DeltaN": 0.0,
+        "ombh2": 0.02237
+      },
+      "domain": {
+        "DeltaN": [
+          -3.0,
+          7.0
+        ],
+        "ombh2": [
+          0.00499,
+          0.03993
+        ]
+      },
+      "grid_shape": {
+        "DeltaN": 11,
+        "ombh2": 48,
+        "rows": 528
+      },
+      "header_columns": [
+        "ombh2",
+        "eta10",
+        "DeltaN",
+        "Yp",
+        "Yp^BBN",
+        "sigma_Yp",
+        "D/H",
+        "err_D/H"
+      ],
+      "outputs": {
+        "D/H": 2.452827222706648e-05,
+        "Y_He_from_Y_p_check": 0.24539953772778467,
+        "Y_He_mass_fraction": 0.24539953772778467,
+        "Y_p_nucleon_fraction": 0.24672953585124083
+      },
+      "requested_function_of": [
+        "ombh2",
+        "DeltaN"
+      ],
+      "resolved_axis_columns": [
+        "ombh2",
+        "DeltaN"
+      ],
+      "sha256": "994c68f11ecbd33ecf6e631a0432ffc4b80068bfe972ab98fd235420aad67d8e",
+      "table": "PArthENoPE_880.2_marcucci.dat"
+    },
+    {
+      "control_point": {
+        "DeltaN": 0.0,
+        "ombh2": 0.02237
+      },
+      "domain": {
+        "DeltaN": [
+          -3.0,
+          7.0
+        ],
+        "ombh2": [
+          0.005,
+          0.04
+        ]
+      },
+      "grid_shape": {
+        "DeltaN": 25,
+        "ombh2": 52,
+        "rows": 1300
+      },
+      "header_columns": [
+        "ombh2",
+        "eta10",
+        "DeltaN",
+        "Yp",
+        "Yp^BBN",
+        "sig(Yp^BBN)",
+        "D/H",
+        "sig(D/H)"
+      ],
+      "outputs": {
+        "D/H": 2.4375071664003023e-05,
+        "Y_He_from_Y_p_check": 0.2458135568466304,
+        "Y_He_mass_fraction": 0.2458135568466304,
+        "Y_p_nucleon_fraction": 0.24714506393275193
+      },
+      "requested_function_of": [
+        "ombh2",
+        "DeltaN"
+      ],
+      "resolved_axis_columns": [
+        "ombh2",
+        "DeltaN"
+      ],
+      "sha256": "30dc21b0152b13d9a31f29378b063aa690eca10092963ed5b96d9a322f26b16d",
+      "table": "PRIMAT_Yp_DH_Error.dat"
+    },
+    {
+      "control_point": {
+        "DeltaN": 0.0,
+        "ombh2": 0.02237
+      },
+      "domain": {
+        "DeltaN": [
+          -3.0,
+          7.0
+        ],
+        "ombh2": [
+          0.005,
+          0.04
+        ]
+      },
+      "grid_shape": {
+        "DeltaN": 25,
+        "ombh2": 52,
+        "rows": 1300
+      },
+      "header_columns": [
+        "ombh2",
+        "eta10",
+        "DeltaN",
+        "Yp",
+        "Yp^BBN",
+        "sig(Yp^BBN)",
+        "D/H",
+        "sig(D/H)"
+      ],
+      "outputs": {
+        "D/H": 2.4482576081094778e-05,
+        "Y_He_from_Y_p_check": 0.24585548197552395,
+        "Y_He_mass_fraction": 0.24585548197552395,
+        "Y_p_nucleon_fraction": 0.2471871417270726
+      },
+      "requested_function_of": [
+        "ombh2",
+        "DeltaN"
+      ],
+      "resolved_axis_columns": [
+        "ombh2",
+        "DeltaN"
+      ],
+      "sha256": "ea5adce061720b937d8abda3a04a384aedaab3168dbf17414ff600cc91a7160c",
+      "table": "PRIMAT_Yp_DH_ErrorMC_2021.dat"
+    },
+    {
+      "control_point": {
+        "DeltaN": 0.0,
+        "ombh2": 0.02237
+      },
+      "domain": {
+        "DeltaN": [
+          -3.0,
+          7.0
+        ],
+        "ombh2": [
+          0.005,
+          0.04
+        ]
+      },
+      "grid_shape": {
+        "DeltaN": 25,
+        "ombh2": 52,
+        "rows": 1300
+      },
+      "header_columns": [
+        "Ombh2",
+        "eta10",
+        "DeltaN",
+        "Yp",
+        "Yp^BBN",
+        "sig(Yp^BBN)",
+        "D/H",
+        "sig(D/H)"
+      ],
+      "outputs": {
+        "D/H": 2.446399134054883e-05,
+        "Y_He_from_Y_p_check": 0.2456560393606866,
+        "Y_He_mass_fraction": 0.2456560393606866,
+        "Y_p_nucleon_fraction": 0.2469869726389484
+      },
+      "requested_function_of": [
+        "ombh2",
+        "DeltaN"
+      ],
+      "resolved_axis_columns": [
+        "Ombh2",
+        "DeltaN"
+      ],
+      "sha256": "dd70d7fa970a43277927be277c57f2c20a84818f2283d15d29504a098f44919e",
+      "table": "PRIMAT_Yp_DH_ErrorMC_2024.dat"
+    }
+  ]
+}

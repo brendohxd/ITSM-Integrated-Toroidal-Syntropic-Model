@@ -282,3 +282,104 @@ positive, globally admissible state term `W`. Therefore
 `gate_effect=NONE` remain binding. Counterterm normalizations, Dirac and
 graviton/ghost states, parity/anomaly, physical Hessian, A4 and Ultra remain
 closed or separate; no downstream promotion follows.
+
+## Plan 11 — global-state construction preflight
+
+Run the next-gate readiness calculation with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_global_state_construction_preflight.py
+```
+
+The expected status is:
+
+```text
+HOLD_GLOBAL_STATE_CONSTRUCTION_NOT_ESTABLISHED
+```
+
+The preflight passes 9/9 prerequisite checks. It extends the registered
+low-mode audit to the zero spatial mode and finds a finite positive `K` and
+Hamiltonian across the 801-point A1 background, while preserving the failed
+fourth-order WKB result, the finite-order transport boundary, the corrected
+`E=-H` convention and all predecessor sidecars. It does not claim a state:
+the all-order pseudodifferential projector/Borel realization, coupled smooth
+bisolution, CCR, global positivity and wavefront proof remain unimplemented.
+The receipt retains `physics_pass=false`, `gate_effect=NONE`, and no stress,
+determinant, Hessian, A4 or Ultra action is authorized.
+
+## Plan 11 — finite-order adiabatic-symbol diagnostic
+
+Run the bounded Route-B matrix-symbol diagnostic with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_adiabatic_symbol_diagnostic.py
+```
+
+The recorded result is:
+
+```text
+HOLD_GLOBAL_STATE_CONSTRUCTION_NOT_ESTABLISHED
+checks=8/8
+formal_route=ROUTE_B_ADIABATIC_RICCATI_SYMBOL
+```
+
+The finite Riccati recurrence remains finite and transpose-symmetric through
+the implemented orders `0`--`6`; orders `0`--`3` are the declared stable
+numerical witness and show decreasing high-frequency residuals on all three
+registered directions. Positive normalized initial data and exact finite-mode
+CCR transport pass for both the charged witness and the full coupled
+rank-three scalar matrix. Orders `4`--`6` are retained as an asymptotic-tail
+diagnostic, not as a convergence claim. No Borel sum, smoothing remainder,
+global bisolution, wavefront proof, determinant, stress or physical Hessian is
+constructed. `physics_pass=false`, `gate_effect=NONE` and
+`scalar_matrix_hadamard_state=NOT_CONSTRUCTED` remain binding.
+
+## Plan 11 — theorem-backed global scalar-state construction
+
+Run the registered Route-A construction with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_global_state_construction.py
+```
+
+The recorded result is:
+
+```text
+PASS_GLOBAL_SCALAR_MATRIX_HADAMARD_STATE_HOLD_DIRAC_STRESS_AND_HESSIAN
+checks=10/10
+route=ROUTE_A_PSEUDODIFFERENTIAL_PROJECTION_THEOREM_BACKED
+global_scalar_matrix_hadamard_state=THEOREM_BACKED_CONSTRUCTED
+physics_pass=false
+gate_effect=NONE
+```
+
+The receipt is
+`TOPX4_S2F3_PLAN11_GLOBAL_STATE_CONSTRUCTION_2026-09-16.md`. It records a
+theorem-backed scalar construction from the arbitrary-order formal symbol,
+Borel/smoothing realization, positive finite-rank low-mode patch and exact
+full-matrix Cauchy evolution. The finite-grid transport and basis-covariance
+values are consistency witnesses; the JSON is not itself a wavefront object
+or a numerical Borel sum, and the receipt is not independent peer review.
+Dirac, graviton/ghost, parity/anomaly, counterterm normalization, determinant,
+renormalized stress and physical-Hessian work remain held. `physics_pass=false`,
+`gate_effect=NONE`, Rule-9 non-clearance and all downstream MAT/UVIR/BBN
+boundaries are unchanged.
+
+## Plan 11 — physical-Hessian readiness audit
+
+The next single-gate audit is run with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_physical_hessian_readiness.py
+```
+
+It passes `8/8` readiness checks under the binding status
+`HOLD_PHYSICAL_HESSIAN_INPUTS_NOT_CLOSED`. The audit confirms that the
+fixed-metric scalar operator and theorem-backed scalar state are not a
+constrained physical Hessian: the complete varied semiclassical action,
+state-dependent stress, gravity/ghost/parity sectors, finite-charge on-shell
+background and metric/radion constraint blocks are still unavailable. It
+records `physical_hessian=NOT_CONSTRUCTED`, `radion_mass=NOT_COMPUTED`,
+`physics_pass=false` and `gate_effect=NONE`; no missing mixing block is set to
+zero and no downstream gate is opened. The receipt is
+`TOPX4_S2F3_PLAN11_PHYSICAL_HESSIAN_READINESS_2026-09-16.md`.

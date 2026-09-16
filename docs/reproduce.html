@@ -76,7 +76,7 @@ git checkout recovery/v12-core-architecture
       <div class="grid">
         <article class="card">
           <h3>TOP-X4 / X4-S2F3 — Plan 11</h3>
-          <p>Reproduces the bounded static and finite-charge checks, the preserved 11/12 dynamic WKB failure, the separate 18/18 exact scalar/first-order Dirac transport pass, the 20/20 D5 scaffold audit, the 25/25 fixed-metric scalar-matrix pass, and the 22/22 local scalar-matrix Hadamard-parametrix pass through <code>U_2</code>. All retain <code>physics_pass=false</code>; a global/infinite-order Hadamard state, normalization, gravity/parity completion, determinant, stress and the physical Hessian remain open.</p>
+          <p>Reproduces the bounded static and finite-charge checks, the preserved 11/12 dynamic WKB failure, the separate 18/18 exact scalar/first-order Dirac transport pass, the 20/20 D5 scaffold audit, the 25/25 fixed-metric scalar-matrix pass, the 22/22 local scalar-matrix Hadamard-parametrix pass through <code>U_2</code>, the 8/8 finite-order Route-B adiabatic-symbol diagnostic including full rank-three scalar transport, the registered 10/10 Route-A theorem-backed scalar-state construction, and the 8/8 physical-Hessian readiness audit. All retain <code>physics_pass=false</code>; the result is not independent peer review or a numerical physics pass, and Dirac/gravity/parity completion, normalization, determinant, stress and the physical Hessian remain open.</p>
           <pre><code>python Analysis/TOP/TOP-X4/topx4_s2f3_static_determinant_checkpoint.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_entry_gate.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_operator_checkpoint.py
@@ -84,11 +84,15 @@ python Analysis/TOP/TOP-X4/topx4_s2f3_dynamic_state_subtraction_checkpoint.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_exact_transport_retry_checkpoint.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_hadamard_subtraction_readiness.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_covariant_scalar_matrix_checkpoint.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_scalar_matrix_hadamard_parametrix_checkpoint.py</code></pre>
+python Analysis/TOP/TOP-X4/topx4_s2f3_scalar_matrix_hadamard_parametrix_checkpoint.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_global_state_construction_preflight.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_adiabatic_symbol_diagnostic.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_global_state_construction.py
+python Analysis/TOP/TOP-X4/topx4_s2f3_physical_hessian_readiness.py</code></pre>
         </article>
         <article class="card">
           <h3>TOP-001 / CBR-002 — Moduli Control</h3>
-          <p>Free-Casimir dilution and driven-parameter control. The free result is scoped negative; the prescribed driven ratio is not a stationary attractor.</p>
+          <p>Free-Casimir dilution and inserted-source control. The free result is scoped negative; the prescribed driven ratio is not a stationary attractor, and the regenerated receipts explicitly remain <code>physics_pass=false</code>.</p>
           <pre><code>python Analysis/TOP/TOP-001/top001_moduli_phase_space_analysis.py</code></pre>
         </article>
         <article class="card">
@@ -100,6 +104,15 @@ python Analysis/TOP/TOP-X4/topx4_s2f3_scalar_matrix_hadamard_parametrix_checkpoi
           <h3>COS-001 / PERT-001 — Calibration Audit</h3>
           <p>Historical proxy entry point retained for audit. Current authority classifies this sector as calibration-only; no ITSM Boltzmann hierarchy or <code>S₈</code> prediction is established.</p>
           <pre><code>python Analysis/Cosmology/COS-001/cos001_genuine_boltzmann_growth_solver.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>BBN-001 — Table/CAMB Control</h3>
+          <p>Checks all five bundled BBN tables, the PRIMAT 2024 <code>Ombh2</code>/<code>ombh2</code> schema compatibility rule, interpolation domains and conventions, a <code>DeltaN</code> response sanity check, and the CAMB helium bridge. A separate fail-closed preflight audits the UVIR-003 export and is expected to report <code>BLOCKED_UPSTREAM_BACKGROUND</code> until the physical temperature/plenum interface exists. BBN remains <code>CONTROL_ONLY</code>.</p>
+          <pre><code>python Analysis/Cosmology/BBN-001/bbn001_control.py
+python Analysis/Cosmology/BBN-001/bbn001_upstream_interface_preflight.py
+Push-Location CAMB_ITSM_Solver
+python -m unittest camb.tests.bbn_test
+Pop-Location</code></pre>
         </article>
         <article class="card">
           <h3>WAK-001 — Retarded-Field Control</h3>

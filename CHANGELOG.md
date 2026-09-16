@@ -1,5 +1,123 @@
 # ITSM Changelog & Archive History
 
+## TOP-X4 physical-Hessian readiness audit (2026-09-16)
+
+- Added a single-gate `8/8` readiness audit and frozen contract for the
+  physical constrained Hessian.
+- The audit records `physical_hessian=NOT_CONSTRUCTED` and
+  `radion_mass=NOT_COMPUTED` because the complete varied semiclassical action,
+  state-dependent stress, gravity/ghost/parity sectors, finite-charge
+  background and metric/radion constraint blocks are not available.
+- No missing mixing block is inferred or set to zero; `physics_pass=false`,
+  `gate_effect=NONE`, and all downstream gates remain closed.
+
+## TOP-X4 theorem-backed global scalar-state construction (2026-09-16)
+
+- Executed the registered Route-A Plan-11 construction for the coupled
+  rank-three scalar system; the deterministic executable passes `10/10`.
+- The checkpoint records an arbitrary-order pseudodifferential symbol,
+  theorem-backed Borel/smoothing realization, a positive finite-rank low-mode
+  patch, exact full-matrix Cauchy evolution and constant bundle-basis
+  covariance.
+- This is a mathematical scalar-state construction checkpoint, not independent
+  peer review or a numerical physics pass. `physics_pass=false` and
+  `gate_effect=NONE` remain binding; Dirac/gravity/ghost, parity/anomaly,
+  counterterm normalization, determinant, renormalized stress, physical
+  Hessian, Rule-9 and all downstream MAT/UVIR/BBN/publication gates remain
+  closed.
+
+## TOP-X4 full rank-three transport witness (2026-09-16)
+
+- Extended the bounded Route-B adiabatic-symbol diagnostic from the charged
+  two-mode transport witness to exact finite-grid transport of the full
+  coupled rank-three scalar matrix in all three registered directions.
+- The executable now passes `8/8`; the additional witness preserves the
+  symplectic form, canonical mode normalization and isotropy at the declared
+  high-frequency point.
+- The global Hadamard-state hold remains binding: no Borel sum, smoothing
+  remainder, global bisolution, wavefront proof, stress, determinant or
+  physical Hessian is claimed.
+
+## TOP-001 claim-firewall reconciliation (2026-09-16)
+
+- Corrected three legacy TOP-001 Casimir/moduli executables that exposed
+  pass-like or `physics_pass=true` fields despite using finite-cutoff or
+  inserted-source controls. Regenerated receipts now set
+  `physics_pass=false`, `gate_effect=NONE` and
+  `publication_status=NOT_A_PHYSICS_CLAIM`.
+- Repeated the static Epstein, passive/conditional driven and coupled toy
+  controls with byte-identical outputs. The bounded negative/conditional
+  findings are retained; no modulus action, reservoir `Q_syn`, cosmology or
+  publication claim is derived.
+- Corrected a Windows CRLF sidecar-hashing defect in the coupled receipt and
+  added a regression audit for fail-closed metadata, relative paths and hash
+  agreement.
+- Recorded the reconciliation at
+  `Theory/Gates/TOP-001/TOP-001_CLAIM_FIREWALL_RECONCILIATION_2026-09-16.md`.
+
+## BBN-001 external network control (2026-09-16)
+
+- Added an optional fail-closed adapter for an explicitly supplied,
+  externally built AlterAlterBBN executable. It validates the six-column
+  history and abundance contract, records hashes and parses `Y_He` and `D/H`.
+- Ran a pinned baseline and self-consistent ±5% time-reparameterisation
+  controls in an isolated external checkout. The network responds to the
+  controls, while the source audit confirms that its `H` column is not used by
+  the network evolution; `dTdt` is the operative expansion input.
+- The records remain `CONTROL_ONLY`, `physics_pass=false` and
+  `gate_effect=NONE`. No early-plenum action, `Q^mu`, `G_eff(z)`, likelihood,
+  gate closure or publication claim follows.
+
+## BBN-001 upstream-interface preflight (2026-09-16)
+
+- Added a fail-closed audit of the registered UVIR-003 background export
+  against the external BBN history and ITSM closing-input contracts.
+- The receipt confirms that the available branch is dimensionless and lacks a
+  physical photon-temperature history, unit map, early-plenum density,
+  distinct transfer currents, condensate-number source and action-derived
+  `G_eff`. No quantity is inferred and the expected result is
+  `BLOCKED_UPSTREAM_BACKGROUND` with `physics_pass=false`.
+- This closes the interface-audit checkpoint only; it does not close BBN-001,
+  UVIR-003, MAT-001 or any publication gate.
+
+## TOP-X4 global-state construction preflight (2026-09-16)
+
+- Froze the next Plan-11 global scalar-matrix state construction contract and
+  added a 9/9 prerequisite preflight.
+- The preflight extends the low-mode audit to the zero spatial mode and finds
+  finite positive `K` and Hamiltonian eigenvalues across the registered A1
+  background, while preserving the prior fourth-order WKB failure and the
+  finite-order transport boundary.
+- The all-order pseudodifferential/adiabatic construction, coupled smooth
+  bisolution, CCR, global positivity and wavefront proof remain unestablished;
+  the result is `HOLD_GLOBAL_STATE_CONSTRUCTION_NOT_ESTABLISHED` with
+  `physics_pass=false` and `gate_effect=NONE`.
+
+## TOP-X4 finite-order adiabatic-symbol diagnostic (2026-09-16)
+
+- Added a bounded Route-B matrix Riccati-symbol diagnostic for the frozen
+  `X4-S2F3` global-state gate. The executable passes `8/8` checks and preserves
+  the explicit global-state hold.
+- The recurrence is finite and transpose-symmetric through orders `0`--`6`;
+  orders `0`--`3` are the declared stable numerical witness and show decreasing
+  high-frequency residuals in all registered directions. Positive normalized
+  initial data and exact finite-mode CCR transport also pass.
+- Orders `4`--`6` are retained as an asymptotic-tail diagnostic only. No Borel
+  sum, smoothing remainder, global bisolution, wavefront proof, determinant,
+  stress or physical Hessian is constructed. The binding result remains
+  `HOLD_GLOBAL_STATE_CONSTRUCTION_NOT_ESTABLISHED`, `physics_pass=false` and
+  `gate_effect=NONE`.
+
+## BBN-001 bounded control checkpoint (2026-09-14)
+
+- Repaired the CAMB BBN table adapter so the default `ombh2` request resolves
+  the PRIMAT 2024 `Ombh2` header through a unique case-insensitive schema rule;
+  missing, ambiguous and malformed table schemas fail closed.
+- Added focused regression tests and a deterministic five-table/CAMB bridge
+  receipt under `Analysis/Cosmology/BBN-001/`.
+- The result remains `CONTROL_ONLY`, `physics_pass=false` and `gate_effect=NONE`;
+  no ITSM early-time mapping, gate closure or publication claim follows.
+
 ## External evidence-watch update (2026-09-14)
 
 - Added six unreviewed arXiv inputs to
@@ -11,8 +129,9 @@
   bright/dark sirens, primordial-curvature/LVK limits and intrinsic-alignment
   controls in weak lensing.
 - No gate or publication status changed: `MAT-001` remains `BLOCKED`,
-  `UVIR-003` remains `IN_PROGRESS`, TOP-X4 remains on its global-state/stress
-  hold with `physics_pass=false`, and Rule-9 clearance remains unmet.
+  `UVIR-003` remains `IN_PROGRESS`, TOP-X4 remains on its theorem-backed
+  scalar-state/stress hold with `physics_pass=false`, and Rule-9 clearance
+  remains unmet.
 
 ## TOP-X4 scalar-matrix Hadamard parametrix checkpoint (2026-09-12)
 

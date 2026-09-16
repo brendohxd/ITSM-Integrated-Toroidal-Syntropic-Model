@@ -4,7 +4,7 @@ Multi-page research site published at https://itsm-cosmology.com.
 
 ## Current public status
 
-Audited 14 September 2026 against the v12.0-alpha.12 recovery authority:
+Audited 16 September 2026 against the v12.0-alpha.12 recovery authority:
 
 - **External evidence watch:** six unreviewed arXiv inputs were screened on 14
   September, with BBN and empirical-helium tests prioritized. This adds no
@@ -12,13 +12,30 @@ Audited 14 September 2026 against the v12.0-alpha.12 recovery authority:
   record](https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md)
   contains the source facts and bounded follow-up tasks.
 
-- **TOP-X4 / X4-S2F3:** `LOCAL_PARAMETRIX_PASS_GLOBAL_STATE_STRESS_HOLD`.
+- **BBN-001:** the local five-table CAMB schema/interpolation control passes,
+  including the PRIMAT 2024 `Ombh2`/`ombh2` compatibility check and CAMB
+  helium bridge. The upstream-interface preflight also confirms that the
+  registered UVIR-003 branch is dimensionless and lacks the physical
+  temperature, plenum, transfer and effective-gravity inputs needed for an
+  ITSM BBN run. It remains `CONTROL_ONLY` with `physics_pass=false`; no
+  action-derived ITSM early-time result or publication claim is established.
+
+- **TOP-X4 / X4-S2F3:** `BOUNDED_LOCAL_AND_FINITE_ORDER_PLUS_THEOREM_BACKED_SCALAR_STATE_STRESS_HOLD`.
   Static determinant 12/12, entry gate 9/9, finite-charge operator 16/16,
   exact transport 18/18, D5 scaffold 20/20 and fixed-metric scalar-matrix
   operator 25/25 remain bounded. The local scalar-matrix Hadamard-parametrix
-  checkpoint now passes 22/22 through `U_2`. A global/infinite-order state,
-  normalization, gravity/parity completion, determinant, stress and physical
-  Hessian remain held. `physics_pass=false` and `gate_effect=NONE`.
+  checkpoint now passes 22/22 through `U_2`, and the finite-order Route-B
+  adiabatic-symbol diagnostic passes 8/8 with stable orders 0--3, including
+  full rank-three finite transport. The registered Route-A theorem-backed
+  scalar-state construction passes 10/10 and records the formal all-order
+  symbol, Borel/smoothing realization, positive low-mode patch and exact
+  full-matrix evolution. This is not independent peer review or a numerical
+  physics pass; normalization, gravity/parity completion, determinant, stress
+  and physical Hessian remain held. The separate physical-Hessian readiness
+  audit passes 8/8 bookkeeping checks but records
+  `physical_hessian=NOT_CONSTRUCTED` and `radion_mass=NOT_COMPUTED`.
+  `physics_pass=false` and
+  `gate_effect=NONE`.
 - **MAT-001:** `BLOCKED`; `K_Q` is `NOT_DERIVED` and `V` is
   `NOT_COMPUTED`.
 - **UVIR-003:** `IN_PROGRESS`; no complete physical amplitude, unitarity

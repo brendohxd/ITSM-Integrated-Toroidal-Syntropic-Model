@@ -27,14 +27,14 @@ The programme strictly adheres to the fail-closed Iron Rule:
 
 Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
 
-## 🧭 Current Core Status (recovery snapshot — 2026-09-14)
+## 🧭 Current Core Status (recovery snapshot — 2026-09-16)
 
 | Gate / Sector | Status | Physical Result |
 |---|---|---|
 | **Core identity** | `CANONICAL; IDENTITY HELD` | Active finite-density condensate, topology, preferred frame and force/reservoir sectors remain distinct; identity-first governance is unchanged. |
 | **MAT-001** | **`BLOCKED`** | M2/M3-U1 fixed-background controls are bounded reductions only; `K_Q` remains `NOT_DERIVED` and `V` remains `NOT_COMPUTED`. |
 | **UVIR-003** | **`IN_PROGRESS`** | Tier-1 closure remains downstream of the MAT matching blocker; no physical cutoff or complete constrained amplitude is promoted. |
-| **TOP-X4 / KK-001** | **`LOCAL PARAMETRIX PASS; GLOBAL STATE/STRESS HOLD`** | The branchwise WKB checkpoint remains failed 11/12, exact finite-order transport passed 18/18, the D5 scaffold passed 20/20, and the fixed-metric scalar/`chi` operator passed 25/25. The local scalar-matrix Hadamard-parametrix checkpoint now passes 22/22 through `U_2`; global states, normalization, graviton/ghosts, parity phase, determinant, stress and physical Hessian remain incomplete. |
+| **TOP-X4 / KK-001** | **`BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD`** | The branchwise WKB checkpoint remains failed 11/12, exact finite-order transport passed 18/18, the D5 scaffold passed 20/20, the fixed-metric scalar/`chi` operator passed 25/25, and the local scalar-matrix Hadamard-parametrix checkpoint passed 22/22 through `U_2`. The finite-order Route-B diagnostic passed 8/8 with full rank-three transport, and the registered Route-A scalar-state construction passed 10/10 theorem-backed checks. `physics_pass=false`; Dirac/gravity/ghost, parity, determinant, stress, physical Hessian and Rule-9 remain incomplete. |
 | **TOP-001 / CBR-002** | **`HOLD`** | P2/CBR-001 has a portable local-repair candidate and a narrowed instantaneous-closure result; independent-role, sensitivity and noncubic checks remain required. |
 | **RES-001** | **`OPEN_SCAFFOLD_ONLY`** | The corrected script is a single-mode GKSL steady-state control; the advertised two-bath detailed-balance/Spohn derivation, microscopic reservoir and `Q^\mu` remain absent. |
 | **VOR-001** | **`OPEN_SCAFFOLD_ONLY`** | Phase/winding normalization is a frozen calculation specification only; no physical resonance or gate closure follows. |
@@ -152,6 +152,8 @@ authoritative path.
 - [TOP-X4 Plan 11 Dynamic State/Subtraction Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT_2026-09-12.md)
 - [TOP-X4 Plan 11 Exact-Transport Retry Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_EXACT_TRANSPORT_RETRY_CHECKPOINT_2026-09-12.md)
 - [TOP-X4 Plan 11 Scalar-Matrix Hadamard Parametrix Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_SCALAR_MATRIX_HADAMARD_PARAMETRIX_CHECKPOINT_2026-09-12.md)
+- [TOP-X4 Plan 11 Finite-Order Adiabatic-Symbol Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_ADIABATIC_SYMBOL_DIAGNOSTIC_2026-09-16.md)
+- [BBN-001 Upstream-Interface Preflight](Analysis/Cosmology/BBN-001/README.md)
 - [MAT Tier-1 R1-R5 Remediation Addendum](Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md)
 - [Core-Recovery Manuscript Guide](Manuscript/CoreRecovery/README.md)
 - [Selective Publishing Plan](papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md)

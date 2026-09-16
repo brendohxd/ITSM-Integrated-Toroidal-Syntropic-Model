@@ -148,7 +148,7 @@ def main():
     
     print("==========================================================================")
     print("  TOP-001 / CBR-002: Coupled 3D Moduli & Vacuum Stress ODE Solver")
-    print("  First-Principles Dynamical Raychaudhuri & Shear Backreaction Engine")
+    print("  Conditional toy control; no action-derived source or physics-gate claim")
     print("==========================================================================\n")
     
     # 1. Test Case A: Pure Free-Field Casimir Backreaction
@@ -196,7 +196,12 @@ def main():
         "gate": "TOP-001 / CBR-002",
         "title": "Coupled 3D Moduli & Vacuum Stress ODE Solver",
         "timestamp": "2026-09-01T11:00:00Z",
+        "status": "PASS_TOP001_CONDITIONAL_TOY_CONTROL",
+        "physics_pass": False,
+        "gate_effect": "NONE",
+        "publication_status": "NOT_A_PHYSICS_CLAIM",
         "epistemic_status": "SCOPED_NEGATIVE_AND_CONDITIONAL",
+        "scientific_boundary": "Dimensionless exploratory moduli toy only; no derived modulus action, reservoir stress, Q^mu or cosmological prediction.",
         "verifications": {
             "free_field_dilution_to_isotropy": free_pass,
             "free_field_Ht_over_Hp_z0": float(res_free["Ht_over_Hp_z0"]),
@@ -217,14 +222,16 @@ def main():
     with open(summary_path, "w", encoding="utf-8") as f:
         f.write(summary_json)
         
-    sha256_hash = hashlib.sha256(summary_json.encode("utf-8")).hexdigest()
+    # Hash the bytes actually written. Windows text mode may translate LF to
+    # CRLF, so hashing the pre-write Python string is not portable.
+    sha256_hash = hashlib.sha256(summary_path.read_bytes()).hexdigest()
     hash_path = output_dir / "top001_coupled_moduli_summary.json.sha256"
     with open(hash_path, "w", encoding="utf-8") as f:
         f.write(f"{sha256_hash}  top001_coupled_moduli_summary.json\n")
         
     print(f"\nSealed Output: {summary_path}")
     print(f"SHA-256 Digest: {sha256_hash}")
-    print("\nSTATUS: PASS_TOP001_COUPLED_MODULI_EXECUTION (Epistemic Status: SCOPED_NEGATIVE_AND_CONDITIONAL)")
+    print("\nSTATUS: PASS_TOP001_CONDITIONAL_TOY_CONTROL (physics_pass: False)")
 
 if __name__ == "__main__":
     main()

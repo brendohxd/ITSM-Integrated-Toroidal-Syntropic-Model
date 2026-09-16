@@ -70,7 +70,7 @@ derived physical diagnosis without a coupled transport construction.
 - Primary/witness envelope difference: `1.9412678207069711e-7`, below `2e-4`.
 - Candidate scalar Wronskian residual is below `1e-12` wherever the iterate is positive.
 - Two final executions produced byte-identical JSON with SHA-256
-  `5d974893aab0d9c5e75a2aafd34e10e31db78ffe790cf7a3eaf997e388314fc4`.
+  `8e920c5e699b898891fca1dc6ade0edb5359fefbaaed785698e88c8109d4280b`.
 
 ## State and subtraction boundary
 
@@ -100,9 +100,13 @@ Hollands, [`gr-qc/9906076`](https://arxiv.org/abs/gr-qc/9906076).
 |---|---|
 | `Theory/Gates/TOP-X4/TOPX4_S2F3_DYNAMIC_STATE_SUBTRACTION_CONTRACT_2026-09-12.md` | `47ec59b4afef3d937bdaa0b2756c6002b5bb771aa0b540eb24a4fddca323ad4f` |
 | `Analysis/TOP/TOP-X4/topx4_s2f3_dynamic_state_subtraction_checkpoint.py` | `add2d9e83a66f82dc0991522b045252c1142bf7de2e7074cdb0b1c1047570de9` |
-| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_dynamic_state_subtraction_summary.json` | `5d974893aab0d9c5e75a2aafd34e10e31db78ffe790cf7a3eaf997e388314fc4` |
+| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_dynamic_state_subtraction_summary.json` | `8e920c5e699b898891fca1dc6ade0edb5359fefbaaed785698e88c8109d4280b` |
 
 All seven frozen input sidecars matched in the executable receipt.
+
+The deterministic output was revalidated on 2026-09-16 after authority-document
+synchronization; the known `11/12` failure and negative low-mode evidence were
+unchanged.
 
 ## Stop boundary and next admissible step
 

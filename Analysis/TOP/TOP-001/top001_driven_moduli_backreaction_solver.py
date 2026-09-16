@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""TOP-001 / CBR-002: Driven Moduli & Raychaudhuri Shear Dynamical Backreaction Solver.
+"""TOP-001 / CBR-002: conditional driven-moduli toy control.
 
-Solves the exact Bianchi-I cosmological equations of motion coupled to:
+Probes a bounded toy Bianchi-I shear system coupled to:
 1. 3D Epstein Zeta Casimir Tensor (passive decay verification)
-2. Active Driven Syntropic Condensate Superflow (steady-state non-linear attractor analysis)
+2. an explicitly inserted driven-source parameter (conditional sensitivity only)
 
-Evaluates whether anisotropic expansion H_t/H_p sustains a stationary attractor
-under open reservoir replenishment Q^mu_syn (Rule 1, 2, 3, 4, 6).
+It does not derive a modulus action, reservoir stress or Q^mu_syn. It cannot
+establish a stationary physical attractor or a TOP-001 physics pass.
 """
 
 import json
@@ -145,14 +145,22 @@ def main():
     # Stability eigenvalue check: d(d_sigma/dN)/dsigma = -3 < 0 => Globally stable fixed point!
     stability_pass = True
     passed_all = passive_pass and stability_pass
-    status_str = "PASS_TOP001_DRIVEN_MODULI_BACKREACTION" if passed_all else "FAIL_TOP001"
+    status_str = "PASS_TOP001_CBR002_CONDITIONAL_TOY_CONTROL" if passed_all else "FAIL_TOP001_CONDITIONAL_TOY_CONTROL"
 
     summary = {
         "gate": "TOP-001",
         "subgate": "DRIVEN_MODULI_BACKREACTION",
         "label": "TOP-001_CBR002_RAYCHAUDHURI_SOLVER",
         "status": status_str,
-        "physics_pass": True,
+        "physics_pass": False,
+        "gate_effect": "NONE",
+        "publication_status": "NOT_A_PHYSICS_CLAIM",
+        "epistemic_status": "SCOPED_NEGATIVE_AND_CONDITIONAL_TOY",
+        "scientific_boundary": (
+            "Passive dilution and inserted-source sensitivity in a dimensionless "
+            "toy system only; no action-derived Q_syn, modulus potential, "
+            "renormalized dynamical stress or cosmological prediction."
+        ),
         "passive_free_field_decay": {
             "initial_Ht_over_Hp": passive_res["Ht_over_Hp_series"][0],
             "final_Ht_over_Hp": passive_res["final_Ht_over_Hp"],
@@ -170,13 +178,18 @@ def main():
         ],
         "analytical_conclusion": {
             "free_field_attractor": "Isotropic Ht/Hp = 1.000 (re-confirms CBR-001 negative result)",
-            "driven_condensate_attractor": "Stationary anisotropic expansion Ht/Hp = 1 + (2/9)*eta/H_bg maintained by syntropic flux Q^mu_syn",
-            "stability": "Globally stable fixed point (Lyapunov exponent lambda = -3.0 H)"
+            "driven_condensate_attractor": "Conditional toy response to an inserted eta_drive; Q^mu_syn and a sustaining action are not derived",
+            "stability": "Local stability statement for the inserted-source toy only; not a physical gate result"
         },
         "checks": [
             {"id": "TOP.3", "description": "Free Casimir stress decays to exact isotropic expansion Ht/Hp = 1.000", "pass": bool(passive_pass)},
-            {"id": "TOP.4", "description": "Driven syntropic flux sustains stable stationary anisotropic expansion without fine-tuning", "pass": True}
-        ]
+            {"id": "TOP.4", "description": "Inserted-source sensitivity is numerically stable in the conditional toy", "pass": True}
+        ],
+        "claim_firewall": {
+            "persistent_free_field_13_over_12": False,
+            "derived_Q_syn": False,
+            "physics_pass": False
+        }
     }
 
     out_json = output_dir / "top001_driven_moduli_summary.json"

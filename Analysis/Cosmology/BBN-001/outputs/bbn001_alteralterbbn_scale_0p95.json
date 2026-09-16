@@ -1,0 +1,124 @@
+{
+  "gate": "BBN-001",
+  "gate_effect": "NONE",
+  "input": {
+    "abundance_file": "abundance_file.dat",
+    "columns": [
+      {
+        "name": "t",
+        "unit": "s"
+      },
+      {
+        "name": "T",
+        "unit": "MeV"
+      },
+      {
+        "name": "dTdt",
+        "unit": "MeV^2"
+      },
+      {
+        "name": "Tnu",
+        "unit": "MeV"
+      },
+      {
+        "name": "H",
+        "unit": "MeV"
+      },
+      {
+        "name": "nb_etaf",
+        "unit": "MeV^3"
+      }
+    ],
+    "cosmo_file": "cosmo_file.dat",
+    "cosmo_file_sha256": "353983dc6a422445dfeef95e661df3c67656f8967bd03509917a7eb286dfe8d4",
+    "cosmo_rows": 6174,
+    "eta": 6.137e-10,
+    "param_file": "param_file.dat",
+    "param_file_sha256": "362b17c55d1d63d66a56367f82f108dac3121b99a882841b9d50142f44eb3f93"
+  },
+  "label": "expansion_scale_0p95",
+  "limitations": [
+    "The input history is an external standard/control history, not an ITSM action-derived background.",
+    "No early-plenum density, Q^mu, G_eff(z), perturbation matching or Planck/DESI likelihood is supplied.",
+    "The network result is a reproducibility and sensitivity control only; it is not an ITSM prediction."
+  ],
+  "network": {
+    "executable_sha256": "174bd31fe90233eabf1d92fd6133d90358875841d533c171771cc54dfa498d8f",
+    "license": "GPL-3.0",
+    "name": "AlterAlterBBN",
+    "reported_version": "v2.0",
+    "source_commit": "98f086662ae897ffd3386293d80157ba88483a3f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "4601f3dcf64fd7ab862d837954d46f5bd226ed2277c3723d7a47db9b6cc68e3d"
+  },
+  "network_input_audit": {
+    "H_column": "retained_in_input_contract",
+    "H_column_consumed_by_pinned_source": "NOT_USED_BY_PINNED_SOURCE",
+    "basis": "For the supplied source audit, bbn.c calls dTdt, neutrino_temperature and nb_eta_final_ratio; it does not call an H interpolation accessor."
+  },
+  "outputs": {
+    "D_over_H": 2.2607785447728758e-05,
+    "Y_He_mass_fraction": 0.23764866953416,
+    "abundances": {
+      "Be7": {
+        "high": 4.410794906457e-10,
+        "low": 3.876412467969e-10,
+        "mean": 4.131331646909e-10
+      },
+      "H2": {
+        "high": 1.685326677388e-05,
+        "low": 1.762410060632e-05,
+        "mean": 1.723377990816e-05
+      },
+      "H3": {
+        "high": 5.308616328407e-08,
+        "low": 5.664073435181e-08,
+        "mean": 5.482158810602e-08
+      },
+      "He3": {
+        "high": 7.616648042494e-06,
+        "low": 7.49901032084e-06,
+        "mean": 7.554700201109e-06
+      },
+      "He4": {
+        "high": 0.05939539850807,
+        "low": 0.05942884473852,
+        "mean": 0.05941216738354
+      },
+      "Li6": {
+        "high": 2.345122124005e-14,
+        "low": 1.115319766818e-15,
+        "mean": 7.221665121785e-15
+      },
+      "Li7": {
+        "high": 1.974032370948e-11,
+        "low": 1.923589835461e-11,
+        "mean": 1.953787749041e-11
+      },
+      "n": {
+        "high": 0.0,
+        "low": 0.0,
+        "mean": 0.0
+      },
+      "p": {
+        "high": 0.7623616870134,
+        "low": 0.7622267030509,
+        "mean": 0.7622940313197
+      }
+    },
+    "conversion_contract": {
+      "D_over_H": "n_H2 / n_H",
+      "Y_He_mass_fraction": "4 * n_He4 / n_b"
+    }
+  },
+  "physics_pass": false,
+  "publication_status": "NOT_A_PHYSICS_CLAIM",
+  "record_type": "ALTERALTERBBN_EXTERNAL_NETWORK_CONTROL",
+  "review_state": {
+    "ITSM_mapping": "NOT_DERIVED",
+    "external_BBN_likelihood": "NOT_IMPLEMENTED",
+    "independent_reproduction": "NOT_COMPLETED",
+    "three_way_consensus": "NOT_MET"
+  },
+  "status": "CONTROL_ONLY"
+}
