@@ -64,7 +64,7 @@ The executable is
 The deterministic output is
 `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json`.
 Two consecutive executions produced the byte-identical SHA-256
-`e6e8751a9be63aacc60a4275245ade1a424303a9685e8e2bcd4dd22d35cc42ff`.
+`557e7b4ae7ddfb3402e15aa72eaf829b695446c7681964d3b9870b60ad434950`.
 
 ## 4. Decision boundary
 
@@ -80,8 +80,8 @@ reduced-Hessian calculation with negative controls.
 | Artifact | SHA-256 |
 |---|---|
 | `topx4_s2f3_physical_hessian_readiness.py` | `8993b880ec8de356d941a3d63c46e917002ef2decc152b5d9729f9fe1d405b00` |
-| `topx4_s2f3_physical_hessian_readiness_summary.json` | `e6e8751a9be63aacc60a4275245ade1a424303a9685e8e2bcd4dd22d35cc42ff` |
-| `TOPX4_S2F3_PHYSICAL_HESSIAN_READINESS_CONTRACT_2026-09-16.md` | `8e4fbc533857f93a68d49d60f8de5ab911c71471e8e948072657a9e1e37472f6` |
+| `topx4_s2f3_physical_hessian_readiness_summary.json` | `557e7b4ae7ddfb3402e15aa72eaf829b695446c7681964d3b9870b60ad434950` |
+| `TOPX4_S2F3_PHYSICAL_HESSIAN_READINESS_CONTRACT_2026-09-16.md` | `2bcdf7590ac1413d2a379e2f3e464447a3e94d49df28a8aea5d2f7b37b5264fd` |
 | `PLAN.md` | `a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f` |
 | `TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md` | `37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945` |
 | `topx4_a1_background_summary.json` | `17270d7c7a71401bb7e283139c82d28a188d6fef555348bf42647feacb112b43` |

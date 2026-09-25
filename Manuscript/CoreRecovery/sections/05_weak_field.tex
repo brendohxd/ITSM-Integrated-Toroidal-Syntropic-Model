@@ -87,14 +87,29 @@ global cosmology.
 
 \subsection{Disk geometry and coefficient status}
 
-For a general density distribution, equality of divergences permits
+For the flat periodic metric and local-static baseline $\mathcal S_Q=0$,
+equality of divergences permits the torus Hodge decomposition
 \begin{equation}
  \frac{|\nabla\varphi|}{a_0}\nabla\varphi
- =\frac{C_m}{C_{\rm IR}}\nabla\Phi_N+\nabla\times\mathbf H.
+ =\frac{C_m}{C_{\rm IR}}\nabla\Phi_N+\nabla\times\mathbf H
+ +\mathbf h_0.
  \label{eq:curl-field}
 \end{equation}
-The solenoidal field vanishes in sufficient symmetry but is generally nonzero
-for a finite disk.  Consequently a pointwise square-root prescription is a
+Here $\mathbf H$ is periodic and $\mathbf h_0$ is the constant harmonic flux,
+equal to the spatial mean of the difference of the two gradient-flux terms.
+The mean of a periodic curl vanishes, whereas the mean of
+$|\nabla\varphi|\nabla\varphi$ need not vanish even when
+$\langle\nabla\varphi\rangle=0$.  Thus $\mathbf h_0=0$ requires an additional
+condition; it does not follow from periodicity alone.  This flux is determined
+by the solution, not a freely adjustable uniform acceleration or a winding
+of the force potential.  A curved spatial metric requires its corresponding
+Hodge decomposition.  For $\mathcal S_Q\ne0$, its separately derived source
+contribution must also be subtracted before taking a divergence-free difference.
+
+Sufficient local symmetry and boundary conditions can remove the solenoidal
+correction, but global spherical symmetry is not a property of $\Tthree$.
+For a finite disk the correction is generally nonzero.
+Consequently a pointwise square-root prescription is a
 historical algebraic approximation.  DISK-001 must solve
 Eq.~\eqref{eq:periodic-p3} for realistic baryonic sources before
 $C_{\rm obs}=2/3$ and $C_{\rm obs}\simeq1$ can be fairly compared.

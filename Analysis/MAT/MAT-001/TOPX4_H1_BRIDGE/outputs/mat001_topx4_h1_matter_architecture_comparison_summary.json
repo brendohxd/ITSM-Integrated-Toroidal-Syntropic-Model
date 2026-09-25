@@ -1,0 +1,255 @@
+{
+  "architecture_matrix": {
+    "avoids_physical_matter_KK_towers": {
+      "brane": "YES_BY_CONSTRUCTION",
+      "bulk": "NO"
+    },
+    "changes_S2F3_quantum_stabilization_problem": {
+      "brane": "YES_LOCALIZED_STRESS_BOUNDARY_DATA_COUNTERTERMS",
+      "bulk": "YES_FULL_PHYSICAL_MATTER_SPECTRUM"
+    },
+    "chiral_4d_matter_without_new_bulk_mechanism": {
+      "brane": "POSSIBLE_IN_DECLARED_4D_MATTER_ACTION",
+      "bulk": "NO_ON_CURRENT_SMOOTH_S1_SPECIFICATION"
+    },
+    "directly_derives_track_a_Y_three_halves": {
+      "brane": "NO",
+      "bulk": "NO"
+    },
+    "junction_and_localized_counterterms": {
+      "brane": "COMPULSORY",
+      "bulk": "ABSENT"
+    },
+    "preserves_smooth_circle_classically": {
+      "brane": "NO_LOCALIZED_DEFECT_ADDED",
+      "bulk": "YES"
+    },
+    "universal_source_metric_is_explicit": {
+      "brane": "YES_AT_INDUCED_METRIC_KINEMATIC_LEVEL",
+      "bulk": "REQUIRES_COMPLETE_REDUCED_MATTER_THEORY"
+    }
+  },
+  "artifact_receipts": [
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_matter_architecture_comparison.py",
+      "sha256": "4a117061eaf9597a37782cdbcbf63d64266ea91757a6ae768e283adc3bb84954",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_matter_architecture_comparison.py.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_MATTER_ARCHITECTURE_COMPARISON_CONTRACT_2026-09-16.md",
+      "sha256": "67d84e610c47441a6de4368ef2db9ab0ad4cf394f9b467c5b952895de7854ab3",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_MATTER_ARCHITECTURE_COMPARISON_CONTRACT_2026-09-16.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRIDGE_CONTRACT_2026-09-16.md",
+      "sha256": "553499f74e1f90073f0d327aadd3d9d48998aaee08feb3f13c1db8dc92f6bffd",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRIDGE_CONTRACT_2026-09-16.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_bridge_readiness_summary.json",
+      "sha256": "f195fc0bb41e43f336cf197379c9f8c98caa2b205106fc72bd31c60b66233d4a",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_bridge_readiness_summary.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/TOP-X4/TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md",
+      "sha256": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/TOP-X4/TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_a2a3_reduction_radion_summary.json",
+      "sha256": "d5a82f23204b5e02d046a8da43ce549dec53acebe9e0770c6f4c7cdabefddc5a",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/TOP/TOP-X4/outputs/topx4_a2a3_reduction_radion_summary.json.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json",
+      "sha256": "557e7b4ae7ddfb3402e15aa72eaf829b695446c7681964d3b9870b60ad434950",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json.sha256",
+      "sidecar_required": true
+    }
+  ],
+  "audit_execution_status": "COMPLETE",
+  "checks": [
+    {
+      "missing": [],
+      "name": "all_authority_and_input_files_exist",
+      "ok": true
+    },
+    {
+      "failures": [],
+      "name": "all_required_sidecars_match_current_bytes",
+      "ok": true
+    },
+    {
+      "name": "comparison_does_not_relabel_the_existing_chi_proxy",
+      "ok": true
+    },
+    {
+      "alpha_b": "-sqrt(6)/(6*M_Pl)",
+      "name": "brane_induced_metric_radion_scaling_is_exact",
+      "ok": true
+    },
+    {
+      "bulk_control": {
+        "d_log_mass_d_sigma": "-sqrt(6)/(6*M_Pl)",
+        "kinetic_r_power": 0,
+        "mass": "m_5*exp(-sqrt(6)*sigma/(6*M_Pl))",
+        "mass_squared_r_power": -1,
+        "matches_brane_alpha": true
+      },
+      "name": "bulk_scalar_zero_mode_is_canonical_and_has_same_mass_scaling",
+      "ok": true
+    },
+    {
+      "dimensions": {
+        "alpha_or_source_coupling": -1,
+        "closes_to_four": true,
+        "rho_b": 4,
+        "sigma": 1,
+        "source_term_total": 4
+      },
+      "name": "kinematic_source_coupling_has_mat_mass_dimension",
+      "ok": true
+    },
+    {
+      "homogeneity": {
+        "canonical_radion_derivative_degree": 2,
+        "degrees_match": false,
+        "direct_radion_track_a_map": "REJECTED_DERIVATIVE_HOMOGENEITY_MISMATCH",
+        "regular_point_redefinition_preserves_derivative_degree": true,
+        "track_a_derivative_degree": 3
+      },
+      "name": "direct_radion_to_track_a_map_is_rejected",
+      "ok": true
+    },
+    {
+      "criteria_count": 7,
+      "name": "comparison_is_structural_and_contains_no_weighted_score",
+      "ok": true
+    },
+    {
+      "anchors": [
+        "hep-ph/0012100",
+        "hep-ph/0102019",
+        "hep-ph/0401189",
+        "hep-th/0008188"
+      ],
+      "name": "primary_source_anchors_are_registered",
+      "ok": true
+    },
+    {
+      "name": "parent_survival_and_physical_hessian_holds_remain_binding",
+      "ok": true
+    }
+  ],
+  "checks_passed": 10,
+  "checks_total": 10,
+  "contract_sha256": "67d84e610c47441a6de4368ef2db9ab0ad4cf394f9b467c5b952895de7854ab3",
+  "date": "2026-09-16",
+  "decision": {
+    "bulk_route": "RETAIN_AS_SMOOTH_CIRCLE_AND_ZERO_MODE_CONTROL",
+    "child_action_freeze": "NOT_AUTHORIZED",
+    "direct_radion_track_a_map": "REJECTED_DERIVATIVE_HOMOGENEITY_MISMATCH",
+    "lead_meaning": "ROUTE_RECOMMENDATION_ONLY",
+    "lead_source_projection_candidate": "BRANE_INDUCED_METRIC_CHILD_ROUTE",
+    "mixed_radion_condensate_mode": "OPEN_DEPENDENCY_LOCKED",
+    "reason": "The brane option exposes one induced physical metric and a universal kinematic trace-source component without a physical-matter KK tower. It still creates a new localized theory with junction and counterterm requirements, and neither option produces the Track-A operator."
+  },
+  "exact_controls": {
+    "brane_induced_metric": {
+      "A_b": "exp(-sqrt(6)*sigma/(6*M_Pl))",
+      "alpha_b": "-sqrt(6)/(6*M_Pl)",
+      "alpha_exact": true,
+      "expected_alpha": "-sqrt(6)/(6*M_Pl)"
+    },
+    "bulk_massive_scalar_zero_mode": {
+      "d_log_mass_d_sigma": "-sqrt(6)/(6*M_Pl)",
+      "kinetic_r_power": 0,
+      "mass": "m_5*exp(-sqrt(6)*sigma/(6*M_Pl))",
+      "mass_squared_r_power": -1,
+      "matches_brane_alpha": true
+    },
+    "einstein_frame_chart": {
+      "inverse_4d_metric_r_power": 1,
+      "log_r": "sqrt(6)*sigma/(3*M_Pl)",
+      "sqrt_minus_G_r_power": -1
+    },
+    "four_dimensional_dimensions": {
+      "alpha_or_source_coupling": -1,
+      "closes_to_four": true,
+      "rho_b": 4,
+      "sigma": 1,
+      "source_term_total": 4
+    },
+    "operator_homogeneity": {
+      "canonical_radion_derivative_degree": 2,
+      "degrees_match": false,
+      "direct_radion_track_a_map": "REJECTED_DERIVATIVE_HOMOGENEITY_MISMATCH",
+      "regular_point_redefinition_preserves_derivative_degree": true,
+      "track_a_derivative_degree": 3
+    }
+  },
+  "literature_scope": {
+    "brane_effective_equations": "REQUIRED_NOT_SUPPLIED",
+    "bulk_KK_towers": "SUPPORTED_ARCHITECTURE_FACT_NOT_ITSM_VALIDATION",
+    "bulk_chirality_mechanism": "REQUIRED_NOT_SUPPLIED",
+    "physical_radion_mode_diagonalization": "REQUIRED_NOT_SUPPLIED"
+  },
+  "mutation_tests": {
+    "labels": [
+      "quadratic_radion_promoted_to_track_a",
+      "parent_modified_during_comparison",
+      "child_freeze_without_global_preflight",
+      "kinematic_alpha_promoted_to_physical_residue",
+      "bulk_brane_hybrid",
+      "operator_homogeneity_mismatch_erased"
+    ],
+    "passed": 6,
+    "total": 6
+  },
+  "next_single_gate": {
+    "name": "TOPX4_H1_BRANE_CHILD_GLOBAL_CONSISTENCY_PREFLIGHT",
+    "scope": "Test whether a compact smooth-circle child with one localized matter hypersurface can be globally and variationally specified without altering the parent by stealth.",
+    "stop_before": "NO_CHILD_ACTION_FREEZE_OR_PHYSICS_CALCULATION"
+  },
+  "parent": "X4-S2F3",
+  "parent_action_changed": false,
+  "schema": "ITSM_MAT001_TOPX4_H1_MATTER_ARCHITECTURE_COMPARISON_v1",
+  "scientific_boundary": "The derived alpha=-1/(sqrt(6) M_Pl) is a kinematic radion source component in two minimal controls. It is not the constrained H1 residue, does not produce the Track-A Y^(3/2) operator and does not compute V.",
+  "script_sha256": "4a117061eaf9597a37782cdbcbf63d64266ea91757a6ae768e283adc3bb84954",
+  "status": "HOLD_TOPX4_H1_MATTER_ARCHITECTURE_CHILD_ACTION_NOT_FROZEN",
+  "status_firewall": {
+    "K_Q_derived": false,
+    "MAT001_pass": false,
+    "UVIR003_pass": false,
+    "V_computed": false,
+    "child_action_frozen": false,
+    "gate_effect": "NONE",
+    "parent_action_changed": false,
+    "physical_hessian_constructed": false,
+    "physical_mode_identified": false,
+    "physics_pass": false,
+    "rule9_cleared": false,
+    "signed_residue_computed": false,
+    "stage4A_reopened": false
+  }
+}

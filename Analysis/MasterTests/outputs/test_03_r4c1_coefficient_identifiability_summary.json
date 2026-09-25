@@ -1,0 +1,493 @@
+{
+  "candidate": "R4C1-v1",
+  "control": "R4C1-C1",
+  "validation": "PASS",
+  "passed": 63,
+  "total": 63,
+  "checks": [
+    {
+      "name": "normalized_homogeneous_Y_zero",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "normalized_homogeneous_Q",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "homogeneous_A_derivative_L",
+      "passed": true,
+      "value": [],
+      "criterion": "every component exactly zero"
+    },
+    {
+      "name": "homogeneous_A_derivative_frame_E_algebraic",
+      "passed": true,
+      "value": [],
+      "criterion": "every component exactly zero"
+    },
+    {
+      "name": "homogeneous_A_derivative_connection_momentum",
+      "passed": true,
+      "value": [],
+      "criterion": "every component exactly zero"
+    },
+    {
+      "name": "homogeneous_A_derivative_metric_algebraic",
+      "passed": true,
+      "value": [],
+      "criterion": "every component exactly zero"
+    },
+    {
+      "name": "homogeneous_A_derivative_connection_stress",
+      "passed": true,
+      "value": [],
+      "criterion": "every component exactly zero"
+    },
+    {
+      "name": "homogeneous_cubic_force_flux_zero",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "unnormalized_projector_mutation_rejected",
+      "passed": true,
+      "residual": "3",
+      "expected": "nonzero"
+    },
+    {
+      "name": "cubic_gradient_formula",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "cubic_hessian_formula_nonzero_q",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "radial_hessian_eigenvalue",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "transverse_hessian_eigenvalue",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "hessian_operator_norm_zero_limit",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "gradient_norm_zero_limit",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "cubic_first_two_orders_vanish",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "quadratic_Y_mutation_rejected",
+      "passed": true,
+      "residual": "2*A",
+      "expected": "nonzero"
+    },
+    {
+      "name": "analytic_third_vertex_mutation_rejected",
+      "passed": true,
+      "residual": "12*A",
+      "expected": "nonzero"
+    },
+    {
+      "name": "canonical_cubic_chart_invariant",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "canonical_regulator_chart_invariant",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "canonical_matter_chart_invariant",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "A_only_physical_change",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "A_only_not_chart_mutation_rejected",
+      "passed": true,
+      "residual": "3*A/K**(3/2)",
+      "expected": "nonzero"
+    },
+    {
+      "name": "auxiliary_chart_rescaling",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "periodic_cubic_mean",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "periodic_regulator_mean",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "periodic_bulk_A_change_not_boundary",
+      "passed": true,
+      "residual": "4*A*amp**3*k**3/pi",
+      "expected": "nonzero"
+    },
+    {
+      "name": "static_flux_and_regulator_sign",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "spherical_regulator_flux_from_action",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "leading_profile_regulator_flux",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "regulator_subleading_ratio",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "spherical_integrated_flux",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "missing_factor_three_mutation_rejected",
+      "passed": true,
+      "residual": "-2*M_source*beta/3",
+      "expected": "nonzero"
+    },
+    {
+      "name": "conditional_acceleration_scale",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "conditional_scale_chart_invariant",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "force_amplitude_scaling",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "fixed_force_mutation_rejected",
+      "passed": true,
+      "residual": "-sqrt(3)*sqrt(M_source)*sqrt(beta)/(12*sqrt(pi)*sqrt(A)*R)",
+      "expected": "nonzero"
+    },
+    {
+      "name": "scale_log_sensitivity_to_A",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "C_chi_scaling_at_fixed_background",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "reverse_assignment_one",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "reverse_assignment_two_pi",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "reverse_assignment_inverse_two_pi",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "reverse_assignment_curvature",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "acceleration_mass_dimension",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero"
+    },
+    {
+      "name": "A_factor_0.25_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "completed [0,4] and all finite"
+    },
+    {
+      "name": "A_factor_0.25_max_normalized_Friedmann",
+      "passed": true,
+      "value": 3.408907498308431e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "A_factor_0.25_max_charge_drift",
+      "passed": true,
+      "value": 1.8791856959410325e-11,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "A_factor_0.25_max_dust_integral_drift",
+      "passed": true,
+      "value": 2.8703150967146485e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "A_factor_1.0_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "completed [0,4] and all finite"
+    },
+    {
+      "name": "A_factor_1.0_max_normalized_Friedmann",
+      "passed": true,
+      "value": 3.408907498308431e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "A_factor_1.0_max_charge_drift",
+      "passed": true,
+      "value": 1.8791856959410325e-11,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "A_factor_1.0_max_dust_integral_drift",
+      "passed": true,
+      "value": 2.8703150967146485e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "A_factor_4.0_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "completed [0,4] and all finite"
+    },
+    {
+      "name": "A_factor_4.0_max_normalized_Friedmann",
+      "passed": true,
+      "value": 3.408907498308431e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "A_factor_4.0_max_charge_drift",
+      "passed": true,
+      "value": 1.8791856959410325e-11,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "A_factor_4.0_max_dust_integral_drift",
+      "passed": true,
+      "value": 2.8703150967146485e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "A_factor_0.25_background_degeneracy",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<1e-12"
+    },
+    {
+      "name": "A_factor_0.25_current_degeneracy",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<1e-12"
+    },
+    {
+      "name": "A_factor_1.0_background_degeneracy",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<1e-12"
+    },
+    {
+      "name": "A_factor_1.0_current_degeneracy",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<1e-12"
+    },
+    {
+      "name": "A_factor_4.0_background_degeneracy",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<1e-12"
+    },
+    {
+      "name": "A_factor_4.0_current_degeneracy",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<1e-12"
+    },
+    {
+      "name": "K_positive_sensitivity_control",
+      "passed": true,
+      "value": 0.01656658471876225,
+      "criterion": "completed, finite and >1e-6"
+    }
+  ],
+  "homogeneous": {
+    "branch": "normalized timelike, spatially aligned homogeneous fields",
+    "result": "A absent from full homogeneous equations, not merely omitted in an ODE",
+    "metric_scope": "includes algebraic stress and connection momentum dependence",
+    "currents": "Qmp=beta*T_m*grad(psi); Qsyn=-g_r*s*r*grad(r)/2; no A at fixed fields"
+  },
+  "quadratic": {
+    "field_space": "f=A|q|^3 is C2 with gradient and Hessian zero at q=0; not C3",
+    "chain_rule": "q(fields) smooth in normalized timelike chart; volume factor cannot create orders <=2",
+    "conclusion": "full pre-constraint classical quadratic action independent of A on this branch",
+    "reduction_hold": "inherited by a regular constraint reduction only; no invertibility or stability proved",
+    "quantum_hold": "no statement that radiative or nonlinear corrections are A independent"
+  },
+  "matching": {
+    "chart": "psi_new=sigma psi; z_new=sigma z; K_new=K/sigma^2; A_new=A/sigma^3; b_new=b/sigma^2; beta_new=beta/sigma",
+    "invariants": [
+      "A/K^(3/2)",
+      "b/K",
+      "beta/sqrt(K)"
+    ],
+    "periodic_energy_density": "4 A amp^3 k^3/(3 pi)+b amp^2 k^4/4; k=2 pi |n|/L",
+    "static_equation": "3 A div(|grad psi| grad psi)-b Delta^2 psi=beta rho",
+    "static_scope": "positive beta, frozen local frame, spherical compensated/local patch; regulator-subleading force formula only",
+    "radial_integrated_flux": "4 pi R^2 [3 A q^2-b d(q_prime+2q/R)/dR]=beta M(<R)",
+    "leading_profile_regulator_ratio": "4*sqrt(3)*sqrt(pi)*b/(3*sqrt(A)*sqrt(M_source)*R*sqrt(beta))",
+    "approximation_hold": "require 2b/(3A amplitude R)<<1 plus weak potential, local/quasistatic and backreaction bounds; no common domain proved",
+    "force_amplitude": "sqrt(3)*sqrt(M_source)*sqrt(beta)/(6*sqrt(pi)*sqrt(A)*R)",
+    "a_dynamic": "beta**3/(12*pi*A*G_static)",
+    "projection_relation": "a_dynamic=C_proj^2 a0; C_proj not derived",
+    "target_sensitivity": "at fixed H and other coefficients, C_chi scales as 1/A in this conditional reduction",
+    "inverse_assignments": {
+      "one": "beta**3/(12*pi*C_proj**2*G_static*H)",
+      "two_pi": "beta**3/(24*pi**2*C_proj**2*G_static*H)",
+      "inverse_two_pi": "beta**3/(6*C_proj**2*G_static*H)",
+      "curvature": "beta**3/(6*C_proj**2*G_static*H*d)"
+    },
+    "inverse_assignment_scope": "arbitrary target insertion exposed, not a permitted matching prescription",
+    "redshift_prediction": "NOT_DERIVED: physical local matching and C_proj remain open"
+  },
+  "backgrounds": {
+    "rows": [
+      {
+        "A_factor": 0.25,
+        "trajectory_difference": 0.0,
+        "current_difference": 0.0,
+        "states_exactly_equal": true,
+        "canonical_cubic_ratio": 0.25,
+        "conditional_force_ratio": 2.0,
+        "conditional_a_dynamic_ratio": 4.0,
+        "max_Friedmann": 3.408907498308431e-12,
+        "charge_drift": 1.8791856959410325e-11,
+        "dust_drift": 2.8703150967146485e-12
+      },
+      {
+        "A_factor": 1.0,
+        "trajectory_difference": 0.0,
+        "current_difference": 0.0,
+        "states_exactly_equal": true,
+        "canonical_cubic_ratio": 1.0,
+        "conditional_force_ratio": 1.0,
+        "conditional_a_dynamic_ratio": 1.0,
+        "max_Friedmann": 3.408907498308431e-12,
+        "charge_drift": 1.8791856959410325e-11,
+        "dust_drift": 2.8703150967146485e-12
+      },
+      {
+        "A_factor": 4.0,
+        "trajectory_difference": 0.0,
+        "current_difference": 0.0,
+        "states_exactly_equal": true,
+        "canonical_cubic_ratio": 4.0,
+        "conditional_force_ratio": 0.5,
+        "conditional_a_dynamic_ratio": 0.25,
+        "max_Friedmann": 3.408907498308431e-12,
+        "charge_drift": 1.8791856959410325e-11,
+        "dust_drift": 2.8703150967146485e-12
+      }
+    ],
+    "K_times_four_trajectory_difference": 0.01656658471876225,
+    "interpretation": "exact ODE degeneracy control; not independent integrator or stability validation"
+  },
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_COEFFICIENT_IDENTIFIABILITY_CONTRACT_2026-09-25.md": "29f54fbef62d6a2b2a5d29d772633a87694a9ed1d05f7b00244833b88075465d",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_gr_limit.py": "0730de78971da97345517477115ace91bd0b9c1c0ae0b136c07067854a38a710"
+  },
+  "script_sha256": "ae5e6c363a22b2a3d2fc88f0aaf19f946b1d07d3c06cf9c55696f418a5392d45",
+  "status": "CLASSICAL_BACKGROUND_AND_LINEAR_DATA_DO_NOT_IDENTIFY_SPATIAL_FORCE_COEFFICIENT",
+  "independent_blinding": false,
+  "observed_acceleration_input": false,
+  "coefficient_selected": false,
+  "C_chi": "NOT_DERIVED",
+  "a0_redshift": "NOT_DERIVED",
+  "physical_B1_Hessian_verified": false,
+  "quantum_matching": "NOT_COMPUTED",
+  "canonical_Test3_pass": false,
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "Rule9": "NOT_CLEARED",
+  "MAT-001": "BLOCKED",
+  "UVIR-003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED"
+}

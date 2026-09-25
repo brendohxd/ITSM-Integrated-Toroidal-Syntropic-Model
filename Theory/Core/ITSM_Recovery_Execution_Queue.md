@@ -2,18 +2,37 @@
 
 **Branch:** `recovery/v12-core-architecture`
 **Queue opened:** 2026-08-05
-**Queue reconciled:** 2026-09-16
-**Sprint goal:** preserve the UVIR-to-MAT fail-closed boundary while routing
-new derivation work through the bounded TOP-X4 / KK-001 Plan 11 decision.
+**Queue reconciled:** 2026-09-25
+**Sprint goal:** execute the user-directed Master ITSM test programme in
+dependency order, beginning with the Test 1 action-input completion gate;
+preserve all existing fail-closed boundaries.
 
 This is a short-lived execution queue for remote check-ins. The Master Research
 Plan remains the scientific workflow authority; gate reports and deterministic
 outputs remain the evidence authority.
 
+The current active priority is Test 1 in
+`Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md`. Its entry hold is
+`ACTION_INPUT_INCOMPLETE_HOLD_BEFORE_VARIATION`; the hold is not a failed
+variation or a physics result. TOP-X4 `X4-S4-C1` is a separate queued lane,
+not the active programme priority.
+
+**Rule-9 scheduling decision (25 September 2026):** all outstanding reviews
+are `DEFERRED`. Follow `ITSM_RULE9_DEFERRED_REVIEW_POLICY.md` and the deferred
+review register. Pending review alone does not block scoped provisional
+research or parent documentation. Carry review dependencies forward; retain
+scientific failures and missing-input holds for affected uses. The review
+backlog is outside the active research critical path until the operator
+resumes it; canonical closure and publication readiness still require review.
+
 ## Active queue
 
 | Priority | Task | Status | Definition of done |
 |---|---|---|---|
+| P0 | Master programme Test 1 — covariant action and source vector | **active priority; action-input hold** | Complete and freeze the full off-shell matter/plenum/reservoir action and interaction-stress split before variation; then derive currents and verify regular zero-coupling and declared GR limits. Contract: `Theory/Gates/ITSM_MASTER_TEST_01_SOURCE_VECTOR_CLOSURE_CONTRACT_2026-09-24.md` |
+| P0 | Master Tests 1–3 bounded derivation audit | **local calculations complete; provisional reuse allowed; review DEFERRED** | Conditional source/witness 29/29; weak-field 11/11; coefficient 9/9; periodic T3 addendum 19/19; v7.2 transcription-chain rejection 10/10. Full disposition and deferred register retain scope and substantive programme requirements. No parent promotion or complete blind coefficient audit |
+| P0 | Approved R4C1 four-dimensional reservoir candidate | **provisional research continues; full coupled well-posedness/stability/GR/matching holds retained** | Current 119/119; variation/Ward 162/162; B1 48/48; G1 56/56; C1 63/63; S1 71/71; S2 56/56. S3 57/57 rejects the equal-order canonical bound and reconstructs a restricted original-variable graph-norm control with extra spatial regularity; no full IVP theorem. Next: freeze the complete coupled principal/subprincipal scalar evolution-estimate contract in declared mixed-regularity spaces. Wider phase cone, quartic dispersion, homogeneous/singular sectors, EFT validity and matching remain open. Failed S2/S3 attempts archived. Review deferred; no TOP-X4 or canonical promotion. See `Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md` |
+| Deferred | Tests 1-3 independent review | **DEFERRED_BY_OPERATOR; outside research critical path** | Preserve existing partial reports and sealed snapshots. `docs/ITSM_MASTER_TEST_REVIEW.md` prepares current mandates and ten receipts when needed. Resume reviewers only when directed; Rule 9 remains NOT_CLEARED. Review-only delay does not prevent eligible provisional work |
 | P0 | UVIR-to-MAT fail-closed handoff audit | **completed** | Eight exact upstream contracts pass; corrupted/mismatched input fails; docs and checkpoint pushed |
 | P0 | MAT basis-covariant physical-mode vertex projection | **completed** | Projection identity, field-basis covariance, kinetic normalization and negative controls pass without computing $V$ |
 | P1 | TOP S1M physical-eigenvalue cutoff invariance | **completed** | Modularly reindexed spectra agree under a physical cutoff; raw coordinate-box cutoff hazard reproduced |
@@ -46,6 +65,8 @@ outputs remain the evidence authority.
 | P0 | TOP-X4 `X4-S2F3` global scalar-matrix state construction | **completed (theorem-backed 10/10); Dirac/stress/Hessian hold** | Route-A pseudodifferential construction records the arbitrary-order formal symbol, Borel/smoothing realization, positive low-mode patch, exact full-matrix transport and basis covariance; `physics_pass=false`, Rule-9 clearance is unmet, and Dirac/gravity/parity, determinant, stress and physical Hessian remain open |
 | P0 | TOP-X4 `X4-S2F3` finite-order adiabatic-symbol diagnostic | **completed (bounded 8/8); global-state hold** | Route-B Riccati witness is finite and transpose-symmetric through orders 0–6; stable orders 0–3 show decreasing high-frequency residuals, positive normalized data and exact finite-mode CCR transport for the full rank-three matrix; no Borel sum or global state is claimed |
 | P0 | TOP-X4 `X4-S2F3` physical-Hessian readiness audit | **completed (readiness 8/8); physical Hessian hold** | Confirms the complete varied action, state-dependent stress, gravity/ghost/parity sectors, finite-charge background and metric/radion constraint blocks are not exported; `physical_hessian=NOT_CONSTRUCTED`, `radion_mass=NOT_COMPUTED`, `physics_pass=false` |
+| P0 | TOP-X4 `X4-S2F3` Dirac/parity/anomaly readiness audit | **completed (readiness 10/10); fermion/parity hold** | Static determinant remains parity-even and first-order Dirac transport remains finite-order; `dirac_completion=NOT_DERIVED`, `parity_odd_determinant_phase=NOT_DERIVED`, `anomaly_cancellation=NOT_DERIVED`, `counterterm_quantization=NOT_FIXED`, `physics_pass=false` |
+| P0 | TOP-X4 `X4-S2F3` scoped curved Dirac operator | **completed (bounded 13/13); quantum closure hold** | Hamiltonian-form operator, homogeneous spin connection, periodic KK spectrum and three negative mutations pass; 2/2 contract checks are separated from 11/11 operator checks; Hadamard state, determinant, parity/anomaly, stress and Hessian remain open |
 | P1 | Paper-suite artifact naming | **completed locally** | P1–P4 use descriptive versioned PDF names; P3/P4 remain quarantined claim-bearing scaffolds, not publication-ready papers |
 | P1 | TOP-001 3D Epstein Casimir tensor | **bounded controls complete; research scaffold remains open** | Static finite-cutoff Epstein stress, passive dilution and inserted-source sensitivity controls pass twice byte-identically; action-derived modulus/reservoir stress, independent dynamical stress and research-gate closure remain open |
 | P1 | WAK C1/C2/C3 identity-route evidence rubric | **completed** | All routes compared under eight hard requirements; C2 retained as calculation scaffold |
@@ -53,6 +74,17 @@ outputs remain the evidence authority.
 | P1 | 14 September external evidence watch | **recorded; no gate change** | Six unreviewed arXiv inputs recorded; BBN/helium, JWST clustering, siren, LVK-curvature and intrinsic-alignment follow-ups are dependency-locked in `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md` |
 | P1 | BBN-001 bundled-table/CAMB and external-network controls | **completed and published** | Six focused regression checks, five table schemas, PRIMAT 2024 compatibility, CAMB bridge and isolated AlterAlterBBN baseline/expansion controls pass; remains `CONTROL_ONLY`, `physics_pass=false`, `gate_effect=NONE` |
 | P1 | BBN-001 ITSM upstream-background interface preflight | **completed; upstream physics blocked** | Registered UVIR-003 export is checked for the external six-column history and ITSM closing inputs; missing physical temperature, units, plenum, transfer, charge-source and $G_{\rm eff}$ fields fail closed; no quantity is inferred |
+| P1 | BBN-001 action-derived input contract | **completed (validated 12/12); upstream physics blocked** | Machine-readable network/ITSM field contract is frozen; preflight records a precise 12-field missing-input receipt; values/provenance remain unvalidated and no BBN prediction is claimed |
+| P1 | MAT-001/TOP-X4 H1 signed-source bridge readiness | **completed locally; bridge hold** | Schur-reduced source/kinetic target and 10-item closure inventory are frozen; foundation 11/11 and mutations 6/6 pass; signed residue, physical mode, stabilized background and K_Q/V remain closed |
+| P1 | MAT-001/TOP-X4 bulk-versus-brane architecture comparison | **completed locally; route recommendation only** | Exact radion source scaling and Track-A derivative mismatch are checked; brane-induced-metric child is the lead candidate; no child action is frozen and X4-S2F3 is unchanged |
+| P1 | MAT-001/TOP-X4 brane-child global-consistency preflight | **completed locally; conditional hold** | Proper delta normalization, dimensions, localized variation, junction obligations, compact-space tension rejection and counterterm requirements pass 11/11 with 8/8 mutations; child freeze remains held |
+| P1 | MAT-001/TOP-X4 minimal brane-child freeze decision | **completed locally; minimal candidate rejected** | Flat-product distributional control requires lambda_b^ren=0 for a lone tension; 10/10 checks and 7/7 mutations pass; compensated/warped child remains a separate route and X4-S2F3 is unchanged |
+| P1 | MAT-001/TOP-X4 compensated/warped route handoff | **completed locally; new-parent design only** | Existing S0 audit defers X4-S4 orbifold/brane as a different parent and finds no distinct minimal smooth-S1 flux repair; 10/10 checks and 7/7 mutations pass; no compensator or new action selected |
+| P1 | MAT-001/TOP-X4 constraint/projection bookkeeping diagnostic | **completed locally; synthetic method hold** | Exact rational Schur/source projection, basis covariance, orientation-sign retention and singular-domain rejection pass 13/13; 6/6 mutations pass; no live Hessian or gate promotion |
+| P1 | MAT-001/TOP-X4 X4-S4-GW2 candidate-action contract | **completed locally; candidate frozen, parent not accepted** | Orbifold geometry, two fixed surfaces, full leading classical bulk/localized action, variational signs, derived static sum-rule weights and counterterm classes pass 21/21 checks with 15/15 mutations rejected; zero-charge background existence is next and all downstream physics holds remain closed |
+| P1 | MAT-001/TOP-X4 X4-S4-GW2 zero-charge background existence | **completed locally; registered benchmark rejected, new-parent action selection required** | Two bounded BVP attempts converged numerically but the best branch collapsed to `L=8.505e-13`; independent constraint residual `10.9723` and static-balance residual `0.683833` fail; no finite-charge or downstream promotion follows |
+| P1 | MAT-001/TOP-X4 post-zero-charge action selection | **completed locally; separate queued lane; curved-slice output not computed** | The failed flat benchmark remains immutable and is classified as a codimension-one flatness compatibility failure; exact curved Einstein/constraint/balance signs pass 13/13 checks with 14/14 mutations rejected. If resumed, the next output is signed `kappa4` under `TOPX4_H1_X4-S4_CURVED_SLICE_BACKGROUND_OUTPUT_TEST`; parent acceptance, finite charge, H1 and MAT remain closed |
+| Deferred | Rule-9 TOP-X4/BBN evidence packet | **DEFERRED_BY_OPERATOR; historical packet preserved** | Existing packet contains 11 authority documents, 24 hashed receipts, unresolved questions and role-separated prompts. Historical clearance remains `THREE_WAY_CLEARANCE_NOT_MET`; review alone does not stop eligible work. Reassess the exact substantive dependencies when that queued lane resumes |
 
 ## Quarantined 29 August queue assertions
 

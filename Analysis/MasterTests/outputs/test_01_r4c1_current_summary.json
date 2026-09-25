@@ -1,0 +1,849 @@
+{
+  "candidate": "R4C1-v1",
+  "validation": "PASS",
+  "status": "CONDITIONAL_FIRST_VARIATION_CHECKPOINT_PARENT_HOLD",
+  "passed": 119,
+  "total": 119,
+  "checks": [
+    {
+      "name": "full_U1_current_component_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "u_momentum_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "v_momentum_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "full_U1_current_component_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "u_momentum_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "v_momentum_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "full_U1_current_component_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "u_momentum_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "v_momentum_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "full_U1_current_component_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "u_momentum_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "v_momentum_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "u_EL_including_alignment",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "v_EL_including_alignment",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "inhomogeneous_frame_U1_Ward",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "portal_U1_invariance",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "bare_J_charge_law_rejected",
+      "passed": true,
+      "expected": "exact_nonzero_witness",
+      "residual": "zeta*(-H_u_11*u**2*v - H_u_11*v**3 - H_u_22*u**2*v - H_u_22*v**3 - H_u_33*u**2*v - H_u_33*v**3 + H_v_11*u**3 + H_v_11*u*v**2 + H_v_22*u**3 + H_v_22*u*v**2 + H_v_33*u**3 + H_v_33*u*v**2 - 2*d_u_1**2*u*v + 2*d_u_1*d_v_1*u**2 - 2*d_u_1*d_v_1*v**2 - 2*d_u_2**2*u*v + 2*d_u_2*d_v_2*u**2 - 2*d_u_2*d_v_2*v**2 - 2*d_u_3**2*u*v + 2*d_u_3*d_v_3*u**2 - 2*d_u_3*d_v_3*v**2 + 2*d_v_1**2*u*v + 2*d_v_2**2*u*v + 2*d_v_3**2*u*v)",
+      "witness_result": "-2441",
+      "witness": {
+        "H_u_11": "2",
+        "H_u_22": "3",
+        "H_u_33": "4",
+        "H_v_11": "5",
+        "H_v_22": "1",
+        "H_v_33": "2",
+        "d_u_1": "3",
+        "d_u_2": "4",
+        "d_u_3": "5",
+        "d_v_1": "1",
+        "d_v_2": "2",
+        "d_v_3": "3",
+        "u": "4",
+        "v": "5",
+        "zeta": "1"
+      }
+    },
+    {
+      "name": "wrong_alignment_current_sign_rejected",
+      "passed": true,
+      "expected": "exact_nonzero_witness",
+      "residual": "2*zeta*(-H_u_11*u**2*v - H_u_11*v**3 - H_u_22*u**2*v - H_u_22*v**3 - H_u_33*u**2*v - H_u_33*v**3 + H_v_11*u**3 + H_v_11*u*v**2 + H_v_22*u**3 + H_v_22*u*v**2 + H_v_33*u**3 + H_v_33*u*v**2 - 2*d_u_1**2*u*v + 2*d_u_1*d_v_1*u**2 - 2*d_u_1*d_v_1*v**2 - 2*d_u_2**2*u*v + 2*d_u_2*d_v_2*u**2 - 2*d_u_2*d_v_2*v**2 - 2*d_u_3**2*u*v + 2*d_u_3*d_v_3*u**2 - 2*d_u_3*d_v_3*v**2 + 2*d_v_1**2*u*v + 2*d_v_2**2*u*v + 2*d_v_3**2*u*v)",
+      "witness_result": "-4882",
+      "witness": {
+        "H_u_11": "2",
+        "H_u_22": "3",
+        "H_u_33": "4",
+        "H_v_11": "5",
+        "H_v_22": "1",
+        "H_v_33": "2",
+        "d_u_1": "3",
+        "d_u_2": "4",
+        "d_u_3": "5",
+        "d_v_1": "1",
+        "d_v_2": "2",
+        "d_v_3": "3",
+        "u": "4",
+        "v": "5",
+        "zeta": "1"
+      }
+    },
+    {
+      "name": "on_scalar_shell_u_equation",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "on_scalar_shell_v_equation",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "on_scalar_shell_full_charge_jet",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "on_scalar_shell_bare_charge_defect",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "charge_regular_at_amplitude_zero",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "dust_EL",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "dust_multiplier_constraint",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "matter_trace_variation",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "wrong_matter_source_sign_rejected",
+      "passed": true,
+      "expected": "exact_nonzero_witness",
+      "residual": "2*beta*epsilon*(d_tau_0**2 - d_tau_1**2 - d_tau_2**2 - d_tau_3**2 - 2*exp(2*beta*psi))*exp(2*beta*psi)",
+      "witness_result": "(-16*exp(12) - 264)*exp(12)",
+      "witness": {
+        "beta": "2",
+        "d_tau_0": "3",
+        "d_tau_1": "4",
+        "d_tau_2": "5",
+        "d_tau_3": "1",
+        "epsilon": "2",
+        "psi": "3"
+      }
+    },
+    {
+      "name": "dust_trace_on_constraint",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "reservoir_EL",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "matter_Ward_with_multiplier_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "reservoir_Ward_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "portal_reallocation_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qsyn_zero_branch_limit_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qmp_zero_branch_limit_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qsyn_regular_at_zero_charge_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "matter_Ward_with_multiplier_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "reservoir_Ward_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "portal_reallocation_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qsyn_zero_branch_limit_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qmp_zero_branch_limit_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qsyn_regular_at_zero_charge_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "matter_Ward_with_multiplier_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "reservoir_Ward_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "portal_reallocation_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qsyn_zero_branch_limit_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qmp_zero_branch_limit_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qsyn_regular_at_zero_charge_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "matter_Ward_with_multiplier_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "reservoir_Ward_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "portal_reallocation_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qsyn_zero_branch_limit_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qmp_zero_branch_limit_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Qsyn_regular_at_zero_charge_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "wrong_reservoir_source_sign_rejected",
+      "passed": true,
+      "expected": "exact_nonzero_witness",
+      "residual": "d_r_0*g_r*r*(-u**2 - v**2)",
+      "witness_result": "-624",
+      "witness": {
+        "d_r_0": "2",
+        "g_r": "3",
+        "r": "4",
+        "u": "5",
+        "v": "1"
+      }
+    },
+    {
+      "name": "nonzero_energy_exchange_witness",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "unit_frame",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "projector_annihilates_frame",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "projector_idempotent",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "alignment_metric_direction_00",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_QY_metric_direction_00",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "alignment_metric_direction_01",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_QY_metric_direction_01",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "alignment_metric_direction_02",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_QY_metric_direction_02",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "alignment_metric_direction_03",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_QY_metric_direction_03",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "alignment_metric_direction_11",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_QY_metric_direction_11",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "alignment_metric_direction_12",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_QY_metric_direction_12",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "alignment_metric_direction_13",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_QY_metric_direction_13",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "alignment_metric_direction_22",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_QY_metric_direction_22",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "alignment_metric_direction_23",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_QY_metric_direction_23",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "alignment_metric_direction_33",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_QY_metric_direction_33",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "ignoring_normalization_in_alignment_stress_rejected",
+      "passed": true,
+      "expected": "exact_nonzero_witness",
+      "residual": "25*zeta*(-25*j0**2 - 40*j0*j1 - 16*j1**2)/81",
+      "witness_result": "-48400/81",
+      "witness": {
+        "j0": "2",
+        "j1": "3",
+        "zeta": "4"
+      }
+    },
+    {
+      "name": "force_momentum_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "auxiliary_momentum_0",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_momentum_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "auxiliary_momentum_1",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_momentum_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "auxiliary_momentum_2",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "force_momentum_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "auxiliary_momentum_3",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "auxiliary_EL_variable_frame",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "FRW_Delta_intrinsic_laplacian",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "FRW_omitted_theta_Q_rejected",
+      "passed": true,
+      "expected": "exact_nonzero_witness",
+      "residual": "-3*adot*p0/a",
+      "witness_result": "-18",
+      "witness": {
+        "a": "2",
+        "adot": "3",
+        "p0": "4"
+      }
+    },
+    {
+      "name": "accelerated_lapse_Delta",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "accelerated_lapse_formal_adjoint",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "omitted_adjoint_acceleration_rejected",
+      "passed": true,
+      "expected": "exact_nonzero_witness",
+      "residual": "kappa*(kappa + 1)",
+      "witness_result": "6",
+      "witness": {
+        "kappa": "2"
+      }
+    },
+    {
+      "name": "auxiliary_EL",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "auxiliary_elimination_sign",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "wrong_auxiliary_elimination_sign_rejected",
+      "passed": true,
+      "expected": "exact_nonzero_witness",
+      "residual": "2*Delta**2*b",
+      "witness_result": "24",
+      "witness": {
+        "Delta": "2",
+        "b": "3"
+      }
+    },
+    {
+      "name": "auxiliary_b_zero_endpoint",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "rest_frame_regulator_dispersion_sign",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_EH",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_vacuum",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_scalar_kinetic",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_mass_potential",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_quartic",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_sextic",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_frame_two_derivative",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_frame_constraint",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_alignment",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_Q_squared",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_Y_three_halves",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_reg_z_squared",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_reg_grad_z_grad_psi",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_reg_z_a_grad_psi",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_dust",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "action_dimension_reservoir_portal",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "matter_current_dimension",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "reservoir_current_dimension",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "Noether_current_dimension",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    },
+    {
+      "name": "zero_exchange_pure_GR_claim_rejected",
+      "passed": true,
+      "expected": "exact_nonzero_witness",
+      "residual": "r_dot**2/2",
+      "witness_result": "2",
+      "witness": {
+        "r_dot": "2"
+      }
+    },
+    {
+      "name": "algebraic_GR_extra_action_endpoint",
+      "passed": true,
+      "expected": "zero",
+      "residual": "0"
+    }
+  ],
+  "expressions": {
+    "j_full": "J^mu + zeta (u^2+v^2) h^{mu nu} J_nu",
+    "Q_mp": "beta T_m grad^nu psi",
+    "Q_syn": "-g_r (u^2+v^2) r grad^nu r / 2",
+    "S_N": "0 for the full Noether charge; not an irreversible source",
+    "Q_syn_reassigned": "Q_syn + eta grad^nu W",
+    "bare_J_rejection_residual": "zeta*(-H_u_11*u**2*v - H_u_11*v**3 - H_u_22*u**2*v - H_u_22*v**3 - H_u_33*u**2*v - H_u_33*v**3 + H_v_11*u**3 + H_v_11*u*v**2 + H_v_22*u**3 + H_v_22*u*v**2 + H_v_33*u**3 + H_v_33*u*v**2 - 2*d_u_1**2*u*v + 2*d_u_1*d_v_1*u**2 - 2*d_u_1*d_v_1*v**2 - 2*d_u_2**2*u*v + 2*d_u_2*d_v_2*u**2 - 2*d_u_2*d_v_2*v**2 - 2*d_u_3**2*u*v + 2*d_u_3*d_v_3*u**2 - 2*d_u_3*d_v_3*v**2 + 2*d_v_1**2*u*v + 2*d_v_2**2*u*v + 2*d_v_3**2*u*v)",
+    "E_psi": "-div(K_Q Q n - 3 A sqrt(Y) h.dpsi) - b Delta_dagger Delta psi + beta T_m",
+    "Delta_dagger_z": "div(h.grad z + z a)"
+  },
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/UVIR-001/UVIR-001_GATE_REPORT.md": "850d4e6616a136088936bbdbbb809f0443b508117cbe0140ebb05eca79aaf630",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_A_REPORT.md": "f73004c07e031672669d5cb3f098fadcd487cc6ab21ea30546e951ad1ee7033b",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md": "c2a5c82f285dc04adcfffed4ba5c562661ddca98c4d045802ffb6e88bfeefd68"
+  },
+  "script_sha256": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740",
+  "runtime": {
+    "python": "3.13.9",
+    "sympy": "1.14.0"
+  },
+  "coverage": {
+    "candidate_scalar_and_dust_currents": "exact symbolic local jets",
+    "algebraic_metric_blocks": "10 independent metric directions at a boosted timelike frame",
+    "regulator": "FRW and accelerated static lapse controls, not general principal-symbol proof",
+    "GR": "algebraic endpoint only; no healthy continuous-limit proof"
+  },
+  "holds": [
+    "full U and connection-dependent regulator metric variation",
+    "all-sector vector Ward identity and constraints",
+    "finite-density on-shell background and stability",
+    "healthy continuous GR recovery",
+    "matter beyond irrotational pre-caustic dust",
+    "microscopic or irreversible reservoir mechanism",
+    "independent Rule-9 review"
+  ],
+  "canonical_test_01_action_input_complete": false,
+  "canonical_source_vector_derived": false,
+  "full_metric_frame_variation_verified": false,
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "MAT-001": "BLOCKED",
+  "UVIR-003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED",
+  "Rule9": "NOT_CLEARED"
+}

@@ -1,0 +1,235 @@
+{
+  "advance_to_a4": false,
+  "advance_to_finite_charge_determinant": false,
+  "advance_to_physical_hessian": false,
+  "advance_to_ultra": false,
+  "anomaly_cancellation": "NOT_DERIVED",
+  "audit_execution_status": "COMPLETE",
+  "authority": [
+    {
+      "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_DIRAC_PARITY_ANOMALY_READINESS_CONTRACT_2026-09-16.md",
+      "sha256": "d49da5217c1078467424af3210c4f983db2f9d73195185b486bab9628c8a14f8"
+    },
+    {
+      "path": "Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md",
+      "sha256": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f"
+    },
+    {
+      "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md",
+      "sha256": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945"
+    }
+  ],
+  "candidate": "X4-S2F3",
+  "checks": [
+    {
+      "name": "all_authority_and_input_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "d49da5217c1078467424af3210c4f983db2f9d73195185b486bab9628c8a14f8",
+          "expected": "d49da5217c1078467424af3210c4f983db2f9d73195185b486bab9628c8a14f8",
+          "matches": true,
+          "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_DIRAC_PARITY_ANOMALY_READINESS_CONTRACT_2026-09-16.md"
+        },
+        {
+          "actual": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+          "expected": "a935fbb4b2cc2206ed7a22910716203e427071e21d347214b59fea62bdc9c73f",
+          "matches": true,
+          "path": "Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md"
+        },
+        {
+          "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "matches": true,
+          "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+        },
+        {
+          "actual": "b2addbfc34f6e3aec3fc0141342f30de4d56cb31a5dff37c59d7ff15281e493a",
+          "expected": "b2addbfc34f6e3aec3fc0141342f30de4d56cb31a5dff37c59d7ff15281e493a",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_static_determinant_summary.json"
+        },
+        {
+          "actual": "88ada4734e4054de5c1d91f6bedabbd666d1621697f86f5066ba6f1fe05a8021",
+          "expected": "88ada4734e4054de5c1d91f6bedabbd666d1621697f86f5066ba6f1fe05a8021",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_finite_charge_entry_gate_summary.json"
+        },
+        {
+          "actual": "b2440221e9bfd5bcd56a40f29e3a731b0fbd44d43d2ab86ef7f300e7c121c4e6",
+          "expected": "b2440221e9bfd5bcd56a40f29e3a731b0fbd44d43d2ab86ef7f300e7c121c4e6",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_finite_charge_operator_summary.json"
+        },
+        {
+          "actual": "8e920c5e699b898891fca1dc6ade0edb5359fefbaaed785698e88c8109d4280b",
+          "expected": "8e920c5e699b898891fca1dc6ade0edb5359fefbaaed785698e88c8109d4280b",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_dynamic_state_subtraction_summary.json"
+        },
+        {
+          "actual": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+          "expected": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_exact_transport_retry_summary.json"
+        },
+        {
+          "actual": "95395d22a459b72423ce8c1cb2df35e0d42f76581a3a339cbc0d5acf2e50ab90",
+          "expected": "95395d22a459b72423ce8c1cb2df35e0d42f76581a3a339cbc0d5acf2e50ab90",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_hadamard_subtraction_readiness_summary.json"
+        },
+        {
+          "actual": "c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777",
+          "expected": "c7f9b3e9d4f00c99df93f25b8d9eccf9162472fc3c66ee26fe19c43f389dd777",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_covariant_scalar_matrix_summary.json"
+        },
+        {
+          "actual": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+          "expected": "becaa3ef1ce19a8545335c49b868cc3479fcf1a7b4044ac1cda7f939fbfadc08",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_scalar_matrix_hadamard_parametrix_summary.json"
+        },
+        {
+          "actual": "fef8df00183333cc6fb18382c77fab397cd7c2caf740752d6c29ebf36da44428",
+          "expected": "fef8df00183333cc6fb18382c77fab397cd7c2caf740752d6c29ebf36da44428",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_global_state_construction_summary.json"
+        },
+        {
+          "actual": "557e7b4ae7ddfb3402e15aa72eaf829b695446c7681964d3b9870b60ad434950",
+          "expected": "557e7b4ae7ddfb3402e15aa72eaf829b695446c7681964d3b9870b60ad434950",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json"
+        }
+      ]
+    },
+    {
+      "contract_path": "Theory/Gates/TOP-X4/TOPX4_S2F3_DIRAC_PARITY_ANOMALY_READINESS_CONTRACT_2026-09-16.md",
+      "name": "frozen_contract_declares_rejection_only_scope",
+      "ok": true
+    },
+    {
+      "checkpoint_decision": "HOLD_BEFORE_FINITE_CHARGE",
+      "name": "static_determinant_is_parity_even_hold_only",
+      "ok": true,
+      "status": "PASS_STATIC_PARITY_EVEN_DETERMINANT_HOLD_PARITY_ODD_AND_FINITE_CHARGE"
+    },
+    {
+      "entry_status": "HOLD_TOPX4_S2F3_BEFORE_FINITE_CHARGE_QUANTUM_COMPLETION",
+      "name": "finite_charge_entry_and_operator_do_not_close_the_fermion_effective_action",
+      "ok": true,
+      "operator_status": "PASS_FINITE_CHARGE_OPERATOR_HOLD_DYNAMIC_STATE_STRESS_AND_HESSIAN"
+    },
+    {
+      "covariant_5D_subtraction": "NOT_DERIVED",
+      "full_Hadamard_state": false,
+      "name": "first_order_dirac_transport_is_not_a_hadamard_state",
+      "ok": true,
+      "transport_status": "PASS_EXACT_SCALAR_DIRAC_TRANSPORT_HOLD_HADAMARD_STRESS_AND_HESSIAN"
+    },
+    {
+      "global_state_status": "PASS_GLOBAL_SCALAR_MATRIX_HADAMARD_STATE_HOLD_DIRAC_STRESS_AND_HESSIAN",
+      "hadamard_status": "PASS_5D_HADAMARD_COUNTERTERM_SCAFFOLD_HOLD_FULL_OPERATORS_STATE_AND_STRESS",
+      "name": "D5_and_scalar_receipts_preserve_the_dirac_parity_hold",
+      "ok": true,
+      "scalar_matrix_operator": "DERIVED_FIXED_METRIC_OFF_SHELL"
+    },
+    {
+      "construction_status": {
+        "dirac_hadamard_two_point_function": {
+          "evidence": "first-order superadiabatic projector at t=0 plus exact unitary transport",
+          "status": "NOT_COMPLETED"
+        },
+        "parity_odd_phase_and_quantized_counterterms": {
+          "evidence": "the parity-odd determinant phase and quantized counterterms remain unaudited",
+          "status": "NOT_COMPLETED"
+        },
+        "renormalized_stress": "NOT_COMPUTED"
+      },
+      "name": "current_construction_inventory_marks_missing_fermion_and_parity_inputs",
+      "ok": true
+    },
+    {
+      "name": "physical_hessian_receipt_keeps_gravity_ghost_and_parity_inputs_unavailable",
+      "ok": true,
+      "physical_hessian": "NOT_CONSTRUCTED",
+      "required_input": "NOT_AVAILABLE"
+    },
+    {
+      "name": "all_registered_shortcuts_are_rejected",
+      "ok": true,
+      "rejection_tests": [
+        {
+          "attempt": "static_parity_even_determinant_as_complete_finite_charge_fermion_action",
+          "id": "TOPX4-DPA-R1",
+          "rejected": true
+        },
+        {
+          "attempt": "first_order_dirac_projector_as_infinite_order_hadamard_state",
+          "id": "TOPX4-DPA-R2",
+          "rejected": true
+        },
+        {
+          "attempt": "squared_dirac_operator_as_parity_odd_phase_or_anomaly_clearance",
+          "id": "TOPX4-DPA-R3",
+          "rejected": true
+        },
+        {
+          "attempt": "unproved_even_or_four_dimensional_result_as_repository_specific_D5_closure",
+          "id": "TOPX4-DPA-R4",
+          "rejected": true
+        },
+        {
+          "attempt": "missing_anomaly_or_counterterm_data_set_to_zero",
+          "id": "TOPX4-DPA-R5",
+          "rejected": true
+        },
+        {
+          "attempt": "observational_target_used_to_select_fermionic_closure",
+          "id": "TOPX4-DPA-R6",
+          "rejected": true
+        }
+      ]
+    },
+    {
+      "forbidden_token_hits": [],
+      "name": "observational_target_firewall",
+      "ok": true
+    }
+  ],
+  "counterterm_quantization": "NOT_FIXED",
+  "determinant": "NOT_COMPUTED",
+  "dirac_completion": "NOT_DERIVED",
+  "dirac_hadamard_state": "NOT_CONSTRUCTED",
+  "dirac_transport_control": "BOUNDED_FIRST_ORDER_EXACT_TRANSPORT",
+  "gate_effect": "NONE",
+  "nonclaims": [
+    "No complete curved five-dimensional Dirac operator is newly derived.",
+    "No infinite-order Dirac Hadamard state or wavefront proof is claimed.",
+    "No parity-odd determinant phase, anomaly cancellation or counterterm quantization is derived.",
+    "No finite-charge determinant, renormalized stress, physical Hessian, A4 or Ultra entry follows.",
+    "No MAT, UVIR, cosmology, BBN, Rule-9 or publication status changes follow."
+  ],
+  "parity_odd_determinant_phase": "NOT_DERIVED",
+  "physics_pass": false,
+  "readiness_checks_passed": 10,
+  "readiness_checks_total": 10,
+  "renormalized_stress": "NOT_COMPUTED",
+  "required_inputs": {
+    "curved_5D_dirac_operator_and_spin_connection": "NOT_CLOSED",
+    "curved_gravity_ghost_and_constraint_coupling": "NOT_AVAILABLE",
+    "dimension_appropriate_dirac_hadamard_state": "NOT_CONSTRUCTED",
+    "independent_three_role_review": "NOT_MET",
+    "local_global_anomaly_data": "NOT_DERIVED",
+    "parity_odd_phase_reference_and_regulator": "NOT_DERIVED",
+    "quantized_counterterm_normalizations": "NOT_FIXED",
+    "state_dependent_finite_charge_determinant": "NOT_COMPUTED"
+  },
+  "route": "TOP-X4_KK-001",
+  "schema": "ITSM_TOPX4_S2F3_DIRAC_PARITY_ANOMALY_READINESS_v1",
+  "scientific_boundary": "The repository has bounded static parity-even and first-order Dirac transport controls. Those controls are retained as evidence but do not supply the missing curved, state-dependent, parity-odd or anomaly inputs. No missing sector is inferred or set to zero.",
+  "source_sha256": "93f0d1fcbd1e306f0614179f44b52ec978c93ea9f49060032eb744911257dfa6",
+  "status": "HOLD_TOPX4_DIRAC_PARITY_ANOMALY_INPUTS_NOT_CLOSED"
+}

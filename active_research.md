@@ -1,10 +1,141 @@
 # Active Research & Gate Dashboard
 
 **Canonical Authority Baseline:** `v12.0-alpha.12`  
-**Current Date:** 14 September 2026
-**Operating Policy:** Strict Fail-Closed (Rules 1, 3, 6, 7, 8, 9)
+**Gate-status snapshot last reconciled:** 17 September 2026
+**Programme priority updated:** 24 September 2026
+**Operating Policy:** Fail-closed scientific claims; deferred Rule-9 review permits provisional research (25 September 2026)
 
 ---
+
+## Rule-9 review deferred — 25 September 2026
+
+The operator has deferred all outstanding Rule-9 reviews. Apply the
+[research-continuation policy](Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md)
+and [review register](Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md).
+Pending review alone is not a blocker to the next locally supported research
+step. Record `review_status=DEFERRED` and `PROCEED_PROVISIONALLY` for eligible
+uses, including inherited review dependencies. Known scientific failures,
+missing required inputs and unresolved substantive objections still hold
+affected uses. This dated decision supersedes older review-only execution
+stops below; historical results and gate/clearance statuses are preserved.
+
+Master Tests 1-3 can use their bounded results provisionally. R4C1-S1/S2/S3 now
+supply the nonzero-mode reduction, kinetic/propagation diagnostics and
+zero-branch regularity disposition below. Next: freeze the full coupled
+mixed-regularity scalar evolution-estimate contract; review-panel assembly is
+deferred. Healthy GR recovery, full
+weak-field matching, coefficient determination and physical applicability
+remain scientific work. Canonical promotion and publication readiness still
+require the applicable review and scientific checklist.
+
+## Programme priority — 24 September 2026
+
+The user-directed [Master ITSM test programme](Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md)
+is now the research work order. Test 1, covariant action and source-vector
+closure, is the active priority. Its entry disposition is
+`ACTION_INPUT_INCOMPLETE_HOLD_BEFORE_VARIATION`: the current architecture is
+only a schematic sector inventory, and the reservoir/current action input is
+not complete. The [Test 1 contract](Theory/Gates/ITSM_MASTER_TEST_01_SOURCE_VECTOR_CLOSURE_CONTRACT_2026-09-24.md)
+records the missing inputs and stop rule. No complete canonical-action
+variation or physics pass is claimed.
+
+The [25 September bounded derivation report](Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md)
+now records conditional conformal-current identities and an explicitly
+separate reservoir nonuniqueness witness (29/29 local checks), the conditional
+spherical force and nonspherical rejection (11/11), and coefficient
+unidentifiability within the static sector (9/9). A periodic T3 follow-up
+(19/19) confirms the algebraic-law counterexample and a harmonic-flux term
+missing from two working manuscript equations; those sources are corrected.
+These are bounded calculations, not three completed programme tests or
+Rule-9 clearance. The full action, matching, physical periodic solution,
+action-derived cosmology and independent blinded review remain open.
+
+Following explicit user approval, a separate [R4C1 four-dimensional candidate](Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md)
+now freezes a reversible reservoir portal around the current recovery fields
+and supplies an explicit dust matter action. Its first variation checkpoint
+passes 119/119 exact local checks: conditional interface currents, the
+alignment-corrected U(1) current, algebraic metric blocks and regulator
+controls. The subsequent [complete classical variation checkpoint](Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_REPORT_2026-09-25.md)
+supplies explicit frame/regulator stresses and the general conservation
+ledger, supported by 162/162 exact checks including full four-dimensional
+off-shell Ward probes. The [R4C1-B1 background control](Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_REPORT_2026-09-25.md)
+passes 48/48 checks with nonzero matter/reservoir exchange and conserved
+finite charge: normalized Friedmann residual 3.41e-12 and independent
+finite-difference sector-balance residual 7.96e-8. It is a finite-time,
+homogeneous zero-winding classical benchmark, not a calibrated cosmology.
+The [R4C1-G1 GR-limit audit](Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md)
+passes 56/56 checks while rejecting a physical shortcut: zero exchange with
+the B1 frame retained gives G_cos/G_static=5/6, not GR. A registered family
+approaches the classical Einstein-dust background, but its physical
+transverse kinetic coefficient vanishes and its canonical cubic force
+coefficient diverges. This does not exclude every possible GR limit.
+Healthy continuous GR recovery, interacting perturbative stability,
+scale/EFT validity and independent review remain open. This is not canonical
+Test-1 closure, irreversible production or a gate promotion.
+
+The [R4C1-C1 coefficient audit](Theory/Gates/RES-001/RES001_R4C1_COEFFICIENT_IDENTIFIABILITY_REPORT_2026-09-25.md)
+passes 63/63 checks while establishing a physical matching gap: changing only
+A leaves the homogeneous background and classical quadratic action unchanged,
+but changes A/K_Q^(3/2). Three registered A values give identical background
+and current histories; their conditional spherical force amplitudes differ.
+The regulator is retained in the varied radial flux and its neglect requires
+an explicit small ratio. This is not a full coupled weak-field solution or
+unique C_chi/a0(z) prediction. More homogeneous or linear runs cannot supply
+the missing A matching on this branch; nonlinear/microscopic input and
+independent review remain necessary. No observed coefficient is selected.
+
+The [local Master Tests review workflow](docs/ITSM_MASTER_TEST_REVIEW.md)
+now prepares immutable source snapshots and exact Role A Frame/Compare,
+Role B and Role C prompts, with complete mandatory governance. It checks
+the pre-S1 ten-receipt Master Tests dependency chains and preserves
+failures/unknowns. Preparation itself does not dispatch or assign reviewers;
+prior partial review artifacts are preserved and current review is DEFERRED.
+Rule 9 is not cleared. Mandatory governance already names
+a candidate acceleration relation, so target-unprimed blinding and enforced
+phase isolation are explicitly not claimed. Historical work remains parked.
+
+The [R4C1-S1 scalar constraint report](Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md)
+passes 71/71 implementation checks. It retains lapse, shift, dust multiplier
+and regulator equations, exports the pre-constraint and reduced K,M,V blocks,
+and derives an exact positive scalar kinetic form at the unchanged B1
+coefficients in the regular H!=0, k!=0 chart. All 6,408 sampled matrices have
+inertia (6 positive,0 negative,0 unresolved). This is a classical no-ghost
+result, not full stability: gradients, evolving modes, k=0, singular branches,
+EFT validity and healthy GR recovery remain open. R9-MT1-S1 is deferred and
+may be used provisionally for those next diagnostics. The historical review
+snapshot does not contain S1; no new reviewer dispatch or gate promotion.
+
+The [26 September R4C1-S2 propagation report](Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md)
+passes 56/56 checks. Time-dependent canonical transformation and original
+equations agree; DOP853/Radau transfers agree within 7.30e-8 for n=1,2,4,8.
+The formal branches have omega_fast^2/p^4=5/33 and linear speed squares
+1,1,1+(u^2+v^2)/13,1/3, plus a double zero branch. That zero branch has only
+one leading eigenvector: strong hyperbolicity/well-posedness is NOT proved.
+The wider condensate cone, quartic force dispersion, finite-time growth and
+EFT domain also remain substantive work. A failed 49/52 first implementation
+and its missing-Mcdot symbol diagnostic are archived; no thresholds/action
+were changed to pass. R9-MT1-S2 is DEFERRED and permits provisional diagnostic
+reuse, not a full stability claim. Tests 1-3 and canonical gates remain open.
+
+The [R4C1-S3 zero-branch report](Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md)
+passes 57/57 checks. An exact Jordan sequence rejects a wave-number-uniform
+bound in the displayed equal-order canonical norm. Reconstructing the original
+density, velocities and field derivatives gives a finite positive graph-metric
+limit with an explicit additional derivative requirement, at fixed regular
+events with 5H+4*psi_dot!=0. The pressureless-dust control independently shows
+the same unequal-regularity mechanism. This is a restricted principal-sector
+result, not full coupled well-posedness or small growth. The failed 54/55
+arithmetic attempt is preserved; equivalent rescaling and higher precision
+meet the unchanged tolerance. R9-MT1-S3 is deferred; the complete coupled
+principal/subprincipal estimate, causality, cutoff and matching remain open.
+
+TOP-X4 is not judged close to a breakthrough: the 19 September X4-S4-C1
+receipt selected an equation route but did not solve a curved background; the
+registered flat benchmark had failed its independent constraint and balance
+checks. TOP-X4 remains a separate queued candidate lane, with
+`TOPX4_H1_X4-S4_CURVED_SLICE_BACKGROUND_OUTPUT_TEST` next if that lane is
+resumed. This reprioritization changes work order only; the scientific-gate
+snapshot below remains dated 17 September and no gate status is promoted.
 
 ## Canonical Gate Status Dashboard
 
@@ -33,9 +164,9 @@ closures**. The invariant residue remains uncomputed, the quoted contact term
 is not the complete constrained physical amplitude, and downstream proxy runs
 cannot inherit a pass. SHA-256 integrity proves file identity, not physics.
 
-### Current operator-priority route — TOP-X4 / KK-001
+### TOP-X4 / KK-001 route record — separate candidate-specific lane
 
-New derivation work is redirected to the controlled higher-dimensional fork
+The 6 September route plan redirected new derivation work to the controlled higher-dimensional fork
 `R_t x T3_obs x S1_y`. `X4-D0` passed its 14-check kinematic/dimensional
 control. The frozen `X4-I1C` bulk-scalar control then passed a 9/9 independent
 symbolic metric/action audit and a 7/7 finite-charge on-shell background test.
@@ -99,11 +230,14 @@ therefore
 `physics_pass=false`, `gate_effect=NONE`. Stress, determinant, physical
 Hessian, gravity/ghost, parity/anomaly and all downstream gates remain held.
 
-Existing P2, MAT, UVIR, VOR and RES artifacts and statuses are preserved but
-their queued research and external dispatches are paused. No downstream
-observation, publication or canonical-identity revision opens from the A0--A3
-control results. A retry requires a separately frozen stabilization sector at
-High, not an alteration of the completed Max calculation. Authority:
+Under that 6 September route plan, existing P2, MAT, UVIR, VOR and RES
+artifacts and statuses were preserved while their queued research and
+external dispatches were paused. The 24 September Master ITSM programme now
+supersedes that work-order for sequencing only; no scientific status changes.
+No downstream observation, publication or canonical-identity revision opens
+from the A0--A3 control results. A retry requires a separately frozen
+stabilization sector at High, not an alteration of the completed Max
+calculation. Authority:
 `Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md`.
 The registered next task is
 `Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md`.
@@ -179,6 +313,225 @@ not an exhaustive literature claim.
   `physical_hessian=NOT_CONSTRUCTED`, `radion_mass=NOT_COMPUTED`,
   `physics_pass=false` and `gate_effect=NONE`; no mixing is inferred and no
   MAT, UVIR, cosmology, BBN, Rule-9 or publication status changes.
+
+### 16 September 2026 — BBN action-derived contract and TOP-X4 fermion/parity readiness
+
+- The BBN-001 action-derived input contract is frozen in
+  `Analysis/Cosmology/BBN-001/bbn001_action_derived_input_contract.json`.
+  Its validator passes `12/12` checks and confirms that the current UVIR
+  preflight receipt has an exact `BBN001_ACTION_DERIVED_MISSING_INPUT_RECEIPT`
+  with 12 missing fields: four network-history fields and eight ITSM
+  closing-input fields. The receipt is presence-only; value, dimensional and
+  action-provenance validation are `NOT_PERFORMED`.
+- The current BBN decision remains
+  `BLOCKED_UPSTREAM_BACKGROUND`, `physics_pass=false`, `gate_effect=NONE` and
+  `NOT_A_PHYSICS_CLAIM`. No temperature, baryon normalization, plenum
+  density, `Q_mp^mu`, `Q_syn^mu`, `S_N`, `G_eff` or perturbation match is
+  inferred or supplied by `DeltaN`.
+- The bounded TOP-X4 Dirac/parity/anomaly readiness audit passes `10/10`
+  rejection checks under
+  `HOLD_TOPX4_DIRAC_PARITY_ANOMALY_INPUTS_NOT_CLOSED`. It records
+  `dirac_completion=NOT_DERIVED`, `dirac_hadamard_state=NOT_CONSTRUCTED`,
+  `parity_odd_determinant_phase=NOT_DERIVED`,
+  `anomaly_cancellation=NOT_DERIVED` and
+  `counterterm_quantization=NOT_FIXED`. The static result remains parity-even
+  and the existing Dirac result remains finite-order first-order transport.
+- No complete curved five-dimensional Dirac state, parity-odd phase, anomaly
+  cancellation, quantized counterterm, determinant, stress or physical
+  Hessian is claimed. No MAT, UVIR, cosmology, BBN, Rule-9, A4, Ultra or
+  publication status changes follow.
+- A separate scoped curved-Dirac checkpoint now passes `13/13`, explicitly
+  split into `2/2` contract/provenance checks and `11/11` operator/rejection
+  checks. It derives the Hamiltonian-form operator, homogeneous spin connection
+  and periodic KK spectrum on the registered metric. It does not construct the
+  spinor Hadamard state, determinant, parity/anomaly sector, stress or Hessian;
+  `physics_pass=false` and `gate_effect=NONE` remain binding.
+- A local Rule-9 handoff packet now records 11 authority documents, 24
+  hashed TOP-X4/BBN receipts, unresolved questions and role-separated Role
+  A/B/C prompts. It is `READY_FOR_INDEPENDENT_REVIEW_ONLY`; reviewers are
+  `NOT_ASSIGNED`, no external dispatch occurred, and the binding status remains
+  `THREE_WAY_CLEARANCE_NOT_MET`.
+
+### 16 September 2026 — TOP-X4 H1 bridge and matter-architecture narrowing
+
+- The non-promoting MAT-001/TOP-X4 bridge contract is now frozen. Its target is
+  the signed, canonically normalized source residue of an oriented positive-norm
+  constrained mode, not a convenient numerical `K_Q` shortcut. The required
+  projection is the Schur-reduced pair
+  `H_phys = H_qq - H_qa H_aa^-1 H_aq` and
+  `c_phys = c_q - H_qa H_aa^-1 c_a`, with singular auxiliary domains treated
+  explicitly.
+- The bridge readiness audit passes its `11/11` foundation checks and rejects
+  all `6/6` registered mutations, but satisfies `0/10` closure requirements.
+  Its binding result is `HOLD_MAT001_TOPX4_H1_BRIDGE_INPUTS_NOT_CLOSED`;
+  `K_Q` remains `NOT_DERIVED`, `V` remains `NOT_COMPUTED`, `MAT-001` remains
+  `BLOCKED`, and Stage 4A remains `CLOSED`.
+- The bounded bulk-versus-brane comparison passes `10/10` local checks and
+  rejects `6/6` mutation controls. It recommends a new brane-induced-metric
+  child as the lead source-projection candidate because the four-dimensional
+  source metric is explicit and no physical-matter KK tower is introduced.
+  This is a route recommendation only; no child action is frozen and the
+  existing `X4-S2F3` parent is unchanged. Bulk matter remains the smooth-circle
+  control route.
+- The common radion mass/metric scaling is only an unreduced kinematic source
+  component. A direct identification of the canonical radion with the Track-A
+  `Y^(3/2)` field is rejected by derivative-homogeneity mismatch. Only a future
+  constrained mixed radion-condensate mode remains eligible for an H1 test.
+- The brane-child global-consistency preflight now passes `11/11` checks and
+  rejects `8/8` mutations. Under the declared static flat-four-dimensional
+  periodic-circle assumptions, it conditionally rejects a single
+  uncompensated positive renormalized brane tension by the required integrated
+  compact-space balance. A tensionless or explicitly compensated background
+  remains a possible research route, but only after its child action derives
+  the exact sum rule, localized variation, junction data and counterterm
+  conditions.
+- The binding result is
+  `HOLD_TOPX4_H1_BRANE_CHILD_GLOBAL_SUM_RULE_AND_RENORMALIZATION` with
+  `BRANE_ROUTE=CONDITIONAL_SURVIVOR_TENSIONLESS_BACKGROUND_ONLY`;
+  `X4-S2F3` is unchanged and no child action is frozen. The next single gate is
+  `TOPX4_H1_BRANE_CHILD_ACTION_FREEZE_OR_REJECT`. No parent, MAT, UVIR, Rule-9,
+  publication or canonical-identity status changes follow.
+
+### 17 September 2026 — minimal brane-child freeze decision
+
+- The next bounded decision tests only the minimal unwarped, constant-radius
+  single-tension brane child. Its distributional connection and Einstein
+  tensor vanish under the declared flat-product control, while the lone
+  tangential source is proportional to `-lambda_b gamma_mn delta_perp`.
+  Therefore the minimal candidate requires `lambda_b^ren=0` and cannot be
+  accepted with an uncompensated nonzero background tension.
+- The child-freeze decision audit passes `10/10` checks and rejects `7/7`
+  mutations. Its scoped result is
+  `REJECT_MINIMAL_BRANE_CHILD_FREEZE_CONDITIONALLY`: this rejects only the
+  minimal candidate, not every brane architecture.
+- The surviving route is
+  `OPEN_ONLY_COMPENSATED_OR_WARPED_CHILD`. A future child must explicitly
+  derive its compensator or warp profile, global balance, localized
+  renormalization, junction/embedding equations and finite-charge background.
+  The existing `X4-S2F3` parent was not changed and no child action was
+  frozen.
+- The next single gate is
+  `TOPX4_H1_COMPENSATED_OR_WARPED_BRANE_CHILD_DESIGN`. `MAT-001` remains
+  `BLOCKED`, `K_Q` remains `NOT_DERIVED`, `V` remains `NOT_COMPUTED`, Stage 4A
+  remains `CLOSED`, and `physics_pass=false`, `gate_effect=NONE` remain binding.
+
+### 17 September 2026 — compensated/warped brane route handoff
+
+- The minimal brane-child freeze decision is now recorded as a scoped
+  rejection. The existing stabilization audit is the authority for the next
+  architecture boundary: `X4-S4` orbifold/brane is a deferred **different
+  parent**, while `X4-S3` has no distinct minimal smooth-S1 flux repair.
+- The route-handoff audit passes `10/10` checks and rejects `7/7` mutations. It
+  keeps `X4-S2F3` free of hidden branes, second sources and new flux fields;
+  no compensator, warp profile, field content or new-parent action is selected.
+- The surviving route is
+  `OPEN_ONLY_AS_X4-S4_NEW_PARENT_DESIGN`. The next single gate is
+  `TOPX4_H1_X4-S4_NEW_PARENT_ACTION_CONTRACT`, which must be separately frozen
+  before action variation. The actual new-parent action and constrained
+  Hessian are the point at which Ultra is required.
+- `MAT-001` remains `BLOCKED`, `K_Q` remains `NOT_DERIVED`, `V` remains
+  `NOT_COMPUTED`, Stage 4A remains `CLOSED`, and `physics_pass=false`,
+  `gate_effect=NONE` remain binding.
+
+### 18 September 2026 — constrained source/projection bookkeeping diagnostic
+
+- The paper-informed, non-promoting diagnostic now validates the algebraic
+  bookkeeping needed before a live constrained source projection. On an exact
+  rational three-dynamical/two-auxiliary toy quadratic system, it verifies the
+  auxiliary stationarity equation, Schur reduction, completion-of-square
+  equivalence, invertible-basis covariance, positive reduced norm, orientation
+  sign reversal, auxiliary-source retention and singular-domain rejection.
+- The executable passes `13/13` checks and rejects `6/6` mutations. This is a
+  synthetic algebra receipt only; it is not a Dirac-bracket derivation, live
+  TOP-X4 Hessian, action result or independent Rule-9 review.
+- The receipt is explicitly tied to the cited paper only as a methodological
+  constraint/projection analogy. `X4-S2F3` is unchanged and the next single
+  gate remains `TOPX4_H1_X4-S4_NEW_PARENT_ACTION_CONTRACT`.
+- `MAT-001` remains `BLOCKED`, `K_Q` remains `NOT_DERIVED`, `V` remains
+  `NOT_COMPUTED`, Stage 4A remains `CLOSED`, and `physics_pass=false`,
+  `gate_effect=NONE` remain binding.
+
+### 18 September 2026 — X4-S4-GW2 candidate-action contract
+
+- The separately identified `X4-S4-GW2` candidate now has a frozen geometry,
+  field inventory, leading two-derivative classical action, outward-normal
+  variational convention, scalar boundary equations, gravitational junction
+  system, fixed-charge definition, zero-charge static sum rule, counterterm
+  classes and source-independent primary parameter domain.
+- The route is `R_t x T3_obs x (S1/Z2)` with two fixed surfaces, the existing
+  complex finite-charge condensate, one neutral even stabilizer, and physical
+  matter localized only on `Sigma_0`. It does not silently inherit the
+  X4-S2F3 `chi` or Dirac spectators, and `T3_obs` remains the observed spatial
+  topology.
+- The executable passes `21/21` semantic checks and rejects `15/15` mutations.
+  Symbolic differentiation verifies the registered bulk and boundary scalar
+  derivatives exactly; a separate stress-trace derivation verifies the real
+  and complex scalar weights in the static sum rule. All frozen bulk operators
+  have mass dimension five and all localized operators have mass dimension
+  four.
+- This is a candidate-action freeze for one background-existence test, not
+  parent acceptance: `X4-S4_parent_accepted=false`, the finite-charge
+  background is unsolved, finite counterterms are unnormalized, and no
+  physical Hessian or signed H1 residue exists. The static Lorentz-invariant
+  sum rule is not reused unchanged at finite temporal charge.
+- The next single gate is
+  `TOPX4_H1_X4-S4_ZERO_CHARGE_BACKGROUND_EXISTENCE`. `X4-S2F3` remains
+  unchanged; `MAT-001=BLOCKED`, `K_Q=NOT_DERIVED`, `V=NOT_COMPUTED`,
+  `Stage4A=CLOSED`, `Rule9_cleared=false`, `physics_pass=false`, and
+  `gate_effect=NONE` remain binding.
+
+### 18 September 2026 — X4-S4-GW2 zero-charge background-existence test
+
+- The frozen X4-S4-GW2 candidate was tested at one preregistered,
+  dimensionless internal action point in a fully backreacted warped static
+  zero-charge boundary-value problem. The solver retained both scalar Robin
+  systems, both gravitational junctions, the warp equation and the gauge
+  normalization; the Einstein constraint and static balance were audited
+  independently rather than imposed as solver boundary conditions.
+- The receipt passes `12/12` audit-integrity checks and rejects `9/9`
+  promotion/parameter-drift mutations. Two bounded solver attempts converged,
+  but the best branch collapsed to `L=8.505356709014385e-13`, below the
+  nonsingular-modulus cut. Its boundary residual was `2.6862e-12`, while the
+  independent Einstein constraint residual was `10.9723` and the static
+  balance residual was `0.683833`; the benchmark therefore fails.
+- This is a bounded benchmark rejection, not a proof that every X4-S4 action
+  is impossible. The registered candidate is returned to action selection;
+  no post-result parameter retuning was performed. Finite charge, physical
+  Hessian, H1, MAT, Rule-9 and publication work remain closed.
+- The next single gate is
+  `TOPX4_H1_X4-S4_ACTION_SELECTION_AFTER_ZERO_CHARGE_TEST`. `X4-S2F3`
+  remains unchanged; `MAT-001=BLOCKED`, `K_Q=NOT_DERIVED`, `V=NOT_COMPUTED`,
+  `Stage4A=CLOSED`, `Rule9_cleared=false`, `physics_pass=false`, and
+  `gate_effect=NONE` remain binding.
+
+### 19 September 2026 — X4-S4 post-zero-charge action selection
+
+- The failed flat benchmark remains immutable. Counting six integration
+  constants for `A`, `f` and `h` plus the modulus `L` gives seven unknowns,
+  already consumed by one gauge normalization, four scalar boundary
+  conditions and two gravitational junctions. The Hamiltonian constraint is
+  an eighth condition, so flatness is a codimension-one compatibility
+  condition at fixed action parameters.
+- Exact symbolic checks confirm the curved Einstein-tensor difference, the
+  flat and curved constraint-propagation identities and the generalized
+  compact-space balance. The route-selection receipt passes `13/13` checks
+  and rejects `14/14` mutations, including reversed curvature signs in the
+  warp equation, constraint, induced-curvature junction and integrated
+  balance.
+- The selected route is `X4-S4-C1`: retain the same action and solve the signed
+  maximally symmetric four-curvature `kappa4` as an eighth internal output.
+  No observed curvature or sign target is supplied. `M0^2(mu0)=Mpi^2(mu0)=0`
+  is explicitly preregistered only for this tree-level diagnostic, while the
+  induced-curvature operators remain symbolic and no radiative zero is
+  claimed.
+- This is an equation/route contract, not a solved curved background or
+  parent acceptance. The next single gate is
+  `TOPX4_H1_X4-S4_CURVED_SLICE_BACKGROUND_OUTPUT_TEST`.
+  `X4-S4_parent_accepted=false`, `finite_charge_background_solved=false`,
+  `physical_hessian_constructed=false`, `MAT-001=BLOCKED`,
+  `K_Q=NOT_DERIVED`, `V=NOT_COMPUTED`, `Stage4A=CLOSED`,
+  `Rule9_cleared=false`, `physics_pass=false`, and `gate_effect=NONE` remain
+  binding.
 
 ### Previously active Tier-1 critical path — preserved, temporarily suspended
 

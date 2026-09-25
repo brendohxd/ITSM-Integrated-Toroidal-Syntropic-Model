@@ -1,0 +1,195 @@
+{
+  "artifact_receipts": [
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_brane_child_freeze_decision.py",
+      "sha256": "7b988e460bc03a166a7db30d1eac7735cb37ac34c07ae08640f5264c73618d45",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_brane_child_freeze_decision.py.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRANE_CHILD_FREEZE_DECISION_CONTRACT_2026-09-17.md",
+      "sha256": "f806a122ef71e8ae118991781f6393817e00c31ae5817106d8445a0509e0c761",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRANE_CHILD_FREEZE_DECISION_CONTRACT_2026-09-17.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_brane_child_global_consistency_summary.json",
+      "sha256": "524c59483430e4efcb5520c65a73e7f2236c0d11dbc53bd4423e2448dc4af8f8",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_brane_child_global_consistency_summary.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRANE_CHILD_GLOBAL_CONSISTENCY_CONTRACT_2026-09-16.md",
+      "sha256": "a7d3e6930ab6a4a05689f2072292aa20d0ebc50d647911caf039efc39a2f25c2",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRANE_CHILD_GLOBAL_CONSISTENCY_CONTRACT_2026-09-16.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_matter_architecture_comparison_summary.json",
+      "sha256": "9119fd4a26d102a463acaef324adb1b8c4c5a1850c653fe03727d5fbe97eefca",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_matter_architecture_comparison_summary.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_bridge_readiness_summary.json",
+      "sha256": "f195fc0bb41e43f336cf197379c9f8c98caa2b205106fc72bd31c60b66233d4a",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_bridge_readiness_summary.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/TOP-X4/TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md",
+      "sha256": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/TOP-X4/TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md",
+      "sha256": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/TOP-X4/TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_a2a3_reduction_radion_summary.json",
+      "sha256": "d5a82f23204b5e02d046a8da43ce549dec53acebe9e0770c6f4c7cdabefddc5a",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/TOP/TOP-X4/outputs/topx4_a2a3_reduction_radion_summary.json.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json",
+      "sha256": "557e7b4ae7ddfb3402e15aa72eaf829b695446c7681964d3b9870b60ad434950",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json.sha256",
+      "sidecar_required": true
+    }
+  ],
+  "audit_execution_status": "COMPLETE",
+  "checks": [
+    {
+      "missing": [],
+      "name": "all_authority_and_input_files_exist",
+      "ok": true
+    },
+    {
+      "failures": [],
+      "name": "all_required_sidecars_match_current_bytes",
+      "ok": true
+    },
+    {
+      "name": "prior_global_preflight_reached_expected_conditional_hold",
+      "ok": true
+    },
+    {
+      "name": "architecture_and_bridge_are_route_only",
+      "ok": true
+    },
+    {
+      "name": "minimal_product_has_no_distributional_curvature",
+      "ok": true
+    },
+    {
+      "name": "lone_source_requires_zero_renormalized_background_tension",
+      "ok": true
+    },
+    {
+      "name": "freeze_prerequisites_are_explicit",
+      "ok": true
+    },
+    {
+      "name": "minimal_candidate_is_not_silently_extended",
+      "ok": true
+    },
+    {
+      "name": "parent_and_proxy_boundaries_remain_binding",
+      "ok": true
+    },
+    {
+      "name": "downstream_firewalls_remain_closed",
+      "ok": true
+    }
+  ],
+  "checks_passed": 10,
+  "checks_total": 10,
+  "contract_sha256": "f806a122ef71e8ae118991781f6393817e00c31ae5817106d8445a0509e0c761",
+  "date": "2026-09-17",
+  "decision": {
+    "brane_route": "OPEN_ONLY_COMPENSATED_OR_WARPED_CHILD",
+    "child_action_freeze": "NOT_AUTHORIZED",
+    "global_sum_rule": "NOT_DERIVED_FOR_FUTURE_CHILD",
+    "junction_data": "NOT_DERIVED",
+    "localized_counterterms": "NOT_NORMALIZED",
+    "localized_variation": "NOT_CLOSED",
+    "minimal_child": "REJECTED_ZERO_TENSION_DISTRIBUTIONAL_CONTROL",
+    "parent_action_changed": false,
+    "selected_from_observational_target": false
+  },
+  "exact_minimal_product_control": {
+    "compensator_present": false,
+    "distributional_connection": 0,
+    "distributional_einstein_tensor": 0,
+    "exact_under_declared_assumptions": true,
+    "internal_geometry": "smooth_periodic_circle",
+    "lone_tangential_source": "-lambda_b*gamma_mn*delta_perp",
+    "metric_chart": "constant_radius_flat_4d_product",
+    "orbifold_boundary_substitution": false,
+    "required_renormalized_background_tension": "lambda_b^ren=0",
+    "warp_profile_present": false
+  },
+  "mutation_tests": {
+    "labels": [
+      "minimal_child_accepted",
+      "child_action_frozen_without_prerequisites",
+      "compensated_child_claimed_constructed",
+      "future_sum_rule_claimed_derived",
+      "brane_added_to_frozen_parent",
+      "counterterms_claimed_normalized",
+      "observational_target_selected_child"
+    ],
+    "passed": 7,
+    "total": 7
+  },
+  "next_single_gate": {
+    "name": "TOPX4_H1_COMPENSATED_OR_WARPED_BRANE_CHILD_DESIGN",
+    "scope": "Freeze a separate child contract only after choosing and deriving an explicit compensator or warped background.",
+    "stop_before": "NO_CHANGE_TO_X4_S2F3"
+  },
+  "schema": "ITSM_MAT001_TOPX4_H1_BRANE_CHILD_FREEZE_DECISION_v1",
+  "scientific_boundary": "Only the minimal unwarped single-tension child is rejected. A compensated or warped child remains a separate future route and has not been constructed.",
+  "script_sha256": "7b988e460bc03a166a7db30d1eac7735cb37ac34c07ae08640f5264c73618d45",
+  "status": "REJECT_MINIMAL_BRANE_CHILD_FREEZE_CONDITIONALLY",
+  "status_firewall": {
+    "K_Q_derived": false,
+    "MAT001_pass": false,
+    "V_computed": false,
+    "brane_child_action_frozen": false,
+    "compensated_or_warped_child_constructed": false,
+    "gate_effect": "NONE",
+    "global_sum_rule_derived": false,
+    "junction_data_derived": false,
+    "localized_counterterms_normalized": false,
+    "localized_variation_closed": false,
+    "minimal_child_accepted": false,
+    "parent_action_changed": false,
+    "physics_pass": false,
+    "rule9_cleared": false,
+    "stage4A_reopened": false
+  }
+}

@@ -1,0 +1,709 @@
+{
+  "candidate": "R4C1-v1",
+  "control": "R4C1-B1",
+  "validation": "PASS",
+  "passed": 48,
+  "total": 48,
+  "checks": [
+    {
+      "name": "full_frame_multiplier",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "full_frame_time_equation",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "full_frame_spatial_equation_1",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "full_frame_spatial_equation_2",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "full_frame_spatial_equation_3",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "full_frame_energy_density",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "full_frame_pressure",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "frame_energy_balance",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "frame_isotropic_pressure_1",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "frame_isotropic_pressure_2",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "frame_isotropic_pressure_3",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "homogeneous_sector_1_action",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "homogeneous_sector_1_algebraic_stress",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "homogeneous_sector_3_action",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "homogeneous_sector_3_algebraic_stress",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "full_force_energy_density",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "full_force_pressure",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "homogeneous_auxiliary_Delta_equation",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "lapse_Friedmann_before_gauge",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "scale_factor_before_gauge",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "scalar_EL_u",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "scalar_EL_v",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "scalar_EL_r",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "force_EL_with_matter",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "dust_constraint",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "dust_current_equation",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "dust_energy_transfer",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "full_metric_reduced_constraint_agree",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "charge_from_two_scalar_equations",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "coarse_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 successfully reached"
+    },
+    {
+      "name": "coarse_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.14221719146384823,
+        "min_rho_m": 0.0025485589663512675,
+        "min_radius_squared": 0.0045726623524233925
+      },
+      "criterion": "finite; a,H,rho_m>0; s>1e-6"
+    },
+    {
+      "name": "fine_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 successfully reached"
+    },
+    {
+      "name": "fine_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.14221719136506666,
+        "min_rho_m": 0.0025485589665642776,
+        "min_radius_squared": 0.004572662390991571
+      },
+      "criterion": "finite; a,H,rho_m>0; s>1e-6"
+    },
+    {
+      "name": "Radau_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 successfully reached"
+    },
+    {
+      "name": "Radau_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.14221719136511723,
+        "min_rho_m": 0.002548558966561312,
+        "min_radius_squared": 0.004572662390968308
+      },
+      "criterion": "finite; a,H,rho_m>0; s>1e-6"
+    },
+    {
+      "name": "fine_max_normalized_Friedmann",
+      "passed": true,
+      "value": 3.408907498308431e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "fine_max_charge_drift",
+      "passed": true,
+      "value": 1.8791856959410325e-11,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "fine_max_dust_integral_drift",
+      "passed": true,
+      "value": 2.8703150967146485e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "coarse_fine_agreement",
+      "passed": true,
+      "value": 8.36276517478401e-09,
+      "criterion": "<1e-06"
+    },
+    {
+      "name": "Radau_fine_agreement",
+      "passed": true,
+      "value": 1.411611475586304e-11,
+      "criterion": "<1e-08"
+    },
+    {
+      "name": "constraint_tolerance_improvement",
+      "passed": true,
+      "value": {
+        "coarse": 3.155680043932974e-09,
+        "fine": 3.408907498308431e-12
+      },
+      "criterion": "fine<coarse or both<1e-12"
+    },
+    {
+      "name": "independent_fd_balances",
+      "passed": true,
+      "value": 7.963880541709535e-08,
+      "criterion": "<1e-7"
+    },
+    {
+      "name": "independent_fd_refinement",
+      "passed": true,
+      "value": 205.19167395590537,
+      "criterion": ">=4 or endpoint residuals both<1e-9"
+    },
+    {
+      "name": "nonzero_max_abs_Qmp",
+      "passed": true,
+      "value": 0.016000000000000004,
+      "criterion": ">1e-5"
+    },
+    {
+      "name": "nonzero_max_abs_Qsyn",
+      "passed": true,
+      "value": 0.0938217610455261,
+      "criterion": ">1e-5"
+    },
+    {
+      "name": "zero_exchange_control",
+      "passed": true,
+      "value": {
+        "max_abs_Qmp": 0.0,
+        "max_abs_Qsyn": 0.0,
+        "max_normalized_Friedmann": 3.5621921038313667e-12
+      },
+      "criterion": "completed; both currents exactly zero"
+    },
+    {
+      "name": "wrong_initial_H_rejected",
+      "passed": true,
+      "value": 0.004367388642501582,
+      "criterion": "completed deliberate mutant has residual>1e-5"
+    },
+    {
+      "name": "wrong_reservoir_force_rejected",
+      "passed": true,
+      "value": 0.1087566074066432,
+      "criterion": "completed deliberate mutant has residual>1e-5"
+    }
+  ],
+  "symbolic": {
+    "lambda_U": "-3*H**2*M*(c1 + c3) + 3*Hdot*M*c2",
+    "rho_U": "3*H**2*M*(-c1 - 3*c2 - c3)/2",
+    "p_U": "M*(3*H**2*c1 + 9*H**2*c2 + 3*H**2*c3 + 2*Hdot*c1 + 6*Hdot*c2 + 2*Hdot*c3)/2",
+    "M_cos_squared": "M*(c1 + 3*c2 + c3)/2 + MP2",
+    "all_equations": "classical homogeneous restriction of frozen R4C1",
+    "Y_zero_scope": "homogeneous first variations only; no higher Taylor vertex"
+  },
+  "parameters": {
+    "MP2": 1.0,
+    "MU2": 0.6666666666666666,
+    "c1": 0.2,
+    "c2": 0.1,
+    "c3": -0.2,
+    "c4": 0.05,
+    "K": 3.0,
+    "A": 0.2857142857142857,
+    "b": 0.45454545454545453,
+    "zeta": 0.07692307692307693,
+    "beta": 0.4,
+    "gr": 0.42857142857142855,
+    "m2": 1.0,
+    "l4": 0.3333333333333333,
+    "l6": 0.2,
+    "cutoff": 2.0,
+    "mr2": 2.0,
+    "lr": 0.14285714285714285,
+    "vacuum": 0.0
+  },
+  "M_cos_squared": 1.1,
+  "runs": {
+    "coarse": {
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 242,
+      "njev": 0,
+      "all_finite": true,
+      "min_a": 1.0,
+      "min_H": 0.14221719146384823,
+      "min_rho_m": 0.0025485589663512675,
+      "min_radius_squared": 0.0045726623524233925,
+      "max_normalized_Friedmann": 3.155680043932974e-09,
+      "max_charge_drift": 1.2182372777225225e-08,
+      "max_dust_integral_drift": 1.563057350217889e-09,
+      "max_abs_Qmp": 0.016000000000000004,
+      "max_abs_Qsyn": 0.09382176104853421,
+      "min_Qsyn": -0.09382176104853421,
+      "max_Qsyn": 0.05357142857142857,
+      "initial_state": {
+        "a": 1.0,
+        "H": 0.8665251299678509,
+        "u": 1.0,
+        "ud": 0.0,
+        "v": 0.0,
+        "vd": 1.0,
+        "r": 1.0,
+        "rd": 0.25,
+        "psi": 0.0,
+        "psid": 0.2,
+        "rho_m": 0.2,
+        "tau": 0.0
+      },
+      "final_state": {
+        "a": 4.333300583091761,
+        "H": 0.14221719146384823,
+        "u": -0.21962211448671826,
+        "ud": 0.01015388438138791,
+        "v": -0.09996173078269152,
+        "vd": -0.05133710917297677,
+        "r": -0.009533488481602487,
+        "rd": 0.25876234431141176,
+        "psi": 0.09049813678895297,
+        "psid": 0.0011059386939285894,
+        "rho_m": 0.0025485589663512675,
+        "tau": 4.125427471848881
+      },
+      "final_charge": 1.0000000013139263,
+      "final_dust_integral": 0.19999999999736406
+    },
+    "fine": {
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 512,
+      "njev": 0,
+      "all_finite": true,
+      "min_a": 1.0,
+      "min_H": 0.14221719136506666,
+      "min_rho_m": 0.0025485589665642776,
+      "min_radius_squared": 0.004572662390991571,
+      "max_normalized_Friedmann": 3.408907498308431e-12,
+      "max_charge_drift": 1.8791856959410325e-11,
+      "max_dust_integral_drift": 2.8703150967146485e-12,
+      "max_abs_Qmp": 0.016000000000000004,
+      "max_abs_Qsyn": 0.0938217610455261,
+      "min_Qsyn": -0.0938217610455261,
+      "max_Qsyn": 0.05357142857142857,
+      "initial_state": {
+        "a": 1.0,
+        "H": 0.8665251299678509,
+        "u": 1.0,
+        "ud": 0.0,
+        "v": 0.0,
+        "vd": 1.0,
+        "r": 1.0,
+        "rd": 0.25,
+        "psi": 0.0,
+        "psid": 0.2,
+        "rho_m": 0.2,
+        "tau": 0.0
+      },
+      "final_state": {
+        "a": 4.333300582985469,
+        "H": 0.14221719136506666,
+        "u": -0.21962211427696454,
+        "ud": 0.010153884291235225,
+        "v": -0.09996173068931236,
+        "vd": -0.051337109198022694,
+        "r": -0.009533488105761122,
+        "rd": 0.2587623436021058,
+        "psi": 0.09049813678065599,
+        "psid": 0.001105938693807636,
+        "rho_m": 0.0025485589665642776,
+        "tau": 4.1254274718377815
+      },
+      "final_charge": 1.0000000000013007,
+      "final_dust_integral": 0.20000000000002646
+    },
+    "Radau": {
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 8632,
+      "njev": 2,
+      "all_finite": true,
+      "min_a": 1.0,
+      "min_H": 0.14221719136511723,
+      "min_rho_m": 0.002548558966561312,
+      "min_radius_squared": 0.004572662390968308,
+      "max_normalized_Friedmann": 9.77904714075894e-13,
+      "max_charge_drift": 1.0034195696562165e-12,
+      "max_dust_integral_drift": 8.357481373622022e-13,
+      "max_abs_Qmp": 0.016000000000000004,
+      "max_abs_Qsyn": 0.09382176104570851,
+      "min_Qsyn": -0.09382176104570851,
+      "max_Qsyn": 0.05357142857142857,
+      "initial_state": {
+        "a": 1.0,
+        "H": 0.8665251299678509,
+        "u": 1.0,
+        "ud": 0.0,
+        "v": 0.0,
+        "vd": 1.0,
+        "r": 1.0,
+        "rd": 0.25,
+        "psi": 0.0,
+        "psid": 0.2,
+        "rho_m": 0.2,
+        "tau": 0.0
+      },
+      "final_state": {
+        "a": 4.333300582986126,
+        "H": 0.14221719136511723,
+        "u": -0.2196221142767084,
+        "ud": 0.010153884291050708,
+        "v": -0.09996173068919265,
+        "vd": -0.05133710919808616,
+        "r": -0.00953348810545135,
+        "rd": 0.2587623436011352,
+        "psi": 0.09049813678063692,
+        "psid": 0.0011059386938047184,
+        "rho_m": 0.002548558966561312,
+        "tau": 4.125427471837751
+      },
+      "final_charge": 1.00000000000022,
+      "final_dust_integral": 0.1999999999998863
+    }
+  },
+  "method_differences": {
+    "coarse": 8.36276517478401e-09,
+    "Radau": 1.411611475586304e-11
+  },
+  "finite_difference_balances": [
+    {
+      "points": 201,
+      "dt": 0.02,
+      "balance_maxima": {
+        "P": 7.225916653159555e-06,
+        "R": 1.634121979538242e-05,
+        "m": 1.0147915631801626e-06
+      },
+      "maximum": 1.634121979538242e-05,
+      "full_spatial_metric_fd_residual": 3.531129132564135e-06
+    },
+    {
+      "points": 401,
+      "dt": 0.01,
+      "balance_maxima": {
+        "P": 5.220507584231796e-07,
+        "R": 1.18637050267723e-06,
+        "m": 7.547739644174313e-08
+      },
+      "maximum": 1.18637050267723e-06,
+      "full_spatial_metric_fd_residual": 2.794993592085542e-07
+    },
+    {
+      "points": 801,
+      "dt": 0.005,
+      "balance_maxima": {
+        "P": 3.518560539401946e-08,
+        "R": 7.963880541709535e-08,
+        "m": 5.159156221632024e-09
+      },
+      "maximum": 7.963880541709535e-08,
+      "full_spatial_metric_fd_residual": 1.98217124399556e-08
+    }
+  ],
+  "zero_exchange_control": {
+    "success": true,
+    "message": "The solver successfully reached the end of the integration interval.",
+    "nfev": 512,
+    "njev": 0,
+    "all_finite": true,
+    "min_a": 1.0,
+    "min_H": 0.14324359860336616,
+    "min_rho_m": 0.002381779078443367,
+    "min_radius_squared": 0.0037391230600009044,
+    "max_normalized_Friedmann": 3.5621921038313667e-12,
+    "max_charge_drift": 1.326094789533272e-11,
+    "max_dust_integral_drift": 2.8287372444424363e-12,
+    "max_abs_Qmp": 0.0,
+    "max_abs_Qsyn": 0.0,
+    "min_Qsyn": -0.0,
+    "max_Qsyn": -0.0,
+    "initial_state": {
+      "a": 1.0,
+      "H": 0.8475837825243405,
+      "u": 1.0,
+      "ud": 0.0,
+      "v": 0.0,
+      "vd": 1.0,
+      "r": 1.0,
+      "rd": 0.25,
+      "psi": 0.0,
+      "psid": 0.2,
+      "rho_m": 0.2,
+      "tau": 0.0
+    },
+    "final_state": {
+      "a": 4.379012381937889,
+      "H": 0.14324359860336616,
+      "u": -0.22194193621348987,
+      "ud": -0.01668400410891465,
+      "v": -0.0998055276292214,
+      "vd": -0.061160371297413904,
+      "r": -0.03159717101148114,
+      "rd": 0.2551759682852034,
+      "psi": 0.10117514000024937,
+      "psid": 0.002381779078443367,
+      "rho_m": 0.002381779078443367,
+      "tau": 4.000000000000001
+    },
+    "final_charge": 1.0000000000010367,
+    "final_dust_integral": 0.200000000000059
+  },
+  "negative_controls": {
+    "wrong_initial_H": {
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 512,
+      "njev": 0,
+      "all_finite": true,
+      "min_a": 1.0,
+      "min_H": 0.14576565735382593,
+      "min_rho_m": 0.002484346045827796,
+      "min_radius_squared": 0.004493954509034514,
+      "max_normalized_Friedmann": 0.004367388642501582,
+      "max_charge_drift": 1.8621992836642676e-11,
+      "max_dust_integral_drift": 2.884498195854235e-12,
+      "max_abs_Qmp": 0.016000000000000004,
+      "max_abs_Qsyn": 0.09378135262090874,
+      "min_Qsyn": -0.09378135262090874,
+      "max_Qsyn": 0.05357142857142857,
+      "initial_state": {
+        "a": 1.0,
+        "H": 0.8673916550978187,
+        "u": 1.0,
+        "ud": 0.0,
+        "v": 0.0,
+        "vd": 1.0,
+        "r": 1.0,
+        "rd": 0.25,
+        "psi": 0.0,
+        "psid": 0.2,
+        "rho_m": 0.2,
+        "tau": 0.0
+      },
+      "final_state": {
+        "a": 4.370206134721013,
+        "H": 0.14576565735382593,
+        "u": -0.21696315363456847,
+        "ud": 0.009373897197208225,
+        "v": -0.09832824626321111,
+        "vd": -0.05097323244454473,
+        "r": -0.010495215394521994,
+        "rd": 0.25578795718099423,
+        "psi": 0.09030658242508038,
+        "psid": 0.0010782145108600514,
+        "rho_m": 0.002484346045827796,
+        "tau": 4.125245329077099
+      },
+      "final_charge": 1.0000000000012828,
+      "final_dust_integral": 0.20000000000003246
+    },
+    "wrong_reservoir_force": {
+      "success": true,
+      "message": "The solver successfully reached the end of the integration interval.",
+      "nfev": 512,
+      "njev": 0,
+      "all_finite": true,
+      "min_a": 1.0,
+      "min_H": 0.2280228233821199,
+      "min_rho_m": 0.0013437489076135786,
+      "min_radius_squared": 0.0028429201200718154,
+      "max_normalized_Friedmann": 0.1087566074066432,
+      "max_charge_drift": 1.528932536132288e-11,
+      "max_dust_integral_drift": 5.087263943437392e-12,
+      "max_abs_Qmp": 0.016000000000000004,
+      "max_abs_Qsyn": 0.08034854523838258,
+      "min_Qsyn": -0.08034854523838258,
+      "max_Qsyn": 0.05357142857142857,
+      "initial_state": {
+        "a": 1.0,
+        "H": 0.8665251299678509,
+        "u": 1.0,
+        "ud": 0.0,
+        "v": 0.0,
+        "vd": 1.0,
+        "r": 1.0,
+        "rd": 0.25,
+        "psi": 0.0,
+        "psid": 0.2,
+        "rho_m": 0.2,
+        "tau": 0.0
+      },
+      "final_state": {
+        "a": 5.361782282779891,
+        "H": 0.2280228233821199,
+        "u": -0.15377415902083622,
+        "ud": -0.01042340121286734,
+        "v": -0.06362473391075929,
+        "vd": -0.04650074515905071,
+        "r": -0.06377645082365048,
+        "rd": 0.19694235793898365,
+        "psi": 0.08758834793211363,
+        "psid": 0.0005841749439081583,
+        "rho_m": 0.0013437489076135786,
+        "tau": 4.123228146371509
+      },
+      "final_charge": 1.0000000000013356,
+      "final_dust_integral": 0.2000000000002053
+    }
+  },
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0"
+  },
+  "script_sha256": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+  "trajectory": "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+  "trajectory_sha256": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "status": "CONDITIONAL_INTERACTING_BACKGROUND_CONTROL_PARENT_HOLD",
+  "scope": "classical finite-time homogeneous zero-winding T3 control; not calibrated or stability-verified",
+  "healthy_continuous_GR_limit_verified": false,
+  "physical_Hessian_verified": false,
+  "microscopic_matching_verified": false,
+  "irreversible_syntropic_production_derived": false,
+  "canonical_Test1_pass": false,
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "Rule9": "NOT_CLEARED",
+  "MAT-001": "BLOCKED",
+  "UVIR-003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED"
+}

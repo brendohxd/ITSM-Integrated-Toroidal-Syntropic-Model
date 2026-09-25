@@ -1,0 +1,394 @@
+{
+  "schema": "r4c1-scalar-propagation-v1",
+  "validation": "PASS",
+  "passed": 56,
+  "total": 56,
+  "status": "SCALAR_PROPAGATION_SUPPORTED_ZERO_BRANCH_WELLPOSEDNESS_OPEN",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "research_execution": "PROCEED_PROVISIONALLY",
+  "inherited_unreviewed_inputs": [
+    "R9-MT1-S1",
+    "R9-MT1-B1",
+    "R9-MT1-VARIATION"
+  ],
+  "inputs": {
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md": "b4ecbc81119dd23b9597df3ca39b680cf44d07ae1a0a5564be78145b951354dd",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa"
+  },
+  "executable_sha256": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+  "artifacts": {
+    "Analysis\\MasterTests\\outputs\\test_01_r4c1_scalar_propagation_matrices.json": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+    "Analysis\\MasterTests\\outputs\\test_01_r4c1_scalar_propagation_symbol.json": "3122e1927a4627ea6c40d68493ebe6a28ca250301d2442a3d25794afa9ea659d",
+    "Analysis\\MasterTests\\outputs\\test_01_r4c1_scalar_propagation_transfers.json": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330"
+  },
+  "canonical": {
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "K_Q": "NOT_DERIVED",
+    "V": "NOT_COMPUTED",
+    "Stage4A": "CLOSED"
+  },
+  "versions": {
+    "python": "3.13.9",
+    "sympy": "1.14.0",
+    "numpy": "2.4.6"
+  },
+  "symbol_status": "ASYMPTOTIC_CHECK_SUPPORTED",
+  "formal_UV_growth_detected": false,
+  "quartic_coefficient": "5/33",
+  "checks": [
+    {
+      "name": "pin_Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "b4ecbc81119dd23b9597df3ca39b680cf44d07ae1a0a5564be78145b951354dd",
+      "criterion": null
+    },
+    {
+      "name": "pin_Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+      "criterion": null
+    },
+    {
+      "name": "pin_Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json",
+      "passed": true,
+      "value": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+      "criterion": null
+    },
+    {
+      "name": "pin_Analysis/MasterTests/test_01_r4c1_scalar_constraints.py",
+      "passed": true,
+      "value": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+      "criterion": null
+    },
+    {
+      "name": "pin_Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+      "criterion": null
+    },
+    {
+      "name": "pin_Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+      "criterion": null
+    },
+    {
+      "name": "pin_Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+      "criterion": null
+    },
+    {
+      "name": "S1_transitive_pin_Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S1_transitive_pin_Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S1_transitive_pin_Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S1_transitive_pin_Analysis/MasterTests/test_01_r4c1_full_variation.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S1_transitive_pin_Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S1_transitive_pin_Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S1_transitive_pin_Analysis\\MasterTests\\outputs\\test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S1_transitive_pin_Analysis\\MasterTests\\outputs\\test_01_r4c1_scalar_constraints_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "intermediate_diagonal_kinetic",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "unit_full_action_kinetic",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "canonical_potential_symmetric",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "gyroscopic_antisymmetry",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "time_dependent_variational_identity",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "original_equation_velocity_transform",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "original_equation_position_transform",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "reject_omitted_transformation_derivatives",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "background_flow_matches_pinned_RHS",
+      "passed": true,
+      "value": 4.440892098500626e-16,
+      "criterion": "<1e-13 at independent initial state"
+    },
+    {
+      "name": "spatial_polynomial_degree",
+      "passed": true,
+      "value": {
+        "V_degree": 4,
+        "G_degree": 1,
+        "W_degree": 4
+      },
+      "criterion": null
+    },
+    {
+      "name": "highest_spatial_rank_one",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "EOM_highest_spatial_matches_action",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "EOM_cubic_matches_action",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "reject_omitted_cubic_Schur",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "slow_principal_symmetric",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "slow_gyro_antisymmetric",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "reject_missing_Mcdot_principal_term",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "exact_slow_characteristic_polynomial",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "zero_branch_geometric_multiplicity",
+      "passed": true,
+      "value": 1,
+      "criterion": "algebraic multiplicity two but geometric multiplicity one; not a strong-hyperbolicity pass"
+    },
+    {
+      "name": "background_for_evolution",
+      "passed": true,
+      "value": 1.4064048135099621e-11,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "frequency_pencil_residuals",
+      "passed": true,
+      "value": 1.2581369720266133e-14,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "transfer_solver_n1_DOP853",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "canonical_symplectic_n1_DOP853",
+      "passed": true,
+      "value": 1.6528837199034501e-10,
+      "criterion": "norm residual/(1+norm(F)^2)<1e-6"
+    },
+    {
+      "name": "transfer_solver_n1_Radau",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "canonical_symplectic_n1_Radau",
+      "passed": true,
+      "value": 4.754220239243877e-11,
+      "criterion": "norm residual/(1+norm(F)^2)<1e-6"
+    },
+    {
+      "name": "two_solver_transfer_agreement_n1",
+      "passed": true,
+      "value": 6.644738599182199e-10,
+      "criterion": "<1e-5"
+    },
+    {
+      "name": "transfer_solver_n2_DOP853",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "canonical_symplectic_n2_DOP853",
+      "passed": true,
+      "value": 8.515176327592067e-11,
+      "criterion": "norm residual/(1+norm(F)^2)<1e-6"
+    },
+    {
+      "name": "transfer_solver_n2_Radau",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "canonical_symplectic_n2_Radau",
+      "passed": true,
+      "value": 8.692231188080326e-12,
+      "criterion": "norm residual/(1+norm(F)^2)<1e-6"
+    },
+    {
+      "name": "two_solver_transfer_agreement_n2",
+      "passed": true,
+      "value": 2.760982187314297e-09,
+      "criterion": "<1e-5"
+    },
+    {
+      "name": "transfer_solver_n4_DOP853",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "canonical_symplectic_n4_DOP853",
+      "passed": true,
+      "value": 5.0499703925714235e-11,
+      "criterion": "norm residual/(1+norm(F)^2)<1e-6"
+    },
+    {
+      "name": "transfer_solver_n4_Radau",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "canonical_symplectic_n4_Radau",
+      "passed": true,
+      "value": 2.1040190790320947e-12,
+      "criterion": "norm residual/(1+norm(F)^2)<1e-6"
+    },
+    {
+      "name": "two_solver_transfer_agreement_n4",
+      "passed": true,
+      "value": 1.5370031637468613e-08,
+      "criterion": "<1e-5"
+    },
+    {
+      "name": "transfer_solver_n8_DOP853",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "canonical_symplectic_n8_DOP853",
+      "passed": true,
+      "value": 2.6014049743182884e-11,
+      "criterion": "norm residual/(1+norm(F)^2)<1e-6"
+    },
+    {
+      "name": "transfer_solver_n8_Radau",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "canonical_symplectic_n8_Radau",
+      "passed": true,
+      "value": 5.873581547347468e-13,
+      "criterion": "norm residual/(1+norm(F)^2)<1e-6"
+    },
+    {
+      "name": "two_solver_transfer_agreement_n8",
+      "passed": true,
+      "value": 7.29106155316976e-08,
+      "criterion": "<1e-5"
+    }
+  ],
+  "zero_branch": {
+    "algebraic_multiplicity": 2,
+    "geometric_multiplicity": 1,
+    "wellposedness": "NOT_ESTABLISHED"
+  },
+  "preserved_attempt_01": {
+    "summary": "Analysis/MasterTests/outputs/r4c1_s2_attempt_01/test_01_r4c1_scalar_propagation_summary.json",
+    "sha256": "9d5c84aa198cf942795bd96e1bd9c723be10fc490682c85c4b3ef160fa232e76",
+    "disposition": "Superseded implementation: exact-zero normalization and missing Mcdot leading symbol corrected; action/thresholds unchanged"
+  },
+  "limitations": [
+    "finite time and fixed B1 parameters",
+    "zero-speed branches require subleading and well-posedness analysis",
+    "k=0 and singular charts excluded",
+    "amplification is chart dependent, not a stability verdict",
+    "formal UV not a certified EFT domain",
+    "all-sector and nonlinear stability not established"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "Rule9": "NOT_COMPLETED",
+  "canonical_test_complete": false,
+  "checks": [
+    {
+      "expected": "zero",
+      "name": "cubic_action_flux",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "newtonian_action_flux",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "spherical_gauss_flux",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "physical_force_square",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "field_chart_invariance",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "not_identically_zero",
+      "name": "two_thirds_not_identified",
+      "passed": true,
+      "residual": "5/9"
+    },
+    {
+      "expected": "zero",
+      "name": "physical_metric_time_potential",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "physical_metric_spatial_potential",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "nonspherical_curl_formula",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "not_identically_zero",
+      "name": "universal_algebraic_gradient_rejected",
+      "passed": true,
+      "residual": "5**(3/4)/25"
+    },
+    {
+      "expected": "zero",
+      "name": "algebraic_flux_can_pass_while_curl_fails",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "gate_effect": "NONE",
+  "local_symbolic_validation": "PASS",
+  "physics_pass": false,
+  "results": {
+    "C_obs_squared": "Cm**3/CIR",
+    "curl_at_unit_point": "5**(3/4)/25",
+    "curl_counterexample": "k*x*y/(x**2 + 4*y**2)**(5/4)",
+    "fixed_two_thirds_requires": "Cm^3/CIR=4/9",
+    "metric_space": "Psi_m=Psi_E-Cm*psi",
+    "metric_time": "Phi_m=Phi_N+Cm*psi",
+    "spherical_force": "g_tot=g_N+sqrt(Cm^3*a0/CIR)*sqrt(g_N)",
+    "status": "CONDITIONAL_SPHERICAL_FORM_UNIVERSAL_POINTWISE_FORM_REJECTED_PARENT_HOLD"
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "sympy": "1.14.0"
+  },
+  "source_sha256": {
+    "contract": "922db95c8cd497de40366216d27d246e071d74e4276eee00c441261b7b7aa091",
+    "executable": "fd33c35658841d32b0040ee5c004e7d9457d1caa9e66dad817c0fa7325998f14"
+  },
+  "test": 2
+}

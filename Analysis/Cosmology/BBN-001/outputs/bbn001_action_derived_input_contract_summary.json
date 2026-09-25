@@ -1,0 +1,477 @@
+{
+  "audit_execution_status": "COMPLETE",
+  "checks": [
+    {
+      "gate": "BBN-001",
+      "name": "contract_identity_is_frozen",
+      "ok": true,
+      "record_type": "BBN001_ACTION_DERIVED_INPUT_CONTRACT",
+      "schema": "ITSM_BBN001_ACTION_DERIVED_INPUT_CONTRACT_v1",
+      "status": "FROZEN_ACTION_DERIVED_INPUT_CONTRACT",
+      "version": "2026-09-16.v1"
+    },
+    {
+      "name": "required_field_vocabulary_is_exact",
+      "ok": true,
+      "sections": {
+        "itsm_closing_inputs": {
+          "actual": [
+            "physical_unit_map",
+            "baryon_normalization",
+            "early_plenum_density",
+            "matter_plenum_transfer",
+            "reservoir_plenum_transfer",
+            "condensate_charge_source",
+            "effective_gravity",
+            "perturbation_matching"
+          ],
+          "expected": [
+            "physical_unit_map",
+            "baryon_normalization",
+            "early_plenum_density",
+            "matter_plenum_transfer",
+            "reservoir_plenum_transfer",
+            "condensate_charge_source",
+            "effective_gravity",
+            "perturbation_matching"
+          ]
+        },
+        "network_history": {
+          "actual": [
+            "time",
+            "photon_temperature",
+            "photon_temperature_derivative",
+            "neutrino_temperature",
+            "hubble",
+            "baryon_density"
+          ],
+          "expected": [
+            "time",
+            "photon_temperature",
+            "photon_temperature_derivative",
+            "neutrino_temperature",
+            "hubble",
+            "baryon_density"
+          ]
+        }
+      }
+    },
+    {
+      "fields": [
+        {
+          "duplicate_aliases": [],
+          "field": "time",
+          "ok": true,
+          "section": "network_history"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "photon_temperature",
+          "ok": true,
+          "section": "network_history"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "photon_temperature_derivative",
+          "ok": true,
+          "section": "network_history"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "neutrino_temperature",
+          "ok": true,
+          "section": "network_history"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "hubble",
+          "ok": true,
+          "section": "network_history"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "baryon_density",
+          "ok": true,
+          "section": "network_history"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "physical_unit_map",
+          "ok": true,
+          "section": "itsm_closing_inputs"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "baryon_normalization",
+          "ok": true,
+          "section": "itsm_closing_inputs"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "early_plenum_density",
+          "ok": true,
+          "section": "itsm_closing_inputs"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "matter_plenum_transfer",
+          "ok": true,
+          "section": "itsm_closing_inputs"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "reservoir_plenum_transfer",
+          "ok": true,
+          "section": "itsm_closing_inputs"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "condensate_charge_source",
+          "ok": true,
+          "section": "itsm_closing_inputs"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "effective_gravity",
+          "ok": true,
+          "section": "itsm_closing_inputs"
+        },
+        {
+          "duplicate_aliases": [],
+          "field": "perturbation_matching",
+          "ok": true,
+          "section": "itsm_closing_inputs"
+        }
+      ],
+      "name": "every_field_has_dimensions_semantics_provenance_and_unique_aliases",
+      "ok": true
+    },
+    {
+      "actual": {
+        "dimensionless_branch_is_rejected": true,
+        "field_presence_is_not_value_validation": true,
+        "matching": "Exact aliases are preferred; case-insensitive matching is allowed except that T and t remain semantically distinct.",
+        "missing_input_exit_code": 2,
+        "missing_input_status": "BLOCKED_UPSTREAM_BACKGROUND",
+        "no_value_inference": true,
+        "physical_unit_map_required": true,
+        "required_provenance": true
+      },
+      "expected": {
+        "dimensionless_branch_is_rejected": true,
+        "field_presence_is_not_value_validation": true,
+        "missing_input_exit_code": 2,
+        "missing_input_status": "BLOCKED_UPSTREAM_BACKGROUND",
+        "no_value_inference": true,
+        "physical_unit_map_required": true,
+        "required_provenance": true
+      },
+      "name": "validation_policy_is_fail_closed",
+      "ok": true
+    },
+    {
+      "boundary": {
+        "allowed_use": [
+          "interface inventory",
+          "contract validation",
+          "control-network diagnostics after independent inputs are supplied"
+        ],
+        "gate_effect": "NONE",
+        "nonclaims": [
+          "No temperature is inferred from a, rho, mu or H.",
+          "No condensate energy density is identified with radiation or plenum density.",
+          "No Q^mu, S_N or G_eff is fitted or supplied by DeltaN.",
+          "No AlterAlterBBN/PArthENoPE network run is promoted to an ITSM prediction.",
+          "No gate, architecture, publication or Rule-9 status changes follow."
+        ],
+        "physics_pass": false,
+        "publication_status": "NOT_A_PHYSICS_CLAIM"
+      },
+      "name": "publication_firewall_is_locked",
+      "ok": true
+    },
+    {
+      "expected": {
+        "action_derived_itsm_bbn_ready": false,
+        "missing_itsm_fields": [
+          "physical_unit_map",
+          "baryon_normalization",
+          "early_plenum_density",
+          "matter_plenum_transfer",
+          "reservoir_plenum_transfer",
+          "condensate_charge_source",
+          "effective_gravity",
+          "perturbation_matching"
+        ],
+        "missing_network_fields": [
+          "photon_temperature",
+          "photon_temperature_derivative",
+          "neutrino_temperature",
+          "baryon_density"
+        ],
+        "status": "BLOCKED_UPSTREAM_BACKGROUND"
+      },
+      "name": "current_missing_boundary_is_explicit",
+      "ok": true
+    },
+    {
+      "name": "next_input_list_is_nonempty_and_textual",
+      "ok": true,
+      "required_next_inputs": [
+        "action-derived early-time background with physical units",
+        "photon temperature T_gamma(t) and dT_gamma/dt",
+        "neutrino temperature and baryon-density history or a derived eta mapping",
+        "distinct Q_mp^mu, Q_syn^mu and condensate-number source S_N",
+        "G_eff(t) with its action-level derivation and perturbation matching contract",
+        "independent review and likelihood specification before any publication claim"
+      ]
+    },
+    {
+      "name": "deterministic_rejection_tests_are_registered",
+      "ok": true,
+      "rejection_tests": [
+        {
+          "condition": "A dimensionless representative UVIR export is presented as a physical thermal history.",
+          "id": "BBN-R1",
+          "result": "REJECT"
+        },
+        {
+          "condition": "Photon temperature or its derivative is inferred from a, rho, mu or H.",
+          "id": "BBN-R2",
+          "result": "REJECT"
+        },
+        {
+          "condition": "Q_mp, Q_syn, S_N or G_eff is fitted, supplied by DeltaN or collapsed into another source.",
+          "id": "BBN-R3",
+          "result": "REJECT"
+        },
+        {
+          "condition": "A field name is present without physical units, action-level provenance or a dimensional map.",
+          "id": "BBN-R4",
+          "result": "REJECT"
+        },
+        {
+          "condition": "An external BBN network result is reported as an ITSM prediction before the upstream contract and independent review are closed.",
+          "id": "BBN-R5",
+          "result": "REJECT"
+        }
+      ]
+    },
+    {
+      "name": "current_preflight_exists_and_sidecar_matches",
+      "ok": true,
+      "receipt": {
+        "actual": "b7a102b2531d7dbbc75eef2d3fc3a418ec445ff54a59426a95f6499295d7fd02",
+        "expected": "b7a102b2531d7dbbc75eef2d3fc3a418ec445ff54a59426a95f6499295d7fd02",
+        "matches": true,
+        "path": "Analysis/Cosmology/BBN-001/outputs/bbn001_upstream_interface_preflight_summary.json"
+      }
+    },
+    {
+      "contract_path": "Analysis/Cosmology/BBN-001/bbn001_action_derived_input_contract.json",
+      "contract_sha256": "b92161b4db0989b8712480c91add05e8c60ec497e6d41c865308efe1a1883768",
+      "expected_contract_sha256": "b92161b4db0989b8712480c91add05e8c60ec497e6d41c865308efe1a1883768",
+      "name": "preflight_records_this_contract_hash",
+      "ok": true
+    },
+    {
+      "missing_itsm_fields": [
+        "physical_unit_map",
+        "baryon_normalization",
+        "early_plenum_density",
+        "matter_plenum_transfer",
+        "reservoir_plenum_transfer",
+        "condensate_charge_source",
+        "effective_gravity",
+        "perturbation_matching"
+      ],
+      "missing_network_fields": [
+        "photon_temperature",
+        "photon_temperature_derivative",
+        "neutrino_temperature",
+        "baryon_density"
+      ],
+      "name": "preflight_preserves_the_current_blocked_decision",
+      "ok": true,
+      "status": "BLOCKED_UPSTREAM_BACKGROUND"
+    },
+    {
+      "load_error": null,
+      "name": "preflight_missing_input_receipt_is_precise",
+      "ok": true,
+      "receipt": {
+        "blocking_field_count": 12,
+        "blocking_fields": [
+          {
+            "accepted_aliases": [
+              "T_gamma",
+              "T",
+              "temperature"
+            ],
+            "domain": "network_history",
+            "field": "photon_temperature",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "dTdt",
+              "dT_gamma_dt",
+              "dTgamma_dt"
+            ],
+            "domain": "network_history",
+            "field": "photon_temperature_derivative",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "Tnu",
+              "T_nu",
+              "T_neutrino"
+            ],
+            "domain": "network_history",
+            "field": "neutrino_temperature",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "nb_etaf",
+              "n_b_eta_f",
+              "baryon_density"
+            ],
+            "domain": "network_history",
+            "field": "baryon_density",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "unit_map",
+              "units",
+              "physical_units"
+            ],
+            "domain": "itsm_closing_inputs",
+            "field": "physical_unit_map",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "eta",
+              "ombh2",
+              "Omega_b_h2",
+              "baryon_to_photon_ratio"
+            ],
+            "domain": "itsm_closing_inputs",
+            "field": "baryon_normalization",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "rho_plenum",
+              "rho_P",
+              "plenum_density",
+              "plenum_fraction"
+            ],
+            "domain": "itsm_closing_inputs",
+            "field": "early_plenum_density",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "Q_mp",
+              "Q_mp^0",
+              "Q_mu",
+              "transfer_current"
+            ],
+            "domain": "itsm_closing_inputs",
+            "field": "matter_plenum_transfer",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "Q_syn",
+              "Q_syn^0",
+              "reservoir_current"
+            ],
+            "domain": "itsm_closing_inputs",
+            "field": "reservoir_plenum_transfer",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "S_N",
+              "charge_source",
+              "number_source"
+            ],
+            "domain": "itsm_closing_inputs",
+            "field": "condensate_charge_source",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "G_eff",
+              "Geff",
+              "effective_newton_constant"
+            ],
+            "domain": "itsm_closing_inputs",
+            "field": "effective_gravity",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          },
+          {
+            "accepted_aliases": [
+              "perturbation_matching",
+              "boltzmann_matching",
+              "metric_sources"
+            ],
+            "domain": "itsm_closing_inputs",
+            "field": "perturbation_matching",
+            "matched_names": [],
+            "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+          }
+        ],
+        "no_value_inference": true,
+        "presence_check_only": true,
+        "provenance_validation": "NOT_PERFORMED",
+        "record_type": "BBN001_ACTION_DERIVED_MISSING_INPUT_RECEIPT",
+        "status": "BLOCKED_UPSTREAM_BACKGROUND",
+        "value_validation": "NOT_PERFORMED"
+      }
+    }
+  ],
+  "contract": {
+    "path": "Analysis/Cosmology/BBN-001/bbn001_action_derived_input_contract.json",
+    "sha256": "b92161b4db0989b8712480c91add05e8c60ec497e6d41c865308efe1a1883768",
+    "status": "FROZEN_ACTION_DERIVED_INPUT_CONTRACT",
+    "version": "2026-09-16.v1"
+  },
+  "contract_error": null,
+  "current_boundary": {
+    "gate_effect": "NONE",
+    "physics_pass": false,
+    "publication_status": "NOT_A_PHYSICS_CLAIM",
+    "rule9_status": "THREE_WAY_CLEARANCE_NOT_MET",
+    "upstream_status": "BLOCKED_UPSTREAM_BACKGROUND"
+  },
+  "gate": "BBN-001",
+  "nonclaims": [
+    "Contract validation does not supply any missing BBN or ITSM input.",
+    "Field-name presence does not validate values, dimensions, provenance or numerical stability.",
+    "No temperature, Q^mu, S_N, G_eff, perturbation map or likelihood is inferred.",
+    "No BBN physics prediction, gate promotion, consensus clearance or publication follows."
+  ],
+  "record_type": "BBN001_ACTION_DERIVED_INPUT_CONTRACT_VALIDATION",
+  "schema": "ITSM_BBN001_ACTION_DERIVED_INPUT_CONTRACT_VALIDATION_v1",
+  "source_sha256": "9873b27c902ea50b2baa326c6b851643c07923c9fe28e8e36db21298f44cba3c",
+  "status": "CONTRACT_VALIDATED_UPSTREAM_PHYSICS_BLOCKED",
+  "validation_checks_passed": 12,
+  "validation_checks_total": 12
+}

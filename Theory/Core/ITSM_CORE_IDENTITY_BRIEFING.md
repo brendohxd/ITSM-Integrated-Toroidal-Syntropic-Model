@@ -44,6 +44,16 @@ The ITSM uses a formal gate system to track what is derived vs. assumed vs. open
 Gates are **fail-closed**: a gate is `BLOCKED` or `IN_PROGRESS` until every item
 on its checklist is satisfied. No shortcut, no override.
 
+**Research execution is separate from gate closure.** Under the operator's
+25 September 2026 [deferred-review policy](ITSM_RULE9_DEFERRED_REVIEW_POLICY.md),
+all outstanding Rule-9 reviews are deferred. A locally checked result may
+support further provisional work within its declared scope when review is
+the only unmet requirement for that use. Record its pending review and carry
+that dependency forward. Scientific failures, missing required inputs and
+unresolved substantive objections still hold affected uses. Gate closure,
+canonical Derived promotion and publication-readiness claims retain their
+review requirements. Do not turn review backlog into a research stop.
+
 ### Current Gate Statuses (authoritative source: `active_research.md`)
 
 | Gate | Status | Key Note |
@@ -99,24 +109,29 @@ Per `Theory/Core/ITSM_Ban_List_Reassessment_and_Frontier_Policy.md`:
 
 ```
 Active priority:
-└─ TOP-X4 / KK-001 Plan 11: X4-S2F3 finite-charge quantum completion
-   ├─ static parity-even determinant checkpoint: bounded 12/12 complete
-   ├─ finite-charge operator checkpoint: bounded 16/16 complete
-   ├─ dynamic state/subtraction checkpoint: FAILED 11/12 on low-mode W4 positivity
-   ├─ exact scalar/Dirac transport retry: bounded 18/18; Hadamard/stress held
-   ├─ D5 Hadamard/counterterm readiness: bounded 20/20 scaffold; readiness HOLD
-   ├─ covariant scalar/chi matrix operator: bounded 25/25; states/stress held
-   ├─ scalar-matrix local Hadamard parametrix: bounded 22/22; global state/stress held
-   ├─ Route-A global scalar-matrix state: theorem-backed 10/10; Dirac/gravity/parity, determinant, stress and Hessian held
-   └─ A4 and Ultra remain closed; physics_pass=false, gate_effect=NONE
+└─ Master Tests 1–3 / conditional R4C1 continuation
+   ├─ Tests 1–3 disposition: bounded conditional identities/counterexamples; programme incomplete
+   ├─ R4C1 action/current and full variation: 119/119 and 162/162 bounded checks
+   ├─ R4C1 interacting background, GR control and coefficient audit: 48/48, 56/56 and 63/63
+   ├─ R4C1-S1/S2/S3: 71/71, 56/56 and 57/57 scoped scalar diagnostics
+   └─ substantive stability, well-posedness, matching and canonical acceptance remain open
+Separate queued lane:
+└─ TOP-X4 / KK-001 Plan 11: finite-charge quantum completion; physics_pass=false
+   ├─ static/finite-order/scalar-state/operator receipts remain bounded at their declared scopes
+   ├─ curved Dirac operator: bounded 13/13; spinor state, parity, determinant, stress and Hessian held
+   └─ A4 and Ultra remain closed; no TOP-X4 checkpoint changes MAT-001 or UVIR-003
 Preserved but suspended:
 └─ PKM1 A0–A6 and the U3/M4/U5–U7 cheap-screen package
 ```
 
-The active plan is
-`Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md`.
-No TOP-X4 checkpoint changes MAT-001, UVIR-003, downstream gates, publication
-readiness, or the canonical $T^3$ identity.
+The active programme is
+`Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md`; its current owning
+continuation is the conditional R4C1 work described in the deferred-review
+register. The TOP-X4 plan remains
+`Theory/Core/Reasoning_Mode_Plans/11_MAX_TOPX4_S2F3_SEMICLASSICAL_STABILIZATION/PLAN.md`
+for that separate queued lane. No R4C1 or TOP-X4 checkpoint changes MAT-001,
+UVIR-003, downstream gates, publication readiness, or the canonical $T^3$
+identity.
 
 ## 8. What Agents Must NOT Do
 
@@ -143,4 +158,4 @@ readiness, or the canonical $T^3$ identity.
 
 ---
 
-*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-16 (the theorem-backed Route-A scalar-matrix state construction is recorded as a bounded mathematical checkpoint; Dirac/gravity/parity completion, determinant, renormalized stress, physical Hessian and all downstream gates remain closed).*
+*This document is referenced by GEMINI.md Rule 7. Last updated: 2026-09-26 (the conditional R4C1 Test-1 continuation and S1/S2/S3 scalar diagnostics are recorded as bounded provisional work; TOP-X4 remains a separate queued lane, and Dirac/gravity/parity completion, determinant, renormalized stress, physical Hessian and all downstream gates remain closed).*

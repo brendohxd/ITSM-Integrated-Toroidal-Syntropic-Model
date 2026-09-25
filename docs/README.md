@@ -4,7 +4,8 @@ Multi-page research site published at https://itsm-cosmology.com.
 
 ## Current public status
 
-Audited 16 September 2026 against the v12.0-alpha.12 recovery authority:
+Audited 26 September 2026 against the v12.0-alpha.12 recovery authority and
+the active Master Tests 1–3 disposition:
 
 - **External evidence watch:** six unreviewed arXiv inputs were screened on 14
   September, with BBN and empirical-helium tests prioritized. This adds no
@@ -19,6 +20,20 @@ Audited 16 September 2026 against the v12.0-alpha.12 recovery authority:
   temperature, plenum, transfer and effective-gravity inputs needed for an
   ITSM BBN run. It remains `CONTROL_ONLY` with `physics_pass=false`; no
   action-derived ITSM early-time result or publication claim is established.
+
+- **Master Tests 1–3 / R4C1:** the ordered programme remains incomplete. The
+  conditional R4C1 candidate supplies bounded action/source, variation,
+  interacting-background, GR-control and coefficient-identifiability receipts;
+  S1/S2/S3 add scalar constraint, propagation and zero-branch diagnostics. The
+  positive scalar kinetic result is restricted to its declared regular chart,
+  the corrected propagation result retains a defective zero branch, and the
+  full coupled well-posedness, physical matching and canonical parent remain
+  open. These results retain `physics_pass=false`.
+
+- **Rule 9:** outstanding review is `DEFERRED` with `Rule9_cleared=false`.
+  Locally checked results can proceed provisionally when review is the only
+  unmet requirement; substantive physics holds and final canonical/publication
+  decisions remain binding. No reviewer dispatch is implied.
 
 - **TOP-X4 / X4-S2F3:** `BOUNDED_LOCAL_AND_FINITE_ORDER_PLUS_THEOREM_BACKED_SCALAR_STATE_STRESS_HOLD`.
   Static determinant 12/12, entry gate 9/9, finite-charge operator 16/16,
@@ -62,6 +77,10 @@ publication clearance.
 | `papers.html` | Canonically named core and P1-P4 artifacts |
 | `claims.html` | Status definitions and public claim matrix |
 | `reproduce.html` | Bounded reproduction entry points |
+
+The public pages summarize the verified scope only. The detailed Test-1–3 and
+R4C1 reports remain the source documents for assumptions, hashes, domains and
+failed/unknown-check handling.
 
 ## Deployment
 

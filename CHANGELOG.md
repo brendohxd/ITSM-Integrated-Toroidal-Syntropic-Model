@@ -1,5 +1,162 @@
 # ITSM Changelog & Archive History
 
+## Master Tests 1–3 and R4C1 conditional continuation (2026-09-25–2026-09-26)
+
+- Added the ordered Master ITSM test programme and its bounded disposition for
+  Tests 1–3. The result is not three completed physics tests: Test 1 has a
+  conditional action/source-vector witness, Test 2 has a conditional spherical
+  force law but rejects the universal pointwise extension on periodic `T^3`,
+  and Test 3 retains reference-scale and nonlinear-coefficient
+  non-identifiability. The historical v7.2 circulation chain is rejected as
+  transcribed; no independent `C_chi` is selected.
+- Froze the conditional R4C1-v1 candidate and recorded `119/119` first-current
+  checks, `162/162` full classical variation/Ward checks, `48/48` interacting
+  background checks, `56/56` GR-control checks and `63/63` coefficient-
+  identifiability checks. These are bounded candidate results, not canonical
+  parent acceptance, healthy GR recovery, or observational matching. The B1
+  residuals are `3.408907498308431e-12` for the fine Friedmann control and
+  `7.963880541709535e-8` for the finest reported sector-balance control.
+- Added R4C1-S1 scalar constraint reduction (`71/71`): the regular
+  `H != 0`, `k != 0` chart has an exact positive scalar kinetic form and all
+  `6,408` registered matrices have positive inertia. Full gradient,
+  characteristic, all-sector stability, EFT and GR-limit closure remain open.
+- Added R4C1-S2 corrected scalar propagation (`56/56`) and preserved the
+  failed first implementation. The corrected symbol includes the missing
+  `Mdot` contribution; it retains a defective double-zero branch, a wider
+  condensate phase cone, quartic force dispersion and an open well-posedness /
+  causality / EFT interpretation.
+- Added R4C1-S3 zero-branch regularity disposition (`57/57`). It rejects the
+  equal-order canonical bound but finds a finite positive large-`p` limit for a
+  restricted original-variable graph norm at regular frozen events. The full
+  coupled initial-value problem remains unproved, and the Jordan obstruction is
+  not erased.
+- Applied the deferred Rule-9 execution policy: outstanding review remains
+  `review_status=DEFERRED` and `Rule9_cleared=false`; locally checked results
+  may be reused provisionally within their declared scope when review is the
+  only missing requirement, while substantive physics holds and final
+  canonical/publication decisions remain blocked.
+- Added the standalone ITSM context optimizer and its verification tests. It
+  reduces local read/output display volume only; it has no Relay/provider
+  dependency and does not alter scientific status or host billing.
+- Parent statuses remain `MAT-001=BLOCKED`, `UVIR-003=IN_PROGRESS`,
+  `K_Q=NOT_DERIVED`, `V=NOT_COMPUTED`, `Stage4A=CLOSED`, and
+  `physics_pass=false` for the conditional R4C1 work.
+
+## TOP-X4 H1 / X4-S4 candidate-route disposition (2026-09-18–2026-09-19)
+
+- Froze the separately identified `X4-S4-GW2` candidate action contract. Its
+  validator passes `21/21` semantic checks and rejects `15/15` mutations,
+  including the declared localized terms and zero-charge static sum-rule
+  boundary. `X4-S4_parent_accepted=false`; this is not a finite-charge or MAT
+  solution.
+- Tested the preregistered zero-charge warped benchmark. Although two bounded
+  initializations converged, the best branch collapsed to
+  `L=8.505356709014385e-13`; the independent Einstein constraint residual was
+  `10.9723` and the static-balance residual was `0.683833`. The benchmark is
+  rejected and no parameters were retuned.
+- Selected `X4-S4-C1` as the next action-selection route, treating the failed
+  flat benchmark as a codimension-one compatibility failure and solving the
+  signed four-curvature as an internal unknown. The route contract passes
+  `13/13` evidence checks and rejects `14/14` mutations, but no curved
+  background has been solved. Finite charge, H1 residue, `K_Q`, `V`, MAT-001,
+  Stage 4A, Rule 9 and publication remain closed with `physics_pass=false`.
+
+## MAT-001 TOP-X4 compensated/warped route handoff (2026-09-17)
+
+- Added a non-promoting handoff audit after rejecting the minimal unwarped
+  single-tension brane child.
+- The audit passes `10/10` checks and rejects `7/7` mutations. It preserves the
+  earlier S0 boundary that X4-S4 orbifold/brane is a different deferred parent
+  and that X4-S3 has no distinct minimal smooth-S1 flux repair.
+- No compensator, warp profile, field content or action was selected. The
+  surviving route is `OPEN_ONLY_AS_X4-S4_NEW_PARENT_DESIGN`; X4-S2F3 and all
+  MAT/UVIR/Stage-4A/Rule-9/publication statuses remain unchanged.
+
+## MAT-001 TOP-X4 minimal brane-child freeze decision (2026-09-17)
+
+- Added a non-promoting decision contract and executable for the minimal
+  unwarped, constant-radius single-tension brane child.
+- The flat-product distributional control requires the renormalized background
+  tension to vanish when no compensator or warp/junction profile is present.
+  The decision passes `10/10` checks and rejects `7/7` mutations.
+- Only the minimal candidate is rejected. A compensated or warped brane child
+  remains an open separate research route; no child action was frozen and
+  `X4-S2F3`, MAT-001, UVIR-003, Stage 4A, Rule 9 and publication status are
+  unchanged.
+
+## MAT-001 TOP-X4 H1 brane-child global-consistency preflight (2026-09-16)
+
+- Added a frozen non-promoting preflight for the recommended brane-induced-
+  metric child route after the bounded bulk-versus-brane comparison.
+- The executable passes `11/11` checks and rejects `8/8` mutation controls,
+  covering proper periodic-delta normalization, dimensions, localized
+  variation, two-sided junction/embedding obligations, compact-space balance
+  and localized counterterm requirements.
+- Under the declared static flat-four-dimensional periodic-circle assumptions,
+  a single uncompensated positive renormalized brane tension is conditionally
+  rejected. A renormalized zero-tension or explicitly compensated background
+  remains a research possibility, but no child action is frozen and
+  `X4-S2F3`, MAT-001, UVIR-003, Stage 4A, Rule 9 and publication status are
+  unchanged; `physics_pass=false`, `gate_effect=NONE` remain binding.
+
+## TOP-X4 scoped curved Dirac operator (2026-09-16)
+
+- Added a frozen scoped contract and deterministic checkpoint for the
+  Hamiltonian-form neutral-spectator Dirac operator on the registered
+  homogeneous five-dimensional metric.
+- The checkpoint passes `13/13`, with `2/2` contract/provenance checks reported
+  separately from `11/11` operator/rejection checks. This prevents a sidecar or
+  wording mismatch from being misreported as failed operator mathematics while
+  preserving the fail-closed contract boundary.
+- The bounded result derives the homogeneous spin connection, volume rescaling,
+  Hermitian Clifford representation and periodic KK dispersion. It does not
+  construct a Dirac Hadamard state, finite-charge determinant, parity/anomaly
+  data, counterterms, stress tensor or physical Hessian; `physics_pass=false`
+  and `gate_effect=NONE` remain binding.
+
+## Local Rule-9 TOP-X4/BBN evidence packet (2026-09-16)
+
+- Assembled a local machine-readable and Markdown handoff packet containing
+  11 authority documents, 24 hashed TOP-X4/BBN receipts, unresolved questions
+  and separate Role A/B/C review prompts.
+- The packet is `READY_FOR_INDEPENDENT_REVIEW_ONLY`; reviewer slots are
+  `NOT_ASSIGNED` and no external review dispatch occurred. Its binding status
+  remains `THREE_WAY_CLEARANCE_NOT_MET`, with `physics_pass=false` and
+  `gate_effect=NONE`.
+- The earlier triangulated synthesis is retained as historical context only;
+  it is not treated as current TOP-X4/BBN clearance.
+
+## BBN-001 action-derived input contract and missing-input receipt (2026-09-16)
+
+- Froze the machine-readable BBN-001 action-derived interface contract and
+  made the upstream preflight consume its registered field vocabulary,
+  semantics and provenance requirements.
+- Added a deterministic validator that passes `12/12` bookkeeping checks and
+  confirms the preflight's exact 12-field
+  `BBN001_ACTION_DERIVED_MISSING_INPUT_RECEIPT`. Field presence remains
+  separate from value, dimensional and action-provenance validation.
+- The binding result remains `BLOCKED_UPSTREAM_BACKGROUND`,
+  `physics_pass=false`, `gate_effect=NONE` and
+  `publication_status=NOT_A_PHYSICS_CLAIM`. No BBN input, `Q^mu`, `S_N`,
+  `G_eff`, perturbation match, gate or Rule-9 status is inferred or promoted.
+
+## TOP-X4 Dirac/parity/anomaly readiness audit (2026-09-16)
+
+- Added a frozen rejection-only contract and deterministic `10/10` readiness
+  audit for the `X4-S2F3` Dirac, parity-odd determinant phase, anomaly and
+  quantized-counterterm boundary.
+- The audit preserves the static zero-density parity-even determinant and the
+  finite-order first-order Dirac transport result at their declared scopes.
+  It rejects static-to-dynamic substitution, squared-operator parity claims,
+  first-order-to-Hadamard promotion, unproved dimensional import and zeroed
+  missing sectors.
+- The binding status is
+  `HOLD_TOPX4_DIRAC_PARITY_ANOMALY_INPUTS_NOT_CLOSED`, with
+  `dirac_completion=NOT_DERIVED`, `parity_odd_determinant_phase=NOT_DERIVED`,
+  `anomaly_cancellation=NOT_DERIVED`, `counterterm_quantization=NOT_FIXED`,
+  `physics_pass=false` and `gate_effect=NONE`. No stress, Hessian, A4, Ultra,
+  Rule-9 or publication status changes follow.
+
 ## TOP-X4 physical-Hessian readiness audit (2026-09-16)
 
 - Added a single-gate `8/8` readiness audit and frozen contract for the

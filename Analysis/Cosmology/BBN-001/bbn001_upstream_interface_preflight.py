@@ -19,31 +19,18 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from bbn001_action_derived_input_contract import (
+    CONTRACT_PATH,
+    contract_alias_map,
+    load_contract,
+    validate_contract,
+)
+
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 BACKGROUND_REL = Path("Analysis/UVIR/UVIR-003/outputs/uvir003_frw_background_summary.json")
 TRAJECTORY_REL = Path("Analysis/UVIR/UVIR-003/outputs/uvir003_frw_background_trajectory.csv")
 OUTPUT_PATH = Path(__file__).parent / "outputs" / "bbn001_upstream_interface_preflight_summary.json"
-
-NETWORK_CONTRACT = {
-    "time": ("t",),
-    "photon_temperature": ("T_gamma", "T", "temperature"),
-    "photon_temperature_derivative": ("dTdt", "dT_gamma_dt", "dTgamma_dt"),
-    "neutrino_temperature": ("Tnu", "T_nu", "T_neutrino"),
-    "hubble": ("H", "Hubble"),
-    "baryon_density": ("nb_etaf", "n_b_eta_f", "baryon_density"),
-}
-
-ITSM_CONTRACT = {
-    "physical_unit_map": ("unit_map", "units", "physical_units"),
-    "baryon_normalization": ("eta", "ombh2", "Omega_b_h2", "baryon_to_photon_ratio"),
-    "early_plenum_density": ("rho_plenum", "rho_P", "plenum_density", "plenum_fraction"),
-    "matter_plenum_transfer": ("Q_mp", "Q_mp^0", "Q_mu", "transfer_current"),
-    "reservoir_plenum_transfer": ("Q_syn", "Q_syn^0", "reservoir_current"),
-    "condensate_charge_source": ("S_N", "charge_source", "number_source"),
-    "effective_gravity": ("G_eff", "Geff", "effective_newton_constant"),
-    "perturbation_matching": ("perturbation_matching", "boltzmann_matching", "metric_sources"),
-}
 
 
 def sha256_file(path: Path) -> str:
@@ -105,6 +92,37 @@ def _check_contract(names: set[str], contract: dict[str, tuple[str, ...]]) -> di
     return result
 
 
+def _missing_input_receipt(
+    network: dict[str, Any], itsm: dict[str, Any], status: str
+) -> dict[str, Any]:
+    blocking_fields: list[dict[str, Any]] = []
+    for domain, fields in (("network_history", network), ("itsm_closing_inputs", itsm)):
+        for field, item in fields.items():
+            if not item["available"]:
+                blocking_fields.append(
+                    {
+                        "domain": domain,
+                        "field": field,
+                        "accepted_aliases": item["accepted_aliases"],
+                        "matched_names": item["matched_names"],
+                        "reason": (
+                            "No accepted alias appears in the registered export. "
+                            "The value, dimensions and action-level provenance are not inferred."
+                        ),
+                    }
+                )
+    return {
+        "record_type": "BBN001_ACTION_DERIVED_MISSING_INPUT_RECEIPT",
+        "status": status,
+        "presence_check_only": True,
+        "value_validation": "NOT_PERFORMED",
+        "provenance_validation": "NOT_PERFORMED",
+        "no_value_inference": True,
+        "blocking_fields": blocking_fields,
+        "blocking_field_count": len(blocking_fields),
+    }
+
+
 def _load_trajectory_header(path: Path) -> list[str]:
     if not path.is_file():
         return []
@@ -117,6 +135,34 @@ def _load_trajectory_header(path: Path) -> list[str]:
 
 
 def run_preflight() -> dict[str, Any]:
+    contract = load_contract()
+    contract_validation = validate_contract(contract)
+    if not contract_validation["ok"]:
+        return {
+            "record_type": "BBN001_UPSTREAM_INTERFACE_PREFLIGHT",
+            "gate": "BBN-001",
+            "status": "ERROR_BBN001_ACTION_DERIVED_INPUT_CONTRACT",
+            "physics_pass": False,
+            "gate_effect": "NONE",
+            "publication_status": "NOT_A_PHYSICS_CLAIM",
+            "contract": {
+                "path": relative_or_missing(CONTRACT_PATH),
+                "sha256": sha256_file(CONTRACT_PATH) if CONTRACT_PATH.is_file() else "MISSING",
+            },
+            "contract_validation": contract_validation,
+            "decision": {
+                "minimum_external_network_history_available": False,
+                "physical_network_history_ready": False,
+                "action_derived_itsm_bbn_ready": False,
+                "missing_network_fields": [],
+                "missing_itsm_fields": [],
+                "refusal_reason": "The frozen BBN-001 input contract failed validation; no upstream field is accepted.",
+            },
+            "missing_input_receipt": _missing_input_receipt({}, {}, "ERROR_BBN001_ACTION_DERIVED_INPUT_CONTRACT"),
+            "required_next_inputs": contract.get("required_next_inputs", []),
+            "nonclaims": contract.get("publication_boundary", {}).get("nonclaims", []),
+        }
+
     background_path = REPO_ROOT / BACKGROUND_REL
     trajectory_path = REPO_ROOT / TRAJECTORY_REL
     source_files = {
@@ -141,8 +187,8 @@ def run_preflight() -> dict[str, Any]:
     json_names = _flatten_names(background)
     trajectory_header = _load_trajectory_header(trajectory_path)
     observed_names = json_names | set(trajectory_header)
-    network = _check_contract(observed_names, NETWORK_CONTRACT)
-    itsm = _check_contract(observed_names, ITSM_CONTRACT)
+    network = _check_contract(observed_names, contract_alias_map(contract, "network_history"))
+    itsm = _check_contract(observed_names, contract_alias_map(contract, "itsm_closing_inputs"))
 
     # The registered trajectory has H and t, but its authority explicitly
     # describes the branch as dimensionless.  Presence of a field is not
@@ -165,9 +211,21 @@ def run_preflight() -> dict[str, Any]:
         "record_type": "BBN001_UPSTREAM_INTERFACE_PREFLIGHT",
         "gate": "BBN-001",
         "status": status,
-        "physics_pass": False,
-        "gate_effect": "NONE",
-        "publication_status": "NOT_A_PHYSICS_CLAIM",
+        "physics_pass": contract["publication_boundary"]["physics_pass"],
+        "gate_effect": contract["publication_boundary"]["gate_effect"],
+        "publication_status": contract["publication_boundary"]["publication_status"],
+        "contract": {
+            "path": relative_or_missing(CONTRACT_PATH),
+            "sha256": sha256_file(CONTRACT_PATH),
+            "version": contract["version"],
+            "status": contract["status"],
+        },
+        "contract_sha256": sha256_file(CONTRACT_PATH),
+        "contract_validation": {
+            "ok": contract_validation["ok"],
+            "checks_passed": contract_validation["checks_passed"],
+            "checks_total": contract_validation["checks_total"],
+        },
         "source_files": source_files,
         "source_load": {"ok": load_error is None, "error": load_error},
         "observed_export": {
@@ -178,6 +236,10 @@ def run_preflight() -> dict[str, Any]:
         },
         "network_contract": network,
         "itsm_closing_contract": itsm,
+        "contract_field_requirements": {
+            "network_history": contract["network_history"],
+            "itsm_closing_inputs": contract["itsm_closing_inputs"],
+        },
         "decision": {
             "minimum_external_network_history_available": network_fields_ready,
             "physical_network_history_ready": physical_network_ready,
@@ -192,26 +254,40 @@ def run_preflight() -> dict[str, Any]:
                 else "All declared upstream fields are present; an action-derived adapter may be evaluated separately."
             ),
         },
-        "required_next_inputs": [
-            "action-derived early-time background with physical units",
-            "photon temperature T_gamma(t) and dT_gamma/dt",
-            "neutrino temperature and baryon-density history or a derived eta mapping",
-            "distinct Q_mp^mu, Q_syn^mu and condensate-number source S_N",
-            "G_eff(t) with its action-level derivation and perturbation matching contract",
-            "independent review and likelihood specification before any publication claim",
-        ],
-        "nonclaims": [
-            "No temperature is inferred from a, rho, mu or H.",
-            "No condensate energy density is identified with radiation or plenum density.",
-            "No Q^mu, S_N or G_eff is fitted or supplied by DeltaN.",
-            "No AlterAlterBBN/PArthENoPE network run is promoted to an ITSM prediction.",
-            "No gate, architecture, publication or Rule-9 status changes follow.",
-        ],
+        "missing_input_receipt": _missing_input_receipt(network, itsm, status),
+        "required_next_inputs": contract["required_next_inputs"],
+        "nonclaims": contract["publication_boundary"]["nonclaims"],
     }
 
 
 def main() -> int:
-    result = run_preflight()
+    try:
+        result = run_preflight()
+    except (OSError, json.JSONDecodeError, TypeError, ValueError, KeyError) as exc:
+        result = {
+            "record_type": "BBN001_UPSTREAM_INTERFACE_PREFLIGHT",
+            "gate": "BBN-001",
+            "status": "ERROR_BBN001_ACTION_DERIVED_INPUT_CONTRACT",
+            "physics_pass": False,
+            "gate_effect": "NONE",
+            "publication_status": "NOT_A_PHYSICS_CLAIM",
+            "contract": {
+                "path": relative_or_missing(CONTRACT_PATH),
+                "sha256": sha256_file(CONTRACT_PATH) if CONTRACT_PATH.is_file() else "MISSING",
+            },
+            "contract_load_error": str(exc),
+            "decision": {
+                "minimum_external_network_history_available": False,
+                "physical_network_history_ready": False,
+                "action_derived_itsm_bbn_ready": False,
+                "missing_network_fields": [],
+                "missing_itsm_fields": [],
+                "refusal_reason": "The frozen BBN-001 input contract could not be loaded; no upstream field is accepted.",
+            },
+            "missing_input_receipt": _missing_input_receipt({}, {}, "ERROR_BBN001_ACTION_DERIVED_INPUT_CONTRACT"),
+            "required_next_inputs": [],
+            "nonclaims": ["No upstream value is inferred or accepted."],
+        }
     result["script_sha256"] = sha256_file(Path(__file__))
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     payload = (json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "\n").encode("utf-8")
@@ -226,6 +302,8 @@ def main() -> int:
     print(f"Action-derived ITSM BBN ready: {result['decision']['action_derived_itsm_bbn_ready']}")
     print(f"SHA-256: {digest}")
     print(f"Output: {OUTPUT_PATH}")
+    if result["status"].startswith("ERROR_"):
+        return 1
     return 0 if result["decision"]["action_derived_itsm_bbn_ready"] else 2
 
 

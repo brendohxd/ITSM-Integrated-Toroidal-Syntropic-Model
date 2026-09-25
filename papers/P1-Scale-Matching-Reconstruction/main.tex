@@ -423,14 +423,23 @@ the action and integrating out fields.
 
 On compact \(\Tthree\), the integral of any pure divergence vanishes, so
 localized solutions must use a compensated density contrast (and, if present,
-a zero-mean exchange source).  For general morphology,
+a zero-mean exchange source).  For a flat periodic metric, general morphology,
+and the local-static baseline with vanishing exchange source,
 \begin{equation}
   \frac{|\nabla\varphi|}{\azero}\,\nabla\varphi
-  = \frac{\Cm}{\CIR}\,\nabla\Phi_{N} + \nabla\times\mathbf{H}\,,
+  = \frac{\Cm}{\CIR}\,\nabla\Phi_{N} + \nabla\times\mathbf{H}
+    + \mathbf{h}_0\,,
   \label{eq:curl}
 \end{equation}
-so pointwise square-root formulae are approximations for disks.  These
-statements remain valid; they do not resurrect \(\Cobs=2/3\).
+where \(\mathbf H\) is periodic and \(\mathbf h_0\) is the constant harmonic
+flux fixed by the solution.  A periodic curl has zero spatial mean, but the
+nonlinear gradient flux need not, so dropping \(\mathbf h_0\) needs an
+additional condition.  It is not a freely fitted uniform acceleration.
+A nonzero exchange source requires its own source contribution before the
+difference is divergence-free; a curved metric requires the corresponding
+metric-dependent Hodge decomposition.  Pointwise square-root formulae remain
+approximations for disks.  Neither this decomposition nor compact topology
+derives \(\Cobs=2/3\).
 
 % =============================================================================
 \section{Mutual inconsistency with the empirical RAR scale}

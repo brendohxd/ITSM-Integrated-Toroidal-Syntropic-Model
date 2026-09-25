@@ -1,0 +1,203 @@
+{
+  "Rule9": "NOT_COMPLETED",
+  "canonical_test_complete": false,
+  "checks": [
+    {
+      "expected": "zero",
+      "name": "conformal_matter_trace_variation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "not_identically_zero",
+      "name": "wrong_matter_source_sign_rejected",
+      "passed": true,
+      "residual": "2*beta*(-2*chi**2*mm2*exp(2*beta*psi) + d_chi_0**2 - d_chi_1**2 - d_chi_2**2 - d_chi_3**2)*exp(2*beta*psi)"
+    },
+    {
+      "expected": "zero",
+      "name": "matter_ward_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "plenum_ward_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "reservoir_ward_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "interaction_stress_reassignment_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "matter_ward_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "plenum_ward_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "reservoir_ward_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "interaction_stress_reassignment_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "matter_ward_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "plenum_ward_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "reservoir_ward_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "interaction_stress_reassignment_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "matter_ward_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "plenum_ward_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "reservoir_ward_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "interaction_stress_reassignment_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "flrw_matter_energy",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "flrw_plenum_energy",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "flrw_reservoir_energy",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "zero_beta_exact_vs_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "zero_lambda_exact_vs_limit",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "u1_charge_divergence",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "nonzero_energy_transfer_with_conserved_charge",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "not_identically_zero",
+      "name": "omitted_portal_stress_rejected",
+      "passed": true,
+      "residual": "lam*r*(d_r_1*(u**2 + v**2) + d_u_1*r*u + d_v_1*r*v)/2"
+    },
+    {
+      "expected": "zero",
+      "name": "zero_transfer_not_zero_stress",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "zero_field_GR_control_extra_stress",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "zero_coupling_matter_equation_GR_control",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "gate_effect": "NONE",
+  "local_symbolic_validation": "PASS",
+  "physics_pass": false,
+  "results": {
+    "Q_mp": "beta*T_m*grad^nu(psi)",
+    "Q_syn": "-lambda*(u^2+v^2)*r*grad^nu(r)/2",
+    "Q_syn_FLRW": "lam*r*rd*(u**2 + v**2)/2",
+    "U1_charge_source": "0",
+    "dimensions": "[L]=4,[T]=4,[Q]=5,[j_U1]=3,[div j_U1]=4; psi=0,Z=2,u=v=r=chi=1",
+    "matter_trace": "(-2*chi**2*mm2*exp(2*beta*psi) + d_chi_0**2 - d_chi_1**2 - d_chi_2**2 - d_chi_3**2)*exp(2*beta*psi)",
+    "shifted_Q_syn": "Q_syn + eta*grad^nu(W)",
+    "source_psi": "beta*(-2*chi**2*mm2*exp(2*beta*psi) + d_chi_0**2 - d_chi_1**2 - d_chi_2**2 - d_chi_3**2)*exp(2*beta*psi)",
+    "status": "PARTIAL_CONFORMAL_CURRENT_AND_RESERVOIR_NONUNIQUENESS_HOLD_FULL_ACTION"
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "sympy": "1.14.0"
+  },
+  "source_sha256": {
+    "contract": "922db95c8cd497de40366216d27d246e071d74e4276eee00c441261b7b7aa091",
+    "executable": "fd33c35658841d32b0040ee5c004e7d9457d1caa9e66dad817c0fa7325998f14"
+  },
+  "test": 1
+}

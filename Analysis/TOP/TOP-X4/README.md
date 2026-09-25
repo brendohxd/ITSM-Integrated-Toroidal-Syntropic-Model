@@ -383,3 +383,68 @@ records `physical_hessian=NOT_CONSTRUCTED`, `radion_mass=NOT_COMPUTED`,
 `physics_pass=false` and `gate_effect=NONE`; no missing mixing block is set to
 zero and no downstream gate is opened. The receipt is
 `TOPX4_S2F3_PLAN11_PHYSICAL_HESSIAN_READINESS_2026-09-16.md`.
+
+## Plan 11 — Dirac/parity/anomaly readiness audit
+
+Run the bounded rejection-only fermion/parity audit with:
+
+```powershell
+python Analysis\TOP\TOP-X4\topx4_s2f3_dirac_parity_anomaly_readiness.py
+```
+
+The recorded result is:
+
+```text
+HOLD_TOPX4_DIRAC_PARITY_ANOMALY_INPUTS_NOT_CLOSED
+readiness_checks=10/10
+dirac_completion=NOT_DERIVED
+dirac_hadamard_state=NOT_CONSTRUCTED
+parity_odd_determinant_phase=NOT_DERIVED
+anomaly_cancellation=NOT_DERIVED
+counterterm_quantization=NOT_FIXED
+physics_pass=false
+gate_effect=NONE
+```
+
+The audit verifies that the static determinant remains parity-even and
+zero-density, while the existing Dirac result remains a bounded first-order
+transport control. It rejects using the static determinant as the
+finite-charge fermion action, squaring as parity/anomaly clearance, or a
+first-order projector as an infinite-order five-dimensional Hadamard state.
+The frozen contract is
+`Theory/Gates/TOP-X4/TOPX4_S2F3_DIRAC_PARITY_ANOMALY_READINESS_CONTRACT_2026-09-16.md`;
+the receipt is
+`TOPX4_S2F3_PLAN11_DIRAC_PARITY_ANOMALY_READINESS_2026-09-16.md`. No
+determinant, stress, physical Hessian, A4, Ultra, Rule-9 or publication status
+changes follow.
+
+## Plan 11 — scoped curved Dirac operator
+
+Run the bounded operator-geometry checkpoint with:
+
+```powershell
+python -B Analysis\TOP\TOP-X4\topx4_s2f3_curved_dirac_operator_checkpoint.py
+```
+
+The recorded result is:
+
+```text
+PASS_TOPX4_S2F3_CURVED_DIRAC_OPERATOR_SCOPED_HOLD_QUANTUM_CLOSURE
+checks=13/13
+contract_checks=2/2
+operator_checks=11/11
+operator_status=DERIVED_HAMILTONIAN_FORM_ON_REGISTERED_HOMOGENEOUS_METRIC
+physics_pass=false
+gate_effect=NONE
+```
+
+The checkpoint derives the homogeneous coframe and torsion-free spin
+connection, verifies the Hermitian five-matrix Clifford representation and
+the periodic KK dispersion relation, and rejects the wrong connection sign,
+an antiperiodic half shift and a direct scalar chemical-potential shift for the
+neutral spectator. Contract/provenance failures are reported separately from
+operator failures, so a wording or sidecar mismatch cannot be mistaken for
+failed operator mathematics. The Dirac Hadamard state, finite-charge
+determinant, parity/anomaly data, quantized counterterms, stress tensor,
+gravity/ghost constraints and physical Hessian remain open. The receipt is
+`TOPX4_S2F3_PLAN11_CURVED_DIRAC_OPERATOR_2026-09-16.md`.

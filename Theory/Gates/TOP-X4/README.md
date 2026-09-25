@@ -1,9 +1,17 @@
 # TOP-X4 / KK-001 — higher-dimensional four-torus research fork
 
 **Status:** original `X4-D2 HOLD_UNSTABILIZED`; `X4-S2F3` local scalar-matrix Hadamard parametrix passed 22/22, the finite-order Route-B symbol diagnostic passed 8/8 and the registered scalar state is theorem-backed at 10/10, but Dirac/gravity/parity/stress remain held; A4 and Ultra entry closed
-**Date:** 2026-09-16
+**Status snapshot date:** 2026-09-17
 **Gate effect:** none
 **Rule-9 status:** no three-way clearance; the Plan 11 scalar-matrix checkpoints have no completed independent reviewer set
+**Programme priority:** Test 1 of the Master ITSM programme (updated 2026-09-24); TOP-X4 is a separate queued lane
+
+The latest X4-S4-C1 decision is dated 2026-09-19. It validates the curved-slice
+equation route only; no curved background was solved and the parent was not
+accepted. If TOP-X4 resumes, the next gate remains
+`TOPX4_H1_X4-S4_CURVED_SLICE_BACKGROUND_OUTPUT_TEST`. The 2026-09-24
+programme reprioritization does not cancel this lane or change any TOP-X4,
+MAT-001, UVIR-003, Rule-9, or physics status.
 
 ## Scope
 
@@ -96,6 +104,45 @@ an observational target?
 | `Analysis/TOP/TOP-X4/topx4_s2f3_physical_hessian_readiness.py` | Eight-check physical-Hessian input/readiness audit |
 | `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json` | Deterministic 8/8 readiness hold; physical Hessian not constructed |
 | `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_PHYSICAL_HESSIAN_READINESS_2026-09-16.md` | Readiness receipt, missing-input inventory and stop boundary |
+| `Theory/Gates/TOP-X4/TOPX4_S2F3_DIRAC_PARITY_ANOMALY_READINESS_CONTRACT_2026-09-16.md` | Frozen rejection-only contract for Dirac, parity-odd phase, anomaly and counterterm readiness |
+| `Analysis/TOP/TOP-X4/topx4_s2f3_dirac_parity_anomaly_readiness.py` | Ten-check fail-closed Dirac/parity/anomaly readiness audit |
+| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_dirac_parity_anomaly_readiness_summary.json` | Deterministic 10/10 readiness hold; no fermionic/parity closure |
+| `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_DIRAC_PARITY_ANOMALY_READINESS_2026-09-16.md` | Readiness receipt, rejection tests, hashes and non-promotion boundary |
+| `Theory/Gates/TOP-X4/TOPX4_S2F3_CURVED_DIRAC_OPERATOR_CONTRACT_2026-09-16.md` | Frozen scoped Hamiltonian-form curved 5D Dirac-operator contract |
+| `Analysis/TOP/TOP-X4/topx4_s2f3_curved_dirac_operator_checkpoint.py` | Homogeneous coframe, spin-connection, Clifford, KK-spectrum and rejection executable |
+| `Analysis/TOP/TOP-X4/outputs/topx4_s2f3_curved_dirac_operator_summary.json` | Deterministic 13/13 scoped result, split into 2/2 contract and 11/11 operator checks |
+| `Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_CURVED_DIRAC_OPERATOR_2026-09-16.md` | Operator receipt, hashes, check taxonomy and quantum-closure boundary |
+| `Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRIDGE_CONTRACT_2026-09-16.md` | Frozen non-promoting signed-source bridge contract |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_bridge_readiness.py` | 11-check bridge foundation and 10-item closure audit |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/MAT001_TOPX4_H1_BRIDGE_READINESS_2026-09-16.md` | Bridge readiness hold and signed-residue boundary |
+| `Theory/Gates/MAT-001/MAT-001_TOPX4_H1_MATTER_ARCHITECTURE_COMPARISON_CONTRACT_2026-09-16.md` | Frozen bulk-versus-brane comparison contract |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_matter_architecture_comparison.py` | Structural bulk/brane and radion/Track-A map diagnostic |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/MAT001_TOPX4_H1_MATTER_ARCHITECTURE_COMPARISON_2026-09-16.md` | Lead brane-child route recommendation; no child freeze |
+| `Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRANE_CHILD_GLOBAL_CONSISTENCY_CONTRACT_2026-09-16.md` | Frozen compact-circle, variation and renormalization preflight |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_brane_child_global_consistency_preflight.py` | 11-check brane-child global-consistency audit |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/MAT001_TOPX4_H1_BRANE_CHILD_GLOBAL_CONSISTENCY_PREFLIGHT_2026-09-16.md` | Conditional tensionless/compensated-route hold |
+| `Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRANE_CHILD_FREEZE_DECISION_CONTRACT_2026-09-17.md` | Minimal unwarped brane-child freeze/reject contract |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_brane_child_freeze_decision.py` | 10-check minimal-child decision audit |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/MAT001_TOPX4_H1_BRANE_CHILD_FREEZE_DECISION_2026-09-17.md` | Conditional rejection of minimal child; compensated/warped route retained |
+| `Theory/Gates/MAT-001/MAT-001_TOPX4_H1_COMPENSATED_WARPED_CHILD_DESIGN_CONTRACT_2026-09-17.md` | Non-promoting handoff to the deferred X4-S4 new-parent route |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_compensated_warped_child_design.py` | 10-check X4-S4 route-handoff audit |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/MAT001_TOPX4_H1_COMPENSATED_WARPED_CHILD_DESIGN_2026-09-17.md` | X4-S4 new-parent design boundary; no action freeze |
+| `Theory/Gates/MAT-001/MAT-001_TOPX4_H1_CONSTRAINT_PROJECTION_DIAGNOSTIC_CONTRACT_2026-09-18.md` | Non-promoting synthetic constraint/source projection contract inspired by the cited constrained-system method |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_constraint_projection_diagnostic.py` | Exact rational Schur, covariance, orientation and singular-domain diagnostic |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_constraint_projection_diagnostic_summary.json` | Deterministic 13/13 synthetic method receipt; physical Hessian remains held |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/MAT001_TOPX4_H1_CONSTRAINT_PROJECTION_DIAGNOSTIC_2026-09-18.md` | Diagnostic report and non-promotion boundary |
+| `Theory/Gates/MAT-001/MAT-001_TOPX4_H1_X4_S4_NEW_PARENT_ACTION_CONTRACT_2026-09-18.md` | Frozen X4-S4-GW2 candidate geometry, action, variation, sum-rule and renormalization boundary |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_x4_s4_new_parent_action_contract.py` | 21-check semantic action validator and 15-mutation rejection suite |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_x4_s4_new_parent_action_contract_summary.json` | Deterministic candidate-action receipt; parent acceptance and physics remain held |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/MAT001_TOPX4_H1_X4_S4_NEW_PARENT_ACTION_CONTRACT_2026-09-18.md` | Candidate freeze report, hashes and next-gate boundary |
+| `Theory/Gates/MAT-001/MAT-001_TOPX4_H1_X4_S4_ZERO_CHARGE_BACKGROUND_EXISTENCE_CONTRACT_2026-09-18.md` | Frozen zero-charge warped-seed BVP, benchmark and independent residual contract |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_x4_s4_zero_charge_background_existence.py` | Backreacted six-function BVP, constraint/sum-rule audits and mutation suite |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_x4_s4_zero_charge_background_existence_summary.json` | Benchmark rejection receipt; finite-charge and H1 remain closed |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/MAT001_TOPX4_H1_X4_S4_ZERO_CHARGE_BACKGROUND_EXISTENCE_2026-09-18.md` | Numerical result, residuals and fail-closed boundary |
+| `Theory/Gates/MAT-001/MAT-001_TOPX4_H1_X4_S4_ACTION_SELECTION_AFTER_ZERO_CHARGE_TEST_CONTRACT_2026-09-19.md` | Frozen failed-benchmark adjudication, curved-slice equations and route-selection firewall |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_x4_s4_action_selection_after_zero_charge_test.py` | Symbolic Einstein/constraint/balance audit and adversarial route validator |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_x4_s4_action_selection_after_zero_charge_test_summary.json` | Deterministic 13/13 route-selection receipt; no curved background solved |
+| `Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/MAT001_TOPX4_H1_X4_S4_ACTION_SELECTION_AFTER_ZERO_CHARGE_TEST_2026-09-19.md` | Decision report, hashes and next curved-slice gate boundary |
 
 ## Entry to Max
 
@@ -223,3 +270,148 @@ unavailable. The binding fields are
 `physics_pass=false` and `gate_effect=NONE`. No mixing block is inferred or
 set to zero, and no MAT, UVIR, cosmology, BBN, A4, Ultra or publication status
 changes.
+
+## Plan 11 — scoped curved Dirac operator
+
+The bounded operator-geometry checkpoint passes `13/13`, explicitly split
+into `2/2` contract/provenance checks and `11/11` operator/rejection checks.
+It derives the Hamiltonian-form neutral-spectator operator, homogeneous
+torsion-free spin connection, volume rescaling and periodic KK spectrum on the
+registered metric. A future contract or sidecar mismatch remains fail-closed,
+but is not reported as failed operator mathematics.
+
+This resolves one operator prerequisite only. The Dirac Hadamard state,
+finite-charge determinant, parity/anomaly data, quantized counterterms,
+renormalized stress, gravity/ghost constraints and physical Hessian remain
+open with `physics_pass=false` and `gate_effect=NONE`.
+
+## MAT-001 H1 bridge — TOP-X4 candidate route
+
+The bounded H1 bridge audit records TOP-X4 as a primary research candidate,
+not as a promoted MAT solution. The bridge requires the complete same-action
+matter source, a stabilized finite-charge background, renormalized stress and
+counterterms, the metric/radion auxiliary reduction, and a signed source
+residue on an oriented positive-norm mode. The fixed-metric scalar operator and
+the theorem-backed scalar state cannot stand in for that constrained object.
+
+The bulk-versus-brane comparison selects a **new brane-induced-metric child
+route** for bounded global preflight, while retaining bulk physical matter as
+the smooth-circle control. Its exact radion coupling
+`alpha_b=-1/(sqrt(6) M_Pl)` is only an unreduced kinematic source component,
+not `V` or `K_Q`. A direct canonical-radion-to-Track-A `Y^(3/2)` map is rejected
+by derivative homogeneity; only a constrained mixed radion-condensate mode
+remains open.
+
+The global-consistency preflight passes `11/11` checks and rejects `8/8`
+mutations. It conditionally rejects a single uncompensated positive
+renormalized tension on a static flat periodic circle with canonical
+nonnegative bulk terms and no compensator. A zero-renormalized or explicitly
+compensated background remains possible only through a separately derived
+child action with exact junction, embedding and localized-counterterm data.
+
+The binding result is
+`HOLD_TOPX4_H1_BRANE_CHILD_GLOBAL_SUM_RULE_AND_RENORMALIZATION`, with
+`BRANE_ROUTE=CONDITIONAL_SURVIVOR_TENSIONLESS_BACKGROUND_ONLY`. The next
+single gate is `TOPX4_H1_BRANE_CHILD_ACTION_FREEZE_OR_REJECT`. Until that
+decision is supported by a child action, `X4-S2F3` remains unchanged,
+`physical_hessian=NOT_CONSTRUCTED`, `physics_pass=false`, `gate_effect=NONE`,
+and no MAT/UVIR/Stage-4A or publication status changes.
+
+## Minimal brane-child freeze decision
+
+The minimal unwarped, constant-radius single-tension child is conditionally
+rejected for freeze. Its flat-product control has no distributional Einstein
+curvature to support a lone localized background source, so it requires
+`lambda_b^ren=0`. A bare zero is not a renormalization condition.
+
+The decision audit passes `10/10` checks and rejects `7/7` mutations. It
+rejects only this minimal candidate; the surviving research route is
+`OPEN_ONLY_COMPENSATED_OR_WARPED_CHILD`. A separate child action may be
+designed only after deriving an explicit compensator or warp profile, exact
+global balance, localized counterterms, junction/embedding equations and a
+controlled finite-charge background. `X4-S2F3` remains unchanged and no MAT,
+UVIR, Stage-4A, Rule-9 or publication status changes.
+
+## Compensated/warped route handoff
+
+The minimal unwarped single-tension child is rejected. The registered next
+route is `X4-S4` orbifold/brane as a separately designed new parent; the
+earlier S0 audit records it as deferred because fixed points change the
+geometry and require localized actions, counterterms and junction conditions.
+The same audit found no distinct minimal smooth-S1 flux repair under X4-S3.
+
+The route-handoff audit passes `10/10` checks and rejects `7/7` mutations. It
+selects no compensator, warp profile or field content and does not change
+X4-S2F3. The next single gate is
+`TOPX4_H1_X4-S4_NEW_PARENT_ACTION_CONTRACT`. Before that action and its
+constraints are derived, no child or new-parent freeze, MAT result, K_Q/V
+matching, Rule-9 clearance or publication status follows.
+
+## X4-S4-GW2 candidate-action contract
+
+The new-parent action gate freezes a separately identified candidate for one
+background-existence test. `X4-S4-GW2` uses
+`R_t x T3_obs x (S1/Z2)`, two fixed surfaces, the existing complex
+finite-charge condensate, one neutral even stabilizer, and physical matter
+localized only on `Sigma_0`. The full leading classical inventory includes
+GHY, induced-curvature, scalar boundary and gravitational junction terms. It
+does not alter X4-S2F3 or inherit its `chi` and Dirac spectator fields.
+
+The validator passes `21/21` semantic checks and rejects `15/15` mutations.
+The mass-dimension ledger and symbolic potential derivatives close exactly,
+and a stress-trace calculation derives the relative real/complex scalar
+weights in the static sum rule. That sum rule is frozen only for the
+Lorentz-invariant flat-slice seed; finite temporal charge requires a newly
+derived integrated Einstein identity.
+
+This result means `candidate_action_contract_frozen=true` and
+`X4-S4_parent_accepted=false`. No background has been found, no finite
+counterterm normalization or semiclassical action is complete, and no
+physical Hessian, H1 residue, MAT coefficient, Rule-9 clearance or publication
+promotion follows. The next single gate is
+`TOPX4_H1_X4-S4_ZERO_CHARGE_BACKGROUND_EXISTENCE`.
+
+## X4-S4-GW2 zero-charge background-existence result
+
+The preregistered dimensionless benchmark was tested with the full warped
+static boundary-value system. Two bounded initialization variants converged,
+but the best numerical branch collapsed to `L=8.505356709014385e-13`, below
+the nonsingular-modulus cut. Its seven boundary residuals were small, but the
+independent Einstein constraint residual was `10.9723` and the static balance
+residual was `0.683833`. The benchmark therefore returns
+`BENCHMARK_REJECTED_RETURN_TO_ACTION_SELECTION`.
+
+This rejects the registered benchmark, not every possible X4-S4 action. No
+parameters were retuned after seeing the result, and no finite-charge,
+physical-Hessian, MAT, Rule-9 or publication status changed. The next single
+gate is `TOPX4_H1_X4-S4_ACTION_SELECTION_AFTER_ZERO_CHARGE_TEST`.
+
+## X4-S4 post-zero-charge action selection
+
+The failed flat benchmark is preserved without rerun or retuning. The flat
+boundary-value problem has seven unknown integration/modulus parameters and
+already uses seven gauge, scalar-boundary and gravitational-junction
+conditions; the independent Hamiltonian constraint is an eighth condition.
+Its failed value is therefore adjudicated as a codimension-one flatness
+compatibility failure at the registered action point, not as an equation-sign
+defect or a proof that all X4-S4 actions fail.
+
+The selected next route is `X4-S4-C1`: keep the frozen bulk and localized
+action and solve the signed maximally symmetric four-curvature `kappa4` as an
+eighth internal unknown. No observed Hubble value or preferred curvature sign
+is supplied. Induced-curvature terms remain symbolic; the next tree-level
+diagnostic explicitly preregisters `M0^2(mu0)=Mpi^2(mu0)=0` without claiming
+that radiative corrections preserve those values.
+
+The route validator passes `13/13` evidence checks and rejects `14/14`
+mutations. Exact symbolic residuals vanish for the curved Einstein-tensor
+difference, flat and curved constraint propagation, and generalized
+integrated balance. This validates the equation/route contract only: no
+curved background has been solved and `X4-S4_parent_accepted=false` remains
+binding.
+
+The next single gate is
+`TOPX4_H1_X4-S4_CURVED_SLICE_BACKGROUND_OUTPUT_TEST`. Finite charge, the
+physical Hessian, signed H1 residue, `K_Q`, `V`, MAT-001, Stage 4A, Rule 9 and
+publication promotion remain closed with `physics_pass=false` and
+`gate_effect=NONE`.

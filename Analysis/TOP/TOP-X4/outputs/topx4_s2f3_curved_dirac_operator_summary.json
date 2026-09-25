@@ -1,0 +1,160 @@
+{
+  "Hamiltonian": "H_D=N*(alpha_obs*k_obs/a+alpha_y*n/b+beta*m_F)",
+  "KK_boundary": "n in Z; periodic spin structure",
+  "advance_to_finite_charge_determinant": false,
+  "advance_to_parity_anomaly": false,
+  "advance_to_physical_hessian": false,
+  "audit_execution_status": "COMPLETE",
+  "authority": [
+    {
+      "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_CURVED_DIRAC_OPERATOR_CONTRACT_2026-09-16.md",
+      "sha256": "65280699a5e641d2ffcc61fc4e97d1b28670cbcf9256330184d7c3d1593809b6"
+    },
+    {
+      "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md",
+      "sha256": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945"
+    },
+    {
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_exact_transport_retry_summary.json",
+      "sha256": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747"
+    }
+  ],
+  "candidate": "X4-S2F3",
+  "check_taxonomy": {
+    "contract_and_provenance": "execution-validity checks; failure blocks acceptance but is not an operator-mathematics failure",
+    "operator_and_rejection": "coframe, Clifford, spin-connection, dispersion, spectrum and negative-mutation checks"
+  },
+  "checks": [
+    {
+      "name": "authority_and_predecessor_sidecars_match",
+      "ok": true,
+      "receipts": [
+        {
+          "actual": "65280699a5e641d2ffcc61fc4e97d1b28670cbcf9256330184d7c3d1593809b6",
+          "expected": "65280699a5e641d2ffcc61fc4e97d1b28670cbcf9256330184d7c3d1593809b6",
+          "matches": true,
+          "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_CURVED_DIRAC_OPERATOR_CONTRACT_2026-09-16.md"
+        },
+        {
+          "actual": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "expected": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+          "matches": true,
+          "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md"
+        },
+        {
+          "actual": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+          "expected": "94ca65dd08419b650a8a135ddc5e7a6adf550ef788ee7a8759fa143786315747",
+          "matches": true,
+          "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_exact_transport_retry_summary.json"
+        }
+      ]
+    },
+    {
+      "contract_path": "Theory/Gates/TOP-X4/TOPX4_S2F3_CURVED_DIRAC_OPERATOR_CONTRACT_2026-09-16.md",
+      "name": "contract_freezes_scoped_nonpromotion_boundary",
+      "ok": true
+    },
+    {
+      "max_metric_residual": 0.0,
+      "name": "diagonal_coframe_reconstructs_registered_metric",
+      "ok": true
+    },
+    {
+      "max_inverse_residual": 0.0,
+      "name": "coframe_inverse_is_exact_on_registered_domain",
+      "ok": true
+    },
+    {
+      "max_hermiticity_residual": 0.0,
+      "name": "Hamiltonian_Clifford_matrices_are_Hermitian",
+      "ok": true
+    },
+    {
+      "max_clifford_residual": 0.0,
+      "name": "Hamiltonian_Clifford_algebra_is_exact",
+      "ok": true
+    },
+    {
+      "connection_components": [
+        "omega^i_0=H_a e^i",
+        "omega^4_0=H_b e^4"
+      ],
+      "max_cartan_residual": 0.0,
+      "name": "torsion_free_homogeneous_spin_connection_is_registered",
+      "ok": true
+    },
+    {
+      "contracted_connection": "N*(3*H_a+H_b)/2",
+      "max_volume_residual": 0.0,
+      "name": "spin_connection_equals_half_log_volume_derivative",
+      "ok": true,
+      "volume_factor": "a^3*b"
+    },
+    {
+      "dispersion": "N^2*((k_obs/a)^2+(n/b)^2+m_F^2)",
+      "max_square_residual": 5.684341886080802e-14,
+      "name": "curved_hamiltonian_squares_to_lapse_scaled_dispersion",
+      "ok": true
+    },
+    {
+      "max_spectrum_residual": 5.329070518200751e-15,
+      "multiplicity": "two positive and two negative eigenvalues",
+      "name": "periodic_KK_spectrum_has_expected_positive_negative_pairs",
+      "ok": true
+    },
+    {
+      "mutation_residual": 0.388888888888889,
+      "name": "wrong_spin_connection_sign_is_rejected",
+      "ok": true
+    },
+    {
+      "mutation_residual": 1.1111111111111112,
+      "name": "antiperiodic_half_shift_is_rejected_for_frozen_periodic_spin_structure",
+      "ok": true
+    },
+    {
+      "mutation_residual": 0.6,
+      "name": "direct_scalar_chemical_potential_shift_is_rejected_for_neutral_spectator",
+      "ok": true
+    }
+  ],
+  "checks_passed": 13,
+  "checks_total": 13,
+  "contract_checks_passed": 2,
+  "contract_checks_total": 2,
+  "covariant_completion": "SCOPED_ONLY_NOT_FULL",
+  "gate_effect": "NONE",
+  "neutral_spectator_boundary": "no direct rho, chi or mu shift",
+  "nonclaims": [
+    "No finite-charge background is solved.",
+    "No Dirac Hadamard state or state-dependent determinant is constructed.",
+    "No parity-odd phase, anomaly cancellation or counterterm quantization is derived.",
+    "No renormalized stress tensor or physical Hessian is calculated.",
+    "No MAT, UVIR, cosmology, BBN, Rule-9 or publication status changes follow."
+  ],
+  "operator_calculation_status": "PASS",
+  "operator_checks_passed": 11,
+  "operator_checks_total": 11,
+  "operator_status": "DERIVED_HAMILTONIAN_FORM_ON_REGISTERED_HOMOGENEOUS_METRIC",
+  "physics_pass": false,
+  "required_next_inputs": {
+    "curved_gravity_ghost_and_constraint_coupling": "NOT_AVAILABLE",
+    "dimension_appropriate_dirac_hadamard_state": "NOT_CONSTRUCTED",
+    "finite_charge_background": "NOT_AVAILABLE",
+    "local_global_anomaly_data": "NOT_DERIVED",
+    "parity_odd_phase_reference_and_regulator": "NOT_DERIVED",
+    "quantized_counterterm_normalizations": "NOT_FIXED",
+    "state_dependent_finite_charge_determinant": "NOT_COMPUTED"
+  },
+  "route": "TOP-X4_KK-001",
+  "schema": "ITSM_TOPX4_S2F3_CURVED_DIRAC_OPERATOR_SCOPED_v1",
+  "scientific_boundary": "This checkpoint derives the Hamiltonian-form Dirac operator and its geometry on the registered homogeneous metric. It is a prerequisite input only; the full finite-charge quantum and parity sectors remain open.",
+  "source_sha256": "7f743fadac14041981770ce1df782c5360e251447206563ebfb6a8ebf04e7d44",
+  "spin_connection": {
+    "Theta": "3*H_a+H_b",
+    "metric": "ds^2=-N^2 dt^2+a^2 d x_obs^2+b^2 dy^2",
+    "rescaling": "Psi_c=(a^3*b)^(1/2)*Psi",
+    "volume_factor": "a^3*b"
+  },
+  "status": "PASS_TOPX4_S2F3_CURVED_DIRAC_OPERATOR_SCOPED_HOLD_QUANTUM_CLOSURE"
+}

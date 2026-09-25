@@ -1,0 +1,438 @@
+{
+  "schema": "r4c1-zero-branch-v1",
+  "A": [
+    [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "1/33",
+      "0",
+      "0",
+      "2*sqrt(11)/11"
+    ],
+    [
+      "0",
+      "0",
+      "-2*sqrt(11)/11",
+      "0"
+    ]
+  ],
+  "P0": [
+    [
+      "12/11",
+      "0",
+      "0",
+      "6*sqrt(11)/11"
+    ],
+    [
+      "0",
+      "1",
+      "-6*sqrt(11)/11",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-2*sqrt(11)/121",
+      "0",
+      "0",
+      "-1/11"
+    ]
+  ],
+  "N": [
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-2*sqrt(11)/121",
+      "0",
+      "0",
+      "-1/11"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "Jordan_chain": [
+    [
+      "0",
+      "-6*sqrt(11)"
+    ],
+    [
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1"
+    ]
+  ],
+  "unit_initial_evolution": [
+    "-6*sqrt(4367)/397",
+    "sqrt(397)*physical_p*principal_duration/397",
+    "0",
+    "sqrt(397)/397"
+  ],
+  "dust_control": {
+    "quadratic_density": "C0**3*delta_epsilon(time, space)*Derivative(delta_tau(time, space), time) - C0**2*epsilon0*Derivative(delta_tau(time, space), space)**2/2 + C0**2*epsilon0*Derivative(delta_tau(time, space), time)**2/2",
+    "equations": [
+      "delta_rho_dot+rho0*partial_x(v)=0",
+      "v_dot=0"
+    ],
+    "equal_order_transfer": [
+      [
+        "1",
+        "-physical_p*principal_duration"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "mixed_order_transfer": [
+      [
+        "1",
+        "-principal_duration"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "scope": "Fixed Minkowski and constant C/density irrotational dust control only; velocity needs one extra spatial derivative"
+  },
+  "original_q_from_Z": [
+    [
+      "sqrt(66)*u_dot/(66*H*a**(3/2)*physical_p)",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "sqrt(66)*v_dot/(66*H*a**(3/2)*physical_p)",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "sqrt(66)*r_dot/(66*H*a**(3/2)*physical_p)",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "sqrt(66)*psi_dot/(66*H*a**(3/2)*physical_p)",
+      "sqrt(6)*psi_dot/(a**(3/2)*physical_p**2)",
+      "0",
+      "0"
+    ],
+    [
+      "sqrt(66)*C/(66*H*a**(3/2)*physical_p)",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "sqrt(66)/(66*H*a**(3/2))",
+      "sqrt(6)/(a**(3/2)*physical_p)",
+      "0",
+      "0"
+    ]
+  ],
+  "original_qdot_from_Z": [
+    [
+      "-sqrt(66)*(83160*H**2*u_dot + 3960*H*r**2*u + 231*H*u**5 + 462*H*u**3*v**2 + 3080*H*u**3 + 231*H*u*v**4 + 3080*H*u*v**2 + 18480*H*u - 25200*psi_dot**2*u_dot - 8400*r_dot**2*u_dot - 8400*rho_m*u_dot - 8400*u_dot**3 - 8400*u_dot*v_dot**2)/(1219680*H**2*a**(3/2)*physical_p)",
+      "0",
+      "sqrt(66)*u_dot/(66*H*a**(3/2))",
+      "0"
+    ],
+    [
+      "-sqrt(66)*(83160*H**2*v_dot + 3960*H*r**2*v + 231*H*u**4*v + 462*H*u**2*v**3 + 3080*H*u**2*v + 231*H*v**5 + 3080*H*v**3 + 18480*H*v - 25200*psi_dot**2*v_dot - 8400*r_dot**2*v_dot - 8400*rho_m*v_dot - 8400*u_dot**2*v_dot - 8400*v_dot**3)/(1219680*H**2*a**(3/2)*physical_p)",
+      "0",
+      "sqrt(66)*v_dot/(66*H*a**(3/2))",
+      "0"
+    ],
+    [
+      "-sqrt(66)*(693*H**2*r_dot + 22*H*r**3 + 33*H*r*u**2 + 33*H*r*v**2 + 308*H*r - 210*psi_dot**2*r_dot - 70*r_dot**3 - 70*r_dot*rho_m - 70*r_dot*u_dot**2 - 70*r_dot*v_dot**2)/(10164*H**2*a**(3/2)*physical_p)",
+      "0",
+      "sqrt(66)*r_dot/(66*H*a**(3/2))",
+      "0"
+    ],
+    [
+      "-sqrt(66)*(1485*H**2*psi_dot + 44*H*rho_m - 450*psi_dot**3 - 150*psi_dot*r_dot**2 - 150*psi_dot*rho_m - 150*psi_dot*u_dot**2 - 150*psi_dot*v_dot**2)/(21780*H**2*a**(3/2)*physical_p)",
+      "-sqrt(6)*(105*H*psi_dot + 4*rho_m)/(30*a**(3/2)*physical_p**2)",
+      "sqrt(66)*psi_dot/(66*H*a**(3/2))",
+      "sqrt(6)*psi_dot/(a**(3/2)*physical_p)"
+    ],
+    [
+      "-sqrt(66)*C*(165*H**2 - 44*H*psi_dot - 150*psi_dot**2 - 50*r_dot**2 - 50*rho_m - 50*u_dot**2 - 50*v_dot**2)/(7260*H**2*a**(3/2)*physical_p)",
+      "0",
+      "sqrt(66)*C/(66*H*a**(3/2))",
+      "0"
+    ],
+    [
+      "-5*sqrt(66)*(11*H**2 - 6*psi_dot**2 - 2*r_dot**2 - 2*rho_m - 2*u_dot**2 - 2*v_dot**2)/(1452*H**2*a**(3/2))",
+      "-3*sqrt(6)*H/(2*a**(3/2)*physical_p)",
+      "sqrt(66)*physical_p/(66*H*a**(3/2))",
+      "sqrt(6)/a**(3/2)"
+    ]
+  ],
+  "auxiliaries_from_Z": [
+    [
+      "-sqrt(66)*(33*H**2 - 30*psi_dot**2 - 10*r_dot**2 - 10*rho_m - 10*u_dot**2 - 10*v_dot**2)/(1452*H**2*a**(3/2)*physical_p)",
+      "-2*sqrt(6)*psi_dot/(5*a**(3/2)*physical_p**2)",
+      "sqrt(66)/(66*H*a**(3/2))",
+      "0"
+    ],
+    [
+      "sqrt(66)*(99*H**2 + 2*physical_p**2)/(132*H*a**(5/2)*physical_p**2)",
+      "sqrt(6)*(66*H*psi_dot + 5*physical_p**2 + 225*psi_dot**2)/(5*a**(5/2)*physical_p**3)",
+      "-sqrt(66)/(2*a**(5/2)*physical_p)",
+      "0"
+    ],
+    [
+      "-sqrt(66)*(495*H**3 + 10*H*physical_p**2 + 15*H*rho_m + 6*psi_dot*rho_m)/(330*C**4*H*a**(3/2)*physical_p)",
+      "-sqrt(6)*(1584*H**2*psi_dot + 115*H*physical_p**2 + 5310*H*psi_dot**2 + 4*physical_p**2*psi_dot + 72*psi_dot**3 + 24*psi_dot*r_dot**2 + 72*psi_dot*rho_m + 24*psi_dot*u_dot**2 + 24*psi_dot*v_dot**2)/(60*C**4*a**(3/2)*physical_p**2)",
+      "sqrt(66)*H/(C**4*a**(3/2))",
+      "-sqrt(6)*(physical_p**2 + 18*psi_dot**2)/(6*C**4*a**(3/2)*physical_p)"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "density_from_Z": [
+    [
+      "-sqrt(66)*(495*H**3 + 10*H*physical_p**2 + 15*H*rho_m - 2*psi_dot*rho_m)/(330*H*a**(3/2)*physical_p)",
+      "-sqrt(6)*(1584*H**2*psi_dot + 115*H*physical_p**2 + 5310*H*psi_dot**2 + 4*physical_p**2*psi_dot + 72*psi_dot**3 + 24*psi_dot*r_dot**2 - 24*psi_dot*rho_m + 24*psi_dot*u_dot**2 + 24*psi_dot*v_dot**2)/(60*a**(3/2)*physical_p**2)",
+      "sqrt(66)*H/a**(3/2)",
+      "-sqrt(6)*(physical_p**2 + 18*psi_dot**2)/(6*a**(3/2)*physical_p)"
+    ]
+  ],
+  "dust_tilt_from_Z": [
+    [
+      "sqrt(66)/(66*H*a**(3/2))",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "relative_tilt_from_Z": [
+    [
+      "0",
+      "sqrt(6)/(a**(3/2)*physical_p)",
+      "0",
+      "0"
+    ]
+  ],
+  "graph_rows": [
+    "delta_u",
+    "p_delta_u",
+    "delta_u_dot",
+    "delta_v",
+    "p_delta_v",
+    "delta_v_dot",
+    "delta_r",
+    "p_delta_r",
+    "delta_r_dot",
+    "sqrtK_delta_psi_dot",
+    "sqrtb_delta_Delta",
+    "sqrtc14_w_dot",
+    "sqrtcL_p_w",
+    "density_contrast",
+    "dust_ADM_tilt"
+  ],
+  "graph_map_on_chain": [
+    [
+      "0",
+      "-sqrt(6)*u_dot/(H*a**(3/2)*physical_p)"
+    ],
+    [
+      "0",
+      "-sqrt(6)*u_dot/(H*a**(3/2))"
+    ],
+    [
+      "0",
+      "sqrt(6)*(83160*H**2*u_dot + 3960*H*r**2*u + 231*H*u**5 + 462*H*u**3*v**2 + 3080*H*u**3 + 231*H*u*v**4 + 3080*H*u*v**2 + 18480*H*u - 25200*psi_dot**2*u_dot - 8400*r_dot**2*u_dot - 8400*rho_m*u_dot - 8400*u_dot**3 - 8400*u_dot*v_dot**2)/(18480*H**2*a**(3/2)*physical_p)"
+    ],
+    [
+      "0",
+      "-sqrt(6)*v_dot/(H*a**(3/2)*physical_p)"
+    ],
+    [
+      "0",
+      "-sqrt(6)*v_dot/(H*a**(3/2))"
+    ],
+    [
+      "0",
+      "sqrt(6)*(83160*H**2*v_dot + 3960*H*r**2*v + 231*H*u**4*v + 462*H*u**2*v**3 + 3080*H*u**2*v + 231*H*v**5 + 3080*H*v**3 + 18480*H*v - 25200*psi_dot**2*v_dot - 8400*r_dot**2*v_dot - 8400*rho_m*v_dot - 8400*u_dot**2*v_dot - 8400*v_dot**3)/(18480*H**2*a**(3/2)*physical_p)"
+    ],
+    [
+      "0",
+      "-sqrt(6)*r_dot/(H*a**(3/2)*physical_p)"
+    ],
+    [
+      "0",
+      "-sqrt(6)*r_dot/(H*a**(3/2))"
+    ],
+    [
+      "0",
+      "sqrt(6)*(693*H**2*r_dot + 22*H*r**3 + 33*H*r*u**2 + 33*H*r*v**2 + 308*H*r - 210*psi_dot**2*r_dot - 70*r_dot**3 - 70*r_dot*rho_m - 70*r_dot*u_dot**2 - 70*r_dot*v_dot**2)/(154*H**2*a**(3/2)*physical_p)"
+    ],
+    [
+      "-sqrt(2)*(105*H*psi_dot + 4*rho_m)/(10*a**(3/2)*physical_p**2)",
+      "sqrt(2)*(1815*H**2*psi_dot + 44*H*rho_m - 450*psi_dot**3 - 150*psi_dot*r_dot**2 - 150*psi_dot*rho_m - 150*psi_dot*u_dot**2 - 150*psi_dot*v_dot**2)/(110*H**2*a**(3/2)*physical_p)"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "-3*H/(2*a**(3/2)*physical_p)",
+      "(77*H**2 - 30*psi_dot**2 - 10*r_dot**2 - 10*rho_m - 10*u_dot**2 - 10*v_dot**2)/(22*H**2*a**(3/2))"
+    ],
+    [
+      "sqrt(10)/(5*a**(3/2))",
+      "-sqrt(10)*physical_p/(5*H*a**(3/2))"
+    ],
+    [
+      "-sqrt(6)*(1584*H**2*psi_dot + 115*H*physical_p**2 + 5310*H*psi_dot**2 + 4*physical_p**2*psi_dot + 72*psi_dot**3 + 24*psi_dot*r_dot**2 - 24*psi_dot*rho_m + 24*psi_dot*u_dot**2 + 24*psi_dot*v_dot**2)/(60*a**(3/2)*physical_p**2*rho_m)",
+      "sqrt(6)*(2970*H**3 + 55*H*physical_p**2 - 90*H*psi_dot**2 + 90*H*rho_m - 12*psi_dot*rho_m)/(30*H*a**(3/2)*physical_p*rho_m)"
+    ],
+    [
+      "0",
+      "-sqrt(6)/(H*a**(3/2))"
+    ]
+  ],
+  "graph_leading_powers": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      -2,
+      null,
+      -1,
+      0,
+      0,
+      null
+    ],
+    [
+      -1,
+      0,
+      -1,
+      -1,
+      0,
+      -1,
+      -1,
+      0,
+      -1,
+      -1,
+      null,
+      0,
+      1,
+      1,
+      0
+    ]
+  ],
+  "rescaled_graph_limit": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ],
+    [
+      "sqrt(10)/(5*a**(3/2))",
+      "-sqrt(10)/(5*H*a**(3/2))"
+    ],
+    [
+      "-sqrt(6)*(115*H + 4*psi_dot)/(60*a**(3/2)*rho_m)",
+      "11*sqrt(6)/(6*a**(3/2)*rho_m)"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "frame_density_limit_minor": "-sqrt(15)*(5*H + 4*psi_dot)/(150*H*a**3*rho_m)",
+  "scope": "Leading fast-mode embedding and frozen zero-principal sector only; original full evolution remains distinct"
+}

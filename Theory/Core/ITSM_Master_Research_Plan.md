@@ -30,6 +30,15 @@ routes stay available for development**; what is forbidden is claiming them as
 
 **Corollary:** no observational claim may outrank its **upstream field sector**.
 
+**Deferred-review execution rule (operator decision, 25 September 2026):**
+Apply [the Rule-9 policy](ITSM_RULE9_DEFERRED_REVIEW_POLICY.md) across all
+workstreams. Outstanding reviews are deferred; locally checked results may
+support provisional research when review is the only outstanding requirement
+for the proposed use. Preserve the claim statuses below, record inherited
+review dependencies, and keep substantive scientific holds. Review remains
+required for final gate closure, new canonical Derived promotion and
+publication-readiness claims. This supersedes older review-only work stops.
+
 **Open-options rule (do not over-lock):**
 
 | May do anytime | Must not do |

@@ -1,0 +1,150 @@
+{
+  "Rule9": "NOT_COMPLETED",
+  "addendum": "T3",
+  "canonical_test_complete": false,
+  "checks": [
+    {
+      "expected": "zero",
+      "name": "potential_periodic_x",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "potential_periodic_y",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "potential_periodic_z",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "periodic_source_zero_mean",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "proposed_norm_squared",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "flux_relation_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "flux_relation_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "flux_relation_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "sourced_flux_equation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "periodic_curl_formula",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "not_identically_zero",
+      "name": "universal_algebraic_gradient_rejected_on_T3",
+      "passed": true,
+      "residual": "-10**(3/4)/50"
+    },
+    {
+      "expected": "zero",
+      "name": "periodic_gradient_zero_mean",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "nonlinear_mean_flux_derivative",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "not_identically_zero",
+      "name": "zero_harmonic_flux_not_automatic",
+      "passed": true,
+      "residual": "4/(3*pi)"
+    },
+    {
+      "expected": "zero",
+      "name": "nonzero_mode_hodge_reconstruction_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "nonzero_mode_hodge_reconstruction_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "nonzero_mode_hodge_reconstruction_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "constant_mode_divergence",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "not_identically_zero",
+      "name": "constant_mode_nonzero_mean",
+      "passed": true,
+      "residual": "1"
+    }
+  ],
+  "gate_effect": "NONE",
+  "local_symbolic_validation": "PASS",
+  "physics_pass": false,
+  "results": {
+    "curl": "sqrt(epsilon)*k*sin(x)*sin(y)*cos(x)/(sin(x)**2 + 4*sin(y)**2)**(5/4) - 2*sqrt(epsilon)*k*sin(x)*sin(y)*cos(y)/(sin(x)**2 + 4*sin(y)**2)**(5/4)",
+    "curl_at_registered_point": "-10**(3/4)/50",
+    "geometry": "flat cubic T3 snapshot; 2*pi-periodic dimensionless coordinates; no cosmological solve",
+    "global_solution": "NOT_COMPUTED",
+    "harmonic_boundary": "h0 is fixed by the periodic solution, not a freely fitted uniform acceleration",
+    "harmonic_flux_derivative": "4/(3*pi)",
+    "hodge": "F=curl(H)+h0; h0=spatial_mean(F); F=|grad(phi)|grad(phi)/a0-(Cm/CIR)*grad(Phi_N)",
+    "hodge_assumptions": "flat periodic metric; S_Q=0; source equations satisfied; no prescribed nonperiodic potential winding",
+    "local_spherical_error": "NOT_BOUNDED",
+    "physical_density": "delta_rho=laplacian/(4*pi*G*L^2); rho_bar >= 3*epsilon/(4*pi*G*L^2) ensures rho>=0",
+    "potential": "epsilon*(cos(x) + 2*cos(y))",
+    "source_laplacian": "-epsilon*cos(x) - 2*epsilon*cos(y)",
+    "source_scaling": "physical position r=L*(x,y,z); epsilon has potential units; counterexample k>0",
+    "status": "PERIODIC_ALGEBRAIC_COUNTEREXAMPLE_HARMONIC_FLUX_REQUIRED_PARENT_HOLD"
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "sympy": "1.14.0"
+  },
+  "source_sha256": {
+    "contract": "a4f251ff3d751a60ff4130d61a060f199c825604f877e1aeb5dd5515db8f317c",
+    "executable": "fae1996dcd5579e2b1804fd66a2a3f89ff1db50ab36c6ec76ea6c6fa4a50f4ca",
+    "shared_helper": "fd33c35658841d32b0040ee5c004e7d9457d1caa9e66dad817c0fa7325998f14"
+  },
+  "test": 2
+}

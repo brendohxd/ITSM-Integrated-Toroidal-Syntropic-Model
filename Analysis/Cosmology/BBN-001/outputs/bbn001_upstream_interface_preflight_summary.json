@@ -1,4 +1,194 @@
 {
+  "contract": {
+    "path": {
+      "exists": true,
+      "path": "Analysis/Cosmology/BBN-001/bbn001_action_derived_input_contract.json",
+      "sha256": "b92161b4db0989b8712480c91add05e8c60ec497e6d41c865308efe1a1883768"
+    },
+    "sha256": "b92161b4db0989b8712480c91add05e8c60ec497e6d41c865308efe1a1883768",
+    "status": "FROZEN_ACTION_DERIVED_INPUT_CONTRACT",
+    "version": "2026-09-16.v1"
+  },
+  "contract_field_requirements": {
+    "itsm_closing_inputs": [
+      {
+        "accepted_aliases": [
+          "unit_map",
+          "units",
+          "physical_units"
+        ],
+        "field": "physical_unit_map",
+        "provenance_requirement": "Must be declared by the action/convention record and cover every supplied history and source term.",
+        "required": true,
+        "required_dimensions": "complete_unit_system_and_conversion_map",
+        "semantic": "Mapping from repository/natural variables to the physical units used by the network and reported observables."
+      },
+      {
+        "accepted_aliases": [
+          "eta",
+          "ombh2",
+          "Omega_b_h2",
+          "baryon_to_photon_ratio"
+        ],
+        "field": "baryon_normalization",
+        "provenance_requirement": "Must state whether eta, Omega_b h^2 or another variable is primary and give the non-imported conversion.",
+        "required": true,
+        "required_dimensions": "declared_baryon_abundance_normalization",
+        "semantic": "Action-derived normalization connecting baryon number, photon number and the network's abundance convention."
+      },
+      {
+        "accepted_aliases": [
+          "rho_plenum",
+          "rho_P",
+          "plenum_density",
+          "plenum_fraction"
+        ],
+        "field": "early_plenum_density",
+        "provenance_requirement": "Must be obtained from the action-derived solution and component decomposition; it must not be identified with radiation by assumption.",
+        "required": true,
+        "required_dimensions": "energy_density_or_explicit_dimensionless_fraction_with_map",
+        "semantic": "Early-time plenum contribution kept distinct from radiation, matter and condensate components."
+      },
+      {
+        "accepted_aliases": [
+          "Q_mp",
+          "Q_mp^0",
+          "Q_mu",
+          "transfer_current"
+        ],
+        "field": "matter_plenum_transfer",
+        "provenance_requirement": "Must be action-derived; a scalar placeholder, fitted transfer or DeltaN-matched source is insufficient unless the homogeneous reduction is explicit.",
+        "required": true,
+        "required_dimensions": "four_current_or_declared_homogeneous_component",
+        "semantic": "Matter/plenum exchange current with its index structure, sign convention and conservation placement declared."
+      },
+      {
+        "accepted_aliases": [
+          "Q_syn",
+          "Q_syn^0",
+          "reservoir_current"
+        ],
+        "field": "reservoir_plenum_transfer",
+        "provenance_requirement": "Must be action-derived with its own sign, conservation equation and any exchange closure; it cannot be collapsed into Q_mp.",
+        "required": true,
+        "required_dimensions": "four_current_or_declared_homogeneous_component",
+        "semantic": "Reservoir/plenum exchange current distinct from the matter/plenum current."
+      },
+      {
+        "accepted_aliases": [
+          "S_N",
+          "charge_source",
+          "number_source"
+        ],
+        "field": "condensate_charge_source",
+        "provenance_requirement": "Must follow from the declared interaction and charge convention; it must not be supplied by fitting DeltaN or by a standard-network default.",
+        "required": true,
+        "required_dimensions": "number_source_per_time_or_declared_equivalent",
+        "semantic": "Condensate-number/charge source entering the baryon or charge evolution equation."
+      },
+      {
+        "accepted_aliases": [
+          "G_eff",
+          "Geff",
+          "effective_newton_constant"
+        ],
+        "field": "effective_gravity",
+        "provenance_requirement": "Must be derived from the action and constraint system, including its perturbation-level meaning; an observationally selected coupling is rejected.",
+        "required": true,
+        "required_dimensions": "gravitational_coupling_in_declared_unit_system",
+        "semantic": "Time/background-dependent effective gravitational coupling used by the expansion and perturbation equations."
+      },
+      {
+        "accepted_aliases": [
+          "perturbation_matching",
+          "boltzmann_matching",
+          "metric_sources"
+        ],
+        "field": "perturbation_matching",
+        "provenance_requirement": "Must be derived from the constrained perturbation equations; background-only matching does not close this field.",
+        "required": true,
+        "required_dimensions": "declared_perturbation_source_and_matching_map",
+        "semantic": "Map from the ITSM background/perturbation variables to the metric and source quantities consumed by the BBN/network interface."
+      }
+    ],
+    "network_history": [
+      {
+        "accepted_aliases": [
+          "t"
+        ],
+        "field": "time",
+        "provenance_requirement": "Must be exported by the registered upstream solution or by an explicitly documented action-level map; a dimensionless label is insufficient.",
+        "required": true,
+        "required_dimensions": "time",
+        "semantic": "Physical evolution coordinate with an explicit unit and monotonicity/domain declaration."
+      },
+      {
+        "accepted_aliases": [
+          "T_gamma",
+          "T",
+          "temperature"
+        ],
+        "field": "photon_temperature",
+        "provenance_requirement": "Must be action-derived or connected by a declared thermodynamic map; it must not be inferred from a, rho, mu or H.",
+        "required": true,
+        "required_dimensions": "temperature",
+        "semantic": "Photon temperature history supplied to the nuclear-reaction network, with the thermal regime and physical unit declared."
+      },
+      {
+        "accepted_aliases": [
+          "dTdt",
+          "dT_gamma_dt",
+          "dTgamma_dt"
+        ],
+        "field": "photon_temperature_derivative",
+        "provenance_requirement": "Must be exported or derived by a declared differentiable action-level background map; finite differences without an error and resolution declaration are insufficient.",
+        "required": true,
+        "required_dimensions": "temperature/time",
+        "semantic": "Derivative of the photon-temperature history in the same declared time and unit convention."
+      },
+      {
+        "accepted_aliases": [
+          "Tnu",
+          "T_nu",
+          "T_neutrino"
+        ],
+        "field": "neutrino_temperature",
+        "provenance_requirement": "Must be supplied by the upstream thermodynamic/evolution solution; standard-cosmology substitution must be identified and is not an ITSM closure.",
+        "required": true,
+        "required_dimensions": "temperature",
+        "semantic": "Neutrino temperature history or a declared non-equilibrium replacement required by the selected network."
+      },
+      {
+        "accepted_aliases": [
+          "H",
+          "Hubble"
+        ],
+        "field": "hubble",
+        "provenance_requirement": "Must be action-derived from the physical background equations; a dimensionless H label or imported target expansion is insufficient.",
+        "required": true,
+        "required_dimensions": "inverse_time",
+        "semantic": "Expansion rate in the same physical time convention as the temperature histories."
+      },
+      {
+        "accepted_aliases": [
+          "nb_etaf",
+          "n_b_eta_f",
+          "baryon_density"
+        ],
+        "field": "baryon_density",
+        "provenance_requirement": "Must have a physical-unit and normalization map; an observational baryon target or an unlabelled eta proxy is not an action-derived input.",
+        "required": true,
+        "required_dimensions": "number_density_or_declared_baryon_normalization",
+        "semantic": "Baryon-number history or an explicitly declared eta-compatible normalization mapped into the network variables."
+      }
+    ]
+  },
+  "contract_sha256": "b92161b4db0989b8712480c91add05e8c60ec497e6d41c865308efe1a1883768",
+  "contract_validation": {
+    "checks_passed": 8,
+    "checks_total": 8,
+    "ok": true
+  },
   "decision": {
     "action_derived_itsm_bbn_ready": false,
     "minimum_external_network_history_available": false,
@@ -100,6 +290,152 @@
       "matched_names": []
     }
   },
+  "missing_input_receipt": {
+    "blocking_field_count": 12,
+    "blocking_fields": [
+      {
+        "accepted_aliases": [
+          "T_gamma",
+          "T",
+          "temperature"
+        ],
+        "domain": "network_history",
+        "field": "photon_temperature",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "dTdt",
+          "dT_gamma_dt",
+          "dTgamma_dt"
+        ],
+        "domain": "network_history",
+        "field": "photon_temperature_derivative",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "Tnu",
+          "T_nu",
+          "T_neutrino"
+        ],
+        "domain": "network_history",
+        "field": "neutrino_temperature",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "nb_etaf",
+          "n_b_eta_f",
+          "baryon_density"
+        ],
+        "domain": "network_history",
+        "field": "baryon_density",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "unit_map",
+          "units",
+          "physical_units"
+        ],
+        "domain": "itsm_closing_inputs",
+        "field": "physical_unit_map",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "eta",
+          "ombh2",
+          "Omega_b_h2",
+          "baryon_to_photon_ratio"
+        ],
+        "domain": "itsm_closing_inputs",
+        "field": "baryon_normalization",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "rho_plenum",
+          "rho_P",
+          "plenum_density",
+          "plenum_fraction"
+        ],
+        "domain": "itsm_closing_inputs",
+        "field": "early_plenum_density",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "Q_mp",
+          "Q_mp^0",
+          "Q_mu",
+          "transfer_current"
+        ],
+        "domain": "itsm_closing_inputs",
+        "field": "matter_plenum_transfer",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "Q_syn",
+          "Q_syn^0",
+          "reservoir_current"
+        ],
+        "domain": "itsm_closing_inputs",
+        "field": "reservoir_plenum_transfer",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "S_N",
+          "charge_source",
+          "number_source"
+        ],
+        "domain": "itsm_closing_inputs",
+        "field": "condensate_charge_source",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "G_eff",
+          "Geff",
+          "effective_newton_constant"
+        ],
+        "domain": "itsm_closing_inputs",
+        "field": "effective_gravity",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      },
+      {
+        "accepted_aliases": [
+          "perturbation_matching",
+          "boltzmann_matching",
+          "metric_sources"
+        ],
+        "domain": "itsm_closing_inputs",
+        "field": "perturbation_matching",
+        "matched_names": [],
+        "reason": "No accepted alias appears in the registered export. The value, dimensions and action-level provenance are not inferred."
+      }
+    ],
+    "no_value_inference": true,
+    "presence_check_only": true,
+    "provenance_validation": "NOT_PERFORMED",
+    "record_type": "BBN001_ACTION_DERIVED_MISSING_INPUT_RECEIPT",
+    "status": "BLOCKED_UPSTREAM_BACKGROUND",
+    "value_validation": "NOT_PERFORMED"
+  },
   "network_contract": {
     "baryon_density": {
       "accepted_aliases": [
@@ -195,7 +531,7 @@
     "G_eff(t) with its action-level derivation and perturbation matching contract",
     "independent review and likelihood specification before any publication claim"
   ],
-  "script_sha256": "42ee1e6836ffecf5022797c4a24d0bbaf4d92569cd53bf9ae2dd9b211beca0c2",
+  "script_sha256": "1bf2c61d66036406455f7ad538684308e1453b827eb76834b73d507b3ee50a05",
   "source_files": {
     "background_summary": {
       "exists": true,

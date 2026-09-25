@@ -1,0 +1,95 @@
+{
+  "Rule9": "NOT_COMPLETED",
+  "addendum": "historical_chain",
+  "canonical_test_complete": false,
+  "checks": [
+    {
+      "expected": "zero",
+      "name": "stated_definitions_give_speed",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "printed_middle_gives_acceleration",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "missing_frequency_factor",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "first_length_exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "not_identically_zero",
+      "name": "first_time_exponent_not_acceleration",
+      "passed": true,
+      "residual": "1"
+    },
+    {
+      "expected": "zero",
+      "name": "middle_time_exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "ratio_time_exponent",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "flat_T3_cycle_acceleration",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "not_identically_zero",
+      "name": "nonzero_cycle_circulation",
+      "passed": true,
+      "residual": "1"
+    },
+    {
+      "expected": "zero",
+      "name": "fixed_circulation_sets_speed_not_acceleration",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "gate_effect": "NONE",
+  "local_symbolic_validation": "PASS",
+  "physics_pass": false,
+  "results": {
+    "dimensions_first": "L T^-1 (speed)",
+    "dimensions_middle": "L T^-2 (acceleration)",
+    "first_member": "c/(2*pi)",
+    "independent_Cchi": "NOT_DERIVED",
+    "observational_input": "NONE",
+    "printed_middle": "H*c/(2*pi)",
+    "ratio": "H",
+    "source_kind": "available source.md transcription; original PDF not verified",
+    "source_lines": "57,61,65",
+    "status": "REJECT_HISTORICAL_CIRCULATION_CHAIN_NO_UNIQUE_CCHI",
+    "topology_control": "flat periodic geodesic; nonzero circulation, zero intrinsic spatial acceleration"
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "sympy": "1.14.0"
+  },
+  "source_integrity_verified": true,
+  "source_sha256": {
+    "contract": "0005426a448f2ff783de4e6d49bbff82c392a99c3614fdceceba4fb83bb9cd4e",
+    "executable": "fbbce19627c0c86f6680c5e5a0d358c2b4832bfa86147b5b59c61fdd4bd0b4f5",
+    "shared_helper": "fd33c35658841d32b0040ee5c004e7d9457d1caa9e66dad817c0fa7325998f14",
+    "transcription": "6069e4959dc8038d14de3c6489a7cc87f4d7acc53ed323443a63966e48730aa1"
+  },
+  "test": 3
+}

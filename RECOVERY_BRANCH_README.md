@@ -5,7 +5,7 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
-## Current evidence snapshot (2026-09-16)
+## Current evidence snapshot (2026-09-26)
 
 The branch remains fail-closed. `MAT-001` is `BLOCKED`, `UVIR-003` is
 `IN_PROGRESS`, `K_Q` is `NOT_DERIVED`, and `V` is `NOT_COMPUTED`. The current
@@ -70,6 +70,55 @@ Those controls remain `CONTROL_ONLY`; the physical temperature/unit map,
 early-plenum density, distinct transfer and charge-source currents, and
 action-derived `G_eff` are not exported by the current UVIR branch.
 
+The action-derived BBN interface is now frozen as a machine-readable contract.
+Its validator passes `12/12` bookkeeping checks and confirms an exact
+12-field `BBN001_ACTION_DERIVED_MISSING_INPUT_RECEIPT`; the current upstream
+decision remains `BLOCKED_UPSTREAM_BACKGROUND`, with value and provenance
+validation explicitly not performed. A separate TOP-X4 readiness audit passes
+`10/10` rejection checks and records
+`HOLD_TOPX4_DIRAC_PARITY_ANOMALY_INPUTS_NOT_CLOSED`: the first-order Dirac
+transport control, parity-even static determinant and universal D5 scaffold do
+not derive a curved five-dimensional Dirac Hadamard state, parity-odd phase,
+anomaly cancellation or quantized counterterms. These are local recovery
+receipts only; no physics gate, Rule-9 clearance or publication status changes.
+
+A subsequent scoped curved-Dirac checkpoint passes `13/13`, split into `2/2`
+contract/provenance checks and `11/11` operator/rejection checks. It derives the
+Hamiltonian-form operator, homogeneous spin connection, volume rescaling and
+periodic KK spectrum on the registered metric. This resolves an operator input,
+not the spinor Hadamard state, determinant, parity/anomaly sector, stress tensor
+or physical Hessian; `physics_pass=false` and `gate_effect=NONE` remain binding.
+
+The local Rule-9 handoff surface is
+`Theory/Verification/ITSM_RULE9_TOPX4_BBN_REVIEW_PACKET_2026-09-16.md` with a
+machine-readable hash manifest beside it. It is ready for independent review
+only: all three reviewer slots are `NOT_ASSIGNED`, the review dispatch was not
+performed, and the binding status remains `THREE_WAY_CLEARANCE_NOT_MET`.
+Under the 25 September operator policy this is now recorded as
+`review_status=DEFERRED`, `Rule9_cleared=false`; review backlog alone does not
+stop bounded research, while substantive holds and final promotion/publication
+requirements remain binding.
+
+## Latest programme update (2026-09-25–2026-09-26)
+
+The active ordered programme is now [Master Tests 1–3](Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md), with the conditional R4C1
+candidate used as the approved Test-1 continuation. The [Tests 1–3
+disposition](Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md)
+does not claim three physics passes: the spherical force result is conditional,
+the universal periodic-`T^3` pointwise extension is rejected, and the
+acceleration coefficient remains unidentifiable from the registered
+background/linear data.
+
+R4C1 now records `119/119` first-current, `162/162` full-variation, `48/48`
+interacting-background, `56/56` GR-control and `63/63` coefficient-
+identifiability checks. The S1/S2/S3 continuation adds `71/71`, `56/56` and
+`57/57` bounded scalar-sector checks. These results retain
+`physics_pass=false`; the defective zero branch, restricted regularity domain,
+full coupled well-posedness, physical matching, canonical parent acceptance and
+independent review remain open. Parent statuses remain MAT-001 `BLOCKED`,
+UVIR-003 `IN_PROGRESS`, `K_Q` `NOT_DERIVED`, `V` `NOT_COMPUTED` and Stage 4A
+`CLOSED`.
+
 ## Start here
 
 - **GitHub Pages (recovery site):** `docs/` — custom domain **itsm-cosmology.com**
@@ -87,10 +136,15 @@ action-derived `G_eff` are not exported by the current UVIR branch.
 - Manuscript workflow: `Manuscript/CoreRecovery/README.md`
 - Manuscript changes: `Manuscript/CoreRecovery/CHANGELOG.md`
 - Current bounded execution queue: `Theory/Core/ITSM_Recovery_Execution_Queue.md`
+- Master ITSM test programme: `Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md`
+- Tests 1–3 disposition: `Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md`
+- R4C1 scalar reports: `Theory/Gates/RES-001/`
+- Deferred Rule-9 policy/register: `Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md` and `Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md`
 - Current TOP-X4 route: `Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md`
 - Current TOP-X4 Plan 11 receipts: `Analysis/TOP/TOP-X4/`
 - 14 September external evidence watch: `Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md`
 - BBN-001 control and upstream-interface preflight: `Analysis/Cosmology/BBN-001/`
+- Local Rule-9 TOP-X4/BBN evidence packet: `Theory/Verification/ITSM_RULE9_TOPX4_BBN_REVIEW_PACKET_2026-09-16.md`
 
 ## Historical manuscript package (provenance only)
 

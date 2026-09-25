@@ -1,0 +1,484 @@
+{
+  "schema": "r4c1-scalar-constraints-v1",
+  "validation": "PASS",
+  "passed": 71,
+  "total": 71,
+  "status": "NO_NEGATIVE_KINETIC_MODE_ON_REGISTERED_SAMPLES",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "research_execution": "PROCEED_PROVISIONALLY",
+  "inherited_unreviewed_inputs": [
+    "R9-MT1-VARIATION",
+    "R9-MT1-B1"
+  ],
+  "scope": "Classical finite-k scalar reduction on expanding B1; no gradient/mass/hyperbolicity/EFT certification",
+  "canonical": {
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "K_Q": "NOT_DERIVED",
+    "V": "NOT_COMPUTED",
+    "Stage4A": "CLOSED"
+  },
+  "inputs": {
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa"
+  },
+  "executable_sha256": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+  "artifacts": {
+    "Analysis\\MasterTests\\outputs\\test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis\\MasterTests\\outputs\\test_01_r4c1_scalar_constraints_samples.json": "1d9846b88bcf273f3d5fb35020a6bc7fb1e52c9d4fbae8dd4f2a578aed5edcfc"
+  },
+  "versions": {
+    "python": "3.13.9",
+    "sympy": "1.14.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "samples": {
+    "sample_pairs": 3204,
+    "matrices_evaluated": 6408,
+    "inertia_counts": {
+      "6,0,0": 6408
+    },
+    "min_kinetic_eigenvalue": 0.009292929115976269,
+    "max_auxiliary_condition": 204303.30722233158,
+    "unresolved_eigenvalue_count": 0,
+    "max_relative_eigenvalue_difference": 1.911724753795918e-11,
+    "background_difference": 1.411611475586304e-11
+  },
+  "checks": [
+    {
+      "name": "source_pin_Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md",
+      "passed": true,
+      "value": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+      "criterion": null
+    },
+    {
+      "name": "source_pin_Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md",
+      "passed": true,
+      "value": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+      "criterion": null
+    },
+    {
+      "name": "source_pin_Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+      "criterion": null
+    },
+    {
+      "name": "source_pin_Analysis/MasterTests/test_01_r4c1_full_variation.py",
+      "passed": true,
+      "value": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+      "criterion": null
+    },
+    {
+      "name": "source_pin_Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+      "criterion": null
+    },
+    {
+      "name": "source_pin_Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+      "criterion": null
+    },
+    {
+      "name": "inverse_metric_through_order_two",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "unit_frame_through_order_two",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "reject_missing_unit_boost_normalization",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "frame_background_action",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "no_lapse_velocity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "no_shift_velocity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "fixed_metric_flat_frame_control",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "Delta_background",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "Delta_covariant_first_variation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "reject_omitted_frame_in_Delta",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "force_direct_covariant_expansion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "alignment_direct_covariant_expansion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "projected_gradient_zero_background",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "projected_gradient_zero_linear",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "projected_gradient_quadratic_square",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "cubic_force_has_no_quadratic_term",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "regulator_direct_first_derivative_density",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "canonical_density_u_dot",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "canonical_density_v_dot",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "canonical_density_r_dot",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "potential_direct_expansion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust_direct_expansion",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "dust_multiplier_constraint",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "ADM_EH_quadratic",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "regulator_auxiliary_elimination",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "reject_wrong_regulator_sign",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "auxiliary_equation_alpha",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "auxiliary_equation_shift",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "auxiliary_equation_depsilon",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "auxiliary_equation_z",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "constraint_solutions_vs_Schur",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "reduced_direct_vs_Schur",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "retained_variation_chain_rule_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_5",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_7",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_8",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_9",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_10",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "retained_variation_chain_rule_11",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "kinetic_symmetric",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "potential_symmetric",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "reject_metric_frozen_Hessian_as_reduced",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "auxiliary_determinant_factorization",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "independent_frame_second_difference",
+      "passed": true,
+      "value": {
+        "expected": 0.026213615384615377,
+        "estimates": [
+          0.026213617096426667,
+          0.026213615889059128,
+          0.026213615833547976
+        ],
+        "errors": [
+          1.7118112899394688e-09,
+          5.044437506596111e-10,
+          4.489325994283533e-10
+        ]
+      },
+      "criterion": "finest <1e-5 and decreasing; sub-1e-8 numerical plateau accepted and recorded"
+    },
+    {
+      "name": "kinetic_completed_squares_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "kinetic_determinant_identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "B1_final_square_coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "B1_square_weights_positive",
+      "passed": true,
+      "value": [
+        "1",
+        "1",
+        "1",
+        "3",
+        "1/6",
+        "66"
+      ],
+      "criterion": null
+    },
+    {
+      "name": "independent_background_integration",
+      "passed": true,
+      "value": 1.411611475586304e-11,
+      "criterion": "<1e-7"
+    },
+    {
+      "name": "parameter_identity_MP2",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "parameter_identity_MU2",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "parameter_identity_K",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "parameter_identity_cutoff",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "parameter_identity_l4",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "parameter_identity_l6",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "parameter_identity_lr",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "sampled_chart_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.14221719136506666,
+        "min_density": 0.0025485589665642776
+      },
+      "criterion": null
+    },
+    {
+      "name": "numeric_kinetic_symmetry",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "relative <1e-9"
+    },
+    {
+      "name": "numeric_Schur_agreement",
+      "passed": true,
+      "value": 9.602576958628832e-16,
+      "criterion": "relative <1e-9"
+    },
+    {
+      "name": "independent_background_kinetic_agreement",
+      "passed": true,
+      "value": 1.911724753795918e-11,
+      "criterion": "relative <1e-7"
+    }
+  ],
+  "analytic_kinetic_certificate": {
+    "identity": "qdot.T K qdot = K_Q*(dpsi_t - dtau_t*psi_dot/C)**2 + MU2*(c1 + c4)*(w_t - dtau_t*k/(C*a))**2 + (dr_t - dtau_t*r_dot/C)**2 + (du_t - dtau_t*u_dot/C)**2 + (dv_t - dtau_t*v_dot/C)**2 - 2*H**2*dtau_t**2*(-MP2 + MU2*c1 + MU2*c3)*(2*MP2 + MU2*c1 + 3*MU2*c2 + MU2*c3)/(C**2*MU2*(c1 + c2 + c3))",
+    "final_square_coefficient": "-2*H**2*(-MP2 + MU2*c1 + MU2*c3)*(2*MP2 + MU2*c1 + 3*MU2*c2 + MU2*c3)/(MU2*(c1 + c2 + c3))",
+    "determinant": "-2*H**2*K_Q*(c1 + c4)*(-MP2 + MU2*c1 + MU2*c3)*(2*MP2 + MU2*c1 + 3*MU2*c2 + MU2*c3)/(C**2*(c1 + c2 + c3))",
+    "B1_weights": [
+      "1",
+      "1",
+      "1",
+      "3",
+      "1/6",
+      "66"
+    ],
+    "B1_final_weight": "66*H^2",
+    "sufficient_domain": "K_Q>0; MU2*(c1+c4)>0; M_cos2*(MP2-MU2*(c1+c3))/(MU2*(c1+c2+c3))>0; a,C finite positive; H!=0; k!=0; b!=0",
+    "conclusion": "Exact positive scalar kinetic form at B1 coefficients in the regular chart; not full dynamical stability",
+    "timing": "Analytic strengthening after first registered sample run; thresholds and action unchanged"
+  },
+  "remaining": [
+    "homogeneous k=0 constrained sector",
+    "gradient/mass and characteristic analysis",
+    "time evolution and robustness beyond sampled domain",
+    "all-sector stability and EFT hierarchy",
+    "deferred independent review; not a block on bounded research"
+  ]
+}

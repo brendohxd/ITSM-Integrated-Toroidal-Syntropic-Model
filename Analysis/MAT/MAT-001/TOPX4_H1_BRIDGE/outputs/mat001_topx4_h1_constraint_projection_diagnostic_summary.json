@@ -1,0 +1,253 @@
+{
+  "artifact_receipts": [
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_constraint_projection_diagnostic.py",
+      "sha256": "4ad49980f56a59e372a195dfe2c6a1563e4e0b55b956fae0d9ef44ac3404cecf",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_constraint_projection_diagnostic.py.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_CONSTRAINT_PROJECTION_DIAGNOSTIC_CONTRACT_2026-09-18.md",
+      "sha256": "c98f5effd2a0ef1e2b8653be9a78bfca5aeaa84d784756a0a213eb3a3dbadf18",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_CONSTRAINT_PROJECTION_DIAGNOSTIC_CONTRACT_2026-09-18.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_COMPENSATED_WARPED_CHILD_DESIGN_CONTRACT_2026-09-17.md",
+      "sha256": "a365e24ca44184a4ca7c1f6dc100e7c99f1a5f67cd07493e0f3d91290a79c6b1",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_COMPENSATED_WARPED_CHILD_DESIGN_CONTRACT_2026-09-17.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_compensated_warped_child_design_summary.json",
+      "sha256": "32e42c9f5c14ee44b8c08160ae5b39905de8e00846c046084301546b794c4e3b",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_compensated_warped_child_design_summary.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/TOP-X4/TOPX4_S0_STABILIZATION_CANDIDATE_AUDIT_2026-09-06.md",
+      "sha256": "aeaa63e2b0640da00124d3a607597f7f41acd939479dd419eebcf52461ee2f76",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/TOP-X4/TOPX4_S0_STABILIZATION_CANDIDATE_AUDIT_2026-09-06.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRIDGE_CONTRACT_2026-09-16.md",
+      "sha256": "553499f74e1f90073f0d327aadd3d9d48998aaee08feb3f13c1db8dc92f6bffd",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_BRIDGE_CONTRACT_2026-09-16.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_bridge_readiness_summary.json",
+      "sha256": "f195fc0bb41e43f336cf197379c9f8c98caa2b205106fc72bd31c60b66233d4a",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_bridge_readiness_summary.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json",
+      "sha256": "557e7b4ae7ddfb3402e15aa72eaf829b695446c7681964d3b9870b60ad434950",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json.sha256",
+      "sidecar_required": true
+    }
+  ],
+  "audit_execution_status": "COMPLETE",
+  "checks": [
+    {
+      "missing": [],
+      "name": "all_authority_inputs_exist",
+      "ok": true
+    },
+    {
+      "failures": [],
+      "name": "all_required_sidecars_match_current_bytes",
+      "ok": true
+    },
+    {
+      "name": "prior_x4_s4_handoff_remains_non_promoting",
+      "ok": true
+    },
+    {
+      "det_Haa": "14",
+      "name": "toy_matrix_dimensions_and_symmetry",
+      "ok": true
+    },
+    {
+      "name": "auxiliary_stationarity_is_satisfied",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "schur_reduction_matches_completion_of_square",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "full_and_reduced_quadratic_forms_agree",
+      "ok": true,
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "det_T": "2",
+      "det_U": "1",
+      "name": "reduced_pair_is_covariant_under_invertible_basis_changes",
+      "ok": true
+    },
+    {
+      "name": "selected_mode_has_positive_reduced_kinetic_norm",
+      "norm_squared": "445/14",
+      "ok": true
+    },
+    {
+      "name": "orientation_reversal_changes_signed_source",
+      "ok": true,
+      "reversed_source_numerator": "-29/14",
+      "source_numerator": "29/14"
+    },
+    {
+      "c_phys": [
+        "47/14",
+        "-3/7",
+        "-6/7"
+      ],
+      "naive_c_q": [
+        "3",
+        "-2",
+        "1"
+      ],
+      "name": "auxiliary_source_contribution_is_retained",
+      "ok": true,
+      "retained_delta": [
+        "5/14",
+        "11/7",
+        "-13/7"
+      ]
+    },
+    {
+      "error": "singular auxiliary block",
+      "name": "singular_auxiliary_domain_is_rejected_without_pseudoinverse",
+      "ok": true
+    },
+    {
+      "name": "non_promoting_firewall_remains_closed",
+      "ok": true
+    }
+  ],
+  "checks_passed": 13,
+  "checks_total": 13,
+  "contract_sha256": "c98f5effd2a0ef1e2b8653be9a78bfca5aeaa84d784756a0a213eb3a3dbadf18",
+  "date": "2026-09-18",
+  "diagnostic_results": {
+    "H_phys": [
+      [
+        "107/14",
+        "3/7",
+        "-1/7"
+      ],
+      [
+        "3/7",
+        "51/7",
+        "11/7"
+      ],
+      [
+        "-1/7",
+        "11/7",
+        "43/7"
+      ]
+    ],
+    "auxiliary_dimension": 2,
+    "c_phys": [
+      "47/14",
+      "-3/7",
+      "-6/7"
+    ],
+    "constant_shift": "-61/28",
+    "det_Haa": "14",
+    "dynamic_dimension": 3,
+    "full_reduced_residuals": [
+      "0",
+      "0",
+      "0"
+    ],
+    "mode_norm_squared": "445/14",
+    "physical_hessian_claim": false,
+    "reversed_signed_source_numerator": "-29/14",
+    "selected_mode": [
+      "1",
+      "-1",
+      "2"
+    ],
+    "signed_source_numerator": "29/14",
+    "singular_domain_policy": "REJECT_NO_PSEUDOINVERSE"
+  },
+  "method_source": {
+    "arxiv_version": "1901.03292v2",
+    "title": "Spinning Toroidal Brane Cosmology; A Classical and Quantum Survey",
+    "url": "https://arxiv.org/html/1901.03292v2",
+    "use": "methodological constraint/projection analogy only"
+  },
+  "mutation_tests": {
+    "labels": [
+      "physical_hessian_promoted",
+      "x4_s4_action_frozen",
+      "x4_s2f3_parent_changed",
+      "singular_domain_pseudoinverse",
+      "orientation_sign_erased",
+      "auxiliary_source_dropped"
+    ],
+    "passed": 6,
+    "total": 6
+  },
+  "next_single_gate": {
+    "name": "TOPX4_H1_X4-S4_NEW_PARENT_ACTION_CONTRACT",
+    "scope": "Choose and derive the complete X4-S4 field content, geometry, localized action and global balance before freezing it.",
+    "stop_before": "NO_CHANGE_TO_X4_S2F3"
+  },
+  "schema": "ITSM_MAT001_TOPX4_H1_CONSTRAINT_PROJECTION_DIAGNOSTIC_v1",
+  "scope": "SYNTHETIC_EXACT_RATIONAL_ALGEBRA_ONLY",
+  "script_sha256": "4ad49980f56a59e372a195dfe2c6a1563e4e0b55b956fae0d9ef44ac3404cecf",
+  "status": "PASS_CONSTRAINT_PROJECTION_BOOKKEEPING_HOLD_PHYSICAL_HESSIAN",
+  "status_firewall": {
+    "K_Q_derived": false,
+    "MAT001_pass": false,
+    "V_computed": false,
+    "X4-S4_action_frozen": false,
+    "auxiliary_source_dropped": false,
+    "gate_effect": "NONE",
+    "orientation_sign_erased": false,
+    "parent_action_changed": false,
+    "physical_hessian_constructed": false,
+    "physics_pass": false,
+    "pseudoinverse_accepted": false,
+    "stage4A_reopened": false
+  }
+}

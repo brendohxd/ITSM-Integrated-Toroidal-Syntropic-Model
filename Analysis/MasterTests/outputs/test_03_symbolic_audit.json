@@ -1,0 +1,88 @@
+{
+  "Rule9": "NOT_COMPLETED",
+  "canonical_test_complete": false,
+  "checks": [
+    {
+      "expected": "zero",
+      "name": "reference_scale_action_invariance",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "reference_scale_force_invariance",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "Cchi_changes_by_ell",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "not_identically_zero",
+      "name": "Cchi_not_identified_by_static_action",
+      "passed": true,
+      "residual": "a0/(H*c)"
+    },
+    {
+      "expected": "zero",
+      "name": "measurable_combination_invariant",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "independent_field_chart_invariance",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "curvature_branch_redshift_slope",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "multiplier_divisor_ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero",
+      "name": "constant_comoving_hubble_length_compatibility",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "gate_effect": "NONE",
+  "local_symbolic_validation": "PASS",
+  "physics_pass": false,
+  "results": {
+    "SI_dimensions": "[c H]=[c^2/L]=L T^-2; dimensional equality does not fix a coefficient",
+    "a_dyn": "Cm**3*a0/CIR",
+    "analyst_blind": "false; target values already encountered historically",
+    "calculation_uses_observations": "false",
+    "constant_branch_evolution": "a0(z)/a0(0)=H(z)/H(0), conditional on constant Cchi",
+    "curvature_branch_evolution": "a0(z)/a0(0)=H(z)/H(0)*sqrt((1-q(z))/(1-q(0))); q<1",
+    "curvature_branch_log_slope": "-dq_dec_dN/(2*(1 - q_dec)) - q_dec - 1",
+    "fixed_comoving_length": "L_phys=a*L_com implies a0 proportional to a^-1 if a0 proportional to c^2/L_phys",
+    "fixed_physical_length": "constant a0 under the c^2/L_phys postulate",
+    "frozen_branches": "1; 2*pi; 1/(2*pi); sqrt(1-q_dec)/(2*pi); action-derived result absent",
+    "hubble_length": "L_phys=c/H compatible with constant L_com only where q_dec=0",
+    "invariant_C_dyn": "Cm**3*a0/(CIR*H*c)",
+    "status": "C_CHI_UNIDENTIFIABLE_WITHOUT_REFERENCE_NORMALIZATION_AND_PARENT_MATCHING",
+    "unique_Cchi": "NOT_DERIVED"
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "sympy": "1.14.0"
+  },
+  "source_sha256": {
+    "contract": "922db95c8cd497de40366216d27d246e071d74e4276eee00c441261b7b7aa091",
+    "executable": "fd33c35658841d32b0040ee5c004e7d9457d1caa9e66dad817c0fa7325998f14"
+  },
+  "test": 3
+}

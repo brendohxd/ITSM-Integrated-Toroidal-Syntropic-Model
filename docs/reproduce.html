@@ -64,7 +64,9 @@ git checkout recovery/v12-core-architecture
 # Read current authority and status before interpreting outputs
 # README.md
 # active_research.md
-# Theory/Core/ITSM_Master_Research_Plan.md</code></pre>
+# Theory/Core/ITSM_Master_Research_Plan.md
+# Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md
+# Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md</code></pre>
       </div>
     </section>
 
@@ -76,7 +78,7 @@ git checkout recovery/v12-core-architecture
       <div class="grid">
         <article class="card">
           <h3>TOP-X4 / X4-S2F3 — Plan 11</h3>
-          <p>Reproduces the bounded static and finite-charge checks, the preserved 11/12 dynamic WKB failure, the separate 18/18 exact scalar/first-order Dirac transport pass, the 20/20 D5 scaffold audit, the 25/25 fixed-metric scalar-matrix pass, the 22/22 local scalar-matrix Hadamard-parametrix pass through <code>U_2</code>, the 8/8 finite-order Route-B adiabatic-symbol diagnostic including full rank-three scalar transport, the registered 10/10 Route-A theorem-backed scalar-state construction, and the 8/8 physical-Hessian readiness audit. All retain <code>physics_pass=false</code>; the result is not independent peer review or a numerical physics pass, and Dirac/gravity/parity completion, normalization, determinant, stress and the physical Hessian remain open.</p>
+          <p>Reproduces the bounded static and finite-charge checks, the preserved 11/12 dynamic WKB failure, the separate 18/18 exact scalar/first-order Dirac transport pass, the 20/20 D5 scaffold audit, the 25/25 fixed-metric scalar-matrix pass, the 22/22 local scalar-matrix Hadamard-parametrix pass through <code>U_2</code>, the 8/8 finite-order Route-B adiabatic-symbol diagnostic, the registered 10/10 Route-A theorem-backed scalar-state construction, the scoped 13/13 curved-Dirac operator checkpoint and the 8/8 physical-Hessian readiness audit. All retain <code>physics_pass=false</code>; the result is not independent peer review or a numerical physics pass, and Dirac/gravity/parity completion, normalization, determinant, stress and the physical Hessian remain open.</p>
           <pre><code>python Analysis/TOP/TOP-X4/topx4_s2f3_static_determinant_checkpoint.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_entry_gate.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_operator_checkpoint.py
@@ -89,6 +91,18 @@ python Analysis/TOP/TOP-X4/topx4_s2f3_global_state_construction_preflight.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_adiabatic_symbol_diagnostic.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_global_state_construction.py
 python Analysis/TOP/TOP-X4/topx4_s2f3_physical_hessian_readiness.py</code></pre>
+        </article>
+        <article class="card">
+          <h3>Master Tests 1–3 / R4C1 — Conditional Action and Stability Diagnostics</h3>
+          <p>Runs the current bounded continuation under the frozen conditional R4C1 action. Tests 1–3 remain incomplete: the spherical force law is conditional, the universal periodic-<code>T^3</code> pointwise law is rejected, and no unique blind <code>C<sub>χ</sub></code> is selected. The S1/S2/S3 receipts are scoped constraint, propagation and zero-branch diagnostics, not full stability or well-posedness proofs.</p>
+          <pre><code>python -B Analysis/MasterTests/tests_01_03_symbolic_audit.py --test 1
+python -B Analysis/MasterTests/test_01_r4c1_full_variation.py
+python -B Analysis/MasterTests/test_01_r4c1_interacting_background.py
+python -B Analysis/MasterTests/test_01_r4c1_gr_limit.py
+python -B Analysis/MasterTests/test_03_r4c1_coefficient_identifiability.py
+python -B Analysis/MasterTests/test_01_r4c1_scalar_constraints.py
+python -B Analysis/MasterTests/test_01_r4c1_scalar_propagation.py
+python -B Analysis/MasterTests/test_01_r4c1_zero_branch.py</code></pre>
         </article>
         <article class="card">
           <h3>TOP-001 / CBR-002 — Moduli Control</h3>
@@ -107,8 +121,9 @@ python Analysis/TOP/TOP-X4/topx4_s2f3_physical_hessian_readiness.py</code></pre>
         </article>
         <article class="card">
           <h3>BBN-001 — Table/CAMB Control</h3>
-          <p>Checks all five bundled BBN tables, the PRIMAT 2024 <code>Ombh2</code>/<code>ombh2</code> schema compatibility rule, interpolation domains and conventions, a <code>DeltaN</code> response sanity check, and the CAMB helium bridge. A separate fail-closed preflight audits the UVIR-003 export and is expected to report <code>BLOCKED_UPSTREAM_BACKGROUND</code> until the physical temperature/plenum interface exists. BBN remains <code>CONTROL_ONLY</code>.</p>
+          <p>Checks all five bundled BBN tables, the PRIMAT 2024 <code>Ombh2</code>/<code>ombh2</code> schema compatibility rule, interpolation domains and conventions, a <code>DeltaN</code> response sanity check, and the CAMB helium bridge. The action-derived interface contract validator checks its 12-field vocabulary, while a separate fail-closed preflight audits the UVIR-003 export and reports <code>BLOCKED_UPSTREAM_BACKGROUND</code> until the physical temperature/plenum interface exists. BBN remains <code>CONTROL_ONLY</code>.</p>
           <pre><code>python Analysis/Cosmology/BBN-001/bbn001_control.py
+python Analysis/Cosmology/BBN-001/bbn001_action_derived_input_contract.py
 python Analysis/Cosmology/BBN-001/bbn001_upstream_interface_preflight.py
 Push-Location CAMB_ITSM_Solver
 python -m unittest camb.tests.bbn_test

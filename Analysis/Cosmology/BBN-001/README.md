@@ -31,6 +31,28 @@ The JSON receipt and its SHA-256 sidecar are generated under `outputs/`.
 Repeated runs must be byte-identical in the pinned runtime. A successful run
 remains `CONTROL_ONLY`, `physics_pass=false`, and `gate_effect=NONE`.
 
+## Action-derived input contract
+
+The machine-readable prerequisite contract is
+`bbn001_action_derived_input_contract.json`. It separates the external
+network history (`T_gamma`, `dT_gamma/dt`, `T_nu`, `H` and baryon normalization)
+from the ITSM closing inputs (physical units, plenum density, distinct
+`Q_mp^mu`/`Q_syn^mu`, `S_N`, `G_eff` and perturbation matching). Field-name
+presence is not value, dimensional or provenance validation, and the contract
+does not supply any missing value.
+
+Validate the frozen contract and the current preflight receipt with:
+
+```powershell
+python Analysis/Cosmology/BBN-001/bbn001_action_derived_input_contract.py
+```
+
+The current expected result is
+`CONTRACT_VALIDATED_UPSTREAM_PHYSICS_BLOCKED` with `12/12` checks. The
+validator confirms the contract hash, the preflight sidecar and the exact
+missing-input receipt while retaining `physics_pass=false`,
+`gate_effect=NONE` and `NOT_A_PHYSICS_CLAIM`.
+
 ## External network control
 
 `bbn001_alteralterbbn_control.py` is an optional adapter for an externally
@@ -76,9 +98,14 @@ python Analysis/Cosmology/BBN-001/bbn001_upstream_interface_preflight.py
 ```
 
 The current expected result is `BLOCKED_UPSTREAM_BACKGROUND` (exit code `2`).
-The preflight finds the dimensionless `t`/`H` trajectory but no physical
-photon-temperature history, unit map, early-plenum density, distinct transfer
-currents, condensate-number source or `G_eff`. It therefore refuses to infer
-any missing quantity. Its JSON receipt and SHA-256 sidecar are written under
-`outputs/`; the result remains `physics_pass=false` and
-`gate_effect=NONE`.
+The preflight consumes the frozen action-derived contract and finds the
+dimensionless `t`/`H` trajectory but no physical photon-temperature history,
+photon-temperature derivative, neutrino temperature, baryon history, unit
+map, baryon normalization, early-plenum density, distinct transfer currents,
+condensate-number source, action-derived `G_eff` or perturbation match. It
+therefore refuses to infer any missing quantity. Its JSON contains the
+`BBN001_ACTION_DERIVED_MISSING_INPUT_RECEIPT` with 12 blocking fields and
+matching aliases, while separately recording that value and provenance
+validation were not performed. The JSON receipt and SHA-256 sidecar are
+written under `outputs/`; the result remains `physics_pass=false`,
+`gate_effect=NONE` and `NOT_A_PHYSICS_CLAIM`.

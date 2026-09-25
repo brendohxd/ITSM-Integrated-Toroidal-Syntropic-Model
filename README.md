@@ -27,23 +27,49 @@ The programme strictly adheres to the fail-closed Iron Rule:
 
 Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
 
-## 🧭 Current Core Status (recovery snapshot — 2026-09-16)
+## 🧭 Current Core Status (recovery snapshot — 2026-09-26)
 
 | Gate / Sector | Status | Physical Result |
 |---|---|---|
 | **Core identity** | `CANONICAL; IDENTITY HELD` | Active finite-density condensate, topology, preferred frame and force/reservoir sectors remain distinct; identity-first governance is unchanged. |
 | **MAT-001** | **`BLOCKED`** | M2/M3-U1 fixed-background controls are bounded reductions only; `K_Q` remains `NOT_DERIVED` and `V` remains `NOT_COMPUTED`. |
 | **UVIR-003** | **`IN_PROGRESS`** | Tier-1 closure remains downstream of the MAT matching blocker; no physical cutoff or complete constrained amplitude is promoted. |
-| **TOP-X4 / KK-001** | **`BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD`** | The branchwise WKB checkpoint remains failed 11/12, exact finite-order transport passed 18/18, the D5 scaffold passed 20/20, the fixed-metric scalar/`chi` operator passed 25/25, and the local scalar-matrix Hadamard-parametrix checkpoint passed 22/22 through `U_2`. The finite-order Route-B diagnostic passed 8/8 with full rank-three transport, and the registered Route-A scalar-state construction passed 10/10 theorem-backed checks. `physics_pass=false`; Dirac/gravity/ghost, parity, determinant, stress, physical Hessian and Rule-9 remain incomplete. |
+| **Master Tests 1–3 / R4C1** | **`PROVISIONAL CONTINUATION; TESTS NOT COMPLETE`** | The conditional R4C1 candidate now has bounded action, variation, background, GR-control, coefficient, scalar-constraint, propagation and zero-branch receipts. Substantive stability, well-posedness, physical matching and canonical parent acceptance remain open. |
+| **TOP-X4 / KK-001** | **`BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD`** | The branchwise WKB checkpoint remains failed 11/12, exact finite-order transport passed 18/18, the D5 scaffold passed 20/20, the fixed-metric scalar/`chi` operator passed 25/25, and the local scalar-matrix Hadamard-parametrix checkpoint passed 22/22 through `U_2`. The finite-order Route-B diagnostic passed 8/8, the Route-A scalar-state construction passed 10/10 theorem-backed checks, and the scoped curved-Dirac operator passed 13/13 with contract and operator checks separated. `physics_pass=false`; the spinor state, gravity/ghost, parity, determinant, stress, physical Hessian and Rule-9 remain incomplete. |
+| **BBN-001** | **`CONTROL_ONLY / BLOCKED_UPSTREAM_BACKGROUND`** | Table/schema/CAMB plumbing and the action-derived interface contract are checked, but the physical temperature/unit map, early plenum, `Q^\mu`, `S_N` and action-derived `G_eff` are not exported by UVIR-003. |
 | **TOP-001 / CBR-002** | **`HOLD`** | P2/CBR-001 has a portable local-repair candidate and a narrowed instantaneous-closure result; independent-role, sensitivity and noncubic checks remain required. |
 | **RES-001** | **`OPEN_SCAFFOLD_ONLY`** | The corrected script is a single-mode GKSL steady-state control; the advertised two-bath detailed-balance/Spohn derivation, microscopic reservoir and `Q^\mu` remain absent. |
 | **VOR-001** | **`OPEN_SCAFFOLD_ONLY`** | Phase/winding normalization is a frozen calculation specification only; no physical resonance or gate closure follows. |
 | **Papers / publication** | **`PUBLICATION HOLD`** | Rebuilt P2 materials are retained as a bounded negative-result candidate, not as publication clearance. |
-| **Rule 9 evidence** | **`THREE-WAY CLEARANCE NOT MET`** | The scalar-matrix checkpoint has no completed independent reviewer set. No three-way consensus is claimed. |
+| **Rule 9 evidence** | **`DEFERRED; Rule9_cleared=false`** | Outstanding review is intentionally deferred. Pending review alone no longer stops bounded provisional research; substantive physics holds still do, and final canonical promotion/publication readiness still require review. |
 
 Script `PASS_*` labels in this table describe only their bounded executable
 scope. They do not constitute a physics-gate pass, downstream promotion or
 publication decision.
+
+## 🧪 Latest bounded findings (2026-09-25–2026-09-26)
+
+- [Master Tests 1–3 disposition](Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md)
+  records conditional action/source identities, the periodic-`T^3` curl
+  counterexample and harmonic-flux correction, and the absence of a unique
+  blind `C_chi`; the programme remains incomplete.
+- [R4C1 scalar constraint report](Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md)
+  supports a positive classical scalar kinetic form only on its registered
+  regular chart.
+- [R4C1 scalar propagation report](Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md)
+  corrects the principal-symbol diagnostic and retains a defective zero branch
+  plus open causality/EFT and well-posedness questions.
+- [R4C1 zero-branch report](Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md)
+  distinguishes the rejected equal-order bound from a restricted
+  derivative-weighted graph estimate; it does not prove the full coupled IVP.
+- [TOP-X4 H1/X4-S4 route record](Theory/Gates/TOP-X4/README.md) records the
+  `21/21` candidate-action contract, rejection of the registered zero-charge
+  benchmark, and the `13/13` curved-route selection contract. No X4-S4 parent,
+  finite-charge background, MAT matching or downstream promotion follows.
+- [Deferred Rule-9 policy](Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md)
+  and [register](Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md)
+  separate review scheduling from scientific closure and carry unresolved
+  dependencies forward.
 
 For the full dependency chain and current blockers, use the
 [Recovery Branch Guide](RECOVERY_BRANCH_README.md) and
@@ -143,6 +169,10 @@ authoritative path.
 - [Recovery Branch Guide](RECOVERY_BRANCH_README.md)
 - [Active Research & Gate Dashboard](active_research.md)
 - [Current Recovery Changelog](CHANGELOG.md)
+- [Master ITSM Test Programme](Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md)
+- [Tests 1–3 Disposition](Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md)
+- [Deferred Rule-9 Review Register](Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md)
+- [ITSM Context Optimizer](docs/ITSM_CONTEXT_OPTIMIZER.md)
 - [14 September External Evidence Watch](Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md)
 - [Paper PDF Naming Registry](papers/PAPERS_NAMING.md)
 - [TOP-X4 / KK-001 Route Plan](Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md)

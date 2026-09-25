@@ -83,26 +83,28 @@ No fixed redshift law for $Q_{\rm syn}^{\nu}$ is adopted in this alpha.  Its
 background and perturbation dependence must follow from the reservoir model,
 and local decoupling must be tested rather than asserted from $\Theta\to0$.
 
-\subsection{Two-bath GKSL thermodynamic control}
+\subsection{Phenomenological GKSL steady-state control}
 
-RES-001 presently supplies a finite-dimensional thermodynamic \emph{control},
-not a microscopic derivation of the ITSM reservoir.  A harmonic oscillator with
-$H=\omega\hat a^\dagger\hat a$ is coupled to two declared thermal baths,
+RES-001 presently supplies a finite-dimensional phenomenological
+\emph{steady-state control}, not a microscopic derivation of the ITSM
+reservoir.  The current implementation uses a single truncated Kerr mode,
+$H=\omega\hat n+(U_K/2)\hat n(\hat n-1)$, with generator
 \begin{equation}
- \dot\rho=-i[H,\rho]+\sum_{r\in\{c,h\}}\left[
- \gamma_r(\bar n_r+1)\mathcal D[\hat a]\rho+
- \gamma_r\bar n_r\mathcal D[\hat a^\dagger]\rho\right],
+ \dot\rho=-i[H,\rho]+\gamma_\downarrow\mathcal D[\hat a]\rho
+ +(\gamma_\uparrow+\gamma_{\rm syn})
+ \mathcal D[\hat a^\dagger]\rho,
  \label{eq:lindblad-master}
 \end{equation}
-where $\bar n_r=(e^{\omega/T_r}-1)^{-1}$ and each paired rate satisfies local
-detailed balance.  The spectral densities, bath temperatures and oscillator
-truncation are declared comparator inputs; they do not follow from an ITSM
-action.  The primary cutoff-$12$ run has a positive steady-state density
-matrix, zero energy-balance residual at reported precision, and a sampled
-steady-state entropy-production rate $0.02551$ in units $\hbar=k_B=1$.
-Thirty-two deterministic full-rank test states give nonnegative sampled Spohn
-production.  This is a numerical consistency check, not a proof over all
-states.
+where the ordinary up/down rates use a chosen spectral function at one
+frequency, and $\gamma_{\rm syn}$ is an inserted unpaired pump.  The nominal
+syntropic temperature is not used in this generator.  This does not establish
+a second thermal bath or frequency-resolved detailed balance for the Kerr
+spectrum.  The current code checks a numerical stationary state's trace,
+Hermiticity, positivity and Liouvillian residual; it does not evaluate the
+Spohn functional.  Earlier working-draft claims of a verified two-bath
+entropy-production run are not supported by this implementation and are
+withdrawn from the current description.  The frozen historical artifacts
+remain unchanged.
 
 Neither a covariant plenum--matter action nor a mapping from this oscillator
 heat current to $Q_{\rm syn}^{\nu}$ is available.  Consequently the result

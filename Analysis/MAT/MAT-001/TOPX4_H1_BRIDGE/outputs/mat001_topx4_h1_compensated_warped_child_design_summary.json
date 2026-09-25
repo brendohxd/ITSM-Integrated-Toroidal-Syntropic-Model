@@ -1,0 +1,181 @@
+{
+  "artifact_receipts": [
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_compensated_warped_child_design.py",
+      "sha256": "1a6fba21434489e5bf52e88fbca5526aff450f443ad35b40511953cc8c939354",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/mat001_topx4_h1_compensated_warped_child_design.py.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_COMPENSATED_WARPED_CHILD_DESIGN_CONTRACT_2026-09-17.md",
+      "sha256": "a365e24ca44184a4ca7c1f6dc100e7c99f1a5f67cd07493e0f3d91290a79c6b1",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/MAT-001/MAT-001_TOPX4_H1_COMPENSATED_WARPED_CHILD_DESIGN_CONTRACT_2026-09-17.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_brane_child_freeze_decision_summary.json",
+      "sha256": "35a088b0b08a027d84492cad627be6b5c9f33c206462f78f4b0fd6ce8ba3ce93",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_brane_child_freeze_decision_summary.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/TOP-X4/TOPX4_S0_STABILIZATION_CANDIDATE_AUDIT_2026-09-06.md",
+      "sha256": "aeaa63e2b0640da00124d3a607597f7f41acd939479dd419eebcf52461ee2f76",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/TOP-X4/TOPX4_S0_STABILIZATION_CANDIDATE_AUDIT_2026-09-06.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/TOP-X4/TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md",
+      "sha256": "37205506697e1f70f12b9ea3d8b093ccbccf11bbf0c19b680d00a43f28c6f945",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/TOP-X4/TOPX4_S2F3_PARENT_FREEZE_2026-09-06.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Theory/Gates/TOP-X4/TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md",
+      "sha256": "f48a82870cd1a73f74128ffc8636a93f49ff4d8d01989f68e8f3d9aa06b8891d",
+      "sidecar_matches": true,
+      "sidecar_path": "Theory/Gates/TOP-X4/TOPX4_A1_ACTION_SELECTION_LEDGER_2026-09-06.md.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_matter_architecture_comparison_summary.json",
+      "sha256": "9119fd4a26d102a463acaef324adb1b8c4c5a1850c653fe03727d5fbe97eefca",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_matter_architecture_comparison_summary.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_bridge_readiness_summary.json",
+      "sha256": "f195fc0bb41e43f336cf197379c9f8c98caa2b205106fc72bd31c60b66233d4a",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/MAT/MAT-001/TOPX4_H1_BRIDGE/outputs/mat001_topx4_h1_bridge_readiness_summary.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_a2a3_reduction_radion_summary.json",
+      "sha256": "d5a82f23204b5e02d046a8da43ce549dec53acebe9e0770c6f4c7cdabefddc5a",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/TOP/TOP-X4/outputs/topx4_a2a3_reduction_radion_summary.json.sha256",
+      "sidecar_required": true
+    },
+    {
+      "exists": true,
+      "path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json",
+      "sha256": "557e7b4ae7ddfb3402e15aa72eaf829b695446c7681964d3b9870b60ad434950",
+      "sidecar_matches": true,
+      "sidecar_path": "Analysis/TOP/TOP-X4/outputs/topx4_s2f3_physical_hessian_readiness_summary.json.sha256",
+      "sidecar_required": true
+    }
+  ],
+  "audit_execution_status": "COMPLETE",
+  "checks": [
+    {
+      "missing": [],
+      "name": "all_authority_and_input_files_exist",
+      "ok": true
+    },
+    {
+      "failures": [],
+      "name": "all_required_sidecars_match_current_bytes",
+      "ok": true
+    },
+    {
+      "name": "minimal_child_rejection_is_binding",
+      "ok": true
+    },
+    {
+      "name": "pre_registered_x4_s4_route_is_deferred_new_parent",
+      "ok": true
+    },
+    {
+      "name": "smooth_s1_flux_route_has_no_distinct_minimal_repair",
+      "ok": true
+    },
+    {
+      "name": "frozen_parent_has_no_hidden_brane_or_portal",
+      "ok": true
+    },
+    {
+      "name": "new_parent_boundary_is_explicit",
+      "ok": true
+    },
+    {
+      "name": "required_x4_s4_design_inputs_are_listed",
+      "ok": true
+    },
+    {
+      "name": "route_screen_does_not_select_an_unregistered_compensator",
+      "ok": true
+    },
+    {
+      "name": "downstream_physics_and_gate_holds_remain_binding",
+      "ok": true
+    }
+  ],
+  "checks_passed": 10,
+  "checks_total": 10,
+  "contract_sha256": "a365e24ca44184a4ca7c1f6dc100e7c99f1a5f67cd07493e0f3d91290a79c6b1",
+  "date": "2026-09-17",
+  "mutation_tests": {
+    "labels": [
+      "child_action_frozen",
+      "x4_s4_action_frozen_without_contract",
+      "compensator_selected_without_field_content",
+      "warp_profile_selected_without_equations",
+      "x4_s2f3_parent_changed",
+      "observational_target_selected_route",
+      "route_handoff_promoted_to_physics"
+    ],
+    "passed": 7,
+    "total": 7
+  },
+  "next_single_gate": {
+    "name": "TOPX4_H1_X4-S4_NEW_PARENT_ACTION_CONTRACT",
+    "scope": "Choose and derive a complete X4-S4 field content, geometry, localized action and global balance before freezing it.",
+    "stop_before": "NO_CHANGE_TO_X4_S2F3"
+  },
+  "route": {
+    "X4-S4_action_freeze": "NOT_AUTHORIZED",
+    "brane_route": "OPEN_ONLY_AS_X4-S4_NEW_PARENT_DESIGN",
+    "child_action_freeze": "NOT_AUTHORIZED",
+    "minimal_unwarped_single_tension_child": "REJECTED",
+    "parent_action_changed": false,
+    "selected_from_observational_target": false,
+    "smooth_S1_flux_repair": "NO_DISTINCT_MINIMAL_ROUTE_REGISTERED"
+  },
+  "schema": "ITSM_MAT001_TOPX4_H1_COMPENSATED_WARPED_CHILD_DESIGN_v1",
+  "scientific_boundary": "The minimal unwarped brane child is rejected. The registered X4-S4 orbifold/brane family is only a separate new-parent design route; no action or compensator is selected.",
+  "script_sha256": "1a6fba21434489e5bf52e88fbca5526aff450f443ad35b40511953cc8c939354",
+  "status": "ROUTE_HANDOFF_X4_S4_NEW_PARENT_DESIGN_ONLY",
+  "status_firewall": {
+    "K_Q_derived": false,
+    "MAT001_pass": false,
+    "V_computed": false,
+    "X4-S4_action_frozen": false,
+    "child_action_frozen": false,
+    "compensator_selected": false,
+    "gate_effect": "NONE",
+    "global_sum_rule_derived": false,
+    "localized_counterterms_normalized": false,
+    "parent_action_changed": false,
+    "physical_hessian_constructed": false,
+    "physics_pass": false,
+    "rule9_cleared": false,
+    "stage4A_reopened": false,
+    "warp_profile_selected": false
+  }
+}

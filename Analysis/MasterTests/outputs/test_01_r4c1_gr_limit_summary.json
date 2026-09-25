@@ -1,0 +1,495 @@
+{
+  "candidate": "R4C1-v1",
+  "control": "R4C1-G1",
+  "validation": "PASS",
+  "passed": 56,
+  "total": 56,
+  "checks": [
+    {
+      "name": "static_frame_time_equation",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_frame_spatial_equation_1",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_frame_spatial_stress_linear_1",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_frame_spatial_equation_2",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_frame_spatial_stress_linear_2",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_frame_spatial_equation_3",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_frame_spatial_stress_linear_3",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_frame_energy_linear",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "Einstein_00_linear",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "Einstein_transverse_linear",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "conformal_spatial_curvature",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_EH_boundary_reduction",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_frame_action_reduction",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_lapse_matches_full_tensor",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "static_spatial_matches_full_tensor",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "transverse_exact_unit_constraint",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "transverse_action_from_covariant_frame_and_EH",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "physical_transverse_kinetic",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "physical_transverse_gradient",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "derived_transverse_speed_matches_normalized_literature",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "B1_static_over_bare",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "B1_cosmological_over_bare",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "B1_cosmological_over_static",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "zero_exchange_equals_GR_rejected",
+      "passed": true,
+      "residual": "-1/6",
+      "expected": "nonzero_exact"
+    },
+    {
+      "name": "luminal_tensor_still_not_GR",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "couplings_approach_common_GR_value",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "bare_ci_normalization_error_rejected",
+      "passed": true,
+      "residual": "-5/69",
+      "expected": "nonzero_exact"
+    },
+    {
+      "name": "physical_mode_K_eta",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "physical_mode_speed_finite",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "physical_mode_endpoint_rank_drop",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "canonical_frame_inverse_unbounded",
+      "passed": true,
+      "value": "oo",
+      "criterion": "+infinity"
+    },
+    {
+      "name": "canonical_force_cubic_nonuniform",
+      "passed": true,
+      "value": "2*sqrt(3)/(63*sqrt(eta))",
+      "criterion": "diverges as eta^(-1/2)"
+    },
+    {
+      "name": "canonical_force_regulator_ratio",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "canonical_matter_coupling_decouples",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "charge_energy_bound_square_-1",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "charge_energy_bound_square_1",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "family_1.0_integrated",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 completed"
+    },
+    {
+      "name": "family_1.0_constraints",
+      "passed": true,
+      "value": {
+        "Friedmann": 3.408907498308431e-12,
+        "charge_drift": 1.8791856959410325e-11,
+        "dust_drift": 2.8703150967146485e-12
+      },
+      "criterion": "<1e-8 each"
+    },
+    {
+      "name": "family_1.0_charge_value",
+      "passed": true,
+      "value": 1.0,
+      "criterion": "equals eta, not fixed nonzero charge"
+    },
+    {
+      "name": "family_0.25_integrated",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 completed"
+    },
+    {
+      "name": "family_0.25_constraints",
+      "passed": true,
+      "value": {
+        "Friedmann": 6.2585852375341995e-12,
+        "charge_drift": 1.2653600389711528e-11,
+        "dust_drift": 2.3518409442147004e-12
+      },
+      "criterion": "<1e-8 each"
+    },
+    {
+      "name": "family_0.25_charge_value",
+      "passed": true,
+      "value": 0.25,
+      "criterion": "equals eta, not fixed nonzero charge"
+    },
+    {
+      "name": "family_0.0625_integrated",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 completed"
+    },
+    {
+      "name": "family_0.0625_constraints",
+      "passed": true,
+      "value": {
+        "Friedmann": 2.7525868668121914e-12,
+        "charge_drift": 1.6797743751517658e-12,
+        "dust_drift": 1.1536605004636158e-12
+      },
+      "criterion": "<1e-8 each"
+    },
+    {
+      "name": "family_0.0625_charge_value",
+      "passed": true,
+      "value": 0.0625,
+      "criterion": "equals eta, not fixed nonzero charge"
+    },
+    {
+      "name": "family_0.015625_integrated",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 completed"
+    },
+    {
+      "name": "family_0.015625_constraints",
+      "passed": true,
+      "value": {
+        "Friedmann": 5.846471766957949e-13,
+        "charge_drift": 2.7990457174276173e-13,
+        "dust_drift": 1.954186812369585e-12
+      },
+      "criterion": "<1e-8 each"
+    },
+    {
+      "name": "family_0.015625_charge_value",
+      "passed": true,
+      "value": 0.015625,
+      "criterion": "equals eta, not fixed nonzero charge"
+    },
+    {
+      "name": "family_0.00390625_integrated",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 completed"
+    },
+    {
+      "name": "family_0.00390625_constraints",
+      "passed": true,
+      "value": {
+        "Friedmann": 6.34430494511929e-13,
+        "charge_drift": 3.9735575940724743e-14,
+        "dust_drift": 2.2566115642774776e-12
+      },
+      "criterion": "<1e-8 each"
+    },
+    {
+      "name": "family_0.00390625_charge_value",
+      "passed": true,
+      "value": 0.00390625,
+      "criterion": "equals eta, not fixed nonzero charge"
+    },
+    {
+      "name": "family_0.0009765625_integrated",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 completed"
+    },
+    {
+      "name": "family_0.0009765625_constraints",
+      "passed": true,
+      "value": {
+        "Friedmann": 5.214701812300255e-13,
+        "charge_drift": 6.433655691528983e-15,
+        "dust_drift": 2.538774745985961e-12
+      },
+      "criterion": "<1e-8 each"
+    },
+    {
+      "name": "family_0.0009765625_charge_value",
+      "passed": true,
+      "value": 0.0009765625,
+      "criterion": "equals eta, not fixed nonzero charge"
+    },
+    {
+      "name": "classical_background_converges_monotonically",
+      "passed": true,
+      "value": [
+        0.8608207741981918,
+        0.2784084650491032,
+        0.08473618828912152,
+        0.023081822215907644,
+        0.005924278213310554,
+        0.0014914419771830645
+      ],
+      "criterion": "strictly decreasing sampled errors"
+    },
+    {
+      "name": "classical_background_asymptotic_refinement",
+      "passed": true,
+      "value": 3.972181488749521,
+      "criterion": "2<ratio<6 for factor-four eta step"
+    }
+  ],
+  "static_response": {
+    "Newtonian_equation": "(2 M_P^2-M_U^2 c14) Laplacian phi = rho; chi=phi on nonzero modes",
+    "G_static": "1/[8 pi M_P^2 (1-alpha14/2)]",
+    "G_cos": "1/[8 pi M_P^2 (1+(alpha13+3alpha2)/2)]",
+    "domain": "zero-scalar, zero-exchange frame-metric linear response; nonzero Fourier/local quasistatic modes",
+    "not_claimed": "global isolated positive mass on empty T3, static dust equilibrium, or full PPN metric"
+  },
+  "transverse": {
+    "quadratic_action": "B_x**2*MP2/4 - M*(2*B_x*c3*(B_x - 2*w_x) + c1*(B_x**2 - 4*w_dot**2 + (B_x - 2*w_x)**2) - 4*c4*w_dot**2)/8",
+    "shift_gradient_solution": "M*w_x*(c1 + c3)/(M*c1 + M*c3 - MP2)",
+    "K_transverse": "M*(c1 + c4)",
+    "G_transverse": "M*(M*c1**2 - M*c3**2 - 2*MP2*c1)/(2*(M*c1 + M*c3 - MP2))",
+    "scope": "physical transverse mode after eliminating metric shift; zero-scalar Minkowski control, k!=0",
+    "holds": "zero Fourier mode and scalar sector not reduced; not B1 interacting stability"
+  },
+  "limits": {
+    "G_static_over_G_bare": "1/(1 - eta/12)",
+    "G_cos_over_G_bare": "1/(eta/10 + 1)",
+    "G_cos_over_G_static": "-5*(eta - 12)/(6*(eta + 10))",
+    "B1_G_cos_over_G_static": "5/6",
+    "K_T": "eta/6",
+    "c_vector_squared": "4/5",
+    "canonical_force_cubic": "2*sqrt(3)/(63*sqrt(eta))",
+    "canonical_force_regulator": "5/33",
+    "canonical_matter_coupling": "2*sqrt(3)*eta**(3/2)/15",
+    "charge_bound": "rho_Phi >= m |N_charge|/a^3 on homogeneous positive-potential branch",
+    "zero_exchange_GR_implication": "REJECTED_FOR_RETAINED_B1_FRAME",
+    "healthy_perturbative_limit": "NOT_ESTABLISHED_NONUNIFORM_REGISTERED_PATH",
+    "all_paths_no_go": false,
+    "physical_scattering_cutoff_derived": false
+  },
+  "background_family": [
+    {
+      "eta": 1.0,
+      "success": true,
+      "normalized_metric_dust_error": 0.8608207741981918,
+      "max_Friedmann": 3.408907498308431e-12,
+      "charge_initial": 1.0,
+      "charge_drift": 1.8791856959410325e-11,
+      "dust_drift": 2.8703150967146485e-12,
+      "K_T": 0.16666666666666666,
+      "canonical_force_cubic_ratio": 1.0
+    },
+    {
+      "eta": 0.25,
+      "success": true,
+      "normalized_metric_dust_error": 0.2784084650491032,
+      "max_Friedmann": 6.2585852375341995e-12,
+      "charge_initial": 0.25,
+      "charge_drift": 1.2653600389711528e-11,
+      "dust_drift": 2.3518409442147004e-12,
+      "K_T": 0.041666666666666664,
+      "canonical_force_cubic_ratio": 2.0
+    },
+    {
+      "eta": 0.0625,
+      "success": true,
+      "normalized_metric_dust_error": 0.08473618828912152,
+      "max_Friedmann": 2.7525868668121914e-12,
+      "charge_initial": 0.0625,
+      "charge_drift": 1.6797743751517658e-12,
+      "dust_drift": 1.1536605004636158e-12,
+      "K_T": 0.010416666666666666,
+      "canonical_force_cubic_ratio": 4.0
+    },
+    {
+      "eta": 0.015625,
+      "success": true,
+      "normalized_metric_dust_error": 0.023081822215907644,
+      "max_Friedmann": 5.846471766957949e-13,
+      "charge_initial": 0.015625,
+      "charge_drift": 2.7990457174276173e-13,
+      "dust_drift": 1.954186812369585e-12,
+      "K_T": 0.0026041666666666665,
+      "canonical_force_cubic_ratio": 8.0
+    },
+    {
+      "eta": 0.00390625,
+      "success": true,
+      "normalized_metric_dust_error": 0.005924278213310554,
+      "max_Friedmann": 6.34430494511929e-13,
+      "charge_initial": 0.00390625,
+      "charge_drift": 3.9735575940724743e-14,
+      "dust_drift": 2.2566115642774776e-12,
+      "K_T": 0.0006510416666666666,
+      "canonical_force_cubic_ratio": 16.0
+    },
+    {
+      "eta": 0.0009765625,
+      "success": true,
+      "normalized_metric_dust_error": 0.0014914419771830645,
+      "max_Friedmann": 5.214701812300255e-13,
+      "charge_initial": 0.0009765625,
+      "charge_drift": 6.433655691528983e-15,
+      "dust_drift": 2.538774745985961e-12,
+      "K_T": 0.00016276041666666666,
+      "canonical_force_cubic_ratio": 32.0
+    }
+  ],
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_CONTRACT_2026-09-25.md": "bd403fe7f2ec1df70a58552f357c2e27d07c0d26797d39a9569178ca5992c580",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f"
+  },
+  "script_sha256": "0730de78971da97345517477115ace91bd0b9c1c0ae0b136c07067854a38a710",
+  "status": "ZERO_EXCHANGE_GR_IMPLICATION_REJECTED_CLASSICAL_ENDPOINT_PERTURBATIVE_HOLD",
+  "scope": "conditional frame-metric controls and registered family; not full B1 stability or all-path no-go",
+  "healthy_continuous_GR_limit_verified": false,
+  "physical_B1_Hessian_verified": false,
+  "canonical_Test1_pass": false,
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "Rule9": "NOT_CLEARED",
+  "MAT-001": "BLOCKED",
+  "UVIR-003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED"
+}

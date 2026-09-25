@@ -1,0 +1,262 @@
+{
+  "record_type": "BBN001_ACTION_DERIVED_INPUT_CONTRACT",
+  "schema": "ITSM_BBN001_ACTION_DERIVED_INPUT_CONTRACT_v1",
+  "gate": "BBN-001",
+  "version": "2026-09-16.v1",
+  "status": "FROZEN_ACTION_DERIVED_INPUT_CONTRACT",
+  "scope": "Machine-readable interface contract for an action-derived ITSM early-time background entering an external BBN network. This contract is a prerequisite and is not a BBN prediction or a physics-gate promotion.",
+  "network_history": [
+    {
+      "field": "time",
+      "required": true,
+      "accepted_aliases": [
+        "t"
+      ],
+      "required_dimensions": "time",
+      "semantic": "Physical evolution coordinate with an explicit unit and monotonicity/domain declaration.",
+      "provenance_requirement": "Must be exported by the registered upstream solution or by an explicitly documented action-level map; a dimensionless label is insufficient."
+    },
+    {
+      "field": "photon_temperature",
+      "required": true,
+      "accepted_aliases": [
+        "T_gamma",
+        "T",
+        "temperature"
+      ],
+      "required_dimensions": "temperature",
+      "semantic": "Photon temperature history supplied to the nuclear-reaction network, with the thermal regime and physical unit declared.",
+      "provenance_requirement": "Must be action-derived or connected by a declared thermodynamic map; it must not be inferred from a, rho, mu or H."
+    },
+    {
+      "field": "photon_temperature_derivative",
+      "required": true,
+      "accepted_aliases": [
+        "dTdt",
+        "dT_gamma_dt",
+        "dTgamma_dt"
+      ],
+      "required_dimensions": "temperature/time",
+      "semantic": "Derivative of the photon-temperature history in the same declared time and unit convention.",
+      "provenance_requirement": "Must be exported or derived by a declared differentiable action-level background map; finite differences without an error and resolution declaration are insufficient."
+    },
+    {
+      "field": "neutrino_temperature",
+      "required": true,
+      "accepted_aliases": [
+        "Tnu",
+        "T_nu",
+        "T_neutrino"
+      ],
+      "required_dimensions": "temperature",
+      "semantic": "Neutrino temperature history or a declared non-equilibrium replacement required by the selected network.",
+      "provenance_requirement": "Must be supplied by the upstream thermodynamic/evolution solution; standard-cosmology substitution must be identified and is not an ITSM closure."
+    },
+    {
+      "field": "hubble",
+      "required": true,
+      "accepted_aliases": [
+        "H",
+        "Hubble"
+      ],
+      "required_dimensions": "inverse_time",
+      "semantic": "Expansion rate in the same physical time convention as the temperature histories.",
+      "provenance_requirement": "Must be action-derived from the physical background equations; a dimensionless H label or imported target expansion is insufficient."
+    },
+    {
+      "field": "baryon_density",
+      "required": true,
+      "accepted_aliases": [
+        "nb_etaf",
+        "n_b_eta_f",
+        "baryon_density"
+      ],
+      "required_dimensions": "number_density_or_declared_baryon_normalization",
+      "semantic": "Baryon-number history or an explicitly declared eta-compatible normalization mapped into the network variables.",
+      "provenance_requirement": "Must have a physical-unit and normalization map; an observational baryon target or an unlabelled eta proxy is not an action-derived input."
+    }
+  ],
+  "itsm_closing_inputs": [
+    {
+      "field": "physical_unit_map",
+      "required": true,
+      "accepted_aliases": [
+        "unit_map",
+        "units",
+        "physical_units"
+      ],
+      "required_dimensions": "complete_unit_system_and_conversion_map",
+      "semantic": "Mapping from repository/natural variables to the physical units used by the network and reported observables.",
+      "provenance_requirement": "Must be declared by the action/convention record and cover every supplied history and source term."
+    },
+    {
+      "field": "baryon_normalization",
+      "required": true,
+      "accepted_aliases": [
+        "eta",
+        "ombh2",
+        "Omega_b_h2",
+        "baryon_to_photon_ratio"
+      ],
+      "required_dimensions": "declared_baryon_abundance_normalization",
+      "semantic": "Action-derived normalization connecting baryon number, photon number and the network's abundance convention.",
+      "provenance_requirement": "Must state whether eta, Omega_b h^2 or another variable is primary and give the non-imported conversion."
+    },
+    {
+      "field": "early_plenum_density",
+      "required": true,
+      "accepted_aliases": [
+        "rho_plenum",
+        "rho_P",
+        "plenum_density",
+        "plenum_fraction"
+      ],
+      "required_dimensions": "energy_density_or_explicit_dimensionless_fraction_with_map",
+      "semantic": "Early-time plenum contribution kept distinct from radiation, matter and condensate components.",
+      "provenance_requirement": "Must be obtained from the action-derived solution and component decomposition; it must not be identified with radiation by assumption."
+    },
+    {
+      "field": "matter_plenum_transfer",
+      "required": true,
+      "accepted_aliases": [
+        "Q_mp",
+        "Q_mp^0",
+        "Q_mu",
+        "transfer_current"
+      ],
+      "required_dimensions": "four_current_or_declared_homogeneous_component",
+      "semantic": "Matter/plenum exchange current with its index structure, sign convention and conservation placement declared.",
+      "provenance_requirement": "Must be action-derived; a scalar placeholder, fitted transfer or DeltaN-matched source is insufficient unless the homogeneous reduction is explicit."
+    },
+    {
+      "field": "reservoir_plenum_transfer",
+      "required": true,
+      "accepted_aliases": [
+        "Q_syn",
+        "Q_syn^0",
+        "reservoir_current"
+      ],
+      "required_dimensions": "four_current_or_declared_homogeneous_component",
+      "semantic": "Reservoir/plenum exchange current distinct from the matter/plenum current.",
+      "provenance_requirement": "Must be action-derived with its own sign, conservation equation and any exchange closure; it cannot be collapsed into Q_mp."
+    },
+    {
+      "field": "condensate_charge_source",
+      "required": true,
+      "accepted_aliases": [
+        "S_N",
+        "charge_source",
+        "number_source"
+      ],
+      "required_dimensions": "number_source_per_time_or_declared_equivalent",
+      "semantic": "Condensate-number/charge source entering the baryon or charge evolution equation.",
+      "provenance_requirement": "Must follow from the declared interaction and charge convention; it must not be supplied by fitting DeltaN or by a standard-network default."
+    },
+    {
+      "field": "effective_gravity",
+      "required": true,
+      "accepted_aliases": [
+        "G_eff",
+        "Geff",
+        "effective_newton_constant"
+      ],
+      "required_dimensions": "gravitational_coupling_in_declared_unit_system",
+      "semantic": "Time/background-dependent effective gravitational coupling used by the expansion and perturbation equations.",
+      "provenance_requirement": "Must be derived from the action and constraint system, including its perturbation-level meaning; an observationally selected coupling is rejected."
+    },
+    {
+      "field": "perturbation_matching",
+      "required": true,
+      "accepted_aliases": [
+        "perturbation_matching",
+        "boltzmann_matching",
+        "metric_sources"
+      ],
+      "required_dimensions": "declared_perturbation_source_and_matching_map",
+      "semantic": "Map from the ITSM background/perturbation variables to the metric and source quantities consumed by the BBN/network interface.",
+      "provenance_requirement": "Must be derived from the constrained perturbation equations; background-only matching does not close this field."
+    }
+  ],
+  "required_next_inputs": [
+    "action-derived early-time background with physical units",
+    "photon temperature T_gamma(t) and dT_gamma/dt",
+    "neutrino temperature and baryon-density history or a derived eta mapping",
+    "distinct Q_mp^mu, Q_syn^mu and condensate-number source S_N",
+    "G_eff(t) with its action-level derivation and perturbation matching contract",
+    "independent review and likelihood specification before any publication claim"
+  ],
+  "validation_policy": {
+    "matching": "Exact aliases are preferred; case-insensitive matching is allowed except that T and t remain semantically distinct.",
+    "field_presence_is_not_value_validation": true,
+    "physical_unit_map_required": true,
+    "dimensionless_branch_is_rejected": true,
+    "required_provenance": true,
+    "no_value_inference": true,
+    "missing_input_status": "BLOCKED_UPSTREAM_BACKGROUND",
+    "missing_input_exit_code": 2
+  },
+  "publication_boundary": {
+    "physics_pass": false,
+    "gate_effect": "NONE",
+    "publication_status": "NOT_A_PHYSICS_CLAIM",
+    "allowed_use": [
+      "interface inventory",
+      "contract validation",
+      "control-network diagnostics after independent inputs are supplied"
+    ],
+    "nonclaims": [
+      "No temperature is inferred from a, rho, mu or H.",
+      "No condensate energy density is identified with radiation or plenum density.",
+      "No Q^mu, S_N or G_eff is fitted or supplied by DeltaN.",
+      "No AlterAlterBBN/PArthENoPE network run is promoted to an ITSM prediction.",
+      "No gate, architecture, publication or Rule-9 status changes follow."
+    ]
+  },
+  "expected_current_decision": {
+    "status": "BLOCKED_UPSTREAM_BACKGROUND",
+    "action_derived_itsm_bbn_ready": false,
+    "missing_network_fields": [
+      "photon_temperature",
+      "photon_temperature_derivative",
+      "neutrino_temperature",
+      "baryon_density"
+    ],
+    "missing_itsm_fields": [
+      "physical_unit_map",
+      "baryon_normalization",
+      "early_plenum_density",
+      "matter_plenum_transfer",
+      "reservoir_plenum_transfer",
+      "condensate_charge_source",
+      "effective_gravity",
+      "perturbation_matching"
+    ]
+  },
+  "rejection_tests": [
+    {
+      "id": "BBN-R1",
+      "condition": "A dimensionless representative UVIR export is presented as a physical thermal history.",
+      "result": "REJECT"
+    },
+    {
+      "id": "BBN-R2",
+      "condition": "Photon temperature or its derivative is inferred from a, rho, mu or H.",
+      "result": "REJECT"
+    },
+    {
+      "id": "BBN-R3",
+      "condition": "Q_mp, Q_syn, S_N or G_eff is fitted, supplied by DeltaN or collapsed into another source.",
+      "result": "REJECT"
+    },
+    {
+      "id": "BBN-R4",
+      "condition": "A field name is present without physical units, action-level provenance or a dimensional map.",
+      "result": "REJECT"
+    },
+    {
+      "id": "BBN-R5",
+      "condition": "An external BBN network result is reported as an ITSM prediction before the upstream contract and independent review are closed.",
+      "result": "REJECT"
+    }
+  ]
+}

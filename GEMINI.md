@@ -41,14 +41,32 @@ Subagents MUST NEVER be given write permissions to the ITSM repository. All suba
 - **No exceptions.** Even "simple" edits (README updates, status changes, formatting fixes) must flow through the parent agent's write path.
 
 ## 9. 3-Way Triangulated Consensus & Cryptographic Anti-Contamination Protocol
-To prevent single-point-of-failure vulnerabilities, mandate drift, and confirmation bias, multi-agent verification and auditing MUST follow the 3-Way Triangulated Consensus Protocol:
+**Operator decision, 25 September 2026:** All outstanding Rule-9 reviews are
+deferred until the operator resumes review. Pending review alone MUST NOT stop
+research, local implementation, parent-authored documentation, or the next
+calculation that uses a locally checked result within its stated scope.
+Apply `Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md` and record the result in
+`Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md` alongside the work.
+Use `review_status=DEFERRED` and, when review is the only unmet requirement for
+the proposed bounded step, `research_execution=PROCEED_PROVISIONALLY`.
+Carry pending-review dependencies into downstream results. Do not repeatedly
+request reviewer/model permission as a prerequisite to continuing research.
+Known scientific failures, missing required inputs, integrity failures and
+unresolved substantive objections still hold the affected use of a result.
+Final gate closure, new canonical Derived promotion and publication-readiness
+claims still require the applicable scientific checklist and review.
+This decision supersedes older Rule-9-only execution/write stops across the
+repository; historical reports, receipts and sealed mandates retain their bytes.
+
+When review resumes, multi-agent verification and auditing MUST follow the
+3-Way Triangulated Consensus Protocol:
 
 1. **Prompt Sealing & Mandate Hashing ($H_{\text{prompt}}$):**
    - Before dispatching any subagent, the invoking agent MUST record the exact SHA-256 hash of the subagent's prompt text (which must include the Core Identity Briefing per Rule 7).
    - This guarantees that each auditor operates under an untampered, immutable mandate.
 
 2. **Triangulated 1/3 Task Partitioning:**
-   - Research, derivation, and verification tasks are partitioned across three distinct, independent, read-only analytical roles:
+   - The deferred review of research, derivation, and verification results is partitioned across three distinct, independent, read-only analytical roles:
      - **Role A (Mathematical & Dimensional Auditor):** Audits pure symbolic algebra, variational calculus, and verifies mass dimensions ($[M]^a [L]^b [T]^c$) without numerical target smuggling.
      - **Role B (Numerical & Pipeline Auditor):** Verifies numerical convergence, matrix eigenspaces, discrete residuals ($\varepsilon \sim 10^{-9}$), and cross-checks live outputs against `.sha256` manifests.
      - **Role C (Claim Hygiene & Gate Ledger Auditor):** Cross-references all findings against `active_research.md`, `ITSM_Claim_Migration_Ledger.csv`, and gate specifications to enforce fail-closed status and prevent premature claim promotion.
@@ -58,6 +76,5 @@ To prevent single-point-of-failure vulnerabilities, mandate drift, and confirmat
 
 4. **3-Way Consensus Cross-Referencing:**
    - Findings from all three roles must be cross-checked against each other.
-   - If any discrepancy, unconstrained parameter, or status divergence is detected between the roles, the execution MUST halt and flag the anomaly.
-   - Consensus results must be checked one final time against the primary canonical source files before any write or commit is performed by the parent agent.
-
+   - Substantive discrepancies, missing required parameter determinations and status divergences must be flagged and hold the affected dependent claim or calculation until resolved. Diagnostic work to resolve them and unrelated valid work may continue. An absent, delayed or incomplete review is not itself a scientific discrepancy.
+   - Before canonical promotion or claiming review completion, consensus results must be checked against primary canonical source files. While review is deferred, the parent may write provisional work with its evidence, scope and review dependencies recorded; commit and publication retain their ordinary authority requirements.
