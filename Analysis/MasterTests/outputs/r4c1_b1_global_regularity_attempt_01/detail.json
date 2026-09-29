@@ -1,0 +1,28 @@
+{
+  "schema": "r4c1-b1-global-regularity-detail-v1",
+  "status": "EXACT_HOMOGENEOUS_FORWARD_REGULARITY",
+  "M_cos_squared": "11/10",
+  "E": "3*psi_dot**2/2 + r**4/28 + r**2*(3*u**2 + 3*v**2)/28 + r**2 + r_dot**2/2 + rho_m + u**2/2 + u_dot**2/2 + v**2/2 + v_dot**2/2 + (u**2 + v**2)**3/480 + (u**2 + v**2)**2/24",
+  "E0": "3469/1400",
+  "H0_squared": "3469/4620",
+  "conserved_charge": "a**3*(u*v_dot - u_dot*v)",
+  "conserved_dust_integral": "a**3*rho_m/C",
+  "finite_T_bounds": {
+    "T": "T>=0 finite",
+    "velocity_abs_le": "sqrt(24283)/70",
+    "psi_dot_abs_le": "sqrt(72849)/210",
+    "radius2_le": "3469/700",
+    "r_abs_le": "sqrt(48566)/140",
+    "H_le": "sqrt(4006695)/2310",
+    "a_le": "exp(sqrt(4006695)*T/2310)",
+    "C_ge": "exp(-sqrt(72849)*T/525)",
+    "C_le": "exp(sqrt(72849)*T/525)",
+    "rho_ge": "exp(T*(-sqrt(4006695)/770 - sqrt(72849)/525))/5",
+    "H_ge": "sqrt(66)*exp(T*(-sqrt(4006695)/770 - sqrt(72849)/525)/2)/33",
+    "radius2_ge": "700*exp(-sqrt(4006695)*T/385)/3469",
+    "psi_abs_le": "sqrt(72849)*T/210",
+    "tau_abs_le": "T*exp(sqrt(72849)*T/525)",
+    "p_ge_one_if_k_ge": "exp(sqrt(4006695)*T/2310)"
+  },
+  "theorem": "For real registered B1 data, positive dust and the exact constraint force H>0; E is decreasing and bounds all homogeneous state variables on every finite forward interval. The smooth ODE continuation theorem then gives a unique global forward homogeneous solution. This is not a physical stability or perturbation theorem."
+}

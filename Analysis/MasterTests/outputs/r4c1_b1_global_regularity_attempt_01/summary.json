@@ -1,0 +1,273 @@
+{
+  "schema": "r4c1-b1-global-regularity-summary-v1",
+  "validation": "PASS_LOCAL_CHECKS",
+  "passed": 40,
+  "total": 40,
+  "status": "EXACT_HOMOGENEOUS_FORWARD_REGULARITY",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "Rule9_cleared": false,
+  "review_status": "DEFERRED",
+  "decision": {
+    "B1_exact_regular_t_0_to_4": "DERIVED_CONDITIONALLY",
+    "uniform_perturbation_metric_constants": "NOT_PROVED",
+    "full_constrained_IVP": "NOT_PROVED",
+    "physical_EFT_cutoff": "NOT_DERIVED",
+    "canonical_Test1": "HOLD"
+  },
+  "inputs": {
+    "Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_CONTRACT_2026-09-29.md": "b7fce9d013833468099c751e3286a0eda554f3736c84bbab633f520498b54de6",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_REPORT_2026-09-25.md": "48b49fddd9066d6df783eb336e00d49374f3845ec38414ee53fe0fad812348d8",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_CONTRACT_2026-09-29.md": "3bb4fa5ec045715f4667ce1260fce2a146238e45079c683ef9862260857eb26e"
+  },
+  "executable_sha256": "85c65db213eacc6806fc5ee370311790fad3987896143b4119ec8168b27eb17d",
+  "artifacts": {
+    "Analysis/MasterTests/outputs/r4c1_b1_global_regularity_attempt_01/detail.json": "ccdcc3d375067ca03821e5b9d038bf45e5f500f7056c545fd92798bb65392560"
+  },
+  "checks": [
+    {
+      "name": "B1G_pin:Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": "b7fce9d013833468099c751e3286a0eda554f3736c84bbab633f520498b54de6",
+      "criterion": null
+    },
+    {
+      "name": "B1G_sidecar:Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_pin:Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md",
+      "passed": true,
+      "value": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+      "criterion": null
+    },
+    {
+      "name": "B1G_sidecar:Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_pin:Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": "48b49fddd9066d6df783eb336e00d49374f3845ec38414ee53fe0fad812348d8",
+      "criterion": null
+    },
+    {
+      "name": "B1G_sidecar:Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_pin:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+      "criterion": null
+    },
+    {
+      "name": "B1G_sidecar:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+      "criterion": null
+    },
+    {
+      "name": "B1G_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_pin:Analysis/MasterTests/test_01_r4c1_scalar_propagation.py",
+      "passed": true,
+      "value": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+      "criterion": null
+    },
+    {
+      "name": "B1G_sidecar:Analysis/MasterTests/test_01_r4c1_scalar_propagation.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_pin:Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": "3bb4fa5ec045715f4667ce1260fce2a146238e45079c683ef9862260857eb26e",
+      "criterion": null
+    },
+    {
+      "name": "B1G_sidecar:Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_parent_scope",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_cosmological_M_squared",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_exact_initial_energy",
+      "passed": true,
+      "value": "3469/1400",
+      "criterion": null
+    },
+    {
+      "name": "B1G_exact_initial_H_squared",
+      "passed": true,
+      "value": "3469/4620",
+      "criterion": null
+    },
+    {
+      "name": "B1G_initial_constraint",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_registered_positive_coefficients",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_potential_gradient_u",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_potential_gradient_v",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_potential_gradient_r",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_force_equation",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_dust_equation",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_Hdot_equation",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_scale_factor_equation",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_conformal_factor_equation",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_exact_energy_balance",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "B1G_exact_constraint_propagation",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "B1G_exact_charge_conservation",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_initial_charge_one",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_exact_dust_integral",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_initial_dust_integral_one_fifth",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_flow_polynomial_locally_Lipschitz",
+      "passed": true,
+      "value": "The registered autonomous flow is polynomial in its state variables; adjoining psi_dot=pd and tau_dot=C stays smooth.",
+      "criterion": null
+    },
+    {
+      "name": "B1G_bounds_positive_for_finite_T",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_charge_radius_lower_bound_formula",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_H_lower_bound_from_rho",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_C_bounds_inverse",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "B1G_finite_time_state_bound_coverage",
+      "passed": true,
+      "value": "E<=E0 bounds H,rho,amplitudes and velocities; a,C,psi,tau have explicit finite-T integral bounds.",
+      "criterion": null
+    }
+  ]
+}

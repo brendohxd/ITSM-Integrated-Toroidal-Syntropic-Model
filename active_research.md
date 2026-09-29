@@ -26,8 +26,10 @@ instantaneous bounds in two specified fixed graph norms. S4C finds that the
 proposed leading frame/dust pair also drives phase-gradient and frame-spatial
 rows at order p, so it is not a closed two-variable block. None settles full
 coupled well-posedness. Subsequent S4D-S4G exact initial-event work and the
-S4H moving-chart diagnostic are recorded below. The next substantive task
-is the exact moving leading symbol and a uniform finite-time estimate.
+S4H moving-chart, exact moving-symbol, B1G homogeneous regularity and
+S4H-U formal interval-envelope diagnostics are recorded below. The next
+substantive question is whether a physical EFT range overlaps the formal
+high-p estimate, or a sharper admissible estimate can be obtained.
 Review-panel assembly is deferred. Healthy GR recovery, full
 weak-field matching, coefficient determination and physical applicability
 remain scientific work. Canonical promotion and publication readiness still
@@ -229,6 +231,74 @@ constants, or a physical wave-number cutoff. Status is
 `INCOMPLETE_TEMPORAL_PERSISTENCE`, `physics_pass=false`, `gate_effect=NONE`.
 R9-MT1-S4H and inherited reviews are deferred, not cleared; Master Test 1
 and the downstream Tests 2/3, MAT/UVIR and publication holds are unchanged.
+
+The [S4H moving-symbol continuation](Theory/Gates/RES-001/RES001_R4C1_S4H_MOVING_SYMBOL_REPORT_2026-09-29.md)
+now derives all 144 moving `C2/C1` coefficients exactly and replays the S4G
+initial event. Four fresh receipts pass 278/278 principal, 193/193 spectrum,
+212/212 projector/metric and 573/573 rational-energy **local** checks. The
+slow block has an all-state exact characteristic polynomial; conserved
+`a^3(u*v_dot-v*u_dot)=1` excludes its frequency collision on any finite
+regular B1 continuation. A pointwise positive moving metric cancels the
+formal `p^2` and `p` energy terms, and all 144 residual entries are bounded
+as `p -> infinity` at each fixed regular state. This is **not** an explicit
+uniform `[0,4]` estimate: time-uniform metric and energy constants, the
+physical EFT `p` range, full constrained IVP and healthy GR limit remain
+unproved. R9-MT1-S4H-MOVING is deferred; status
+`physics_pass=false`, `gate_effect=NONE`. Tests 1-3 and all parent gate and
+publication holds are unchanged.
+
+The [B1G exact homogeneous regularity proof](Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md)
+then derives the positive B1 energy, exact Friedmann-constraint propagation
+and conserved dust/charge integrals. Its 40/40 local checks support explicit
+finite-time state bounds and an ODE continuation proof: the registered
+positive-root homogeneous B1 solution exists forward and remains in the
+regular chart across `[0,4]`. This replaces the earlier CSV-only interval
+uncertainty; it does **not** supply uniform perturbation metric/energy
+constants, an EFT cutoff, healthy GR recovery or Test-1 closure.
+R9-MT1-B1G and inherited review are deferred; no parent gate changes.
+
+The [S4H-U explicit interval-envelope report](Theory/Gates/RES-001/RES001_R4C1_S4H_UNIFORM_ENVELOPE_REPORT_2026-09-29.md)
+continues the unchanged S4H contract using exact B1G background bounds.
+Its final fresh attempt passes 1093/1093 local checks, including five
+positive/rejection controls; 81 live source hashes and sidecars were
+independently rechecked with zero mismatches. On the registered reduced
+regular B1 graph for t in [0,4], it gives a positive metric and a uniform
+formal energy rate for p>=8*10^13; a sufficient fixed comoving k is
+4.8*10^15. The certified Gronwall rate is at most 10^62, so the result is
+mathematically finite but extremely loose. The physical EFT cutoff is
+not derived: **no physical mode has been shown to lie in this domain**.
+Full constrained-IVP, singular/zero-mode, all-sector, healthy-GR,
+canonical Test-1 and Tests 2/3 holds remain. Attempt 01's source-pin
+failure and attempt 02's successful pre-mutation result are preserved;
+R9-MT1-S4HU and inherited reviews are deferred. Status remains
+physics_pass=false, gate_effect=NONE with no parent promotion.
+
+The [R4C1-PD1 physical-domain preflight](Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md)
+then checks 19/19 exact local necessary conditions without changing the
+frozen action, B1 inputs or previous receipts. On G1's isolated frame/metric
+control, fixed-B1 zero exchange retains `G_cos/G_static=5/6`; the registered
+eta family has a divergent canonical cubic coefficient and vanishing
+transverse kinetic coefficient. B1's `Lambda=2` belongs to its condensate
+sextic potential; the regulator and cubic coefficient scales are **not**
+certified EFT cutoffs. Therefore the physical population of S4H-U's formal
+`p>=8*10^13` range is unknown, not passed or excluded. No all-path GR
+no-go, full constrained IVP, healthy limit, Test-1 closure or Tests 2/3
+promotion follows. R9-MT1-PD1 and inherited reviews are deferred;
+`physics_pass=false`, `gate_effect=NONE`.
+
+The [R4C1-T2P1 periodic-force report](Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_REPORT_2026-09-29.md)
+derives the aligned flat-FRW scalar equation and its exact `T^3` mean
+condition. Positive mean dust requires a time-dependent scalar mean in
+this fixed-frame route; a static total-source shortcut is rejected.
+Subtracting that mean, a separately declared static three-dimensional
+density-contrast snapshot retaining `b>0` passes 46/46 local numerical
+checks on 17/25/33 grids. The first solver attempt failed 6/46 checks
+and remains preserved; the method changed, not the source or thresholds.
+This is not a coupled physical periodic solution or a quasistatic error
+bound. Metric/frame/dust/Euler response, projection factor and Test 2
+remain open; C1's coefficient nonidentifiability and Test 3 also remain.
+R9-MT2-T2P1 and inherited reviews are deferred; `physics_pass=false`,
+`gate_effect=NONE`, with no parent promotion.
 
 TOP-X4 is not judged close to a breakthrough: the 19 September X4-S4-C1
 receipt selected an equation route but did not solve a curved background; the

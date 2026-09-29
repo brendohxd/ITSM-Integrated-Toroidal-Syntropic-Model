@@ -1,0 +1,18 @@
+{
+  "schema": "r4c1-s4h-moving-energy-detail-v1",
+  "status": "POINTWISE_FORMAL_HIGH_P_ENERGY_RATE",
+  "p_denominator_factors": [
+    "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+    "p"
+  ],
+  "metric_denominator_factors": [
+    "3*u**2 + 3*v**2 + 26",
+    "H",
+    "u**2 + v**2",
+    "u**2 + v**2 + 13"
+  ],
+  "finite_C_remainder_limits": 144,
+  "energy_identity": "E=M0*R+R.T*M0+M1*C1+C1.T*M1+M0dot+(M1*R+R.T*M1+M1dot+H*M1)/p after exact p2/p cancellation",
+  "positivity_condition": "p>=max(1,8*||M1(t)||_F) gives M>=I/8 at each regular B1 state; no uniform p0",
+  "domain": "conditional finite regular B1 state; exact [0,4] existence and physical p cutoff unproved"
+}

@@ -1,0 +1,174 @@
+{
+  "schema": "r4c1-s4h-uniform-envelope-detail-v1",
+  "status": "FORMAL_UNIFORM_INTERVAL_ENVELOPE",
+  "result": {
+    "box": {
+      "time_interval": "[0,4]",
+      "H": "[1e-5,1]",
+      "radial2": "[1e-12,5]",
+      "rho_m": "[1e-9,3]",
+      "a": "[1,60]",
+      "C": "[1/60,60]",
+      "field_velocity_upper_bounds": {
+        "u,v,u_dot,v_dot,r_dot": 3,
+        "r,psi_dot": 2
+      },
+      "source": "B1G exact energy, dust and angular-charge invariants"
+    },
+    "matrix_bounds": {
+      "M0": {
+        "entrywise_max": "390597360739851864112219141804940621509",
+        "nonzero_bounds": 48,
+        "denominator_factor_classes": [
+          [
+            "H",
+            1
+          ],
+          [
+            "H",
+            2
+          ],
+          [
+            "radial2",
+            1
+          ],
+          [
+            "radial2",
+            2
+          ],
+          [
+            "radial2_plus_13",
+            1
+          ],
+          [
+            "three_radial2_plus_26",
+            1
+          ],
+          [
+            "three_radial2_plus_26",
+            2
+          ]
+        ],
+        "frobenius_power10": 40
+      },
+      "M1": {
+        "entrywise_max": "308567069295",
+        "nonzero_bounds": 16,
+        "denominator_factor_classes": [
+          [
+            "H",
+            1
+          ],
+          [
+            "H",
+            2
+          ],
+          [
+            "three_radial2_plus_26",
+            1
+          ]
+        ],
+        "frobenius_power10": 13
+      },
+      "C1": {
+        "entrywise_max": "45455",
+        "nonzero_bounds": 18,
+        "denominator_factor_classes": [
+          [
+            "H",
+            1
+          ]
+        ],
+        "frobenius_power10": 6
+      },
+      "M0dot": {
+        "entrywise_max": "218696128890032301251321813661778492743447844621756570692313",
+        "nonzero_bounds": 41,
+        "denominator_factor_classes": [
+          [
+            "H",
+            2
+          ],
+          [
+            "H",
+            3
+          ],
+          [
+            "radial2",
+            2
+          ],
+          [
+            "radial2",
+            3
+          ],
+          [
+            "radial2_plus_13",
+            2
+          ],
+          [
+            "three_radial2_plus_26",
+            2
+          ],
+          [
+            "three_radial2_plus_26",
+            3
+          ]
+        ],
+        "frobenius_power10": 61
+      },
+      "M1dot": {
+        "entrywise_max": "5095227038458759931",
+        "nonzero_bounds": 16,
+        "denominator_factor_classes": [
+          [
+            "H",
+            2
+          ],
+          [
+            "H",
+            3
+          ],
+          [
+            "three_radial2_plus_26",
+            2
+          ]
+        ],
+        "frobenius_power10": 20
+      },
+      "R": {
+        "entrywise_max": "16485883123",
+        "nonzero_bounds": 90,
+        "denominator_factor_classes": [
+          [
+            "H",
+            1
+          ],
+          [
+            "p",
+            1
+          ],
+          [
+            "p",
+            2
+          ],
+          [
+            "p2_plus_S",
+            1
+          ]
+        ],
+        "frobenius_power10": 12
+      }
+    },
+    "formal_p0": "80000000000000",
+    "formal_p0_expression": "8*10^13",
+    "comoving_k_min": "4800000000000000",
+    "sufficient_axial_torus_index": "800000000000000",
+    "metric_lower": "1/8",
+    "metric_upper": "80000000000000000000000000000000000000001/8",
+    "energy_rate_BE": "80000000160000000000000000000000000000000160000002000010000001/8",
+    "gronwall_rate_K_power10": 62,
+    "physical_EFT_cutoff": "NOT_DERIVED"
+  },
+  "error": null,
+  "assumptions": "Conditional classical regular B1; t in [0,4]; p>=p0; fixed comoving k; no physical EFT cutoff"
+}

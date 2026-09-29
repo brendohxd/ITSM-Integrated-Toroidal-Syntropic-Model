@@ -1,0 +1,3541 @@
+{
+  "schema": "r4c1-s4h-moving-energy-summary-v1",
+  "validation": "PASS_LOCAL_CHECKS",
+  "passed": 573,
+  "total": 573,
+  "status": "POINTWISE_FORMAL_HIGH_P_ENERGY_RATE",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "Rule9_cleared": false,
+  "review_status": "DEFERRED",
+  "decision": {
+    "moving_C2_C1_144": "EXACT_FORMULAS",
+    "moving_slow_spectrum": "CONDITIONAL_REGULAR_B1",
+    "moving_metric": "POINTWISE_FORMAL",
+    "pointwise_energy_rate": "BOUNDED_FORMAL",
+    "uniform_interval_energy_constant": "NOT_PROVED",
+    "full_constrained_IVP": "NOT_PROVED",
+    "physical_EFT_cutoff": "NOT_DERIVED"
+  },
+  "inputs": {
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_CONTRACT_2026-09-26.md": "2ec5f0bc84ffb420bdbc1d8d7b0c3a16237ee87e36867ab8b106d5dbf35b3496",
+    "Analysis/MasterTests/test_01_r4c1_zero_branch.py": "99cd1c52313dc5a5945ef0dd6f747f95848b2115847aec3c40a3fdc3a3ac278f",
+    "Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json": "1507c9b40b7a76985a81e520780fed6631eca59880870ae208d60d9587a6f374",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_CONTRACT_2026-09-26.md": "c1e4d5f72c3f354b8e43b1ed51b01b46e5da9d301125ac687cb723e1887ef49e",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json": "56a4db658ae24d86211148abaffc1b9cf4d3d5aceed2e732df1270abda737735",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md": "b4ecbc81119dd23b9597df3ca39b680cf44d07ae1a0a5564be78145b951354dd",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_samples.json": "1d9846b88bcf273f3d5fb35020a6bc7fb1e52c9d4fbae8dd4f2a578aed5edcfc",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_symbol.json": "3122e1927a4627ea6c40d68493ebe6a28ca250301d2442a3d25794afa9ea659d",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_matrices.json": "087a8083c499f22d5d2e6802faf9865353021352ba4f6fad25eb518d6052e412",
+    "Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_samples.json": "46aeb71430ee096b665c070a7ba494e76f330c9127e286ca80c87b88cb0f8a56",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_CONTRACT_2026-09-26.md": "7ba250c0afe826fca2af431260c2f9ea53d485a4ae197c6f5eced044d702bd22",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_REPORT_2026-09-26.md": "e493a658e2c3ae357167a269c2b611d6ed7cd5ce7dea77296a4f62999c7421d2",
+    "Analysis/MasterTests/test_01_r4c1_coupled_graph.py": "31b80572c618557674934ddb4a9d591aaa58959a497124f15f4198121db8f16a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_summary.json": "cacd1b1bf9970399c89383e5ac6f2bbfe4614fa5cb6ebf04806bb700a0ae16c0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_matrices.json": "7d815633d8ee583e0f4de2e0e198d27356a220dcc8abecb1613bc46ef7246c85",
+    "Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_samples.json": "9203ada102243051a0dfb4788ab83ee93190bb8d299ec4dbdf9b1a2b9d876907",
+    "Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_CONTRACT_2026-09-26.md": "d961553f9e2c26d617d8324fbcb0a78169c4bcc2f716aa5fa267725443adffa6",
+    "Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_REPORT_2026-09-26.md": "437e82f0faf3d8053763d253e102ac732eb39a34c598d7aad8efc0abc3d2131f",
+    "Analysis/MasterTests/test_01_r4c1_mixed_regularity.py": "ee9bd6fe894e8595a52d97f02bebc3827c6a70dee473e4cff41dfa6cfb2c7552",
+    "Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_summary.json": "e98be1809f48d6aaf2316dc3109473cd2b5b4c4a362d173f0f633be5c9498a73",
+    "Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_matrices.json": "503e58fdc2f95951107f9702daca36ae63acd45df83eb9395a00b0fe9c7e69db",
+    "Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_samples.json": "63ca5e2e542ff3f6212556fa3fa8d45bb121971550c2fb6315b0bd48b46d8b54",
+    "Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_CONTRACT_2026-09-26.md": "3cd2ad808053862ca1d947bae4ae0d69b46e8fdae415706b3f332cf3867aede1",
+    "Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_REPORT_2026-09-26.md": "65a0a4238673ec757493cc1f398bddc50c8e07a47226603e9dd50e70bb0441ec",
+    "Analysis/MasterTests/test_01_r4c1_frame_dust_principal.py": "8732ca4b991a60ce99eb32cf5de85a147435ae075f07dbf8495f661c22af6f82",
+    "Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_summary.json": "ddccc444ac7e9191a1d19d6e61aaf009932e6394b700dcfe29af4d0bb361107b",
+    "Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_detail.json": "b4cd27382b516c7fec994c926829db60cc3c1bc295abd4074324c7a7c6ec24bc",
+    "Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_CONTRACT_2026-09-29.md": "24c61003b25964933c96a9362756555de5e0f2f0ff1891ef2edb6666fbdbe73a",
+    "Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_REPORT_2026-09-26.md": "9479d990e612658d08c68c8a7e2521c1f4a11461a49946e5be6ff73d240f4a2e",
+    "Analysis/MasterTests/test_01_r4c1_recursive_leading_span.py": "e11b15b7b8cd8d7a1c513fec5fd611b7a83269b409097dfba9a394a0577f32c1",
+    "Analysis/MasterTests/outputs/r4c1_s4d_attempt_02/summary.json": "319ce57136468f51eb4040c4362d12efa0da08106dc68ed3e5a0c1d354b60097",
+    "Analysis/MasterTests/outputs/r4c1_s4d_attempt_02/detail.json": "719d011083ae8c7f5a80b00c210d58e138aa49b07dbbbf3b1cc666c954f2e9f0",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_CONTRACT_2026-09-29.md": "5cd9ed377cb640b50ded531e41ef44a81588fa560a835c8e7df6f6d4bb79168d",
+    "Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_REPORT_2026-09-29.md": "90ae5ad23518f311214b152f198014262d4b4b058e2cedbb84d7a6340d12ad8f",
+    "Analysis/MasterTests/test_01_r4c1_phase_pair_reweight.py": "cf5d2c96c4f61529b89cdeac84b7243f22c176760a9682d1fcc0089e1dc1bc01",
+    "Analysis/MasterTests/outputs/r4c1_s4e_attempt_01/summary.json": "597535a08264a038a225b68ef8f13b62d3e47ba3d83a882d1b8e6a8e615b5c4b",
+    "Analysis/MasterTests/outputs/r4c1_s4e_attempt_01/detail.json": "c82d6076df21f9b89b8b2e6fe0d739f1381cc3a8efd974be32431f6376f9b472",
+    "Theory/Gates/RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_CONTRACT_2026-09-29.md": "74ec49a2e51ff3f27fcfb960b0f6ce7d04ba33d5a82b2122677a67438bbdbb80",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_REPORT_2026-09-29.md": "eb05942b22b2e2b736e9614b3db3510d2acab4ba047a8df3bacc7915ad22ce4b",
+    "Analysis/MasterTests/test_01_r4c1_full_symbol.py": "d2a34c1855ef0260e6609ff906fd22ea1a11ec051e820e2bb48af29c25d08546",
+    "Analysis/MasterTests/outputs/r4c1_s4f_attempt_01/summary.json": "c1b47d62d1e6da23269867420be774d114b77d3a33e40e95284e327dfce08604",
+    "Analysis/MasterTests/outputs/r4c1_s4f_attempt_01/detail.json": "6336924b22b91f5c3c91d835c498c81e8e3880227215ab117c8ccac19dcd8273",
+    "Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_CONTRACT_2026-09-29.md": "3bb4fa5ec045715f4667ce1260fce2a146238e45079c683ef9862260857eb26e",
+    "Theory/Gates/RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_REPORT_2026-09-29.md": "361e3f2b2c3583e52c83164318cc511462b4e42474b3363b2ae1840f6a849bfe",
+    "Analysis/MasterTests/test_01_r4c1_order_p_symmetrizer.py": "1e5d7c517ef1249119ed9de0bc7a94b363dcf22b0e8482ff7fe6b57ea7ae54c3",
+    "Analysis/MasterTests/outputs/r4c1_s4g_attempt_02/summary.json": "37530650e1f75ea22caef79b0ead1621b9866e595f89a055572a447f162d174f",
+    "Analysis/MasterTests/outputs/r4c1_s4g_attempt_02/detail.json": "a778e9d25e5cc4c9b9789aa55f2b2ed30242c3e213da89d6510eefc7c07b037c",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_REPORT_2026-09-25.md": "48b49fddd9066d6df783eb336e00d49374f3845ec38414ee53fe0fad812348d8",
+    "Analysis/MasterTests/test_01_r4c1_temporal_persistence.py": "1d966f7d3f6d973f855b46ef67295cbd811ae3e69bc4b919a0cc1f3320b79c20",
+    "Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md": "aa740eb2419dcfebfc1532230823be7b5df4c3dc31d156701649c5572cf4037b",
+    "Analysis/MasterTests/outputs/r4c1_s4h_attempt_02/summary.json": "20eaa579780061a8f839a586f3c08725d5098a0e2527857a3c54032c55bc69d7",
+    "Analysis/MasterTests/outputs/r4c1_s4h_attempt_02/detail.json": "37068a4e93c919194a1d28608e2bab086dd0f36df1583b0d6b9fd589b3e32007",
+    "Analysis/MasterTests/test_01_r4c1_moving_principal.py": "060adab2d7928c1ba072617796145d19a9a5f2943685829a69a4529dbcc10ccb",
+    "Analysis/MasterTests/outputs/r4c1_s4h_principal_attempt_01/summary.json": "79fdd57fb6f8f6682c40f9ea066b3f91a067ee8ec54397542100b21fa214352a",
+    "Analysis/MasterTests/outputs/r4c1_s4h_principal_attempt_01/detail.json": "3dfe9b891844738312b0957da0ef4e23aec53aaf32a204cb26e0514d4770e635",
+    "Analysis/MasterTests/test_01_r4c1_moving_spectrum.py": "369677a86adf1856e00e30f61f8e3256dd2d54034e172b653dfa7474e6d10aab",
+    "Analysis/MasterTests/outputs/r4c1_s4h_spectrum_attempt_01/summary.json": "a5abe1959655e4b278ffbd6282dfa3d8ef9e455297a485d49a10445292f78cca",
+    "Analysis/MasterTests/test_01_r4c1_moving_metric.py": "15dc947f35e9d3b03049bba4352a1e5c47b34bf12edc77d3c5252d33a683c3cf",
+    "Analysis/MasterTests/outputs/r4c1_s4h_metric_attempt_01/summary.json": "f4ccfbb01969d848bc5390da5cd7008e4fd5ce14e2d2ef7109156189291e0020",
+    "Analysis/MasterTests/outputs/r4c1_s4h_metric_attempt_01/detail.json": "c743348c84385ecd576d3a196f7e37f843d72ee2654b50d94deebf99611086a5"
+  },
+  "executable_sha256": "53530ef536f9724833a79263c26130173bfcbcc8bc87b53fca3c151b7edaf059",
+  "artifacts": {
+    "Analysis/MasterTests/outputs/r4c1_s4h_energy_attempt_01/detail.json": "5d5e0fc8e065988c7d85bf98dfaa25c968f20975e6046071d1962625f3ea2c3a"
+  },
+  "checks": [
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "2ec5f0bc84ffb420bdbc1d8d7b0c3a16237ee87e36867ab8b106d5dbf35b3496",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_zero_branch.py",
+      "passed": true,
+      "value": "99cd1c52313dc5a5945ef0dd6f747f95848b2115847aec3c40a3fdc3a3ac278f",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_zero_branch.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json",
+      "passed": true,
+      "value": "1507c9b40b7a76985a81e520780fed6631eca59880870ae208d60d9587a6f374",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "c1e4d5f72c3f354b8e43b1ed51b01b46e5da9d301125ac687cb723e1887ef49e",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_scalar_propagation.py",
+      "passed": true,
+      "value": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_scalar_propagation.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json",
+      "passed": true,
+      "value": "56a4db658ae24d86211148abaffc1b9cf4d3d5aceed2e732df1270abda737735",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "b4ecbc81119dd23b9597df3ca39b680cf44d07ae1a0a5564be78145b951354dd",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json",
+      "passed": true,
+      "value": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md",
+      "passed": true,
+      "value": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md",
+      "passed": true,
+      "value": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_full_variation.py",
+      "passed": true,
+      "value": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_full_variation.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_samples.json",
+      "passed": true,
+      "value": "1d9846b88bcf273f3d5fb35020a6bc7fb1e52c9d4fbae8dd4f2a578aed5edcfc",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_scalar_constraints.py",
+      "passed": true,
+      "value": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_scalar_constraints.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_symbol.json",
+      "passed": true,
+      "value": "3122e1927a4627ea6c40d68493ebe6a28ca250301d2442a3d25794afa9ea659d",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_symbol.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_matrices.json",
+      "passed": true,
+      "value": "087a8083c499f22d5d2e6802faf9865353021352ba4f6fad25eb518d6052e412",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_samples.json",
+      "passed": true,
+      "value": "46aeb71430ee096b665c070a7ba494e76f330c9127e286ca80c87b88cb0f8a56",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "7ba250c0afe826fca2af431260c2f9ea53d485a4ae197c6f5eced044d702bd22",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "e493a658e2c3ae357167a269c2b611d6ed7cd5ce7dea77296a4f62999c7421d2",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/test_01_r4c1_coupled_graph.py",
+      "passed": true,
+      "value": "31b80572c618557674934ddb4a9d591aaa58959a497124f15f4198121db8f16a",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/test_01_r4c1_coupled_graph.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_summary.json",
+      "passed": true,
+      "value": "cacd1b1bf9970399c89383e5ac6f2bbfe4614fa5cb6ebf04806bb700a0ae16c0",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_matrices.json",
+      "passed": true,
+      "value": "7d815633d8ee583e0f4de2e0e198d27356a220dcc8abecb1613bc46ef7246c85",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_samples.json",
+      "passed": true,
+      "value": "9203ada102243051a0dfb4788ab83ee93190bb8d299ec4dbdf9b1a2b9d876907",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4A_scope",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4A_transitive_artifacts",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "d961553f9e2c26d617d8324fbcb0a78169c4bcc2f716aa5fa267725443adffa6",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "437e82f0faf3d8053763d253e102ac732eb39a34c598d7aad8efc0abc3d2131f",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Analysis/MasterTests/test_01_r4c1_mixed_regularity.py",
+      "passed": true,
+      "value": "ee9bd6fe894e8595a52d97f02bebc3827c6a70dee473e4cff41dfa6cfb2c7552",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Analysis/MasterTests/test_01_r4c1_mixed_regularity.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_summary.json",
+      "passed": true,
+      "value": "e98be1809f48d6aaf2316dc3109473cd2b5b4c4a362d173f0f633be5c9498a73",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_matrices.json",
+      "passed": true,
+      "value": "503e58fdc2f95951107f9702daca36ae63acd45df83eb9395a00b0fe9c7e69db",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_samples.json",
+      "passed": true,
+      "value": "63ca5e2e542ff3f6212556fa3fa8d45bb121971550c2fb6315b0bd48b46d8b54",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_scope",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_transitive_artifacts",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pin:Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "3cd2ad808053862ca1d947bae4ae0d69b46e8fdae415706b3f332cf3867aede1",
+      "criterion": null
+    },
+    {
+      "name": "S4D_sidecar:Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pin:Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "65a0a4238673ec757493cc1f398bddc50c8e07a47226603e9dd50e70bb0441ec",
+      "criterion": null
+    },
+    {
+      "name": "S4D_sidecar:Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pin:Analysis/MasterTests/test_01_r4c1_frame_dust_principal.py",
+      "passed": true,
+      "value": "8732ca4b991a60ce99eb32cf5de85a147435ae075f07dbf8495f661c22af6f82",
+      "criterion": null
+    },
+    {
+      "name": "S4D_sidecar:Analysis/MasterTests/test_01_r4c1_frame_dust_principal.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pin:Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_summary.json",
+      "passed": true,
+      "value": "ddccc444ac7e9191a1d19d6e61aaf009932e6394b700dcfe29af4d0bb361107b",
+      "criterion": null
+    },
+    {
+      "name": "S4D_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pin:Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_detail.json",
+      "passed": true,
+      "value": "b4cd27382b516c7fec994c926829db60cc3c1bc295abd4074324c7a7c6ec24bc",
+      "criterion": null
+    },
+    {
+      "name": "S4D_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_detail.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_scoped_result",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_transitive_detail",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4E_pin:Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": "24c61003b25964933c96a9362756555de5e0f2f0ff1891ef2edb6666fbdbe73a",
+      "criterion": null
+    },
+    {
+      "name": "S4E_sidecar:Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4E_pin:Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "9479d990e612658d08c68c8a7e2521c1f4a11461a49946e5be6ff73d240f4a2e",
+      "criterion": null
+    },
+    {
+      "name": "S4E_sidecar:Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4E_pin:Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "3cd2ad808053862ca1d947bae4ae0d69b46e8fdae415706b3f332cf3867aede1",
+      "criterion": null
+    },
+    {
+      "name": "S4E_sidecar:Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4E_pin:Analysis/MasterTests/test_01_r4c1_recursive_leading_span.py",
+      "passed": true,
+      "value": "e11b15b7b8cd8d7a1c513fec5fd611b7a83269b409097dfba9a394a0577f32c1",
+      "criterion": null
+    },
+    {
+      "name": "S4E_sidecar:Analysis/MasterTests/test_01_r4c1_recursive_leading_span.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4E_pin:Analysis/MasterTests/outputs/r4c1_s4d_attempt_02/summary.json",
+      "passed": true,
+      "value": "319ce57136468f51eb4040c4362d12efa0da08106dc68ed3e5a0c1d354b60097",
+      "criterion": null
+    },
+    {
+      "name": "S4E_sidecar:Analysis/MasterTests/outputs/r4c1_s4d_attempt_02/summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4E_pin:Analysis/MasterTests/outputs/r4c1_s4d_attempt_02/detail.json",
+      "passed": true,
+      "value": "719d011083ae8c7f5a80b00c210d58e138aa49b07dbbbf3b1cc666c954f2e9f0",
+      "criterion": null
+    },
+    {
+      "name": "S4E_sidecar:Analysis/MasterTests/outputs/r4c1_s4d_attempt_02/detail.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4E_deliberately_bad_digest_rejected",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4E_S4D_scoped_result",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4E_S4D_artifacts",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4F_pin:Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": "5cd9ed377cb640b50ded531e41ef44a81588fa560a835c8e7df6f6d4bb79168d",
+      "criterion": null
+    },
+    {
+      "name": "S4F_sidecar:Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4F_pin:Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": "24c61003b25964933c96a9362756555de5e0f2f0ff1891ef2edb6666fbdbe73a",
+      "criterion": null
+    },
+    {
+      "name": "S4F_sidecar:Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4F_pin:Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_REPORT_2026-09-29.md",
+      "passed": true,
+      "value": "90ae5ad23518f311214b152f198014262d4b4b058e2cedbb84d7a6340d12ad8f",
+      "criterion": null
+    },
+    {
+      "name": "S4F_sidecar:Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_REPORT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4F_pin:Analysis/MasterTests/test_01_r4c1_phase_pair_reweight.py",
+      "passed": true,
+      "value": "cf5d2c96c4f61529b89cdeac84b7243f22c176760a9682d1fcc0089e1dc1bc01",
+      "criterion": null
+    },
+    {
+      "name": "S4F_sidecar:Analysis/MasterTests/test_01_r4c1_phase_pair_reweight.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4F_pin:Analysis/MasterTests/outputs/r4c1_s4e_attempt_01/summary.json",
+      "passed": true,
+      "value": "597535a08264a038a225b68ef8f13b62d3e47ba3d83a882d1b8e6a8e615b5c4b",
+      "criterion": null
+    },
+    {
+      "name": "S4F_sidecar:Analysis/MasterTests/outputs/r4c1_s4e_attempt_01/summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4F_pin:Analysis/MasterTests/outputs/r4c1_s4e_attempt_01/detail.json",
+      "passed": true,
+      "value": "c82d6076df21f9b89b8b2e6fe0d739f1381cc3a8efd974be32431f6376f9b472",
+      "criterion": null
+    },
+    {
+      "name": "S4F_sidecar:Analysis/MasterTests/outputs/r4c1_s4e_attempt_01/detail.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4F_bad_pin_rejected_in_memory",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4F_S4E_scoped_status",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4F_S4E_artifact_hashes",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4G_pin:Theory/Gates/RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": "74ec49a2e51ff3f27fcfb960b0f6ce7d04ba33d5a82b2122677a67438bbdbb80",
+      "criterion": null
+    },
+    {
+      "name": "S4G_sidecar:Theory/Gates/RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4G_pin:Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": "5cd9ed377cb640b50ded531e41ef44a81588fa560a835c8e7df6f6d4bb79168d",
+      "criterion": null
+    },
+    {
+      "name": "S4G_sidecar:Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4G_pin:Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_REPORT_2026-09-29.md",
+      "passed": true,
+      "value": "eb05942b22b2e2b736e9614b3db3510d2acab4ba047a8df3bacc7915ad22ce4b",
+      "criterion": null
+    },
+    {
+      "name": "S4G_sidecar:Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_REPORT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4G_pin:Analysis/MasterTests/test_01_r4c1_full_symbol.py",
+      "passed": true,
+      "value": "d2a34c1855ef0260e6609ff906fd22ea1a11ec051e820e2bb48af29c25d08546",
+      "criterion": null
+    },
+    {
+      "name": "S4G_sidecar:Analysis/MasterTests/test_01_r4c1_full_symbol.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4G_pin:Analysis/MasterTests/outputs/r4c1_s4f_attempt_01/summary.json",
+      "passed": true,
+      "value": "c1b47d62d1e6da23269867420be774d114b77d3a33e40e95284e327dfce08604",
+      "criterion": null
+    },
+    {
+      "name": "S4G_sidecar:Analysis/MasterTests/outputs/r4c1_s4f_attempt_01/summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4G_pin:Analysis/MasterTests/outputs/r4c1_s4f_attempt_01/detail.json",
+      "passed": true,
+      "value": "6336924b22b91f5c3c91d835c498c81e8e3880227215ab117c8ccac19dcd8273",
+      "criterion": null
+    },
+    {
+      "name": "S4G_sidecar:Analysis/MasterTests/outputs/r4c1_s4f_attempt_01/detail.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4G_bad_pin_rejected_in_memory",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4G_parent_scoped_status",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4G_parent_artifact_hashes",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H_pin:Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": "3bb4fa5ec045715f4667ce1260fce2a146238e45079c683ef9862260857eb26e",
+      "criterion": null
+    },
+    {
+      "name": "S4H_sidecar:Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_CONTRACT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H_pin:Theory/Gates/RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_REPORT_2026-09-29.md",
+      "passed": true,
+      "value": "361e3f2b2c3583e52c83164318cc511462b4e42474b3363b2ae1840f6a849bfe",
+      "criterion": null
+    },
+    {
+      "name": "S4H_sidecar:Theory/Gates/RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_REPORT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H_pin:Analysis/MasterTests/test_01_r4c1_order_p_symmetrizer.py",
+      "passed": true,
+      "value": "1e5d7c517ef1249119ed9de0bc7a94b363dcf22b0e8482ff7fe6b57ea7ae54c3",
+      "criterion": null
+    },
+    {
+      "name": "S4H_sidecar:Analysis/MasterTests/test_01_r4c1_order_p_symmetrizer.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H_pin:Analysis/MasterTests/outputs/r4c1_s4g_attempt_02/summary.json",
+      "passed": true,
+      "value": "37530650e1f75ea22caef79b0ead1621b9866e595f89a055572a447f162d174f",
+      "criterion": null
+    },
+    {
+      "name": "S4H_sidecar:Analysis/MasterTests/outputs/r4c1_s4g_attempt_02/summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H_pin:Analysis/MasterTests/outputs/r4c1_s4g_attempt_02/detail.json",
+      "passed": true,
+      "value": "a778e9d25e5cc4c9b9789aa55f2b2ed30242c3e213da89d6510eefc7c07b037c",
+      "criterion": null
+    },
+    {
+      "name": "S4H_sidecar:Analysis/MasterTests/outputs/r4c1_s4g_attempt_02/detail.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H_pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+      "criterion": null
+    },
+    {
+      "name": "S4H_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H_pin:Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": "48b49fddd9066d6df783eb336e00d49374f3845ec38414ee53fe0fad812348d8",
+      "criterion": null
+    },
+    {
+      "name": "S4H_sidecar:Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H_parent_status",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H_parent_artifacts",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H_bad_pin_rejected_in_memory",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H3_pin:Analysis/MasterTests/test_01_r4c1_temporal_persistence.py",
+      "passed": true,
+      "value": "1d966f7d3f6d973f855b46ef67295cbd811ae3e69bc4b919a0cc1f3320b79c20",
+      "criterion": null
+    },
+    {
+      "name": "S4H3_sidecar:Analysis/MasterTests/test_01_r4c1_temporal_persistence.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H3_pin:Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md",
+      "passed": true,
+      "value": "aa740eb2419dcfebfc1532230823be7b5df4c3dc31d156701649c5572cf4037b",
+      "criterion": null
+    },
+    {
+      "name": "S4H3_sidecar:Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H3_pin:Analysis/MasterTests/outputs/r4c1_s4h_attempt_02/summary.json",
+      "passed": true,
+      "value": "20eaa579780061a8f839a586f3c08725d5098a0e2527857a3c54032c55bc69d7",
+      "criterion": null
+    },
+    {
+      "name": "S4H3_sidecar:Analysis/MasterTests/outputs/r4c1_s4h_attempt_02/summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H3_pin:Analysis/MasterTests/outputs/r4c1_s4h_attempt_02/detail.json",
+      "passed": true,
+      "value": "37068a4e93c919194a1d28608e2bab086dd0f36df1583b0d6b9fd589b3e32007",
+      "criterion": null
+    },
+    {
+      "name": "S4H3_sidecar:Analysis/MasterTests/outputs/r4c1_s4h_attempt_02/detail.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H3_parent_scope",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H4_pin:Analysis/MasterTests/test_01_r4c1_moving_principal.py",
+      "passed": true,
+      "value": "060adab2d7928c1ba072617796145d19a9a5f2943685829a69a4529dbcc10ccb",
+      "criterion": null
+    },
+    {
+      "name": "S4H4_sidecar:Analysis/MasterTests/test_01_r4c1_moving_principal.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H4_pin:Analysis/MasterTests/outputs/r4c1_s4h_principal_attempt_01/summary.json",
+      "passed": true,
+      "value": "79fdd57fb6f8f6682c40f9ea066b3f91a067ee8ec54397542100b21fa214352a",
+      "criterion": null
+    },
+    {
+      "name": "S4H4_sidecar:Analysis/MasterTests/outputs/r4c1_s4h_principal_attempt_01/summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H4_principal_parent",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H5_pin:Analysis/MasterTests/test_01_r4c1_moving_spectrum.py",
+      "passed": true,
+      "value": "369677a86adf1856e00e30f61f8e3256dd2d54034e172b653dfa7474e6d10aab",
+      "criterion": null
+    },
+    {
+      "name": "S4H5_sidecar:Analysis/MasterTests/test_01_r4c1_moving_spectrum.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H5_pin:Analysis/MasterTests/outputs/r4c1_s4h_spectrum_attempt_01/summary.json",
+      "passed": true,
+      "value": "a5abe1959655e4b278ffbd6282dfa3d8ef9e455297a485d49a10445292f78cca",
+      "criterion": null
+    },
+    {
+      "name": "S4H5_sidecar:Analysis/MasterTests/outputs/r4c1_s4h_spectrum_attempt_01/summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H5_parent_scope",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H6_pin:Analysis/MasterTests/test_01_r4c1_moving_metric.py",
+      "passed": true,
+      "value": "15dc947f35e9d3b03049bba4352a1e5c47b34bf12edc77d3c5252d33a683c3cf",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_sidecar:Analysis/MasterTests/test_01_r4c1_moving_metric.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H6_pin:Analysis/MasterTests/outputs/r4c1_s4h_metric_attempt_01/summary.json",
+      "passed": true,
+      "value": "f4ccfbb01969d848bc5390da5cd7008e4fd5ce14e2d2ef7109156189291e0020",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_sidecar:Analysis/MasterTests/outputs/r4c1_s4h_metric_attempt_01/summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H6_pin:Analysis/MasterTests/outputs/r4c1_s4h_metric_attempt_01/detail.json",
+      "passed": true,
+      "value": "c743348c84385ecd576d3a196f7e37f843d72ee2654b50d94deebf99611086a5",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_sidecar:Analysis/MasterTests/outputs/r4c1_s4h_metric_attempt_01/detail.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H6_parent_scope",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H3_chart_inverse",
+      "passed": true,
+      "value": "zero_matrix",
+      "criterion": null
+    },
+    {
+      "name": "S4H3_full_graph_identity",
+      "passed": true,
+      "value": "zero_matrix",
+      "criterion": null
+    },
+    {
+      "name": "S4H3_matrix_shapes",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_0",
+      "passed": true,
+      "value": "-H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_1",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_2",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_3",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_4",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_5",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_6",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_7",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_9",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_10",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_0_11",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_0",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_0_1",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_0_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_1",
+      "passed": true,
+      "value": "(-33*H**2 + 3*u_dot**2)/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_1_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_2",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_2_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_2_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_3",
+      "passed": true,
+      "value": "3*u_dot*v_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_3_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_4",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_4_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_4_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_5",
+      "passed": true,
+      "value": "3*r_dot*u_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_5_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_6",
+      "passed": true,
+      "value": "3*sqrt(3)*psi_dot*u_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_6_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_7",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_7_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_7_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_8_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_9",
+      "passed": true,
+      "value": "-sqrt(15)*u*v*v_dot/13 + sqrt(15)*u_dot*v**2/13 + 2*sqrt(15)*u_dot/3",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_9_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_9_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_10",
+      "passed": true,
+      "value": "-2*rho_m*u_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_10_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_1_11",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_11_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_1_11_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_0",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_1",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_2",
+      "passed": true,
+      "value": "-H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_3",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_4",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_5",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_6",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_7",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_9",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_10",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_2_11",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_0",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_0_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_0_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_1",
+      "passed": true,
+      "value": "3*u_dot*v_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_1_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_2",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_2_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_2_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_3",
+      "passed": true,
+      "value": "(-33*H**2 + 3*v_dot**2)/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_3_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_4",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_4_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_4_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_5",
+      "passed": true,
+      "value": "3*r_dot*v_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_5_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_6",
+      "passed": true,
+      "value": "3*sqrt(3)*psi_dot*v_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_6_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_7",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_7_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_7_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_8_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_9",
+      "passed": true,
+      "value": "sqrt(15)*u**2*v_dot/13 - sqrt(15)*u*u_dot*v/13 + 2*sqrt(15)*v_dot/3",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_9_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_9_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_10",
+      "passed": true,
+      "value": "-2*rho_m*v_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_10_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_3_11",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_11_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_3_11_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_0",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_1",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_2",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_3",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_4",
+      "passed": true,
+      "value": "-H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_5",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_6",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_7",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_9",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_10",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_4_11",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_0",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_0_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_0_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_1",
+      "passed": true,
+      "value": "3*r_dot*u_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_1_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_2",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_2_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_2_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_3",
+      "passed": true,
+      "value": "3*r_dot*v_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_3_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_4",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_4_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_4_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_5",
+      "passed": true,
+      "value": "(-33*H**2 + 3*r_dot**2)/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_5_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_6",
+      "passed": true,
+      "value": "3*sqrt(3)*psi_dot*r_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_6_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_7",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_7_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_7_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_8_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_9",
+      "passed": true,
+      "value": "2*sqrt(15)*r_dot/3",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_9_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_9_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_10",
+      "passed": true,
+      "value": "-2*r_dot*rho_m/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_10_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_5_11",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_11_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_5_11_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_0",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_0_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_0_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_1",
+      "passed": true,
+      "value": "3*sqrt(3)*psi_dot*u_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_1_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_2",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_2_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_2_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_3",
+      "passed": true,
+      "value": "3*sqrt(3)*psi_dot*v_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_3_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_4",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_4_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_4_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_5",
+      "passed": true,
+      "value": "3*sqrt(3)*psi_dot*r_dot/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_5_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_6",
+      "passed": true,
+      "value": "(-33*H**2 + 9*psi_dot**2)/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_6_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_7",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_7_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_7_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_8_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_9",
+      "passed": true,
+      "value": "-sqrt(5)*psi_dot",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_9_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_9_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_10",
+      "passed": true,
+      "value": "(-22*sqrt(3)*H*rho_m - 30*sqrt(3)*psi_dot*rho_m)/(165*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_10_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_6_11",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_11_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_6_11_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_0",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_1",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_2",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_3",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_4",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_5",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_6",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_7",
+      "passed": true,
+      "value": "-2*H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_9",
+      "passed": true,
+      "value": "-10*sqrt(33)*H*psi_dot/11 - 2*sqrt(33)*rho_m/33",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_10",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_7_11",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_0",
+      "passed": true,
+      "value": "(-15840*sqrt(6)*H*u*v*v_dot + 15840*sqrt(6)*H*u_dot*v**2 - 4680*sqrt(6)*r**2*u - 273*sqrt(6)*u**5 - 546*sqrt(6)*u**3*v**2 - 3640*sqrt(6)*u**3 - 273*sqrt(6)*u*v**4 - 3640*sqrt(6)*u*",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_0_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_1",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_1_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_2",
+      "passed": true,
+      "value": "(15840*sqrt(6)*H*u**2*v_dot - 15840*sqrt(6)*H*u*u_dot*v - 4680*sqrt(6)*r**2*v - 273*sqrt(6)*u**4*v - 546*sqrt(6)*u**2*v**3 - 3640*sqrt(6)*u**2*v - 273*sqrt(6)*v**5 - 3640*sqrt(6)*v",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_2_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_3",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_3_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_4",
+      "passed": true,
+      "value": "(-2*sqrt(6)*r**3 - 3*sqrt(6)*r*u**2 - 3*sqrt(6)*r*v**2 - 28*sqrt(6)*r)/(132*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_4_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_5",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_5_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_6",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_6_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_7",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_7_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_7_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_8",
+      "passed": true,
+      "value": "(-55*H**2 + 21*psi_dot**2 + 7*r_dot**2 + 10*rho_m + 7*u_dot**2 + 7*v_dot**2)/(11*H)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_8_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_9",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_9_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_9_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_10",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_10_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_8_11",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_11_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_8_11_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_0",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_1",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_2",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_3",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_4",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_5",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_6",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_7",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_9",
+      "passed": true,
+      "value": "-H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_10",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_9_11",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_0",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_0_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_0_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_1",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_1_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_2",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_2_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_2_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_3",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_3_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_4",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_4_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_4_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_5",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_5_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_6",
+      "passed": true,
+      "value": "2*sqrt(3)/15",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_6_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_7",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_7_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_7_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_8_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_9",
+      "passed": true,
+      "value": "sqrt(15)",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_9_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_9_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_10",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_10_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_10_11",
+      "passed": true,
+      "value": "-1",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_11_2",
+      "passed": true,
+      "value": "p",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_10_11_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_0",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_0_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_1",
+      "passed": true,
+      "value": "6*u_dot",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_1_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_2",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_2_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_3",
+      "passed": true,
+      "value": "6*v_dot",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_3_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_4",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_4_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_5",
+      "passed": true,
+      "value": "6*r_dot",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_5_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_6",
+      "passed": true,
+      "value": "6*sqrt(3)*psi_dot",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_6_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_7",
+      "passed": true,
+      "value": "-2*sqrt(55)/25",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_7_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_8",
+      "passed": true,
+      "value": "0",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_8_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_9",
+      "passed": true,
+      "value": "13*sqrt(15)*H + 2*sqrt(15)*psi_dot/5",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_9_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_10",
+      "passed": true,
+      "value": "6*rho_m",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_10_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_finite_C_remainder_11_11",
+      "passed": true,
+      "value": "-2*H - 2*psi_dot/5",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_no_unregistered_p_pole_11_11_2",
+      "passed": true,
+      "value": "396*H**2 + p**2 + 18*psi_dot**2 + 6*r_dot**2 + 6*u_dot**2 + 6*v_dot**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_all_144_bounded",
+      "passed": true,
+      "value": 144,
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_457",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_458",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_459",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_460",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_461",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_462",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_463",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_464",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_465",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_466",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_467",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_468",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_469",
+      "passed": true,
+      "value": "u**2 + v**2 + 13",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_470",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_471",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_472",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_473",
+      "passed": true,
+      "value": "u**2 + v**2 + 13",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_474",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_475",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_476",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_477",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_478",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_479",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_480",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_481",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_482",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_483",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_484",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_485",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_486",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_487",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_488",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_489",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_490",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_491",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_492",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_493",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_494",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_495",
+      "passed": true,
+      "value": "u**2 + v**2 + 13",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_496",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_497",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_498",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_499",
+      "passed": true,
+      "value": "u**2 + v**2 + 13",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_500",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_501",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_502",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_503",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_504",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_505",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_506",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_507",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_508",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_509",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_510",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_511",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_512",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_513",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_514",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_515",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_516",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_517",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_518",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_519",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_520",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_521",
+      "passed": true,
+      "value": "u**2 + v**2",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_522",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_523",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_524",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_525",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_526",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_527",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_528",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_529",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_530",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_531",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_532",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_533",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_534",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_535",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_536",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_537",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_538",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_539",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_540",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_541",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_542",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_543",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_544",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_545",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_546",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_547",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_548",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_549",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_550",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_551",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_552",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_553",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_554",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_555",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_556",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_557",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_558",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_559",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_560",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_561",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_562",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_563",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_564",
+      "passed": true,
+      "value": "3*u**2 + 3*v**2 + 26",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_565",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_566",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_pole_567",
+      "passed": true,
+      "value": "H",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_flow_derivatives_no_p",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H6_metric_flow_derivatives_finite_regular",
+      "passed": true,
+      "value": "Rational derivatives are finite where their inherited denominators are nonzero; interval suprema not computed.",
+      "criterion": null
+    },
+    {
+      "name": "S4H6_exact_p2_energy_cancellation",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H6_exact_p_energy_cancellation",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4H6_full_moving_Mdot_formula",
+      "passed": true,
+      "value": "Mdot=M0dot+(M1dot+H*M1)/p, from pdot=-Hp; M0dot and M1dot use every registered B1 flow component.",
+      "criterion": null
+    }
+  ]
+}

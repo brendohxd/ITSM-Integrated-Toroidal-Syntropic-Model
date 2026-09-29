@@ -1,0 +1,377 @@
+{
+  "K_Q": "NOT_DERIVED",
+  "MAT-001": "BLOCKED",
+  "Rule9_cleared": false,
+  "Stage4A": "CLOSED",
+  "UVIR-003": "IN_PROGRESS",
+  "V": "NOT_COMPUTED",
+  "candidate": "R4C1-v1",
+  "canonical_Test2_pass": false,
+  "checks": [
+    {
+      "name": "one_dimensional_FRW_action_variation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "regulator_sign_mutant_rejected",
+      "passed": true,
+      "residual": "-2*b*Derivative(psi(t, x), (x, 4))/a(t)**4"
+    },
+    {
+      "name": "three_dimensional_cubic_flux_variation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "homogeneous_B1_force_sign",
+      "passed": true,
+      "residual": "psi_ddot=-3H*psi_dot-beta*rho/K_Q"
+    },
+    {
+      "expected": "2/7",
+      "name": "B1_A_frozen",
+      "passed": true,
+      "value": "2/7"
+    },
+    {
+      "expected": "5/11",
+      "name": "B1_b_frozen",
+      "passed": true,
+      "value": "5/11"
+    },
+    {
+      "expected": "2/5",
+      "name": "B1_beta_frozen",
+      "passed": true,
+      "value": "2/5"
+    },
+    {
+      "expected": "3",
+      "name": "B1_K_frozen",
+      "passed": true,
+      "value": "3"
+    },
+    {
+      "mean_source": "0.08000000000000002",
+      "name": "static_full_density_zero_mode_rejected",
+      "passed": true
+    },
+    {
+      "name": "grid_17_analytic_A_zero_control",
+      "passed": true,
+      "value": 9.833735638302063e-13
+    },
+    {
+      "name": "grid_17_finite_and_converged",
+      "optimizer_message": "damped Newton residual 3.257e-08",
+      "passed": true
+    },
+    {
+      "name": "grid_17_zero_mean_and_positive_density",
+      "passed": true,
+      "values": [
+        -1.446250225442907e-18,
+        7.231251127214535e-19,
+        0.08204322803793182
+      ]
+    },
+    {
+      "name": "grid_17_strong_collocation_residual",
+      "passed": true,
+      "value": 3.2571379684847035e-08
+    },
+    {
+      "name": "grid_17_regulator_omission_rejected",
+      "passed": true,
+      "value": 0.9192770669447443
+    },
+    {
+      "name": "grid_17_weak_cos_x",
+      "passed": true,
+      "value": 5.280646529317172e-09
+    },
+    {
+      "name": "grid_17_weak_sin_x",
+      "passed": true,
+      "value": 4.5296089610410445e-18
+    },
+    {
+      "name": "grid_17_weak_cos_y",
+      "passed": true,
+      "value": 1.2521226622835416e-08
+    },
+    {
+      "name": "grid_17_weak_sin_y",
+      "passed": true,
+      "value": 7.171880854981653e-18
+    },
+    {
+      "name": "grid_17_weak_cos_z",
+      "passed": true,
+      "value": 2.546702680849271e-08
+    },
+    {
+      "name": "grid_17_weak_sin_z",
+      "passed": true,
+      "value": 1.2739525202927939e-18
+    },
+    {
+      "name": "off_shell_directional_variation",
+      "passed": true,
+      "value": 1.7164312526851688e-08
+    },
+    {
+      "name": "grid_25_analytic_A_zero_control",
+      "passed": true,
+      "value": 5.447318222851537e-12
+    },
+    {
+      "name": "grid_25_finite_and_converged",
+      "optimizer_message": "damped Newton residual 3.257e-08",
+      "passed": true
+    },
+    {
+      "name": "grid_25_zero_mean_and_positive_density",
+      "passed": true,
+      "values": [
+        -4.547473508864641e-19,
+        -1.3642420526593924e-18,
+        0.08094623584226267
+      ]
+    },
+    {
+      "name": "grid_25_strong_collocation_residual",
+      "passed": true,
+      "value": 3.257185598779947e-08
+    },
+    {
+      "name": "grid_25_regulator_omission_rejected",
+      "passed": true,
+      "value": 0.9192772004081189
+    },
+    {
+      "name": "grid_25_weak_cos_x",
+      "passed": true,
+      "value": 5.280653745308519e-09
+    },
+    {
+      "name": "grid_25_weak_sin_x",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "name": "grid_25_weak_cos_y",
+      "passed": true,
+      "value": 1.2521232264764228e-08
+    },
+    {
+      "name": "grid_25_weak_sin_y",
+      "passed": true,
+      "value": 1.0444529368812423e-17
+    },
+    {
+      "name": "grid_25_weak_cos_z",
+      "passed": true,
+      "value": 2.5467003126350806e-08
+    },
+    {
+      "name": "grid_25_weak_sin_z",
+      "passed": true,
+      "value": 2.3162672552639766e-17
+    },
+    {
+      "name": "grid_33_analytic_A_zero_control",
+      "passed": true,
+      "value": 1.514613879030941e-11
+    },
+    {
+      "name": "grid_33_finite_and_converged",
+      "optimizer_message": "damped Newton residual 3.257e-08",
+      "passed": true
+    },
+    {
+      "name": "grid_33_zero_mean_and_positive_density",
+      "passed": true,
+      "values": [
+        -3.9543798077752743e-19,
+        7.908759615550549e-19,
+        0.08054336929122986
+      ]
+    },
+    {
+      "name": "grid_33_strong_collocation_residual",
+      "passed": true,
+      "value": 3.2571914987650403e-08
+    },
+    {
+      "name": "grid_33_regulator_omission_rejected",
+      "passed": true,
+      "value": 0.9192772145168995
+    },
+    {
+      "name": "grid_33_weak_cos_x",
+      "passed": true,
+      "value": 5.280654344007008e-09
+    },
+    {
+      "name": "grid_33_weak_sin_x",
+      "passed": true,
+      "value": 1.3210655729360248e-17
+    },
+    {
+      "name": "grid_33_weak_cos_y",
+      "passed": true,
+      "value": 1.2521232807887119e-08
+    },
+    {
+      "name": "grid_33_weak_sin_y",
+      "passed": true,
+      "value": 5.728057757652295e-18
+    },
+    {
+      "name": "grid_33_weak_cos_z",
+      "passed": true,
+      "value": 2.5467001068573464e-08
+    },
+    {
+      "name": "grid_33_weak_sin_z",
+      "passed": true,
+      "value": 1.6558473270150273e-17
+    },
+    {
+      "name": "grid_25_33_fundamental_x",
+      "passed": true,
+      "value": 2.8502489362176062e-09
+    },
+    {
+      "name": "grid_25_33_fundamental_y",
+      "passed": true,
+      "value": 1.4111926700994746e-10
+    },
+    {
+      "name": "grid_25_33_fundamental_z",
+      "passed": true,
+      "value": 1.296967352540383e-09
+    }
+  ],
+  "control": "R4C1-T2P1",
+  "directional_control": {
+    "analytic": 0.939420755119171,
+    "central_difference": 0.9394207722834835,
+    "off_shell_energy": 50.60148942588709,
+    "relative_discrepancy": 1.7164312526851688e-08
+  },
+  "full_metric_frame_dust_constraints_solved": false,
+  "gate_effect": "NONE",
+  "grid_25_33_fundamental_relative_changes": {
+    "x": 2.8502489362176062e-09,
+    "y": 1.4111926700994746e-10,
+    "z": 1.296967352540383e-09
+  },
+  "grids": [
+    {
+      "energy": -2.2845971089867563,
+      "fundamental_cosine_coefficients": {
+        "x": -0.016307574704854125,
+        "y": -0.032468753954798,
+        "z": -0.04837667073457966
+      },
+      "n": 17,
+      "omit_b_residual_normalized": 0.9192770669447443,
+      "optimizer_iterations": 2,
+      "optimizer_message": "damped Newton residual 3.257e-08",
+      "optimizer_success": true,
+      "psi_mean": -1.446250225442907e-18,
+      "psi_rms": 0.04278119153417443,
+      "source_mean": 7.231251127214535e-19,
+      "strong_residual_normalized": 3.2571379684847035e-08,
+      "total_density_min": 0.08204322803793182,
+      "weak_residuals_normalized": {
+        "cos_x": 5.280646529317172e-09,
+        "cos_y": 1.2521226622835416e-08,
+        "cos_z": 2.546702680849271e-08,
+        "sin_x": 4.5296089610410445e-18,
+        "sin_y": 7.171880854981653e-18,
+        "sin_z": 1.2739525202927939e-18
+      }
+    },
+    {
+      "energy": -7.2657907583728765,
+      "fundamental_cosine_coefficients": {
+        "x": -0.016307574143112288,
+        "y": -0.0324687539000935,
+        "z": -0.048376671469913056
+      },
+      "n": 25,
+      "omit_b_residual_normalized": 0.9192772004081189,
+      "optimizer_iterations": 2,
+      "optimizer_message": "damped Newton residual 3.257e-08",
+      "optimizer_success": true,
+      "psi_mean": -4.547473508864641e-19,
+      "psi_rms": 0.042781191822283425,
+      "source_mean": -1.3642420526593924e-18,
+      "strong_residual_normalized": 3.257185598779947e-08,
+      "total_density_min": 0.08094623584226267,
+      "weak_residuals_normalized": {
+        "cos_x": 5.280653745308519e-09,
+        "cos_y": 1.2521232264764228e-08,
+        "cos_z": 2.5467003126350806e-08,
+        "sin_x": 0.0,
+        "sin_y": 1.0444529368812423e-17,
+        "sin_z": 2.3162672552639766e-17
+      }
+    },
+    {
+      "energy": -16.71108624573686,
+      "fundamental_cosine_coefficients": {
+        "x": -0.016307574096631642,
+        "y": -0.032468753895511536,
+        "z": -0.04837667153265602
+      },
+      "n": 33,
+      "omit_b_residual_normalized": 0.9192772145168995,
+      "optimizer_iterations": 2,
+      "optimizer_message": "damped Newton residual 3.257e-08",
+      "optimizer_success": true,
+      "psi_mean": -3.9543798077752743e-19,
+      "psi_rms": 0.04278119184717566,
+      "source_mean": 7.908759615550549e-19,
+      "strong_residual_normalized": 3.2571914987650403e-08,
+      "total_density_min": 0.08054336929122986,
+      "weak_residuals_normalized": {
+        "cos_x": 5.280654344007008e-09,
+        "cos_y": 1.2521232807887119e-08,
+        "cos_z": 2.5467001068573464e-08,
+        "sin_x": 1.3210655729360248e-17,
+        "sin_y": 5.728057757652295e-18,
+        "sin_z": 1.6558473270150273e-17
+      }
+    }
+  ],
+  "passed": 46,
+  "physical_periodic_solution_verified": false,
+  "physics_pass": false,
+  "quasistatic_error_bounded": false,
+  "review_status": "DEFERRED",
+  "runtime": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "scope": "aligned fixed FRW and static contrast pseudospectral control; no coupled physical T3 solution",
+  "script_sha256": "8e1b398c70cd1308252d743acbb4d2a7fcef02c28d3b79b0f124f5c3f85a6727",
+  "source_sha256": {
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md": "81c7138568d44fd3197b88cb21efe67b17c406ada941f7ff778c2f8821ae074b",
+    "Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md": "b999dff43b81f1dc73a9f584bd1c6a1856c559fe15b896719aa82300c8327883",
+    "Theory/Gates/ITSM_TEST_02_T3_TOPOLOGY_ADDENDUM_2026-09-25.md": "a4f251ff3d751a60ff4130d61a060f199c825604f877e1aeb5dd5515db8f317c",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_COEFFICIENT_IDENTIFIABILITY_REPORT_2026-09-25.md": "c4af4084ae83f7ed70d63f44700a0ebfc2c394ed7d79cd0061e3efe279b7dc0a",
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c",
+    "Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_CONTRACT_2026-09-29.md": "2f660751bd0155833643b3388672bb0462dbe5af703385875eda370b021d3645"
+  },
+  "status": "ACTION_DERIVED_MEAN_OBSTRUCTION_CONDITIONAL_PERIODIC_SNAPSHOT_ONLY",
+  "total": 46,
+  "validation": "PASS"
+}

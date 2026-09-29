@@ -1,0 +1,13 @@
+{
+  "schema": "r4c1-s4h-moving-spectrum-detail-v1",
+  "status": "PRINCIPAL_SPECTRUM_CONDITIONAL_REGULAR_B1",
+  "charpoly": "lambda**2*(lambda**2 + 1)**2*(3*lambda**2 + 1)*(13*lambda**2 + u**2 + v**2 + 13)/39",
+  "squarefree_annihilator": "39*lambda**7 + lambda**5*(3*u**2 + 3*v**2 + 91) + lambda**3*(4*u**2 + 4*v**2 + 65) + lambda*(u**2 + v**2 + 13)",
+  "angular_charge": "a**3*(u*v_dot - u_dot*v)",
+  "squared_frequencies": [
+    "1",
+    "1/3",
+    "u**2/13 + v**2/13 + 1"
+  ],
+  "regular_domain": "real finite state, a>0, H>0, rho_m>0, J=1, k!=0; the exact [0,4] solution and physical p cutoff are unproved"
+}

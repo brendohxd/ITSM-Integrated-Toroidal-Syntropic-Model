@@ -53,14 +53,31 @@ is:
    phase pair in a graph-equivalent norm, while the symmetric part still
    grows at order `p`. S4G constructs an exact positive graph-equivalent
    metric that cancels the order-`p` defect and has bounded formal
-   high-p energy rate at the B1 initial event. S4H now verifies the
-   moving regular-chart minor and reconstructs 24 sampled B1 symbols,
-   but its exact moving leading coefficients and uniform interval bound
-   remain unproved. Continue that single temporal-persistence gate;
-   full IVP remains open.
+   high-p energy rate at the B1 initial event. The first S4H report
+   verifies the moving regular-chart minor and reconstructs 24 sampled
+   B1 symbols. Its moving-symbol continuation now derives all 144 leading
+   coefficients exactly, proves conditional slow-block spectral persistence
+   and constructs a pointwise positive metric with bounded formal high-p
+   energy rate. A subsequent exact homogeneous B1 continuation proof
+   establishes existence and regular-chart bounds through [0,4] for the
+   registered classical solution. S4H-U then supplies explicit uniform
+   metric/energy constants on t in [0,4] for the formal reduced graph only,
+   requiring p>=8*10^13. PD1 then checks the physical-domain/GR necessary
+   conditions (19/19 local checks): B1's `Lambda=2` is a condensate-potential
+   scale, not a certified EFT cutoff; fixed-B1 zero exchange is not pure GR;
+   the registered eta path is canonically nonuniform. Physical EFT overlap,
+   the full constrained IVP and a healthy continuous GR limit remain open.
+   Continue these viability questions before Test-1 acceptance.
 3. **P0 — Test 2 weak-field and periodic-`T^3` closure.** Derive the force law
    and its domain from the frozen action, retaining the nonspherical rejection
-   and harmonic-flux correction.
+   and harmonic-flux correction. T2P1 now derives the aligned fixed-FRW
+   scalar equation and its positive-dust mean-mode obstruction; a separate
+   static contrast snapshot passes 46/46 local checks with `b>0`. This
+   does not solve perturbed metric/frame/dust/Euler constraints, bound the
+   quasistatic error, derive the projection factor or close Test 2. Next:
+   a coupled periodic-background weak-field reduction with an admissible
+   physical domain. See
+   `Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_REPORT_2026-09-29.md`.
 4. **P0 — Test 3 blind coefficient audit.** Only after an action-level force
    response exists, determine whether `C_chi` and `a0(z)` are identifiable
    without target insertion.
@@ -86,7 +103,7 @@ checks continue to hold dependent uses.
 |---|---|---|---|
 | P0 | Master programme Test 1 — covariant action and source vector | **active priority; action-input hold** | Complete and freeze the full off-shell matter/plenum/reservoir action and interaction-stress split before variation; then derive currents and verify regular zero-coupling and declared GR limits. Contract: `Theory/Gates/ITSM_MASTER_TEST_01_SOURCE_VECTOR_CLOSURE_CONTRACT_2026-09-24.md` |
 | P0 | Master Tests 1–3 bounded derivation audit | **local calculations complete; provisional reuse allowed; review DEFERRED** | Conditional source/witness 29/29; weak-field 11/11; coefficient 9/9; periodic T3 addendum 19/19; v7.2 transcription-chain rejection 10/10. Full disposition and deferred register retain scope and substantive programme requirements. No parent promotion or complete blind coefficient audit |
-| P0 | Approved R4C1 four-dimensional reservoir candidate | **provisional research continues; full coupled well-posedness/stability/GR/matching holds retained** | Current 119/119; variation/Ward 162/162; B1 48/48; G1 56/56; C1 63/63; S1 71/71; S2 56/56; S3 57/57. S4A 99/99 and S4B 169/169 reject two specified fixed-graph instantaneous differential bounds. S4C 117/117 finds the frame/dust pair leaks at order p. S4D 125/125 stops the unweighted order-p recursion at an order-p^2 phase coupling. S4E 147/147 finds a skew leading phase pair and rejects graph-equivalent diagonal weighting as an entrywise order-p repair. S4F 208/208 completes the full B1 symbol: its degree-two pair is skew but the candidate norm has order-p symmetric growth. S4G attempt 02 passes 194/194, constructs an exact positive graph-equivalent correction and bounded formal high-p energy rate at the B1 initial event. S4H attempt 02 passes 189/189 **local reconstruction** checks, but remains `INCOMPLETE_TEMPORAL_PERSISTENCE`: exact moving leading coefficients, uniform energy constants and the physical p-domain are not derived. The failed double-precision S4H attempt 01 is preserved. Full IVP, wider phase cone, quartic dispersion, homogeneous/singular sectors, GR and matching remain open. Failed S2/S3 and both S4D attempts remain preserved. Review deferred; no parent promotion. See `Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md` |
+| P0 | Approved R4C1 four-dimensional reservoir candidate | **provisional research continues; full coupled well-posedness/stability/GR/matching holds retained** | Current 119/119; variation/Ward 162/162; B1 48/48; G1 56/56; C1 63/63; S1 71/71; S2 56/56; S3 57/57. S4A 99/99 and S4B 169/169 reject two specified fixed-graph instantaneous differential bounds. S4C 117/117 finds the frame/dust pair leaks at order p. S4D 125/125 stops the unweighted order-p recursion at an order-p^2 phase coupling. S4E 147/147 finds a skew leading phase pair and rejects graph-equivalent diagonal weighting as an entrywise order-p repair. S4F 208/208 completes the full B1 symbol: its degree-two pair is skew but the candidate norm has order-p symmetric growth. S4G attempt 02 passes 194/194, constructs an exact positive graph-equivalent correction and bounded formal high-p energy rate at the B1 initial event. S4H attempt 02 passes 189/189 **local reconstruction** checks. The moving-symbol continuation then derives all 144 coefficients, conditional spectral persistence and a pointwise formal energy bound (278/278, 193/193, 212/212, 573/573 local checks). B1G then proves exact homogeneous interval regularity for the registered B1 control (40/40 local checks); S4H-U attempt 03 adds a formal [0,4] uniform reduced-graph envelope only for p>=8*10^13 (1093/1093 local checks). PD1 adds a 19/19 exact necessary-condition audit: fixed-B1 zero exchange is not pure GR, the registered eta path is canonically nonuniform, and no physical EFT cutoff or overlap follows from the action's potential scale or formal coefficient scales. The full constrained IVP remains unproved. The failed double-precision S4H attempt 01 is preserved. Full IVP, wider phase cone, quartic dispersion, homogeneous/singular sectors, GR and matching remain open. Failed S2/S3 and both S4D attempts remain preserved. Review deferred; no parent promotion. See `Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md` |
 | Deferred | Tests 1-3 independent review | **DEFERRED_BY_OPERATOR; outside research critical path** | Preserve existing partial reports and sealed snapshots. `docs/ITSM_MASTER_TEST_REVIEW.md` prepares current mandates and ten receipts when needed. Resume reviewers only when directed; Rule 9 remains NOT_CLEARED. Review-only delay does not prevent eligible provisional work |
 | P0 | UVIR-to-MAT fail-closed handoff audit | **completed** | Eight exact upstream contracts pass; corrupted/mismatched input fails; docs and checkpoint pushed |
 | P0 | MAT basis-covariant physical-mode vertex projection | **completed** | Projection identity, field-basis covariance, kinetic normalization and negative controls pass without computing $V$ |

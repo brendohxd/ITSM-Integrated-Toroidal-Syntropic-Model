@@ -2,7 +2,7 @@
 
 Date: 25 September 2026. Operator decision:
 `review_status=DEFERRED`, `Rule9_cleared=false` for all outstanding Rule-9 work.
-Evidence register updated 29 September 2026 through R4C1-S4H.
+Evidence register updated 29 September 2026 through R4C1-T2P1.
 Governing [policy](../Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md).
 The rows below apply to bounded result scopes; they do not close parent gates.
 Review resumes when directed by the operator. Existing partial reports and
@@ -114,11 +114,140 @@ was not archived, so it is not a source-complete replay packet.
 `PROCEED_PROVISIONALLY` applies only to using this chart and sample
 diagnostic to derive the exact moving principal symbol. It inherits
 R9-MT1-S4G/S4F/S4E/S4D/S4C/S4B/S4A/S3/S2/S1/B1/VARIATION.
-`HOLD_SUBSTANTIVE` remains for the 144 exact moving leading coefficients,
-uniform interval symmetrizer/energy bound, physical EFT range, full IVP,
-all-sector stability and canonical Test-1 use. Independent review must
+At this initial screen, `HOLD_SUBSTANTIVE` covered the 144 exact moving
+leading coefficients, uniform interval symmetrizer/energy bound, physical
+EFT range, full IVP, all-sector stability and canonical Test-1 use. The
+moving addendum below later resolves only the coefficient task. Independent review must
 check the minor/domain proof, background-flow derivative terms, numerical
 precision boundary and failed first attempt. `review_status=DEFERRED`,
+`Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
+
+### R9-MT1-S4H-MOVING — 29 September scoped addendum
+
+The [moving-symbol report](../Gates/RES-001/RES001_R4C1_S4H_MOVING_SYMBOL_REPORT_2026-09-29.md)
+(SHA-256 `cddfba06e0c9cb73ac3647de3c6dfc90a36fe6448fd9cccddd72a0728aab7899`)
+and its four fresh exact calculation receipts supersede **only** the earlier
+S4H statement that the 144 moving C2/C1 coefficients were absent. The
+principal, spectrum, metric and rational-energy screens pass 278/278,
+193/193, 212/212 and 573/573 local checks; the final summary has 75
+independently rechecked source hashes with zero mismatches. On any regular
+exact B1 continuation, the conserved nonzero angular charge excludes the
+slow-frequency collision; an explicit pointwise positive metric cancels the
+formal p-squared and p energy defects. The numerical B1 CSV is not an
+interval proof; the subsequent B1G addendum supplies one for the homogeneous
+background only.
+
+`PROCEED_PROVISIONALLY` permits using these exact conditional identities to
+design a rigorous interval and physical-domain test. Inherits R9-MT1-S4H/
+S4G/S4F/S4E/S4D/S4C/S4B/S4A/S3/S2/S1/B1/VARIATION. `HOLD_SUBSTANTIVE`
+continues for explicit uniform time-domain metric/energy constants, physical
+EFT cutoff, constrained IVP, singular/zero branches, all sectors, healthy GR
+recovery, canonical Test 1 and downstream use. Independent review must check
+the full-flow derivative, all-state characteristic/minimal polynomials,
+angular-charge argument, projector poles, positive-metric certificate and
+pointwise-versus-interval distinction. `review_status=DEFERRED`,
+`Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
+
+### R9-MT1-B1G — 29 September scoped addendum
+
+The [exact homogeneous regularity report](../Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md)
+(SHA-256 `82708666dfce4ef214b614bc7da31b294d7569539b97292aaa9a79e906e6266f`)
+and [attempt-01 receipt](../../Analysis/MasterTests/outputs/r4c1_b1_global_regularity_attempt_01/summary.json)
+(SHA-256 `f28578a16cda58f907e5c8af97023aedfb818919b2eff131a70dbaf70f767caa`)
+record 40/40 local algebra/source checks. The exact B1 energy is positive,
+the Friedmann constraint propagates, and dust/charge integrals remain
+nonzero. Explicit finite-T bounds and the locally Lipschitz ODE continuation
+theorem establish a unique forward homogeneous solution regular on the
+registered [0,4] interval. This supersedes the earlier **background-
+existence/chart** uncertainty, not the perturbation estimate hold.
+
+`PROCEED_PROVISIONALLY` permits using these exact homogeneous bounds to
+derive explicit uniform moving-metric and energy constants. Inherits
+R9-MT1-B1/S4H-MOVING/S4H/S4G/S4F/S4E/S4D/S4C/S4B/S4A/S3/S2/S1/VARIATION.
+`HOLD_SUBSTANTIVE` remains for a uniform perturbation estimate, physical
+EFT range, full constrained IVP, singular/zero modes, healthy GR, canonical
+Test 1, Tests 2/3 and downstream use. Independent review must check the
+potential signs, exact constraint identity, positive-root argument,
+finite-T bounds and ODE continuation theorem. `review_status=DEFERRED`,
+`Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
+
+### R9-MT1-S4HU — 29 September scoped addendum
+
+The [formal interval-envelope report](../Gates/RES-001/RES001_R4C1_S4H_UNIFORM_ENVELOPE_REPORT_2026-09-29.md)
+(SHA-256 3517579269b26bed5e9c03315dba67d7241442ec690f332b3808576861001314)
+and [attempt-03 receipt](../../Analysis/MasterTests/outputs/r4c1_s4h_uniform_attempt_03/summary.json)
+(SHA-256 23ef971f2a708e8dcccb6f609767a6d680fcc24adf45a9bd243043193817b2b0)
+record 1093/1093 local checks, including exact denominator and p-degree
+classification plus five positive/rejection controls. Eighty-one direct
+and inherited source pins and sidecars were independently rechecked with
+zero mismatch. Attempt 01's expected-digest failure and attempt 02's
+successful pre-mutation constants remain preserved.
+
+The B1G box and moving-metric identities support explicit interval
+constants only on the conditional reduced regular B1 graph with
+t in [0,4] and p>=8*10^13. This **supersedes only** the prior absence
+of a formal uniform interval envelope. The sufficient comoving
+k>=4.8*10^15 threshold is vastly above ordinary sampled modes; no
+action-derived physical EFT cutoff has been supplied. The formal domain
+may be physically empty. No full constrained IVP, singular/zero modes,
+all-sector stability, healthy GR recovery or canonical Test 1 follows.
+
+PROCEED_PROVISIONALLY applies to using this bounded formal estimate for
+the next diagnostic, inheriting R9-MT1-B1G/S4H-MOVING/S4H/S4G/S4F/S4E/
+S4D/S4C/S4B/S4A/S3/S2/S1/B1/VARIATION. HOLD_SUBSTANTIVE remains for
+physical mode overlap, the full system, GR, matching, Tests 1-3,
+downstream predictions and publication. Independent review must audit
+the rational box, complete flow derivative, all denominator classes,
+algebraic coefficient ceilings, p-degree checks, and full energy
+identity. review_status=DEFERRED, Rule9_cleared=false,
+physics_pass=false, gate_effect=NONE.
+
+### R9-MT1-PD1 — 29 September scoped addendum
+
+The [physical-domain preflight report](../Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md)
+(SHA-256 2f151504d695ee442585653982cbbabfca2f520e864a802de306c0b013f3abc4)
+and [attempt-01 receipt](../../Analysis/MasterTests/outputs/r4c1_pd1_attempt_01/summary.json)
+(SHA-256 a239aa72782c16bee3d96c7666afee779a43561c6b1e8a1ad2acc29b833d2675)
+record 19/19 exact local checks with zero failed/unknown checks. The frozen
+action, B1 literal, Test-1 contract, G1, S2, S4H-U and PD1 contract were
+source-pinned. The result inherits R9-MT1-G1/S2/S4HU/B1/VARIATION and their
+upstream dependencies; none is independently cleared here.
+
+PROCEED_PROVISIONALLY applies to reusing the **necessary conditions**:
+fixed-B1 `G_cos/G_static=5/6` in G1's isolated frame/metric control,
+registered eta-family canonical coefficient divergence, and the distinction
+between the S4H-U formal momentum range and an uncomputed physical range.
+No substantive blocker prevents those exact scoped negative/unknown
+classifications. HOLD_SUBSTANTIVE still applies to any claim of a physically
+populated high-p window, all-path GR no-go, healthy alternative limit, full
+constrained IVP, canonical Test-1 closure, Tests 2/3 or predictions. The B1
+`Lambda=2` condensate potential parameter and the two coefficient scales
+are not established EFT cutoffs. Review should inspect the normalization,
+source-role interpretation and conditional-domain logic. Claim stays
+`CONDITIONAL`; review_status=DEFERRED, Rule9_cleared=false,
+physics_pass=false, gate_effect=NONE.
+
+### R9-MT2-T2P1 — 29 September scoped addendum
+
+The [periodic-force report](../Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_REPORT_2026-09-29.md)
+(SHA-256 `5f178a121aae03fb5b4d47cf383586f0496a7d18262fc5b6069dc8be0fc658ad`)
+and [attempt-02 receipt](../../Analysis/MasterTests/outputs/r4c1_t2p1_attempt_02/summary.json)
+(SHA-256 `fb59f3bf28e1b57c5294448f011731e805fe2f7928d12d40de210abb24f762bc`)
+record 46/46 local checks for the action-derived fixed-FRW equation,
+periodic mean-mode obstruction and conditional three-dimensional static
+contrast snapshot. The first numerical attempt failed 6/46 frozen checks
+and is preserved. The corrected solver retains the source, parameters,
+grids and thresholds; neither attempt is independent scientific review.
+
+`PROCEED_PROVISIONALLY` allows reuse of the exact mean condition and the
+numerical contrast method **within their frozen-frame scope**. It inherits
+R9-MT1-VARIATION/B1/C1/G1, R9-MT2 topology and their earlier dependencies;
+none is cleared. `HOLD_SUBSTANTIVE` remains for the coupled perturbed
+metric/frame/dust/Euler system, quasistatic error, physical periodic
+solution, projection factor, Test-2 acceptance and Test-3 coefficient.
+Review must check the signs and auxiliary boundary convention, mean-mode
+logic, weak residuals, failed first attempt, corrected solver and limits
+of grid convergence. Claim stays `CONDITIONAL`; `review_status=DEFERRED`,
 `Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
 
 ## Route triage and continuation decision — 26 September 2026

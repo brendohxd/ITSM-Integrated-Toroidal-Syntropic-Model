@@ -2806,3 +2806,117 @@ R9-MT1-S4H is deferred and inherits S4G through VARIATION review debt.
 The 144 exact moving leading coefficients, uniform metric/energy bound,
 physical cutoff and full constrained IVP remain `NOT_PROVED`. No parent,
 MAT/UVIR, Test 2/3 or publication promotion follows.
+
+## 2026-09-29 - R4C1-S4H exact moving-symbol continuation
+
+Continued the already frozen S4H contract without changing the R4C1
+action, B1 inputs or prior receipts. The exact moving-chart reconstruction
+now yields all 144 `C2/C1` coefficients, replays S4G at the initial event
+and retains the complete fixed-comoving-`k` flow. The only order-`p^2`
+phase pair stays skew. The slow block's all-state characteristic and
+squarefree annihilating polynomials show conditional semisimple imaginary
+frequencies; exact `a^3(u*v_dot-v*u_dot)=1` excludes their collision on
+any finite regular B1 continuation.
+
+Constructed exact polynomial projectors and a sum-of-squares positive
+moving metric. The formal `p^2` and `p` energy coefficients cancel after
+the symmetric `M1/p` correction. Full B1-flow differentiation of `M0/M1`
+and all 144 rational remainder limits give a bounded formal high-`p`
+energy rate **pointwise** on the regular domain. The four fresh
+non-overwriting attempt-01 receipts pass 278/278, 193/193, 212/212 and
+573/573 local checks; 75 final-chain input hashes independently recheck
+with zero mismatch. Owning report:
+`RES-001/RES001_R4C1_S4H_MOVING_SYMBOL_REPORT_2026-09-29.md`.
+
+The registered 801-point B1 trajectory is not an interval existence or
+regularity proof. No explicit uniform metric/energy constants, physical
+EFT cutoff, constrained IVP, singular/zero-mode or all-sector stability
+follow. `physics_pass=false`, `gate_effect=NONE`,
+`Rule9_cleared=false`, R9-MT1-S4H-MOVING deferred. Master Tests 1-3,
+MAT-001, UVIR-003, Stage 4A and publication holds are unchanged.
+
+## 2026-09-29 - R4C1-B1G exact homogeneous regularity
+
+Froze the B1G contract without changing the action, background inputs,
+S4H contract or prior receipts. Exact energy and Friedmann-constraint
+identities, conserved dust and angular charge, and explicit finite-time
+bounds show that the registered positive-root homogeneous B1 solution
+continues through `[0,4]` in its regular chart. The fresh non-overwriting
+attempt-01 receipt passes 40/40 local checks. Its owning report is
+`RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md`.
+
+The preceding S4H-MOVING paragraph correctly records what was unproved
+at that earlier calculation; B1G now resolves the homogeneous existence
+item only. Uniform perturbation metric/energy constants, a physical EFT
+domain, the full constrained IVP, healthy GR limit, Test 1 and Tests 2/3
+remain open. `physics_pass=false`, `gate_effect=NONE`,
+`Rule9_cleared=false`; R9-MT1-B1G and inherited review are deferred.
+MAT-001, UVIR-003, Stage 4A and publication holds are unchanged.
+
+## 2026-09-29 - R4C1-S4H-U uniform formal interval envelope
+
+Froze a separate S4H-U contract and used B1G's exact finite-time bounds
+to enclose the registered regular homogeneous B1 state on [0,4].
+The unchanged moving generator, metric, full B1-flow derivatives and
+all rational remainder entries yield explicit uniform Frobenius bounds.
+For the reduced nonzero-mode graph, p0=8*10^13 gives
+I/8<=M<=(10^40+1/8)I and a Gronwall rate below 10^62.
+Formal fixed-comoving modes require k>=4.8*10^15.
+
+Attempt 01 failed a mistyped source digest before calculation and remains
+preserved. Attempt 02 established the constants; attempt 03 reproduced
+them with five positive/rejection controls (1093/1093 local checks).
+All 81 recorded source pins and sidecars rechecked with no mismatch.
+Owning report:
+RES-001/RES001_R4C1_S4H_UNIFORM_ENVELOPE_REPORT_2026-09-29.md.
+
+The physical EFT cutoff and its overlap with this enormous formal
+high-p domain are not known. No full constrained IVP, GR recovery,
+canonical Test 1, weak-field law, blind coefficient, MAT/UVIR, Rule-9 or
+publication promotion follows. physics_pass=false, gate_effect=NONE;
+R9-MT1-S4HU and inherited reviews deferred.
+
+## 2026-09-29 - R4C1-PD1 physical-domain and GR preflight
+
+Froze the PD1 necessary-condition contract before its first executable
+receipt. The new exact audit parses the pinned B1 parameter literal without
+running older receipt producers, and passes 19/19 local checks. It verifies
+the normalized-coupling equality condition for local and cosmological
+Newton responses, the fixed-B1 ratio 5/6 and the registered eta-family
+canonical divergence. Bare-`c_i` substitution is rejected.
+
+The owning report is
+`RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md`.
+The B1 `Lambda=2` key is a condensate-potential scale, not a physical EFT
+cutoff. Formal regulator/cubic coefficient scales are not cutoffs either;
+physical overlap with S4H-U's huge sufficient `p` domain remains unknown.
+This is not an all-path GR no-go or a healthy replacement path.
+`physics_pass=false`, `gate_effect=NONE`; canonical Test 1, full IVP,
+continuous GR limit, Tests 2/3, MAT/UVIR and publication holds remain.
+R9-MT1-PD1 and inherited reviews are deferred, not cleared.
+
+## 2026-09-29 - R4C1-T2P1 periodic-force contrast and mean mode
+
+Froze a T2P1 contract before numerical execution, retaining the unchanged
+R4C1 action, B1 parameters and C1 force normalization. The aligned
+flat-FRW first variation yields a scalar equation with both the cubic
+force and finite `b` regulator. Its exact `T^3` spatial mean requires a
+time-dependent scalar mean for positive dust in this fixed-frame route;
+a fully static positive-total-source shortcut is incompatible.
+
+After subtracting the mean and declaring a static contrast snapshot,
+the first L-BFGS numerical attempt failed six of 46 frozen local checks.
+The receipt remains preserved. A damped Newton solver with the same
+source, grids, coefficients and thresholds passes 46/46 local checks
+on the 17/25/33 three-dimensional grids. Strong and weak residuals,
+grid convergence, a finite-`b` omission mutation, an analytic A=0
+control and an off-shell energy-gradient check are recorded in the
+non-overwriting attempt-02 receipt. Owning report:
+`RES-001/RES001_R4C1_PERIODIC_FORCE_REPORT_2026-09-29.md`.
+
+This is a conditional fixed-frame numerical-method result only; the
+perturbed metric/frame/dust/Euler system, quasistatic error, physical
+periodic solution, projection factor, Test 2 and blind Test 3 remain open.
+`physics_pass=false`, `gate_effect=NONE`, `Rule9_cleared=false`;
+R9-MT2-T2P1 and inherited reviews deferred. Master Test 1, MAT-001,
+UVIR-003, Stage 4A and publication holds remain unchanged.

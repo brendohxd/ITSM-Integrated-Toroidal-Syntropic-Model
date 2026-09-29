@@ -124,9 +124,22 @@ graph-equivalent metric and bounded formal high-`p` energy-rate matrix.
 The subsequent [S4H screen](Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md)
 proves regularity of the selected chart on its stated domain and
 reconstructs 24 moving B1 samples, but is explicitly
-`INCOMPLETE_TEMPORAL_PERSISTENCE`. It does not supply exact moving
-leading coefficients, an interval-uniform estimate, a physical cutoff,
-or Test-1 closure. Tests 2/3 and every parent hold above remain unchanged.
+`INCOMPLETE_TEMPORAL_PERSISTENCE`. The later [exact moving-symbol continuation](Theory/Gates/RES-001/RES001_R4C1_S4H_MOVING_SYMBOL_REPORT_2026-09-29.md)
+supplies all 144 leading coefficients, conditional spectral persistence
+and a pointwise positive formal metric/energy bound. The subsequent
+[B1G homogeneous regularity proof](Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md)
+establishes exact existence and chart regularity across `[0,4]`
+for that registered classical ODE only. The later
+[S4H-U interval-envelope report](Theory/Gates/RES-001/RES001_R4C1_S4H_UNIFORM_ENVELOPE_REPORT_2026-09-29.md)
+proves an explicit formal estimate for the reduced regular graph at
+p>=8*10^13 (1093/1093 local checks). This does not identify a physically
+admissible mode below an EFT cutoff, prove the full constrained IVP or
+close Test 1. The [PD1 preflight](Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md)
+finds the fixed-B1 zero-exchange shortcut is not pure GR and leaves the
+physical EFT overlap unknown. The [T2P1 periodic-force report](Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_REPORT_2026-09-29.md)
+derives the compact mean-mode obstruction and passes 46/46 local checks
+for a declared static density-contrast snapshot, not a coupled physical
+weak-field solution. Tests 2/3 and every parent hold above remain unchanged.
 
 ## Start here
 

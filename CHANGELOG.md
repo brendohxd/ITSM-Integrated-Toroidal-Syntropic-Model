@@ -1,5 +1,73 @@
 # ITSM Changelog & Archive History
 
+## R4C1 periodic-force contrast and physical-domain preflight (2026-09-29)
+
+- T2P1 derives the aligned-frame flat-FRW scalar equation and its compact
+  `T^3` mean-mode obstruction: positive mean dust requires a time-dependent
+  mean scalar in this frozen-frame route. A separately declared static
+  density-contrast snapshot, retaining the finite regulator, passes 46/46
+  local three-dimensional numerical checks after an earlier 40/46 solver
+  attempt was preserved. This is **not** a coupled periodic weak-field
+  solution, Test-2 pass or coefficient prediction. See the
+  [T2P1 report](Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_REPORT_2026-09-29.md).
+- PD1's 19/19 exact local checks show that fixed-B1 zero exchange is not
+  pure GR in the isolated G1 response, and the registered eta path is
+  canonically nonuniform. No physical EFT cutoff or overlap with S4H-U's
+  formal high-momentum range has been derived. See the
+  [PD1 report](Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md).
+- Both remain conditional R4C1 research with `physics_pass=false`,
+  `gate_effect=NONE` and deferred—not cleared—Rule-9 review. Master Tests
+  1–3, MAT-001, UVIR-003 and publication holds are unchanged.
+
+## R4C1-S4H-U explicit formal interval envelope (2026-09-29)
+
+- A frozen continuation contract now bounds the exact moving B1 reduced
+  graph on [0,4]. Exact rational coefficient envelopes give M>=I/8 and
+  a uniform energy-rate constant at p>=8*10^13; the Gronwall rate is at
+  most 10^62. The final fresh receipt passes 1093/1093 local checks,
+  including five positive/rejection controls, and 81 source pins recheck
+  without mismatch.
+- Attempt 01's incorrect expected source digest is preserved as a failed
+  pre-calculation receipt; attempt 02 first established the constants,
+  and attempt 03 reproduced them with mutation controls. These bounds
+  are deliberately coarse and **formal**: no physical EFT overlap,
+  constrained-IVP, GR-limit, Test-1/2/3 or publication pass follows.
+  physics_pass=false, gate_effect=NONE, Rule-9 review deferred.
+  See [owning report](Theory/Gates/RES-001/RES001_R4C1_S4H_UNIFORM_ENVELOPE_REPORT_2026-09-29.md).
+
+## R4C1-B1G exact homogeneous regularity (2026-09-29)
+
+- Froze a separate B1G contract, then proved exact Friedmann-constraint
+  propagation, monotone positive energy, and conserved dust and angular
+  charge for the registered classical homogeneous B1 control. Explicit
+  finite-time bounds and ODE continuation establish its regular chart
+  throughout `[0,4]`; 40/40 local source and algebra checks pass.
+- This resolves background existence/regularity, **not** the S4H uniform
+  perturbation metric or energy constants, full constrained IVP, physical
+  cutoff, healthy GR limit or Master Test 1. The result is conditional on
+  R4C1; `physics_pass=false`, `gate_effect=NONE`, and Rule-9 review
+  remains deferred. See [B1G report](Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md).
+
+## R4C1 exact moving-symbol continuation (2026-09-29)
+
+- Under the already frozen S4H contract, reconstructed the complete moving
+  generator from the sixteen-row graph with fixed-comoving-mode `Fdot`,
+  `Rdot` and `pdot` terms. Extracted all 144 exact `C2/C1` coefficients;
+  the sole order-`p^2` phase block stays skew at each regular B1 state.
+- The projected slow block has an exact all-state characteristic polynomial.
+  The conserved B1 angular charge is one, so its frequency collision is
+  excluded on any finite regular exact continuation. Exact projectors give
+  a positive pointwise moving metric; the order-`p^2` and order-`p`
+  energy defects cancel, and all 144 rational remainders have finite
+  large-`p` limits. Local checks: 278/278, 193/193, 212/212, 573/573.
+- At this moving-symbol step, exact B1 existence/regularity throughout
+  `[0,4]` was still open; the later B1G proof above resolves only that
+  homogeneous-background item. Explicit uniform perturbation constants,
+  an EFT-valid wave-number range, a full constrained IVP, healthy GR
+  recovery and canonical Test 1 remain open.
+  `physics_pass=false`, `gate_effect=NONE`; Rule-9 review remains deferred.
+  See [owning report](Theory/Gates/RES-001/RES001_R4C1_S4H_MOVING_SYMBOL_REPORT_2026-09-29.md).
+
 ## R4C1 moving-background temporal screen (2026-09-29)
 
 - Froze S4H before execution. The selected chart minor is exactly `p`
@@ -10,9 +78,11 @@
   double-precision attempt failed the preregistered high-mode replay
   tolerance and remains preserved. A new 70-digit arithmetic attempt
   passes 189/189 **local** checks without changing the input or threshold.
-- Status remains `INCOMPLETE_TEMPORAL_PERSISTENCE`: 144 exact moving
-  leading coefficients, uniform time-domain symmetrizer/energy constants,
-  a physical EFT cutoff and the full constrained IVP are not established.
+- At that initial screen, status was `INCOMPLETE_TEMPORAL_PERSISTENCE`:
+  144 exact moving leading coefficients, uniform time-domain energy constants,
+  a physical EFT cutoff and the full constrained IVP were not established.
+  The later continuation above resolves only the coefficient and pointwise
+  formal-metric tasks.
   Rule-9 review is deferred; all parent and publication holds remain.
 
 ## R4C1 full-symbol and bounded initial-event energy screen (2026-09-29)

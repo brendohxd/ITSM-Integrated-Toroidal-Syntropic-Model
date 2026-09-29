@@ -1,0 +1,157 @@
+{
+  "K_Q": "NOT_DERIVED",
+  "MAT-001": "BLOCKED",
+  "Rule9_cleared": false,
+  "Stage4A": "CLOSED",
+  "UVIR-003": "IN_PROGRESS",
+  "V": "NOT_COMPUTED",
+  "algebra": {
+    "B1_Gcos_over_Gstatic": "5/6",
+    "B1_surface_offset": "11/30",
+    "axial_integer_n_sufficient": "800000000000000",
+    "bare_ci_mutant_ratio": "35/46",
+    "condensate_potential_Lambda": "2",
+    "cubic_coefficient_scale": "sqrt(14)*2**(1/4)*6**(3/4)/4",
+    "equality_surface": "alpha14+alpha13+3*alpha2=0",
+    "formal_p0": "80000000000000",
+    "full_interval_sufficient_k": "4800000000000000",
+    "monomial_cubic_exponent": "a-3*q/2",
+    "registered_canonical_cubic": "2*sqrt(3)/(63*sqrt(eta))",
+    "regulator_coefficient_scale": "sqrt(165)/5"
+  },
+  "all_paths_GR_no_go": false,
+  "candidate": "R4C1-v1",
+  "canonical_Test1_pass": false,
+  "checks": [
+    {
+      "expected": "zero_exact",
+      "name": "static_cosmological_equality_surface",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero_exact",
+      "name": "B1_alpha14",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero_exact",
+      "name": "B1_alpha13",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero_exact",
+      "name": "B1_three_alpha2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero_exact",
+      "name": "B1_equality_surface_offset",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero_exact",
+      "name": "B1_Gcos_over_Gstatic",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "detail": "fixed B1 frame; isolated nonzero-mode control only",
+      "name": "zero_exchange_not_pure_GR",
+      "passed": true
+    },
+    {
+      "detail": "bare ratio 35/46 differs from normalized 5/6",
+      "name": "bare_c_i_mutant_rejected",
+      "passed": true
+    },
+    {
+      "expected": "zero_exact",
+      "name": "registered_canonical_cubic",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "detail": "q=a=1 gives eta^(-1/2), not a uniformly weak canonical limit",
+      "name": "registered_cubic_diverges",
+      "passed": true
+    },
+    {
+      "detail": "for q>0 and positive coefficients, non-divergence needs a>=3q/2",
+      "name": "monomial_exponent_rejection_controls",
+      "passed": true
+    },
+    {
+      "expected": "zero_exact",
+      "name": "regulator_scale_mass_dimension",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero_exact",
+      "name": "cubic_coefficient_inverse_scale_mass_dimension",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero_exact",
+      "name": "B1_regulator_coefficient_scale",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero_exact",
+      "name": "B1_cubic_coefficient_scale_squared",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero_exact",
+      "name": "B1_condensate_potential_Lambda",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "expected": "zero_exact",
+      "name": "full_interval_sufficient_k",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "detail": "k=2*pi*|n|; pi>3 makes |n|>=8e14 sufficient",
+      "name": "axial_integer_mode_sufficient",
+      "passed": true
+    },
+    {
+      "detail": "magnitude comparison only; neither scale is a certified p_max",
+      "name": "formal_p0_exceeds_coefficient_scales",
+      "passed": true
+    }
+  ],
+  "control": "R4C1-PD1",
+  "full_interval_physical_overlap_verified": false,
+  "gate_effect": "NONE",
+  "healthy_continuous_GR_limit_verified": false,
+  "passed": 19,
+  "physical_pmax_derived": false,
+  "physics_pass": false,
+  "review_status": "DEFERRED",
+  "scope": "exact necessary conditions; no physical cutoff, full IVP, alternative GR path, or parent closure",
+  "script_sha256": "18f7ae3c70b6a9983365783270db32e12fcecd8fbf8317cd3c5b29738316b098",
+  "source_sha256": {
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Gates/ITSM_MASTER_TEST_01_SOURCE_VECTOR_CLOSURE_CONTRACT_2026-09-24.md": "a1fa48eca3db80b510b111d0bc22b5d92904eaa78f4d6e0dbab6840cbc3b7448",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_CONTRACT_2026-09-29.md": "64c2b954071dc294475324290e7046d7bdaf42615518da4b755c4c4a9bf4b73b",
+    "Theory/Gates/RES-001/RES001_R4C1_S4H_UNIFORM_ENVELOPE_REPORT_2026-09-29.md": "3517579269b26bed5e9c03315dba67d7241442ec690f332b3808576861001314",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9"
+  },
+  "status": "PHYSICAL_WINDOW_UNDETERMINED_FIXED_B1_GR_SHORTCUT_REJECTED",
+  "total": 19,
+  "validation": "PASS"
+}

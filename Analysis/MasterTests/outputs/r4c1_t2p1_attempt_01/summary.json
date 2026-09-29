@@ -1,0 +1,377 @@
+{
+  "K_Q": "NOT_DERIVED",
+  "MAT-001": "BLOCKED",
+  "Rule9_cleared": false,
+  "Stage4A": "CLOSED",
+  "UVIR-003": "IN_PROGRESS",
+  "V": "NOT_COMPUTED",
+  "candidate": "R4C1-v1",
+  "canonical_Test2_pass": false,
+  "checks": [
+    {
+      "name": "one_dimensional_FRW_action_variation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "regulator_sign_mutant_rejected",
+      "passed": true,
+      "residual": "-2*b*Derivative(psi(t, x), (x, 4))/a(t)**4"
+    },
+    {
+      "name": "three_dimensional_cubic_flux_variation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "homogeneous_B1_force_sign",
+      "passed": true,
+      "residual": "psi_ddot=-3H*psi_dot-beta*rho/K_Q"
+    },
+    {
+      "expected": "2/7",
+      "name": "B1_A_frozen",
+      "passed": true,
+      "value": "2/7"
+    },
+    {
+      "expected": "5/11",
+      "name": "B1_b_frozen",
+      "passed": true,
+      "value": "5/11"
+    },
+    {
+      "expected": "2/5",
+      "name": "B1_beta_frozen",
+      "passed": true,
+      "value": "2/5"
+    },
+    {
+      "expected": "3",
+      "name": "B1_K_frozen",
+      "passed": true,
+      "value": "3"
+    },
+    {
+      "mean_source": "0.08000000000000002",
+      "name": "static_full_density_zero_mode_rejected",
+      "passed": true
+    },
+    {
+      "name": "grid_17_analytic_A_zero_control",
+      "passed": true,
+      "value": 9.833735638302063e-13
+    },
+    {
+      "name": "grid_17_finite_and_converged",
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "passed": true
+    },
+    {
+      "name": "grid_17_zero_mean_and_positive_density",
+      "passed": true,
+      "values": [
+        -7.231251127214535e-19,
+        7.231251127214535e-19,
+        0.08204322803793182
+      ]
+    },
+    {
+      "name": "grid_17_strong_collocation_residual",
+      "passed": true,
+      "value": 2.8965945962860644e-06
+    },
+    {
+      "name": "grid_17_regulator_omission_rejected",
+      "passed": true,
+      "value": 0.9192771345276691
+    },
+    {
+      "name": "grid_17_weak_cos_x",
+      "passed": true,
+      "value": 2.269342473938737e-08
+    },
+    {
+      "name": "grid_17_weak_sin_x",
+      "passed": true,
+      "value": 5.81299816666934e-16
+    },
+    {
+      "name": "grid_17_weak_cos_y",
+      "passed": true,
+      "value": 2.2877075658679753e-07
+    },
+    {
+      "name": "grid_17_weak_sin_y",
+      "passed": true,
+      "value": 2.012844982062614e-16
+    },
+    {
+      "name": "grid_17_weak_cos_z",
+      "passed": true,
+      "value": 3.700394311275722e-07
+    },
+    {
+      "name": "grid_17_weak_sin_z",
+      "passed": true,
+      "value": 4.923826490931648e-16
+    },
+    {
+      "name": "off_shell_directional_variation",
+      "passed": true,
+      "value": 1.7164312526851688e-08
+    },
+    {
+      "name": "grid_25_analytic_A_zero_control",
+      "passed": true,
+      "value": 5.447318222851537e-12
+    },
+    {
+      "name": "grid_25_finite_and_converged",
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "passed": true
+    },
+    {
+      "name": "grid_25_zero_mean_and_positive_density",
+      "passed": true,
+      "values": [
+        -2.2737367544323208e-18,
+        -1.3642420526593924e-18,
+        0.08094623584226267
+      ]
+    },
+    {
+      "name": "grid_25_strong_collocation_residual",
+      "passed": false,
+      "value": 3.193261881895748e-05
+    },
+    {
+      "name": "grid_25_regulator_omission_rejected",
+      "passed": true,
+      "value": 0.9192772615020537
+    },
+    {
+      "name": "grid_25_weak_cos_x",
+      "passed": true,
+      "value": 3.610946685664232e-07
+    },
+    {
+      "name": "grid_25_weak_sin_x",
+      "passed": true,
+      "value": 3.2254605696232543e-15
+    },
+    {
+      "name": "grid_25_weak_cos_y",
+      "passed": true,
+      "value": 5.017458764197529e-08
+    },
+    {
+      "name": "grid_25_weak_sin_y",
+      "passed": true,
+      "value": 3.997406240245482e-16
+    },
+    {
+      "name": "grid_25_weak_cos_z",
+      "passed": true,
+      "value": 6.103727069540833e-07
+    },
+    {
+      "name": "grid_25_weak_sin_z",
+      "passed": true,
+      "value": 6.861084038671044e-16
+    },
+    {
+      "name": "grid_33_analytic_A_zero_control",
+      "passed": true,
+      "value": 1.514613879030941e-11
+    },
+    {
+      "name": "grid_33_finite_and_converged",
+      "optimizer_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "passed": false
+    },
+    {
+      "name": "grid_33_zero_mean_and_positive_density",
+      "passed": true,
+      "values": [
+        -7.908759615550549e-19,
+        7.908759615550549e-19,
+        0.08054336929122986
+      ]
+    },
+    {
+      "name": "grid_33_strong_collocation_residual",
+      "passed": false,
+      "value": 0.004779160760701135
+    },
+    {
+      "name": "grid_33_regulator_omission_rejected",
+      "passed": true,
+      "value": 0.9192353125671626
+    },
+    {
+      "name": "grid_33_weak_cos_x",
+      "passed": false,
+      "value": 8.583845165760352e-05
+    },
+    {
+      "name": "grid_33_weak_sin_x",
+      "passed": true,
+      "value": 5.07371746605742e-15
+    },
+    {
+      "name": "grid_33_weak_cos_y",
+      "passed": false,
+      "value": 0.00016362813955851259
+    },
+    {
+      "name": "grid_33_weak_sin_y",
+      "passed": true,
+      "value": 3.173447205987257e-15
+    },
+    {
+      "name": "grid_33_weak_cos_z",
+      "passed": false,
+      "value": 0.0002159280142561507
+    },
+    {
+      "name": "grid_33_weak_sin_z",
+      "passed": true,
+      "value": 9.051247230290611e-15
+    },
+    {
+      "name": "grid_25_33_fundamental_x",
+      "passed": true,
+      "value": 0.00030055277433455724
+    },
+    {
+      "name": "grid_25_33_fundamental_y",
+      "passed": true,
+      "value": 0.0002854827376719109
+    },
+    {
+      "name": "grid_25_33_fundamental_z",
+      "passed": true,
+      "value": 0.0002481443211948714
+    }
+  ],
+  "control": "R4C1-T2P1",
+  "directional_control": {
+    "analytic": 0.939420755119171,
+    "central_difference": 0.9394207722834835,
+    "off_shell_energy": 50.60148942588709,
+    "relative_discrepancy": 1.7164312526851688e-08
+  },
+  "full_metric_frame_dust_constraints_solved": false,
+  "gate_effect": "NONE",
+  "grid_25_33_fundamental_relative_changes": {
+    "x": 0.00030055277433455724,
+    "y": 0.0002854827376719109,
+    "z": 0.0002481443211948714
+  },
+  "grids": [
+    {
+      "energy": -2.284597108986229,
+      "fundamental_cosine_coefficients": {
+        "x": -0.016307573480739627,
+        "y": -0.032468740353036464,
+        "z": -0.04837664860210672
+      },
+      "n": 17,
+      "omit_b_residual_normalized": 0.9192771345276691,
+      "optimizer_iterations": 618,
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "optimizer_success": true,
+      "psi_mean": -7.231251127214535e-19,
+      "psi_rms": 0.042781173625875316,
+      "source_mean": 7.231251127214535e-19,
+      "strong_residual_normalized": 2.8965945962860644e-06,
+      "total_density_min": 0.08204322803793182,
+      "weak_residuals_normalized": {
+        "cos_x": 2.269342473938737e-08,
+        "cos_y": 2.2877075658679753e-07,
+        "cos_z": 3.700394311275722e-07,
+        "sin_x": 5.81299816666934e-16,
+        "sin_y": 2.012844982062614e-16,
+        "sin_z": 4.923826490931648e-16
+      }
+    },
+    {
+      "energy": -7.265790758368576,
+      "fundamental_cosine_coefficients": {
+        "x": -0.01630759614490182,
+        "y": -0.0324687568322871,
+        "z": -0.04837663493386711
+      },
+      "n": 25,
+      "omit_b_residual_normalized": 0.9192772615020537,
+      "optimizer_iterations": 1089,
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "optimizer_success": true,
+      "psi_mean": -2.2737367544323208e-18,
+      "psi_rms": 0.04278117647072431,
+      "source_mean": -1.3642420526593924e-18,
+      "strong_residual_normalized": 3.193261881895748e-05,
+      "total_density_min": 0.08094623584226267,
+      "weak_residuals_normalized": {
+        "cos_x": 3.610946685664232e-07,
+        "cos_y": 5.017458764197529e-08,
+        "cos_z": 6.103727069540833e-07,
+        "sin_x": 3.2254605696232543e-15,
+        "sin_y": 3.997406240245482e-16,
+        "sin_z": 6.861084038671044e-16
+      }
+    },
+    {
+      "energy": -16.711084918459026,
+      "fundamental_cosine_coefficients": {
+        "x": -0.016312498911706063,
+        "y": -0.03247802874884851,
+        "z": -0.04838864230066435
+      },
+      "n": 33,
+      "omit_b_residual_normalized": 0.9192353125671626,
+      "optimizer_iterations": 1500,
+      "optimizer_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "optimizer_success": false,
+      "psi_mean": -7.908759615550549e-19,
+      "psi_rms": 0.042792418451211775,
+      "source_mean": 7.908759615550549e-19,
+      "strong_residual_normalized": 0.004779160760701135,
+      "total_density_min": 0.08054336929122986,
+      "weak_residuals_normalized": {
+        "cos_x": 8.583845165760352e-05,
+        "cos_y": 0.00016362813955851259,
+        "cos_z": 0.0002159280142561507,
+        "sin_x": 5.07371746605742e-15,
+        "sin_y": 3.173447205987257e-15,
+        "sin_z": 9.051247230290611e-15
+      }
+    }
+  ],
+  "passed": 40,
+  "physical_periodic_solution_verified": false,
+  "physics_pass": false,
+  "quasistatic_error_bounded": false,
+  "review_status": "DEFERRED",
+  "runtime": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "scope": "aligned fixed FRW and static contrast pseudospectral control; no coupled physical T3 solution",
+  "script_sha256": "e6f7a4dca9c34124e495f33a9fdc09fa5b8d97c4e22939d99fee20530fc005dc",
+  "source_sha256": {
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md": "81c7138568d44fd3197b88cb21efe67b17c406ada941f7ff778c2f8821ae074b",
+    "Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md": "b999dff43b81f1dc73a9f584bd1c6a1856c559fe15b896719aa82300c8327883",
+    "Theory/Gates/ITSM_TEST_02_T3_TOPOLOGY_ADDENDUM_2026-09-25.md": "a4f251ff3d751a60ff4130d61a060f199c825604f877e1aeb5dd5515db8f317c",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_COEFFICIENT_IDENTIFIABILITY_REPORT_2026-09-25.md": "c4af4084ae83f7ed70d63f44700a0ebfc2c394ed7d79cd0061e3efe279b7dc0a",
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c",
+    "Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_CONTRACT_2026-09-29.md": "2f660751bd0155833643b3388672bb0462dbe5af703385875eda370b021d3645"
+  },
+  "status": "ACTION_DERIVED_MEAN_OBSTRUCTION_CONDITIONAL_PERIODIC_SNAPSHOT_ONLY",
+  "total": 46,
+  "validation": "FAIL"
+}
