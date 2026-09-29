@@ -139,7 +139,13 @@ finds the fixed-B1 zero-exchange shortcut is not pure GR and leaves the
 physical EFT overlap unknown. The [T2P1 periodic-force report](Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_REPORT_2026-09-29.md)
 derives the compact mean-mode obstruction and passes 46/46 local checks
 for a declared static density-contrast snapshot, not a coupled physical
-weak-field solution. Tests 2/3 and every parent hold above remain unchanged.
+weak-field solution. The [C2 report](Theory/Gates/RES-001/RES001_R4C1_PERIODIC_IDENTIFIABILITY_REPORT_2026-09-29.md)
+shows this conditional on-shell contrast response depends on the unfixed
+physical `A` coupling. The [T2P2 report](Theory/Gates/RES-001/RES001_R4C1_WEAK_SOURCE_REPORT_2026-09-29.md)
+proves its finite-`b`, fixed-scale weak-source limit is linear rather than
+a fixed positive square-root asymptote. Neither result supplies a physical
+coupled solution, unique coefficient or Test-2/3 pass. Every parent hold
+above remains unchanged.
 
 ## Start here
 

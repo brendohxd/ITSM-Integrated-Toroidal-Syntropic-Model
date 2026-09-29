@@ -2,7 +2,7 @@
 
 Date: 25 September 2026. Operator decision:
 `review_status=DEFERRED`, `Rule9_cleared=false` for all outstanding Rule-9 work.
-Evidence register updated 29 September 2026 through R4C1-T2P1.
+Evidence register updated 29 September 2026 through R4C1-T2P2.
 Governing [policy](../Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md).
 The rows below apply to bounded result scopes; they do not close parent gates.
 Review resumes when directed by the operator. Existing partial reports and
@@ -249,6 +249,58 @@ Review must check the signs and auxiliary boundary convention, mean-mode
 logic, weak residuals, failed first attempt, corrected solver and limits
 of grid convergence. Claim stays `CONDITIONAL`; `review_status=DEFERRED`,
 `Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
+
+### R9-MT3-C2 — 29 September scoped addendum
+
+The [periodic identifiability report](../Gates/RES-001/RES001_R4C1_PERIODIC_IDENTIFIABILITY_REPORT_2026-09-29.md)
+(SHA-256 `2a861c556d3bae3dc20f1d85c4b7cbf21681188147d3f91b07bc4a5164183d5f`)
+and [attempt-02 receipt](../../Analysis/MasterTests/outputs/r4c1_c2_attempt_02/summary.json)
+(SHA-256 `f952675689274c4ccaf1d66004ce7e6c20783096d4c90ab932abd52495c5eef4`)
+record an analytic conditional convexity/injectivity/monotonicity
+argument and 107/107 local numerical checks. Nine direct and eleven
+unique inherited source hashes rechecked with no mismatch; the write-once
+attempt-02 receipt reruns byte-identically. The original passing attempt
+01 is retained because its executable omitted the transitive recheck;
+its grid and check records are unchanged in attempt 02.
+The prior C1 result supplies homogeneous/classical-linear A-independence,
+not a new independent ODE validation here.
+
+`PROCEED_PROVISIONALLY` permits reuse of this exact **conditional static
+contrast** obstruction when designing a target-independent matching
+criterion. It inherits R9-MT1-VARIATION/B1/C1, R9-MT2-T2P1/topology
+and their earlier dependencies; none is cleared. `HOLD_SUBSTANTIVE`
+remains for the coupled physical torus solution, unique `C_chi`, blind
+historical reconstruction, projection, `a0(z)`, canonical Test 3 and
+downstream fits. Review must inspect the Sobolev-space theorem,
+strict-minimizer inequalities, nonzero-source premise, invariant-
+coupling distinction, imported numerical solver and grid limits.
+Claim stays `CONDITIONAL`; `review_status=DEFERRED`,
+`Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
+
+### R9-MT2-T2P2 — 29 September scoped addendum
+
+The [weak-source report](../Gates/RES-001/RES001_R4C1_WEAK_SOURCE_REPORT_2026-09-29.md)
+(SHA-256 `a47bd07a0ff07a78a1a8f08f3cf2ed8fc04939740ea5e3089596c52cb8483eb8`)
+and [attempt-01 receipt](../../Analysis/MasterTests/outputs/r4c1_t2p2_attempt_01/summary.json)
+(SHA-256 `334cbc20b5581968cab48e9ee8699f7f3e982527d4f4917185952dfbdb9e7722`)
+record a finite-`b` zero-mean `H^2` weak-source estimate and 194/194
+local checks. The write-once receipt reruns byte-identically; its eight
+direct inputs and inherited T2P1 source map are rehashed before importing
+the old solver. The conclusion is limited to the conditional static
+contrast reduction at fixed spatial scale: an arbitrarily weak source
+has linear, not square-root, force response to leading order.
+
+`PROCEED_PROVISIONALLY` permits using this obstruction when defining a
+physical intermediate regime. It inherits R9-MT2-T2P1/topology and
+R9-MT1-VARIATION/B1/C1/G1 with earlier dependencies. `HOLD_SUBSTANTIVE`
+remains for coupled metric/frame/dust/Euler response, time/quasistatic
+error, EFT-valid source and mode range, a physical periodic solution,
+projection factor, canonical Test 2 and downstream fits. Review must
+check the elliptic/Sobolev estimate, auxiliary Newtonian comparator,
+scaled residual normalization, regulator-omission mutant and failure
+to infer a pointwise physical RAR. Claim stays `CONDITIONAL`;
+`review_status=DEFERRED`, `Rule9_cleared=false`, `physics_pass=false`,
+`gate_effect=NONE`.
 
 ## Route triage and continuation decision — 26 September 2026
 

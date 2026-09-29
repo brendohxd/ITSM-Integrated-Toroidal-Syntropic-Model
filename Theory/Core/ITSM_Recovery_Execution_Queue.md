@@ -78,9 +78,21 @@ is:
    a coupled periodic-background weak-field reduction with an admissible
    physical domain. See
    `Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_REPORT_2026-09-29.md`.
+   T2P2 additionally proves the finite-`b` fixed-scale contrast response is
+   linear as source amplitude vanishes, so this reduction cannot retain a
+   fixed positive square-root coefficient to arbitrarily weak sources.
+   Its 194/194 local checks do not replace the coupled/domain obligations;
+   see `Theory/Gates/RES-001/RES001_R4C1_WEAK_SOURCE_REPORT_2026-09-29.md`.
 4. **P0 — Test 3 blind coefficient audit.** Only after an action-level force
    response exists, determine whether `C_chi` and `a0(z)` are identifiable
-   without target insertion.
+   without target insertion. C2 now proves that the conditional finite-`b`
+   periodic contrast solution changes uniquely with physical `A`, while
+   C1's homogeneous/classical-linear background does not; its 107/107
+   local witness checks do not select a coefficient. A target-independent
+   microscopic/nonlinear matching condition, full physical weak-field
+   response, historical equation reconstruction, independent blinding and
+   action-derived `a0(z)` remain required. See
+   `Theory/Gates/RES-001/RES001_R4C1_PERIODIC_IDENTIFIABILITY_REPORT_2026-09-29.md`.
 5. **P0 — MAT/UVIR matching.** Derive numeric `K_Q` or an equivalent
    action-level invariant, compute `V`, and then reassess Stage 4A and
    MAT-001.

@@ -1,5 +1,21 @@
 # ITSM Changelog & Archive History
 
+## R4C1 conditional force-domain and identifiability limits (2026-09-29)
+
+- C2 proves the finite-`b` static periodic contrast solution changes with
+  the physical coupling `A` while the pinned homogeneous/classical-linear
+  background does not select it. The provenance-hardened receipt passes
+  107/107 local checks; `C_chi` remains `NOT_DERIVED`. See the
+  [C2 report](Theory/Gates/RES-001/RES001_R4C1_PERIODIC_IDENTIFIABILITY_REPORT_2026-09-29.md).
+- T2P2 proves that the same fixed-scale static reduction has a linear
+  weak-source response, so a fixed positive square-root coefficient cannot
+  extend to arbitrarily small contrast while `b>0`. Its 194/194 local
+  checks support the scoped estimate, not a coupled physical weak-field
+  solution. An intermediate regime remains open. See the
+  [T2P2 report](Theory/Gates/RES-001/RES001_R4C1_WEAK_SOURCE_REPORT_2026-09-29.md).
+- Both are conditional; `physics_pass=false`, `gate_effect=NONE`, Rule-9
+  review deferred. Master Tests 1–3 and publication holds are unchanged.
+
 ## R4C1 periodic-force contrast and physical-domain preflight (2026-09-29)
 
 - T2P1 derives the aligned-frame flat-FRW scalar equation and its compact

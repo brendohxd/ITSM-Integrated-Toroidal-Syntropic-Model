@@ -2920,3 +2920,57 @@ periodic solution, projection factor, Test 2 and blind Test 3 remain open.
 `physics_pass=false`, `gate_effect=NONE`, `Rule9_cleared=false`;
 R9-MT2-T2P1 and inherited reviews deferred. Master Test 1, MAT-001,
 UVIR-003, Stage 4A and publication holds remain unchanged.
+
+## 2026-09-29 - R4C1-C2 periodic on-shell identifiability obstruction
+
+Froze C2 before numerical execution. On the same aligned fixed-FRW,
+static density-contrast `T^3` reduction as T2P1, exact coercivity and
+strict convexity of the finite-`b` functional give a unique weak minimizer
+for every `A>=0`. Subtracting the two Euler equations proves distinct
+positive `A` values cannot share the same solution for the registered
+nonzero source. The two strict minimizer inequalities prove the integral
+`int|grad psi_A|^3` decreases strictly with `A`.
+
+The unchanged T2P1 solver, source, grids and thresholds give 107/107
+local checks across `A/A_B1={1/4,1,4}` and `N=17,25,33`. Attempt 01
+passed but did not itself rehash transitive parent sources; it remains
+preserved. A frozen pin addendum made attempt 02 verify nine direct and
+eleven unique inherited source paths before calculation. Attempt 02
+passes 107/107 and a byte-identical rerun reproduces its write-once
+receipt; the two grid/check records are identical. Owning report:
+`RES-001/RES001_R4C1_PERIODIC_IDENTIFIABILITY_REPORT_2026-09-29.md`.
+
+This is conditional on a fixed metric/frame static contrast snapshot and
+does not derive a physical torus solution, unique `C_chi`, `a0`, or an
+action-derived redshift law. Historical equation reconstruction and fresh
+analyst blinding remain incomplete. `physics_pass=false`,
+`gate_effect=NONE`, `Rule9_cleared=false`; R9-MT3-C2 and inherited reviews
+deferred. Tests 1–3, MAT-001, UVIR-003, Stage 4A and publication holds
+remain unchanged.
+
+## 2026-09-29 - R4C1-T2P2 finite-regulator weak-source limit
+
+Froze the T2P2 contract before numerical execution. Keeping the same
+fixed-frame, mean-subtracted periodic spatial equation and positive B1
+`b`, an exact energy estimate gives `||psi_epsilon||_(H2)=O(epsilon)`;
+subtracting the linearized periodic equation gives
+`||psi_epsilon-epsilon psi_1||_(H2)=O(epsilon^2)` for the registered
+fixed source. The auxiliary periodic Newtonian-gradient norm is also
+linear in epsilon, so the conditional force divided by its square root
+vanishes as epsilon tends to zero. This rejects a fixed positive
+square-root coefficient as an **arbitrarily weak-source, fixed-scale
+asymptote of this reduction**, not a finite intermediate regime or full
+ITSM variant.
+
+The unchanged T2P1 solver passes 194/194 registered local checks over
+five contrast amplitudes and three grids. The smallest-source nonlinear
+correction is 0.000376552 of the exact linear field at N=33; omitting
+`b` leaves normalized residual about 0.999624. The write-once receipt
+reruns byte-identically; direct and inherited source pins were checked.
+Owning report: `RES-001/RES001_R4C1_WEAK_SOURCE_REPORT_2026-09-29.md`.
+
+No coupled metric/frame/dust/Euler response, quasistatic error, physical
+EFT domain, projection factor, `C_chi` or `a0(z)` follows.
+`physics_pass=false`, `gate_effect=NONE`, `Rule9_cleared=false`;
+R9-MT2-T2P2 and inherited reviews deferred. Tests 1–3, MAT-001,
+UVIR-003, Stage 4A and publication holds remain unchanged.

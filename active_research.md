@@ -300,6 +300,35 @@ remain open; C1's coefficient nonidentifiability and Test 3 also remain.
 R9-MT2-T2P1 and inherited reviews are deferred; `physics_pass=false`,
 `gate_effect=NONE`, with no parent promotion.
 
+The [R4C1-C2 periodic identifiability report](Theory/Gates/RES-001/RES001_R4C1_PERIODIC_IDENTIFIABILITY_REPORT_2026-09-29.md)
+then proves, within that **conditional** finite-`b` static contrast
+functional, existence and uniqueness of a mean-zero weak solution for
+each `A>=0`. For the nonzero registered source, different `A` values
+cannot share the same solution; the integrated cubic-gradient measure
+decreases strictly with `A`. Its nine-grid/branch numerical witness
+passes 107/107 local checks and reruns byte-identically. This strengthens
+C1's background/linear nonidentifiability on a compact on-shell contrast
+example, but neither topology nor this result selects `A`, `C_chi` or
+`a0`. No physical periodic weak-field solution, complete historical
+reconstruction, genuine independent blinding or Test-3 pass follows.
+R9-MT3-C2 and inherited reviews are deferred; `physics_pass=false`,
+`gate_effect=NONE`, with all parent holds unchanged.
+
+The [R4C1-T2P2 weak-source report](Theory/Gates/RES-001/RES001_R4C1_WEAK_SOURCE_REPORT_2026-09-29.md)
+then tests a separate Master Test 2 limit of the same finite-`b`
+**conditional static contrast** equation. Exact zero-mean elliptic
+estimates give `psi_epsilon=epsilon psi_1+O(epsilon^2)` in `H^2` for
+fixed nonzero source shape. Against an auxiliary periodic Newtonian
+control, the conditional force-to-`sqrt(g_bar)` norm ratio tends to zero
+as source amplitude vanishes. Fifteen registered numerical solves pass
+194/194 local checks and a byte-identical rerun; the smallest-source
+nonlinear correction is about `3.77e-4` relative to the linear field.
+Thus this reduction has no fixed positive **arbitrarily weak-source,
+fixed-scale** square-root asymptote. An intermediate regime, coupled
+physical weak-field solution, approximation/EFT domain, Test 2 and the
+projection/coefficient gates remain open. R9-MT2-T2P2 and inherited
+reviews are deferred; `physics_pass=false`, `gate_effect=NONE`.
+
 TOP-X4 is not judged close to a breakthrough: the 19 September X4-S4-C1
 receipt selected an equation route but did not solve a curved background; the
 registered flat benchmark had failed its independent constraint and balance

@@ -1,0 +1,1794 @@
+{
+  "C_chi": "NOT_DERIVED",
+  "MAT-001": "BLOCKED",
+  "Rule9_cleared": false,
+  "Stage4A": "CLOSED",
+  "UVIR-003": "IN_PROGRESS",
+  "a0": "NOT_PREDICTED",
+  "canonical_Test2_pass": false,
+  "checks": [
+    {
+      "expected": "2/7",
+      "name": "B1_A_frozen",
+      "passed": true,
+      "value": "2/7"
+    },
+    {
+      "expected": "5/11",
+      "name": "B1_b_frozen",
+      "passed": true,
+      "value": "5/11"
+    },
+    {
+      "expected": "2/5",
+      "name": "B1_beta_frozen",
+      "passed": true,
+      "value": "2/5"
+    },
+    {
+      "expected": "3",
+      "name": "B1_K_frozen",
+      "passed": true,
+      "value": "3"
+    },
+    {
+      "name": "N17_e1_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 7.632783294297951e-17
+    },
+    {
+      "name": "N17_e1_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 9.833735638302063e-13
+    },
+    {
+      "name": "N17_e1_finite_converged",
+      "optimizer_message": "damped Newton residual 3.257e-08",
+      "passed": true
+    },
+    {
+      "name": "N17_e1_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        -1.446250225442907e-18,
+        7.231251127214535e-19,
+        0.08204322803793182
+      ]
+    },
+    {
+      "name": "N17_e1_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.2571379684847035e-08
+    },
+    {
+      "name": "N17_e1_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 5.280646529317172e-09
+    },
+    {
+      "name": "N17_e1_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 4.5296089610410445e-18
+    },
+    {
+      "name": "N17_e1_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.2521226622835416e-08
+    },
+    {
+      "name": "N17_e1_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 7.171880854981653e-18
+    },
+    {
+      "name": "N17_e1_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.546702680849271e-08
+    },
+    {
+      "name": "N17_e1_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.2739525202927939e-18
+    },
+    {
+      "name": "N17_e1/4_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 1.9081958235744878e-17
+    },
+    {
+      "name": "N17_e1/4_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 9.833735638302063e-13
+    },
+    {
+      "name": "N17_e1/4_finite_converged",
+      "optimizer_message": "damped Newton residual 4.422e-12",
+      "passed": true
+    },
+    {
+      "name": "N17_e1/4_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        -3.6156255636072674e-19,
+        1.8078127818036337e-19,
+        0.17051080700948296
+      ]
+    },
+    {
+      "name": "N17_e1/4_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 4.422095986063181e-12
+    },
+    {
+      "name": "N17_e1/4_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 6.798749597110448e-13
+    },
+    {
+      "name": "N17_e1/4_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.5859404267720395e-18
+    },
+    {
+      "name": "N17_e1/4_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.6156141294868348e-12
+    },
+    {
+      "name": "N17_e1/4_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.04747207203078e-17
+    },
+    {
+      "name": "N17_e1/4_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.322749479847426e-12
+    },
+    {
+      "name": "N17_e1/4_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.4155028000415946e-19
+    },
+    {
+      "name": "N17_e1/16_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 4.7704895589362195e-18
+    },
+    {
+      "name": "N17_e1/16_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 9.833735638302063e-13
+    },
+    {
+      "name": "N17_e1/16_finite_converged",
+      "optimizer_message": "damped Newton residual 1.329e-12",
+      "passed": true
+    },
+    {
+      "name": "N17_e1/16_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        -6.779297931763626e-20,
+        4.519531954509084e-20,
+        0.19262770175237076
+      ]
+    },
+    {
+      "name": "N17_e1/16_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.3287735407914375e-12
+    },
+    {
+      "name": "N17_e1/16_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 5.914442528098359e-17
+    },
+    {
+      "name": "N17_e1/16_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.97226723314329e-17
+    },
+    {
+      "name": "N17_e1/16_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 9.155943937594628e-17
+    },
+    {
+      "name": "N17_e1/16_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.889984881101113e-18
+    },
+    {
+      "name": "N17_e1/16_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.8746882500530295e-16
+    },
+    {
+      "name": "N17_e1/16_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 7.224962202752782e-18
+    },
+    {
+      "name": "N17_e1/64_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 1.1926223897340549e-18
+    },
+    {
+      "name": "N17_e1/64_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 9.833735638302063e-13
+    },
+    {
+      "name": "N17_e1/64_finite_converged",
+      "optimizer_message": "damped Newton residual 3.828e-09",
+      "passed": true
+    },
+    {
+      "name": "N17_e1/64_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        -1.129882988627271e-20,
+        1.129882988627271e-20,
+        0.19815692543809268
+      ]
+    },
+    {
+      "name": "N17_e1/64_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.828035438122956e-09
+    },
+    {
+      "name": "N17_e1/64_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 7.219104342262239e-10
+    },
+    {
+      "name": "N17_e1/64_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 6.039478589299026e-18
+    },
+    {
+      "name": "N17_e1/64_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.6257786378153249e-09
+    },
+    {
+      "name": "N17_e1/64_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.676486122078367e-17
+    },
+    {
+      "name": "N17_e1/64_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.9533393683393414e-09
+    },
+    {
+      "name": "N17_e1/64_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.1733191131432371e-17
+    },
+    {
+      "name": "N17_e1/256_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 2.981555974335137e-19
+    },
+    {
+      "name": "N17_e1/256_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 9.833735638302063e-13
+    },
+    {
+      "name": "N17_e1/256_finite_converged",
+      "optimizer_message": "damped Newton residual 6.010e-11",
+      "passed": true
+    },
+    {
+      "name": "N17_e1/256_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        -4.2370612073522665e-21,
+        2.8247074715681776e-21,
+        0.19953923135952317
+      ]
+    },
+    {
+      "name": "N17_e1/256_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 6.009944430213278e-11
+    },
+    {
+      "name": "N17_e1/256_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.1329542419830266e-11
+    },
+    {
+      "name": "N17_e1/256_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.1506857984925221e-17
+    },
+    {
+      "name": "N17_e1/256_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.5515888544663576e-11
+    },
+    {
+      "name": "N17_e1/256_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.2806551240624152e-18
+    },
+    {
+      "name": "N17_e1/256_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 4.635813236108779e-11
+    },
+    {
+      "name": "N17_e1/256_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 7.027750111564562e-19
+    },
+    {
+      "final_threshold": 0.01,
+      "name": "N17_linear_limit_monotone",
+      "passed": true,
+      "values": [
+        0.08134751516830838,
+        0.02301501689989409,
+        0.005957418318687174,
+        0.0015027948216700896,
+        0.0003765516479200717
+      ]
+    },
+    {
+      "interval": [
+        1.5,
+        2.5
+      ],
+      "name": "N17_force_sqrt_ratio",
+      "passed": true,
+      "value": 1.9977492640745882
+    },
+    {
+      "name": "N17_finite_b_indispensable_at_small_e",
+      "passed": true,
+      "threshold": 0.01,
+      "value": 0.9996238942115255
+    },
+    {
+      "name": "N25_e1_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 8.326672684688674e-17
+    },
+    {
+      "name": "N25_e1_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 5.447318222851537e-12
+    },
+    {
+      "name": "N25_e1_finite_converged",
+      "optimizer_message": "damped Newton residual 3.257e-08",
+      "passed": true
+    },
+    {
+      "name": "N25_e1_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        -4.547473508864641e-19,
+        -1.3642420526593924e-18,
+        0.08094623584226267
+      ]
+    },
+    {
+      "name": "N25_e1_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.257185598779947e-08
+    },
+    {
+      "name": "N25_e1_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 5.280653745308519e-09
+    },
+    {
+      "name": "N25_e1_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 0.0
+    },
+    {
+      "name": "N25_e1_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.2521232264764228e-08
+    },
+    {
+      "name": "N25_e1_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.0444529368812423e-17
+    },
+    {
+      "name": "N25_e1_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.5467003126350806e-08
+    },
+    {
+      "name": "N25_e1_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.3162672552639766e-17
+    },
+    {
+      "name": "N25_e1/4_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 2.0816681711721685e-17
+    },
+    {
+      "name": "N25_e1/4_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 5.447318222851537e-12
+    },
+    {
+      "name": "N25_e1/4_finite_converged",
+      "optimizer_message": "damped Newton residual 8.378e-12",
+      "passed": true
+    },
+    {
+      "name": "N25_e1/4_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        1.1368683772161602e-19,
+        -3.410605131648481e-19,
+        0.17023655896056566
+      ]
+    },
+    {
+      "name": "N25_e1/4_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 8.378075768652721e-12
+    },
+    {
+      "name": "N25_e1/4_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 6.798663435069994e-13
+    },
+    {
+      "name": "N25_e1/4_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.323259343956001e-18
+    },
+    {
+      "name": "N25_e1/4_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.6156677045208973e-12
+    },
+    {
+      "name": "N25_e1/4_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 4.391449847370429e-18
+    },
+    {
+      "name": "N25_e1/4_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.3227002129893703e-12
+    },
+    {
+      "name": "N25_e1/4_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.3816005643120651e-17
+    },
+    {
+      "name": "N25_e1/16_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 5.204170427930421e-18
+    },
+    {
+      "name": "N25_e1/16_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 5.447318222851537e-12
+    },
+    {
+      "name": "N25_e1/16_finite_converged",
+      "optimizer_message": "damped Newton residual 7.427e-12",
+      "passed": true
+    },
+    {
+      "name": "N25_e1/16_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        0.0,
+        -8.526512829121202e-20,
+        0.19255913974014144
+      ]
+    },
+    {
+      "name": "N25_e1/16_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 7.426742741860983e-12
+    },
+    {
+      "name": "N25_e1/16_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.433045587387702e-17
+    },
+    {
+      "name": "N25_e1/16_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.5251386619855477e-17
+    },
+    {
+      "name": "N25_e1/16_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.877493168037656e-17
+    },
+    {
+      "name": "N25_e1/16_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 8.471344124452799e-18
+    },
+    {
+      "name": "N25_e1/16_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.2030137298576836e-16
+    },
+    {
+      "name": "N25_e1/16_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 7.717027306891246e-18
+    },
+    {
+      "name": "N25_e1/64_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 1.3010426069826053e-18
+    },
+    {
+      "name": "N25_e1/64_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 5.447318222851537e-12
+    },
+    {
+      "name": "N25_e1/64_finite_converged",
+      "optimizer_message": "damped Newton residual 3.828e-09",
+      "passed": true
+    },
+    {
+      "name": "N25_e1/64_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        -7.105427357601002e-21,
+        -2.1316282072803006e-20,
+        0.19813978493503537
+      ]
+    },
+    {
+      "name": "N25_e1/64_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.828084866592618e-09
+    },
+    {
+      "name": "N25_e1/64_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 7.219109999396965e-10
+    },
+    {
+      "name": "N25_e1/64_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.6111323312118978e-18
+    },
+    {
+      "name": "N25_e1/64_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.6257790556030488e-09
+    },
+    {
+      "name": "N25_e1/64_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.599579442387993e-18
+    },
+    {
+      "name": "N25_e1/64_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.953337773093192e-09
+    },
+    {
+      "name": "N25_e1/64_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.754369073706201e-17
+    },
+    {
+      "name": "N25_e1/256_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 3.2526065174565133e-19
+    },
+    {
+      "name": "N25_e1/256_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 5.447318222851537e-12
+    },
+    {
+      "name": "N25_e1/256_finite_converged",
+      "optimizer_message": "damped Newton residual 6.049e-11",
+      "passed": true
+    },
+    {
+      "name": "N25_e1/256_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        -5.3290705182007515e-21,
+        -5.3290705182007515e-21,
+        0.19953494623375884
+      ]
+    },
+    {
+      "name": "N25_e1/256_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 6.048668059517253e-11
+    },
+    {
+      "name": "N25_e1/256_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.1329462537438885e-11
+    },
+    {
+      "name": "N25_e1/256_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 4.6584973947867814e-18
+    },
+    {
+      "name": "N25_e1/256_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.551596068162281e-11
+    },
+    {
+      "name": "N25_e1/256_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.6352030564702407e-18
+    },
+    {
+      "name": "N25_e1/256_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 4.635803981102495e-11
+    },
+    {
+      "name": "N25_e1/256_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.6612326656570002e-17
+    },
+    {
+      "final_threshold": 0.01,
+      "name": "N25_linear_limit_monotone",
+      "passed": true,
+      "values": [
+        0.08134750847266,
+        0.023015014828312117,
+        0.00595741776775509,
+        0.0015027946816998255,
+        0.0003765516127847757
+      ]
+    },
+    {
+      "interval": [
+        1.5,
+        2.5
+      ],
+      "name": "N25_force_sqrt_ratio",
+      "passed": true,
+      "value": 1.99774926426826
+    },
+    {
+      "name": "N25_finite_b_indispensable_at_small_e",
+      "passed": true,
+      "threshold": 0.01,
+      "value": 0.9996238942464121
+    },
+    {
+      "name": "N33_e1_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 6.938893903907228e-17
+    },
+    {
+      "name": "N33_e1_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 1.514613879030941e-11
+    },
+    {
+      "name": "N33_e1_finite_converged",
+      "optimizer_message": "damped Newton residual 3.257e-08",
+      "passed": true
+    },
+    {
+      "name": "N33_e1_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        -3.9543798077752743e-19,
+        7.908759615550549e-19,
+        0.08054336929122986
+      ]
+    },
+    {
+      "name": "N33_e1_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.2571914987650403e-08
+    },
+    {
+      "name": "N33_e1_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 5.280654344007008e-09
+    },
+    {
+      "name": "N33_e1_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.3210655729360248e-17
+    },
+    {
+      "name": "N33_e1_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.2521232807887119e-08
+    },
+    {
+      "name": "N33_e1_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 5.728057757652295e-18
+    },
+    {
+      "name": "N33_e1_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.5467001068573464e-08
+    },
+    {
+      "name": "N33_e1_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.6558473270150273e-17
+    },
+    {
+      "name": "N33_e1/4_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 1.734723475976807e-17
+    },
+    {
+      "name": "N33_e1/4_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 1.514613879030941e-11
+    },
+    {
+      "name": "N33_e1/4_finite_converged",
+      "optimizer_message": "damped Newton residual 2.218e-11",
+      "passed": true
+    },
+    {
+      "name": "N33_e1/4_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        9.885949519438186e-20,
+        1.9771899038876372e-19,
+        0.17013584232280748
+      ]
+    },
+    {
+      "name": "N33_e1/4_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.2175644269716663e-11
+    },
+    {
+      "name": "N33_e1/4_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 6.799383107239208e-13
+    },
+    {
+      "name": "N33_e1/4_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.715496923137813e-18
+    },
+    {
+      "name": "N33_e1/4_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.6155437060279397e-12
+    },
+    {
+      "name": "N33_e1/4_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.044643312015708e-18
+    },
+    {
+      "name": "N33_e1/4_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.322588196846424e-12
+    },
+    {
+      "name": "N33_e1/4_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.0288572209036134e-17
+    },
+    {
+      "name": "N33_e1/16_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 4.336808689942018e-18
+    },
+    {
+      "name": "N33_e1/16_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 1.514613879030941e-11
+    },
+    {
+      "name": "N33_e1/16_finite_converged",
+      "optimizer_message": "damped Newton residual 2.224e-11",
+      "passed": true
+    },
+    {
+      "name": "N33_e1/16_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        2.4714873798595465e-20,
+        4.942974759719093e-20,
+        0.19253396058070188
+      ]
+    },
+    {
+      "name": "N33_e1/16_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.2235206507669914e-11
+    },
+    {
+      "name": "N33_e1/16_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 4.2366985714588405e-17
+    },
+    {
+      "name": "N33_e1/16_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 5.366828884673806e-18
+    },
+    {
+      "name": "N33_e1/16_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.580150526122739e-16
+    },
+    {
+      "name": "N33_e1/16_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 7.26328043767152e-18
+    },
+    {
+      "name": "N33_e1/16_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.029105630396729e-16
+    },
+    {
+      "name": "N33_e1/16_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.5556136042628646e-18
+    },
+    {
+      "name": "N33_e1/64_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 1.0842021724855044e-18
+    },
+    {
+      "name": "N33_e1/64_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 1.514613879030941e-11
+    },
+    {
+      "name": "N33_e1/64_finite_converged",
+      "optimizer_message": "damped Newton residual 3.828e-09",
+      "passed": true
+    },
+    {
+      "name": "N33_e1/64_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        6.178718449648866e-21,
+        1.2357436899297732e-20,
+        0.19813349014517548
+      ]
+    },
+    {
+      "name": "N33_e1/64_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.828138526853613e-09
+    },
+    {
+      "name": "N33_e1/64_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 7.219110858505197e-10
+    },
+    {
+      "name": "N33_e1/64_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.999319588733449e-18
+    },
+    {
+      "name": "N33_e1/64_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.6257791302231061e-09
+    },
+    {
+      "name": "N33_e1/64_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.806950644828964e-18
+    },
+    {
+      "name": "N33_e1/64_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.9533376508941625e-09
+    },
+    {
+      "name": "N33_e1/64_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 3.476223100186912e-17
+    },
+    {
+      "name": "N33_e1/256_linear_field_exact",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 2.710505431213761e-19
+    },
+    {
+      "name": "N33_e1/256_A0_residual",
+      "passed": true,
+      "threshold": 1e-10,
+      "value": 1.514613879030941e-11
+    },
+    {
+      "name": "N33_e1/256_finite_converged",
+      "optimizer_message": "damped Newton residual 6.345e-11",
+      "passed": true
+    },
+    {
+      "name": "N33_e1/256_zero_mean_positive_density",
+      "passed": true,
+      "values": [
+        0.0,
+        3.089359224824433e-21,
+        0.19953337253629388
+      ]
+    },
+    {
+      "name": "N33_e1/256_strong_residual",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 6.34472250705417e-11
+    },
+    {
+      "name": "N33_e1/256_weak_cos_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.1329471540450659e-11
+    },
+    {
+      "name": "N33_e1/256_weak_sin_x",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 4.063824691257505e-18
+    },
+    {
+      "name": "N33_e1/256_weak_cos_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.5515934922147262e-11
+    },
+    {
+      "name": "N33_e1/256_weak_sin_y",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 6.7581243352727735e-18
+    },
+    {
+      "name": "N33_e1/256_weak_cos_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 4.635807927938043e-11
+    },
+    {
+      "name": "N33_e1/256_weak_sin_z",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 1.594884888968854e-17
+    },
+    {
+      "final_threshold": 0.01,
+      "name": "N33_linear_limit_monotone",
+      "passed": true,
+      "values": [
+        0.08134750789539211,
+        0.023015014650465536,
+        0.005957417720514377,
+        0.0015027946697016071,
+        0.0003765516097732817
+      ]
+    },
+    {
+      "interval": [
+        1.5,
+        2.5
+      ],
+      "name": "N33_force_sqrt_ratio",
+      "passed": true,
+      "value": 1.997749264284899
+    },
+    {
+      "name": "N33_finite_b_indispensable_at_small_e",
+      "passed": true,
+      "threshold": 0.01,
+      "value": 0.9996238942494609
+    },
+    {
+      "name": "e1_cos_x_grid_25_33",
+      "passed": true,
+      "relative_change": 2.8502489362176062e-09,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1_cos_y_grid_25_33",
+      "passed": true,
+      "relative_change": 1.4111926700994746e-10,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1_cos_z_grid_25_33",
+      "passed": true,
+      "relative_change": 1.296967352540383e-09,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/4_cos_x_grid_25_33",
+      "passed": true,
+      "relative_change": 7.860483447366512e-10,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/4_cos_y_grid_25_33",
+      "passed": true,
+      "relative_change": 5.688531307065991e-11,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/4_cos_z_grid_25_33",
+      "passed": true,
+      "relative_change": 3.756291165365113e-10,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/16_cos_x_grid_25_33",
+      "passed": true,
+      "relative_change": 2.020832424221649e-10,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/16_cos_y_grid_25_33",
+      "passed": true,
+      "relative_change": 1.5911221465123824e-11,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/16_cos_z_grid_25_33",
+      "passed": true,
+      "relative_change": 9.79814771741856e-11,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/64_cos_x_grid_25_33",
+      "passed": true,
+      "relative_change": 5.0888263645091984e-11,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/64_cos_y_grid_25_33",
+      "passed": true,
+      "relative_change": 4.090119249326118e-12,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/64_cos_z_grid_25_33",
+      "passed": true,
+      "relative_change": 2.476758230192291e-11,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/256_cos_x_grid_25_33",
+      "passed": true,
+      "relative_change": 1.2745438930877998e-11,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/256_cos_y_grid_25_33",
+      "passed": true,
+      "relative_change": 1.0293741128860292e-12,
+      "threshold": 0.005
+    },
+    {
+      "name": "e1/256_cos_z_grid_25_33",
+      "passed": true,
+      "relative_change": 6.209308118805332e-12,
+      "threshold": 0.005
+    },
+    {
+      "derivative_max": 0.0,
+      "energy": 0.0,
+      "force_max": 0.0,
+      "name": "zero_source_zero_field_force_control",
+      "passed": true
+    }
+  ],
+  "gate_effect": "NONE",
+  "grids": [
+    {
+      "branches": [
+        {
+          "energy": -2.2845971089867563,
+          "epsilon": "1",
+          "force_over_sqrt_epsilon": 0.01711249531482718,
+          "fundamental_cosine_coefficients": {
+            "x": -0.016307574704854125,
+            "y": -0.032468753954798,
+            "z": -0.04837667073457966
+          },
+          "gradient_rms": 0.042781238287067945,
+          "linear_residual_normalized": 9.833735638302063e-13,
+          "n": 17,
+          "omit_b_residual_normalized": 0.9192770669447443,
+          "optimizer_iterations": 2,
+          "optimizer_message": "damped Newton residual 3.257e-08",
+          "optimizer_success": true,
+          "psi_mean": -1.446250225442907e-18,
+          "psi_rms": 0.04278119153417443,
+          "relative_nonlinear_correction": 0.08134751516830838,
+          "source_mean": 7.231251127214535e-19,
+          "strong_residual_normalized": 3.2571379684847035e-08,
+          "total_density_min": 0.08204322803793182,
+          "weak_residuals_normalized": {
+            "cos_x": 5.280646529317172e-09,
+            "cos_y": 1.2521226622835416e-08,
+            "cos_z": 2.546702680849271e-08,
+            "sin_x": 4.5296089610410445e-18,
+            "sin_y": 7.171880854981653e-18,
+            "sin_z": 1.2739525202927939e-18
+          }
+        },
+        {
+          "energy": -0.1489744029077994,
+          "epsilon": "1/4",
+          "force_over_sqrt_epsilon": 0.009098945922075037,
+          "fundamental_cosine_coefficients": {
+            "x": -0.004309241653097981,
+            "y": -0.008607578248056672,
+            "z": -0.012886476904576536
+          },
+          "gradient_rms": 0.011373682402593796,
+          "linear_residual_normalized": 9.833735638302063e-13,
+          "n": 17,
+          "omit_b_residual_normalized": 0.9770525987336413,
+          "optimizer_iterations": 2,
+          "optimizer_message": "damped Newton residual 4.422e-12",
+          "optimizer_success": true,
+          "psi_mean": -3.6156255636072674e-19,
+          "psi_rms": 0.011373681493766802,
+          "relative_nonlinear_correction": 0.02301501689989409,
+          "source_mean": 1.8078127818036337e-19,
+          "strong_residual_normalized": 4.422095986063181e-12,
+          "total_density_min": 0.17051080700948296,
+          "weak_residuals_normalized": {
+            "cos_x": 6.798749597110448e-13,
+            "cos_y": 1.6156141294868348e-12,
+            "cos_z": 3.322749479847426e-12,
+            "sin_x": 3.5859404267720395e-18,
+            "sin_y": 1.04747207203078e-17,
+            "sin_z": 1.4155028000415946e-19
+          }
+        },
+        {
+          "energy": -0.009419894041698313,
+          "epsilon": "1/16",
+          "force_over_sqrt_epsilon": 0.00462881329067276,
+          "fundamental_cosine_coefficients": {
+            "x": -0.0010941392352162673,
+            "y": -0.0021875625921145185,
+            "z": -0.003279698638293111
+          },
+          "gradient_rms": 0.002893008306670475,
+          "linear_residual_normalized": 9.833735638302063e-13,
+          "n": 17,
+          "omit_b_residual_normalized": 0.9940521866102635,
+          "optimizer_iterations": 2,
+          "optimizer_message": "damped Newton residual 1.329e-12",
+          "optimizer_success": true,
+          "psi_mean": -6.779297931763626e-20,
+          "psi_rms": 0.002893008291573464,
+          "relative_nonlinear_correction": 0.005957418318687174,
+          "source_mean": 4.519531954509084e-20,
+          "strong_residual_normalized": 1.3287735407914375e-12,
+          "total_density_min": 0.19262770175237076,
+          "weak_residuals_normalized": {
+            "cos_x": 5.914442528098359e-17,
+            "cos_y": 9.155943937594628e-17,
+            "cos_z": 3.8746882500530295e-16,
+            "sin_x": 1.97226723314329e-17,
+            "sin_y": 2.889984881101113e-18,
+            "sin_z": 7.224962202752782e-18
+          }
+        },
+        {
+          "energy": -0.0005905033503644018,
+          "epsilon": "1/64",
+          "force_over_sqrt_epsilon": 0.002324766290666104,
+          "fundamental_cosine_coefficients": {
+            "x": -0.0002746306010826197,
+            "y": -0.0005492158894058759,
+            "z": -0.0008237195074072501
+          },
+          "gradient_rms": 0.0007264894658331574,
+          "linear_residual_normalized": 9.833735638302063e-13,
+          "n": 17,
+          "omit_b_residual_normalized": 0.9984991108391839,
+          "optimizer_iterations": 1,
+          "optimizer_message": "damped Newton residual 3.828e-09",
+          "optimizer_success": true,
+          "psi_mean": -1.129882988627271e-20,
+          "psi_rms": 0.0007264894655935107,
+          "relative_nonlinear_correction": 0.0015027948216700896,
+          "source_mean": 1.129882988627271e-20,
+          "strong_residual_normalized": 3.828035438122956e-09,
+          "total_density_min": 0.19815692543809268,
+          "weak_residuals_normalized": {
+            "cos_x": 7.219104342262239e-10,
+            "cos_y": 1.6257786378153249e-09,
+            "cos_z": 2.9533393683393414e-09,
+            "sin_x": 6.039478589299026e-18,
+            "sin_y": 1.676486122078367e-17,
+            "sin_z": 1.1733191131432371e-17
+          }
+        },
+        {
+          "energy": -3.6934191906213586e-05,
+          "epsilon": "1/256",
+          "force_over_sqrt_epsilon": 0.0011636927278474052,
+          "fundamental_cosine_coefficients": {
+            "x": -6.87268633981639e-05,
+            "y": -0.0001374508856790718,
+            "z": -0.0002061697842281981
+          },
+          "gradient_rms": 0.00018182698872615705,
+          "linear_residual_normalized": 9.833735638302063e-13,
+          "n": 17,
+          "omit_b_residual_normalized": 0.9996238942115255,
+          "optimizer_iterations": 1,
+          "optimizer_message": "damped Newton residual 6.010e-11",
+          "optimizer_success": true,
+          "psi_mean": -4.2370612073522665e-21,
+          "psi_rms": 0.00018182698872239763,
+          "relative_nonlinear_correction": 0.0003765516479200717,
+          "source_mean": 2.8247074715681776e-21,
+          "strong_residual_normalized": 6.009944430213278e-11,
+          "total_density_min": 0.19953923135952317,
+          "weak_residuals_normalized": {
+            "cos_x": 1.1329542419830266e-11,
+            "cos_y": 2.5515888544663576e-11,
+            "cos_z": 4.635813236108779e-11,
+            "sin_x": 1.1506857984925221e-17,
+            "sin_y": 2.2806551240624152e-18,
+            "sin_z": 7.027750111564562e-19
+          }
+        }
+      ],
+      "force_over_sqrt_epsilon": [
+        0.01711249531482718,
+        0.009098945922075037,
+        0.00462881329067276,
+        0.002324766290666104,
+        0.0011636927278474052
+      ],
+      "n": 17,
+      "relative_corrections": [
+        0.08134751516830838,
+        0.02301501689989409,
+        0.005957418318687174,
+        0.0015027948216700896,
+        0.0003765516479200717
+      ],
+      "small_e_force_ratio": 1.9977492640745882
+    },
+    {
+      "branches": [
+        {
+          "energy": -7.2657907583728765,
+          "epsilon": "1",
+          "force_over_sqrt_epsilon": 0.017112495430399725,
+          "fundamental_cosine_coefficients": {
+            "x": -0.016307574143112288,
+            "y": -0.0324687539000935,
+            "z": -0.048376671469913056
+          },
+          "gradient_rms": 0.04278123857599931,
+          "linear_residual_normalized": 5.447318222851537e-12,
+          "n": 25,
+          "omit_b_residual_normalized": 0.9192772004081189,
+          "optimizer_iterations": 2,
+          "optimizer_message": "damped Newton residual 3.257e-08",
+          "optimizer_success": true,
+          "psi_mean": -4.547473508864641e-19,
+          "psi_rms": 0.042781191822283425,
+          "relative_nonlinear_correction": 0.08134750847266,
+          "source_mean": -1.3642420526593924e-18,
+          "strong_residual_normalized": 3.257185598779947e-08,
+          "total_density_min": 0.08094623584226267,
+          "weak_residuals_normalized": {
+            "cos_x": 5.280653745308519e-09,
+            "cos_y": 1.2521232264764228e-08,
+            "cos_z": 2.5467003126350806e-08,
+            "sin_x": 0.0,
+            "sin_y": 1.0444529368812423e-17,
+            "sin_z": 2.3162672552639766e-17
+          }
+        },
+        {
+          "energy": -0.4737889372105047,
+          "epsilon": "1/4",
+          "force_over_sqrt_epsilon": 0.009098945939897199,
+          "fundamental_cosine_coefficients": {
+            "x": -0.004309241612018467,
+            "y": -0.008607578242073352,
+            "z": -0.0128864769616014
+          },
+          "gradient_rms": 0.011373682424871499,
+          "linear_residual_normalized": 5.447318222851537e-12,
+          "n": 25,
+          "omit_b_residual_normalized": 0.9770526100883591,
+          "optimizer_iterations": 2,
+          "optimizer_message": "damped Newton residual 8.378e-12",
+          "optimizer_success": true,
+          "psi_mean": 1.1368683772161602e-19,
+          "psi_rms": 0.01137368151602884,
+          "relative_nonlinear_correction": 0.023015014828312117,
+          "source_mean": -3.410605131648481e-19,
+          "strong_residual_normalized": 8.378075768652721e-12,
+          "total_density_min": 0.17023655896056566,
+          "weak_residuals_normalized": {
+            "cos_x": 6.798663435069994e-13,
+            "cos_y": 1.6156677045208973e-12,
+            "cos_z": 3.3227002129893703e-12,
+            "sin_x": 3.323259343956001e-18,
+            "sin_y": 4.391449847370429e-18,
+            "sin_z": 1.3816005643120651e-17
+          }
+        },
+        {
+          "energy": -0.029958445848141467,
+          "epsilon": "1/16",
+          "force_over_sqrt_epsilon": 0.0046288132930410045,
+          "fundamental_cosine_coefficients": {
+            "x": -0.001094139232532083,
+            "y": -0.0021875625916874626,
+            "z": -0.0032796986420841464
+          },
+          "gradient_rms": 0.0028930083081506277,
+          "linear_residual_normalized": 5.447318222851537e-12,
+          "n": 25,
+          "omit_b_residual_normalized": 0.9940521877383013,
+          "optimizer_iterations": 2,
+          "optimizer_message": "damped Newton residual 7.427e-12",
+          "optimizer_success": true,
+          "psi_mean": 0.0,
+          "psi_rms": 0.0028930082930533584,
+          "relative_nonlinear_correction": 0.00595741776775509,
+          "source_mean": -8.526512829121202e-20,
+          "strong_residual_normalized": 7.426742741860983e-12,
+          "total_density_min": 0.19255913974014144,
+          "weak_residuals_normalized": {
+            "cos_x": 3.433045587387702e-17,
+            "cos_y": 1.877493168037656e-17,
+            "cos_z": 3.2030137298576836e-16,
+            "sin_x": 1.5251386619855477e-17,
+            "sin_y": 8.471344124452799e-18,
+            "sin_z": 7.717027306891246e-18
+          }
+        },
+        {
+          "energy": -0.0018780001730593038,
+          "epsilon": "1/64",
+          "force_over_sqrt_epsilon": 0.002324766290966895,
+          "fundamental_cosine_coefficients": {
+            "x": -0.00027463060091291756,
+            "y": -0.0005492158893782891,
+            "z": -0.0008237195076480174
+          },
+          "gradient_rms": 0.0007264894659271546,
+          "linear_residual_normalized": 5.447318222851537e-12,
+          "n": 25,
+          "omit_b_residual_normalized": 0.9984991110075817,
+          "optimizer_iterations": 1,
+          "optimizer_message": "damped Newton residual 3.828e-09",
+          "optimizer_success": true,
+          "psi_mean": -7.105427357601002e-21,
+          "psi_rms": 0.0007264894656875034,
+          "relative_nonlinear_correction": 0.0015027946816998255,
+          "source_mean": -2.1316282072803006e-20,
+          "strong_residual_normalized": 3.828084866592618e-09,
+          "total_density_min": 0.19813978493503537,
+          "weak_residuals_normalized": {
+            "cos_x": 7.219109999396965e-10,
+            "cos_y": 1.6257790556030488e-09,
+            "cos_z": 2.953337773093192e-09,
+            "sin_x": 2.6111323312118978e-18,
+            "sin_y": 3.599579442387993e-18,
+            "sin_z": 2.754369073706201e-17
+          }
+        },
+        {
+          "energy": -0.00011746320955568302,
+          "epsilon": "1/256",
+          "force_over_sqrt_epsilon": 0.001163692727885156,
+          "fundamental_cosine_coefficients": {
+            "x": -6.872686338752663e-05,
+            "y": -0.0001374508856773333,
+            "z": -0.00020616978424330712
+          },
+          "gradient_rms": 0.00018182698873205562,
+          "linear_residual_normalized": 5.447318222851537e-12,
+          "n": 25,
+          "omit_b_residual_normalized": 0.9996238942464121,
+          "optimizer_iterations": 1,
+          "optimizer_message": "damped Newton residual 6.049e-11",
+          "optimizer_success": true,
+          "psi_mean": -5.3290705182007515e-21,
+          "psi_rms": 0.00018182698872829613,
+          "relative_nonlinear_correction": 0.0003765516127847757,
+          "source_mean": -5.3290705182007515e-21,
+          "strong_residual_normalized": 6.048668059517253e-11,
+          "total_density_min": 0.19953494623375884,
+          "weak_residuals_normalized": {
+            "cos_x": 1.1329462537438885e-11,
+            "cos_y": 2.551596068162281e-11,
+            "cos_z": 4.635803981102495e-11,
+            "sin_x": 4.6584973947867814e-18,
+            "sin_y": 1.6352030564702407e-18,
+            "sin_z": 1.6612326656570002e-17
+          }
+        }
+      ],
+      "force_over_sqrt_epsilon": [
+        0.017112495430399725,
+        0.009098945939897199,
+        0.0046288132930410045,
+        0.002324766290966895,
+        0.001163692727885156
+      ],
+      "n": 25,
+      "relative_corrections": [
+        0.08134750847266,
+        0.023015014828312117,
+        0.00595741776775509,
+        0.0015027946816998255,
+        0.0003765516127847757
+      ],
+      "small_e_force_ratio": 1.99774926426826
+    },
+    {
+      "branches": [
+        {
+          "energy": -16.71108624573686,
+          "epsilon": "1",
+          "force_over_sqrt_epsilon": 0.017112495440385147,
+          "fundamental_cosine_coefficients": {
+            "x": -0.016307574096631642,
+            "y": -0.032468753895511536,
+            "z": -0.04837667153265602
+          },
+          "gradient_rms": 0.04278123860096287,
+          "linear_residual_normalized": 1.514613879030941e-11,
+          "n": 33,
+          "omit_b_residual_normalized": 0.9192772145168995,
+          "optimizer_iterations": 2,
+          "optimizer_message": "damped Newton residual 3.257e-08",
+          "optimizer_success": true,
+          "psi_mean": -3.9543798077752743e-19,
+          "psi_rms": 0.04278119184717566,
+          "relative_nonlinear_correction": 0.08134750789539211,
+          "source_mean": 7.908759615550549e-19,
+          "strong_residual_normalized": 3.2571914987650403e-08,
+          "total_density_min": 0.08054336929122986,
+          "weak_residuals_normalized": {
+            "cos_x": 5.280654344007008e-09,
+            "cos_y": 1.2521232807887119e-08,
+            "cos_z": 2.5467001068573464e-08,
+            "sin_x": 1.3210655729360248e-17,
+            "sin_y": 5.728057757652295e-18,
+            "sin_z": 1.6558473270150273e-17
+          }
+        },
+        {
+          "energy": -1.089699394462214,
+          "epsilon": "1/4",
+          "force_over_sqrt_epsilon": 0.009098945941430693,
+          "fundamental_cosine_coefficients": {
+            "x": -0.004309241608631195,
+            "y": -0.008607578241583707,
+            "z": -0.012886476966441936
+          },
+          "gradient_rms": 0.011373682426788365,
+          "linear_residual_normalized": 1.514613879030941e-11,
+          "n": 33,
+          "omit_b_residual_normalized": 0.9770526112613758,
+          "optimizer_iterations": 2,
+          "optimizer_message": "damped Newton residual 2.218e-11",
+          "optimizer_success": true,
+          "psi_mean": 9.885949519438186e-20,
+          "psi_rms": 0.011373681517944349,
+          "relative_nonlinear_correction": 0.023015014650465536,
+          "source_mean": 1.9771899038876372e-19,
+          "strong_residual_normalized": 2.2175644269716663e-11,
+          "total_density_min": 0.17013584232280748,
+          "weak_residuals_normalized": {
+            "cos_x": 6.799383107239208e-13,
+            "cos_y": 1.6155437060279397e-12,
+            "cos_z": 3.322588196846424e-12,
+            "sin_x": 3.715496923137813e-18,
+            "sin_y": 3.044643312015708e-18,
+            "sin_z": 1.0288572209036134e-17
+          }
+        },
+        {
+          "energy": -0.06890346678248502,
+          "epsilon": "1/16",
+          "force_over_sqrt_epsilon": 0.004628813293244537,
+          "fundamental_cosine_coefficients": {
+            "x": -0.0010941392323109758,
+            "y": -0.002187562591652656,
+            "z": -0.003279698642405496
+          },
+          "gradient_rms": 0.0028930083082778354,
+          "linear_residual_normalized": 1.514613879030941e-11,
+          "n": 33,
+          "omit_b_residual_normalized": 0.9940521878481964,
+          "optimizer_iterations": 2,
+          "optimizer_message": "damped Newton residual 2.224e-11",
+          "optimizer_success": true,
+          "psi_mean": 2.4714873798595465e-20,
+          "psi_rms": 0.0028930082931805435,
+          "relative_nonlinear_correction": 0.005957417720514377,
+          "source_mean": 4.942974759719093e-20,
+          "strong_residual_normalized": 2.2235206507669914e-11,
+          "total_density_min": 0.19253396058070188,
+          "weak_residuals_normalized": {
+            "cos_x": 4.2366985714588405e-17,
+            "cos_y": 1.580150526122739e-16,
+            "cos_z": 3.029105630396729e-16,
+            "sin_x": 5.366828884673806e-18,
+            "sin_y": 7.26328043767152e-18,
+            "sin_z": 2.5556136042628646e-18
+          }
+        },
+        {
+          "energy": -0.004319340302062899,
+          "epsilon": "1/64",
+          "force_over_sqrt_epsilon": 0.002324766290992737,
+          "fundamental_cosine_coefficients": {
+            "x": -0.0002746306008989421,
+            "y": -0.0005492158893760428,
+            "z": -0.0008237195076684189
+          },
+          "gradient_rms": 0.0007264894659352303,
+          "linear_residual_normalized": 1.514613879030941e-11,
+          "n": 33,
+          "omit_b_residual_normalized": 0.9984991110228708,
+          "optimizer_iterations": 1,
+          "optimizer_message": "damped Newton residual 3.828e-09",
+          "optimizer_success": true,
+          "psi_mean": 6.178718449648866e-21,
+          "psi_rms": 0.0007264894656955789,
+          "relative_nonlinear_correction": 0.0015027946697016071,
+          "source_mean": 1.2357436899297732e-20,
+          "strong_residual_normalized": 3.828138526853613e-09,
+          "total_density_min": 0.19813349014517548,
+          "weak_residuals_normalized": {
+            "cos_x": 7.219110858505197e-10,
+            "cos_y": 1.6257791302231061e-09,
+            "cos_z": 2.9533376508941625e-09,
+            "sin_x": 3.999319588733449e-18,
+            "sin_y": 1.806950644828964e-18,
+            "sin_z": 3.476223100186912e-17
+          }
+        },
+        {
+          "energy": -0.00027016162315586723,
+          "epsilon": "1/256",
+          "force_over_sqrt_epsilon": 0.0011636927278883993,
+          "fundamental_cosine_coefficients": {
+            "x": -6.872686338665067e-05,
+            "y": -0.0001374508856771918,
+            "z": -0.0002061697842445873
+          },
+          "gradient_rms": 0.00018182698873256238,
+          "linear_residual_normalized": 1.514613879030941e-11,
+          "n": 33,
+          "omit_b_residual_normalized": 0.9996238942494609,
+          "optimizer_iterations": 1,
+          "optimizer_message": "damped Newton residual 6.345e-11",
+          "optimizer_success": true,
+          "psi_mean": 0.0,
+          "psi_rms": 0.00018182698872880285,
+          "relative_nonlinear_correction": 0.0003765516097732817,
+          "source_mean": 3.089359224824433e-21,
+          "strong_residual_normalized": 6.34472250705417e-11,
+          "total_density_min": 0.19953337253629388,
+          "weak_residuals_normalized": {
+            "cos_x": 1.1329471540450659e-11,
+            "cos_y": 2.5515934922147262e-11,
+            "cos_z": 4.635807927938043e-11,
+            "sin_x": 4.063824691257505e-18,
+            "sin_y": 6.7581243352727735e-18,
+            "sin_z": 1.594884888968854e-17
+          }
+        }
+      ],
+      "force_over_sqrt_epsilon": [
+        0.017112495440385147,
+        0.009098945941430693,
+        0.004628813293244537,
+        0.002324766290992737,
+        0.0011636927278883993
+      ],
+      "n": 33,
+      "relative_corrections": [
+        0.08134750789539211,
+        0.023015014650465536,
+        0.005957417720514377,
+        0.0015027946697016071,
+        0.0003765516097732817
+      ],
+      "small_e_force_ratio": 1.997749264284899
+    }
+  ],
+  "passed": 194,
+  "physical_EFT_domain_proved": false,
+  "physical_periodic_solution_verified": false,
+  "physics_pass": false,
+  "quasistatic_error_bounded": false,
+  "review_status": "DEFERRED",
+  "schema": "r4c1-t2p2-weak-source-v1",
+  "scope": "static aligned-frame T3 contrast; no coupled physical weak-field solution",
+  "script_sha256": "199d7d309a4fdd085bdd7a6c5f36c8d135759a3827d1bd3bfa4cfa09cca04cfc",
+  "source_sha256": {
+    "Analysis/MasterTests/outputs/r4c1_t2p1_attempt_02/summary.json": "fb59f3bf28e1b57c5294448f011731e805fe2f7928d12d40de210abb24f762bc",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_02_r4c1_periodic_force.py": "8e1b398c70cd1308252d743acbb4d2a7fcef02c28d3b79b0f124f5c3f85a6727",
+    "Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md": "81c7138568d44fd3197b88cb21efe67b17c406ada941f7ff778c2f8821ae074b",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_COEFFICIENT_IDENTIFIABILITY_REPORT_2026-09-25.md": "c4af4084ae83f7ed70d63f44700a0ebfc2c394ed7d79cd0061e3efe279b7dc0a",
+    "Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_REPORT_2026-09-29.md": "5f178a121aae03fb5b4d47cf383586f0496a7d18262fc5b6069dc8be0fc658ad",
+    "Theory/Gates/RES-001/RES001_R4C1_WEAK_SOURCE_CONTRACT_2026-09-29.md": "53542c4c5c850bb299937634fc49abe702b4d54871b4f7181d15a2730a7ed271"
+  },
+  "status": "FINITE_B_WEAK_SOURCE_LINEAR_CONDITIONAL_ONLY",
+  "theorem": "continuum H2 estimate separate in owning report, not proven by grid checks",
+  "total": 194,
+  "transitive_source_sha256": {
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md": "81c7138568d44fd3197b88cb21efe67b17c406ada941f7ff778c2f8821ae074b",
+    "Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md": "b999dff43b81f1dc73a9f584bd1c6a1856c559fe15b896719aa82300c8327883",
+    "Theory/Gates/ITSM_TEST_02_T3_TOPOLOGY_ADDENDUM_2026-09-25.md": "a4f251ff3d751a60ff4130d61a060f199c825604f877e1aeb5dd5515db8f317c",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_COEFFICIENT_IDENTIFIABILITY_REPORT_2026-09-25.md": "c4af4084ae83f7ed70d63f44700a0ebfc2c394ed7d79cd0061e3efe279b7dc0a",
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c",
+    "Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_CONTRACT_2026-09-29.md": "2f660751bd0155833643b3388672bb0462dbe5af703385875eda370b021d3645"
+  },
+  "validation": "PASS_LOCAL_CHECKS"
+}
