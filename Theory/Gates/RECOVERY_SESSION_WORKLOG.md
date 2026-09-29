@@ -2567,3 +2567,210 @@ including changing coefficients and all scalar branches. No all-formulation
 no-go is inferred from the Jordan chart; no full theorem is inferred from
 the restricted graph control. Canonical gates unchanged; no provider dispatch,
 model change, commit, push or publication.
+
+## 2026-09-26 - R4C1-S4A full scalar graph diagnostic
+
+Continued the approved conditional Test-1 route under deferred review. The
+R4C1 action and variation already exist; the canonical entry hold does not
+require repeating those calculations. Froze a full graph reconstruction and
+evolution-estimate diagnostic before its executable.
+
+Extended the S3 norm to all twelve scalar initial-data components, retaining
+Rdot, Fdot, Mcdot and exact S1 auxiliary reconstruction. Derived a full-rank
+minor on the regular B1 chart. Evaluated 54 local metrics/rates and both saved
+S2 endpoint-transfer methods for four torus modes. The graph amplifications
+are 5.4235603176, 10.5780243744, 20.9523242437 and 41.7316139173. No new
+perturbation integration is represented by this reweighting.
+
+After the initial 94-check run, preserved its artifacts in an ignored local
+snapshot and added an exact analytic strengthening in the unchanged norm.
+Full density/tilt data D=1, v_d=-1 have logarithmic norm rate r(p)/p -> 1/2.
+The fixed graph metric therefore cannot provide an instantaneous uniform
+differential bound. This does not prove a fixed-time transfer obstruction or
+all-formulation ill-posedness. No norm, action, domain or tolerance was retuned.
+
+Final validation: 99/99, twice with all three JSON artifacts byte-identical.
+Receipt: cacd1b1bf9970399c89383e5ac6f2bbfe4614fa5cb6ebf04806bb700a0ae16c0.
+Independent norm calculations agree within 2.49e-56 using 60-decimal arithmetic;
+input dynamical accuracy is unchanged. Centered energy-derivative error is
+5.84e-10. Registered R9-MT1-S4A as deferred with inherited review dependencies.
+Next: preregister additional dust velocity regularity or an equivalent
+symmetrizer and test the complete coupled estimate. Full IVP, causality,
+cutoff, GR recovery and matching remain open. No gate promotion or publication.
+
+## 2026-09-26 - R4C1-S4B fixed mixed-regularity graph disposition
+
+Froze the one-extra-dust-derivative contract before its executable. The new
+16-row full graph appends exactly `p v_d` to S4A's map. It is a stronger
+Sobolev domain, not a uniformly equivalent change of metric. The unchanged
+B1/S2 action and generator, full `Fdot`/`Mcdot`, 54 fixed local samples and
+four inherited two-method endpoint transfers were checked. The saved
+transfers, reweighted rather than reintegrated, have DOP853 gains 1.7862113364,
+2.3318336385, 2.9703986669 and 3.3433348130. Positive finite metrics and
+smaller finite gains do not establish a uniform evolution estimate.
+
+After preserving the first successful 159-check source and receipts in an
+ignored local snapshot, added ten exact witness checks without changing the
+contracted norm, action, parameters or thresholds. Constrained data at the B1
+initial coefficients give graph entries (row 11,14,15)=(1,1/p,1) and
+`r_1(p)/p -> sqrt(6)/2`, rejecting a wave-number-independent instantaneous
+differential bound in this fixed stronger graph. This is not a theorem of
+general ill-posedness, unbounded finite-time transfer or validity beyond an
+EFT cutoff.
+
+Final validation: 169/169, twice in `itsm_env` with matrix, samples and summary
+JSON byte-identical. Summary SHA-256:
+`e98be1809f48d6aaf2316dc3109473cd2b5b4c4a362d173f0f633be5c9498a73`.
+Independent norm discrepancy is 3.27e-56 at 60-decimal graph arithmetic;
+centered derivative error is 5.83e-10. Registered R9-MT1-S4B as deferred with
+inherited S4A/S3/S2/S1/B1/VARIATION review dependencies. Report:
+`RES-001/RES001_R4C1_MIXED_REGULARITY_REPORT_2026-09-26.md`.
+
+Next bounded question: isolate frame/dust coupling for a separately declared
+cross-term symmetrizer or direct finite-time transfer bound. Full IVP,
+causality, cutoff, GR recovery and matching remain open. No gate promotion or
+publication.
+
+## 2026-09-26 - R4C1-S4C leading frame/dust coupling audit
+
+Froze a separate contract to test whether the S4B frame-kinetic/dust-gradient
+pair is a closed leading subsystem before trying a 2-by-2 cross-term
+symmetrizer. Pinned S4B and its inherited S4A/S2 sources; retained the
+unchanged conditional R4C1 action, B1 initial coefficients, corrected
+`W=Vc+Mcdot`, `Rdot` and `F1dot`.
+
+The selected original-chart minor is exactly
+`-sqrt(66)*p**5*(79200*H**2+200*p**2+1419)/15840`, nonzero for `p,H>0`.
+The two unit chart vectors reconstruct the full 16-row S4B graph data and
+recover its exact `r_1(p)/p -> sqrt(6)/2` witness. Exact rational leading
+degrees over all graph rows show that unit frame kinetic data drive row 10
+(`sqrt(b) delta Delta_psi`) with coefficient `sqrt(330)/55`, row 12
+(`sqrt(M_U^2 c_L) p w`) with `sqrt(10)/5`, and row 15 (`p v_d`) with
+`sqrt(6)`, all at order `p`. The dust-gradient column has no order-`p`
+output; neither column grows faster than `p`. The pair is therefore not
+closed at leading order. The conditional isolated-symmetrizer branch was
+not run, and no full-system no-go is inferred.
+
+Final validation: 117/117, twice in `itsm_env` with detail and summary JSON
+byte-identical. Summary SHA-256:
+`ddccc444ac7e9191a1d19d6e61aaf009932e6394b700dcfe29af4d0bb361107b`.
+Report: `RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_REPORT_2026-09-26.md`.
+Registered R9-MT1-S4C as deferred with inherited review dependencies.
+Next: recursively close the leading span from rows 11/15 plus 10/12 before
+testing any full symmetrizer or transfer bound. Full IVP, causality, cutoff,
+GR recovery and matching remain open. No gate promotion or publication.
+
+## 2026-09-26 - R4C1-S4D recursive leading-span diagnostic
+
+Froze the S4D contract before implementing or executing a new calculation.
+Pinned S4C report/source/summary/detail and inherited S4B evidence without
+rerunning prior receipt-producing entrypoints. Used the unchanged B1 initial
+coefficients, 12-coordinate S4C chart and complete 16-row S4B graph.
+
+The first S4D run passed 124/124 local checks and was preserved. A second
+run added explicit reporting of the pending coordinate and a post-discovery
+independent limit check; it passed 125/125. Both reproduce S4C's exact
+frame/dust columns. The recursion from coordinates 8 and 11 requires 7 and
+9. Unit phase-gradient graph data at coordinate 7 have bounded full-graph
+source norm but drive the phase-kinetic graph row as
+`sqrt(165)*p^2/33 + o(p^2)` at the B1 event. The exact positive-denominator
+rational expression and direct independent limit agree. The registered
+order-`p` unweighted-chart test stops at coordinate 7; coordinate 9 remains
+unprocessed. No full span, symmetrizer, finite-time estimate or physical
+high-p EFT claim follows.
+
+Attempt-02 summary SHA-256:
+`319ce57136468f51eb4040c4362d12efa0da08106dc68ed3e5a0c1d354b60097`;
+detail SHA-256:
+`719d011083ae8c7f5a80b00c210d58e138aa49b07dbbbf3b1cc666c954f2e9f0`.
+Report: `RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_REPORT_2026-09-26.md`.
+Registered R9-MT1-S4D as deferred with inherited review dependencies.
+Next: separately contract a weighted/full-symbol domain and complete
+coupled-span diagnostic before any symmetrizer or IVP assertion. All parent
+gate statuses and publication firewalls remain unchanged.
+
+## 2026-09-29 - R4C1-S4E phase-pair graph-equivalence screen
+
+Froze the S4E contract before writing the executable. The new attempt
+reused but did not rewrite S4D or earlier receipts, and checked 47 input
+hashes through the transitive pin chain. Its 147/147 local checks and exact
+16-row columns for selected coordinates 6, 7 and 9 passed. Coordinate 9
+has one order-p output, into full-graph row 11.
+
+The two phase directions have exact orthonormal unit source graph vectors.
+Their order-p-squared mutual coefficients are +sqrt(165)/33 and
+-sqrt(165)/33, making the restricted leading pair skew. The registered
+diagonal-weight necessary-condition test rejects any uniformly
+full-graph-equivalent diagonal chart weighting as an entrywise order-p
+repair. It does not reject a non-diagonal symmetrizer or prove physical
+stability/instability. The full twelve-column symbol remains uncomputed.
+
+Attempt-01 summary SHA-256:
+597535a08264a038a225b68ef8f13b62d3e47ba3d83a882d1b8e6a8e615b5c4b;
+detail SHA-256:
+c82d6076df21f9b89b8b2e6fe0d739f1381cc3a8efd974be32431f6376f9b472.
+Owning report:
+RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_REPORT_2026-09-29.md.
+R9-MT1-S4E is deferred with inherited review dependencies. Next:
+separately contract the complete twelve-column/full-graph principal audit
+before any symmetrizer or IVP claim. All parent holds remain unchanged.
+
+## 2026-09-29 - R4C1-S4F complete graph-normalized B1 symbol
+
+Froze the S4F contract before the executable and first calculation. Corrected
+the new script's inherited helper dispatch and made the `Ddot` check derive
+from `pdot=-Hp` before freezing its source hash. The fresh attempt-01 run
+reconstructed all twelve selected-chart columns and all sixteen graph
+rows, replayed the three S4E columns, and verified the proposed exact
+graph Gram matrix and uniform D-equivalence for p>=1. It passed 208/208
+local checks with zero failed/unknown and recorded 52 pinned source hashes.
+No parent executable was run and no earlier receipt was overwritten.
+
+The normalized generator has only two degree-two entries, the opposing
+phase pair `+sqrt(165)/33` and `-sqrt(165)/33`; the complete degree-two
+matrix is skew. Its symmetric part nevertheless grows at order p, with
+exact `(2,3)` coefficient `-1/26`. A separate read-only SymPy limit of
+saved C entries confirmed those witnesses. Attempt-01 summary SHA-256:
+`c1b47d62d1e6da23269867420be774d114b77d3a33e40e95284e327dfce08604`;
+detail SHA-256:
+`6336924b22b91f5c3c91d835c498c81e8e3880227215ab117c8ccac19dcd8273`.
+Owning report: `RES-001/RES001_R4C1_FULL_SYMBOL_REPORT_2026-09-29.md`.
+
+R9-MT1-S4F is deferred with inherited review dependencies. Next:
+separately contract the order-p symmetric defect and test a permitted
+graph-equivalent non-diagonal symmetrizer or direct transfer mechanism.
+Formal B1 high-p algebra is not an EFT or full-IVP result. Test 1, Tests
+2/3 and all parent statuses remain unchanged.
+
+## 2026-09-29 - R4C1-S4G conditional order-p symmetrizer screen
+
+Froze the S4G contract and source before the first run. The exact
+calculation used the pinned S4F C matrix without executing or rewriting
+parent receipts. Attempt 01 reached the same detailed mathematical
+candidate but failed at JSON summary serialization of a SymPy integer;
+its detail (SHA-256
+`a778e9d25e5cc4c9b9789aa55f2b2ed30242c3e213da89d6510eefc7c07b037c`)
+is preserved as incomplete. A serialization-only repair was followed
+by a fresh attempt 02, not an overwrite.
+
+Attempt 02 passed 194/194 local checks with 57 source hashes and no
+failed/unknown checks. Its projected order-p slow block has characteristic
+`lambda^2*(lambda^2+1)^2*(3lambda^2+1)*(13lambda^2+14)/39`, square-free
+minimal polynomial and two semisimple zero modes. Exact polynomial
+projectors provide a sum-of-squares metric `G>=I/4`. The full
+off-diagonal `M_1/p` correction cancels the order-p symmetric defect.
+All 144 entries of `M C+C^T M+Mdot` are degree at most zero at the B1
+initial event. Independent read-only parsing found zero p^2/p
+cancellation residuals and zero positive-degree energy entries. The
+attempt-02 summary SHA-256 is
+`37530650e1f75ea22caef79b0ead1621b9866e595f89a055572a447f162d174f`;
+detail SHA-256 is
+`a778e9d25e5cc4c9b9789aa55f2b2ed30242c3e213da89d6510eefc7c07b037c`.
+Owning report:
+`RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_REPORT_2026-09-29.md`.
+
+R9-MT1-S4G is deferred with inherited review debt. Next: separately
+contract temporal persistence and uniform positivity along the registered
+B1 trajectory and physical p-domain. Formal initial-event algebra is
+not a finite-time IVP, EFT or canonical physics pass. Test 1, Tests 2/3,
+MAT/UVIR and publication firewalls remain unchanged.

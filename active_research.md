@@ -19,11 +19,15 @@ missing required inputs and unresolved substantive objections still hold
 affected uses. This dated decision supersedes older review-only execution
 stops below; historical results and gate/clearance statuses are preserved.
 
-Master Tests 1-3 can use their bounded results provisionally. R4C1-S1/S2/S3 now
+Master Tests 1-3 can use their bounded results provisionally. R4C1-S1/S2/S3
 supply the nonzero-mode reduction, kinetic/propagation diagnostics and
-zero-branch regularity disposition below. Next: freeze the full coupled
-mixed-regularity scalar evolution-estimate contract; review-panel assembly is
-deferred. Healthy GR recovery, full
+zero-branch regularity disposition below. S4A and S4B reject uniform
+instantaneous bounds in two specified fixed graph norms. S4C finds that the
+proposed leading frame/dust pair also drives phase-gradient and frame-spatial
+rows at order p, so it is not a closed two-variable block. None settles full
+coupled well-posedness. Next: recursively close the leading span before any
+full symmetrizer or finite-time transfer estimate.
+Review-panel assembly is deferred. Healthy GR recovery, full
 weak-field matching, coefficient determination and physical applicability
 remain scientific work. Canonical promotion and publication readiness still
 require the applicable review and scientific checklist.
@@ -128,6 +132,91 @@ result, not full coupled well-posedness or small growth. The failed 54/55
 arithmetic attempt is preserved; equivalent rescaling and higher precision
 meet the unchanged tolerance. R9-MT1-S3 is deferred; the complete coupled
 principal/subprincipal estimate, causality, cutoff and matching remain open.
+
+The [R4C1-S4A coupled graph report](Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_REPORT_2026-09-26.md)
+passes 99/99 implementation/provenance checks. The full 15-by-12 graph map
+has a nonzero exact minor on the regular chart. Legitimate density/tilt data
+give an instantaneous logarithmic norm rate r(p)/p -> 1/2, rejecting a
+wave-number-independent differential bound in this fixed metric. This is not
+a full-IVP no-go. The four saved S2 endpoint transfers have graph amplitudes
+5.424, 10.578, 20.952 and 41.732; that finite trend does not prove an asymptotic
+solution bound or instability. R9-MT1-S4A is deferred; scoped diagnostic and
+negative-result reuse may proceed. Full coupled evolution estimates remain open.
+
+The [R4C1-S4B mixed-regularity report](Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_REPORT_2026-09-26.md)
+passes 169/169 local checks with byte-identical reruns. It adds exactly one
+`p v_d` row, yielding a stronger 16-by-12 graph domain. Although the four
+saved S2 endpoint transfers have smaller finite-mode gains of 1.786, 2.332,
+2.970 and 3.343 in this norm, exact constrained B1 data give
+`r_1(p)/p -> sqrt(6)/2`. Therefore this *fixed* one-extra-dust-derivative
+metric also cannot supply a wave-number-independent instantaneous
+differential bound. No full-IVP no-go, physical high-p EFT claim or
+alternative-symmetrizer result follows. R9-MT1-S4B is deferred; full
+well-posedness and all canonical parent holds remain open.
+
+The [R4C1-S4C frame/dust principal report](Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_REPORT_2026-09-26.md)
+passes 117/117 exact/provenance checks with byte-identical reruns. Unit frame
+kinetic data produce order-p outputs in the phase-gradient row
+(`sqrt(330)/55`), frame-spatial row (`sqrt(10)/5`) and added dust-gradient
+row (`sqrt(6)`). Thus the proposed two-variable frame/dust block is not
+closed at the registered B1 event; its isolated symmetrizer was not tested.
+This is not a no-go for a full-system symmetrizer or a finite-time solution
+bound. R9-MT1-S4C is deferred; the full-IVP and parent holds persist.
+
+The [R4C1-S4D recursive leading-span report](Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_REPORT_2026-09-26.md)
+passes 125/125 bounded exact/provenance checks after preserving its first
+124-check attempt. S4C's frame/dust leakage requires selected-chart
+coordinates 7 and 9. A unit phase-gradient graph datum at coordinate 7
+drives the phase-kinetic row at order `p^2` with exact coefficient
+`sqrt(165)/33` on the B1 initial event. The registered unweighted-chart
+order-`p` recursion therefore stops as `CHART_REWEIGHT_REQUIRED`; coordinate
+9 was not processed, and no full leading block, symmetrizer or IVP estimate
+was obtained. This is not a physical high-frequency/EFT claim or a general
+ill-posedness result. R9-MT1-S4D and all inherited reviews are deferred;
+Master Test 1 and other parent holds are unchanged.
+
+The [29 September R4C1-S4E phase-pair report](Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_REPORT_2026-09-29.md)
+records 147/147 local source and exact-algebra checks, with the S4D inputs
+and prior receipts preserved. The previously unprocessed selected coordinate
+9 has only an order-p output into full-graph row 11. Coordinates 6 and 7
+have exact unit full-graph sources and opposite order-p^2 mutual couplings:
+the restricted leading phase pair is skew, not a demonstrated instability.
+No uniformly full-graph-equivalent **diagonal** chart reweighting can reduce
+that off-diagonal term to order p; a non-diagonal symmetrizer or other declared
+space remains untested. The full twelve-column principal symbol, constrained
+IVP, cutoff and parent physics holds remain open. R9-MT1-S4E review is
+deferred; no gate or publication promotion follows.
+
+The [29 September R4C1-S4F full-symbol report](Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_REPORT_2026-09-29.md)
+records 208/208 local checks and 52 pinned source hashes. All twelve
+selected-chart columns and sixteen graph rows are now classified at the
+same conditional B1 initial event. The exact graph metric is uniformly
+equivalent, for `p>=1`, to `D=diag(p,1,p,1,p,1,1,1,1,1,1,1)`. In those
+coordinates, only the phase pair is order `p^2`, with opposite coefficients
+`+sqrt(165)/33` and `-sqrt(165)/33`, so the **complete** order-`p^2`
+matrix is skew. The symmetric part nevertheless has order-`p` terms,
+including the exact coefficient `-1/26` at `(2,3)`. This is a bounded
+principal-symbol result, not an energy, constrained-IVP, physical cutoff,
+GR-limit or stability theorem. The next single gate is the order-`p`
+symmetric defect and a permitted graph-equivalent symmetrizer or direct
+transfer mechanism. R9-MT1-S4F and inherited reviews are deferred;
+Master Test 1 and all parent holds remain unchanged.
+
+The [29 September R4C1-S4G order-p symmetrizer report](Theory/Gates/RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_REPORT_2026-09-29.md)
+records a fresh attempt-02 receipt with 194/194 local checks and 57
+pinned source hashes. At the conditional B1 initial event, the projected
+order-p slow block has a two-dimensional semisimple zero eigenspace and
+three imaginary frequencies squared `1`, `1/3`, `14/13`. Exact polynomial
+projectors give a positive metric `G>=I/4`; a symmetric off-diagonal
+`M_1/p` correction cancels the full order-p energy defect. For each fixed
+`H>0` and sufficiently large `p`, the resulting graph-equivalent metric
+has a bounded formal high-p instantaneous energy-rate matrix. The
+attempt-01 detail is preserved but its summary failed JSON serialization;
+it is not a validated receipt. Temporal persistence, the physical
+cutoff/domain, full constrained IVP, all-sector stability, GR recovery and
+canonical action acceptance remain open. R9-MT1-S4G and inherited reviews
+are deferred; `physics_pass=false`, `gate_effect=NONE`, and all parent
+statuses remain unchanged.
 
 TOP-X4 is not judged close to a breakthrough: the 19 September X4-S4-C1
 receipt selected an equation route but did not solve a curved background; the

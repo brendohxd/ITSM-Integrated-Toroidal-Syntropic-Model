@@ -27,14 +27,14 @@ The programme strictly adheres to the fail-closed Iron Rule:
 
 Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
 
-## 🧭 Current Core Status (recovery snapshot — 2026-09-26)
+## 🧭 Core status (26 September snapshot; R4C1 updated 29 September)
 
 | Gate / Sector | Status | Physical Result |
 |---|---|---|
 | **Core identity** | `CANONICAL; IDENTITY HELD` | Active finite-density condensate, topology, preferred frame and force/reservoir sectors remain distinct; identity-first governance is unchanged. |
 | **MAT-001** | **`BLOCKED`** | M2/M3-U1 fixed-background controls are bounded reductions only; `K_Q` remains `NOT_DERIVED` and `V` remains `NOT_COMPUTED`. |
 | **UVIR-003** | **`IN_PROGRESS`** | Tier-1 closure remains downstream of the MAT matching blocker; no physical cutoff or complete constrained amplitude is promoted. |
-| **Master Tests 1–3 / R4C1** | **`PROVISIONAL CONTINUATION; TESTS NOT COMPLETE`** | The conditional R4C1 candidate now has bounded action, variation, background, GR-control, coefficient, scalar-constraint, propagation and zero-branch receipts. Substantive stability, well-posedness, physical matching and canonical parent acceptance remain open. |
+| **Master Tests 1–3 / R4C1** | **`PROVISIONAL CONTINUATION; TESTS NOT COMPLETE`** | The conditional R4C1 candidate has bounded action, variation, background, GR-control, coefficient, scalar-constraint and propagation receipts. S4A/S4B reject instantaneous uniform differential bounds in two specified graph norms; S4C/D identify leading couplings; S4E/F show the complete B1 order-`p²` block is skew; S4G constructs a positive graph-equivalent metric with bounded formal high-`p` energy rate at one initial event. No finite-time constrained IVP, physical cutoff, healthy GR limit or canonical Test-1 pass follows; Tests 2 and 3 remain incomplete. |
 | **TOP-X4 / KK-001** | **`BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD`** | The branchwise WKB checkpoint remains failed 11/12, exact finite-order transport passed 18/18, the D5 scaffold passed 20/20, the fixed-metric scalar/`chi` operator passed 25/25, and the local scalar-matrix Hadamard-parametrix checkpoint passed 22/22 through `U_2`. The finite-order Route-B diagnostic passed 8/8, the Route-A scalar-state construction passed 10/10 theorem-backed checks, and the scoped curved-Dirac operator passed 13/13 with contract and operator checks separated. `physics_pass=false`; the spinor state, gravity/ghost, parity, determinant, stress, physical Hessian and Rule-9 remain incomplete. |
 | **BBN-001** | **`CONTROL_ONLY / BLOCKED_UPSTREAM_BACKGROUND`** | Table/schema/CAMB plumbing and the action-derived interface contract are checked, but the physical temperature/unit map, early plenum, `Q^\mu`, `S_N` and action-derived `G_eff` are not exported by UVIR-003. |
 | **TOP-001 / CBR-002** | **`HOLD`** | P2/CBR-001 has a portable local-repair candidate and a narrowed instantaneous-closure result; independent-role, sensitivity and noncubic checks remain required. |
@@ -47,7 +47,7 @@ Script `PASS_*` labels in this table describe only their bounded executable
 scope. They do not constitute a physics-gate pass, downstream promotion or
 publication decision.
 
-## 🧪 Latest bounded findings (2026-09-25–2026-09-26)
+## 🧪 Latest bounded findings (2026-09-25–2026-09-29)
 
 - [Master Tests 1–3 disposition](Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md)
   records conditional action/source identities, the periodic-`T^3` curl
@@ -62,6 +62,28 @@ publication decision.
 - [R4C1 zero-branch report](Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md)
   distinguishes the rejected equal-order bound from a restricted
   derivative-weighted graph estimate; it does not prove the full coupled IVP.
+- [R4C1 full scalar graph report](Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_REPORT_2026-09-26.md)
+  extends reconstruction to all twelve initial-data components and rejects a
+  uniform instantaneous differential bound in the fixed metric using an exact
+  density/velocity witness. Full coupled well-posedness remains open.
+- [R4C1 one-extra-dust-derivative report](Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_REPORT_2026-09-26.md)
+  tests a stronger fixed 16-row graph. An exact frame/dust witness gives
+  `r_1(p)/p -> sqrt(6)/2`, rejecting its instantaneous uniform differential
+  bound. Full finite-time evolution and alternative norms remain open.
+- [R4C1 frame/dust principal report](Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_REPORT_2026-09-26.md)
+  finds exact order-`p` leakage into phase-gradient and frame-spatial rows.
+  The proposed two-variable block is not closed; no isolated symmetrizer or
+  full-IVP claim follows.
+- [R4C1 recursive leading-span report](Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_REPORT_2026-09-26.md)
+  rejects only the unweighted selected-chart order-`p` closure. The subsequent
+  [phase-pair](Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_REPORT_2026-09-29.md)
+  and [full-symbol](Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_REPORT_2026-09-29.md)
+  checks find a complete skew order-`p²` B1 block but retain an order-`p`
+  symmetric defect in the first graph-equivalent norm.
+- [R4C1 order-`p` symmetrizer report](Theory/Gates/RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_REPORT_2026-09-29.md)
+  constructs a positive correction cancelling that defect at the registered
+  B1 initial event. Temporal persistence and an EFT-valid wave-number domain
+  are unproved; the parent Test-1 hold and deferred review remain in force.
 - [TOP-X4 H1/X4-S4 route record](Theory/Gates/TOP-X4/README.md) records the
   `21/21` candidate-action contract, rejection of the registered zero-charge
   benchmark, and the `13/13` curved-route selection contract. No X4-S4 parent,

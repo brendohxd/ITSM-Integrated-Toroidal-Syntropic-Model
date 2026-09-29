@@ -11,4 +11,9 @@
 *.bat text eol=crlf
 *.cmd text eol=crlf
 
+# SHA-256-pinned research receipts must survive Git checkout byte-for-byte.
+# Their JSON, CSV, source snapshots and sidecars may contain CRLF from the
+# frozen Windows run; normalizing them would invalidate provenance hashes.
+Analysis/MasterTests/outputs/** -text -eol
+
 # Nested projects may provide more-specific rules in their own attributes.

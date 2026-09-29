@@ -1,0 +1,839 @@
+{
+  "schema": "r4c1-s4d-leading-span-summary-v1",
+  "validation": "PASS",
+  "passed": 125,
+  "total": 125,
+  "status": "CHART_REWEIGHT_REQUIRED",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "research_execution": "PROCEED_PROVISIONALLY",
+  "inherited_unreviewed_inputs": [
+    "R9-MT1-S4C",
+    "R9-MT1-S4B",
+    "R9-MT1-S4A",
+    "R9-MT1-S3",
+    "R9-MT1-S2",
+    "R9-MT1-S1",
+    "R9-MT1-B1",
+    "R9-MT1-VARIATION"
+  ],
+  "inputs": {
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_CONTRACT_2026-09-26.md": "2ec5f0bc84ffb420bdbc1d8d7b0c3a16237ee87e36867ab8b106d5dbf35b3496",
+    "Analysis/MasterTests/test_01_r4c1_zero_branch.py": "99cd1c52313dc5a5945ef0dd6f747f95848b2115847aec3c40a3fdc3a3ac278f",
+    "Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json": "1507c9b40b7a76985a81e520780fed6631eca59880870ae208d60d9587a6f374",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_CONTRACT_2026-09-26.md": "c1e4d5f72c3f354b8e43b1ed51b01b46e5da9d301125ac687cb723e1887ef49e",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json": "56a4db658ae24d86211148abaffc1b9cf4d3d5aceed2e732df1270abda737735",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md": "b4ecbc81119dd23b9597df3ca39b680cf44d07ae1a0a5564be78145b951354dd",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_samples.json": "1d9846b88bcf273f3d5fb35020a6bc7fb1e52c9d4fbae8dd4f2a578aed5edcfc",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_symbol.json": "3122e1927a4627ea6c40d68493ebe6a28ca250301d2442a3d25794afa9ea659d",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_matrices.json": "087a8083c499f22d5d2e6802faf9865353021352ba4f6fad25eb518d6052e412",
+    "Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_samples.json": "46aeb71430ee096b665c070a7ba494e76f330c9127e286ca80c87b88cb0f8a56",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_CONTRACT_2026-09-26.md": "7ba250c0afe826fca2af431260c2f9ea53d485a4ae197c6f5eced044d702bd22",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_REPORT_2026-09-26.md": "e493a658e2c3ae357167a269c2b611d6ed7cd5ce7dea77296a4f62999c7421d2",
+    "Analysis/MasterTests/test_01_r4c1_coupled_graph.py": "31b80572c618557674934ddb4a9d591aaa58959a497124f15f4198121db8f16a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_summary.json": "cacd1b1bf9970399c89383e5ac6f2bbfe4614fa5cb6ebf04806bb700a0ae16c0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_matrices.json": "7d815633d8ee583e0f4de2e0e198d27356a220dcc8abecb1613bc46ef7246c85",
+    "Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_samples.json": "9203ada102243051a0dfb4788ab83ee93190bb8d299ec4dbdf9b1a2b9d876907",
+    "Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_CONTRACT_2026-09-26.md": "d961553f9e2c26d617d8324fbcb0a78169c4bcc2f716aa5fa267725443adffa6",
+    "Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_REPORT_2026-09-26.md": "437e82f0faf3d8053763d253e102ac732eb39a34c598d7aad8efc0abc3d2131f",
+    "Analysis/MasterTests/test_01_r4c1_mixed_regularity.py": "ee9bd6fe894e8595a52d97f02bebc3827c6a70dee473e4cff41dfa6cfb2c7552",
+    "Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_summary.json": "e98be1809f48d6aaf2316dc3109473cd2b5b4c4a362d173f0f633be5c9498a73",
+    "Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_matrices.json": "503e58fdc2f95951107f9702daca36ae63acd45df83eb9395a00b0fe9c7e69db",
+    "Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_samples.json": "63ca5e2e542ff3f6212556fa3fa8d45bb121971550c2fb6315b0bd48b46d8b54",
+    "Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_CONTRACT_2026-09-26.md": "3cd2ad808053862ca1d947bae4ae0d69b46e8fdae415706b3f332cf3867aede1",
+    "Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_REPORT_2026-09-26.md": "65a0a4238673ec757493cc1f398bddc50c8e07a47226603e9dd50e70bb0441ec",
+    "Analysis/MasterTests/test_01_r4c1_frame_dust_principal.py": "8732ca4b991a60ce99eb32cf5de85a147435ae075f07dbf8495f661c22af6f82",
+    "Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_summary.json": "ddccc444ac7e9191a1d19d6e61aaf009932e6394b700dcfe29af4d0bb361107b",
+    "Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_detail.json": "b4cd27382b516c7fec994c926829db60cc3c1bc295abd4074324c7a7c6ec24bc"
+  },
+  "executable_sha256": "e11b15b7b8cd8d7a1c513fec5fd611b7a83269b409097dfba9a394a0577f32c1",
+  "artifacts": {
+    "Analysis/MasterTests/outputs/r4c1_s4d_attempt_02/detail.json": "719d011083ae8c7f5a80b00c210d58e138aa49b07dbbbf3b1cc666c954f2e9f0"
+  },
+  "decision": {
+    "selected_indices": [
+      7,
+      8,
+      11
+    ],
+    "pending_indices": [
+      9
+    ],
+    "stopped_at": 7,
+    "source_growth": [],
+    "faster_than_p": [
+      {
+        "input": 7,
+        "row": 9,
+        "degree": 2,
+        "coefficient": "sqrt(165)/33"
+      }
+    ],
+    "unselected_order_p": [],
+    "full_graph_residuals": [],
+    "leading_span_closed": false,
+    "full_constrained_IVP": "NOT_PROVED",
+    "symmetrizer": "NOT_TESTED"
+  },
+  "canonical": {
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "K_Q": "NOT_DERIVED",
+    "V": "NOT_COMPUTED",
+    "Stage4A": "CLOSED"
+  },
+  "checks": [
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "2ec5f0bc84ffb420bdbc1d8d7b0c3a16237ee87e36867ab8b106d5dbf35b3496",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_zero_branch.py",
+      "passed": true,
+      "value": "99cd1c52313dc5a5945ef0dd6f747f95848b2115847aec3c40a3fdc3a3ac278f",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_zero_branch.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json",
+      "passed": true,
+      "value": "1507c9b40b7a76985a81e520780fed6631eca59880870ae208d60d9587a6f374",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "c1e4d5f72c3f354b8e43b1ed51b01b46e5da9d301125ac687cb723e1887ef49e",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_scalar_propagation.py",
+      "passed": true,
+      "value": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_scalar_propagation.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json",
+      "passed": true,
+      "value": "56a4db658ae24d86211148abaffc1b9cf4d3d5aceed2e732df1270abda737735",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "b4ecbc81119dd23b9597df3ca39b680cf44d07ae1a0a5564be78145b951354dd",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json",
+      "passed": true,
+      "value": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md",
+      "passed": true,
+      "value": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md",
+      "passed": true,
+      "value": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_full_variation.py",
+      "passed": true,
+      "value": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_full_variation.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_samples.json",
+      "passed": true,
+      "value": "1d9846b88bcf273f3d5fb35020a6bc7fb1e52c9d4fbae8dd4f2a578aed5edcfc",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_scalar_constraints.py",
+      "passed": true,
+      "value": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_scalar_constraints.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_symbol.json",
+      "passed": true,
+      "value": "3122e1927a4627ea6c40d68493ebe6a28ca250301d2442a3d25794afa9ea659d",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_symbol.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_matrices.json",
+      "passed": true,
+      "value": "087a8083c499f22d5d2e6802faf9865353021352ba4f6fad25eb518d6052e412",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_samples.json",
+      "passed": true,
+      "value": "46aeb71430ee096b665c070a7ba494e76f330c9127e286ca80c87b88cb0f8a56",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "7ba250c0afe826fca2af431260c2f9ea53d485a4ae197c6f5eced044d702bd22",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "e493a658e2c3ae357167a269c2b611d6ed7cd5ce7dea77296a4f62999c7421d2",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/test_01_r4c1_coupled_graph.py",
+      "passed": true,
+      "value": "31b80572c618557674934ddb4a9d591aaa58959a497124f15f4198121db8f16a",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/test_01_r4c1_coupled_graph.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_summary.json",
+      "passed": true,
+      "value": "cacd1b1bf9970399c89383e5ac6f2bbfe4614fa5cb6ebf04806bb700a0ae16c0",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_matrices.json",
+      "passed": true,
+      "value": "7d815633d8ee583e0f4de2e0e198d27356a220dcc8abecb1613bc46ef7246c85",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_samples.json",
+      "passed": true,
+      "value": "9203ada102243051a0dfb4788ab83ee93190bb8d299ec4dbdf9b1a2b9d876907",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+      "criterion": null
+    },
+    {
+      "name": "S4B_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4A_scope",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4A_transitive_artifacts",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "d961553f9e2c26d617d8324fbcb0a78169c4bcc2f716aa5fa267725443adffa6",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "437e82f0faf3d8053763d253e102ac732eb39a34c598d7aad8efc0abc3d2131f",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Analysis/MasterTests/test_01_r4c1_mixed_regularity.py",
+      "passed": true,
+      "value": "ee9bd6fe894e8595a52d97f02bebc3827c6a70dee473e4cff41dfa6cfb2c7552",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Analysis/MasterTests/test_01_r4c1_mixed_regularity.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_summary.json",
+      "passed": true,
+      "value": "e98be1809f48d6aaf2316dc3109473cd2b5b4c4a362d173f0f633be5c9498a73",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_matrices.json",
+      "passed": true,
+      "value": "503e58fdc2f95951107f9702daca36ae63acd45df83eb9395a00b0fe9c7e69db",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_pin:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_samples.json",
+      "passed": true,
+      "value": "63ca5e2e542ff3f6212556fa3fa8d45bb121971550c2fb6315b0bd48b46d8b54",
+      "criterion": null
+    },
+    {
+      "name": "S4C_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_mixed_regularity_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_scope",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4B_transitive_artifacts",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pin:Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "3cd2ad808053862ca1d947bae4ae0d69b46e8fdae415706b3f332cf3867aede1",
+      "criterion": null
+    },
+    {
+      "name": "S4D_sidecar:Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pin:Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "65a0a4238673ec757493cc1f398bddc50c8e07a47226603e9dd50e70bb0441ec",
+      "criterion": null
+    },
+    {
+      "name": "S4D_sidecar:Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pin:Analysis/MasterTests/test_01_r4c1_frame_dust_principal.py",
+      "passed": true,
+      "value": "8732ca4b991a60ce99eb32cf5de85a147435ae075f07dbf8495f661c22af6f82",
+      "criterion": null
+    },
+    {
+      "name": "S4D_sidecar:Analysis/MasterTests/test_01_r4c1_frame_dust_principal.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pin:Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_summary.json",
+      "passed": true,
+      "value": "ddccc444ac7e9191a1d19d6e61aaf009932e6394b700dcfe29af4d0bb361107b",
+      "criterion": null
+    },
+    {
+      "name": "S4D_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pin:Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_detail.json",
+      "passed": true,
+      "value": "b4cd27382b516c7fec994c926829db60cc3c1bc295abd4074324c7a7c6ec24bc",
+      "criterion": null
+    },
+    {
+      "name": "S4D_sidecar:Analysis/MasterTests/outputs/test_01_r4c1_frame_dust_principal_detail.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_scoped_result",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4C_transitive_detail",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_shapes",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_chart_rows",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_pdot",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "S4D_Mcdot",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_new_dust_row",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_full_chart_rank_from_pin",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_chart_inverse",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_chart_unit_8",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_graph_reconstruction_8",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_recover_S4C_graph_frame",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_recover_S4C_evolution_frame",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_chart_unit_11",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_graph_reconstruction_11",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_recover_S4C_graph_dust",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_recover_S4C_evolution_dust",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_chart_unit_7",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_graph_reconstruction_7",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "S4D_independent_leading_limit_7_9",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "S4D_S4C_pair_seen",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_S4C_leakage_10_12",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "S4D_bounded_classification",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    }
+  ]
+}

@@ -1,5 +1,67 @@
 # ITSM Changelog & Archive History
 
+## R4C1 full-symbol and bounded initial-event energy screen (2026-09-29)
+
+- S4D's exact selected-chart `p²` coupling stops the proposed unweighted
+  order-`p` recursive closure. S4E shows the opposing phase-pair entries
+  are skew and rejects a graph-equivalent **diagonal** reweighting as an
+  entrywise order-`p` repair; neither finding proves instability.
+- S4F reconstructs all twelve selected-chart columns and sixteen graph
+  rows (208/208 local checks). The **complete** degree-two B1 generator is
+  the skew phase pair in a verified graph-equivalent norm, but its
+  symmetric part retains order-`p` terms.
+- S4G constructs exact polynomial projectors for the order-`p` slow block,
+  an algebraically positive metric, and a non-diagonal correction that
+  cancels the full order-`p` energy defect. Its fresh attempt 02 passes
+  194/194 local checks; the formal high-`p` energy-rate matrix is bounded
+  at the conditional B1 initial event for fixed `H>0`. Attempt 01 is
+  preserved as an incomplete JSON-serialization run, not a valid receipt.
+- Next is temporal persistence along the registered B1 trajectory and a
+  physically permitted wave-number domain. Full constrained-IVP,
+  all-sector stability, GR recovery, canonical Test 1 and Tests 2–3 remain
+  open. Rule-9 review remains deferred; no gate or publication promotion.
+
+## R4C1 frame/dust principal-coupling audit (2026-09-26)
+
+- Added frozen S4C contract, exact two-column executable and report. The
+  selected full-graph chart has a nonzero regular B1 minor. Final validation
+  is 117/117 with byte-identical receipt reruns.
+- A unit frame-kinetic perturbation has order-`p` outputs in the phase-gradient,
+  frame-spatial and added dust-gradient rows, with exact coefficients
+  `sqrt(330)/55`, `sqrt(10)/5` and `sqrt(6)`. Therefore the proposed
+  frame/dust pair is not a closed leading subsystem; no truncated 2-by-2
+  symmetrizer was accepted. Full-system symmetrization and IVP remain open.
+- Registered R9-MT1-S4C as deferred, retained all parent holds, and directed
+  the next bounded calculation to recursively close the leading span.
+
+## R4C1 one-extra-dust-derivative graph diagnostic (2026-09-26)
+
+- Added preregistered S4B contract, executable, exact witness and report. The
+  stronger 16-by-12 full scalar graph appends exactly `p v_d`; it is not
+  uniformly equivalent to S4A's norm. Final validation is 169/169 with
+  byte-identical `itsm_env` reruns and preserved initial 159-check snapshot.
+- Exact constrained B1 data yield `r_1(p)/p -> sqrt(6)/2`, rejecting a
+  wave-number-independent instantaneous differential estimate for this fixed
+  norm. This does not establish fixed-time growth or general ill-posedness.
+- Reweighted the four saved S2 endpoint transfers: finite-mode gains are
+  1.786, 2.332, 2.970 and 3.343. No perturbation reintegration or physical
+  EFT claim follows. Registered R9-MT1-S4B as deferred and retained all
+  canonical, full-IVP, GR and matching holds.
+
+## R4C1 full scalar graph diagnostic (2026-09-26)
+
+- Added S4A's frozen contract, executable and report. The full 15-by-12 graph
+  map has a nonzero exact minor on the regular B1 chart. All 99 checks pass.
+- An exact density/velocity initial sequence has instantaneous logarithmic
+  norm-growth rate r(p)/p -> 1/2. This rejects a wave-number-independent
+  differential estimate in the fixed graph metric; full IVP well-posedness
+  and alternative estimates remain open.
+- Reweighted the four saved S2 endpoint transfers: graph amplification is
+  approximately 5.424, 10.578, 20.952 and 41.732. The finite trend does not
+  establish asymptotic solution growth. No action or parameter changed.
+- Registered R9-MT1-S4A as deferred for provisional diagnostic reuse. Updated
+  the execution queue, dashboard and README; canonical gates stay unchanged.
+
 ## Master Tests 1–3 and R4C1 conditional continuation (2026-09-25–2026-09-26)
 
 - Added the ordered Master ITSM test programme and its bounded disposition for

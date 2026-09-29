@@ -2,7 +2,7 @@
 
 **Branch:** `recovery/v12-core-architecture`
 **Queue opened:** 2026-08-05
-**Queue reconciled:** 2026-09-25
+**Queue reconciled:** 2026-09-29
 **Sprint goal:** execute the user-directed Master ITSM test programme in
 dependency order, beginning with the Test 1 action-input completion gate;
 preserve all existing fail-closed boundaries.
@@ -25,13 +25,65 @@ scientific failures and missing-input holds for affected uses. The review
 backlog is outside the active research critical path until the operator
 resumes it; canonical closure and publication readiness still require review.
 
+## Route priority after Rule-9 deferral — 26 September 2026
+
+The deferred-review register separates a review-only dependency from a
+substantive scientific hold. If Rule 9 is the only unmet requirement for an
+exact bounded use, that use may proceed provisionally under its registered
+scope. This does not change `physics_pass`, gate status, claim labels or
+publication readiness.
+
+The current work order, ranked by upstream dependency and Tier-1 importance,
+is:
+
+1. **P0 — Test 1 action/source-vector closure.** The conditional R4C1 action
+   and variation are already recorded. Continue its viability and GR-limit
+   work toward a defensible canonical action decision; do not repeat the
+   completed candidate variation or presume canonical acceptance.
+2. **P0 — R4C1 coupled evolution estimate.** Continue the permitted
+   conditional diagnostics for the corrected `Mdot` term, defective zero
+   branch and singular-domain controls. S4A rejects the fixed full graph
+   differential bound; S4B rejects the specified one-extra-dust-derivative
+   graph bound. S4C shows the proposed frame/dust pair is not closed at
+   leading order. S4D finds an order-`p^2` phase-gradient-to-phase-kinetic
+   term in the unweighted selected chart. S4E completes coordinate 9 and
+   finds the leading phase pair is skew; graph-equivalent diagonal weighting
+   cannot reduce its entries to order `p`. S4F completes all twelve columns
+   and the sixteen-row graph: its only degree-two entries form that skew
+   phase pair in a graph-equivalent norm, while the symmetric part still
+   grows at order `p`. S4G constructs an exact positive graph-equivalent
+   metric that cancels the order-`p` defect and has bounded formal
+   high-p energy rate at the B1 initial event. Next test temporal
+   persistence along the registered B1 trajectory; full IVP remains open.
+3. **P0 — Test 2 weak-field and periodic-`T^3` closure.** Derive the force law
+   and its domain from the frozen action, retaining the nonspherical rejection
+   and harmonic-flux correction.
+4. **P0 — Test 3 blind coefficient audit.** Only after an action-level force
+   response exists, determine whether `C_chi` and `a0(z)` are identifiable
+   without target insertion.
+5. **P0 — MAT/UVIR matching.** Derive numeric `K_Q` or an equivalent
+   action-level invariant, compute `V`, and then reassess Stage 4A and
+   MAT-001.
+6. **P1 — TOP-X4 bounded diagnostics.** Continue only as a separate
+   conditional lane; local receipts do not replace the missing stress,
+   determinant, gravity/ghost, parity/anomaly, counterterm, finite-charge and
+   physical-Hessian sectors.
+7. **P1 — BBN and observational fits.** Resume only after action-derived
+   background and effective-gravity inputs exist; current missing inputs are
+   not review-only holds.
+
+The corresponding Rule-9 rows remain `DEFERRED` and `Rule9_cleared=false`.
+No active item in this queue waits for independent review when review is its
+only remaining requirement; substantive missing inputs and failed physics
+checks continue to hold dependent uses.
+
 ## Active queue
 
 | Priority | Task | Status | Definition of done |
 |---|---|---|---|
 | P0 | Master programme Test 1 — covariant action and source vector | **active priority; action-input hold** | Complete and freeze the full off-shell matter/plenum/reservoir action and interaction-stress split before variation; then derive currents and verify regular zero-coupling and declared GR limits. Contract: `Theory/Gates/ITSM_MASTER_TEST_01_SOURCE_VECTOR_CLOSURE_CONTRACT_2026-09-24.md` |
 | P0 | Master Tests 1–3 bounded derivation audit | **local calculations complete; provisional reuse allowed; review DEFERRED** | Conditional source/witness 29/29; weak-field 11/11; coefficient 9/9; periodic T3 addendum 19/19; v7.2 transcription-chain rejection 10/10. Full disposition and deferred register retain scope and substantive programme requirements. No parent promotion or complete blind coefficient audit |
-| P0 | Approved R4C1 four-dimensional reservoir candidate | **provisional research continues; full coupled well-posedness/stability/GR/matching holds retained** | Current 119/119; variation/Ward 162/162; B1 48/48; G1 56/56; C1 63/63; S1 71/71; S2 56/56. S3 57/57 rejects the equal-order canonical bound and reconstructs a restricted original-variable graph-norm control with extra spatial regularity; no full IVP theorem. Next: freeze the complete coupled principal/subprincipal scalar evolution-estimate contract in declared mixed-regularity spaces. Wider phase cone, quartic dispersion, homogeneous/singular sectors, EFT validity and matching remain open. Failed S2/S3 attempts archived. Review deferred; no TOP-X4 or canonical promotion. See `Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md` |
+| P0 | Approved R4C1 four-dimensional reservoir candidate | **provisional research continues; full coupled well-posedness/stability/GR/matching holds retained** | Current 119/119; variation/Ward 162/162; B1 48/48; G1 56/56; C1 63/63; S1 71/71; S2 56/56; S3 57/57. S4A 99/99 and S4B 169/169 reject two specified fixed-graph instantaneous differential bounds. S4C 117/117 finds the frame/dust pair leaks at order p. S4D 125/125 stops the unweighted order-p recursion at an order-p^2 phase coupling. S4E 147/147 finds a skew leading phase pair and rejects graph-equivalent diagonal weighting as an entrywise order-p repair. S4F 208/208 completes the full B1 symbol: its degree-two pair is skew but the candidate norm has order-p symmetric growth. S4G attempt 02 passes 194/194, constructs an exact positive graph-equivalent correction and bounded formal high-p energy rate at the B1 initial event; attempt 01 stopped at JSON serialization and is preserved incomplete. Next: temporal persistence along registered B1 and an explicit physical p-domain before any finite-time transfer or EFT claim. Full IVP, wider phase cone, quartic dispersion, homogeneous/singular sectors, GR and matching remain open. Failed S2/S3 and both S4D attempts remain preserved. Review deferred; no parent promotion. See `Theory/Gates/RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_REPORT_2026-09-29.md` |
 | Deferred | Tests 1-3 independent review | **DEFERRED_BY_OPERATOR; outside research critical path** | Preserve existing partial reports and sealed snapshots. `docs/ITSM_MASTER_TEST_REVIEW.md` prepares current mandates and ten receipts when needed. Resume reviewers only when directed; Rule 9 remains NOT_CLEARED. Review-only delay does not prevent eligible provisional work |
 | P0 | UVIR-to-MAT fail-closed handoff audit | **completed** | Eight exact upstream contracts pass; corrupted/mismatched input fails; docs and checkpoint pushed |
 | P0 | MAT basis-covariant physical-mode vertex projection | **completed** | Projection identity, field-basis covariance, kinetic normalization and negative controls pass without computing $V$ |

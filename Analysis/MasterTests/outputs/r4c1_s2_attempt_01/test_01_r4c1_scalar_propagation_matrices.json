@@ -1,0 +1,350 @@
+{
+  "schema": "r4c1-canonical-propagation-v1",
+  "background_order": [
+    "a",
+    "H",
+    "u",
+    "u_dot",
+    "v",
+    "v_dot",
+    "r",
+    "r_dot",
+    "psi_dot",
+    "rho_m",
+    "C",
+    "k"
+  ],
+  "q_from_x": [
+    [
+      "a**(-3/2)",
+      "0",
+      "0",
+      "0",
+      "sqrt(66)*u_dot/(66*H*a**(3/2))",
+      "0"
+    ],
+    [
+      "0",
+      "a**(-3/2)",
+      "0",
+      "0",
+      "sqrt(66)*v_dot/(66*H*a**(3/2))",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "a**(-3/2)",
+      "0",
+      "sqrt(66)*r_dot/(66*H*a**(3/2))",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "sqrt(3)/(3*a**(3/2))",
+      "sqrt(66)*psi_dot/(66*H*a**(3/2))",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "sqrt(66)*C/(66*H*a**(3/2))",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "sqrt(66)*k/(66*H*a**(5/2))",
+      "sqrt(6)/a**(3/2)"
+    ]
+  ],
+  "Mc": [
+    [
+      "-3*H/2",
+      "0",
+      "0",
+      "2*sqrt(3)*u_dot/15",
+      "(-5040*sqrt(66)*H*u_dot - 360*sqrt(66)*r**2*u - 21*sqrt(66)*u**5 - 42*sqrt(66)*u**3*v**2 - 280*sqrt(66)*u**3 - 21*sqrt(66)*u*v**4 - 280*sqrt(66)*u*v**2 - 1680*sqrt(66)*u)/(110880*H)",
+      "0"
+    ],
+    [
+      "0",
+      "-3*H/2",
+      "0",
+      "2*sqrt(3)*v_dot/15",
+      "(-5040*sqrt(66)*H*v_dot - 360*sqrt(66)*r**2*v - 21*sqrt(66)*u**4*v - 42*sqrt(66)*u**2*v**3 - 280*sqrt(66)*u**2*v - 21*sqrt(66)*v**5 - 280*sqrt(66)*v**3 - 1680*sqrt(66)*v)/(110880*H)",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-3*H/2",
+      "2*sqrt(3)*r_dot/15",
+      "(-42*sqrt(66)*H*r_dot - 2*sqrt(66)*r**3 - 3*sqrt(66)*r*u**2 - 3*sqrt(66)*r*v**2 - 28*sqrt(66)*r)/(924*H)",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-3*H/2 + 2*psi_dot/5",
+      "(-45*sqrt(22)*H*psi_dot - 2*sqrt(22)*rho_m)/(330*H)",
+      "0"
+    ],
+    [
+      "(-55440*sqrt(66)*H*u_dot - 360*sqrt(66)*r**2*u - 21*sqrt(66)*u**5 - 42*sqrt(66)*u**3*v**2 - 280*sqrt(66)*u**3 - 21*sqrt(66)*u*v**4 - 280*sqrt(66)*u*v**2 - 1680*sqrt(66)*u)/(110880*H)",
+      "(-55440*sqrt(66)*H*v_dot - 360*sqrt(66)*r**2*v - 21*sqrt(66)*u**4*v - 42*sqrt(66)*u**2*v**3 - 280*sqrt(66)*u**2*v - 21*sqrt(66)*v**5 - 280*sqrt(66)*v**3 - 1680*sqrt(66)*v)/(110880*H)",
+      "(-462*sqrt(66)*H*r_dot - 2*sqrt(66)*r**3 - 3*sqrt(66)*r*u**2 - 3*sqrt(66)*r*v**2 - 28*sqrt(66)*r)/(924*H)",
+      "(-132*sqrt(22)*H**2 - 495*sqrt(22)*H*psi_dot - 2*sqrt(22)*rho_m)/(330*H)",
+      "(-166320*H**3*a**2 - 15120*H*a**2*psi_dot**2 - 5040*H*a**2*r_dot**2 - 5040*H*a**2*rho_m - 5040*H*a**2*u_dot**2 - 5040*H*a**2*v_dot**2 - 3696*H*k**2 - 672*a**2*psi_dot*rho_m - 240*a**2*r**3*r_dot - 360*a**2*r**2*u*u_dot - 360*a**2*r**2*v*v_dot - 360*a**2*r*r_dot*u**2 - 360*a**2*r*r_dot*v**2 - 3360*a**2*r*r_dot - 21*a**2*u**5*u_dot - 21*a**2*u**4*v*v_dot - 42*a**2*u**3*u_dot*v**2 - 280*a**2*u**3*u_dot - 42*a**2*u**2*v**3*v_dot - 280*a**2*u**2*v*v_dot - 21*a**2*u*u_dot*v**4 - 280*a**2*u*u_dot*v**2 - 1680*a**2*u*u_dot - 21*a**2*v**5*v_dot - 280*a**2*v**3*v_dot - 1680*a**2*v*v_dot)/(110880*H**2*a**2)",
+      "-sqrt(11)*k/(5*a)"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "sqrt(2)*k/(15*a)",
+      "-sqrt(11)*k/(55*a)",
+      "-17*H/10"
+    ]
+  ],
+  "Vc": [
+    [
+      "(-49140*H**2*a**2 + 4680*a**2*r**2 + 1365*a**2*u**4 + 1638*a**2*u**2*v**2 + 10920*a**2*u**2 - 327600*a**2*u_dot**2 + 273*a**2*v**4 + 3640*a**2*v**2 + 21840*a**2 + 1680*k**2*v**2 + 21840*k**2)/(21840*a**2)",
+      "(39*a**2*u**3*v + 39*a**2*u*v**3 + 260*a**2*u*v - 11700*a**2*u_dot*v_dot - 60*k**2*u*v)/(780*a**2)",
+      "3*r*u/7 - 15*r_dot*u_dot",
+      "-21*sqrt(3)*H*u_dot/5 - 15*sqrt(3)*psi_dot*u_dot - sqrt(3)*r**2*u/35 - sqrt(3)*u**5/600 - sqrt(3)*u**3*v**2/300 - sqrt(3)*u**3/45 - sqrt(3)*u*v**4/600 - sqrt(3)*u*v**2/45 - 2*sqrt(3)*u/15",
+      "(-997920*sqrt(66)*H**3*u_dot - 11880*sqrt(66)*H**2*r**2*u - 693*sqrt(66)*H**2*u**5 - 1386*sqrt(66)*H**2*u**3*v**2 - 9240*sqrt(66)*H**2*u**3 - 693*sqrt(66)*H**2*u*v**4 - 9240*sqrt(66)*H**2*u*v**2 - 55440*sqrt(66)*H**2*u + 3960*sqrt(66)*H*r**2*u_dot + 7920*sqrt(66)*H*r*r_dot*u + 1155*sqrt(66)*H*u**4*u_dot + 924*sqrt(66)*H*u**3*v*v_dot + 1386*sqrt(66)*H*u**2*u_dot*v**2 + 9240*sqrt(66)*H*u**2*u_dot + 924*sqrt(66)*H*u*v**3*v_dot + 6160*sqrt(66)*H*u*v*v_dot + 231*sqrt(66)*H*u_dot*v**4 + 3080*sqrt(66)*H*u_dot*v**2 + 18480*sqrt(66)*H*u_dot + 5400*sqrt(66)*psi_dot**2*r**2*u + 315*sqrt(66)*psi_dot**2*u**5 + 630*sqrt(66)*psi_dot**2*u**3*v**2 + 4200*sqrt(66)*psi_dot**2*u**3 + 315*sqrt(66)*psi_dot**2*u*v**4 + 4200*sqrt(66)*psi_dot**2*u*v**2 + 25200*sqrt(66)*psi_dot**2*u + 1800*sqrt(66)*r**2*r_dot**2*u + 1800*sqrt(66)*r**2*rho_m*u + 1800*sqrt(66)*r**2*u*u_dot**2 + 1800*sqrt(66)*r**2*u*v_dot**2 + 105*sqrt(66)*r_dot**2*u**5 + 210*sqrt(66)*r_dot**2*u**3*v**2 + 1400*sqrt(66)*r_dot**2*u**3 + 105*sqrt(66)*r_dot**2*u*v**4 + 1400*sqrt(66)*r_dot**2*u*v**2 + 8400*sqrt(66)*r_dot**2*u + 105*sqrt(66)*rho_m*u**5 + 210*sqrt(66)*rho_m*u**3*v**2 + 1400*sqrt(66)*rho_m*u**3 + 105*sqrt(66)*rho_m*u*v**4 + 1400*sqrt(66)*rho_m*u*v**2 + 8400*sqrt(66)*rho_m*u + 105*sqrt(66)*u**5*u_dot**2 + 105*sqrt(66)*u**5*v_dot**2 + 210*sqrt(66)*u**3*u_dot**2*v**2 + 1400*sqrt(66)*u**3*u_dot**2 + 210*sqrt(66)*u**3*v**2*v_dot**2 + 1400*sqrt(66)*u**3*v_dot**2 + 105*sqrt(66)*u*u_dot**2*v**4 + 1400*sqrt(66)*u*u_dot**2*v**2 + 8400*sqrt(66)*u*u_dot**2 + 105*sqrt(66)*u*v**4*v_dot**2 + 1400*sqrt(66)*u*v**2*v_dot**2 + 8400*sqrt(66)*u*v_dot**2)/(1219680*H**2)",
+      "(sqrt(6)*k*u*v*v_dot - sqrt(6)*k*u_dot*v**2 - 13*sqrt(6)*k*u_dot)/(13*a)"
+    ],
+    [
+      "(39*a**2*u**3*v + 39*a**2*u*v**3 + 260*a**2*u*v - 11700*a**2*u_dot*v_dot - 60*k**2*u*v)/(780*a**2)",
+      "(-49140*H**2*a**2 + 4680*a**2*r**2 + 273*a**2*u**4 + 1638*a**2*u**2*v**2 + 3640*a**2*u**2 + 1365*a**2*v**4 + 10920*a**2*v**2 - 327600*a**2*v_dot**2 + 21840*a**2 + 1680*k**2*u**2 + 21840*k**2)/(21840*a**2)",
+      "3*r*v/7 - 15*r_dot*v_dot",
+      "-21*sqrt(3)*H*v_dot/5 - 15*sqrt(3)*psi_dot*v_dot - sqrt(3)*r**2*v/35 - sqrt(3)*u**4*v/600 - sqrt(3)*u**2*v**3/300 - sqrt(3)*u**2*v/45 - sqrt(3)*v**5/600 - sqrt(3)*v**3/45 - 2*sqrt(3)*v/15",
+      "(-997920*sqrt(66)*H**3*v_dot - 11880*sqrt(66)*H**2*r**2*v - 693*sqrt(66)*H**2*u**4*v - 1386*sqrt(66)*H**2*u**2*v**3 - 9240*sqrt(66)*H**2*u**2*v - 693*sqrt(66)*H**2*v**5 - 9240*sqrt(66)*H**2*v**3 - 55440*sqrt(66)*H**2*v + 3960*sqrt(66)*H*r**2*v_dot + 7920*sqrt(66)*H*r*r_dot*v + 231*sqrt(66)*H*u**4*v_dot + 924*sqrt(66)*H*u**3*u_dot*v + 1386*sqrt(66)*H*u**2*v**2*v_dot + 3080*sqrt(66)*H*u**2*v_dot + 924*sqrt(66)*H*u*u_dot*v**3 + 6160*sqrt(66)*H*u*u_dot*v + 1155*sqrt(66)*H*v**4*v_dot + 9240*sqrt(66)*H*v**2*v_dot + 18480*sqrt(66)*H*v_dot + 5400*sqrt(66)*psi_dot**2*r**2*v + 315*sqrt(66)*psi_dot**2*u**4*v + 630*sqrt(66)*psi_dot**2*u**2*v**3 + 4200*sqrt(66)*psi_dot**2*u**2*v + 315*sqrt(66)*psi_dot**2*v**5 + 4200*sqrt(66)*psi_dot**2*v**3 + 25200*sqrt(66)*psi_dot**2*v + 1800*sqrt(66)*r**2*r_dot**2*v + 1800*sqrt(66)*r**2*rho_m*v + 1800*sqrt(66)*r**2*u_dot**2*v + 1800*sqrt(66)*r**2*v*v_dot**2 + 105*sqrt(66)*r_dot**2*u**4*v + 210*sqrt(66)*r_dot**2*u**2*v**3 + 1400*sqrt(66)*r_dot**2*u**2*v + 105*sqrt(66)*r_dot**2*v**5 + 1400*sqrt(66)*r_dot**2*v**3 + 8400*sqrt(66)*r_dot**2*v + 105*sqrt(66)*rho_m*u**4*v + 210*sqrt(66)*rho_m*u**2*v**3 + 1400*sqrt(66)*rho_m*u**2*v + 105*sqrt(66)*rho_m*v**5 + 1400*sqrt(66)*rho_m*v**3 + 8400*sqrt(66)*rho_m*v + 105*sqrt(66)*u**4*u_dot**2*v + 105*sqrt(66)*u**4*v*v_dot**2 + 210*sqrt(66)*u**2*u_dot**2*v**3 + 1400*sqrt(66)*u**2*u_dot**2*v + 210*sqrt(66)*u**2*v**3*v_dot**2 + 1400*sqrt(66)*u**2*v*v_dot**2 + 105*sqrt(66)*u_dot**2*v**5 + 1400*sqrt(66)*u_dot**2*v**3 + 8400*sqrt(66)*u_dot**2*v + 105*sqrt(66)*v**5*v_dot**2 + 1400*sqrt(66)*v**3*v_dot**2 + 8400*sqrt(66)*v*v_dot**2)/(1219680*H**2)",
+      "(-sqrt(6)*k*u**2*v_dot + sqrt(6)*k*u*u_dot*v - 13*sqrt(6)*k*v_dot)/(13*a)"
+    ],
+    [
+      "3*r*u/7 - 15*r_dot*u_dot",
+      "3*r*v/7 - 15*r_dot*v_dot",
+      "(-63*H**2*a**2 + 12*a**2*r**2 - 420*a**2*r_dot**2 + 6*a**2*u**2 + 6*a**2*v**2 + 56*a**2 + 28*k**2)/(28*a**2)",
+      "-21*sqrt(3)*H*r_dot/5 - 15*sqrt(3)*psi_dot*r_dot - 2*sqrt(3)*r**3/105 - sqrt(3)*r*u**2/35 - sqrt(3)*r*v**2/35 - 4*sqrt(3)*r/15",
+      "(-8316*sqrt(66)*H**3*r_dot - 66*sqrt(66)*H**2*r**3 - 99*sqrt(66)*H**2*r*u**2 - 99*sqrt(66)*H**2*r*v**2 - 924*sqrt(66)*H**2*r + 66*sqrt(66)*H*r**2*r_dot + 66*sqrt(66)*H*r*u*u_dot + 66*sqrt(66)*H*r*v*v_dot + 33*sqrt(66)*H*r_dot*u**2 + 33*sqrt(66)*H*r_dot*v**2 + 308*sqrt(66)*H*r_dot + 30*sqrt(66)*psi_dot**2*r**3 + 45*sqrt(66)*psi_dot**2*r*u**2 + 45*sqrt(66)*psi_dot**2*r*v**2 + 420*sqrt(66)*psi_dot**2*r + 10*sqrt(66)*r**3*r_dot**2 + 10*sqrt(66)*r**3*rho_m + 10*sqrt(66)*r**3*u_dot**2 + 10*sqrt(66)*r**3*v_dot**2 + 15*sqrt(66)*r*r_dot**2*u**2 + 15*sqrt(66)*r*r_dot**2*v**2 + 140*sqrt(66)*r*r_dot**2 + 15*sqrt(66)*r*rho_m*u**2 + 15*sqrt(66)*r*rho_m*v**2 + 140*sqrt(66)*r*rho_m + 15*sqrt(66)*r*u**2*u_dot**2 + 15*sqrt(66)*r*u**2*v_dot**2 + 15*sqrt(66)*r*u_dot**2*v**2 + 140*sqrt(66)*r*u_dot**2 + 15*sqrt(66)*r*v**2*v_dot**2 + 140*sqrt(66)*r*v_dot**2)/(10164*H**2)",
+      "-sqrt(6)*k*r_dot/a"
+    ],
+    [
+      "-21*sqrt(3)*H*u_dot/5 - 15*sqrt(3)*psi_dot*u_dot - sqrt(3)*r**2*u/35 - sqrt(3)*u**5/600 - sqrt(3)*u**3*v**2/300 - sqrt(3)*u**3/45 - sqrt(3)*u*v**4/600 - sqrt(3)*u*v**2/45 - 2*sqrt(3)*u/15",
+      "-21*sqrt(3)*H*v_dot/5 - 15*sqrt(3)*psi_dot*v_dot - sqrt(3)*r**2*v/35 - sqrt(3)*u**4*v/600 - sqrt(3)*u**2*v**3/300 - sqrt(3)*u**2*v/45 - sqrt(3)*v**5/600 - sqrt(3)*v**3/45 - 2*sqrt(3)*v/15",
+      "-21*sqrt(3)*H*r_dot/5 - 15*sqrt(3)*psi_dot*r_dot - 2*sqrt(3)*r**3/105 - sqrt(3)*r*u**2/35 - sqrt(3)*r*v**2/35 - 4*sqrt(3)*r/15",
+      "(-57123*H**2*a**4 - 249480*H*a**4*psi_dot - 447084*a**4*psi_dot**2 - 528*a**4*r_dot**2 - 528*a**4*rho_m - 528*a**4*u_dot**2 - 528*a**4*v_dot**2 - 88*a**2*k**2 + 1500*k**4)/(9900*a**4)",
+      "(-5445*sqrt(22)*H**4*a**2 - 22275*sqrt(22)*H**3*a**2*psi_dot - 330*sqrt(22)*H**2*a**2*rho_m - 110*sqrt(22)*H**2*k**2 + 22*sqrt(22)*H*a**2*psi_dot*rho_m + 75*sqrt(22)*a**2*psi_dot**2*rho_m + 25*sqrt(22)*a**2*r_dot**2*rho_m + 25*sqrt(22)*a**2*rho_m**2 + 25*sqrt(22)*a**2*rho_m*u_dot**2 + 25*sqrt(22)*a**2*rho_m*v_dot**2)/(9075*H**2*a**2)",
+      "(-253*sqrt(2)*H*a**2*k - 150*sqrt(2)*k**3*psi_dot)/(330*a**3)"
+    ],
+    [
+      "(-997920*sqrt(66)*H**3*u_dot - 11880*sqrt(66)*H**2*r**2*u - 693*sqrt(66)*H**2*u**5 - 1386*sqrt(66)*H**2*u**3*v**2 - 9240*sqrt(66)*H**2*u**3 - 693*sqrt(66)*H**2*u*v**4 - 9240*sqrt(66)*H**2*u*v**2 - 55440*sqrt(66)*H**2*u + 3960*sqrt(66)*H*r**2*u_dot + 7920*sqrt(66)*H*r*r_dot*u + 1155*sqrt(66)*H*u**4*u_dot + 924*sqrt(66)*H*u**3*v*v_dot + 1386*sqrt(66)*H*u**2*u_dot*v**2 + 9240*sqrt(66)*H*u**2*u_dot + 924*sqrt(66)*H*u*v**3*v_dot + 6160*sqrt(66)*H*u*v*v_dot + 231*sqrt(66)*H*u_dot*v**4 + 3080*sqrt(66)*H*u_dot*v**2 + 18480*sqrt(66)*H*u_dot + 5400*sqrt(66)*psi_dot**2*r**2*u + 315*sqrt(66)*psi_dot**2*u**5 + 630*sqrt(66)*psi_dot**2*u**3*v**2 + 4200*sqrt(66)*psi_dot**2*u**3 + 315*sqrt(66)*psi_dot**2*u*v**4 + 4200*sqrt(66)*psi_dot**2*u*v**2 + 25200*sqrt(66)*psi_dot**2*u + 1800*sqrt(66)*r**2*r_dot**2*u + 1800*sqrt(66)*r**2*rho_m*u + 1800*sqrt(66)*r**2*u*u_dot**2 + 1800*sqrt(66)*r**2*u*v_dot**2 + 105*sqrt(66)*r_dot**2*u**5 + 210*sqrt(66)*r_dot**2*u**3*v**2 + 1400*sqrt(66)*r_dot**2*u**3 + 105*sqrt(66)*r_dot**2*u*v**4 + 1400*sqrt(66)*r_dot**2*u*v**2 + 8400*sqrt(66)*r_dot**2*u + 105*sqrt(66)*rho_m*u**5 + 210*sqrt(66)*rho_m*u**3*v**2 + 1400*sqrt(66)*rho_m*u**3 + 105*sqrt(66)*rho_m*u*v**4 + 1400*sqrt(66)*rho_m*u*v**2 + 8400*sqrt(66)*rho_m*u + 105*sqrt(66)*u**5*u_dot**2 + 105*sqrt(66)*u**5*v_dot**2 + 210*sqrt(66)*u**3*u_dot**2*v**2 + 1400*sqrt(66)*u**3*u_dot**2 + 210*sqrt(66)*u**3*v**2*v_dot**2 + 1400*sqrt(66)*u**3*v_dot**2 + 105*sqrt(66)*u*u_dot**2*v**4 + 1400*sqrt(66)*u*u_dot**2*v**2 + 8400*sqrt(66)*u*u_dot**2 + 105*sqrt(66)*u*v**4*v_dot**2 + 1400*sqrt(66)*u*v**2*v_dot**2 + 8400*sqrt(66)*u*v_dot**2)/(1219680*H**2)",
+      "(-997920*sqrt(66)*H**3*v_dot - 11880*sqrt(66)*H**2*r**2*v - 693*sqrt(66)*H**2*u**4*v - 1386*sqrt(66)*H**2*u**2*v**3 - 9240*sqrt(66)*H**2*u**2*v - 693*sqrt(66)*H**2*v**5 - 9240*sqrt(66)*H**2*v**3 - 55440*sqrt(66)*H**2*v + 3960*sqrt(66)*H*r**2*v_dot + 7920*sqrt(66)*H*r*r_dot*v + 231*sqrt(66)*H*u**4*v_dot + 924*sqrt(66)*H*u**3*u_dot*v + 1386*sqrt(66)*H*u**2*v**2*v_dot + 3080*sqrt(66)*H*u**2*v_dot + 924*sqrt(66)*H*u*u_dot*v**3 + 6160*sqrt(66)*H*u*u_dot*v + 1155*sqrt(66)*H*v**4*v_dot + 9240*sqrt(66)*H*v**2*v_dot + 18480*sqrt(66)*H*v_dot + 5400*sqrt(66)*psi_dot**2*r**2*v + 315*sqrt(66)*psi_dot**2*u**4*v + 630*sqrt(66)*psi_dot**2*u**2*v**3 + 4200*sqrt(66)*psi_dot**2*u**2*v + 315*sqrt(66)*psi_dot**2*v**5 + 4200*sqrt(66)*psi_dot**2*v**3 + 25200*sqrt(66)*psi_dot**2*v + 1800*sqrt(66)*r**2*r_dot**2*v + 1800*sqrt(66)*r**2*rho_m*v + 1800*sqrt(66)*r**2*u_dot**2*v + 1800*sqrt(66)*r**2*v*v_dot**2 + 105*sqrt(66)*r_dot**2*u**4*v + 210*sqrt(66)*r_dot**2*u**2*v**3 + 1400*sqrt(66)*r_dot**2*u**2*v + 105*sqrt(66)*r_dot**2*v**5 + 1400*sqrt(66)*r_dot**2*v**3 + 8400*sqrt(66)*r_dot**2*v + 105*sqrt(66)*rho_m*u**4*v + 210*sqrt(66)*rho_m*u**2*v**3 + 1400*sqrt(66)*rho_m*u**2*v + 105*sqrt(66)*rho_m*v**5 + 1400*sqrt(66)*rho_m*v**3 + 8400*sqrt(66)*rho_m*v + 105*sqrt(66)*u**4*u_dot**2*v + 105*sqrt(66)*u**4*v*v_dot**2 + 210*sqrt(66)*u**2*u_dot**2*v**3 + 1400*sqrt(66)*u**2*u_dot**2*v + 210*sqrt(66)*u**2*v**3*v_dot**2 + 1400*sqrt(66)*u**2*v*v_dot**2 + 105*sqrt(66)*u_dot**2*v**5 + 1400*sqrt(66)*u_dot**2*v**3 + 8400*sqrt(66)*u_dot**2*v + 105*sqrt(66)*v**5*v_dot**2 + 1400*sqrt(66)*v**3*v_dot**2 + 8400*sqrt(66)*v*v_dot**2)/(1219680*H**2)",
+      "(-8316*sqrt(66)*H**3*r_dot - 66*sqrt(66)*H**2*r**3 - 99*sqrt(66)*H**2*r*u**2 - 99*sqrt(66)*H**2*r*v**2 - 924*sqrt(66)*H**2*r + 66*sqrt(66)*H*r**2*r_dot + 66*sqrt(66)*H*r*u*u_dot + 66*sqrt(66)*H*r*v*v_dot + 33*sqrt(66)*H*r_dot*u**2 + 33*sqrt(66)*H*r_dot*v**2 + 308*sqrt(66)*H*r_dot + 30*sqrt(66)*psi_dot**2*r**3 + 45*sqrt(66)*psi_dot**2*r*u**2 + 45*sqrt(66)*psi_dot**2*r*v**2 + 420*sqrt(66)*psi_dot**2*r + 10*sqrt(66)*r**3*r_dot**2 + 10*sqrt(66)*r**3*rho_m + 10*sqrt(66)*r**3*u_dot**2 + 10*sqrt(66)*r**3*v_dot**2 + 15*sqrt(66)*r*r_dot**2*u**2 + 15*sqrt(66)*r*r_dot**2*v**2 + 140*sqrt(66)*r*r_dot**2 + 15*sqrt(66)*r*rho_m*u**2 + 15*sqrt(66)*r*rho_m*v**2 + 140*sqrt(66)*r*rho_m + 15*sqrt(66)*r*u**2*u_dot**2 + 15*sqrt(66)*r*u**2*v_dot**2 + 15*sqrt(66)*r*u_dot**2*v**2 + 140*sqrt(66)*r*u_dot**2 + 15*sqrt(66)*r*v**2*v_dot**2 + 140*sqrt(66)*r*v_dot**2)/(10164*H**2)",
+      "(-5445*sqrt(22)*H**4*a**2 - 22275*sqrt(22)*H**3*a**2*psi_dot - 330*sqrt(22)*H**2*a**2*rho_m - 110*sqrt(22)*H**2*k**2 + 22*sqrt(22)*H*a**2*psi_dot*rho_m + 75*sqrt(22)*a**2*psi_dot**2*rho_m + 25*sqrt(22)*a**2*r_dot**2*rho_m + 25*sqrt(22)*a**2*rho_m**2 + 25*sqrt(22)*a**2*rho_m*u_dot**2 + 25*sqrt(22)*a**2*rho_m*v_dot**2)/(9075*H**2*a**2)",
+      "(-4610390400*H**5*a**2 - 1676505600*H**3*a**2*psi_dot**2 - 558835200*H**3*a**2*r_dot**2 - 279417600*H**3*a**2*rho_m - 558835200*H**3*a**2*u_dot**2 - 558835200*H**3*a**2*v_dot**2 - 198696960*H**3*k**2 - 111767040*H**2*a**2*psi_dot*rho_m - 39916800*H**2*a**2*r**3*r_dot - 59875200*H**2*a**2*r**2*u*u_dot - 59875200*H**2*a**2*r**2*v*v_dot - 59875200*H**2*a**2*r*r_dot*u**2 - 59875200*H**2*a**2*r*r_dot*v**2 - 558835200*H**2*a**2*r*r_dot - 3492720*H**2*a**2*u**5*u_dot - 3492720*H**2*a**2*u**4*v*v_dot - 6985440*H**2*a**2*u**3*u_dot*v**2 - 46569600*H**2*a**2*u**3*u_dot - 6985440*H**2*a**2*u**2*v**3*v_dot - 46569600*H**2*a**2*u**2*v*v_dot - 3492720*H**2*a**2*u*u_dot*v**4 - 46569600*H**2*a**2*u*u_dot*v**2 - 279417600*H**2*a**2*u*u_dot - 3492720*H**2*a**2*v**5*v_dot - 46569600*H**2*a**2*v**3*v_dot - 279417600*H**2*a**2*v*v_dot + 381024000*H*a**2*psi_dot**4 + 254016000*H*a**2*psi_dot**2*r_dot**2 + 258983424*H*a**2*psi_dot**2*rho_m + 254016000*H*a**2*psi_dot**2*u_dot**2 + 254016000*H*a**2*psi_dot**2*v_dot**2 - 633600*H*a**2*r**6 - 3326400*H*a**2*r**4*u**2 - 3326400*H*a**2*r**4*v**2 - 17740800*H*a**2*r**4 + 13305600*H*a**2*r**2*r_dot**2 - 166320*H*a**2*r**2*u**6 - 498960*H*a**2*r**2*u**4*v**2 - 3643200*H*a**2*r**2*u**4 - 498960*H*a**2*r**2*u**2*v**4 - 7286400*H*a**2*r**2*u**2*v**2 - 39916800*H*a**2*r**2*u**2 + 6652800*H*a**2*r**2*u_dot**2 - 166320*H*a**2*r**2*v**6 - 3643200*H*a**2*r**2*v**4 - 39916800*H*a**2*r**2*v**2 + 6652800*H*a**2*r**2*v_dot**2 - 124185600*H*a**2*r**2 + 26611200*H*a**2*r*r_dot*u*u_dot + 26611200*H*a**2*r*r_dot*v*v_dot + 42336000*H*a**2*r_dot**4 + 84672000*H*a**2*r_dot**2*rho_m + 6652800*H*a**2*r_dot**2*u**2 + 84672000*H*a**2*r_dot**2*u_dot**2 + 6652800*H*a**2*r_dot**2*v**2 + 84672000*H*a**2*r_dot**2*v_dot**2 + 62092800*H*a**2*r_dot**2 + 40680192*H*a**2*rho_m**2 + 84672000*H*a**2*rho_m*u_dot**2 + 84672000*H*a**2*rho_m*v_dot**2 - 4851*H*a**2*u**10 - 24255*H*a**2*u**8*v**2 - 129360*H*a**2*u**8 - 48510*H*a**2*u**6*v**4 - 517440*H*a**2*u**6*v**2 - 1638560*H*a**2*u**6 + 1940400*H*a**2*u**4*u_dot**2 - 48510*H*a**2*u**4*v**6 - 776160*H*a**2*u**4*v**4 - 4915680*H*a**2*u**4*v**2 + 388080*H*a**2*u**4*v_dot**2 - 10348800*H*a**2*u**4 + 3104640*H*a**2*u**3*u_dot*v*v_dot + 2328480*H*a**2*u**2*u_dot**2*v**2 + 15523200*H*a**2*u**2*u_dot**2 - 24255*H*a**2*u**2*v**8 - 517440*H*a**2*u**2*v**6 - 4915680*H*a**2*u**2*v**4 + 2328480*H*a**2*u**2*v**2*v_dot**2 - 20697600*H*a**2*u**2*v**2 + 5174400*H*a**2*u**2*v_dot**2 - 31046400*H*a**2*u**2 + 3104640*H*a**2*u*u_dot*v**3*v_dot + 20697600*H*a**2*u*u_dot*v*v_dot + 42336000*H*a**2*u_dot**4 + 388080*H*a**2*u_dot**2*v**4 + 5174400*H*a**2*u_dot**2*v**2 + 84672000*H*a**2*u_dot**2*v_dot**2 + 31046400*H*a**2*u_dot**2 - 4851*H*a**2*v**10 - 129360*H*a**2*v**8 - 1638560*H*a**2*v**6 + 1940400*H*a**2*v**4*v_dot**2 - 10348800*H*a**2*v**4 + 15523200*H*a**2*v**2*v_dot**2 - 31046400*H*a**2*v**2 + 42336000*H*a**2*v_dot**4 + 31046400*H*a**2*v_dot**2 + 93139200*H*k**2*psi_dot**2 + 31046400*H*k**2*r_dot**2 + 31046400*H*k**2*rho_m + 31046400*H*k**2*u_dot**2 + 31046400*H*k**2*v_dot**2 + 33868800*a**2*psi_dot**3*rho_m + 12096000*a**2*psi_dot**2*r**3*r_dot + 18144000*a**2*psi_dot**2*r**2*u*u_dot + 18144000*a**2*psi_dot**2*r**2*v*v_dot + 18144000*a**2*psi_dot**2*r*r_dot*u**2 + 18144000*a**2*psi_dot**2*r*r_dot*v**2 + 169344000*a**2*psi_dot**2*r*r_dot + 1058400*a**2*psi_dot**2*u**5*u_dot + 1058400*a**2*psi_dot**2*u**4*v*v_dot + 2116800*a**2*psi_dot**2*u**3*u_dot*v**2 + 14112000*a**2*psi_dot**2*u**3*u_dot + 2116800*a**2*psi_dot**2*u**2*v**3*v_dot + 14112000*a**2*psi_dot**2*u**2*v*v_dot + 1058400*a**2*psi_dot**2*u*u_dot*v**4 + 14112000*a**2*psi_dot**2*u*u_dot*v**2 + 84672000*a**2*psi_dot**2*u*u_dot + 1058400*a**2*psi_dot**2*v**5*v_dot + 14112000*a**2*psi_dot**2*v**3*v_dot + 84672000*a**2*psi_dot**2*v*v_dot + 11289600*a**2*psi_dot*r_dot**2*rho_m + 11289600*a**2*psi_dot*rho_m**2 + 11289600*a**2*psi_dot*rho_m*u_dot**2 + 11289600*a**2*psi_dot*rho_m*v_dot**2 + 4032000*a**2*r**3*r_dot**3 + 4032000*a**2*r**3*r_dot*rho_m + 4032000*a**2*r**3*r_dot*u_dot**2 + 4032000*a**2*r**3*r_dot*v_dot**2 + 6048000*a**2*r**2*r_dot**2*u*u_dot + 6048000*a**2*r**2*r_dot**2*v*v_dot + 6048000*a**2*r**2*rho_m*u*u_dot + 6048000*a**2*r**2*rho_m*v*v_dot + 6048000*a**2*r**2*u*u_dot**3 + 6048000*a**2*r**2*u*u_dot*v_dot**2 + 6048000*a**2*r**2*u_dot**2*v*v_dot + 6048000*a**2*r**2*v*v_dot**3 + 6048000*a**2*r*r_dot**3*u**2 + 6048000*a**2*r*r_dot**3*v**2 + 56448000*a**2*r*r_dot**3 + 6048000*a**2*r*r_dot*rho_m*u**2 + 6048000*a**2*r*r_dot*rho_m*v**2 + 56448000*a**2*r*r_dot*rho_m + 6048000*a**2*r*r_dot*u**2*u_dot**2 + 6048000*a**2*r*r_dot*u**2*v_dot**2 + 6048000*a**2*r*r_dot*u_dot**2*v**2 + 56448000*a**2*r*r_dot*u_dot**2 + 6048000*a**2*r*r_dot*v**2*v_dot**2 + 56448000*a**2*r*r_dot*v_dot**2 + 352800*a**2*r_dot**2*u**5*u_dot + 352800*a**2*r_dot**2*u**4*v*v_dot + 705600*a**2*r_dot**2*u**3*u_dot*v**2 + 4704000*a**2*r_dot**2*u**3*u_dot + 705600*a**2*r_dot**2*u**2*v**3*v_dot + 4704000*a**2*r_dot**2*u**2*v*v_dot + 352800*a**2*r_dot**2*u*u_dot*v**4 + 4704000*a**2*r_dot**2*u*u_dot*v**2 + 28224000*a**2*r_dot**2*u*u_dot + 352800*a**2*r_dot**2*v**5*v_dot + 4704000*a**2*r_dot**2*v**3*v_dot + 28224000*a**2*r_dot**2*v*v_dot + 352800*a**2*rho_m*u**5*u_dot + 352800*a**2*rho_m*u**4*v*v_dot + 705600*a**2*rho_m*u**3*u_dot*v**2 + 4704000*a**2*rho_m*u**3*u_dot + 705600*a**2*rho_m*u**2*v**3*v_dot + 4704000*a**2*rho_m*u**2*v*v_dot + 352800*a**2*rho_m*u*u_dot*v**4 + 4704000*a**2*rho_m*u*u_dot*v**2 + 28224000*a**2*rho_m*u*u_dot + 352800*a**2*rho_m*v**5*v_dot + 4704000*a**2*rho_m*v**3*v_dot + 28224000*a**2*rho_m*v*v_dot + 352800*a**2*u**5*u_dot**3 + 352800*a**2*u**5*u_dot*v_dot**2 + 352800*a**2*u**4*u_dot**2*v*v_dot + 352800*a**2*u**4*v*v_dot**3 + 705600*a**2*u**3*u_dot**3*v**2 + 4704000*a**2*u**3*u_dot**3 + 705600*a**2*u**3*u_dot*v**2*v_dot**2 + 4704000*a**2*u**3*u_dot*v_dot**2 + 705600*a**2*u**2*u_dot**2*v**3*v_dot + 4704000*a**2*u**2*u_dot**2*v*v_dot + 705600*a**2*u**2*v**3*v_dot**3 + 4704000*a**2*u**2*v*v_dot**3 + 352800*a**2*u*u_dot**3*v**4 + 4704000*a**2*u*u_dot**3*v**2 + 28224000*a**2*u*u_dot**3 + 352800*a**2*u*u_dot*v**4*v_dot**2 + 4704000*a**2*u*u_dot*v**2*v_dot**2 + 28224000*a**2*u*u_dot*v_dot**2 + 352800*a**2*u_dot**2*v**5*v_dot + 4704000*a**2*u_dot**2*v**3*v_dot + 28224000*a**2*u_dot**2*v*v_dot + 352800*a**2*v**5*v_dot**3 + 4704000*a**2*v**3*v_dot**3 + 28224000*a**2*v*v_dot**3)/(2049062400*H**3*a**2)",
+      "-16*sqrt(11)*H*k/(55*a)"
+    ],
+    [
+      "(sqrt(6)*k*u*v*v_dot - sqrt(6)*k*u_dot*v**2 - 13*sqrt(6)*k*u_dot)/(13*a)",
+      "(-sqrt(6)*k*u**2*v_dot + sqrt(6)*k*u*u_dot*v - 13*sqrt(6)*k*v_dot)/(13*a)",
+      "-sqrt(6)*k*r_dot/a",
+      "(-253*sqrt(2)*H*a**2*k - 150*sqrt(2)*k**3*psi_dot)/(330*a**3)",
+      "-16*sqrt(11)*H*k/(55*a)",
+      "(-143*H**2*a**2 - 10296*a**2*psi_dot**2 + 264*a**2*u**2*v_dot**2 - 528*a**2*u*u_dot*v*v_dot + 264*a**2*u_dot**2*v**2 + 1560*k**2*psi_dot**2)/(572*a**2)"
+    ]
+  ],
+  "G": [
+    [
+      "0",
+      "0",
+      "0",
+      "2*sqrt(3)*u_dot/15",
+      "5*sqrt(66)*u_dot/11",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "2*sqrt(3)*v_dot/15",
+      "5*sqrt(66)*v_dot/11",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "2*sqrt(3)*r_dot/15",
+      "5*sqrt(66)*r_dot/11",
+      "0"
+    ],
+    [
+      "-2*sqrt(3)*u_dot/15",
+      "-2*sqrt(3)*v_dot/15",
+      "-2*sqrt(3)*r_dot/15",
+      "0",
+      "2*sqrt(22)*H/5 + 15*sqrt(22)*psi_dot/11",
+      "-sqrt(2)*k/(15*a)"
+    ],
+    [
+      "-5*sqrt(66)*u_dot/11",
+      "-5*sqrt(66)*v_dot/11",
+      "-5*sqrt(66)*r_dot/11",
+      "-2*sqrt(22)*H/5 - 15*sqrt(22)*psi_dot/11",
+      "0",
+      "-2*sqrt(11)*k/(11*a)"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "sqrt(2)*k/(15*a)",
+      "2*sqrt(11)*k/(11*a)",
+      "0"
+    ]
+  ],
+  "W": [
+    [
+      "(-540540*H**2*a**2 + 491400*a**2*psi_dot**2 + 51480*a**2*r**2 + 163800*a**2*r_dot**2 + 163800*a**2*rho_m + 15015*a**2*u**4 + 18018*a**2*u**2*v**2 + 120120*a**2*u**2 - 3439800*a**2*u_dot**2 + 3003*a**2*v**4 + 40040*a**2*v**2 + 163800*a**2*v_dot**2 + 240240*a**2 + 18480*k**2*v**2 + 240240*k**2)/(240240*a**2)",
+      "(39*a**2*u**3*v + 39*a**2*u*v**3 + 260*a**2*u*v - 11700*a**2*u_dot*v_dot - 60*k**2*u*v)/(780*a**2)",
+      "3*r*u/7 - 15*r_dot*u_dot",
+      "-23*sqrt(3)*H*u_dot/5 - 15*sqrt(3)*psi_dot*u_dot - 2*sqrt(3)*r**2*u/35 - sqrt(3)*u**5/300 - sqrt(3)*u**3*v**2/150 - 2*sqrt(3)*u**3/45 - sqrt(3)*u*v**4/300 - 2*sqrt(3)*u*v**2/45 - 4*sqrt(3)*u/15",
+      "-15*sqrt(66)*H*u_dot/22",
+      "(sqrt(6)*k*u*v*v_dot - sqrt(6)*k*u_dot*v**2 - 13*sqrt(6)*k*u_dot)/(13*a)"
+    ],
+    [
+      "(39*a**2*u**3*v + 39*a**2*u*v**3 + 260*a**2*u*v - 11700*a**2*u_dot*v_dot - 60*k**2*u*v)/(780*a**2)",
+      "(-540540*H**2*a**2 + 491400*a**2*psi_dot**2 + 51480*a**2*r**2 + 163800*a**2*r_dot**2 + 163800*a**2*rho_m + 3003*a**2*u**4 + 18018*a**2*u**2*v**2 + 40040*a**2*u**2 + 163800*a**2*u_dot**2 + 15015*a**2*v**4 + 120120*a**2*v**2 - 3439800*a**2*v_dot**2 + 240240*a**2 + 18480*k**2*u**2 + 240240*k**2)/(240240*a**2)",
+      "3*r*v/7 - 15*r_dot*v_dot",
+      "-23*sqrt(3)*H*v_dot/5 - 15*sqrt(3)*psi_dot*v_dot - 2*sqrt(3)*r**2*v/35 - sqrt(3)*u**4*v/300 - sqrt(3)*u**2*v**3/150 - 2*sqrt(3)*u**2*v/45 - sqrt(3)*v**5/300 - 2*sqrt(3)*v**3/45 - 4*sqrt(3)*v/15",
+      "-15*sqrt(66)*H*v_dot/22",
+      "(-sqrt(6)*k*u**2*v_dot + sqrt(6)*k*u*u_dot*v - 13*sqrt(6)*k*v_dot)/(13*a)"
+    ],
+    [
+      "3*r*u/7 - 15*r_dot*u_dot",
+      "3*r*v/7 - 15*r_dot*v_dot",
+      "(-693*H**2*a**2 + 630*a**2*psi_dot**2 + 132*a**2*r**2 - 4410*a**2*r_dot**2 + 210*a**2*rho_m + 66*a**2*u**2 + 210*a**2*u_dot**2 + 66*a**2*v**2 + 210*a**2*v_dot**2 + 616*a**2 + 308*k**2)/(308*a**2)",
+      "-23*sqrt(3)*H*r_dot/5 - 15*sqrt(3)*psi_dot*r_dot - 4*sqrt(3)*r**3/105 - 2*sqrt(3)*r*u**2/35 - 2*sqrt(3)*r*v**2/35 - 8*sqrt(3)*r/15",
+      "-15*sqrt(66)*H*r_dot/22",
+      "-sqrt(6)*k*r_dot/a"
+    ],
+    [
+      "-21*sqrt(3)*H*u_dot/5 - 15*sqrt(3)*psi_dot*u_dot - sqrt(3)*r**2*u/35 - sqrt(3)*u**5/600 - sqrt(3)*u**3*v**2/300 - sqrt(3)*u**3/45 - sqrt(3)*u*v**4/600 - sqrt(3)*u*v**2/45 - 2*sqrt(3)*u/15",
+      "-21*sqrt(3)*H*v_dot/5 - 15*sqrt(3)*psi_dot*v_dot - sqrt(3)*r**2*v/35 - sqrt(3)*u**4*v/600 - sqrt(3)*u**2*v**3/300 - sqrt(3)*u**2*v/45 - sqrt(3)*v**5/600 - sqrt(3)*v**3/45 - 2*sqrt(3)*v/15",
+      "-21*sqrt(3)*H*r_dot/5 - 15*sqrt(3)*psi_dot*r_dot - 2*sqrt(3)*r**3/105 - sqrt(3)*r*u**2/35 - sqrt(3)*r*v**2/35 - 4*sqrt(3)*r/15",
+      "(-57123*H**2*a**4 - 261360*H*a**4*psi_dot - 426834*a**4*psi_dot**2 + 6222*a**4*r_dot**2 + 5694*a**4*rho_m + 6222*a**4*u_dot**2 + 6222*a**4*v_dot**2 - 88*a**2*k**2 + 1500*k**4)/(9900*a**4)",
+      "(-198*sqrt(22)*H**2*a**2 - 675*sqrt(22)*H*a**2*psi_dot - 4*sqrt(22)*k**2)/(330*a**2)",
+      "(-253*sqrt(2)*H*a**2*k - 150*sqrt(2)*k**3*psi_dot)/(330*a**3)"
+    ],
+    [
+      "15*sqrt(66)*H*u_dot/22 + 15*sqrt(66)*r**2*u/154 + sqrt(66)*u**5/176 + sqrt(66)*u**3*v**2/88 + 5*sqrt(66)*u**3/66 + sqrt(66)*u*v**4/176 + 5*sqrt(66)*u*v**2/66 + 5*sqrt(66)*u/11",
+      "15*sqrt(66)*H*v_dot/22 + 15*sqrt(66)*r**2*v/154 + sqrt(66)*u**4*v/176 + sqrt(66)*u**2*v**3/88 + 5*sqrt(66)*u**2*v/66 + sqrt(66)*v**5/176 + 5*sqrt(66)*v**3/66 + 5*sqrt(66)*v/11",
+      "15*sqrt(66)*H*r_dot/22 + 5*sqrt(66)*r**3/77 + 15*sqrt(66)*r*u**2/154 + 15*sqrt(66)*r*v**2/154 + 10*sqrt(66)*r/11",
+      "(-198*sqrt(22)*H**2*a**2 + 675*sqrt(22)*H*a**2*psi_dot + 180*sqrt(22)*a**2*psi_dot**2 + 60*sqrt(22)*a**2*r_dot**2 + 120*sqrt(22)*a**2*rho_m + 60*sqrt(22)*a**2*u_dot**2 + 60*sqrt(22)*a**2*v_dot**2 - 4*sqrt(22)*k**2)/(330*a**2)",
+      "(-297*H**2*a**2 + 270*a**2*psi_dot**2 + 90*a**2*r_dot**2 + 90*a**2*rho_m + 90*a**2*u_dot**2 + 90*a**2*v_dot**2 - 4*k**2)/(132*a**2)",
+      "-sqrt(11)*H*k/(11*a)"
+    ],
+    [
+      "(sqrt(6)*k*u*v*v_dot - sqrt(6)*k*u_dot*v**2 - 13*sqrt(6)*k*u_dot)/(13*a)",
+      "(-sqrt(6)*k*u**2*v_dot + sqrt(6)*k*u*u_dot*v - 13*sqrt(6)*k*v_dot)/(13*a)",
+      "-sqrt(6)*k*r_dot/a",
+      "(-55*sqrt(2)*H*a**2*k - 30*sqrt(2)*k**3*psi_dot)/(66*a**3)",
+      "-3*sqrt(11)*H*k/(11*a)",
+      "(-143*H**2*a**2 - 8970*a**2*psi_dot**2 + 442*a**2*r_dot**2 + 442*a**2*rho_m + 264*a**2*u**2*v_dot**2 - 528*a**2*u*u_dot*v*v_dot + 264*a**2*u_dot**2*v**2 + 442*a**2*u_dot**2 + 442*a**2*v_dot**2 + 1560*k**2*psi_dot**2)/(572*a**2)"
+    ]
+  ],
+  "slow_principal_V": [
+    [
+      "v**2/13 + 1",
+      "-u*v/13",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-u*v/13",
+      "u**2/13 + 1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "(-32*H**2 + 15*psi_dot**2 + 5*r_dot**2 + 5*rho_m + 5*u_dot**2 + 5*v_dot**2)/(330*H**2)",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "slow_principal_G": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-2*sqrt(11)/11"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "2*sqrt(11)/11",
+      "0"
+    ]
+  ],
+  "quartic_omega_squared_over_p4": "5/33",
+  "slow_indices": [
+    0,
+    1,
+    2,
+    4,
+    5
+  ],
+  "interpretation": "Classical expanding-chart formal symbol; no EFT or uniform well-posedness certificate"
+}

@@ -1,0 +1,678 @@
+{
+  "schema": "r4c1-coupled-graph-summary-v1",
+  "validation": "PASS",
+  "passed": 99,
+  "total": 99,
+  "status": "FIXED_GRAPH_DIFFERENTIAL_BOUND_REJECTED_FULL_IVP_OPEN",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "research_execution": "PROCEED_PROVISIONALLY",
+  "inherited_unreviewed_inputs": [
+    "R9-MT1-S3",
+    "R9-MT1-S2",
+    "R9-MT1-S1",
+    "R9-MT1-B1",
+    "R9-MT1-VARIATION"
+  ],
+  "inputs": {
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_CONTRACT_2026-09-26.md": "2ec5f0bc84ffb420bdbc1d8d7b0c3a16237ee87e36867ab8b106d5dbf35b3496",
+    "Analysis/MasterTests/test_01_r4c1_zero_branch.py": "99cd1c52313dc5a5945ef0dd6f747f95848b2115847aec3c40a3fdc3a3ac278f",
+    "Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json": "1507c9b40b7a76985a81e520780fed6631eca59880870ae208d60d9587a6f374",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_CONTRACT_2026-09-26.md": "c1e4d5f72c3f354b8e43b1ed51b01b46e5da9d301125ac687cb723e1887ef49e",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json": "56a4db658ae24d86211148abaffc1b9cf4d3d5aceed2e732df1270abda737735",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md": "b4ecbc81119dd23b9597df3ca39b680cf44d07ae1a0a5564be78145b951354dd",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_samples.json": "1d9846b88bcf273f3d5fb35020a6bc7fb1e52c9d4fbae8dd4f2a578aed5edcfc",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_symbol.json": "3122e1927a4627ea6c40d68493ebe6a28ca250301d2442a3d25794afa9ea659d",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_matrices.json": "087a8083c499f22d5d2e6802faf9865353021352ba4f6fad25eb518d6052e412",
+    "Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_samples.json": "46aeb71430ee096b665c070a7ba494e76f330c9127e286ca80c87b88cb0f8a56",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5"
+  },
+  "executable_sha256": "31b80572c618557674934ddb4a9d591aaa58959a497124f15f4198121db8f16a",
+  "artifacts": {
+    "Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_matrices.json": "7d815633d8ee583e0f4de2e0e198d27356a220dcc8abecb1613bc46ef7246c85",
+    "Analysis/MasterTests/outputs/test_01_r4c1_coupled_graph_samples.json": "9203ada102243051a0dfb4788ab83ee93190bb8d299ec4dbdf9b1a2b9d876907"
+  },
+  "full_constrained_IVP": "NOT_PROVED",
+  "uniform_energy_estimate": "NOT_ESTABLISHED",
+  "fixed_metric_differential_bound": "REJECTED_BY_EXACT_DENSITY_TILT_SEQUENCE",
+  "canonical": {
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "K_Q": "NOT_DERIVED",
+    "V": "NOT_COMPUTED",
+    "Stage4A": "CLOSED"
+  },
+  "summary": {
+    "full_graph_minor": "-sqrt(66)*k**4*(396*H**2*a**2 + 18*a**2*psi_dot**2 + 6*a**2*r_dot**2 + 6*a**2*u_dot**2 + 6*a**2*v_dot**2 + k**2)/(13068*H**2*a**24*rho_m)",
+    "exact_witness_rate_over_p": "1/2",
+    "endpoint_amplifications": [
+      {
+        "n": 1,
+        "amplification": 5.423560317628873
+      },
+      {
+        "n": 2,
+        "amplification": 10.578024374382238
+      },
+      {
+        "n": 4,
+        "amplification": 20.952324243742034
+      },
+      {
+        "n": 8,
+        "amplification": 41.731613917258315
+      }
+    ],
+    "max_local_rate": 804.1815904120242,
+    "max_metric_condition": 6.398805117490653e+16,
+    "independent_norm_discrepancy": 2.4824131059458714e-56
+  },
+  "versions": {
+    "python": "3.13.9",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "checks": [
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "2ec5f0bc84ffb420bdbc1d8d7b0c3a16237ee87e36867ab8b106d5dbf35b3496",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_zero_branch.py",
+      "passed": true,
+      "value": "99cd1c52313dc5a5945ef0dd6f747f95848b2115847aec3c40a3fdc3a3ac278f",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_zero_branch.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json",
+      "passed": true,
+      "value": "1507c9b40b7a76985a81e520780fed6631eca59880870ae208d60d9587a6f374",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "c1e4d5f72c3f354b8e43b1ed51b01b46e5da9d301125ac687cb723e1887ef49e",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_scalar_propagation.py",
+      "passed": true,
+      "value": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_scalar_propagation.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json",
+      "passed": true,
+      "value": "56a4db658ae24d86211148abaffc1b9cf4d3d5aceed2e732df1270abda737735",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": "b4ecbc81119dd23b9597df3ca39b680cf44d07ae1a0a5564be78145b951354dd",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json",
+      "passed": true,
+      "value": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md",
+      "passed": true,
+      "value": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md",
+      "passed": true,
+      "value": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_full_variation.py",
+      "passed": true,
+      "value": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_full_variation.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "upstream_validation:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_samples.json",
+      "passed": true,
+      "value": "1d9846b88bcf273f3d5fb35020a6bc7fb1e52c9d4fbae8dd4f2a578aed5edcfc",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_scalar_constraints.py",
+      "passed": true,
+      "value": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/test_01_r4c1_scalar_constraints.py",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/test_01_r4c1_interacting_background.py",
+      "passed": true,
+      "value": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv",
+      "passed": true,
+      "value": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json",
+      "passed": true,
+      "value": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_symbol.json",
+      "passed": true,
+      "value": "3122e1927a4627ea6c40d68493ebe6a28ca250301d2442a3d25794afa9ea659d",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_symbol.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json",
+      "passed": true,
+      "value": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_matrices.json",
+      "passed": true,
+      "value": "087a8083c499f22d5d2e6802faf9865353021352ba4f6fad25eb518d6052e412",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_matrices.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_samples.json",
+      "passed": true,
+      "value": "46aeb71430ee096b665c070a7ba494e76f330c9127e286ca80c87b88cb0f8a56",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Analysis/MasterTests/outputs/test_01_r4c1_zero_branch_samples.json",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+      "criterion": null
+    },
+    {
+      "name": "sidecar:Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "pin:Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json",
+      "passed": true,
+      "value": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+      "criterion": null
+    },
+    {
+      "name": "auxiliary_map_is_homogeneous_linear",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "full_dust_multiplier",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "full_regulator_constraint",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "full_Mdot_retained",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "full_q_time_derivative",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "reject_missing_Rdot",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "reject_missing_Mcdot",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "full_rank_minor_nonzero_polynomial",
+      "passed": true,
+      "value": "-sqrt(66)*k**4*(396*H**2*a**2 + 18*a**2*psi_dot**2 + 6*a**2*r_dot**2 + 6*a**2*u_dot**2 + 6*a**2*v_dot**2 + k**2)/(13068*H**2*a**24*rho_m)",
+      "criterion": null
+    },
+    {
+      "name": "reject_two_component_substitution",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "reject_frozen_graph_metric",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "background_integration",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "unchanged_B1_trajectory",
+      "passed": true,
+      "value": 1.4064048135099621e-11,
+      "criterion": null
+    },
+    {
+      "name": "positive_all_54_full_metrics",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "finite_sampled_log_rates",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "centered_full_energy_derivative",
+      "passed": true,
+      "value": 5.835167918266235e-10,
+      "criterion": null
+    },
+    {
+      "name": "reject_omitted_Fdot_energy",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "all_registered_transfer_modes",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "inherited_solver_success_n1DOP853",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "inherited_solver_success_n1Radau",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "both_endpoint_methods_n1",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "two_method_graph_agreement_n1",
+      "passed": true,
+      "value": 1.7581578030028054e-11,
+      "criterion": null
+    },
+    {
+      "name": "inherited_solver_success_n2DOP853",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "inherited_solver_success_n2Radau",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "both_endpoint_methods_n2",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "two_method_graph_agreement_n2",
+      "passed": true,
+      "value": 3.321648351172575e-13,
+      "criterion": null
+    },
+    {
+      "name": "inherited_solver_success_n4DOP853",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "inherited_solver_success_n4Radau",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "both_endpoint_methods_n4",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "two_method_graph_agreement_n4",
+      "passed": true,
+      "value": 6.71626457559549e-14,
+      "criterion": null
+    },
+    {
+      "name": "inherited_solver_success_n8DOP853",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "inherited_solver_success_n8Radau",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "both_endpoint_methods_n8",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "two_method_graph_agreement_n8",
+      "passed": true,
+      "value": 3.358862899525709e-14,
+      "criterion": null
+    },
+    {
+      "name": "independent_norm_calculations_agree",
+      "passed": true,
+      "value": 2.4824131059458714e-56,
+      "criterion": null
+    },
+    {
+      "name": "witness_full_original_graph_data",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "witness_full_canonical_reconstruction",
+      "passed": true,
+      "residual": "zero_matrix"
+    },
+    {
+      "name": "witness_compact_exact_rate",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "witness_positive_linear_rate",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "name": "witness_legitimate_full_data",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    }
+  ]
+}
