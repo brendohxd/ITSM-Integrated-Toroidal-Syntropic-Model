@@ -2,7 +2,7 @@
 
 Date: 25 September 2026. Operator decision:
 `review_status=DEFERRED`, `Rule9_cleared=false` for all outstanding Rule-9 work.
-Evidence register updated 29 September 2026 through R4C1-S4G.
+Evidence register updated 29 September 2026 through R4C1-S4H.
 Governing [policy](../Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md).
 The rows below apply to bounded result scopes; they do not close parent gates.
 Review resumes when directed by the operator. Existing partial reports and
@@ -98,6 +98,27 @@ Test-1 action acceptance and downstream claims. Independent review must
 check the projected characteristic/minimal polynomials, projector
 positivity, full order-p cancellation, time derivative, and distinction
 between initial-event and finite-time estimates. `review_status=DEFERRED`,
+`Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
+
+### R9-MT1-S4H — 29 September scoped addendum
+
+The [S4H report](../Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md)
+(SHA-256 `aa740eb2419dcfebfc1532230823be7b5df4c3dc31d156701649c5572cf4037b`)
+and [attempt-02 receipt](../../Analysis/MasterTests/outputs/r4c1_s4h_attempt_02/summary.json)
+(SHA-256 `20eaa579780061a8f839a586f3c08725d5098a0e2527857a3c54032c55bc69d7`)
+record an exact regular-chart minor identity and 24 sampled moving-symbol
+reconstructions. The revised high-precision executable passes 189/189
+local checks with 63 recorded source hashes. Attempt 01 failed its
+highest-mode replay tolerance and is retained; its original source copy
+was not archived, so it is not a source-complete replay packet.
+`PROCEED_PROVISIONALLY` applies only to using this chart and sample
+diagnostic to derive the exact moving principal symbol. It inherits
+R9-MT1-S4G/S4F/S4E/S4D/S4C/S4B/S4A/S3/S2/S1/B1/VARIATION.
+`HOLD_SUBSTANTIVE` remains for the 144 exact moving leading coefficients,
+uniform interval symmetrizer/energy bound, physical EFT range, full IVP,
+all-sector stability and canonical Test-1 use. Independent review must
+check the minor/domain proof, background-flow derivative terms, numerical
+precision boundary and failed first attempt. `review_status=DEFERRED`,
 `Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
 
 ## Route triage and continuation decision — 26 September 2026

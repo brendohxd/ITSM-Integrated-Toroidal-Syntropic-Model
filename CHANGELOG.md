@@ -1,5 +1,20 @@
 # ITSM Changelog & Archive History
 
+## R4C1 moving-background temporal screen (2026-09-29)
+
+- Froze S4H before execution. The selected chart minor is exactly `p`
+  times the pinned S4A minor; it is nonzero on the stated regular
+  `a,C,rho_m,H>0`, `k!=0` domain. This does not prove B1 stays in that
+  domain between numerical samples.
+- Reconstructed 24 moving B1 chart/generator samples. The first
+  double-precision attempt failed the preregistered high-mode replay
+  tolerance and remains preserved. A new 70-digit arithmetic attempt
+  passes 189/189 **local** checks without changing the input or threshold.
+- Status remains `INCOMPLETE_TEMPORAL_PERSISTENCE`: 144 exact moving
+  leading coefficients, uniform time-domain symmetrizer/energy constants,
+  a physical EFT cutoff and the full constrained IVP are not established.
+  Rule-9 review is deferred; all parent and publication holds remain.
+
 ## R4C1 full-symbol and bounded initial-event energy screen (2026-09-29)
 
 - S4D's exact selected-chart `p²` coupling stops the proposed unweighted

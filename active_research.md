@@ -25,8 +25,9 @@ zero-branch regularity disposition below. S4A and S4B reject uniform
 instantaneous bounds in two specified fixed graph norms. S4C finds that the
 proposed leading frame/dust pair also drives phase-gradient and frame-spatial
 rows at order p, so it is not a closed two-variable block. None settles full
-coupled well-posedness. Next: recursively close the leading span before any
-full symmetrizer or finite-time transfer estimate.
+coupled well-posedness. Subsequent S4D-S4G exact initial-event work and the
+S4H moving-chart diagnostic are recorded below. The next substantive task
+is the exact moving leading symbol and a uniform finite-time estimate.
 Review-panel assembly is deferred. Healthy GR recovery, full
 weak-field matching, coefficient determination and physical applicability
 remain scientific work. Canonical promotion and publication readiness still
@@ -217,6 +218,17 @@ cutoff/domain, full constrained IVP, all-sector stability, GR recovery and
 canonical action acceptance remain open. R9-MT1-S4G and inherited reviews
 are deferred; `physics_pass=false`, `gate_effect=NONE`, and all parent
 statuses remain unchanged.
+
+The [29 September R4C1-S4H temporal-persistence report](Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md)
+proves the selected-chart minor is `p` times the pinned S4A minor, hence
+nonzero on the stated regular domain. A failed double-precision attempt
+is preserved; a fresh 70-digit arithmetic run reconstructs 24 moving B1
+samples and passes 189/189 **local** checks. It does not derive all 144
+moving `C_2/C_1` coefficients, interval-uniform positivity and energy
+constants, or a physical wave-number cutoff. Status is
+`INCOMPLETE_TEMPORAL_PERSISTENCE`, `physics_pass=false`, `gate_effect=NONE`.
+R9-MT1-S4H and inherited reviews are deferred, not cleared; Master Test 1
+and the downstream Tests 2/3, MAT/UVIR and publication holds are unchanged.
 
 TOP-X4 is not judged close to a breakthrough: the 19 September X4-S4-C1
 receipt selected an equation route but did not solve a curved background; the

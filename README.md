@@ -34,7 +34,7 @@ Every material claim is classified as **Derived**, **Conditional**, **Open**, or
 | **Core identity** | `CANONICAL; IDENTITY HELD` | Active finite-density condensate, topology, preferred frame and force/reservoir sectors remain distinct; identity-first governance is unchanged. |
 | **MAT-001** | **`BLOCKED`** | M2/M3-U1 fixed-background controls are bounded reductions only; `K_Q` remains `NOT_DERIVED` and `V` remains `NOT_COMPUTED`. |
 | **UVIR-003** | **`IN_PROGRESS`** | Tier-1 closure remains downstream of the MAT matching blocker; no physical cutoff or complete constrained amplitude is promoted. |
-| **Master Tests 1–3 / R4C1** | **`PROVISIONAL CONTINUATION; TESTS NOT COMPLETE`** | The conditional R4C1 candidate has bounded action, variation, background, GR-control, coefficient, scalar-constraint and propagation receipts. S4A/S4B reject instantaneous uniform differential bounds in two specified graph norms; S4C/D identify leading couplings; S4E/F show the complete B1 order-`p²` block is skew; S4G constructs a positive graph-equivalent metric with bounded formal high-`p` energy rate at one initial event. No finite-time constrained IVP, physical cutoff, healthy GR limit or canonical Test-1 pass follows; Tests 2 and 3 remain incomplete. |
+| **Master Tests 1–3 / R4C1** | **`PROVISIONAL CONTINUATION; TESTS NOT COMPLETE`** | The conditional R4C1 candidate has bounded action, variation, background, GR-control, coefficient, scalar-constraint and propagation receipts. S4A/S4B reject instantaneous uniform differential bounds in two specified graph norms; S4C/D identify leading couplings; S4E/F show the complete B1 order-`p²` block is skew; S4G constructs a positive graph-equivalent metric with bounded formal high-`p` energy rate at one initial event. S4H checks the regular moving chart and 24 sampled reconstructions, but **does not** prove temporal persistence. No finite-time constrained IVP, physical cutoff, healthy GR limit or canonical Test-1 pass follows; Tests 2 and 3 remain incomplete. |
 | **TOP-X4 / KK-001** | **`BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD`** | The branchwise WKB checkpoint remains failed 11/12, exact finite-order transport passed 18/18, the D5 scaffold passed 20/20, the fixed-metric scalar/`chi` operator passed 25/25, and the local scalar-matrix Hadamard-parametrix checkpoint passed 22/22 through `U_2`. The finite-order Route-B diagnostic passed 8/8, the Route-A scalar-state construction passed 10/10 theorem-backed checks, and the scoped curved-Dirac operator passed 13/13 with contract and operator checks separated. `physics_pass=false`; the spinor state, gravity/ghost, parity, determinant, stress, physical Hessian and Rule-9 remain incomplete. |
 | **BBN-001** | **`CONTROL_ONLY / BLOCKED_UPSTREAM_BACKGROUND`** | Table/schema/CAMB plumbing and the action-derived interface contract are checked, but the physical temperature/unit map, early plenum, `Q^\mu`, `S_N` and action-derived `G_eff` are not exported by UVIR-003. |
 | **TOP-001 / CBR-002** | **`HOLD`** | P2/CBR-001 has a portable local-repair candidate and a narrowed instantaneous-closure result; independent-role, sensitivity and noncubic checks remain required. |
@@ -84,6 +84,11 @@ publication decision.
   constructs a positive correction cancelling that defect at the registered
   B1 initial event. Temporal persistence and an EFT-valid wave-number domain
   are unproved; the parent Test-1 hold and deferred review remain in force.
+- [R4C1 temporal-persistence screen](Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md)
+  proves the selected-chart minor is nonzero on its stated regular domain
+  and reconstructs the moving symbol at 24 B1 samples. Exact moving
+  leading coefficients and a uniform interval energy bound remain open;
+  a local 189/189 check count is not a physics pass.
 - [TOP-X4 H1/X4-S4 route record](Theory/Gates/TOP-X4/README.md) records the
   `21/21` candidate-action contract, rejection of the registered zero-charge
   benchmark, and the `13/13` curved-route selection contract. No X4-S4 parent,

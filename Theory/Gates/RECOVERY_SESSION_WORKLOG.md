@@ -2774,3 +2774,35 @@ contract temporal persistence and uniform positivity along the registered
 B1 trajectory and physical p-domain. Formal initial-event algebra is
 not a finite-time IVP, EFT or canonical physics pass. Test 1, Tests 2/3,
 MAT/UVIR and publication firewalls remain unchanged.
+
+## 2026-09-29 - R4C1-S4H moving B1 chart and temporal screen
+
+Froze the S4H temporal-persistence contract before implementation and
+calculation. The exact selected twelve-row minor is `p` times S4A's
+original minor; the canonical minor also carries the pinned `det(R)^2`.
+This proves regularity only under the stated nonzero chart conditions,
+not exact B1 interval admissibility from sampled data.
+
+The first 24-sample moving reconstruction used double precision and
+failed initial-event replay at `n=256` (`1.8604143424167406e-5` versus
+the frozen `1e-7` tolerance), despite 188/189 local checks passing.
+The failed attempt 01 is preserved; its original source copy was not
+archived before revision. Fresh attempt 02 switched arithmetic to
+70-digit `mpmath` with no equation/grid/threshold change. It passes
+189/189 local checks and replays the initial S4F generator to a maximum
+relative discrepancy `5.640018222270919e-16` across the registered
+four modes. The sampled moving graph identity has maximum relative
+error `3.7661658900635e-17` after diagnostic conversion to double.
+This numerical arithmetic precision does not certify the underlying
+double-precision B1 trajectory between its 801 points.
+
+Attempt-02 summary SHA-256 is
+`20eaa579780061a8f839a586f3c08725d5098a0e2527857a3c54032c55bc69d7`;
+detail SHA-256 is
+`37068a4e93c919194a1d28608e2bab086dd0f36df1583b0d6b9fd589b3e32007`.
+The owning report is
+`RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md`.
+R9-MT1-S4H is deferred and inherits S4G through VARIATION review debt.
+The 144 exact moving leading coefficients, uniform metric/energy bound,
+physical cutoff and full constrained IVP remain `NOT_PROVED`. No parent,
+MAT/UVIR, Test 2/3 or publication promotion follows.

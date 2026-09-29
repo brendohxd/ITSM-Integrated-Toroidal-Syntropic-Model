@@ -5,11 +5,11 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
-## Current evidence snapshot (2026-09-26)
+## Earlier evidence snapshot (2026-09-26)
 
 The branch remains fail-closed. `MAT-001` is `BLOCKED`, `UVIR-003` is
-`IN_PROGRESS`, `K_Q` is `NOT_DERIVED`, and `V` is `NOT_COMPUTED`. The current
-operator-priority fork is `TOP-X4 / KK-001`: its frozen `X4-S2F3` Plan 11
+`IN_PROGRESS`, `K_Q` is `NOT_DERIVED`, and `V` is `NOT_COMPUTED`. The earlier
+operator-priority fork was `TOP-X4 / KK-001`: its frozen `X4-S2F3` Plan 11
 static parity-even determinant checkpoint passed 12/12 bounded calculation
 checks, while the finite-charge entry gate passed 9/9 policy/provenance checks
 and correctly returned
@@ -99,7 +99,7 @@ Under the 25 September operator policy this is now recorded as
 stop bounded research, while substantive holds and final promotion/publication
 requirements remain binding.
 
-## Latest programme update (2026-09-25–2026-09-26)
+## Latest programme update (2026-09-25–2026-09-29)
 
 The active ordered programme is now [Master Tests 1–3](Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md), with the conditional R4C1
 candidate used as the approved Test-1 continuation. The [Tests 1–3
@@ -118,6 +118,15 @@ full coupled well-posedness, physical matching, canonical parent acceptance and
 independent review remain open. Parent statuses remain MAT-001 `BLOCKED`,
 UVIR-003 `IN_PROGRESS`, `K_Q` `NOT_DERIVED`, `V` `NOT_COMPUTED` and Stage 4A
 `CLOSED`.
+
+As of 29 September, R4C1-S4G has an exact positive initial-event
+graph-equivalent metric and bounded formal high-`p` energy-rate matrix.
+The subsequent [S4H screen](Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md)
+proves regularity of the selected chart on its stated domain and
+reconstructs 24 moving B1 samples, but is explicitly
+`INCOMPLETE_TEMPORAL_PERSISTENCE`. It does not supply exact moving
+leading coefficients, an interval-uniform estimate, a physical cutoff,
+or Test-1 closure. Tests 2/3 and every parent hold above remain unchanged.
 
 ## Start here
 

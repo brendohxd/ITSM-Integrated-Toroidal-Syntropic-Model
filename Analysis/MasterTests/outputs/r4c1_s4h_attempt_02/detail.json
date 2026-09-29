@@ -1,0 +1,275 @@
+{
+  "schema": "r4c1-s4h-temporal-persistence-detail-v1",
+  "status": "INCOMPLETE_TEMPORAL_PERSISTENCE",
+  "domain": {
+    "t": "registered_B1_0_to_4_sampled",
+    "torus_modes": [
+      1,
+      8,
+      64,
+      256
+    ],
+    "sample_times": [
+      0.0,
+      0.5,
+      1.0,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "p": "k/a>=1",
+    "physical_EFT_cutoff": "NOT_DERIVED"
+  },
+  "original_chart_minor": "-sqrt(66)*k**4*(396*H**2*a**2 + 18*a**2*psi_dot**2 + 6*a**2*r_dot**2 + 6*a**2*u_dot**2 + 6*a**2*v_dot**2 + k**2)/(396*C**2*a**6*rho_m)",
+  "original_canonical_minor": "-sqrt(66)*k**4*(396*H**2*a**2 + 18*a**2*psi_dot**2 + 6*a**2*r_dot**2 + 6*a**2*u_dot**2 + 6*a**2*v_dot**2 + k**2)/(13068*H**2*a**24*rho_m)",
+  "moving_chart_minor": "-sqrt(66)*k**5*(396*H**2*a**2 + 18*a**2*psi_dot**2 + 6*a**2*r_dot**2 + 6*a**2*u_dot**2 + 6*a**2*v_dot**2 + k**2)/(396*C**2*a**7*rho_m)",
+  "moving_canonical_minor": "-sqrt(66)*k**5*(396*H**2*a**2 + 18*a**2*psi_dot**2 + 6*a**2*r_dot**2 + 6*a**2*u_dot**2 + 6*a**2*v_dot**2 + k**2)/(13068*H**2*a**25*rho_m)",
+  "samples": [
+    {
+      "t": 0.0,
+      "n": 1,
+      "p": 6.283185307179586,
+      "chart_condition": 1044.9854110042975,
+      "graph_reconstruction_error": 9.52440894312085e-73,
+      "max_real_generator_eigenvalue": -0.05722607888569184,
+      "phase_p2_skew_residual": 0.0001918845648813901,
+      "phase_p2_antisymmetric_coefficient": 0.3893454143632022,
+      "initial_event_replay_error": 3.254487916965288e-16,
+      "omit_Fdot_error": 56.875309479909326,
+      "omit_pdot_error": 0.4642450916172642
+    },
+    {
+      "t": 0.0,
+      "n": 8,
+      "p": 50.26548245743669,
+      "chart_condition": 7528.496787260892,
+      "graph_reconstruction_error": 1.393573436022542e-72,
+      "max_real_generator_eigenvalue": 0.044238196940857136,
+      "phase_p2_skew_residual": -3.761372901624795e-07,
+      "phase_p2_antisymmetric_coefficient": 0.38924928401211645,
+      "initial_event_replay_error": 3.1842154045457077e-16
+    },
+    {
+      "t": 0.0,
+      "n": 64,
+      "p": 402.1238596594935,
+      "chart_condition": 375889.29631867114,
+      "graph_reconstruction_error": 4.250965946588695e-73,
+      "max_real_generator_eigenvalue": 0.05805029157234386,
+      "phase_p2_skew_residual": -1.0586048761816177e-10,
+      "phase_p2_antisymmetric_coefficient": 0.3892494720278313,
+      "initial_event_replay_error": 5.640018222270919e-16
+    },
+    {
+      "t": 0.0,
+      "n": 256,
+      "p": 1608.495438637974,
+      "chart_condition": 5988330.810178355,
+      "graph_reconstruction_error": 2.914717636204188e-73,
+      "max_real_generator_eigenvalue": 0.05828008593658424,
+      "phase_p2_skew_residual": -4.1440988478399763e-13,
+      "phase_p2_antisymmetric_coefficient": 0.3892494720805543,
+      "initial_event_replay_error": 4.2717957098606026e-16
+    },
+    {
+      "t": 0.5,
+      "n": 1,
+      "p": 4.262492604368343,
+      "chart_condition": 1200.971851715323,
+      "graph_reconstruction_error": 1.2094008320332698e-72,
+      "max_real_generator_eigenvalue": -0.02719659536495081,
+      "phase_p2_skew_residual": 0.0001289604181740038,
+      "phase_p2_antisymmetric_coefficient": 0.38931395228984855
+    },
+    {
+      "t": 0.5,
+      "n": 8,
+      "p": 34.09994083494674,
+      "chart_condition": 9385.18278149852,
+      "graph_reconstruction_error": 1.0169273647620692e-72,
+      "max_real_generator_eigenvalue": 0.015305761913338432,
+      "phase_p2_skew_residual": -1.4089356791621337e-07,
+      "phase_p2_antisymmetric_coefficient": 0.3892494016339776
+    },
+    {
+      "t": 0.5,
+      "n": 64,
+      "p": 272.79952667957394,
+      "chart_condition": 484835.0853189132,
+      "graph_reconstruction_error": 1.0556780750390172e-72,
+      "max_real_generator_eigenvalue": 0.023702325922803216,
+      "phase_p2_skew_residual": -4.230965755568553e-11,
+      "phase_p2_antisymmetric_coefficient": 0.38924947205960675
+    },
+    {
+      "t": 0.5,
+      "n": 256,
+      "p": 1091.1981067182958,
+      "chart_condition": 7729337.917935489,
+      "graph_reconstruction_error": 1.227225702565214e-72,
+      "max_real_generator_eigenvalue": 0.023850124595620838,
+      "phase_p2_skew_residual": -1.6581689687554268e-13,
+      "phase_p2_antisymmetric_coefficient": 0.3892494720806786
+    },
+    {
+      "t": 1.0,
+      "n": 1,
+      "p": 3.1159311381710486,
+      "chart_condition": 2344.8429850878697,
+      "graph_reconstruction_error": 6.447838489131356e-72,
+      "max_real_generator_eigenvalue": -0.006090271872762121,
+      "phase_p2_skew_residual": 4.397236846759564e-05,
+      "phase_p2_antisymmetric_coefficient": 0.3892714582649952
+    },
+    {
+      "t": 1.0,
+      "n": 8,
+      "p": 24.92744910536839,
+      "chart_condition": 12662.139646010899,
+      "graph_reconstruction_error": 4.584173772185907e-72,
+      "max_real_generator_eigenvalue": 0.00923996883358988,
+      "phase_p2_skew_residual": -6.388477947050817e-08,
+      "phase_p2_antisymmetric_coefficient": 0.3892494401383717
+    },
+    {
+      "t": 1.0,
+      "n": 64,
+      "p": 199.4195928429471,
+      "chart_condition": 589458.7725136556,
+      "graph_reconstruction_error": 6.910398260205006e-72,
+      "max_real_generator_eigenvalue": 0.01235553927443493,
+      "phase_p2_skew_residual": -1.940589922702976e-11,
+      "phase_p2_antisymmetric_coefficient": 0.3892494720710585
+    },
+    {
+      "t": 1.0,
+      "n": 256,
+      "p": 797.6783713717884,
+      "chart_condition": 9379329.315326398,
+      "graph_reconstruction_error": 3.6049596016827237e-72,
+      "max_real_generator_eigenvalue": 0.012410460337742733,
+      "phase_p2_skew_residual": -7.606533247825188e-14,
+      "phase_p2_antisymmetric_coefficient": 0.3892494720807234
+    },
+    {
+      "t": 2.0,
+      "n": 1,
+      "p": 2.109956866169371,
+      "chart_condition": 2120.8467300827315,
+      "graph_reconstruction_error": 3.766165890063505e-17,
+      "max_real_generator_eigenvalue": 0.0022819023650034777,
+      "phase_p2_skew_residual": -2.510434394070651e-07,
+      "phase_p2_antisymmetric_coefficient": 0.3892493465590417
+    },
+    {
+      "t": 2.0,
+      "n": 8,
+      "p": 16.879654929354967,
+      "chart_condition": 13151.598378918792,
+      "graph_reconstruction_error": 6.550805099546978e-18,
+      "max_real_generator_eigenvalue": 0.007547925194424213,
+      "phase_p2_skew_residual": -2.296125139118268e-08,
+      "phase_p2_antisymmetric_coefficient": 0.38924946060013577
+    },
+    {
+      "t": 2.0,
+      "n": 64,
+      "p": 135.03723943483973,
+      "chart_condition": 710633.2742913396,
+      "graph_reconstruction_error": 8.609858239990296e-19,
+      "max_real_generator_eigenvalue": 0.007786702053865387,
+      "phase_p2_skew_residual": -6.298611761767752e-12,
+      "phase_p2_antisymmetric_coefficient": 0.3892494720776121
+    },
+    {
+      "t": 2.0,
+      "n": 256,
+      "p": 540.1489577393589,
+      "chart_condition": 11341608.540613133,
+      "graph_reconstruction_error": 2.1643973071416662e-19,
+      "max_real_generator_eigenvalue": 0.007790442307752844,
+      "phase_p2_skew_residual": -2.463882654561721e-14,
+      "phase_p2_antisymmetric_coefficient": 0.3892494720807491
+    },
+    {
+      "t": 3.0,
+      "n": 1,
+      "p": 1.7030702319776088,
+      "chart_condition": 1256.4387408458663,
+      "graph_reconstruction_error": 2.0243614974849653e-72,
+      "max_real_generator_eigenvalue": -0.002580087781274184,
+      "phase_p2_skew_residual": 3.9001559283201214e-06,
+      "phase_p2_antisymmetric_coefficient": 0.38925142215872555
+    },
+    {
+      "t": 3.0,
+      "n": 8,
+      "p": 13.62456185582087,
+      "chart_condition": 13730.53919977198,
+      "graph_reconstruction_error": 4.5026420785577143e-72,
+      "max_real_generator_eigenvalue": 0.005475178764310962,
+      "phase_p2_skew_residual": -1.0060966092711242e-08,
+      "phase_p2_antisymmetric_coefficient": 0.38924946705027835
+    },
+    {
+      "t": 3.0,
+      "n": 64,
+      "p": 108.99649484656696,
+      "chart_condition": 821914.1723211757,
+      "graph_reconstruction_error": 1.4621368318647002e-72,
+      "max_real_generator_eigenvalue": 0.006103999433934585,
+      "phase_p2_skew_residual": -2.6926786172247383e-12,
+      "phase_p2_antisymmetric_coefficient": 0.389249472079415
+    },
+    {
+      "t": 3.0,
+      "n": 256,
+      "p": 435.98597938626784,
+      "chart_condition": 13137410.432667064,
+      "graph_reconstruction_error": 1.139605861379854e-72,
+      "max_real_generator_eigenvalue": 0.006113995613115006,
+      "phase_p2_skew_residual": -1.0488072400983402e-14,
+      "phase_p2_antisymmetric_coefficient": 0.3892494720807561
+    },
+    {
+      "t": 4.0,
+      "n": 1,
+      "p": 1.449976798713263,
+      "chart_condition": 1460.6931764056517,
+      "graph_reconstruction_error": 6.58231229963811e-72,
+      "max_real_generator_eigenvalue": -0.0020823894074940646,
+      "phase_p2_skew_residual": 1.9048865202786372e-06,
+      "phase_p2_antisymmetric_coefficient": 0.3892504245240216
+    },
+    {
+      "t": 4.0,
+      "n": 8,
+      "p": 11.599814389706104,
+      "chart_condition": 15527.804382621383,
+      "graph_reconstruction_error": 9.132947749240679e-72,
+      "max_real_generator_eigenvalue": 0.0044494996211105935,
+      "phase_p2_skew_residual": -4.3065634514771096e-09,
+      "phase_p2_antisymmetric_coefficient": 0.3892494699274798
+    },
+    {
+      "t": 4.0,
+      "n": 64,
+      "p": 92.79851511764883,
+      "chart_condition": 937449.7411888649,
+      "graph_reconstruction_error": 6.716840756518089e-72,
+      "max_real_generator_eigenvalue": 0.004793208638546246,
+      "phase_p2_skew_residual": -1.1424705744803601e-12,
+      "phase_p2_antisymmetric_coefficient": 0.38924947208019023
+    },
+    {
+      "t": 4.0,
+      "n": 256,
+      "p": 371.19406047059533,
+      "chart_condition": 14986092.451989086,
+      "graph_reconstruction_error": 4.799850596183989e-72,
+      "max_real_generator_eigenvalue": 0.004798539472867828,
+      "phase_p2_skew_residual": -4.435753559341357e-15,
+      "phase_p2_antisymmetric_coefficient": 0.3892494720807592
+    }
+  ]
+}
