@@ -1,0 +1,233 @@
+{
+  "C_chi": "NOT_DERIVED",
+  "Jordan_density_source_initial_n1": -5.675909486855813,
+  "MAT-001": "BLOCKED",
+  "Rule9_cleared": false,
+  "Stage4A": "CLOSED",
+  "UVIR-003": "IN_PROGRESS",
+  "a0": "NOT_PREDICTED",
+  "analytic_result": "linear finite-mode IVP and observables scale with amplitude; proof in owning report",
+  "canonical_Test2_pass": false,
+  "checks": [
+    {
+      "name": "S1_field_order",
+      "passed": true
+    },
+    {
+      "name": "S1_reduced_shapes",
+      "passed": true
+    },
+    {
+      "name": "S1_preconstraint_shape",
+      "passed": true
+    },
+    {
+      "name": "S2_canonical_shapes",
+      "passed": true
+    },
+    {
+      "name": "quadratic_matrices_independent_of_A",
+      "passed": true
+    },
+    {
+      "name": "time_shift_removes_matter_shift",
+      "passed": true
+    },
+    {
+      "name": "matter_Phi_dictionary",
+      "passed": true
+    },
+    {
+      "name": "matter_Psi_dictionary",
+      "passed": true
+    },
+    {
+      "name": "S1_dust_lapse_constraint",
+      "passed": true
+    },
+    {
+      "name": "matter_Phi_after_dust_constraint",
+      "passed": true
+    },
+    {
+      "name": "reject_wrong_shift_sign",
+      "passed": true
+    },
+    {
+      "name": "reject_omitted_shift_time_derivative",
+      "passed": true
+    },
+    {
+      "name": "reject_omitted_conformal_background_derivative",
+      "passed": true
+    },
+    {
+      "name": "dust_multiplier_density_coefficient",
+      "passed": true
+    },
+    {
+      "name": "dust_shift_coefficient",
+      "passed": true
+    },
+    {
+      "amplitude": -5.675909486855813,
+      "name": "nonzero_Jordan_dust_density_in_Newtonian_gauge_n1",
+      "passed": true,
+      "threshold_abs": 0.01
+    },
+    {
+      "name": "reject_zero_density_source_claim",
+      "passed": true
+    },
+    {
+      "name": "S2_mode_set",
+      "passed": true
+    },
+    {
+      "name": "n1_two_solvers_present",
+      "passed": true
+    },
+    {
+      "name": "n1_transfer_shape_and_finiteness",
+      "passed": true
+    },
+    {
+      "name": "n1_two_solver_endpoint_agreement",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 6.93770973934e-11
+    },
+    {
+      "name": "n1_stored_linear_transfer_scales",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "n2_two_solvers_present",
+      "passed": true
+    },
+    {
+      "name": "n2_transfer_shape_and_finiteness",
+      "passed": true
+    },
+    {
+      "name": "n2_two_solver_endpoint_agreement",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 5.421541368057897e-09
+    },
+    {
+      "name": "n2_stored_linear_transfer_scales",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "n4_two_solvers_present",
+      "passed": true
+    },
+    {
+      "name": "n4_transfer_shape_and_finiteness",
+      "passed": true
+    },
+    {
+      "name": "n4_two_solver_endpoint_agreement",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 6.809763838158574e-08
+    },
+    {
+      "name": "n4_stored_linear_transfer_scales",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 0.0
+    },
+    {
+      "name": "n8_two_solvers_present",
+      "passed": true
+    },
+    {
+      "name": "n8_transfer_shape_and_finiteness",
+      "passed": true
+    },
+    {
+      "name": "n8_two_solver_endpoint_agreement",
+      "passed": true,
+      "threshold": 1e-05,
+      "value": 2.1138135966467214e-07
+    },
+    {
+      "name": "n8_stored_linear_transfer_scales",
+      "passed": true,
+      "threshold": 1e-12,
+      "value": 0.0
+    }
+  ],
+  "gate_effect": "NONE",
+  "passed": 34,
+  "physical_EFT_domain_proved": false,
+  "physical_weak_field_solution": false,
+  "physics_pass": false,
+  "quasistatic_error_bounded": false,
+  "review_status": "DEFERRED",
+  "schema": "r4c1-t2p3-coupled-linear-limit-v1",
+  "scope": "finite nonzero Fourier modes about B1; nonlinear weak-field domain untested",
+  "script_sha256": "f747089197223f785872762336c2a834f677038d433b2449440758d6444fae25",
+  "source_sha256": {
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_summary.json": "56a4db658ae24d86211148abaffc1b9cf4d3d5aceed2e732df1270abda737735",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+    "Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md": "81c7138568d44fd3197b88cb21efe67b17c406ada941f7ff778c2f8821ae074b",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md": "82708666dfce4ef214b614bc7da31b294d7569539b97292aaa9a79e906e6266f",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_LINEAR_LIMIT_CONTRACT_2026-09-29.md": "84b391bb6da5a6ceabb6feefa03b48f754550fc7f436bfd62033ecdb24267bdb",
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9"
+  },
+  "status": "COUPLED_LINEAR_NO_SQRT_ASYMPTOTE_CONDITIONAL_ONLY",
+  "total": 34,
+  "transfer_checks": [
+    {
+      "endpoint_disagreement": 6.93770973934e-11,
+      "max_scaling_residual": 0.0,
+      "n": 1
+    },
+    {
+      "endpoint_disagreement": 5.421541368057897e-09,
+      "max_scaling_residual": 0.0,
+      "n": 2
+    },
+    {
+      "endpoint_disagreement": 6.809763838158574e-08,
+      "max_scaling_residual": 0.0,
+      "n": 4
+    },
+    {
+      "endpoint_disagreement": 2.1138135966467214e-07,
+      "max_scaling_residual": 0.0,
+      "n": 8
+    }
+  ],
+  "transitive_source_sha256": {
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_samples.json": "1d9846b88bcf273f3d5fb35020a6bc7fb1e52c9d4fbae8dd4f2a578aed5edcfc",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_matrices.json": "6e5379d6fa05ee7a3c78c78d9d731de14f4346c28425857fd3a02ed155d30e70",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_symbol.json": "3122e1927a4627ea6c40d68493ebe6a28ca250301d2442a3d25794afa9ea659d",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_propagation_transfers.json": "8f85326eaec6cbc8c14a42fffb776869f374e0edb63ec9045fa0b40ca0119330",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_CONTRACT_2026-09-26.md": "b4ecbc81119dd23b9597df3ca39b680cf44d07ae1a0a5564be78145b951354dd"
+  },
+  "validation": "PASS_LOCAL_CHECKS"
+}

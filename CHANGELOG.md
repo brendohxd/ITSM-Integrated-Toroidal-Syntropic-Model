@@ -1,5 +1,38 @@
 # ITSM Changelog & Archive History
 
+## Conditional Test 1-3 continuations and provenance (2026-09-30)
+
+- The [R4C1-T2P3 coupled linear limit](Theory/Gates/RES-001/RES001_R4C1_COUPLED_LINEAR_LIMIT_REPORT_2026-09-29.md)
+  has a finite source-linear response at each registered nonzero mode. Its
+  34/34 local checks do not establish a nonlinear weak-field solution or a
+  positive square-root asymptote from that linear branch.
+- The [finite-positive-`b` principal audit](Theory/Gates/RES-001/RES001_R4C1_FINITE_B_PRINCIPAL_SYMBOL_AUDIT_2026-09-30.md)
+  and [linear transfer report](Theory/Gates/RES-001/RES001_R4C1_FINITE_B_TRANSFER_REPORT_2026-09-30.md)
+  extend the conditional action-family diagnostics without changing the
+  frozen B1 action or proving stability, an EFT-valid force law, or a physical
+  Test-1/2 pass. The regulator-window and order-of-limits notes retain their
+  declared domain restrictions.
+- The [Test-3 historical lineage](Theory/Gates/ITSM_TEST_03_EARLY_COEFFICIENT_LINEAGE_AUDIT_2026-09-30.md),
+  [original-PDF comparison](Theory/Gates/ITSM_TEST_03_ORIGINAL_PDF_CIRCULATION_CROSSCHECK_2026-09-30.md),
+  and [dimensional disposition](Theory/Gates/ITSM_TEST_03_DIMENSIONAL_REPAIR_DISPOSITION_2026-09-30.md)
+  reject the displayed v7.2/v11.1.1 acceleration-dimension equality.
+  Recombining the declared scales can form `cH0`, but does not derive its
+  dimensionless coefficient; the analyst was not blinded to the historical
+  target. The [search inventory](Analysis/MasterTests/outputs/acceleration_history_inventory.json)
+  is a bounded source locator, not a complete coefficient derivation.
+- The [26 September evidence watch](Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-26.md)
+  records external preprints without gate authority. The
+  [legacy SHA-256 audit](Theory/Verification/ITSM_LEGACY_SHA256_PAIR_AUDIT_2026-09-30.md)
+  identifies 18 pre-existing mismatched conventional pairs; it neither
+  repairs nor attributes them. New report sidecars are checked independently.
+  [Master Tests review preparation](docs/ITSM_MASTER_TEST_REVIEW.md) and the
+  [TOP-X4/BBN packet](Theory/Verification/ITSM_RULE9_TOPX4_BBN_REVIEW_PACKET_2026-09-16.md)
+  prepare evidence only; no independent review was performed by those files.
+- All of these are bounded conditional/source-level or provenance results.
+  `physics_pass=false`, `gate_effect=NONE`, canonical Master Tests 1-3 remain
+  open, and Rule-9 review is deferred, not cleared. MAT-001, UVIR-003 and
+  publication holds are unchanged. No legacy research artifact or sidecar is rewritten.
+
 ## R4C1 conditional force-domain and identifiability limits (2026-09-29)
 
 - C2 proves the finite-`b` static periodic contrast solution changes with
