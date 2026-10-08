@@ -1,0 +1,943 @@
+{
+  "checks": [
+    {
+      "description": "Convention conversion reproduces K_D=a^5 rho_c/k^2 exactly.",
+      "id": "AOKI_UNCOUPLED_DUST_NORMALIZATION",
+      "observed": "0",
+      "passed": true,
+      "threshold": "exactly 0"
+    },
+    {
+      "description": "Direct-lattice and heat-kernel rho agree for (1.0, 1.0, 1.0).",
+      "id": "CBR_G1_RHO_METHOD_AGREEMENT",
+      "observed": 1.2151158239696633e-06,
+      "passed": true,
+      "threshold": 0.0002
+    },
+    {
+      "description": "Direct and energy-derivative p1 agree for (1.0, 1.0, 1.0).",
+      "id": "CBR_G1_P1_METHOD_AGREEMENT",
+      "observed": 4.0503684878923537e-07,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Direct and energy-derivative p2 agree for (1.0, 1.0, 1.0).",
+      "id": "CBR_G1_P2_METHOD_AGREEMENT",
+      "observed": 4.0503684965086307e-07,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Direct and energy-derivative p3 agree for (1.0, 1.0, 1.0).",
+      "id": "CBR_G1_P3_METHOD_AGREEMENT",
+      "observed": 4.050365188521218e-07,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Heat-kernel stress is traceless for (1.0, 1.0, 1.0).",
+      "id": "CBR_G1_HEAT_TRACE",
+      "observed": 5.606412326887339e-12,
+      "passed": true,
+      "threshold": 5e-05
+    },
+    {
+      "description": "Direct-lattice and heat-kernel rho agree for (1.0, 1.25, 1.25).",
+      "id": "CBR_G2_RHO_METHOD_AGREEMENT",
+      "observed": 1.1991605550036446e-06,
+      "passed": true,
+      "threshold": 0.0002
+    },
+    {
+      "description": "Direct and energy-derivative p1 agree for (1.0, 1.25, 1.25).",
+      "id": "CBR_G2_P1_METHOD_AGREEMENT",
+      "observed": 6.455553042281101e-07,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Direct and energy-derivative p2 agree for (1.0, 1.25, 1.25).",
+      "id": "CBR_G2_P2_METHOD_AGREEMENT",
+      "observed": 2.7680459965145007e-07,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Direct and energy-derivative p3 agree for (1.0, 1.25, 1.25).",
+      "id": "CBR_G2_P3_METHOD_AGREEMENT",
+      "observed": 2.768036103750559e-07,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Heat-kernel stress is traceless for (1.0, 1.25, 1.25).",
+      "id": "CBR_G2_HEAT_TRACE",
+      "observed": 2.9599465020619804e-12,
+      "passed": true,
+      "threshold": 5e-05
+    },
+    {
+      "description": "Direct-lattice and heat-kernel rho agree for (1.0, 1.0, 2.0).",
+      "id": "CBR_G3_RHO_METHOD_AGREEMENT",
+      "observed": 1.0774107018775018e-06,
+      "passed": true,
+      "threshold": 0.0002
+    },
+    {
+      "description": "Direct and energy-derivative p1 agree for (1.0, 1.0, 2.0).",
+      "id": "CBR_G3_P1_METHOD_AGREEMENT",
+      "observed": 5.425617646255621e-07,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Direct and energy-derivative p2 agree for (1.0, 1.0, 2.0).",
+      "id": "CBR_G3_P2_METHOD_AGREEMENT",
+      "observed": 5.425617658980921e-07,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Direct and energy-derivative p3 agree for (1.0, 1.0, 2.0).",
+      "id": "CBR_G3_P3_METHOD_AGREEMENT",
+      "observed": 7.716835206796979e-09,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Heat-kernel stress is traceless for (1.0, 1.0, 2.0).",
+      "id": "CBR_G3_HEAT_TRACE",
+      "observed": 4.007069656514118e-12,
+      "passed": true,
+      "threshold": 5e-05
+    },
+    {
+      "description": "Direct-lattice and heat-kernel rho agree for (0.8, 1.1, 1.4).",
+      "id": "CBR_G4_RHO_METHOD_AGREEMENT",
+      "observed": 1.1302263349581283e-06,
+      "passed": true,
+      "threshold": 0.0002
+    },
+    {
+      "description": "Direct and energy-derivative p1 agree for (0.8, 1.1, 1.4).",
+      "id": "CBR_G4_P1_METHOD_AGREEMENT",
+      "observed": 7.419939711198601e-07,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Direct and energy-derivative p2 agree for (0.8, 1.1, 1.4).",
+      "id": "CBR_G4_P2_METHOD_AGREEMENT",
+      "observed": 2.721999772369348e-07,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Direct and energy-derivative p3 agree for (0.8, 1.1, 1.4).",
+      "id": "CBR_G4_P3_METHOD_AGREEMENT",
+      "observed": 6.971014639549369e-08,
+      "passed": true,
+      "threshold": 0.0005
+    },
+    {
+      "description": "Heat-kernel stress is traceless for (0.8, 1.1, 1.4).",
+      "id": "CBR_G4_HEAT_TRACE",
+      "observed": 2.237799402499223e-12,
+      "passed": true,
+      "threshold": 5e-05
+    },
+    {
+      "description": "Cube directional pressures are equal.",
+      "id": "CBR_CUBE_PRESSURE_EQUALITY",
+      "observed": 3.313952526887584e-13,
+      "passed": true,
+      "threshold": 5e-05
+    },
+    {
+      "description": "Each cube pressure equals rho/3.",
+      "id": "CBR_CUBE_EQUATION_OF_STATE",
+      "observed": 6.2691365532143186e-12,
+      "passed": true,
+      "threshold": 5e-05
+    },
+    {
+      "description": "Permuting lengths permutes pressures and preserves rho.",
+      "id": "CBR_PERMUTATION_COVARIANCE",
+      "observed": {
+        "max_pressure_relative_error": 3.388140837329736e-11,
+        "rho_relative_error": 2.952826288182652e-16
+      },
+      "passed": true,
+      "threshold": 5e-05
+    },
+    {
+      "description": "Scaling all lengths by 1.7 scales the stress by lambda^-4.",
+      "id": "CBR_LENGTH_SCALING",
+      "observed": {
+        "max_pressure_relative_error": 3.5171994783305435e-11,
+        "rho_relative_error": 1.849672533114774e-15
+      },
+      "passed": true,
+      "threshold": 5e-05
+    }
+  ],
+  "comparisons": [
+    {
+      "direct_lattice": {
+        "cutoffs": [
+          20,
+          30,
+          40,
+          60,
+          80,
+          120
+        ],
+        "fit_coefficients_constant_1_over_n_1_over_n2": {
+          "p1": [
+            -0.27917863099724255,
+            0.1763331168074679,
+            -0.08614948314759467
+          ],
+          "p2": [
+            -0.27917863099724183,
+            0.1763331168073822,
+            -0.0861494831461221
+          ],
+          "p3": [
+            -0.27917863099724133,
+            0.17633311680733665,
+            -0.08614948314545334
+          ],
+          "rho": [
+            -0.8375358929917255,
+            0.5289993504221434,
+            -0.2584484494385614
+          ]
+        },
+        "lengths": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "pressures": [
+          -0.27917863099724255,
+          -0.27917863099724183,
+          -0.27917863099724133
+        ],
+        "rho": -0.8375358929917255,
+        "sample_values": {
+          "p1": [
+            -0.27057733360068836,
+            -0.2733966373623192,
+            -0.2748241306084255,
+            -0.27626362922416536,
+            -0.27698790626235087,
+            -0.2777152153789182
+          ],
+          "p2": [
+            -0.27057733360068836,
+            -0.27339663736231934,
+            -0.27482413060842636,
+            -0.27626362922416625,
+            -0.2769879062623503,
+            -0.27771521537891836
+          ],
+          "p3": [
+            -0.27057733360068836,
+            -0.2733966373623195,
+            -0.27482413060842636,
+            -0.2762636292241665,
+            -0.27698790626235015,
+            -0.277715215378918
+          ],
+          "rho": [
+            -0.8117320008020658,
+            -0.8201899120869572,
+            -0.8244723918252785,
+            -0.8287908876725001,
+            -0.8309637187870524,
+            -0.8331456461367531
+          ]
+        },
+        "trace": -2.220446049250313e-16
+      },
+      "geometry_id": 1,
+      "heat_kernel": {
+        "energy": -0.8375369106960788,
+        "integral_diagnostics": {
+          "large_interval_error_estimate": 5.5310418105711624e-11,
+          "small_interval_error_estimate": 3.9324461462235696e-12
+        },
+        "lengths": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "pressure_derivative_diagnostics": [
+          {
+            "central_coarse": 0.2791790131939642,
+            "central_fine": 0.27917898097140625,
+            "richardson_delta": 1.0740852651736077e-08,
+            "step": 0.0002
+          },
+          {
+            "central_coarse": 0.2791790131939642,
+            "central_fine": 0.27917898097140625,
+            "richardson_delta": 1.0740852651736077e-08,
+            "step": 0.0002
+          },
+          {
+            "central_coarse": 0.2791790131947969,
+            "central_fine": 0.27917898097140625,
+            "richardson_delta": 1.0741130207492233e-08,
+            "step": 0.0002
+          }
+        ],
+        "pressures": [
+          -0.2791789702305536,
+          -0.2791789702305536,
+          -0.27917897023027605
+        ],
+        "rho": -0.8375369106960788,
+        "trace": 4.695577260349637e-12
+      },
+      "pressure_normalized_discrepancies": [
+        4.0503684878923537e-07,
+        4.0503684965086307e-07,
+        4.050365188521218e-07
+      ],
+      "rho_relative_discrepancy": 1.2151158239696633e-06,
+      "trace_relative": 5.606412326887339e-12
+    },
+    {
+      "direct_lattice": {
+        "cutoffs": [
+          20,
+          30,
+          40,
+          60,
+          80,
+          120
+        ],
+        "fit_coefficients_constant_1_over_n_1_over_n2": {
+          "p1": [
+            -0.32095381817693586,
+            0.1342330829299687,
+            -0.06526178738024314
+          ],
+          "p2": [
+            -0.0789564784466259,
+            0.08071805880406968,
+            -0.03957832035057904
+          ],
+          "p3": [
+            -0.07895647844662593,
+            0.0807180588040704,
+            -0.039578320350579344
+          ],
+          "rho": [
+            -0.4788667750701874,
+            0.29566920053807993,
+            -0.14441842808072355
+          ]
+        },
+        "lengths": [
+          1.0,
+          1.25,
+          1.25
+        ],
+        "pressures": [
+          -0.32095381817693586,
+          -0.0789564784466259,
+          -0.07895647844662593
+        ],
+        "rho": -0.4788667750701874,
+        "sample_values": {
+          "p1": [
+            -0.3144053046774158,
+            -0.3165519451870265,
+            -0.3176387654430011,
+            -0.31873468587539233,
+            -0.31928608211046305,
+            -0.31983978152079917
+          ],
+          "p2": [
+            -0.07501951530364159,
+            -0.07630987415870612,
+            -0.07696325712306865,
+            -0.07762215302032707,
+            -0.07795367835932125,
+            -0.07828659388659204
+          ],
+          "p3": [
+            -0.07501951530364159,
+            -0.07630987415870602,
+            -0.07696325712306874,
+            -0.07762215302032707,
+            -0.07795367835932125,
+            -0.07828659388659204
+          ],
+          "rho": [
+            -0.4644443352846987,
+            -0.4691716935044378,
+            -0.47156527968913914,
+            -0.4739789919160472,
+            -0.4751934388291053,
+            -0.476412969293983
+          ]
+        },
+        "trace": -3.3306690738754696e-16
+      },
+      "geometry_id": 2,
+      "heat_kernel": {
+        "energy": -0.7482302332953497,
+        "integral_diagnostics": {
+          "large_interval_error_estimate": 9.474160100727843e-12,
+          "small_interval_error_estimate": 7.361732199447107e-14
+        },
+        "lengths": [
+          1.0,
+          1.25,
+          1.25
+        ],
+        "pressure_derivative_diagnostics": [
+          {
+            "central_coarse": 0.5014908914599547,
+            "central_fine": 0.5014908408090823,
+            "richardson_delta": 1.6883624165409117e-08,
+            "step": 0.0002
+          },
+          {
+            "central_coarse": 0.09869578644949861,
+            "central_fine": 0.09869576942422853,
+            "richardson_delta": 5.675090022916329e-09,
+            "step": 0.00025
+          },
+          {
+            "central_coarse": 0.09869578644949861,
+            "central_fine": 0.09869576942378444,
+            "richardson_delta": 5.675238057278875e-09,
+            "step": 0.00025
+          }
+        ],
+        "pressures": [
+          -0.3209541273122932,
+          -0.07895661099931081,
+          -0.0789566109988371
+        ],
+        "rho": -0.47886734930902375,
+        "trace": -1.4174217355389374e-12
+      },
+      "pressure_normalized_discrepancies": [
+        6.455553042281101e-07,
+        2.7680459965145007e-07,
+        2.768036103750559e-07
+      ],
+      "rho_relative_discrepancy": 1.1991605550036446e-06,
+      "trace_relative": 2.9599465020619804e-12
+    },
+    {
+      "direct_lattice": {
+        "cutoffs": [
+          20,
+          30,
+          40,
+          60,
+          80,
+          120
+        ],
+        "fit_coefficients_constant_1_over_n_1_over_n2": {
+          "p1": [
+            -0.3052906513220901,
+            0.10651872110561633,
+            -0.05184159796401403
+          ],
+          "p2": [
+            -0.30529065132208955,
+            0.10651872110558908,
+            -0.05184159796366693
+          ],
+          "p3": [
+            0.17435510553387376,
+            0.01905593991067468,
+            -0.009561208285250776
+          ],
+          "rho": [
+            -0.43622619711030614,
+            0.23209338212191824,
+            -0.11324440421366065
+          ]
+        },
+        "lengths": [
+          1.0,
+          1.0,
+          2.0
+        ],
+        "pressures": [
+          -0.3052906513220901,
+          -0.30529065132208955,
+          0.17435510553387376
+        ],
+        "rho": -0.43622619711030614,
+        "sample_values": {
+          "p1": [
+            -0.3000943086677293,
+            -0.3017976673990839,
+            -0.30266007333376815,
+            -0.30352970715855176,
+            -0.303967252483472,
+            -0.3044066263023825
+          ],
+          "p2": [
+            -0.3000943086677292,
+            -0.30179766739908376,
+            -0.3026600733337683,
+            -0.30352970715855143,
+            -0.3039672524834717,
+            -0.30440662630238224
+          ],
+          "p3": [
+            0.1752839994274653,
+            0.17497968022635607,
+            0.17482552828403758,
+            0.1746700483477243,
+            0.1745918106515635,
+            0.1745132413596335
+          ],
+          "rho": [
+            -0.4249046179079932,
+            -0.42861565457181167,
+            -0.43049461838349895,
+            -0.43238936596937905,
+            -0.43334269431537886,
+            -0.4343000112451322
+          ]
+        },
+        "trace": 2.7755575615628914e-16
+      },
+      "geometry_id": 3,
+      "heat_kernel": {
+        "energy": -0.8724533342111714,
+        "integral_diagnostics": {
+          "large_interval_error_estimate": 3.8166046885586997e-11,
+          "small_interval_error_estimate": 4.0996128763465993e-13
+        },
+        "lengths": [
+          1.0,
+          1.0,
+          2.0
+        ],
+        "pressure_derivative_diagnostics": [
+          {
+            "central_coarse": 0.6105818631402249,
+            "central_fine": 0.6105817977880568,
+            "richardson_delta": 2.1784056003504304e-08,
+            "step": 0.0002
+          },
+          {
+            "central_coarse": 0.6105818631402249,
+            "central_fine": 0.6105817977880568,
+            "richardson_delta": 2.1784056003504304e-08,
+            "step": 0.0002
+          },
+          {
+            "central_coarse": -0.1743551035862656,
+            "central_fine": -0.1743551075716887,
+            "richardson_delta": 1.3284743582975267e-09,
+            "step": 0.0004
+          }
+        ],
+        "pressures": [
+          -0.3052908880020004,
+          -0.3052908880020004,
+          0.17435510890016306
+        ],
+        "rho": -0.4362266671055857,
+        "trace": 1.7479906411210777e-12
+      },
+      "pressure_normalized_discrepancies": [
+        5.425617646255621e-07,
+        5.425617658980921e-07,
+        7.716835206796979e-09
+      ],
+      "rho_relative_discrepancy": 1.0774107018775018e-06,
+      "trace_relative": 4.007069656514118e-12
+    },
+    {
+      "direct_lattice": {
+        "cutoffs": [
+          20,
+          30,
+          40,
+          60,
+          80,
+          120
+        ],
+        "fit_coefficients_constant_1_over_n_1_over_n2": {
+          "p1": [
+            -0.7989200435082232,
+            0.23977775385769143,
+            -0.1163210624436453
+          ],
+          "p2": [
+            -0.09309056750559809,
+            0.11996637153797518,
+            -0.05877463664898862
+          ],
+          "p3": [
+            0.14003832313151765,
+            0.06554168232306154,
+            -0.032483346255449866
+          ],
+          "rho": [
+            -0.7519722878823014,
+            0.4252858077185627,
+            -0.20757904534589355
+          ]
+        },
+        "lengths": [
+          0.8,
+          1.1,
+          1.4
+        ],
+        "pressures": [
+          -0.7989200435082232,
+          -0.09309056750559809,
+          0.14003832313151765
+        ],
+        "rho": -0.7519722878823014,
+        "sample_values": {
+          "p1": [
+            -0.7872219320272981,
+            -0.7910567929926818,
+            -0.7929982730871131,
+            -0.7949559776140386,
+            -0.7959409590241928,
+            -0.79693005056864
+          ],
+          "p2": [
+            -0.08723917626504983,
+            -0.0891570271450711,
+            -0.09012813266773322,
+            -0.09110742585548338,
+            -0.09160015833179228,
+            -0.09209495620745467
+          ],
+          "p3": [
+            0.1432342013692183,
+            0.14218694419956074,
+            0.14165656585658956,
+            0.14112166891464223,
+            0.14085252202124804,
+            0.14058224090676996
+          ],
+          "rho": [
+            -0.7312269069231301,
+            -0.7380268759381928,
+            -0.7414698398982575,
+            -0.7449417345548797,
+            -0.746688595334736,
+            -0.7484427658693239
+          ]
+        },
+        "trace": -2.220446049250313e-15
+      },
+      "geometry_id": 4,
+      "heat_kernel": {
+        "energy": -0.9264309057476026,
+        "integral_diagnostics": {
+          "large_interval_error_estimate": 2.924226459466938e-11,
+          "small_interval_error_estimate": 9.491327355434993e-14
+        },
+        "lengths": [
+          0.8,
+          1.1,
+          1.4
+        ],
+        "pressure_derivative_diagnostics": [
+          {
+            "central_coarse": 1.2303379439367046,
+            "central_fine": 1.2303378209135851,
+            "richardson_delta": 4.1007706341744665e-08,
+            "step": 0.00016
+          },
+          {
+            "central_coarse": 0.10426170029780905,
+            "central_fine": 0.10426167371629429,
+            "richardson_delta": 8.860504926988533e-09,
+            "step": 0.00022000000000000003
+          },
+          {
+            "central_coarse": -0.12323366549121013,
+            "central_fine": -0.12323367504230022,
+            "richardson_delta": 3.183696695163718e-09,
+            "step": 0.00028
+          }
+        ],
+        "pressures": [
+          -0.7989206363025187,
+          -0.09309077219266908,
+          0.14003827071136013
+        ],
+        "rho": -0.7519731377821449,
+        "trace": -1.6827650384243498e-12
+      },
+      "pressure_normalized_discrepancies": [
+        7.419939711198601e-07,
+        2.721999772369348e-07,
+        6.971014639549369e-08
+      ],
+      "rho_relative_discrepancy": 1.1302263349581283e-06,
+      "trace_relative": 2.237799402499223e-12
+    }
+  ],
+  "control_pass": true,
+  "exclusions": [
+    "No R4C1-to-Aoki interacting-operator dictionary is derived.",
+    "No full R4C1 kinetic, gradient, constraint, or all-scale stability claim is made.",
+    "The state-dependent isotropic torus zero mode is not fixed by this control.",
+    "The minimally coupled scalar terms in arXiv:2603.12319 are outside this conformal-scalar benchmark.",
+    "No anisotropic dynamical backreaction, observational fit, gate promotion, or publication-readiness claim is made."
+  ],
+  "gate_promotion": "NONE",
+  "input_hashes": {
+    "Analysis/Casimir/CBR-001/README.md": "6b5122e9b59c671fd0f88e4c990b344cc2d9569e01279516363a7135ba633b65",
+    "Analysis/Casimir/CBR-001/casimir_t3_lattice.py": "5f0515fab37cdfc0de837bcbc36011260815c5275dc6755a3226144811f04b87",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_REPORT_2026-09-25.md": "3019196b071b146a1e41cd055073ae02da2afa10b1cdb5ae49e0a63cf84a6eb6",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_REPORT_2026-09-30.md": "8a1c2245fc02307c5e70c7b4c1064872e82464c4c411d3095e97575c730b1876",
+    "Theory/Verification/ITSM_ALPHAXIV_LITERATURE_CONTROLS_CONTRACT_2026-09-30.md": "85d817fb8583305437e6c3bfebe2650f1a726461205d27048109f623ca878c77"
+  },
+  "method": {
+    "direct_cutoffs": [
+      20,
+      30,
+      40,
+      60,
+      80,
+      120
+    ],
+    "direct_extrapolation": "constant + 1/N + 1/N^2 least-squares fit",
+    "heat_kernel": "Mellin integral with Jacobi transform and adaptive quadrature",
+    "pressure": "energy derivative, central differences and one Richardson extrapolation"
+  },
+  "permutation_control": {
+    "base": {
+      "energy": -0.9264309057476026,
+      "integral_diagnostics": {
+        "large_interval_error_estimate": 2.924226459466938e-11,
+        "small_interval_error_estimate": 9.491327355434993e-14
+      },
+      "lengths": [
+        0.8,
+        1.1,
+        1.4
+      ],
+      "pressure_derivative_diagnostics": [
+        {
+          "central_coarse": 1.2303379439367046,
+          "central_fine": 1.2303378209135851,
+          "richardson_delta": 4.1007706341744665e-08,
+          "step": 0.00016
+        },
+        {
+          "central_coarse": 0.10426170029780905,
+          "central_fine": 0.10426167371629429,
+          "richardson_delta": 8.860504926988533e-09,
+          "step": 0.00022000000000000003
+        },
+        {
+          "central_coarse": -0.12323366549121013,
+          "central_fine": -0.12323367504230022,
+          "richardson_delta": 3.183696695163718e-09,
+          "step": 0.00028
+        }
+      ],
+      "pressures": [
+        -0.7989206363025187,
+        -0.09309077219266908,
+        0.14003827071136013
+      ],
+      "rho": -0.7519731377821449,
+      "trace": -1.6827650384243498e-12
+    },
+    "expected_permuted_pressures": [
+      0.14003827071136013,
+      -0.7989206363025187,
+      -0.09309077219266908
+    ],
+    "permutation": [
+      1.4,
+      0.8,
+      1.1
+    ],
+    "permuted": {
+      "energy": -0.9264309057476022,
+      "integral_diagnostics": {
+        "large_interval_error_estimate": 2.92425884458583e-11,
+        "small_interval_error_estimate": 9.491327355434993e-14
+      },
+      "lengths": [
+        1.4,
+        0.8,
+        1.1
+      ],
+      "pressure_derivative_diagnostics": [
+        {
+          "central_coarse": -0.12323366549220141,
+          "central_fine": -0.12323367504230022,
+          "richardson_delta": 3.183366265036014e-09,
+          "step": 0.00028
+        },
+        {
+          "central_coarse": 1.2303379439367046,
+          "central_fine": 1.2303378209135851,
+          "richardson_delta": 4.1007706341744665e-08,
+          "step": 0.00016
+        },
+        {
+          "central_coarse": 0.10426170029730442,
+          "central_fine": 0.10426167371881752,
+          "richardson_delta": 8.859495637114634e-09,
+          "step": 0.00022000000000000003
+        }
+      ],
+      "pressures": [
+        0.14003827071098465,
+        -0.7989206363025187,
+        -0.09309077219582312
+      ],
+      "rho": -0.7519731377821447,
+      "trace": -5.21249710061511e-12
+    }
+  },
+  "physics_closure_claimed": false,
+  "provenance": {
+    "contract": "Theory/Verification/ITSM_ALPHAXIV_LITERATURE_CONTROLS_CONTRACT_2026-09-30.md",
+    "external_sources": [
+      {
+        "arxiv": "2504.17293v2",
+        "control": "uncoupled dust-density normalization and interaction-basis comparison",
+        "title": "Effective field theory of coupled dark energy and dark matter"
+      },
+      {
+        "arxiv": "2603.12319",
+        "control": "nonzero-mode conformal-scalar rectangular-T3 stress",
+        "title": "Quantum Signatures of Cosmic Topology: How Casimir Backreaction Transmits Isotropy Violation"
+      }
+    ],
+    "script": "Analysis/LiteratureControls/test_itsm_alphaxiv_literature_controls.py",
+    "script_sha256": "c458987c2d8f9daf63db1c939d64c1db31a55c485ce4235d8f108ae428600f96"
+  },
+  "result_classification": "PASS_CONTROL_ONLY",
+  "scaling_control": {
+    "base": {
+      "energy": -0.9264309057476026,
+      "integral_diagnostics": {
+        "large_interval_error_estimate": 2.924226459466938e-11,
+        "small_interval_error_estimate": 9.491327355434993e-14
+      },
+      "lengths": [
+        0.8,
+        1.1,
+        1.4
+      ],
+      "pressure_derivative_diagnostics": [
+        {
+          "central_coarse": 1.2303379439367046,
+          "central_fine": 1.2303378209135851,
+          "richardson_delta": 4.1007706341744665e-08,
+          "step": 0.00016
+        },
+        {
+          "central_coarse": 0.10426170029780905,
+          "central_fine": 0.10426167371629429,
+          "richardson_delta": 8.860504926988533e-09,
+          "step": 0.00022000000000000003
+        },
+        {
+          "central_coarse": -0.12323366549121013,
+          "central_fine": -0.12323367504230022,
+          "richardson_delta": 3.183696695163718e-09,
+          "step": 0.00028
+        }
+      ],
+      "pressures": [
+        -0.7989206363025187,
+        -0.09309077219266908,
+        0.14003827071136013
+      ],
+      "rho": -0.7519731377821449,
+      "trace": -1.6827650384243498e-12
+    },
+    "scale": 1.7,
+    "scaled": {
+      "energy": -0.5449593563221182,
+      "integral_diagnostics": {
+        "large_interval_error_estimate": 3.760619761033173e-12,
+        "small_interval_error_estimate": 1.6504671325685987e-14
+      },
+      "lengths": [
+        1.36,
+        1.87,
+        2.38
+      ],
+      "pressure_derivative_diagnostics": [
+        {
+          "central_coarse": 0.42572247195294977,
+          "central_fine": 0.4257224293728355,
+          "richardson_delta": 1.4193371422610568e-08,
+          "step": 0.00027200000000000005
+        },
+        {
+          "central_coarse": 0.036076712904943194,
+          "central_fine": 0.036076703708793706,
+          "richardson_delta": 3.0653831625815364e-09,
+          "step": 0.00037400000000000004
+        },
+        {
+          "central_coarse": -0.042641406744644623,
+          "central_fine": -0.042641410048607706,
+          "richardson_delta": 1.1013210274302132e-09,
+          "step": 0.000476
+        }
+      ],
+      "pressures": [
+        -0.0956550611556788,
+        -0.011145792339165394,
+        0.01676683357578198
+      ],
+      "rho": -0.09003401992099516,
+      "trace": 1.932939919235821e-12
+    },
+    "scaled_geometry": [
+      1.36,
+      1.87,
+      2.38
+    ]
+  },
+  "schema": "itsm-alphaxiv-literature-controls-v1",
+  "symbolic_density_control": {
+    "aoki_action_overall_half": false,
+    "aoki_variable": "delta_c/k",
+    "converted_K_D": "a**5*rho_c/k**2",
+    "exact_residual": "0",
+    "interaction_extension": "a**5*M**2*H**2*(3*Omega_c + alpha_m2 - alpha_bar_m1**2)/k**2",
+    "passed": true,
+    "r4c1_target_K_D": "a**5*rho_c/k**2"
+  },
+  "tolerances": {
+    "pressure_normalized": 0.0005,
+    "rho_relative": 0.0002,
+    "symmetry_relative": 5e-05,
+    "trace_relative": 5e-05
+  },
+  "toolchain": {
+    "numpy": "2.4.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.9",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  }
+}

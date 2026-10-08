@@ -1,0 +1,2047 @@
+{
+  "schema": "r4c1-g3f-v1",
+  "validation": "PASS_LOCAL_CHECKS",
+  "passed": 106,
+  "total": 106,
+  "checks": [
+    {
+      "name": "full_canonical_two_form_transport_identity",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "full_canonical_two_form_antisymmetric",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "embedding_linear_in_slow_phase",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "phase_embedding_position_defect_zero",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_Radau_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_background_method_agreement",
+      "passed": true,
+      "value": 4.0357386129746215e-12,
+      "criterion": "normalized <=1e-10"
+    },
+    {
+      "name": "eta_1.0_background_domain",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_slow_reference_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_negative_initial_symplectic_coefficient",
+      "passed": true,
+      "value": -10.85717601384599,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_DOP853_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_DOP853_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_DOP853_symplectic_transport",
+      "passed": true,
+      "value": 2.7107122586619995e-12,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_1.0_k_20.0_Radau_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_Radau_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_Radau_symplectic_transport",
+      "passed": true,
+      "value": 2.6864977841157673e-12,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_1.0_k_20.0_full_method_agreement",
+      "passed": true,
+      "value": 6.59865658667822e-10,
+      "criterion": "normalized <=1e-7"
+    },
+    {
+      "name": "eta_1.0_k_40.0_negative_initial_symplectic_coefficient",
+      "passed": true,
+      "value": -10.963382082518867,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_DOP853_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_DOP853_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_DOP853_symplectic_transport",
+      "passed": true,
+      "value": 1.0358344887380474e-12,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_1.0_k_40.0_Radau_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_Radau_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_Radau_symplectic_transport",
+      "passed": true,
+      "value": 1.032918014344604e-12,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_1.0_k_40.0_full_method_agreement",
+      "passed": true,
+      "value": 1.075009797464859e-08,
+      "criterion": "normalized <=1e-7"
+    },
+    {
+      "name": "eta_1.0_k_80.0_negative_initial_symplectic_coefficient",
+      "passed": true,
+      "value": -10.990788526448172,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_DOP853_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_DOP853_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_DOP853_symplectic_transport",
+      "passed": true,
+      "value": 6.696013091258654e-13,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_1.0_k_80.0_Radau_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_Radau_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_Radau_symplectic_transport",
+      "passed": true,
+      "value": 6.731570003642842e-13,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_1.0_k_80.0_full_method_agreement",
+      "passed": true,
+      "value": 4.818842001278008e-09,
+      "criterion": "normalized <=1e-7"
+    },
+    {
+      "name": "eta_1.0_k_20.0_to_40.0_approximation_error_decreases",
+      "passed": true,
+      "value": 0.38139881404393144,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_1.0_k_20.0_to_40.0_symplectic_asymptotic_error_decreases",
+      "passed": true,
+      "value": 0.2563849285206667,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_1.0_k_40.0_to_80.0_approximation_error_decreases",
+      "passed": true,
+      "value": 0.298746564029335,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_1.0_k_40.0_to_80.0_symplectic_asymptotic_error_decreases",
+      "passed": true,
+      "value": 0.2515564561139733,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_1.0_k_80_registered_approximation_target",
+      "passed": true,
+      "value": 0.0018827337296126543,
+      "criterion": "<=0.05; diagnostic only"
+    },
+    {
+      "name": "eta_0.25_DOP853_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_Radau_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_background_method_agreement",
+      "passed": true,
+      "value": 1.870270731302682e-12,
+      "criterion": "normalized <=1e-10"
+    },
+    {
+      "name": "eta_0.25_background_domain",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_slow_reference_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_negative_initial_symplectic_coefficient",
+      "passed": true,
+      "value": -46.96430995653708,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_DOP853_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_DOP853_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_DOP853_symplectic_transport",
+      "passed": true,
+      "value": 1.5056798051176822e-12,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.25_k_20.0_Radau_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_Radau_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_Radau_symplectic_transport",
+      "passed": true,
+      "value": 1.5115802786305026e-12,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.25_k_20.0_full_method_agreement",
+      "passed": true,
+      "value": 4.91344256631703e-10,
+      "criterion": "normalized <=1e-7"
+    },
+    {
+      "name": "eta_0.25_k_40.0_negative_initial_symplectic_coefficient",
+      "passed": true,
+      "value": -46.99097358658826,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_DOP853_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_DOP853_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_DOP853_symplectic_transport",
+      "passed": true,
+      "value": 1.0572487499711168e-12,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.25_k_40.0_Radau_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_Radau_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_Radau_symplectic_transport",
+      "passed": true,
+      "value": 1.0596680834950782e-12,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.25_k_40.0_full_method_agreement",
+      "passed": true,
+      "value": 9.964388553713568e-10,
+      "criterion": "normalized <=1e-7"
+    },
+    {
+      "name": "eta_0.25_k_80.0_negative_initial_symplectic_coefficient",
+      "passed": true,
+      "value": -46.99773690279651,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_DOP853_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_DOP853_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_DOP853_symplectic_transport",
+      "passed": true,
+      "value": 9.488470091344e-13,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.25_k_80.0_Radau_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_Radau_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_Radau_symplectic_transport",
+      "passed": true,
+      "value": 9.412876798710602e-13,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.25_k_80.0_full_method_agreement",
+      "passed": true,
+      "value": 2.5126494063659214e-09,
+      "criterion": "normalized <=1e-7"
+    },
+    {
+      "name": "eta_0.25_k_20.0_to_40.0_approximation_error_decreases",
+      "passed": true,
+      "value": 0.4404035636282519,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.25_k_20.0_to_40.0_symplectic_asymptotic_error_decreases",
+      "passed": true,
+      "value": 0.2529112473935967,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.25_k_40.0_to_80.0_approximation_error_decreases",
+      "passed": true,
+      "value": 0.3757158572399173,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.25_k_40.0_to_80.0_symplectic_asymptotic_error_decreases",
+      "passed": true,
+      "value": 0.2507194275575428,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.25_k_80_registered_approximation_target",
+      "passed": true,
+      "value": 0.0006742438465539536,
+      "criterion": "<=0.05; diagnostic only"
+    },
+    {
+      "name": "eta_0.0625_DOP853_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_Radau_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_background_method_agreement",
+      "passed": true,
+      "value": 2.333706912117556e-12,
+      "criterion": "normalized <=1e-10"
+    },
+    {
+      "name": "eta_0.0625_background_domain",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_slow_reference_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_negative_initial_symplectic_coefficient",
+      "passed": true,
+      "value": -190.98060980575318,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_DOP853_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_DOP853_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_DOP853_symplectic_transport",
+      "passed": true,
+      "value": 1.0652526259590113e-12,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.0625_k_20.0_Radau_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_Radau_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_Radau_symplectic_transport",
+      "passed": true,
+      "value": 1.0661455451760769e-12,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.0625_k_20.0_full_method_agreement",
+      "passed": true,
+      "value": 1.0711908972187113e-08,
+      "criterion": "normalized <=1e-7"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_negative_initial_symplectic_coefficient",
+      "passed": true,
+      "value": -190.99513668932835,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_DOP853_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_DOP853_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_DOP853_symplectic_transport",
+      "passed": true,
+      "value": 2.025284371386885e-13,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_Radau_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_Radau_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_Radau_symplectic_transport",
+      "passed": true,
+      "value": 1.9955226613003768e-13,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_full_method_agreement",
+      "passed": true,
+      "value": 9.219662894810422e-10,
+      "criterion": "normalized <=1e-7"
+    },
+    {
+      "name": "eta_0.0625_k_80.0_negative_initial_symplectic_coefficient",
+      "passed": true,
+      "value": -190.9987831872039,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_DOP853_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_DOP853_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_DOP853_symplectic_transport",
+      "passed": true,
+      "value": 1.5297226928308915e-13,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.0625_k_80.0_Radau_full_integration_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_Radau_finite_full_columns",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_Radau_symplectic_transport",
+      "passed": true,
+      "value": 1.5520435492437938e-13,
+      "criterion": "relative <=1e-7"
+    },
+    {
+      "name": "eta_0.0625_k_80.0_full_method_agreement",
+      "passed": true,
+      "value": 2.0658748444340174e-09,
+      "criterion": "normalized <=1e-7"
+    },
+    {
+      "name": "eta_0.0625_k_20.0_to_40.0_approximation_error_decreases",
+      "passed": true,
+      "value": 0.48783949055313136,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.0625_k_20.0_to_40.0_symplectic_asymptotic_error_decreases",
+      "passed": true,
+      "value": 0.250812890770742,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_to_80.0_approximation_error_decreases",
+      "passed": true,
+      "value": 0.46383681033747376,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_to_80.0_symplectic_asymptotic_error_decreases",
+      "passed": true,
+      "value": 0.2502025632827311,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.0625_k_80_registered_approximation_target",
+      "passed": true,
+      "value": 0.00025043747580542935,
+      "criterion": "<=0.05; diagnostic only"
+    }
+  ],
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_CONTRACT_2026-09-30.md": "75050556086b27f794b2378ac389f6bb864ae03e4441c395ff5fc64538b1cd55",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_REPORT_2026-09-30.md": "2158f16970e883eb661aaabd04a1014aef3d8a47e6346ad7cb27453f464db83c",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/summary.json": "3c46b9834c6805c0ae46aeb0ff6226ec2abf814db873abc1d8fc104b8eacab72",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/formulas.json": "f4b7a2e69c7a51ebf33d25b94e03a60f7ca2680fecb481e42d4258cf9219ace6",
+    "Analysis/MasterTests/test_01_r4c1_g3_slow_action.py": "64e59e69851734cd24a4abbd31d7b02b17490395b1d841b1a0f06bd246681b90"
+  },
+  "transitive_source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_CONTRACT_2026-09-30.md": "f6a35a4ade82c8d925b44d6984164eb761e50015936623b0683e071516f62a43",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_REPORT_2026-09-30.md": "d350c85fafb752502c017b7c93bc0223b4386ed72c39080c3e01126478d60f02",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/summary.json": "1f13df62495f3a39198b697a7387f14086338306a8a5e24462b1e873800f1b5a",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/formulas.json": "f634e510fd6e04f51f0c2c6cc1f43d284b0b0c9e5d9c44d4a3b4de9d8a35e87f",
+    "Analysis/MasterTests/outputs/r4c1_g3e_gr_attempt_01/summary.json": "813353365311041ba341c96ec5949520e927df06f69bde8e5be19227930a5d28",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_CONTRACT_2026-09-30.md": "d1d64c216465956424589f95c940116bc198f5670552297b7e611894bcd385fa",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_REPORT_2026-09-30.md": "fe8d380be77af9e5ccecb02c62b8264d5ecbb6bf5d42153755c2914cd355cdbd",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/summary.json": "60d9de53f95592512e094ffc60c81a781ab8f9b33a8afa93dbf53943efbb34bf",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/pencil.json": "abb6a23cba1f80b0a02bf76d1bb47153bd745be55e83c44e9bd8183f9a9d5bb4",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_CONTRACT_2026-09-30.md": "47723c96936643b6be19d22e00a4f98bc3f4208cb409e61c255e041b7ce725e5",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/summary.json": "550caae54b03b490a5388ecd363ad0f9ff0d8d4891021d2eb1c366871d54378a",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_scalar.py": "eb5d8c41938d346a294aa03f713ea10655b939234dab7935f4a0ee9f774553f9",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_CONTRACT_2026-09-30.md": "92fc34dd19f2bc5de077703b0e7a8b209c14fdf1ae66674bc1f8176d8e4be1c5",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_REPORT_2026-09-30.md": "1b9fbc4185b61d1e37d7865baa811994e235523eb9ecc22432c733b4bc38aa04",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740"
+  },
+  "script_sha256": "24ef13486d8477cb021dc4931d6e64c6d6fcc8fa52a330c106515c4507624504",
+  "artifacts": {
+    "embedding.json": "c235d8c9f81314f01ade15dddd215263fc22754efa6caee485d793f85e432300",
+    "columns.npy": "2a7df2c3ca35f5d438f54520241c880692c9804d03f3bf1bf696cf183345bccc"
+  },
+  "numerical": {
+    "rows": [
+      {
+        "eta": 1.0,
+        "k": 20.0,
+        "min_k_over_a": 9.324557592977337,
+        "initial_symplectic_coefficient": -10.85717601384599,
+        "formal_symplectic_coefficient": -11.0,
+        "initial_relative_symplectic_asymptotic_error": 0.01298399874127363,
+        "max_normalized_embedding_defect": 0.42861981333026966,
+        "method_discrepancy": 6.59865658667822e-10,
+        "max_full_column_approximation_error": 0.016523675056559776,
+        "methods": [
+          {
+            "method": "DOP853",
+            "nfev": 1940,
+            "njev": 0,
+            "max_full_column_approximation_error": 0.016523675054793033,
+            "max_slow_coordinate_velocity_error": 0.008153275653288352,
+            "max_relative_symplectic_transport_drift": 2.7107122586619995e-12,
+            "final_full_columns": [
+              [
+                -0.12004423978542622,
+                -0.11599050455551564
+              ],
+              [
+                -0.011015567230253803,
+                -0.009201660423722785
+              ],
+              [
+                -0.19094063585263765,
+                -0.18474437391421583
+              ],
+              [
+                0.010439155070750453,
+                0.0021262214030410313
+              ],
+              [
+                -1.0655735817180125,
+                -3.690252435554384
+              ],
+              [
+                1.0528661667118822,
+                1.0178002215825013
+              ],
+              [
+                -0.08597079861115933,
+                -0.17769616057526882
+              ],
+              [
+                -0.09687721602821676,
+                -0.055177091854561794
+              ],
+              [
+                -0.11823926391076003,
+                -0.25299330018699934
+              ],
+              [
+                -0.008087867063934906,
+                -0.011132677228002583
+              ],
+              [
+                0.1624665705053947,
+                -2.2196214814776543
+              ],
+              [
+                0.061813114924567564,
+                0.999744939163472
+              ]
+            ]
+          },
+          {
+            "method": "Radau",
+            "nfev": 12240,
+            "njev": 16,
+            "max_full_column_approximation_error": 0.016523675056559776,
+            "max_slow_coordinate_velocity_error": 0.008153275658730662,
+            "max_relative_symplectic_transport_drift": 2.6864977841157673e-12,
+            "final_full_columns": [
+              [
+                -0.1200442397854116,
+                -0.11599050455555542
+              ],
+              [
+                -0.011015567230252862,
+                -0.009201660423726018
+              ],
+              [
+                -0.19094063585261503,
+                -0.18474437391428009
+              ],
+              [
+                0.010439155069014765,
+                0.0021262214067909444
+              ],
+              [
+                -1.0655735817177383,
+                -3.6902524355550073
+              ],
+              [
+                1.0528661667117423,
+                1.017800221582822
+              ],
+              [
+                -0.08597079861135289,
+                -0.17769616057493537
+              ],
+              [
+                -0.09687721602821193,
+                -0.055177091854576664
+              ],
+              [
+                -0.11823926391107682,
+                -0.25299330018648025
+              ],
+              [
+                -0.00808786726120624,
+                -0.011132676779665233
+              ],
+              [
+                0.16246657050270732,
+                -2.219621481471777
+              ],
+              [
+                0.06181311492753284,
+                0.9997449391568962
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "k": 40.0,
+        "min_k_over_a": 18.649115185954674,
+        "initial_symplectic_coefficient": -10.963382082518867,
+        "formal_symplectic_coefficient": -11.0,
+        "initial_relative_symplectic_asymptotic_error": 0.0033289015891938656,
+        "max_normalized_embedding_defect": 0.29200172842449795,
+        "method_discrepancy": 1.075009797464859e-08,
+        "max_full_column_approximation_error": 0.00630211007021919,
+        "methods": [
+          {
+            "method": "DOP853",
+            "nfev": 7169,
+            "njev": 0,
+            "max_full_column_approximation_error": 0.00630210998415835,
+            "max_slow_coordinate_velocity_error": 0.0024822785895771537,
+            "max_relative_symplectic_transport_drift": 1.0358344887380474e-12,
+            "final_full_columns": [
+              [
+                -0.06022987178183971,
+                -0.05757100878186532
+              ],
+              [
+                -0.005574355109497948,
+                -0.004537854195537758
+              ],
+              [
+                -0.09586526782498733,
+                -0.09151682964443629
+              ],
+              [
+                0.004459980317296309,
+                0.0032825103818360625
+              ],
+              [
+                -0.5318089466972469,
+                -1.8458328974328302
+              ],
+              [
+                1.0548557247086987,
+                1.0122008997145735
+              ],
+              [
+                -0.04262071859939707,
+                -0.0897955054391475
+              ],
+              [
+                -0.041849482110382155,
+                -0.04227702323820134
+              ],
+              [
+                -0.05652661318908717,
+                -0.1323257149841571
+              ],
+              [
+                -0.005115426318371114,
+                -0.0022750663398901495
+              ],
+              [
+                0.08267380587138765,
+                -1.111183732209344
+              ],
+              [
+                0.05927064494889691,
+                1.0027736470163808
+              ]
+            ]
+          },
+          {
+            "method": "Radau",
+            "nfev": 32070,
+            "njev": 29,
+            "max_full_column_approximation_error": 0.00630211007021919,
+            "max_slow_coordinate_velocity_error": 0.002482278630814167,
+            "max_relative_symplectic_transport_drift": 1.032918014344604e-12,
+            "final_full_columns": [
+              [
+                -0.06022987178183206,
+                -0.0575710087818893
+              ],
+              [
+                -0.005574355109497178,
+                -0.004537854195539993
+              ],
+              [
+                -0.0958652678249749,
+                -0.09151682964447436
+              ],
+              [
+                0.0044599802984826385,
+                0.003282510414978952
+              ],
+              [
+                -0.531808946697122,
+                -1.845832897433219
+              ],
+              [
+                1.0548557247086336,
+                1.0122008997148666
+              ],
+              [
+                -0.04262071860128064,
+                -0.0897955054358365
+              ],
+              [
+                -0.041849482110544754,
+                -0.042277023237922005
+              ],
+              [
+                -0.05652661319208887,
+                -0.13232571497888604
+              ],
+              [
+                -0.005115427754097975,
+                -0.0022750619211469292
+              ],
+              [
+                0.0826738058412157,
+                -1.111183732156249
+              ],
+              [
+                0.05927064498765249,
+                1.0027736469407438
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "k": 80.0,
+        "min_k_over_a": 37.29823037190935,
+        "initial_symplectic_coefficient": -10.990788526448172,
+        "formal_symplectic_coefficient": -11.0,
+        "initial_relative_symplectic_asymptotic_error": 0.0008374066865297826,
+        "max_normalized_embedding_defect": 0.16651425010883528,
+        "method_discrepancy": 4.818842001278008e-09,
+        "max_full_column_approximation_error": 0.0018827337296126543,
+        "methods": [
+          {
+            "method": "DOP853",
+            "nfev": 22013,
+            "njev": 0,
+            "max_full_column_approximation_error": 0.0018827337296126543,
+            "max_slow_coordinate_velocity_error": 0.0007088429661890496,
+            "max_relative_symplectic_transport_drift": 6.696013091258654e-13,
+            "final_full_columns": [
+              [
+                -0.0301178056172522,
+                -0.028793600936269637
+              ],
+              [
+                -0.0026541443834156206,
+                -0.002579328664228275
+              ],
+              [
+                -0.047909407484164654,
+                -0.045829721970833064
+              ],
+              [
+                0.002134771439379501,
+                0.0019195420609406006
+              ],
+              [
+                -0.2657845699682889,
+                -0.9230027044421606
+              ],
+              [
+                1.0554064562249004,
+                1.0107474394421465
+              ],
+              [
+                -0.020121285565193745,
+                -0.047773700182343004
+              ],
+              [
+                -0.02017163434753661,
+                -0.02287895476774361
+              ],
+              [
+                -0.026448943294546355,
+                -0.07057744271625407
+              ],
+              [
+                -0.0026325273737251667,
+                -0.0008585801758877058
+              ],
+              [
+                0.04118459426512549,
+                -0.5549168599173333
+              ],
+              [
+                0.05857787486391864,
+                1.003627037052736
+              ]
+            ]
+          },
+          {
+            "method": "Radau",
+            "nfev": 84188,
+            "njev": 42,
+            "max_full_column_approximation_error": 0.0018827337295550133,
+            "max_slow_coordinate_velocity_error": 0.0007088429676773751,
+            "max_relative_symplectic_transport_drift": 6.731570003642842e-13,
+            "final_full_columns": [
+              [
+                -0.03011780561725218,
+                -0.02879360093626963
+              ],
+              [
+                -0.002654144383415676,
+                -0.002579328664228288
+              ],
+              [
+                -0.04790940748416457,
+                -0.045829721970833015
+              ],
+              [
+                0.0021347714432308896,
+                0.0019195420524472236
+              ],
+              [
+                -0.2657845699682897,
+                -0.9230027044421584
+              ],
+              [
+                1.0554064562248908,
+                1.0107474394421645
+              ],
+              [
+                -0.020121285564807752,
+                -0.047773700183196655
+              ],
+              [
+                -0.02017163434749866,
+                -0.022878954767818715
+              ],
+              [
+                -0.026448943293930167,
+                -0.07057744271761833
+              ],
+              [
+                -0.002632527551007853,
+                -0.0008585800642430468
+              ],
+              [
+                0.04118459427130681,
+                -0.5549168599309495
+              ],
+              [
+                0.058577874850727865,
+                1.0036270370823985
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "k": 20.0,
+        "min_k_over_a": 13.23207107842278,
+        "initial_symplectic_coefficient": -46.96430995653708,
+        "formal_symplectic_coefficient": -47.0,
+        "initial_relative_symplectic_asymptotic_error": 0.0007593626268706604,
+        "max_normalized_embedding_defect": 0.08549637182755818,
+        "method_discrepancy": 4.91344256631703e-10,
+        "max_full_column_approximation_error": 0.004074803232863995,
+        "methods": [
+          {
+            "method": "DOP853",
+            "nfev": 2165,
+            "njev": 0,
+            "max_full_column_approximation_error": 0.004074803232863995,
+            "max_slow_coordinate_velocity_error": 0.0003249097882937311,
+            "max_relative_symplectic_transport_drift": 1.5056798051176822e-12,
+            "final_full_columns": [
+              [
+                -0.09859675628121234,
+                -0.09573164797874704
+              ],
+              [
+                0.013204863217910546,
+                0.015152115221144026
+              ],
+              [
+                -0.16552837508809629,
+                -0.16058048014398432
+              ],
+              [
+                0.00421349901689814,
+                0.0033855340095856807
+              ],
+              [
+                -1.6781690846100168,
+                -10.155607326983832
+              ],
+              [
+                1.018341497396392,
+                1.0043068877116714
+              ],
+              [
+                -0.06377926933753308,
+                -0.164433673039258
+              ],
+              [
+                -0.09608842828498378,
+                -0.0897313909957344
+              ],
+              [
+                -0.0766084460971849,
+                -0.25217288379178915
+              ],
+              [
+                -0.0032434132630720478,
+                0.00015127278992896562
+              ],
+              [
+                0.3320745270185895,
+                -3.9895945074921184
+              ],
+              [
+                0.022121812586101842,
+                1.0038389349220311
+              ]
+            ]
+          },
+          {
+            "method": "Radau",
+            "nfev": 9999,
+            "njev": 9,
+            "max_full_column_approximation_error": 0.004074803232853593,
+            "max_slow_coordinate_velocity_error": 0.000324909787475671,
+            "max_relative_symplectic_transport_drift": 1.5115802786305026e-12,
+            "final_full_columns": [
+              [
+                -0.09859675628121219,
+                -0.09573164797874818
+              ],
+              [
+                0.013204863217911148,
+                0.015152115221142346
+              ],
+              [
+                -0.16552837508809576,
+                -0.16058048014398646
+              ],
+              [
+                0.0042134990156285105,
+                0.0033855340129103537
+              ],
+              [
+                -1.6781690846100228,
+                -10.15560732698382
+              ],
+              [
+                1.0183414973963973,
+                1.0043068877116492
+              ],
+              [
+                -0.06377926933754548,
+                -0.16443367303922543
+              ],
+              [
+                -0.09608842828498589,
+                -0.0897313909957217
+              ],
+              [
+                -0.07660844609720283,
+                -0.2521728837917238
+              ],
+              [
+                -0.0032434130616775174,
+                0.0001512723418147791
+              ],
+              [
+                0.33207452701815726,
+                -3.9895945074909958
+              ],
+              [
+                0.022121812585422274,
+                1.0038389349235213
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "k": 40.0,
+        "min_k_over_a": 26.46414215684556,
+        "initial_symplectic_coefficient": -46.99097358658826,
+        "formal_symplectic_coefficient": -47.0,
+        "initial_relative_symplectic_asymptotic_error": 0.00019205134918593708,
+        "max_normalized_embedding_defect": 0.07340946135950599,
+        "method_discrepancy": 9.964388553713568e-10,
+        "max_full_column_approximation_error": 0.0017945578648372248,
+        "methods": [
+          {
+            "method": "DOP853",
+            "nfev": 8264,
+            "njev": 0,
+            "max_full_column_approximation_error": 0.0017945578648372248,
+            "max_slow_coordinate_velocity_error": 9.57493821895174e-05,
+            "max_relative_symplectic_transport_drift": 1.0572487499711168e-12,
+            "final_full_columns": [
+              [
+                -0.04919209905872389,
+                -0.04849105916896806
+              ],
+              [
+                0.0068436642195632315,
+                0.006804523453539993
+              ],
+              [
+                -0.08253991280728737,
+                -0.08143769527110858
+              ],
+              [
+                0.0020633975767766965,
+                0.001937565065576725
+              ],
+              [
+                -0.8390387554095708,
+                -5.076363738569085
+              ],
+              [
+                1.0183757874189772,
+                1.0040566628755516
+              ],
+              [
+                -0.03312703749422125,
+                -0.07750313221020061
+              ],
+              [
+                -0.05041242118627572,
+                -0.03962474966639243
+              ],
+              [
+                -0.04147481097282948,
+                -0.11472192998503508
+              ],
+              [
+                -0.0016356032557069873,
+                0.00025992863288040394
+              ],
+              [
+                0.16463880693305946,
+                -1.9863904118500493
+              ],
+              [
+                0.022031638458255554,
+                1.003687902942886
+              ]
+            ]
+          },
+          {
+            "method": "Radau",
+            "nfev": 25616,
+            "njev": 18,
+            "max_full_column_approximation_error": 0.0017945578647086255,
+            "max_slow_coordinate_velocity_error": 9.574938143528819e-05,
+            "max_relative_symplectic_transport_drift": 1.0596680834950782e-12,
+            "final_full_columns": [
+              [
+                -0.04919209905872393,
+                -0.048491059168968016
+              ],
+              [
+                0.00684366421956345,
+                0.006804523453540112
+              ],
+              [
+                -0.08253991280728733,
+                -0.08143769527110827
+              ],
+              [
+                0.0020633975783433205,
+                0.0019375650619581982
+              ],
+              [
+                -0.8390387554095741,
+                -5.0763637385690945
+              ],
+              [
+                1.018375787418972,
+                1.0040566628755598
+              ],
+              [
+                -0.0331270374942083,
+                -0.07750313221022956
+              ],
+              [
+                -0.050412421186279414,
+                -0.03962474966639288
+              ],
+              [
+                -0.04147481097280624,
+                -0.11472192998508417
+              ],
+              [
+                -0.0016356033988341669,
+                0.0002599288575817324
+              ],
+              [
+                0.16463880693358135,
+                -1.9863904118512619
+              ],
+              [
+                0.022031638458297774,
+                1.0036879029430104
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "k": 80.0,
+        "min_k_over_a": 52.92828431369112,
+        "initial_symplectic_coefficient": -46.99773690279651,
+        "formal_symplectic_coefficient": -47.0,
+        "initial_relative_symplectic_asymptotic_error": 4.815100432955191e-05,
+        "max_normalized_embedding_defect": 0.05449246992352313,
+        "method_discrepancy": 2.5126494063659214e-09,
+        "max_full_column_approximation_error": 0.0006742438465539536,
+        "methods": [
+          {
+            "method": "DOP853",
+            "nfev": 28577,
+            "njev": 0,
+            "max_full_column_approximation_error": 0.0006742438465539536,
+            "max_slow_coordinate_velocity_error": 2.7216343605361064e-05,
+            "max_relative_symplectic_transport_drift": 9.488470091344e-13,
+            "final_full_columns": [
+              [
+                -0.024602649655996785,
+                -0.02424020410430544
+              ],
+              [
+                0.0034160250187653665,
+                0.003392968671633455
+              ],
+              [
+                -0.04128847304503751,
+                -0.040681329857055075
+              ],
+              [
+                0.0010261910603422443,
+                0.0009995878628809348
+              ],
+              [
+                -0.4194975734581478,
+                -2.538062277614296
+              ],
+              [
+                1.0183852653275918,
+                1.0039943320640246
+              ],
+              [
+                -0.01645944854939129,
+                -0.0391726931806036
+              ],
+              [
+                -0.02496231944418409,
+                -0.0203850407412072
+              ],
+              [
+                -0.020467461777699113,
+                -0.05829254332671145
+              ],
+              [
+                -0.0008255404805349409,
+                0.00016642300124947184
+              ],
+              [
+                0.08243686496628941,
+                -0.9933289694373736
+              ],
+              [
+                0.02200290792419086,
+                1.003673467312254
+              ]
+            ]
+          },
+          {
+            "method": "Radau",
+            "nfev": 67240,
+            "njev": 26,
+            "max_full_column_approximation_error": 0.0006742438465201403,
+            "max_slow_coordinate_velocity_error": 2.7216342728616305e-05,
+            "max_relative_symplectic_transport_drift": 9.412876798710602e-13,
+            "final_full_columns": [
+              [
+                -0.024602649655996806,
+                -0.024240204104305604
+              ],
+              [
+                0.0034160250187653574,
+                0.0033929686716335106
+              ],
+              [
+                -0.04128847304503752,
+                -0.04068132985705518
+              ],
+              [
+                0.001026191059251508,
+                0.0009995878651954196
+              ],
+              [
+                -0.41949757345814287,
+                -2.5380622776143174
+              ],
+              [
+                1.01838526532759,
+                1.003994332064026
+              ],
+              [
+                -0.01645944854941164,
+                -0.039172693180587526
+              ],
+              [
+                -0.024962319444181248,
+                -0.02038504074121123
+              ],
+              [
+                -0.02046746177771774,
+                -0.05829254332669272
+              ],
+              [
+                -0.0008255405073169455,
+                0.0001664230421766197
+              ],
+              [
+                0.08243686496592789,
+                -0.993328969436604
+              ],
+              [
+                0.022002907924559455,
+                1.0036734673114958
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "k": 20.0,
+        "min_k_over_a": 15.117226018459526,
+        "initial_symplectic_coefficient": -190.98060980575318,
+        "formal_symplectic_coefficient": -191.0,
+        "initial_relative_symplectic_asymptotic_error": 0.00010151934160641059,
+        "max_normalized_embedding_defect": 0.02278800738550715,
+        "method_discrepancy": 1.0711908972187113e-08,
+        "max_full_column_approximation_error": 0.0011067694243909677,
+        "methods": [
+          {
+            "method": "DOP853",
+            "nfev": 2123,
+            "njev": 0,
+            "max_full_column_approximation_error": 0.0011067694243909677,
+            "max_slow_coordinate_velocity_error": 4.9212629094287706e-05,
+            "max_relative_symplectic_transport_drift": 1.0652526259590113e-12,
+            "final_full_columns": [
+              [
+                -0.09771870914361494,
+                -0.09565305299079296
+              ],
+              [
+                0.026931133543238096,
+                0.02732840834675527
+              ],
+              [
+                -0.1642811809655007,
+                -0.16111309197955964
+              ],
+              [
+                0.0013544276148762346,
+                0.0012010935580696184
+              ],
+              [
+                -4.891675465734092,
+                -35.018907244019715
+              ],
+              [
+                1.0232927757566928,
+                1.0063873107354435
+              ],
+              [
+                -0.06290075003979438,
+                -0.16819194077136657
+              ],
+              [
+                -0.10106165907499673,
+                -0.08375254139305825
+              ],
+              [
+                -0.07568164006111198,
+                -0.26102755474771583
+              ],
+              [
+                -0.0007770603483252264,
+                0.0004129336838078108
+              ],
+              [
+                -0.3739759884492521,
+                -11.00382852889943
+              ],
+              [
+                0.038205078846558424,
+                1.0149304181083634
+              ]
+            ]
+          },
+          {
+            "method": "Radau",
+            "nfev": 8004,
+            "njev": 9,
+            "max_full_column_approximation_error": 0.0011067694243558177,
+            "max_slow_coordinate_velocity_error": 4.921262965345354e-05,
+            "max_relative_symplectic_transport_drift": 1.0661455451760769e-12,
+            "final_full_columns": [
+              [
+                -0.09771870914361483,
+                -0.09565305299079287
+              ],
+              [
+                0.02693113354323754,
+                0.02732840834675617
+              ],
+              [
+                -0.16428118096550076,
+                -0.16111309197956
+              ],
+              [
+                0.0013544276235488409,
+                0.0012010935415553293
+              ],
+              [
+                -4.8916754657341,
+                -35.01890724401962
+              ],
+              [
+                1.0232927757566814,
+                1.006387310735471
+              ],
+              [
+                -0.06290075003981221,
+                -0.1681919407712746
+              ],
+              [
+                -0.10106165907502798,
+                -0.08375254139298702
+              ],
+              [
+                -0.07568164006114825,
+                -0.261027554747493
+              ],
+              [
+                -0.0007770597699093677,
+                0.0004129324364638538
+              ],
+              [
+                -0.373975988448556,
+                -11.003828528900712
+              ],
+              [
+                0.03820507884576672,
+                1.014930418110071
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "k": 40.0,
+        "min_k_over_a": 30.234452036919052,
+        "initial_symplectic_coefficient": -190.99513668932835,
+        "formal_symplectic_coefficient": -191.0,
+        "initial_relative_symplectic_asymptotic_error": 2.54623595374463e-05,
+        "max_normalized_embedding_defect": 0.02190028527040338,
+        "method_discrepancy": 9.219662894810422e-10,
+        "max_full_column_approximation_error": 0.0005399258321546721,
+        "methods": [
+          {
+            "method": "DOP853",
+            "nfev": 8312,
+            "njev": 0,
+            "max_full_column_approximation_error": 0.0005399258321546721,
+            "max_slow_coordinate_velocity_error": 1.1475060957681e-05,
+            "max_relative_symplectic_transport_drift": 2.025284371386885e-13,
+            "final_full_columns": [
+              [
+                -0.04889445233088583,
+                -0.04791887516662953
+              ],
+              [
+                0.013463102848938114,
+                0.013436562553538749
+              ],
+              [
+                -0.08222711684474107,
+                -0.08056355526196177
+              ],
+              [
+                0.0006731415322558857,
+                0.0006455963981506305
+              ],
+              [
+                -2.4456951445199,
+                -17.507778036509386
+              ],
+              [
+                1.0232881332632882,
+                1.0063568207782865
+              ],
+              [
+                -0.03232046568544775,
+                -0.07876545568935185
+              ],
+              [
+                -0.05214990905374645,
+                -0.038546763889194216
+              ],
+              [
+                -0.039967136356460195,
+                -0.11867723573221764
+              ],
+              [
+                -0.00039218015008969377,
+                0.0002423028506213781
+              ],
+              [
+                -0.18630356551538263,
+                -5.501174417288867
+              ],
+              [
+                0.03819368446248654,
+                1.0148316596258768
+              ]
+            ]
+          },
+          {
+            "method": "Radau",
+            "nfev": 20251,
+            "njev": 16,
+            "max_full_column_approximation_error": 0.000539925832149289,
+            "max_slow_coordinate_velocity_error": 1.1475061077429892e-05,
+            "max_relative_symplectic_transport_drift": 1.9955226613003768e-13,
+            "final_full_columns": [
+              [
+                -0.04889445233088584,
+                -0.04791887516663003
+              ],
+              [
+                0.013463102848938169,
+                0.01343656255353856
+              ],
+              [
+                -0.08222711684474106,
+                -0.08056355526196299
+              ],
+              [
+                0.0006731415333009235,
+                0.0006455963960126322
+              ],
+              [
+                -2.4456951445199264,
+                -17.507778036509357
+              ],
+              [
+                1.0232881332632877,
+                1.0063568207782856
+              ],
+              [
+                -0.032320465685455095,
+                -0.07876545568935536
+              ],
+              [
+                -0.052149909053750755,
+                -0.038546763889191926
+              ],
+              [
+                -0.03996713635646767,
+                -0.11867723573221674
+              ],
+              [
+                -0.00039217988403935007,
+                0.00024230231360743024
+              ],
+              [
+                -0.1863035655153099,
+                -5.501174417289031
+              ],
+              [
+                0.03819368446229987,
+                1.0148316596262454
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "k": 80.0,
+        "min_k_over_a": 60.468904073838104,
+        "initial_symplectic_coefficient": -190.9987831872039,
+        "formal_symplectic_coefficient": -191.0,
+        "initial_relative_symplectic_asymptotic_error": 6.3707476234955595e-06,
+        "max_normalized_embedding_defect": 0.02017078237086165,
+        "method_discrepancy": 2.0658748444340174e-09,
+        "max_full_column_approximation_error": 0.00025043747580542935,
+        "methods": [
+          {
+            "method": "DOP853",
+            "nfev": 25115,
+            "njev": 0,
+            "max_full_column_approximation_error": 0.00025043747580102873,
+            "max_slow_coordinate_velocity_error": 3.2959129029175074e-06,
+            "max_relative_symplectic_transport_drift": 1.5297226928308915e-13,
+            "final_full_columns": [
+              [
+                -0.024439552074458554,
+                -0.024039939992455638
+              ],
+              [
+                0.0067530526330719905,
+                0.0066443695511224634
+              ],
+              [
+                -0.041094566303185136,
+                -0.040432940151959196
+              ],
+              [
+                0.0003360560813482579,
+                0.0003284417737035679
+              ],
+              [
+                -1.2228222442362164,
+                -8.753727281574191
+              ],
+              [
+                1.0232869102631492,
+                1.0063498666526633
+              ],
+              [
+                -0.016206054356069935,
+                -0.03918800350809537
+              ],
+              [
+                -0.026146583756866716,
+                -0.019178610020072196
+              ],
+              [
+                -0.020102960878194066,
+                -0.05882621555330468
+              ],
+              [
+                -0.0001966770522459236,
+                0.00012589627198704274
+              ],
+              [
+                -0.0932629707564156,
+                -2.7494167212815075
+              ],
+              [
+                0.038190873766840244,
+                1.0148102758654032
+              ]
+            ]
+          },
+          {
+            "method": "Radau",
+            "nfev": 53705,
+            "njev": 19,
+            "max_full_column_approximation_error": 0.00025043747580542935,
+            "max_slow_coordinate_velocity_error": 3.295913128499697e-06,
+            "max_relative_symplectic_transport_drift": 1.5520435492437938e-13,
+            "final_full_columns": [
+              [
+                -0.024439552074458405,
+                -0.024039939992455486
+              ],
+              [
+                0.0067530526330720035,
+                0.006644369551122434
+              ],
+              [
+                -0.04109456630318487,
+                -0.04043294015195898
+              ],
+              [
+                0.0003360560819909784,
+                0.00032844177240808395
+              ],
+              [
+                -1.2228222442362193,
+                -8.753727281574166
+              ],
+              [
+                1.0232869102631454,
+                1.0063498666526633
+              ],
+              [
+                -0.016206054356075236,
+                -0.03918800350809864
+              ],
+              [
+                -0.0261465837568506,
+                -0.01917861002007185
+              ],
+              [
+                -0.020102960878206188,
+                -0.058826215553310135
+              ],
+              [
+                -0.00019667754465942702,
+                0.00012589726911977413
+              ],
+              [
+                -0.09326297075636884,
+                -2.7494167212815896
+              ],
+              [
+                0.038190873766986905,
+                1.0148102758651047
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "backgrounds": [
+      {
+        "eta": 1.0,
+        "method_discrepancy": 4.0357386129746215e-12,
+        "min_a": 1.0,
+        "min_H": 0.5884208072867109,
+        "min_rho_m": 0.02084114012758788
+      },
+      {
+        "eta": 0.25,
+        "method_discrepancy": 1.870270731302682e-12,
+        "min_a": 1.0,
+        "min_H": 0.3369382596021829,
+        "min_rho_m": 0.057957240111754876
+      },
+      {
+        "eta": 0.0625,
+        "method_discrepancy": 2.333706912117556e-12,
+        "min_a": 1.0,
+        "min_H": 0.2346463669948292,
+        "min_rho_m": 0.0863697401687964
+      }
+    ]
+  },
+  "trajectory": {
+    "file": "columns.npy",
+    "shape": [
+      3,
+      3,
+      3,
+      101,
+      12,
+      2
+    ],
+    "etas": [
+      1.0,
+      0.25,
+      0.0625
+    ],
+    "ks": [
+      20.0,
+      40.0,
+      80.0
+    ],
+    "runs": [
+      "DOP853",
+      "Radau",
+      "TRUNCATED_SLOW_REFERENCE"
+    ],
+    "grid": [
+      0.0,
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.12,
+      0.13,
+      0.14,
+      0.15,
+      0.16,
+      0.17,
+      0.18,
+      0.19,
+      0.2,
+      0.21,
+      0.22,
+      0.23,
+      0.24,
+      0.25,
+      0.26,
+      0.27,
+      0.28,
+      0.29,
+      0.3,
+      0.31,
+      0.32,
+      0.33,
+      0.34,
+      0.35000000000000003,
+      0.36,
+      0.37,
+      0.38,
+      0.39,
+      0.4,
+      0.41000000000000003,
+      0.42,
+      0.43,
+      0.44,
+      0.45,
+      0.46,
+      0.47000000000000003,
+      0.48,
+      0.49,
+      0.5,
+      0.51,
+      0.52,
+      0.53,
+      0.54,
+      0.55,
+      0.56,
+      0.5700000000000001,
+      0.58,
+      0.59,
+      0.6,
+      0.61,
+      0.62,
+      0.63,
+      0.64,
+      0.65,
+      0.66,
+      0.67,
+      0.68,
+      0.6900000000000001,
+      0.7000000000000001,
+      0.71,
+      0.72,
+      0.73,
+      0.74,
+      0.75,
+      0.76,
+      0.77,
+      0.78,
+      0.79,
+      0.8,
+      0.81,
+      0.8200000000000001,
+      0.8300000000000001,
+      0.84,
+      0.85,
+      0.86,
+      0.87,
+      0.88,
+      0.89,
+      0.9,
+      0.91,
+      0.92,
+      0.93,
+      0.9400000000000001,
+      0.9500000000000001,
+      0.96,
+      0.97,
+      0.98,
+      0.99,
+      1.0
+    ],
+    "axes": [
+      "eta",
+      "k",
+      "run",
+      "sample",
+      "phase_component",
+      "initial_column"
+    ]
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "sympy": "1.14.0",
+    "scipy": "1.17.1"
+  },
+  "status": "CONDITIONAL_FINITE_K_DIAGNOSTICS_PHYSICAL_WINDOW_OPEN",
+  "finite_k_symplectic_plane_negative": true,
+  "physical_EFT_cutoff": "NOT_DERIVED",
+  "physical_validity_window_verified": false,
+  "stationary_quantum_ghost_verified": false,
+  "uniform_eta_endpoint_verified": false,
+  "full_PDE_verified": false,
+  "healthy_continuous_GR_limit_verified": false,
+  "all_action_no_go": false,
+  "physics_pass": false,
+  "canonical_Test1_pass": false,
+  "canonical_Test2_pass": false,
+  "canonical_Test3_pass": false,
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "gate_effect": "NONE",
+  "MAT_001": "BLOCKED",
+  "UVIR_003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED"
+}

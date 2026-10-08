@@ -1,5 +1,26 @@
 # ITSM Changelog & Archive History
 
+## Conditional G3 research checkpoint (2026-10-08)
+
+- Added the [checkpoint/evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md),
+  exact-byte manifest and worktree/index/committed-blob integrity checker.
+- Archived the G3 scalar/density/finite-k chain, fixed-metric frame interaction
+  probe, constrained cubic-vertex obstruction, source-integrity recovery and
+  supplemental cross-check, tilted homogeneous candidates, finite-k scalar
+  operator and separate classical cusp-amplitude probe.
+- G3T has 268/268 and G3K 744/744 final local checks. G3K keeps the
+  w^2=1/5 shift rank boundary, negative dust-clock kinetic directions and
+  positive instantaneous real exponents; no physical stability claim follows.
+- Preserved the original G3 112/113, G3A 14/26 and G3T 265/266 failed receipts,
+  versioned sources and bounded corrections. No old physics result is relabelled.
+- Refreshed research navigation, dashboard and append-only worklog. Protected
+  SHA-pinned evidence from Git line-ending conversion, including exact pinned
+  bytes for four inherited tracked scalar/background inputs.
+- Commit/push is operator-authorized as a research checkpoint. Canonical
+  Tests 1-3, MAT/UVIR, physical cutoff/healthy GR and publication holds remain
+  unchanged; Rule-9 review is DEFERRED, not cleared. No site deployment,
+  journal upload, provider dispatch or vault mutation is performed.
+
 ## Conditional Test 1-3 continuations and provenance (2026-09-30)
 
 - The [R4C1-T2P3 coupled linear limit](Theory/Gates/RES-001/RES001_R4C1_COUPLED_LINEAR_LIMIT_REPORT_2026-09-29.md)

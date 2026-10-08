@@ -1,0 +1,5804 @@
+{
+  "schema": "r4c1-g3z-v1",
+  "validation": "PASS_LOCAL_CHECKS",
+  "passed": 19,
+  "total": 19,
+  "checks": [
+    {
+      "name": "single_quartic_force_block",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "scaled_divergence_cancellation_0_4_2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "scaled_divergence_cancellation_1_4_2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "scaled_divergence_cancellation_2_4_2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "scaled_divergence_cancellation_3_4_2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "scaled_divergence_cancellation_4_0_2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "scaled_divergence_cancellation_4_1_2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "scaled_divergence_cancellation_4_2_2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "scaled_divergence_cancellation_4_3_2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "scaled_divergence_cancellation_4_4_1",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "scaled_divergence_cancellation_4_4_2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "propagating_limit_matches_G3S",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "propagating_limit_lambda_independent",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "inner_degree_recorded",
+      "passed": true,
+      "value": 2,
+      "criterion": "degree two or report unresolved"
+    },
+    {
+      "name": "inner_lambda2_comparator",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "reject_fast_denominator_subleading_omission",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "independent_exact_rational_Schur_limit",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "all_sampled_quadratics_regular",
+      "passed": true,
+      "value": 11.0,
+      "criterion": "nonzero leading coefficient; exact eta-domain stated"
+    },
+    {
+      "name": "recomputed_full_pencil_matches_pinned_roots",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "normalized <1e-8"
+    }
+  ],
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_CONTRACT_2026-09-30.md": "47723c96936643b6be19d22e00a4f98bc3f4208cb409e61c255e041b7ce725e5",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/summary.json": "550caae54b03b490a5388ecd363ad0f9ff0d8d4891021d2eb1c366871d54378a",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_scalar.py": "eb5d8c41938d346a294aa03f713ea10655b939234dab7935f4a0ee9f774553f9"
+  },
+  "transitive_source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_CONTRACT_2026-09-30.md": "92fc34dd19f2bc5de077703b0e7a8b209c14fdf1ae66674bc1f8176d8e4be1c5",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_REPORT_2026-09-30.md": "1b9fbc4185b61d1e37d7865baa811994e235523eb9ecc22432c733b4bc38aa04",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740"
+  },
+  "script_sha256": "db77ef15784eb73d8b9eefc6e2f07d39b330b5061c0248189138be9cc2441bdd",
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "sympy": "1.14.0"
+  },
+  "numerical": {
+    "records": [
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.04385867768595053,
+          -1.0355244225348825,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            1.0762748656473586,
+            0.0
+          ],
+          [
+            -0.04075044311247609,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.3580438602144519,
+            "matched_roots": [
+              [
+                1.0527434875389396,
+                0.0
+              ],
+              [
+                0.33188386305941614,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.088533557645661,
+            "matched_roots": [
+              [
+                1.0718639957262623,
+                0.0
+              ],
+              [
+                0.051390896237569546,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.022082854827954752,
+            "matched_roots": [
+              [
+                1.075234595432748,
+                0.0
+              ],
+              [
+                -0.0177677021650937,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.005517588050493898,
+            "matched_roots": [
+              [
+                1.0760183988818433,
+                0.0
+              ],
+              [
+                -0.03500801090401246,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.17288269266448997,
+          -0.8378194873173943,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            1.009136874513155,
+            0.0
+          ],
+          [
+            -0.1713173871957607,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.04026799555766049,
+            "matched_roots": [
+              [
+                1.0284935042600938,
+                0.0
+              ],
+              [
+                -0.21848399053997009,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.01023204697751268,
+            "matched_roots": [
+              [
+                1.0141647571946895,
+                0.0
+              ],
+              [
+                -0.18330236172712513,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0025689808532472695,
+            "matched_roots": [
+              [
+                1.0104064203230336,
+                0.0
+              ],
+              [
+                -0.17432647913654223,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.00064294170284564,
+            "matched_roots": [
+              [
+                1.0094550599897514,
+                0.0
+              ],
+              [
+                -0.17207047599125705,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 1.0,
+        "normalized_coefficients": [
+          0.10629677009982177,
+          -0.6419136079486261,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.32095680397431303,
+            0.05730183315057363
+          ],
+          [
+            0.32095680397431303,
+            -0.05730183315057363
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.13483221561658656,
+            "matched_roots": [
+              [
+                0.15159620560109463,
+                0.0
+              ],
+              [
+                0.4896526827595889,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0675470535517062,
+            "matched_roots": [
+              [
+                0.25211493261577633,
+                0.0
+              ],
+              [
+                0.38967853815320513,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.016267204193225544,
+            "matched_roots": [
+              [
+                0.3209432664750159,
+                0.03573100645587675
+              ],
+              [
+                0.3209432664750159,
+                -0.03573100645587675
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0034395388914872857,
+            "matched_roots": [
+              [
+                0.32095351271138073,
+                0.05274089620344803
+              ],
+              [
+                0.32095351271138073,
+                -0.05274089620344803
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 2.0,
+        "normalized_coefficients": [
+          0.1323933743429232,
+          -0.315773545504717,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.15788677275235846,
+            0.32781876293581536
+          ],
+          [
+            0.15788677275235846,
+            -0.32781876293581536
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.007912891151605778,
+            "matched_roots": [
+              [
+                0.16633160408534092,
+                0.32109912365839505
+              ],
+              [
+                0.16633160408534092,
+                -0.32109912365839505
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.001971003270435858,
+            "matched_roots": [
+              [
+                0.16001007443951007,
+                0.3261701723608325
+              ],
+              [
+                0.16001007443951007,
+                -0.3261701723608325
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0004923121526960012,
+            "matched_roots": [
+              [
+                0.15841834775519803,
+                0.3274085610982734
+              ],
+              [
+                0.15841834775519803,
+                -0.3274085610982734
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.00012305081051046672,
+            "matched_roots": [
+              [
+                0.15801971325086217,
+                0.327716333916519
+              ],
+              [
+                0.15801971325086217,
+                -0.327716333916519
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 3.0,
+        "normalized_coefficients": [
+          0.021060419314769922,
+          -0.20192911276475886,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.10096455638237944,
+            0.10424287826647563
+          ],
+          [
+            0.10096455638237944,
+            -0.10424287826647563
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.0014668091340616397,
+            "matched_roots": [
+              [
+                0.10264423123344951,
+                0.10424439146498425
+              ],
+              [
+                0.10264423123344951,
+                -0.10424439146498425
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.00036698321585253174,
+            "matched_roots": [
+              [
+                0.10138479134377679,
+                0.10424505231688047
+              ],
+              [
+                0.10138479134377679,
+                -0.10424505231688047
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 9.176350475501656e-05,
+            "matched_roots": [
+              [
+                0.10106963475284261,
+                0.10424353389509745
+              ],
+              [
+                0.10106963475284261,
+                -0.10424353389509745
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 2.2941984680207146e-05,
+            "matched_roots": [
+              [
+                0.10099082719973457,
+                0.10424304917930668
+              ],
+              [
+                0.10099082719973457,
+                -0.10424304917930668
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 4.0,
+        "normalized_coefficients": [
+          0.01760266333160473,
+          -0.15859423808048342,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.0792971190402417,
+            0.10637025074485096
+          ],
+          [
+            0.0792971190402417,
+            -0.10637025074485096
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.0009955735043762073,
+            "matched_roots": [
+              [
+                0.08015298216700412,
+                0.10563600405711371
+              ],
+              [
+                0.08015298216700412,
+                -0.10563600405711371
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0002490706606879423,
+            "matched_roots": [
+              [
+                0.07951168734754749,
+                0.10618708430295026
+              ],
+              [
+                0.07951168734754749,
+                -0.10618708430295026
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 6.22789648603172e-05,
+            "matched_roots": [
+              [
+                0.07935079892748617,
+                0.10632448373435395
+              ],
+              [
+                0.07935079892748617,
+                -0.10632448373435395
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 1.5570450700589424e-05,
+            "matched_roots": [
+              [
+                0.07931054137759017,
+                0.10635881052843846
+              ],
+              [
+                0.07931054137759017,
+                -0.10635881052843846
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.04385867768595053,
+          -1.0355244225348825,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            1.0762748656473586,
+            0.0
+          ],
+          [
+            -0.04075044311247609,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.3580438602144519,
+            "matched_roots": [
+              [
+                1.0527434875389396,
+                0.0
+              ],
+              [
+                0.33188386305941614,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.088533557645661,
+            "matched_roots": [
+              [
+                1.0718639957262623,
+                0.0
+              ],
+              [
+                0.051390896237569546,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.022082854827954752,
+            "matched_roots": [
+              [
+                1.075234595432748,
+                0.0
+              ],
+              [
+                -0.0177677021650937,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.005517588050493898,
+            "matched_roots": [
+              [
+                1.0760183988818433,
+                0.0
+              ],
+              [
+                -0.03500801090401246,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.17288269266460005,
+          -0.8378194873169896,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            1.0091368745129023,
+            0.0
+          ],
+          [
+            -0.1713173871959127,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.04026799555783768,
+            "matched_roots": [
+              [
+                1.02849350425979,
+                0.0
+              ],
+              [
+                -0.21848399054033574,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.010232046977528818,
+            "matched_roots": [
+              [
+                1.014164757194419,
+                0.0
+              ],
+              [
+                -0.18330236172729758,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0025689808531810378,
+            "matched_roots": [
+              [
+                1.0104064203227003,
+                0.0
+              ],
+              [
+                -0.17432647913661703,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0006429417026972432,
+            "matched_roots": [
+              [
+                1.009455059989291,
+                0.0
+              ],
+              [
+                -0.17207047599123532,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 1.0,
+        "normalized_coefficients": [
+          0.10629677009988647,
+          -0.6419136079490525,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.3209568039745262,
+            0.05730183314994396
+          ],
+          [
+            0.3209568039745262,
+            -0.05730183314994396
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.13483221561657419,
+            "matched_roots": [
+              [
+                0.4896526827601073,
+                0.0
+              ],
+              [
+                0.151596205601098,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.06754705355140347,
+            "matched_roots": [
+              [
+                0.38967853815352166,
+                0.0
+              ],
+              [
+                0.25211493261597895,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.016267204193006996,
+            "matched_roots": [
+              [
+                0.32094326647521954,
+                0.03573100645553527
+              ],
+              [
+                0.32094326647521954,
+                -0.03573100645553527
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.003439538892693333,
+            "matched_roots": [
+              [
+                0.3209535127115206,
+                0.052740896201218815
+              ],
+              [
+                0.3209535127115206,
+                -0.052740896201218815
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 2.0,
+        "normalized_coefficients": [
+          0.13239337434249981,
+          -0.3157735455046662,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.1578867727523331,
+            0.3278187629351818
+          ],
+          [
+            0.1578867727523331,
+            -0.3278187629351818
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.007912891151579964,
+            "matched_roots": [
+              [
+                0.16633160408527767,
+                0.3210991236577778
+              ],
+              [
+                0.16633160408527767,
+                -0.3210991236577778
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.001971003270419216,
+            "matched_roots": [
+              [
+                0.16001007443946236,
+                0.32617017236020907
+              ],
+              [
+                0.16001007443946236,
+                -0.32617017236020907
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0004923121526838062,
+            "matched_roots": [
+              [
+                0.15841834775518188,
+                0.32740856109767946
+              ],
+              [
+                0.15841834775518188,
+                -0.32740856109767946
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.00012305081052116113,
+            "matched_roots": [
+              [
+                0.15801971325080436,
+                0.32771633391581956
+              ],
+              [
+                0.15801971325080436,
+                -0.32771633391581956
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 3.0,
+        "normalized_coefficients": [
+          0.02106041931462018,
+          -0.20192911276532133,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.10096455638266066,
+            0.10424287826548495
+          ],
+          [
+            0.10096455638266066,
+            -0.10424287826548495
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.0014668091341028735,
+            "matched_roots": [
+              [
+                0.10264423123377711,
+                0.10424439146408379
+              ],
+              [
+                0.10264423123377711,
+                -0.10424439146408379
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.00036698321585655695,
+            "matched_roots": [
+              [
+                0.10138479134406223,
+                0.1042450523159287
+              ],
+              [
+                0.10138479134406223,
+                -0.1042450523159287
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 9.176350477076916e-05,
+            "matched_roots": [
+              [
+                0.10106963475314201,
+                0.1042435338940766
+              ],
+              [
+                0.10106963475314201,
+                -0.1042435338940766
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 2.294198472187448e-05,
+            "matched_roots": [
+              [
+                0.10099082720006755,
+                0.10424304917769182
+              ],
+              [
+                0.10099082720006755,
+                -0.10424304917769182
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 4.0,
+        "normalized_coefficients": [
+          0.01760266333138773,
+          -0.15859423808048226,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.07929711904024114,
+            0.10637025074383138
+          ],
+          [
+            0.07929711904024114,
+            -0.10637025074383138
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.0009955735043678192,
+            "matched_roots": [
+              [
+                0.08015298216700587,
+                0.10563600405611266
+              ],
+              [
+                0.08015298216700587,
+                -0.10563600405611266
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0002490706606917274,
+            "matched_roots": [
+              [
+                0.07951168734754954,
+                0.10618708430192746
+              ],
+              [
+                0.07951168734754954,
+                -0.10618708430192746
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 6.227896483964831e-05,
+            "matched_roots": [
+              [
+                0.07935079892748756,
+                0.10632448373337282
+              ],
+              [
+                0.07935079892748756,
+                -0.10632448373337282
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 1.557045081201622e-05,
+            "matched_roots": [
+              [
+                0.07931054137760832,
+                0.10635881052724629
+              ],
+              [
+                0.07931054137760832,
+                -0.10635881052724629
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.04608466712879133,
+          -0.5039604090889391,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.5830069264432673,
+            0.0
+          ],
+          [
+            -0.07904651735432829,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.16351590398424837,
+            "matched_roots": [
+              [
+                0.5909657269449229,
+                0.0
+              ],
+              [
+                0.09739474937191962,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.04147012845311011,
+            "matched_roots": [
+              [
+                0.5845796047580472,
+                0.0
+              ],
+              [
+                -0.03429831967276319,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.010396212092818626,
+            "matched_roots": [
+              [
+                0.5833801759757494,
+                0.0
+              ],
+              [
+                -0.0678285209018954,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.002600739093519345,
+            "matched_roots": [
+              [
+                0.5830990672883697,
+                0.0
+              ],
+              [
+                -0.07624019889291898,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.04147029876304573,
+          -0.42234196022171555,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.504536761353364,
+            0.0
+          ],
+          [
+            -0.08219480113164847,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.05992792863304206,
+            "matched_roots": [
+              [
+                0.5303942855992914,
+                0.0
+              ],
+              [
+                -0.14704849394091504,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.015523587723804287,
+            "matched_roots": [
+              [
+                0.5115612097021339,
+                0.0
+              ],
+              [
+                -0.09899434706126055,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.00391970095127649,
+            "matched_roots": [
+              [
+                0.5063331828100416,
+                0.0
+              ],
+              [
+                -0.08643668112311066,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0009824428140378634,
+            "matched_roots": [
+              [
+                0.5049884850837739,
+                0.0
+              ],
+              [
+                -0.08325799563740939,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 1.0,
+        "normalized_coefficients": [
+          0.048859177644556676,
+          -0.3441071587426554,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.1720535793713277,
+            0.13876866890646072
+          ],
+          [
+            0.1720535793713277,
+            -0.13876866890646072
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.1382845809005571,
+            "matched_roots": [
+              [
+                0.2549663649167066,
+                0.0
+              ],
+              [
+                0.07585601856559708,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.02245080971570588,
+            "matched_roots": [
+              [
+                0.1703991204094093,
+                0.11140527775208077
+              ],
+              [
+                0.1703991204094093,
+                -0.11140527775208077
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.005183802855099535,
+            "matched_roots": [
+              [
+                0.17164036200274552,
+                0.13245253487876799
+              ],
+              [
+                0.17164036200274552,
+                -0.13245253487876799
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0012739846107603472,
+            "matched_roots": [
+              [
+                0.17195030008230594,
+                0.137216513577431
+              ],
+              [
+                0.17195030008230594,
+                -0.137216513577431
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 2.0,
+        "normalized_coefficients": [
+          0.036445953159663605,
+          -0.20924350333967176,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.10462175166983587,
+            0.15968795269900232
+          ],
+          [
+            0.10462175166983587,
+            -0.15968795269900232
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.014726686162269752,
+            "matched_roots": [
+              [
+                0.12195632931631128,
+                0.16235225079251828
+              ],
+              [
+                0.12195632931631128,
+                -0.16235225079251828
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.003725063223145119,
+            "matched_roots": [
+              [
+                0.10897466633292077,
+                0.16054356909740017
+              ],
+              [
+                0.10897466633292077,
+                -0.16054356909740017
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0009342667360648681,
+            "matched_roots": [
+              [
+                0.1057111664988507,
+                0.15991403195187318
+              ],
+              [
+                0.1057111664988507,
+                -0.15991403195187318
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.00023375903941275398,
+            "matched_roots": [
+              [
+                0.10489417923161885,
+                0.15974523922493494
+              ],
+              [
+                0.10489417923161885,
+                -0.15974523922493494
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 3.0,
+        "normalized_coefficients": [
+          0.007668490402130409,
+          -0.16110070658225803,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.080550353291129,
+            0.03435303460838223
+          ],
+          [
+            0.080550353291129,
+            -0.03435303460838223
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.03509804638665,
+            "matched_roots": [
+              [
+                0.09456504842153995,
+                0.0
+              ],
+              [
+                0.06390888438535176,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005188509844090042,
+            "matched_roots": [
+              [
+                0.08021878976256056,
+                0.028719916812031347
+              ],
+              [
+                0.08021878976256056,
+                -0.028719916812031347
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0012157054779054995,
+            "matched_roots": [
+              [
+                0.08046726012177888,
+                0.033033483535129325
+              ],
+              [
+                0.08046726012177888,
+                -0.033033483535129325
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.00029960531939494847,
+            "matched_roots": [
+              [
+                0.08052956733638567,
+                0.034027856536139385
+              ],
+              [
+                0.08052956733638567,
+                -0.034027856536139385
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 4.0,
+        "normalized_coefficients": [
+          0.008357305974363521,
+          -0.12743869046434714,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.06371934523217358,
+            0.06555265835606211
+          ],
+          [
+            0.06371934523217358,
+            -0.06555265835606211
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.005242021409915875,
+            "matched_roots": [
+              [
+                0.06819531984241334,
+                0.06911611409004796
+              ],
+              [
+                0.06819531984241334,
+                -0.06911611409004796
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0013428794310528442,
+            "matched_roots": [
+              [
+                0.06484279704786569,
+                0.06649391601172197
+              ],
+              [
+                0.06484279704786569,
+                -0.06649391601172197
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0003378834493236603,
+            "matched_roots": [
+              [
+                0.0640004872385043,
+                0.06579130473348853
+              ],
+              [
+                0.0640004872385043,
+                -0.06579130473348853
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 8.460847977485715e-05,
+            "matched_roots": [
+              [
+                0.06378964818108071,
+                0.06561253130460049
+              ],
+              [
+                0.06378964818108071,
+                -0.06561253130460049
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.04608466712879133,
+          -0.5039604090889391,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.5830069264432673,
+            0.0
+          ],
+          [
+            -0.07904651735432829,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.16351590398424837,
+            "matched_roots": [
+              [
+                0.5909657269449229,
+                0.0
+              ],
+              [
+                0.09739474937191962,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.04147012845311011,
+            "matched_roots": [
+              [
+                0.5845796047580472,
+                0.0
+              ],
+              [
+                -0.03429831967276319,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.010396212092818626,
+            "matched_roots": [
+              [
+                0.5833801759757494,
+                0.0
+              ],
+              [
+                -0.0678285209018954,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.002600739093519345,
+            "matched_roots": [
+              [
+                0.5830990672883697,
+                0.0
+              ],
+              [
+                -0.07624019889291898,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.041470298762867494,
+          -0.4223419602214148,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.5045367613528016,
+            0.0
+          ],
+          [
+            -0.08219480113138682,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.05992792863305493,
+            "matched_roots": [
+              [
+                0.5303942855987654,
+                0.0
+              ],
+              [
+                -0.14704849394065164,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.01552358772382398,
+            "matched_roots": [
+              [
+                0.5115612097015803,
+                0.0
+              ],
+              [
+                -0.09899434706101615,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.003919700951314716,
+            "matched_roots": [
+              [
+                0.5063331828094899,
+                0.0
+              ],
+              [
+                -0.08643668112288935,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0009824428139359085,
+            "matched_roots": [
+              [
+                0.5049884850831257,
+                0.0
+              ],
+              [
+                -0.08325799563703715,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 1.0,
+        "normalized_coefficients": [
+          0.04885917764449875,
+          -0.34410715874268244,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.17205357937134125,
+            0.1387686689062352
+          ],
+          [
+            0.17205357937134125,
+            -0.1387686689062352
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.1382845809004974,
+            "matched_roots": [
+              [
+                0.2549663649169246,
+                0.0
+              ],
+              [
+                0.0758560185654451,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.022450809715718518,
+            "matched_roots": [
+              [
+                0.1703991204094284,
+                0.1114052777518424
+              ],
+              [
+                0.1703991204094284,
+                -0.1114052777518424
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.005183802855139007,
+            "matched_roots": [
+              [
+                0.1716403620027414,
+                0.132452534878496
+              ],
+              [
+                0.1716403620027414,
+                -0.132452534878496
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0012739846108452458,
+            "matched_roots": [
+              [
+                0.17195030008229356,
+                0.1372165135771035
+              ],
+              [
+                0.17195030008229356,
+                -0.1372165135771035
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 2.0,
+        "normalized_coefficients": [
+          0.03644595316282492,
+          -0.2092435033414527,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.10462175167072632,
+            0.15968795270831732
+          ],
+          [
+            0.10462175167072632,
+            -0.15968795270831732
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.014726686163613804,
+            "matched_roots": [
+              [
+                0.12195632931890985,
+                0.162352250802059
+              ],
+              [
+                0.12195632931890985,
+                -0.162352250802059
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0037250632234741396,
+            "matched_roots": [
+              [
+                0.10897466633422102,
+                0.16054356910682183
+              ],
+              [
+                0.10897466633422102,
+                -0.16054356910682183
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0009342667361712564,
+            "matched_roots": [
+              [
+                0.10571116649987693,
+                0.15991403196119555
+              ],
+              [
+                0.10571116649987693,
+                -0.15991403196119555
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0002337590394723127,
+            "matched_roots": [
+              [
+                0.10489417923257875,
+                0.15974523923427378
+              ],
+              [
+                0.10489417923257875,
+                -0.15974523923427378
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 3.0,
+        "normalized_coefficients": [
+          0.007668490402428364,
+          -0.16110070658185138,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.08055035329092569,
+            0.03435303461319571
+          ],
+          [
+            0.08055035329092569,
+            -0.03435303461319571
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.035098046386510005,
+            "matched_roots": [
+              [
+                0.09456504841113644,
+                0.0
+              ],
+              [
+                0.0639088843952972,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005188509843357285,
+            "matched_roots": [
+              [
+                0.08021878976236353,
+                0.028719916817633914
+              ],
+              [
+                0.08021878976236353,
+                -0.028719916817633914
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0012157054774753762,
+            "matched_roots": [
+              [
+                0.08046726012153793,
+                0.033033483540411815
+              ],
+              [
+                0.08046726012153793,
+                -0.033033483540411815
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0002996053189168627,
+            "matched_roots": [
+              [
+                0.08052956733613115,
+                0.034027856541476637
+              ],
+              [
+                0.08052956733613115,
+                -0.034027856541476637
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 4.0,
+        "normalized_coefficients": [
+          0.008357305974363585,
+          -0.12743869046383027,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.06371934523191514,
+            0.06555265835631381
+          ],
+          [
+            0.06371934523191514,
+            -0.06555265835631381
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.005242021409934324,
+            "matched_roots": [
+              [
+                0.06819531984217352,
+                0.0691161140903086
+              ],
+              [
+                0.06819531984217352,
+                -0.0691161140903086
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0013428794310824444,
+            "matched_roots": [
+              [
+                0.06484279704761871,
+                0.0664939160120103
+              ],
+              [
+                0.06484279704761871,
+                -0.0664939160120103
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0003378834493201436,
+            "matched_roots": [
+              [
+                0.06400048723818558,
+                0.0657913047338053
+              ],
+              [
+                0.06400048723818558,
+                -0.0657913047338053
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 8.460847998506615e-05,
+            "matched_roots": [
+              [
+                0.06378964818096307,
+                0.0656125313050407
+              ],
+              [
+                0.06378964818096307,
+                -0.0656125313050407
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.048797419095730724,
+          -0.3328986119055304,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.44304068424913934,
+            0.0
+          ],
+          [
+            -0.11014207234360897,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.10161878787418638,
+            "matched_roots": [
+              [
+                0.46869289398673647,
+                0.0
+              ],
+              [
+                0.0026692194160858984,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0264383512339866,
+            "matched_roots": [
+              [
+                0.44846305086188903,
+                0.0
+              ],
+              [
+                -0.08079174631536287,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.006665062445621192,
+            "matched_roots": [
+              [
+                0.44434343092891454,
+                0.0
+              ],
+              [
+                -0.1027429061079275,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0016696035677281353,
+            "matched_roots": [
+              [
+                0.4433631958194846,
+                0.0
+              ],
+              [
+                -0.10828857517893897,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.03159921793307621,
+          -0.28022080314576275,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.36645116803352207,
+            0.0
+          ],
+          [
+            -0.08623036488775931,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.06829035010293483,
+            "matched_roots": [
+              [
+                0.3906487418082707,
+                0.0
+              ],
+              [
+                -0.16040941679838305,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.017798965819021302,
+            "matched_roots": [
+              [
+                0.3732384799201231,
+                0.0
+              ],
+              [
+                -0.10556414202397958,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0045042018102680725,
+            "matched_roots": [
+              [
+                0.36820388210994626,
+                0.0
+              ],
+              [
+                -0.09112296566365491,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0011296339138029618,
+            "matched_roots": [
+              [
+                0.36689303336155027,
+                0.0
+              ],
+              [
+                -0.0874574075461391,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 1.0,
+        "normalized_coefficients": [
+          0.0014276374375979195,
+          -0.23587488200528414,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.2296585336962501,
+            0.0
+          ],
+          [
+            0.006216348309034032,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.08124621460486725,
+            "matched_roots": [
+              [
+                0.28978082750881234,
+                0.0
+              ],
+              [
+                -0.0755349210646076,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.023892797525395564,
+            "matched_roots": [
+              [
+                0.24828279674077108,
+                0.0
+              ],
+              [
+                -0.017824975167856617,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.006335515295457588,
+            "matched_roots": [
+              [
+                0.23467855967938722,
+                0.0
+              ],
+              [
+                -0.00015855075621733266,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0016106477492800785,
+            "matched_roots": [
+              [
+                0.23094043761190236,
+                0.0
+              ],
+              [
+                0.004595688212341267,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 2.0,
+        "normalized_coefficients": [
+          -0.0007053558227527625,
+          -0.16766217542652012,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.17176860581526854,
+            0.0
+          ],
+          [
+            -0.004106430388748392,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.045063165907506676,
+            "matched_roots": [
+              [
+                0.17313480029510664,
+                0.0
+              ],
+              [
+                0.04114178427265408,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.011388504470544101,
+            "matched_roots": [
+              [
+                0.17203514377754617,
+                0.0
+              ],
+              [
+                0.007328840182635947,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.002853651207089061,
+            "matched_roots": [
+              [
+                0.17183165148603013,
+                0.0
+              ],
+              [
+                -0.001241060861623652,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0007138068223179864,
+            "matched_roots": [
+              [
+                0.17178415603955666,
+                0.0
+              ],
+              [
+                -0.0033896923684035435,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 3.0,
+        "normalized_coefficients": [
+          -0.0019625265607706504,
+          -0.13606928124154263,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.14922108582665625,
+            0.0
+          ],
+          [
+            -0.013151804585113619,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.02047666126311636,
+            "matched_roots": [
+              [
+                0.15980636795879752,
+                0.0
+              ],
+              [
+                -0.03389777089571805,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005383283887489303,
+            "matched_roots": [
+              [
+                0.15212054585251616,
+                0.0
+              ],
+              [
+                -0.01860588837031737,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0013652698481599207,
+            "matched_roots": [
+              [
+                0.1499647461326099,
+                0.0
+              ],
+              [
+                -0.014535030195522486,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003425903636877496,
+            "matched_roots": [
+              [
+                0.1494082336146167,
+                0.0
+              ],
+              [
+                -0.013498900630317332,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 4.0,
+        "normalized_coefficients": [
+          -0.000876508423167432,
+          -0.11118571198375395,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.11857756890303506,
+            0.0
+          ],
+          [
+            -0.0073918569192811074,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.019428449377214333,
+            "matched_roots": [
+              [
+                0.11710031866579976,
+                0.0
+              ],
+              [
+                0.012180204775893086,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.004832457207122792,
+            "matched_roots": [
+              [
+                0.11825105160106625,
+                0.0
+              ],
+              [
+                -0.0025236788799147154,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.001206978939171047,
+            "matched_roots": [
+              [
+                0.11849820501097194,
+                0.0
+              ],
+              [
+                -0.0061759561644871225,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003016790430974118,
+            "matched_roots": [
+              [
+                0.11855786420331112,
+                0.0
+              ],
+              [
+                -0.007087947907861574,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.048797419095730724,
+          -0.3328986119055304,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.44304068424913934,
+            0.0
+          ],
+          [
+            -0.11014207234360897,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.10161878787418638,
+            "matched_roots": [
+              [
+                0.46869289398673647,
+                0.0
+              ],
+              [
+                0.0026692194160858984,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0264383512339866,
+            "matched_roots": [
+              [
+                0.44846305086188903,
+                0.0
+              ],
+              [
+                -0.08079174631536287,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.006665062445621192,
+            "matched_roots": [
+              [
+                0.44434343092891454,
+                0.0
+              ],
+              [
+                -0.1027429061079275,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0016696035677281353,
+            "matched_roots": [
+              [
+                0.4433631958194846,
+                0.0
+              ],
+              [
+                -0.10828857517893897,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.031599217933093324,
+          -0.28022080314579273,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.36645116803358413,
+            0.0
+          ],
+          [
+            -0.08623036488779141,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.06829035010293959,
+            "matched_roots": [
+              [
+                0.39064874180833237,
+                0.0
+              ],
+              [
+                -0.1604094167984225,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.017798965819017944,
+            "matched_roots": [
+              [
+                0.37323847992017994,
+                0.0
+              ],
+              [
+                -0.1055641420240086,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0045042018102819294,
+            "matched_roots": [
+              [
+                0.368203882110026,
+                0.0
+              ],
+              [
+                -0.0911229656637022,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0011296339137566664,
+            "matched_roots": [
+              [
+                0.3668930333615638,
+                0.0
+              ],
+              [
+                -0.08745740754612094,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 1.0,
+        "normalized_coefficients": [
+          0.0014276374375643106,
+          -0.2358748820052491,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.2296585336963645,
+            0.0
+          ],
+          [
+            0.006216348308884592,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.08124621460491213,
+            "matched_roots": [
+              [
+                0.28978082750880396,
+                0.0
+              ],
+              [
+                -0.07553492106479005,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.02389279752540983,
+            "matched_roots": [
+              [
+                0.24828279674087372,
+                0.0
+              ],
+              [
+                -0.017824975168016843,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.00633551529550943,
+            "matched_roots": [
+              [
+                0.23467855967964993,
+                0.0
+              ],
+              [
+                -0.00015855075641799064,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0016106477492709374,
+            "matched_roots": [
+              [
+                0.23094043761192992,
+                0.0
+              ],
+              [
+                0.004595688212201266,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 2.0,
+        "normalized_coefficients": [
+          -0.0007053558229240814,
+          -0.1676621754265693,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.17176860581629066,
+            0.0
+          ],
+          [
+            -0.004106430389721338,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.04506316590505533,
+            "matched_roots": [
+              [
+                0.17313480029701653,
+                0.0
+              ],
+              [
+                0.041141784269263564,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.011388504469988639,
+            "matched_roots": [
+              [
+                0.17203514377868756,
+                0.0
+              ],
+              [
+                0.00732884018111634,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.00285365120699901,
+            "matched_roots": [
+              [
+                0.17183165148694135,
+                0.0
+              ],
+              [
+                -0.0012410608626842422,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0007138068222550935,
+            "matched_roots": [
+              [
+                0.17178415604070765,
+                0.0
+              ],
+              [
+                -0.0033896923694389457,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 3.0,
+        "normalized_coefficients": [
+          -0.0019625265603898925,
+          -0.13606928124108778,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.14922108582389326,
+            0.0
+          ],
+          [
+            -0.013151804582805503,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.02047666126394113,
+            "matched_roots": [
+              [
+                0.15980636795670888,
+                0.0
+              ],
+              [
+                -0.033897770894198286,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005383283887719147,
+            "matched_roots": [
+              [
+                0.15212054584993942,
+                0.0
+              ],
+              [
+                -0.018605888368229698,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0013652698482177496,
+            "matched_roots": [
+              [
+                0.14996474612987445,
+                0.0
+              ],
+              [
+                -0.014535030193269809,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003425903639104764,
+            "matched_roots": [
+              [
+                0.1494082336120914,
+                0.0
+              ],
+              [
+                -0.013498900628234082,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 4.0,
+        "normalized_coefficients": [
+          -0.0008765084231902139,
+          -0.11118571198356392,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.11857756890303703,
+            0.0
+          ],
+          [
+            -0.007391856919473112,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.019428449377091605,
+            "matched_roots": [
+              [
+                0.11710031866583645,
+                0.0
+              ],
+              [
+                0.012180204775581181,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.004832457207075596,
+            "matched_roots": [
+              [
+                0.11825105160113783,
+                0.0
+              ],
+              [
+                -0.002523678880153336,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0012069789391807406,
+            "matched_roots": [
+              [
+                0.11849820501076336,
+                0.0
+              ],
+              [
+                -0.00617595616466913,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.00030167904309915983,
+            "matched_roots": [
+              [
+                0.11855786420350557,
+                0.0
+              ],
+              [
+                -0.0070879479080517595,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.04968289563729886,
+          -0.2784872739752418,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.4020585644153437,
+            0.0
+          ],
+          [
+            -0.12357129044010191,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.08253066679736075,
+            "matched_roots": [
+              [
+                0.4329186146829996,
+                0.0
+              ],
+              [
+                -0.030842202645709228,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.021660909792542975,
+            "matched_roots": [
+              [
+                0.4087570715313376,
+                0.0
+              ],
+              [
+                -0.09923371407238776,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.005472722918272166,
+            "matched_roots": [
+              [
+                0.4036765530482813,
+                0.0
+              ],
+              [
+                -0.11742229608859774,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0013716718537663995,
+            "matched_roots": [
+              [
+                0.4024596261573266,
+                0.0
+              ],
+              [
+                -0.12203011932530523,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.033665259071204344,
+          -0.23381097997363226,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.33446502818328755,
+            0.0
+          ],
+          [
+            -0.1006540482096553,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.06856493405273166,
+            "matched_roots": [
+              [
+                0.3543164798990789,
+                0.0
+              ],
+              [
+                -0.17612032044002246,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.01777532987612696,
+            "matched_roots": [
+              [
+                0.3400642337079346,
+                0.0
+              ],
+              [
+                -0.12021853699607647,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.004491248953694418,
+            "matched_roots": [
+              [
+                0.3359130864280885,
+                0.0
+              ],
+              [
+                -0.10559735955205644,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0011259297241052683,
+            "matched_roots": [
+              [
+                0.3348302268645629,
+                0.0
+              ],
+              [
+                -0.10189330731849135,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 1.0,
+        "normalized_coefficients": [
+          -0.018122773255530477,
+          -0.19983555930711822,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.2675672232745496,
+            0.0
+          ],
+          [
+            -0.06773166396743137,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.055116546406710994,
+            "matched_roots": [
+              [
+                0.30082677023170834,
+                0.0
+              ],
+              [
+                -0.12658134577440705,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.014792106070370166,
+            "matched_roots": [
+              [
+                0.276945325275574,
+                0.0
+              ],
+              [
+                -0.08352566399553045,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.003777876422525736,
+            "matched_roots": [
+              [
+                0.2699958558344302,
+                0.0
+              ],
+              [
+                -0.0717654222463181,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0009498112208888892,
+            "matched_roots": [
+              [
+                0.26818001335146874,
+                0.0
+              ],
+              [
+                -0.068745807482766,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 2.0,
+        "normalized_coefficients": [
+          -0.011852447630047114,
+          -0.15189913435329847,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.20869286977368223,
+            0.0
+          ],
+          [
+            -0.056793735420383774,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.039343542118686486,
+            "matched_roots": [
+              [
+                0.2187407849593829,
+                0.0
+              ],
+              [
+                -0.015215726580107886,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.01016745408450615,
+            "matched_roots": [
+              [
+                0.21090755566341976,
+                0.0
+              ],
+              [
+                -0.04604883363870328,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.002560605484120935,
+            "matched_roots": [
+              [
+                0.20922999957960972,
+                0.0
+              ],
+              [
+                -0.05408770358588169,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0006412938985982075,
+            "matched_roots": [
+              [
+                0.20882614805050856,
+                0.0
+              ],
+              [
+                -0.056116020045781874,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 3.0,
+        "normalized_coefficients": [
+          -0.007883857508127865,
+          -0.12445883482137517,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.17065615719106397,
+            0.0
+          ],
+          [
+            -0.046197322369688786,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.020694710699497777,
+            "matched_roots": [
+              [
+                0.17780706144281516,
+                0.0
+              ],
+              [
+                -0.06784807329071871,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005322190397543053,
+            "matched_roots": [
+              [
+                0.1725802714907637,
+                0.0
+              ],
+              [
+                -0.05176538371274,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0013409024393170876,
+            "matched_roots": [
+              [
+                0.17114682367924086,
+                0.0
+              ],
+              [
+                -0.04760017091126131,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003358922847160738,
+            "matched_roots": [
+              [
+                0.1707794464427528,
+                0.0
+              ],
+              [
+                -0.04654873197856338,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 4.0,
+        "normalized_coefficients": [
+          -0.005579451117930041,
+          -0.10423533504565714,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.1431984140390388,
+            0.0
+          ],
+          [
+            -0.03896307899338165,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.019945190134532838,
+            "matched_roots": [
+              [
+                0.14580292898511554,
+                0.0
+              ],
+              [
+                -0.018240762840098994,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005061443716258904,
+            "matched_roots": [
+              [
+                0.14379457539795912,
+                0.0
+              ],
+              [
+                -0.0337044258457856,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0012697594190953976,
+            "matched_roots": [
+              [
+                0.14334432625702292,
+                0.0
+              ],
+              [
+                -0.03764384583773745,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003177104656459205,
+            "matched_roots": [
+              [
+                0.14323470101520472,
+                0.0
+              ],
+              [
+                -0.038632989549765746,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.04968289563729886,
+          -0.2784872739752418,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.4020585644153437,
+            0.0
+          ],
+          [
+            -0.12357129044010191,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.08253066679736075,
+            "matched_roots": [
+              [
+                0.4329186146829996,
+                0.0
+              ],
+              [
+                -0.030842202645709228,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.021660909792542975,
+            "matched_roots": [
+              [
+                0.4087570715313376,
+                0.0
+              ],
+              [
+                -0.09923371407238776,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.005472722918272166,
+            "matched_roots": [
+              [
+                0.4036765530482813,
+                0.0
+              ],
+              [
+                -0.11742229608859774,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0013716718537663995,
+            "matched_roots": [
+              [
+                0.4024596261573266,
+                0.0
+              ],
+              [
+                -0.12203011932530523,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.033665259071242216,
+          -0.2338109799737394,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.3344650281834569,
+            0.0
+          ],
+          [
+            -0.10065404820971757,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.06856493405271898,
+            "matched_roots": [
+              [
+                0.3543164798992397,
+                0.0
+              ],
+              [
+                -0.17612032044007503,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0177753298761239,
+            "matched_roots": [
+              [
+                0.34006423370812666,
+                0.0
+              ],
+              [
+                -0.12021853699613648,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.004491248953696422,
+            "matched_roots": [
+              [
+                0.3359130864282506,
+                0.0
+              ],
+              [
+                -0.1055973595521212,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0011259297241189227,
+            "matched_roots": [
+              [
+                0.3348302268646104,
+                0.0
+              ],
+              [
+                -0.10189330731856872,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 1.0,
+        "normalized_coefficients": [
+          -0.01812277325577703,
+          -0.1998355593068735,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.26756722327508964,
+            0.0
+          ],
+          [
+            -0.06773166396821613,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.05511654641102601,
+            "matched_roots": [
+              [
+                0.30082677023102583,
+                0.0
+              ],
+              [
+                -0.12658134577984234,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.014792106071461765,
+            "matched_roots": [
+              [
+                0.27694532527584126,
+                0.0
+              ],
+              [
+                -0.08352566399749235,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0037778764227950744,
+            "matched_roots": [
+              [
+                0.26999585583462565,
+                0.0
+              ],
+              [
+                -0.0717654222473934,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0009498112209388421,
+            "matched_roots": [
+              [
+                0.2681800133516071,
+                0.0
+              ],
+              [
+                -0.06874580748360484,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 2.0,
+        "normalized_coefficients": [
+          -0.011852447630024106,
+          -0.15189913435333335,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.208692869773623,
+            0.0
+          ],
+          [
+            -0.05679373542028964,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.03934354211761703,
+            "matched_roots": [
+              [
+                0.2187407849594227,
+                0.0
+              ],
+              [
+                -0.015215726581147648,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.010167454084260804,
+            "matched_roots": [
+              [
+                0.2109075556633912,
+                0.0
+              ],
+              [
+                -0.046048833638869385,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.002560605484079955,
+            "matched_roots": [
+              [
+                0.20922999957946742,
+                0.0
+              ],
+              [
+                -0.05408770358583111,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0006412938986160781,
+            "matched_roots": [
+              [
+                0.2088261480499873,
+                0.0
+              ],
+              [
+                -0.056116020045668916,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 3.0,
+        "normalized_coefficients": [
+          -0.007883857508042914,
+          -0.12445883482128887,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.1706561571906043,
+            0.0
+          ],
+          [
+            -0.046197322369315424,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.020694710699784687,
+            "matched_roots": [
+              [
+                0.177807061442537,
+                0.0
+              ],
+              [
+                -0.06784807329063779,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005322190397655377,
+            "matched_roots": [
+              [
+                0.17258027149037855,
+                0.0
+              ],
+              [
+                -0.05176538371248216,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0013409024392897692,
+            "matched_roots": [
+              [
+                0.17114682367877618,
+                0.0
+              ],
+              [
+                -0.047600170910858865,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003358922846957125,
+            "matched_roots": [
+              [
+                0.1707794464423009,
+                0.0
+              ],
+              [
+                -0.04654873197816859,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 4.0,
+        "normalized_coefficients": [
+          -0.005579451117959766,
+          -0.10423533504561606,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.1431984140391697,
+            0.0
+          ],
+          [
+            -0.03896307899355362,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.019945190134180592,
+            "matched_roots": [
+              [
+                0.14580292898521624,
+                0.0
+              ],
+              [
+                -0.018240762840633504,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005061443716158401,
+            "matched_roots": [
+              [
+                0.14379457539808183,
+                0.0
+              ],
+              [
+                -0.03370442584606111,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.001269759419102594,
+            "matched_roots": [
+              [
+                0.143344326257231,
+                0.0
+              ],
+              [
+                -0.03764384583790172,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003177104656630522,
+            "matched_roots": [
+              [
+                0.14323470101488872,
+                0.0
+              ],
+              [
+                -0.03863298954991986,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.04991965698297363,
+          -0.2634001744363443,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.39105422725886585,
+            0.0
+          ],
+          [
+            -0.1276540528225216,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.0773731109562519,
+            "matched_roots": [
+              [
+                0.42323343141907815,
+                0.0
+              ],
+              [
+                -0.04040395067321749,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.020354355808414104,
+            "matched_roots": [
+              [
+                0.3980928538805635,
+                0.0
+              ],
+              [
+                -0.1047013810025718,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.005145792630441149,
+            "matched_roots": [
+              [
+                0.39275712023004106,
+                0.0
+              ],
+              [
+                -0.12185137890782037,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0012899308925173492,
+            "matched_roots": [
+              [
+                0.39147649777419,
+                0.0
+              ],
+              [
+                -0.12619945702371343,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.0346931850761388,
+          -0.22080814755603537,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.3269271547253402,
+            0.0
+          ],
+          [
+            -0.10611900716930482,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.06832126126166065,
+            "matched_roots": [
+              [
+                0.3450599314708369,
+                0.0
+              ],
+              [
+                -0.18169045284460758,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.017667038857542457,
+            "matched_roots": [
+              [
+                0.33204459500482925,
+                0.0
+              ],
+              [
+                -0.1256608546500312,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.004460463864433527,
+            "matched_roots": [
+              [
+                0.3282507252639083,
+                0.0
+              ],
+              [
+                -0.1110528110305466,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0011179859343239248,
+            "matched_roots": [
+              [
+                0.3272609622468639,
+                0.0
+              ],
+              [
+                -0.10735563266100845,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 1.0,
+        "normalized_coefficients": [
+          -0.023936148360730432,
+          -0.189649944237604,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.276285501430446,
+            0.0
+          ],
+          [
+            -0.086635557192842,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.04996088796854641,
+            "matched_roots": [
+              [
+                0.3036966698660926,
+                0.0
+              ],
+              [
+                -0.14092483452839258,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.013209125461241082,
+            "matched_roots": [
+              [
+                0.28389858110896427,
+                0.0
+              ],
+              [
+                -0.10098906259844785,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0033567388698814327,
+            "matched_roots": [
+              [
+                0.2782466343812523,
+                0.0
+              ],
+              [
+                -0.09028310900506648,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0008427803334082622,
+            "matched_roots": [
+              [
+                0.27677960966175746,
+                0.0
+              ],
+              [
+                -0.08755135227002625,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 2.0,
+        "normalized_coefficients": [
+          -0.014852346509543328,
+          -0.1471699122370078,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.21594749429658455,
+            0.0
+          ],
+          [
+            -0.06877758205957676,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.03890309029915367,
+            "matched_roots": [
+              [
+                0.22753551974164532,
+                0.0
+              ],
+              [
+                -0.027198831275001924,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.010073608949638314,
+            "matched_roots": [
+              [
+                0.218527470499854,
+                0.0
+              ],
+              [
+                -0.058011134643768614,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0025382986935765617,
+            "matched_roots": [
+              [
+                0.21657458833401752,
+                0.0
+              ],
+              [
+                -0.06606470531931102,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0006357907801104337,
+            "matched_roots": [
+              [
+                0.21610317754442063,
+                0.0
+              ],
+              [
+                -0.06809806312691456,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 3.0,
+        "normalized_coefficients": [
+          -0.009939689292510096,
+          -0.12076192342865968,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.1769380285530997,
+            0.0
+          ],
+          [
+            -0.056176105124440004,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.020905922674170845,
+            "matched_roots": [
+              [
+                0.18301159696527639,
+                0.0
+              ],
+              [
+                -0.07825644110847849,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005350257132489891,
+            "matched_roots": [
+              [
+                0.17856659851803908,
+                0.0
+              ],
+              [
+                -0.06182691886404743,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0013460873105574187,
+            "matched_roots": [
+              [
+                0.17735287866790772,
+                0.0
+              ],
+              [
+                -0.05759781037726197,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.00033706860532037265,
+            "matched_roots": [
+              [
+                0.17704223753400802,
+                0.0
+              ],
+              [
+                -0.056532108931167,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 4.0,
+        "normalized_coefficients": [
+          -0.007129829368540235,
+          -0.1020641030747415,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.14969359243681696,
+            0.0
+          ],
+          [
+            -0.04762948936207547,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.020489127260217545,
+            "matched_roots": [
+              [
+                0.15334868869264204,
+                0.0
+              ],
+              [
+                -0.026164475432979183,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005215906471769137,
+            "matched_roots": [
+              [
+                0.15053416072146394,
+                0.0
+              ],
+              [
+                -0.042165151928495626,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.001309472751627109,
+            "matched_roots": [
+              [
+                0.1498995283407559,
+                0.0
+              ],
+              [
+                -0.04625764709195481,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003277064927869808,
+            "matched_roots": [
+              [
+                0.14974481893530042,
+                0.0
+              ],
+              [
+                -0.04728617437637641,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.04991965698297363,
+          -0.2634001744363443,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.39105422725886585,
+            0.0
+          ],
+          [
+            -0.1276540528225216,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.0773731109562519,
+            "matched_roots": [
+              [
+                0.42323343141907815,
+                0.0
+              ],
+              [
+                -0.04040395067321749,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.020354355808414104,
+            "matched_roots": [
+              [
+                0.3980928538805635,
+                0.0
+              ],
+              [
+                -0.1047013810025718,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.005145792630441149,
+            "matched_roots": [
+              [
+                0.39275712023004106,
+                0.0
+              ],
+              [
+                -0.12185137890782037,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0012899308925173492,
+            "matched_roots": [
+              [
+                0.39147649777419,
+                0.0
+              ],
+              [
+                -0.12619945702371343,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.03469318507616575,
+          -0.22080814755630634,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.32692715472560696,
+            0.0
+          ],
+          [
+            -0.10611900716930066,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.06832126126384704,
+            "matched_roots": [
+              [
+                0.3450599314717195,
+                0.0
+              ],
+              [
+                -0.18169045284702154,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.017667038858068168,
+            "matched_roots": [
+              [
+                0.33204459500529127,
+                0.0
+              ],
+              [
+                -0.12566085465060847,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.004460463864607499,
+            "matched_roots": [
+              [
+                0.3282507252642024,
+                0.0
+              ],
+              [
+                -0.11105281103073485,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0011179859343674525,
+            "matched_roots": [
+              [
+                0.32726096224674983,
+                0.0
+              ],
+              [
+                -0.10735563266105243,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 1.0,
+        "normalized_coefficients": [
+          -0.023936148360662633,
+          -0.18964994423778495,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.27628550143039693,
+            0.0
+          ],
+          [
+            -0.08663555719261198,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.04996088796465444,
+            "matched_roots": [
+              [
+                0.3036966698674748,
+                0.0
+              ],
+              [
+                -0.14092483452392193,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.013209125460227443,
+            "matched_roots": [
+              [
+                0.28389858110925503,
+                0.0
+              ],
+              [
+                -0.10098906259711335,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0033567388696345703,
+            "matched_roots": [
+              [
+                0.27824663438134367,
+                0.0
+              ],
+              [
+                -0.09028310900456744,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0008427803333132301,
+            "matched_roots": [
+              [
+                0.2767796096621561,
+                0.0
+              ],
+              [
+                -0.08755135226969278,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 2.0,
+        "normalized_coefficients": [
+          -0.014852346509557971,
+          -0.14716991223693326,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.21594749429657947,
+            0.0
+          ],
+          [
+            -0.0687775820596462,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.038903090299235346,
+            "matched_roots": [
+              [
+                0.22753551974136824,
+                0.0
+              ],
+              [
+                -0.027198831274981367,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.010073608949654787,
+            "matched_roots": [
+              [
+                0.21852747049978957,
+                0.0
+              ],
+              [
+                -0.05801113464381974,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.002538298693571684,
+            "matched_roots": [
+              [
+                0.21657458833397644,
+                0.0
+              ],
+              [
+                -0.06606470531938549,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0006357907801435424,
+            "matched_roots": [
+              [
+                0.21610317754382244,
+                0.0
+              ],
+              [
+                -0.06809806312694856,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 3.0,
+        "normalized_coefficients": [
+          -0.009939689292452852,
+          -0.12076192342859075,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.1769380285528018,
+            0.0
+          ],
+          [
+            -0.056176105124211055,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.02090592267485979,
+            "matched_roots": [
+              [
+                0.18301159696526992,
+                0.0
+              ],
+              [
+                -0.0782564411089724,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0053502571325257,
+            "matched_roots": [
+              [
+                0.17856659851783738,
+                0.0
+              ],
+              [
+                -0.06182691886385508,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.001346087310735457,
+            "matched_roots": [
+              [
+                0.1773528786677032,
+                0.0
+              ],
+              [
+                -0.057597810377220754,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003370686053073323,
+            "matched_roots": [
+              [
+                0.17704223753361836,
+                0.0
+              ],
+              [
+                -0.0565321089309242,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 4.0,
+        "normalized_coefficients": [
+          -0.007129829368551438,
+          -0.10206410307469518,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.1496935924368386,
+            0.0
+          ],
+          [
+            -0.04762948936214343,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.020489127259642942,
+            "matched_roots": [
+              [
+                0.15334868869257387,
+                0.0
+              ],
+              [
+                -0.02616447543364772,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005215906471588562,
+            "matched_roots": [
+              [
+                0.15053416072148182,
+                0.0
+              ],
+              [
+                -0.042165151928752406,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0013094727515831639,
+            "matched_roots": [
+              [
+                0.14989952834075757,
+                0.0
+              ],
+              [
+                -0.04625764709206872,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003277064927755342,
+            "matched_roots": [
+              [
+                0.14974481893517286,
+                0.0
+              ],
+              [
+                -0.04728617437645634,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.04997984696851842,
+          -0.2595078913314907,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.3882417275517518,
+            0.0
+          ],
+          [
+            -0.12873383622026102,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.07605422441744483,
+            "matched_roots": [
+              [
+                0.4207502687355078,
+                0.0
+              ],
+              [
+                -0.042888859732801876,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.020019112822460054,
+            "matched_roots": [
+              [
+                0.3953665945206211,
+                0.0
+              ],
+              [
+                -0.10613758620643947,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.005061842908145193,
+            "matched_roots": [
+              [
+                0.38996621868709685,
+                0.0
+              ],
+              [
+                -0.12302036285620598,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0012689374388023767,
+            "matched_roots": [
+              [
+                0.388669397381446,
+                0.0
+              ],
+              [
+                -0.1273015435970381,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.03498997795118695,
+          -0.21744318068907745,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.3250786150935231,
+            0.0
+          ],
+          [
+            -0.10763543440444567,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.06823577365143534,
+            "matched_roots": [
+              [
+                0.3427290879813806,
+                0.0
+              ],
+              [
+                -0.18321579519477668,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.017631928058781502,
+            "matched_roots": [
+              [
+                0.33006031647787126,
+                0.0
+              ],
+              [
+                -0.12716518269922206,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.004450608824191836,
+            "matched_roots": [
+              [
+                0.3263670713060071,
+                0.0
+              ],
+              [
+                -0.11256508644279366,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0011154503385504952,
+            "matched_roots": [
+              [
+                0.32540356552354577,
+                0.0
+              ],
+              [
+                -0.10887094672474264,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 1.0,
+        "normalized_coefficients": [
+          -0.025463345642591378,
+          -0.18700674438089107,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.2784526253751404,
+            0.0
+          ],
+          [
+            -0.09144588099424933,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.04873595602687389,
+            "matched_roots": [
+              [
+                0.3044188138152123,
+                0.0
+              ],
+              [
+                -0.1446385394560977,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.01284076330532738,
+            "matched_roots": [
+              [
+                0.28563944099400385,
+                0.0
+              ],
+              [
+                -0.105460879212671,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.003259487348081852,
+            "matched_roots": [
+              [
+                0.2803017789146999,
+                0.0
+              ],
+              [
+                -0.09500343503446614,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0008181171265857514,
+            "matched_roots": [
+              [
+                0.2789183710237332,
+                0.0
+              ],
+              [
+                -0.0923388115622322,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 2.0,
+        "normalized_coefficients": [
+          -0.015619645120234536,
+          -0.14592031408507197,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.2176765335723056,
+            0.0
+          ],
+          [
+            -0.07175621948723361,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.03881733503764676,
+            "matched_roots": [
+              [
+                0.22965054024628653,
+                0.0
+              ],
+              [
+                -0.03015349923671598,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.010056101806184305,
+            "matched_roots": [
+              [
+                0.2203481962144125,
+                0.0
+              ],
+              [
+                -0.06097852983265878,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.002534199837351111,
+            "matched_roots": [
+              [
+                0.21832621931527743,
+                0.0
+              ],
+              [
+                -0.06904017505012902,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0006347837822105574,
+            "matched_roots": [
+              [
+                0.21783784383505475,
+                0.0
+              ],
+              [
+                -0.07107588602061982,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 3.0,
+        "normalized_coefficients": [
+          -0.010504622655290773,
+          -0.11976930262963764,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.17858930210150115,
+            0.0
+          ],
+          [
+            -0.058819999471863525,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.020970023707254787,
+            "matched_roots": [
+              [
+                0.18437049388017757,
+                0.0
+              ],
+              [
+                -0.081023479962504,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005360155439065307,
+            "matched_roots": [
+              [
+                0.18013818644396257,
+                0.0
+              ],
+              [
+                -0.06449543925102376,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0013481141939836424,
+            "matched_roots": [
+              [
+                0.17898375207648265,
+                0.0
+              ],
+              [
+                -0.0602474097420253,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003375461381314098,
+            "matched_roots": [
+              [
+                0.1786883798807152,
+                0.0
+              ],
+              [
+                -0.059177400073661554,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 4.0,
+        "normalized_coefficients": [
+          -0.007550659503656822,
+          -0.10148367150783154,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.1513668495394263,
+            0.0
+          ],
+          [
+            -0.049883178031594776,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.020649068691113527,
+            "matched_roots": [
+              [
+                0.1552998932352235,
+                0.0
+              ],
+              [
+                -0.028204068170775805,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005260608992942997,
+            "matched_roots": [
+              [
+                0.15227222812351313,
+                0.0
+              ],
+              [
+                -0.044360153143702195,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0013209305105675842,
+            "matched_roots": [
+              [
+                0.15158870965419208,
+                0.0
+              ],
+              [
+                -0.04849635530920118,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0003305883592217576,
+            "matched_roots": [
+              [
+                0.1514220399186916,
+                0.0
+              ],
+              [
+                -0.049536098874394786,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 0.0,
+        "normalized_coefficients": [
+          -0.04997984696851842,
+          -0.2595078913314907,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.3882417275517518,
+            0.0
+          ],
+          [
+            -0.12873383622026102,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.07605422441744483,
+            "matched_roots": [
+              [
+                0.4207502687355078,
+                0.0
+              ],
+              [
+                -0.042888859732801876,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.020019112822460054,
+            "matched_roots": [
+              [
+                0.3953665945206211,
+                0.0
+              ],
+              [
+                -0.10613758620643947,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.005061842908145193,
+            "matched_roots": [
+              [
+                0.38996621868709685,
+                0.0
+              ],
+              [
+                -0.12302036285620598,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0012689374388023767,
+            "matched_roots": [
+              [
+                0.388669397381446,
+                0.0
+              ],
+              [
+                -0.1273015435970381,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 0.5,
+        "normalized_coefficients": [
+          -0.03498997795110487,
+          -0.21744318068880314,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.32507861509312735,
+            0.0
+          ],
+          [
+            -0.1076354344043242,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.06823577365062322,
+            "matched_roots": [
+              [
+                0.3427290879806989,
+                0.0
+              ],
+              [
+                -0.1832157951937474,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.017631928058539227,
+            "matched_roots": [
+              [
+                0.330060316477387,
+                0.0
+              ],
+              [
+                -0.1271651826988301,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.004450608823928159,
+            "matched_roots": [
+              [
+                0.32636707130558434,
+                0.0
+              ],
+              [
+                -0.11256508644237959,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.001115450338554326,
+            "matched_roots": [
+              [
+                0.3254035655231475,
+                0.0
+              ],
+              [
+                -0.10887094672462527,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 1.0,
+        "normalized_coefficients": [
+          -0.02546334564272769,
+          -0.18700674438187495,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.27845262537624954,
+            0.0
+          ],
+          [
+            -0.0914458809943746,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.048735956014943176,
+            "matched_roots": [
+              [
+                0.3044188138222073,
+                0.0
+              ],
+              [
+                -0.14463853944320734,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.012840763302282673,
+            "matched_roots": [
+              [
+                0.28563944099657423,
+                0.0
+              ],
+              [
+                -0.10546087920947475,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.003259487347565438,
+            "matched_roots": [
+              [
+                0.2803017789161732,
+                0.0
+              ],
+              [
+                -0.09500343503402818,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0008181171265294443,
+            "matched_roots": [
+              [
+                0.2789183710248868,
+                0.0
+              ],
+              [
+                -0.09233881156229612,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 2.0,
+        "normalized_coefficients": [
+          -0.015619645120218411,
+          -0.14592031408500586,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.21767653357220013,
+            0.0
+          ],
+          [
+            -0.0717562194871943,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.03881733503606915,
+            "matched_roots": [
+              [
+                0.22965054024615889,
+                0.0
+              ],
+              [
+                -0.030153499238369002,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.010056101805794368,
+            "matched_roots": [
+              [
+                0.22034819621436433,
+                0.0
+              ],
+              [
+                -0.060978529833037774,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0025341998373468017,
+            "matched_roots": [
+              [
+                0.2183262193151632,
+                0.0
+              ],
+              [
+                -0.06904017505009442,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.0006347837820483601,
+            "matched_roots": [
+              [
+                0.21783784383482657,
+                0.0
+              ],
+              [
+                -0.07107588602075436,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 3.0,
+        "normalized_coefficients": [
+          -0.010504622655288122,
+          -0.1197693026295877,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.17858930210145244,
+            0.0
+          ],
+          [
+            -0.05881999947186473,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.020970023706064607,
+            "matched_roots": [
+              [
+                0.1843704938800074,
+                0.0
+              ],
+              [
+                -0.08102347996124505,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.0053601554387964125,
+            "matched_roots": [
+              [
+                0.1801381864438973,
+                0.0
+              ],
+              [
+                -0.06449543925074026,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.0013481141939739678,
+            "matched_roots": [
+              [
+                0.17898375207647005,
+                0.0
+              ],
+              [
+                -0.06024740974201626,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.00033754613774231304,
+            "matched_roots": [
+              [
+                0.1786883798806615,
+                0.0
+              ],
+              [
+                -0.05917740007325078,
+                0.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 4.0,
+        "normalized_coefficients": [
+          -0.00755065950365584,
+          -0.10148367150778212,
+          1.0
+        ],
+        "inner_roots": [
+          [
+            0.15136684953938428,
+            0.0
+          ],
+          [
+            -0.04988317803160213,
+            0.0
+          ]
+        ],
+        "samples": [
+          {
+            "p": 20.0,
+            "normalized_matching_error": 0.020649068690370947,
+            "matched_roots": [
+              [
+                0.15529989323502316,
+                0.0
+              ],
+              [
+                -0.02820406817156263,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 40.0,
+            "normalized_matching_error": 0.005260608992753487,
+            "matched_roots": [
+              [
+                0.15227222812343116,
+                0.0
+              ],
+              [
+                -0.044360153143908475,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 80.0,
+            "normalized_matching_error": 0.00132093051057043,
+            "matched_roots": [
+              [
+                0.15158870965409524,
+                0.0
+              ],
+              [
+                -0.04849635530920554,
+                0.0
+              ]
+            ]
+          },
+          {
+            "p": 160.0,
+            "normalized_matching_error": 0.00033058835880914254,
+            "matched_roots": [
+              [
+                0.1514220399186426,
+                0.0
+              ],
+              [
+                -0.04953609887483534,
+                0.0
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "max_p160_inner_matching_error": 0.005517588050493898,
+    "diagnostic_reach": "SUPPORTED_AT_REGISTERED_SAMPLES",
+    "max_recomputed_full_root_discrepancy": 0.0,
+    "max_inner_real_exponent": 1.0762748656473586,
+    "min_absolute_lambda2_coefficient": 11.0
+  },
+  "status": "CONDITIONAL_G3_FINITE_RATE_INNER_PENCIL_EVOLUTION_AND_EFT_OPEN",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "canonical_Test1_pass": false,
+  "canonical_Test2_pass": false,
+  "canonical_Test3_pass": false,
+  "full_IVP_verified": false,
+  "healthy_continuous_GR_limit_verified": false,
+  "physical_EFT_cutoff_derived": false,
+  "MAT_001": "BLOCKED",
+  "UVIR_003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED",
+  "artifacts": {
+    "pencil.json": "abb6a23cba1f80b0a02bf76d1bb47153bd745be55e83c44e9bd8183f9a9d5bb4"
+  }
+}

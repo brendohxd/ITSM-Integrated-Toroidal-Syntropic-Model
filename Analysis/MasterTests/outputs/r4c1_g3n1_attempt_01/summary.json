@@ -1,0 +1,4414 @@
+{
+  "K_Q": "NOT_DERIVED",
+  "MAT_001": "BLOCKED",
+  "Rule9_cleared": false,
+  "Stage4A": "CLOSED",
+  "TOP_X4": "UNCHANGED",
+  "UVIR_003": "IN_PROGRESS",
+  "V": "NOT_COMPUTED",
+  "all_actions_no_go": false,
+  "artifacts": {
+    "cases.json": "1a23e209177e19c9093099890d37710fab768bca63f8a42a07ef0de388f47704",
+    "formulas.json": "1f1c1dab57079d1a2478d3d8f3e1bd2a12a011fa7be7be4e8947c5779ec66e24"
+  },
+  "background_evolution": "FROZEN_PROBE_ONLY",
+  "canonical_tests_1_to_3": "HOLD_SUBSTANTIVE",
+  "checks": [
+    {
+      "criterion": "zero_exact",
+      "name": "cosine_quadratic_average",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "absolute_cubic_average",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "average_amplitude_kinetic_residue",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "canonical_average_cusp_normalization",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "signed_cusp_force",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "probe_momentum",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "probe_hamiltonian",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "hamilton_q_equation",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "hamilton_momentum_equation",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "probe_velocity_Hessian",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "positive_signed_force",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "negative_signed_force",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "force_derivative_zero_from_right",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "force_derivative_zero_from_left",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "opposite one-sided second derivatives; gamma>0",
+      "name": "nonzero_cusp_force_not_C2",
+      "passed": true,
+      "value": [
+        "-2*gamma",
+        "2*gamma"
+      ]
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "local_Lipschitz_bound",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "time_dependent_energy_balance",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "frozen_energy_balance",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "potential at |y|>1 exceeds initial energy; gamma>=0",
+      "name": "positive_energy_turning_bound",
+      "passed": true,
+      "value": "excess**3*gamma/3 + excess**2*gamma + excess**2/2 + excess*gamma + excess"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "third_harmonic_projection",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "third_to_fundamental_force_ratio",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "nonzero third-harmonic force: Galerkin subspace is not invariant",
+      "name": "one_mode_invariance_rejected",
+      "passed": true,
+      "value": "4/(15*pi)"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "endpoint_substituted_energy_quadrature",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "regular_quadrature_endpoint",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "criterion": "cusp remains in force",
+      "name": "omitted_cusp_rejected",
+      "passed": true,
+      "value": "D*q**2*sign(q) + 2*D*q*Abs(q)"
+    },
+    {
+      "criterion": "q|q| is not q^2",
+      "name": "sign_insensitive_force_rejected",
+      "passed": true,
+      "value": "negative amplitude"
+    },
+    {
+      "criterion": "X_amplitude is not the canonical average amplitude q",
+      "name": "uncorrected_cosine_residue_rejected",
+      "passed": true,
+      "value": "1/2"
+    },
+    {
+      "criterion": "requires explicit coefficient-work terms",
+      "name": "changing_background_energy_conservation_rejected",
+      "passed": true,
+      "value": "q**2*(D_dot*Abs(q) + omega2_dot/2)"
+    },
+    {
+      "criterion": 4,
+      "name": "dimension_quadratic_kinetic",
+      "passed": true,
+      "value": 4
+    },
+    {
+      "criterion": 4,
+      "name": "dimension_quadratic_potential",
+      "passed": true,
+      "value": 4
+    },
+    {
+      "criterion": 4,
+      "name": "dimension_cusp_potential",
+      "passed": true,
+      "value": 4
+    },
+    {
+      "criterion": "all mass dimension 3",
+      "name": "dimension_EOM_terms",
+      "passed": true,
+      "value": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "criterion": 0,
+      "name": "dimension_rescaled_gamma",
+      "passed": true,
+      "value": 0
+    },
+    {
+      "criterion": "216 exact frozen chart keys",
+      "name": "registered_parent_grid",
+      "passed": true,
+      "value": 216
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_0_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        340.56780469530463,
+        0.014257312936844367
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_1_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        1364.8535189810189,
+        0.014257312936844367
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_2_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        5461.996376123875,
+        0.014257312936844367
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_3_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        146.2983165928033,
+        0.00013662689036390615
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_4_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        586.1454684542837,
+        0.00013662689036390615
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_5_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        2345.534075900205,
+        0.00013662689036390615
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_6_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        73.94043461399939,
+        3.04769694869534e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_7_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        296.58781810153425,
+        3.04769694869534e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_8_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        1187.1773520516736,
+        3.04769694869534e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_9_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        31.73377027896742,
+        2.136329300092988e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_10_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        127.2879102192165,
+        2.136329300092988e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_11_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        509.50446998021283,
+        2.136329300092988e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_12_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        20.278640746089195,
+        1.0720223542734646e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_13_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        81.21179390523706,
+        1.0720223542734646e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_14_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        324.94440654182847,
+        1.0720223542734646e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_15_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        14.59673326595853,
+        8.576509840467262e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_16_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        58.4535204213511,
+        8.576509840467262e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_17_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        233.8806690429214,
+        8.576509840467262e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_18_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        340.56780469530463,
+        0.014257312936844367
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_19_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        1364.8535189810189,
+        0.014257312936844367
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_20_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        5461.996376123875,
+        0.014257312936844367
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_21_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        146.29831659277693,
+        0.00013662689036188233
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_22_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        586.1454684541759,
+        0.00013662689036188233
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_23_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        2345.534075899772,
+        0.00013662689036188233
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_24_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        73.94043461397592,
+        3.047696948659603e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_25_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        296.5878181014412,
+        3.047696948659603e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_26_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        1187.1773520513023,
+        3.047696948659603e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_27_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        31.733770278989315,
+        2.1363293000316266e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_28_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        127.28791021930338,
+        2.1363293000316266e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_29_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        509.50446998055963,
+        2.1363293000316266e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_30_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        20.278640746080395,
+        1.0720223542708823e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_31_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        81.211793905202,
+        1.0720223542708823e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_32_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        324.94440654168847,
+        1.0720223542708823e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_33_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        14.596733265957493,
+        8.57650984040565e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_34_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        58.453520421346646,
+        8.57650984040565e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_35_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.16666666666666666,
+        0.14226190476190476,
+        233.88066904290324,
+        8.57650984040565e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_36_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        324.6423181317975,
+        0.00022277051463819324
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_37_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        1299.1584471640556,
+        0.00022277051463819324
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_38_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        5197.2229632930885,
+        0.00022277051463819324
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_39_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        207.04203182333785,
+        1.7071156371217054e-05
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_40_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        828.5131941254701,
+        1.7071156371217054e-05
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_41_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        3314.397843333999,
+        1.7071156371217054e-05
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_42_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        142.07782703066846,
+        1.8950066862894093e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_43_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        568.6423083845486,
+        1.8950066862894093e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_44_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        2274.900233800069,
+        1.8950066862894093e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_45_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        83.88787378734749,
+        7.2116135479187e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_46_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        335.70414862443624,
+        7.2116135479187e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_47_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        1342.9692479727912,
+        7.2116135479187e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_48_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        58.830176766568606,
+        6.120076385661331e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_49_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        235.39031764974285,
+        6.120076385661331e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_50_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        941.6308811824398,
+        6.120076385661331e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_51_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        44.414057388790006,
+        6.573842434770824e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_52_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        177.70541933891104,
+        6.573842434770824e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_53_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        710.8708671393953,
+        6.573842434770824e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_54_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        324.6423181317975,
+        0.00022277051463819324
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_55_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        1299.1584471640556,
+        0.00022277051463819324
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_56_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        5197.2229632930885,
+        0.00022277051463819324
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_57_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        207.04203182332955,
+        1.707115637128585e-05
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_58_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        828.5131941254369,
+        1.707115637128585e-05
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_59_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        3314.397843333866,
+        1.707115637128585e-05
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_60_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        142.0778270306513,
+        1.8950066862934175e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_61_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        568.64230838448,
+        1.8950066862934175e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_62_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        2274.9002337997945,
+        1.8950066862934175e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_63_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        83.88787378673352,
+        7.211613547844392e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_64_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        335.7041486219863,
+        7.211613547844392e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_65_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        1342.9692479629973,
+        7.211613547844392e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_66_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        58.83017676657841,
+        6.120076385660096e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_67_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        235.39031764978228,
+        6.120076385660096e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_68_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        941.6308811825978,
+        6.120076385660096e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_69_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        44.41405738885116,
+        6.573842434806154e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_70_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        177.70541933915544,
+        6.573842434806154e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_71_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.041666666666666664,
+        0.03383736559139785,
+        710.8708671403725,
+        6.573842434806154e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_72_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        321.0857175970854,
+        3.4807892912217693e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_73_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        1284.6290246836995,
+        3.4807892912217693e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_74_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        5138.802253030157,
+        3.4807892912217693e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_75_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        237.10238847922759,
+        5.7595420071613e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_76_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        948.6042686949655,
+        5.7595420071613e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_77_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        3794.6117895579177,
+        5.7595420071613e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_78_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        183.4423645452637,
+        1.1991534401330435e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_79_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        733.9400030785464,
+        1.1991534401330435e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_80_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        2935.930557211677,
+        1.1991534401330435e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_81_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        123.70995416979638,
+        9.179065304217362e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_82_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        494.9268624383167,
+        9.179065304217362e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_83_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        1979.7944955123978,
+        9.179065304217362e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_84_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        91.69716954018446,
+        1.0435209786133338e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_85_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        366.84300877047656,
+        1.0435209786133338e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_86_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        1467.426365691645,
+        1.0435209786133338e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_87_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        71.80351643785154,
+        1.359564408993366e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_88_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        287.2515664610749,
+        1.359564408993366e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_89_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        1149.0437665539685,
+        1.359564408993366e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_90_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        321.0857175970854,
+        3.4807892912217693e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_91_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        1284.6290246836995,
+        3.4807892912217693e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_92_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        5138.802253030157,
+        3.4807892912217693e-06
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_93_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        237.1023884792364,
+        5.759542007159954e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_94_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        948.6042686950008,
+        5.759542007159954e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_95_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        3794.6117895580587,
+        5.759542007159954e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_96_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        183.44236454529428,
+        1.199153440130899e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_97_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        733.9400030786685,
+        1.199153440130899e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_98_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        2935.9305572121652,
+        1.199153440130899e-07
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_99_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        123.70995416985474,
+        9.179065304166132e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_100_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        494.9268624385499,
+        9.179065304166132e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_101_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        1979.7944955133305,
+        9.179065304166132e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_102_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        91.69716954015973,
+        1.0435209786088677e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_103_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        366.84300877037793,
+        1.0435209786088677e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_104_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        1467.4263656912508,
+        1.0435209786088677e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_105_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        71.80351643791265,
+        1.359564408998053e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_106_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        287.25156646131927,
+        1.359564408998053e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_107_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.010416666666666666,
+        0.008364091207349081,
+        1149.0437665549457,
+        1.359564408998053e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_108_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        320.21991953626684,
+        5.4387332675340146e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_109_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        1281.1005457593587,
+        5.4387332675340146e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_110_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        5124.623050651727,
+        5.4387332675340146e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_111_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        248.28063912169387,
+        1.1625253401142988e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_112_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        993.2768673415266,
+        1.1625253401142988e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_113_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        3973.2617802208574,
+        1.1625253401142988e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_114_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        200.0587173360469,
+        2.9954698469357472e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_115_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        800.3565260332298,
+        2.9954698469357472e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_116_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        3201.5477608219617,
+        2.9954698469357472e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_117_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        141.43886431514167,
+        2.9385500443702334e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_118_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        565.824897711224,
+        2.9385500443702334e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_119_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        2263.3690312955537,
+        2.9385500443702334e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_120_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        107.52835019406622,
+        3.8163359855412094e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_121_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        430.15975219906557,
+        3.8163359855412094e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_122_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        1720.6853602190629,
+        3.8163359855412094e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_123_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        85.67092819347918,
+        5.4457254830169116e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_124_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        342.7164338345878,
+        5.4457254830169116e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_125_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        1370.8984563990223,
+        5.4457254830169116e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_126_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        320.21991953626684,
+        5.4387332675340146e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_127_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        1281.1005457593587,
+        5.4387332675340146e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_128_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        5124.623050651727,
+        5.4387332675340146e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_129_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        248.28063912169932,
+        1.1625253401173463e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_130_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        993.2768673415486,
+        1.1625253401173463e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_131_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        3973.2617802209456,
+        1.1625253401173463e-08
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_132_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        200.0587173361592,
+        2.995469846856767e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_133_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        800.356526033678,
+        2.995469846856767e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_134_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        3201.5477608237534,
+        2.995469846856767e-09
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_135_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        141.43886431516117,
+        2.938550044357809e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_136_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        565.824897711302,
+        2.938550044357809e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_137_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        2263.3690312958656,
+        2.938550044357809e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_138_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        107.5283501940812,
+        3.816335985537933e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_139_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        430.15975219912553,
+        3.816335985537933e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_140_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        1720.685360219303,
+        3.816335985537933e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_141_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        85.67092819351869,
+        5.445725483019592e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_142_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        342.71643383474577,
+        5.445725483019592e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_143_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0026041666666666665,
+        0.0020852444145466405,
+        1370.8984563996542,
+        5.445725483019592e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_144_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        320.00488618274125,
+        8.498020730521898e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_145_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        1280.2247200860143,
+        8.498020730521898e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_146_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        5121.1040556991065,
+        8.498020730521898e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_147_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        251.53825288387148,
+        1.9519764729376143e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_148_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        1006.2968938923682,
+        1.9519764729376143e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_149_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        4025.331457926355,
+        1.9519764729376143e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_150_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        205.0307259773698,
+        5.342764415836703e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_151_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        820.2313393593323,
+        5.342764415836703e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_152_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        3281.0337928871822,
+        5.342764415836703e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_153_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        146.95247464795682,
+        5.632192254863682e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_154_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        587.8748908228973,
+        5.632192254863682e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_155_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        2351.5645555226592,
+        5.632192254863682e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_156_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        112.62077047471134,
+        7.629644984243339e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_157_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        450.52681985655903,
+        7.629644984243339e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_158_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        1802.1510173839497,
+        7.629644984243339e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_159_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        90.2264037957458,
+        1.1208405550221673e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_160_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        360.93689942844185,
+        1.1208405550221673e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_161_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        1443.778881959226,
+        1.1208405550221673e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_162_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        320.00488618274125,
+        8.498020730521898e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_163_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        1280.2247200860143,
+        8.498020730521898e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_164_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        5121.1040556991065,
+        8.498020730521898e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_165_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        251.53825288412477,
+        1.9519764729744701e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_166_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        1006.2968938933819,
+        1.9519764729744701e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_167_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        4025.3314579304106,
+        1.9519764729744701e-10
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_168_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        205.03072597748306,
+        5.342764415962743e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_169_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        820.2313393597859,
+        5.342764415962743e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_170_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        3281.0337928889976,
+        5.342764415962743e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_171_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        146.95247464798305,
+        5.6321922548709844e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_172_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        587.8748908230021,
+        5.6321922548709844e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_173_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        2351.5645555230785,
+        5.6321922548709844e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_174_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        112.62077047472773,
+        7.629644984230628e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_175_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        450.5268198566247,
+        7.629644984230628e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_176_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        1802.1510173842123,
+        7.629644984230628e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_177_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        90.22640379577709,
+        1.1208405550212836e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_178_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        360.93689942856696,
+        1.1208405550212836e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_179_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.0006510416666666666,
+        0.0005209526008589806,
+        1443.7788819597265,
+        1.1208405550212836e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_180_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        319.95121569965977,
+        1.3278157391440465e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_181_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        1280.006154046626,
+        1.3278157391440465e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_182_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        5120.225907434491,
+        1.3278157391440465e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_183_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        252.3902929060615,
+        3.107327166646432e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_184_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        1009.7024220182086,
+        3.107327166646432e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_185_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        4038.9509384667967,
+        3.107327166646432e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_186_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        206.34098909718284,
+        8.639469048828006e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_187_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        825.4690091511209,
+        8.639469048828006e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_188_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        3301.981089366873,
+        8.639469048828006e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_189_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        148.42207362718216,
+        9.280436514715185e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_190_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        593.7521738117342,
+        9.280436514715185e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_191_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        2375.072574549942,
+        9.280436514715185e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_192_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        113.99217678279906,
+        1.2714655128788316e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_193_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        456.0117393068044,
+        1.2714655128788316e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_194_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        1824.0899894028255,
+        1.2714655128788316e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_195_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        91.46113072333131,
+        1.8825176740887285e-15
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_196_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        365.8754280451759,
+        1.8825176740887285e-15
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_197_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        1463.5326173325543,
+        1.8825176740887285e-15
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_198_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        319.95121569965977,
+        1.3278157391440465e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_199_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        1280.006154046626,
+        1.3278157391440465e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_200_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        5120.225907434491,
+        1.3278157391440465e-11
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_201_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        252.39029290598987,
+        3.1073271666014347e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_202_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        1009.7024220179217,
+        3.1073271666014347e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_203_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        4038.950938465649,
+        3.1073271666014347e-12
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_204_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        206.34098909771072,
+        8.639469049524413e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_205_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        825.4690091532341,
+        8.639469049524413e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_206_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        3301.981089375328,
+        8.639469049524413e-13
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_207_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        148.42207362717966,
+        9.280436514679414e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_208_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        593.7521738117241,
+        9.280436514679414e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_209_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        2375.0725745499017,
+        9.280436514679414e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_210_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        113.99217678281752,
+        1.2714655128770914e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_211_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        456.0117393068782,
+        1.2714655128770914e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_212_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        1824.089989403121,
+        1.2714655128770914e-14
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_213_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        91.46113072335515,
+        1.882517674085886e-15
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_214_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        365.8754280452713,
+        1.882517674085886e-15
+      ]
+    },
+    {
+      "criterion": "finite positive inputs in this sampled grid only",
+      "name": "chart_215_finite_positive_inputs",
+      "passed": true,
+      "value": [
+        0.00016276041666666666,
+        0.000130215784823536,
+        1463.5326173329358,
+        1.882517674085886e-15
+      ]
+    },
+    {
+      "criterion": 12,
+      "name": "registered_physical_probes",
+      "passed": true,
+      "value": 12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_0_1_DOP853_energy",
+      "passed": true,
+      "value": 3.5258438712466583e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_0_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_0_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000003618128595,
+      "name": "chart_0_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.000000341812557
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_0_1_Radau_energy",
+      "passed": true,
+      "value": 3.3863999546812006e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_0_1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135804736317755e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_0_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000001907
+    },
+    {
+      "criterion": 1.0000003618128595,
+      "name": "chart_0_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.000000341812577
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_0_-1_DOP853_energy",
+      "passed": true,
+      "value": 3.5258438712466583e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_0_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_0_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000003618128595,
+      "name": "chart_0_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.000000341812557
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_0_-1_Radau_energy",
+      "passed": true,
+      "value": 3.3863999546812006e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_0_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135804736317755e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_0_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000001907
+    },
+    {
+      "criterion": 1.0000003618128595,
+      "name": "chart_0_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.000000341812577
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_0_paired_methods",
+      "passed": true,
+      "value": 3.2319702469862932e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_0_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_1_1_DOP853_energy",
+      "passed": true,
+      "value": 2.4424906541728544e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_1_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 1.413579858429147e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_1_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200005097,
+      "name": "chart_1_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000005023
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_1_1_Radau_energy",
+      "passed": true,
+      "value": 3.3895108941771476e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_1_1_Radau_quarter_period",
+      "passed": true,
+      "value": 2.827159716858294e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_1_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016753
+    },
+    {
+      "criterion": 1.0000000200005097,
+      "name": "chart_1_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000020506
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_1_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.4424906541728544e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_1_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 1.413579858429147e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_1_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200005097,
+      "name": "chart_1_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000005023
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_1_-1_Radau_energy",
+      "passed": true,
+      "value": 3.3895108941771476e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_1_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 2.827159716858294e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_1_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016753
+    },
+    {
+      "criterion": 1.0000000200005097,
+      "name": "chart_1_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000020506
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_1_paired_methods",
+      "passed": true,
+      "value": 1.6837642391436916e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_1_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_2_1_DOP853_energy",
+      "passed": true,
+      "value": 5.218048186502433e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_2_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 1.4135798634702828e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_2_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000228014119,
+      "name": "chart_2_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0000000028014036
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_2_1_Radau_energy",
+      "passed": true,
+      "value": 3.387290429152962e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_2_1_Radau_quarter_period",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_2_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016362
+    },
+    {
+      "criterion": 1.0000000228014119,
+      "name": "chart_2_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000028030016
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_2_-1_DOP853_energy",
+      "passed": true,
+      "value": 5.218048186502433e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_2_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 1.4135798634702828e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_2_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000228014119,
+      "name": "chart_2_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0000000028014036
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_2_-1_Radau_energy",
+      "passed": true,
+      "value": 3.387290429152962e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_2_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_2_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016362
+    },
+    {
+      "criterion": 1.0000000228014119,
+      "name": "chart_2_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000028030016
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_2_paired_methods",
+      "passed": true,
+      "value": 1.6814327707947996e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_2_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_3_1_DOP853_energy",
+      "passed": true,
+      "value": 2.4868995751590143e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_3_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 2.8271597168574263e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_3_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200002688,
+      "name": "chart_3_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.000000000000261
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_3_1_Radau_energy",
+      "passed": true,
+      "value": 3.388622715759082e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_3_1_Radau_quarter_period",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_3_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016813
+    },
+    {
+      "criterion": 1.0000000200002688,
+      "name": "chart_3_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000017712
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_3_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.4868995751590143e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_3_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 2.8271597168574263e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_3_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200002688,
+      "name": "chart_3_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.000000000000261
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_3_-1_Radau_energy",
+      "passed": true,
+      "value": 3.388622715759082e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_3_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_3_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016813
+    },
+    {
+      "criterion": 1.0000000200002688,
+      "name": "chart_3_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000017712
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_3_paired_methods",
+      "passed": true,
+      "value": 1.6898704657791096e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_3_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_4_1_DOP853_energy",
+      "passed": true,
+      "value": 2.5757174170163702e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_4_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 2.827159716936114e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_4_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200221284,
+      "name": "chart_4_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000221205
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_4_1_Radau_energy",
+      "passed": true,
+      "value": 3.389732938635509e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_4_1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.413579858468057e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_4_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016667
+    },
+    {
+      "criterion": 1.0000000200221284,
+      "name": "chart_4_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.000000000023685
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_4_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.5757174170163702e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_4_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 2.827159716936114e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_4_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200221284,
+      "name": "chart_4_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000221205
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_4_-1_Radau_energy",
+      "passed": true,
+      "value": 3.389732938635509e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_4_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.413579858468057e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_4_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016667
+    },
+    {
+      "criterion": 1.0000000200221284,
+      "name": "chart_4_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.000000000023685
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_4_paired_methods",
+      "passed": true,
+      "value": 1.680877659282487e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_4_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_5_1_DOP853_energy",
+      "passed": true,
+      "value": 2.8088642523015795e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_5_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282512e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_5_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200000119,
+      "name": "chart_5_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000000038
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_5_1_Radau_energy",
+      "passed": true,
+      "value": 3.3897329387854476e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_5_1_Radau_quarter_period",
+      "passed": true,
+      "value": 2.8271597168565023e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_5_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.000000000001677
+    },
+    {
+      "criterion": 1.0000000200000119,
+      "name": "chart_5_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.000000000001519
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_5_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.8088642523015795e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_5_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282512e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_5_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200000119,
+      "name": "chart_5_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000000038
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_5_-1_Radau_energy",
+      "passed": true,
+      "value": 3.3897329387854476e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_5_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 2.8271597168565023e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_5_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.000000000001677
+    },
+    {
+      "criterion": 1.0000000200000119,
+      "name": "chart_5_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.000000000001519
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_5_paired_methods",
+      "passed": true,
+      "value": 1.6862067297978599e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_5_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_6_1_DOP853_energy",
+      "passed": true,
+      "value": 2.198241588757048e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_6_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_6_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200001733,
+      "name": "chart_6_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000001665
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_6_1_Radau_energy",
+      "passed": true,
+      "value": 3.389954983389278e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_6_1_Radau_quarter_period",
+      "passed": true,
+      "value": 2.827159716857083e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_6_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016789
+    },
+    {
+      "criterion": 1.0000000200001733,
+      "name": "chart_6_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000016944
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_6_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.198241588757048e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_6_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_6_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200001733,
+      "name": "chart_6_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000001665
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_6_-1_Radau_energy",
+      "passed": true,
+      "value": 3.389954983389278e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_6_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 2.827159716857083e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_6_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016789
+    },
+    {
+      "criterion": 1.0000000200001733,
+      "name": "chart_6_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000016944
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_6_paired_methods",
+      "passed": true,
+      "value": 1.6863177521003192e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_6_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_7_1_DOP853_energy",
+      "passed": true,
+      "value": 2.3425705819590794e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_7_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 2.82715971685646e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_7_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200000003,
+      "name": "chart_7_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999922
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_7_1_Radau_energy",
+      "passed": true,
+      "value": 3.3888447603658262e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_7_1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.41357985842823e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_7_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016531
+    },
+    {
+      "criterion": 1.0000000200000003,
+      "name": "chart_7_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000015732
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_7_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.3425705819590794e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_7_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 2.82715971685646e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_7_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200000003,
+      "name": "chart_7_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999922
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_7_-1_Radau_energy",
+      "passed": true,
+      "value": 3.3888447603658262e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_7_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.41357985842823e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_7_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016531
+    },
+    {
+      "criterion": 1.0000000200000003,
+      "name": "chart_7_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000015732
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_7_paired_methods",
+      "passed": true,
+      "value": 1.680655614677562e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_7_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_8_1_DOP853_energy",
+      "passed": true,
+      "value": 2.3092638912203196e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_8_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_8_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200000014,
+      "name": "chart_8_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999937
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_8_1_Radau_energy",
+      "passed": true,
+      "value": 3.3908431618101442e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_8_1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282322e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_8_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016749
+    },
+    {
+      "criterion": 1.0000000200000014,
+      "name": "chart_8_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000015408
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_8_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.3092638912203196e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_8_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_8_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0000000200000014,
+      "name": "chart_8_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999937
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_8_-1_Radau_energy",
+      "passed": true,
+      "value": 3.3908431618101442e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_8_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282322e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_8_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000016749
+    },
+    {
+      "criterion": 1.0000000200000014,
+      "name": "chart_8_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000015408
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_8_paired_methods",
+      "passed": true,
+      "value": 1.683320149933843e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_8_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_9_1_DOP853_energy",
+      "passed": true,
+      "value": 2.3092638912203256e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_9_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 4.240739575284689e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_9_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_9_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999926
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_9_1_Radau_energy",
+      "passed": true,
+      "value": 3.3864022697116525e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_9_1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282297e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_9_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000015927
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_9_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000016183
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_9_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.3092638912203256e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_9_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 4.240739575284689e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_9_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_9_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999926
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_9_-1_Radau_energy",
+      "passed": true,
+      "value": 3.3864022697116525e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_9_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282297e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_9_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000015927
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_9_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000016183
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_9_paired_methods",
+      "passed": true,
+      "value": 1.6789902801406242e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_9_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_10_1_DOP853_energy",
+      "passed": true,
+      "value": 2.3092638912203256e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_10_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 4.240739575284689e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_10_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_10_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999926
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_10_1_Radau_energy",
+      "passed": true,
+      "value": 3.3864022697116525e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_10_1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282297e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_10_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000015927
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_10_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000016183
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_10_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.3092638912203256e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_10_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 4.240739575284689e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_10_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_10_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999926
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_10_-1_Radau_energy",
+      "passed": true,
+      "value": 3.3864022697116525e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_10_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282297e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_10_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000015927
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_10_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000016183
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_10_paired_methods",
+      "passed": true,
+      "value": 1.6789902801406242e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_10_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_11_1_DOP853_energy",
+      "passed": true,
+      "value": 2.3092638912203256e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_11_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 4.240739575284689e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_11_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_11_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999926
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_11_1_Radau_energy",
+      "passed": true,
+      "value": 3.3864022697116525e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_11_1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282297e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_11_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000015927
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_11_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000016183
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_11_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.3092638912203256e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_11_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 4.240739575284689e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_11_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_11_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999926
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_11_-1_Radau_energy",
+      "passed": true,
+      "value": 3.3864022697116525e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_11_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282297e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_11_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000015927
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "chart_11_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000016183
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_11_paired_methods",
+      "passed": true,
+      "value": 1.6789902801406242e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "chart_11_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_1_DOP853_energy",
+      "passed": true,
+      "value": 2.3092638912203256e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 4.240739575284689e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_0_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_0_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999926
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_1_DOP853_harmonic_control",
+      "passed": true,
+      "value": 1.5654144647214707e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_1_Radau_energy",
+      "passed": true,
+      "value": 3.3864022697116525e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282297e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_0_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000015927
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_0_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000016183
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_1_Radau_harmonic_control",
+      "passed": true,
+      "value": 1.6792123247455493e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_-1_DOP853_energy",
+      "passed": true,
+      "value": 2.3092638912203256e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 4.240739575284689e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_0_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_0_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 0.9999999999999926
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_-1_DOP853_harmonic_control",
+      "passed": true,
+      "value": 1.5654144647214707e-14
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_-1_Radau_energy",
+      "passed": true,
+      "value": 3.3864022697116525e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.4135798584282297e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_0_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0000000000015927
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_0_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0000000000016183
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_-1_Radau_harmonic_control",
+      "passed": true,
+      "value": 1.6792123247455493e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_paired_methods",
+      "passed": true,
+      "value": 1.6789902801406242e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_0_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_1_1_DOP853_energy",
+      "passed": true,
+      "value": 3.2831091691430353e-10
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_1_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 6.377458747119495e-14
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_1_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0408330205497265,
+      "name": "synthetic_1_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0408298678906263
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_1_1_Radau_energy",
+      "passed": true,
+      "value": 4.39484346351002e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_1_1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.486587120540675e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_1_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0408330205497265,
+      "name": "synthetic_1_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0408298680097203
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_1_-1_DOP853_energy",
+      "passed": true,
+      "value": 3.2831091691430353e-10
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_1_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 6.377458747119495e-14
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_1_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0408330205497265,
+      "name": "synthetic_1_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.0408298678906263
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_1_-1_Radau_energy",
+      "passed": true,
+      "value": 4.39484346351002e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_1_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.486587120540675e-16
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_1_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.0408330205497265,
+      "name": "synthetic_1_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.0408298680097203
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_1_paired_methods",
+      "passed": true,
+      "value": 2.195034154439668e-10
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_1_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_2_1_DOP853_energy",
+      "passed": true,
+      "value": 7.140088520429799e-11
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_2_1_DOP853_quarter_period",
+      "passed": true,
+      "value": 1.2359746939682063e-13
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_2_1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.2909944745556947,
+      "name": "synthetic_2_1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.290992194829536
+    },
+    {
+      "criterion": 2e-06,
+      "name": "synthetic_2_1_DOP853_coarse_fine",
+      "passed": true,
+      "value": 5.0457787059698944e-08
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_2_1_Radau_energy",
+      "passed": true,
+      "value": 7.64748264714399e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_2_1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.151529217982801e-15
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_2_1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.2909944745556947,
+      "name": "synthetic_2_1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.2909921948693142
+    },
+    {
+      "criterion": 2e-06,
+      "name": "synthetic_2_1_Radau_coarse_fine",
+      "passed": true,
+      "value": 3.9853734840056276e-08
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_2_-1_DOP853_energy",
+      "passed": true,
+      "value": 7.140088520429799e-11
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_2_-1_DOP853_quarter_period",
+      "passed": true,
+      "value": 1.2359746939682063e-13
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_2_-1_DOP853_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.2909944745556947,
+      "name": "synthetic_2_-1_DOP853_velocity_bound",
+      "passed": true,
+      "value": 1.290992194829536
+    },
+    {
+      "criterion": 2e-06,
+      "name": "synthetic_2_-1_DOP853_coarse_fine",
+      "passed": true,
+      "value": 5.0457787059698944e-08
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_2_-1_Radau_energy",
+      "passed": true,
+      "value": 7.64748264714399e-12
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_2_-1_Radau_quarter_period",
+      "passed": true,
+      "value": 1.151529217982801e-15
+    },
+    {
+      "criterion": 1.00000002,
+      "name": "synthetic_2_-1_Radau_amplitude_bound",
+      "passed": true,
+      "value": 1.0
+    },
+    {
+      "criterion": 1.2909944745556947,
+      "name": "synthetic_2_-1_Radau_velocity_bound",
+      "passed": true,
+      "value": 1.2909921948693142
+    },
+    {
+      "criterion": 2e-06,
+      "name": "synthetic_2_-1_Radau_coarse_fine",
+      "passed": true,
+      "value": 3.9853734840056276e-08
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_2_paired_methods",
+      "passed": true,
+      "value": 1.3302209334042914e-10
+    },
+    {
+      "criterion": 2e-08,
+      "name": "synthetic_2_signed_parity",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "no promotion",
+      "name": "parent_holds_preserved",
+      "passed": true,
+      "value": "physics_pass=false; review deferred"
+    }
+  ],
+  "claim_status": "Conditional",
+  "classical_evolution_no_go": false,
+  "frozen_probe_status": "PASS_BOUNDED_CLASSICAL_GALERKIN_PROBE",
+  "full_action_Legendre_regular": "NOT_DETERMINED",
+  "full_coupled_classical_uniqueness": "NOT_DETERMINED",
+  "full_finite_density_scattering_verified": false,
+  "full_physical_validity_domain_verified": false,
+  "full_quartic_constraint_reduction_verified": false,
+  "gate_effect": "NONE",
+  "higher_harmonic_force_ratio": "1/5",
+  "numerical_summary": {
+    "chart_events": 216,
+    "coarse_integrations": 4,
+    "fine_integrations": 60,
+    "max_energy_drift": 3.2831091691430353e-10,
+    "max_paired_method_error": 2.195034154439668e-10,
+    "max_parity_error": 0.0,
+    "max_quarter_period_error": 1.2359746939682063e-13,
+    "numerical_effect_resolution": "NOT_CLAIMED_WHEN_BELOW_REGISTERED_TOLERANCE",
+    "physical_chart_probes": 12,
+    "physical_gamma_range": [
+      4.030372215075516e-20,
+      1.0254387325218494e-06
+    ],
+    "synthetic_controls": 3
+  },
+  "ordinary_cubic_Taylor_vertices_available": false,
+  "passed": 530,
+  "physical_EFT_cutoff": "NOT_DERIVED",
+  "physical_amplitude_bound": "NOT_DERIVED",
+  "physics_pass": false,
+  "probe_Legendre_regular": true,
+  "quantum_inconsistency_proved": false,
+  "research_execution": "PROCEED_PROVISIONALLY",
+  "review_dependencies": [
+    "R9-MT1-G3V-CROSSCHECK",
+    "R9-MT1-G3V",
+    "R9-MT1-G3V-V1-INTEGRITY",
+    "all parent direct/transitive scientific and review holds"
+  ],
+  "review_status": "DEFERRED",
+  "runtime": {
+    "mpmath": "1.3.0",
+    "numpy": "2.4.6",
+    "python": "3.13.9",
+    "quadrature_digits": 50,
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "schema": "r4c1-g3n1-v1",
+  "script_sha256": "dde5c735beb7851e9a0c37c593e81bf0b2ffc8c04cb2fb3ff77b55d0fe943402",
+  "single_mode_invariant": false,
+  "source_sha256": {
+    "Analysis/MasterTests/outputs/r4c1_g3v_crosscheck_attempt_01/grid.json": "bbb332d89a5a63af119c6f7c34580516ca450e19dc46c67a4d0a31c61d3a859b",
+    "Analysis/MasterTests/outputs/r4c1_g3v_crosscheck_attempt_01/summary.json": "b752415f0d5741c80a47dca5c699f7dc2ca54d31fc43ba04ded4c335939bf492",
+    "Analysis/MasterTests/test_01_r4c1_g3_coupled_vertex_regularity_crosscheck.py": "4898f85f20e30bb0ba3c61492d97657bde0163b3bf74a67c60ba38d9cf027f19",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N1_CLASSICAL_CUSP_AMPLITUDE_CONTRACT_2026-10-08.md": "83a6aafc934d00982b28ce745ef4626fdd6a4a017e5c2dcd328e14ea0985a102",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_COUPLED_VERTEX_REGULARITY_REPORT_2026-10-08_v1.md": "952b4315a5607358a4fc0250a9ab67efc90577dda77f006b357fc1cbd74eeb27",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_VERTEX_REGULARITY_CROSSCHECK_REPORT_2026-10-08.md": "0b35ad651859271e9310b8aeec5a0957805efe35cd05fbece96b498969c22409"
+  },
+  "status": "CONDITIONAL_CLASSICAL_GALERKIN_EVOLUTION_ONE_MODE_CLOSURE_REJECTED",
+  "total": 530,
+  "transitive_source_sha256": {
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/outputs/r4c1_g3_fd_attempt_01/summary.json": "00ceee7e06cca286baab567e169373ce2b5d1b8ec057f5a7fd5746d6c6748c98",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/formulas.json": "f4b7a2e69c7a51ebf33d25b94e03a60f7ca2680fecb481e42d4258cf9219ace6",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/summary.json": "3c46b9834c6805c0ae46aeb0ff6226ec2abf814db873abc1d8fc104b8eacab72",
+    "Analysis/MasterTests/outputs/r4c1_g3d_attempt_01/formulas.json": "68aaddb629ba729aa197804d46f8228d509111195757288221d21bb7f7a692e8",
+    "Analysis/MasterTests/outputs/r4c1_g3d_attempt_01/summary.json": "c309ec0fbd3e3c3bff9ac05c86c4c0fe5f5e37edd5cc66a2a37cabb9bc6e5b72",
+    "Analysis/MasterTests/outputs/r4c1_g3df_attempt_01/summary.json": "877b6f630a6692965656005fc823a2141b21daac4d32461f77e28dd12905a5a3",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/formulas.json": "f634e510fd6e04f51f0c2c6cc1f43d284b0b0c9e5d9c44d4a3b4de9d8a35e87f",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/summary.json": "1f13df62495f3a39198b697a7387f14086338306a8a5e24462b1e873800f1b5a",
+    "Analysis/MasterTests/outputs/r4c1_g3e_gr_attempt_01/summary.json": "813353365311041ba341c96ec5949520e927df06f69bde8e5be19227930a5d28",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/columns.npy": "2a7df2c3ca35f5d438f54520241c880692c9804d03f3bf1bf696cf183345bccc",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/embedding.json": "c235d8c9f81314f01ade15dddd215263fc22754efa6caee485d793f85e432300",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/summary.json": "3c3241a44e43b986971c8c340643b6b9c87ca97c803347cb9da5c0a934fa05e1",
+    "Analysis/MasterTests/outputs/r4c1_g3i_attempt_01/summary.json": "0d85d136e7c7a3c4cd4b49d984f70d3bfdbdd70aed82b3fc423181028aa1d9c7",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/summary.json": "550caae54b03b490a5388ecd363ad0f9ff0d8d4891021d2eb1c366871d54378a",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/pencil.json": "abb6a23cba1f80b0a02bf76d1bb47153bd745be55e83c44e9bd8183f9a9d5bb4",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/summary.json": "60d9de53f95592512e094ffc60c81a781ab8f9b33a8afa93dbf53943efbb34bf",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_scalar.py": "eb5d8c41938d346a294aa03f713ea10655b939234dab7935f4a0ee9f774553f9",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/test_01_r4c1_g3_density_action.py": "1a855ad2a5bbafbee0ad7164604a210f5a236529896cbbab5a62173d6e822fc8",
+    "Analysis/MasterTests/test_01_r4c1_g3_finite_k.py": "24ef13486d8477cb021dc4931d6e64c6d6fcc8fa52a330c106515c4507624504",
+    "Analysis/MasterTests/test_01_r4c1_g3_slow_action.py": "64e59e69851734cd24a4abbd31d7b02b17490395b1d841b1a0f06bd246681b90",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Gates/ITSM_MASTER_TESTS_01_03_REQUIREMENT_DISPOSITION_2026-09-30.md": "9ccd38b3c1d20670c759488ce6f4ecd865355090733359cd506d7b01fd3c9ac3",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_REPORT_2026-09-30.md": "1b9fbc4185b61d1e37d7865baa811994e235523eb9ecc22432c733b4bc38aa04",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_CONTRACT_2026-09-30.md": "92fc34dd19f2bc5de077703b0e7a8b209c14fdf1ae66674bc1f8176d8e4be1c5",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_COUPLED_VERTEX_REGULARITY_CONTRACT_2026-10-08.md": "53940518eeff7ca46fb5a9373db6e4637360eeedaeffcba6044af5cc580ac3ac",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_CONTRACT_2026-09-30.md": "0ff843db7c1887fea71e307fd8801841427628d0426bf8f9bd83e4b78e9c5758",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_REPORT_2026-09-30.md": "8a1c2245fc02307c5e70c7b4c1064872e82464c4c411d3095e97575c730b1876",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_CONTRACT_2026-09-30.md": "75050556086b27f794b2378ac389f6bb864ae03e4441c395ff5fc64538b1cd55",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_CONTRACT_2026-10-08.md": "26ecfebc6d7792c0a5d6e065b8512f803d5ddd6e6316d01300d83ad7ef2769ce",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_REPORT_2026-10-08.md": "a247893f8f0cb15760c20cc24b4f19b91f701ce2aaa0ec585a534b3436b78d13",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_REPORT_2026-09-30.md": "25b39464948805df96eeded13cc96fa04c87e767e1781113514f85d5fd957771",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FRAME_SCATTERING_CONTRACT_2026-10-08.md": "f54c7a7297350256ae199c3ba2b5f19266094c57739b95c6dad0ee253627d5f8",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FRAME_SCATTERING_REPORT_2026-10-08.md": "035d1480904b2459b6a4e8b6df91d381065a653fdeb49583fcdb3dbfc4ac49f4",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_CONTRACT_2026-09-30.md": "f6a35a4ade82c8d925b44d6984164eb761e50015936623b0683e071516f62a43",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_REPORT_2026-09-30.md": "2158f16970e883eb661aaabd04a1014aef3d8a47e6346ad7cb27453f464db83c",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_CONTRACT_2026-09-30.md": "d1d64c216465956424589f95c940116bc198f5670552297b7e611894bcd385fa",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_REPORT_2026-09-30.md": "d350c85fafb752502c017b7c93bc0223b4386ed72c39080c3e01126478d60f02",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_CONTRACT_2026-09-30.md": "47723c96936643b6be19d22e00a4f98bc3f4208cb409e61c255e041b7ce725e5",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_REPORT_2026-09-30.md": "fe8d380be77af9e5ccecb02c62b8264d5ecbb6bf5d42153755c2914cd355cdbd",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md": "2f151504d695ee442585653982cbbabfca2f520e864a802de306c0b013f3abc4",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md": "c2a5c82f285dc04adcfffed4ba5c562661ddca98c4d045802ffb6e88bfeefd68"
+  },
+  "validation": "PASS_BOUNDED_CHECKS"
+}

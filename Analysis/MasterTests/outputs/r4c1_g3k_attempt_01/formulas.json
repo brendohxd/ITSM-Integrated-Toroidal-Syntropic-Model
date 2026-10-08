@@ -1,0 +1,184 @@
+{
+  "q": [
+    "xi",
+    "w",
+    "u",
+    "v",
+    "r",
+    "psi",
+    "z"
+  ],
+  "jet_order": [
+    "xi",
+    "w",
+    "u",
+    "v",
+    "r",
+    "psi",
+    "z",
+    "xi_dot",
+    "w_dot",
+    "u_dot",
+    "v_dot",
+    "r_dot",
+    "psi_dot",
+    "z_dot",
+    "xi_x",
+    "w_x",
+    "u_x",
+    "v_x",
+    "r_x",
+    "psi_x",
+    "z_x",
+    "B",
+    "B_x"
+  ],
+  "dust_clock_scalar_action": "ap*bp**2*(-A*(w*(-B*psi_x/ap + psi_dot)*exp(beta*psi) + psi_x*sqrt(w**2 + 1)/ap)**3 + K*(sqrt(w**2 + 1)*(-B*psi_x/ap + psi_dot)*exp(beta*psi) + psi_x*w/ap)**2/2 + MP2*(-(-2*B_x/ap + 2*Hx)*(-B*xi_x/ap + Hy + xi_dot)*exp(2*beta*psi) - (-B*xi_x/ap + Hy + xi_dot)**2*exp(2*beta*psi) - 2*beta*psi_x*xi_x/ap**2 + xi_x**2/ap**2) - MU2*(c1*(((-B_x/ap + Hx)*exp(beta*psi) + w_x/(ap*sqrt(w**2 + 1)))**2 + (-(-B*w_x/ap + w_dot)*exp(beta*psi)/sqrt(w**2 + 1) + beta*psi_x/ap)*((-B*w_x/ap + w_dot)*exp(beta*psi)/sqrt(w**2 + 1) - beta*psi_x/ap) + (sqrt(w**2 + 1)*(-B*xi_x/ap + Hy + xi_dot)*exp(beta*psi) + w*xi_x/ap)*(2*sqrt(w**2 + 1)*(-B*xi_x/ap + Hy + xi_dot)*exp(beta*psi) + 2*w*xi_x/ap)) + c2*(w*((-B*w_x/ap + w_dot)*exp(beta*psi)/sqrt(w**2 + 1) - beta*psi_x/ap) + sqrt(w**2 + 1)*((-B_x/ap + Hx)*exp(beta*psi) + w_x/(ap*sqrt(w**2 + 1))) + 2*sqrt(w**2 + 1)*(-B*xi_x/ap + Hy + xi_dot)*exp(beta*psi) + 2*w*xi_x/ap)**2 + c3*((w*((-B*w_x/ap + w_dot)*exp(beta*psi)/sqrt(w**2 + 1) - beta*psi_x/ap) + sqrt(w**2 + 1)*((-B_x/ap + Hx)*exp(beta*psi) + w_x/(ap*sqrt(w**2 + 1))))**2 + (sqrt(w**2 + 1)*(-B*xi_x/ap + Hy + xi_dot)*exp(beta*psi) + w*xi_x/ap)*(2*sqrt(w**2 + 1)*(-B*xi_x/ap + Hy + xi_dot)*exp(beta*psi) + 2*w*xi_x/ap)) - c4*(w*((-B_x/ap + Hx)*exp(beta*psi) + w_x/(ap*sqrt(w**2 + 1))) + sqrt(w**2 + 1)*((-B*w_x/ap + w_dot)*exp(beta*psi)/sqrt(w**2 + 1) - beta*psi_x/ap))**2)/2 + b*z**2/2 - b*z*(w*((-B_x/ap + Hx)*exp(beta*psi) + w_x/(ap*sqrt(w**2 + 1))) + sqrt(w**2 + 1)*((-B*w_x/ap + w_dot)*exp(beta*psi)/sqrt(w**2 + 1) - beta*psi_x/ap))*(w*(-B*psi_x/ap + psi_dot)*exp(beta*psi) + psi_x*sqrt(w**2 + 1)/ap) - b*(w*(-B*psi_x/ap + psi_dot)*exp(beta*psi) + psi_x*sqrt(w**2 + 1)/ap)*(w*(-B*z_x/ap + z_dot)*exp(beta*psi) + z_x*sqrt(w**2 + 1)/ap) - gr*r**2*(u**2 + v**2)/4 - l4*(u**2 + v**2)**2/8 - lr*r**4/4 - m2*(u**2 + v**2)/2 - mr2*r**2/2 - vacuum - zeta*(w*(-B*(-u*v_x + u_x*v)/ap - u*v_dot + u_dot*v)*exp(beta*psi) + sqrt(w**2 + 1)*(-u*v_x + u_x*v)/ap)**2/2 + (-B*r_x/ap + r_dot)**2*exp(2*beta*psi)/2 + (-B*u_x/ap + u_dot)**2*exp(2*beta*psi)/2 + (-B*v_x/ap + v_dot)**2*exp(2*beta*psi)/2 - l6*(u**2 + v**2)**3/(24*cutoff**2) - r_x**2/(2*ap**2) - u_x**2/(2*ap**2) - v_x**2/(2*ap**2))*exp(2*xi)*exp(-beta*psi)",
+  "shift_gradient_coefficient": "-MU2*bp**2*(c1 + c2*w**2 + c2 + c3*w**2 + c3 - c4*w**2)*exp(beta*psi)/ap",
+  "G3_shift_gradient_coefficient": "bp**2*eta*(5*w**2 - 1)*exp(beta*psi)/(36*ap)",
+  "shift_rank_surface": "w**2=1/5; k=0 separate",
+  "reduced_kinetic": [
+    [
+      "-2*ap*bp**2*(-2*MP2**2 + MP2*MU2*c1 - 3*MP2*MU2*c2*w**2 - 3*MP2*MU2*c2 + MP2*MU2*c3*w**2 + MP2*MU2*c3 - MP2*MU2*c4*w**2 + MU2**2*c1**2*w**2 + MU2**2*c1**2 + MU2**2*c1*c2*w**4 + 4*MU2**2*c1*c2*w**2 + 3*MU2**2*c1*c2 + MU2**2*c1*c3*w**4 + 3*MU2**2*c1*c3*w**2 + 2*MU2**2*c1*c3 - MU2**2*c1*c4*w**4 - MU2**2*c1*c4*w**2 + 3*MU2**2*c2*c3*w**4 + 6*MU2**2*c2*c3*w**2 + 3*MU2**2*c2*c3 - 2*MU2**2*c2*c4*w**4 - 2*MU2**2*c2*c4*w**2 + MU2**2*c3**2*w**4 + 2*MU2**2*c3**2*w**2 + MU2**2*c3**2 - MU2**2*c3*c4*w**4 - MU2**2*c3*c4*w**2)*exp(beta*psi)/(MU2*(c1 + c2*w**2 + c2 + c3*w**2 + c3 - c4*w**2))",
+      "-2*ap*bp**2*w*(-MP2*c2 - MP2*c3 + MP2*c4 + MU2*c1*c2 + MU2*c2*c4)*exp(beta*psi)/(c1 + c2*w**2 + c2 + c3*w**2 + c3 - c4*w**2)",
+      "0",
+      "0",
+      "0",
+      "2*ap*b*bp**2*w**2*z*(MP2 + MU2*c2*w**2 + MU2*c2)*exp(beta*psi)/(MU2*(c1 + c2*w**2 + c2 + c3*w**2 + c3 - c4*w**2))",
+      "0"
+    ],
+    [
+      "-2*ap*bp**2*w*(-MP2*c2 - MP2*c3 + MP2*c4 + MU2*c1*c2 + MU2*c2*c4)*exp(beta*psi)/(c1 + c2*w**2 + c2 + c3*w**2 + c3 - c4*w**2)",
+      "MU2*ap*bp**2*(c1 + c4)*(c1 + c2 + c3)*exp(beta*psi)/((w**2 + 1)*(c1 + c2*w**2 + c2 + c3*w**2 + c3 - c4*w**2))",
+      "0",
+      "0",
+      "0",
+      "-ap*b*bp**2*w*z*(c1 + c2 + c3)*exp(beta*psi)/(c1 + c2*w**2 + c2 + c3*w**2 + c3 - c4*w**2)",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-ap*bp**2*(v**2*w**2*zeta - 1)*exp(beta*psi)",
+      "ap*bp**2*u*v*w**2*zeta*exp(beta*psi)",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "ap*bp**2*u*v*w**2*zeta*exp(beta*psi)",
+      "-ap*bp**2*(u**2*w**2*zeta - 1)*exp(beta*psi)",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "ap*bp**2*exp(beta*psi)",
+      "0",
+      "0"
+    ],
+    [
+      "2*ap*b*bp**2*w**2*z*(MP2 + MU2*c2*w**2 + MU2*c2)*exp(beta*psi)/(MU2*(c1 + c2*w**2 + c2 + c3*w**2 + c3 - c4*w**2))",
+      "-ap*b*bp**2*w*z*(c1 + c2 + c3)*exp(beta*psi)/(c1 + c2*w**2 + c2 + c3*w**2 + c3 - c4*w**2)",
+      "0",
+      "0",
+      "0",
+      "ap*bp**2*(-6*A*MU2*c1*psi_dot*w**3*exp(beta*psi) - 6*A*MU2*c2*psi_dot*w**5*exp(beta*psi) - 6*A*MU2*c2*psi_dot*w**3*exp(beta*psi) - 6*A*MU2*c3*psi_dot*w**5*exp(beta*psi) - 6*A*MU2*c3*psi_dot*w**3*exp(beta*psi) + 6*A*MU2*c4*psi_dot*w**5*exp(beta*psi) + K*MU2*c1*w**2 + K*MU2*c1 + K*MU2*c2*w**4 + 2*K*MU2*c2*w**2 + K*MU2*c2 + K*MU2*c3*w**4 + 2*K*MU2*c3*w**2 + K*MU2*c3 - K*MU2*c4*w**4 - K*MU2*c4*w**2 + b**2*w**4*z**2)*exp(beta*psi)/(MU2*(c1 + c2*w**2 + c2 + c3*w**2 + c3 - c4*w**2))",
+      "-ap*b*bp**2*w**2*exp(beta*psi)"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-ap*b*bp**2*w**2*exp(beta*psi)",
+      "0"
+    ]
+  ],
+  "aligned_kinetic": [
+    [
+      "3*ap*bp**2*(eta - 12)*(eta - 8)*exp(beta*psi)/(2*eta)",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "ap*bp**2*eta*exp(beta*psi)/6",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "ap*bp**2*exp(beta*psi)",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "ap*bp**2*exp(beta*psi)",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "ap*bp**2*exp(beta*psi)",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "3*ap*bp**2*eta*exp(beta*psi)",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "operator": "Tred q_ddot+(Tred_dot+Wred-Wred_dagger)q_dot+(Wred_dot-Vred)q=0",
+  "scope": "complete closed scalar axis sector; no arbitrary-direction/tensor/vector physical cutoff",
+  "covariant_validation": {
+    "frame_invariants": [
+      "(-Nx/(N*ap) - (-B*wx/ap + wt)/(N*sqrt(w**2 + 1)))*(Nx/(N*ap) + (-B*wx/ap + wt)/(N*sqrt(w**2 + 1))) + (w*xix/ap + sqrt(w**2 + 1)*(-B*xix/ap + Hy + xit)/N)*(2*w*xix/ap + 2*sqrt(w**2 + 1)*(-B*xix/ap + Hy + xit)/N) + (wx/(ap*sqrt(w**2 + 1)) + (-Bx/ap + Hx)/N)**2",
+      "(w*(Nx/(N*ap) + (-B*wx/ap + wt)/(N*sqrt(w**2 + 1))) + sqrt(w**2 + 1)*(wx/(ap*sqrt(w**2 + 1)) + (-Bx/ap + Hx)/N) + 2*w*xix/ap + 2*sqrt(w**2 + 1)*(-B*xix/ap + Hy + xit)/N)**2",
+      "(w*(Nx/(N*ap) + (-B*wx/ap + wt)/(N*sqrt(w**2 + 1))) + sqrt(w**2 + 1)*(wx/(ap*sqrt(w**2 + 1)) + (-Bx/ap + Hx)/N))**2 + (w*xix/ap + sqrt(w**2 + 1)*(-B*xix/ap + Hy + xit)/N)*(2*w*xix/ap + 2*sqrt(w**2 + 1)*(-B*xix/ap + Hy + xit)/N)",
+      "(w*(wx/(ap*sqrt(w**2 + 1)) + (-Bx/ap + Hx)/N) + sqrt(w**2 + 1)*(Nx/(N*ap) + (-B*wx/ap + wt)/(N*sqrt(w**2 + 1))))**2"
+    ],
+    "Y": "(psi_x*sqrt(w**2 + 1)/ap + w*(-B*psi_x/ap + psi_dot)/N)**2",
+    "R3": "-2*(3*xix**2 + 2*xixx)/ap**2",
+    "Einstein_first_derivative_density": "MP2*N*ap*bp**2*(xix**2/ap**2 + 2*Nx*xix/(N*ap**2) - (-2*Bx/ap + 2*Hx)*(-B*xix/ap + Hy + xit)/N**2 - (-B*xix/ap + Hy + xit)**2/N**2)*exp(2*xi)",
+    "spatial_boundary_density": "-4*MP2*N*bp**2*xix**2*exp(2*xi)/ap - 2*MP2*N*bp**2*xixx*exp(2*xi)/ap - 2*MP2*Nx*bp**2*xix*exp(2*xi)/ap"
+  }
+}

@@ -1,0 +1,1760 @@
+{
+  "schema": "r4c1-g3-equal-newton-family-v1",
+  "candidate": "R4C1-v1",
+  "control": "R4C1-G3",
+  "validation": "FAIL_LOCAL_CHECKS",
+  "passed": 112,
+  "total": 113,
+  "checks": [
+    {
+      "name": "source_pin_mutation_rejected",
+      "passed": true,
+      "value": true,
+      "criterion": "reject before output creation"
+    },
+    {
+      "name": "tensor_spatial_curvature_with_boundary",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "covariant_c1_equals_extrinsic_square",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "covariant_c2_equals_extrinsic_trace_square",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "covariant_c3_equals_extrinsic_square",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "aligned_frame_acceleration_zero",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "tensor_temporal_quadratic_action",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "omitted_frame_tensor_term_rejected",
+      "passed": true,
+      "value": "-1/32",
+      "criterion": "nonzero exact residual"
+    },
+    {
+      "name": "reversed_frame_tensor_sign_rejected",
+      "passed": true,
+      "value": "-1/16",
+      "criterion": "nonzero exact residual"
+    },
+    {
+      "name": "alpha13",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "alpha14",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "alpha2",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "alphaL",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "Mc2",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "Mt2",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "G_cos_over_G_static",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "K_vector",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "c_vector_squared",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "c_tensor_squared",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "S1_D_over_H_squared",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "canonical_force_cubic",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "canonical_regulator",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "canonical_matter",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "tensor_speed_approaches_one",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "vector_kinetic_vanishes",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "force_kinetic_vanishes",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "tensor_cone_excess",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "bare_ci_normalization_mutant",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "bare_ci_as_alpha_mutant_rejected",
+      "passed": true,
+      "value": {
+        "bare_c13": "3/16",
+        "alpha13_at_eta1": "1/8"
+      },
+      "criterion": "bare c13 differs from dimensionless alpha13"
+    },
+    {
+      "name": "general_equal_Newton_scalar_relation",
+      "passed": true,
+      "residual": "0",
+      "expected": "zero_exact"
+    },
+    {
+      "name": "eta_1.0_DOP853_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_1.0_DOP853_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.14537805157377648,
+        "min_rho_m": 0.001831154840908824
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_1.0_DOP853_max_normalized_Friedmann",
+      "passed": true,
+      "value": 2.3595041797134627e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_1.0_DOP853_max_charge_drift",
+      "passed": true,
+      "value": 1.9885870727875954e-11,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_1.0_DOP853_max_dust_integral_drift",
+      "passed": true,
+      "value": 3.116645830303355e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_1.0_Radau_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_1.0_Radau_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.1453780515737754,
+        "min_rho_m": 0.001831154840907254
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_1.0_Radau_max_normalized_Friedmann",
+      "passed": true,
+      "value": 8.428527555620712e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_1.0_Radau_max_charge_drift",
+      "passed": true,
+      "value": 1.201594379551807e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_1.0_Radau_max_dust_integral_drift",
+      "passed": true,
+      "value": 8.134881657184678e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_1.0_two_method_agreement",
+      "passed": true,
+      "value": 1.0772493647912133e-11,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_1.0_inherited_kinetic_weights_positive",
+      "passed": true,
+      "value": {
+        "K_force": 3.0,
+        "K_vector": 0.16666666666666666,
+        "min_D": 2.4410668450692694,
+        "max_D": 104.07000000000002,
+        "Mc2": 0.9166666666666666,
+        "Mt2": 0.875,
+        "MU2_cL": 0.02777777777777778,
+        "c_tensor_squared": 1.1428571428571428,
+        "c_vector_squared": 0.8535714285714285
+      },
+      "criterion": "positive inherited S1/G1 weights on regular nonzero-mode chart"
+    },
+    {
+      "name": "eta_1.0_initial_charge",
+      "passed": true,
+      "value": 1.0,
+      "criterion": "equals eta within 1e-14; not fixed charge"
+    },
+    {
+      "name": "eta1_independent_fd_balances",
+      "passed": false,
+      "value": 1.1005635230674148e-07,
+      "criterion": "<1e-7"
+    },
+    {
+      "name": "eta1_independent_fd_spatial_metric",
+      "passed": true,
+      "value": 2.4275933854062682e-08,
+      "criterion": "<1e-7"
+    },
+    {
+      "name": "eta1_fd_balance_refinement",
+      "passed": true,
+      "value": 201.77174297734587,
+      "criterion": ">=4 or endpoint residuals both<1e-9"
+    },
+    {
+      "name": "eta_0.25_DOP853_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_0.25_DOP853_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.1247837177463399,
+        "min_rho_m": 0.010126832383280637
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_0.25_DOP853_max_normalized_Friedmann",
+      "passed": true,
+      "value": 5.654091027529196e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.25_DOP853_max_charge_drift",
+      "passed": true,
+      "value": 1.2588097231258644e-11,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.25_DOP853_max_dust_integral_drift",
+      "passed": true,
+      "value": 2.545436084133712e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.25_Radau_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_0.25_Radau_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.1247837177458338,
+        "min_rho_m": 0.010126832383299438
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_0.25_Radau_max_normalized_Friedmann",
+      "passed": true,
+      "value": 1.037062139350134e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.25_Radau_max_charge_drift",
+      "passed": true,
+      "value": 2.4202861936828413e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.25_Radau_max_dust_integral_drift",
+      "passed": true,
+      "value": 3.480826737956022e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.25_two_method_agreement",
+      "passed": true,
+      "value": 1.5386686890817075e-11,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.25_inherited_kinetic_weights_positive",
+      "passed": true,
+      "value": {
+        "K_force": 0.75,
+        "K_vector": 0.041666666666666664,
+        "min_D": 8.507592129251103,
+        "max_D": 133.0444921875,
+        "Mc2": 0.9791666666666666,
+        "Mt2": 0.96875,
+        "MU2_cL": 0.006944444444444445,
+        "c_tensor_squared": 1.032258064516129,
+        "c_vector_squared": 0.8120967741935484
+      },
+      "criterion": "positive inherited S1/G1 weights on regular nonzero-mode chart"
+    },
+    {
+      "name": "eta_0.25_initial_charge",
+      "passed": true,
+      "value": 0.25,
+      "criterion": "equals eta within 1e-14; not fixed charge"
+    },
+    {
+      "name": "eta_0.0625_DOP853_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_0.0625_DOP853_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.11060661973383856,
+        "min_rho_m": 0.021146871912296875
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_0.0625_DOP853_max_normalized_Friedmann",
+      "passed": true,
+      "value": 2.7405800777074535e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0625_DOP853_max_charge_drift",
+      "passed": true,
+      "value": 1.686560613389787e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0625_DOP853_max_dust_integral_drift",
+      "passed": true,
+      "value": 1.1482759187941838e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0625_Radau_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_0.0625_Radau_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.11060661973364952,
+        "min_rho_m": 0.021146871912322333
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_0.0625_Radau_max_normalized_Friedmann",
+      "passed": true,
+      "value": 2.2075458536861397e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0625_Radau_max_charge_drift",
+      "passed": true,
+      "value": 4.148070775755741e-14,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0625_Radau_max_dust_integral_drift",
+      "passed": true,
+      "value": 3.9632186421556526e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0625_two_method_agreement",
+      "passed": true,
+      "value": 9.219330847105099e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0625_inherited_kinetic_weights_positive",
+      "passed": true,
+      "value": {
+        "K_force": 0.1875,
+        "K_vector": 0.010416666666666666,
+        "min_D": 27.820863445053966,
+        "max_D": 249.40009251185828,
+        "Mc2": 0.9947916666666666,
+        "Mt2": 0.9921875,
+        "MU2_cL": 0.0017361111111111112,
+        "c_tensor_squared": 1.0078740157480315,
+        "c_vector_squared": 0.8029527559055119
+      },
+      "criterion": "positive inherited S1/G1 weights on regular nonzero-mode chart"
+    },
+    {
+      "name": "eta_0.0625_initial_charge",
+      "passed": true,
+      "value": 0.0625,
+      "criterion": "equals eta within 1e-14; not fixed charge"
+    },
+    {
+      "name": "eta_0.015625_DOP853_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_0.015625_DOP853_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.10409961195314978,
+        "min_rho_m": 0.027672030243804414
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_0.015625_DOP853_max_normalized_Friedmann",
+      "passed": true,
+      "value": 5.879199317605045e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.015625_DOP853_max_charge_drift",
+      "passed": true,
+      "value": 2.776251450953282e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.015625_DOP853_max_dust_integral_drift",
+      "passed": true,
+      "value": 1.9582391264094667e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.015625_Radau_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_0.015625_Radau_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.10409961195310877,
+        "min_rho_m": 0.02767203024381912
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_0.015625_Radau_max_normalized_Friedmann",
+      "passed": true,
+      "value": 1.0133959599828143e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.015625_Radau_max_charge_drift",
+      "passed": true,
+      "value": 1.3565537582138631e-14,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.015625_Radau_max_dust_integral_drift",
+      "passed": true,
+      "value": 2.63206123563009e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.015625_two_method_agreement",
+      "passed": true,
+      "value": 5.44112330021303e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.015625_inherited_kinetic_weights_positive",
+      "passed": true,
+      "value": {
+        "K_force": 0.046875,
+        "K_vector": 0.0026041666666666665,
+        "min_D": 99.54644849784421,
+        "max_D": 710.5694719219208,
+        "Mc2": 0.9986979166666666,
+        "Mt2": 0.998046875,
+        "MU2_cL": 0.0004340277777777778,
+        "c_tensor_squared": 1.0019569471624266,
+        "c_vector_squared": 0.80073385518591
+      },
+      "criterion": "positive inherited S1/G1 weights on regular nonzero-mode chart"
+    },
+    {
+      "name": "eta_0.015625_initial_charge",
+      "passed": true,
+      "value": 0.015625,
+      "criterion": "equals eta within 1e-14; not fixed charge"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.10203087908285519,
+        "min_rho_m": 0.029938609852841157
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_max_normalized_Friedmann",
+      "passed": true,
+      "value": 6.345551788861132e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_max_charge_drift",
+      "passed": true,
+      "value": 3.971996342944095e-14,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_max_dust_integral_drift",
+      "passed": true,
+      "value": 2.2589985437804216e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.00390625_Radau_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_0.00390625_Radau_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.10203087908280889,
+        "min_rho_m": 0.029938609852849667
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_0.00390625_Radau_max_normalized_Friedmann",
+      "passed": true,
+      "value": 8.513953062022954e-14,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.00390625_Radau_max_charge_drift",
+      "passed": true,
+      "value": 4.602221381766469e-15,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.00390625_Radau_max_dust_integral_drift",
+      "passed": true,
+      "value": 2.607081217576024e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.00390625_two_method_agreement",
+      "passed": true,
+      "value": 5.6902548316332416e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.00390625_inherited_kinetic_weights_positive",
+      "passed": true,
+      "value": {
+        "K_force": 0.01171875,
+        "K_vector": 0.0006510416666666666,
+        "min_D": 383.4530617478555,
+        "max_D": 2553.8670183067024,
+        "Mc2": 0.9996744791666666,
+        "Mt2": 0.99951171875,
+        "MU2_cL": 0.00010850694444444445,
+        "c_tensor_squared": 1.0004885197850513,
+        "c_vector_squared": 0.8001831949193943
+      },
+      "criterion": "positive inherited S1/G1 weights on regular nonzero-mode chart"
+    },
+    {
+      "name": "eta_0.00390625_initial_charge",
+      "passed": true,
+      "value": 0.00390625,
+      "criterion": "equals eta within 1e-14; not fixed charge"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.1014754127455018,
+        "min_rho_m": 0.030562999140425103
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_max_normalized_Friedmann",
+      "passed": true,
+      "value": 5.212830201017335e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_max_charge_drift",
+      "passed": true,
+      "value": 6.430836765880521e-15,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_max_dust_integral_drift",
+      "passed": true,
+      "value": 2.539385368649505e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_sampled_domain",
+      "passed": true,
+      "value": {
+        "min_a": 1.0,
+        "min_H": 0.1014754127454524,
+        "min_rho_m": 0.0305629991404292
+      },
+      "criterion": "finite fields; a,H,rho_m>0"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_max_normalized_Friedmann",
+      "passed": true,
+      "value": 1.5571881239740235e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_max_charge_drift",
+      "passed": true,
+      "value": 1.0805158850990537e-15,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_max_dust_integral_drift",
+      "passed": true,
+      "value": 3.819444760466695e-13,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_two_method_agreement",
+      "passed": true,
+      "value": 3.945378109462503e-12,
+      "criterion": "<1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_inherited_kinetic_weights_positive",
+      "passed": true,
+      "value": {
+        "K_force": 0.0029296875,
+        "K_vector": 0.00016276041666666666,
+        "min_D": 1518.083778189695,
+        "max_D": 9926.691732679506,
+        "Mc2": 0.9999186197916666,
+        "Mt2": 0.9998779296875,
+        "MU2_cL": 2.7126736111111113e-05,
+        "c_tensor_squared": 1.0001220852154804,
+        "c_vector_squared": 0.8000457819558052
+      },
+      "criterion": "positive inherited S1/G1 weights on regular nonzero-mode chart"
+    },
+    {
+      "name": "eta_0.0009765625_initial_charge",
+      "passed": true,
+      "value": 0.0009765625,
+      "criterion": "equals eta within 1e-14; not fixed charge"
+    },
+    {
+      "name": "background_errors_decrease",
+      "passed": true,
+      "value": [
+        1.0350732342053877,
+        0.2923193447235736,
+        0.08676408889843573,
+        0.023493392312786923,
+        0.006020875812114353,
+        0.0015151902814552099
+      ],
+      "criterion": "strict decrease across frozen factor-four eta steps"
+    },
+    {
+      "name": "background_last_refinement",
+      "passed": true,
+      "value": 3.9736763664639008,
+      "criterion": "2<ratio<6"
+    }
+  ],
+  "tensor_control": {
+    "raw_spatial_density": "MP2*q(z)*Derivative(q(z), (z, 2)) + 3*MP2*Derivative(q(z), z)**2/4",
+    "spatial_boundary": "MP2*(q(z)*Derivative(q(z), (z, 2)) + Derivative(q(z), z)**2)",
+    "reduced_quadratic_density": "[(MP2-MU2*c13)*qdot^2-MP2*qz^2]/4",
+    "tensor_speed_squared": "1/(1-alpha13)",
+    "scope": "one physical TT polarization on isotropic vacuum frame control"
+  },
+  "exact_family": {
+    "alpha13": "eta/8",
+    "alpha14": "eta/6",
+    "alpha2": "-7*eta/72",
+    "alphaL": "eta/36",
+    "Mc2": "-(eta - 12)/12",
+    "Mt2": "-(eta - 8)/8",
+    "G_cos_over_G_static": "1",
+    "K_vector": "eta/6",
+    "c_vector_squared": "(17*eta - 256)/(40*(eta - 8))",
+    "c_tensor_squared": "-8/(eta - 8)",
+    "S1_D_over_H_squared": "3*(eta - 12)*(eta - 8)/(2*eta)",
+    "canonical_force_cubic": "2*sqrt(3)/63",
+    "canonical_regulator": "5/33",
+    "canonical_matter": "2*sqrt(3)*eta**(3/2)/15"
+  },
+  "family": [
+    {
+      "eta": 1.0,
+      "parameters": {
+        "MP2": 1.0,
+        "MU2": 0.6666666666666666,
+        "c1": 0.2,
+        "c2": -0.14583333333333334,
+        "c3": -0.0125,
+        "c4": 0.05,
+        "K": 3.0,
+        "A": 0.2857142857142857,
+        "b": 0.45454545454545453,
+        "zeta": 0.07692307692307693,
+        "beta": 0.4,
+        "gr": 0.42857142857142855,
+        "m2": 1.0,
+        "l4": 0.3333333333333333,
+        "l6": 0.2,
+        "cutoff": 2.0,
+        "mr2": 2.0,
+        "lr": 0.14285714285714285,
+        "vacuum": 0.0
+      },
+      "runs": {
+        "DOP853": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 527,
+          "njev": 0,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.14537805157377648,
+          "min_rho_m": 0.001831154840908824,
+          "min_radius_squared": 0.0024818856352395143,
+          "max_normalized_Friedmann": 2.3595041797134627e-12,
+          "max_charge_drift": 1.9885870727875954e-11,
+          "max_dust_integral_drift": 3.116645830303355e-12,
+          "max_abs_Qmp": 0.016000000000000004,
+          "max_abs_Qsyn": 0.09108316535526498,
+          "min_Qsyn": -0.09108316535526498,
+          "max_Qsyn": 0.05357142857142857,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.9492307206569756,
+            "u": 1.0,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 1.0,
+            "r": 1.0,
+            "rd": 0.25,
+            "psi": 0.0,
+            "psid": 0.2,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 4.832725761073065,
+            "H": 0.14537805157377648,
+            "u": -0.20708809412429738,
+            "ud": -0.016162489776759215,
+            "v": -0.08728389085521099,
+            "vd": -0.04959491971883305,
+            "r": -0.02813206016723676,
+            "rd": 0.23989098751327212,
+            "psi": 0.08215351657461456,
+            "psid": 0.0007996201090601599,
+            "rho_m": 0.001831154840908824,
+            "tau": 4.11552407722102
+          },
+          "final_charge": 1.000000000001301,
+          "final_dust_integral": 0.2000000000000858
+        },
+        "Radau": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 9008,
+          "njev": 3,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.1453780515737754,
+          "min_rho_m": 0.001831154840907254,
+          "min_radius_squared": 0.002481885635231633,
+          "max_normalized_Friedmann": 8.428527555620712e-13,
+          "max_charge_drift": 1.201594379551807e-12,
+          "max_dust_integral_drift": 8.134881657184678e-13,
+          "max_abs_Qmp": 0.016000000000000004,
+          "max_abs_Qsyn": 0.09108316535517288,
+          "min_Qsyn": -0.09108316535517288,
+          "max_Qsyn": 0.05357142857142857,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.9492307206569756,
+            "u": 1.0,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 1.0,
+            "r": 1.0,
+            "rd": 0.25,
+            "psi": 0.0,
+            "psid": 0.2,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 4.832725761073253,
+            "H": 0.1453780515737754,
+            "u": -0.20708809412409684,
+            "ud": -0.016162489776903943,
+            "v": -0.0872838908551096,
+            "vd": -0.04959491971887826,
+            "r": -0.028132060166891543,
+            "rd": 0.23989098751245913,
+            "psi": 0.08215351657460238,
+            "psid": 0.0007996201090582607,
+            "rho_m": 0.001831154840907254,
+            "tau": 4.115524077221005
+          },
+          "final_charge": 1.0000000000001112,
+          "final_dust_integral": 0.19999999999993867
+        }
+      },
+      "two_method_disagreement": 1.0772493647912133e-11,
+      "normalized_metric_dust_error": 1.0350732342053877,
+      "inherited_kinetic_certificate": {
+        "K_force": 3.0,
+        "K_vector": 0.16666666666666666,
+        "min_D": 2.4410668450692694,
+        "max_D": 104.07000000000002,
+        "Mc2": 0.9166666666666666,
+        "Mt2": 0.875,
+        "MU2_cL": 0.02777777777777778,
+        "c_tensor_squared": 1.1428571428571428,
+        "c_vector_squared": 0.8535714285714285
+      },
+      "finite_difference_balances": [
+        {
+          "points": 201,
+          "dt": 0.02,
+          "balance_maxima": {
+            "P": 9.785086900414413e-06,
+            "R": 2.2206262030660066e-05,
+            "m": 1.4576420614714787e-06
+          },
+          "maximum": 2.2206262030660066e-05,
+          "full_spatial_metric_fd_residual": 4.188301082373924e-06
+        },
+        {
+          "points": 401,
+          "dt": 0.01,
+          "balance_maxima": {
+            "P": 7.13253834054253e-07,
+            "R": 1.6305122575137096e-06,
+            "m": 1.098525900711009e-07
+          },
+          "maximum": 1.6305122575137096e-06,
+          "full_spatial_metric_fd_residual": 3.384116445991877e-07
+        },
+        {
+          "points": 801,
+          "dt": 0.005,
+          "balance_maxima": {
+            "P": 4.82996974881199e-08,
+            "R": 1.1005635230674148e-07,
+            "m": 7.562140800982294e-09
+          },
+          "maximum": 1.1005635230674148e-07,
+          "full_spatial_metric_fd_residual": 2.4275933854062682e-08
+        }
+      ]
+    },
+    {
+      "eta": 0.25,
+      "parameters": {
+        "MP2": 1.0,
+        "MU2": 0.16666666666666666,
+        "c1": 0.2,
+        "c2": -0.14583333333333334,
+        "c3": -0.0125,
+        "c4": 0.05,
+        "K": 0.75,
+        "A": 0.03571428571428571,
+        "b": 0.11363636363636363,
+        "zeta": 0.019230769230769232,
+        "beta": 0.025,
+        "gr": 0.10714285714285714,
+        "m2": 1.0,
+        "l4": 0.3333333333333333,
+        "l6": 0.2,
+        "cutoff": 2.0,
+        "mr2": 2.0,
+        "lr": 0.14285714285714285,
+        "vacuum": 0.0
+      },
+      "runs": {
+        "DOP853": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 422,
+          "njev": 0,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.1247837177463399,
+          "min_rho_m": 0.010126832383280637,
+          "min_radius_squared": 0.009970280310448654,
+          "max_normalized_Friedmann": 5.654091027529196e-12,
+          "max_charge_drift": 1.2588097231258644e-11,
+          "max_dust_integral_drift": 2.545436084133712e-12,
+          "max_abs_Qmp": 0.00025000000000000006,
+          "max_abs_Qsyn": 0.0016815514737069349,
+          "min_Qsyn": -0.0016815514737069349,
+          "max_Qsyn": 0.0008370535714285714,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.49346123389958624,
+            "u": 0.5,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 0.5,
+            "r": 0.5,
+            "rd": 0.125,
+            "psi": 0.0,
+            "psid": 0.05,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 2.7039179754361173,
+            "H": 0.1247837177463399,
+            "u": -0.14584910497188358,
+            "ud": 0.051573551319661126,
+            "v": -0.09042208043234015,
+            "vd": -0.05473324927640838,
+            "r": 0.03650665506026399,
+            "rd": 0.1827047623310503,
+            "psi": 0.03906703097261266,
+            "psid": 0.001179290015506834,
+            "rho_m": 0.010126832383280637,
+            "tau": 4.003025869904163
+          },
+          "final_charge": 0.25000000000005834,
+          "final_dust_integral": 0.20000000000003804
+        },
+        "Radau": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 7176,
+          "njev": 2,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.1247837177458338,
+          "min_rho_m": 0.010126832383299438,
+          "min_radius_squared": 0.009970280310471704,
+          "max_normalized_Friedmann": 1.037062139350134e-12,
+          "max_charge_drift": 2.4202861936828413e-13,
+          "max_dust_integral_drift": 3.480826737956022e-13,
+          "max_abs_Qmp": 0.00025000000000000006,
+          "max_abs_Qsyn": 0.0016815514737071532,
+          "min_Qsyn": -0.0016815514737071532,
+          "max_Qsyn": 0.0008370535714285714,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.49346123389958624,
+            "u": 0.5,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 0.5,
+            "r": 0.5,
+            "rd": 0.125,
+            "psi": 0.0,
+            "psid": 0.05,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 2.703917975434259,
+            "H": 0.1247837177458338,
+            "u": -0.14584910497188636,
+            "ud": 0.05157355131975017,
+            "v": -0.09042208043251865,
+            "vd": -0.054733249276449,
+            "r": 0.036506655060968965,
+            "rd": 0.1827047623305033,
+            "psi": 0.039067030972605866,
+            "psid": 0.0011792900155085414,
+            "rho_m": 0.010126832383299438,
+            "tau": 4.00302586990417
+          },
+          "final_charge": 0.2500000000000041,
+          "final_dust_integral": 0.19999999999999699
+        }
+      },
+      "two_method_disagreement": 1.5386686890817075e-11,
+      "normalized_metric_dust_error": 0.2923193447235736,
+      "inherited_kinetic_certificate": {
+        "K_force": 0.75,
+        "K_vector": 0.041666666666666664,
+        "min_D": 8.507592129251103,
+        "max_D": 133.0444921875,
+        "Mc2": 0.9791666666666666,
+        "Mt2": 0.96875,
+        "MU2_cL": 0.006944444444444445,
+        "c_tensor_squared": 1.032258064516129,
+        "c_vector_squared": 0.8120967741935484
+      }
+    },
+    {
+      "eta": 0.0625,
+      "parameters": {
+        "MP2": 1.0,
+        "MU2": 0.041666666666666664,
+        "c1": 0.2,
+        "c2": -0.14583333333333334,
+        "c3": -0.0125,
+        "c4": 0.05,
+        "K": 0.1875,
+        "A": 0.004464285714285714,
+        "b": 0.028409090909090908,
+        "zeta": 0.004807692307692308,
+        "beta": 0.0015625,
+        "gr": 0.026785714285714284,
+        "m2": 1.0,
+        "l4": 0.3333333333333333,
+        "l6": 0.2,
+        "cutoff": 2.0,
+        "mr2": 2.0,
+        "lr": 0.14285714285714285,
+        "vacuum": 0.0
+      },
+      "runs": {
+        "DOP853": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 374,
+          "njev": 0,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.11060661973383856,
+          "min_rho_m": 0.021146871912296875,
+          "min_radius_squared": 0.006849176009572328,
+          "max_normalized_Friedmann": 2.7405800777074535e-12,
+          "max_charge_drift": 1.686560613389787e-12,
+          "max_dust_integral_drift": 1.1482759187941838e-12,
+          "max_abs_Qmp": 3.906250000000001e-06,
+          "max_abs_Qsyn": 2.8972973184518245e-05,
+          "min_Qsyn": -2.8972973184518245e-05,
+          "max_Qsyn": 1.3078962053571428e-05,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.33116476496852243,
+            "u": 0.25,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 0.25,
+            "r": 0.25,
+            "rd": 0.0625,
+            "psi": 0.0,
+            "psid": 0.0125,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 2.1147758178845315,
+            "H": 0.11060661973383856,
+            "u": -0.08510992629622867,
+            "ud": 0.04870866881705229,
+            "v": -0.062420868779911876,
+            "vd": -0.0419201500196424,
+            "r": 0.039367371661351104,
+            "rd": 0.11111523659902574,
+            "psi": 0.013478209596497166,
+            "psid": 0.000616759998138644,
+            "rho_m": 0.021146871912296875,
+            "tau": 4.000061155435511
+          },
+          "final_charge": 0.062499999999992305,
+          "final_dust_integral": 0.20000000000001936
+        },
+        "Radau": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 6268,
+          "njev": 2,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.11060661973364952,
+          "min_rho_m": 0.021146871912322333,
+          "min_radius_squared": 0.0068491760095716605,
+          "max_normalized_Friedmann": 2.2075458536861397e-13,
+          "max_charge_drift": 4.148070775755741e-14,
+          "max_dust_integral_drift": 3.9632186421556526e-13,
+          "max_abs_Qmp": 3.906250000000001e-06,
+          "max_abs_Qsyn": 2.8972973184144676e-05,
+          "min_Qsyn": -2.8972973184144676e-05,
+          "max_Qsyn": 1.3078962053571428e-05,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.33116476496852243,
+            "u": 0.25,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 0.25,
+            "r": 0.25,
+            "rd": 0.0625,
+            "psi": 0.0,
+            "psid": 0.0125,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 2.1147758178836322,
+            "H": 0.11060661973364952,
+            "u": -0.08510992629625427,
+            "ud": 0.04870866881716323,
+            "v": -0.06242086877995132,
+            "vd": -0.041920150019635505,
+            "r": 0.03936737166151546,
+            "rd": 0.11111523659849495,
+            "psi": 0.013478209596499136,
+            "psid": 0.0006167599981392216,
+            "rho_m": 0.021146871912322333,
+            "tau": 4.00006115543551
+          },
+          "final_charge": 0.06250000000000086,
+          "final_dust_integral": 0.200000000000005
+        }
+      },
+      "two_method_disagreement": 9.219330847105099e-12,
+      "normalized_metric_dust_error": 0.08676408889843573,
+      "inherited_kinetic_certificate": {
+        "K_force": 0.1875,
+        "K_vector": 0.010416666666666666,
+        "min_D": 27.820863445053966,
+        "max_D": 249.40009251185828,
+        "Mc2": 0.9947916666666666,
+        "Mt2": 0.9921875,
+        "MU2_cL": 0.0017361111111111112,
+        "c_tensor_squared": 1.0078740157480315,
+        "c_vector_squared": 0.8029527559055119
+      }
+    },
+    {
+      "eta": 0.015625,
+      "parameters": {
+        "MP2": 1.0,
+        "MU2": 0.010416666666666666,
+        "c1": 0.2,
+        "c2": -0.14583333333333334,
+        "c3": -0.0125,
+        "c4": 0.05,
+        "K": 0.046875,
+        "A": 0.0005580357142857143,
+        "b": 0.007102272727272727,
+        "zeta": 0.001201923076923077,
+        "beta": 9.765625e-05,
+        "gr": 0.006696428571428571,
+        "m2": 1.0,
+        "l4": 0.3333333333333333,
+        "l6": 0.2,
+        "cutoff": 2.0,
+        "mr2": 2.0,
+        "lr": 0.14285714285714285,
+        "vacuum": 0.0
+      },
+      "runs": {
+        "DOP853": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 344,
+          "njev": 0,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.10409961195314978,
+          "min_rho_m": 0.027672030243804414,
+          "min_radius_squared": 0.0023859601966466377,
+          "max_normalized_Friedmann": 5.879199317605045e-13,
+          "max_charge_drift": 2.776251450953282e-13,
+          "max_dust_integral_drift": 1.9582391264094667e-12,
+          "max_abs_Qmp": 6.103515625000001e-08,
+          "max_abs_Qsyn": 4.6984142645536493e-07,
+          "min_Qsyn": -4.6984142645536493e-07,
+          "max_Qsyn": 2.0435878208705356e-07,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.2781246603372532,
+            "u": 0.125,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 0.125,
+            "r": 0.125,
+            "rd": 0.03125,
+            "psi": 0.0,
+            "psid": 0.003125,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 1.9334356008872564,
+            "H": 0.10409961195314978,
+            "u": -0.045260033133740094,
+            "ud": 0.029536702333161705,
+            "v": -0.03530897975487133,
+            "vd": -0.02472304276976665,
+            "r": 0.02462931376506416,
+            "rd": 0.05998888608319009,
+            "psi": 0.0038042898447937182,
+            "psid": 0.00020177508494891835,
+            "rho_m": 0.027672030243804414,
+            "tau": 4.000001051462931
+          },
+          "final_charge": 0.01562500000001183,
+          "final_dust_integral": 0.2000000000000345
+        },
+        "Radau": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 5916,
+          "njev": 2,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.10409961195310877,
+          "min_rho_m": 0.02767203024381912,
+          "min_radius_squared": 0.0023859601966482917,
+          "max_normalized_Friedmann": 1.0133959599828143e-13,
+          "max_charge_drift": 1.3565537582138631e-14,
+          "max_dust_integral_drift": 2.63206123563009e-13,
+          "max_abs_Qmp": 6.103515625000001e-08,
+          "max_abs_Qsyn": 4.6984142645838063e-07,
+          "min_Qsyn": -4.6984142645838063e-07,
+          "max_Qsyn": 2.0435878208705356e-07,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.2781246603372532,
+            "u": 0.125,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 0.125,
+            "r": 0.125,
+            "rd": 0.03125,
+            "psi": 0.0,
+            "psid": 0.003125,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 1.933435600886811,
+            "H": 0.10409961195310877,
+            "u": -0.04526003313374264,
+            "ud": 0.029536702333178008,
+            "v": -0.035308979754840146,
+            "vd": -0.024723042769769995,
+            "r": 0.024629313764956265,
+            "rd": 0.05998888608257942,
+            "psi": 0.00380428984479513,
+            "psid": 0.00020177508494892822,
+            "rho_m": 0.02767203024381912,
+            "tau": 4.000001051462931
+          },
+          "final_charge": 0.015625000000000083,
+          "final_dust_integral": 0.20000000000000256
+        }
+      },
+      "two_method_disagreement": 5.44112330021303e-12,
+      "normalized_metric_dust_error": 0.023493392312786923,
+      "inherited_kinetic_certificate": {
+        "K_force": 0.046875,
+        "K_vector": 0.0026041666666666665,
+        "min_D": 99.54644849784421,
+        "max_D": 710.5694719219208,
+        "Mc2": 0.9986979166666666,
+        "Mt2": 0.998046875,
+        "MU2_cL": 0.0004340277777777778,
+        "c_tensor_squared": 1.0019569471624266,
+        "c_vector_squared": 0.80073385518591
+      }
+    },
+    {
+      "eta": 0.00390625,
+      "parameters": {
+        "MP2": 1.0,
+        "MU2": 0.0026041666666666665,
+        "c1": 0.2,
+        "c2": -0.14583333333333334,
+        "c3": -0.0125,
+        "c4": 0.05,
+        "K": 0.01171875,
+        "A": 6.975446428571428e-05,
+        "b": 0.0017755681818181818,
+        "zeta": 0.00030048076923076925,
+        "beta": 6.103515625e-06,
+        "gr": 0.0016741071428571428,
+        "m2": 1.0,
+        "l4": 0.3333333333333333,
+        "l6": 0.2,
+        "cutoff": 2.0,
+        "mr2": 2.0,
+        "lr": 0.14285714285714285,
+        "vacuum": 0.0
+      },
+      "runs": {
+        "DOP853": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 329,
+          "njev": 0,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.10203087908285519,
+          "min_rho_m": 0.029938609852841157,
+          "min_radius_squared": 0.0006546847479569446,
+          "max_normalized_Friedmann": 6.345551788861132e-13,
+          "max_charge_drift": 3.971996342944095e-14,
+          "max_dust_integral_drift": 2.2589985437804216e-12,
+          "max_abs_Qmp": 9.536743164062502e-10,
+          "max_abs_Qsyn": 7.421650907981666e-09,
+          "min_Qsyn": -7.421650907981666e-09,
+          "max_Qsyn": 3.193105970110212e-09,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.2633144321920616,
+            "u": 0.0625,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 0.0625,
+            "r": 0.0625,
+            "rd": 0.015625,
+            "psi": 0.0,
+            "psid": 0.00078125,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 1.8833576010436588,
+            "H": 0.10203087908285519,
+            "u": -0.02305811267489273,
+            "ud": 0.015582877142988857,
+            "v": -0.018315835135260687,
+            "vd": -0.012981333975942621,
+            "r": 0.01310331634244654,
+            "rd": 0.03069695747445513,
+            "psi": 0.000985631647208716,
+            "psid": 5.457559028585287e-05,
+            "rho_m": 0.029938609852841157,
+            "tau": 4.0000000168947425
+          },
+          "final_charge": 0.003906250000008118,
+          "final_dust_integral": 0.20000000000004597
+        },
+        "Radau": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 5547,
+          "njev": 2,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.10203087908280889,
+          "min_rho_m": 0.029938609852849667,
+          "min_radius_squared": 0.0006546847479568164,
+          "max_normalized_Friedmann": 8.513953062022954e-14,
+          "max_charge_drift": 4.602221381766469e-15,
+          "max_dust_integral_drift": 2.607081217576024e-13,
+          "max_abs_Qmp": 9.536743164062502e-10,
+          "max_abs_Qsyn": 7.421650907955466e-09,
+          "min_Qsyn": -7.421650907955466e-09,
+          "max_Qsyn": 3.193105970110212e-09,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.2633144321920616,
+            "u": 0.0625,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 0.0625,
+            "r": 0.0625,
+            "rd": 0.015625,
+            "psi": 0.0,
+            "psid": 0.00078125,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 1.8833576010433322,
+            "H": 0.10203087908280889,
+            "u": -0.02305811267487135,
+            "ud": 0.015582877142975016,
+            "v": -0.018315835135238608,
+            "vd": -0.012981333975941032,
+            "r": 0.013103316342381871,
+            "rd": 0.030696957473867276,
+            "psi": 0.0009856316472091114,
+            "psid": 5.45755902858338e-05,
+            "rho_m": 0.029938609852849667,
+            "tau": 4.000000016894744
+          },
+          "final_charge": 0.0039062499999999944,
+          "final_dust_integral": 0.1999999999999988
+        }
+      },
+      "two_method_disagreement": 5.6902548316332416e-12,
+      "normalized_metric_dust_error": 0.006020875812114353,
+      "inherited_kinetic_certificate": {
+        "K_force": 0.01171875,
+        "K_vector": 0.0006510416666666666,
+        "min_D": 383.4530617478555,
+        "max_D": 2553.8670183067024,
+        "Mc2": 0.9996744791666666,
+        "Mt2": 0.99951171875,
+        "MU2_cL": 0.00010850694444444445,
+        "c_tensor_squared": 1.0004885197850513,
+        "c_vector_squared": 0.8001831949193943
+      }
+    },
+    {
+      "eta": 0.0009765625,
+      "parameters": {
+        "MP2": 1.0,
+        "MU2": 0.0006510416666666666,
+        "c1": 0.2,
+        "c2": -0.14583333333333334,
+        "c3": -0.0125,
+        "c4": 0.05,
+        "K": 0.0029296875,
+        "A": 8.719308035714285e-06,
+        "b": 0.00044389204545454544,
+        "zeta": 7.512019230769231e-05,
+        "beta": 3.814697265625e-07,
+        "gr": 0.0004185267857142857,
+        "m2": 1.0,
+        "l4": 0.3333333333333333,
+        "l6": 0.2,
+        "cutoff": 2.0,
+        "mr2": 2.0,
+        "lr": 0.14285714285714285,
+        "vacuum": 0.0
+      },
+      "runs": {
+        "DOP853": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 317,
+          "njev": 0,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.1014754127455018,
+          "min_rho_m": 0.030562999140425103,
+          "min_radius_squared": 0.00016766400941661716,
+          "max_normalized_Friedmann": 5.212830201017335e-13,
+          "max_charge_drift": 6.430836765880521e-15,
+          "max_dust_integral_drift": 2.539385368649505e-12,
+          "max_abs_Qmp": 1.490116119384766e-11,
+          "max_abs_Qsyn": 1.1629501648556173e-10,
+          "min_Qsyn": -1.1629501648556173e-10,
+          "max_Qsyn": 4.989228078297206e-11,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.25948677252523006,
+            "u": 0.03125,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 0.03125,
+            "r": 0.03125,
+            "rd": 0.0078125,
+            "psi": 0.0,
+            "psid": 0.0001953125,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 1.8704438505091572,
+            "H": 0.1014754127455018,
+            "u": -0.011586493080187226,
+            "ud": 0.007900389628187187,
+            "v": -0.009247105346084174,
+            "vd": -0.006574695080937883,
+            "r": 0.006657621556424991,
+            "rd": 0.015442782904104484,
+            "psi": 0.0002487265894349005,
+            "psid": 1.3928450126729958e-05,
+            "rho_m": 0.030562999140425103,
+            "tau": 4.00000000026592
+          },
+          "final_charge": 0.0009765625000027862,
+          "final_dust_integral": 0.20000000000005058
+        },
+        "Radau": {
+          "success": true,
+          "message": "The solver successfully reached the end of the integration interval.",
+          "nfev": 5372,
+          "njev": 2,
+          "all_finite": true,
+          "min_a": 1.0,
+          "min_H": 0.1014754127454524,
+          "min_rho_m": 0.0305629991404292,
+          "min_radius_squared": 0.00016766400941600746,
+          "max_normalized_Friedmann": 1.5571881239740235e-13,
+          "max_charge_drift": 1.0805158850990537e-15,
+          "max_dust_integral_drift": 3.819444760466695e-13,
+          "max_abs_Qmp": 1.490116119384766e-11,
+          "max_abs_Qsyn": 1.162950164852779e-10,
+          "min_Qsyn": -1.162950164852779e-10,
+          "max_Qsyn": 4.989228078297206e-11,
+          "initial_state": {
+            "a": 1.0,
+            "H": 0.25948677252523006,
+            "u": 0.03125,
+            "ud": 0.0,
+            "v": 0.0,
+            "vd": 0.03125,
+            "r": 0.03125,
+            "rd": 0.0078125,
+            "psi": 0.0,
+            "psid": 0.0001953125,
+            "rho_m": 0.2,
+            "tau": 0.0
+          },
+          "final_state": {
+            "a": 1.8704438505089134,
+            "H": 0.1014754127454524,
+            "u": -0.0115864930801688,
+            "ud": 0.007900389628176208,
+            "v": -0.00924710534607129,
+            "vd": -0.006574695080934229,
+            "r": 0.006657621556396565,
+            "rd": 0.015442782903688345,
+            "psi": 0.0002487265894349961,
+            "psid": 1.392845012672204e-05,
+            "rho_m": 0.0305629991404292,
+            "tau": 4.000000000265919
+          },
+          "final_charge": 0.0009765625000000041,
+          "final_dust_integral": 0.19999999999999918
+        }
+      },
+      "two_method_disagreement": 3.945378109462503e-12,
+      "normalized_metric_dust_error": 0.0015151902814552099,
+      "inherited_kinetic_certificate": {
+        "K_force": 0.0029296875,
+        "K_vector": 0.00016276041666666666,
+        "min_D": 1518.083778189695,
+        "max_D": 9926.691732679506,
+        "Mc2": 0.9999186197916666,
+        "Mt2": 0.9998779296875,
+        "MU2_cL": 2.7126736111111113e-05,
+        "c_tensor_squared": 1.0001220852154804,
+        "c_vector_squared": 0.8000457819558052
+      }
+    }
+  ],
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0"
+  },
+  "transitive_source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740"
+  },
+  "script_sha256": "dfdec7c78ae4e57f247b2592b611e79d808d708813358a6dac015c387a7d9440",
+  "trajectory": {
+    "file": "trajectories.npy",
+    "sha256": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "shape": [
+      6,
+      2,
+      13,
+      801
+    ],
+    "axes": [
+      "eta",
+      "method",
+      "field",
+      "sample"
+    ],
+    "etas": [
+      1.0,
+      0.25,
+      0.0625,
+      0.015625,
+      0.00390625,
+      0.0009765625
+    ],
+    "methods": [
+      "DOP853",
+      "Radau"
+    ],
+    "fields": [
+      "t",
+      "a",
+      "H",
+      "u",
+      "ud",
+      "v",
+      "vd",
+      "r",
+      "rd",
+      "psi",
+      "psid",
+      "rho_m",
+      "tau"
+    ]
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "status": "CONDITIONAL_EQUAL_NEWTON_BACKGROUND_GR_LIMIT_OPEN",
+  "scope": "vacuum tensor control and finite-time alternate homogeneous family; inherited scalar kinetic identity",
+  "healthy_continuous_GR_limit_verified": false,
+  "full_interacting_Hessian_verified": false,
+  "physical_EFT_cutoff_derived": false,
+  "all_paths_no_go": false,
+  "canonical_Test1_pass": false,
+  "canonical_Test2_pass": false,
+  "canonical_Test3_pass": false,
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "MAT-001": "BLOCKED",
+  "UVIR-003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED"
+}

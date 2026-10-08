@@ -1,0 +1,46 @@
+{
+  "f": "sqrt(6)*(5*H - 4*eta**2*psi_dot)*(eta - 12)/(60*a**(5/2)*rho_m)",
+  "g": "-sqrt(6)*(eta - 12)/(6*a**(5/2)*rho_m)",
+  "h": "sqrt(6)/a**(5/2)",
+  "j": "0",
+  "delta": "(eta - 12)/(a**5*rho_m)",
+  "kappa": "(eta - 12)/k**2",
+  "K": "a**5*rho_m/k**2",
+  "friction": "2*(5*H + eta**2*psi_dot)/5",
+  "mass": "6*rho_m/(eta - 12)",
+  "boundary": "-chi*(eta - 12)*(5*H*chi - 4*chi*eta**2*psi_dot - 20*v_chi)/(20*k**2)",
+  "Ldust": "a**5*rho_m*(-6*D**2*rho_m/(eta - 12) + Ddot**2)/(2*k**2)",
+  "Hdust": "3*D**2*a**5*rho_m**2/(k**2*(eta - 12)) + P_D**2*k**2/(2*a**5*rho_m)",
+  "energy_rate": "-a**5*rho_m*(15*D**2*H*rho_m - 12*D**2*eta**2*psi_dot*rho_m + 5*Ddot**2*H*eta - 60*Ddot**2*H + Ddot**2*eta**3*psi_dot - 12*Ddot**2*eta**2*psi_dot)/(5*k**2*(eta - 12))",
+  "GR_K": "3*H**2*a**5/k**2",
+  "GR_friction": "2*H",
+  "GR_mass": "-3*H**2/2",
+  "density_phase_map": [
+    [
+      "sqrt(6)*(5*H - 4*eta**2*psi_dot)*(eta - 12)/(60*a**(5/2)*rho_m)",
+      "-sqrt(6)*(eta - 12)/(6*a**(5/2)*rho_m)"
+    ],
+    [
+      "sqrt(6)/a**(5/2)",
+      "0"
+    ]
+  ],
+  "density_generator": [
+    [
+      "0",
+      "1"
+    ],
+    [
+      "-6*rho_m/(eta - 12)",
+      "-2*(5*H + eta**2*psi_dot)/5"
+    ]
+  ],
+  "singular_domains": [
+    "rho_m=0",
+    "a=0",
+    "k=0",
+    "inherited H=0 gauge boundary",
+    "inherited eta=0 auxiliary rank change"
+  ],
+  "scope": "Equivalent formal slow action only; not full physical energy/cutoff or eta endpoint theorem"
+}

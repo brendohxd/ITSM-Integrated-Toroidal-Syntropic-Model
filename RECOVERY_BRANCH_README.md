@@ -5,6 +5,23 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
+## Latest R4C1 research checkpoint - 8 October 2026
+
+Use the [checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md)
+for the current conditional G3 chain. G3DF reconstructs density on prepared
+finite-k planes; G3I identifies a nonuniform fixed-metric interaction probe;
+G3V retains the constrained zero-gradient cubic-vertex obstruction.
+G3T supplies local tilted homogeneous candidates, and G3K derives their
+closed scalar axis operator with all coefficient derivatives. G3N1 is a
+separate frozen classical amplitude probe with higher-harmonic leakage.
+
+The next tilted-branch input is a preferred-Cauchy/characteristic and
+constraint-chart analysis, including w^2=1/5. Canonical Tests 1-3 remain
+HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED;
+V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 unchanged. Review is DEFERRED,
+not cleared. Original failures, source snapshots and corrected attempts
+remain in the checkpoint; all result counts are bounded local checks.
+
 ## Earlier evidence snapshot (2026-09-26)
 
 The branch remains fail-closed. `MAT-001` is `BLOCKED`, `UVIR-003` is
@@ -99,7 +116,7 @@ Under the 25 September operator policy this is now recorded as
 stop bounded research, while substantive holds and final promotion/publication
 requirements remain binding.
 
-## Latest programme update (2026-09-25–2026-09-29)
+## Earlier programme update (2026-09-25–2026-09-29)
 
 The active ordered programme is now [Master Tests 1–3](Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md), with the conditional R4C1
 candidate used as the approved Test-1 continuation. The [Tests 1–3

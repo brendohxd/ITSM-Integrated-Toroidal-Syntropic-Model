@@ -1,0 +1,61 @@
+{
+  "inner_pencil": "-(25*H**2*eta**2 - 1200*H**2*eta + 10800*H**2 - 1200*H*eta*lambda + 14400*H*lambda + 16*eta**6*psi_dot**2 - 384*eta**5*psi_dot**2 + 2304*eta**4*psi_dot**2 - 100*eta**2*lambda**2 + 900*eta**2*psi_dot**2 + 2400*eta*lambda**2 - 21600*eta*psi_dot**2 + 300*eta*r_dot**2 - 300*eta*rho_m + 300*eta*u_dot**2 + 300*eta*v_dot**2 - 14400*lambda**2 - 7200*r_dot**2 - 7200*u_dot**2 - 7200*v_dot**2)/(100*eta*(eta - 12))",
+  "coefficient_order": [
+    "lambda^0",
+    "lambda^1",
+    "lambda^2"
+  ],
+  "coefficients": [
+    "-(25*H**2*eta**2 - 1200*H**2*eta + 10800*H**2 + 16*eta**6*psi_dot**2 - 384*eta**5*psi_dot**2 + 2304*eta**4*psi_dot**2 + 900*eta**2*psi_dot**2 - 21600*eta*psi_dot**2 + 300*eta*r_dot**2 - 300*eta*rho_m + 300*eta*u_dot**2 + 300*eta*v_dot**2 - 7200*r_dot**2 - 7200*u_dot**2 - 7200*v_dot**2)/(100*eta*(eta - 12))",
+    "12*H/eta",
+    "(eta - 12)/eta"
+  ],
+  "normalized_coefficients": [
+    "-(25*H**2*eta**2 - 1200*H**2*eta + 10800*H**2 + 16*eta**6*psi_dot**2 - 384*eta**5*psi_dot**2 + 2304*eta**4*psi_dot**2 + 900*eta**2*psi_dot**2 - 21600*eta*psi_dot**2 + 300*eta*r_dot**2 - 300*eta*rho_m + 300*eta*u_dot**2 + 300*eta*v_dot**2 - 7200*r_dot**2 - 7200*u_dot**2 - 7200*v_dot**2)/(100*(eta - 12)**2)",
+    "12*H/(eta - 12)",
+    "1"
+  ],
+  "scaled_finite_limit": [
+    [
+      "(eta*v**2 + 13)/13",
+      "-eta*u*v/13",
+      "0",
+      "0",
+      "sqrt(6)*(eta*u*v*v_dot - eta*u_dot*v**2 - 13*u_dot)/(13*sqrt(eta))"
+    ],
+    [
+      "-eta*u*v/13",
+      "(eta*u**2 + 13)/13",
+      "0",
+      "0",
+      "-sqrt(6)*(eta*u**2*v_dot - eta*u*u_dot*v + 13*v_dot)/(13*sqrt(eta))"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "-sqrt(6)*r_dot/sqrt(eta)"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-4*eta/(3*(eta - 12)*(eta - 8))",
+      "-2*(5*H + 4*eta**2*psi_dot + 10*lambda)/(5*sqrt((eta - 12)*(eta - 8)))"
+    ],
+    [
+      "sqrt(6)*(eta*u*v*v_dot - eta*u_dot*v**2 - 13*u_dot)/(13*sqrt(eta))",
+      "-sqrt(6)*(eta*u**2*v_dot - eta*u*u_dot*v + 13*v_dot)/(13*sqrt(eta))",
+      "-sqrt(6)*r_dot/sqrt(eta)",
+      "-2*(15*H + 4*eta**2*psi_dot - 10*lambda)/(5*sqrt((eta - 12)*(eta - 8)))",
+      "(-325*H**2*eta + 3900*H**2 - 12480*H*eta**2*psi_dot + 149760*H*eta*psi_dot - 208*eta**5*psi_dot**2 + 2496*eta**4*psi_dot**2 + 1300*eta*lambda**2 - 11700*eta*psi_dot**2 + 600*eta*u**2*v_dot**2 - 1200*eta*u*u_dot*v*v_dot + 600*eta*u_dot**2*v**2 - 15600*lambda**2 + 280800*psi_dot**2 + 3900*r_dot**2 + 3900*rho_m - 7200*u**2*v_dot**2 + 14400*u*u_dot*v*v_dot - 7200*u_dot**2*v**2 + 3900*u_dot**2 + 3900*v_dot**2)/(1300*(eta - 12))"
+    ]
+  ],
+  "inverse_fast_series": {
+    "4": "33/5",
+    "5": "0",
+    "6": "242*eta**4/625"
+  },
+  "scope": "Frozen canonical frequency event at fixed lambda as physical p tends to infinity; not a time-evolution theorem"
+}

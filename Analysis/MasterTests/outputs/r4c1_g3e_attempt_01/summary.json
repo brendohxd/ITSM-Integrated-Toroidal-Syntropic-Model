@@ -1,0 +1,780 @@
+{
+  "schema": "r4c1-g3e-v1",
+  "validation": "PASS_LOCAL_CHECKS",
+  "passed": 83,
+  "total": 83,
+  "checks": [
+    {
+      "name": "no_higher_gyro_powers",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "only_force_quartic_block",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "force_k3_constraint",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "force_k2_constraint",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "force_k1_constraint",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "propagating_k3_cancellation",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "propagating_k2_cancellation",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "propagating_k1_constraint",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "W_k3_cancellation",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "W_k2_cancellation",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "W_k1_cancellation",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "next_order_propagating_amplitudes_cancel",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "linear_second_order_closure",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "evolving_kinetic_prefactor",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "frozen_control_recovers_inner_pencil",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "reject_omitted_coefficient_derivatives",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "reduced_equation_comoving_k_independent",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "reconstructed_dust_normalization",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "reconstructed_regulator_constraint",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "finite_leading_map_density_contrast",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "linear_leading_map_density_contrast",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "finite_leading_map_comoving_dust_divergence",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "linear_leading_map_comoving_dust_divergence",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "finite_leading_map_comoving_frame_divergence",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "linear_leading_map_comoving_frame_divergence",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "finite_leading_map_lapse",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "linear_leading_map_lapse",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "finite_leading_map_regulator",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "linear_leading_map_regulator",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_background_agreement",
+      "passed": true,
+      "value": 8.017978408945355e-12,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_1.0_DOP853_Liouville_identity",
+      "passed": true,
+      "value": 7.191469642009451e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_1.0_DOP853_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_Radau_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_Radau_background_agreement",
+      "passed": true,
+      "value": 7.579752171403771e-13,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_1.0_Radau_Liouville_identity",
+      "passed": true,
+      "value": 1.9451107391432743e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_1.0_Radau_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_two_method_transfer_agreement",
+      "passed": true,
+      "value": 1.6213445673361337e-12,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.25_DOP853_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_DOP853_background_agreement",
+      "passed": true,
+      "value": 1.6831778860520328e-11,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_0.25_DOP853_Liouville_identity",
+      "passed": true,
+      "value": 7.803757640090225e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.25_DOP853_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_Radau_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_Radau_background_agreement",
+      "passed": true,
+      "value": 5.552737162063951e-13,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_0.25_Radau_Liouville_identity",
+      "passed": true,
+      "value": 1.6842083283563625e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.25_Radau_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_two_method_transfer_agreement",
+      "passed": true,
+      "value": 1.9802058166521455e-12,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.0625_DOP853_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_DOP853_background_agreement",
+      "passed": true,
+      "value": 1.3569234901695832e-11,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_0.0625_DOP853_Liouville_identity",
+      "passed": true,
+      "value": 3.0830893393840597e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.0625_DOP853_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_Radau_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_Radau_background_agreement",
+      "passed": true,
+      "value": 5.72290386015302e-13,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_0.0625_Radau_Liouville_identity",
+      "passed": true,
+      "value": 1.638689184346731e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.0625_Radau_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_two_method_transfer_agreement",
+      "passed": true,
+      "value": 8.951004453116728e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.015625_DOP853_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_DOP853_background_agreement",
+      "passed": true,
+      "value": 7.61397466566269e-12,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_0.015625_DOP853_Liouville_identity",
+      "passed": true,
+      "value": 4.5258241598844506e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.015625_DOP853_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_Radau_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_Radau_background_agreement",
+      "passed": true,
+      "value": 5.401783289021026e-13,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_0.015625_Radau_Liouville_identity",
+      "passed": true,
+      "value": 5.906386491005833e-14,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.015625_Radau_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_two_method_transfer_agreement",
+      "passed": true,
+      "value": 8.217438818151885e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_DOP853_background_agreement",
+      "passed": true,
+      "value": 7.034436445536701e-12,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_Liouville_identity",
+      "passed": true,
+      "value": 4.005129561335252e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_Radau_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_Radau_background_agreement",
+      "passed": true,
+      "value": 3.3928384932311034e-13,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_0.00390625_Radau_Liouville_identity",
+      "passed": true,
+      "value": 7.172040739078511e-14,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.00390625_Radau_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_two_method_transfer_agreement",
+      "passed": true,
+      "value": 6.79531112199474e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_background_agreement",
+      "passed": true,
+      "value": 5.176874117948636e-12,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_Liouville_identity",
+      "passed": true,
+      "value": 2.7700064464397656e-13,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_Radau_integration",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_Radau_background_agreement",
+      "passed": true,
+      "value": 2.5818716829901104e-13,
+      "criterion": "normalized <1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_Liouville_identity",
+      "passed": true,
+      "value": 7.005507285384738e-14,
+      "criterion": "normalized <1e-7"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_finite_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_two_method_transfer_agreement",
+      "passed": true,
+      "value": 5.213824607940822e-13,
+      "criterion": "normalized <1e-7"
+    }
+  ],
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_CONTRACT_2026-09-30.md": "d1d64c216465956424589f95c940116bc198f5670552297b7e611894bcd385fa",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_REPORT_2026-09-30.md": "fe8d380be77af9e5ccecb02c62b8264d5ecbb6bf5d42153755c2914cd355cdbd",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/summary.json": "60d9de53f95592512e094ffc60c81a781ab8f9b33a8afa93dbf53943efbb34bf",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/pencil.json": "abb6a23cba1f80b0a02bf76d1bb47153bd745be55e83c44e9bd8183f9a9d5bb4"
+  },
+  "transitive_source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_CONTRACT_2026-09-30.md": "47723c96936643b6be19d22e00a4f98bc3f4208cb409e61c255e041b7ce725e5",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/summary.json": "550caae54b03b490a5388ecd363ad0f9ff0d8d4891021d2eb1c366871d54378a",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_scalar.py": "eb5d8c41938d346a294aa03f713ea10655b939234dab7935f4a0ee9f774553f9",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_CONTRACT_2026-09-30.md": "92fc34dd19f2bc5de077703b0e7a8b209c14fdf1ae66674bc1f8176d8e4be1c5",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_REPORT_2026-09-30.md": "1b9fbc4185b61d1e37d7865baa811994e235523eb9ecc22432c733b4bc38aa04",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740"
+  },
+  "script_sha256": "31e753b1f4cf965e4998e3acb035b646252d1b5615db75ea3331b1e3ba76d059",
+  "artifacts": {
+    "formulas.json": "f634e510fd6e04f51f0c2c6cc1f43d284b0b0c9e5d9c44d4a3b4de9d8a35e87f",
+    "transfer.json": "981043dc0572f4d0ddd1d2165e77c488f607ac5746fe121a63e2db4172fb2a5c"
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "sympy": "1.14.0",
+    "scipy": "1.17.1"
+  },
+  "numerical": {
+    "rows": [
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "background_difference": 8.017978408945355e-12,
+        "Liouville_residual": 7.191469642009451e-13,
+        "max_chart_amplification": 3.7152336768651217,
+        "final_transfer": [
+          [
+            0.9135942711522107,
+            3.531783583451767
+          ],
+          [
+            -0.08970229251432582,
+            0.7478056041641984
+          ]
+        ]
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "background_difference": 7.579752171403771e-13,
+        "Liouville_residual": 1.9451107391432743e-13,
+        "max_chart_amplification": 3.7152336768644894,
+        "final_transfer": [
+          [
+            0.9135942711524444,
+            3.5317835834510802
+          ],
+          [
+            -0.08970229251433207,
+            0.7478056041640304
+          ]
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "background_difference": 1.6831778860520328e-11,
+        "Liouville_residual": 7.803757640090225e-13,
+        "max_chart_amplification": 4.109360767218929,
+        "final_transfer": [
+          [
+            0.9991111376538059,
+            3.8830589221853336
+          ],
+          [
+            -0.017620498236604935,
+            0.93240734889276
+          ]
+        ]
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "background_difference": 5.552737162063951e-13,
+        "Liouville_residual": 1.6842083283563625e-13,
+        "max_chart_amplification": 4.109360767216907,
+        "final_transfer": [
+          [
+            0.999111137653406,
+            3.8830589221835314
+          ],
+          [
+            -0.01762049823695408,
+            0.9324073488917988
+          ]
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "background_difference": 1.3569234901695832e-11,
+        "Liouville_residual": 3.0830893393840597e-13,
+        "max_chart_amplification": 4.411701323320159,
+        "final_transfer": [
+          [
+            1.176930659517326,
+            4.122205677434864
+          ],
+          [
+            0.06131299116133801,
+            1.064416794766439
+          ]
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "background_difference": 5.72290386015302e-13,
+        "Liouville_residual": 1.638689184346731e-13,
+        "max_chart_amplification": 4.411701323319545,
+        "final_transfer": [
+          [
+            1.1769306595170987,
+            4.1222056774343265
+          ],
+          [
+            0.06131299116122973,
+            1.0644167947662404
+          ]
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "background_difference": 7.61397466566269e-12,
+        "Liouville_residual": 4.5258241598844506e-13,
+        "max_chart_amplification": 4.539043472764177,
+        "final_transfer": [
+          [
+            1.2515594113952366,
+            4.220363561132982
+          ],
+          [
+            0.09649669753717278,
+            1.1243981973550528
+          ]
+        ]
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "background_difference": 5.401783289021026e-13,
+        "Liouville_residual": 5.906386491005833e-14,
+        "max_chart_amplification": 4.539043472764204,
+        "final_transfer": [
+          [
+            1.251559411395148,
+            4.2203635611330155
+          ],
+          [
+            0.09649669753717338,
+            1.124398197355139
+          ]
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "background_difference": 7.034436445536701e-12,
+        "Liouville_residual": 4.005129561335252e-13,
+        "max_chart_amplification": 4.578055405314224,
+        "final_transfer": [
+          [
+            1.2741153587208494,
+            4.2501706289327235
+          ],
+          [
+            0.10749221483517439,
+            1.1434288460300828
+          ]
+        ]
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "background_difference": 3.3928384932311034e-13,
+        "Liouville_residual": 7.172040739078511e-14,
+        "max_chart_amplification": 4.578055405314301,
+        "final_transfer": [
+          [
+            1.274115358720821,
+            4.250170628932795
+          ],
+          [
+            0.10749221483518626,
+            1.143428846030153
+          ]
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "background_difference": 5.176874117948636e-12,
+        "Liouville_residual": 2.7700064464397656e-13,
+        "max_chart_amplification": 4.588416913886105,
+        "final_transfer": [
+          [
+            1.2800770379970503,
+            4.258067244273463
+          ],
+          [
+            0.11042964677606679,
+            1.148537797408133
+          ]
+        ]
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "background_difference": 2.5818716829901104e-13,
+        "Liouville_residual": 7.005507285384738e-14,
+        "max_chart_amplification": 4.588416913886167,
+        "final_transfer": [
+          [
+            1.2800770379970463,
+            4.258067244273522
+          ],
+          [
+            0.11042964677607764,
+            1.1485377974081754
+          ]
+        ]
+      }
+    ],
+    "worst_background_difference": 1.6831778860520328e-11,
+    "worst_transfer_difference": 1.9802058166521455e-12,
+    "worst_Liouville_residual": 7.803757640090225e-13
+  },
+  "status": "CONDITIONAL_EVOLVING_LOW_FREQUENCY_BRANCH_FULL_IVP_AND_EFT_OPEN",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "canonical_Test1_pass": false,
+  "canonical_Test2_pass": false,
+  "canonical_Test3_pass": false,
+  "full_IVP_verified": false,
+  "healthy_continuous_GR_limit_verified": false,
+  "physical_EFT_cutoff_derived": false,
+  "MAT_001": "BLOCKED",
+  "UVIR_003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED"
+}

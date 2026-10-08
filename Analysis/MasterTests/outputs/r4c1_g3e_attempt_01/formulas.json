@@ -1,0 +1,53 @@
+{
+  "normalized_coefficient_order": [
+    "X",
+    "Xdot",
+    "Xddot"
+  ],
+  "normalized_coefficients": [
+    "-(75*H**2*eta - 900*H**2 + 240*H*eta**3*psi_dot - 2880*H*eta**2*psi_dot + 48*eta**5*psi_dot**2 - 576*eta**4*psi_dot**2 + 16*eta**4*rho_m - 192*eta**3*rho_m + 2700*eta*psi_dot**2 + 900*r_dot**2 - 900*rho_m + 900*u_dot**2 + 900*v_dot**2)/(300*(eta - 12))",
+    "0",
+    "1"
+  ],
+  "frozen_coefficients": [
+    "-(25*H**2*eta**2 - 1200*H**2*eta + 10800*H**2 + 16*eta**6*psi_dot**2 - 384*eta**5*psi_dot**2 + 2304*eta**4*psi_dot**2 + 900*eta**2*psi_dot**2 - 21600*eta*psi_dot**2 + 300*eta*r_dot**2 - 300*eta*rho_m + 300*eta*u_dot**2 + 300*eta*v_dot**2 - 7200*r_dot**2 - 7200*u_dot**2 - 7200*v_dot**2)/(100*(eta - 12)**2)",
+    "12*H/(eta - 12)",
+    "1"
+  ],
+  "kinetic_prefactor": "(eta - 12)/eta",
+  "force_embedding": [
+    "3*sqrt(2)*X*a*psi_dot",
+    "0",
+    "-11*sqrt(2)*a**2*eta*(5*H*X*a*eta*sqrt(eta**2 - 20*eta + 96) - 120*H*X*a*sqrt(eta**2 - 20*eta + 96) - 4*X*a*eta**3*psi_dot*sqrt(eta**2 - 20*eta + 96) - 10*Xdot*a*eta*sqrt(eta**2 - 20*eta + 96) + 12*a*(eta - 12)*(eta - 8)*(5*H*X + 4*X*eta**2*psi_dot + 10*Xdot)/sqrt((eta - 12)*(eta - 8)))/(250*sqrt((eta - 12)*(eta - 8)))"
+  ],
+  "propagating_embedding": [
+    "sqrt(6)*X*a*u_dot/sqrt(eta)",
+    "sqrt(6)*X*a*v_dot/sqrt(eta)",
+    "sqrt(6)*X*a*r_dot/sqrt(eta)",
+    "-3*a*(eta - 12)*(eta - 8)*(5*H*X + 4*X*eta**2*psi_dot + 10*Xdot)/(10*eta*sqrt((eta - 12)*(eta - 8)))"
+  ],
+  "physical_leading_maps": {
+    "density_contrast": [
+      "sqrt(6)*(5*H - 4*eta**2*psi_dot)*(eta - 12)/(60*a**(5/2)*sqrt(eta)*rho_m)",
+      "-sqrt(6)*(eta - 12)/(6*a**(5/2)*sqrt(eta)*rho_m)"
+    ],
+    "comoving_dust_divergence": [
+      "-sqrt(6)*(5*H + 4*eta**2*psi_dot)/(10*H*a**(3/2)*sqrt(eta))",
+      "-sqrt(6)/(H*a**(3/2)*sqrt(eta))"
+    ],
+    "comoving_frame_divergence": [
+      "sqrt(6)*(5*H - 4*eta**2*psi_dot)/(10*H*a**(3/2)*sqrt(eta))",
+      "-sqrt(6)/(H*a**(3/2)*sqrt(eta))"
+    ],
+    "lapse": [
+      "0",
+      "0"
+    ],
+    "regulator": [
+      "0",
+      "0"
+    ]
+  },
+  "density_velocity_map_determinant": "-(eta - 12)/(a**4*eta*rho_m)",
+  "scope": "Formal large-comoving-k low-frequency branch with well-prepared initial data; not full PDE/EFT theorem"
+}

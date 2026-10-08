@@ -1,0 +1,2343 @@
+{
+  "schema": "r4c1-g3t-v1",
+  "validation": "FAIL_LOCAL_CHECKS",
+  "passed": 265,
+  "total": 266,
+  "checks": [
+    {
+      "name": "exact_unit_frame",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "exact_inverse",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "projector_idempotence",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "projector_orthogonality",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "covariant_I1",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "shift_and_lapse_velocity_absence_I1",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "covariant_I2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "shift_and_lapse_velocity_absence_I2",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "covariant_I3",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "shift_and_lapse_velocity_absence_I3",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "covariant_I4",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "shift_and_lapse_velocity_absence_I4",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "homogeneous_acceleration_time",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "exact_tilted_Y",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "exact_tilted_Delta",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "scalar_dust_inverse_00",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "dust_multiplier_constraint",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "lapse_dust_source_on_multiplier_shell",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "dust_energy_identity",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "alignment_corrected_charge",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "rotation_noether_source",
+      "passed": false,
+      "value": [
+        "w**2*zeta*(u*u_dot + v*v_dot)*(u*v_dot - u_dot*v)*exp(3*alpha)*exp(beta*psi)"
+      ],
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "psi_z_mixed_velocity",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "z_velocity_diagonal_zero",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "z_velocity_other_rows_zero",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "psi_z_negative_principal_determinant",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "rest_block_geometry_factor",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "rest_block_scalar_determinant",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "pair_inverse",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "zero_pair_schur_correction",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "aligned_G3_background_control",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "independent_published_geometry_Hessian",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "nonzero_highest_time_derivative_Hessian",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "healthy_control_dust_zero_mode_roots",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "healthy_control_same_preferred_dispersion",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": "zero_exact"
+    },
+    {
+      "name": "inherited_G3_failed_receipt_preserved",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "registered_eta_grid",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "independent_raw_covariant_action",
+      "passed": true,
+      "value": [
+        -0.8140907210461061,
+        -0.8140907210461064
+      ],
+      "criterion": "<=1e-12"
+    },
+    {
+      "name": "independent_velocity_Hessian",
+      "passed": true,
+      "value": [
+        {
+          "h": 0.0001,
+          "max_normalized_error": 2.042276316472868e-09
+        },
+        {
+          "h": 5e-05,
+          "max_normalized_error": 6.832638807819904e-09
+        },
+        {
+          "h": 2.5e-05,
+          "max_normalized_error": 1.951737267291162e-08
+        }
+      ],
+      "criterion": "finest <=1e-5"
+    },
+    {
+      "name": "archived_initial_array_1.0",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.5_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.9646307143715047,
+          0.0
+        ],
+        [
+          0.9645171505983483,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.5_initial_lapse",
+      "passed": true,
+      "value": 8.0953762212251e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.5_all_reduced_EL",
+      "passed": true,
+      "value": 9.938877633277748e-18,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.5_matched_psi_acceleration",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.5_Noether_jets",
+      "passed": true,
+      "value": [
+        -3.3306690738754696e-16,
+        -6.38378239159465e-16
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.5_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.5_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.5_pair_determinant",
+      "passed": true,
+      "value": -0.012913223140495875,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.25_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.953076660417435,
+          0.0
+        ],
+        [
+          0.9530697210630551,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.25_initial_lapse",
+      "passed": true,
+      "value": 4.85722573273506e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.25_all_reduced_EL",
+      "passed": true,
+      "value": 1.5942275547916531e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.25_matched_psi_acceleration",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.25_Noether_jets",
+      "passed": true,
+      "value": [
+        6.522560269672795e-16,
+        6.328271240363392e-15
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.25_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.25_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.25_pair_determinant",
+      "passed": true,
+      "value": -0.0008070764462809912,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.125_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.950192756507978,
+          0.0
+        ],
+        [
+          0.9501923252514771,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.125_initial_lapse",
+      "passed": true,
+      "value": 6.47630097698008e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.125_all_reduced_EL",
+      "passed": true,
+      "value": 3.9887594192701987e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.125_matched_psi_acceleration",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.125_Noether_jets",
+      "passed": true,
+      "value": [
+        -2.220446049250313e-16,
+        -3.0531133177191805e-15
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.125_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.125_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.125_pair_determinant",
+      "passed": true,
+      "value": -5.044227789256202e-05,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.0625_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.9494713700094645,
+          0.0
+        ],
+        [
+          0.9494713430941765,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.0625_initial_lapse",
+      "passed": true,
+      "value": 3.23815048849004e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.0625_all_reduced_EL",
+      "passed": true,
+      "value": 3.989612263378626e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.0625_matched_psi_acceleration",
+      "passed": true,
+      "value": 1.377149363143666e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.0625_Noether_jets",
+      "passed": true,
+      "value": [
+        5.689893001203927e-16,
+        -5.551115123125783e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_1.0_w_0.0625_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.0625_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.0625_pair_determinant",
+      "passed": true,
+      "value": -3.1526423682851253e-06,
+      "criterion": null
+    },
+    {
+      "name": "archived_initial_array_0.25",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.5_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.4952476928257644,
+          0.0
+        ],
+        [
+          0.4952460694639647,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.5_initial_lapse",
+      "passed": true,
+      "value": 1.8503717077085943e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.5_all_reduced_EL",
+      "passed": true,
+      "value": 7.208208768916911e-19,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.5_matched_psi_acceleration",
+      "passed": true,
+      "value": 1.2837725637920422e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.5_Noether_jets",
+      "passed": true,
+      "value": [
+        2.3418766925686896e-17,
+        -8.500145032286355e-16
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.5_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.5_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.5_pair_determinant",
+      "passed": true,
+      "value": -0.0008070764462809919,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.25_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.4939064024918612,
+          0.0
+        ],
+        [
+          0.4939063015715242,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.25_initial_lapse",
+      "passed": true,
+      "value": 1.8503717077085943e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.25_all_reduced_EL",
+      "passed": true,
+      "value": 3.6046273449867455e-19,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.25_matched_psi_acceleration",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.25_Noether_jets",
+      "passed": true,
+      "value": [
+        3.865180744910823e-17,
+        1.3253287356462806e-15
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.25_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.25_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.25_pair_determinant",
+      "passed": true,
+      "value": -5.044227789256202e-05,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.125_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.4935724390730768,
+          0.0
+        ],
+        [
+          0.49357243277394364,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.125_initial_lapse",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.125_all_reduced_EL",
+      "passed": true,
+      "value": 2.8838106531326323e-18,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.125_matched_psi_acceleration",
+      "passed": true,
+      "value": 1.2840707648998156e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.125_Noether_jets",
+      "passed": true,
+      "value": [
+        -8.245357521752261e-17,
+        -9.367506770274758e-16
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.125_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.125_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.125_pair_determinant",
+      "passed": true,
+      "value": -3.1526423682851253e-06,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.0625_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.49348903013909884,
+          0.0
+        ],
+        [
+          0.493489029745534,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.0625_initial_lapse",
+      "passed": true,
+      "value": 9.251858538542972e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.0625_all_reduced_EL",
+      "passed": true,
+      "value": 2.8838381488706276e-18,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.0625_matched_psi_acceleration",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.0625_Noether_jets",
+      "passed": true,
+      "value": [
+        1.214306433183765e-17,
+        1.6237011735142914e-15
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.25_w_0.0625_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.0625_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_w_0.0625_pair_determinant",
+      "passed": true,
+      "value": -1.9704014801782025e-07,
+      "criterion": null
+    },
+    {
+      "name": "archived_initial_array_0.0625",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.5_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.3314547708123099,
+          0.0
+        ],
+        [
+          0.33145474597919183,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.5_initial_lapse",
+      "passed": true,
+      "value": 1.3877787807814457e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.5_all_reduced_EL",
+      "passed": true,
+      "value": 6.170123636429613e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.5_matched_psi_acceleration",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.5_Noether_jets",
+      "passed": true,
+      "value": [
+        -1.2681989044528198e-17,
+        -7.762887554996212e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.5_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.5_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.5_pair_determinant",
+      "passed": true,
+      "value": -5.044227789256202e-05,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.25_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.3312371976582415,
+          0.0
+        ],
+        [
+          0.3312371961082037,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.25_initial_lapse",
+      "passed": true,
+      "value": 6.938893903907228e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.25_all_reduced_EL",
+      "passed": true,
+      "value": 6.170143393793569e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.25_matched_psi_acceleration",
+      "passed": true,
+      "value": 1.710623686608325e-18,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.25_Noether_jets",
+      "passed": true,
+      "value": [
+        1.1316360175317453e-18,
+        7.19910242530375e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.25_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.25_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.25_pair_determinant",
+      "passed": true,
+      "value": -3.1526423682851253e-06,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.125_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.3311828688569831,
+          0.0
+        ],
+        [
+          0.3311828687601374,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.125_initial_lapse",
+      "passed": true,
+      "value": 9.251858538542972e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.125_all_reduced_EL",
+      "passed": true,
+      "value": 2.410214224284166e-19,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.125_matched_psi_acceleration",
+      "passed": true,
+      "value": 1.7106271232112304e-18,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.125_Noether_jets",
+      "passed": true,
+      "value": [
+        -7.558074988350122e-18,
+        1.0538445116559103e-16
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.125_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.125_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.125_pair_determinant",
+      "passed": true,
+      "value": -1.9704014801782025e-07,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.0625_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.331169290674054,
+          0.0
+        ],
+        [
+          0.33116929066800166,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.0625_initial_lapse",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.0625_all_reduced_EL",
+      "passed": true,
+      "value": 6.170149674548352e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.0625_matched_psi_acceleration",
+      "passed": true,
+      "value": 1.710627982127222e-18,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.0625_Noether_jets",
+      "passed": true,
+      "value": [
+        9.351667254161103e-18,
+        1.1188966420050406e-16
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0625_w_0.0625_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.0625_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_w_0.0625_pair_determinant",
+      "passed": true,
+      "value": -1.2315009251113761e-08,
+      "criterion": null
+    },
+    {
+      "name": "archived_initial_array_0.015625",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.5_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.2781851278424985,
+          0.0
+        ],
+        [
+          0.2781851274565053,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.5_initial_lapse",
+      "passed": true,
+      "value": 1.3877787807814457e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.5_all_reduced_EL",
+      "passed": true,
+      "value": 3.285846088484645e-20,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.5_matched_psi_acceleration",
+      "passed": true,
+      "value": 4.3237309034710697e-19,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.5_Noether_jets",
+      "passed": true,
+      "value": [
+        -1.9268775322728754e-18,
+        3.2526065174565133e-18
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.5_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.5_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.5_pair_determinant",
+      "passed": true,
+      "value": -3.1526423682851253e-06,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.25_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.2781397735429827,
+          0.0
+        ],
+        [
+          0.27813977351886593,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.25_initial_lapse",
+      "passed": true,
+      "value": 9.251858538542972e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.25_all_reduced_EL",
+      "passed": true,
+      "value": 1.642923134800573e-20,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.25_matched_psi_acceleration",
+      "passed": true,
+      "value": 4.323732736348859e-19,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.25_Noether_jets",
+      "passed": true,
+      "value": [
+        1.825463534812649e-18,
+        -2.3201926491189795e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.25_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.25_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.25_pair_determinant",
+      "passed": true,
+      "value": -1.9704014801782025e-07,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.125_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.2781284384093713,
+          0.0
+        ],
+        [
+          0.27812843840786416,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.125_initial_lapse",
+      "passed": true,
+      "value": 2.5442610980993174e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.125_all_reduced_EL",
+      "passed": true,
+      "value": 6.729413253950905e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.125_matched_psi_acceleration",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.125_Noether_jets",
+      "passed": true,
+      "value": [
+        -2.7221769496568843e-19,
+        4.586175189613684e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.125_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.125_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.125_pair_determinant",
+      "passed": true,
+      "value": -1.2315009251113761e-08,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.0625_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.2781256048409542,
+          0.0
+        ],
+        [
+          0.2781256048408601,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.0625_initial_lapse",
+      "passed": true,
+      "value": 2.312964634635743e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.0625_all_reduced_EL",
+      "passed": true,
+      "value": 6.729413277470617e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.0625_matched_psi_acceleration",
+      "passed": true,
+      "value": 8.647466617889116e-19,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.0625_Noether_jets",
+      "passed": true,
+      "value": [
+        1.3717665493558892e-18,
+        -5.561957144850638e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.015625_w_0.0625_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.0625_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_w_0.0625_pair_determinant",
+      "passed": true,
+      "value": -7.696880781946098e-10,
+      "criterion": null
+    },
+    {
+      "name": "archived_initial_array_0.00390625",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.5_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.26332872393093393,
+          0.0
+        ],
+        [
+          0.26332872392491063,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.5_initial_lapse",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.5_all_reduced_EL",
+      "passed": true,
+      "value": 6.885312390970295e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.5_matched_psi_acceleration",
+      "passed": true,
+      "value": 2.1668413083656805e-19,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.5_Noether_jets",
+      "passed": true,
+      "value": [
+        1.5479071192383154e-19,
+        3.924811864397526e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.5_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.5_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.5_pair_determinant",
+      "passed": true,
+      "value": -1.9704014801782025e-07,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.25_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.263318004908972,
+          0.0
+        ],
+        [
+          0.26331800490859564,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.25_initial_lapse",
+      "passed": true,
+      "value": 1.1564823173178715e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.25_all_reduced_EL",
+      "passed": true,
+      "value": 2.1012305899203573e-21,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.25_matched_psi_acceleration",
+      "passed": true,
+      "value": 1.0834206813816672e-19,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.25_Noether_jets",
+      "passed": true,
+      "value": [
+        3.50947905563176e-19,
+        -8.586881206085195e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.25_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.25_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.25_pair_determinant",
+      "passed": true,
+      "value": -1.2315009251113761e-08,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.125_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.2633153253576774,
+          0.0
+        ],
+        [
+          0.263315325357654,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.125_initial_lapse",
+      "passed": true,
+      "value": 1.61907524424502e-16,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.125_all_reduced_EL",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.125_matched_psi_acceleration",
+      "passed": true,
+      "value": 1.083420688180859e-19,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.125_Noether_jets",
+      "passed": true,
+      "value": [
+        -3.5895431595904745e-19,
+        -7.649046326885234e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.125_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.125_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.125_pair_determinant",
+      "passed": true,
+      "value": -7.696880781946098e-10,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.0625_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.26331465548261485,
+          0.0
+        ],
+        [
+          0.2633146554826133,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.0625_initial_lapse",
+      "passed": true,
+      "value": 9.251858538542972e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.0625_all_reduced_EL",
+      "passed": true,
+      "value": 6.88531239897219e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.0625_matched_psi_acceleration",
+      "passed": true,
+      "value": 1.0834206898806245e-19,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.0625_Noether_jets",
+      "passed": true,
+      "value": [
+        -1.0274900234540153e-19,
+        2.4448758989548125e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.00390625_w_0.0625_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.0625_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_w_0.0625_pair_determinant",
+      "passed": true,
+      "value": -4.8105504887163096e-11,
+      "criterion": null
+    },
+    {
+      "name": "archived_initial_array_0.0009765625",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.5_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.2594902924010851,
+          0.0
+        ],
+        [
+          0.2594902924009911,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.5_initial_lapse",
+      "passed": true,
+      "value": 2.312964634635743e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.5_all_reduced_EL",
+      "passed": true,
+      "value": 6.604595686554503e-23,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.5_matched_psi_acceleration",
+      "passed": true,
+      "value": 2.7100228120319522e-20,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.5_Noether_jets",
+      "passed": true,
+      "value": [
+        -1.487858981189633e-19,
+        -1.3265213580360147e-16
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.5_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.5_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.5_pair_determinant",
+      "passed": true,
+      "value": -1.2315009251113761e-08,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.2594876524807706,
+          0.0
+        ],
+        [
+          0.2594876524807647,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_initial_lapse",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_all_reduced_EL",
+      "passed": true,
+      "value": 6.604595686646217e-23,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_matched_psi_acceleration",
+      "passed": true,
+      "value": 5.420045632446291e-20,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_Noether_jets",
+      "passed": true,
+      "value": [
+        -3.936487886410954e-20,
+        -4.75083839455992e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_pair_determinant",
+      "passed": true,
+      "value": -7.696880781946098e-10,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.125_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.2594869925132762,
+          0.0
+        ],
+        [
+          0.25948699251327595,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.125_initial_lapse",
+      "passed": true,
+      "value": 2.312964634635743e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.125_all_reduced_EL",
+      "passed": true,
+      "value": 2.6418382746677526e-22,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.125_matched_psi_acceleration",
+      "passed": true,
+      "value": 2.7100228172709237e-20,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.125_Noether_jets",
+      "passed": true,
+      "value": [
+        -1.4753489562370593e-19,
+        -2.2063514210080015e-17
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.125_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.125_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.125_pair_determinant",
+      "passed": true,
+      "value": -4.810550488716327e-11,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_expanding_constraint_root",
+      "passed": true,
+      "value": [
+        [
+          -0.2594868275221892,
+          0.0
+        ],
+        [
+          0.2594868275221892,
+          0.0
+        ]
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_initial_lapse",
+      "passed": true,
+      "value": 4.625929269271486e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_all_reduced_EL",
+      "passed": true,
+      "value": 6.925420526751122e-17,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_matched_psi_acceleration",
+      "passed": true,
+      "value": 2.7100228175328676e-20,
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_Noether_jets",
+      "passed": true,
+      "value": [
+        6.93680890050998e-20,
+        -2.2392162993614684e-16
+      ],
+      "criterion": "<=1e-10"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_positive_Y_and_dust",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_rank_and_inertia",
+      "passed": true,
+      "value": {
+        "full": [
+          6,
+          2,
+          0
+        ],
+        "rest": [
+          5,
+          1,
+          0
+        ]
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_pair_determinant",
+      "passed": true,
+      "value": -3.0065940554476927e-12,
+      "criterion": null
+    },
+    {
+      "name": "all_24_initial_data_cases_retained",
+      "passed": true,
+      "value": 24,
+      "criterion": 24
+    },
+    {
+      "name": "eta_1.0_w_0.25_DOP853_solver",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.25_DOP853_smooth_physical_domain",
+      "passed": true,
+      "value": [
+        0.24999999249545057,
+        0.1993863148142553,
+        0.19944515546262975
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.25_DOP853_energy_charge_drifts",
+      "passed": true,
+      "value": [
+        2.0122792321330974e-15,
+        1.1128982608290727e-16
+      ],
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_1.0_w_0.25_Radau_solver",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.25_Radau_smooth_physical_domain",
+      "passed": true,
+      "value": [
+        0.2499999924954506,
+        0.19938631481425526,
+        0.19944515546262978
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.25_Radau_energy_charge_drifts",
+      "passed": true,
+      "value": [
+        2.6830389761774633e-15,
+        4.451593043316291e-16
+      ],
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_1.0_w_0.25_method_agreement",
+      "passed": true,
+      "value": 2.807524331167095e-13,
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_1.0_w_0.0625_DOP853_solver",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.0625_DOP853_smooth_physical_domain",
+      "passed": true,
+      "value": [
+        0.06249999871006322,
+        0.19938848778765364,
+        0.19944730645453698
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.0625_DOP853_energy_charge_drifts",
+      "passed": true,
+      "value": [
+        1.8966310004013097e-15,
+        1.6655847750349457e-16
+      ],
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_1.0_w_0.0625_Radau_solver",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.0625_Radau_smooth_physical_domain",
+      "passed": true,
+      "value": [
+        0.06249999871006322,
+        0.19938848778765358,
+        0.19944730645453343
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_w_0.0625_Radau_energy_charge_drifts",
+      "passed": true,
+      "value": [
+        2.5673907444456757e-15,
+        2.2207797000465943e-16
+      ],
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_1.0_w_0.0625_method_agreement",
+      "passed": true,
+      "value": 4.788666837487406e-12,
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_DOP853_solver",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_DOP853_smooth_physical_domain",
+      "passed": true,
+      "value": [
+        0.25,
+        0.00019513447453399046,
+        0.1998443981201204
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_DOP853_energy_charge_drifts",
+      "passed": true,
+      "value": [
+        1.61907524424502e-16,
+        3.2494332428198717e-19
+      ],
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_Radau_solver",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_Radau_smooth_physical_domain",
+      "passed": true,
+      "value": [
+        0.25,
+        0.0001951344745339905,
+        0.1998443981201204
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_Radau_energy_charge_drifts",
+      "passed": true,
+      "value": [
+        1.61907524424502e-16,
+        3.2494332428198717e-19
+      ],
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.25_method_agreement",
+      "passed": true,
+      "value": 3.1376653924932213e-15,
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_DOP853_solver",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_DOP853_smooth_physical_domain",
+      "passed": true,
+      "value": [
+        0.0625,
+        0.00019513448354733902,
+        0.1998443986145828
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_DOP853_energy_charge_drifts",
+      "passed": true,
+      "value": [
+        2.0816681711721683e-16,
+        3.2494332428062443e-19
+      ],
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_Radau_solver",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_Radau_smooth_physical_domain",
+      "passed": true,
+      "value": [
+        0.0625,
+        0.00019513448354733763,
+        0.1998443986145828
+      ],
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_Radau_energy_charge_drifts",
+      "passed": true,
+      "value": [
+        2.3129646346357425e-16,
+        3.2494332428062443e-19
+      ],
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eta_0.0009765625_w_0.0625_method_agreement",
+      "passed": true,
+      "value": 3.709839831736572e-13,
+      "criterion": "<=1e-8"
+    },
+    {
+      "name": "eight_registered_runs_retained",
+      "passed": true,
+      "value": 8,
+      "criterion": 8
+    }
+  ],
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_TILTED_BACKGROUND_CONTRACT_2026-10-08.md": "508252d61dcdc73c28d9c568e4b80769aa1a3c88bb68cfc1a3306ccac078f9ac",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_COUPLED_VERTEX_REGULARITY_REPORT_2026-10-08_v1.md": "952b4315a5607358a4fc0250a9ab67efc90577dda77f006b357fc1cbd74eeb27",
+    "Theory/Gates/RES-001/RES001_R4C1_G3V_SOURCE_INTEGRITY_ADDENDUM_2026-10-08.md": "6bd6808e2240354fd29b7204215e3bf0a33f53a109035afb0ed41d88b8a11834",
+    "Analysis/MasterTests/test_01_r4c1_g3_coupled_vertex_regularity_v1.py": "875aefe980e4b78a1173a69bbd129d81a7dc4b2b0872c0a16774bc7c177bfe8b",
+    "Analysis/MasterTests/outputs/r4c1_g3v_attempt_01/summary.json": "07e85fbd5c13b7390be3dadad723a36f445aa065d678b51f8070255834157cae",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_NONZERO_GRADIENT_FORCE_LOCAL.md": "f58e85f8dd5d78fc563bdb537cb68db16379486920641126ea40e4d992134bf2",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FORCE_COMPLETION_OPTIONS.md": "d71848c053fbcae635e7071222e06419df839a0a169c87c58e84195c0f73b2fd",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f"
+  },
+  "transitive_source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_COUPLED_VERTEX_REGULARITY_CONTRACT_2026-10-08.md": "53940518eeff7ca46fb5a9373db6e4637360eeedaeffcba6044af5cc580ac3ac",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FRAME_SCATTERING_REPORT_2026-10-08.md": "035d1480904b2459b6a4e8b6df91d381065a653fdeb49583fcdb3dbfc4ac49f4",
+    "Analysis/MasterTests/outputs/r4c1_g3i_attempt_01/summary.json": "0d85d136e7c7a3c4cd4b49d984f70d3bfdbdd70aed82b3fc423181028aa1d9c7",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md": "c2a5c82f285dc04adcfffed4ba5c562661ddca98c4d045802ffb6e88bfeefd68",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FRAME_SCATTERING_CONTRACT_2026-10-08.md": "f54c7a7297350256ae199c3ba2b5f19266094c57739b95c6dad0ee253627d5f8",
+    "Theory/Gates/ITSM_MASTER_TESTS_01_03_REQUIREMENT_DISPOSITION_2026-09-30.md": "9ccd38b3c1d20670c759488ce6f4ecd865355090733359cd506d7b01fd3c9ac3",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_REPORT_2026-09-30.md": "1b9fbc4185b61d1e37d7865baa811994e235523eb9ecc22432c733b4bc38aa04",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_REPORT_2026-10-08.md": "a247893f8f0cb15760c20cc24b4f19b91f701ce2aaa0ec585a534b3436b78d13",
+    "Analysis/MasterTests/outputs/r4c1_g3df_attempt_01/summary.json": "877b6f630a6692965656005fc823a2141b21daac4d32461f77e28dd12905a5a3",
+    "Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md": "2f151504d695ee442585653982cbbabfca2f520e864a802de306c0b013f3abc4",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_CONTRACT_2026-10-08.md": "26ecfebc6d7792c0a5d6e065b8512f803d5ddd6e6316d01300d83ad7ef2769ce",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_REPORT_2026-09-30.md": "8a1c2245fc02307c5e70c7b4c1064872e82464c4c411d3095e97575c730b1876",
+    "Analysis/MasterTests/test_01_r4c1_g3_density_action.py": "1a855ad2a5bbafbee0ad7164604a210f5a236529896cbbab5a62173d6e822fc8",
+    "Analysis/MasterTests/outputs/r4c1_g3d_attempt_01/summary.json": "c309ec0fbd3e3c3bff9ac05c86c4c0fe5f5e37edd5cc66a2a37cabb9bc6e5b72",
+    "Analysis/MasterTests/outputs/r4c1_g3d_attempt_01/formulas.json": "68aaddb629ba729aa197804d46f8228d509111195757288221d21bb7f7a692e8",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/summary.json": "3c3241a44e43b986971c8c340643b6b9c87ca97c803347cb9da5c0a934fa05e1",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/columns.npy": "2a7df2c3ca35f5d438f54520241c880692c9804d03f3bf1bf696cf183345bccc",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/embedding.json": "c235d8c9f81314f01ade15dddd215263fc22754efa6caee485d793f85e432300",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_REPORT_2026-09-30.md": "25b39464948805df96eeded13cc96fa04c87e767e1781113514f85d5fd957771",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_CONTRACT_2026-09-30.md": "0ff843db7c1887fea71e307fd8801841427628d0426bf8f9bd83e4b78e9c5758",
+    "Analysis/MasterTests/test_01_r4c1_g3_finite_k.py": "24ef13486d8477cb021dc4931d6e64c6d6fcc8fa52a330c106515c4507624504",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_CONTRACT_2026-09-30.md": "75050556086b27f794b2378ac389f6bb864ae03e4441c395ff5fc64538b1cd55",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_REPORT_2026-09-30.md": "2158f16970e883eb661aaabd04a1014aef3d8a47e6346ad7cb27453f464db83c",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/summary.json": "3c46b9834c6805c0ae46aeb0ff6226ec2abf814db873abc1d8fc104b8eacab72",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/formulas.json": "f4b7a2e69c7a51ebf33d25b94e03a60f7ca2680fecb481e42d4258cf9219ace6",
+    "Analysis/MasterTests/test_01_r4c1_g3_slow_action.py": "64e59e69851734cd24a4abbd31d7b02b17490395b1d841b1a0f06bd246681b90",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_CONTRACT_2026-09-30.md": "f6a35a4ade82c8d925b44d6984164eb761e50015936623b0683e071516f62a43",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_REPORT_2026-09-30.md": "d350c85fafb752502c017b7c93bc0223b4386ed72c39080c3e01126478d60f02",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/summary.json": "1f13df62495f3a39198b697a7387f14086338306a8a5e24462b1e873800f1b5a",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/formulas.json": "f634e510fd6e04f51f0c2c6cc1f43d284b0b0c9e5d9c44d4a3b4de9d8a35e87f",
+    "Analysis/MasterTests/outputs/r4c1_g3e_gr_attempt_01/summary.json": "813353365311041ba341c96ec5949520e927df06f69bde8e5be19227930a5d28",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_CONTRACT_2026-09-30.md": "d1d64c216465956424589f95c940116bc198f5670552297b7e611894bcd385fa",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_REPORT_2026-09-30.md": "fe8d380be77af9e5ccecb02c62b8264d5ecbb6bf5d42153755c2914cd355cdbd",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/summary.json": "60d9de53f95592512e094ffc60c81a781ab8f9b33a8afa93dbf53943efbb34bf",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/pencil.json": "abb6a23cba1f80b0a02bf76d1bb47153bd745be55e83c44e9bd8183f9a9d5bb4",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_CONTRACT_2026-09-30.md": "47723c96936643b6be19d22e00a4f98bc3f4208cb409e61c255e041b7ce725e5",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/summary.json": "550caae54b03b490a5388ecd363ad0f9ff0d8d4891021d2eb1c366871d54378a",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_scalar.py": "eb5d8c41938d346a294aa03f713ea10655b939234dab7935f4a0ee9f774553f9",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_CONTRACT_2026-09-30.md": "92fc34dd19f2bc5de077703b0e7a8b209c14fdf1ae66674bc1f8176d8e4be1c5",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740"
+  },
+  "script_sha256": "1fced9abc0e9b05f8aac86b27ed185bdfb41a531be12236cf8bf0b8387edaaf1",
+  "artifacts": {
+    "formulas.json": "407eadb8eee4bd335e9d9ff8c8b685705ae44d8b0f67819f89d6c376b60d0ef2",
+    "initial_data.json": "c1b80b7c8cd1fd74e07fe797214a56f6c14f32f0416bb3966f6371cf4a85d243",
+    "trajectories.npy": "470bdd1212e45fb3334e549003a6d6233f26f396043924c2ccb9b20bf13c18cd"
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "sympy": "1.14.0",
+    "scipy": "1.17.1"
+  },
+  "status": "TILTED_CHECK_FAILURES_REQUIRE_DISPOSITION",
+  "initial_data_cases": 24,
+  "short_IVP_runs": 8,
+  "homogeneous_dust_clock_Hessian_inertia": null,
+  "physical_ghost_proven": false,
+  "healthy_tilted_physical_domain_proven": false,
+  "full_finite_k_constraints_verified": false,
+  "preferred_Cauchy_domain_verified": false,
+  "physical_EFT_cutoff": "NOT_DERIVED",
+  "full_finite_density_scattering_verified": false,
+  "homogeneous_G3_Taylor_vertex_obstruction_retained": true,
+  "quantum_completion_no_go": false,
+  "all_actions_no_go": false,
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "canonical_tests_1_to_3": "HOLD_SUBSTANTIVE",
+  "MAT_001": "BLOCKED",
+  "UVIR_003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED",
+  "TOP_X4": "UNCHANGED"
+}

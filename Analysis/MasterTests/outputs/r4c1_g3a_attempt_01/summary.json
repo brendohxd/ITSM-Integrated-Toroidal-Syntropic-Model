@@ -1,0 +1,1273 @@
+{
+  "schema": "r4c1-g3a-v1",
+  "validation": "FAIL_LOCAL_CHECKS",
+  "passed": 14,
+  "total": 26,
+  "checks": [
+    {
+      "name": "source_gyro_equals_antisymmetric_mixing",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "boundary_adjusted_potential_symmetric",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "boundary_adjusted_Euler_position",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "growing_action_k1_cancels",
+      "passed": false,
+      "value": [
+        "150*H**2*X**2*eta*k**3/(50*eta**2*k**4 - 600*eta*k**4) - 1800*H**2*X**2*k**3/(50*eta**2*k**4 - 600*eta*k**4) - 75*H**2*X*a*eta*next_T_dot*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) + 900*H**2*X*a*next_T_dot*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 240*H*X**2*eta**3*k**3*psi_dot/(50*eta**2*k**4 - 600*eta*k**4) + 2880*H*X**2*eta**2*k**3*psi_dot/(50*eta**2*k**4 - 600*eta*k**4) + 450*H*X*Xdot*eta*k**3/(50*eta**2*k**4 - 600*eta*k**4) - 5400*H*X*Xdot*k**3/(50*eta**2*k**4 - 600*eta*k**4) + 120*H*X*a*eta**3*next_T_dot*psi_dot*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 1440*H*X*a*eta**2*next_T_dot*psi_dot*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 225*H*Xdot*a*eta*next_T_dot*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) + 2700*H*Xdot*a*next_T_dot*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 16*X**2*eta**4*k**3*rho_m/(50*eta**2*k**4 - 600*eta*k**4) + 192*X**2*eta**3*k**3*rho_m/(50*eta**2*k**4 - 600*eta*k**4) + 2700*X**2*eta*k**3*psi_dot**2/(50*eta**2*k**4 - 600*eta*k**4) + 900*X**2*k**3*r_dot**2/(50*eta**2*k**4 - 600*eta*k**4) + 900*X**2*k**3*rho_m/(50*eta**2*k**4 - 600*eta*k**4) + 900*X**2*k**3*u_dot**2/(50*eta**2*k**4 - 600*eta*k**4) + 900*X**2*k**3*v_dot**2/(50*eta**2*k**4 - 600*eta*k**4) + 300*X*Xddot*eta*k**3/(50*eta**2*k**4 - 600*eta*k**4) - 3600*X*Xddot*k**3/(50*eta**2*k**4 - 600*eta*k**4) + 120*X*Xdot*eta**3*k**3*psi_dot/(50*eta**2*k**4 - 600*eta*k**4) - 1440*X*Xdot*eta**2*k**3*psi_dot/(50*eta**2*k**4 - 600*eta*k**4) + 8*X*a*eta**4*next_T_dot*rho_m*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 96*X*a*eta**3*next_T_dot*rho_m*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 1350*X*a*eta*next_T_dot*psi_dot**2*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 450*X*a*next_T_dot*r_dot**2*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 450*X*a*next_T_dot*rho_m*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 450*X*a*next_T_dot*u_dot**2*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 450*X*a*next_T_dot*v_dot**2*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 150*Xddot*a*eta*next_T_dot*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) + 1800*Xddot*a*next_T_dot*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) - 60*Xdot*a*eta**3*next_T_dot*psi_dot*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4) + 720*Xdot*a*eta**2*next_T_dot*psi_dot*sqrt(eta**2 - 20*eta + 96)/(50*eta**2*k**4 - 600*eta*k**4)"
+      ],
+      "criterion": null
+    },
+    {
+      "name": "growing_action_k2_cancels",
+      "passed": false,
+      "value": [
+        "5625*H**4*X**2*a**2*eta**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 180000*H**4*X**2*a**2*eta**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1890000*H**4*X**2*a**2*eta/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 6480000*H**4*X**2*a**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 18000*H**3*X**2*a**2*eta**5*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 576000*H**3*X**2*a**2*eta**4*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 6048000*H**3*X**2*a**2*eta**3*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 20736000*H**3*X**2*a**2*eta**2*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 33750*H**3*X*Xdot*a**2*eta**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1080000*H**3*X*Xdot*a**2*eta**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 11340000*H**3*X*Xdot*a**2*eta/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 38880000*H**3*X*Xdot*a**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 14400*H**2*X**2*a**2*eta**7*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 460800*H**2*X**2*a**2*eta**6*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1200*H**2*X**2*a**2*eta**6*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 4838400*H**2*X**2*a**2*eta**5*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 38400*H**2*X**2*a**2*eta**5*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 16588800*H**2*X**2*a**2*eta**4*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 403200*H**2*X**2*a**2*eta**4*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 202500*H**2*X**2*a**2*eta**3*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1382400*H**2*X**2*a**2*eta**3*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 4050000*H**2*X**2*a**2*eta**2*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 67500*H**2*X**2*a**2*eta**2*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 67500*H**2*X**2*a**2*eta**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 67500*H**2*X**2*a**2*eta**2*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 67500*H**2*X**2*a**2*eta**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 19440000*H**2*X**2*a**2*eta*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1350000*H**2*X**2*a**2*eta*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1350000*H**2*X**2*a**2*eta*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1350000*H**2*X**2*a**2*eta*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1350000*H**2*X**2*a**2*eta*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 6480000*H**2*X**2*a**2*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 6480000*H**2*X**2*a**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 6480000*H**2*X**2*a**2*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 6480000*H**2*X**2*a**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 22500*H**2*X*Xddot*a**2*eta**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 720000*H**2*X*Xddot*a**2*eta**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 7560000*H**2*X*Xddot*a**2*eta/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 25920000*H**2*X*Xddot*a**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 45000*H**2*X*Xdot*a**2*eta**5*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1440000*H**2*X*Xdot*a**2*eta**4*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 15120000*H**2*X*Xdot*a**2*eta**3*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 51840000*H**2*X*Xdot*a**2*eta**2*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 50625*H**2*Xdot**2*a**2*eta**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1620000*H**2*Xdot**2*a**2*eta**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 17010000*H**2*Xdot**2*a**2*eta/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 58320000*H**2*Xdot**2*a**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1920*H*X**2*a**2*eta**8*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 61440*H*X**2*a**2*eta**7*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 645120*H*X**2*a**2*eta**6*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 324000*H*X**2*a**2*eta**5*psi_dot**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 2211840*H*X**2*a**2*eta**5*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 6480000*H*X**2*a**2*eta**4*psi_dot**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 108000*H*X**2*a**2*eta**4*psi_dot*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 108000*H*X**2*a**2*eta**4*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 108000*H*X**2*a**2*eta**4*psi_dot*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 108000*H*X**2*a**2*eta**4*psi_dot*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 31104000*H*X**2*a**2*eta**3*psi_dot**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 2160000*H*X**2*a**2*eta**3*psi_dot*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 2160000*H*X**2*a**2*eta**3*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 2160000*H*X**2*a**2*eta**3*psi_dot*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 2160000*H*X**2*a**2*eta**3*psi_dot*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 10368000*H*X**2*a**2*eta**2*psi_dot*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 10368000*H*X**2*a**2*eta**2*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 10368000*H*X**2*a**2*eta**2*psi_dot*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 10368000*H*X**2*a**2*eta**2*psi_dot*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 36000*H*X*Xddot*a**2*eta**5*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1152000*H*X*Xddot*a**2*eta**4*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 12096000*H*X*Xddot*a**2*eta**3*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 41472000*H*X*Xddot*a**2*eta**2*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 14400*H*X*Xdot*a**2*eta**7*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 460800*H*X*Xdot*a**2*eta**6*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 3600*H*X*Xdot*a**2*eta**6*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 4838400*H*X*Xdot*a**2*eta**5*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 115200*H*X*Xdot*a**2*eta**5*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 16588800*H*X*Xdot*a**2*eta**4*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1209600*H*X*Xdot*a**2*eta**4*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 607500*H*X*Xdot*a**2*eta**3*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 4147200*H*X*Xdot*a**2*eta**3*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 12150000*H*X*Xdot*a**2*eta**2*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 202500*H*X*Xdot*a**2*eta**2*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 202500*H*X*Xdot*a**2*eta**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 202500*H*X*Xdot*a**2*eta**2*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 202500*H*X*Xdot*a**2*eta**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 58320000*H*X*Xdot*a**2*eta*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 4050000*H*X*Xdot*a**2*eta*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 4050000*H*X*Xdot*a**2*eta*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 4050000*H*X*Xdot*a**2*eta*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 4050000*H*X*Xdot*a**2*eta*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 19440000*H*X*Xdot*a**2*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 19440000*H*X*Xdot*a**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 19440000*H*X*Xdot*a**2*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 19440000*H*X*Xdot*a**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 67500*H*Xddot*Xdot*a**2*eta**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 2160000*H*Xddot*Xdot*a**2*eta**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 22680000*H*Xddot*Xdot*a**2*eta/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 77760000*H*Xddot*Xdot*a**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 27000*H*Xdot**2*a**2*eta**5*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 864000*H*Xdot**2*a**2*eta**4*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 9072000*H*Xdot**2*a**2*eta**3*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 31104000*H*Xdot**2*a**2*eta**2*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 64*X**2*a**2*eta**9*rho_m**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 2048*X**2*a**2*eta**8*rho_m**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 21504*X**2*a**2*eta**7*rho_m**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 21600*X**2*a**2*eta**6*psi_dot**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 73728*X**2*a**2*eta**6*rho_m**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 432000*X**2*a**2*eta**5*psi_dot**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 7200*X**2*a**2*eta**5*r_dot**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 7200*X**2*a**2*eta**5*rho_m**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 7200*X**2*a**2*eta**5*rho_m*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 7200*X**2*a**2*eta**5*rho_m*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 2073600*X**2*a**2*eta**4*psi_dot**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 144000*X**2*a**2*eta**4*r_dot**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 144000*X**2*a**2*eta**4*rho_m**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 144000*X**2*a**2*eta**4*rho_m*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 144000*X**2*a**2*eta**4*rho_m*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1822500*X**2*a**2*eta**3*psi_dot**4/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 691200*X**2*a**2*eta**3*r_dot**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 691200*X**2*a**2*eta**3*rho_m**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 691200*X**2*a**2*eta**3*rho_m*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 691200*X**2*a**2*eta**3*rho_m*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 14580000*X**2*a**2*eta**2*psi_dot**4/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1215000*X**2*a**2*eta**2*psi_dot**2*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1215000*X**2*a**2*eta**2*psi_dot**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1215000*X**2*a**2*eta**2*psi_dot**2*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1215000*X**2*a**2*eta**2*psi_dot**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 9720000*X**2*a**2*eta*psi_dot**2*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 9720000*X**2*a**2*eta*psi_dot**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 9720000*X**2*a**2*eta*psi_dot**2*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 9720000*X**2*a**2*eta*psi_dot**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 202500*X**2*a**2*eta*r_dot**4/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 405000*X**2*a**2*eta*r_dot**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 405000*X**2*a**2*eta*r_dot**2*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 405000*X**2*a**2*eta*r_dot**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 202500*X**2*a**2*eta*rho_m**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 405000*X**2*a**2*eta*rho_m*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 405000*X**2*a**2*eta*rho_m*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 202500*X**2*a**2*eta*u_dot**4/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 405000*X**2*a**2*eta*u_dot**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 202500*X**2*a**2*eta*v_dot**4/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1620000*X**2*a**2*r_dot**4/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 3240000*X**2*a**2*r_dot**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 3240000*X**2*a**2*r_dot**2*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 3240000*X**2*a**2*r_dot**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1620000*X**2*a**2*rho_m**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 3240000*X**2*a**2*rho_m*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 3240000*X**2*a**2*rho_m*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1620000*X**2*a**2*u_dot**4/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 3240000*X**2*a**2*u_dot**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1620000*X**2*a**2*v_dot**4/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 2400*X*Xddot*a**2*eta**6*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 76800*X*Xddot*a**2*eta**5*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 806400*X*Xddot*a**2*eta**4*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 405000*X*Xddot*a**2*eta**3*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 2764800*X*Xddot*a**2*eta**3*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 8100000*X*Xddot*a**2*eta**2*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 135000*X*Xddot*a**2*eta**2*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 135000*X*Xddot*a**2*eta**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 135000*X*Xddot*a**2*eta**2*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 135000*X*Xddot*a**2*eta**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 38880000*X*Xddot*a**2*eta*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 2700000*X*Xddot*a**2*eta*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 2700000*X*Xddot*a**2*eta*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 2700000*X*Xddot*a**2*eta*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 2700000*X*Xddot*a**2*eta*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 12960000*X*Xddot*a**2*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 12960000*X*Xddot*a**2*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 12960000*X*Xddot*a**2*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 12960000*X*Xddot*a**2*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 960*X*Xdot*a**2*eta**8*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 30720*X*Xdot*a**2*eta**7*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 322560*X*Xdot*a**2*eta**6*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 162000*X*Xdot*a**2*eta**5*psi_dot**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1105920*X*Xdot*a**2*eta**5*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 3240000*X*Xdot*a**2*eta**4*psi_dot**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 54000*X*Xdot*a**2*eta**4*psi_dot*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 54000*X*Xdot*a**2*eta**4*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 54000*X*Xdot*a**2*eta**4*psi_dot*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 54000*X*Xdot*a**2*eta**4*psi_dot*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 15552000*X*Xdot*a**2*eta**3*psi_dot**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1080000*X*Xdot*a**2*eta**3*psi_dot*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1080000*X*Xdot*a**2*eta**3*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1080000*X*Xdot*a**2*eta**3*psi_dot*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 1080000*X*Xdot*a**2*eta**3*psi_dot*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 5184000*X*Xdot*a**2*eta**2*psi_dot*r_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 5184000*X*Xdot*a**2*eta**2*psi_dot*rho_m/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 5184000*X*Xdot*a**2*eta**2*psi_dot*u_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 5184000*X*Xdot*a**2*eta**2*psi_dot*v_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 22500*Xddot**2*a**2*eta**3/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 720000*Xddot**2*a**2*eta**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 7560000*Xddot**2*a**2*eta/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 25920000*Xddot**2*a**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 18000*Xddot*Xdot*a**2*eta**5*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 576000*Xddot*Xdot*a**2*eta**4*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 6048000*Xddot*Xdot*a**2*eta**3*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 20736000*Xddot*Xdot*a**2*eta**2*psi_dot/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 3600*Xdot**2*a**2*eta**7*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 115200*Xdot**2*a**2*eta**6*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) + 1209600*Xdot**2*a**2*eta**5*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4) - 4147200*Xdot**2*a**2*eta**4*psi_dot**2/(5000*eta**3*k**4 - 60000*eta**2*k**4)"
+      ],
+      "criterion": null
+    },
+    {
+      "name": "growing_action_k3_cancels",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "growing_action_k4_cancels",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "dummy_amplitudes_absent_from_leading_action",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "leading_acceleration_quadratic_absent",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "leading_acceleration_linear",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "acceleration_removed_by_boundary",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "leading_first_order_action",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "leading_action_boundary_identity",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "signed_kinetic_matches_differential_prefactor",
+      "passed": false,
+      "value": [
+        "12/eta"
+      ],
+      "criterion": null
+    },
+    {
+      "name": "slow_action_potential_matches_evolving_mass",
+      "passed": false,
+      "value": [
+        "225*H**2*eta/(25*eta**2 - 300*eta) - 2700*H**2/(25*eta**2 - 300*eta) + 180*H*eta**3*psi_dot/(25*eta**2 - 300*eta) - 2160*H*eta**2*psi_dot/(25*eta**2 - 300*eta) + 48*eta**5*psi_dot**2/(25*eta**2 - 300*eta) - 576*eta**4*psi_dot**2/(25*eta**2 - 300*eta) + 8*eta**4*rho_m/(25*eta**2 - 300*eta) - 96*eta**3*rho_m/(25*eta**2 - 300*eta) + 1350*eta*psi_dot**2/(25*eta**2 - 300*eta) + 450*r_dot**2/(25*eta**2 - 300*eta) - 1350*rho_m/(25*eta**2 - 300*eta) + 450*u_dot**2/(25*eta**2 - 300*eta) + 450*v_dot**2/(25*eta**2 - 300*eta)"
+      ],
+      "criterion": null
+    },
+    {
+      "name": "slow_action_kinetic_time_independent",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "slow_action_Euler_matches_G3E",
+      "passed": false,
+      "value": [
+        "150*H**2*X*eta/(25*eta**2 - 300*eta) - 1800*H**2*X/(25*eta**2 - 300*eta) - 60*H*X*eta**3*psi_dot/(25*eta**2 - 300*eta) + 720*H*X*eta**2*psi_dot/(25*eta**2 - 300*eta) - 8*X*eta**4*rho_m/(25*eta**2 - 300*eta) + 96*X*eta**3*rho_m/(25*eta**2 - 300*eta) - 1350*X*eta*psi_dot**2/(25*eta**2 - 300*eta) - 450*X*r_dot**2/(25*eta**2 - 300*eta) - 450*X*rho_m/(25*eta**2 - 300*eta) - 450*X*u_dot**2/(25*eta**2 - 300*eta) - 450*X*v_dot**2/(25*eta**2 - 300*eta) + 300*Xddot*eta/(25*eta**2 - 300*eta) - 3600*Xddot/(25*eta**2 - 300*eta)"
+      ],
+      "criterion": null
+    },
+    {
+      "name": "independent_symplectic_pullback",
+      "passed": false,
+      "value": [
+        "0",
+        "-12/eta",
+        "12/eta",
+        "0"
+      ],
+      "criterion": null
+    },
+    {
+      "name": "physical_chi_kinetic_sign",
+      "passed": false,
+      "value": [
+        "12/k**2"
+      ],
+      "criterion": null
+    },
+    {
+      "name": "Hamiltonian_is_Legendre_transform",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "time_dependent_energy_balance",
+      "passed": false,
+      "value": [
+        "225*H**2*X*Xdot*eta/(25*eta**2 - 300*eta) - 2700*H**2*X*Xdot/(25*eta**2 - 300*eta) + 180*H*X*Xdot*eta**3*psi_dot/(25*eta**2 - 300*eta) - 2160*H*X*Xdot*eta**2*psi_dot/(25*eta**2 - 300*eta) + 48*X*Xdot*eta**5*psi_dot**2/(25*eta**2 - 300*eta) - 576*X*Xdot*eta**4*psi_dot**2/(25*eta**2 - 300*eta) + 8*X*Xdot*eta**4*rho_m/(25*eta**2 - 300*eta) - 96*X*Xdot*eta**3*rho_m/(25*eta**2 - 300*eta) + 1350*X*Xdot*eta*psi_dot**2/(25*eta**2 - 300*eta) + 450*X*Xdot*r_dot**2/(25*eta**2 - 300*eta) - 1350*X*Xdot*rho_m/(25*eta**2 - 300*eta) + 450*X*Xdot*u_dot**2/(25*eta**2 - 300*eta) + 450*X*Xdot*v_dot**2/(25*eta**2 - 300*eta)"
+      ],
+      "criterion": null
+    },
+    {
+      "name": "independent_rational_full_boundary_identity",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "independent_rational_symplectic_congruence",
+      "passed": false,
+      "value": [
+        "0",
+        "-48",
+        "48",
+        "0"
+      ],
+      "criterion": null
+    },
+    {
+      "name": "negative_kinetic_domain_recorded",
+      "passed": false,
+      "value": "K=1-12/eta <= -11 for 0<eta<=1; sign not normalized away",
+      "criterion": null
+    },
+    {
+      "name": "all_sampled_kinetic_signs_negative",
+      "passed": false,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "sampled_action_Euler_coefficient_agreement",
+      "passed": false,
+      "value": 0.9993944948008991,
+      "criterion": "normalized <1e-12"
+    }
+  ],
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_CONTRACT_2026-09-30.md": "f6a35a4ade82c8d925b44d6984164eb761e50015936623b0683e071516f62a43",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_REPORT_2026-09-30.md": "d350c85fafb752502c017b7c93bc0223b4386ed72c39080c3e01126478d60f02",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/summary.json": "1f13df62495f3a39198b697a7387f14086338306a8a5e24462b1e873800f1b5a",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/formulas.json": "f634e510fd6e04f51f0c2c6cc1f43d284b0b0c9e5d9c44d4a3b4de9d8a35e87f",
+    "Analysis/MasterTests/outputs/r4c1_g3e_gr_attempt_01/summary.json": "813353365311041ba341c96ec5949520e927df06f69bde8e5be19227930a5d28"
+  },
+  "transitive_source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_CONTRACT_2026-09-30.md": "d1d64c216465956424589f95c940116bc198f5670552297b7e611894bcd385fa",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_REPORT_2026-09-30.md": "fe8d380be77af9e5ccecb02c62b8264d5ecbb6bf5d42153755c2914cd355cdbd",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/summary.json": "60d9de53f95592512e094ffc60c81a781ab8f9b33a8afa93dbf53943efbb34bf",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/pencil.json": "abb6a23cba1f80b0a02bf76d1bb47153bd745be55e83c44e9bd8183f9a9d5bb4",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_CONTRACT_2026-09-30.md": "47723c96936643b6be19d22e00a4f98bc3f4208cb409e61c255e041b7ce725e5",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/summary.json": "550caae54b03b490a5388ecd363ad0f9ff0d8d4891021d2eb1c366871d54378a",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_scalar.py": "eb5d8c41938d346a294aa03f713ea10655b939234dab7935f4a0ee9f774553f9",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_CONTRACT_2026-09-30.md": "92fc34dd19f2bc5de077703b0e7a8b209c14fdf1ae66674bc1f8176d8e4be1c5",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_REPORT_2026-09-30.md": "1b9fbc4185b61d1e37d7865baa811994e235523eb9ecc22432c733b4bc38aa04",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740"
+  },
+  "script_sha256": "c7b36994f7e4cf778104d68c9d263a5d59ed460103f24f6d43ef0ab9887f65df",
+  "artifacts": {
+    "formulas.json": "be892d1443e8c56b0edfbb086180f4e7b87950b8fd62c63e54796b24377572e2"
+  },
+  "samples": {
+    "rows": [
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 8.537612292137899,
+        "mass": -0.1262487767769776,
+        "frozen_reduced_Hessian": [
+          1.0,
+          8.537612292137899
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 4.999552982331585,
+        "mass": -0.05765505776359498,
+        "frozen_reduced_Hessian": [
+          1.0,
+          4.999552982331585
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 2.2865940797915703,
+        "mass": 0.08068669640282697,
+        "frozen_reduced_Hessian": [
+          1.0,
+          2.2865940797915703
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 0.2940360550955308,
+        "mass": 0.07129995057821668,
+        "frozen_reduced_Hessian": [
+          1.0,
+          0.2940360550955308
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 0.20116560259589453,
+        "mass": 0.01327518615345972,
+        "frozen_reduced_Hessian": [
+          1.0,
+          0.20116560259589453
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 0.11246559497290552,
+        "mass": 0.010463543327969402,
+        "frozen_reduced_Hessian": [
+          1.0,
+          0.11246559497290552
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 8.537612292137899,
+        "mass": -0.1262487767769776,
+        "frozen_reduced_Hessian": [
+          1.0,
+          8.537612292137899
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 4.9995529823254765,
+        "mass": -0.057655057763475105,
+        "frozen_reduced_Hessian": [
+          1.0,
+          4.9995529823254765
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 2.286594079794048,
+        "mass": 0.08068669640296501,
+        "frozen_reduced_Hessian": [
+          1.0,
+          2.286594079794048
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 0.29403605509614256,
+        "mass": 0.07129995057802974,
+        "frozen_reduced_Hessian": [
+          1.0,
+          0.29403605509614256
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 0.20116560259756733,
+        "mass": 0.013275186153412251,
+        "frozen_reduced_Hessian": [
+          1.0,
+          0.20116560259756733
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 0.1124655949734128,
+        "mass": 0.010463543327866337,
+        "frozen_reduced_Hessian": [
+          1.0,
+          0.1124655949734128
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 10.807033099544228,
+        "mass": -0.04504383703864968,
+        "frozen_reduced_Hessian": [
+          1.0,
+          10.807033099544228
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 6.978218969119652,
+        "mass": -0.025781602516197544,
+        "frozen_reduced_Hessian": [
+          1.0,
+          6.978218969119652
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 3.5827538834854775,
+        "mass": 0.023299630460270154,
+        "frozen_reduced_Hessian": [
+          1.0,
+          3.5827538834854775
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 1.2031425218990353,
+        "mass": 0.01647854829253236,
+        "frozen_reduced_Hessian": [
+          1.0,
+          1.2031425218990353
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 0.8686910686601825,
+        "mass": 0.002922822762788559,
+        "frozen_reduced_Hessian": [
+          1.0,
+          0.8686910686601825
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 0.5114475611446117,
+        "mass": 0.0034729392475894316,
+        "frozen_reduced_Hessian": [
+          1.0,
+          0.5114475611446117
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 10.807033099544228,
+        "mass": -0.04504383703864968,
+        "frozen_reduced_Hessian": [
+          1.0,
+          10.807033099544228
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 6.9782189691128975,
+        "mass": -0.025781602516166936,
+        "frozen_reduced_Hessian": [
+          1.0,
+          6.9782189691128975
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 3.5827538834871944,
+        "mass": 0.023299630460235483,
+        "frozen_reduced_Hessian": [
+          1.0,
+          3.5827538834871944
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 1.2031425218799983,
+        "mass": 0.01647854829422095,
+        "frozen_reduced_Hessian": [
+          1.0,
+          1.2031425218799983
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 0.8686910686534192,
+        "mass": 0.00292282276291968,
+        "frozen_reduced_Hessian": [
+          1.0,
+          0.8686910686534192
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 0.5114475611415304,
+        "mass": 0.0034729392475686604,
+        "frozen_reduced_Hessian": [
+          1.0,
+          0.5114475611415304
+        ],
+        "instantaneous_energy_signature": "negative_definite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 28.606200120315542,
+        "mass": -0.06099900192480649,
+        "frozen_reduced_Hessian": [
+          1.0,
+          28.606200120315542
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 19.05914249793779,
+        "mass": -0.038004104371838085,
+        "frozen_reduced_Hessian": [
+          1.0,
+          19.05914249793779
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 12.11935792573727,
+        "mass": -0.01415442253604168,
+        "frozen_reduced_Hessian": [
+          1.0,
+          12.11935792573727
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 6.493185351406563,
+        "mass": -0.008917832495077542,
+        "frozen_reduced_Hessian": [
+          1.0,
+          6.493185351406563
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 4.276769403971348,
+        "mass": -0.006373116616054532,
+        "frozen_reduced_Hessian": [
+          1.0,
+          4.276769403971348
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 2.8905351998017297,
+        "mass": -0.004232650512191898,
+        "frozen_reduced_Hessian": [
+          1.0,
+          2.8905351998017297
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 28.606200120315542,
+        "mass": -0.06099900192480649,
+        "frozen_reduced_Hessian": [
+          1.0,
+          28.606200120315542
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 19.059142497940304,
+        "mass": -0.038004104371844226,
+        "frozen_reduced_Hessian": [
+          1.0,
+          19.059142497940304
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 12.119357925735107,
+        "mass": -0.014154422536053538,
+        "frozen_reduced_Hessian": [
+          1.0,
+          12.119357925735107
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 6.493185351412002,
+        "mass": -0.008917832495145436,
+        "frozen_reduced_Hessian": [
+          1.0,
+          6.493185351412002
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 4.27676940393741,
+        "mass": -0.00637311661587072,
+        "frozen_reduced_Hessian": [
+          1.0,
+          4.27676940393741
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 2.890535199800126,
+        "mass": -0.004232650512214916,
+        "frozen_reduced_Hessian": [
+          1.0,
+          2.890535199800126
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 100.56960764069818,
+        "mass": -0.0652478147487691,
+        "frozen_reduced_Hessian": [
+          1.0,
+          100.56960764069818
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 69.35168194708037,
+        "mass": -0.044203222537618964,
+        "frozen_reduced_Hessian": [
+          1.0,
+          69.35168194708037
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 49.13980472576515,
+        "mass": -0.028811532054709026,
+        "frozen_reduced_Hessian": [
+          1.0,
+          49.13980472576515
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 29.12994750225483,
+        "mass": -0.017748562721124482,
+        "frozen_reduced_Hessian": [
+          1.0,
+          29.12994750225483
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 19.398516859263765,
+        "mass": -0.011753990752144101,
+        "frozen_reduced_Hessian": [
+          1.0,
+          19.398516859263765
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 13.724993555362905,
+        "mass": -0.008363984108422914,
+        "frozen_reduced_Hessian": [
+          1.0,
+          13.724993555362905
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 100.56960764069818,
+        "mass": -0.0652478147487691,
+        "frozen_reduced_Hessian": [
+          1.0,
+          100.56960764069818
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 69.35168194713904,
+        "mass": -0.044203222537657585,
+        "frozen_reduced_Hessian": [
+          1.0,
+          69.35168194713904
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 49.139804725638086,
+        "mass": -0.028811532054729607,
+        "frozen_reduced_Hessian": [
+          1.0,
+          49.139804725638086
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 29.129947502242473,
+        "mass": -0.017748562721100782,
+        "frozen_reduced_Hessian": [
+          1.0,
+          29.129947502242473
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 19.39851685923776,
+        "mass": -0.011753990752103904,
+        "frozen_reduced_Hessian": [
+          1.0,
+          19.39851685923776
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 13.724993555369142,
+        "mass": -0.00836398410844252,
+        "frozen_reduced_Hessian": [
+          1.0,
+          13.724993555369142
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 388.5611129215755,
+        "mass": -0.06631196972407556,
+        "frozen_reduced_Hessian": [
+          1.0,
+          388.5611129215755
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 271.4097936493023,
+        "mass": -0.04611308670089875,
+        "frozen_reduced_Hessian": [
+          1.0,
+          271.4097936493023
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 198.6561694622454,
+        "mass": -0.03312620611848524,
+        "frozen_reduced_Hessian": [
+          1.0,
+          198.6561694622454
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 120.50522327618559,
+        "mass": -0.020284638854913307,
+        "frozen_reduced_Hessian": [
+          1.0,
+          120.50522327618559
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 80.91771983888084,
+        "mass": -0.013589869613837357,
+        "frozen_reduced_Hessian": [
+          1.0,
+          80.91771983888084
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 57.95612152264068,
+        "mass": -0.009751143624665327,
+        "frozen_reduced_Hessian": [
+          1.0,
+          57.95612152264068
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 388.5611129215755,
+        "mass": -0.06631196972407556,
+        "frozen_reduced_Hessian": [
+          1.0,
+          388.5611129215755
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 271.40979365014175,
+        "mass": -0.04611308670103014,
+        "frozen_reduced_Hessian": [
+          1.0,
+          271.40979365014175
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 198.65616946283762,
+        "mass": -0.03312620611855689,
+        "frozen_reduced_Hessian": [
+          1.0,
+          198.65616946283762
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 120.50522327618775,
+        "mass": -0.02028463885492962,
+        "frozen_reduced_Hessian": [
+          1.0,
+          120.50522327618775
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 80.9177198388009,
+        "mass": -0.013589869613809242,
+        "frozen_reduced_Hessian": [
+          1.0,
+          80.9177198388009
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 57.95612152264275,
+        "mass": -0.009751143624674236,
+        "frozen_reduced_Hessian": [
+          1.0,
+          57.95612152264275
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 1540.55902586935,
+        "mass": -0.06657799511537042,
+        "frozen_reduced_Hessian": [
+          1.0,
+          1540.55902586935
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 1079.9249885120523,
+        "mass": -0.046618930270301694,
+        "frozen_reduced_Hessian": [
+          1.0,
+          1079.9249885120523
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 797.1893786619365,
+        "mass": -0.03425725547877073,
+        "frozen_reduced_Hessian": [
+          1.0,
+          797.1893786619365
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 486.2921796547168,
+        "mass": -0.020946232243163988,
+        "frozen_reduced_Hessian": [
+          1.0,
+          486.2921796547168
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 327.37059201561055,
+        "mass": -0.01409221847931151,
+        "frozen_reduced_Hessian": [
+          1.0,
+          327.37059201561055
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 235.20656012608495,
+        "mass": -0.010129648911311035,
+        "frozen_reduced_Hessian": [
+          1.0,
+          235.20656012608495
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 0.0,
+        "K": 1.0,
+        "U": 1540.55902586935,
+        "mass": -0.06657799511537042,
+        "frozen_reduced_Hessian": [
+          1.0,
+          1540.55902586935
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 0.5,
+        "K": 1.0,
+        "U": 1079.924988508978,
+        "mass": -0.04661893027016717,
+        "frozen_reduced_Hessian": [
+          1.0,
+          1079.924988508978
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 1.0,
+        "K": 1.0,
+        "U": 797.1893786724274,
+        "mass": -0.03425725547920141,
+        "frozen_reduced_Hessian": [
+          1.0,
+          797.1893786724274
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 2.0,
+        "K": 1.0,
+        "U": 486.29217965438175,
+        "mass": -0.020946232243150082,
+        "frozen_reduced_Hessian": [
+          1.0,
+          486.29217965438175
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 3.0,
+        "K": 1.0,
+        "U": 327.37059201552535,
+        "mass": -0.01409221847931198,
+        "frozen_reduced_Hessian": [
+          1.0,
+          327.37059201552535
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "t": 4.0,
+        "K": 1.0,
+        "U": 235.20656012603158,
+        "mass": -0.010129648911312822,
+        "frozen_reduced_Hessian": [
+          1.0,
+          235.20656012603158
+        ],
+        "instantaneous_energy_signature": "indefinite",
+        "interpretation": "Frozen reduced-action Hessian only; not a stationary physical-pole or cutoff verdict"
+      }
+    ],
+    "min_mass": -0.1262487767769776,
+    "max_mass": 0.08068669640296501,
+    "positive_mass_cases": 16,
+    "max_action_Euler_discrepancy": 0.9993944948008991
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "sympy": "1.14.0"
+  },
+  "status": "CONDITIONAL_NEGATIVE_FORMAL_SLOW_KINETIC_POSITIVE_ENERGY_CLAIM_UNSUPPORTED",
+  "positive_energy_slow_branch_verified": false,
+  "stationary_physical_pole_verified": false,
+  "physical_EFT_cutoff_derived": false,
+  "controlled_finite_k_remainder_verified": false,
+  "healthy_continuous_GR_limit_verified": false,
+  "all_action_no_go": false,
+  "physics_pass": false,
+  "canonical_Test1_pass": false,
+  "canonical_Test2_pass": false,
+  "canonical_Test3_pass": false,
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "gate_effect": "NONE",
+  "MAT_001": "BLOCKED",
+  "UVIR_003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED"
+}

@@ -1,0 +1,2142 @@
+{
+  "schema": "r4c1-g3df-v1",
+  "validation": "PASS_LOCAL_CHECKS",
+  "passed": 182,
+  "total": 182,
+  "checks": [
+    {
+      "name": "full_reconstructed_dust_normalization",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "full_reconstructed_regulator_constraint",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "physical_density_linear_row",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "physical_phase_embedding_large_k_limit",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "leading_density_phase_determinant",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "leading_density_generator",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "archived_grid_and_axes_match_contract",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_Radau_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_background_method_agreement",
+      "passed": true,
+      "value": 4.0357386129746215e-12,
+      "criterion": "<=1e-10 normalized"
+    },
+    {
+      "name": "eta_1.0_background_archive_agreement",
+      "passed": true,
+      "value": 1.1741021380497104e-12,
+      "criterion": "<=1e-8 normalized"
+    },
+    {
+      "name": "eta_1.0_background_domain",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_direct_dust_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_independent_leading_density_transfer",
+      "passed": true,
+      "value": 1.9319236910240693e-11,
+      "criterion": "<=1e-9 normalized"
+    },
+    {
+      "name": "eta_1.0_k_20.0_initial_density_chart",
+      "passed": true,
+      "value": {
+        "condition": 10.473531168542433,
+        "determinant": -54.32774727517962
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_DOP853_archive_initial_embedding",
+      "passed": true,
+      "value": 1.3020856187757508e-17,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_DOP853_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.21131553537998432,
+        "max_condition": 6.0372105685444994
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_DOP853_two_form_transport",
+      "passed": true,
+      "value": 2.7106428006031345e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_20.0_DOP853_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_DOP853_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.0004996146793484958,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_DOP853_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_DOP853_density_symplectic_pullback",
+      "passed": true,
+      "value": 2.7106428006031345e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_20.0_Radau_archive_initial_embedding",
+      "passed": true,
+      "value": 1.3020856187757508e-17,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_Radau_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.21131553537991316,
+        "max_condition": 6.037210568546566
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_Radau_two_form_transport",
+      "passed": true,
+      "value": 2.6865549492808268e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_20.0_Radau_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_Radau_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.0004996146793484958,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_Radau_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_20.0_Radau_density_symplectic_pullback",
+      "passed": true,
+      "value": 2.686337941611256e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_20.0_density_method_agreement",
+      "passed": true,
+      "value": 8.055589388913555e-13,
+      "criterion": "<=1e-7 normalized"
+    },
+    {
+      "name": "eta_1.0_k_40.0_initial_density_chart",
+      "passed": true,
+      "value": {
+        "condition": 10.574182407546937,
+        "determinant": -54.82748963800139
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_DOP853_archive_initial_embedding",
+      "passed": true,
+      "value": 3.413287926948203e-18,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_DOP853_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.21137730959076245,
+        "max_condition": 6.03543285227113
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_DOP853_two_form_transport",
+      "passed": true,
+      "value": 1.035396018885203e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_40.0_DOP853_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_DOP853_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.00012497588065431007,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_DOP853_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_DOP853_density_symplectic_pullback",
+      "passed": true,
+      "value": 1.0358297834511372e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_40.0_Radau_archive_initial_embedding",
+      "passed": true,
+      "value": 3.413287926948203e-18,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_Radau_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.21137730959082862,
+        "max_condition": 6.035432852269898
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_Radau_two_form_transport",
+      "passed": true,
+      "value": 1.032793431489597e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_40.0_Radau_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_Radau_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.00012497588065431007,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_Radau_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_40.0_Radau_density_symplectic_pullback",
+      "passed": true,
+      "value": 1.0330103137725643e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_40.0_density_method_agreement",
+      "passed": true,
+      "value": 2.5882882867259725e-12,
+      "criterion": "<=1e-7 normalized"
+    },
+    {
+      "name": "eta_1.0_k_80.0_initial_density_chart",
+      "passed": true,
+      "value": {
+        "condition": 10.600195770346739,
+        "determinant": -54.95659467763415
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_DOP853_archive_initial_embedding",
+      "passed": true,
+      "value": 8.638086644253474e-19,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_DOP853_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.21139241675211054,
+        "max_condition": 6.035001420293521
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_DOP853_two_form_transport",
+      "passed": true,
+      "value": 6.692018745938479e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_80.0_DOP853_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_DOP853_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 3.124849196590461e-05,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_DOP853_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_DOP853_density_symplectic_pullback",
+      "passed": true,
+      "value": 6.692018745938479e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_80.0_Radau_archive_initial_embedding",
+      "passed": true,
+      "value": 8.638086644253474e-19,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_Radau_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.2113924167520558,
+        "max_condition": 6.035001420295048
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_Radau_two_form_transport",
+      "passed": true,
+      "value": 6.728883398783896e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_80.0_Radau_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_Radau_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 3.124849196590461e-05,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_Radau_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_k_80.0_Radau_density_symplectic_pullback",
+      "passed": true,
+      "value": 6.731051907774803e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_1.0_k_80.0_density_method_agreement",
+      "passed": true,
+      "value": 3.6878180238828035e-13,
+      "criterion": "<=1e-7 normalized"
+    },
+    {
+      "name": "eta_1.0_k_20.0_to_40.0_density_error_decreases",
+      "passed": true,
+      "value": 0.24627720453088559,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_1.0_k_40.0_to_80.0_density_error_decreases",
+      "passed": true,
+      "value": 0.249425985141697,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_1.0_k_80_density_target",
+      "passed": true,
+      "value": 3.3838412795392098e-06,
+      "criterion": "<=0.05 sampled diagnostic"
+    },
+    {
+      "name": "eta_0.25_DOP853_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_Radau_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_background_method_agreement",
+      "passed": true,
+      "value": 1.870270731302682e-12,
+      "criterion": "<=1e-10 normalized"
+    },
+    {
+      "name": "eta_0.25_background_archive_agreement",
+      "passed": true,
+      "value": 8.455663373451622e-16,
+      "criterion": "<=1e-8 normalized"
+    },
+    {
+      "name": "eta_0.25_background_domain",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_direct_dust_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_independent_leading_density_transfer",
+      "passed": true,
+      "value": 8.656081611186043e-12,
+      "criterion": "<=1e-9 normalized"
+    },
+    {
+      "name": "eta_0.25_k_20.0_initial_density_chart",
+      "passed": true,
+      "value": {
+        "condition": 10.385773939259632,
+        "determinant": -58.750291371589945
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_DOP853_archive_initial_embedding",
+      "passed": true,
+      "value": 2.428011911898167e-17,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_DOP853_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.4373200838371499,
+        "max_condition": 3.621982209525385
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_DOP853_two_form_transport",
+      "passed": true,
+      "value": 1.505806690664595e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_20.0_DOP853_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_DOP853_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.0004996178408236769,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_DOP853_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_DOP853_density_symplectic_pullback",
+      "passed": true,
+      "value": 1.5051556717754189e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_20.0_Radau_archive_initial_embedding",
+      "passed": true,
+      "value": 2.428011911898167e-17,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_Radau_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.43732008383717036,
+        "max_condition": 3.62198220952525
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_Radau_two_form_transport",
+      "passed": true,
+      "value": 1.511231848074397e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_20.0_Radau_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_Radau_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.0004996178408236769,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_Radau_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_20.0_Radau_density_symplectic_pullback",
+      "passed": true,
+      "value": 1.5107978354816128e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_20.0_density_method_agreement",
+      "passed": true,
+      "value": 2.320087693615639e-13,
+      "criterion": "<=1e-7 normalized"
+    },
+    {
+      "name": "eta_0.25_k_40.0_initial_density_chart",
+      "passed": true,
+      "value": {
+        "condition": 10.387103284302032,
+        "determinant": -58.749946705190915
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_DOP853_archive_initial_embedding",
+      "passed": true,
+      "value": 6.699164292726475e-18,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_DOP853_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.43740468251317915,
+        "max_condition": 3.6216182963771937
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_DOP853_two_form_transport",
+      "passed": true,
+      "value": 1.0570823330827537e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_40.0_DOP853_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_DOP853_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.00012497610695288812,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_DOP853_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_DOP853_density_symplectic_pullback",
+      "passed": true,
+      "value": 1.0570823330827537e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_40.0_Radau_archive_initial_embedding",
+      "passed": true,
+      "value": 6.699164292726475e-18,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_Radau_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.43740468251317033,
+        "max_condition": 3.6216182963773487
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_Radau_two_form_transport",
+      "passed": true,
+      "value": 1.059684915765764e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_40.0_Radau_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_Radau_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.00012497610695288812,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_Radau_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_40.0_Radau_density_symplectic_pullback",
+      "passed": true,
+      "value": 1.059684915765764e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_40.0_density_method_agreement",
+      "passed": true,
+      "value": 3.227565743007485e-14,
+      "criterion": "<=1e-7 normalized"
+    },
+    {
+      "name": "eta_0.25_k_80.0_initial_density_chart",
+      "passed": true,
+      "value": {
+        "condition": 10.387458199165842,
+        "determinant": -58.749978798523934
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_DOP853_archive_initial_embedding",
+      "passed": true,
+      "value": 1.7193418131919861e-18,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_DOP853_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.437425850925445,
+        "max_condition": 3.6215275626363117
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_DOP853_two_form_transport",
+      "passed": true,
+      "value": 9.487222404986225e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_80.0_DOP853_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_DOP853_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 3.124850655795662e-05,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_DOP853_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_DOP853_density_symplectic_pullback",
+      "passed": true,
+      "value": 9.487222404986225e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_80.0_Radau_archive_initial_embedding",
+      "passed": true,
+      "value": 1.7193418131919861e-18,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_Radau_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.43742585092544783,
+        "max_condition": 3.6215275626363703
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_Radau_two_form_transport",
+      "passed": true,
+      "value": 9.406987609789771e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_80.0_Radau_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_Radau_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 3.124850655795662e-05,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_Radau_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_k_80.0_Radau_density_symplectic_pullback",
+      "passed": true,
+      "value": 9.411324625746335e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.25_k_80.0_density_method_agreement",
+      "passed": true,
+      "value": 2.2054990512728595e-14,
+      "criterion": "<=1e-7 normalized"
+    },
+    {
+      "name": "eta_0.25_k_20.0_to_40.0_density_error_decreases",
+      "passed": true,
+      "value": 0.25004854032888474,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.25_k_40.0_to_80.0_density_error_decreases",
+      "passed": true,
+      "value": 0.25002875819895687,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.25_k_80_density_target",
+      "passed": true,
+      "value": 3.95812976733939e-06,
+      "criterion": "<=0.05 sampled diagnostic"
+    },
+    {
+      "name": "eta_0.0625_DOP853_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_Radau_background_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_background_method_agreement",
+      "passed": true,
+      "value": 2.333706912117556e-12,
+      "criterion": "<=1e-10 normalized"
+    },
+    {
+      "name": "eta_0.0625_background_archive_agreement",
+      "passed": true,
+      "value": 4.076338422897693e-14,
+      "criterion": "<=1e-8 normalized"
+    },
+    {
+      "name": "eta_0.0625_background_domain",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_direct_dust_success",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_independent_leading_density_transfer",
+      "passed": true,
+      "value": 6.205071237928548e-12,
+      "criterion": "<=1e-9 normalized"
+    },
+    {
+      "name": "eta_0.0625_k_20.0_initial_density_chart",
+      "passed": true,
+      "value": {
+        "condition": 10.229142201530768,
+        "determinant": -59.72643796506223
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_DOP853_archive_initial_embedding",
+      "passed": true,
+      "value": 6.618809123645352e-18,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_DOP853_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.571214195094276,
+        "max_condition": 3.180382182170327
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_DOP853_two_form_transport",
+      "passed": true,
+      "value": 1.0654892641154455e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_20.0_DOP853_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_DOP853_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.0004996233041656469,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_DOP853_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_DOP853_density_symplectic_pullback",
+      "passed": true,
+      "value": 1.0654892641154455e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_20.0_Radau_archive_initial_embedding",
+      "passed": true,
+      "value": 6.618809123645352e-18,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_Radau_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.5712141950942804,
+        "max_condition": 3.180382182170277
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_Radau_two_form_transport",
+      "passed": true,
+      "value": 1.0665742837326711e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_20.0_Radau_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_Radau_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.0004996233041656469,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_Radau_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_20.0_Radau_density_symplectic_pullback",
+      "passed": true,
+      "value": 1.0661402758857809e-12,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_20.0_density_method_agreement",
+      "passed": true,
+      "value": 7.123148366572191e-14,
+      "criterion": "<=1e-7 normalized"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_initial_density_chart",
+      "passed": true,
+      "value": {
+        "condition": 10.224765134225343,
+        "determinant": -59.697229720291446
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_DOP853_archive_initial_embedding",
+      "passed": true,
+      "value": 1.7140012544767254e-18,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_DOP853_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.5712930720853701,
+        "max_condition": 3.1802840189381487
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_DOP853_two_form_transport",
+      "passed": true,
+      "value": 2.0278401941519793e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_DOP853_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_DOP853_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.00012497644466726295,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_DOP853_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_DOP853_density_symplectic_pullback",
+      "passed": true,
+      "value": 2.0278401941519793e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_Radau_archive_initial_embedding",
+      "passed": true,
+      "value": 1.7140012544767254e-18,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_Radau_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.57129307208537,
+        "max_condition": 3.18028401893819
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_Radau_two_form_transport",
+      "passed": true,
+      "value": 2.0018144376494942e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_Radau_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_Radau_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 0.00012497644466726295,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_Radau_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_40.0_Radau_density_symplectic_pullback",
+      "passed": true,
+      "value": 2.0018144376494942e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_density_method_agreement",
+      "passed": true,
+      "value": 1.2632493543733615e-14,
+      "criterion": "<=1e-7 normalized"
+    },
+    {
+      "name": "eta_0.0625_k_80.0_initial_density_chart",
+      "passed": true,
+      "value": {
+        "condition": 10.223671802759908,
+        "determinant": -59.689932132104516
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_DOP853_archive_initial_embedding",
+      "passed": true,
+      "value": 4.3237402189749754e-19,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_DOP853_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.5713127812913167,
+        "max_condition": 3.1802596824888214
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_DOP853_two_form_transport",
+      "passed": true,
+      "value": 1.5309656014292053e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_80.0_DOP853_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_DOP853_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 3.1248527606539495e-05,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_DOP853_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_DOP853_density_symplectic_pullback",
+      "passed": true,
+      "value": 1.5309656014292053e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_80.0_Radau_archive_initial_embedding",
+      "passed": true,
+      "value": 4.3237402189749754e-19,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_Radau_sampled_density_rank",
+      "passed": true,
+      "value": {
+        "min_det": 0.5713127812913114,
+        "max_condition": 3.180259682488861
+      },
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_Radau_two_form_transport",
+      "passed": true,
+      "value": 1.5526506666052563e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_80.0_Radau_identity_initial_density_transfer",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_Radau_positive_plane_density_kinetic",
+      "passed": true,
+      "value": 3.1248527606539495e-05,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_Radau_generator_first_row",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_k_80.0_Radau_density_symplectic_pullback",
+      "passed": true,
+      "value": 1.5526506666052563e-13,
+      "criterion": "<=1e-7 relative"
+    },
+    {
+      "name": "eta_0.0625_k_80.0_density_method_agreement",
+      "passed": true,
+      "value": 1.2894574939583654e-14,
+      "criterion": "<=1e-7 normalized"
+    },
+    {
+      "name": "eta_0.0625_k_20.0_to_40.0_density_error_decreases",
+      "passed": true,
+      "value": 0.25015850054433086,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.0625_k_40.0_to_80.0_density_error_decreases",
+      "passed": true,
+      "value": 0.2500366908223826,
+      "criterion": "high/low <1"
+    },
+    {
+      "name": "eta_0.0625_k_80_density_target",
+      "passed": true,
+      "value": 3.7539580529273053e-06,
+      "criterion": "<=0.05 sampled diagnostic"
+    },
+    {
+      "name": "all_nine_grid_members_evaluated",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    }
+  ],
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_CONTRACT_2026-10-08.md": "26ecfebc6d7792c0a5d6e065b8512f803d5ddd6e6316d01300d83ad7ef2769ce",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_REPORT_2026-09-30.md": "8a1c2245fc02307c5e70c7b4c1064872e82464c4c411d3095e97575c730b1876",
+    "Analysis/MasterTests/test_01_r4c1_g3_density_action.py": "1a855ad2a5bbafbee0ad7164604a210f5a236529896cbbab5a62173d6e822fc8",
+    "Analysis/MasterTests/outputs/r4c1_g3d_attempt_01/summary.json": "c309ec0fbd3e3c3bff9ac05c86c4c0fe5f5e37edd5cc66a2a37cabb9bc6e5b72",
+    "Analysis/MasterTests/outputs/r4c1_g3d_attempt_01/formulas.json": "68aaddb629ba729aa197804d46f8228d509111195757288221d21bb7f7a692e8",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/summary.json": "3c3241a44e43b986971c8c340643b6b9c87ca97c803347cb9da5c0a934fa05e1",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/columns.npy": "2a7df2c3ca35f5d438f54520241c880692c9804d03f3bf1bf696cf183345bccc",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/embedding.json": "c235d8c9f81314f01ade15dddd215263fc22754efa6caee485d793f85e432300",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355"
+  },
+  "transitive_source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_REPORT_2026-09-30.md": "25b39464948805df96eeded13cc96fa04c87e767e1781113514f85d5fd957771",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/summary.json": "3c3241a44e43b986971c8c340643b6b9c87ca97c803347cb9da5c0a934fa05e1",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_CONTRACT_2026-09-30.md": "0ff843db7c1887fea71e307fd8801841427628d0426bf8f9bd83e4b78e9c5758",
+    "Analysis/MasterTests/test_01_r4c1_g3_finite_k.py": "24ef13486d8477cb021dc4931d6e64c6d6fcc8fa52a330c106515c4507624504",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_CONTRACT_2026-09-30.md": "75050556086b27f794b2378ac389f6bb864ae03e4441c395ff5fc64538b1cd55",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_REPORT_2026-09-30.md": "2158f16970e883eb661aaabd04a1014aef3d8a47e6346ad7cb27453f464db83c",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/summary.json": "3c46b9834c6805c0ae46aeb0ff6226ec2abf814db873abc1d8fc104b8eacab72",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/formulas.json": "f4b7a2e69c7a51ebf33d25b94e03a60f7ca2680fecb481e42d4258cf9219ace6",
+    "Analysis/MasterTests/test_01_r4c1_g3_slow_action.py": "64e59e69851734cd24a4abbd31d7b02b17490395b1d841b1a0f06bd246681b90",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_CONTRACT_2026-09-30.md": "f6a35a4ade82c8d925b44d6984164eb761e50015936623b0683e071516f62a43",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_REPORT_2026-09-30.md": "d350c85fafb752502c017b7c93bc0223b4386ed72c39080c3e01126478d60f02",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/summary.json": "1f13df62495f3a39198b697a7387f14086338306a8a5e24462b1e873800f1b5a",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/formulas.json": "f634e510fd6e04f51f0c2c6cc1f43d284b0b0c9e5d9c44d4a3b4de9d8a35e87f",
+    "Analysis/MasterTests/outputs/r4c1_g3e_gr_attempt_01/summary.json": "813353365311041ba341c96ec5949520e927df06f69bde8e5be19227930a5d28",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_CONTRACT_2026-09-30.md": "d1d64c216465956424589f95c940116bc198f5670552297b7e611894bcd385fa",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_REPORT_2026-09-30.md": "fe8d380be77af9e5ccecb02c62b8264d5ecbb6bf5d42153755c2914cd355cdbd",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/summary.json": "60d9de53f95592512e094ffc60c81a781ab8f9b33a8afa93dbf53943efbb34bf",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/pencil.json": "abb6a23cba1f80b0a02bf76d1bb47153bd745be55e83c44e9bd8183f9a9d5bb4",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_CONTRACT_2026-09-30.md": "47723c96936643b6be19d22e00a4f98bc3f4208cb409e61c255e041b7ce725e5",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/summary.json": "550caae54b03b490a5388ecd363ad0f9ff0d8d4891021d2eb1c366871d54378a",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_scalar.py": "eb5d8c41938d346a294aa03f713ea10655b939234dab7935f4a0ee9f774553f9",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_CONTRACT_2026-09-30.md": "92fc34dd19f2bc5de077703b0e7a8b209c14fdf1ae66674bc1f8176d8e4be1c5",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_REPORT_2026-09-30.md": "1b9fbc4185b61d1e37d7865baa811994e235523eb9ecc22432c733b4bc38aa04",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740"
+  },
+  "script_sha256": "95a0274d486b6ceaf816c8e361dcb012ceef73522c83b27cb98ce61741c4619d",
+  "artifacts": {
+    "formulas.json": "f51ca9aca5f0ad2ea1dcc067f07cac65fbab3cf22808419c27cca5008ca206c9",
+    "density_transfers.json": "43eac96fe2df2d8e6369304553d3e7cd9aec21d54ecbde660933885fba8ed12f"
+  },
+  "numerical": {
+    "rows": [
+      {
+        "eta": 1.0,
+        "k": 20.0,
+        "initial_physical_phase_map": [
+          [
+            -8.735107433439397,
+            22.17996276506589
+          ],
+          [
+            2.436509592964967,
+            0.03274776282610127
+          ]
+        ],
+        "leading_initial_map": [
+          [
+            -8.860557543468753,
+            22.45365597551246
+          ],
+          [
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "initial_phase_discrepancy": 0.03274776282610127,
+        "initial_normalization": [
+          [
+            -0.0006027815337202947,
+            0.4082621473833707
+          ],
+          [
+            0.04484834573801886,
+            0.16078537895551862
+          ]
+        ],
+        "initial_density_symplectic_coefficient": 0.0004996146793484958,
+        "method_discrepancy": 8.055589388913555e-13,
+        "density_phase_error": 5.508635956753851e-05,
+        "methods": [
+          {
+            "method": "DOP853",
+            "min_density_transfer_determinant": 0.21131553537998432,
+            "max_density_transfer_condition": 6.0372105685444994,
+            "symplectic_drift": 2.7106428006031345e-12,
+            "density_error": 3.8284690391983526e-05,
+            "density_derivative_error": 7.088647813076354e-05,
+            "density_phase_error": 5.5086359536764646e-05,
+            "min_K_plane": 0.0004996146793484958,
+            "kinetic_ratio_range": [
+              0.9992293586969915,
+              0.9996166505341675
+            ],
+            "max_relative_kinetic_error": 0.0007706413030085235,
+            "friction_range": [
+              1.1841382724467777,
+              1.9792634456036016
+            ],
+            "mass_range": [
+              -0.10970924372506763,
+              -0.011497178884138362
+            ],
+            "max_normalized_friction_error": 0.00026926797793177984,
+            "max_normalized_mass_error": 0.0005575148340773626,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 2.7106428006031345e-12
+          },
+          {
+            "method": "Radau",
+            "min_density_transfer_determinant": 0.21131553537991316,
+            "max_density_transfer_condition": 6.037210568546566,
+            "symplectic_drift": 2.6865549492808268e-12,
+            "density_error": 3.8284690397524125e-05,
+            "density_derivative_error": 7.088647810744429e-05,
+            "density_phase_error": 5.508635956753851e-05,
+            "min_K_plane": 0.0004996146793484958,
+            "kinetic_ratio_range": [
+              0.9992293586969915,
+              0.9996166505345042
+            ],
+            "max_relative_kinetic_error": 0.0007706413030085235,
+            "friction_range": [
+              1.1841382724425829,
+              1.9792634456036016
+            ],
+            "mass_range": [
+              -0.10970924372506763,
+              -0.011497178883282468
+            ],
+            "max_normalized_friction_error": 0.00026926797793177984,
+            "max_normalized_mass_error": 0.0005575148340773626,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 2.686337941611256e-12
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "k": 40.0,
+        "initial_physical_phase_map": [
+          [
+            -8.828462720566234,
+            22.38337311270439
+          ],
+          [
+            2.4461588849295506,
+            0.008404931415013448
+          ]
+        ],
+        "leading_initial_map": [
+          [
+            -8.860557543468753,
+            22.45365597551246
+          ],
+          [
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "initial_phase_discrepancy": 0.008404931415013448,
+        "initial_normalization": [
+          [
+            -0.00015329776122356183,
+            0.40825092048697914
+          ],
+          [
+            0.0446155550998289,
+            0.16102255964765436
+          ]
+        ],
+        "initial_density_symplectic_coefficient": 0.00012497588065431013,
+        "method_discrepancy": 2.5882882867259725e-12,
+        "density_phase_error": 1.3566514642076588e-05,
+        "methods": [
+          {
+            "method": "DOP853",
+            "min_density_transfer_determinant": 0.21137730959076245,
+            "max_density_transfer_condition": 6.03543285227113,
+            "symplectic_drift": 1.035396018885203e-12,
+            "density_error": 9.480203410484627e-06,
+            "density_derivative_error": 1.7983783130691443e-05,
+            "density_phase_error": 1.3566514617719329e-05,
+            "min_K_plane": 0.00012497588065431007,
+            "kinetic_ratio_range": [
+              0.9998070452344805,
+              0.9999022579400972
+            ],
+            "max_relative_kinetic_error": 0.00019295476551950408,
+            "friction_range": [
+              1.1839142019160716,
+              1.9786611060624595
+            ],
+            "mass_range": [
+              -0.10924614615679755,
+              -0.011399256643208044
+            ],
+            "max_normalized_friction_error": 6.703620390674486e-05,
+            "max_normalized_mass_error": 0.00013996784629286474,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 1.0358297834511372e-12
+          },
+          {
+            "method": "Radau",
+            "min_density_transfer_determinant": 0.21137730959082862,
+            "max_density_transfer_condition": 6.035432852269898,
+            "symplectic_drift": 1.032793431489597e-12,
+            "density_error": 9.480203400601606e-06,
+            "density_derivative_error": 1.7983782464460667e-05,
+            "density_phase_error": 1.3566514642076588e-05,
+            "min_K_plane": 0.00012497588065431007,
+            "kinetic_ratio_range": [
+              0.9998070452344805,
+              0.9999022579397843
+            ],
+            "max_relative_kinetic_error": 0.00019295476551950408,
+            "friction_range": [
+              1.1839142014137047,
+              1.9786611060624595
+            ],
+            "mass_range": [
+              -0.10924614615679755,
+              -0.011399256584891623
+            ],
+            "max_normalized_friction_error": 6.703620390674486e-05,
+            "max_normalized_mass_error": 0.00013996784629286474,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 1.0330103137725643e-12
+          }
+        ]
+      },
+      {
+        "eta": 1.0,
+        "k": 80.0,
+        "initial_physical_phase_map": [
+          [
+            -8.852488069280929,
+            22.43596903729816
+          ],
+          [
+            2.448651664544829,
+            0.002114857273033872
+          ]
+        ],
+        "leading_initial_map": [
+          [
+            -8.860557543468753,
+            22.45365597551246
+          ],
+          [
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "initial_phase_discrepancy": 0.002114857273033872,
+        "initial_normalization": [
+          [
+            -3.848232019176274e-05,
+            0.4082488947669277
+          ],
+          [
+            0.044556102482480854,
+            0.16108145202969887
+          ]
+        ],
+        "initial_density_symplectic_coefficient": 3.1248491965904615e-05,
+        "method_discrepancy": 3.6878180238828035e-13,
+        "density_phase_error": 3.3838412795392098e-06,
+        "methods": [
+          {
+            "method": "DOP853",
+            "min_density_transfer_determinant": 0.21139241675211054,
+            "max_density_transfer_condition": 6.035001420293521,
+            "symplectic_drift": 6.692018745938479e-13,
+            "density_error": 2.365012856271843e-06,
+            "density_derivative_error": 4.45750455930856e-06,
+            "density_phase_error": 3.3838412688254805e-06,
+            "min_K_plane": 3.124849196590461e-05,
+            "kinetic_ratio_range": [
+              0.9999517429089475,
+              0.9999755010268029
+            ],
+            "max_relative_kinetic_error": 4.825709105249487e-05,
+            "friction_range": [
+              1.183863732155556,
+              1.9785113049839251
+            ],
+            "mass_range": [
+              -0.10912975533043287,
+              -0.011375973515703346
+            ],
+            "max_normalized_friction_error": 1.6741418667468506e-05,
+            "max_normalized_mass_error": 3.5025297931268914e-05,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 6.692018745938479e-13
+          },
+          {
+            "method": "Radau",
+            "min_density_transfer_determinant": 0.2113924167520558,
+            "max_density_transfer_condition": 6.035001420295048,
+            "symplectic_drift": 6.728883398783896e-13,
+            "density_error": 2.365012852755932e-06,
+            "density_derivative_error": 4.4575046852890585e-06,
+            "density_phase_error": 3.3838412795392098e-06,
+            "min_K_plane": 3.124849196590461e-05,
+            "kinetic_ratio_range": [
+              0.9999517429089475,
+              0.9999755010270618
+            ],
+            "max_relative_kinetic_error": 4.825709105249487e-05,
+            "friction_range": [
+              1.1838637326546273,
+              1.9785113049839251
+            ],
+            "mass_range": [
+              -0.10912975533043287,
+              -0.011375973624635886
+            ],
+            "max_normalized_friction_error": 1.6741418667468506e-05,
+            "max_normalized_mass_error": 3.5025297931268914e-05,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 6.731051907774803e-13
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "k": 20.0,
+        "initial_physical_phase_map": [
+          [
+            -5.8787206214833,
+            23.98472955899831
+          ],
+          [
+            2.4489664631812302,
+            0.0021251312889186114
+          ]
+        ],
+        "leading_initial_map": [
+          [
+            -5.887751229941335,
+            23.98458706475195
+          ],
+          [
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "initial_phase_discrepancy": 0.0021251312889186114,
+        "initial_normalization": [
+          [
+            -3.617226807399384e-05,
+            0.4082486911817545
+          ],
+          [
+            0.04168432880939694,
+            0.10006283346410928
+          ]
+        ],
+        "initial_density_symplectic_coefficient": 0.000499617840823677,
+        "method_discrepancy": 2.320087693615639e-13,
+        "density_phase_error": 6.33104996297222e-05,
+        "methods": [
+          {
+            "method": "DOP853",
+            "min_density_transfer_determinant": 0.4373200838371499,
+            "max_density_transfer_condition": 3.621982209525385,
+            "symplectic_drift": 1.505806690664595e-12,
+            "density_error": 3.9425080701655424e-05,
+            "density_derivative_error": 8.036781710009421e-05,
+            "density_phase_error": 6.33104996297222e-05,
+            "min_K_plane": 0.0004996178408236769,
+            "kinetic_ratio_range": [
+              0.9992356816473538,
+              0.9994934618969019
+            ],
+            "max_relative_kinetic_error": 0.0007643183526462316,
+            "friction_range": [
+              0.6743651785045415,
+              0.9885500848205345
+            ],
+            "mass_range": [
+              -0.10208719124094626,
+              -0.02960675680841787
+            ],
+            "max_normalized_friction_error": 0.0001899317224627311,
+            "max_normalized_mass_error": 3.671837211440808e-05,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 1.5051556717754189e-12
+          },
+          {
+            "method": "Radau",
+            "min_density_transfer_determinant": 0.43732008383717036,
+            "max_density_transfer_condition": 3.62198220952525,
+            "symplectic_drift": 1.511231848074397e-12,
+            "density_error": 3.942508069903389e-05,
+            "density_derivative_error": 8.036781709095322e-05,
+            "density_phase_error": 6.33104996236015e-05,
+            "min_K_plane": 0.0004996178408236769,
+            "kinetic_ratio_range": [
+              0.9992356816473538,
+              0.9994934618968553
+            ],
+            "max_relative_kinetic_error": 0.0007643183526462316,
+            "friction_range": [
+              0.6743651785033312,
+              0.9885500848205345
+            ],
+            "mass_range": [
+              -0.10208719124094626,
+              -0.029606756808122154
+            ],
+            "max_normalized_friction_error": 0.0001899317224627311,
+            "max_normalized_mass_error": 3.671837211440808e-05,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 1.5107978354816128e-12
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "k": 40.0,
+        "initial_physical_phase_map": [
+          [
+            -5.885480593247337,
+            23.98456969732286
+          ],
+          [
+            2.4493562267648725,
+            0.0005422787020570441
+          ]
+        ],
+        "leading_initial_map": [
+          [
+            -5.887751229941335,
+            23.98458706475195
+          ],
+          [
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "initial_phase_discrepancy": 0.0005422787020570441,
+        "initial_normalization": [
+          [
+            -9.230284152880033e-06,
+            0.40824836518879226
+          ],
+          [
+            0.04169120763727361,
+            0.10017848395303004
+          ]
+        ],
+        "initial_density_symplectic_coefficient": 0.00012497610695288812,
+        "method_discrepancy": 3.227565743007485e-14,
+        "density_phase_error": 1.5830698019904433e-05,
+        "methods": [
+          {
+            "method": "DOP853",
+            "min_density_transfer_determinant": 0.43740468251317915,
+            "max_density_transfer_condition": 3.6216182963771937,
+            "symplectic_drift": 1.0570823330827537e-12,
+            "density_error": 9.85461954518491e-06,
+            "density_derivative_error": 2.0099961353752222e-05,
+            "density_phase_error": 1.5830698019904433e-05,
+            "min_K_plane": 0.00012497610695288812,
+            "kinetic_ratio_range": [
+              0.999808855623105,
+              0.9998733602814962
+            ],
+            "max_relative_kinetic_error": 0.00019114437689504715,
+            "friction_range": [
+              0.6742323259546035,
+              0.9882668997288317
+            ],
+            "mass_range": [
+              -0.10211753711880006,
+              -0.029597135031210628
+            ],
+            "max_normalized_friction_error": 4.749685009159809e-05,
+            "max_normalized_mass_error": 9.451061371719889e-06,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 1.0570823330827537e-12
+          },
+          {
+            "method": "Radau",
+            "min_density_transfer_determinant": 0.43740468251317033,
+            "max_density_transfer_condition": 3.6216182963773487,
+            "symplectic_drift": 1.059684915765764e-12,
+            "density_error": 9.854619535258338e-06,
+            "density_derivative_error": 2.0099961358833803e-05,
+            "density_phase_error": 1.583069801670785e-05,
+            "min_K_plane": 0.00012497610695288812,
+            "kinetic_ratio_range": [
+              0.999808855623105,
+              0.9998733602815163
+            ],
+            "max_relative_kinetic_error": 0.00019114437689504715,
+            "friction_range": [
+              0.6742323259674331,
+              0.9882668997288317
+            ],
+            "mass_range": [
+              -0.10211753711880006,
+              -0.029597135033809993
+            ],
+            "max_normalized_friction_error": 4.749685009159809e-05,
+            "max_normalized_mass_error": 9.45106393949088e-06,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 1.059684915765764e-12
+          }
+        ]
+      },
+      {
+        "eta": 0.25,
+        "k": 80.0,
+        "initial_physical_phase_map": [
+          [
+            -5.887182759231621,
+            23.984579410957753
+          ],
+          [
+            2.4494561952712384,
+            0.0001362569180034695
+          ]
+        ],
+        "leading_initial_map": [
+          [
+            -5.887751229941335,
+            23.98458706475195
+          ],
+          [
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "initial_phase_discrepancy": 0.0001362569180034695,
+        "initial_normalization": [
+          [
+            -2.3192675263675535e-06,
+            0.40824830751360797
+          ],
+          [
+            0.04169288645484208,
+            0.10020740227704612
+          ]
+        ],
+        "initial_density_symplectic_coefficient": 3.124850655795663e-05,
+        "method_discrepancy": 2.2054990512728595e-14,
+        "density_phase_error": 3.95812976733939e-06,
+        "methods": [
+          {
+            "method": "DOP853",
+            "min_density_transfer_determinant": 0.437425850925445,
+            "max_density_transfer_condition": 3.6215275626363117,
+            "symplectic_drift": 9.487222404986225e-13,
+            "density_error": 2.4635838141723474e-06,
+            "density_derivative_error": 5.0259765571480895e-06,
+            "density_phase_error": 3.95812976733939e-06,
+            "min_K_plane": 3.124850655795662e-05,
+            "kinetic_ratio_range": [
+              0.9999522098546119,
+              0.9999683298083053
+            ],
+            "max_relative_kinetic_error": 4.779014538813797e-05,
+            "friction_range": [
+              0.6742007466168707,
+              0.9881960775124008
+            ],
+            "mass_range": [
+              -0.10212512861973244,
+              -0.02959569207787152
+            ],
+            "max_normalized_friction_error": 1.1875083077918423e-05,
+            "max_normalized_mass_error": 2.4351303516787096e-06,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 9.487222404986225e-13
+          },
+          {
+            "method": "Radau",
+            "min_density_transfer_determinant": 0.43742585092544783,
+            "max_density_transfer_condition": 3.6215275626363703,
+            "symplectic_drift": 9.406987609789771e-13,
+            "density_error": 2.4635838088028455e-06,
+            "density_derivative_error": 5.0259765580771026e-06,
+            "density_phase_error": 3.958129764694764e-06,
+            "min_K_plane": 3.124850655795662e-05,
+            "kinetic_ratio_range": [
+              0.9999522098546119,
+              0.9999683298082989
+            ],
+            "max_relative_kinetic_error": 4.779014538813797e-05,
+            "friction_range": [
+              0.6742007465418733,
+              0.9881960775124008
+            ],
+            "mass_range": [
+              -0.10212512861973244,
+              -0.029595692064314554
+            ],
+            "max_normalized_friction_error": 1.1875083077918423e-05,
+            "max_normalized_mass_error": 2.43514203829165e-06,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 9.411324625746335e-13
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "k": 20.0,
+        "initial_physical_phase_map": [
+          [
+            -4.03087102372449,
+            24.383216892043762
+          ],
+          [
+            2.4494674891996637,
+            0.00013419082222601824
+          ]
+        ],
+        "leading_initial_map": [
+          [
+            -4.034322949161129,
+            24.36731983706182
+          ],
+          [
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "initial_phase_discrepancy": 0.0006856781878114755,
+        "initial_normalization": [
+          [
+            -2.2467574963564164e-06,
+            0.40824830213894636
+          ],
+          [
+            0.041011444389710834,
+            0.06748889036514116
+          ]
+        ],
+        "initial_density_symplectic_coefficient": 0.000499623304165647,
+        "method_discrepancy": 7.123148366572191e-14,
+        "density_phase_error": 6.0016464479501935e-05,
+        "methods": [
+          {
+            "method": "DOP853",
+            "min_density_transfer_determinant": 0.571214195094276,
+            "max_density_transfer_condition": 3.180382182170327,
+            "symplectic_drift": 1.0654892641154455e-12,
+            "density_error": 3.429072670287169e-05,
+            "density_derivative_error": 7.648170027544236e-05,
+            "density_phase_error": 6.0016464479501935e-05,
+            "min_K_plane": 0.0004996233041656469,
+            "kinetic_ratio_range": [
+              0.9992466083312939,
+              0.9994305649901609
+            ],
+            "max_relative_kinetic_error": 0.0007533916687061382,
+            "friction_range": [
+              0.46943536593612517,
+              0.6625985628809293
+            ],
+            "mass_range": [
+              -0.10045624888409761,
+              -0.043395729854881805
+            ],
+            "max_normalized_friction_error": 0.0001500898335433398,
+            "max_normalized_mass_error": 6.116300255640646e-05,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 1.0654892641154455e-12
+          },
+          {
+            "method": "Radau",
+            "min_density_transfer_determinant": 0.5712141950942804,
+            "max_density_transfer_condition": 3.180382182170277,
+            "symplectic_drift": 1.0665742837326711e-12,
+            "density_error": 3.429072670577217e-05,
+            "density_derivative_error": 7.648170027264604e-05,
+            "density_phase_error": 6.00164644794313e-05,
+            "min_K_plane": 0.0004996233041656469,
+            "kinetic_ratio_range": [
+              0.9992466083312939,
+              0.9994305649901531
+            ],
+            "max_relative_kinetic_error": 0.0007533916687061382,
+            "friction_range": [
+              0.4694353659373984,
+              0.6625985628809293
+            ],
+            "mass_range": [
+              -0.10045624888409761,
+              -0.04339572985510197
+            ],
+            "max_normalized_friction_error": 0.0001500898335433398,
+            "max_normalized_mass_error": 6.116300255640646e-05,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 1.0661402758857809e-12
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "k": 40.0,
+        "initial_physical_phase_map": [
+          [
+            -4.0334596353259125,
+            24.37129209041622
+          ],
+          [
+            2.449484078364539,
+            3.415818125427551e-05
+          ]
+        ],
+        "leading_initial_map": [
+          [
+            -4.034322949161129,
+            24.36731983706182
+          ],
+          [
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "initial_phase_discrepancy": 0.00017148558881391817,
+        "initial_normalization": [
+          [
+            -5.721903916139911e-07,
+            0.4082482923346152
+          ],
+          [
+            0.041031788071933674,
+            0.06756527319985361
+          ]
+        ],
+        "initial_density_symplectic_coefficient": 0.00012497644466726298,
+        "method_discrepancy": 1.2632493543733615e-14,
+        "density_phase_error": 1.5013628762164298e-05,
+        "methods": [
+          {
+            "method": "DOP853",
+            "min_density_transfer_determinant": 0.5712930720853701,
+            "max_density_transfer_condition": 3.1802840189381487,
+            "symplectic_drift": 2.0278401941519793e-13,
+            "density_error": 8.576406657468357e-06,
+            "density_derivative_error": 1.9134120971838094e-05,
+            "density_phase_error": 1.5013628762164298e-05,
+            "min_K_plane": 0.00012497644466726295,
+            "kinetic_ratio_range": [
+              0.9998115573381036,
+              0.9998575511329644
+            ],
+            "max_relative_kinetic_error": 0.00018844266189643744,
+            "friction_range": [
+              0.4693335132636557,
+              0.6624114679429541
+            ],
+            "mass_range": [
+              -0.10050672388636635,
+              -0.043406841882481575
+            ],
+            "max_normalized_friction_error": 3.754130667642766e-05,
+            "max_normalized_mass_error": 1.5298466717546376e-05,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 2.0278401941519793e-13
+          },
+          {
+            "method": "Radau",
+            "min_density_transfer_determinant": 0.57129307208537,
+            "max_density_transfer_condition": 3.18028401893819,
+            "symplectic_drift": 2.0018144376494942e-13,
+            "density_error": 8.576406651232485e-06,
+            "density_derivative_error": 1.9134120971232502e-05,
+            "density_phase_error": 1.5013628758640644e-05,
+            "min_K_plane": 0.00012497644466726295,
+            "kinetic_ratio_range": [
+              0.9998115573381036,
+              0.9998575511329646
+            ],
+            "max_relative_kinetic_error": 0.00018844266189643744,
+            "friction_range": [
+              0.4693335132648392,
+              0.6624114679429541
+            ],
+            "mass_range": [
+              -0.10050672388636635,
+              -0.0434068418826999
+            ],
+            "max_normalized_friction_error": 3.754130667642766e-05,
+            "max_normalized_mass_error": 1.5298466717546376e-05,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 2.0018144376494942e-13
+          }
+        ]
+      },
+      {
+        "eta": 0.0625,
+        "k": 80.0,
+        "initial_physical_phase_map": [
+          [
+            -4.03410709992257,
+            24.368312774750983
+          ],
+          [
+            2.4494883203645954,
+            8.577700044665685e-06
+          ]
+        ],
+        "leading_initial_map": [
+          [
+            -4.034322949161129,
+            24.36731983706182
+          ],
+          [
+            2.449489742783178,
+            0.0
+          ]
+        ],
+        "initial_phase_discrepancy": 4.287552481995777e-05,
+        "initial_normalization": [
+          [
+            -1.4370430215843665e-07,
+            0.4082482908645218
+          ],
+          [
+            0.04103687561485977,
+            0.06758438074605892
+          ]
+        ],
+        "initial_density_symplectic_coefficient": 3.124852760653951e-05,
+        "method_discrepancy": 1.2894574939583654e-14,
+        "density_phase_error": 3.7539580529273053e-06,
+        "methods": [
+          {
+            "method": "DOP853",
+            "min_density_transfer_determinant": 0.5713127812913167,
+            "max_density_transfer_condition": 3.1802596824888214,
+            "symplectic_drift": 1.5309656014292053e-13,
+            "density_error": 2.1443608195156047e-06,
+            "density_derivative_error": 4.784283366737374e-06,
+            "density_phase_error": 3.7539580529273053e-06,
+            "min_K_plane": 3.1248527606539495e-05,
+            "kinetic_ratio_range": [
+              0.9999528834092638,
+              0.999964385643131
+            ],
+            "max_relative_kinetic_error": 4.7116590736195896e-05,
+            "friction_range": [
+              0.4693083947834424,
+              0.662364664835535
+            ],
+            "mass_range": [
+              -0.10051935059755117,
+              -0.04340992827716396
+            ],
+            "max_normalized_friction_error": 9.386505430477364e-06,
+            "max_normalized_mass_error": 3.8250992755824275e-06,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 1.5309656014292053e-13
+          },
+          {
+            "method": "Radau",
+            "min_density_transfer_determinant": 0.5713127812913114,
+            "max_density_transfer_condition": 3.180259682488861,
+            "symplectic_drift": 1.5526506666052563e-13,
+            "density_error": 2.14436081653497e-06,
+            "density_derivative_error": 4.784283368373681e-06,
+            "density_phase_error": 3.7539580523129904e-06,
+            "min_K_plane": 3.1248527606539495e-05,
+            "kinetic_ratio_range": [
+              0.9999528834092638,
+              0.9999643856431404
+            ],
+            "max_relative_kinetic_error": 4.7116590736195896e-05,
+            "friction_range": [
+              0.469308394789256,
+              0.662364664835535
+            ],
+            "mass_range": [
+              -0.10051935059755117,
+              -0.04340992827822234
+            ],
+            "max_normalized_friction_error": 9.386505430477364e-06,
+            "max_normalized_mass_error": 3.8250992755824275e-06,
+            "generator_first_row_error": 1.1102230246251565e-16,
+            "pullback_error": 1.5526506666052563e-13
+          }
+        ]
+      }
+    ],
+    "backgrounds": [
+      {
+        "eta": 1.0,
+        "method_error": 4.0357386129746215e-12,
+        "archived_error": 1.1741021380497104e-12
+      },
+      {
+        "eta": 0.25,
+        "method_error": 1.870270731302682e-12,
+        "archived_error": 8.455663373451622e-16
+      },
+      {
+        "eta": 0.0625,
+        "method_error": 2.333706912117556e-12,
+        "archived_error": 4.076338422897693e-14
+      }
+    ]
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "sympy": "1.14.0",
+    "scipy": "1.17.1"
+  },
+  "status": "CONDITIONAL_SAMPLED_PREPARED_DENSITY_PLANE",
+  "new_full_system_integrations": 0,
+  "archived_full_system_runs_projected": 18,
+  "universal_density_only_closure_verified": false,
+  "continuous_time_error_bound": false,
+  "physical_EFT_cutoff": "NOT_DERIVED",
+  "physical_validity_window_verified": false,
+  "arbitrary_fast_wave_data_verified": false,
+  "uniform_eta_endpoint_verified": false,
+  "full_PDE_verified": false,
+  "healthy_continuous_full_GR_limit_verified": false,
+  "positive_definite_energy_verified": false,
+  "physics_pass": false,
+  "canonical_Test1_pass": false,
+  "canonical_Test2_pass": false,
+  "canonical_Test3_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "MAT_001": "BLOCKED",
+  "UVIR_003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED"
+}

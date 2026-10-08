@@ -1,0 +1,4800 @@
+{
+  "schema": "r4c1-g3d-v1",
+  "validation": "PASS_LOCAL_CHECKS",
+  "passed": 172,
+  "total": 172,
+  "checks": [
+    {
+      "name": "density_velocity_coefficient_cancels",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_derivative_position_coefficient",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_phase_determinant",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_generator_position_row",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_friction_from_generator",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_mass_from_generator",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_kinetic_from_inherited_symplectic_form",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_kinetic_log_derivative",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "phase_symplectic_pullback",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "positive_density_kinetic_on_declared_domain",
+      "passed": true,
+      "value": "a,rho_m,k>0 imply K_D>0; no global positive-energy claim",
+      "criterion": null
+    },
+    {
+      "name": "density_map_rank_on_declared_domain",
+      "passed": true,
+      "value": "0<eta<=1,a,rho_m>0 imply det(T)<0; inherited singular boundaries retained",
+      "criterion": null
+    },
+    {
+      "name": "canonical_one_form_boundary_gradient",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "canonical_phase_transform",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "time_dependent_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "off_shell_first_order_action_identity",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_momentum_elimination",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_Legendre_transform",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_Euler_equation",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_time_dependent_energy_balance",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "density_Hamiltonian_Hessian_determinant",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "independent_rational_first_order_action_identity",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "independent_rational_canonical_map",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "GR_dust_positive_kinetic_coefficient",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "GR_dust_kinetic_log_derivative",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "GR_dust_friction",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "GR_dust_mass",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "GR_density_growing_mode",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "GR_density_decaying_mode",
+      "passed": true,
+      "value": "zero_exact",
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 8.68381566800897e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_DOP853_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 7.306290379609299e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_DOP853_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 8.68381566800897e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_DOP853_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.8288355883288454e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_DOP853_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_DOP853_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 8.68381566800897e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_DOP853_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 4.5735055327734024e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_Radau_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_Radau_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_Radau_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 4.0492869172065736e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_Radau_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.1905367227166155e-18,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_Radau_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_Radau_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_Radau_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 4.0492869172065736e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_Radau_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 2.980250720470897e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_Radau_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_Radau_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_1.0_Radau_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 4.0492869172065736e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_1.0_Radau_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 7.453073884236794e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_DOP853_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_DOP853_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_DOP853_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 6.074491897934553e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_DOP853_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 4.0596979335838667e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_DOP853_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_DOP853_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_DOP853_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 6.074491897934553e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_DOP853_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.0160603494799026e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_DOP853_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_DOP853_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_DOP853_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 6.074491897934553e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_DOP853_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 2.540861783420375e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_Radau_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_Radau_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_Radau_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 5.584138411564109e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_Radau_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 4.0596979335838667e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_Radau_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_Radau_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_Radau_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 5.584138411564109e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_Radau_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.0160603494799026e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_Radau_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_Radau_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.25_Radau_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 5.584138411564109e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.25_Radau_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 2.540861783420375e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 7.128081167437846e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.9456912776760617e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 7.128081167437846e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 4.8688851469373565e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 7.128081167437846e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_DOP853_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.2175126946855038e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_Radau_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_Radau_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_Radau_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 6.678639586275413e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_Radau_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 2.8085630616889245e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_Radau_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_Radau_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_Radau_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 6.678639586275413e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_Radau_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 7.028129864274793e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_Radau_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_Radau_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0625_Radau_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 6.678639586275413e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0625_Radau_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.757453107111249e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 7.133964925572685e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 2.910051770770006e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 7.133964925572685e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 7.282142612239582e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 7.133964925572685e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_DOP853_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.8209745054469246e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_Radau_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_Radau_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_Radau_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 7.133964925572685e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_Radau_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 6.429253505140832e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_Radau_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_Radau_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_Radau_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 7.133964925572685e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_Radau_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.6088498041964332e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_Radau_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_Radau_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.015625_Radau_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 7.133964925572685e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.015625_Radau_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 4.0230859256072265e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 4.2890792404222953e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 2.2333342796839735e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 4.2890792404222953e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 5.588645330063067e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 4.2890792404222953e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_DOP853_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.397493579017856e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 4.28907924042279e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.7596143447220024e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 4.28907924042279e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 4.4031861541277626e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 4.28907924042279e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.00390625_Radau_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.1010562377816253e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 3.8687746937414285e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 4.466834075462436e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 3.8687746937414285e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.1177394301652024e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 3.8687746937414285e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_DOP853_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 2.79499363866714e-20,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_20.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_20.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_20.0_coefficient_agreement",
+      "passed": true,
+      "value": 2.239221271912339e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_20.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 4.466834075462436e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_40.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_40.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_40.0_coefficient_agreement",
+      "passed": true,
+      "value": 2.239221271912339e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_40.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 1.1177394301652024e-19,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_80.0_regular_density_phase",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_80.0_indefinite_Hamiltonian_positive_kinetic",
+      "passed": true,
+      "value": null,
+      "criterion": null
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_80.0_coefficient_agreement",
+      "passed": true,
+      "value": 2.239221271912339e-17,
+      "criterion": "normalized <=1e-12"
+    },
+    {
+      "name": "eta_0.0009765625_Radau_k_80.0_Hamiltonian_boundary_identity",
+      "passed": true,
+      "value": 2.79499363866714e-20,
+      "criterion": "normalized <=1e-12"
+    }
+  ],
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_REPORT_2026-09-30.md": "25b39464948805df96eeded13cc96fa04c87e767e1781113514f85d5fd957771",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/summary.json": "3c3241a44e43b986971c8c340643b6b9c87ca97c803347cb9da5c0a934fa05e1",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_CONTRACT_2026-09-30.md": "0ff843db7c1887fea71e307fd8801841427628d0426bf8f9bd83e4b78e9c5758",
+    "Analysis/MasterTests/test_01_r4c1_g3_finite_k.py": "24ef13486d8477cb021dc4931d6e64c6d6fcc8fa52a330c106515c4507624504"
+  },
+  "transitive_source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_CONTRACT_2026-09-30.md": "75050556086b27f794b2378ac389f6bb864ae03e4441c395ff5fc64538b1cd55",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_REPORT_2026-09-30.md": "2158f16970e883eb661aaabd04a1014aef3d8a47e6346ad7cb27453f464db83c",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/summary.json": "3c46b9834c6805c0ae46aeb0ff6226ec2abf814db873abc1d8fc104b8eacab72",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/formulas.json": "f4b7a2e69c7a51ebf33d25b94e03a60f7ca2680fecb481e42d4258cf9219ace6",
+    "Analysis/MasterTests/test_01_r4c1_g3_slow_action.py": "64e59e69851734cd24a4abbd31d7b02b17490395b1d841b1a0f06bd246681b90",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_CONTRACT_2026-09-30.md": "f6a35a4ade82c8d925b44d6984164eb761e50015936623b0683e071516f62a43",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_REPORT_2026-09-30.md": "d350c85fafb752502c017b7c93bc0223b4386ed72c39080c3e01126478d60f02",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/summary.json": "1f13df62495f3a39198b697a7387f14086338306a8a5e24462b1e873800f1b5a",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/formulas.json": "f634e510fd6e04f51f0c2c6cc1f43d284b0b0c9e5d9c44d4a3b4de9d8a35e87f",
+    "Analysis/MasterTests/outputs/r4c1_g3e_gr_attempt_01/summary.json": "813353365311041ba341c96ec5949520e927df06f69bde8e5be19227930a5d28",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_CONTRACT_2026-09-30.md": "d1d64c216465956424589f95c940116bc198f5670552297b7e611894bcd385fa",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_REPORT_2026-09-30.md": "fe8d380be77af9e5ccecb02c62b8264d5ecbb6bf5d42153755c2914cd355cdbd",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/summary.json": "60d9de53f95592512e094ffc60c81a781ab8f9b33a8afa93dbf53943efbb34bf",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/pencil.json": "abb6a23cba1f80b0a02bf76d1bb47153bd745be55e83c44e9bd8183f9a9d5bb4",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_CONTRACT_2026-09-30.md": "47723c96936643b6be19d22e00a4f98bc3f4208cb409e61c255e041b7ce725e5",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/summary.json": "550caae54b03b490a5388ecd363ad0f9ff0d8d4891021d2eb1c366871d54378a",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_scalar.py": "eb5d8c41938d346a294aa03f713ea10655b939234dab7935f4a0ee9f774553f9",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_CONTRACT_2026-09-30.md": "92fc34dd19f2bc5de077703b0e7a8b209c14fdf1ae66674bc1f8176d8e4be1c5",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_REPORT_2026-09-30.md": "1b9fbc4185b61d1e37d7865baa811994e235523eb9ecc22432c733b4bc38aa04",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740"
+  },
+  "script_sha256": "1a855ad2a5bbafbee0ad7164604a210f5a236529896cbbab5a62173d6e822fc8",
+  "artifacts": {
+    "formulas.json": "68aaddb629ba729aa197804d46f8228d509111195757288221d21bb7f7a692e8"
+  },
+  "samples": {
+    "rows": [
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -55.0,
+        "friction": 1.9784614413139512,
+        "density_mass": -0.10909090909090911,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.454545454545456e-05
+        ],
+        "coefficient_error": 1.25127594988491e-17,
+        "Hamiltonian_boundary_error": 7.306290379609299e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.0011898103286457392,
+        "density_phase_determinant": -23.112927613681865,
+        "friction": 1.5569935315766763,
+        "density_mass": -0.03136880412896686,
+        "density_Hamiltonian_Hessian": [
+          840.4700950429768,
+          -3.732292714990988e-05
+        ],
+        "coefficient_error": 8.68381566800897e-17,
+        "Hamiltonian_boundary_error": 2.7057652789014e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.00236521313457236,
+        "density_phase_determinant": -11.62685916039956,
+        "friction": 1.183847056968631,
+        "density_mass": -0.011367894615073109,
+        "density_Hamiltonian_Hessian": [
+          422.794878559984,
+          -2.6887493656005317e-05
+        ],
+        "coefficient_error": 1.715224979172434e-18,
+        "Hamiltonian_boundary_error": 6.223198786999576e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.005530174695668311,
+        "density_phase_determinant": -4.972718135204711,
+        "friction": 0.580574609369405,
+        "density_mass": -0.0032072173140347397,
+        "density_Hamiltonian_Hessian": [
+          180.826114007444,
+          -1.7736472033584205e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.7065925999165485e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.008681640833536387,
+        "density_phase_determinant": -3.1676039734067327,
+        "friction": 0.3708870812619723,
+        "density_mass": -0.0016349396015562306,
+        "density_Hamiltonian_Hessian": [
+          115.1855990329721,
+          -1.4193958405236281e-05
+        ],
+        "coefficient_error": 2.1648649215787e-19,
+        "Hamiltonian_boundary_error": 2.7747263243281606e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.012067736935868848,
+        "density_phase_determinant": -2.2788034033342197,
+        "friction": 0.2910759511911771,
+        "density_mass": -0.000998811731404813,
+        "density_Hamiltonian_Hessian": [
+          82.86557830306253,
+          -1.2053397223052978e-05
+        ],
+        "coefficient_error": 4.299603844378166e-17,
+        "Hamiltonian_boundary_error": 1.3535775241311943e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -55.0,
+        "friction": 1.9784614413139512,
+        "density_mass": -0.10909090909090911,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.363636363636364e-05
+        ],
+        "coefficient_error": 1.25127594988491e-17,
+        "Hamiltonian_boundary_error": 1.8288355883288454e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.0002974525821614348,
+        "density_phase_determinant": -23.112927613681865,
+        "friction": 1.5569935315766763,
+        "density_mass": -0.03136880412896686,
+        "density_Hamiltonian_Hessian": [
+          3361.8803801719073,
+          -9.33073178747747e-06
+        ],
+        "coefficient_error": 8.68381566800897e-17,
+        "Hamiltonian_boundary_error": 6.77329709197931e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.00059130328364309,
+        "density_phase_determinant": -11.62685916039956,
+        "friction": 1.183847056968631,
+        "density_mass": -0.011367894615073109,
+        "density_Hamiltonian_Hessian": [
+          1691.179514239936,
+          -6.721873414001329e-06
+        ],
+        "coefficient_error": 1.715224979172434e-18,
+        "Hamiltonian_boundary_error": 1.5578544863932882e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.0013825436739170777,
+        "density_phase_determinant": -4.972718135204711,
+        "friction": 0.580574609369405,
+        "density_mass": -0.0032072173140347397,
+        "density_Hamiltonian_Hessian": [
+          723.304456029776,
+          -4.434118008396051e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 6.7738154078766275e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.0021704102083840967,
+        "density_phase_determinant": -3.1676039734067327,
+        "friction": 0.3708870812619723,
+        "density_mass": -0.0016349396015562306,
+        "density_Hamiltonian_Hessian": [
+          460.7423961318884,
+          -3.5484896013090703e-06
+        ],
+        "coefficient_error": 2.1648649215787e-19,
+        "Hamiltonian_boundary_error": 6.943454459877095e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.003016934233967212,
+        "density_phase_determinant": -2.2788034033342197,
+        "friction": 0.2910759511911771,
+        "density_mass": -0.000998811731404813,
+        "density_Hamiltonian_Hessian": [
+          331.46231321225014,
+          -3.0133493057632445e-06
+        ],
+        "coefficient_error": 4.299603844378166e-17,
+        "Hamiltonian_boundary_error": 3.387083822822752e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -55.0,
+        "friction": 1.9784614413139512,
+        "density_mass": -0.10909090909090911,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.40909090909091e-06
+        ],
+        "coefficient_error": 1.25127594988491e-17,
+        "Hamiltonian_boundary_error": 4.5735055327734024e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 7.43631455403587e-05,
+        "density_phase_determinant": -23.112927613681865,
+        "friction": 1.5569935315766763,
+        "density_mass": -0.03136880412896686,
+        "density_Hamiltonian_Hessian": [
+          13447.52152068763,
+          -2.3326829468693674e-06
+        ],
+        "coefficient_error": 8.68381566800897e-17,
+        "Hamiltonian_boundary_error": 1.693880428235635e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 0.0001478258209107725,
+        "density_phase_determinant": -11.62685916039956,
+        "friction": 1.183847056968631,
+        "density_mass": -0.011367894615073109,
+        "density_Hamiltonian_Hessian": [
+          6764.718056959744,
+          -1.6804683535003323e-06
+        ],
+        "coefficient_error": 1.715224979172434e-18,
+        "Hamiltonian_boundary_error": 3.8959225803825636e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 0.0003456359184792694,
+        "density_phase_determinant": -4.972718135204711,
+        "friction": 0.580574609369405,
+        "density_mass": -0.0032072173140347397,
+        "density_Hamiltonian_Hessian": [
+          2893.217824119104,
+          -1.1085295020990128e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.6939128424020357e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 0.0005426025520960242,
+        "density_phase_determinant": -3.1676039734067327,
+        "friction": 0.3708870812619723,
+        "density_mass": -0.0016349396015562306,
+        "density_Hamiltonian_Hessian": [
+          1842.9695845275537,
+          -8.871224003272676e-07
+        ],
+        "coefficient_error": 2.1648649215787e-19,
+        "Hamiltonian_boundary_error": 1.736279027005543e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.000754233558491803,
+        "density_phase_determinant": -2.2788034033342197,
+        "friction": 0.2910759511911771,
+        "density_mass": -0.000998811731404813,
+        "density_Hamiltonian_Hessian": [
+          1325.8492528490005,
+          -7.533373264408111e-07
+        ],
+        "coefficient_error": 4.299603844378166e-17,
+        "Hamiltonian_boundary_error": 8.469674341695024e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -55.0,
+        "friction": 1.9784614413139512,
+        "density_mass": -0.10909090909090911,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.454545454545456e-05
+        ],
+        "coefficient_error": 1.25127594988491e-17,
+        "Hamiltonian_boundary_error": 7.306290379609299e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.0011898103286419257,
+        "density_phase_determinant": -23.112927613755947,
+        "friction": 1.5569935315758316,
+        "density_mass": -0.03136880412885179,
+        "density_Hamiltonian_Hessian": [
+          840.4700950456707,
+          -3.732292714965334e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.1905367227166155e-18,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.002365213134567241,
+        "density_phase_determinant": -11.626859160424722,
+        "friction": 1.183847056969386,
+        "density_mass": -0.01136789461503962,
+        "density_Hamiltonian_Hessian": [
+          422.794878560899,
+          -2.688749365586792e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 4.599755625173598e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.00553017469563244,
+        "density_phase_determinant": -4.972718135236965,
+        "friction": 0.5805746093692958,
+        "density_mass": -0.0032072173140193895,
+        "density_Hamiltonian_Hessian": [
+          180.8261140086169,
+          -1.773647203338427e-05
+        ],
+        "coefficient_error": 4.3229440688767785e-19,
+        "Hamiltonian_boundary_error": 5.413185199833098e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.008681640833547655,
+        "density_phase_determinant": -3.167603973402622,
+        "friction": 0.37088708126300307,
+        "density_mass": -0.0016349396015565925,
+        "density_Hamiltonian_Hessian": [
+          115.1855990328226,
+          -1.4193958405257847e-05
+        ],
+        "coefficient_error": 4.0492869172065736e-17,
+        "Hamiltonian_boundary_error": 4.060575108772916e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.012067736935860853,
+        "density_phase_determinant": -2.2788034033357296,
+        "friction": 0.2910759511911741,
+        "density_mass": -0.0009988117314039568,
+        "density_Hamiltonian_Hessian": [
+          82.86557830311743,
+          -1.2053397223034658e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.252059209821355e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -55.0,
+        "friction": 1.9784614413139512,
+        "density_mass": -0.10909090909090911,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.363636363636364e-05
+        ],
+        "coefficient_error": 1.25127594988491e-17,
+        "Hamiltonian_boundary_error": 1.8288355883288454e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.0002974525821604814,
+        "density_phase_determinant": -23.112927613755947,
+        "friction": 1.5569935315758316,
+        "density_mass": -0.03136880412885179,
+        "density_Hamiltonian_Hessian": [
+          3361.880380182683,
+          -9.330731787413336e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.980250720470897e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.0005913032836418103,
+        "density_phase_determinant": -11.626859160424722,
+        "friction": 1.183847056969386,
+        "density_mass": -0.01136789461503962,
+        "density_Hamiltonian_Hessian": [
+          1691.179514243596,
+          -6.72187341396698e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.1514576638559085e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.00138254367390811,
+        "density_phase_determinant": -4.972718135236965,
+        "friction": 0.5805746093692958,
+        "density_mass": -0.0032072173140193895,
+        "density_Hamiltonian_Hessian": [
+          723.3044560344676,
+          -4.434118008346068e-06
+        ],
+        "coefficient_error": 4.3229440688767785e-19,
+        "Hamiltonian_boundary_error": 1.3547630815753255e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.002170410208386914,
+        "density_phase_determinant": -3.167603973402622,
+        "friction": 0.37088708126300307,
+        "density_mass": -0.0016349396015565925,
+        "density_Hamiltonian_Hessian": [
+          460.7423961312904,
+          -3.5484896013144617e-06
+        ],
+        "coefficient_error": 4.0492869172065736e-17,
+        "Hamiltonian_boundary_error": 1.016115286811282e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.0030169342339652133,
+        "density_phase_determinant": -2.2788034033357296,
+        "friction": 0.2910759511911741,
+        "density_mass": -0.0009988117314039568,
+        "density_Hamiltonian_Hessian": [
+          331.4623132124697,
+          -3.0133493057586646e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 3.1330525361110455e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -55.0,
+        "friction": 1.9784614413139512,
+        "density_mass": -0.10909090909090911,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.40909090909091e-06
+        ],
+        "coefficient_error": 1.25127594988491e-17,
+        "Hamiltonian_boundary_error": 4.5735055327734024e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 7.436314554012035e-05,
+        "density_phase_determinant": -23.112927613755947,
+        "friction": 1.5569935315758316,
+        "density_mass": -0.03136880412885179,
+        "density_Hamiltonian_Hessian": [
+          13447.521520730732,
+          -2.332682946853334e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 7.453073884236794e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 0.00014782582091045257,
+        "density_phase_determinant": -11.626859160424722,
+        "friction": 1.183847056969386,
+        "density_mass": -0.01136789461503962,
+        "density_Hamiltonian_Hessian": [
+          6764.718056974384,
+          -1.680468353491745e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.8795949507175466e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 0.0003456359184770275,
+        "density_phase_determinant": -4.972718135236965,
+        "friction": 0.5805746093692958,
+        "density_mass": -0.0032072173140193895,
+        "density_Hamiltonian_Hessian": [
+          2893.2178241378706,
+          -1.108529502086517e-06
+        ],
+        "coefficient_error": 4.3229440688767785e-19,
+        "Hamiltonian_boundary_error": 3.3878256848040714e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 0.0005426025520967285,
+        "density_phase_determinant": -3.167603973402622,
+        "friction": 0.37088708126300307,
+        "density_mass": -0.0016349396015565925,
+        "density_Hamiltonian_Hessian": [
+          1842.9695845251615,
+          -8.871224003286154e-07
+        ],
+        "coefficient_error": 4.0492869172065736e-17,
+        "Hamiltonian_boundary_error": 2.540896137081282e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 1.0,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.0007542335584913033,
+        "density_phase_determinant": -2.2788034033357296,
+        "friction": 0.2910759511911741,
+        "density_mass": -0.0009988117314039568,
+        "density_Hamiltonian_Hessian": [
+          1325.849252849879,
+          -7.533373264396661e-07
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 7.834448766067897e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -58.75,
+        "friction": 0.9881724677991723,
+        "density_mass": -0.1021276595744681,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.106382978723405e-05
+        ],
+        "coefficient_error": 5.584138411564109e-17,
+        "Hamiltonian_boundary_error": 4.0596979335838667e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.0007843822862460065,
+        "density_phase_determinant": -37.44985132260763,
+        "friction": 0.827680476457058,
+        "density_mass": -0.052033258872562944,
+        "density_Hamiltonian_Hessian": [
+          1274.8885556632383,
+          -4.0813966555291225e-05
+        ],
+        "coefficient_error": 6.074491897934553e-17,
+        "Hamiltonian_boundary_error": 6.766170359921357e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.0011430324447219353,
+        "density_phase_determinant": -25.699183024630624,
+        "friction": 0.6741902295041782,
+        "density_mass": -0.0295951864400451,
+        "density_Hamiltonian_Hessian": [
+          874.8658050938085,
+          -3.3828258308566216e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.4885445308177202e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.0019366201164798256,
+        "density_phase_determinant": -15.168178699596819,
+        "friction": 0.40988890928492855,
+        "density_mass": -0.013426249791969457,
+        "density_Hamiltonian_Hessian": [
+          516.3635301990406,
+          -2.6001545436011122e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.7067884246070394e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.002762309401140458,
+        "density_phase_determinant": -10.63421787142024,
+        "friction": 0.3155466956111092,
+        "density_mass": -0.007883240656174467,
+        "density_Hamiltonian_Hessian": [
+          362.0159275377103,
+          -2.1775949776003404e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.7256769731222844e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.003659158275526667,
+        "density_phase_determinant": -8.027802513071677,
+        "friction": 0.24959691774306747,
+        "density_mass": -0.005171148451036921,
+        "density_Hamiltonian_Hessian": [
+          273.28689406201454,
+          -1.8922050648588655e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.3196719113919123e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -58.75,
+        "friction": 0.9881724677991723,
+        "density_mass": -0.1021276595744681,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.2765957446808513e-05
+        ],
+        "coefficient_error": 5.584138411564109e-17,
+        "Hamiltonian_boundary_error": 1.0160603494799026e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.00019609557156150163,
+        "density_phase_determinant": -37.44985132260763,
+        "friction": 0.827680476457058,
+        "density_mass": -0.052033258872562944,
+        "density_Hamiltonian_Hessian": [
+          5099.554222652953,
+          -1.0203491638822806e-05
+        ],
+        "coefficient_error": 6.074491897934553e-17,
+        "Hamiltonian_boundary_error": 1.6934343628786146e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.0002857581111804838,
+        "density_phase_determinant": -25.699183024630624,
+        "friction": 0.6741902295041782,
+        "density_mass": -0.0295951864400451,
+        "density_Hamiltonian_Hessian": [
+          3499.463220375234,
+          -8.457064577141554e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 3.7255474874404717e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.0004841550291199564,
+        "density_phase_determinant": -15.168178699596819,
+        "friction": 0.40988890928492855,
+        "density_mass": -0.013426249791969457,
+        "density_Hamiltonian_Hessian": [
+          2065.4541207961624,
+          -6.500386359002781e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 6.773938057106825e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.0006905773502851146,
+        "density_phase_determinant": -10.63421787142024,
+        "friction": 0.3155466956111092,
+        "density_mass": -0.007883240656174467,
+        "density_Hamiltonian_Hessian": [
+          1448.0637101508412,
+          -5.443987444000851e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 4.318447731919068e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.0009147895688816668,
+        "density_phase_determinant": -8.027802513071677,
+        "friction": 0.24959691774306747,
+        "density_mass": -0.005171148451036921,
+        "density_Hamiltonian_Hessian": [
+          1093.1475762480582,
+          -4.730512662147164e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 3.3023652897556713e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -58.75,
+        "friction": 0.9881724677991723,
+        "density_mass": -0.1021276595744681,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.191489361702128e-06
+        ],
+        "coefficient_error": 5.584138411564109e-17,
+        "Hamiltonian_boundary_error": 2.540861783420375e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 4.902389289037541e-05,
+        "density_phase_determinant": -37.44985132260763,
+        "friction": 0.827680476457058,
+        "density_mass": -0.052033258872562944,
+        "density_Hamiltonian_Hessian": [
+          20398.216890611813,
+          -2.5508729097057016e-06
+        ],
+        "coefficient_error": 6.074491897934553e-17,
+        "Hamiltonian_boundary_error": 4.234769918614564e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 7.143952779512095e-05,
+        "density_phase_determinant": -25.699183024630624,
+        "friction": 0.6741902295041782,
+        "density_mass": -0.0295951864400451,
+        "density_Hamiltonian_Hessian": [
+          13997.852881500936,
+          -2.1142661442853885e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 9.316488748800084e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 0.0001210387572799891,
+        "density_phase_determinant": -15.168178699596819,
+        "friction": 0.40988890928492855,
+        "density_mass": -0.013426249791969457,
+        "density_Hamiltonian_Hessian": [
+          8261.81648318465,
+          -1.6250965897506952e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.6939205120306693e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 0.00017264433757127864,
+        "density_phase_determinant": -10.63421787142024,
+        "friction": 0.3155466956111092,
+        "density_mass": -0.007883240656174467,
+        "density_Hamiltonian_Hessian": [
+          5792.254840603365,
+          -1.3609968610002127e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.0798782171622412e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.0002286973922204167,
+        "density_phase_determinant": -8.027802513071677,
+        "friction": 0.24959691774306747,
+        "density_mass": -0.005171148451036921,
+        "density_Hamiltonian_Hessian": [
+          4372.590304992233,
+          -1.182628165536791e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 8.257906572453551e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -58.75,
+        "friction": 0.9881724677991723,
+        "density_mass": -0.1021276595744681,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.106382978723405e-05
+        ],
+        "coefficient_error": 5.584138411564109e-17,
+        "Hamiltonian_boundary_error": 4.0596979335838667e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.000784382286246873,
+        "density_phase_determinant": -37.44985132256625,
+        "friction": 0.8276804764564698,
+        "density_mass": -0.0520332588726152,
+        "density_Hamiltonian_Hessian": [
+          1274.88855566183,
+          -4.0813966555377304e-05
+        ],
+        "coefficient_error": 6.595698230437238e-18,
+        "Hamiltonian_boundary_error": 2.3004979223732623e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.0011430324447228963,
+        "density_phase_determinant": -25.699183024609017,
+        "friction": 0.6741902295042314,
+        "density_mass": -0.02959518644006105,
+        "density_Hamiltonian_Hessian": [
+          874.8658050930729,
+          -3.382825830861289e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.2179000706690437e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.0019366201165052646,
+        "density_phase_determinant": -15.168178699397572,
+        "friction": 0.409888909288416,
+        "density_mass": -0.013426249791901096,
+        "density_Hamiltonian_Hessian": [
+          516.3635301922578,
+          -2.6001545436220285e-05
+        ],
+        "coefficient_error": 1.71174121090017e-18,
+        "Hamiltonian_boundary_error": 5.413576849214056e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.0027623094011396242,
+        "density_phase_determinant": -10.63421787142345,
+        "friction": 0.3155466956103128,
+        "density_mass": -0.007883240656175395,
+        "density_Hamiltonian_Hessian": [
+          362.01592753781955,
+          -2.1775949775999392e-05
+        ],
+        "coefficient_error": 4.219626062418477e-17,
+        "Hamiltonian_boundary_error": 1.8610241867005031e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.003659158275520885,
+        "density_phase_determinant": -8.027802513084362,
+        "friction": 0.2495969177420553,
+        "density_mass": -0.005171148451046522,
+        "density_Hamiltonian_Hessian": [
+          273.2868940624463,
+          -1.8922050648593886e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.1656154443354467e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -58.75,
+        "friction": 0.9881724677991723,
+        "density_mass": -0.1021276595744681,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.2765957446808513e-05
+        ],
+        "coefficient_error": 5.584138411564109e-17,
+        "Hamiltonian_boundary_error": 1.0160603494799026e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.00019609557156171825,
+        "density_phase_determinant": -37.44985132256625,
+        "friction": 0.8276804764564698,
+        "density_mass": -0.0520332588726152,
+        "density_Hamiltonian_Hessian": [
+          5099.55422264732,
+          -1.0203491638844326e-05
+        ],
+        "coefficient_error": 6.595698230437238e-18,
+        "Hamiltonian_boundary_error": 5.75767683378729e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.0002857581111807241,
+        "density_phase_determinant": -25.699183024609017,
+        "friction": 0.6741902295042314,
+        "density_mass": -0.02959518644006105,
+        "density_Hamiltonian_Hessian": [
+          3499.4632203722917,
+          -8.457064577153223e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 3.048175216996749e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.00048415502912631616,
+        "density_phase_determinant": -15.168178699397572,
+        "friction": 0.409888909288416,
+        "density_mass": -0.013426249791901096,
+        "density_Hamiltonian_Hessian": [
+          2065.4541207690313,
+          -6.500386359055071e-06
+        ],
+        "coefficient_error": 1.71174121090017e-18,
+        "Hamiltonian_boundary_error": 1.3547876114213638e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.0006905773502849061,
+        "density_phase_determinant": -10.63421787142345,
+        "friction": 0.3155466956103128,
+        "density_mass": -0.007883240656175395,
+        "density_Hamiltonian_Hessian": [
+          1448.0637101512782,
+          -5.443987443999848e-06
+        ],
+        "coefficient_error": 4.219626062418477e-17,
+        "Hamiltonian_boundary_error": 4.657149514814681e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.0009147895688802213,
+        "density_phase_determinant": -8.027802513084362,
+        "friction": 0.2495969177420553,
+        "density_mass": -0.005171148451046522,
+        "density_Hamiltonian_Hessian": [
+          1093.1475762497853,
+          -4.730512662148472e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 5.419266116522128e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -58.75,
+        "friction": 0.9881724677991723,
+        "density_mass": -0.1021276595744681,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.191489361702128e-06
+        ],
+        "coefficient_error": 5.584138411564109e-17,
+        "Hamiltonian_boundary_error": 2.540861783420375e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 4.9023892890429564e-05,
+        "density_phase_determinant": -37.44985132256625,
+        "friction": 0.8276804764564698,
+        "density_mass": -0.0520332588726152,
+        "density_Hamiltonian_Hessian": [
+          20398.21689058928,
+          -2.5508729097110815e-06
+        ],
+        "coefficient_error": 6.595698230437238e-18,
+        "Hamiltonian_boundary_error": 1.4398217723289518e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 7.143952779518102e-05,
+        "density_phase_determinant": -25.699183024609017,
+        "friction": 0.6741902295042314,
+        "density_mass": -0.02959518644006105,
+        "density_Hamiltonian_Hessian": [
+          13997.852881489167,
+          -2.1142661442883057e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 7.622581703563706e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 0.00012103875728157904,
+        "density_phase_determinant": -15.168178699397572,
+        "friction": 0.409888909288416,
+        "density_mass": -0.013426249791901096,
+        "density_Hamiltonian_Hessian": [
+          8261.816483076125,
+          -1.6250965897637678e-06
+        ],
+        "coefficient_error": 1.71174121090017e-18,
+        "Hamiltonian_boundary_error": 3.3878410240613378e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 0.00017264433757122652,
+        "density_phase_determinant": -10.63421787142345,
+        "friction": 0.3155466956103128,
+        "density_mass": -0.007883240656175395,
+        "density_Hamiltonian_Hessian": [
+          5792.254840605113,
+          -1.360996860999962e-06
+        ],
+        "coefficient_error": 4.219626062418477e-17,
+        "Hamiltonian_boundary_error": 1.164574547920064e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.25,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.00022869739222005533,
+        "density_phase_determinant": -8.027802513084362,
+        "friction": 0.2495969177420553,
+        "density_mass": -0.005171148451046522,
+        "density_Hamiltonian_Hessian": [
+          4372.590304999141,
+          -1.182628165537118e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.3551436426590444e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -59.6875,
+        "friction": 0.662349061187045,
+        "density_mass": -0.1005235602094241,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.026178010471205e-05
+        ],
+        "coefficient_error": 6.678639586275413e-17,
+        "Hamiltonian_boundary_error": 1.2181315657146821e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.000677124413942743,
+        "density_phase_determinant": -44.074248964420825,
+        "friction": 0.5575342066765788,
+        "density_mass": -0.06378643971131033,
+        "density_Hamiltonian_Hessian": [
+          1476.833473153368,
+          -4.3191355607015114e-05
+        ],
+        "coefficient_error": 7.128081167437846e-17,
+        "Hamiltonian_boundary_error": 5.413795941276603e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.0008751672727295543,
+        "density_phase_determinant": -34.10062388064455,
+        "friction": 0.4693000438317075,
+        "density_mass": -0.04341096888065007,
+        "density_Hamiltonian_Hessian": [
+          1142.638705948299,
+          -3.799185924182607e-05
+        ],
+        "coefficient_error": 3.778067758474526e-17,
+        "Hamiltonian_boundary_error": 2.7068647157318814e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.0012978394540203795,
+        "density_phase_determinant": -22.994947416301443,
+        "friction": 0.333581294889856,
+        "density_mass": -0.024038651716271654,
+        "density_Hamiltonian_Hessian": [
+          770.5113270383729,
+          -3.119831061883206e-05
+        ],
+        "coefficient_error": 4.1625622257878654e-17,
+        "Hamiltonian_boundary_error": 1.658015640721928e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.0017510028829892624,
+        "density_phase_determinant": -17.043804033635627,
+        "friction": 0.2707229623320328,
+        "density_mass": -0.015339598587998729,
+        "density_Hamiltonian_Hessian": [
+          571.101286990932,
+          -2.6859681351483793e-05
+        ],
+        "coefficient_error": 4.3684699873042094e-17,
+        "Hamiltonian_boundary_error": 4.060512254774282e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.002236185472859709,
+        "density_phase_determinant": -13.345829477120612,
+        "friction": 0.22121420315517423,
+        "density_mass": -0.01062879425958377,
+        "density_Hamiltonian_Hessian": [
+          447.19009766268016,
+          -2.3767955317295896e-05
+        ],
+        "coefficient_error": 2.2727851955798237e-17,
+        "Hamiltonian_boundary_error": 1.9456912776760617e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -59.6875,
+        "friction": 0.662349061187045,
+        "density_mass": -0.1005235602094241,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.2565445026178012e-05
+        ],
+        "coefficient_error": 6.678639586275413e-17,
+        "Hamiltonian_boundary_error": 3.048320206432768e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.00016928110348568575,
+        "density_phase_determinant": -44.074248964420825,
+        "friction": 0.5575342066765788,
+        "density_mass": -0.06378643971131033,
+        "density_Hamiltonian_Hessian": [
+          5907.333892613472,
+          -1.0797838901753779e-05
+        ],
+        "coefficient_error": 7.128081167437846e-17,
+        "Hamiltonian_boundary_error": 1.3548013324694779e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.00021879181818238857,
+        "density_phase_determinant": -34.10062388064455,
+        "friction": 0.4693000438317075,
+        "density_mass": -0.04341096888065007,
+        "density_Hamiltonian_Hessian": [
+          4570.554823793196,
+          -9.497964810456517e-06
+        ],
+        "coefficient_error": 3.778067758474526e-17,
+        "Hamiltonian_boundary_error": 6.7739858362835076e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.0003244598635050949,
+        "density_phase_determinant": -22.994947416301443,
+        "friction": 0.333581294889856,
+        "density_mass": -0.024038651716271654,
+        "density_Hamiltonian_Hessian": [
+          3082.0453081534915,
+          -7.799577654708016e-06
+        ],
+        "coefficient_error": 4.1625622257878654e-17,
+        "Hamiltonian_boundary_error": 4.1491045270625685e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.0004377507207473156,
+        "density_phase_determinant": -17.043804033635627,
+        "friction": 0.2707229623320328,
+        "density_mass": -0.015339598587998729,
+        "density_Hamiltonian_Hessian": [
+          2284.405147963728,
+          -6.714920337870948e-06
+        ],
+        "coefficient_error": 4.3684699873042094e-17,
+        "Hamiltonian_boundary_error": 1.0161113508680491e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.0005590463682149273,
+        "density_phase_determinant": -13.345829477120612,
+        "friction": 0.22121420315517423,
+        "density_mass": -0.01062879425958377,
+        "density_Hamiltonian_Hessian": [
+          1788.7603906507206,
+          -5.941988829323974e-06
+        ],
+        "coefficient_error": 2.2727851955798237e-17,
+        "Hamiltonian_boundary_error": 4.8688851469373565e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -59.6875,
+        "friction": 0.662349061187045,
+        "density_mass": -0.1005235602094241,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.141361256544503e-06
+        ],
+        "coefficient_error": 6.678639586275413e-17,
+        "Hamiltonian_boundary_error": 7.622672369716894e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 4.232027587142144e-05,
+        "density_phase_determinant": -44.074248964420825,
+        "friction": 0.5575342066765788,
+        "density_mass": -0.06378643971131033,
+        "density_Hamiltonian_Hessian": [
+          23629.335570453888,
+          -2.6994597254384447e-06
+        ],
+        "coefficient_error": 7.128081167437846e-17,
+        "Hamiltonian_boundary_error": 3.387849604067519e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 5.469795454559714e-05,
+        "density_phase_determinant": -34.10062388064455,
+        "friction": 0.4693000438317075,
+        "density_mass": -0.04341096888065007,
+        "density_Hamiltonian_Hessian": [
+          18282.219295172785,
+          -2.3744912026141293e-06
+        ],
+        "coefficient_error": 3.778067758474526e-17,
+        "Hamiltonian_boundary_error": 1.6939234997512355e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 8.111496587627372e-05,
+        "density_phase_determinant": -22.994947416301443,
+        "friction": 0.333581294889856,
+        "density_mass": -0.024038651716271654,
+        "density_Hamiltonian_Hessian": [
+          12328.181232613966,
+          -1.949894413677004e-06
+        ],
+        "coefficient_error": 4.1625622257878654e-17,
+        "Hamiltonian_boundary_error": 1.0375305324316335e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 0.0001094376801868289,
+        "density_phase_determinant": -17.043804033635627,
+        "friction": 0.2707229623320328,
+        "density_mass": -0.015339598587998729,
+        "density_Hamiltonian_Hessian": [
+          9137.620591854911,
+          -1.678730084467737e-06
+        ],
+        "coefficient_error": 4.3684699873042094e-17,
+        "Hamiltonian_boundary_error": 2.5408936759320757e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.00013976159205373182,
+        "density_phase_determinant": -13.345829477120612,
+        "friction": 0.22121420315517423,
+        "density_mass": -0.01062879425958377,
+        "density_Hamiltonian_Hessian": [
+          7155.041562602883,
+          -1.4854972073309935e-06
+        ],
+        "coefficient_error": 2.2727851955798237e-17,
+        "Hamiltonian_boundary_error": 1.2175126946855038e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -59.6875,
+        "friction": 0.662349061187045,
+        "density_mass": -0.1005235602094241,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.026178010471205e-05
+        ],
+        "coefficient_error": 6.678639586275413e-17,
+        "Hamiltonian_boundary_error": 1.2181315657146821e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.0006771244139426733,
+        "density_phase_determinant": -44.074248964425365,
+        "friction": 0.5575342066766383,
+        "density_mass": -0.06378643971130972,
+        "density_Hamiltonian_Hessian": [
+          1476.8334731535201,
+          -4.3191355607010256e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 6.767244926595754e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.0008751672727289106,
+        "density_phase_determinant": -34.10062388066963,
+        "friction": 0.46930004383163776,
+        "density_mass": -0.0434109688806362,
+        "density_Hamiltonian_Hessian": [
+          1142.6387059491394,
+          -3.799185924178599e-05
+        ],
+        "coefficient_error": 3.778067758474705e-17,
+        "Hamiltonian_boundary_error": 1.2857607399726438e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.001297839454017182,
+        "density_phase_determinant": -22.994947416358094,
+        "friction": 0.3335812948899539,
+        "density_mass": -0.02403865171624074,
+        "density_Hamiltonian_Hessian": [
+          770.5113270402712,
+          -3.119831061871508e-05
+        ],
+        "coefficient_error": 4.16256222578756e-17,
+        "Hamiltonian_boundary_error": 9.474375089839589e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.001751002882988325,
+        "density_phase_determinant": -17.04380403364475,
+        "friction": 0.27072296233112786,
+        "density_mass": -0.015339598587980216,
+        "density_Hamiltonian_Hessian": [
+          571.1012869912377,
+          -2.6859681351436996e-05
+        ],
+        "coefficient_error": 4.3684699873073205e-17,
+        "Hamiltonian_boundary_error": 1.0151280636935708e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.002236185472857647,
+        "density_phase_determinant": -13.34582947713292,
+        "friction": 0.22121420315479612,
+        "density_mass": -0.010628794259596565,
+        "density_Hamiltonian_Hessian": [
+          447.19009766309256,
+          -2.376795531730259e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.8085630616889245e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -59.6875,
+        "friction": 0.662349061187045,
+        "density_mass": -0.1005235602094241,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.2565445026178012e-05
+        ],
+        "coefficient_error": 6.678639586275413e-17,
+        "Hamiltonian_boundary_error": 3.048320206432768e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.00016928110348566833,
+        "density_phase_determinant": -44.074248964425365,
+        "friction": 0.5575342066766383,
+        "density_mass": -0.06378643971130972,
+        "density_Hamiltonian_Hessian": [
+          5907.3338926140805,
+          -1.0797838901752564e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.6935016655868474e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.00021879181818222764,
+        "density_phase_determinant": -34.10062388066963,
+        "friction": 0.46930004383163776,
+        "density_mass": -0.0434109688806362,
+        "density_Hamiltonian_Hessian": [
+          4570.554823796558,
+          -9.497964810446497e-06
+        ],
+        "coefficient_error": 3.778067758474705e-17,
+        "Hamiltonian_boundary_error": 3.2176432722346664e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.0003244598635042955,
+        "density_phase_determinant": -22.994947416358094,
+        "friction": 0.3335812948899539,
+        "density_mass": -0.02403865171624074,
+        "density_Hamiltonian_Hessian": [
+          3082.045308161085,
+          -7.79957765467877e-06
+        ],
+        "coefficient_error": 4.16256222578756e-17,
+        "Hamiltonian_boundary_error": 2.370916872607182e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.00043775072074708125,
+        "density_phase_determinant": -17.04380403364475,
+        "friction": 0.27072296233112786,
+        "density_mass": -0.015339598587980216,
+        "density_Hamiltonian_Hessian": [
+          2284.4051479649506,
+          -6.714920337859249e-06
+        ],
+        "coefficient_error": 4.3684699873073205e-17,
+        "Hamiltonian_boundary_error": 2.540278377170123e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.0005590463682144118,
+        "density_phase_determinant": -13.34582947713292,
+        "friction": 0.22121420315479612,
+        "density_mass": -0.010628794259596565,
+        "density_Hamiltonian_Hessian": [
+          1788.7603906523702,
+          -5.941988829325648e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 7.028129864274793e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -59.6875,
+        "friction": 0.662349061187045,
+        "density_mass": -0.1005235602094241,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.141361256544503e-06
+        ],
+        "coefficient_error": 6.678639586275413e-17,
+        "Hamiltonian_boundary_error": 7.622672369716894e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 4.232027587141708e-05,
+        "density_phase_determinant": -44.074248964425365,
+        "friction": 0.5575342066766383,
+        "density_mass": -0.06378643971130972,
+        "density_Hamiltonian_Hessian": [
+          23629.335570456322,
+          -2.699459725438141e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 4.2348120050843987e-22,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 5.469795454555691e-05,
+        "density_phase_determinant": -34.10062388066963,
+        "friction": 0.46930004383163776,
+        "density_mass": -0.0434109688806362,
+        "density_Hamiltonian_Hessian": [
+          18282.21929518623,
+          -2.3744912026116242e-06
+        ],
+        "coefficient_error": 3.778067758474705e-17,
+        "Hamiltonian_boundary_error": 8.046136623818369e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 8.111496587607387e-05,
+        "density_phase_determinant": -22.994947416358094,
+        "friction": 0.3335812948899539,
+        "density_mass": -0.02403865171624074,
+        "density_Hamiltonian_Hessian": [
+          12328.18123264434,
+          -1.9498944136696923e-06
+        ],
+        "coefficient_error": 4.16256222578756e-17,
+        "Hamiltonian_boundary_error": 5.928745899609334e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 0.00010943768018677031,
+        "density_phase_determinant": -17.04380403364475,
+        "friction": 0.27072296233112786,
+        "density_mass": -0.015339598587980216,
+        "density_Hamiltonian_Hessian": [
+          9137.620591859803,
+          -1.6787300844648123e-06
+        ],
+        "coefficient_error": 4.3684699873073205e-17,
+        "Hamiltonian_boundary_error": 6.352234189830189e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.00013976159205360294,
+        "density_phase_determinant": -13.34582947713292,
+        "friction": 0.22121420315479612,
+        "density_mass": -0.010628794259596565,
+        "density_Hamiltonian_Hessian": [
+          7155.041562609481,
+          -1.485497207331412e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.757453107111249e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -59.921875,
+        "friction": 0.5562496258502877,
+        "density_mass": -0.1001303780964798,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.00651890482399e-05
+        ],
+        "coefficient_error": 7.133964925572685e-17,
+        "Hamiltonian_boundary_error": 9.474910911874931e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.0006448896700749847,
+        "density_phase_determinant": -46.459012898309076,
+        "friction": 0.46701327163953477,
+        "density_mass": -0.06835855356155945,
+        "density_Hamiltonian_Hessian": [
+          1550.652842498973,
+          -4.408372505311725e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 6.090871741712367e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.0008003367716080363,
+        "density_phase_determinant": -37.43541289475241,
+        "friction": 0.39915084411336427,
+        "density_mass": -0.04944380960484968,
+        "density_Hamiltonian_Hessian": [
+          1249.4740157831316,
+          -3.957169895514781e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.910051770770006e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.001132083568618959,
+        "density_phase_determinant": -26.465305504389285,
+        "friction": 0.30340276373265596,
+        "density_mass": -0.02939026169747841,
+        "density_Hamiltonian_Hessian": [
+          883.3270155311155,
+          -3.3272232345126465e-05
+        ],
+        "coefficient_error": 4.2589407338899776e-17,
+        "Hamiltonian_boundary_error": 1.1504933351927874e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.0014891311747641325,
+        "density_phase_determinant": -20.11974365169381,
+        "friction": 0.2485935937189146,
+        "density_mass": -0.019481473556560356,
+        "density_Hamiltonian_Hessian": [
+          671.5325130161167,
+          -2.9010469603417105e-05
+        ],
+        "coefficient_error": 3.403148602446017e-18,
+        "Hamiltonian_boundary_error": 1.1166616970946037e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.0018690873057789611,
+        "density_phase_determinant": -16.029715362875184,
+        "friction": 0.2081992436108977,
+        "density_mass": -0.0138540542550468,
+        "density_Hamiltonian_Hessian": [
+          535.020486687881,
+          -2.5894436941680977e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 7.613659897241887e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -59.921875,
+        "friction": 0.5562496258502877,
+        "density_mass": -0.1001303780964798,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.2516297262059975e-05
+        ],
+        "coefficient_error": 7.133964925572685e-17,
+        "Hamiltonian_boundary_error": 2.370950425785186e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.00016122241751874618,
+        "density_phase_determinant": -46.459012898309076,
+        "friction": 0.46701327163953477,
+        "density_mass": -0.06835855356155945,
+        "density_Hamiltonian_Hessian": [
+          6202.611369995892,
+          -1.1020931263279312e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.5241734987124102e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.00020008419290200907,
+        "density_phase_determinant": -37.43541289475241,
+        "friction": 0.39915084411336427,
+        "density_mass": -0.04944380960484968,
+        "density_Hamiltonian_Hessian": [
+          4997.896063132526,
+          -9.892924738786953e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 7.282142612239582e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.00028302089215473977,
+        "density_phase_determinant": -26.465305504389285,
+        "friction": 0.30340276373265596,
+        "density_mass": -0.02939026169747841,
+        "density_Hamiltonian_Hessian": [
+          3533.308062124462,
+          -8.318058086281616e-06
+        ],
+        "coefficient_error": 4.2589407338899776e-17,
+        "Hamiltonian_boundary_error": 2.8789914680865935e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.00037228279369103313,
+        "density_phase_determinant": -20.11974365169381,
+        "friction": 0.2485935937189146,
+        "density_mass": -0.019481473556560356,
+        "density_Hamiltonian_Hessian": [
+          2686.130052064467,
+          -7.252617400854276e-06
+        ],
+        "coefficient_error": 3.403148602446017e-18,
+        "Hamiltonian_boundary_error": 2.79431925682897e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.0004672718264447403,
+        "density_phase_determinant": -16.029715362875184,
+        "friction": 0.2081992436108977,
+        "density_mass": -0.0138540542550468,
+        "density_Hamiltonian_Hessian": [
+          2140.081946751524,
+          -6.473609235420244e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.9052212705108643e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -59.921875,
+        "friction": 0.5562496258502877,
+        "density_mass": -0.1001303780964798,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.129074315514994e-06
+        ],
+        "coefficient_error": 7.133964925572685e-17,
+        "Hamiltonian_boundary_error": 5.928766880410673e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 4.0305604379686544e-05,
+        "density_phase_determinant": -46.459012898309076,
+        "friction": 0.46701327163953477,
+        "density_mass": -0.06835855356155945,
+        "density_Hamiltonian_Hessian": [
+          24810.44547998357,
+          -2.755232815819828e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 3.811344561101583e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 5.002104822550227e-05,
+        "density_phase_determinant": -37.43541289475241,
+        "friction": 0.39915084411336427,
+        "density_mass": -0.04944380960484968,
+        "density_Hamiltonian_Hessian": [
+          19991.584252530105,
+          -2.4732311846967383e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.8209745054469246e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 7.075522303868494e-05,
+        "density_phase_determinant": -26.465305504389285,
+        "friction": 0.30340276373265596,
+        "density_mass": -0.02939026169747841,
+        "density_Hamiltonian_Hessian": [
+          14133.232248497849,
+          -2.079514521570404e-06
+        ],
+        "coefficient_error": 4.2589407338899776e-17,
+        "Hamiltonian_boundary_error": 7.199204568337046e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 9.307069842275828e-05,
+        "density_phase_determinant": -20.11974365169381,
+        "friction": 0.2485935937189146,
+        "density_mass": -0.019481473556560356,
+        "density_Hamiltonian_Hessian": [
+          10744.520208257867,
+          -1.813154350213569e-06
+        ],
+        "coefficient_error": 3.403148602446017e-18,
+        "Hamiltonian_boundary_error": 6.987465763947515e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.00011681795661118507,
+        "density_phase_determinant": -16.029715362875184,
+        "friction": 0.2081992436108977,
+        "density_mass": -0.0138540542550468,
+        "density_Hamiltonian_Hessian": [
+          8560.327787006096,
+          -1.618402308855061e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 4.7641834508864115e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -59.921875,
+        "friction": 0.5562496258502877,
+        "density_mass": -0.1001303780964798,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.00651890482399e-05
+        ],
+        "coefficient_error": 7.133964925572685e-17,
+        "Hamiltonian_boundary_error": 9.474910911874931e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.0006448896700754384,
+        "density_phase_determinant": -46.459012898276384,
+        "friction": 0.4670132716397487,
+        "density_mass": -0.0683585535616113,
+        "density_Hamiltonian_Hessian": [
+          1550.6528424978821,
+          -4.4083725053181697e-05
+        ],
+        "coefficient_error": 3.783956989646756e-17,
+        "Hamiltonian_boundary_error": 6.429253505140832e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.000800336771603202,
+        "density_phase_determinant": -37.43541289497854,
+        "friction": 0.39915084411287544,
+        "density_mass": -0.049443809604620186,
+        "density_Hamiltonian_Hessian": [
+          1249.4740157906785,
+          -3.957169895472511e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 3.1807542610741927e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.0011320835686177311,
+        "density_phase_determinant": -26.465305504417987,
+        "friction": 0.3034027637327256,
+        "density_mass": -0.029390261697456663,
+        "density_Hamiltonian_Hessian": [
+          883.3270155320737,
+          -3.3272232345065756e-05
+        ],
+        "coefficient_error": 4.2589407338897496e-17,
+        "Hamiltonian_boundary_error": 2.0641203954929422e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.0014891311747635486,
+        "density_phase_determinant": -20.1197436517017,
+        "friction": 0.24859359371874223,
+        "density_mass": -0.0194814735565595,
+        "density_Hamiltonian_Hessian": [
+          671.5325130163801,
+          -2.9010469603404453e-05
+        ],
+        "coefficient_error": 2.222947142709842e-17,
+        "Hamiltonian_boundary_error": 1.0828234638493125e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.0018690873057778015,
+        "density_phase_determinant": -16.029715362885128,
+        "friction": 0.20819924361081568,
+        "density_mass": -0.013854054255054163,
+        "density_Hamiltonian_Hessian": [
+          535.0204866882129,
+          -2.5894436941678673e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 9.305584318851197e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -59.921875,
+        "friction": 0.5562496258502877,
+        "density_mass": -0.1001303780964798,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.2516297262059975e-05
+        ],
+        "coefficient_error": 7.133964925572685e-17,
+        "Hamiltonian_boundary_error": 2.370950425785186e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.0001612224175188596,
+        "density_phase_determinant": -46.459012898276384,
+        "friction": 0.4670132716397487,
+        "density_mass": -0.0683585535616113,
+        "density_Hamiltonian_Hessian": [
+          6202.611369991529,
+          -1.1020931263295424e-05
+        ],
+        "coefficient_error": 3.783956989646756e-17,
+        "Hamiltonian_boundary_error": 1.6088498041964332e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.0002000841929008005,
+        "density_phase_determinant": -37.43541289497854,
+        "friction": 0.39915084411287544,
+        "density_mass": -0.049443809604620186,
+        "density_Hamiltonian_Hessian": [
+          4997.896063162714,
+          -9.892924738681277e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 7.959551227331638e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.0002830208921544328,
+        "density_phase_determinant": -26.465305504417987,
+        "friction": 0.3034027637327256,
+        "density_mass": -0.029390261697456663,
+        "density_Hamiltonian_Hessian": [
+          3533.3080621282948,
+          -8.318058086266439e-06
+        ],
+        "coefficient_error": 4.2589407338897496e-17,
+        "Hamiltonian_boundary_error": 5.1652493986259477e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.00037228279369088714,
+        "density_phase_determinant": -20.1197436517017,
+        "friction": 0.24859359371874223,
+        "density_mass": -0.0194814735565595,
+        "density_Hamiltonian_Hessian": [
+          2686.1300520655204,
+          -7.252617400851113e-06
+        ],
+        "coefficient_error": 2.222947142709842e-17,
+        "Hamiltonian_boundary_error": 2.7096429157129405e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.00046727182644445037,
+        "density_phase_determinant": -16.029715362885128,
+        "friction": 0.20819924361081568,
+        "density_mass": -0.013854054255054163,
+        "density_Hamiltonian_Hessian": [
+          2140.0819467528518,
+          -6.473609235419668e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.3286037750688342e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -59.921875,
+        "friction": 0.5562496258502877,
+        "density_mass": -0.1001303780964798,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.129074315514994e-06
+        ],
+        "coefficient_error": 7.133964925572685e-17,
+        "Hamiltonian_boundary_error": 5.928766880410673e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 4.03056043797149e-05,
+        "density_phase_determinant": -46.459012898276384,
+        "friction": 0.4670132716397487,
+        "density_mass": -0.0683585535616113,
+        "density_Hamiltonian_Hessian": [
+          24810.445479966114,
+          -2.755232815823856e-06
+        ],
+        "coefficient_error": 3.783956989646756e-17,
+        "Hamiltonian_boundary_error": 4.0230859256072265e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 5.002104822520013e-05,
+        "density_phase_determinant": -37.43541289497854,
+        "friction": 0.39915084411287544,
+        "density_mass": -0.049443809604620186,
+        "density_Hamiltonian_Hessian": [
+          19991.584252650857,
+          -2.4732311846703194e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.9903674826978014e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 7.07552230386082e-05,
+        "density_phase_determinant": -26.465305504417987,
+        "friction": 0.3034027637327256,
+        "density_mass": -0.029390261697456663,
+        "density_Hamiltonian_Hessian": [
+          14133.232248513179,
+          -2.0795145215666098e-06
+        ],
+        "coefficient_error": 4.2589407338897496e-17,
+        "Hamiltonian_boundary_error": 1.2916219960839993e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 9.307069842272178e-05,
+        "density_phase_determinant": -20.1197436517017,
+        "friction": 0.24859359371874223,
+        "density_mass": -0.0194814735565595,
+        "density_Hamiltonian_Hessian": [
+          10744.520208262082,
+          -1.8131543502127783e-06
+        ],
+        "coefficient_error": 2.222947142709842e-17,
+        "Hamiltonian_boundary_error": 6.775724377161226e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.015625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.00011681795661111259,
+        "density_phase_determinant": -16.029715362885128,
+        "friction": 0.20819924361081568,
+        "density_mass": -0.013854054255054163,
+        "density_Hamiltonian_Hessian": [
+          8560.327787011407,
+          -1.618402308854917e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 5.8228908844167246e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -59.98046875,
+        "friction": 0.5266288691524947,
+        "density_mass": -0.10003256268316511,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.0016281341582555e-05
+        ],
+        "coefficient_error": 1.261579727600444e-17,
+        "Hamiltonian_boundary_error": 4.0607414420101927e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.0006361105283068813,
+        "density_phase_determinant": -47.14626317351517,
+        "friction": 0.4414725429091096,
+        "density_mass": -0.06971039249859624,
+        "density_Hamiltonian_Hessian": [
+          1572.0538420605517,
+          -4.434351460076211e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 6.767747479700008e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.0007804119632669588,
+        "density_phase_determinant": -38.42872199120956,
+        "friction": 0.3791764205787228,
+        "density_mass": -0.051299192331816894,
+        "density_Hamiltonian_Hessian": [
+          1281.3745138065315,
+          -4.003450340168254e-05
+        ],
+        "coefficient_error": 6.600303657150662e-18,
+        "Hamiltonian_boundary_error": 2.2333342796839735e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.0010888761868717073,
+        "density_phase_determinant": -27.542373262069955,
+        "friction": 0.2942440118171445,
+        "density_mass": -0.031126382955758668,
+        "density_Hamiltonian_Hessian": [
+          918.3780599270477,
+          -3.3892777183975e-05
+        ],
+        "coefficient_error": 4.2890792404222953e-17,
+        "Hamiltonian_boundary_error": 8.121203205632897e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.001420838486025965,
+        "density_phase_determinant": -21.10741978765062,
+        "friction": 0.24144522641067478,
+        "density_mass": -0.020882348488415844,
+        "density_Hamiltonian_Hessian": [
+          703.8097643293466,
+          -2.9670444410947365e-05
+        ],
+        "coefficient_error": 2.2357470974274998e-17,
+        "Hamiltonian_boundary_error": 6.767691490602857e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.0017735179373740318,
+        "density_phase_determinant": -16.91002596760041,
+        "friction": 0.20406175849881336,
+        "density_mass": -0.014974179333755784,
+        "density_Hamiltonian_Hessian": [
+          563.8510775259792,
+          -2.6556975645871413e-05
+        ],
+        "coefficient_error": 2.3051621247595885e-17,
+        "Hamiltonian_boundary_error": 3.72224915970493e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -59.98046875,
+        "friction": 0.5266288691524947,
+        "density_mass": -0.10003256268316511,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.2504070335395639e-05
+        ],
+        "coefficient_error": 1.261579727600444e-17,
+        "Hamiltonian_boundary_error": 1.0161257022262127e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.00015902763207672032,
+        "density_phase_determinant": -47.14626317351517,
+        "friction": 0.4414725429091096,
+        "density_mass": -0.06971039249859624,
+        "density_Hamiltonian_Hessian": [
+          6288.215368242207,
+          -1.1085878650190527e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.6935331362029857e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.0001951029908167397,
+        "density_phase_determinant": -38.42872199120956,
+        "friction": 0.3791764205787228,
+        "density_mass": -0.051299192331816894,
+        "density_Hamiltonian_Hessian": [
+          5125.498055226126,
+          -1.0008625850420635e-05
+        ],
+        "coefficient_error": 6.600303657150662e-18,
+        "Hamiltonian_boundary_error": 5.588645330063067e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.0002722190467179268,
+        "density_phase_determinant": -27.542373262069955,
+        "friction": 0.2942440118171445,
+        "density_mass": -0.031126382955758668,
+        "density_Hamiltonian_Hessian": [
+          3673.512239708191,
+          -8.47319429599375e-06
+        ],
+        "coefficient_error": 4.2890792404222953e-17,
+        "Hamiltonian_boundary_error": 2.032233891703618e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.00035520962150649123,
+        "density_phase_determinant": -21.10741978765062,
+        "friction": 0.24144522641067478,
+        "density_mass": -0.020882348488415844,
+        "density_Hamiltonian_Hessian": [
+          2815.2390573173866,
+          -7.417611102736841e-06
+        ],
+        "coefficient_error": 2.2357470974274998e-17,
+        "Hamiltonian_boundary_error": 1.6935296302566535e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.00044337948434350794,
+        "density_phase_determinant": -16.91002596760041,
+        "friction": 0.20406175849881336,
+        "density_mass": -0.014974179333755784,
+        "density_Hamiltonian_Hessian": [
+          2255.404310103917,
+          -6.639243911467853e-06
+        ],
+        "coefficient_error": 2.3051621247595885e-17,
+        "Hamiltonian_boundary_error": 9.314424763662722e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -59.98046875,
+        "friction": 0.5266288691524947,
+        "density_mass": -0.10003256268316511,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.1260175838489097e-06
+        ],
+        "coefficient_error": 1.261579727600444e-17,
+        "Hamiltonian_boundary_error": 2.5409026497815837e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 3.975690801918008e-05,
+        "density_phase_determinant": -47.14626317351517,
+        "friction": 0.4414725429091096,
+        "density_mass": -0.06971039249859624,
+        "density_Hamiltonian_Hessian": [
+          25152.861472968827,
+          -2.7714696625476317e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 4.234831683775482e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 4.877574770418492e-05,
+        "density_phase_determinant": -38.42872199120956,
+        "friction": 0.3791764205787228,
+        "density_mass": -0.051299192331816894,
+        "density_Hamiltonian_Hessian": [
+          20501.992220904503,
+          -2.5021564626051586e-06
+        ],
+        "coefficient_error": 6.600303657150662e-18,
+        "Hamiltonian_boundary_error": 1.397493579017856e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 6.80547616794817e-05,
+        "density_phase_determinant": -27.542373262069955,
+        "friction": 0.2942440118171445,
+        "density_mass": -0.031126382955758668,
+        "density_Hamiltonian_Hessian": [
+          14694.048958832764,
+          -2.1182985739984375e-06
+        ],
+        "coefficient_error": 4.2890792404222953e-17,
+        "Hamiltonian_boundary_error": 5.08179434895337e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 8.880240537662281e-05,
+        "density_phase_determinant": -21.10741978765062,
+        "friction": 0.24144522641067478,
+        "density_mass": -0.020882348488415844,
+        "density_Hamiltonian_Hessian": [
+          11260.956229269546,
+          -1.8544027756842103e-06
+        ],
+        "coefficient_error": 2.2357470974274998e-17,
+        "Hamiltonian_boundary_error": 4.234829491521599e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.00011084487108587698,
+        "density_phase_determinant": -16.91002596760041,
+        "friction": 0.20406175849881336,
+        "density_mass": -0.014974179333755784,
+        "density_Hamiltonian_Hessian": [
+          9021.617240415668,
+          -1.6598109778669633e-06
+        ],
+        "coefficient_error": 2.3051621247595885e-17,
+        "Hamiltonian_boundary_error": 2.329156958014606e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -59.98046875,
+        "friction": 0.5266288691524947,
+        "density_mass": -0.10003256268316511,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.0016281341582555e-05
+        ],
+        "coefficient_error": 1.261579727600444e-17,
+        "Hamiltonian_boundary_error": 4.0607414420101927e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.0006361105283077037,
+        "density_phase_determinant": -47.14626317345422,
+        "friction": 0.4414725429096513,
+        "density_mass": -0.06971039249886195,
+        "density_Hamiltonian_Hessian": [
+          1572.053842058519,
+          -4.434351460098846e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.7596143447220024e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.0007804119632693508,
+        "density_phase_determinant": -38.42872199109176,
+        "friction": 0.3791764205790846,
+        "density_mass": -0.05129919233204512,
+        "density_Hamiltonian_Hessian": [
+          1281.3745138026038,
+          -4.0034503401983364e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 9.474751489568375e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.0010888761868716598,
+        "density_phase_determinant": -27.542373262071155,
+        "friction": 0.2942440118169955,
+        "density_mass": -0.03112638295577118,
+        "density_Hamiltonian_Hessian": [
+          918.3780599270877,
+          -3.389277718398714e-05
+        ],
+        "coefficient_error": 4.28907924042279e-17,
+        "Hamiltonian_boundary_error": 1.6242406411265794e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.0014208384860252333,
+        "density_phase_determinant": -21.107419787661488,
+        "friction": 0.241445226410537,
+        "density_mass": -0.020882348488412698,
+        "density_Hamiltonian_Hessian": [
+          703.809764329709,
+          -2.9670444410927616e-05
+        ],
+        "coefficient_error": 2.2357470974277482e-17,
+        "Hamiltonian_boundary_error": 1.8611151599157852e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.0017735179373729983,
+        "density_phase_determinant": -16.910025967610267,
+        "friction": 0.20406175849872074,
+        "density_mass": -0.014974179333760041,
+        "density_Hamiltonian_Hessian": [
+          563.8510775263078,
+          -2.6556975645863485e-05
+        ],
+        "coefficient_error": 1.709130647161387e-18,
+        "Hamiltonian_boundary_error": 4.399021734196735e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -59.98046875,
+        "friction": 0.5266288691524947,
+        "density_mass": -0.10003256268316511,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.2504070335395639e-05
+        ],
+        "coefficient_error": 1.261579727600444e-17,
+        "Hamiltonian_boundary_error": 1.0161257022262127e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.00015902763207692594,
+        "density_phase_determinant": -47.14626317345422,
+        "friction": 0.4414725429096513,
+        "density_mass": -0.06971039249886195,
+        "density_Hamiltonian_Hessian": [
+          6288.215368234076,
+          -1.1085878650247115e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 4.4031861541277626e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.0001951029908173377,
+        "density_phase_determinant": -38.42872199109176,
+        "friction": 0.3791764205790846,
+        "density_mass": -0.05129919233204512,
+        "density_Hamiltonian_Hessian": [
+          5125.498055210415,
+          -1.0008625850495841e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.370940443057059e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.00027221904671791494,
+        "density_phase_determinant": -27.542373262071155,
+        "friction": 0.2942440118169955,
+        "density_mass": -0.03112638295577118,
+        "density_Hamiltonian_Hessian": [
+          3673.512239708351,
+          -8.473194295996786e-06
+        ],
+        "coefficient_error": 4.28907924042279e-17,
+        "Hamiltonian_boundary_error": 4.064467783407236e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.0003552096215063083,
+        "density_phase_determinant": -21.107419787661488,
+        "friction": 0.241445226410537,
+        "density_mass": -0.020882348488412698,
+        "density_Hamiltonian_Hessian": [
+          2815.239057318836,
+          -7.417611102731904e-06
+        ],
+        "coefficient_error": 2.2357470974277482e-17,
+        "Hamiltonian_boundary_error": 4.657206483205797e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.0004433794843432496,
+        "density_phase_determinant": -16.910025967610267,
+        "friction": 0.20406175849872074,
+        "density_mass": -0.014974179333760041,
+        "density_Hamiltonian_Hessian": [
+          2255.404310105231,
+          -6.639243911465871e-06
+        ],
+        "coefficient_error": 1.709130647161387e-18,
+        "Hamiltonian_boundary_error": 1.1007956538874125e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -59.98046875,
+        "friction": 0.5266288691524947,
+        "density_mass": -0.10003256268316511,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.1260175838489097e-06
+        ],
+        "coefficient_error": 1.261579727600444e-17,
+        "Hamiltonian_boundary_error": 2.5409026497815837e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 3.9756908019231484e-05,
+        "density_phase_determinant": -47.14626317345422,
+        "friction": 0.4414725429096513,
+        "density_mass": -0.06971039249886195,
+        "density_Hamiltonian_Hessian": [
+          25152.861472936303,
+          -2.771469662561779e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.1010562377816253e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 4.877574770433443e-05,
+        "density_phase_determinant": -38.42872199109176,
+        "friction": 0.3791764205790846,
+        "density_mass": -0.05129919233204512,
+        "density_Hamiltonian_Hessian": [
+          20501.99222084166,
+          -2.5021564626239602e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 5.9287606382575705e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 6.805476167947874e-05,
+        "density_phase_determinant": -27.542373262071155,
+        "friction": 0.2942440118169955,
+        "density_mass": -0.03112638295577118,
+        "density_Hamiltonian_Hessian": [
+          14694.048958833404,
+          -2.1182985739991964e-06
+        ],
+        "coefficient_error": 4.28907924042279e-17,
+        "Hamiltonian_boundary_error": 1.016358869790674e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 8.880240537657708e-05,
+        "density_phase_determinant": -21.107419787661488,
+        "friction": 0.241445226410537,
+        "density_mass": -0.020882348488412698,
+        "density_Hamiltonian_Hessian": [
+          11260.956229275344,
+          -1.854402775682976e-06
+        ],
+        "coefficient_error": 2.2357470974277482e-17,
+        "Hamiltonian_boundary_error": 1.1645781101684397e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.00390625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.0001108448710858124,
+        "density_phase_determinant": -16.910025967610267,
+        "friction": 0.20406175849872074,
+        "density_mass": -0.014974179333760041,
+        "density_Hamiltonian_Hessian": [
+          9021.617240420925,
+          -1.6598109778664678e-06
+        ],
+        "coefficient_error": 1.709130647161387e-18,
+        "Hamiltonian_boundary_error": 2.752640041289989e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -59.9951171875,
+        "friction": 0.518973545124966,
+        "density_mass": -0.10000813868316108,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.0004069341580544e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 4.466834075462436e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.0006338568348983778,
+        "density_phase_determinant": -47.32544786483105,
+        "friction": 0.4348509702841832,
+        "density_mass": -0.07006539656123631,
+        "density_Hamiltonian_Hessian": [
+          1577.6433177695774,
+          -4.441143050020493e-05
+        ],
+        "coefficient_error": 3.8687746937414285e-17,
+        "Hamiltonian_boundary_error": 9.474887387175746e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.0007753282901824302,
+        "density_phase_determinant": -38.6901380661497,
+        "friction": 0.37398305149958744,
+        "density_mass": -0.05179190730343126,
+        "density_Hamiltonian_Hessian": [
+          1289.7762311300492,
+          -4.015573093485628e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 6.767710382466254e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.0010779138194581055,
+        "density_phase_determinant": -27.829273595203123,
+        "friction": 0.29181687813628454,
+        "density_mass": -0.03159470401816914,
+        "density_Hamiltonian_Hessian": [
+          927.7179510535686,
+          -3.4056368082873054e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.4212140062579535e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.0014035088100611158,
+        "density_phase_determinant": -21.373259917366504,
+        "friction": 0.23951911156718086,
+        "density_mass": -0.02126511013534503,
+        "density_Hamiltonian_Hessian": [
+          712.4999806424122,
+          -2.9845769421876675e-05
+        ],
+        "coefficient_error": 3.3972050131956625e-18,
+        "Hamiltonian_boundary_error": 5.75254828261556e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.001749280099120178,
+        "density_phase_determinant": -17.148516471911872,
+        "friction": 0.20295082549631688,
+        "density_mass": -0.015282743283044832,
+        "density_Hamiltonian_Hessian": [
+          571.6637378444781,
+          -2.6733798684992898e-05
+        ],
+        "coefficient_error": 1.7086112094916139e-18,
+        "Hamiltonian_boundary_error": 1.4043047153625984e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -59.9951171875,
+        "friction": 0.518973545124966,
+        "density_mass": -0.10000813868316108,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.2501017335395136e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.1177394301652024e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.00015846420872459444,
+        "density_phase_determinant": -47.32544786483105,
+        "friction": 0.4348509702841832,
+        "density_mass": -0.07006539656123631,
+        "density_Hamiltonian_Hessian": [
+          6310.5732710783095,
+          -1.1102857625051232e-05
+        ],
+        "coefficient_error": 3.8687746937414285e-17,
+        "Hamiltonian_boundary_error": 2.3709489527281472e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.00019383207254560755,
+        "density_phase_determinant": -38.6901380661497,
+        "friction": 0.37398305149958744,
+        "density_mass": -0.05179190730343126,
+        "density_Hamiltonian_Hessian": [
+          5159.104924520197,
+          -1.003893273371407e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.693530813239319e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.0002694784548645264,
+        "density_phase_determinant": -27.829273595203123,
+        "friction": 0.29181687813628454,
+        "density_mass": -0.03159470401816914,
+        "density_Hamiltonian_Hessian": [
+          3710.8718042142746,
+          -8.514092020718263e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 3.5564114678748765e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.00035087720251527894,
+        "density_phase_determinant": -21.373259917366504,
+        "friction": 0.23951911156718086,
+        "density_mass": -0.02126511013534503,
+        "density_Hamiltonian_Hessian": [
+          2849.999922569649,
+          -7.461442355469169e-06
+        ],
+        "coefficient_error": 3.3972050131956625e-18,
+        "Hamiltonian_boundary_error": 1.4395008441913273e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.0004373200247800445,
+        "density_phase_determinant": -17.148516471911872,
+        "friction": 0.20295082549631688,
+        "density_mass": -0.015282743283044832,
+        "density_Hamiltonian_Hessian": [
+          2286.6549513779123,
+          -6.683449671248224e-06
+        ],
+        "coefficient_error": 1.7086112094916139e-18,
+        "Hamiltonian_boundary_error": 3.5140794500405226e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -59.9951171875,
+        "friction": 0.518973545124966,
+        "density_mass": -0.10000813868316108,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.125254333848784e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.79499363866714e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 3.961605218114861e-05,
+        "density_phase_determinant": -47.32544786483105,
+        "friction": 0.4348509702841832,
+        "density_mass": -0.07006539656123631,
+        "density_Hamiltonian_Hessian": [
+          25242.293084313238,
+          -2.775714406262808e-06
+        ],
+        "coefficient_error": 3.8687746937414285e-17,
+        "Hamiltonian_boundary_error": 5.92876595931749e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 4.845801813640189e-05,
+        "density_phase_determinant": -38.6901380661497,
+        "friction": 0.37398305149958744,
+        "density_mass": -0.05179190730343126,
+        "density_Hamiltonian_Hessian": [
+          20636.419698080786,
+          -2.5097331834285174e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 4.234830231236577e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 6.73696137161316e-05,
+        "density_phase_determinant": -27.829273595203123,
+        "friction": 0.29181687813628454,
+        "density_mass": -0.03159470401816914,
+        "density_Hamiltonian_Hessian": [
+          14843.487216857098,
+          -2.128523005179566e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 8.893141459680883e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 8.771930062881974e-05,
+        "density_phase_determinant": -21.373259917366504,
+        "friction": 0.23951911156718086,
+        "density_mass": -0.02126511013534503,
+        "density_Hamiltonian_Hessian": [
+          11399.999690278595,
+          -1.8653605888672922e-06
+        ],
+        "coefficient_error": 3.3972050131956625e-18,
+        "Hamiltonian_boundary_error": 3.599605479534434e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "DOP853",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.00010933000619501112,
+        "density_phase_determinant": -17.148516471911872,
+        "friction": 0.20295082549631688,
+        "density_mass": -0.015282743283044832,
+        "density_Hamiltonian_Hessian": [
+          9146.61980551165,
+          -1.670862417812056e-06
+        ],
+        "coefficient_error": 1.7086112094916139e-18,
+        "Hamiltonian_boundary_error": 8.787274613562651e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.0,
+        "K_D": 0.0005,
+        "density_phase_determinant": -59.9951171875,
+        "friction": 0.518973545124966,
+        "density_mass": -0.10000813868316108,
+        "density_Hamiltonian_Hessian": [
+          2000.0,
+          -5.0004069341580544e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 4.466834075462436e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 0.5,
+        "K_D": 0.0006338568348968672,
+        "density_phase_determinant": -47.32544786494383,
+        "friction": 0.43485097028363473,
+        "density_mass": -0.07006539656101951,
+        "density_Hamiltonian_Hessian": [
+          1577.6433177733372,
+          -4.4411430499961666e-05
+        ],
+        "coefficient_error": 1.2969102498235103e-17,
+        "Hamiltonian_boundary_error": 8.798109716663191e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 1.0,
+        "K_D": 0.0007753282901896967,
+        "density_phase_determinant": -38.69013806578708,
+        "friction": 0.37398305150155503,
+        "density_mass": -0.05179190730424824,
+        "density_Hamiltonian_Hessian": [
+          1289.7762311179613,
+          -4.015573093586606e-05
+        ],
+        "coefficient_error": 6.597211725741143e-18,
+        "Hamiltonian_boundary_error": 8.798023497206136e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 2.0,
+        "K_D": 0.0010779138194575886,
+        "density_phase_determinant": -27.829273595216463,
+        "friction": 0.29181687813615226,
+        "density_mass": -0.03159470401815263,
+        "density_Hamiltonian_Hessian": [
+          927.7179510540136,
+          -3.405636808283893e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.691921436021373e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 3.0,
+        "K_D": 0.001403508810060587,
+        "density_phase_determinant": -21.373259917374554,
+        "friction": 0.23951911156708094,
+        "density_mass": -0.021265110135345627,
+        "density_Hamiltonian_Hessian": [
+          712.4999806426807,
+          -2.9845769421866267e-05
+        ],
+        "coefficient_error": 2.239221271912339e-17,
+        "Hamiltonian_boundary_error": 8.798015020470855e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 20.0,
+        "t": 4.0,
+        "K_D": 0.0017492800991192724,
+        "density_phase_determinant": -17.148516471920747,
+        "friction": 0.20295082549621807,
+        "density_mass": -0.015282743283046879,
+        "density_Hamiltonian_Hessian": [
+          571.663737844774,
+          -2.673379868498264e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 5.244993515209706e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.0,
+        "K_D": 0.000125,
+        "density_phase_determinant": -59.9951171875,
+        "friction": 0.518973545124966,
+        "density_mass": -0.10000813868316108,
+        "density_Hamiltonian_Hessian": [
+          8000.0,
+          -1.2501017335395136e-05
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.1177394301652024e-19,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 0.5,
+        "K_D": 0.0001584642087242168,
+        "density_phase_determinant": -47.32544786494383,
+        "friction": 0.43485097028363473,
+        "density_mass": -0.07006539656101951,
+        "density_Hamiltonian_Hessian": [
+          6310.573271093349,
+          -1.1102857624990417e-05
+        ],
+        "coefficient_error": 1.2969102498235103e-17,
+        "Hamiltonian_boundary_error": 2.201595456104708e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 1.0,
+        "K_D": 0.0001938320725474242,
+        "density_phase_determinant": -38.69013806578708,
+        "friction": 0.37398305150155503,
+        "density_mass": -0.05179190730424824,
+        "density_Hamiltonian_Hessian": [
+          5159.104924471845,
+          -1.0038932733966514e-05
+        ],
+        "coefficient_error": 6.597211725741143e-18,
+        "Hamiltonian_boundary_error": 2.201590057211115e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 2.0,
+        "K_D": 0.00026947845486439715,
+        "density_phase_determinant": -27.829273595216463,
+        "friction": 0.29181687813615226,
+        "density_mass": -0.03159470401815263,
+        "density_Hamiltonian_Hessian": [
+          3710.8718042160544,
+          -8.514092020709732e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 4.2338231760415195e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 3.0,
+        "K_D": 0.0003508772025151467,
+        "density_phase_determinant": -21.373259917374554,
+        "friction": 0.23951911156708094,
+        "density_mass": -0.021265110135345627,
+        "density_Hamiltonian_Hessian": [
+          2849.999922570723,
+          -7.461442355466567e-06
+        ],
+        "coefficient_error": 2.239221271912339e-17,
+        "Hamiltonian_boundary_error": 2.201589526410265e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 40.0,
+        "t": 4.0,
+        "K_D": 0.0004373200247798181,
+        "density_phase_determinant": -17.148516471920747,
+        "friction": 0.20295082549621807,
+        "density_mass": -0.015282743283046879,
+        "density_Hamiltonian_Hessian": [
+          2286.654951379096,
+          -6.68344967124566e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.3124875054368217e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.0,
+        "K_D": 3.125e-05,
+        "density_phase_determinant": -59.9951171875,
+        "friction": 0.518973545124966,
+        "density_mass": -0.10000813868316108,
+        "density_Hamiltonian_Hessian": [
+          32000.0,
+          -3.125254333848784e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 2.79499363866714e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 0.5,
+        "K_D": 3.96160521810542e-05,
+        "density_phase_determinant": -47.32544786494383,
+        "friction": 0.43485097028363473,
+        "density_mass": -0.07006539656101951,
+        "density_Hamiltonian_Hessian": [
+          25242.293084373396,
+          -2.775714406247604e-06
+        ],
+        "coefficient_error": 1.2969102498235103e-17,
+        "Hamiltonian_boundary_error": 5.505282676509098e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 1.0,
+        "K_D": 4.845801813685605e-05,
+        "density_phase_determinant": -38.69013806578708,
+        "friction": 0.37398305150155503,
+        "density_mass": -0.05179190730424824,
+        "density_Hamiltonian_Hessian": [
+          20636.41969788738,
+          -2.5097331834916286e-06
+        ],
+        "coefficient_error": 6.597211725741143e-18,
+        "Hamiltonian_boundary_error": 5.505279300607549e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 2.0,
+        "K_D": 6.736961371609929e-05,
+        "density_phase_determinant": -27.829273595216463,
+        "friction": 0.29181687813615226,
+        "density_mass": -0.03159470401815263,
+        "density_Hamiltonian_Hessian": [
+          14843.487216864218,
+          -2.128523005177433e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 1.0587073166286766e-20,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 3.0,
+        "K_D": 8.771930062878668e-05,
+        "density_phase_determinant": -21.373259917374554,
+        "friction": 0.23951911156708094,
+        "density_mass": -0.021265110135345627,
+        "density_Hamiltonian_Hessian": [
+          11399.999690282892,
+          -1.8653605888666417e-06
+        ],
+        "coefficient_error": 2.239221271912339e-17,
+        "Hamiltonian_boundary_error": 5.5052789686997234e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      },
+      {
+        "eta": 0.0009765625,
+        "method": "Radau",
+        "k": 80.0,
+        "t": 4.0,
+        "K_D": 0.00010933000619495453,
+        "density_phase_determinant": -17.148516471920747,
+        "friction": 0.20295082549621807,
+        "density_mass": -0.015282743283046879,
+        "density_Hamiltonian_Hessian": [
+          9146.619805516384,
+          -1.670862417811415e-06
+        ],
+        "coefficient_error": 0.0,
+        "Hamiltonian_boundary_error": 3.2819941327764122e-21,
+        "energy_signature": "INDEFINITE_WITH_POSITIVE_KINETIC"
+      }
+    ],
+    "events": 216,
+    "worst_coefficient_error": 8.68381566800897e-17,
+    "worst_Hamiltonian_boundary_error": 1.1905367227166155e-18,
+    "min_K_D": 3.125e-05,
+    "max_density_mass": -0.0009988117314039568,
+    "min_friction": 0.20295082549621807
+  },
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "sympy": "1.14.0"
+  },
+  "status": "CONDITIONAL_POSITIVE_DENSITY_KINETIC_FORMAL_GR_DUST_CONTROL_FULL_THEORY_HOLD",
+  "original_frame_kinetic_sign_changed": false,
+  "positive_definite_density_Hamiltonian": false,
+  "physical_EFT_cutoff": "NOT_DERIVED",
+  "stationary_quantum_norm_verified": false,
+  "full_all_sector_kinetic_verified": false,
+  "healthy_continuous_full_GR_limit_verified": false,
+  "canonical_Test1_pass": false,
+  "canonical_Test2_pass": false,
+  "canonical_Test3_pass": false,
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "MAT_001": "BLOCKED",
+  "UVIR_003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED"
+}

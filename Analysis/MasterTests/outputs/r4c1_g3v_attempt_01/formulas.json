@@ -1,0 +1,35 @@
+{
+  "frame_background": "-3*H**2*MU2*c1/2 - 9*H**2*MU2*c2/2 - 3*H**2*MU2*c3/2",
+  "frame_quadratic": "-MU2*(B_z**2*c1 + B_z**2*c3 - 2*B_z*c1*w_z - 2*B_z*c3*w_z + 4*H**2*a**2*c1*w**2 + 18*H**2*a**2*c2*w**2 + 6*H**2*a**2*c3*w**2 - 2*H**2*a**2*c4*w**2 + 12*H*a**2*c2*w*w_t + 4*H*a**2*c3*w*w_t - 4*H*a**2*c4*w*w_t - 2*a**2*c1*w_t**2 - 2*a**2*c4*w_t**2 + 2*c1*w_z**2)/(4*a**2)",
+  "Einstein_quadratic": "B_z**2*MP2/(4*a**2)",
+  "full_analytic_vector_quadratic": "-(-B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 - 2*B_z*MU2*c1*w_z - 2*B_z*MU2*c3*w_z + 4*H**2*MU2*a**2*c1*w**2 + 18*H**2*MU2*a**2*c2*w**2 + 6*H**2*MU2*a**2*c3*w**2 - 2*H**2*MU2*a**2*c4*w**2 + 12*H*MU2*a**2*c2*w*w_t + 4*H*MU2*a**2*c3*w*w_t - 4*H*MU2*a**2*c4*w*w_t + 2*J0**2*a**2*w**2*zeta - 2*K_Q*a**2*psi_dot**2*w**2 - 2*MU2*a**2*c1*w_t**2 - 2*MU2*a**2*c4*w_t**2 + 2*MU2*c1*w_z**2)/(4*a**2)",
+  "shift_gradient_solution": "MU2*w_z*(c1 + c3)/(-MP2 + MU2*c1 + MU2*c3)",
+  "constrained_vector_quadratic": "-(-4*H**2*MP2*MU2*a**2*c1*w**2 - 18*H**2*MP2*MU2*a**2*c2*w**2 - 6*H**2*MP2*MU2*a**2*c3*w**2 + 2*H**2*MP2*MU2*a**2*c4*w**2 + 4*H**2*MU2**2*a**2*c1**2*w**2 + 18*H**2*MU2**2*a**2*c1*c2*w**2 + 10*H**2*MU2**2*a**2*c1*c3*w**2 - 2*H**2*MU2**2*a**2*c1*c4*w**2 + 18*H**2*MU2**2*a**2*c2*c3*w**2 + 6*H**2*MU2**2*a**2*c3**2*w**2 - 2*H**2*MU2**2*a**2*c3*c4*w**2 - 12*H*MP2*MU2*a**2*c2*w*w_t - 4*H*MP2*MU2*a**2*c3*w*w_t + 4*H*MP2*MU2*a**2*c4*w*w_t + 12*H*MU2**2*a**2*c1*c2*w*w_t + 4*H*MU2**2*a**2*c1*c3*w*w_t - 4*H*MU2**2*a**2*c1*c4*w*w_t + 12*H*MU2**2*a**2*c2*c3*w*w_t + 4*H*MU2**2*a**2*c3**2*w*w_t - 4*H*MU2**2*a**2*c3*c4*w*w_t - 2*J0**2*MP2*a**2*w**2*zeta + 2*J0**2*MU2*a**2*c1*w**2*zeta + 2*J0**2*MU2*a**2*c3*w**2*zeta + 2*K_Q*MP2*a**2*psi_dot**2*w**2 - 2*K_Q*MU2*a**2*c1*psi_dot**2*w**2 - 2*K_Q*MU2*a**2*c3*psi_dot**2*w**2 + 2*MP2*MU2*a**2*c1*w_t**2 + 2*MP2*MU2*a**2*c4*w_t**2 - 2*MP2*MU2*c1*w_z**2 - 2*MU2**2*a**2*c1**2*w_t**2 - 2*MU2**2*a**2*c1*c3*w_t**2 - 2*MU2**2*a**2*c1*c4*w_t**2 - 2*MU2**2*a**2*c3*c4*w_t**2 + MU2**2*c1**2*w_z**2 - MU2**2*c3**2*w_z**2)/(4*a**2*(-MP2 + MU2*c1 + MU2*c3))",
+  "K_vector": "MU2*(c1 + c4)",
+  "G_vector": "MU2*(-2*MP2*c1 + MU2*c1**2 - MU2*c3**2)/(2*(-MP2 + MU2*c1 + MU2*c3))",
+  "friction_w": "3*H",
+  "mass_w": "(2*H**2*MU2*c1 + 2*H**2*MU2*c4 - 3*Hdot*MU2*c2 - Hdot*MU2*c3 + Hdot*MU2*c4 + J0**2*zeta - K_Q*psi_dot**2)/(MU2*(c1 + c4))",
+  "canonical_X_mass": "-(H**2*MU2*c1 + H**2*MU2*c4 + 6*Hdot*MU2*c1 + 12*Hdot*MU2*c2 + 4*Hdot*MU2*c3 + 2*Hdot*MU2*c4 - 4*J0**2*zeta + 4*K_Q*psi_dot**2)/(4*MU2*(c1 + c4))",
+  "G3_mass_w": "2*(13*H**2 + 13*Hdot + 3*J0**2 - 117*psi_dot**2)/13",
+  "G3_mass_X": "-(13*H**2 - 26*Hdot - 24*J0**2 + 936*psi_dot**2)/52",
+  "exact_transverse_Y": "epsilon**2*psi_dot**2*w**2/N**2",
+  "Delta_coefficients": [
+    "0",
+    "0",
+    "w*(2*H*psi_dot*w + psi_ddot*w + psi_dot*w_t)"
+  ],
+  "direct_regulator_quartic": "-b*w**2*(2*H*psi_dot*w + psi_ddot*w + psi_dot*w_t)**2/2",
+  "exact_nonanalytic_force": "-A*a**3*epsilon**2*psi_dot**2*w**2*Abs(epsilon*psi_dot*w)/N**2",
+  "periodic_average_factor": "4/(3*pi)",
+  "local_cusp_coefficient": "A*psi_dot**2*Abs(psi_dot)/f**3",
+  "comoving_X_cusp_coefficient": "A*psi_dot**2*Abs(psi_dot)/(a**(3/2)*f**3)",
+  "scalar_gradient_cusp": "-4*A*Pi**2*k**2*Abs(Pi*k)/(3*pi)",
+  "right_third_derivative": "-6*C_cusp",
+  "left_third_derivative": "+6*C_cusp",
+  "normalized_canonical_fields": {
+    "local": "V=f*w",
+    "comoving": "X=a**(3/2)*f*w",
+    "f_squared": "MU2*(c1+c4)"
+  },
+  "scope": "Full spin-1 quadratic constraint block and leading force regularity; not complete J2/quartic/scattering"
+}

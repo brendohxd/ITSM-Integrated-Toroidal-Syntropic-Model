@@ -27,14 +27,24 @@ The programme strictly adheres to the fail-closed Iron Rule:
 
 Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
 
-## 🧭 Core status (26 September snapshot; R4C1 updated 29 September)
+## Research checkpoint - 8 October 2026
+
+The [dated research checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md)
+links the G3 density, interaction/regularity, tilted-background and finite-k
+scalar evidence, preserved failures, exact-byte manifest and next work.
+G3K passes 744/744 local checks across 120 scalar operators and eight short
+evolutions; negative dust-clock kinetic directions, positive frozen growth
+exponents and the w^2=1/5 shift-chart boundary remain explicit. No physical
+stability, EFT cutoff, healthy full GR, SPARC prediction or gate pass follows.
+
+## 🧭 Core status (R4C1 checkpoint: 8 October; other sectors retain their dated snapshots)
 
 | Gate / Sector | Status | Physical Result |
 |---|---|---|
 | **Core identity** | `CANONICAL; IDENTITY HELD` | Active finite-density condensate, topology, preferred frame and force/reservoir sectors remain distinct; identity-first governance is unchanged. |
 | **MAT-001** | **`BLOCKED`** | M2/M3-U1 fixed-background controls are bounded reductions only; `K_Q` remains `NOT_DERIVED` and `V` remains `NOT_COMPUTED`. |
 | **UVIR-003** | **`IN_PROGRESS`** | Tier-1 closure remains downstream of the MAT matching blocker; no physical cutoff or complete constrained amplitude is promoted. |
-| **Master Tests 1–3 / R4C1** | **`PROVISIONAL CONTINUATION; TESTS NOT COMPLETE`** | The conditional R4C1 candidate has bounded action, variation, background, GR-control, coefficient, scalar-constraint and propagation receipts. S4A/S4B reject instantaneous uniform differential bounds in two specified graph norms; S4C/D identify leading couplings; S4E/F show the complete B1 order-`p²` block is skew; S4G constructs a positive graph-equivalent metric with bounded formal high-`p` energy rate at one initial event. S4H first checked the moving chart and 24 samples; its continuation now derives all 144 moving principal coefficients, conditional slow-block spectrum and a positive pointwise formal metric/energy bound. **The registered homogeneous B1 solution is regular on [0,4], and S4H-U gives a formal uniform reduced-graph estimate only at p>=8*10^13.** PD1 does not establish a physical EFT overlap or healthy GR path. T2P1 derives a compact-`T^3` mean-mode obstruction and validates a conditional static density-contrast solver; C2 shows its response depends on physical `A`, and T2P2 finds a linear arbitrarily weak-source limit at fixed scale with `b>0`. None is the coupled weak-field law or a unique `C_chi`. No finite-time constrained IVP, physical cutoff, healthy GR limit or canonical Test-1/2/3 pass follows. |
+| **Master Tests 1–3 / R4C1** | **`PROVISIONAL CONTINUATION; HOLD_SUBSTANTIVE`** | The conditional G3 chain now includes scalar/density controls, a fixed-metric frame interaction probe, the constrained cubic-vertex obstruction, local tilted homogeneous candidates and the complete closed scalar axis operator. G3T has 268/268 and G3K 744/744 local checks. Negative dust-clock kinetic directions, positive instantaneous real exponents and the w^2=1/5 shift-chart boundary remain explicit. Preferred-Cauchy/domain, full arbitrary-direction sectors, physical scattering/EFT cutoff, healthy GR, weak-field closure and blind coefficient matching remain open. No canonical Test-1/2/3 or SPARC validation pass follows. |
 | **TOP-X4 / KK-001** | **`BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD`** | The branchwise WKB checkpoint remains failed 11/12, exact finite-order transport passed 18/18, the D5 scaffold passed 20/20, the fixed-metric scalar/`chi` operator passed 25/25, and the local scalar-matrix Hadamard-parametrix checkpoint passed 22/22 through `U_2`. The finite-order Route-B diagnostic passed 8/8, the Route-A scalar-state construction passed 10/10 theorem-backed checks, and the scoped curved-Dirac operator passed 13/13 with contract and operator checks separated. `physics_pass=false`; the spinor state, gravity/ghost, parity, determinant, stress, physical Hessian and Rule-9 remain incomplete. |
 | **BBN-001** | **`CONTROL_ONLY / BLOCKED_UPSTREAM_BACKGROUND`** | Table/schema/CAMB plumbing and the action-derived interface contract are checked, but the physical temperature/unit map, early plenum, `Q^\mu`, `S_N` and action-derived `G_eff` are not exported by UVIR-003. |
 | **TOP-001 / CBR-002** | **`HOLD`** | P2/CBR-001 has a portable local-repair candidate and a narrowed instantaneous-closure result; independent-role, sensitivity and noncubic checks remain required. |
@@ -47,7 +57,7 @@ Script `PASS_*` labels in this table describe only their bounded executable
 scope. They do not constitute a physics-gate pass, downstream promotion or
 publication decision.
 
-## 🧪 Latest bounded findings (2026-09-25–2026-09-29)
+## 🧪 Earlier bounded findings (2026-09-25–2026-09-29)
 
 - [Master Tests 1–3 disposition](Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md)
   records conditional action/source identities, the periodic-`T^3` curl

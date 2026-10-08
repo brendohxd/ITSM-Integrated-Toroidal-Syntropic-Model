@@ -1,0 +1,20 @@
+{
+  "K": "(eta - 12)/eta",
+  "U": "-(75*H**2*eta - 900*H**2 + 240*H*eta**3*psi_dot - 2880*H*eta**2*psi_dot + 48*eta**5*psi_dot**2 - 576*eta**4*psi_dot**2 + 16*eta**4*rho_m - 192*eta**3*rho_m + 2700*eta*psi_dot**2 + 900*r_dot**2 - 900*rho_m + 900*u_dot**2 + 900*v_dot**2)/(300*eta)",
+  "mass": "(-75*H**2*eta + 900*H**2 - 240*H*eta**3*psi_dot + 2880*H*eta**2*psi_dot - 48*eta**5*psi_dot**2 + 576*eta**4*psi_dot**2 - 16*eta**4*rho_m + 192*eta**3*rho_m - 2700*eta*psi_dot**2 - 900*r_dot**2 + 900*rho_m - 900*u_dot**2 - 900*v_dot**2)/(300*eta - 3600)",
+  "L0": "(75*H**2*X**2*eta - 900*H**2*X**2 + 240*H*X**2*eta**3*psi_dot - 2880*H*X**2*eta**2*psi_dot + 48*X**2*eta**5*psi_dot**2 - 576*X**2*eta**4*psi_dot**2 + 16*X**2*eta**4*rho_m - 192*X**2*eta**3*rho_m + 2700*X**2*eta*psi_dot**2 + 900*X**2*r_dot**2 - 900*X**2*rho_m + 900*X**2*u_dot**2 + 900*X**2*v_dot**2 + 3600*X*Xddot + 300*Xdot**2*eta)/(600*eta)",
+  "Lred": "(75*H**2*X**2*eta - 900*H**2*X**2 + 240*H*X**2*eta**3*psi_dot - 2880*H*X**2*eta**2*psi_dot + 48*X**2*eta**5*psi_dot**2 - 576*X**2*eta**4*psi_dot**2 + 16*X**2*eta**4*rho_m - 192*X**2*eta**3*rho_m + 2700*X**2*eta*psi_dot**2 + 900*X**2*r_dot**2 - 900*X**2*rho_m + 900*X**2*u_dot**2 + 900*X**2*v_dot**2 + 300*Xdot**2*eta - 3600*Xdot**2)/(600*eta)",
+  "boundary": "6*X*Xdot/eta",
+  "Hamiltonian": "-(75*H**2*X**2*eta**2 - 1800*H**2*X**2*eta + 10800*H**2*X**2 + 240*H*X**2*eta**4*psi_dot - 5760*H*X**2*eta**3*psi_dot + 34560*H*X**2*eta**2*psi_dot - 300*P_X**2*eta**2 + 48*X**2*eta**6*psi_dot**2 - 1152*X**2*eta**5*psi_dot**2 + 16*X**2*eta**5*rho_m + 6912*X**2*eta**4*psi_dot**2 - 384*X**2*eta**4*rho_m + 2304*X**2*eta**3*rho_m + 2700*X**2*eta**2*psi_dot**2 - 32400*X**2*eta*psi_dot**2 + 900*X**2*eta*r_dot**2 - 900*X**2*eta*rho_m + 900*X**2*eta*u_dot**2 + 900*X**2*eta*v_dot**2 - 10800*X**2*r_dot**2 + 10800*X**2*rho_m - 10800*X**2*u_dot**2 - 10800*X**2*v_dot**2)/(600*eta*(eta - 12))",
+  "energy_dot": "X**2*(50400*H**2*eta**3*psi_dot - 604800*H**2*eta**2*psi_dot + 20160*H*eta**5*psi_dot**2 - 241920*H*eta**4*psi_dot**2 + 5600*H*eta**4*rho_m - 67200*H*eta**3*rho_m + 945000*H*eta*psi_dot**2 + 315000*H*r_dot**2 - 252000*H*rho_m + 315000*H*u_dot**2 + 315000*H*v_dot**2 + 448*eta**6*psi_dot*rho_m - 5376*eta**5*psi_dot*rho_m - 302400*eta**3*psi_dot**3 - 100800*eta**2*psi_dot*r_dot**2 - 25200*eta**2*psi_dot*rho_m - 100800*eta**2*psi_dot*u_dot**2 - 100800*eta**2*psi_dot*v_dot**2 + 27000*eta*r**2*u*u_dot + 27000*eta*r**2*v*v_dot + 27000*eta*r*r_dot*u**2 + 27000*eta*r*r_dot*v**2 + 18000*r**3*r_dot + 252000*r*r_dot + 1575*u**5*u_dot + 1575*u**4*v*v_dot + 3150*u**3*u_dot*v**2 + 21000*u**3*u_dot + 3150*u**2*v**3*v_dot + 21000*u**2*v*v_dot + 1575*u*u_dot*v**4 + 21000*u*u_dot*v**2 + 126000*u*u_dot + 1575*v**5*v_dot + 21000*v**3*v_dot + 126000*v*v_dot)/(42000*eta)",
+  "symplectic_form": [
+    [
+      "0",
+      "(eta - 12)/eta"
+    ],
+    [
+      "-(eta - 12)/eta",
+      "0"
+    ]
+  ]
+}

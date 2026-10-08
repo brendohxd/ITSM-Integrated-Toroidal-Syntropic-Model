@@ -1,0 +1,60 @@
+{
+  "2": "MU2*(c1*vt0**2 + c1*vt1**2 + c1*vt2**2 - c1*vx0**2 - c1*vx1**2 - c1*vx2**2 - c1*vy0**2 - c1*vy1**2 - c1*vy2**2 - c1*vz0**2 - c1*vz1**2 - c1*vz2**2 - c2*vx0**2 - 2*c2*vx0*vy1 - 2*c2*vx0*vz2 - c2*vy1**2 - 2*c2*vy1*vz2 - c2*vz2**2 - c3*vx0**2 - 2*c3*vx1*vy0 - 2*c3*vx2*vz0 - c3*vy1**2 - 2*c3*vy2*vz1 - c3*vz2**2 + c4*vt0**2 + c4*vt1**2 + c4*vt2**2)/2",
+  "3": "-MU2*(c2*vt0*vx*vx0 + c2*vt0*vx*vy1 + c2*vt0*vx*vz2 + c2*vt1*vx0*vy + c2*vt1*vy*vy1 + c2*vt1*vy*vz2 + c2*vt2*vx0*vz + c2*vt2*vy1*vz + c2*vt2*vz*vz2 + c3*vt0*vx*vx0 + c3*vt0*vx1*vy + c3*vt0*vx2*vz + c3*vt1*vx*vy0 + c3*vt1*vy*vy1 + c3*vt1*vy2*vz + c3*vt2*vx*vz0 + c3*vt2*vy*vz1 + c3*vt2*vz*vz2 - c4*vt0*vx*vx0 - c4*vt0*vy*vy0 - c4*vt0*vz*vz0 - c4*vt1*vx*vx1 - c4*vt1*vy*vy1 - c4*vt1*vz*vz1 - c4*vt2*vx*vx2 - c4*vt2*vy*vy2 - c4*vt2*vz*vz2)",
+  "4": "-MU2*(c1*vt0**2*vx**2 + 2*c1*vt0*vt1*vx*vy + 2*c1*vt0*vt2*vx*vz + c1*vt1**2*vy**2 + 2*c1*vt1*vt2*vy*vz + c1*vt2**2*vz**2 - c1*vx**2*vx0**2 - c1*vx**2*vy0**2 - c1*vx**2*vz0**2 - 2*c1*vx*vx0*vx1*vy - 2*c1*vx*vx0*vx2*vz - 2*c1*vx*vy*vy0*vy1 - 2*c1*vx*vy*vz0*vz1 - 2*c1*vx*vy0*vy2*vz - 2*c1*vx*vz*vz0*vz2 - c1*vx1**2*vy**2 - 2*c1*vx1*vx2*vy*vz - c1*vx2**2*vz**2 - c1*vy**2*vy1**2 - c1*vy**2*vz1**2 - 2*c1*vy*vy1*vy2*vz - 2*c1*vy*vz*vz1*vz2 - c1*vy2**2*vz**2 - c1*vz**2*vz2**2 + c2*vt0**2*vx**2 + 2*c2*vt0*vt1*vx*vy + 2*c2*vt0*vt2*vx*vz + c2*vt1**2*vy**2 + 2*c2*vt1*vt2*vy*vz + c2*vt2**2*vz**2 + c3*vt0**2*vx**2 + 2*c3*vt0*vt1*vx*vy + 2*c3*vt0*vt2*vx*vz + c3*vt1**2*vy**2 + 2*c3*vt1*vt2*vy*vz + c3*vt2**2*vz**2 - c4*vt0**2*vy**2 - c4*vt0**2*vz**2 + 2*c4*vt0*vt1*vx*vy + 2*c4*vt0*vt2*vx*vz - c4*vt1**2*vx**2 - c4*vt1**2*vz**2 + 2*c4*vt1*vt2*vy*vz - c4*vt2**2*vx**2 - c4*vt2**2*vy**2 - c4*vx**2*vx0**2 - c4*vx**2*vx1**2 - c4*vx**2*vx2**2 - 2*c4*vx*vx0*vy*vy0 - 2*c4*vx*vx0*vz*vz0 - 2*c4*vx*vx1*vy*vy1 - 2*c4*vx*vx1*vz*vz1 - 2*c4*vx*vx2*vy*vy2 - 2*c4*vx*vx2*vz*vz2 - c4*vy**2*vy0**2 - c4*vy**2*vy1**2 - c4*vy**2*vy2**2 - 2*c4*vy*vy0*vz*vz0 - 2*c4*vy*vy1*vz*vz1 - 2*c4*vy*vy2*vz*vz2 - c4*vz**2*vz0**2 - c4*vz**2*vz1**2 - c4*vz**2*vz2**2)/2",
+  "canonical": {
+    "2": "(c1*vt0**2 + c1*vt1**2 + c1*vt2**2 - c1*vx0**2 - c1*vx1**2 - c1*vx2**2 - c1*vy0**2 - c1*vy1**2 - c1*vy2**2 - c1*vz0**2 - c1*vz1**2 - c1*vz2**2 - c2*vx0**2 - 2*c2*vx0*vy1 - 2*c2*vx0*vz2 - c2*vy1**2 - 2*c2*vy1*vz2 - c2*vz2**2 - c3*vx0**2 - 2*c3*vx1*vy0 - 2*c3*vx2*vz0 - c3*vy1**2 - 2*c3*vy2*vz1 - c3*vz2**2 + c4*vt0**2 + c4*vt1**2 + c4*vt2**2)/(2*(c1 + c4))",
+    "3": "-(c2*vt0*vx*vx0 + c2*vt0*vx*vy1 + c2*vt0*vx*vz2 + c2*vt1*vx0*vy + c2*vt1*vy*vy1 + c2*vt1*vy*vz2 + c2*vt2*vx0*vz + c2*vt2*vy1*vz + c2*vt2*vz*vz2 + c3*vt0*vx*vx0 + c3*vt0*vx1*vy + c3*vt0*vx2*vz + c3*vt1*vx*vy0 + c3*vt1*vy*vy1 + c3*vt1*vy2*vz + c3*vt2*vx*vz0 + c3*vt2*vy*vz1 + c3*vt2*vz*vz2 - c4*vt0*vx*vx0 - c4*vt0*vy*vy0 - c4*vt0*vz*vz0 - c4*vt1*vx*vx1 - c4*vt1*vy*vy1 - c4*vt1*vz*vz1 - c4*vt2*vx*vx2 - c4*vt2*vy*vy2 - c4*vt2*vz*vz2)/(f*(c1 + c4))",
+    "4": "-(c1*vt0**2*vx**2 + 2*c1*vt0*vt1*vx*vy + 2*c1*vt0*vt2*vx*vz + c1*vt1**2*vy**2 + 2*c1*vt1*vt2*vy*vz + c1*vt2**2*vz**2 - c1*vx**2*vx0**2 - c1*vx**2*vy0**2 - c1*vx**2*vz0**2 - 2*c1*vx*vx0*vx1*vy - 2*c1*vx*vx0*vx2*vz - 2*c1*vx*vy*vy0*vy1 - 2*c1*vx*vy*vz0*vz1 - 2*c1*vx*vy0*vy2*vz - 2*c1*vx*vz*vz0*vz2 - c1*vx1**2*vy**2 - 2*c1*vx1*vx2*vy*vz - c1*vx2**2*vz**2 - c1*vy**2*vy1**2 - c1*vy**2*vz1**2 - 2*c1*vy*vy1*vy2*vz - 2*c1*vy*vz*vz1*vz2 - c1*vy2**2*vz**2 - c1*vz**2*vz2**2 + c2*vt0**2*vx**2 + 2*c2*vt0*vt1*vx*vy + 2*c2*vt0*vt2*vx*vz + c2*vt1**2*vy**2 + 2*c2*vt1*vt2*vy*vz + c2*vt2**2*vz**2 + c3*vt0**2*vx**2 + 2*c3*vt0*vt1*vx*vy + 2*c3*vt0*vt2*vx*vz + c3*vt1**2*vy**2 + 2*c3*vt1*vt2*vy*vz + c3*vt2**2*vz**2 - c4*vt0**2*vy**2 - c4*vt0**2*vz**2 + 2*c4*vt0*vt1*vx*vy + 2*c4*vt0*vt2*vx*vz - c4*vt1**2*vx**2 - c4*vt1**2*vz**2 + 2*c4*vt1*vt2*vy*vz - c4*vt2**2*vx**2 - c4*vt2**2*vy**2 - c4*vx**2*vx0**2 - c4*vx**2*vx1**2 - c4*vx**2*vx2**2 - 2*c4*vx*vx0*vy*vy0 - 2*c4*vx*vx0*vz*vz0 - 2*c4*vx*vx1*vy*vy1 - 2*c4*vx*vx1*vz*vz1 - 2*c4*vx*vx2*vy*vy2 - 2*c4*vx*vx2*vz*vz2 - c4*vy**2*vy0**2 - c4*vy**2*vy1**2 - c4*vy**2*vy2**2 - 2*c4*vy*vy0*vz*vz0 - 2*c4*vy*vy1*vz*vz1 - 2*c4*vy*vy2*vz*vz2 - c4*vz**2*vz0**2 - c4*vz**2*vz1**2 - c4*vz**2*vz2**2)/(2*f**2*(c1 + c4))"
+  },
+  "quadratic_kernel": [
+    [
+      "-(c1*kx**2 + c1*ky**2 + c1*kz**2 - c1*omega**2 + c2*kx**2 + c3*kx**2 - c4*omega**2)/(c1 + c4)",
+      "-kx*ky*(c2 + c3)/(c1 + c4)",
+      "-kx*kz*(c2 + c3)/(c1 + c4)"
+    ],
+    [
+      "-kx*ky*(c2 + c3)/(c1 + c4)",
+      "-(c1*kx**2 + c1*ky**2 + c1*kz**2 - c1*omega**2 + c2*ky**2 + c3*ky**2 - c4*omega**2)/(c1 + c4)",
+      "-ky*kz*(c2 + c3)/(c1 + c4)"
+    ],
+    [
+      "-kx*kz*(c2 + c3)/(c1 + c4)",
+      "-ky*kz*(c2 + c3)/(c1 + c4)",
+      "-(c1*kx**2 + c1*ky**2 + c1*kz**2 - c1*omega**2 + c2*kz**2 + c3*kz**2 - c4*omega**2)/(c1 + c4)"
+    ]
+  ],
+  "cubic_WWV": [
+    [
+      "(c2*p1x*w1 + c2*p1x*w2 + c2*p2x*w1 + c2*p2x*w2 + c3*p1x*w1 + c3*p1x*w2 + c3*p2x*w1 + c3*p2x*w2 + c4*p1x*w2 + c4*p2x*w1)/(f*(c1 + c4))"
+    ],
+    [
+      "0"
+    ],
+    [
+      "(c2*p1z*w1 + c2*p1z*w2 + c2*p2z*w1 + c2*p2z*w2 + c3*p1z*w1 + c3*p1z*w2 + c3*p2z*w1 + c3*p2z*w2 + c4*p1z*w2 + c4*p2z*w1)/(f*(c1 + c4))"
+    ]
+  ],
+  "quartic_WWWW": "-2*(c1*kx0*kx1 + c1*kx0*kx2 + c1*kx0*kx3 + c1*kx1*kx2 + c1*kx1*kx3 + c1*kx2*kx3 + c1*kz0*kz1 + c1*kz0*kz2 + c1*kz0*kz3 + c1*kz1*kz2 + c1*kz1*kz3 + c1*kz2*kz3 - c1*omega0*omega1 - c1*omega0*omega2 - c1*omega0*omega3 - c1*omega1*omega2 - c1*omega1*omega3 - c1*omega2*omega3 - c2*omega0*omega1 - c2*omega0*omega2 - c2*omega0*omega3 - c2*omega1*omega2 - c2*omega1*omega3 - c2*omega2*omega3 - c3*omega0*omega1 - c3*omega0*omega2 - c3*omega0*omega3 - c3*omega1*omega2 - c3*omega1*omega3 - c3*omega2*omega3)/(f**2*(c1 + c4))",
+  "transverse_probe_speed_squared": "c1/(c1 + c4)",
+  "longitudinal_probe_speed_squared": "(c1 + c2 + c3)/(c1 + c4)",
+  "canonical_scale_squared": "eta*M_P**2/6",
+  "probe_contact": "8*p**2/(3*f**2)",
+  "probe_exchange": {
+    "s": "0",
+    "t": "p**2*(cos_theta + 1)/(25*f**2*(cos_theta - 1))",
+    "u": "p**2*(cos_theta - 1)/(25*f**2*(cos_theta + 1))"
+  },
+  "probe_total": "2*p**2*(103*cos_theta**2 - 97)/(75*f**2*(cos_theta - 1)*(cos_theta + 1))",
+  "probe_total_eta": "4*p**2*(103*cos_theta**2 - 97)/(25*M_P**2*eta*(cos_theta - 1)*(cos_theta + 1))",
+  "ninety_degree_amplitude": "388*p**2/(25*M_P**2*eta)",
+  "ninety_degree_amplitude_one_scale": "5*sqrt(97)*M_P*sqrt(eta)/194",
+  "lorentz_control_total": "0",
+  "dimension": {
+    "p": 1,
+    "M_P": 1,
+    "f": 1,
+    "amplitude": 0
+  },
+  "scope": "Fixed-Minkowski-metric unit-frame probe, not coupled finite-density scattering"
+}

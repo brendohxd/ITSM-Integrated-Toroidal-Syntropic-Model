@@ -17,3 +17,17 @@
 Analysis/MasterTests/outputs/** -text -eol
 
 # Nested projects may provide more-specific rules in their own attributes.
+
+
+# Exact-byte research checkpoint evidence and append-only provenance.
+# Frozen source/report digests must survive checkout like result receipts.
+Analysis/MasterTests/test_01_r4c1_*.py -text -eol
+Theory/Gates/RES-001/RES001_R4C1_*.md -text -eol
+Analysis/LiteratureControls/** -text -eol
+Theory/Gates/ITSM_MASTER_TESTS_01_03_REQUIREMENT_DISPOSITION_2026-09-30.md -text -eol
+Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-10-07.md -text -eol
+Theory/Verification/ITSM_ALPHAXIV_*.md -text -eol
+Theory/Verification/ITSM_SPARC_IDENTIFIABILITY_*.md -text -eol
+Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md -text -eol
+Theory/Gates/RECOVERY_SESSION_WORKLOG.md -text -eol
+*.sha256 -text -eol

@@ -2,6 +2,20 @@
 
 Multi-page research site published at https://itsm-cosmology.com.
 
+## Repository research checkpoint - 8 October 2026
+
+The recovery branch now contains the
+[conditional G3 checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md),
+covering density reconstruction, interaction/regularity limits, tilted
+homogeneous candidates and their coupled finite-k scalar operator.
+Its exact-byte evidence manifest and verifier distinguish research
+reproducibility from physical validation. Canonical Tests 1-3 remain
+HOLD_SUBSTANTIVE; physical stability/cutoff, healthy full GR and SPARC
+predictions remain open. Rule-9 review remains DEFERRED, not cleared.
+
+This is repository documentation. The public-page audit below remains
+its dated snapshot; a branch push does not dispatch the Pages workflow.
+
 ## Current public status
 
 Audited 26 September 2026 against the v12.0-alpha.12 recovery authority and

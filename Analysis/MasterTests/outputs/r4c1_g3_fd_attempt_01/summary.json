@@ -1,0 +1,285 @@
+{
+  "schema": "r4c1-g3-fd-refinement-v1",
+  "control": "R4C1-G3-FD",
+  "validation": "PASS_SUPPLEMENTARY_REFINEMENT",
+  "passed": 18,
+  "total": 18,
+  "checks": [
+    {
+      "name": "original_failure_preserved",
+      "passed": true,
+      "value": [
+        {
+          "name": "eta1_independent_fd_balances",
+          "passed": false,
+          "value": 1.1005635230674148e-07,
+          "criterion": "<1e-7"
+        }
+      ],
+      "criterion": "original 801-point balance failure retained"
+    },
+    {
+      "name": "DOP853_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "DOP853_stored_trajectory_agreement",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<1e-12"
+    },
+    {
+      "name": "original_801_failure_reproduced",
+      "passed": true,
+      "value": 1.1005635230674148e-07,
+      "criterion": "original 1e-7 bound still fails at 801 points"
+    },
+    {
+      "name": "DOP853_1601_balance_bound",
+      "passed": true,
+      "value": 7.143422960474536e-09,
+      "criterion": "<1e-7 unchanged bound"
+    },
+    {
+      "name": "DOP853_1601_spatial_metric_bound",
+      "passed": true,
+      "value": 1.6296227355898917e-09,
+      "criterion": "<1e-7 unchanged bound"
+    },
+    {
+      "name": "DOP853_3201_balance_bound",
+      "passed": true,
+      "value": 4.5481677992152503e-10,
+      "criterion": "<1e-7 unchanged bound"
+    },
+    {
+      "name": "DOP853_3201_spatial_metric_bound",
+      "passed": true,
+      "value": 2.645697339181299e-10,
+      "criterion": "<1e-7 unchanged bound"
+    },
+    {
+      "name": "DOP853_801_1601_refinement",
+      "passed": true,
+      "value": 15.406668891887994,
+      "criterion": ">=4 or endpoint residuals both<1e-9"
+    },
+    {
+      "name": "DOP853_1601_3201_refinement",
+      "passed": true,
+      "value": 15.706155260382161,
+      "criterion": ">=4 or endpoint residuals both<1e-9"
+    },
+    {
+      "name": "Radau_completed",
+      "passed": true,
+      "value": "The solver successfully reached the end of the integration interval.",
+      "criterion": "t=4 reached"
+    },
+    {
+      "name": "Radau_stored_trajectory_agreement",
+      "passed": true,
+      "value": 0.0,
+      "criterion": "<1e-12"
+    },
+    {
+      "name": "Radau_1601_balance_bound",
+      "passed": true,
+      "value": 7.14333131714804e-09,
+      "criterion": "<1e-7 unchanged bound"
+    },
+    {
+      "name": "Radau_1601_spatial_metric_bound",
+      "passed": true,
+      "value": 1.6347990227855377e-09,
+      "criterion": "<1e-7 unchanged bound"
+    },
+    {
+      "name": "Radau_3201_balance_bound",
+      "passed": true,
+      "value": 4.5432802876960646e-10,
+      "criterion": "<1e-7 unchanged bound"
+    },
+    {
+      "name": "Radau_3201_spatial_metric_bound",
+      "passed": true,
+      "value": 3.554622002146768e-10,
+      "criterion": "<1e-7 unchanged bound"
+    },
+    {
+      "name": "Radau_801_1601_refinement",
+      "passed": true,
+      "value": 15.407099175824053,
+      "criterion": ">=4 or endpoint residuals both<1e-9"
+    },
+    {
+      "name": "Radau_1601_3201_refinement",
+      "passed": true,
+      "value": 15.722849713880372,
+      "criterion": ">=4 or endpoint residuals both<1e-9"
+    }
+  ],
+  "original_validation": "FAIL_LOCAL_CHECKS",
+  "original_passed": 112,
+  "original_total": 113,
+  "original_failed_checks": [
+    {
+      "name": "eta1_independent_fd_balances",
+      "passed": false,
+      "value": 1.1005635230674148e-07,
+      "criterion": "<1e-7"
+    }
+  ],
+  "original_receipt_changed": false,
+  "post_failure_study": true,
+  "parameters": {
+    "MP2": 1.0,
+    "MU2": 0.6666666666666666,
+    "c1": 0.2,
+    "c2": -0.14583333333333334,
+    "c3": -0.0125,
+    "c4": 0.05,
+    "K": 3.0,
+    "A": 0.2857142857142857,
+    "b": 0.45454545454545453,
+    "zeta": 0.07692307692307693,
+    "beta": 0.4,
+    "gr": 0.42857142857142855,
+    "m2": 1.0,
+    "l4": 0.3333333333333333,
+    "l6": 0.2,
+    "cutoff": 2.0,
+    "mr2": 2.0,
+    "lr": 0.14285714285714285,
+    "vacuum": 0.0
+  },
+  "methods": [
+    {
+      "method": "DOP853",
+      "stored_trajectory_disagreement": 0.0,
+      "grid_residuals": [
+        {
+          "points": 801,
+          "dt": 0.005,
+          "balance_maxima": {
+            "P": 4.82996974881199e-08,
+            "R": 1.1005635230674148e-07,
+            "m": 7.562140800982294e-09
+          },
+          "maximum": 1.1005635230674148e-07,
+          "full_spatial_metric_fd_residual": 2.4275933854062682e-08
+        },
+        {
+          "points": 1601,
+          "dt": 0.0025,
+          "balance_maxima": {
+            "P": 3.1450167237706625e-09,
+            "R": 7.143422960474536e-09,
+            "m": 4.964192067453031e-10
+          },
+          "maximum": 7.143422960474536e-09,
+          "full_spatial_metric_fd_residual": 1.6296227355898917e-09
+        },
+        {
+          "points": 3201,
+          "dt": 0.00125,
+          "balance_maxima": {
+            "P": 2.006674604578129e-10,
+            "R": 4.5481677992152503e-10,
+            "m": 6.152463577832275e-11
+          },
+          "maximum": 4.5481677992152503e-10,
+          "full_spatial_metric_fd_residual": 2.645697339181299e-10
+        }
+      ],
+      "improvement_ratios": [
+        15.406668891887994,
+        15.706155260382161
+      ]
+    },
+    {
+      "method": "Radau",
+      "stored_trajectory_disagreement": 0.0,
+      "grid_residuals": [
+        {
+          "points": 801,
+          "dt": 0.005,
+          "balance_maxima": {
+            "P": 4.8300206791069906e-08,
+            "R": 1.1005801404906972e-07,
+            "m": 7.562318254681429e-09
+          },
+          "maximum": 1.1005801404906972e-07,
+          "full_spatial_metric_fd_residual": 2.4277425762805843e-08
+        },
+        {
+          "points": 1601,
+          "dt": 0.0025,
+          "balance_maxima": {
+            "P": 3.147003545392779e-09,
+            "R": 7.14333131714804e-09,
+            "m": 4.977931256682542e-10
+          },
+          "maximum": 7.14333131714804e-09,
+          "full_spatial_metric_fd_residual": 1.6347990227855377e-09
+        },
+        {
+          "points": 3201,
+          "dt": 0.00125,
+          "balance_maxima": {
+            "P": 2.2086499802819435e-10,
+            "R": 4.5432802876960646e-10,
+            "m": 1.0392847457511283e-10
+          },
+          "maximum": 4.5432802876960646e-10,
+          "full_spatial_metric_fd_residual": 3.554622002146768e-10
+        }
+      ],
+      "improvement_ratios": [
+        15.407099175824053,
+        15.722849713880372
+      ]
+    }
+  ],
+  "source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FD_REFINEMENT_CONTRACT_2026-09-30.md": "44ff0e69324dded972029696c445a70f76b94b856771e5e0302fa66b94d722a4",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_family.py": "dfdec7c78ae4e57f247b2592b611e79d808d708813358a6dac015c387a7d9440"
+  },
+  "transitive_source_sha256": {
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740"
+  },
+  "script_sha256": "9992b5277b52efc955e778a7b0aa675a3f3d0d2bbaf662d4aef63865d009f4a7",
+  "runtime": {
+    "python": "3.13.9",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "status": "SUPPLEMENTARY_FD_ERROR_DIAGNOSIS_ORIGINAL_RECEIPT_RETAINED",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "healthy_continuous_GR_limit_verified": false,
+  "full_interacting_Hessian_verified": false,
+  "physical_EFT_cutoff_derived": false,
+  "canonical_Test1_pass": false,
+  "MAT-001": "BLOCKED",
+  "UVIR-003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED"
+}

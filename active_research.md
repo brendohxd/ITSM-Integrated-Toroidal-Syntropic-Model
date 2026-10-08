@@ -7,6 +7,30 @@
 
 ---
 
+## R4C1 research checkpoint and next work - 8 October 2026
+
+The [checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md)
+is the newest conditional R4C1 evidence/navigation update; the canonical
+authority baseline and other dated gate snapshots below remain unchanged.
+
+Prepared density reconstruction is numerically accurate in its declared
+scope. The homogeneous G3 ordinary cubic Taylor vertex remains obstructed.
+Nearby tilted homogeneous candidates and their coupled scalar-axis
+operator are now executable: G3T 268/268 and G3K 744/744 local checks.
+G3K retains negative kinetic directions, positive frozen exponents and
+the exact w^2=1/5 shift-chart boundary; physical interpretation is open.
+G3N1 separately supports a frozen classical amplitude ODE while rejecting
+single-mode nonlinear closure.
+
+**Next bounded priority:** coupled preferred-time characteristic/Cauchy
+domain and a constraint chart for that boundary. Arbitrary directions,
+vector/tensor modes, global preferred leaves, physical scattering/cutoff,
+healthy full GR, weak-field matching and blind coefficient determination
+remain required before SPARC prediction/MCMC promotion. Research is
+PROCEED_PROVISIONALLY; review DEFERRED; physics_pass=false; gate_effect=NONE;
+canonical Tests 1-3 HOLD_SUBSTANTIVE. Preserved failed attempts are evidence,
+not overwritten by passing follow-ups.
+
 ## Rule-9 review deferred — 25 September 2026
 
 The operator has deferred all outstanding Rule-9 reviews. Apply the

@@ -2974,3 +2974,40 @@ EFT domain, projection factor, `C_chi` or `a0(z)` follows.
 `physics_pass=false`, `gate_effect=NONE`, `Rule9_cleared=false`;
 R9-MT2-T2P2 and inherited reviews deferred. Tests 1–3, MAT-001,
 UVIR-003, Stage 4A and publication holds remain unchanged.
+
+
+## 2026-10-08 - Conditional G3 research checkpoint and version-control authority
+
+Gate: conditional R4C1-v1 / Master Tests 1-3; physics_pass=false; gate_effect=NONE.
+
+**What changed:** the operator requested a commit and push of the current
+research checkpoint and relevant documentation. The dated
+[checkpoint](../Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md)
+collects the G3 density, interaction/regularity, tilted-background,
+finite-k scalar and separate frozen classical-amplitude records.
+The exact-byte manifest and integrity checker cover the source-pin
+closure, evidence artifacts, preserved attempts and updated navigation.
+
+**Evidence:** G3T 268/268 and G3K 744/744 are bounded local checks.
+G3K retains negative dust-clock kinetic directions, positive frozen
+exponents and the w^2=1/5 shift-chart boundary. Preferred-Cauchy/characteristic
+analysis, physical scattering/cutoff, arbitrary directions/full sectors,
+healthy GR and weak-field/coefficient matching remain required.
+Canonical Tests 1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS;
+K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 unchanged.
+Review remains DEFERRED and Rule9_cleared=false.
+
+**Provenance decision:** four inherited tracked scalar/background
+artifacts have committed blobs different from the current frozen
+input bytes. Stage their exact pinned bytes and matching sidecars;
+do not change scientific values or archived input hashes. Protect
+pinned sources/receipts and append-only records from Git newline
+conversion; verify the index and committed blobs explicitly.
+
+**What was abandoned or superseded:** no original failure, corrected
+source, report or numerical artifact is deleted or relabelled.
+Private .local logs, vault material, raw chats, unrelated paper/build/PDF
+work and quarantined observational outputs are outside this checkpoint.
+The Git history/remote determine commit and push completion. This
+operator authorization does not grant journal upload, Pages deployment,
+provider dispatch, canonical promotion or review clearance.
