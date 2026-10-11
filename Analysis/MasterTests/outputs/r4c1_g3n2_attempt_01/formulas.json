@@ -1,0 +1,176 @@
+{
+  "Frobenius_dt_dy_dz_coefficient": "(sqrt(w(t, z)**2 + 1)*w(t, z)**2*Derivative(B(t, z), z) + N(t)*Derivative(w(t, z), z))*a(t)/sqrt(w(t, z)**2 + 1)",
+  "Gram_definition": "<W^2 e_m e_n>; average over chi in [0,2pi]",
+  "Gram_positivity_argument": "For any nonzero finite basis polynomial q, <W^2*q^2>>0: W is a nonzero finite Fourier polynomial, nonzero on an open interval; q cannot vanish on that entire interval unless all coefficients vanish.",
+  "constraint_retained_Frobenius": "(-epsilon**3*eta*W(t, z)**2*Derivative(W(t, z), z)/(8 - eta) + epsilon*N(t)*Derivative(W(t, z), z)/sqrt(epsilon**2*W(t, z)**2 + 1))*a(t)",
+  "direct_auxiliary_response": "z2=-[psi_dot*W*W_dot+(psi_ddot+2H*psi_dot)*W^2]; all harmonics0,2,4,6; not full J2",
+  "inverse_leading_limit": "epsilon^4*(H^-1)_zz -> -K/(a^3*b^2/N)*G^-2; nonzero for fixed positive K,b,a,N",
+  "leading_Frobenius": "a*N*epsilon*partial_z(W); later O(epsilon^2) response cannot cancel it",
+  "local_clock_obstruction": "theta=-mu*dT implies theta wedge dtheta=0; a nonzero computed three-form excludes that local U-orthogonal clock, not other time choices.",
+  "nonclaims": [
+    "No full coupled nonlinear field evolution",
+    "No all-action or all-classical no-go",
+    "No physical ghost or cutoff",
+    "No hypersurface-orthogonal replacement of independent U",
+    "No C2 dust-clock/G3V cosmic-clock chart conflation"
+  ],
+  "profile_Gram_controls": [
+    {
+      "Gram": [
+        [
+          "1/2",
+          "sqrt(2)/4",
+          "0",
+          "0"
+        ],
+        [
+          "sqrt(2)/4",
+          "1/2",
+          "1/4",
+          "0"
+        ],
+        [
+          "0",
+          "1/4",
+          "1/2",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          "1/4",
+          "1/2"
+        ]
+      ],
+      "leading_minors": [
+        "1/2",
+        "1/8",
+        "1/32",
+        "1/128"
+      ],
+      "rho": "0"
+    },
+    {
+      "Gram": [
+        [
+          "5/9",
+          "sqrt(2)/12",
+          "-sqrt(2)/6",
+          "sqrt(2)/36"
+        ],
+        [
+          "sqrt(2)/12",
+          "7/18",
+          "1/9",
+          "-1/6"
+        ],
+        [
+          "-sqrt(2)/6",
+          "1/9",
+          "5/9",
+          "1/12"
+        ],
+        [
+          "sqrt(2)/36",
+          "-1/6",
+          "1/12",
+          "5/9"
+        ]
+      ],
+      "leading_minors": [
+        "5/9",
+        "131/648",
+        "151/1944",
+        "8407/279936"
+      ],
+      "rho": "-1/3"
+    },
+    {
+      "Gram": [
+        [
+          "5/9",
+          "5*sqrt(2)/12",
+          "sqrt(2)/6",
+          "sqrt(2)/36"
+        ],
+        [
+          "5*sqrt(2)/12",
+          "13/18",
+          "4/9",
+          "1/6"
+        ],
+        [
+          "sqrt(2)/6",
+          "4/9",
+          "5/9",
+          "5/12"
+        ],
+        [
+          "sqrt(2)/36",
+          "1/6",
+          "5/12",
+          "5/9"
+        ]
+      ],
+      "leading_minors": [
+        "5/9",
+        "35/648",
+        "7/1944",
+        "55/279936"
+      ],
+      "rho": "1/3"
+    },
+    {
+      "Gram": [
+        [
+          "1",
+          "3*sqrt(2)/4",
+          "sqrt(2)/2",
+          "sqrt(2)/4"
+        ],
+        [
+          "3*sqrt(2)/4",
+          "3/2",
+          "1",
+          "1/2"
+        ],
+        [
+          "sqrt(2)/2",
+          "1",
+          "1",
+          "3/4"
+        ],
+        [
+          "sqrt(2)/4",
+          "1/2",
+          "3/4",
+          "1"
+        ]
+      ],
+      "leading_minors": [
+        "1",
+        "3/8",
+        "1/8",
+        "5/128"
+      ],
+      "rho": "1"
+    }
+  ],
+  "psi_z_basis_modes": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "rank_scope": "Raw psi/z velocity block before complete nonlinear scalar/tensor/frame/dust constraint response; not the physical reduced Hessian or ghost spectrum.",
+  "raw_block_determinant": "det H=det(C)^2=(b*a^3/N)^8*epsilon^16*det(G)^2, for four psi and four z modes",
+  "raw_block_inverse": "H^-1=[0,(C^T)^-1;C^-1,-C^-1*Apsi*(C^T)^-1]",
+  "raw_regulator_time_term": "-a_ref**3*b*psi_velocity*w_field**2*z_dot/N_ref",
+  "shift_sigma_G3": "-eta/(8 - eta)",
+  "theta": [
+    "-sqrt(w(t, z)**2 + 1)*N(t) + B(t, z)*w(t, z)",
+    "0",
+    "a(t)*w(t, z)",
+    "0"
+  ]
+}

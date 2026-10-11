@@ -1,0 +1,2955 @@
+{
+  "K_Q": "NOT_DERIVED",
+  "MAT-001": "BLOCKED",
+  "Rule9_cleared": false,
+  "Stage4A": "CLOSED",
+  "TOP-X4": "UNCHANGED",
+  "UVIR-003": "IN_PROGRESS",
+  "V": "NOT_COMPUTED",
+  "all_action_no_go": false,
+  "all_norms_illposedness_proven": false,
+  "artifacts": {
+    "formulas.json": "b4dabad6b619273c32c421ced36b341306d9f5309eb253797e8244c8b17d1029",
+    "samples.json": "fa984ed90b95a98f7bfbdc46883115c94130bd31e8569560339c2586f12b1add"
+  },
+  "canonical_tests_1_to_3": "HOLD_SUBSTANTIVE",
+  "checks": [
+    {
+      "criterion": "exact",
+      "name": "source_pins_and_available_sidecars_before",
+      "passed": true,
+      "value": {
+        "absent": [
+          "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FORCE_COMPLETION_OPTIONS.md",
+          "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_NONZERO_GRADIENT_FORCE_LOCAL.md",
+          "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md"
+        ],
+        "available_sidecars": 87,
+        "pins": 90
+      }
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "no_shift_B_mass",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "no_shift_B_q_couplings",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "no_shift_B_velocity_couplings",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "exact",
+      "name": "no_B_velocity_in_frozen_action",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "exact_regulator_principal_psi_z",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "exact_regulator_principal_z_diagonal",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "exact_regulator_no_other_principal_columns",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "quadratic_principal_polynomial",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "principal_regulator_kinetic_row",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "exact_full_characteristic_factor",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "exact_transport_null_direction",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "exact_shift_rank_surface",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "unreduced_shift_boundary_only",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "only eta,w",
+      "name": "transport_minors_background_independent",
+      "passed": true,
+      "value": [
+        "eta",
+        "w"
+      ]
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "exact_kinetic_regulator_factor",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "exact",
+      "name": "kinetic_minor_symbol_dependencies",
+      "passed": true,
+      "value": [
+        "eta",
+        "u",
+        "v",
+        "w"
+      ]
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "healthy_comparator_principal_factor",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "healthy_comparator_transport_minor",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "aligned_regulator_has_no_time_row",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "healthy_preferred_elimination_dispersion",
+      "passed": true,
+      "value": "zero_exact"
+    },
+    {
+      "criterion": "exact",
+      "name": "parent_matrix_shape",
+      "passed": true,
+      "value": [
+        120,
+        5,
+        7,
+        7
+      ]
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_0_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_0_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_0_independent_archive_principal_match",
+      "passed": true,
+      "value": 2.90399478491809e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_0_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "-78848",
+        "minor6": "-946176"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_0_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "-18887/260"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_0_six_field_rank_margin",
+      "passed": true,
+      "value": 0.04460997418692074
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_0_explicit_principal_null_direction",
+      "passed": true,
+      "value": 7.373863907148096e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_0_companion_kernel_relation",
+      "passed": true,
+      "value": 4.893772985166853e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_0_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 7.226796188795696e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_0_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_1_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_1_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_1_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.1940210775116844e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_1_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "29360128",
+        "minor6": "1409286144"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_1_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "24357/884"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_1_six_field_rank_margin",
+      "passed": true,
+      "value": 0.2519251790746682
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_1_explicit_principal_null_direction",
+      "passed": true,
+      "value": 9.225639600075125e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_1_companion_kernel_relation",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_1_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 4.9425625689861624e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_1_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_2_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_2_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_2_independent_archive_principal_match",
+      "passed": true,
+      "value": 6.84484395488722e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_2_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "1322849927168/59",
+        "minor6": "253987186016256/59"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_2_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "4146967/199420"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_2_six_field_rank_margin",
+      "passed": true,
+      "value": 0.531102171852949
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_2_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.8899365288019607e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_2_companion_kernel_relation",
+      "passed": true,
+      "value": 1.50794177664755e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_2_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 3.0288329358180444e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_2_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_3_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_3_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_3_independent_archive_principal_match",
+      "passed": true,
+      "value": 8.445501365340381e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_3_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "5418393301680128/251",
+        "minor6": "4161326055690338304/251"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_3_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "65789207/3354364"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_3_six_field_rank_margin",
+      "passed": true,
+      "value": 0.7329468369225061
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_3_explicit_principal_null_direction",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_3_companion_kernel_relation",
+      "passed": true,
+      "value": 7.889023929301317e-18
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_3_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 5.202894367935219e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_3_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_4_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_4_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_4_independent_archive_principal_match",
+      "passed": true,
+      "value": 2.8237186484984967e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_4_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "-93248",
+        "minor6": "-279744"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_4_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "-5845531/66560"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_4_six_field_rank_margin",
+      "passed": true,
+      "value": 0.045368038816194445
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_4_explicit_principal_null_direction",
+      "passed": true,
+      "value": 7.501324673738514e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_4_companion_kernel_relation",
+      "passed": true,
+      "value": 4.388844056509727e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_4_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 3.0149840702476746e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_4_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_5_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_5_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_5_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.1743604621712404e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_5_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "381943808/11",
+        "minor6": "4583325696/11"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_5_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "81572495/2489344"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_5_six_field_rank_margin",
+      "passed": true,
+      "value": 0.2540903390176967
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_5_explicit_principal_null_direction",
+      "passed": true,
+      "value": 9.262660788988533e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_5_companion_kernel_relation",
+      "passed": true,
+      "value": 5.1156207556628923e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_5_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 1.069758431845158e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_5_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_6_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_6_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_6_independent_archive_principal_match",
+      "passed": true,
+      "value": 3.4447826594273e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_6_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "1564441837568/59",
+        "minor6": "75093208203264/59"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_6_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "1257281631/51051520"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_6_six_field_rank_margin",
+      "passed": true,
+      "value": 0.5333680343575156
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_6_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.8945494599533045e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_6_companion_kernel_relation",
+      "passed": true,
+      "value": 1.5079796071624245e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_6_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 1.3862754531089535e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_6_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_7_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_7_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_7_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.517298671306222e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_7_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "6407953766678528/251",
+        "minor6": "1230327123202277376/251"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_7_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "19924938655/858717184"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_7_six_field_rank_margin",
+      "passed": true,
+      "value": 0.7345097516715423
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_7_explicit_principal_null_direction",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_7_companion_kernel_relation",
+      "passed": true,
+      "value": 1.5778001683080292e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_7_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 1.817420796755065e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_7_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_8_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_8_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_8_independent_archive_principal_match",
+      "passed": true,
+      "value": 6.010850147322776e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_8_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "-97028",
+        "minor6": "-72771"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_8_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "-1560186747/17039360"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_8_six_field_rank_margin",
+      "passed": true,
+      "value": 0.045505103720774535
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_8_explicit_principal_null_direction",
+      "passed": true,
+      "value": 7.524981217499779e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_8_companion_kernel_relation",
+      "passed": true,
+      "value": 1.1617399918892947e-16
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_8_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 8.222514627858212e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_8_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_9_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_9_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_9_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.237912312787643e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_9_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "397426688/11",
+        "minor6": "1192280064/11"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_9_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "1976404397/57933824"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_9_six_field_rank_margin",
+      "passed": true,
+      "value": 0.25450300111477847
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_9_explicit_principal_null_direction",
+      "passed": true,
+      "value": 9.26924264675739e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_9_companion_kernel_relation",
+      "passed": true,
+      "value": 5.115973451635327e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_9_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 2.1259736166640383e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_9_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_10_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_10_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_10_independent_archive_principal_match",
+      "passed": true,
+      "value": 7.374743394133465e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_10_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "1627859714048/59",
+        "minor6": "19534316568576/59"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_10_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "334956107327/13069189120"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_10_six_field_rank_margin",
+      "passed": true,
+      "value": 0.5338099205295451
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_10_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.89536592153862e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_10_companion_kernel_relation",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_10_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 2.2659737739919563e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_10_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_11_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_11_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_11_independent_archive_principal_match",
+      "passed": true,
+      "value": 9.803446031964339e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_11_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "6667713388740608/251",
+        "minor6": "320050242659549184/251"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_11_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "5307732542847/219831599104"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_11_six_field_rank_margin",
+      "passed": true,
+      "value": 0.7348155765039877
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_11_explicit_principal_null_direction",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_11_companion_kernel_relation",
+      "passed": true,
+      "value": 7.889008917408527e-18
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_11_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 5.503944550389675e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_11_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_12_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_12_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_12_independent_archive_principal_match",
+      "passed": true,
+      "value": 3.962280999340363e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_12_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "-391937/4",
+        "minor6": "-1175811/64"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_12_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "-31034989607/335544320"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_12_six_field_rank_margin",
+      "passed": true,
+      "value": 0.04553799490408786
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_12_explicit_principal_null_direction",
+      "passed": true,
+      "value": 7.530509278664657e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_12_companion_kernel_relation",
+      "passed": true,
+      "value": 1.7007055237133072e-16
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_12_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 7.278757122927231e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_12_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_13_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_13_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_13_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.2253803319654339e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_13_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "401343488/11",
+        "minor6": "301007616/11"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_13_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "432371832555/12549357568"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_13_six_field_rank_margin",
+      "passed": true,
+      "value": 0.2546025656509554
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_13_explicit_principal_null_direction",
+      "passed": true,
+      "value": 9.270746928771792e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_13_companion_kernel_relation",
+      "passed": true,
+      "value": 2.5580099702997063e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_13_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 2.522112193451598e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_13_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_14_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_14_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_14_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.0139432429395707e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_14_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "27862761472",
+        "minor6": "83588284416"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_14_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "112901630273/4362076160"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_14_six_field_rank_margin",
+      "passed": true,
+      "value": 0.533916664003013
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_14_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.8955520170663454e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_14_companion_kernel_relation",
+      "passed": true,
+      "value": 1.507994353396079e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_14_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 9.605144622900789e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_14_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_15_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_15_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_15_independent_archive_principal_match",
+      "passed": true,
+      "value": 9.35406580671078e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_15_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "6733426388369408/251",
+        "minor6": "80801116660432896/251"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_15_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "105552125308475/4328991490048"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_15_six_field_rank_margin",
+      "passed": true,
+      "value": 0.7348894616433027
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_15_explicit_principal_null_direction",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_15_companion_kernel_relation",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_15_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 4.4492448539760885e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_15_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_16_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_16_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_16_independent_archive_principal_match",
+      "passed": true,
+      "value": 9.080810933681923e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_16_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "-6286337/64",
+        "minor6": "-18859011/4096"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_16_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "-103542879270907/1116691496960"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_16_six_field_rank_margin",
+      "passed": true,
+      "value": 0.04554614117850066
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_16_explicit_principal_null_direction",
+      "passed": true,
+      "value": 7.531863477204551e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_16_companion_kernel_relation",
+      "passed": true,
+      "value": 6.210143627434309e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_16_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 1.1591648887912971e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_16_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_17_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_17_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_17_independent_archive_principal_match",
+      "passed": true,
+      "value": 6.558960421986085e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_17_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "402325568/11",
+        "minor6": "75436044/11"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_17_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "1442477061351407/41764261986304"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_17_six_field_rank_margin",
+      "passed": true,
+      "value": 0.2546272540671665
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_17_explicit_principal_null_direction",
+      "passed": true,
+      "value": 9.271112674059123e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_17_companion_kernel_relation",
+      "passed": true,
+      "value": 5.116026504938534e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_17_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 9.83106981297322e-19
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_17_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_18_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_18_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_18_independent_archive_principal_match",
+      "passed": true,
+      "value": 3.642055458715028e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_18_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "1647925526528/59",
+        "minor6": "1235944144896/59"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_18_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "22222796717975487/856502378168320"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_18_six_field_rank_margin",
+      "passed": true,
+      "value": 0.5339431378103621
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_18_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.8955972941826173e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_18_companion_kernel_relation",
+      "passed": true,
+      "value": 1.5079945880548992e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_18_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 1.24694140153303e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_18_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_19_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_19_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_19_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.1620559593985071e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_19_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "6749902956658688/251",
+        "minor6": "20249708869976064/251"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_19_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "352137402197305087/14406883678879744"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_19_six_field_rank_margin",
+      "passed": true,
+      "value": 0.7349077864218337
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_19_explicit_principal_null_direction",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_19_companion_kernel_relation",
+      "passed": true,
+      "value": 7.889010131675225e-18
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_19_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 1.4719019642001057e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_19_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_20_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_20_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_20_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.1011783111396794e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_20_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "-100642817/1024",
+        "minor6": "-301928451/262144"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_20_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "-26523507329785851/285873023221760"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_20_six_field_rank_margin",
+      "passed": true,
+      "value": 0.04554817303077864
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_20_explicit_principal_null_direction",
+      "passed": true,
+      "value": 7.532199733522012e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_20_companion_kernel_relation",
+      "passed": true,
+      "value": 3.105075248210431e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_20_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 1.2728388955755437e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_20_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_21_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_21_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_21_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.6805304658521698e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_21_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "36597388",
+        "minor6": "27448041/16"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_21_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "33591000836119085/971968278953984"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_21_six_field_rank_margin",
+      "passed": true,
+      "value": 0.25463341366299863
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_21_explicit_principal_null_direction",
+      "passed": true,
+      "value": 9.271203254030646e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_21_companion_kernel_relation",
+      "passed": true,
+      "value": 5.1160275318771095e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_21_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 3.8567027851604606e-19
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_21_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_22_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_22_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_22_independent_archive_principal_match",
+      "passed": true,
+      "value": 3.6398117850866914e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_22_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "1648931913728/59",
+        "minor6": "309174733824/59"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_22_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "5692515711065890751/219264608811089920"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_22_six_field_rank_margin",
+      "passed": true,
+      "value": 0.5339497431676906
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_22_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.8956085178225434e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_22_companion_kernel_relation",
+      "passed": true,
+      "value": 1.50799462276581e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_22_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 3.6175025738342713e-19
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_22_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_23_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_23_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_23_independent_archive_principal_match",
+      "passed": true,
+      "value": 9.677875541073038e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_23_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "6754025118629888/251",
+        "minor6": "5065518838972416/251"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_23_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "90202249628915965695/3688162221793214464"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_23_six_field_rank_margin",
+      "passed": true,
+      "value": 0.7349123585689485
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_23_explicit_principal_null_direction",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_23_companion_kernel_relation",
+      "passed": true,
+      "value": 2.3667030453862318e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_23_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 3.061549334098915e-19
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_23_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_24_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_24_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_24_independent_archive_principal_match",
+      "passed": true,
+      "value": 7.881592211073766e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_24_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "204800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/6975445962967634578648207610515512928597521084473042691374126307108581680874735477080450636056950261318022789906568892442924579893905304491735394436563802739923561389896303512876919899867",
+        "minor6": "81920000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/58128715504456701503142639136632825217750252845679674371587955327465737173844277476035906296675297094986313161861147853040214790310274358976355106664065948812399349112572968652247707887222038540545809370635647135353849"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_24_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "95144531235866075914415573064092425547764145593145508551582400939173967333700572168182556916850247401089/3453125020066406553013084057490911590552386211560404320425528547125000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_24_six_field_rank_margin",
+      "passed": true,
+      "value": 0.25192518324214264
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_24_explicit_principal_null_direction",
+      "passed": true,
+      "value": 1.3838463846891224e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_24_companion_kernel_relation",
+      "passed": true,
+      "value": 2.5568736598310077e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_24_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 7.110627841364335e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_24_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_25_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_25_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_25_independent_archive_principal_match",
+      "passed": true,
+      "value": 5.323280504799475e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_25_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "3850000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/131130182721383326362772213478917572228746433263964263357644833762290570528928409971580189434161456305356992558544561300168083471723264055987760176616916762831647227409813322918255564778629224111999",
+        "minor6": "115500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/81956359280499962839207239367716422843927591832959868714539542276464345248132381096258790665898341676319918592695318802114728619656763842266127544950221180638941293747688420665058624565040636870418950708886240581954939838226754751"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_25_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "12579204844628270398969389817174147810777923097942674428087503963374018116842229424289333417210780547975367/456542979596418891253257498593819271762928488109155250427209084499968750000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_25_six_field_rank_margin",
+      "passed": true,
+      "value": 0.2519251941265285
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_25_explicit_principal_null_direction",
+      "passed": true,
+      "value": 1.8451291097379537e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_25_companion_kernel_relation",
+      "passed": true,
+      "value": 7.670626783451601e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_25_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 4.270267973817144e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_25_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_26_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_26_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_26_independent_archive_principal_match",
+      "passed": true,
+      "value": 7.294379526231673e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_26_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "303576608295941241522086784243583679199218750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/10339756966744765368802139723388924969853169750747664936817444799641058195033425180299378780761930575998371208821215665407842248735723011692453187203556497996680868779164245039389",
+        "minor6": "2964615315390051186739128752378746867179870605468750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/2103628909282998451441979006670757605116295691964445736489643847164513091451987161025757861850465793540420976806931080525657841294986322271452362057608893164115906274557391153047548039286127773600400571417023"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_26_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "47985858348448772805244849551066648247144186462779348982778364890231339626976560279688957020655497703/1741573224651376820098615196389276380280925753408295976456919875000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_26_six_field_rank_margin",
+      "passed": true,
+      "value": 0.2519251832421426
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_26_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.6128212822970765e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_26_companion_kernel_relation",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_26_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 2.369180607323757e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_26_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_27_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_27_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_27_independent_archive_principal_match",
+      "passed": true,
+      "value": 3.993992811302009e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_27_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "939941406250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/32014204765962761087374555699744332176070726260481580188609770531429518484092617372754256738827891929975027860086306739592350285001798471029616803240237368707704268741698357182224559",
+        "minor6": "70495605468750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/50022191943664594675094554826537409122893347335116493911194786643767789736399088033318406452143212942395985581882151429366117872526605187480274572329210466352889125071668752508928538277585446388996901957280155031"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_27_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "943440363347120289733210086078369808013543417835543191175444626164356014318209204636238103923299049129/34240723469731413592041311395488481832956602529844556285124469625000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_27_six_field_rank_margin",
+      "passed": true,
+      "value": 0.25192519412652836
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_27_explicit_principal_null_direction",
+      "passed": true,
+      "value": 9.225645548689771e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_27_companion_kernel_relation",
+      "passed": true,
+      "value": 2.5568755944838678e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_27_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 2.3289819372324505e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_27_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_28_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_28_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_28_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.2064477641412556e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_28_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "939941406250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/43541557077581193038815536302874019141871041008529773289550452556256792767881282461365112624729601385958588997494606288734431326040935820438675337805068424706630199779821284616770618331679",
+        "minor6": "7049560546875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/425210514081624255283156217691879877816124568151997356391230029738650011414653667609388309802984103972364360526303516984737012161151881961276356782913383241187918407599791648918563985028117992676932560617779716175892559"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_28_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "1882244310381169127322403441516843624775877203009037680286594388347261760977815931931699440906963082478917877/95969123855722503259442567712939623437737630797354040617607105564402000000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_28_six_field_rank_margin",
+      "passed": true,
+      "value": 0.7329468380839654
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_28_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.96163779147896e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_28_companion_kernel_relation",
+      "passed": true,
+      "value": 7.88902392094645e-18
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_28_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 4.33898412027566e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_28_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_29_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_29_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_29_independent_archive_principal_match",
+      "passed": true,
+      "value": 9.651747898718754e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_29_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "939941406250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/43541550296284225771830266120330069388071264862232382715941084599356946511685068625249368563221499565716362743383448900338463553277064343729641464424516564734888500625115871107961399392479",
+        "minor6": "7049560546875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/425210434560323577992472554305092548601552624396952330773089812064960693743073845242428567065529622913677825680123730340178609264557024626637648657501549435118086875758252602543806944992557224537640255868411759747162159"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_29_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "4901677891617876223448008665809290651458493216779937185273801527233770813931999363760625013323565894946387/249919593499558735030802662239104666941515177490631280454533835732296875000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_29_six_field_rank_margin",
+      "passed": true,
+      "value": 0.732946841695591
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_29_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.961637825916745e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_29_companion_kernel_relation",
+      "passed": true,
+      "value": 7.889023663103599e-18
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_29_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 3.919713583883567e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_29_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_30_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_30_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_30_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.2064477641412562e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_30_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "939941406250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/43541557077581193038815536302874019141871041008529773289550452556256792767881282461365112624729601385958588997494606288734431326040935820438675337805068424706630199779821284616770618331679",
+        "minor6": "7049560546875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/425210514081624255283156217691879877816124568151997356391230029738650011414653667609388309802984103972364360526303516984737012161151881961276356782913383241187918407599791648918563985028117992676932560617779716175892559"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_30_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "39213423132941023483526117704479465844205872712289313942590311750014026574060375145771533633678849993125451/1999356746994218817905053494019575488286200641611542512866814699258375000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_30_six_field_rank_margin",
+      "passed": true,
+      "value": 0.7329468380839654
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_30_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.96163779147896e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_30_companion_kernel_relation",
+      "passed": true,
+      "value": 7.88902392094645e-18
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_30_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 4.338986078148042e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_30_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_31_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_31_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_31_independent_archive_principal_match",
+      "passed": true,
+      "value": 9.651747898716997e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_31_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "939941406250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/43541550296284225771830266120330069388071264862232382715941084599356946511685068625249368563221499565716362743383448900338463553277064343729641464424516564734888500625115871107961399392479",
+        "minor6": "7049560546875000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/425210434560323577992472554305092548601552624396952330773089812064960693743073845242428567065529622913677825680123730340178609264557024626637648657501549435118086875758252602543806944992557224537640255868411759747162159"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_31_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "6274147701270881566013453351918902640583414302691204656283284765327878792904248204743449516347860765134079/319897079679435180839427407666053973685139427188008038981803309737340000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_31_six_field_rank_margin",
+      "passed": true,
+      "value": 0.732946841695591
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_31_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.961637825916745e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_31_companion_kernel_relation",
+      "passed": true,
+      "value": 7.889023663103599e-18
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_31_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 3.919711519451585e-17
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_31_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_32_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_32_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_32_independent_archive_principal_match",
+      "passed": true,
+      "value": 4.82093385840068e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_32_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "106512417551130056381225585937500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/2910383267349174970354602363447373084291390114557407274580318737892494219039097129963033771093440068989611802583601998653595875949601017931168364758055396621631793157427810027709731145252175949",
+        "minor6": "780120245735815842635929584503173828125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/454747393143414735885039289975819641041827447123909994941941019226764852138512914177140742657645865904959429113521389341488902712471996478030244492468435788918993672488371417881878337994541409502525906779713890262542522655061"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_32_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "125136229634224064065456576882352531186417310375836828582400072988086552565672084488772953859846360746250373382542153/3620863975989945998404751473835052221106126990855978546566682273322002022400000000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_32_six_field_rank_margin",
+      "passed": true,
+      "value": 0.2546334099758847
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_32_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.635601621404022e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_32_companion_kernel_relation",
+      "passed": true,
+      "value": 5.1160276429647406e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_32_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 2.517244501358509e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_32_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_33_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_33_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_33_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.0105509289768654e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_33_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "286044090103132475633174180984497070312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/7815972474013146467234697311261832526826965881267754452736611470391841343253430677048634564551026585147445168633435513233445994551255506894063224779858300962583488236958638726345406753118319",
+        "minor6": "523762372015013077941603114595636725425720214843750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/305311445224870941543921840343895104293433782709512753306960550842766821108343318528257439675647986292986630568237406188059730242695156709150735646192306435151336355719238599157475254574572874394488453190421559519074683639"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_33_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "50824561085566987942236302829196617966334540005738904188811831006309152769698334260820991850501110528239065969913313/1470627801003236520877863761925977431070651927903160402990096693777099915264000000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_33_six_field_rank_margin",
+      "passed": true,
+      "value": 0.25463339891845216
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_33_explicit_principal_null_direction",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_33_companion_kernel_relation",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_33_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 2.021212846562617e-18
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_33_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_34_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_34_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_34_independent_archive_principal_match",
+      "passed": true,
+      "value": 4.820933884523181e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_34_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "106512417551130056381225585937500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/2910383267349174970354602363447373084291390114557407274580318737892494219039097129963033771093440068989611802583601998653595875949601017931168364758055396621631793157427810027709731145252175949",
+        "minor6": "780120245735815842635929584503173828125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/454747393143414735885039289975819641041827447123909994941941019226764852138512914177140742657645865904959429113521389341488902712471996478030244492468435788918993672488371417881878337994541409502525906779713890262542522655061"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_34_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "800871869659034010018922092085472275518733809860069357944101781228482072303329559377300867519315200270248566153210902493/23173529446335654389790409432544334215079212741478262698026766549260812943360000000000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_34_six_field_rank_margin",
+      "passed": true,
+      "value": 0.2546334099758847
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_34_explicit_principal_null_direction",
+      "passed": true,
+      "value": 4.635601621404022e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_34_companion_kernel_relation",
+      "passed": true,
+      "value": 5.1160276429647406e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_34_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 7.996253093462276e-19
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_34_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_35_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_35_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_35_independent_archive_principal_match",
+      "passed": true,
+      "value": 1.0105509289768652e-15
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_35_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "286044090103132475633174180984497070312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/7815972474013146467234697311261832526826965881267754452736611470391841343253430677048634564551026585147445168633435513233445994551255506894063224779858300962583488236958638726345406753118319",
+        "minor6": "523762372015013077941603114595636725425720214843750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/305311445224870941543921840343895104293433782709512753306960550842766821108343318528257439675647986292986630568237406188059730242695156709150735646192306435151336355719238599157475254574572874394488453190421559519074683639"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_35_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "1270614027139174698555907570737369482264646350453901427440169219298686600313916849532537814077395676763543540582352233/36765695025080913021946594048149435776766298197579010074752417344427497881600000000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_35_six_field_rank_margin",
+      "passed": true,
+      "value": 0.25463339891845216
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_35_explicit_principal_null_direction",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_35_companion_kernel_relation",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_35_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 9.688841398504586e-19
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_35_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_36_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_36_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_36_independent_archive_principal_match",
+      "passed": true,
+      "value": 7.839226118934449e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_36_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "4799023485183715820312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/178346241422415212112914679331737148811442222748579577652929224923619746419880059957337443694690390490826174257861447925330733721921177035627151152487270120478214607538428666405519",
+        "minor6": "1405963911674916744232177734375000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/69666501712319795453267359028304160940940606134529273214327005913372803326488549350216505525713398625983061001329778443723756613666069120185738116179192051135144580556681171510404552568730474437070150102564039"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_36_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "13441182618405697796611442069202596675120903455299448871068754199841403486285117808780652424457021305372175864113168423/549578997613736360362706196033581355895752292554095072849903838674928271360000000000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_36_six_field_rank_margin",
+      "passed": true,
+      "value": 0.734912356667405
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_36_explicit_principal_null_direction",
+      "passed": true,
+      "value": 1.4889116484058445e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_36_companion_kernel_relation",
+      "passed": true,
+      "value": 2.3667031037236935e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_36_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 3.6181900688208724e-19
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_36_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_37_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_37_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_37_independent_archive_principal_match",
+      "passed": true,
+      "value": 7.74230042264155e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_37_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "1171636593062430620193481445312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/43541573644208022481866291008220383609467180379922507380757297721297485140993206312000473158918520634210926936117621752338732237308324238679574973331384020907816253692056307080832410326079",
+        "minor6": "8581322703093974268995225429534912109375000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/425210708351214666145569476873097151157709842837407311213105072857343435594406566394623096400460937230370837002672035418601038353517343874051308702856842355625485450111345067349781743245113840693696837418415169070463391"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_37_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "6462107029123640046955096748951103970329585458533589427056940056589164165286726789009364114324145425773075740244254499/264220671718798325980869117998115927399750708245993102290444826091038389043200000000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_37_six_field_rank_margin",
+      "passed": true,
+      "value": 0.7349123509647905
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_37_explicit_principal_null_direction",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_37_companion_kernel_relation",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_37_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 5.116435061700968e-19
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_37_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_38_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_38_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_38_independent_archive_principal_match",
+      "passed": true,
+      "value": 7.280206996335034e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_38_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "4799023485183715820312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/178346241422415212112914679331737148811442222748579577652929224923619746419880059957337443694690390490826174257861447925330733721921177035627151152487270120478214607538428666405519",
+        "minor6": "1405963911674916744232177734375000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/69666501712319795453267359028304160940940606134529273214327005913372803326488549350216505525713398625983061001329778443723756613666069120185738116179192051135144580556681171510404552568730474437070150102564039"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_38_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "1033937124492745984354726313015451649398421160337208080329688035347660409124799847043783366838273624393739417841489931/42275307508748950797131245848737027376596330196468851757684910667302174720000000000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_38_six_field_rank_margin",
+      "passed": true,
+      "value": 0.734912356667405
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_38_explicit_principal_null_direction",
+      "passed": true,
+      "value": 1.4889116484058445e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_38_companion_kernel_relation",
+      "passed": true,
+      "value": 2.3667031037236935e-17
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_38_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 3.619149502562705e-19
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_38_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_39_registered_smooth_regular_chart",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_39_exact_G3_family_beta",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_39_independent_archive_principal_match",
+      "passed": true,
+      "value": 7.74230042264155e-16
+    },
+    {
+      "criterion": "nonzero exact registered-family expressions at archived eta,w",
+      "name": "jet_39_exact_transport_minors_nonzero",
+      "passed": true,
+      "value": {
+        "minor5": "1171636593062430620193481445312500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/43541573644208022481866291008220383609467180379922507380757297721297485140993206312000473158918520634210926936117621752338732237308324238679574973331384020907816253692056307080832410326079",
+        "minor6": "8581322703093974268995225429534912109375000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/425210708351214666145569476873097151157709842837407311213105072857343435594406566394623096400460937230370837002672035418601038353517343874051308702856842355625485450111345067349781743245113840693696837418415169070463391"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "jet_39_exact_kinetic_minor_nonzero",
+      "passed": true,
+      "value": "484658027184273003521632256171474959630696261568303245744058276420650493225418813571704831125614385354648234169949092113/19816550378909874448565183849858694554981303118449482671783361956827879178240000000000000000000000000000000000000000000"
+    },
+    {
+      "criterion": "min/max nonzero singular value >=1e-8",
+      "name": "jet_39_six_field_rank_margin",
+      "passed": true,
+      "value": 0.7349123509647905
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_39_explicit_principal_null_direction",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "jet_39_companion_kernel_relation",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-7; no health selection",
+      "name": "jet_39_all_other_characteristic_eigenpairs",
+      "passed": true,
+      "value": 5.116435061700968e-19
+    },
+    {
+      "criterion": "exact factor and nonzero minors, not numerical root splitting",
+      "name": "jet_39_fourfold_transport_defect",
+      "passed": true,
+      "value": {
+        "algebraic_multiplicity": 4,
+        "geometric_multiplicity": 1
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "forty_method_tagged_jets_retained",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "exact",
+      "name": "all_1680_parent_finite_frequency_roots_retained",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "exact",
+      "name": "all_source_pins_after",
+      "passed": true,
+      "value": null
+    }
+  ],
+  "eta_tilt_time_coordinates": 32,
+  "finite_band_physical_domain_verified": false,
+  "gate_effect": "NONE",
+  "inherited_sidecars_absent": [
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FORCE_COMPLETION_OPTIONS.md",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_NONZERO_GRADIENT_FORCE_LOCAL.md",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md"
+  ],
+  "max_other_characteristic_residual": 7.226796188795696e-17,
+  "max_principal_archive_discrepancy": 2.90399478491809e-15,
+  "min_six_field_rank_margin": 0.04460997418692074,
+  "parent_root_count": 1680,
+  "passed": 425,
+  "physical_EFT_cutoff_derived": false,
+  "physical_ghost_proven": false,
+  "physical_instability_proven": false,
+  "physics_pass": false,
+  "principal_state_records": 40,
+  "review_dependencies": [
+    "R9-MT1-G3K-C1",
+    "all transitive G3K/C1 scientific and review debt"
+  ],
+  "review_status": "DEFERRED",
+  "runtime": {
+    "numpy": "2.4.6",
+    "python": "3.13.9",
+    "sympy": "1.14.0"
+  },
+  "schema": "r4c1-g3k-c2-principal-domain-v1",
+  "script_sha256": "fead8539da3efe118e297c90feb849beda9cc576bd4b9fdb236c08b93597b7ea",
+  "source_sha256": {
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/formulas.json": "f4b7a2e69c7a51ebf33d25b94e03a60f7ca2680fecb481e42d4258cf9219ace6",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/summary.json": "3c46b9834c6805c0ae46aeb0ff6226ec2abf814db873abc1d8fc104b8eacab72",
+    "Analysis/MasterTests/outputs/r4c1_g3d_attempt_01/formulas.json": "68aaddb629ba729aa197804d46f8228d509111195757288221d21bb7f7a692e8",
+    "Analysis/MasterTests/outputs/r4c1_g3d_attempt_01/summary.json": "c309ec0fbd3e3c3bff9ac05c86c4c0fe5f5e37edd5cc66a2a37cabb9bc6e5b72",
+    "Analysis/MasterTests/outputs/r4c1_g3df_attempt_01/summary.json": "877b6f630a6692965656005fc823a2141b21daac4d32461f77e28dd12905a5a3",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/formulas.json": "f634e510fd6e04f51f0c2c6cc1f43d284b0b0c9e5d9c44d4a3b4de9d8a35e87f",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/summary.json": "1f13df62495f3a39198b697a7387f14086338306a8a5e24462b1e873800f1b5a",
+    "Analysis/MasterTests/outputs/r4c1_g3e_gr_attempt_01/summary.json": "813353365311041ba341c96ec5949520e927df06f69bde8e5be19227930a5d28",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/columns.npy": "2a7df2c3ca35f5d438f54520241c880692c9804d03f3bf1bf696cf183345bccc",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/embedding.json": "c235d8c9f81314f01ade15dddd215263fc22754efa6caee485d793f85e432300",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/summary.json": "3c3241a44e43b986971c8c340643b6b9c87ca97c803347cb9da5c0a934fa05e1",
+    "Analysis/MasterTests/outputs/r4c1_g3i_attempt_01/summary.json": "0d85d136e7c7a3c4cd4b49d984f70d3bfdbdd70aed82b3fc423181028aa1d9c7",
+    "Analysis/MasterTests/outputs/r4c1_g3k_attempt_02/formulas.json": "b369f337b38fd29c8d6c16b4fed6bf787069089c682c9c639c38224e161bf8d5",
+    "Analysis/MasterTests/outputs/r4c1_g3k_attempt_02/linear_trajectories.npy": "746dcdae9d9d3b8da334523f60de69150b8c49941f8ad256e3f60e56e0ebc4d4",
+    "Analysis/MasterTests/outputs/r4c1_g3k_attempt_02/matrices.npy": "48cdb08629a4b1a252c62de632b7cf82d97e8f7b554c93a14376ef7c93ba3989",
+    "Analysis/MasterTests/outputs/r4c1_g3k_attempt_02/samples.json": "69102fff332222f34684151e08a218fd92c6ae7a5153fd49d5900cf9e4b430d5",
+    "Analysis/MasterTests/outputs/r4c1_g3k_attempt_02/summary.json": "131e175a3d1a6979a7c3a68a6f5d84a21b533ce01a7850066fcfde5800d2d6ab",
+    "Analysis/MasterTests/outputs/r4c1_g3k_c1_attempt_02/samples.json": "339373b084ba6b73c2eda87b58c215564afb86dab1ea55dbe3b68267e88c4cff",
+    "Analysis/MasterTests/outputs/r4c1_g3k_c1_attempt_02/summary.json": "39818742f14afe951780c20425b206128b11bf8007e3b84efd5743979e3262e7",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/summary.json": "550caae54b03b490a5388ecd363ad0f9ff0d8d4891021d2eb1c366871d54378a",
+    "Analysis/MasterTests/outputs/r4c1_g3t_attempt_02/initial_data.json": "c1b80b7c8cd1fd74e07fe797214a56f6c14f32f0416bb3966f6371cf4a85d243",
+    "Analysis/MasterTests/outputs/r4c1_g3t_attempt_02/summary.json": "386120a3d38819127341cdd2db6dec9741471783a19beab2d4d7f6c1eca073b6",
+    "Analysis/MasterTests/outputs/r4c1_g3t_attempt_02/trajectories.npy": "470bdd1212e45fb3334e549003a6d6233f26f396043924c2ccb9b20bf13c18cd",
+    "Analysis/MasterTests/outputs/r4c1_g3v_attempt_01/summary.json": "07e85fbd5c13b7390be3dadad723a36f445aa065d678b51f8070255834157cae",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/pencil.json": "abb6a23cba1f80b0a02bf76d1bb47153bd745be55e83c44e9bd8183f9a9d5bb4",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/summary.json": "60d9de53f95592512e094ffc60c81a781ab8f9b33a8afa93dbf53943efbb34bf",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_scalar.py": "eb5d8c41938d346a294aa03f713ea10655b939234dab7935f4a0ee9f774553f9",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/test_01_r4c1_g3_coupled_vertex_regularity_v1.py": "875aefe980e4b78a1173a69bbd129d81a7dc4b2b0872c0a16774bc7c177bfe8b",
+    "Analysis/MasterTests/test_01_r4c1_g3_density_action.py": "1a855ad2a5bbafbee0ad7164604a210f5a236529896cbbab5a62173d6e822fc8",
+    "Analysis/MasterTests/test_01_r4c1_g3_finite_k.py": "24ef13486d8477cb021dc4931d6e64c6d6fcc8fa52a330c106515c4507624504",
+    "Analysis/MasterTests/test_01_r4c1_g3_finite_k_scalar.py": "05f3c588d8424a9d7f65c69624b483394144da5ae242c75c54f238ef895e37de",
+    "Analysis/MasterTests/test_01_r4c1_g3_slow_action.py": "64e59e69851734cd24a4abbd31d7b02b17490395b1d841b1a0f06bd246681b90",
+    "Analysis/MasterTests/test_01_r4c1_g3_tilted_background.py": "408320a076b4dabcfd01e4ec95d1cd7c7fcb788998012f85b64cc9f86916931b",
+    "Analysis/MasterTests/test_01_r4c1_g3k_c1_clock_entry_v1.py": "c507867b48a425b1ad33aae80e8d8c2a5f19faf1f2a2e995264c65f7937de122",
+    "Analysis/MasterTests/test_01_r4c1_g3k_c1_clock_entry_v2.py": "d031e3347d00b956b9abebc4cded2bf199a993cf3348bc151303f17f90d79224",
+    "Analysis/MasterTests/test_01_r4c1_g3k_c2_principal_time_domain_v1.py": "fead8539da3efe118e297c90feb849beda9cc576bd4b9fdb236c08b93597b7ea",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Gates/ITSM_MASTER_TESTS_01_03_REQUIREMENT_DISPOSITION_2026-09-30.md": "9ccd38b3c1d20670c759488ce6f4ecd865355090733359cd506d7b01fd3c9ac3",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_REPORT_2026-09-30.md": "1b9fbc4185b61d1e37d7865baa811994e235523eb9ecc22432c733b4bc38aa04",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_CONTRACT_2026-09-30.md": "92fc34dd19f2bc5de077703b0e7a8b209c14fdf1ae66674bc1f8176d8e4be1c5",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Theory/Gates/RES-001/RES001_R4C1_G3K_C1_CLOCK_ENTRY_CONTRACT_2026-10-09.md": "00ad4d640181736a2e8049568df181b2d3a64f58de61f0aa836d989f708713b1",
+    "Theory/Gates/RES-001/RES001_R4C1_G3K_C1_CLOCK_ENTRY_REPORT_2026-10-09.md": "ccab89c81f331cc7fc0288e998cf190311119b5f1c3717bd48d32752b32aee7c",
+    "Theory/Gates/RES-001/RES001_R4C1_G3K_C2_PRINCIPAL_TIME_DOMAIN_CONTRACT_2026-10-09.md": "ee6dbfbcc0a572f812c02f52b0bf3794a91aeb45ccd494f81e73383b5ecdb339",
+    "Theory/Gates/RES-001/RES001_R4C1_G3V_SOURCE_INTEGRITY_ADDENDUM_2026-10-08.md": "6bd6808e2240354fd29b7204215e3bf0a33f53a109035afb0ed41d88b8a11834",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_COUPLED_VERTEX_REGULARITY_CONTRACT_2026-10-08.md": "53940518eeff7ca46fb5a9373db6e4637360eeedaeffcba6044af5cc580ac3ac",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_COUPLED_VERTEX_REGULARITY_REPORT_2026-10-08_v1.md": "952b4315a5607358a4fc0250a9ab67efc90577dda77f006b357fc1cbd74eeb27",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_CONTRACT_2026-09-30.md": "0ff843db7c1887fea71e307fd8801841427628d0426bf8f9bd83e4b78e9c5758",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_REPORT_2026-09-30.md": "8a1c2245fc02307c5e70c7b4c1064872e82464c4c411d3095e97575c730b1876",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_CONTRACT_2026-09-30.md": "75050556086b27f794b2378ac389f6bb864ae03e4441c395ff5fc64538b1cd55",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_CONTRACT_2026-10-08.md": "26ecfebc6d7792c0a5d6e065b8512f803d5ddd6e6316d01300d83ad7ef2769ce",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_REPORT_2026-10-08.md": "a247893f8f0cb15760c20cc24b4f19b91f701ce2aaa0ec585a534b3436b78d13",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_REPORT_2026-09-30.md": "25b39464948805df96eeded13cc96fa04c87e767e1781113514f85d5fd957771",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_SCALAR_CONTRACT_2026-10-08.md": "eaefd9650e265512a516cf9770e67e8b6e3297e7ab0de2ab095b4c6d448366f9",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_SCALAR_REPORT_2026-10-08.md": "81c11fc9cc9efbb9ad6b2d6f0e2bd26653a13d2fb126031b4941ae326f782c31",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FRAME_SCATTERING_CONTRACT_2026-10-08.md": "f54c7a7297350256ae199c3ba2b5f19266094c57739b95c6dad0ee253627d5f8",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FRAME_SCATTERING_REPORT_2026-10-08.md": "035d1480904b2459b6a4e8b6df91d381065a653fdeb49583fcdb3dbfc4ac49f4",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_CONTRACT_2026-09-30.md": "f6a35a4ade82c8d925b44d6984164eb761e50015936623b0683e071516f62a43",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_REPORT_2026-09-30.md": "2158f16970e883eb661aaabd04a1014aef3d8a47e6346ad7cb27453f464db83c",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_TILTED_BACKGROUND_CONTRACT_2026-10-08.md": "508252d61dcdc73c28d9c568e4b80769aa1a3c88bb68cfc1a3306ccac078f9ac",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_TILTED_BACKGROUND_REPORT_2026-10-08.md": "f3ad690310aa762aff87f37fba961f5be9280b4c1844a9d608c2b90b5e037105",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_CONTRACT_2026-09-30.md": "d1d64c216465956424589f95c940116bc198f5670552297b7e611894bcd385fa",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_REPORT_2026-09-30.md": "d350c85fafb752502c017b7c93bc0223b4386ed72c39080c3e01126478d60f02",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_CONTRACT_2026-09-30.md": "47723c96936643b6be19d22e00a4f98bc3f4208cb409e61c255e041b7ce725e5",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_REPORT_2026-09-30.md": "fe8d380be77af9e5ccecb02c62b8264d5ecbb6bf5d42153755c2914cd355cdbd",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md": "2f151504d695ee442585653982cbbabfca2f520e864a802de306c0b013f3abc4",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FORCE_COMPLETION_OPTIONS.md": "d71848c053fbcae635e7071222e06419df839a0a169c87c58e84195c0f73b2fd",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_NONZERO_GRADIENT_FORCE_LOCAL.md": "f58e85f8dd5d78fc563bdb537cb68db16379486920641126ea40e4d992134bf2",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md": "c2a5c82f285dc04adcfffed4ba5c562661ddca98c4d045802ffb6e88bfeefd68"
+  },
+  "status": "COUPLED_UNRESTRICTED_STRONGLY_HYPERBOLIC_DUST_TIME_ROUTE_REJECTED",
+  "strong_hyperbolicity_in_unrestricted_dust_time_verified": false,
+  "total": 425,
+  "validation": "PASS_LOCAL_CHECKS"
+}

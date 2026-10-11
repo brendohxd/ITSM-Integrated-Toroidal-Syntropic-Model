@@ -1,0 +1,1266 @@
+{
+  "K_Q": "NOT_DERIVED",
+  "MAT-001": "BLOCKED",
+  "Rule9_cleared": false,
+  "Stage4A": "CLOSED",
+  "TOP-X4": "UNCHANGED",
+  "UVIR-003": "IN_PROGRESS",
+  "V": "NOT_COMPUTED",
+  "artifacts": {
+    "canonical.json": "3c0a6be8fe876c4461a36859a03c62c3c6979f194597d261f7ab4529937de45d",
+    "charge_sectors.json": "e8a7870091a42b061c7462a8555201645a2dc901d99ce52079311dfa550a1bf0",
+    "diagnostics.json": "8ff2615e8aa2fa04f05e1de7c8225c292781cfab3fbe465ae325bc710022e73c"
+  },
+  "canonical_tests_1_to_3": "HOLD_SUBSTANTIVE",
+  "checks": [
+    {
+      "criterion": "exact",
+      "name": "all_source_pins_before",
+      "passed": true,
+      "value": {
+        "absent": [
+          "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FORCE_COMPLETION_OPTIONS.md",
+          "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_NONZERO_GRADIENT_FORCE_LOCAL.md",
+          "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md"
+        ],
+        "available_sidecars": 165,
+        "pins": 168
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "original_failed_v1_receipt_preserved",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "exact",
+      "name": "higher_precision_parent_holds_preserved",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "Fourier_action_Hermitian",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "Fourier_mixed_action_adjoint",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "Fourier_temporal_action_Hermitian",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "all_Euler_value_entries_equal_action",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "all_Euler_velocity_entries_equal_action",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "all_Euler_acceleration_entries_equal_action",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "generic_unreduced_shift_regulator_block",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "B1_initial_Friedmann_value",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "raw_fifteen_velocities_seven_primaries",
+      "passed": true,
+      "value": {
+        "dynamic": [
+          "Mxx",
+          "Mxy",
+          "Mxz",
+          "Myy",
+          "Myz",
+          "Mzz",
+          "Vx",
+          "Vy",
+          "Vz",
+          "du",
+          "dv",
+          "dr",
+          "Pi",
+          "T",
+          "nu"
+        ],
+        "null": [
+          "alpha",
+          "Sx",
+          "Sy",
+          "Sz",
+          "Em",
+          "Z",
+          "LambdaU"
+        ]
+      }
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "all_primary_null_momenta",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "exact_legendre_inverse",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "canonical_H_symmetric",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "no_lapse_square_after_legendre",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "no_lapse_density_mixing_after_legendre",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "translation_H_absent_Sx",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "translation_H_absent_Sy",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "translation_H_absent_Sz",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "norm_secondary_from_multiplier",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "normal_tertiary_from_consistency",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "density_second_class_coefficient",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "normal_tertiary_inverse_coefficient",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "normal_quaternary_fixes_multiplier",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "eight_second_class_constraint_bracket_determinant",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "all_eight_constraints_on_graph",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "second_class_pullback_symplectic",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "lapse_primary_secondary_first_class",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "time_constraint_preserved_with_explicit_background_derivative",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "dust_clock_constraint_coefficient",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "psi_clock_constraint_coefficient",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "T_constraint_on_graph",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "T_clock_preserved",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "T_physical_symplectic_pullback",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "Pi_constraint_on_graph",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "Pi_clock_preserved",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "Pi_physical_symplectic_pullback",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "lapse_velocity_absent_before_phase_substitution",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "phase_density_constraint_eliminated_not_dropped",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "unfixed_complex_charge_kinetic_congruence",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "unfixed_complex_charge_boundary_generator_symmetric",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "unfixed_complex_charge_boundary_value_identity",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "unfixed_complex_charge_independent_phase_inverse",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "unfixed_complex_charge_canonical_map",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "unfixed_complex_charge_full_time_dependent_Hamiltonian_map",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "unfixed_complex_charge_reject_omitted_time_generator",
+      "passed": true,
+      "value": "nonzero explicit generator; it cannot be omitted"
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "dust_Dirac_vs_action_Legendre",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "phase_Dirac_vs_action_Legendre",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "retained_negative_normalized_metric_trace_eigenvector",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "dust_polar_angle_cyclic_value",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "dust_polar_angle_cyclic_mixed",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "dust_positive_angular_velocity_coefficient",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "dust_reject_missing_nonlinear_polar_boundary",
+      "passed": true,
+      "value": "the full nonlinear field map contributes a quadratic boundary generator"
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "phase_polar_angle_cyclic_value",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "phase_polar_angle_cyclic_mixed",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "phase_positive_angular_velocity_coefficient",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "phase_reject_missing_nonlinear_polar_boundary",
+      "passed": true,
+      "value": "the full nonlinear field map contributes a quadratic boundary generator"
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "fixed_complex_dust_K_background_independent",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "constant_U1_rotation_orthogonal_and_orientation",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "constant_U1_radius_and_scalar_kinetic_invariant",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "constant_U1_radial_rate_and_current_invariant",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "constant_U1_canonical_one_form_invariant",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "constant_U1_frozen_scalar_reservoir_potential_invariant",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "orbit_section_retains_exact_nonzero_charge_and_radial_rate",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "fixed_complex_charge_kinetic_congruence",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "fixed_complex_charge_boundary_generator_symmetric",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "fixed_complex_charge_boundary_value_identity",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "fixed_complex_charge_independent_phase_inverse",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "fixed_complex_charge_canonical_map",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "fixed_complex_charge_full_time_dependent_Hamiltonian_map",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "fixed_complex_charge_reject_omitted_time_generator",
+      "passed": true,
+      "value": "nonzero explicit generator; it cannot be omitted"
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "global_dust_origin_cyclic_value",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "global_dust_origin_cyclic_mixed",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "fixed_complex_charge_dust_cyclic_coefficient",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact modulo B1 Friedmann",
+      "name": "fixed_dust_Schur_congruence_not_discarded_mode",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "full_homogeneous_alignment_charge",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "full_homogeneous_charge_Routh_term",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "alignment_boost_mass_retained_after_Routh",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "reject_wrong_Routh_sign",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "exact",
+      "name": "reject_missing_alignment_charge",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "polar_canonical_one_form_du",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "polar_canonical_one_form_dv",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "full_charge_first_and_second_order_curvature",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "full_Routh_second_order_equals_quadratic_partial_Legendre",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "dust_clock_volume_momentum_hessian",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "psi_clock_mixed_dust_volume_hessian_determinant",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "dust_clock_explicit_time_energy_balance",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "saved_background_domain_unchanged",
+      "passed": true,
+      "value": {
+        "interval": [
+          0.0,
+          0.05
+        ],
+        "shape": [
+          257,
+          11
+        ]
+      }
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "complex_background_charge_conserved",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "dust_background_charge_conserved",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "analytic_psi_clock_finite_interval_bound",
+      "passed": true,
+      "value": {
+        "assumptions": "B1 on-shell finite solution, rho>0, potential>=0, H positive; Hdot<=0. Charge prevents radius zero.",
+        "decimal": "0.159103767086499833363206658925",
+        "lower": "-3469/210000 + exp(-sqrt(4006695)/15400)/5"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "analytic_positive_radius_bound_from_nonzero_charge",
+      "passed": true,
+      "value": {
+        "R_squared_lower": "700*exp(-sqrt(4006695)/7700)/3469",
+        "volume_upper": "exp(sqrt(4006695)/15400)"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "reject_unsafe_clock_radius_density_inverses",
+      "passed": true,
+      "value": [
+        "C>0",
+        "rho>0",
+        "psi_dot>=analytic positive bound",
+        "R_squared>=analytic positive bound",
+        "alignment phase coefficient requires 1-zeta*R_squared*boost_squared!=0; witness boost=0"
+      ]
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "saved_complex_charge_agreement",
+      "passed": true,
+      "value": 1.539879335155092e-13
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "saved_dust_charge_agreement",
+      "passed": true,
+      "value": 3.941291737419306e-14
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "saved_Friedmann_for_canonical_coefficients",
+      "passed": true,
+      "value": 2.200323256928982e-13
+    },
+    {
+      "criterion": "exact",
+      "name": "sampled_clock_respects_analytic_lower_bound",
+      "passed": true,
+      "value": {
+        "analytic_lower": 0.15910376708649984,
+        "sampled_min": 0.17482573717734598
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "all_saved_points_charge_sector_inertias",
+      "passed": true,
+      "value": [
+        {
+          "counts": [
+            {
+              "negative": 1,
+              "positive": 11,
+              "zero": 0
+            },
+            {
+              "negative": 1,
+              "positive": 11,
+              "zero": 0
+            },
+            {
+              "negative": 0,
+              "positive": 11,
+              "zero": 0
+            }
+          ],
+          "eigenvalues": [
+            [
+              -0.5499999999999999,
+              0.16666666666666666,
+              0.16666666666666666,
+              0.16666666666666666,
+              0.2499999999999999,
+              0.25000000000000006,
+              0.4999999999999999,
+              0.5,
+              0.5000000000000003,
+              1.0,
+              1.0,
+              3.0
+            ],
+            [
+              -5.3508028601726245,
+              0.012147028678675911,
+              0.16666666666666607,
+              0.16666666666666663,
+              0.1666666666666667,
+              0.24999999999999986,
+              0.25,
+              0.49999999999999983,
+              0.5000000000000001,
+              0.5000000000000003,
+              1.0,
+              1.015441545779662
+            ],
+            [
+              0.013548411451181186,
+              0.16666666666666652,
+              0.16666666666666657,
+              0.16666666666666663,
+              0.24999999999999994,
+              0.25000000000000006,
+              0.5,
+              0.5,
+              0.5000000000000001,
+              0.9999999999999998,
+              1.020574297115972
+            ]
+          ],
+          "index": 0,
+          "time": 0.0
+        },
+        {
+          "counts": [
+            {
+              "negative": 1,
+              "positive": 11,
+              "zero": 0
+            },
+            {
+              "negative": 1,
+              "positive": 11,
+              "zero": 0
+            },
+            {
+              "negative": 0,
+              "positive": 11,
+              "zero": 0
+            }
+          ],
+          "eigenvalues": [
+            [
+              -0.5499999999999999,
+              0.16666666666666666,
+              0.16666666666666666,
+              0.16666666666666666,
+              0.2499999999999999,
+              0.25000000000000006,
+              0.4999999999999999,
+              0.5,
+              0.5000000000000003,
+              1.0,
+              1.0,
+              3.0
+            ],
+            [
+              -5.2040604805888036,
+              0.010945350101073049,
+              0.1666666666666663,
+              0.16666666666666652,
+              0.1666666666666667,
+              0.24999999999999992,
+              0.25000000000000033,
+              0.4999999999999998,
+              0.5000000000000002,
+              0.5000000000000004,
+              0.9999999999999998,
+              1.007926831297097
+            ],
+            [
+              0.012255867353656746,
+              0.1666666666666666,
+              0.16666666666666663,
+              0.16666666666666663,
+              0.24999999999999983,
+              0.25000000000000017,
+              0.4999999999999997,
+              0.49999999999999983,
+              0.4999999999999999,
+              0.9999999999999997,
+              1.0106239027667059
+            ]
+          ],
+          "index": 128,
+          "time": 0.025
+        },
+        {
+          "counts": [
+            {
+              "negative": 1,
+              "positive": 11,
+              "zero": 0
+            },
+            {
+              "negative": 1,
+              "positive": 11,
+              "zero": 0
+            },
+            {
+              "negative": 0,
+              "positive": 11,
+              "zero": 0
+            }
+          ],
+          "eigenvalues": [
+            [
+              -0.5499999999999999,
+              0.16666666666666666,
+              0.16666666666666666,
+              0.16666666666666666,
+              0.2499999999999999,
+              0.25000000000000006,
+              0.4999999999999999,
+              0.5,
+              0.5000000000000003,
+              0.9999999999999999,
+              1.0,
+              3.0
+            ],
+            [
+              -5.071525682006022,
+              0.009838534048964948,
+              0.1666666666666664,
+              0.16666666666666663,
+              0.16666666666666669,
+              0.24999999999999994,
+              0.25000000000000006,
+              0.4999999999999997,
+              0.5000000000000002,
+              0.5000000000000007,
+              0.9999999999999993,
+              1.003173289869164
+            ],
+            [
+              0.01105496413167148,
+              0.16666666666666655,
+              0.1666666666666666,
+              0.16666666666666669,
+              0.24999999999999992,
+              0.25,
+              0.49999999999999983,
+              0.4999999999999999,
+              0.5000000000000001,
+              0.9999999999999993,
+              1.0042786625788798
+            ]
+          ],
+          "index": 256,
+          "time": 0.05
+        }
+      ]
+    },
+    {
+      "criterion": "exact",
+      "name": "exact_initial_fixed_complex_charge_inertia",
+      "passed": true,
+      "value": {
+        "-11/20": 1,
+        "1": 2,
+        "1/2": 3,
+        "1/4": 2,
+        "1/6": 3,
+        "3": 1
+      }
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "finite_witness_action_energy_agrees_original_B1_constraint",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "dust_finite_canonical_witness_0.000001",
+      "passed": true,
+      "value": {
+        "coefficient": "-0.6818181818181818181818181818181818181818181818181818181818520114841063",
+        "dust_momenta": [
+          "0.2000025995760717217344695627981573088270439736660340787033831245272091",
+          "0.1999974004252919146291668008382063275365923899703295576602532391091545"
+        ],
+        "error": "3.382966592446369097249687346612480700134913972583174099978173289017546e-59"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "phase_finite_canonical_witness_0.000001",
+      "passed": true,
+      "value": {
+        "coefficient": "-0.6818181818162448347107548072407963155242688560619667262035510270325158",
+        "derived_finite_step_coefficient": "-0.6818181818162448347107548072407963155242688560619667262035182635246316",
+        "dust_momenta": [
+          "0.2000025995753899035526513809799754906452257918478522605215649427090274",
+          "0.1999974004246100964473486190200245093547742081521477394784350572909726"
+        ],
+        "error": "3.276350788421685312359710994570988684794483514999695423007222248502604e-59"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "dust_finite_canonical_witness_0.0000005",
+      "passed": true,
+      "value": {
+        "coefficient": "-0.6818181818181818181818181818181818181818181818181818181819969023493675",
+        "dust_momenta": [
+          "0.2000012997878654063217802359445331998680674413784715848062370168090591",
+          "0.1999987002124755027691288549645577092228416495306193242846720741000318"
+        ],
+        "error": "1.787205311856910888526427821203294754922696388960579520331035711291435e-58"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "phase_finite_canonical_witness_0.0000005",
+      "passed": true,
+      "value": {
+        "coefficient": "-0.6818181818176975723140502746261034923925009608236030386732523530401474",
+        "derived_finite_step_coefficient": "-0.6818181818176975723140502746261034923925009608236030386730766499350537",
+        "dust_momenta": [
+          "0.2000012997876949517763256904899877453226128959239261302607824713545137",
+          "0.1999987002123050482236743095100122546773871040760738697392175286454863"
+        ],
+        "error": "1.757031050936797189232856250036341461159246395302844903390959823403488e-58"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "dust_finite_canonical_witness_0.00000025",
+      "passed": true,
+      "value": {
+        "coefficient": "-0.6818181818181818181818181818181818181818181818181818181823591295125206",
+        "dust_momenta": [
+          "0.2000006498938900895245264816086302362976700843255994287667548720408932",
+          "0.1999993501061951377482007911186424909750571884016732985059724006863795"
+        ],
+        "error": "5.409476943387595835530075537558411467195708868216234796164081667265635e-58"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "phase_finite_canonical_witness_0.00000025",
+      "passed": true,
+      "value": {
+        "coefficient": "-0.6818181818180607567148760760484289889929378613220063759282545738124244",
+        "derived_finite_step_coefficient": "-0.6818181818180607567148760760484289889929378613220063759277277241715065",
+        "dust_momenta": [
+          "0.2000006498938474758881628452449938726613064479619630651303912356772568",
+          "0.1999993501061525241118371547550061273386935520380369348696087643227432"
+        ],
+        "error": "5.268496409179218555516712076768912724356583395225472635675939755460636e-58"
+      }
+    },
+    {
+      "criterion": "exact",
+      "name": "phase_witness_refinement_to_derived_limit",
+      "passed": true,
+      "value": "O(amplitude^2) square-root remainder"
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_dust_A",
+      "passed": true,
+      "value": 8.448957622346769e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_dust_R",
+      "passed": true,
+      "value": 1.734723475976807e-17
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_dust_K",
+      "passed": true,
+      "value": 3.330669073875469e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_phase_A",
+      "passed": true,
+      "value": 8.448957622346769e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_phase_R",
+      "passed": true,
+      "value": 8.881784197001252e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_phase_K",
+      "passed": true,
+      "value": 3.940005277378967e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_fixed_both_A",
+      "passed": true,
+      "value": 1.4411044206882562e-15
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_fixed_both_R",
+      "passed": true,
+      "value": 3.608224830031759e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_fixed_both_K",
+      "passed": true,
+      "value": 4.4408918979413317e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_clock_D",
+      "passed": true,
+      "value": 0.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_clock_S",
+      "passed": true,
+      "value": 2.842170943040401e-14
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_clock_W",
+      "passed": true,
+      "value": 4.46403056217517e-15
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_clock_Hd",
+      "passed": true,
+      "value": 9.488290887626327e-16
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "all_257_original_vs_orbit_section_clock_Hp",
+      "passed": true,
+      "value": 1.050588753499943e-14
+    },
+    {
+      "criterion": "exact",
+      "name": "all_source_pins_after",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "exact",
+      "name": "all_exported_coefficients_roundtrip_exact",
+      "passed": true,
+      "value": 1172
+    }
+  ],
+  "full_nonlinear_evolution_verified": false,
+  "gate_effect": "NONE",
+  "homogeneous_canonical_analysis_checked": true,
+  "inherited_sidecars_absent": [
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FORCE_COMPLETION_OPTIONS.md",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_NONZERO_GRADIENT_FORCE_LOCAL.md",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md"
+  ],
+  "passed": 124,
+  "physical_EFT_cutoff_derived": false,
+  "physical_Hessian_verified": false,
+  "physics_pass": false,
+  "review_dependencies": [
+    "G3N5/B1",
+    "fixed-charge and clock boundaries",
+    "all inherited scientific/review debt"
+  ],
+  "review_status": "DEFERRED",
+  "runtime": {
+    "mp_digits": 70,
+    "mpmath": "1.3.0",
+    "numpy": "2.4.6",
+    "python": "3.13.9",
+    "sympy": "1.14.0"
+  },
+  "schema": "r4c1-g3n5-mean-mode-energy-v4",
+  "script_sha256": "4b56c1f89406dba379f790b1f1a0cea66ee9ed570717ac201925f9d219d5e469",
+  "source_sha256": {
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/summary.json": "930dc4300fe47698ef1b5938214811fda3b5aed6c4d96361e5f9cceebd4d7c75",
+    "Analysis/MasterTests/outputs/r4c1_g3_attempt_01/trajectories.npy": "b0179f04368a860baabe0d9713a65a809c638ffdab35edc7071a4656c77c6506",
+    "Analysis/MasterTests/outputs/r4c1_g3_fd_attempt_01/summary.json": "00ceee7e06cca286baab567e169373ce2b5d1b8ec057f5a7fd5746d6c6748c98",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/formulas.json": "f4b7a2e69c7a51ebf33d25b94e03a60f7ca2680fecb481e42d4258cf9219ace6",
+    "Analysis/MasterTests/outputs/r4c1_g3a_attempt_03/summary.json": "3c46b9834c6805c0ae46aeb0ff6226ec2abf814db873abc1d8fc104b8eacab72",
+    "Analysis/MasterTests/outputs/r4c1_g3d_attempt_01/formulas.json": "68aaddb629ba729aa197804d46f8228d509111195757288221d21bb7f7a692e8",
+    "Analysis/MasterTests/outputs/r4c1_g3d_attempt_01/summary.json": "c309ec0fbd3e3c3bff9ac05c86c4c0fe5f5e37edd5cc66a2a37cabb9bc6e5b72",
+    "Analysis/MasterTests/outputs/r4c1_g3df_attempt_01/summary.json": "877b6f630a6692965656005fc823a2141b21daac4d32461f77e28dd12905a5a3",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/formulas.json": "f634e510fd6e04f51f0c2c6cc1f43d284b0b0c9e5d9c44d4a3b4de9d8a35e87f",
+    "Analysis/MasterTests/outputs/r4c1_g3e_attempt_01/summary.json": "1f13df62495f3a39198b697a7387f14086338306a8a5e24462b1e873800f1b5a",
+    "Analysis/MasterTests/outputs/r4c1_g3e_gr_attempt_01/summary.json": "813353365311041ba341c96ec5949520e927df06f69bde8e5be19227930a5d28",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/columns.npy": "2a7df2c3ca35f5d438f54520241c880692c9804d03f3bf1bf696cf183345bccc",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/embedding.json": "c235d8c9f81314f01ade15dddd215263fc22754efa6caee485d793f85e432300",
+    "Analysis/MasterTests/outputs/r4c1_g3f_attempt_01/summary.json": "3c3241a44e43b986971c8c340643b6b9c87ca97c803347cb9da5c0a934fa05e1",
+    "Analysis/MasterTests/outputs/r4c1_g3i_attempt_01/summary.json": "0d85d136e7c7a3c4cd4b49d984f70d3bfdbdd70aed82b3fc423181028aa1d9c7",
+    "Analysis/MasterTests/outputs/r4c1_g3k_attempt_02/formulas.json": "b369f337b38fd29c8d6c16b4fed6bf787069089c682c9c639c38224e161bf8d5",
+    "Analysis/MasterTests/outputs/r4c1_g3k_attempt_02/linear_trajectories.npy": "746dcdae9d9d3b8da334523f60de69150b8c49941f8ad256e3f60e56e0ebc4d4",
+    "Analysis/MasterTests/outputs/r4c1_g3k_attempt_02/matrices.npy": "48cdb08629a4b1a252c62de632b7cf82d97e8f7b554c93a14376ef7c93ba3989",
+    "Analysis/MasterTests/outputs/r4c1_g3k_attempt_02/samples.json": "69102fff332222f34684151e08a218fd92c6ae7a5153fd49d5900cf9e4b430d5",
+    "Analysis/MasterTests/outputs/r4c1_g3k_attempt_02/summary.json": "131e175a3d1a6979a7c3a68a6f5d84a21b533ce01a7850066fcfde5800d2d6ab",
+    "Analysis/MasterTests/outputs/r4c1_g3k_c1_attempt_02/samples.json": "339373b084ba6b73c2eda87b58c215564afb86dab1ea55dbe3b68267e88c4cff",
+    "Analysis/MasterTests/outputs/r4c1_g3k_c1_attempt_02/summary.json": "39818742f14afe951780c20425b206128b11bf8007e3b84efd5743979e3262e7",
+    "Analysis/MasterTests/outputs/r4c1_g3k_c2_attempt_01/summary.json": "31f28b8d0bb12b2ff297f3a2f76d4de0f9ddef49ae5c2d06fce65fbf9d59e39d",
+    "Analysis/MasterTests/outputs/r4c1_g3n1_attempt_01/summary.json": "1c355b1f40afdc3a770d27adaaa1cd0c2b6b0fefb1d5b00d2cadc08778754167",
+    "Analysis/MasterTests/outputs/r4c1_g3n2_attempt_01/formulas.json": "f898a66f3581782386cdf5960c9ea9dfdd0522508a42d7366abeaa8f3ba939b6",
+    "Analysis/MasterTests/outputs/r4c1_g3n2_attempt_01/samples.json": "f175c5047bb90574708e6c61c3d8f27aac59cf5b13ae0becc0b77682549f98c1",
+    "Analysis/MasterTests/outputs/r4c1_g3n2_attempt_01/summary.json": "7f0fee4b79104cb43dab3b712b851c1de253d683fe870e920bb2d80e18789252",
+    "Analysis/MasterTests/outputs/r4c1_g3n3_attempt_01/summary.json": "d4f6abf7b98bde67f1e4ce12534fc0fd8fb608cf5d4616d94fe6e9efaa3ec8a4",
+    "Analysis/MasterTests/outputs/r4c1_g3n3_attempt_02/summary.json": "ee6683f0b99a087f009e29c653e719fb86647242182c58beea7f44b5e9998871",
+    "Analysis/MasterTests/outputs/r4c1_g3n4_attempt_01/force.json": "03b9116e8dcc367216364a4898fbdfb78d036918a48f715453555b952ca6c76a",
+    "Analysis/MasterTests/outputs/r4c1_g3n4_attempt_01/formulas.json": "1dee96271de67aec5336ac84753c18728a65e130e05c1c7731559c5a6a49727a",
+    "Analysis/MasterTests/outputs/r4c1_g3n4_attempt_01/independent.json": "ea9db7167daa3598e0c3425e5ee969c862aa93e6dfdeb1465e96795048a3eaf3",
+    "Analysis/MasterTests/outputs/r4c1_g3n4_attempt_01/summary.json": "6dde40b37ca40409566151c997bcc663edd923f1119fdcd019728a87dfd450e1",
+    "Analysis/MasterTests/outputs/r4c1_g3n4_force_attempt_01/formulas.json": "e042b6b365cc1fded9b799643a4d90881eef1520839f5a31eef8d7edcfce9c57",
+    "Analysis/MasterTests/outputs/r4c1_g3n4_force_attempt_01/independent.json": "dcd529971dc9eac6449619fc26284f3ea18a357f6406f44e35fb93145868d45e",
+    "Analysis/MasterTests/outputs/r4c1_g3n4_force_attempt_01/summary.json": "ea235d26bb91f33b5c134d161d26df33ae52cee415433b59d3eedf6d1ac4e287",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_attempt_02/export_audit.json": "1e8025c48c325524cb54ab7084a9450a206aa57bff75e141e4a3d2414d13a5e0",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_attempt_02/formulas.json": "f40c525a8ee56117d980e6706484ea61002b4e70e13bd17d19666bf4a001c92e",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_attempt_02/independent.json": "3893d1057c8c02589c18aa719404cf626d3f375ec3fde0cb16b86950f4958c0b",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_attempt_02/kernel.json": "cf30a7e334d154e492f8ca7bde92cf95754390b602f4914e5b6ba8fed90a74e3",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_attempt_02/summary.json": "560e369d7795ed8e06d0c2c26350d3b412a53c577da82f0669e68f6ee04f5666",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_constraint_response_attempt_01/background.npy": "195a35d6c60e8a58f7bc9e01f790f334167b3ab269383cb277027355f378d461",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_constraint_response_attempt_01/coefficients.json": "f2d6b0531065348b0858209e5273c16046837ed005405969beab7920fbe275f6",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_constraint_response_attempt_01/diagnostics.json": "953bb6a997cca0d158bd39a0ff0aba7b2ed9d8a115cc04d9fac98c82856e61b6",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_constraint_response_attempt_01/summary.json": "b13e97122e724e58465db28df036ee835fd305b31078146cb7a283da38ee9d95",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_constraint_response_attempt_01/time.npy": "f900ac5ed04b6906ef5ae47453cdb9af4538a11eca6f0016a25d82954ab66339",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_constraint_response_attempt_01/unreduced_fields.npy": "598ec1ae07cf68be3dce7b8ae0ad23d5f0eb03d3d9f12a467813e5c469925d79",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_constraint_response_attempt_02/diagnostics.json": "bd91927a1d0b2211f8cc5f90696808c08f7f6ee166a25e32b5eb3be85253af9c",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_constraint_response_attempt_02/series_coefficients.json": "ca95d2b2cf38facbcad6367aa6ef211c2ec9a2915d8b7aa8b33cba02256d0d8a",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_constraint_response_attempt_02/summary.json": "04705ea37aa944a567387073b1eda81c824d447566d061ddfd684abfbf30649d",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_constraint_response_attempt_02/unreduced_fields.npy": "536831be9015b1a7b517528cdb781f01f993a70780d17e0897b6d28ce72b849b",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_time_block_attempt_01/formulas.json": "2a900b83fdbf966390ac0fdbdec5e755d17c2e9ca224947c38cfd2c0e3ebbaaf",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_time_block_attempt_01/independent.json": "d0074be2860e0d9a6a687d7936e6213366716fa2c57eb1ad6808e7c69a7dc591",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_time_block_attempt_01/summary.json": "5f079b1e9848dcbdcebac5ffeb7944d9d24f454684b1e0b288f5cebbfd84f265",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_time_compare_attempt_01/comparison.json": "7450936b38eabb6719b682ab2b8a356507ae729c81da312de841f532c0f5de67",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_time_compare_attempt_01/summary.json": "2fb997e71b2fe24cc3aa8e458a26663c65165bcba068b3a12e40aedaae11d261",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/matrices.json": "1877c4b4412e37b15ed6297d099ff12302c59cdad929858085b97178eae47355",
+    "Analysis/MasterTests/outputs/r4c1_g3s_attempt_01/summary.json": "550caae54b03b490a5388ecd363ad0f9ff0d8d4891021d2eb1c366871d54378a",
+    "Analysis/MasterTests/outputs/r4c1_g3t_attempt_02/initial_data.json": "c1b80b7c8cd1fd74e07fe797214a56f6c14f32f0416bb3966f6371cf4a85d243",
+    "Analysis/MasterTests/outputs/r4c1_g3t_attempt_02/summary.json": "386120a3d38819127341cdd2db6dec9741471783a19beab2d4d7f6c1eca073b6",
+    "Analysis/MasterTests/outputs/r4c1_g3t_attempt_02/trajectories.npy": "470bdd1212e45fb3334e549003a6d6233f26f396043924c2ccb9b20bf13c18cd",
+    "Analysis/MasterTests/outputs/r4c1_g3v_attempt_01/formulas.json": "1dc1d63b3b54a59f7236051125c028006b3c74ff24c5a16f99d2879fd6a90358",
+    "Analysis/MasterTests/outputs/r4c1_g3v_attempt_01/samples.json": "93288f37a919d22f59a397ab8ffb732f8386d23ee561469be2bebea489af3d03",
+    "Analysis/MasterTests/outputs/r4c1_g3v_attempt_01/summary.json": "07e85fbd5c13b7390be3dadad723a36f445aa065d678b51f8070255834157cae",
+    "Analysis/MasterTests/outputs/r4c1_g3v_crosscheck_attempt_01/grid.json": "bbb332d89a5a63af119c6f7c34580516ca450e19dc46c67a4d0a31c61d3a859b",
+    "Analysis/MasterTests/outputs/r4c1_g3v_crosscheck_attempt_01/summary.json": "b752415f0d5741c80a47dca5c699f7dc2ca54d31fc43ba04ded4c335939bf492",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/pencil.json": "abb6a23cba1f80b0a02bf76d1bb47153bd745be55e83c44e9bd8183f9a9d5bb4",
+    "Analysis/MasterTests/outputs/r4c1_g3z_attempt_01/summary.json": "60d9de53f95592512e094ffc60c81a781ab8f9b33a8afa93dbf53943efbb34bf",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_summary.json": "e7a9e0cbaf64657153ce497abf1b3ceb90c0722822a1913f94d5c7726176a9d7",
+    "Analysis/MasterTests/outputs/test_01_r4c1_interacting_background_trajectory.csv": "0024b7307de64d780aca3d47401fc8175d59baa354d53912b80ab6842d346daa",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_matrices.json": "27d5a7130293866373ec1a98fbb6d0be0036421ef937416f77dd05b80f61349a",
+    "Analysis/MasterTests/outputs/test_01_r4c1_scalar_constraints_summary.json": "10bdc2ac1faeb30203cd75f5015ab41e64dd19b6cef37193f6987baf85bfc033",
+    "Analysis/MasterTests/test_01_r4c1_current_audit.py": "625c6e1b32818719ba0f12ff93b37ea680e6955f9f60f37784f99a45e7f3d740",
+    "Analysis/MasterTests/test_01_r4c1_equal_newton_scalar.py": "eb5d8c41938d346a294aa03f713ea10655b939234dab7935f4a0ee9f774553f9",
+    "Analysis/MasterTests/test_01_r4c1_full_variation.py": "aa62287597554b3292f9186c815d0f3b2bcb4c1e7496a52af1db07af6a857dd0",
+    "Analysis/MasterTests/test_01_r4c1_g3_coupled_vertex_regularity_crosscheck.py": "4898f85f20e30bb0ba3c61492d97657bde0163b3bf74a67c60ba38d9cf027f19",
+    "Analysis/MasterTests/test_01_r4c1_g3_coupled_vertex_regularity_v1.py": "875aefe980e4b78a1173a69bbd129d81a7dc4b2b0872c0a16774bc7c177bfe8b",
+    "Analysis/MasterTests/test_01_r4c1_g3_density_action.py": "1a855ad2a5bbafbee0ad7164604a210f5a236529896cbbab5a62173d6e822fc8",
+    "Analysis/MasterTests/test_01_r4c1_g3_finite_k.py": "24ef13486d8477cb021dc4931d6e64c6d6fcc8fa52a330c106515c4507624504",
+    "Analysis/MasterTests/test_01_r4c1_g3_finite_k_scalar.py": "05f3c588d8424a9d7f65c69624b483394144da5ae242c75c54f238ef895e37de",
+    "Analysis/MasterTests/test_01_r4c1_g3_slow_action.py": "64e59e69851734cd24a4abbd31d7b02b17490395b1d841b1a0f06bd246681b90",
+    "Analysis/MasterTests/test_01_r4c1_g3_tilted_background.py": "408320a076b4dabcfd01e4ec95d1cd7c7fcb788998012f85b64cc9f86916931b",
+    "Analysis/MasterTests/test_01_r4c1_g3k_c1_clock_entry_v1.py": "c507867b48a425b1ad33aae80e8d8c2a5f19faf1f2a2e995264c65f7937de122",
+    "Analysis/MasterTests/test_01_r4c1_g3k_c1_clock_entry_v2.py": "d031e3347d00b956b9abebc4cded2bf199a993cf3348bc151303f17f90d79224",
+    "Analysis/MasterTests/test_01_r4c1_g3k_c2_principal_time_domain_v1.py": "fead8539da3efe118e297c90feb849beda9cc576bd4b9fdb236c08b93597b7ea",
+    "Analysis/MasterTests/test_01_r4c1_g3n2_transverse_multimode_entry_v1.py": "a5a9c4d0414224dbb30ac3bb7d454d3749ca2ec04028de424738a54c4f251198",
+    "Analysis/MasterTests/test_01_r4c1_g3n3_second_order_regulator_v1.py": "991c6234e46fab15c8de5a32907d3f7964e2c88b8182566961d3474b79909c8b",
+    "Analysis/MasterTests/test_01_r4c1_g3n3_second_order_regulator_v2.py": "937c9e2130ce17c7ef671471e02f9ff81c63e84de5d191ed10bd87c7fe3f1a20",
+    "Analysis/MasterTests/test_01_r4c1_g3n4_coupled_source_v1.py": "080bb2c0aef277dda5a57f3f61a449e4da2f92813f84af05f5fa711666e29144",
+    "Analysis/MasterTests/test_01_r4c1_g3n4_force_coverage_v1.py": "8474fd75bcab4c31da804dc41db813063c1186e2a937b6939a364ad153c6aff8",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_constraint_response_v1.py": "6b9cc5f402957172c0dfcaa2f0a81997235287380e77a60c4649eb9e16a09f37",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_constraint_response_v2.py": "6c1f2417b7a17ae5a07df07ae0957e6f66259d15398d8db9a39e9b57b3ffea9f",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_kernel_time_comparison_v1.py": "8ca28749588d6b4be757cab976ce7ac555c722dcadd97bf857dcde22592ae1f0",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_mean_mode_energy_v1.py": "13918f5109a41db54e713b53a4ec8469d212291a0c3dae753cc96803b6941c65",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_mean_mode_energy_v2.py": "0e3773a0a91f3de67d547b82aec41d9df4e4358c9392c8b66c2a6e9c090d65d1",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_mean_mode_energy_v3.py": "812b68910ef7dad544b77545c2f6ba52dc77f160357adb3cc2e925bcac137a1c",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_mean_mode_energy_v4.py": "4b56c1f89406dba379f790b1f1a0cea66ee9ed570717ac201925f9d219d5e469",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_response_kernel_v1.py": "0863c4b150a3184d152263da2fa65f4f50f5b344653294cf8fc99326b62295f7",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_response_kernel_v2.py": "7321e53304864f0832a3e5a6ce3fce5dc2d156d3fa12d29df267b93910730b3f",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_temporal_block_v1.py": "917724cb2cccf29bfebb594bc58b8f43eeab1af477508f08308fa4c06f8f36ee",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_scalar_constraints.py": "977138ff89690608d21feb6e7f436ca0898ca86d1f9f702d536b2191648018ed",
+    "Analysis/MasterTests/test_01_r4c1_scalar_propagation.py": "745fd890250e965f3d1e5d562d72667e12c16ca6608fad9a72439fa735fcbbda",
+    "Theory/Core/ITSM_G3N5_MEAN_MODE_ENERGY_GOAL_PLAN_2026-10-11.md": "9d9a8f5cb73d05393af3a0f63d07f25140d01f3773bd2e735308e751734b86f3",
+    "Theory/Gates/ITSM_MASTER_TESTS_01_03_REQUIREMENT_DISPOSITION_2026-09-30.md": "9ccd38b3c1d20670c759488ce6f4ecd865355090733359cd506d7b01fd3c9ac3",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_CONTRACT_2026-09-30.md": "4bb989979850468d4322baeec9cbdaaaadd8318825724042711c062fc944e9f8",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_FAMILY_REPORT_2026-09-30.md": "1b9fbc4185b61d1e37d7865baa811994e235523eb9ecc22432c733b4bc38aa04",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_CONTRACT_2026-09-30.md": "92fc34dd19f2bc5de077703b0e7a8b209c14fdf1ae66674bc1f8176d8e4be1c5",
+    "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_CHECK_CONTRACT_2026-09-25.md": "ad553a06fcec073cc176a68ef3f6b1bb77b5506d0ba5006606ff56ab595318db",
+    "Theory/Gates/RES-001/RES001_R4C1_G3K_C1_CLOCK_ENTRY_CONTRACT_2026-10-09.md": "00ad4d640181736a2e8049568df181b2d3a64f58de61f0aa836d989f708713b1",
+    "Theory/Gates/RES-001/RES001_R4C1_G3K_C1_CLOCK_ENTRY_REPORT_2026-10-09.md": "ccab89c81f331cc7fc0288e998cf190311119b5f1c3717bd48d32752b32aee7c",
+    "Theory/Gates/RES-001/RES001_R4C1_G3K_C2_PRINCIPAL_TIME_DOMAIN_CONTRACT_2026-10-09.md": "ee6dbfbcc0a572f812c02f52b0bf3794a91aeb45ccd494f81e73383b5ecdb339",
+    "Theory/Gates/RES-001/RES001_R4C1_G3K_C2_PRINCIPAL_TIME_DOMAIN_REPORT_2026-10-09.md": "5145e5e0cb67871ca918d9919b6433233f65e22c9126eb048ece7e0ad5a9e82d",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N1_CLASSICAL_CUSP_AMPLITUDE_CONTRACT_2026-10-08.md": "83a6aafc934d00982b28ce745ef4626fdd6a4a017e5c2dcd328e14ea0985a102",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N1_CLASSICAL_CUSP_AMPLITUDE_REPORT_2026-10-08.md": "c72e32b6f81f35f51d336de945debb8936b94623fdba44e15fc64e0e622202b4",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N2_TRANSVERSE_MULTIMODE_ENTRY_CONTRACT_2026-10-09.md": "43878a67d4002e32e3dc70e318659cd65e11699433eee7d7e2b3e5f7a29504db",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N2_TRANSVERSE_MULTIMODE_ENTRY_REPORT_2026-10-09.md": "e0f066347d13bbd00566cf8f9af5857e424e4c8ce1102f1eebd457b419c9da19",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N3_SECOND_ORDER_REGULATOR_CONTRACT_2026-10-09.md": "525c4ac96d08574912a49c31e7e64df597a1e13e34bffbc483ad36a23c9a9530",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N3_SECOND_ORDER_REGULATOR_REPORT_2026-10-09.md": "7111692a94582e3a1d44f0ca5fa3a5a2a1a4550db009beecc851e841119fd32b",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N4_COUPLED_SOURCE_CONTRACT_2026-10-09.md": "a5f5880e894c544794fa46e7e68dfdd07c4960d44791751521b402cd8bb9a2b6",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N4_COUPLED_SOURCE_REPORT_2026-10-09.md": "1c7eca17f22a8e3e3ec39bb09017d05908b133f130b1f24e85f523b18af47a4b",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N4_FORCE_COVERAGE_CONTRACT_2026-10-09.md": "a772168e982dc77b77f8301879f32bba073a37e01ce7c332f12e4bfcd266ae23",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_CONSTRAINT_RESPONSE_CONTRACT_2026-10-10.md": "f27a299020e02e15ee20f1d0ade6ca5447fbc272bace1a2c9f8d4846ca3e708b",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_CONSTRAINT_RESPONSE_REPORT_2026-10-10.md": "b0b6ee418edb54a90bbed4ce8be31717d5ecd12a5b96d66625de02177d98c931",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_EXPORT_V2_ADDENDUM_2026-10-09.md": "fbd2a6085c0b2909a1549bb0bbefe32ed87696f124cb4778e797d7659990e7f0",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_KERNEL_TIME_COMPARISON_CONTRACT_2026-10-10.md": "2d1098fbb289066ec1bfa141dbd63f9915ea489d7bd23713466f0c746fc71d64",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_CONTRACT_2026-10-11.md": "b82a740a0bb12946e6ae195fb0f6648d6727f8a87c7d9ae96c1fd491c6191446",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_V2_COMPUTE_ADDENDUM_2026-10-11.md": "de96b97cd4abba079614ec96aff80b30b8fb0c5cd8d9917ec5c0f38fa23ed157",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_V3_ORBIT_ADDENDUM_2026-10-11.md": "8287655bf18bcc0eff40bf9d0f51ac87ccfbcd9afe028a173d464834f8063d9b",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_V4_COMPUTE_ADDENDUM_2026-10-11.md": "558eec528a17ec282d3eaa990011c5fc3b2773b30d6833ecd141184e766246bd",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_RESPONSE_KERNEL_CONTRACT_2026-10-09.md": "11cf25cef8cc0192f1f690dbf1f7fee2f9e0268eff508d7fb1a65709907f2c02",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_RESPONSE_PRECISION_V2_ADDENDUM_2026-10-10.md": "a7242a538b09719bd03f3001379c729729f3c2a901c0ab309b72383e1b4fda5b",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_TEMPORAL_BLOCK_CONTRACT_2026-10-09.md": "a71a15d2e2d8620ce7b58666abed3eb512d31138a7628c2c648c8fe94ab0adfe",
+    "Theory/Gates/RES-001/RES001_R4C1_G3V_SOURCE_INTEGRITY_ADDENDUM_2026-10-08.md": "6bd6808e2240354fd29b7204215e3bf0a33f53a109035afb0ed41d88b8a11834",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_COUPLED_VERTEX_REGULARITY_CONTRACT_2026-10-08.md": "53940518eeff7ca46fb5a9373db6e4637360eeedaeffcba6044af5cc580ac3ac",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_COUPLED_VERTEX_REGULARITY_REPORT_2026-10-08_v1.md": "952b4315a5607358a4fc0250a9ab67efc90577dda77f006b357fc1cbd74eeb27",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_CONTRACT_2026-09-30.md": "0ff843db7c1887fea71e307fd8801841427628d0426bf8f9bd83e4b78e9c5758",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_DENSITY_ACTION_REPORT_2026-09-30.md": "8a1c2245fc02307c5e70c7b4c1064872e82464c4c411d3095e97575c730b1876",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_CONTRACT_2026-09-30.md": "75050556086b27f794b2378ac389f6bb864ae03e4441c395ff5fc64538b1cd55",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_CONTRACT_2026-10-08.md": "26ecfebc6d7792c0a5d6e065b8512f803d5ddd6e6316d01300d83ad7ef2769ce",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_REPORT_2026-10-08.md": "a247893f8f0cb15760c20cc24b4f19b91f701ce2aaa0ec585a534b3436b78d13",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_REPORT_2026-09-30.md": "25b39464948805df96eeded13cc96fa04c87e767e1781113514f85d5fd957771",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_SCALAR_CONTRACT_2026-10-08.md": "eaefd9650e265512a516cf9770e67e8b6e3297e7ab0de2ab095b4c6d448366f9",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_SCALAR_REPORT_2026-10-08.md": "81c11fc9cc9efbb9ad6b2d6f0e2bd26653a13d2fb126031b4941ae326f782c31",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FRAME_SCATTERING_CONTRACT_2026-10-08.md": "f54c7a7297350256ae199c3ba2b5f19266094c57739b95c6dad0ee253627d5f8",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_FRAME_SCATTERING_REPORT_2026-10-08.md": "035d1480904b2459b6a4e8b6df91d381065a653fdeb49583fcdb3dbfc4ac49f4",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_CONTRACT_2026-09-30.md": "f6a35a4ade82c8d925b44d6984164eb761e50015936623b0683e071516f62a43",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_SLOW_ACTION_REPORT_2026-09-30.md": "2158f16970e883eb661aaabd04a1014aef3d8a47e6346ad7cb27453f464db83c",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_TILTED_BACKGROUND_CONTRACT_2026-10-08.md": "508252d61dcdc73c28d9c568e4b80769aa1a3c88bb68cfc1a3306ccac078f9ac",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_TILTED_BACKGROUND_REPORT_2026-10-08.md": "f3ad690310aa762aff87f37fba961f5be9280b4c1844a9d608c2b90b5e037105",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_VERTEX_REGULARITY_CROSSCHECK_REPORT_2026-10-08.md": "0b35ad651859271e9310b8aeec5a0957805efe35cd05fbece96b498969c22409",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_CONTRACT_2026-09-30.md": "d1d64c216465956424589f95c940116bc198f5670552297b7e611894bcd385fa",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_EVOLUTION_REPORT_2026-09-30.md": "d350c85fafb752502c017b7c93bc0223b4386ed72c39080c3e01126478d60f02",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_CONTRACT_2026-09-30.md": "47723c96936643b6be19d22e00a4f98bc3f4208cb409e61c255e041b7ce725e5",
+    "Theory/Gates/RES-001/RES001_R4C1_G3_ZERO_INNER_REPORT_2026-09-30.md": "fe8d380be77af9e5ccecb02c62b8264d5ecbb6bf5d42153755c2914cd355cdbd",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_EQUALITY_SCALAR_KINETIC_OBSTRUCTION_2026-09-30.md": "a8966e9bff26f8514fb466f5f9be67acab6fb0340760148e1d3c642e3a14a3d1",
+    "Theory/Gates/RES-001/RES001_R4C1_GR_LIMIT_REPORT_2026-09-25.md": "b3f3483ae99c868ee60a09b8bd44dd5375dadbc137d04f239405c159a5a8c404",
+    "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_CONTRACT_2026-09-25.md": "3d5f164529ee2621aaa41bd08f8ba0a1ad2e4b866591f5aa4475f188fdf99a59",
+    "Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md": "2f151504d695ee442585653982cbbabfca2f520e864a802de306c0b013f3abc4",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_CONTRACT_2026-09-25.md": "78da952e4a9faa7c4f3381b5cbe181416e74e142cdbb5904780801cc21ac94e6",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md": "0b5f06aa3ca91876895c0f1ab521093fa44034f04ce62d605d676f9190824b1b",
+    "Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md": "653541272bfe9b1ddfd82d7083cd77ba30e421daa3b7162816783d5ed03633d9",
+    "Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md": "16f50f7150cddff8c297d237441fd9aabedb9f4f9c6f341b180160c508b619e5",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FORCE_COMPLETION_OPTIONS.md": "d71848c053fbcae635e7071222e06419df839a0a169c87c58e84195c0f73b2fd",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_NONZERO_GRADIENT_FORCE_LOCAL.md": "f58e85f8dd5d78fc563bdb537cb68db16379486920641126ea40e4d992134bf2",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md": "c2a5c82f285dc04adcfffed4ba5c562661ddca98c4d045802ffb6e88bfeefd68"
+  },
+  "status": "CONDITIONAL_HOMOGENEOUS_CANONICAL_CHARGE_SECTORS_CHECKED",
+  "total": 124,
+  "validation": "PASS_LOCAL_CHECKS"
+}

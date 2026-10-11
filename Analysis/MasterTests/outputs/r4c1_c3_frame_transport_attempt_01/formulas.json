@@ -1,0 +1,39 @@
+{
+  "B1_initial_Sdot": "-42179/66000 - sqrt(4006695)/9625",
+  "C_chi_conditional": "beta**3/(12*pi*A*G_E*H_E*P**2 + 12*pi*A*G_E*P**2*beta*psi_dot)",
+  "C_dyn": "beta**3/(12*pi*A*G_E*H_E + 12*pi*A*G_E*beta*psi_dot)",
+  "H_m": "(H_E + beta*psi_dot)/C",
+  "S_dot": "-3*H_E*beta*psi_dot + (-K_Q*psi_dot**2 - r_dot**2 - rho_E - u_dot**2 - v_dot**2)/(2*M_cos2) - beta**2*rho_E/K_Q",
+  "a_dyn_E": "beta**3/(12*pi*A*G_E)",
+  "a_dyn_m": "beta**3/(12*pi*A*C*G_E)",
+  "constant_Cchi_condition": "d/dt_E [G_E(t)*(H_E+beta*psi_dot)*P(t)^2] = 0",
+  "matter_frame_maps": {
+    "A_m": "A/C",
+    "G_m": "C**2*G_E",
+    "K_Q_m": "K_Q/C**2",
+    "M_E": "C*M_m",
+    "a_m": "C*a_E",
+    "b_m": "b",
+    "dt_m": "C*dt_E",
+    "rho_E": "C^4*rho_m",
+    "z_m": "z_E/C^2"
+  },
+  "nonclaims": [
+    "No physical a0(z)",
+    "No selected C_chi, A, P or microscopic K_Q",
+    "No common B1/static weak-field validity domain",
+    "No adiabatic bound or coupled G_eff(k,z)",
+    "No observed redshift, photon/radiation model or SI calibration"
+  ],
+  "normalized_shapes_general": {
+    "C_chi": "G_E_ref*P_ref^2*S_ref/(G_E*P^2*S)",
+    "a_dyn": "C_ref*G_E_ref/(C*G_E)"
+  },
+  "sampled_policy": "G_E and P held constant only for normalized diagnostic profiles; no values assigned",
+  "scope": "Conditional constant-local-C map; no common physical domain or coupled G_eff derived",
+  "wrong_frame_residuals": {
+    "omit_acceleration_unit_conversion": "(C*beta**3 - beta**3)/(12*pi*A*C*G_E)",
+    "omit_conformal_clock_rate": "-beta*psi_dot/C",
+    "omit_mass_conversion": "(-C**2*G_E*M_m + C*G_E*M_m)/R_m**2"
+  }
+}

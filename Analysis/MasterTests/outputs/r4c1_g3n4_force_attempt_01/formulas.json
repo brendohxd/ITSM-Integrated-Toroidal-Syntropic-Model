@@ -1,0 +1,172 @@
+{
+  "Euler_sources": {
+    "Em": "0",
+    "LambdaU": "0",
+    "Mxx": "-A*W**2*e**2*p**2*Abs(W)*Abs(e)*Abs(p)/2",
+    "Mxy": "0",
+    "Mxz": "0",
+    "Myy": "-2*A*W**2*e**2*p**2*Abs(W)*Abs(e)*Abs(p)",
+    "Myz": "0",
+    "Mzz": "-A*W**2*e**2*p**2*Abs(W)*Abs(e)*Abs(p)/2",
+    "Pi": "3*A*e**2*(W**2*(3*H*p*Abs(p) + 2*pdd*Abs(p))*Abs(W) + 3*W*Wt*p*Abs(W)*Abs(p))*Abs(e)",
+    "Sx": "0",
+    "Sy": "0",
+    "Sz": "0",
+    "T": "0",
+    "Vx": "0",
+    "Vy": "-3*A*W*e*p**2*Abs(W)*Abs(e)*Abs(p)",
+    "Vz": "0",
+    "Z": "0",
+    "alpha": "2*A*W**2*e**2*p**2*Abs(W)*Abs(e)*Abs(p)",
+    "dr": "0",
+    "du": "0",
+    "dv": "0",
+    "nu": "0"
+  },
+  "Ward_factor_controls": {
+    "longitudinal": "W_z*E_W",
+    "scope": "Declared G3 family; temporal/longitudinal only; no vector-shell substitution",
+    "temporal": "(H*W-W_t)*E_W"
+  },
+  "Y0": "W**2*e**2*p**2",
+  "coefficients": {
+    "Em": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "LambdaU": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "Mxx": {
+      "space": "0",
+      "time": "0",
+      "value": "-A*W**2*e**2*p**2*Abs(W*e*p)/2"
+    },
+    "Mxy": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "Mxz": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "Myy": {
+      "space": "0",
+      "time": "0",
+      "value": "-2*A*W**2*e**2*p**2*Abs(W*e*p)"
+    },
+    "Myz": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "Mzz": {
+      "space": "0",
+      "time": "0",
+      "value": "-A*W**2*e**2*p**2*Abs(W*e*p)/2"
+    },
+    "Pi": {
+      "space": "0",
+      "time": "-3*A*W**2*e**2*p*Abs(W*e*p)",
+      "value": "0"
+    },
+    "Sx": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "Sy": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "Sz": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "T": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "Vx": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "Vy": {
+      "space": "0",
+      "time": "0",
+      "value": "-3*A*W*e*p**2*Abs(W*e*p)"
+    },
+    "Vz": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "Z": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "alpha": {
+      "space": "0",
+      "time": "0",
+      "value": "2*A*W**2*e**2*p**2*Abs(W*e*p)"
+    },
+    "dr": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "du": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "dv": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    },
+    "nu": {
+      "space": "0",
+      "time": "0",
+      "value": "0"
+    }
+  },
+  "delta_Y": "W*e*p*(Myy*W*e*p + 2*Pi_t*W*e + 2*Vy*p - 2*W*alpha*e*p)",
+  "delta_density_over_a3": "-A*Mxx*W**2*e**2*p**2*Abs(W)*Abs(e)*Abs(p)/2 - 2*A*Myy*W**2*e**2*p**2*Abs(W)*Abs(e)*Abs(p) - A*Mzz*W**2*e**2*p**2*Abs(W)*Abs(e)*Abs(p)/2 - 3*A*Pi_t*W**2*e**2*p*Abs(W)*Abs(e)*Abs(p) - 3*A*Vy*W*e*p**2*Abs(W)*Abs(e)*Abs(p) + 2*A*W**2*alpha*e**2*p**2*Abs(W)*Abs(e)*Abs(p)",
+  "directional_degree": {
+    "Em": null,
+    "LambdaU": null,
+    "Mxx": 3,
+    "Mxy": null,
+    "Mxz": null,
+    "Myy": 3,
+    "Myz": null,
+    "Mzz": 3,
+    "Pi": 3,
+    "Sx": null,
+    "Sy": null,
+    "Sz": null,
+    "T": null,
+    "Vx": null,
+    "Vy": 2,
+    "Vz": null,
+    "Z": null,
+    "alpha": 3,
+    "dr": null,
+    "du": null,
+    "dv": null,
+    "nu": null
+  },
+  "node_scope": "No division by e,p,W,sqrt(Y); gamma+1>=2 for the future normalized frame",
+  "second_order_scope": "Only Vy starts at degree 2; alpha,Mxx,Myy,Mzz,Pi start at degree 3; remaining sources identically zero on this direction, not solved responses"
+}

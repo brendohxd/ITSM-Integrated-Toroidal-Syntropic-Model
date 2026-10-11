@@ -1,0 +1,410 @@
+{
+  "classification_boundary": "Varying dust charge retains negative homogeneous canonical direction; fixed dust control is a different ensemble",
+  "finite_canonical_witness": {
+    "exact_initial_B1_used": true,
+    "mp_digits": 70,
+    "nonclaim": "Admissible homogeneous charge-ensemble witnesses, not propagating ghost tests",
+    "rows": [
+      {
+        "amplitude": "0.000001",
+        "dust": "-0.6818181818181818181818181818181818181818181818181818181818520114841063",
+        "dust_charge_varies": true,
+        "fixed_complex_charge_per_cell": "1",
+        "phase": "-0.6818181818162448347107548072407963155242688560619667262035510270325158",
+        "phase_limit_error": "0.000000000001936983471063374577385502657549325756215091978267154785666045208927307"
+      },
+      {
+        "amplitude": "0.0000005",
+        "dust": "-0.6818181818181818181818181818181818181818181818181818181819969023493675",
+        "dust_charge_varies": true,
+        "fixed_complex_charge_per_cell": "1",
+        "phase": "-0.6818181818176975723140502746261034923925009608236030386732523530401474",
+        "phase_limit_error": "0.0000000000004842458677679071920783257893172209945787795085658287780344501540417852"
+      },
+      {
+        "amplitude": "0.00000025",
+        "dust": "-0.6818181818181818181818181818181818181818181818181818181823591295125206",
+        "dust_charge_varies": true,
+        "fixed_complex_charge_per_cell": "1",
+        "phase": "-0.6818181818180607567148760760484289889929378613220063759282545738124244",
+        "phase_limit_error": "0.0000000000001210614669421057697528291888803204961754422535636080057574150629412007"
+      }
+    ]
+  },
+  "inherited_failed_parent_checks": [
+    {
+      "criterion": "<1e-7",
+      "name": "eta1_independent_fd_balances",
+      "passed": false,
+      "value": 1.1005635230674148e-07
+    }
+  ],
+  "nonclaims": [
+    "No propagating ghost identification",
+    "No all-mode physical stability",
+    "No physical cutoff or calibrated cosmology",
+    "No original negative direction discarded",
+    "No canonical Test-1 or microphysical matching closure"
+  ],
+  "orbit_section_comparison": {
+    "normalized_max_errors": {
+      "clock_D": 0.0,
+      "clock_Hd": 9.488290887626327e-16,
+      "clock_Hp": 1.050588753499943e-14,
+      "clock_S": 2.842170943040401e-14,
+      "clock_W": 4.46403056217517e-15,
+      "dust_A": 8.448957622346769e-16,
+      "dust_K": 3.330669073875469e-16,
+      "dust_R": 1.734723475976807e-17,
+      "fixed_both_A": 1.4411044206882562e-15,
+      "fixed_both_K": 4.4408918979413317e-16,
+      "fixed_both_R": 3.608224830031759e-16,
+      "phase_A": 8.448957622346769e-16,
+      "phase_K": 3.940005277378967e-16,
+      "phase_R": 8.881784197001252e-16
+    },
+    "original_background_untouched": true,
+    "points": 257,
+    "threshold": 1e-10
+  },
+  "original_v1_failed_checks": [
+    {
+      "criterion": ">=4 or both<=1e-10",
+      "name": "full_Euler_refinement_(0, 0, 0)",
+      "passed": false,
+      "value": {
+        "errors": [
+          {
+            "error": 6.787681682336325e-10,
+            "samples": 65
+          },
+          {
+            "error": 9.000901654508906e-10,
+            "samples": 129
+          },
+          {
+            "error": 2.0895689162433894e-09,
+            "samples": 257
+          }
+        ],
+        "improvement": 0.32483645930851446
+      }
+    },
+    {
+      "criterion": ">=4 or both<=1e-10",
+      "name": "full_Euler_refinement_(1, 0, 0)",
+      "passed": false,
+      "value": {
+        "errors": [
+          {
+            "error": 4.2438280320486955e-09,
+            "samples": 65
+          },
+          {
+            "error": 6.8210201763103084e-09,
+            "samples": 129
+          },
+          {
+            "error": 9.527244316708923e-09,
+            "samples": 257
+          }
+        ],
+        "improvement": 0.44544129351294703
+      }
+    },
+    {
+      "criterion": ">=4 or both<=1e-10",
+      "name": "full_Euler_refinement_(0, 1, 0)",
+      "passed": false,
+      "value": {
+        "errors": [
+          {
+            "error": 4.2476094775346e-09,
+            "samples": 65
+          },
+          {
+            "error": 6.838389436596633e-09,
+            "samples": 129
+          },
+          {
+            "error": 9.544313525400271e-09,
+            "samples": 257
+          }
+        ],
+        "improvement": 0.4450408577034316
+      }
+    },
+    {
+      "criterion": ">=4 or both<=1e-10",
+      "name": "full_Euler_refinement_(0, 0, 1)",
+      "passed": false,
+      "value": {
+        "errors": [
+          {
+            "error": 4.240505370364774e-09,
+            "samples": 65
+          },
+          {
+            "error": 6.808703273605134e-09,
+            "samples": 129
+          },
+          {
+            "error": 9.509580647270514e-09,
+            "samples": 257
+          }
+        ],
+        "improvement": 0.44591928158071875
+      }
+    },
+    {
+      "criterion": ">=4 or both<=1e-10",
+      "name": "full_Euler_refinement_(1, 2, 3)",
+      "passed": false,
+      "value": {
+        "errors": [
+          {
+            "error": 5.018407729576437e-09,
+            "samples": 65
+          },
+          {
+            "error": 8.942024871238078e-09,
+            "samples": 129
+          },
+          {
+            "error": 1.1621032615933873e-08,
+            "samples": 257
+          }
+        ],
+        "improvement": 0.4318383654388491
+      }
+    }
+  ],
+  "sampled": {
+    "background_points": 257,
+    "charge_sectors": {
+      "fixed_complex_and_dust": {
+        "canonical_pairs": 11,
+        "dust_momentum": "1/5"
+      },
+      "fixed_complex_only": {
+        "canonical_pairs": 12,
+        "dust_momentum_varies": true
+      }
+    },
+    "clock_bounds": {
+      "psi_dot_lower": "-3469/210000 + exp(-sqrt(4006695)/15400)/5",
+      "radius_squared_lower": "700*exp(-sqrt(4006695)/7700)/3469"
+    },
+    "inertias": [
+      {
+        "counts": [
+          {
+            "negative": 1,
+            "positive": 11,
+            "zero": 0
+          },
+          {
+            "negative": 1,
+            "positive": 11,
+            "zero": 0
+          },
+          {
+            "negative": 0,
+            "positive": 11,
+            "zero": 0
+          }
+        ],
+        "eigenvalues": [
+          [
+            -0.5499999999999999,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.2499999999999999,
+            0.25000000000000006,
+            0.4999999999999999,
+            0.5,
+            0.5000000000000003,
+            1.0,
+            1.0,
+            3.0
+          ],
+          [
+            -5.3508028601726245,
+            0.012147028678675911,
+            0.16666666666666607,
+            0.16666666666666663,
+            0.1666666666666667,
+            0.24999999999999986,
+            0.25,
+            0.49999999999999983,
+            0.5000000000000001,
+            0.5000000000000003,
+            1.0,
+            1.015441545779662
+          ],
+          [
+            0.013548411451181186,
+            0.16666666666666652,
+            0.16666666666666657,
+            0.16666666666666663,
+            0.24999999999999994,
+            0.25000000000000006,
+            0.5,
+            0.5,
+            0.5000000000000001,
+            0.9999999999999998,
+            1.020574297115972
+          ]
+        ],
+        "index": 0,
+        "time": 0.0
+      },
+      {
+        "counts": [
+          {
+            "negative": 1,
+            "positive": 11,
+            "zero": 0
+          },
+          {
+            "negative": 1,
+            "positive": 11,
+            "zero": 0
+          },
+          {
+            "negative": 0,
+            "positive": 11,
+            "zero": 0
+          }
+        ],
+        "eigenvalues": [
+          [
+            -0.5499999999999999,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.2499999999999999,
+            0.25000000000000006,
+            0.4999999999999999,
+            0.5,
+            0.5000000000000003,
+            1.0,
+            1.0,
+            3.0
+          ],
+          [
+            -5.2040604805888036,
+            0.010945350101073049,
+            0.1666666666666663,
+            0.16666666666666652,
+            0.1666666666666667,
+            0.24999999999999992,
+            0.25000000000000033,
+            0.4999999999999998,
+            0.5000000000000002,
+            0.5000000000000004,
+            0.9999999999999998,
+            1.007926831297097
+          ],
+          [
+            0.012255867353656746,
+            0.1666666666666666,
+            0.16666666666666663,
+            0.16666666666666663,
+            0.24999999999999983,
+            0.25000000000000017,
+            0.4999999999999997,
+            0.49999999999999983,
+            0.4999999999999999,
+            0.9999999999999997,
+            1.0106239027667059
+          ]
+        ],
+        "index": 128,
+        "time": 0.025
+      },
+      {
+        "counts": [
+          {
+            "negative": 1,
+            "positive": 11,
+            "zero": 0
+          },
+          {
+            "negative": 1,
+            "positive": 11,
+            "zero": 0
+          },
+          {
+            "negative": 0,
+            "positive": 11,
+            "zero": 0
+          }
+        ],
+        "eigenvalues": [
+          [
+            -0.5499999999999999,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16666666666666666,
+            0.2499999999999999,
+            0.25000000000000006,
+            0.4999999999999999,
+            0.5,
+            0.5000000000000003,
+            0.9999999999999999,
+            1.0,
+            3.0
+          ],
+          [
+            -5.071525682006022,
+            0.009838534048964948,
+            0.1666666666666664,
+            0.16666666666666663,
+            0.16666666666666669,
+            0.24999999999999994,
+            0.25000000000000006,
+            0.4999999999999997,
+            0.5000000000000002,
+            0.5000000000000007,
+            0.9999999999999993,
+            1.003173289869164
+          ],
+          [
+            0.01105496413167148,
+            0.16666666666666655,
+            0.1666666666666666,
+            0.16666666666666669,
+            0.24999999999999992,
+            0.25,
+            0.49999999999999983,
+            0.4999999999999999,
+            0.5000000000000001,
+            0.9999999999999993,
+            1.0042786625788798
+          ]
+        ],
+        "index": 256,
+        "time": 0.05
+      }
+    ],
+    "interpretation": "Mean-sector canonical inertia only; no physical EFT/propagating-ghost/stability theorem"
+  },
+  "superseded_N3_attempt_01_failed_checks": [
+    {
+      "criterion": "exact",
+      "name": "reject_direct_source_as_full_Z_solution",
+      "passed": false,
+      "value": null
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "all_direct_harmonics_exact_reconstruction",
+      "passed": false,
+      "value": [
+        "-psi_dot*(4*cos(2*chi)**3 + 6*cos(2*chi)**2 - 3*cos(2*chi) - 3*cos(4*chi) - cos(6*chi) - 3)/48"
+      ]
+    }
+  ]
+}

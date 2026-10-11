@@ -1,5 +1,30 @@
 # ITSM Changelog & Archive History
 
+## Conditional G3N5 constraints and canonical-energy checkpoint (2026-10-11)
+
+- Added the [homogeneous canonical-energy report](Theory/Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_REPORT_2026-10-11.md),
+  frozen contracts, versioned executables and scientific receipts. Canonical
+  checks pass 124/124, separate unfixed-lapse checks 12/12 and complete local
+  momentum-block comparison 18/18; all pass exact read-only replay.
+- The original fixed-complex-charge sector retains an admissible negative
+  homogeneous canonical direction in both dust and force-psi clocks. An extra
+  fixed-dust-charge restriction gives a positive homogeneous momentum control
+  in a different ensemble, not a repair or a full physical stability result.
+- Retained the 9-10 October research dependency chain: frame/scale transport,
+  clock and principal-domain controls, transverse/regulator/coupled-source
+  tests, the complete 22-field quadratic kernel and constrained periodic-T3
+  linear response. The [linear response report](Theory/Gates/RES-001/RES001_R4C1_G3N5_CONSTRAINT_RESPONSE_REPORT_2026-10-10.md)
+  keeps the original binary64 120/125 failed receipt and a separate 70-digit
+  124/124 witness; the latter is not the current canonical 124/124 checkpoint.
+- Preserved all 317 original audit-baseline files/sidecars and the fourteen
+  new receipt/sidecar files through replay. Interrupted symbolic attempts,
+  original G3/N3 failures, negative eigenvalues and three inherited missing
+  sidecars remain explicit. Private logs and provenance backups are excluded.
+- Updated README navigation and append-only queue/deferred-review entries.
+  Rule-9 remains DEFERRED, not cleared; physics_pass=false and gate_effect=NONE.
+  Tests 1-3, MAT/UVIR, physical cutoff, healthy GR, microscopic matching and
+  publication holds are unchanged. No site deployment or journal submission.
+
 ## Conditional G3 research checkpoint (2026-10-08)
 
 - Added the [checkpoint/evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md),

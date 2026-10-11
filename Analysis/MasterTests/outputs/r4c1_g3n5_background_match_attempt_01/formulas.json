@@ -1,0 +1,89 @@
+{
+  "Friedmann_derivative_identity": "F_dot = 3 H A - sum(q_dot S_q) - psi_dot P_psi - D_dust",
+  "Friedmann_residual": "H**2*(3*MP2 + 3*MU2*(c1 + 3*c2 + c3)/2) - K_Q*psi_dot**2/2 - g_r*r0**2*u0**2/4 - g_r*r0**2*v0**2/4 - lambda4*u0**4/8 - lambda4*u0**2*v0**2/4 - lambda4*v0**4/8 - lambda_r*r0**4/4 - m2*u0**2/2 - m2*v0**2/2 - mr2*r0**2/2 - r_dot**2/2 - rho - rho_Lambda - u_dot**2/2 - v_dot**2/2 - lambda6*u0**6/(24*Lambda**2) - lambda6*u0**4*v0**2/(8*Lambda**2) - lambda6*u0**2*v0**4/(8*Lambda**2) - lambda6*v0**6/(24*Lambda**2)",
+  "M_cos_squared": "MP2 + MU2*(c1 + 3*c2 + c3)/2",
+  "Raychaudhuri_residual": "Hdot*(2*MP2 + MU2*(c1 + 3*c2 + c3)) + K_Q*psi_dot**2 + r_dot**2 + rho + u_dot**2 + v_dot**2",
+  "background_Euler_over_a3": {
+    "Em": "0",
+    "LambdaU": "0",
+    "Mxx": "3*H**2*MP2/2 + 3*H**2*MU2*c1/4 + 9*H**2*MU2*c2/4 + 3*H**2*MU2*c3/4 + Hdot*MP2 + Hdot*MU2*c1/2 + 3*Hdot*MU2*c2/2 + Hdot*MU2*c3/2 + K_Q*psi_dot**2/4 - g_r*r0**2*u0**2/8 - g_r*r0**2*v0**2/8 - lambda4*u0**4/16 - lambda4*u0**2*v0**2/8 - lambda4*v0**4/16 - lambda_r*r0**4/8 - m2*u0**2/4 - m2*v0**2/4 - mr2*r0**2/4 + r_dot**2/4 - rho_Lambda/2 + u_dot**2/4 + v_dot**2/4 - lambda6*u0**6/(48*Lambda**2) - lambda6*u0**4*v0**2/(16*Lambda**2) - lambda6*u0**2*v0**4/(16*Lambda**2) - lambda6*v0**6/(48*Lambda**2)",
+    "Mxy": "0",
+    "Mxz": "0",
+    "Myy": "3*H**2*MP2/2 + 3*H**2*MU2*c1/4 + 9*H**2*MU2*c2/4 + 3*H**2*MU2*c3/4 + Hdot*MP2 + Hdot*MU2*c1/2 + 3*Hdot*MU2*c2/2 + Hdot*MU2*c3/2 + K_Q*psi_dot**2/4 - g_r*r0**2*u0**2/8 - g_r*r0**2*v0**2/8 - lambda4*u0**4/16 - lambda4*u0**2*v0**2/8 - lambda4*v0**4/16 - lambda_r*r0**4/8 - m2*u0**2/4 - m2*v0**2/4 - mr2*r0**2/4 + r_dot**2/4 - rho_Lambda/2 + u_dot**2/4 + v_dot**2/4 - lambda6*u0**6/(48*Lambda**2) - lambda6*u0**4*v0**2/(16*Lambda**2) - lambda6*u0**2*v0**4/(16*Lambda**2) - lambda6*v0**6/(48*Lambda**2)",
+    "Myz": "0",
+    "Mzz": "3*H**2*MP2/2 + 3*H**2*MU2*c1/4 + 9*H**2*MU2*c2/4 + 3*H**2*MU2*c3/4 + Hdot*MP2 + Hdot*MU2*c1/2 + 3*Hdot*MU2*c2/2 + Hdot*MU2*c3/2 + K_Q*psi_dot**2/4 - g_r*r0**2*u0**2/8 - g_r*r0**2*v0**2/8 - lambda4*u0**4/16 - lambda4*u0**2*v0**2/8 - lambda4*v0**4/16 - lambda_r*r0**4/8 - m2*u0**2/4 - m2*v0**2/4 - mr2*r0**2/4 + r_dot**2/4 - rho_Lambda/2 + u_dot**2/4 + v_dot**2/4 - lambda6*u0**6/(48*Lambda**2) - lambda6*u0**4*v0**2/(16*Lambda**2) - lambda6*u0**2*v0**4/(16*Lambda**2) - lambda6*v0**6/(48*Lambda**2)",
+    "Pi": "-C**4*beta*epsilon0 - 3*H*K_Q*psi_dot - K_Q*psi_ddot",
+    "Sx": "0",
+    "Sy": "0",
+    "Sz": "0",
+    "T": "-3*C**3*H*epsilon0 - 3*C**3*beta*epsilon0*psi_dot - C**3*epsilon_dot",
+    "Vx": "0",
+    "Vy": "0",
+    "Vz": "0",
+    "Z": "0",
+    "alpha": "-C**4*epsilon0 + 3*H**2*MP2 + 3*H**2*MU2*c1/2 + 9*H**2*MU2*c2/2 + 3*H**2*MU2*c3/2 - K_Q*psi_dot**2/2 - g_r*r0**2*u0**2/4 - g_r*r0**2*v0**2/4 - lambda4*u0**4/8 - lambda4*u0**2*v0**2/4 - lambda4*v0**4/8 - lambda_r*r0**4/4 - m2*u0**2/2 - m2*v0**2/2 - mr2*r0**2/2 - r_dot**2/2 - rho_Lambda - u_dot**2/2 - v_dot**2/2 - lambda6*u0**6/(24*Lambda**2) - lambda6*u0**4*v0**2/(8*Lambda**2) - lambda6*u0**2*v0**4/(8*Lambda**2) - lambda6*v0**6/(24*Lambda**2)",
+    "dr": "-3*H*r_dot - g_r*r0*u0**2/2 - g_r*r0*v0**2/2 - lambda_r*r0**3 - mr2*r0 - r_ddot",
+    "du": "-3*H*u_dot - g_r*r0**2*u0/2 - lambda4*u0**3/2 - lambda4*u0*v0**2/2 - m2*u0 - u_ddot - lambda6*u0**5/(4*Lambda**2) - lambda6*u0**3*v0**2/(2*Lambda**2) - lambda6*u0*v0**4/(4*Lambda**2)",
+    "dv": "-3*H*v_dot - g_r*r0**2*v0/2 - lambda4*u0**2*v0/2 - lambda4*v0**3/2 - m2*v0 - v_ddot - lambda6*u0**4*v0/(4*Lambda**2) - lambda6*u0**2*v0**3/(2*Lambda**2) - lambda6*v0**5/(4*Lambda**2)",
+    "nu": "-3*H**2*MU2*c1 - 3*H**2*MU2*c3 + 3*Hdot*MU2*c2 - lambda0"
+  },
+  "background_rate_map": {
+    "Hdot": "(-K_Q*psi_dot**2 - r_dot**2 - rho - u_dot**2 - v_dot**2)/(2*MP2 + MU2*c1 + 3*MU2*c2 + MU2*c3)",
+    "psi_ddot": "(-3*H*K_Q*psi_dot - beta*rho)/K_Q",
+    "r_ddot": "-3*H*r_dot - g_r*r0*u0**2/2 - g_r*r0*v0**2/2 - lambda_r*r0**3 - mr2*r0",
+    "rho_dot": "-3*H*rho + beta*psi_dot*rho",
+    "u_ddot": "(-12*H*Lambda**2*u_dot - 2*Lambda**2*g_r*r0**2*u0 - 2*Lambda**2*lambda4*u0**3 - 2*Lambda**2*lambda4*u0*v0**2 - 4*Lambda**2*m2*u0 - lambda6*u0**5 - 2*lambda6*u0**3*v0**2 - lambda6*u0*v0**4)/(4*Lambda**2)",
+    "v_ddot": "(-12*H*Lambda**2*v_dot - 2*Lambda**2*g_r*r0**2*v0 - 2*Lambda**2*lambda4*u0**2*v0 - 2*Lambda**2*lambda4*v0**3 - 4*Lambda**2*m2*v0 - lambda6*u0**4*v0 - 2*lambda6*u0**2*v0**3 - lambda6*v0**5)/(4*Lambda**2)"
+  },
+  "lambda_U": "-3*H**2*MU2*(c1 + c3) + 3*Hdot*MU2*c2",
+  "linear_Ricci_flux": [
+    "(Mxy_y + Mxz_z - Myy_x - Mzz_x)/a**2",
+    "(-Mxx_y + Mxy_x + Myz_z - Mzz_y)/a**2",
+    "(-Mxx_z + Mxz_x - Myy_z + Myz_y)/a**2"
+  ],
+  "nonclaims": [
+    "No new on-shell trajectory",
+    "No general T3 response or evolution",
+    "No physical Hessian/stability/cutoff",
+    "No healthy continuous GR limit",
+    "No microscopic K_Q or V"
+  ],
+  "psi_K_Q_zero_unsolved_condition": "beta*rho",
+  "rate_map_domain": [
+    "a>0",
+    "C>0",
+    "M_cos_squared>0",
+    "K_Q>0"
+  ],
+  "raw_Noether_identity": "0",
+  "raw_homogeneous_Euler": {
+    "N": "-C**4*a**3*epsilon0/2 - C**2*a**3*epsilon0*tau_dot**2/(2*N**2) - K_Q*a**3*psi_dot**2/(2*N**2) + 3*MP2*a*a_dot**2/N**2 + MU2*a**3*c1*sigma_dot**2/(2*N**2) + MU2*a**3*c2*sigma_dot**2/(2*N**2) + MU2*a**3*c3*sigma_dot**2/(2*N**2) + MU2*a**3*c4*sigma**2*sigma_dot**2/(2*N**2) + 3*MU2*a**2*a_dot*c2*sigma*sigma_dot/N**2 + 3*MU2*a*a_dot**2*c1*sigma**2/(2*N**2) + 9*MU2*a*a_dot**2*c2*sigma**2/(2*N**2) + 3*MU2*a*a_dot**2*c3*sigma**2/(2*N**2) + a**3*b*z**2/2 - a**3*g_r*r0**2*u0**2/4 - a**3*g_r*r0**2*v0**2/4 - a**3*lambda0*sigma**2/2 + a**3*lambda0/2 - a**3*lambda4*u0**4/8 - a**3*lambda4*u0**2*v0**2/4 - a**3*lambda4*v0**4/8 - a**3*lambda_r*r0**4/4 - a**3*m2*u0**2/2 - a**3*m2*v0**2/2 - a**3*mr2*r0**2/2 - a**3*rho_Lambda - a**3*r_dot**2/(2*N**2) - a**3*u_dot**2/(2*N**2) - a**3*v_dot**2/(2*N**2) - a**3*lambda6*u0**6/(24*Lambda**2) - a**3*lambda6*u0**4*v0**2/(8*Lambda**2) - a**3*lambda6*u0**2*v0**4/(8*Lambda**2) - a**3*lambda6*v0**6/(24*Lambda**2)",
+    "a": "-3*C**4*N*a**2*epsilon0/2 + 3*C**2*a**2*epsilon0*tau_dot**2/(2*N) + 3*K_Q*a**2*psi_dot**2/(2*N) + 6*MP2*a*a_ddot/N + 3*MP2*a_dot**2/N - 6*MP2*N_dot*a*a_dot/N**2 - 3*MU2*a**2*c1*sigma_dot**2/(2*N) + 3*MU2*a**2*c2*sigma*sigma_ddot/N + 3*MU2*a**2*c2*sigma_dot**2/(2*N) - 3*MU2*a**2*c3*sigma_dot**2/(2*N) - 3*MU2*a**2*c4*sigma**2*sigma_dot**2/(2*N) + 3*MU2*a*a_ddot*c1*sigma**2/N + 9*MU2*a*a_ddot*c2*sigma**2/N + 3*MU2*a*a_ddot*c3*sigma**2/N + 6*MU2*a*a_dot*c1*sigma*sigma_dot/N + 18*MU2*a*a_dot*c2*sigma*sigma_dot/N + 6*MU2*a*a_dot*c3*sigma*sigma_dot/N + 3*MU2*a_dot**2*c1*sigma**2/(2*N) + 9*MU2*a_dot**2*c2*sigma**2/(2*N) + 3*MU2*a_dot**2*c3*sigma**2/(2*N) - 3*MU2*N_dot*a**2*c2*sigma*sigma_dot/N**2 - 3*MU2*N_dot*a*a_dot*c1*sigma**2/N**2 - 9*MU2*N_dot*a*a_dot*c2*sigma**2/N**2 - 3*MU2*N_dot*a*a_dot*c3*sigma**2/N**2 + 3*N*a**2*b*z**2/2 - 3*N*a**2*g_r*r0**2*u0**2/4 - 3*N*a**2*g_r*r0**2*v0**2/4 - 3*N*a**2*lambda0*sigma**2/2 + 3*N*a**2*lambda0/2 - 3*N*a**2*lambda4*u0**4/8 - 3*N*a**2*lambda4*u0**2*v0**2/4 - 3*N*a**2*lambda4*v0**4/8 - 3*N*a**2*lambda_r*r0**4/4 - 3*N*a**2*m2*u0**2/2 - 3*N*a**2*m2*v0**2/2 - 3*N*a**2*mr2*r0**2/2 - 3*N*a**2*rho_Lambda + 3*a**2*r_dot**2/(2*N) + 3*a**2*u_dot**2/(2*N) + 3*a**2*v_dot**2/(2*N) - N*a**2*lambda6*u0**6/(8*Lambda**2) - 3*N*a**2*lambda6*u0**4*v0**2/(8*Lambda**2) - 3*N*a**2*lambda6*u0**2*v0**4/(8*Lambda**2) - N*a**2*lambda6*v0**6/(8*Lambda**2)",
+    "epsilon0": "-C**4*N*a**3/2 + C**2*a**3*tau_dot**2/(2*N)",
+    "lambda0": "-N*a**3*sigma**2/2 + N*a**3/2",
+    "psi": "-2*C**4*N*a**3*beta*epsilon0 + C**2*a**3*beta*epsilon0*tau_dot**2/N - K_Q*a**3*psi_ddot/N - 3*K_Q*a**2*a_dot*psi_dot/N + K_Q*N_dot*a**3*psi_dot/N**2",
+    "r0": "-N*a**3*g_r*r0*u0**2/2 - N*a**3*g_r*r0*v0**2/2 - N*a**3*lambda_r*r0**3 - N*a**3*mr2*r0 - a**3*r_ddot/N - 3*a**2*a_dot*r_dot/N + N_dot*a**3*r_dot/N**2",
+    "sigma": "MU2*a**3*c1*sigma_ddot/N + MU2*a**3*c2*sigma_ddot/N + MU2*a**3*c3*sigma_ddot/N + MU2*a**3*c4*sigma**2*sigma_ddot/N + MU2*a**3*c4*sigma*sigma_dot**2/N + 3*MU2*a**2*a_ddot*c2*sigma/N + 3*MU2*a**2*a_dot*c1*sigma_dot/N + 3*MU2*a**2*a_dot*c2*sigma_dot/N + 3*MU2*a**2*a_dot*c3*sigma_dot/N + 3*MU2*a**2*a_dot*c4*sigma**2*sigma_dot/N - 3*MU2*a*a_dot**2*c1*sigma/N - 3*MU2*a*a_dot**2*c2*sigma/N - 3*MU2*a*a_dot**2*c3*sigma/N - MU2*N_dot*a**3*c1*sigma_dot/N**2 - MU2*N_dot*a**3*c2*sigma_dot/N**2 - MU2*N_dot*a**3*c3*sigma_dot/N**2 - MU2*N_dot*a**3*c4*sigma**2*sigma_dot/N**2 - 3*MU2*N_dot*a**2*a_dot*c2*sigma/N**2 - N*a**3*lambda0*sigma",
+    "tau": "-2*C**2*a**3*beta*epsilon0*psi_dot*tau_dot/N - C**2*a**3*epsilon0*tau_ddot/N - C**2*a**3*epsilon_dot*tau_dot/N - 3*C**2*a**2*a_dot*epsilon0*tau_dot/N + C**2*N_dot*a**3*epsilon0*tau_dot/N**2",
+    "u0": "-N*a**3*g_r*r0**2*u0/2 - N*a**3*lambda4*u0**3/2 - N*a**3*lambda4*u0*v0**2/2 - N*a**3*m2*u0 - a**3*u_ddot/N - 3*a**2*a_dot*u_dot/N + N_dot*a**3*u_dot/N**2 - N*a**3*lambda6*u0**5/(4*Lambda**2) - N*a**3*lambda6*u0**3*v0**2/(2*Lambda**2) - N*a**3*lambda6*u0*v0**4/(4*Lambda**2)",
+    "v0": "-N*a**3*g_r*r0**2*v0/2 - N*a**3*lambda4*u0**2*v0/2 - N*a**3*lambda4*v0**3/2 - N*a**3*m2*v0 - a**3*v_ddot/N - 3*a**2*a_dot*v_dot/N + N_dot*a**3*v_dot/N**2 - N*a**3*lambda6*u0**4*v0/(4*Lambda**2) - N*a**3*lambda6*u0**2*v0**3/(2*Lambda**2) - N*a**3*lambda6*v0**5/(4*Lambda**2)",
+    "z": "N*a**3*b*z"
+  },
+  "raw_lapse_unfixed_homogeneous_action": "-C**4*N*a**3*epsilon0/2 + C**2*a**3*epsilon0*tau_dot**2/(2*N) + K_Q*a**3*psi_dot**2/(2*N) - 3*MP2*a*a_dot**2/N - MU2*a**3*c1*sigma_dot**2/(2*N) - MU2*a**3*c2*sigma_dot**2/(2*N) - MU2*a**3*c3*sigma_dot**2/(2*N) - MU2*a**3*c4*sigma**2*sigma_dot**2/(2*N) - 3*MU2*a**2*a_dot*c2*sigma*sigma_dot/N - 3*MU2*a*a_dot**2*c1*sigma**2/(2*N) - 9*MU2*a*a_dot**2*c2*sigma**2/(2*N) - 3*MU2*a*a_dot**2*c3*sigma**2/(2*N) + N*a**3*b*z**2/2 - N*a**3*g_r*r0**2*u0**2/4 - N*a**3*g_r*r0**2*v0**2/4 - N*a**3*lambda0*sigma**2/2 + N*a**3*lambda0/2 - N*a**3*lambda4*u0**4/8 - N*a**3*lambda4*u0**2*v0**2/4 - N*a**3*lambda4*v0**4/8 - N*a**3*lambda_r*r0**4/4 - N*a**3*m2*u0**2/2 - N*a**3*m2*v0**2/2 - N*a**3*mr2*r0**2/2 - N*a**3*rho_Lambda + a**3*r_dot**2/(2*N) + a**3*u_dot**2/(2*N) + a**3*v_dot**2/(2*N) - N*a**3*lambda6*u0**6/(24*Lambda**2) - N*a**3*lambda6*u0**4*v0**2/(8*Lambda**2) - N*a**3*lambda6*u0**2*v0**4/(8*Lambda**2) - N*a**3*lambda6*v0**6/(24*Lambda**2)",
+  "scope": "All 22 first-variation tadpoles and background matching, not the quadratic kernel or full evolution",
+  "sector_linear_densities_over_a3": {
+    "Einstein_ADM": "-3*H**2*MP2*Mxx/2 - 3*H**2*MP2*Myy/2 - 3*H**2*MP2*Mzz/2 + 3*H**2*MP2*alpha - H*MP2*Mxx_t - H*MP2*Myy_t - H*MP2*Mzz_t + 2*H*MP2*Sx_x/a + 2*H*MP2*Sy_y/a + 2*H*MP2*Sz_z/a",
+    "alignment": "0",
+    "canonical_potential": "-Mxx*g_r*r0**2*u0**2/8 - Mxx*g_r*r0**2*v0**2/8 - Mxx*lambda4*u0**4/16 - Mxx*lambda4*u0**2*v0**2/8 - Mxx*lambda4*v0**4/16 - Mxx*lambda_r*r0**4/8 - Mxx*m2*u0**2/4 - Mxx*m2*v0**2/4 - Mxx*mr2*r0**2/4 + Mxx*r_dot**2/4 - Mxx*rho_Lambda/2 + Mxx*u_dot**2/4 + Mxx*v_dot**2/4 - Myy*g_r*r0**2*u0**2/8 - Myy*g_r*r0**2*v0**2/8 - Myy*lambda4*u0**4/16 - Myy*lambda4*u0**2*v0**2/8 - Myy*lambda4*v0**4/16 - Myy*lambda_r*r0**4/8 - Myy*m2*u0**2/4 - Myy*m2*v0**2/4 - Myy*mr2*r0**2/4 + Myy*r_dot**2/4 - Myy*rho_Lambda/2 + Myy*u_dot**2/4 + Myy*v_dot**2/4 - Mzz*g_r*r0**2*u0**2/8 - Mzz*g_r*r0**2*v0**2/8 - Mzz*lambda4*u0**4/16 - Mzz*lambda4*u0**2*v0**2/8 - Mzz*lambda4*v0**4/16 - Mzz*lambda_r*r0**4/8 - Mzz*m2*u0**2/4 - Mzz*m2*v0**2/4 - Mzz*mr2*r0**2/4 + Mzz*r_dot**2/4 - Mzz*rho_Lambda/2 + Mzz*u_dot**2/4 + Mzz*v_dot**2/4 - alpha*g_r*r0**2*u0**2/4 - alpha*g_r*r0**2*v0**2/4 - alpha*lambda4*u0**4/8 - alpha*lambda4*u0**2*v0**2/4 - alpha*lambda4*v0**4/8 - alpha*lambda_r*r0**4/4 - alpha*m2*u0**2/2 - alpha*m2*v0**2/2 - alpha*mr2*r0**2/2 - alpha*r_dot**2/2 - alpha*rho_Lambda - alpha*u_dot**2/2 - alpha*v_dot**2/2 - dr*g_r*r0*u0**2/2 - dr*g_r*r0*v0**2/2 - dr*lambda_r*r0**3 - dr*mr2*r0 + dr_t*r_dot - du*g_r*r0**2*u0/2 - du*lambda4*u0**3/2 - du*lambda4*u0*v0**2/2 - du*m2*u0 + du_t*u_dot - dv*g_r*r0**2*v0/2 - dv*lambda4*u0**2*v0/2 - dv*lambda4*v0**3/2 - dv*m2*v0 + dv_t*v_dot - Mxx*lambda6*u0**6/(48*Lambda**2) - Mxx*lambda6*u0**4*v0**2/(16*Lambda**2) - Mxx*lambda6*u0**2*v0**4/(16*Lambda**2) - Mxx*lambda6*v0**6/(48*Lambda**2) - Myy*lambda6*u0**6/(48*Lambda**2) - Myy*lambda6*u0**4*v0**2/(16*Lambda**2) - Myy*lambda6*u0**2*v0**4/(16*Lambda**2) - Myy*lambda6*v0**6/(48*Lambda**2) - Mzz*lambda6*u0**6/(48*Lambda**2) - Mzz*lambda6*u0**4*v0**2/(16*Lambda**2) - Mzz*lambda6*u0**2*v0**4/(16*Lambda**2) - Mzz*lambda6*v0**6/(48*Lambda**2) - alpha*lambda6*u0**6/(24*Lambda**2) - alpha*lambda6*u0**4*v0**2/(8*Lambda**2) - alpha*lambda6*u0**2*v0**4/(8*Lambda**2) - alpha*lambda6*v0**6/(24*Lambda**2) - du*lambda6*u0**5/(4*Lambda**2) - du*lambda6*u0**3*v0**2/(2*Lambda**2) - du*lambda6*u0*v0**4/(4*Lambda**2) - dv*lambda6*u0**4*v0/(4*Lambda**2) - dv*lambda6*u0**2*v0**3/(2*Lambda**2) - dv*lambda6*v0**5/(4*Lambda**2)",
+    "dust": "-C**4*Pi*beta*epsilon0 - C**4*alpha*epsilon0 + C**3*T_t*epsilon0",
+    "raw_frame": "-3*H**2*MU2*Mxx*c1/4 - 9*H**2*MU2*Mxx*c2/4 - 3*H**2*MU2*Mxx*c3/4 - 3*H**2*MU2*Myy*c1/4 - 9*H**2*MU2*Myy*c2/4 - 3*H**2*MU2*Myy*c3/4 - 3*H**2*MU2*Mzz*c1/4 - 9*H**2*MU2*Mzz*c2/4 - 3*H**2*MU2*Mzz*c3/4 + 3*H**2*MU2*alpha*c1/2 + 9*H**2*MU2*alpha*c2/2 + 3*H**2*MU2*alpha*c3/2 - 3*H**2*MU2*c1*nu - 9*H**2*MU2*c2*nu - 3*H**2*MU2*c3*nu - H*MU2*Mxx_t*c1/2 - 3*H*MU2*Mxx_t*c2/2 - H*MU2*Mxx_t*c3/2 - H*MU2*Myy_t*c1/2 - 3*H*MU2*Myy_t*c2/2 - H*MU2*Myy_t*c3/2 - H*MU2*Mzz_t*c1/2 - 3*H*MU2*Mzz_t*c2/2 - H*MU2*Mzz_t*c3/2 + H*MU2*Sx_x*c1/a + 3*H*MU2*Sx_x*c2/a + H*MU2*Sx_x*c3/a + H*MU2*Sy_y*c1/a + 3*H*MU2*Sy_y*c2/a + H*MU2*Sy_y*c3/a + H*MU2*Sz_z*c1/a + 3*H*MU2*Sz_z*c2/a + H*MU2*Sz_z*c3/a - H*MU2*Vx_x*c1/a - 3*H*MU2*Vx_x*c2/a - H*MU2*Vx_x*c3/a - H*MU2*Vy_y*c1/a - 3*H*MU2*Vy_y*c2/a - H*MU2*Vy_y*c3/a - H*MU2*Vz_z*c1/a - 3*H*MU2*Vz_z*c2/a - H*MU2*Vz_z*c3/a - 3*H*MU2*c2*nu_t",
+    "regulator": "0",
+    "spatial_Ricci": "-MP2*Mxx_yy/(2*a**2) - MP2*Mxx_zz/(2*a**2) + MP2*Mxy_xy/a**2 + MP2*Mxz_xz/a**2 - MP2*Myy_xx/(2*a**2) - MP2*Myy_zz/(2*a**2) + MP2*Myz_yz/a**2 - MP2*Mzz_xx/(2*a**2) - MP2*Mzz_yy/(2*a**2)",
+    "temporal_force": "K_Q*Mxx*psi_dot**2/4 + K_Q*Myy*psi_dot**2/4 + K_Q*Mzz*psi_dot**2/4 + K_Q*Pi_t*psi_dot - K_Q*alpha*psi_dot**2/2",
+    "unit_multiplier": "-lambda0*nu"
+  },
+  "wrong_source_residuals": {
+    "wrong_dust_source": "2*beta*psi_dot*rho",
+    "wrong_psi_source": "-2*beta*psi_dot*rho"
+  }
+}

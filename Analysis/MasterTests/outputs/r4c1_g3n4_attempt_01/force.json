@@ -1,0 +1,90 @@
+{
+  "coefficients": [
+    {
+      "coefficient": "1024/(315*pi)",
+      "mode": 1,
+      "normalized_error": 0.0
+    },
+    {
+      "coefficient": "1024/(567*pi)",
+      "mode": 3,
+      "normalized_error": 0.0
+    },
+    {
+      "coefficient": "1024/(2079*pi)",
+      "mode": 5,
+      "normalized_error": 0.0
+    },
+    {
+      "coefficient": "1024/(27027*pi)",
+      "mode": 7,
+      "normalized_error": 0.0
+    },
+    {
+      "coefficient": "-1024/(405405*pi)",
+      "mode": 9,
+      "normalized_error": 1.305060893599705e-54
+    },
+    {
+      "coefficient": "1024/(2297295*pi)",
+      "mode": 11,
+      "normalized_error": 6.525304467998525e-55
+    },
+    {
+      "coefficient": "-1024/(8729721*pi)",
+      "mode": 13,
+      "normalized_error": 6.525304467998525e-55
+    },
+    {
+      "coefficient": "1024/(26189163*pi)",
+      "mode": 15,
+      "normalized_error": 7.544883291123294e-55
+    },
+    {
+      "coefficient": "-1024/(66927861*pi)",
+      "mode": 17,
+      "normalized_error": 7.544883291123294e-55
+    },
+    {
+      "coefficient": "1024/(152108775*pi)",
+      "mode": 19,
+      "normalized_error": 7.493904349967056e-55
+    },
+    {
+      "coefficient": "-1024/(315918225*pi)",
+      "mode": 21,
+      "normalized_error": 7.493904349967056e-55
+    },
+    {
+      "coefficient": "1024/(610775235*pi)",
+      "mode": 23,
+      "normalized_error": 7.481159614677996e-55
+    },
+    {
+      "coefficient": "-1024/(1113766605*pi)",
+      "mode": 25,
+      "normalized_error": 7.487531982322526e-55
+    },
+    {
+      "coefficient": "1024/(1934436735*pi)",
+      "mode": 27,
+      "normalized_error": 7.487531982322526e-55
+    },
+    {
+      "coefficient": "-1024/(3224061225*pi)",
+      "mode": 29,
+      "normalized_error": 7.489125074233658e-55
+    },
+    {
+      "coefficient": "1024/(5186533275*pi)",
+      "mode": 31,
+      "normalized_error": 7.501869809522718e-55
+    }
+  ],
+  "cutoff": "NOT_DERIVED; the infinite harmonic tail is retained",
+  "even_and_mean_coefficients": "zero by half-period antisymmetry",
+  "odd_coefficient_general": "-5120*sin(m*pi/2)/(pi*m*(m^2-4)*(m^2-16)*(m^2-36)); m positive odd",
+  "other_second_order_force_sources": "Zero on the first-order pure transverse direction; lapse/spatial metric/psi sources first appear at order |e|^3, other boosts have zero first directional variation there",
+  "profile": "W=(4/3)cos(chi)^3",
+  "transverse_Euler_source": "-3*A*abs(psi_dot)^3*e*abs(e)*W*abs(W)"
+}

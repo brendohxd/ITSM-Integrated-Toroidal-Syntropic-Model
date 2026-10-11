@@ -1,0 +1,18 @@
+{
+  "Hamiltonian_unfixed_lapse": "lapse*(2*C**6*K*MC*epsilon**2*radius**2*volume**2 + 2*C**2*K*MC*charge**2*epsilon + 2*C**2*K*MC*epsilon*p_radius**2*radius**2 + 2*C**2*K*MC*epsilon*p_reservoir**2*radius**2 + 4*C**2*K*MC*epsilon*potential*radius**2*volume**2 - 3*C**2*K*epsilon*p_volume**2*radius**2 + 2*C**2*MC*epsilon*p_psi**2*radius**2 + 2*K*MC*p_tau**2*radius**2)/(4*C**2*K*MC*epsilon*radius**2*volume)",
+  "L": "-MC*volume*volume_log_dot**2/(3*lapse) + epsilon*volume*(-C**4*lapse + C**2*tau_dot**2/lapse)/2 - lapse*potential*volume + volume*(K*psi_dot**2 + radius**2*theta_dot**2 + radius_dot**2 + reservoir_dot**2)/(2*lapse)",
+  "charge_normalization": "momenta per coordinate-cell volume; integrated values multiply (2*pi)^3",
+  "constraint": "(4*C*K*MC*p_tau*radius**2*volume + 2*K*MC*charge**2 + 2*K*MC*p_radius**2*radius**2 + 2*K*MC*p_reservoir**2*radius**2 + 4*K*MC*potential*radius**2*volume**2 - 3*K*p_volume**2*radius**2 + 2*MC*p_psi**2*radius**2)/(4*K*MC*radius**2*volume)",
+  "dust_clock_H": "C_background*(-C*p_tau + (4*C*K*MC*p_tau*radius**2*volume + 2*K*MC*charge**2 + 2*K*MC*p_radius**2*radius**2 + 2*K*MC*p_reservoir**2*radius**2 + 4*K*MC*potential*radius**2*volume**2 - 3*K*p_volume**2*radius**2 + 2*MC*p_psi**2*radius**2)/(4*K*MC*radius**2*volume))/C",
+  "dust_density_solution": "p_tau/(C**3*volume)",
+  "dust_sector": "original P_tau varies; comparator fixes P_tau=1/5",
+  "momenta": [
+    "-2*MC*volume*volume_log_dot/(3*lapse)",
+    "radius_dot*volume/lapse",
+    "reservoir_dot*volume/lapse",
+    "K*psi_dot*volume/lapse",
+    "C**2*epsilon*tau_dot*volume/lapse",
+    "radius**2*theta_dot*volume/lapse"
+  ],
+  "phase_clock_H": "-sqrt(2)*sqrt(K)*psi_background_dot*sqrt(volume)*sqrt(p_psi**2/(2*K*volume) - (4*C*K*MC*p_tau*radius**2*volume + 2*K*MC*charge**2 + 2*K*MC*p_radius**2*radius**2 + 2*K*MC*p_reservoir**2*radius**2 + 4*K*MC*potential*radius**2*volume**2 - 3*K*p_volume**2*radius**2 + 2*MC*p_psi**2*radius**2)/(4*K*MC*radius**2*volume))"
+}

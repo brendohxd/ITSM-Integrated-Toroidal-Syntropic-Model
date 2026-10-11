@@ -1,0 +1,79 @@
+{
+  "exact_entries_compared": 484,
+  "fields": [
+    "alpha",
+    "Sx",
+    "Sy",
+    "Sz",
+    "Mxx",
+    "Mxy",
+    "Mxz",
+    "Myy",
+    "Myz",
+    "Mzz",
+    "Vx",
+    "Vy",
+    "Vz",
+    "du",
+    "dv",
+    "dr",
+    "Pi",
+    "T",
+    "Em",
+    "Z",
+    "nu",
+    "LambdaU"
+  ],
+  "independent_control_source": "Analysis/MasterTests/outputs/r4c1_g3n5_time_block_attempt_01/",
+  "inherited_failed_parent_checks": [
+    {
+      "criterion": "<1e-7",
+      "name": "eta1_independent_fd_balances",
+      "passed": false,
+      "value": 1.1005635230674148e-07
+    }
+  ],
+  "nonclaim": "No constraint reduction, solved response, physical DOF count or external review",
+  "nonzero_differences": [],
+  "pure_time_density_difference": "0",
+  "superseded_N3_attempt_01_failed_checks": [
+    {
+      "criterion": "exact",
+      "name": "reject_direct_source_as_full_Z_solution",
+      "passed": false,
+      "value": null
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "all_direct_harmonics_exact_reconstruction",
+      "passed": false,
+      "value": [
+        "-psi_dot*(4*cos(2*chi)**3 + 6*cos(2*chi)**2 - 3*cos(2*chi) - 3*cos(4*chi) - cos(6*chi) - 3)/48"
+      ]
+    }
+  ],
+  "time_indices_in_full_kernel": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43
+  ]
+}

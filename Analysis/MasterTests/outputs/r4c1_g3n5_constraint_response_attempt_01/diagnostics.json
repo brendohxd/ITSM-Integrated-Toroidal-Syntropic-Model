@@ -1,0 +1,448 @@
+{
+  "gauge_residual": 5.01134329459835e-14,
+  "inherited_failed_parent_checks": [
+    {
+      "criterion": "<1e-7",
+      "name": "eta1_independent_fd_balances",
+      "passed": false,
+      "value": 1.1005635230674148e-07
+    }
+  ],
+  "inverse_domains": [
+    "k!=0 for transverse spatial gauge and shift inverse",
+    "a,C>0; b!=0",
+    "MP2-MU2(c1+c3)!=0; MU2(c1+c2+c3)!=0",
+    "k=0 separate mean chart, not an excluded mode"
+  ],
+  "modes": [
+    {
+      "analytic_residual": 1.9194310029017745e-14,
+      "condition_number": 18.0,
+      "coordinates": [
+        "Mxx",
+        "Mxy",
+        "Mxz",
+        "Myy",
+        "Myz",
+        "Mzz",
+        "Vx",
+        "Vy",
+        "Vz",
+        "du",
+        "dv",
+        "dr",
+        "Pi"
+      ],
+      "dimension": 13,
+      "finite_difference": [
+        {
+          "error": 6.787681682336325e-10,
+          "samples": 65
+        },
+        {
+          "error": 9.000901654508906e-10,
+          "samples": 129
+        },
+        {
+          "error": 2.0895689162433894e-09,
+          "samples": 257
+        }
+      ],
+      "initial_constraint_data": "all auxiliaries reconstructed from their equations",
+      "kinetic_eigenvalues": [
+        [
+          -0.55,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.24999999999999997,
+          0.25,
+          0.49999999999999967,
+          0.5,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0
+        ],
+        [
+          -0.55,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.24999999999999997,
+          0.25,
+          0.49999999999999967,
+          0.5,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0
+        ],
+        [
+          -0.55,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.24999999999999997,
+          0.25,
+          0.49999999999999967,
+          0.5,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0
+        ]
+      ],
+      "linearized_charge_drift": 3.278026806973598e-13,
+      "mode": [
+        0,
+        0,
+        0
+      ],
+      "solver_discrepancy": 1.5063396601067383e-11
+    },
+    {
+      "analytic_residual": 8.139594800742556e-16,
+      "condition_number": 49.49999999999999,
+      "coordinates": [
+        "M11",
+        "M12",
+        "M22",
+        "Vx",
+        "Vy",
+        "Vz",
+        "du",
+        "dv",
+        "dr",
+        "Pi"
+      ],
+      "dimension": 10,
+      "finite_difference": [
+        {
+          "error": 4.2438280320486955e-09,
+          "samples": 65
+        },
+        {
+          "error": 6.8210201763103084e-09,
+          "samples": 129
+        },
+        {
+          "error": 9.527244316708923e-09,
+          "samples": 257
+        }
+      ],
+      "initial_constraint_data": "all auxiliaries reconstructed from their equations",
+      "kinetic_eigenvalues": [
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ],
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ],
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ]
+      ],
+      "linearized_charge_drift": null,
+      "mode": [
+        1,
+        0,
+        0
+      ],
+      "solver_discrepancy": 9.347188567452496e-11
+    },
+    {
+      "analytic_residual": 8.227916192702278e-16,
+      "condition_number": 49.49999999999999,
+      "coordinates": [
+        "M11",
+        "M12",
+        "M22",
+        "Vx",
+        "Vy",
+        "Vz",
+        "du",
+        "dv",
+        "dr",
+        "Pi"
+      ],
+      "dimension": 10,
+      "finite_difference": [
+        {
+          "error": 4.2476094775346e-09,
+          "samples": 65
+        },
+        {
+          "error": 6.838389436596633e-09,
+          "samples": 129
+        },
+        {
+          "error": 9.544313525400271e-09,
+          "samples": 257
+        }
+      ],
+      "initial_constraint_data": "all auxiliaries reconstructed from their equations",
+      "kinetic_eigenvalues": [
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ],
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ],
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ]
+      ],
+      "linearized_charge_drift": null,
+      "mode": [
+        0,
+        1,
+        0
+      ],
+      "solver_discrepancy": 9.276461316356762e-11
+    },
+    {
+      "analytic_residual": 8.885823871123274e-16,
+      "condition_number": 49.49999999999999,
+      "coordinates": [
+        "M11",
+        "M12",
+        "M22",
+        "Vx",
+        "Vy",
+        "Vz",
+        "du",
+        "dv",
+        "dr",
+        "Pi"
+      ],
+      "dimension": 10,
+      "finite_difference": [
+        {
+          "error": 4.240505370364774e-09,
+          "samples": 65
+        },
+        {
+          "error": 6.808703273605134e-09,
+          "samples": 129
+        },
+        {
+          "error": 9.509580647270514e-09,
+          "samples": 257
+        }
+      ],
+      "initial_constraint_data": "all auxiliaries reconstructed from their equations",
+      "kinetic_eigenvalues": [
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ],
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ],
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ]
+      ],
+      "linearized_charge_drift": null,
+      "mode": [
+        0,
+        0,
+        1
+      ],
+      "solver_discrepancy": 9.323334002075447e-11
+    },
+    {
+      "analytic_residual": 8.929503500804299e-16,
+      "condition_number": 49.49999999999999,
+      "coordinates": [
+        "M11",
+        "M12",
+        "M22",
+        "Vx",
+        "Vy",
+        "Vz",
+        "du",
+        "dv",
+        "dr",
+        "Pi"
+      ],
+      "dimension": 10,
+      "finite_difference": [
+        {
+          "error": 5.018407729576437e-09,
+          "samples": 65
+        },
+        {
+          "error": 8.942024871238078e-09,
+          "samples": 129
+        },
+        {
+          "error": 1.1621032615933873e-08,
+          "samples": 257
+        }
+      ],
+      "initial_constraint_data": "all auxiliaries reconstructed from their equations",
+      "kinetic_eigenvalues": [
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ],
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ],
+        [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.25,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          3.0,
+          8.25
+        ]
+      ],
+      "linearized_charge_drift": null,
+      "mode": [
+        1,
+        2,
+        3
+      ],
+      "solver_discrepancy": 1.3174393151323192e-10
+    }
+  ],
+  "nonclaims": [
+    "No full nonlinear Cauchy evolution",
+    "No second-order nonanalytic forcing solve",
+    "No physical EFT cutoff or ghost/gradient/hyperbolicity conclusion",
+    "No healthy continuous GR limit",
+    "No matched K_Q, V, a0(z) or physical torus dimensions"
+  ],
+  "rate_agreement": 4.440892098500626e-16,
+  "singular_boundaries": {
+    "MU2_zero_longitudinal_rank": 0,
+    "b_zero_regulator_rank": 0,
+    "c1_c2_c3_zero_longitudinal_rank": 0,
+    "k_zero_shift_rank": 0,
+    "nonzero_shift_rank": 3,
+    "tensor_coefficient_zero_transverse_rank": 0
+  },
+  "superseded_N3_attempt_01_failed_checks": [
+    {
+      "criterion": "exact",
+      "name": "reject_direct_source_as_full_Z_solution",
+      "passed": false,
+      "value": null
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "all_direct_harmonics_exact_reconstruction",
+      "passed": false,
+      "value": [
+        "-psi_dot*(4*cos(2*chi)**3 + 6*cos(2*chi)**2 - 3*cos(2*chi) - 3*cos(4*chi) - cos(6*chi) - 3)/48"
+      ]
+    }
+  ]
+}

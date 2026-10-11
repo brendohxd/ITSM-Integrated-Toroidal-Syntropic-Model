@@ -1,0 +1,78 @@
+{
+  "Delta_coefficients": [
+    "0",
+    "0",
+    "(2*H*W**2*a**2*psi_dot + Pi_zz + V_z_z*a*psi_dot + W**2*a**2*psi_ddot + W*W_t*a**2*psi_dot)/a**2"
+  ],
+  "dimensions": {
+    "Delta2": 2,
+    "Pi": 0,
+    "T": -1,
+    "V_i": 0,
+    "W": 0,
+    "Z": 2,
+    "psi_ddot": 2,
+    "psi_dot": 1,
+    "regulator_density": 4
+  },
+  "direct_transverse_source": "W**2*(2*H*psi_dot + psi_ddot) + W*W_t*psi_dot",
+  "dust_constraint_second_order": "2*C**3*(C*Pi*beta + C*alpha - T_t)",
+  "dust_lapse_solution": "-Pi*beta + T_t/C",
+  "full_Z_solution": "-Pi_zz/a**2 - V_z_z*psi_dot/a - W**2*(2*H*psi_dot + psi_ddot) - W*W_t*psi_dot",
+  "linear_induced_operator": "Pi_zz/a**2 + V_z_z*psi_dot/a",
+  "metric_response_symbols_retained": [
+    "alpha",
+    "M_00",
+    "M_01",
+    "M_02",
+    "M_11",
+    "M_12",
+    "M_22",
+    "S_x",
+    "S_y",
+    "S_z",
+    "V_x",
+    "V_y",
+    "V_z"
+  ],
+  "mode_equations": [
+    {
+      "Z_solution": "-5*(32*H*psi_dot + 16*psi_ddot + 3*psi_dot)/144",
+      "average_weight": "1",
+      "direct_Delta2": "5*(32*H*psi_dot + 16*psi_ddot + 3*psi_dot)/144",
+      "full_Delta2": "5*(32*H*psi_dot + 16*psi_ddot + 3*psi_dot)/144",
+      "mode": 0,
+      "regulator_only_response_Pi": "0",
+      "regulator_only_response_V": "0"
+    },
+    {
+      "Z_solution": "-(80*H*a**2*psi_dot - 192*Pi_2*k**2 + 96*V_2*a*k*psi_dot + 40*a**2*psi_ddot + 5*a**2*psi_dot)/(48*a**2)",
+      "average_weight": "1/2",
+      "direct_Delta2": "5*(16*H*psi_dot + 8*psi_ddot + psi_dot)/48",
+      "full_Delta2": "(80*H*a**2*psi_dot - 192*Pi_2*k**2 + 96*V_2*a*k*psi_dot + 40*a**2*psi_ddot + 5*a**2*psi_dot)/(48*a**2)",
+      "mode": 2,
+      "regulator_only_response_Pi": "b*k**2*(80*H*a**2*psi_dot - 192*Pi_2*k**2 + 96*V_2*a*k*psi_dot + 40*a**2*psi_ddot + 5*a**2*psi_dot)/(24*a**4)",
+      "regulator_only_response_V": "-b*k*psi_dot*(80*H*a**2*psi_dot - 192*Pi_2*k**2 + 96*V_2*a*k*psi_dot + 40*a**2*psi_ddot + 5*a**2*psi_dot)/(48*a**3)"
+    },
+    {
+      "Z_solution": "-(32*H*a**2*psi_dot - 768*Pi_4*k**2 + 192*V_4*a*k*psi_dot + 16*a**2*psi_ddot - a**2*psi_dot)/(48*a**2)",
+      "average_weight": "1/2",
+      "direct_Delta2": "(32*H*psi_dot + 16*psi_ddot - psi_dot)/48",
+      "full_Delta2": "(32*H*a**2*psi_dot - 768*Pi_4*k**2 + 192*V_4*a*k*psi_dot + 16*a**2*psi_ddot - a**2*psi_dot)/(48*a**2)",
+      "mode": 4,
+      "regulator_only_response_Pi": "b*k**2*(32*H*a**2*psi_dot - 768*Pi_4*k**2 + 192*V_4*a*k*psi_dot + 16*a**2*psi_ddot - a**2*psi_dot)/(6*a**4)",
+      "regulator_only_response_V": "-b*k*psi_dot*(32*H*a**2*psi_dot - 768*Pi_4*k**2 + 192*V_4*a*k*psi_dot + 16*a**2*psi_ddot - a**2*psi_dot)/(24*a**3)"
+    },
+    {
+      "Z_solution": "-(16*H*a**2*psi_dot - 5184*Pi_6*k**2 + 864*V_6*a*k*psi_dot + 8*a**2*psi_ddot - 3*a**2*psi_dot)/(144*a**2)",
+      "average_weight": "1/2",
+      "direct_Delta2": "(16*H*psi_dot + 8*psi_ddot - 3*psi_dot)/144",
+      "full_Delta2": "(16*H*a**2*psi_dot - 5184*Pi_6*k**2 + 864*V_6*a*k*psi_dot + 8*a**2*psi_ddot - 3*a**2*psi_dot)/(144*a**2)",
+      "mode": 6,
+      "regulator_only_response_Pi": "b*k**2*(16*H*a**2*psi_dot - 5184*Pi_6*k**2 + 864*V_6*a*k*psi_dot + 8*a**2*psi_ddot - 3*a**2*psi_dot)/(8*a**4)",
+      "regulator_only_response_V": "-b*k*psi_dot*(16*H*a**2*psi_dot - 5184*Pi_6*k**2 + 864*V_6*a*k*psi_dot + 8*a**2*psi_ddot - 3*a**2*psi_dot)/(48*a**3)"
+    }
+  ],
+  "regulator_quartic_contribution": "-b*(Pi_zz/a**2 + V_z_z*psi_dot/a + W**2*(2*H*psi_dot + psi_ddot) + W*W_t*psi_dot)**2/2",
+  "scope": "Complete regulator/dust equations through order two for the inherited transverse (t,z) chart; not solved all-sector response or physical evolution."
+}

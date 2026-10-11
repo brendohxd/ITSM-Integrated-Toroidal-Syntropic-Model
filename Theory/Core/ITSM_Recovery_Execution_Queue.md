@@ -222,3 +222,388 @@ claims are built on it.
 - full UVIR/MAT physics PASS;
 - alpha.12 manuscript freeze;
 - cosmological, SPARC, lensing or $H_0$ packaging.
+
+
+## 9 October 2026 - latest-route goal execution amendment
+
+The operator requested a goal update to accommodate the latest possible
+routes. Follow the [dated goal-route amendment](ITSM_GOAL_ROUTE_UPDATE_2026-10-09.md),
+SHA-256 `76858ec29fec00d730cad2857b3a4982714e3798aa70ad6a92389fa038604ba5`,
+alongside the master programme and the live owning reports. Earlier dated
+queue entries remain historical records; no old receipt is overwritten.
+
+The native Tests 1-3 goal remains PAUSED and its objective is unchanged:
+the exposed controller cannot rewrite that objective or resume it. This
+updates its working execution plan, not the native record or goal status.
+
+- Primary candidate: G3T/G3K tilted smooth-gradient work. The parallel-to-tilt
+  coupled scalar operator is complete locally (744/744); do not repeat it.
+  Next on resume: freeze one G3K-based admissible-time/constraint-domain
+  entry contract. G3K-C1 is a proposed identifier, not a completed checkpoint.
+- Retain the w^2=1/5 and k=0 constraint boundaries without division.
+  Physical characteristic/Cauchy classification, other directions/sectors,
+  global T3 admissibility and the physical EFT cutoff remain substantive inputs.
+- Alternative: the isotropic nonanalytic route. G3N1's 530/530 result supports
+  its frozen classical Galerkin probe only; one-mode invariance is rejected.
+  Further use requires multimode/constraint/regulator completion, not smoothing
+  or reusing an ordinary third Taylor vertex that G3V does not supply.
+- Later Test-2/Test-3 and MAT/UVIR tasks follow their actual physical response
+  and matching dependencies. Their presence in the plan does not authorize
+  premature numeric V/K_Q, Stage-4A reopening or Derived promotion.
+- P1/P2 local release decisions continue separately; author/metadata/route
+  confirmation, applicable review and external-action approval remain pending.
+  TOP-X4 stays a separate queued candidate lane, not the primary route.
+
+Rule-9 remains DEFERRED and not cleared; review alone does not stop supported
+provisional research. Scientific failures/missing inputs still hold dependent
+uses. Tests 1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS;
+K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 unchanged.
+No scientific calculation, native goal-status change, vault mutation,
+provider dispatch, commit, push or publication is performed by this amendment.
+The pre-amendment queue prefix is retained byte-for-byte in the live queue;
+its original bytes/hash are also saved in ignored local storage.
+
+
+## 9 October 2026 - executed C1/C2 route disposition
+
+This later entry supersedes the preceding amendment's proposed C1 checkpoint
+and its then-PAUSED controller snapshot. The native Tests 1-3 goal is ACTIVE;
+its full objective is unchanged, and no completion is inferred from this note.
+
+- [C1 report](../Gates/RES-001/RES001_R4C1_G3K_C1_CLOCK_ENTRY_REPORT_2026-10-09.md):
+  1032/1032 local checks and exact replay. A global REAL U-orthogonal clock
+  is excluded for the declared homogeneous nonzero tilted T3 backgrounds.
+  This does not exclude local preferred patches or other global times.
+- [C2 report](../Gates/RES-001/RES001_R4C1_G3K_C2_PRINCIPAL_TIME_DOMAIN_REPORT_2026-10-09.md),
+  SHA-256 5145e5e0cb67871ca918d9919b6433233f65e22c9126eb048ece7e0ad5a9e82d:
+  425/425 local checks and exact replay. The coupled scalar principal symbol
+  has a fourfold characteristic with one eigenvector; the conventional
+  unrestricted strongly-hyperbolic dust-time route is rejected.
+  Neither result is a physical ghost or all-action/all-clock no-go.
+- Next approved scientific alternative: freeze one aligned, constraint-aware
+  nonanalytic multimode contract (working identifier G3N2, not executed).
+  Retain the unsmoothed force, regulator and required metric/frame/matter/
+  auxiliary constraints. G3N1 is a bounded probe, not completed field closure.
+- Keep the tilted finite-band route available only with its own action-level
+  physical-domain/cutoff and branch justification. No comparator turn,
+  selected subset of roots or family cutoff=2 supplies those inputs.
+- P1/P2 author/release decisions remain separate; no C1/C2 result is silently
+  imported into the papers. Later Tests 2-3 and MAT matching retain their
+  substantive dependencies; TOP-X4 stays a separate queued candidate lane.
+
+Rule-9-only review remains DEFERRED, not cleared. The C2 failed criterion is
+substantive and cannot be deferred into healthy unrestricted evolution.
+Tests 1-3 HOLD_SUBSTANTIVE; physics_pass=false; gate_effect=NONE;
+MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED;
+Stage4A CLOSED; TOP-X4 unchanged. No action change, manuscript/PDF edit,
+vault mutation, provider dispatch, commit, push, promotion or publication.
+The previous queue prefix is preserved byte-for-byte; pre-append SHA-256
+c690710ec4d1ba6f1e3de02872faca5eeea2dd75889c0d5a5fa8e4d732b5d17c
+is retained in ignored .local/itsm-context/g3k-c2-2026-10-09-queue-before.md.
+
+## 9 October 2026 - executed G3N2 entry disposition
+
+This entry supersedes the preceding proposed/not-executed G3N2 snapshot.
+[G3N2 report](../Gates/RES-001/RES001_R4C1_G3N2_TRANSVERSE_MULTIMODE_ENTRY_REPORT_2026-10-09.md),
+SHA-256 e0f066347d13bbd00566cf8f9af5857e424e4c8ce1102f1eebd457b419c9da19:
+1542/1542 local checks and exact read-only replay. Allowed transverse waves
+do not admit the presumed local preferred clock; the raw psi/z velocity
+block changes rank and has a nonuniform inverse near alignment. These are
+scoped rejections of naive extensions, not physical ghost or all-action
+verdicts. G3N1's original frozen ODE finding remains intact.
+
+Next owning calculation: complete the second-order regulator equation and
+its scalar/frame/metric response, then assemble the remaining nonlinear
+constraint/evolution sources. Retain unsmoothed force, independent frame,
+metric/matter constraints, regulator and all generated harmonics. Do not
+repeat one-amplitude probes or infer a physical Hessian from a raw block.
+An alternative time formulation remains open; the tilted finite-band lane
+still requires its own physical domain/cutoff evidence.
+
+P1/P2 release decisions remain separate. Tests 2-3 and MAT matching retain
+their substantive dependencies. Rule-9-only review remains DEFERRED.
+Native full Tests 1-3 goal ACTIVE and incomplete; physics_pass=false;
+gate_effect=NONE; Tests 1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED;
+UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED;
+TOP-X4 unchanged. No action change, manuscript/PDF edit, vault mutation,
+provider dispatch, commit, push, canonical promotion or publication.
+Original queue prefix is preserved byte-for-byte; pre-append SHA-256
+8b193a19285191162be529ff1d0383861dcde095f3267b0d4d5a97fe1e49cb1e
+is saved in ignored .local/itsm-context/g3n2-2026-10-09-queue-before.md.
+
+## 9 October 2026 - executed G3N3 coupled response equations
+
+The preceding G3N2 next regulator-equation obligation has now been executed.
+[G3N3 report](../Gates/RES-001/RES001_R4C1_G3N3_SECOND_ORDER_REGULATOR_REPORT_2026-10-09.md),
+SHA-256 7111692a94582e3a1d44f0ca5fa3a5a2a1a4550db009beecc851e841119fd32b:
+515/515 local checks and exact read-only replay. The full second-order
+regulator and dust equations retain induced psi/frame/dust response; all
+even source harmonics and the homogeneous regulator mean are exported.
+Pi and V_z remain unsolved: the direct transverse source alone is not the
+complete auxiliary solution. No physical field-evolution closure is inferred.
+
+The original N3 512/514 attempt remains unchanged and pinned. New v2 repairs
+two exact-identity assertions after independent zero-residual proofs, with
+identical formula and numerical-control artifacts and unchanged thresholds.
+
+Next owning task: freeze remaining all-sector second-order source assembly
+(working identifier G3N4, not yet executed), then solve compatible response
+and initial data. Retain homogeneous metric/matter constraints separately
+from nonzero-mode Schur inverses, regulator coupling and unsmoothed force
+including its nonanalytic vector forcing/further harmonics. Do not rerun
+old one-amplitude or coefficient-identifiability proofs as new progress.
+Physical Cauchy/DAE domain, cutoff and GR continuity remain substantive.
+
+P1/P2 release decisions remain a separate lane. Later Tests 2-3 and MAT
+matching retain their action/physical-response dependencies. Rule-9-only
+review remains DEFERRED. Native full Tests 1-3 goal ACTIVE and incomplete;
+physics_pass=false; gate_effect=NONE; Tests 1-3 HOLD_SUBSTANTIVE;
+MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED;
+Stage4A CLOSED; TOP-X4 unchanged. No action change, manuscript/PDF edit,
+vault mutation, provider dispatch, commit, push, promotion or publication.
+Original queue prefix is preserved byte-for-byte; pre-append SHA-256
+6303c2aa21c5ec04d78e22964772ee11934c863de3f13a0cd8abdccd398561b5
+is saved in ignored .local/itsm-context/g3n3-2026-10-09-queue-before.md.
+
+## 9 October 2026 - executed G3N4 source ledger and force-coverage supplement
+
+The previous proposed G3N4 source task has now been executed within its
+registered inherited (t,z) chart. Owning
+[G3N4 report](../Gates/RES-001/RES001_R4C1_G3N4_COUPLED_SOURCE_REPORT_2026-10-09.md),
+SHA-256 1c7eca17f22a8e3e3ec39bb09017d05908b133f130b1f24e85f523b18af47a4b.
+Original ledger: 46/46 checks and exact read-only replay; all 22 analytic
+response sources, normal equation and registered source-consistency identities.
+Separate force coverage: 455/455 checks and exact replay; closes the original
+field-by-field gap without modifying any original script/receipt/sidecar.
+Only Vy force begins at second order. Lapse, diagonal metric and Pi force
+sources begin at third order, not identically zero. Infinite harmonics remain.
+
+Next owning task: complete the coupled response kernel and compatible
+initial data (working identifier G3N5, not yet executed). Preserve
+homogeneous constraints separately from nonzero-mode Schur inverses;
+retain lapse/shift/normal/multiplier/dust/regulator coupling, the unsmoothed
+force and its infinite tail. A local source ledger is not a solved response,
+finite-mode invariant manifold, general 3D T3 reduction or full evolution.
+Physical Cauchy/DAE domain, stability, cutoff and healthy continuous GR
+recovery remain substantive; earlier C1/C2 obstructions are not erased.
+
+Do not repeat old one-amplitude or coefficient-identifiability proofs as
+new progress. P1/P2 human proofread, metadata and release choices remain a
+separate lane; submission still needs separate authority. Thermodynamics
+and R4C1 standalone preparation can proceed within their scoped claims.
+Tests 2-3/MAT matching retain their action/physical-response dependencies;
+tilted finite-band and TOP-X4 candidates remain separately bounded.
+
+Rule-9-only review remains DEFERRED, not cleared. Native goal was
+usageLimited earlier; the user's resume/edit now yields ACTIVE in a fresh
+controller snapshot. The full objective remains incomplete.
+physics_pass=false; gate_effect=NONE; Tests 1-3 HOLD_SUBSTANTIVE;
+MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED;
+Stage4A CLOSED; TOP-X4 unchanged. Original source failures/hashes are preserved.
+No action replacement, manuscript/PDF edit, vault mutation, provider
+dispatch, commit, push, canonical promotion or publication.
+Original queue prefix is preserved byte-for-byte; pre-append SHA-256
+846b2815077d2ca6dc23498213a7dc4bfbed8edf3dee4aa32c0a0713c2db5d6c
+is saved in ignored .local/itsm-context/g3n4-2026-10-09-queue-before.md.
+
+## 9 October 2026 - G3N5 kernel calculation launched, validation pending
+
+[G3N5 contract](../Gates/RES-001/RES001_R4C1_G3N5_RESPONSE_KERNEL_CONTRACT_2026-10-09.md)
+SHA-256 11cf25cef8cc0192f1f690dbf1f7fee2f9e0268eff508d7fb1a65709907f2c02;
+candidate executable test_01_r4c1_g3n5_response_kernel_v1.py,
+SHA-256 0863c4b150a3184d152263da2fa65f4f50f5b344653294cf8fc99326b62295f7.
+Preparation is complete and the symbolic run is confirmed live. No scientific
+receipt exists at this checkpoint; no kernel PASS or solved response is claimed.
+
+The candidate retains all 22 fields, 110 value/t/x/y/z jets, spatial Ricci,
+normal/multiplier equations, dust and auxiliary regulator before elimination.
+It targets the full unreduced operator on the aligned isotropic background,
+not a one-amplitude closure or general nonlinear three-dimensional solution.
+Independent exact identities and unexpanded numerical controls must pass
+before provisional kernel reuse. The unsmoothed force is retained separately.
+
+Next: continue observing the existing run; do not duplicate it because a
+poll expires. Inspect its terminal result and every failure/unknown; preserve
+any failed attempt. If successful, perform exact read-only replay, document
+coverage, then solve compatible coupled response and initial data with the
+homogeneous sector separate. Cauchy/DAE domain, stability, cutoff, healthy
+GR and earlier C1/C2 substantive obstructions remain open/unchanged.
+
+Rule-9-only review remains DEFERRED. The full eight-route/Tests-1-3 goal
+remains incomplete, with all parent physics/gate holds unchanged. Earlier
+receipts/hashes are preserved. No action replacement, manuscript/PDF/vault
+change, provider dispatch, commit, push, promotion or publication.
+Original queue prefix is retained byte-for-byte; pre-append SHA-256
+b60354e09daf75670b3df6b042d824e871bd9065a3aaec8ac98fd72aed704ab4
+is saved in ignored .local/itsm-context/g3n5-2026-10-09-queue-before.md.
+
+## 9 October 2026 - G3N5 independent temporal block checked; full kernel pending
+
+The existing full G3N5 symbolic process remains live at the last session poll;
+no full-kernel receipt or PASS is claimed. A separate independent
+[temporal-block control](../Gates/RES-001/RES001_R4C1_G3N5_TEMPORAL_BLOCK_REPORT_2026-10-09.md)
+passes 54/54 local checks and exact read-only replay. It derives all 484 entries
+of the unreduced 22-field time-velocity matrix, including normal/metric-trace
+mixing and all three boost/shift components. Seven zero velocity rows and
+parameter-dependent raw rank boundaries are checked, not a physical DOF count.
+
+All 128 source pins / 125 available sidecars match. The three inherited missing
+sidecars and original G3/N3 failures remain explicit. Six output/sidecar files
+are byte-, length-, and timestamp-identical after replay. No original script,
+receipt or frozen sidecar was changed. Full-kernel comparison is explicitly
+PENDING; the temporal block supplies neither spatial/mixed blocks nor evolution.
+
+Next: observe the same G3N5 run to its actual terminal result, inspect all
+failures/unknowns, replay successful outputs, and compare the independent block
+in a new attempt before provisional kernel reuse. Then solve coupled constraints,
+compatible initial data and response, retaining homogeneous data and the
+unsmoothed force/harmonic tail. Cauchy/DAE domain, physical stability, cutoff,
+healthy continuous GR, and C1/C2 findings remain substantive and unchanged.
+
+Rule-9 review remains DEFERRED. The full eight-route/Tests-1-3 goal remains
+active/incomplete; all parent holds remain unchanged. No action replacement,
+manuscript/PDF/vault change, provider dispatch, commit, push, promotion or
+publication. Original queue prefix is retained byte-for-byte; pre-append SHA-256
+31bf8767b56c681dd84f508328ee16ef29d62a8ab6c502a0a42bb7028551a824
+is saved in ignored .local/itsm-context/g3n5-time-2026-10-09-queue-before.md.
+
+## 9 October 2026 - G3N5 export bottleneck diagnosed; v2 prepared, not run
+
+Three read-only stack samples locate the original worker in multivariate
+factorization used only to print the sector quadratic densities. The worker
+remains live without a terminal receipt. No physics outcome is inferred.
+The [v2 preparation report](../Gates/RES-001/RES001_R4C1_G3N5_EXPORT_V2_PREPARATION_REPORT_2026-10-09.md)
+records a new frozen export-only executor. Its scientific derivation prefix,
+ten helper functions/classes, independent controls, fields and directions are
+AST-identical to v1; small exact serializer tests pass. All 130 source pins /
+127 available sidecars match; inherited absent sidecars remain explicit.
+
+No full v2 run or kernel comparison has occurred. The operator's stop/keep
+choice for the original export-bound process is pending; it was not stopped
+and no second expensive run was started. This is a diagnosed implementation
+alternative, not a duplicate justified by an expired poll. After that choice,
+inspect and disposition all checks, replay successful outputs, use a new
+temporal comparator where required, and continue full constraints/response.
+
+All parent holds, earlier failures and the full active goal are unchanged.
+Review remains DEFERRED; no physics, publication or canonical promotion.
+Original queue prefix is retained byte-for-byte; pre-append SHA-256
+5c12bacbb7a9fe4341d65898946de60df7271f5c363e2bf6de375de234f7c048
+is saved in ignored .local/itsm-context/g3n5-export-v2-2026-10-09-queue-before.md.
+
+## 9 October 2026 - G3N5 complete background-condition matching checked
+
+The [background-matching report](../Gates/RES-001/RES001_R4C1_G3N5_BACKGROUND_MATCHING_REPORT_2026-10-09.md)
+passes 62/62 local checks and exact read-only replay. All 22 direct 4D
+first-variation tadpoles match B1 with every spatial direction and the raw
+normal equation retained. Independent lapse-unfixed variation, off-shell
+Noether/constraint propagation and wrong-source-sign controls pass on their
+declared scope. This is background input matching, not a new trajectory or
+the full nonlinear T3 solution. All 130 pins / 127 available sidecars match;
+three inherited absences and original G3/N3 failures remain explicit. Six
+output/sidecar files retain bytes, hashes, lengths and timestamps after replay.
+
+The original full-kernel worker remains live without a terminal receipt.
+Export-only v2 is prepared, not run, pending the earlier operator choice.
+No original worker was stopped or duplicated. Next: use the complete background
+map with the full kernel and its comparison, then solve compatible constraints,
+initial data and coupled response. Physical stability/domain/cutoff, healthy
+continuous GR and the full Tests-1-3 goal remain open; review DEFERRED.
+All parent holds and original evidence remain unchanged; no promotion.
+Original queue prefix is retained byte-for-byte; pre-append SHA-256
+eae908859b435f524f35fdbbe139310010492b155258b251f080b9c767375df8
+is saved in ignored .local/itsm-context/g3n5-background-2026-10-09-queue-before.md.
+
+## 9 October 2026 - C3 conditional force-scale transport recorded
+
+The [C3 report](../Gates/RES-001/RES001_R4C1_COEFFICIENT_FRAME_TRANSPORT_REPORT_2026-10-09.md)
+passes 43/43 local checks and exact read-only replay. The frozen-local-C map
+of C1's separately conditional spherical scale gives a_dyn,m=a_dyn,E/C and
+H_m=(H_E+beta psi_dot)/C. For fixed A,beta, constant C_chi requires
+G_E(t)*(H_E+beta psi_dot)*P(t)^2 constant. G_E and P remain unspecified;
+no coupled G_eff, common B1/static validity domain or physical a0(z) follows.
+
+The declared constant-G_E/P control does not automatically track H even at
+B1's initial point. Its saved dimensionless benchmark gives a 6.63485 end/start
+coefficient ratio, not a calibrated observational prediction or all-parent
+exclusion. All 139 pins / 136 available sidecars match; three inherited
+absences and original G3/N3 failures remain. Eight output/sidecar files retain
+hashes, sizes and timestamps after exact replay. New transport thresholds do
+not weaken any earlier physics criterion. Review DEFERRED; all parent holds
+and full Tests-1-3 obligations remain open. Continue kernel/constraint/response
+work before physical coefficient matching. No promotion or publication.
+Original queue prefix is retained byte-for-byte; pre-append SHA-256
+f097dac87b0519954c4b8ca7098aa879759bf68bff1950b66a6441dc861947f2
+is saved in ignored .local/itsm-context/c3-frame-transport-2026-10-09-queue-before.md.
+
+
+## 10 October 2026 - G3N5 coupled constraint-response checkpoint complete
+
+The [consolidated report](../Gates/RES-001/RES001_R4C1_G3N5_CONSTRAINT_RESPONSE_REPORT_2026-10-10.md)
+records the bounded [approved goal](ITSM_G3N5_CONSTRAINT_RESPONSE_GOAL_PLAN_2026-10-10.md):
+full 22-field/all-direction kernel 33/33, independent temporal comparison
+13/13, and constrained coupled periodic-T3 linear IVPs for the mean and four
+nonzero modes. Kernel and temporal results pass exact read-only replay.
+The separate 70-digit response witness passes 124/124 and exact read-only
+replay with all eight output/sidecar hashes, sizes and timestamps unchanged.
+
+Original binary64 response v1 remains FAIL_LOCAL_CHECKS, 120/125, with five
+finite-difference refinement failures. Its twelve files are untouched. The
+70-digit calculation keeps the original equations, action parameters, initial
+data, domains and refinement criteria; full-field trajectories agree within
+1.940e-11. This supports a numerical verification limitation on this benchmark,
+without uniquely separating cancellation from dense-output interpolation.
+The mean time block retains one negative eigenvalue (-0.55); no physical
+ghost/healthy-stability conclusion is made. Singular auxiliary domains are
+classified, not inverted; the mean mode has its own retained chart.
+
+All 154 pins / 151 available sidecars match. Three inherited absences and
+original G3/N3 failures remain. This completes the approved local checkpoint,
+not the broad Tests-1-3 programme. Next substantive work is the physical
+constraint/energy interpretation of the mean sign and characteristic/cutoff
+and healthy-GR domains, or separately the unsmoothed nonlinear response.
+Physical weak-field and microscopic/coefficient matching are still missing.
+Rule-9 remains DEFERRED; provisional reuse is scoped to this declared linear
+branch. Tests 1-3 HOLD_SUBSTANTIVE, MAT-001 BLOCKED, UVIR-003 IN_PROGRESS,
+K_Q NOT_DERIVED, V NOT_COMPUTED, Stage4A CLOSED, TOP-X4 unchanged;
+physics_pass=false; gate_effect=NONE. No promotion or publication.
+
+Original queue prefix is retained byte-for-byte; pre-append SHA-256
+7ba29ca8ac63c6b007885ddbf0adef76ad45164a6343e72fc51d8b2a83f626a6
+is saved in ignored .local/itsm-context/g3n5-goal-2026-10-10-queue-before.md.
+
+## 11 October 2026 - G3N5 homogeneous canonical-energy disposition complete
+
+The [canonical-energy report](../Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_REPORT_2026-10-11.md)
+completes the [approved bounded goal](ITSM_G3N5_MEAN_MODE_ENERGY_GOAL_PLAN_2026-10-11.md).
+Full 22-field constraints, two regular clocks, fixed-complex-charge Routh
+reduction and finite canonical witnesses pass 124/124 local checks and
+exact read-only replay. Separate unfixed-lapse Legendre checks pass 12/12
+and replay; full independent momentum-block comparison passes 18/18 and
+replay. These are local calculations, not external Rule-9 clearance.
+
+The -0.55 mean trace direction survives in the original fixed-complex-only
+ensemble: twelve canonical pairs, eleven positive and one negative kinetic
+direction in both dust and force-psi clocks. Its admissible witness varies
+the separately conserved global dust momentum, not a gauge direction.
+Additionally fixing P_tau=1/5 and quotienting its global origin gives a
+distinct eleven-pair positive homogeneous momentum control. That ensemble
+change does NOT clear the original direction or establish physical stability.
+
+All 317 original baseline files/sidecars and fourteen new replayed receipt
+files retain hashes, sizes and timestamps. Main v1/v2/v3 sources/sidecars
+are preserved; interrupted runs had no acceptance receipts. Original
+linear response v1 remains FAIL_LOCAL_CHECKS 120/125 with five failures.
+Three inherited missing sidecars and G3/N3 failures remain.
+
+Next substantive work: constrained nonzero-mode characteristics, gradient/
+ghost domains and physical cutoff/window. Nonlinear response, healthy GR,
+G_eff/PPN, weak-field and microscopic matching still require work.
+Rule-9 DEFERRED; provisional reuse within checked scope only.
+Tests 1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS;
+K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 UNCHANGED;
+physics_pass=false; gate_effect=NONE. No publication or promotion.
+
+Original queue prefix is preserved byte-for-byte. Pre-append SHA-256
+1e170b20d0c2af499ec2e3701e6dafede2ec91f949b898e40eb4f62c6ead5746
+is saved in ignored .local/itsm-context/g3n5-h1-2026-10-11-queue-before.md.

@@ -1,0 +1,115 @@
+{
+  "C_chi_tracking_policy": "constant G_E and P is an explicit diagnostic assumption, not a derived physical property",
+  "finite_difference_controls": [
+    {
+      "boundaries_excluded": 2,
+      "dt": 0.02,
+      "interior_samples": 197,
+      "normalized_errors": {
+        "dust_proper_clock": 1.3368270848702285e-08,
+        "matter_dust_continuity": 3.012071758068391e-06,
+        "matter_expansion": 8.230759134253418e-07,
+        "normalized_coefficient_log_rate": 1.0721167088556527e-06,
+        "normalized_scale_log_rate": 1.0257975030514288e-07
+      },
+      "samples": 201
+    },
+    {
+      "boundaries_excluded": 2,
+      "dt": 0.01,
+      "interior_samples": 397,
+      "normalized_errors": {
+        "dust_proper_clock": 9.601592758228206e-10,
+        "matter_dust_continuity": 2.3265982129760943e-07,
+        "matter_expansion": 5.979695527624784e-08,
+        "normalized_coefficient_log_rate": 7.463041518107616e-08,
+        "normalized_scale_log_rate": 7.678682439893336e-09
+      },
+      "samples": 401
+    },
+    {
+      "boundaries_excluded": 2,
+      "dt": 0.005,
+      "interior_samples": 797,
+      "normalized_errors": {
+        "dust_proper_clock": 6.450609864952905e-11,
+        "matter_dust_continuity": 1.6224384502550038e-08,
+        "matter_expansion": 4.043915757812044e-09,
+        "normalized_coefficient_log_rate": 5.0078330371405855e-09,
+        "normalized_scale_log_rate": 5.266402591797004e-10
+      },
+      "samples": 801
+    }
+  ],
+  "inherited_failed_parent_checks": [
+    {
+      "criterion": "<1e-7",
+      "name": "eta1_independent_fd_balances",
+      "passed": false,
+      "value": 1.1005635230674148e-07
+    }
+  ],
+  "normalized_end_to_start": {
+    "Cchi": 6.634852123252589,
+    "a_dyn": 0.9644481035070235
+  },
+  "sampled_points": [
+    {
+      "C": 1.0,
+      "Cchi_normalized": 0.15071925966449004,
+      "H_m": 0.946525129967851,
+      "a_dyn_normalized": 1.0368624256335817,
+      "t_E": 0.0,
+      "z_ref": 3.4930365534737273
+    },
+    {
+      "C": 1.0301893672830928,
+      "Cchi_normalized": 0.25935096137338004,
+      "H_m": 0.533944325848293,
+      "a_dyn_normalized": 1.0064775065268705,
+      "t_E": 1.0,
+      "z_ref": 1.1628722647416692
+    },
+    {
+      "C": 1.0346766880414942,
+      "Cchi_normalized": 0.5253885332746306,
+      "H_m": 0.2624313090721414,
+      "a_dyn_normalized": 1.0021124836553772,
+      "t_E": 2.0,
+      "z_ref": 0.4582399645560371
+    },
+    {
+      "C": 1.0361818222930304,
+      "Cchi_normalized": 0.7860900484546787,
+      "H_m": 0.1751429391415177,
+      "a_dyn_normalized": 1.0006568377536726,
+      "t_E": 3.0,
+      "z_ref": 0.1753214770853282
+    },
+    {
+      "C": 1.0368624256335817,
+      "Cchi_normalized": 1.0,
+      "H_m": 0.1375877486884691,
+      "a_dyn_normalized": 1.0,
+      "t_E": 4.0,
+      "z_ref": 0.0
+    }
+  ],
+  "source_policy": "saved B1 trajectory; no reintegration, fit or physical validity inference",
+  "superseded_N3_attempt_01_failed_checks": [
+    {
+      "criterion": "exact",
+      "name": "reject_direct_source_as_full_Z_solution",
+      "passed": false,
+      "value": null
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "all_direct_harmonics_exact_reconstruction",
+      "passed": false,
+      "value": [
+        "-psi_dot*(4*cos(2*chi)**3 + 6*cos(2*chi)**2 - 3*cos(2*chi) - 3*cos(4*chi) - cos(6*chi) - 3)/48"
+      ]
+    }
+  ]
+}

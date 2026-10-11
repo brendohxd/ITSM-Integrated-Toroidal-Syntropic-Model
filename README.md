@@ -27,9 +27,18 @@ The programme strictly adheres to the fail-closed Iron Rule:
 
 Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
 
-## Research checkpoint - 8 October 2026
+## Research checkpoint - 11 October 2026
 
-The [dated research checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md)
+The [G3N5 homogeneous canonical-energy report](Theory/Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_REPORT_2026-10-11.md)
+records the completed bounded audit: 124/124 canonical checks, 12/12 separate
+unfixed-action checks and 18/18 complete momentum-block comparison checks,
+all with exact read-only replay. The negative mean direction survives in both
+clocks when the separately conserved dust charge can vary. Fixing that extra
+charge gives a positive homogeneous momentum control in a different ensemble;
+it does not establish physical stability or a propagating-ghost conclusion.
+Rule-9 remains deferred; substantive gates and publication holds are unchanged.
+
+The [earlier 8 October research checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md)
 links the G3 density, interaction/regularity, tilted-background and finite-k
 scalar evidence, preserved failures, exact-byte manifest and next work.
 G3K passes 744/744 local checks across 120 scalar operators and eight short
@@ -37,14 +46,14 @@ evolutions; negative dust-clock kinetic directions, positive frozen growth
 exponents and the w^2=1/5 shift-chart boundary remain explicit. No physical
 stability, EFT cutoff, healthy full GR, SPARC prediction or gate pass follows.
 
-## 🧭 Core status (R4C1 checkpoint: 8 October; other sectors retain their dated snapshots)
+## 🧭 Core status (R4C1 checkpoint: 11 October; other sectors retain their dated snapshots)
 
 | Gate / Sector | Status | Physical Result |
 |---|---|---|
 | **Core identity** | `CANONICAL; IDENTITY HELD` | Active finite-density condensate, topology, preferred frame and force/reservoir sectors remain distinct; identity-first governance is unchanged. |
 | **MAT-001** | **`BLOCKED`** | M2/M3-U1 fixed-background controls are bounded reductions only; `K_Q` remains `NOT_DERIVED` and `V` remains `NOT_COMPUTED`. |
 | **UVIR-003** | **`IN_PROGRESS`** | Tier-1 closure remains downstream of the MAT matching blocker; no physical cutoff or complete constrained amplitude is promoted. |
-| **Master Tests 1–3 / R4C1** | **`PROVISIONAL CONTINUATION; HOLD_SUBSTANTIVE`** | The conditional G3 chain now includes scalar/density controls, a fixed-metric frame interaction probe, the constrained cubic-vertex obstruction, local tilted homogeneous candidates and the complete closed scalar axis operator. G3T has 268/268 and G3K 744/744 local checks. Negative dust-clock kinetic directions, positive instantaneous real exponents and the w^2=1/5 shift-chart boundary remain explicit. Preferred-Cauchy/domain, full arbitrary-direction sectors, physical scattering/EFT cutoff, healthy GR, weak-field closure and blind coefficient matching remain open. No canonical Test-1/2/3 or SPARC validation pass follows. |
+| **Master Tests 1–3 / R4C1** | **`PROVISIONAL CONTINUATION; HOLD_SUBSTANTIVE`** | G3N5 adds the full 22-field quadratic kernel (33/33), separate temporal comparison (13/13), a finite constrained linear benchmark (70-digit response 124/124), and the homogeneous canonical/charge audit (a separate 124/124 plus 18/18 momentum comparison), with exact replays. The negative homogeneous canonical direction survives in both clocks at fixed complex charge with varying dust charge. The additionally fixed-dust positive control is a different ensemble. Earlier failures and singular domains remain explicit. Physical nonzero-mode characteristics, gradient/ghost domains, scattering/EFT cutoff, nonlinear control, healthy GR, weak-field closure and blind coefficient matching remain open. No canonical Test-1/2/3 or SPARC validation pass follows. |
 | **TOP-X4 / KK-001** | **`BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD`** | The branchwise WKB checkpoint remains failed 11/12, exact finite-order transport passed 18/18, the D5 scaffold passed 20/20, the fixed-metric scalar/`chi` operator passed 25/25, and the local scalar-matrix Hadamard-parametrix checkpoint passed 22/22 through `U_2`. The finite-order Route-B diagnostic passed 8/8, the Route-A scalar-state construction passed 10/10 theorem-backed checks, and the scoped curved-Dirac operator passed 13/13 with contract and operator checks separated. `physics_pass=false`; the spinor state, gravity/ghost, parity, determinant, stress, physical Hessian and Rule-9 remain incomplete. |
 | **BBN-001** | **`CONTROL_ONLY / BLOCKED_UPSTREAM_BACKGROUND`** | Table/schema/CAMB plumbing and the action-derived interface contract are checked, but the physical temperature/unit map, early plenum, `Q^\mu`, `S_N` and action-derived `G_eff` are not exported by UVIR-003. |
 | **TOP-001 / CBR-002** | **`HOLD`** | P2/CBR-001 has a portable local-repair candidate and a narrowed instantaneous-closure result; independent-role, sensitivity and noncubic checks remain required. |

@@ -1,0 +1,189 @@
+{
+  "Euler_sources_before_shift": {
+    "Em": "0",
+    "LambdaU": "0",
+    "Mxx": "-(-B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 - 2*B_z*MU2*W_z*c1 - 2*B_z*MU2*W_z*c3 - 8*H**2*MU2*W**2*a**2*c1 - 18*H**2*MU2*W**2*a**2*c2 - 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 - 8*H*MU2*W*W_t*a**2*c1 - 24*H*MU2*W*W_t*a**2*c2 - 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 4*Hdot*MU2*W**2*a**2*c1 - 12*Hdot*MU2*W**2*a**2*c2 - 4*Hdot*MU2*W**2*a**2*c3 - 2*K_Q*W**2*a**2*psi_dot**2 - 4*MU2*W*W_tt*a**2*c2 - 2*MU2*W_t**2*a**2*c1 - 4*MU2*W_t**2*a**2*c2 - 2*MU2*W_t**2*a**2*c4 + 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)",
+    "Mxy": "0",
+    "Mxz": "0",
+    "Myy": "-(-3*B_z**2*MP2 + 3*B_z**2*MU2*c1 + 3*B_z**2*MU2*c3 - 6*B_z*MU2*W_z*c1 - 6*B_z*MU2*W_z*c3 + 12*H**2*MU2*W**2*a**2*c1 - 18*H**2*MU2*W**2*a**2*c2 - 6*H**2*MU2*W**2*a**2*c3 + 18*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c1 - 24*H*MU2*W*W_t*a**2*c2 - 16*H*MU2*W*W_t*a**2*c3 + 28*H*MU2*W*W_t*a**2*c4 - 24*Hdot*MU2*W**2*a**2*c2 - 8*Hdot*MU2*W**2*a**2*c3 + 8*Hdot*MU2*W**2*a**2*c4 - 6*K_Q*W**2*a**2*psi_dot**2 + 4*MU2*W*W_tt*a**2*c1 - 4*MU2*W*W_tt*a**2*c2 - 4*MU2*W*W_tt*a**2*c3 + 8*MU2*W*W_tt*a**2*c4 - 4*MU2*W*W_zz*c1 + 4*MU2*W*W_zz*c3 - 2*MU2*W_t**2*a**2*c1 - 4*MU2*W_t**2*a**2*c2 - 4*MU2*W_t**2*a**2*c3 + 2*MU2*W_t**2*a**2*c4 + 2*MU2*W_z**2*c1 + 4*MU2*W_z**2*c3 + 6*W**2*a**2*u0**2*v_dot**2*zeta - 12*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 6*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)",
+    "Myz": "0",
+    "Mzz": "-(B_z**2*MP2 - B_z**2*MU2*c1 - B_z**2*MU2*c3 + 2*B_z*MU2*W_z*c1 + 2*B_z*MU2*W_z*c3 - 8*H**2*MU2*W**2*a**2*c1 - 18*H**2*MU2*W**2*a**2*c2 - 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 - 8*H*MU2*W*W_t*a**2*c1 - 24*H*MU2*W*W_t*a**2*c2 - 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 4*Hdot*MU2*W**2*a**2*c1 - 12*Hdot*MU2*W**2*a**2*c2 - 4*Hdot*MU2*W**2*a**2*c3 - 2*K_Q*W**2*a**2*psi_dot**2 - 4*MU2*W*W_tt*a**2*c2 - 2*MU2*W_t**2*a**2*c1 - 4*MU2*W_t**2*a**2*c2 - 2*MU2*W_t**2*a**2*c4 - 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)",
+    "Pi": "-K_Q*W*(3*H*W*psi_dot + W*psi_ddot + 2*W_t*psi_dot)",
+    "Sx": "0",
+    "Sy": "0",
+    "Sz": "-MU2*(2*H*W*W_z*c1 + 3*H*W*W_z*c2 + H*W*W_z*c3 + H*W*W_z*c4 + W*W_tz*c2 + W_t*W_z*c1 + W_t*W_z*c2 + W_t*W_z*c4)/a",
+    "T": "0",
+    "Vx": "0",
+    "Vy": "0",
+    "Vz": "MU2*(B_tz*W*c1 - B_tz*W*c3 + 2*B_tz*W*c4 - 2*B_z*H*W*c3 + 2*B_z*H*W*c4 + 2*B_z*W_t*c1 + 2*B_z*W_t*c4 + 4*H*W*W_z*c1 + 6*H*W*W_z*c2 + 6*H*W*W_z*c3 + 2*H*W*W_z*c4 + 2*W*W_tz*c2 + 2*W*W_tz*c3 + 2*W_t*W_z*c2 + 2*W_t*W_z*c3 + 2*W_t*W_z*c4)/(2*a)",
+    "Z": "W*b*(2*H*W*psi_dot + W*psi_ddot + W_t*psi_dot)",
+    "alpha": "(-B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 + 2*B_z*MU2*W_z*c1 - 2*B_z*MU2*W_z*c3 + 4*B_z*MU2*W_z*c4 + 2*B_zz*MU2*W*c1 - 2*B_zz*MU2*W*c3 + 4*B_zz*MU2*W*c4 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 + 4*MU2*W*W_zz*c3 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 - 2*MU2*W_z**2*c1 + 4*MU2*W_z**2*c3 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(4*a**2)",
+    "dr": "0",
+    "du": "-W*zeta*(3*H*W*u0*v0*v_dot - 3*H*W*u_dot*v0**2 + W*u0*v0*v_ddot + 2*W*u0*v_dot**2 - W*u_ddot*v0**2 - 2*W*u_dot*v0*v_dot + 2*W_t*u0*v0*v_dot - 2*W_t*u_dot*v0**2)",
+    "dv": "W*zeta*(3*H*W*u0**2*v_dot - 3*H*W*u0*u_dot*v0 + W*u0**2*v_ddot - W*u0*u_ddot*v0 + 2*W*u0*u_dot*v_dot - 2*W*u_dot**2*v0 + 2*W_t*u0**2*v_dot - 2*W_t*u0*u_dot*v0)",
+    "nu": "-MU2*(B_z**2*c1 + B_z**2*c3 - 2*B_z*W_z*c1 + 2*B_zz*W*c3 + 4*H**2*W**2*a**2*c1 - 4*H**2*W**2*a**2*c4 - 6*H*W*W_t*a**2*c2 - 6*H*W*W_t*a**2*c3 - 8*H*W*W_t*a**2*c4 - 6*Hdot*W**2*a**2*c2 - 2*Hdot*W**2*a**2*c3 - 2*W*W_tt*a**2*c2 - 2*W*W_tt*a**2*c3 - 2*W_t**2*a**2*c1 - 2*W_t**2*a**2*c2 - 2*W_t**2*a**2*c3 - 4*W_t**2*a**2*c4 + 2*W_z**2*c1)/(2*a**2)"
+  },
+  "G3_Euler_sources_after_shift": {
+    "Em": "0",
+    "LambdaU": "0",
+    "Mxx": "-eta*(3120*H**2*W**2*a**2*eta - 24960*H**2*W**2*a**2 + 5460*H*W*W_t*a**2*eta - 43680*H*W*W_t*a**2 + 3120*Hdot*W**2*a**2*eta - 24960*Hdot*W**2*a**2 - 28080*W**2*a**2*eta*psi_dot**2 + 720*W**2*a**2*eta*u0**2*v_dot**2 - 1440*W**2*a**2*eta*u0*u_dot*v0*v_dot + 720*W**2*a**2*eta*u_dot**2*v0**2 + 224640*W**2*a**2*psi_dot**2 - 5760*W**2*a**2*u0**2*v_dot**2 + 11520*W**2*a**2*u0*u_dot*v0*v_dot - 5760*W**2*a**2*u_dot**2*v0**2 + 1820*W*W_tt*a**2*eta - 14560*W*W_tt*a**2 + 260*W_t**2*a**2*eta - 2080*W_t**2*a**2 + 663*W_z**2*eta - 9984*W_z**2)/(37440*a**2*(eta - 8))",
+    "Mxy": "0",
+    "Mxz": "0",
+    "Myy": "-eta*(18720*H**2*W**2*a**2*eta - 149760*H**2*W**2*a**2 + 23400*H*W*W_t*a**2*eta - 187200*H*W*W_t*a**2 + 12480*Hdot*W**2*a**2*eta - 99840*Hdot*W**2*a**2 - 84240*W**2*a**2*eta*psi_dot**2 + 2160*W**2*a**2*eta*u0**2*v_dot**2 - 4320*W**2*a**2*eta*u0*u_dot*v0*v_dot + 2160*W**2*a**2*eta*u_dot**2*v0**2 + 673920*W**2*a**2*psi_dot**2 - 17280*W**2*a**2*u0**2*v_dot**2 + 34560*W**2*a**2*u0*u_dot*v0*v_dot - 17280*W**2*a**2*u_dot**2*v0**2 + 5720*W*W_tt*a**2*eta - 45760*W*W_tt*a**2 - 2652*W*W_zz*eta + 21216*W*W_zz + 1040*W_t**2*a**2*eta - 8320*W_t**2*a**2 - 663*W_z**2*eta - 8736*W_z**2)/(37440*a**2*(eta - 8))",
+    "Myz": "0",
+    "Mzz": "-eta*(3120*H**2*W**2*a**2*eta - 24960*H**2*W**2*a**2 + 5460*H*W*W_t*a**2*eta - 43680*H*W*W_t*a**2 + 3120*Hdot*W**2*a**2*eta - 24960*Hdot*W**2*a**2 - 28080*W**2*a**2*eta*psi_dot**2 + 720*W**2*a**2*eta*u0**2*v_dot**2 - 1440*W**2*a**2*eta*u0*u_dot*v0*v_dot + 720*W**2*a**2*eta*u_dot**2*v0**2 + 224640*W**2*a**2*psi_dot**2 - 5760*W**2*a**2*u0**2*v_dot**2 + 11520*W**2*a**2*u0*u_dot*v0*v_dot - 5760*W**2*a**2*u_dot**2*v0**2 + 1820*W*W_tt*a**2*eta - 14560*W*W_tt*a**2 + 260*W_t**2*a**2*eta - 2080*W_t**2*a**2 - 663*W_z**2*eta + 9984*W_z**2)/(37440*a**2*(eta - 8))",
+    "Pi": "-3*W*eta*(3*H*W*psi_dot + W*psi_ddot + 2*W_t*psi_dot)",
+    "Sx": "0",
+    "Sy": "0",
+    "Sz": "eta*(7*W*W_tz - 5*W_t*W_z)/(72*a)",
+    "T": "0",
+    "Vx": "0",
+    "Vy": "0",
+    "Vz": "eta*(18*H*W*W_z*eta + 96*H*W*W_z - W*W_tz*eta + 608*W*W_tz + 68*W_t*W_z*eta + 416*W_t*W_z)/(720*a*(eta - 8))",
+    "Z": "5*W*eta*(2*H*W*psi_dot + W*psi_ddot + W_t*psi_dot)/11",
+    "alpha": "eta*(-2080*H**2*W**2*a**2*eta + 16640*H**2*W**2*a**2 - 2080*H*W*W_t*a**2*eta + 16640*H*W*W_t*a**2 - 9360*W**2*a**2*eta*psi_dot**2 + 240*W**2*a**2*eta*u0**2*v_dot**2 - 480*W**2*a**2*eta*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 + 598*W*W_zz*eta + 416*W*W_zz - 520*W_t**2*a**2*eta + 4160*W_t**2*a**2 + 377*W_z**2*eta + 3744*W_z**2)/(6240*a**2*(eta - 8))",
+    "dr": "0",
+    "du": "-W*eta*(3*H*W*u0*v0*v_dot - 3*H*W*u_dot*v0**2 + W*u0*v0*v_ddot + 2*W*u0*v_dot**2 - W*u_ddot*v0**2 - 2*W*u_dot*v0*v_dot + 2*W_t*u0*v0*v_dot - 2*W_t*u_dot*v0**2)/13",
+    "dv": "W*eta*(3*H*W*u0**2*v_dot - 3*H*W*u0*u_dot*v0 + W*u0**2*v_ddot - W*u0*u_ddot*v0 + 2*W*u0*u_dot*v_dot - 2*W*u_dot**2*v0 + 2*W_t*u0**2*v_dot - 2*W_t*u0*u_dot*v0)/13",
+    "nu": "-eta*(144*H**2*W**2*a**2*eta**2 - 2304*H**2*W**2*a**2*eta + 9216*H**2*W**2*a**2 + 132*H*W*W_t*a**2*eta**2 - 2112*H*W*W_t*a**2*eta + 8448*H*W*W_t*a**2 + 216*Hdot*W**2*a**2*eta**2 - 3456*Hdot*W**2*a**2*eta + 13824*Hdot*W**2*a**2 + 76*W*W_tt*a**2*eta**2 - 1216*W*W_tt*a**2*eta + 4864*W*W_tt*a**2 - 6*W*W_zz*eta**2 + 48*W*W_zz*eta - 68*W_t**2*a**2*eta**2 + 1088*W_t**2*a**2*eta - 4352*W_t**2*a**2 + 45*W_z**2*eta**2 - 768*W_z**2*eta + 6144*W_z**2)/(720*a**2*(eta - 8)**2)"
+  },
+  "Ward": {
+    "gauge_weights": {
+      "longitudinal_space": "delta Sz=a xi_t; delta Mzz=2xi_z; background boosts/scalars unchanged",
+      "time": "delta alpha=xi_t; delta Mii=2Hxi; delta Sz=delta Vz=-xi_z/a; delta f=f_dot xi"
+    },
+    "longitudinal_before_vector_shell": "-W_z*eta*(1040*H**2*W*a**2*eta - 8320*H**2*W*a**2 + 1560*H*W_t*a**2*eta - 12480*H*W_t*a**2 + 1040*Hdot*W*a**2*eta - 8320*Hdot*W*a**2 - 9360*W*a**2*eta*psi_dot**2 + 240*W*a**2*eta*u0**2*v_dot**2 - 480*W*a**2*eta*u0*u_dot*v0*v_dot + 240*W*a**2*eta*u_dot**2*v0**2 + 74880*W*a**2*psi_dot**2 - 1920*W*a**2*u0**2*v_dot**2 + 3840*W*a**2*u0*u_dot*v0*v_dot - 1920*W*a**2*u_dot**2*v0**2 + 520*W_tt*a**2*eta - 4160*W_tt*a**2 - 221*W_zz*eta + 3328*W_zz)/(3120*a**2*(eta - 8))",
+    "longitudinal_on_shell_residual": "0",
+    "temporal_before_vector_shell": "-eta*(H*W - W_t)*(1040*H**2*W*a**2*eta - 8320*H**2*W*a**2 + 1560*H*W_t*a**2*eta - 12480*H*W_t*a**2 + 1040*Hdot*W*a**2*eta - 8320*Hdot*W*a**2 - 9360*W*a**2*eta*psi_dot**2 + 240*W*a**2*eta*u0**2*v_dot**2 - 480*W*a**2*eta*u0*u_dot*v0*v_dot + 240*W*a**2*eta*u_dot**2*v0**2 + 74880*W*a**2*psi_dot**2 - 1920*W*a**2*u0**2*v_dot**2 + 3840*W*a**2*u0*u_dot*v0*v_dot - 1920*W*a**2*u_dot**2*v0**2 + 520*W_tt*a**2*eta - 4160*W_tt*a**2 - 221*W_zz*eta + 3328*W_zz)/(3120*a**2*(eta - 8))",
+    "temporal_on_shell_residual": "0",
+    "vector_Wtt_solution": "-3*H*W_t - W*(2*H**2 + 2*Hdot - 18*psi_dot**2 + (-6*u0*v_dot + 6*u_dot*v0)*(-u0*v_dot + u_dot*v0)/13) + W_zz*(3*eta/(64 - 8*eta) + 4/5)/a**2",
+    "vector_equation": "-eta*(1040*H**2*W*a**2*eta - 8320*H**2*W*a**2 + 1560*H*W_t*a**2*eta - 12480*H*W_t*a**2 + 1040*Hdot*W*a**2*eta - 8320*Hdot*W*a**2 - 9360*W*a**2*eta*psi_dot**2 + 240*W*a**2*eta*u0**2*v_dot**2 - 480*W*a**2*eta*u0*u_dot*v0*v_dot + 240*W*a**2*eta*u_dot**2*v0**2 + 74880*W*a**2*psi_dot**2 - 1920*W*a**2*u0**2*v_dot**2 + 3840*W*a**2*u0*u_dot*v0*v_dot - 1920*W*a**2*u_dot**2*v0**2 + 520*W_tt*a**2*eta - 4160*W_tt*a**2 - 221*W_zz*eta + 3328*W_zz)/(3120*a**2*(eta - 8))"
+  },
+  "homogeneous_scope": "No Laplacian inverse or omitted mean; sources not solved response amplitudes",
+  "mixed_source_functional": "-(-B_z**2*MP2*Mxx - 3*B_z**2*MP2*Myy + B_z**2*MP2*Mzz + 2*B_z**2*MP2*alpha + B_z**2*MU2*Mxx*c1 + B_z**2*MU2*Mxx*c3 + 3*B_z**2*MU2*Myy*c1 + 3*B_z**2*MU2*Myy*c3 - B_z**2*MU2*Mzz*c1 - B_z**2*MU2*Mzz*c3 - 2*B_z**2*MU2*alpha*c1 - 2*B_z**2*MU2*alpha*c3 + 4*B_z**2*MU2*c1*nu + 4*B_z**2*MU2*c3*nu + 8*B_z*H*MU2*Vz*W*a*c1 + 8*B_z*H*MU2*Vz*W*a*c4 - 2*B_z*MU2*Mxx*W_z*c1 - 2*B_z*MU2*Mxx*W_z*c3 - 6*B_z*MU2*Myy*W_z*c1 - 6*B_z*MU2*Myy*W_z*c3 + 2*B_z*MU2*Mzz*W_z*c1 + 2*B_z*MU2*Mzz*W_z*c3 - 4*B_z*MU2*Vz*W_t*a*c1 - 4*B_z*MU2*Vz*W_t*a*c3 + 4*B_z*MU2*Vz_t*W*a*c1 - 4*B_z*MU2*Vz_t*W*a*c3 + 8*B_z*MU2*Vz_t*W*a*c4 + 4*B_z*MU2*W*alpha_z*c1 - 4*B_z*MU2*W*alpha_z*c3 + 8*B_z*MU2*W*alpha_z*c4 - 8*B_z*MU2*W*c3*nu_z - 8*B_z*MU2*W_z*c1*nu - 8*B_z*MU2*W_z*c3*nu + 4*H**2*MU2*Mxx*W**2*a**2*c1 + 18*H**2*MU2*Mxx*W**2*a**2*c2 + 6*H**2*MU2*Mxx*W**2*a**2*c3 - 2*H**2*MU2*Mxx*W**2*a**2*c4 + 12*H**2*MU2*Myy*W**2*a**2*c1 + 54*H**2*MU2*Myy*W**2*a**2*c2 + 18*H**2*MU2*Myy*W**2*a**2*c3 - 6*H**2*MU2*Myy*W**2*a**2*c4 + 4*H**2*MU2*Mzz*W**2*a**2*c1 + 18*H**2*MU2*Mzz*W**2*a**2*c2 + 6*H**2*MU2*Mzz*W**2*a**2*c3 - 2*H**2*MU2*Mzz*W**2*a**2*c4 - 8*H**2*MU2*W**2*a**2*alpha*c1 - 36*H**2*MU2*W**2*a**2*alpha*c2 - 12*H**2*MU2*W**2*a**2*alpha*c3 + 4*H**2*MU2*W**2*a**2*alpha*c4 + 16*H**2*MU2*W**2*a**2*c1*nu + 72*H**2*MU2*W**2*a**2*c2*nu + 24*H**2*MU2*W**2*a**2*c3*nu - 16*H**2*MU2*W**2*a**2*c4*nu + 12*H*MU2*Mxx*W*W_t*a**2*c2 + 4*H*MU2*Mxx*W*W_t*a**2*c3 - 4*H*MU2*Mxx*W*W_t*a**2*c4 + 4*H*MU2*Mxx_t*W**2*a**2*c1 + 12*H*MU2*Mxx_t*W**2*a**2*c2 + 4*H*MU2*Mxx_t*W**2*a**2*c3 + 36*H*MU2*Myy*W*W_t*a**2*c2 + 12*H*MU2*Myy*W*W_t*a**2*c3 - 12*H*MU2*Myy*W*W_t*a**2*c4 + 24*H*MU2*Myy_t*W**2*a**2*c2 + 8*H*MU2*Myy_t*W**2*a**2*c3 - 8*H*MU2*Myy_t*W**2*a**2*c4 + 12*H*MU2*Mzz*W*W_t*a**2*c2 + 4*H*MU2*Mzz*W*W_t*a**2*c3 - 4*H*MU2*Mzz*W*W_t*a**2*c4 + 4*H*MU2*Mzz_t*W**2*a**2*c1 + 12*H*MU2*Mzz_t*W**2*a**2*c2 + 4*H*MU2*Mzz_t*W**2*a**2*c3 - 24*H*MU2*Sz*W*W_z*a*c2 - 8*H*MU2*Sz*W*W_z*a*c3 + 8*H*MU2*Sz*W*W_z*a*c4 - 8*H*MU2*Sz_z*W**2*a*c1 - 24*H*MU2*Sz_z*W**2*a*c2 - 8*H*MU2*Sz_z*W**2*a*c3 - 8*H*MU2*Vz*W*W_z*a*c1 - 8*H*MU2*Vz*W*W_z*a*c4 + 4*H*MU2*Vz_z*W**2*a*c1 + 12*H*MU2*Vz_z*W**2*a*c2 + 4*H*MU2*Vz_z*W**2*a*c3 + 24*H*MU2*W**2*a**2*c2*nu_t + 8*H*MU2*W**2*a**2*c3*nu_t - 24*H*MU2*W*W_t*a**2*alpha*c2 - 8*H*MU2*W*W_t*a**2*alpha*c3 + 8*H*MU2*W*W_t*a**2*alpha*c4 + 48*H*MU2*W*W_t*a**2*c2*nu + 16*H*MU2*W*W_t*a**2*c3*nu - 32*H*MU2*W*W_t*a**2*c4*nu + 8*H*W**2*Z*a**2*b*psi_dot - 2*K_Q*Mxx*W**2*a**2*psi_dot**2 - 6*K_Q*Myy*W**2*a**2*psi_dot**2 - 2*K_Q*Mzz*W**2*a**2*psi_dot**2 - 8*K_Q*Pi_t*W**2*a**2*psi_dot + 4*K_Q*W**2*a**2*alpha*psi_dot**2 - 2*MU2*Mxx*W_t**2*a**2*c1 - 2*MU2*Mxx*W_t**2*a**2*c4 + 2*MU2*Mxx*W_z**2*c1 + 4*MU2*Mxx_t*W*W_t*a**2*c2 - 6*MU2*Myy*W_t**2*a**2*c1 - 6*MU2*Myy*W_t**2*a**2*c4 + 6*MU2*Myy*W_z**2*c1 - 4*MU2*Myy_t*W*W_t*a**2*c1 + 4*MU2*Myy_t*W*W_t*a**2*c2 + 4*MU2*Myy_t*W*W_t*a**2*c3 - 8*MU2*Myy_t*W*W_t*a**2*c4 + 4*MU2*Myy_z*W*W_z*c1 - 4*MU2*Myy_z*W*W_z*c3 - 2*MU2*Mzz*W_t**2*a**2*c1 - 2*MU2*Mzz*W_t**2*a**2*c4 - 2*MU2*Mzz*W_z**2*c1 + 4*MU2*Mzz_t*W*W_t*a**2*c2 + 8*MU2*Sz*W_t*W_z*a*c1 + 8*MU2*Sz*W_t*W_z*a*c4 - 8*MU2*Sz_z*W*W_t*a*c2 - 8*MU2*Vz*W_t*W_z*a*c4 + 8*MU2*Vz_t*W*W_z*a*c3 + 8*MU2*Vz_z*W*W_t*a*c2 + 8*MU2*W*W_t*a**2*c2*nu_t + 8*MU2*W*W_t*a**2*c3*nu_t + 8*MU2*W*W_z*alpha_z*c3 + 4*MU2*W_t**2*a**2*alpha*c1 + 4*MU2*W_t**2*a**2*alpha*c4 - 8*MU2*W_t**2*a**2*c1*nu - 16*MU2*W_t**2*a**2*c4*nu + 4*MU2*W_z**2*alpha*c1 + 8*MU2*W_z**2*c1*nu + 2*Mxx*W**2*a**2*u0**2*v_dot**2*zeta - 4*Mxx*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*Mxx*W**2*a**2*u_dot**2*v0**2*zeta + 6*Myy*W**2*a**2*u0**2*v_dot**2*zeta - 12*Myy*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 6*Myy*W**2*a**2*u_dot**2*v0**2*zeta + 2*Mzz*W**2*a**2*u0**2*v_dot**2*zeta - 4*Mzz*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*Mzz*W**2*a**2*u_dot**2*v0**2*zeta + 8*W**2*Z_t*a**2*b*psi_dot - 4*W**2*a**2*alpha*u0**2*v_dot**2*zeta + 8*W**2*a**2*alpha*u0*u_dot*v0*v_dot*zeta - 4*W**2*a**2*alpha*u_dot**2*v0**2*zeta + 8*W**2*a**2*du*u0*v_dot**2*zeta - 8*W**2*a**2*du*u_dot*v0*v_dot*zeta - 8*W**2*a**2*du_t*u0*v0*v_dot*zeta + 8*W**2*a**2*du_t*u_dot*v0**2*zeta - 8*W**2*a**2*dv*u0*u_dot*v_dot*zeta + 8*W**2*a**2*dv*u_dot**2*v0*zeta + 8*W**2*a**2*dv_t*u0**2*v_dot*zeta - 8*W**2*a**2*dv_t*u0*u_dot*v0*zeta + 8*W*W_t*Z*a**2*b*psi_dot)/(8*a**2)",
+  "normal_equation_scope": "nu source retained; unit equation fixes norm response and normal equation determines lambda response in the later solve",
+  "quadratic_vector_action": "-(-B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 - 2*B_z*MU2*W_z*c1 - 2*B_z*MU2*W_z*c3 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 + 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(4*a**2)",
+  "response_coefficients": {
+    "Em": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "LambdaU": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "Mxx": {
+      "spatial_derivative": "0",
+      "time_derivative": "-MU2*W*(H*W*c1 + 3*H*W*c2 + H*W*c3 + W_t*c2)/2",
+      "value": "-(-B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 - 2*B_z*MU2*W_z*c1 - 2*B_z*MU2*W_z*c3 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 + 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)"
+    },
+    "Mxy": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "Mxz": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "Myy": {
+      "spatial_derivative": "-MU2*W*W_z*(c1 - c3)/(2*a**2)",
+      "time_derivative": "MU2*W*(-6*H*W*c2 - 2*H*W*c3 + 2*H*W*c4 + W_t*c1 - W_t*c2 - W_t*c3 + 2*W_t*c4)/2",
+      "value": "-3*(-B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 - 2*B_z*MU2*W_z*c1 - 2*B_z*MU2*W_z*c3 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 + 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)"
+    },
+    "Myz": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "Mzz": {
+      "spatial_derivative": "0",
+      "time_derivative": "-MU2*W*(H*W*c1 + 3*H*W*c2 + H*W*c3 + W_t*c2)/2",
+      "value": "-(B_z**2*MP2 - B_z**2*MU2*c1 - B_z**2*MU2*c3 + 2*B_z*MU2*W_z*c1 + 2*B_z*MU2*W_z*c3 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 - 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)"
+    },
+    "Pi": {
+      "spatial_derivative": "0",
+      "time_derivative": "K_Q*W**2*psi_dot",
+      "value": "0"
+    },
+    "Sx": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "Sy": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "Sz": {
+      "spatial_derivative": "MU2*W*(H*W*c1 + 3*H*W*c2 + H*W*c3 + W_t*c2)/a",
+      "time_derivative": "0",
+      "value": "-MU2*W_z*(-3*H*W*c2 - H*W*c3 + H*W*c4 + W_t*c1 + W_t*c4)/a"
+    },
+    "T": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "Vx": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "Vy": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "Vz": {
+      "spatial_derivative": "-MU2*W*(H*W*c1 + 3*H*W*c2 + H*W*c3 + 2*W_t*c2)/(2*a)",
+      "time_derivative": "-MU2*W*(B_z*c1 - B_z*c3 + 2*B_z*c4 + 2*W_z*c3)/(2*a)",
+      "value": "-MU2*(2*B_z*H*W*c1 + 2*B_z*H*W*c4 - B_z*W_t*c1 - B_z*W_t*c3 - 2*H*W*W_z*c1 - 2*H*W*W_z*c4 - 2*W_t*W_z*c4)/(2*a)"
+    },
+    "Z": {
+      "spatial_derivative": "0",
+      "time_derivative": "-W**2*b*psi_dot",
+      "value": "-W*b*psi_dot*(H*W + W_t)"
+    },
+    "alpha": {
+      "spatial_derivative": "-MU2*W*(B_z*c1 - B_z*c3 + 2*B_z*c4 + 2*W_z*c3)/(2*a**2)",
+      "time_derivative": "0",
+      "value": "(-B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 - 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(4*a**2)"
+    },
+    "dr": {
+      "spatial_derivative": "0",
+      "time_derivative": "0",
+      "value": "0"
+    },
+    "du": {
+      "spatial_derivative": "0",
+      "time_derivative": "W**2*v0*zeta*(u0*v_dot - u_dot*v0)",
+      "value": "-W**2*v_dot*zeta*(u0*v_dot - u_dot*v0)"
+    },
+    "dv": {
+      "spatial_derivative": "0",
+      "time_derivative": "-W**2*u0*zeta*(u0*v_dot - u_dot*v0)",
+      "value": "W**2*u_dot*zeta*(u0*v_dot - u_dot*v0)"
+    },
+    "nu": {
+      "spatial_derivative": "B_z*MU2*W*c3/a**2",
+      "time_derivative": "-MU2*W*(3*H*W*c2 + H*W*c3 + W_t*c2 + W_t*c3)",
+      "value": "-MU2*(B_z**2*c1 + B_z**2*c3 - 2*B_z*W_z*c1 - 2*B_z*W_z*c3 + 4*H**2*W**2*a**2*c1 + 18*H**2*W**2*a**2*c2 + 6*H**2*W**2*a**2*c3 - 4*H**2*W**2*a**2*c4 + 12*H*W*W_t*a**2*c2 + 4*H*W*W_t*a**2*c3 - 8*H*W*W_t*a**2*c4 - 2*W_t**2*a**2*c1 - 4*W_t**2*a**2*c4 + 2*W_z**2*c1)/(2*a**2)"
+    }
+  },
+  "sectors_mixed_source_functional": {
+    "Cartesian_scalars_potential_portal": "0",
+    "Einstein_ADM": "B_z**2*MP2*(Mxx + 3*Myy - Mzz - 2*alpha)/(8*a**2)",
+    "alignment": "-W**2*zeta*(u0*v_dot - u_dot*v0)*(Mxx*u0*v_dot - Mxx*u_dot*v0 + 3*Myy*u0*v_dot - 3*Myy*u_dot*v0 + Mzz*u0*v_dot - Mzz*u_dot*v0 - 2*alpha*u0*v_dot + 2*alpha*u_dot*v0 + 4*du*v_dot - 4*du_t*v0 - 4*dv*u_dot + 4*dv_t*u0)/4",
+    "dust": "0",
+    "frame": "-MU2*(B_z**2*Mxx*c1 + B_z**2*Mxx*c3 + 3*B_z**2*Myy*c1 + 3*B_z**2*Myy*c3 - B_z**2*Mzz*c1 - B_z**2*Mzz*c3 - 2*B_z**2*alpha*c1 - 2*B_z**2*alpha*c3 + 4*B_z**2*c1*nu + 4*B_z**2*c3*nu + 8*B_z*H*Vz*W*a*c1 + 8*B_z*H*Vz*W*a*c4 - 2*B_z*Mxx*W_z*c1 - 2*B_z*Mxx*W_z*c3 - 6*B_z*Myy*W_z*c1 - 6*B_z*Myy*W_z*c3 + 2*B_z*Mzz*W_z*c1 + 2*B_z*Mzz*W_z*c3 - 4*B_z*Vz*W_t*a*c1 - 4*B_z*Vz*W_t*a*c3 + 4*B_z*Vz_t*W*a*c1 - 4*B_z*Vz_t*W*a*c3 + 8*B_z*Vz_t*W*a*c4 + 4*B_z*W*alpha_z*c1 - 4*B_z*W*alpha_z*c3 + 8*B_z*W*alpha_z*c4 - 8*B_z*W*c3*nu_z - 8*B_z*W_z*c1*nu - 8*B_z*W_z*c3*nu + 4*H**2*Mxx*W**2*a**2*c1 + 18*H**2*Mxx*W**2*a**2*c2 + 6*H**2*Mxx*W**2*a**2*c3 - 2*H**2*Mxx*W**2*a**2*c4 + 12*H**2*Myy*W**2*a**2*c1 + 54*H**2*Myy*W**2*a**2*c2 + 18*H**2*Myy*W**2*a**2*c3 - 6*H**2*Myy*W**2*a**2*c4 + 4*H**2*Mzz*W**2*a**2*c1 + 18*H**2*Mzz*W**2*a**2*c2 + 6*H**2*Mzz*W**2*a**2*c3 - 2*H**2*Mzz*W**2*a**2*c4 - 8*H**2*W**2*a**2*alpha*c1 - 36*H**2*W**2*a**2*alpha*c2 - 12*H**2*W**2*a**2*alpha*c3 + 4*H**2*W**2*a**2*alpha*c4 + 16*H**2*W**2*a**2*c1*nu + 72*H**2*W**2*a**2*c2*nu + 24*H**2*W**2*a**2*c3*nu - 16*H**2*W**2*a**2*c4*nu + 12*H*Mxx*W*W_t*a**2*c2 + 4*H*Mxx*W*W_t*a**2*c3 - 4*H*Mxx*W*W_t*a**2*c4 + 4*H*Mxx_t*W**2*a**2*c1 + 12*H*Mxx_t*W**2*a**2*c2 + 4*H*Mxx_t*W**2*a**2*c3 + 36*H*Myy*W*W_t*a**2*c2 + 12*H*Myy*W*W_t*a**2*c3 - 12*H*Myy*W*W_t*a**2*c4 + 24*H*Myy_t*W**2*a**2*c2 + 8*H*Myy_t*W**2*a**2*c3 - 8*H*Myy_t*W**2*a**2*c4 + 12*H*Mzz*W*W_t*a**2*c2 + 4*H*Mzz*W*W_t*a**2*c3 - 4*H*Mzz*W*W_t*a**2*c4 + 4*H*Mzz_t*W**2*a**2*c1 + 12*H*Mzz_t*W**2*a**2*c2 + 4*H*Mzz_t*W**2*a**2*c3 - 24*H*Sz*W*W_z*a*c2 - 8*H*Sz*W*W_z*a*c3 + 8*H*Sz*W*W_z*a*c4 - 8*H*Sz_z*W**2*a*c1 - 24*H*Sz_z*W**2*a*c2 - 8*H*Sz_z*W**2*a*c3 - 8*H*Vz*W*W_z*a*c1 - 8*H*Vz*W*W_z*a*c4 + 4*H*Vz_z*W**2*a*c1 + 12*H*Vz_z*W**2*a*c2 + 4*H*Vz_z*W**2*a*c3 + 24*H*W**2*a**2*c2*nu_t + 8*H*W**2*a**2*c3*nu_t - 24*H*W*W_t*a**2*alpha*c2 - 8*H*W*W_t*a**2*alpha*c3 + 8*H*W*W_t*a**2*alpha*c4 + 48*H*W*W_t*a**2*c2*nu + 16*H*W*W_t*a**2*c3*nu - 32*H*W*W_t*a**2*c4*nu - 2*Mxx*W_t**2*a**2*c1 - 2*Mxx*W_t**2*a**2*c4 + 2*Mxx*W_z**2*c1 + 4*Mxx_t*W*W_t*a**2*c2 - 6*Myy*W_t**2*a**2*c1 - 6*Myy*W_t**2*a**2*c4 + 6*Myy*W_z**2*c1 - 4*Myy_t*W*W_t*a**2*c1 + 4*Myy_t*W*W_t*a**2*c2 + 4*Myy_t*W*W_t*a**2*c3 - 8*Myy_t*W*W_t*a**2*c4 + 4*Myy_z*W*W_z*c1 - 4*Myy_z*W*W_z*c3 - 2*Mzz*W_t**2*a**2*c1 - 2*Mzz*W_t**2*a**2*c4 - 2*Mzz*W_z**2*c1 + 4*Mzz_t*W*W_t*a**2*c2 + 8*Sz*W_t*W_z*a*c1 + 8*Sz*W_t*W_z*a*c4 - 8*Sz_z*W*W_t*a*c2 - 8*Vz*W_t*W_z*a*c4 + 8*Vz_t*W*W_z*a*c3 + 8*Vz_z*W*W_t*a*c2 + 8*W*W_t*a**2*c2*nu_t + 8*W*W_t*a**2*c3*nu_t + 8*W*W_z*alpha_z*c3 + 4*W_t**2*a**2*alpha*c1 + 4*W_t**2*a**2*alpha*c4 - 8*W_t**2*a**2*c1*nu - 16*W_t**2*a**2*c4*nu + 4*W_z**2*alpha*c1 + 8*W_z**2*c1*nu)/(8*a**2)",
+    "regulator": "-W*b*psi_dot*(H*W*Z + W*Z_t + W_t*Z)",
+    "spatial_Ricci": "0",
+    "temporal_force": "K_Q*W**2*psi_dot*(Mxx*psi_dot + 3*Myy*psi_dot + Mzz*psi_dot + 4*Pi_t - 2*alpha*psi_dot)/4",
+    "unit_multiplier": "0"
+  }
+}

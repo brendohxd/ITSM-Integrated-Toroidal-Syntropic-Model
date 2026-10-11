@@ -1,0 +1,105 @@
+{
+  "Frobenius_three_form": {
+    "(0, 1, 2)": "0",
+    "(0, 1, 3)": "0",
+    "(0, 2, 3)": "0",
+    "(1, 2, 3)": "0"
+  },
+  "U_flat": [
+    "-sqrt(w(t)**2 + 1)*N(t)",
+    "a_parallel(t)*w(t)",
+    "0",
+    "0"
+  ],
+  "comparator": {
+    "Omega": "+/-sqrt(C*P^2+d*P^4)",
+    "band": "abs(P)<sqrt(xi_plus/d), only for d>0, abs(v)>0, v^2*C<1",
+    "dp_dP_P_positive": "gamma +/- w*(C+2*d*P^2)/sqrt(C+d*P^2)",
+    "omega": "gamma*Omega+w*P",
+    "p": "gamma*P+w*Omega",
+    "paired_orientation_criterion": "abs(v)*v_g(abs(P))<1; v=w/gamma",
+    "restriction": "Fixed-frame comparator map orientation only; neither a coupled physical domain nor an EFT cutoff.",
+    "root_sign_argument": "F(0)=C*(v^2*C-1)<0 for C>0 and v^2*C<1; the quadratic leading coefficient is positive, so one root is negative and one positive. C=0 is a separately treated control.",
+    "turning_polynomial": "-C + v_squared*(C + 2*xi)**2 - xi",
+    "turning_variable": "xi=d*P^2",
+    "xi_minus": "(-4*C*v_squared - sqrt(8*C*v_squared + 1) + 1)/(8*v_squared)",
+    "xi_plus": "(-4*C*v_squared + sqrt(8*C*v_squared + 1) + 1)/(8*v_squared)"
+  },
+  "geometry_assumptions": "N,a_parallel,a_perp>0; homogeneous B=0; fixed-sign nonzero w on the stated patch; I x T3",
+  "local_clock_patches": {
+    "-1": {
+      "cycle_change": "L_x",
+      "mu": "-1/(a_parallel(t)*w(t))",
+      "potential": "x - Integral(sqrt(w(t)**2 + 1)*N(t)/(a_parallel(t)*w(t)), t)"
+    },
+    "1": {
+      "cycle_change": "-L_x",
+      "mu": "1/(a_parallel(t)*w(t))",
+      "potential": "-x + Integral(sqrt(w(t)**2 + 1)*N(t)/(a_parallel(t)*w(t)), t)"
+    }
+  },
+  "local_future_derivative": "U(T)=mu>0",
+  "local_timelike_norm": "-1/(a_parallel^2*w^2)",
+  "nonclaims": [
+    "No full coupled characteristic, symmetrizer, energy-residue or Cauchy classification.",
+    "No physical ghost, instability, all-action no-go or action-derived EFT cutoff.",
+    "No extension to spatially varying/sign-changing frames; no physical torus-size selection.",
+    "No new K_Q or V calculation; no healthy continuous GR-limit certificate.",
+    "No full Test1, Test2, Test3, MAT, UVIR, Stage4A or TOP-X4 promotion."
+  ],
+  "positive_period_proof": [
+    "A single-valued C1 REAL T has integral(dT)=0 on every closed x-cycle.",
+    "If dT=-mu U_flat with continuous mu>0, this integral is -a_parallel(t)*w(t)*integral_0^Lx(mu dx).",
+    "On the compact cycle continuity and strict positivity give min(mu)>0, so the integral of mu is >=Lx*min(mu)>0.",
+    "For a_parallel>0, Lx>0 and nonzero homogeneous w this contradicts exactness, irrespective of spatial dependence of mu.",
+    "This rejects a global REAL U-orthogonal clock, not local integrability or a non-orthogonal global clock."
+  ],
+  "pre_Schur_boundary_factor_only_not_continuation_solution": "k**2*(1 - 5*w**2)",
+  "rejected_inferences": {
+    "circle_valued_potential_is_REAL_Cauchy_time": false,
+    "comparator_turn_is_coupled_EFT_cutoff": false,
+    "cover_boost_removes_T3_holonomy": false,
+    "deleting_parent_complex_or_growing_roots": false,
+    "formal_complex_covectors_are_real_particle_poles": false,
+    "inverting_shift_at_k_zero_or_w_squared_one_fifth": false,
+    "local_Frobenius_is_global_exactness": false
+  },
+  "separate_controls": [
+    {
+      "C": 0.0,
+      "d": 1.0,
+      "status": "unbounded_comparator",
+      "v": 0.0
+    },
+    {
+      "C": 0.25,
+      "d": 0.0,
+      "status": "unbounded_comparator",
+      "v": 0.0
+    },
+    {
+      "C": 0.25,
+      "d": 0.0,
+      "status": "unbounded_comparator",
+      "v": 0.25
+    },
+    {
+      "C": 16.0,
+      "d": 0.0,
+      "status": "orientation_degenerate_at_origin",
+      "v": 0.25
+    },
+    {
+      "C": 20.0,
+      "d": 1.0,
+      "status": "orientation_fails_at_origin",
+      "v": 0.25
+    },
+    {
+      "C": 16.0,
+      "d": 1.0,
+      "status": "orientation_degenerate_at_origin",
+      "v": 0.25
+    }
+  ]
+}
