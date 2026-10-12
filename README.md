@@ -2,529 +2,150 @@
   <img src="Assets/Figures/ITSM_Banner.png" alt="ITSM Banner" width="100%">
 </div>
 
-> [!IMPORTANT]
-> This is the **v12 core-recovery branch**. Its scientific status differs
-> materially from the pre-v12 material retained at the bottom of this page.
-> Current claims are governed by the
-> [Master Research Plan](Theory/Core/ITSM_Master_Research_Plan.md), not by the
-> archived README or an earlier manuscript.
-
 # 🌌 Integrated Toroidal-Syntropic Model (ITSM)
 
-**v12 core-recovery branch — evidence-controlled research snapshot**
+**v12 core-recovery branch — evidence-controlled research programme**
 
 🌍 **Website:** [itsm-cosmology.com](https://itsm-cosmology.com) |
-📘 **Historical flagship manuscript (not current status authority):** [ITSM_Core_Cosmology_v12.0.pdf](Manuscript/ITSM_Core_Cosmology_v12.0.pdf) (38 pages) |
 📧 **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
 
-## 📖 Project Overview
+## 📖 The proposed physical universe
 
-The **Integrated Toroidal-Syntropic Model** (ITSM) is a first-principles cosmological framework based on an active finite-density vacuum condensate, compact toroidal ($T^3$) topology, open-system syntropic intake, and non-linear superfluid acceleration dynamics.
+ITSM asks whether the vacuum itself could be an active physical medium: a
+finite-density condensate, or **plenum**, with density, phase, excitations and
+circulation. In this research proposal, matter interacts with that medium,
+and its stress and response may have gravitational consequences. The task is
+to derive those consequences from a specified action and test them across
+local gravity, galaxies and cosmology.
 
-The programme strictly adheres to the fail-closed Iron Rule:
+The proposed spatial topology is a compact **three-torus, $T^3$**. Its
+fundamental domain is a three-dimensional cell with opposite faces
+identified, so fields obey periodic boundary conditions. This describes
+global connectivity; it does not determine a physical size, an acceleration
+scale or a force coefficient. The plenum's local excitations, global winding
+sectors and topology-dependent stresses are distinct physical ingredients.
 
-> **Identity first → derive mechanisms second → restore predictions only after their scientific gates pass.**
+The observable matter–plenum subsystem may also exchange energy and momentum
+with a **reservoir**. The reservoir belongs inside the complete conservation
+accounting. Its interaction and thermodynamics must be specified before
+claims about driven expansion or persistent anisotropy can follow. Together,
+these ingredients define a candidate physical universe whose mechanisms and
+predictions are still being reconstructed.
 
-Every material claim is classified as **Derived**, **Conditional**, **Open**, or **Rejected** under the 3-Way Triangulated Consensus Protocol (Rule 9).
+## 🚦 Reality check
 
-## Research checkpoint - 11 October 2026
+> **Established within stated scopes:** the recovery records a sector architecture, checked conditional action/current calculations and bounded negative results, with individual claims classified in the [live claim ledger](Theory/Core/ITSM_Claim_Migration_Ledger.csv). **Open:** complete physical stability, a controlled EFT domain, healthy GR recovery, matter matching and calibrated observable predictions. **Blocked:** MAT-001 remains `BLOCKED`, `K_Q` is `NOT_DERIVED`, `V` is `NOT_COMPUTED`, UVIR-003 remains `IN_PROGRESS`, and canonical Master Tests 1–3 remain `HOLD_SUBSTANTIVE`. **Rejected or withdrawn:** the historical geometric-coefficient, parameter-free Hubble and validation packages listed in [Historical claims and deprecations](docs/history/README.md) supply no live scientific support. Rule-9 review is `DEFERRED`; supported provisional research may continue, while canonical promotion and publication readiness retain their scientific and review requirements.
+
+## 🔬 Five physical pillars and their relationships
+
+These are the five pillars in the [Core Identity Briefing](Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md).
+They identify the physical questions; their connections still require
+derivation or matching.
+
+| Pillar | Physical content | Connection to the other pillars |
+|---|---|---|
+| **Finite-density condensate** | A declared nonzero background with order parameter $\Phi=(\rho/\sqrt{2})e^{i\Theta}$. The vacuum-medium premise is a **Conditional** postulate. | Supplies amplitude and phase variables for local fluctuations, circulation and interactions. It does not by itself determine the force sector. |
+| **Low-energy excitations** | Phonons and amplitude modes about a specified condensate background; the target IR description must be derived and matched. | Connects the microscopic medium to local response. The selected architecture keeps the condensate and force mediator distinct while their microscopic matching remains open. |
+| **Global circulation and winding** | Quantized phase winding and vortex sectors on compact topology. | Uses the condensate phase and global boundary conditions. Macroscopic circulation matching remains open; winding alone does not fix a galactic acceleration coefficient. |
+| **Compact boundary conditions** | Periodic spatial $T^3$ topology, with declared lengths and shape moduli. | Restricts modes and winding sectors and can produce shape-dependent stress. A torus does not automatically select its physical size or a persistent expansion ratio. |
+| **Reservoir / syntropic exchange** | An open observable subsystem with an explicitly modelled compensating reservoir. Microscopic reservoir closure remains **Open**. | May exchange with the plenum, but matter–plenum transfer, reservoir throughput and condensate-charge transfer remain distinct unless the action relates them. Total stress-energy conservation is required. |
+
+The condensate supplies the local field variables; topology supplies their
+global boundary conditions; excitations and winding describe different
+sectors of their response. Reservoir interactions add an exchange problem.
+The [Core Architecture](Theory/Core/ITSM_Core_Architecture.md) specifies these
+relationships and the separate metric, preferred-frame, force and matter
+sectors. Connecting them into one predictive theory remains the research task.
+
+## 🧭 Live gate dashboard
+
+Use the [Active Research & Gate Dashboard](active_research.md) for canonical
+gate authority, the [execution queue](Theory/Core/ITSM_Recovery_Execution_Queue.md)
+for dated research continuations, and the
+[deferred-review register](Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md)
+for their scope and inherited review dependencies. This table summarizes
+those boundaries; sector snapshots retain their owning dates.
+
+| Gate / sector | Status | Meaning for the proposed physics |
+|---|---|---|
+| **Core identity** | `CANONICAL; IDENTITY HELD` | The physical proposition is retained; its adoption does not validate its postulates or close a mechanism. |
+| **MAT-001** | `BLOCKED` | The invariant matter-to-physical-mode response remains unmatched: `K_Q=NOT_DERIVED`, `V=NOT_COMPUTED`. |
+| **UVIR-003** | `IN_PROGRESS` | Tier-1 stability, matching and physical cutoff obligations remain incomplete. Stage 4A remains `CLOSED`. |
+| **Master Tests 1–3 / R4C1** | `PROVISIONAL CONTINUATION; HOLD_SUBSTANTIVE` | Conditional action, background and response calculations support scoped follow-up. Full finite-mode error control, physical viability, healthy GR, weak-field closure and blind coefficient matching remain open. |
+| **TOP-X4 / KK-001** | `BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD` | Separate queued lane; `physics_pass=false`. Spinor-state, gravity/ghost, parity, determinant, stress and physical-Hessian obligations remain open. |
+| **BBN-001** | `CONTROL_ONLY / BLOCKED_UPSTREAM_BACKGROUND` | Table/network controls do not supply the action-derived early plenum, physical temperature/unit map, currents or gravitational response. |
+| **TOP-001 / CBR-002** | `HOLD` | Free-field and instantaneous-closure controls do not establish a persistent driven ITSM solution or publication clearance. |
+| **RES-001** | `OPEN_SCAFFOLD_ONLY` | Microscopic reservoir closure remains open. The single-mode GKSL baseline is a control; the separate R4C1 candidate retains its own conditional scope. |
+| **VOR-001** | `OPEN_SCAFFOLD_ONLY` | A phase/winding specification supplies no physical resonance prediction or gate closure. |
+| **Papers / publication** | `PUBLICATION HOLD` | Local calculations and rebuilt drafts do not confer publication readiness. |
+| **Rule 9 evidence** | `DEFERRED; Rule9_cleared=false` | Review scheduling permits supported provisional work; substantive failures still hold affected uses. |
+
+The [Master Test Programme](Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md)
+orders the research, and the [Master Research Plan](Theory/Core/ITSM_Master_Research_Plan.md)
+defines the authority and claim boundaries. Script check counts and hash
+matches establish only their stated calculation or artifact scope.
+
+## 🧪 Current research checkpoint — committed 11 October 2026
+
+This documentation snapshot follows the latest research report included in
+the committed branch. Newer local research continuations are not included in
+this documentation commit.
 
 The [G3N5 homogeneous canonical-energy report](Theory/Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_REPORT_2026-10-11.md)
-records the completed bounded audit: 124/124 canonical checks, 12/12 separate
-unfixed-action checks and 18/18 complete momentum-block comparison checks,
-all with exact read-only replay. The negative mean direction survives in both
-clocks when the separately conserved dust charge can vary. Fixing that extra
-charge gives a positive homogeneous momentum control in a different ensemble;
-it does not establish physical stability or a propagating-ghost conclusion.
-Rule-9 remains deferred; substantive gates and publication holds are unchanged.
+records 124/124 canonical checks, 12/12 separate unfixed-action checks and
+18/18 complete momentum-block comparison checks, with exact read-only replay.
+Its scope is the frozen **R4C1/B1 homogeneous sector**, $k=0$ and
+$0\leq t_E\leq0.05$ in diagnostic coordinates.
 
-The [earlier 8 October research checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md)
-links the G3 density, interaction/regularity, tilted-background and finite-k
-scalar evidence, preserved failures, exact-byte manifest and next work.
-G3K passes 744/744 local checks across 120 scalar operators and eight short
-evolutions; negative dust-clock kinetic directions, positive frozen growth
-exponents and the w^2=1/5 shift-chart boundary remain explicit. No physical
-stability, EFT cutoff, healthy full GR, SPARC prediction or gate pass follows.
+An admissible negative homogeneous canonical direction survives in both
+clocks when complex charge is fixed and the separately conserved dust charge
+can vary. Additionally fixing dust charge yields a positive homogeneous
+momentum control in a **different ensemble**; it does not repair the original
+result or establish full physical stability.
 
-## 🧭 Core status (R4C1 checkpoint: 11 October; other sectors retain their dated snapshots)
+These bounded calculations do not identify a local propagating ghost or
+establish a physical EFT window. Nonzero-mode characteristics, gradient/ghost
+domains, nonlinear response, healthy GR, weak-field closure and microscopic
+matching remain **Open**. The report retains `physics_pass=false`,
+`gate_effect=NONE`, `Rule9_cleared=false` and the canonical holds above.
 
-| Gate / Sector | Status | Physical Result |
-|---|---|---|
-| **Core identity** | `CANONICAL; IDENTITY HELD` | Active finite-density condensate, topology, preferred frame and force/reservoir sectors remain distinct; identity-first governance is unchanged. |
-| **MAT-001** | **`BLOCKED`** | M2/M3-U1 fixed-background controls are bounded reductions only; `K_Q` remains `NOT_DERIVED` and `V` remains `NOT_COMPUTED`. |
-| **UVIR-003** | **`IN_PROGRESS`** | Tier-1 closure remains downstream of the MAT matching blocker; no physical cutoff or complete constrained amplitude is promoted. |
-| **Master Tests 1–3 / R4C1** | **`PROVISIONAL CONTINUATION; HOLD_SUBSTANTIVE`** | G3N5 adds the full 22-field quadratic kernel (33/33), separate temporal comparison (13/13), a finite constrained linear benchmark (70-digit response 124/124), and the homogeneous canonical/charge audit (a separate 124/124 plus 18/18 momentum comparison), with exact replays. The negative homogeneous canonical direction survives in both clocks at fixed complex charge with varying dust charge. The additionally fixed-dust positive control is a different ensemble. Earlier failures and singular domains remain explicit. Physical nonzero-mode characteristics, gradient/ghost domains, scattering/EFT cutoff, nonlinear control, healthy GR, weak-field closure and blind coefficient matching remain open. No canonical Test-1/2/3 or SPARC validation pass follows. |
-| **TOP-X4 / KK-001** | **`BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD`** | The branchwise WKB checkpoint remains failed 11/12, exact finite-order transport passed 18/18, the D5 scaffold passed 20/20, the fixed-metric scalar/`chi` operator passed 25/25, and the local scalar-matrix Hadamard-parametrix checkpoint passed 22/22 through `U_2`. The finite-order Route-B diagnostic passed 8/8, the Route-A scalar-state construction passed 10/10 theorem-backed checks, and the scoped curved-Dirac operator passed 13/13 with contract and operator checks separated. `physics_pass=false`; the spinor state, gravity/ghost, parity, determinant, stress, physical Hessian and Rule-9 remain incomplete. |
-| **BBN-001** | **`CONTROL_ONLY / BLOCKED_UPSTREAM_BACKGROUND`** | Table/schema/CAMB plumbing and the action-derived interface contract are checked, but the physical temperature/unit map, early plenum, `Q^\mu`, `S_N` and action-derived `G_eff` are not exported by UVIR-003. |
-| **TOP-001 / CBR-002** | **`HOLD`** | P2/CBR-001 has a portable local-repair candidate and a narrowed instantaneous-closure result; independent-role, sensitivity and noncubic checks remain required. |
-| **RES-001** | **`OPEN_SCAFFOLD_ONLY`** | The corrected script is a single-mode GKSL steady-state control; the advertised two-bath detailed-balance/Spohn derivation, microscopic reservoir and `Q^\mu` remain absent. |
-| **VOR-001** | **`OPEN_SCAFFOLD_ONLY`** | Phase/winding normalization is a frozen calculation specification only; no physical resonance or gate closure follows. |
-| **Papers / publication** | **`PUBLICATION HOLD`** | Rebuilt P2 materials are retained as a bounded negative-result candidate, not as publication clearance. |
-| **Rule 9 evidence** | **`DEFERRED; Rule9_cleared=false`** | Outstanding review is intentionally deferred. Pending review alone no longer stops bounded provisional research; substantive physics holds still do, and final canonical promotion/publication readiness still require review. |
+Earlier results remain available in the
+[dated recovery evidence guide](docs/ITSM_RECOVERY_EVIDENCE_GUIDE.md), including
+the negative kinetic directions and $w^2=1/5$ chart boundary in the 8 October
+checkpoint and the September constraint and matching diagnostics. The
+[execution queue](Theory/Core/ITSM_Recovery_Execution_Queue.md) records dated
+continuations without rewriting those earlier results.
 
-Script `PASS_*` labels in this table describe only their bounded executable
-scope. They do not constitute a physics-gate pass, downstream promotion or
-publication decision.
+## 📚 Governance and methodology
 
-## 🧪 Earlier bounded findings (2026-09-25–2026-09-29)
+The [Governance and Methodology guide](Governance/README.md) explains claim
+classification, reproducibility, deferred review, dependency inheritance and
+publication boundaries. It documents how the research is assessed, with
+links to the binding instructions and scientific authorities.
 
-- [Master Tests 1–3 disposition](Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md)
-  records conditional action/source identities, the periodic-`T^3` curl
-  counterexample and harmonic-flux correction, and the absence of a unique
-  blind `C_chi`; the programme remains incomplete.
-- [R4C1 scalar constraint report](Theory/Gates/RES-001/RES001_R4C1_SCALAR_CONSTRAINT_REPORT_2026-09-25.md)
-  supports a positive classical scalar kinetic form only on its registered
-  regular chart.
-- [R4C1 scalar propagation report](Theory/Gates/RES-001/RES001_R4C1_SCALAR_PROPAGATION_REPORT_2026-09-26.md)
-  corrects the principal-symbol diagnostic and retains a defective zero branch
-  plus open causality/EFT and well-posedness questions.
-- [R4C1 zero-branch report](Theory/Gates/RES-001/RES001_R4C1_ZERO_BRANCH_REPORT_2026-09-26.md)
-  distinguishes the rejected equal-order bound from a restricted
-  derivative-weighted graph estimate; it does not prove the full coupled IVP.
-- [R4C1 full scalar graph report](Theory/Gates/RES-001/RES001_R4C1_COUPLED_GRAPH_REPORT_2026-09-26.md)
-  extends reconstruction to all twelve initial-data components and rejects a
-  uniform instantaneous differential bound in the fixed metric using an exact
-  density/velocity witness. Full coupled well-posedness remains open.
-- [R4C1 one-extra-dust-derivative report](Theory/Gates/RES-001/RES001_R4C1_MIXED_REGULARITY_REPORT_2026-09-26.md)
-  tests a stronger fixed 16-row graph. An exact frame/dust witness gives
-  `r_1(p)/p -> sqrt(6)/2`, rejecting its instantaneous uniform differential
-  bound. Full finite-time evolution and alternative norms remain open.
-- [R4C1 frame/dust principal report](Theory/Gates/RES-001/RES001_R4C1_FRAME_DUST_PRINCIPAL_REPORT_2026-09-26.md)
-  finds exact order-`p` leakage into phase-gradient and frame-spatial rows.
-  The proposed two-variable block is not closed; no isolated symmetrizer or
-  full-IVP claim follows.
-- [R4C1 recursive leading-span report](Theory/Gates/RES-001/RES001_R4C1_RECURSIVE_LEADING_SPAN_REPORT_2026-09-26.md)
-  rejects only the unweighted selected-chart order-`p` closure. The subsequent
-  [phase-pair](Theory/Gates/RES-001/RES001_R4C1_PHASE_PAIR_REWEIGHT_REPORT_2026-09-29.md)
-  and [full-symbol](Theory/Gates/RES-001/RES001_R4C1_FULL_SYMBOL_REPORT_2026-09-29.md)
-  checks find a complete skew order-`p²` B1 block but retain an order-`p`
-  symmetric defect in the first graph-equivalent norm.
-- [R4C1 order-`p` symmetrizer report](Theory/Gates/RES-001/RES001_R4C1_ORDER_P_SYMMETRIZER_REPORT_2026-09-29.md)
-  constructs a positive correction cancelling that defect at the registered
-  B1 initial event. Temporal persistence and an EFT-valid wave-number domain
-  are unproved; the parent Test-1 hold and deferred review remain in force.
-- [R4C1 temporal-persistence screen](Theory/Gates/RES-001/RES001_R4C1_TEMPORAL_PERSISTENCE_REPORT_2026-09-29.md)
-  proves the selected-chart minor is nonzero on its stated regular domain
-  and reconstructs the moving symbol at 24 B1 samples. Its 189/189 local
-  checks were not a physics pass.
-- [R4C1 exact moving-symbol continuation](Theory/Gates/RES-001/RES001_R4C1_S4H_MOVING_SYMBOL_REPORT_2026-09-29.md)
-  derives the 144 principal coefficients, conditional slow-block spectrum
-  and a pointwise positive formal high-frequency energy metric.
-- [R4C1-B1G homogeneous regularity proof](Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md)
-  establishes exact regularity of the registered classical B1 solution
-  through `[0,4]`; it is a homogeneous-background result only.
-- [R4C1-S4H-U formal interval envelope](Theory/Gates/RES-001/RES001_R4C1_S4H_UNIFORM_ENVELOPE_REPORT_2026-09-29.md)
-  supplies a uniform reduced-graph bound only for `p>=8*10^13`.
-  No physical EFT overlap, full constrained IVP or Test-1 acceptance
-  follows; Rule-9 review is deferred.
-- [R4C1-PD1 physical-domain preflight](Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md)
-  checks the fixed-B1 GR shortcut and identifies the missing physical
-  cutoff; it does not close the GR or viability questions.
-- [R4C1-T2P1 periodic-force contrast probe](Theory/Gates/RES-001/RES001_R4C1_PERIODIC_FORCE_REPORT_2026-09-29.md)
-  derives the compact mean-mode obstruction and passes 46/46 local
-  checks for a declared static contrast snapshot. The coupled physical
-  weak-field response and canonical Test 2 remain open.
-- [R4C1-C2 periodic identifiability](Theory/Gates/RES-001/RES001_R4C1_PERIODIC_IDENTIFIABILITY_REPORT_2026-09-29.md)
-  proves the conditional solution changes with `A`; no unique coefficient
-  or fresh analyst blinding follows.
-- [R4C1-T2P2 weak-source limit](Theory/Gates/RES-001/RES001_R4C1_WEAK_SOURCE_REPORT_2026-09-29.md)
-  proves linear response as contrast amplitude vanishes at fixed scale
-  with finite `b`; intermediate/physical regimes remain open.
-- [TOP-X4 H1/X4-S4 route record](Theory/Gates/TOP-X4/README.md) records the
-  `21/21` candidate-action contract, rejection of the registered zero-charge
-  benchmark, and the `13/13` curved-route selection contract. No X4-S4 parent,
-  finite-charge background, MAT matching or downstream promotion follows.
-- [Deferred Rule-9 policy](Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md)
-  and [register](Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md)
-  separate review scheduling from scientific closure and carry unresolved
-  dependencies forward.
+A failed physical candidate can still yield a useful negative result. The
+quality of the research process and the physical truth of its candidate
+model require their own evidence.
 
-For the full dependency chain and current blockers, use the
-[Recovery Branch Guide](RECOVERY_BRANCH_README.md) and
-[UVIR-003 closure checklist](Theory/Gates/UVIR-003/UVIR-003_FULL_GATE_CLOSURE_CHECKLIST.md).
-The current MAT normalization boundary is recorded in the
-[unit-chart contract](Theory/Gates/MAT-001/MAT-001_UNIT_CHART_CONTRACT.md),
-the executable live-export blocker map in the
-[UVIR export inventory](Theory/Gates/MAT-001/MAT-001_LIVE_UVIR_EXPORT_INVENTORY.md),
-the free-sector same-chart export in
-[same-chart free quadratic export](Theory/Gates/MAT-001/MAT-001_SAME_CHART_FREE_QUADRATIC_EXPORT.md),
-the \(S_{\rm int}\)/\(d,h\) placement (IR form only; live UVIR blocked) in
-[\(S_{\rm int}\) d,h declaration](Theory/Gates/MAT-001/MAT-001_S_INT_DH_DECLARATION.md),
-the force-host inventory in
-[force hosting readiness](Theory/Gates/MAT-001/MAT-001_FORCE_HOSTING_READINESS.md),
-the Track-A Conditional embed in
-[Track-A \(S_{\rm int}\) embed](Theory/Gates/MAT-001/MAT-001_TRACK_A_S_INT_EMBED.md),
-host \(K_Q\) readiness in
-[Track-A \(K_Q\) readiness](Theory/Gates/MAT-001/MAT-001_TRACK_A_KQ_READINESS.md),
-the derivation dig in
-[\(K_Q\) derivation dig](Theory/Gates/MAT-001/MAT-001_KQ_DERIVATION_DIG.md),
-the dual-status Conditional branch in
-[Conditional matching branch](Theory/Gates/MAT-001/MAT-001_CONDITIONAL_MATCHING_BRANCH.md),
-the [R3 covariant matter action](Theory/Gates/MAT-001/MAT-001_R3_COVARIANT_MATTER_ACTION.md),
-the [R4 signed residue contract](Theory/Gates/MAT-001/MAT-001_R4_SIGNED_RESIDUE_CONTRACT.md),
-the [R5 microscopic matching decision](Theory/Gates/MAT-001/MAT-001_R5_MICROSCOPIC_MATCHING_DECISION.md),
-the [R5 pathway survey](Theory/Gates/MAT-001/MAT-001_R5_PATHWAY_SURVEY_2026-08-07.md),
-and the tier-1 hold audit in
-[tier-1 peer-review readiness](Theory/Gates/UVIR-003/UVIR-003_TIER1_PEER_REVIEW_READINESS.md).
+## 🗂️ Historical claims and deprecations
 
-## 🔬 What the Recovery Has Established
+[Historical claims and deprecations](docs/history/README.md) explains
+which earlier claim formulations were withdrawn and which underlying
+questions remain open. That archive links the preserved pre-v12 README and
+the governing claim dispositions. The wider private historical corpus
+retains its existing repository exclusion. Historical manuscripts provide provenance;
+current scientific claims belong to the live authority documents above.
 
-- A claim ledger and gate system now separate verified calculations from
-  assumptions, hypotheses and rejected derivation forms.
-- The Einstein–Hilbert metric, condensate, preferred frame, infrared force,
-  matter, reservoir, topology and optional wake sectors have distinct roles;
-  they cannot be silently identified or double-counted.
-- Complete-system stress-energy conservation is mandatory. Matter–plenum
-  exchange, reservoir throughput and condensate charge transfer are separate
-  objects until an interaction derives their relationship.
-- The old trace-ratio argument does not derive the observable `2/3` coupling.
-  The invariant normalization must be obtained through matter matching.
-- The homogeneous scalar kinetic-rank loss is aligned with a time-translation
-  gauge orbit. It is not, by itself, a physical strong-coupling scale.
-- Free rectangular-torus Casimir stress produces anisotropy but does not
-  establish a persistent `13/12` attractor.
-- AQUAL was not physically disproven by the failed geometric packaging. It is
-  therefore tested honestly as a Conditional IR baseline rather than excluded
-  to protect a fixed coefficient.
+## 📂 Repository map
 
-These are controlled recovery statements—not a declaration that the complete
-ITSM cosmology has been validated.
-
-## 🚦 Claim and Publication Boundary
-
-Historical claims including a parameter-free `H₀ = 72.97`, a derived
-`a₀ = cH₀/(2π)`, a geometric `C = 2/3`, fixed NANOGrav bounds, automatic
-Solar-System compliance, a quantitative Bullet Cluster wake, and SPARC
-`p = 0.62` validation are **not live v12 claims**.
-
-Only **Bucket A** false packaging and governance failures are hard-banned.
-Underlying Bucket B/C topics may return through new gates, new mathematics and
-new evidence—but never by restoring the old wording as Derived.
-
-## 📂 Recovery Repository Map
-
-| Directory or file | Current role |
+| Location | Role |
 |---|---|
-| [`Theory/Core/`](Theory/Core/) | Canonical architecture, master plan, recovery plan and claim ledger |
-| [`Theory/Gates/`](Theory/Gates/) | Scientific gate reports, status boundaries and reproducible decision records |
-| [`Analysis/`](Analysis/) | Gate-specific symbolic and numerical diagnostics |
-| [`Manuscript/CoreRecovery/`](Manuscript/CoreRecovery/) | Working v12 manuscript plus immutable versioned releases |
-| [`papers/`](papers/) | Selective paper programme governed by the publication firewall |
-| [`Theory/History/`](Theory/History/) | Preserved provenance and historical audit; not current scientific authority |
-| [`RECOVERY_BRANCH_README.md`](RECOVERY_BRANCH_README.md) | Detailed branch orientation, release history and active dependency chain |
-
-## 🛠️ Working With the Recovery Branch
-
-1. Read the [Master Research Plan](Theory/Core/ITSM_Master_Research_Plan.md).
-2. Select exactly one gate and read its owning report before changing equations.
-3. Activate the reproducible environment with `conda activate itsm_env` before
-   running scientific code.
-4. Run the owning gate's focused reproduction command and retain negative
-   controls; a passing script establishes only the scope stated by its report.
-5. Update the claim ledger, gate report and manuscript together when—and only
-   when—a scientific status changes.
-6. Freeze a new manuscript version instead of overwriting an earlier release.
-
-The broad legacy `Scripts/run_all.py` runner is not a proof of recovery status.
-Gate-specific reports and their declared reproduction commands are the
-authoritative path.
-
-## 📜 Current Recovery Documents
-
-- [Master Research Plan](Theory/Core/ITSM_Master_Research_Plan.md)
-- [Core Architecture](Theory/Core/ITSM_Core_Architecture.md)
-- [Claim Migration Ledger](Theory/Core/ITSM_Claim_Migration_Ledger.csv)
-- [Recovery Branch Guide](RECOVERY_BRANCH_README.md)
-- [Active Research & Gate Dashboard](active_research.md)
-- [Current Recovery Changelog](CHANGELOG.md)
-- [Master ITSM Test Programme](Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md)
-- [Tests 1–3 Disposition](Theory/Gates/ITSM_TESTS_01_03_DERIVATION_DISPOSITION_2026-09-25.md)
-- [Deferred Rule-9 Review Register](Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md)
-- [ITSM Context Optimizer](docs/ITSM_CONTEXT_OPTIMIZER.md)
-- [14 September External Evidence Watch](Theory/Core/ITSM_EXTERNAL_EVIDENCE_WATCH_2026-09-14.md)
-- [Paper PDF Naming Registry](papers/PAPERS_NAMING.md)
-- [TOP-X4 / KK-001 Route Plan](Theory/Core/ITSM_TOPX4_KK001_ROUTE_PLAN_2026-09-06.md)
-- [TOP-X4 Plan 11 Static Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_STATIC_CHECKPOINT_RECEIPT_2026-09-09.md)
-- [TOP-X4 Plan 11 Finite-Charge Entry Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_ENTRY_GATE_RECEIPT_2026-09-09.md)
-- [TOP-X4 Plan 11 Finite-Charge Operator Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_FINITE_CHARGE_OPERATOR_CHECKPOINT_2026-09-12.md)
-- [TOP-X4 Plan 11 Dynamic State/Subtraction Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_DYNAMIC_STATE_SUBTRACTION_CHECKPOINT_2026-09-12.md)
-- [TOP-X4 Plan 11 Exact-Transport Retry Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_EXACT_TRANSPORT_RETRY_CHECKPOINT_2026-09-12.md)
-- [TOP-X4 Plan 11 Scalar-Matrix Hadamard Parametrix Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_SCALAR_MATRIX_HADAMARD_PARAMETRIX_CHECKPOINT_2026-09-12.md)
-- [TOP-X4 Plan 11 Finite-Order Adiabatic-Symbol Receipt](Analysis/TOP/TOP-X4/TOPX4_S2F3_PLAN11_ADIABATIC_SYMBOL_DIAGNOSTIC_2026-09-16.md)
-- [BBN-001 Upstream-Interface Preflight](Analysis/Cosmology/BBN-001/README.md)
-- [MAT Tier-1 R1-R5 Remediation Addendum](Theory/Gates/MAT-001/MAT-001_TIER1_REMEDIATION_ADDENDUM_2026-08-07.md)
-- [Core-Recovery Manuscript Guide](Manuscript/CoreRecovery/README.md)
-- [Selective Publishing Plan](papers/Selective-Publishing-Plan/ITSM_Selective_Publishing_Plan.md)
-
-The original pre-v12 README is retained below for historical provenance. It is
-collapsed by default because its scientific assertions do not represent the
-current recovery branch.
-
-<details>
-<summary><strong>📦 Expand the archived pre-v12 README — provenance only, not current claim status</strong></summary>
-
-> **INVALIDATED HISTORICAL CLAIMS — DO NOT CITE AS CURRENT ITSM RESULTS.**
-> The block below is preserved only to show provenance. Its numerical fits,
-> derivation claims, MCMC labels, tension resolutions and observational PASS
-> language have not passed the recovery gates and may be internally wrong.
-> Current authority is the status table above, `active_research.md`, and the
-> signed parent gate decisions.
-
-# 🌌 Integrated Toroidal-Syntropic Model (ITSM)
-**Relativistic Field Equations, Superfluid Dynamics, and Multi-Scale Falsifiability**
-
-🌍 **Official Website & Interactive Explorer:** [itsm-cosmology.org](https://www.itsm-cosmology.org) | 📧 **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
-
-<br>
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18808348.svg)](https://doi.org/10.5281/zenodo.18808348)
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0007--4177--2612-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0007-4177-2612)
-
-## 📖 Project Overview
-The **Integrated Toroidal-Syntropic Model (ITSM)** is a foundational theoretical framework designed to resolve the catastrophic tensions breaking modern $\Lambda$CDM cosmology. By deconstructing the standard narrative of non-baryonic "dark matter," the ITSM identifies the vacuum itself as an active Superfluid Plenum—a macroscopic Bose-Einstein condensate governed by an inherent Toroidal Geometry ($\chi = 2\pi$).
-
-Instead of adding unobservable phantom particles or arbitrary phenomenological variables, the ITSM models the universe as an Open Thermodynamic Manifold. This allows the framework to natively and mathematically resolve the most pressing anomalies in astrophysics today:
-
-* 🌌 **The Dark Matter Crisis:** Analytically recovers the SPARC Radial Acceleration Relation (RAR) with a global fit ($\chi^2_\nu \approx 8.57$, $p=0.62$) across all 175 galaxies. Crucially, this fit is achieved over 3,178 strictly unfiltered kinematic data points using **zero free physical parameters**—relying purely on the derived toroidal manifold geometry ($a_0 = c H_0 / 2\pi$) alongside standard Gaussian nuisance marginalization for observational distance and inclination. Note that while particle dark matter is eliminated from galactic halos, the model requires a macroscopic Plenum excitation component ($\Omega_{\text{ex}} \approx 0.212$) to satisfy BBN and cosmic age.
-* 🔭 **The JWST "Impossible" Galaxies:** Provides the topological scaffolding required for the rapid assembly of dynamically mature disks at $z > 14$, resolving the $\Lambda$CDM timeline paradox.
-* 📏 **The Hubble Tension:** Proves the $8.33\%$ discrepancy between CMB ($H_0 \approx 67.4$) and local measurements ($H_0 \approx 73.0$) is a macroscopic geometric projection effect caused by toroidal Casimir anisotropy. The ITSM makes a strict **zero-parameter prediction** $H_t^{\rm pred} = \frac{13}{12} \times 67.36 = 72.97$ km/s/Mpc, agreeing with the SH0ES measurement to within $0.07\sigma$.
-* 💥 **The Bullet Cluster:** Provides a qualitative phase separation showing how the kinematic divergence between X-ray gas and gravitational lensing maps is consistent with fluid-dynamic consequences of the Plenum's acoustic wake, not collisionless dark matter.
-* 📉 **Evolving Dark Energy (DESI 2024):** Derives an evolving effective dark energy equation of state natively from syntropic volume decay, mirroring the latest DESI BAO data without arbitrary $w_0$--$w_a$ parameterization.
-* ⚠️ **The $S_8$ Tension (Open Issue):** Transparently logs an $S_8=0.863$ matter-clustering amplitude that performs measurably worse than the $\Lambda$CDM baseline, a tension currently under investigation rather than obscured.
-
-The framework culminates in strict, falsifiable predictions: (i) a Lorentzian acoustic resonance for **NANOGrav** Pulsar Timing Arrays tightly constrained between $1.08$ and $3.14$ nHz, and (ii) suppression of M-dwarf spectral features in **JWST** observations of edge-on SPARC outliers (confirming a bottom-light IMF).
-
-## 💡 Key Independent Discoveries & Theoretical Contributions
-
-*While the ITSM functions as a unified cosmological framework, the development of this model has yielded several modular, mathematically rigorous discoveries that hold independent value for the wider astrophysics and theoretical physics communities:*
-
-* 📐 **First-Principles Derivation of the Acceleration Scale:** Resolves the 40-year mystery of the $a_0$ empirical threshold. Under the Dynamic Scale Matching Postulate, $a_0$ is derived directly from macroscopic circulation quantization, linking the compact global topology to the local domain: $a_0 = c H_0 / 2\pi \approx 1.08 \times 10^{-10}$ m/s$^2$.
-  
-* 🌌 **Geometric Resolution to DESI 2024 (Evolving Dark Energy):** Demonstrates that an open thermodynamic manifold natively produces a $(1+z)^{-3}$ volumetric decay, organically mimicking the evolving dark energy equation of state ($w_0w_a \neq -1$) without requiring hypothetical quintessence fields.
-  
-* 🧩 **Topological Derivation of Lagrangian Coefficients:** Replaces empirical curve-fitting in non-linear field equations by modeling the $2/3$ fractional interaction coefficient as a strict geometric invariant (the covariant trace ratio between a 2D transverse shear plane and a 3D bulk manifold).
-  
-* 📉 **SPARC MCMC Mass-to-Light Distribution Anomaly:** Agnostic Bayesian inference reveals that optimizer engines strongly prefer near-zero disk mass-to-light ratios ($\Upsilon_{\text{disk}} \to 0.01$), challenging standard Stellar Population Synthesis (SPS) assumptions regarding the gravitational weight of outer stellar disks.
-
-* ⚖️ **Honest Accounting of the Tree-Level BTFR Coefficient:** The Born-Infeld projection factor $C_{\text{proj}}=2/3$ yields a strict, unrenormalized tree-level BTFR coefficient of $4/9$ — a genuine geometric lower bound, not a fitted value. The empirical SPARC/MOND normalization sits at $1$. An earlier attempted analytical bridge (1-loop renormalization) was found to contain a divergent, non-convergent integral and has been removed; closing this gap rigorously remains an open problem in non-perturbative field theory, stated as such rather than as a completed result.
-
-* 📊 **Forward-Model Monte Carlo p-value ($p=0.62$):** A $N=5000$ forward-model simulation injecting SPARC observational noise confirms that 62% of realizations produce $\chi^2_\nu \geq 8.57$, demonstrating that the global residual is entirely observational-noise-dominated rather than a model failure.
-
-* 🔮 **CMB Acoustic Peak Reconciliation:** Demonstrates that the Syntropic Source fluid (acting as an effective phantom energy, $w=-1.27$) thermodynamically pulls the first CMB acoustic peak to $\ell=222$, within $<0.9\%$ of the Planck baseline ($\ell=220$), fully reconciling the high local $H_0 \approx 73.0$ with early universe perturbation theory.
-
-* 📡 **NANOGrav Lorentzian Resonance Validation:** Predicts, pending 20-year/SKA-era data, that the vacuum's toroidal topology dictates a highly specific Lorentzian acoustic resonance in the stochastic Gravitational Wave Background (bounded exactly between $1.08$ and $3.14$ nHz). This provides a strict, zero-parameter falsifiability test that isolates the ITSM from the featureless power-law decay of standard $\Lambda$CDM.
-
-## 🚀 Key Mathematical Foundations
-1. **The Yield Threshold ($a_0$)**
-Derived from macroscopic circulation quantization under the Dynamic Scale Matching Postulate, establishing the limit where baryonic mass couples to the vacuum's inherent spin ($a_0 = c H_0 / 2\pi$).
-
-2. **The Plenum Shear Ansatz (Fractional Lagrangian)**
-An unconditionally stable, ghost-free modification to the Einstein-Hilbert action defining the vacuum drag. It natively saturates at high energies, preserving standard General Relativity in the Solar System.
-
-3. **Syntropic Volume Decay**
-An open thermodynamic circuit matching the physical volume expansion, organically producing a $(1+z)^{-3}$ volumetric decay that mimics an evolving dark energy equation of state.
-
-4. **Superfluid Microphysics & PPN Compliance**
-Formalizes the vacuum as an ultra-light scalar field constrained by Onsager-Feynman circulation quantization, proving the $2/3$ geometric projection ratio from first principles and explicitly recovering standard General Relativity in high-acceleration zones to satisfy Cassini radio-link constraints.
-
-## 📊 Empirical Validations (Computational Appendix)
-This repository contains the Python source code used to execute the primary empirical "crush tests" for the ITSM.
-
-🔹 **Script 1: Global Radial Acceleration Relation (SPARC Parser)**
-Parses 175 SPARC galaxy `.dat` files to calculate the global reduced $\chi^2$ statistic, validating the universal geometric yield boundary against empirical rotation curves.
-*Source: [itsm_global_rar.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_global_rar.py)*
-
-🔹 **Script 2: Automated MCMC SPARC Batch Processor**
-Deploys a parallelized Markov Chain Monte Carlo (MCMC) engine across the strictly enforced 175-galaxy SPARC dataset to extract unconstrained local $H_0$ flows and mass-to-light ratios.
-*Source: [itsm_mcmc_multicore.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_mcmc_multicore.py) & [itsm_global_mcmc.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_global_mcmc.py)*
-
-🔹 **Script 3: SPARC Meta-Analysis & Quality Filter**
-Post-processes the MCMC parameter chains, executing data quality cuts and auto-generating the LaTeX parameter ledger for the manuscript appendix.
-*Source: [itsm_sparc_meta_analysis.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_sparc_meta_analysis.py)*
-
-🔹 **Script 4: JADES-GS-z14-0 Timeline Analysis**
-Contrasts the hierarchical merging limits of $\Lambda$CDM against ITSM superfluid nucleation, highlighting how toroidal scaffolding resolves the high-redshift maturity crisis.
-*Source: [itsm_z14_assembly.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_z14_assembly.py)*
-
-🔹 **Script 5: Bullet Cluster Phase-Space Decoupling**
-A Kernel Density Estimation (KDE) phase-space diagram demonstrating how the metric wake decouples from the baryonic gas ($\sim 10^3$ km/s bulk flow) via fluid friction, negating the need for collisionless dark matter.
-*Source: [itsm_bullet_phasespace.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_bullet_phasespace.py)*
-
-🔹 **Script 6: Hubble Tension Geometric Resolver**
-Demonstrates how the $8.3\%$ measurement tension between the Planck CMB limit (67.4) and the SH0ES local limit (73.0) is natively resolved as a geometric projection of an anisotropic Toroidal Manifold.
-*Source: [itsm_hubble_resolver.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_hubble_resolver.py)*
-
-🔹 **Script 7: Macroscopic Torsional Entrainment**
-Generates a high-fidelity, normalized phase-space plot visualizing the kinematic transition at the $a_0$ yield boundary and the resulting acoustic metric wake.
-*Source: [itsm_acoustic_wake.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_acoustic_wake.py)*
-
-🔹 **Script 8: Covariant Stability (Drag Saturation)**
-Proves standard linear modified gravity models physically "explode" at high accelerations. Demonstrates how the ITSM's toroidal interaction natively saturates and safely decays as $1/\sqrt{X}$, satisfying Cassini constraints.
-*Source: [itsm_drag_saturation.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_drag_saturation.py)*
-
-🔹 **Script 9: NANOGrav Stochastic Toroidal Resonance**
-Establishes a strict falsifiability boundary for Pulsar Timing Arrays. Contrasts the chaotic power-law decay of $\Lambda$CDM against the ITSM’s predicted acoustic metric resonance (Lorentzian profile) mathematically locked between 1.08 nHz and 3.14 nHz.
-*Source: [itsm_nanograv_resonance.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_nanograv_resonance.py)*
-
-🔹 **Script 10: Syntropic Volume Decay (DESI 2024)**
-Validates the ITSM's syntropic decay against DESI 2024 BAO measurements, demonstrating how the model inherently mimics an evolving dark energy equation of state without arbitrary parameters.
-*Source: [itsm_desi_bao.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_desi_bao.py)*
-
-🔹 **Script 11: Superfluid Thermodynamic Decoupling (CMB Protection)**
-Calculates and visualizes the $\Xi(z)$ phase transition, mathematically proving that the fractional vacuum drag zeroes out during the radiation-dominated era to preserve the pristine CMB acoustic peaks.
-*Source: [itsm_thermodynamic_decoupling.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_thermodynamic_decoupling.py)*
-
-🔹 **Script 12: Hierarchical $H_0$ Population Inference (Archived)**
-Implements a hierarchical Bayesian framework to evaluate population-level $H_0$ consistency. Moved to `Analysis/` as SPARC galaxies do not individually constrain $H_0$ for population inference.
-*Source: [itsm_hierarchical_h0.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Analysis/Hierarchical_H0/itsm_hierarchical_h0.py)*
-
-🔹 **Script 13: Full CAMB CMB Power Spectrum Diagnostic**
-Natively models the thermodynamic intake of the Superfluid Plenum within CAMB's perturbation hierarchy, using an effective $w=-1.27$ phantom fluid mapping to pull the first acoustic peak to $\ell=222$.
-*Source: [itsm_camb_cmb_spectrum.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_camb_cmb_spectrum.py)*
-
-🔹 **Script 14: Characteristic Surfaces & Causality**
-Validates the convexity requirement ($f''(X) \ge 0$) for the Born-Infeld fractional Lagrangian. Generates a localized Penrose light-cone diagram demonstrating that the effective acoustic metric is nested within the global background metric via group-velocity constraints, avoiding Closed Timelike Curves (CTCs).
-*Source: [itsm_causality_cones.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_causality_cones.py)*
-
-🔹 **Script 15: Extreme Dust Attenuation Outlier Model**
-Models the flagship edge-on outlier NGC 4217, mathematically proving that standard neutral hydrogen tables overestimate Newtonian mass. Validates the MCMC's preference for a dynamically suppressed bottom-light IMF ($\Upsilon \to 0.01$).
-*Source: [itsm_ngc4217_dust_model.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_ngc4217_dust_model.py)*
-
-🔹 **Script 16: Pantheon+ SN1a Cosmological Optimization**
-Computes the log-likelihood of the ITSM distance modulus against the full 1701-supernovae Pantheon+ covariance matrix, independently confirming $H_0 \approx 72.90$ without prior SPARC constraints.
-*Source: [itsm_pantheon_sn1a.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_pantheon_sn1a.py)*
-
-🔹 **Script 17: Joint Cosmological MCMC (SN1a + BAO)**
-Executes a joint Bayesian integration combining DESI DR2 BAO telemetry and Pantheon+ SN1a data. Natively resolves the Hubble Tension ($H_0 \approx 73.97$) while reproducing the physical tension regarding the temporal evolution of dark energy.
-*Source: [itsm_joint_cosmology_mcmc.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_joint_cosmology_mcmc.py)*
-
-🔹 **Script 18: Bootstrapped RAR Error Envelopes**
-Performs a Forward-Modeled Monte Carlo simulation injecting SPARC observational noise onto the ITSM geometric baseline. Proves statistically that the observed empirical scatter is entirely observational.
-*Source: [itsm_bootstrapped_rar.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_bootstrapped_rar.py)*
-
-🔹 **Script 19: Matter Power Spectrum $P(k)$ (CAMB)**
-Interfaces with the CAMB numerical Boltzmann solver to generate the linear Matter Power Spectrum $P(k)$ at $z=0$, demonstrating that the ITSM syntropic volume decay model preserves the BAO wiggles and the radiation-matter equality turnover scale.
-*Source: [itsm_camb_matter_power.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_camb_matter_power.py)*
-
-🔹 **Script 20: Hierarchical Joint Inference (SPARC $\times$ Pantheon+ $\times$ DESI BAO)**
-Integrates the full 175-galaxy SPARC rotation-curve sample, the 1701-supernova Pantheon+ covariance matrix, and DESI DR2 BAO telemetry via a joint profile-likelihood MCMC that simultaneously optimizes per-galaxy nuisance parameters alongside the global cosmological parameters. Following a bugfix correcting a missing DESI BAO import (which had left an earlier run's $\Omega_m$ unanchored at a boundary artifact of 0.496), the corrected full 3,000-step production run converges to $H_0=72.91$, $\Omega_m=0.277$, $n=0.007$ — now the manuscript's headline joint-fit result.
-*Source: [itsm_hierarchical_joint_mcmc.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_hierarchical_joint_mcmc.py)*
-
-
-🔹 **Script 21: BIC Statistical Comparison (ITSM vs. AQUAL/MOND/NFW)**
-Executes a formal Bayesian Information Criterion (BIC) analysis across the SPARC sample under a shared, equal-nuisance-parameter pipeline. Confirms that both standard MOND and NFW achieve better raw fit quality than ITSM's fixed geometric prediction, and that the standard AQUAL normalization ($\alpha=1$) also outperforms ITSM's own $C_{\text{proj}}=2/3$ coefficient (raw $\chi^2=21{,}598$ vs.\ $27{,}740$; $\alpha=1$ preferred in 53.3\% of galaxies head-to-head). ITSM retains $2/3$ on the basis of its independent geometric derivation, not fit-quality superiority — a distinction the script's output is designed to make explicit rather than obscure.
-*Source: [itsm_bic_nfw_comparison.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_bic_nfw_comparison.py)*
-
-
-🔹 **Script 22: MCMC Mock Data Recovery**
-Performs a rigorous parameter injection and mock recovery test on the statistical engine. Proves that the MCMC correctly finds known injected priors without bias.
-*Source: [itsm_mock_recovery.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_mock_recovery.py)*
-
-🔹 **Script 23: Cosmic Chronometers $H(z)$ Validation**
-Evaluates the model against independent Cosmic Chronometer (CC) data (differential ages of passive galaxies). Validates the expansion history independent of integrated distance ladders.
-*Source: [itsm_cosmic_chronometers.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_cosmic_chronometers.py)*
-
-🔹 **Script 24: 3D Toroidal Manifold Visualization**
-Mathematically renders the fundamental $T^3$ topological domain, providing the geometric foundation for understanding the $1/12$ Casimir projection.
-*Source: [itsm_3d_toroidal_manifold.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_3d_toroidal_manifold.py)*
-
-🔹 **Script 25: 3D Superfluid Plenum Velocity Field**
-Generates the 3D fluid-dynamic simulation plots visualizing the Plenum's velocity field, flow lines, and acoustic wake.
-*Source: [itsm_3d_fluid_dynamics.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_3d_fluid_dynamics.py)*
-
-🔹 **Script 26: Web 3D Fluid Dynamics Visualizer**
-A web-ready interactive implementation of the 3D fluid dynamics visualization suite.
-*Source: [itsm_3d_fluid_dynamics_web.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_3d_fluid_dynamics_web.py)*
-
-
-🔹 **Script 28: Baryonic Tully-Fisher Relation (BTFR)**
-Validates the Baryonic Tully-Fisher Relation under the zero-free-parameter Plenum Shear Ansatz.
-*Source: [itsm_btfr_validation.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_btfr_validation.py)*
-
-🔹 **Script 29: DESI BAO Empirical Cross-Check**
-Performs an empirical cross-check validation of the syntropic expansion curve against DESI BAO data points.
-*Source: [itsm_desi_bao_empirical_validator.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_desi_bao_empirical_validator.py)*
-
-🔹 **Script 30: Redshift Evolution of Syntropic Decay Index $n(z)$**
-Diagnostic script visualizing the redshift evolution of the syntropic decay index $n(z)$ to map vacuum dynamics.
-*Source: [itsm_n_redshift_evolution_diagnostic.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_n_redshift_evolution_diagnostic.py)*
-
-🔹 **Script 31: ITSM vs ΛCDM vs MOND Model Comparison Flowchart**
-Generates a 3-column structured academic flowchart answering 6 key cosmological questions to visually contrast explanatory power across paradigms.
-*Source: [itsm_model_comparison_flowchart.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_model_comparison_flowchart.py)*
-
-🔹 **Script 32: Mock JWST NIRSpec Spectrum ($z=14$)**
-Simulates a mock JWST spectrum comparing the ΛCDM baseline against the ITSM prediction, illustrating the 15% CO(3-2) flux suppression and Na I D equivalent-width reduction.
-*Source: [itsm_mock_jwst_spectrum.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_mock_jwst_spectrum.py)*
-
-🔹 **Script 33: NANOGrav Bayesian Evidence & GWB Strain**
-Produces a Bayesian evidence figure contrasting the GWB characteristic strain spectrum of a SMBHB power-law against the ITSM Lorentzian resonance.
-*Source: [itsm_nanograv_bayes.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_nanograv_bayes.py)*
-
-🔹 **Script 34: 2/3 Projection Factor Schematic**
-Constructs a visual topological schematic explaining the geometric derivation of the $C_{\rm proj}=2/3$ factor from a 3D bulk to a 2D shear plane.
-*Source: [itsm_schematic_23_factor.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_schematic_23_factor.py)*
-
-🔹 **Script 35: Hubble Tension Geometry Schematic**
-Renders a diagram detailing the geometric projection of the Hubble tension ($H_t = \frac{13}{12} H_s$) derived from Casimir anisotropy.
-*Source: [itsm_schematic_hubble.py](file:///C:/Users/brend/OneDrive/Documents/ITSM%20-%20Github/ITSM-Integrated-Toroidal-Syntropic-Model/Scripts/itsm_schematic_hubble.py)*
-
-## 📂 Repository Structure
-| Directory | Content Description |
-|---|---|
-| 📄 `Manuscript/` | The core foundational ITSM cosmological physics framework, mathematical field equations, and compiled baseline manuscript. |
-| 📄 `papers/Syntropic-Thermodynamics/` | Exposes the 2nd Law of Thermodynamics as mathematically incomplete for open $T^3$ manifolds. Introduces the Syntropic Source Vector and explains the historical engineering failure of closed-system Tokamaks ($Q < 1$) versus the success of geometry-aligned Stellarators (W7-X). |
-| 📄 `papers/T3-Illusion/` | Resolves persistent "flat horizon" and "celestial dome" observational anomalies through the lens of a locally flat but globally periodic $T^3$ topology. Leverages COMPACT Collaboration constraints and JWST early-structure detections to bridge public inquiry with rigorous astrophysics. |
-| 🔬 `Scripts/` | Executable Python engines for all kinematic and assembly simulations, including the API export pipeline and the `run_all.py` master execution script. |
-| 🔭 `SPARC_data/` | The full 175 empirical galaxy `.dat` files required for the global RAR and MCMC benchmark. |
-| 🌌 `DESI_data/` & `NANOGrav_data/` | Raw telemetry and covariance matrices for Cosmic Microwave Background, BAO, and Pulsar Timing Array constraints. |
-| 🔬 `Assets/` | Centralized output hub for generated data and visuals. |
-| 📁 `Assets/Figures/` | High-resolution `.png` figures generated by the active scripts and linked in the manuscript. |
-| 📁 `Assets/SPARC_Batch_Outputs/` | Batch outputs from the MCMC engine (Corner plots, parameter chains, individual rotation curves). |
-| 🚀 `Assets/API_Exports/` | Extracted JSON payload endpoints (MCMC summaries, corner samples, Bootstrapped RAR, Hierarchical Chains) for live website integration. |
-| 🔬 `Analysis/` | Methodology development and extended analysis. Contains the Hierarchical Bayesian H0 investigation (`Hierarchical_H0/`), the Bootstrapped RAR (`Experimental/RAR_v2/`), and deprecated experimental modules. |
-
-## 👨‍🔬 About the Author
-**Brendon Boyd** is an Independent Researcher based in Perth, Western Australia. This work is driven by a commitment to rigorous analysis of astrophysical anomalies through the deconstruction of standard theoretical narratives and the examination of fundamental physical mechanisms.
-
-- **Website:** [www.itsm-cosmology.org](https://www.itsm-cosmology.org)
-- **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
-- **ORCID iD:** [0009-0007-4177-2612](https://orcid.org/0009-0007-4177-2612)
-
-## ⚖️ Ethical AI Declaration
-Generative AI has been utilized in this project strictly as a computational torque wrench. Its application is confined to the synthesis of formatting, grammatical structuring, and the parsing of original mathematical derivations into publication-ready LaTeX. While AI assists in pressure-testing logic and streamlining structural execution, it does not originate the underlying physics or the ontological insights of the ITSM. The core architecture remains the original work of the author.
-
-## 📜 Software Dependencies & Attributions
-This project relies on and builds upon several major open-source scientific tools and cosmological datasets. To maintain full transparency and compliance, we explicitly attribute the following core dependencies:
-
-### Open-Source Software
-* **CAMB (Code for Anisotropies in the Microwave Background):** This repository contains a modified version of the original CAMB Boltzmann solver. The ITSM extensions are strictly localized to the `CAMB_ITSM_Solver` directory. *Source: Lewis, A., Challinor, A., & Lasenby, A. (2000). Efficient computation of CMB anisotropies in closed FRW models. The Astrophysical Journal, 538(2), 473.*
-* **emcee:** The MCMC Hammer used for parameter estimation across the SPARC sample. *Source: Foreman-Mackey, D., Hogg, D. W., Lang, D., & Goodman, J. (2013). emcee: The MCMC Hammer. Publications of the Astronomical Society of the Pacific, 125(925), 306.*
-* **corner.py:** Used for rendering all posterior distribution corner plots. *Source: Foreman-Mackey, D. (2016). corner.py: Scatterplot matrices in Python. The Journal of Open Source Software, 1(2), 24.*
-
-### Observational Datasets
-* **SPARC Database:** *Source: Lelli, F., McGaugh, S. S., & Schombert, J. M. (2016). SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry. The Astronomical Journal, 152(6), 157.*
-
-* **DESI 2024 BAO:** *Source: DESI Collaboration et al. (2024). DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations.*
-* **NANOGrav 15-year Data Set:** *Source: Agazie, G. et al. (2023). The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background. The Astrophysical Journal Letters, 951(1), L8.*
-* **Planck 2018 Results:** *Source: Planck Collaboration et al. (2020). Planck 2018 results. VI. Cosmological parameters. Astronomy & Astrophysics, 641, A6.*
-
-## 🛠️ Usage & Replication
-To replicate the results locally:
-1. **Clone the repository:**
-   `git clone https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model.git`
-   `cd ITSM-Integrated-Toroidal-Syntropic-Model`
-2. **Create the Conda environment:**
-   This repository relies on specific package versions (e.g., for MCMC sampling and CAMB). An Anaconda environment file is provided to ensure exact reproducibility.
-   `conda env create -f environment.yml`
-3. **Activate the environment:**
-   `conda activate itsm_env`
-4.   **Run the Master Pipeline:**
-   Execute the centralized master script to sequentially run all 50+ production scripts and regenerate the entire figure suite.
-   `python Scripts/run_all.py`
-
-## 🖋️ Citation
-If utilizing this framework or the associated computational scripts in your research, please cite:
-> Boyd, B. (2026). The Integrated Toroidal-Syntropic Model: Relativistic Field Equations, Topology-Induced Superfluid Dynamics, and Multi-Scale Falsifiability. DOI: [10.5281/zenodo.18808348](https://doi.org/10.5281/zenodo.18808348)
-
-</details>
+| [Theory/Core/](Theory/Core/) | Physical identity, sector architecture, master plans and claim ledger |
+| [Theory/Gates/](Theory/Gates/) | Owning scientific reports, contracts and decision records |
+| [Analysis/](Analysis/) | Symbolic and numerical diagnostics within each report's stated scope |
+| [Governance/](Governance/) | Reader guide to the research methodology and binding governance |
+| [Manuscript/CoreRecovery/](Manuscript/CoreRecovery/) | Working recovery manuscript and immutable versioned releases |
+| [papers/](papers/) | Selective paper programme and its publication requirements |
+| [docs/history/](docs/history/) | Preserved pre-v12 landing-page text and deprecations |
+| [Recovery Branch Guide](RECOVERY_BRANCH_README.md) | Detailed branch orientation and dependency chain |
+| [Recovery evidence guide](docs/ITSM_RECOVERY_EVIDENCE_GUIDE.md) | Retained 11 October landing-page evidence and detailed report links |
