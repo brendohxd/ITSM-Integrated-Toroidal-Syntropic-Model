@@ -1,0 +1,42 @@
+*** Begin Patch
+*** Update File: papers/P1-Scale-Matching-Reconstruction/main.tex
+@@
+-\documentclass[aps,prd,reprint,superscriptaddress,nofootinbib,floatfix]{revtex4-2}
++\documentclass[aps,prd,reprint,superscriptaddress,nofootinbib,floatfix,showkeys]{revtex4-2}
+@@
+-Package \((L,\Gamma=cL,\omega=\Hzero)\) as prior proposals
++Package \((L,\Gamma=cL,\omega=\Hzero)\) with \(L\) a circumference
+@@
+-Simultaneous \(\azero=c\Hzero/2\pi\) and \(\Cobs=2/3\) as RAR fit
+-  & Incompatible & Gives \(a_{0,\mathrm{eff}}=(4/9)\azero\) in the spherical baseline \\
++Simultaneous \(\azero=c\Hzero/2\pi\) and \(\Cobs=2/3\)
++  & Rescaled & Conditional spherical normalization: \(a_{0,\mathrm{eff}}=(4/9)\azero\); no data fit \\
+@@
+-For any unit \(n^{i}\) in three-dimensional Riemannian geometry,
++For any \(n^{i}\) with \(\gamma_{ij}n^i n^j=1\), define the metric
++trace by \(\operatorname{Tr}_{\gamma}(h)=\gamma^{ij}h_{ij}\). Then
+@@
+-  \frac{\operatorname{Tr}(h)}{\operatorname{Tr}(\gamma)}=\frac{2}{3}\,.
++  \frac{\operatorname{Tr}_{\gamma}(h)}{\operatorname{Tr}_{\gamma}(\gamma)}
++  =\frac{2}{3}\,.
+@@
+-with \(q=|\nabla\psi|=\sqrt{\gamma^{ij}\partial_{i}\psi\partial_{j}\psi}\).
++Here \(\azero>0\), \(\Cm>0\), and \(\CIR>0\) define the attractive
++positive-coefficient branch used below. The potentials have dimensions
++\([\Phi_N]=[\psi]=\mathrm{L}^2\mathrm{T}^{-2}\), so
++\([|\nabla\psi|]=[\azero]=\mathrm{L}\mathrm{T}^{-2}\), while \(\Cm\)
++and \(\CIR\) are dimensionless. Write
++\(q=|\nabla\psi|=\sqrt{\gamma^{ij}\partial_{i}\psi\partial_{j}\psi}\).
+@@
+-\begin{figure}[t]
+-\centering
+-\includegraphics[width=\columnwidth]{itsm_23_factor_schematic.pdf}
+-\caption{Isotropic degree-of-freedom cartoon only.  It does not appear in
+-Eq.~\eqref{eq:SWF} and must not be read as a derivation of \(\Cobs\).}
+-\label{fig:cproj}
+-\end{figure}
+-
+@@
+-  \frac{|\nabla\varphi|}{\azero}\,\nabla\varphi
++  \frac{|\nabla\psi|}{\azero}\,\nabla\psi
+*** End Patch

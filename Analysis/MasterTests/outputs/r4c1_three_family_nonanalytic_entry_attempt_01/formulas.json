@@ -1,0 +1,58 @@
+{
+  "archived_G3": {
+    "A_no_gradient": "eta*(26*H**2 - 3*J0**2 + 117*psi_dot**2)/39",
+    "G": "eta*(17*eta - 256)/(240*(eta - 8))",
+    "K": "eta/6",
+    "M_cosm2": "-(eta - 12)/12",
+    "M_tensor2": "-(eta - 8)/8",
+    "alphaL": "eta/36",
+    "c_V2": "(17*eta - 256)/(40*(eta - 8))",
+    "cross": "H*eta/3",
+    "m_X2": "-(13*H**2 - 26*Hdot - 24*J0**2 + 936*psi_dot**2)/52",
+    "m_w2": "2*(13*H**2 + 13*Hdot + 3*J0**2 - 117*psi_dot**2)/13"
+  },
+  "direct_regulator_quartic": "-b*(psi_dot*w*w_dot+(psi_ddot+2*H*psi_dot)*w^2)^2/2; NOT full Schur quartic",
+  "interior_sign_proof": {
+    "G": "2 eta/15+alpha13^2/[2(1-alpha13)]>0",
+    "K": "eta/6>0",
+    "M_cosm2": "G3 1-eta/12 >=11/12; B1 1+eta/10; hierarchical 1+eta/10+eta^2/16",
+    "M_tensor2": "1-alpha13 >=7/8",
+    "alphaL": "G3 eta/36; B1 eta/15; hierarchical eta/15+eta^2/8"
+  },
+  "new_B1_frame": {
+    "A_no_gradient": "-eta*(169*H**2 + 30*J0**2 - 1170*psi_dot**2)/390",
+    "G": "2*eta/15",
+    "K": "eta/6",
+    "M_cosm2": "(eta + 10)/10",
+    "M_tensor2": "1",
+    "alphaL": "eta/15",
+    "c_V2": "4/5",
+    "cross": "-H*eta/30",
+    "m_X2": "-(65*H**2 + 442*Hdot - 120*J0**2 + 4680*psi_dot**2)/260",
+    "m_w2": "(130*H**2 - 13*Hdot + 30*J0**2 - 1170*psi_dot**2)/65"
+  },
+  "new_hierarchical": {
+    "A_no_gradient": "-eta*(585*H**2*eta + 676*H**2 + 120*J0**2 - 4680*psi_dot**2)/1560",
+    "G": "-eta*(15*eta**3 - 32*eta**2 + 256)/(240*(eta**2 - 8))",
+    "K": "eta/6",
+    "M_cosm2": "(5*eta**2 + 8*eta + 80)/80",
+    "M_tensor2": "-(eta**2 - 8)/8",
+    "alphaL": "eta*(15*eta + 8)/120",
+    "c_V2": "-(15*eta**3 - 32*eta**2 + 256)/(40*(eta**2 - 8))",
+    "cross": "-H*eta*(15*eta + 4)/120",
+    "m_X2": "-(65*H**2 + 195*Hdot*eta + 442*Hdot - 120*J0**2 + 4680*psi_dot**2)/260",
+    "m_w2": "(520*H**2 - 195*Hdot*eta - 52*Hdot + 120*J0**2 - 4680*psi_dot**2)/260"
+  },
+  "projected_force": {
+    "Hessian_norm": "6*A*|q|",
+    "Hessian_origin": "0 by continuous extension",
+    "Hessian_q_nonzero": "3*A*(|q|*I+q*q^T/|q|)",
+    "ball_Lipschitz_constant": "6*A*R for |q|<=R",
+    "canonical_q": "grad(phi)/(a*sqrt(K_Q))+psi_dot*V/f, phi=sqrt(K_Q)*Pi,V=f*w",
+    "gradient": "3*A*|q|*q",
+    "potential": "A*|q|^3",
+    "q": "grad(Pi)/a+psi_dot*w",
+    "scope": "field-space Lipschitz bound; no spatial PDE, full J2/J3 or quantum theorem"
+  },
+  "units": "M_P=1 reference; f dimension1,C_local dimension1,V dimension1,omega dimension1; no observed scales"
+}

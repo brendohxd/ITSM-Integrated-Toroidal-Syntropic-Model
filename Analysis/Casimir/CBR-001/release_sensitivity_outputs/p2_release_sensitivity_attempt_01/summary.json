@@ -1,0 +1,219 @@
+{
+  "checks": [
+    {
+      "actual": "57847f382bafa562827413f19f416dbc3da004c95996413d05e0cb7fde0bb47c",
+      "expected": "57847f382bafa562827413f19f416dbc3da004c95996413d05e0cb7fde0bb47c",
+      "name": "frozen_hash:cbr001_stage1.csv",
+      "passed": true
+    },
+    {
+      "actual": "9a5e80d2f713f01b02b7ea14c2460a344bcb2fcfdf814ea6696677d465c2ce3b",
+      "expected": "9a5e80d2f713f01b02b7ea14c2460a344bcb2fcfdf814ea6696677d465c2ce3b",
+      "name": "frozen_hash:cbr001_stage3b_summary.json",
+      "passed": true
+    },
+    {
+      "actual": 1.2151158242347791e-06,
+      "maximum": 2e-06,
+      "name": "full_order_2_vs_heat_kernel",
+      "passed": true
+    },
+    {
+      "actual": 5.267848019255298e-07,
+      "maximum": 1e-06,
+      "name": "tail_order_2_vs_heat_kernel",
+      "passed": true
+    },
+    {
+      "actual": 7.882292157278872e-09,
+      "maximum": 1e-07,
+      "name": "full_order_3_vs_heat_kernel",
+      "passed": true
+    },
+    {
+      "actual": 6.883313849117617e-07,
+      "maximum": 1e-06,
+      "name": "order_2_window_stability",
+      "passed": true
+    },
+    {
+      "name": "r0=1.1:classification_stable",
+      "passed": true
+    },
+    {
+      "name": "r0=1.1:no_attractor",
+      "passed": true
+    },
+    {
+      "actual": 4.206321615518405e-12,
+      "maximum": 1e-08,
+      "name": "r0=1.1:threshold_stable",
+      "passed": true
+    },
+    {
+      "actual": 0.0050000000000000044,
+      "maximum": 0.011,
+      "name": "r0=1.1:dwell_stable",
+      "passed": true
+    },
+    {
+      "name": "r0=1.5:classification_stable",
+      "passed": true
+    },
+    {
+      "name": "r0=1.5:no_attractor",
+      "passed": true
+    },
+    {
+      "actual": 8.738442474237357e-05,
+      "maximum": 1e-08,
+      "name": "r0=1.5:threshold_stable",
+      "passed": false
+    },
+    {
+      "actual": 0.0050000000000000044,
+      "maximum": 0.011,
+      "name": "r0=1.5:dwell_stable",
+      "passed": true
+    },
+    {
+      "name": "r0=3.0:classification_stable",
+      "passed": true
+    },
+    {
+      "name": "r0=3.0:no_attractor",
+      "passed": true
+    },
+    {
+      "actual": 2.2816295587296255e-10,
+      "maximum": 1e-08,
+      "name": "r0=3.0:threshold_stable",
+      "passed": true
+    },
+    {
+      "actual": 0.010000000000000009,
+      "maximum": 0.011,
+      "name": "r0=3.0:dwell_stable",
+      "passed": true
+    },
+    {
+      "details": {
+        "analytic_small_source": {
+          "analytic_S_minimum": 0.7485380116959064,
+          "analytic_peak_N": 0.28768207245178085,
+          "analytic_profile_maximum": 0.10546875,
+          "numeric_S_minimum": 0.7485380119205592,
+          "numeric_peak_N": 0.287675,
+          "numeric_profile_maximum": 0.10546874996834649,
+          "outside_strict_small_perturbation_regime": true,
+          "passed": true,
+          "q_from_x_target": 1.0833333333333333,
+          "q_target": 1.0833333333333333,
+          "x_from_q_target": 0.07894736842105257,
+          "x_target": 0.07894736842105263
+        },
+        "bracketed_roots": {
+          "maximum_target_residual": 1.1799228261111239e-11,
+          "passed": true,
+          "root_count": 3,
+          "threshold": 1e-07
+        },
+        "casimir_continuity": {
+          "maximum_residual": 4.595061188959514e-16,
+          "passed": true,
+          "threshold": 1e-07
+        },
+        "classification_vocabulary": {
+          "passed": true,
+          "used": [
+            "INVALID",
+            "NO_CROSSING",
+            "TRANSIENT_CROSSING"
+          ]
+        },
+        "hamiltonian_constraint": {
+          "maximum_residual": 3.6859191330801143e-16,
+          "passed": true,
+          "threshold": 1e-09
+        },
+        "late_time_decay": {
+          "maximum_candidate_abs_q20_minus_one": 0.0,
+          "passed": true,
+          "threshold": 1e-06
+        },
+        "q_x_identity": {
+          "error": 0.0,
+          "passed": true
+        }
+      },
+      "name": "tight_internal_validation",
+      "passed": true
+    }
+  ],
+  "contract": "Theory/Verification/P2_RELEASE_SENSITIVITY_CONTRACT_2026-10-01.md",
+  "dynamic_solver": [
+    {
+      "baseline_attractor": false,
+      "baseline_classification": "TRANSIENT_CROSSING",
+      "baseline_epsilon": 2.552842620154975,
+      "dwell_absolute_difference": 0.0050000000000000044,
+      "epsilon_relative_difference": 4.206321615518405e-12,
+      "r0": 1.1,
+      "tight_attractor": false,
+      "tight_classification": "TRANSIENT_CROSSING",
+      "tight_epsilon": 2.552842620165713
+    },
+    {
+      "baseline_attractor": false,
+      "baseline_classification": "TRANSIENT_CROSSING",
+      "baseline_epsilon": 0.6757299265902508,
+      "dwell_absolute_difference": 0.0050000000000000044,
+      "epsilon_relative_difference": 8.738442474237357e-05,
+      "r0": 1.5,
+      "tight_attractor": false,
+      "tight_classification": "TRANSIENT_CROSSING",
+      "tight_epsilon": 0.6756708783193345
+    },
+    {
+      "baseline_attractor": false,
+      "baseline_classification": "TRANSIENT_CROSSING",
+      "baseline_epsilon": 0.089182243676456,
+      "dwell_absolute_difference": 0.010000000000000009,
+      "epsilon_relative_difference": 2.2816295587296255e-10,
+      "r0": 3.0,
+      "tight_attractor": false,
+      "tight_classification": "TRANSIENT_CROSSING",
+      "tight_epsilon": 0.08918224369680408
+    }
+  ],
+  "input_sha256": {
+    "Analysis\\Casimir\\CBR-001\\cbr001_stage1.csv": "57847f382bafa562827413f19f416dbc3da004c95996413d05e0cb7fde0bb47c",
+    "Analysis\\Casimir\\CBR-001\\release_sensitivity_outputs\\p2_release_sensitivity_attempt_01\\stage3b_tight\\cbr001_stage3b_summary.json": "3dcfdee6334196d7282379a3502c2a2bf9d20b3a06d42e0613e2126110d138cd",
+    "Analysis\\Casimir\\CBR-001\\stage3b_outputs\\cbr001_stage3b_summary.json": "9a5e80d2f713f01b02b7ea14c2460a344bcb2fcfdf814ea6696677d465c2ce3b"
+  },
+  "passed": 18,
+  "physics_pass": false,
+  "programme": "P2 release sensitivity",
+  "publication_hold": "Dynamic renormalized-state/backreaction inputs and deferred independent review remain open.",
+  "publication_ready": false,
+  "static_extrapolation": {
+    "fit_values": {
+      "full_order_1": -0.8373740585106741,
+      "full_order_2": -0.8375358929917255,
+      "full_order_3": -0.8375369172977897,
+      "tail_order_1": -0.8374437750797069,
+      "tail_order_2": -0.8375364694943634
+    },
+    "heat_kernel_rho": -0.837536910696079,
+    "relative_errors": {
+      "full_order_1": 0.00019444180110170654,
+      "full_order_2": 1.2151158242347791e-06,
+      "full_order_3": 7.882292157278872e-09,
+      "tail_order_1": 0.00011120180517744193,
+      "tail_order_2": 5.267848019255298e-07
+    }
+  },
+  "status": "FAIL",
+  "total": 19,
+  "validation_pass": false
+}

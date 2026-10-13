@@ -1,0 +1,18 @@
+{
+  "P2": "C**3*Em*volume + rho*volume*(2*Pi*beta - alpha + trace/2 + T_dot/C)/C",
+  "Q2": "volume*(du*v_dot - du_dot*v - dv*u_dot + dv_dot*u - w**2*zeta*(u**2 + v**2)*(u*v_dot - u_dot*v)/2 + (-alpha + trace/2)*(u*v_dot - u_dot*v))",
+  "drift_scope": "Momentum derivatives arbitrary: full product-rule off-shell Noether identity, not set to zero",
+  "dust_current": [
+    "-C**2*density*epsilon*(2*g00*tau_t + 2*g01*tau_x + 2*g02*tau_y + 2*g03*tau_z)/2",
+    "-C**2*density*epsilon*(2*g01*tau_t + 2*g11*tau_x + 2*g12*tau_y + 2*g13*tau_z)/2",
+    "-C**2*density*epsilon*(2*g02*tau_t + 2*g12*tau_x + 2*g22*tau_y + 2*g23*tau_z)/2",
+    "-C**2*density*epsilon*(2*g03*tau_t + 2*g13*tau_x + 2*g23*tau_y + 2*g33*tau_z)/2"
+  ],
+  "initial_Q2": "-eta**3/26",
+  "rotation_current": [
+    "u*(-density*zeta*(-h00*u*(-u*v_t + u_t*v) - h01*u*(-u*v_x + u_x*v) - h02*u*(-u*v_y + u_y*v) - h03*u*(-u*v_z + u_z*v) - u*(h00*(-u*v_t + u_t*v) + h01*(-u*v_x + u_x*v) + h02*(-u*v_y + u_y*v) + h03*(-u*v_z + u_z*v)))/2 - density*(2*g00*v_t + 2*g01*v_x + 2*g02*v_y + 2*g03*v_z)/2) - v*(-density*zeta*(h00*v*(-u*v_t + u_t*v) + h01*v*(-u*v_x + u_x*v) + h02*v*(-u*v_y + u_y*v) + h03*v*(-u*v_z + u_z*v) + v*(h00*(-u*v_t + u_t*v) + h01*(-u*v_x + u_x*v) + h02*(-u*v_y + u_y*v) + h03*(-u*v_z + u_z*v)))/2 - density*(2*g00*u_t + 2*g01*u_x + 2*g02*u_y + 2*g03*u_z)/2)",
+    "u*(-density*zeta*(-h01*u*(-u*v_t + u_t*v) - h11*u*(-u*v_x + u_x*v) - h12*u*(-u*v_y + u_y*v) - h13*u*(-u*v_z + u_z*v) - u*(h01*(-u*v_t + u_t*v) + h11*(-u*v_x + u_x*v) + h12*(-u*v_y + u_y*v) + h13*(-u*v_z + u_z*v)))/2 - density*(2*g01*v_t + 2*g11*v_x + 2*g12*v_y + 2*g13*v_z)/2) - v*(-density*zeta*(h01*v*(-u*v_t + u_t*v) + h11*v*(-u*v_x + u_x*v) + h12*v*(-u*v_y + u_y*v) + h13*v*(-u*v_z + u_z*v) + v*(h01*(-u*v_t + u_t*v) + h11*(-u*v_x + u_x*v) + h12*(-u*v_y + u_y*v) + h13*(-u*v_z + u_z*v)))/2 - density*(2*g01*u_t + 2*g11*u_x + 2*g12*u_y + 2*g13*u_z)/2)",
+    "u*(-density*zeta*(-h02*u*(-u*v_t + u_t*v) - h12*u*(-u*v_x + u_x*v) - h22*u*(-u*v_y + u_y*v) - h23*u*(-u*v_z + u_z*v) - u*(h02*(-u*v_t + u_t*v) + h12*(-u*v_x + u_x*v) + h22*(-u*v_y + u_y*v) + h23*(-u*v_z + u_z*v)))/2 - density*(2*g02*v_t + 2*g12*v_x + 2*g22*v_y + 2*g23*v_z)/2) - v*(-density*zeta*(h02*v*(-u*v_t + u_t*v) + h12*v*(-u*v_x + u_x*v) + h22*v*(-u*v_y + u_y*v) + h23*v*(-u*v_z + u_z*v) + v*(h02*(-u*v_t + u_t*v) + h12*(-u*v_x + u_x*v) + h22*(-u*v_y + u_y*v) + h23*(-u*v_z + u_z*v)))/2 - density*(2*g02*u_t + 2*g12*u_x + 2*g22*u_y + 2*g23*u_z)/2)",
+    "u*(-density*zeta*(-h03*u*(-u*v_t + u_t*v) - h13*u*(-u*v_x + u_x*v) - h23*u*(-u*v_y + u_y*v) - h33*u*(-u*v_z + u_z*v) - u*(h03*(-u*v_t + u_t*v) + h13*(-u*v_x + u_x*v) + h23*(-u*v_y + u_y*v) + h33*(-u*v_z + u_z*v)))/2 - density*(2*g03*v_t + 2*g13*v_x + 2*g23*v_y + 2*g33*v_z)/2) - v*(-density*zeta*(h03*v*(-u*v_t + u_t*v) + h13*v*(-u*v_x + u_x*v) + h23*v*(-u*v_y + u_y*v) + h33*v*(-u*v_z + u_z*v) + v*(h03*(-u*v_t + u_t*v) + h13*(-u*v_x + u_x*v) + h23*(-u*v_y + u_y*v) + h33*(-u*v_z + u_z*v)))/2 - density*(2*g03*u_t + 2*g13*u_x + 2*g23*u_y + 2*g33*u_z)/2)"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "result_id": "P1-RC3-PREP-20261008",
+  "date": "2026-10-08",
+  "version": "0.2.0-rc3",
+  "local_preparation": "COMPLETE",
+  "publication_ready": false,
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "research_execution": "PROCEED_PROVISIONALLY",
+  "gate_effect": "NONE",
+  "parent_statuses": {
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "K_Q": "NOT_DERIVED",
+    "V": "NOT_COMPUTED"
+  },
+  "source_sha256": "4b0d0aefd22f81ea20057936ee7566f24eb12b9b49b2fb22bebdfdcc5a6f2510",
+  "canonical_pdf_sha256": "d16a339e866358dbe448e7438b2e2e7e5e8fb1614cda7ed4ef1f1b4c380ca827",
+  "packaged_source_sha256": "63f854eeaed62bde4da13fd6b370c0943112e1efe5b059bd140bc9f8fe385ea3",
+  "archive_sha256": "e2c37792462e9bae1cc390ba2a8f237ed6e4b971829c94e70ffd83d2839563a1",
+  "isolated_pdf_sha256": "75c96631976979383f7a5dc8c81c77311b9dd950a96b78b28560584c26309d98",
+  "verification": {
+    "native_project_build": "PASS",
+    "native_isolated_build": "PASS",
+    "canonical_pages": 6,
+    "isolated_pages": 6,
+    "rendered_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "canonical_isolated_text_equal": true,
+    "recorder_input_records": 252,
+    "repository_dependencies": 0,
+    "cited_keys": 13,
+    "bibliography_entries": 13,
+    "builtin_document_compile": "TIMED_OUT"
+  },
+  "archive_entries": [
+    "main.tex",
+    "references.bib",
+    "main.bbl",
+    "figures/itsm_t3_fundamental_domain.pdf"
+  ],
+  "package_source_transformation": "graphicspath restricted to figures/; terminal newline normalization",
+  "preserved_inputs": {
+    "previous_source_sha256": "e9ffe5430d6d2bbf80019190abffc65834798dd2a6e09f8ee7431ad38901227e",
+    "rc2_pdf_sha256": "0fefc03fae9024f78728ea80c170ca29e9e3d5152546a48cea8b2948c8d1352a",
+    "saved_correction_patch_sha256": "918e61fac03abbdf8adc549aee8ea45556c899c1c37076d178bb2491d7c19891",
+    "source_snapshot": "LOCAL_ONLY - seven exact pre-edit files",
+    "earlier_layout_proof": "LOCAL_ONLY - preserved before final iteration"
+  },
+  "outstanding": [
+    "Author cold proofread and metadata/declaration confirmation",
+    "Applicable independent review remains deferred",
+    "Venue/category/endorsement and public-release decision"
+  ],
+  "committed": false,
+  "pushed": false,
+  "published": false
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "itsm-interrupted-scientific-attempt-v1",
+  "validation": "NOT_EVALUATED",
+  "status": "SUPERSEDED_FOR_VALIDATED_FACTORED_DERIVATIVES",
+  "exit_code": 1,
+  "terminal_exit_code_observed": true,
+  "source": "Analysis/MasterTests/test_01_r4c1_g3n5_corrected_dust_remainder_v3.py",
+  "source_sha256": "da5a61ca9033d2c0d61c1431614aaaeeeb6eb2e5375232a712e0074935f66ff9",
+  "contract_sha256": "f7ea2ef641d7067342ba1b113d904aa8442acfed74c4517e30fce05ee4961345",
+  "reason": "V4 reuses the same exact background derivatives and evaluates their whole-box norms in factored form, without first expanding/cancelling them into one multivariate fraction. A bounded independent quotient/chain-rule probe passed an exact identity, exact rational whole-box bound and three sample controls. V4 includes that regression and all original acceptance controls. This representation change is not a physical equation or initial-data change.",
+  "last_completed_phase": "Complete first-correction lift derived from stored exact R2; all wave/fast states retained.",
+  "retained_private_progress": ".local/itsm-context/corrected_remainder_v3_progress_20261012.txt",
+  "retained_private_progress_sha256": "478e27f07ee9758f2421a3dd2c342831654e3231ed94023d29e54b8d684e8f8e",
+  "supersession_reason_not_observation_timeout": true,
+  "analytic_sign_defect": false,
+  "scientific_failure_inferred": false,
+  "corrected_reference_forced_remainder_proved": false,
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "Rule9_cleared": false,
+  "review_status": "DEFERRED",
+  "interpretation": "Explicitly interrupted incomplete calculation, not an acceptance or physics verdict. V3 source, contract and sidecars remain byte-identical. Earlier attempts, sign-audit history and original trajectories are unchanged. V4 must use fresh attempt_04."
+}

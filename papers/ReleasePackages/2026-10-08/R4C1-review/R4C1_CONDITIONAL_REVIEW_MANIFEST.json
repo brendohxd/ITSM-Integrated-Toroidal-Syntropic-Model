@@ -1,0 +1,72 @@
+{
+  "manifest_version": "1.0",
+  "package_id": "R4C1-CONDITIONAL-REVIEW-20261008",
+  "created": "2026-10-08",
+  "scope": "local conditional review package; no source or receipt mutation",
+  "source": {
+    "path": "papers/R4C1-Covariant-Exchange-Model/main.tex",
+    "version": "0.1.1-conditional-draft",
+    "sha256": "adeb6a686c091a8238253d9e1fbdc219b7a80e0d60be327432da9994e845940e",
+    "source_changed": false
+  },
+  "pdf": {
+    "path": "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.1-conditional-draft.pdf",
+    "sha256": "52d592b4324fcb53ea0135b4777c5a25e944453b6a8bd2bd523148a1b203079a",
+    "pages": 6,
+    "pdf_changed": false,
+    "visual_qa": "PASS"
+  },
+  "review": {
+    "status": "DEFERRED",
+    "type": "STANDALONE_CONDITIONAL_THEORY_REVIEW",
+    "Rule9_cleared": false,
+    "physics_pass": false,
+    "gate_effect": "NONE",
+    "research_execution": "PROCEED_PROVISIONALLY",
+    "canonical_promotion": "HOLD_SUBSTANTIVE",
+    "publication_ready": false
+  },
+  "parent_status": {
+    "canonical_tests_1_to_3": "HOLD_SUBSTANTIVE",
+    "MAT-001": "BLOCKED",
+    "UVIR-003": "IN_PROGRESS",
+    "K_Q": "NOT_DERIVED",
+    "V": "NOT_COMPUTED",
+    "Stage4A": "CLOSED",
+    "TOP-X4": "UNCHANGED"
+  },
+  "latest_diagnostics": {
+    "G3_finite_k_density": {
+      "report_sha256": "a247893f8f0cb15760c20cc24b4f19b91f701ce2aaa0ec585a534b3436b78d13",
+      "contract_sha256": "26ecfebc6d7792c0a5d6e065b8512f803d5ddd6e6316d01300d83ad7ef2769ce",
+      "local_checks": "182/182",
+      "scientific_disposition": "PROVISIONAL_PREPARED_SOLUTION_PLANE_ONLY"
+    },
+    "G3_frame_scattering": {
+      "report_sha256": "035d1480904b2459b6a4e8b6df91d381065a653fdeb49583fcdb3dbfc4ac49f4",
+      "contract_sha256": "f54c7a7297350256ae199c3ba2b5f19266094c57739b95c6dad0ee253627d5f8",
+      "local_checks": "219/219",
+      "scientific_disposition": "PROVISIONAL_FIXED_METRIC_VACUUM_PROBE_ONLY"
+    }
+  },
+  "evidence": [
+    {"path": "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md", "sha256": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3"},
+    {"path": "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md", "sha256": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c"},
+    {"path": "Theory/Gates/RES-001/RES001_R4C1_INTERACTING_BACKGROUND_REPORT_2026-09-25.md", "sha256": "48b49fddd9066d6df783eb336e00d49374f3845ec38414ee53fe0fad812348d8"},
+    {"path": "Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md", "sha256": "82708666dfce4ef214b614bc7da31b294d7569539b97292aaa9a79e906e6266f"},
+    {"path": "Theory/Gates/RES-001/RES001_R4C1_EQUAL_NEWTON_SCALAR_REPORT_2026-09-30.md", "sha256": "4d2ea777b8edfb23e52438e271286b8990da2f1720acb05dbd4707f8efb43de7"},
+    {"path": "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_CONTRACT_2026-10-08.md", "sha256": "26ecfebc6d7792c0a5d6e065b8512f803d5ddd6e6316d01300d83ad7ef2769ce"},
+    {"path": "Theory/Gates/RES-001/RES001_R4C1_G3_FINITE_K_DENSITY_REPORT_2026-10-08.md", "sha256": "a247893f8f0cb15760c20cc24b4f19b91f701ce2aaa0ec585a534b3436b78d13"},
+    {"path": "Theory/Gates/RES-001/RES001_R4C1_G3_FRAME_SCATTERING_CONTRACT_2026-10-08.md", "sha256": "f54c7a7297350256ae199c3ba2b5f19266094c57739b95c6dad0ee253627d5f8"},
+    {"path": "Theory/Gates/RES-001/RES001_R4C1_G3_FRAME_SCATTERING_REPORT_2026-10-08.md", "sha256": "035d1480904b2459b6a4e8b6df91d381065a653fdeb49583fcdb3dbfc4ac49f4"}
+  ],
+  "integrity": {
+    "optimizer": "Scripts/itsm_context.py",
+    "network_calls": false,
+    "provider_dispatch": false,
+    "memory_mutation": false,
+    "commit": false,
+    "push": false,
+    "publication": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "affine_reconstruction": "q=Q0*y+Q1*y_dot+u_s; all basis/inverse/source drift retained",
+  "evolved_tail": "UNCONTROLLED; retained formula is NOT a tail/remainder certificate",
+  "exact_infinite_odd_response": "x_n(t)=Integral_0^t Phi_n(t,s)[0,S_Vy(n,s)/alpha14] ds; Phi_n evolves the member vector equation",
+  "first_order": "w_ddot+3H*w_dot+(cV^2*k^2/a^2+m_w^2)*w=0",
+  "infinite_odd_forcing": "S_Vy(n)=-3*A*abs(psi_dot)^3*w*abs(w)*b_n/2, b_n=-8*(-1)^((n-1)/2)/(pi*n*(n^2-4)), n odd",
+  "scope": "registered finite diagnostic subset and perturbative order only"
+}

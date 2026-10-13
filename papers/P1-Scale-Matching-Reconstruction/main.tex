@@ -3,14 +3,20 @@
 % Genre: technical note (no-gos + one derived EFT identity)
 % Class: Physical Review D (revtex4-2)
 % =============================================================================
-\documentclass[aps,prd,reprint,superscriptaddress,nofootinbib,floatfix]{revtex4-2}
+\documentclass[aps,prd,reprint,superscriptaddress,nofootinbib,floatfix,showkeys]{revtex4-2}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
 \usepackage{graphicx}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks,
+  pdftitle={Present-epoch scale matching, the weak-field invariant Cobs, and constraints on a cubic T3 geometric construction},
+  pdfauthor={Brendon Boyd},
+  pdfkeywords={modified Newtonian dynamics, cosmic topology, effective field theory, radial acceleration relation, compact manifolds}
+}
 
 \graphicspath{{figures/}{../../Assets/Figures/}{../../Assets/Archive/}}
 
@@ -25,8 +31,8 @@
 \begin{document}
 
 \title{Present-epoch scale matching, the weak-field invariant
-\texorpdfstring{\(\Cobs\)}{C\_obs}, and no-go results for a cubic
-\texorpdfstring{\(\Tthree\)}{T3} geometric story}
+\texorpdfstring{\(\Cobs\)}{C\_obs}, and constraints on a cubic
+\texorpdfstring{\(\Tthree\)}{T3} geometric construction}
 
 \author{Brendon Boyd}
 \email{brendon.boyd@itsm-cosmology.org}
@@ -39,31 +45,34 @@ Zenodo: & \href{https://doi.org/10.5281/zenodo.18808348}{doi:10.5281/zenodo.1880
 \end{tabular}%
 }
 
-\date{\today}
+\date{Version 0.2.0-rc3 --- October 8, 2026}
 
 \begin{abstract}
 The coincidence \(2\pi\azero\sim c\Hzero\) is a standard observation in the
-MOND literature.  Several recent proposals attempt to elevate it to a
-\emph{geometric derivation} by combining (i)~a compact flat cubic three-torus
-of present-day side \(L=c/\Hzero\) with a putative ``circulation quantum''
-\(\kappa=cL\), and (ii)~the isotropic projector ratio
+MOND literature.  We test one proposed route from that coincidence to a
+\emph{geometric derivation}: (i)~a compact flat cubic three-torus of present-day
+side \(L=c/\Hzero\) with a putative ``circulation quantum'' \(\kappa=cL\), and
+(ii)~identification of the isotropic projector ratio
 \(\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3\) with the weak-field
-coefficient in an AQUAL-type action.  We show that neither step is presently
-a derivation.  Writing \(\kappa=cL\) does not quantize circulation; the package
-\(L=c/\Hzero\), \(\Gamma=cL\), and \(\omega=\Hzero\) is kinematically
-inconsistent if \(L\) is a circumference; and cubic \(E_1\) topology bounds
-require \(L\gtrsim\mathcal{O}(6)\,c/\Hzero\), excluding the \(\alpha=1\)
-matching that reproduces the MOND scale.  Exact tracking
-\(L_{\mathrm{phys}}(t)=c/H(t)\) is incompatible with fixed comoving moduli in
-ordinary FLRW except for a coasting expansion.  The projector identity is
-correct but topology-independent and does not appear in the weak-field action,
-so it cannot fix
-\(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\), which we derive as the unique invariant of
-field rescaling.  Imposing both \(\azero=c\Hzero/2\pi\) and \(\Cobs=2/3\)
-yields \(a_{0,\mathrm{eff}}=(4/9)\azero\), in conflict with the empirical RAR
-normalization.  What remains is a present-epoch phenomenological encoding of
-the coincidence, a clean EFT invariant, and an explicit reconstruction checklist
-for any future geometric claim.
+coefficient in an AQUAL-type action.  The route is assessed against explicit
+microphysical, cosmic-scale, and weak-field criteria.  Writing \(\kappa=cL\)
+does not by itself quantize circulation; the package \(L=c/\Hzero\),
+\(\Gamma=cL\), and \(\omega=\Hzero\) is kinematically inconsistent if \(L\) is
+a circumference; and cubic \(E_1\) topology bounds require
+\(L\gtrsim\mathcal{O}(6)\,c/\Hzero\), which is incompatible with the
+\(\alpha=1\) scale match.  Exact tracking \(L_{\mathrm{phys}}(t)=c/H(t)\) is
+also incompatible with fixed comoving moduli in ordinary FLRW except for a
+coasting expansion.  The projector identity is correct but
+topology-independent and absent from the weak-field action, so it does not fix
+\(\Cobs\).  We instead derive the normalization-invariant response combination
+\(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\).  In the static spherical baseline, imposing
+both \(\azero=c\Hzero/2\pi\) and the un-derived comparator \(\Cobs=2/3\)
+gives \(a_{0,\mathrm{eff}}=(4/9)\azero\), corresponding to an approximately
+18\% shift in asymptotic baryonic Tully--Fisher velocity normalization.  This
+is a conditional consistency check, not a global \(\Tthree\) prediction or a
+completed galaxy-data fit.  The retained results are a present-epoch
+phenomenological encoding of the coincidence, a clean EFT invariant, and a
+reconstruction checklist for any future geometric claim.
 \end{abstract}
 
 \keywords{Modified Newtonian dynamics;
@@ -92,18 +101,36 @@ whether a compact flat three-torus \(\Tthree=S^{1}\times S^{1}\times S^{1}\)
 \cite{lachieze_rey_luminet,planck_topology} and a weak-field effective field
 theory (EFT) can turn that coincidence into a derivation.
 
-A recurring two-step proposal answers ``yes'':
+The distinction matters beyond topology bookkeeping.  The normalization that
+enters the deep-MOND response also enters the RAR and the asymptotic baryonic
+Tully--Fisher relation, so a geometric coefficient must survive both
+action-level matching and observational normalization.  Conversely, failure
+of the particular construction tested here would not decide the viability of
+MOND as a class, relativistic MOND theories, or other microscopic completions.
+It would show only that the empirical coincidence and the cubic topology do
+not supply the claimed derivation without additional physics.
+
+The two-step construction examined in this note answers ``yes'':
 \begin{enumerate}
 \item[(A)] ``Circulation quantization'' on a domain of size \(L=c/\Hzero\)
   yields \(\azero=c\Hzero/2\pi\);
 \item[(B)] the transverse-projector ratio \(2/3\) yields the EFT coefficient
   \(\Cobs\) in a deep-MOND square-root law.
 \end{enumerate}
-Both steps fail under standard technical scrutiny.  This paper is a short
-technical note: it withdraws those derivations, records the associated no-go
-results, and isolates what \emph{does} follow cleanly from a static AQUAL-type
-action \cite{bekenstein_milgrom}.  Table~\ref{tab:status} summarizes the
-status of each claim.
+Our analysis identifies mathematical incompatibilities in both steps under the
+stated assumptions.  This short technical note records those scoped
+constraints and isolates what \emph{does} follow cleanly from a static
+AQUAL-type action \cite{bekenstein_milgrom}.
+
+\paragraph{Evaluation framework.}
+The analysis uses three groups of criteria, previewed here so that each later
+calculation has an explicit standard: (M1)--(M4) require a phase-bearing order
+parameter, integer winding, a consistent meaning of \(L\), and a dynamical map
+to \(\azero\); (S1)--(S2) require a viable modulus history and consistency with
+compact-topology bounds; and (E1)--(E3) require action-level projector dynamics,
+the correct RAR/BTFR normalization, and solved compensated periodic sources.
+The detailed, forward-looking checklist appears in Sec.~\ref{sec:path}.
+Table~\ref{tab:status} summarizes the resulting analytical dispositions.
 
 % Full-width, non-floating table: spans both columns; following text starts after it.
 \onecolumngrid
@@ -113,10 +140,10 @@ status of each claim.
 \begin{minipage}{\textwidth}
 \small
 \noindent\textbf{TABLE~\thetable.\ }
-Status of claims discussed in this work.\\[0.55em]
+Analytical disposition of claims discussed in this work.\\[0.55em]
 \begin{ruledtabular}
 \begin{tabular}{@{}p{0.50\textwidth}@{\hspace{0.8em}}p{0.12\textwidth}@{\hspace{0.8em}}p{0.30\textwidth}@{}}
-\textbf{Quantity / claim} & \textbf{Status} & \textbf{Note} \\
+\textbf{Quantity / claim} & \textbf{Disposition} & \textbf{Note} \\
 \colrule
 Empirical coincidence \(2\pi\azero\sim c\Hzero\)
   & Fact & Motivating observation only \\
@@ -125,16 +152,16 @@ Empirical coincidence \(2\pi\azero\sim c\Hzero\)
   & Phen. & Named postulate; not derived \\
 \hline
 ``Circulation quantization \(\Rightarrow\azero\)''
-  & Withdrawn & \(\kappa=cL\) is not \(h/m\) quantization \\
+  & Not derived & \(\kappa=cL\) is not \(h/m\) quantization \\
 \hline
-Package \((L,\Gamma=cL,\omega=\Hzero)\) as prior proposals
-  & Withdrawn & Inconsistent if \(L\) is a circumference \\
+Package \((L,\Gamma=cL,\omega=\Hzero)\) with \(L\) a circumference
+  & Incompatible & Inconsistent if \(L\) is a circumference \\
 \hline
 Cubic \(E_1\) with \(L=c/\Hzero\) vs.\ Planck topology
-  & Excluded & \(L\gtrsim\mathcal{O}(6)\,c/\Hzero\) required \\
+  & Incompatible & \(L\gtrsim\mathcal{O}(6)\,c/\Hzero\) required \\
 \hline
 \(L_{\mathrm{phys}}(t)=c/H(t)\) with fixed comoving moduli
-  & Excluded & Needs evolving moduli or coasting FLRW \\
+  & Incompatible & Needs evolving moduli or coasting FLRW \\
 \hline
 Isotropic count \(\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3\)
   & Derived & Generic 3D identity; not special to \(\Tthree\) \\
@@ -143,10 +170,10 @@ Isotropic count \(\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3\)
   & Derived & Field-normalization invariant \\
 \hline
 \(\Cobs=2/3\) from the trace ratio
-  & Withdrawn & Projector absent from the action \\
+  & Not derived & Projector absent from the action \\
 \hline
-Simultaneous \(\azero=c\Hzero/2\pi\) and \(\Cobs=2/3\) as RAR fit
-  & Excluded & Predicts \(a_{0,\mathrm{eff}}=(4/9)\azero\) \\
+Simultaneous \(\azero=c\Hzero/2\pi\) and \(\Cobs=2/3\)
+  & Rescaled & Conditional spherical normalization: \(a_{0,\mathrm{eff}}=(4/9)\azero\); no data fit \\
 \hline
 Compensated sources on compact \(\Tthree\)
   & Derived & \(\int\mathrm{div}=0\) \\
@@ -188,7 +215,7 @@ Throughout, \(L\) means a \emph{physical} edge length at the epoch under
 discussion unless ``comoving'' is written explicitly.  When a numerical Hubble
 scale is needed we take
 \(\Hzero=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\) for illustration; none of the
-no-go arguments depends on that choice at the factor-of-two level.
+scoped arguments depends on that choice at the factor-of-two level.
 
 % =============================================================================
 \section{\texorpdfstring{\(\azero=c\Hzero/2\pi\)}{a0 = c H0 / 2 pi}
@@ -264,11 +291,12 @@ may be retained only as a \emph{present-epoch phenomenological scale-matching
 postulate} that encodes Eq.~\eqref{eq:coincidence}.  For
 \(\Hzero=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\) one finds
 \(\azero\approx 1.1\times 10^{-10}\,\mathrm{m\,s^{-2}}\), of the observed
-order of magnitude \cite{mcgaugh_rar}.  All ``geometric derivation from
-circulation quantization'' language should be withdrawn.
+order of magnitude \cite{mcgaugh_rar}.  Under the assumptions tested here,
+``geometric derivation from circulation quantization'' is unsupported unless
+the microphysical requirements (M1)--(M4) are supplied.
 
 % =============================================================================
-\section{Cubic topology bounds exclude \texorpdfstring{\(L=c/\Hzero\)}{L = c/H0}}
+\section{Cubic topology bounds and \texorpdfstring{\(L=c/\Hzero\)}{L = c/H0}}
 \label{sec:bounds}
 
 Planck topology analyses constrain cubic \(E_1\) three-tori tightly.  In terms
@@ -300,12 +328,12 @@ topology-safe \(\alpha\) yields
   \sim 1.8\times 10^{-11}\,\mathrm{m\,s^{-2}}\,,
   \label{eq:a0-suppressed}
 \end{equation}
-destroying the intended MOND-scale match.  Therefore the cubic-\(E_1\),
-\(\alpha=1\) package that simultaneously targets \(\azero\sim 10^{-10}\) and
-CMB non-detection is a no-go.
+which no longer reproduces the intended MOND-scale match.  Therefore the
+cubic-\(E_1\), \(\alpha=1\) package is incompatible with simultaneously
+targeting \(\azero\sim 10^{-10}\) and CMB non-detection.
 
 Vague statements that a ``Hubble-scale domain is compatible with non-detection''
-are incorrect for cubic \(E_1\).
+are not supported for cubic \(E_1\) under these bounds.
 
 % =============================================================================
 \section{Present-epoch matching versus fixed-comoving FLRW}
@@ -334,8 +362,8 @@ only; or (ii)~an independent modulus sector with its own kinetic term and
 stress-energy.  No such sector is constructed here.
 
 The Hubble sphere \(c/H\) is also not generally a particle or event horizon;
-calling it a ``global causal domain'' is physically misleading
-\cite{davis_lineweaver_horizon}.
+calling it a ``global causal domain'' therefore requires an additional causal
+definition \cite{davis_lineweaver_horizon}.
 
 % =============================================================================
 \section{The projector ratio does not determine
@@ -344,11 +372,13 @@ calling it a ``global causal domain'' is physically misleading
 
 \subsection{The identity}
 
-For any unit \(n^{i}\) in three-dimensional Riemannian geometry,
+For any \(n^{i}\) with \(\gamma_{ij}n^i n^j=1\), define the metric
+trace by \(\operatorname{Tr}_{\gamma}(h)=\gamma^{ij}h_{ij}\). Then
 \begin{equation}
   h_{ij}=\gamma_{ij}-n_{i}n_{j}\,,
   \qquad
-  \frac{\operatorname{Tr}(h)}{\operatorname{Tr}(\gamma)}=\frac{2}{3}\,.
+  \frac{\operatorname{Tr}_{\gamma}(h)}{\operatorname{Tr}_{\gamma}(\gamma)}
+  =\frac{2}{3}\,.
   \label{eq:trace}
 \end{equation}
 This is correct, topology-independent, and independent of superfluidity.  It
@@ -370,7 +400,12 @@ A static AQUAL-type force sector \cite{bekenstein_milgrom} may be written
   \Biggr]\,,
   \label{eq:SWF}
 \end{align}
-with \(q=|\nabla\psi|=\sqrt{\gamma^{ij}\partial_{i}\psi\partial_{j}\psi}\).
+Here \(\azero>0\), \(\Cm>0\), and \(\CIR>0\) define the attractive
+positive-coefficient branch used below. The potentials have dimensions
+\([\Phi_N]=[\psi]=\mathrm{L}^2\mathrm{T}^{-2}\), so
+\([|\nabla\psi|]=[\azero]=\mathrm{L}\mathrm{T}^{-2}\), while \(\Cm\)
+and \(\CIR\) are dimensionless. Write
+\(q=|\nabla\psi|=\sqrt{\gamma^{ij}\partial_{i}\psi\partial_{j}\psi}\).
 Neither \(n^{i}\) nor \(h_{ij}\) appears.  The kinetic operator is fully
 three-dimensional and isotropic.  There is therefore no field-theoretic sense
 in which Eq.~\eqref{eq:trace} ``matches'' onto the EFT.
@@ -401,23 +436,17 @@ Under \(\psi\mapsto s\psi\) with \(s>0\),
   \CIR\mapsto\frac{\CIR}{s^{3}}\,,
   \label{eq:rescale}
 \end{equation}
-while \(\Cobs\) is invariant.  Thus \(\Cobs\) is the unique combination of the
-two positive coefficients that can enter observables.  Setting \(\Cm=\CIR\) so
-that \(\Cobs=C\) is a normalization convention, not a calculation of
-\(C=2/3\).
+while \(\Cobs\) is invariant.  More generally, an invariant monomial obeys
+\(-a-3b=0\) for \(\Cm^a\CIR^b\); the response in
+Eq.~\eqref{eq:Cobs} is the positive square root of the corresponding basic
+ratio \(\Cm^3/\CIR\).  Setting \(\Cm=\CIR\) so that \(\Cobs=C\) is a
+normalization convention, not a calculation of \(C=2/3\).
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=\columnwidth]{itsm_23_factor_schematic.pdf}
-\caption{Isotropic degree-of-freedom cartoon only.  It does not appear in
-Eq.~\eqref{eq:SWF} and must not be read as a derivation of \(\Cobs\).}
-\label{fig:cproj}
-\end{figure}
-
-\paragraph{Withdrawn.}
-Any statement that \(\Cobs=2/3\) follows from \(\Tthree\) geometry, from
-Eq.~\eqref{eq:trace}, or from ``matching'' without inserting \(h^{ij}\) into
-the action and integrating out fields.
+\paragraph{Scope of the result.}
+Equation~\eqref{eq:trace} alone does not support a statement that
+\(\Cobs=2/3\) follows from \(\Tthree\) geometry or from ``matching.''  Such a
+derivation would require inserting \(h^{ij}\) into the action, specifying its
+dynamical origin, and integrating out the relevant fields.
 
 \subsection{Compact sources}
 
@@ -426,7 +455,7 @@ localized solutions must use a compensated density contrast (and, if present,
 a zero-mean exchange source).  For a flat periodic metric, general morphology,
 and the local-static baseline with vanishing exchange source,
 \begin{equation}
-  \frac{|\nabla\varphi|}{\azero}\,\nabla\varphi
+  \frac{|\nabla\psi|}{\azero}\,\nabla\psi
   = \frac{\Cm}{\CIR}\,\nabla\Phi_{N} + \nabla\times\mathbf{H}
     + \mathbf{h}_0\,,
   \label{eq:curl}
@@ -442,8 +471,14 @@ approximations for disks.  Neither this decomposition nor compact topology
 derives \(\Cobs=2/3\).
 
 % =============================================================================
-\section{Mutual inconsistency with the empirical RAR scale}
+\section{Conditional RAR normalization check in the spherical baseline}
 \label{sec:rar}
+
+This section is deliberately conditional.  It uses the static AQUAL-type
+action of Eq.~\eqref{eq:SWF}, the positive-mass spherical branch, regular-origin
+flux, and no added homogeneous flux.  It then imposes \(\Cobs=2/3\) as a
+comparator; the preceding section does not derive that value.  The result is
+therefore neither a global periodic-\(\Tthree\) solution nor a disk-galaxy fit.
 
 In the deep-MOND regime, \(g_{P}=\Cobs\sqrt{\azero g_{N}}\) is equivalent to
 \begin{equation}
@@ -461,14 +496,18 @@ and \(\Cobs=2/3\) yields
 \end{equation}
 whereas modern RAR determinations find
 \(a_0\simeq 1.2\times 10^{-10}\,\mathrm{m\,s^{-2}}\)
-\cite{mcgaugh_rar,lelli_rar}, a factor \(\sim 2.4\) discrepancy.
+\cite{mcgaugh_rar,lelli_rar}, a factor \(\sim 2.4\) normalization difference
+under these assumptions.
 Equivalently, asymptotic baryonic Tully--Fisher velocities scale as
 \(v^{4}\propto \Cobs^{2}\azero GM_{b}\); \(\Cobs=2/3\) lowers \(v\) by
-\(\sim 18\%\) at fixed baryonic mass, which is observationally large.
+\(\sim 18\%\) at fixed baryonic mass.  That analytic shift is large enough to
+require an explicit likelihood test, but it is not by itself a completed
+empirical rejection.
 
-Therefore one cannot simultaneously advertise
-\(\azero=c\Hzero/2\pi\) as the empirical MOND scale and impose a universal
-\(\Cobs=2/3\).  Consistent options for any future fit are:
+Within this branch, one cannot simultaneously identify
+\(\azero=c\Hzero/2\pi\) with the empirical MOND scale and impose a universal
+\(\Cobs=2/3\) without changing the effective normalization.  Consistent
+options for a future fit are:
 \begin{enumerate}
 \item set \(\Cobs=1\) (up to the definition of \(\azero\));
 \item redefine the input scale so that \(\Cobs^{2}\azero\) matches the RAR;
@@ -477,7 +516,7 @@ Therefore one cannot simultaneously advertise
 \end{enumerate}
 
 % =============================================================================
-\section{Outlook: retained results and a reconstruction path}
+\section{Evaluation criteria, retained results, and a reconstruction path}
 \label{sec:path}
 
 \subsection{What this note establishes}
@@ -491,15 +530,16 @@ Therefore one cannot simultaneously advertise
   observable coefficient [Eq.~\eqref{eq:Cobs}].
 \item On compact \(\Tthree\), sources must be compensated and disk solutions
   generally admit a curl term [Eq.~\eqref{eq:curl}].
-\item The no-go results of Secs.~\ref{sec:a0}--\ref{sec:rar} rule out the
-  usual cubic geometric packaging of those two numbers.
+\item The scoped incompatibilities in Secs.~\ref{sec:a0}--\ref{sec:rar}
+  constrain the tested cubic geometric packaging of those two numbers without
+  deciding MOND or alternative microscopic constructions as a class.
 \end{enumerate}
 
 \subsection{Path required before any geometric-derivation claim}
 
 A subsequent work that claims to \emph{derive} \(\azero\) or \(\Cobs\) from
 topology or microphysics must close the following chain.  Items are grouped
-by sector; each is a separate technical gate, not a slogan.
+by sector, and each is a separately testable technical requirement.
 
 \paragraph{Microphysics and circulation.}
 \begin{enumerate}
@@ -545,22 +585,34 @@ by sector; each is a separate technical gate, not a slogan.
   (Fig.~\ref{fig:t3}), never an embedded doughnut \(\Ttwo\).
 \end{enumerate}
 
-Until (M1)--(M4), (S1)--(S2), and (E1)--(E3) are closed, the defensible
-scientific product remains exactly what this note provides: present-epoch
-phenomenological matching of Eq.~\eqref{eq:coincidence}, the derived invariant
-\(\Cobs\), and the no-go results for the cubic geometric story---not a
-geometric derivation of the MOND scale.
+Absent evidence closing (M1)--(M4), (S1)--(S2), and (E1)--(E3), this note
+supports present-epoch phenomenological matching of
+Eq.~\eqref{eq:coincidence}, the derived invariant \(\Cobs\), and the scoped
+constraints on the tested cubic construction---not a geometric derivation of
+the MOND scale.
 
 % =============================================================================
 \section*{Code and data availability}
 
+\begingroup
+\raggedright
 Figure~\ref{fig:t3} is produced by
-\texttt{Scripts/itsm\_t3\_fundamental\_domain.py} in the public archive
-\url{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}
-(Zenodo DOI~\href{https://doi.org/10.5281/zenodo.18808348}{10.5281/zenodo.18808348}).
+\texttt{Scripts/itsm\_t3\_fundamental\_domain.py}.
+Source code is available in the
+\href{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}{public GitHub repository}
+and the \href{https://doi.org/10.5281/zenodo.18808348}{project Zenodo archive}.
 Scripts that render an embedded doughnut surface depict \(\Ttwo\) and should
 not be used as \(\Tthree\) schematics.  No new observational catalogue is
 analysed.
+\par
+\endgroup
+
+\section*{Declaration on the use of artificial-intelligence tools}
+
+Artificial-intelligence-assisted tools were used for editorial drafting,
+source-code assistance, and checks of symbolic and numerical consistency.
+The author independently reviewed the manuscript, equations, cited sources,
+and generated artifacts and accepts full responsibility for the content.
 
 \begin{acknowledgments}
 The author thanks colleagues who pressed for explicit claim status and for

@@ -1,0 +1,704 @@
+{
+  "Euler_sources_before_shift": {
+    "Em": "0",
+    "LambdaU": "0",
+    "Mxx": "-(B_x**2*MP2 - B_x**2*MU2*c1 - B_x**2*MU2*c3 + 2*B_x*MU2*W_x*c1 + 2*B_x*MU2*W_x*c3 - B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 - 2*B_z*MU2*W_z*c1 - 2*B_z*MU2*W_z*c3 - 8*H**2*MU2*W**2*a**2*c1 - 18*H**2*MU2*W**2*a**2*c2 - 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 - 8*H*MU2*W*W_t*a**2*c1 - 24*H*MU2*W*W_t*a**2*c2 - 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 4*Hdot*MU2*W**2*a**2*c1 - 12*Hdot*MU2*W**2*a**2*c2 - 4*Hdot*MU2*W**2*a**2*c3 - 2*K_Q*W**2*a**2*psi_dot**2 - 4*MU2*W*W_tt*a**2*c2 - 2*MU2*W_t**2*a**2*c1 - 4*MU2*W_t**2*a**2*c2 - 2*MU2*W_t**2*a**2*c4 - 2*MU2*W_x**2*c1 + 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)",
+    "Mxy": "0",
+    "Mxz": "(-B_x*B_z*MP2 + B_x*B_z*MU2*c1 + B_x*B_z*MU2*c3 - B_x*MU2*W_z*c1 - B_x*MU2*W_z*c3 - B_z*MU2*W_x*c1 - B_z*MU2*W_x*c3 + 2*MU2*W_x*W_z*c1)/(2*a**2)",
+    "Myy": "-(-3*B_x**2*MP2 + 3*B_x**2*MU2*c1 + 3*B_x**2*MU2*c3 - 6*B_x*MU2*W_x*c1 - 6*B_x*MU2*W_x*c3 - 3*B_z**2*MP2 + 3*B_z**2*MU2*c1 + 3*B_z**2*MU2*c3 - 6*B_z*MU2*W_z*c1 - 6*B_z*MU2*W_z*c3 + 12*H**2*MU2*W**2*a**2*c1 - 18*H**2*MU2*W**2*a**2*c2 - 6*H**2*MU2*W**2*a**2*c3 + 18*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c1 - 24*H*MU2*W*W_t*a**2*c2 - 16*H*MU2*W*W_t*a**2*c3 + 28*H*MU2*W*W_t*a**2*c4 - 24*Hdot*MU2*W**2*a**2*c2 - 8*Hdot*MU2*W**2*a**2*c3 + 8*Hdot*MU2*W**2*a**2*c4 - 6*K_Q*W**2*a**2*psi_dot**2 + 4*MU2*W*W_tt*a**2*c1 - 4*MU2*W*W_tt*a**2*c2 - 4*MU2*W*W_tt*a**2*c3 + 8*MU2*W*W_tt*a**2*c4 - 4*MU2*W*W_xx*c1 + 4*MU2*W*W_xx*c3 - 4*MU2*W*W_zz*c1 + 4*MU2*W*W_zz*c3 - 2*MU2*W_t**2*a**2*c1 - 4*MU2*W_t**2*a**2*c2 - 4*MU2*W_t**2*a**2*c3 + 2*MU2*W_t**2*a**2*c4 + 2*MU2*W_x**2*c1 + 4*MU2*W_x**2*c3 + 2*MU2*W_z**2*c1 + 4*MU2*W_z**2*c3 + 6*W**2*a**2*u0**2*v_dot**2*zeta - 12*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 6*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)",
+    "Myz": "0",
+    "Mzz": "-(-B_x**2*MP2 + B_x**2*MU2*c1 + B_x**2*MU2*c3 - 2*B_x*MU2*W_x*c1 - 2*B_x*MU2*W_x*c3 + B_z**2*MP2 - B_z**2*MU2*c1 - B_z**2*MU2*c3 + 2*B_z*MU2*W_z*c1 + 2*B_z*MU2*W_z*c3 - 8*H**2*MU2*W**2*a**2*c1 - 18*H**2*MU2*W**2*a**2*c2 - 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 - 8*H*MU2*W*W_t*a**2*c1 - 24*H*MU2*W*W_t*a**2*c2 - 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 4*Hdot*MU2*W**2*a**2*c1 - 12*Hdot*MU2*W**2*a**2*c2 - 4*Hdot*MU2*W**2*a**2*c3 - 2*K_Q*W**2*a**2*psi_dot**2 - 4*MU2*W*W_tt*a**2*c2 - 2*MU2*W_t**2*a**2*c1 - 4*MU2*W_t**2*a**2*c2 - 2*MU2*W_t**2*a**2*c4 + 2*MU2*W_x**2*c1 - 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)",
+    "Pi": "-K_Q*W*(3*H*W*psi_dot + W*psi_ddot + 2*W_t*psi_dot)",
+    "Sx": "-MU2*(2*H*W*W_x*c1 + 3*H*W*W_x*c2 + H*W*W_x*c3 + H*W*W_x*c4 + W*W_tx*c2 + W_t*W_x*c1 + W_t*W_x*c2 + W_t*W_x*c4)/a",
+    "Sy": "0",
+    "Sz": "-MU2*(2*H*W*W_z*c1 + 3*H*W*W_z*c2 + H*W*W_z*c3 + H*W*W_z*c4 + W*W_tz*c2 + W_t*W_z*c1 + W_t*W_z*c2 + W_t*W_z*c4)/a",
+    "T": "0",
+    "Vx": "MU2*(B_tx*W*c1 - B_tx*W*c3 + 2*B_tx*W*c4 - 2*B_x*H*W*c3 + 2*B_x*H*W*c4 + 2*B_x*W_t*c1 + 2*B_x*W_t*c4 + 4*H*W*W_x*c1 + 6*H*W*W_x*c2 + 6*H*W*W_x*c3 + 2*H*W*W_x*c4 + 2*W*W_tx*c2 + 2*W*W_tx*c3 + 2*W_t*W_x*c2 + 2*W_t*W_x*c3 + 2*W_t*W_x*c4)/(2*a)",
+    "Vy": "0",
+    "Vz": "MU2*(B_tz*W*c1 - B_tz*W*c3 + 2*B_tz*W*c4 - 2*B_z*H*W*c3 + 2*B_z*H*W*c4 + 2*B_z*W_t*c1 + 2*B_z*W_t*c4 + 4*H*W*W_z*c1 + 6*H*W*W_z*c2 + 6*H*W*W_z*c3 + 2*H*W*W_z*c4 + 2*W*W_tz*c2 + 2*W*W_tz*c3 + 2*W_t*W_z*c2 + 2*W_t*W_z*c3 + 2*W_t*W_z*c4)/(2*a)",
+    "Z": "W*b*(2*H*W*psi_dot + W*psi_ddot + W_t*psi_dot)",
+    "alpha": "(-B_x**2*MP2 + B_x**2*MU2*c1 + B_x**2*MU2*c3 + 2*B_x*MU2*W_x*c1 - 2*B_x*MU2*W_x*c3 + 4*B_x*MU2*W_x*c4 + 2*B_xx*MU2*W*c1 - 2*B_xx*MU2*W*c3 + 4*B_xx*MU2*W*c4 - B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 + 2*B_z*MU2*W_z*c1 - 2*B_z*MU2*W_z*c3 + 4*B_z*MU2*W_z*c4 + 2*B_zz*MU2*W*c1 - 2*B_zz*MU2*W*c3 + 4*B_zz*MU2*W*c4 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 + 4*MU2*W*W_xx*c3 + 4*MU2*W*W_zz*c3 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 - 2*MU2*W_x**2*c1 + 4*MU2*W_x**2*c3 - 2*MU2*W_z**2*c1 + 4*MU2*W_z**2*c3 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(4*a**2)",
+    "dr": "0",
+    "du": "-W*zeta*(3*H*W*u0*v0*v_dot - 3*H*W*u_dot*v0**2 + W*u0*v0*v_ddot + 2*W*u0*v_dot**2 - W*u_ddot*v0**2 - 2*W*u_dot*v0*v_dot + 2*W_t*u0*v0*v_dot - 2*W_t*u_dot*v0**2)",
+    "dv": "W*zeta*(3*H*W*u0**2*v_dot - 3*H*W*u0*u_dot*v0 + W*u0**2*v_ddot - W*u0*u_ddot*v0 + 2*W*u0*u_dot*v_dot - 2*W*u_dot**2*v0 + 2*W_t*u0**2*v_dot - 2*W_t*u0*u_dot*v0)",
+    "nu": "-MU2*(B_x**2*c1 + B_x**2*c3 - 2*B_x*W_x*c1 + 2*B_xx*W*c3 + B_z**2*c1 + B_z**2*c3 - 2*B_z*W_z*c1 + 2*B_zz*W*c3 + 4*H**2*W**2*a**2*c1 - 4*H**2*W**2*a**2*c4 - 6*H*W*W_t*a**2*c2 - 6*H*W*W_t*a**2*c3 - 8*H*W*W_t*a**2*c4 - 6*Hdot*W**2*a**2*c2 - 2*Hdot*W**2*a**2*c3 - 2*W*W_tt*a**2*c2 - 2*W*W_tt*a**2*c3 - 2*W_t**2*a**2*c1 - 2*W_t**2*a**2*c2 - 2*W_t**2*a**2*c3 - 4*W_t**2*a**2*c4 + 2*W_x**2*c1 + 2*W_z**2*c1)/(2*a**2)"
+  },
+  "WWR_functional": "-(B_x**2*MP2*Mxx - 3*B_x**2*MP2*Myy - B_x**2*MP2*Mzz + 2*B_x**2*MP2*alpha - B_x**2*MU2*Mxx*c1 - B_x**2*MU2*Mxx*c3 + 3*B_x**2*MU2*Myy*c1 + 3*B_x**2*MU2*Myy*c3 + B_x**2*MU2*Mzz*c1 + B_x**2*MU2*Mzz*c3 - 2*B_x**2*MU2*alpha*c1 - 2*B_x**2*MU2*alpha*c3 + 4*B_x**2*MU2*c1*nu + 4*B_x**2*MU2*c3*nu + 4*B_x*B_z*MP2*Mxz - 4*B_x*B_z*MU2*Mxz*c1 - 4*B_x*B_z*MU2*Mxz*c3 + 8*B_x*H*MU2*Vx*W*a*c1 + 8*B_x*H*MU2*Vx*W*a*c4 + 2*B_x*MU2*Mxx*W_x*c1 + 2*B_x*MU2*Mxx*W_x*c3 + 4*B_x*MU2*Mxz*W_z*c1 + 4*B_x*MU2*Mxz*W_z*c3 - 6*B_x*MU2*Myy*W_x*c1 - 6*B_x*MU2*Myy*W_x*c3 - 2*B_x*MU2*Mzz*W_x*c1 - 2*B_x*MU2*Mzz*W_x*c3 - 4*B_x*MU2*Vx*W_t*a*c1 - 4*B_x*MU2*Vx*W_t*a*c3 + 4*B_x*MU2*Vx_t*W*a*c1 - 4*B_x*MU2*Vx_t*W*a*c3 + 8*B_x*MU2*Vx_t*W*a*c4 + 4*B_x*MU2*W*alpha_x*c1 - 4*B_x*MU2*W*alpha_x*c3 + 8*B_x*MU2*W*alpha_x*c4 - 8*B_x*MU2*W*c3*nu_x - 8*B_x*MU2*W_x*c1*nu - 8*B_x*MU2*W_x*c3*nu - B_z**2*MP2*Mxx - 3*B_z**2*MP2*Myy + B_z**2*MP2*Mzz + 2*B_z**2*MP2*alpha + B_z**2*MU2*Mxx*c1 + B_z**2*MU2*Mxx*c3 + 3*B_z**2*MU2*Myy*c1 + 3*B_z**2*MU2*Myy*c3 - B_z**2*MU2*Mzz*c1 - B_z**2*MU2*Mzz*c3 - 2*B_z**2*MU2*alpha*c1 - 2*B_z**2*MU2*alpha*c3 + 4*B_z**2*MU2*c1*nu + 4*B_z**2*MU2*c3*nu + 8*B_z*H*MU2*Vz*W*a*c1 + 8*B_z*H*MU2*Vz*W*a*c4 - 2*B_z*MU2*Mxx*W_z*c1 - 2*B_z*MU2*Mxx*W_z*c3 + 4*B_z*MU2*Mxz*W_x*c1 + 4*B_z*MU2*Mxz*W_x*c3 - 6*B_z*MU2*Myy*W_z*c1 - 6*B_z*MU2*Myy*W_z*c3 + 2*B_z*MU2*Mzz*W_z*c1 + 2*B_z*MU2*Mzz*W_z*c3 - 4*B_z*MU2*Vz*W_t*a*c1 - 4*B_z*MU2*Vz*W_t*a*c3 + 4*B_z*MU2*Vz_t*W*a*c1 - 4*B_z*MU2*Vz_t*W*a*c3 + 8*B_z*MU2*Vz_t*W*a*c4 + 4*B_z*MU2*W*alpha_z*c1 - 4*B_z*MU2*W*alpha_z*c3 + 8*B_z*MU2*W*alpha_z*c4 - 8*B_z*MU2*W*c3*nu_z - 8*B_z*MU2*W_z*c1*nu - 8*B_z*MU2*W_z*c3*nu + 4*H**2*MU2*Mxx*W**2*a**2*c1 + 18*H**2*MU2*Mxx*W**2*a**2*c2 + 6*H**2*MU2*Mxx*W**2*a**2*c3 - 2*H**2*MU2*Mxx*W**2*a**2*c4 + 12*H**2*MU2*Myy*W**2*a**2*c1 + 54*H**2*MU2*Myy*W**2*a**2*c2 + 18*H**2*MU2*Myy*W**2*a**2*c3 - 6*H**2*MU2*Myy*W**2*a**2*c4 + 4*H**2*MU2*Mzz*W**2*a**2*c1 + 18*H**2*MU2*Mzz*W**2*a**2*c2 + 6*H**2*MU2*Mzz*W**2*a**2*c3 - 2*H**2*MU2*Mzz*W**2*a**2*c4 - 8*H**2*MU2*W**2*a**2*alpha*c1 - 36*H**2*MU2*W**2*a**2*alpha*c2 - 12*H**2*MU2*W**2*a**2*alpha*c3 + 4*H**2*MU2*W**2*a**2*alpha*c4 + 16*H**2*MU2*W**2*a**2*c1*nu + 72*H**2*MU2*W**2*a**2*c2*nu + 24*H**2*MU2*W**2*a**2*c3*nu - 16*H**2*MU2*W**2*a**2*c4*nu + 12*H*MU2*Mxx*W*W_t*a**2*c2 + 4*H*MU2*Mxx*W*W_t*a**2*c3 - 4*H*MU2*Mxx*W*W_t*a**2*c4 + 4*H*MU2*Mxx_t*W**2*a**2*c1 + 12*H*MU2*Mxx_t*W**2*a**2*c2 + 4*H*MU2*Mxx_t*W**2*a**2*c3 + 36*H*MU2*Myy*W*W_t*a**2*c2 + 12*H*MU2*Myy*W*W_t*a**2*c3 - 12*H*MU2*Myy*W*W_t*a**2*c4 + 24*H*MU2*Myy_t*W**2*a**2*c2 + 8*H*MU2*Myy_t*W**2*a**2*c3 - 8*H*MU2*Myy_t*W**2*a**2*c4 + 12*H*MU2*Mzz*W*W_t*a**2*c2 + 4*H*MU2*Mzz*W*W_t*a**2*c3 - 4*H*MU2*Mzz*W*W_t*a**2*c4 + 4*H*MU2*Mzz_t*W**2*a**2*c1 + 12*H*MU2*Mzz_t*W**2*a**2*c2 + 4*H*MU2*Mzz_t*W**2*a**2*c3 - 24*H*MU2*Sx*W*W_x*a*c2 - 8*H*MU2*Sx*W*W_x*a*c3 + 8*H*MU2*Sx*W*W_x*a*c4 - 8*H*MU2*Sx_x*W**2*a*c1 - 24*H*MU2*Sx_x*W**2*a*c2 - 8*H*MU2*Sx_x*W**2*a*c3 - 24*H*MU2*Sz*W*W_z*a*c2 - 8*H*MU2*Sz*W*W_z*a*c3 + 8*H*MU2*Sz*W*W_z*a*c4 - 8*H*MU2*Sz_z*W**2*a*c1 - 24*H*MU2*Sz_z*W**2*a*c2 - 8*H*MU2*Sz_z*W**2*a*c3 - 8*H*MU2*Vx*W*W_x*a*c1 - 8*H*MU2*Vx*W*W_x*a*c4 + 4*H*MU2*Vx_x*W**2*a*c1 + 12*H*MU2*Vx_x*W**2*a*c2 + 4*H*MU2*Vx_x*W**2*a*c3 - 8*H*MU2*Vz*W*W_z*a*c1 - 8*H*MU2*Vz*W*W_z*a*c4 + 4*H*MU2*Vz_z*W**2*a*c1 + 12*H*MU2*Vz_z*W**2*a*c2 + 4*H*MU2*Vz_z*W**2*a*c3 + 24*H*MU2*W**2*a**2*c2*nu_t + 8*H*MU2*W**2*a**2*c3*nu_t - 24*H*MU2*W*W_t*a**2*alpha*c2 - 8*H*MU2*W*W_t*a**2*alpha*c3 + 8*H*MU2*W*W_t*a**2*alpha*c4 + 48*H*MU2*W*W_t*a**2*c2*nu + 16*H*MU2*W*W_t*a**2*c3*nu - 32*H*MU2*W*W_t*a**2*c4*nu + 8*H*W**2*Z*a**2*b*psi_dot - 2*K_Q*Mxx*W**2*a**2*psi_dot**2 - 6*K_Q*Myy*W**2*a**2*psi_dot**2 - 2*K_Q*Mzz*W**2*a**2*psi_dot**2 - 8*K_Q*Pi_t*W**2*a**2*psi_dot + 4*K_Q*W**2*a**2*alpha*psi_dot**2 - 2*MU2*Mxx*W_t**2*a**2*c1 - 2*MU2*Mxx*W_t**2*a**2*c4 - 2*MU2*Mxx*W_x**2*c1 + 2*MU2*Mxx*W_z**2*c1 + 4*MU2*Mxx_t*W*W_t*a**2*c2 - 8*MU2*Mxz*W_x*W_z*c1 - 6*MU2*Myy*W_t**2*a**2*c1 - 6*MU2*Myy*W_t**2*a**2*c4 + 6*MU2*Myy*W_x**2*c1 + 6*MU2*Myy*W_z**2*c1 - 4*MU2*Myy_t*W*W_t*a**2*c1 + 4*MU2*Myy_t*W*W_t*a**2*c2 + 4*MU2*Myy_t*W*W_t*a**2*c3 - 8*MU2*Myy_t*W*W_t*a**2*c4 + 4*MU2*Myy_x*W*W_x*c1 - 4*MU2*Myy_x*W*W_x*c3 + 4*MU2*Myy_z*W*W_z*c1 - 4*MU2*Myy_z*W*W_z*c3 - 2*MU2*Mzz*W_t**2*a**2*c1 - 2*MU2*Mzz*W_t**2*a**2*c4 + 2*MU2*Mzz*W_x**2*c1 - 2*MU2*Mzz*W_z**2*c1 + 4*MU2*Mzz_t*W*W_t*a**2*c2 + 8*MU2*Sx*W_t*W_x*a*c1 + 8*MU2*Sx*W_t*W_x*a*c4 - 8*MU2*Sx_x*W*W_t*a*c2 + 8*MU2*Sz*W_t*W_z*a*c1 + 8*MU2*Sz*W_t*W_z*a*c4 - 8*MU2*Sz_z*W*W_t*a*c2 - 8*MU2*Vx*W_t*W_x*a*c4 + 8*MU2*Vx_t*W*W_x*a*c3 + 8*MU2*Vx_x*W*W_t*a*c2 - 8*MU2*Vz*W_t*W_z*a*c4 + 8*MU2*Vz_t*W*W_z*a*c3 + 8*MU2*Vz_z*W*W_t*a*c2 + 8*MU2*W*W_t*a**2*c2*nu_t + 8*MU2*W*W_t*a**2*c3*nu_t + 8*MU2*W*W_x*alpha_x*c3 + 8*MU2*W*W_z*alpha_z*c3 + 4*MU2*W_t**2*a**2*alpha*c1 + 4*MU2*W_t**2*a**2*alpha*c4 - 8*MU2*W_t**2*a**2*c1*nu - 16*MU2*W_t**2*a**2*c4*nu + 4*MU2*W_x**2*alpha*c1 + 8*MU2*W_x**2*c1*nu + 4*MU2*W_z**2*alpha*c1 + 8*MU2*W_z**2*c1*nu + 2*Mxx*W**2*a**2*u0**2*v_dot**2*zeta - 4*Mxx*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*Mxx*W**2*a**2*u_dot**2*v0**2*zeta + 6*Myy*W**2*a**2*u0**2*v_dot**2*zeta - 12*Myy*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 6*Myy*W**2*a**2*u_dot**2*v0**2*zeta + 2*Mzz*W**2*a**2*u0**2*v_dot**2*zeta - 4*Mzz*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*Mzz*W**2*a**2*u_dot**2*v0**2*zeta + 8*W**2*Z_t*a**2*b*psi_dot - 4*W**2*a**2*alpha*u0**2*v_dot**2*zeta + 8*W**2*a**2*alpha*u0*u_dot*v0*v_dot*zeta - 4*W**2*a**2*alpha*u_dot**2*v0**2*zeta + 8*W**2*a**2*du*u0*v_dot**2*zeta - 8*W**2*a**2*du*u_dot*v0*v_dot*zeta - 8*W**2*a**2*du_t*u0*v0*v_dot*zeta + 8*W**2*a**2*du_t*u_dot*v0**2*zeta - 8*W**2*a**2*dv*u0*u_dot*v_dot*zeta + 8*W**2*a**2*dv*u_dot**2*v0*zeta + 8*W**2*a**2*dv_t*u0**2*v_dot*zeta - 8*W**2*a**2*dv_t*u0*u_dot*v0*zeta + 8*W*W_t*Z*a**2*b*psi_dot)/(8*a**2)",
+  "Ward_residuals": {
+    "temporal": "0",
+    "x": "0",
+    "z": "0"
+  },
+  "families": {
+    "archived_G3": {
+      "cV2": "(17*eta - 256)/(40*(eta - 8))",
+      "f2": "eta/6",
+      "frame_mass_squared": "2*(13*H**2 + 13*Hdot - 117*psi_dot**2 + 3*u0**2*v_dot**2 - 6*u0*u_dot*v0*v_dot + 3*u_dot**2*v0**2)/13",
+      "intrinsic_analytic_fourth_coefficient": "-W**2*eta*(20*W_t**2*a**2*eta**2 - 320*W_t**2*a**2*eta + 1280*W_t**2*a**2 - 69*W_x**2*eta**2 + 1080*W_x**2*eta - 6144*W_x**2 - 69*W_z**2*eta**2 + 1080*W_z**2*eta - 6144*W_z**2)/(1440*a**2*(eta - 8)**2)",
+      "parameter_map": {
+        "A": "2*eta**(3/2)/7",
+        "K_Q": "3*eta",
+        "MP2": "1",
+        "MU2": "2*eta/3",
+        "b": "5*eta/11",
+        "beta": "2*eta**2/5",
+        "c1": "1/5",
+        "c2": "-7/48",
+        "c3": "-1/80",
+        "c4": "1/20",
+        "zeta": "eta/13"
+      },
+      "quadratic_action": "-eta*(-2080*H**2*W**2*a**2*eta + 16640*H**2*W**2*a**2 - 2080*H*W*W_t*a**2*eta + 16640*H*W*W_t*a**2 - 9360*W**2*a**2*eta*psi_dot**2 + 240*W**2*a**2*eta*u0**2*v_dot**2 - 480*W**2*a**2*eta*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 - 520*W_t**2*a**2*eta + 4160*W_t**2*a**2 + 221*W_x**2*eta - 3328*W_x**2 + 221*W_z**2*eta - 3328*W_z**2)/(6240*a**2*(eta - 8))",
+      "response_coefficients": {
+        "Em": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "LambdaU": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Mxx": {
+          "t": "W*eta*(12*H*W + 7*W_t)/144",
+          "value": "-eta*(-2080*H**2*W**2*a**2*eta + 16640*H**2*W**2*a**2 - 2080*H*W*W_t*a**2*eta + 16640*H*W*W_t*a**2 - 9360*W**2*a**2*eta*psi_dot**2 + 240*W**2*a**2*eta*u0**2*v_dot**2 - 480*W**2*a**2*eta*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 - 520*W_t**2*a**2*eta + 4160*W_t**2*a**2 - 221*W_x**2*eta + 3328*W_x**2 + 221*W_z**2*eta - 3328*W_z**2)/(12480*a**2*(eta - 8))",
+          "x": "0",
+          "z": "0"
+        },
+        "Mxy": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Mxz": {
+          "t": "0",
+          "value": "W_x*W_z*eta*(17*eta - 256)/(240*a**2*(eta - 8))",
+          "x": "0",
+          "z": "0"
+        },
+        "Myy": {
+          "t": "W*eta*(24*H*W + 11*W_t)/72",
+          "value": "-eta*(-2080*H**2*W**2*a**2*eta + 16640*H**2*W**2*a**2 - 2080*H*W*W_t*a**2*eta + 16640*H*W*W_t*a**2 - 9360*W**2*a**2*eta*psi_dot**2 + 240*W**2*a**2*eta*u0**2*v_dot**2 - 480*W**2*a**2*eta*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 - 520*W_t**2*a**2*eta + 4160*W_t**2*a**2 + 221*W_x**2*eta - 3328*W_x**2 + 221*W_z**2*eta - 3328*W_z**2)/(4160*a**2*(eta - 8))",
+          "x": "-17*W*W_x*eta/(240*a**2)",
+          "z": "-17*W*W_z*eta/(240*a**2)"
+        },
+        "Myz": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Mzz": {
+          "t": "W*eta*(12*H*W + 7*W_t)/144",
+          "value": "-eta*(-2080*H**2*W**2*a**2*eta + 16640*H**2*W**2*a**2 - 2080*H*W*W_t*a**2*eta + 16640*H*W*W_t*a**2 - 9360*W**2*a**2*eta*psi_dot**2 + 240*W**2*a**2*eta*u0**2*v_dot**2 - 480*W**2*a**2*eta*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 - 520*W_t**2*a**2*eta + 4160*W_t**2*a**2 + 221*W_x**2*eta - 3328*W_x**2 - 221*W_z**2*eta + 3328*W_z**2)/(12480*a**2*(eta - 8))",
+          "x": "0",
+          "z": "0"
+        },
+        "Pi": {
+          "t": "3*W**2*eta*psi_dot",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Sx": {
+          "t": "0",
+          "value": "-W_x*eta*(2*H*W + W_t)/(6*a)",
+          "x": "-W*eta*(12*H*W + 7*W_t)/(72*a)",
+          "z": "0"
+        },
+        "Sy": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Sz": {
+          "t": "0",
+          "value": "-W_z*eta*(2*H*W + W_t)/(6*a)",
+          "x": "0",
+          "z": "-W*eta*(12*H*W + 7*W_t)/(72*a)"
+        },
+        "T": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Vx": {
+          "t": "-W*W_x*eta*(23*eta + 16)/(240*a*(eta - 8))",
+          "value": "-W_x*eta*(320*H*W - 23*W_t*eta + 64*W_t)/(240*a*(eta - 8))",
+          "x": "W*eta*(6*H*W + 7*W_t)/(72*a)",
+          "z": "0"
+        },
+        "Vy": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Vz": {
+          "t": "-W*W_z*eta*(23*eta + 16)/(240*a*(eta - 8))",
+          "value": "-W_z*eta*(320*H*W - 23*W_t*eta + 64*W_t)/(240*a*(eta - 8))",
+          "x": "0",
+          "z": "W*eta*(6*H*W + 7*W_t)/(72*a)"
+        },
+        "Z": {
+          "t": "-5*W**2*eta*psi_dot/11",
+          "value": "-5*W*eta*psi_dot*(H*W + W_t)/11",
+          "x": "0",
+          "z": "0"
+        },
+        "alpha": {
+          "t": "0",
+          "value": "eta*(-2080*H**2*W**2*a**2*eta + 16640*H**2*W**2*a**2 - 2080*H*W*W_t*a**2*eta + 16640*H*W*W_t*a**2 - 9360*W**2*a**2*eta*psi_dot**2 + 240*W**2*a**2*eta*u0**2*v_dot**2 - 480*W**2*a**2*eta*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 - 520*W_t**2*a**2*eta + 4160*W_t**2*a**2 - 221*W_x**2*eta + 3328*W_x**2 - 221*W_z**2*eta + 3328*W_z**2)/(6240*a**2*(eta - 8))",
+          "x": "-W*W_x*eta*(23*eta + 16)/(240*a**2*(eta - 8))",
+          "z": "-W*W_z*eta*(23*eta + 16)/(240*a**2*(eta - 8))"
+        },
+        "dr": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "du": {
+          "t": "W**2*eta*v0*(u0*v_dot - u_dot*v0)/13",
+          "value": "-W**2*eta*v_dot*(u0*v_dot - u_dot*v0)/13",
+          "x": "0",
+          "z": "0"
+        },
+        "dv": {
+          "t": "-W**2*eta*u0*(u0*v_dot - u_dot*v0)/13",
+          "value": "W**2*eta*u_dot*(u0*v_dot - u_dot*v0)/13",
+          "x": "0",
+          "z": "0"
+        },
+        "nu": {
+          "t": "W*eta*(54*H*W + 19*W_t)/180",
+          "value": "eta*(168*H**2*W**2*a**2*eta**2 - 2688*H**2*W**2*a**2*eta + 10752*H**2*W**2*a**2 + 176*H*W*W_t*a**2*eta**2 - 2816*H*W*W_t*a**2*eta + 11264*H*W*W_t*a**2 + 48*W_t**2*a**2*eta**2 - 768*W_t**2*a**2*eta + 3072*W_t**2*a**2 - 17*W_x**2*eta**2 + 272*W_x**2*eta - 2048*W_x**2 - 17*W_z**2*eta**2 + 272*W_z**2*eta - 2048*W_z**2)/(240*a**2*(eta - 8)**2)",
+          "x": "-W*W_x*eta**2/(120*a**2*(eta - 8))",
+          "z": "-W*W_z*eta**2/(120*a**2*(eta - 8))"
+        }
+      },
+      "scope": "Generic action first, then diagnostic family; no microscopic matching or physical amplitude",
+      "sigma": "eta/(eta - 8)"
+    },
+    "new_B1_frame": {
+      "cV2": "4/5",
+      "f2": "eta/6",
+      "frame_mass_squared": "(130*H**2 - 13*Hdot - 1170*psi_dot**2 + 30*u0**2*v_dot**2 - 60*u0*u_dot*v0*v_dot + 30*u_dot**2*v0**2)/65",
+      "intrinsic_analytic_fourth_coefficient": "-W**2*eta*(W_t**2*a**2 - 2*W_x**2 - 2*W_z**2)/(30*a**2)",
+      "parameter_map": {
+        "A": "2*eta**(3/2)/7",
+        "K_Q": "3*eta",
+        "MP2": "1",
+        "MU2": "2*eta/3",
+        "b": "5*eta/11",
+        "beta": "2*eta**2/5",
+        "c1": "1/5",
+        "c2": "1/10",
+        "c3": "-1/5",
+        "c4": "1/20",
+        "zeta": "eta/13"
+      },
+      "quadratic_action": "-eta*(169*H**2*W**2*a**2 + 26*H*W*W_t*a**2 - 1170*W**2*a**2*psi_dot**2 + 30*W**2*a**2*u0**2*v_dot**2 - 60*W**2*a**2*u0*u_dot*v0*v_dot + 30*W**2*a**2*u_dot**2*v0**2 - 65*W_t**2*a**2 + 52*W_x**2 + 52*W_z**2)/(780*a**2)",
+      "response_coefficients": {
+        "Em": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "LambdaU": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Mxx": {
+          "t": "-W*eta*(3*H*W + W_t)/30",
+          "value": "-eta*(169*H**2*W**2*a**2 + 26*H*W*W_t*a**2 - 1170*W**2*a**2*psi_dot**2 + 30*W**2*a**2*u0**2*v_dot**2 - 60*W**2*a**2*u0*u_dot*v0*v_dot + 30*W**2*a**2*u_dot**2*v0**2 - 65*W_t**2*a**2 - 52*W_x**2 + 52*W_z**2)/(1560*a**2)",
+          "x": "0",
+          "z": "0"
+        },
+        "Mxy": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Mxz": {
+          "t": "0",
+          "value": "2*W_x*W_z*eta/(15*a**2)",
+          "x": "0",
+          "z": "0"
+        },
+        "Myy": {
+          "t": "-W*eta*(H*W - 4*W_t)/30",
+          "value": "-eta*(169*H**2*W**2*a**2 + 26*H*W*W_t*a**2 - 1170*W**2*a**2*psi_dot**2 + 30*W**2*a**2*u0**2*v_dot**2 - 60*W**2*a**2*u0*u_dot*v0*v_dot + 30*W**2*a**2*u_dot**2*v0**2 - 65*W_t**2*a**2 + 52*W_x**2 + 52*W_z**2)/(520*a**2)",
+          "x": "-2*W*W_x*eta/(15*a**2)",
+          "z": "-2*W*W_z*eta/(15*a**2)"
+        },
+        "Myz": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Mzz": {
+          "t": "-W*eta*(3*H*W + W_t)/30",
+          "value": "-eta*(169*H**2*W**2*a**2 + 26*H*W*W_t*a**2 - 1170*W**2*a**2*psi_dot**2 + 30*W**2*a**2*u0**2*v_dot**2 - 60*W**2*a**2*u0*u_dot*v0*v_dot + 30*W**2*a**2*u_dot**2*v0**2 - 65*W_t**2*a**2 + 52*W_x**2 - 52*W_z**2)/(1560*a**2)",
+          "x": "0",
+          "z": "0"
+        },
+        "Pi": {
+          "t": "3*W**2*eta*psi_dot",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Sx": {
+          "t": "0",
+          "value": "W_x*eta*(H*W - 5*W_t)/(30*a)",
+          "x": "W*eta*(3*H*W + W_t)/(15*a)",
+          "z": "0"
+        },
+        "Sy": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Sz": {
+          "t": "0",
+          "value": "W_z*eta*(H*W - 5*W_t)/(30*a)",
+          "x": "0",
+          "z": "W*eta*(3*H*W + W_t)/(15*a)"
+        },
+        "T": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Vx": {
+          "t": "2*W*W_x*eta/(15*a)",
+          "value": "W_x*eta*(5*H*W + W_t)/(30*a)",
+          "x": "-W*eta*(3*H*W + 2*W_t)/(30*a)",
+          "z": "0"
+        },
+        "Vy": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Vz": {
+          "t": "2*W*W_z*eta/(15*a)",
+          "value": "W_z*eta*(5*H*W + W_t)/(30*a)",
+          "x": "0",
+          "z": "-W*eta*(3*H*W + 2*W_t)/(30*a)"
+        },
+        "Z": {
+          "t": "-5*W**2*eta*psi_dot/11",
+          "value": "-5*W*eta*psi_dot*(H*W + W_t)/11",
+          "x": "0",
+          "z": "0"
+        },
+        "alpha": {
+          "t": "0",
+          "value": "eta*(169*H**2*W**2*a**2 + 26*H*W*W_t*a**2 - 1170*W**2*a**2*psi_dot**2 + 30*W**2*a**2*u0**2*v_dot**2 - 60*W**2*a**2*u0*u_dot*v0*v_dot + 30*W**2*a**2*u_dot**2*v0**2 - 65*W_t**2*a**2 - 52*W_x**2 - 52*W_z**2)/(780*a**2)",
+          "x": "2*W*W_x*eta/(15*a**2)",
+          "z": "2*W*W_z*eta/(15*a**2)"
+        },
+        "dr": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "du": {
+          "t": "W**2*eta*v0*(u0*v_dot - u_dot*v0)/13",
+          "value": "-W**2*eta*v_dot*(u0*v_dot - u_dot*v0)/13",
+          "x": "0",
+          "z": "0"
+        },
+        "dv": {
+          "t": "-W**2*eta*u0*(u0*v_dot - u_dot*v0)/13",
+          "value": "W**2*eta*u_dot*(u0*v_dot - u_dot*v0)/13",
+          "x": "0",
+          "z": "0"
+        },
+        "nu": {
+          "t": "-W*eta*(H*W - W_t)/15",
+          "value": "-eta*(6*H**2*W**2*a**2 - 3*W_t**2*a**2 + 2*W_x**2 + 2*W_z**2)/(15*a**2)",
+          "x": "0",
+          "z": "0"
+        }
+      },
+      "scope": "Generic action first, then diagnostic family; no microscopic matching or physical amplitude",
+      "sigma": "0"
+    },
+    "new_hierarchical": {
+      "cV2": "-(15*eta**3 - 32*eta**2 + 256)/(40*(eta**2 - 8))",
+      "f2": "eta/6",
+      "frame_mass_squared": "(520*H**2 - 195*Hdot*eta - 52*Hdot - 4680*psi_dot**2 + 120*u0**2*v_dot**2 - 240*u0*u_dot*v0*v_dot + 120*u_dot**2*v0**2)/260",
+      "intrinsic_analytic_fourth_coefficient": "-W**2*eta*(30*W_t**2*a**2*eta**5 + 16*W_t**2*a**2*eta**4 - 480*W_t**2*a**2*eta**3 - 256*W_t**2*a**2*eta**2 + 1920*W_t**2*a**2*eta + 1024*W_t**2*a**2 - 15*W_x**2*eta**5 - 8*W_x**2*eta**4 + 360*W_x**2*eta**3 - 2048*W_x**2 - 15*W_z**2*eta**5 - 8*W_z**2*eta**4 + 360*W_z**2*eta**3 - 2048*W_z**2)/(480*a**2*(eta**2 - 8)**2)",
+      "parameter_map": {
+        "A": "2*eta**(3/2)/7",
+        "K_Q": "3*eta",
+        "MP2": "1",
+        "MU2": "2*eta/3",
+        "b": "5*eta/11",
+        "beta": "2*eta**2/5",
+        "c1": "1/5",
+        "c2": "1/10",
+        "c3": "3*eta/16 - 1/5",
+        "c4": "1/20",
+        "zeta": "eta/13"
+      },
+      "quadratic_action": "-eta*(1170*H**2*W**2*a**2*eta**3 + 1352*H**2*W**2*a**2*eta**2 - 9360*H**2*W**2*a**2*eta - 10816*H**2*W**2*a**2 + 780*H*W*W_t*a**2*eta**3 + 208*H*W*W_t*a**2*eta**2 - 6240*H*W*W_t*a**2*eta - 1664*H*W*W_t*a**2 - 9360*W**2*a**2*eta**2*psi_dot**2 + 240*W**2*a**2*eta**2*u0**2*v_dot**2 - 480*W**2*a**2*eta**2*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta**2*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 - 520*W_t**2*a**2*eta**2 + 4160*W_t**2*a**2 - 195*W_x**2*eta**3 + 416*W_x**2*eta**2 - 3328*W_x**2 - 195*W_z**2*eta**3 + 416*W_z**2*eta**2 - 3328*W_z**2)/(6240*a**2*(eta**2 - 8))",
+      "response_coefficients": {
+        "Em": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "LambdaU": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Mxx": {
+          "t": "-W*eta*(15*H*W*eta + 24*H*W + 8*W_t)/240",
+          "value": "-eta*(1170*H**2*W**2*a**2*eta**3 + 1352*H**2*W**2*a**2*eta**2 - 9360*H**2*W**2*a**2*eta - 10816*H**2*W**2*a**2 + 780*H*W*W_t*a**2*eta**3 + 208*H*W*W_t*a**2*eta**2 - 6240*H*W*W_t*a**2*eta - 1664*H*W*W_t*a**2 - 9360*W**2*a**2*eta**2*psi_dot**2 + 240*W**2*a**2*eta**2*u0**2*v_dot**2 - 480*W**2*a**2*eta**2*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta**2*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 - 520*W_t**2*a**2*eta**2 + 4160*W_t**2*a**2 + 195*W_x**2*eta**3 - 416*W_x**2*eta**2 + 3328*W_x**2 - 195*W_z**2*eta**3 + 416*W_z**2*eta**2 - 3328*W_z**2)/(12480*a**2*(eta**2 - 8))",
+          "x": "0",
+          "z": "0"
+        },
+        "Mxy": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Mxz": {
+          "t": "0",
+          "value": "-W_x*W_z*eta*(15*eta**3 - 32*eta**2 + 256)/(240*a**2*(eta**2 - 8))",
+          "x": "0",
+          "z": "0"
+        },
+        "Myy": {
+          "t": "-W*eta*(30*H*W*eta + 8*H*W + 15*W_t*eta - 32*W_t)/240",
+          "value": "-eta*(1170*H**2*W**2*a**2*eta**3 + 1352*H**2*W**2*a**2*eta**2 - 9360*H**2*W**2*a**2*eta - 10816*H**2*W**2*a**2 + 780*H*W*W_t*a**2*eta**3 + 208*H*W*W_t*a**2*eta**2 - 6240*H*W*W_t*a**2*eta - 1664*H*W*W_t*a**2 - 9360*W**2*a**2*eta**2*psi_dot**2 + 240*W**2*a**2*eta**2*u0**2*v_dot**2 - 480*W**2*a**2*eta**2*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta**2*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 - 520*W_t**2*a**2*eta**2 + 4160*W_t**2*a**2 - 195*W_x**2*eta**3 + 416*W_x**2*eta**2 - 3328*W_x**2 - 195*W_z**2*eta**3 + 416*W_z**2*eta**2 - 3328*W_z**2)/(4160*a**2*(eta**2 - 8))",
+          "x": "W*W_x*eta*(15*eta - 32)/(240*a**2)",
+          "z": "W*W_z*eta*(15*eta - 32)/(240*a**2)"
+        },
+        "Myz": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Mzz": {
+          "t": "-W*eta*(15*H*W*eta + 24*H*W + 8*W_t)/240",
+          "value": "-eta*(1170*H**2*W**2*a**2*eta**3 + 1352*H**2*W**2*a**2*eta**2 - 9360*H**2*W**2*a**2*eta - 10816*H**2*W**2*a**2 + 780*H*W*W_t*a**2*eta**3 + 208*H*W*W_t*a**2*eta**2 - 6240*H*W*W_t*a**2*eta - 1664*H*W*W_t*a**2 - 9360*W**2*a**2*eta**2*psi_dot**2 + 240*W**2*a**2*eta**2*u0**2*v_dot**2 - 480*W**2*a**2*eta**2*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta**2*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 - 520*W_t**2*a**2*eta**2 + 4160*W_t**2*a**2 - 195*W_x**2*eta**3 + 416*W_x**2*eta**2 - 3328*W_x**2 + 195*W_z**2*eta**3 - 416*W_z**2*eta**2 + 3328*W_z**2)/(12480*a**2*(eta**2 - 8))",
+          "x": "0",
+          "z": "0"
+        },
+        "Pi": {
+          "t": "3*W**2*eta*psi_dot",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Sx": {
+          "t": "0",
+          "value": "W_x*eta*(15*H*W*eta + 4*H*W - 20*W_t)/(120*a)",
+          "x": "W*eta*(15*H*W*eta + 24*H*W + 8*W_t)/(120*a)",
+          "z": "0"
+        },
+        "Sy": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Sz": {
+          "t": "0",
+          "value": "W_z*eta*(15*H*W*eta + 4*H*W - 20*W_t)/(120*a)",
+          "x": "0",
+          "z": "W*eta*(15*H*W*eta + 24*H*W + 8*W_t)/(120*a)"
+        },
+        "T": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Vx": {
+          "t": "-W*W_x*eta*(15*eta**3 + 8*eta**2 - 240*eta + 256)/(240*a*(eta**2 - 8))",
+          "value": "-W_x*eta*(320*H*W - 15*W_t*eta**3 - 8*W_t*eta**2 + 64*W_t)/(240*a*(eta**2 - 8))",
+          "x": "-W*eta*(15*H*W*eta + 24*H*W + 16*W_t)/(240*a)",
+          "z": "0"
+        },
+        "Vy": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "Vz": {
+          "t": "-W*W_z*eta*(15*eta**3 + 8*eta**2 - 240*eta + 256)/(240*a*(eta**2 - 8))",
+          "value": "-W_z*eta*(320*H*W - 15*W_t*eta**3 - 8*W_t*eta**2 + 64*W_t)/(240*a*(eta**2 - 8))",
+          "x": "0",
+          "z": "-W*eta*(15*H*W*eta + 24*H*W + 16*W_t)/(240*a)"
+        },
+        "Z": {
+          "t": "-5*W**2*eta*psi_dot/11",
+          "value": "-5*W*eta*psi_dot*(H*W + W_t)/11",
+          "x": "0",
+          "z": "0"
+        },
+        "alpha": {
+          "t": "0",
+          "value": "eta*(1170*H**2*W**2*a**2*eta**3 + 1352*H**2*W**2*a**2*eta**2 - 9360*H**2*W**2*a**2*eta - 10816*H**2*W**2*a**2 + 780*H*W*W_t*a**2*eta**3 + 208*H*W*W_t*a**2*eta**2 - 6240*H*W*W_t*a**2*eta - 1664*H*W*W_t*a**2 - 9360*W**2*a**2*eta**2*psi_dot**2 + 240*W**2*a**2*eta**2*u0**2*v_dot**2 - 480*W**2*a**2*eta**2*u0*u_dot*v0*v_dot + 240*W**2*a**2*eta**2*u_dot**2*v0**2 + 74880*W**2*a**2*psi_dot**2 - 1920*W**2*a**2*u0**2*v_dot**2 + 3840*W**2*a**2*u0*u_dot*v0*v_dot - 1920*W**2*a**2*u_dot**2*v0**2 - 520*W_t**2*a**2*eta**2 + 4160*W_t**2*a**2 + 195*W_x**2*eta**3 - 416*W_x**2*eta**2 + 3328*W_x**2 + 195*W_z**2*eta**3 - 416*W_z**2*eta**2 + 3328*W_z**2)/(6240*a**2*(eta**2 - 8))",
+          "x": "-W*W_x*eta*(15*eta**3 + 8*eta**2 - 240*eta + 256)/(240*a**2*(eta**2 - 8))",
+          "z": "-W*W_z*eta*(15*eta**3 + 8*eta**2 - 240*eta + 256)/(240*a**2*(eta**2 - 8))"
+        },
+        "dr": {
+          "t": "0",
+          "value": "0",
+          "x": "0",
+          "z": "0"
+        },
+        "du": {
+          "t": "W**2*eta*v0*(u0*v_dot - u_dot*v0)/13",
+          "value": "-W**2*eta*v_dot*(u0*v_dot - u_dot*v0)/13",
+          "x": "0",
+          "z": "0"
+        },
+        "dv": {
+          "t": "-W**2*eta*u0*(u0*v_dot - u_dot*v0)/13",
+          "value": "W**2*eta*u_dot*(u0*v_dot - u_dot*v0)/13",
+          "x": "0",
+          "z": "0"
+        },
+        "nu": {
+          "t": "-W*eta*(15*H*W*eta + 8*H*W + 15*W_t*eta - 8*W_t)/120",
+          "value": "-eta*(90*H**2*W**2*a**2*eta**5 + 96*H**2*W**2*a**2*eta**4 - 1440*H**2*W**2*a**2*eta**3 - 1536*H**2*W**2*a**2*eta**2 + 5760*H**2*W**2*a**2*eta + 6144*H**2*W**2*a**2 + 60*H*W*W_t*a**2*eta**5 - 960*H*W*W_t*a**2*eta**3 + 3840*H*W*W_t*a**2*eta - 48*W_t**2*a**2*eta**4 + 768*W_t**2*a**2*eta**2 - 3072*W_t**2*a**2 - 15*W_x**2*eta**5 + 32*W_x**2*eta**4 + 240*W_x**2*eta**3 - 512*W_x**2*eta**2 + 2048*W_x**2 - 15*W_z**2*eta**5 + 32*W_z**2*eta**4 + 240*W_z**2*eta**3 - 512*W_z**2*eta**2 + 2048*W_z**2)/(240*a**2*(eta**2 - 8)**2)",
+          "x": "W*W_x*eta**3*(15*eta - 16)/(120*a**2*(eta**2 - 8))",
+          "z": "W*W_z*eta**3*(15*eta - 16)/(120*a**2*(eta**2 - 8))"
+        }
+      },
+      "scope": "Generic action first, then diagnostic family; no microscopic matching or physical amplitude",
+      "sigma": "eta**2/(eta**2 - 8)"
+    }
+  },
+  "field_order": [
+    "alpha",
+    "Sx",
+    "Sy",
+    "Sz",
+    "Mxx",
+    "Mxy",
+    "Mxz",
+    "Myy",
+    "Myz",
+    "Mzz",
+    "Vx",
+    "Vy",
+    "Vz",
+    "du",
+    "dv",
+    "dr",
+    "Pi",
+    "T",
+    "Em",
+    "Z",
+    "nu",
+    "LambdaU"
+  ],
+  "first_transverse_shift": "-MU2*(c1 + c3)/(MP2 - MU2*(c1 + c3))",
+  "force": {
+    "analytic_cubic_vertex_exists": false,
+    "at_W_zero": "Zero leading coefficient; no division by W; force is C1, density C2, not C3 at zero",
+    "directional_vector_source": "-3*A*abs(psi_dot)^3*e*abs(e)*W*abs(W)",
+    "first_ray_density": "-A*abs(psi_dot*e*W)^3",
+    "fixed_response_ray_d_equals_e_squared_fourth_coefficient": "-3*A*abs(psi_dot)^3*sign(e)*W*abs(W)*R_Vy",
+    "physical_response_sign": "Prepared cusp response changes sign; fixed-ray sign is NOT a solution sign rule"
+  },
+  "generic_cV2": "(-2*MP2*c1 + MU2*c1**2 - MU2*c3**2)/(2*(c1 + c4)*(-MP2 + MU2*c1 + MU2*c3))",
+  "generic_frame_mass_squared": "(2*H**2*MU2*c1 + 2*H**2*MU2*c4 - 3*Hdot*MU2*c2 - Hdot*MU2*c3 + Hdot*MU2*c4 - K_Q*psi_dot**2 + u0**2*v_dot**2*zeta - 2*u0*u_dot*v0*v_dot*zeta + u_dot**2*v0**2*zeta)/(MU2*(c1 + c4))",
+  "generic_reduced_vector_equation": "-(-4*H**2*MP2*MU2*W*a**2*c1 - 4*H**2*MP2*MU2*W*a**2*c4 + 4*H**2*MU2**2*W*a**2*c1**2 + 4*H**2*MU2**2*W*a**2*c1*c3 + 4*H**2*MU2**2*W*a**2*c1*c4 + 4*H**2*MU2**2*W*a**2*c3*c4 - 6*H*MP2*MU2*W_t*a**2*c1 - 6*H*MP2*MU2*W_t*a**2*c4 + 6*H*MU2**2*W_t*a**2*c1**2 + 6*H*MU2**2*W_t*a**2*c1*c3 + 6*H*MU2**2*W_t*a**2*c1*c4 + 6*H*MU2**2*W_t*a**2*c3*c4 + 6*Hdot*MP2*MU2*W*a**2*c2 + 2*Hdot*MP2*MU2*W*a**2*c3 - 2*Hdot*MP2*MU2*W*a**2*c4 - 6*Hdot*MU2**2*W*a**2*c1*c2 - 2*Hdot*MU2**2*W*a**2*c1*c3 + 2*Hdot*MU2**2*W*a**2*c1*c4 - 6*Hdot*MU2**2*W*a**2*c2*c3 - 2*Hdot*MU2**2*W*a**2*c3**2 + 2*Hdot*MU2**2*W*a**2*c3*c4 + 2*K_Q*MP2*W*a**2*psi_dot**2 - 2*K_Q*MU2*W*a**2*c1*psi_dot**2 - 2*K_Q*MU2*W*a**2*c3*psi_dot**2 - 2*MP2*MU2*W_tt*a**2*c1 - 2*MP2*MU2*W_tt*a**2*c4 + 2*MP2*MU2*W_xx*c1 + 2*MP2*MU2*W_zz*c1 - 2*MP2*W*a**2*u0**2*v_dot**2*zeta + 4*MP2*W*a**2*u0*u_dot*v0*v_dot*zeta - 2*MP2*W*a**2*u_dot**2*v0**2*zeta + 2*MU2**2*W_tt*a**2*c1**2 + 2*MU2**2*W_tt*a**2*c1*c3 + 2*MU2**2*W_tt*a**2*c1*c4 + 2*MU2**2*W_tt*a**2*c3*c4 - MU2**2*W_xx*c1**2 + MU2**2*W_xx*c3**2 - MU2**2*W_zz*c1**2 + MU2**2*W_zz*c3**2 + 2*MU2*W*a**2*c1*u0**2*v_dot**2*zeta - 4*MU2*W*a**2*c1*u0*u_dot*v0*v_dot*zeta + 2*MU2*W*a**2*c1*u_dot**2*v0**2*zeta + 2*MU2*W*a**2*c3*u0**2*v_dot**2*zeta - 4*MU2*W*a**2*c3*u0*u_dot*v0*v_dot*zeta + 2*MU2*W*a**2*c3*u_dot**2*v0**2*zeta)/(2*a**2*(-MP2 + MU2*c1 + MU2*c3))",
+  "intrinsic_W4": "-MU2*W**2*(2*B_x**2*c3 - 2*B_x**2*c4 + B_x*W_x*c1 - 3*B_x*W_x*c3 + 2*B_z**2*c3 - 2*B_z**2*c4 + B_z*W_z*c1 - 3*B_z*W_z*c3 + 2*W_t**2*a**2*c1 + 2*W_t**2*a**2*c2 + 2*W_t**2*a**2*c3 - 2*W_x**2*c1 - 2*W_z**2*c1)/(4*a**2)",
+  "jet_quotient": "e^5=d^2=e^3*d=0; analytic sectors only",
+  "quadratic_vector_action": "-(-B_x**2*MP2 + B_x**2*MU2*c1 + B_x**2*MU2*c3 - 2*B_x*MU2*W_x*c1 - 2*B_x*MU2*W_x*c3 - B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 - 2*B_z*MU2*W_z*c1 - 2*B_z*MU2*W_z*c3 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 + 2*MU2*W_x**2*c1 + 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(4*a**2)",
+  "response_coefficients": {
+    "Em": {
+      "t": "0",
+      "value": "0",
+      "x": "0",
+      "z": "0"
+    },
+    "LambdaU": {
+      "t": "0",
+      "value": "0",
+      "x": "0",
+      "z": "0"
+    },
+    "Mxx": {
+      "t": "-MU2*W*(H*W*c1 + 3*H*W*c2 + H*W*c3 + W_t*c2)/2",
+      "value": "-(B_x**2*MP2 - B_x**2*MU2*c1 - B_x**2*MU2*c3 + 2*B_x*MU2*W_x*c1 + 2*B_x*MU2*W_x*c3 - B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 - 2*B_z*MU2*W_z*c1 - 2*B_z*MU2*W_z*c3 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 - 2*MU2*W_x**2*c1 + 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)",
+      "x": "0",
+      "z": "0"
+    },
+    "Mxy": {
+      "t": "0",
+      "value": "0",
+      "x": "0",
+      "z": "0"
+    },
+    "Mxz": {
+      "t": "0",
+      "value": "(-B_x*B_z*MP2 + B_x*B_z*MU2*c1 + B_x*B_z*MU2*c3 - B_x*MU2*W_z*c1 - B_x*MU2*W_z*c3 - B_z*MU2*W_x*c1 - B_z*MU2*W_x*c3 + 2*MU2*W_x*W_z*c1)/(2*a**2)",
+      "x": "0",
+      "z": "0"
+    },
+    "Myy": {
+      "t": "MU2*W*(-6*H*W*c2 - 2*H*W*c3 + 2*H*W*c4 + W_t*c1 - W_t*c2 - W_t*c3 + 2*W_t*c4)/2",
+      "value": "-3*(-B_x**2*MP2 + B_x**2*MU2*c1 + B_x**2*MU2*c3 - 2*B_x*MU2*W_x*c1 - 2*B_x*MU2*W_x*c3 - B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 - 2*B_z*MU2*W_z*c1 - 2*B_z*MU2*W_z*c3 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 + 2*MU2*W_x**2*c1 + 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)",
+      "x": "-MU2*W*W_x*(c1 - c3)/(2*a**2)",
+      "z": "-MU2*W*W_z*(c1 - c3)/(2*a**2)"
+    },
+    "Myz": {
+      "t": "0",
+      "value": "0",
+      "x": "0",
+      "z": "0"
+    },
+    "Mzz": {
+      "t": "-MU2*W*(H*W*c1 + 3*H*W*c2 + H*W*c3 + W_t*c2)/2",
+      "value": "-(-B_x**2*MP2 + B_x**2*MU2*c1 + B_x**2*MU2*c3 - 2*B_x*MU2*W_x*c1 - 2*B_x*MU2*W_x*c3 + B_z**2*MP2 - B_z**2*MU2*c1 - B_z**2*MU2*c3 + 2*B_z*MU2*W_z*c1 + 2*B_z*MU2*W_z*c3 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 + 2*MU2*W_x**2*c1 - 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(8*a**2)",
+      "x": "0",
+      "z": "0"
+    },
+    "Pi": {
+      "t": "K_Q*W**2*psi_dot",
+      "value": "0",
+      "x": "0",
+      "z": "0"
+    },
+    "Sx": {
+      "t": "0",
+      "value": "-MU2*W_x*(-3*H*W*c2 - H*W*c3 + H*W*c4 + W_t*c1 + W_t*c4)/a",
+      "x": "MU2*W*(H*W*c1 + 3*H*W*c2 + H*W*c3 + W_t*c2)/a",
+      "z": "0"
+    },
+    "Sy": {
+      "t": "0",
+      "value": "0",
+      "x": "0",
+      "z": "0"
+    },
+    "Sz": {
+      "t": "0",
+      "value": "-MU2*W_z*(-3*H*W*c2 - H*W*c3 + H*W*c4 + W_t*c1 + W_t*c4)/a",
+      "x": "0",
+      "z": "MU2*W*(H*W*c1 + 3*H*W*c2 + H*W*c3 + W_t*c2)/a"
+    },
+    "T": {
+      "t": "0",
+      "value": "0",
+      "x": "0",
+      "z": "0"
+    },
+    "Vx": {
+      "t": "-MU2*W*(B_x*c1 - B_x*c3 + 2*B_x*c4 + 2*W_x*c3)/(2*a)",
+      "value": "-MU2*(2*B_x*H*W*c1 + 2*B_x*H*W*c4 - B_x*W_t*c1 - B_x*W_t*c3 - 2*H*W*W_x*c1 - 2*H*W*W_x*c4 - 2*W_t*W_x*c4)/(2*a)",
+      "x": "-MU2*W*(H*W*c1 + 3*H*W*c2 + H*W*c3 + 2*W_t*c2)/(2*a)",
+      "z": "0"
+    },
+    "Vy": {
+      "t": "0",
+      "value": "0",
+      "x": "0",
+      "z": "0"
+    },
+    "Vz": {
+      "t": "-MU2*W*(B_z*c1 - B_z*c3 + 2*B_z*c4 + 2*W_z*c3)/(2*a)",
+      "value": "-MU2*(2*B_z*H*W*c1 + 2*B_z*H*W*c4 - B_z*W_t*c1 - B_z*W_t*c3 - 2*H*W*W_z*c1 - 2*H*W*W_z*c4 - 2*W_t*W_z*c4)/(2*a)",
+      "x": "0",
+      "z": "-MU2*W*(H*W*c1 + 3*H*W*c2 + H*W*c3 + 2*W_t*c2)/(2*a)"
+    },
+    "Z": {
+      "t": "-W**2*b*psi_dot",
+      "value": "-W*b*psi_dot*(H*W + W_t)",
+      "x": "0",
+      "z": "0"
+    },
+    "alpha": {
+      "t": "0",
+      "value": "(-B_x**2*MP2 + B_x**2*MU2*c1 + B_x**2*MU2*c3 - B_z**2*MP2 + B_z**2*MU2*c1 + B_z**2*MU2*c3 + 4*H**2*MU2*W**2*a**2*c1 + 18*H**2*MU2*W**2*a**2*c2 + 6*H**2*MU2*W**2*a**2*c3 - 2*H**2*MU2*W**2*a**2*c4 + 12*H*MU2*W*W_t*a**2*c2 + 4*H*MU2*W*W_t*a**2*c3 - 4*H*MU2*W*W_t*a**2*c4 - 2*K_Q*W**2*a**2*psi_dot**2 - 2*MU2*W_t**2*a**2*c1 - 2*MU2*W_t**2*a**2*c4 - 2*MU2*W_x**2*c1 - 2*MU2*W_z**2*c1 + 2*W**2*a**2*u0**2*v_dot**2*zeta - 4*W**2*a**2*u0*u_dot*v0*v_dot*zeta + 2*W**2*a**2*u_dot**2*v0**2*zeta)/(4*a**2)",
+      "x": "-MU2*W*(B_x*c1 - B_x*c3 + 2*B_x*c4 + 2*W_x*c3)/(2*a**2)",
+      "z": "-MU2*W*(B_z*c1 - B_z*c3 + 2*B_z*c4 + 2*W_z*c3)/(2*a**2)"
+    },
+    "dr": {
+      "t": "0",
+      "value": "0",
+      "x": "0",
+      "z": "0"
+    },
+    "du": {
+      "t": "W**2*v0*zeta*(u0*v_dot - u_dot*v0)",
+      "value": "-W**2*v_dot*zeta*(u0*v_dot - u_dot*v0)",
+      "x": "0",
+      "z": "0"
+    },
+    "dv": {
+      "t": "-W**2*u0*zeta*(u0*v_dot - u_dot*v0)",
+      "value": "W**2*u_dot*zeta*(u0*v_dot - u_dot*v0)",
+      "x": "0",
+      "z": "0"
+    },
+    "nu": {
+      "t": "-MU2*W*(3*H*W*c2 + H*W*c3 + W_t*c2 + W_t*c3)",
+      "value": "-MU2*(B_x**2*c1 + B_x**2*c3 - 2*B_x*W_x*c1 - 2*B_x*W_x*c3 + B_z**2*c1 + B_z**2*c3 - 2*B_z*W_z*c1 - 2*B_z*W_z*c3 + 4*H**2*W**2*a**2*c1 + 18*H**2*W**2*a**2*c2 + 6*H**2*W**2*a**2*c3 - 4*H**2*W**2*a**2*c4 + 12*H*W*W_t*a**2*c2 + 4*H*W*W_t*a**2*c3 - 8*H*W*W_t*a**2*c4 - 2*W_t**2*a**2*c1 - 4*W_t**2*a**2*c4 + 2*W_x**2*c1 + 2*W_z**2*c1)/(2*a**2)",
+      "x": "B_x*MU2*W*c3/a**2",
+      "z": "B_z*MU2*W*c3/a**2"
+    }
+  },
+  "response_derivative_axes": [
+    "t",
+    "x",
+    "z"
+  ],
+  "sector_WWR": {
+    "Cartesian_scalars_potential_portal": "0",
+    "Einstein_ADM": "-MP2*(B_x**2*Mxx - 3*B_x**2*Myy - B_x**2*Mzz + 2*B_x**2*alpha + 4*B_x*B_z*Mxz - B_z**2*Mxx - 3*B_z**2*Myy + B_z**2*Mzz + 2*B_z**2*alpha)/(8*a**2)",
+    "alignment": "-W**2*zeta*(u0*v_dot - u_dot*v0)*(Mxx*u0*v_dot - Mxx*u_dot*v0 + 3*Myy*u0*v_dot - 3*Myy*u_dot*v0 + Mzz*u0*v_dot - Mzz*u_dot*v0 - 2*alpha*u0*v_dot + 2*alpha*u_dot*v0 + 4*du*v_dot - 4*du_t*v0 - 4*dv*u_dot + 4*dv_t*u0)/4",
+    "dust": "0",
+    "frame": "-MU2*(-B_x**2*Mxx*c1 - B_x**2*Mxx*c3 + 3*B_x**2*Myy*c1 + 3*B_x**2*Myy*c3 + B_x**2*Mzz*c1 + B_x**2*Mzz*c3 - 2*B_x**2*alpha*c1 - 2*B_x**2*alpha*c3 + 4*B_x**2*c1*nu + 4*B_x**2*c3*nu - 4*B_x*B_z*Mxz*c1 - 4*B_x*B_z*Mxz*c3 + 8*B_x*H*Vx*W*a*c1 + 8*B_x*H*Vx*W*a*c4 + 2*B_x*Mxx*W_x*c1 + 2*B_x*Mxx*W_x*c3 + 4*B_x*Mxz*W_z*c1 + 4*B_x*Mxz*W_z*c3 - 6*B_x*Myy*W_x*c1 - 6*B_x*Myy*W_x*c3 - 2*B_x*Mzz*W_x*c1 - 2*B_x*Mzz*W_x*c3 - 4*B_x*Vx*W_t*a*c1 - 4*B_x*Vx*W_t*a*c3 + 4*B_x*Vx_t*W*a*c1 - 4*B_x*Vx_t*W*a*c3 + 8*B_x*Vx_t*W*a*c4 + 4*B_x*W*alpha_x*c1 - 4*B_x*W*alpha_x*c3 + 8*B_x*W*alpha_x*c4 - 8*B_x*W*c3*nu_x - 8*B_x*W_x*c1*nu - 8*B_x*W_x*c3*nu + B_z**2*Mxx*c1 + B_z**2*Mxx*c3 + 3*B_z**2*Myy*c1 + 3*B_z**2*Myy*c3 - B_z**2*Mzz*c1 - B_z**2*Mzz*c3 - 2*B_z**2*alpha*c1 - 2*B_z**2*alpha*c3 + 4*B_z**2*c1*nu + 4*B_z**2*c3*nu + 8*B_z*H*Vz*W*a*c1 + 8*B_z*H*Vz*W*a*c4 - 2*B_z*Mxx*W_z*c1 - 2*B_z*Mxx*W_z*c3 + 4*B_z*Mxz*W_x*c1 + 4*B_z*Mxz*W_x*c3 - 6*B_z*Myy*W_z*c1 - 6*B_z*Myy*W_z*c3 + 2*B_z*Mzz*W_z*c1 + 2*B_z*Mzz*W_z*c3 - 4*B_z*Vz*W_t*a*c1 - 4*B_z*Vz*W_t*a*c3 + 4*B_z*Vz_t*W*a*c1 - 4*B_z*Vz_t*W*a*c3 + 8*B_z*Vz_t*W*a*c4 + 4*B_z*W*alpha_z*c1 - 4*B_z*W*alpha_z*c3 + 8*B_z*W*alpha_z*c4 - 8*B_z*W*c3*nu_z - 8*B_z*W_z*c1*nu - 8*B_z*W_z*c3*nu + 4*H**2*Mxx*W**2*a**2*c1 + 18*H**2*Mxx*W**2*a**2*c2 + 6*H**2*Mxx*W**2*a**2*c3 - 2*H**2*Mxx*W**2*a**2*c4 + 12*H**2*Myy*W**2*a**2*c1 + 54*H**2*Myy*W**2*a**2*c2 + 18*H**2*Myy*W**2*a**2*c3 - 6*H**2*Myy*W**2*a**2*c4 + 4*H**2*Mzz*W**2*a**2*c1 + 18*H**2*Mzz*W**2*a**2*c2 + 6*H**2*Mzz*W**2*a**2*c3 - 2*H**2*Mzz*W**2*a**2*c4 - 8*H**2*W**2*a**2*alpha*c1 - 36*H**2*W**2*a**2*alpha*c2 - 12*H**2*W**2*a**2*alpha*c3 + 4*H**2*W**2*a**2*alpha*c4 + 16*H**2*W**2*a**2*c1*nu + 72*H**2*W**2*a**2*c2*nu + 24*H**2*W**2*a**2*c3*nu - 16*H**2*W**2*a**2*c4*nu + 12*H*Mxx*W*W_t*a**2*c2 + 4*H*Mxx*W*W_t*a**2*c3 - 4*H*Mxx*W*W_t*a**2*c4 + 4*H*Mxx_t*W**2*a**2*c1 + 12*H*Mxx_t*W**2*a**2*c2 + 4*H*Mxx_t*W**2*a**2*c3 + 36*H*Myy*W*W_t*a**2*c2 + 12*H*Myy*W*W_t*a**2*c3 - 12*H*Myy*W*W_t*a**2*c4 + 24*H*Myy_t*W**2*a**2*c2 + 8*H*Myy_t*W**2*a**2*c3 - 8*H*Myy_t*W**2*a**2*c4 + 12*H*Mzz*W*W_t*a**2*c2 + 4*H*Mzz*W*W_t*a**2*c3 - 4*H*Mzz*W*W_t*a**2*c4 + 4*H*Mzz_t*W**2*a**2*c1 + 12*H*Mzz_t*W**2*a**2*c2 + 4*H*Mzz_t*W**2*a**2*c3 - 24*H*Sx*W*W_x*a*c2 - 8*H*Sx*W*W_x*a*c3 + 8*H*Sx*W*W_x*a*c4 - 8*H*Sx_x*W**2*a*c1 - 24*H*Sx_x*W**2*a*c2 - 8*H*Sx_x*W**2*a*c3 - 24*H*Sz*W*W_z*a*c2 - 8*H*Sz*W*W_z*a*c3 + 8*H*Sz*W*W_z*a*c4 - 8*H*Sz_z*W**2*a*c1 - 24*H*Sz_z*W**2*a*c2 - 8*H*Sz_z*W**2*a*c3 - 8*H*Vx*W*W_x*a*c1 - 8*H*Vx*W*W_x*a*c4 + 4*H*Vx_x*W**2*a*c1 + 12*H*Vx_x*W**2*a*c2 + 4*H*Vx_x*W**2*a*c3 - 8*H*Vz*W*W_z*a*c1 - 8*H*Vz*W*W_z*a*c4 + 4*H*Vz_z*W**2*a*c1 + 12*H*Vz_z*W**2*a*c2 + 4*H*Vz_z*W**2*a*c3 + 24*H*W**2*a**2*c2*nu_t + 8*H*W**2*a**2*c3*nu_t - 24*H*W*W_t*a**2*alpha*c2 - 8*H*W*W_t*a**2*alpha*c3 + 8*H*W*W_t*a**2*alpha*c4 + 48*H*W*W_t*a**2*c2*nu + 16*H*W*W_t*a**2*c3*nu - 32*H*W*W_t*a**2*c4*nu - 2*Mxx*W_t**2*a**2*c1 - 2*Mxx*W_t**2*a**2*c4 - 2*Mxx*W_x**2*c1 + 2*Mxx*W_z**2*c1 + 4*Mxx_t*W*W_t*a**2*c2 - 8*Mxz*W_x*W_z*c1 - 6*Myy*W_t**2*a**2*c1 - 6*Myy*W_t**2*a**2*c4 + 6*Myy*W_x**2*c1 + 6*Myy*W_z**2*c1 - 4*Myy_t*W*W_t*a**2*c1 + 4*Myy_t*W*W_t*a**2*c2 + 4*Myy_t*W*W_t*a**2*c3 - 8*Myy_t*W*W_t*a**2*c4 + 4*Myy_x*W*W_x*c1 - 4*Myy_x*W*W_x*c3 + 4*Myy_z*W*W_z*c1 - 4*Myy_z*W*W_z*c3 - 2*Mzz*W_t**2*a**2*c1 - 2*Mzz*W_t**2*a**2*c4 + 2*Mzz*W_x**2*c1 - 2*Mzz*W_z**2*c1 + 4*Mzz_t*W*W_t*a**2*c2 + 8*Sx*W_t*W_x*a*c1 + 8*Sx*W_t*W_x*a*c4 - 8*Sx_x*W*W_t*a*c2 + 8*Sz*W_t*W_z*a*c1 + 8*Sz*W_t*W_z*a*c4 - 8*Sz_z*W*W_t*a*c2 - 8*Vx*W_t*W_x*a*c4 + 8*Vx_t*W*W_x*a*c3 + 8*Vx_x*W*W_t*a*c2 - 8*Vz*W_t*W_z*a*c4 + 8*Vz_t*W*W_z*a*c3 + 8*Vz_z*W*W_t*a*c2 + 8*W*W_t*a**2*c2*nu_t + 8*W*W_t*a**2*c3*nu_t + 8*W*W_x*alpha_x*c3 + 8*W*W_z*alpha_z*c3 + 4*W_t**2*a**2*alpha*c1 + 4*W_t**2*a**2*alpha*c4 - 8*W_t**2*a**2*c1*nu - 16*W_t**2*a**2*c4*nu + 4*W_x**2*alpha*c1 + 8*W_x**2*c1*nu + 4*W_z**2*alpha*c1 + 8*W_z**2*c1*nu)/(8*a**2)",
+    "regulator": "-W*b*psi_dot*(H*W*Z + W*Z_t + W_t*Z)",
+    "spatial_Ricci": "0",
+    "temporal_force": "K_Q*W**2*psi_dot*(Mxx*psi_dot + 3*Myy*psi_dot + Mzz*psi_dot + 4*Pi_t - 2*alpha*psi_dot)/4",
+    "unit_multiplier": "0"
+  },
+  "sector_intrinsic_W4": {
+    "Cartesian_scalars_potential_portal": "0",
+    "Einstein_ADM": "0",
+    "alignment": "0",
+    "dust": "0",
+    "frame": "-MU2*W**2*(2*B_x**2*c3 - 2*B_x**2*c4 + B_x*W_x*c1 - 3*B_x*W_x*c3 + 2*B_z**2*c3 - 2*B_z**2*c4 + B_z*W_z*c1 - 3*B_z*W_z*c3 + 2*W_t**2*a**2*c1 + 2*W_t**2*a**2*c2 + 2*W_t**2*a**2*c3 - 2*W_x**2*c1 - 2*W_z**2*c1)/(4*a**2)",
+    "regulator": "0",
+    "spatial_Ricci": "0",
+    "temporal_force": "0",
+    "unit_multiplier": "0"
+  },
+  "spatial_Ricci_scope": "Zero direct WWR/W4 here; FULL generic response Hessian retained",
+  "volume": "action = integral dt d^3x a^3 * displayed density; coefficient drift retained"
+}

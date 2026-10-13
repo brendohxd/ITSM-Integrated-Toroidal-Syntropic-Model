@@ -1,0 +1,94 @@
+{
+  "background_error": "0.0000000000001084523891663628605569819436843595736735244194548670886070490408960424",
+  "independent_transfer_error": 3.405054016525355e-13,
+  "inherited_parent_adverse_findings": {
+    "negative_spatial_energy_retained": true,
+    "original_slow_K": "-11/6",
+    "wave_principal_complete": false
+  },
+  "liouville_residual": "1.327627792301832971232607642633257764862715420197772477235307703031094e-44",
+  "max_transfer_infinity_norm": "1.093573582583605675020782367076395746228799418860604215133144949871956",
+  "preserved_failures": {
+    "failures": [
+      {
+        "criterion": "zero_exact",
+        "name": "eliminated_gauge_multiplier_coordinates_have_no_one_form",
+        "passed": false,
+        "value": [
+          {
+            "index": 20,
+            "residual": "rho_m/(2*C)"
+          },
+          {
+            "index": 22,
+            "residual": "rho_m/(2*C)"
+          },
+          {
+            "index": 29,
+            "residual": "6*rho_m/(5*C)"
+          },
+          {
+            "index": 40,
+            "residual": "-H/10"
+          },
+          {
+            "index": 42,
+            "residual": "-H/10"
+          },
+          {
+            "index": 46,
+            "residual": "u_dot"
+          },
+          {
+            "index": 47,
+            "residual": "v_dot"
+          },
+          {
+            "index": 48,
+            "residual": "r_dot"
+          },
+          {
+            "index": 49,
+            "residual": "4*H/5 + 3*psi_dot"
+          },
+          {
+            "index": 50,
+            "residual": "1/2"
+          },
+          {
+            "index": 52,
+            "residual": "1/2"
+          }
+        ]
+      },
+      {
+        "criterion": "zero_exact",
+        "name": "all_wave_scale_root_multiplicities",
+        "passed": false,
+        "value": [
+          {
+            "index": 0,
+            "residual": "5*c**18/2304 - 5*c**16*u0**2/29952 - 5*c**16*v0**2/29952 - 13*c**16/864 + 89*c**14*u0**2/89856 + 89*c**14*v0**2/89856 + 521*c**14/11520 - 43*c**12*u0**2/17280 - 43*c**12*v0**2/17280 - 83*c**12/1080 + 769*c**10*u0**2/224640 + 769*c**10*v0**2/224640 + 557*c**10/6912 - 1247*c**8*u0**2/449280 - 1247*c**8*v0**2/449280 - 23*c**8/432 + 593*c**6*u0**2/449280 + 593*c**6*v0**2/449280 + 149*c**6/6912 - 19*c**4*u0**2/56160 - 19*c**4*v0**2/56160 - 7*c**4/1440 + c**2*u0**2/28080 + c**2*v0**2/28080 + c**2/2160"
+          }
+        ]
+      },
+      {
+        "criterion": "zero_exact",
+        "name": "all_fast_scale_root_multiplicities",
+        "passed": false,
+        "value": [
+          {
+            "index": 0,
+            "residual": "11*sigma**20/2304 - 5*sigma**18/6912"
+          }
+        ]
+      }
+    ],
+    "passed": 103,
+    "total": 106,
+    "validation": "FAIL_LOCAL_CHECKS"
+  },
+  "review": "DEFERRED; same-agent local calculations only",
+  "transfer_tail": "3.045812798326468515062715812451033834992841343319670436222472767783061e-36",
+  "true_transfer_residual": "1.953195188586617559353421705457615759317458928817962421142151225202338e-42"
+}

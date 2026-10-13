@@ -1,0 +1,537 @@
+% =============================================================================
+% Covariant entropy accounting for interacting ITSM sectors
+% Version 0.7.1-conditional-draft
+% This source preserves and supersedes the physical claims of v0.6.0.
+% =============================================================================
+\documentclass[aps,prd,reprint,superscriptaddress,nofootinbib,floatfix]{revtex4-2}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\Tthree}{T^{3}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Qmp}{Q_{\mathrm{mp}}}
+\newcommand{\Qsyn}{Q_{\mathrm{syn}}}
+
+\hypersetup{
+  pdftitle={Covariant entropy accounting for interacting matter-plenum sectors on compact spatial manifolds},
+  pdfauthor={Brendon Boyd},
+  pdfsubject={A bounded thermodynamic framework for interacting cosmological sectors},
+  pdfkeywords={relativistic thermodynamics, interacting fluids, entropy production, cosmology, compact topology}
+}
+
+\begin{document}
+
+\title{Covariant entropy accounting for interacting matter--plenum sectors
+on compact spatial manifolds}
+
+\author{Brendon Boyd}
+\email{brendon.boyd@itsm-cosmology.org}
+\affiliation{Independent Researcher, Burswood, Western Australia, Australia}
+\thanks{%
+\begin{tabular}{@{}l@{\ }l@{}}
+ORCID: & \href{https://orcid.org/0009-0007-4177-2612}{0009-0007-4177-2612} \\
+Repository: & \href{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}{\texttt{github.com/brendohxd/ITSM-...}} \\
+\end{tabular}%
+}
+
+\date{Version 0.7.1-conditional-draft --- \today}
+
+\begin{abstract}
+Energy exchange between cosmological sectors is not, by itself, entropy
+production.  We derive the distinction for interacting perfect-fluid sectors
+on a spacetime with compact spatial sections.  If
+\(\nabla_\mu T_A^{\mu\nu}=Q_A^\nu\),
+\(\nabla_\mu(n_Au^\mu)=n_A\Gamma_A\), and
+\(q_A\equiv-u_\nu Q_A^\nu\), the Gibbs relation gives
+\[
+ \nabla_\mu S_A^\mu
+ =\frac{q_A-\mu_A n_A\Gamma_A}{T_A}.
+\]
+Total stress conservation enforces \(\sum_A q_A=0\) in a common comoving
+frame, but does not fix the sign of \(\sum_A\nabla_\mu S_A^\mu\).
+For two particle-conserving sectors the result is
+\(q(1/T_1-1/T_2)\), which is nonnegative only after a constitutive direction
+for the transfer has been supplied.  Compactness removes net spatial boundary
+flux; it does not create an external energy or entropy source.
+
+We apply this accounting to the conditional R4C1 matter--plenum--reservoir
+action.  Its action-derived currents and homogeneous balance equations support
+finite reversible exchange, but the model supplies no temperatures, chemical
+potentials, particle-production rates, dissipative transport matrix, or
+coarse-graining prescription.  Consequently it does not yet derive positive
+entropy production, heat-death avoidance, a thermodynamic stability Hessian,
+or cosmic acceleration.  We formulate the constitutive, stability, and
+observational conditions that a positive claim must satisfy.  The result is a
+bounded thermodynamic framework and a set of no-go statements, not a completed
+syntropic cosmology.
+\end{abstract}
+
+\keywords{relativistic thermodynamics; interacting fluids; entropy production;
+cosmology; compact topology}
+
+\maketitle
+
+% =============================================================================
+\section{Problem and scope}
+\label{sec:scope}
+
+Interacting-sector cosmologies commonly introduce currents through
+\(\nabla_\mu T_A^{\mu\nu}=Q_A^\nu\).  Such equations are necessary for
+consistent energy--momentum bookkeeping, but neither a nonzero \(Q_A^\nu\) nor
+the identity \(\sum_AQ_A^\nu=0\) is a second-law statement.  Relativistic
+non-equilibrium thermodynamics requires an entropy current and constitutive
+relations in addition to stress-energy balance
+\cite{israel_stewart,calvao_lima_waga,iosifidis2024}.
+
+This distinction is especially important for models that use the label
+\emph{syntropic}.  The name does not determine the direction of energy flow,
+the sign of entropy production, or the stability of an equilibrium.  Those
+are calculations.
+
+Our objective is methodological: to separate what follows from covariant
+balance identities from the additional physical input needed to assign
+entropy, prove a second-law sign, establish equilibrium stability, or infer
+cosmic acceleration.  Sections~\ref{sec:balances}--\ref{sec:topology} are
+model independent within the stated local-equilibrium perfect-fluid
+assumptions.  Section~\ref{sec:r4c1} then uses one conditional action as a
+diagnostic application; the general entropy identity does not depend on that
+model.
+
+Table~\ref{tab:claims} records the resulting claim ladder.
+
+\begin{table*}[t]
+\caption{Status of thermodynamic claims in the present conditional model.}
+\label{tab:claims}
+\begin{ruledtabular}
+\begin{tabular}{p{0.37\textwidth}p{0.16\textwidth}p{0.38\textwidth}}
+Claim & Status & Evidence or missing input \\
+\hline
+Sector exchange currents and total balance & Conditional derivation &
+R4C1 action variation and homogeneous on-shell control \\
+Finite, reversible exchange on a sampled background & Locally checked &
+Both interface currents are nonzero and the reservoir transfer reverses sign \\
+Positive total entropy production & Not derived &
+No \(T_A,\mu_A,\Gamma_A\), dissipative kernel, or coarse graining \\
+Topology supplies external energy/entropy inflow & Excluded &
+\(\int_{\Tthree}\sqrt{\gamma}\,D_iJ^i=0\) for smooth periodic \(J^i\) \\
+Thermodynamic stability & Open &
+No constrained entropy Hessian or susceptibility matrix has been computed \\
+Acceleration from exchange & Not derived &
+Requires the total pressure and a solved background; \(q_A\) cancels in the
+summed continuity equation \\
+Avoidance of heat death & Not established &
+Requires a global state, asymptotics, and entropy definition beyond the
+present classical reversible action \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+% =============================================================================
+\section{Covariant sector balances}
+\label{sec:balances}
+
+Consider sectors \(A=1,\ldots,N\) with symmetric stresses
+\(T_A^{\mu\nu}\) and transfer currents
+\begin{equation}
+ \nabla_\mu T_A^{\mu\nu}=Q_A^\nu,
+ \qquad
+ \sum_A Q_A^\nu=0.
+ \label{eq:sector-balance}
+\end{equation}
+The second relation follows from total diffeomorphism invariance after all
+field equations are imposed; it should not be inserted as a substitute for
+varying an incompletely specified action.
+
+Let \(u^\mu u_\mu=-1\), \(h^\mu{}_\nu=\delta^\mu{}_\nu+u^\mu u_\nu\),
+and decompose each current as
+\begin{equation}
+ q_A\equiv-u_\nu Q_A^\nu,
+ \qquad
+ f_A^\mu\equiv h^\mu{}_\nu Q_A^\nu,
+ \qquad
+ Q_A^\mu=q_Au^\mu+f_A^\mu .
+ \label{eq:current-decomp}
+\end{equation}
+For a perfect fluid,
+\begin{equation}
+ T_A^{\mu\nu}=(\rho_A+p_A)u^\mu u^\nu+p_Ag^{\mu\nu},
+\end{equation}
+the timelike projection of Eq.~\eqref{eq:sector-balance} is
+\begin{equation}
+ \dot\rho_A+\theta(\rho_A+p_A)=q_A,
+ \qquad
+ \theta\equiv\nabla_\mu u^\mu.
+ \label{eq:energy-balance}
+\end{equation}
+In an FLRW chart, \(\theta=3H\).  Equation~\eqref{eq:energy-balance} fixes an
+energy transfer convention: \(q_A>0\) means energy enters sector \(A\) in the
+chosen comoving frame.  The spatial projection gives its force density and
+must be retained in perturbative or non-comoving applications.
+
+Summing Eq.~\eqref{eq:energy-balance} gives
+\begin{equation}
+ \dot\rho_{\rm tot}+3H(\rho_{\rm tot}+p_{\rm tot})=0,
+ \label{eq:total-continuity}
+\end{equation}
+for a common FLRW velocity.  This identity is conservation, not an equation
+for entropy.
+
+% =============================================================================
+\section{Gibbs relation and entropy production}
+\label{sec:gibbs}
+
+Introduce a particle current and specific entropy for each sector,
+\begin{equation}
+ N_A^\mu=n_Au^\mu,
+ \qquad
+ \nabla_\mu N_A^\mu=n_A\Gamma_A,
+ \qquad
+ S_A^\mu=n_A\sigma_Au^\mu .
+ \label{eq:number-entropy}
+\end{equation}
+Here \(\Gamma_A\) is a fractional particle-production rate.  It is independent
+information: an energy-transfer current does not determine it.
+
+For local equilibrium the Gibbs relation per particle is
+\begin{equation}
+ T_A\dd\sigma_A
+ =\dd\!\left(\frac{\rho_A}{n_A}\right)
+ +p_A\,\dd\!\left(\frac{1}{n_A}\right).
+ \label{eq:gibbs}
+\end{equation}
+Taking the derivative along \(u^\mu\) and using
+Eqs.~\eqref{eq:energy-balance} and \eqref{eq:number-entropy} yields
+\begin{equation}
+ n_AT_A\dot\sigma_A
+ =q_A-(\rho_A+p_A)\Gamma_A .
+ \label{eq:specific-entropy}
+\end{equation}
+The Euler relation
+\(\rho_A+p_A=T_An_A\sigma_A+\mu_An_A\) then gives the entropy-current
+divergence
+\begin{equation}
+ \boxed{\;
+ \nabla_\mu S_A^\mu
+ =\frac{q_A-\mu_An_A\Gamma_A}{T_A}
+ \;}
+ \label{eq:entropy-production}
+\end{equation}
+for the idealized perfect-fluid sector.  Heat flux, viscosity, diffusion,
+chemical reactions, and relaxation add further flux--force products; causal
+closures require more than the algebraic first-order form
+\cite{israel_stewart}.
+
+\subsection{Two particle-conserving sectors}
+
+Set \(\Gamma_1=\Gamma_2=0\), \(q_1=q\), and \(q_2=-q\).  Then
+\begin{equation}
+ \nabla_\mu(S_1^\mu+S_2^\mu)
+ =q\left(\frac{1}{T_1}-\frac{1}{T_2}\right).
+ \label{eq:two-sector-entropy}
+\end{equation}
+The right-hand side can be positive, zero, or negative for an arbitrarily
+assigned \(q\).  A simple Onsager closure
+\begin{equation}
+ q=L\left(\frac{1}{T_1}-\frac{1}{T_2}\right),
+ \qquad L\geq0,
+ \label{eq:onsager}
+\end{equation}
+gives
+\begin{equation}
+ \nabla_\mu S_{\rm tot}^\mu
+ =L\left(\frac{1}{T_1}-\frac{1}{T_2}\right)^2\geq0.
+ \label{eq:onsager-positive}
+\end{equation}
+Thus nonnegative entropy production is a property of a constitutive law and
+its coefficients, not of \(\sum_AQ_A^\nu=0\).
+
+\subsection{Particle creation}
+
+When \(\Gamma_A\neq0\), chemical potentials and particle source terms enter
+Eq.~\eqref{eq:entropy-production}.  Constant specific entropy
+\(\dot\sigma_A=0\) imposes
+\begin{equation}
+ q_A=(\rho_A+p_A)\Gamma_A,
+ \label{eq:adiabatic-creation}
+\end{equation}
+but this is a constitutive restriction rather than a consequence of the
+continuity equation.  Cosmological matter-creation thermodynamics has long
+made this distinction explicit \cite{prigogine1988,calvao_lima_waga}.
+
+% =============================================================================
+\section{Compact topology: what vanishes and what does not}
+\label{sec:topology}
+
+Let each spatial slice be a smooth flat \(\Tthree\) with periodic fields and
+induced metric \(\gamma_{ij}\).  For any smooth periodic spatial vector,
+\begin{equation}
+ \int_{\Tthree}\dd^3x\,\sqrt{\gamma}\,D_iJ^i=0.
+ \label{eq:compact-divergence}
+\end{equation}
+This is the divergence theorem on a compact manifold without boundary.  It
+forbids interpreting a pure divergence as net inflow from an exterior.
+
+For a homogeneous entropy current, the integrated entropy balance is
+\begin{equation}
+ \frac{\dd}{\dd t}
+ \left(a^3V_0\sum_A n_A\sigma_A\right)
+ =a^3V_0\sum_A
+ \frac{q_A-\mu_An_A\Gamma_A}{T_A},
+ \label{eq:integrated-entropy}
+\end{equation}
+where \(V_0\) is the coordinate volume of the fundamental domain.  Compactness
+removes a boundary term from this equation; it does not set the right-hand
+side to zero and does not choose its sign.  Internal energy transfer and local
+entropy production remain possible.
+
+The same boundary fact also makes zero modes and global constraints important.
+A spatially constant mode is not fixed by Eq.~\eqref{eq:compact-divergence};
+its state, charge, and thermodynamic interpretation require separate input.
+
+\subsection{Provenance of the topology correction}
+
+Earlier ITSM working notes asserted that compact \(\Tthree\) topology requires
+an inward energy stream and that matter--plenum exchange exactly cancels
+entropy growth.  Both statements are withdrawn.  Equation~\eqref{eq:compact-divergence}
+excludes the proposed exterior boundary flux, while
+Eq.~\eqref{eq:entropy-production} shows why total energy conservation alone
+cannot cancel entropy production.  The previous v0.6.0 source and PDF remain
+preserved as provenance; the present manuscript supersedes their
+thermodynamic claims.
+
+% =============================================================================
+\section{Application to the conditional R4C1 action}
+\label{sec:r4c1}
+
+\subsection{Why R4C1 is used as a stress test}
+
+The general accounting boundary becomes operational when applied to a model
+whose interface currents are independently obtained from an action.  R4C1 is
+useful here because it contains several dynamical sectors and nonzero,
+action-derived exchange currents, including a reservoir transfer that changes
+sign on the registered trajectory, while supplying no dissipative
+constitutive closure.  It is therefore sufficiently specified to test
+conservation and finite reversible exchange, but deliberately insufficient to
+infer irreversible entropy production.  This application diagnoses the gap
+between those statements; it is not evidence that R4C1 is a completed or
+observationally viable cosmology.
+
+\subsection{Action-derived currents}
+
+The R4C1 candidate is a closed, reversible, classical field action on
+\(I\times\Tthree\).  It contains a conformally coupled dust sector, a complex
+amplitude/phase sector with an independent force chart, a constrained timelike
+frame, and a real reservoir field.  The baseline stress split gives the
+action-derived interface currents
+\begin{align}
+ \Qmp^\nu&=\beta T_m\nabla^\nu\psi, \\
+ \Qsyn^\nu&=-\frac{g_r}{2}s\,r\,\nabla^\nu r,
+ \qquad s=u^2+v^2 .
+ \label{eq:r4c1-currents}
+\end{align}
+On all field equations the corresponding sector identities are
+\begin{align}
+ \nabla_\mu T_m^{\mu\nu}&=\Qmp^\nu,\\
+ \nabla_\mu T_P^{\mu\nu}&=-\Qmp^\nu+\Qsyn^\nu,\\
+ \nabla_\mu T_R^{\mu\nu}&=-\Qsyn^\nu.
+ \label{eq:r4c1-balances}
+\end{align}
+Their sum vanishes.
+
+On the registered homogeneous background these reduce to
+\begin{align}
+ \dot\rho_m+3H\rho_m&=\Qmp^0,\\
+ \dot\rho_P+3H(\rho_P+p_P)&=-\Qmp^0+\Qsyn^0,\\
+ \dot\rho_R+3H(\rho_R+p_R)&=-\Qsyn^0.
+ \label{eq:r4c1-frw}
+\end{align}
+The numerical control has nonzero interface currents and a finest independently
+differenced sector-balance residual of \(7.96\times10^{-8}\).  The reservoir
+transfer changes sign over the sampled trajectory.  This is evidence for
+finite reversible energy exchange in the conditional model, not for an
+irreversible pump.
+
+\subsection{Why no entropy-production claim follows}
+
+The R4C1 action does not currently define:
+\begin{enumerate}
+\item sector temperatures \(T_m,T_P,T_R\);
+\item chemical potentials or particle currents for all sectors;
+\item nonzero production rates \(\Gamma_A\);
+\item a dissipative response matrix such as \(L_{AB}\);
+\item a coarse-graining map from the reversible field dynamics to macroscopic
+entropy; or
+\item a quantum state and renormalized entropy for the compact modes.
+\end{enumerate}
+Consequently Eq.~\eqref{eq:entropy-production} cannot yet be evaluated.
+
+There is a second caution.  Assigning a fraction \(\eta\) of the portal
+potential to a different sector changes the named reservoir current by
+\(\eta\nabla^\nu W\) while leaving the total action and stress unchanged.
+A sector entropy source built from a split-dependent current is not an
+observable until the subsystem convention and coarse graining are physically
+fixed.
+
+The action also conserves its full global \(U(1)\) current.  A nonzero
+condensate-number source has not been derived.  Energy exchange and charge
+creation must not be conflated.
+
+% =============================================================================
+\section{Thermodynamic stability is a constrained Hessian problem}
+\label{sec:stability}
+
+The second law and stability are different tests.  A nonnegative instantaneous
+entropy-production rate does not prove that an equilibrium is a local maximum
+of entropy.
+
+Let \(X^a\) denote independent extensive variables after all conserved totals
+and constraints have been imposed.  Local thermodynamic stability requires
+\begin{equation}
+ H^{(S)}_{ab}
+ \equiv
+ \frac{\partial^2S_{\rm tot}}{\partial X^a\partial X^b}
+ \preceq0
+ \label{eq:entropy-hessian}
+\end{equation}
+on the allowed tangent space.  Equivalently, an energy representation requires
+the appropriate susceptibility matrix to be positive semidefinite.
+
+For two subsystems exchanging only energy at fixed total energy,
+\begin{equation}
+ \frac{\dd^2 S_{\rm tot}}{\dd E_1^2}
+ =-\frac{1}{T_1^2C_1}
+  -\frac{1}{T_2^2C_2}.
+ \label{eq:heat-capacity}
+\end{equation}
+Positive heat capacities are sufficient for stability along this one transfer
+direction, but a coupled matter--plenum system can have additional density,
+charge, amplitude, phase, and modulus directions.  Each physical eigenvalue of
+the constrained Hessian must be reported over a registered domain.
+
+The current R4C1 quadratic-action work concerns dynamical kinetic, gradient,
+constraint, and mass matrices.  Those are necessary for field stability but
+are not interchangeable with Eq.~\eqref{eq:entropy-hessian}.  No numerical
+thermodynamic Hessian eigenvalues are claimed here.
+
+% =============================================================================
+\section{Exchange does not by itself cause acceleration}
+\label{sec:acceleration}
+
+In Einstein gravity an FLRW background obeys
+\begin{equation}
+ \frac{\ddot a}{a}
+ =-\frac{1}{6M_P^2}
+ \sum_A(\rho_A+3p_A).
+ \label{eq:acceleration}
+\end{equation}
+The transfer terms cancel from the summed continuity equation
+\eqref{eq:total-continuity}.  Exchange may alter the sector partition and hence
+the pressures, but acceleration requires a solved stress history satisfying
+Eq.~\eqref{eq:acceleration}.  Entropy production, an acceleration transition,
+and thermodynamic stability are therefore three distinct questions.
+
+This separation has become observationally concrete.  A recent background
+analysis of thermogravity found that acceleration generated solely by universal
+energy non-conservation is strongly disfavored by supernovae plus DESI BAO,
+with a reported \(\Delta\chi^2\simeq+51\) relative to flat
+\(\Lambda\)CDM \cite{lee2026}.  R4C1 is not that model: its total stress is
+conserved.  The comparison nevertheless shows why an exchange mechanism
+cannot be promoted from formal consistency to cosmological success without
+deriving \(H(z)\), the ruler calibration, and the observational dictionary.
+
+% =============================================================================
+\section{Methodological conditions for syntropic cosmological claims}
+\label{sec:programme}
+
+To avoid conflating conservation identities with thermodynamic closure, a
+model in the interacting-sector class considered here that advances a positive
+syntropic claim must provide the following model-specific ingredients and
+tests:
+\begin{enumerate}
+\item a declared physical subsystem split and equations of state
+\(\rho_A(n_A,\sigma_A,\ldots)\);
+\item temperatures, chemical potentials, entropy currents, and particle
+currents derived from that state space;
+\item action-derived or microphysically derived \(\Gamma_A\) where particle
+creation is claimed;
+\item a causal constitutive closure for heat, diffusion, viscosity, chemical
+reactions, and reservoir transfer, with a positive entropy-production form;
+\item the constrained entropy Hessian and all eigenvalues over a registered
+domain;
+\item compatibility between thermodynamic and quadratic-action stability,
+including constraint singularities.
+\end{enumerate}
+
+These conditions are necessary within the local-equilibrium framework used
+here; they are not jointly sufficient, and alternative thermodynamic
+formalisms must supply equivalent physical closure.  If a claim extends to
+cosmic acceleration or observational viability, it additionally requires the
+full action-derived \(H(z)\), \(q(z)\), sound horizon, BBN history, and
+perturbations, followed by common-prior likelihood comparisons.  Independent
+external review remains a publication requirement, not a substitute for any
+physical item above.
+
+A failure of any positivity, causality, uniqueness, or observational test must
+remain visible.  Conversely, passing a conservation residual or a Hessian
+check alone would not establish the rest of the chain.
+
+% =============================================================================
+\section{Conclusions}
+\label{sec:conclusions}
+
+The covariant entropy identity
+\eqref{eq:entropy-production} supplies the missing accounting boundary for
+interacting ITSM sectors.  It establishes four points.
+
+First, total stress conservation and entropy production are logically
+independent.  Second, compact \(\Tthree\) topology removes external boundary
+flux rather than supplying it.  Third, R4C1 presently realizes finite,
+action-derived, reversible exchange but does not contain the constitutive data
+needed to prove positive entropy production or particle creation.  Fourth,
+thermodynamic stability, dynamical field stability, and cosmic acceleration
+are separate calculations.
+
+The resulting audit sequence is portable across interacting-sector models:
+derive the currents, specify the thermodynamic state space and constitutive
+closure, evaluate entropy production, test the constrained thermodynamic and
+field-stability spectra, and only then confront cosmological observables.
+R4C1 currently reaches the first step and a bounded reversible-exchange
+control.
+
+Within that scope, this work provides a covariant framework in which proposals
+for entropy reduction, heat-death avoidance, or exchange-driven acceleration
+can be made falsifiable without confusing conservation identities with
+thermodynamic closure.  It establishes none of those positive mechanisms in
+the present conditional model.
+
+\section*{Reproducibility and provenance}
+
+The conditional action is frozen in
+\texttt{RES001\_R4C1\_ACTION\_FREEZE\_2026-09-25.md}
+(SHA-256 prefix \texttt{81bfc2e4f17b}).  The first-variation report containing
+Eq.~\eqref{eq:r4c1-currents} has prefix \texttt{4834ea7517fd}; the interacting
+background report containing Eq.~\eqref{eq:r4c1-frw} has prefix
+\texttt{48b49fddd906}.  Full digests, contracts, executables, and JSON receipts
+are retained in the companion repository.  Hashes establish artifact identity,
+not physical truth or independent review.
+
+\section*{Declaration on the use of artificial-intelligence tools}
+
+Artificial-intelligence-assisted tools were used for editorial drafting,
+source-code assistance, and checks of symbolic and numerical consistency.
+The author independently reviewed the manuscript, equations, cited sources,
+and generated artifacts and accepts full responsibility for the content.
+
+\begin{acknowledgments}
+The author thanks the reviewers and collaborators who insisted on separating
+energy conservation, entropy production, stability, and acceleration.
+Remaining errors are the author's.
+\end{acknowledgments}
+
+\bibliography{thermodynamics_v0.7.1}
+
+\end{document}

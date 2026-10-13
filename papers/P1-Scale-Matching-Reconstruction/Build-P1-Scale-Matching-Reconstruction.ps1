@@ -24,6 +24,15 @@ $PdfName = "${JobStem}.pdf"
 $SidecarName = "${PdfName}.sha256"
 $SourceName = "main.tex"
 
+# A generic or obsolete PDF may be a distinct historical build. Never delete
+# it as a side effect of compiling the current versioned artifact.
+@("main.pdf", "main.pdf.sha256", "Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf") | ForEach-Object {
+    $legacy = Join-Path $PaperDir $_
+    if (Test-Path -LiteralPath $legacy) {
+        throw "Unversioned PDF artifact found: $legacy. Hash and archive it before building."
+    }
+}
+
 if ($env:CONDA_DEFAULT_ENV -and $env:CONDA_DEFAULT_ENV -ne "itsm_env") {
     Write-Warning "Current conda env is '$($env:CONDA_DEFAULT_ENV)', not itsm_env."
 }
@@ -69,27 +78,25 @@ try {
 
     $named = Join-Path $PaperDir $PdfName
     $pdf = Get-Item $named
-    $hash = (Get-FileHash -Algorithm SHA256 -LiteralPath $pdf.FullName).Hash.ToLowerInvariant()
+    $stream = [System.IO.File]::OpenRead($pdf.FullName)
+    try {
+        $sha256 = [System.Security.Cryptography.SHA256]::Create()
+        try {
+            $hash = ([System.BitConverter]::ToString($sha256.ComputeHash($stream))).Replace("-", "").ToLowerInvariant()
+        }
+        finally {
+            $sha256.Dispose()
+        }
+    }
+    finally {
+        $stream.Dispose()
+    }
     "$hash  $PdfName" | Set-Content -LiteralPath (Join-Path $PaperDir $SidecarName) -Encoding ascii
 
     # Keep generated bibliography byproducts out of the paper directory.
     @("$JobStem.bbl", "${JobStem}Notes.bib") | ForEach-Object {
         $buildProduct = Join-Path $PaperDir $_
         if (Test-Path $buildProduct) { Remove-Item -Force $buildProduct }
-    }
-
-    # Remove the generic deliverable name after the canonical output is verified.
-    @("main.pdf", "main.pdf.sha256") | ForEach-Object {
-        $legacy = Join-Path $PaperDir $_
-        if (Test-Path $legacy) { Remove-Item -Force $legacy }
-    }
-
-    # Remove obsolete unversioned share names if present
-    @(
-        "Boyd_P1_Present-Epoch_Scale_Matching_Cobs_Hygiene.pdf"
-    ) | ForEach-Object {
-        $old = Join-Path $PaperDir $_
-        if (Test-Path $old) { Remove-Item -Force $old }
     }
 
     Write-Host "OK canonical PDF: $($pdf.FullName) ($([math]::Round($pdf.Length/1KB,1)) KB)"

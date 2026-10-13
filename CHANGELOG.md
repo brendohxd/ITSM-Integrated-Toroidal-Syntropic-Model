@@ -1,5 +1,43 @@
 # ITSM Changelog & Archive History
 
+## Bounded dust, physical-domain and matching checkpoint; paper catch-up (2026-10-13)
+
+- Added the [checkpoint/evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)
+  and exact-byte manifest covering previously uncommitted research and paper
+  preparation. Existing failed attempts, source versions and sidecars are retained.
+- [Stage 1](Theory/Gates/RES-001/RES001_R4C1_G3N5_DUST_STAGE1_ACCEPTANCE_REPORT_2026-10-12.md)
+  now meets its original bounded linear prepared-dust research acceptance:
+  evolving full-state split, correction/fast forcing, controlled remainder,
+  operator-order witness, useful finite-mode certificates and exact seed bridge.
+  This does not complete the three-stage goal or establish physical dust closure.
+- Retained the [GR-family entry survey](Theory/Gates/RES-001/RES001_R4C1_GR_FAMILY_SURVEY_REPORT_2026-10-11.md),
+  nonanalytic/tail/retarded response, coupled vertices and charge/domain controls.
+  The [fixed quadratic-charge comparison](Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_RETARDED_V3_REPORT_2026-10-13.md)
+  passes 5012/5012 local checks but does not remove the timing warning or supply
+  a physical cutoff/window, complete nonlinear remainder or healthy GR proof.
+  Stage 2 remains incomplete; Stage 3 is not entered.
+- Added the [physical matching route decision](Theory/Gates/MAT-001/MAT001_PHYSICAL_MATCHING_ROUTE_DECISION_2026-10-13.md)
+  and separate RM1/ST1/ST2 screens. RM1's tested radial portal fails the desired
+  soft static phase source; ST1's nonzero source retains an unfixed physical
+  kinetic ratio; ST2's finite quantum threshold retains independent renormalized
+  inputs and a radiative-background obstruction. No canonical parent is adopted.
+- Retained P1/P2 `0.2.0-rc1` through `rc3`, their source/build/preparation records,
+  the local referee-style/Grok reconciliation, Thermodynamics `0.7.1` and R4C1
+  `0.1.1` conditional review packages. Targeted revisions, author confirmation,
+  independent review and submission decisions are not declared complete. P2's
+  stringent sensitivity receipt remains 18/19 `FAIL`, not a repaired pass.
+- Preserved the operator-approved byte-identical legacy cover-letter and
+  supplementary-PDF renames, the retained-document version naming rule and
+  legacy-build hash records. No existing PDF is rebuilt for this checkpoint.
+- Excluded all `.local/` runtimes, raw transcripts, private QA/staging/logs and
+  the five nonconverged legacy tethered-MCMC files from publication without
+  deleting them. Vault recovery/backup/audit receipts stay outside public Git.
+  Added exact-byte Git attributes for the additional scientific receipts.
+- Refreshed README, branch guide, dashboard and site-repository documentation.
+  Canonical Tests 1-3/MAT/UVIR and publication holds remain unchanged; Rule-9
+  remains `DEFERRED`, `physics_pass=false`, `gate_effect=NONE`. Commit/push is
+  authorized for this checkpoint; no Pages deployment or journal submission.
+
 ## Conditional G3N5 constraints and canonical-energy checkpoint (2026-10-11)
 
 - Added the [homogeneous canonical-energy report](Theory/Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_REPORT_2026-10-11.md),

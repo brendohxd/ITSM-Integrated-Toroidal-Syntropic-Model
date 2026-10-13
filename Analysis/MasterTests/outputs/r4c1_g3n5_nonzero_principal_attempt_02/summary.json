@@ -1,0 +1,85 @@
+{
+  "Rule9_cleared": false,
+  "artifacts": {
+    "formulas.json": "5d8a4bc42fed2c9538c0554f33c51eb242a8977763ab5bb72a29677755e18d50"
+  },
+  "checks": [
+    {
+      "criterion": "zero_exact",
+      "name": "scalar_wave_factor",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "scalar_fast_factor",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "wave_pencil_determinant",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "companion_characteristic_factor",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "zero_eigenvector",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "nontrivial_Jordan_chain",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "matter_characteristic_factor",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "1 with algebraic multiplicity 2",
+      "name": "zero_geometric_multiplicity",
+      "passed": true,
+      "value": 1
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "slow_effective_time_coefficient",
+      "passed": true,
+      "value": []
+    }
+  ],
+  "gate_effect": "NONE",
+  "nonclaim": "Separate local derivation by the same agent, not an external reviewer",
+  "passed": 9,
+  "physics_pass": false,
+  "preserved_v1_failure": {
+    "cause": "Distinct assumption-qualified Symbols used in charpoly assertions; density derivation unchanged",
+    "checks": [
+      "companion_characteristic_factor",
+      "matter_characteristic_factor"
+    ],
+    "passed": 7,
+    "total": 9,
+    "validation": "FAIL_LOCAL_CHECKS"
+  },
+  "review_status": "DEFERRED",
+  "schema": "r4c1-g3n5-nonzero-principal-v2",
+  "source_sha256": {
+    "Analysis/MasterTests/test_01_r4c1_g3n5_nonzero_principal_v1.py": "09b3ad3fa6045fbbc283f46d479565adf9f2497748793e6102896698281f28eb",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_nonzero_principal_v2.py": "01adbf26bec2db76e485915477b43bd0dba6ab4c3f3c41b0bcce6cf954c1cc6a"
+  },
+  "status": "LOCAL_PRINCIPAL_DENSITY_WITH_ZERO_SPEED_JORDAN_OBSTRUCTION",
+  "total": 9,
+  "validation": "PASS_LOCAL_CHECKS"
+}

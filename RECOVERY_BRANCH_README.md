@@ -5,7 +5,28 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
-## Latest R4C1 research checkpoint - 8 October 2026
+## Latest research and paper checkpoint - 13 October 2026
+
+Use the [13 October checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)
+for the complete newly retained evidence map. The [bounded dust Stage-1 calculation](Theory/Gates/RES-001/RES001_R4C1_G3N5_DUST_STAGE1_ACCEPTANCE_REPORT_2026-10-12.md)
+is complete only in the registered linear rotating-B1 prepared-data scope,
+with explicit correction, forcing, order and finite-mode error certificates.
+It does not close canonical Test 1 or physical dust stability.
+
+Stage 2 remains `STOP_AND_ASSESS_DOMAIN_UNRESOLVED`, with the approved same-action
+diagnostic continuation. The [fixed-charge retarded comparison](Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_RETARDED_V3_REPORT_2026-10-13.md)
+retains the coupled timing warning; no family is admitted to a physical window.
+The separate [MAT matching screens](Theory/Gates/MAT-001/MAT001_PHYSICAL_MATCHING_ROUTE_DECISION_2026-10-13.md)
+do not determine the matter residue or nonlinear force normalization. Stage 3
+is not entered; MAT-001 remains blocked and no numerical acceleration is sealed.
+
+The checkpoint also retains versioned P1/P2 release candidates, Thermodynamics
+and R4C1 conditional drafts, and their preparation/review records. Publication
+readiness, author decisions and independent review remain outstanding. Raw
+transcripts, local runtimes/QA, vault data and the nonconverged legacy tethered
+MCMC run remain local. No site deployment or journal submission is implied.
+
+## Earlier R4C1 research checkpoint - 8 October 2026
 
 Use the [checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md)
 for the current conditional G3 chain. G3DF reconstructs density on prepared

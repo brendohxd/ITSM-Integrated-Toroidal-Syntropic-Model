@@ -1,0 +1,39 @@
+{
+  "background": {
+    "H_min": "H0_lower-E0_upper*T/Mcos_lower",
+    "charge": "Q=a^3*(u*v_dot-v*u_dot) constant; J^2=Q^2/a^6",
+    "energy_balance": "E_dot=-3H*(kin+rho)",
+    "interval_scope": "exact ideal recipe AND all stored binary64 parameter/seed values in one outward enclosure; not archived solver-error certification",
+    "phase_min": "p0_lower/exp(3H0_upper*T)-beta_upper*E0_upper*T/K_lower",
+    "regular_domain": "positive scalar potential/K/Mcos, rho positive, verified H/phase bootstrap margins; finite amplitudes imply ODE continuation on [0,T]",
+    "total_energy": "K*pd**2/2 + gr*r**2*(u**2 + v**2)/4 + l4*(u**2 + v**2)**2/8 + lr*r**4/4 + m2*(u**2 + v**2)/2 + mr2*r**2/2 + rd**2/2 + rho + ud**2/2 + vd**2/2 + l6*(u**2 + v**2)**3/(24*Lambda**2)"
+  },
+  "energy_identity": "2*Fforce*v - 6*H*v**2 - 2*H*cv*kn**2*x**2/a**2 + v*x*(-2*m + 2*mu**2)",
+  "energy_scope": "positive auxiliary comparison norm, NOT the physical coupled Hamiltonian",
+  "families": {
+    "archived_G3": {
+      "cV2": "(17*eta - 256)/(40*(eta - 8))",
+      "canonical_mass": "(-13*H**2 + 26*Hdot - 936*psi_dot**2 + 24*u0**2*v_dot**2 - 48*u0*u_dot*v0*v_dot + 24*u_dot**2*v0**2)/52",
+      "frame_mass": "2*(13*H**2 + 13*Hdot - 117*psi_dot**2 + 3*u0**2*v_dot**2 - 6*u0*u_dot*v0*v_dot + 3*u_dot**2*v0**2)/13",
+      "sigma": "eta/(eta - 8)"
+    },
+    "new_B1_frame": {
+      "cV2": "4/5",
+      "canonical_mass": "(-65*H**2 - 442*Hdot - 4680*psi_dot**2 + 120*u0**2*v_dot**2 - 240*u0*u_dot*v0*v_dot + 120*u_dot**2*v0**2)/260",
+      "frame_mass": "(130*H**2 - 13*Hdot - 1170*psi_dot**2 + 30*u0**2*v_dot**2 - 60*u0*u_dot*v0*v_dot + 30*u_dot**2*v0**2)/65",
+      "sigma": "0"
+    },
+    "new_hierarchical": {
+      "cV2": "-(15*eta**3 - 32*eta**2 + 256)/(40*(eta**2 - 8))",
+      "canonical_mass": "(-65*H**2 - 195*Hdot*eta - 442*Hdot - 4680*psi_dot**2 + 120*u0**2*v_dot**2 - 240*u0*u_dot*v0*v_dot + 120*u_dot**2*v0**2)/260",
+      "frame_mass": "(520*H**2 - 195*Hdot*eta - 52*Hdot - 4680*psi_dot**2 + 120*u0**2*v_dot**2 - 240*u0*u_dot*v0*v_dot + 120*u_dot**2*v0**2)/260",
+      "sigma": "eta**2/(eta**2 - 8)"
+    }
+  },
+  "full_signed_forcing": "S_Vy(n)=-3*A*abs(psi_dot)^3*epsilon*abs(epsilon)*w*abs(w)*b_n/2, all odd n",
+  "generic_cV2": "(-2*MP2*c1 + MU2*c1**2 - MU2*c3**2)/(2*(c1 + c4)*(-MP2 + MU2*c1 + MU2*c3))",
+  "generic_frame_mass": "(2*H**2*MU2*c1 + 2*H**2*MU2*c4 - 3*Hdot*MU2*c2 - Hdot*MU2*c3 + Hdot*MU2*c4 - K_Q*psi_dot**2 + u0**2*v_dot**2*zeta - 2*u0*u_dot*v0*v_dot*zeta + u_dot**2*v0**2*zeta)/(MU2*(c1 + c4))",
+  "generic_sigma": "MU2*(c1 + c3)/(-MP2 + MU2*c1 + MU2*c3)",
+  "infinite_tail": "all complex Fourier pairs |n|>N, forcing b_n/2, Parseval sum b_n^2/2",
+  "zero_energy_limit": "apply comparison to sqrt(E+delta^2) and let delta decrease to0; no division by zero"
+}

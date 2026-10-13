@@ -7,10 +7,35 @@
 
 ---
 
-## R4C1 research checkpoint and next work - 8 October 2026
+## Research checkpoint and next work - 13 October 2026
+
+The [13 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)
+records the newly retained dust, coupled-interaction and matching evidence.
+The canonical authority baseline and dated gate snapshots remain unchanged.
+
+- Stage 1: `BOUNDED_STAGE1_RESEARCH_ACCEPTANCE_MET` in the registered linear B1
+  prepared-dust scope only; see the [acceptance report](Theory/Gates/RES-001/RES001_R4C1_G3N5_DUST_STAGE1_ACCEPTANCE_REPORT_2026-10-12.md).
+  Explicit error/order evidence is not physical/canonical dust clearance.
+- Stage 2: incomplete / `STOP_AND_ASSESS_DOMAIN_UNRESOLVED`, with approved
+  unchanged-action continuation. The [fixed-charge comparison](Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_RETARDED_V3_REPORT_2026-10-13.md)
+  retains the coupled timing warning and admits no physical family.
+- Stage 3: `NOT_ENTERED`. The [RM1/ST1/ST2 matching screens](Theory/Gates/MAT-001/MAT001_PHYSICAL_MATCHING_ROUTE_DECISION_2026-10-13.md)
+  leave genuine matter-residue and nonlinear-force identifying inputs absent.
+  Their source portals and heavy field are declared controls, not canonical
+  parent adoption or computed numerical ITSM constants.
+
+**Next research boundary:** continue a bounded physical-domain/constraint/GR
+diagnostic within the approved R4C1 route, or prepare an independently justified
+matching mechanism before selecting a new parent. No target-coefficient tuning,
+observational prediction promotion, automatic TOP-X4 pivot or gate closure.
+Tests 1-3 `HOLD_SUBSTANTIVE`; MAT-001 `BLOCKED`; UVIR-003 `IN_PROGRESS`;
+`K_Q=NOT_DERIVED`; `V=NOT_COMPUTED`; Stage 4A `CLOSED`. Review `DEFERRED`,
+`Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
+
+## Earlier R4C1 research checkpoint and next work - 8 October 2026
 
 The [checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md)
-is the newest conditional R4C1 evidence/navigation update; the canonical
+records the earlier conditional R4C1 evidence/navigation update; the canonical
 authority baseline and other dated gate snapshots below remain unchanged.
 
 Prepared density reconstruction is numerically accurate in its declared

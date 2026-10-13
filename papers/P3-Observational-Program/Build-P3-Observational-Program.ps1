@@ -22,6 +22,15 @@ $PdfName = "${JobStem}.pdf"
 $SidecarName = "${PdfName}.sha256"
 $SourceName = "main.tex"
 
+# A generic PDF may be a distinct historical build. Preserve it for a
+# separately hashed/versioned archive rather than deleting it after compilation.
+@("main.pdf", "main.pdf.sha256") | ForEach-Object {
+    $legacy = Join-Path $PaperDir $_
+    if (Test-Path -LiteralPath $legacy) {
+        throw "Unversioned PDF artifact found: $legacy. Hash and archive it before building."
+    }
+}
+
 foreach ($cmd in @("pdflatex", "bibtex")) {
     if (-not (Get-Command $cmd -ErrorAction SilentlyContinue)) {
         throw "$cmd not found on PATH."
@@ -55,12 +64,6 @@ try {
     @("$JobStem.bbl", "${JobStem}Notes.bib") | ForEach-Object {
         $buildProduct = Join-Path $PaperDir $_
         if (Test-Path $buildProduct) { Remove-Item -Force $buildProduct }
-    }
-
-    # Remove the generic deliverable name after the canonical output is verified.
-    @("main.pdf", "main.pdf.sha256") | ForEach-Object {
-        $legacy = Join-Path $PaperDir $_
-        if (Test-Path $legacy) { Remove-Item -Force $legacy }
     }
 
     Write-Host "OK canonical PDF: $($pdf.FullName) ($([math]::Round($pdf.Length/1KB,1)) KB)"

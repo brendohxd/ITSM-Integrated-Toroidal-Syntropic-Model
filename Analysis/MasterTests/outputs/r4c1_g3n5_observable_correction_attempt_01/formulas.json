@@ -1,0 +1,174 @@
+{
+  "auxiliary_chart_invariance": "H->H(I+ell^-2 Z): N2->N2+[M,Z]-Zdot, J2->J2+Z, N_obs unchanged",
+  "definition": "N_obs=N2+J2_dot+[J2,M], multiplying coordinate ell^-2, not physical p^-2 without a^2 conversion",
+  "domain": "Formal high-ell coefficient on rotating B1 J=1, preserved Friedmann shell, a,C,rho_m>0; frozen short-time background [0,1/20]",
+  "matrices": {
+    "lift_correction_N2": {
+      "entries": [
+        {
+          "column": 0,
+          "row": 0,
+          "terms": [
+            "-72*H**3*a**2/5 - 288*H**2*a**2*psi_dot/5 + 12*H*a**2*r0**4/77 + 36*H*a**2*r0**2*u0**2/77 + 36*H*a**2*r0**2*v0**2/77 + 48*H*a**2*r0**2/11 + 1572*H*a**2*rho_m/275 + H*a**2*u0**6/110 + 3*H*a**2*u0**4*v0**2/110 + 2*H*a**2*u0**4/11 + 3*H*a**2*u0**2*v0**4/110 + 4*H*a**2*u0**2*v0**2/11 + 24*H*a**2*u0**2/11 + H*a**2*v0**6/110 + 2*H*a**2*v0**4/11 + 24*H*a**2*v0**2/11 - 44*H*a**2/375 + 36*a**2*psi_dot*r0**4/77 + 108*a**2*psi_dot*r0**2*u0**2/77 + 108*a**2*psi_dot*r0**2*v0**2/77 + 144*a**2*psi_dot*r0**2/11 + 696*a**2*psi_dot*rho_m/55 + 3*a**2*psi_dot*u0**6/110 + 9*a**2*psi_dot*u0**4*v0**2/110 + 6*a**2*psi_dot*u0**4/11 + 9*a**2*psi_dot*u0**2*v0**4/110 + 12*a**2*psi_dot*u0**2*v0**2/11 + 72*a**2*psi_dot*u0**2/11 + 3*a**2*psi_dot*v0**6/110 + 6*a**2*psi_dot*v0**4/11 + 72*a**2*psi_dot*v0**2/11 - 12*a**2*r0**3*r_dot/77 - 18*a**2*r0**2*u0*u_dot/77 - 18*a**2*r0**2*v0*v_dot/77 - 18*a**2*r0*r_dot*u0**2/77 - 18*a**2*r0*r_dot*v0**2/77 - 24*a**2*r0*r_dot/11 - 3*a**2*u0**5*u_dot/220 - 3*a**2*u0**4*v0*v_dot/220 - 3*a**2*u0**3*u_dot*v0**2/110 - 2*a**2*u0**3*u_dot/11 - 3*a**2*u0**2*v0**3*v_dot/110 - 2*a**2*u0**2*v0*v_dot/11 - 3*a**2*u0*u_dot*v0**4/220 - 2*a**2*u0*u_dot*v0**2/11 - 12*a**2*u0*u_dot/11 - 3*a**2*v0**5*v_dot/220 - 2*a**2*v0**3*v_dot/11 - 12*a**2*v0*v_dot/11"
+          ]
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "terms": [
+            "-27*H**2*a**2/5 + 66*H*a**2*psi_dot/5 + 9*a**2*r0**4/154 + 27*a**2*r0**2*u0**2/154 + 27*a**2*r0**2*v0**2/154 + 18*a**2*r0**2/11 + 18*a**2*rho_m/11 + 3*a**2*u0**6/880 + 9*a**2*u0**4*v0**2/880 + 3*a**2*u0**4/44 + 9*a**2*u0**2*v0**4/880 + 3*a**2*u0**2*v0**2/22 + 9*a**2*u0**2/11 + 3*a**2*v0**6/880 + 3*a**2*v0**4/44 + 9*a**2*v0**2/11 - 22*a**2/375"
+          ]
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "terms": [
+            "432*H*a**2*psi_dot*rho_m/55 - 864*a**2*psi_dot**2*rho_m/275 - 2232*a**2*rho_m**2/3025 + 48*a**2*rho_m/125"
+          ]
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "terms": [
+            "-432*a**2*psi_dot*rho_m/55"
+          ]
+        }
+      ],
+      "shape": [
+        2,
+        2
+      ]
+    },
+    "observable_N2_initial": {
+      "entries": [
+        {
+          "column": 0,
+          "row": 0,
+          "terms": [
+            "372/1375"
+          ]
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "terms": [
+            "706493/330000"
+          ]
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "terms": [
+            "130249/1512500 + 144*sqrt(4006695)/529375"
+          ]
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "terms": [
+            "-444/1375 + 6*sqrt(4006695)/21175"
+          ]
+        }
+      ],
+      "shape": [
+        2,
+        2
+      ]
+    },
+    "observable_correction_N2": {
+      "entries": [
+        {
+          "column": 0,
+          "row": 0,
+          "terms": [
+            "372*a**2*psi_dot*rho_m/55"
+          ]
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "terms": [
+            "9*H**2*a**2 - 4*a**2*psi_dot**2/25 - 15*a**2*r0**4/154 - 45*a**2*r0**2*u0**2/154 - 45*a**2*r0**2*v0**2/154 - 30*a**2*r0**2/11 - 4*a**2*rho_m/75 - a**2*u0**6/176 - 3*a**2*u0**4*v0**2/176 - 5*a**2*u0**4/44 - 3*a**2*u0**2*v0**4/176 - 5*a**2*u0**2*v0**2/22 - 15*a**2*u0**2/11 - a**2*v0**6/176 - 5*a**2*v0**4/44 - 15*a**2*v0**2/11"
+          ]
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "terms": [
+            "108*H**2*a**2*rho_m/55 + 864*H*a**2*psi_dot*rho_m/55 - 864*a**2*psi_dot**2*rho_m/275 - 18*a**2*r0**4*rho_m/847 - 54*a**2*r0**2*rho_m*u0**2/847 - 54*a**2*r0**2*rho_m*v0**2/847 - 72*a**2*r0**2*rho_m/121 - 4032*a**2*rho_m**2/3025 - 3*a**2*rho_m*u0**6/2420 - 9*a**2*rho_m*u0**4*v0**2/2420 - 3*a**2*rho_m*u0**4/121 - 9*a**2*rho_m*u0**2*v0**4/2420 - 6*a**2*rho_m*u0**2*v0**2/121 - 36*a**2*rho_m*u0**2/121 - 3*a**2*rho_m*v0**6/2420 - 3*a**2*rho_m*v0**4/121 - 36*a**2*rho_m*v0**2/121 + 44*a**2*rho_m/125"
+          ]
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "terms": [
+            "36*H*a**2*rho_m/11 - 444*a**2*psi_dot*rho_m/55"
+          ]
+        }
+      ],
+      "shape": [
+        2,
+        2
+      ]
+    },
+    "observation_J2": {
+      "entries": [
+        {
+          "column": 0,
+          "row": 0,
+          "terms": [
+            "-18*H**2*a**2/5 - 72*H*a**2*psi_dot/5 + 3*a**2*r0**4/77 + 9*a**2*r0**2*u0**2/77 + 9*a**2*r0**2*v0**2/77 + 12*a**2*r0**2/11 + 12*a**2*rho_m/11 + a**2*u0**6/440 + 3*a**2*u0**4*v0**2/440 + a**2*u0**4/22 + 3*a**2*u0**2*v0**4/440 + a**2*u0**2*v0**2/11 + 6*a**2*u0**2/11 + a**2*v0**6/440 + a**2*v0**4/22 + 6*a**2*v0**2/11 + 22*a**2/375"
+          ]
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "terms": [
+            "-6*H*a**2 + 2*a**2*psi_dot/5"
+          ]
+        }
+      ],
+      "shape": [
+        2,
+        2
+      ]
+    },
+    "slow_chart_G": {
+      "entries": [
+        {
+          "column": 1,
+          "row": 0,
+          "terms": [
+            "1"
+          ]
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "terms": [
+            "-6*rho_m"
+          ]
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "terms": [
+            "-13*H - 2*psi_dot/5"
+          ]
+        }
+      ],
+      "shape": [
+        2,
+        2
+      ]
+    }
+  },
+  "nonclaims": [
+    "No closed projected dust evolution",
+    "Full retained fast/wave forcing and original mismatch remain",
+    "No controlled corrected-system remainder or sharp-order theorem",
+    "No physical window, healthy GR, microscopic matching or numerical acceleration prediction"
+  ],
+  "rho_inverse_lower": "17/100",
+  "source_terms": "R2 retains complete Laurent generator, evolving H2, M and H3; only principal-kernel compatibility projected for coefficient derivation"
+}

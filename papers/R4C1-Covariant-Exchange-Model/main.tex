@@ -1,0 +1,640 @@
+% =============================================================================
+% R4C1 conditional theory paper
+% Version 0.1.1-conditional-draft
+% =============================================================================
+\documentclass[aps,prd,reprint,superscriptaddress,nofootinbib,floatfix]{revtex4-2}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\Tthree}{T^{3}}
+\newcommand{\Qmp}{Q_{\mathrm{mp}}}
+\newcommand{\Qsyn}{Q_{\mathrm{syn}}}
+\newcommand{\Mpl}{M_{\mathrm P}}
+\newcommand{\dd}{\mathrm{d}}
+
+\begin{document}
+
+\title{A covariant finite-density exchange model: conservation, canonical
+density dynamics, and limits of nonlinear force matching}
+
+\author{Brendon Boyd}
+\email{brendon.boyd@itsm-cosmology.org}
+\affiliation{Independent Researcher, Burswood, Western Australia, Australia}
+\thanks{%
+\begin{tabular}{@{}l@{\ }l@{}}
+ORCID: & \href{https://orcid.org/0009-0007-4177-2612}{0009-0007-4177-2612} \\
+Repository: & \href{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}{\texttt{github.com/brendohxd/ITSM-...}} \\
+\end{tabular}%
+}
+
+\date{Version 0.1.1-conditional-draft --- \today}
+
+\begin{abstract}
+Interacting cosmologies often postulate a transfer vector or infer a local
+force normalization from homogeneous evolution without deriving both from a
+common action.  This paper separates three questions: whether the exchange
+current follows from a declared off-shell action, whether the constrained
+system is stable and well posed, and whether the resulting theory reproduces
+the proposed weak-field or cosmological phenomenology.  We study a conditional
+four-dimensional model containing Einstein gravity, pressureless matter
+coupled through a conformal metric, a complex finite-charge scalar, an
+independent force field and timelike frame, and a real reservoir.  Direct
+variation yields finite interface currents
+\[
+ \nabla_\mu T_m^{\mu\nu}=\Qmp^\nu,\quad
+ \nabla_\mu T_P^{\mu\nu}=-\Qmp^\nu+\Qsyn^\nu,\quad
+ \nabla_\mu T_R^{\mu\nu}=-\Qsyn^\nu,
+\]
+whose sum vanishes on shell.  A registered finite-interval homogeneous
+solution exhibits nonzero reversible exchange while conserving the full scalar
+charge.  On a formal reduced slow branch, the physical dust-density coordinate
+has
+\(K_D=a^5\rho_m/k^2>0\), exactly matching the uncoupled normalization of an
+independent coupled-fluid effective field theory.  These are action-level and
+convention-level controls, not a claim of full stability: the density
+Hamiltonian is indefinite in its growing-mass direction, and an
+equal-Newton-coupling family retains a defective double zero-speed scalar
+root.
+
+The homogeneous equations are insensitive to the cubic spatial-force
+coefficient, whose invariant normalization is therefore not identifiable from
+background matching.  On compact \(\Tthree\), the static force equation also
+requires a zero-mean source; a universal pointwise square-root prescription
+fails a curl test, and a finite fourth-derivative regulator makes the
+arbitrarily weak fixed-scale response linear rather than square-root.  These
+are scoped obstructions, not a rejection of every nonlinear regime.  The
+model provides an action-derived source-vector construction and sharp
+consistency tests, but not a completed cosmology, a derived MOND
+normalization, or a physics-stable perturbation theory.
+\end{abstract}
+
+\keywords{interacting cosmology; covariant action; energy transfer;
+effective field theory; compact topology; modified gravity}
+
+\maketitle
+
+% =============================================================================
+\section{Introduction}
+\label{sec:introduction}
+
+An interacting cosmology is not one claim but a chain of distinct claims.  The
+following three questions are often conflated:
+\begin{enumerate}
+\item Is the exchange current derived from a complete off-shell action?
+\item Is the resulting constrained dynamical system stable and well posed?
+\item Does the model reproduce a proposed weak-field or cosmological
+phenomenology?
+\end{enumerate}
+An affirmative answer to the first does not answer the other two.  R4C1 is
+used here as a conditional finite-density construction: the displayed action,
+field chart, couplings, boundary conditions, and registered domains are
+declared inputs.  The paper derives what follows from those inputs, while
+keeping stability and phenomenological success as separate obligations.
+
+We present the R4C1 candidate as a conditional construction.  Its matter
+coupling is a concrete pressureless-fluid realization inspired by covariant
+fluid actions \cite{brown1993}; its normalized timelike-frame sector is related
+in form to Einstein--aether models \cite{jacobson2001}; and its cubic spatial
+force operator has the same nonrelativistic variational structure as the
+deep-AQUAL term \cite{bekenstein_milgrom}.  These precedents do not select the
+R4C1 coefficients or establish its physical viability.
+
+The positive result is an action-level source vector with nonsingular
+zero-coupling limits, a finite-charge background control, and a canonically
+positive dust-density kinetic coefficient.  The equally important negative
+results are that homogeneous evolution does not identify the nonlinear force
+coefficient, compact periodicity forbids a static positive-mean Poisson source,
+the finite regulator changes the weak-source asymptote, and the current
+equal-Newton family has an unresolved defective scalar zero branch.
+
+All results below are conditional on the declared action, chart, boundary
+conditions, and registered domains.  No observational data are used to select
+its coefficients.
+
+% =============================================================================
+\section{Fields, domain, and conditional action}
+\label{sec:action}
+
+Use signature \((-+++)\), \(c=\hbar=1\), and spacetime
+\(\mathcal M=I\times\Tthree\).  The independent fields are
+\[
+ g_{\mu\nu},\ U^\mu,\ \lambda_U,\ u,\ v,\ \psi,\ r,\ \tau,\ \epsilon,\ z .
+\]
+Write \(\Phi=(u+iv)/\sqrt2\), \(s=u^2+v^2\), and define
+\begin{align}
+ \ell&=\sqrt{-g_{\mu\nu}U^\mu U^\nu},&
+ n^\mu&=U^\mu/\ell,\\
+ h^{\mu\nu}&=g^{\mu\nu}+n^\mu n^\nu,&
+ J_\mu&=v\nabla_\mu u-u\nabla_\mu v,\\
+ Q&=n^\mu\nabla_\mu\psi,&
+ Y&=h^{\mu\nu}\nabla_\mu\psi\nabla_\nu\psi,\\
+ a^\mu&=n^\nu\nabla_\nu n^\mu,&
+ \theta&=\nabla_\mu n^\mu,\\
+ \Delta\psi&=\nabla_\mu(h^{\mu\nu}\nabla_\nu\psi)
+              -a^\mu\nabla_\mu\psi .
+\end{align}
+The last expression equals
+\(h^{\mu\nu}\nabla_\mu\nabla_\nu\psi+\theta Q\).  Normalization is performed
+off shell.  The chart is restricted to future-timelike \(U^\mu\) with
+\(\ell>0\); no division by \(s\) or a conserved charge is used.
+
+The action is
+\begin{align}
+ S={}&\int_{\mathcal M}\dd^4x\sqrt{-g}\,
+ \left[\frac{\Mpl^2}{2}R-\rho_\Lambda
+ +\mathcal L_P+\mathcal L_R+\mathcal L_m\right]\nonumber\\
+ &+S_{\rm GHY},
+ \label{eq:action}
+\end{align}
+with
+\begin{align}
+ V(s)&=\frac{m^2s}{2}+\frac{\lambda_4s^2}{8}
+       +\frac{\lambda_6s^3}{24\Lambda^2},\\
+ V_R(r)&=\frac{m_r^2r^2}{2}+\frac{\lambda_rr^4}{4},\\
+ W(s,r)&=\frac{g_rsr^2}{4},\\
+ \mathcal L_P={}&-\frac12(\nabla u)^2-\frac12(\nabla v)^2
+ -V-W+\mathcal L_U\nonumber\\
+ &+\mathcal L_{\rm align}+\mathcal L_{\rm force},\\
+ \mathcal L_R&=-\frac12(\nabla r)^2-V_R(r),\\
+ \mathcal L_m&=-\frac{\epsilon}{2}
+ \left[C^2(\nabla\tau)^2+C^4\right],\\
+ C(\psi)&=e^{\beta\psi}.
+ \label{eq:sector-lagrangians}
+\end{align}
+Matter therefore follows the conformal metric
+\(\widetilde g_{\mu\nu}=C^2g_{\mu\nu}\).
+
+The frame, alignment, and force blocks are
+\begin{align}
+ \mathcal L_U={}&-\frac{M_U^2}{2}\big[
+ c_1(\nabla_\mu U_\nu)(\nabla^\mu U^\nu)
+ +c_2(\nabla_\mu U^\mu)^2 \nonumber\\
+ &+c_3(\nabla_\mu U_\nu)(\nabla^\nu U^\mu)\nonumber\\
+ &-c_4(U^\rho\nabla_\rho U_\mu)
+       (U^\sigma\nabla_\sigma U^\mu)\big]
+ +\frac{\lambda_U}{2}(U^2+1),\\
+ \mathcal L_{\rm align}&=-\frac{\zeta}{2}h^{\mu\nu}J_\mu J_\nu,\\
+ \mathcal L_{\rm force}&=\frac{K_Q}{2}Q^2-A Y^{3/2}
+ +\frac b2z^2\nonumber\\
+ &-bh^{\mu\nu}\nabla_\mu z\nabla_\nu\psi
+ -bz\,a^\mu\nabla_\mu\psi .
+ \label{eq:force}
+\end{align}
+For \(b>0\), the auxiliary equation is \(z=-\Delta\psi\), yielding
+\(-b(\Delta\psi)^2/2\) in the bulk with the frozen boundary convention.  At
+\(b=0\) the auxiliary is omitted; dividing its equation by \(b\) would
+incorrectly preserve a rank-changing constraint.
+
+Positive \(K_Q,A,b,\zeta\) define the exploratory interior.  These are declared
+coefficients, not first-principles values.  The \(c_i\) are likewise not
+certified stable.
+
+% =============================================================================
+\section{Variation, charge, and source-vector closure}
+\label{sec:variation}
+
+The force momenta and equations are
+\begin{align}
+ \Pi_\psi^\mu={}&K_QQn^\mu
+ -3A\sqrt{Y}\,h^{\mu\nu}\nabla_\nu\psi\nonumber\\
+ &-bh^{\mu\nu}\nabla_\nu z-bza^\mu,\\
+ E_z={}&b(z+\Delta\psi),\\
+ E_\psi={}&-\nabla_\mu\Pi_\psi^\mu+\beta T_m .
+ \label{eq:force-eom}
+\end{align}
+The dust variations give
+\begin{equation}
+ \nabla_\mu(\epsilon C^2\nabla^\mu\tau)=0,
+ \qquad C^2(\nabla\tau)^2+C^4=0.
+ \label{eq:dust-eom}
+\end{equation}
+The physical dust stress is obtained only after varying the off-shell action:
+\begin{equation}
+ T^m_{\mu\nu}
+ =\epsilon C^2\nabla_\mu\tau\nabla_\nu\tau+g_{\mu\nu}\mathcal L_m,
+ \qquad T_m=-\epsilon C^4
+ \label{eq:dust-stress}
+\end{equation}
+on the multiplier constraint.
+
+The global \(U(1)\) transformation of \(u,v\) yields
+\begin{equation}
+ j^\mu=J^\mu+\zeta s h^{\mu\nu}J_\nu,
+ \qquad
+ \nabla_\mu j^\mu=vE_u-uE_v .
+ \label{eq:noether}
+\end{equation}
+Thus the full charge, not the bare phase current alone, is conserved on the
+condensate equations.  Energy exchange does not imply charge creation.
+
+Direct stress variation gives, in the baseline split,
+\begin{align}
+ \Qmp^\nu&=\beta T_m\nabla^\nu\psi,\\
+ \Qsyn^\nu&=-W_r\nabla^\nu r
+ =-\frac{g_r}{2}s r\nabla^\nu r,
+ \label{eq:currents}
+\end{align}
+and the on-shell sector identities
+\begin{align}
+ \nabla_\mu T_m^{\mu\nu}&=\Qmp^\nu,\\
+ \nabla_\mu T_P^{\mu\nu}&=-\Qmp^\nu+\Qsyn^\nu,\\
+ \nabla_\mu T_R^{\mu\nu}&=-\Qsyn^\nu .
+ \label{eq:balances}
+\end{align}
+Their sum vanishes.  Both currents are polynomial and finite at \(s=0\) and
+at zero coupling.  Reassigning a fraction of \(W\) between named sectors
+changes \(\Qsyn^\nu\) by a gradient while leaving the total action unchanged;
+the subsystem split must therefore be fixed before treating a named transfer
+current as observable.
+
+The exact algebraic GR endpoint sets
+\(\beta=g_r=M_U^2=\zeta=K_Q=A=b=0\), \(u=v=r=0\), constant \(\psi\), and
+\(\lambda_U=0\), while omitting \(z\).  Merely setting the two exchange
+couplings to zero is not pure GR because the remaining sectors still gravitate.
+
+% =============================================================================
+\section{Homogeneous finite-charge background}
+\label{sec:background}
+
+For an FLRW metric and homogeneous fields, the currents reduce to
+\begin{align}
+ \Qmp^0&=\beta\rho_m\dot\psi,&
+ \Qsyn^0&=\frac{g_r}{2}s r\dot r,
+\end{align}
+and
+\begin{align}
+ \dot\rho_m+3H\rho_m&=\Qmp^0,\\
+ \dot\rho_P+3H(\rho_P+p_P)&=-\Qmp^0+\Qsyn^0,\\
+ \dot\rho_R+3H(\rho_R+p_R)&=-\Qsyn^0.
+ \label{eq:background-balances}
+\end{align}
+The homogeneous alignment term vanishes and
+\(a^3s\dot\Theta\) is the conserved charge in the nonzero-amplitude phase
+chart.
+
+A registered finite-interval background was solved by independent DOP853 and
+Radau methods.  It maintained finite positive \(a,H,\rho_m\), nonzero
+interface currents, charge drift below \(1.9\times10^{-11}\), dust-integral
+drift below \(2.9\times10^{-12}\), and a finest independently differentiated
+sector-balance residual of \(7.96\times10^{-8}\).  The reservoir transfer
+changed sign.  These are checks of a conditional finite-charge solution in
+arbitrary reference units; they are not measurements of \(H_0\), cosmological
+abundances, entropy production, or global existence.
+
+The spatial cubic term vanishes when \(Y=0\).  Hence the background solution,
+charge, and interface currents do not determine \(A\).  This fact drives the
+identifiability result in Sec.~\ref{sec:identifiability}.
+
+% =============================================================================
+\section{Canonical density reduction and an independent EFT control}
+\label{sec:density}
+
+On the registered formal slow branch, let \(D\) be the physical leading dust
+density contrast at nonzero comoving wavenumber \(k\).  A time-dependent
+canonical transformation from the inherited phase coordinate gives
+\begin{align}
+ L_D&=\frac{K_D}{2}\left(\dot D^2-M_DD^2\right),\\
+ K_D&=\frac{a^5\rho_m}{k^2}>0,&
+ M_D&=-\frac{\rho_m}{2M_c^2}.
+ \label{eq:density-action}
+\end{align}
+This result holds for \(a,\rho_m,k>0\) on the declared regular chart.  The
+\(k=0\), \(a=0\), \(\rho_m=0\), and rank-changing auxiliary surfaces are not
+inverted.
+
+The conjugate momentum and Hamiltonian are
+\begin{equation}
+ P_D=K_D\dot D,\qquad
+ H_D=\frac{P_D^2}{2K_D}+\frac{K_DM_DD^2}{2}.
+ \label{eq:density-hamiltonian}
+\end{equation}
+The kinetic weight is positive.  Because \(M_D<0\), however, the Hessian in
+\((P_D,D)\) is indefinite.  This is the familiar growing dust-density
+direction, not a negative dust kinetic coefficient; nor is it a proof that the
+full coupled Hamiltonian is bounded.
+
+A useful independent convention check follows from the coupled-fluid EFT of
+Aoki et al.~\cite{aoki2025}.  Their scalar variable is
+\(X^T=(\delta_c/k,\zeta,\delta_m/k)\), their quadratic action has no overall
+factor \(1/2\), and
+\begin{equation}
+ K_{11}=\frac{a^2M^2H^2}{2}
+ \left(3\Omega_c+\alpha_{m2}-\bar\alpha_{m1}^{,2}\right).
+\end{equation}
+Converting to \(\tfrac12K_D\dot\delta_c^2\) gives
+\begin{equation}
+ K_D^{\rm EFT}=\frac{2a^3K_{11}}{k^2}.
+\end{equation}
+In the uncoupled-dust limit,
+\(3\Omega_c=\rho_c/(M^2H^2)\), and therefore
+\begin{equation}
+ K_D^{\rm EFT}=\frac{a^5\rho_c}{k^2},
+ \label{eq:aoki-match}
+\end{equation}
+exactly matching Eq.~\eqref{eq:density-action}.  This is a nontrivial
+normalization control.  It does not identify the R4C1 interaction with
+\(\alpha_{m2}\) or \(\bar\alpha_{m1}\), and it does not import the EFT's
+small-scale stability conditions into R4C1.
+
+% =============================================================================
+\section{What homogeneous matching cannot identify}
+\label{sec:identifiability}
+
+Under the positive field-chart change
+\(\psi_{\rm new}=\sigma\psi\), \(z_{\rm new}=\sigma z\),
+\begin{align}
+ K_{Q,\rm new}&=K_Q/\sigma^2,&
+ A_{\rm new}&=A/\sigma^3,\\
+ b_{\rm new}&=b/\sigma^2,&
+ \beta_{\rm new}&=\beta/\sigma .
+\end{align}
+The physical coefficient combinations are therefore
+\begin{equation}
+ \frac{A}{K_Q^{3/2}},\qquad
+ \frac{b}{K_Q},\qquad
+ \frac{\beta}{\sqrt{K_Q}}.
+ \label{eq:invariants}
+\end{equation}
+Changing \(A\) alone changes the first invariant and is not a chart
+renaming.  Nevertheless \(A\) is absent from the homogeneous equations because
+\(Y=0\).  Background matching cannot select it.
+
+The local static frozen-frame reduction is
+\begin{equation}
+ 3A\nabla\!\cdot\!\left(|\nabla\psi|\nabla\psi\right)
+ -b\Delta^2\psi=\beta\rho.
+ \label{eq:static-force}
+\end{equation}
+For a regulator-subleading spherical exterior one obtains only the conditional
+leading expression
+\begin{equation}
+ \psi'(R)=\frac{1}{R}\sqrt{\frac{\beta M}{12\pi A}},
+ \qquad
+ a_{\rm dyn}\equiv\frac{g_\psi^2}{g_{\rm bar}}
+ =\frac{\beta^3}{12\pi G_{\rm static}A}.
+ \label{eq:adyn}
+\end{equation}
+The required regulator ratio is \(2b/(3ADR)\), with
+\(D=\sqrt{\beta M/(12\pi A)}\); no common domain proving all local,
+quasistatic, frame, and metric approximations has yet been established.
+Equation~\eqref{eq:adyn} shows directly that a MOND-like normalization remains
+a free action-level combination.  It does not derive \(a_0\), a projection
+factor, or the historical value \(2/3\).
+
+The cubic term is \(C^2\) but not \(C^3\) at zero spatial gradient.  Its
+gradient and Hessian vanish there, so regular linearization about \(Y=0\)
+cannot recover \(A\).  Nonlinear backgrounds can depend on it, but that is a
+different calculation.
+
+% =============================================================================
+\section{Compact-domain compatibility conditions}
+\label{sec:compact}
+
+\subsection{Zero mode}
+
+On aligned flat FLRW, the exact force equation is
+\begin{align}
+ -K_Qa^{-3}\partial_t(a^3\dot\psi)
+ &+3Aa^{-3}\nabla_x\!\cdot
+ (|\nabla_x\psi|\nabla_x\psi)\nonumber\\
+ &-ba^{-4}\Delta_x^2\psi-\beta\rho=0.
+ \label{eq:periodic-full}
+\end{align}
+Both spatial divergences integrate to zero on \(\Tthree\), so
+\begin{equation}
+ K_Qa^{-3}\partial_t(a^3\dot{\bar\psi})=-\beta\bar\rho .
+ \label{eq:zero-mode}
+\end{equation}
+A positive mean density is incompatible with a fully static scalar in this
+reduction.  The mean source must be evolved, subtracted as a background,
+compensated by another sector, or treated by a different equation.  It cannot
+be inserted into a periodic Poisson problem.
+
+After subtracting the mean and freezing a declared static snapshot,
+\begin{equation}
+ 3A\nabla\!\cdot(|\nabla\psi|\nabla\psi)-b\Delta^2\psi
+ =\beta\,\delta\rho,\qquad
+ \overline{\delta\rho}=\bar\psi=0.
+ \label{eq:contrast}
+\end{equation}
+A three-dimensional pseudospectral control on odd grids \(17,25,33\) passed
+its registered residual and convergence checks.  Omitting \(b\) at the
+nonlinear solution left a normalized residual near \(0.919\), showing that the
+regulator is quantitatively important for that probe.  The control is not a
+physical galaxy solution because metric, frame, dust, and Euler responses were
+frozen.
+
+\subsection{Conditional integrability obstruction to a pointwise square-root law}
+
+A force derived from a scalar must be curl free.  For a generic Newtonian
+potential, the pointwise prescription
+\begin{equation}
+ \mathbf v=\kappa\,
+ \frac{\nabla\Phi_N}{|\nabla\Phi_N|^{1/2}}
+ \label{eq:pointwise}
+\end{equation}
+has nonzero curl even though
+\(|\mathbf v|\mathbf v=\kappa^2\nabla\Phi_N\).
+An explicit periodic counterexample is
+\(\Phi_N=\varepsilon(\cos x+2\cos y)\).  Therefore the universal pointwise
+assignment cannot equal \(\nabla\psi\) even locally on every allowed source.
+This is a conditional obstruction to that shortcut, not a rejection of
+nonlocal projected solutions, special symmetry classes, or a PDE solved with
+its harmonic and curl components retained.
+
+\subsection{Finite-regulator weak-source limit}
+
+For fixed nonzero \(b\), fixed source shape, and contrast amplitude
+\(\varepsilon\to0\), the periodic minimizer obeys
+\begin{equation}
+ \psi_\varepsilon=\varepsilon\psi_1+O(\varepsilon^2)
+ \quad\hbox{in }H^2(\Tthree),
+ \label{eq:weak-source}
+\end{equation}
+with a linear biharmonic leading response.  Hence the force is
+\(O(\varepsilon)\), whereas a fixed positive square-root correction would be
+\(O(\sqrt\varepsilon)\).  The latter cannot be the arbitrarily weak,
+fixed-scale asymptote of Eq.~\eqref{eq:contrast}.  A finite intermediate
+nonlinear window is not excluded; it must be derived with an EFT cutoff and
+the omitted coupled response.
+
+\subsection{Topology-sector quantum control}
+
+The separate rectangular-\(\Tthree\) Casimir programme finds that the
+nonzero-mode conformal-scalar stress agrees with an independent
+heat-kernel/Mellin implementation and with the formula of Negro et
+al.~\cite{negro2026}.  That result is a useful topology-sector control, not a
+closure of R4C1.  The state-dependent isotropic zero mode and renormalized
+dynamical backreaction remain separate problems.
+
+% =============================================================================
+\section{GR approaches and the conditional stability ledger}
+\label{sec:stability}
+
+Turning off exchange at the original B1 coefficients does not recover equal
+cosmological and static gravitational couplings:
+\begin{equation}
+ \frac{G_{\rm cos}}{G_{\rm static}}=\frac56.
+ \label{eq:five-sixths}
+\end{equation}
+The exact algebraic endpoint of Sec.~\ref{sec:variation} does recover
+Einstein--dust, but it need not be a healthy continuous limit of every
+finite-density branch.
+
+A separately frozen one-parameter family with \(0<\eta\leq1\) enforces
+\(G_{\rm cos}=G_{\rm static}\) and has
+\begin{equation}
+ c_T^2=\frac{8}{8-\eta},\qquad
+ K_{\rm vector}=\frac{\eta}{6},\qquad
+ M_c^2=1-\frac{\eta}{12}.
+ \label{eq:equal-newton}
+\end{equation}
+Its background approaches Einstein--dust over the tested finite interval as
+\(\eta\to0\).  This is a distinct path, not a repair of B1.
+
+After the registered scalar constraint reduction, the finite-\(\eta\) family
+has positive canonical kinetic weights and nonzero leading speed squares
+\begin{equation}
+ 1,\quad 1,\quad
+ 1+\frac{\eta(u^2+v^2)}{13},\quad
+ \frac{4}{3(8-\eta)}.
+ \label{eq:speeds}
+\end{equation}
+However, its principal generator also has a double zero-speed root with
+geometric multiplicity one.  The resulting Jordan chain is defective for every
+registered finite \(\eta\).  This is a boundary of the tested equal-Newton
+family, not a claim that every extension has the same principal symbol.  The
+family therefore does not establish strong hyperbolicity or a healthy physical
+EFT.
+
+\begin{table*}[t]
+\caption{Conditional stability and closure ledger.  Local checks and exact
+algebra do not override the open physical items.}
+\label{tab:stability}
+\begin{ruledtabular}
+\begin{tabular}{p{0.33\textwidth}p{0.20\textwidth}p{0.38\textwidth}}
+Item & Current result & Boundary \\
+\hline
+Uncoupled dust-density kinetic normalization & \(K_D=a^5\rho_m/k^2>0\) &
+Nonzero \(k,a,\rho_m\); formal slow branch \\
+Density Hamiltonian & Indefinite growing-mass direction &
+Not a negative kinetic sign; no all-sector energy theorem \\
+Tensor and vector sectors in equal-Newton family & Positive listed weights,
+real registered speeds & Vacuum/registered background controls, not PPN or
+interacting-domain proof \\
+Nonzero scalar principal roots & Real with positive squared speeds &
+Formal high-momentum symbol only \\
+Scalar zero branch & Defective double root & Strong hyperbolicity and
+subleading evolution unresolved \\
+Fourth-spatial-derivative force branch & Formal \(p^4\) fast mode &
+No physical cutoff or scattering window established \\
+Constraint singularities & Excluded rather than inverted &
+\(k=0\), \(H=0\), zero-density and rank-changing endpoints need separate charts \\
+Quantum and renormalized stability & Open & No all-sector determinant or
+state-selected semiclassical action \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+The correct present classification is therefore
+\emph{conditional action with substantive physical holds}.  Check counts are
+reproducibility evidence, not a physics pass.
+
+% =============================================================================
+\section{Thermodynamic and phenomenological boundaries}
+\label{sec:phenomenology}
+
+The reservoir field in Eq.~\eqref{eq:action} is reversible.  For this paper
+that is an explicit scope assumption, not an implicit microscopic heat bath:
+no temperature, chemical potential, particle-production rate, dissipative
+response matrix, or coarse-grained entropy current is specified.  The exchange
+currents therefore establish neither positive entropy production nor a
+nonzero condensate-number source, and no claim of thermodynamic stability or
+an irreversible cosmological arrow follows from this action alone.  A
+companion entropy-accounting manuscript may supply the additional constitutive
+data required for those separate claims; it is not silently imported here.
+
+Likewise, the current action does not yet provide a validated map to
+\(H(z)\), \(G_{\rm eff}(k,z)\), gravitational slip, BBN, a lensing potential,
+or a universal galactic force law.  Table~\ref{tab:falsifiers} states
+prospective rejection or suspension conditions for this conditional branch;
+they are not claims that the listed tests have already been completed.
+
+\begin{table}[t]
+\caption{Boundary conditions and future falsifiers for the conditional branch.}
+\label{tab:falsifiers}
+\begin{ruledtabular}
+\begin{tabular}{p{0.46\columnwidth}p{0.46\columnwidth}}
+Claim route & Reject or suspend if \\
+\hline
+Source-vector closure & Direct variation fails total on-shell conservation or
+a current becomes singular on the declared finite-field domain \\
+Physical scalar EFT & A reduced ghost, nonreal characteristic, unresolved
+defective principal block, or nonunique evolution persists on the claimed
+domain \\
+Weak-field square-root regime & No common regulator-subleading,
+quasistatic, periodic and matter-frame domain exists \\
+GR recovery & No continuous finite-density path reaches the required local,
+cosmological and wave-sector GR observables \\
+Cosmological application & One common parameter set fails background,
+perturbation, BBN or local-gravity likelihoods \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+% =============================================================================
+\section{Discussion and conclusions}
+\label{sec:conclusion}
+
+R4C1 demonstrates that the source-vector problem can be addressed without
+postulating \(Q^\nu\) by hand.  A complete declared action yields finite
+matter--plenum and plenum--reservoir currents, total on-shell conservation, a
+finite-charge background, and the standard uncoupled dust-density kinetic
+normalization.
+
+The same calculation narrows the physical claim.  The background cannot
+identify the nonlinear spatial-force coefficient; the compact zero mode
+forbids a static positive-mean source in the frozen reduction; the universal
+pointwise square-root shortcut fails an integrability test; and finite \(b\)
+changes the arbitrarily weak-source scaling.  The positive density kinetic
+coefficient does not remove the indefinite growing direction or the defective
+zero-speed scalar branch.
+
+Accordingly, this paper presents a conditional action, conservation theorem,
+normalization control, and scoped obstructions.  It does not claim that ITSM
+is established, that \(a_0\) or a \(2/3\) coefficient has been derived, that
+all perturbations are stable, or that cosmological data prefer this branch.
+Deferred independent review remains required for canonical promotion, while
+the scientific holds remain substantive irrespective of review status.
+
+\section*{Code, data, and provenance}
+
+Contracts, derivations, executables, and immutable JSON receipts are available
+in the companion repository.  Principal source SHA-256 prefixes are:
+action freeze \texttt{81bfc2e4f17b}, first variation
+\texttt{4834ea7517fd}, interacting background \texttt{48b49fddd906},
+coefficient identifiability \texttt{c4af4084ae83}, density action
+\texttt{8a1c2245fc02}, equal-Newton family \texttt{1b9fbc4185b6}, and
+equal-Newton scalar analysis \texttt{4d2ea777b8ed}.  Hashes establish artifact
+identity, not independent physical validation.
+
+\section*{Declaration on the use of artificial-intelligence tools}
+
+Artificial-intelligence-assisted tools were used for editorial drafting,
+source-code assistance, and checks of symbolic and numerical consistency.
+The author independently reviewed the manuscript, equations, cited sources,
+and generated artifacts and accepts full responsibility for the content.
+
+\begin{acknowledgments}
+The author thanks collaborators and reviewers who insisted that action-level
+closure, dynamical stability, and phenomenological success be reported as
+separate questions.  Remaining errors are the author's.
+\end{acknowledgments}
+
+\bibliography{references}
+
+\end{document}

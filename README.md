@@ -71,7 +71,7 @@ those boundaries; sector snapshots retain their owning dates.
 | **Core identity** | `CANONICAL; IDENTITY HELD` | The physical proposition is retained; its adoption does not validate its postulates or close a mechanism. |
 | **MAT-001** | `BLOCKED` | The invariant matter-to-physical-mode response remains unmatched: `K_Q=NOT_DERIVED`, `V=NOT_COMPUTED`. |
 | **UVIR-003** | `IN_PROGRESS` | Tier-1 stability, matching and physical cutoff obligations remain incomplete. Stage 4A remains `CLOSED`. |
-| **Master Tests 1–3 / R4C1** | `PROVISIONAL CONTINUATION; HOLD_SUBSTANTIVE` | Conditional action, background and response calculations support scoped follow-up. Full finite-mode error control, physical viability, healthy GR, weak-field closure and blind coefficient matching remain open. |
+| **Master Tests 1–3 / R4C1** | `PROVISIONAL CONTINUATION; HOLD_SUBSTANTIVE` | The registered linear prepared-dust calculation now has certified finite-mode error control. Physical viability, a controlled EFT window, healthy GR, weak-field closure and identifying coefficient matching remain open. |
 | **TOP-X4 / KK-001** | `BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD` | Separate queued lane; `physics_pass=false`. Spinor-state, gravity/ghost, parity, determinant, stress and physical-Hessian obligations remain open. |
 | **BBN-001** | `CONTROL_ONLY / BLOCKED_UPSTREAM_BACKGROUND` | Table/network controls do not supply the action-derived early plenum, physical temperature/unit map, currents or gravitational response. |
 | **TOP-001 / CBR-002** | `HOLD` | Free-field and instantaneous-closure controls do not establish a persistent driven ITSM solution or publication clearance. |
@@ -85,36 +85,44 @@ orders the research, and the [Master Research Plan](Theory/Core/ITSM_Master_Rese
 defines the authority and claim boundaries. Script check counts and hash
 matches establish only their stated calculation or artifact scope.
 
-## 🧪 Current research checkpoint — committed 11 October 2026
+## 🧪 Current research checkpoint — 13 October 2026
 
-This documentation snapshot follows the latest research report included in
-the committed branch. Newer local research continuations are not included in
-this documentation commit.
+The [checkpoint and exact-byte evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)
+collect the previously uncommitted research and paper-preparation work.
+The physical progress and its limits are separate:
 
-The [G3N5 homogeneous canonical-energy report](Theory/Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_REPORT_2026-10-11.md)
-records 124/124 canonical checks, 12/12 separate unfixed-action checks and
-18/18 complete momentum-block comparison checks, with exact read-only replay.
-Its scope is the frozen **R4C1/B1 homogeneous sector**, $k=0$ and
-$0\leq t_E\leq0.05$ in diagnostic coordinates.
+- **Bounded dust calculation complete:** the [Stage-1 acceptance report](Theory/Gates/RES-001/RES001_R4C1_G3N5_DUST_STAGE1_ACCEPTANCE_REPORT_2026-10-12.md)
+  consolidates the evolving slow/complement split, finite-wavenumber correction,
+  retained fast forcing, operator-order result and certified error control for
+  the five registered modes on $0\leq t\leq0.05$. This is the linear rotating
+  B1 prepared-data calculation, not physical/canonical dust closure.
+- **Physical-domain decision still open:** the [same-action GR-family survey](Theory/Gates/RES-001/RES001_R4C1_GR_FAMILY_SURVEY_REPORT_2026-10-11.md)
+  and subsequent coupled response work retain all three diagnostic families.
+  The [quadratic fixed-charge comparison](Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_RETARDED_V3_REPORT_2026-10-13.md)
+  does not remove the registered cubic timing warning. No family has physical
+  GO; complete physical energy/constraint admission, nonlinear error control,
+  a frequency/momentum window and justified GR recovery remain required.
+- **Matching mechanisms screened, not identified:** [RM1](Theory/Gates/MAT-001/MAT001_RM1_RADIAL_MASS_SCREEN_REPORT_2026-10-13.md)
+  rejects the tested radial portal as a nonzero soft static phase source;
+  [ST1](Theory/Gates/MAT-001/MAT001_ST1_INDUCED_SCALE_SCREEN_REPORT_2026-10-13.md)
+  supplies a parameterized static source with an unfixed physical kinetic ratio;
+  [ST2](Theory/Gates/MAT-001/MAT001_ST2_HEAVY_THRESHOLD_SCREEN_REPORT_2026-10-13.md)
+  computes a finite heavy-field threshold but leaves renormalized inputs and
+  the physical background open. These separate controls do not select a new
+  canonical parent or determine numerical $K_Q$, $V$, $C_\chi$ or $a_0$.
 
-An admissible negative homogeneous canonical direction survives in both
-clocks when complex charge is fixed and the separately conserved dust charge
-can vary. Additionally fixing dust charge yields a positive homogeneous
-momentum control in a **different ensemble**; it does not repair the original
-result or establish full physical stability.
+Stage 2 remains incomplete under the approved unchanged-action continuation;
+Stage 3 has not been entered. The earlier negative homogeneous canonical
+direction and different-ensemble positive control remain unchanged in the
+[11 October report](Theory/Gates/RES-001/RES001_R4C1_G3N5_MEAN_MODE_ENERGY_REPORT_2026-10-11.md).
+The [dated recovery evidence guide](docs/ITSM_RECOVERY_EVIDENCE_GUIDE.md) preserves
+that snapshot rather than replacing its failures with later successes.
 
-These bounded calculations do not identify a local propagating ghost or
-establish a physical EFT window. Nonzero-mode characteristics, gradient/ghost
-domains, nonlinear response, healthy GR, weak-field closure and microscopic
-matching remain **Open**. The report retains `physics_pass=false`,
-`gate_effect=NONE`, `Rule9_cleared=false` and the canonical holds above.
-
-Earlier results remain available in the
-[dated recovery evidence guide](docs/ITSM_RECOVERY_EVIDENCE_GUIDE.md), including
-the negative kinetic directions and $w^2=1/5$ chart boundary in the 8 October
-checkpoint and the September constraint and matching diagnostics. The
-[execution queue](Theory/Core/ITSM_Recovery_Execution_Queue.md) records dated
-continuations without rewriting those earlier results.
+P1/P2 `v0.2.0-rc3`, Thermodynamics `v0.7.1-conditional-draft` and R4C1
+`v0.1.1-conditional-draft` are retained with their preparation/review records.
+The [local P1/P2 critique](papers/ReleasePackages/2026-10-09/P1_P2_LOCAL_REFEREE_REVIEW_AND_GROK_RECONCILIATION_2026-10-09.md)
+still requires targeted revisions and author decisions. These are drafts and
+release candidates, not independent peer-review clearance or publication readiness.
 
 ## 📚 Governance and methodology
 
@@ -140,12 +148,12 @@ current scientific claims belong to the live authority documents above.
 
 | Location | Role |
 |---|---|
-| [Theory/Core/](Theory/Core/) | Physical identity, sector architecture, master plans and claim ledger |
-| [Theory/Gates/](Theory/Gates/) | Owning scientific reports, contracts and decision records |
-| [Analysis/](Analysis/) | Symbolic and numerical diagnostics within each report's stated scope |
-| [Governance/](Governance/) | Reader guide to the research methodology and binding governance |
-| [Manuscript/CoreRecovery/](Manuscript/CoreRecovery/) | Working recovery manuscript and immutable versioned releases |
-| [papers/](papers/) | Selective paper programme and its publication requirements |
-| [docs/history/](docs/history/) | Preserved pre-v12 landing-page text and deprecations |
+| Core theory — `Theory/Core/` ([browse](Theory/Core/)) | Physical identity, sector architecture, master plans and claim ledger |
+| Scientific gates — `Theory/Gates/` ([browse](Theory/Gates/)) | Owning scientific reports, contracts and decision records |
+| Analysis and diagnostics — `Analysis/` ([browse](Analysis/)) | Symbolic and numerical diagnostics within each report's stated scope |
+| Governance and methodology — `Governance/` ([browse](Governance/)) | Reader guide to the research methodology and binding governance |
+| Recovery manuscript — `Manuscript/CoreRecovery/` ([browse](Manuscript/CoreRecovery/)) | Working recovery manuscript and immutable versioned releases |
+| Paper programme — `papers/` ([browse](papers/)) | Selective paper programme and its publication requirements |
+| History and deprecations — `docs/history/` ([browse](docs/history/)) | Preserved pre-v12 landing-page text and deprecations |
 | [Recovery Branch Guide](RECOVERY_BRANCH_README.md) | Detailed branch orientation and dependency chain |
 | [Recovery evidence guide](docs/ITSM_RECOVERY_EVIDENCE_GUIDE.md) | Retained 11 October landing-page evidence and detailed report links |

@@ -1,0 +1,18 @@
+{
+  "schema": "itsm-interrupted-scientific-attempt-v1",
+  "validation": "NOT_EVALUATED",
+  "status": "INTERRUPTED_ANALYTIC_FORCING_SIGN_DEFECT",
+  "exit_code": 1,
+  "source": "Analysis/MasterTests/test_01_r4c1_g3n5_corrected_dust_remainder_v1.py",
+  "source_sha256": "82aeeb59a1eacf15e58a0313227dc17f6f17af7c92f0fe09e719793cd7a1af06",
+  "contract_sha256": "bff52ca9a787c96c984f7e0f667d6c82920cbaba25a22b3ebe08e8b05a774748",
+  "reason": "With R_H=A_c H-H_dot-H M_c, deviation satisfies e_dot=A_c e+R_H Phi_c. V1 incorrectly used the negative forcing in its control integration and contract decomposition.",
+  "last_completed_phase": "Full first-correction lift derived; no completed acceptance receipt.",
+  "interruption_reason_not_timeout": true,
+  "corrected_reference_forced_remainder_proved": false,
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "Rule9_cleared": false,
+  "review_status": "DEFERRED",
+  "interpretation": "Implementation sign defect, not a changed action or physical no-go. Original source, contract, hashes, private log and trajectories retained; no numerical PASS or physics verdict completed. Earlier norm-only bounds are unaffected. V2 must use a fresh directory and positive forcing."
+}

@@ -1,0 +1,44 @@
+{
+  "full_dust_convergence_order": "NOT_PROVED",
+  "modes": [
+    {
+      "Q_bound_normalized_ratio": 1.0,
+      "ell": 4,
+      "field_residual": 9.615893912656803e-15,
+      "generator_residual": 2.248463507216139e-16,
+      "inverse_residual": 4.627542280506683e-16
+    },
+    {
+      "Q_bound_normalized_ratio": 1.0,
+      "ell": 8,
+      "field_residual": 9.02176115688098e-15,
+      "generator_residual": 1.2428246242308988e-16,
+      "inverse_residual": 5.159631455570457e-16
+    },
+    {
+      "Q_bound_normalized_ratio": 1.0,
+      "ell": 16,
+      "field_residual": 6.4551848355731296e-15,
+      "generator_residual": 1.2075747445215432e-16,
+      "inverse_residual": 5.455681856051358e-16
+    },
+    {
+      "Q_bound_normalized_ratio": 1.0,
+      "ell": 32,
+      "field_residual": 9.510055836480328e-15,
+      "generator_residual": 1.1604245579380789e-16,
+      "inverse_residual": 5.6254875734474445e-16
+    },
+    {
+      "Q_bound_normalized_ratio": 1.0,
+      "ell": 64,
+      "field_residual": 6.271595211065977e-15,
+      "generator_residual": 1.1590952222311468e-16,
+      "inverse_residual": 5.700926707640965e-16
+    }
+  ],
+  "precision": "Exact SymPy/rational outward intervals; binary64 checks use inherited 70-digit degree-40 background and frozen trajectories; no new high-precision IVP",
+  "prepared_dust_remainder_proved": false,
+  "remaining": "Control retained fast forcing and initial fast mismatch in the actual dust observable; uniform full-state bound alone is insufficient.",
+  "uniform_full_linear_propagator_proved": true
+}

@@ -1,0 +1,259 @@
+{
+  "criterion": "e64<=0.01 and e64<=e32 and e8>=4*e64",
+  "error_e8_over_e64": 64.60385224382053,
+  "finite_sample_support_criterion_met": true,
+  "full_uniform_remainder_proved": false,
+  "modes": [
+    {
+      "analytic_Euler_error": 6.9436858763436784e-15,
+      "balanced_graph_distance": 0.004799911276189593,
+      "balanced_solver_disagreement": 4.966863244896091e-12,
+      "complementary_seed_dust_transfer": 0.02317788114240325,
+      "dust_solver_disagreement": 1.1119296834635395e-10,
+      "ell": 4,
+      "full_field_finite_differences": [
+        {
+          "error": 3.7707866608112185e-09,
+          "step": 0.003125
+        },
+        {
+          "error": 6.538544331666246e-10,
+          "step": 0.0015625
+        }
+      ],
+      "graph_condition": 15.05862522116349,
+      "initial_balanced_norms": [
+        0.3839127839381539,
+        2.5737348960799693,
+        1.0,
+        1.0
+      ],
+      "observable_equation_defect": 0.16157548392409035,
+      "slow_observable_error": 0.006955824551963986,
+      "solvers": [
+        {
+          "method": "DOP853",
+          "nfev": 47,
+          "njev": 0,
+          "nlu": 0,
+          "success": true
+        },
+        {
+          "method": "Radau",
+          "nfev": 330,
+          "njev": 2,
+          "nlu": 12,
+          "success": true
+        },
+        {
+          "method": "DOP853_refined",
+          "nfev": 74,
+          "njev": 0,
+          "nlu": 0,
+          "success": true
+        }
+      ]
+    },
+    {
+      "analytic_Euler_error": 6.414137995959901e-15,
+      "balanced_graph_distance": 0.0047101976724871954,
+      "balanced_solver_disagreement": 2.353814946177167e-10,
+      "complementary_seed_dust_transfer": 0.010477269510779865,
+      "dust_solver_disagreement": 8.32471207413686e-12,
+      "ell": 8,
+      "full_field_finite_differences": [
+        {
+          "error": 4.817051198068386e-07,
+          "step": 0.003125
+        },
+        {
+          "error": 3.4773238406731794e-08,
+          "step": 0.0015625
+        }
+      ],
+      "graph_condition": 18.00886573831819,
+      "initial_balanced_norms": [
+        0.32447841173472064,
+        2.4768571492887617,
+        1.0,
+        1.0
+      ],
+      "observable_equation_defect": 0.03825236464414436,
+      "slow_observable_error": 0.001630155624522195,
+      "solvers": [
+        {
+          "method": "DOP853",
+          "nfev": 92,
+          "njev": 0,
+          "nlu": 0,
+          "success": true
+        },
+        {
+          "method": "Radau",
+          "nfev": 736,
+          "njev": 2,
+          "nlu": 16,
+          "success": true
+        },
+        {
+          "method": "DOP853_refined",
+          "nfev": 122,
+          "njev": 0,
+          "nlu": 0,
+          "success": true
+        }
+      ]
+    },
+    {
+      "analytic_Euler_error": 1.2437451393349604e-14,
+      "balanced_graph_distance": 0.007944155988429224,
+      "balanced_solver_disagreement": 7.921390397542333e-10,
+      "complementary_seed_dust_transfer": 0.015471614542521899,
+      "dust_solver_disagreement": 1.9482512597191337e-12,
+      "ell": 16,
+      "full_field_finite_differences": [
+        {
+          "error": 4.877173922113134e-06,
+          "step": 0.0017145620303689053
+        },
+        {
+          "error": 3.025282449274554e-07,
+          "step": 0.0008572810151844526
+        }
+      ],
+      "graph_condition": 18.74905891421526,
+      "initial_balanced_norms": [
+        0.31238804378966145,
+        2.4571499064767246,
+        1.0,
+        1.0
+      ],
+      "observable_equation_defect": 0.009454182802919195,
+      "slow_observable_error": 0.0004040307144404405,
+      "solvers": [
+        {
+          "method": "DOP853",
+          "nfev": 212,
+          "njev": 0,
+          "nlu": 0,
+          "success": true
+        },
+        {
+          "method": "Radau",
+          "nfev": 2481,
+          "njev": 1,
+          "nlu": 24,
+          "success": true
+        },
+        {
+          "method": "DOP853_refined",
+          "nfev": 332,
+          "njev": 0,
+          "nlu": 0,
+          "success": true
+        }
+      ]
+    },
+    {
+      "analytic_Euler_error": 5.751092849072034e-14,
+      "balanced_graph_distance": 0.00403991997882217,
+      "balanced_solver_disagreement": 1.1271912259328125e-09,
+      "complementary_seed_dust_transfer": 0.005775922188435818,
+      "dust_solver_disagreement": 3.1309789331163597e-13,
+      "ell": 32,
+      "full_field_finite_differences": [
+        {
+          "error": 7.127291592025941e-06,
+          "step": 0.00046340119953504745
+        },
+        {
+          "error": 4.4584253341972595e-07,
+          "step": 0.00023170059976752373
+        }
+      ],
+      "graph_condition": 18.934243947283647,
+      "initial_balanced_norms": [
+        0.30950493324332545,
+        2.4524504498639272,
+        1.0,
+        1.0
+      ],
+      "observable_equation_defect": 0.002357053035715429,
+      "slow_observable_error": 0.00010100870081927877,
+      "solvers": [
+        {
+          "method": "DOP853",
+          "nfev": 737,
+          "njev": 0,
+          "nlu": 0,
+          "success": true
+        },
+        {
+          "method": "Radau",
+          "nfev": 9154,
+          "njev": 2,
+          "nlu": 6,
+          "success": true
+        },
+        {
+          "method": "DOP853_refined",
+          "nfev": 1187,
+          "njev": 0,
+          "nlu": 0,
+          "success": true
+        }
+      ]
+    },
+    {
+      "analytic_Euler_error": 1.9640815663703517e-13,
+      "balanced_graph_distance": 0.0020255620204581264,
+      "balanced_solver_disagreement": 3.3292761402963863e-09,
+      "complementary_seed_dust_transfer": 0.0018870965926421311,
+      "dust_solver_disagreement": 1.1681366758429048e-13,
+      "ell": 64,
+      "full_field_finite_differences": [
+        {
+          "error": 6.997080989601913e-06,
+          "step": 0.00012052797247176588
+        },
+        {
+          "error": 4.413019132302276e-07,
+          "step": 6.026398623588294e-05
+        }
+      ],
+      "graph_condition": 18.98054839102547,
+      "initial_balanced_norms": [
+        0.3087924517703411,
+        2.4512891084183224,
+        1.0,
+        1.0
+      ],
+      "observable_equation_defect": 0.0005888621380336746,
+      "slow_observable_error": 2.5233102483886666e-05,
+      "solvers": [
+        {
+          "method": "DOP853",
+          "nfev": 2867,
+          "njev": 0,
+          "nlu": 0,
+          "success": true
+        },
+        {
+          "method": "Radau",
+          "nfev": 35991,
+          "njev": 2,
+          "nlu": 6,
+          "success": true
+        },
+        {
+          "method": "DOP853_refined",
+          "nfev": 4652,
+          "njev": 0,
+          "nlu": 0,
+          "success": true
+        }
+      ]
+    }
+  ],
+  "review": "DEFERRED; same-agent local checks only"
+}

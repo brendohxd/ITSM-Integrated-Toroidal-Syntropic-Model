@@ -1,0 +1,60 @@
+{
+  "actual_density_Hamiltonian_determinant": "-6*rho_m/11",
+  "actual_density_kinetic_weight": "a**3*rho_m/p**2",
+  "analytic_bounds": {
+    "C_max": "1.026038519515830828284194860513516289973446443319345502219867822310285",
+    "C_min": "0.9746222787735903535566869111106106015084001097378455352138232792015988",
+    "H_max": "0.8665251299678508837936599918302150752639492840868405216475696757843692",
+    "H_min": "0.7668508058385683857258828205864540811445851570237663931632349123638672",
+    "a_max": "1.044278541938867298335489763667220391278219155262884042319494915499595",
+    "a_min": "1",
+    "growth_bound": "1.097819847706028825628995772401581273575495979613225719469441355028713",
+    "matrix_infinity_bound": "1.866525129967850883793659991830215075263949284086840521647569675784369",
+    "norm": "max(abs(delta_rho/rho_m)/p,abs(Vx)); formal leading sector only",
+    "proof": "Hdot<=0; Hdot>=-3H^2 by Friedmann and nonnegative potential; |psi_dot|<=sqrt(11/5)*H0; integrate rho and C; Gronwall for M",
+    "psi_dot_absolute_max": "1.285264471579589686419481114444082946170068120505986787486519027481651",
+    "rho_max": "0.205207703903166165656838972102703257994689288663869100443973564462057",
+    "rho_min": "0.1711659078729526726264205089803722025781575684202030950042370325853803"
+  },
+  "assumptions": [
+    "Smooth registered B1 background, Friedmann constraint zero",
+    "rho_m,C,a>0,p>0",
+    "Formal leading slow sector; no arbitrary fast-wave data or remainder estimate"
+  ],
+  "charge_map": [
+    "11*H/(6*rho_m) + 11*psi_dot/(15*rho_m)",
+    "11/(6*rho_m)"
+  ],
+  "conserved_density": "delta_P_tau=a^3*C^3*Em+P_tau*(tr_M/2+3*beta*Pi)",
+  "density_equation": "delta_ddot+(2*H+beta*psi_dot)*delta_dot-(6*rho_m/11)*delta=0",
+  "density_map": [
+    "11*H/(6*rho_m) + 11*psi_dot/(15*rho_m)",
+    "11/(6*rho_m)"
+  ],
+  "nonclaims": [
+    "No removal of original Jordan defect or negative slow K",
+    "No positive complete Hamiltonian",
+    "No physical no-ghost/cutoff/causality certificate",
+    "No calibrated G_eff, healthy full GR or matching"
+  ],
+  "observable_determinant": "-11/(6*rho_m)",
+  "original_slow_K": "-11/6",
+  "physical_density": "delta_rho=C^4*Em+4*beta*rho_m*Pi",
+  "shift_leading": [
+    "1",
+    "0"
+  ],
+  "symplectic_weight": "a**3*rho_m",
+  "type1_generator": "-11*H*a**3*velocity_coordinate**2/10 - a**3*density_coordinate*rho_m*velocity_coordinate",
+  "weighted_flow": [
+    [
+      "H",
+      "1"
+    ],
+    [
+      "6*rho_m/11",
+      "-H - 2*psi_dot/5"
+    ]
+  ],
+  "weighted_state": "D=delta_rho/(i*p*rho_m), V=relative_frame_velocity_x; leading sector"
+}

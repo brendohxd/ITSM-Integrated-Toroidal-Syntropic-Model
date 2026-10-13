@@ -1,0 +1,78 @@
+{
+  "Rule9_cleared": false,
+  "artifacts": {
+    "formulas.json": "5d8a4bc42fed2c9538c0554f33c51eb242a8977763ab5bb72a29677755e18d50"
+  },
+  "checks": [
+    {
+      "criterion": "zero_exact",
+      "name": "scalar_wave_factor",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "scalar_fast_factor",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "wave_pencil_determinant",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "companion_characteristic_factor",
+      "passed": false,
+      "value": [
+        "c**4 - c**2/3 - c**4 + c**2/3"
+      ]
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "zero_eigenvector",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "nontrivial_Jordan_chain",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "matter_characteristic_factor",
+      "passed": false,
+      "value": [
+        "c**3 - c**2*(u0**2 + v0**2 + 39)/13 + c*(2*u0**2 + 2*v0**2 + 39)/13 - u0**2/13 - v0**2/13 + (c - 1)**2*(-13*c + u0**2 + v0**2 + 13)/13 - 1"
+      ]
+    },
+    {
+      "criterion": "1 with algebraic multiplicity 2",
+      "name": "zero_geometric_multiplicity",
+      "passed": true,
+      "value": 1
+    },
+    {
+      "criterion": "zero_exact",
+      "name": "slow_effective_time_coefficient",
+      "passed": true,
+      "value": []
+    }
+  ],
+  "gate_effect": "NONE",
+  "nonclaim": "Separate local derivation by the same agent, not an external reviewer",
+  "passed": 7,
+  "physics_pass": false,
+  "review_status": "DEFERRED",
+  "schema": "r4c1-g3n5-nonzero-principal-v1",
+  "source_sha256": {
+    "Analysis/MasterTests/test_01_r4c1_g3n5_nonzero_principal_v1.py": "09b3ad3fa6045fbbc283f46d479565adf9f2497748793e6102896698281f28eb"
+  },
+  "status": "LOCAL_PRINCIPAL_DENSITY_WITH_ZERO_SPEED_JORDAN_OBSTRUCTION",
+  "total": 9,
+  "validation": "FAIL_LOCAL_CHECKS"
+}

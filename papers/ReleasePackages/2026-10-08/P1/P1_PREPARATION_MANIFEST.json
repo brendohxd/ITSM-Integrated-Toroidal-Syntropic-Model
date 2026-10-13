@@ -1,0 +1,146 @@
+{
+  "result_id": "P1-RELEASE-PREP-2026-10-08",
+  "date": "2026-10-08",
+  "manuscript_version": "0.2.0-rc2",
+  "scope": "Local manuscript cold read and portable source-package verification; not independent peer review or publication approval",
+  "review_status": "DEFERRED",
+  "Rule9_cleared": false,
+  "research_execution": "PROCEED_PROVISIONALLY",
+  "gate_effect": "NONE",
+  "publication_ready": false,
+  "preparation_status": "SOURCE_PACKAGE_CHECKED_SOURCE_CORRECTIONS_PENDING",
+  "inherited_holds": {
+    "MAT_001": "BLOCKED",
+    "UVIR_003": "IN_PROGRESS",
+    "K_Q": "NOT_DERIVED",
+    "V": "NOT_COMPUTED"
+  },
+  "original_repository_inputs": [
+    {
+      "path": "main.tex",
+      "bytes": 26577,
+      "sha256": "e9ffe5430d6d2bbf80019190abffc65834798dd2a6e09f8ee7431ad38901227e"
+    },
+    {
+      "path": "references.bib",
+      "bytes": 3870,
+      "sha256": "30c60a51075d761f8b31026c58f89a42ddee7b40229ec7a497e7ca819621adff"
+    },
+    {
+      "path": "CoverLetter.txt",
+      "bytes": 2199,
+      "sha256": "ff4cb41bb58c6e2a04bb297637b51ae5c8c2c05fac215bcb21fd450567d3fe7a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2673,
+      "sha256": "5de4f7acef764bb08fa61dbbea94588464d218cacb4410b6e59ffd41cccfe543"
+    },
+    {
+      "path": "SUBMISSION.md",
+      "bytes": 3408,
+      "sha256": "566eb12ed4f462e4d2fd148dc40c8260c1c131478fea613762e29cef5a6f0948"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 10,
+      "sha256": "c14f267937ed8c51929873d81bd794078159314152d18f6643050b8891e7da3a"
+    },
+    {
+      "path": "Build-P1-Scale-Matching-Reconstruction.ps1",
+      "bytes": 4023,
+      "sha256": "2c48150319164eaa394194b4e5de0651dce94112241df2f9f423604499210094"
+    },
+    {
+      "path": "Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc2.pdf",
+      "bytes": 631789,
+      "sha256": "0fefc03fae9024f78728ea80c170ca29e9e3d5152546a48cea8b2948c8d1352a"
+    },
+    {
+      "path": "Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc2.pdf.sha256",
+      "bytes": 134,
+      "sha256": "8504c89ff3a525dd0ec2d9d725efe448ecf4c98f4df9b89478ac5736af44c7e6"
+    }
+  ],
+  "original_figures": [
+    {
+      "path": "assets\\Figures\\itsm_t3_fundamental_domain.pdf",
+      "bytes": 37591,
+      "sha256": "c6638f5c2ad2a5f6b10e451ed988172cc0f3b33659c1c1616b10b71bd27d091b"
+    },
+    {
+      "path": "assets\\Figures\\itsm_23_factor_schematic.pdf",
+      "bytes": 43639,
+      "sha256": "8ad5f972859e276d9034f6e83ac8b8b3b07f72b2c2a77f9f69e3269c2b09e484"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "ITSM_P1_source_v0.2.0-rc2_2026-10-08.zip",
+      "bytes": 74287,
+      "sha256": "e5c3178385f646a1df4219942a37ecb7f85ebb333fb0c5ecfeff1b1ec235e808"
+    },
+    {
+      "path": "source/main.tex",
+      "sha256": "a3dce807a004d10af0da1ba26d19a1c8d872def859388e88c61286165c227a46",
+      "transformation": "graphics search path restricted to figures/; final newline normalized; manuscript content unchanged"
+    },
+    {
+      "path": "source/main.bbl",
+      "sha256": "042a5d8ff8616f2abe2662175fe62362bf46103a5c7eb2a2b2f558a84259142c"
+    },
+    {
+      "path": "build/P1_Isolated_Build_v0.2.0-rc2_2026-10-08.pdf",
+      "bytes": 631788,
+      "sha256": "c97a939fae55fe36bab520e3eed097a2544cd3f1f9ede393238b5fa11976784f",
+      "role": "new verification build; not a replacement for the retained canonical PDF"
+    },
+    {
+      "path": "P1_SOURCE_CORRECTIONS_2026-10-08.patch",
+      "sha256": "918e61fac03abbdf8adc549aee8ea45556c899c1c37076d178bb2491d7c19891",
+      "format": "apply_patch",
+      "applied": false
+    }
+  ],
+  "validation": {
+    "tex_build_exit_code": 0,
+    "rendered_pages": 6,
+    "visually_inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "recorder_input_records": 257,
+    "repository_input_dependencies": 0,
+    "cited_keys": 13,
+    "bibliography_keys": 13,
+    "missing_cited_keys": 0,
+    "source_archive_entries": [
+      "main.tex",
+      "references.bib",
+      "main.bbl",
+      "figures/itsm_t3_fundamental_domain.pdf",
+      "figures/itsm_23_factor_schematic.pdf"
+    ],
+    "latex_diagnostics": "No TeX errors, undefined references/citations or overfull boxes in final log. Underfull boxes and nameref, shell-escape and keyword warnings remain.",
+    "bibtex_warning": "Warning--jnrlst (dependency: not reversed) set 1",
+    "original_inputs_hash_checked": 11,
+    "original_input_hashes_unchanged": true,
+    "author_confirmation": false,
+    "independent_review_completed": false,
+    "uploaded": false
+  },
+  "reference_verification": [
+    {
+      "url": "https://arxiv.org/abs/1502.01593",
+      "scope": "Primary abstract confirms cubic Ri>0.97 chi_rec; distinguish likelihood-ratio and polarization matched-circle statements"
+    },
+    {
+      "url": "https://arxiv.org/abs/2210.11426",
+      "scope": "COMPACT bibliographic title/authors and abstract checked; not a reproduction"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "failed_v1_checks": [
+    {
+      "criterion": "<=1e-10",
+      "name": "background_box_sanity_4",
+      "passed": false,
+      "value": 1.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "background_box_sanity_8",
+      "passed": false,
+      "value": 1.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "background_box_sanity_16",
+      "passed": false,
+      "value": 1.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "background_box_sanity_32",
+      "passed": false,
+      "value": 1.0
+    },
+    {
+      "criterion": "<=1e-10",
+      "name": "background_box_sanity_64",
+      "passed": false,
+      "value": 1.0
+    }
+  ],
+  "full_dust_convergence_order": "NOT_PROVED",
+  "full_prepared_high_p_remainder_proved": false,
+  "modes": [
+    {
+      "box_violation": 0.0,
+      "ell": 4,
+      "field_residual": 9.615893912656803e-15,
+      "generator_residual": 1.9696180874039399e-16,
+      "inverse_residual": 4.627542280506683e-16,
+      "normalized_Q_bound_ratio": 1.0
+    },
+    {
+      "box_violation": 0.0,
+      "ell": 8,
+      "field_residual": 9.02176115688098e-15,
+      "generator_residual": 1.2428246242308988e-16,
+      "inverse_residual": 5.159631455570457e-16,
+      "normalized_Q_bound_ratio": 1.0
+    },
+    {
+      "box_violation": 0.0,
+      "ell": 16,
+      "field_residual": 6.4551848355731296e-15,
+      "generator_residual": 1.2075747445215432e-16,
+      "inverse_residual": 5.455681856051358e-16,
+      "normalized_Q_bound_ratio": 1.0
+    },
+    {
+      "box_violation": 0.0,
+      "ell": 32,
+      "field_residual": 9.510055836480328e-15,
+      "generator_residual": 1.1604245579380789e-16,
+      "inverse_residual": 5.6254875734474445e-16,
+      "normalized_Q_bound_ratio": 1.0
+    },
+    {
+      "box_violation": 0.0,
+      "ell": 64,
+      "field_residual": 6.271595211065977e-15,
+      "generator_residual": 1.1590952222311468e-16,
+      "inverse_residual": 5.700926707640965e-16,
+      "normalized_Q_bound_ratio": 1.0
+    }
+  ],
+  "precision": "Exact algebra/rational outward intervals; binary64 archive controls; no new high-precision IVP or physical EFT statement",
+  "remaining": "Control the actual dust observable error, retained fast forcing and initial mismatch; uniform full-state evolution alone does not prove its order.",
+  "uniform_full_linear_propagator_proved": true
+}

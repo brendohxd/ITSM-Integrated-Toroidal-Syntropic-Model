@@ -72,8 +72,23 @@ sync_version.py
 /.local/itsm-context/
 /.local/itsm-review/
 
+# All local runtimes, audio/transcripts, QA renders and staging copies stay private.
+# This excludes publication, not storage: existing files remain untouched on disk.
+/.local/
+
+# Unreviewed, nonconverged legacy geometric-tether MCMC debug artifacts.
+# These are not action-derived ITSM predictions or part of the research checkpoint.
+/Analysis/Simulations/itsm_tier1_joint_mcmc.py
+/Analysis/Simulations/outputs/itsm_tier1_mcmc_summary_tethered.json
+/Analysis/Simulations/outputs/itsm_tier1_mcmc_summary_tethered.json.sha256
+/assets/Figures/itsm_tier1_corner_tethered.png
+/assets/Figures/itsm_tier1_trace_tethered.png
+
 # Local non-physics/private archives
 /papers/Al-Jabr-Reunification/
 /papers/The-Anachronistic-Archive/
+# Local provenance-only legacy PDF builds; publish hashes/manifest, not the
+# unreviewed binaries (especially pre-quarantine P3/P4 claims).
+/papers/LegacyBuilds/**/*.pdf
 /THEOLOGICAL_SYNTHESIS.md
 /Scripts/Archive/rebuild_itsm_tex.py

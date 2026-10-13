@@ -2,16 +2,20 @@
 
 Multi-page research site published at https://itsm-cosmology.com.
 
-## Repository research checkpoint - 8 October 2026
+## Repository research checkpoint - 13 October 2026
 
-The recovery branch now contains the
-[conditional G3 checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-08.md),
-covering density reconstruction, interaction/regularity limits, tilted
-homogeneous candidates and their coupled finite-k scalar operator.
-Its exact-byte evidence manifest and verifier distinguish research
-reproducibility from physical validation. Canonical Tests 1-3 remain
-HOLD_SUBSTANTIVE; physical stability/cutoff, healthy full GR and SPARC
-predictions remain open. Rule-9 review remains DEFERRED, not cleared.
+The [latest checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)
+records bounded linear prepared-dust Stage-1 acceptance, the same-action
+GR-family and coupled fixed-charge response work, the RM1/ST1/ST2 matching
+screens, and versioned paper-preparation/review artifacts. Physical Stage-2
+admission remains unresolved and numerical Stage 3 is not entered. The
+fixed-charge preparation does not remove the registered timing warning;
+the matching controls do not determine numerical ITSM coupling constants.
+
+Its exact-byte evidence manifest and verifier distinguish artifact integrity
+from scientific validation. Canonical Tests 1-3 remain `HOLD_SUBSTANTIVE`;
+MAT-001 remains blocked; no physical cutoff, healthy full GR, new observational
+prediction or publication clearance follows. Rule-9 remains `DEFERRED`.
 
 This is repository documentation. The public-page audit below remains
 its dated snapshot; a branch push does not dispatch the Pages workflow.

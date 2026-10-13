@@ -2,7 +2,7 @@
 
 ## What this paper is (honest product)
 
-A **short technical note**: no-go results for a common geometric packaging of
+A **short technical note**: scoped consistency constraints for a common geometric packaging of
 $a_0\sim cH_0/(2\pi)$ on cubic $T^3$, plus the derived weak-field invariant
 $C_{\mathrm{obs}}=C_m^{3/2}/\sqrt{C_{\rm IR}}$.
 
@@ -14,13 +14,14 @@ cosmology paper. That is a feature: it is what can currently survive peer review
 | File | Role |
 |------|------|
 | `main.tex` + `references.bib` | Source |
-| `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.1.0-draft.pdf` | Canonical built PDF |
+| `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc3.pdf` | Canonical built PDF |
 | `CoverLetter.txt` | arXiv comment / journal cover letter |
-| Figures via `\graphicspath` to `Assets/Figures/` | Bundle `itsm_t3_fundamental_domain.pdf` and `itsm_23_factor_schematic.pdf` with the source zip |
+| Figure via `\graphicspath` | Bundle `itsm_t3_fundamental_domain.pdf` in `figures/`; the projection illustration is not included in rc3 |
 
-For arXiv/journal upload, copy the two figure PDFs into this directory (or a
-`figures/` subfolder) and set `\graphicspath{{./}{figures/}}` if required by
-the upload layout.
+For arXiv/journal upload, bundle the retained fundamental-domain figure and
+use `\graphicspath{{figures/}}` in the packaged source. Include `main.tex`,
+`references.bib`, and the generated `main.bbl`. Author/review/venue decisions
+are distinct from a successful source-package build.
 
 ## Build (env already active)
 
@@ -36,10 +37,10 @@ cd papers\P1-Scale-Matching-Reconstruction
 
 - [x] No circulation-quantization derivation of $a_0$
 - [x] No $(L,\Gamma=cL,\omega=H_0)$ consistency claim as physics
-- [x] Cubic $E_1$ at $L=c/H_0$ marked excluded vs Planck
-- [x] Fixed-moduli $L_{\rm phys}(t)=c/H(t)$ excluded (needs $q=0$ or moduli)
+- [x] Cubic $E_1$ at $L=c/H_0$ marked incompatible with the cited Planck bound
+- [x] Fixed-moduli $L_{\rm phys}(t)=c/H(t)$ marked incompatible except for $q=0$ (or an added modulus sector)
 - [x] Trace $2/3$ does not determine $C_{\mathrm{obs}}$
-- [x] Dual $a_0=cH_0/2\pi$ + $C_{\mathrm{obs}}=2/3$ RAR no-go stated
+- [x] Dual $a_0=cH_0/2\pi$ + $C_{\mathrm{obs}}=2/3$ result bounded to the conditional spherical baseline
 - [x] Doughnut not used as $T^3$
 - [x] $C_{\mathrm{obs}}$ invariant derived via field rescaling
 - [x] Reconstruction checklist for future geometric claims
@@ -52,12 +53,29 @@ cd papers\P1-Scale-Matching-Reconstruction
 - [x] Table I full-width + row rules + text after table
 - [x] Code/data availability
 - [x] Focused bibliography (cited works only)
+- [x] AI-tool use disclosed; author responsibility stated
+- [x] Unsupported attribution to unspecified "recent proposals" removed
+- [x] Reviewer-neutral disposition language replaces prosecutorial wording
+- [x] (M), (S), and (E) evaluation criteria previewed before application
+- [x] $4/9$ and 18% shifts identified as conditional normalization checks, not a completed data rejection
 
 ### Human steps before upload
 
+Local rc3 preparation completed on 8 October 2026:
+
+- [x] Saved manuscript corrections applied and version/date frozen
+- [x] Canonical PDF compiled using the installed MiKTeX
+- [x] Portable source package built with local figure paths
+- [x] All six PDF pages visually inspected
+- [x] Earlier retained PDFs/sidecars and pre-edit source snapshots preserved
+
+The [rc3 preparation record](../ReleasePackages/2026-10-08/P1-rc3/P1_RC3_RELEASE_PREPARATION_REPORT_2026-10-08.md)
+contains hashes and verification. The in-app preview compile timed out; the
+native project and isolated-package builds passed. The human steps below
+remain outstanding.
+
 - [ ] Final author proofread (cold read of abstract + Secs. a0, bounds, rar)
 - [ ] Confirm ORCID and email in footer
-- [ ] Bundle figures for arXiv (paths relative to upload root)
 - [ ] Choose arXiv categories: **gr-qc** primary; **astro-ph.CO** cross-list
 - [ ] Optional: ask one external physicist for a 48h hostile read
 - [ ] Journal decision after arXiv feedback (CQG Note or PRD)
@@ -72,6 +90,10 @@ cd papers\P1-Scale-Matching-Reconstruction
 | ApJ / MNRAS | Weak fit (little new data analysis) |
 
 ## What would still block “derivation paper” status
+
+The local rc3 preparation record is maintained separately from these human
+steps. Applying the saved corrections and compiling a source package does
+not complete the author proofread or independent review.
 
 The ten-step reconstruction checklist in Sec.~“What remains…” — that is
 **future work**, not a defect of *this* note.

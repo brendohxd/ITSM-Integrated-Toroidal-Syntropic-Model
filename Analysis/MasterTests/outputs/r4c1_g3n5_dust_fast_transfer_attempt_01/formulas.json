@@ -1,0 +1,530 @@
+{
+  "constants": {
+    "K_Brem": "23027743843560282122551314907434264509113872186102624539793068565458319892979993292673296251718799/414149862010800360881728216507613184000000000000000000000000000000000000000000000000000000000000",
+    "K_commutator": "3801150743089051/331968000000000",
+    "K_value_drift": "26329737845100830325976550264272989215000712911497176937229504071/165998230569234817508966400000000000000000000000000000000000000",
+    "V_norm": "2022477315199/60648000000",
+    "gamma_diagonal": "8145286718264631477338156749426213959596331817693697362171252625076416889203831483696926366420188263102877438013/61223567026125611948965441382212203184128000000000000000000000000000000000000000000000000000000000000000000000",
+    "kappa": "6308579707480863118869193507959847864072491817693697362171252625076416889203831483696926366420188263102877438013/12244713405225122389793088276442440636825600000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "coordinate_definition": "y=(I+V/ell^2)^(-1)w, with original full w transform retained",
+  "diagonal_propagator": "||Phi_diag(t,s)||<=3 exp((30+3*kappa/ell_min)*(t-s))",
+  "domain": "ell>=15; 0<=s<=t<=1/20; rotating B1 J=1",
+  "fast_initial_transfer": "For y_other(0)=0: ||y_other(t)||_Q(t)<=9*kappa*t*exp(gamma_diagonal*t)*||y_fast(0)||_Q(0)/ell",
+  "full_propagator": "||Phi_y(t,s)||_Q(t)<-Q(s)<=3 exp(30*(t-s))",
+  "gamma_display": 133.0416882568903,
+  "kappa_display": 515.2084412844515,
+  "matrices": {
+    "commutator_ordinary_wave": {
+      "entries": [
+        {
+          "column": 9,
+          "row": 0,
+          "terms": [
+            "-4*sqrt(2)*H*a/5 - 18*sqrt(2)*a*psi_dot/11"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 6,
+          "terms": [
+            "-2*a*u_dot/5"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 7,
+          "terms": [
+            "-2*a*v_dot/5"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 8,
+          "terms": [
+            "-2*a*r_dot/5"
+          ]
+        },
+        {
+          "column": 0,
+          "row": 9,
+          "terms": [
+            "121*sqrt(2)*H*a/25 + 99*sqrt(2)*a*psi_dot/10"
+          ]
+        },
+        {
+          "column": 6,
+          "row": 9,
+          "terms": [
+            "-22*a*u0*v0*v_dot/325 + 22*a*u_dot*v0**2/325 + 22*a*u_dot/25"
+          ]
+        },
+        {
+          "column": 7,
+          "row": 9,
+          "terms": [
+            "22*a*u0**2*v_dot/325 - 22*a*u0*u_dot*v0/325 + 22*a*v_dot/25"
+          ]
+        },
+        {
+          "column": 8,
+          "row": 9,
+          "terms": [
+            "22*a*r_dot/25"
+          ]
+        }
+      ],
+      "shape": [
+        20,
+        20
+      ]
+    },
+    "order_zero_block_diagonal": {
+      "entries": [
+        {
+          "column": 3,
+          "row": 0,
+          "terms": [
+            "-4*sqrt(2)*I*H**2/11 + 92*sqrt(2)*I*H*psi_dot/55 + 758*sqrt(2)*I*psi_dot**2/275 + 10*sqrt(2)*I*r_dot**2/11 - 2*sqrt(2)*I*rho_m/11 + 10*sqrt(2)*I*u_dot**2/11 + 10*sqrt(2)*I*v_dot**2/11"
+          ]
+        },
+        {
+          "column": 6,
+          "row": 0,
+          "terms": [
+            "-12*sqrt(2)*u0*v0*v_dot/143 + 12*sqrt(2)*u_dot*v0**2/143 + 12*sqrt(2)*u_dot/11"
+          ]
+        },
+        {
+          "column": 7,
+          "row": 0,
+          "terms": [
+            "12*sqrt(2)*u0**2*v_dot/143 - 12*sqrt(2)*u0*u_dot*v0/143 + 12*sqrt(2)*v_dot/11"
+          ]
+        },
+        {
+          "column": 8,
+          "row": 0,
+          "terms": [
+            "12*sqrt(2)*r_dot/11"
+          ]
+        },
+        {
+          "column": 13,
+          "row": 0,
+          "terms": [
+            "-2*sqrt(2)*I*H/11 + 4*sqrt(2)*I*psi_dot/55"
+          ]
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "terms": [
+            "-3*sqrt(2)*I"
+          ]
+        },
+        {
+          "column": 3,
+          "row": 3,
+          "terms": [
+            "-24*H/11 - 24*psi_dot/55"
+          ]
+        },
+        {
+          "column": 13,
+          "row": 3,
+          "terms": [
+            "-1/11"
+          ]
+        },
+        {
+          "column": 0,
+          "row": 6,
+          "terms": [
+            "-3*sqrt(2)*u_dot"
+          ]
+        },
+        {
+          "column": 3,
+          "row": 6,
+          "terms": [
+            "57*I*H*u_dot/11 + 24*I*psi_dot*u_dot/55 + 3*I*r0**2*u0/14 + I*u0**5/80 + I*u0**3*v0**2/40 + I*u0**3/6 + I*u0*v0**4/80 + I*u0*v0**2/6 + I*u0"
+          ]
+        },
+        {
+          "column": 13,
+          "row": 6,
+          "terms": [
+            "I*u_dot/11"
+          ]
+        },
+        {
+          "column": 0,
+          "row": 7,
+          "terms": [
+            "-3*sqrt(2)*v_dot"
+          ]
+        },
+        {
+          "column": 3,
+          "row": 7,
+          "terms": [
+            "57*I*H*v_dot/11 + 24*I*psi_dot*v_dot/55 + 3*I*r0**2*v0/14 + I*u0**4*v0/80 + I*u0**2*v0**3/40 + I*u0**2*v0/6 + I*v0**5/80 + I*v0**3/6 + I*v0"
+          ]
+        },
+        {
+          "column": 13,
+          "row": 7,
+          "terms": [
+            "I*v_dot/11"
+          ]
+        },
+        {
+          "column": 0,
+          "row": 8,
+          "terms": [
+            "-3*sqrt(2)*r_dot"
+          ]
+        },
+        {
+          "column": 3,
+          "row": 8,
+          "terms": [
+            "57*I*H*r_dot/11 + 24*I*psi_dot*r_dot/55 + I*r0**3/7 + 3*I*r0*u0**2/14 + 3*I*r0*v0**2/14 + 2*I*r0"
+          ]
+        },
+        {
+          "column": 13,
+          "row": 8,
+          "terms": [
+            "I*r_dot/11"
+          ]
+        },
+        {
+          "column": 10,
+          "row": 10,
+          "terms": [
+            "-4*H"
+          ]
+        },
+        {
+          "column": 16,
+          "row": 10,
+          "terms": [
+            "-10*sqrt(2)*u_dot/11"
+          ]
+        },
+        {
+          "column": 17,
+          "row": 10,
+          "terms": [
+            "-10*sqrt(2)*v_dot/11"
+          ]
+        },
+        {
+          "column": 18,
+          "row": 10,
+          "terms": [
+            "-10*sqrt(2)*r_dot/11"
+          ]
+        },
+        {
+          "column": 11,
+          "row": 11,
+          "terms": [
+            "-4*H"
+          ]
+        },
+        {
+          "column": 12,
+          "row": 12,
+          "terms": [
+            "-4*H"
+          ]
+        },
+        {
+          "column": 0,
+          "row": 13,
+          "terms": [
+            "6*sqrt(2)*I*H + 6*sqrt(2)*I*psi_dot/5"
+          ]
+        },
+        {
+          "column": 3,
+          "row": 13,
+          "terms": [
+            "26*H**2/11 + 668*H*psi_dot/55 + 4967*psi_dot**2/275 + 65*r_dot**2/11 - 31*rho_m/825 + 65*u_dot**2/11 + 65*v_dot**2/11"
+          ]
+        },
+        {
+          "column": 6,
+          "row": 13,
+          "terms": [
+            "6*I*u0*v0*v_dot/13 - 6*I*u_dot*v0**2/13 - 6*I*u_dot"
+          ]
+        },
+        {
+          "column": 7,
+          "row": 13,
+          "terms": [
+            "-6*I*u0**2*v_dot/13 + 6*I*u0*u_dot*v0/13 - 6*I*v_dot"
+          ]
+        },
+        {
+          "column": 8,
+          "row": 13,
+          "terms": [
+            "-6*I*r_dot"
+          ]
+        },
+        {
+          "column": 13,
+          "row": 13,
+          "terms": [
+            "-9*H/11 + 24*psi_dot/55"
+          ]
+        },
+        {
+          "column": 14,
+          "row": 14,
+          "terms": [
+            "-2*H"
+          ]
+        },
+        {
+          "column": 15,
+          "row": 15,
+          "terms": [
+            "-2*H"
+          ]
+        },
+        {
+          "column": 10,
+          "row": 16,
+          "terms": [
+            "15*sqrt(2)*u_dot/2"
+          ]
+        },
+        {
+          "column": 16,
+          "row": 16,
+          "terms": [
+            "-4*H"
+          ]
+        },
+        {
+          "column": 10,
+          "row": 17,
+          "terms": [
+            "15*sqrt(2)*v_dot/2"
+          ]
+        },
+        {
+          "column": 17,
+          "row": 17,
+          "terms": [
+            "-4*H"
+          ]
+        },
+        {
+          "column": 10,
+          "row": 18,
+          "terms": [
+            "15*sqrt(2)*r_dot/2"
+          ]
+        },
+        {
+          "column": 18,
+          "row": 18,
+          "terms": [
+            "-4*H"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 19,
+          "terms": [
+            "-30*psi_dot**2/11"
+          ]
+        },
+        {
+          "column": 19,
+          "row": 19,
+          "terms": [
+            "-5*H"
+          ]
+        }
+      ],
+      "shape": [
+        20,
+        20
+      ]
+    },
+    "second_drift_and_value": {
+      "entries": [
+        {
+          "column": 10,
+          "row": 9,
+          "terms": [
+            "726*sqrt(2)*H**2*a**2/25 + 297*sqrt(2)*H*a**2*psi_dot/2 + 99*sqrt(2)*a**2*psi_dot**2/5 + 264*sqrt(2)*a**2*rho_m/25"
+          ]
+        },
+        {
+          "column": 16,
+          "row": 9,
+          "terms": [
+            "154*H*a**2*u_dot/5 + 54*a**2*psi_dot*u_dot + 33*a**2*r0**2*u0/175 + 11*a**2*u0**5/1000 + 11*a**2*u0**3*v0**2/500 + 11*a**2*u0**3/75 + 11*a**2*u0*v0**4/1000 + 11*a**2*u0*v0**2/75 + 22*a**2*u0/25"
+          ]
+        },
+        {
+          "column": 17,
+          "row": 9,
+          "terms": [
+            "154*H*a**2*v_dot/5 + 54*a**2*psi_dot*v_dot + 33*a**2*r0**2*v0/175 + 11*a**2*u0**4*v0/1000 + 11*a**2*u0**2*v0**3/500 + 11*a**2*u0**2*v0/75 + 11*a**2*v0**5/1000 + 11*a**2*v0**3/75 + 22*a**2*v0/25"
+          ]
+        },
+        {
+          "column": 18,
+          "row": 9,
+          "terms": [
+            "154*H*a**2*r_dot/5 + 54*a**2*psi_dot*r_dot + 22*a**2*r0**3/175 + 33*a**2*r0*u0**2/175 + 33*a**2*r0*v0**2/175 + 44*a**2*r0/25"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 10,
+          "terms": [
+            "24*sqrt(2)*H**2*a**2/5 + 54*sqrt(2)*H*a**2*psi_dot/11 - 12*sqrt(2)*a**2*psi_dot**2/11 - 32*sqrt(2)*a**2*rho_m/55"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 16,
+          "terms": [
+            "-54*H*a**2*u_dot/5 - 270*a**2*psi_dot*u_dot/11 - 3*a**2*r0**2*u0/35 - a**2*u0**5/200 - a**2*u0**3*v0**2/100 - a**2*u0**3/15 - a**2*u0*v0**4/200 - a**2*u0*v0**2/15 - 2*a**2*u0/5"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 17,
+          "terms": [
+            "-54*H*a**2*v_dot/5 - 270*a**2*psi_dot*v_dot/11 - 3*a**2*r0**2*v0/35 - a**2*u0**4*v0/200 - a**2*u0**2*v0**3/100 - a**2*u0**2*v0/15 - a**2*v0**5/200 - a**2*v0**3/15 - 2*a**2*v0/5"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 18,
+          "terms": [
+            "-54*H*a**2*r_dot/5 - 270*a**2*psi_dot*r_dot/11 - 2*a**2*r0**3/35 - 3*a**2*r0*u0**2/35 - 3*a**2*r0*v0**2/35 - 4*a**2*r0/5"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 19,
+          "terms": [
+            "-88*H**2*a**2/25 - 72*H*a**2*psi_dot/5 - 162*a**2*psi_dot**2/11 - 4*a**2*r_dot**2/75 - 4*a**2*u_dot**2/75 - 4*a**2*v_dot**2/75"
+          ]
+        },
+        {
+          "column": 10,
+          "row": 19,
+          "terms": [
+            "-198*sqrt(2)*H*a**2*psi_dot**2/5 - 81*sqrt(2)*a**2*psi_dot**3"
+          ]
+        },
+        {
+          "column": 16,
+          "row": 19,
+          "terms": [
+            "-12*a**2*psi_dot**2*u_dot/5"
+          ]
+        },
+        {
+          "column": 17,
+          "row": 19,
+          "terms": [
+            "-12*a**2*psi_dot**2*v_dot/5"
+          ]
+        },
+        {
+          "column": 18,
+          "row": 19,
+          "terms": [
+            "-12*a**2*psi_dot**2*r_dot/5"
+          ]
+        }
+      ],
+      "shape": [
+        20,
+        20
+      ]
+    },
+    "second_fast_map_V": {
+      "entries": [
+        {
+          "column": 10,
+          "row": 9,
+          "terms": [
+            "363*sqrt(2)*H*a**2/25 + 297*sqrt(2)*a**2*psi_dot/10"
+          ]
+        },
+        {
+          "column": 16,
+          "row": 9,
+          "terms": [
+            "22*a**2*u_dot/25"
+          ]
+        },
+        {
+          "column": 17,
+          "row": 9,
+          "terms": [
+            "22*a**2*v_dot/25"
+          ]
+        },
+        {
+          "column": 18,
+          "row": 9,
+          "terms": [
+            "22*a**2*r_dot/25"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 10,
+          "terms": [
+            "-4*sqrt(2)*H*a**2/5 - 18*sqrt(2)*a**2*psi_dot/11"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 16,
+          "terms": [
+            "-2*a**2*u_dot/5"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 17,
+          "terms": [
+            "-2*a**2*v_dot/5"
+          ]
+        },
+        {
+          "column": 9,
+          "row": 18,
+          "terms": [
+            "-2*a**2*r_dot/5"
+          ]
+        }
+      ],
+      "shape": [
+        20,
+        20
+      ]
+    }
+  },
+  "not_old_probe_replacement": true,
+  "off_block": "||off_f(A_y)||_Q<=kappa/ell",
+  "proof": "Q>=5I/33,Q<=9I/8 imply norm conversion<=3; ell^2>=6V_norm gives T2 Qnorm<=3/2,inverse<=2. Exact cross cancellation and residual bounds give off-block<=kappa/ell. Similarity of prior uniform propagator gives 3 exp(30 dt); bounded-perturbation Volterra inequality gives diagonal propagator. Variation of constants with full retained fast response yields the component-transfer bound."
+}

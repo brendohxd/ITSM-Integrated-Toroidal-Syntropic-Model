@@ -1,0 +1,47 @@
+{
+  "certificate_inputs": "Exact approved recipe; NOT a certification of the binary64 numerical mirror",
+  "constants": {
+    "E0_upper": "3/4",
+    "H0_lower": "1/5",
+    "H0_upper": "3/5",
+    "Hdot_abs": "36/47",
+    "L": "7/4",
+    "Mcos_lower": "47/48",
+    "Mcos_upper": "11/10",
+    "W_abs_upper": "7/5",
+    "a_upper": "100/97",
+    "cV2_lower": "4/5",
+    "cV2_upper": "1",
+    "frame_mass_abs_upper": "5/2",
+    "mu": "1",
+    "pd_lower": "177*eta/1000",
+    "pd_upper": "eta/5"
+  },
+  "domain": "0<eta<=1/4; k=40; t in [0,1/20]",
+  "exact_initial_energy": "2843*eta**3/16800 + 13*eta**2/168 + 65*eta/32 + 1/5",
+  "full_nonlinear_remainder_certified": false,
+  "linear_zero": {
+    "W_t_abs_lower": "25",
+    "canonical_frequency_squared_lower": "12759949/12100",
+    "proof": "While X and comparison y are positive, (X'y-Xy')'=(32^2-q)Xy<=0, so X<=y; after X's initial maximum, (X'^2+32^2 X^2)'=-2(q-32^2)XX'>=0. This certifies the linear zero only.",
+    "zero_time_upper": "3583/71680"
+  },
+  "numerical_error_certified": false,
+  "physical_EFT_window": false,
+  "proof": "Positive potential and Friedmann bootstrap, charge and force-current identities; mu-norm oscillator comparison and Parseval. h_l convolution tail uses |h_l|<=12/m^2 for m>=7, retained n<=5, plus sum_{m>5}m^-3<=1/50. Pointwise bounds use the full gradient energy, not L2 alone.",
+  "tail_coefficients_rational": {
+    "tau1": "189189/456250000000",
+    "tau2": "3104103949947/83265625000000000000"
+  },
+  "tails": {
+    "B0": "1008/228125",
+    "omitted_input_third_energy_sqrt": "9072/10408203125*eta^7",
+    "omitted_input_third_pointwise": "3402/52041015625*eta^7",
+    "omitted_output_third_pointwise": "40824/52041015625*eta^7",
+    "second_order_tail_energy_sqrt": "63/456250*eta^(7/2)",
+    "second_order_tail_pointwise": "189/18250000*eta^(7/2)",
+    "second_order_tail_velocity_pointwise": "1512/5703125*eta^(7/2)",
+    "tau1_tail": "189189/456250000000*eta^(7/2)",
+    "tau2_tail": "3104103949947/83265625000000000000*eta^7"
+  }
+}
