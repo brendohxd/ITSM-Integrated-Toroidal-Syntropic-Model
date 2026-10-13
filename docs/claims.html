@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Claim hygiene — ITSM</title>
-  <meta name="description" content="ITSM claim statuses and fail-closed public ledger, audited against the recovery authority." />
+  <title>Evidence & technical status — ITSM</title>
+  <meta name="description" content="The technical status behind ITSM: completed bounded calculations, conditional mechanisms, open physical requirements and unchanged canonical gate holds." />
   <link rel="canonical" href="https://itsm-cosmology.com/claims.html" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
@@ -20,41 +20,20 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="ITSM Cosmology" />
-  <link rel="stylesheet" href="styles.css?v=20260912b" />
+  <link rel="stylesheet" href="styles.css?v=20261014a" />
 </head>
-<body>
+<body class="concept-site">
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="sky" aria-hidden="true"></div>
-  <nav class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a>
-      <ul class="nav-links">
-        <li><a href="vision.html">Vision</a></li>
-        <li><a href="architecture.html">Architecture</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="papers.html">Papers</a></li>
-        <li><a href="claims.html" aria-current="page">Claims</a></li>
-        <li><a href="reproduce.html">Reproduce</a></li>
-        <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">GitHub</a></li>
-      </ul>
-    </div>
-  </nav>
+  <nav class="nav" aria-label="Main navigation"><div class="wrap nav-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a><ul class="nav-links"><li><a href="vision.html">Vision</a></li><li><a href="architecture.html">The model</a></li><li><a href="research.html">Progress</a></li><li><a href="papers.html">Papers</a></li><li><a href="claims.html" aria-current="page">Evidence</a></li></ul></div></nav>
 
-  <header class="page-hero">
-    <div class="wrap">
-      <p class="breadcrumb"><a href="index.html">Home</a> / Claims</p>
-      <h1>Claim <em>hygiene</em></h1>
-      <p class="lede">
-        No claim is promoted beyond its verified gate status. This public
-        matrix was audited against the recovery authority on 26 September 2026.
-      </p>
-    </div>
-  </header>
+  <header class="page-hero"><div class="wrap"><p class="breadcrumb"><a href="index.html">Home</a> / Evidence</p><h1>What the evidence <em>supports</em></h1><p class="lede">A technical companion to the concept and progress pages. This map reflects the 13 October research checkpoint; the linked owning reports carry each result’s assumptions and limits.</p></div></header>
 
-  <main class="wrap">
+  <main class="wrap" id="main">
     <section class="section">
       <div class="section-head">
         <h2>Status Definitions</h2>
-        <p>Exactly one label per scientific claim</p>
+        <p>Scientific claim labels and workflow labels are distinct.</p>
       </div>
       <div class="table-wrap">
         <table>
@@ -86,7 +65,7 @@
     <section class="section">
       <div class="section-head">
         <h2>Key Quantities &amp; Current Status</h2>
-        <p>Canonical v12.0-alpha.12 authority baseline</p>
+        <p>Canonical v12.0-alpha.12 boundary; bounded research updated through 13 October 2026.</p>
       </div>
       <div class="table-wrap">
         <table>
@@ -94,6 +73,16 @@
             <tr><th>Quantity / Component</th><th>Status</th><th>Canonical Scope &amp; Boundary</th></tr>
           </thead>
           <tbody>
+            <tr>
+              <td><strong>Bounded dust calculation</strong></td>
+              <td><span class="badge badge-cond">Research acceptance met</span></td>
+              <td>Original registered linear B1 prepared-data problem only, t ∈ [0, 0.05]. Not canonical dust closure, Hamiltonian positivity or a physical cutoff. <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Gates/RES-001/RES001_R4C1_G3N5_DUST_STAGE1_ACCEPTANCE_REPORT_2026-10-12.md">Owning report</a>.</td>
+            </tr>
+            <tr>
+              <td><strong>RM1 / ST1 / ST2 matching screens</strong></td>
+              <td><span class="badge badge-cond">Separate mechanism controls</span></td>
+              <td>RM1 fails the specified gapless static-source requirement; ST1 supplies a parameterized relation; ST2 computes a threshold but leaves renormalized inputs and the physical background open. No canonical parent, numerical K<sub>Q</sub>, V or nonlinear force normalization is selected. <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Gates/MAT-001/MAT001_PHYSICAL_MATCHING_ROUTE_DECISION_2026-10-13.md">Route decision</a>.</td>
+            </tr>
             <tr>
               <td><strong>Conformal matter coupling (<code>C_m</code>)</strong></td>
               <td><span class="badge badge-cond">Research Fork</span></td>
@@ -127,7 +116,7 @@
             <tr>
               <td><strong>Master Tests 1–3 / R4C1</strong></td>
               <td><span class="badge badge-cond">Conditional</span></td>
-              <td>The conditional R4C1 candidate has bounded action/source and variation receipts, while S1/S2/S3 add scalar constraint, corrected propagation and restricted zero-branch diagnostics. These results retain <code>physics_pass=false</code>; substantive stability, well-posedness, physical matching and canonical parent acceptance remain open.</td>
+              <td>The registered linear prepared-dust Stage-1 calculation meets bounded research acceptance, with an exact evolving split, finite-k correction, fast forcing and certified short-time error control. The same-action family and fixed quadratic-charge response calculations do not yet establish a physical validity window or healthy full GR. These results retain <code>physics_pass=false</code> and <code>gate_effect=NONE</code>; numerical Stage 3 has not been entered.</td>
             </tr>
             <tr>
               <td><strong>BBN-001 action-derived interface</strong></td>
@@ -143,14 +132,10 @@
         </table>
       </div>
     </section>
+    <section class="section prose"><h2>Exact canonical and review boundary</h2><p>K_Q=NOT_DERIVED; V=NOT_COMPUTED; MAT-001=BLOCKED; UVIR-003=IN_PROGRESS; Stage4A=CLOSED. Bounded research retains physics_pass=false and gate_effect=NONE. Rule-9 review_status=DEFERRED and Rule9_cleared=false; pending review alone does not prevent provisional research.</p><p><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/active_research.md">Research dashboard</a> · <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md">Review policy</a> · <a href="reproduce.html">Check the retained evidence</a></p></section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <p>© 2026 Brendon Boyd · Open Science under CC-BY-4.0 / GPLv3</p>
-      <p><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">Source Code on GitHub</a></p>
-    </div>
-  </footer>
+  <footer class="footer"><div class="wrap footer-inner"><p>© 2026 Brendon Boyd · ITSM Cosmology</p><div class="footer-links"><a href="reproduce.html">Reproduce</a><a href="claims.html">Technical status</a><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture">GitHub</a><a href="https://orcid.org/0009-0007-4177-2612">ORCID</a><a href="mailto:brendon.boyd@itsm-cosmology.org">Contact</a></div></div></footer>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'itsm-pwa-v9-20260914';
+const CACHE_NAME = 'itsm-pwa-v10-20261014';
 const ASSETS = [
   './',
   './index.html',
@@ -36,7 +36,7 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => {
       return Promise.all(
-        keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))
+        keys.filter((key) => key.startsWith('itsm-pwa-') && key !== CACHE_NAME).map((key) => caches.delete(key))
       );
     }).then(() => self.clients.claim())
   );

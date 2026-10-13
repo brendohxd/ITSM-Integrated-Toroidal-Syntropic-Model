@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reproduce — ITSM</title>
-  <meta name="description" content="How to clone the ITSM recovery branch and reproduce bounded, checksum-tracked analysis checkpoints." />
+  <title>Reproduce & inspect — ITSM</title>
+  <meta name="description" content="Inspect the ITSM recovery branch and verify immutable research checkpoint hashes or replay retained dust evidence without overwriting original results." />
   <link rel="canonical" href="https://itsm-cosmology.com/reproduce.html" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
@@ -20,135 +20,36 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="ITSM Cosmology" />
-  <link rel="stylesheet" href="styles.css?v=20260912b" />
+  <link rel="stylesheet" href="styles.css?v=20261014a" />
 </head>
-<body>
+<body class="concept-site">
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="sky" aria-hidden="true"></div>
-  <nav class="nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a>
-      <ul class="nav-links">
-        <li><a href="vision.html">Vision</a></li>
-        <li><a href="architecture.html">Architecture</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="papers.html">Papers</a></li>
-        <li><a href="claims.html">Claims</a></li>
-        <li><a href="reproduce.html" aria-current="page">Reproduce</a></li>
-        <li><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">GitHub</a></li>
-      </ul>
-    </div>
-  </nav>
+  <nav class="nav" aria-label="Main navigation"><div class="wrap nav-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a><ul class="nav-links"><li><a href="vision.html">Vision</a></li><li><a href="architecture.html">The model</a></li><li><a href="research.html">Progress</a></li><li><a href="papers.html">Papers</a></li><li><a href="claims.html">Evidence</a></li></ul></div></nav>
 
-  <header class="page-hero">
-    <div class="wrap">
-      <p class="breadcrumb"><a href="index.html">Home</a> / Reproduce</p>
-      <h1>Reproduce the <em>checkpoints</em></h1>
-      <p class="lede">
-        Deterministic analysis scripts, bounded outputs, and SHA-256 checksums.
-        A script-level pass does not constitute a physics-gate pass.
-      </p>
-    </div>
-  </header>
+  <header class="page-hero"><div class="wrap"><p class="breadcrumb"><a href="index.html">Home</a> / Reproduce</p><h1>Open evidence.<br /><em>Reproducible scope.</em></h1><p class="lede">Follow a result back to its source, inspect the recorded failures, and check the retained evidence without replacing the original files.</p></div></header>
 
-  <main class="wrap">
-    <section class="section">
-      <div class="section-head">
-        <h2>Setup</h2>
-        <p>Clone the recovery branch and read its authority documents first</p>
-      </div>
-      <div class="card span-2">
-        <pre><code>git clone https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model.git
-cd ITSM-Integrated-Toroidal-Syntropic-Model
-git checkout recovery/v12-core-architecture
-
-# Read current authority and status before interpreting outputs
-# README.md
-# active_research.md
-# Theory/Core/ITSM_Master_Research_Plan.md
-# Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md
-# Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md</code></pre>
-      </div>
+  <main class="wrap" id="main">
+    <section class="section prose">
+      <h2>1. Get the research branch</h2>
+      <pre><code>git clone --branch recovery/v12-core-architecture https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model.git
+cd ITSM-Integrated-Toroidal-Syntropic-Model</code></pre>
+      <p>Start with <code>README.md</code>, <code>GEMINI.md</code>, the core identity briefing and <code>active_research.md</code>. The <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md">13 October checkpoint</a> maps the latest retained calculation and paper evidence.</p>
+      <h2>2. Verify the immutable checkpoint</h2>
+      <pre><code>python -B Scripts/verify_research_checkpoint.py --manifest Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.manifest.json --revision fb5a5c0abe07c5a48de8be6f612b65c8d1f39721</code></pre>
+      <p>This reads the named Git revision and checks exact file bytes and source pins. It does not rerun the scientific pipelines, establish physical health or certify a paper. Naming the revision keeps the check meaningful after later website and documentation edits.</p>
+      <h2>3. Inspect a bounded result</h2>
+      <p>The dust <a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/recovery/v12-core-architecture/Theory/Gates/RES-001/RES001_R4C1_G3N5_DUST_STAGE1_ACCEPTANCE_REPORT_2026-10-12.md">acceptance report</a> links the underlying correction, forcing, order, energy and certified numerical packages. Read their domains before interpreting a pass.</p>
+      <pre><code>python -B Analysis/MasterTests/test_01_r4c1_g3n5_dust_stage1_acceptance_v1.py --replay Analysis/MasterTests/outputs/r4c1_g3n5_dust_stage1_acceptance_attempt_01</code></pre>
+      <p>This scientific replay uses the project's scientific Python dependencies and checks the retained receipt against a fresh reconstruction. The registered replay refuses a mismatch rather than overwriting the archive. It is separate from the standard-library checkpoint hash verifier.</p>
+      <h2>4. Keep the scientific conclusion separate</h2>
+      <p>The Stage-1 problem is complete only in its original linear prepared-data scope. Stage 2 has no demonstrated physical GO family, and Stage 3 lacks identifying matching inputs. Failed and interrupted attempts remain part of the evidence.</p>
+      <p>When producing new calculations, use a fresh version and output directory. Preserve original receipts, their checksums and rejected cases. Do not replace an old FAIL with a later PASS or treat a check count as a physical prediction.</p>
     </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Scoped Analysis Checkpoints</h2>
-        <p>Run deterministic Python entry points and verify their matching .sha256 sidecars</p>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <h3>TOP-X4 / X4-S2F3 — Plan 11</h3>
-          <p>Reproduces the bounded static and finite-charge checks, the preserved 11/12 dynamic WKB failure, the separate 18/18 exact scalar/first-order Dirac transport pass, the 20/20 D5 scaffold audit, the 25/25 fixed-metric scalar-matrix pass, the 22/22 local scalar-matrix Hadamard-parametrix pass through <code>U_2</code>, the 8/8 finite-order Route-B adiabatic-symbol diagnostic, the registered 10/10 Route-A theorem-backed scalar-state construction, the scoped 13/13 curved-Dirac operator checkpoint and the 8/8 physical-Hessian readiness audit. All retain <code>physics_pass=false</code>; the result is not independent peer review or a numerical physics pass, and Dirac/gravity/parity completion, normalization, determinant, stress and the physical Hessian remain open.</p>
-          <pre><code>python Analysis/TOP/TOP-X4/topx4_s2f3_static_determinant_checkpoint.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_entry_gate.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_finite_charge_operator_checkpoint.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_dynamic_state_subtraction_checkpoint.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_exact_transport_retry_checkpoint.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_hadamard_subtraction_readiness.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_covariant_scalar_matrix_checkpoint.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_scalar_matrix_hadamard_parametrix_checkpoint.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_global_state_construction_preflight.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_adiabatic_symbol_diagnostic.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_global_state_construction.py
-python Analysis/TOP/TOP-X4/topx4_s2f3_physical_hessian_readiness.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>Master Tests 1–3 / R4C1 — Conditional Action and Stability Diagnostics</h3>
-          <p>Runs the current bounded continuation under the frozen conditional R4C1 action. Tests 1–3 remain incomplete: the spherical force law is conditional, the universal periodic-<code>T^3</code> pointwise law is rejected, and no unique blind <code>C<sub>χ</sub></code> is selected. The S1/S2/S3 receipts are scoped constraint, propagation and zero-branch diagnostics, not full stability or well-posedness proofs.</p>
-          <pre><code>python -B Analysis/MasterTests/tests_01_03_symbolic_audit.py --test 1
-python -B Analysis/MasterTests/test_01_r4c1_full_variation.py
-python -B Analysis/MasterTests/test_01_r4c1_interacting_background.py
-python -B Analysis/MasterTests/test_01_r4c1_gr_limit.py
-python -B Analysis/MasterTests/test_03_r4c1_coefficient_identifiability.py
-python -B Analysis/MasterTests/test_01_r4c1_scalar_constraints.py
-python -B Analysis/MasterTests/test_01_r4c1_scalar_propagation.py
-python -B Analysis/MasterTests/test_01_r4c1_zero_branch.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>TOP-001 / CBR-002 — Moduli Control</h3>
-          <p>Free-Casimir dilution and inserted-source control. The free result is scoped negative; the prescribed driven ratio is not a stationary attractor, and the regenerated receipts explicitly remain <code>physics_pass=false</code>.</p>
-          <pre><code>python Analysis/TOP/TOP-001/top001_moduli_phase_space_analysis.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>DISK-001 / STAT-001 — Methods Audit</h3>
-          <p>Historical 175-galaxy methods entry point. The optimizer is not posterior sampling, and its output does not establish an ITSM prediction or open STAT-001.</p>
-          <pre><code>python Analysis/DISK/DISK-001/disk001_sparc_multitier_mcmc_benchmark.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>COS-001 / PERT-001 — Calibration Audit</h3>
-          <p>Historical proxy entry point retained for audit. Current authority classifies this sector as calibration-only; no ITSM Boltzmann hierarchy or <code>S₈</code> prediction is established.</p>
-          <pre><code>python Analysis/Cosmology/COS-001/cos001_genuine_boltzmann_growth_solver.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>BBN-001 — Table/CAMB Control</h3>
-          <p>Checks all five bundled BBN tables, the PRIMAT 2024 <code>Ombh2</code>/<code>ombh2</code> schema compatibility rule, interpolation domains and conventions, a <code>DeltaN</code> response sanity check, and the CAMB helium bridge. The action-derived interface contract validator checks its 12-field vocabulary, while a separate fail-closed preflight audits the UVIR-003 export and reports <code>BLOCKED_UPSTREAM_BACKGROUND</code> until the physical temperature/plenum interface exists. BBN remains <code>CONTROL_ONLY</code>.</p>
-          <pre><code>python Analysis/Cosmology/BBN-001/bbn001_control.py
-python Analysis/Cosmology/BBN-001/bbn001_action_derived_input_contract.py
-python Analysis/Cosmology/BBN-001/bbn001_upstream_interface_preflight.py
-Push-Location CAMB_ITSM_Solver
-python -m unittest camb.tests.bbn_test
-Pop-Location</code></pre>
-        </article>
-        <article class="card">
-          <h3>WAK-001 — Retarded-Field Control</h3>
-          <p>Historical wave-toy entry point. It is not a hydrodynamic cluster collision or metric-lensing calculation.</p>
-          <pre><code>python Analysis/WAK/WAK-001/wak001_retarded_wave_lensing_solver.py</code></pre>
-        </article>
-        <article class="card">
-          <h3>RES-001 — GKSL Control</h3>
-          <p>Inserted-rate single-mode steady-state control. It does not derive a microscopic ITSM reservoir or constitutive exchange current.</p>
-          <pre><code>python Analysis/RES/RES-001/res001_microscopic_lindblad_spohn_solver.py</code></pre>
-        </article>
-      </div>
-    </section>
+    <section class="section reader-paths"><div><h2>Looking for the broader source?</h2><p>Source code, contracts and owning reports live on the recovery branch. Private vault databases and raw conversation archives are not part of the website.</p></div><div class="hero-actions"><a class="btn btn-primary" href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture">Browse the repository</a><a class="btn btn-ghost" href="claims.html">Technical status</a></div></section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <p>© 2026 Brendon Boyd · Open Science under CC-BY-4.0 / GPLv3</p>
-      <p><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model">Source Code on GitHub</a></p>
-    </div>
-  </footer>
+  <footer class="footer"><div class="wrap footer-inner"><p>© 2026 Brendon Boyd · ITSM Cosmology</p><div class="footer-links"><a href="reproduce.html">Reproduce</a><a href="claims.html">Technical status</a><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture">GitHub</a><a href="https://orcid.org/0009-0007-4177-2612">ORCID</a><a href="mailto:brendon.boyd@itsm-cosmology.org">Contact</a></div></div></footer>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
