@@ -1,5 +1,45 @@
 # ITSM Changelog & Archive History
 
+## Coupled cubic-response bound and paper revisions (2026-10-17)
+
+- Added the [17 October checkpoint/evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)
+  and exact-byte manifest for the retained work since the 14 October branch tip.
+  This is an evidence/documentation checkpoint, not new physical clearance.
+- Retained the compact-T3 geometry/response control, three-family homogeneous
+  fixed-charge and finite-wavenumber analyses, initial-charge completion,
+  cubic initial jets/evolution, weighted evolution and infinite-mode bounds.
+  Their contracts, versioned implementations, original attempts, sidecars and
+  failed proof constructions remain separately inspectable.
+- The [source-aware cubic estimate](Theory/Gates/RES-001/RES001_R4C1_CUSP3_SOURCE_AWARE_WINDOW_V1_REPORT_2026-10-17.md)
+  improves the sufficient full weighted response bound from O(|m|^-1) to
+  O(|m|^-3), making all 22 field series absolutely summable at that order in
+  the nine registered cases. All 336 checks and the original summary replayed
+  exactly through the restartable companion. The original serial CLI was not
+  observed to complete; it is not retrospectively reported as successful.
+- No finite-amplitude nonlinear remainder, useful physical accuracy, physical
+  cutoff/window, healthy full GR recovery or identifying matching input is
+  supplied. Stage 1 remains complete only in its registered linear prepared-dust
+  scope; Stage 2 remains incomplete and Stage 3 not entered. Negative mean/
+  nonzero-mode findings and family-dependent responses are not erased.
+- Retained P1 `0.2.0-rc4` through `rc6` and P2 `0.2.0-rc4`, their versioned PDFs,
+  portable sources, revision reports and preservation records. P1's latest
+  changes improve motivation/argument order without new equations or data fits;
+  P2 clarifies closure assumptions, nonperturbative thresholds and limitations.
+  P2's original 18/19 sensitivity failure remains unchanged. Corrected the
+  naming index to P2's current rc4 candidate. No paper is rebuilt by this commit.
+- Updated README, branch orientation and the site repository's documentation.
+  Left the dashboard unchanged because the frozen compact-T3 control pins it.
+  Documented one preserved archived P1 rc3 source/sidecar mismatch; the strict
+  generic checker must still report it. Current paper-candidate checksums match.
+  Kept private logs, vault data, raw recordings,
+  scratch QA and separate unreviewed core-manuscript working files outside
+  this commit; no files were deleted. Local source ZIPs retain their existing
+  exclusion, while their manifests/sidecars document provenance.
+- Tests 1-3 remain `HOLD_SUBSTANTIVE`, MAT-001 `BLOCKED`, UVIR-003 `IN_PROGRESS`,
+  `K_Q=NOT_DERIVED`, `V=NOT_COMPUTED`, Stage 4A `CLOSED`, Rule-9 `DEFERRED`,
+  `physics_pass=false`, `gate_effect=NONE`. No site deployment, submission,
+  vault mutation or automatic change of action/model is included.
+
 ## Bounded dust, physical-domain and matching checkpoint; paper catch-up (2026-10-13)
 
 - Added the [checkpoint/evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)

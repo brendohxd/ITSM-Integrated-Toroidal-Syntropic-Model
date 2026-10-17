@@ -1,8 +1,8 @@
 # P1 — Present-epoch scale matching and $C_{\mathrm{obs}}$ hygiene
 
 **Directory:** `papers/P1-Scale-Matching-Reconstruction/`  
-**VERSION:** see `VERSION` (currently `0.2.0-rc3`)
-**Canonical PDF:** `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc3.pdf`
+**VERSION:** see `VERSION` (currently `0.2.0-rc6`)
+**Canonical PDF:** `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc6.pdf`
 
 (the build script writes this named PDF directly and emits its `.sha256`
 sidecar; see `papers/PAPERS_NAMING.md`)
@@ -19,14 +19,50 @@ sidecar; see `papers/PAPERS_NAMING.md`)
 | $2\pi a_0\sim cH_0$ coincidence | Empirical fact |
 | $a_0\equiv cH_0/2\pi$ at $t_0$ | **Phenomenological** postulate only |
 | Circulation quantization $\Rightarrow a_0$ | **Not derived** in the tested construction |
-| Cubic $E_1$, $L=c/H_0$ vs Planck | **Incompatible** under the cited cubic bound |
+| Cubic $E_1$, $L=c/H_0$ vs Planck | **Incompatible** in the cited background/statistical benchmark, not an all-cosmology topology exclusion |
 | Fixed-moduli $L_{\mathrm{phys}}(t)=c/H(t)$ | **Incompatible** except the coasting branch |
 | $\mathrm{Tr}(h)/\mathrm{Tr}(\gamma)=2/3$ | Derived identity (generic) |
-| $C_{\mathrm{obs}}=C_m^{3/2}/\sqrt{C_{\mathrm{IR}}}$ | **Derived** (field rescaling) |
+| $C_{\mathrm{obs}}=C_m^{3/2}/\sqrt{C_{\mathrm{IR}}}$ | **Derived** field-rescaling invariant; spherical force identifies only $C_{\mathrm{obs}}^2a_0$ if $a_0$ is free |
 | $C_{\mathrm{obs}}=2/3$ from geometry | **Not derived** |
 | Dual $a_0=cH_0/2\pi$ + $C_{\mathrm{obs}}=2/3$ | Conditional $4/9$ normalization conflict in the spherical baseline; not a global $T^3$ prediction or completed data fit |
 
 ## Release-candidate revision
+
+Version `0.2.0-rc6` applies the recording's three presentation recommendations:
+the introduction explains the physical ambition of the tested construction;
+the argument proceeds from circulation through local field theory to expansion
+history and topology bounds, followed by the normalization check; and each
+sector introduces the applicable reconstruction requirements before testing
+them. The abstract, roadmap, and disposition-table order follow that sequence.
+All displayed equations, detailed reconstruction criteria, physical inputs,
+bibliography, and figure are retained. The 18% shift remains a same-input
+analytic comparator and the Planck bound remains background/statistic specific.
+See the [rc6 revision report](../ReleasePackages/2026-10-17/P1-rc6/P1_RC6_REVISION_REPORT_2026-10-17.md).
+
+### Preserved rc5 history
+
+Version `0.2.0-rc5` applies three targeted refinements after the latest P1
+feedback: explains the audit's transferable usefulness without a novelty claim
+for the coefficient identity; fixes the 18% velocity reference to unit response
+at the same input scale and mass (distinct from the illustrative 20.4%
+empirical-scale comparator); and explicitly ends at analytic normalization,
+without a galaxy likelihood or significance claim. The action, physical
+inputs, bibliography and figure data are unchanged. P2 and the preserved
+rc4 package are untouched. See the
+[rc5 revision report](../ReleasePackages/2026-10-17/P1-rc5/P1_RC5_REVISION_REPORT_2026-10-17.md).
+
+### Preserved rc4 history
+
+Version `0.2.0-rc4` addresses the 9 October local referee reconciliation:
+the construction is explicitly author-defined; the cycle-frequency test does
+not infer centripetal acceleration from a flat torus geodesic; the circulation
+formula's nonrelativistic domain is stated; Planck likelihood and matched-circle
+statistics are distinguished; and the additional acceleration-scale degeneracy
+is explicit. The author-verification declaration is pending, not pre-certified.
+Original rc3 sources, PDFs, sidecars, and review records remain preserved.
+See the [rc4 revision report](../ReleasePackages/2026-10-17/P1_P2_rc4/P1_P2_RC4_REVISION_REPORT_2026-10-17.md).
+
+### Preserved rc3 history
 
 Version `0.2.0-rc3` implements the saved 8 October cold-read corrections:
 explicit metric traces, positive-coefficient branch and SI dimensions,
@@ -62,7 +98,7 @@ arXiv/journal text.
 | `Build-P1-Scale-Matching-Reconstruction.ps1` | Build helper |
 | `SUBMISSION.md` | Pre-flight / venue notes |
 | `CoverLetter.txt` | Cover letter draft |
-| `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc3.pdf` | Canonical built PDF |
+| `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc6.pdf` | Current review PDF |
 
 ## Firewall for later papers
 

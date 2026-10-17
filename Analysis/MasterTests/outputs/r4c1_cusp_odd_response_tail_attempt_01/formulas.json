@@ -1,0 +1,205 @@
+{
+  "Duhamel_scaled_constant": "45/10108",
+  "complete_coupled_order3_remainder": false,
+  "coordinate_k": 40,
+  "displacement_domain": "N>=4, s<7/2; sum_|n|>N |n|^(2s)|r_n|^2/eta^7",
+  "displacement_tail": "18000*N**(2*ss - 7)/(2305248169*pi**2*(7 - 2*ss))",
+  "endpoint": "the displayed p-series bound diverges at each endpoint; no sharp solved-response regularity claim",
+  "energy_inequality": "E_n_dot<=8E_n+2*eta^(7/2)*(180/2527)*|c_n|*sqrt(E_n)",
+  "families": [
+    {
+      "MC": "47/48",
+      "cV2": "1007/1240",
+      "eta_exact": "1/4",
+      "family": "archived_G3",
+      "initial_energy": "36623/51200",
+      "mass_Hdot_coefficient": "2"
+    },
+    {
+      "MC": "767/768",
+      "cV2": "16367/20440",
+      "eta_exact": "1/64",
+      "family": "archived_G3",
+      "initial_energy": "340221961/1468006400",
+      "mass_Hdot_coefficient": "2"
+    },
+    {
+      "MC": "12287/12288",
+      "cV2": "262127/327640",
+      "eta_exact": "1/1024",
+      "family": "archived_G3",
+      "initial_energy": "1214518839561/6012954214400",
+      "mass_Hdot_coefficient": "2"
+    },
+    {
+      "MC": "41/40",
+      "cV2": "4/5",
+      "eta_exact": "1/4",
+      "family": "new_B1_frame",
+      "initial_energy": "36623/51200",
+      "mass_Hdot_coefficient": "-1/5"
+    },
+    {
+      "MC": "641/640",
+      "cV2": "4/5",
+      "eta_exact": "1/64",
+      "family": "new_B1_frame",
+      "initial_energy": "340221961/1468006400",
+      "mass_Hdot_coefficient": "-1/5"
+    },
+    {
+      "MC": "10241/10240",
+      "cV2": "4/5",
+      "eta_exact": "1/1024",
+      "family": "new_B1_frame",
+      "initial_energy": "1214518839561/6012954214400",
+      "mass_Hdot_coefficient": "-1/5"
+    },
+    {
+      "MC": "1317/1280",
+      "cV2": "16271/20320",
+      "eta_exact": "1/4",
+      "family": "new_hierarchical",
+      "initial_energy": "36623/51200",
+      "mass_Hdot_coefficient": "-31/80"
+    },
+    {
+      "MC": "328197/327680",
+      "cV2": "67106831/83883520",
+      "eta_exact": "1/64",
+      "family": "new_hierarchical",
+      "initial_energy": "340221961/1468006400",
+      "mass_Hdot_coefficient": "-271/1280"
+    },
+    {
+      "MC": "83894277/83886080",
+      "cV2": "274877874191/343597342720",
+      "eta_exact": "1/1024",
+      "family": "new_hierarchical",
+      "initial_energy": "1214518839561/6012954214400",
+      "mass_Hdot_coefficient": "-4111/20480"
+    }
+  ],
+  "initial": "w=1,w_dot=0,r_n=r_n_dot=0",
+  "mass_difference_bound": "|1-mV2|<=8 on the admitted energy background",
+  "mass_identity": "mV2=2H^2+B*Hdot-18*psi_dot^2+(6/13)*J^2",
+  "mean_constraint_separate": true,
+  "mode_bound": "sqrt(E_n)<=eta^(7/2)*(45/10108)*|c_n|",
+  "mode_energy": "E_n=|r_n_dot|^2+[cV2*(40*n/a)^2+1]*|r_n|^2",
+  "no_division_by_wave_or_clock": true,
+  "scaled_sample_controls": [
+    {
+      "eta": "1/4",
+      "family": "archived_G3",
+      "max_excess": 0.0,
+      "method": "DOP853"
+    },
+    {
+      "eta": "1/4",
+      "family": "archived_G3",
+      "max_excess": 0.0,
+      "method": "Radau"
+    },
+    {
+      "eta": "1/64",
+      "family": "archived_G3",
+      "max_excess": 0.0,
+      "method": "DOP853"
+    },
+    {
+      "eta": "1/64",
+      "family": "archived_G3",
+      "max_excess": 0.0,
+      "method": "Radau"
+    },
+    {
+      "eta": "1/1024",
+      "family": "archived_G3",
+      "max_excess": 0.0,
+      "method": "DOP853"
+    },
+    {
+      "eta": "1/1024",
+      "family": "archived_G3",
+      "max_excess": 0.0,
+      "method": "Radau"
+    },
+    {
+      "eta": "1/4",
+      "family": "new_B1_frame",
+      "max_excess": 0.0,
+      "method": "DOP853"
+    },
+    {
+      "eta": "1/4",
+      "family": "new_B1_frame",
+      "max_excess": 0.0,
+      "method": "Radau"
+    },
+    {
+      "eta": "1/64",
+      "family": "new_B1_frame",
+      "max_excess": 0.0,
+      "method": "DOP853"
+    },
+    {
+      "eta": "1/64",
+      "family": "new_B1_frame",
+      "max_excess": 0.0,
+      "method": "Radau"
+    },
+    {
+      "eta": "1/1024",
+      "family": "new_B1_frame",
+      "max_excess": 0.0,
+      "method": "DOP853"
+    },
+    {
+      "eta": "1/1024",
+      "family": "new_B1_frame",
+      "max_excess": 0.0,
+      "method": "Radau"
+    },
+    {
+      "eta": "1/4",
+      "family": "new_hierarchical",
+      "max_excess": 0.0,
+      "method": "DOP853"
+    },
+    {
+      "eta": "1/4",
+      "family": "new_hierarchical",
+      "max_excess": 0.0,
+      "method": "Radau"
+    },
+    {
+      "eta": "1/64",
+      "family": "new_hierarchical",
+      "max_excess": 0.0,
+      "method": "DOP853"
+    },
+    {
+      "eta": "1/64",
+      "family": "new_hierarchical",
+      "max_excess": 0.0,
+      "method": "Radau"
+    },
+    {
+      "eta": "1/1024",
+      "family": "new_hierarchical",
+      "max_excess": 0.0,
+      "method": "DOP853"
+    },
+    {
+      "eta": "1/1024",
+      "family": "new_hierarchical",
+      "max_excess": 0.0,
+      "method": "Radau"
+    }
+  ],
+  "source_scaled_constant": "180/2527",
+  "time": "[0,1/20]",
+  "velocity_domain": "N>=4, s<5/2; sum_|n|>N |n|^(2s)|r_n_dot|^2/eta^7",
+  "velocity_tail": "7200*N**(2*ss - 5)/(6385729*pi**2*(5 - 2*ss))",
+  "w_bound": "|w|<=25/19"
+}

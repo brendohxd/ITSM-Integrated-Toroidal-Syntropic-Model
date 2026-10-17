@@ -1,8 +1,8 @@
 # P2 — Anisotropic Casimir on rectangular $T^3$ (instantaneous-closure control)
 
 **Directory:** `papers/P2-Rectangular-T3-Casimir/`  
-**VERSION:** see `VERSION` (currently `0.2.0-rc3`)
-**Current PDF candidate:** `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.2.0-rc3.pdf`
+**VERSION:** see `VERSION` (currently `0.2.0-rc4`)
+**Current PDF candidate:** `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.2.0-rc4.pdf`
 (written directly by the build script with a matching `.sha256` sidecar; see
 `papers/PAPERS_NAMING.md`)
 
@@ -41,6 +41,17 @@ and manifest preserve the 18/19 result, exact hashes, PDF inspection, and
 portable-source verification.
 
 ## Core claim (allowed)
+
+Version `0.2.0-rc4` addresses the 9 October local referee reconciliation.
+Stage 3A's perturbative de Sitter control is distinguished from Stage 3B's
+finite-amplitude, constraint-reconstructed expansion. Four threshold cases
+are nonperturbative and one marginal. The persistence argument states its
+unbounded-expansion, compact-shape, and nonzero-asymptotic-H assumptions.
+The 18/19 failure remains unchanged; sampled thresholds have no certified
+precision error bars. Figure 3 is full-width using unchanged image data.
+The contribution is positioned against Edery and Negro et al.; final author
+verification is not pre-certified. See the
+[rc4 revision report](../ReleasePackages/2026-10-17/P1_P2_rc4/P1_P2_RC4_REVISION_REPORT_2026-10-17.md).
 
 The implemented already-renormalized periodic-scalar stress is anisotropic on
 rectangular flat $T^3$ and passes the recorded internal controls. When that
@@ -99,5 +110,6 @@ is the current directory, while the downstream defaults refer to
 - [x] Preregistered release-sensitivity suite completed (18/19; one stringent
   threshold-amplitude stability check failed, classifications unchanged)
 - [x] Canonical v0.2.0-rc2 PDF rebuilt; all five pages visually inspected and
-  PDF metadata/checksum sidecar verified
+  PDF metadata/checksum sidecar verified (historical rc2 check only)
+- [ ] Author's final cold read and confirmation of the rc4 declaration
 - [ ] Explicit operator approval before any arXiv or journal action

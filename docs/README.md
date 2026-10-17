@@ -2,9 +2,21 @@
 
 Multi-page research site published at https://itsm-cosmology.com.
 
-## Repository research checkpoint - 13 October 2026
+## Repository research checkpoint - 17 October 2026
 
-The [latest checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)
+The [latest checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)
+records the three-family constraint and cubic-response work, the source-aware
+summable-field bound and P1 rc6 / P2 rc4 review candidates. The bound is a
+registered perturbative mathematical result, not a physical cutoff, complete
+nonlinear solution or healthy-GR verdict. Stage 2 remains incomplete and
+numerical Stage 3 has not been entered; coefficient matching is still missing.
+
+This update changes repository documentation only. It does not change public
+HTML, dispatch the Pages workflow or supersede the dated public-page audit below.
+
+### Preserved 13 October repository checkpoint
+
+The [13 October checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)
 records bounded linear prepared-dust Stage-1 acceptance, the same-action
 GR-family and coupled fixed-charge response work, the RM1/ST1/ST2 matching
 screens, and versioned paper-preparation/review artifacts. Physical Stage-2

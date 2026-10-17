@@ -1,0 +1,16 @@
+{
+  "schema": "r4c1-cusp3-local-initial-jet-incomplete-v1",
+  "validation": "INCOMPLETE_NO_ACCEPTED_RECEIPT",
+  "script_sha256": "5a3c28c15f1ef4efda084c497c2b64c62ffe3fa943301fa405031d97d93dc39c",
+  "exception": "ValueError: matrix is numerically singular",
+  "location": "direct_solve: mpmath.qr_solve on the first mean-mode probe",
+  "progress": "Exact prerequisites reached the numerical branch; no complete scientific verification receipt was written.",
+  "independent_diagnostic": {"matrix_shape": [23,18], "numpy_rank": 18, "smallest_singular_value": 0.041666666666666664, "largest_singular_value": 1.9874694460964148},
+  "private_output": ".local/itsm-context/output-6fd542e9da874ce4b4834dd283e7261a.txt",
+  "private_output_sha256": "98ede4b88c058707f46d567cf4466a19c1ae31c350a8fc90c9b0df5b598f9dde",
+  "private_diagnostic_output": ".local/itsm-context/output-24acfea69ffa4319befb471f465947de.txt",
+  "private_diagnostic_sha256": "2e9723d274b3259b713593d035c50137b28812d234d8747640db002030aa68ad",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "old_sources_or_receipts_modified": false
+}

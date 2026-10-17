@@ -5,7 +5,25 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
-## Latest research and paper checkpoint - 13 October 2026
+## Latest research and paper checkpoint - 17 October 2026
+
+The [17 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)
+records the three-family constraint/finite-mode extensions, charge preparation,
+cubic response and topology controls. The latest source-aware cubic bound makes
+all 22 reconstructed field series absolutely summable at that order in the nine
+registered cases; its 336/336 checks and full summary reproduced exactly through
+the restartable companion. It does not establish a full nonlinear solution or
+admit a physical family. Earlier failed constructions and energy/characteristic
+warnings remain preserved.
+
+The next boundary is the finite-amplitude coupled constraint/kinetic/domain
+assessment of the unchanged R4C1 action. Stage 2 remains incomplete and Stage 3
+not entered; both matter-residue and nonlinear-force matching inputs remain
+absent. Rule-9 remains deferred, not cleared. P1 rc6 and P2 rc4 are retained
+review candidates, not publication-ready papers. The checkpoint does not deploy
+the site, publish a paper or include the separate core-manuscript working build.
+
+## Preserved research and paper checkpoint - 13 October 2026
 
 Use the [13 October checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)
 for the complete newly retained evidence map. The [bounded dust Stage-1 calculation](Theory/Gates/RES-001/RES001_R4C1_G3N5_DUST_STAGE1_ACCEPTANCE_REPORT_2026-10-12.md)

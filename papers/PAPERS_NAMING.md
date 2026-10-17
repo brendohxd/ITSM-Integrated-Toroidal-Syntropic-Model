@@ -51,8 +51,8 @@ establishes byte identity, not scientific clearance.
 
 | ID | Directory | `VERSION` | Canonical PDF | Build helper |
 |----|-----------|-----------|---------------|--------------|
-| **P1** | `papers/P1-Scale-Matching-Reconstruction/` | `0.2.0-rc3` | `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc3.pdf` | `Build-P1-Scale-Matching-Reconstruction.ps1` |
-| **P2** | `papers/P2-Rectangular-T3-Casimir/` | `0.2.0-rc3` | `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.2.0-rc3.pdf` | `Build-P2-Rectangular-T3-Casimir.ps1` |
+| **P1** | `papers/P1-Scale-Matching-Reconstruction/` | `0.2.0-rc6` | `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc6.pdf` | `Build-P1-Scale-Matching-Reconstruction.ps1` |
+| **P2** | `papers/P2-Rectangular-T3-Casimir/` | `0.2.0-rc4` | `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.2.0-rc4.pdf` | `Build-P2-Rectangular-T3-Casimir.ps1` |
 | **P3** | `papers/P3-Observational-Program/` | `0.1.1-quarantined-draft` | `Boyd_2026_Gate-Structured_Observational_Falsification_Program_ITSM_v0.1.1-quarantined-draft.pdf` | `Build-P3-Observational-Program.ps1` |
 | **P4** | `papers/P4-SPARC-Kinematics/` | `0.1.1-quarantined-draft` | `Boyd_2026_SPARC_Galactic_Kinematics_AQUAL_Picard_Solutions_v0.1.1-quarantined-draft.pdf` | `Build-P4-SPARC-Kinematics.ps1` |
 | **Thermodynamics** | `papers/Syntropic-Thermodynamics/` | `0.7.1-conditional-draft` | `Boyd_2026_Covariant_Entropy_Accounting_Interacting_Sectors_v0.7.1-conditional-draft.pdf` | `Build-Syntropic-Thermodynamics.ps1` |

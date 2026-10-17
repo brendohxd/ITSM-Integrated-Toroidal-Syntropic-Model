@@ -1380,3 +1380,424 @@ Original99231-byte queue/sidecar saved privately; prefix SHA
 aac9d6f93704e6bde43b364d41e6e2974cf27d0efdb573c8c56615b05fbb7bde.
 Only living-index digests refresh; no frozen physics sidecar changes,
 manuscript/PDF/vault/provider/model/runtime/commit/push/publication changes.
+
+
+### Three-family fixed-charge homogeneous kinetic V3 (16 October 2026)
+
+Owner: [owning report](../Gates/RES-001/RES001_R4C1_THREE_FAMILY_FIXED_CHARGE_KINETIC_V3_REPORT_2026-10-16.md),
+SHA a5acbb6d2f659f9c2e4719f32f91ef9f8a4c2cc2c9bdd1fff8635d46fc1199c3; attempt04 receipt SHA 9429ab897513fe5bbeda30242fa2bc535687378567eee388229450f1c963e898.
+Bounded comparison complete: generic 22-field mean action, evolving polar/boundary,
+local constraints, exact kinetic signs and independent Hamiltonian comparison.
+All three families have a positive fixed-both global-charge homogeneous kinetic
+block on the stated regular domain 0<eta<=1/4; allowing dust charge to vary
+retains one negative direction. A different ensemble is not a repair of the
+old prepared state. eta=0 remains singular; retarded timing warning unchanged.
+1470/1470 local controls, 378 unchanged archived nodes, nine 80-digit finite
+Hamiltonian controls and exact replay. Original failures/interruption records
+preserved; failed V2 and accepted V3 physical formula bytes identical.
+Next relevant bounded route: finite-k constrained energy/characteristics and
+the physical interaction/window, retaining full potential, mean/charge,
+quartic dispersion and singular-domain restrictions. Full stability/window,
+nonlinear preparation admission, tensor/local gravity/healthy GR and matching
+remain substantive. No physical Stage2 GO; Stage3 NOT_ENTERED.
+Stage1 remains complete only its registered linear B1 prepared-dust scope.
+R9-MT1-THREE-FAMILY-FIXED-CHARGE-KINETIC-V3 and all inherited reviews DEFERRED;
+Rule9_cleared=false; physics_pass=false; gate_effect=NONE; Tests1-3 HOLD_SUBSTANTIVE;
+MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED;
+Stage4A CLOSED; TOP-X4 unchanged. Full programme incomplete; native goal state
+was paused when read, and this tool cannot change it to active.
+Pre-append queue: 102004 bytes; SHA
+75118a2d338fcf985d3e116cd14a7c87842da94a584d4e68afe75ff5db8bd9b7.
+Original byte prefix and old digest retained privately; only living digest refreshed.
+No scientific input/sidecar replacement, provider change, publication, commit or push.
+
+
+### 16 October 2026 - Initial charge/mean-constraint completion V4
+
+R9-MT1-INITIAL-CHARGE-COMPLETION-V1. Claim Conditional; review DEFERRED.
+Owning report: `Theory/Gates/RES-001/RES001_R4C1_INITIAL_CHARGE_COMPLETION_V4_REPORT_2026-10-16.md`.
+Report SHA6b81ceff4cde8c9d933259ac34fbdccb4bcf4118f188c734de8a2577613a6c36.
+392/392 local checks and exact read-only replay;347 pinned sources and691
+source/sidecar metadata records preserved. Eighteen archived initial events
+represent nine family/eta points with two methods, not eighteen independent
+experiments. Preserve failed V1/V2/V3; physical formulas identical V2/V3/V4.
+
+The specified initial lift has Q4 defect -eta^5 e^4/676 in reference units.
+An exact charge-only phase completion has a controlled geometric remainder
+and a stricter local angular-domain condition than its averaged denominator.
+The existing nonanalytic force gives mean lapse source at |e|^3, requiring
+delta xdot3=-4 A |psi_dot|^3/(3*pi*M_cos2*H) in the chosen fixed-charge slice.
+Retain the nonconstant |cos|^3 density source and all reconstructed shifts.
+This is INITIAL-order compatibility, not full nonlinear admission or a new
+evolved observable. The prior cubic timing warning is unchanged.
+
+Substantive blockers NONE_WITHIN_STATED_SCOPE for this initial-order result;
+execution PROCEED_PROVISIONALLY_WITHIN_INITIAL_ORDER_SCOPE. Excluded uses
+remain blocked: all local higher-order constraints/canonical admission,
+unprojected evolution, finite-k energy/characteristics/quartic dispersion,
+physical interaction/window/error control, healthy GR/local gravity and
+genuine matter-residue/nonlinear-force matching. No family physical GO.
+Inherit homogeneous kinetic V3, fixed-charge retarded V3, charge/domain V5,
+G3N4 force coverage, mean-mode energy, PLANAR-WWR and all transitive debt.
+Stage1 complete only registered linear B1 scope; Stage2 INCOMPLETE;
+Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED;
+UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED;
+TOP-X4 UNCHANGED; physics_pass=false; gate_effect=NONE; Rule9_cleared=false.
+No publication, manuscript/PDF, vault/runtime/provider mutation, commit/push.
+Pre-append original: 104145 bytes, SHA3d18f2a340077186c4f12dd0ba8f0a10fc9f240b67bf81ecbe4c13726cf2a705.
+Original byte prefix and old sidecar retained privately; only living index digest refreshed.
+
+
+### 16 October 2026 - Cusp3 local initial constraints and equation jet V2
+
+R9-MT1-CUSP3-LOCAL-INITIAL-JET-V1. Claim Conditional; review DEFERRED.
+Owning report: `Theory/Gates/RES-001/RES001_R4C1_CUSP3_LOCAL_INITIAL_JET_V2_REPORT_2026-10-16.md`.
+Report SHA2ef24a3cd6edc6eacbf4a549e94009222e27abffcb56bfa4234586b2f8f42000.
+693/693 local checks; exact read-only replay;358 source pins and713 source/
+sidecar metadata records preserved. Generic exact identities establish the
+seven Cauchy/auxiliary rows at INITIAL |e|^3, treating zero and arbitrary
+nonzero harmonics separately. Retain the nonconstant density and full source.
+Complete sources must include the lower e|e| cusp acceleration and auxiliary
+source drift; otherwise temporal/longitudinal Ward identities fail explicitly.
+108 finite-probe full22 initial jets agree with a separate unreduced80-digit
+linear solve. Nine family/eta points use both archived labels; no new time
+integrations or full infinite-mode acceleration bound. Preserved V1 incomplete
+QR attempt; scientific compiler unchanged across V1/V2 solver correction.
+
+Substantive blockers NONE_WITHIN_STATED_SCOPE for this initial-order result;
+PROCEED_PROVISIONALLY_WITHIN_INITIAL_CUSP3_SCOPE only. All-order initial data/
+remainder, unprojected evolution, full energy/finite-k characteristics/quartic
+dispersion, physical interaction/window, healthy GR/local gravity and genuine
+matching remain substantive. No physical family GO. Retarded warning unchanged.
+Inherit INITIAL-CHARGE-COMPLETION V4, homogeneous kinetic V3, fixed-charge
+retarded V3, charge/domain V5, G3N4 force coverage, generic WWR/evolving
+reduction and all transitive deferred debt. Stage1 complete only registered
+linear B1 scope; Stage2 INCOMPLETE; Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE;
+MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED;
+Stage4A CLOSED; TOP-X4 UNCHANGED; physics_pass=false; gate_effect=NONE;
+Rule9_cleared=false. No publication, manuscript/PDF, vault/runtime/security/
+provider mutation, commit or push. Native goal state not changed.
+Pre-append original: 106516 bytes; SHAbc17d2ec4ee3df1af49cbd1603dd3347f1ec126a1ec063ac20859453c0d387f2.
+Original byte prefix and old sidecar retained privately; only living index digest refreshed.
+
+
+### 16 October 2026 - Cusp3 mean/first-even evolution V1
+
+R9-MT1-CUSP3-EVOLUTION-V1. Conditional research; review DEFERRED.
+Owning report: `Theory/Gates/RES-001/RES001_R4C1_CUSP3_EVOLUTION_V1_REPORT_2026-10-16.md`.
+Report SHAaf0878a2d20c48d9a99189940952ef8714f68bd0f99dc2ae09ecb056d05cd186.
+421/421 primary controls;430/430 separate local source/current-audit controls;
+both exact read-only replays passed.18 fresh integrations: three families x
+three eta values x DOP853/Radau on registered coordinate t[0,0.05]. Mean and
+first even output only; complete required lower odd1,3 sources for these
+outputs by exact perturbative mode selection, not full-field closure.
+396 case-time node/root probes. No charge reset or slow-graph projection.
+Independent lapse drift and conserved mean charges pass; scaled two-method
+state mismatch <=3.102854253031432e-9. Preserve366 source pins/729 metadata
+records; three inherited absent sidecars remain unverified. Old evidence and
+retarded/nonmonotonic observations unchanged. Counts are not physical clearance
+or independent Rule9 review; the separate program is a local audit only.
+
+Substantive blockers NONE_WITHIN_STATED_SAMPLED_RETAINED_MODE_SCOPE.
+PROCEED_PROVISIONALLY_WITHIN_RETAINED_MODE_SCOPE. Next bounded physical
+question: constrained finite-k energy and quartic characteristics, before
+physical interaction-window inference. All-order preparation/remainder,
+certified continuous evolution/full-field mode control, physical stability/
+window, healthy GR/local gravity and genuine microscopic matter-residue plus
+nonlinear-force matching remain substantive. No physical family GO.
+Inherit CUSP3 initial-jet V2, initial-charge V4, homogeneous kinetic V3,
+fixed-charge retarded V3, charge/domain V5, generic WWR/evolving reduction,
+G3N4 force coverage and all transitive deferred review dependencies.
+Stage1 complete only registered linear B1 scope; Stage2 INCOMPLETE;
+Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED;
+UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED;
+TOP-X4 UNCHANGED; physics_pass=false; gate_effect=NONE; Rule9_cleared=false.
+Native goal remains paused. No publication, manuscript/PDF, website, vault,
+runtime/security/provider change, commit or push included.
+Pre-append original: 108788 bytes; SHA227cc8b63d279fe1e61d28f1c076c9d60549a4d10f2ef7c5e66f672a52774e1b.
+Original byte prefix and old sidecar retained privately; only living index digest refreshed.
+
+
+### 16 October 2026 - Three-family finite-k canonical/principal audit V3
+
+R9-MT1-THREE-FAMILY-FINITE-K-V3. Conditional; review DEFERRED, not cleared.
+Owning report: `Theory/Gates/RES-001/RES001_R4C1_THREE_FAMILY_FINITE_K_V3_REPORT_2026-10-16.md`.
+Report SHA8a2e062802551615a3774168693a478d5e658a49f91dfe2a9d8e6dbadb245311.
+602/602 derivation checks; exact read-only replay. Generic22-field action and
+independent generic ADM/frame/regulator density bind before family substitution.
+Complete nonzero action/canonical map and quartic/wave characteristics retained;
+378 immutable background-node controls and216 full frozen spectra/energy probes.
+No new time integrations.381 source pins/759 metadata records preserved;
+three inherited absent sidecars remain explicitly unverified. Interrupted
+attempts01/02 (V1) and03 (V2) retained; attempt02 native0xC0000005 cause
+unassigned. V3 compact-coefficient proof changes algebra representation only;
+numeric/action/sign-certificate ASTs and all thresholds unchanged.
+
+SUBSTANTIVE FINDINGS: all three families have positive nonzero kinetic blocks
+and nonzero principal squared speeds on0<eta<=1/4, but all retain the generic
+zero-speed Jordan defect in this wave-scale formulation and negative principal
+trace energy in the inherited instantaneous dust-clock chart. All216 full
+frozen trace-energy probes are negative. This is not a local-ghost theorem,
+an all-formulations ill-posedness proof or an all-action no-go. The separately
+positive homogeneous fixed-both ensemble is not imposed locally. Zero mode
+remains separate; no dust/force/regulator branch is deleted.
+
+Derivation may be reused provisionally in its stated scope; physical stability/
+window remains unresolved, not review-only blocked. Next bounded question:
+action-preserving weighted mixed-order evolution control for the slow and
+dispersive sectors, then the physical interaction window. Keep previous CUSP3
+constraint/evolution progress and retarded/nonmonotonic findings unchanged.
+Inherit CUSP3 evolution V1, homogeneous fixed-charge kinetic V3, B1 nonzero
+characteristic, generic kernel/evolving reduction and all transitive review debt.
+No physical family GO. Stage2 INCOMPLETE; Stage3 NOT_ENTERED;
+Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS;
+K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 UNCHANGED;
+physics_pass=false; gate_effect=NONE; Rule9_cleared=false. Native goal paused.
+No automatic action replacement, publication, manuscript/PDF, website, vault,
+runtime/security/provider change, commit or push.
+Pre-append original: 111250 bytes; SHAee40ec19c4b1cf946c2e496c73eead94732416ae1c5d0a3d0eaf65842cd28c76.
+Original byte prefix and old sidecar retained privately; only living index digest refreshed.
+
+### 17 October 2026 - Weighted evolution cubic inverse rejected in first exact case
+
+R9-MT1-WEIGHTED-CUBIC-REJECTION-V1. Conditional; review DEFERRED, not cleared.
+Owning report: `Theory/Gates/RES-001/RES001_R4C1_WEIGHTED_EVOLUTION_CUBIC_REJECTION_REPORT_2026-10-17.md`.
+Report SHAd2b88d18c74ed5a5557bdae7dc41cbc941826f27d38ca1790b9c690d3e90c5ba.
+Failed receipt: 37/38 exact construction checks; exact READ-ONLY FAILED replay.
+Summary SHAaa3092b89e861a85a004552a74273574aec5df538bcb3f293e3c676f88c3e621.
+First completed exact case only: archived_G3, eta=1/4; all twenty complex states
+retained from the generic action. The proposed U^3=g*U inverse identity fails
+with two explicit nonzero entries containing H, psi_dot and rho_m. Independent
+inverse-product errors are 7.220295302550586e-6 at ell4 and
+9.025498071698508e-10 at ell80. This is not a label/review-only hold.
+The formal positive principal norm/skew identities pass in that case, but no
+complete remainder/continuous-time weighted bound or nine-case admission follows.
+No dependent interval constant or new trajectory integration was accepted.
+
+All computationally interrupted V1-V4 attempts and their sources are preserved.
+The diagnostic native0xC0000005 causes remain UNASSIGNED; no runtime/security/
+library/provider change. 401 pins/799 metadata records preserved, three inherited
+absent sidecars explicit. No old result, sidecar or action was changed.
+Next bounded route: determine the complete minimal-polynomial/low-rank inverse
+with extra terms retained, then verify the full generator before energy bounds
+and remaining cases. Do not automatically change the action or pivot TOP-X4.
+Inherit THREE-FAMILY-FINITE-K-V3, CUSP3-EVOLUTION-V1, homogeneous fixed-charge
+kinetic V3, generic kernel/evolving reduction and all transitive review debt.
+Stage1 complete only in registered linear B1 dust scope. Stage2 INCOMPLETE;
+no family physical GO; Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE;
+MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED;
+Stage4A CLOSED; TOP-X4 UNCHANGED; physics_pass=false; gate_effect=NONE;
+Rule9_cleared=false. Native goal paused. No manuscript/PDF, publication,
+website, vault mutation/sync, commit or push.
+
+Pre-append original: 114003 bytes; SHAbdb768e53e76de6edc7f0b78b48b3cc15b00c3e851df1131c37da32d04c50c8a.
+Original byte prefix and sidecar retained in the private 17 October provenance backup.
+
+### 17 October 2026 - Continuous infinite odd-mode lower response bound
+
+R9-MT1-CUSP-ODD-RESPONSE-TAIL-V1. Conditional; review DEFERRED, not cleared.
+Owning report: Theory/Gates/RES-001/RES001_R4C1_CUSP_ODD_RESPONSE_TAIL_V1_REPORT_2026-10-17.md.
+Summary SHAc908e715864be379d28445c3f5e32d173d23986b5db291c79eb1836dc94ed602.
+199/199 local controls and exact read-only replay; all18 immutable stored runs
+used as independent controls, no new integration.374 pins/745 metadata records
+preserved; three inherited absent sidecars explicitly unverified.
+
+NEW RESULT: for the unchanged leading cos(40z) preparation and every odd
+harmonic, the lower e|e| transverse wave response has an explicit continuous
+energy/Duhamel bound on[0,1/20], all three families at eta1/4,1/64,1/1024.
+sqrt(E_n)<=eta^(7/2)*(45/10108)*|c_n|, with the complete mass and momentum drift.
+Squared velocity and displacement Fourier tails have explicit N-dependent
+bounds for s<5/2 and s<7/2 respectively, N>=4. The omitted fifth mode is
+nonzero; no invariant finite Fourier truncation or sharp response regularity
+claim. Exact proof is distinct from the already completed finite-mode diagnostics.
+
+Substantive blockers NONE_WITHIN_STATED_LOWER_RESPONSE_SCOPE; provisional reuse
+permitted there. The full coupled order-|e|^3 source/constraint response tail
+and all-order finite-amplitude nonlinear remainder remain open, as do physical
+energy/window, healthy GR/local gravity and genuine matter/force matching.
+The independent nine-case Schur/weighted-generator calculation has671/671 local
+controls but its long exact replay remains running at this checkpoint; its
+unsealed report still records PENDING. Do not report replay complete prematurely.
+
+Inherit CUSP3-EVOLUTION-V1, G3N4 force coverage, generic action/evolving reduction
+and all transitive deferred review debt. No branch/mean constraint was removed.
+Stage1 complete only registered linear B1 scope; Stage2 INCOMPLETE, no physical
+family GO; Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED;
+UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED;
+TOP-X4 UNCHANGED; physics_pass=false; gate_effect=NONE; Rule9_cleared=false.
+Native full goal ACTIVE/incomplete. No commit, push, publication, submission,
+website/manuscript/PDF, vault mutation, provider dispatch or runtime/model change.
+
+Owning report SHA798e4f87a0fde155aefbb6456518431625572698d1f4ef49722fdff1e64d3d4a.
+Pre-append original: 116417 bytes; SHA59ccbe723e28f617add94d6d93f5626013f4750cec1710e50c7f4770ec0e1d48.
+Original byte prefix and sidecar retained privately in .local/itsm-context/cusp-odd-tail-index-backup-20261017-01/.
+
+### 17 October 2026 - Complete Schur inverse and nine-case weighted linear estimate
+
+R9-MT1-LOW-RANK-WEIGHTED-EVOLUTION-V2. Conditional; review DEFERRED, not cleared.
+Owning report: Theory/Gates/RES-001/RES001_R4C1_LOW_RANK_WEIGHTED_EVOLUTION_V2_REPORT_2026-10-17.md.
+V2 summary SHA7ceafaf52d8fe217f4b3f598a47cf75e50b7e4118f7b97bed66c322938f450f7.
+671/671 exact/independent controls; exact read-only successful replay.
+All three families at eta=1/4,1/64,1/1024, each from the unspecialized generic
+action; all twenty complex evolution states and all coefficient/map drift
+retained. Complete 18+2 Schur inverse, denominator>=1 and full coefficientwise
+generator identity replace the invalid cubic shortcut. Q>=I/10 and explicit
+continuous-time linear norm bounds on ell>=4, 0<=s<=t<=1/20.
+756 full-action comparisons at all378 unchanged background nodes, ell4,80.
+No new time integration. Maximum generator residual3.064657688319131e-14.
+90-digit independent matrix inverses verify the exact omitted terms.
+
+V1 failed attempt186/189 and the earlier37/38 cubic rejection remain unchanged.
+The new V1 failure also replays exactly. V2 retains FAIL for the absolute
+binary64 visibility control at eta=1/1024, and uses explicitly versioned exact/
+high-precision nonzero controls instead. No action/generator tolerance lowered.
+412 source pins/821 metadata records preserved; three inherited absent sidecars
+remain explicit. No accepted physical cutoff, positive canonical energy,
+nonlinear fixed-charge remainder, useful small-error estimate or healthy GR.
+Large mu values are existence bounds, not observed growth or physical stability.
+
+Substantive blockers NONE_WITHIN_STATED_FIXED_CASE_LINEAR_SCOPE; provisional reuse
+permitted there. Next substantive route: finite-amplitude constrained interaction/
+remainder and physical validity-window assessment using the corrected generator.
+Inherit THREE-FAMILY-FINITE-K-V3, WEIGHTED-CUBIC-REJECTION-V1, LOW-RANK-INVERSE-V1,
+CUSP3-EVOLUTION-V1, homogeneous fixed-charge kinetic V3, generic action/evolving
+reduction and all transitive deferred review debt. Old negative trace energy,
+wave-scale Jordan defect, singular eta0, retarded and nonmonotonic findings remain.
+Stage1 complete only in registered linear B1 scope; Stage2 INCOMPLETE, no physical
+family GO; Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED;
+UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED;
+TOP-X4 UNCHANGED; physics_pass=false; gate_effect=NONE; Rule9_cleared=false.
+Native full goal ACTIVE/incomplete following the operator's resumption.
+No publication, submission, manuscript/PDF, website, vault mutation, provider/
+model/runtime/security configuration change, commit or push.
+
+The lower odd-response tail package is separately complete: its199 controls
+and exact replay are recorded in the preceding checkpoint. Additive wave-zero
+audit58/58 and exact replay cover all18 stored roots/modes1,3 without
+interpolation, maximum excess0. Addendum:
+Theory/Gates/RES-001/RES001_R4C1_CUSP_ODD_RESPONSE_ROOT_AUDIT_V1_ADDENDUM_2026-10-17.md.
+Root audit summary SHAcc709dd431d8d1d11d1273eb7591aa2f9ac515b61307fef42515db9a11fc2632.
+The complete coupled order-|e|^3 source/response tail and all-order remainder
+remain the next substantive dependencies; lower-tail control is not that result.
+
+Owning report SHA76bc7962b43dc4e36498e2ba162744b122105baca232d876e570f06d92ea6164.
+Pre-append original: 119062 bytes; SHA0714881e5432699601d8dd8a6e259d5fc6a3925d2746a531c5c22cc51cbc2c53.
+Original byte prefix and sidecar retained privately in .local/itsm-context/low-rank-weighted-index-backup-20261017-01/.
+
+
+### 17 October 2026 - Complete cubic cusp response in mixed/weak norms
+
+R9-MT1-CUSP3-COUPLED-TAIL-V3, including CONSTANTS-V1/retained-pair companion.
+Claim Conditional; review DEFERRED, not cleared.
+Owning report: Theory/Gates/RES-001/RES001_R4C1_CUSP3_COUPLED_TAIL_V3_REPORT_2026-10-17.md.
+Owning report SHA43cc89b62514024746108b0e735b93f9ce70d12d9143ed12d67c76e33c63cfb0.
+Main attempt03 summary SHAa9645d8477a2693514181be81df293360f22b37ec6574701f9b6c5898c30012c.
+Companion summary SHAae576de4b785e0f66bc29d4fdea01925b2113742b266ceddbf6374f28f3ec87a.
+
+354/354 main controls and 45/45 companion checks; both exact read-only replays.
+All three families at eta=1/4,1/64,1/1024; unchanged generic action,
+full27 source/drift rows and 20 nonzero evolution states; separate26-state
+mean. Exact arbitrary-even-mode Ward identities, full constraint/forcing maps,
+continuous infinite tail and retained m=+-2 bounds. No new time integration.
+2646 full-action probes, 63 wave-zero probes and 756 retained-source comparisons;
+largest all22-equation residual7.660883145668331e-13, required<=1e-9.
+The companion proves the n=3 low-neighbour edge and all outward constants.
+
+The complete weighted forcing bound scales as1/|m|, supporting s<1/2 in
+the weighted response. Reconstructed density/multiplier bounds require
+s<-1/2 and regulator-rate bounds s<-3/2. These are weak sufficient estimates,
+not claims of sharp regularity or actual singularity. LambdaU_dot is not
+bounded; its zero Euler-velocity slot is unused, not a physical derivative.
+Huge growth constants do not show observed growth or certify useful accuracy.
+No physical energy, cutoff, nonlinear remainder, finite-amplitude window or GR GO.
+
+V1 failed13/17 (missing complex conjugation) and V2 failed23/26 (eager
+nonzero inverse evaluation at m=0) remain unchanged; both replay exactly
+as failed. V3 corrects only those implementation boundaries under frozen
+addenda. 440 source pins/877 metadata records preserved; three inherited
+absent sidecars remain explicit. Original results/hashes are untouched.
+
+Substantive blockers NONE_WITHIN_STATED_FIXED_CASE_PREPARED_PLANAR_ORDER3
+MIXED_WEAK_NORM_SCOPE. Provisional reuse permitted ONLY there. The earlier
+coupled-order-three tail dependency is discharged in that scope, not as a
+classical nonlinear/physical-window theorem. Next: useful constrained
+finite-amplitude remainder/interaction control with appropriate regularity,
+physical energy/ensemble and frequency/momentum-domain interpretation.
+Inherit LOW-RANK-WEIGHTED-EVOLUTION-V2, CUSP-ODD-RESPONSE-TAIL-V1/root audit,
+CUSP3-EVOLUTION-V1, THREE-FAMILY-FINITE-K-V3, homogeneous kinetic V3, generic
+action/evolving reduction and all transitive deferred review debt.
+
+Stage1 complete only in registered linear B1 scope; Stage2 INCOMPLETE/no
+physical family GO; Stage3 NOT_ENTERED; actual matching inputs still missing.
+Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS;
+K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 UNCHANGED.
+physics_pass=false; gate_effect=NONE; Rule9_cleared=false; full native goal ACTIVE.
+No publication/submission, manuscript/PDF/website, vault mutation, provider/
+model/runtime/security change, commit or push.
+
+Pre-append queue:122699 bytes, SHA6f5277d0eab2d3995c3dedf5bfec0840ec7db1af611a9afd485091e5a94ed663.
+Pre-append register:207968 bytes, SHAc33d6a5b6295d5539ba95437c7059f060fc520f118812b940d6539cc14f05871.
+Original byte prefixes and old sidecars retained privately in
+.local/itsm-context/cusp3-coupled-tail-index-backup-20261017-01/.
+
+
+## 17 October 2026 — source-aware cubic estimate: summable reconstructed fields
+
+R9-MT1-CUSP3-SOURCE-AWARE-WINDOW-V1. Review DEFERRED; Rule9_cleared=false.
+Owning report: Theory/Gates/RES-001/
+RES001_R4C1_CUSP3_SOURCE_AWARE_WINDOW_V1_REPORT_2026-10-17.md,
+SHAf8d3d33c1f9e5c9a3458ab2bb617f17aa40df33e0956dfd851b6118ceae8e984.
+Source-aware V1 local validation336/336 across all9 fixed family/eta cases.
+Complete companion exact replay ended READ_ONLY_PARALLEL_REPLAY_EXACT,
+exit0: all9 FRESH original Case.run calculations, all10 original payloads
+including the complete original summary,336/336 and source/evidence metadata.
+Original summary SHA35cd15dbedcb2ef6be3acfc41a1e43d9a1392100db1b05c7989c5a4f0e21bc90.
+Replay receipt: Analysis/MasterTests/outputs/
+r4c1_cusp3_source_aware_replay_attempt_01/receipt.json,
+SHA6668bb844df71a6502c6f4faaa061bd1f803542a1a2604bae5682dfb29105522.
+456 source pins/909 source-sidecar metadata records and20 original evidence
+file metadata preserved; three inherited absent sidecars remain explicit.
+Original serial attempts did not complete; their traces remain. The separate
+execution-only replay addendum/runner does not alter scientific formulas,
+tolerances, parameters or original receipts. It is not a claim that the
+original serial CLI completed, nor independent scientific peer review.
+
+The exact source-aware lower split and full fast particular response retain
+nonzero initial compensation, all20 evolution states, source/background/
+momentum/basis and denominator drift, all22 equations, separate mean and
+retained-pair bounds. Actual sufficient tail powers are particular-4,
+residual-3 and complete weighted response-3, not an imposed/sharp decay law.
+All22 reconstructed FIELD Fourier series in this |e|^3 sector are now
+absolutely summable. This is fixed-case, prepared planar order-three scope,
+not the whole finite-amplitude solution. Euler-velocity regularity remains
+mixed; actual LambdaU_dot is NOT_BOUNDED. The unchanged mathematical norm
+has enormous amplification constants and certifies no useful physical error.
+
+Substantive blockers: NONE within the stated fixed-case, prepared planar
+cubic estimate scope. Provisional reuse is supported ONLY there. Full nonlinear
+error/initial-data control, physical energy/domain/GR and genuine matching
+remain substantive blockers to stronger uses. The existing G3N2 raw
+regulator rank/Frobenius warning is not solved and is not a physical ghost
+verdict. Next dependency: COMPLETE finite-amplitude metric/frame/matter/
+regulator constraint/kinetic reduction from the unchanged off-shell action;
+do not repeat the completed raw-block, harmonic or dust audits.
+
+Deferred review scope: cusp zero/a.e. regularity and compensated lower energy,
+full forced affine identity/reconstruction, all-mode constants/regularity,
+independent controls and companion replay/preservation. Inherit CUSP3-
+COUPLED-TAIL-V3/CONSTANTS-V1, LOW-RANK-WEIGHTED-EVOLUTION-V2, lower odd/root
+audits, CUSP3-EVOLUTION-V1, generic action/reduction and all transitive debt.
+
+Stage1 complete ONLY registered linear B1 dust; Stage2 INCOMPLETE/no physical
+family GO; Stage3 NOT_ENTERED. Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED;
+UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED;
+TOP-X4 UNCHANGED; physics_pass=false; gate_effect=NONE. Full goal ACTIVE and
+incomplete. No action replacement, manuscript/PDF/site/vault/provider/model/
+runtime/security change, commit/push, publication or submission.
+
+Pre-append queue:126246 bytes,
+SHAa0f27c7cf1dbaa4a7a91ec850ba4cc459e4d20cbaaec904d09a737d5ff2158c8.
+Pre-append register:211515 bytes,
+SHA4f3a20435489b71c421111aabbe30c639adccc2fd55a33f79082e2488d8e8875.
+Original byte prefixes and old sidecars retained privately in
+.local/itsm-context/cusp3-source-aware-index-backup-20261017-01/.

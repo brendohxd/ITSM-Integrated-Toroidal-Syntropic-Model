@@ -85,7 +85,45 @@ orders the research, and the [Master Research Plan](Theory/Core/ITSM_Master_Rese
 defines the authority and claim boundaries. Script check counts and hash
 matches establish only their stated calculation or artifact scope.
 
-## 🧪 Current research checkpoint — 13 October 2026
+## 🧪 Current research checkpoint — 17 October 2026
+
+The [17 October checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)
+capture the research and paper revisions since the previous checkpoint. The
+latest advance is a better-controlled mathematical response, not a physical
+viability verdict:
+
+- **Cubic fields are now summable in the registered calculation:** the
+  [source-aware estimate](Theory/Gates/RES-001/RES001_R4C1_CUSP3_SOURCE_AWARE_WINDOW_V1_REPORT_2026-10-17.md)
+  improves the sufficient weighted Fourier bound from $O(|m|^{-1})$ to
+  $O(|m|^{-3})$. All 22 reconstructed field series are absolutely summable
+  at this perturbative order across the nine registered family/parameter
+  cases. All 336 checks and the complete summary reproduced exactly using
+  the restartable replay companion. This is not a full nonlinear solution,
+  useful physical accuracy, a physical cutoff or healthy GR recovery.
+- **Constraint and energy warnings remain explicit:** the three-family
+  [finite-wavenumber analysis](Theory/Gates/RES-001/RES001_R4C1_THREE_FAMILY_FINITE_K_V3_REPORT_2026-10-16.md)
+  retains the defective zero-speed branch and negative instantaneous
+  dust-clock energy direction. A positive homogeneous block in a separately
+  fixed two-charge ensemble does not remove those nonzero-mode findings.
+- **Topology supplies an interface, not a coefficient:** the
+  [compact-torus control](Analysis/MasterTests/COMPACT_T3_CONTROL/REPORT_2026-10-14.md)
+  checks mode geometry and normalization, while showing why those alone do
+  not identify the physical matter response or force coefficient.
+
+The next substantive boundary is the finite-amplitude coupled constraint,
+kinetic and physical-domain assessment of the unchanged action. Stage 2 is
+incomplete; numerical Stage 3 has not been entered. Matter-residue and
+nonlinear-force matching inputs are still missing. Earlier failed proof
+constructions and their original receipts are retained, not relabelled.
+
+P1's current review candidate is
+[`v0.2.0-rc6`](papers/P1-Scale-Matching-Reconstruction/README.md), and P2's is
+[`v0.2.0-rc4`](papers/P2-Rectangular-T3-Casimir/README.md). Their revisions and
+preserved earlier packages are documented; author verification and applicable
+independent review remain pending. P2's sensitivity receipt remains 18/19
+`FAIL`. No submission or publication readiness is implied.
+
+### Preserved 13 October checkpoint
 
 The [checkpoint and exact-byte evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)
 collect the previously uncommitted research and paper-preparation work.
@@ -118,7 +156,7 @@ direction and different-ensemble positive control remain unchanged in the
 The [dated recovery evidence guide](docs/ITSM_RECOVERY_EVIDENCE_GUIDE.md) preserves
 that snapshot rather than replacing its failures with later successes.
 
-P1/P2 `v0.2.0-rc3`, Thermodynamics `v0.7.1-conditional-draft` and R4C1
+The 13 October checkpoint retains P1/P2 `v0.2.0-rc3`, Thermodynamics `v0.7.1-conditional-draft` and R4C1
 `v0.1.1-conditional-draft` are retained with their preparation/review records.
 The [local P1/P2 critique](papers/ReleasePackages/2026-10-09/P1_P2_LOCAL_REFEREE_REVIEW_AND_GROK_RECONCILIATION_2026-10-09.md)
 still requires targeted revisions and author decisions. These are drafts and

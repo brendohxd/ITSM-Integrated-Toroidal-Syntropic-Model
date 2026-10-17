@@ -1,0 +1,4226 @@
+{
+  "schema": "itsm-compact-t3-methods-v1",
+  "status": "PASS_BOUNDED_METHODS_HOLD_MATCHING",
+  "claim_status": "Conditional",
+  "review_status": "DEFERRED",
+  "continuation": "PROCEED_PROVISIONALLY_METHODS_ONLY",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "Rule9_cleared": false,
+  "MAT_001": "BLOCKED",
+  "UVIR_003": "IN_PROGRESS",
+  "K_Q": "NOT_DERIVED",
+  "V": "NOT_COMPUTED",
+  "Stage4A": "CLOSED",
+  "Tests_1_3": "HOLD_SUBSTANTIVE",
+  "substantive_blockers": [
+    "No selected on-shell physical mode or matter residue",
+    "No microscopic Cm/KQ or nonlinear coefficient relation",
+    "No action-derived state/spectrum/transfer or physical scale"
+  ],
+  "local_checks": {
+    "total": 765,
+    "passed": 765,
+    "failed": 0
+  },
+  "failures": [],
+  "source_pins": [
+    {
+      "path": "GEMINI.md",
+      "expected_sha256": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12",
+      "actual_sha256": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12"
+    },
+    {
+      "path": "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md",
+      "expected_sha256": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa",
+      "actual_sha256": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa"
+    },
+    {
+      "path": "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md",
+      "expected_sha256": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809",
+      "actual_sha256": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809"
+    },
+    {
+      "path": "Theory/Core/ITSM_Master_Research_Plan.md",
+      "expected_sha256": "6ac906c0050eb9c4395953b6cdbb0d9aed696bce0b0f7cf4f8c8606a4f781ba3",
+      "actual_sha256": "6ac906c0050eb9c4395953b6cdbb0d9aed696bce0b0f7cf4f8c8606a4f781ba3"
+    },
+    {
+      "path": "Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md",
+      "expected_sha256": "81c7138568d44fd3197b88cb21efe67b17c406ada941f7ff778c2f8821ae074b",
+      "actual_sha256": "81c7138568d44fd3197b88cb21efe67b17c406ada941f7ff778c2f8821ae074b"
+    },
+    {
+      "path": "Theory/Gates/MAT-001/MAT-001_R5_MICROSCOPIC_MATCHING_DECISION.md",
+      "expected_sha256": "ab8e743913f2e4fd0f5823581514345d598b2d1a1eb92e6d0d04f57447ed69b4",
+      "actual_sha256": "ab8e743913f2e4fd0f5823581514345d598b2d1a1eb92e6d0d04f57447ed69b4"
+    },
+    {
+      "path": "Theory/Gates/VOR-001/VOR_TOP_PHASE_WINDING_NORMALIZATION_SPEC_2026-09-05.md",
+      "expected_sha256": "0c7b9b976c3a3bb93c14b804233f721b5b9540b56739800c3a56b3bbd0ebd308",
+      "actual_sha256": "0c7b9b976c3a3bb93c14b804233f721b5b9540b56739800c3a56b3bbd0ebd308"
+    },
+    {
+      "path": "Theory/Gates/ITSM_TEST_02_T3_TOPOLOGY_ADDENDUM_2026-09-25.md",
+      "expected_sha256": "a4f251ff3d751a60ff4130d61a060f199c825604f877e1aeb5dd5515db8f317c",
+      "actual_sha256": "a4f251ff3d751a60ff4130d61a060f199c825604f877e1aeb5dd5515db8f317c"
+    },
+    {
+      "path": "active_research.md",
+      "expected_sha256": "40d7859b67452a65040665ac1d52f133896234293023dcdda496076802aac2f0",
+      "actual_sha256": "40d7859b67452a65040665ac1d52f133896234293023dcdda496076802aac2f0"
+    }
+  ],
+  "script_sha256": "16aa9c2cb880781a30c0f6a1c743f7ff6bbc98074c0883c005685cfe80a1f4ec",
+  "contract_sha256": "6b760401c35e3ff9408ff0b8d8716ab76377454770d895aa0c3d8d20e119c100",
+  "literature": [
+    {
+      "url": "https://arxiv.org/html/2306.17112v3",
+      "equations": "4.20-4.27",
+      "role": "Geometry and statistical transfer method; not coefficient matching"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.12418",
+      "role": "Weekly lens-space literature trail only"
+    }
+  ],
+  "lattices": [
+    {
+      "name": "cubic",
+      "T": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "volume": "1",
+      "enumerated_nonzero_modes": 26,
+      "lowest_shell_n": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "lowest_shell_k2": "4*pi**2",
+      "lowest_shell_mean_PT": [
+        [
+          "2/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "2/3"
+        ]
+      ]
+    },
+    {
+      "name": "rectangular",
+      "T": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "volume": "2",
+      "enumerated_nonzero_modes": 26,
+      "lowest_shell_n": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "lowest_shell_k2": "pi**2",
+      "lowest_shell_mean_PT": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "name": "oblique",
+      "T": [
+        [
+          "2",
+          "1/2",
+          "1/3"
+        ],
+        [
+          "0",
+          "3",
+          "1/4"
+        ],
+        [
+          "0",
+          "0",
+          "4"
+        ]
+      ],
+      "volume": "24",
+      "enumerated_nonzero_modes": 26,
+      "lowest_shell_n": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "lowest_shell_k2": "pi**2/4",
+      "lowest_shell_mean_PT": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    }
+  ],
+  "source_weighted_cubic_PT": [
+    [
+      "5/6",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "5/6",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1/3"
+    ]
+  ],
+  "numerical_controls": {
+    "precision_decimal": 80,
+    "midpoint_grid": [
+      5,
+      5,
+      5
+    ],
+    "includes_zero_mode": true,
+    "orthogonality": [
+      {
+        "name": "cubic",
+        "max_overlap_error": "3.0540549115114e-81"
+      },
+      {
+        "name": "rectangular",
+        "max_overlap_error": "2.1084395886461e-81"
+      },
+      {
+        "name": "oblique",
+        "max_overlap_error": "2.1084395886461e-81"
+      }
+    ],
+    "toy_covariance": [
+      {
+        "name": "cubic",
+        "observer_phase_error": "6.374386561758e-84"
+      },
+      {
+        "name": "rectangular",
+        "observer_phase_error": "2.514866164807e-83"
+      },
+      {
+        "name": "oblique",
+        "observer_phase_error": "2.7077456850239e-82"
+      }
+    ],
+    "covariance_scope": "Artificial Gram features/weights only; no CMB or primordial spectrum"
+  },
+  "scalar_control": {
+    "action": "K/2 dt(psi)^2 - B/2 grad(psi)^2 - K*m2/2 psi^2 - Cm*rho*psi",
+    "conditional_only": true,
+    "control_K_is_not_live_KQ": true,
+    "bare_response": "Cm*rho/(K*(-B*k2/K - m2 + omega2))",
+    "canonical_response": "Cm*rho/(sqrt(K)*(-B*k2/K - m2 + omega2))",
+    "matter_log_mass_response": "Cm**2*rho/(K*(-B*k2/K - m2 + omega2))",
+    "retarded_prescription": "omega -> omega+i0, exp(-i omega t)",
+    "single_vertex_omega_plane_residue": "V_control/(2*Omega_n), not the vertex itself",
+    "static_massless": "-Cm^2 rho_n/(B k_n^2), n!=0",
+    "response_to_constant_massless_static_source": "No inverse; require compatible zero mean or separate homogeneous dynamics",
+    "matrix_interface": "c_n^T D_n(omega,k)^(-1) j_n; live constrained D,c,j not computed",
+    "coefficient_counterfamilies": [
+      {
+        "fixed": "frequency",
+        "rows": [
+          {
+            "K": "1",
+            "B": "1/4",
+            "Cm": "1",
+            "V_control": "1",
+            "cs2": "1/4",
+            "static_amplitude": "4",
+            "pole_omega2_over_k2": "1/4"
+          },
+          {
+            "K": "4",
+            "B": "1",
+            "Cm": "1",
+            "V_control": "1/2",
+            "cs2": "1/4",
+            "static_amplitude": "1",
+            "pole_omega2_over_k2": "1/4"
+          },
+          {
+            "K": "9",
+            "B": "9/4",
+            "Cm": "1",
+            "V_control": "1/3",
+            "cs2": "1/4",
+            "static_amplitude": "4/9",
+            "pole_omega2_over_k2": "1/4"
+          }
+        ]
+      },
+      {
+        "fixed": "static_transfer",
+        "rows": [
+          {
+            "K": "1",
+            "B": "1/4",
+            "Cm": "1",
+            "V_control": "1",
+            "cs2": "1/4",
+            "static_amplitude": "4",
+            "pole_omega2_over_k2": "1/4"
+          },
+          {
+            "K": "4",
+            "B": "1/4",
+            "Cm": "1",
+            "V_control": "1/2",
+            "cs2": "1/16",
+            "static_amplitude": "4",
+            "pole_omega2_over_k2": "1/16"
+          },
+          {
+            "K": "9",
+            "B": "1/4",
+            "Cm": "1",
+            "V_control": "1/3",
+            "cs2": "1/36",
+            "static_amplitude": "4",
+            "pole_omega2_over_k2": "1/36"
+          }
+        ]
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "pin_GEMINI.md",
+      "passed": true,
+      "evidence": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12"
+    },
+    {
+      "name": "pin_Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md",
+      "passed": true,
+      "evidence": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa"
+    },
+    {
+      "name": "pin_Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md",
+      "passed": true,
+      "evidence": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809"
+    },
+    {
+      "name": "pin_Theory/Core/ITSM_Master_Research_Plan.md",
+      "passed": true,
+      "evidence": "6ac906c0050eb9c4395953b6cdbb0d9aed696bce0b0f7cf4f8c8606a4f781ba3"
+    },
+    {
+      "name": "pin_Theory/Core/ITSM_MASTER_TEST_PROGRAMME_2026-09-24.md",
+      "passed": true,
+      "evidence": "81c7138568d44fd3197b88cb21efe67b17c406ada941f7ff778c2f8821ae074b"
+    },
+    {
+      "name": "pin_Theory/Gates/MAT-001/MAT-001_R5_MICROSCOPIC_MATCHING_DECISION.md",
+      "passed": true,
+      "evidence": "ab8e743913f2e4fd0f5823581514345d598b2d1a1eb92e6d0d04f57447ed69b4"
+    },
+    {
+      "name": "pin_Theory/Gates/VOR-001/VOR_TOP_PHASE_WINDING_NORMALIZATION_SPEC_2026-09-05.md",
+      "passed": true,
+      "evidence": "0c7b9b976c3a3bb93c14b804233f721b5b9540b56739800c3a56b3bbd0ebd308"
+    },
+    {
+      "name": "pin_Theory/Gates/ITSM_TEST_02_T3_TOPOLOGY_ADDENDUM_2026-09-25.md",
+      "passed": true,
+      "evidence": "a4f251ff3d751a60ff4130d61a060f199c825604f877e1aeb5dd5515db8f317c"
+    },
+    {
+      "name": "pin_active_research.md",
+      "passed": true,
+      "evidence": "40d7859b67452a65040665ac1d52f133896234293023dcdda496076802aac2f0"
+    },
+    {
+      "name": "cubic_nonsingular_volume",
+      "passed": true,
+      "evidence": "1"
+    },
+    {
+      "name": "cubic_reciprocal_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_0_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_0_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_0_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_0",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_1_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_1_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_1_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_1",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_2_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_2_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_2_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_2",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_3_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_3_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_3_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_3",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_3",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_4_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_4_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_4_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_4",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_4",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_5_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_5_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_5_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_5",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_5",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_6_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_6_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_6_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_6",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_6",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_7_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_7_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_7_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_7",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_7",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_8_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_8_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_8_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_8",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_8",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_9_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_9_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_9_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_9",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_9",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_10_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_10_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_10_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_10",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_10",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_11_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_11_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_11_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_11",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_11",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_12_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_12_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_12_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_12",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_12",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_13_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_13_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_13_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_13",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_13",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_14_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_14_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_14_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_14",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_14",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_15_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_15_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_15_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_15",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_15",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_16_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_16_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_16_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_16",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_16",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_17_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_17_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_17_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_17",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_17",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_18_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_18_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_18_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_18",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_18",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_19_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_19_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_19_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_19",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_19",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_20_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_20_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_20_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_20",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_20",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_21_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_21_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_21_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_21",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_21",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_22_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_22_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_22_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_22",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_22",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_23_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_23_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_23_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_23",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_23",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_24_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_24_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_24_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_24",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_24",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_reciprocal_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_periodic_25_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_25_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_periodic_25_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_PT_idempotent_25",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_PT_trace_25",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_scalar_gradient_annihilated_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_mode_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_1_mode_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "cubic_GL_0_volume",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_GL_1_volume",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "cubic_Laplacian_eigenvalue",
+      "passed": true,
+      "evidence": "12*pi**2*exp(I*(2*pi*x0 - 2*pi*x1 + 2*pi*x2)) - 12*pi**2*exp(2*I*pi*(x0 - x1 + x2))"
+    },
+    {
+      "name": "rectangular_nonsingular_volume",
+      "passed": true,
+      "evidence": "2"
+    },
+    {
+      "name": "rectangular_reciprocal_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_0_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_0_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_0_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_0",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_1_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_1_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_1_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_1",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_2_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_2_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_2_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_2",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_3_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_3_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_3_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_3",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_3",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_4_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_4_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_4_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_4",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_4",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_5_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_5_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_5_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_5",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_5",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_6_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_6_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_6_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_6",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_6",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_7_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_7_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_7_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_7",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_7",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_8_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_8_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_8_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_8",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_8",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_9_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_9_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_9_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_9",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_9",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_10_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_10_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_10_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_10",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_10",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_11_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_11_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_11_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_11",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_11",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_12_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_12_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_12_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_12",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_12",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_13_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_13_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_13_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_13",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_13",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_14_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_14_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_14_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_14",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_14",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_15_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_15_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_15_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_15",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_15",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_16_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_16_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_16_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_16",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_16",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_17_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_17_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_17_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_17",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_17",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_18_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_18_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_18_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_18",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_18",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_19_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_19_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_19_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_19",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_19",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_20_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_20_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_20_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_20",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_20",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_21_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_21_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_21_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_21",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_21",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_22_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_22_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_22_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_22",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_22",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_23_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_23_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_23_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_23",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_23",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_24_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_24_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_24_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_24",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_24",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_reciprocal_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_periodic_25_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_25_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_periodic_25_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_PT_idempotent_25",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_PT_trace_25",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_scalar_gradient_annihilated_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_mode_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_1_mode_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "rectangular_GL_0_volume",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_GL_1_volume",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "rectangular_Laplacian_eigenvalue",
+      "passed": true,
+      "evidence": "9*sqrt(2)*pi**2*exp(I*(2*pi*x0 - 2*pi*x1 + pi*x2))/2 - 9*sqrt(2)*pi**2*exp(I*pi*(2*x0 - 2*x1 + x2))/2"
+    },
+    {
+      "name": "oblique_nonsingular_volume",
+      "passed": true,
+      "evidence": "24"
+    },
+    {
+      "name": "oblique_reciprocal_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_0_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_0_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_0_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_0",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_0",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_1_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_1_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_1_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_1",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_1",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_2_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_2_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_2_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_2",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_2",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_3_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_3_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_3_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_3",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_3",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_3",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_4_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_4_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_4_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_4",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_4",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_4",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_5_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_5_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_5_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_5",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_5",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_5",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_6_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_6_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_6_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_6",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_6",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_6",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_7_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_7_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_7_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_7",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_7",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_7",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_8_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_8_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_8_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_8",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_8",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_8",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_9_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_9_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_9_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_9",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_9",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_9",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_10_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_10_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_10_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_10",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_10",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_10",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_11_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_11_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_11_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_11",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_11",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_11",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_12_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_12_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_12_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_12",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_12",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_12",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_13_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_13_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_13_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_13",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_13",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_13",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_14_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_14_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_14_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_14",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_14",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_14",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_15_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_15_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_15_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_15",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_15",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_15",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_16_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_16_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_16_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_16",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_16",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_16",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_17_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_17_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_17_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_17",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_17",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_17",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_18_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_18_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_18_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_18",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_18",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_18",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_19_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_19_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_19_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_19",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_19",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_19",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_20_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_20_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_20_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_20",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_20",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_20",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_21_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_21_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_21_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_21",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_21",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_21",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_22_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_22_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_22_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_22",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_22",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_22",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_23_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_23_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_23_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_23",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_23",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_23",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_24_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_24_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_24_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_24",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_24",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_24",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_reciprocal_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_periodic_25_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_25_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_periodic_25_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_PT_idempotent_25",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "oblique_PT_trace_25",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_scalar_gradient_annihilated_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_mode_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_1_mode_25",
+      "passed": true,
+      "evidence": "[['0'], ['0'], ['0']]"
+    },
+    {
+      "name": "oblique_GL_0_volume",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_GL_1_volume",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "oblique_Laplacian_eigenvalue",
+      "passed": true,
+      "evidence": "17641*sqrt(6)*pi**2*exp(I*(pi*x0 - 5*pi*x1/6 + 15*pi*x2/32))/110592 - 17641*sqrt(6)*pi**2*exp(I*pi*(x0 - 5*x1/6 + 15*x2/32))/110592"
+    },
+    {
+      "name": "cubic_six_mode_mean",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "rectangular_two_mode_mean",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "cubic_weighted_mean",
+      "passed": true,
+      "evidence": "[['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0']]"
+    },
+    {
+      "name": "weighted_trace_still_two",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "reject_universal_2_over_3_rectangular",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "name": "reject_universal_2_over_3_source_weighted",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "name": "reject_missing_2pi",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "name": "reject_inverse_not_inverse_transpose",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "name": "reject_wrong_GL_label_transport",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "name": "reject_omitted_volume_normalization",
+      "passed": true,
+      "evidence": "24"
+    },
+    {
+      "name": "cubic_independent_quadrature_80digits",
+      "passed": true,
+      "evidence": "3.0540549115114e-81"
+    },
+    {
+      "name": "cubic_toy_covariance_observer_independent",
+      "passed": true,
+      "evidence": "6.374386561758e-84"
+    },
+    {
+      "name": "cubic_toy_covariance_Gram_positive",
+      "passed": true,
+      "evidence": "0.78446668694478"
+    },
+    {
+      "name": "rectangular_independent_quadrature_80digits",
+      "passed": true,
+      "evidence": "2.1084395886461e-81"
+    },
+    {
+      "name": "rectangular_toy_covariance_observer_independent",
+      "passed": true,
+      "evidence": "2.514866164807e-83"
+    },
+    {
+      "name": "rectangular_toy_covariance_Gram_positive",
+      "passed": true,
+      "evidence": "1.872456676427"
+    },
+    {
+      "name": "oblique_independent_quadrature_80digits",
+      "passed": true,
+      "evidence": "2.1084395886461e-81"
+    },
+    {
+      "name": "oblique_toy_covariance_observer_independent",
+      "passed": true,
+      "evidence": "2.7077456850239e-82"
+    },
+    {
+      "name": "oblique_toy_covariance_Gram_positive",
+      "passed": true,
+      "evidence": "6.2108619517675"
+    },
+    {
+      "name": "analytic_cell_overlap_-2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "analytic_cell_overlap_-1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "analytic_cell_overlap_0",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "analytic_cell_overlap_1",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "analytic_cell_overlap_2",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "canonical_one_vertex",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "observable_two_vertices",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "Euler_source_sign",
+      "passed": true,
+      "evidence": "Cm*rho + Cm*rho*(B*k2 + K*m2 - K*omega2)/(K*(-B*k2/K - m2 + omega2))"
+    },
+    {
+      "name": "static_massive_sign",
+      "passed": true,
+      "evidence": "Cm**2*rho/(B*k2 + K*m2) + Cm**2*rho/(K*(-B*k2/K - m2))"
+    },
+    {
+      "name": "static_massless",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "field_chart_V",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "field_chart_frequency",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "field_chart_observable",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "static_times_dispersion_identifies_V_squared",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "zero_massless_denominator",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "omega_plane_single_vertex_residue",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "massive_zero_mode_static",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "reject_bare_vertex_as_V",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "name": "reject_two_vertex_as_signed_V",
+      "passed": true,
+      "evidence": ""
+    },
+    {
+      "name": "reject_K_from_volume",
+      "passed": true,
+      "evidence": "Same lattice; independent K changes normalized vertex"
+    },
+    {
+      "name": "reject_frequency_only_matching",
+      "passed": true,
+      "evidence": "[{'K': '1', 'B': '1/4', 'Cm': '1', 'V_control': '1', 'cs2': '1/4', 'static_amplitude': '4', 'pole_omega2_over_k2': '1/4'}, {'K': '4', 'B': '1', 'Cm': '1', 'V_control': '1/2', 'cs2': '1/4', 'static_amplitude': '1', 'pole_omega2_over_k2': '1/4'}, {'K': '9', 'B': '9/4', 'Cm': '1', 'V_control': '1/3', 'cs2': '1/4', 'static_amplitude': '4/9', 'pole_omega2_over_k2': '1/4'}]"
+    },
+    {
+      "name": "reject_static_transfer_only_matching",
+      "passed": true,
+      "evidence": "[{'K': '1', 'B': '1/4', 'Cm': '1', 'V_control': '1', 'cs2': '1/4', 'static_amplitude': '4', 'pole_omega2_over_k2': '1/4'}, {'K': '4', 'B': '1/4', 'Cm': '1', 'V_control': '1/2', 'cs2': '1/16', 'static_amplitude': '4', 'pole_omega2_over_k2': '1/16'}, {'K': '9', 'B': '1/4', 'Cm': '1', 'V_control': '1/3', 'cs2': '1/36', 'static_amplitude': '4', 'pole_omega2_over_k2': '1/36'}]"
+    },
+    {
+      "name": "matrix_response_chart_invariance",
+      "passed": true,
+      "evidence": "0"
+    }
+  ]
+}

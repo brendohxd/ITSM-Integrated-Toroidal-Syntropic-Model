@@ -1,0 +1,277 @@
+{
+  "auxiliary_source_dt": {
+    "Sx": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Sy": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Sz": [
+      "0",
+      "0",
+      "A*psi_dot**3*(c1 + 3*c2 + c4)/(a*(c1 + c4))"
+    ],
+    "Z": [
+      "0",
+      "-3*A*b*psi_dot**4/(MU2*(c1 + c4))",
+      "0"
+    ]
+  },
+  "basis": [
+    "abs(cos(kz))",
+    "abs(cos(kz))^3",
+    "d_z abs(cos(kz))^3"
+  ],
+  "constraint_rows": [
+    "alpha",
+    "Sx",
+    "Sy",
+    "Sz",
+    "Em",
+    "Z",
+    "LambdaU"
+  ],
+  "even_fourier_coefficient": "12*(-1)**integer_harmonic/(pi*(4*integer_harmonic**2 - 9)*(4*integer_harmonic**2 - 1))",
+  "full_source": {
+    "Em": [
+      "0",
+      "0",
+      "0"
+    ],
+    "LambdaU": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Mxx": [
+      "0",
+      "-3*A*c2*psi_dot**3/(2*(c1 + c4)) - A*psi_dot**3/2",
+      "0"
+    ],
+    "Mxy": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Mxz": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Myy": [
+      "0",
+      "-2*A*psi_dot**3 + 3*A*psi_dot**3*(c1 - c2 - c3 + 2*c4)/(2*(c1 + c4))",
+      "0"
+    ],
+    "Myz": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Mzz": [
+      "0",
+      "-3*A*c2*psi_dot**3/(2*(c1 + c4)) - A*psi_dot**3/2",
+      "0"
+    ],
+    "Pi": [
+      "0",
+      "3*A*(3*H*psi_dot**2 + 2*psi_ddot*psi_dot)",
+      "0"
+    ],
+    "Sx": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Sy": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Sz": [
+      "0",
+      "0",
+      "0"
+    ],
+    "T": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Vx": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Vy": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Vz": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Z": [
+      "0",
+      "0",
+      "0"
+    ],
+    "alpha": [
+      "0",
+      "2*A*psi_dot**3",
+      "0"
+    ],
+    "dr": [
+      "0",
+      "0",
+      "0"
+    ],
+    "du": [
+      "0",
+      "0",
+      "0"
+    ],
+    "dv": [
+      "0",
+      "0",
+      "0"
+    ],
+    "nu": [
+      "0",
+      "-3*A*psi_dot**3*(c2 + c3)/(c1 + c4)",
+      "0"
+    ]
+  },
+  "lower_cusp_acceleration_coefficient": "-3*A*psi_dot**3/(MU2*(c1 + c4))",
+  "mean_xdot_counter": "-8*A*psi_dot**3/(3*pi*H*(2*MP2 + MU2*c1 + 3*MU2*c2 + MU2*c3))",
+  "mixed_source": {
+    "Em": [
+      "0",
+      "0",
+      "0"
+    ],
+    "LambdaU": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Mxx": [
+      "0",
+      "-3*A*c2*psi_dot**3/(2*(c1 + c4))",
+      "0"
+    ],
+    "Mxy": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Mxz": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Myy": [
+      "0",
+      "3*A*psi_dot**3*(c1 - c2 - c3 + 2*c4)/(2*(c1 + c4))",
+      "0"
+    ],
+    "Myz": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Mzz": [
+      "0",
+      "-3*A*c2*psi_dot**3/(2*(c1 + c4))",
+      "0"
+    ],
+    "Pi": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Sx": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Sy": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Sz": [
+      "0",
+      "0",
+      "0"
+    ],
+    "T": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Vx": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Vy": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Vz": [
+      "0",
+      "0",
+      "0"
+    ],
+    "Z": [
+      "0",
+      "0",
+      "0"
+    ],
+    "alpha": [
+      "0",
+      "0",
+      "0"
+    ],
+    "dr": [
+      "0",
+      "0",
+      "0"
+    ],
+    "du": [
+      "0",
+      "0",
+      "0"
+    ],
+    "dv": [
+      "0",
+      "0",
+      "0"
+    ],
+    "nu": [
+      "0",
+      "-3*A*psi_dot**3*(c2 + c3)/(c1 + c4)",
+      "0"
+    ]
+  },
+  "omitted_mixed_longitudinal_Ward": [
+    "0",
+    "0",
+    "-A*psi_dot**3"
+  ],
+  "omitted_mixed_temporal_Ward": [
+    "0",
+    "-12*A*H*psi_dot**3 - 6*A*psi_ddot*psi_dot**2 + 3*A*psi_dot*(3*H*psi_dot**2 + 2*psi_ddot*psi_dot)",
+    "0"
+  ],
+  "pointwise_density": "2*A*psi_dot^3/C^4*(abs(cos(kz))^3-4/(3*pi))",
+  "proof_scope": "All source harmonics for seven initial constraints; finite probes only for full22 jets"
+}

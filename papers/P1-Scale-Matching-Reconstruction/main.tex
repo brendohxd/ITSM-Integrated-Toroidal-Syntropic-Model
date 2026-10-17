@@ -45,30 +45,35 @@ Zenodo: & \href{https://doi.org/10.5281/zenodo.18808348}{doi:10.5281/zenodo.1880
 \end{tabular}%
 }
 
-\date{Version 0.2.0-rc3 --- October 8, 2026}
+\date{Version 0.2.0-rc6 --- October 17, 2026}
 
 \begin{abstract}
 The coincidence \(2\pi\azero\sim c\Hzero\) is a standard observation in the
-MOND literature.  We test one proposed route from that coincidence to a
+MOND literature.  We define and test one hypothesis linking that coincidence to a
 \emph{geometric derivation}: (i)~a compact flat cubic three-torus of present-day
 side \(L=c/\Hzero\) with a putative ``circulation quantum'' \(\kappa=cL\), and
 (ii)~identification of the isotropic projector ratio
 \(\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3\) with the weak-field
 coefficient in an AQUAL-type action.  The route is assessed against explicit
-microphysical, cosmic-scale, and weak-field criteria.  Writing \(\kappa=cL\)
+microphysical, weak-field, and cosmic-scale criteria.  Writing \(\kappa=cL\)
 does not by itself quantize circulation; the package \(L=c/\Hzero\),
-\(\Gamma=cL\), and \(\omega=\Hzero\) is kinematically inconsistent if \(L\) is
-a circumference; and cubic \(E_1\) topology bounds require
-\(L\gtrsim\mathcal{O}(6)\,c/\Hzero\), which is incompatible with the
-\(\alpha=1\) scale match.  Exact tracking \(L_{\mathrm{phys}}(t)=c/H(t)\) is
-also incompatible with fixed comoving moduli in ordinary FLRW except for a
-coasting expansion.  The projector identity is correct but
+\(\Gamma=cL\), and \(\omega=\Hzero\) is inconsistent when \(\omega\) is the
+cycle frequency \(2\pi v/L\), without assigning curvature to a flat geodesic.
+The projector identity is correct but
 topology-independent and absent from the weak-field action, so it does not fix
 \(\Cobs\).  We instead derive the normalization-invariant response combination
-\(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\).  In the static spherical baseline, imposing
+\(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\); the spherical response identifies only
+\(\Cobs^2\azero\) unless \(\azero\) is independently fixed.
+At the cosmological scale, exact tracking \(L_{\mathrm{phys}}(t)=c/H(t)\) is
+incompatible with fixed comoving moduli in ordinary FLRW except for a
+coasting expansion.  The cited cubic \(E_1\) bound, evaluated in its
+Planck-background benchmark, requires \(L\gtrsim\mathcal{O}(6)\,c/\Hzero\),
+incompatible with that benchmark's \(\alpha=1\) scale match.
+Returning to the spherical weak-field baseline, imposing
 both \(\azero=c\Hzero/2\pi\) and the un-derived comparator \(\Cobs=2/3\)
 gives \(a_{0,\mathrm{eff}}=(4/9)\azero\), corresponding to an approximately
-18\% shift in asymptotic baryonic Tully--Fisher velocity normalization.  This
+18\% reduction in asymptotic baryonic Tully--Fisher velocity relative to
+\(\Cobs=1\) at the same input \(\azero\) and baryonic mass. This
 is a conditional consistency check, not a global \(\Tthree\) prediction or a
 completed galaxy-data fit.  The retained results are a present-epoch
 phenomenological encoding of the coincidence, a clean EFT invariant, and a
@@ -110,26 +115,54 @@ MOND as a class, relativistic MOND theories, or other microscopic completions.
 It would show only that the empirical coincidence and the cubic topology do
 not supply the claimed derivation without additional physics.
 
-The two-step construction examined in this note answers ``yes'':
+For a definite consistency test, we define the following two-step hypothesis.
+It is an author-defined construction, not an attribution of this complete
+package to a particular published model:
 \begin{enumerate}
 \item[(A)] ``Circulation quantization'' on a domain of size \(L=c/\Hzero\)
   yields \(\azero=c\Hzero/2\pi\);
 \item[(B)] the transverse-projector ratio \(2/3\) yields the EFT coefficient
   \(\Cobs\) in a deep-MOND square-root law.
 \end{enumerate}
+
+The appeal of this construction is that a Hubble-scale domain appears to
+supply the dimensional acceleration input, while a projector count appears
+to supply its dimensionless response coefficient.  If both steps followed
+from physical dynamics, the galactic normalization would be linked to global
+geometry rather than left as an independently matched input.  The empirical
+coincidence and the trace identity make this a definite question to test;
+they do not themselves supply the missing phase dynamics or matter coupling.
+The consistency tests below ask whether the proposed shortcut survives those
+requirements before assigning it a physical prediction.
+
 Our analysis identifies mathematical incompatibilities in both steps under the
 stated assumptions.  This short technical note records those scoped
 constraints and isolates what \emph{does} follow cleanly from a static
 AQUAL-type action \cite{bekenstein_milgrom}.
+The MOND coincidence, compact-topology bounds, projector algebra, and AQUAL
+framework are established ingredients. This note combines them in a scoped
+consistency and normalization audit. Its reusable output is a procedure for
+geometric/EFT identifications: distinguish a field convention from a matched
+coupling, state the independent acceleration input, and retain compact-source
+integrability before comparing forces with data. The coefficient identity is
+algebra within the stated action, not a new universal law or independently
+fixed MOND prediction; no priority claim is made.
 
 \paragraph{Evaluation framework.}
 The analysis uses three groups of criteria, previewed here so that each later
 calculation has an explicit standard: (M1)--(M4) require a phase-bearing order
 parameter, integer winding, a consistent meaning of \(L\), and a dynamical map
-to \(\azero\); (S1)--(S2) require a viable modulus history and consistency with
-compact-topology bounds; and (E1)--(E3) require action-level projector dynamics,
-the correct RAR/BTFR normalization, and solved compensated periodic sources.
+to \(\azero\); (E1)--(E3) require action-level projector dynamics, the correct
+RAR/BTFR normalization, and solved compensated periodic sources; and
+(S1)--(S2) require a viable modulus history and consistency with
+compact-topology bounds.
 The detailed, forward-looking checklist appears in Sec.~\ref{sec:path}.
+After specifying the geometry, the body proceeds from circulation
+(Sec.~\ref{sec:a0}) to the local weak-field action
+(Sec.~\ref{sec:proj}), then to expansion history and topology bounds
+(Secs.~\ref{sec:dynamic} and \ref{sec:bounds}).  Section~\ref{sec:rar}
+tests the resulting conditional normalization.  Each sector introduces its
+requirements before assessing the proposed construction.
 Table~\ref{tab:status} summarizes the resulting analytical dispositions.
 
 % Full-width, non-floating table: spans both columns; following text starts after it.
@@ -154,23 +187,23 @@ Empirical coincidence \(2\pi\azero\sim c\Hzero\)
 ``Circulation quantization \(\Rightarrow\azero\)''
   & Not derived & \(\kappa=cL\) is not \(h/m\) quantization \\
 \hline
-Package \((L,\Gamma=cL,\omega=\Hzero)\) with \(L\) a circumference
-  & Incompatible & Inconsistent if \(L\) is a circumference \\
-\hline
-Cubic \(E_1\) with \(L=c/\Hzero\) vs.\ Planck topology
-  & Incompatible & \(L\gtrsim\mathcal{O}(6)\,c/\Hzero\) required \\
-\hline
-\(L_{\mathrm{phys}}(t)=c/H(t)\) with fixed comoving moduli
-  & Incompatible & Needs evolving moduli or coasting FLRW \\
+Package \((L,\Gamma=cL,\omega=\Hzero)\) with \(\omega=2\pi v/L\)
+  & Incompatible & Cycle-clock inconsistency; no centripetal-force premise \\
 \hline
 Isotropic count \(\operatorname{Tr}(h)/\operatorname{Tr}(\gamma)=2/3\)
   & Derived & Generic 3D identity; not special to \(\Tthree\) \\
 \hline
 \(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\)
-  & Derived & Field-normalization invariant \\
+  & Derived & Field-rescaling invariant; only \(\Cobs^2\azero\) fixed by the spherical force \\
 \hline
 \(\Cobs=2/3\) from the trace ratio
   & Not derived & Projector absent from the action \\
+\hline
+\(L_{\mathrm{phys}}(t)=c/H(t)\) with fixed comoving moduli
+  & Incompatible & Needs evolving moduli or coasting FLRW \\
+\hline
+Cubic \(E_1\) with \(L=c/\Hzero\) vs.\ Planck topology
+  & Incompatible & \(L\gtrsim\mathcal{O}(6)\,c/\Hzero\) in the cited background/statistic \\
 \hline
 Simultaneous \(\azero=c\Hzero/2\pi\) and \(\Cobs=2/3\)
   & Rescaled & Conditional spherical normalization: \(a_{0,\mathrm{eff}}=(4/9)\azero\); no data fit \\
@@ -222,23 +255,33 @@ scoped arguments depends on that choice at the factor-of-two level.
 is not circulation quantization}
 \label{sec:a0}
 
+\paragraph{Requirements (M1)--(M4).}
+A circulation-based derivation must first specify a phase-bearing order
+parameter and mass parameter, obtain integer winding, fix the physical
+meaning of \(L\), and derive its map to \(\azero\).  The requirements in
+Sec.~\ref{sec:path} are the standard for the following test, rather than
+assumptions that the kinematic assignment already satisfies.
+
 \subsection{What quantization requires}
 
-In a superfluid with order parameter \(\Psi=\sqrt{n}\,e^{i\theta}\), the
-velocity follows from the phase gradient and
+For a neutral nonrelativistic superfluid with order parameter
+\(\Psi=\sqrt{n_s}\,e^{i\theta}\), the velocity is
+\(\mathbf v=(\hbar/m)\nabla\theta\), giving
 \begin{equation}
   \Gamma = \oint \mathbf{v}\cdot d\mathbf{l}
-  = n\,\frac{h}{m}\,,
-  \qquad n\in\mathbb{Z}\,,
+  = w\,\frac{h}{m}\,,
+  \qquad w\in\mathbb{Z}\,,
   \label{eq:true-quant}
 \end{equation}
 with single-valuedness of \(\Psi\) on closed cycles
 \cite{onsager,feynman,volovik}.  Equation~\eqref{eq:true-quant} quantizes
 \emph{phase winding}, not ``length times a speed limit.''
+Relativistic circulation concerns the appropriate canonical momentum; this
+nonrelativistic velocity formula cannot justify a massive flow at \(v=c\).
 
-\subsection{What the geometric proposals actually write}
+\subsection{The author-defined circulation hypothesis}
 
-Those proposals introduce
+The hypothesis introduces
 \begin{equation}
   \kappa_{\mathrm{cosmo}} \stackrel{?}{=} c\,L
   \label{eq:fake-kappa}
@@ -248,25 +291,26 @@ length \(L\), one has only \(\Gamma=vL\); setting \(v=c\) yields \(\Gamma=cL\).
 No integer winding, no order parameter, and no mass \(m\) enter.  That is a
 kinematic assignment, not quantization.
 
-If one \emph{did} set the \(n=1\) quantum equal to \(c^{2}/\Hzero\),
+If one formally equated the \(w=1\) nonrelativistic quantum to \(c^{2}/\Hzero\),
 \begin{equation}
   m = \frac{h\Hzero}{c^{2}}
   \sim 10^{-32}\,\mathrm{eV}/c^{2}\,,
   \label{eq:mass-pred}
 \end{equation}
-the microscopic mass reappears as a sharp prediction---the opposite of claiming
-that no microphysics is needed.
+one would impose a microscopic mass relation, not eliminate microphysics.
+This algebraic identification is not a relativistic flow solution or a
+derived particle-mass prediction.
 
 \subsection{Internal inconsistency of the \texorpdfstring{\((L,\Gamma,\omega)\)}{(L, Gamma, omega)} package}
 
-Suppose \(L=c/\Hzero\) is the physical circumference of a closed cycle, so
-\(R=L/(2\pi)\).  Then:
+Let \(s\) denote physical arclength on a closed cycle of length
+\(L=c/\Hzero\). Define a cycle clock by
+\(\varphi=2\pi s/L\), so \(\omega=\dot\varphi=2\pi v/L\) for uniform
+motion at the epoch in question. Then:
 \begin{itemize}
 \item \(\Gamma=cL\) implies \(v=c\);
-\item \(\omega=\Hzero\) with \(v=\omega R\) implies
-  \(v=\Hzero L/(2\pi)=c/(2\pi)\), contradicting \(v=c\);
-\item the centripetal acceleration \(c^{2}/R\) is \(2\pi c\Hzero\), not
-  \(c\Hzero/2\pi\).
+\item \(\omega=\Hzero\) implies
+  \(v=\Hzero L/(2\pi)=c/(2\pi)\), contradicting \(v=c\).
 \end{itemize}
 Thus one cannot simultaneously maintain
 \begin{equation}
@@ -277,7 +321,10 @@ Thus one cannot simultaneously maintain
   \omega=\Hzero
   \label{eq:inconsistent}
 \end{equation}
-under that geometric reading of \(L\).  ``Distributing \(c\Hzero\) across a
+under that cycle-clock definition. A closed geodesic of a flat torus has
+zero intrinsic covariant acceleration. Its periodic coordinate does not
+create an embedded circular orbit or a centripetal force \(v^2/[L/(2\pi)]\).
+No such force is used in this consistency test. ``Distributing \(c\Hzero\) across a
 \(2\pi\) angular topology'' is not coordinate-invariant: the range of an
 angular chart can be rescaled.  A physical \(2\pi\) arises only from a defined
 phase convention coupled to velocity.
@@ -296,79 +343,17 @@ order of magnitude \cite{mcgaugh_rar}.  Under the assumptions tested here,
 the microphysical requirements (M1)--(M4) are supplied.
 
 % =============================================================================
-\section{Cubic topology bounds and \texorpdfstring{\(L=c/\Hzero\)}{L = c/H0}}
-\label{sec:bounds}
-
-Planck topology analyses constrain cubic \(E_1\) three-tori tightly.  In terms
-of the radius \(R_i\) of the largest sphere inscribed in the fundamental
-domain, Planck reports \(R_i>0.97\,\chi_{\mathrm{rec}}\) for the cubic case at
-high confidence \cite{planck_topology}.  For a cube of side \(L\),
-\(R_i=L/2\), so
-\begin{equation}
-  L \gtrsim 1.94\,\chi_{\mathrm{rec}}\,.
-  \label{eq:L-chi}
-\end{equation}
-With \(\chi_{\mathrm{rec}}\simeq 3.15\,c/\Hzero\) in a Planck cosmology
-\cite{planck},
-\begin{equation}
-  L \gtrsim 6\,\frac{c}{\Hzero}
-  \label{eq:L-H}
-\end{equation}
-as an order-of-magnitude statement (exact numerical factors depend on the
-statistic and priors).  Recent topology surveys likewise place the shortest
-\(E_1\) side near the diameter scale of the last-scattering surface, not one
-Hubble radius \cite{compact_promise,planck_topology}.
-
-Write \(L=\alpha\,c/\Hzero\).  Empirical scale matching uses \(\alpha=1\);
-cubic bounds require \(\alpha\sim\mathcal{O}(6)\).  If the phenomenological
-formula is reinterpreted as \(\azero=c^{2}/(2\pi L)=c\Hzero/(2\pi\alpha)\),
-topology-safe \(\alpha\) yields
-\begin{equation}
-  \azero \lesssim \frac{1}{6}\times\frac{c\Hzero}{2\pi}
-  \sim 1.8\times 10^{-11}\,\mathrm{m\,s^{-2}}\,,
-  \label{eq:a0-suppressed}
-\end{equation}
-which no longer reproduces the intended MOND-scale match.  Therefore the
-cubic-\(E_1\), \(\alpha=1\) package is incompatible with simultaneously
-targeting \(\azero\sim 10^{-10}\) and CMB non-detection.
-
-Vague statements that a ``Hubble-scale domain is compatible with non-detection''
-are not supported for cubic \(E_1\) under these bounds.
-
-% =============================================================================
-\section{Present-epoch matching versus fixed-comoving FLRW}
-\label{sec:dynamic}
-
-For fixed comoving moduli \(L^{\mathrm{(com)}}\),
-\begin{equation}
-  L_{\mathrm{phys}}(t)=a(t)\,L^{\mathrm{(com)}}\,,
-  \qquad
-  \frac{\dot L_{\mathrm{phys}}}{L_{\mathrm{phys}}}=H\,.
-  \label{eq:fixed}
-\end{equation}
-Requiring instead \(L_{\mathrm{phys}}(t)=c/H(t)\) gives
-\begin{equation}
-  \frac{\dot L_{\mathrm{phys}}}{L_{\mathrm{phys}}}
-  = -\frac{\dot H}{H}\,,
-  \label{eq:dsm-rate}
-\end{equation}
-and equating the two yields \(\dot H=-H^{2}\), i.e.\ deceleration parameter
-\(q=0\) (coasting).  Exact tracking is therefore incompatible with ordinary
-matter-, radiation-, or \(\Lambda\)-dominated FLRW evolution under fixed
-comoving moduli.
-
-The remaining alternatives are: (i)~present-epoch numerical identification
-only; or (ii)~an independent modulus sector with its own kinetic term and
-stress-energy.  No such sector is constructed here.
-
-The Hubble sphere \(c/H\) is also not generally a particle or event horizon;
-calling it a ``global causal domain'' therefore requires an additional causal
-definition \cite{davis_lineweaver_horizon}.
-
-% =============================================================================
 \section{The projector ratio does not determine
 \texorpdfstring{\(\Cobs\)}{C\_obs}}
 \label{sec:proj}
+
+\paragraph{Requirements (E1) and (E3).}
+A geometric coefficient must be traced through an action and matter coupling
+to a physical force.  If the projector is essential, its role and dynamics
+must be specified before extracting \(\Cobs\), as required by (E1).
+Compact-source integrability and solved periodic fields remain the separate
+requirement (E3).  The trace identity and the static action below distinguish
+these tasks from a count of tensor components.
 
 \subsection{The identity}
 
@@ -442,6 +427,20 @@ Eq.~\eqref{eq:Cobs} is the positive square root of the corresponding basic
 ratio \(\Cm^3/\CIR\).  Setting \(\Cm=\CIR\) so that \(\Cobs=C\) is a
 normalization convention, not a calculation of \(C=2/3\).
 
+Field-rescaling invariance does not make \(\Cobs\) separately identifiable
+when the acceleration scale is also free. In the spherical force the
+dimensional combination is
+\begin{equation}
+ a_{0,\mathrm{eff}}=\frac{\Cm^3}{\CIR}\azero=\Cobs^2\azero.
+ \label{eq:identifiable-scale}
+\end{equation}
+Indeed, \(\azero\mapsto\lambda\azero\) and
+\(\CIR\mapsto\lambda\CIR\), with dimensionless \(\lambda>0\), leave
+Eq.~\eqref{eq:SWF} unchanged while
+\(\Cobs\mapsto\Cobs/\sqrt{\lambda}\). A separate numerical \(\Cobs\)
+therefore needs an independently fixed \(\azero\) and matching convention;
+the spherical response alone cannot measure both.
+
 \paragraph{Scope of the result.}
 Equation~\eqref{eq:trace} alone does not support a statement that
 \(\Cobs=2/3\) follows from \(\Tthree\) geometry or from ``matching.''  Such a
@@ -466,18 +465,114 @@ nonlinear gradient flux need not, so dropping \(\mathbf h_0\) needs an
 additional condition.  It is not a freely fitted uniform acceleration.
 A nonzero exchange source requires its own source contribution before the
 difference is divergence-free; a curved metric requires the corresponding
-metric-dependent Hodge decomposition.  Pointwise square-root formulae remain
-approximations for disks.  Neither this decomposition nor compact topology
+metric-dependent Hodge decomposition. A pointwise square-root formula is not
+a general identity for disks; its accuracy requires a solved field equation.
+Neither this decomposition nor compact topology
 derives \(\Cobs=2/3\).
+
+% =============================================================================
+\section{Present-epoch matching versus fixed-comoving FLRW}
+\label{sec:dynamic}
+
+\paragraph{Requirement (S1).}
+A viable scale construction must distinguish a present-epoch identification
+from a dynamical length history.  If the latter is intended, it must provide
+the corresponding modulus dynamics.  The following calculation tests exact
+Hubble tracking with fixed comoving moduli.
+
+For fixed comoving moduli \(L^{\mathrm{(com)}}\),
+\begin{equation}
+  L_{\mathrm{phys}}(t)=a(t)\,L^{\mathrm{(com)}}\,,
+  \qquad
+  \frac{\dot L_{\mathrm{phys}}}{L_{\mathrm{phys}}}=H\,.
+  \label{eq:fixed}
+\end{equation}
+Requiring instead \(L_{\mathrm{phys}}(t)=c/H(t)\) gives
+\begin{equation}
+  \frac{\dot L_{\mathrm{phys}}}{L_{\mathrm{phys}}}
+  = -\frac{\dot H}{H}\,,
+  \label{eq:dsm-rate}
+\end{equation}
+and equating the two yields \(\dot H=-H^{2}\), i.e.\ deceleration parameter
+\(q=0\) (coasting).  Exact tracking is therefore incompatible with ordinary
+matter-, radiation-, or \(\Lambda\)-dominated FLRW evolution under fixed
+comoving moduli.
+
+The remaining alternatives are: (i)~present-epoch numerical identification
+only; or (ii)~an independent modulus sector with its own kinetic term and
+stress-energy.  No such sector is constructed here.
+
+The Hubble sphere \(c/H\) is also not generally a particle or event horizon;
+calling it a ``global causal domain'' therefore requires an additional causal
+definition \cite{davis_lineweaver_horizon}.
+
+% =============================================================================
+\section{Cubic topology bounds and \texorpdfstring{\(L=c/\Hzero\)}{L = c/H0}}
+\label{sec:bounds}
+
+\paragraph{Requirement (S2).}
+The global length must also satisfy topology constraints evaluated for the
+same declared background and statistic.  This test is separate from the
+modulus-history requirement in Sec.~\ref{sec:dynamic}; the benchmark below
+does not turn a background-dependent bound into a universal exclusion.
+
+Planck topology analyses constrain cubic \(E_1\) three-tori within the
+background and signal models used in those analyses. In terms of the radius
+\(R_i\) of the largest sphere inscribed in the fundamental domain, the
+likelihood analysis reports \(R_i>0.97\,\chi_{\mathrm{rec}}\) at a
+log-likelihood-ratio threshold \(\Delta\ln\mathcal L>-5\) relative to the
+simply connected flat Planck best-fit model \cite{planck_topology}.
+The polarization matched-circles search gives the same numerical radius
+limit at 99\% confidence; these are distinct statistics, not interchangeable
+confidence statements. For a cube of side \(L\),
+\(R_i=L/2\), so
+\begin{equation}
+  L \gtrsim 1.94\,\chi_{\mathrm{rec}}\,.
+  \label{eq:L-chi}
+\end{equation}
+With \(\chi_{\mathrm{rec}}\simeq 3.15\,c/\Hzero\) in a Planck cosmology
+\cite{planck},
+\begin{equation}
+  L \gtrsim 6\,\frac{c}{\Hzero}
+  \label{eq:L-H}
+\end{equation}
+as an approximate conversion in that background, not a topology-only
+inequality in Hubble units. Recent topology surveys likewise place the shortest
+\(E_1\) side near the diameter scale of the last-scattering surface, not one
+Hubble radius \cite{compact_promise,planck_topology}.
+
+Write \(L=\alpha\,c/\Hzero\).  Empirical scale matching uses \(\alpha=1\);
+cubic bounds in the stated benchmark require \(\alpha\gtrsim\mathcal{O}(6)\). If the phenomenological
+formula is reinterpreted as \(\azero=c^{2}/(2\pi L)=c\Hzero/(2\pi\alpha)\),
+an \(\alpha\) satisfying that benchmark bound yields
+\begin{equation}
+  \azero \lesssim \frac{1}{6}\times\frac{c\Hzero}{2\pi}
+  \sim 1.8\times 10^{-11}\,\mathrm{m\,s^{-2}}\,,
+  \label{eq:a0-suppressed}
+\end{equation}
+which no longer reproduces the intended MOND-scale match.  Therefore the
+cubic-\(E_1\), \(\alpha=1\) package fails that simultaneous scale-matching
+and topology benchmark.
+
+Vague statements that a ``Hubble-scale domain is compatible with non-detection''
+are not supported for cubic \(E_1\) under these bounds.
+An altered expansion history, recombination distance, or CMB transfer model
+requires recomputing the distance conversion and applicable likelihood;
+the factor of approximately six is not an all-cosmology exclusion of \(T^3\).
 
 % =============================================================================
 \section{Conditional RAR normalization check in the spherical baseline}
 \label{sec:rar}
 
+\paragraph{Requirement (E2).}
+The matched response must retain the intended RAR/BTFR normalization.
+This final check connects the proposed geometric inputs to their consequence
+for the analytic force and velocity normalization.
+
 This section is deliberately conditional.  It uses the static AQUAL-type
 action of Eq.~\eqref{eq:SWF}, the positive-mass spherical branch, regular-origin
 flux, and no added homogeneous flux.  It then imposes \(\Cobs=2/3\) as a
-comparator; the preceding section does not derive that value.  The result is
+comparator; Sec.~\ref{sec:proj} does not derive that value.  The result is
 therefore neither a global periodic-\(\Tthree\) solution nor a disk-galaxy fit.
 
 In the deep-MOND regime, \(g_{P}=\Cobs\sqrt{\azero g_{N}}\) is equivalent to
@@ -491,18 +586,28 @@ Imposing both \(\azero=c\Hzero/2\pi\approx 1.1\times 10^{-10}\,\mathrm{m\,s^{-2}
 and \(\Cobs=2/3\) yields
 \begin{equation}
   a_{0,\mathrm{eff}} = \frac{4}{9}\azero
-  \approx 4.9\times 10^{-11}\,\mathrm{m\,s^{-2}}\,,
+  \approx 4.8\times 10^{-11}\,\mathrm{m\,s^{-2}}\,,
   \label{eq:a0eff-num}
 \end{equation}
 whereas modern RAR determinations find
 \(a_0\simeq 1.2\times 10^{-10}\,\mathrm{m\,s^{-2}}\)
-\cite{mcgaugh_rar,lelli_rar}, a factor \(\sim 2.4\) normalization difference
+\cite{mcgaugh_rar,lelli_rar}, a factor \(\sim 2.5\) normalization difference
 under these assumptions.
-Equivalently, asymptotic baryonic Tully--Fisher velocities scale as
-\(v^{4}\propto \Cobs^{2}\azero GM_{b}\); \(\Cobs=2/3\) lowers \(v\) by
-\(\sim 18\%\) at fixed baryonic mass.  That analytic shift is large enough to
-require an explicit likelihood test, but it is not by itself a completed
-empirical rejection.
+In the asymptotic deep-MOND spherical baseline,
+\(v^{4}\propto \Cobs^{2}\azero GM_{b}\). At fixed input \(\azero\) and
+baryonic mass, the unit-response comparator gives
+\begin{equation}
+ \frac{v(\Cobs=2/3)}{v(\Cobs=1)}
+ =\sqrt{\frac{2}{3}}\simeq0.8165.
+ \label{eq:velocity-comparator}
+\end{equation}
+The approximately 18\% reduction is specifically this same-scale comparator;
+it does not use the empirical reference
+\(a_{\rm emp}=1.2\times10^{-10}\,\mathrm{m\,s^{-2}}\). For that distinct
+reference and the illustrative \(\Hzero=70\) input, the velocity ratio is
+\(\bigl[a_{0,\mathrm{eff}}/a_{\rm emp}\bigr]^{1/4}\simeq0.7957\), or a
+reduction of about 20.4\%. These are analytic comparators, not observed
+discrepancies or completed empirical rejections.
 
 Within this branch, one cannot simultaneously identify
 \(\azero=c\Hzero/2\pi\) with the empirical MOND scale and impose a universal
@@ -514,6 +619,11 @@ options for a future fit are:
 \item drop universality and derive a morphology-dependent response from a
   solved disk PDE before fitting.
 \end{enumerate}
+
+This note stops at analytic normalization. It contains no data likelihood,
+nuisance marginalization, intrinsic-scatter test, or model evidence. Such
+inferences require a follow-up with a specified geometry-dependent response,
+matching inputs, data selection, and nuisance model.
 
 % =============================================================================
 \section{Evaluation criteria, retained results, and a reconstruction path}
@@ -527,7 +637,8 @@ options for a future fit are:
   \emph{present-epoch phenomenological postulate}.
 \item The weak-field combination
   \(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\) is a derived, normalization-invariant
-  observable coefficient [Eq.~\eqref{eq:Cobs}].
+  response coefficient at fixed \(\azero\) [Eq.~\eqref{eq:Cobs}]; without that
+  choice the spherical force identifies only \(\Cobs^2\azero\).
 \item On compact \(\Tthree\), sources must be compensated and disk solutions
   generally admit a curl term [Eq.~\eqref{eq:curl}].
 \item The scoped incompatibilities in Secs.~\ref{sec:a0}--\ref{sec:rar}
@@ -548,12 +659,12 @@ by sector, and each is a separately testable technical requirement.
   (or a relativistic analogue) with a definite mass parameter \(m\).
 \item[(M2)] Obtain the circulation from \(\nabla\theta\) and impose integer
   winding on non-contractible cycles of \(\Tthree\), yielding
-  \(\Gamma=n\,h/m\) rather than \(\Gamma=cL\).
+  \(\Gamma=w\,h/m\) in the nonrelativistic limit rather than \(\Gamma=cL\).
 \item[(M3)] Fix a single geometric meaning of \(L\)
   (cube edge, closed geodesic length, or circumference) and use it
   consistently in every formula.
 \item[(M4)] Derive a map
-  \((\Gamma,m,n,L)\mapsto\azero\)
+  \((\Gamma,m,w,L)\mapsto\azero\)
   that does not rely on a chart-dependent ``distribution'' of \(c\Hzero\) over
   an angular range of \(2\pi\).
 \end{enumerate}
@@ -574,9 +685,11 @@ by sector, and each is a separately testable technical requirement.
   \(\Cobs=\Cm^{3/2}/\sqrt{\CIR}\)
   as a definite number independent of field normalization.
 \item[(E2)] Reconcile \(\Cobs^{2}\azero\) with the empirical RAR/BTFR
-  normalization (avoid the factor-\(4/9\) conflict of Sec.~\ref{sec:rar}).
+  normalization, accounting for the conditional factor \(4/9\) in
+  Sec.~\ref{sec:rar} rather than treating it as an independent data rejection.
 \item[(E3)] Solve the compensated periodic nonlinear equation for at least one
-  spherical and one disk baryonic source, including any curl contribution.
+  locally spherical and one disk baryonic source, including curl and harmonic
+  contributions; periodicity does not supply global spherical symmetry.
 \end{enumerate}
 
 \paragraph{Representation (already satisfied here).}
@@ -611,13 +724,10 @@ analysed.
 
 Artificial-intelligence-assisted tools were used for editorial drafting,
 source-code assistance, and checks of symbolic and numerical consistency.
-The author independently reviewed the manuscript, equations, cited sources,
-and generated artifacts and accepts full responsibility for the content.
-
-\begin{acknowledgments}
-The author thanks colleagues who pressed for explicit claim status and for
-separation of postulates from derivations.  Remaining errors are the author's.
-\end{acknowledgments}
+This local review draft still requires the author's final verification of
+the manuscript, equations, cited sources, and generated artifacts. Submission
+requires the author's confirmation of that review and acceptance of full
+responsibility; neither is certified by these automated checks.
 
 \bibliography{references}
 

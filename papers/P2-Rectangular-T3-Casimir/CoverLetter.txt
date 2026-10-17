@@ -3,7 +3,7 @@ Cover letter / arXiv comment for Paper 2
 
 Submission status: LOCAL RELEASE CANDIDATE / PUBLICATION HOLD. Do not submit
 without operator approval and deferred external review.
-Version: 0.2.0-rc3, local release-preparation candidate. The 18/19 sensitivity
+Version: 0.2.0-rc4, local review candidate. The 18/19 sensitivity
 result and its single registered failure are retained exactly.
 
 Suggested primary target: arXiv (gr-qc, cross-list hep-th, astro-ph.CO)
@@ -29,15 +29,19 @@ The manuscript has a deliberately limited claim set:
       10^-8 bound (18/19 checks overall).
 
   (2) Transporting that static stress through a declared instantaneous a^-4
-      closure on a positive de Sitter biaxial Bianchi-I background, we search
+      closure, first perturbatively on de Sitter (Stage 3A), then at finite
+      amplitude with constraint-reconstructed biaxial expansion (Stage 3B), we search
       for the historically proposed ratio Ht/Hp = 13/12. In the bounded scan
       the ratio appears at most as a brief transient; we find no quasi-plateau
-      and no attractor. Every valid candidate returns to isotropy by late
-      expansion within this closure.
+      and no attractor. Every valid threshold candidate approaches isotropy
+      through N = 20. Four threshold cases are nonperturbative and one marginal;
+      they are not controlled quantum-backreaction predictions.
 
 Before the finite-domain scan, the manuscript derives the anisotropic stress
-required by a persistent ratio. The a^-4 free-field source cannot maintain
-that nonzero stress on the stated positive-H, bounded-shape closure. The
+required by a persistent ratio. Kinematically, a constant nonunit ratio cannot
+remain in a compact shape interval over unbounded expansion. The additional
+a^-4 stress-decay argument assumes H tends to a nonzero constant with the
+regular asymptotics stated in the paper; positive H alone is insufficient. The
 numerical scan then quantifies the resulting transient crossings and late-time
 return toward isotropy.
 
@@ -45,15 +49,20 @@ The conclusion is restricted to that closure. Galactic-scale matching, Hubble
 inference, Planck topology compatibility, and a quantum stress tensor evolved
 and renormalized on dynamical compact Bianchi-I spacetime are separate
 calculations. A persistent state in a fuller theory would require an
-independently derived driven, memory-bearing, interacting, or multi-field
-stress (open programme CBR-002).
+independently derived constitutive physics outside the tested assumptions;
+driven or memory-bearing stress is one open route (CBR-002), not the only
+possible class of extensions. The paper positions this target-persistence
+audit against established static results and Negro et al.'s state-based work.
 
 AI-assisted tools were used for editorial drafting, source-code assistance,
-and symbolic/numerical consistency checks. The author independently reviewed
-all content and accepts full responsibility.
+and symbolic/numerical consistency checks. Final author verification of the
+content, sources, and artifacts and confirmation of responsibility remain
+pending. This letter must not be sent before those steps, applicable review,
+and explicit author submission approval.
 
-Public code and stage summaries are in the companion repository under
-Analysis/Casimir/CBR-001/.
+The companion codebase uses Analysis/Casimir/CBR-001/. An immutable public
+snapshot of this exact revised review package must be identified before
+publication; no new package has been published by this local revision.
 
 Thank you for your consideration.
 

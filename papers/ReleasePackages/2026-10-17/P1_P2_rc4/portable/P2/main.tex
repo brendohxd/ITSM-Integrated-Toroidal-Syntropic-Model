@@ -1,0 +1,592 @@
+% =============================================================================
+% Paper 2 — Rectangular T^3 Casimir stress and an instantaneous-closure control
+% Genre: technical paper (static stress + bounded negative closure result)
+% Class: Physical Review D (revtex4-2)
+% Claim firewall: papers/Selective-Publishing-Plan (B1–B16 packaging bans)
+% =============================================================================
+\documentclass[aps,prd,reprint,superscriptaddress,nofootinbib,floatfix,showkeys]{revtex4-2}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+\graphicspath{{figures/}}
+
+\newcommand{\Tthree}{T^{3}}
+\newcommand{\Ht}{H_{t}}
+\newcommand{\Hp}{H_{p}}
+
+\hypersetup{
+  pdftitle={Anisotropic Casimir stress on rectangular flat T3 and a no-attractor result for an instantaneous Bianchi-I closure},
+  pdfauthor={Brendon Boyd},
+  pdfsubject={Rectangular three-torus Casimir stress and a bounded instantaneous-closure test},
+  pdfkeywords={Casimir effect, cosmic topology, Bianchi cosmology, anisotropic expansion, compact manifolds}
+}
+
+\begin{document}
+
+\title{Anisotropic Casimir stress on rectangular flat
+\texorpdfstring{\(\Tthree\)}{T3} and a no-attractor result for an
+instantaneous Bianchi-I closure}
+
+\author{Brendon Boyd}
+\email{brendon.boyd@itsm-cosmology.org}
+\affiliation{Independent Researcher, Burswood, Western Australia, Australia}
+\thanks{%
+\begin{tabular}{@{}l@{\ }l@{}}
+ORCID: & \href{https://orcid.org/0009-0007-4177-2612}{0009-0007-4177-2612} \\
+GitHub: & \href{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}{\texttt{github.com/brendohxd/ITSM-...}} \\
+Zenodo: & \href{https://doi.org/10.5281/zenodo.18808348}{doi:10.5281/zenodo.18808348} \\
+Gate: & \texttt{Analysis/Casimir/CBR-001/} \\
+\end{tabular}%
+}
+
+\date{Version 0.2.0-rc4 --- October 17, 2026}
+
+\begin{abstract}
+Compact spatial topology can source anisotropic vacuum stress.
+For a free massless scalar on a rectangular flat three-torus we test an
+already-renormalized periodic lattice formula for Casimir energy density and
+directional pressures against cutoff convergence, cubic isotropy,
+thermodynamic pressure derivatives, conformal trace, dimensional scaling, and
+an independent heat-kernel/Mellin evaluator at four cubic and noncubic points.
+We then transport the static shape-dependent stress through a declared
+instantaneous constitutive closure with \(a^{-4}\) dilution, first as a
+perturbation of de~Sitter expansion and then at finite amplitude on a biaxial
+Bianchi-I expanding branch with positive cosmological-background density.
+The latter reconstructs the mean expansion from the Hamiltonian constraint;
+it is not a fixed-de~Sitter or uniformly perturbative calculation.
+In the bounded scan reported here,
+this closure produces only \emph{transient} passages near the historically
+proposed ratio \(\Ht/\Hp=13/12\), with no quasi-plateau or late-time
+attractor.  Within the registered domain, this excludes a maintained ratio
+for the tested closure and makes the target a discriminator between
+instantaneous free-field stress and any future driven or memory-bearing
+constitutive law.  It is not a general no-go theorem for a quantum field
+evolved and renormalized on a dynamical compact spacetime; galactic-scale
+matching, Hubble inference, and a complete compact cosmology are separate
+calculations. The registered sensitivity suite remains \texttt{FAIL}
+(18/19); qualitative classifications persist in the re-tested cases, but
+threshold amplitudes are not certified precision predictions.
+\end{abstract}
+
+\keywords{Casimir effect;
+cosmic topology;
+Bianchi cosmology;
+anisotropic expansion;
+compact manifolds}
+
+\maketitle
+
+% =============================================================================
+\section{Introduction}
+\label{sec:intro}
+
+Compact flat three-manifolds admit mode spectra that generically produce
+direction-dependent vacuum expectation values of the stress tensor
+\cite{birrell_davies_1982,lachieze_luminet_1995,edery2006}.
+That fact is distinct from any claim that a fixed numerical ratio of
+directional Hubble rates is a free parameter-free prediction of topology.
+
+For definiteness, we use \(\Ht/\Hp=13/12\) solely as a historical null target
+for the closure test.  Neither a cycle-counting premise nor an observational
+Hubble value is inserted into the equations.  We isolate two controlled
+questions that can be addressed with the declared lattice formula and
+biaxial closure integrator (gate package CBR-001):
+
+\begin{enumerate}
+\item Does the implemented periodic-scalar stress pass its internal numerical
+and thermodynamic controls and depend on the shape moduli?
+\item When that static stress is transported by the declared instantaneous
+closure on biaxial expansion, does
+\(\Ht/\Hp=13/12\) appear as a free-field attractor, a quasi-plateau, or only
+as a transient crossing (if at all)?
+\end{enumerate}
+
+The answers are: the implemented nonzero-mode static stress passes the internal
+identity checks, agrees with an independent evaluator at relative order
+\(10^{-6}\), and is shape dependent; and the bounded closure calculation yields only transient
+crossings of \(13/12\), with every valid threshold candidate approaching
+isotropy through the final integration time \(N=20\).
+
+Shape-dependent Casimir stress itself is not new: rectangular-cavity and
+periodic mode sums are established \cite{edery2006}. Negro et al.
+\cite{negro2026} derive topology-dependent scalar stress on de~Sitter,
+discuss the state-dependent isotropic zero mode, and calculate
+Casimir-sourced anisotropic backreaction. The present contribution is narrower:
+a reproducible static implementation with local cross-method controls and a
+finite-domain target-persistence audit of an explicitly declared
+instantaneous closure. It is neither an independent discovery of anisotropic
+Casimir stress nor a replacement for their curved-spacetime state calculation.
+
+Companion work on present-epoch scale matching and weak-field matching
+invariants \cite{boyd_p1} records independent no-go results for a different
+geometric construction.  The Casimir calculation below is logically
+independent of that construction.
+
+% =============================================================================
+\section{Rectangular lattice Casimir stress}
+\label{sec:lattice}
+
+\subsection{Mode sum and pressures}
+
+For a massless scalar with periodic lengths \((L_1,L_2,L_3)\), CBR-001 takes
+as input the already-renormalized rectangular-periodic Epstein-lattice
+expression developed in Ref.~\cite{edery2006}:
+\begin{equation}
+ \rho_{\mathrm{Cas}}=-\frac{\hbar c}{2\pi^2}
+ \sum_{\mathbf n\in\mathbb Z^3\setminus\{0\}}
+ \frac{1}{\bigl[(n_1L_1)^2+(n_2L_2)^2+(n_3L_3)^2\bigr]^2}.
+ \label{eq:casimir-lattice}
+\end{equation}
+Directional pressures follow thermodynamically,
+\begin{equation}
+ p_i=-\frac{1}{L_jL_k}\frac{\partial E_{\mathrm{Cas}}}{\partial L_i},
+ \qquad E_{\mathrm{Cas}}=L_1L_2L_3\rho_{\mathrm{Cas}}.
+ \label{eq:casimir-pressure}
+\end{equation}
+In code and tables we report dimensionless lattice units with the overall
+\(\hbar c\) factor restored only when matching cosmological amplitudes.
+Figure~\ref{fig:rect} recalls the rectangular fundamental domain (not an
+embedded doughnut \(\mathrm{T}^2\)).
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.72\columnwidth]{itsm_t3_rectangular_domain.pdf}
+\caption{Rectangular flat \(\Tthree\) fundamental domain with independent edge
+lengths \(L_p\) and \(L_t\) (biaxial case \(L_2=L_3=L_t\)).
+This is the geometry of the lattice sum, not a Planck-safe cubic cosmology
+and not an embedded solid torus.}
+\label{fig:rect}
+\end{figure}
+
+\subsection{Stage-1 validation (cubic point)}
+
+At the cube \(L_1=L_2=L_3=1\), the direct cutoff sequence at quadratic
+extrapolation order gives \(\rho=-0.837535893\), while an independent
+heat-kernel/Mellin evaluation gives \(\rho=-0.837536911\).  Their relative
+discrepancy is \(1.22\times10^{-6}\).  We therefore quote
+\begin{equation}
+ \rho=-0.837537,\qquad
+ p_i=\rho/3=-0.279179
+\end{equation}
+in lattice units rather than retaining unsupported extra digits.  The direct
+run has conformal-trace residual
+\(\lvert\rho-\sum_ip_i\rvert\sim 10^{-15}\) at \(N=120\) modes per edge,
+finite-difference pressure errors \(\sim 5\times 10^{-10}\), and cubic
+isotropy at machine precision (Table~\ref{tab:stage1}).
+The Stage-1 package reports \texttt{STATUS: PASS}.
+
+\begin{table}[tbp]
+\caption{Cubic Stage-1 diagnostics (lattice units, \(L_i=1\)).
+Extrapolated \(\rho\) uses a polynomial retained through \(1/N^2\), including
+a fitted \(1/N\) term; validation residuals are at mode cutoff \(N=120\).}
+\label{tab:stage1}
+\begin{ruledtabular}
+\begin{tabular}{lc}
+Quantity & Value \\
+\hline
+\(\rho\) (direct, order 2) & \(-0.837535893\) \\
+\(\rho\) (heat kernel/Mellin) & \(-0.837536911\) \\
+\(p_i\) (quoted cube value) & \(-0.279179\) \\
+max FD pressure rel.\ error & \(4.8\times 10^{-10}\) \\
+conformal-trace residual & \(\sim 10^{-15}\) \\
+cube isotropy error & \(\sim 10^{-16}\) \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\subsection{Independent noncubic benchmark and sensitivity}
+
+The heat-kernel/Mellin implementation does not call the direct lattice-sum
+routine.  It evaluates the Epstein sum through a Jacobi-theta product and
+obtains pressures by differentiating the total energy.  Table~\ref{tab:hk}
+compares it with the registered direct extrapolation.  The maximum normalized
+pressure discrepancy over these points is \(7.42\times10^{-7}\), while relative
+trace residuals are below \(5.7\times10^{-12}\).  This verifies the nonzero-mode
+topological stress, not the state-dependent isotropic zero mode retained in a
+full compact-space treatment \cite{negro2026}.
+
+\begin{table}[tbp]
+\caption{Independent heat-kernel/Mellin benchmark.  The final column is the
+relative energy-density discrepancy.}
+\label{tab:hk}
+\scriptsize
+\begin{ruledtabular}
+\begin{tabular}{lrrr}
+\((L_1,L_2,L_3)\) & \(\rho_{\rm HK}\) & \(\rho_{\rm dir}\) & rel. \\
+\hline
+\((1,1,1)\) & \(-0.8375369\) & \(-0.8375359\) & \(1.22\!\times\!10^{-6}\) \\
+\((1,1.25,1.25)\) & \(-0.4788673\) & \(-0.4788668\) & \(1.20\!\times\!10^{-6}\) \\
+\((1,1,2)\) & \(-0.4362267\) & \(-0.4362262\) & \(1.08\!\times\!10^{-6}\) \\
+\((0.8,1.1,1.4)\) & \(-0.7519731\) & \(-0.7519723\) & \(1.13\!\times\!10^{-6}\) \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+A preregistered release-sensitivity suite varied the cube extrapolation order
+and fitting window and re-ran Stage~3B at twice the temporal sampling with
+\(\mathrm{rtol}=10^{-12}\) and \(\mathrm{atol}=10^{-16}\).  All four static
+precision checks passed.  All three registered dynamic shapes retained the
+\texttt{TRANSIENT\_CROSSING} classification and no attractor appeared.  One
+threshold amplitude shifted by \(8.74\times10^{-5}\) relative to its baseline, however,
+exceeding the deliberately stringent preregistered \(10^{-8}\) bound; the
+suite therefore records \texttt{FAIL} (18/19), not a rewritten pass.  The
+qualitative classification is stable in the three re-tested shapes, but
+threshold amplitudes are not quoted as precision predictions. The discrepant
+pair at \(r_0=1.5\) is \(0.6757299265902508\) and
+\(0.6756708783193345\). Their difference is not a rigorous uncertainty bound.
+The threshold objective takes a maximum on sampled times; a certified
+precision result would additionally require peak-time and sampling
+refinement, not just a smaller ODE tolerance.
+
+\subsection{Stage-2 biaxial shape scan}
+
+Let \(r=L_t/L_p\).  CBR-001 Stage~2 holds \(L_p=1\) while varying
+\(L_t=rL_p\); it does not hold the mean scale fixed.  Stage~3 converts this
+raw table to fixed mean scale using the homogeneous \(r^{8/3}\) stress
+rescaling before constructing its source.
+The stress \(\rho(r)\), \(p_p(r)\), \(p_t(r)\) and the anisotropy
+\(\Delta p\equiv p_t-p_p\) are smooth functions of shape; \(\Delta p\)
+changes sign across the cube \(r=1\) (Fig.~\ref{fig:stage2}).
+Representative points (lattice units) include
+\begin{align}
+ r&=1: & \rho&=-0.8375,& \Delta p&\simeq 0,\\
+ r&\simeq 1.26: & \rho&=-0.4702,& \Delta p&\simeq +0.247,
+\end{align}
+where the second line is in the raw fixed-\(L_p\) Stage-2 convention.  Compact
+\emph{shape-dependent} anisotropic stress is therefore a concrete control of
+the implemented static formula.
+It is \emph{not} a universal cycle-counting coefficient independent of the
+mode sum.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=\columnwidth]{cbr001_stage2_anisotropy.png}
+\caption{Stage-2 biaxial anisotropy \(\Delta p=p_t-p_p\) versus shape ratio
+\(r=L_t/L_p\).  The cubic point \(r=1\) is isotropic; anisotropy is shape
+moduli dependent.}
+\label{fig:stage2}
+\end{figure}
+
+% =============================================================================
+\section{Biaxial instantaneous-stress closure}
+\label{sec:backreaction}
+
+\subsection{Geometry and equations}
+
+For the biaxial Bianchi-I line element
+\begin{equation}
+ \mathrm{d}s^2=-\mathrm{d}t^2+a_p^2\,\mathrm{d}x^2+a_t^2(\mathrm{d}y^2+\mathrm{d}z^2),
+\end{equation}
+define
+\begin{equation}
+ H=\frac{\Hp+2\Ht}{3},\qquad
+ \delta=\Ht-\Hp,\qquad
+ r=\frac{a_t}{a_p}.
+\end{equation}
+The shear system is the biaxial specialization of Bianchi-I
+\cite{ellismaccallum1969}, with \(\kappa=8\pi G\),
+\begin{equation}
+ \dot\delta+3H\delta=\kappa(p_t-p_p),\qquad
+ \dot r=r\delta,
+ \label{eq:shear-system}
+\end{equation}
+and Hamiltonian constraint
+\begin{equation}
+ 3H^2-\frac{\delta^2}{3}=\kappa\rho_{\mathrm{total}}.
+ \label{eq:hamiltonian-biaxial}
+\end{equation}
+Stage~3A treats the verified Casimir tensor as a small radiation-like
+perturbation (\(\propto a^{-4}\)) on a positive de~Sitter background and
+integrates in \(N=\ln a\).
+It does not evolve quantum-field mode functions on the time-dependent
+Bianchi-I geometry or renormalize \(\langle T_{\mu\nu}\rangle\) there.
+The dimensionless source-scale ratio \(\epsilon\) absorbs
+\(\hbar c/L_\star^4\) relative to the de~Sitter density scale (CBR-001
+Stage~3A convention).  No present ITSM derivation fixes this ratio.
+It checks the perturbative limit and recorded constraint/continuity residuals
+but does \emph{not} by itself establish any preferred Hubble ratio.
+
+Stage~3B instead retains finite source amplitude and evolving shape. It
+integrates \((\ln r,\delta)\), using the positive branch
+\begin{equation}
+ H=\sqrt{\frac{\kappa\rho_{\mathrm{total}}+\delta^2/3}{3}},\qquad
+ \rho_{\mathrm{total}}=\rho_{\mathrm{BG}}+\epsilon\rho_{\mathrm{Cas}},
+ \label{eq:stage3b-H}
+\end{equation}
+with constant \(\rho_{\mathrm{BG}}>0\). Thus the mean \(H\) responds to
+the source and shear, rather than being fixed at its de~Sitter value. Runs
+terminate on loss of the supported shape interval, positive total density,
+real expanding branch, or positive directional expansion. A small residual
+of Eq.~\eqref{eq:hamiltonian-biaxial}, when \(H\) is reconstructed from that
+same equation, checks algebraic consistency, not an independent mean Einstein
+equation. A separately evolved Raychaudhuri check has not been demonstrated
+by the recorded controls. This is a constitutive-closure test, not full
+semiclassical Einstein evolution.
+
+\subsection{Analytic persistence condition}
+
+Let
+\begin{equation}
+ x=\frac{\delta}{H},\qquad
+ q=\frac{\Ht}{\Hp}=\frac{1+x/3}{1-2x/3}.
+ \label{eq:q-x}
+\end{equation}
+The historical target \(q=13/12\) corresponds to \(x_\star=3/38\).
+Because \(\mathrm{d}\ln r/\mathrm{d}N=x\), a constant \(q\neq 1\) entails
+\(r(N)=r(N_0)\exp[x(N-N_0)]\). It cannot remain in a compact shape interval
+\(0<r_{\min}\le r\le r_{\max}<\infty\) for arbitrarily large \(N\).
+This is a kinematic obstruction to a persistent nonunit ratio with bounded
+shape, independent of a stress prescription; it is not a fixed-torus property.
+For a prescribed \(x(N)\), Eq.~\eqref{eq:shear-system} requires the
+anisotropic pressure
+\begin{equation}
+ \Pi_{\mathrm{req}}=\frac{H^2}{\kappa}
+ \Bigl[\frac{\mathrm{d}x}{\mathrm{d}N}
+ +x\bigl(3+\tfrac{\mathrm{d}\ln H}{\mathrm{d}N}\bigr)\Bigr].
+ \label{eq:required-stress}
+\end{equation}
+In de~Sitter at fixed \(x=3/38\), this becomes
+\(\Pi_{\mathrm{req}}=9H^2/(38\kappa)\).  By contrast, the free Casimir
+anisotropy in the declared closure scales as
+\begin{equation}
+ \Pi_{\mathrm{Cas}}\propto a^{-4}\,r^{8/3}
+ \bigl[\widehat p_t(r)-\widehat p_p(r)\bigr].
+ \label{eq:casimir-stress-scaling}
+\end{equation}
+For unbounded expansion \(a\to\infty\) and shape in the compact interval
+above, the bounded shape factor makes \(\Pi_{\mathrm{Cas}}\to0\).
+If also \(H\to H_\infty>0\),
+\(\mathrm{d}\ln H/\mathrm{d}N\to0\), \(x\to x_\star\), and
+\(\mathrm{d}x/\mathrm{d}N\to0\), the required stress tends to
+\(9H_\infty^2/(38\kappa)\ne0\). These stated asymptotics give a second,
+stress-scaling inconsistency; positive \(H\) alone is insufficient.
+Neither argument covers unbounded shape, a finite total expansion, or an
+\(H\to0\) branch. Nor do they replace dynamical quantum-state evolution or
+renormalization. The finite-domain scan below measures transient crossings
+and quasi-plateaus through \(N=20\); it is not a numerical proof of an
+infinite-time limit or an all-action no-go theorem.
+
+\subsection{The finite-domain Stage-3B ratio test}
+
+The small-source fixed-background profile
+\(x(N)=S(e^{-3N}-e^{-4N})\) peaks at \(N=\ln(4/3)\) with maximum
+\((27/256)S\); merely reaching \(x_\star\) already requires
+\(S\ge 128/171\simeq 0.7485\), outside the strict small-perturbation regime.
+
+A nonlinear root search over initial shapes
+\(r_0\in\{1.01,1.05,1.1,1.25,1.5,2,3,4\}\) and source-scale ratios spanning seven decades
+finds target-reaching thresholds for five of eight shapes.
+Classification vocabulary:
+\begin{itemize}
+\item \texttt{NO\_CROSSING}: peak \(q\) stays below \(13/12\);
+\item \texttt{TRANSIENT\_CROSSING}: touch or brief crossing;
+\item \texttt{QUASI\_PLATEAU}: dwell \(\ge 1\) e-fold within \(1\%\) without
+attractor criteria;
+\item \texttt{ATTRACTOR}: dwell \(\ge 5\) e-folds within \(1\%\), nearby
+trajectories converge, and no subsequent decay toward \(q=1\).
+\end{itemize}
+Results: zero attractors, zero quasi-plateaus, five transient crossings,
+two no-crossings, and one trajectory initialized at the upper interpolation
+boundary whose outward drive leaves the supported domain
+(Table~\ref{tab:stage3b}; Fig.~\ref{fig:ratio}).
+Dwell times within \(1\%\) of the target are only
+\(\sim 0.27\)--\(0.30\) e-folds.
+Every valid threshold candidate approaches \(q=1\) through \(N=20\), consistent with the
+declared \(a^{-4}\) source becoming negligible.  The tested nearby
+trajectories also decay toward isotropy; none satisfy the registered attractor
+criteria.
+
+The source fraction
+\(F_{\mathrm{Cas}}=\max_N|\epsilon\rho_{\mathrm{Cas}}/
+\rho_{\mathrm{total}}|\) is respectively
+\(2.536,\ 0.632,\ 0.273,\ 0.133,\ 0.082\) for
+\(r_0=1.1,1.25,1.5,2,3\) at the recorded thresholds. The denominator
+includes the negative Casimir density, so the fraction can exceed unity.
+Four cases exceed the registered nonperturbative threshold \(F_{\mathrm{Cas}}
+\ge0.1\); the last is marginal (\(0.01\le F_{\mathrm{Cas}}<0.1\)).
+These are finite-amplitude diagnostics of the declared closure, not
+controlled small-source or renormalized quantum-backreaction predictions.
+
+\begin{table}[tbp]
+\caption{Stage-3B classification at threshold amplitudes for the \(13/12\)
+search.  ``Regime'' labels the peak Casimir energy fraction
+(perturbative / marginal / nonperturbative). Rounded thresholds are
+diagnostic locations, not precision predictions or certified error bars.}
+\label{tab:stage3b}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+\(r_0\) & class & \(\epsilon_\star\) & regime \\
+\hline
+1.01 & no crossing & --- & --- \\
+1.05 & no crossing & --- & --- \\
+1.10 & transient & \(2.55\) & nonpert. \\
+1.25 & transient & \(1.34\) & nonpert. \\
+1.50 & transient & \(0.676\) & nonpert. \\
+2.00 & transient & \(0.278\) & nonpert. \\
+3.00 & transient & \(0.089\) & marginal \\
+4.00 & invalid & --- & --- \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\begin{figure*}[tbp]
+\centering
+\includegraphics[width=\textwidth]{cbr001_stage3b_ratio.png}
+\caption{Representative Stage-3B trajectories of \(q=\Ht/\Hp\) versus \(N\).
+The horizontal line marks \(13/12\).  Passages, when present, are brief;
+late evolution approaches isotropy over the displayed finite interval.
+The plotted data and their original hashes are unchanged.}
+\label{fig:ratio}
+\end{figure*}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=\columnwidth]{cbr001_stage3b_threshold_epsilon.png}
+\caption{Stage-3B threshold amplitudes \(\epsilon_\star(r_0)\) for first
+touch of \(q=13/12\).  Near-cubic shapes require large source-scale ratios;
+no threshold defines an attractor.}
+\label{fig:threshold}
+\end{figure}
+
+% =============================================================================
+\section{Scope and open routes}
+\label{sec:limits}
+
+\begin{itemize}
+\item Free massless scalar only; interacting or multi-field sectors untested.
+\item The renormalized static lattice expression is supplied as input.  A local
+independent heat-kernel/Mellin evaluation now agrees at four points, but an
+external replication and a full-domain error analysis remain outstanding.
+\item The time-dependent calculation is an instantaneous \(a^{-4}\) closure,
+not a mode-function evolution or curved-spacetime renormalization of
+\(\langle T_{\mu\nu}\rangle\).  Particle production, curvature counterterms,
+trace-anomaly and memory terms are not calculated.
+\item Rectangular moduli; twisted flat spaces (\(E_2\), \(E_3\)) not scanned.
+\item Stage~3A is perturbative on de~Sitter; Stage~3B permits finite amplitude
+and constraint-reconstructed \(H\). Four target-reaching thresholds are
+nonperturbative and one marginal. No controlled quantum-state approximation
+has been established for those finite-amplitude histories.
+\item The preregistered sensitivity suite is complete but not all-pass: one
+threshold-amplitude stability check missed its \(10^{-8}\) bound, although all
+re-tested classifications and the bounded no-attractor conclusion were unchanged.
+\item A derived driven or memory stress (CBR-002) is one possible extension,
+not a demonstrated solution or an exhaustive classification of other actions.
+\item CMB compatibility of any particular \((L_i)\) is not established here.
+\end{itemize}
+
+These assumptions delimit the result.  Driven constitutive stress, alternate
+topologies, richer field content, and dynamical renormalization remain open
+routes that require their own conservation, stability, and observational
+tests.
+
+% =============================================================================
+\section{Conclusions}
+\label{sec:concl}
+
+A free massless scalar on rectangular flat \(\Tthree\) yields an internally
+checked and independently benchmarked nonzero-mode, shape-dependent anisotropic
+Casimir stress.
+When that static stress is transported as an instantaneous \(a^{-4}\) source
+in the finite-amplitude biaxial closure, the ratio \(\Ht/\Hp=13/12\) appears at most as
+a brief transient at large source-scale ratios, never as a quasi-plateau or
+attractor in the bounded search reported here.  The tested closure therefore
+cannot sustain the historically proposed anisotropic expansion or justify a
+map to
+\(H_t=72.97\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\).
+
+The bounded negative result has a constructive consequence: it separates a
+verified static, shape-dependent stress from the additional constitutive
+physics needed to maintain anisotropic expansion. A persistent nonunit ratio
+cannot stay in a compact shape interval over unbounded expansion; the
+additional stress-scaling obstruction assumes \(H\to H_\infty>0\) and the
+regular asymptotics stated in Sec.~\ref{sec:backreaction}. The numerical
+negative result concerns only the registered finite-domain search. It does
+not exclude unbounded-shape or \(H\to0\) branches, nor a derived
+driven, nonlocal, interacting, or multi-field response.  The next test,
+CBR-002, must derive such a stress independently, verify conservation and
+stability, and only then compare its evolution with the target ratio without
+inserting that ratio into a coefficient.
+
+\section*{Code and data availability}
+
+\begingroup
+\raggedright
+The companion codebase is maintained in the
+\href{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}{public GitHub repository}.
+The local review package identifies the Stage-1--3B implementation, frozen
+CSV/JSON outputs, local cross-method controls, and preregistered sensitivity
+contract and receipt. An immutable public snapshot of this exact revised
+version must be identified before publication; this draft does not assert
+that its new review package has already been released.
+SHA-256 anchors identify exact artifacts; scientific validity rests on the
+declared equations, assumptions, and tests.
+\par
+\endgroup
+
+\section*{Verification status}
+
+The preregistered release-sensitivity suite currently passes 18 of 19 checks.
+The sole failure is a threshold-amplitude repeatability test at \(r_0=1.5\):
+the relative difference is \(8.74\times10^{-5}\), above the registered
+\(10^{-8}\) bound. Classifications of the three re-tested shapes and the bounded
+no-attractor conclusion are unchanged.  This release candidate remains on
+publication hold pending deferred external review and explicit operator
+approval; artifact hashes are provenance records, not scientific clearance.
+
+\section*{Declaration on the use of artificial-intelligence tools}
+
+Artificial-intelligence-assisted tools were used for editorial drafting,
+source-code assistance, and checks of symbolic and numerical consistency.
+This local review draft still requires the author's final verification of
+the manuscript, equations, cited sources, and generated artifacts. Submission
+requires the author's confirmation of that review and acceptance of full
+responsibility; neither is certified by these automated checks.
+
+\begin{acknowledgments}
+Computations use the repository environment \texttt{itsm\_env} and the
+CBR-001 gate package.
+Claim hygiene for related geometric packaging is recorded in companion note
+\cite{boyd_p1}.
+\end{acknowledgments}
+
+\appendix
+
+\section{Reproducibility anchors}
+\label{app:checksums}
+
+Table~\ref{tab:checksums} lists SHA-256 prefixes for portable CBR-001 CSV/JSON
+artifacts underlying the Stage-1--3B numbers in the main text (branch
+\texttt{recovery/v12-core-architecture}).  CSV writers use a fixed LF record
+terminator and JSON output paths are relative to the summary directory.
+Re-running the Stage scripts after intentional code changes will alter digests;
+any published revision must update this table.
+
+\begin{center}
+\refstepcounter{table}\label{tab:checksums}
+\small
+\textbf{\MakeUppercase{\tablename}~\thetable.} SHA-256 of CBR-001 artifacts
+used in this draft.
+\par\smallskip
+\begin{ruledtabular}
+\begin{tabular}{ll}
+Artifact & SHA-256 (prefix) \\
+\hline
+\texttt{cbr001\_stage1.csv} & \texttt{57847F382BAF\ldots} \\
+\texttt{cbr001\_stage2\_scan.csv} & \texttt{FE648629545F\ldots} \\
+\texttt{cbr001\_stage3b\_thresholds.csv} & \texttt{94B0AE4C6381\ldots} \\
+\texttt{cbr001\_stage3b\_summary.json} & \texttt{9A5E80D2F713\ldots} \\
+\end{tabular}
+\end{ruledtabular}
+\end{center}
+
+Full digests and reproduction commands appear in the companion
+\texttt{CBR001\_CHECKSUMS.md} ledger.
+
+\bibliography{references}
+
+\end{document}

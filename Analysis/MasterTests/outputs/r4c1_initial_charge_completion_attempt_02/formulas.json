@@ -1,0 +1,26 @@
+{
+  "admission": "NOT_ESTABLISHED: only charges and the mean lapse coefficient on the initial slice",
+  "background_Q": "R*a**3*d",
+  "cusp_lapse_density": "2*A*absolute_cosine_cubed*e**2*pd**3*Abs(e)",
+  "density_abs_e3": "2*A*pd**3*(absolute_cosine_cubed - 4/(3*pi))/C**4",
+  "exact_charge_only_phase_velocity": "d/(-R**2*e**2*zeta/2 + 1)",
+  "exact_initial_lift_Q": "-R**5*a**3*d*e**4*zeta**2/4 + R*a**3*d",
+  "exact_lift_charge_defect": "-R**5*a**3*d*e**4*zeta**2/4",
+  "exact_velocity_remainder": "R**4*d*e**4*zeta**2/(4*(-R**2*e**2*zeta/2 + 1))",
+  "free_mean_dust_abs_e3": "8*A*a**3*pd**3/(3*pi*C)",
+  "generic_counter_Jacobian": "Matrix([[a**3*u0, 0], [-a**3*v_dot/C, 2*a**3*(H*MP2 + H*MU2*c1/2 + 3*H*MU2*c2/2 + H*MU2*c3/2)/C]])",
+  "local_domain": "1-zeta*R^2*e^2>0 (stronger than the averaged charge denominator)",
+  "mean_abs_cosine_cubed": "4/(3*pi)",
+  "necessary_initial_phase_velocity_abs_e3": "0",
+  "necessary_initial_volume_velocity_abs_e3": "-4*A*pd**3/(3*pi*H*M)",
+  "nonclaims": [
+    "No complete local constraint solve",
+    "No all-order evolved state",
+    "No physical window",
+    "No changed retarded timing result",
+    "No full potential/energy positivity"
+  ],
+  "phase_only_lapse_linear_contribution_at_e4": "-R**4*d**2*zeta**2/4",
+  "quadratic_phase_counter": "R**2*d*zeta/2",
+  "remainder_bound": "0<=sig*e^2<=1/2: |remainder|<=2*|d|*sig^2*|e|^4"
+}
