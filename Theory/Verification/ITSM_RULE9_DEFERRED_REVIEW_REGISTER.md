@@ -3141,3 +3141,106 @@ Pre-append register:211515 bytes,
 SHA4f3a20435489b71c421111aabbe30c639adccc2fd55a33f79082e2488d8e8875.
 Original byte prefixes and old sidecars retained privately in
 .local/itsm-context/cusp3-source-aware-index-backup-20261017-01/.
+
+
+## 17 October 2026 - finite-tilt full Legendre / unit-dust audit; physical reduction OPEN
+
+**Review ID:** R9-MT1-FINITE-TILT-CONSTRAINT-V1. **Review:** DEFERRED,
+Rule9_cleared=false. **Provisional reuse:** complete pointwise temporal
+Hessian, regular-Legendre-patch observations and stated unit/dust equations
+ONLY. No physical ghost/healthy claim, family GO, cutoff or publication clearance.
+
+Owner: `Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CONSTRAINT_V1_REPORT_2026-10-17.md`,
+SHA fb4409c5035f2b5d78df673f9656c147037234252012dce3bb2630f0ea92c00a.
+Frozen contract SHA5bc0f9b3f81869f576bc8e7373cb4770727a1e64abef7cad1974263f4bca205d;
+executable `Analysis/MasterTests/test_01_r4c1_finite_tilt_constraint_v1.py`,
+SHA199d2ae85d059eaf5861570e03b44f31b739e1c48e396f1579bf3dc547b55579.
+Receipt `Analysis/MasterTests/outputs/r4c1_finite_tilt_constraint_attempt_01/summary.json`,
+SHA43b28344b62ba35b1a5b2e1adbef9d8dc76d924bc2fb41f1451c6c12dc6cf7ef.
+
+243/243 local checks; fresh complete read-only replay exact, exit0. All22
+fields, 484 temporal entries, original off-unit extension, metric/frame,
+nonzero-Z acceleration coupling, actual cusp, alignment and dust retained.
+54 arithmetic cases cover all3 families and regular/aligned tilts. 52
+independent all-field/dense directions in two bases give104 original-density
+comparisons at80digits; maximum normalized error1.0542197943230523e-81
+against frozen1e-40. All11 source pins/22 metadata records and all6 original
+receipt/sidecar files preserved. Numerical ranks are not interval/physical proofs.
+
+On the complete regular velocity complement R, the psi/Z Schur determinant
+is -b^2 w^4, not a hidden Z-primary constraint. Independent unit and dust
+equations do not restore uniform algebraic Z. This is not a full Dirac
+classification, physical reduced signature, admissible Cauchy solution or
+extra-propagating-mode/ghost theorem. Off-shell arithmetic points do not
+replace the registered background or prove finite-amplitude initial admission.
+
+**Substantive blockers / next:** actual finite-tilt canonical lapse/shift
+Hamiltonian, preservation/closure and constraint reduction with spatial
+Ricci/potential/gradients; admissible prepared data with torus mean/harmonic
+sectors and global charges; Cauchy/characteristic/physical energy domain;
+nonlinear remainder, physical window and justified GR recovery. Do NOT
+repeat completed dust/tail or isolated raw-block/Frobenius audits instead.
+Inherit G3N5 off-shell/kernel, G3N2, generic-family maps and source-aware
+deferred review dependencies. Missing physical inputs, not pending review
+alone, block stronger uses. Stage1 bounded complete; Stage2 INCOMPLETE;
+Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003
+IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 unchanged.
+physics_pass=false; gate_effect=NONE. No action/provider/model/runtime,
+vault, manuscript/PDF/site, commit/push or submission/publication change.
+
+
+## 17 October 2026 - finite-tilt canonical lapse/shift functionals; full physical reduction OPEN
+
+**Review ID:** R9-MT1-FINITE-TILT-CANONICAL-V2. **Review:** DEFERRED;
+Rule9_cleared=false. **Provisional reuse:** stated regular-branch canonical
+formulas and bounded controls ONLY; no physical-mode count, ghost/healthy
+verdict, family GO, cutoff, GR or publication clearance.
+
+Owner `Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md`,
+SHA8c4496eacdb0d2447445e4a1949b683e033f042a7332c659701e2273d2bf23ea.
+Source `Analysis/MasterTests/test_01_r4c1_finite_tilt_canonical_v2.py`,
+SHA4c2a64f45741161ccacdb75bd0816e5113a9d0b95ba2aa402584f2cb8533dada;
+main receipt `Analysis/MasterTests/outputs/r4c1_finite_tilt_canonical_attempt_02/summary.json`,
+SHAba203bf4c29ddf7834c5db2c2a7a98625343508ed3f24025a56b90438020d44b.
+Backend source SHA9bbccd7dfddef6ffc5e499c19d485a79a6f1d8326d2c02a5462b57b2e932c7cb;
+receipt `Analysis/MasterTests/outputs/r4c1_finite_tilt_canonical_backend_attempt_01/verification.json`,
+SHA97d4ca6c7dbe6a7af27e21529d40532944cffb8f5d92f9781a52708b3391557a.
+
+204/204 main and397/397 original-density/backend bridge checks; both full
+fresh read-only replays exact, exit0. All16 connection identities retain
+arbitrary3D first jets; original-coordinate density and complete inverse
+controls retain metric/frame, cusp, acceleration, curvature, potential and
+dust. Lapse/shift functionals are derived by actual action variation, with
+H_perp=E_rest+E_dust+partial_i(gamma pV^i) and the full tensor/scalar C_i.
+Positive future dust is eliminated only after its own variation; no T=t
+gauge before lapse variation. Domain requires regular Legendre/unit/dust
+branches; no inverse across V^2=0, eta=0 or det R=0.
+
+Fourteen PLANAR Poisson cases include2 independent GR controls, all3 families,
+eta1/4,1/64 and grids17/25, with all15 canonical pairs. Largest action H-H
+residual2.7569092841961407e-15 vs frozen1e-7; no arbitrary3D closure theorem
+or convergence order inferred. Backend18-state controls cover eta1/1024 too,
+all144 complement entries, all velocities and all15 momentum derivatives;
+largest binary64 discrepancy2.1926904736346842e-14 vs frozen1e-10.
+
+V1 remains203/204 FAIL (summarySHAe13647178a72afa39c80488a6c50bf1c4569bc186b03134c79e343fea20de027):
+one structurally unexpanded polynomial was compared with literal0. Exact
+expansion/factorization each give0. Frozen V2 addendum changes only assertion
+normal form/provenance pins; no action, numerical function or tolerance change.
+All16 non-summary JSON payloads match V1 exactly. Main34/audit2 original
+payload/sidecar files preserved by replay; main14pins/28metadata and
+audit16pins/32metadata unchanged. Counts are local checks, not peer review.
+
+**Substantive next boundary:** arbitrary3D constraint-algebra/reduction proof
+and exact finite-amplitude prepared data with profile/alignment-zero strata,
+torus mean/harmonics and global charges. Then admissible Cauchy/characteristic
+and physical energy domain, physical Hessian, nonlinear remainder, nonempty
+physical window and healthy GR. Do NOT substitute another raw-rank/planar-grid
+sweep, divide by a vanishing wave profile, or infer a physical ghost from
+Legendre rank. Inherit FINITE-TILT-CONSTRAINT-V1, G3N5, G3N2, family and all
+transitive deferred review debt. Missing physics, not review alone, blocks
+stronger uses. Stage1 bounded complete; Stage2 INCOMPLETE; Stage3 NOT_ENTERED;
+Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED;
+V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 unchanged; physics_pass=false;
+gate_effect=NONE. No vault, manuscript/PDF/site, commit/push, publication,
+provider/model/runtime or action change. Unrelated paper work is untouched.

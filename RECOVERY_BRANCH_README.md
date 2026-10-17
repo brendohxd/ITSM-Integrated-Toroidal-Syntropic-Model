@@ -5,7 +5,26 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
-## Latest research and paper checkpoint - 17 October 2026
+## Latest finite-tilt checkpoint - 17 October 2026
+
+The [finite-tilt evidence map](Theory/Verification/ITSM_FINITE_TILT_CHECKPOINT_2026-10-17.md)
+preserves the new complete velocity-map audit and action-derived canonical
+lapse/shift formulas. The regular-branch formulas retain the coupled metric,
+frame, scalars, regulator, matter and local lapse-gradient flux. Recorded
+local checks are 243/243 for the velocity map, 204/204 for canonical V2 and
+397/397 for the separate implementation bridge, with exact replays recorded
+in their owning reports. The failed canonical V1 attempt remains unchanged.
+
+The bracket controls are periodic planar tests, not arbitrary-3D closure.
+Alignment/profile-zero strata, admissible finite-amplitude initial data, the
+physical reduced Hessian, nonlinear remainder and a physical validity window
+remain open. No family receives physical GO or a ghost/healthy verdict.
+Stage 1 retains its original bounded linear acceptance; Stage 2 is incomplete;
+Stage 3 is not entered and both identifying matching inputs remain absent.
+Rule-9 remains deferred, not cleared. This checkpoint does not update the
+separate working manuscripts or deploy the website.
+
+## Preserved research and paper checkpoint - 17 October 2026
 
 The [17 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)
 records the three-family constraint/finite-mode extensions, charge preparation,

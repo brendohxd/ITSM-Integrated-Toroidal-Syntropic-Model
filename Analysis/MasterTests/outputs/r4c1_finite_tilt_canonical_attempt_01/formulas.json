@@ -1,0 +1,13 @@
+{
+  "B00": "V_i (X^i+K^i_j V^j)/gamma",
+  "B0j": "X^j+K^j_k V^k",
+  "Bi0": "D_i gamma+K_ij V^j",
+  "Bij": "D_i V^j+gamma K_i^j",
+  "C_i": "-2partial_j(h_ik pi^(jk))+pi^(jk)partial_i h_jk+pV_j partial_i V^j+partial_j(pV_i V^j)+sum_s p_s partial_i phi_s",
+  "E": "sqrt(h)[(P_y-ell)^T R^-1(P_y-ell)/2+P_psi psi_hat-f]",
+  "H_perp": "E + partial_i(gamma h^(ij) pV_j)",
+  "equations": "Euler_N=-H_perp; Euler_shift_i=-C_i, with periodic integration by parts",
+  "metric_convention": "p_hxy=2*pi^(xy); P_y metric slots=2*p_h/sqrt(h)",
+  "physical_3D_constraint_closure": "NOT_PROVED_BY_PLANAR_NUMERICAL_CONTROLS",
+  "proof": "ALL3D_ARBITRARY_FIRST_JET_AT_A_POINT; tensorial ADM extension"
+}

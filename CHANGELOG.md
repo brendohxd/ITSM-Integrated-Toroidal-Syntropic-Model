@@ -1,5 +1,28 @@
 # ITSM Changelog & Archive History
 
+## Finite-tilt velocity map and canonical-constraint checkpoint (2026-10-17)
+
+- Added the [finite-tilt checkpoint and exact-byte evidence map](Theory/Verification/ITSM_FINITE_TILT_CHECKPOINT_2026-10-17.md)
+  for work following `d00acd43`, without changing the earlier checkpoint.
+- Retained the complete 22-field temporal Hessian/auxiliary audit (243/243),
+  the regular-branch canonical lapse/shift calculation (V2: 204/204), and the
+  separate original-density/backend bridge (397/397). Their owning reports
+  record exact read-only replays; this Git checkpoint checks artifact integrity,
+  source pins and publication scope, not a fresh rerun of every calculation.
+- Preserved canonical V1's 203/204 failure and its original hashes. V2's frozen
+  addendum corrects an exact-zero normal-form assertion, not the action,
+  numerical functions or tolerance. No failure is silently relabelled.
+- Updated the root README and recovery guide. Included the existing append-only
+  execution/review records; left the pinned scientific dashboard and frozen
+  reports untouched. Separate P1/core-manuscript edits and private scratch
+  remain outside this checkpoint; no files were deleted.
+- General 3D constraint closure, alignment/profile-zero treatment, admissible
+  finite-amplitude data, physical reduction/window, nonlinear error control and
+  healthy GR remain open. Stage 2 is incomplete; Stage 3 is not entered.
+  Tests 1-3 remain `HOLD_SUBSTANTIVE`, MAT-001 `BLOCKED`, UVIR-003 `IN_PROGRESS`,
+  `K_Q=NOT_DERIVED`, `V=NOT_COMPUTED`, Stage 4A `CLOSED`, Rule-9 `DEFERRED`,
+  `physics_pass=false` and `gate_effect=NONE`. No publication or site deployment.
+
 ## Coupled cubic-response bound and paper revisions (2026-10-17)
 
 - Added the [17 October checkpoint/evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)

@@ -87,10 +87,24 @@ matches establish only their stated calculation or artifact scope.
 
 ## 🧪 Current research checkpoint — 17 October 2026
 
-The [17 October checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)
-capture the research and paper revisions since the previous checkpoint. The
-latest advance is a better-controlled mathematical response, not a physical
-viability verdict:
+The [finite-tilt checkpoint and evidence map](Theory/Verification/ITSM_FINITE_TILT_CHECKPOINT_2026-10-17.md)
+record the latest action-derived constraint work. The
+[earlier 17 October checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)
+preserves the preceding cubic-response and paper revisions. These are bounded
+mathematical advances, not a physical viability verdict:
+
+- **Finite-tilt canonical formulas are now explicit:** the
+  [owning report](Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md)
+  supplies the coupled lapse and shift constraints, including the local
+  lapse-gradient flux. Its 204/204 checks and a separate 397/397 backend
+  comparison have recorded exact replays. Periodic planar bracket controls
+  are not an arbitrary-three-dimensional constraint-closure proof.
+- **The regular inverse has a real boundary:** the
+  [complete velocity-map audit](Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CONSTRAINT_V1_REPORT_2026-10-17.md)
+  passes 243/243 local checks but does not classify physical modes. Alignment
+  points of the registered wave lie outside the regular inverse. Their
+  unreduced constraints and admissible finite-amplitude initial data remain
+  unresolved. The original canonical V1 failure is retained unchanged.
 
 - **Cubic fields are now summable in the registered calculation:** the
   [source-aware estimate](Theory/Gates/RES-001/RES001_R4C1_CUSP3_SOURCE_AWARE_WINDOW_V1_REPORT_2026-10-17.md)
