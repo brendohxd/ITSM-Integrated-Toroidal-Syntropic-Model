@@ -1,0 +1,17 @@
+{
+  "EZ_initial": "-R*p*w*wprime + Z + w**2*(acceleration + p*(3*H - Hbg - Rprime))",
+  "EZ_regular_node_limit": "3*H*p - Hbg*p + U + acceleration - 2*p*r1",
+  "Epsi_node": "-K*(acceleration + p*(3*H - r1)) + 2*U*b*slope**2 - beta*rho_node",
+  "compatibility": "-Hbg*K*p - K*p*r1 + U*(K + 2*b*slope**2) - beta*rho_node",
+  "local_repair_Jacobian": "Matrix([[-6*H0*M, 0], [-6*H0*M*beta, K]])",
+  "local_repair_determinant": "-6*H0*K*M",
+  "node_cusp": "Both one-sided original-cusp divergences vanish; no ordinary third derivative is inserted",
+  "original_momenta": "Matrix([[-3*A*q0*w**2*sqrt(q0*(q0*w**2 + q2*w*sqrt(w**2 + 1)) + q1**2 + q2*(q0*w*sqrt(w**2 + 1) + q2*(w**2 + 1)) + q3**2) - 3*A*q2*w*sqrt(w**2 + 1)*sqrt(q0*(q0*w**2 + q2*w*sqrt(w**2 + 1)) + q1**2 + q2*(q0*w*sqrt(w**2 + 1) + q2*(w**2 + 1)) + q3**2) + K*sqrt(w**2 + 1)*(q0*sqrt(w**2 + 1) + q2*w) - Z*acc0*b - b*w**2*zg0 - b*w*zg2*sqrt(w**2 + 1)], [-3*A*q1*sqrt(q0*(q0*w**2 + q2*w*sqrt(w**2 + 1)) + q1**2 + q2*(q0*w*sqrt(w**2 + 1) + q2*(w**2 + 1)) + q3**2) - Z*acc1*b - b*zg1], [-3*A*q0*w*sqrt(w**2 + 1)*sqrt(q0*(q0*w**2 + q2*w*sqrt(w**2 + 1)) + q1**2 + q2*(q0*w*sqrt(w**2 + 1) + q2*(w**2 + 1)) + q3**2) - 3*A*q2*(w**2 + 1)*sqrt(q0*(q0*w**2 + q2*w*sqrt(w**2 + 1)) + q1**2 + q2*(q0*w*sqrt(w**2 + 1) + q2*(w**2 + 1)) + q3**2) + K*w*(q0*sqrt(w**2 + 1) + q2*w) - Z*acc2*b - b*w*zg0*sqrt(w**2 + 1) - b*zg2*(w**2 + 1)], [-3*A*q3*sqrt(q0*(q0*w**2 + q2*w*sqrt(w**2 + 1)) + q1**2 + q2*(q0*w*sqrt(w**2 + 1) + q2*(w**2 + 1)) + q3**2) - Z*acc3*b - b*zg3]])",
+  "other_sectors": "Frame/metric/Cartesian potentials have no direct psi variation. Their geometry/current effects remain in n, hp, acc, divergence, and the independent matter trace.",
+  "psi_acceleration_from_EZ": "-U + 2*p*r1 - p*(3*H - Hbg)",
+  "regularity": "Necessary for finite continuous scalar normal acceleration; not a weak/distributional or all-action no-go theorem",
+  "repair_equation": "(K_Q+2*b*k^2*e^2)*U=K_Q*Hbg*p+K_Q*p*Rprime_node+beta*rho_node; H,R,rho must be solved with U, not held at old values",
+  "repair_scope": "Nonzero determinant supplies only a local necessary-node-compatible branch via implicit-function reasoning; no explicit finite-amplitude repair, higher consistency or evolution is certified",
+  "selected_U0": "Hbg*p+beta*rho0/K_Q",
+  "selected_normalized_defect": "G/e^2=2*b*U0*k^2-K_Q*p*(Rprime_node/e^2)-beta*(<Edelta>-Edelta_node-flux_node/e^2)"
+}

@@ -1,5 +1,37 @@
 # ITSM Changelog & Archive History
 
+## Regulator-node acceleration and coupled completion (2026-10-18)
+
+- Added the [regulator-node completion checkpoint and exact-byte evidence map](Theory/Verification/ITSM_NODE_COMPLETION_CHECKPOINT_2026-10-18.md)
+  for the bounded work following `e759f104`. This is a research/documentation
+  checkpoint, not full initial admission, state evolution, canonical promotion,
+  or publication readiness.
+- Preserved the node-acceleration V1 static preflight failure; that source was
+  never scientifically run. The separately frozen V2 passes 48/48 local checks
+  and exact read-only replay. It rejects only the selected `U0` regulator
+  continuation for all nine registered cases and continuous
+  `0<|e|<=1/500`, not every continuation or the earlier known constraint surface.
+- Retained the restricted coupled mean/node completion: 104/104 local checks
+  and exact replay. Strict face signs and derivative bounds certify a unique
+  restricted `H,U` root while retaining both charges, the full local lapse
+  flux, and positive density. Endpoint-safe bounds are
+  `|U-U0|<=17.492e^2` and `|Z-Zold|<=17.492e^4*cos^2(theta)`.
+- Numerical Newton and independent 8/12-harmonic Galerkin controls remain
+  diagnostics; the interval and residual/coercivity certificates carry the
+  restricted proof. The retained regulator velocity, higher node consistency,
+  persistence, full rank-changing constrained system, physical Hessian/Cauchy
+  domain, nonlinear evolution and physical window remain open.
+- Included the versioned sources, contracts, addenda, reports, frozen receipts,
+  sidecars, and existing guarded execution/review appends. Separate working
+  manuscript/PDF/bibliography files, the conditional architecture figure and
+  generator, scratch QA, and private data remain local and unstaged.
+- Stage 1 remains bounded to the registered linear prepared-dust scope; Stage 2
+  is `INCOMPLETE` and Stage 3 `NOT_ENTERED`. Tests 1-3 remain
+  `HOLD_SUBSTANTIVE`; MAT-001 `BLOCKED`; UVIR-003 `IN_PROGRESS`;
+  `K_Q=NOT_DERIVED`; `V=NOT_COMPUTED`; Stage 4A `CLOSED`; TOP-X4 unchanged;
+  review `DEFERRED`; `Rule9_cleared=false`; `physics_pass=false`;
+  `gate_effect=NONE`. No site deployment or submission.
+
 ## Initial-constraint certificates, node controls and P1 rc7 (2026-10-18)
 
 - Added the [18 October checkpoint/evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-18.md)

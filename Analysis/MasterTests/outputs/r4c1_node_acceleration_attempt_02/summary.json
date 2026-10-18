@@ -1,0 +1,687 @@
+{
+  "Rule9_cleared": false,
+  "action_no_go": false,
+  "checks": [
+    {
+      "criterion": "exact",
+      "name": "complete_original_force_regulator_momenta",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "original_regulator_gradient_momentum",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "matter_source_from_independent_dust_variation",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "acceleration_term_kept_in_EZ",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "unreduced_EZ_on_full_initial_slice",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "regular_side_EZ_limit",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "finite_acceleration_forced_by_regular_side",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "reject_omitted_acceleration_term_before_node_limit",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "exact",
+      "name": "simultaneous_scalar_node_compatibility",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "reject_omitting_shift_gradient",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "exact",
+      "name": "reject_omitting_regulator_spatial_Hessian",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "exact",
+      "name": "full_cusp_node_divergence_+",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "full_cusp_node_divergence_-",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "coupled_mean_node_Jacobian",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "dimensionless psi and frame; [K_Q]=2,[b]=[beta]=0,[U]=2,[H]=[p]=[k]=1,[rho]=4",
+      "name": "node_compatibility_mass_dimension_four",
+      "passed": true,
+      "value": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "criterion": "<=1e-50",
+      "name": "coordinate_Epsi_node_0_-1",
+      "passed": true,
+      "value": "0.0"
+    },
+    {
+      "criterion": "<=1e-50",
+      "name": "coordinate_EZ_regular_side_0_-1",
+      "passed": true,
+      "value": "2.36279145128613518235363706101924045756518911978656264298691e-112"
+    },
+    {
+      "criterion": "<=1e-50",
+      "name": "coordinate_Epsi_node_0_1",
+      "passed": true,
+      "value": "0.0"
+    },
+    {
+      "criterion": "<=1e-50",
+      "name": "coordinate_EZ_regular_side_0_1",
+      "passed": true,
+      "value": "2.36279145128613518235363706101924045756518911978656264298691e-112"
+    },
+    {
+      "criterion": "<=1e-50",
+      "name": "coordinate_Epsi_node_1_-1",
+      "passed": true,
+      "value": "0.0"
+    },
+    {
+      "criterion": "<=1e-50",
+      "name": "coordinate_EZ_regular_side_1_-1",
+      "passed": true,
+      "value": "0.0"
+    },
+    {
+      "criterion": "<=1e-50",
+      "name": "coordinate_Epsi_node_1_1",
+      "passed": true,
+      "value": "0.0"
+    },
+    {
+      "criterion": "<=1e-50",
+      "name": "coordinate_EZ_regular_side_1_1",
+      "passed": true,
+      "value": "0.0"
+    },
+    {
+      "criterion": "exact",
+      "name": "normalized_energy_numerator_constant",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "normalized_energy_numerator_linear",
+      "passed": true,
+      "value": []
+    },
+    {
+      "criterion": "exact",
+      "name": "all_energy_amplitude_powers_even",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "exact",
+      "name": "node_flux_normalization_regular",
+      "passed": true,
+      "value": "-MU2*k**2*(-2*MP2*c3 + MU2*c1**2 + 2*MU2*c1*c3 + 2*MU2*c1*c4 + MU2*c3**2 + 2*MU2*c3*c4)/(2*(-MP2 + MU2*c1 + MU2*c3))"
+    },
+    {
+      "criterion": "Residual starts alpha^4; inherited linear error bounds scale by alpha without division through zero",
+      "name": "scaled_error_bound_uses_actual_residual_order",
+      "passed": true,
+      "value": 4
+    },
+    {
+      "criterion": "exact",
+      "name": "parent_strict_audited_replay_inherited",
+      "passed": true,
+      "value": null
+    },
+    {
+      "criterion": "strict nonzero interval rejects only selected continuation, not the action",
+      "name": "node_acceleration_decision_archived_G3_1/4",
+      "passed": true,
+      "value": {
+        "attempts": [
+          16
+        ],
+        "decision": "VIOLATED_POSITIVE_DEFECT"
+      }
+    },
+    {
+      "criterion": "the exact e->0 reference coefficient must lie in the outward all-amplitude bracket enclosure",
+      "name": "leading_control_inside_finite_enclosure_archived_G3_1/4",
+      "passed": true,
+      "value": "11.851316141845613845935386435015688788754237450230241805966"
+    },
+    {
+      "criterion": "strict nonzero interval rejects only selected continuation, not the action",
+      "name": "node_acceleration_decision_archived_G3_1/64",
+      "passed": true,
+      "value": {
+        "attempts": [
+          16
+        ],
+        "decision": "VIOLATED_POSITIVE_DEFECT"
+      }
+    },
+    {
+      "criterion": "the exact e->0 reference coefficient must lie in the outward all-amplitude bracket enclosure",
+      "name": "leading_control_inside_finite_enclosure_archived_G3_1/64",
+      "passed": true,
+      "value": "0.0293251467820953652366871856166417005321335505418191454941373"
+    },
+    {
+      "criterion": "strict nonzero interval rejects only selected continuation, not the action",
+      "name": "node_acceleration_decision_archived_G3_1/1024",
+      "passed": true,
+      "value": {
+        "attempts": [
+          16
+        ],
+        "decision": "VIOLATED_POSITIVE_DEFECT"
+      }
+    },
+    {
+      "criterion": "the exact e->0 reference coefficient must lie in the outward all-amplitude bracket enclosure",
+      "name": "leading_control_inside_finite_enclosure_archived_G3_1/1024",
+      "passed": true,
+      "value": "0.000109005914983368795050223349488274082700464071868723881875705"
+    },
+    {
+      "criterion": "strict nonzero interval rejects only selected continuation, not the action",
+      "name": "node_acceleration_decision_new_B1_frame_1/4",
+      "passed": true,
+      "value": {
+        "attempts": [
+          16
+        ],
+        "decision": "VIOLATED_POSITIVE_DEFECT"
+      }
+    },
+    {
+      "criterion": "the exact e->0 reference coefficient must lie in the outward all-amplitude bracket enclosure",
+      "name": "leading_control_inside_finite_enclosure_new_B1_frame_1/4",
+      "passed": true,
+      "value": "12.8686734136834968709667750320895396277683069424447056074603"
+    },
+    {
+      "criterion": "strict nonzero interval rejects only selected continuation, not the action",
+      "name": "node_acceleration_decision_new_B1_frame_1/64",
+      "passed": true,
+      "value": {
+        "attempts": [
+          16
+        ],
+        "decision": "VIOLATED_POSITIVE_DEFECT"
+      }
+    },
+    {
+      "criterion": "the exact e->0 reference coefficient must lie in the outward all-amplitude bracket enclosure",
+      "name": "leading_control_inside_finite_enclosure_new_B1_frame_1/64",
+      "passed": true,
+      "value": "0.029636706307604455842170010326477859942312052659562544407377"
+    },
+    {
+      "criterion": "strict nonzero interval rejects only selected continuation, not the action",
+      "name": "node_acceleration_decision_new_B1_frame_1/1024",
+      "passed": true,
+      "value": {
+        "attempts": [
+          16
+        ],
+        "decision": "VIOLATED_POSITIVE_DEFECT"
+      }
+    },
+    {
+      "criterion": "the exact e->0 reference coefficient must lie in the outward all-amplitude bracket enclosure",
+      "name": "leading_control_inside_finite_enclosure_new_B1_frame_1/1024",
+      "passed": true,
+      "value": "0.000109207486171328171768982136211078058689775652375017457480388"
+    },
+    {
+      "criterion": "strict nonzero interval rejects only selected continuation, not the action",
+      "name": "node_acceleration_decision_new_hierarchical_1/4",
+      "passed": true,
+      "value": {
+        "attempts": [
+          16
+        ],
+        "decision": "VIOLATED_POSITIVE_DEFECT"
+      }
+    },
+    {
+      "criterion": "the exact e->0 reference coefficient must lie in the outward all-amplitude bracket enclosure",
+      "name": "leading_control_inside_finite_enclosure_new_hierarchical_1/4",
+      "passed": true,
+      "value": "12.5494971783904086562330058965526228367684755414397325540026"
+    },
+    {
+      "criterion": "strict nonzero interval rejects only selected continuation, not the action",
+      "name": "node_acceleration_decision_new_hierarchical_1/64",
+      "passed": true,
+      "value": {
+        "attempts": [
+          16
+        ],
+        "decision": "VIOLATED_POSITIVE_DEFECT"
+      }
+    },
+    {
+      "criterion": "the exact e->0 reference coefficient must lie in the outward all-amplitude bracket enclosure",
+      "name": "leading_control_inside_finite_enclosure_new_hierarchical_1/64",
+      "passed": true,
+      "value": "0.0296309802538384198708032276380781411508098413516474849772207"
+    },
+    {
+      "criterion": "strict nonzero interval rejects only selected continuation, not the action",
+      "name": "node_acceleration_decision_new_hierarchical_1/1024",
+      "passed": true,
+      "value": {
+        "attempts": [
+          16
+        ],
+        "decision": "VIOLATED_POSITIVE_DEFECT"
+      }
+    },
+    {
+      "criterion": "the exact e->0 reference coefficient must lie in the outward all-amplitude bracket enclosure",
+      "name": "leading_control_inside_finite_enclosure_new_hierarchical_1/1024",
+      "passed": true,
+      "value": "0.000109207211622302459384850384859643600089767335252359056434925"
+    },
+    {
+      "criterion": "exact",
+      "name": "all_source_bytes_sidecars_and_metadata_preserved",
+      "passed": true,
+      "value": null
+    }
+  ],
+  "full_initial_data_admission": false,
+  "gate_effect": "NONE",
+  "missing_required_physics": [
+    "coupled node-compatible higher-order regulator completion",
+    "higher consistency and persistence through rank-changing strata",
+    "physical Hessian/Cauchy/energy domain, nonlinear remainder, physical window and healthy GR",
+    "identifying matter-residue and nonlinear-force matching inputs"
+  ],
+  "passed": 48,
+  "physics_pass": false,
+  "rejected_selected_continuation_cases": 9,
+  "repair_adopted_or_evolved": false,
+  "review_status": "DEFERRED",
+  "source_metadata": {
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/trajectories.json": {
+      "bytes": 6004343,
+      "mtime_ns": 1791843421644547700,
+      "sha256": "3e36b9594ec4f186fff610a291011b6344b23ba98645922dfd7ad78d242ee4b3"
+    },
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/trajectories.json.sha256": {
+      "bytes": 84,
+      "mtime_ns": 1791843421651151200,
+      "sha256": "27d55bd372480f7763b4fb2bd5eadc11f2f1d76bcf6a75cb6820a02ddfa106d7"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/certificates.json": {
+      "bytes": 89895,
+      "mtime_ns": 1792288461756299700,
+      "sha256": "7c3465014fd85d7a98b905eed721c907f2f7764ccefadf856680ecf068d7127a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/certificates.json.sha256": {
+      "bytes": 84,
+      "mtime_ns": 1792288461759296700,
+      "sha256": "a21d829ae6207e718b7e104255e4100861b25e5020f1f7918d8954a1521c22cb"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/proof.json": {
+      "bytes": 27496,
+      "mtime_ns": 1792288461754298000,
+      "sha256": "b96ee17ec3d3f14500d0bf59d786411f5e241cbbb238ef49f3dc34657a18646b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/proof.json.sha256": {
+      "bytes": 77,
+      "mtime_ns": 1792288461758296000,
+      "sha256": "a7f7e1aea1ee5bd0c920d17141b3f819556821c57e8173276b85fca085fa76bd"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/summary.json": {
+      "bytes": 49349,
+      "mtime_ns": 1792288461753288300,
+      "sha256": "993b5cfffcb4b7c4106656a6929dfcc0379858c53e6556f60bb5b56b24ec5f4c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/summary.json.sha256": {
+      "bytes": 79,
+      "mtime_ns": 1792288461757296700,
+      "sha256": "7c974dfb22419b23b386b1a5db1e2a67fe8b3326c1fbe7273b5c51c2ed025601"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/audit.json": {
+      "bytes": 20380,
+      "mtime_ns": 1792289739872802700,
+      "sha256": "9351821690ca15a3fe58b59b0b932090a229ecbc84c30bc700b2b36c39df3491"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/audit.json.sha256": {
+      "bytes": 77,
+      "mtime_ns": 1792289739873326900,
+      "sha256": "51285f91382068ae75c70af3bee4629b909d29be13411326c21926ef1d3415fe"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_charge_completion_attempt_04/formulas.json": {
+      "bytes": 1383,
+      "mtime_ns": 1792143628133577800,
+      "sha256": "b1f62daaebdb1602ccc20350669b22aeb601d7e8d8cccad4626e420e317bb6f3"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_charge_completion_attempt_04/formulas.json.sha256": {
+      "bytes": 80,
+      "mtime_ns": 1792143628135559700,
+      "sha256": "5ff7947a32a9e2e2373ec0ee46f12e54a122973383e81bc01ed2eafc52f15ea4"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/formulas.json": {
+      "bytes": 23384,
+      "mtime_ns": 1792287127176525000,
+      "sha256": "beaf647957a18ddd14881333de29cebc9a567ffcc62a9b4d775153984a0add73"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/formulas.json.sha256": {
+      "bytes": 80,
+      "mtime_ns": 1792287127179526100,
+      "sha256": "e54c230b39ea9503832487030358bb861ef25414be2d13f0677e51c0526f2d6c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/summary.json": {
+      "bytes": 61945,
+      "mtime_ns": 1792287127175524400,
+      "sha256": "586fe456022419f65965750ecc3137cf74b6eafb84f3a4dec670f2f611f51b3f"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/summary.json.sha256": {
+      "bytes": 79,
+      "mtime_ns": 1792287127178525100,
+      "sha256": "e82f7dfe847bfebc2be7cb63fb409c3eb994c56e2e75ed4982c0ceed57f94f56"
+    },
+    "Analysis/MasterTests/outputs/r4c1_planar_coupled_vertices_attempt_01/formulas.json": {
+      "bytes": 46580,
+      "mtime_ns": 1791820009057049800,
+      "sha256": "852b657c9023244a76cc49494b6adb08510d4eeb74bd95ec390ff11bc6b0789a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_planar_coupled_vertices_attempt_01/formulas.json.sha256": {
+      "bytes": 80,
+      "mtime_ns": 1791820009058027000,
+      "sha256": "4fe32ece70a04b87066151e8155aee97a9a1481c47e49697787b946c6af9f8c6"
+    },
+    "Analysis/MasterTests/test_01_r4c1_finite_tilt_canonical_v2.py": {
+      "bytes": 34093,
+      "mtime_ns": 1792223150228273500,
+      "sha256": "4c2a64f45741161ccacdb75bd0816e5113a9d0b95ba2aa402584f2cb8533dada"
+    },
+    "Analysis/MasterTests/test_01_r4c1_finite_tilt_canonical_v2.py.sha256": {
+      "bytes": 107,
+      "mtime_ns": 1792223214626017600,
+      "sha256": "118ba715e4ac90d640dffd19067594e66211493d208310d6c73a94b77c29f2fa"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_admission_v1.py": {
+      "bytes": 25097,
+      "mtime_ns": 1792288118394402200,
+      "sha256": "d994707a9261e276b6d9fcb3377acfd75387ce8cdac10f7756e2f791c5787e0a"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_admission_v1.py.sha256": {
+      "bytes": 103,
+      "mtime_ns": 1792288130842588400,
+      "sha256": "63b389071d67dd71fc6c19fb4bf74c3cee180f62900be6b70ec396ae1da0d9f1"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_charge_completion_v4.py": {
+      "bytes": 30167,
+      "mtime_ns": 1792143616623745400,
+      "sha256": "af22270b76b72d29a04bdfba366464bcc2482ec5f2e41f5ffe66061fee7f4020"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_charge_completion_v4.py.sha256": {
+      "bytes": 111,
+      "mtime_ns": 1792143623987336300,
+      "sha256": "d1ba584939bda7516d0c121c5dce5f93c3160bd024954713fd63179227006d04"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_constraint_v1.py": {
+      "bytes": 18835,
+      "mtime_ns": 1792287048226934700,
+      "sha256": "6ba9c73d71d2ef9dd3fc59f34d5fe781d528d5636a29a85bed748290bda989ff"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_constraint_v1.py.sha256": {
+      "bytes": 104,
+      "mtime_ns": 1792287078079751300,
+      "sha256": "5537df804c02ae2c4ba8c78b78fa6fb85d98f500d002d04f818159e0c8c02cec"
+    },
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": {
+      "bytes": 19134,
+      "mtime_ns": 1790306527356875300,
+      "sha256": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f"
+    },
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py.sha256": {
+      "bytes": 105,
+      "mtime_ns": 1790306772669813700,
+      "sha256": "b0fb88bfe94a2b547684a750715345c1b01277d8f7eb19a31003802d4cb77821"
+    },
+    "Analysis/MasterTests/test_01_r4c1_node_acceleration_v1.py": {
+      "bytes": 22221,
+      "mtime_ns": 1792291330385012200,
+      "sha256": "f91899a6add8ceff67b2358f63f6cc8f2ec8b18cc0d486a00039fa4b84250e1b"
+    },
+    "Analysis/MasterTests/test_01_r4c1_node_acceleration_v1.py.sha256": {
+      "bytes": 103,
+      "mtime_ns": 1792291331480763900,
+      "sha256": "7b72fbcaf19685db0b09b6c0706cedcb593b8f3289c7e9e62240908a6f66180e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_node_acceleration_v2.py": {
+      "bytes": 22752,
+      "mtime_ns": 1792291421289336600,
+      "sha256": "1e77ba8e8fc9d09d3e7e4a3a556405fa45dd5ce0dbf89580ff7ae2df106a9a7c"
+    },
+    "Analysis/MasterTests/test_01_r4c1_node_acceleration_v2.py.sha256": {
+      "bytes": 103,
+      "mtime_ns": 1792291422322580700,
+      "sha256": "bd76f36faa349f42a09a19b3bd08b5033146e4eccce5bc9d3ccfc63a4bb68521"
+    },
+    "Analysis/MasterTests/test_01_r4c1_regulator_node_v1.py": {
+      "bytes": 23769,
+      "mtime_ns": 1792225412588381600,
+      "sha256": "7126d03a3b3a3a525bf1ce4c8b31c8541901f9d7c45ad82c288db71cc97cfa25"
+    },
+    "Analysis/MasterTests/test_01_r4c1_regulator_node_v1.py.sha256": {
+      "bytes": 100,
+      "mtime_ns": 1792225418779003100,
+      "sha256": "1dad7c081cab09b5efbf359036c73bd002f43fa209a42be36bdfa027b6c4a2bf"
+    },
+    "GEMINI.md": {
+      "bytes": 8469,
+      "mtime_ns": 1790333739829543300,
+      "sha256": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12"
+    },
+    "GEMINI.md.sha256": {
+      "bytes": 76,
+      "mtime_ns": 1790334010852194000,
+      "sha256": "633f453507c11a86bbc490319ba29d1d66835dbd2d43ce627c0dd2b0859933d4"
+    },
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": {
+      "bytes": 11197,
+      "mtime_ns": 1790365744080398500,
+      "sha256": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa"
+    },
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md.sha256": {
+      "bytes": 97,
+      "mtime_ns": 1790365752893756300,
+      "sha256": "581cc274c84caa3e6b2bdb3449fc581355b7dcaf7fe652c7e05314d24185fb1f"
+    },
+    "Theory/Core/ITSM_DUST_GR_WEAKFIELD_EXECUTION_PLAN_2026-10-11.md": {
+      "bytes": 3591,
+      "mtime_ns": 1791715008867477100,
+      "sha256": "14bf01842d7fa573c22d78f021ec815421fb01a4b97fee806c1fbed22b676519"
+    },
+    "Theory/Core/ITSM_DUST_GR_WEAKFIELD_EXECUTION_PLAN_2026-10-11.md.sha256": {
+      "bytes": 118,
+      "mtime_ns": 1791715047437140700,
+      "sha256": "50c99bb20aae2f874ef27311e15e5ddbe825a664cd5186975e9b4c69f089de0d"
+    },
+    "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md": {
+      "bytes": 5703,
+      "mtime_ns": 1790333942307234000,
+      "sha256": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809"
+    },
+    "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md.sha256": {
+      "bytes": 103,
+      "mtime_ns": 1790334012762640700,
+      "sha256": "d773124f847f42cd5104aecd56e332b365632713a059eec5ca77c5bcc3b46934"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": {
+      "bytes": 11821,
+      "mtime_ns": 1790305748872823900,
+      "sha256": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md.sha256": {
+      "bytes": 115,
+      "mtime_ns": 1790305793763898900,
+      "sha256": "e3fc66c52c874ac339ba14694e7ae51c8bc5e82d3116bd6eda4b17f84ea1ea24"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_REPORT_2026-09-25.md": {
+      "bytes": 12323,
+      "mtime_ns": 1790306901242360100,
+      "sha256": "3019196b071b146a1e41cd055073ae02da2afa10b1cdb5ae49e0a63cf84a6eb6"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_REPORT_2026-09-25.md.sha256": {
+      "bytes": 114,
+      "mtime_ns": 1790306978584882500,
+      "sha256": "4496a24a9fd3f49a7b0ca260591404a1414a89922d4c0201954b905f4ca08e3e"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_CONTRACT_2026-10-18.md": {
+      "bytes": 5809,
+      "mtime_ns": 1792287750585000100,
+      "sha256": "88b0ddb963912de6ddca377108361bcb9a584686826a6934bdc598adb6b0a7a2"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_CONTRACT_2026-10-18.md.sha256": {
+      "bytes": 122,
+      "mtime_ns": 1792288130571148000,
+      "sha256": "b44d60c7f6937744c005135dae5e43a6d50f6b80b0a9d170d6aa31e148d1a022"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_REPORT_2026-10-18.md": {
+      "bytes": 15258,
+      "mtime_ns": 1792289830107995900,
+      "sha256": "7237b9649f08fe16746660415f418dd93b0268b81edb0871e6105abdca7c47ef"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_REPORT_2026-10-18.md.sha256": {
+      "bytes": 120,
+      "mtime_ns": 1792289874117780200,
+      "sha256": "4a73575f69cb2de3fa56532217f9cce461beb72c47668182ade37720061109af"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md": {
+      "bytes": 11798,
+      "mtime_ns": 1792287293562288100,
+      "sha256": "44113ba26531526435206a520495e56e5d57cae3c8e6843595a0dc871d9dd305"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md.sha256": {
+      "bytes": 121,
+      "mtime_ns": 1792287338619695000,
+      "sha256": "a1086dcf028e46beb5a10b259ebf1d788947845c0e190ddeb72061a6471365bb"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V1_CONTRACT_2026-10-18.md": {
+      "bytes": 4729,
+      "mtime_ns": 1792290426299669700,
+      "sha256": "4e81b770bcf5ad3b999ce34af37326803c1f73aba852b21f1d0bafb75c2a5f96"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V1_CONTRACT_2026-10-18.md.sha256": {
+      "bytes": 122,
+      "mtime_ns": 1792291331516818600,
+      "sha256": "057016f7d2a8a52842d761f5cb8c02f8ba8bfb48d087402cb2cc0e1b693977b7"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V2_PREFLIGHT_ADDENDUM_2026-10-18.md": {
+      "bytes": 1752,
+      "mtime_ns": 1792291376153182400,
+      "sha256": "255484635f5a6f665ce65484cb665d640951e8b7400f482c4289a8ca99cfb0eb"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V2_PREFLIGHT_ADDENDUM_2026-10-18.md.sha256": {
+      "bytes": 132,
+      "mtime_ns": 1792291422357345800,
+      "sha256": "5afb642514a1e090364c60b39da10743317ef3056faaec2e28edbeee2369135e"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md": {
+      "bytes": 11596,
+      "mtime_ns": 1792225651869451300,
+      "sha256": "b47dcf5e7fc340a015f2e7cdf273157bc6e2e1ba311bbc543a5f66596dbc83d2"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md.sha256": {
+      "bytes": 117,
+      "mtime_ns": 1792225664034429100,
+      "sha256": "e33d6b064900060c52c80523b2b4740f581087a8617a811c885186189c8696e9"
+    }
+  },
+  "source_sha256": {
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/trajectories.json": "3e36b9594ec4f186fff610a291011b6344b23ba98645922dfd7ad78d242ee4b3",
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/certificates.json": "7c3465014fd85d7a98b905eed721c907f2f7764ccefadf856680ecf068d7127a",
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/proof.json": "b96ee17ec3d3f14500d0bf59d786411f5e241cbbb238ef49f3dc34657a18646b",
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/summary.json": "993b5cfffcb4b7c4106656a6929dfcc0379858c53e6556f60bb5b56b24ec5f4c",
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/audit.json": "9351821690ca15a3fe58b59b0b932090a229ecbc84c30bc700b2b36c39df3491",
+    "Analysis/MasterTests/outputs/r4c1_initial_charge_completion_attempt_04/formulas.json": "b1f62daaebdb1602ccc20350669b22aeb601d7e8d8cccad4626e420e317bb6f3",
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/formulas.json": "beaf647957a18ddd14881333de29cebc9a567ffcc62a9b4d775153984a0add73",
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/summary.json": "586fe456022419f65965750ecc3137cf74b6eafb84f3a4dec670f2f611f51b3f",
+    "Analysis/MasterTests/outputs/r4c1_planar_coupled_vertices_attempt_01/formulas.json": "852b657c9023244a76cc49494b6adb08510d4eeb74bd95ec390ff11bc6b0789a",
+    "Analysis/MasterTests/test_01_r4c1_finite_tilt_canonical_v2.py": "4c2a64f45741161ccacdb75bd0816e5113a9d0b95ba2aa402584f2cb8533dada",
+    "Analysis/MasterTests/test_01_r4c1_initial_admission_v1.py": "d994707a9261e276b6d9fcb3377acfd75387ce8cdac10f7756e2f791c5787e0a",
+    "Analysis/MasterTests/test_01_r4c1_initial_charge_completion_v4.py": "af22270b76b72d29a04bdfba366464bcc2482ec5f2e41f5ffe66061fee7f4020",
+    "Analysis/MasterTests/test_01_r4c1_initial_constraint_v1.py": "6ba9c73d71d2ef9dd3fc59f34d5fe781d528d5636a29a85bed748290bda989ff",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_node_acceleration_v1.py": "f91899a6add8ceff67b2358f63f6cc8f2ec8b18cc0d486a00039fa4b84250e1b",
+    "Analysis/MasterTests/test_01_r4c1_node_acceleration_v2.py": "1e77ba8e8fc9d09d3e7e4a3a556405fa45dd5ce0dbf89580ff7ae2df106a9a7c",
+    "Analysis/MasterTests/test_01_r4c1_regulator_node_v1.py": "7126d03a3b3a3a525bf1ce4c8b31c8541901f9d7c45ad82c288db71cc97cfa25",
+    "GEMINI.md": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12",
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa",
+    "Theory/Core/ITSM_DUST_GR_WEAKFIELD_EXECUTION_PLAN_2026-10-11.md": "14bf01842d7fa573c22d78f021ec815421fb01a4b97fee806c1fbed22b676519",
+    "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809",
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_REPORT_2026-09-25.md": "3019196b071b146a1e41cd055073ae02da2afa10b1cdb5ae49e0a63cf84a6eb6",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_CONTRACT_2026-10-18.md": "88b0ddb963912de6ddca377108361bcb9a584686826a6934bdc598adb6b0a7a2",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_REPORT_2026-10-18.md": "7237b9649f08fe16746660415f418dd93b0268b81edb0871e6105abdca7c47ef",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md": "44113ba26531526435206a520495e56e5d57cae3c8e6843595a0dc871d9dd305",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V1_CONTRACT_2026-10-18.md": "4e81b770bcf5ad3b999ce34af37326803c1f73aba852b21f1d0bafb75c2a5f96",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V2_PREFLIGHT_ADDENDUM_2026-10-18.md": "255484635f5a6f665ce65484cb665d640951e8b7400f482c4289a8ca99cfb0eb",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md": "b47dcf5e7fc340a015f2e7cdf273157bc6e2e1ba311bbc543a5f66596dbc83d2"
+  },
+  "stage2_complete": false,
+  "stage3_entered": false,
+  "status": "NECESSARY_NODE_ACCELERATION_TEST_ONLY_HIGHER_COMPLETION_AND_EVOLUTION_OPEN",
+  "tested_case_count": 9,
+  "total": 48,
+  "validation": "PASS_NODE_ACCELERATION_COMPATIBILITY_AUDIT_ONLY"
+}
