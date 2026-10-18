@@ -14,9 +14,10 @@ cosmology paper. Its narrow claims remain subject to author and independent revi
 | File | Role |
 |------|------|
 | `main.tex` + `references.bib` | Source |
-| `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc6.pdf` | Current local review PDF |
+| `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc7.pdf` | Current local review PDF |
+| `ITSM_P1_source_v0.2.0-rc7_2026-10-17.zip` | Portable rc7 source bundle |
 | `CoverLetter.txt` | arXiv comment / journal cover letter |
-| Figure via `\graphicspath` | Bundle `itsm_t3_fundamental_domain.pdf` in `figures/`; the projection illustration is not included in rc6 |
+| Figure via `\graphicspath` | Bundle `itsm_t3_fundamental_domain.pdf` in `figures/`; the projection illustration is not included in rc7 |
 
 For arXiv/journal upload, bundle the retained fundamental-domain figure and
 use `\graphicspath{{figures/}}` in the packaged source. Include `main.tex`,
@@ -64,9 +65,9 @@ cd papers\P1-Scale-Matching-Reconstruction
 
 ### Human steps before upload
 
-Current candidate: `0.2.0-rc6`, 17 October 2026. The
-[rc6 revision report](../ReleasePackages/2026-10-17/P1-rc6/P1_RC6_REVISION_REPORT_2026-10-17.md)
-records the audio-feedback response, preserved equations and scientific scope,
+Current candidate: `0.2.0-rc7`, 17 October 2026. The
+[rc7 revision report](../ReleasePackages/2026-10-17/P1-rc7/P1_RC7_REVISION_REPORT_2026-10-17.md)
+records the presentation correction, preserved equations and scientific scope,
 build and visual checks, and retained prior artifacts. The recording is an
 editorial input, not independent scientific validation. Final author verification
 and applicable review remain outstanding.

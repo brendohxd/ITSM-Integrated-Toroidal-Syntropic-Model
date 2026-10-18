@@ -1904,3 +1904,39 @@ Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVE
 V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 unchanged; physics_pass=false;
 gate_effect=NONE. No vault, manuscript/PDF/site, commit/push, publication,
 provider/model/runtime or action change. Unrelated paper work is untouched.
+
+
+### 2026-10-17: R9-MT1-REGULATOR-NODE-V1 - necessary node compatibility
+
+- Owner: [RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md](../Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md). Canonical owner path: Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md.
+- Review DEFERRED, Rule9_cleared=false. Unchanged-action Stage 2; 187/187 local checks and complete exact read-only replay, exit zero. These are same-author controls, not independent review.
+- The unreduced regulator gives chi=Z+Delta_h psi+p divV=0 at alignment. Necessary transport retains metric/lapse/frame drift and moving-node terms. A conditional C2 quotient theorem requires both normal numerator jets and supplies explicit M/(2c) bounds; no regular inverse is used at V=0.
+- All 18 archived runs and 72 stored full-response events are retained. Quadratic nodal constraint/transport residuals pass the frozen 1e-10 control; this is not continuous-time or all-order alignment/admission.
+- Omitting the actual cubic cusp momentum can induce an order-|e| regulator-velocity defect. The velocity archive is unchanged and is not a cusp-omitting canonical state.
+- Inherit FINITE-TILT-CANONICAL-V2, FINITE-TILT-CONSTRAINT-V1, G3N5, generic-family and all transitive review debt. Provisional reuse is limited to these necessary formulas and sampled controls.
+- Substantive open work: full arbitrary-3D/rank-changing constraint reduction, admissible finite-amplitude data/persistence, physical Hessian/Cauchy/energy domain, nonlinear remainder, physical window, healthy GR and genuine matter-residue/nonlinear-force matching.
+- Stage1 original linear prepared-dust acceptance only; Stage2 INCOMPLETE; Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 unchanged; physics_pass=false; gate_effect=NONE. No vault/manuscript/site, commit/push, model/runtime or action change.
+
+
+### 2026-10-18: R9-MT1-INITIAL-CONSTRAINT-V1 - nonlinear initial constraint system
+
+- Owner: [RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md](../Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md).
+- Review DEFERRED, Rule9_cleared=false. Local 222/222 and complete exact read-only replay, exit0. Full initial-data contract acceptance is PARTIAL/OPEN, not passed.
+- From the unchanged action: nonlinear transverse first integral, longitudinal Sturm-Liouville operator and full forward-momentum lapse functional, including partial_z(gamma*pVz). Arbitrary Xz is retained before momentum differentiation.
+- Exact rational coercivity/denominator bounds hold at all nine registered family/eta points for |e|<=1/500 in the declared odd pi-periodic shift sector. This is conditional constraint invertibility for specified H and regulator data, not physical energy, Cauchy stability, a zero-mode/GR theorem or an EFT window.
+- All18 archived quadratic longitudinal-shift controls agree; 162 independent original-coordinate density controls retain both amplitude signs and all cases. Existing archives and original failed attempts remain unchanged.
+- Remaining initial acceptance: certify the mean H root with both global charges, construct and prove pointwise positive lapse-derived density, complete regulator normal-jet data and verify the full candidate/local constraints with controlled errors. No new initialization is adopted or evolved.
+- Inherit REGULATOR-NODE-V1, FINITE-TILT-CANONICAL-V2, FINITE-TILT-CONSTRAINT-V1, original preparation, G3N5, generic-family and all transitive review debt. Provisional reuse is bounded to the exact system and conditional shift result.
+- Stage1 original linear prepared-dust acceptance only; Stage2 INCOMPLETE; Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 unchanged; physics_pass=false; gate_effect=NONE. No vault, manuscript/site, commit/push, action or model/runtime change.
+
+
+### 2026-10-18: R9-MT1-INITIAL-ADMISSION-V1 - certified known initial surface, not full admission
+
+- Owner: [RES001_R4C1_INITIAL_ADMISSION_V1_REPORT_2026-10-18.md](../Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_REPORT_2026-10-18.md); SHA7237b9649f08fe16746660415f418dd93b0268b81edb0871e6105abdca7c47ef.
+- Original217/217 local checks, all9 family/eta interval certificates, all angles and continuous |e|<=1/500. The exact inverse and unique mean H root define an implicit known-constraint candidate; no state is adopted or evolved.
+- Mean root has opposite strict endpoint signs and strict total H derivative. The local lapse flux is retained; uniform density lower bound exceeds0.1683 versus reference0.2. Shift approximation residual and H-sensitivity errors are controlled by the exact residual/coercivity, not ignored as Taylor terms.
+- Action-derived phase, volume, regulator and regulator-velocity coefficients match all18 archived initial events. Old shift bridge is inherited, not rerun. Reference-unit amplitude bounds are not a physical EFT frequency/momentum window.
+- Preserve the first CLI replay failure at its combined proof.json byte/metadata guard. Fresh attempt02 matches all4 JSONs. A separately frozen strict auditor freshly recomputes all217 checks and passes exact comparison of all8 original payload/sidecar bytes, sizes and mtimes. The historical CLI failure cause remains NOT_ESTABLISHED; it is not relabelled. Audit SHA9351821690ca15a3fe58b59b0b932090a229ecbc84c30bc700b2b36c39df3491.
+- Review DEFERRED; Rule9_cleared=false. Inherit INITIAL-CONSTRAINT-V1, node, canonical, preparation, G3N5, generic-family and transitive review debt. Provisional reuse is limited to the declared known initial surface/bounds.
+- Full initial-data admission OPEN: higher/rank-changing Dirac and acceleration consistency, persistence, physical reduced Hessian/Cauchy/energy domain, nonlinear evolution error, physical window, healthy GR and identifying matter/nonlinear matching remain required. No physical family GO or ghost/healthy verdict.
+- Stage1 original linear acceptance only; Stage2 INCOMPLETE; Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; UVIR-003 IN_PROGRESS; K_Q NOT_DERIVED; V NOT_COMPUTED; Stage4A CLOSED; TOP-X4 unchanged; physics_pass=false; gate_effect=NONE. No vault/manuscript/site, commit/push, publication, action or model/runtime change.

@@ -1,8 +1,8 @@
 # P1 — Present-epoch scale matching and $C_{\mathrm{obs}}$ hygiene
 
 **Directory:** `papers/P1-Scale-Matching-Reconstruction/`  
-**VERSION:** see `VERSION` (currently `0.2.0-rc6`)
-**Canonical PDF:** `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc6.pdf`
+**VERSION:** see `VERSION` (currently `0.2.0-rc7`)
+**Canonical PDF:** `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc7.pdf`
 
 (the build script writes this named PDF directly and emits its `.sha256`
 sidecar; see `papers/PAPERS_NAMING.md`)
@@ -27,6 +27,14 @@ sidecar; see `papers/PAPERS_NAMING.md`)
 | Dual $a_0=cH_0/2\pi$ + $C_{\mathrm{obs}}=2/3$ | Conditional $4/9$ normalization conflict in the spherical baseline; not a global $T^3$ prediction or completed data fit |
 
 ## Release-candidate revision
+
+Version `0.2.0-rc7` is a presentation correction of rc6. It names the public
+v11 package on `main` and Zenodo `10.5281/zenodo.18808348` as the package
+under test, shows the Planck 2018 central-value arithmetic behind the retained
+`O(6)` length conversion, prints the full GitHub address on two lines, and retains the REVTeX `showkeys` option because that option prints the keyword line. The central-value ratio is `3.117`, not the coarser `3.15`. The
+displayed `L` bound remains `6 c/H_0`, and the factor-of-six scale comparison
+is unchanged. No disposition, physical equation, or rc6 artifact was replaced.
+See the [rc7 revision report](../ReleasePackages/2026-10-17/P1-rc7/P1_RC7_REVISION_REPORT_2026-10-17.md).
 
 Version `0.2.0-rc6` applies the recording's three presentation recommendations:
 the introduction explains the physical ambition of the tested construction;
@@ -98,7 +106,8 @@ arXiv/journal text.
 | `Build-P1-Scale-Matching-Reconstruction.ps1` | Build helper |
 | `SUBMISSION.md` | Pre-flight / venue notes |
 | `CoverLetter.txt` | Cover letter draft |
-| `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc6.pdf` | Current review PDF |
+| `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc7.pdf` | Current review PDF |
+| `../ReleasePackages/2026-10-17/P1-rc7/ITSM_P1_source_v0.2.0-rc7_2026-10-17.zip` | Portable rc7 source bundle |
 
 ## Firewall for later papers
 

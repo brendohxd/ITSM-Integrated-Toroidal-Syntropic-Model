@@ -5,7 +5,27 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
-## Latest finite-tilt checkpoint - 17 October 2026
+## Latest initial-constraint and paper checkpoint - 18 October 2026
+
+The [18 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-18.md)
+links the regulator-node conditions, exact restricted nonlinear initial system,
+and certified known initial surface. All nine registered cases have a unique
+mean-expansion root, both charges and positive local dust throughout the declared
+amplitude range on that initial slice. This is not full initial-data admission:
+acceleration/higher rank-changing consistency, persistence and evolution remain
+open. The first CLI replay failure is retained alongside a separately audited
+fresh exact replay; its historical cause remains unresolved.
+
+P1 rc7 and its portable source package are retained for author review. The
+separate ET2-A0 topology/free-spectrum control does not replace canonical spatial
+T3 or supply a Lorentzian completion. The main working manuscript remains local;
+its editorial report is retained to resolve the existing review-register link.
+
+Stage 1 retains its original bounded linear acceptance; Stage 2 is incomplete;
+Stage 3 is not entered. Both identifying matching inputs remain absent. Review
+is deferred, not cleared, and no gate, publication or deployment is promoted.
+
+## Preserved finite-tilt checkpoint - 17 October 2026
 
 The [finite-tilt evidence map](Theory/Verification/ITSM_FINITE_TILT_CHECKPOINT_2026-10-17.md)
 preserves the new complete velocity-map audit and action-derived canonical

@@ -85,14 +85,30 @@ orders the research, and the [Master Research Plan](Theory/Core/ITSM_Master_Rese
 defines the authority and claim boundaries. Script check counts and hash
 matches establish only their stated calculation or artifact scope.
 
-## 🧪 Current research checkpoint — 17 October 2026
+## 🧪 Current research checkpoint — 18 October 2026
 
-The [finite-tilt checkpoint and evidence map](Theory/Verification/ITSM_FINITE_TILT_CHECKPOINT_2026-10-17.md)
-record the latest action-derived constraint work. The
+The [18 October checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-18.md)
+record the latest initial-constraint work and P1 revision. The
+[finite-tilt checkpoint](Theory/Verification/ITSM_FINITE_TILT_CHECKPOINT_2026-10-17.md) and
 [earlier 17 October checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)
-preserves the preceding cubic-response and paper revisions. These are bounded
+preserve the preceding canonical, cubic-response and paper revisions. These are bounded
 mathematical advances, not a physical viability verdict:
 
+- **Known initial constraints now have a certified construction:** the
+  [initial-surface report](Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_REPORT_2026-10-18.md)
+  establishes a unique mean-expansion root, both global charges and positive
+  local dust density for all nine registered family/parameter cases and the
+  continuous amplitude range $|e|\leq1/500$ on the declared planar initial slice.
+  The 217/217 local checks do not establish full initial-data admission:
+  higher/rank-changing consistency, acceleration compatibility and evolution
+  remain open. The first CLI replay failure is preserved; a separately
+  instrumented fresh replay matched all eight original payload/sidecar files.
+- **Wave nodes are tested without dividing through zero tilt:** the
+  [regulator-node report](Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md)
+  supplies necessary alignment/transport conditions and retains all 72 archived
+  full-response events. The [exact initial system](Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md)
+  retains the local lapse flux and a controlled shift inverse. These are
+  constraint results, not a proof of persistence or physical stability.
 - **Finite-tilt canonical formulas are now explicit:** the
   [owning report](Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md)
   supplies the coupled lapse and shift constraints, including the local
@@ -102,9 +118,9 @@ mathematical advances, not a physical viability verdict:
 - **The regular inverse has a real boundary:** the
   [complete velocity-map audit](Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CONSTRAINT_V1_REPORT_2026-10-17.md)
   passes 243/243 local checks but does not classify physical modes. Alignment
-  points of the registered wave lie outside the regular inverse. Their
-  unreduced constraints and admissible finite-amplitude initial data remain
-  unresolved. The original canonical V1 failure is retained unchanged.
+  points of the registered wave lie outside the regular inverse. The new
+  node and initial-surface results above do not yet resolve full admission or
+  evolution through them. The original canonical V1 failure is retained unchanged.
 
 - **Cubic fields are now summable in the registered calculation:** the
   [source-aware estimate](Theory/Gates/RES-001/RES001_R4C1_CUSP3_SOURCE_AWARE_WINDOW_V1_REPORT_2026-10-17.md)
@@ -124,14 +140,15 @@ mathematical advances, not a physical viability verdict:
   checks mode geometry and normalization, while showing why those alone do
   not identify the physical matter response or force coefficient.
 
-The next substantive boundary is the finite-amplitude coupled constraint,
-kinetic and physical-domain assessment of the unchanged action. Stage 2 is
+The next substantive boundary is acceleration/higher-constraint compatibility
+and persistence of the candidate data, followed by the physical reduction and
+validity-domain assessment of the unchanged action. Stage 2 is
 incomplete; numerical Stage 3 has not been entered. Matter-residue and
 nonlinear-force matching inputs are still missing. Earlier failed proof
 constructions and their original receipts are retained, not relabelled.
 
 P1's current review candidate is
-[`v0.2.0-rc6`](papers/P1-Scale-Matching-Reconstruction/README.md), and P2's is
+[`v0.2.0-rc7`](papers/P1-Scale-Matching-Reconstruction/README.md), and P2's is
 [`v0.2.0-rc4`](papers/P2-Rectangular-T3-Casimir/README.md). Their revisions and
 preserved earlier packages are documented; author verification and applicable
 independent review remain pending. P2's sensitivity receipt remains 18/19

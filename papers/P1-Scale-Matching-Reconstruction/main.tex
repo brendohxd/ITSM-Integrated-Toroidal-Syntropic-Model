@@ -40,12 +40,13 @@
 \thanks{%
 \begin{tabular}{@{}l@{\ }l@{}}
 ORCID: & \href{https://orcid.org/0009-0007-4177-2612}{0009-0007-4177-2612} \\
-GitHub: & \href{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}{\texttt{github.com/brendohxd/ITSM-...}} \\
+GitHub: & \href{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}{\nolinkurl{github.com/brendohxd/}} \\
+        & \href{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}{\nolinkurl{ITSM-Integrated-Toroidal-Syntropic-Model}} \\
 Zenodo: & \href{https://doi.org/10.5281/zenodo.18808348}{doi:10.5281/zenodo.18808348} \\
 \end{tabular}%
 }
 
-\date{Version 0.2.0-rc6 --- October 17, 2026}
+\date{Version 0.2.0-rc7 --- October 17, 2026}
 
 \begin{abstract}
 The coincidence \(2\pi\azero\sim c\Hzero\) is a standard observation in the
@@ -116,14 +117,25 @@ It would show only that the empirical coincidence and the cubic topology do
 not supply the claimed derivation without additional physics.
 
 For a definite consistency test, we define the following two-step hypothesis.
-It is an author-defined construction, not an attribution of this complete
-package to a particular published model:
+It is the author's public v11 construction, not an attribution of this complete
+package to an independent published model:
 \begin{enumerate}
 \item[(A)] ``Circulation quantization'' on a domain of size \(L=c/\Hzero\)
   yields \(\azero=c\Hzero/2\pi\);
 \item[(B)] the transverse-projector ratio \(2/3\) yields the EFT coefficient
   \(\Cobs\) in a deep-MOND square-root law.
 \end{enumerate}
+
+This hypothesis is the public v11 package constrained by the present note.
+The historical repository line \texttt{main} states that macroscopic
+circulation quantization derives \(\azero=c\Hzero/2\pi\), and that the
+projector trace is the geometric coefficient \(\Cobs=2/3\).
+The project records Zenodo
+\href{https://doi.org/10.5281/zenodo.18808348}{10.5281/zenodo.18808348}
+as the legacy public archive of that package.
+The assignment \(L=c/\Hzero\) is the Hubble-scale domain used by the
+scale-matching step. This note does not attribute the package to an
+independent published model.
 
 The appeal of this construction is that a Hubble-scale domain appears to
 supply the dimensional acceleration input, while a projector count appears
@@ -530,14 +542,33 @@ confidence statements. For a cube of side \(L\),
   L \gtrsim 1.94\,\chi_{\mathrm{rec}}\,.
   \label{eq:L-chi}
 \end{equation}
-With \(\chi_{\mathrm{rec}}\simeq 3.15\,c/\Hzero\) in a Planck cosmology
-\cite{planck},
+The cited Planck 2018 TT,TE,EE+lowE+lensing central values are
+\(r_*=144.43\,\mathrm{Mpc}\), \(100\theta_*=1.04110\), and
+\(\Hzero=67.36\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\) \cite{planck}.
+On that flat background
+\(\chi_{\mathrm{rec}}=r_*/\theta_*\). With
+\(c=299792.458\,\mathrm{km\,s^{-1}}\),
+\begin{align*}
+\theta_* &= 0.0104110,\\
+\chi_{\mathrm{rec}}
+ &= 144.43/0.0104110 = 13872.8\,\mathrm{Mpc},\\
+c/\Hzero
+ &= 299792.458/67.36 = 4450.60\,\mathrm{Mpc},\\
+\chi_{\mathrm{rec}}/(c/\Hzero) &= 3.117,\\
+1.94\times 3.117 &= 6.05.
+\end{align*}
+The central-value product is therefore
+\(L\gtrsim 6.05\,c/\Hzero\). The retained conversion
 \begin{equation}
   L \gtrsim 6\,\frac{c}{\Hzero}
   \label{eq:L-H}
 \end{equation}
-as an approximate conversion in that background, not a topology-only
-inequality in Hubble units. Recent topology surveys likewise place the shortest
+rounds that product to the one-figure \(\mathcal{O}(6)\) bound already
+stated in the abstract. It is an approximate conversion in the cited
+background, not a topology-only inequality in Hubble units. The coarser
+round number \(3.15\) is not the ratio obtained from these central values.
+The \(\mathcal{O}(6)\) statement, the factor-of-six comparison below, and
+Eq.~\eqref{eq:a0-suppressed} are unchanged. Recent topology surveys likewise place the shortest
 \(E_1\) side near the diameter scale of the last-scattering surface, not one
 Hubble radius \cite{compact_promise,planck_topology}.
 
@@ -713,7 +744,9 @@ Figure~\ref{fig:t3} is produced by
 \texttt{Scripts/itsm\_t3\_fundamental\_domain.py}.
 Source code is available in the
 \href{https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model}{public GitHub repository}
-and the \href{https://doi.org/10.5281/zenodo.18808348}{project Zenodo archive}.
+and the \href{https://doi.org/10.5281/zenodo.18808348}{Zenodo record 10.5281/zenodo.18808348}.
+That record is the historical public archive of the v11 package
+constrained in this note. It is not a derivation authority.
 Scripts that render an embedded doughnut surface depict \(\Ttwo\) and should
 not be used as \(\Tthree\) schematics.  No new observational catalogue is
 analysed.

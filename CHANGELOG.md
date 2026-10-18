@@ -1,5 +1,42 @@
 # ITSM Changelog & Archive History
 
+## Initial-constraint certificates, node controls and P1 rc7 (2026-10-18)
+
+- Added the [18 October checkpoint/evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-18.md)
+  for verified work since `0585f359`. This is a research/documentation checkpoint,
+  not a new physical acceptance or publication decision.
+- Retained the regulator-node audit (187/187), exact restricted nonlinear
+  initial system (222/222), and known initial-surface certificates (217/217).
+  The latter cover all nine registered cases and continuous `|e|<=1/500`, with
+  a unique mean-expansion root, both global charges and positive local dust.
+  Full admission, acceleration/higher consistency and evolution remain open.
+- Preserved the first initial-admission CLI replay failure and its unresolved
+  cause. Fresh attempt 02 reproduces the four JSON payloads; the separately
+  frozen auditor records exact fresh replay and preservation of all eight
+  original payload/sidecar files. This checkpoint rechecks stored integrity,
+  not a new execution of the full scientific calculations.
+- Retained the TOP-001 ET2-A0 22/22 topology/signature/free-spectrum control.
+  A Euclidean periodic-time compact factor is not a physical equivalence to
+  canonical spatial `T3`; Lorentzian completion remains open. TOP-X4 and the
+  canonical topology are unchanged.
+- Retained P1 `0.2.0-rc7`, its versioned PDF, portable sources and sealed ZIP.
+  It identifies the historical v11 package under test and makes the conditional
+  Planck length conversion explicit (`3.117`, giving `6.05`, retained as `O(6)`).
+  Its scientific dispositions are unchanged; author verification and review
+  remain pending. Earlier P1 candidates and P2's failed sensitivity receipt
+  are preserved. No manuscript or PDF was rebuilt for this checkpoint.
+- Updated README, branch orientation, recovery navigation and the P1 naming
+  registry. Included existing append-only execution/review records and the
+  main-manuscript editorial report they cite; separate unreviewed working
+  manuscript builds, unfinished node-acceleration work, private logs, scratch,
+  raw inputs, vault data and credentials remain local. No files were deleted.
+- Stage 1 remains complete only in its registered linear prepared-dust scope;
+  Stage 2 is incomplete and Stage 3 not entered. Tests 1-3 `HOLD_SUBSTANTIVE`,
+  MAT-001 `BLOCKED`, UVIR-003 `IN_PROGRESS`, `K_Q=NOT_DERIVED`,
+  `V=NOT_COMPUTED`, Stage 4A `CLOSED`, review `DEFERRED`,
+  `Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
+  Commit/push is operator-authorized; no website deployment or submission.
+
 ## Finite-tilt velocity map and canonical-constraint checkpoint (2026-10-17)
 
 - Added the [finite-tilt checkpoint and exact-byte evidence map](Theory/Verification/ITSM_FINITE_TILT_CHECKPOINT_2026-10-17.md)

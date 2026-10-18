@@ -9,8 +9,12 @@ For current canonical gate authority use the
 [live dashboard](../active_research.md); for later research continuations use
 the [execution queue](../Theory/Core/ITSM_Recovery_Execution_Queue.md) and
 [deferred-review register](../Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md).
-This documentation snapshot links committed research evidence; newer local
-continuations are not included in the documentation commit.
+For later committed work, use the
+[18 October 2026 checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-18.md):
+known initial constraints are certified only on the declared slice; full
+admission, persistence and a physical validity window remain open. Its evidence
+map also links P1 rc7 and the held Euclidean-time topology control. The dated
+11 October sections below are preserved, not silently updated to later results.
 
 Source: pre-layout `README.md`, SHA-256
 `ccdd4a2db3353fe3c06d430d3b97297438adeae3893d11d4a1b8a6aa868dc568`.

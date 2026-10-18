@@ -1,0 +1,32 @@
+{
+  "Euler_Z": "E_Z/b = Z + hp^{ab} nabla_a nabla_b psi + theta*(n.grad psi)",
+  "Hessian_projection": {
+    "Q00": "D_t p/N - D^i lnN D_i psi",
+    "Q0i": "D_i p-K_i^j D_j psi",
+    "Qij": "D_iD_j psi-Kij*p"
+  },
+  "aligned_constraint": "chi=Z+Delta_h psi+p*D_i V^i=0; pZ=0; Ppsi=K_Q*p",
+  "archive_node_formula": "chi2=Z0-2ReZ2+8k^2/a^2 RePi2+4k*p/a ImVz2",
+  "archive_transport_formula": "chi2_dot=Zd0-2ReZd2+8k^2/a^2 RePid2-16Hk^2/a^2 RePi2+4k/a*(p ImVzd2+(pdd-Hp) ImVz2)",
+  "cusp_momentum": "Ppsi_cusp=-3A sqrt(Y)*(V2*p+gamma*V.Dpsi)",
+  "general_ADM": "Z+V2*Q00+2*gamma*Vi*Q0i+(h^ij+ViVj)*Qij+theta*(gamma*p+Vi*Di psi)",
+  "homogeneous_initial_cusp_shift": "Omitting Ppsi_cusp at fixed other complete momenta changes Zhat by -(3A/b)*|e*w*cos(kz)|*|p|p, provided the regular inverse applies",
+  "interpretation": "Necessary local compatibility and sampled quadratic archive checks only; not full nonlinear physical reduction",
+  "local_quotient_theorem": {
+    "Z_bound": "|Zhat|<=MZ/(2*|b|*c)",
+    "assumptions": "simple signed profile coordinate sigma; V=sigma W; W2>=c>0 continuous; each numerator F is C2 in sigma with F(0)=F_normal(0)=0 and |F_normalnormal|<=M",
+    "exclusions": [
+      "not sufficient full constraint admission",
+      "no C1 quotient follows from C2 numerator",
+      "no uniform e,w,eta or b=0 limit",
+      "degenerate zeros not covered"
+    ],
+    "identity": "F/sigma^2=integral_0^1 (1-u) F_normalnormal(u*sigma) du",
+    "necessity": "A bounded quotient with C1 F requires both normal jets to vanish; with C2 F the quotient has a continuous extension",
+    "numerators": "Fpsi=PZ/b+gamma*V.Dpsi; FZ=Ppsi-ell_prime.y-f_prime; use complete action coefficients",
+    "psi_bound": "|psi_hat|<=Mpsi/(2*c)"
+  },
+  "moving_worldsheet": "For T=D_t+r^i D_i tangent to Sigma, require T chi=D_t chi+r^i D_i chi=0; do not assert D_t Sigma=0",
+  "registered_coefficient": "66*eta**(5/2)/875",
+  "transport": "D_t chi=D_t Z+Delta_h(N*p)-2N*K^ij*D_iD_j psi-(2D_i(NK^ij)-D^j(NK))*D_j psi+(D_t p)*divV+p*div(D_t V) at V=0"
+}

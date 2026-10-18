@@ -1,0 +1,652 @@
+{
+  "base_commit": "0585f359d9eb62bda42dc549a2198ccbb3e2d4be",
+  "branch": "recovery/v12-core-architecture",
+  "date": "2026-10-18",
+  "excluded": [
+    "Unfinished node-acceleration source/contract",
+    "Separate main-manuscript working builds, reconciliation drafts, bibliography and figure work",
+    "Private logs, scratch, raw recordings/chats/critiques, vault data and credentials"
+  ],
+  "files": {
+    ".gitattributes": {
+      "bytes": 2362,
+      "sha256": "66b45c61b099df4730242378c532f51c6e56360d4d7798f1e08df8f6faa58d58"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_initial_admission_replay_v1.py": {
+      "bytes": 6994,
+      "sha256": "1dd930c4b239a185d1402c0fa3be2eada8df46aa838b472074c9cc87e5a6baad"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_initial_admission_replay_v1.py.sha256": {
+      "bytes": 111,
+      "sha256": "947bd307b2539d7d3122d463ad8eb30bdc101c91058d24e470d56fbe73e67571"
+    },
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/formulas.json": {
+      "bytes": 22086,
+      "sha256": "8aef9982815d5a56804c330cff60e99b9c4111e59cd167182f4ad9da3a388e7c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/formulas.json.sha256": {
+      "bytes": 80,
+      "sha256": "573218c8de9d4a9aca504147120b7b0e5b64564d77b595bc5a7399e2f5b858cb"
+    },
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/trajectories.json": {
+      "bytes": 6004343,
+      "sha256": "3e36b9594ec4f186fff610a291011b6344b23ba98645922dfd7ad78d242ee4b3"
+    },
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/trajectories.json.sha256": {
+      "bytes": 84,
+      "sha256": "27d55bd372480f7763b4fb2bd5eadc11f2f1d76bcf6a75cb6820a02ddfa106d7"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/archive_controls.json": {
+      "bytes": 21516,
+      "sha256": "9267bb9360495eb103f44940e9b4d5120d862ac6ab585eca902ed170fef31673"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/archive_controls.json.sha256": {
+      "bytes": 88,
+      "sha256": "15899730d13b2e16e4923e55e3897c7c0ba04ce4efd14b5a0407a5a843647dab"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/certificates.json": {
+      "bytes": 89895,
+      "sha256": "7c3465014fd85d7a98b905eed721c907f2f7764ccefadf856680ecf068d7127a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/certificates.json.sha256": {
+      "bytes": 84,
+      "sha256": "a21d829ae6207e718b7e104255e4100861b25e5020f1f7918d8954a1521c22cb"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/proof.json": {
+      "bytes": 27496,
+      "sha256": "b96ee17ec3d3f14500d0bf59d786411f5e241cbbb238ef49f3dc34657a18646b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/proof.json.sha256": {
+      "bytes": 77,
+      "sha256": "a7f7e1aea1ee5bd0c920d17141b3f819556821c57e8173276b85fca085fa76bd"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/summary.json": {
+      "bytes": 49349,
+      "sha256": "993b5cfffcb4b7c4106656a6929dfcc0379858c53e6556f60bb5b56b24ec5f4c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/summary.json.sha256": {
+      "bytes": 79,
+      "sha256": "7c974dfb22419b23b386b1a5db1e2a67fe8b3326c1fbe7273b5c51c2ed025601"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_02/archive_controls.json": {
+      "bytes": 21516,
+      "sha256": "9267bb9360495eb103f44940e9b4d5120d862ac6ab585eca902ed170fef31673"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_02/archive_controls.json.sha256": {
+      "bytes": 88,
+      "sha256": "15899730d13b2e16e4923e55e3897c7c0ba04ce4efd14b5a0407a5a843647dab"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_02/certificates.json": {
+      "bytes": 89895,
+      "sha256": "7c3465014fd85d7a98b905eed721c907f2f7764ccefadf856680ecf068d7127a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_02/certificates.json.sha256": {
+      "bytes": 84,
+      "sha256": "a21d829ae6207e718b7e104255e4100861b25e5020f1f7918d8954a1521c22cb"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_02/proof.json": {
+      "bytes": 27496,
+      "sha256": "b96ee17ec3d3f14500d0bf59d786411f5e241cbbb238ef49f3dc34657a18646b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_02/proof.json.sha256": {
+      "bytes": 77,
+      "sha256": "a7f7e1aea1ee5bd0c920d17141b3f819556821c57e8173276b85fca085fa76bd"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_02/summary.json": {
+      "bytes": 49349,
+      "sha256": "993b5cfffcb4b7c4106656a6929dfcc0379858c53e6556f60bb5b56b24ec5f4c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_02/summary.json.sha256": {
+      "bytes": 79,
+      "sha256": "7c974dfb22419b23b386b1a5db1e2a67fe8b3326c1fbe7273b5c51c2ed025601"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/audit.json": {
+      "bytes": 20380,
+      "sha256": "9351821690ca15a3fe58b59b0b932090a229ecbc84c30bc700b2b36c39df3491"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/audit.json.sha256": {
+      "bytes": 77,
+      "sha256": "51285f91382068ae75c70af3bee4629b909d29be13411326c21926ef1d3415fe"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/candidate/archive_controls.json": {
+      "bytes": 21516,
+      "sha256": "9267bb9360495eb103f44940e9b4d5120d862ac6ab585eca902ed170fef31673"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/candidate/archive_controls.json.sha256": {
+      "bytes": 88,
+      "sha256": "15899730d13b2e16e4923e55e3897c7c0ba04ce4efd14b5a0407a5a843647dab"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/candidate/certificates.json": {
+      "bytes": 89895,
+      "sha256": "7c3465014fd85d7a98b905eed721c907f2f7764ccefadf856680ecf068d7127a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/candidate/certificates.json.sha256": {
+      "bytes": 84,
+      "sha256": "a21d829ae6207e718b7e104255e4100861b25e5020f1f7918d8954a1521c22cb"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/candidate/proof.json": {
+      "bytes": 27496,
+      "sha256": "b96ee17ec3d3f14500d0bf59d786411f5e241cbbb238ef49f3dc34657a18646b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/candidate/proof.json.sha256": {
+      "bytes": 77,
+      "sha256": "a7f7e1aea1ee5bd0c920d17141b3f819556821c57e8173276b85fca085fa76bd"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/candidate/summary.json": {
+      "bytes": 49349,
+      "sha256": "993b5cfffcb4b7c4106656a6929dfcc0379858c53e6556f60bb5b56b24ec5f4c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_replay_audit_attempt_01/candidate/summary.json.sha256": {
+      "bytes": 79,
+      "sha256": "7c974dfb22419b23b386b1a5db1e2a67fe8b3326c1fbe7273b5c51c2ed025601"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_charge_completion_attempt_04/formulas.json": {
+      "bytes": 1383,
+      "sha256": "b1f62daaebdb1602ccc20350669b22aeb601d7e8d8cccad4626e420e317bb6f3"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_charge_completion_attempt_04/formulas.json.sha256": {
+      "bytes": 80,
+      "sha256": "5ff7947a32a9e2e2373ec0ee46f12e54a122973383e81bc01ed2eafc52f15ea4"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/controls.json": {
+      "bytes": 5915,
+      "sha256": "d555bce09a97537c67441e3541ba193793457917fbcef2d6791a17ce1138d0ac"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/controls.json.sha256": {
+      "bytes": 80,
+      "sha256": "92beea3c408fd454d250058c22b860de3a2ea41a30122b244f4283688a32fbc3"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/formulas.json": {
+      "bytes": 23384,
+      "sha256": "beaf647957a18ddd14881333de29cebc9a567ffcc62a9b4d775153984a0add73"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/formulas.json.sha256": {
+      "bytes": 80,
+      "sha256": "e54c230b39ea9503832487030358bb861ef25414be2d13f0677e51c0526f2d6c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/independent.json": {
+      "bytes": 35270,
+      "sha256": "6632ba424bc896aec5ddfaea8f183a726802b0f4dca4eba481e3e007473ff95a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/independent.json.sha256": {
+      "bytes": 83,
+      "sha256": "2720cd46dfd0f09ba517b2de9399023d53fbfd04133e943a91bd031649062244"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/summary.json": {
+      "bytes": 61945,
+      "sha256": "586fe456022419f65965750ecc3137cf74b6eafb84f3a4dec670f2f611f51b3f"
+    },
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/summary.json.sha256": {
+      "bytes": 79,
+      "sha256": "e82f7dfe847bfebc2be7cb63fb409c3eb994c56e2e75ed4982c0ceed57f94f56"
+    },
+    "Analysis/MasterTests/outputs/r4c1_planar_coupled_vertices_attempt_01/formulas.json": {
+      "bytes": 46580,
+      "sha256": "852b657c9023244a76cc49494b6adb08510d4eeb74bd95ec390ff11bc6b0789a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_planar_coupled_vertices_attempt_01/formulas.json.sha256": {
+      "bytes": 80,
+      "sha256": "4fe32ece70a04b87066151e8155aee97a9a1481c47e49697787b946c6af9f8c6"
+    },
+    "Analysis/MasterTests/outputs/r4c1_regulator_node_attempt_01/archive_nodes.json": {
+      "bytes": 99120,
+      "sha256": "9f867c7d6699103d428b000e883e0f70027caeca95d65ef84b9149f0927ec847"
+    },
+    "Analysis/MasterTests/outputs/r4c1_regulator_node_attempt_01/archive_nodes.json.sha256": {
+      "bytes": 85,
+      "sha256": "c30902276aa1964688ac913a507b88b43290100da0def4053604cc92b131abd2"
+    },
+    "Analysis/MasterTests/outputs/r4c1_regulator_node_attempt_01/formulas.json": {
+      "bytes": 2046,
+      "sha256": "4645438782fedd5fb4a6637edcb2d599d90ea87747c010d6e3c5a8071eca87bb"
+    },
+    "Analysis/MasterTests/outputs/r4c1_regulator_node_attempt_01/formulas.json.sha256": {
+      "bytes": 80,
+      "sha256": "f9011b79758d91d015bea9a866b933d055fa66dc0289b02bfe7e15b32c7d8d11"
+    },
+    "Analysis/MasterTests/outputs/r4c1_regulator_node_attempt_01/independent.json": {
+      "bytes": 3402,
+      "sha256": "1fcc4ca681e918ebe31280f00faad8848cdd35272ba3d3935fbffe690315c645"
+    },
+    "Analysis/MasterTests/outputs/r4c1_regulator_node_attempt_01/independent.json.sha256": {
+      "bytes": 83,
+      "sha256": "8888fb892a924abcf6f3a4682c214b7ff8767e7f2ff49fc499168d77a71012a5"
+    },
+    "Analysis/MasterTests/outputs/r4c1_regulator_node_attempt_01/summary.json": {
+      "bytes": 43127,
+      "sha256": "d50fbea1300bfa65d36dce8f3c6bf64bf77a48695b094382db2bb1c63b1d1353"
+    },
+    "Analysis/MasterTests/outputs/r4c1_regulator_node_attempt_01/summary.json.sha256": {
+      "bytes": 79,
+      "sha256": "bb4ab88c583540aea459dab5221b82801a329140750a3d12449e5b197c9cfdf1"
+    },
+    "Analysis/MasterTests/test_01_r4c1_finite_tilt_canonical_v2.py": {
+      "bytes": 34093,
+      "sha256": "4c2a64f45741161ccacdb75bd0816e5113a9d0b95ba2aa402584f2cb8533dada"
+    },
+    "Analysis/MasterTests/test_01_r4c1_finite_tilt_canonical_v2.py.sha256": {
+      "bytes": 107,
+      "sha256": "118ba715e4ac90d640dffd19067594e66211493d208310d6c73a94b77c29f2fa"
+    },
+    "Analysis/MasterTests/test_01_r4c1_fixed_charge_retarded_comparison_v3.py": {
+      "bytes": 70669,
+      "sha256": "f86276d8ab9b6d226eb9a47f68f0ada085b3e7300ff789406487129f8ee65b30"
+    },
+    "Analysis/MasterTests/test_01_r4c1_fixed_charge_retarded_comparison_v3.py.sha256": {
+      "bytes": 118,
+      "sha256": "7637d184f9f0a4eaa14636dfdd6da3177866099e6d29835568509652edf8bdfa"
+    },
+    "Analysis/MasterTests/test_01_r4c1_g3n5_response_kernel_v2.py": {
+      "bytes": 32500,
+      "sha256": "7321e53304864f0832a3e5a6ce3fce5dc2d156d3fa12d29df267b93910730b3f"
+    },
+    "Analysis/MasterTests/test_01_r4c1_g3n5_response_kernel_v2.py.sha256": {
+      "bytes": 106,
+      "sha256": "937952e6b21d8ed96e63bc6ac71fd8b691d575493bb8d4a6451d61f0646d0cd3"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_admission_v1.py": {
+      "bytes": 25097,
+      "sha256": "d994707a9261e276b6d9fcb3377acfd75387ce8cdac10f7756e2f791c5787e0a"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_admission_v1.py.sha256": {
+      "bytes": 103,
+      "sha256": "63b389071d67dd71fc6c19fb4bf74c3cee180f62900be6b70ec396ae1da0d9f1"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_charge_completion_v4.py": {
+      "bytes": 30167,
+      "sha256": "af22270b76b72d29a04bdfba366464bcc2482ec5f2e41f5ffe66061fee7f4020"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_charge_completion_v4.py.sha256": {
+      "bytes": 111,
+      "sha256": "d1ba584939bda7516d0c121c5dce5f93c3160bd024954713fd63179227006d04"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_constraint_v1.py": {
+      "bytes": 18835,
+      "sha256": "6ba9c73d71d2ef9dd3fc59f34d5fe781d528d5636a29a85bed748290bda989ff"
+    },
+    "Analysis/MasterTests/test_01_r4c1_initial_constraint_v1.py.sha256": {
+      "bytes": 104,
+      "sha256": "5537df804c02ae2c4ba8c78b78fa6fb85d98f500d002d04f818159e0c8c02cec"
+    },
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": {
+      "bytes": 19134,
+      "sha256": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f"
+    },
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py.sha256": {
+      "bytes": 105,
+      "sha256": "b0fb88bfe94a2b547684a750715345c1b01277d8f7eb19a31003802d4cb77821"
+    },
+    "Analysis/MasterTests/test_01_r4c1_regulator_node_v1.py": {
+      "bytes": 23769,
+      "sha256": "7126d03a3b3a3a525bf1ce4c8b31c8541901f9d7c45ad82c288db71cc97cfa25"
+    },
+    "Analysis/MasterTests/test_01_r4c1_regulator_node_v1.py.sha256": {
+      "bytes": 100,
+      "sha256": "1dad7c081cab09b5efbf359036c73bd002f43fa209a42be36bdfa027b6c4a2bf"
+    },
+    "Analysis/TOP/TOP-001/outputs/top001_et2_a0_topology_signature_spectrum_summary.json": {
+      "bytes": 16143,
+      "sha256": "52cd474d418b6ee7d0393d1f0af150acaa1a061045613631caa31cdd3ac18585"
+    },
+    "Analysis/TOP/TOP-001/outputs/top001_et2_a0_topology_signature_spectrum_summary.json.sha256": {
+      "bytes": 121,
+      "sha256": "04d49c7cb383fdff3a91e2f73c187356f29d96a74084b5f534ce23ba4824ae5d"
+    },
+    "Analysis/TOP/TOP-001/top001_et2_a0_topology_signature_spectrum_audit.py": {
+      "bytes": 21901,
+      "sha256": "b402e247effa4a4c7bde912efefb41031dd5f6389597863f4d565717223f7f1d"
+    },
+    "Analysis/TOP/TOP-001/top001_et2_a0_topology_signature_spectrum_audit.py.sha256": {
+      "bytes": 117,
+      "sha256": "133fae08a8d4d644be5b9be877e21b72ab01b096e20cfc475acc1f5df489c54b"
+    },
+    "CHANGELOG.md": {
+      "bytes": 160617,
+      "sha256": "ce7282fabd081f4ab8fbc34f5085fef4dd0d7866aafe9e4c0e3637cf15ccdde6"
+    },
+    "GEMINI.md": {
+      "bytes": 8469,
+      "sha256": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12"
+    },
+    "GEMINI.md.sha256": {
+      "bytes": 76,
+      "sha256": "633f453507c11a86bbc490319ba29d1d66835dbd2d43ce627c0dd2b0859933d4"
+    },
+    "Manuscript/ITSM_Main_Manuscript_Working_READER_REVISION_2026-10-17.md": {
+      "bytes": 5949,
+      "sha256": "7d5c7488a9f5319f3f314ac7dd82dab74bab7b39d34b7a9c60a9097e886766fe"
+    },
+    "Manuscript/ITSM_Main_Manuscript_Working_READER_REVISION_2026-10-17.md.sha256": {
+      "bytes": 126,
+      "sha256": "0441c126b349c401ed8ea56a9c33ac3104055415b96e5bc0df99948c11a396ff"
+    },
+    "README.md": {
+      "bytes": 17916,
+      "sha256": "6d6df310aceb1643ece6edf9565d7f9ef88984c648b52bd984ffe33e031be14c"
+    },
+    "README.md.sha256": {
+      "bytes": 76,
+      "sha256": "1f52a91277b804003c980fc5388f60f82dc37514283d28b0f685c67abdc3acb5"
+    },
+    "RECOVERY_BRANCH_README.md": {
+      "bytes": 44373,
+      "sha256": "5add363ef89a672e9dbea1fe41211bdd97371edb96eb0b463057594908d34200"
+    },
+    "RECOVERY_BRANCH_README.md.sha256": {
+      "bytes": 92,
+      "sha256": "e9f28ee1d21dd91567b294593a3f1caf293e66f41af1e8a5f027ea420e45f271"
+    },
+    "Scripts/verify_research_checkpoint.py": {
+      "bytes": 3602,
+      "sha256": "2ddd45693bd6680240a5cffcb5317f6305d995c480d67fc1c5a9fb0c98aec74c"
+    },
+    "Scripts/verify_research_checkpoint.py.sha256": {
+      "bytes": 97,
+      "sha256": "125bd5aa88b12ae8a33e05f1084a2181df2212391114eee5fd3c7247a1b2fb58"
+    },
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": {
+      "bytes": 11197,
+      "sha256": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa"
+    },
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md.sha256": {
+      "bytes": 97,
+      "sha256": "581cc274c84caa3e6b2bdb3449fc581355b7dcaf7fe652c7e05314d24185fb1f"
+    },
+    "Theory/Core/ITSM_DUST_GR_WEAKFIELD_EXECUTION_PLAN_2026-10-11.md": {
+      "bytes": 3591,
+      "sha256": "14bf01842d7fa573c22d78f021ec815421fb01a4b97fee806c1fbed22b676519"
+    },
+    "Theory/Core/ITSM_DUST_GR_WEAKFIELD_EXECUTION_PLAN_2026-10-11.md.sha256": {
+      "bytes": 118,
+      "sha256": "50c99bb20aae2f874ef27311e15e5ddbe825a664cd5186975e9b4c69f089de0d"
+    },
+    "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md": {
+      "bytes": 5703,
+      "sha256": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809"
+    },
+    "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md.sha256": {
+      "bytes": 103,
+      "sha256": "d773124f847f42cd5104aecd56e332b365632713a059eec5ca77c5bcc3b46934"
+    },
+    "Theory/Core/ITSM_Recovery_Execution_Queue.md": {
+      "bytes": 143154,
+      "sha256": "e55fc8ba7242c968ac459466659012828802a4068e42f2f640c49ba41be61a14"
+    },
+    "Theory/Core/ITSM_Recovery_Execution_Queue.md.sha256": {
+      "bytes": 99,
+      "sha256": "e6c94900f2930422593bfcfa17ccc416e0ddd2f7b2fc21b9415637aba9af3bdb"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md": {
+      "bytes": 12913,
+      "sha256": "8c4496eacdb0d2447445e4a1949b683e033f042a7332c659701e2273d2bf23ea"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md.sha256": {
+      "bytes": 124,
+      "sha256": "e6cc5f75a2d5689afa5699802dd64d578e295faf90be9fec38c9d0ce5d490b1f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": {
+      "bytes": 11821,
+      "sha256": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md.sha256": {
+      "bytes": 115,
+      "sha256": "e3fc66c52c874ac339ba14694e7ae51c8bc5e82d3116bd6eda4b17f84ea1ea24"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_REPORT_2026-09-25.md": {
+      "bytes": 12323,
+      "sha256": "3019196b071b146a1e41cd055073ae02da2afa10b1cdb5ae49e0a63cf84a6eb6"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_REPORT_2026-09-25.md.sha256": {
+      "bytes": 114,
+      "sha256": "4496a24a9fd3f49a7b0ca260591404a1414a89922d4c0201954b905f4ca08e3e"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_REPLAY_AUDIT_V1_CONTRACT_2026-10-18.md": {
+      "bytes": 2461,
+      "sha256": "83e1d2c3152825dca5ceb1e597c624b98807ff59b71b95f73db0ac95a9e738c1"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_REPLAY_AUDIT_V1_CONTRACT_2026-10-18.md.sha256": {
+      "bytes": 135,
+      "sha256": "5aed7f3f7b58a86ce57ea694786082b08b67529ab84e7a6e561085fdc4cd65fb"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_CONTRACT_2026-10-18.md": {
+      "bytes": 5809,
+      "sha256": "88b0ddb963912de6ddca377108361bcb9a584686826a6934bdc598adb6b0a7a2"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_CONTRACT_2026-10-18.md.sha256": {
+      "bytes": 122,
+      "sha256": "b44d60c7f6937744c005135dae5e43a6d50f6b80b0a9d170d6aa31e148d1a022"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_REPLAY_HOLD_2026-10-18.md": {
+      "bytes": 1881,
+      "sha256": "47b347c15fa72f0da7bb860fdd89bf82dd2b7574c5872fb036ece9d7aa594628"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_REPLAY_HOLD_2026-10-18.md.sha256": {
+      "bytes": 125,
+      "sha256": "d74a1f828b54e2afba1f392893a90c53741584463ecef9dab1471019f6f59735"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_REPORT_2026-10-18.md": {
+      "bytes": 15258,
+      "sha256": "7237b9649f08fe16746660415f418dd93b0268b81edb0871e6105abdca7c47ef"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_REPORT_2026-10-18.md.sha256": {
+      "bytes": 120,
+      "sha256": "4a73575f69cb2de3fa56532217f9cce461beb72c47668182ade37720061109af"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CHARGE_COMPLETION_V4_REPORT_2026-10-16.md": {
+      "bytes": 10247,
+      "sha256": "6b81ceff4cde8c9d933259ac34fbdccb4bcf4118f188c734de8a2577613a6c36"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CHARGE_COMPLETION_V4_REPORT_2026-10-16.md.sha256": {
+      "bytes": 128,
+      "sha256": "eb55857889f3dc6824805de5024513f8facb22569938ba4a0e8b2d3e35e9e9a7"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_CONTRACT_2026-10-18.md": {
+      "bytes": 5258,
+      "sha256": "1f2585c61811c41e0524b88209ee2f0761bf2aa27d388d138a66e4725dca90bc"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_CONTRACT_2026-10-18.md.sha256": {
+      "bytes": 123,
+      "sha256": "c498bf15e0da9bc65252bca62c59460fe16ae958c17489a44818cca80e733871"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md": {
+      "bytes": 11798,
+      "sha256": "44113ba26531526435206a520495e56e5d57cae3c8e6843595a0dc871d9dd305"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md.sha256": {
+      "bytes": 121,
+      "sha256": "a1086dcf028e46beb5a10b259ebf1d788947845c0e190ddeb72061a6471365bb"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_CONTRACT_2026-10-17.md": {
+      "bytes": 5969,
+      "sha256": "2bea03116cb22de56e91c48de5038945261c0ffc3a3bd1618b66b1cf9995d053"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_CONTRACT_2026-10-17.md.sha256": {
+      "bytes": 119,
+      "sha256": "5dc123c2f897fd3940cefb63b10b3f5cb40334f71d5c920232016b2c086ebb9f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md": {
+      "bytes": 11596,
+      "sha256": "b47dcf5e7fc340a015f2e7cdf273157bc6e2e1ba311bbc543a5f66596dbc83d2"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md.sha256": {
+      "bytes": 117,
+      "sha256": "e33d6b064900060c52c80523b2b4740f581087a8617a811c885186189c8696e9"
+    },
+    "Theory/Gates/TOP-001/TOP-001_ET2_A0_TOPOLOGY_SIGNATURE_SPECTRUM_CONTRACT_2026-10-17.md": {
+      "bytes": 7157,
+      "sha256": "3c4782f287a9a1eed518eaed9c9ecac8067bfeb90c60f6d1733ec20881413480"
+    },
+    "Theory/Gates/TOP-001/TOP-001_ET2_A0_TOPOLOGY_SIGNATURE_SPECTRUM_CONTRACT_2026-10-17.md.sha256": {
+      "bytes": 132,
+      "sha256": "8e105a881abf1af55d75fc67f1e56f183513e97cfc089433dbea757e84040a47"
+    },
+    "Theory/Gates/TOP-001/TOP-001_ET2_A0_TOPOLOGY_SIGNATURE_SPECTRUM_REPORT_2026-10-17.md": {
+      "bytes": 8447,
+      "sha256": "9e4760edcd319bd1723dd96493d62f472b03bc8afc6e64b6389f8b0dd46c328c"
+    },
+    "Theory/Gates/TOP-001/TOP-001_ET2_A0_TOPOLOGY_SIGNATURE_SPECTRUM_REPORT_2026-10-17.md.sha256": {
+      "bytes": 130,
+      "sha256": "4b208c808ba876cd8e0e8f5fd05dd1ca5436386408f18d46f6202808a1a74f7b"
+    },
+    "Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-18.md": {
+      "bytes": 6624,
+      "sha256": "75882d239decda3d4e77d134db5aba08cd69877a56a8712b7c22ef5300e71b88"
+    },
+    "Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-18.md.sha256": {
+      "bytes": 105,
+      "sha256": "483cc42c144e9a8deffbff46c9eedcc9526ab2331142307b5b646753519eb933"
+    },
+    "Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md": {
+      "bytes": 233410,
+      "sha256": "42846940f7a6984344cd41d430b82f00adabc346ebeb6cc3fbc580a2223added"
+    },
+    "Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md.sha256": {
+      "bytes": 105,
+      "sha256": "1839d27fec7fee40a1a746a06cf4ef7b2cfdfe7810118360ea90be7f0d8d3761"
+    },
+    "docs/ITSM_RECOVERY_EVIDENCE_GUIDE.md": {
+      "bytes": 17439,
+      "sha256": "138e985821bdf04d3c5986b290723e692cb5a02d37a645376925eaa4af171f6c"
+    },
+    "docs/ITSM_RECOVERY_EVIDENCE_GUIDE.md.sha256": {
+      "bytes": 98,
+      "sha256": "da7a8725b6fe4d59a06cd3ea0817855bc3adbc19aad0349a12f9a00d066058fc"
+    },
+    "papers/P1-Scale-Matching-Reconstruction/Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc6.pdf": {
+      "bytes": 164771,
+      "sha256": "51dbece22cf601bf016f9f967e2f711e9abbebdfe5f85342d2b4adbaac24c6bf"
+    },
+    "papers/P1-Scale-Matching-Reconstruction/Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc6.pdf.sha256": {
+      "bytes": 133,
+      "sha256": "d5e2609eca8e1c3880e3c24563c87720472b169d5ef3801fca344c0a84362976"
+    },
+    "papers/P1-Scale-Matching-Reconstruction/Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc7.pdf": {
+      "bytes": 607887,
+      "sha256": "762180a79eb88dbe01afc504c9a8cad305ee7668f1d854fb15b699f3827580b0"
+    },
+    "papers/P1-Scale-Matching-Reconstruction/Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc7.pdf.sha256": {
+      "bytes": 134,
+      "sha256": "e4a0e7d1d5722749b4f24b057ac0decac0fe117346a27b5cba289f342db713f1"
+    },
+    "papers/P1-Scale-Matching-Reconstruction/CoverLetter.txt": {
+      "bytes": 3464,
+      "sha256": "eee744decc4d49c866d95db2e9626b20d86cfb6351188043e6d4c938a3cd5ecd"
+    },
+    "papers/P1-Scale-Matching-Reconstruction/README.md": {
+      "bytes": 6396,
+      "sha256": "74d47c5d09952edc77bc4f3c21bfbd4a82df3c002e5f4854c0d30016f0cf6634"
+    },
+    "papers/P1-Scale-Matching-Reconstruction/SUBMISSION.md": {
+      "bytes": 5930,
+      "sha256": "d27422d60bf37b471777b608e42bca012d5ab9977859d4f2ee63bcc47ae23418"
+    },
+    "papers/P1-Scale-Matching-Reconstruction/VERSION": {
+      "bytes": 10,
+      "sha256": "adf91a0a4661fd0871d46e0db2a60b69c6621e134547d82489cf2e0754a96444"
+    },
+    "papers/P1-Scale-Matching-Reconstruction/main.tex": {
+      "bytes": 35052,
+      "sha256": "455521639bd9e10923ba5add70f4733a838b2778128272fc6a61b73445cfd5bd"
+    },
+    "papers/P1-Scale-Matching-Reconstruction/main.tex.sha256": {
+      "bytes": 75,
+      "sha256": "904cfd7e4755e2ba2576cb711f17df0cc8ec172e1b00be9cdfbcd4950a88ab3e"
+    },
+    "papers/PAPERS_NAMING.md": {
+      "bytes": 7729,
+      "sha256": "9564f799202e1781aa2e6dc0dc33f42c1e8a2953f98a6e894e7c40fbe8b817b5"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/ITSM_P1_source_v0.2.0-rc7_2026-10-17.zip": {
+      "bytes": 44177,
+      "sha256": "ecafe4b55320a8744e26c35c979446ab5acbbb7bc4c050c39a5f3dfd7c43a266"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/ITSM_P1_source_v0.2.0-rc7_2026-10-17.zip.sha256": {
+      "bytes": 107,
+      "sha256": "8bab7cd43b56e1bc5a9d6cebdeaac2d303f113db5e3095c44584d8378f8f5f67"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/P1_RC7_MANIFEST.json": {
+      "bytes": 1867,
+      "sha256": "78db947ee7ae581fc9febdb14e12b8abdfe43af84693a4de4e9012aef0483cca"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/P1_RC7_MANIFEST.json.sha256": {
+      "bytes": 87,
+      "sha256": "47868239356b6374420dfb72d6b9e5a870f2ad245c7bd79236ab52613bf005b9"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/P1_RC7_REVISION_REPORT_2026-10-17.md": {
+      "bytes": 4144,
+      "sha256": "c87bd99b5d516f84af6108ab724327a04880a2f9e7a6549aaccfb4a736cbb996"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/P1_RC7_REVISION_REPORT_2026-10-17.md.sha256": {
+      "bytes": 103,
+      "sha256": "9d7e05009be5a46eb64789f3b922cc35203a7ae567bbf2066b2dd77364a26d39"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/portable/VERSION": {
+      "bytes": 10,
+      "sha256": "adf91a0a4661fd0871d46e0db2a60b69c6621e134547d82489cf2e0754a96444"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/portable/figures/itsm_t3_fundamental_domain.pdf": {
+      "bytes": 37591,
+      "sha256": "c6638f5c2ad2a5f6b10e451ed988172cc0f3b33659c1c1616b10b71bd27d091b"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/portable/main.bbl": {
+      "bytes": 9868,
+      "sha256": "6b018d9f4eb1d409e5d9af9d8ccfa4f42493fed374fba5fea8ca6c40de613807"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/portable/main.tex": {
+      "bytes": 35006,
+      "sha256": "9fe0e2a64dce2d400755d29389b5ef96a6052503c9338e863a2e5832412a1322"
+    },
+    "papers/ReleasePackages/2026-10-17/P1-rc7/portable/references.bib": {
+      "bytes": 3870,
+      "sha256": "30c60a51075d761f8b31026c58f89a42ddee7b40229ec7a497e7ca819621adff"
+    }
+  },
+  "schema": "itsm-research-checkpoint-v1",
+  "scientific_disposition": {
+    "K_Q": "NOT_DERIVED",
+    "MAT_001": "BLOCKED",
+    "Rule9_cleared": false,
+    "Stage4A": "CLOSED",
+    "UVIR_003": "IN_PROGRESS",
+    "V": "NOT_COMPUTED",
+    "gate_effect": "NONE",
+    "physics_pass": false,
+    "publication_ready": false,
+    "review_status": "DEFERRED",
+    "stage1": "BOUNDED_LINEAR_SCOPE_ONLY",
+    "stage2": "INCOMPLETE",
+    "stage3": "NOT_ENTERED"
+  },
+  "scientific_source_pins": {
+    "Analysis/MasterTests/audit_01_r4c1_initial_admission_replay_v1.py": "1dd930c4b239a185d1402c0fa3be2eada8df46aa838b472074c9cc87e5a6baad",
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/formulas.json": "8aef9982815d5a56804c330cff60e99b9c4111e59cd167182f4ad9da3a388e7c",
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/trajectories.json": "3e36b9594ec4f186fff610a291011b6344b23ba98645922dfd7ad78d242ee4b3",
+    "Analysis/MasterTests/outputs/r4c1_initial_charge_completion_attempt_04/formulas.json": "b1f62daaebdb1602ccc20350669b22aeb601d7e8d8cccad4626e420e317bb6f3",
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/formulas.json": "beaf647957a18ddd14881333de29cebc9a567ffcc62a9b4d775153984a0add73",
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/summary.json": "586fe456022419f65965750ecc3137cf74b6eafb84f3a4dec670f2f611f51b3f",
+    "Analysis/MasterTests/outputs/r4c1_planar_coupled_vertices_attempt_01/formulas.json": "852b657c9023244a76cc49494b6adb08510d4eeb74bd95ec390ff11bc6b0789a",
+    "Analysis/MasterTests/test_01_r4c1_finite_tilt_canonical_v2.py": "4c2a64f45741161ccacdb75bd0816e5113a9d0b95ba2aa402584f2cb8533dada",
+    "Analysis/MasterTests/test_01_r4c1_fixed_charge_retarded_comparison_v3.py": "f86276d8ab9b6d226eb9a47f68f0ada085b3e7300ff789406487129f8ee65b30",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_response_kernel_v2.py": "7321e53304864f0832a3e5a6ce3fce5dc2d156d3fa12d29df267b93910730b3f",
+    "Analysis/MasterTests/test_01_r4c1_initial_admission_v1.py": "d994707a9261e276b6d9fcb3377acfd75387ce8cdac10f7756e2f791c5787e0a",
+    "Analysis/MasterTests/test_01_r4c1_initial_charge_completion_v4.py": "af22270b76b72d29a04bdfba366464bcc2482ec5f2e41f5ffe66061fee7f4020",
+    "Analysis/MasterTests/test_01_r4c1_initial_constraint_v1.py": "6ba9c73d71d2ef9dd3fc59f34d5fe781d528d5636a29a85bed748290bda989ff",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_regulator_node_v1.py": "7126d03a3b3a3a525bf1ce4c8b31c8541901f9d7c45ad82c288db71cc97cfa25",
+    "GEMINI.md": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12",
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa",
+    "Theory/Core/ITSM_DUST_GR_WEAKFIELD_EXECUTION_PLAN_2026-10-11.md": "14bf01842d7fa573c22d78f021ec815421fb01a4b97fee806c1fbed22b676519",
+    "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809",
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md": "8c4496eacdb0d2447445e4a1949b683e033f042a7332c659701e2273d2bf23ea",
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_VARIATION_REPORT_2026-09-25.md": "3019196b071b146a1e41cd055073ae02da2afa10b1cdb5ae49e0a63cf84a6eb6",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_REPLAY_AUDIT_V1_CONTRACT_2026-10-18.md": "83e1d2c3152825dca5ceb1e597c624b98807ff59b71b95f73db0ac95a9e738c1",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_CONTRACT_2026-10-18.md": "88b0ddb963912de6ddca377108361bcb9a584686826a6934bdc598adb6b0a7a2",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_REPLAY_HOLD_2026-10-18.md": "47b347c15fa72f0da7bb860fdd89bf82dd2b7574c5872fb036ece9d7aa594628",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CHARGE_COMPLETION_V4_REPORT_2026-10-16.md": "6b81ceff4cde8c9d933259ac34fbdccb4bcf4118f188c734de8a2577613a6c36",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_CONTRACT_2026-10-18.md": "1f2585c61811c41e0524b88209ee2f0761bf2aa27d388d138a66e4725dca90bc",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md": "44113ba26531526435206a520495e56e5d57cae3c8e6843595a0dc871d9dd305",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_CONTRACT_2026-10-17.md": "2bea03116cb22de56e91c48de5038945261c0ffc3a3bd1618b66b1cf9995d053",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md": "b47dcf5e7fc340a015f2e7cdf273157bc6e2e1ba311bbc543a5f66596dbc83d2"
+  }
+}
