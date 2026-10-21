@@ -25,6 +25,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch only the linked evidence snapshots
+        run: |
+          python3 -B - <<'PY'
+          from pathlib import Path
+          import re
+          import subprocess
+          prefix = r'https://github\.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/([a-f0-9]{40})/'
+          revisions = sorted({revision for page in Path('docs').glob('*.html')
+                              for revision in re.findall(prefix, page.read_text(encoding='utf-8'))})
+          if revisions:
+              subprocess.run(['git', 'fetch', '--no-tags', '--depth=1', 'origin', *revisions], check=True)
+          PY
+      - name: Check website structure and current paper versions
+        run: |
+          python3 -B -m unittest discover -s Scripts/site -p 'test_*.py'
+          python3 -B Scripts/site/check_public_site.py
       - uses: actions/configure-pages@v5
         with:
           enablement: true

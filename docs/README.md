@@ -2,6 +2,54 @@
 
 Multi-page research site published at https://itsm-cosmology.com.
 
+## Paper freshness and model-scope update - 21 October 2026
+
+Following a comparison of the public main and recovery documentation:
+
+- `papers.html` links P1 `0.2.0-rc7` and P2 `0.2.0-rc4`, with their current
+  contributions, dates, source/revision records and outstanding release decisions.
+  Thermodynamics `0.7.1-conditional-draft` and R4C1 `0.1.1-conditional-draft`
+  remain current. Review candidates are not peer-reviewed releases. The immutable
+  alpha.12 authority freeze remains separate from the mutable core build.
+- `architecture.html` explains the separate wake, winding/mode and driven-stress
+  hypotheses, then distinguishes legacy main-branch claims from the current
+  recovery programme. R4C1 is one conditional route, not the whole ITSM model.
+- `vision.html` connects the physical proposal to joint motion/lensing,
+  expansion/structure/BBN and wave/early-universe tests. These are research
+  objectives, not restored numerical predictions or completed validations.
+- `claims.html` and `reproduce.html` now use the 21 October evidence map. The
+  reproduction command names research revision `2587c3eb` explicitly; older
+  checkpoints and their revision-specific integrity evidence remain valid.
+- The service-worker cache is `itsm-pwa-v12-20261021`. The existing visual design
+  and homepage progress note are retained. No scientific artifact or gate changes.
+
+### Before deployment
+
+```powershell
+python -B -m unittest discover -s Scripts/site -p 'test_*.py'
+python -B Scripts/site/check_public_site.py
+```
+
+The source checker now compares all four current paper cards with their tracked
+`VERSION` files, canonical versioned PDFs and checksum sidecars. It rejects
+stale labels/links even if an older PDF still exists, untracked/private artifacts
+and quarantined versions. Historical links do not satisfy a current card.
+Pinned GitHub evidence links are checked against their named Git objects.
+The Pages workflow fetches only the linked snapshots into its ephemeral checkout
+and runs these checks before uploading `docs/`; it does not fetch full history.
+
+These are website checks, not a fresh physics replay or scientific clearance.
+Deployment still requires the manual workflow and verification of the resulting
+live pages. A local edit, passing checker or branch push is not a deployment.
+
+Local verification: 19 offline regression tests pass; source checks cover seven
+pages, 230 references, six public PDF targets, four current paper versions and
+five pinned repository targets. Isolated local-browser checks cover all seven
+pages at desktop and mobile widths without horizontal document/card overflow,
+broken local images or JavaScript exceptions. External font loading was blocked
+for that local check, so it verifies the fallback-font layout, not remote font
+availability. Previews and execution logs remain ignored local artifacts.
+
 ## Public research-note source update - 21 October 2026
 
 The homepage progress cards and Progress page now describe the first material
@@ -61,7 +109,7 @@ prediction or publication clearance follows. Rule-9 remains `DEFERRED`.
 This is repository documentation. The public-page audit below remains
 its dated snapshot; a branch push does not dispatch the Pages workflow.
 
-## Current public status
+## Preserved public-status audit - 26 September 2026
 
 Audited 26 September 2026 against the v12.0-alpha.12 recovery authority and
 the active Master Tests 1–3 disposition:
@@ -133,7 +181,7 @@ publication clearance.
 | `vision.html` | Aims, positioning and evidence boundaries |
 | `architecture.html` | Sectors and non-negotiable separations |
 | `research.html` | Current gates and operator-priority route |
-| `papers.html` | Canonically named core and P1-P4 artifacts |
+| `papers.html` | Current focused review drafts, core freeze and historical boundaries |
 | `claims.html` | Status definitions and public claim matrix |
 | `reproduce.html` | Bounded reproduction entry points |
 

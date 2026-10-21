@@ -1,5 +1,30 @@
 # ITSM Changelog & Archive History
 
+## Paper versions and public model overview (2026-10-21)
+
+- Corrected the Papers page from P1 rc3/P2 rc3 to the retained P1 rc7/P2 rc4
+  review candidates. Added manuscript dates, positive scoped contributions,
+  source/revision links and version-specific citation guidance. Thermodynamics
+  and R4C1 retain their current conditional versions; no paper is newly released.
+- Expanded the physical explanation of causal wakes, circulation/winding,
+  topology-dependent modes and driven stress. Distinguished the legacy main
+  documentation from the recovery programme without restoring withdrawn
+  coefficients, Hubble-attractor or statistical-validation claims.
+- Added a compact observational roadmap and clarified that a plenum-based
+  account still needs a consistent gravitating stress-energy budget. The current
+  R4C1 calculation route is not presented as the entire ITSM framework.
+- Updated Evidence and Reproduce from the 13 October snapshot to the 21 October
+  checkpoint, preserving the scoped initial constraints, first material identity,
+  frozen-domain warning and unresolved evolution/physical-window/GR/matching work.
+  The new integrity command targets the immutable research revision explicitly.
+- Added offline paper-freshness rejection tests and deployment checks against
+  tracked VERSION/PDF/checksum records. The Pages workflow checks linked evidence
+  snapshots and source integrity before uploading the site. Advanced the PWA
+  cache to `itsm-pwa-v12-20261021` and updated the site maintenance documentation.
+- No scientific equations, original evidence, manuscript PDFs, immutable
+  manifests, private vault material, canonical gate or review statuses changed.
+  Commit, push, deployment and live confirmation are separate operational steps.
+
 ## Public research progress note (2026-10-21)
 
 - Updated the homepage and Progress page with a short explanation of the first

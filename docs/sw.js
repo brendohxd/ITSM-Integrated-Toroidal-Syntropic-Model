@@ -1,4 +1,4 @@
-const CACHE_NAME = 'itsm-pwa-v11-20261021';
+const CACHE_NAME = 'itsm-pwa-v12-20261021';
 const ASSETS = [
   './',
   './index.html',
