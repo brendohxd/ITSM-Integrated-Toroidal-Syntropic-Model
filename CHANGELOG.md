@@ -1,5 +1,45 @@
 # ITSM Changelog & Archive History
 
+## Coupled domains, canonical seeds and first material compatibility (2026-10-21)
+
+- Added the [21 October research checkpoint and exact-byte evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)
+  for work since `2f746cc0`, with the original sources, contracts, reports,
+  receipts, sidecars, failed attempts and unfinished numerical checkpoints.
+- Recorded nodal transport, the coupled acceleration and momentum constructions,
+  global initial flow, regular planar Hamiltonian and full coupled descriptor
+  work. These are restricted initial/planar results, not arbitrary-3D closure
+  or a solved physical background.
+- Retained the partial Legendre chart (203/203), restricted scalar-rate Hessian
+  (823/823), two-node graph domain (320/320) and weak-generator V2 (809/809).
+  Their owning reports delimit the proofs. Negative restricted scalar curvature
+  is not a physical ghost verdict; a closed maximal realization is not a
+  complete Cauchy theory, positive energy or controlled physical window.
+- Recorded canonical seeds (689/689) and independent node-force controls
+  (437/437). The frozen first-domain result and squared-domain obstruction
+  remain unchanged; neither alone settles material persistence.
+- Added the first material seed identity (453/453 with exact fresh replay):
+  action-generated background-constraint drift cancels the earlier frozen
+  forcing for the declared amplitude-momentum seed class at first order.
+  Both terms remain. Representative derivative controls are not integrated
+  solutions or certified nonlinear error bounds. Full admission and evolution
+  remain open.
+- Preserved failed helper-interface, algebra, startup, precision/conditioning
+  and execution-budget attempts. Checkpointed QR V2 tranche 1 passes 325/325
+  replayed local checks but leaves the full spectrum unfinished. The timestamp
+  transport note preserves the limitation of earlier JavaScript-routed metadata
+  comparisons; scientific byte/hash evidence was not rewritten to fix them.
+- Updated README, recovery orientation, active-research navigation and the
+  master-plan supplement. Retained the standalone multicore execution guide,
+  focused route plan and existing execution/deferred-review appends.
+- Stage 1 remains bounded linear acceptance only; Stage 2 `INCOMPLETE`;
+  Stage 3 `NOT_ENTERED`; Tests 1-3 `HOLD_SUBSTANTIVE`; MAT-001 `BLOCKED`;
+  `K_Q=NOT_DERIVED`; `V=NOT_COMPUTED`; UVIR-003 `IN_PROGRESS`; Stage 4A
+  `CLOSED`; TOP-X4 unchanged; review `DEFERRED`; `Rule9_cleared=false`;
+  `physics_pass=false`; `gate_effect=NONE`.
+- Separate working manuscripts, PDF/bibliography/figure builds, scratch QA,
+  private optimizer logs and vault data stay local. No publication, website
+  deployment, model dispatch or action change is included.
+
 ## Regulator-node acceleration and coupled completion (2026-10-18)
 
 - Added the [regulator-node completion checkpoint and exact-byte evidence map](Theory/Verification/ITSM_NODE_COMPLETION_CHECKPOINT_2026-10-18.md)

@@ -1,0 +1,13 @@
+{
+  "canonical_one_form": "mean(pi_AB*dG_AB+pV0*dV+pR*dR+ptheta_fluct*dtheta+pr*dr+pZ*dZ+pT_fluct*dT)+P_m*d_m+P_L*dL",
+  "clock": "psi=tau after variation; s=-pZ/(volume*b*V2)>0, p_psi=-(E0+Edust+Fprime)/s",
+  "exact_solution": "r=(pVx*Vz/2,pVy*Vz/2,I_z(S)/2), A=<h^-1>, c=A^-1(M-<h^-1*r>), pi_iz=h^-1(r+c)",
+  "fixed_charges": "p_theta=Qtheta+fluctuation, p_T=Qdust+fluctuation; zero-mean phase/dust origins quotiented, fluctuating pairs retained",
+  "global_translation": "f=<sin(kz)*Vy>=0, d=<sin(kz)*Vyprime>!=0, pVy=pVy0-<S0>/d*sin(kz); term lambda*df vanishes",
+  "mean_metric_momenta": "M=(P_mx/2,P_my/2,P_L); A positive definite since x^T*A*x=<x^T*h^-1*x>>0",
+  "meaning": "Full nonlinear regular-planar functional, not a computed mode spectrum, arbitrary3D closure or physical frequency window",
+  "metric_gauge": "h=[[G(z),m],[m^T,L]], G 2x2, m and L spatial constants but canonical coordinates",
+  "reduced_Hamiltonian": "Hpsi=-<p_psi>=<(E0+Edust)/s-F*(1/s)prime>; F=gamma*h^zi*pVi",
+  "residual_global_constraint": "S=pi_AB*G_ABprime+pV*Vprime+(pVz*Vz)prime+sum_scalar(p*phiprime); <S>=0 required",
+  "zero_mode_and_node_limits": "No inverse of translation kernel, no deletion of mean metric pairs; b*V2*s and det R must be regular; actual w=e*cos(kz) has nodes"
+}

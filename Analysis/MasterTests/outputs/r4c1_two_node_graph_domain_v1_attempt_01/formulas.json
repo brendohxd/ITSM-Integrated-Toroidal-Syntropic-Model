@@ -1,0 +1,24 @@
+{
+  "B": "p*b*(w^2*(a_hxx/2+3*a_hyy/2+a_L/2)+2*w*a_Vy), with mean L and projected Vy",
+  "B_norm_squared": "4000011*eta**4/30250000000000",
+  "Hardy_proof": "finite-interval boundary terms -f(a)^2/(3*a^3) and -fprime(a)^2/a are nonpositive; traces zero at node; ||f/x^2||<=4/3||f_second||; H2 extension uses local L2 Taylor remainder",
+  "action": "Omega*v=(-vP-B^*vZ, vQ, -g*vZ, g*vs+B*vQ), B=s*Dg including projections and means",
+  "analytic_closedness": "Omega bounded skew-adjoint and injective because g>0 a.e.; range dense; inverse closed on range=Yg; complete graph norm; not a bounded inverse on all L2",
+  "frozen_constant": "1375*pi^2/(12*eta) < 166375/(147*eta), 0<eta<=1; reference chart, not physical cutoff",
+  "full_descriptor": "Always r=K*u=Hessian(H)*u-dOmega[u]*Xdot; canonical vQ=rP, including mean rates; no K-image/domain-invariance or full generator closedness is proved",
+  "graph_norm": "N(r)^2=||r||^2+||rs/g||^2+||(rZ-B*rP)/g||^2; N<=actual_graph_norm<=sqrt(3)*N on frozen family",
+  "inverse": "vQ=rP; vZ=-rs/g; vs=(rZ-B*rP)/g; vP=-rQ+B^*(rs/g)",
+  "limitations": "positive graph norm is not positive physical Hamiltonian energy; no physical stability, mode admission, cutoff, healthy GR, matching or evolution",
+  "maximal_domain": "Yg={r in L2(canonical+aux): rs/g in L2, (rZ-B*rP)/g in L2}; quotients are a.e., no node value invented",
+  "moving_nodes": "linearized descriptor and B cross retained; raw rZ may have simple zero; nonlinear moving/lifted nodes and domain persistence remain open",
+  "order": [
+    "Q",
+    "P",
+    "s",
+    "Z"
+  ],
+  "scope": "Complete reduced two-form on its retained canonical quotient/mean Hilbert space; not the full generator",
+  "trace_bound": "||r/g||_L2<=pi^2/(3*abs(b)*e^2*k^2)*||r_second||_L2; four nearest-node half-arcs cover whole circle",
+  "trace_equivalence": "If rs and rztilde=rZ-B*rP are periodic H2, quotient L2 iff residual AND first derivative vanish at BOTH nodes",
+  "weak_example": "r=abs(cos(theta))^(7/4) has H2 zero traces; r/g proportional abs(cos(theta))^(-1/4) is unbounded but L2"
+}

@@ -1,0 +1,32 @@
+{
+  "Hessian": "Hss[f,f]=<(d^T R^-1 d-f0_ss*f^2)/p-2*(y.d-f0_s*f+deltaFprime)*f/p^2+2*C0*f^2/p^3>",
+  "compact": "Hss=<(d^T R^-1 d)/p-2*y.deltaP*f/p^2+(-f0_ss/p+2*g*Zhat/p^2+2*J/p^3)*f^2>, deltaF=0 on registered flat family",
+  "derivatives": {
+    "ell_s_Kyy": "-2*b*Z*w^2",
+    "ell_s_Xy": "-b*Z*w",
+    "f0_s": "K_Q*(1+w^2)*p-3*A*abs(w)^3*p^2",
+    "f0_ss": "K_Q*(1+w^2)-6*A*abs(w)^3*p"
+  },
+  "localization": {
+    "Cstar": "C_R*(E + P)**2/(eta*p) + 4*Koverp*c**2 + 2*P*Y/p**2 + 48*absA*c**3 + 32*absb*c**4*(Rmax*absU + absUd)/p**2",
+    "Delta": "4*(K_Q/p)*c^2*eps^2+48*abs(A)*c^3*eps^3+32*abs(b)*c^4/p^2*(abs(Ud)*eps^4+abs(U)*Rmax*eps^3)+2*Y*P/p^2*eps^(7/2)+C_R/(eta*p)*(P*eps^(7/2)+E*eps^3)^2",
+    "E": "8*abs(b*U)*(1+2*e)*c^3; ||ell_s*f||_L2<=E*epsilon^3",
+    "M": "16*abs(b*U)*c^4",
+    "P": "2*M*sqrt(L)+M/(d_abs*sqrt(L)); ||deltaP||_L2<=P*epsilon^(7/2)",
+    "bounds": "Y>=sup sqrt(y_Kzz^2+y_Xy^2), Rmax>=sup|shift|, sigma>=sup_patch|J|, C_R=200/33",
+    "c": "e*k",
+    "d_abs": "e*k/2",
+    "hypotheses": "fixed eta>0, p>0, e<=1/500, k>0, h=I, w=e*cos(kz), Z=U*w^2, normalized-average L2 f=1 supported epsilon<x<2epsilon near either node; full auxiliary admission NOT assumed",
+    "length": "L=2*pi/k",
+    "limitation": "conditional continuum theorem, not certified continuum bounds for the stored initial data, full physical admission, an invariant ghost test or any weighted-domain no-go",
+    "negative_curvature_condition": "sigma<=K_Q*p^2/8 and 0<eps<=min(1,L/16,sqrt(K_Q/(4*p*Cstar))) imply Hss[f,f]<=-K_Q/(2*p)",
+    "theorem": "|Hss[f,f]+K_Q/p|<=Delta(epsilon)+2*sigma/p^3"
+  },
+  "restoration": {
+    "G": "g*Zprime=2*b*U*w^3*wprime",
+    "flux": "F=gamma*pVz; delta pVz=0, hence deltaF=0, but F0prime remains",
+    "momentum": "deltaP_Kzz=I_z(deltaS), deltaP_Xy=delta_lambda*sin(theta), all others zero",
+    "source": "deltaS=-G*f+delta_lambda*sin(theta)*wprime",
+    "translation": "delta_lambda=<G*f>/d_translation; d_translation=-e*k/2"
+  }
+}

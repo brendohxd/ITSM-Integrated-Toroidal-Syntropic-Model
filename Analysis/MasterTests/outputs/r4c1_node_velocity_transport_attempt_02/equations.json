@@ -1,0 +1,23 @@
+{
+  "C_general": "-KVV - R*c_z/2 + Vz_z*gamma + c*(-R_z + volume_t) + c_t/2 + volume_z*(-R*c + Vz*gamma)",
+  "C_initial_restricted": "(V^2)_t/2+V^2*((log sqrt(h))_t-R_z)-R*(V^2)_z/2+gamma*partial_z(V^z)-K_ij V^i V^j",
+  "C_over_w_squared": "3*H - Hbg - 2*r1",
+  "C_time_over_w_squared": "-(-2*F + 16*H*Hbg + 8*H*r1 - 2*Hbg**2 - 8*Hbg*r1 + 4*rt - trace_hdd)/2",
+  "V1_general_label_error": "V1 omitted (gamma*Vz-V^2*R)*partial_z(log sqrt(h)); V1 source and receipts are preserved, not relabeled as a valid general expression.",
+  "coordinate_gauge": "N=1; initial h=I,h_dot=2H I; shift R=r1*x+..., R_dot=rt*x+...",
+  "cusp": "Original C2 cusp retained; required nodal composite derivatives vanish; no ordinary third cusp derivative.",
+  "frame_slope_definition": "F=partial_z(V_ddot_y)/partial_z(V_y) at node; NOT supplied by scalar equations",
+  "initial_geometry_restriction": "volume_z=volume_zt=0 because h_z=h_dot_z=0 initially; no such restriction is imposed during future evolution.",
+  "jerk_from_psi": "6*H**2*p - 3*H*acceleration - 4*H*U*b*slope_squared/K + acceleration*r1 + p*rt - p*trace_hdd/2 + 2*Ud*b*slope_squared/K - beta*rho_dot/K",
+  "metric": "Arbitrary six metric second-time jets allowed; trace cancels only after eliminating jerk. They still enter the missing coupled frame acceleration equation.",
+  "no_new_data_adopted_or_evolved": true,
+  "psi_acceleration_at_compatible_root": "-U - p*(3*H - Hbg - 2*r1)",
+  "psi_time_at_node": "-K*(acceleration*(3*H - r1) + jerk + p*(-6*H**2 - rt + trace_hdd/2)) + 2*b*slope_squared*(-2*H*U + Ud) - beta*rho_dot",
+  "regularity": "Necessary for a jointly time-differentiable regular-side quotient and finite scalar third-time jet; stronger than continuous acceleration; no weak-solution no-go.",
+  "regulator_time_normal_limit": "-(-2*F*p + 16*H*Hbg*p - 10*H*acceleration + 8*H*p*r1 - 2*Hbg**2*p + 6*Hbg*acceleration - 8*Hbg*p*r1 - 2*Ud + 4*acceleration*r1 - 2*jerk + 4*p*rt - p*trace_hdd)/2",
+  "regulator_velocity_definition": "Ud=Z_dot/w^2; not U_dot. A general U(t) ansatz is not adopted.",
+  "required_frame_slope": "(-6*H**2*K*p + 8*H*Hbg*K*p - 2*H*K*acceleration + 4*H*K*p*r1 + 4*H*U*b*slope_squared - Hbg**2*K*p + 3*Hbg*K*acceleration - 4*Hbg*K*p*r1 - K*Ud + K*acceleration*r1 + K*p*rt - 2*Ud*b*slope_squared + beta*rho_dot)/(K*p)",
+  "rho_dot_from_dust_current": "rho*(-3*H + beta*p + r1)",
+  "selected_velocity_disposition": "UNRESOLVED_WITHOUT_ACTION_DERIVED_COUPLED_FRAME_SLOPE",
+  "undivided_transport": "Ud*(1 + 2*b*slope_squared/K) + acceleration*(2*H - 3*Hbg - r1) + p*(F + 6*H**2 - 8*H*Hbg + Hbg**2 - 4*r1*(H - Hbg) - rt) - (4*H*U*b*slope_squared + beta*rho_dot)/K"
+}

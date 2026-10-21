@@ -1,0 +1,9 @@
+{
+  "authority": "Necessary joint completion only, no initial state adoption/evolution or physical window",
+  "chain_rule": "total_i(Edelta)=partial_i(Edelta)|Ud+partial_Ud(Edelta)*partial_i(Ud_req), i=H,U; retain corresponding flux derivatives",
+  "mean": "F=Ebase+alpha*<Edelta(H,U,Ud_req)>+rho0",
+  "node": "B=K_Q*(U-U0)+alpha*Dnode(H,U,Ud_req)",
+  "normalized_correction": "At the new root use h2=(mean_delta+phase_scaled)/(3*M*(H+H0)),u2=-Dnode/K_Q,r2=qnode; (Ud-Ud0)/alpha=-C_new/Bv",
+  "time": "Bv*Ud+R=0; Ud_req=-R/Bv",
+  "uniqueness": "Strict opposing F and B faces, F_H<0 and B_U-B_H*F_U/F_H>0 on the entire fixed rectangle"
+}

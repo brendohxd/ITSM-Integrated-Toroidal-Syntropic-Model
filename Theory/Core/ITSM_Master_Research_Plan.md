@@ -18,6 +18,23 @@ If Notion freeze line lags Git (e.g. Hub still citing alpha.4 while repo is alph
 
 ---
 
+## Research navigation supplement - 21 October 2026
+
+The [latest research checkpoint](../Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)
+maps the post-18-October unchanged-action R4C1 evidence and preserves failed
+and incomplete attempts. The [focused route assessment](ITSM_FOCUSED_ROUTE_ASSESSMENT_EXECUTION_2026-10-21.md)
+keeps one bounded physical decision ahead of further broad refinement.
+
+First material compatibility of the declared amplitude-momentum seeds is a
+positive scoped identity, not physical admission or evolution. The next
+same-action target is higher/rank-changing constraint consistency and a
+controlled short-time coupled construction from the exact implicit initial
+data, or a demonstrated incompatibility. Stage 2 remains incomplete; Stage 3
+has not been entered. Physical energy/window, healthy GR and the two genuine
+identifying matching inputs remain open. Matching proposals and standalone
+paper decisions remain separate lanes; no new parent or TOP-X4 pivot follows
+automatically. Canonical statuses and deferred-review requirements are unchanged.
+
 ## 1. Governing rule
 
 > **Identity first → derive mechanisms second → restore predictions only afterward.**

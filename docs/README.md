@@ -2,9 +2,22 @@
 
 Multi-page research site published at https://itsm-cosmology.com.
 
-## Repository research checkpoint - 17 October 2026
+## Repository research checkpoint - 21 October 2026
 
-The [latest checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)
+The [latest checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)
+records the coupled-domain, canonical-seed and first material compatibility
+work since 18 October, including failed and unfinished calculations. Changing
+background constraints cancel the earlier frozen seed forcing at first
+material order in the declared class; no physical trajectory, stability,
+validity window or numerical acceleration prediction is established.
+Stage 2 remains incomplete, Stage 3 not entered and Rule-9 review deferred.
+
+This is repository navigation only. Public HTML and the separate Pages
+workflow are unchanged; this commit is not a website deployment.
+
+### Preserved 17 October repository checkpoint
+
+The [17 October checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-17.md)
 records the three-family constraint and cubic-response work, the source-aware
 summable-field bound and P1 rc6 / P2 rc4 review candidates. The bound is a
 registered perturbative mathematical result, not a physical cutoff, complete

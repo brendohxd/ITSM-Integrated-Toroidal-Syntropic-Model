@@ -85,7 +85,33 @@ orders the research, and the [Master Research Plan](Theory/Core/ITSM_Master_Rese
 defines the authority and claim boundaries. Script check counts and hash
 matches establish only their stated calculation or artifact scope.
 
-## 🧪 Current research checkpoint — 18 October 2026
+## 🧪 Current research checkpoint — 21 October 2026
+
+The [21 October checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)
+preserve the research since 18 October, including negative results, execution
+failures and unfinished spectrum calculations. The main new result is a
+**first-order compatibility check for perturbations on a changing background**:
+the [material-seed calculation](Theory/Gates/RES-001/RES001_R4C1_MATERIAL_SEED_FEASIBILITY_V1_REPORT_2026-10-21.md)
+retains both terms and finds that the changing constraint operator cancels the
+previously nonzero frozen forcing for the declared amplitude-momentum seeds.
+Its 453/453 local checks and exact replay support that bounded identity; they
+do not establish a physical evolving solution.
+
+The preceding [canonical-seed result](Theory/Gates/RES-001/RES001_R4C1_CANONICAL_SEED_ADMISSION_V1_REPORT_2026-10-21.md)
+remains true: these seeds belong to the declared frozen operator domain but
+not its squared domain. That frozen warning is not a proof of failed
+time-dependent evolution. The new [weak-generator construction](Theory/Gates/RES-001/RES001_R4C1_WEAK_GENERATOR_REALIZATION_V2_REPORT_2026-10-21.md)
+and two-node domain results supply further conditional mathematical structure,
+not a positive physical energy or a complete Cauchy theory.
+
+**Next physical question:** can the exact implicit initial data satisfy the
+higher/rank-changing constraints and support controlled short-time coupled
+background and perturbation evolution? Existing energy and weak-source warnings
+remain binding. Stage 2 is `INCOMPLETE`, Stage 3 `NOT_ENTERED`, and both
+identifying matter-residue and nonlinear-force matching inputs remain absent.
+No physical family, numerical acceleration prediction or publication is cleared.
+
+### Preserved 18 October initial-constraint and paper checkpoint
 
 The [18 October checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-18.md)
 record the latest initial-constraint work and P1 revision. The

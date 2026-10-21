@@ -1,0 +1,23 @@
+{
+  "actual_K": "Hessian(full constrained clock Hamiltonian)-dOmega[u]*registered_background_rate",
+  "clock_correction": "In H=<E/s-F*D(1/s)>, add <T_u^T Rcal^-1 T_v/p> at s=p; volume and full constraint pullback retained",
+  "clock_flux_mixed": "-2*F0*(u*vp + up*v)/p**3 + 2*h0*u*v/p**3 + huv/p + (Fu*vp + Fv*up)/p**2 - (hu*v + hv*u)/p**2",
+  "equivalence": "D(Amax)={u in H: K*u in H and K*u in Yg}; actual cross-corrected two-node quotients, not arbitrary raw scalar rows",
+  "graph_limit": "u_j->u and Amax*u_j->v in H imply K*u_j->K*u and Omega*Amax*u_j->Omega*v in H^-2, hence K*u=Omega*v and u in D(Amax)",
+  "maximal_domain": "D(Amax)={u in H: exists v in H, K*u=Omega*v in H^-2}; uniqueness from injective full Omega",
+  "not_proved": [
+    "dense D(Amax)",
+    "resolvent/semigroup",
+    "domain invariance",
+    "physical constraint admission",
+    "physical positive energy",
+    "physical modes/cutoff",
+    "healthy GR",
+    "numerical matching"
+  ],
+  "partial_Legendre": "delta2 E[u,v]=delta2(E_envelope_at_fixed_y)[u,v]+T_u^T Rcal^-1 T_v; T=delta P_y-delta(volume*L_y)|fixed_y",
+  "primitive": "I(a*D f)=a*f-mean(a*f)-I((D a)*f); I*D=Id-P0",
+  "shift": "R=sum_j c_j sin(2j theta); R*wprime/w=-2*k*sin(theta)^2*sum_j c_j U_(j-1)(cos(2theta)); limit at BOTH nodes equals Rprime",
+  "shift_bound": "abs(R*wprime/w)<=2*k*sum_j j*abs(c_j), j1..12; reference chart, not a physical cutoff",
+  "weak_order": "Sector-by-sector analytic argument in owning report: frozen K extends H=L2 sections plus means to H^-2 sections plus mean duals, fixed eta>0 only"
+}

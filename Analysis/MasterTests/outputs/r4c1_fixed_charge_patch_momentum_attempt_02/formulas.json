@@ -1,0 +1,17 @@
+{
+  "charges": "Qdust and Q_U1 fixed exactly; p_u direction is radial at v=0",
+  "classification": "Instantaneous constrained fixed-charge planar momentum inertia only; not physical ghost/mode/cutoff or arbitrary3D closure",
+  "clock": "psi=tau after variation; N=1/s>0; Hpsi=-p_psi=+(E0+p_T+flux)/s",
+  "complement": "R full 12x12 from original action; ell(s)=ell0+s*h",
+  "constraint_curve": "delta p_Z=Fprime/Z_z, delta pi_zz=F/2, all configurations/p_V/p_T/p_v fixed; solve p_psi from true H_perp",
+  "dust_time_not_fixed": true,
+  "force_regulator_momentum": "p_Z=-b*w^2*s on psi_i=0",
+  "lapse_flux": "partial_i(gamma*p_V^i) retained, unchanged under these momentum variations",
+  "minus_Hss": "B=[K_Q*(1+w^2)-h^T R^-1*h]/p-6*A*abs(w)^3-2*b*w^2*Zhat/p^2",
+  "negative_F_form": "-Q_F=-(Rinv)_zzzz*F^2/p+2*[Rinv(P-ell0)]_zz*F*delta_s/p^2+B*delta_s^2",
+  "patch_poincare": "36*k^2 on interval length pi/(6*k); compact supports avoid nodes",
+  "positive_radial_form": "Q_u=int chi^2/p; mixed F/chi term zero at u_hat=0",
+  "regulator_drift": "Zhat=Ud*w^2-Rshift*Z_z; Ud is not U_dot",
+  "sufficient_patch_ratio": "a^4*[9*N_R*b^2*Uu^2*k^2/(8*p*Bmin)+27*b^2*Y^2*Uu^4*k^2/(p^4*Ul^2*Bmin^2)]",
+  "symplectic_pullback": "delta psi=delta h_iz=0; solved p_psi and pi_iz drop from canonical one-form; remaining p_Z dZ and p_u du persist"
+}

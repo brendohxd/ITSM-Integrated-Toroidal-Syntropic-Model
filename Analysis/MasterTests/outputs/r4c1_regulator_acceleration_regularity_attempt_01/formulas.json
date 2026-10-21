@@ -1,0 +1,25 @@
+{
+  "derivative_jump": "2*K0*abs(partial_z w(node))",
+  "exact_direct_cusp_acceleration": "A*p*(3*H0*p*w + 3*R*p*wp + 6*U*w + 2*beta*p**2*w - 3*p*q*w)*Abs(w)/(b*w)",
+  "feedback": "delta_Ztt=(h^T R^-1 f_cusp-Epsi_cusp+beta*delta_rho)/(b*w^2)",
+  "interpretation": "Nonzero K0 obstructs C1 spatial regularity of Ztt and hence C3 spacetime Z in this registered profile class. It does not rule out C2/weak existence or the whole action.",
+  "leading_acceleration_coefficient": "A*(3*H0*p**2 + 6*U*p + 2*beta*p**3)/b",
+  "local_density_cusp": "2*A*p**3*w**2*Abs(w)",
+  "original_nodal_complement_determinant": "MU2**3*(-16*MP2 - 8*MU2*(c1 + 3*c2 + c3))*(MP2 - MU2*(c1 + c3))**5*(c1 + c4)**3",
+  "proof": "R is analytic and det R(0)!=0. h=O(w^3),f_cusp=O(|w|^2), so coupled feedback is O(|w|^3) after division by b*w^2. Analytic shift reflection gives q-R*wprime/w ->0. Therefore delta_Ztt/|w| -> K0.",
+  "scalar_complement_mixing": [
+    "0",
+    "0",
+    "0",
+    "-2*U*b*w**4",
+    "0",
+    "0",
+    "0",
+    "-U*b*w**3",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "scalar_cusp_current": "3*A*p*w*(-H0*p*w - R*p*wp - 2*U*w + p*q*w)*Abs(w)"
+}

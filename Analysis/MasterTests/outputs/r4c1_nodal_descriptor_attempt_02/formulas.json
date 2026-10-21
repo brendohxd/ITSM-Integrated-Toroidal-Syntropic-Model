@@ -1,0 +1,16 @@
+{
+  "action": "Theta_other-g*s*dZ-Hpsi(s)*dtau; g=b*volume*V.h.V, pZ=-g*s",
+  "aligned_rows": "H_s=-(Eother+Edust+divF+volume*K_Q*s^2/2)/s^2=0; Ppsi=K_Q*s; original Z row chi=Z+s*divV=0",
+  "background_drift_required": true,
+  "conclusion": "No uniform bounded inverse on this unrestricted unweighted L2 tangent space. Not a Cauchy/physical ghost or all-formulation no-go.",
+  "descriptor_rows": "-g*Zdot-H_s=0; d_tau(g*s)-H_Z=0; other canonical momenta include -s*g_q*Zdot",
+  "elimination": "vary ppsi,N,pZ,Zhat first; N=1/s and pZ=-g*s eliminate multiplier pair without dividing g",
+  "inverse_bound": "unit L2 delta_s bump: ||Omega delta_s||<=b*e^2*k^2*epsilon^2/sqrt(85), tends to zero",
+  "linearized_descriptor": "Omega_ij*d_tau(deltaX^j)+[(d_k Omega_ij)*Xdot_bg^j-Hessian(Hpsi)_ik]*deltaX^k=0",
+  "metric_frame_variation": "dg=b*volume*[c*tr(h^-1 dh)/2+V^T dh V+2*dV^T*h*V]",
+  "node_lifting": "Transverse deltaV can lift rather than move the alignment surface; no imposed persistence or mode removal",
+  "partial_Hamiltonian": "Hpsi(s)=<(E0(s)+Edust+div F)/s>; same full spatial/global reduction with pZ=-g*s",
+  "remaining": "Actual mixed-order/weighted domain, full coupled functional Hessian/background drift, spectrum and physical window remain open",
+  "tangent_domain": "delta pZ(node)=0; delta pZprime(node)=-2*b*p*wprime*deltaVy; dz_node=-deltaVy/wprime",
+  "two_form": "dTheta_other-g*ds wedge dZ-s*dg wedge dZ"
+}

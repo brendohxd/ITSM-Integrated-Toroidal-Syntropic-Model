@@ -5,7 +5,31 @@ branch rebuilds the ITSM core from explicit actions, derivations, diagnostics,
 and falsifiable gates. Legacy v11 documents remain historical inputs; they are
 not the scientific status authority for this branch.
 
-## Latest initial-constraint and paper checkpoint - 18 October 2026
+## Latest research checkpoint - 21 October 2026
+
+The [21 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)
+collects the unchanged-action R4C1 work since the regulator-node completion
+checkpoint. The first material seed calculation shows that the changing
+background constraint operator cancels the earlier frozen auxiliary forcing
+for the declared amplitude-momentum seeds at that order. The frozen result
+is preserved, not reversed or overwritten. Neither result supplies a solved
+physical trajectory or full initial-data admission.
+
+The evidence includes nodal transport and momentum constructions, the full
+coupled planar descriptor, a partial Legendre chart, two-node graph domain,
+weak-generator realization, scalar-energy warnings and canonical seeds.
+Failed attempts, numerical spectrum-conditioning warnings and unfinished
+checkpointed QR branches remain explicit. Check counts and exact replay are
+bounded calculation evidence, not physical clearance.
+
+The next research boundary is higher/rank-changing constraint consistency and
+controlled short-time coupled evolution from the existing exact implicit
+initial data. Stage 1 retains its bounded linear acceptance; Stage 2 remains
+incomplete; Stage 3 is not entered. The physical energy/window, healthy GR
+and both identifying matching inputs remain unresolved. Rule-9 is deferred,
+not cleared. No new action, state adoption, paper release or site deployment.
+
+## Preserved initial-constraint and paper checkpoint - 18 October 2026
 
 The [18 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-18.md)
 links the regulator-node conditions, exact restricted nonlinear initial system,

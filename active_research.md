@@ -7,7 +7,37 @@
 
 ---
 
-## Research checkpoint and next work - 13 October 2026
+## Latest provisional research checkpoint - 21 October 2026
+
+The [21 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)
+records the post-18-October R4C1 work. This dated research supplement does not
+change the canonical authority baseline or relabel the historical gate snapshots.
+
+- **New bounded positive result:** the first material seed identity retains
+  and cancels the frozen auxiliary forcing against the action-generated change
+  in the background constraint operator. The analytic structural hypotheses
+  and representative controls are specified in the
+  [owning report](Theory/Gates/RES-001/RES001_R4C1_MATERIAL_SEED_FEASIBILITY_V1_REPORT_2026-10-21.md).
+  The 453/453 checks and fresh exact replay do not prove nonlinear evolution,
+  full admission, persistence or stability.
+- **Preserved qualifications:** frozen canonical seeds need not lie in the
+  squared operator domain; the weak-generator realization does not establish
+  a dense Cauchy domain or a semigroup. Restricted negative scalar-energy
+  curvature, finite-regulator weak-source warnings, spectrum-conditioning
+  failures and unfinished QR branches remain unresolved in their stated scopes.
+- **Next physical target:** higher/rank-changing auxiliary consistency and
+  controlled short-time coupled background/perturbation construction using the
+  already certified exact implicit initial constraints, or a precise
+  incompatibility. Do not substitute more frozen spectra for this construction.
+
+Stage 1 remains complete only in its registered linear prepared-dust scope.
+Stage 2 `INCOMPLETE`; Stage 3 `NOT_ENTERED`; Tests 1-3 `HOLD_SUBSTANTIVE`;
+MAT-001 `BLOCKED`; `K_Q=NOT_DERIVED`; `V=NOT_COMPUTED`; UVIR-003 `IN_PROGRESS`;
+Stage 4A `CLOSED`; TOP-X4 unchanged. Physical energy/window, healthy GR and both
+identifying matching inputs remain open. Review `DEFERRED`,
+`Rule9_cleared=false`, `physics_pass=false`, `gate_effect=NONE`.
+
+## Preserved research checkpoint and next work - 13 October 2026
 
 The [13 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-13.md)
 records the newly retained dust, coupled-interaction and matching evidence.
