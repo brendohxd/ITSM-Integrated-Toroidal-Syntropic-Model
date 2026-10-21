@@ -1,5 +1,19 @@
 # ITSM Changelog & Archive History
 
+## Public research progress note (2026-10-21)
+
+- Updated the homepage and Progress page with a short explanation of the first
+  material seed compatibility result. Evidence links are pinned to research
+  commit `2587c3eb`; the frozen-background result remains valid and preserved.
+- Kept the public limits explicit: no solved physical evolution, full higher
+  constraint closure, stability, controlled physical window, healthy GR or
+  numerical acceleration prediction. No scientific gate or review is cleared.
+- Updated the next research step, page date/description and service-worker
+  cache version. Retained the existing concept/vision and paper release pages.
+- Updated source navigation and the website checker's cache expectation.
+  Deployment and live-page confirmation are separate from source validation;
+  unrelated manuscripts, numerical evidence and private material are unchanged.
+
 ## Coupled domains, canonical seeds and first material compatibility (2026-10-21)
 
 - Added the [21 October research checkpoint and exact-byte evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)

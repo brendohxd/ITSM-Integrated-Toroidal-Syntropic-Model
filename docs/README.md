@@ -2,6 +2,22 @@
 
 Multi-page research site published at https://itsm-cosmology.com.
 
+## Public research-note source update - 21 October 2026
+
+The homepage progress cards and Progress page now describe the first material
+compatibility result, with links pinned to the owning report and evidence map
+at research commit `2587c3eb`. They distinguish the changing-background
+cancellation from the still-valid frozen result and retain the open evolution,
+stability, physical-window, GR and matching requirements. The main concept,
+vision, paper releases and canonical scientific statuses are unchanged.
+
+The service-worker cache version advances to `itsm-pwa-v11-20261021` so offline
+copies can refresh. The website checker follows that version without changing
+its scientific-status, link, privacy or structural checks. Deployment uses the
+existing manual Pages workflow on `recovery/v12-core-architecture`; a source
+commit alone is not proof of deployment. The earlier navigation-only update
+below did not deploy the site.
+
 ## Repository research checkpoint - 21 October 2026
 
 The [latest checkpoint](../Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)
