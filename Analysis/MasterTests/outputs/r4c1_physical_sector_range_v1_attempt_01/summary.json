@@ -1,0 +1,123 @@
+{
+  "checks": [
+    {
+      "name": "full_inverse_action_including_crosses",
+      "passed": true
+    },
+    {
+      "name": "antisymmetric_two_form",
+      "passed": true
+    },
+    {
+      "name": "determinant_g_squared",
+      "passed": true
+    },
+    {
+      "name": "Darboux_pullback_full_crosses",
+      "passed": true
+    },
+    {
+      "name": "Darboux_Jacobian_minus_g",
+      "passed": true
+    },
+    {
+      "name": "alignment_two_auxiliary_null_rows",
+      "passed": true
+    },
+    {
+      "name": "alignment_rank_is_canonical_only",
+      "passed": true
+    },
+    {
+      "name": "retained_drift_balance",
+      "passed": true
+    },
+    {
+      "name": "drift_not_identically_zero",
+      "passed": true
+    },
+    {
+      "name": "cross_deletion_rejected",
+      "passed": true
+    },
+    {
+      "name": "nodal_quadratic_leading_order",
+      "passed": true
+    },
+    {
+      "name": "L2_monomial_order_0",
+      "passed": true
+    },
+    {
+      "name": "L2_monomial_order_1",
+      "passed": true
+    },
+    {
+      "name": "L2_monomial_order_2",
+      "passed": true
+    },
+    {
+      "name": "L2_monomial_order_3",
+      "passed": true
+    },
+    {
+      "name": "C1_borderline_double_trace_not_sufficient",
+      "passed": true
+    },
+    {
+      "name": "periodic_double_zero_pi/2",
+      "passed": true
+    },
+    {
+      "name": "periodic_simple_zero_rejected_pi/2",
+      "passed": true
+    },
+    {
+      "name": "periodic_double_zero_3*pi/2",
+      "passed": true
+    },
+    {
+      "name": "periodic_simple_zero_rejected_3*pi/2",
+      "passed": true
+    },
+    {
+      "name": "moving_first_trace_transport_cancels",
+      "passed": true
+    },
+    {
+      "name": "omitting_node_transport_rejected",
+      "passed": true
+    },
+    {
+      "name": "fixed_configuration_curvature_map",
+      "passed": true
+    }
+  ],
+  "formulas": {
+    "g": "b*sqrt(det h)*V^T*h*V",
+    "pZ": "-g*s",
+    "regularity": "C2 scalar sources; full remaining tangent conditions retained",
+    "smooth_node_conditions": "Phi=0 and partial_z Phi=0 at BOTH nodes",
+    "vZ": "-r_s/g",
+    "vs": "(r_Z-s*Dg[r_P])/g"
+  },
+  "gate_effect": "NONE",
+  "metadata": {
+    "source_hashes": {
+      "Analysis/MasterTests/test_01_r4c1_coupled_descriptor_action_v1.py": "99a71aa721140a59c0e27af4632e4c52c9ae30138a8ae9af53b690b5c2cee157",
+      "Analysis/MasterTests/test_01_r4c1_material_seed_feasibility_v1.py": "4dca68f194c0a07087c808c06718bf871a8a78dcf1a264cb32293bb3ab06af75",
+      "Analysis/MasterTests/test_01_r4c1_physical_sector_range_v1.py": "2ed789f136172dfcd2a57bfa6a04bef1d2dbb54bcc18795d1178e13984a6b012",
+      "Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_SECTOR_RANGE_V1_ADDENDUM_2026-10-27.md": "2d5ca5d9df66cdffcb74ae3392dbcde575af743928063d2315fc5f10054635db",
+      "Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_SECTOR_READINESS_V1_CONTRACT_2026-10-27.md": "431bbe4379aa756d0b22dd7c15ede57d48f6909bc3c9f7ea349442da1e1ca7fc"
+    },
+    "sympy": "1.14.0"
+  },
+  "passed": 23,
+  "physical_admission": "UNRESOLVED",
+  "physical_normalization": "UNRESOLVED",
+  "physics_pass": false,
+  "result_id": "R4C1-PHYSICAL-SECTOR-RANGE-V1",
+  "review_status": "DEFERRED",
+  "scope": "Exact range/Darboux/nodal method controls; NOT full physical admission",
+  "total": 23
+}

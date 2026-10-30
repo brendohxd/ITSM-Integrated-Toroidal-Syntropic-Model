@@ -3552,3 +3552,614 @@ provider/model/runtime or action change. Unrelated paper work is untouched.
 - Native goal remains PAUSED; this current-turn work was operator-authorized. No state adoption/evolution, vault write, manuscript/site/publication, commit/push, paid dispatch or model/runtime change. The original live-index prefixes and sidecars were byte-backed up before this append.
 
 
+## 24 October 2026 - R9-ARCH-FORCE-COMPARISON-V1
+
+- Owner: existing-force architecture comparison; work initiated 23 October.
+  [Owning report](../Core/ITSM_FORCE_ARCHITECTURE_COMPARISON_V1_REPORT_2026-10-23.md),
+  SHA fef673253469c1b081e38650678260bbcf22f992317de3b8c7c1840d37734e71.
+  Contract f47060a8d2fb2dcea2c3fa5af6199c13cbb731927fc37bffba83fa4954ab6006;
+  frozen inputs 521a7c7838aadaabdcebe0e81cae21abf84d4aa7e67031ad9d2d41018cbd3c8f.
+- New PKM1 P0-B local/static calculation V2: 99/99 computational checks;
+  independently implemented Binet/SI controls 19/19; fresh read-only exact
+  replays. These are same-author controls, NOT independent peer review.
+  The preserved V1 98/99 failure was a symbolic positivity-inference defect;
+  exact factorization repairs only the implementation predicate in V2.
+- Derived within declared local/aligned/spherical scope: the designed P0-B
+  primitive yields g=(g_N+sqrt(g_N^2+4*a0*g_N))/2, hence an inward a0
+  high-acceleration correction with explicit algebraic remainder. INPOP15a
+  C1/C2 acceptance thresholds are kept separate and are NOT Gaussian sigmas
+  or an ITSM ephemeris fit. The resulting restrictions constrain a free a0;
+  no numerical a0, C_chi or microscopic matter normalization is identified.
+- Physical window UNRESOLVED. Same-action on-shell local background,
+  preferred-frame/global boundary/mean data, controlled physical quasistatic
+  error, coupled characteristics and interaction/frequency cutoff remain missing.
+  Equal leading static potentials and the retained luminal TT principal block
+  do not complete Cassini, PPN or the actual GW170817 band/path test.
+- Existing R4C1 material-seed compatibility is preserved, not promoted to
+  finite-time persistence or positive physical energy. Negative restricted
+  curvature is not a demonstrated physical ghost, and the finite-b weak-source
+  and frame-probe warnings remain. RM1/ST1/ST2 do not identify both missing
+  Stage-3 matching inputs.
+- Recommendation: unchanged R4C1 for ONE bounded physical-sector
+  admissibility/normalization calculation, with a physical result or precise
+  obstruction as acceptance. No automatic higher-derivative/spectrum sweep,
+  PKM1 adoption, new microscopic parent, fitting or TOP-X4 pivot.
+- Inherit R4C1 material/seed, energy, weak-generator, initial-admission,
+  GR-family, weak-source/frame-probe and MAT R4/R5/RM1/ST1/ST2 review debt,
+  plus the separately declared PKM1 P0 parent/control dependencies.
+  Review DEFERRED; Rule9_cleared=false; provisional diagnostic reuse only.
+  Dependent physical uses HOLD_SUBSTANTIVE.
+- P1 rc7 and P2 rc4 retain independent author/review/release decisions.
+  No paper/PDF was edited or rebuilt; P2's 18/19 sensitivity failure remains.
+- Preservation: 60 existing source/sidecar/dirty files were unchanged during
+  calculation. The original task-workspace artifacts and failed attempt remain;
+  integrated copies are byte-compared. Before this append, the 308830-byte
+  register (SHA 5d49aabe5027c01406fa1f1dfc9f635b970016fcf179eb8a568e6341925af261)
+  and its original sidecar were byte-backed up under ignored
+  .local/force-architecture-20261023-preappend/. Only this mutable register's
+  current hash pointer is updated; original scientific sidecars stay unchanged.
+- Stage2 INCOMPLETE; Stage3 NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE;
+  MAT-001 BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED; UVIR-003 IN_PROGRESS;
+  Stage4A CLOSED; TOP-X4 unchanged; physics_pass=false; gate_effect=NONE.
+  No commit, push, publication, vault mutation, paid/model/provider dispatch
+  or security/global runtime setting change.
+
+
+
+## 27 October 2026 — R4C1 physical-sector range and next-stage decision
+
+- Result ID: R9-MT1-PHYSICAL-SECTOR-RANGE-V1. Claim Conditional;
+  review_status=DEFERRED; Rule9_cleared=false.
+- Owning [range report](../Gates/RES-001/RES001_R4C1_PHYSICAL_SECTOR_RANGE_V1_REPORT_2026-10-27.md),
+  SHA256 3499334fb4e7c70321478197a663cd37cb0c40b4d7c7727254ee9e7c08bc4377.
+  [Goal decision](../Core/ITSM_NEXT_STAGE_DECISION_V1_2026-10-27.md),
+  SHA256 c274ca7ab1848b00e33f9e9b0faff6cc80ba741c7821dda97ea41971c3b64d83.
+- PROCEED_PROVISIONALLY for the exact regular-patch range/Darboux identities,
+  declared C2/unweighted-L2 both-node divisibility criterion and moving-trace
+  method controls. These do not classify actual physical modes or select a norm.
+- Primary exact controls 23/23, independent geometric V2 controls 27/27; zero
+  failed/unknown in successful receipts. Both fresh immutable replays exact.
+  Primary receipt 3c671c7b55b2ce97a5457ab701ca5c0c439395f81b616a47f052ca6f9bb08dc8;
+  independent receipt 4cab0ad482336d047b1b0040190bc1f458a39b19e2a97deeac84a20d1575d29d.
+  Independent V1 allocation failure and original source/sidecar remain preserved;
+  V2 changes allocation/docstring only, not equations or acceptance criteria.
+- HOLD_SUBSTANTIVE for physical admission, ghost/health classification, a positive
+  physical energy, full stability, physical window, healthy GR or a numerical
+  acceleration prediction. Actual full K sources on an admitted controlled
+  background, a justified continuum space and temporal consistency are still
+  required. No weighted/mixed-order alternative is excluded by the L2 criterion.
+- Inherit action/variation, nodal/global/tangency/descriptor, initial-admission,
+  partial-Legendre, scalar-energy and material-seed review dependencies. Review
+  must independently assess the full quotient/mean/charge treatment, source
+  regularity, both nodes, moving constraints and physical interpretation. Local
+  independent implementation is not independent scientific review.
+- Companion [matching-input screen](../Gates/MAT-001/MAT001_NEXT_STAGE_INPUT_SCREEN_V1_2026-10-27.md),
+  SHA256 4779044e2abfcb00355d8c8e64e975c30ec02db8add3c87731ece02def1fbd7f:
+  no new identifying input/parent; physical matching remains open. Companion
+  [P1/P2 decisions](../../papers/Selective-Publishing-Plan/ITSM_P1_P2_RELEASE_DECISIONS_V1_2026-10-27.md),
+  SHA256 572e89aae5465f44655561cecf85153a5e18a2ab1a40f5f5beba17c29680e707:
+  author/review/metadata/upload decisions remain; no new paper/publication claim.
+- Stop this bounded calculation; no automatic higher hierarchy, full spectrum,
+  new parent, TOP-X4 pivot or observational likelihood run. Stage1 retains only
+  its registered linear prepared-dust acceptance; Stage2 INCOMPLETE; Stage3
+  NOT_ENTERED; Tests1-3 HOLD_SUBSTANTIVE; MAT-001 BLOCKED; K_Q NOT_DERIVED;
+  V NOT_COMPUTED; UVIR-003 IN_PROGRESS; Stage4A CLOSED; physics_pass=false;
+  gate_effect=NONE. No public action, vault mutation or provider/model dispatch.
+- Before appending this entry, the mutable register bytes (SHA256
+  20a42a90405f518e51217aab35156f11206ca924d8305f1df3c8a94078fd9020) and original
+  digest bytes (SHA256 0a757392b55aa5e75ebaa09b3c9f150a1e0ec9805f1a7db8f73be9868a7d0b83)
+  were byte-backed up under ignored .local/r4c1-range-20261027-preappend/.
+  Only this mutable register's current digest is updated; prior scientific
+  sources, sidecars and failed attempts remain unchanged.
+
+## 27 October 2026 — full initial-slice coupled acceleration diagnostic
+
+- ID R9-MT1-JOINT-BACKGROUND-ACCELERATION-V1; Conditional; review DEFERRED;
+  Rule9_cleared=false. Owning [report](../Gates/RES-001/RES001_R4C1_JOINT_BACKGROUND_ACCELERATION_V1_REPORT_2026-10-27.md),
+  SHA256 5efb4f5527ea0a68238b5bc64044ae48c4bfe135f1d99ffb3553a88952371eda.
+- Full fourteen-coordinate original-density Euler diagnostic at fourteen nonzero-
+  frame points on the corrected joint representative: 176/176 numerical controls,
+  no failed/unknown rows, fresh two-worker byte-exact replay after four-worker run.
+  Receipt SHA256 ae70906b2fbe22e88afb087a7efd00245f8b49409953349d03061c8d7188c746;
+  executable SHA256 2cbb055c8a4172ef9e75daa7b80a92c5f979aadc817e29d7cace6115adb47ec5.
+- PROCEED_PROVISIONALLY for initial-slice method/control reuse. HOLD_SUBSTANTIVE
+  for continuum node extension, exact-root/shift error bounds, full admission,
+  physical modes, persistence or a physical window. Sampled finite acceleration
+  and nonmonotonic responses are not extrapolated to a node theorem.
+- Inherit joint-node-velocity V2, coupled-node-acceleration V4, transport V2,
+  initial/partial-Legendre and original normalized-frame density review debt.
+  Local numerical differentiation is not independent peer review. Next supported
+  G1 task is the full regulator's further nodal consistency test; its working
+  algebra is unverified and supplies no accepted failure/correction.
+- G1-G6 and the expanded goal remain INCOMPLETE. Stage2 INCOMPLETE; Stage3
+  NOT_ENTERED; MAT-001 BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED;
+  UVIR-003 IN_PROGRESS; Stage4A CLOSED; physics_pass=false; gate_effect=NONE.
+  No publication, new parent/state adoption, vault mutation, commit/push or
+  provider/global-runtime change. Pre-append register and digest bytes are backed
+  up under ignored .local/joint-acceleration-20261027-preappend/; scientific
+  source/receipt sidecars are unchanged. Only the mutable register digest updates.
+
+## 27 October 2026 — second-node failure and quartic initial completion
+
+- R9-MT1-SECOND-NODE-CONSISTENCY-V1: Conditional, review DEFERRED,
+  Rule9_cleared=false. [Owning report](../Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_V1_REPORT_2026-10-27.md).
+  The registered quadratic Z=U*w^2 continuation has second trace in [222,231],
+  away from zero under its specified classical regularity. Original coordinate
+  geometry/current controls, exact action-derived node coefficients, outward
+  exact-root enclosure and immutable replays support this bounded rejection.
+  The failed enclosure V1 loader and its V2 repair are preserved. This is not
+  an all-state, all-family, weak-solution or all-action exclusion.
+- R9-MT1-QUARTIC-JOINT-COMPLETION-V1: Conditional, review DEFERRED,
+  Rule9_cleared=false. [Owning report](../Gates/RES-001/RES001_R4C1_QUARTIC_JOINT_COMPLETION_V1_REPORT_2026-10-27.md).
+  The unchanged action with initial Z=U*w^2+W*w^4 and Zdot=Ud*w^2 has one
+  unique restricted root of FOUR necessary conditions in the frozen B1 eta=1/4,
+  e=1/500,k=40 box. Exact constrained-shift response and uncertainty retained;
+  contraction norm<0.148, self-map bound<0.193 and local dust rho>0.1713.
+  Approximate W=33.75222953 is a control, not a microscopic force coefficient.
+  Joint 16/16, separate coordinate-current 4/4, exact algebra 13/13 checks;
+  all three freshly replayed byte-exact. Receipt and source hashes are in the
+  report; 114 joint source pins verified. Checks do not establish physical clearance.
+- PROCEED_PROVISIONALLY for the scoped necessary-condition construction,
+  original-source algebra and method reuse. HOLD_SUBSTANTIVE for full initial
+  background admission, node/constraint persistence, physical perturbations,
+  coupled IVP, interactions/window/GR or matching-dependent predictions.
+  Next: controlled full coupled acceleration/node extension on the NEW joint
+  construction, retaining root/shift uncertainty and both nodes. Do not evolve
+  by continual projection onto either chosen initial profile.
+- Inherit joint-node-velocity V2, full generic constraint/density, initial
+  acceleration, second-node geometry/scalar and all original action review
+  dependencies. Same-author independent methods are not an independent panel.
+  Pending review alone does not block eligible provisional continuation.
+- G1-G6 remain INCOMPLETE. Stage2 INCOMPLETE; Stage3 NOT_ENTERED;
+  MAT-001 BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED;
+  UVIR-003 IN_PROGRESS; Stage4A CLOSED; physics_pass=false; gate_effect=NONE.
+  No publication, new parent/state adoption, vault mutation, commit/push,
+  dispatch or runtime change. Before append, mutable index/register bytes and
+  their sidecars are backed up under ignored .local/quartic-20261027-preappend/.
+  Only current mutable documentation sidecars update; old evidence is unchanged.
+
+## 27 October 2026 — quartic kinetic complement and controlled node cusp
+
+- ID R9-MT1-QUARTIC-NODE-OPERATOR-V1; Conditional; review DEFERRED;
+  Rule9_cleared=false. [Owning report](../Gates/RES-001/RES001_R4C1_QUARTIC_NODE_OPERATOR_V1_REPORT_2026-10-27.md).
+- Derive full fourteen-coordinate initial kinetic operator, certify its twelve-
+  direction complement throughout the registered profile: inverse norm<24.058.
+  The full scalar/regulator operator remains singular at either alignment node.
+  Unreduced signatures are not a physical ghost/stability determination.
+- Exact initial scalar forcing retains full volume/metric/frame drift, constrained
+  shift and local dust. Original-coordinate controls pass. The complete cusp
+  acceleration part has coefficient 0.00398305<c0<0.00409915 and remainder
+  <3.623*|w|^3 on both-node |w|<=1/1000. Coupled complement cannot cancel
+  the leading |w| term. This excludes extra differentiability of Ztt across a
+  node, not continuous acceleration or C2 spacetime Z by itself.
+- Kinetic V2 33/33, scalar quotient42/42, cusp remainder6/6; all freshly replay
+  byte-exact. V1's24/28 endpoint-control failure and corrected rational-domain
+  construction are preserved. No mathematical criterion was loosened.
+- PROCEED_PROVISIONALLY for exact operator/force identities and explicit bounded
+  cusp structure. HOLD_SUBSTANTIVE for remaining analytic-force error bounds,
+  admitted function space/transport, full background admission, physical modes,
+  coupled evolution, interactions/window/GR and identifying matching inputs.
+  Next retain this cusp in the remaining analytic-force and persistence work.
+- Inherit quartic joint root, second-node, original action/density and coordinate
+  Euler/current review dependencies. Same-author controls are not an independent
+  scientific review. G1-G6 remain INCOMPLETE; Stage2 INCOMPLETE; Stage3 NOT_ENTERED;
+  MAT-001 BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED; UVIR-003 IN_PROGRESS;
+  Stage4A CLOSED; physics_pass=false; gate_effect=NONE. No state/parent adoption,
+  vault mutation, dispatch, publication, commit/push or deployment.
+- Original mutable index/register bytes and sidecars are backed up under ignored
+  .local/quartic-node-20261027-preappend/ before this append. Old scientific
+  files/sidecars and failed attempts remain unchanged.
+
+## 27 October 2026 — continuous bounded initial fourteen-coordinate acceleration
+
+- ID R9-MT1-QUARTIC-INITIAL-ACCELERATION-V1; Conditional; review DEFERRED;
+  Rule9_cleared=false. [Owning report](../Gates/RES-001/RES001_R4C1_QUARTIC_INITIAL_ACCELERATION_V1_REPORT_2026-10-27.md).
+  The exact registered B1 eta=1/4,e=1/500,k=40 quartic construction now has
+  a bounded continuous INITIAL fourteen-coordinate Euler acceleration extension
+  through BOTH nodes, including full analytic complement sources and cusp.
+  Conservative whole-profile reference-unit bounds: |aPsi|<0.129459,
+  max|ay|<29.086701, |aZ|<3146.179. These are magnitude bounds, not predicted
+  accelerations, useful-accuracy or time-evolution estimates.
+- Exact G=0 and reflection remove the scalar node numerator before division;
+  all mixed normal chain derivatives, local lapse density/flux, root/shift
+  errors, volume/metric/frame drift, charges and physical cusp remain.
+  Both-node orientation is independently checked as an exact identity.
+- Complement-force V3 38/38, scalar-bound V1 13/13, orientation4/4; all
+  fresh byte-exact replays.137 inherited sources preserved. V1/V2 interval
+  wrapper failures stopped before acceptance; sources/sidecars/logs preserved.
+- PROCEED_PROVISIONALLY for the bounded initial extension and methods.
+  HOLD_SUBSTANTIVE for higher compatibility, mixed regularity, constraint/charge
+  transport, background admission, coupled IVP, physical modes/window/GR and
+  identifying matching inputs. G1-G6 INCOMPLETE; physics_pass=false;
+  Stage2 INCOMPLETE; Stage3 NOT_ENTERED; MAT-001 BLOCKED; K_Q NOT_DERIVED;
+  V NOT_COMPUTED; UVIR-003 IN_PROGRESS; Stage4A CLOSED; gate_effect=NONE.
+- Inherit quartic-root, node-operator/cusp, original-density/variation and full
+  transport-geometry review dependencies. The adjacent transport WORKING_ALGEBRA
+  note is NOT VALIDATED and supplies no additional scientific result/blocker.
+  Same-author method checks/replays are not independent peer review.
+- Before append, mutable index/register bytes and sidecars are backed up under
+  ignored .local/quartic-initial-20261027-preappend/. No old scientific files,
+  hashes, sidecars or failed attempts are changed. No state/parent adoption,
+  vault mutation, dispatch, publication, commit/push or deployment.
+
+## 27 October 2026 — differentiated regulator and scalar-jerk cusp
+
+- ID R9-MT1-QUARTIC-JERK-TRANSPORT-V2; Conditional / scoped regularity
+  exclusion; review DEFERRED; Rule9_cleared=false. [Owning report](../Gates/RES-001/RES001_R4C1_QUARTIC_JERK_TRANSPORT_V2_REPORT_2026-10-27.md).
+  In the registered initial data/gauge, the full regulator time equation fixes
+  a scalar-jerk cusp j_cusp=(9/560000)*|w|+O(|w|^3), with explicit remainder
+  <0.00011395*|w|^3 on |w|<=1/1000. The actual coupled kinetic inverse,
+  metric trace and volume response remain. Full coordinate geometry verifies
+  the time equation and compensating jerk at both signs and normal slopes.
+- This excludes joint C4 psi for THESE data/gauge, not all states, actions,
+  gauges or weaker solutions. It does not invalidate the previously accepted
+  continuous initial acceleration certificate. C4 is not imposed as a new
+  physical requirement or used to prohibit the authorized weaker-space route.
+- V2 38/38, fresh byte-exact replay,144 source pins preserved. V1's exact-zero
+  interval-representation failure and its source/log/sidecar remain untouched.
+  Same-author controls are not independent scientific peer review.
+- PROCEED_PROVISIONALLY for this bounded regularity information and same-action
+  weaker-space investigation. HOLD_SUBSTANTIVE for the excluded joint C4
+  continuation and for actual admission, constraint/charge persistence, IVP,
+  physical modes/window/GR or identifying matching claims. Next establish
+  the TOTAL analytic jerk/node quotient and admissible graded spaces, then
+  constraint transport without illegal differentiation of traces.
+- G1-G6 INCOMPLETE; Stage2 INCOMPLETE; Stage3 NOT_ENTERED; MAT-001 BLOCKED;
+  K_Q NOT_DERIVED; V NOT_COMPUTED; UVIR-003 IN_PROGRESS; Stage4A CLOSED;
+  physics_pass=false; gate_effect=NONE. Inherit initial-root/acceleration,
+  original action/density/cusp and full geometry review dependencies.
+- Before append, mutable index/register bytes and sidecars are backed up under
+  ignored .local/quartic-jerk-20261027-preappend/. All original scientific
+  evidence and hashes are preserved. No new parent/state adoption, vault
+  mutation, paid dispatch, publication, commit/push or deployment.
+
+## 28 October 2026 — total initial jerk and explicit weak interface
+
+- ID R9-MT1-QUARTIC-TOTAL-JERK-V1; Conditional; review DEFERRED;
+  Rule9_cleared=false. [Owning report](../Gates/RES-001/RES001_R4C1_QUARTIC_TOTAL_JERK_V1_REPORT_2026-10-28.md).
+  The analytic frame source is derived from the original density and its
+  node quotient is removable. Exact kinetic-sector isolation, metric crosses
+  and original full-generator controls remain. The TOTAL initial scalar jerk
+  extends continuously through both orientations and is locally Lipschitz/H1,
+  not H2. Conservative magnitude bounds:133.660 near |w|<=1/1000 and2975.311
+  away from |w|<1/2000; overlapping domains cover the periodic profile.
+- The actual coupled cusp yields second weak normal-derivative delta strength
+  9/3500000 per simple alignment node. Both-node integration-by-parts controls
+  require this term. Multiplication by g=b*w^2 kills this particular delta;
+  neither division across nodes nor omission from other equations follows.
+- 30/30 exact/interval/reused-full-generator/weak controls; fresh byte-exact
+  replay;148 source pins unchanged. Existing acceleration and joint-C4
+  exclusion results remain intact. Same-author methods are not independent
+  scientific review. No weak evolution or physically admitted background follows.
+- PROCEED_PROVISIONALLY for finite initial jerk/interface reuse. Next actual
+  full-vector alignment transport and Hamiltonian/momentum/charge tangency,
+  keeping vector Ward and all interface terms; then graded evolution estimates.
+  HOLD_SUBSTANTIVE for constraint persistence, admission/IVP, physical modes,
+  interactions/window/GR and identifying matching. G1-G6 INCOMPLETE;
+  Stage2 INCOMPLETE; Stage3 NOT_ENTERED; MAT-001 BLOCKED; K_Q NOT_DERIVED;
+  V NOT_COMPUTED; UVIR-003 IN_PROGRESS; Stage4A CLOSED;
+  physics_pass=false; gate_effect=NONE. Inherit original-action, root,
+  acceleration, source, cusp and geometry review dependencies.
+- Before append, mutable index/register bytes and sidecars are backed up in
+  ignored .local/quartic-total-jerk-20261028-preappend/. Original scientific
+  files/hashes/sidecars and failures are preserved. No parent/state adoption,
+  vault mutation, dispatch, publication, commit/push or deployment.
+
+
+## 28 October 2026 — quartic dust/phase initial tangency V2
+
+Entry: [quartic charge tangency](ITSM_RULE9_QUARTIC_CHARGE_TANGENCY_ENTRY_2026-10-28.md).
+Owner: [V2 report](../Gates/RES-001/RES001_R4C1_QUARTIC_CHARGE_TANGENCY_V2_REPORT_2026-10-28.md).
+256/256 exact/initial point/real-Taylor/rejection controls; four/two-worker
+exact replay;156 source pins unchanged. V1 normalization failure(216/236)
+and exact replay preserved. V2 derives physical rho_dot from the densitized
+lapse constraint, retaining metric-volume and inverse-metric flux drift.
+
+PROCEED_PROVISIONALLY for the stated sampled nonnodal initial controls and
+exact current identities. Review DEFERRED, Rule9_cleared=false; inherit all
+action/root/operator/cusp/jerk/interface dependencies. HOLD_SUBSTANTIVE for
+continuum constraints, nodal persistence, IVP/background admission, physical
+modes/window/GR, identifying matching and numerical prediction. G1-G6
+INCOMPLETE; physics_pass=false; gate_effect=NONE. No publication clearance.
+
+
+## 28 October 2026 — quartic full-vector initial node jets
+
+Entry: [vector-node jets](ITSM_RULE9_VECTOR_NODE_JETS_ENTRY_2026-10-28.md).
+Owner: [initial-node report](../Gates/RES-001/RES001_R4C1_QUARTIC_VECTOR_NODE_JETS_V1_REPORT_2026-10-28.md).
+48/48 exact/interval/original-AD/full14/rejection controls and byte-exact replay;
+159 source pins unchanged. All three initial frame accelerations vanish at
+both nodes. Conditional node-motion jets and a controlled Vz_tt/w quotient
+do not prove persistent alignment or an evolved solution. PROCEED_PROVISIONALLY
+for the scoped initial result; inherit action/root/operator/cusp/jerk/current
+dependencies. HOLD_SUBSTANTIVE for ADM/constraint transport, evolved regularity,
+IVP/background admission, physical modes/window/GR and identifying matching.
+G1-G6 INCOMPLETE; review DEFERRED; Rule9_cleared=false; physics_pass=false;
+gate_effect=NONE. No publication/canonical clearance.
+
+
+## 28 October 2026 — normalized-frame ADM Ward and conditional propagation
+
+Entry: [normalized ADM Ward](ITSM_RULE9_NORMALIZED_ADM_WARD_ENTRY_2026-10-28.md).
+Owner: [V2 report](../Gates/RES-001/RES001_R4C1_NORMALIZED_ADM_WARD_V2_REPORT_2026-10-28.md).
+105/105 exact/covariant-action/original-density/energy/rejection controls and
+byte-exact replay;167 source pins unchanged. Failed V1(100/104) and its replay
+remain. PROCEED_PROVISIONALLY for the smooth off-shell identities and the
+stated conditional unit-lapse zero-constraint estimate. Inherit original-action,
+frame/canonical/root/operator/cusp/jerk/node/current review dependencies.
+HOLD_SUBSTANTIVE for the actual weak/interface/graded Euler IVP, background
+admission and controlled time interval, physical modes/window/GR and identifying
+matching. No combined L2 approximation estimate or actual time evolution is
+certified. G1-G6 INCOMPLETE; review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE. No publication/canonical clearance.
+
+
+## 28 October 2026 — full planar weak action and local curvature constraint
+
+Entry: [full weak action](ITSM_RULE9_FULL_WEAK_ACTION_ENTRY_2026-10-28.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_FULL_WEAK_ACTION_V1_REPORT_2026-10-28.md).
+127/127 original-density/curvature/variation/node/interface/countersequence
+controls and byte-exact replay;171 sources unchanged. PROCEED_PROVISIONALLY
+for the complete implicit action backend and stated integrability domain,
+not an invariant physical space or evolved weak solution. Inherit all action,
+canonical, root/operator/cusp/jerk/node/current/Ward review dependencies.
+HOLD_SUBSTANTIVE for actual coupled evolution and graph/graded, constraint,
+interface and continuum estimates, background/time admission, physical
+modes/window/GR and identifying matching. G1-G6 INCOMPLETE; review DEFERRED;
+Rule9_cleared=false; physics_pass=false; gate_effect=NONE. No publication clearance.
+
+
+## 28 October 2026 — constrained principal/domain obstruction
+
+Entry: [principal/domain finding](ITSM_RULE9_CONSTRAINED_PRINCIPAL_ENTRY_2026-10-28.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_CONSTRAINED_PRINCIPAL_V1_REPORT_2026-10-28.md).
+24/24 primary,5/5 reconstruction,6/6 Frobenius, all exact replays;174/176/177
+respective sources unchanged. PROCEED_PROVISIONALLY for the necessary-domain
+assessment. HOLD_SUBSTANTIVE for unrestricted finite-Sobolev evolution on
+the registered slices and its dependent uses. This is not review-only debt,
+a full physical spectrum/cutoff, or an all-action/prepared-solution exclusion.
+Inherit all action/backend/canonical/root/operator/cusp/node/current/Ward
+dependencies. G1-G6 INCOMPLETE; review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE. No publication/canonical clearance.
+
+
+## 29 October 2026 - exact finite-band domain compatibility
+
+Entry: [finite-band finding](ITSM_RULE9_FINITE_BAND_DOMAIN_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_FINITE_BAND_DOMAIN_V1_REPORT_2026-10-29.md).
+14/14; byte-exact replay;177 source pins. PROCEED_PROVISIONALLY for the
+necessary compatibility finding. HOLD_SUBSTANTIVE for exact fixed finite-band
+C2(time;L2) continuation through the registered data and dependent physical
+claims. Controlled approximations and all prepared weak solutions are not
+excluded. No EFT cutoff or invariant weak domain is supplied. Inherit full
+principal/action/backend/root/kinetic/force/cusp/jerk/node/current/Ward debt.
+G1-G6 INCOMPLETE; review DEFERRED; Rule9_cleared=false; physics_pass=false;
+gate_effect=NONE. Same-author controls do not clear independent review.
+
+
+## 29 October 2026 - principal source compatibility
+
+Entry: [source map](ITSM_RULE9_PRINCIPAL_SOURCE_COMPATIBILITY_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_PRINCIPAL_SOURCE_COMPATIBILITY_V1_REPORT_2026-10-29.md).
+70/70; exact replay;180 pins. PROCEED_PROVISIONALLY for the full frozen-principal
+transfer/compatibility map. Actual nonlinear-source projection, nodal weak-domain
+admission, constraint preservation and evolved bounds remain HOLD_SUBSTANTIVE.
+Zero direct left-kernel overlap alone is insufficient. The synthetic controls
+are not physical source admission; no spectrum/cutoff or all-solution exclusion.
+Inherit principal/finite-band/action/backend/root/kinetic/force/cusp/jerk/node/
+current/Ward debt. Review DEFERRED; Rule9_cleared=false; G1-G6 INCOMPLETE;
+physics_pass=false; gate_effect=NONE. No canonical or publication clearance.
+
+
+## 29 October 2026 - complete initial clock/density Euler descriptor
+
+Entry: [clock/density source](ITSM_RULE9_CLOCK_DENSITY_SOURCE_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_CLOCK_DENSITY_SOURCE_V1_REPORT_2026-10-29.md).
+72/72 raw export with seven-file replay;68/68 completed initial descriptor and
+exact replay;183/192 pins respectively. PROCEED_PROVISIONALLY for exact chart
+identities and full initial-point action inputs. HOLD_SUBSTANTIVE for actual
+reduced frequency-source/cusp projection, nodal weak-domain admission,
+constraint preservation and controlled evolution. Nonzero residuals stay;
+point checks are not interval/continuum evidence. Inherit action/variation/
+backend, charge/root/kinetic/force/cusp/jerk/node/current/Ward and principal/
+finite-band debt. Review DEFERRED; Rule9_cleared=false; G1-G6 INCOMPLETE;
+physics_pass=false; gate_effect=NONE. No canonical or publication clearance.
+
+
+## 29 October 2026 - full initial local Jacobi coefficients
+
+Entry: [Jacobi operator](ITSM_RULE9_FULL_INITIAL_JACOBI_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_FULL_INITIAL_JACOBI_V1_REPORT_2026-10-29.md).
+139/139; seven-file exact replay;195 pins. PROCEED_PROVISIONALLY for all20
+initial local Euler coefficient rows and the declared nonzero-k gauge/clock/
+lapse pullback. Drift and the nonzero residual connection are retained.
+HOLD_SUBSTANTIVE for nodal consistency/admission, global shift inverse and
+mean/zero-mode compatibility, actual reduced source/cusp projection, invariant
+domain and controlled evolution. Numerical drift agreement is not an interval
+certificate. Inherit all action/backend/clock-density/root/kinetic/force/cusp/
+jerk/node/current/Ward and principal/finite-band debt. Review DEFERRED;
+Rule9_cleared=false; G1-G6 INCOMPLETE; physics_pass=false; gate_effect=NONE.
+
+
+## 29 October 2026 - actual initial time-tangent forcing
+
+Entry: [time tangent](ITSM_RULE9_TIME_TANGENT_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_TIME_TANGENT_V1_REPORT_2026-10-29.md).
+306/306;21-file exact replay;204 pins. PROCEED_PROVISIONALLY for the off-node
+actual time-tangent equations and algebraic cusp partition. The auxiliary-
+jerk pole/cancellation and nodal compatibility are OPEN: two offsets do not
+certify a source remainder or reject a regularity class. HOLD_SUBSTANTIVE for
+node/domain admission, continuum persistence, time/window and matching.
+Inherit action/variation/backend/clock-density/root/kinetic/force/cusp/jerk/
+node/current/Ward and principal/finite-band/Jacobi debt. Review DEFERRED;
+Rule9_cleared=false; G1-G6 INCOMPLETE; physics_pass=false; gate_effect=NONE.
+
+
+## 29 October 2026 - controlled auxiliary pole and weighted node
+
+Entry: [pole and kinetic-weight scope](ITSM_RULE9_AUXILIARY_POLE_WEIGHTED_NODE_ENTRY_2026-10-29.md).
+Owners: [pole V2](../Gates/RES-001/RES001_R4C1_AUXILIARY_POLE_V2_REPORT_2026-10-29.md)
+and [weighted V1](../Gates/RES-001/RES001_R4C1_WEIGHTED_NODE_V1_REPORT_2026-10-29.md).
+79/79 with231 pins;17/17 with235 pins; both exact read-only replays.
+PROCEED_PROVISIONALLY for the uniform initial pole proof, precisely scoped
+field-jet exclusion, original kinetic weighting and isolated distribution
+kernel. Preserve failed V1 and earlier candidate/working notes unchanged.
+HOLD_SUBSTANTIVE for full nodal current/constraint and weak-domain admission,
+time compatibility/persistence, physical normalization/window and matching.
+No full weak-solution exclusion or physical evolution nonuniqueness follows.
+Inherit all action/backend/root/clock-density/cusp/jerk/current/Ward/principal/
+Jacobi/time-tangent review debt. Review DEFERRED; Rule9_cleared=false;
+G1-G6 INCOMPLETE; physics_pass=false; gate_effect=NONE.
+
+
+## 29 October 2026 - full initial nodal currents and constraints
+
+Entry: [full node current](ITSM_RULE9_FULL_NODE_CURRENT_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_FULL_NODE_CURRENT_V1_REPORT_2026-10-29.md).
+71/71;239 pins; exact replay. PROCEED_PROVISIONALLY for uniform initial and
+once-time-differentiated all20 source/flux compatibility at both nodes,
+full-lapse/curvature majorant and clock-current conversion. No jump source
+is added at this order. The initial time-tangent kernel is not physical
+evolution nonuniqueness. HOLD_SUBSTANTIVE for time-compatible weak admission,
+constraint/domain persistence, global means/charges, physical normalization/
+window and matching. Inherit action/backend/root/clock/current/Ward/Jacobi/
+time-tangent/pole/weighted-node debt. Review DEFERRED; Rule9_cleared=false;
+G1-G6 INCOMPLETE; physics_pass=false; gate_effect=NONE.
+
+
+## 29 October 2026 - initial inner balance and necessary model
+
+Entry: [inner balance](ITSM_RULE9_INNER_BALANCE_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_INNER_BALANCE_V1_REPORT_2026-10-29.md).
+52/52;243 pins; exact replay. PROCEED_PROVISIONALLY for exact initial source
+cancellation/enclosure, controlled normal remainder and derivative-ratio
+scale; graded initial full-field controls and necessary-model factor/gap.
+HOLD_SUBSTANTIVE for actual Cauchy/nodal compatibility, full metric/constraint
+completion, uniform original nonlinear space-time remainder and source/global
+domain. The whole-line gap is not a stability result or causal propagator.
+Inherit all prior action/root/backend/clock/current/Jacobi/pole/full-node debt.
+Review DEFERRED; Rule9_cleared=false; G1-G6 INCOMPLETE; physics_pass=false;
+gate_effect=NONE. No canonical promotion or physical window/matching clearance.
+
+
+## 29 October 2026 - corrected necessary-model Cauchy/junction rejection
+
+Entry: [inner Cauchy V2](ITSM_RULE9_INNER_CAUCHY_V2_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_INNER_CAUCHY_V2_REPORT_2026-10-29.md).
+21/21;250 pins; exact replay. PROCEED_PROVISIONALLY for the validated
+necessary-model connection and rejection of source-free function-valued
+gluing of its regular self-similar Cauchy branch. V1's computational17/17
+receipt remains, interpretation INVALID due to omitted particular forcing;
+V2 includes exact particular and reconstruction checks without input changes.
+HOLD_SUBSTANTIVE for original nonlinear limit/compactness or derived coupled
+layer, all full-action weak conclusions, full constraints, physical
+normalization/window and matching. No added nodal source or boundary law.
+Inherit all prior action/root/backend/current/Jacobi/pole/full-node/inner-
+balance debt. Review DEFERRED; Rule9_cleared=false; G1-G6 INCOMPLETE;
+physics_pass=false; gate_effect=NONE.
+
+
+## 29 October 2026 - full-action junction and concentration test
+
+Entry: [nodal transfer](ITSM_RULE9_NODAL_TRANSFER_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_NODAL_TRANSFER_V1_REPORT_2026-10-29.md).
+37/37;254 pins; exact replay. PROCEED_PROVISIONALLY for conditional covariant
+junction laws, original adjoint/boundary signs, finite-action/rescaled-norm
+counterexample and rejection of the simple scalar-incompatible smoothing.
+HOLD_SUBSTANTIVE for on-shell compactness or a coupled layer, actual weak
+admission/persistence, global conservation and physical window/matching.
+The diagnostic family is not an adopted solution or a full-action no-go.
+Inherit action/root/backend/current/Jacobi/pole/full-node/inner-balance/
+corrected-inner-Cauchy debt. Review DEFERRED; Rule9_cleared=false;
+G1-G6 INCOMPLETE; physics_pass=false; gate_effect=NONE.
+
+
+## 29 October 2026 - original nodal frame and partial defect budget
+
+Entry: [coupled defect](ITSM_RULE9_COUPLED_DEFECT_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_COUPLED_DEFECT_V1_REPORT_2026-10-29.md).
+40/40;258 pins; exact replay. PROCEED_PROVISIONALLY for original nodal
+coefficients and the scoped partial singular-balance rejection. Retain the
+absence-of-independent-frame-current and scalar-current order assumptions;
+the result does not exclude all finite-measure-current weak classes.
+HOLD_SUBSTANTIVE for nonlinear/current completion and rescaled estimates,
+full constraint/conservation/domain persistence, physical window and matching.
+Inherit action/root/backend/Jacobi/current/pole/full-node/inner-balance/
+corrected-Cauchy/nodal-transfer debt. Review DEFERRED; Rule9_cleared=false;
+G1-G6 INCOMPLETE; physics_pass=false; gate_effect=NONE. No full-action no-go.
+
+
+## 29 October 2026 - old homogeneous B1 reduced kinetic control
+
+Entry: [B1 kinetic V1](ITSM_RULE9_B1_REDUCED_KINETIC_V1_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_REPORT_2026-10-29.md).
+41/41; exact read-only recomputing replay. PROCEED_PROVISIONALLY for the
+full instantaneous nonzero-mode reduction, positive ten-field kinetic
+inertia and mixed canonical map on the old homogeneous B1 initial event.
+HOLD_SUBSTANTIVE for time evolution/drift, constraints, physical interaction
+window, zero/tilted/nodal sectors, GR and identifying matching. Inherit
+action/full-variation/B1/weak-backend/canonical review dependencies.
+This independent G2/G4 control does not replace or admit the vortical G1
+preparation. Review DEFERRED; Rule9_cleared=false; G1-G6 INCOMPLETE;
+physics_pass=false; gate_effect=NONE. No parent or publication promotion.
+
+
+## 29 October 2026 - homogeneous B1 quadratic drift control
+
+Entry: [B1 kinetic drift](ITSM_RULE9_B1_KINETIC_DRIFT_V1_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_REPORT_2026-10-29.md).
+27/27; exact read-only recomputing replay. PROCEED_PROVISIONALLY for the
+generic B1 quadratic coefficient formulas, M=a^3 M0 positive kinetic identity,
+nonzero-mode algebraic reconstruction and actual initial drift/generator.
+HOLD_SUBSTANTIVE for controlled propagation, nonlinear interaction/window,
+zero/tilted/nodal domains, GR and matching. Inherit B1_REDUCED_KINETIC_V1,
+action/variation/B1-existence/backend/canonical dependencies. No replacement
+or admission of G1's vortical preparation. Review DEFERRED;
+Rule9_cleared=false; G1-G6 INCOMPLETE; physics_pass=false; gate_effect=NONE.
+
+
+## 29 October 2026 - homogeneous B1 dust reconstruction
+
+Entry: [B1 dust reconstruction](ITSM_RULE9_B1_DUST_RECONSTRUCTION_V1_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_REPORT_2026-10-29.md).
+19/19; exact read-only recomputing replay. PROCEED_PROVISIONALLY for the
+explicit original-lapse density row and exact evolving linear clock
+identity on the preserved B1 background constraint, with the flux retained.
+HOLD_SUBSTANTIVE for controlled propagator/error bounds, finite-amplitude
+density positivity, nonlinear constraint/window, zero/tilted/nodal domains,
+GR and matching. Inherit B1 kinetic/drift, action/variation/background/
+backend/canonical review dependencies. G1's vortical preparation unchanged.
+Review DEFERRED; Rule9_cleared=false; G1-G6 INCOMPLETE;
+physics_pass=false; gate_effect=NONE. No canonical/publication promotion.
+
+
+## 29 October 2026 - homogeneous B1 full finite-mode propagator
+
+Entry: [B1 propagator](ITSM_RULE9_B1_PROPAGATOR_V1_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md).
+62/62 main checks;49/49 exact-Fraction aggregation audit; both complete
+read-only replays exact. PROCEED_PROVISIONALLY for full twenty-state linear
+propagation on [0,0.05] at the old B1 k=1,7,40 controls, with the continuous
+physical-norm error certificate and stated LINEAR density bounds. Inherit
+action/variation/B1/kinetic/drift/dust/kernel/canonical review dependencies.
+HOLD_SUBSTANTIVE for nonlinear/all-frequency evolution, finite-amplitude
+constraints/positivity, physical interaction window, zero/tilted/nodal
+domains, GR and identifying matching. G1's vortical state unchanged and
+unadmitted; G1-G6 INCOMPLETE. Review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE. This is not external peer review.
+
+
+## 30 October 2026 - finalization of B1 alignment-domain diagnostic
+
+Entry: [B1 alignment domain](ITSM_RULE9_B1_ALIGNMENT_DOMAIN_V1_ENTRY_2026-10-29.md).
+Owner: [report](../Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_REPORT_2026-10-29.md).
+53/53; exact read-only replay. PROCEED_PROVISIONALLY for the charge/lapse
+curve, pointwise homogeneous local admission and nonzero-mode dust-clock
+inertia (10,1,0), with the varied-harmonic and slicing restrictions.
+HOLD_SUBSTANTIVE for an unrestricted positive-kinetic dust-clock neighbourhood
+allowing these tilts. Restricted domains, cutoff/window, nonlinear persistence,
+fixed-harmonic/vortical sectors, GR and matching remain unresolved. Inherit
+action/variation/canonical/B1/interval review debt. No external peer review,
+universal quantum-ghost verdict or all-action no-go. G1 unchanged/unadmitted;
+G1-G6 INCOMPLETE; review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE. No automatic branch/parent selection.

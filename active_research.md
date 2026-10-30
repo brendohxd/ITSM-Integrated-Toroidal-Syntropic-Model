@@ -7,6 +7,39 @@
 
 ---
 
+## Latest provisional research checkpoint - 30 October 2026
+
+The [30 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-30.md)
+records the research since the 21 October pushed recovery revision. It
+supplements the dated records below without changing the canonical baseline.
+
+- **Completed in scope:** the separate old homogeneous B1 control now has a
+  full twenty-state linear propagator with continuous error bounds on
+  [0,0.05] for k=1,7,40, plus actual drift, canonical normalization and
+  lapse-flux matter/constraint reconstruction. See its
+  [owner](Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md).
+- **New substantive boundary:** nearby charge-preserving homogeneous tilts
+  have a negative reduced kinetic direction on dust-clock slices. Preserve
+  its harmonic/slicing/domain limits; this is neither a universal ghost
+  verdict nor invalidation of the aligned control. See the
+  [alignment report](Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_REPORT_2026-10-29.md).
+- **G1 remains open:** initial/nodal Euler, Jacobi, current and transport
+  results are substantial, but the registered vortical preparation has no
+  proven full weak evolution. Preserve the pole/cusp/principal/interface
+  exclusions and corrected inner-Cauchy V2 interpretation.
+- **Next direction:** assess a justified restricted physical Cauchy/low-energy
+  domain before continuing a long derivative hierarchy; no arbitrary mode
+  deletion, cutoff or parent adoption. The [saved reassessment](Theory/Core/ITSM_GOAL_DIRECTION_REASSESSMENT_2026-10-30.md)
+  retains the full G1–G6 programme. The native goal is paused by the operator
+  for this documentation and commit checkpoint.
+
+MAT-001 BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED; UVIR-003 IN_PROGRESS;
+Stage 4A CLOSED; Stage 2 INCOMPLETE; Stage 3 NOT_ENTERED; Tests 1–3
+HOLD_SUBSTANTIVE. G1–G6 remain INCOMPLETE. TOP-X4, BBN and the scoped
+paper-release lanes are not promoted. Review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE. A computation's check count is not
+physical or publication clearance.
+
 ## Latest provisional research checkpoint - 21 October 2026
 
 The [21 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)

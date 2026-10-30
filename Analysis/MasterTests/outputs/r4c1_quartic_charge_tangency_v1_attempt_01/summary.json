@@ -1,0 +1,3518 @@
+{
+  "G1_complete": false,
+  "checks": [
+    {
+      "exact_remainder": "0",
+      "name": "global_U1_variation",
+      "passed": true
+    },
+    {
+      "exact_remainder": "0",
+      "name": "initial_phase_flux",
+      "passed": true
+    },
+    {
+      "exact_remainder": "0",
+      "name": "future_dust_clock_momentum",
+      "passed": true
+    },
+    {
+      "exact_remainder": "0",
+      "name": "dust_multiplier_future_root",
+      "passed": true
+    },
+    {
+      "exact_remainder": "0",
+      "name": "on_shell_dust_scalar_source",
+      "passed": true
+    },
+    {
+      "exact_remainder": "0",
+      "name": "dust_current_dilution",
+      "passed": true
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Hessian_symmetry",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "2.5379418373156492232740245558305435468236188497010955816060603212e-116"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Euler_solve",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "interior_3pi4",
+      "value": "0.22444079917941797223219708314276157379348184780179757332236533011"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_charge_tangency",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "1.600340979163969717591027985837278483794106386841380493200151279e-57"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_spatial_current",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_independent_real_energy_drift",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "1.8891807108802862736028818312483561759453767463345075753680687628e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_independent_real_Euler_0",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "6.2880242343769828640219198428440841777865763320241873074117345749e-42"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_independent_real_Euler_7",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "1.1536696592194058537940448676167536014488536190531577177499178368e-44"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_independent_real_Euler_12",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "9.5395755982230410100975061026495385827325638158739836737857312777e-44"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_independent_real_Euler_13",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "4.3359330780988933675735626303440136491842239314030901109569197264e-49"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Hessian_symmetry",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "5.0758836746312984465480491116610870936472376994021911632121206425e-116"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Euler_solve",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "interior_3pi4",
+      "value": "0.22444079917941797223219708314276157379339139474699063517945284316"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_charge_tangency",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "1.6003409791639697175910279858372784837941062740537919750092444047e-69"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_spatial_current",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_independent_real_energy_drift",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "1.8891807108802862736028818312483561759455764022522891112335127235e-52"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_independent_real_Euler_0",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "6.2880242343769828640219198428440841777870391139782392368538393566e-54"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_independent_real_Euler_7",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "1.1536696592194058537940448676167536014488539635719156285975437577e-56"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_independent_real_Euler_12",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "9.5395755982230410100975061026495385827327332820491689153336812589e-56"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_independent_real_Euler_13",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "4.3359330780988933675735626303440136491841698344351177205901806406e-61"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "2.4380973507725468422765900630706087232592420523668157406729119082e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho_dot",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "1.5030592297427385158945847229720577028736920116413539887889286487e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_dust_expected",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "3.1266273001143299512050153596515892761315837845071974557113912633e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_dot",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "1.600340979162369376611864016119687455808269108357586386926097487e-57"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_expected",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_Edot",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "1.5030590098547659929428666287705109662460231879069680084423738655e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_acceleration",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "2.4373152248106428644714374027481277171266448190690985121925029164e-36"
+    },
+    {
+      "criterion": "normalized < 1e-25",
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "2.5808712501398575599580369601363006776731112415334728626485416257e-56"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "shift_ODE_residual",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "3.6099956094812739717064933223134862949143738297220657641713770384e-76"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_inverse_metric_drift",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "0.22444079920004815984660673279511665757277200690493102504947612926"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_dust_beta_term",
+      "passed": true,
+      "point": "interior_3pi4",
+      "value": "0.22459114304783293561506854679218021560324964151696378409097892949"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Hessian_symmetry",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Euler_solve",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "interior_pi4",
+      "value": "0.22444079917941797223219708314276157379348184780179757332236533011"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_charge_tangency",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "1.6003409791639697175910279858372784837941063868413804932357205491e-57"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_spatial_current",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_independent_real_energy_drift",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "1.8891807108802862736028818312483561759453767463345075753680687628e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_independent_real_Euler_0",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "6.2880242343769828640219198428440841777865763320241873074117345749e-42"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_independent_real_Euler_7",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "1.1536696592194058537940448676167536014488536190531577177499178368e-44"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_independent_real_Euler_12",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "9.5395755982230410100975061026495385827325638158739836737857312777e-44"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_independent_real_Euler_13",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "4.3359330780988933675735626303440136491842239314030901109569197267e-49"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Hessian_symmetry",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "2.5379418373156492232740245558305435468236188497010955816060603212e-116"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Euler_solve",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "interior_pi4",
+      "value": "0.22444079917941797223219708314276157379339139474699063517945284316"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_charge_tangency",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "1.6003409791639697175910279858372784837941063096230620369387302864e-69"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_spatial_current",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_independent_real_energy_drift",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "1.8891807108802862736028818312483561759455764022522891112335432407e-52"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_independent_real_Euler_0",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "6.2880242343769828640219198428440841777870391139782392368534908259e-54"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_independent_real_Euler_7",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "1.1536696592194058537940448676167536014488539635719156286022573235e-56"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_independent_real_Euler_12",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "9.5395755982230410100975061026495385827327332820491689153407516076e-56"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_independent_real_Euler_13",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "4.3359330780988933675735626303440136491841698344351177205899909733e-61"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "2.4380973507725468422765900630706087232592420523668157406729119083e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho_dot",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "1.5030592297427385158945847229720577028736920116413539887889286487e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_dust_expected",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "3.1266273001143299512050153596515892761315837845071974557113912635e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_dot",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "1.600340979162369376611864016119687455808269108357586386926097487e-57"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_expected",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_Edot",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "1.5030590098547659929428666287705109662460231879069680084423738655e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_acceleration",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "2.4373152248106428644714374027481277171266448190690985121925029162e-36"
+    },
+    {
+      "criterion": "normalized < 1e-25",
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "2.5808712501398575599580369601363006776731112415334728626485416257e-56"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "shift_ODE_residual",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "3.6099956094812739717064933223134862949145007263650824132358343573e-76"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_inverse_metric_drift",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "0.22444079920004815984660673279511665757277200690493102504947612926"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_dust_beta_term",
+      "passed": true,
+      "point": "interior_pi4",
+      "value": "0.22459114304783293561506854679218021560324964151696378409097892949"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Hessian_symmetry",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "9.9138353020142547784141584212130607297797611316449046156486731298e-119"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Euler_solve",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node1_-1_0.01",
+      "value": "0.22421094897783485768336108727788476324712106793091892990025572221"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_charge_tangency",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "2.0400351822658332370272741960516270615113004063751866239696292501e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_spatial_current",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Hessian_symmetry",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "7.9310682416114038227313267369704485838238089053159236925189385039e-118"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Euler_solve",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node1_-1_0.01",
+      "value": "0.224210948977834857683361087277884763247040473262784292212541326"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_charge_tangency",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "2.0400351822658332370272741960516270615113004063752952931463791591e-63"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_spatial_current",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "4.875591545990273998133968819328077120543968361299483350200878703e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho_dot",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "1.3384525910728505535389763559719309315979701332911848582837038724e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_dust_expected",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "6.2531431909789926016635538484489477439808120674710310352000845891e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_dot",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "2.0400351822637932018450083628145997873152487793136753235632539549e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_expected",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_Edot",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "1.3387348327071420172161325575399493042723231323228184139589382991e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_acceleration",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "1.0074152336770547469260120328914472203175831496632845114533972049e-30"
+    },
+    {
+      "criterion": "normalized < 1e-25",
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "1.8281993745978870096169170550279298190626553378376619231537833263e-53"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "shift_ODE_residual",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "9.2806290073587225483900626462807100362267088557799109177311604031e-77"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_inverse_metric_drift",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "0.22408709953128491464662995992110654270761317550218453734325611701"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_dust_beta_term",
+      "passed": true,
+      "point": "node1_-1_0.01",
+      "value": "0.22436118342000507372380653176182101391690993781207499849936142057"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Hessian_symmetry",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "6.3448545932891230581850613895763588670590471242527389540151508031e-117"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Euler_solve",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node1_-1_0.1",
+      "value": "0.22421548693852394536462214331214787338234374136724465228206291821"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_charge_tangency",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "1.9800369720908935961445554138017448536618297484745906436189621795e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_spatial_current",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Hessian_symmetry",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "3.0980735318794546182544245066290814780561753536390326923902103531e-120"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Euler_solve",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node1_-1_0.1",
+      "value": "0.22421548693852394536462214331214787338226295200359248372806217723"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_charge_tangency",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "1.9800369720908935961445554138017448536618297484745075469788687999e-63"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_spatial_current",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "4.6368431384865332943374384807577491922492853636620182074617741247e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho_dot",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "1.3417015408385556785420313086506973229323800092199305112559479982e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_dust_expected",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "5.9469249566946914568548408742055777303786704802941944410236479267e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_dot",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "1.9800369720889135591724645202056002982480280036209288138704876719e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_expected",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_Edot",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "1.3419788669247469783761921209497353955799517679359025253726551434e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_acceleration",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "9.0322062520802450330217574275398611248366443232874850529109943009e-35"
+    },
+    {
+      "criterion": "normalized < 1e-25",
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "4.2219182064219624564009296632379719759354949157810806602428812311e-54"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "shift_ODE_residual",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "1.8609629880383285060801587905433500397600241278819885783137967127e-76"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_inverse_metric_drift",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "0.22409408375924744709950235821453107156750321087802850461289303368"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_dust_beta_term",
+      "passed": true,
+      "point": "node1_-1_0.1",
+      "value": "0.22436572354199344733190305021502251901768804647055348273601355011"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Hessian_symmetry",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Euler_solve",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node1_1_0.01",
+      "value": "0.22421094897783485768336108727788476324712106793091892990025572221"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_charge_tangency",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "2.0400351822658332370272741960516270615113004063751866239696289106e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_spatial_current",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Hessian_symmetry",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Euler_solve",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node1_1_0.01",
+      "value": "0.224210948977834857683361087277884763247040473262784292212541326"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_charge_tangency",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "2.0400351822658332370272741960516270615113004063753715566112395001e-63"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_spatial_current",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "4.8755915459902739981339688193280771205439683612994833502008787029e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho_dot",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "1.3384525910728505535389763559719309315979701332911848582837038724e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_dust_expected",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "6.253143190978992601663553848448947743980812067471031035200084589e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_dot",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "2.040035182263793201845008362814599787315248779313675323563253539e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_expected",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_Edot",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "1.3387348327071420172161325575399493042723231323228184139589382991e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_acceleration",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "1.0074152336770547469260120328914472203175831496632845114533971674e-30"
+    },
+    {
+      "criterion": "normalized < 1e-25",
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "1.8281993745978870096169170550279298190626553378376619231537833253e-53"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "shift_ODE_residual",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "9.2806290073587225483900626462807100362267187696145116495216081021e-77"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_inverse_metric_drift",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "0.22408709953128491464662995992110654270761317550218453734325611701"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_dust_beta_term",
+      "passed": true,
+      "point": "node1_1_0.01",
+      "value": "0.22436118342000507372380653176182101391690993781207499849936142057"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Hessian_symmetry",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "7.9310682416114038227313267369704485838238089053159236925189385039e-118"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Euler_solve",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node1_1_0.1",
+      "value": "0.22421548693852394536462214331214787338234374136724465228206291821"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_charge_tangency",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "1.9800369720908935961445554138017448536618297484745906436189623162e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_spatial_current",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Hessian_symmetry",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Euler_solve",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node1_1_0.1",
+      "value": "0.22421548693852394536462214331214787338226295200359248372806217723"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_charge_tangency",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "1.9800369720908935961445554138017448536618297484746443236246359458e-63"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_spatial_current",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "4.6368431384865332943374384807577491922492853636620182074617741243e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho_dot",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "1.3417015408385556785420313086506973229323800092199305112559479982e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_dust_expected",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "5.9469249566946914568548408742055777303786704802941944410236479262e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_dot",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "1.9800369720889135591724645202056002982480280036209288138704876719e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_expected",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_Edot",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "1.3419788669247469783761921209497353955799517679359025253726551434e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_acceleration",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "9.0322062520802450330217574275398611248366443232874850529109943033e-35"
+    },
+    {
+      "criterion": "normalized < 1e-25",
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "4.2219182064219624564009296632379719759354949157810806602428812565e-54"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "shift_ODE_residual",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "1.8609629880383285060801587905433500397600082657566519569798316879e-76"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_inverse_metric_drift",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "0.22409408375924744709950235821453107156750321087802850461289303368"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_dust_beta_term",
+      "passed": true,
+      "point": "node1_1_0.1",
+      "value": "0.22436572354199344733190305021502251901768804647055348273601355011"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Hessian_symmetry",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "7.9310682416114038227313267369704485838238089053159236925189385039e-118"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Euler_solve",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node3_-1_0.01",
+      "value": "0.22421094897783485768336108727788476324712106793091892990025572221"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_charge_tangency",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "2.0400351822658332370272741960516270615113004063751866239696288925e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_spatial_current",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Hessian_symmetry",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Euler_solve",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node3_-1_0.01",
+      "value": "0.224210948977834857683361087277884763247040473262784292212541326"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_charge_tangency",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "2.04003518226583323702727419605162706151130040637535349124795627e-63"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_spatial_current",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "4.875591545990273998133968819328077120543968361299483350200878703e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho_dot",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "1.3384525910728505535389763559719309315979701332911848582837038724e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_dust_expected",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "6.2531431909789926016635538484489477439808120674710310352000845891e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_dot",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "2.040035182263793201845008362814599787315248779313675323563253539e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_expected",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_Edot",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "1.3387348327071420172161325575399493042723231323228184139589382991e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_acceleration",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "1.0074152336770547469260120328914472203175831496632845114533972017e-30"
+    },
+    {
+      "criterion": "normalized < 1e-25",
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "1.8281993745978870096169170550279298190626553378376619231537833269e-53"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "shift_ODE_residual",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "9.2806290073587225483900626462807100362267187696145116495216081021e-77"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_inverse_metric_drift",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "0.22408709953128491464662995992110654270761317550218453734325611701"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_dust_beta_term",
+      "passed": true,
+      "point": "node3_-1_0.01",
+      "value": "0.22436118342000507372380653176182101391690993781207499849936142057"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Hessian_symmetry",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Euler_solve",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node3_-1_0.1",
+      "value": "0.22421548693852394536462214331214787338234374136724465228206291821"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_charge_tangency",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "1.9800369720908935961445554138017448536618297484745906436189623318e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_spatial_current",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Hessian_symmetry",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Euler_solve",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node3_-1_0.1",
+      "value": "0.22421548693852394536462214331214787338226295200359248372806217723"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_charge_tangency",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "1.9800369720908935961445554138017448536618297484746599216362695846e-63"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_spatial_current",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "4.6368431384865332943374384807577491922492853636620182074617741247e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho_dot",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "1.3417015408385556785420313086506973229323800092199305112559479982e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_dust_expected",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "5.9469249566946914568548408742055777303786704802941944410236479267e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_dot",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "1.9800369720889135591724645202056002982480280036209288138704876719e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_expected",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_Edot",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "1.3419788669247469783761921209497353955799517679359025253726551434e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_acceleration",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "9.0322062520802450330217574275398611248366443232874850529109943011e-35"
+    },
+    {
+      "criterion": "normalized < 1e-25",
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "4.2219182064219624564009296632379719759354949157810806602428812407e-54"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "shift_ODE_residual",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "1.8609629880383285060801587905433500397600082657566519569798316879e-76"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_inverse_metric_drift",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "0.22409408375924744709950235821453107156750321087802850461289303368"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_dust_beta_term",
+      "passed": true,
+      "point": "node3_-1_0.1",
+      "value": "0.22436572354199344733190305021502251901768804647055348273601355011"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Hessian_symmetry",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "7.9310682416114038227313267369704485838238089053159236925189385039e-118"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Euler_solve",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node3_1_0.01",
+      "value": "0.22421094897783485768336108727788476324712106793091892990025572221"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_charge_tangency",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "2.0400351822658332370272741960516270615113004063751866239696292682e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_spatial_current",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Hessian_symmetry",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "1.1896602362417105734096990105455672875735713357973885538778407756e-117"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Euler_solve",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node3_1_0.01",
+      "value": "0.224210948977834857683361087277884763247040473262784292212541326"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_charge_tangency",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "2.0400351822658332370272741960516270615113004063753133585096623893e-63"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_spatial_current",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "4.8755915459902739981339688193280771205439683612994833502008787029e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho_dot",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "1.3384525910728505535389763559719309315979701332911848582837038724e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_dust_expected",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "6.253143190978992601663553848448947743980812067471031035200084589e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_dot",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "2.0400351822637932018450083628145997873152487793136753235632539549e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_expected",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_Edot",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "1.3387348327071420172161325575399493042723231323228184139589382991e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_acceleration",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "1.0074152336770547469260120328914472203175831496632845114533971706e-30"
+    },
+    {
+      "criterion": "normalized < 1e-25",
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "1.8281993745978870096169170550279298190626553378376619231537833256e-53"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "shift_ODE_residual",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "9.2806290073587225483900626462807100362267088557799109177311604031e-77"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_inverse_metric_drift",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "0.22408709953128491464662995992110654270761317550218453734325611701"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_dust_beta_term",
+      "passed": true,
+      "point": "node3_1_0.01",
+      "value": "0.22436118342000507372380653176182101391690993781207499849936142057"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Hessian_symmetry",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_Euler_solve",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node3_1_0.1",
+      "value": "0.22421548693852394536462214331214787338234374136724465228206291821"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_charge_tangency",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "1.9800369720908935961445554138017448536618297484745906436189621639e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-20_phase_spatial_current",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Hessian_symmetry",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_Euler_solve",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_dust_Hamiltonian_tangency",
+      "passed": false,
+      "point": "node3_1_0.1",
+      "value": "0.22421548693852394536462214331214787338226295200359248372806217723"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_charge_tangency",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "1.9800369720908935961445554138017448536618297484744919465879177816e-63"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "1e-26_phase_spatial_current",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "4.6368431384865332943374384807577491922492853636620182074617741243e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_rho_dot",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "1.3417015408385556785420313086506973229323800092199305112559479982e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_dust_expected",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "5.9469249566946914568548408742055777303786704802941944410236479263e-47"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_dot",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "1.9800369720889135591724645202056002982480280036209288138704876719e-51"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_phase_expected",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_Edot",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "1.3419788669247469783761921209497353955799517679359025253726551434e-40"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "two_step_acceleration",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "9.0322062520802450330217574275398611248366443232874850529109943031e-35"
+    },
+    {
+      "criterion": "normalized < 1e-25",
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "4.2219182064219624564009296632379719759354949157810806602428812565e-54"
+    },
+    {
+      "criterion": "normalized < 1e-18",
+      "name": "shift_ODE_residual",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "1.8609629880383285060801587905433500397600082657566519569798316879e-76"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_inverse_metric_drift",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "0.22409408375924744709950235821453107156750321087802850461289303368"
+    },
+    {
+      "criterion": "normalized mismatch > 1e-18",
+      "name": "reject_omitted_dust_beta_term",
+      "passed": true,
+      "point": "node3_1_0.1",
+      "value": "0.22436572354199344733190305021502251901768804647055348273601355011"
+    }
+  ],
+  "continuum_constraint_transport_certified": false,
+  "gate_effect": "NONE",
+  "interpretation": "Registered numerical initial point controls and exact current identities; not continuum transport",
+  "mpmath": "1.3.0",
+  "passed": 216,
+  "physics_pass": false,
+  "points": [
+    {
+      "checks": [
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Hessian_symmetry",
+          "passed": true,
+          "value": "2.5379418373156492232740245558305435468236188497010955816060603212e-116"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22444079917941797223219708314276157379348184780179757332236533011"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_charge_tangency",
+          "passed": true,
+          "value": "1.600340979163969717591027985837278483794106386841380493200151279e-57"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_independent_real_energy_drift",
+          "passed": true,
+          "value": "1.8891807108802862736028818312483561759453767463345075753680687628e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_independent_real_Euler_0",
+          "passed": true,
+          "value": "6.2880242343769828640219198428440841777865763320241873074117345749e-42"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_independent_real_Euler_7",
+          "passed": true,
+          "value": "1.1536696592194058537940448676167536014488536190531577177499178368e-44"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_independent_real_Euler_12",
+          "passed": true,
+          "value": "9.5395755982230410100975061026495385827325638158739836737857312777e-44"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_independent_real_Euler_13",
+          "passed": true,
+          "value": "4.3359330780988933675735626303440136491842239314030901109569197264e-49"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Hessian_symmetry",
+          "passed": true,
+          "value": "5.0758836746312984465480491116610870936472376994021911632121206425e-116"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22444079917941797223219708314276157379339139474699063517945284316"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_charge_tangency",
+          "passed": true,
+          "value": "1.6003409791639697175910279858372784837941062740537919750092444047e-69"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_independent_real_energy_drift",
+          "passed": true,
+          "value": "1.8891807108802862736028818312483561759455764022522891112335127235e-52"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_independent_real_Euler_0",
+          "passed": true,
+          "value": "6.2880242343769828640219198428440841777870391139782392368538393566e-54"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_independent_real_Euler_7",
+          "passed": true,
+          "value": "1.1536696592194058537940448676167536014488539635719156285975437577e-56"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_independent_real_Euler_12",
+          "passed": true,
+          "value": "9.5395755982230410100975061026495385827327332820491689153336812589e-56"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_independent_real_Euler_13",
+          "passed": true,
+          "value": "4.3359330780988933675735626303440136491841698344351177205901806406e-61"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho",
+          "passed": true,
+          "value": "2.4380973507725468422765900630706087232592420523668157406729119082e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho_dot",
+          "passed": true,
+          "value": "1.5030592297427385158945847229720577028736920116413539887889286487e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_dust_expected",
+          "passed": true,
+          "value": "3.1266273001143299512050153596515892761315837845071974557113912633e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_dot",
+          "passed": true,
+          "value": "1.600340979162369376611864016119687455808269108357586386926097487e-57"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_expected",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_Edot",
+          "passed": true,
+          "value": "1.5030590098547659929428666287705109662460231879069680084423738655e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_acceleration",
+          "passed": true,
+          "value": "2.4373152248106428644714374027481277171266448190690985121925029164e-36"
+        },
+        {
+          "criterion": "normalized < 1e-25",
+          "name": "independent_8_12_shift",
+          "passed": true,
+          "value": "2.5808712501398575599580369601363006776731112415334728626485416257e-56"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "shift_ODE_residual",
+          "passed": true,
+          "value": "3.6099956094812739717064933223134862949143738297220657641713770384e-76"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_inverse_metric_drift",
+          "passed": true,
+          "value": "0.22444079920004815984660673279511665757277200690493102504947612926"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_dust_beta_term",
+          "passed": true,
+          "value": "0.22459114304783293561506854679218021560324964151696378409097892949"
+        }
+      ],
+      "label": "interior_3pi4",
+      "theta": "2.3561944901923449288469825374596271631478770495313293657312084442",
+      "values": {
+        "Edot": "-0.00024999033049320545266646005585581678405751331186091719152546852414",
+        "acc": [
+          "0.47426422381459891406288250362383889718721231754877701418583922559",
+          "0.0",
+          "0.0",
+          "0.47447756146950798739977976371458738642717181218857186086659837377",
+          "-0.000000010992982013547477313400801617211040982679152761431726441884002112",
+          "0.47447755674738290188013258854405617658198175328831820387046964982",
+          "0.0",
+          "1.8102431226363519669301293176113914712940831291373920123729885079",
+          "-0.000062413514248832508881298397631182402823211815398228946804772944788",
+          "-0.52792039652014670505776541705955258304738977749187404942114221717",
+          "-0.72348055765752742189589453930433698636287740938808557231248186786",
+          "-1.2054237091038637204658573190175454552704993052483716934875357582",
+          "-0.079013792438871081560963184015796689058562437911942578141226299014",
+          "2.1584923209130310833502301100211652307889565267885380664459000643"
+        ],
+        "dust_expected": "-0.28914222110255939602620249134023515324617300568528866809509029291",
+        "flux": "-0.000000000035555572148136888889178602013717154019145197413499965331095045269",
+        "phase_dot": "0.0000000000010465986477776142732412386786765250670490406615503222697701734043",
+        "phase_expected": "0.0000000000010465986477776142732412386786765250670490406615503222697685730633",
+        "rho": "0.20000000008408385235461193838563530373825197487230987839788277948",
+        "rho_dot": "0.00024999930040651191957955940137977666709039207699530949686990393895",
+        "rho_z": "0.021125451887572341412557711335336418762021837241657119545281260122"
+      }
+    },
+    {
+      "checks": [
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Hessian_symmetry",
+          "passed": true,
+          "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22444079917941797223219708314276157379348184780179757332236533011"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_charge_tangency",
+          "passed": true,
+          "value": "1.6003409791639697175910279858372784837941063868413804932357205491e-57"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_independent_real_energy_drift",
+          "passed": true,
+          "value": "1.8891807108802862736028818312483561759453767463345075753680687628e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_independent_real_Euler_0",
+          "passed": true,
+          "value": "6.2880242343769828640219198428440841777865763320241873074117345749e-42"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_independent_real_Euler_7",
+          "passed": true,
+          "value": "1.1536696592194058537940448676167536014488536190531577177499178368e-44"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_independent_real_Euler_12",
+          "passed": true,
+          "value": "9.5395755982230410100975061026495385827325638158739836737857312777e-44"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_independent_real_Euler_13",
+          "passed": true,
+          "value": "4.3359330780988933675735626303440136491842239314030901109569197267e-49"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Hessian_symmetry",
+          "passed": true,
+          "value": "2.5379418373156492232740245558305435468236188497010955816060603212e-116"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22444079917941797223219708314276157379339139474699063517945284316"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_charge_tangency",
+          "passed": true,
+          "value": "1.6003409791639697175910279858372784837941063096230620369387302864e-69"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_independent_real_energy_drift",
+          "passed": true,
+          "value": "1.8891807108802862736028818312483561759455764022522891112335432407e-52"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_independent_real_Euler_0",
+          "passed": true,
+          "value": "6.2880242343769828640219198428440841777870391139782392368534908259e-54"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_independent_real_Euler_7",
+          "passed": true,
+          "value": "1.1536696592194058537940448676167536014488539635719156286022573235e-56"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_independent_real_Euler_12",
+          "passed": true,
+          "value": "9.5395755982230410100975061026495385827327332820491689153407516076e-56"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_independent_real_Euler_13",
+          "passed": true,
+          "value": "4.3359330780988933675735626303440136491841698344351177205899909733e-61"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho",
+          "passed": true,
+          "value": "2.4380973507725468422765900630706087232592420523668157406729119083e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho_dot",
+          "passed": true,
+          "value": "1.5030592297427385158945847229720577028736920116413539887889286487e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_dust_expected",
+          "passed": true,
+          "value": "3.1266273001143299512050153596515892761315837845071974557113912635e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_dot",
+          "passed": true,
+          "value": "1.600340979162369376611864016119687455808269108357586386926097487e-57"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_expected",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_Edot",
+          "passed": true,
+          "value": "1.5030590098547659929428666287705109662460231879069680084423738655e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_acceleration",
+          "passed": true,
+          "value": "2.4373152248106428644714374027481277171266448190690985121925029162e-36"
+        },
+        {
+          "criterion": "normalized < 1e-25",
+          "name": "independent_8_12_shift",
+          "passed": true,
+          "value": "2.5808712501398575599580369601363006776731112415334728626485416257e-56"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "shift_ODE_residual",
+          "passed": true,
+          "value": "3.6099956094812739717064933223134862949145007263650824132358343573e-76"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_inverse_metric_drift",
+          "passed": true,
+          "value": "0.22444079920004815984660673279511665757277200690493102504947612926"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_dust_beta_term",
+          "passed": true,
+          "value": "0.22459114304783293561506854679218021560324964151696378409097892949"
+        }
+      ],
+      "label": "interior_pi4",
+      "theta": "0.78539816339744830961566084581987572104929234984377645524373614808",
+      "values": {
+        "Edot": "-0.00024999033049320545266646005585581678405751331186091719152546852415",
+        "acc": [
+          "0.47426422381459891406288250362383889718721231754877701418583922559",
+          "0.0",
+          "0.0",
+          "0.47447756146950798739977976371458738642717181218857186086659837377",
+          "-0.000000010992982013547477313400801617211040982679152761431726441884002113",
+          "0.47447755674738290188013258854405617658198175328831820387046964982",
+          "0.0",
+          "-1.8102431226363519669301293176113914712940831291373920123729885079",
+          "0.000062413514248832508881298397631182402823211815398228946804772944788",
+          "-0.52792039652014670505776541705955258304738977749187404942114221717",
+          "-0.72348055765752742189589453930433698636287740938808557231248186786",
+          "-1.2054237091038637204658573190175454552704993052483716934875357582",
+          "-0.079013792438871081560963184015796689058562437911942578141226299014",
+          "2.1584923209130310833502301100211652307889565267885380664459000644"
+        ],
+        "dust_expected": "-0.28914222110255939602620249134023515324617300568528866809509029291",
+        "flux": "-0.0000000000355555721481368888891786020137171540191451974134999653311069136",
+        "phase_dot": "0.0000000000010465986477776142732412386786765250670490406615503222697702103006",
+        "phase_expected": "0.0000000000010465986477776142732412386786765250670490406615503222697686099596",
+        "rho": "0.20000000008408385235461193838563530373825197487230987839788277948",
+        "rho_dot": "0.00024999930040651191957955940137977666709039207699530949686990393895",
+        "rho_z": "-0.021125451887572341412557711335336418762021837241657119545281260122"
+      }
+    },
+    {
+      "checks": [
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Hessian_symmetry",
+          "passed": true,
+          "value": "9.9138353020142547784141584212130607297797611316449046156486731298e-119"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421094897783485768336108727788476324712106793091892990025572221"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_charge_tangency",
+          "passed": true,
+          "value": "2.0400351822658332370272741960516270615113004063751866239696292501e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Hessian_symmetry",
+          "passed": true,
+          "value": "7.9310682416114038227313267369704485838238089053159236925189385039e-118"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.224210948977834857683361087277884763247040473262784292212541326"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_charge_tangency",
+          "passed": true,
+          "value": "2.0400351822658332370272741960516270615113004063752952931463791591e-63"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho",
+          "passed": true,
+          "value": "4.875591545990273998133968819328077120543968361299483350200878703e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho_dot",
+          "passed": true,
+          "value": "1.3384525910728505535389763559719309315979701332911848582837038724e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_dust_expected",
+          "passed": true,
+          "value": "6.2531431909789926016635538484489477439808120674710310352000845891e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_dot",
+          "passed": true,
+          "value": "2.0400351822637932018450083628145997873152487793136753235632539549e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_expected",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_Edot",
+          "passed": true,
+          "value": "1.3387348327071420172161325575399493042723231323228184139589382991e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_acceleration",
+          "passed": true,
+          "value": "1.0074152336770547469260120328914472203175831496632845114533972049e-30"
+        },
+        {
+          "criterion": "normalized < 1e-25",
+          "name": "independent_8_12_shift",
+          "passed": true,
+          "value": "1.8281993745978870096169170550279298190626553378376619231537833263e-53"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "shift_ODE_residual",
+          "passed": true,
+          "value": "9.2806290073587225483900626462807100362267088557799109177311604031e-77"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_inverse_metric_drift",
+          "passed": true,
+          "value": "0.22408709953128491464662995992110654270761317550218453734325611701"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_dust_beta_term",
+          "passed": true,
+          "value": "0.22436118342000507372380653176182101391690993781207499849936142057"
+        }
+      ],
+      "label": "node1_-1_0.01",
+      "theta": "1.5607963267948966192313216916397514420985846996875529104874722962",
+      "values": {
+        "Edot": "-0.00014402756717754830960131113756466442542477791607251668702685596488",
+        "acc": [
+          "0.47406307945767296562439197395015957430925475167258297299362975854",
+          "0.0",
+          "0.0",
+          "0.47448970346009595556436338118460289029172092229548176907149778684",
+          "-0.0000000000031089395291908252782574873196440909046980362669596037290563269053",
+          "0.47448202785318179131419341642924367169187949123432946826086487705",
+          "0.0",
+          "-0.02560035965806913481903342086281834534790824837996359065355052888",
+          "0.0000012481349055106605810363830200196396406753187964144405698355954374",
+          "-0.52792038690668491762025329349621348257033386948506092572082991238",
+          "-0.72348188381703168580031036510778285881867510537619657792049410591",
+          "-1.2054240406436902161462761749756203379165589191181409854515449541",
+          "-0.078946500404148766409677964934496366315360108704838617311863368427",
+          "0.43135037617694077714090319882312119839393969551303678234077319793"
+        ],
+        "dust_expected": "-0.28876106001951239974850508600073148920760203717275210131374429263",
+        "flux": "0.00021329066806754014808283297744700684933887535894076768797343335375",
+        "phase_dot": "-0.00000066307861914166475328293050874484751227564827944488175778001690153",
+        "phase_expected": "-0.00000066307861914166475328293050874484751227564827944488175777797686365",
+        "rho": "0.19973598457926028035865748659890917996995555130248387901697100304",
+        "rho_dot": "0.00024914021780559955404065791367025401333464620618532750110356322042",
+        "rho_z": "-0.00042248140901265060324659654794929800852209354292038796794617988341"
+      }
+    },
+    {
+      "checks": [
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Hessian_symmetry",
+          "passed": true,
+          "value": "6.3448545932891230581850613895763588670590471242527389540151508031e-117"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421548693852394536462214331214787338234374136724465228206291821"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_charge_tangency",
+          "passed": true,
+          "value": "1.9800369720908935961445554138017448536618297484745906436189621795e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Hessian_symmetry",
+          "passed": true,
+          "value": "3.0980735318794546182544245066290814780561753536390326923902103531e-120"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421548693852394536462214331214787338226295200359248372806217723"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_charge_tangency",
+          "passed": true,
+          "value": "1.9800369720908935961445554138017448536618297484745075469788687999e-63"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho",
+          "passed": true,
+          "value": "4.6368431384865332943374384807577491922492853636620182074617741247e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho_dot",
+          "passed": true,
+          "value": "1.3417015408385556785420313086506973229323800092199305112559479982e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_dust_expected",
+          "passed": true,
+          "value": "5.9469249566946914568548408742055777303786704802941944410236479267e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_dot",
+          "passed": true,
+          "value": "1.9800369720889135591724645202056002982480280036209288138704876719e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_expected",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_Edot",
+          "passed": true,
+          "value": "1.3419788669247469783761921209497353955799517679359025253726551434e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_acceleration",
+          "passed": true,
+          "value": "9.0322062520802450330217574275398611248366443232874850529109943009e-35"
+        },
+        {
+          "criterion": "normalized < 1e-25",
+          "name": "independent_8_12_shift",
+          "passed": true,
+          "value": "4.2219182064219624564009296632379719759354949157810806602428812311e-54"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "shift_ODE_residual",
+          "passed": true,
+          "value": "1.8609629880383285060801587905433500397600241278819885783137967127e-76"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_inverse_metric_drift",
+          "passed": true,
+          "value": "0.22409408375924744709950235821453107156750321087802850461289303368"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_dust_beta_term",
+          "passed": true,
+          "value": "0.22436572354199344733190305021502251901768804647055348273601355011"
+        }
+      ],
+      "label": "node1_-1_0.1",
+      "theta": "1.4707963267948966192313216916397514420985846996875529104874722962",
+      "values": {
+        "Edot": "-0.00014611862007912062528615587784081413333886770561826129379841415563",
+        "acc": [
+          "0.4740670495176591013887277375478758827249243052296846727697210833",
+          "0.0",
+          "0.0",
+          "0.47448946382041237526992164282130153643290147725558708095965271694",
+          "-0.00000000030833687878082504771930484375339841836994578948989464329654699061",
+          "0.47448193959619237203605326933824156947165314369230439318965457528",
+          "0.0",
+          "-0.25558138061098528507010098582530670410761419407905017008920146099",
+          "0.000012399143141137705473352989673467833230856779529499881911062937967",
+          "-0.52792038709642942920511068420532307834744826748032977183767578917",
+          "-0.72348185764204197261791090029528512050099312853676594715186035643",
+          "-1.2054240340999438279046576799269329377648672367044758834282792165",
+          "-0.078947828572341198578577390980393445854381407415298674866528605587",
+          "0.46544023678652162355586465978434392003378250329149651209779726719"
+        ],
+        "dust_expected": "-0.28876858317095577610559970073672142522337300261480752313286892785",
+        "flux": "0.0002090808678414885507686408895156619644179443834986144006813164851",
+        "phase_dot": "-0.0000006499911258668853827702911416375557340120086070771446249090958508",
+        "phase_expected": "-0.00000064999112586688538277029114163755573401200860707714462490711581125",
+        "rho": "0.19974119555584558293245919937523061787637381346101844788657722397",
+        "rho_dot": "0.00024915714678149608747832378056276582581112562374928944685698806639",
+        "rho_z": "-0.0041969846280645752751061843829830724096383220210996943533703141053"
+      }
+    },
+    {
+      "checks": [
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Hessian_symmetry",
+          "passed": true,
+          "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421094897783485768336108727788476324712106793091892990025572221"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_charge_tangency",
+          "passed": true,
+          "value": "2.0400351822658332370272741960516270615113004063751866239696289106e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Hessian_symmetry",
+          "passed": true,
+          "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.224210948977834857683361087277884763247040473262784292212541326"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_charge_tangency",
+          "passed": true,
+          "value": "2.0400351822658332370272741960516270615113004063753715566112395001e-63"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho",
+          "passed": true,
+          "value": "4.8755915459902739981339688193280771205439683612994833502008787029e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho_dot",
+          "passed": true,
+          "value": "1.3384525910728505535389763559719309315979701332911848582837038724e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_dust_expected",
+          "passed": true,
+          "value": "6.253143190978992601663553848448947743980812067471031035200084589e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_dot",
+          "passed": true,
+          "value": "2.040035182263793201845008362814599787315248779313675323563253539e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_expected",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_Edot",
+          "passed": true,
+          "value": "1.3387348327071420172161325575399493042723231323228184139589382991e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_acceleration",
+          "passed": true,
+          "value": "1.0074152336770547469260120328914472203175831496632845114533971674e-30"
+        },
+        {
+          "criterion": "normalized < 1e-25",
+          "name": "independent_8_12_shift",
+          "passed": true,
+          "value": "1.8281993745978870096169170550279298190626553378376619231537833253e-53"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "shift_ODE_residual",
+          "passed": true,
+          "value": "9.2806290073587225483900626462807100362267187696145116495216081021e-77"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_inverse_metric_drift",
+          "passed": true,
+          "value": "0.22408709953128491464662995992110654270761317550218453734325611701"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_dust_beta_term",
+          "passed": true,
+          "value": "0.22436118342000507372380653176182101391690993781207499849936142057"
+        }
+      ],
+      "label": "node1_1_0.01",
+      "theta": "1.5807963267948966192313216916397514420985846996875529104874722962",
+      "values": {
+        "Edot": "-0.00014402756717754830960131113756466442542477791607251668702685596489",
+        "acc": [
+          "0.47406307945767296562439197395015957430925475167258297299362975854",
+          "0.0",
+          "0.0",
+          "0.47448970346009595556436338118460289029172092229548176907149778684",
+          "-0.0000000000031089395291908252782574873196440909046980362669596037290563269626",
+          "0.47448202785318179131419341642924367169187949123432946826086487705",
+          "0.0",
+          "0.025600359658069134819033420862818345347908248379963590653550529116",
+          "-0.0000012481349055106605810363830200196396406753187964144405698355954489",
+          "-0.52792038690668491762025329349621348257033386948506092572082991238",
+          "-0.72348188381703168580031036510778285881867510537619657792049410591",
+          "-1.2054240406436902161462761749756203379165589191181409854515449541",
+          "-0.078946500404148766409677964934496366315360108704838617311863368427",
+          "0.43135037617694077714090319882312119839393969551303678234077319793"
+        ],
+        "dust_expected": "-0.28876106001951239974850508600073148920760203717275210131374429263",
+        "flux": "0.00021329066806754014808283297744700684933887535894076768797343335374",
+        "phase_dot": "-0.00000066307861914166475328293050874484751227564827944488175778001690153",
+        "phase_expected": "-0.00000066307861914166475328293050874484751227564827944488175777797686364",
+        "rho": "0.19973598457926028035865748659890917996995555130248387901697100304",
+        "rho_dot": "0.00024914021780559955404065791367025401333464620618532750110356322042",
+        "rho_z": "0.0004224814090126506032465965479492980085220935429203879679461798873"
+      }
+    },
+    {
+      "checks": [
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Hessian_symmetry",
+          "passed": true,
+          "value": "7.9310682416114038227313267369704485838238089053159236925189385039e-118"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421548693852394536462214331214787338234374136724465228206291821"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_charge_tangency",
+          "passed": true,
+          "value": "1.9800369720908935961445554138017448536618297484745906436189623162e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Hessian_symmetry",
+          "passed": true,
+          "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421548693852394536462214331214787338226295200359248372806217723"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_charge_tangency",
+          "passed": true,
+          "value": "1.9800369720908935961445554138017448536618297484746443236246359458e-63"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho",
+          "passed": true,
+          "value": "4.6368431384865332943374384807577491922492853636620182074617741243e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho_dot",
+          "passed": true,
+          "value": "1.3417015408385556785420313086506973229323800092199305112559479982e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_dust_expected",
+          "passed": true,
+          "value": "5.9469249566946914568548408742055777303786704802941944410236479262e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_dot",
+          "passed": true,
+          "value": "1.9800369720889135591724645202056002982480280036209288138704876719e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_expected",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_Edot",
+          "passed": true,
+          "value": "1.3419788669247469783761921209497353955799517679359025253726551434e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_acceleration",
+          "passed": true,
+          "value": "9.0322062520802450330217574275398611248366443232874850529109943033e-35"
+        },
+        {
+          "criterion": "normalized < 1e-25",
+          "name": "independent_8_12_shift",
+          "passed": true,
+          "value": "4.2219182064219624564009296632379719759354949157810806602428812565e-54"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "shift_ODE_residual",
+          "passed": true,
+          "value": "1.8609629880383285060801587905433500397600082657566519569798316879e-76"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_inverse_metric_drift",
+          "passed": true,
+          "value": "0.22409408375924744709950235821453107156750321087802850461289303368"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_dust_beta_term",
+          "passed": true,
+          "value": "0.22436572354199344733190305021502251901768804647055348273601355011"
+        }
+      ],
+      "label": "node1_1_0.1",
+      "theta": "1.6707963267948966192313216916397514420985846996875529104874722962",
+      "values": {
+        "Edot": "-0.00014611862007912062528615587784081413333886770561826129379841415563",
+        "acc": [
+          "0.4740670495176591013887277375478758827249243052296846727697210833",
+          "0.0",
+          "0.0",
+          "0.47448946382041237526992164282130153643290147725558708095965271694",
+          "-0.00000000030833687878082504771930484375339841836994578948989464329654699117",
+          "0.47448193959619237203605326933824156947165314369230439318965457528",
+          "0.0",
+          "0.25558138061098528507010098582530670410761419407905017008920146123",
+          "-0.000012399143141137705473352989673467833230856779529499881911062937978",
+          "-0.52792038709642942920511068420532307834744826748032977183767578917",
+          "-0.72348185764204197261791090029528512050099312853676594715186035643",
+          "-1.2054240340999438279046576799269329377648672367044758834282792165",
+          "-0.078947828572341198578577390980393445854381407415298674866528605587",
+          "0.46544023678652162355586465978434392003378250329149651209779726725"
+        ],
+        "dust_expected": "-0.28876858317095577610559970073672142522337300261480752313286892785",
+        "flux": "0.00020908086784148855076864088951566196441794438349861440068131648509",
+        "phase_dot": "-0.00000064999112586688538277029114163755573401200860707714462490909585078",
+        "phase_expected": "-0.00000064999112586688538277029114163755573401200860707714462490711581123",
+        "rho": "0.19974119555584558293245919937523061787637381346101844788657722397",
+        "rho_dot": "0.00024915714678149608747832378056276582581112562374928944685698806639",
+        "rho_z": "0.0041969846280645752751061843829830724096383220210996943533703141091"
+      }
+    },
+    {
+      "checks": [
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Hessian_symmetry",
+          "passed": true,
+          "value": "7.9310682416114038227313267369704485838238089053159236925189385039e-118"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421094897783485768336108727788476324712106793091892990025572221"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_charge_tangency",
+          "passed": true,
+          "value": "2.0400351822658332370272741960516270615113004063751866239696288925e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Hessian_symmetry",
+          "passed": true,
+          "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.224210948977834857683361087277884763247040473262784292212541326"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_charge_tangency",
+          "passed": true,
+          "value": "2.04003518226583323702727419605162706151130040637535349124795627e-63"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho",
+          "passed": true,
+          "value": "4.875591545990273998133968819328077120543968361299483350200878703e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho_dot",
+          "passed": true,
+          "value": "1.3384525910728505535389763559719309315979701332911848582837038724e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_dust_expected",
+          "passed": true,
+          "value": "6.2531431909789926016635538484489477439808120674710310352000845891e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_dot",
+          "passed": true,
+          "value": "2.040035182263793201845008362814599787315248779313675323563253539e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_expected",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_Edot",
+          "passed": true,
+          "value": "1.3387348327071420172161325575399493042723231323228184139589382991e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_acceleration",
+          "passed": true,
+          "value": "1.0074152336770547469260120328914472203175831496632845114533972017e-30"
+        },
+        {
+          "criterion": "normalized < 1e-25",
+          "name": "independent_8_12_shift",
+          "passed": true,
+          "value": "1.8281993745978870096169170550279298190626553378376619231537833269e-53"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "shift_ODE_residual",
+          "passed": true,
+          "value": "9.2806290073587225483900626462807100362267187696145116495216081021e-77"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_inverse_metric_drift",
+          "passed": true,
+          "value": "0.22408709953128491464662995992110654270761317550218453734325611701"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_dust_beta_term",
+          "passed": true,
+          "value": "0.22436118342000507372380653176182101391690993781207499849936142057"
+        }
+      ],
+      "label": "node3_-1_0.01",
+      "theta": "4.7023889803846898576939650749192543262957540990626587314624168885",
+      "values": {
+        "Edot": "-0.00014402756717754830960131113756466442542477791607251668702685596488",
+        "acc": [
+          "0.47406307945767296562439197395015957430925475167258297299362975854",
+          "0.0",
+          "0.0",
+          "0.47448970346009595556436338118460289029172092229548176907149778684",
+          "0.0000000000031089395291908252782574873196440909046980362669596037290563269102",
+          "0.47448202785318179131419341642924367169187949123432946826086487705",
+          "0.0",
+          "0.0256003596580691348190334208628183453479082483799635906535505289",
+          "0.0000012481349055106605810363830200196396406753187964144405698355954383",
+          "-0.52792038690668491762025329349621348257033386948506092572082991238",
+          "-0.72348188381703168580031036510778285881867510537619657792049410591",
+          "-1.2054240406436902161462761749756203379165589191181409854515449541",
+          "-0.078946500404148766409677964934496366315360108704838617311863368427",
+          "0.43135037617694077714090319882312119839393969551303678234077319793"
+        ],
+        "dust_expected": "-0.28876106001951239974850508600073148920760203717275210131374429263",
+        "flux": "0.00021329066806754014808283297744700684933887535894076768797343335375",
+        "phase_dot": "-0.00000066307861914166475328293050874484751227564827944488175778001690153",
+        "phase_expected": "-0.00000066307861914166475328293050874484751227564827944488175777797686364",
+        "rho": "0.19973598457926028035865748659890917996995555130248387901697100304",
+        "rho_dot": "0.00024914021780559955404065791367025401333464620618532750110356322042",
+        "rho_z": "-0.00042248140901265060324659654794929800852209354292038796794617988374"
+      }
+    },
+    {
+      "checks": [
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Hessian_symmetry",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421548693852394536462214331214787338234374136724465228206291821"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_charge_tangency",
+          "passed": true,
+          "value": "1.9800369720908935961445554138017448536618297484745906436189623318e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Hessian_symmetry",
+          "passed": true,
+          "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421548693852394536462214331214787338226295200359248372806217723"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_charge_tangency",
+          "passed": true,
+          "value": "1.9800369720908935961445554138017448536618297484746599216362695846e-63"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho",
+          "passed": true,
+          "value": "4.6368431384865332943374384807577491922492853636620182074617741247e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho_dot",
+          "passed": true,
+          "value": "1.3417015408385556785420313086506973229323800092199305112559479982e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_dust_expected",
+          "passed": true,
+          "value": "5.9469249566946914568548408742055777303786704802941944410236479267e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_dot",
+          "passed": true,
+          "value": "1.9800369720889135591724645202056002982480280036209288138704876719e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_expected",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_Edot",
+          "passed": true,
+          "value": "1.3419788669247469783761921209497353955799517679359025253726551434e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_acceleration",
+          "passed": true,
+          "value": "9.0322062520802450330217574275398611248366443232874850529109943011e-35"
+        },
+        {
+          "criterion": "normalized < 1e-25",
+          "name": "independent_8_12_shift",
+          "passed": true,
+          "value": "4.2219182064219624564009296632379719759354949157810806602428812407e-54"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "shift_ODE_residual",
+          "passed": true,
+          "value": "1.8609629880383285060801587905433500397600082657566519569798316879e-76"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_inverse_metric_drift",
+          "passed": true,
+          "value": "0.22409408375924744709950235821453107156750321087802850461289303368"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_dust_beta_term",
+          "passed": true,
+          "value": "0.22436572354199344733190305021502251901768804647055348273601355011"
+        }
+      ],
+      "label": "node3_-1_0.1",
+      "theta": "4.6123889803846898576939650749192543262957540990626587314624168885",
+      "values": {
+        "Edot": "-0.00014611862007912062528615587784081413333886770561826129379841415563",
+        "acc": [
+          "0.4740670495176591013887277375478758827249243052296846727697210833",
+          "0.0",
+          "0.0",
+          "0.47448946382041237526992164282130153643290147725558708095965271694",
+          "0.00000000030833687878082504771930484375339841836994578948989464329654699066",
+          "0.47448193959619237203605326933824156947165314369230439318965457528",
+          "0.0",
+          "0.25558138061098528507010098582530670410761419407905017008920146101",
+          "0.000012399143141137705473352989673467833230856779529499881911062937968",
+          "-0.52792038709642942920511068420532307834744826748032977183767578917",
+          "-0.72348185764204197261791090029528512050099312853676594715186035643",
+          "-1.2054240340999438279046576799269329377648672367044758834282792165",
+          "-0.078947828572341198578577390980393445854381407415298674866528605587",
+          "0.46544023678652162355586465978434392003378250329149651209779726719"
+        ],
+        "dust_expected": "-0.28876858317095577610559970073672142522337300261480752313286892785",
+        "flux": "0.0002090808678414885507686408895156619644179443834986144006813164851",
+        "phase_dot": "-0.0000006499911258668853827702911416375557340120086070771446249090958508",
+        "phase_expected": "-0.00000064999112586688538277029114163755573401200860707714462490711581125",
+        "rho": "0.19974119555584558293245919937523061787637381346101844788657722397",
+        "rho_dot": "0.00024915714678149608747832378056276582581112562374928944685698806639",
+        "rho_z": "-0.0041969846280645752751061843829830724096383220210996943533703141056"
+      }
+    },
+    {
+      "checks": [
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Hessian_symmetry",
+          "passed": true,
+          "value": "7.9310682416114038227313267369704485838238089053159236925189385039e-118"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421094897783485768336108727788476324712106793091892990025572221"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_charge_tangency",
+          "passed": true,
+          "value": "2.0400351822658332370272741960516270615113004063751866239696292682e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Hessian_symmetry",
+          "passed": true,
+          "value": "1.1896602362417105734096990105455672875735713357973885538778407756e-117"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.224210948977834857683361087277884763247040473262784292212541326"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_charge_tangency",
+          "passed": true,
+          "value": "2.0400351822658332370272741960516270615113004063753133585096623893e-63"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho",
+          "passed": true,
+          "value": "4.8755915459902739981339688193280771205439683612994833502008787029e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho_dot",
+          "passed": true,
+          "value": "1.3384525910728505535389763559719309315979701332911848582837038724e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_dust_expected",
+          "passed": true,
+          "value": "6.253143190978992601663553848448947743980812067471031035200084589e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_dot",
+          "passed": true,
+          "value": "2.0400351822637932018450083628145997873152487793136753235632539549e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_expected",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_Edot",
+          "passed": true,
+          "value": "1.3387348327071420172161325575399493042723231323228184139589382991e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_acceleration",
+          "passed": true,
+          "value": "1.0074152336770547469260120328914472203175831496632845114533971706e-30"
+        },
+        {
+          "criterion": "normalized < 1e-25",
+          "name": "independent_8_12_shift",
+          "passed": true,
+          "value": "1.8281993745978870096169170550279298190626553378376619231537833256e-53"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "shift_ODE_residual",
+          "passed": true,
+          "value": "9.2806290073587225483900626462807100362267088557799109177311604031e-77"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_inverse_metric_drift",
+          "passed": true,
+          "value": "0.22408709953128491464662995992110654270761317550218453734325611701"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_dust_beta_term",
+          "passed": true,
+          "value": "0.22436118342000507372380653176182101391690993781207499849936142057"
+        }
+      ],
+      "label": "node3_1_0.01",
+      "theta": "4.7223889803846898576939650749192543262957540990626587314624168885",
+      "values": {
+        "Edot": "-0.00014402756717754830960131113756466442542477791607251668702685596489",
+        "acc": [
+          "0.47406307945767296562439197395015957430925475167258297299362975854",
+          "0.0",
+          "0.0",
+          "0.47448970346009595556436338118460289029172092229548176907149778684",
+          "0.0000000000031089395291908252782574873196440909046980362669596037290563269578",
+          "0.47448202785318179131419341642924367169187949123432946826086487705",
+          "0.0",
+          "-0.025600359658069134819033420862818345347908248379963590653550529096",
+          "-0.0000012481349055106605810363830200196396406753187964144405698355954479",
+          "-0.52792038690668491762025329349621348257033386948506092572082991238",
+          "-0.72348188381703168580031036510778285881867510537619657792049410591",
+          "-1.2054240406436902161462761749756203379165589191181409854515449541",
+          "-0.078946500404148766409677964934496366315360108704838617311863368427",
+          "0.43135037617694077714090319882312119839393969551303678234077319793"
+        ],
+        "dust_expected": "-0.28876106001951239974850508600073148920760203717275210131374429263",
+        "flux": "0.00021329066806754014808283297744700684933887535894076768797343335374",
+        "phase_dot": "-0.00000066307861914166475328293050874484751227564827944488175778001690153",
+        "phase_expected": "-0.00000066307861914166475328293050874484751227564827944488175777797686364",
+        "rho": "0.19973598457926028035865748659890917996995555130248387901697100304",
+        "rho_dot": "0.00024914021780559955404065791367025401333464620618532750110356322042",
+        "rho_z": "0.00042248140901265060324659654794929800852209354292038796794617988697"
+      }
+    },
+    {
+      "checks": [
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Hessian_symmetry",
+          "passed": true,
+          "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421548693852394536462214331214787338234374136724465228206291821"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_charge_tangency",
+          "passed": true,
+          "value": "1.9800369720908935961445554138017448536618297484745906436189621639e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-20_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Hessian_symmetry",
+          "passed": true,
+          "value": "2.0790819531289798437060809161363812735579085616751375004516846152e-112"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_Euler_solve",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_dust_Hamiltonian_tangency",
+          "passed": false,
+          "value": "0.22421548693852394536462214331214787338226295200359248372806217723"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_charge_tangency",
+          "passed": true,
+          "value": "1.9800369720908935961445554138017448536618297484744919465879177816e-63"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "1e-26_phase_spatial_current",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho",
+          "passed": true,
+          "value": "4.6368431384865332943374384807577491922492853636620182074617741243e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_rho_dot",
+          "passed": true,
+          "value": "1.3417015408385556785420313086506973229323800092199305112559479982e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_dust_expected",
+          "passed": true,
+          "value": "5.9469249566946914568548408742055777303786704802941944410236479263e-47"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_dot",
+          "passed": true,
+          "value": "1.9800369720889135591724645202056002982480280036209288138704876719e-51"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_phase_expected",
+          "passed": true,
+          "value": "0.0"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_Edot",
+          "passed": true,
+          "value": "1.3419788669247469783761921209497353955799517679359025253726551434e-40"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "two_step_acceleration",
+          "passed": true,
+          "value": "9.0322062520802450330217574275398611248366443232874850529109943031e-35"
+        },
+        {
+          "criterion": "normalized < 1e-25",
+          "name": "independent_8_12_shift",
+          "passed": true,
+          "value": "4.2219182064219624564009296632379719759354949157810806602428812565e-54"
+        },
+        {
+          "criterion": "normalized < 1e-18",
+          "name": "shift_ODE_residual",
+          "passed": true,
+          "value": "1.8609629880383285060801587905433500397600082657566519569798316879e-76"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_inverse_metric_drift",
+          "passed": true,
+          "value": "0.22409408375924744709950235821453107156750321087802850461289303368"
+        },
+        {
+          "criterion": "normalized mismatch > 1e-18",
+          "name": "reject_omitted_dust_beta_term",
+          "passed": true,
+          "value": "0.22436572354199344733190305021502251901768804647055348273601355011"
+        }
+      ],
+      "label": "node3_1_0.1",
+      "theta": "4.8123889803846898576939650749192543262957540990626587314624168885",
+      "values": {
+        "Edot": "-0.00014611862007912062528615587784081413333886770561826129379841415563",
+        "acc": [
+          "0.4740670495176591013887277375478758827249243052296846727697210833",
+          "0.0",
+          "0.0",
+          "0.47448946382041237526992164282130153643290147725558708095965271694",
+          "0.00000000030833687878082504771930484375339841836994578948989464329654699112",
+          "0.47448193959619237203605326933824156947165314369230439318965457528",
+          "0.0",
+          "-0.25558138061098528507010098582530670410761419407905017008920146121",
+          "-0.000012399143141137705473352989673467833230856779529499881911062937977",
+          "-0.52792038709642942920511068420532307834744826748032977183767578917",
+          "-0.72348185764204197261791090029528512050099312853676594715186035643",
+          "-1.2054240340999438279046576799269329377648672367044758834282792165",
+          "-0.078947828572341198578577390980393445854381407415298674866528605587",
+          "0.46544023678652162355586465978434392003378250329149651209779726725"
+        ],
+        "dust_expected": "-0.28876858317095577610559970073672142522337300261480752313286892785",
+        "flux": "0.00020908086784148855076864088951566196441794438349861440068131648509",
+        "phase_dot": "-0.00000064999112586688538277029114163755573401200860707714462490909585078",
+        "phase_expected": "-0.00000064999112586688538277029114163755573401200860707714462490711581123",
+        "rho": "0.19974119555584558293245919937523061787637381346101844788657722397",
+        "rho_dot": "0.00024915714678149608747832378056276582581112562374928944685698806639",
+        "rho_z": "0.0041969846280645752751061843829830724096383220210996943533703141088"
+      }
+    }
+  ],
+  "result_id": "R4C1-QUARTIC-CHARGE-TANGENCY-V1",
+  "review_status": "DEFERRED",
+  "source_sha256": {
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_acceleration_attempt_04/cases.json": "bcaa4b484426ca37eb6d63900e977071bf0ecd3f8fc1f29e48e7ae42c2a8d125",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_acceleration_attempt_04/equations.json": "4aa8b6ff0abea3840a4aaededd6a4a713a89a9c29477d23f1585ee8042723857",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_acceleration_attempt_04/summary.json": "9f8d5fce14a4fadf3052eafdf4ec5d0e4adbe3937be991d344ff126fa49f6019",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_completion_attempt_01/certificates.json": "e02cef26c9776f1c4df2b827995ddf2e887038fad886be5f3034bc5133a17cce",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_completion_attempt_01/summary.json": "e66ac815aada3fa577db841cc99d55f095115dc203956426a9606fc9ba41ac8e",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_dimensional_audit_attempt_02/audit.json": "273f50caceb1f8181c42f012b5e4b16a68f45b5f037f6a14915c78471365b64d",
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/trajectories.json": "3e36b9594ec4f186fff610a291011b6344b23ba98645922dfd7ad78d242ee4b3",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_01/formulas.json": "08058e16cf87399b7f59e130f364dee99484ee41f6e122b6828e5407fd7ac19e",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_01/independent.json": "bb0c6c71355c8a8da7c4c614af5f6eff940d2341f7ff4ebf307c204a05e07220",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_01/summary.json": "4035b08090b924deff25d6e485c3e0755a58e1c7dd443d2e526a02f95d24be25",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_02/summary.json": "28ec677f75404d9e48431d1c1c7dc8ffcce99f70e18dfc9b66f0be7cd6f3778d",
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/certificates.json": "7c3465014fd85d7a98b905eed721c907f2f7764ccefadf856680ecf068d7127a",
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/proof.json": "b96ee17ec3d3f14500d0bf59d786411f5e241cbbb238ef49f3dc34657a18646b",
+    "Analysis/MasterTests/outputs/r4c1_initial_charge_completion_attempt_04/formulas.json": "b1f62daaebdb1602ccc20350669b22aeb601d7e8d8cccad4626e420e317bb6f3",
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/formulas.json": "beaf647957a18ddd14881333de29cebc9a567ffcc62a9b4d775153984a0add73",
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/summary.json": "586fe456022419f65965750ecc3137cf74b6eafb84f3a4dec670f2f611f51b3f",
+    "Analysis/MasterTests/outputs/r4c1_joint_background_acceleration_v1_attempt_01/summary.json": "ae70906b2fbe22e88afb087a7efd00245f8b49409953349d03061c8d7188c746",
+    "Analysis/MasterTests/outputs/r4c1_joint_node_velocity_attempt_02/certificates.json": "76b4870fda66c9a85c85dcc282d4934a8ac09337a81c469d3a152f89511963cf",
+    "Analysis/MasterTests/outputs/r4c1_joint_node_velocity_attempt_02/independent.json": "b399814e46e660b7ad52ef03f5c2e4ce262c5e3f815162ad3f9f35be47d0459e",
+    "Analysis/MasterTests/outputs/r4c1_joint_node_velocity_attempt_02/summary.json": "f1d662d6d9a44eb03df285a541950b0886119c7fc02223408f73855725e7e6f9",
+    "Analysis/MasterTests/outputs/r4c1_nodal_descriptor_attempt_01/formulas.json": "280ee1834ef44e3428990563baa98951a2c43a147b5464dc2b04c8b66fafcfd2",
+    "Analysis/MasterTests/outputs/r4c1_nodal_descriptor_attempt_01/independent.json": "3d4da9e9865424209dd616053deba58a8ea0dd0e10ad3542612f940e06196074",
+    "Analysis/MasterTests/outputs/r4c1_nodal_descriptor_attempt_01/summary.json": "4a534ce4d1245820a5796a887e1a65d2744a2d8d7d4bdfda861233aa1c3cf61f",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_01/independent.json": "15330fbfe01c1ef4aefe953282390373a04b18cad5017b20e408675c37d42a09",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_01/summary.json": "69270f59143ef1a381074c1851aaef0d99836ac3a459ff61af2ac3145d63f4b3",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_02/formulas.json": "a99cedccfa53fb81492dbe7bc43b048ca8d29294050dd2dea95d90b5b750bd5f",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_02/independent.json": "68eb656f7321da43e05e2b4467c94021061b71638275fa369d16ff67df78d3b7",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_02/summary.json": "6cad75fa82d4bf9cc64074f834837910aedc9ccc69e6c8f2ce604c967293aabc",
+    "Analysis/MasterTests/outputs/r4c1_node_acceleration_attempt_02/normalization.json": "447192694f9d65cd7791cfe93444dfe9a7d2566dfc99f453f590ae00825c668f",
+    "Analysis/MasterTests/outputs/r4c1_node_acceleration_attempt_02/summary.json": "825e3e39624d4533bcfb0e9db115cbc4695794f300d1f69b31463710f2c38804",
+    "Analysis/MasterTests/outputs/r4c1_node_velocity_transport_attempt_02/equations.json": "01b75e280f4d23340d7e5fe87854b00981e0a5443ed45113270bfc594b47a18b",
+    "Analysis/MasterTests/outputs/r4c1_node_velocity_transport_attempt_02/summary.json": "0bf9482f7addd5fa1a1d66d4aff19b3562fd5cecc19e96f1b099040e5a658c2e",
+    "Analysis/MasterTests/outputs/r4c1_planar_coupled_vertices_attempt_01/formulas.json": "852b657c9023244a76cc49494b6adb08510d4eeb74bd95ec390ff11bc6b0789a",
+    "Analysis/MasterTests/outputs/r4c1_quartic_complement_force_v3_attempt_01/summary.json": "41d889e9a55a2a6f35c919c23c97c4b764094ea0c8c25b17ece4c6a4a3ddda61",
+    "Analysis/MasterTests/outputs/r4c1_quartic_cusp_remainder_v1_attempt_01/summary.json": "c662c4261cd6496b053979ab6927b7be7fec87520556d7cbffadf453a883879f",
+    "Analysis/MasterTests/outputs/r4c1_quartic_initial_extension_orientation_v1_attempt_01/independent.json": "07b5687ba7f7eec31ab20dffdd638729ed2d9b4f5ee2d5c12e243642e9a481a2",
+    "Analysis/MasterTests/outputs/r4c1_quartic_jerk_transport_v2_attempt_01/summary.json": "426c6e781f7f113771d9afd92a9fc83aa968409246360a7f367ab8f1ab252e63",
+    "Analysis/MasterTests/outputs/r4c1_quartic_joint_completion_v1_attempt_01/summary.json": "2df2eb08f06243ca1ef60152a17921d17c7755bbca18fbd59bc33ab27f45acb0",
+    "Analysis/MasterTests/outputs/r4c1_quartic_kinetic_extension_v1_attempt_01/summary.json": "4b68c9ae0cf43350caad2b94f70e557a795aacd7eaa61fc5f258eb05f8b4d689",
+    "Analysis/MasterTests/outputs/r4c1_quartic_kinetic_extension_v2_attempt_01/summary.json": "18d56b68030c19c7c48bf27c670deed597a57c1d2f2432b5e459156af3a06765",
+    "Analysis/MasterTests/outputs/r4c1_quartic_scalar_bound_v1_attempt_01/summary.json": "f74df107b91e466e2c8d3c9d79107d968e2456beee16b26210adde7d43b1d756",
+    "Analysis/MasterTests/outputs/r4c1_quartic_scalar_quotient_v1_attempt_01/summary.json": "0f8f49732d09fe5e2095c120ef7d2d6e479888ba157863eef156d5dd2a0b11dd",
+    "Analysis/MasterTests/outputs/r4c1_quartic_total_jerk_v1_attempt_01/summary.json": "fd5f9b4d3e84f02548a8c2b34174aa2fb3cd8870c0f26b5280919ba4ff69f9b6",
+    "Analysis/MasterTests/outputs/r4c1_second_node_consistency_v1_attempt_01/summary.json": "2fe36ca4652b276172fe3473897655d41c9e4a4f18be3f4e915e5f363cef23e2",
+    "Analysis/MasterTests/outputs/r4c1_second_node_enclosure_v2_attempt_01/summary.json": "ad053bf3d816bad7983281ff9d16cf52671398face84249ced7e4f47b51afd24",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v1.py": "790ab9b0884a14f5ed389e997c8a2bc65fc0f530ae0b1db502dd49c0e8d3008f",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v2.py": "3132188c8b2e061c9617cd35308f699e13223c120c03b1513bc854a74b4d1043",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v3.py": "881e58aaecbb8b3f2133bc2cbf3bb55716cf4e6e703181b3fbe8ff5e5df55205",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v4.py": "c6a7e31c2f63d8e6481d2e5a4b4f2725ce376f3de05ab639594a7b9e991f1ae7",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_completion_v1.py": "6fe275eed4aef446978809f12225af8aac16a546bddada8709d5a0ace9911a88",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_dimensional_audit_v2.py": "75b74f737e4b4910058c8ab50c3ef6d96c3d5a318a5fcca784bbfb9edfcd78de",
+    "Analysis/MasterTests/test_01_r4c1_finite_tilt_canonical_v2.py": "4c2a64f45741161ccacdb75bd0816e5113a9d0b95ba2aa402584f2cb8533dada",
+    "Analysis/MasterTests/test_01_r4c1_fixed_charge_patch_momentum_v1.py": "e8e8837e6c70b6f8cb8db2a1daefca0054b2da9e95a0aaf189edf348e6b6c661",
+    "Analysis/MasterTests/test_01_r4c1_fixed_charge_patch_momentum_v2.py": "2706b05764eea2b9a34dc7be73f78022933a8c444e54f5c8b47b8ceb33fce74f",
+    "Analysis/MasterTests/test_01_r4c1_global_nodal_lift_v1.py": "052000518f5c745a028aba3def170c1ae0b6b276c8a124aab3c5cbec70a9c6ee",
+    "Analysis/MasterTests/test_01_r4c1_global_nodal_lift_v2.py": "8ff1ccdd3c47c151276c21f968e355d032ec75698a300918546d19ffe0892cce",
+    "Analysis/MasterTests/test_01_r4c1_initial_admission_v1.py": "d994707a9261e276b6d9fcb3377acfd75387ce8cdac10f7756e2f791c5787e0a",
+    "Analysis/MasterTests/test_01_r4c1_initial_charge_completion_v4.py": "af22270b76b72d29a04bdfba366464bcc2482ec5f2e41f5ffe66061fee7f4020",
+    "Analysis/MasterTests/test_01_r4c1_initial_constraint_v1.py": "6ba9c73d71d2ef9dd3fc59f34d5fe781d528d5636a29a85bed748290bda989ff",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_joint_background_acceleration_v1.py": "2cbb055c8a4172ef9e75daa7b80a92c5f979aadc817e29d7cace6115adb47ec5",
+    "Analysis/MasterTests/test_01_r4c1_joint_node_velocity_v1.py": "dd3a132ac557d5d631b9e7b7bfdfdf17edc9dd1e9b073b06418309ae43a8e631",
+    "Analysis/MasterTests/test_01_r4c1_joint_node_velocity_v2.py": "e10bf2f7b20e871cd93fd10b00f1ed6f43f648f60b9282e15205e277d29e3d3d",
+    "Analysis/MasterTests/test_01_r4c1_nodal_descriptor_v1.py": "86b1c665d2130fd48fb75fbb6b5aa4fe5ee7518dbd2a1a5b3e7c34646573343f",
+    "Analysis/MasterTests/test_01_r4c1_nodal_descriptor_v2.py": "b19f4ce9a665d711b3be021cfa149fe3b4753851e1c11d99bc705156537f8bf5",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v1.py": "77b8b7d45ca9ea6b16fbea175c162ca98355382bf72b1ee26026b97437181a08",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v2.py": "4dd1be8d7cfe8877841b380227c2c24f2d41ed1146ccf12781cdd28881f2e253",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v3.py": "b887c7a52102b7abb43a2875cb6e01607ecb46d39a95f4abb4cefab9795a73c0",
+    "Analysis/MasterTests/test_01_r4c1_node_acceleration_v2.py": "1e77ba8e8fc9d09d3e7e4a3a556405fa45dd5ce0dbf89580ff7ae2df106a9a7c",
+    "Analysis/MasterTests/test_01_r4c1_planar_reduced_hamiltonian_v1.py": "f03a2b9ac794569994be8112b0ba1746b8e596669c2d693c9c7310bd48cab27b",
+    "Analysis/MasterTests/test_01_r4c1_quartic_charge_tangency_v1.py": "c7de9f92e7959bd08d8f06315ce5c0556f80250061fbe8d0daef10cda2992def",
+    "Analysis/MasterTests/test_01_r4c1_quartic_complement_force_v1.py": "c9b19d86391703d8386d8845c927d969d25567282a3c1d665c95a413a15b830c",
+    "Analysis/MasterTests/test_01_r4c1_quartic_complement_force_v2.py": "ee07404a2d638624646d5c70ebda6f2919ea8f2e5a26b849c856d4e383f2601b",
+    "Analysis/MasterTests/test_01_r4c1_quartic_complement_force_v3.py": "06b604440db67acdd9dc3d9282fbdfbca2996cb0e9250d02a0cae61c62c55c15",
+    "Analysis/MasterTests/test_01_r4c1_quartic_cusp_remainder_v1.py": "3eea3f3f8b604db6c24ba9ea5869a0ef08b08d598ead5dff8d4c4f91ce8f2f16",
+    "Analysis/MasterTests/test_01_r4c1_quartic_jerk_transport_v1.py": "f1c5fabe603ab19bb5b02db653771899e1158111e95dcc81820ce6e354b346b1",
+    "Analysis/MasterTests/test_01_r4c1_quartic_jerk_transport_v2.py": "ee3699564f2cd62a168c40b7caa8040b7c79405a5d6df665b0ab725e492f0f50",
+    "Analysis/MasterTests/test_01_r4c1_quartic_joint_completion_v1.py": "d68534ae03c4420f46318cf3906323ba972d68b4b713d0d6f31ef7ba264374a4",
+    "Analysis/MasterTests/test_01_r4c1_quartic_kinetic_extension_v1.py": "083fe670886cc2d1fdfc222ac61d28c2c4aa66a6ce12d91ffdfa67b19a335000",
+    "Analysis/MasterTests/test_01_r4c1_quartic_kinetic_extension_v2.py": "27b57c329c1ddff413d6a3adfa39e8379366fa2240b7d370244497c222711af6",
+    "Analysis/MasterTests/test_01_r4c1_quartic_scalar_bound_v1.py": "1e65cb774e5ff1c349ddfc45e34a356260cced1cb1e19912ac119b4c26a1ea0e",
+    "Analysis/MasterTests/test_01_r4c1_quartic_scalar_quotient_v1.py": "d11d6e9006bd515c33336fcd2788c4995833b3f4bab8381a7c6e041e9d25c352",
+    "Analysis/MasterTests/test_01_r4c1_quartic_total_jerk_v1.py": "cc75d965e68c8ffb39dcc619588414d1cf30f6f0e2d4b002044e9395e8db233c",
+    "Analysis/MasterTests/test_01_r4c1_regulator_acceleration_regularity_v1.py": "d5c17a544394aa3d46b51ef467fe9d1ddfbc650bb07feb63d4467d0adc2b502a",
+    "Analysis/MasterTests/test_01_r4c1_regulator_node_v1.py": "7126d03a3b3a3a525bf1ce4c8b31c8541901f9d7c45ad82c288db71cc97cfa25",
+    "Analysis/MasterTests/test_01_r4c1_second_node_consistency_v1.py": "ac57695e82d0604a53d5bc822a9d4bd81a8a82cf7b59e98113b604ddfd9dec0d",
+    "Analysis/MasterTests/test_01_r4c1_second_node_enclosure_v2.py": "5a7d293d2db11ff4d542a65fdfa3abf653b5efcd84afaa5214a25cfcf0078314",
+    "Analysis/MasterTests/verify_01_r4c1_quartic_initial_extension_v1.py": "c7b02564a7e7c499f0a1cffbc297233b200230a3b1186ecae084dd9e00be02d7",
+    "GEMINI.md": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12",
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa",
+    "Theory/Core/ITSM_DUST_GR_WEAKFIELD_EXECUTION_PLAN_2026-10-11.md": "14bf01842d7fa573c22d78f021ec815421fb01a4b97fee806c1fbed22b676519",
+    "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V1_CONTRACT_2026-10-18.md": "4d56686ae98c33ee532f324b7fcdd4702c38da19401fa0b5d4ca894fa58c69ba",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V2_PARALLEL_ADDENDUM_2026-10-18.md": "67525e65ee101f893b4829ce1e73b50db0ad1dd414ea2885d150646629d6ea00",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V3_EXECUTION_ADDENDUM_2026-10-18.md": "b02d70c9d164366cadfd4eff29e1906f1b61e76a5f71eb324a1f3a6a294f11d9",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V4_ALGEBRA_ADDENDUM_2026-10-19.md": "64f2fe71410a9a2e3c70bffbb3955bc9ba4774fa73ba33d567820e4a88f8efd6",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V4_REPORT_2026-10-19.md": "d5e15cc6545b76038213fa4e1560725b437455ccea6b381be52be762f5393da7",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_COMPLETION_V1_CONTRACT_2026-10-18.md": "b63c9f3106d5b86c080a63c30b6fdb8ff188bdc08069c286b97d95b52966381a",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_COMPLETION_V1_ENDPOINT_ADDENDUM_2026-10-18.md": "a901a269e762ba0e844f94edcfef103fcd84f50fa3b1e7b03d4bea4691266ff8",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_COMPLETION_V1_REPORT_2026-10-18.md": "833dc0f5217a39b5017694d0a3fbd40fa8a4886bb0eb7a2634b1d0d2756b06ab",
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c",
+    "Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_PATCH_MOMENTUM_V1_CONTRACT_2026-10-19.md": "0f10ec33f71edfc11965286a08a96feb317b00e813716cbfae246856826baf09",
+    "Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_PATCH_MOMENTUM_V2_REPORT_2026-10-19.md": "1249a068491a7e280f657a7c95ffe5d1ae174009640e5b061150c82fc91e2674",
+    "Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_PATCH_MOMENTUM_V2_TYPE_ADDENDUM_2026-10-19.md": "90ab0c2ffa684c459af1a66c14e95e02e7c7805481eae2d7e34c2019c31d1d5e",
+    "Theory/Gates/RES-001/RES001_R4C1_GLOBAL_NODAL_LIFT_V1_CONTRACT_2026-10-19.md": "bc94c33a7b2e1bb6793c43afe32272732cc845b9e058cb2f11c608d4d038297b",
+    "Theory/Gates/RES-001/RES001_R4C1_GLOBAL_NODAL_LIFT_V2_FLUX_ADDENDUM_2026-10-19.md": "9730305c00a173905f3c2f2d4b6742338cd8b2a1dc31ed9a8451ff5936486de5",
+    "Theory/Gates/RES-001/RES001_R4C1_GLOBAL_NODAL_LIFT_V2_REPORT_2026-10-20.md": "88549485969e0d85ed216afb0ab5ba2c7ab8a577c65bd096fe969f1172024793",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_CONTRACT_2026-10-18.md": "88b0ddb963912de6ddca377108361bcb9a584686826a6934bdc598adb6b0a7a2",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md": "44113ba26531526435206a520495e56e5d57cae3c8e6843595a0dc871d9dd305",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_BACKGROUND_ACCELERATION_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "fd87f4ae2c54893af0409d3a2ce4fb136a0f00d17024f3ccf3634d51317df101",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_BACKGROUND_ACCELERATION_V1_CONTRACT_2026-10-27.md": "3b1d7093ab44fe21d688521c58eba10fb0ac1fec25d398e247b7a3fba3bc657e",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_NODE_VELOCITY_V1_CONTRACT_2026-10-19.md": "1733f68993e70a4d73c365acdfaadf6d5df1c71f3541148987ea4c0fa6da7009",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_NODE_VELOCITY_V2_MATRIX_ADDENDUM_2026-10-19.md": "4c24eb869130aa8b13fbecaeb2c9799b525a10823708ffc3e78e58b743ccef97",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_NODE_VELOCITY_V2_REPORT_2026-10-19.md": "55c4f55a51cec51f5c9b0e731165c47546bed1daa1f8b7a06167af3ef99e51ea",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_DESCRIPTOR_V1_CONTRACT_2026-10-19.md": "1cd091d3f41e51e5face8bead912c765124cc54a8eb75f37968c18ae6bdb7e2b",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_DESCRIPTOR_V2_BINDING_ADDENDUM_2026-10-19.md": "8ad10bc9ef42496713d66d82b625922249327c0563cee1f2ab4dbf3cc92b6b83",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_DESCRIPTOR_V2_REPORT_2026-10-19.md": "bb8f83e2e234609a10a755777e3031990037822a99fd4482115404d4cae49d3d",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V1_CONTRACT_2026-10-20.md": "ff588ca6e50798fd25242d2976d71ed58e562a37a8558be03266c18a986ede2b",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V1_REPORT_2026-10-20.md": "d71b05ae29f5042ba13a7dcf00f2047e1dce03a6fc5f5665bdd603798bfc3f4d",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V2_PRECISION_CONTRACT_2026-10-20.md": "cb960191f1a9270613c2f2c03fa82986ccae351d48a979115fc8c72e3d8da964",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V3_WEIGHT_ADDENDUM_2026-10-20.md": "df86efc15fa0ae37957114909309df5772592b4abd629269928e967fddb59032",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V1_CONTRACT_2026-10-18.md": "4e81b770bcf5ad3b999ce34af37326803c1f73aba852b21f1d0bafb75c2a5f96",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V2_PREFLIGHT_ADDENDUM_2026-10-18.md": "255484635f5a6f665ce65484cb665d640951e8b7400f482c4289a8ca99cfb0eb",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V2_REPORT_2026-10-18.md": "7fc348b923e55a8807fe597897fbbd1af20e1d5969260f7f31efa4c2dfc58d87",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_VELOCITY_TRANSPORT_V2_REPORT_2026-10-18.md": "c4ae109ab38d7574d4755f03598aa5d55928ec4f9ee5975ac2a8f2fa581dd05d",
+    "Theory/Gates/RES-001/RES001_R4C1_PLANAR_REDUCED_HAMILTONIAN_V1_CONTRACT_2026-10-19.md": "b61365cab8e359cdb9d542510f5138405bee75394f4e8a3abf9bd182d2bb0b55",
+    "Theory/Gates/RES-001/RES001_R4C1_PLANAR_REDUCED_HAMILTONIAN_V1_REPORT_2026-10-19.md": "175c41f50b18bb32c6b1b38edb255e61bcd656643f226c8e49171545c051c673",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_ANALYTIC_FORCE_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "ce79dae898a40ca790afd3ebba02bbcc7bcf23656a90039142ad33bbbb065334",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_ANALYTIC_FORCE_V1_CONTRACT_2026-10-27.md": "00c31775f74143c7bd953f9ecb9e768141ab5f2a3056f35fb53b3bd998e2a551",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_CHARGE_TANGENCY_V1_CONTRACT_2026-10-28.md": "8a85eb95289c160b1f588a0cbeb0250347dc634a43f6edf4c2f766fdb66109ba",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_COMPLEMENT_FORCE_V2_IMPLEMENTATION_NOTE_2026-10-27.md": "42dce2ca49a034f761d77597ed2ac94f4ebcf572e8c1ea3c42f67af043020882",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_COMPLEMENT_FORCE_V3_IMPLEMENTATION_NOTE_2026-10-27.md": "be46bebb3af7d5f984879bca731afa2929eaf805c5d6043f0313ddba3ef76aea",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_CONSTRAINT_TANGENCY_WORKING_ALGEBRA_2026-10-28.md": "d149fc0a14eac3f6731bea6546f40e074f37e05494abf48e28ef11826a302a99",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_CUSP_REMAINDER_V1_CONTRACT_2026-10-27.md": "c6be394600db982c977cfe065d1795cc0bad5ea0a3c8b7f7d8c87982dcdcb11f",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_GRADED_TRANSPORT_V1_CONTRACT_2026-10-27.md": "13e3a719f220ef8aebf9aefac0de27f041ed125af606a281c99a16812354acbf",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JERK_TRANSPORT_V1_CONTRACT_2026-10-27.md": "680fc5603f3a91a598fd6f5bcc903e0a435f56301e345c2edf1bef32b50579a0",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JERK_TRANSPORT_V2_IMPLEMENTATION_NOTE_2026-10-27.md": "fc696871a8b4eea1267193356da608c8cedc45e83b1c4bceadc5bebdf66fa427",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JOINT_COMPLETION_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "ffd307da06f991688f22db9459904365e4b574d35a30df3d6d8724eed7a0bd73",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JOINT_COMPLETION_V1_CONTRACT_2026-10-27.md": "4e4834aff41237fc03235d48c9afa12ab0bc4ac1e0c2116b33f10cf72d03ab16",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_KINETIC_EXTENSION_V1_CONTRACT_2026-10-27.md": "e8a74124ecd92d9ee57fbe1291fc84710c6438dff7822d294ca57eb0b5708642",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_KINETIC_EXTENSION_V2_IMPLEMENTATION_NOTE_2026-10-27.md": "ce15e728ba44a3ccd03ae9c8f560c6cba944a484ccb6b705aea8404b4271a7f3",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_SCALAR_BOUND_V1_METHOD_2026-10-27.md": "1c8b978cdf889e2c4c2962bff2b965b0a12b2b068abbea01d281cad314f37e01",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_SCALAR_QUOTIENT_V1_CONTRACT_2026-10-27.md": "fc9a11ce1f5c90d98f362b6256fcf1287e81a3cbd502ea4b25fb97234439d233",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_TOTAL_JERK_V1_METHOD_2026-10-28.md": "74f38594bb9a233733569a0e44bf52513efa161765cec13057565fb2722d1ff7",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_ACCELERATION_REGULARITY_V1_CONTRACT_2026-10-19.md": "59462dfb66d34db504ccf152addffcbbfbc8afa8ba58618f982bf8961ece2b06",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_ACCELERATION_REGULARITY_V1_REPORT_2026-10-19.md": "fb0e6a0af5ce70e4fb5bc34541dd99fa4274f44b915c3070097745e81566105f",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md": "b47dcf5e7fc340a015f2e7cdf273157bc6e2e1ba311bbc543a5f66596dbc83d2",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "aaf147530f242bf85abd9969d25648e01a83c34fe389dfbfb2b032c41db60bc8",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_V1_CONTRACT_2026-10-27.md": "03ee2cfc1d62f89633360a4963b2d20310a58d0ef61cb392112a539d0ab99cea",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_WORKING_ALGEBRA_2026-10-27.md": "0b179514ca5c02f7a475653e247e8a82b334633093c2db82cb4f3843d4219b66",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_ENCLOSURE_V1_CONTRACT_2026-10-27.md": "46b35c581954ed6f788bea574446eb6e53abc4289858e015d332e3fa83c11278",
+    "Theory/Gates/RES-001/RES001_R4C1_THREE_FAMILY_FIXED_CHARGE_KINETIC_V3_REPORT_2026-10-16.md": "a5acbb6d2f659f9c2e4719f32f91ef9f8a4c2cc2c9bdd1fff8635d46fc1199c3"
+  },
+  "steps": [
+    "1e-20",
+    "1e-26"
+  ],
+  "sympy": "1.14.0",
+  "time_evolution": false,
+  "total": 236,
+  "working_digits": 110
+}

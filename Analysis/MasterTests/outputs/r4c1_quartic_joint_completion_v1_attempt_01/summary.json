@@ -1,0 +1,739 @@
+{
+  "G1_complete": false,
+  "attempts": [
+    {
+      "boxes": 16,
+      "centre_bounds": [
+        {
+          "exact_binary_endpoints": [
+            [
+              0,
+              482168820376679498435710305404195766010662572698222584023219646175747828990997059,
+              -277,
+              269
+            ],
+            [
+              0,
+              482168820376679498435710305404195766010662572698222584023219646175747828990997059,
+              -277,
+              269
+            ]
+          ],
+          "lower": "0.0019855934165878586737237490198769150583843333717444898000945",
+          "upper": "0.0019855934165878586737237490198769150583843333717444898000945"
+        },
+        {
+          "exact_binary_endpoints": [
+            [
+              0,
+              847432580777737707514217927652699745660563611018889113397089860907319908182238803,
+              -272,
+              269
+            ],
+            [
+              0,
+              847432580777737707514217927652699745660563611018889113397089860907319908182238803,
+              -272,
+              269
+            ]
+          ],
+          "lower": "0.111672525126270008641110517647205803593836206088986058939572",
+          "upper": "0.111672525126270008641110517647205803593836206088986058939572"
+        },
+        {
+          "exact_binary_endpoints": [
+            [
+              0,
+              691707448234598305280987738828489517294259268661113269460957502807197502875979527,
+              -273,
+              269
+            ],
+            [
+              0,
+              691707448234598305280987738828489517294259268661113269460957502807197502875979527,
+              -273,
+              269
+            ]
+          ],
+          "lower": "0.0455757302381000991664842434655563364181452542334288069833032",
+          "upper": "0.0455757302381000991664842434655563364181452542334288069833032"
+        }
+      ],
+      "certified": true,
+      "density_lower": "0.1713568250655260072388239729695851034639398390471043626513498891416902",
+      "row_bounds": [
+        {
+          "exact_binary_endpoints": [
+            [
+              0,
+              607097640123765190828637290250973406468311040225641599239649987322679237273818369,
+              -274,
+              269
+            ],
+            [
+              0,
+              607097640123765190828637290250973406468311040225641599239649987322679237273818371,
+              -274,
+              269
+            ]
+          ],
+          "lower": "0.0200004484157901930177012596922503355481325442580136638856061",
+          "upper": "0.0200004484157901930177012596922503355481325442580136638856061"
+        },
+        {
+          "exact_binary_endpoints": [
+            [
+              0,
+              471181551184816362746040114478301540055993986659184214980812032303603563938231019,
+              -277,
+              268
+            ],
+            [
+              0,
+              117795387796204090686510028619575385013998496664796053745203008075900890984557755,
+              -275,
+              266
+            ]
+          ],
+          "lower": "0.00194034733585497600101825487352226130401974071879712770830034",
+          "upper": "0.00194034733585497600101825487352226130401974071879712770830034"
+        },
+        {
+          "exact_binary_endpoints": [
+            [
+              0,
+              558427993665550898452698513800616704066367955029168965985098212084527440641650077,
+              -271,
+              269
+            ],
+            [
+              0,
+              279213996832775449226349256900308352033183977514584482992549106042263720320825039,
+              -270,
+              268
+            ]
+          ],
+          "lower": "0.14717646115658295833240320084825051977971535134201592956675",
+          "upper": "0.14717646115658295833240320084825051977971535134201592956675"
+        }
+      ],
+      "self_map_bounds": [
+        {
+          "exact_binary_endpoints": [
+            [
+              0,
+              667368742670850128133101078426497877219643861812919422242552443094647715897693001,
+              -274,
+              269
+            ],
+            [
+              0,
+              166842185667712532033275269606624469304910965453229855560638110773661928974423251,
+              -272,
+              267
+            ]
+          ],
+          "lower": "0.0219860418323780516914250087121272506065168776297581536857006",
+          "upper": "0.0219860418323780516914250087121272506065168776297581536857006"
+        },
+        {
+          "exact_binary_endpoints": [
+            [
+              0,
+              431078502126131609425015840615073334393656711550994310057620118458403759777654261,
+              -271,
+              268
+            ],
+            [
+              0,
+              862157004252263218850031681230146668787313423101988620115240236916807519555308523,
+              -272,
+              269
+            ]
+          ],
+          "lower": "0.113612872462124984642128772520728064897855946807783186647873",
+          "upper": "0.113612872462124984642128772520728064897855946807783186647873"
+        },
+        {
+          "exact_binary_endpoints": [
+            [
+              0,
+              365677427862100237386472724253869541694966386097223641675168793893163408180322479,
+              -270,
+              268
+            ],
+            [
+              0,
+              22854839241381264836654545265866846355935399131076477604698049618322713011270155,
+              -266,
+              264
+            ]
+          ],
+          "lower": "0.192752191394683057498887444313806856197860605575444736550053",
+          "upper": "0.192752191394683057498887444313806856197860605575444736550053"
+        }
+      ]
+    }
+  ],
+  "certificate_status": "RESTRICTED_FOUR_CONDITION_ROOT_CERTIFIED",
+  "checks": [
+    {
+      "name": "phase_charge_exact_unchanged",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "scalar_velocity_elimination_coefficient_positive",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "new_shift_first_three_orders_cancel",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "new_shift_source_retains_quartic_term",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "original_cusp_coefficient",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "local_flux_shift_and_profile_independent",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "velocity_elimination_has_expected_inputs",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "exact_no_Float",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "inherited_operator_coercive",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "fixed_box_contraction_and_positive_density",
+      "passed": true,
+      "value": {
+        "boxes": 16,
+        "centre_bounds": [
+          {
+            "exact_binary_endpoints": [
+              [
+                0,
+                482168820376679498435710305404195766010662572698222584023219646175747828990997059,
+                -277,
+                269
+              ],
+              [
+                0,
+                482168820376679498435710305404195766010662572698222584023219646175747828990997059,
+                -277,
+                269
+              ]
+            ],
+            "lower": "0.0019855934165878586737237490198769150583843333717444898000945",
+            "upper": "0.0019855934165878586737237490198769150583843333717444898000945"
+          },
+          {
+            "exact_binary_endpoints": [
+              [
+                0,
+                847432580777737707514217927652699745660563611018889113397089860907319908182238803,
+                -272,
+                269
+              ],
+              [
+                0,
+                847432580777737707514217927652699745660563611018889113397089860907319908182238803,
+                -272,
+                269
+              ]
+            ],
+            "lower": "0.111672525126270008641110517647205803593836206088986058939572",
+            "upper": "0.111672525126270008641110517647205803593836206088986058939572"
+          },
+          {
+            "exact_binary_endpoints": [
+              [
+                0,
+                691707448234598305280987738828489517294259268661113269460957502807197502875979527,
+                -273,
+                269
+              ],
+              [
+                0,
+                691707448234598305280987738828489517294259268661113269460957502807197502875979527,
+                -273,
+                269
+              ]
+            ],
+            "lower": "0.0455757302381000991664842434655563364181452542334288069833032",
+            "upper": "0.0455757302381000991664842434655563364181452542334288069833032"
+          }
+        ],
+        "certified": true,
+        "density_lower": "0.1713568250655260072388239729695851034639398390471043626513498891416902",
+        "row_bounds": [
+          {
+            "exact_binary_endpoints": [
+              [
+                0,
+                607097640123765190828637290250973406468311040225641599239649987322679237273818369,
+                -274,
+                269
+              ],
+              [
+                0,
+                607097640123765190828637290250973406468311040225641599239649987322679237273818371,
+                -274,
+                269
+              ]
+            ],
+            "lower": "0.0200004484157901930177012596922503355481325442580136638856061",
+            "upper": "0.0200004484157901930177012596922503355481325442580136638856061"
+          },
+          {
+            "exact_binary_endpoints": [
+              [
+                0,
+                471181551184816362746040114478301540055993986659184214980812032303603563938231019,
+                -277,
+                268
+              ],
+              [
+                0,
+                117795387796204090686510028619575385013998496664796053745203008075900890984557755,
+                -275,
+                266
+              ]
+            ],
+            "lower": "0.00194034733585497600101825487352226130401974071879712770830034",
+            "upper": "0.00194034733585497600101825487352226130401974071879712770830034"
+          },
+          {
+            "exact_binary_endpoints": [
+              [
+                0,
+                558427993665550898452698513800616704066367955029168965985098212084527440641650077,
+                -271,
+                269
+              ],
+              [
+                0,
+                279213996832775449226349256900308352033183977514584482992549106042263720320825039,
+                -270,
+                268
+              ]
+            ],
+            "lower": "0.14717646115658295833240320084825051977971535134201592956675",
+            "upper": "0.14717646115658295833240320084825051977971535134201592956675"
+          }
+        ],
+        "self_map_bounds": [
+          {
+            "exact_binary_endpoints": [
+              [
+                0,
+                667368742670850128133101078426497877219643861812919422242552443094647715897693001,
+                -274,
+                269
+              ],
+              [
+                0,
+                166842185667712532033275269606624469304910965453229855560638110773661928974423251,
+                -272,
+                267
+              ]
+            ],
+            "lower": "0.0219860418323780516914250087121272506065168776297581536857006",
+            "upper": "0.0219860418323780516914250087121272506065168776297581536857006"
+          },
+          {
+            "exact_binary_endpoints": [
+              [
+                0,
+                431078502126131609425015840615073334393656711550994310057620118458403759777654261,
+                -271,
+                268
+              ],
+              [
+                0,
+                862157004252263218850031681230146668787313423101988620115240236916807519555308523,
+                -272,
+                269
+              ]
+            ],
+            "lower": "0.113612872462124984642128772520728064897855946807783186647873",
+            "upper": "0.113612872462124984642128772520728064897855946807783186647873"
+          },
+          {
+            "exact_binary_endpoints": [
+              [
+                0,
+                365677427862100237386472724253869541694966386097223641675168793893163408180322479,
+                -270,
+                268
+              ],
+              [
+                0,
+                22854839241381264836654545265866846355935399131076477604698049618322713011270155,
+                -266,
+                264
+              ]
+            ],
+            "lower": "0.192752191394683057498887444313806856197860605575444736550053",
+            "upper": "0.192752191394683057498887444313806856197860605575444736550053"
+          }
+        ]
+      }
+    },
+    {
+      "name": "independent_uneliminated_four_equation_point",
+      "passed": true,
+      "value": "6.035362115133060709099401182664045845740856525200682226076934954040656e-76"
+    },
+    {
+      "name": "independent_point_inside_fixed_box",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "shift_within_recomputed_error_0.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "shift_within_recomputed_error_0.4487989505128276054946633404685004120281670570535865458535635131868309",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "shift_within_recomputed_error_1.570796326794896619231321691639751442098584699687552910487472296153908",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "independent_8_12_shift",
+      "passed": true,
+      "value": "1.858221368816624415447752104701206651234526989196772705068838371761658e-53"
+    }
+  ],
+  "formulas": {
+    "energy_delta": "(-32447999376000003*C**14*W**2 - 1622399968800000150000*C**12*H*W + 811199984400000075000*C**12*HB*W - 16223999688000001500000*C**12*U*W - 48671999064000004500000*C**12*W**2 - 162239996880000015000000*C**11*RR*S*W - 405599992200000037500000000*C**10*H*U - 2433599953200000225000000000*C**10*H*W + 202799996100000018750000000*C**10*HB*U + 1216799976600000112500000000*C**10*HB*W - 2027999961000000187500000000*C**10*U**2 - 24335999532000002250000000000*C**10*U*W - 202799996100000018750000000*C**10*Ud - 131819997465000012187500000000*C**10*W**2 - 24335999532000002250000000000*C**9*RR*S*U - 243359995320000022500000000000*C**9*RR*S*W - 446159991420000041250000000000000*C**8*H**2 - 148719997140000013750000000000000*C**8*H*HB + 594879988560000055000000000000000*C**8*H*QQ - 608399988300000056250000000000000*C**8*H*U - 6590999873250000609375000000000000*C**8*H*W + 111539997855000010312500000000000*C**8*HB**2 - 148719997140000013750000000000000*C**8*HB*QQ + 304199994150000028125000000000000*C**8*HB*U + 3295499936625000304687500000000000*C**8*HB*W - 74359998570000006875000000000000*C**8*QQ**2 - 3041999941500000281250000000000000*C**8*U**2 - 65909998732500006093750000000000000*C**8*U*W - 304199994150000028125000000000000*C**8*Ud - 30419999415000002812500000000000000*C**8*W**2 + 3002999839125000773437500000000*C**8 + 5948799885600000550000000000000000*C**7*H*RR*S - 8923199828400000825000000000000000*C**7*HB*RR*S + 5948799885600000550000000000000000*C**7*QQ*RR*S - 36503999298000003375000000000000000*C**7*RR*S*U - 659099987325000060937500000000000000*C**7*RR*S*W - 650649987487500060156250000000000000000*C**6*H**2 - 260259994995000024062500000000000000000*C**6*H*HB + 5465459894895000505312500000000000000000*C**6*H*QQ - 1647749968312500152343750000000000000000*C**6*H*U - 1520999970750000140625000000000000000000*C**6*H*W + 185899996425000017187500000000000000000*C**6*HB**2 - 223079995710000020625000000000000000000*C**6*HB*QQ + 823874984156250076171875000000000000000*C**6*HB*U + 760499985375000070312500000000000000000*C**6*HB*W - 130129997497500012031250000000000000000*C**6*QQ**2 + 178463996568000016500000000000000000*C**6*RR**2*S**2 - 8238749841562500761718750000000000000000*C**6*U**2 - 15209999707500001406250000000000000000000*C**6*U*W - 823874984156250076171875000000000000000*C**6*Ud + 4504499758687501160156250000000000000*C**6 + 10410399799800000962500000000000000000000*C**5*H*RR*S - 14871999714000001375000000000000000000000*C**5*HB*RR*S + 8923199828400000825000000000000000000000*C**5*QQ*RR*S - 98864998098750009140625000000000000000000*C**5*RR*S*U - 152099997075000014062500000000000000000000*C**5*RR*S*W - 1789287465590625165429687500000000000000000000*C**4*H**2 - 650649987487500060156250000000000000000000000*C**4*H*HB + 9276409821607500857656250000000000000000000000*C**4*H*QQ - 380249992687500035156250000000000000000000000*C**4*H*U + 476368740839062544042968750000000000000000000*C**4*HB**2 - 604174988381250055859375000000000000000000000*C**4*HB*QQ + 190124996343750017578125000000000000000000000*C**4*HB*U - 329972493654375030507812500000000000000000000*C**4*QQ**2 + 297439994280000027500000000000000000000000*C**4*RR**2*S**2 + 297439994280000027500000000000000000000000*C**4*S**2 - 1901249963437500175781250000000000000000000000*C**4*U**2 - 190124996343750017578125000000000000000000000*C**4*Ud + 12199686846445315642089843750000000000000000*C**4 + 26025999499500002406250000000000000000000000000*C**3*H*RR*S - 38109499267125003523437500000000000000000000000*C**3*HB*RR*S + 24166999535250002234375000000000000000000000000*C**3*QQ*RR*S - 22814999561250002109375000000000000000000000000*C**3*RR*S*U - 348562493296875032226562500000000000000000000000000*C**2*H**2 - 278849994637500025781250000000000000000000000000000*C**2*H*HB + 19136080881998439269238281250000000000000000000000000*C**2*H*QQ + 174281246648437516113281250000000000000000000000000*C**2*HB**2 - 139424997318750012890625000000000000000000000000000*C**2*HB*QQ - 145234372207031263427734375000000000000000000000000*C**2*QQ**2 + 762189985342500070468750000000000000000000000000*C**2*RR**2*S**2 + 74359998570000006875000000000000000000000000000*C**2*S**2 + 2815312349179688225097656250000000000000000000000*C**2 + 11153999785500001031250000000000000000000000000000000*C*H*RR*S - 13942499731875001289062500000000000000000000000000000*C*HB*RR*S + 5576999892750000515625000000000000000000000000000000*C*QQ*RR*S + 4287318667551562896386718750000000000000000000000000000000*H*QQ - 17428124664843751611328125000000000000000000000000000000*QQ**2 + 278849994637500025781250000000000000000000000000000000*RR**2*S**2 + 223079995710000020625000000000000000000000000000000000*S**2)/(2230799957100000206250000000000000000000*C**6 + 3346199935650000309375000000000000000000000000*C**4 + 9062624825718750837890625000000000000000000000000000*C**2 + 2091374959781250193359375000000000000000000000000000000000)",
+    "shift_extra": "-15*W*(xi**2/36 + 5*xi/144 + 5/96)/352",
+    "shift_residual": "803503*H*alpha**5*xi**4/13824 - 1565885*H*alpha**5*xi**3/36864 + 837221*H*alpha**5*xi**2/221184 - 2335*H*alpha**5*xi/8192 + 289979*H*alpha**4*xi**3/4608 - 5209241*H*alpha**4*xi**2/110592 + 958915*H*alpha**4*xi/221184 - 25685*H*alpha**4/73728 - 1526975*HB*alpha**5*xi**4/55296 + 2791885*HB*alpha**5*xi**3/147456 - 1123573*HB*alpha**5*xi**2/884736 + 6095*HB*alpha**5*xi/32768 - 556555*HB*alpha**4*xi**3/18432 + 9286249*HB*alpha**4*xi**2/442368 - 1288115*HB*alpha**4*xi/884736 + 67045*HB*alpha**4/294912 + 9785*U*alpha**5*xi**4/5632 + 13575*U*alpha**5*xi**3/45056 - 7135*U*alpha**5*xi**2/8192 + 4725*U*alpha**5*xi/90112 + 10215*U*alpha**4*xi**3/5632 + 15305*U*alpha**4*xi**2/45056 - 89875*U*alpha**4*xi/90112 + 525*U*alpha**4/8192 - 2575*W*alpha**5*xi**4/1584 - 125*W*alpha**5*xi**3/2112 - 125*W*alpha**5*xi**2/1152 + 375*W*alpha**5*xi/1408 - 875*W*alpha**4*xi**3/528 - 425*W*alpha**4*xi**2/6336 - 1625*W*alpha**4*xi/12672 + 125*W*alpha**4/384",
+    "trace": "Q0(H,Hbg,U,r1)-4181*W/625",
+    "velocity": "990*H**2/4133 - 4125*H*HB/16532 - H*U - 6765*H*qn/16532 + 825*HB**2/8266 - 12375*HB*U/4133 + 4125*HB*qn/16532 - 33*HB/529024 + 8*U*qn/4133 + U/800 + 115115*qn**2/677812 - 33*qn/529024 + 1322317877373722860203038873/20699899626395589678528000"
+  },
+  "gate_effect": "NONE",
+  "interpretation": "Necessary initial construction only; requires separate quartic scalar-current control; no full admission or evolution",
+  "mpmath": "1.3.0",
+  "passed": 16,
+  "physics_pass": false,
+  "point": {
+    "H": "0.4823203671354997405537521623516035778243101492999877550366323503204285",
+    "U": "0.03071328630605657168693800028957128734215314277948124022683405812573741",
+    "Ud": "63.84213892953009017431014542270071752957497723070166645135045616445848",
+    "W": "33.75222953001058463652459425171743506402505592267980708703183361559135"
+  },
+  "point_shift_errors": [
+    [
+      "0.0",
+      "0.000000000000000000001180278243065559638052418164618622284860399703066141422638684592868383"
+    ],
+    [
+      "7.837345141560172456418209490396201032939880845577047801774949279233596e-24",
+      "5.264442826777208314568984968670690189915112856488196742610510735984988e-23"
+    ],
+    [
+      "1.668667864298002450241602974916699944317610313184062231793680597515645e-120",
+      "0.0000000000000000000001192905641748426488489394648845603770783540179962413830544623827249057"
+    ]
+  ],
+  "result_id": "R4C1-QUARTIC-JOINT-COMPLETION-V1",
+  "review_status": "DEFERRED",
+  "shift_errors": [
+    [
+      {
+        "exact_binary_endpoints": [
+          [
+            0,
+            851451298573866924036697295607733642037502645260887650257531704198366342833777535,
+            -340,
+            269
+          ],
+          [
+            0,
+            851451298573866924036697295607733642037502645260887650257531704198366342833777535,
+            -340,
+            269
+          ]
+        ],
+        "lower": "3.80155507250331865800173407903028372177382422277984092161724e-22",
+        "upper": "3.80155507250331865800173407903028372177382422277984092161724e-22"
+      },
+      {
+        "exact_binary_endpoints": [
+          [
+            0,
+            266082122867692214632205685659270223121550923515952719994981510212332312884308183,
+            -332,
+            268
+          ],
+          [
+            0,
+            266082122867692214632205685659270223121550923515952719994981510212332312884308183,
+            -332,
+            268
+          ]
+        ],
+        "lower": "3.04128511483393289093892554106909715164194525925450747211443e-20",
+        "upper": "3.04128511483393289093892554106909715164194525925450747211443e-20"
+      }
+    ],
+    [
+      {
+        "exact_binary_endpoints": [
+          [
+            0,
+            308324199575787589847070531550571020897090960612480853160592394514261283812934833,
+            -338,
+            268
+          ],
+          [
+            0,
+            308324199575787589847070531550571020897090960612480853160592394514261283812934833,
+            -338,
+            268
+          ]
+        ],
+        "lower": "5.5064167584738276881473808628553612614659869308759417783504e-22",
+        "upper": "5.5064167584738276881473808628553612614659869308759417783504e-22"
+      },
+      {
+        "exact_binary_endpoints": [
+          [
+            0,
+            385410452445227191718053647601139749980599904489017766474324790936892918843046803,
+            -332,
+            268
+          ],
+          [
+            0,
+            385410452445227191718053647601139749980599904489017766474324790936892918843046803,
+            -332,
+            268
+          ]
+        ],
+        "lower": "4.40519287613291526873828542780382270335782484546968035738793e-20",
+        "upper": "4.40519287613291526873828542780382270335782484546968035738793e-20"
+      }
+    ],
+    [
+      {
+        "exact_binary_endpoints": [
+          [
+            0,
+            553003868223848768766034108796004084265870461717522908361582609958170482427365689,
+            -344,
+            269
+          ],
+          [
+            0,
+            553003868223848768766034108796004084265870461717522908361582609958170482427365689,
+            -344,
+            269
+          ]
+        ],
+        "lower": "1.54315539235884732729149911014607074466802619818747303933052e-23",
+        "upper": "1.54315539235884732729149911014607074466802619818747303933052e-23"
+      },
+      {
+        "exact_binary_endpoints": [
+          [
+            0,
+            691264167228382296428873294352081549533200124974933175576819707779679886310470629,
+            -338,
+            269
+          ],
+          [
+            0,
+            691264167228382296428873294352081549533200124974933175576819707779679886310470629,
+            -338,
+            269
+          ]
+        ],
+        "lower": "1.23454097998012962915097897064924456475586565238173190767584e-21",
+        "upper": "1.23454097998012962915097897064924456475586565238173190767584e-21"
+      }
+    ],
+    [
+      {
+        "exact_binary_endpoints": [
+          [
+            0,
+            749301895986989037197419030470445921295128124962201183315642821438165955057559783,
+            -345,
+            269
+          ],
+          [
+            0,
+            749301895986989037197419030470445921295128124962201183315642821438165955057559783,
+            -345,
+            269
+          ]
+        ],
+        "lower": "1.04546218185672747672834491473175694529245357109496701436322e-23",
+        "upper": "1.04546218185672747672834491473175694529245357109496701436322e-23"
+      },
+      {
+        "exact_binary_endpoints": [
+          [
+            0,
+            936640014464470605376581330092157875850888700309287138163954996020053855194013813,
+            -339,
+            269
+          ],
+          [
+            0,
+            936640014464470605376581330092157875850888700309287138163954996020053855194013813,
+            -339,
+            269
+          ]
+        ],
+        "lower": "8.36381036486982470985249181687076770390396882049348991416841e-22",
+        "upper": "8.36381036486982470985249181687076770390396882049348991416841e-22"
+      }
+    ]
+  ],
+  "source_sha256": {
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_acceleration_attempt_04/cases.json": "bcaa4b484426ca37eb6d63900e977071bf0ecd3f8fc1f29e48e7ae42c2a8d125",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_acceleration_attempt_04/equations.json": "4aa8b6ff0abea3840a4aaededd6a4a713a89a9c29477d23f1585ee8042723857",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_acceleration_attempt_04/summary.json": "9f8d5fce14a4fadf3052eafdf4ec5d0e4adbe3937be991d344ff126fa49f6019",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_completion_attempt_01/certificates.json": "e02cef26c9776f1c4df2b827995ddf2e887038fad886be5f3034bc5133a17cce",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_completion_attempt_01/summary.json": "e66ac815aada3fa577db841cc99d55f095115dc203956426a9606fc9ba41ac8e",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_dimensional_audit_attempt_02/audit.json": "273f50caceb1f8181c42f012b5e4b16a68f45b5f037f6a14915c78471365b64d",
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/trajectories.json": "3e36b9594ec4f186fff610a291011b6344b23ba98645922dfd7ad78d242ee4b3",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_01/formulas.json": "08058e16cf87399b7f59e130f364dee99484ee41f6e122b6828e5407fd7ac19e",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_01/independent.json": "bb0c6c71355c8a8da7c4c614af5f6eff940d2341f7ff4ebf307c204a05e07220",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_01/summary.json": "4035b08090b924deff25d6e485c3e0755a58e1c7dd443d2e526a02f95d24be25",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_02/summary.json": "28ec677f75404d9e48431d1c1c7dc8ffcce99f70e18dfc9b66f0be7cd6f3778d",
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/certificates.json": "7c3465014fd85d7a98b905eed721c907f2f7764ccefadf856680ecf068d7127a",
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/proof.json": "b96ee17ec3d3f14500d0bf59d786411f5e241cbbb238ef49f3dc34657a18646b",
+    "Analysis/MasterTests/outputs/r4c1_initial_charge_completion_attempt_04/formulas.json": "b1f62daaebdb1602ccc20350669b22aeb601d7e8d8cccad4626e420e317bb6f3",
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/formulas.json": "beaf647957a18ddd14881333de29cebc9a567ffcc62a9b4d775153984a0add73",
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/summary.json": "586fe456022419f65965750ecc3137cf74b6eafb84f3a4dec670f2f611f51b3f",
+    "Analysis/MasterTests/outputs/r4c1_joint_background_acceleration_v1_attempt_01/summary.json": "ae70906b2fbe22e88afb087a7efd00245f8b49409953349d03061c8d7188c746",
+    "Analysis/MasterTests/outputs/r4c1_joint_node_velocity_attempt_02/certificates.json": "76b4870fda66c9a85c85dcc282d4934a8ac09337a81c469d3a152f89511963cf",
+    "Analysis/MasterTests/outputs/r4c1_joint_node_velocity_attempt_02/independent.json": "b399814e46e660b7ad52ef03f5c2e4ce262c5e3f815162ad3f9f35be47d0459e",
+    "Analysis/MasterTests/outputs/r4c1_joint_node_velocity_attempt_02/summary.json": "f1d662d6d9a44eb03df285a541950b0886119c7fc02223408f73855725e7e6f9",
+    "Analysis/MasterTests/outputs/r4c1_nodal_descriptor_attempt_01/formulas.json": "280ee1834ef44e3428990563baa98951a2c43a147b5464dc2b04c8b66fafcfd2",
+    "Analysis/MasterTests/outputs/r4c1_nodal_descriptor_attempt_01/independent.json": "3d4da9e9865424209dd616053deba58a8ea0dd0e10ad3542612f940e06196074",
+    "Analysis/MasterTests/outputs/r4c1_nodal_descriptor_attempt_01/summary.json": "4a534ce4d1245820a5796a887e1a65d2744a2d8d7d4bdfda861233aa1c3cf61f",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_01/independent.json": "15330fbfe01c1ef4aefe953282390373a04b18cad5017b20e408675c37d42a09",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_01/summary.json": "69270f59143ef1a381074c1851aaef0d99836ac3a459ff61af2ac3145d63f4b3",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_02/formulas.json": "a99cedccfa53fb81492dbe7bc43b048ca8d29294050dd2dea95d90b5b750bd5f",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_02/independent.json": "68eb656f7321da43e05e2b4467c94021061b71638275fa369d16ff67df78d3b7",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_02/summary.json": "6cad75fa82d4bf9cc64074f834837910aedc9ccc69e6c8f2ce604c967293aabc",
+    "Analysis/MasterTests/outputs/r4c1_node_acceleration_attempt_02/normalization.json": "447192694f9d65cd7791cfe93444dfe9a7d2566dfc99f453f590ae00825c668f",
+    "Analysis/MasterTests/outputs/r4c1_node_acceleration_attempt_02/summary.json": "825e3e39624d4533bcfb0e9db115cbc4695794f300d1f69b31463710f2c38804",
+    "Analysis/MasterTests/outputs/r4c1_node_velocity_transport_attempt_02/equations.json": "01b75e280f4d23340d7e5fe87854b00981e0a5443ed45113270bfc594b47a18b",
+    "Analysis/MasterTests/outputs/r4c1_node_velocity_transport_attempt_02/summary.json": "0bf9482f7addd5fa1a1d66d4aff19b3562fd5cecc19e96f1b099040e5a658c2e",
+    "Analysis/MasterTests/outputs/r4c1_planar_coupled_vertices_attempt_01/formulas.json": "852b657c9023244a76cc49494b6adb08510d4eeb74bd95ec390ff11bc6b0789a",
+    "Analysis/MasterTests/outputs/r4c1_second_node_consistency_v1_attempt_01/summary.json": "2fe36ca4652b276172fe3473897655d41c9e4a4f18be3f4e915e5f363cef23e2",
+    "Analysis/MasterTests/outputs/r4c1_second_node_enclosure_v2_attempt_01/summary.json": "ad053bf3d816bad7983281ff9d16cf52671398face84249ced7e4f47b51afd24",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v1.py": "790ab9b0884a14f5ed389e997c8a2bc65fc0f530ae0b1db502dd49c0e8d3008f",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v2.py": "3132188c8b2e061c9617cd35308f699e13223c120c03b1513bc854a74b4d1043",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v3.py": "881e58aaecbb8b3f2133bc2cbf3bb55716cf4e6e703181b3fbe8ff5e5df55205",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v4.py": "c6a7e31c2f63d8e6481d2e5a4b4f2725ce376f3de05ab639594a7b9e991f1ae7",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_completion_v1.py": "6fe275eed4aef446978809f12225af8aac16a546bddada8709d5a0ace9911a88",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_dimensional_audit_v2.py": "75b74f737e4b4910058c8ab50c3ef6d96c3d5a318a5fcca784bbfb9edfcd78de",
+    "Analysis/MasterTests/test_01_r4c1_finite_tilt_canonical_v2.py": "4c2a64f45741161ccacdb75bd0816e5113a9d0b95ba2aa402584f2cb8533dada",
+    "Analysis/MasterTests/test_01_r4c1_fixed_charge_patch_momentum_v1.py": "e8e8837e6c70b6f8cb8db2a1daefca0054b2da9e95a0aaf189edf348e6b6c661",
+    "Analysis/MasterTests/test_01_r4c1_fixed_charge_patch_momentum_v2.py": "2706b05764eea2b9a34dc7be73f78022933a8c444e54f5c8b47b8ceb33fce74f",
+    "Analysis/MasterTests/test_01_r4c1_global_nodal_lift_v1.py": "052000518f5c745a028aba3def170c1ae0b6b276c8a124aab3c5cbec70a9c6ee",
+    "Analysis/MasterTests/test_01_r4c1_global_nodal_lift_v2.py": "8ff1ccdd3c47c151276c21f968e355d032ec75698a300918546d19ffe0892cce",
+    "Analysis/MasterTests/test_01_r4c1_initial_admission_v1.py": "d994707a9261e276b6d9fcb3377acfd75387ce8cdac10f7756e2f791c5787e0a",
+    "Analysis/MasterTests/test_01_r4c1_initial_charge_completion_v4.py": "af22270b76b72d29a04bdfba366464bcc2482ec5f2e41f5ffe66061fee7f4020",
+    "Analysis/MasterTests/test_01_r4c1_initial_constraint_v1.py": "6ba9c73d71d2ef9dd3fc59f34d5fe781d528d5636a29a85bed748290bda989ff",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_joint_background_acceleration_v1.py": "2cbb055c8a4172ef9e75daa7b80a92c5f979aadc817e29d7cace6115adb47ec5",
+    "Analysis/MasterTests/test_01_r4c1_joint_node_velocity_v1.py": "dd3a132ac557d5d631b9e7b7bfdfdf17edc9dd1e9b073b06418309ae43a8e631",
+    "Analysis/MasterTests/test_01_r4c1_joint_node_velocity_v2.py": "e10bf2f7b20e871cd93fd10b00f1ed6f43f648f60b9282e15205e277d29e3d3d",
+    "Analysis/MasterTests/test_01_r4c1_nodal_descriptor_v1.py": "86b1c665d2130fd48fb75fbb6b5aa4fe5ee7518dbd2a1a5b3e7c34646573343f",
+    "Analysis/MasterTests/test_01_r4c1_nodal_descriptor_v2.py": "b19f4ce9a665d711b3be021cfa149fe3b4753851e1c11d99bc705156537f8bf5",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v1.py": "77b8b7d45ca9ea6b16fbea175c162ca98355382bf72b1ee26026b97437181a08",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v2.py": "4dd1be8d7cfe8877841b380227c2c24f2d41ed1146ccf12781cdd28881f2e253",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v3.py": "b887c7a52102b7abb43a2875cb6e01607ecb46d39a95f4abb4cefab9795a73c0",
+    "Analysis/MasterTests/test_01_r4c1_node_acceleration_v2.py": "1e77ba8e8fc9d09d3e7e4a3a556405fa45dd5ce0dbf89580ff7ae2df106a9a7c",
+    "Analysis/MasterTests/test_01_r4c1_planar_reduced_hamiltonian_v1.py": "f03a2b9ac794569994be8112b0ba1746b8e596669c2d693c9c7310bd48cab27b",
+    "Analysis/MasterTests/test_01_r4c1_quartic_joint_completion_v1.py": "d68534ae03c4420f46318cf3906323ba972d68b4b713d0d6f31ef7ba264374a4",
+    "Analysis/MasterTests/test_01_r4c1_regulator_acceleration_regularity_v1.py": "d5c17a544394aa3d46b51ef467fe9d1ddfbc650bb07feb63d4467d0adc2b502a",
+    "Analysis/MasterTests/test_01_r4c1_regulator_node_v1.py": "7126d03a3b3a3a525bf1ce4c8b31c8541901f9d7c45ad82c288db71cc97cfa25",
+    "Analysis/MasterTests/test_01_r4c1_second_node_consistency_v1.py": "ac57695e82d0604a53d5bc822a9d4bd81a8a82cf7b59e98113b604ddfd9dec0d",
+    "Analysis/MasterTests/test_01_r4c1_second_node_enclosure_v2.py": "5a7d293d2db11ff4d542a65fdfa3abf653b5efcd84afaa5214a25cfcf0078314",
+    "GEMINI.md": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12",
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa",
+    "Theory/Core/ITSM_DUST_GR_WEAKFIELD_EXECUTION_PLAN_2026-10-11.md": "14bf01842d7fa573c22d78f021ec815421fb01a4b97fee806c1fbed22b676519",
+    "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V1_CONTRACT_2026-10-18.md": "4d56686ae98c33ee532f324b7fcdd4702c38da19401fa0b5d4ca894fa58c69ba",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V2_PARALLEL_ADDENDUM_2026-10-18.md": "67525e65ee101f893b4829ce1e73b50db0ad1dd414ea2885d150646629d6ea00",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V3_EXECUTION_ADDENDUM_2026-10-18.md": "b02d70c9d164366cadfd4eff29e1906f1b61e76a5f71eb324a1f3a6a294f11d9",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V4_ALGEBRA_ADDENDUM_2026-10-19.md": "64f2fe71410a9a2e3c70bffbb3955bc9ba4774fa73ba33d567820e4a88f8efd6",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V4_REPORT_2026-10-19.md": "d5e15cc6545b76038213fa4e1560725b437455ccea6b381be52be762f5393da7",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_COMPLETION_V1_CONTRACT_2026-10-18.md": "b63c9f3106d5b86c080a63c30b6fdb8ff188bdc08069c286b97d95b52966381a",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_COMPLETION_V1_ENDPOINT_ADDENDUM_2026-10-18.md": "a901a269e762ba0e844f94edcfef103fcd84f50fa3b1e7b03d4bea4691266ff8",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_COMPLETION_V1_REPORT_2026-10-18.md": "833dc0f5217a39b5017694d0a3fbd40fa8a4886bb0eb7a2634b1d0d2756b06ab",
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c",
+    "Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_PATCH_MOMENTUM_V1_CONTRACT_2026-10-19.md": "0f10ec33f71edfc11965286a08a96feb317b00e813716cbfae246856826baf09",
+    "Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_PATCH_MOMENTUM_V2_REPORT_2026-10-19.md": "1249a068491a7e280f657a7c95ffe5d1ae174009640e5b061150c82fc91e2674",
+    "Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_PATCH_MOMENTUM_V2_TYPE_ADDENDUM_2026-10-19.md": "90ab0c2ffa684c459af1a66c14e95e02e7c7805481eae2d7e34c2019c31d1d5e",
+    "Theory/Gates/RES-001/RES001_R4C1_GLOBAL_NODAL_LIFT_V1_CONTRACT_2026-10-19.md": "bc94c33a7b2e1bb6793c43afe32272732cc845b9e058cb2f11c608d4d038297b",
+    "Theory/Gates/RES-001/RES001_R4C1_GLOBAL_NODAL_LIFT_V2_FLUX_ADDENDUM_2026-10-19.md": "9730305c00a173905f3c2f2d4b6742338cd8b2a1dc31ed9a8451ff5936486de5",
+    "Theory/Gates/RES-001/RES001_R4C1_GLOBAL_NODAL_LIFT_V2_REPORT_2026-10-20.md": "88549485969e0d85ed216afb0ab5ba2c7ab8a577c65bd096fe969f1172024793",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_CONTRACT_2026-10-18.md": "88b0ddb963912de6ddca377108361bcb9a584686826a6934bdc598adb6b0a7a2",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md": "44113ba26531526435206a520495e56e5d57cae3c8e6843595a0dc871d9dd305",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_BACKGROUND_ACCELERATION_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "fd87f4ae2c54893af0409d3a2ce4fb136a0f00d17024f3ccf3634d51317df101",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_BACKGROUND_ACCELERATION_V1_CONTRACT_2026-10-27.md": "3b1d7093ab44fe21d688521c58eba10fb0ac1fec25d398e247b7a3fba3bc657e",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_NODE_VELOCITY_V1_CONTRACT_2026-10-19.md": "1733f68993e70a4d73c365acdfaadf6d5df1c71f3541148987ea4c0fa6da7009",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_NODE_VELOCITY_V2_MATRIX_ADDENDUM_2026-10-19.md": "4c24eb869130aa8b13fbecaeb2c9799b525a10823708ffc3e78e58b743ccef97",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_NODE_VELOCITY_V2_REPORT_2026-10-19.md": "55c4f55a51cec51f5c9b0e731165c47546bed1daa1f8b7a06167af3ef99e51ea",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_DESCRIPTOR_V1_CONTRACT_2026-10-19.md": "1cd091d3f41e51e5face8bead912c765124cc54a8eb75f37968c18ae6bdb7e2b",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_DESCRIPTOR_V2_BINDING_ADDENDUM_2026-10-19.md": "8ad10bc9ef42496713d66d82b625922249327c0563cee1f2ab4dbf3cc92b6b83",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_DESCRIPTOR_V2_REPORT_2026-10-19.md": "bb8f83e2e234609a10a755777e3031990037822a99fd4482115404d4cae49d3d",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V1_CONTRACT_2026-10-20.md": "ff588ca6e50798fd25242d2976d71ed58e562a37a8558be03266c18a986ede2b",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V1_REPORT_2026-10-20.md": "d71b05ae29f5042ba13a7dcf00f2047e1dce03a6fc5f5665bdd603798bfc3f4d",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V2_PRECISION_CONTRACT_2026-10-20.md": "cb960191f1a9270613c2f2c03fa82986ccae351d48a979115fc8c72e3d8da964",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V3_WEIGHT_ADDENDUM_2026-10-20.md": "df86efc15fa0ae37957114909309df5772592b4abd629269928e967fddb59032",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V1_CONTRACT_2026-10-18.md": "4e81b770bcf5ad3b999ce34af37326803c1f73aba852b21f1d0bafb75c2a5f96",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V2_PREFLIGHT_ADDENDUM_2026-10-18.md": "255484635f5a6f665ce65484cb665d640951e8b7400f482c4289a8ca99cfb0eb",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V2_REPORT_2026-10-18.md": "7fc348b923e55a8807fe597897fbbd1af20e1d5969260f7f31efa4c2dfc58d87",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_VELOCITY_TRANSPORT_V2_REPORT_2026-10-18.md": "c4ae109ab38d7574d4755f03598aa5d55928ec4f9ee5975ac2a8f2fa581dd05d",
+    "Theory/Gates/RES-001/RES001_R4C1_PLANAR_REDUCED_HAMILTONIAN_V1_CONTRACT_2026-10-19.md": "b61365cab8e359cdb9d542510f5138405bee75394f4e8a3abf9bd182d2bb0b55",
+    "Theory/Gates/RES-001/RES001_R4C1_PLANAR_REDUCED_HAMILTONIAN_V1_REPORT_2026-10-19.md": "175c41f50b18bb32c6b1b38edb255e61bcd656643f226c8e49171545c051c673",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JOINT_COMPLETION_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "ffd307da06f991688f22db9459904365e4b574d35a30df3d6d8724eed7a0bd73",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JOINT_COMPLETION_V1_CONTRACT_2026-10-27.md": "4e4834aff41237fc03235d48c9afa12ab0bc4ac1e0c2116b33f10cf72d03ab16",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_ACCELERATION_REGULARITY_V1_CONTRACT_2026-10-19.md": "59462dfb66d34db504ccf152addffcbbfbc8afa8ba58618f982bf8961ece2b06",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_ACCELERATION_REGULARITY_V1_REPORT_2026-10-19.md": "fb0e6a0af5ce70e4fb5bc34541dd99fa4274f44b915c3070097745e81566105f",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md": "b47dcf5e7fc340a015f2e7cdf273157bc6e2e1ba311bbc543a5f66596dbc83d2",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "aaf147530f242bf85abd9969d25648e01a83c34fe389dfbfb2b032c41db60bc8",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_V1_CONTRACT_2026-10-27.md": "03ee2cfc1d62f89633360a4963b2d20310a58d0ef61cb392112a539d0ab99cea",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_WORKING_ALGEBRA_2026-10-27.md": "0b179514ca5c02f7a475653e247e8a82b334633093c2db82cb4f3843d4219b66",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_ENCLOSURE_V1_CONTRACT_2026-10-27.md": "46b35c581954ed6f788bea574446eb6e53abc4289858e015d332e3fa83c11278",
+    "Theory/Gates/RES-001/RES001_R4C1_THREE_FAMILY_FIXED_CHARGE_KINETIC_V3_REPORT_2026-10-16.md": "a5acbb6d2f659f9c2e4719f32f91ef9f8a4c2cc2c9bdd1fff8635d46fc1199c3"
+  },
+  "sympy": "1.14.0",
+  "total": 16
+}

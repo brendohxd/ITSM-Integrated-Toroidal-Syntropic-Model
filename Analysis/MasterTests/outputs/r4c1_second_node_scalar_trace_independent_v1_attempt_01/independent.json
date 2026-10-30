@@ -1,0 +1,75 @@
+{
+  "G1_complete": false,
+  "checks": [
+    {
+      "criterion": "normalized < 1e-30",
+      "name": "original_scalar_normal_trace_0_-1",
+      "passed": true,
+      "value": "6.0926571909842833884733618989642406556804321857888510174671083208e-83"
+    },
+    {
+      "criterion": "normalized < 1e-30",
+      "name": "original_scalar_normal_trace_0_1",
+      "passed": true,
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-30",
+      "name": "original_scalar_normal_trace_1_-1",
+      "passed": true,
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-30",
+      "name": "original_scalar_normal_trace_1_1",
+      "passed": true,
+      "value": "1.9786681518638375423236450314527729313555303620712145495158520446e-82"
+    }
+  ],
+  "controls": [
+    {
+      "case": 0,
+      "expected": "-0.040722504810304997375117154622392728773385942741684983955284232172",
+      "got": "-0.040722504810304997375117154622392728773385942741684983955284232172",
+      "normalized_error": "6.0926571909842833884733618989642406556804321857888510174671083208e-83",
+      "orientation": -1,
+      "passed": true
+    },
+    {
+      "case": 0,
+      "expected": "-0.040790416912970070552765835359056686117458890400999519225586715087",
+      "got": "-0.040790416912970070552765835359056686117458890400999519225586715087",
+      "normalized_error": "0.0",
+      "orientation": 1,
+      "passed": true
+    },
+    {
+      "case": 1,
+      "expected": "-0.16568517406371234626830331180825944636536347993511649128882216671",
+      "got": "-0.16568517406371234626830331180825944636536347993511649128882216671",
+      "normalized_error": "0.0",
+      "orientation": -1,
+      "passed": true
+    },
+    {
+      "case": 1,
+      "expected": "-0.16599077852570517556772237512324725441369174440203190000518333983",
+      "got": "-0.16599077852570517556772237512324725441369174440203190000518333983",
+      "normalized_error": "1.9786681518638375423236450314527729313555303620712145495158520446e-82",
+      "orientation": 1,
+      "passed": true
+    }
+  ],
+  "gate_effect": "NONE",
+  "mpmath": "1.3.0",
+  "passed": 4,
+  "physics_pass": false,
+  "result_id": "R4C1-SECOND-NODE-SCALAR-TRACE-INDEPENDENT-V1",
+  "review_status": "DEFERRED",
+  "scope": "Original scalar current quadratic normal coefficient; cusp composite order >=3; no physical admission",
+  "source_sha256": {
+    "Analysis/MasterTests/verify_01_r4c1_second_node_scalar_trace_v1.py": "478f3883498730109eb0471f8f0d2f35db310ead046df30633a2e756fa5f031c",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_SCALAR_TRACE_VERIFIER_V1_CONTRACT_2026-10-27.md": "c7fc0c1e49714b66b689f75ae0f1344035d70fd364aa46c110c822fa7bbe6235"
+  },
+  "total": 4
+}

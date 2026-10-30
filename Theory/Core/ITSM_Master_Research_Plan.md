@@ -18,6 +18,26 @@ If Notion freeze line lags Git (e.g. Hub still citing alpha.4 while repo is alph
 
 ---
 
+## Proposed goal-programme navigation - 27 October 2026
+
+The [expanded programme in the existing execution queue](ITSM_Recovery_Execution_Queue.md#proposed-expanded-goal-programme--27-october-2026)
+sets out G1-G6: actual background admission, physical perturbation normalization,
+short-time persistence, coupled physical window/GR, identifying matching inputs,
+then a sealed weak-field numerical prediction where the prerequisites support it.
+The operator approved and activated this expanded goal scope on 27 October 2026.
+This is not a new action or a scientific clearance. Existing release and identity tracks
+remain independent where their own inputs permit work.
+
+The [27 October range result](../Gates/RES-001/RES001_R4C1_PHYSICAL_SECTOR_RANGE_V1_REPORT_2026-10-27.md)
+provides conditional two-node range criteria, not actual admission or physical
+normalization of the warning directions. The [bounded A-E assessment](ITSM_NEXT_STAGE_DECISION_V1_2026-10-27.md)
+is complete; the broader physics remains unfinished. An interim obstruction
+report must not be mistaken for achievement of the expanded scientific goal.
+
+The September route portfolio and dated queue rows remain provenance. Use their
+work packages only after reconciling later owning reports, completed tasks and
+current scientific holds. No completed audit is automatically reopened here.
+
 ## Research navigation supplement - 21 October 2026
 
 The [latest research checkpoint](../Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)
@@ -484,3 +504,431 @@ Update `Manuscript/CoreRecovery/VERSION` and freeze immutably under `releases/` 
 | 1.5 | 2026-08-07 | Linked bounded MAT Tier-1 remediation addendum; no gate promotion |
 | 1.7 | 2026-08-07 | Added bounded R5 pathway survey and R5-P1 scale-compensator parent-action fork; no gate promotion |
 | 1.6 | 2026-08-07 | Recorded R5 action-identifiability HOLD; declared action underdetermines `V`; no gate promotion |
+
+## Expanded G1 progress — 27 October 2026: quadratic failure, quartic root
+
+The [second-node report](../Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_V1_REPORT_2026-10-27.md)
+rejects the specified quadratic initial continuation in its declared regularity
+class: the certified extra trace lies in [222,231]. That scoped result remains.
+The [quartic report](../Gates/RES-001/RES001_R4C1_QUARTIC_JOINT_COMPLETION_V1_REPORT_2026-10-27.md)
+then certifies one unique restricted FOUR-condition root for unchanged-action
+Z=U*w^2+W*w^4,Zdot=Ud*w^2 in the frozen B1 eta=1/4,e=1/500,k=40 box.
+Exact shift/mean/local-density/charge responses remain. The contraction norm
+is below0.148, self-map bound below0.193 and initial dust rho>0.1713.
+Approximate W=33.75222953 is a numerical control, not a physical matching input.
+Joint16/16, original-coordinate current4/4 and exact algebra13/13 checks pass;
+all three freshly replay byte-exact. Counts certify their bounded methods only.
+
+Next G1 task: controlled full coupled acceleration/node extension on this NEW
+implicit initial construction, including root/shift uncertainty, both nodes and
+actual regularity, then remaining consistency and constraint/charge persistence.
+No evolved polynomial graph is imposed. Four necessary conditions are not full
+background admission or an IVP. G1-G6 remain INCOMPLETE; physical normalization,
+window/GR, matching and numerical acceleration prediction remain open.
+Rule-9 review DEFERRED, not cleared; substantive holds remain, physics_pass=false,
+gate_effect=NONE. See the deferred-review register's second-node/quartic entry.
+
+## Expanded G1 progress — 27 October 2026: kinetic complement and node cusp
+
+The [quartic node-operator report](../Gates/RES-001/RES001_R4C1_QUARTIC_NODE_OPERATOR_V1_REPORT_2026-10-27.md)
+derives the full fourteen-coordinate initial kinetic blocks and certifies the
+twelve-direction complement across the complete profile (inverse norm<24.058).
+The scalar/regulator degeneracy remains at alignment. Original full-coordinate
+controls verify the scalar forcing, retaining shift/local dust and metric drift.
+The full coupled cusp part of aZ has 0.00398305<c0<0.00409915 multiplying
+|w|, with remainder<3.623*|w|^3 on both-node |w|<=1/1000. The complement
+cannot cancel the leading cusp. This limits differentiability of Ztt, not by
+itself continuous acceleration or C2 spacetime Z. No physical stability claim.
+
+Kinetic V2 33/33, scalar42/42, cusp-remainder6/6 controls and immutable replays
+pass; the failed V1 endpoint controls and exact-rational repair are preserved.
+Next compute uniform analytic-force error bounds and the actual nodal function
+space/transport with this cusp retained, then admission and persistence.
+Full acceleration extension, G1-G6, physical modes/window/GR and matching remain
+INCOMPLETE. Review DEFERRED, not cleared; physics_pass=false; gate_effect=NONE.
+
+## Expanded G1 progress — 27 October 2026: initial acceleration bound complete
+
+The [quartic initial-acceleration report](../Gates/RES-001/RES001_R4C1_QUARTIC_INITIAL_ACCELERATION_V1_REPORT_2026-10-27.md)
+supplies the remaining analytic-force bounds: a continuous INITIAL fourteen-
+coordinate Euler acceleration extension through both nodes is now certified
+in the registered B1 case, conditional on the inherited exact construction.
+All complement forces, exact-G node cancellation, mixed chain derivatives,
+root/shift uncertainty, local lapse flux and the original cusp are retained.
+Whole-profile conservative reference-unit magnitude bounds are |aPsi|<0.129459,
+max|ay|<29.086701 and |aZ|<3146.179; they are not predicted accelerations,
+accuracy or temporal error estimates.38/38,13/13,4/4 controls and fresh replays
+pass. Interval wrapper failures remain preserved, without relaxed criteria.
+
+Next execute actual higher-time/node-transport and mixed-regularity checks.
+The linked transport WORKING_ALGEBRA is explicitly NOT VALIDATED. Initial
+boundedness does not prove admission, preserved constraints or a coupled IVP.
+G1-G6 remain INCOMPLETE; review DEFERRED; physics_pass=false; gate_effect=NONE.
+High remains authorized for the current analytic-force/transport bundle.
+
+## Expanded G1 progress — 27 October 2026: differentiated-regulator regularity
+
+The [quartic jerk-transport report](../Gates/RES-001/RES001_R4C1_QUARTIC_JERK_TRANSPORT_V2_REPORT_2026-10-27.md)
+derives the full initial regulator time equation and its actual coupled cusp
+response. The scalar-jerk cusp is (9/560000)*|w| with remainder bounded by
+0.00011395*|w|^3 on both-node |w|<=1/1000.38/38 checks and fresh immutable
+replay pass.144 pinned source artifacts are unchanged; the V1 implementation
+failure remains preserved. This excludes joint C4 psi in the registered
+initial data/gauge only. It does not invalidate continuous initial acceleration
+or reject a weaker solution, and C4 is not adopted as a physical requirement.
+
+Next: establish the total analytic jerk/node quotient and actual graded
+regularity, then constraint/charge transport and persistence without imposing
+a fixed graph or silently differentiating nonsmooth traces. The approved
+same-action weaker-space investigation continues; G1-G6 stay INCOMPLETE.
+Review DEFERRED; physics_pass=false; gate_effect=NONE. No parent/state adoption
+or publication/commit action. The bounded High bundle is finished; return to
+Medium for reporting/routine preparation was requested, awaiting acknowledgement.
+
+## Expanded G1 progress — 28 October 2026: total jerk and weak interface
+
+The [total-jerk report](../Gates/RES-001/RES001_R4C1_QUARTIC_TOTAL_JERK_V1_REPORT_2026-10-28.md)
+resolves the possible analytic pole from the original density and complete
+coupled inverse. The TOTAL initial scalar jerk is finite/continuous and locally
+Lipschitz/H1, not H2; explicit conservative near/away bounds cover the profile.
+Its second weak normal derivative has delta strength9/3500000 per simple
+alignment node. Actual-cusp integration controls retain this interface term;
+g=b*w^2 kills this particular delta but cannot be cancelled across a node.
+30/30 controls and byte-exact replay pass;148 source hashes are unchanged.
+
+Next calculate actual full-vector alignment transport and Hamiltonian/momentum/
+charge tangency with vector Ward and interface terms. Initial membership and
+finite jets do not prove admission, persistence or an IVP. G1-G6 remain
+INCOMPLETE; review DEFERRED; physics_pass=false; gate_effect=NONE.
+The prior extra High-confirmation prompt was unnecessary: High is still the
+last operator-confirmed setting for this G1 transport scope, with no later
+Medium acknowledgement. No model/provider change occurred; avoid another
+confirmation-only loop unless the operator changes settings or scope.
+
+
+## G1 update — 28 October 2026: initial dust/phase point controls
+
+See [quartic charge-tangency V2](../Gates/RES-001/RES001_R4C1_QUARTIC_CHARGE_TANGENCY_V2_REPORT_2026-10-28.md).
+The registered full14-generator initial nonnodal dust and phase balances
+agree with independently varied currents.256/256 controls and byte-exact
+replay pass with156 sources unchanged. Failed V1(216/236) remains: it omitted
+the physical-density conversion's -3H*rho volume drift. A separately frozen
+V2 derives this from the lapse/determinant equation without changing the action
+or the current target. Initial values at h=I did not justify equating their
+time derivatives. This is not a physical failure or a continuum certificate.
+
+Full-vector nodal jets, normalized-frame Ward/ADM constraints with vector and
+weak-interface terms, evolved regularity/persistence and IVP estimates remain
+required before actual background admission. G1-G6 INCOMPLETE. All prior
+physical-window, GR, identifying matching and prediction holds remain.
+Conditional; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## G1 update — 28 October 2026: complete initial frame-node accelerations
+
+The [vector-node report](../Gates/RES-001/RES001_R4C1_QUARTIC_VECTOR_NODE_JETS_V1_REPORT_2026-10-28.md)
+establishes (Vx_tt,Vy_tt,Vz_tt)=(0,0,0) at both registered alignment nodes,
+with full metric crosses/cusp sectors retained. The longitudinal quotient
+is analytically removable and |Vz_tt/w|<0.250715 over the registered near-node
+root box.48/48 and byte-exact replay;159 sources unchanged. The associated
+initial node-motion jets are conditional on an existing C2 continuation.
+Full constraint transport, evolved alignment/regularity, background admission
+and IVP estimates remain open. G1-G6 INCOMPLETE; Conditional; review DEFERRED;
+physics_pass=false; gate_effect=NONE. No physical-window or matching clearance.
+
+
+## G1 update — 28 October 2026: smooth constraint identity, actual IVP open
+
+The [normalized ADM Ward report](../Gates/RES-001/RES001_R4C1_NORMALIZED_ADM_WARD_V2_REPORT_2026-10-28.md)
+supplies the original-action smooth off-shell constraint equations, including
+the normalized-frame Euler divergence.105/105 and byte-exact replay;167
+sources unchanged. Failed V1 chart-chain-rule attempt remains. Conditional
+unit-lapse zero-constraint propagation requires a full Euler solution with
+valid weak interfaces. A combined L2 approximation estimate is insufficient
+because the Hamiltonian equation differentiates momentum constraints.
+The actual evolved regularity/interface/IVP problem is next; G1-G6 remain
+INCOMPLETE. Conditional; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## G1 update — 28 October 2026: nonlinear weak-action backend
+
+The [full weak-action report](../Gates/RES-001/RES001_R4C1_FULL_WEAK_ACTION_V1_REPORT_2026-10-28.md)
+adds the complete planar variational action with nonlinear curvature, dust
+multiplier and local lapse/shift constraints.127/127 and byte-exact replay;
+171 sources unchanged. This removes a flat-initial-slice backend limitation.
+Action integrability and implicit equations do not prove an evolved solution;
+registered-weight inverse bounds still require a graph/graded estimate.
+Actual weak IVP/background admission and controlled time remain open.
+G1-G6 INCOMPLETE; Conditional; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## G1 assessment — 28 October 2026: unrestricted evolution route obstructed
+
+See [full constrained principal/domain report](../Gates/RES-001/RES001_R4C1_CONSTRAINED_PRINCIPAL_V1_REPORT_2026-10-28.md).
+The coupled reduced principal pencil retains c=+/-i/w on registered nonzero-
+tilt slices; the initial frame has nonzero Frobenius coefficient near nodes.
+24/24+5/5+6/6 and exact replays verify this necessary estimate obstruction.
+The standard unrestricted Sobolev evolution strategy cannot be promoted.
+Assess a physically justified domain/formulation before expensive integration;
+no automatic branch deletion, cutoff or new parent/state. No all-action no-go
+or exclusion of every prepared weak solution is claimed. G1-G6 INCOMPLETE;
+review DEFERRED; physics_pass=false; gate_effect=NONE. Prior bounded results stay.
+
+
+## G1 domain decision - 29 October 2026
+
+The [exact-band compatibility calculation](../Gates/RES-001/RES001_R4C1_FINITE_BAND_DOMAIN_V1_REPORT_2026-10-29.md)
+rejects a fixed exact finite Fourier band with C2(time;L2) continuation for
+the registered initial data: their actual coupled Vy acceleration is not
+a trigonometric polynomial.14/14 and byte-exact replay;177 source pins.
+This is not a rejection of controlled finite-mode approximations or all weak
+solutions, and does not calculate a physical cutoff. The remaining same-action
+question is an invariant prepared weak domain with full branch/tail/interface
+and constraint control. No automatic projection, new state/parent or TOP-X4
+pivot. G1-G6 and physical-window/GR/matching objectives remain INCOMPLETE.
+Review DEFERRED; physics_pass=false; gate_effect=NONE. Prior bounded results stay.
+
+
+## G1 prepared-source requirement - 29 October 2026
+
+The [full principal source map](../Gates/RES-001/RES001_R4C1_PRINCIPAL_SOURCE_COMPATIBILITY_V1_REPORT_2026-10-29.md)
+shows that direct zero overlap with the retained characteristic does not
+remove its generalized-chain response.70/70 and exact replay;180 source pins.
+The exact source cancellation is now explicit, but actual nonlinear cusp-source
+transport and a nodal invariant weak domain remain uncomputed. Synthetic
+operator controls are not physical evolution or a cutoff. Continue with the
+actual reduced source and variable-coefficient node conditions before dependent
+G2-G6 claims. G1-G6 INCOMPLETE; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## G1 initial source inputs - 29 October 2026
+
+The [full clock/density descriptor](../Gates/RES-001/RES001_R4C1_CLOCK_DENSITY_SOURCE_V1_REPORT_2026-10-29.md)
+adds original56-slot gradient/Hessian inputs (72/72, full seven-file replay)
+and a completed unreduced initial Euler descriptor (68/68, exact replay).
+The multiplier and physical-density rates are converted before comparing
+the full clock/current equation; no earlier physical-density source is changed.
+All16 field rows plus lapse/three shifts pass the registered point controls,
+with every nonzero residual retained. Actual principal-frequency source
+transport, nodal domain/constraint persistence and controlled evolution remain
+open. G1-G6 INCOMPLETE; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## G1 time-tangent inputs - 29 October 2026
+
+The [full initial local Jacobi operator](../Gates/RES-001/RES001_R4C1_FULL_INITIAL_JACOBI_V1_REPORT_2026-10-29.md)
+retains all20 Euler rows, potentials, coefficient drift and the original
+clock/multiplier/lapse/shift sectors.139/139 and seven-file exact replay;195
+pins. The declared initial14-field pullback retains shifts and nonzero lapse-
+residual connection. Next derive actual time-tangent/nodal consistency from
+these coefficients, rather than treating initial local checks as evolution.
+Global constraint inversion with mean/zero-mode conditions, background/domain
+admission, persistence and physical-window/matching remain open. No node
+inverse, physical spectrum or cutoff follows. G1-G6 INCOMPLETE; review DEFERRED;
+physics_pass=false; gate_effect=NONE. Earlier bounded results stay unchanged.
+
+
+## G1 next nodal source proof - 29 October 2026
+
+The [actual time-tangent calculation](../Gates/RES-001/RES001_R4C1_TIME_TANGENT_V1_REPORT_2026-10-29.md)
+exports all14 third-time jets and completed multiplier/clock time directions
+at ten selected off-node points.306/306;21-file exact replay;204 pins.
+Original regulator and full Jacobi/constraint controls agree. The auxiliary
+cusp difference has a candidate1/abs(w) trend, not a certified pole. Next
+prove or refute its original-action source balance with a controlled normal
+remainder and precise regularity scope. Point agreement/power fitting cannot
+replace that proof or establish weak admission. Keep all prior conditions,
+free gauge channels, node/domain and physical-window/matching holds.
+G1-G6 INCOMPLETE; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## G1 nodal regularity result and remaining weak-domain route - 29 October 2026
+
+The [controlled auxiliary source proof](../Gates/RES-001/RES001_R4C1_AUXILIARY_POLE_V2_REPORT_2026-10-29.md)
+establishes a297/2800000 inverse-abs(w) cusp with explicit remainder and scoped
+non-L1 third-time field-jet exclusion.79/79;231 pins; exact replay. Earlier
+candidate flags/failed V1 remain historical and immutable.
+The [original kinetic-weight diagnostic](../Gates/RES-001/RES001_R4C1_WEIGHTED_NODE_V1_REPORT_2026-10-29.md)
+shows the full coupled time-mass cusp image is O(abs(w)) and has zero nodal
+trace.17/17;235 pins; exact replay. Its isolated delta/delta_prime kernel is
+not yet a physical constraint kernel or evolution nonuniqueness theorem.
+
+Continue with complete initial canonical current/constraint nodal traces,
+coefficient drift and time-compatible weak-domain requirements. Neither
+weighted integrability nor initial identities establish background admission
+or persistence. No new extension/junction/parent/state is chosen. G1-G6,
+physical normalization/window and identifying matching remain incomplete;
+review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## G1 initial nodal-current compatibility and time-transport target - 29 October 2026
+
+The [full original-current calculation](../Gates/RES-001/RES001_R4C1_FULL_NODE_CURRENT_V1_REPORT_2026-10-29.md)
+adds uniform all20 initial/time-tangent flux bounds, including clock, lapse,
+shift and curvature. No new nodal jump source appears at this order.71/71;
+239 pins; exact replay. Full-lapse complex majorant and original clock-current
+controls retain coefficient drift; the auxiliary third-time unweighted pole
+and its original weighted integrability remain valid together.
+The full initial time-tangent kernel does not prove existence or nonuniqueness
+of a time-compatible weak evolution. Next derive necessary near-node coupled
+space-time transport with remainder control; do not repeat initial identities
+or adopt a new boundary prescription. G1-G6, domain persistence, physical
+normalization/window and identifying matching remain incomplete. Review
+DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## G1 near-node transport model and outstanding Cauchy test - 29 October 2026
+
+The [inner balance calculation](../Gates/RES-001/RES001_R4C1_INNER_BALANCE_V1_REPORT_2026-10-29.md)
+proves the shift/H-independent positive auxiliary cusp coefficient and
+controlled initial derivative-ratio scale proportional to w^2.52/52;243
+pins; exact replay. A necessary anisotropic transport model retains the
+potential, frame divergence, density/clock sector and coefficient drift.
+Its exact nonzero-frequency whole-line Hermite-level gap is a model inverse
+diagnostic, not positivity, a causal propagator or physical admission.
+
+Next check actual Cauchy and finite-time nodal junction requirements, with
+full original metric/constraint completion and nonlinear space-time remainder
+still required. The source/global torus/zero-frequency sectors cannot be
+discarded. No new boundary/state/parent/cutoff is selected. G1-G6, physical
+normalization/window and identifying matching remain incomplete. Review
+DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## G1 finite-time model junction obstruction and original-limit target - 29 October 2026
+
+The [corrected inner Cauchy V2 calculation](../Gates/RES-001/RES001_R4C1_INNER_CAUCHY_V2_REPORT_2026-10-29.md)
+rejects source-free function gluing of the regular self-similar necessary-
+model Cauchy branch: both finite-time jump coefficients exclude zero.
+21/21;250 pins; exact replay. This is a scoped MODEL failure, not a full
+R4C1 weak-solution no-go. The earlier initial no-jump and Fourier/Hermite gap
+results were necessary diagnostics, not forward admission.
+V1 matching omitted a particular solution; its interpretation is invalid,
+receipt preserved. V2 explicitly verifies the affine matching correction.
+
+Next quantify original finite-action/current compactness and nonlinear
+remainder, or derive a missing coupled layer rather than inventing a junction
+source. Full metric/constraint/zero-mode/charge completion, physical
+normalization/window and matching remain open. G1-G6 INCOMPLETE; review
+DEFERRED; physics_pass=false; gate_effect=NONE. No new action/state/boundary.
+
+
+## G1 action-level transfer criterion remains conditional - 29 October 2026
+
+The [nodal transfer calculation](../Gates/RES-001/RES001_R4C1_NODAL_TRANSFER_V1_REPORT_2026-10-29.md)
+establishes the full covariant auxiliary/scalar junction conditions under
+explicit regular trace assumptions.37/37;254 pins; exact replay. Real node
+motion does not remove the registered scalar-cusp coefficient. Finiteness
+of original action alone is insufficient for uniform rescaled compactness;
+the test concentration is off shell and fails the scalar equation.
+
+Next require an on-shell concentration/current estimate or a fully derived
+coupled layer before transferring the necessary-model rejection to R4C1.
+Do not assume regular compactness or add a node source to close the gap.
+Full background/domain/persistence, global constraints/means/charges,
+physical normalization/window and matching remain open. G1-G6 INCOMPLETE;
+review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## G1 partial coupled surface budget does not close - 29 October 2026
+
+The [original-frame defect calculation](../Gates/RES-001/RES001_R4C1_COUPLED_DEFECT_V1_REPORT_2026-10-29.md)
+retains metric/lapse/shift and derives the nodal auxiliary-gradient force.
+40/40;258 pins; exact replay. Balancing only auxiliary and frame surface
+terms still leaves scalar double-derivative and leading frame bulk/Cauchy
+failures. This rejects the specified partial linearized budget, not all
+nonlinear current-measure limits or the full action.
+
+The outstanding route is an on-shell leading nonlinear/current concentration
+estimate or coupled completion, including constraints and dust conservation.
+No independent nodal force or weak-product prescription is selected. Uniform
+rescaled bounds, actual domain/evolution, physical normalization/window and
+identifying matching remain unresolved. G1-G6 INCOMPLETE; review DEFERRED;
+physics_pass=false; gate_effect=NONE.
+
+
+## Independent homogeneous B1 kinetic control - 29 October 2026
+
+The [full instantaneous B1 reduction](../Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_REPORT_2026-10-29.md)
+on the old, proven homogeneous control supplies the actual nonzero-mode
+shift/auxiliary elimination and a ten-positive kinetic block at t=0, with
+the mixed canonical momentum/two-form map retained. 41/41; exact replay.
+This advances an independent G2/G4 control without changing G1's registered
+vortical preparation or adopting new coefficients. Time-dependent reduction,
+constraint persistence, propagation, interactions/window and GR recovery
+remain open. Positive kinetic inertia alone is not physical clearance.
+The G1 nonlinear on-shell concentration/current problem is not resolved.
+G1-G6 INCOMPLETE; matching inputs still absent; review DEFERRED;
+physics_pass=false; gate_effect=NONE.
+
+
+## Homogeneous B1 quadratic drift control - 29 October 2026
+
+The [generic B1 quadratic action and drift](../Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_REPORT_2026-10-29.md)
+give M=a^3 M0, positive ten-field kinetic inertia along the known old B1
+solution, nonzero-mode constraint reconstruction and the actual initial
+time-dependent generator. Exact initial symplectic transport and rejection
+of frozen drift pass; 27/27 with exact replay. This advances the independent
+homogeneous control, not admission or replacement of G1's vortical state.
+Controlled propagation, nonlinear interactions/physical window, GR and
+identifying matching remain open. The next bounded control task is actual
+coefficient evolution/error control on [0,0.05], not a frozen-spectrum scan.
+G1-G6 INCOMPLETE; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## Homogeneous B1 matter reconstruction before propagation - 29 October 2026
+
+The [original-lapse density calculation](../Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_REPORT_2026-10-29.md)
+supplies the full reconstructed dust density and proves linear clock
+conservation with the actual evolving B1 generator on its conserved
+background Friedmann constraint. Lapse-flux omission is rejected.19/19;
+exact replay. This is independent homogeneous G2/G3 control progress;
+the vortical G1 preparation is not replaced or admitted. Controlled full
+propagation/error accumulation on [0,0.05], density positivity, nonlinear
+interaction/window, GR and identifying matching remain open.
+G1-G6 INCOMPLETE; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## Old homogeneous B1 finite-mode propagation control - 29 October 2026
+
+The [full coupled linear certificate](../Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md)
+accepts the old B1 control on [0,0.05] at k=1,7,40 with continuous full-state
+physical kinetic-induced norm errors below the frozen1e-8 target.62/62 main
+checks,49/49 exact-rational aggregation checks, both complete replays exact.
+All fields/fast modes, background uncertainty/drift, original constraints and
+error accumulation are retained; no slow-graph projection. This supplies
+controlled finite-mode LINEAR evolution on a justified independent control.
+It does not establish all-frequency/nonlinear evolution, a physical window,
+GR/matching or G1's vortical admission. Next: nonlinear interaction/alignment
+domain, preserving existing warnings. G1-G6 INCOMPLETE; review DEFERRED;
+physics_pass=false; gate_effect=NONE. No canonical or publication promotion.
+
+
+## B1 alignment-domain limitation - finalized 30 October 2026
+
+The [constrained alignment diagnostic](../Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_REPORT_2026-10-29.md)
+finds charge/lapse-preserving local homogeneous old-B1 solutions with
+nonzero-mode dust-clock inertia (10,1,0) at 0<|w|<=1/500.53/53; exact replay.
+The positive aligned finite-mode linear result remains valid. Its extension
+to an unrestricted positive-kinetic dust-clock neighbourhood allowing these
+tilts is obstructed. Retain harmonic/slicing/local-lifetime qualifications;
+no foliation-independent quantum-ghost or all-action claim. Restricted
+physical Cauchy/low-energy domains, nonlinear window, GR/matching and G1's
+vortical on-shell/domain problem remain open. No automatic mode exclusion,
+cutoff or action/state adoption. G1-G6 INCOMPLETE; review DEFERRED;
+physics_pass=false; gate_effect=NONE.
+
+
+## Documentation checkpoint and proposed sequencing update - 30 October 2026
+
+The [30 October delivery checkpoint](../Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-30.md)
+preserves the newly completed finite-mode homogeneous B1 linear control,
+the nearby-tilt dust-clock limitation, nodal/weak-domain work, alternative
+architecture restrictions, matching screen and paper decisions. The operator
+paused the native G1-G6 goal to document and commit/push this work.
+
+The [saved reassessment](ITSM_GOAL_DIRECTION_REASSESSMENT_2026-10-30.md)
+recommends a physical Cauchy/low-energy domain decision before further
+derivative hierarchies. It does not replace the full G1-G6 objective, adopt
+a new domain/parent or restart research. Matching and scoped paper lanes
+remain independent; no scientific/review gate is promoted.

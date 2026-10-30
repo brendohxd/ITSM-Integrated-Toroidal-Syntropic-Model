@@ -1,5 +1,50 @@
 # ITSM Changelog & Archive History
 
+## Research and direction checkpoint (2026-10-30; work since 2026-10-21)
+
+- Added the [complete checkpoint and exact-byte evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-30.md)
+  covering the previously uncommitted 23–30 October research, its source
+  dependencies, negative results, failed attempts and corrected interpretations.
+- Retained the P0-B metric-host locality comparison and its conditional
+  constant-force/planetary restrictions. Neither P0-B nor R4C1 is promoted to
+  an admitted healthy physical force window; no new parent is selected.
+- Recorded physical-sector readiness/range calculations, the expanded G1–G6
+  programme, the quartic initial completion and its coupled acceleration,
+  scalar/phase/vector, charge and time-tangent controls. These are not a full
+  on-shell nodal solution or an all-action no-go.
+- Added the complete nonlinear weak-action backend, normalized ADM/Ward and
+  clock-density sources, full initial Jacobi and moving-current work. Retained
+  finite-band, complex-principal, Frobenius, auxiliary-pole and cusp/domain
+  obstructions with their actual assumptions and exclusions.
+- Retained weighted-node, inner-balance, corrected Cauchy, nodal-transfer and
+  partial coupled-defect results. The original inner-Cauchy V1 interpretation
+  is explicitly invalid despite its green implementation checks; V2 corrects
+  the missing particular-state matching. No original receipt is rewritten.
+- Added the old homogeneous B1 full reduced kinetic/canonical map, actual
+  quadratic drift, explicit lapse-flux dust reconstruction and exact clock
+  conservation. Its full twenty-state linear propagator is certified on
+  [0,0.05] at k=1,7,40 (62/62 checks and a separate 49/49 rational aggregation
+  audit, both exact replays). This is finite-mode linear control only.
+- Added the charge/lapse-preserving alignment-domain diagnostic (53/53,
+  exact replay). Nearby nonzero homogeneous tilts have reduced dust-clock
+  kinetic inertia (10 positive,1 negative,0 zero). The successful aligned
+  result remains valid. Restricted domains, slicing/harmonic qualifications
+  and the absence of a physical cutoff remain explicit.
+- Updated README and the active dashboard with current progress and limits.
+  Saved a [direction reassessment](Theory/Core/ITSM_GOAL_DIRECTION_REASSESSMENT_2026-10-30.md):
+  prioritize a justified physical Cauchy/low-energy domain and a decision if
+  new assumptions are needed, rather than another unbounded derivative sweep.
+  The full native G1–G6 goal is paused for this checkpoint, not completed.
+- Retained the missing matching-input screen and independent paper-release
+  decisions. P1 rc7, P2 rc4, Thermodynamics 0.7.1 and R4C1 0.1.1 are unchanged;
+  P2's earlier sensitivity FAIL18/19 and outstanding author/review decisions
+  are not cleared. No paper, website or scientific gate is newly promoted.
+- Preserved original hashes, failed versions and exact-byte evidence through
+  checkout attributes and an integrity manifest. Old separately excluded
+  manuscript/bibliography/figure working files, scratch QA, private context,
+  vault data and credentials remain local. Commit/push verification is an
+  operational delivery check, not independent physics peer review.
+
 ## Paper versions and public model overview (2026-10-21)
 
 - Corrected the Papers page from P1 rc3/P2 rc3 to the retained P1 rc7/P2 rc4

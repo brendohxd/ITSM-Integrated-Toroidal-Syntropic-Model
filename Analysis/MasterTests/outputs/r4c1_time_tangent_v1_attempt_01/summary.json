@@ -1,0 +1,2444 @@
+{
+  "G1_complete": false,
+  "Rule9_cleared": false,
+  "actual_point_time_tangent_forcing_exported": true,
+  "auxiliary_jerk_pole_certified": false,
+  "candidate_coefficient_scope": "(K_Q/b)*(9/560000); pending exact source/remainder proof",
+  "checks": [
+    {
+      "error": "5.1214043540763784034943318242982302786686727647728008207320568636e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "6.6187733839018843396099026342006633426715047173190837767523672867e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "1.9797107645687279445542285282862951293484387573084242127726856445e-38",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "8.6972401287792548604161580386859951128849336696698090560997837443e-38",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "4.0041661903662018488591704302729529914679659601229600048986376232e-146",
+      "name": "time_mass_symmetry",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "3.5737321969106027101507884028122336651708870242747822478251715421e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "7.5509221568999596616364295184487965499248752106183802434926139504e-34",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "7.2178505536037290428055794978276796315806740533927086692389978775e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "8.4248747174539813208917455862689114448869325022454024147212109532e-50",
+      "name": "independent_lapse_time_tangency",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "4.8386495358436333641326399392035024749305609546457318923446196368e-47",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "5.9525694943827078047329284474094055844668114703643419942860905255e-43",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "5.1213950879897660911878805133963128595005420824900360049555970762e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "6.6187652775972876444699662045098442102794490531175744567313798992e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "1.9797107649157655959192294367130742109390624651631946036139220844e-38",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "8.6972401287792548604161580386859951128849336696698090560997837443e-38",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "4.0041661903662018488591704302729529914679659601229600048986376232e-146",
+      "name": "time_mass_symmetry",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "3.5737204225535189580127808740017909670753464512399854314951648206e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "7.5508956511594600028810291840636754876536360295337020459905811528e-34",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "7.2178267737816802644014663666856380109259230972356413589902775763e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "8.4248747637753486097935715093380242362749113404910401388782015763e-50",
+      "name": "independent_lapse_time_tangency",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "4.8386495378132901796777098632137846628796958558602366061330629482e-47",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "5.9525497108631867257667081304903556343912718497416784683753803317e-43",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "1.09693395265303527981536387953955601424808069524879355774852437e-42",
+      "name": "sealed_full_twenty_Jacobi_time_tangent_bridge",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "5.1214043540763784034943318242982302786686727647728008207320568635e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "6.6187733839018843396099026342006633426715047173190837767523672867e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "1.9797107645687279445542285282862951293484387573084242127726856445e-38",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "8.6972401287792548604161580386859951128849336696698090560997837444e-38",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "3.5737321969106027101507884028122336651708870242747822478251715421e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "7.55092215689995966163642951844879654992487521061838024349261395e-34",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "7.2178505536037290428055794978276796315806740533927086692389978776e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "8.4248747174539813208917455862689114448869325022454024147212109614e-50",
+      "name": "independent_lapse_time_tangency",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "4.8386495358436333641326399392035024749305609546457318923446196368e-47",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "5.9525694943827078047329284474094055844668114703643419942860905255e-43",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 0,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "5.1213950879897660911878805133963128595005420824900360049555970761e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "6.6187652775972876444699662045098442102794490531175744567313798992e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "1.9797107649157655959192294367130742109390624651631946036139220844e-38",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "8.6972401287792548604161580386859951128849336696698090560997837444e-38",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "3.5737204225535189580127808740017909670753464512399854314951648206e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "7.5508956511594600028810291840636754876536360295337020459905811524e-34",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "7.2178267737816802644014663666856380109259230972356413589902775764e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "8.4248747637753486097935715093380242362749113404910401388782015845e-50",
+      "name": "independent_lapse_time_tangency",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "4.8386495378132901796777098632137846628796958558602366061330629482e-47",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "5.9525497108631867257667081304903556343912718497416784683753803317e-43",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "1.0969339526530352798153638794701890762016677485983970229484921905e-42",
+      "name": "sealed_full_twenty_Jacobi_time_tangent_bridge",
+      "partition": 1,
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "6.5870090565694180877360500432344269741612513125531908623514558112e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "1.6506124113878386914056746085917647802888874714594669682919753478e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "4.08048532556963414877516675619683583926799575299038051938515676e-41",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "2.9979739681244947673682667936172519046905471126322295580129908487e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "5.8757741668961597651032779031551273496931949528472286934228029552e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "6.83511429880377406296237310473723187532338667937311035710693527e-28",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "9.8369575878511252018774887479264724506682023704544469662308030686e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "1.3878786596913512408311734419707464049244064381393149873675979757e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "9.6774525306023295056673243927519978509020969782908911250302936189e-50",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "1.0775214180436173838865113411696377554135356220270569691676611323e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "6.5870090565694180974832095119601182640199536037482855281395197003e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "1.6506124113928282215564666390645975635332860023131998117930959653e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "4.080484911105161941946548562254680268802601155573399945149182769e-41",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "2.9979739681244947673682667936172519046905471126322295580129908487e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "5.8757741668844702720125269337688480115088557454920439041141663078e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "6.8342231418760172284848635645277457864532519734926216723941751409e-28",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "9.836957588092446392377545503956441031724006297493460986332172032e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "1.3878784057303579145295471526952797043897128379944483922554922273e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "9.6774493875895872099181753707959340505271741842823791777788845286e-50",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "1.0775214179976481176592917035197875240319280744392292576679555662e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "6.587157075545667995867724902018345360650202795152779500848413683e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "1.6506115958530107263156203668245970192321181763624153967956707846e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "4.077969800695787421673646878731691344005453860746793855722459294e-40",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "2.9976472896221315097042042407942746272585392669681603474776283654e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "1.2513019344894380777684907594602978098337393625384250015308242572e-147",
+      "name": "time_mass_symmetry",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "5.8764692076562534954866582632213238325849150407098223905272531283e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "6.8360114456761396355057420629764352838746029534972851132427505193e-30",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "9.8385246725901254770646657675294365651951601144449555925314107468e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "1.3875872796587520073108756977616804130533806424017963625123627711e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "9.676813799551974106846874234971701061598539604820944423817264816e-49",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "1.0776272872191734901011778409441248518302236908477415000159625856e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "6.5871570755456695771638048728327186869387016658424103675901688699e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "1.6506115959029051889666291646479777051542789571148071453705863579e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "4.0779697592926553313470412127622883250209263142584341078778411654e-40",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "2.9976472896221315097042042407942746272585392669681603474776283654e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "1.2513019344894380777684907594602978098337393625384250015308242572e-147",
+      "name": "time_mass_symmetry",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "5.876469207539347915565864864092686535928421325276233496108936024e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "6.8359223032490565024639962553177469019335959903447277448584311131e-30",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "9.8385246724204999307206866680133175330350679824150503969372418096e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "1.387587254256393390579985838939990888426723679613114995524421398e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "9.6768134853836298683601115053610284372997450353595811055318099104e-49",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "1.0776272867594432411781537296156413330428656256324637225579030482e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "2.2498494632840708132639478097141110518173147856611929956744276092e-42",
+      "name": "sealed_full_twenty_Jacobi_time_tangent_bridge",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "6.5870090565694180877360500432344269741612513125531908623514558112e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "1.6506124113878386914056746085917647802888874714594669682919753478e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "4.08048532556963414877516675619683583926799575299038051938515676e-41",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "2.9979739681244947673682667936172519046905471126322295580129908487e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "5.8757741668961597651032779031551273496931949528472286934228029552e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "6.83511429880377406296237310473723187532338667937311035710693527e-28",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "9.8369575878511252018774887479264724506682023704544469662308030686e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "1.3878786596913512408311734419707464049244064381393149873675979757e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "9.6774525306023295056673243927519978509020969782908911250302936189e-50",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "1.0775214180436173838865113411696377554135356220270569691676611323e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "6.5870090565694180974832095119601182640199536037482855281395197003e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "1.6506124113928282215564666390645975635332860023131998117930959653e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "4.080484911105161941946548562254680268802601155573399945149182769e-41",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "2.9979739681244947673682667936172519046905471126322295580129908487e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "5.8757741668844702720125269337688480115088557454920439041141663078e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "6.8342231418760172284848635645277457864532519734926216723941751409e-28",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "9.836957588092446392377545503956441031724006297493460986332172032e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "1.3878784057303579145295471526952797043897128379944483922554922273e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "9.6774493875895872099181753707959340505271741842823791777788845286e-50",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "1.0775214179976481176592917035197875240319280744392292576679555662e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "6.587157075545667995867724902018345360650202795152779500848413683e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "1.6506115958530107263156203668245970192321181763624153967956707846e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "4.0779698006957874216736468787316913440054538607467938557224593316e-40",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "2.9976472896221315097042042407942746272585392669681603474776283654e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "5.8764692076562534954866582632213238325849150407098223905272531283e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "6.8360114456761396355057420629764352838746029534972851132427503933e-30",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "9.8385246725901254770646657675294365651951601144449555925314107468e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "1.387587279658752007310875697761680413053380642401796362512362771e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "9.6768137995519741068468742349717010615985396048209444238172649052e-49",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "1.0776272872191734901011778409441248518302236908477415000159625856e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 0,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "6.5871570755456695771638048728327186869387016658424103675901688699e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "1.6506115959029051889666291646479777051542789571148071453705863579e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "4.077969759292655331347041212762288325020926314258434107877841203e-40",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "2.9976472896221315097042042407942746272585392669681603474776283654e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "5.876469207539347915565864864092686535928421325276233496108936024e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "6.8359223032490565024639962553177469019335959903447277448584309871e-30",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "9.8385246724204999307206866680133175330350679824150503969372418096e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "1.387587254256393390579985838939990888426723679613114995524421398e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "9.6768134853836298683601115053610284372997450353595811055318099996e-49",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "1.0776272867594432411781537296156413330428656256324637225579030482e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "2.249849463284070813263947809709513713664395243845833413263201519e-42",
+      "name": "sealed_full_twenty_Jacobi_time_tangent_bridge",
+      "partition": 1,
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "6.5870090565694180877360500432344269741612513125531908623514558112e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "1.6506124113878386914056746085917647802888874714594669682919753478e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "4.08048532556963414877516675619683583926799575299038051938515676e-41",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "2.9979739681244947673682667936172519046905471126322295580129908487e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "5.8757741668961597651032779031551273496931949528472286934228029552e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "6.83511429880377406296237310473723187532338667937311035710693527e-28",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "9.8369575878511252018774887479264724506682023704544469662308030686e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "1.3878786596913512408311734419707464049244064381393149873675979757e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "9.6774525306023295056673243927519978509020969782908911250302936189e-50",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "1.0775214180436173838865113411696377554135356220270569691676611323e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "6.5870090565694180974832095119601182640199536037482855281395197003e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "1.6506124113928282215564666390645975635332860023131998117930959653e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "4.080484911105161941946548562254680268802601155573399945149182769e-41",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "2.9979739681244947673682667936172519046905471126322295580129908487e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "5.8757741668844702720125269337688480115088557454920439041141663078e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "6.8342231418760172284848635645277457864532519734926216723941751409e-28",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "9.836957588092446392377545503956441031724006297493460986332172032e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "1.3878784057303579145295471526952797043897128379944483922554922273e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "9.6774493875895872099181753707959340505271741842823791777788845286e-50",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "1.0775214179976481176592917035197875240319280744392292576679555662e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "6.587157075545667995867724902018345360650202795152779500848413683e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "1.6506115958530107263156203668245970192321181763624153967956707846e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "4.0779698006957874216736468787316913440054538607467938557224592972e-40",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "2.9976472896221315097042042407942746272585392669681603474776283654e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "5.8764692076562534954866582632213238325849150407098223905272531283e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "6.8360114456761396355057420629764352838746029534972851132427505086e-30",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "9.8385246725901254770646657675294365651951601144449555925314107468e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "1.387587279658752007310875697761680413053380642401796362512362771e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "9.6768137995519741068468742349717010615985396048209444238172648236e-49",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "1.0776272872191734901011778409441248518302236908477415000159625856e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "6.5871570755456695771638048728327186869387016658424103675901688699e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "1.6506115959029051889666291646479777051542789571148071453705863579e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "4.0779697592926553313470412127622883250209263142584341078778411686e-40",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "2.9976472896221315097042042407942746272585392669681603474776283654e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "5.876469207539347915565864864092686535928421325276233496108936024e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "6.8359223032490565024639962553177469019335959903447277448584311025e-30",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "9.8385246724204999307206866680133175330350679824150503969372418096e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "1.387587254256393390579985838939990888426723679613114995524421398e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "9.676813485383629868360111505361028437299745035359581105531809918e-49",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "1.0776272867594432411781537296156413330428656256324637225579030482e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "2.2498494632840708132639478097137212355599122887553131185174080829e-42",
+      "name": "sealed_full_twenty_Jacobi_time_tangent_bridge",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "6.5870090565694180877360500432344269741612513125531908623514558112e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "1.6506124113878386914056746085917647802888874714594669682919753478e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "4.08048532556963414877516675619683583926799575299038051938515676e-41",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "2.9979739681244947673682667936172519046905471126322295580129908487e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "5.8757741668961597651032779031551273496931949528472286934228029552e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "6.83511429880377406296237310473723187532338667937311035710693527e-28",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "9.8369575878511252018774887479264724506682023704544469662308030686e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "1.3878786596913512408311734419707464049244064381393149873675979757e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "9.6774525306023295056673243927519978509020969782908911250302936189e-50",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "1.0775214180436173838865113411696377554135356220270569691676611323e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "6.5870090565694180974832095119601182640199536037482855281395197003e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "1.6506124113928282215564666390645975635332860023131998117930959653e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "4.080484911105161941946548562254680268802601155573399945149182769e-41",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "2.9979739681244947673682667936172519046905471126322295580129908487e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "3.2802129431479925545854324164796030906105577145327288360129639409e-142",
+      "name": "time_mass_symmetry",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "5.8757741668844702720125269337688480115088557454920439041141663078e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "6.8342231418760172284848635645277457864532519734926216723941751409e-28",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "9.836957588092446392377545503956441031724006297493460986332172032e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "1.3878784057303579145295471526952797043897128379944483922554922273e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "9.6774493875895872099181753707959340505271741842823791777788845286e-50",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "1.0775214179976481176592917035197875240319280744392292576679555662e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "6.587157075545667995867724902018345360650202795152779500848413683e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "1.6506115958530107263156203668245970192321181763624153967956707846e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "4.0779698006957874216736468787316913440054538607467938557224593284e-40",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "2.9976472896221315097042042407942746272585392669681603474776283654e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "1.5641274181117975972106134493253722622921742031730312519135303216e-148",
+      "name": "time_mass_symmetry",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "5.8764692076562534954866582632213238325849150407098223905272531283e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "6.836011445676139635505742062976435283874602953497285113242750404e-30",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "9.8385246725901254770646657675294365651951601144449555925314107468e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "1.387587279658752007310875697761680413053380642401796362512362771e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "9.6768137995519741068468742349717010615985396048209444238172648977e-49",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "1.0776272872191734901011778409441248518302236908477415000159625856e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 0,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "6.5871570755456695771638048728327186869387016658424103675901688699e-53",
+      "name": "complete_initial_twenty_Euler",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "1.6506115959029051889666291646479777051542789571148071453705863579e-37",
+      "name": "actual_acceleration_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "4.0779697592926553313470412127622883250209263142584341078778411998e-40",
+      "name": "Hamiltonian_multiplier_rate_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "2.9976472896221315097042042407942746272585392669681603474776283654e-37",
+      "name": "initial_velocity_second_spatial_derivative_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "1.5641274181117975972106134493253722622921742031730312519135303216e-148",
+      "name": "time_mass_symmetry",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "physical_jerks_independent_of_second_multiplier_rate",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "current_second_multiplier_coefficient",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "scalar_jerk_shift_gauge_response_zero",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "5.876469207539347915565864864092686535928421325276233496108936024e-37",
+      "name": "actual_time_tangent_forcing_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "6.8359223032490565024639962553177469019335959903447277448584309978e-30",
+      "name": "unweighted_fourteen_jerk_steps",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "9.8385246724204999307206866680133175330350679824150503969372418096e-46",
+      "name": "complete_twenty_time_tangent_equations",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "1.387587254256393390579985838939990888426723679613114995524421398e-48",
+      "name": "independent_lapse_time_tangency",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "9.676813485383629868360111505361028437299745035359581105531809992e-49",
+      "name": "independent_three_shift_time_tangencies",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "1.0776272867594432411781537296156413330428656256324637225579030482e-42",
+      "name": "independent_original_regulator_scalar_jerk",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "2.2498494632840708132639478097099035299217977407517132904202210453e-42",
+      "name": "sealed_full_twenty_Jacobi_time_tangent_bridge",
+      "partition": 1,
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "3.0658302242463543557580606044394600263571971556037558543689866222e-48",
+      "name": "exact_parent_scalar_cusp_kernel",
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "cusp_partition_free_shift_response_invariance",
+      "passed": true,
+      "point": "interior_3pi4"
+    },
+    {
+      "error": "3.0658302242463543557580589972924555628775501400785532917192169681e-48",
+      "name": "exact_parent_scalar_cusp_kernel",
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "0.0",
+      "name": "cusp_partition_free_shift_response_invariance",
+      "passed": true,
+      "point": "interior_pi4"
+    },
+    {
+      "error": "2.6110510237543139672574964778939758590228379260396406453236004989e-54",
+      "name": "exact_parent_scalar_cusp_kernel",
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "cusp_partition_free_shift_response_invariance",
+      "passed": true,
+      "point": "node1_-1_0.001"
+    },
+    {
+      "error": "2.6112628157514331904996394898843928421042492482927956226080721603e-53",
+      "name": "exact_parent_scalar_cusp_kernel",
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "cusp_partition_free_shift_response_invariance",
+      "passed": true,
+      "point": "node1_-1_0.01"
+    },
+    {
+      "error": "2.6110510237543139672574964778939758590228379260396406453236004989e-54",
+      "name": "exact_parent_scalar_cusp_kernel",
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "cusp_partition_free_shift_response_invariance",
+      "passed": true,
+      "point": "node1_1_0.001"
+    },
+    {
+      "error": "2.6112628157514331902039252042049010727486038035213097951216251864e-53",
+      "name": "exact_parent_scalar_cusp_kernel",
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "cusp_partition_free_shift_response_invariance",
+      "passed": true,
+      "point": "node1_1_0.01"
+    },
+    {
+      "error": "2.6110510237543139672574964778939758590228379260396406453236004989e-54",
+      "name": "exact_parent_scalar_cusp_kernel",
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "cusp_partition_free_shift_response_invariance",
+      "passed": true,
+      "point": "node3_-1_0.001"
+    },
+    {
+      "error": "2.6112628157514331904755323470300864478632998913820766692803726787e-53",
+      "name": "exact_parent_scalar_cusp_kernel",
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "cusp_partition_free_shift_response_invariance",
+      "passed": true,
+      "point": "node3_-1_0.01"
+    },
+    {
+      "error": "2.6110510237543139672574964778939758590228379260396406453236004989e-54",
+      "name": "exact_parent_scalar_cusp_kernel",
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "0.0",
+      "name": "cusp_partition_free_shift_response_invariance",
+      "passed": true,
+      "point": "node3_1_0.001"
+    },
+    {
+      "error": "2.6112628157514331902296394899161612266056164508927433453378379668e-53",
+      "name": "exact_parent_scalar_cusp_kernel",
+      "passed": true,
+      "point": "node3_1_0.01"
+    },
+    {
+      "error": "0.0",
+      "name": "cusp_partition_free_shift_response_invariance",
+      "passed": true,
+      "point": "node3_1_0.01"
+    }
+  ],
+  "cusp_comparisons": [
+    {
+      "abs_w_times_auxiliary_jerk_difference": "0.00012411370844497238093282394722294955408448521095143083386349202705",
+      "auxiliary_jerk_difference": "0.08776164487965004096993268676202903543158601787950799429384",
+      "label": "interior_3pi4",
+      "scalar_jerk_cusp": "0.00000002272845214748327443454324276907051953539622950306241360249",
+      "w": "-0.0014142135623730950488016887242096980785696718753769480731766797379"
+    },
+    {
+      "abs_w_times_auxiliary_jerk_difference": "0.00012411370844497238093282394722294955408448521095143083386349202706",
+      "auxiliary_jerk_difference": "0.08776164487965004096993268676202903543158601787950799429384",
+      "label": "interior_pi4",
+      "scalar_jerk_cusp": "0.00000002272845214748327443454324276907051953539622950306241360249",
+      "w": "0.001414213562373095048801688724209698078569671875376948073176679738"
+    },
+    {
+      "abs_w_times_auxiliary_jerk_difference": "0.0001060714646561305050397006328478595142195064253019776986658539023",
+      "auxiliary_jerk_difference": "53.03574116735500511451863051636340224038295099464490372407152",
+      "label": "node1_-1_0.001",
+      "scalar_jerk_cusp": "0.00000000003214285178577082532028968818946896472358045940720767565",
+      "w": "0.0000019999996666666833333329365079420194003026294696173168380096290205"
+    },
+    {
+      "abs_w_times_auxiliary_jerk_difference": "0.00010607503692254093284519025152346682427315099529792467152658208953",
+      "auxiliary_jerk_difference": "5.30384024302244471510068683444939447804458052171618795438005",
+      "label": "node1_-1_0.01",
+      "scalar_jerk_cusp": "0.00000000032142321436876889968941342634968170943841760470712996833",
+      "w": "0.000019999666668333329365084876538199458077928770720338302067758224867"
+    },
+    {
+      "abs_w_times_auxiliary_jerk_difference": "0.0001060714646561305050397006328478595142195064253019776986658539023",
+      "auxiliary_jerk_difference": "53.03574116735500511451863051636340224038295099464490372407152",
+      "label": "node1_1_0.001",
+      "scalar_jerk_cusp": "0.00000000003214285178577082532028968818946896472358045940720767565",
+      "w": "-0.0000019999996666666833333329365079420194003026294696173168380096290205"
+    },
+    {
+      "abs_w_times_auxiliary_jerk_difference": "0.00010607503692254093284519025152346682427315099529792467152658209051",
+      "auxiliary_jerk_difference": "5.30384024302244471510068683444939447804458052171618795438005",
+      "label": "node1_1_0.01",
+      "scalar_jerk_cusp": "0.00000000032142321436876889968941342634968170943841760470712996833",
+      "w": "-0.000019999666668333329365084876538199458077928770720338302067758225051"
+    },
+    {
+      "abs_w_times_auxiliary_jerk_difference": "0.0001060714646561305050397006328478595142195064253019776986658539023",
+      "auxiliary_jerk_difference": "53.03574116735500511451863051636340224038295099464490372407152",
+      "label": "node3_-1_0.001",
+      "scalar_jerk_cusp": "0.00000000003214285178577082532028968818946896472358045940720767565",
+      "w": "-0.0000019999996666666833333329365079420194003026294696173168380096290205"
+    },
+    {
+      "abs_w_times_auxiliary_jerk_difference": "0.00010607503692254093284519025152346682427315099529792467152658208961",
+      "auxiliary_jerk_difference": "5.30384024302244471510068683444939447804458052171618795438005",
+      "label": "node3_-1_0.01",
+      "scalar_jerk_cusp": "0.00000000032142321436876889968941342634968170943841760470712996833",
+      "w": "-0.000019999666668333329365084876538199458077928770720338302067758224882"
+    },
+    {
+      "abs_w_times_auxiliary_jerk_difference": "0.0001060714646561305050397006328478595142195064253019776986658539023",
+      "auxiliary_jerk_difference": "53.03574116735500511451863051636340224038295099464490372407152",
+      "label": "node3_1_0.001",
+      "scalar_jerk_cusp": "0.00000000003214285178577082532028968818946896472358045940720767565",
+      "w": "0.0000019999996666666833333329365079420194003026294696173168380096290205"
+    },
+    {
+      "abs_w_times_auxiliary_jerk_difference": "0.00010607503692254093284519025152346682427315099529792467152658209042",
+      "auxiliary_jerk_difference": "5.30384024302244471510068683444939447804458052171618795438005",
+      "label": "node3_1_0.01",
+      "scalar_jerk_cusp": "0.00000000032142321436876889968941342634968170943841760470712996833",
+      "w": "0.000019999666668333329365084876538199458077928770720338302067758225035"
+    }
+  ],
+  "expected_source_order_pole_coefficient": "297/2800000",
+  "file_sha256": {
+    "interior_3pi4_lambda0.json": "7240d516134a8bdb400c0423e11f8c6906672899da56fab83102fa7485bb4448",
+    "interior_3pi4_lambda1.json": "0c952d815db58a4958eca34c37427297c7f11c421fae1ef841072e8012ddc66c",
+    "interior_pi4_lambda0.json": "aa004a4d38501ecab2102b6e5b1817c90409f71e4c83c9790bf0dea204836aae",
+    "interior_pi4_lambda1.json": "eaae963eeab774ceb9779507701e1d93b27db361e71690199e189735a7bdd2ec",
+    "node1_-1_0.001_lambda0.json": "7dfa52381d2ccee4a6f9c6e1a41166c5d0fff9cd328a3bb7eb5c118714868738",
+    "node1_-1_0.001_lambda1.json": "1f89b2bc1e320a8b1efde36b5d8f1a8d7ac047df71661b1705ef4e4412cc2d76",
+    "node1_-1_0.01_lambda0.json": "fadb3ccacf9994852d761844d4e17bd8fcd1f69376963d35e4ba05d9963a1a5f",
+    "node1_-1_0.01_lambda1.json": "ea4b0eba92c8cd94c266b4f7dd1172db6f0b7c0a29c5b3814fa0345cac2cd9c9",
+    "node1_1_0.001_lambda0.json": "021fcd77b6e39a937687dfee1eb02442025e2a3cfda9b1f6ce5ccb64e2ffa3bd",
+    "node1_1_0.001_lambda1.json": "4e97c78ba076bb80d4961c4df64ce946fb431dca3a043f15754ce11f88421962",
+    "node1_1_0.01_lambda0.json": "b41d9d2051d32c41fd88f92d4229e30c37cee6fc4ffc87a3a359056fa0ef7e27",
+    "node1_1_0.01_lambda1.json": "912ed6bfea2bbb656ca78693c699777e7e57ad8fc11aad65582cf01909ef96fb",
+    "node3_-1_0.001_lambda0.json": "cb52f3fbb31419f2cafbbe0ab732a74865740e83fcbb7276445028e059896a72",
+    "node3_-1_0.001_lambda1.json": "4d1984f5eae4f21e2eb02d019d54c67f18d7db492bc118983527f704fbe2ac18",
+    "node3_-1_0.01_lambda0.json": "6e59ac807abd7053e458eb4daa00febdfbd5e5149b1bf1b073a46a9c8eb1bdbe",
+    "node3_-1_0.01_lambda1.json": "e77c89f3398d0424a7b04e6891417aa41a4e719e7eb32af2109bdadd583d498b",
+    "node3_1_0.001_lambda0.json": "234bce5d3f3942ad32c9e5c6909f111eca2154767e3eec66f139eaed99c4223e",
+    "node3_1_0.001_lambda1.json": "78c0b58a7eb94eb9a4f058c3236eb4c89a66e8b5ce6b5114aca3b845cd8cef68",
+    "node3_1_0.01_lambda0.json": "d0209d06fee0aa5f04447f35069492315860ef39da92b12ef7ce417191b186f5",
+    "node3_1_0.01_lambda1.json": "04359329bb4e1bc5423cd0711b744c87cae3cbb368664feffaa249e6f83912dc"
+  },
+  "gate_effect": "NONE",
+  "mpmath": "1.3.0",
+  "nodal_time_tangent_compatibility_certified": false,
+  "partition_scope": "A=0 is analytic bookkeeping on the fixed physical root/fields/shift; no alternate mean-charge solution or parent adopted",
+  "passed": 306,
+  "physics_pass": false,
+  "result_id": "R4C1-TIME-TANGENT-V1",
+  "review_status": "DEFERRED",
+  "source_sha256": {
+    "Analysis/MasterTests/export_01_r4c1_unreduced_jet_v1.py": "1c4b4183fac8c245019d574113632221049bbf82e5be321fc7f13f30d2cecb9d",
+    "Analysis/MasterTests/outputs/r4c1_clock_density_source_v1_attempt_01/summary.json": "342ad03354a13a650ef73798c43066a5af9dcabe021abd4714a779a40e4ace90",
+    "Analysis/MasterTests/outputs/r4c1_constrained_principal_v1_attempt_01/summary.json": "652ae6656487c2cee1fbbc1a8e353f7681ccd83e993294e3e1ea11f178888824",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_acceleration_attempt_04/cases.json": "bcaa4b484426ca37eb6d63900e977071bf0ecd3f8fc1f29e48e7ae42c2a8d125",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_acceleration_attempt_04/equations.json": "4aa8b6ff0abea3840a4aaededd6a4a713a89a9c29477d23f1585ee8042723857",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_acceleration_attempt_04/summary.json": "9f8d5fce14a4fadf3052eafdf4ec5d0e4adbe3937be991d344ff126fa49f6019",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_completion_attempt_01/certificates.json": "e02cef26c9776f1c4df2b827995ddf2e887038fad886be5f3034bc5133a17cce",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_completion_attempt_01/summary.json": "e66ac815aada3fa577db841cc99d55f095115dc203956426a9606fc9ba41ac8e",
+    "Analysis/MasterTests/outputs/r4c1_coupled_node_dimensional_audit_attempt_02/audit.json": "273f50caceb1f8181c42f012b5e4b16a68f45b5f037f6a14915c78471365b64d",
+    "Analysis/MasterTests/outputs/r4c1_finite_band_domain_v1_attempt_01/summary.json": "41761b47e4256e48fad9d06fbad531c84c2b02a82f346432469c3cda2a074868",
+    "Analysis/MasterTests/outputs/r4c1_finite_tilt_canonical_attempt_02/summary.json": "ba203bf4c29ddf7834c5db2c2a7a98625343508ed3f24025a56b90438020d44b",
+    "Analysis/MasterTests/outputs/r4c1_finite_tilt_canonical_backend_attempt_01/verification.json": "97d4ca6c7dbe6a7af27e21529d40532944cffb8f5d92f9781a52708b3391557a",
+    "Analysis/MasterTests/outputs/r4c1_fixed_charge_retarded_comparison_attempt_03/trajectories.json": "3e36b9594ec4f186fff610a291011b6344b23ba98645922dfd7ad78d242ee4b3",
+    "Analysis/MasterTests/outputs/r4c1_full_initial_jacobi_v1_attempt_01/interior_3pi4.json": "b3533c58c652c607bd61007758059e16fff6ad977a9fecf2f9508636773dc815",
+    "Analysis/MasterTests/outputs/r4c1_full_initial_jacobi_v1_attempt_01/interior_pi4.json": "4f5886d1ca9c2c6b9c6e4ae668f019b4fb9a24f0cbc6b3e51d0ad95fe03d5df8",
+    "Analysis/MasterTests/outputs/r4c1_full_initial_jacobi_v1_attempt_01/node1_-1_0.01.json": "341e4d28b77c1e3f844c26b93f026eeb1787d8603a6924c8582a8354248a4cec",
+    "Analysis/MasterTests/outputs/r4c1_full_initial_jacobi_v1_attempt_01/node1_1_0.01.json": "3a0634f26759ebbacced9e965a983225dce1d8f48002d50e05930eb27585932c",
+    "Analysis/MasterTests/outputs/r4c1_full_initial_jacobi_v1_attempt_01/node3_-1_0.01.json": "64e2bf138db715b098ead597f5b550dc5ddb4d26a2c8bad26b4d00bae878c70f",
+    "Analysis/MasterTests/outputs/r4c1_full_initial_jacobi_v1_attempt_01/node3_1_0.01.json": "379b1141958461a2f42e09b2f9af5a05a256eeeb617b0fa8c1acaeee96f8bc58",
+    "Analysis/MasterTests/outputs/r4c1_full_initial_jacobi_v1_attempt_01/summary.json": "a431db3471b5ec87cf0d25313feb90016f4cf9c9990f997a3320839b8f29d1a1",
+    "Analysis/MasterTests/outputs/r4c1_full_weak_action_v1_attempt_01/summary.json": "2f4d3404eb587f362ee285b7fe3cfa99bdfcb7be5b643d3f2ff9133fdf84cb27",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_01/formulas.json": "08058e16cf87399b7f59e130f364dee99484ee41f6e122b6828e5407fd7ac19e",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_01/independent.json": "bb0c6c71355c8a8da7c4c614af5f6eff940d2341f7ff4ebf307c204a05e07220",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_01/summary.json": "4035b08090b924deff25d6e485c3e0755a58e1c7dd443d2e526a02f95d24be25",
+    "Analysis/MasterTests/outputs/r4c1_global_nodal_lift_attempt_02/summary.json": "28ec677f75404d9e48431d1c1c7dc8ffcce99f70e18dfc9b66f0be7cd6f3778d",
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/certificates.json": "7c3465014fd85d7a98b905eed721c907f2f7764ccefadf856680ecf068d7127a",
+    "Analysis/MasterTests/outputs/r4c1_initial_admission_attempt_01/proof.json": "b96ee17ec3d3f14500d0bf59d786411f5e241cbbb238ef49f3dc34657a18646b",
+    "Analysis/MasterTests/outputs/r4c1_initial_charge_completion_attempt_04/formulas.json": "b1f62daaebdb1602ccc20350669b22aeb601d7e8d8cccad4626e420e317bb6f3",
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/formulas.json": "beaf647957a18ddd14881333de29cebc9a567ffcc62a9b4d775153984a0add73",
+    "Analysis/MasterTests/outputs/r4c1_initial_constraint_attempt_01/summary.json": "586fe456022419f65965750ecc3137cf74b6eafb84f3a4dec670f2f611f51b3f",
+    "Analysis/MasterTests/outputs/r4c1_joint_background_acceleration_v1_attempt_01/summary.json": "ae70906b2fbe22e88afb087a7efd00245f8b49409953349d03061c8d7188c746",
+    "Analysis/MasterTests/outputs/r4c1_joint_node_velocity_attempt_02/certificates.json": "76b4870fda66c9a85c85dcc282d4934a8ac09337a81c469d3a152f89511963cf",
+    "Analysis/MasterTests/outputs/r4c1_joint_node_velocity_attempt_02/independent.json": "b399814e46e660b7ad52ef03f5c2e4ce262c5e3f815162ad3f9f35be47d0459e",
+    "Analysis/MasterTests/outputs/r4c1_joint_node_velocity_attempt_02/summary.json": "f1d662d6d9a44eb03df285a541950b0886119c7fc02223408f73855725e7e6f9",
+    "Analysis/MasterTests/outputs/r4c1_nodal_descriptor_attempt_01/formulas.json": "280ee1834ef44e3428990563baa98951a2c43a147b5464dc2b04c8b66fafcfd2",
+    "Analysis/MasterTests/outputs/r4c1_nodal_descriptor_attempt_01/independent.json": "3d4da9e9865424209dd616053deba58a8ea0dd0e10ad3542612f940e06196074",
+    "Analysis/MasterTests/outputs/r4c1_nodal_descriptor_attempt_01/summary.json": "4a534ce4d1245820a5796a887e1a65d2744a2d8d7d4bdfda861233aa1c3cf61f",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_01/independent.json": "15330fbfe01c1ef4aefe953282390373a04b18cad5017b20e408675c37d42a09",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_01/summary.json": "69270f59143ef1a381074c1851aaef0d99836ac3a459ff61af2ac3145d63f4b3",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_02/formulas.json": "a99cedccfa53fb81492dbe7bc43b048ca8d29294050dd2dea95d90b5b750bd5f",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_02/independent.json": "68eb656f7321da43e05e2b4467c94021061b71638275fa369d16ff67df78d3b7",
+    "Analysis/MasterTests/outputs/r4c1_nodal_momentum_tangency_attempt_02/summary.json": "6cad75fa82d4bf9cc64074f834837910aedc9ccc69e6c8f2ce604c967293aabc",
+    "Analysis/MasterTests/outputs/r4c1_node_acceleration_attempt_02/normalization.json": "447192694f9d65cd7791cfe93444dfe9a7d2566dfc99f453f590ae00825c668f",
+    "Analysis/MasterTests/outputs/r4c1_node_acceleration_attempt_02/summary.json": "825e3e39624d4533bcfb0e9db115cbc4695794f300d1f69b31463710f2c38804",
+    "Analysis/MasterTests/outputs/r4c1_node_velocity_transport_attempt_02/equations.json": "01b75e280f4d23340d7e5fe87854b00981e0a5443ed45113270bfc594b47a18b",
+    "Analysis/MasterTests/outputs/r4c1_node_velocity_transport_attempt_02/summary.json": "0bf9482f7addd5fa1a1d66d4aff19b3562fd5cecc19e96f1b099040e5a658c2e",
+    "Analysis/MasterTests/outputs/r4c1_normalized_adm_ward_v1_attempt_01/summary.json": "d3e6afd41a995c2f2ef5144f2b14b5a4ae6d990d50063856972d7d2194ccd9a9",
+    "Analysis/MasterTests/outputs/r4c1_normalized_adm_ward_v2_attempt_01/summary.json": "3ee19a8c481126be7bbf18fb0084893da9ff203721d613e526f157add91076e4",
+    "Analysis/MasterTests/outputs/r4c1_planar_coupled_vertices_attempt_01/formulas.json": "852b657c9023244a76cc49494b6adb08510d4eeb74bd95ec390ff11bc6b0789a",
+    "Analysis/MasterTests/outputs/r4c1_principal_source_compatibility_v1_attempt_01/summary.json": "7ff7adb23c832dc7bc801ad8dc4c4ec2ceb2ecdb66fd037b22aefa5de1a24f58",
+    "Analysis/MasterTests/outputs/r4c1_quartic_charge_tangency_v1_attempt_01/summary.json": "bb1da6eefe1f0d769745498956ab1f3d100f83e0e5b64871c82135edd63b4c61",
+    "Analysis/MasterTests/outputs/r4c1_quartic_charge_tangency_v2_attempt_01/summary.json": "d9879aa6c6c5e13ef4a5a7c0a60a54127e6a8d09c6d209976c496ede566fa359",
+    "Analysis/MasterTests/outputs/r4c1_quartic_complement_force_v3_attempt_01/summary.json": "41d889e9a55a2a6f35c919c23c97c4b764094ea0c8c25b17ece4c6a4a3ddda61",
+    "Analysis/MasterTests/outputs/r4c1_quartic_cusp_remainder_v1_attempt_01/summary.json": "c662c4261cd6496b053979ab6927b7be7fec87520556d7cbffadf453a883879f",
+    "Analysis/MasterTests/outputs/r4c1_quartic_initial_extension_orientation_v1_attempt_01/independent.json": "07b5687ba7f7eec31ab20dffdd638729ed2d9b4f5ee2d5c12e243642e9a481a2",
+    "Analysis/MasterTests/outputs/r4c1_quartic_jerk_transport_v2_attempt_01/summary.json": "426c6e781f7f113771d9afd92a9fc83aa968409246360a7f367ab8f1ab252e63",
+    "Analysis/MasterTests/outputs/r4c1_quartic_joint_completion_v1_attempt_01/summary.json": "2df2eb08f06243ca1ef60152a17921d17c7755bbca18fbd59bc33ab27f45acb0",
+    "Analysis/MasterTests/outputs/r4c1_quartic_kinetic_extension_v1_attempt_01/summary.json": "4b68c9ae0cf43350caad2b94f70e557a795aacd7eaa61fc5f258eb05f8b4d689",
+    "Analysis/MasterTests/outputs/r4c1_quartic_kinetic_extension_v2_attempt_01/summary.json": "18d56b68030c19c7c48bf27c670deed597a57c1d2f2432b5e459156af3a06765",
+    "Analysis/MasterTests/outputs/r4c1_quartic_scalar_bound_v1_attempt_01/summary.json": "f74df107b91e466e2c8d3c9d79107d968e2456beee16b26210adde7d43b1d756",
+    "Analysis/MasterTests/outputs/r4c1_quartic_scalar_quotient_v1_attempt_01/summary.json": "0f8f49732d09fe5e2095c120ef7d2d6e479888ba157863eef156d5dd2a0b11dd",
+    "Analysis/MasterTests/outputs/r4c1_quartic_total_jerk_v1_attempt_01/summary.json": "fd5f9b4d3e84f02548a8c2b34174aa2fb3cd8870c0f26b5280919ba4ff69f9b6",
+    "Analysis/MasterTests/outputs/r4c1_quartic_vector_node_jets_v1_attempt_01/summary.json": "8995885054f651a0d2d9d5344e98ac1a6345019d901ad3d65e0cd23b96122b97",
+    "Analysis/MasterTests/outputs/r4c1_second_node_consistency_v1_attempt_01/summary.json": "2fe36ca4652b276172fe3473897655d41c9e4a4f18be3f4e915e5f363cef23e2",
+    "Analysis/MasterTests/outputs/r4c1_second_node_enclosure_v2_attempt_01/summary.json": "ad053bf3d816bad7983281ff9d16cf52671398face84249ced7e4f47b51afd24",
+    "Analysis/MasterTests/outputs/r4c1_unreduced_jet_v1_attempt_01/interior_3pi4.json": "fee88534e7455d9bf032d1a1334618ab7d83f36b10d004bcabab23a4b9a26ae3",
+    "Analysis/MasterTests/outputs/r4c1_unreduced_jet_v1_attempt_01/interior_pi4.json": "73966314ecda242eefd5f6954cc4566a650949d7e432f52520da31621ecb26d1",
+    "Analysis/MasterTests/outputs/r4c1_unreduced_jet_v1_attempt_01/node1_-1_0.01.json": "5ab734f1ff764c46a1009372b7cd4eb8465b4c13cd8d67cb7b7315d020c018ce",
+    "Analysis/MasterTests/outputs/r4c1_unreduced_jet_v1_attempt_01/node1_1_0.01.json": "77c38057c20d6a39c209066dfe82a1144119e0874412e4110e9f9db065c63c17",
+    "Analysis/MasterTests/outputs/r4c1_unreduced_jet_v1_attempt_01/node3_-1_0.01.json": "f51dccbb13ca56e18155d2be683132ce98dddc6d95eca094934eb44e0bd526c9",
+    "Analysis/MasterTests/outputs/r4c1_unreduced_jet_v1_attempt_01/node3_1_0.01.json": "63245effc886d264a2a7b79d823d8422ed6f585bbf645eae8cbb40d75af09a22",
+    "Analysis/MasterTests/outputs/r4c1_unreduced_jet_v1_attempt_01/summary.json": "ddc97689a189fb07c5fffe8e4a4052694f6d7bf9d67a35e26ec95c6a3b5fbde4",
+    "Analysis/MasterTests/r4c1_full_weak_action_v1.py": "330f25196806450238a71459873a3353036fac4ef15cab53da665ecbaa501105",
+    "Analysis/MasterTests/test_01_r4c1_clock_density_source_v1.py": "e7bb9154c361fc3825afc7520a5feb75a4d153d6ab0c8fda3fca2f0d7979df18",
+    "Analysis/MasterTests/test_01_r4c1_constrained_principal_v1.py": "36e9d3cd88bfd85a33b7160a5390490ef3f0b9385b5b57a197a8b9a4393f269d",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v1.py": "790ab9b0884a14f5ed389e997c8a2bc65fc0f530ae0b1db502dd49c0e8d3008f",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v2.py": "3132188c8b2e061c9617cd35308f699e13223c120c03b1513bc854a74b4d1043",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v3.py": "881e58aaecbb8b3f2133bc2cbf3bb55716cf4e6e703181b3fbe8ff5e5df55205",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_acceleration_v4.py": "c6a7e31c2f63d8e6481d2e5a4b4f2725ce376f3de05ab639594a7b9e991f1ae7",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_completion_v1.py": "6fe275eed4aef446978809f12225af8aac16a546bddada8709d5a0ace9911a88",
+    "Analysis/MasterTests/test_01_r4c1_coupled_node_dimensional_audit_v2.py": "75b74f737e4b4910058c8ab50c3ef6d96c3d5a318a5fcca784bbfb9edfcd78de",
+    "Analysis/MasterTests/test_01_r4c1_finite_band_domain_v1.py": "bcf6443befb43c88976a5b2656d7a03941770a603dc46c71f988a41ca3eae698",
+    "Analysis/MasterTests/test_01_r4c1_finite_tilt_canonical_v2.py": "4c2a64f45741161ccacdb75bd0816e5113a9d0b95ba2aa402584f2cb8533dada",
+    "Analysis/MasterTests/test_01_r4c1_fixed_charge_patch_momentum_v1.py": "e8e8837e6c70b6f8cb8db2a1daefca0054b2da9e95a0aaf189edf348e6b6c661",
+    "Analysis/MasterTests/test_01_r4c1_fixed_charge_patch_momentum_v2.py": "2706b05764eea2b9a34dc7be73f78022933a8c444e54f5c8b47b8ceb33fce74f",
+    "Analysis/MasterTests/test_01_r4c1_full_initial_jacobi_v1.py": "65c548b8ef92114a2842b0062c94a35b5b779aa6da74e651c9fb8f7b6d3f16ea",
+    "Analysis/MasterTests/test_01_r4c1_full_weak_action_v1.py": "3df13a8c5d550073796c7e94737dfd9591ef6f5326dfdbf74f865eacab7595bd",
+    "Analysis/MasterTests/test_01_r4c1_global_nodal_lift_v1.py": "052000518f5c745a028aba3def170c1ae0b6b276c8a124aab3c5cbec70a9c6ee",
+    "Analysis/MasterTests/test_01_r4c1_global_nodal_lift_v2.py": "8ff1ccdd3c47c151276c21f968e355d032ec75698a300918546d19ffe0892cce",
+    "Analysis/MasterTests/test_01_r4c1_initial_admission_v1.py": "d994707a9261e276b6d9fcb3377acfd75387ce8cdac10f7756e2f791c5787e0a",
+    "Analysis/MasterTests/test_01_r4c1_initial_charge_completion_v4.py": "af22270b76b72d29a04bdfba366464bcc2482ec5f2e41f5ffe66061fee7f4020",
+    "Analysis/MasterTests/test_01_r4c1_initial_constraint_v1.py": "6ba9c73d71d2ef9dd3fc59f34d5fe781d528d5636a29a85bed748290bda989ff",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_joint_background_acceleration_v1.py": "2cbb055c8a4172ef9e75daa7b80a92c5f979aadc817e29d7cace6115adb47ec5",
+    "Analysis/MasterTests/test_01_r4c1_joint_node_velocity_v1.py": "dd3a132ac557d5d631b9e7b7bfdfdf17edc9dd1e9b073b06418309ae43a8e631",
+    "Analysis/MasterTests/test_01_r4c1_joint_node_velocity_v2.py": "e10bf2f7b20e871cd93fd10b00f1ed6f43f648f60b9282e15205e277d29e3d3d",
+    "Analysis/MasterTests/test_01_r4c1_nodal_descriptor_v1.py": "86b1c665d2130fd48fb75fbb6b5aa4fe5ee7518dbd2a1a5b3e7c34646573343f",
+    "Analysis/MasterTests/test_01_r4c1_nodal_descriptor_v2.py": "b19f4ce9a665d711b3be021cfa149fe3b4753851e1c11d99bc705156537f8bf5",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v1.py": "77b8b7d45ca9ea6b16fbea175c162ca98355382bf72b1ee26026b97437181a08",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v2.py": "4dd1be8d7cfe8877841b380227c2c24f2d41ed1146ccf12781cdd28881f2e253",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v3.py": "b887c7a52102b7abb43a2875cb6e01607ecb46d39a95f4abb4cefab9795a73c0",
+    "Analysis/MasterTests/test_01_r4c1_node_acceleration_v2.py": "1e77ba8e8fc9d09d3e7e4a3a556405fa45dd5ce0dbf89580ff7ae2df106a9a7c",
+    "Analysis/MasterTests/test_01_r4c1_normalized_adm_ward_v1.py": "9cf843a2dd4e89fe38fee6c05930badf148280bbd08f193cc93fa0acc9ae0a22",
+    "Analysis/MasterTests/test_01_r4c1_normalized_adm_ward_v2.py": "0c040f9ca4ca76ec31835fda7b8ab25273eb3e33997beb4680b5453bc6d2f912",
+    "Analysis/MasterTests/test_01_r4c1_planar_reduced_hamiltonian_v1.py": "f03a2b9ac794569994be8112b0ba1746b8e596669c2d693c9c7310bd48cab27b",
+    "Analysis/MasterTests/test_01_r4c1_principal_source_compatibility_v1.py": "6c8a31669e7fd69829cbb01ac8cee62a310853d5e3846f1ed350d8c3fe65dd03",
+    "Analysis/MasterTests/test_01_r4c1_quartic_charge_tangency_v1.py": "c7de9f92e7959bd08d8f06315ce5c0556f80250061fbe8d0daef10cda2992def",
+    "Analysis/MasterTests/test_01_r4c1_quartic_charge_tangency_v2.py": "2122f6892b9936c7d30ea581d4ed2cb1b90a0d4fec9f0019de3963057d49f9c6",
+    "Analysis/MasterTests/test_01_r4c1_quartic_complement_force_v1.py": "c9b19d86391703d8386d8845c927d969d25567282a3c1d665c95a413a15b830c",
+    "Analysis/MasterTests/test_01_r4c1_quartic_complement_force_v2.py": "ee07404a2d638624646d5c70ebda6f2919ea8f2e5a26b849c856d4e383f2601b",
+    "Analysis/MasterTests/test_01_r4c1_quartic_complement_force_v3.py": "06b604440db67acdd9dc3d9282fbdfbca2996cb0e9250d02a0cae61c62c55c15",
+    "Analysis/MasterTests/test_01_r4c1_quartic_cusp_remainder_v1.py": "3eea3f3f8b604db6c24ba9ea5869a0ef08b08d598ead5dff8d4c4f91ce8f2f16",
+    "Analysis/MasterTests/test_01_r4c1_quartic_jerk_transport_v1.py": "f1c5fabe603ab19bb5b02db653771899e1158111e95dcc81820ce6e354b346b1",
+    "Analysis/MasterTests/test_01_r4c1_quartic_jerk_transport_v2.py": "ee3699564f2cd62a168c40b7caa8040b7c79405a5d6df665b0ab725e492f0f50",
+    "Analysis/MasterTests/test_01_r4c1_quartic_joint_completion_v1.py": "d68534ae03c4420f46318cf3906323ba972d68b4b713d0d6f31ef7ba264374a4",
+    "Analysis/MasterTests/test_01_r4c1_quartic_kinetic_extension_v1.py": "083fe670886cc2d1fdfc222ac61d28c2c4aa66a6ce12d91ffdfa67b19a335000",
+    "Analysis/MasterTests/test_01_r4c1_quartic_kinetic_extension_v2.py": "27b57c329c1ddff413d6a3adfa39e8379366fa2240b7d370244497c222711af6",
+    "Analysis/MasterTests/test_01_r4c1_quartic_scalar_bound_v1.py": "1e65cb774e5ff1c349ddfc45e34a356260cced1cb1e19912ac119b4c26a1ea0e",
+    "Analysis/MasterTests/test_01_r4c1_quartic_scalar_quotient_v1.py": "d11d6e9006bd515c33336fcd2788c4995833b3f4bab8381a7c6e041e9d25c352",
+    "Analysis/MasterTests/test_01_r4c1_quartic_total_jerk_v1.py": "cc75d965e68c8ffb39dcc619588414d1cf30f6f0e2d4b002044e9395e8db233c",
+    "Analysis/MasterTests/test_01_r4c1_quartic_vector_node_jets_v1.py": "42d069e091c56c746b225167da2edbee737e25324c9ed9db0ca6984728e2a79a",
+    "Analysis/MasterTests/test_01_r4c1_regulator_acceleration_regularity_v1.py": "d5c17a544394aa3d46b51ef467fe9d1ddfbc650bb07feb63d4467d0adc2b502a",
+    "Analysis/MasterTests/test_01_r4c1_regulator_node_v1.py": "7126d03a3b3a3a525bf1ce4c8b31c8541901f9d7c45ad82c288db71cc97cfa25",
+    "Analysis/MasterTests/test_01_r4c1_second_node_consistency_v1.py": "ac57695e82d0604a53d5bc822a9d4bd81a8a82cf7b59e98113b604ddfd9dec0d",
+    "Analysis/MasterTests/test_01_r4c1_second_node_enclosure_v2.py": "5a7d293d2db11ff4d542a65fdfa3abf653b5efcd84afaa5214a25cfcf0078314",
+    "Analysis/MasterTests/test_01_r4c1_time_tangent_v1.py": "43a4226cd199f5f17ef036f2c78059dd5519c96878404bb300cc80985a27132d",
+    "Analysis/MasterTests/verify_01_r4c1_quartic_initial_extension_v1.py": "c7b02564a7e7c499f0a1cffbc297233b200230a3b1186ecae084dd9e00be02d7",
+    "GEMINI.md": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12",
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa",
+    "Theory/Core/ITSM_DUST_GR_WEAKFIELD_EXECUTION_PLAN_2026-10-11.md": "14bf01842d7fa573c22d78f021ec815421fb01a4b97fee806c1fbed22b676519",
+    "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_CLOCK_DENSITY_SOURCE_V1_CONTRACT_2026-10-29.md": "22a79dea8b8feae8368b71cacc2e2a1ae24a73744300e57f63398f62e54411de",
+    "Theory/Gates/RES-001/RES001_R4C1_CONSTRAINED_PRINCIPAL_V1_CONTRACT_2026-10-28.md": "26ee2360e3d1fb00fa4c4d6680d780d21ba28354ad3e98113df826ef6646802c",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V1_CONTRACT_2026-10-18.md": "4d56686ae98c33ee532f324b7fcdd4702c38da19401fa0b5d4ca894fa58c69ba",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V2_PARALLEL_ADDENDUM_2026-10-18.md": "67525e65ee101f893b4829ce1e73b50db0ad1dd414ea2885d150646629d6ea00",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V3_EXECUTION_ADDENDUM_2026-10-18.md": "b02d70c9d164366cadfd4eff29e1906f1b61e76a5f71eb324a1f3a6a294f11d9",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V4_ALGEBRA_ADDENDUM_2026-10-19.md": "64f2fe71410a9a2e3c70bffbb3955bc9ba4774fa73ba33d567820e4a88f8efd6",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_ACCELERATION_V4_REPORT_2026-10-19.md": "d5e15cc6545b76038213fa4e1560725b437455ccea6b381be52be762f5393da7",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_COMPLETION_V1_CONTRACT_2026-10-18.md": "b63c9f3106d5b86c080a63c30b6fdb8ff188bdc08069c286b97d95b52966381a",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_COMPLETION_V1_ENDPOINT_ADDENDUM_2026-10-18.md": "a901a269e762ba0e844f94edcfef103fcd84f50fa3b1e7b03d4bea4691266ff8",
+    "Theory/Gates/RES-001/RES001_R4C1_COUPLED_NODE_COMPLETION_V1_REPORT_2026-10-18.md": "833dc0f5217a39b5017694d0a3fbd40fa8a4886bb0eb7a2634b1d0d2756b06ab",
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_BAND_DOMAIN_V1_CONTRACT_2026-10-29.md": "f21867986099e7ddc3a6372e0af289f1bd4de0561907b48440e5f22e60505fed",
+    "Theory/Gates/RES-001/RES001_R4C1_FIRST_VARIATION_REPORT_2026-09-25.md": "4834ea7517fd0393015e1d94fa1c130d84e2796b0ae1667712c2b5cf4653692c",
+    "Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_PATCH_MOMENTUM_V1_CONTRACT_2026-10-19.md": "0f10ec33f71edfc11965286a08a96feb317b00e813716cbfae246856826baf09",
+    "Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_PATCH_MOMENTUM_V2_REPORT_2026-10-19.md": "1249a068491a7e280f657a7c95ffe5d1ae174009640e5b061150c82fc91e2674",
+    "Theory/Gates/RES-001/RES001_R4C1_FIXED_CHARGE_PATCH_MOMENTUM_V2_TYPE_ADDENDUM_2026-10-19.md": "90ab0c2ffa684c459af1a66c14e95e02e7c7805481eae2d7e34c2019c31d1d5e",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_INITIAL_JACOBI_V1_CONTRACT_2026-10-29.md": "3c5b2c31b5aaddc6039e838568fb10f4a71a7ba3ff71045271859899c5e1577f",
+    "Theory/Gates/RES-001/RES001_R4C1_FULL_WEAK_ACTION_V1_CONTRACT_2026-10-28.md": "dca8dd2eb99e7466bbe32276c25aae83fcc3049775ea061354e149f91cac9486",
+    "Theory/Gates/RES-001/RES001_R4C1_GLOBAL_NODAL_LIFT_V1_CONTRACT_2026-10-19.md": "bc94c33a7b2e1bb6793c43afe32272732cc845b9e058cb2f11c608d4d038297b",
+    "Theory/Gates/RES-001/RES001_R4C1_GLOBAL_NODAL_LIFT_V2_FLUX_ADDENDUM_2026-10-19.md": "9730305c00a173905f3c2f2d4b6742338cd8b2a1dc31ed9a8451ff5936486de5",
+    "Theory/Gates/RES-001/RES001_R4C1_GLOBAL_NODAL_LIFT_V2_REPORT_2026-10-20.md": "88549485969e0d85ed216afb0ab5ba2c7ab8a577c65bd096fe969f1172024793",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_ADMISSION_V1_CONTRACT_2026-10-18.md": "88b0ddb963912de6ddca377108361bcb9a584686826a6934bdc598adb6b0a7a2",
+    "Theory/Gates/RES-001/RES001_R4C1_INITIAL_CONSTRAINT_V1_REPORT_2026-10-18.md": "44113ba26531526435206a520495e56e5d57cae3c8e6843595a0dc871d9dd305",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_BACKGROUND_ACCELERATION_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "fd87f4ae2c54893af0409d3a2ce4fb136a0f00d17024f3ccf3634d51317df101",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_BACKGROUND_ACCELERATION_V1_CONTRACT_2026-10-27.md": "3b1d7093ab44fe21d688521c58eba10fb0ac1fec25d398e247b7a3fba3bc657e",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_NODE_VELOCITY_V1_CONTRACT_2026-10-19.md": "1733f68993e70a4d73c365acdfaadf6d5df1c71f3541148987ea4c0fa6da7009",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_NODE_VELOCITY_V2_MATRIX_ADDENDUM_2026-10-19.md": "4c24eb869130aa8b13fbecaeb2c9799b525a10823708ffc3e78e58b743ccef97",
+    "Theory/Gates/RES-001/RES001_R4C1_JOINT_NODE_VELOCITY_V2_REPORT_2026-10-19.md": "55c4f55a51cec51f5c9b0e731165c47546bed1daa1f8b7a06167af3ef99e51ea",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_DESCRIPTOR_V1_CONTRACT_2026-10-19.md": "1cd091d3f41e51e5face8bead912c765124cc54a8eb75f37968c18ae6bdb7e2b",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_DESCRIPTOR_V2_BINDING_ADDENDUM_2026-10-19.md": "8ad10bc9ef42496713d66d82b625922249327c0563cee1f2ab4dbf3cc92b6b83",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_DESCRIPTOR_V2_REPORT_2026-10-19.md": "bb8f83e2e234609a10a755777e3031990037822a99fd4482115404d4cae49d3d",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V1_CONTRACT_2026-10-20.md": "ff588ca6e50798fd25242d2976d71ed58e562a37a8558be03266c18a986ede2b",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V1_REPORT_2026-10-20.md": "d71b05ae29f5042ba13a7dcf00f2047e1dce03a6fc5f5665bdd603798bfc3f4d",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V2_PRECISION_CONTRACT_2026-10-20.md": "cb960191f1a9270613c2f2c03fa82986ccae351d48a979115fc8c72e3d8da964",
+    "Theory/Gates/RES-001/RES001_R4C1_NODAL_MOMENTUM_TANGENCY_V3_WEIGHT_ADDENDUM_2026-10-20.md": "df86efc15fa0ae37957114909309df5772592b4abd629269928e967fddb59032",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V1_CONTRACT_2026-10-18.md": "4e81b770bcf5ad3b999ce34af37326803c1f73aba852b21f1d0bafb75c2a5f96",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V2_PREFLIGHT_ADDENDUM_2026-10-18.md": "255484635f5a6f665ce65484cb665d640951e8b7400f482c4289a8ca99cfb0eb",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_ACCELERATION_V2_REPORT_2026-10-18.md": "7fc348b923e55a8807fe597897fbbd1af20e1d5969260f7f31efa4c2dfc58d87",
+    "Theory/Gates/RES-001/RES001_R4C1_NODE_VELOCITY_TRANSPORT_V2_REPORT_2026-10-18.md": "c4ae109ab38d7574d4755f03598aa5d55928ec4f9ee5975ac2a8f2fa581dd05d",
+    "Theory/Gates/RES-001/RES001_R4C1_NORMALIZED_ADM_WARD_V1_CONTRACT_2026-10-28.md": "9894aa72488f1c7a25a6eb4033e5a8179cc062d07aa952c64f837899ccc8e64f",
+    "Theory/Gates/RES-001/RES001_R4C1_NORMALIZED_ADM_WARD_V2_CHAIN_RULE_2026-10-28.md": "c7f263021c565c295ed6c22b23b935c79debb479358199c198013f0b2b19a1aa",
+    "Theory/Gates/RES-001/RES001_R4C1_PLANAR_REDUCED_HAMILTONIAN_V1_CONTRACT_2026-10-19.md": "b61365cab8e359cdb9d542510f5138405bee75394f4e8a3abf9bd182d2bb0b55",
+    "Theory/Gates/RES-001/RES001_R4C1_PLANAR_REDUCED_HAMILTONIAN_V1_REPORT_2026-10-19.md": "175c41f50b18bb32c6b1b38edb255e61bcd656643f226c8e49171545c051c673",
+    "Theory/Gates/RES-001/RES001_R4C1_PRINCIPAL_SOURCE_COMPATIBILITY_V1_CONTRACT_2026-10-29.md": "eb6814f7ec60f5f7fcaa8c51e1d00b2fd2ecb414d5596015c7eca0bb24ac0449",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_ANALYTIC_FORCE_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "ce79dae898a40ca790afd3ebba02bbcc7bcf23656a90039142ad33bbbb065334",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_ANALYTIC_FORCE_V1_CONTRACT_2026-10-27.md": "00c31775f74143c7bd953f9ecb9e768141ab5f2a3056f35fb53b3bd998e2a551",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_CHARGE_TANGENCY_V1_CONTRACT_2026-10-28.md": "8a85eb95289c160b1f588a0cbeb0250347dc634a43f6edf4c2f766fdb66109ba",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_CHARGE_TANGENCY_V2_NORMALIZATION_2026-10-28.md": "5098958d67eb82564b63b9998ab937592035b900fe515f424e23b0fce8e6b298",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_COMPLEMENT_FORCE_V2_IMPLEMENTATION_NOTE_2026-10-27.md": "42dce2ca49a034f761d77597ed2ac94f4ebcf572e8c1ea3c42f67af043020882",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_COMPLEMENT_FORCE_V3_IMPLEMENTATION_NOTE_2026-10-27.md": "be46bebb3af7d5f984879bca731afa2929eaf805c5d6043f0313ddba3ef76aea",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_CONSTRAINT_TANGENCY_WORKING_ALGEBRA_2026-10-28.md": "d149fc0a14eac3f6731bea6546f40e074f37e05494abf48e28ef11826a302a99",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_CUSP_REMAINDER_V1_CONTRACT_2026-10-27.md": "c6be394600db982c977cfe065d1795cc0bad5ea0a3c8b7f7d8c87982dcdcb11f",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_GRADED_TRANSPORT_V1_CONTRACT_2026-10-27.md": "13e3a719f220ef8aebf9aefac0de27f041ed125af606a281c99a16812354acbf",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JERK_TRANSPORT_V1_CONTRACT_2026-10-27.md": "680fc5603f3a91a598fd6f5bcc903e0a435f56301e345c2edf1bef32b50579a0",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JERK_TRANSPORT_V2_IMPLEMENTATION_NOTE_2026-10-27.md": "fc696871a8b4eea1267193356da608c8cedc45e83b1c4bceadc5bebdf66fa427",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JOINT_COMPLETION_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "ffd307da06f991688f22db9459904365e4b574d35a30df3d6d8724eed7a0bd73",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JOINT_COMPLETION_V1_CONTRACT_2026-10-27.md": "4e4834aff41237fc03235d48c9afa12ab0bc4ac1e0c2116b33f10cf72d03ab16",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_KINETIC_EXTENSION_V1_CONTRACT_2026-10-27.md": "e8a74124ecd92d9ee57fbe1291fc84710c6438dff7822d294ca57eb0b5708642",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_KINETIC_EXTENSION_V2_IMPLEMENTATION_NOTE_2026-10-27.md": "ce15e728ba44a3ccd03ae9c8f560c6cba944a484ccb6b705aea8404b4271a7f3",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_SCALAR_BOUND_V1_METHOD_2026-10-27.md": "1c8b978cdf889e2c4c2962bff2b965b0a12b2b068abbea01d281cad314f37e01",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_SCALAR_QUOTIENT_V1_CONTRACT_2026-10-27.md": "fc9a11ce1f5c90d98f362b6256fcf1287e81a3cbd502ea4b25fb97234439d233",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_TOTAL_JERK_V1_METHOD_2026-10-28.md": "74f38594bb9a233733569a0e44bf52513efa161765cec13057565fb2722d1ff7",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_VECTOR_NODE_JETS_V1_CONTRACT_2026-10-28.md": "a777ec108023a7092f3f885b748b9bf9746efd6a40d197fd16bf3efeaae929e5",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_ACCELERATION_REGULARITY_V1_CONTRACT_2026-10-19.md": "59462dfb66d34db504ccf152addffcbbfbc8afa8ba58618f982bf8961ece2b06",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_ACCELERATION_REGULARITY_V1_REPORT_2026-10-19.md": "fb0e6a0af5ce70e4fb5bc34541dd99fa4274f44b915c3070097745e81566105f",
+    "Theory/Gates/RES-001/RES001_R4C1_REGULATOR_NODE_V1_REPORT_2026-10-17.md": "b47dcf5e7fc340a015f2e7cdf273157bc6e2e1ba311bbc543a5f66596dbc83d2",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "aaf147530f242bf85abd9969d25648e01a83c34fe389dfbfb2b032c41db60bc8",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_V1_CONTRACT_2026-10-27.md": "03ee2cfc1d62f89633360a4963b2d20310a58d0ef61cb392112a539d0ab99cea",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_CONSISTENCY_WORKING_ALGEBRA_2026-10-27.md": "0b179514ca5c02f7a475653e247e8a82b334633093c2db82cb4f3843d4219b66",
+    "Theory/Gates/RES-001/RES001_R4C1_SECOND_NODE_ENCLOSURE_V1_CONTRACT_2026-10-27.md": "46b35c581954ed6f788bea574446eb6e53abc4289858e015d332e3fa83c11278",
+    "Theory/Gates/RES-001/RES001_R4C1_THREE_FAMILY_FIXED_CHARGE_KINETIC_V3_REPORT_2026-10-16.md": "a5acbb6d2f659f9c2e4719f32f91ef9f8a4c2cc2c9bdd1fff8635d46fc1199c3",
+    "Theory/Gates/RES-001/RES001_R4C1_TIME_TANGENT_V1_CONTRACT_2026-10-29.md": "eac59d19a93071775268c924950a36cd5940f2a9ebadf59f32620f20cffdfb25",
+    "Theory/Gates/RES-001/RES001_R4C1_UNREDUCED_JET_EXPORT_V1_CONTRACT_2026-10-29.md": "1197a90b5edfab0682a60647b018093ba21f8d4557a1d20c78d0237feaabefc0"
+  },
+  "sympy": "1.14.0",
+  "time_evolution": false,
+  "total": 306,
+  "working_digits": 140
+}

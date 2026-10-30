@@ -1,0 +1,202 @@
+{
+  "Rule9_cleared": false,
+  "bounds": [
+    {
+      "a0_upper_m_s2": 2.329681984136233e-13,
+      "criterion": "C1",
+      "planet": "Mercury"
+    },
+    {
+      "a0_upper_m_s2": 7.890858333364661e-14,
+      "criterion": "C2",
+      "planet": "Mercury"
+    },
+    {
+      "a0_upper_m_s2": 5.6387127938705634e-14,
+      "criterion": "C1",
+      "planet": "Saturn"
+    },
+    {
+      "a0_upper_m_s2": 2.225807681791012e-15,
+      "criterion": "C2",
+      "planet": "Saturn"
+    }
+  ],
+  "checks": [
+    {
+      "details": {},
+      "name": "primary has no failed or unknown computational checks",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "name": "primary source identity",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "name": "same frozen input",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "Cartesian_difference": 6.346919517730143e-16,
+        "binet_precession_per_orbit": -0.0006247439663470781,
+        "events": 7
+      },
+      "name": "Binet versus Cartesian e=0.1 a0=0.0001",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "Cartesian_difference": -1.6301074531009652e-14,
+        "binet_precession_per_orbit": -6.251265053676865e-05,
+        "events": 7
+      },
+      "name": "Binet versus Cartesian e=0.1 a0=1e-05",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "Cartesian_difference": 3.1782006022708538e-15,
+        "binet_precession_per_orbit": -6.251647900690216e-06,
+        "events": 7
+      },
+      "name": "Binet versus Cartesian e=0.1 a0=1e-06",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "Cartesian_difference": -1.6959524062887255e-14,
+        "binet_precession_per_orbit": -0.0006079242370177577,
+        "events": 7
+      },
+      "name": "Binet versus Cartesian e=0.25 a0=0.0001",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "Cartesian_difference": -9.191777926905592e-15,
+        "binet_precession_per_orbit": -6.0832250868170235e-05,
+        "events": 7
+      },
+      "name": "Binet versus Cartesian e=0.25 a0=1e-05",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "Cartesian_difference": -2.0377697569444724e-14,
+        "binet_precession_per_orbit": -6.083623717678677e-06,
+        "events": 7
+      },
+      "name": "Binet versus Cartesian e=0.25 a0=1e-06",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "recomputed_a0_upper_m_s2": 2.329681984136233e-13
+      },
+      "name": "Mercury C1 independent SI conversion",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "name": "Mercury C1 inward sign retained",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "recomputed_a0_upper_m_s2": 7.890858333364661e-14
+      },
+      "name": "Mercury C2 independent SI conversion",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "name": "Mercury C2 inward sign retained",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "recomputed_a0_upper_m_s2": 5.6387127938705634e-14
+      },
+      "name": "Saturn C1 independent SI conversion",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "name": "Saturn C1 inward sign retained",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "recomputed_a0_upper_m_s2": 2.225807681791012e-15
+      },
+      "name": "Saturn C2 independent SI conversion",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "name": "Saturn C2 inward sign retained",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "name": "no Gaussian or forecast substitution",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "name": "scope retained despite successful arithmetic",
+      "status": "PASS"
+    }
+  ],
+  "gate_effect": "NONE",
+  "independent_peer_review": false,
+  "input_sha256": "521a7c7838aadaabdcebe0e81cae21abf84d4aa7e67031ad9d2d41018cbd3c8f",
+  "orbits": [
+    {
+      "a0": 0.0001,
+      "difference": 6.346919517730143e-16,
+      "eccentricity": 0.1,
+      "precession_per_orbit": -0.0006247439663470781
+    },
+    {
+      "a0": 1e-05,
+      "difference": -1.6301074531009652e-14,
+      "eccentricity": 0.1,
+      "precession_per_orbit": -6.251265053676865e-05
+    },
+    {
+      "a0": 1e-06,
+      "difference": 3.1782006022708538e-15,
+      "eccentricity": 0.1,
+      "precession_per_orbit": -6.251647900690216e-06
+    },
+    {
+      "a0": 0.0001,
+      "difference": -1.6959524062887255e-14,
+      "eccentricity": 0.25,
+      "precession_per_orbit": -0.0006079242370177577
+    },
+    {
+      "a0": 1e-05,
+      "difference": -9.191777926905592e-15,
+      "eccentricity": 0.25,
+      "precession_per_orbit": -6.0832250868170235e-05
+    },
+    {
+      "a0": 1e-06,
+      "difference": -2.0377697569444724e-14,
+      "eccentricity": 0.25,
+      "precession_per_orbit": -6.083623717678677e-06
+    }
+  ],
+  "passed": 19,
+  "physics_pass": false,
+  "primary_summary_sha256": "25fd99c937c1cd48defb21dd2ae567d1867cdef415c710963a819ecad56eb3db",
+  "review_status": "DEFERRED",
+  "status": "PASS_INDEPENDENT_LOCAL_CONTROL",
+  "total": 19,
+  "verifier_sha256": "00104897d57d8e0f2a2f23c88faab660440a426b0dc02db062c369dbc1aa5fce"
+}

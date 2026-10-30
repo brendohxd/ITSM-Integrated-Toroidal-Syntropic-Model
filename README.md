@@ -71,7 +71,7 @@ those boundaries; sector snapshots retain their owning dates.
 | **Core identity** | `CANONICAL; IDENTITY HELD` | The physical proposition is retained; its adoption does not validate its postulates or close a mechanism. |
 | **MAT-001** | `BLOCKED` | The invariant matter-to-physical-mode response remains unmatched: `K_Q=NOT_DERIVED`, `V=NOT_COMPUTED`. |
 | **UVIR-003** | `IN_PROGRESS` | Tier-1 stability, matching and physical cutoff obligations remain incomplete. Stage 4A remains `CLOSED`. |
-| **Master Tests 1–3 / R4C1** | `PROVISIONAL CONTINUATION; HOLD_SUBSTANTIVE` | The registered linear prepared-dust calculation now has certified finite-mode error control. Physical viability, a controlled EFT window, healthy GR, weak-field closure and identifying coefficient matching remain open. |
+| **Master Tests 1–3 / R4C1** | `PROVISIONAL RESULTS; HOLD_SUBSTANTIVE` | Full finite-mode linear evolution is certified on the separate homogeneous B1 control. The nodal preparation remains unadmitted; nearby tilted diagnostics have a negative reduced kinetic direction on dust-clock slices. A physical domain, healthy GR, weak-field closure and identifying matching remain open. |
 | **TOP-X4 / KK-001** | `BOUNDED LOCAL/FINITE-ORDER + THEOREM-BACKED SCALAR STATE; STRESS HOLD` | Separate queued lane; `physics_pass=false`. Spinor-state, gravity/ghost, parity, determinant, stress and physical-Hessian obligations remain open. |
 | **BBN-001** | `CONTROL_ONLY / BLOCKED_UPSTREAM_BACKGROUND` | Table/network controls do not supply the action-derived early plenum, physical temperature/unit map, currents or gravitational response. |
 | **TOP-001 / CBR-002** | `HOLD` | Free-field and instantaneous-closure controls do not establish a persistent driven ITSM solution or publication clearance. |
@@ -85,7 +85,47 @@ orders the research, and the [Master Research Plan](Theory/Core/ITSM_Master_Rese
 defines the authority and claim boundaries. Script check counts and hash
 matches establish only their stated calculation or artifact scope.
 
-## 🧪 Current research checkpoint — 21 October 2026
+## 🧪 Current research checkpoint — 30 October 2026
+
+The [30 October checkpoint and complete evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-30.md)
+collect the work since the last pushed recovery revision on 21 October.
+The main advance is a clearer separation between a calculation that can now
+be evolved reliably and the physical-domain questions it does not answer:
+
+- **Controlled coupled linear evolution:** on the existing homogeneous B1
+  background, the [full twenty-component propagator](Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md)
+  has certified continuous error bounds on $0\le t\le0.05$ for comoving
+  controls $k=1,7,40$. It retains all ten reduced fields, fast modes, changing
+  coefficients and the action-derived matter/constraint reconstruction.
+- **A substantive physical limitation:** the [alignment-domain diagnostic](Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_REPORT_2026-10-29.md)
+  finds a negative reduced kinetic direction on dust-clock slices of nearby
+  charge-preserving tilted data. This obstructs an unrestricted healthy
+  neighbourhood allowing those tilts. It does not invalidate the aligned
+  linear result or establish a foliation-independent, all-ITSM no-go.
+- **The registered nodal state remains open:** quartic initial extensions,
+  complete Euler/Jacobi and matter-current calculations are now recorded.
+  Cusp, auxiliary-pole, principal-characteristic and interface tests reject
+  specified regularity/domain shortcuts. No full on-shell weak evolution of
+  that preparation has been established; failed and corrected attempts remain.
+- **Alternative architecture and matching:** the [P0-B comparison](Theory/Core/ITSM_FORCE_ARCHITECTURE_COMPARISON_V1_REPORT_2026-10-23.md)
+  adds conditional local-gravity restrictions, not a replacement physical
+  winner. The [matching-input screen](Theory/Gates/MAT-001/MAT001_NEXT_STAGE_INPUT_SCREEN_V1_2026-10-27.md)
+  still finds no identifying matter-residue/nonlinear-force inputs.
+
+**Direction:** test an action-justified restricted Cauchy/low-energy domain
+before further derivative hierarchies or observational fits. If that requires
+an added restriction, cutoff or parent, make an explicit research decision.
+The [saved goal reassessment](Theory/Core/ITSM_GOAL_DIRECTION_REASSESSMENT_2026-10-30.md)
+preserves G1–G6 and recommends changing their immediate priority. The native
+goal is paused at the operator's request for this documentation/commit checkpoint.
+
+P1 remains `0.2.0-rc7`, P2 `0.2.0-rc4`, Thermodynamics
+`0.7.1-conditional-draft`, and R4C1 `0.1.1-conditional-draft`.
+The [release decisions](papers/Selective-Publishing-Plan/ITSM_P1_P2_RELEASE_DECISIONS_V1_2026-10-27.md)
+remain separate from research closure. No paper is newly submitted or cleared.
+All canonical holds in the dashboard above remain.
+
+### Preserved 21 October research checkpoint
 
 The [21 October checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-21.md)
 preserve the research since 18 October, including negative results, execution

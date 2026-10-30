@@ -1,0 +1,75 @@
+{
+  "G1_complete": false,
+  "checks": [
+    {
+      "criterion": "normalized < 1e-30",
+      "name": "original_scalar_normal_trace_0_-1",
+      "passed": true,
+      "value": "6.1106911436083772359453977167890604400616171865111869338004957282e-83"
+    },
+    {
+      "criterion": "normalized < 1e-30",
+      "name": "original_scalar_normal_trace_0_1",
+      "passed": true,
+      "value": "0.0"
+    },
+    {
+      "criterion": "normalized < 1e-30",
+      "name": "original_scalar_normal_trace_1_-1",
+      "passed": true,
+      "value": "2.012135226376579615004680517670535317169651679171291285193339533e-82"
+    },
+    {
+      "criterion": "normalized < 1e-30",
+      "name": "original_scalar_normal_trace_1_1",
+      "passed": true,
+      "value": "2.0111967351194873727432494180515730672565821975990398029696260545e-82"
+    }
+  ],
+  "controls": [
+    {
+      "case": 0,
+      "expected": "-0.039126717393568992144480621987708917242528973500302743924107274308",
+      "got": "-0.039126717393568992144480621987708917242528973500302743924107274308",
+      "normalized_error": "6.1106911436083772359453977167890604400616171865111869338004957282e-83",
+      "orientation": -1,
+      "passed": true
+    },
+    {
+      "case": 0,
+      "expected": "-0.039194629496234065322129302724372874586601921159617279194409757223",
+      "got": "-0.039194629496234065322129302724372874586601921159617279194409757223",
+      "normalized_error": "0.0",
+      "orientation": 1,
+      "passed": true
+    },
+    {
+      "case": 1,
+      "expected": "-0.15491360900074431096150671652414371853207893755578637107837770113",
+      "got": "-0.15491360900074431096150671652414371853207893755578637107837770113",
+      "normalized_error": "2.012135226376579615004680517670535317169651679171291285193339533e-82",
+      "orientation": -1,
+      "passed": true
+    },
+    {
+      "case": 1,
+      "expected": "-0.15521921346273714026092577983913152658040720202270177979473887425",
+      "got": "-0.15521921346273714026092577983913152658040720202270177979473887425",
+      "normalized_error": "2.0111967351194873727432494180515730672565821975990398029696260545e-82",
+      "orientation": 1,
+      "passed": true
+    }
+  ],
+  "gate_effect": "NONE",
+  "mpmath": "1.3.0",
+  "passed": 4,
+  "physics_pass": false,
+  "result_id": "R4C1-QUARTIC-SCALAR-TRACE-INDEPENDENT-V1",
+  "review_status": "DEFERRED",
+  "scope": "Original scalar current quadratic normal coefficient with nonzero quartic initial profile; no physical admission",
+  "source_sha256": {
+    "Analysis/MasterTests/verify_01_r4c1_quartic_scalar_trace_v1.py": "33cabb1275ad9326c3c4e0ec0886217e0014c1ce54426fd8469763c7f2583162",
+    "Theory/Gates/RES-001/RES001_R4C1_QUARTIC_JOINT_COMPLETION_V1_COMPUTATIONAL_ADDENDUM_2026-10-27.md": "ffd307da06f991688f22db9459904365e4b574d35a30df3d6d8724eed7a0bd73"
+  },
+  "total": 4
+}
