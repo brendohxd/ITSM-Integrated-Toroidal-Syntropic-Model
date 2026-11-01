@@ -49,3 +49,15 @@ Do not commit local output logs or private research context. Commit, push,
 publication, model-provider dispatch and changes outside the approved scope
 still require their usual authority. No autonomous runtime reconfiguration
 or new paid model session is authorized by this file.
+
+## Verified signing for future Git deliveries — 1 November 2026
+
+Operator preference: all future delivered commits must have a verified
+signature, including when the operator has repository-rule bypass access.
+Bypass permission does not waive this signing requirement. Use a configured
+trusted signer or GitHub's authenticated signed-commit workflow; verify
+GitHub reports the delivered commit signature as verified before declaring
+delivery complete. Preserve exact file bytes and compare the delivered tree
+with the reviewed content. Signing records provenance; it does not establish
+scientific correctness or replace source hashes and review. Do not rewrite
+published history to sign an older commit without explicit approval.
