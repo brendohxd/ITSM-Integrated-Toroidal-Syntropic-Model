@@ -2,7 +2,19 @@
 
 Multi-page research site published at https://itsm-cosmology.com.
 
-## Paper freshness and model-scope update - 21 October 2026
+## Public progress update - 1 November 2026
+
+Home, Progress, Evidence and Reproduce now link the November checkpoint and
+separate homogeneous R-tau estimates from the unresolved prepared-background
+physical norm. The repair variants remain unadopted, matching stays open,
+and canonical/publication holds are unchanged. R4C1 links v0.1.2; P1/P2 and
+Thermodynamics versions are unchanged. No scientific artifact is regenerated.
+The verification command names immutable research commit29d83ce8; signed
+continuity commit73154660 is described separately. Cache v13-20261101.
+The concept, vision and visual design are retained. Delivery uses a verified
+signed commit and the manual Pages workflow; live verification is required.
+
+## Preserved paper freshness and model-scope update - 21 October 2026
 
 Following a comparison of the public main and recovery documentation:
 

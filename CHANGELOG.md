@@ -1,5 +1,18 @@
 # ITSM Changelog & Archive History
 
+## Public site progress refresh — 1 November 2026
+
+- Refresh Home, Progress and Evidence with the November checkpoint, explicit
+  repair-comparison scope and the distinction between the homogeneous linear
+  estimate and unresolved prepared-background evolution.
+- Link the current R4C1 v0.1.2 PDF; retain P1/P2/Thermodynamics versions.
+  Reproduce names immutable research revision29d83ce8 and describes the
+  separate verified signed continuity checkpoint73154660 accurately.
+- Update the offline cache and retain its freshness check.19 regression
+  tests and source checks pass. No scientific artifacts or gate holds change.
+  Delivery requires a verified signed commit and manual Pages deployment.
+
+
 ## Research checkpoint and delivery — 1 November 2026
 
 - [Checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-01.md)
