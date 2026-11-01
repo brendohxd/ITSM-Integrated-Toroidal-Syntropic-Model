@@ -1,5 +1,13 @@
 # ITSM Changelog & Archive History
 
+## Publishing-action pinning — 1 November 2026
+
+- Port main's verified upstream PyPA action pin to all four CAMB wheel/sdist
+  publishing steps, covering both TestPyPI and PyPI. Only action references
+  change; existing conditions, inputs, environments and permissions remain.
+- YAML and semantic-diff checks pass. No package is published, website
+  deployment is dispatched or scientific result changed by this maintenance.
+
 ## Public site progress refresh — 1 November 2026
 
 - Refresh Home, Progress and Evidence with the November checkpoint, explicit
