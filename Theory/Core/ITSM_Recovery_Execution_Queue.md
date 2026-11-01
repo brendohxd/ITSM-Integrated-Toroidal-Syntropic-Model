@@ -2949,3 +2949,746 @@ inputs and independent paper decisions remain separate, and G6 remains
 dependent on the physical and matching prerequisites. No new state, cutoff,
 action, model session or external review is authorized by this note.
 G1-G6 INCOMPLETE; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## Operator-selected multistep continuation - 30 October 2026
+
+The operator requested the best research route and a multistep goal suitable
+for automatic continuation. Follow
+[domain-first multistep goal V1](ITSM_DOMAIN_FIRST_MULTISTEP_GOAL_V1_2026-10-30.md)
+as the next sequencing supplement to the existing expanded G1-G6 objective.
+
+The eight tasks cover baseline/contract, an action-justified domain candidate,
+preservation and physical reduction, supported evolution/interactions/window,
+new identifying matching information, concrete paper consequences, route
+decision, and checkpoint/handoff. Continue supported work without receipt-by-
+receipt permission; genuine physical/action decisions and required effort
+acknowledgement remain boundaries. No new domain/action is adopted by the plan.
+
+The existing unfinished native objective is preserved. Its last verified
+status is PAUSED; saving this plan does not resume or replace that record.
+No scientific task, gate, publication-readiness or independent review is
+completed by planning. G1-G6 INCOMPLETE; review DEFERRED; physics_pass=false;
+gate_effect=NONE. No commit, push, deployment, vault mutation or publication.
+
+
+## Domain-first M1-M3 checkpoint - 30 October 2026: aligned tangency V2
+
+The operator manually updated and resumed the native goal. Its attachment
+objective was read in full; the eight-step domain-first plan now supplies
+the work order. High was confirmed for this bounded calculation.
+
+[Aligned tangency V2](../Gates/RES-001/RES001_R4C1_ALIGNED_TANGENCY_V2_REPORT_2026-10-30.md)
+finds that initially dust-aligned arbitrary coupled linear perturbations are
+not an invariant class. A force-velocity Fourier seed reconstructs all
+linear constraints but has nonzero longitudinal frame acceleration. A
+rank-one necessary compatibility equation remains; its own preservation
+and any narrower nonlinear domain are not proved. 71/71; exact replay;
+V1 68/71 retained with its same-event comparison correction documented.
+
+See [goal progress](../Verification/ITSM_DOMAIN_FIRST_PROGRESS_V1_2026-10-30.md).
+Next test the actual time-dependent preservation of the necessary restriction
+under a new bounded contract; do not start a frozen-matrix derivative
+hierarchy or remove a physical branch. Paper-impact inspection was targeted,
+not final review. All scientific gates and G1-G6 requirements remain open
+as recorded. Review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## Domain-first M6 follow-up - 30 October 2026
+
+The R4C1 paper's unsupported collaborator/reviewer acknowledgment and
+unconfirmed author-review assertion are corrected in v0.1.2. The scientific
+body is unchanged; old source/PDF retained. Source compilation, versioned
+build, text checks and targeted visual review passed. No upload or review
+clearance. See [progress V2](../Verification/ITSM_DOMAIN_FIRST_PROGRESS_V2_2026-10-30.md).
+
+The [next aligned-preservation contract](../Gates/RES-001/RES001_R4C1_ALIGNED_PRESERVATION_V1_CONTRACT_2026-10-30.md)
+is frozen; its derivation has NOT_RUN pending the applicable effort
+acknowledgement. Do not repeat the completed unrestricted-alignment test.
+Goal ACTIVE, scientific milestones incomplete; review DEFERRED;
+physics_pass=false; gate_effect=NONE.
+
+
+## Domain-first M3 decision - 30 October 2026: aligned preservation V1
+
+The [moving-domain test](../Gates/RES-001/RES001_R4C1_ALIGNED_PRESERVATION_V1_REPORT_2026-10-30.md)
+returns 60/60 with exact replay. The seven-row aligned candidate is not
+invariant: an explicit pure condensate-amplitude seed satisfies its initial
+conditions and has zero frame acceleration, but a nonzero third time
+derivative. Actual R_dot, constraints, lapse/density, shifts and Z are retained.
+This is not a rejection of every more restricted sector or the full action.
+
+Follow the [action/input decision packet](ITSM_DOMAIN_ACTION_DECISION_V1_2026-10-30.md)
+and [progress V3](../Verification/ITSM_DOMAIN_FIRST_PROGRESS_V3_2026-10-30.md).
+Do not automatically launch another compatibility-derivative hierarchy.
+The operator has been asked to select a bounded action-repair comparison,
+continued unchanged-action domain construction, or scoped paper priority.
+No alternative action or physical prescription is adopted. Native goal
+ACTIVE and incomplete; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## Domain-first handoff - 30 October 2026
+
+The [handoff and snapshot](../Verification/ITSM_DOMAIN_FIRST_HANDOFF_V1_2026-10-30.md)
+consolidate the two scoped alignment failures, preserved attempts, source
+pins and R4C1 v0.1.2 editorial correction. The changelog records this local
+continuation after 57d4f302. The substantive route-selection question is
+pending. No new parent, physical domain or cutoff is adopted; the full
+goal remains incomplete. Review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## Operator-selected BOTH repair routes - 31 October 2026
+
+The operator authorized comparison of both action-level routes. The previous
+route-selection wait is resolved for comparison work, without adopting a
+new canonical parent. Follow the
+[two-route continuation](ITSM_TWO_REPAIR_COMPARISON_CONTINUATION_2026-10-31.md).
+
+The [first shared calculation](../Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V2_REPORT_2026-10-31.md)
+returns 70/70 plus an 18/18 identity audit; both exact replays. F-tau has
+seven positive initial kinetic amplitudes after frame restriction. R-tau
+retains ten and removes the old auxiliary time pairing on the declared
+small-tilt diagnostic, with its own local homogeneous admission checks.
+Both change the total clock and matter-energy balance. V1 54/70 precision
+failure remains preserved; exact-input rebuilding changed no thresholds.
+
+Next follow the
+[full coupled gradient/characteristic contract](../Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_CONTRACT_2026-10-31.md)
+for BOTH candidates. Do not reuse old B/Q or bare-dust continuity; no full
+physical domain/window or winner is yet established. The native goal API
+still reports BLOCKED and cannot be resumed by its exposed update method;
+the app/user must resume automatic continuation. Current-turn work is
+authorized by the operator's route selection. Review DEFERRED;
+physics_pass=false; gate_effect=NONE; original G1-G6 incomplete.
+
+
+## Two-repair full quadratic/current disposition - 31 October 2026
+
+The [new coupled calculation](../Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V3_REPORT_2026-10-31.md) returns 129/129
+with exact recomputing read-only replay. New M/B/Q, actual drift, lapse
+Euler flux, density reconstruction, modified clock/U(1) currents and the
+separate all-six-metric homogeneous mode are retained. V1/V2 implementation
+preflight failures remain preserved; no action or threshold was changed.
+
+F-tau has ordinary high-frequency squared speed -1/33 and fails the
+uncut healthy-continuum test on this old-B1 control. Its positive quartic
+branch does not cure that other branch; no physical cutoff is supplied.
+R-tau has nonnegative ordinary squared roots but a defective zero-speed
+trace/frame root in the declared balanced norm. This is not yet a verdict
+on every physically constrained/mixed-regularity dust formulation.
+
+Follow the [bounded R-tau physical-norm contract](../Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-10-31.md)
+without deleting zero/fast modes or adopting a new parent. Its execution
+is NOT_RUN at this checkpoint. Full physical norm/domain, interactions,
+window, realistic matter, GR/local tests and matching remain substantive
+holds. Both comparison actions remain unadopted; original G1-G6 incomplete.
+Review DEFERRED; physics_pass=false; gate_effect=NONE. No commit/push,
+publication or vault mutation. The native API still reports BLOCKED;
+only app/user resume can restore automatic continuation.
+
+
+## R-tau physical-norm result and active continuation - 31 October 2026
+
+The [physical-norm report](../Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_REPORT_2026-10-31.md) supplies an invertible
+matter-density/canonical variable map and a positive mixed-regularity energy.
+The earlier equal-order Jordan block is not a linear no-go in that physical
+norm. No zero or quartic branch is deleted. V2 58/58 plus a distinct 25/25
+extension, BOTH exact replays, establish a momentum-uniform coupled LINEAR
+control estimate through t=0.05 on the registered old-B1 planar mode family,
+with mean mode/global charges treated separately. Constants are very loose;
+useful numerical accuracy and nonlinear physical admission are not certified.
+
+V1 57/58 is preserved; V2 corrects a mis-sliced two-dimensional trace
+certificate without changing scientific exports, constants or tolerances.
+F-tau's negative-gradient result remains held. R-tau remains unadopted.
+
+Next follow the [finite-amplitude constraint/interaction contract](../Gates/RES-001/RES001_R4C1_RTAU_COUPLED_INTERACTIONS_V1_CONTRACT_2026-10-31.md).
+Its execution is NOT_RUN. Retain the actual nonanalytic norm-cubed force,
+coupled metric/frame/matter, clock exchange, harmonics, means and constraints.
+Do not substitute a vacuum-probe cutoff or acceleration target for missing
+physical matching. Interacting domain/window, GR/local/realistic matter and
+identifying inputs remain substantive holds; original G1-G6 incomplete.
+
+The native goal is now ACTIVE following app/user resume, superseding the
+historical blocked-controller entries above. Medium confirmed after this High
+bundle; request High before the next hard derivation. Review DEFERRED;
+physics_pass=false; gate_effect=NONE. No commit/push, publication or vault mutation.
+
+
+## R-tau first nonlinear regulator/force summands - 31 October 2026
+
+Owner: [first nonlinear sub-bundle](../Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V2_REPORT_2026-10-31.md).
+123/123 and exact replay; receipt SHA256
+ebf0bb4708ca1167bbbf4f3049ee8d418bfb76b0e992686ed6b85bca923f3d46.
+Exact nonlinear Z=-Delta_h(psi), eliminated regulator negative square,
+metric/clock cubic and quartic terms and controlled fourth-order remainders.
+The frozen packet has nonzero mean cubic coefficient 41*k^4/68607.
+The nonanalytic norm-cubed force remains present, with a controlled leading
+homogeneous cubic; independent full-density summand controls retain both
+amplitude signs. These are off-shell summand results, not a full on-shell
+reduced interaction functional or nonlinear physical-domain admission.
+
+V1 MemoryError in general symbolic integration is preserved. V2 uses the
+exact periodic boundary flux, with unchanged equations/tolerances. Review
+DEFERRED; physics_pass=false; gate_effect=NONE; original G1-G6 incomplete.
+Continue the existing coupled-interactions contract's nonlinear lapse/shift/
+matter solve, then full reduced interactions and actual domain/window tests.
+All zero/fast modes, means, generated harmonics and clock exchange remain.
+R-tau stays unadopted; identifying matching remains missing. High confirmed;
+native goal ACTIVE. No commit/push, publication or vault mutation.
+
+
+## R-tau nonlinear lapse/density and local shift principal - 31 October 2026
+
+Owner: [nonlinear constraint report](../Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1_REPORT_2026-10-31.md).
+15/15 and exact replay; SHA256
+202ead4f7fd5d26d3eae4ec1ccc05798f2b8ef646eb7468a1a09103e3c13a987.
+Exact positive-branch lapse and density reconstruction retain all Euler
+fluxes. Fresh arbitrary-tilt shift principal matrix is uniformly nonsingular
+for physical |V_frame|<=1/500, with an explicit singular-value bound.
+Its inertia is (2+,1-); local invertibility is not positive coercivity or
+global periodic invertibility. Positive reconstructed density remains an
+actual condition, not a consequence of the algebraic formula.
+
+Next: [full nonlinear periodic preparation](../Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_PREPARATION_V1_CONTRACT_2026-10-31.md),
+NOT_RUN. Enforce fixed clock/U(1) charges, mean-shift gauge and integrated
+momentum compatibility with controlled inverse/remainder/tail estimates.
+Full nonlinear constraints, reduced interactions and physical window remain
+INCOMPLETE; no microscopic matching or parent adoption. Inherit the original
+action, candidate, quadratic/current/norm and nonlinear-regulator review debt.
+Review DEFERRED; physics_pass=false; gate_effect=NONE; original G1-G6 incomplete.
+High last confirmed; goal ACTIVE. No commit/push, publication or vault mutation.
+
+
+## R-tau periodic numerical candidate - 31 October 2026
+
+Owner: [periodic candidate report](../Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_NUMERICAL_V1_REPORT_2026-10-31.md).
+Primary 10/10 and off-grid 12/12, both exact replays. A frozen nontrivial
+epsilon=1/1000 candidate solves full projected shifts and inherited clock/U(1)
+charges on 9/17/33 nodes. Momentum means are checked independently. The same
+candidate passes shifted 65/129-node controls with positive sampled density.
+The finer residual increases; no monotonic convergence/tail bound is claimed.
+
+Continuum preparation remains INCOMPLETE. Next supply the existing owning
+contract's quantitative residual/tail and nonlinear inverse/domain bounds,
+including rounding, means, momentum, charges and force-cusp regularity.
+Do not repeat root solving or substitute more finite-grid agreement for this
+certificate. R-tau is unadopted; reduced interactions/window and identifying
+matching stay open. Review DEFERRED; physics_pass=false; gate_effect=NONE;
+original G1-G6 incomplete. High last confirmed; goal ACTIVE. No publication,
+commit/push or vault mutation.
+
+
+## R-tau continuum residual enclosure - 31 October 2026
+
+Owner: [interval residual report](../Gates/RES-001/RES001_R4C1_RTAU_INTERVAL_RESIDUAL_V3_REPORT_2026-10-31.md).
+39/39 and exact replay; SHA256
+d116cbb8c71241c4e3c85c1b260f082f5e30306dbf51243d26e446e36e797484.
+Outward fourth-order spatial interval jets enclose the whole frozen circle:
+shift C0 residual below (1.839e-12,2.012e-10,2.755e-7), rho>0.19265,
+and global clock/U(1) charge defects below 2.070e-7 and 1.157e-9. The exact
+binary endpoint evidence is retained; these are not sampled extrema or a
+separate Fourier l1 tail theorem. V1/V2 arithmetic implementation failures
+remain preserved. Candidate, action and precision were not changed.
+
+Next execute the quantitative inverse contract, NOT_RUN: validate the actual
+nonlinear correction-ball derivative and defect/contraction inequalities,
+means/momentum/charges and density throughout the ball. Residual enclosure
+alone does not admit a continuum solution. Inherit all candidate, nonlinear
+constraint, numerical, background and interval-code review dependencies.
+Review DEFERRED; physics_pass=false; gate_effect=NONE; original G1-G6 incomplete.
+R-tau remains unadopted; High last confirmed; goal ACTIVE. No commit/push,
+publication or vault mutation.
+
+
+## R-tau periodic initial-constraint existence certificate - 31 October 2026
+
+Owner: [computer-assisted inverse proof](../Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_REPORT_2026-10-31.md).
+Primary 11/11 and full-action/export controls 15/15, BOTH exact replays.
+Full correction-ball interval bounds give q<0.080746, eta<1.046775e-5,
+r=1e-3 and positive self-map margin >0.0009087869. Rho>0.14850 throughout
+the ball. The explicit parity-centre displacement is accounted and the old
+numerical candidate preserved. Root correction <1.139e-5 in the stated norm.
+
+The complete-space compatibility/Green-inverse/contraction argument supplies
+a Conditional nearby exact periodic INITIAL constraint preparation with both
+inherited charges. All allowed harmonics and actual momentum means are
+retained. This is not time evolution, global uniqueness, Dirac/physical-mode
+clearance or a physical window. No canonical R-tau parent is adopted.
+
+Next: [prepared Cauchy/physical-operator contract](../Gates/RES-001/RES001_R4C1_RTAU_PREPARED_CAUCHY_V1_CONTRACT_2026-10-31.md),
+NOT_RUN. Derive actual constrained operators and accelerations, with gauge,
+root uncertainty and full fields; the conformal preparation shapes are not
+assumed preserved. Do not repeat the completed numerical root or replace
+new operators by the homogeneous propagator. Evolution/interactions/window,
+realistic matter/GR/local tests and identifying matching remain open.
+
+Review DEFERRED; physics_pass=false; gate_effect=NONE; original G1-G6 incomplete;
+MAT-001 BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED. Goal ACTIVE. High bundle
+complete; return-to-Medium request sent, acknowledgment pending. No commit/push,
+publication, external provider/reviewer dispatch or vault mutation.
+
+
+## Prepared R-tau compatible spatial gauge - 31 October 2026
+
+Owner: [gauge/velocity pullback report](../Gates/RES-001/RES001_R4C1_RTAU_SPATIAL_GAUGE_V1_REPORT_2026-10-31.md).
+30/30, exact replay; SHA256
+449ce6a63c04a479fb8fc79cee62806ba5072d8dacac99f8614e9ab96e9ce014.
+An explicit periodic coordinate map gives d_zeta(h_i,zeta)=0 on the actual
+prepared slice, with compatible velocities and all global metric means
+retained. Exact geometric identities and full-action lapse/condensate
+momentum controls preserve constraints and both charge measures. Corrected
+root uncertainty transforms to <1.140e-5; original data/coordinates preserved.
+
+This is kinematic/gauge preparation, not a physical Cauchy operator or future
+gauge persistence theorem. Next derive the existing prepared-Cauchy contract's
+actual reduced quadratic/symplectic operator and initial accelerations, with
+both perturbation parities, gauge-projector derivatives, all means, charge/
+momentum tangents and root uncertainty. The initial conformal/velocity shapes
+are not projected onto future evolution. The root pullback bound is not a
+universal norm bound for arbitrary metric perturbations.
+
+Inherit candidate, initial-constraint existence, nonlinear/interval, background
+and action review debt. Review DEFERRED; physics_pass=false; gate_effect=NONE;
+R-tau unadopted; original G1-G6 incomplete. High last confirmed; goal ACTIVE.
+No commit/push, publication, external dispatch or vault mutation.
+
+
+## Prepared R-tau unreduced temporal operator - 31 October 2026
+
+Owner: [temporal V2 report](../Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V2_REPORT_2026-10-31.md).
+Full temporal calculation 26/26 and block/endpoint audit 15/15, both exact
+read-only replays. Main SHA256
+aba30848eed3be2d4cb3f0122899ea0394aafcf93b6ebd4d91ecfb3b63f6ac93;
+audit SHA256 a7e029cdcc3d5d3ffc8f1b9e27d97ada9a8366580af5f54193795fbc7854c309.
+
+Derived directly from the full candidate, retaining metric6/frame3/u/v/r/psi
+and auxiliary Z. Raw temporal inertia 12 positive, one negative conformal,
+one auxiliary zero; metric/frame normal-rate inverse gap >0.16662666599
+throughout the certified prepared root domain. Canonical and full norm-cubed
+force temporal coefficients positive. Exact block determinants, outward
+interval bounds and original-density Hessian controls agree. No parity or
+homogeneous metric component was removed. Both failing V1 implementations
+and receipts preserved; repairs concern exact arithmetic/comparison only.
+
+This is NOT a physical ghost verdict or healthy evolution claim. Next derive
+the actual spatial momentum/gauge/global-charge tangent reduction, physical
+quadratic/symplectic operator and initial accelerations with root uncertainty,
+auxiliary/lapse Euler fluxes and moving-basis/projector drift. Do not reuse
+the old homogeneous generator or preserve initial conformal shapes by projection.
+Inherit action, repair-candidate, initial-constraint, gauge and nonlinear review
+debt; same-author audit is not independent external review. Review DEFERRED;
+physics_pass=false; gate_effect=NONE; R-tau unadopted; original G1-G6 incomplete.
+No identifying matching input, physical window, manuscript change, publication,
+dispatch, vault mutation or commit/push. Goal ACTIVE; High last confirmed.
+
+
+## Prepared R-tau constraint-tangent velocity form - 31 October 2026
+
+Owner: [velocity-tangent V2 report](../Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V2_REPORT_2026-10-31.md).
+Primary 22/22 and audit 16/16, exact read-only replays. SHA256
+f4efb6bc588528aa6287fa2cca2a8020f581fddc0564e0336b9e8bf52906a814;
+audit f12a29d0cc5e9e13218ffa38c97a43ddca035fc83fb70e5af99a7e2907e5e115.
+
+At fixed prepared spatial fields, the actual projected momentum and two
+fixed-charge tangent kernel has temporal Hessian form >0.024*||W||^2.
+Continuum coefficient/operator bounds include every certified root, all
+planar circle harmonics and both parities. All metric means retained.
+The extra global longitudinal momentum equation remains explicit; this
+positive larger kernel is not a claim that mean momentum has been solved.
+The raw conformal negative direction alone is not a physical ghost verdict.
+Full-density lapse/phase/shift mixed derivatives and independent omission
+counterexamples support the calculation. Same-author controls are not
+independent external review.
+
+V1 20/21 preserved. Its extra total-background-departure <0.001 precheck
+was unjustified; actual departure <0.003375 is retained in ALL operator
+inequalities. V2 separately bounds root-rate uncertainty <0.000032219.
+Scientific positivity/inverse/control thresholds and equations unchanged.
+
+Next derive full mixed field/velocity and symplectic operators, complete
+field-dependent constraint/gauge tangents and initial accelerations with
+mean momentum, lapse/auxiliary fluxes and moving-basis/projector drift.
+General transverse spatial perturbations on this inhomogeneous background,
+nonlinear evolution, interactions/window and matching remain uncomputed.
+Inherit candidate/action/initial-root/temporal/gauge review debt. Review
+DEFERRED; physics_pass=false; gate_effect=NONE; R-tau unadopted; G1-G6 incomplete.
+No manuscript/site change, action adoption, dispatch, vault mutation,
+publication or commit/push. Goal ACTIVE; High last confirmed.
+
+
+## Prepared R-tau mixed quadratic/canonical operator - 1 November 2026
+
+Owner: [mixed V4 report](../Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V4_REPORT_2026-11-01.md).
+Primary 29/29 and variational/endpoint audit 16/16, exact read-only replays.
+Main SHA256 d916402a0751fa4a0409d2048ed4e38ea18dd9b5629836f6a3517fdd44e0b577;
+audit 38dd70c6da41c7f917658220c0e82181c6be164923efbe9992bb28d31369ea3b.
+Frozen 31 October sources and failed V1-V3 records remain unchanged.
+
+Derived full 48-slot clock-density mixed Hessian and first spatial derivative
+with whole-circle/all-certified-root enclosures: 692 upper entries and 1,399
+finite ordered endpoint pairs including forcing/domain bounds. General
+metric force-norm identity, full norm-cubed term, lapse-map second derivative
+and variable-coefficient two-form drift retained. Actual rest norm squared
+>7.300e-12 justifies this prepared-domain differentiation. Full original
+density mixed-Hessian controls and omission rejections pass.
+
+This gives the UNREDUCED canonical two-form and affine initial Euler system
+M qddot+C Sdot+D Sdot_z=L_q-(L_d)_z-A v-B v_z, with forcing bound <3.03.
+Accelerations/shift drift remain NOT_SOLVED; the physical symplectic quotient,
+field-dependent constraint/gauge graph, clock/auxiliary tangency, general
+transverse spatial wavevectors and future persistence remain open. Do not
+set Sdot=0 or import the old homogeneous generator/conformal evolution ansatz.
+
+Next solve the actual coupled initial equations with mean momentum, all
+means, moving projectors/bases, lapse flux and certified root uncertainty.
+Inherit action/candidate/initial-root/temporal/velocity/gauge review debt.
+Same-author audit is not independent external review. Review DEFERRED;
+physics_pass=false; gate_effect=NONE; R-tau unadopted; G1-G6 incomplete.
+No paper/site change, action adoption, dispatch, vault mutation, publication
+or commit/push. Goal ACTIVE; High last confirmed.
+
+
+## Prepared R-tau functional initial accelerations - 1 November 2026
+
+Owner: [initial acceleration construction](../Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_V1_REPORT_2026-11-01.md).
+Primary 23/23, audit V2 11/11, exact read-only replays. SHA256
+dbcdacf8954e1cc59a2ebc42b91cd77f7a8e3473c2c54906b1f94e506455154d;
+audit a0e30b7444c0831ecb76fd985122ff9dd6be045a14b112ced9fd9e2ceda86208.
+
+Thirteen nonauxiliary initial accelerations constructed functionally as
+a=M13^-1 R13+Lie_T(q), with T determined by the existing prepared spatial
+gauge and periodic integrals. Original shift means preserved; all mean
+metric accelerations retained. Coordinate two-jet and nonzero baseline
+prepared shift drift included. Actual centre inverse and nonzero-drift
+Euler controls pass. Auxiliary Zdot is fixed by differentiating Z=-Delta psi,
+with prepared all-root bound <0.000475041. Action Noether identities supply
+initial momentum/global-charge consistency, not a finite-time certificate.
+
+This is a COARSE FUNCTIONAL construction: final sharp continuum gauge
+quadrature remains NOT_COMPUTED. Uniform ||a||_2<530.385 is deliberately
+loose, not a useful evolution accuracy/physical-window bound. Quantitative
+Zddot/higher derivatives, local reconstructed-clock evolution checks,
+physical symplectic/characteristic admission and general transverse
+wavevectors remain open. Next tighten those actual downstream quantities;
+do not repeat root fitting or project future fields onto initial shapes.
+
+Audit V1 10/11 preserved: its extra schema assertion expected 13 rather
+than 12 bound records; V2 uses the explicit key set without physics changes.
+Inherit candidate/action/initial-root/gauge/temporal/mixed review debt.
+Same-author controls are not independent external review. Review DEFERRED;
+physics_pass=false; gate_effect=NONE; R-tau unadopted; G1-G6 incomplete.
+No paper/site change, action adoption, dispatch, vault mutation, publication
+or commit/push. Goal ACTIVE; High last confirmed.
+
+
+## R-tau explicit local clock current - 1 November 2026
+
+Owner: [clock-current V1 report](../Gates/RES-001/RES001_R4C1_RTAU_CLOCK_FLUX_V1_REPORT_2026-11-01.md).
+14/14, exact replay; SHA256
+471748908020df864be786a073a29b5e5dd94a187456ed6686b9d0a5996ead4a.
+Derived off-shell from the actual regulator, keeping its acceleration term,
+independent Z and the full extrinsic-curvature tensor. Independent curved
+original-action variation verifies lapse-gradient/expansion terms. Explicit
+current F=(b/chi)[Z Dp+Z(K h-2Ktensor)Dpsi-p DZ]; E_tau,reg=div F.
+
+F0=0 on clock-adapted slices but spatial flux/source is nonzero. The global
+charge density remains sqrt(h)*rho/C; bare local matter continuity is not
+valid. Whole-circle/all-root bounds retain all three spatial components:
+|Fz|<2.607e-5, |E_tau,reg|<5.003e-5. Earlier homogeneous characteristic code
+already retains the matching linear source; inspected without a fresh replay.
+
+Direct reconstructed-density time comparison remains NOT_COMPUTED. Next
+derive higher root/acceleration derivative control and compare that LOCAL
+equation explicitly. Do not replace it with a global charge identity.
+Physical quotient, general transverse wavevectors, finite-time domain,
+interactions/window and identifying matching remain open. This reversible
+classical current is not entropy production or microscopic matter creation.
+Inherit candidate/action/initial-root/gauge/temporal/mixed/initial-jet review
+debt. Same-author controls are not independent external review. Review
+DEFERRED; physics_pass=false; gate_effect=NONE; R-tau unadopted; G1-G6 incomplete.
+No paper/site change, action adoption, dispatch, vault mutation, publication
+or commit/push. Goal ACTIVE; High last confirmed.
+
+
+## R-tau higher jets and direct local clock comparison - 1 November 2026
+
+Owner: [density V3 report](../Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V3_REPORT_2026-11-01.md).
+23/23, exact read-only replay COMPLETE; SHA256
+9bec36b8aaa37c511779cd420e5b351203f8c9be787e6b0d1593230215a786b3.
+Replay session 59137 terminal exit 0; do not duplicate that replay.
+
+Differentiated momentum ODE gives actual-root ||S_zzz||_2<0.155352 without
+assuming a finite Fourier tail. Higher jets give ||a0_z||_2<13.927. Direct
+local density check retains I_density=Ihat-(N L_Nz)_z, its full time/spatial
+derivative, actual Zdot and the explicit regulator current. Three centre
+residuals <6.053e-13 versus frozen 1e-8 diagnostic tolerance. Omitting current
+gives ~4e-5; omitting lapse improvement gives up to ~3.3e-4. Nonzero paired
+gauge-drift density-time invariance passes. No physical zero-Sdot choice.
+
+WHOLE-ROOT residual enclosure [-572.4583,555.7021] is far too loose for a
+continuum certificate. Zero containment is a sanity check, not physical
+clearance or a physical no-go. Continuum local-clock status remains OPEN.
+Preferred next: derive the constraint-consistent local residual identity,
+retaining actual lapse/momentum/frame/auxiliary equations and action current.
+Do not add more centre-only fits or weaken the criterion. Actual physical
+symplectic/characteristic admission remains the substantive following route,
+with quartic/background-gradient mixing, means and uncertainty retained.
+
+Two incomplete implementation attempts preserved; fixes concern interval
+context and zero-slot types, not equations/tolerances. Inherit candidate,
+action, root, gauge, temporal, mixed, initial-jet and current review debt.
+Same-author controls are not independent external review. Review DEFERRED;
+physics_pass=false; gate_effect=NONE; R-tau unadopted; G1-G6 incomplete.
+Sharp final gauge numerics, higher auxiliary bounds, transverse wavevectors,
+evolution, interactions/window and identifying matching remain open. No
+paper/site change, action adoption, dispatch, vault mutation, publication or
+commit/push. Goal ACTIVE; High last confirmed.
+
+
+## R-tau initial local clock identity - 1 November 2026
+
+Owner: [clock identity V2](../Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V2_REPORT_2026-11-01.md).
+18/18 and exact read-only replay COMPLETE, session 63771 terminal exit 0;
+SHA256 fa72a504e953901fb132483638a33cf97dc2c81ba9e87664bc208012046b8559.
+
+After lapse/multiplier reconstruction, coordinate Euler densities obey
+R_clock=div(N^2 h^-1 E_S)+E_q*(qdot-Lie_S q)
++div(gamma N h^-1 E_V). General non-diagonal metric/frame transformations
+and spatial Ward algebra are checked exactly. Numerical centre residuals
+equal the momentum divergence within 6.71e-46; full off-shell identity
+defect <1.342e-45 against frozen 1e-28. Omission controls reject the frame
+flux (~1.624e-6) and independent auxiliary Euler work (~5.567e-8).
+
+The exact initial root and complete Euler/gauge construction therefore
+have initial local clock consistency in this classical candidate scope.
+This does not prove future conservation, physical admission or a time
+interval. Density V3's broad independent box and all old hashes/failures
+remain unchanged. V1 implementation failure retained; V2 changes no
+equation, tolerance or action. Inherit action/root/gauge/temporal/velocity/
+mixed/initial/current/density review debt; same-author controls are not
+external review. Review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+NEXT: actual prepared-data physical symplectic/characteristic admission,
+retaining auxiliary secondary equation, gauge/constraint drift, charges,
+means, quartic/background-gradient mixing and root uncertainty. Reuse
+existing positive velocity-tangent and mixed operators. Additional initial
+identity inventories alone are insufficient; do not import homogeneous
+evolution bounds into this prepared background. Transverse wavevectors,
+evolution, interactions/window and identifying matching remain open.
+R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete; goal ACTIVE.
+No material paper change, external dispatch, vault mutation, publication,
+commit/push or deployment. High last acknowledged; return Medium requested.
+
+
+## Prepared R-tau principal modes - 1 November 2026
+
+Owner: [principal V3 report](../Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V3_REPORT_2026-11-01.md).
+30/30, exact immutable replay COMPLETE, session 9504 terminal exit 0;
+receipt 9689901a50cf2a41f51dea63ce8bbf5f01b8a5fccdab92337d23a6ff7636f152.
+Interpretation audit V2:15/15, exact replay COMPLETE;
+receipt d168acacc483ed9026fab18b80702675b92349b0c68d92388bcf05f020bae345.
+
+Actual planar principal shift reduction gives whole-initial-root positive
+kinetic bound >0.11315132 in its coordinate-velocity norm, with reference
+relative error <0.094789435 and shift Neumann delta <0.068612. Force/auxiliary
+k^3 mixing retained; positive coordinate quartic coefficient is bounded in
+(0.15111844,0.15191291). This is not a physical cutoff or matching prediction.
+The ordinary dust-characteristic minor has rank at least eight throughout
+the root ball. Exact ninth zero determinant is not inferred from that minor.
+
+Fresh rest ordinary polynomial has squared speeds 0,1/3,4/5 (twice),
+1 (four times),14/13. Existing phase-alignment cone is retained, including
+its superluminal reference phase speed. Actual three-centre and rational
+tilted-frame determinant controls agree within 2.54e-50 (tolerance1e-28).
+Those point controls are not an arbitrary-tilt continuum spectral theorem.
+
+Reference zero-speed branch is defective in equal-order variables with an
+explicit Jordan partner; reference principal gradient energy is indefinite.
+These are substantive evolution questions, not Rule-9 or bookkeeping holds.
+Positive kinetics/real reference roots alone do not prove a physical mixed
+norm, well-posedness, nonlinear persistence or interaction/validity window.
+NEXT: actual configuration/momentum/density constraint graph and physical
+mixed-norm operator, with charges, means, auxiliary secondary equation,
+lower-order mixing and projector/gauge drift. Reuse current operators;
+do not substitute another rest-spectrum audit or old homogeneous evolution.
+
+V1 16/22, V2 21/25 and audit V1 14/15 retained. No equation, physical input,
+allowed mode or tolerance changed. Inherit all prior action, initial-root,
+gauge, temporal, mixed, current and clock review debt; same-author audit is
+not external peer review. Review DEFERRED; physics_pass=false; gate_effect=NONE.
+R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete; goal ACTIVE.
+Transverse modes, evolution, interactions/window and matching remain open.
+No material paper change, action adoption, dispatch, vault mutation,
+publication, commit, push or deployment. High last acknowledged; return
+request already pending. No live calculation remains from this bundle.
+
+
+## Prepared R-tau canonical constraint/density graph - 1 November 2026
+
+Owner: [canonical graph V2](../Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V2_REPORT_2026-11-01.md).
+90/90, exact immutable replay COMPLETE; session 73828 terminal exit 0;
+receipt 0cb96db2f86ead50721f7e0bb87aacfa262c189b905f0fbd46677ed47acfcf1c.
+Full field-dependent momentum tangent retains delta(D)^*p, longitudinal
+mean equation and both global charges. Canonical local density retains
+frame-momentum divergence, curvature and lapse improvement. The auxiliary
+Z_z terms cancel; independent Z density variation vanishes on its secondary.
+Trace coefficient magnitude N/a lies in (0.99989638596212,1.00010362477486)
+on every certified initial root. Action controls verify all derivative counts.
+
+Principal trace ellipticity is NOT the full periodic inverse or physical
+norm. Density controls a coupled trace/momentum combination. NEXT: coupled
+canonical momentum/density inverse with actual lower-order coefficients,
+gauge/residual symmetries, mean momentum and both charge conditions; retain
+homogeneous moduli. Then derive transported symplectic/variable-coefficient
+evolution with projector/time drift. Zero-speed/energy warnings remain.
+V1 syntax-preflight NOT_RUN failure retained; no equation or tolerance change.
+Review DEFERRED; physics_pass=false; gate_effect=NONE; R-tau unadopted;
+original R4C1 unchanged; G1-G6 incomplete; goal ACTIVE. No paper/site change,
+action adoption, external dispatch, vault mutation, publication or commit/push.
+
+
+## Prepared R-tau coupled periodic inverse - 1 November 2026
+
+Owner: [coupled inverse report](../Gates/RES-001/RES001_R4C1_RTAU_COUPLED_PERIODIC_INVERSE_V1_REPORT_2026-11-01.md).
+31/31 plus Sobolev/range audit12/12; both exact replays COMPLETE.
+Main receipt b97ac2036d5e3ae02776443caaf2ece057268fdfdab04f885c5eb24cc1507157.
+Actual whole-root projected operator contraction <0.534224. Scalar L2->H2
+inverse <7.970; full trace-H2 plus eliminated-momentum-H1 bound <41.662 D
+in the declared source norm. Mean block, both charges, metric/momentum
+moduli and exact longitudinal compatibility are retained. Non-gauge
+cross-metric initial tangents exist for every n>=1; no parity/band rule
+is imposed on general data. This is an INITIAL linear inverse on its
+compatible range, not a full physical evolution or nonlinear-domain theorem.
+NEXT: transported physical symplectic quotient and prepared evolution
+operator with global/mean sectors and basis/projector time drift. Retain
+zero-speed and energy-sign warnings; do not substitute old homogeneous
+evolution or repeat initial spectra/identities. Review DEFERRED;
+physics_pass=false; R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete.
+Goal ACTIVE. No material paper change, action adoption, dispatch, vault
+mutation, publication, commit, push or deployment.
+
+
+## Prepared R-tau weak symplectic and charge frame - 1 November 2026
+
+Owner: [symplectic/charge frame](../Gates/RES-001/RES001_R4C1_RTAU_SYMPLECTIC_CHARGE_FRAME_V1_REPORT_2026-11-01.md).
+25/25 and exact replay COMPLETE; receipt
+cd40137244f6969a8ba737e26a684721e89d9ea8b40bd5263769baa18e743a13.
+Initial weak two-form retains weighted harmonic momenta, density inverse
+adjoints, pp/cross blocks and means. Density pairing principal a/(N*k^2)
+is order -2; do not use a flat strong L2 symplectic inverse. Root-uniform
+volume/phase/origin witnesses establish the global frame rank.
+
+I=-H0: X_H0=-X_I is physical clock evolution despite being characteristic
+on the fixed-I/Q level. Do not quotient physical time as coordinate gauge.
+Use ambient spatial Hamiltonian flow tangent to the fixed-charge level;
+no new ensemble is adopted. NEXT: actual canonical-density generator using
+the explicit clock-current equation, rate inverse, canonical momentum and
+gauge-velocity equations. Retain moving-map terms and transform the initial
+gauge rates consistently. Quantitative generator/norm and finite-time
+control are NOT computed here. Zero-speed/energy-sign warnings remain.
+Review DEFERRED; physics_pass=false; R-tau unadopted; G1-G6 incomplete;
+goal ACTIVE. No material paper change, action adoption, dispatch, vault
+mutation, publication, commit, push or deployment.
+
+
+## Prepared evolution entry and auxiliary closure - 1 November 2026
+
+Owner: [entry/auxiliary report](../Gates/RES-001/RES001_R4C1_RTAU_EVOLUTION_ENTRY_AUXILIARY_V2_REPORT_2026-11-01.md).
+Canonical entry15/15, second-rate jet15/15 and auxiliary21/21, all exact
+replays COMPLETE. Auxiliary receipt57233b4614cc62519f53c7b9f706c6bdea85276334c55b9fb6d7cd930393068d.
+The actual full-metric secondary reconstruction retains explicit third
+metric/fourth force jets and mixed metric-time terms. The canonical flow
+retains spatial Euler flux/coefficient drift. No auxiliary kinetic mode.
+Full gauge/current closure, transported generator and physical norm remain
+OPEN. NEXT: adapted gauge-velocity inverse with field/shift/momentum-density
+coordinate-rate consistency, then action clock-current row. Review DEFERRED;
+physics_pass=false; R-tau unadopted; G1-G6 incomplete; goal ACTIVE.
+No action adoption, vault mutation, publication, commit, push or deployment.
+
+
+## Prepared gauge-velocity inverse - 1 November 2026
+
+Owner: [gauge-velocity report](../Gates/RES-001/RES001_R4C1_RTAU_GAUGE_VELOCITY_V1_REPORT_2026-11-01.md).
+18/18, exact replay COMPLETE, receipt
+b04c13cdc5a26673e5f91291c43e50edfb5f4a03bf4a0f68c2a317c95d53e92b.
+Actual-profile functional gauge solve retains modulus rates and harmonic
+coordinate freedom. Mean-free L2->H1 bounds2.829298/0.707216; actual
+canonical shift/dual-momentum and paired coordinate-rate checks pass.
+This is coordinate gauge fixing, not a physical shift positivity claim.
+NEXT: full-metric action clock-current row and canonical constraint/charge
+transport. Full generator and physical norm remain incomplete. Review
+DEFERRED; physics_pass=false; R-tau unadopted; G1-G6 incomplete; goal ACTIVE.
+No material paper change, action adoption, dispatch, vault mutation,
+publication, commit, push or deployment.
+
+
+## Prepared clock-current and density-map transport - 1 November 2026
+
+Owners: [current/Noether transport](../Gates/RES-001/RES001_R4C1_RTAU_CURRENT_TRANSPORT_V2_REPORT_2026-11-01.md)
+and [direct density-time map](../Gates/RES-001/RES001_R4C1_RTAU_DENSITY_TIME_TRANSPORT_V1_REPORT_2026-11-01.md).
+46/46 and23/23, exact replays COMPLETE. Receipts respectively
+8ff36131f3058e32200ab8f7b3c8247d2a2ea66d8ea272ee1ebc8215dd22a322
+and5b6b8626985344b39ba97acd24d7435b684f50f9bb5ebf343decd12b69f36e2f.
+Actual full-metric/auxiliary current, canonical U(1)/spatial momentum
+transport and direct canonical-density time variation agree in registered
+point controls. Retain lapse improvement, regulator energy, moving-density
+drift and nonzero finite-centre/off-constraint-probe Ward defects.
+This closes the local density/current consistency check, not a uniform
+physical norm or finite-time evolution theorem. NEXT: bounded actual
+variable-coefficient physical-domain/norm calculation, including evolving
+compatible inverse and zero-speed/quartic coupling. No reference-spectrum
+substitution or arbitrary positive weights. Weighted-range/domain
+persistence, nonlinear evolution, interactions/window, transverse modes,
+GR/local compatibility and genuine matching remain open. All G1-G6 remain
+incomplete. R-tau unadopted; review DEFERRED; physics_pass=false;
+gate_effect=NONE; goal ACTIVE. No material manuscript change, action
+adoption, dispatch, vault mutation, publication or commit/push/deployment.
+Handoff: [density transport](../Verification/ITSM_RTAU_DENSITY_TRANSPORT_HANDOFF_2026-11-01.md).
+
+
+## Prepared physical-norm calculation contract - 1 November 2026
+
+Next contract: [physical norm and evolving domain](../Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-11-01.md).
+Input manifest: [pinned inputs](../Verification/ITSM_RTAU_PHYSICAL_NORM_V1_INPUTS_2026-11-01.json).
+Preparation only; scientific derivation NOT_STARTED. The preceding
+current46/direct-density23 checks and their exact replays are complete.
+Next: compose actual rows on the compatible periodic graph, derive the
+physical derivative counts and test zero-speed/quartic/background coupling
+with chart drift and explicit coefficient/domain bounds. Positive kinetics
+or a reference spectrum is not the required physical norm. Retain physical
+clock flow, weighted longitudinal range, torus means and harmonic partners.
+Mode confirmation remains pending; do not infer a switch. Review DEFERRED;
+physics_pass=false; gate_effect=NONE; R-tau unadopted; goal incomplete.
+No new result, action adoption, vault mutation, publication or commit/push.
+
+
+## Prepared evolution local kernel integration - 1 November 2026
+
+Owner: [kernel V2](../Gates/RES-001/RES001_R4C1_RTAU_EVOLUTION_KERNEL_V2_REPORT_2026-11-01.md).
+10/10 integration checks and exact replay COMPLETE. Receipt
+7b1ae5d9052cd5b210f65d6106712ed51ca91fd8f32dc69497ec11724ad8eec7.
+The local point kernel composes actual canonical, auxiliary, current and
+canonical-density rows with caller-supplied shift. A pure-shift probe found
+an absent sparse-zero derivative lookup; helper V2 corrects that branch
+without changing equations/criteria. Failed V1 source and failure preserved.
+This is implementation integration, not a physical zero-speed-branch result.
+Global compatible periodic composition and physical-norm derivation remain
+incomplete. All routine preparation available without new derivation is
+complete. The next hard calculation awaits the fresh High acknowledgement;
+that request supersedes the earlier return-to-Medium request. Do not infer
+an actual setting change. Review DEFERRED; physics_pass=false;
+gate_effect=NONE; R-tau unadopted; G1-G6 incomplete. No action adoption,
+vault mutation, publication, commit, push or deployment.
+
+
+## Documentation and Git checkpoint - 1 November 2026
+
+Operator authorized documentation, commit and push. Owner:
+[1 November evidence map](../Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-01.md).
+Consolidate all scoped post57d4f302 evidence, including failed versions,
+R4C1 editorial preservation and the independent static-T3 optics control.
+Native goal last reports BLOCKED awaiting the fresh High confirmation;
+no scientific derivation is resumed by this Git delivery. Actual prepared
+physical norm/evolving domain and G1-G6 remain incomplete. Review DEFERRED;
+physics_pass=false; gate_effect=NONE. No publication or site deployment.

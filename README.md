@@ -85,7 +85,44 @@ orders the research, and the [Master Research Plan](Theory/Core/ITSM_Master_Rese
 defines the authority and claim boundaries. Script check counts and hash
 matches establish only their stated calculation or artifact scope.
 
-## 🧪 Current research checkpoint — 30 October 2026
+## 🧪 Current research checkpoint — 1 November 2026
+
+The [new checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-01.md)
+record work since recovery commit `57d4f302` on 30 October. The main advance
+is a more complete connection between the action, initial constraints and
+the density/current evolution equations:
+
+- **Repair choices have been tested:** the additional alignment restriction
+  is not preserved by the original coupled dynamics. Two explicit,
+  unadopted action variants were compared. The whole-frame clock restriction
+  (F-tau) fails a high-frequency gradient test on the homogeneous control;
+  the regulator-only clock variant (R-tau) supports further investigation.
+- **R-tau has stronger bounded results:** a physical mixed-regularity linear
+  estimate exists on the separate homogeneous control through `t=0.05`.
+  A nontrivial periodic initial slice also has a constraint-existence
+  certificate. Neither result establishes nonlinear evolution of the
+  spatially varying prepared background.
+- **The prepared calculation now retains the coupled density map:** the
+  compatible periodic inverse, weak symplectic chart, auxiliary and gauge
+  rows, clock current and canonical density-time variation have been
+  calculated in their stated scopes. Local integration checks preserve
+  charge/constraint terms, coordinate drift and known off-constraint defects.
+
+**Next physical question:** does this actual variable-coefficient system
+admit a controlled physical norm and evolving compatible domain? The
+[next contract](Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-11-01.md)
+retains the zero-speed and quartic sectors; its hard derivation awaits the
+operator's High-setting confirmation. R-tau remains an unadopted comparator.
+Matching, interactions, a physical validity window and canonical gates
+remain open; these checks do not produce a numerical acceleration prediction.
+
+P1 remains `0.2.0-rc7`, P2 `0.2.0-rc4`, Thermodynamics
+`0.7.1-conditional-draft`; the R4C1 draft is now `0.1.2-conditional-draft`
+after a [solo-author declaration correction](papers/R4C1-Covariant-Exchange-Model/REVISION_NOTES_v0.1.2.md).
+Its scientific body and earlier version remain preserved. No paper is newly
+submitted or cleared, and this Git checkpoint does not deploy the website.
+
+### Preserved 30 October research checkpoint
 
 The [30 October checkpoint and complete evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-30.md)
 collect the work since the last pushed recovery revision on 21 October.

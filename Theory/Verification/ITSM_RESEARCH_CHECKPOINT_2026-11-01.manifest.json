@@ -1,0 +1,3294 @@
+{
+  "baseline_revision": "57d4f30242b6adcedc7082b6f7d6bc174ec16dde",
+  "branch": "recovery/v12-core-architecture",
+  "checkpoint_date": "2026-11-01",
+  "excluded_local_work": {
+    "count": 15,
+    "handling": "Unchanged; private inventory is not committed"
+  },
+  "files": {
+    ".gitattributes": {
+      "bytes": 4253,
+      "sha256": "298559f09efd3c0d9d616f6c13f9db5df64cb1e60d180949e8c1a370ca438f79"
+    },
+    "Analysis/Lensing/T3Illusion/outputs/static_t3_v1/images.csv": {
+      "bytes": 1667,
+      "sha256": "b24814ccaac046127bf54ce06c0c450f4f48828c8241b3c8fcba3262647a09a2"
+    },
+    "Analysis/Lensing/T3Illusion/outputs/static_t3_v1/images.csv.sha256": {
+      "bytes": 78,
+      "sha256": "ff4a3d3fe347b836883c0e509dba20b5b6be3112eaf1a7dfb21b1e51d663cb22"
+    },
+    "Analysis/Lensing/T3Illusion/outputs/static_t3_v1/sky.svg": {
+      "bytes": 3741,
+      "sha256": "8c4dfbabfcbc9cc57f82afe05f920be81dd8fa1c6c98ad022f65fbe6ed3ae620"
+    },
+    "Analysis/Lensing/T3Illusion/outputs/static_t3_v1/sky.svg.sha256": {
+      "bytes": 75,
+      "sha256": "a833e4af4fe180502903d66ad9aba6e5ddec78b4d17541dc38219052f588e897"
+    },
+    "Analysis/Lensing/T3Illusion/outputs/static_t3_v1/summary.json": {
+      "bytes": 2527,
+      "sha256": "00e8e935909cdaff201c868756d0637a4aacf127b9c32abca58d5036cfb0ac05"
+    },
+    "Analysis/Lensing/T3Illusion/outputs/static_t3_v1/summary.json.sha256": {
+      "bytes": 80,
+      "sha256": "4b9c24130d492e0cfe80ca62595398cd70581d731a6179e09b7ed54e1c3e7dba"
+    },
+    "Analysis/Lensing/T3Illusion/t3_null_control_v1.py": {
+      "bytes": 8663,
+      "sha256": "9b626278a3c0df5f0f578967fec9af645c6b50784e23818aa159f5732dc08e39"
+    },
+    "Analysis/Lensing/T3Illusion/t3_null_control_v1.py.sha256": {
+      "bytes": 89,
+      "sha256": "c469b18675514b5ca3d87db8eb6b10918d5eee93e7887bb5ac89068d6f745564"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_coupled_periodic_inverse_v1.py": {
+      "bytes": 6704,
+      "sha256": "56f7b0eac4a395fa6653694f057a470375beb2a2d8600443ec5100bdab24fed5"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_coupled_periodic_inverse_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "50c1a54bee2a76fd1495624f5a3f25ad784574749815a1448eb160815e57a10c"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_initial_acceleration_v1.py": {
+      "bytes": 7410,
+      "sha256": "8be3e112ace3a3127176d5b18a91c296b80d580797c782cc71436e55e3849a43"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_initial_acceleration_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "bfd00d01fc16908ab7b767d061354826013c1982c86e9d5b398d47aa45a5953a"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_initial_acceleration_v2.py": {
+      "bytes": 8084,
+      "sha256": "f0365e1e7b67f7c68021f98eb4d9ceb715757ba8b144e7e563b27681badbc7ed"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_initial_acceleration_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "a804b5c35fa23d3c84d95e1c879927b360e63d83d9bf01579716062a7e82f951"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_mixed_operator_v1.py": {
+      "bytes": 5919,
+      "sha256": "f76d05a41f4e41cffffa7b7fb7f0048f7b3b1fd4a348d0ae66e0b54adb8d4cd9"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_mixed_operator_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "a87b1be306901ff58f35e8c38246329587cced73e962a1013e3256454b202e8f"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_norm_extension_v1.py": {
+      "bytes": 6867,
+      "sha256": "5bc1af961699f188c68e84ce4e84e8e0d0d0a1d603ccb6e683795217df335f11"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_norm_extension_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "1de444e5e83fa0a302c5d2afc75b3643c3f4a46e4ff63ca3c84f7a4cb04bdaaa"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_periodic_inverse_v1.py": {
+      "bytes": 6686,
+      "sha256": "f8b5ed373cc1d62eb99003f538a6ed05bd5227a755c8d77256341946f77e2ce1"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_periodic_inverse_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "835a9011df8d115d9c5e92cf344a2420a2f641c4ca0349427e9992a5b9f4cab0"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_periodic_offgrid_v1.py": {
+      "bytes": 5312,
+      "sha256": "7843680a8932cd96e0462530609fa72f2de4ea643c84e07eee90a1f187722ce1"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_periodic_offgrid_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "783665aaa78d0d552740751793b6656e5ea45572f8cb3155d90873a7b4380513"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_principal_v1.py": {
+      "bytes": 5159,
+      "sha256": "36859de5274219d63122cb140e0520aa196bbec899f82634a2bb8ad8b24aec6e"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_principal_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "d97983eba2a918c14383e47007b4fcee98e7ecde4ce496552b4c617f7edb5ceb"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_principal_v2.py": {
+      "bytes": 5479,
+      "sha256": "ad754096fd896b079369d2ae2c0cadf772b4cb63b2fefd3b0fe357cf9d53a5a7"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_principal_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "4f43ad378592938dfeeaac68d40aa1d823ece9365f29673bbca0dbb893faa596"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_temporal_v1.py": {
+      "bytes": 5445,
+      "sha256": "42b44c71a6e95803efcdff00eaa09913e836b2862acee912bbd8fd5aa4439240"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_temporal_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "b63afcfafe382a8e85166e9a2b7b6b20f9b680487d8fca9850ac09652aed0cc6"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_temporal_v2.py": {
+      "bytes": 5776,
+      "sha256": "808cd821ddab6fd37022f3bd9465edbbde0f0cc1be51614df67d14f6edca123b"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_temporal_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "5c5432836c192227580d82cd1c866b45261a1d75951cf092eca24f144db475e4"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_velocity_tangent_v1.py": {
+      "bytes": 5934,
+      "sha256": "5348dc4675dd3a94b90330012d7a50c3a3722f348d4d7de6e36e7919c7ed6f39"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_rtau_velocity_tangent_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "d8228e85acd6189cf97d3ca7d4adb001da3b1df8a2645e95d402aa2f1542b1be"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_two_repair_comparison_v1.py": {
+      "bytes": 6827,
+      "sha256": "c79436d10a50dfaa10da8be3bda0fd95e4b225560058bff393393ff4ccf6a99b"
+    },
+    "Analysis/MasterTests/audit_01_r4c1_two_repair_comparison_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "4e2d3616d7d24261c4b362237d3dc6c9a0096a630e6997bbe0fefe79e5e7ff0c"
+    },
+    "Analysis/MasterTests/dust_certified_arithmetic_v1.py": {
+      "bytes": 9235,
+      "sha256": "f868032dcd939a52c3299ac66d5f4c18d02c5681bac7391bcce67732bc026599"
+    },
+    "Analysis/MasterTests/dust_certified_arithmetic_v1.py.sha256": {
+      "bytes": 98,
+      "sha256": "c416b32a0e9d710b8fde95a7da050475930e688fa3efa8c73aa4374cd323fca6"
+    },
+    "Analysis/MasterTests/outputs/r4c1_aligned_preservation_v1_attempt_01/summary.json": {
+      "bytes": 36198,
+      "sha256": "0a81d8e66531d55af1e0b024a3c345419a974cc33b56e894d626f4a2fe58a9ea"
+    },
+    "Analysis/MasterTests/outputs/r4c1_aligned_preservation_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "477912b1001e068857ac5995f26414a72b4f38191b322e9ce183d7a94873f7a7"
+    },
+    "Analysis/MasterTests/outputs/r4c1_aligned_preservation_v1_inputs_01/summary.json": {
+      "bytes": 4375,
+      "sha256": "97c51c055327efeacc6cfcc85615b8660c0bac9e3a855fd6633415be8a803d14"
+    },
+    "Analysis/MasterTests/outputs/r4c1_aligned_preservation_v1_inputs_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "758338a4dfc67f74ce3bb8c4940a2578c258a0662c9142feee77558026790eb0"
+    },
+    "Analysis/MasterTests/outputs/r4c1_aligned_tangency_v1_attempt_01/summary.json": {
+      "bytes": 32970,
+      "sha256": "7d811ae1cacc9fd15a46e4a517626cf6277c9ab925878d1fd0be0cd2974168de"
+    },
+    "Analysis/MasterTests/outputs/r4c1_aligned_tangency_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "6316397e375e9938bbc5bef17c6e1c5f6da026f294509b2661485df9a29318d4"
+    },
+    "Analysis/MasterTests/outputs/r4c1_aligned_tangency_v2_attempt_01/summary.json": {
+      "bytes": 32161,
+      "sha256": "836f9e718212d689a86cad0eec22657bdce293b5fb422e693c7abcb43545dc9c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_aligned_tangency_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "6d3a9efd826f2f5611ec4589b3ae717bccd4f21050b2d3085ab8fbbe2c3bedd3"
+    },
+    "Analysis/MasterTests/outputs/r4c1_b1_alignment_domain_v1_attempt_01/summary.json": {
+      "bytes": 33591,
+      "sha256": "5ce2ecbf65f1a1b1d3f0e38dc6a02413a9bcefa36a1e93e24b9aeb090e36be1b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_b1_alignment_domain_v1_attempt_01/summary.json.sha256": {
+      "bytes": 80,
+      "sha256": "39a5a5a14eeb1f5d6cab3253aecc83d820258931c1273525171bbec6bddc036b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_b1_dust_reconstruction_v1_attempt_01/summary.json": {
+      "bytes": 14320,
+      "sha256": "7f4134defc9dd25b6a831d154f195a308a17b8d3ee01c29643a764b088c51e4a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_b1_dust_reconstruction_v1_attempt_01/summary.json.sha256": {
+      "bytes": 80,
+      "sha256": "5765c2c88bf4c203a9ea1f1fdf5753f53212b16dfcda87fde357ac6b988c5c8d"
+    },
+    "Analysis/MasterTests/outputs/r4c1_b1_kinetic_drift_v1_attempt_01/summary.json": {
+      "bytes": 34337,
+      "sha256": "e66aaa83814afb726ace2bbaf1543591ba6502c37440be4430aca2ad7375c3cb"
+    },
+    "Analysis/MasterTests/outputs/r4c1_b1_kinetic_drift_v1_attempt_01/summary.json.sha256": {
+      "bytes": 80,
+      "sha256": "bb1dd598b1e58c6ece2272132a411f620ab3e2733f3ef5880a1e7508e2023e59"
+    },
+    "Analysis/MasterTests/outputs/r4c1_b1_propagator_v1_attempt_01/summary.json": {
+      "bytes": 459997,
+      "sha256": "93c5d85618d4546b61b6a74961d04d93da35e2ad95dc20d3b57b4ce4e38dce10"
+    },
+    "Analysis/MasterTests/outputs/r4c1_b1_propagator_v1_attempt_01/summary.json.sha256": {
+      "bytes": 80,
+      "sha256": "3d50f82173ab8223d1a3704f562731b0b6538bf836cf8ba7af81e7b7125c1294"
+    },
+    "Analysis/MasterTests/outputs/r4c1_b1_reduced_kinetic_v1_attempt_01/summary.json": {
+      "bytes": 40983,
+      "sha256": "829b013edc716cb2a7c9a2a4161bf2830186b0d68673b8b57e3928deb5a1d53a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_b1_reduced_kinetic_v1_attempt_01/summary.json.sha256": {
+      "bytes": 80,
+      "sha256": "b8b0a9d2c1bec805eb5449cb7488310b67bac3b100c5bed9bfd7f407ad9c82a2"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_auxiliary_rate_v1_attempt_01/failure.json": {
+      "bytes": 218,
+      "sha256": "c9b7015590d5c9d86802146d50e9eedcdfeb970fbb99ea7080b387daec11f553"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_auxiliary_rate_v1_attempt_01/failure.json.sha256": {
+      "bytes": 66,
+      "sha256": "495b4fba3983d2a059816154232dbe9fbbb0e28a4efa35c5536e3c6a3722f20a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_auxiliary_rate_v2_attempt_01/summary.json": {
+      "bytes": 37544,
+      "sha256": "57233b4614cc62519f53c7b9f706c6bdea85276334c55b9fb6d7cd930393068d"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_auxiliary_rate_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "8b6f2fb81d9e403a61c24733e9dca40e4bdb3fe0afe0c8f55573db0fa37be96d"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_density_graph_v1_attempt_01/failure.json": {
+      "bytes": 227,
+      "sha256": "3b4efa47d63b8083cd70ffea01e520ccbbb727f057e977da21c5978f6ca6eec1"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_density_graph_v1_attempt_01/failure.json.sha256": {
+      "bytes": 66,
+      "sha256": "abd18b150d22d3139d9e131c50a31b72473b0eeda56f05259502bdfbd4936749"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_density_graph_v2_attempt_01/summary.json": {
+      "bytes": 78543,
+      "sha256": "0cb96db2f86ead50721f7e0bb87aacfa262c189b905f0fbd46677ed47acfcf1c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_density_graph_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "d3bd7a81c52f53068a5c9e96d0b9c0a7e9378727d4e62697918ef8e449313904"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_flow_entry_v1_attempt_01/summary.json": {
+      "bytes": 65745,
+      "sha256": "5628cf0fb09844bc49005f727f8852bf81e96807b67a004848d803d703ba0075"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_flow_entry_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "facf2823c0b4bb5e7b6ab12e16796ced1210eee05b8a2d4a59b0e1d6807a230c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_flow_second_jet_v2_attempt_01/summary.json": {
+      "bytes": 66190,
+      "sha256": "ae30954122771bfd504f4b41396d70bc324dfd40702412ae192c5a8c13041786"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_flow_second_jet_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "b2251ec085c9000aa14b43a967f9e6dd0f5971f6c9fe203e36ca6fc465b9d40e"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v1_attempt_01/failure.json": {
+      "bytes": 396,
+      "sha256": "daac5be68b0a85bd4ac28dc1b0c4655b35bd673dee37bf307cb0be5c0cfc2892"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v1_attempt_01/failure.json.sha256": {
+      "bytes": 66,
+      "sha256": "aa2b056de1f02abb4f582a4413d69b784d07ce920fdc10f50c02266fef91a679"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v2_attempt_01/failure.json": {
+      "bytes": 398,
+      "sha256": "9ce22e314658d476486424b28ff7e566dad037d935ab548fcecff69071119f5b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v2_attempt_01/failure.json.sha256": {
+      "bytes": 66,
+      "sha256": "b3a741c3357c932b17dbe00a8590693644a9537038ec50fe4652c0792f9e2c5c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v3_attempt_01/summary.json": {
+      "bytes": 34562,
+      "sha256": "9bec36b8aaa37c511779cd420e5b351203f8c9be787e6b0d1593230215a786b3"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v3_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "095b4f02395a29b2faa56a0cabafd4cd1a50c61690c144603528d5e458c4f3b3"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_flux_v1_attempt_01/summary.json": {
+      "bytes": 99917,
+      "sha256": "471748908020df864be786a073a29b5e5dd94a187456ed6686b9d0a5996ead4a"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_flux_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "b34f9d63dd3ab0fb108cd8abaecc57dd786058502d9d083ad6b0fcabfee0a51b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_identity_v1_attempt_01/failure.json": {
+      "bytes": 281,
+      "sha256": "5ffcd2c37f3368606c2632ea445da6cc3e76c26b6fc7ef9498fc3bf3e9a5d08f"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_identity_v1_attempt_01/failure.json.sha256": {
+      "bytes": 66,
+      "sha256": "975d2d2a679c92ef5ac0f94acdaa72fc696bc2f6a7e358420877c61103ed15db"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_identity_v2_attempt_01/summary.json": {
+      "bytes": 51650,
+      "sha256": "fa72a504e953901fb132483638a33cf97dc2c81ba9e87664bc208012046b8559"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_identity_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "b1568c29fd60b5ef3cff652f51bb782ca41302dcbc5e8da36934bd111166212d"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_coupled_periodic_inverse_audit_v1_attempt_01/summary.json": {
+      "bytes": 26799,
+      "sha256": "25d6da6f28a4e0f5601825999bb8fb891e3fe486087e3e61eb63adbab136895e"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_coupled_periodic_inverse_audit_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "451e5aec4bf1d942d3f2c8291fe50f03ec6149e998ec3c4cd628f220ee6495d6"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_coupled_periodic_inverse_v1_attempt_01/summary.json": {
+      "bytes": 39261,
+      "sha256": "b97ac2036d5e3ae02776443caaf2ece057268fdfdab04f885c5eb24cc1507157"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_coupled_periodic_inverse_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "9b1d1f7fe2c1fb64a96d5b2350cdee9d0a8feea28ffc8161dbc7926977bebb4d"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_current_transport_v1_attempt_01/failure.json": {
+      "bytes": 1309,
+      "sha256": "2bd7503081d351ac575f8946e5bc9e4195f54775830949b3507f3c7a47111afa"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_current_transport_v1_attempt_01/failure.json.sha256": {
+      "bytes": 66,
+      "sha256": "c111725f835e7bb4b5a034cc38dc34b04f32a46bd7e4ec09ea2c0f2f17e65409"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_current_transport_v2_attempt_01/summary.json": {
+      "bytes": 41382,
+      "sha256": "8ff36131f3058e32200ab8f7b3c8247d2a2ea66d8ea272ee1ebc8215dd22a322"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_current_transport_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "435eb3980de05875d461ff6b2e1b6b3a17d76ea456a6673eeffa2b4450454d58"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_density_time_transport_v1_attempt_01/summary.json": {
+      "bytes": 36305,
+      "sha256": "5b6b8626985344b39ba97acd24d7435b684f50f9bb5ebf343decd12b69f36e2f"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_density_time_transport_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "cabd880389a2b7b3ee71f64eeec0207184e013772bf19c274fd0236a4f815f21"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_evolution_kernel_v1_attempt_01/failure.json": {
+      "bytes": 553,
+      "sha256": "5378bbc7477dd2cb78216748e028f00443659bf09460f55a0db284685860cc7f"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_evolution_kernel_v1_attempt_01/failure.json.sha256": {
+      "bytes": 66,
+      "sha256": "a7c7d7e38d9da3102a64b3f2bc5086e2c8814a5efc7273258c0ff6f9258fe72c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_evolution_kernel_v2_attempt_01/summary.json": {
+      "bytes": 33022,
+      "sha256": "7b1ae5d9052cd5b210f65d6106712ed51ca91fd8f32dc69497ec11724ad8eec7"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_evolution_kernel_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "518acdbe41839b196727ea82b5f60b5b3ef26e2276314f0976ba0f14558bda73"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_gauge_velocity_v1_attempt_01/summary.json": {
+      "bytes": 30857,
+      "sha256": "b04c13cdc5a26673e5f91291c43e50edfb5f4a03bf4a0f68c2a317c95d53e92b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_gauge_velocity_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "e331a9829095827aecd674c893296c8a1eee7fc4321ec6eec0757ab15369f764"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_audit_v1_attempt_01/summary.json": {
+      "bytes": 18496,
+      "sha256": "edec02491c301dd126d6b2e883a3dc5ef71e1ab71b5c612237f4969213f02789"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_audit_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "d207e5d7fe84a6d8187f0e41260819dd6f709ec80174feccd88b288a22286865"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_audit_v2_attempt_01/summary.json": {
+      "bytes": 18967,
+      "sha256": "a0e30b7444c0831ecb76fd985122ff9dd6be045a14b112ced9fd9e2ceda86208"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_audit_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "569ba5b2955324c6ec9b1cf630ff920133f52b693f41a189bfbd277349270850"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_v1_attempt_01/summary.json": {
+      "bytes": 28580,
+      "sha256": "dbcdacf8954e1cc59a2ebc42b91cd77f7a8e3473c2c54906b1f94e506455154d"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "b5be091ba43a94f1c16e7ef1cf1c277cf319545e9f0151ec0ac36a1bc5385d0b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_interactions_input_v1_attempt_01/summary.json": {
+      "bytes": 8507,
+      "sha256": "f06bfc8926b24f874c01ee000f0b34b71cf69906b4fc00278ed650c8640841d0"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_interactions_input_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "cf83e486310cfa58d7e425617fccecc7c4f3d3d1971f030c1d3eb25647e0fed9"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_interval_residual_v3_attempt_01/summary.json": {
+      "bytes": 154188,
+      "sha256": "d116cbb8c71241c4e3c85c1b260f082f5e30306dbf51243d26e446e36e797484"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_interval_residual_v3_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "1fc471bf4d1dcdf8ae82dabf2c658854d31b76246b12b40bca3cacb508234bed"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_audit_v1_attempt_01/summary.json": {
+      "bytes": 17596,
+      "sha256": "38dd70c6da41c7f917658220c0e82181c6be164923efbe9992bb28d31369ea3b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_audit_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "67f28a1bb03799822fd25afcb6c69216775ed097ad7a89ba2df231a3826cec42"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v1_attempt_01/failure.json": {
+      "bytes": 382,
+      "sha256": "2bebfa1b0597b7b7a1ca5e3be283d1d73c37f39d4a6aac55c176262cd3e8aa6f"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v1_attempt_01/failure.json.sha256": {
+      "bytes": 66,
+      "sha256": "7043d20445d3e026d4737c3275626b5359dd3e672d1debf9efc1161b0f468525"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v2_attempt_01/failure.json": {
+      "bytes": 418,
+      "sha256": "572a21aabd23505aaab0dbf8121abca97455020441159001776975b8510232fe"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v2_attempt_01/failure.json.sha256": {
+      "bytes": 66,
+      "sha256": "0d1c3ee4f1fc2908baa414475412d9a22eed0c6bcf94f10c11c798255dc91bd8"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v3_attempt_01/failure.json": {
+      "bytes": 419,
+      "sha256": "65683593dcf9bb7af6d2e78bb5783f84a4508babc7a2f7efd757b95f2e36469c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v3_attempt_01/failure.json.sha256": {
+      "bytes": 66,
+      "sha256": "94466f9537ac4ca9543c37ce0089086e437bed7586c6ea9aab5bfbe602710a27"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v4_attempt_01/summary.json": {
+      "bytes": 448111,
+      "sha256": "d916402a0751fa4a0409d2048ed4e38ea18dd9b5629836f6a3517fdd44e0b577"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v4_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "5b569a7c540b777ac4001f8a7f7bcba972e04a62c032dccb402f358bdc870aab"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_constraints_v1_attempt_01/summary.json": {
+      "bytes": 13617,
+      "sha256": "202ead4f7fd5d26d3eae4ec1ccc05798f2b8ef646eb7468a1a09103e3c13a987"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_constraints_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "1679a7f983dc216ee4d8b5b36c8dae7c7ae90327d02d142d64f95ab7cea955a6"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_regulator_v2_attempt_01/summary.json": {
+      "bytes": 27302,
+      "sha256": "ebf0bb4708ca1167bbbf4f3049ee8d418bfb76b0e992686ed6b85bca923f3d46"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_regulator_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "756439e9bf9ccb7ac53f1c0812453a5e694772abffc59fe4ad8fc475b04bf2ab"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_norm_extension_v1_attempt_01/summary.json": {
+      "bytes": 11372,
+      "sha256": "0b2c3d34b6cb19da0701ab10497b554f4fcdf6e8c494b1b5bbf8da611fc2f1ad"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_norm_extension_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "e2b36122e41cf5df6783f593ca6d937d0495a70c7ef70d064233e0c1f43875e0"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_inverse_audit_v1_attempt_01/summary.json": {
+      "bytes": 14627,
+      "sha256": "a1ef2a03fcd26a561ce9843cd72106f57ed37530f0ca625ddfbdbb47bf787a52"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_inverse_audit_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "41f080e652b931ef9c24a3b2977fee0ebb7ca5b266996e382a0d049b2f2fb45b"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_inverse_v1_attempt_01/summary.json": {
+      "bytes": 68609,
+      "sha256": "9c22269a9e40c331fd9c72ad72e44e9f67705524193293e2a11adc9f131827b9"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_inverse_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "61bed1b3a059904e919cb2ef5536a1f0b0fa2532412c26eff9242ab980c3ad05"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_numerical_v1_attempt_01/summary.json": {
+      "bytes": 19891,
+      "sha256": "58fc8db6b8d10ee57f2974e0415685ded3cfe9e80745044b19b551b7827c0d60"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_numerical_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "d705e7d3ae3c647450cbcf38d06aeaa8b48de28574936015666522c3dd6e0854"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_offgrid_v1_attempt_01/summary.json": {
+      "bytes": 13149,
+      "sha256": "9ce854b879a05de463596f9a45a0d75bc2897cbc1253adca11e06caf9f5d1bad"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_offgrid_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "fb92754975cdca47e0ac79bd5e7e3bab0d2b647e46ef9b8fe78237ced5db7940"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v1_attempt_01/summary.json": {
+      "bytes": 109270,
+      "sha256": "68cd6d2bc808ff9a5c4c3f1bd56bbdcebd3e950ff6791020019107add7b5586e"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "161f38636c6be7130b0e3ff723a452e6bb3ec880e4757bdc971637301943f225"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v2_attempt_01/summary.json": {
+      "bytes": 109807,
+      "sha256": "2a4e72ceef0a7681c8ee3fc38028d9dcb86b2ebd9999af6b0bdb58b0a3e80533"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "b90d413ac52e9f680445c7f9b8a2730466e2d5e2d8184d482738abdec30cb9be"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_audit_v1_attempt_01/summary.json": {
+      "bytes": 22715,
+      "sha256": "6cb5d0a1cd9f1dd55563ded1cf89d2c045e2e2f49984d4b816d551c932226a55"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_audit_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "de2b8e7253178b0be1a629cf78067d03d50cf792cd1f1f9b38d9ab4dcb4c5841"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_audit_v2_attempt_01/summary.json": {
+      "bytes": 23180,
+      "sha256": "d168acacc483ed9026fab18b80702675b92349b0c68d92388bcf05f020bae345"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_audit_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "7f890e433b7b4386243dd6719629b2d7d53bc4c25d0383f99ba5d9a082dceeac"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v1_attempt_01/summary.json": {
+      "bytes": 32446,
+      "sha256": "5a541fe7f9db0d8cde44141868f0b3923161503866588d9200fe9780ba90ed82"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "a3b26b4d0f09acf1af461e59be56950fe876bf750437298d88f68ad560261fc7"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v2_attempt_01/summary.json": {
+      "bytes": 33634,
+      "sha256": "355914fa63e0f48e96c72fa216feaa2e0ee06f1331d3d3115d49694c481c123c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "e10d370d192f0219dc02cd727c3e3747a50a5dbf45a130371eafa7fa6623a690"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v3_attempt_01/summary.json": {
+      "bytes": 36395,
+      "sha256": "9689901a50cf2a41f51dea63ce8bbf5f01b8a5fccdab92337d23a6ff7636f152"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v3_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "231f78efa831ca6c7d0659fbc0c917e583162581fabe0dbdae888068f99873cc"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_audit_v1_attempt_01/summary.json": {
+      "bytes": 14796,
+      "sha256": "1e79c3b65b4058f998605752f31beca3ed677fb470b6b43aa8e8475a55e76df3"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_audit_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "408a139f06a21571a3a19870ab878aa4c4ee2bb8faf4bcd3b80a4fb3c1c260a0"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_audit_v2_attempt_01/summary.json": {
+      "bytes": 15255,
+      "sha256": "a7e029cdcc3d5d3ffc8f1b9e27d97ada9a8366580af5f54193795fbc7854c309"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_audit_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "654e54b96151902b2dea68348c6fb19d847364e6927af5071e9abb1e37252a67"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v1_attempt_01/summary.json": {
+      "bytes": 61431,
+      "sha256": "9e47bb10e944fe61323a9eaeae8097f5d6ef23992ceb59a7d0a44006ea225fac"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "d5b4517ee6bebba99bdb0811cfb68877d641abc1a2f6f4481228566aab333bea"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v2_attempt_01/summary.json": {
+      "bytes": 61878,
+      "sha256": "aba30848eed3be2d4cb3f0122899ea0394aafcf93b6ebd4d91ecfb3b63f6ac93"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "a10bc884d3513e0e67a64d7ba12ff4d5bbd2e3f68b54d36cf7fa3f7fc102cd61"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_spatial_gauge_v1_attempt_01/summary.json": {
+      "bytes": 18311,
+      "sha256": "449ce6a63c04a479fb8fc79cee62806ba5072d8dacac99f8614e9ab96e9ce014"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_spatial_gauge_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "0c599a88d852198639301d63d5f3d19fc89566c320b4b66069c0bf03e7dfaabf"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_symplectic_charge_frame_v1_attempt_01/summary.json": {
+      "bytes": 30548,
+      "sha256": "cd40137244f6969a8ba737e26a684721e89d9ea8b40bd5263769baa18e743a13"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_symplectic_charge_frame_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "b7237516f53ea6fd645939bc21e2bf60e3c89d09d2fe99fce02ae46bd685a2e3"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_audit_v1_attempt_01/summary.json": {
+      "bytes": 15796,
+      "sha256": "f12a29d0cc5e9e13218ffa38c97a43ddca035fc83fb70e5af99a7e2907e5e115"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_audit_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "b10ea494ba3cbd8cbbd12bf09a292ddd8dd13c7ffb22693c724158d02b990f0d"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v1_attempt_01/summary.json": {
+      "bytes": 32418,
+      "sha256": "6bd06446ad71093eb547424b39072e0a4b1972becae8204cdaedb5bd3d01cd39"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "d4c459c0f0bbebdee28fe8f77e5c81b0731f124f78f792718b5bcca4719ae620"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v2_attempt_01/summary.json": {
+      "bytes": 33303,
+      "sha256": "f4efb6bc588528aa6287fa2cca2a8020f581fddc0564e0336b9e8bf52906a814"
+    },
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "fcd7439827f431b6eb57dbecd502f63635cd84cba8b4feb9cbe40dbed81535ee"
+    },
+    "Analysis/MasterTests/outputs/r4c1_two_repair_additional_identities_v1_attempt_01/summary.json": {
+      "bytes": 7944,
+      "sha256": "826c9ab941991aa6a0760939febbd6c678aaafbddc684ecc3139e518e4e34107"
+    },
+    "Analysis/MasterTests/outputs/r4c1_two_repair_additional_identities_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "3e3c8cd326aa367f01806cdf70a2e67547621147ad088fe1cf4d1b3850d4d1a1"
+    },
+    "Analysis/MasterTests/outputs/r4c1_two_repair_characteristics_v3_attempt_01/summary.json": {
+      "bytes": 309689,
+      "sha256": "acc0558461b0e7882edc6e59baae4d9b2d886fb33882bd0bc5928834a1a57515"
+    },
+    "Analysis/MasterTests/outputs/r4c1_two_repair_characteristics_v3_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "75bb69cef38c2866002becaae8ed813ce3c87c72b97ecf53f6475b6a0218af4f"
+    },
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v1_attempt_01/summary.json": {
+      "bytes": 24969,
+      "sha256": "664a8d310222c09751c9e6039dda3656423c7000480fd097a34a6242602a7c4c"
+    },
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v1_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "bb936bc20cd4bc70c07d0d50af80b7d74494c736691145f9305482c7dc43bddc"
+    },
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v2_attempt_01/summary.json": {
+      "bytes": 21656,
+      "sha256": "964c24a88923a3326902eb8f5b37fa23a0f3ab6ee8964c60406e52211ea52f91"
+    },
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v2_attempt_01/summary.json.sha256": {
+      "bytes": 66,
+      "sha256": "75d7de644a7814d74b283fff4dde0acaf0aa1f16e756db0b56096c5c8db70c08"
+    },
+    "Analysis/MasterTests/r4c1_auxiliary_geometry_rate_v1.py": {
+      "bytes": 1789,
+      "sha256": "eeb914c35926cb146d130652b6f179194f42fa1f20630aabcbf21b2d83f676d6"
+    },
+    "Analysis/MasterTests/r4c1_auxiliary_geometry_rate_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "6af113498762f73ca9101a1ba6f7f6d43caa76a4f9d8a1b9633363b7af9adef4"
+    },
+    "Analysis/MasterTests/r4c1_canonical_density_factory_v1.py": {
+      "bytes": 2206,
+      "sha256": "f943af8bf733eafc2507852ccbe99725e4a2e28a9afa7775c364fb8624488a04"
+    },
+    "Analysis/MasterTests/r4c1_canonical_density_factory_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "70254b51897a040799f8d5ddb3bcca87606d58d49c5d03ee20186bcfeabf6aea"
+    },
+    "Analysis/MasterTests/r4c1_clock_current_transport_v1.py": {
+      "bytes": 1405,
+      "sha256": "6593736f21d91d30c54108563c3ca521839b51ae0e2c94e9e610d19558c2ac31"
+    },
+    "Analysis/MasterTests/r4c1_clock_current_transport_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "205428917124061bcf94c65319f6145b3677d4f258fca608fba246029083fdbd"
+    },
+    "Analysis/MasterTests/r4c1_clock_density_operator_factory_v1.py": {
+      "bytes": 1688,
+      "sha256": "9a7f01a9909706cbb1ac622bfd89e3205e15e82a7dfed10ef35bb9d456f434cf"
+    },
+    "Analysis/MasterTests/r4c1_clock_density_operator_factory_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "63be69b567b8264530b8a4bb767e3a5effa9b6aad6df1a6cac0f087301f05db8"
+    },
+    "Analysis/MasterTests/r4c1_density_time_transport_v1.py": {
+      "bytes": 2437,
+      "sha256": "0c34677fb86d581ed2992f16e9af3bcb9ea702acc15b6237fe9f5bab450fd4a9"
+    },
+    "Analysis/MasterTests/r4c1_density_time_transport_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "39741755cd6cf2a65576631546b087c5dd188bfb0a28773e3de7c27efd273fe7"
+    },
+    "Analysis/MasterTests/r4c1_density_time_transport_v2.py": {
+      "bytes": 2548,
+      "sha256": "5107eeac1d7ac9385e83d799ceaa4bc99abaa775e742a6dbe4e9d9014f110e4a"
+    },
+    "Analysis/MasterTests/r4c1_density_time_transport_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "07ee4eac190edd410aa10d70c3ed960af8ebce6e5fcb5f445dda93df9a18dadd"
+    },
+    "Analysis/MasterTests/r4c1_full_weak_action_v1.py": {
+      "bytes": 2988,
+      "sha256": "330f25196806450238a71459873a3353036fac4ef15cab53da665ecbaa501105"
+    },
+    "Analysis/MasterTests/r4c1_full_weak_action_v1.py.sha256": {
+      "bytes": 94,
+      "sha256": "4c447861ae2c8d930e10ea3c597aad5e71781cc4a899aa6a36cf0e6a16550c13"
+    },
+    "Analysis/MasterTests/r4c1_gauge_velocity_v1.py": {
+      "bytes": 1868,
+      "sha256": "c1eb04651d60c421d815e0ba93b8d0c41e83a7a20382ccd7ead93de566681472"
+    },
+    "Analysis/MasterTests/r4c1_gauge_velocity_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "49c198abad3d557bf725b02df4783e7d33a98455234ab743124e16f8e932e6a7"
+    },
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v1.py": {
+      "bytes": 2642,
+      "sha256": "7c06bcedb2bd1757f16fec7b0b2c5f7c76d1c6587c0441b38f7afdcfb46d14fb"
+    },
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "680e93e54eab7885fa6206d0eeb8d440d4e1451cefce111d44c2725f355b05ea"
+    },
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v2.py": {
+      "bytes": 2879,
+      "sha256": "092dab02218714ce10d184ca8661df455808b2dc272320e54e3f4ffff6730390"
+    },
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "8e5d7610772272ef1288b81ec6561748ba9f2248a42361fb6066367082aaceef"
+    },
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v3.py": {
+      "bytes": 3051,
+      "sha256": "2d81bdd8c3b4a85dcfa917724e5ad6931dad19e44c7414957cc9327cbfcc1fa4"
+    },
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v3.py.sha256": {
+      "bytes": 66,
+      "sha256": "08b36d578756fd436976d5ff4040f73c7d2760130468ca819d2b14324e0c5557"
+    },
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v4.py": {
+      "bytes": 3057,
+      "sha256": "daab54788cf70dbe99187cbfc1c2e7a76946edc39529632783a352e5f63e5ff1"
+    },
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v4.py.sha256": {
+      "bytes": 66,
+      "sha256": "e6ccfd26e2887d715a713582bc3623c53f20b4358ea3f64c6e1424c4723090d0"
+    },
+    "Analysis/MasterTests/r4c1_prepared_canonical_flow_v1.py": {
+      "bytes": 2310,
+      "sha256": "676a7cbe6f18873ae99c9d87344c9289f4046552a0869fec58d16cb45855917c"
+    },
+    "Analysis/MasterTests/r4c1_prepared_canonical_flow_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "3f9c6c77a57f306f3cbb3971f0124a17b19e3bc8648bfd5e5caf74879714bd06"
+    },
+    "Analysis/MasterTests/r4c1_prepared_canonical_flow_v2.py": {
+      "bytes": 2479,
+      "sha256": "180fe88e93116cec7c32892ba2b8134b4cd253062849b8eacb24411442952e49"
+    },
+    "Analysis/MasterTests/r4c1_prepared_canonical_flow_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "b4b504490c33bb092fcf3da3b34265ef217083a641a44b504e11ba3a32726993"
+    },
+    "Analysis/MasterTests/r4c1_prepared_evolution_kernel_v1.py": {
+      "bytes": 3547,
+      "sha256": "f3aaf5fb2752a7a898e8cc081cebc5eeee32aa3b1cf2af080f5ae6c42745e061"
+    },
+    "Analysis/MasterTests/r4c1_prepared_evolution_kernel_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "2dc36e62b517a82d9bc2c064e77d04aa3d140bc542b0d1ef2355b9f1298367b6"
+    },
+    "Analysis/MasterTests/r4c1_prepared_evolution_kernel_v2.py": {
+      "bytes": 3598,
+      "sha256": "96277c44ca1b486abd07b4a16a58355101ec7bb67c45bff8dd8cecfa7b9f361b"
+    },
+    "Analysis/MasterTests/r4c1_prepared_evolution_kernel_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "b2998eca4aa0dd422bc0faec59610e08ba66dae01fee2052a13870d2752b22b3"
+    },
+    "Analysis/MasterTests/r4c1_prepared_operator_factory_v1.py": {
+      "bytes": 1365,
+      "sha256": "443776ef3f3fa65954fbe011afda082baf0784afb7a2d17805710f1ef0bb8945"
+    },
+    "Analysis/MasterTests/r4c1_prepared_operator_factory_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "91f0246539d854487a6bc3b5ffb40ef91b39afc08d5ee6c32b3256f8af92180b"
+    },
+    "Analysis/MasterTests/r4c1_prepared_operator_factory_v2.py": {
+      "bytes": 1740,
+      "sha256": "79e79f412c9c78f613bb073fdcd47acbeb73be99e0f0a632676109c13f541d48"
+    },
+    "Analysis/MasterTests/r4c1_prepared_operator_factory_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "33286dae7e8a1cd78d72c42e231b316c3906efd426f3d0dd69821e7a9ef1ac3e"
+    },
+    "Analysis/MasterTests/r4c1_second_variation_jet_v1.py": {
+      "bytes": 2474,
+      "sha256": "d78cdd4f9659468ab3cf8d4f4f67ee00f5f3096d6742c348ab6d850e6ed40e87"
+    },
+    "Analysis/MasterTests/r4c1_second_variation_jet_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "e7b59d1976c8d727b900b90cb11aff9521cf5b0331022d376bec5c79ca2f886e"
+    },
+    "Analysis/MasterTests/r4c1_two_repair_actions_v1.py": {
+      "bytes": 4392,
+      "sha256": "f4da18c7722f71b2897bd5bedbbc0992ba3c58c94c7ca3b234525f1a672084cb"
+    },
+    "Analysis/MasterTests/r4c1_two_repair_actions_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "27de76fb9c2895e3d92b953e476da1a2ec4bef3b7188df56efb44ed6026e5561"
+    },
+    "Analysis/MasterTests/r4c1_two_repair_actions_v2.py": {
+      "bytes": 4541,
+      "sha256": "bdb68b4f2db7437247f6ea059e3acf6471f2c986f764a34cfc70c968fcff8314"
+    },
+    "Analysis/MasterTests/r4c1_two_repair_actions_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "11de3550658216f1566cec6919712015ac6b3ec39c267c14461584a3ababd91e"
+    },
+    "Analysis/MasterTests/r4c1_two_repair_quadratic_v1.py": {
+      "bytes": 7498,
+      "sha256": "b6d9ee6a8c69c234d66d9a807989d59ae5e24a4f7ebfbc15c9c9b81e218a1b0a"
+    },
+    "Analysis/MasterTests/r4c1_two_repair_quadratic_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "959906e7d902c256a64e5e17209c80dbcbe7a714d156ffed01a9971cbfd534c2"
+    },
+    "Analysis/MasterTests/r4c1_two_repair_quadratic_v2.py": {
+      "bytes": 7697,
+      "sha256": "cd58599bfe4004072ae2d5d7d2fa5cabd600b13f8e60d7301dba78b77c3932bd"
+    },
+    "Analysis/MasterTests/r4c1_two_repair_quadratic_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "596cfa596e9319ef485ff13ec9d9769e57989010c6c8cd9bd05e53efd2191a41"
+    },
+    "Analysis/MasterTests/test_01_r4c1_aligned_preservation_v1.py": {
+      "bytes": 10336,
+      "sha256": "dc6101ab8bcb4167e6d5c29a246fff3479dc368919af814fd4f641b4f0432009"
+    },
+    "Analysis/MasterTests/test_01_r4c1_aligned_preservation_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "4848a391f45cb9173a326ac0237cc27cd7b7ebbf7f99c7b53f8d98c14381c3d2"
+    },
+    "Analysis/MasterTests/test_01_r4c1_aligned_tangency_v1.py": {
+      "bytes": 13462,
+      "sha256": "7aada89af979d19b13057afa5e43aaec0a00536919da1e40aa629619bfc3d12c"
+    },
+    "Analysis/MasterTests/test_01_r4c1_aligned_tangency_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "515f2e01e779e14cdc4ac4fbfe8ea263741eb6a5bf03e77106941a0cbaa251a9"
+    },
+    "Analysis/MasterTests/test_01_r4c1_aligned_tangency_v2.py": {
+      "bytes": 13748,
+      "sha256": "5640ed8a227b3938b9ba6375ec887eec7bd5416c973eb1d4bc857589fa4ea67e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_aligned_tangency_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "898f8ee374fa9b537173f8ae864d60b3491ce122dfcdd073e08f7ac060503d3f"
+    },
+    "Analysis/MasterTests/test_01_r4c1_b1_alignment_domain_v1.py": {
+      "bytes": 15810,
+      "sha256": "d374c63e609815a7c42e1f3ac261f7f0be6dfe110457c7181cb98a7eb1a4b535"
+    },
+    "Analysis/MasterTests/test_01_r4c1_b1_alignment_domain_v1.py.sha256": {
+      "bytes": 106,
+      "sha256": "da48e2389ee1ee2aca54ecc7749625050c5d3329de385c5b4c69bc35f59f54a5"
+    },
+    "Analysis/MasterTests/test_01_r4c1_b1_dust_reconstruction_v1.py": {
+      "bytes": 10482,
+      "sha256": "a6ac2849dea663c0dfbdfdce0792b25b8684ec71ad1e060c41b195021dcd2030"
+    },
+    "Analysis/MasterTests/test_01_r4c1_b1_dust_reconstruction_v1.py.sha256": {
+      "bytes": 109,
+      "sha256": "f7792a256948dbfafd6602cd48a671cdb07793ae874938355fedcc674a0b5aa0"
+    },
+    "Analysis/MasterTests/test_01_r4c1_b1_kinetic_drift_v1.py": {
+      "bytes": 10621,
+      "sha256": "56badde0e458b848287a35605a11da792b7ab9339b844c34a83d907403e9639a"
+    },
+    "Analysis/MasterTests/test_01_r4c1_b1_kinetic_drift_v1.py.sha256": {
+      "bytes": 103,
+      "sha256": "96ae6483fe1c801a5cc45f02213fde887a40199a1ce4b39f1e5c8d728796c352"
+    },
+    "Analysis/MasterTests/test_01_r4c1_b1_propagator_v1.py": {
+      "bytes": 19249,
+      "sha256": "cca11ea1565a5dc2740718c4d47e3f420d9e30301d64b19e0f5e9466339cc21e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_b1_propagator_v1.py.sha256": {
+      "bytes": 100,
+      "sha256": "f630914a3f3ff09c014a0b3a0797c0292a81dc8e6467d3b91dde484392f65dc7"
+    },
+    "Analysis/MasterTests/test_01_r4c1_b1_reduced_kinetic_v1.py": {
+      "bytes": 15740,
+      "sha256": "0bd93464a813a1825526987a2c81c55c2c964691c173d555786077fedfc08625"
+    },
+    "Analysis/MasterTests/test_01_r4c1_b1_reduced_kinetic_v1.py.sha256": {
+      "bytes": 105,
+      "sha256": "61fbfa0420582fc0200c68e81695dd2a883f7076283a387e8d57aa15fbc07b51"
+    },
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": {
+      "bytes": 19134,
+      "sha256": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f"
+    },
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py.sha256": {
+      "bytes": 105,
+      "sha256": "b0fb88bfe94a2b547684a750715345c1b01277d8f7eb19a31003802d4cb77821"
+    },
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v3.py": {
+      "bytes": 32702,
+      "sha256": "b887c7a52102b7abb43a2875cb6e01607ecb46d39a95f4abb4cefab9795a73c0"
+    },
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v3.py.sha256": {
+      "bytes": 109,
+      "sha256": "57e89b6600d27334247feb7c101e768714f7e164706249b0efe5ff8d6b08c22f"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_auxiliary_rate_v1.py": {
+      "bytes": 5271,
+      "sha256": "f7d4b1b4ffddb179be27aa480807d4462c472f3e8cc7196aa34e147074ad8e3a"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_auxiliary_rate_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "1a3dd36d61afd3f1ee77b387d5ffa43489e5bb0aebb8b3e9ffc6a20ff8747b4b"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_auxiliary_rate_v2.py": {
+      "bytes": 5570,
+      "sha256": "aec0eefc25dc57afcff95042a5e2f289969c8c3bc17c940103a7f4027a7ded73"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_auxiliary_rate_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "bc06813d8e3e5bbb8a2e316f6b237a0ac3c8d83d7c84c9a2203c5bd4d96ba7ed"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_density_graph_v1.py": {
+      "bytes": 12477,
+      "sha256": "04a75d1ad0c7217e64c9f769ec04782a8b1dde7d66a5e2dbca6addde5b0fee09"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_density_graph_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "736eb4e32dd3a18dc0cc004a19e9e04409a4edff375bfcb61ddc2e55dac634c6"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_density_graph_v2.py": {
+      "bytes": 12850,
+      "sha256": "ef221d3dd74187430dde37561c34cf41f29218c3ac4ee7cb4fe82ce4edcf3cf2"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_density_graph_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "1d3e111f33b86a26dc0766c6c39ca96398cb724bda548ef828746d4b08f59cc2"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_flow_entry_v1.py": {
+      "bytes": 4988,
+      "sha256": "59191a41a1ad021b8aaae19152aa67f003cab5566be9a7cc454d3a63f97c206e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_flow_entry_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "92eb40082c069c1803aea128c208c9ab803f19b7d7e5d6a10057fb16d09f500d"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_flow_second_jet_v2.py": {
+      "bytes": 5272,
+      "sha256": "6fa17a487e3aaf1943f5402b7f6d0270064e2bff0bc9f5d8f291a38fb0cfb837"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_flow_second_jet_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "bdaf154db22b27fa4fc17057a47ee2388cbdf254c106de32c55abb916fc3a06b"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v1.py": {
+      "bytes": 14385,
+      "sha256": "3c2ae67f8122390d58dce5e368d9bdcc1a02c663bdd236668a27a87babd783d6"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "159667f7a4830a0430b993c9dbd1f64c4dcaef956a31ae03d3025602745a86e0"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v2.py": {
+      "bytes": 14809,
+      "sha256": "070c318f1e3531357065f5c84a0acd0a6d6f931e99cd021b21d3877b070c88cb"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "dbba6c0a9a3b40ba3479e0e7161efb23b9970db1c96f059bb2061b16890670df"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v3.py": {
+      "bytes": 15049,
+      "sha256": "13bba602ba6ead35b9d38513afb6a8643e378cc2d9a40a5ba6cff551796ebe62"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v3.py.sha256": {
+      "bytes": 66,
+      "sha256": "1db764218ab313f9902a1c9d7504fed5a783c6527b13ea032e3d4832ec08c506"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_flux_v1.py": {
+      "bytes": 8282,
+      "sha256": "29a60792bcd77255c2dff4ae04a2cee5e12e8f73e2045b00a6c5f069e2f99c6c"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_flux_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "56bfe08239755daf9861ead9dae798d7cc3ced12301750d6633685f240c57c53"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_identity_v1.py": {
+      "bytes": 9072,
+      "sha256": "e13135f1848769975ffbf94a0167b0556aec77084a2b2bc6ccbf84dc2fd11568"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_identity_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "0840a9d1da8286586a64de8237f44eba83c1d412795775dc093fa7c359cf925e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_identity_v2.py": {
+      "bytes": 9503,
+      "sha256": "3fd337e1dfca255d0291207aa9c00fa03af044a07a296306c478bc5b244126e6"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_identity_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "7ff4d8b379df12875fad089f6efe9eeddac9a9c12aadb072bf5aa2a526bf79a0"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_coupled_periodic_inverse_v1.py": {
+      "bytes": 9925,
+      "sha256": "e597b8f93715680f1d695a884ec485e76a892e5786dc88ba4edb6db34567df23"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_coupled_periodic_inverse_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "680fbbcf8e4b90ee0c4e93cd9b7771ca4d433624fc8a6ebc981e7c56b5f6935b"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_current_transport_v1.py": {
+      "bytes": 10256,
+      "sha256": "36cd46547ba07c8f8cb730dc3c70a0c905e727534d4ebe268904c32799fad780"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_current_transport_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "c6dc61768162ca120c7bd101c079c1aff06f58a4d410e2060ba9b950a8aacfa8"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_current_transport_v2.py": {
+      "bytes": 10613,
+      "sha256": "744d7c803a27b21c40ea2231a61d09d48d43d7669fac09b7dc9c6993e3e9853c"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_current_transport_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "9ce19335b284c47e9cddad4aff068b6716a35a161fdd8074bf92f40987a19322"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_density_time_transport_v1.py": {
+      "bytes": 8273,
+      "sha256": "d62e522277147d30316367e3477817efbb18c5bfe14a09ddd5e16178ccc7459c"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_density_time_transport_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "242dd408ddf08b8a96ddefa8985fd322af9a1a21894fd77ce0b3b14f1bf846a5"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_evolution_kernel_v1.py": {
+      "bytes": 5307,
+      "sha256": "69eaea11cede64420b3e1f916dfde2e8c7cf60de3699184b014e718c675032d7"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_evolution_kernel_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "979b35c7e001f610b4da9ec5b016d8f693a46d458f251fdb490b7585979334dc"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_evolution_kernel_v2.py": {
+      "bytes": 6077,
+      "sha256": "9eeed21e65557c2df72e0dd5f165f1a1fe11bf0499b75bd10ba23a8460a7401f"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_evolution_kernel_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "b5ceca5daea55e991d438fcfb0adb77741962a3984c22333340ddf989a0045eb"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_gauge_velocity_v1.py": {
+      "bytes": 7700,
+      "sha256": "446722fcfc31dae07ed6e59fccfb24ea77200e40681abdd1ca86737ee7e70755"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_gauge_velocity_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "b628190522f2835da9c41a57eacc60da7c6fd112a997ddac9cc83920a8fcc3ab"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_initial_acceleration_v1.py": {
+      "bytes": 12299,
+      "sha256": "9e4de2bae4078f3d5b95e5dbf46d63cc07fddb2440be9ddeb4c393995fc502cb"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_initial_acceleration_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "7fcbceb27071057d390bcde8d1d04bd1172c780c6efb75f7826373c269af6cb2"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_interval_residual_v1.py": {
+      "bytes": 9035,
+      "sha256": "14a2ad8ff8ec58785e464c2ee6390be55c420edabe8ee0217713d2dfe26ca28d"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_interval_residual_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "6b75a1b8802a7d822c8c5d4d343c6c5c614d25b3d81a8ba91d8269d7a9d10c24"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_interval_residual_v2.py": {
+      "bytes": 9035,
+      "sha256": "5b37c033aa460bc405b713dbea18b9c51a3615cda76536a28789daf772f7fe2d"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_interval_residual_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "131e8ed1a82129461e8e7a5c7a3333b0b5149bc93b9a46ad764feed5d0d3067c"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_interval_residual_v3.py": {
+      "bytes": 9035,
+      "sha256": "718f3c1081c3b4295aaf9cc438b386e4f4ef768376d68eb8bd6eb8976a58f761"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_interval_residual_v3.py.sha256": {
+      "bytes": 66,
+      "sha256": "fe7b9fcef298038f9596140eea15982b307ea822066d5d84c3d2050f9590cb1c"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v1.py": {
+      "bytes": 13472,
+      "sha256": "cf63a28095e3b8d21cf0f8f920a722b3b6b5edc5465b5c4509a78843e09d138f"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "55265fbe834a7d925e3f2303794f566dcf189e9b2b702288095ecd044bfa07d4"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v2.py": {
+      "bytes": 14021,
+      "sha256": "51efe5f9012a15494501a0e9858f58afafc9f08cb795d36e0c4429c2b5720a43"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "833d0bb4a488565386283ff2be1f06f9516ae9cb4f5b80019445edca65536f99"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v3.py": {
+      "bytes": 14333,
+      "sha256": "112e92df85084aa31483f48cefb82c36f34aa20ae3433c38c73a025fe5a3ea7e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v3.py.sha256": {
+      "bytes": 66,
+      "sha256": "ccd894d5af0e3e92d85a6e9413e2633b450d4444b61c0777fe128a595df868c9"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v4.py": {
+      "bytes": 14736,
+      "sha256": "7ee68ba495b65de27871c8511a32feb351a95facfd13c13e726695b96c4aae3e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v4.py.sha256": {
+      "bytes": 66,
+      "sha256": "7abe29b33c5d551732d468aab13d1c8c22f5820b6d0b679244acf4cfe6df8639"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_constraints_v1.py": {
+      "bytes": 7299,
+      "sha256": "2cc356773e003a5d4ec8532a49e697279c3aac2eb9e1e1bc31584bea4c731aa4"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_constraints_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "dfc3f10293fc4642e139f3e8c67a2ea5af006ea9ed3d20485b87a1e410a7b40b"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_regulator_v1.py": {
+      "bytes": 8446,
+      "sha256": "63162771f78b00b67fde4372046bef373ddbecabfeb2ce7b35c11ea32d1178cc"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_regulator_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "dc081e79b4769f8103b3e9fd8a2b496fc4f487de2e7620f7623ad9c9e06f11dc"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_regulator_v2.py": {
+      "bytes": 8770,
+      "sha256": "3f1a24062cbb0d4ca75b3188aaea7b8b92d92cb208d4083b79052acaeb56a561"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_regulator_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "891190b77fc06792c99bcb754d67319d9db6f4f860eb555a108c202b7b480fe8"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_inverse_v1.py": {
+      "bytes": 12475,
+      "sha256": "f01cf514688dadde23beadca1d0fccaa6710bb3ab27529996c342a30be795eb7"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_inverse_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "dbd409f7dfbba0c39b6e6851259d23b448d8a6e7a8e4b3219fc10f53a0195150"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_numerical_v1.py": {
+      "bytes": 7456,
+      "sha256": "40a356d574b882d410d4809dbeace8e4e789d23aa864d5503246fd1e8f0d2fe5"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_numerical_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "3ec66cce60603acaaad5c099c251cbf1e32f55d3126db37d83d4c23b5221129e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v1.py": {
+      "bytes": 16123,
+      "sha256": "334a152c2a7ee0a9f23bff28c36ee626676d3bacbfb4a6a1bcfa64cfb31a0bca"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "1f6a6b5ded08181bd4b64ceef2b4ac0f0818d726c9459f2c63187fcd827bd36d"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v2.py": {
+      "bytes": 16430,
+      "sha256": "326dd85d3ec093959f16af71c0dc250ca82fb44307f72aa496c5106861111955"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "b371fc7d3d3075a9b052e801fc05c1adb4d223790156d876bbefb82e8d3bed2d"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v1.py": {
+      "bytes": 10919,
+      "sha256": "a9be8e7817e80f37a160533823d0ecc24a82352cca36128c4aa9c4e3dde0d9ed"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "22dd3de3d91768979336b0b1146c2611b76053e07438d68a80ce8ed0f9b1e1b3"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v2.py": {
+      "bytes": 12992,
+      "sha256": "fafc8815391dea254068f51e44a7dfe6da9ec7c30d9e6b64699191f48cc268d3"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "2317e92f07d8b361f8d2868963abe59a550a952a698363f2e8bac291536afac2"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v3.py": {
+      "bytes": 14405,
+      "sha256": "8002335433d1705fb1ba7ef7dcabedf2ef822a4626751f8d1049ae530e0c2f7a"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v3.py.sha256": {
+      "bytes": 66,
+      "sha256": "0fce5a140a43b42bb2b05cedb2a615ca5dfcf74fb7f5de8ea6adde67d0861a82"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_temporal_v1.py": {
+      "bytes": 11497,
+      "sha256": "d7c6b9144128727546df11c84052eec842f689b74a3a55bae3dc488dc57a5a33"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_temporal_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "88af9195a3435a66b6eaba95514e8e9dcf74890b0f79264859609c8f2ff1350e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_temporal_v2.py": {
+      "bytes": 11894,
+      "sha256": "77dce6e8bee8a6f23617dedf0960c4703c61c2436c2513fdd135e8e6578af841"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_temporal_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "7b404bd158b2a9f54ac89c0180b2742d6f8383335f271d6efcb5056afb89ca0e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_spatial_gauge_v1.py": {
+      "bytes": 9706,
+      "sha256": "bd34d5f7f8ae481ad7cf48446fd071e3fe44c17513c69c7f3a3c7743356e7d39"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_spatial_gauge_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "42ed4ba88fc23e58070605eb518edcdc800073e2b22d2ed2751ea481f3035020"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_symplectic_charge_frame_v1.py": {
+      "bytes": 10326,
+      "sha256": "3a96af4487eea16f51f70f83d2a3890c94558727627d7e3525bf2c59da7165ff"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_symplectic_charge_frame_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "84719bd8635735232e3979ee84264183256e7902674ebae3b43611c6e43d6fb7"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_velocity_tangent_v1.py": {
+      "bytes": 12847,
+      "sha256": "0badedd4c4206a6ffcdb2805e13a39b5d12f946ba3fc4d2756bd814e954cacc9"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_velocity_tangent_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "72f460881e6556932d12c409934032f81615da79cd3465e3b7f1ba5295961e2d"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_velocity_tangent_v2.py": {
+      "bytes": 13785,
+      "sha256": "8c60a7f6fd1c7efe12b451f2560388b1ef35cd79de62c62f96e6900ba128b471"
+    },
+    "Analysis/MasterTests/test_01_r4c1_rtau_velocity_tangent_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "2ef21eefb41117a752d3d14bba199a5451849b18bbeadb60bd028d9e3d08af3e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_two_repair_characteristics_v1.py": {
+      "bytes": 17012,
+      "sha256": "cc3d2617a5bfa43bab5c969152aafe4119da0136f00f56398d71b87671aa8520"
+    },
+    "Analysis/MasterTests/test_01_r4c1_two_repair_characteristics_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "77b503601b4e4ffba441676a78cd2b8f21c80f7840f5f168662af7647f97faf0"
+    },
+    "Analysis/MasterTests/test_01_r4c1_two_repair_characteristics_v2.py": {
+      "bytes": 17012,
+      "sha256": "1d47eb2ca17f5fd9c59be75dbf7f95d1eb29a403d130074d5371e80d0baea906"
+    },
+    "Analysis/MasterTests/test_01_r4c1_two_repair_characteristics_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "3363fbbe367a224220d172532567eda0b444bfdd9bc4e962c629dae493388c98"
+    },
+    "Analysis/MasterTests/test_01_r4c1_two_repair_characteristics_v3.py": {
+      "bytes": 17012,
+      "sha256": "98b9ecf5e030715f8106d197c89d9ae981950accfeb987ae7c20b261dbf65958"
+    },
+    "Analysis/MasterTests/test_01_r4c1_two_repair_characteristics_v3.py.sha256": {
+      "bytes": 66,
+      "sha256": "7dd68ec17ddb3230c7c9cf4b2f5160d46c0b359b0f18598762802502c0f4f2ae"
+    },
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v1.py": {
+      "bytes": 17310,
+      "sha256": "ec6395f6f8e82452982a823cfb76375899b663b90db6782247c33996ac6e304e"
+    },
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v1.py.sha256": {
+      "bytes": 66,
+      "sha256": "9ce192be321d6b7eea4bc038b27dc76d50b6b9ec09523e3b7ddb8d083f5abec0"
+    },
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v2.py": {
+      "bytes": 17641,
+      "sha256": "bab911efd631ed06213888c6758927836050b49b338089e3f45ed3439f00e6c4"
+    },
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v2.py.sha256": {
+      "bytes": 66,
+      "sha256": "eeb79647113a40cf4f4ebc5151b48e3e8573bb2710418861e7d360c489ccb0ab"
+    },
+    "CHANGELOG.md": {
+      "bytes": 196917,
+      "sha256": "f6c84004036f88efd7398bb4828328a5bf7d8044969bc0ad0a927df715375214"
+    },
+    "README.md": {
+      "bytes": 25003,
+      "sha256": "82b4738f186eadc085a6543f95bcb7636ac84e849fd3b181aaccbb18fec51d27"
+    },
+    "README.md.sha256": {
+      "bytes": 76,
+      "sha256": "73e072c4c864a9f7558698993113e8aa8ae868f822ef693fbdf621415243d7ea"
+    },
+    "Theory/Core/ITSM_DOMAIN_ACTION_DECISION_V1_2026-10-30.md": {
+      "bytes": 7453,
+      "sha256": "4df5b77dcecf10fb40a50e193789b630482156168c692ece40d307c712563a58"
+    },
+    "Theory/Core/ITSM_DOMAIN_ACTION_DECISION_V1_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "5194203b278d4d0851f9fabaf7379b0df3267a7aeb3a872494397663a2c0ba6c"
+    },
+    "Theory/Core/ITSM_DOMAIN_FIRST_MULTISTEP_GOAL_V1_2026-10-30.md": {
+      "bytes": 11916,
+      "sha256": "daaaf2ca37b8ec35ad2e8925856ce0215284394641ee85e7e4305372bb682733"
+    },
+    "Theory/Core/ITSM_DOMAIN_FIRST_MULTISTEP_GOAL_V1_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "8a6b7226a5ef2060537f15f3dbac5a338b6b1e6d9422d6404dff46e22f97ed37"
+    },
+    "Theory/Core/ITSM_Master_Research_Plan.md": {
+      "bytes": 61112,
+      "sha256": "dd7aca5238eaa716a87b9ff5d52f9062935b0404b85f059a3e5cbaff5d5d9723"
+    },
+    "Theory/Core/ITSM_Master_Research_Plan.md.sha256": {
+      "bytes": 95,
+      "sha256": "846a1775efe340b9e7800c381bd8982bd1fe31a3dfb2e115a6a88a94a73866cd"
+    },
+    "Theory/Core/ITSM_Recovery_Execution_Queue.md": {
+      "bytes": 311100,
+      "sha256": "e3499f2106ae77a3b745eac0a9fda824389a0653b02ac3881af1987e438419f6"
+    },
+    "Theory/Core/ITSM_Recovery_Execution_Queue.md.sha256": {
+      "bytes": 99,
+      "sha256": "c3e185879309ea22fc07b9a5753d7dc91a0dbc09fbba5db1c34f02085d38e0a1"
+    },
+    "Theory/Core/ITSM_TWO_REPAIR_COMPARISON_CONTINUATION_2026-10-31.md": {
+      "bytes": 3672,
+      "sha256": "fd4dc426aa72f2741f2f2f654c3f6a8994ab6f7a9df5806abe157d060522e274"
+    },
+    "Theory/Core/ITSM_TWO_REPAIR_COMPARISON_CONTINUATION_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "713ebe6041b276adf61ba47dbcbd54f23377eeb7eba2eabe8c440fe73c8c04f4"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": {
+      "bytes": 9835,
+      "sha256": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md.sha256": {
+      "bytes": 106,
+      "sha256": "281c86a714abf1453781422083fb282580f39765e2eaafd973632ff4300be627"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_PRESERVATION_V1_CONTRACT_2026-10-30.md": {
+      "bytes": 3926,
+      "sha256": "0e9c95a132472cc01b0c1ddd7b4302d82313a94885807938f062dc5ee23a3843"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_PRESERVATION_V1_CONTRACT_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "bd20bfdc367491331061156f60a9465bf7c04ac112f490f98dd63ba1d1ad0494"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_PRESERVATION_V1_REPORT_2026-10-30.md": {
+      "bytes": 7315,
+      "sha256": "ea1e2b3a5ab87cbadb04d812873faa5a68a0d2ebedb76969fc5de4239a23bf3b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_PRESERVATION_V1_REPORT_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "c4449694f09ad8858151633197ec5a545dfc2405f7186a5547c784ae1a60cbcb"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_TANGENCY_V1_CONTRACT_2026-10-30.md": {
+      "bytes": 5176,
+      "sha256": "d7604593aa89a122e23c30e4fdcc423a3b2755e1398dfa94f793b23b78b8bfce"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_TANGENCY_V1_CONTRACT_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "1fbbb84b4dbaa644672f9a26399852700da041c630ceb54ab5189bda04c5562f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_TANGENCY_V2_EXECUTION_ADDENDUM_2026-10-30.md": {
+      "bytes": 1025,
+      "sha256": "8a21fb69b25f02c9db8b6deb50dc009417435df73264854a40153ad2daacb8aa"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_TANGENCY_V2_EXECUTION_ADDENDUM_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "b3b965328fd79ff6e4eafd46dedbcf9236e1a92a3efb0654e57cc41c12274474"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_TANGENCY_V2_REPORT_2026-10-30.md": {
+      "bytes": 8795,
+      "sha256": "a1a12c8c2452bb175cb146825cec658d00e9d893c68524544e386df0de381fb3"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_TANGENCY_V2_REPORT_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "e6fb23951e842370ac6881d6415a48ef4ecb63ec507de5443b1b88d6cf0e8e66"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_CONTRACT_2026-10-29.md": {
+      "bytes": 3905,
+      "sha256": "a58bff722582afff4a93465e3d91d695c445e2128f24441a592423b8d8da49fb"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_CONTRACT_2026-10-29.md.sha256": {
+      "bytes": 125,
+      "sha256": "7ce4e1be70c565919f08edccf804523baf69de9425cd1d594dfb9fe5fd064f69"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_REPORT_2026-10-29.md": {
+      "bytes": 10351,
+      "sha256": "34239d3d8173be1bee275e6056787fc9dd308d026669b31b5946e2e96cc6a1ae"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_REPORT_2026-10-29.md.sha256": {
+      "bytes": 122,
+      "sha256": "5594dc5e185325a6e80c179126211fdb39dd8bf35102abb6ebd47bd401b0a5c9"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_CONTRACT_2026-10-29.md": {
+      "bytes": 2205,
+      "sha256": "254ac814874de1d31678dc4bdce14439dce397b82f7a4a21e2a6c4e1b39ff35d"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_CONTRACT_2026-10-29.md.sha256": {
+      "bytes": 128,
+      "sha256": "b863afb9b3458f646badc6f6e7f91cc845a2b25ad7dd3ae3c21a86eef067659a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_REPORT_2026-10-29.md": {
+      "bytes": 6794,
+      "sha256": "60e19751ae396d19e10d557ed22a764f12a8ab43b5d0504a73fba6e560a7f18c"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_REPORT_2026-10-29.md.sha256": {
+      "bytes": 125,
+      "sha256": "26e86e2c2cac6e65dbcae7e962bdcbf13de6d5a48b9c9e58c4a1ebf67ec89a58"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md": {
+      "bytes": 5551,
+      "sha256": "82708666dfce4ef214b614bc7da31b294d7569539b97292aaa9a79e906e6266f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md.sha256": {
+      "bytes": 120,
+      "sha256": "751677e1aca5c4070ae73fb4aee4ff92dace54e7d174e020a7a03960a4a12bd4"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_CONTRACT_2026-10-29.md": {
+      "bytes": 2333,
+      "sha256": "3ff304c9a08a78233c9feaca192b940e363c408de668df9b0efe6d49adbc9a1d"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_CONTRACT_2026-10-29.md.sha256": {
+      "bytes": 122,
+      "sha256": "bec7bdabd98d2b68d0b48471f440d0b0acefe9d869ac293dd69c50d24ac6d7a1"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_REPORT_2026-10-29.md": {
+      "bytes": 7390,
+      "sha256": "0398721b04b6d47633e07e65e8de155a0a35bae250ba57893bc75e7348ac6228"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_REPORT_2026-10-29.md.sha256": {
+      "bytes": 119,
+      "sha256": "83637efbff24a221af356267fa9f72088555ba7dfdcb8d9160229682153a8b46"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_CONTRACT_2026-10-29.md": {
+      "bytes": 3734,
+      "sha256": "e2c08f14d79fc17bc3ca08c09baab7a42608a0d9565198339d2214764288c467"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_CONTRACT_2026-10-29.md.sha256": {
+      "bytes": 119,
+      "sha256": "a4e675d5f7ae5bdb7ff668f97ed82c90e2fcf64a0dcfd3750f3bc58da4f4a6cf"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md": {
+      "bytes": 10094,
+      "sha256": "b1c14df414f27ffeb9458fd5e1234943c459f2bb9dabac55fda0b442f8826c94"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md.sha256": {
+      "bytes": 116,
+      "sha256": "0a895f795e2c8a9458a3d3b26b994982e9146fad95f68489e081e0efe059e34a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_CONTRACT_2026-10-29.md": {
+      "bytes": 3673,
+      "sha256": "9af0554e67970d046cbd9ba22298ae9840150c040db2b607f760c423f5de921d"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_CONTRACT_2026-10-29.md.sha256": {
+      "bytes": 124,
+      "sha256": "753b6d3c6f276c4323958c94ed1716b7d20810c51926a76e9fcba2b26ea8f7bc"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_REPORT_2026-10-29.md": {
+      "bytes": 7887,
+      "sha256": "096db5aec89c60837408dbf0eddc3593436e4a3a2125c955e94cdbc35eb2bf66"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_REPORT_2026-10-29.md.sha256": {
+      "bytes": 121,
+      "sha256": "2abf7cc34a6f67f68d96e634d4eea8d51f91e0c2ac8f93427118cdb5d5934e1b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md": {
+      "bytes": 12913,
+      "sha256": "8c4496eacdb0d2447445e4a1949b683e033f042a7332c659701e2273d2bf23ea"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md.sha256": {
+      "bytes": 124,
+      "sha256": "e6cc5f75a2d5689afa5699802dd64d578e295faf90be9fec38c9d0ce5d490b1f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_AUXILIARY_RATE_V1_SPEC_2026-11-01.md": {
+      "bytes": 1218,
+      "sha256": "9961a54ab0dbac161de520e24a012a2ba0a47880151c5021d5f8d59433c01cb2"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_AUXILIARY_RATE_V1_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "78f269bf42b12dd04603c7ee7bc4155eb78e7d3278aede12a6fb403c66e9346c"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_AUXILIARY_RATE_V2_SPEC_2026-11-01.md": {
+      "bytes": 309,
+      "sha256": "3c87ec03db36496227f36bd9c82ecd68c675f27f7c8ab79482f4930fb9079a73"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_AUXILIARY_RATE_V2_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "d7a1a490b58c4001424b42d9d2f42d4a1adc04f437fb7013e22bc4cc0ddfa3cf"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V1_CONTRACT_2026-11-01.md": {
+      "bytes": 2771,
+      "sha256": "8afffa139267466815cf62defb54807b892b6a76659c7d886fa3d85f1da4c87f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V1_CONTRACT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "4f881a77b17cc8e54d8c75eea551160307ad7cc101f09a80b6d4208ebfa4dd17"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V2_REPORT_2026-11-01.md": {
+      "bytes": 12022,
+      "sha256": "7a97db894bdb6ef118c6babbfb8ce3cf9137a54d51c5c1f5e9207931dec47275"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V2_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "76a840d0182059032452018da9bee41be92a4f4b4b7551eef1d8db68c4860f4b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V2_SPEC_2026-11-01.md": {
+      "bytes": 317,
+      "sha256": "9b2dd205f3e8c1f1ea50254bc4e34cfeca647eae2189af1ec19f82c31b604401"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V2_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "82970470f403bf17715b857d47e4da780532e16beebca9c836c8f1b901c39925"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_FLOW_SECOND_JET_V2_SPEC_2026-11-01.md": {
+      "bytes": 1561,
+      "sha256": "fde85f61059c882246537df818a2809a934be8d8a30674740905d18c5782d35b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_FLOW_SECOND_JET_V2_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "1ea27750a59519c93c8f2ab138aeb1823483afb79f760e3f0fce4b21f52b083b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V1_CONTRACT_2026-11-01.md": {
+      "bytes": 2901,
+      "sha256": "5bac3aff9a0525ab2f2484bb290a65e79cd36e628e94b777c6b06f791a15c271"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V1_CONTRACT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "583f07d731298b7432bce848a6cb21b6977bcf7ab92f9ac09afeef31908c00e7"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V2_SPEC_2026-11-01.md": {
+      "bytes": 477,
+      "sha256": "33f9d843312bb4967895bb20980fce6f2a934ede1f54d3a01bae9dcf561d4410"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V2_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "7f77611e82a119fa5f0aef37dc53768fee80ce0cea2752011d5a79b5c2ced22b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V3_REPORT_2026-11-01.md": {
+      "bytes": 9938,
+      "sha256": "228099f29b9895e071869e79ac807ca2b1e6e1d4dc71885d7b0d6bdc6c09047a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V3_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "d563966bab9145d46722e92a3e779013c293642f927598da4e479484766b7ec4"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V3_SPEC_2026-11-01.md": {
+      "bytes": 554,
+      "sha256": "d2991269e5bc8edb77a2847f8373c04bb8dba8efac591008b3b6be781758f2a0"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V3_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "8f323d08f3d362d57ed499d3c67b529545a7c0a52004823a66016fa14c780e72"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_FLUX_V1_CONTRACT_2026-11-01.md": {
+      "bytes": 2488,
+      "sha256": "2c629d7b23c0bed0aeea3082ba3439297c4bd3e816fb6ff02cfab10e21a8e55e"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_FLUX_V1_CONTRACT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "de7b4713ca172b9863bdbef93db25d3c34b23d513ef2a4b1807ac8e2518b494a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_FLUX_V1_REPORT_2026-11-01.md": {
+      "bytes": 8220,
+      "sha256": "e6fd50be40ee779f7d170d7031383897fb9804962527b02cc6da034469f5fb5f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_FLUX_V1_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "3925a6c07c0d32327f9111914fbc08c2f1b92a4cae09db0a252245b6b7732c03"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V1_CONTRACT_2026-11-01.md": {
+      "bytes": 2459,
+      "sha256": "09d6c6eae4c71b8781394889971e98ebe0efe4340d041aa5ab877fcb487fc2fa"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V1_CONTRACT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "9172a39094e070594751beba1c996e5aa71f5d520a0b11403d5453d9b2964cd6"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V2_REPORT_2026-11-01.md": {
+      "bytes": 10138,
+      "sha256": "e3bf3605d659a3af84a6e40f044fe02ac37e8ef385acfd7f1f723dfc4e7933e9"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V2_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "2f1bab2930d439901b123a9222013f988063a9c80d95a4bfac110443ddb89a06"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V2_SPEC_2026-11-01.md": {
+      "bytes": 439,
+      "sha256": "920f43b533ca6c8cd1f0084bb798e13d41d43225806580595510b9933be2eef2"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V2_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "4aaac0d276f0900b9a80132b8f32a2a7ccce18767a162c889d36e021b2e7a442"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_INTERACTIONS_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 3995,
+      "sha256": "7d9cb53a2dea8a5a3ea5f918d6aae702bbb9248388ac11c3fcff4f64cdb3be7d"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_INTERACTIONS_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "1b43aea7e1798ec77d7e2d6ddb4dc61d3695ed38369f2aa3a6300585e90e8d69"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_PERIODIC_INVERSE_V1_CONTRACT_2026-11-01.md": {
+      "bytes": 2993,
+      "sha256": "7d1eb88232766281bcb76d3ec458b4964eba64ca55c66ca86f8f0a677002bc82"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_PERIODIC_INVERSE_V1_CONTRACT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "471ce515197d6b807e1ed1af088051138ebfa2d69f0e87d7158b98c3dda26755"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_PERIODIC_INVERSE_V1_REPORT_2026-11-01.md": {
+      "bytes": 15778,
+      "sha256": "9fb5ba154ac96b4a2d4fdef5a6a64be1ea5fac69748952f6f2caa1133d632448"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_PERIODIC_INVERSE_V1_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "be64f4070341de302d21f8b93a1ce39e069af3cfa502a2e640ff12881249babc"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CURRENT_TRANSPORT_V1_SPEC_2026-11-01.md": {
+      "bytes": 2099,
+      "sha256": "b8b42aa3758336f8be9979bcc3bd75e788fe9725ad97a6dd643976ade669477e"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CURRENT_TRANSPORT_V1_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "5c5f8805841a4e2b0ad1d647c21c9e29e260612bb0aa4b9f27072028248701ba"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CURRENT_TRANSPORT_V2_REPORT_2026-11-01.md": {
+      "bytes": 5600,
+      "sha256": "c46e4907d6f84a427372b8ef2e94e58456351fa22b0965920feb52c9424ab16e"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CURRENT_TRANSPORT_V2_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "6f0474486600a641fa6c11c29aba3c8d60872c5972f4ed2515cf99c4cc03ac8b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CURRENT_TRANSPORT_V2_SPEC_2026-11-01.md": {
+      "bytes": 626,
+      "sha256": "d4a88368a7195f5514e9c9fd5d45e625cc70283a177ebd141eb698ef59d767d3"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CURRENT_TRANSPORT_V2_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "3dc0b3a9212776d89849d25213e0af3cabf845059250767e8c3dc87cf975c776"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_DENSITY_TIME_TRANSPORT_V1_REPORT_2026-11-01.md": {
+      "bytes": 7702,
+      "sha256": "2d40a4eee67044354fcea28255fdadb631832739939f5e70e380bd3777c7cffc"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_DENSITY_TIME_TRANSPORT_V1_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "950f47fb358448b4c404c360fd7c831f85563f91c8e384b16b24ac544dde77c0"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_DENSITY_TIME_TRANSPORT_V1_SPEC_2026-11-01.md": {
+      "bytes": 2068,
+      "sha256": "81057a66bf63ebdb1b8a71fbcc0576e12d2628de7eed630543e91cff099e76b9"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_DENSITY_TIME_TRANSPORT_V1_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "5e933973df7eb7ebd15e6f23dfcb0a8d29d0ce5fa49b32dda8c8470e0f2a5b19"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_EVOLUTION_ENTRY_AUXILIARY_V2_REPORT_2026-11-01.md": {
+      "bytes": 6144,
+      "sha256": "3de501f832bcf075963ff80bde0190b4a205a85c115a321a6528dfc8b7c3ac9a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_EVOLUTION_ENTRY_AUXILIARY_V2_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "aa68fcb60e1e615051cc70ab82ce0bc2651bb438369c865c574818cb1250c8da"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_EVOLUTION_KERNEL_V2_REPORT_2026-11-01.md": {
+      "bytes": 4463,
+      "sha256": "da09c4e68b5b05451dd245f384d30a26fe1458cf897455f8ad539323cbbffc63"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_EVOLUTION_KERNEL_V2_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "8c903f4551941d28100b7222ba97890e73f0cadbe2e38158938ee7d505b7fa95"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_EVOLUTION_KERNEL_V2_SPEC_2026-11-01.md": {
+      "bytes": 1337,
+      "sha256": "d153bc6a89ae492201c43f40665c000c9e9bc3656a7403f746d7f72786a0e57e"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_EVOLUTION_KERNEL_V2_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "2f88a3de30fd3366e4788597a726b8fdf18a4dfde34b5bd93e7add6395f8bdfb"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_GAUGE_VELOCITY_V1_REPORT_2026-11-01.md": {
+      "bytes": 6205,
+      "sha256": "53994392f89f7d245e35168be9cca006478ed74db55da2e143b883958f385615"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_GAUGE_VELOCITY_V1_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "d7f3135f10e3157429c5a28a953036cef27929e64ae5d963e99305c8168d7b11"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_GAUGE_VELOCITY_V1_SPEC_2026-11-01.md": {
+      "bytes": 1658,
+      "sha256": "aa01b467dc8792100e6a83d594bb3d71a6ac932252a66ec8d12876f0c7432ca3"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_GAUGE_VELOCITY_V1_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "6c4872febd395aca5b8ce20ec767bc2288ba120772b47fabb136c32c079c70ad"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_AUDIT_V1_SPEC_2026-11-01.md": {
+      "bytes": 838,
+      "sha256": "de2c5a4c4dfa40a783cfc4a35db0fae0c0135e19b5e556d4afe7f9e0ba1b75c8"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_AUDIT_V1_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "5b62a3d8162eebc6d402efa9ae1399ca9d69caef80cb6aa1aa85ace0be031199"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_AUDIT_V2_SPEC_2026-11-01.md": {
+      "bytes": 423,
+      "sha256": "2fcb7235d5c9ec86bcda6848f4a0a418b55399a9aed42ea2358527e8b798a217"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_AUDIT_V2_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "9fe59506187d2327edc7a0da23a1c3ccd1603b1bff27b5818676462d4c48b86d"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_V1_CONTRACT_2026-11-01.md": {
+      "bytes": 3195,
+      "sha256": "437474e8eb2cdbdfa0cdc27c1b5e6d99910c2a8bbacc592a05f7d62d5ca5523f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_V1_CONTRACT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "865be45f020b32bfdce70bcfd42e83452ce2d49aed897c49d20178ed3965ee92"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_V1_REPORT_2026-11-01.md": {
+      "bytes": 10448,
+      "sha256": "817a46ef0e14ae396470535936b9ea278ca9bf70ecadc9f9761c252ce56cee0a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_V1_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "6201af1275d3e85bda60915323ecc8f66896bde629280373ddcf1a52390a888c"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INTERVAL_RESIDUAL_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 1970,
+      "sha256": "d4d4a4680208c92e6a8c566aab1c6ee243484d0c6af286e1b49cde1d79ba208a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INTERVAL_RESIDUAL_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "382e719766743b070d42e8b81abc4a705142db11516292454a6d9670cf15ca07"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INTERVAL_RESIDUAL_V3_ADDENDUM_2026-10-31.md": {
+      "bytes": 1545,
+      "sha256": "6e3a1a86b71e853e3b4c03ca0a16524d1858c50aa068ecdd01d7497bdbdfc2a5"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INTERVAL_RESIDUAL_V3_ADDENDUM_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "99d446d4e80572a5f8bd15ec9ee9d4fbcf09f8c52e3d2ab4d48816a85920b942"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INTERVAL_RESIDUAL_V3_REPORT_2026-10-31.md": {
+      "bytes": 7889,
+      "sha256": "9145ab475c83760ba4787711dc69d5e20757b0a7b7f8f2cd9587990a9d85f41c"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INTERVAL_RESIDUAL_V3_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "895629391155a97dcadd60156b04ff3841f053d9ae532b0f274fcd331a29e610"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_AUDIT_V1_SPEC_2026-11-01.md": {
+      "bytes": 683,
+      "sha256": "17a120c6829bf1786f2587853fe5915ba152762695a4085ec1f6eb0c90394c90"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_AUDIT_V1_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "da4dafc4351a6ca3a0323351d292dac1eb1877c43293cb1fba4973abc209df28"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 3494,
+      "sha256": "bfa6c25c2c81f832b8b512503669c60a08551da628c6bf63ae3e4dfd798c7993"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "47fb85f57dd3047c6a84681c6c4579a22aadebfae073816aafb1f4ec2ccd3474"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V2_SPEC_2026-10-31.md": {
+      "bytes": 626,
+      "sha256": "758469c8e60d0e713572b9ff08f6dcbfa20d2e91a0eae4586893be40d3853247"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V2_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "850db6259653413fa2ca607d5ea82a38ab2df18194ed735f29b40d8e3ca6fff0"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V3_SPEC_2026-10-31.md": {
+      "bytes": 1025,
+      "sha256": "13154341c191636c1ae6954dad1f11c1e93e49d9a6ee8ad5c8ef41c7ecffa3b5"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V3_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "27b2e403bbf92f499006272f35060ebce46359bcdec236da47d51a3ee3bd8247"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V4_REPORT_2026-11-01.md": {
+      "bytes": 10636,
+      "sha256": "9104ead4adf65b317d818738953aea89c4f47cfd15cd4660a4dc08e32235f089"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V4_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "f6e46e4da1e559e667de96f22c6874ca33cfe29595ecad7aac783d77c364242a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V4_SPEC_2026-10-31.md": {
+      "bytes": 916,
+      "sha256": "444be0c6016b12ea65181bf9cade8b46a7d1b31258457329cabfa3736e74cccf"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V4_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "0c552a2abec4f55a460ba754a3533748a6917e9584176b03a78b7a4b1fc87de0"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 1994,
+      "sha256": "802c91fdef2b877ded28c2592fc7890472d0110f33239a5d8271dbec5be2ff34"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "0b2204b123e5e6b90afcf3f72a5547cbc3710aa93ac5d97e4d69c8853b5e9ae1"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1_REPORT_2026-10-31.md": {
+      "bytes": 6712,
+      "sha256": "df845828e81b89ff9b92abd550c530fc1c81c79e0298fbc220e533e1f62849d3"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "bad204c3cc96c47ae8b5240d1842ea49571be53c33608fbccc88ea48bf9cd8b3"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 2274,
+      "sha256": "b7c0ffd139b389387d97d43412f479584fc1a66523c75f5ae10537078f374e41"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "966a62ab93c34a9a2e0f6c45a249158f373af5b6ca9e4ccfb9659d17ca82fe75"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V2_ADDENDUM_2026-10-31.md": {
+      "bytes": 1250,
+      "sha256": "55ddbe10f9889bf0e3e10544fcb92faa80f78d91d6bb08c2569caea833a15f94"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V2_ADDENDUM_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "9f033f8fbc3cb6de3ab67fa9e38ae456d77bd6c2d685280427863ef96d13e264"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V2_REPORT_2026-10-31.md": {
+      "bytes": 6588,
+      "sha256": "52c47f1f7be3e2ec852d89d24c8ec1536cb6230c7c46944fc141318c49f70e53"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V2_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "749bd893b575492f25052ce5b0cabd0e1178064b01d348c22115b83378fff649"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NORM_EXTENSION_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 1716,
+      "sha256": "ff35eba4013df3bf2ad7433af8558673628f1993e480c457b91ac68f8f6352ba"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NORM_EXTENSION_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "102f80397d18a3e0a3a6100114beac35f26208a0d5d0d41c51906f51059f4b3d"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_AUDIT_V1_SPEC_2026-10-31.md": {
+      "bytes": 1291,
+      "sha256": "72f9be12a1caf50c1933013ee32f4b7fab302ed826ec5da96bbf74f98935ee06"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_AUDIT_V1_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "54dbb2c4051462620d256fa8b3fab864c58737654b335b061bd9fa77b83965dd"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 3643,
+      "sha256": "27b0133e8502b052984668025784f872d926878ce25c84d4c92f2d517f3de041"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "678d2e61bdd438e8aeb16c7cd5f2cf42de177b56b6bb2ae66d84133c519d02c2"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_REPORT_2026-10-31.md": {
+      "bytes": 12657,
+      "sha256": "77337afd21fe10541d5990efb8becaf74cab526b2d62b8a77fa05af723917396"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "04ffc89da1c62d9e8819e35bf4dbf22f52d2d3d8e39e3b50a2995b7aefd946a6"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_SPEC_2026-10-31.md": {
+      "bytes": 2380,
+      "sha256": "02e49fe3b1e40f6d56fff9dc03653f4858e6071d455af9d668ada034d48fa033"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "998dd4636ba84e67fc2c66e184fc3b87516973978f3c198f2ce273a6cae52f11"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_NUMERICAL_V1_REPORT_2026-10-31.md": {
+      "bytes": 6903,
+      "sha256": "beea8fb43719e2761737e6ec71e65e8d2a68af0c4736353e4724e45b9d1b96f0"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_NUMERICAL_V1_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "7e814ac5e127e70c9079c89dfe837dacc9d9c0c393742ad1983fb36d39d21bdc"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_NUMERICAL_V1_SPEC_2026-10-31.md": {
+      "bytes": 2948,
+      "sha256": "95a17f2c94c43939b1e7895c53c00085c76334c13ca34d7ccfc895243d6705d6"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_NUMERICAL_V1_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "331af5191e9eae6e3e88f39b050b1cddb544a43f399a6290702b790e88192f84"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_OFFGRID_V1_SPEC_2026-10-31.md": {
+      "bytes": 1034,
+      "sha256": "9328ee87398445cca6db348225ad75f48783f1b9be60a7a0962c48cc179a8486"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_OFFGRID_V1_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "6321b3224c0c698de68549d6079e2d530303e926f5eddbc6bce78ff19ca648cd"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_PREPARATION_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 2349,
+      "sha256": "b6e75a268a4c7bae71b335bb134faab87f4fc44668af6a75a3c15510c39a5af3"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_PREPARATION_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "6bf97b5feeaecdcb1b74c13cd77806343623f1985c9331cec3f3a2e37c5c968f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 3787,
+      "sha256": "9d91d497f273f93b020e56b4052fb7059a0690dedc24c6510c8e1316d7287072"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "065a3e5b497f324dadf4cc1cf75f1c5780ffe01e7c605f35d3bda050ab5af57f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-11-01.md": {
+      "bytes": 5355,
+      "sha256": "f958c0f480dd7c929765b659ae1c8a204fe9d8208aec23c76bc27912a4597483"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "f4ea5857a59895d6dc9eab8231bdc5603c8b29714f05fb84c7aa8270e1b0cbdc"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_EXECUTION_SPEC_2026-10-31.md": {
+      "bytes": 3955,
+      "sha256": "522f6858eee7cb8bf5dd6507708166f28528a30cfb011717dc1b964f355391e4"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_EXECUTION_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "4397f96ef19d8e5fe8d50035b03ac4449c690655374ad68b0086deba9c677b39"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_EXECUTION_ADDENDUM_2026-10-31.md": {
+      "bytes": 1449,
+      "sha256": "fe5986536c67d914a7a78c167ae0aae4c8f6a4b5835e59b0b8450b974c6e0427"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_EXECUTION_ADDENDUM_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "95208da94816702f0253c2d5c719e8d176ee41c82cc9191df13d7420e9794df3"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_REPORT_2026-10-31.md": {
+      "bytes": 13810,
+      "sha256": "7a571f82d1997e8cbfa068caac7a9f39ec7c4027a6e8c85907e2dec2b8fb19df"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "da5b10cd367a5913a16f3e18f090825b776580b6fd74a0fdb70afb627574b6f3"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_CAUCHY_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 3152,
+      "sha256": "ac1e04da36667598e573656610d1085c2d11e36ec631e03d774213e141cf344b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_CAUCHY_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "1c7783cf162d121636569d263554b967366c77a618f689dca74ac9e362235557"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_EVOLUTION_ENTRY_V1_SPEC_2026-11-01.md": {
+      "bytes": 1151,
+      "sha256": "8112d8289d1ff689821af693175fd71e524d3ed31161d57237d9d92e9e0e5058"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_EVOLUTION_ENTRY_V1_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "dbd199b3e1b38702cf062401d79d6eb44a6fd75e4e5e93f9c2fc576f404d7caf"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_EVOLUTION_V1_CONTRACT_2026-11-01.md": {
+      "bytes": 4362,
+      "sha256": "2fe383568691ea194e669e54d4359f6d16804ca091116755edc6878ce526a178"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_EVOLUTION_V1_CONTRACT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "92a066c9364ed4bfc8c23abd199a52bc0b2a9832123501b75d405b96b26ae0a6"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_AUDIT_V2_SPEC_2026-11-01.md": {
+      "bytes": 417,
+      "sha256": "0e1f705eb8683cc6072139e45e59eed91e4c26276752cb024e92a5a32d74fcc7"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_AUDIT_V2_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "127846e004bccba99b993211e96c07d5aacf9f23a3d0e723c43fc6c33a65d097"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V1_CONTRACT_2026-11-01.md": {
+      "bytes": 2798,
+      "sha256": "40ad666716fe34403ef9d9018e37b343b542041565985b2dc3385c350a17162a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V1_CONTRACT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "95cdb013633bbbd5a94f3811f6bc2b0ebc9efa2e6d3cc240d9916d14aedd298a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V2_SPEC_2026-11-01.md": {
+      "bytes": 1977,
+      "sha256": "6c21ea7bf8e92cae19c68574002d266d087418b94d8930ff1bf77d9b07fa5fc1"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V2_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "470d56d0a575777bd4251e0a28e428a86bd65298f6d94cbe91bcd80e071662da"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V3_REPORT_2026-11-01.md": {
+      "bytes": 11765,
+      "sha256": "c5319959105c423b8a98c9f856db0c22a8e6806deaab706a6d376dcdc6f162eb"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V3_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "2c025460b4c361a0b55d59a2e0640fb2f1f2842a68eda8f49dbfea34bd9b8e96"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V3_SPEC_2026-11-01.md": {
+      "bytes": 1816,
+      "sha256": "bf4a0d15fb63fe45466f6e2c2b918b553a0f700fb69a37c0a732e9fa70ab4f0c"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V3_SPEC_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "5eaaffe7e498f1aec46e270451218e12a595ce735646657e3f562f3c41de682b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_AUDIT_V1_SPEC_2026-10-31.md": {
+      "bytes": 697,
+      "sha256": "65b58151b0b77d83e1cb2be1b1c1656390c9bf672c53d9b59c239ec01e18a313"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_AUDIT_V1_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "c59c4e34620c562910c510ab9f6e51297587bd34de78f207389937310bf8f4ab"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_AUDIT_V2_SPEC_2026-10-31.md": {
+      "bytes": 633,
+      "sha256": "0828526bb1b393262126aa99b5f0cab7cc8b9987177c2fa69f0e655a1100f973"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_AUDIT_V2_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "dbaabff3da83c899e2d964970314977ac1cc6a1f1298ea367d25f4361660ab39"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 2979,
+      "sha256": "30dae66623e874cfc7c94fcd96943aa337a0b5f12e98e93b4876f49e90d39ddb"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "21144a9641d41b742af520c58355d93c0e44141b0ba5b9ba25b5678bb36d7bc2"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V2_REPORT_2026-10-31.md": {
+      "bytes": 9374,
+      "sha256": "a47bb25c8ba4f52541baccbca5f012231119d9f7a167d1d47d3dadb781d65e2b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V2_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "38d34719fa46bb60506e01a498056fd4fdf9680a47f120a8165ae9d64c44b34b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V2_SPEC_2026-10-31.md": {
+      "bytes": 836,
+      "sha256": "ef771c211494f249fc7781e6fcf2d318844901cf661c4208ce5e6f0a0f1f0e5e"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V2_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "937d5cb648b5682ef2f1090ced0193448d4ba5b0b7eba006dda381d4f1c53f4a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SPATIAL_GAUGE_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 2362,
+      "sha256": "d3a49e9156cc2208e283599eb9643c78d45ea540760f307e45fe457033f3de2b"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SPATIAL_GAUGE_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "e4075bfccfc5ceb7996472a656403a1f08fecde4dc4591377227934296a5980a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SPATIAL_GAUGE_V1_REPORT_2026-10-31.md": {
+      "bytes": 9091,
+      "sha256": "c35de203060825b70df302879596c0ec89a737f0cd7e036970bc57cac2d23ec0"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SPATIAL_GAUGE_V1_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "cd4f3939c9e2eb5701925b15df60b2b7884ffd37e05d9922543f8fdb7c1f9614"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SYMPLECTIC_CHARGE_FRAME_V1_CONTRACT_2026-11-01.md": {
+      "bytes": 2551,
+      "sha256": "93a29a14080c460d57f6a475ba345434b9a9f31e26c29bb1dbc434452576100c"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SYMPLECTIC_CHARGE_FRAME_V1_CONTRACT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "ebaeb20a36a921b78259e3af47a0f43697be4c4dbca362b273fc9aada213c0d4"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SYMPLECTIC_CHARGE_FRAME_V1_REPORT_2026-11-01.md": {
+      "bytes": 12560,
+      "sha256": "e7f17a1189d50934bc543199b95fbbe90db34041903bd85cb0d523bd6129990d"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SYMPLECTIC_CHARGE_FRAME_V1_REPORT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "ed7990dc9ba625e87e20890fd90e0fdba5f83f3f7f869cb4079befcc93b4668e"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_AUDIT_V1_SPEC_2026-10-31.md": {
+      "bytes": 675,
+      "sha256": "ab2e58f72f7db23569f59928e09c16a03e7ca6a4e78991fc3070c5226c86cf0a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_AUDIT_V1_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "117d43aadf7caca6ff230f8b74d2c434f84476c8e413bfe7fb2e53282515ad96"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 2913,
+      "sha256": "2ab89978ec6482a3ffdd1c5031e84ad5916799e1e322d50a231cb128a732ca72"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "f1e4b8702ee6ef9be407769744f2acdd8a69da106ecb868a4f280b13e770f641"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V2_REPORT_2026-10-31.md": {
+      "bytes": 9931,
+      "sha256": "7a39bb7dcdc7c41b77cb8ac5073f650789d1d9b490009e22cc5f62dfb7be66b2"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V2_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "77fb526ddc73b0cf71365218aa3c0511e8d80bcbdab39b0c3d3375deb9208044"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V2_SPEC_2026-10-31.md": {
+      "bytes": 1835,
+      "sha256": "bdfe303c537ff3d63252a0b99798979cc2518d2d394c6a12d1e638315dd6a59a"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V2_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "68dcbfe711ec0f0980edd8d1612db134980575e7a354c9bfa3a2e812c62ab805"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CANDIDATES_V1_2026-10-31.md": {
+      "bytes": 4829,
+      "sha256": "437fef683248394db20c46a487d55db298c7dd1dbbd3bae76a298a6ac9e5e8c7"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CANDIDATES_V1_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "5816efafa9e32748bdb96aa7e32d66b85063fc90d6962b392fca7ca3969c65d1"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 3892,
+      "sha256": "4a590565f2e30306013366c874d5a3c26e3f5bcaf31f45e94ae21c68ead663ad"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "af801652e60f2253e6d26ed49e6ac17c914ce3a314692513281eb61e6c4e87af"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_EXECUTION_SPEC_2026-10-31.md": {
+      "bytes": 3428,
+      "sha256": "0e602e5e210bea787c7273ba166dfba01b0aff74872f40f918aa628b4fb8a3c1"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_EXECUTION_SPEC_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "8dd3e48515acd7cad649d4d5deebaf02b6cb5878c18f20c82bb2e93e3b9467ef"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V3_EXECUTION_ADDENDUM_2026-10-31.md": {
+      "bytes": 1566,
+      "sha256": "8ec2640f23fd25b0c2aafedd835e509efabc6a9e12f9081bcf70aeb8c29d9f98"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V3_EXECUTION_ADDENDUM_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "500051efc7aabc99ce32e9572734a797ec411a0111977b758e593d4ed5abcb92"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V3_REPORT_2026-10-31.md": {
+      "bytes": 12308,
+      "sha256": "6fda78fa20a13f9ca92415684fb2ddc63e07494c11729897ed8f9107bb660b8c"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V3_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "be1dc798636fbdd1b375f583eb0e3ad938fc004893e5bed2d6db6528166c112f"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V1_CONTRACT_2026-10-31.md": {
+      "bytes": 6301,
+      "sha256": "fc7c50869d0334d43e57acb146d10d89b7e3f85d0e77373c2d57bfd57d32e0e8"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V1_CONTRACT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "4ea65842be3bdc6f196b6dcdd0328d0b78c838cdedcf09a6e5946df789be5bf3"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V2_EXECUTION_ADDENDUM_2026-10-31.md": {
+      "bytes": 1259,
+      "sha256": "c1aad8589f60c1473fdb784973baff4f3e08dfa850184287f96ad7245f5feb4e"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V2_EXECUTION_ADDENDUM_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "01da9d93c823cd61d3d12837eb61c551483ef9dc7e11f7558f7bb905fac2c1d5"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V2_REPORT_2026-10-31.md": {
+      "bytes": 12290,
+      "sha256": "d539bfb82edf408de401aaf076d53bfa5448b606eb69c2f9958dac33d53d2339"
+    },
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V2_REPORT_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "c84c4803bfc586077a1b359d93ae4430be4ce38e281cb28e8be54e8dc6b2976c"
+    },
+    "Theory/Verification/ITSM_DOMAIN_FIRST_HANDOFF_V1_2026-10-30.manifest.json": {
+      "bytes": 26160,
+      "sha256": "9abab3f1578426ed3551785fcbb3a9275fc3509c70709e910923bbbf1d2c6e93"
+    },
+    "Theory/Verification/ITSM_DOMAIN_FIRST_HANDOFF_V1_2026-10-30.manifest.json.sha256": {
+      "bytes": 66,
+      "sha256": "0ea53b841e855fc7efdf5ade4c47285c4ec54828b3260a18e76bfe0902646fa4"
+    },
+    "Theory/Verification/ITSM_DOMAIN_FIRST_HANDOFF_V1_2026-10-30.md": {
+      "bytes": 3733,
+      "sha256": "5caaa89e986ee119fa68b52d36313e7da4d0b0beff66f8878343ed891fb0ac05"
+    },
+    "Theory/Verification/ITSM_DOMAIN_FIRST_HANDOFF_V1_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "d5e511d0ae8fee2b0c37ca9176a87d48d0d87c7fbe24c71d672c755e70ac5bfb"
+    },
+    "Theory/Verification/ITSM_DOMAIN_FIRST_PROGRESS_V1_2026-10-30.md": {
+      "bytes": 3656,
+      "sha256": "9ee5b1ba925a449af2a6cd438b55b975f70958c13dd12240a522bc9c2fdb5e99"
+    },
+    "Theory/Verification/ITSM_DOMAIN_FIRST_PROGRESS_V1_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "0e48dd247a781205ced6e81627c2235ab9a12b1c6bbbeb67bc5e9d9368466f45"
+    },
+    "Theory/Verification/ITSM_DOMAIN_FIRST_PROGRESS_V2_2026-10-30.md": {
+      "bytes": 2111,
+      "sha256": "893e61f9a3f4282ef8ddf5f305f0ad45f70cd87c3d77e44dc585f346efea2413"
+    },
+    "Theory/Verification/ITSM_DOMAIN_FIRST_PROGRESS_V2_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "8027983c8f27bce22ae19ecbcaae48ccf943225a38b8bf6c5c274c2d0c38699e"
+    },
+    "Theory/Verification/ITSM_DOMAIN_FIRST_PROGRESS_V3_2026-10-30.md": {
+      "bytes": 3518,
+      "sha256": "024edd8b74144b744d98bf25c330a47860d7e361ad642542e983da424d2d178c"
+    },
+    "Theory/Verification/ITSM_DOMAIN_FIRST_PROGRESS_V3_2026-10-30.md.sha256": {
+      "bytes": 66,
+      "sha256": "c304fbf44aa0fb2e2251d93ba2d8d5f389c353730c03cdba8bd7921558eb0890"
+    },
+    "Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-01.md": {
+      "bytes": 9866,
+      "sha256": "5181b8b20cdadc82f3b1a38b031c8516bbaf4745ab6a0e29d5c69ddda7a50009"
+    },
+    "Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "7e12920919389f9f2cfc58246a9d2c9c8a54164a6d7533f3f81c5256251041f1"
+    },
+    "Theory/Verification/ITSM_RTAU_CANONICAL_DENSITY_HANDOFF_2026-11-01.md": {
+      "bytes": 3511,
+      "sha256": "b9b83f76ed18e08608c3b76f620c9f576819f4c52911cc1182f771a944aaad32"
+    },
+    "Theory/Verification/ITSM_RTAU_CANONICAL_DENSITY_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "c3a88cc72e860452d566ee85245811f9f0d1780f2b62959a6e93e340d8267229"
+    },
+    "Theory/Verification/ITSM_RTAU_CLOCK_DENSITY_HANDOFF_2026-11-01.md": {
+      "bytes": 2162,
+      "sha256": "58affb2774880758f5ba5f27ab1ecfc170ebd181396dd4f22cc088b82eec91ca"
+    },
+    "Theory/Verification/ITSM_RTAU_CLOCK_DENSITY_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "fabe613486dcf94d3246971d8500d613609a0220d94def7fe09b285fc4d76b76"
+    },
+    "Theory/Verification/ITSM_RTAU_CLOCK_FLUX_HANDOFF_2026-11-01.md": {
+      "bytes": 1861,
+      "sha256": "2e2bd904838af87448bd629bb548a4b208f065e9500bf59c9ea0b904684d02d6"
+    },
+    "Theory/Verification/ITSM_RTAU_CLOCK_FLUX_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "06127a97f1801cd1044ab94f37be97c3e0846397150b6f5a8a30206f4c6dd45b"
+    },
+    "Theory/Verification/ITSM_RTAU_CLOCK_IDENTITY_HANDOFF_2026-11-01.md": {
+      "bytes": 2899,
+      "sha256": "d291c457957218c7e984e8120dfa4e7b59613d337f7b75e57ec0f3a4f8481b25"
+    },
+    "Theory/Verification/ITSM_RTAU_CLOCK_IDENTITY_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "776478a58970b5f3aee9e3ad11f542cd9c7e0ce1cb701c9f5c1f418f5b0aefcf"
+    },
+    "Theory/Verification/ITSM_RTAU_COUPLED_PERIODIC_INVERSE_HANDOFF_2026-11-01.md": {
+      "bytes": 3559,
+      "sha256": "27bd66322ef47898ccfc8bc4f400421d3ef80d096a7da95530537d01decf1ddd"
+    },
+    "Theory/Verification/ITSM_RTAU_COUPLED_PERIODIC_INVERSE_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "ef9f454db3c8ba7af053b88e685fd2e47c8e727f5732270723aacb15551b26c4"
+    },
+    "Theory/Verification/ITSM_RTAU_DENSITY_TRANSPORT_HANDOFF_2026-11-01.md": {
+      "bytes": 2947,
+      "sha256": "476f85d139f043dcf7711d1e2f9fcdd0ba35034de7aba12eef312fca44c1a6f2"
+    },
+    "Theory/Verification/ITSM_RTAU_DENSITY_TRANSPORT_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "775603f36c45e7db12959fd3461c291ced0b3df6b1d31cede8fb60bbcd9017ca"
+    },
+    "Theory/Verification/ITSM_RTAU_EVOLUTION_ENTRY_AUXILIARY_HANDOFF_2026-11-01.md": {
+      "bytes": 1947,
+      "sha256": "72b73d713d7544680c41d6c3a5593081106781bf00456a7ebbdb5e60c0d3a0b1"
+    },
+    "Theory/Verification/ITSM_RTAU_EVOLUTION_ENTRY_AUXILIARY_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "26ae0826c71df2ea7db4d06924c5b04399615e5b080c72cf7d03c42e6f302cd3"
+    },
+    "Theory/Verification/ITSM_RTAU_GAUGE_VELOCITY_HANDOFF_2026-11-01.md": {
+      "bytes": 2479,
+      "sha256": "41b45a744b298c46e8f4f8a7831da1e8f0fa6da3dc6e028dada48ebf2c0c03c1"
+    },
+    "Theory/Verification/ITSM_RTAU_GAUGE_VELOCITY_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "f71ba8905a16fa753824e60e79d3e751ec933a8862b7f0532f8af46a40697487"
+    },
+    "Theory/Verification/ITSM_RTAU_INITIAL_ACCELERATION_HANDOFF_2026-11-01.md": {
+      "bytes": 2207,
+      "sha256": "d858d70a670fa39bdf3c8008d6137c64da4547acfd155dcffeb45690f74234da"
+    },
+    "Theory/Verification/ITSM_RTAU_INITIAL_ACCELERATION_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "1eb510e656aafe3bfa25b3062f25186e525f593c234e15432175df92e5e9cd91"
+    },
+    "Theory/Verification/ITSM_RTAU_INTERVAL_RESIDUAL_HANDOFF_2026-10-31.md": {
+      "bytes": 1753,
+      "sha256": "2f011a244abf1ab41bfe06236306806e437e20080169537d10eaae5b56e14023"
+    },
+    "Theory/Verification/ITSM_RTAU_INTERVAL_RESIDUAL_HANDOFF_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "661e221f179217dfd7b1523099384ea4666a79cb013f6e68dfaf0b5a0b2155f8"
+    },
+    "Theory/Verification/ITSM_RTAU_MIXED_OPERATOR_HANDOFF_2026-11-01.md": {
+      "bytes": 2099,
+      "sha256": "85bbf4629b921911855956fa23bea3cb625be912d0395461f7f0f2e2746297de"
+    },
+    "Theory/Verification/ITSM_RTAU_MIXED_OPERATOR_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "23ba88cddb4892a459e78696af7de0b90f5764d5566e8c2148d5e666f1a68d47"
+    },
+    "Theory/Verification/ITSM_RTAU_PERIODIC_CANDIDATE_HANDOFF_2026-10-31.md": {
+      "bytes": 1714,
+      "sha256": "efbc2e99526d7228425c0706e0b21d6e418a2d62daff7a28866f2aec5c88ed43"
+    },
+    "Theory/Verification/ITSM_RTAU_PERIODIC_CANDIDATE_HANDOFF_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "bcbc4070ce8108a8b1c1ff02132d005e0670d83d37abdef09b98bb2fbd516e3b"
+    },
+    "Theory/Verification/ITSM_RTAU_PERIODIC_EXISTENCE_HANDOFF_2026-10-31.md": {
+      "bytes": 1899,
+      "sha256": "f12973048609f403c61ff1a7194db0291285047a85110333c877ee869f420fa3"
+    },
+    "Theory/Verification/ITSM_RTAU_PERIODIC_EXISTENCE_HANDOFF_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "9ae00649de20077b71ee1b7aab6fab5bc5a3ce18a4fe0365b300a59366aab69d"
+    },
+    "Theory/Verification/ITSM_RTAU_PHYSICAL_NORM_HANDOFF_2026-10-31.md": {
+      "bytes": 2106,
+      "sha256": "0ceee3b4a1e20faff898d34aec50c81b6e5e70d9f1917e37bd50c04e6eb6015a"
+    },
+    "Theory/Verification/ITSM_RTAU_PHYSICAL_NORM_HANDOFF_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "21329716966e2ac6cabb6e394e38c68e2f4960ac4ebe453bc59666216cfcd180"
+    },
+    "Theory/Verification/ITSM_RTAU_PHYSICAL_NORM_V1_INPUTS_2026-11-01.json": {
+      "bytes": 30833,
+      "sha256": "9fae15c91e305ebb8063cf3a28bb21568c36bc47a34a66727ed820264ebd1a45"
+    },
+    "Theory/Verification/ITSM_RTAU_PHYSICAL_NORM_V1_INPUTS_2026-11-01.json.sha256": {
+      "bytes": 66,
+      "sha256": "5781e218bcd60da7b7f42151f1c9e40bee34f533e1d66c0a11d9d5082caea4b7"
+    },
+    "Theory/Verification/ITSM_RTAU_PREPARED_EVOLUTION_PROGRESS_V1_2026-11-01.md": {
+      "bytes": 1765,
+      "sha256": "fbf41396d2083dd5196508f00ed6e1947b6732bfbb3ec228c62b316f421657cb"
+    },
+    "Theory/Verification/ITSM_RTAU_PREPARED_EVOLUTION_PROGRESS_V1_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "2a64a998e730103faed5d18fdf74c71e9ca2d4f55ea5f272a016becaf1e59306"
+    },
+    "Theory/Verification/ITSM_RTAU_PREPARED_EVOLUTION_PROGRESS_V2_2026-11-01.md": {
+      "bytes": 1849,
+      "sha256": "43db59bbf7c4e3bd0f24159fcf4b6248b72af3a8f1574f0acb21e7f1b1be6484"
+    },
+    "Theory/Verification/ITSM_RTAU_PREPARED_EVOLUTION_PROGRESS_V2_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "cb933ba02aea639a267eb2c7b46e8f2845d9f541db324a614d233d36cc42d0ab"
+    },
+    "Theory/Verification/ITSM_RTAU_PREPARED_EVOLUTION_V1_INPUTS_2026-11-01.json": {
+      "bytes": 24786,
+      "sha256": "b6d5105e05792baaf84e9b2f3268d10b8c1086f9142a98f45af9e6972238a0cc"
+    },
+    "Theory/Verification/ITSM_RTAU_PREPARED_EVOLUTION_V1_INPUTS_2026-11-01.json.sha256": {
+      "bytes": 66,
+      "sha256": "7dae30292a4ef10fe7476fcab9901cd6d9ff0caccbc5ad584a02945436de7d1b"
+    },
+    "Theory/Verification/ITSM_RTAU_PREPARED_PRINCIPAL_HANDOFF_2026-11-01.md": {
+      "bytes": 3368,
+      "sha256": "b22959b5ecd33dcd80da7a8a0a54e29503e0a7f59cfb90afef1790e06c9a5793"
+    },
+    "Theory/Verification/ITSM_RTAU_PREPARED_PRINCIPAL_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "74a898aa8e43ac266f37a83e6a09ee79ad9ed51878f8b509798983e5d7675247"
+    },
+    "Theory/Verification/ITSM_RTAU_PREPARED_TEMPORAL_HANDOFF_2026-10-31.md": {
+      "bytes": 1882,
+      "sha256": "1b78428e45a4c5bb56290ec0bca8ed083b52a241300591e6bcb523bad04c3142"
+    },
+    "Theory/Verification/ITSM_RTAU_PREPARED_TEMPORAL_HANDOFF_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "8f9e0c35e7b09f3402d2e3da3ee958cae62601180285864fc534ade3c019a9ce"
+    },
+    "Theory/Verification/ITSM_RTAU_SPATIAL_GAUGE_HANDOFF_2026-10-31.md": {
+      "bytes": 1683,
+      "sha256": "3f332e1270e09a4d0e99e671b925053e1d6a030810c075e0542f453ff647d55c"
+    },
+    "Theory/Verification/ITSM_RTAU_SPATIAL_GAUGE_HANDOFF_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "b3a4032bd80b370392c57d7ea5d1c097acdface9abcc74bd943db81bab7afc76"
+    },
+    "Theory/Verification/ITSM_RTAU_SYMPLECTIC_CHARGE_FRAME_HANDOFF_2026-11-01.md": {
+      "bytes": 3584,
+      "sha256": "1d51f9efd19be79f4b8a39189e9f0a936f0e6c4237215ad27c845513a5613634"
+    },
+    "Theory/Verification/ITSM_RTAU_SYMPLECTIC_CHARGE_FRAME_HANDOFF_2026-11-01.md.sha256": {
+      "bytes": 66,
+      "sha256": "5e7ec6f6d533f36169ce3dc5cee6a8e779bf68dc8fcf6bfb2a92c696ccd20a6d"
+    },
+    "Theory/Verification/ITSM_RTAU_VELOCITY_TANGENT_HANDOFF_2026-10-31.md": {
+      "bytes": 1939,
+      "sha256": "ad93b869f6b129f248363f59e9f9ac1a512580a37f92dc97e1e3884f48129861"
+    },
+    "Theory/Verification/ITSM_RTAU_VELOCITY_TANGENT_HANDOFF_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "3a558d57e259b51f143dee4d5aa598af8651e1b805e1d5a4029fba6552e67da3"
+    },
+    "Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md": {
+      "bytes": 391820,
+      "sha256": "829073d63e52e23b0674fef5661265d5e2e6636f2ecf10ff44cfbdf78135be09"
+    },
+    "Theory/Verification/ITSM_RULE9_DEFERRED_REVIEW_REGISTER.md.sha256": {
+      "bytes": 106,
+      "sha256": "8775e2be0e1da9e906c8a430d65accdbd435feed0de5b5b5e97080e380e91b7d"
+    },
+    "Theory/Verification/ITSM_T3_ILLUSION_OPTICS_CONTROL_V1_2026-10-31.md": {
+      "bytes": 8272,
+      "sha256": "a11d83eda30b370823cd4b78170672c3999f71ce6f8aab1200f75cf0faed2f63"
+    },
+    "Theory/Verification/ITSM_T3_ILLUSION_OPTICS_CONTROL_V1_2026-10-31.md.sha256": {
+      "bytes": 116,
+      "sha256": "21742b06342d7ff87b292c517853c3bf2eb3048f9a6350ef47c2ecceb6135cbe"
+    },
+    "Theory/Verification/ITSM_TWO_REPAIR_CHARACTERISTICS_HANDOFF_2026-10-31.md": {
+      "bytes": 2876,
+      "sha256": "2cf347ae165c0feacf43f36cb35d6a20d8a328fcf852af93c498aabd6064978c"
+    },
+    "Theory/Verification/ITSM_TWO_REPAIR_CHARACTERISTICS_HANDOFF_2026-10-31.md.sha256": {
+      "bytes": 66,
+      "sha256": "e65e5bdb858d577acda717e20bf87d45b68cc4275da56b3a1879a6153a90181f"
+    },
+    "active_research.md": {
+      "bytes": 86237,
+      "sha256": "c9ed67a519296ed1f559198e348da0632da519c380a33aefc16e5785803f2119"
+    },
+    "active_research.md.sha256": {
+      "bytes": 85,
+      "sha256": "cf420dab291813548d0ae243145be374c306b9571c219baf28087c89b9da42fb"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.1-conditional-draft.pdf": {
+      "bytes": 487454,
+      "sha256": "52d592b4324fcb53ea0135b4777c5a25e944453b6a8bd2bd523148a1b203079a"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.1-conditional-draft.pdf.sha256": {
+      "bytes": 146,
+      "sha256": "3093aa2aaec8105dcf6e9104eb78318f898af453dcc4fb47b65f3f638e697be2"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.2-conditional-draft.bbl": {
+      "bytes": 5139,
+      "sha256": "1ac6168112636bf6f8b3db10bbe8fb7261a4026590d0aafcf59f8614a3fc9499"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.2-conditional-draft.pdf": {
+      "bytes": 486829,
+      "sha256": "60026d7c0adb47c458e28be10367ac12c40922f0b859e14a36e428c2abceffdd"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.2-conditional-draft.pdf.sha256": {
+      "bytes": 146,
+      "sha256": "6a78f910838e76834bffa63809bb4d230f51bca8e4aa4e8e95d8c5052f3c9e39"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.2-conditional-draftNotes.bib": {
+      "bytes": 104,
+      "sha256": "61b9ca8a0eae79078bb6bcd4205c582b5f4f2ed0a16ece16a01837cc4718248d"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/README.md": {
+      "bytes": 3261,
+      "sha256": "9bc67f9d86aacdea7db495ec0abe8a0d410fcaf04f82030d7fcc7cff3df9abab"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/README.md.sha256": {
+      "bytes": 66,
+      "sha256": "014b0fffb18c2b41c33a79398c8b7f335c43e9d2da2f545e3b650bd478b62144"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/REVISION_NOTES_v0.1.2.md": {
+      "bytes": 3170,
+      "sha256": "e4d9d4ea9da9c3dd79b46d889477f44f7c9fc21c3d86b3b69da12568ea75fdd8"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/REVISION_NOTES_v0.1.2.md.sha256": {
+      "bytes": 66,
+      "sha256": "88d7191ffc1207b5968131035385d63ef4aba946fdb65e987fcdd226c666cd31"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/SUBMISSION.md": {
+      "bytes": 2173,
+      "sha256": "3fd22ae5841337855ac3c918fb18b9cd68089ce3e130485399131e0e0eeee825"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/SUBMISSION.md.sha256": {
+      "bytes": 66,
+      "sha256": "1cd2c79e36e2dee622344859efa48d360430a1ee90d00121d92dfd7600321728"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/VERSION": {
+      "bytes": 25,
+      "sha256": "70112b810a2026021b90341340d4bd73afeba6c6dab04bc5a7130f43fe701f8d"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/main.tex": {
+      "bytes": 27167,
+      "sha256": "b8f83186cdce001f99175ab379b58accb6661de57b82e258f920284329b2da22"
+    },
+    "papers/R4C1-Covariant-Exchange-Model/main.tex.sha256": {
+      "bytes": 66,
+      "sha256": "6176aa2685667f3acff8db12aafb730f0074831d16f60a3cf056f3f4d025fd56"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/Build-R4C1-Covariant-Exchange-Model.ps1": {
+      "bytes": 2072,
+      "sha256": "b764da00ae354d09af2cd9e6a173a30a0a9815985b5e94afcef47b98d5c1a1c2"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/Build-R4C1-Covariant-Exchange-Model.ps1.sha256": {
+      "bytes": 66,
+      "sha256": "128947701279037c0a1d5829f65f9891069da0ae9d818a72e9581a6ad58363a0"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/README.md": {
+      "bytes": 2587,
+      "sha256": "fb0768d82156133c839912e270f02b57ea49e1f3bb86b7fd81225c8a308993a1"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/README.md.sha256": {
+      "bytes": 66,
+      "sha256": "436622ce2881a4986c52cfefc6e6816ed3bbcc3393c1c99afc412d2788772a0b"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/SUBMISSION.md": {
+      "bytes": 1752,
+      "sha256": "5845d1b369b5af0e96ffc7a71409148592173b4eb8bb5691d4febd9461cc5b40"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/SUBMISSION.md.sha256": {
+      "bytes": 66,
+      "sha256": "4e907a22b51287c8fda7aee6a88f042f493edfd8510bddfb1f3a6abc077312ee"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/VERSION": {
+      "bytes": 24,
+      "sha256": "c586c976a863509de36773a86e43cd492e90b2fe835491cf603257639ee1e7c6"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/VERSION.sha256": {
+      "bytes": 66,
+      "sha256": "1de3bbb38aa38a1cace4196bf4aeca022e3c6866cae3f74a3980f8f8e8e3a8b5"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/main.tex": {
+      "bytes": 27381,
+      "sha256": "adeb6a686c091a8238253d9e1fbdc219b7a80e0d60be327432da9994e845940e"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/main.tex.sha256": {
+      "bytes": 66,
+      "sha256": "94b87cb7ceab7b92453c4b01796cfe05f37d502623b612714af4d95460afd78d"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/preservation_manifest.json": {
+      "bytes": 1328,
+      "sha256": "da4a47a1280104cb9c69c89e6381bb9df1110f84274a0e9bcb6d0979fca645a5"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/preservation_manifest.json.sha256": {
+      "bytes": 66,
+      "sha256": "7dd535bf69f4b82be9f27511397ec1412c2e809359b603b18a3e21d334ffefa7"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/references.bib": {
+      "bytes": 1502,
+      "sha256": "fb5165828122d7fac4c7c25e807f4edd8fe54d1b8d894eb9f0a8e6cf458a9284"
+    },
+    "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/references.bib.sha256": {
+      "bytes": 66,
+      "sha256": "f0530114876251d6fefd5c002aaf9848e37a6728e9ac8edf98241262a4f45f22"
+    }
+  },
+  "historical_source_snapshots": [
+    {
+      "original_source": "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.1-conditional-draft.pdf",
+      "preserved_source": "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.1-conditional-draft.pdf",
+      "sha256": "52d592b4324fcb53ea0135b4777c5a25e944453b6a8bd2bd523148a1b203079a"
+    },
+    {
+      "original_source": "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.1-conditional-draft.pdf.sha256",
+      "preserved_source": "papers/R4C1-Covariant-Exchange-Model/Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.1-conditional-draft.pdf.sha256",
+      "sha256": "3093aa2aaec8105dcf6e9104eb78318f898af453dcc4fb47b65f3f638e697be2"
+    },
+    {
+      "original_source": "papers/R4C1-Covariant-Exchange-Model/Build-R4C1-Covariant-Exchange-Model.ps1",
+      "preserved_source": "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/Build-R4C1-Covariant-Exchange-Model.ps1",
+      "sha256": "b764da00ae354d09af2cd9e6a173a30a0a9815985b5e94afcef47b98d5c1a1c2"
+    },
+    {
+      "original_source": "papers/R4C1-Covariant-Exchange-Model/README.md",
+      "preserved_source": "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/README.md",
+      "sha256": "fb0768d82156133c839912e270f02b57ea49e1f3bb86b7fd81225c8a308993a1"
+    },
+    {
+      "original_source": "papers/R4C1-Covariant-Exchange-Model/SUBMISSION.md",
+      "preserved_source": "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/SUBMISSION.md",
+      "sha256": "5845d1b369b5af0e96ffc7a71409148592173b4eb8bb5691d4febd9461cc5b40"
+    },
+    {
+      "original_source": "papers/R4C1-Covariant-Exchange-Model/VERSION",
+      "preserved_source": "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/VERSION",
+      "sha256": "c586c976a863509de36773a86e43cd492e90b2fe835491cf603257639ee1e7c6"
+    },
+    {
+      "original_source": "papers/R4C1-Covariant-Exchange-Model/main.tex",
+      "preserved_source": "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/main.tex",
+      "sha256": "adeb6a686c091a8238253d9e1fbdc219b7a80e0d60be327432da9994e845940e"
+    },
+    {
+      "original_source": "papers/R4C1-Covariant-Exchange-Model/references.bib",
+      "preserved_source": "papers/ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/references.bib",
+      "sha256": "fb5165828122d7fac4c7c25e807f4edd8fe54d1b8d894eb9f0a8e6cf458a9284"
+    }
+  ],
+  "known_preserved_nonexecutable_sources": [
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_density_graph_v1.py"
+  ],
+  "native_goal_at_checkpoint": "BLOCKED_AWAITING_HIGH_CONFIRMATION",
+  "publication": "NO_NEW_CLEARANCE_OR_SUBMISSION",
+  "receipt_dispositions": [
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": null,
+      "passed": null,
+      "path": "Analysis/Lensing/T3Illusion/outputs/static_t3_v1/summary.json",
+      "total": null
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_ALIGNED_PRESERVATION_V1",
+      "passed": 60,
+      "path": "Analysis/MasterTests/outputs/r4c1_aligned_preservation_v1_attempt_01/summary.json",
+      "total": 60
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_ALIGNED_PRESERVATION_V1_INPUTS_ONLY",
+      "passed": null,
+      "path": "Analysis/MasterTests/outputs/r4c1_aligned_preservation_v1_inputs_01/summary.json",
+      "total": null
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_ALIGNED_TANGENCY_V1",
+      "passed": 68,
+      "path": "Analysis/MasterTests/outputs/r4c1_aligned_tangency_v1_attempt_01/summary.json",
+      "total": 71
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_ALIGNED_TANGENCY_V2",
+      "passed": 71,
+      "path": "Analysis/MasterTests/outputs/r4c1_aligned_tangency_v2_attempt_01/summary.json",
+      "total": 71
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_AUXILIARY_RATE_V2",
+      "passed": 21,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_auxiliary_rate_v2_attempt_01/summary.json",
+      "total": 21
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V2",
+      "passed": 90,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_canonical_density_graph_v2_attempt_01/summary.json",
+      "total": 90
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_CANONICAL_FLOW_ENTRY_V1",
+      "passed": 15,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_canonical_flow_entry_v1_attempt_01/summary.json",
+      "total": 15
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_CANONICAL_FLOW_SECOND_JET_V2",
+      "passed": 15,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_canonical_flow_second_jet_v2_attempt_01/summary.json",
+      "total": 15
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_CLOCK_DENSITY_V3",
+      "passed": 23,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v3_attempt_01/summary.json",
+      "total": 23
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_CLOCK_FLUX_V1",
+      "passed": 14,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_clock_flux_v1_attempt_01/summary.json",
+      "total": 14
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_CLOCK_IDENTITY_V2",
+      "passed": 18,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_clock_identity_v2_attempt_01/summary.json",
+      "total": 18
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_COUPLED_PERIODIC_INVERSE_AUDIT_V1",
+      "passed": 12,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_coupled_periodic_inverse_audit_v1_attempt_01/summary.json",
+      "total": 12
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_COUPLED_PERIODIC_INVERSE_V1",
+      "passed": 31,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_coupled_periodic_inverse_v1_attempt_01/summary.json",
+      "total": 31
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_CURRENT_TRANSPORT_V2",
+      "passed": 46,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_current_transport_v2_attempt_01/summary.json",
+      "total": 46
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_DENSITY_TIME_TRANSPORT_V1",
+      "passed": 23,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_density_time_transport_v1_attempt_01/summary.json",
+      "total": 23
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_EVOLUTION_KERNEL_V2",
+      "passed": 10,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_evolution_kernel_v2_attempt_01/summary.json",
+      "total": 10
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_GAUGE_VELOCITY_V1",
+      "passed": 18,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_gauge_velocity_v1_attempt_01/summary.json",
+      "total": 18
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_INITIAL_ACCELERATION_AUDIT_V1",
+      "passed": 10,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_audit_v1_attempt_01/summary.json",
+      "total": 11
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_INITIAL_ACCELERATION_AUDIT_V2",
+      "passed": 11,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_audit_v2_attempt_01/summary.json",
+      "total": 11
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_INITIAL_ACCELERATION_V1",
+      "passed": 23,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_v1_attempt_01/summary.json",
+      "total": 23
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_INTERACTIONS_INPUT_V1",
+      "passed": null,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_interactions_input_v1_attempt_01/summary.json",
+      "total": null
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_INTERVAL_RESIDUAL_V3",
+      "passed": 39,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_interval_residual_v3_attempt_01/summary.json",
+      "total": 39
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_MIXED_OPERATOR_AUDIT_V1",
+      "passed": 16,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_audit_v1_attempt_01/summary.json",
+      "total": 16
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_MIXED_OPERATOR_V4",
+      "passed": 29,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v4_attempt_01/summary.json",
+      "total": 29
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1",
+      "passed": 15,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_constraints_v1_attempt_01/summary.json",
+      "total": 15
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_NONLINEAR_REGULATOR_V2",
+      "passed": 123,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_regulator_v2_attempt_01/summary.json",
+      "total": 123
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_NORM_EXTENSION_V1",
+      "passed": 25,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_norm_extension_v1_attempt_01/summary.json",
+      "total": 25
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PERIODIC_INVERSE_AUDIT_V1",
+      "passed": 15,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_periodic_inverse_audit_v1_attempt_01/summary.json",
+      "total": 15
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PERIODIC_INVERSE_V1",
+      "passed": 11,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_periodic_inverse_v1_attempt_01/summary.json",
+      "total": 11
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PERIODIC_NUMERICAL_V1",
+      "passed": 10,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_periodic_numerical_v1_attempt_01/summary.json",
+      "total": 10
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PERIODIC_OFFGRID_V1",
+      "passed": 12,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_periodic_offgrid_v1_attempt_01/summary.json",
+      "total": 12
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PHYSICAL_NORM_V1",
+      "passed": 57,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v1_attempt_01/summary.json",
+      "total": 58
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PHYSICAL_NORM_V2",
+      "passed": 58,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v2_attempt_01/summary.json",
+      "total": 58
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PREPARED_PRINCIPAL_AUDIT_V1",
+      "passed": 14,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_audit_v1_attempt_01/summary.json",
+      "total": 15
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PREPARED_PRINCIPAL_AUDIT_V2",
+      "passed": 15,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_audit_v2_attempt_01/summary.json",
+      "total": 15
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PREPARED_PRINCIPAL_V1",
+      "passed": 16,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v1_attempt_01/summary.json",
+      "total": 22
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PREPARED_PRINCIPAL_V2",
+      "passed": 21,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v2_attempt_01/summary.json",
+      "total": 25
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PREPARED_PRINCIPAL_V3",
+      "passed": 30,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v3_attempt_01/summary.json",
+      "total": 30
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PREPARED_TEMPORAL_AUDIT_V1",
+      "passed": 11,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_audit_v1_attempt_01/summary.json",
+      "total": 15
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PREPARED_TEMPORAL_AUDIT_V2",
+      "passed": 15,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_audit_v2_attempt_01/summary.json",
+      "total": 15
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PREPARED_TEMPORAL_V1",
+      "passed": 24,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v1_attempt_01/summary.json",
+      "total": 26
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_PREPARED_TEMPORAL_V2",
+      "passed": 26,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v2_attempt_01/summary.json",
+      "total": 26
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_SPATIAL_GAUGE_V1",
+      "passed": 30,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_spatial_gauge_v1_attempt_01/summary.json",
+      "total": 30
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_SYMPLECTIC_CHARGE_FRAME_V1",
+      "passed": 25,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_symplectic_charge_frame_v1_attempt_01/summary.json",
+      "total": 25
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_VELOCITY_TANGENT_AUDIT_V1",
+      "passed": 16,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_audit_v1_attempt_01/summary.json",
+      "total": 16
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_VELOCITY_TANGENT_V1",
+      "passed": 20,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v1_attempt_01/summary.json",
+      "total": 21
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_RTAU_VELOCITY_TANGENT_V2",
+      "passed": 22,
+      "path": "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v2_attempt_01/summary.json",
+      "total": 22
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_TWO_REPAIR_ADDITIONAL_IDENTITIES_V1",
+      "passed": 18,
+      "path": "Analysis/MasterTests/outputs/r4c1_two_repair_additional_identities_v1_attempt_01/summary.json",
+      "total": 18
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_TWO_REPAIR_CHARACTERISTICS_V3",
+      "passed": 129,
+      "path": "Analysis/MasterTests/outputs/r4c1_two_repair_characteristics_v3_attempt_01/summary.json",
+      "total": 129
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_TWO_REPAIR_COMPARISON_V1",
+      "passed": 54,
+      "path": "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v1_attempt_01/summary.json",
+      "total": 70
+    },
+    {
+      "interpretation": "Original disposition retained; not aggregate physical clearance",
+      "kind": "R4C1_TWO_REPAIR_COMPARISON_V2",
+      "passed": 70,
+      "path": "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v2_attempt_01/summary.json",
+      "total": 70
+    }
+  ],
+  "schema": "itsm-research-checkpoint-v1",
+  "scientific_disposition": {
+    "G1_G6": "INCOMPLETE",
+    "K_Q": "NOT_DERIVED",
+    "MAT_001": "BLOCKED",
+    "R_tau_parent_adopted": false,
+    "Rule9_cleared": false,
+    "UVIR_003": "IN_PROGRESS",
+    "V": "NOT_COMPUTED",
+    "gate_effect": "NONE",
+    "physics_pass": false,
+    "prepared_physical_norm": "NOT_DERIVED",
+    "review_status": "DEFERRED"
+  },
+  "scientific_source_pins": {
+    "Analysis/MasterTests/audit_01_r4c1_rtau_coupled_periodic_inverse_v1.py": "56f7b0eac4a395fa6653694f057a470375beb2a2d8600443ec5100bdab24fed5",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_initial_acceleration_v1.py": "8be3e112ace3a3127176d5b18a91c296b80d580797c782cc71436e55e3849a43",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_initial_acceleration_v2.py": "f0365e1e7b67f7c68021f98eb4d9ceb715757ba8b144e7e563b27681badbc7ed",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_mixed_operator_v1.py": "f76d05a41f4e41cffffa7b7fb7f0048f7b3b1fd4a348d0ae66e0b54adb8d4cd9",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_norm_extension_v1.py": "5bc1af961699f188c68e84ce4e84e8e0d0d0a1d603ccb6e683795217df335f11",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_periodic_inverse_v1.py": "f8b5ed373cc1d62eb99003f538a6ed05bd5227a755c8d77256341946f77e2ce1",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_periodic_offgrid_v1.py": "7843680a8932cd96e0462530609fa72f2de4ea643c84e07eee90a1f187722ce1",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_principal_v1.py": "36859de5274219d63122cb140e0520aa196bbec899f82634a2bb8ad8b24aec6e",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_principal_v2.py": "ad754096fd896b079369d2ae2c0cadf772b4cb63b2fefd3b0fe357cf9d53a5a7",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_temporal_v1.py": "42b44c71a6e95803efcdff00eaa09913e836b2862acee912bbd8fd5aa4439240",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_temporal_v2.py": "808cd821ddab6fd37022f3bd9465edbbde0f0cc1be51614df67d14f6edca123b",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_velocity_tangent_v1.py": "5348dc4675dd3a94b90330012d7a50c3a3722f348d4d7de6e36e7919c7ed6f39",
+    "Analysis/MasterTests/audit_01_r4c1_two_repair_comparison_v1.py": "c79436d10a50dfaa10da8be3bda0fd95e4b225560058bff393393ff4ccf6a99b",
+    "Analysis/MasterTests/dust_certified_arithmetic_v1.py": "f868032dcd939a52c3299ac66d5f4c18d02c5681bac7391bcce67732bc026599",
+    "Analysis/MasterTests/outputs/r4c1_aligned_tangency_v1_attempt_01/summary.json": "7d811ae1cacc9fd15a46e4a517626cf6277c9ab925878d1fd0be0cd2974168de",
+    "Analysis/MasterTests/outputs/r4c1_aligned_tangency_v2_attempt_01/summary.json": "836f9e718212d689a86cad0eec22657bdce293b5fb422e693c7abcb43545dc9c",
+    "Analysis/MasterTests/outputs/r4c1_b1_alignment_domain_v1_attempt_01/summary.json": "5ce2ecbf65f1a1b1d3f0e38dc6a02413a9bcefa36a1e93e24b9aeb090e36be1b",
+    "Analysis/MasterTests/outputs/r4c1_b1_dust_reconstruction_v1_attempt_01/summary.json": "7f4134defc9dd25b6a831d154f195a308a17b8d3ee01c29643a764b088c51e4a",
+    "Analysis/MasterTests/outputs/r4c1_b1_kinetic_drift_v1_attempt_01/summary.json": "e66aaa83814afb726ace2bbaf1543591ba6502c37440be4430aca2ad7375c3cb",
+    "Analysis/MasterTests/outputs/r4c1_b1_propagator_v1_attempt_01/summary.json": "93c5d85618d4546b61b6a74961d04d93da35e2ad95dc20d3b57b4ce4e38dce10",
+    "Analysis/MasterTests/outputs/r4c1_b1_reduced_kinetic_v1_attempt_01/summary.json": "829b013edc716cb2a7c9a2a4161bf2830186b0d68673b8b57e3928deb5a1d53a",
+    "Analysis/MasterTests/outputs/r4c1_rtau_auxiliary_rate_v1_attempt_01/failure.json": "c9b7015590d5c9d86802146d50e9eedcdfeb970fbb99ea7080b387daec11f553",
+    "Analysis/MasterTests/outputs/r4c1_rtau_auxiliary_rate_v2_attempt_01/summary.json": "57233b4614cc62519f53c7b9f706c6bdea85276334c55b9fb6d7cd930393068d",
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_density_graph_v1_attempt_01/failure.json": "3b4efa47d63b8083cd70ffea01e520ccbbb727f057e977da21c5978f6ca6eec1",
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_density_graph_v2_attempt_01/summary.json": "0cb96db2f86ead50721f7e0bb87aacfa262c189b905f0fbd46677ed47acfcf1c",
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_flow_entry_v1_attempt_01/summary.json": "5628cf0fb09844bc49005f727f8852bf81e96807b67a004848d803d703ba0075",
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_flow_second_jet_v2_attempt_01/summary.json": "ae30954122771bfd504f4b41396d70bc324dfd40702412ae192c5a8c13041786",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v1_attempt_01/failure.json": "daac5be68b0a85bd4ac28dc1b0c4655b35bd673dee37bf307cb0be5c0cfc2892",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v2_attempt_01/failure.json": "9ce22e314658d476486424b28ff7e566dad037d935ab548fcecff69071119f5b",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v3_attempt_01/summary.json": "9bec36b8aaa37c511779cd420e5b351203f8c9be787e6b0d1593230215a786b3",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_flux_v1_attempt_01/summary.json": "471748908020df864be786a073a29b5e5dd94a187456ed6686b9d0a5996ead4a",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_identity_v1_attempt_01/failure.json": "5ffcd2c37f3368606c2632ea445da6cc3e76c26b6fc7ef9498fc3bf3e9a5d08f",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_identity_v2_attempt_01/summary.json": "fa72a504e953901fb132483638a33cf97dc2c81ba9e87664bc208012046b8559",
+    "Analysis/MasterTests/outputs/r4c1_rtau_coupled_periodic_inverse_audit_v1_attempt_01/summary.json": "25d6da6f28a4e0f5601825999bb8fb891e3fe486087e3e61eb63adbab136895e",
+    "Analysis/MasterTests/outputs/r4c1_rtau_coupled_periodic_inverse_v1_attempt_01/summary.json": "b97ac2036d5e3ae02776443caaf2ece057268fdfdab04f885c5eb24cc1507157",
+    "Analysis/MasterTests/outputs/r4c1_rtau_current_transport_v1_attempt_01/failure.json": "2bd7503081d351ac575f8946e5bc9e4195f54775830949b3507f3c7a47111afa",
+    "Analysis/MasterTests/outputs/r4c1_rtau_current_transport_v2_attempt_01/summary.json": "8ff36131f3058e32200ab8f7b3c8247d2a2ea66d8ea272ee1ebc8215dd22a322",
+    "Analysis/MasterTests/outputs/r4c1_rtau_density_time_transport_v1_attempt_01/summary.json": "5b6b8626985344b39ba97acd24d7435b684f50f9bb5ebf343decd12b69f36e2f",
+    "Analysis/MasterTests/outputs/r4c1_rtau_evolution_kernel_v1_attempt_01/failure.json": "5378bbc7477dd2cb78216748e028f00443659bf09460f55a0db284685860cc7f",
+    "Analysis/MasterTests/outputs/r4c1_rtau_gauge_velocity_v1_attempt_01/summary.json": "b04c13cdc5a26673e5f91291c43e50edfb5f4a03bf4a0f68c2a317c95d53e92b",
+    "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_audit_v1_attempt_01/summary.json": "edec02491c301dd126d6b2e883a3dc5ef71e1ab71b5c612237f4969213f02789",
+    "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_v1_attempt_01/summary.json": "dbcdacf8954e1cc59a2ebc42b91cd77f7a8e3473c2c54906b1f94e506455154d",
+    "Analysis/MasterTests/outputs/r4c1_rtau_interactions_input_v1_attempt_01/summary.json": "f06bfc8926b24f874c01ee000f0b34b71cf69906b4fc00278ed650c8640841d0",
+    "Analysis/MasterTests/outputs/r4c1_rtau_interval_residual_v3_attempt_01/summary.json": "d116cbb8c71241c4e3c85c1b260f082f5e30306dbf51243d26e446e36e797484",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v1_attempt_01/failure.json": "2bebfa1b0597b7b7a1ca5e3be283d1d73c37f39d4a6aac55c176262cd3e8aa6f",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v2_attempt_01/failure.json": "572a21aabd23505aaab0dbf8121abca97455020441159001776975b8510232fe",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v3_attempt_01/failure.json": "65683593dcf9bb7af6d2e78bb5783f84a4508babc7a2f7efd757b95f2e36469c",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v4_attempt_01/summary.json": "d916402a0751fa4a0409d2048ed4e38ea18dd9b5629836f6a3517fdd44e0b577",
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_constraints_v1_attempt_01/summary.json": "202ead4f7fd5d26d3eae4ec1ccc05798f2b8ef646eb7468a1a09103e3c13a987",
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_regulator_v2_attempt_01/summary.json": "ebf0bb4708ca1167bbbf4f3049ee8d418bfb76b0e992686ed6b85bca923f3d46",
+    "Analysis/MasterTests/outputs/r4c1_rtau_norm_extension_v1_attempt_01/summary.json": "0b2c3d34b6cb19da0701ab10497b554f4fcdf6e8c494b1b5bbf8da611fc2f1ad",
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_inverse_v1_attempt_01/summary.json": "9c22269a9e40c331fd9c72ad72e44e9f67705524193293e2a11adc9f131827b9",
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_numerical_v1_attempt_01/summary.json": "58fc8db6b8d10ee57f2974e0415685ded3cfe9e80745044b19b551b7827c0d60",
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v1_attempt_01/summary.json": "68cd6d2bc808ff9a5c4c3f1bd56bbdcebd3e950ff6791020019107add7b5586e",
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v2_attempt_01/summary.json": "2a4e72ceef0a7681c8ee3fc38028d9dcb86b2ebd9999af6b0bdb58b0a3e80533",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_audit_v1_attempt_01/summary.json": "6cb5d0a1cd9f1dd55563ded1cf89d2c045e2e2f49984d4b816d551c932226a55",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_audit_v2_attempt_01/summary.json": "d168acacc483ed9026fab18b80702675b92349b0c68d92388bcf05f020bae345",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v1_attempt_01/summary.json": "5a541fe7f9db0d8cde44141868f0b3923161503866588d9200fe9780ba90ed82",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v2_attempt_01/summary.json": "355914fa63e0f48e96c72fa216feaa2e0ee06f1331d3d3115d49694c481c123c",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v3_attempt_01/summary.json": "9689901a50cf2a41f51dea63ce8bbf5f01b8a5fccdab92337d23a6ff7636f152",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_audit_v1_attempt_01/summary.json": "1e79c3b65b4058f998605752f31beca3ed677fb470b6b43aa8e8475a55e76df3",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v1_attempt_01/summary.json": "9e47bb10e944fe61323a9eaeae8097f5d6ef23992ceb59a7d0a44006ea225fac",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v2_attempt_01/summary.json": "aba30848eed3be2d4cb3f0122899ea0394aafcf93b6ebd4d91ecfb3b63f6ac93",
+    "Analysis/MasterTests/outputs/r4c1_rtau_spatial_gauge_v1_attempt_01/summary.json": "449ce6a63c04a479fb8fc79cee62806ba5072d8dacac99f8614e9ab96e9ce014",
+    "Analysis/MasterTests/outputs/r4c1_rtau_symplectic_charge_frame_v1_attempt_01/summary.json": "cd40137244f6969a8ba737e26a684721e89d9ea8b40bd5263769baa18e743a13",
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v1_attempt_01/summary.json": "6bd06446ad71093eb547424b39072e0a4b1972becae8204cdaedb5bd3d01cd39",
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v2_attempt_01/summary.json": "f4efb6bc588528aa6287fa2cca2a8020f581fddc0564e0336b9e8bf52906a814",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_characteristics_v3_attempt_01/summary.json": "acc0558461b0e7882edc6e59baae4d9b2d886fb33882bd0bc5928834a1a57515",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v1_attempt_01/summary.json": "664a8d310222c09751c9e6039dda3656423c7000480fd097a34a6242602a7c4c",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v2_attempt_01/summary.json": "964c24a88923a3326902eb8f5b37fa23a0f3ab6ee8964c60406e52211ea52f91",
+    "Analysis/MasterTests/r4c1_auxiliary_geometry_rate_v1.py": "eeb914c35926cb146d130652b6f179194f42fa1f20630aabcbf21b2d83f676d6",
+    "Analysis/MasterTests/r4c1_canonical_density_factory_v1.py": "f943af8bf733eafc2507852ccbe99725e4a2e28a9afa7775c364fb8624488a04",
+    "Analysis/MasterTests/r4c1_clock_current_transport_v1.py": "6593736f21d91d30c54108563c3ca521839b51ae0e2c94e9e610d19558c2ac31",
+    "Analysis/MasterTests/r4c1_clock_density_operator_factory_v1.py": "9a7f01a9909706cbb1ac622bfd89e3205e15e82a7dfed10ef35bb9d456f434cf",
+    "Analysis/MasterTests/r4c1_density_time_transport_v1.py": "0c34677fb86d581ed2992f16e9af3bcb9ea702acc15b6237fe9f5bab450fd4a9",
+    "Analysis/MasterTests/r4c1_density_time_transport_v2.py": "5107eeac1d7ac9385e83d799ceaa4bc99abaa775e742a6dbe4e9d9014f110e4a",
+    "Analysis/MasterTests/r4c1_full_weak_action_v1.py": "330f25196806450238a71459873a3353036fac4ef15cab53da665ecbaa501105",
+    "Analysis/MasterTests/r4c1_gauge_velocity_v1.py": "c1eb04651d60c421d815e0ba93b8d0c41e83a7a20382ccd7ead93de566681472",
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v3.py": "2d81bdd8c3b4a85dcfa917724e5ad6931dad19e44c7414957cc9327cbfcc1fa4",
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v4.py": "daab54788cf70dbe99187cbfc1c2e7a76946edc39529632783a352e5f63e5ff1",
+    "Analysis/MasterTests/r4c1_prepared_canonical_flow_v1.py": "676a7cbe6f18873ae99c9d87344c9289f4046552a0869fec58d16cb45855917c",
+    "Analysis/MasterTests/r4c1_prepared_canonical_flow_v2.py": "180fe88e93116cec7c32892ba2b8134b4cd253062849b8eacb24411442952e49",
+    "Analysis/MasterTests/r4c1_prepared_evolution_kernel_v1.py": "f3aaf5fb2752a7a898e8cc081cebc5eeee32aa3b1cf2af080f5ae6c42745e061",
+    "Analysis/MasterTests/r4c1_prepared_evolution_kernel_v2.py": "96277c44ca1b486abd07b4a16a58355101ec7bb67c45bff8dd8cecfa7b9f361b",
+    "Analysis/MasterTests/r4c1_prepared_operator_factory_v1.py": "443776ef3f3fa65954fbe011afda082baf0784afb7a2d17805710f1ef0bb8945",
+    "Analysis/MasterTests/r4c1_prepared_operator_factory_v2.py": "79e79f412c9c78f613bb073fdcd47acbeb73be99e0f0a632676109c13f541d48",
+    "Analysis/MasterTests/r4c1_second_variation_jet_v1.py": "d78cdd4f9659468ab3cf8d4f4f67ee00f5f3096d6742c348ab6d850e6ed40e87",
+    "Analysis/MasterTests/r4c1_two_repair_actions_v1.py": "f4da18c7722f71b2897bd5bedbbc0992ba3c58c94c7ca3b234525f1a672084cb",
+    "Analysis/MasterTests/r4c1_two_repair_actions_v2.py": "bdb68b4f2db7437247f6ea059e3acf6471f2c986f764a34cfc70c968fcff8314",
+    "Analysis/MasterTests/r4c1_two_repair_quadratic_v2.py": "cd58599bfe4004072ae2d5d7d2fa5cabd600b13f8e60d7301dba78b77c3932bd",
+    "Analysis/MasterTests/test_01_r4c1_aligned_preservation_v1.py": "dc6101ab8bcb4167e6d5c29a246fff3479dc368919af814fd4f641b4f0432009",
+    "Analysis/MasterTests/test_01_r4c1_aligned_tangency_v1.py": "7aada89af979d19b13057afa5e43aaec0a00536919da1e40aa629619bfc3d12c",
+    "Analysis/MasterTests/test_01_r4c1_aligned_tangency_v2.py": "5640ed8a227b3938b9ba6375ec887eec7bd5416c973eb1d4bc857589fa4ea67e",
+    "Analysis/MasterTests/test_01_r4c1_b1_alignment_domain_v1.py": "d374c63e609815a7c42e1f3ac261f7f0be6dfe110457c7181cb98a7eb1a4b535",
+    "Analysis/MasterTests/test_01_r4c1_b1_dust_reconstruction_v1.py": "a6ac2849dea663c0dfbdfdce0792b25b8684ec71ad1e060c41b195021dcd2030",
+    "Analysis/MasterTests/test_01_r4c1_b1_kinetic_drift_v1.py": "56badde0e458b848287a35605a11da792b7ab9339b844c34a83d907403e9639a",
+    "Analysis/MasterTests/test_01_r4c1_b1_propagator_v1.py": "cca11ea1565a5dc2740718c4d47e3f420d9e30301d64b19e0f5e9466339cc21e",
+    "Analysis/MasterTests/test_01_r4c1_b1_reduced_kinetic_v1.py": "0bd93464a813a1825526987a2c81c55c2c964691c173d555786077fedfc08625",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v3.py": "b887c7a52102b7abb43a2875cb6e01607ecb46d39a95f4abb4cefab9795a73c0",
+    "Analysis/MasterTests/test_01_r4c1_rtau_auxiliary_rate_v1.py": "f7d4b1b4ffddb179be27aa480807d4462c472f3e8cc7196aa34e147074ad8e3a",
+    "Analysis/MasterTests/test_01_r4c1_rtau_auxiliary_rate_v2.py": "aec0eefc25dc57afcff95042a5e2f289969c8c3bc17c940103a7f4027a7ded73",
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_density_graph_v1.py": "04a75d1ad0c7217e64c9f769ec04782a8b1dde7d66a5e2dbca6addde5b0fee09",
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_density_graph_v2.py": "ef221d3dd74187430dde37561c34cf41f29218c3ac4ee7cb4fe82ce4edcf3cf2",
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_flow_entry_v1.py": "59191a41a1ad021b8aaae19152aa67f003cab5566be9a7cc454d3a63f97c206e",
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_flow_second_jet_v2.py": "6fa17a487e3aaf1943f5402b7f6d0270064e2bff0bc9f5d8f291a38fb0cfb837",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v1.py": "3c2ae67f8122390d58dce5e368d9bdcc1a02c663bdd236668a27a87babd783d6",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v2.py": "070c318f1e3531357065f5c84a0acd0a6d6f931e99cd021b21d3877b070c88cb",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v3.py": "13bba602ba6ead35b9d38513afb6a8643e378cc2d9a40a5ba6cff551796ebe62",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_flux_v1.py": "29a60792bcd77255c2dff4ae04a2cee5e12e8f73e2045b00a6c5f069e2f99c6c",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_identity_v1.py": "e13135f1848769975ffbf94a0167b0556aec77084a2b2bc6ccbf84dc2fd11568",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_identity_v2.py": "3fd337e1dfca255d0291207aa9c00fa03af044a07a296306c478bc5b244126e6",
+    "Analysis/MasterTests/test_01_r4c1_rtau_coupled_periodic_inverse_v1.py": "e597b8f93715680f1d695a884ec485e76a892e5786dc88ba4edb6db34567df23",
+    "Analysis/MasterTests/test_01_r4c1_rtau_current_transport_v1.py": "36cd46547ba07c8f8cb730dc3c70a0c905e727534d4ebe268904c32799fad780",
+    "Analysis/MasterTests/test_01_r4c1_rtau_current_transport_v2.py": "744d7c803a27b21c40ea2231a61d09d48d43d7669fac09b7dc9c6993e3e9853c",
+    "Analysis/MasterTests/test_01_r4c1_rtau_density_time_transport_v1.py": "d62e522277147d30316367e3477817efbb18c5bfe14a09ddd5e16178ccc7459c",
+    "Analysis/MasterTests/test_01_r4c1_rtau_evolution_kernel_v1.py": "69eaea11cede64420b3e1f916dfde2e8c7cf60de3699184b014e718c675032d7",
+    "Analysis/MasterTests/test_01_r4c1_rtau_evolution_kernel_v2.py": "9eeed21e65557c2df72e0dd5f165f1a1fe11bf0499b75bd10ba23a8460a7401f",
+    "Analysis/MasterTests/test_01_r4c1_rtau_gauge_velocity_v1.py": "446722fcfc31dae07ed6e59fccfb24ea77200e40681abdd1ca86737ee7e70755",
+    "Analysis/MasterTests/test_01_r4c1_rtau_initial_acceleration_v1.py": "9e4de2bae4078f3d5b95e5dbf46d63cc07fddb2440be9ddeb4c393995fc502cb",
+    "Analysis/MasterTests/test_01_r4c1_rtau_interval_residual_v3.py": "718f3c1081c3b4295aaf9cc438b386e4f4ef768376d68eb8bd6eb8976a58f761",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v1.py": "cf63a28095e3b8d21cf0f8f920a722b3b6b5edc5465b5c4509a78843e09d138f",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v2.py": "51efe5f9012a15494501a0e9858f58afafc9f08cb795d36e0c4429c2b5720a43",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v3.py": "112e92df85084aa31483f48cefb82c36f34aa20ae3433c38c73a025fe5a3ea7e",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v4.py": "7ee68ba495b65de27871c8511a32feb351a95facfd13c13e726695b96c4aae3e",
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_constraints_v1.py": "2cc356773e003a5d4ec8532a49e697279c3aac2eb9e1e1bc31584bea4c731aa4",
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_regulator_v2.py": "3f1a24062cbb0d4ca75b3188aaea7b8b92d92cb208d4083b79052acaeb56a561",
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_inverse_v1.py": "f01cf514688dadde23beadca1d0fccaa6710bb3ab27529996c342a30be795eb7",
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_numerical_v1.py": "40a356d574b882d410d4809dbeace8e4e789d23aa864d5503246fd1e8f0d2fe5",
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v1.py": "334a152c2a7ee0a9f23bff28c36ee626676d3bacbfb4a6a1bcfa64cfb31a0bca",
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v2.py": "326dd85d3ec093959f16af71c0dc250ca82fb44307f72aa496c5106861111955",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v1.py": "a9be8e7817e80f37a160533823d0ecc24a82352cca36128c4aa9c4e3dde0d9ed",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v2.py": "fafc8815391dea254068f51e44a7dfe6da9ec7c30d9e6b64699191f48cc268d3",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v3.py": "8002335433d1705fb1ba7ef7dcabedf2ef822a4626751f8d1049ae530e0c2f7a",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_temporal_v1.py": "d7c6b9144128727546df11c84052eec842f689b74a3a55bae3dc488dc57a5a33",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_temporal_v2.py": "77dce6e8bee8a6f23617dedf0960c4703c61c2436c2513fdd135e8e6578af841",
+    "Analysis/MasterTests/test_01_r4c1_rtau_spatial_gauge_v1.py": "bd34d5f7f8ae481ad7cf48446fd071e3fe44c17513c69c7f3a3c7743356e7d39",
+    "Analysis/MasterTests/test_01_r4c1_rtau_symplectic_charge_frame_v1.py": "3a96af4487eea16f51f70f83d2a3890c94558727627d7e3525bf2c59da7165ff",
+    "Analysis/MasterTests/test_01_r4c1_rtau_velocity_tangent_v1.py": "0badedd4c4206a6ffcdb2805e13a39b5d12f946ba3fc4d2756bd814e954cacc9",
+    "Analysis/MasterTests/test_01_r4c1_rtau_velocity_tangent_v2.py": "8c60a7f6fd1c7efe12b451f2560388b1ef35cd79de62c62f96e6900ba128b471",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_characteristics_v3.py": "98b9ecf5e030715f8106d197c89d9ae981950accfeb987ae7c20b261dbf65958",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v1.py": "ec6395f6f8e82452982a823cfb76375899b663b90db6782247c33996ac6e304e",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v2.py": "bab911efd631ed06213888c6758927836050b49b338089e3f45ed3439f00e6c4",
+    "Theory/Core/ITSM_DOMAIN_FIRST_MULTISTEP_GOAL_V1_2026-10-30.md": "daaaf2ca37b8ec35ad2e8925856ce0215284394641ee85e7e4305372bb682733",
+    "Theory/Core/ITSM_Master_Research_Plan.md": "dd7aca5238eaa716a87b9ff5d52f9062935b0404b85f059a3e5cbaff5d5d9723",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_PRESERVATION_V1_CONTRACT_2026-10-30.md": "0e9c95a132472cc01b0c1ddd7b4302d82313a94885807938f062dc5ee23a3843",
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_TANGENCY_V1_CONTRACT_2026-10-30.md": "d7604593aa89a122e23c30e4fdcc423a3b2755e1398dfa94f793b23b78b8bfce",
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_TANGENCY_V2_EXECUTION_ADDENDUM_2026-10-30.md": "8a21fb69b25f02c9db8b6deb50dc009417435df73264854a40153ad2daacb8aa",
+    "Theory/Gates/RES-001/RES001_R4C1_ALIGNED_TANGENCY_V2_REPORT_2026-10-30.md": "a1a12c8c2452bb175cb146825cec658d00e9d893c68524544e386df0de381fb3",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_CONTRACT_2026-10-29.md": "a58bff722582afff4a93465e3d91d695c445e2128f24441a592423b8d8da49fb",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_REPORT_2026-10-29.md": "34239d3d8173be1bee275e6056787fc9dd308d026669b31b5946e2e96cc6a1ae",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_CONTRACT_2026-10-29.md": "254ac814874de1d31678dc4bdce14439dce397b82f7a4a21e2a6c4e1b39ff35d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_REPORT_2026-10-29.md": "60e19751ae396d19e10d557ed22a764f12a8ab43b5d0504a73fba6e560a7f18c",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md": "82708666dfce4ef214b614bc7da31b294d7569539b97292aaa9a79e906e6266f",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_CONTRACT_2026-10-29.md": "3ff304c9a08a78233c9feaca192b940e363c408de668df9b0efe6d49adbc9a1d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_REPORT_2026-10-29.md": "0398721b04b6d47633e07e65e8de155a0a35bae250ba57893bc75e7348ac6228",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_CONTRACT_2026-10-29.md": "e2c08f14d79fc17bc3ca08c09baab7a42608a0d9565198339d2214764288c467",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md": "b1c14df414f27ffeb9458fd5e1234943c459f2bb9dabac55fda0b442f8826c94",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_CONTRACT_2026-10-29.md": "9af0554e67970d046cbd9ba22298ae9840150c040db2b607f760c423f5de921d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_REPORT_2026-10-29.md": "096db5aec89c60837408dbf0eddc3593436e4a3a2125c955e94cdbc35eb2bf66",
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md": "8c4496eacdb0d2447445e4a1949b683e033f042a7332c659701e2273d2bf23ea",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_AUXILIARY_RATE_V1_SPEC_2026-11-01.md": "9961a54ab0dbac161de520e24a012a2ba0a47880151c5021d5f8d59433c01cb2",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_AUXILIARY_RATE_V2_SPEC_2026-11-01.md": "3c87ec03db36496227f36bd9c82ecd68c675f27f7c8ab79482f4930fb9079a73",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V1_CONTRACT_2026-11-01.md": "8afffa139267466815cf62defb54807b892b6a76659c7d886fa3d85f1da4c87f",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V2_REPORT_2026-11-01.md": "7a97db894bdb6ef118c6babbfb8ce3cf9137a54d51c5c1f5e9207931dec47275",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V2_SPEC_2026-11-01.md": "9b2dd205f3e8c1f1ea50254bc4e34cfeca647eae2189af1ec19f82c31b604401",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_FLOW_SECOND_JET_V2_SPEC_2026-11-01.md": "fde85f61059c882246537df818a2809a934be8d8a30674740905d18c5782d35b",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V1_CONTRACT_2026-11-01.md": "5bac3aff9a0525ab2f2484bb290a65e79cd36e628e94b777c6b06f791a15c271",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V2_SPEC_2026-11-01.md": "33f9d843312bb4967895bb20980fce6f2a934ede1f54d3a01bae9dcf561d4410",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V3_SPEC_2026-11-01.md": "d2991269e5bc8edb77a2847f8373c04bb8dba8efac591008b3b6be781758f2a0",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_FLUX_V1_CONTRACT_2026-11-01.md": "2c629d7b23c0bed0aeea3082ba3439297c4bd3e816fb6ff02cfab10e21a8e55e",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_FLUX_V1_REPORT_2026-11-01.md": "e6fd50be40ee779f7d170d7031383897fb9804962527b02cc6da034469f5fb5f",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V1_CONTRACT_2026-11-01.md": "09d6c6eae4c71b8781394889971e98ebe0efe4340d041aa5ab877fcb487fc2fa",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V2_REPORT_2026-11-01.md": "e3bf3605d659a3af84a6e40f044fe02ac37e8ef385acfd7f1f723dfc4e7933e9",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V2_SPEC_2026-11-01.md": "920f43b533ca6c8cd1f0084bb798e13d41d43225806580595510b9933be2eef2",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_INTERACTIONS_V1_CONTRACT_2026-10-31.md": "7d9cb53a2dea8a5a3ea5f918d6aae702bbb9248388ac11c3fcff4f64cdb3be7d",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_PERIODIC_INVERSE_V1_CONTRACT_2026-11-01.md": "7d1eb88232766281bcb76d3ec458b4964eba64ca55c66ca86f8f0a677002bc82",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_PERIODIC_INVERSE_V1_REPORT_2026-11-01.md": "9fb5ba154ac96b4a2d4fdef5a6a64be1ea5fac69748952f6f2caa1133d632448",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CURRENT_TRANSPORT_V1_SPEC_2026-11-01.md": "b8b42aa3758336f8be9979bcc3bd75e788fe9725ad97a6dd643976ade669477e",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CURRENT_TRANSPORT_V2_REPORT_2026-11-01.md": "c46e4907d6f84a427372b8ef2e94e58456351fa22b0965920feb52c9424ab16e",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CURRENT_TRANSPORT_V2_SPEC_2026-11-01.md": "d4a88368a7195f5514e9c9fd5d45e625cc70283a177ebd141eb698ef59d767d3",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_DENSITY_TIME_TRANSPORT_V1_REPORT_2026-11-01.md": "2d40a4eee67044354fcea28255fdadb631832739939f5e70e380bd3777c7cffc",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_DENSITY_TIME_TRANSPORT_V1_SPEC_2026-11-01.md": "81057a66bf63ebdb1b8a71fbcc0576e12d2628de7eed630543e91cff099e76b9",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_EVOLUTION_ENTRY_AUXILIARY_V2_REPORT_2026-11-01.md": "3de501f832bcf075963ff80bde0190b4a205a85c115a321a6528dfc8b7c3ac9a",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_EVOLUTION_KERNEL_V2_SPEC_2026-11-01.md": "d153bc6a89ae492201c43f40665c000c9e9bc3656a7403f746d7f72786a0e57e",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_GAUGE_VELOCITY_V1_REPORT_2026-11-01.md": "53994392f89f7d245e35168be9cca006478ed74db55da2e143b883958f385615",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_GAUGE_VELOCITY_V1_SPEC_2026-11-01.md": "aa01b467dc8792100e6a83d594bb3d71a6ac932252a66ec8d12876f0c7432ca3",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_AUDIT_V1_SPEC_2026-11-01.md": "de2c5a4c4dfa40a783cfc4a35db0fae0c0135e19b5e556d4afe7f9e0ba1b75c8",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_AUDIT_V2_SPEC_2026-11-01.md": "2fcb7235d5c9ec86bcda6848f4a0a418b55399a9aed42ea2358527e8b798a217",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_V1_CONTRACT_2026-11-01.md": "437474e8eb2cdbdfa0cdc27c1b5e6d99910c2a8bbacc592a05f7d62d5ca5523f",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_V1_REPORT_2026-11-01.md": "817a46ef0e14ae396470535936b9ea278ca9bf70ecadc9f9761c252ce56cee0a",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INTERVAL_RESIDUAL_V1_CONTRACT_2026-10-31.md": "d4d4a4680208c92e6a8c566aab1c6ee243484d0c6af286e1b49cde1d79ba208a",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_AUDIT_V1_SPEC_2026-11-01.md": "17a120c6829bf1786f2587853fe5915ba152762695a4085ec1f6eb0c90394c90",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V1_CONTRACT_2026-10-31.md": "bfa6c25c2c81f832b8b512503669c60a08551da628c6bf63ae3e4dfd798c7993",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V2_SPEC_2026-10-31.md": "758469c8e60d0e713572b9ff08f6dcbfa20d2e91a0eae4586893be40d3853247",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V3_SPEC_2026-10-31.md": "13154341c191636c1ae6954dad1f11c1e93e49d9a6ee8ad5c8ef41c7ecffa3b5",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V4_REPORT_2026-11-01.md": "9104ead4adf65b317d818738953aea89c4f47cfd15cd4660a4dc08e32235f089",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V4_SPEC_2026-10-31.md": "444be0c6016b12ea65181bf9cade8b46a7d1b31258457329cabfa3736e74cccf",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1_CONTRACT_2026-10-31.md": "802c91fdef2b877ded28c2592fc7890472d0110f33239a5d8271dbec5be2ff34",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V1_CONTRACT_2026-10-31.md": "b7c0ffd139b389387d97d43412f479584fc1a66523c75f5ae10537078f374e41",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NORM_EXTENSION_V1_CONTRACT_2026-10-31.md": "ff35eba4013df3bf2ad7433af8558673628f1993e480c457b91ac68f8f6352ba",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_AUDIT_V1_SPEC_2026-10-31.md": "72f9be12a1caf50c1933013ee32f4b7fab302ed826ec5da96bbf74f98935ee06",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_CONTRACT_2026-10-31.md": "27b0133e8502b052984668025784f872d926878ce25c84d4c92f2d517f3de041",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_SPEC_2026-10-31.md": "02e49fe3b1e40f6d56fff9dc03653f4858e6071d455af9d668ada034d48fa033",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_NUMERICAL_V1_SPEC_2026-10-31.md": "95a17f2c94c43939b1e7895c53c00085c76334c13ca34d7ccfc895243d6705d6",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_OFFGRID_V1_SPEC_2026-10-31.md": "9328ee87398445cca6db348225ad75f48783f1b9be60a7a0962c48cc179a8486",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_PREPARATION_V1_CONTRACT_2026-10-31.md": "b6e75a268a4c7bae71b335bb134faab87f4fc44668af6a75a3c15510c39a5af3",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-10-31.md": "9d91d497f273f93b020e56b4052fb7059a0690dedc24c6510c8e1316d7287072",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-11-01.md": "f958c0f480dd7c929765b659ae1c8a204fe9d8208aec23c76bc27912a4597483",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_EXECUTION_SPEC_2026-10-31.md": "522f6858eee7cb8bf5dd6507708166f28528a30cfb011717dc1b964f355391e4",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_EXECUTION_ADDENDUM_2026-10-31.md": "fe5986536c67d914a7a78c167ae0aae4c8f6a4b5835e59b0b8450b974c6e0427",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_REPORT_2026-10-31.md": "7a571f82d1997e8cbfa068caac7a9f39ec7c4027a6e8c85907e2dec2b8fb19df",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_CAUCHY_V1_CONTRACT_2026-10-31.md": "ac1e04da36667598e573656610d1085c2d11e36ec631e03d774213e141cf344b",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_EVOLUTION_ENTRY_V1_SPEC_2026-11-01.md": "8112d8289d1ff689821af693175fd71e524d3ed31161d57237d9d92e9e0e5058",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_EVOLUTION_V1_CONTRACT_2026-11-01.md": "2fe383568691ea194e669e54d4359f6d16804ca091116755edc6878ce526a178",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_AUDIT_V2_SPEC_2026-11-01.md": "0e1f705eb8683cc6072139e45e59eed91e4c26276752cb024e92a5a32d74fcc7",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V1_CONTRACT_2026-11-01.md": "40ad666716fe34403ef9d9018e37b343b542041565985b2dc3385c350a17162a",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V2_SPEC_2026-11-01.md": "6c21ea7bf8e92cae19c68574002d266d087418b94d8930ff1bf77d9b07fa5fc1",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V3_REPORT_2026-11-01.md": "c5319959105c423b8a98c9f856db0c22a8e6806deaab706a6d376dcdc6f162eb",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V3_SPEC_2026-11-01.md": "bf4a0d15fb63fe45466f6e2c2b918b553a0f700fb69a37c0a732e9fa70ab4f0c",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_AUDIT_V1_SPEC_2026-10-31.md": "65b58151b0b77d83e1cb2be1b1c1656390c9bf672c53d9b59c239ec01e18a313",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_AUDIT_V2_SPEC_2026-10-31.md": "0828526bb1b393262126aa99b5f0cab7cc8b9987177c2fa69f0e655a1100f973",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V1_CONTRACT_2026-10-31.md": "30dae66623e874cfc7c94fcd96943aa337a0b5f12e98e93b4876f49e90d39ddb",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V2_SPEC_2026-10-31.md": "ef771c211494f249fc7781e6fcf2d318844901cf661c4208ce5e6f0a0f1f0e5e",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SPATIAL_GAUGE_V1_CONTRACT_2026-10-31.md": "d3a49e9156cc2208e283599eb9643c78d45ea540760f307e45fe457033f3de2b",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SPATIAL_GAUGE_V1_REPORT_2026-10-31.md": "c35de203060825b70df302879596c0ec89a737f0cd7e036970bc57cac2d23ec0",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SYMPLECTIC_CHARGE_FRAME_V1_CONTRACT_2026-11-01.md": "93a29a14080c460d57f6a475ba345434b9a9f31e26c29bb1dbc434452576100c",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SYMPLECTIC_CHARGE_FRAME_V1_REPORT_2026-11-01.md": "e7f17a1189d50934bc543199b95fbbe90db34041903bd85cb0d523bd6129990d",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_AUDIT_V1_SPEC_2026-10-31.md": "ab2e58f72f7db23569f59928e09c16a03e7ca6a4e78991fc3070c5226c86cf0a",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V1_CONTRACT_2026-10-31.md": "2ab89978ec6482a3ffdd1c5031e84ad5916799e1e322d50a231cb128a732ca72",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V2_SPEC_2026-10-31.md": "bdfe303c537ff3d63252a0b99798979cc2518d2d394c6a12d1e638315dd6a59a",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CANDIDATES_V1_2026-10-31.md": "437fef683248394db20c46a487d55db298c7dd1dbbd3bae76a298a6ac9e5e8c7",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_CONTRACT_2026-10-31.md": "4a590565f2e30306013366c874d5a3c26e3f5bcaf31f45e94ae21c68ead663ad",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_EXECUTION_SPEC_2026-10-31.md": "0e602e5e210bea787c7273ba166dfba01b0aff74872f40f918aa628b4fb8a3c1",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V3_REPORT_2026-10-31.md": "6fda78fa20a13f9ca92415684fb2ddc63e07494c11729897ed8f9107bb660b8c",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V1_CONTRACT_2026-10-31.md": "fc7c50869d0334d43e57acb146d10d89b7e3f85d0e77373c2d57bfd57d32e0e8",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V2_EXECUTION_ADDENDUM_2026-10-31.md": "c1aad8589f60c1473fdb784973baff4f3e08dfa850184287f96ad7245f5feb4e",
+    "Theory/Verification/ITSM_RTAU_PHYSICAL_NORM_HANDOFF_2026-10-31.md": "0ceee3b4a1e20faff898d34aec50c81b6e5e70d9f1917e37bd50c04e6eb6015a",
+    "Theory/Verification/ITSM_RTAU_PHYSICAL_NORM_V1_INPUTS_2026-11-01.json": "9fae15c91e305ebb8063cf3a28bb21568c36bc47a34a66727ed820264ebd1a45",
+    "Theory/Verification/ITSM_RTAU_PREPARED_EVOLUTION_V1_INPUTS_2026-11-01.json": "b6d5105e05792baaf84e9b2f3268d10b8c1086f9142a98f45af9e6972238a0cc"
+  },
+  "site_deployment": "NOT_INCLUDED"
+}

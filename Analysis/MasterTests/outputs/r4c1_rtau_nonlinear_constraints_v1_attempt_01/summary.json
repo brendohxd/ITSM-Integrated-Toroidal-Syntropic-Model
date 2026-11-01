@@ -1,0 +1,240 @@
+{
+  "G1_G6": "INCOMPLETE",
+  "canonical_parent_adopted": false,
+  "checks": [
+    {
+      "name": "positive_clock_branch_satisfies_multiplier",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "nonlinear_lapse_density_coefficient",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "full_lapse_reconstruction",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "nonsingular_positive_lapse_density_patch",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "fresh_all_tilt_shift_block_symmetric",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "aligned_shift_principal_recovered",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "uniform_all_direction_small_tilt_principal_inverse",
+      "passed": true,
+      "value": "5875009/937500000000"
+    },
+    {
+      "name": "uniform_min_singular_value_positive",
+      "passed": true,
+      "value": "20831374997/312500000000"
+    },
+    {
+      "name": "independent_full_physical_shift_Hessian_0_1e-12",
+      "passed": true,
+      "value": "1.7806877553922112490392382474308649361680045561064e-77"
+    },
+    {
+      "name": "independent_full_physical_shift_Hessian_0_1e-18",
+      "passed": true,
+      "value": "1.014907722014134102925945761444760408315200110472e-65"
+    },
+    {
+      "name": "independent_full_physical_shift_Hessian_1_1e-12",
+      "passed": true,
+      "value": "1.8662292446990250180843378204818746562164355317468e-77"
+    },
+    {
+      "name": "independent_full_physical_shift_Hessian_1_1e-18",
+      "passed": true,
+      "value": "9.5879729364830769590242288081886210727893578062365e-66"
+    },
+    {
+      "name": "independent_full_physical_shift_Hessian_2_1e-12",
+      "passed": true,
+      "value": "1.2718619597978996026436935240965204659689784073846e-77"
+    },
+    {
+      "name": "independent_full_physical_shift_Hessian_2_1e-18",
+      "passed": true,
+      "value": "9.4496508136666908189696000491140157809078843927123e-66"
+    },
+    {
+      "name": "inputs_and_sidecars_unchanged",
+      "passed": true,
+      "value": 120
+    }
+  ],
+  "controls": [
+    {
+      "errors": [
+        "1.7806877553922112490392382474308649361680045561064e-77",
+        "1.014907722014134102925945761444760408315200110472e-65"
+      ],
+      "tilt": [
+        "1/1000",
+        "-1/2000",
+        "1/2000"
+      ]
+    },
+    {
+      "errors": [
+        "1.8662292446990250180843378204818746562164355317468e-77",
+        "9.5879729364830769590242288081886210727893578062365e-66"
+      ],
+      "tilt": [
+        "-1/1500",
+        "1/1200",
+        "1/1300"
+      ]
+    },
+    {
+      "errors": [
+        "1.2718619597978996026436935240965204659689784073846e-77",
+        "9.4496508136666908189696000491140157809078843927123e-66"
+      ],
+      "tilt": [
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "dust": {
+    "Euler_flux": "E_N_nonmatter=L_N-d_z(L_Nz); do not omit flux",
+    "epsilon": "E_N_nonmatter/(sqrt(h)*C^4)",
+    "lapse": "N=tau_dot/C on positive timelike-clock branch",
+    "multiplier": "volume*(-C**4*N + C**2*tau_dot**2/N)/2",
+    "rho": "E_N_nonmatter/sqrt(h)"
+  },
+  "full_nonlinear_constraint_solve": "INCOMPLETE",
+  "gate_effect": "NONE",
+  "kind": "R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1",
+  "passed": 15,
+  "physical_window_demonstrated": false,
+  "physics_pass": false,
+  "reduced_coupled_interactions": "INCOMPLETE",
+  "review": "DEFERRED",
+  "shift": {
+    "domain": "physical |V|<=1/500, positive lapse and positive spatial metric; local principal symbol only",
+    "global_periodic_inverse": false,
+    "inertia": [
+      2,
+      1,
+      0
+    ],
+    "minimum_singular_value_bound": "20831374997/312500000000",
+    "orthonormal_N1_principal": [
+      [
+        "(vx**4 + vx**2*vy**2 + 5*vx**2 + 15)/30",
+        "vx*vy*(vx**2 + vy**2 + 5)/30",
+        "vx*vz*(vx**2 + vy**2 + 5)/30"
+      ],
+      [
+        "vx*vy*(vx**2 + vy**2 + 5)/30",
+        "(vx**2*vy**2 + vy**4 + 5*vy**2 + 15)/30",
+        "vy*vz*(vx**2 + vy**2 + 5)/30"
+      ],
+      [
+        "vx*vz*(vx**2 + vy**2 + 5)/30",
+        "vy*vz*(vx**2 + vy**2 + 5)/30",
+        "(vx**2*vz**2 - 2*vx**2 + vy**2*vz**2 - 2*vy**2 + 3*vz**2 - 2)/30"
+      ]
+    ],
+    "perturbation_entry_bounds": [
+      [
+        "625001/937500000000",
+        "625001/937500000000",
+        "625001/937500000000"
+      ],
+      [
+        "625001/937500000000",
+        "625001/937500000000",
+        "625001/937500000000"
+      ],
+      [
+        "625001/937500000000",
+        "625001/937500000000",
+        "291667/312500000000"
+      ]
+    ],
+    "perturbation_norm_bound": "5875009/937500000000",
+    "strong_positive_coercivity": false
+  },
+  "source_sha256": {
+    "Analysis/MasterTests/audit_01_r4c1_rtau_norm_extension_v1.py": "5bc1af961699f188c68e84ce4e84e8e0d0d0a1d603ccb6e683795217df335f11",
+    "Analysis/MasterTests/dust_certified_arithmetic_v1.py": "f868032dcd939a52c3299ac66d5f4c18d02c5681bac7391bcce67732bc026599",
+    "Analysis/MasterTests/outputs/r4c1_b1_alignment_domain_v1_attempt_01/summary.json": "5ce2ecbf65f1a1b1d3f0e38dc6a02413a9bcefa36a1e93e24b9aeb090e36be1b",
+    "Analysis/MasterTests/outputs/r4c1_b1_dust_reconstruction_v1_attempt_01/summary.json": "7f4134defc9dd25b6a831d154f195a308a17b8d3ee01c29643a764b088c51e4a",
+    "Analysis/MasterTests/outputs/r4c1_b1_kinetic_drift_v1_attempt_01/summary.json": "e66aaa83814afb726ace2bbaf1543591ba6502c37440be4430aca2ad7375c3cb",
+    "Analysis/MasterTests/outputs/r4c1_b1_propagator_v1_attempt_01/summary.json": "93c5d85618d4546b61b6a74961d04d93da35e2ad95dc20d3b57b4ce4e38dce10",
+    "Analysis/MasterTests/outputs/r4c1_b1_reduced_kinetic_v1_attempt_01/summary.json": "829b013edc716cb2a7c9a2a4161bf2830186b0d68673b8b57e3928deb5a1d53a",
+    "Analysis/MasterTests/outputs/r4c1_rtau_interactions_input_v1_attempt_01/summary.json": "f06bfc8926b24f874c01ee000f0b34b71cf69906b4fc00278ed650c8640841d0",
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_regulator_v2_attempt_01/summary.json": "ebf0bb4708ca1167bbbf4f3049ee8d418bfb76b0e992686ed6b85bca923f3d46",
+    "Analysis/MasterTests/outputs/r4c1_rtau_norm_extension_v1_attempt_01/summary.json": "0b2c3d34b6cb19da0701ab10497b554f4fcdf6e8c494b1b5bbf8da611fc2f1ad",
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v1_attempt_01/summary.json": "68cd6d2bc808ff9a5c4c3f1bd56bbdcebd3e950ff6791020019107add7b5586e",
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v2_attempt_01/summary.json": "2a4e72ceef0a7681c8ee3fc38028d9dcb86b2ebd9999af6b0bdb58b0a3e80533",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_characteristics_v3_attempt_01/summary.json": "acc0558461b0e7882edc6e59baae4d9b2d886fb33882bd0bc5928834a1a57515",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v1_attempt_01/summary.json": "664a8d310222c09751c9e6039dda3656423c7000480fd097a34a6242602a7c4c",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v2_attempt_01/summary.json": "964c24a88923a3326902eb8f5b37fa23a0f3ab6ee8964c60406e52211ea52f91",
+    "Analysis/MasterTests/r4c1_full_weak_action_v1.py": "330f25196806450238a71459873a3353036fac4ef15cab53da665ecbaa501105",
+    "Analysis/MasterTests/r4c1_two_repair_actions_v1.py": "f4da18c7722f71b2897bd5bedbbc0992ba3c58c94c7ca3b234525f1a672084cb",
+    "Analysis/MasterTests/r4c1_two_repair_actions_v2.py": "bdb68b4f2db7437247f6ea059e3acf6471f2c986f764a34cfc70c968fcff8314",
+    "Analysis/MasterTests/r4c1_two_repair_quadratic_v2.py": "cd58599bfe4004072ae2d5d7d2fa5cabd600b13f8e60d7301dba78b77c3932bd",
+    "Analysis/MasterTests/test_01_r4c1_b1_alignment_domain_v1.py": "d374c63e609815a7c42e1f3ac261f7f0be6dfe110457c7181cb98a7eb1a4b535",
+    "Analysis/MasterTests/test_01_r4c1_b1_dust_reconstruction_v1.py": "a6ac2849dea663c0dfbdfdce0792b25b8684ec71ad1e060c41b195021dcd2030",
+    "Analysis/MasterTests/test_01_r4c1_b1_kinetic_drift_v1.py": "56badde0e458b848287a35605a11da792b7ab9339b844c34a83d907403e9639a",
+    "Analysis/MasterTests/test_01_r4c1_b1_propagator_v1.py": "cca11ea1565a5dc2740718c4d47e3f420d9e30301d64b19e0f5e9466339cc21e",
+    "Analysis/MasterTests/test_01_r4c1_b1_reduced_kinetic_v1.py": "0bd93464a813a1825526987a2c81c55c2c964691c173d555786077fedfc08625",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v3.py": "b887c7a52102b7abb43a2875cb6e01607ecb46d39a95f4abb4cefab9795a73c0",
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_constraints_v1.py": "2cc356773e003a5d4ec8532a49e697279c3aac2eb9e1e1bc31584bea4c731aa4",
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_regulator_v2.py": "3f1a24062cbb0d4ca75b3188aaea7b8b92d92cb208d4083b79052acaeb56a561",
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v1.py": "334a152c2a7ee0a9f23bff28c36ee626676d3bacbfb4a6a1bcfa64cfb31a0bca",
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v2.py": "326dd85d3ec093959f16af71c0dc250ca82fb44307f72aa496c5106861111955",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_characteristics_v3.py": "98b9ecf5e030715f8106d197c89d9ae981950accfeb987ae7c20b261dbf65958",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v1.py": "ec6395f6f8e82452982a823cfb76375899b663b90db6782247c33996ac6e304e",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v2.py": "bab911efd631ed06213888c6758927836050b49b338089e3f45ed3439f00e6c4",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_CONTRACT_2026-10-29.md": "a58bff722582afff4a93465e3d91d695c445e2128f24441a592423b8d8da49fb",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_CONTRACT_2026-10-29.md": "254ac814874de1d31678dc4bdce14439dce397b82f7a4a21e2a6c4e1b39ff35d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_REPORT_2026-10-29.md": "60e19751ae396d19e10d557ed22a764f12a8ab43b5d0504a73fba6e560a7f18c",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md": "82708666dfce4ef214b614bc7da31b294d7569539b97292aaa9a79e906e6266f",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_CONTRACT_2026-10-29.md": "3ff304c9a08a78233c9feaca192b940e363c408de668df9b0efe6d49adbc9a1d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_REPORT_2026-10-29.md": "0398721b04b6d47633e07e65e8de155a0a35bae250ba57893bc75e7348ac6228",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_CONTRACT_2026-10-29.md": "e2c08f14d79fc17bc3ca08c09baab7a42608a0d9565198339d2214764288c467",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md": "b1c14df414f27ffeb9458fd5e1234943c459f2bb9dabac55fda0b442f8826c94",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_CONTRACT_2026-10-29.md": "9af0554e67970d046cbd9ba22298ae9840150c040db2b607f760c423f5de921d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_REPORT_2026-10-29.md": "096db5aec89c60837408dbf0eddc3593436e4a3a2125c955e94cdbc35eb2bf66",
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md": "8c4496eacdb0d2447445e4a1949b683e033f042a7332c659701e2273d2bf23ea",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_INTERACTIONS_V1_CONTRACT_2026-10-31.md": "7d9cb53a2dea8a5a3ea5f918d6aae702bbb9248388ac11c3fcff4f64cdb3be7d",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1_CONTRACT_2026-10-31.md": "802c91fdef2b877ded28c2592fc7890472d0110f33239a5d8271dbec5be2ff34",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V1_CONTRACT_2026-10-31.md": "b7c0ffd139b389387d97d43412f479584fc1a66523c75f5ae10537078f374e41",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NORM_EXTENSION_V1_CONTRACT_2026-10-31.md": "ff35eba4013df3bf2ad7433af8558673628f1993e480c457b91ac68f8f6352ba",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-10-31.md": "9d91d497f273f93b020e56b4052fb7059a0690dedc24c6510c8e1316d7287072",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_EXECUTION_SPEC_2026-10-31.md": "522f6858eee7cb8bf5dd6507708166f28528a30cfb011717dc1b964f355391e4",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_EXECUTION_ADDENDUM_2026-10-31.md": "fe5986536c67d914a7a78c167ae0aae4c8f6a4b5835e59b0b8450b974c6e0427",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_REPORT_2026-10-31.md": "7a571f82d1997e8cbfa068caac7a9f39ec7c4027a6e8c85907e2dec2b8fb19df",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CANDIDATES_V1_2026-10-31.md": "437fef683248394db20c46a487d55db298c7dd1dbbd3bae76a298a6ac9e5e8c7",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_CONTRACT_2026-10-31.md": "4a590565f2e30306013366c874d5a3c26e3f5bcaf31f45e94ae21c68ead663ad",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_EXECUTION_SPEC_2026-10-31.md": "0e602e5e210bea787c7273ba166dfba01b0aff74872f40f918aa628b4fb8a3c1",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V3_REPORT_2026-10-31.md": "6fda78fa20a13f9ca92415684fb2ddc63e07494c11729897ed8f9107bb660b8c",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V1_CONTRACT_2026-10-31.md": "fc7c50869d0334d43e57acb146d10d89b7e3f85d0e77373c2d57bfd57d32e0e8",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V2_EXECUTION_ADDENDUM_2026-10-31.md": "c1aad8589f60c1473fdb784973baff4f3e08dfa850184287f96ad7245f5feb4e",
+    "Theory/Verification/ITSM_RTAU_PHYSICAL_NORM_HANDOFF_2026-10-31.md": "0ceee3b4a1e20faff898d34aec50c81b6e5e70d9f1917e37bd50c04e6eb6015a"
+  },
+  "total": 15
+}

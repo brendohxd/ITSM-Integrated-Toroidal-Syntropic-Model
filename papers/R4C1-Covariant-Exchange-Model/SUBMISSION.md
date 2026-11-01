@@ -36,3 +36,12 @@
 - healthy continuous GR limit for physical finite-density perturbations;
 - action-to-observable map for H(z), Geff, slip, BBN, lensing, and galaxies;
 - microscopic/renormalized state and thermodynamic closure.
+
+
+## Solo-author correction - 30 October 2026
+
+Current candidate: v0.1.2-conditional-draft. Unsupported acknowledgment and
+unconfirmed author-review assertion removed; scientific body unchanged.
+The v0.1.1 review package remains historical and is not a new independent
+review of this revision. Author cold read, AI-use declaration confirmation,
+applicable independent review and explicit upload authority remain pending.

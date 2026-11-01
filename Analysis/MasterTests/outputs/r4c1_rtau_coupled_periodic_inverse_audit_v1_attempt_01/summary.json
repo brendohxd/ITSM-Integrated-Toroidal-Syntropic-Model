@@ -1,0 +1,371 @@
+{
+  "background_transverse_momentum_derivative_bounds": [
+    [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        561229140302490463598360392434520132546461584049559,
+        -186,
+        169
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        35189014953079258050777853428638930308216651727165,
+        -182,
+        165
+      ]
+    ]
+  ],
+  "checks": [
+    {
+      "name": "parent_all_checks_pass",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "green_nonzero_modes_uniform_without_truncation",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "negative_mean_block_invertible_and_retained",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "raw_endpoint_neumann_contraction",
+      "passed": true,
+      "value": "0.5342232862985517184115475560707074810936"
+    },
+    {
+      "name": "raw_endpoint_inverse_norm_matches_parent",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "all_three_momentum_H1_bounds_finite",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "coupled_H2_plus_H1_inverse_bound_finite",
+      "passed": true,
+      "value": "41.66169583313488268748820864560282140491"
+    },
+    {
+      "name": "weighted_compatibility_integrand_exact",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "tensor_cross_example_not_spatial_gauge",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "range_not_replaced_by_all_source_data",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "current_and_scalar_density_not_conflated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "all_source_bytes_and_mtimes_preserved",
+      "passed": true,
+      "value": 302
+    }
+  ],
+  "data_norm": "D=||assembled_current_source||L2+sum(||momentum_source_i||L2+|retained_momentum_mean_i|); transverse source means zero and solved longitudinal compatibility retained",
+  "full_H2_H1_per_D": [
+    [
+      0,
+      60888404288791253857655704866868160585424718276135,
+      -160,
+      166
+    ],
+    [
+      0,
+      487109093392869492944524845352578804603169014604113,
+      -163,
+      169
+    ]
+  ],
+  "gate_effect": "NONE",
+  "kind": "R4C1_RTAU_COUPLED_PERIODIC_INVERSE_AUDIT_V1",
+  "momentum_H1_per_D": [
+    [
+      [
+        0,
+        561476775399689693581448875907858781509613399120373,
+        -167,
+        169
+      ],
+      [
+        0,
+        561491624312781362214471273015044628439130657532603,
+        -167,
+        169
+      ]
+    ],
+    [
+      [
+        0,
+        561507331556282557489585474427017140969049021633787,
+        -167,
+        169
+      ],
+      [
+        0,
+        561522227963822282189030380001967612755872057542003,
+        -167,
+        169
+      ]
+    ],
+    [
+      [
+        0,
+        509469230567001740854415205833728566425232598078311,
+        -164,
+        169
+      ],
+      [
+        0,
+        509469230567001740854415205833728566425232598078319,
+        -164,
+        169
+      ]
+    ]
+  ],
+  "momentum_L2_per_D": [
+    [
+      [
+        0,
+        374306469214248064769144758036356599024434722468003,
+        -167,
+        169
+      ],
+      [
+        0,
+        93576617303562016192286189509089149756108680617001,
+        -165,
+        167
+      ]
+    ],
+    [
+      [
+        0,
+        374330910379574464624074265471785601931910144575159,
+        -167,
+        169
+      ],
+      [
+        0,
+        46791363797446808078009283183973200241488768071895,
+        -164,
+        166
+      ]
+    ],
+    [
+      [
+        0,
+        341001921830155940110577954705492379259038922665787,
+        -164,
+        168
+      ],
+      [
+        0,
+        682003843660311880221155909410984758518077845331581,
+        -165,
+        169
+      ]
+    ]
+  ],
+  "passed": 12,
+  "physics_pass": false,
+  "review": "DEFERRED",
+  "scope": "initial projected inverse and exact compatible range; physical scalar-density measure relation and charge completion are separate explicit formulas",
+  "source_sha256": {
+    "Analysis/MasterTests/audit_01_r4c1_rtau_coupled_periodic_inverse_v1.py": "56f7b0eac4a395fa6653694f057a470375beb2a2d8600443ec5100bdab24fed5",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_norm_extension_v1.py": "5bc1af961699f188c68e84ce4e84e8e0d0d0a1d603ccb6e683795217df335f11",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_principal_v1.py": "36859de5274219d63122cb140e0520aa196bbec899f82634a2bb8ad8b24aec6e",
+    "Analysis/MasterTests/audit_01_r4c1_rtau_prepared_principal_v2.py": "ad754096fd896b079369d2ae2c0cadf772b4cb63b2fefd3b0fe357cf9d53a5a7",
+    "Analysis/MasterTests/dust_certified_arithmetic_v1.py": "f868032dcd939a52c3299ac66d5f4c18d02c5681bac7391bcce67732bc026599",
+    "Analysis/MasterTests/outputs/r4c1_b1_alignment_domain_v1_attempt_01/summary.json": "5ce2ecbf65f1a1b1d3f0e38dc6a02413a9bcefa36a1e93e24b9aeb090e36be1b",
+    "Analysis/MasterTests/outputs/r4c1_b1_dust_reconstruction_v1_attempt_01/summary.json": "7f4134defc9dd25b6a831d154f195a308a17b8d3ee01c29643a764b088c51e4a",
+    "Analysis/MasterTests/outputs/r4c1_b1_kinetic_drift_v1_attempt_01/summary.json": "e66aaa83814afb726ace2bbaf1543591ba6502c37440be4430aca2ad7375c3cb",
+    "Analysis/MasterTests/outputs/r4c1_b1_propagator_v1_attempt_01/summary.json": "93c5d85618d4546b61b6a74961d04d93da35e2ad95dc20d3b57b4ce4e38dce10",
+    "Analysis/MasterTests/outputs/r4c1_b1_reduced_kinetic_v1_attempt_01/summary.json": "829b013edc716cb2a7c9a2a4161bf2830186b0d68673b8b57e3928deb5a1d53a",
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_density_graph_v1_attempt_01/failure.json": "3b4efa47d63b8083cd70ffea01e520ccbbb727f057e977da21c5978f6ca6eec1",
+    "Analysis/MasterTests/outputs/r4c1_rtau_canonical_density_graph_v2_attempt_01/summary.json": "0cb96db2f86ead50721f7e0bb87aacfa262c189b905f0fbd46677ed47acfcf1c",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v1_attempt_01/failure.json": "daac5be68b0a85bd4ac28dc1b0c4655b35bd673dee37bf307cb0be5c0cfc2892",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v2_attempt_01/failure.json": "9ce22e314658d476486424b28ff7e566dad037d935ab548fcecff69071119f5b",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_density_v3_attempt_01/summary.json": "9bec36b8aaa37c511779cd420e5b351203f8c9be787e6b0d1593230215a786b3",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_flux_v1_attempt_01/summary.json": "471748908020df864be786a073a29b5e5dd94a187456ed6686b9d0a5996ead4a",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_identity_v1_attempt_01/failure.json": "5ffcd2c37f3368606c2632ea445da6cc3e76c26b6fc7ef9498fc3bf3e9a5d08f",
+    "Analysis/MasterTests/outputs/r4c1_rtau_clock_identity_v2_attempt_01/summary.json": "fa72a504e953901fb132483638a33cf97dc2c81ba9e87664bc208012046b8559",
+    "Analysis/MasterTests/outputs/r4c1_rtau_coupled_periodic_inverse_v1_attempt_01/summary.json": "b97ac2036d5e3ae02776443caaf2ece057268fdfdab04f885c5eb24cc1507157",
+    "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_v1_attempt_01/summary.json": "dbcdacf8954e1cc59a2ebc42b91cd77f7a8e3473c2c54906b1f94e506455154d",
+    "Analysis/MasterTests/outputs/r4c1_rtau_interactions_input_v1_attempt_01/summary.json": "f06bfc8926b24f874c01ee000f0b34b71cf69906b4fc00278ed650c8640841d0",
+    "Analysis/MasterTests/outputs/r4c1_rtau_interval_residual_v3_attempt_01/summary.json": "d116cbb8c71241c4e3c85c1b260f082f5e30306dbf51243d26e446e36e797484",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v1_attempt_01/failure.json": "2bebfa1b0597b7b7a1ca5e3be283d1d73c37f39d4a6aac55c176262cd3e8aa6f",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v2_attempt_01/failure.json": "572a21aabd23505aaab0dbf8121abca97455020441159001776975b8510232fe",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v3_attempt_01/failure.json": "65683593dcf9bb7af6d2e78bb5783f84a4508babc7a2f7efd757b95f2e36469c",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v4_attempt_01/summary.json": "d916402a0751fa4a0409d2048ed4e38ea18dd9b5629836f6a3517fdd44e0b577",
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_constraints_v1_attempt_01/summary.json": "202ead4f7fd5d26d3eae4ec1ccc05798f2b8ef646eb7468a1a09103e3c13a987",
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_regulator_v2_attempt_01/summary.json": "ebf0bb4708ca1167bbbf4f3049ee8d418bfb76b0e992686ed6b85bca923f3d46",
+    "Analysis/MasterTests/outputs/r4c1_rtau_norm_extension_v1_attempt_01/summary.json": "0b2c3d34b6cb19da0701ab10497b554f4fcdf6e8c494b1b5bbf8da611fc2f1ad",
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_inverse_v1_attempt_01/summary.json": "9c22269a9e40c331fd9c72ad72e44e9f67705524193293e2a11adc9f131827b9",
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_numerical_v1_attempt_01/summary.json": "58fc8db6b8d10ee57f2974e0415685ded3cfe9e80745044b19b551b7827c0d60",
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v1_attempt_01/summary.json": "68cd6d2bc808ff9a5c4c3f1bd56bbdcebd3e950ff6791020019107add7b5586e",
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v2_attempt_01/summary.json": "2a4e72ceef0a7681c8ee3fc38028d9dcb86b2ebd9999af6b0bdb58b0a3e80533",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_audit_v1_attempt_01/summary.json": "6cb5d0a1cd9f1dd55563ded1cf89d2c045e2e2f49984d4b816d551c932226a55",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_audit_v2_attempt_01/summary.json": "d168acacc483ed9026fab18b80702675b92349b0c68d92388bcf05f020bae345",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v1_attempt_01/summary.json": "5a541fe7f9db0d8cde44141868f0b3923161503866588d9200fe9780ba90ed82",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v2_attempt_01/summary.json": "355914fa63e0f48e96c72fa216feaa2e0ee06f1331d3d3115d49694c481c123c",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_principal_v3_attempt_01/summary.json": "9689901a50cf2a41f51dea63ce8bbf5f01b8a5fccdab92337d23a6ff7636f152",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v1_attempt_01/summary.json": "9e47bb10e944fe61323a9eaeae8097f5d6ef23992ceb59a7d0a44006ea225fac",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v2_attempt_01/summary.json": "aba30848eed3be2d4cb3f0122899ea0394aafcf93b6ebd4d91ecfb3b63f6ac93",
+    "Analysis/MasterTests/outputs/r4c1_rtau_spatial_gauge_v1_attempt_01/summary.json": "449ce6a63c04a479fb8fc79cee62806ba5072d8dacac99f8614e9ab96e9ce014",
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v1_attempt_01/summary.json": "6bd06446ad71093eb547424b39072e0a4b1972becae8204cdaedb5bd3d01cd39",
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v2_attempt_01/summary.json": "f4efb6bc588528aa6287fa2cca2a8020f581fddc0564e0336b9e8bf52906a814",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_characteristics_v3_attempt_01/summary.json": "acc0558461b0e7882edc6e59baae4d9b2d886fb33882bd0bc5928834a1a57515",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v1_attempt_01/summary.json": "664a8d310222c09751c9e6039dda3656423c7000480fd097a34a6242602a7c4c",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v2_attempt_01/summary.json": "964c24a88923a3326902eb8f5b37fa23a0f3ab6ee8964c60406e52211ea52f91",
+    "Analysis/MasterTests/r4c1_canonical_density_factory_v1.py": "f943af8bf733eafc2507852ccbe99725e4a2e28a9afa7775c364fb8624488a04",
+    "Analysis/MasterTests/r4c1_clock_density_operator_factory_v1.py": "9a7f01a9909706cbb1ac622bfd89e3205e15e82a7dfed10ef35bb9d456f434cf",
+    "Analysis/MasterTests/r4c1_full_weak_action_v1.py": "330f25196806450238a71459873a3353036fac4ef15cab53da665ecbaa501105",
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v3.py": "2d81bdd8c3b4a85dcfa917724e5ad6931dad19e44c7414957cc9327cbfcc1fa4",
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v4.py": "daab54788cf70dbe99187cbfc1c2e7a76946edc39529632783a352e5f63e5ff1",
+    "Analysis/MasterTests/r4c1_prepared_operator_factory_v1.py": "443776ef3f3fa65954fbe011afda082baf0784afb7a2d17805710f1ef0bb8945",
+    "Analysis/MasterTests/r4c1_prepared_operator_factory_v2.py": "79e79f412c9c78f613bb073fdcd47acbeb73be99e0f0a632676109c13f541d48",
+    "Analysis/MasterTests/r4c1_second_variation_jet_v1.py": "d78cdd4f9659468ab3cf8d4f4f67ee00f5f3096d6742c348ab6d850e6ed40e87",
+    "Analysis/MasterTests/r4c1_two_repair_actions_v1.py": "f4da18c7722f71b2897bd5bedbbc0992ba3c58c94c7ca3b234525f1a672084cb",
+    "Analysis/MasterTests/r4c1_two_repair_actions_v2.py": "bdb68b4f2db7437247f6ea059e3acf6471f2c986f764a34cfc70c968fcff8314",
+    "Analysis/MasterTests/r4c1_two_repair_quadratic_v2.py": "cd58599bfe4004072ae2d5d7d2fa5cabd600b13f8e60d7301dba78b77c3932bd",
+    "Analysis/MasterTests/test_01_r4c1_b1_alignment_domain_v1.py": "d374c63e609815a7c42e1f3ac261f7f0be6dfe110457c7181cb98a7eb1a4b535",
+    "Analysis/MasterTests/test_01_r4c1_b1_dust_reconstruction_v1.py": "a6ac2849dea663c0dfbdfdce0792b25b8684ec71ad1e060c41b195021dcd2030",
+    "Analysis/MasterTests/test_01_r4c1_b1_kinetic_drift_v1.py": "56badde0e458b848287a35605a11da792b7ab9339b844c34a83d907403e9639a",
+    "Analysis/MasterTests/test_01_r4c1_b1_propagator_v1.py": "cca11ea1565a5dc2740718c4d47e3f420d9e30301d64b19e0f5e9466339cc21e",
+    "Analysis/MasterTests/test_01_r4c1_b1_reduced_kinetic_v1.py": "0bd93464a813a1825526987a2c81c55c2c964691c173d555786077fedfc08625",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v3.py": "b887c7a52102b7abb43a2875cb6e01607ecb46d39a95f4abb4cefab9795a73c0",
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_density_graph_v1.py": "04a75d1ad0c7217e64c9f769ec04782a8b1dde7d66a5e2dbca6addde5b0fee09",
+    "Analysis/MasterTests/test_01_r4c1_rtau_canonical_density_graph_v2.py": "ef221d3dd74187430dde37561c34cf41f29218c3ac4ee7cb4fe82ce4edcf3cf2",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v1.py": "3c2ae67f8122390d58dce5e368d9bdcc1a02c663bdd236668a27a87babd783d6",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v2.py": "070c318f1e3531357065f5c84a0acd0a6d6f931e99cd021b21d3877b070c88cb",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_density_v3.py": "13bba602ba6ead35b9d38513afb6a8643e378cc2d9a40a5ba6cff551796ebe62",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_flux_v1.py": "29a60792bcd77255c2dff4ae04a2cee5e12e8f73e2045b00a6c5f069e2f99c6c",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_identity_v1.py": "e13135f1848769975ffbf94a0167b0556aec77084a2b2bc6ccbf84dc2fd11568",
+    "Analysis/MasterTests/test_01_r4c1_rtau_clock_identity_v2.py": "3fd337e1dfca255d0291207aa9c00fa03af044a07a296306c478bc5b244126e6",
+    "Analysis/MasterTests/test_01_r4c1_rtau_coupled_periodic_inverse_v1.py": "e597b8f93715680f1d695a884ec485e76a892e5786dc88ba4edb6db34567df23",
+    "Analysis/MasterTests/test_01_r4c1_rtau_initial_acceleration_v1.py": "9e4de2bae4078f3d5b95e5dbf46d63cc07fddb2440be9ddeb4c393995fc502cb",
+    "Analysis/MasterTests/test_01_r4c1_rtau_interval_residual_v3.py": "718f3c1081c3b4295aaf9cc438b386e4f4ef768376d68eb8bd6eb8976a58f761",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v1.py": "cf63a28095e3b8d21cf0f8f920a722b3b6b5edc5465b5c4509a78843e09d138f",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v2.py": "51efe5f9012a15494501a0e9858f58afafc9f08cb795d36e0c4429c2b5720a43",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v3.py": "112e92df85084aa31483f48cefb82c36f34aa20ae3433c38c73a025fe5a3ea7e",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v4.py": "7ee68ba495b65de27871c8511a32feb351a95facfd13c13e726695b96c4aae3e",
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_constraints_v1.py": "2cc356773e003a5d4ec8532a49e697279c3aac2eb9e1e1bc31584bea4c731aa4",
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_regulator_v2.py": "3f1a24062cbb0d4ca75b3188aaea7b8b92d92cb208d4083b79052acaeb56a561",
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_inverse_v1.py": "f01cf514688dadde23beadca1d0fccaa6710bb3ab27529996c342a30be795eb7",
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_numerical_v1.py": "40a356d574b882d410d4809dbeace8e4e789d23aa864d5503246fd1e8f0d2fe5",
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v1.py": "334a152c2a7ee0a9f23bff28c36ee626676d3bacbfb4a6a1bcfa64cfb31a0bca",
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v2.py": "326dd85d3ec093959f16af71c0dc250ca82fb44307f72aa496c5106861111955",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v1.py": "a9be8e7817e80f37a160533823d0ecc24a82352cca36128c4aa9c4e3dde0d9ed",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v2.py": "fafc8815391dea254068f51e44a7dfe6da9ec7c30d9e6b64699191f48cc268d3",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_principal_v3.py": "8002335433d1705fb1ba7ef7dcabedf2ef822a4626751f8d1049ae530e0c2f7a",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_temporal_v1.py": "d7c6b9144128727546df11c84052eec842f689b74a3a55bae3dc488dc57a5a33",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_temporal_v2.py": "77dce6e8bee8a6f23617dedf0960c4703c61c2436c2513fdd135e8e6578af841",
+    "Analysis/MasterTests/test_01_r4c1_rtau_spatial_gauge_v1.py": "bd34d5f7f8ae481ad7cf48446fd071e3fe44c17513c69c7f3a3c7743356e7d39",
+    "Analysis/MasterTests/test_01_r4c1_rtau_velocity_tangent_v1.py": "0badedd4c4206a6ffcdb2805e13a39b5d12f946ba3fc4d2756bd814e954cacc9",
+    "Analysis/MasterTests/test_01_r4c1_rtau_velocity_tangent_v2.py": "8c60a7f6fd1c7efe12b451f2560388b1ef35cd79de62c62f96e6900ba128b471",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_characteristics_v3.py": "98b9ecf5e030715f8106d197c89d9ae981950accfeb987ae7c20b261dbf65958",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v1.py": "ec6395f6f8e82452982a823cfb76375899b663b90db6782247c33996ac6e304e",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v2.py": "bab911efd631ed06213888c6758927836050b49b338089e3f45ed3439f00e6c4",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_CONTRACT_2026-10-29.md": "a58bff722582afff4a93465e3d91d695c445e2128f24441a592423b8d8da49fb",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_CONTRACT_2026-10-29.md": "254ac814874de1d31678dc4bdce14439dce397b82f7a4a21e2a6c4e1b39ff35d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_REPORT_2026-10-29.md": "60e19751ae396d19e10d557ed22a764f12a8ab43b5d0504a73fba6e560a7f18c",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md": "82708666dfce4ef214b614bc7da31b294d7569539b97292aaa9a79e906e6266f",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_CONTRACT_2026-10-29.md": "3ff304c9a08a78233c9feaca192b940e363c408de668df9b0efe6d49adbc9a1d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_REPORT_2026-10-29.md": "0398721b04b6d47633e07e65e8de155a0a35bae250ba57893bc75e7348ac6228",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_CONTRACT_2026-10-29.md": "e2c08f14d79fc17bc3ca08c09baab7a42608a0d9565198339d2214764288c467",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md": "b1c14df414f27ffeb9458fd5e1234943c459f2bb9dabac55fda0b442f8826c94",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_CONTRACT_2026-10-29.md": "9af0554e67970d046cbd9ba22298ae9840150c040db2b607f760c423f5de921d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_REPORT_2026-10-29.md": "096db5aec89c60837408dbf0eddc3593436e4a3a2125c955e94cdbc35eb2bf66",
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md": "8c4496eacdb0d2447445e4a1949b683e033f042a7332c659701e2273d2bf23ea",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V1_CONTRACT_2026-11-01.md": "8afffa139267466815cf62defb54807b892b6a76659c7d886fa3d85f1da4c87f",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CANONICAL_DENSITY_GRAPH_V2_SPEC_2026-11-01.md": "9b2dd205f3e8c1f1ea50254bc4e34cfeca647eae2189af1ec19f82c31b604401",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V1_CONTRACT_2026-11-01.md": "5bac3aff9a0525ab2f2484bb290a65e79cd36e628e94b777c6b06f791a15c271",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V2_SPEC_2026-11-01.md": "33f9d843312bb4967895bb20980fce6f2a934ede1f54d3a01bae9dcf561d4410",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_DENSITY_V3_SPEC_2026-11-01.md": "d2991269e5bc8edb77a2847f8373c04bb8dba8efac591008b3b6be781758f2a0",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_FLUX_V1_CONTRACT_2026-11-01.md": "2c629d7b23c0bed0aeea3082ba3439297c4bd3e816fb6ff02cfab10e21a8e55e",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V1_CONTRACT_2026-11-01.md": "09d6c6eae4c71b8781394889971e98ebe0efe4340d041aa5ab877fcb487fc2fa",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_CLOCK_IDENTITY_V2_SPEC_2026-11-01.md": "920f43b533ca6c8cd1f0084bb798e13d41d43225806580595510b9933be2eef2",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_INTERACTIONS_V1_CONTRACT_2026-10-31.md": "7d9cb53a2dea8a5a3ea5f918d6aae702bbb9248388ac11c3fcff4f64cdb3be7d",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_PERIODIC_INVERSE_V1_CONTRACT_2026-11-01.md": "7d1eb88232766281bcb76d3ec458b4964eba64ca55c66ca86f8f0a677002bc82",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_V1_CONTRACT_2026-11-01.md": "437474e8eb2cdbdfa0cdc27c1b5e6d99910c2a8bbacc592a05f7d62d5ca5523f",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INTERVAL_RESIDUAL_V1_CONTRACT_2026-10-31.md": "d4d4a4680208c92e6a8c566aab1c6ee243484d0c6af286e1b49cde1d79ba208a",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V1_CONTRACT_2026-10-31.md": "bfa6c25c2c81f832b8b512503669c60a08551da628c6bf63ae3e4dfd798c7993",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V2_SPEC_2026-10-31.md": "758469c8e60d0e713572b9ff08f6dcbfa20d2e91a0eae4586893be40d3853247",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V3_SPEC_2026-10-31.md": "13154341c191636c1ae6954dad1f11c1e93e49d9a6ee8ad5c8ef41c7ecffa3b5",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V4_SPEC_2026-10-31.md": "444be0c6016b12ea65181bf9cade8b46a7d1b31258457329cabfa3736e74cccf",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1_CONTRACT_2026-10-31.md": "802c91fdef2b877ded28c2592fc7890472d0110f33239a5d8271dbec5be2ff34",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V1_CONTRACT_2026-10-31.md": "b7c0ffd139b389387d97d43412f479584fc1a66523c75f5ae10537078f374e41",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NORM_EXTENSION_V1_CONTRACT_2026-10-31.md": "ff35eba4013df3bf2ad7433af8558673628f1993e480c457b91ac68f8f6352ba",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_CONTRACT_2026-10-31.md": "27b0133e8502b052984668025784f872d926878ce25c84d4c92f2d517f3de041",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_SPEC_2026-10-31.md": "02e49fe3b1e40f6d56fff9dc03653f4858e6071d455af9d668ada034d48fa033",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_NUMERICAL_V1_SPEC_2026-10-31.md": "95a17f2c94c43939b1e7895c53c00085c76334c13ca34d7ccfc895243d6705d6",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_PREPARATION_V1_CONTRACT_2026-10-31.md": "b6e75a268a4c7bae71b335bb134faab87f4fc44668af6a75a3c15510c39a5af3",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-10-31.md": "9d91d497f273f93b020e56b4052fb7059a0690dedc24c6510c8e1316d7287072",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_EXECUTION_SPEC_2026-10-31.md": "522f6858eee7cb8bf5dd6507708166f28528a30cfb011717dc1b964f355391e4",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_EXECUTION_ADDENDUM_2026-10-31.md": "fe5986536c67d914a7a78c167ae0aae4c8f6a4b5835e59b0b8450b974c6e0427",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_REPORT_2026-10-31.md": "7a571f82d1997e8cbfa068caac7a9f39ec7c4027a6e8c85907e2dec2b8fb19df",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_AUDIT_V2_SPEC_2026-11-01.md": "0e1f705eb8683cc6072139e45e59eed91e4c26276752cb024e92a5a32d74fcc7",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V1_CONTRACT_2026-11-01.md": "40ad666716fe34403ef9d9018e37b343b542041565985b2dc3385c350a17162a",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V2_SPEC_2026-11-01.md": "6c21ea7bf8e92cae19c68574002d266d087418b94d8930ff1bf77d9b07fa5fc1",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_PRINCIPAL_V3_SPEC_2026-11-01.md": "bf4a0d15fb63fe45466f6e2c2b918b553a0f700fb69a37c0a732e9fa70ab4f0c",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V1_CONTRACT_2026-10-31.md": "30dae66623e874cfc7c94fcd96943aa337a0b5f12e98e93b4876f49e90d39ddb",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V2_SPEC_2026-10-31.md": "ef771c211494f249fc7781e6fcf2d318844901cf661c4208ce5e6f0a0f1f0e5e",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SPATIAL_GAUGE_V1_CONTRACT_2026-10-31.md": "d3a49e9156cc2208e283599eb9643c78d45ea540760f307e45fe457033f3de2b",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V1_CONTRACT_2026-10-31.md": "2ab89978ec6482a3ffdd1c5031e84ad5916799e1e322d50a231cb128a732ca72",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V2_SPEC_2026-10-31.md": "bdfe303c537ff3d63252a0b99798979cc2518d2d394c6a12d1e638315dd6a59a",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CANDIDATES_V1_2026-10-31.md": "437fef683248394db20c46a487d55db298c7dd1dbbd3bae76a298a6ac9e5e8c7",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_CONTRACT_2026-10-31.md": "4a590565f2e30306013366c874d5a3c26e3f5bcaf31f45e94ae21c68ead663ad",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_EXECUTION_SPEC_2026-10-31.md": "0e602e5e210bea787c7273ba166dfba01b0aff74872f40f918aa628b4fb8a3c1",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V3_REPORT_2026-10-31.md": "6fda78fa20a13f9ca92415684fb2ddc63e07494c11729897ed8f9107bb660b8c",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V1_CONTRACT_2026-10-31.md": "fc7c50869d0334d43e57acb146d10d89b7e3f85d0e77373c2d57bfd57d32e0e8",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V2_EXECUTION_ADDENDUM_2026-10-31.md": "c1aad8589f60c1473fdb784973baff4f3e08dfa850184287f96ad7245f5feb4e",
+    "Theory/Verification/ITSM_RTAU_PHYSICAL_NORM_HANDOFF_2026-10-31.md": "0ceee3b4a1e20faff898d34aec50c81b6e5e70d9f1917e37bd50c04e6eb6015a"
+  },
+  "total": 12,
+  "trace_H2_per_D": [
+    [
+      0,
+      648744449368323578968393556488605025263460183491159,
+      -165,
+      169
+    ],
+    [
+      0,
+      648744449368323578968393556488605025263460183491159,
+      -165,
+      169
+    ]
+  ]
+}

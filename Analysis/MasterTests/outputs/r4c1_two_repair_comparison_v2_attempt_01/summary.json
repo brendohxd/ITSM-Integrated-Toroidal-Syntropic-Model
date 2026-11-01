@@ -1,0 +1,734 @@
+{
+  "G1_G6": "INCOMPLETE",
+  "K_Q": "NOT_DERIVED",
+  "MAT001": "BLOCKED",
+  "Rule9_cleared": false,
+  "UVIR003": "IN_PROGRESS",
+  "V": "NOT_COMPUTED",
+  "adopted_canonical_action": false,
+  "candidates": {
+    "F-tau": {
+      "auxiliary_pivot": "5/11",
+      "auxiliary_velocity_absent": true,
+      "complete_physical_domain": false,
+      "on_shell_scope": "common old homogeneous B1 control",
+      "physical_kinetic_fields": 7,
+      "physical_window": false,
+      "positive_kinetic_scope": "initial nonzero-mode block only",
+      "reduced_kinetic": [
+        [
+          "17/4",
+          "0",
+          "4",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/2",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "4",
+          "0",
+          "17/4",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3"
+        ]
+      ],
+      "shift_block": [
+        [
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1/15"
+        ]
+      ],
+      "shift_determinant": "-1/60"
+    },
+    "R-tau": {
+      "Z_equation": "Z=-Delta_tau psi; Z=0 for the homogeneous clock-gauge solution",
+      "auxiliary_pivot": "5/11",
+      "auxiliary_velocity_absent": true,
+      "complete_physical_domain": false,
+      "homogeneous_determinant": "-11*(w**2 - 13)*(w**2 + 5)**2*(2*w**2 + 3)*(4*w**2*Abs(w) - 35*w**2 - 35)/(6289920000*(w**2 + 1))",
+      "homogeneous_local_admission": "POINTWISE_LOCAL_ON_DECLARED_CHARGE_CURVE; NO_UNIFORM_LIFETIME",
+      "on_shell_scope": "common old homogeneous B1 control",
+      "physical_kinetic_fields": 10,
+      "physical_window": false,
+      "positive_kinetic_scope": "initial old-B1 charge-preserving transverse diagnostic, |w|<=1/500",
+      "reduced_kinetic": [
+        [
+          "(2*w**2 + 17)/(4*(w**2 + 1))",
+          "0",
+          "(w**2 + 8)/(2*(w**2 + 1))",
+          "0",
+          "w/(2*(w**2 + 1))",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "(w**4 + 5*w**2 + 15)/30",
+          "0",
+          "w*(w**2 + 5)/30",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "(w**2 + 8)/(2*(w**2 + 1))",
+          "0",
+          "(2*w**4 + 14*w**2 + 51)/(12*(w**2 + 1))",
+          "0",
+          "w*(w**2 + 4)/(6*(w**2 + 1))",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "w*(w**2 + 5)/30",
+          "0",
+          "(w**2 + 5)/30",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "w/(2*(w**2 + 1))",
+          "0",
+          "w*(w**2 + 4)/(6*(w**2 + 1))",
+          "0",
+          "1/6",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "(w**2 + 5)/(2*(w**4 + 5*w**2 + 15))",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-(w**2 - 13)/13",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-3*(4*w**2*Abs(w) - 35*w**2 - 35)/35"
+        ]
+      ],
+      "shift_block": [
+        [
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "(w**4 + 5*w**2 + 15)/30",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-(w**2 + 1)/15"
+        ]
+      ],
+      "shift_determinant": "-(w**2 + 1)*(w**4 + 5*w**2 + 15)/900"
+    }
+  },
+  "checks": [
+    {
+      "name": "clock_normal_unit_identity",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "off_shell_clock_normal_variation",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "normal_variation_transverse",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "clock_rescaling_direction_annihilated",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "unnormalized_clock_variation_rejected",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "conformal_matter_scalar_trace_identity",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "off_shell_matter_Ward_component_0",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "off_shell_matter_Ward_component_1",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "clock_current_chain_rule",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "clock_Euler_and_dust_only_Euler_distinguished",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "regulator_full_normal_Euler_identity",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "clock_regulator_extra_Euler_nonzero_example",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "old_bare_dust_conservation_not_inherited",
+      "passed": true,
+      "value": "amp*b*k**4*cos(k*space)*Derivative(background(time), time)"
+    },
+    {
+      "name": "clock_auxiliary_intrinsic_laplacian_identity",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "omitted_clock_acceleration_term_rejected",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "mass_dimensions_clock_and_regulator",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "F-tau_auxiliary_velocity_row",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "F-tau_auxiliary_position_velocity_couplings",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "F-tau_auxiliary_position_shift_couplings",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "F-tau_auxiliary_positive_algebraic_pivot",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "F-tau_derivative_Hessian_symmetric",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "F-tau_no_symbolic_Float",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "F-tau_all_shift_equations_solved",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "F-tau_auxiliary_remains_nondynamical_after_shift",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "F-tau_nonzero_mode_shift_pivot",
+      "passed": true,
+      "value": "-1/60"
+    },
+    {
+      "name": "F-tau_zero_mode_not_inverted",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "F_tau_fresh_action_positive_parent_subblock_identity",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "F_tau_all_reduced_kinetic_eigenvalues_positive",
+      "passed": true,
+      "value": {
+        "1": 3,
+        "1/2": 1,
+        "1/4": 1,
+        "3": 1,
+        "33/4": 1
+      }
+    },
+    {
+      "name": "R-tau_auxiliary_velocity_row",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R-tau_auxiliary_position_velocity_couplings",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R-tau_auxiliary_position_shift_couplings",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R-tau_auxiliary_positive_algebraic_pivot",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R-tau_derivative_Hessian_symmetric",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R-tau_no_symbolic_Float",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "R-tau_all_shift_equations_solved",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R-tau_auxiliary_remains_nondynamical_after_shift",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R-tau_nonzero_mode_shift_pivot",
+      "passed": true,
+      "value": "-(w**2 + 1)*(w**4 + 5*w**2 + 15)/900"
+    },
+    {
+      "name": "R-tau_zero_mode_not_inverted",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_fresh_action_positive_ten_block_identity",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_aligned_original_ten_fields_recovered",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_no_scalar_auxiliary_velocity_pair",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_LDL_block_identity",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_scalar_positive_pivot_identity",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_scalar_complement_kinetic_crosses",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_reuses_verified_positive_pivots_and_scalar_interval",
+      "passed": true,
+      "value": "Exact freshly recomputed matrix identity plus the pinned old interval proof; not a cutoff/gradient theorem"
+    },
+    {
+      "name": "R_tau_scalar_charge_recomputed",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_dust_charge_recomputed",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_lapse_curve_recomputed",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_H_squared_curve",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_homogeneous_complement_recomputed",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_homogeneous_scalar_crosses",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_homogeneous_scalar_pivot",
+      "passed": true,
+      "value": []
+    },
+    {
+      "name": "R_tau_homogeneous_nonsingularity_in_declared_interval",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "R_tau_original_physical_full_Hessian_0.001_1e-20",
+      "passed": true,
+      "value": "5.3571388397479106610453965583279043072855899050034789535339401884e-38"
+    },
+    {
+      "name": "R_tau_original_physical_full_Hessian_0.001_1e-26",
+      "passed": true,
+      "value": "5.3571388397479106610453965583279009590738150659075275750035353966e-50"
+    },
+    {
+      "name": "R_tau_original_physical_full_Hessian_-0.001_1e-20",
+      "passed": true,
+      "value": "5.3571388397479106610453965583279043072855899050034789535339401884e-38"
+    },
+    {
+      "name": "R_tau_original_physical_full_Hessian_-0.001_1e-26",
+      "passed": true,
+      "value": "5.3571388397479106610453965583279009590738150659075275750035353966e-50"
+    },
+    {
+      "name": "R_tau_original_physical_full_Hessian_0.002_1e-20",
+      "passed": true,
+      "value": "2.678563394717973602457231669989949308100540938217556276394637977e-38"
+    },
+    {
+      "name": "R_tau_original_physical_full_Hessian_0.002_1e-26",
+      "passed": true,
+      "value": "2.6785633947179736024572316699899488895750105139527064228768729165e-50"
+    },
+    {
+      "name": "R_tau_original_physical_full_Hessian_-0.002_1e-20",
+      "passed": true,
+      "value": "2.678563394717973602457231669989949308100540938217556276394637977e-38"
+    },
+    {
+      "name": "R_tau_original_physical_full_Hessian_-0.002_1e-26",
+      "passed": true,
+      "value": "2.6785633947179736024572316699899488895750105139527064228768729165e-50"
+    },
+    {
+      "name": "F_tau_physical_aligned_C2_1_1e-10",
+      "passed": true,
+      "value": "0.00000000000051417510596167439213077922467618920985449625427199482193307625589"
+    },
+    {
+      "name": "F_tau_physical_aligned_C2_1_1e-16",
+      "passed": true,
+      "value": "0.00000000000000000051417510596167439213077922467618920985449625427199482193307625589"
+    },
+    {
+      "name": "F_tau_physical_aligned_C2_2_1e-10",
+      "passed": true,
+      "value": "5.6919146298160121328889480148215218345343185673569324439451454372e-101"
+    },
+    {
+      "name": "F_tau_physical_aligned_C2_2_1e-16",
+      "passed": true,
+      "value": "1.190885032604858640625376525258613125508918986025833914970669746e-88"
+    },
+    {
+      "name": "F_tau_physical_aligned_C2_3_1e-10",
+      "passed": true,
+      "value": "0.00000000000037622420084781581029996377732139673810082541378033361574128304826"
+    },
+    {
+      "name": "F_tau_physical_aligned_C2_3_1e-16",
+      "passed": true,
+      "value": "0.00000000000000000037622420084781581029996377732139673810082541378033361574128304826"
+    },
+    {
+      "name": "F_tau_finite_independent_tilt_rejected",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "R_tau_independent_frame_fields_retained",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "all_input_bytes_and_mtimes_unchanged",
+      "passed": true,
+      "value": 68
+    }
+  ],
+  "complete_metric_frame_variation": false,
+  "covariant_clock": {
+    "extra_Euler": "E_tau,X=div(p_tau*E_t/chi)",
+    "matter_balance_on_total_clock": "div(T_m)=beta*T_m*grad(psi)-E_tau,X*grad(tau)",
+    "normal_variation": "delta t^mu=-p_tau^{mu nu}*partial_nu(delta tau)/chi",
+    "old_bare_dust_current_inherited": false,
+    "regulator_flat_example": "E_tau,reg=b*p_background*k^4*amp*cos(k*z)",
+    "total_clock": "div(epsilon*C^2*grad(tau)+p_tau*E_t/chi)=0"
+  },
+  "full_gradient_or_characteristic_classification": false,
+  "gate_effect": "NONE",
+  "independent_controls": [
+    {
+      "errors": [
+        "5.3571388397479106610453965583279043072855899050034789535339401884e-38",
+        "5.3571388397479106610453965583279009590738150659075275750035353966e-50"
+      ],
+      "kind": "full physical Hessian",
+      "route": "R-tau",
+      "tilt": "0.001"
+    },
+    {
+      "errors": [
+        "5.3571388397479106610453965583279043072855899050034789535339401884e-38",
+        "5.3571388397479106610453965583279009590738150659075275750035353966e-50"
+      ],
+      "kind": "full physical Hessian",
+      "route": "R-tau",
+      "tilt": "-0.001"
+    },
+    {
+      "errors": [
+        "2.678563394717973602457231669989949308100540938217556276394637977e-38",
+        "2.6785633947179736024572316699899488895750105139527064228768729165e-50"
+      ],
+      "kind": "full physical Hessian",
+      "route": "R-tau",
+      "tilt": "0.002"
+    },
+    {
+      "errors": [
+        "2.678563394717973602457231669989949308100540938217556276394637977e-38",
+        "2.6785633947179736024572316699899488895750105139527064228768729165e-50"
+      ],
+      "kind": "full physical Hessian",
+      "route": "R-tau",
+      "tilt": "-0.002"
+    },
+    {
+      "errors": [
+        "0.00000000000051417510596167439213077922467618920985449625427199482193307625589",
+        "0.00000000000000000051417510596167439213077922467618920985449625427199482193307625589"
+      ],
+      "kind": "real finite difference at C2 cusp",
+      "route": "F-tau",
+      "seed": 1
+    },
+    {
+      "errors": [
+        "5.6919146298160121328889480148215218345343185673569324439451454372e-101",
+        "1.190885032604858640625376525258613125508918986025833914970669746e-88"
+      ],
+      "kind": "real finite difference at C2 cusp",
+      "route": "F-tau",
+      "seed": 2
+    },
+    {
+      "errors": [
+        "0.00000000000037622420084781581029996377732139673810082541378033361574128304826",
+        "0.00000000000000000037622420084781581029996377732139673810082541378033361574128304826"
+      ],
+      "kind": "real finite difference at C2 cusp",
+      "route": "F-tau",
+      "seed": 3
+    }
+  ],
+  "kind": "R4C1_TWO_REPAIR_COMPARISON_V2",
+  "matched_new_coefficients": false,
+  "nonlinear_physical_domain": false,
+  "original_parent_unchanged": true,
+  "passed": 70,
+  "physical_window_demonstrated": false,
+  "physics_pass": false,
+  "review": "DEFERRED",
+  "source_sha256": {
+    "Analysis/MasterTests/dust_certified_arithmetic_v1.py": "f868032dcd939a52c3299ac66d5f4c18d02c5681bac7391bcce67732bc026599",
+    "Analysis/MasterTests/outputs/r4c1_b1_alignment_domain_v1_attempt_01/summary.json": "5ce2ecbf65f1a1b1d3f0e38dc6a02413a9bcefa36a1e93e24b9aeb090e36be1b",
+    "Analysis/MasterTests/outputs/r4c1_b1_dust_reconstruction_v1_attempt_01/summary.json": "7f4134defc9dd25b6a831d154f195a308a17b8d3ee01c29643a764b088c51e4a",
+    "Analysis/MasterTests/outputs/r4c1_b1_kinetic_drift_v1_attempt_01/summary.json": "e66aaa83814afb726ace2bbaf1543591ba6502c37440be4430aca2ad7375c3cb",
+    "Analysis/MasterTests/outputs/r4c1_b1_propagator_v1_attempt_01/summary.json": "93c5d85618d4546b61b6a74961d04d93da35e2ad95dc20d3b57b4ce4e38dce10",
+    "Analysis/MasterTests/outputs/r4c1_b1_reduced_kinetic_v1_attempt_01/summary.json": "829b013edc716cb2a7c9a2a4161bf2830186b0d68673b8b57e3928deb5a1d53a",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v1_attempt_01/summary.json": "664a8d310222c09751c9e6039dda3656423c7000480fd097a34a6242602a7c4c",
+    "Analysis/MasterTests/r4c1_full_weak_action_v1.py": "330f25196806450238a71459873a3353036fac4ef15cab53da665ecbaa501105",
+    "Analysis/MasterTests/r4c1_two_repair_actions_v1.py": "f4da18c7722f71b2897bd5bedbbc0992ba3c58c94c7ca3b234525f1a672084cb",
+    "Analysis/MasterTests/r4c1_two_repair_actions_v2.py": "bdb68b4f2db7437247f6ea059e3acf6471f2c986f764a34cfc70c968fcff8314",
+    "Analysis/MasterTests/test_01_r4c1_b1_alignment_domain_v1.py": "d374c63e609815a7c42e1f3ac261f7f0be6dfe110457c7181cb98a7eb1a4b535",
+    "Analysis/MasterTests/test_01_r4c1_b1_dust_reconstruction_v1.py": "a6ac2849dea663c0dfbdfdce0792b25b8684ec71ad1e060c41b195021dcd2030",
+    "Analysis/MasterTests/test_01_r4c1_b1_kinetic_drift_v1.py": "56badde0e458b848287a35605a11da792b7ab9339b844c34a83d907403e9639a",
+    "Analysis/MasterTests/test_01_r4c1_b1_propagator_v1.py": "cca11ea1565a5dc2740718c4d47e3f420d9e30301d64b19e0f5e9466339cc21e",
+    "Analysis/MasterTests/test_01_r4c1_b1_reduced_kinetic_v1.py": "0bd93464a813a1825526987a2c81c55c2c964691c173d555786077fedfc08625",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v3.py": "b887c7a52102b7abb43a2875cb6e01607ecb46d39a95f4abb4cefab9795a73c0",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v1.py": "ec6395f6f8e82452982a823cfb76375899b663b90db6782247c33996ac6e304e",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v2.py": "bab911efd631ed06213888c6758927836050b49b338089e3f45ed3439f00e6c4",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_CONTRACT_2026-10-29.md": "a58bff722582afff4a93465e3d91d695c445e2128f24441a592423b8d8da49fb",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_CONTRACT_2026-10-29.md": "254ac814874de1d31678dc4bdce14439dce397b82f7a4a21e2a6c4e1b39ff35d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_REPORT_2026-10-29.md": "60e19751ae396d19e10d557ed22a764f12a8ab43b5d0504a73fba6e560a7f18c",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md": "82708666dfce4ef214b614bc7da31b294d7569539b97292aaa9a79e906e6266f",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_CONTRACT_2026-10-29.md": "3ff304c9a08a78233c9feaca192b940e363c408de668df9b0efe6d49adbc9a1d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_REPORT_2026-10-29.md": "0398721b04b6d47633e07e65e8de155a0a35bae250ba57893bc75e7348ac6228",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_CONTRACT_2026-10-29.md": "e2c08f14d79fc17bc3ca08c09baab7a42608a0d9565198339d2214764288c467",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md": "b1c14df414f27ffeb9458fd5e1234943c459f2bb9dabac55fda0b442f8826c94",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_CONTRACT_2026-10-29.md": "9af0554e67970d046cbd9ba22298ae9840150c040db2b607f760c423f5de921d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_REPORT_2026-10-29.md": "096db5aec89c60837408dbf0eddc3593436e4a3a2125c955e94cdbc35eb2bf66",
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md": "8c4496eacdb0d2447445e4a1949b683e033f042a7332c659701e2273d2bf23ea",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CANDIDATES_V1_2026-10-31.md": "437fef683248394db20c46a487d55db298c7dd1dbbd3bae76a298a6ac9e5e8c7",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V1_CONTRACT_2026-10-31.md": "fc7c50869d0334d43e57acb146d10d89b7e3f85d0e77373c2d57bfd57d32e0e8",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V2_EXECUTION_ADDENDUM_2026-10-31.md": "c1aad8589f60c1473fdb784973baff4f3e08dfa850184287f96ad7245f5feb4e"
+  },
+  "total": 70
+}

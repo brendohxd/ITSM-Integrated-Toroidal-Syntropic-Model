@@ -1,0 +1,103 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{5}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Brown}(1993)}]{brown1993}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Brown}},\ }\bibfield  {title} {\bibinfo {title} {Action functionals for
+  relativistic perfect fluids},\ }\href
+  {https://doi.org/10.1088/0264-9381/10/8/017} {\bibfield  {journal} {\bibinfo
+  {journal} {Classical and Quantum Gravity}\ }\textbf {\bibinfo {volume}
+  {10}},\ \bibinfo {pages} {1579} (\bibinfo {year} {1993})},\ \Eprint
+  {https://arxiv.org/abs/gr-qc/9304026} {gr-qc/9304026} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Jacobson}\ and\ \citenamefont
+  {Mattingly}(2001)}]{jacobson2001}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Jacobson}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Mattingly}},\ }\bibfield  {title} {\bibinfo {title} {Gravity with a
+  dynamical preferred frame},\ }\href
+  {https://doi.org/10.1103/PhysRevD.64.024028} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review D}\ }\textbf {\bibinfo {volume} {64}},\ \bibinfo
+  {pages} {024028} (\bibinfo {year} {2001})},\ \Eprint
+  {https://arxiv.org/abs/gr-qc/0007031} {gr-qc/0007031} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bekenstein}\ and\ \citenamefont
+  {Milgrom}(1984)}]{bekenstein_milgrom}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Bekenstein}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Milgrom}},\ }\bibfield  {title} {\bibinfo {title} {Does the missing mass
+  problem signal the breakdown of newtonian gravity?},\ }\href
+  {https://doi.org/10.1086/162570} {\bibfield  {journal} {\bibinfo  {journal}
+  {Astrophysical Journal}\ }\textbf {\bibinfo {volume} {286}},\ \bibinfo
+  {pages} {7} (\bibinfo {year} {1984})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Aoki}\ \emph {et~al.}(2025)\citenamefont {Aoki},
+  \citenamefont {Beltr{\'a}n~Jim{\'e}nez}, \citenamefont {Pookkillath},\ and\
+  \citenamefont {Tsujikawa}}]{aoki2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Aoki}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Beltr{\'a}n~Jim{\'e}nez}}, \bibinfo {author} {\bibfnamefont {M.~C.}\
+  \bibnamefont {Pookkillath}},\ and\ \bibinfo {author} {\bibfnamefont
+  {S.}~\bibnamefont {Tsujikawa}},\ }\bibfield  {title} {\bibinfo {title}
+  {Effective field theory of coupled dark energy and dark matter},\ }\Eprint
+  {https://arxiv.org/abs/2504.17293} {arXiv:2504.17293 [gr-qc]}  (\bibinfo
+  {year} {2025})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Negro}\ \emph {et~al.}(2026)\citenamefont {Negro}
+  \emph {et~al.}}]{negro2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Negro}} \emph {et~al.},\ }\bibfield  {title} {\bibinfo {title} {Quantum
+  signatures of cosmic topology: How casimir backreaction transmits isotropy
+  violation},\ }\Eprint {https://arxiv.org/abs/2603.12319} {arXiv:2603.12319}
+  (\bibinfo {year} {2026})\BibitemShut {NoStop}%
+\end{thebibliography}%

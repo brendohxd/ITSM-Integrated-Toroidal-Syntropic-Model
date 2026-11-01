@@ -1,7 +1,7 @@
 # R4C1 covariant finite-density exchange model
 
-Current version: 0.1.1-conditional-draft  
-Canonical PDF: Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.1-conditional-draft.pdf  
+Current version: 0.1.2-conditional-draft  
+Canonical PDF: Boyd_2026_Covariant_Finite-Density_Exchange_Model_v0.1.2-conditional-draft.pdf  
 Status: conditional theory manuscript; not canonically promoted; not submitted
 
 ## Main contribution
@@ -50,3 +50,16 @@ review remains deferred, `physics_pass=false`, `K_Q=NOT_DERIVED`,
 `V=NOT_COMPUTED`, and the substantive stability, cutoff, all-sector, and
 action-to-observable holds remain active. The manuscript source (`main.tex`) and
 canonical PDF were not changed; only these documentation pointers were added.
+
+
+## Solo-author correction - 30 October 2026
+
+Version 0.1.2 removes the unsupported collaborator/reviewer acknowledgment
+and the unconfirmed statement that the author had independently reviewed
+every artifact. AI assistance and author responsibility remain disclosed.
+The scientific body is unchanged. The v0.1.1 source is preserved in
+[the dated source archive](../ReleasePackages/2026-10-30/R4C1-v0.1.1-preserved/);
+its original versioned PDF and hash remain in this directory. The 8 October
+review package above remains evidence for v0.1.1 only. See
+[revision notes](REVISION_NOTES_v0.1.2.md). No review or publication clearance
+is created by this editorial correction.

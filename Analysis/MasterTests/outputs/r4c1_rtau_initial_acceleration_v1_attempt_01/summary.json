@@ -1,0 +1,535 @@
+{
+  "G1_G6": "INCOMPLETE",
+  "Noether_identities": {
+    "clock": "I=-H-<S.E_S>; Idot=<E_q.v-S.E_Sdot>",
+    "momentum": "E_Sdot=Dq^* E_q-ad_S^* E_S",
+    "phase": "Qdot=-<Jphase.E_q>"
+  },
+  "auxiliary_Zdot": "-2*lambda_dot*Z-exp(-2lambda)*(psi_dot_zz+lambda_z*psi_dot_z+lambda_dot_z*psi_z)",
+  "baseline_prepared_shift_rate_upper": "0.000000837328638690563070420578022863975617993880581",
+  "bounds": {
+    "auxiliary_Zdot": [
+      [
+        0,
+        727906178547080810758749800555025443458594355675691,
+        -180,
+        169
+      ],
+      [
+        0,
+        727906178547080810758749800555025443458594355675703,
+        -180,
+        169
+      ]
+    ],
+    "original_final_acceleration": [
+      [
+        0,
+        387578694804994879792474711927266271921294113965975,
+        -159,
+        169
+      ],
+      [
+        0,
+        387578694804994879792474711927266271921294113965993,
+        -159,
+        169
+      ]
+    ],
+    "original_shift_rate_derivative_xy": [
+      [
+        0,
+        173617743317274944563704799810193736827536793016921,
+        -159,
+        167
+      ],
+      [
+        0,
+        694470973269099778254819199240774947310147172067707,
+        -161,
+        169
+      ]
+    ],
+    "original_shift_rate_derivative_z": [
+      [
+        0,
+        694641441897337951806704574467321929326099922607971,
+        -162,
+        169
+      ],
+      [
+        0,
+        173660360474334487951676143616830482331524980651999,
+        -160,
+        167
+      ]
+    ],
+    "original_shift_rate_z": [
+      [
+        0,
+        545522201296727665217335165858339885766939360101717,
+        -160,
+        169
+      ],
+      [
+        0,
+        136380550324181916304333791464584971441734840025435,
+        -158,
+        167
+      ]
+    ],
+    "original_temporal_inverse": [
+      [
+        0,
+        140424671731417727727869398226831531294812370002159,
+        -162,
+        167
+      ],
+      [
+        0,
+        561698686925670910911477592907326125179249480008645,
+        -164,
+        169
+      ]
+    ],
+    "particular_acceleration": [
+      [
+        0,
+        173537630540114590355219311092359019283349509972153,
+        -160,
+        167
+      ],
+      [
+        0,
+        694150522160458361420877244369436077133398039888629,
+        -162,
+        169
+      ]
+    ],
+    "prepared_auxiliary_Zdot": [
+      [
+        0,
+        727997089120904275060208322822447687346149336179999,
+        -180,
+        169
+      ],
+      [
+        0,
+        727997089120904275060208322822447687346149346234965,
+        -180,
+        169
+      ]
+    ],
+    "transformed_particular_xz": [
+      [
+        0,
+        173564330690925853523879181460039607887013463835697,
+        -160,
+        167
+      ],
+      [
+        0,
+        694257322763703414095516725840158431548053855342807,
+        -162,
+        169
+      ]
+    ],
+    "transformed_particular_zz": [
+      [
+        0,
+        347183377519961290258930463046226235461567167696853,
+        -161,
+        168
+      ],
+      [
+        0,
+        10849480547498790320591576970194569858173973990527,
+        -156,
+        163
+      ]
+    ],
+    "xi_longitudinal": [
+      [
+        0,
+        272719140629886728558519716006024672287036619190713,
+        -159,
+        168
+      ],
+      [
+        0,
+        545438281259773457117039432012049344574073238381447,
+        -160,
+        169
+      ]
+    ],
+    "xi_transverse": [
+      [
+        0,
+        545352320127242140690268550355538469730933327179615,
+        -159,
+        169
+      ],
+      [
+        0,
+        272676160063621070345134275177769234865466663589817,
+        -158,
+        168
+      ]
+    ]
+  },
+  "canonical_parent_adopted": false,
+  "checks": [
+    {
+      "name": "inverse_coordinate_second_jet",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "initial_longitudinal_metric_spatial_derivative",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "initial_longitudinal_metric_velocity_spatial_derivative",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "metric_longitudinal_second_jet_offset",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "shift_drift_second_coordinate_jet",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "longitudinal_Lie_pushforward",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "auxiliary_first_time_tangent_identity",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "declared_temporal_inverse_gap_supported",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "uniform_original_temporal_inverse_finite",
+      "passed": true,
+      "value": "24.02061484992092443416247003131999595489"
+    },
+    {
+      "name": "actual_initial_acceleration_and_gauge_bounds_finite",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "auxiliary_first_tangent_bound_finite",
+      "passed": true,
+      "value": "0.0004750402658330556717990696804768256248221"
+    },
+    {
+      "name": "periodic_weighted_gauge_inverse_control",
+      "passed": true,
+      "value": "5.4184575972091177810159838508944858e-101"
+    },
+    {
+      "name": "deleting_metric_mean_acceleration_rejected",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "validated_actual_centre_particular_inverse_0.3",
+      "passed": true,
+      "value": "1.387481604543862557158473376560114395975e-46"
+    },
+    {
+      "name": "actual_shift_drift_Lie_coupling_0.3",
+      "passed": true,
+      "value": "1.517629211949224840324173362754450804315e-49"
+    },
+    {
+      "name": "nonzero_shift_drift_affine_Euler_control_0.3",
+      "passed": true,
+      "value": "3.310219093449184307745054414567110306913e-48"
+    },
+    {
+      "name": "validated_actual_centre_particular_inverse_1.1",
+      "passed": true,
+      "value": "1.382470187894135584964068845994692556015e-46"
+    },
+    {
+      "name": "actual_shift_drift_Lie_coupling_1.1",
+      "passed": true,
+      "value": "1.475867263354034283353227480455208899958e-49"
+    },
+    {
+      "name": "nonzero_shift_drift_affine_Euler_control_1.1",
+      "passed": true,
+      "value": "3.302200799318907720806632805165655861276e-48"
+    },
+    {
+      "name": "validated_actual_centre_particular_inverse_2.4",
+      "passed": true,
+      "value": "8.275939428869963419489980185590280910917e-47"
+    },
+    {
+      "name": "actual_shift_drift_Lie_coupling_2.4",
+      "passed": true,
+      "value": "8.778361594709055075292824459300648295734e-50"
+    },
+    {
+      "name": "nonzero_shift_drift_affine_Euler_control_2.4",
+      "passed": true,
+      "value": "1.973836738403086484674786180991369367505e-48"
+    },
+    {
+      "name": "all_source_bytes_and_mtimes_preserved",
+      "passed": true,
+      "value": 210
+    }
+  ],
+  "exact_construction": {
+    "actual_original_acceleration": "a=a0+Lie_T_old(q)",
+    "coordinate_extension": "zeta=zeta0+t Jw; zeta_tt=0",
+    "gauge_derivatives": "xi_x,zeta=(-bx+cx)/hxx; xi_y analogous; xi_z,zeta=(-bz+cz)/(2 Abar^2)",
+    "mean_constants": "cx=<bx/hxx>_zeta/<1/hxx>_zeta; cy analogous; cz=<bz>_zeta",
+    "original_shift_rate": "T_old=(xi_x,xi_y,xi_z/J)",
+    "particular": "a0=M13^-1 R13",
+    "prepared_shift_rate": "(-w*Sx_z,-w*Sy_z,J*(w_z*Sz-w*Sz_z+w*r))+xi",
+    "primitive": "periodic antiderivative; add translations so <T_old>_z=0",
+    "r": "lambda_dot-m=w_z+lambda_z*w",
+    "transformed_bx": "a0_xz/J",
+    "transformed_bz": "a0_zz/J^2+Abar^2*(-8*r*lambda_dot+6*r^2)"
+  },
+  "gate_effect": "NONE",
+  "initial_nonauxiliary_acceleration": "CONSTRUCTED_FUNCTIONALLY_WITH_COARSE_BOUNDS",
+  "kind": "R4C1_RTAU_INITIAL_ACCELERATION_V1",
+  "local_clock_evolution_check": "OPEN",
+  "nonlinear_time_evolution": false,
+  "passed": 23,
+  "physical_symplectic_quotient": "NOT_DERIVED",
+  "physical_window_demonstrated": false,
+  "physics_pass": false,
+  "point_controls": [
+    {
+      "Lie_coupling_residual": "1.517629211949224840324173362754450804315e-49",
+      "affine_Euler_residual": "3.310219093449184307745054414567110306913e-48",
+      "error_radius": [
+        [
+          0,
+          296364271988443330967451096354040103130267850676639,
+          -320,
+          168
+        ],
+        [
+          0,
+          296364271988443330967451096354040103130267850676645,
+          -320,
+          168
+        ]
+      ],
+      "particular_acceleration_at_numerical_centre": [
+        "1.608297929426964810574592042082112686520831475241983409847515772613465",
+        "-0.0000000003224370742128989925632493561730204484314856899262743552373135323544793",
+        "-0.0000000148525184572968682544384664194948893794147122408678190713431041046989",
+        "1.60829792984494085235707781809684274463704085196478622468721550229775",
+        "-0.000000007564392727499095268855022966492866435577942009748501352936825895674861",
+        "1.623631175839234414209030202653686895791023918709347481481988369069712",
+        "-0.00006129315338571571433213149538484305637595118105699118094728291078167981",
+        "-0.0001221001920899969735384620505832159365548241897454748787236511117375652",
+        "0.001097725257483968651580980689714705125604310899168479727896318979261232",
+        "-1.393595365101895743421371048590768546875902378423707433112755257963782",
+        "-2.677080766484037042038203177211783778355796727911969225072220910282519",
+        "-3.02660932896838001275390796617963096284393235726092774509608719501597",
+        "-0.5614316171376912393140452689905725327837258889839165941307664750452506"
+      ],
+      "z": "0.3"
+    },
+    {
+      "Lie_coupling_residual": "1.475867263354034283353227480455208899958e-49",
+      "affine_Euler_residual": "3.302200799318907720806632805165655861276e-48",
+      "error_radius": [
+        [
+          0,
+          295293839888901829665764153711093631637811047809443,
+          -320,
+          168
+        ],
+        [
+          0,
+          295293839888901829665764153711093631637811047809449,
+          -320,
+          168
+        ]
+      ],
+      "particular_acceleration_at_numerical_centre": [
+        "1.608048928569350087082814739485362309637471913247378185458395286863153",
+        "0.00000000008762934992973719857718949167652705594536479741925487623568434867833575",
+        "-0.00000001491503965132151725143513969585664866608606056398929027536108256630068",
+        "1.608048928918334023810720280644846191410608791246517128066292347378066",
+        "0.000000006403162653170319277497518780376274137303451625276259881520596806531924",
+        "1.600924681765198117839294666603624227711202534679672771196907955162639",
+        "0.0000362822538187500541283571162266051097654438893402845101270132798602923",
+        "0.0000164103992883508114511151385109004142414079776499738187090596598243431",
+        "0.00141704705657056252543344176360154217550984838482934410064991851557973",
+        "-1.39348236132925631211061299364221251201796248266442378014666573571343",
+        "-2.680663361571241488647052592551059885488805156851474579893365618961389",
+        "-3.026885631309663582500286386887029802232962237919088593803854341473988",
+        "-0.5630701593299184727683012041295665127317328976740906074755648426447053"
+      ],
+      "z": "1.1"
+    },
+    {
+      "Lie_coupling_residual": "8.778361594709055075292824459300648295734e-50",
+      "affine_Euler_residual": "1.973836738403086484674786180991369367505e-48",
+      "error_radius": [
+        [
+          0,
+          353545986602658852525834217643106670624620004671181,
+          -321,
+          168
+        ],
+        [
+          0,
+          88386496650664713131458554410776667656155001167797,
+          -319,
+          166
+        ]
+      ],
+      "particular_acceleration_at_numerical_centre": [
+        "1.60784913105298487132136362299543770834253544920877880396387364677912",
+        "-0.00000000006670489249313576446788280676979547050221212756017334530314253288354397",
+        "0.000000008210246075575800463377618485950941104746348457055995492280317542947967",
+        "1.607849131675249339592932095885614446733313670175868050300938752764899",
+        "0.0000000009691394532963034200587310215847152409158444734353140742445563834341545",
+        "1.606793475203518828218236766965539071238669513381700141838084381384608",
+        "0.000003540860651265107190693570697738770394701999052297511346336912787256734",
+        "0.00003909032932165845353025575524665026120250486527828337266690831052681176",
+        "-0.001409140651559916631927085956172738242301512195703220708630298961827351",
+        "-1.393372864984405467889439560696488947513714632748655820541131883062566",
+        "-2.679800155470456966123752147092858363742903491159604116566673109686129",
+        "-3.027393793782243091887332106936082058501513584754833026415349372705705",
+        "-0.5627010606964711963581475701192041392003697121910847717528934614328011"
+      ],
+      "z": "2.4"
+    }
+  ],
+  "quantitative_auxiliary_Zddot": "OPEN",
+  "review": "DEFERRED",
+  "sharp_final_gauge_quadrature": "NOT_COMPUTED",
+  "source_sha256": {
+    "Analysis/MasterTests/audit_01_r4c1_rtau_norm_extension_v1.py": "5bc1af961699f188c68e84ce4e84e8e0d0d0a1d603ccb6e683795217df335f11",
+    "Analysis/MasterTests/dust_certified_arithmetic_v1.py": "f868032dcd939a52c3299ac66d5f4c18d02c5681bac7391bcce67732bc026599",
+    "Analysis/MasterTests/outputs/r4c1_b1_alignment_domain_v1_attempt_01/summary.json": "5ce2ecbf65f1a1b1d3f0e38dc6a02413a9bcefa36a1e93e24b9aeb090e36be1b",
+    "Analysis/MasterTests/outputs/r4c1_b1_dust_reconstruction_v1_attempt_01/summary.json": "7f4134defc9dd25b6a831d154f195a308a17b8d3ee01c29643a764b088c51e4a",
+    "Analysis/MasterTests/outputs/r4c1_b1_kinetic_drift_v1_attempt_01/summary.json": "e66aaa83814afb726ace2bbaf1543591ba6502c37440be4430aca2ad7375c3cb",
+    "Analysis/MasterTests/outputs/r4c1_b1_propagator_v1_attempt_01/summary.json": "93c5d85618d4546b61b6a74961d04d93da35e2ad95dc20d3b57b4ce4e38dce10",
+    "Analysis/MasterTests/outputs/r4c1_b1_reduced_kinetic_v1_attempt_01/summary.json": "829b013edc716cb2a7c9a2a4161bf2830186b0d68673b8b57e3928deb5a1d53a",
+    "Analysis/MasterTests/outputs/r4c1_rtau_interactions_input_v1_attempt_01/summary.json": "f06bfc8926b24f874c01ee000f0b34b71cf69906b4fc00278ed650c8640841d0",
+    "Analysis/MasterTests/outputs/r4c1_rtau_interval_residual_v3_attempt_01/summary.json": "d116cbb8c71241c4e3c85c1b260f082f5e30306dbf51243d26e446e36e797484",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v1_attempt_01/failure.json": "2bebfa1b0597b7b7a1ca5e3be283d1d73c37f39d4a6aac55c176262cd3e8aa6f",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v2_attempt_01/failure.json": "572a21aabd23505aaab0dbf8121abca97455020441159001776975b8510232fe",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v3_attempt_01/failure.json": "65683593dcf9bb7af6d2e78bb5783f84a4508babc7a2f7efd757b95f2e36469c",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v4_attempt_01/summary.json": "d916402a0751fa4a0409d2048ed4e38ea18dd9b5629836f6a3517fdd44e0b577",
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_constraints_v1_attempt_01/summary.json": "202ead4f7fd5d26d3eae4ec1ccc05798f2b8ef646eb7468a1a09103e3c13a987",
+    "Analysis/MasterTests/outputs/r4c1_rtau_nonlinear_regulator_v2_attempt_01/summary.json": "ebf0bb4708ca1167bbbf4f3049ee8d418bfb76b0e992686ed6b85bca923f3d46",
+    "Analysis/MasterTests/outputs/r4c1_rtau_norm_extension_v1_attempt_01/summary.json": "0b2c3d34b6cb19da0701ab10497b554f4fcdf6e8c494b1b5bbf8da611fc2f1ad",
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_inverse_v1_attempt_01/summary.json": "9c22269a9e40c331fd9c72ad72e44e9f67705524193293e2a11adc9f131827b9",
+    "Analysis/MasterTests/outputs/r4c1_rtau_periodic_numerical_v1_attempt_01/summary.json": "58fc8db6b8d10ee57f2974e0415685ded3cfe9e80745044b19b551b7827c0d60",
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v1_attempt_01/summary.json": "68cd6d2bc808ff9a5c4c3f1bd56bbdcebd3e950ff6791020019107add7b5586e",
+    "Analysis/MasterTests/outputs/r4c1_rtau_physical_norm_v2_attempt_01/summary.json": "2a4e72ceef0a7681c8ee3fc38028d9dcb86b2ebd9999af6b0bdb58b0a3e80533",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v1_attempt_01/summary.json": "9e47bb10e944fe61323a9eaeae8097f5d6ef23992ceb59a7d0a44006ea225fac",
+    "Analysis/MasterTests/outputs/r4c1_rtau_prepared_temporal_v2_attempt_01/summary.json": "aba30848eed3be2d4cb3f0122899ea0394aafcf93b6ebd4d91ecfb3b63f6ac93",
+    "Analysis/MasterTests/outputs/r4c1_rtau_spatial_gauge_v1_attempt_01/summary.json": "449ce6a63c04a479fb8fc79cee62806ba5072d8dacac99f8614e9ab96e9ce014",
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v1_attempt_01/summary.json": "6bd06446ad71093eb547424b39072e0a4b1972becae8204cdaedb5bd3d01cd39",
+    "Analysis/MasterTests/outputs/r4c1_rtau_velocity_tangent_v2_attempt_01/summary.json": "f4efb6bc588528aa6287fa2cca2a8020f581fddc0564e0336b9e8bf52906a814",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_characteristics_v3_attempt_01/summary.json": "acc0558461b0e7882edc6e59baae4d9b2d886fb33882bd0bc5928834a1a57515",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v1_attempt_01/summary.json": "664a8d310222c09751c9e6039dda3656423c7000480fd097a34a6242602a7c4c",
+    "Analysis/MasterTests/outputs/r4c1_two_repair_comparison_v2_attempt_01/summary.json": "964c24a88923a3326902eb8f5b37fa23a0f3ab6ee8964c60406e52211ea52f91",
+    "Analysis/MasterTests/r4c1_full_weak_action_v1.py": "330f25196806450238a71459873a3353036fac4ef15cab53da665ecbaa501105",
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v3.py": "2d81bdd8c3b4a85dcfa917724e5ad6931dad19e44c7414957cc9327cbfcc1fa4",
+    "Analysis/MasterTests/r4c1_interval_spatial_jet_v4.py": "daab54788cf70dbe99187cbfc1c2e7a76946edc39529632783a352e5f63e5ff1",
+    "Analysis/MasterTests/r4c1_prepared_operator_factory_v1.py": "443776ef3f3fa65954fbe011afda082baf0784afb7a2d17805710f1ef0bb8945",
+    "Analysis/MasterTests/r4c1_second_variation_jet_v1.py": "d78cdd4f9659468ab3cf8d4f4f67ee00f5f3096d6742c348ab6d850e6ed40e87",
+    "Analysis/MasterTests/r4c1_two_repair_actions_v1.py": "f4da18c7722f71b2897bd5bedbbc0992ba3c58c94c7ca3b234525f1a672084cb",
+    "Analysis/MasterTests/r4c1_two_repair_actions_v2.py": "bdb68b4f2db7437247f6ea059e3acf6471f2c986f764a34cfc70c968fcff8314",
+    "Analysis/MasterTests/r4c1_two_repair_quadratic_v2.py": "cd58599bfe4004072ae2d5d7d2fa5cabd600b13f8e60d7301dba78b77c3932bd",
+    "Analysis/MasterTests/test_01_r4c1_b1_alignment_domain_v1.py": "d374c63e609815a7c42e1f3ac261f7f0be6dfe110457c7181cb98a7eb1a4b535",
+    "Analysis/MasterTests/test_01_r4c1_b1_dust_reconstruction_v1.py": "a6ac2849dea663c0dfbdfdce0792b25b8684ec71ad1e060c41b195021dcd2030",
+    "Analysis/MasterTests/test_01_r4c1_b1_kinetic_drift_v1.py": "56badde0e458b848287a35605a11da792b7ab9339b844c34a83d907403e9639a",
+    "Analysis/MasterTests/test_01_r4c1_b1_propagator_v1.py": "cca11ea1565a5dc2740718c4d47e3f420d9e30301d64b19e0f5e9466339cc21e",
+    "Analysis/MasterTests/test_01_r4c1_b1_reduced_kinetic_v1.py": "0bd93464a813a1825526987a2c81c55c2c964691c173d555786077fedfc08625",
+    "Analysis/MasterTests/test_01_r4c1_interacting_background.py": "1ac9d2618193c064e703b640aec682376010f4a5613bc6fdb236fe583534e14f",
+    "Analysis/MasterTests/test_01_r4c1_nodal_momentum_tangency_v3.py": "b887c7a52102b7abb43a2875cb6e01607ecb46d39a95f4abb4cefab9795a73c0",
+    "Analysis/MasterTests/test_01_r4c1_rtau_initial_acceleration_v1.py": "9e4de2bae4078f3d5b95e5dbf46d63cc07fddb2440be9ddeb4c393995fc502cb",
+    "Analysis/MasterTests/test_01_r4c1_rtau_interval_residual_v3.py": "718f3c1081c3b4295aaf9cc438b386e4f4ef768376d68eb8bd6eb8976a58f761",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v1.py": "cf63a28095e3b8d21cf0f8f920a722b3b6b5edc5465b5c4509a78843e09d138f",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v2.py": "51efe5f9012a15494501a0e9858f58afafc9f08cb795d36e0c4429c2b5720a43",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v3.py": "112e92df85084aa31483f48cefb82c36f34aa20ae3433c38c73a025fe5a3ea7e",
+    "Analysis/MasterTests/test_01_r4c1_rtau_mixed_operator_v4.py": "7ee68ba495b65de27871c8511a32feb351a95facfd13c13e726695b96c4aae3e",
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_constraints_v1.py": "2cc356773e003a5d4ec8532a49e697279c3aac2eb9e1e1bc31584bea4c731aa4",
+    "Analysis/MasterTests/test_01_r4c1_rtau_nonlinear_regulator_v2.py": "3f1a24062cbb0d4ca75b3188aaea7b8b92d92cb208d4083b79052acaeb56a561",
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_inverse_v1.py": "f01cf514688dadde23beadca1d0fccaa6710bb3ab27529996c342a30be795eb7",
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_numerical_v1.py": "40a356d574b882d410d4809dbeace8e4e789d23aa864d5503246fd1e8f0d2fe5",
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v1.py": "334a152c2a7ee0a9f23bff28c36ee626676d3bacbfb4a6a1bcfa64cfb31a0bca",
+    "Analysis/MasterTests/test_01_r4c1_rtau_physical_norm_v2.py": "326dd85d3ec093959f16af71c0dc250ca82fb44307f72aa496c5106861111955",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_temporal_v1.py": "d7c6b9144128727546df11c84052eec842f689b74a3a55bae3dc488dc57a5a33",
+    "Analysis/MasterTests/test_01_r4c1_rtau_prepared_temporal_v2.py": "77dce6e8bee8a6f23617dedf0960c4703c61c2436c2513fdd135e8e6578af841",
+    "Analysis/MasterTests/test_01_r4c1_rtau_spatial_gauge_v1.py": "bd34d5f7f8ae481ad7cf48446fd071e3fe44c17513c69c7f3a3c7743356e7d39",
+    "Analysis/MasterTests/test_01_r4c1_rtau_velocity_tangent_v1.py": "0badedd4c4206a6ffcdb2805e13a39b5d12f946ba3fc4d2756bd814e954cacc9",
+    "Analysis/MasterTests/test_01_r4c1_rtau_velocity_tangent_v2.py": "8c60a7f6fd1c7efe12b451f2560388b1ef35cd79de62c62f96e6900ba128b471",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_characteristics_v3.py": "98b9ecf5e030715f8106d197c89d9ae981950accfeb987ae7c20b261dbf65958",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v1.py": "ec6395f6f8e82452982a823cfb76375899b663b90db6782247c33996ac6e304e",
+    "Analysis/MasterTests/test_01_r4c1_two_repair_comparison_v2.py": "bab911efd631ed06213888c6758927836050b49b338089e3f45ed3439f00e6c4",
+    "Theory/Gates/RES-001/RES001_R4C1_ACTION_FREEZE_2026-09-25.md": "81bfc2e4f17b820f4ab7192c0d29c917af3d26a4ded95b5a3be332c289ad19c3",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_ALIGNMENT_DOMAIN_V1_CONTRACT_2026-10-29.md": "a58bff722582afff4a93465e3d91d695c445e2128f24441a592423b8d8da49fb",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_CONTRACT_2026-10-29.md": "254ac814874de1d31678dc4bdce14439dce397b82f7a4a21e2a6c4e1b39ff35d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_DUST_RECONSTRUCTION_V1_REPORT_2026-10-29.md": "60e19751ae396d19e10d557ed22a764f12a8ab43b5d0504a73fba6e560a7f18c",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_GLOBAL_REGULARITY_REPORT_2026-09-29.md": "82708666dfce4ef214b614bc7da31b294d7569539b97292aaa9a79e906e6266f",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_CONTRACT_2026-10-29.md": "3ff304c9a08a78233c9feaca192b940e363c408de668df9b0efe6d49adbc9a1d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_KINETIC_DRIFT_V1_REPORT_2026-10-29.md": "0398721b04b6d47633e07e65e8de155a0a35bae250ba57893bc75e7348ac6228",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_CONTRACT_2026-10-29.md": "e2c08f14d79fc17bc3ca08c09baab7a42608a0d9565198339d2214764288c467",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_PROPAGATOR_V1_REPORT_2026-10-29.md": "b1c14df414f27ffeb9458fd5e1234943c459f2bb9dabac55fda0b442f8826c94",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_CONTRACT_2026-10-29.md": "9af0554e67970d046cbd9ba22298ae9840150c040db2b607f760c423f5de921d",
+    "Theory/Gates/RES-001/RES001_R4C1_B1_REDUCED_KINETIC_V1_REPORT_2026-10-29.md": "096db5aec89c60837408dbf0eddc3593436e4a3a2125c955e94cdbc35eb2bf66",
+    "Theory/Gates/RES-001/RES001_R4C1_FINITE_TILT_CANONICAL_V2_REPORT_2026-10-17.md": "8c4496eacdb0d2447445e4a1949b683e033f042a7332c659701e2273d2bf23ea",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_COUPLED_INTERACTIONS_V1_CONTRACT_2026-10-31.md": "7d9cb53a2dea8a5a3ea5f918d6aae702bbb9248388ac11c3fcff4f64cdb3be7d",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INITIAL_ACCELERATION_V1_CONTRACT_2026-11-01.md": "437474e8eb2cdbdfa0cdc27c1b5e6d99910c2a8bbacc592a05f7d62d5ca5523f",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_INTERVAL_RESIDUAL_V1_CONTRACT_2026-10-31.md": "d4d4a4680208c92e6a8c566aab1c6ee243484d0c6af286e1b49cde1d79ba208a",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V1_CONTRACT_2026-10-31.md": "bfa6c25c2c81f832b8b512503669c60a08551da628c6bf63ae3e4dfd798c7993",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V2_SPEC_2026-10-31.md": "758469c8e60d0e713572b9ff08f6dcbfa20d2e91a0eae4586893be40d3853247",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V3_SPEC_2026-10-31.md": "13154341c191636c1ae6954dad1f11c1e93e49d9a6ee8ad5c8ef41c7ecffa3b5",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_MIXED_OPERATOR_V4_SPEC_2026-10-31.md": "444be0c6016b12ea65181bf9cade8b46a7d1b31258457329cabfa3736e74cccf",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_CONSTRAINTS_V1_CONTRACT_2026-10-31.md": "802c91fdef2b877ded28c2592fc7890472d0110f33239a5d8271dbec5be2ff34",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NONLINEAR_REGULATOR_V1_CONTRACT_2026-10-31.md": "b7c0ffd139b389387d97d43412f479584fc1a66523c75f5ae10537078f374e41",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_NORM_EXTENSION_V1_CONTRACT_2026-10-31.md": "ff35eba4013df3bf2ad7433af8558673628f1993e480c457b91ac68f8f6352ba",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_CONTRACT_2026-10-31.md": "27b0133e8502b052984668025784f872d926878ce25c84d4c92f2d517f3de041",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_INVERSE_V1_SPEC_2026-10-31.md": "02e49fe3b1e40f6d56fff9dc03653f4858e6071d455af9d668ada034d48fa033",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_NUMERICAL_V1_SPEC_2026-10-31.md": "95a17f2c94c43939b1e7895c53c00085c76334c13ca34d7ccfc895243d6705d6",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PERIODIC_PREPARATION_V1_CONTRACT_2026-10-31.md": "b6e75a268a4c7bae71b335bb134faab87f4fc44668af6a75a3c15510c39a5af3",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-10-31.md": "9d91d497f273f93b020e56b4052fb7059a0690dedc24c6510c8e1316d7287072",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_EXECUTION_SPEC_2026-10-31.md": "522f6858eee7cb8bf5dd6507708166f28528a30cfb011717dc1b964f355391e4",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_EXECUTION_ADDENDUM_2026-10-31.md": "fe5986536c67d914a7a78c167ae0aae4c8f6a4b5835e59b0b8450b974c6e0427",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V2_REPORT_2026-10-31.md": "7a571f82d1997e8cbfa068caac7a9f39ec7c4027a6e8c85907e2dec2b8fb19df",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V1_CONTRACT_2026-10-31.md": "30dae66623e874cfc7c94fcd96943aa337a0b5f12e98e93b4876f49e90d39ddb",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_PREPARED_TEMPORAL_V2_SPEC_2026-10-31.md": "ef771c211494f249fc7781e6fcf2d318844901cf661c4208ce5e6f0a0f1f0e5e",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_SPATIAL_GAUGE_V1_CONTRACT_2026-10-31.md": "d3a49e9156cc2208e283599eb9643c78d45ea540760f307e45fe457033f3de2b",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V1_CONTRACT_2026-10-31.md": "2ab89978ec6482a3ffdd1c5031e84ad5916799e1e322d50a231cb128a732ca72",
+    "Theory/Gates/RES-001/RES001_R4C1_RTAU_VELOCITY_TANGENT_V2_SPEC_2026-10-31.md": "bdfe303c537ff3d63252a0b99798979cc2518d2d394c6a12d1e638315dd6a59a",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CANDIDATES_V1_2026-10-31.md": "437fef683248394db20c46a487d55db298c7dd1dbbd3bae76a298a6ac9e5e8c7",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_CONTRACT_2026-10-31.md": "4a590565f2e30306013366c874d5a3c26e3f5bcaf31f45e94ae21c68ead663ad",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V1_EXECUTION_SPEC_2026-10-31.md": "0e602e5e210bea787c7273ba166dfba01b0aff74872f40f918aa628b4fb8a3c1",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_CHARACTERISTICS_V3_REPORT_2026-10-31.md": "6fda78fa20a13f9ca92415684fb2ddc63e07494c11729897ed8f9107bb660b8c",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V1_CONTRACT_2026-10-31.md": "fc7c50869d0334d43e57acb146d10d89b7e3f85d0e77373c2d57bfd57d32e0e8",
+    "Theory/Gates/RES-001/RES001_R4C1_TWO_REPAIR_COMPARISON_V2_EXECUTION_ADDENDUM_2026-10-31.md": "c1aad8589f60c1473fdb784973baff4f3e08dfa850184287f96ad7245f5feb4e",
+    "Theory/Verification/ITSM_RTAU_PHYSICAL_NORM_HANDOFF_2026-10-31.md": "0ceee3b4a1e20faff898d34aec50c81b6e5e70d9f1917e37bd50c04e6eb6015a"
+  },
+  "total": 23
+}

@@ -7,7 +7,34 @@
 
 ---
 
-## Latest provisional research checkpoint - 30 October 2026
+## Latest provisional research checkpoint - 1 November 2026
+
+The [1 November checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-01.md)
+records the alignment-preservation result, two unadopted repair variants
+and subsequent R-tau calculations since commit `57d4f302`.
+
+- F-tau fails the declared homogeneous high-frequency gradient test. R-tau
+  has a mixed-regularity linear estimate on the separate homogeneous control,
+  and a certified periodic initial-constraint construction. No candidate
+  action is canonically selected by these results.
+- The actual prepared-data periodic density/momentum inverse, weak symplectic
+  chart, auxiliary/gauge rows and local current/density transport are now
+  recorded. The latest current46, direct-density23 and local-kernel10 checks
+  have exact replays; they do not supply a prepared finite-time theorem.
+- NEXT: the actual variable-coefficient physical norm and evolving compatible
+  domain, retaining zero-speed/quartic coupling, weighted range and chart
+  drift. The [contract](Theory/Gates/RES-001/RES001_R4C1_RTAU_PHYSICAL_NORM_V1_CONTRACT_2026-11-01.md)
+  is prepared; its hard derivation awaits explicit High confirmation. The
+  native goal last reported BLOCKED for that setting confirmation, not a
+  newly established physics failure. This checkpoint does not resume it.
+
+Canonical statuses below are unchanged: MAT-001 BLOCKED, K_Q NOT_DERIVED,
+V NOT_COMPUTED, UVIR-003 IN_PROGRESS, Stage4A CLOSED, G1-G6 INCOMPLETE.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE.
+The separate optics control and R4C1 editorial revision are scoped in the
+checkpoint; no paper submission, publication clearance or site deployment.
+
+## Preserved provisional research checkpoint - 30 October 2026
 
 The [30 October evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-30.md)
 records the research since the 21 October pushed recovery revision. It
