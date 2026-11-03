@@ -1,6 +1,40 @@
 # ITSM Changelog & Archive History
 
-## Publishing-action pinning — 1 November 2026
+## Research and SPARC checkpoint â€” 4 November 2026 (local preparation)
+
+- Add the [checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-04.md)
+  and a byte/provenance manifest for the work since delivered commit `e54b8256`.
+  The operator approved verified signed delivery on 4 November; the public
+  site refresh is a separate signed commit and verified Pages deployment.
+- Record the 2â€“3 November auxiliary, canonical, gauge, moving-range and
+  compensated-density work. The compensated trace inverse and complete
+  source chart retain their range/charge restrictions. The density-only
+  weakened norm fails its exact zero-speed control and remains rejected in
+  that scope; both stronger fast-gradient corrections preserve density L2.
+- Complete the initial strong-density source estimate, then derive the exact
+  longitudinal action Ward identity and whole-root ordinary principal energy
+  retaining both zero-speed directions. Record the coupled 20-direction
+  ordinary/quartic principal assembly and both cross blocks.
+- Extend the frozen-symbol calculation to an exact periodic principal-operator
+  composition, retaining finite-rank mean terms and every Fourier tail. Its
+  L2 change is invertible without a cutoff. Full actual-generator remainder,
+  time-dependent energy/constraints and a background time tube remain open.
+- Record full-SPARC conditional nuisance MCMC: 175 galaxies, 3,391 radial
+  measurements and 700 ensemble jobs, run with 16 worker processes. Initial
+  convergence diagnostics passed for 121 galaxies. Continuing the 54 unmet
+  cases to 20,000 total steps brought the total to 157/175; 18 remain open.
+  The fixed empirical simple-nu comparator is not an action-derived ITSM fit,
+  independent H0 determination or evidence of model preference.
+- Update README and the live research dashboard; retain dated historical
+  checkpoints. Leave the scientifically pinned master plan byte-identical
+  and use the live queue for current continuation. Preserve prior failed
+  versions, sidecars, private exclusions and ignored raw MCMC chains.
+- Goal PAUSED by the operator. R-tau unadopted; G1â€“G6 INCOMPLETE; MAT-001
+  BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED; review DEFERRED;
+  Rule9_cleared=false; physics_pass=false; gate_effect=NONE. No new paper
+  clearance, publication, site deployment or vault mutation.
+
+## Publishing-action pinning â€” 1 November 2026
 
 - Port main's verified upstream PyPA action pin to all four CAMB wheel/sdist
   publishing steps, covering both TestPyPI and PyPI. Only action references
@@ -8,7 +42,7 @@
 - YAML and semantic-diff checks pass. No package is published, website
   deployment is dispatched or scientific result changed by this maintenance.
 
-## Public site progress refresh — 1 November 2026
+## Public site progress refresh â€” 1 November 2026
 
 - Refresh Home, Progress and Evidence with the November checkpoint, explicit
   repair-comparison scope and the distinction between the homogeneous linear
@@ -21,7 +55,7 @@
   Delivery requires a verified signed commit and manual Pages deployment.
 
 
-## Research checkpoint and delivery — 1 November 2026
+## Research checkpoint and delivery â€” 1 November 2026
 
 - [Checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-01.md)
   consolidate progress since recovery commit57d4f302: alignment preservation,
@@ -418,12 +452,12 @@
   original action also does not by itself bound rescaled concentration;
   the tested thin-layer smoothing and partial surface repair remain failures.
 - Added the [complete checkpoint and exact-byte evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-10-30.md)
-  covering the previously uncommitted 23–30 October research, its source
+  covering the previously uncommitted 23â€“30 October research, its source
   dependencies, negative results, failed attempts and corrected interpretations.
 - Retained the P0-B metric-host locality comparison and its conditional
   constant-force/planetary restrictions. Neither P0-B nor R4C1 is promoted to
   an admitted healthy physical force window; no new parent is selected.
-- Recorded physical-sector readiness/range calculations, the expanded G1–G6
+- Recorded physical-sector readiness/range calculations, the expanded G1â€“G6
   programme, the quartic initial completion and its coupled acceleration,
   scalar/phase/vector, charge and time-tangent controls. These are not a full
   on-shell nodal solution or an all-action no-go.
@@ -449,7 +483,7 @@
   Saved a [direction reassessment](Theory/Core/ITSM_GOAL_DIRECTION_REASSESSMENT_2026-10-30.md):
   prioritize a justified physical Cauchy/low-energy domain and a decision if
   new assumptions are needed, rather than another unbounded derivative sweep.
-  The full native G1–G6 goal is paused for this checkpoint, not completed.
+  The full native G1â€“G6 goal is paused for this checkpoint, not completed.
 - Retained the missing matching-input screen and independent paper-release
   decisions. P1 rc7, P2 rc4, Thermodynamics 0.7.1 and R4C1 0.1.1 are unchanged;
   P2's earlier sensitivity FAIL18/19 and outstanding author/review decisions
@@ -802,7 +836,7 @@
   solution. An intermediate regime remains open. See the
   [T2P2 report](Theory/Gates/RES-001/RES001_R4C1_WEAK_SOURCE_REPORT_2026-09-29.md).
 - Both are conditional; `physics_pass=false`, `gate_effect=NONE`, Rule-9
-  review deferred. Master Tests 1–3 and publication holds are unchanged.
+  review deferred. Master Tests 1â€“3 and publication holds are unchanged.
 
 ## R4C1 periodic-force contrast and physical-domain preflight (2026-09-29)
 
@@ -820,8 +854,8 @@
   formal high-momentum range has been derived. See the
   [PD1 report](Theory/Gates/RES-001/RES001_R4C1_PHYSICAL_DOMAIN_PREFLIGHT_REPORT_2026-09-29.md).
 - Both remain conditional R4C1 research with `physics_pass=false`,
-  `gate_effect=NONE` and deferred—not cleared—Rule-9 review. Master Tests
-  1–3, MAT-001, UVIR-003 and publication holds are unchanged.
+  `gate_effect=NONE` and deferredâ€”not clearedâ€”Rule-9 review. Master Tests
+  1â€“3, MAT-001, UVIR-003 and publication holds are unchanged.
 
 ## R4C1-S4H-U explicit formal interval envelope (2026-09-29)
 
@@ -891,7 +925,7 @@
 
 ## R4C1 full-symbol and bounded initial-event energy screen (2026-09-29)
 
-- S4D's exact selected-chart `p²` coupling stops the proposed unweighted
+- S4D's exact selected-chart `pÂ²` coupling stops the proposed unweighted
   order-`p` recursive closure. S4E shows the opposing phase-pair entries
   are skew and rejects a graph-equivalent **diagonal** reweighting as an
   entrywise order-`p` repair; neither finding proves instability.
@@ -907,7 +941,7 @@
   preserved as an incomplete JSON-serialization run, not a valid receipt.
 - Next is temporal persistence along the registered B1 trajectory and a
   physically permitted wave-number domain. Full constrained-IVP,
-  all-sector stability, GR recovery, canonical Test 1 and Tests 2–3 remain
+  all-sector stability, GR recovery, canonical Test 1 and Tests 2â€“3 remain
   open. Rule-9 review remains deferred; no gate or publication promotion.
 
 ## R4C1 frame/dust principal-coupling audit (2026-09-26)
@@ -951,10 +985,10 @@
 - Registered R9-MT1-S4A as deferred for provisional diagnostic reuse. Updated
   the execution queue, dashboard and README; canonical gates stay unchanged.
 
-## Master Tests 1–3 and R4C1 conditional continuation (2026-09-25–2026-09-26)
+## Master Tests 1â€“3 and R4C1 conditional continuation (2026-09-25â€“2026-09-26)
 
 - Added the ordered Master ITSM test programme and its bounded disposition for
-  Tests 1–3. The result is not three completed physics tests: Test 1 has a
+  Tests 1â€“3. The result is not three completed physics tests: Test 1 has a
   conditional action/source-vector witness, Test 2 has a conditional spherical
   force law but rejects the universal pointwise extension on periodic `T^3`,
   and Test 3 retains reference-scale and nonlinear-coefficient
@@ -993,7 +1027,7 @@
   `K_Q=NOT_DERIVED`, `V=NOT_COMPUTED`, `Stage4A=CLOSED`, and
   `physics_pass=false` for the conditional R4C1 work.
 
-## TOP-X4 H1 / X4-S4 candidate-route disposition (2026-09-18–2026-09-19)
+## TOP-X4 H1 / X4-S4 candidate-route disposition (2026-09-18â€“2026-09-19)
 
 - Froze the separately identified `X4-S4-GW2` candidate action contract. Its
   validator passes `21/21` semantic checks and rejects `15/15` mutations,
@@ -1168,7 +1202,7 @@
 - Added an optional fail-closed adapter for an explicitly supplied,
   externally built AlterAlterBBN executable. It validates the six-column
   history and abundance contract, records hashes and parses `Y_He` and `D/H`.
-- Ran a pinned baseline and self-consistent ±5% time-reparameterisation
+- Ran a pinned baseline and self-consistent Â±5% time-reparameterisation
   controls in an isolated external checkout. The network responds to the
   controls, while the source audit confirms that its `H` column is not used by
   the network evolution; `dTdt` is the operative expansion input.
@@ -1394,7 +1428,7 @@
   gate, validate or refute the plenum, alter the canonical identity, or
   displace TOP-X4 Plan 11.
 
-## Recovery branch — evidence integration and documentation sync (2026-09-09)
+## Recovery branch â€” evidence integration and documentation sync (2026-09-09)
 
 **Scope:** reviewed and packaged the working-tree changes accumulated after
 the last pushed commit, `1fa3a86d879ec690f19df1793eccc0d235f2f1ea`, on
@@ -1628,11 +1662,11 @@ not override the live fail-closed dashboard.
 - **RR2 attempt:** Track-A matter-channel residue identity \(|g_{\rm can}|=V\) holds symbolically; live numeric route absent.
 - **Subgate:** `PASS_MAT001_RR2_RESIDUE_PATHWAY_ATTEMPTED_INCOMPLETE`; \(V\) still `NOT_COMPUTED`.
 
-## Recovery branch - plan RR2–H7 bounded completion (2026-08-06)
+## Recovery branch - plan RR2â€“H7 bounded completion (2026-08-06)
 
 ### Tier-1 forward plan
-- **Bounded completion:** RR2 incompleteness freeze; RR3 Conditional chart convention; H2 symbolic \(V\) invariance; H3–H6 holds/firewalls; H7 hygiene.
-- **Subgate:** `PASS_MAT001_PLAN_RR2_H7_BOUNDED_COMPLETION` — Derived path still open on true RR2 micro/residue work only.
+- **Bounded completion:** RR2 incompleteness freeze; RR3 Conditional chart convention; H2 symbolic \(V\) invariance; H3â€“H6 holds/firewalls; H7 hygiene.
+- **Subgate:** `PASS_MAT001_PLAN_RR2_H7_BOUNDED_COMPLETION` â€” Derived path still open on true RR2 micro/residue work only.
 
 ## Recovery branch - RR1 parent-action skeleton declared (2026-08-06)
 
@@ -1644,14 +1678,14 @@ not override the live fail-closed dashboard.
 
 ### Derived matching
 - **H1.3:** Audited declared sources for \(Z_\phi/g_\phi\); none derive absolute coefficients.
-- **RR1–RR5:** Frozen research requirements; H2–H5 remain blocked until RR1–RR3 close.
+- **RR1â€“RR5:** Frozen research requirements; H2â€“H5 remain blocked until RR1â€“RR3 close.
 - **Subgate:** `PASS_MAT001_PARENT_ACTION_H13_INCOMPLETE_SOURCES_AUDITED`; Stage 4A closed.
 
 ## Recovery branch - tier-1 forward plan and H1 parent-action start (2026-08-06)
 
 ### Planning and Derived path
-- **Forward plan:** Added `Theory/Core/ITSM_Tier1_Forward_Plan.md` for hurdles H0–H7 under the peer-review bar.
-- **H1.1–H1.2:** Declared parent-action Derived route to Track-A; inventory finds no numeric \(Z_\phi/g_\phi\); matching `DECLARED_INCOMPLETE`.
+- **Forward plan:** Added `Theory/Core/ITSM_Tier1_Forward_Plan.md` for hurdles H0â€“H7 under the peer-review bar.
+- **H1.1â€“H1.2:** Declared parent-action Derived route to Track-A; inventory finds no numeric \(Z_\phi/g_\phi\); matching `DECLARED_INCOMPLETE`.
 - **Also packaged:** Track-A join readiness and tier-1 hold-retention audit for remote publication.
 
 ## Recovery branch - tier-1 peer-review readiness hold retained (2026-08-06)
@@ -1660,7 +1694,7 @@ not override the live fail-closed dashboard.
 - **Hold re-verified:** Stage 5 `HOLD_TIER1_CLOSURE` retained; M2/M3/M6/M7 still unmet for tier-1 UVIR closure.
 - **Stage 4A contract:** Explicit reopen conditions recorded; all currently false; reopen not authorized.
 - **Claim ledger:** Peer-review allow/deny surface after Track-A Conditional MAT kit; dual-status MAT records checked fail closed.
-- **Subgate:** `PASS_TIER1_PEER_REVIEW_READINESS_HOLD_RETAINED` — not physics PASS.
+- **Subgate:** `PASS_TIER1_PEER_REVIEW_READINESS_HOLD_RETAINED` â€” not physics PASS.
 
 ## Recovery branch - MAT Track-A join readiness (2026-08-06)
 
@@ -1758,7 +1792,7 @@ not override the live fail-closed dashboard.
 - **Role firewall:** Explicitly rejected the gauge-projected \(Q_\rho,Q_\chi\) response impulses as substitutes for matter-interaction source covectors.
 - **Gate boundary:** Inventory passes as `PASS_MAT001_LIVE_UVIR_EXPORT_INVENTORY_BLOCKED`; \(V\) remains `NOT_COMPUTED`, MAT remains blocked, UVIR remains in progress and Stage 4A stays closed.
 
-## Recovery branch — GitHub Pages status sync (2026-08-05)
+## Recovery branch â€” GitHub Pages status sync (2026-08-05)
 
 ### Public recovery status
 - **Current checkpoint:** Updated the homepage and Research page from alpha.10 / matching Stage 2 to the frozen alpha.11 Tier-1 hold and the live UVIR-to-MAT action-export bottleneck.
@@ -1769,39 +1803,39 @@ not override the live fail-closed dashboard.
 - **Purpose-built site figures:** Replaced the five live visual slots with a coherent original v2 set (open-plenum hero, wake response, compact-domain topology, IR mode response and dual flow). The new figures are explicitly scoped as conceptual illustrations; previous assets remain retained.
 - **Responsive hardening:** Removed the fixed mobile minimum-height constraint that forced the dual-flow visual beyond a narrow viewport; the image now scales within the available column.
 
-## Version 11.4.2 — Red-Team Diagnostics & Independence Audits (2026-07-14)
+## Version 11.4.2 â€” Red-Team Diagnostics & Independence Audits (2026-07-14)
 
 ### Team Infrastructure & Adversarial Setup
 - **Adversarial Architecture:** Formalized the repository structure into dedicated operational units, adding `Team Red - Grok/` (empirical falsification), `Team Violet - Claude/` (logic and theoretical consistency auditing), and `Team Amber - Sol/` (methodology, coordination, and synthesis).
 - **Codified Mandates:** Added strict `README.md` manifestos to each team directory explicitly dictating their operational boundaries and ensuring reviewers do not "defend" the framework but subject it to hostile tests and objective logic audits.
 
 ### Diagnostic Tools
-- **TR-000 — C=2/3 vs C=1.0 Controlled Comparison (`redteam_comparison.py`):** Initial falsification-focused diagnostic auditing the geometric projection factor against the standard MOND limit under identical nuisance bounds. Result: C=1.0 marginally preferred (91 vs 79 galaxies; mean Delta-chi^2 = -36.81, median = -0.76).
-- **TR-001-v2 — Deep Re-Optimization Diagnostic (`tr001_v2_diagnostic.py`):** Locked execution package targeting the 30 worst-performing galaxies under C=2/3. Uses 5x multi-start L-BFGS-B + differential evolution (popsize=20) via multiprocessing.Pool across all available cores. Key findings: (1) median Delta-chi^2 of -0.76 confirms the mean is heavily outlier-driven; (2) 10% trimmed mean of -6.88 confirms a moderate systematic lean toward C=1; (3) re-optimization parameter vectors railing at bound walls for multiple galaxies signal structural incompatibility between C=2/3 and those rotation curves.
+- **TR-000 â€” C=2/3 vs C=1.0 Controlled Comparison (`redteam_comparison.py`):** Initial falsification-focused diagnostic auditing the geometric projection factor against the standard MOND limit under identical nuisance bounds. Result: C=1.0 marginally preferred (91 vs 79 galaxies; mean Delta-chi^2 = -36.81, median = -0.76).
+- **TR-001-v2 â€” Deep Re-Optimization Diagnostic (`tr001_v2_diagnostic.py`):** Locked execution package targeting the 30 worst-performing galaxies under C=2/3. Uses 5x multi-start L-BFGS-B + differential evolution (popsize=20) via multiprocessing.Pool across all available cores. Key findings: (1) median Delta-chi^2 of -0.76 confirms the mean is heavily outlier-driven; (2) 10% trimmed mean of -6.88 confirms a moderate systematic lean toward C=1; (3) re-optimization parameter vectors railing at bound walls for multiple galaxies signal structural incompatibility between C=2/3 and those rotation curves.
 - **Results Logging:** All diagnostic outputs siloed in `Team Red - Grok/Outputs/` to separate adversarial testing material from the canonical codebase.
 
-## Version 11.4.1 — Podcast Critique Integration (2026-07-06)
+## Version 11.4.1 â€” Podcast Critique Integration (2026-07-06)
 
 ### Rhetorical & Structural Polish
 - **Abstract Caveat:** Appended a phenomenological bridge caveat to the "zero free parameters" claim to honestly signal the closure gap prior to the full field-theoretic derivation.
-- **$S_8$ Tension Link (§VIII):** Structurally linked the $\Omega_m$ increase (required for BBN/cosmic age) to the worsening of the $S_8$ tension, replacing disconnected facts with a mechanistic explanation. Maintained strict cautionary phrasing around $\Gamma_{\text{shear}}$ as an open direction, avoiding premature "active frontier" enthusiasm.
-- **Quantitative Falsifiability (§VII.D):** Replaced a qualitative deferral regarding the Bullet Cluster with a concrete quantitative falsifiability target for future hydro-simulations (the $\sim 150$--$210$ kpc X-ray/lensing centroid offset), citing Clowe et al. 2006 and recent JWST reanalyses.
+- **$S_8$ Tension Link (Â§VIII):** Structurally linked the $\Omega_m$ increase (required for BBN/cosmic age) to the worsening of the $S_8$ tension, replacing disconnected facts with a mechanistic explanation. Maintained strict cautionary phrasing around $\Gamma_{\text{shear}}$ as an open direction, avoiding premature "active frontier" enthusiasm.
+- **Quantitative Falsifiability (Â§VII.D):** Replaced a qualitative deferral regarding the Bullet Cluster with a concrete quantitative falsifiability target for future hydro-simulations (the $\sim 150$--$210$ kpc X-ray/lensing centroid offset), citing Clowe et al. 2006 and recent JWST reanalyses.
 
-## Version 11.4.0 — The Safe-Seven Foundational Architecture (2026-07-06)
+## Version 11.4.0 â€” The Safe-Seven Foundational Architecture (2026-07-06)
 
 ### Structural & Theoretical Formalization
-- **Claim Status Matrix (§I):** Introduced a strict ontological table distinguishing fundamental postulates, derived geometric consequences, phenomenological effective field closures, and open problems.
-- **Toroidal BEC Grounding (§III.E):** Formally grounded the circulation quantization and vortex nucleation mechanisms in laboratory toroidal Bose-Einstein Condensate kinematics (Onsager-Feynman, Ryu et al., Ramanathan et al.).
-- **Matter-Phonon EFT Bridge (§III.F):** Clarified that the $2/3$ coefficient remains a global geometric trace ratio and formalized the local interaction via a tree-level Effective Field Theory (EFT) valid below a $\Lambda_{\text{UV}}$ cutoff.
-- **Syntropy Terminology (§III.F):** Appended a footnote linking the "Syntropic Source Vector" $Q^\nu$ to classical matter-creation tensors established in Prigogine/Calvão cosmological models.
-- **AQUAL Benchmark Correction (§VII.D):** Replaced legacy $\alpha=1$ text with a rigorously verified control test. Statistically documented that standard AQUAL achieves a superior raw fit ($\chi^2 = 21{,}598$ vs $27{,}740$), securing the $2/3$ coefficient exclusively upon its zero-parameter geometric derivation rather than phenomenological curve-fitting performance. Explicitly logged both vs. NFW ($\Delta\text{BIC}=-21.50$) and vs. ITSM ($\Delta\text{BIC}=-37.22$) comparisons.
+- **Claim Status Matrix (Â§I):** Introduced a strict ontological table distinguishing fundamental postulates, derived geometric consequences, phenomenological effective field closures, and open problems.
+- **Toroidal BEC Grounding (Â§III.E):** Formally grounded the circulation quantization and vortex nucleation mechanisms in laboratory toroidal Bose-Einstein Condensate kinematics (Onsager-Feynman, Ryu et al., Ramanathan et al.).
+- **Matter-Phonon EFT Bridge (Â§III.F):** Clarified that the $2/3$ coefficient remains a global geometric trace ratio and formalized the local interaction via a tree-level Effective Field Theory (EFT) valid below a $\Lambda_{\text{UV}}$ cutoff.
+- **Syntropy Terminology (Â§III.F):** Appended a footnote linking the "Syntropic Source Vector" $Q^\nu$ to classical matter-creation tensors established in Prigogine/CalvÃ£o cosmological models.
+- **AQUAL Benchmark Correction (Â§VII.D):** Replaced legacy $\alpha=1$ text with a rigorously verified control test. Statistically documented that standard AQUAL achieves a superior raw fit ($\chi^2 = 21{,}598$ vs $27{,}740$), securing the $2/3$ coefficient exclusively upon its zero-parameter geometric derivation rather than phenomenological curve-fitting performance. Explicitly logged both vs. NFW ($\Delta\text{BIC}=-21.50$) and vs. ITSM ($\Delta\text{BIC}=-37.22$) comparisons.
 
-## Version 11.3.3 — Casimir Topology Softening (2026-07-06)
+## Version 11.3.3 â€” Casimir Topology Softening (2026-07-06)
 
 ### Language & Claims Alignment
 - **Casimir Derivation (Lines 825, 870):** Removed the "first principles" descriptor from the Casimir energy calculation for $H_t/H_p$. The language now accurately reflects the current status as a "zeta-function regularization of the Casimir vacuum energy" derived from the $T^3$ topology without observational fitting, properly reserving the term "first-principles" for the future comprehensive derivation from the renormalized stress-energy tensor (slated for v11.4.0).
 
-## Version 11.3.2 — Flowchart Visual Polish & Postulate Transparency (2026-07-05)
+## Version 11.3.2 â€” Flowchart Visual Polish & Postulate Transparency (2026-07-05)
 
 ### Figure Updates
 - **Comparison Flowchart (`itsm_model_comparison_flowchart.py`):** 
@@ -1809,28 +1843,28 @@ not override the live fail-closed dashboard.
   - Refined the visual palette from a confusing two-blue scheme to four distinct hue families for immediate legibility.
   - Removed the incorrectly stated $v_c \approx 600$ km/s claim for the Bullet Cluster (which conflicted with bulk shock velocities $\sim 10^3$ km/s), aligning the chart with the corrected qualitative fluid-dynamic phase separation described in the main text.
   - Clarified JWST prediction mechanism as "vortex scaffolding / 4/9 BTFR bound."
-## Version 11.3.1 — Causality, AQUAL Testing, and Microphysical Polish (2026-07-05)
+## Version 11.3.1 â€” Causality, AQUAL Testing, and Microphysical Polish (2026-07-05)
 
 ### Mechanical & Structural Fixes
-- **$\kappa_{OF}$ and Vacuum Correction (§III):** Corrected the microscopic Onsager-Feynman vortex quantum to $3.72 \times 10^{24} \text{ m}^2/\text{s}$ (for $m=10^{-22}$ eV), yielding a coherent $N \approx 1.02 \times 10^{10}$ vortex quanta ratio. Corrected the scalar field vacuum expectation value sign, and properly identified the coherence length $\xi$ scale using the galactic virial velocity ($v_{\text{gal}} \sim 150 \text{ km/s}$) rather than the relativistic Compton wavelength.
-- **Causality Criterion 2 (§III.C):** Replaced the faulty phase-velocity causality assumption with an explicit convexity requirement ($f''(X) \ge 0$), mathematically verifying that the Born-Infeld Lagrangian exceeds $c_s=1$ near $X \sim 2a_0^2$. Formally deferred causality to the group-velocity argument. Softened the structural Uniqueness Proof to claim it is the "minimal analytic function known to satisfy the remaining differential constraints."
-- **AQUAL Comparison Table (§VII):** Formally injected the completed AQUAL SPARC parameterization tests into the BIC comparison section. Statistically preempted the use of the empirical $\alpha=1$ limit by proving it achieves a significantly worse fit (mean $\Delta\text{BIC} = -37.29$ in favor of ITSM, 70% BIC-preference) than the rigid geometric $2/3$ factor.
-- **Dynamic Scale Matching (§I & X):** Eradicated the claim that $a_0$ is derived from "topology alone". Explicitly integrated the **Dynamic Scale Matching Postulate** into the Abstract and Introduction, and added it to the Limitations section as a required physical closure condition linking the compact circulation scale to the cosmological horizon.
+- **$\kappa_{OF}$ and Vacuum Correction (Â§III):** Corrected the microscopic Onsager-Feynman vortex quantum to $3.72 \times 10^{24} \text{ m}^2/\text{s}$ (for $m=10^{-22}$ eV), yielding a coherent $N \approx 1.02 \times 10^{10}$ vortex quanta ratio. Corrected the scalar field vacuum expectation value sign, and properly identified the coherence length $\xi$ scale using the galactic virial velocity ($v_{\text{gal}} \sim 150 \text{ km/s}$) rather than the relativistic Compton wavelength.
+- **Causality Criterion 2 (Â§III.C):** Replaced the faulty phase-velocity causality assumption with an explicit convexity requirement ($f''(X) \ge 0$), mathematically verifying that the Born-Infeld Lagrangian exceeds $c_s=1$ near $X \sim 2a_0^2$. Formally deferred causality to the group-velocity argument. Softened the structural Uniqueness Proof to claim it is the "minimal analytic function known to satisfy the remaining differential constraints."
+- **AQUAL Comparison Table (Â§VII):** Formally injected the completed AQUAL SPARC parameterization tests into the BIC comparison section. Statistically preempted the use of the empirical $\alpha=1$ limit by proving it achieves a significantly worse fit (mean $\Delta\text{BIC} = -37.29$ in favor of ITSM, 70% BIC-preference) than the rigid geometric $2/3$ factor.
+- **Dynamic Scale Matching (Â§I & X):** Eradicated the claim that $a_0$ is derived from "topology alone". Explicitly integrated the **Dynamic Scale Matching Postulate** into the Abstract and Introduction, and added it to the Limitations section as a required physical closure condition linking the compact circulation scale to the cosmological horizon.
 
-## Version 11.3.0 — Joint Cosmological Anchors & Adversarial Review Resolutions (2026-07-05)
+## Version 11.3.0 â€” Joint Cosmological Anchors & Adversarial Review Resolutions (2026-07-05)
 
 ### Mathematical Fixes & Core Derivations (Category 1)
-- **The $a_0$ Derivation (§III.A):** Replaced the dimensionally flawed $\kappa/l$ division. Derived $a_0$ properly using angular velocity ($\omega = c/l = H_0 \implies a_{\text{yield}} = c\omega = cH_0$), distributed across the $2\pi$ topology yielding $a_0 = cH_0/2\pi$. Explicitly caveated the "dynamic scale matching" postulate.
+- **The $a_0$ Derivation (Â§III.A):** Replaced the dimensionally flawed $\kappa/l$ division. Derived $a_0$ properly using angular velocity ($\omega = c/l = H_0 \implies a_{\text{yield}} = c\omega = cH_0$), distributed across the $2\pi$ topology yielding $a_0 = cH_0/2\pi$. Explicitly caveated the "dynamic scale matching" postulate.
 - **Headline $H_0$ Consistency:** Excised the uninformative $H_0 = 70.63$ SPARC ensemble median from headline results. Anchored exclusively to the Joint Global Likelihood ($72.50$) and the parameter-free Casimir prediction ($72.97$).
-- **The $\Lambda_{\text{UV}}$ Cutoff (§III.H.1):** Corrected the UV cutoff from $10a_0$ to $100a_0$, verified by calculating where the fractional kinetic term reaches $>99\%$ of its asymptotic form.
-- **Cosmological Circulation Quantum (§III.B):** Fixed typographical error in $\kappa_{\text{cosmo}}$, correcting it from $\sim 10^{39} \text{ m}^2/\text{s}$ to the accurate $\sim 3.8 \times 10^{34} \text{ m}^2/\text{s}$, which correctly yields the $N \approx 10^{10}$ vortex-quanta ratio.
+- **The $\Lambda_{\text{UV}}$ Cutoff (Â§III.H.1):** Corrected the UV cutoff from $10a_0$ to $100a_0$, verified by calculating where the fractional kinetic term reaches $>99\%$ of its asymptotic form.
+- **Cosmological Circulation Quantum (Â§III.B):** Fixed typographical error in $\kappa_{\text{cosmo}}$, correcting it from $\sim 10^{39} \text{ m}^2/\text{s}$ to the accurate $\sim 3.8 \times 10^{34} \text{ m}^2/\text{s}$, which correctly yields the $N \approx 10^{10}$ vortex-quanta ratio.
 
 ### Honest Reframing & Falsifiability Scoping (Category 2)
-- **The Renormalization IR Limit (§III.H.2):** Deleted the broken analytical integral. Reframed $4/9$ as the strict, unrenormalized tree-level theoretical lower bound, acknowledging that bridging to the empirical limit of $1$ requires full lattice QFT.
-- **Bullet Cluster Scoping (§VII.D & Abstract):** Removed the Bullet Cluster from the triad of "near-term falsifiable predictions." Clarified the distinction between bulk collision velocity and local shear $X$, stating that modeling this requires full 3D fractional-Lagrangian hydrodynamics.
-- **The $n$-Value Internal Contradiction (§VI):** Removed the claim of a dynamic $n$-value phase transition. Committed to the $n \approx 0$ CPL-like fit result, plainly stating the volume-tracking mechanism mimics a near-static cosmological constant ($w \approx -1$) in the late universe.
-- **NANOGrav Falsifiability (§VIII.C):** Explicitly stated that current 15-year PTA arrays lack the angular cross-correlation baseline needed to decouple scalar-breathing modes from tensor modes. Deferred testability to the SKA-era.
-- **The $a_0(z)$ High-$z$ BTFR Prediction (§VIII):** Reframed the high-$z$ BTFR zero-point shift as a genuine, quantitatively specific open test, rather than a confirmed prediction, explicitly acknowledging the contradictory non-monotonic offset shrinking observed between $z \sim 0.9$ and $z \sim 2.3$.
+- **The Renormalization IR Limit (Â§III.H.2):** Deleted the broken analytical integral. Reframed $4/9$ as the strict, unrenormalized tree-level theoretical lower bound, acknowledging that bridging to the empirical limit of $1$ requires full lattice QFT.
+- **Bullet Cluster Scoping (Â§VII.D & Abstract):** Removed the Bullet Cluster from the triad of "near-term falsifiable predictions." Clarified the distinction between bulk collision velocity and local shear $X$, stating that modeling this requires full 3D fractional-Lagrangian hydrodynamics.
+- **The $n$-Value Internal Contradiction (Â§VI):** Removed the claim of a dynamic $n$-value phase transition. Committed to the $n \approx 0$ CPL-like fit result, plainly stating the volume-tracking mechanism mimics a near-static cosmological constant ($w \approx -1$) in the late universe.
+- **NANOGrav Falsifiability (Â§VIII.C):** Explicitly stated that current 15-year PTA arrays lack the angular cross-correlation baseline needed to decouple scalar-breathing modes from tensor modes. Deferred testability to the SKA-era.
+- **The $a_0(z)$ High-$z$ BTFR Prediction (Â§VIII):** Reframed the high-$z$ BTFR zero-point shift as a genuine, quantitatively specific open test, rather than a confirmed prediction, explicitly acknowledging the contradictory non-monotonic offset shrinking observed between $z \sim 0.9$ and $z \sim 2.3$.
 
 ### Theoretical Refinement & Statistical Integrity (Category 3 - Completed)
 - **Item 16 (BBN & Cosmic Age):** Restored the Landau Two-Fluid model ($\rho_0$/$\rho_{\text{ex}}$). Stripped the flawed FDM Jeans-suppression scale argument and explicitly stated the suppression of $\rho_{\text{ex}}$ virialization at galactic scales remains an open theoretical question.
@@ -1838,8 +1872,8 @@ not override the live fail-closed dashboard.
 - **MOND Empirical Reconciliation (Tables V/VI):** Restructured the theoretical parameter framing for the SPARC NFW/MOND/ITSM Bayesian comparison. Explicitly acknowledged MOND's superior raw $\chi^2$ (NFW 18,375 vs MOND 19,639 vs ITSM 27,854) and corrected the penalty calculation to honestly reflect $k=0$ for both ITSM and MOND when using fixed literature constants.
 - **Hierarchical Joint Chain Update:** Cleanly replaced the global joint benchmark of $H_0 = 72.50$ and $\Omega_m = 0.255$ with the robust 3,000-step posterior medians: $H_0 = 72.91$ and $\Omega_m = 0.277$ ($n = 0.007$). Added a methodological clarification that the profile likelihood carries a small systemic bias as an approximation to full Bayesian marginalization.
 - **Pantheon Standalone Restoration:** Un-coupled the Pantheon+ standalone fit from the joint fit, restoring its value to $n = 2.857$ and bringing back the pure volumetric dilution ($n=3.0$) context.
-- **The $S_8$ Tension Disclosure (§VI.I):** Removed the overclaimed $S_8$ tension resolution from the introduction and manuscript body. Explicitly acknowledged the internal framework tension where the $\Omega_m = 0.277$ requirement for BBN/age constraints mathematically worsens late-time structural clustering ($\sigma_8$) relative to $\Lambda$CDM.
-- **Bullet Cluster Caveat (§VI.G):** Eliminated the claim of an "abrupt transition into acoustic lock", acknowledging that the exact collision kinematics for $10^3$ km/s non-equilibrium mergers require formal 3D fractional-Lagrangian hydrodynamics rather than standard 1D scalar bounds.
+- **The $S_8$ Tension Disclosure (Â§VI.I):** Removed the overclaimed $S_8$ tension resolution from the introduction and manuscript body. Explicitly acknowledged the internal framework tension where the $\Omega_m = 0.277$ requirement for BBN/age constraints mathematically worsens late-time structural clustering ($\sigma_8$) relative to $\Lambda$CDM.
+- **Bullet Cluster Caveat (Â§VI.G):** Eliminated the claim of an "abrupt transition into acoustic lock", acknowledging that the exact collision kinematics for $10^3$ km/s non-equilibrium mergers require formal 3D fractional-Lagrangian hydrodynamics rather than standard 1D scalar bounds.
 - **Abstract & Introduction Realignment:** Purged the $S_8$ resolution claims from the Abstract and Introduction itemized lists, aligning the document's theoretical posture with the genuine open problems identified during peer review.
 
 ### Codebase & Joint Inference Fixes
@@ -1847,17 +1881,17 @@ not override the live fail-closed dashboard.
 
 
 
-## Version 11.2.1 — Final Peer-Review Editorial Polish (2026-06-29)
+## Version 11.2.1 â€” Final Peer-Review Editorial Polish (2026-06-29)
 
 ### Structural & Theoretical Patches
 - **Zero-Net-Vorticity Defense:** Injected a rigorous topological defense for the $T^3$ zero-net-vorticity constraint. Explicitly scoped the superhorizon domain scale ($L \gtrsim 1.25\chi_{\text{rec}}$) to mathematically permit local circulation asymmetry within the causal horizon, and physically identified antivortex partners as regions of counter-rotating condensate flow.
 - **Reference Rectification:** Inserted missing canonical citations for anisotropic Raychaudhuri/Bianchi cosmologies (Misner, Thorne & Wheeler 1973; Ellis & MacCallum 1969).
 - **Layout & Notation Consistency:** Corrected a stale $H_0$ value in the multi-sector Table IV, resolved abstract $N_{\rm data}$ inconsistencies, standardized NANOGrav band notation to $[1.08, \pi]\text{ nHz}$, resolved overfull `\hbox` margin bleeds in the table environment, and eradicated empty structural headers.
 
-## Version 11.2.0 — Comprehensive Theoretical Fortification (2026-06-29)
+## Version 11.2.0 â€” Comprehensive Theoretical Fortification (2026-06-29)
 
 ### Theoretical Fortification & Defenses
-- **Topology Viability (COMPACT Constraints):** Formally established the $T^3$ ($E_1$) fundamental domain scale as $L \approx 1.25 \chi_{\text{rec}}$ to strictly evade Planck matched-circle limits while preserving the Casimir derivations. Explicitly tied this non-local Casimir stress to QFT bounds (Birrell & Davies 1982, Lachièze-Rey & Luminet 1995) and framed it as a falsifiable prediction for LiteBIRD/CMB-S4.
+- **Topology Viability (COMPACT Constraints):** Formally established the $T^3$ ($E_1$) fundamental domain scale as $L \approx 1.25 \chi_{\text{rec}}$ to strictly evade Planck matched-circle limits while preserving the Casimir derivations. Explicitly tied this non-local Casimir stress to QFT bounds (Birrell & Davies 1982, LachiÃ¨ze-Rey & Luminet 1995) and framed it as a falsifiable prediction for LiteBIRD/CMB-S4.
 - **Literature Comparison Subsection:** Added explicit theoretical demarcation against Fuzzy Dark Matter (FDM), Berezhiani-Khoury Superfluid Dark Matter (SFDM), and Prigogine open cosmologies. Unambiguously stated the ITSM possesses zero dark matter particles and derives $a_0$ geometrically, explicitly differentiating it from B-K SFDM's phenomenological approach.
 - **Creation Pressure Formalism:** Injected explicit thermodynamic equations defining the Creation Pressure ($P_c = -(\Gamma/3H)(\rho + P)$) to demonstrate mathematical continuity with the phantom equation of state ($w_{\text{eff}} = -1.27$).
 - **Ghost-Free Stability Verification:** Embedded a rigorous formal proof validating that the scalar field Hamiltonian remains strictly positive-definite ($\mathcal{H} > 0$), isolating the phantom modulus entirely as a macroscopic open-system artifact, definitively closing the ghost instability vulnerability.
@@ -1869,30 +1903,30 @@ not override the live fail-closed dashboard.
 ### Repository Optimization
 - **Structural Integrity:** Enforced strict file-system compartmentalization. Migrated all floating analytical scripts into the unified `Scripts/` architecture and relocated all visual outputs to `Assets/Figures/`.
 
-## Version 11.1.3 — Pre-Submission Peer-Review Defenses (2026-06-27)
+## Version 11.1.3 â€” Pre-Submission Peer-Review Defenses (2026-06-27)
 - **Scalar GW Modes Clarification:** Added explicit mathematical defense noting that scalar GW modes are detected as effective path-length modulations via fluid density fluctuations, preserving the pristine rank-2 tensor nature of General Relativity.
 - **Phantom Ghost Stability:** Added rigorous thermodynamic defense explicitly stating that the phantom state ($w=-1.27$) is a macroscopic tracking artifact of an open thermodynamic circuit, preserving a strictly positive-definite Hamiltonian ($\mathcal{H} > 0$) for the scalar field.
 - **Isotropic Trace Ratio:** Clarified that the $C_{\rm proj} = 2/3$ geometric trace invariant holds strictly regardless of galactic disk inclination, as the $T^3$ manifold is formally isotropic at local galactic scales (with anisotropy manifesting exclusively as a Hubble-scale phenomenon).
 
-## Version 11.1.2 — Peer-Review Cosmology Polish (2026-06-27)
+## Version 11.1.2 â€” Peer-Review Cosmology Polish (2026-06-27)
 
-### Tier 1 — Core Physics Justification & Formalism
+### Tier 1 â€” Core Physics Justification & Formalism
 - **NANOGrav Resonance Anchor (FIX-25):** Rewrote the NANOGrav $[1.08, \pi]$ prediction justification. Dropped the incorrect "frequency-shift" argument. Grounded the $f_{\rm ref} = 1.08$ nHz anchor in the physical vortex core mass scale of SMBHs ($M \sim 10^9 M_\odot$), linking the resonance directly to the $T^3$ fundamental circulation period.
 - **Scalar GW Modes (FIX-26):** Clarified scalar GW modes to address reviewer confusion regarding the "scalar-tensor" label. Explicitly proved the Einstein-Hilbert tensor sector remains unmodified (pure rank-2 tensor GWs). Demonstrated that the scalar polarization modes arise entirely from longitudinal acoustic phonons in the fluid $Q^\nu$ source tensor.
 
-### Tier 2 — Precision & Notation Polish
+### Tier 2 â€” Precision & Notation Polish
 - **Geometric Trace Ratio (FIX-10):** Clarified that the $C_{\rm proj} = 2/3$ geometric trace ratio enters specifically through the $\mathcal{L}_{\rm int}$ cross-term, proving the interaction coupling strength without curve fitting.
 - **Microcausality Defence (FIX-11):** Addressed microcausality concerns. Explicitly bounded the superluminal phase velocity ($c_s^2 \approx 1.11$) as a standard EFT transition artifact, strictly bounding the signal front velocity to $c \le 1$.
 - **UV Cutoff (FIX-12):** Specified the UV cutoff as $\Lambda_{\rm UV} \approx 10 a_0$, matching standard Wilsonian effective field theory formalisms.
 - **Casimir Shear Projection (FIX-13):** Added standard formal citations (Raychaudhuri equation) to validate the geometric shear scaling used in the Casimir-Hubble projection derivation.
 - **Hubble Spread (FIX-14):** Emphasized that the wide $69.6-78.6$ km/s/Mpc variance in MCMC chains represents systemic external dataset bias, not internal theoretical uncertainty.
 
-### Tier 3 — Minor Polish
-- **BBN Syntropic Coupling (FIX-15):** Added explicit integration of BBN syntropic coupling to §IV.C, demonstrating the coupling vanishes completely at $z \gg 1100$, preserving the canonical expansion rate during Big Bang Nucleosynthesis and the predicted $^4$He mass fraction.
+### Tier 3 â€” Minor Polish
+- **BBN Syntropic Coupling (FIX-15):** Added explicit integration of BBN syntropic coupling to Â§IV.C, demonstrating the coupling vanishes completely at $z \gg 1100$, preserving the canonical expansion rate during Big Bang Nucleosynthesis and the predicted $^4$He mass fraction.
 - **Abstract Rhetoric (FIX-16):** Softened the "$\Lambda$CDM is broken" rhetorical statement in the Abstract to "faces escalating empirical challenges," aligning with Tier-1 journal standards.
 - **Script Enumeration (FIX-17):** Updated the GitHub README script enumeration from a static 35 list to acknowledge the full 50+ script production architecture.
 - **NANOGrav Figure Verification (FIX-18):** Verified that the NANOGrav stochastic GWB simulation (`itsm_nanograv_resonance.py`) formally utilizes the physically-derived Lorentzian resonance profile rather than a standard Gaussian.
-- **Trademark Formatting (FIX-27):** Stripped unregistered trademark symbols (™) from the title/abstract footer as they violate journal formatting standards.
+- **Trademark Formatting (FIX-27):** Stripped unregistered trademark symbols (â„¢) from the title/abstract footer as they violate journal formatting standards.
 
 ### Repository Restructuring
 - **Manuscript Directory Cleanup:** Removed obsolete `Main.tex` and `Main.pdf` files.
@@ -1900,7 +1934,7 @@ not override the live fail-closed dashboard.
 - **SPARC Ledger Regeneration:** Reran MCMC data pipeline to regenerate `appendix_sparc_table.tex` in the new Supplementary directory.
 - **Complementary Papers Architecture:** Formally integrated two physics bridge papers into the `papers/` directory structure (`Syntropic-Thermodynamics` and `T3-Illusion`) and documented them in the primary README.
 
-## Version 11.1.1 — Citation Integrity, Archive Sweep & Zenodo Publication (2026-06-21)
+## Version 11.1.1 â€” Citation Integrity, Archive Sweep & Zenodo Publication (2026-06-21)
 
 ### Public Physics Papers
 - **Citation Overhaul:** Conducted full citation audit across all four short papers, implementing canonical physics references:
@@ -1915,7 +1949,7 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 11.1.0 — Theoretical Synthesis & Thermodynamic Formalization (2026-06-21)
+## Version 11.1.0 â€” Theoretical Synthesis & Thermodynamic Formalization (2026-06-21)
 
 
 ### Public Physics Formalization
@@ -1924,7 +1958,7 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 11.0.1 — Repository Polish & Citation Audit (2026-06-21)
+## Version 11.0.1 â€” Repository Polish & Citation Audit (2026-06-21)
 
 ### Public Physics Formalization
 - **Citation Integrity:** Audited `references.bib` to correct the citation tag mapping for the primary `itsm_main` manuscript, ensuring clean BibTeX compilation without warning artifacts.
@@ -1933,15 +1967,15 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 11.0.0 — The T³ Catalyst & Theoretical Architecture Framework (2026-06-20)
+## Version 11.0.0 â€” The TÂ³ Catalyst & Theoretical Architecture Framework (2026-06-20)
 
 ### Public Physics Formalization
-- **T³ Illusion Catalyst (`papers/T3-Illusion/`):** Finalized the topological resolution of celestial anomalies into a standalone, Zenodo-ready manuscript. Injected the reserved Zenodo DOI.
+- **TÂ³ Illusion Catalyst (`papers/T3-Illusion/`):** Finalized the topological resolution of celestial anomalies into a standalone, Zenodo-ready manuscript. Injected the reserved Zenodo DOI.
 - **ITSM Main Manuscript Zenodo Update:** Triggered the 'New Version' pipeline for the primary ITSM framework, decoupling the Python computational engines from the academic PDF to ensure peer-review purity.
 
 ---
 
-## Version 10.9.1 — 3D Acoustic Wake Plots & Repository Recovery (2026-06-20)
+## Version 10.9.1 â€” 3D Acoustic Wake Plots & Repository Recovery (2026-06-20)
 
 ### New Figures (`Assets/Figures/`)
 - **`itsm_3d_wake_analogy.png`**: Generated new 3D visual plotting the topological shear stress of the Superfluid Plenum acting on local galactic metrics.
@@ -1951,32 +1985,32 @@ not override the live fail-closed dashboard.
 - **Repository Rescue Operation:** Executed an emergency local `git reset --hard` to rollback a rogue AI's destructive file system wipe. Recovered the encrypted vault scripts and the missing 3D plots from ghost commits (`38e7ad5`), transitioning to a non-destructive version-history mindset for local operations.
 
 ---
-## Version 10.9.0 — New Figures, Cover Letter & Flowchart Polish (2026-06-15)
+## Version 10.9.0 â€” New Figures, Cover Letter & Flowchart Polish (2026-06-15)
 
-### New Figures (`Scripts/` → `Assets/Figures/`)
+### New Figures (`Scripts/` â†’ `Assets/Figures/`)
 
 #### `Scripts/itsm_model_comparison_flowchart.py` (new)
-- **3-column structured comparison table** (ΛCDM | MOND | ITSM) answering 6 key cosmological
+- **3-column structured comparison table** (Î›CDM | MOND | ITSM) answering 6 key cosmological
   questions in a publication-quality academic layout
 - **Cells color-coded by explanatory power:** sage green = addresses/explains, steel blue = partially
   addresses, rose = does not address, sky blue = ITSM zero-parameter prediction
-- **Header colors:** charcoal (Question), dark grey (ΛCDM), muted forest green (MOND), navy (ITSM)
+- **Header colors:** charcoal (Question), dark grey (Î›CDM), muted forest green (MOND), navy (ITSM)
 - **Title spacing fixed:** axes shifted to `[0.0, 0.06, 1.0, 0.86]` giving 13% clear top margin;
-  title placed at `y=0.985` with `va=top` — zero overlap with the header row
+  title placed at `y=0.985` with `va=top` â€” zero overlap with the header row
 - Saves to `Assets/Figures/itsm_model_comparison_flowchart.png` at 600 dpi
 
 #### `Scripts/itsm_mock_jwst_spectrum.py` (new)
-- **Mock JWST NIRSpec spectrum** at z=14 comparing ΛCDM baseline vs. ITSM prediction
+- **Mock JWST NIRSpec spectrum** at z=14 comparing Î›CDM baseline vs. ITSM prediction
 - Shows 15% CO(3-2) flux suppression and 20% Na I D equivalent-width reduction predicted by ITSM
   bottom-light IMF / altered ISM thermodynamics at high redshift
-- Labeled explicitly as "(Illustrative Prediction)" — not a full SPS computation
+- Labeled explicitly as "(Illustrative Prediction)" â€” not a full SPS computation
 - Saves to `Assets/Figures/itsm_mock_jwst_spectrum.png` at 600 dpi
 
 #### `Scripts/itsm_nanograv_bayes.py` (new)
 - **Two-panel Bayesian evidence figure:** (A) GWB characteristic strain spectrum with SMBHB
   power-law and ITSM Lorentzian resonance; (B) per-bin log Bayes factor bar chart
 - NANOGrav 15-yr approximate data points plotted with error bars
-- Shaded resonance window `[1.08, π]` nHz; Jeffreys scale reference lines at ln(B)=0,3,5
+- Shaded resonance window `[1.08, Ï€]` nHz; Jeffreys scale reference lines at ln(B)=0,3,5
 - Saves to `Assets/Figures/itsm_nanograv_bayes.png` at 600 dpi
 
 ### Submission Preparation
@@ -1990,7 +2024,7 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 10.9.1 — Final-Tier Peer Review Polish (2026-06-16)
+## Version 10.9.1 â€” Final-Tier Peer Review Polish (2026-06-16)
 
 - **New Conceptual Schematics:** Added `itsm_23_factor_schematic.pdf` and `itsm_hubble_tension_schematic.pdf` directly into the manuscript to visually anchor the topological geometric invariants to the Hubble tension and $C_{\rm proj} = 2/3$ derivation.
 - **Anticipated Criticisms & Preemptive Rebuttals:** Added a comprehensive table in Section X directly addressing common cosmological criticisms.
@@ -1998,28 +2032,28 @@ not override the live fail-closed dashboard.
 - **Manuscript Layout & Flow:** Cleaned up overlapping 2/3 factor schematics, restored vertical stack layout for the CLASS spectra, and reordered the "Anticipated Criticisms" float and concluding paragraphs so the logical sequence flows perfectly into the bibliography without interruption.
 
 ### Flowchart Color & Layout Polish
-- **MOND header** changed from warm brown/ochre `#7a5c1e` → muted forest green `#5a6e4a`
+- **MOND header** changed from warm brown/ochre `#7a5c1e` â†’ muted forest green `#5a6e4a`
   (brown implied advantage; neutral green signals MOND answers some rotation-curve questions without
   implying cosmological superiority)
 - **Cell backgrounds** slightly more saturated for clearer print distinction
-- **Title-overlap bug fixed:** figure height increased 8.8 → 9.0 inches; axes top boundary
-  reduced from 0.94 → 0.92; title `y` coordinate shifted 0.975 → 0.985 with `fontsize` 12.5 → 13.0
+- **Title-overlap bug fixed:** figure height increased 8.8 â†’ 9.0 inches; axes top boundary
+  reduced from 0.94 â†’ 0.92; title `y` coordinate shifted 0.975 â†’ 0.985 with `fontsize` 12.5 â†’ 13.0
 
 ---
 
-## Version 10.8.0 — Figure Standards: 600 dpi + Journal Style Audit (2026-06-15)
+## Version 10.8.0 â€” Figure Standards: 600 dpi + Journal Style Audit (2026-06-15)
 
 ### Figure Quality (`Scripts/`)
 
 #### Central Style Module (`Scripts/itsm_plot_style.py`)
-- **Added `JOURNAL_DPI = 600` constant** — importable by any script for consistent `savefig(dpi=600)`
-- **Added `figure.dpi = 600` and `savefig.dpi = 600`** to `apply_tier1_style()` rcParams — scripts calling the function inherit 600 dpi automatically without an explicit `savefig` argument
-- **Added `mathtext.fontset = "cm"`** — Computer Modern math font matching LaTeX output
-- **Added inward ticks** (`xtick.direction = "in"`, `ytick.direction = "in"`) and **minor ticks** — standard for PRD/JCAP/PRL
+- **Added `JOURNAL_DPI = 600` constant** â€” importable by any script for consistent `savefig(dpi=600)`
+- **Added `figure.dpi = 600` and `savefig.dpi = 600`** to `apply_tier1_style()` rcParams â€” scripts calling the function inherit 600 dpi automatically without an explicit `savefig` argument
+- **Added `mathtext.fontset = "cm"`** â€” Computer Modern math font matching LaTeX output
+- **Added inward ticks** (`xtick.direction = "in"`, `ytick.direction = "in"`) and **minor ticks** â€” standard for PRD/JCAP/PRL
 - **Added white legend standard** (`legend.frameon`, `legend.framealpha=1.0`, `legend.edgecolor="black"`)
-- **Added `savefig.facecolor = "white"`** — prevents transparent-background saves
+- **Added `savefig.facecolor = "white"`** â€” prevents transparent-background saves
 
-#### DPI Upgrade (22 scripts — all figures used in manuscript)
+#### DPI Upgrade (22 scripts â€” all figures used in manuscript)
 - Upgraded every `savefig()` call from matplotlib default (100 dpi) or sub-standard (200 dpi) to **600 dpi** across:
   `itsm_3d_toroidal_manifold`, `itsm_bic_nfw_comparison`, `itsm_bootstrapped_rar`,
   `itsm_btfr_validation`, `itsm_bullet_phasespace`, `itsm_causality_cones`,
@@ -2037,53 +2071,53 @@ not override the live fail-closed dashboard.
 | Background | White (`#ffffff`) |
 | Axes / ticks | Black, `linewidth=1.0`, inward, minor ticks shown |
 | Font | Serif, `mathtext.fontset=cm` |
-| Colors | Print-safe — no neons, no dark-mode palettes |
+| Colors | Print-safe â€” no neons, no dark-mode palettes |
 | Resolution | **600 dpi**, `bbox_inches="tight"` |
 | Legend | White fill, black border |
 
 ### Commits
-- `adf8cf1` — 600 dpi upgrade across all 22 manuscript figure scripts
-- `fa49417` — Regenerate `itsm_running_coupling.png` to journal-standard white bg
+- `adf8cf1` â€” 600 dpi upgrade across all 22 manuscript figure scripts
+- `fa49417` â€” Regenerate `itsm_running_coupling.png` to journal-standard white bg
 
 ---
 
-## Version 10.7.0 — Tier 1 Peer Review: 6 Partial-Gap Resolutions + Running Coupling Figure (2026-06-15)
+## Version 10.7.0 â€” Tier 1 Peer Review: 6 Partial-Gap Resolutions + Running Coupling Figure (2026-06-15)
 
 ### Peer Review Gap Closures (`Manuscript/Main.tex`, `Manuscript/references.bib`)
 
-#### PR-1 — Abstract Rewrite
-- **Full rewrite leading with the zero-parameter nature of the theory** — first sentence now states "zero free parameters" explicitly
+#### PR-1 â€” Abstract Rewrite
+- **Full rewrite leading with the zero-parameter nature of the theory** â€” first sentence now states "zero free parameters" explicitly
 - **Casimir $H_0$ prediction foregrounded:** $H_t^{\rm pred} = 72.97$ km/s/Mpc ($0.07\sigma$ from SH0ES) stated in line 2
 - **$\chi^2_\nu = 8.57$, $p = 0.62$ MC result** from $N=5000$ forward-model realizations now in abstract
 - **Three falsifiable predictions explicitly enumerated** in abstract: NANOGrav resonance $[1.08, \pi]$ nHz, JWST CO/Na I suppression, Bullet Cluster ICM stall $\approx 600$ km/s
 - **$C_{\rm proj} = 2/3$ geometric derivation** (trace-ratio of 2D shear in 3D bulk) now in abstract
 
-#### PR-2 — Introduction Rewrite
+#### PR-2 â€” Introduction Rewrite
 - **Replaced "entropy" opening** with three-tension framing: galactic rotation curves (SPARC 175 galaxies), JWST early massive galaxy crisis ($z > 14$), Hubble Tension ($5\sigma$)
-- **Explicit ITSM vs. ΛCDM vs. MOND contrast:** ΛCDM requires non-baryonic particle insertion; MOND treats $a_0$ as an empirical constant; ITSM derives both from $T^3$ topology with zero free parameters
+- **Explicit ITSM vs. Î›CDM vs. MOND contrast:** Î›CDM requires non-baryonic particle insertion; MOND treats $a_0$ as an empirical constant; ITSM derives both from $T^3$ topology with zero free parameters
 - **Added consolidated `\paragraph{Falsifiable Predictions}`** with all three quantified thresholds (NANOGrav nHz band, JWST spectral lines, Bullet ICM velocity)
 
-#### PR-3 — T³ Topology "Why T³?" Section
-- **Expanded §II.A `Topological Consistency`** from 2 sentences to a 4-point enumeration:
+#### PR-3 â€” TÂ³ Topology "Why TÂ³?" Section
+- **Expanded Â§II.A `Topological Consistency`** from 2 sentences to a 4-point enumeration:
   1. Planck 2018 flatness constraint $\Omega_k = 0.0007 \pm 0.0019$ demands compact flat manifold
   2. $T^3$ is the simplest and unique compact flat 3-manifold consistent with observed isotropy
   3. Geometric elimination of $S^3$ (positive curvature), hyperbolic (negative curvature), and $\mathbb{R}^3$ (non-compact) alternatives
   4. Dynamic scale matching: $L_T = c/H_0$ produces $a_0 = cH_0/2\pi$ as a unique topological invariant
 
-#### PR-4 — Microcausality Boxed Note
-- **Upgraded dispersed §III.H paragraph to `\begin{quotation}` block** — visually separated from surrounding text
+#### PR-4 â€” Microcausality Boxed Note
+- **Upgraded dispersed Â§III.H paragraph to `\begin{quotation}` block** â€” visually separated from surrounding text
 - **Added explicit $v_g(k)$ formula** with $\forall k \le \Lambda_{\rm UV}$ qualifier
-- **Added dual citations** `\cite{babichev_cs2}` (k-essence) and `\cite{nicolis_galileon}` (Galileon gravity) — makes the analogy unambiguous
-- **Clarified phase vs. group velocity decoupling:** superluminal phase speed ≠ superluminal signal; phonon commutators vanish outside light cone for all EFT modes
-- **Fixed citation key:** corrected `babichev_kessence` (non-existent) → `babichev_cs2` (existing bib entry)
+- **Added dual citations** `\cite{babichev_cs2}` (k-essence) and `\cite{nicolis_galileon}` (Galileon gravity) â€” makes the analogy unambiguous
+- **Clarified phase vs. group velocity decoupling:** superluminal phase speed â‰  superluminal signal; phonon commutators vanish outside light cone for all EFT modes
+- **Fixed citation key:** corrected `babichev_kessence` (non-existent) â†’ `babichev_cs2` (existing bib entry)
 
-#### PR-5 — n(z) DESI/Pantheon+ Tension Explanation
+#### PR-5 â€” n(z) DESI/Pantheon+ Tension Explanation
 - **Upgraded bold paragraph to `\paragraph{}`** with formal section status
 - **Added explicit DESI-vs-Pantheon+ physical interpretation:** each dataset probes a distinct thermodynamic epoch of the Superfluid Plenum; tension is a direct prediction of epoch-dependent $n(z)$ running, not an internal contradiction
 
-#### PR-6 — Missing Citations
-- **Added `famaey_mcgaugh`**: Famaey & McGaugh (2012), *Living Reviews in Relativity* 15, 10 — canonical MOND review (1000+ citations), flagged as missing by peer reviewer
-- **Added `hazboun_2020`**: Hazboun et al. (2020), *ApJL* 890, L40 — NANOGrav 11-yr PTA scalar polarization modes, directly relevant to §NANOGrav discussion
+#### PR-6 â€” Missing Citations
+- **Added `famaey_mcgaugh`**: Famaey & McGaugh (2012), *Living Reviews in Relativity* 15, 10 â€” canonical MOND review (1000+ citations), flagged as missing by peer reviewer
+- **Added `hazboun_2020`**: Hazboun et al. (2020), *ApJL* 890, L40 â€” NANOGrav 11-yr PTA scalar polarization modes, directly relevant to Â§NANOGrav discussion
 
 ### New Figure: Running Coupling RG Flow
 
@@ -2091,47 +2125,47 @@ not override the live fail-closed dashboard.
 - **Single-panel publication figure** of the Born-Infeld Renormalization Group flow $g(\mu) = g_0 + \Delta\Gamma(\mu)$ vs.\ kinematic scale $\mu/a_0$
 - **Shows:** UV tree-level baseline $g_0 = 2/3$ (dashed black), 1-loop correction corridor $\Delta\Gamma(\mu)$ (blue shading), IR fixed point $g^* = 1$ (dash-dot red), EFT cutoff $\Lambda_{\rm UV} = 10\,a_0$ (dotted grey)
 - **Annotates $\Delta\Gamma(0) = 1/3$ bracket** with double-headed arrow
-- **Journal-standard style:** white background, serif/CM fonts, 600 dpi, print-safe colors — no dark-mode elements
+- **Journal-standard style:** white background, serif/CM fonts, 600 dpi, print-safe colors â€” no dark-mode elements
 
 #### `Assets/Figures/itsm_running_coupling.png` (new)
-- Injected into §III.B (`sec:nlo_vertex`) immediately after the $g^2(0) = (2/3 + 1/3)^2 = 1$ proof
-- **Standalone caption** explains dual proof: (i) Feynman-parametrized loop integral + (ii) Callan-Symanzik beta-function fixed-point condition — both yield $\Delta\Gamma(0) = 1/3$ exactly
+- Injected into Â§III.B (`sec:nlo_vertex`) immediately after the $g^2(0) = (2/3 + 1/3)^2 = 1$ proof
+- **Standalone caption** explains dual proof: (i) Feynman-parametrized loop integral + (ii) Callan-Symanzik beta-function fixed-point condition â€” both yield $\Delta\Gamma(0) = 1/3$ exactly
 
 ### Compilation
-- `pdflatex × 4` + `bibtex` — **32 pages, zero errors**, all new citations resolved
+- `pdflatex Ã— 4` + `bibtex` â€” **32 pages, zero errors**, all new citations resolved
 
 ### Commits
-- `fe31a1d` — 6 partial peer-review gap resolutions (abstract, intro, T³, microcausality, n(z), refs)
-- `160ec25` — Running coupling figure (initial, dark-mode — superseded)
-- `fa49417` — Running coupling figure regenerated to journal-standard white background
+- `fe31a1d` â€” 6 partial peer-review gap resolutions (abstract, intro, TÂ³, microcausality, n(z), refs)
+- `160ec25` â€” Running coupling figure (initial, dark-mode â€” superseded)
+- `fa49417` â€” Running coupling figure regenerated to journal-standard white background
 
 ---
 
-## Version 10.6.0 — Tier 1 Peer Review: 5 Critical Issue Resolutions (2026-06-15)
+## Version 10.6.0 â€” Tier 1 Peer Review: 5 Critical Issue Resolutions (2026-06-15)
 
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
 
-#### C1 — BTFR Renormalization: Explicit QFT Vertex Derivation
+#### C1 â€” BTFR Renormalization: Explicit QFT Vertex Derivation
 - **Added Feynman vertex rules from BI expansion:** Derived the cubic phonon self-interaction coefficient $c_3 = M_P^2/16$ explicitly from the third derivative of the Born-Infeld fractional kinetic term $f'''(0) = 3/(8a_0^4)$
 - **Added full 1PI vertex integral:** Replaced heuristic "toy parameterization" with the explicit Feynman-parametrized 1-loop integral $\Delta\Gamma(p^2)$ via Schwinger parameter decomposition; reformatted as two-line `align` environment to fix Overfull `\hbox` (15.9pt)
 - **Dual confirmation of $\Delta\Gamma = 1/3$:** Proved via (i) the explicit loop integral with UV cutoff $\Lambda_{\rm UV} = 10\,a_0$ absorbing the $T^3$ compactification factor $\eta = 3/(16\pi^2)$, and (ii) as the unique solution to the IR fixed-point condition $g^* = 1$ of the Callan-Symanzik beta function $\beta(g) = \eta g(1-g^2)$
 
-#### C2 — Hubble Tension: Canonical $H_0$ Synthesis Table
-- **Added Table II** (`tab:h0_synthesis`) after §7.6 listing all 6 ITSM $H_0$ estimates by observational sector; narrowed column headers to fix Overfull `\hbox` (94.1pt)
+#### C2 â€” Hubble Tension: Canonical $H_0$ Synthesis Table
+- **Added Table II** (`tab:h0_synthesis`) after Â§7.6 listing all 6 ITSM $H_0$ estimates by observational sector; narrowed column headers to fix Overfull `\hbox` (94.1pt)
 - **Identified the Casimir prediction ($H_t^{\rm pred} = 72.97$ km/s/Mpc) as the sole zero-parameter theoretical value**; all other values are posterior medians from dataset-specific Bayesian fits
-- **Explained multi-dataset spread:** Each fitted value probes a different redshift epoch/geometric projection of the toroidal manifold — the variance is a direct map of the observational Hubble tension itself, not an internal contradiction
+- **Explained multi-dataset spread:** Each fitted value probes a different redshift epoch/geometric projection of the toroidal manifold â€” the variance is a direct map of the observational Hubble tension itself, not an internal contradiction
 
-#### C3 — Syntropic Exponent: Running Thermodynamic Parameter
-- **Added "Physical Interpretation of the Running Syntropic Index $n(z)$" paragraph** (§7.7, post global-joint section) enumerating three distinct physical regimes:
-  1. $n \approx 0.003$ at $z \approx 0$ — late-universe plenum kinematically locked, mimics $\Lambda$
-  2. $n \approx 0.81$ from DESI BAO at $0.1 < z < 4.2$ — active syntropic intake phase
-  3. $n \approx 1.44$ from CMB/CLASS at $z > 2$ — fully active thermodynamic phase
+#### C3 â€” Syntropic Exponent: Running Thermodynamic Parameter
+- **Added "Physical Interpretation of the Running Syntropic Index $n(z)$" paragraph** (Â§7.7, post global-joint section) enumerating three distinct physical regimes:
+  1. $n \approx 0.003$ at $z \approx 0$ â€” late-universe plenum kinematically locked, mimics $\Lambda$
+  2. $n \approx 0.81$ from DESI BAO at $0.1 < z < 4.2$ â€” active syntropic intake phase
+  3. $n \approx 1.44$ from CMB/CLASS at $z > 2$ â€” fully active thermodynamic phase
 
-#### C4 — $\chi^2_\nu$ Statistical Validity: Forward-Model p-value
-- **Added explicit MC p-value statement** in §7.2: $N=5000$ forward-model realizations yield $p=0.62$ (62% exceed $\chi^2_\nu = 8.57$), confirming the residual is observational-noise-dominated
+#### C4 â€” $\chi^2_\nu$ Statistical Validity: Forward-Model p-value
+- **Added explicit MC p-value statement** in Â§7.2: $N=5000$ forward-model realizations yield $p=0.62$ (62% exceed $\chi^2_\nu = 8.57$), confirming the residual is observational-noise-dominated
 
-#### C5 — Casimir Derivation: Factor-of-2 Notation Clarified
+#### C5 â€” Casimir Derivation: Factor-of-2 Notation Clarified
 - **Fixed erroneous notation** in Casimir anisotropy equation; replaced ambiguous "$\times 2$" with $(n_T - n_P) \times 2|\zeta(-1)|$ where each factor is physically grounded: $n_T = 2$ (two toroidal cycles), the factor of 2 is the two-sided boundary stress of scalar field modes, and $(n_T - n_P) = 1$ is the net cycle excess
 
 ### LaTeX Formatting
@@ -2139,64 +2173,64 @@ not override the live fail-closed dashboard.
 - **Fixed Overfull `\hbox` (94.1pt):** Shortened Table II column headers; abbreviated sector labels
 
 ### Compilation
-- `pdflatex × 3` + `bibtex` — **31 pages, zero errors**, only benign `revtex4-2` deferred-float and `hyperref` math-shift warnings
+- `pdflatex Ã— 3` + `bibtex` â€” **31 pages, zero errors**, only benign `revtex4-2` deferred-float and `hyperref` math-shift warnings
 
 ---
 
-## Version 10.5.0 — Tier 1 Peer Review Readiness (2026-06-15)
+## Version 10.5.0 â€” Tier 1 Peer Review Readiness (2026-06-15)
 
-### Phase 1 — Critical Fixes
+### Phase 1 â€” Critical Fixes
 
 #### References (`Manuscript/references.bib`)
 - **Fixed fatal placeholder authors:** Replaced `{Author A}` and `{Author C}` with real authors:
   - `quantum_topology`: Negro et al. 2026 (arXiv:2603.12319, corrected from wrong ID 2603.05608)
   - `casimir_dark_energy`: Ichinose (2012), published in J. Phys.: Conf. Ser. 384, 012028
-- **Replaced CAMB citation with CLASS:** `camb` (Lewis et al. 2000) → `class_code` (Blas, Lesgourgues & Tram 2011, JCAP 07, 034, DOI: 10.1088/1475-7516/2011/07/034)
-- **Upgraded DESI to published reference:** arXiv preprint → JCAP 2025, 021, DOI: 10.1088/1475-7516/2025/02/021
+- **Replaced CAMB citation with CLASS:** `camb` (Lewis et al. 2000) â†’ `class_code` (Blas, Lesgourgues & Tram 2011, JCAP 07, 034, DOI: 10.1088/1475-7516/2011/07/034)
+- **Upgraded DESI to published reference:** arXiv preprint â†’ JCAP 2025, 021, DOI: 10.1088/1475-7516/2025/02/021
 - **Added Weisberg & Taylor (2005):** Hulse-Taylor binary pulsar reference (`weisberg_taylor`)
 - Fixed BibTeX `missing number` warnings for JCAP entries (switched to `number` field)
 
 #### LaTeX Formatting (`Manuscript/Main.tex`)
-- **Removed ™ from title** — moved `\texttrademark` to `\thanks` footnote only
+- **Removed â„¢ from title** â€” moved `\texttrademark` to `\thanks` footnote only
 - **Fixed Overfull \\hbox at line 456:** Split wide $c_s^2$ equation into two-line `align` environment
 - **Fixed Overfull \\hbox at line 618:** Shortened `\Upsilon_{\text{disk/bulge}}` subscripts to `\Upsilon_d`, `\Upsilon_b`
 - **Fixed stuck floats:** Added `floatfix` to `\documentclass` options; changed two single-column figures from `[htbp]` to `[tp]`
 - **Fixed Table I:** Replaced fragile `\parbox` column content with proper `p{}` column specifiers
 - **Fixed Table III caption:** Removed redundant manual "Table III." text (LaTeX auto-numbers)
-- **Updated all `\cite{camb}` → `\cite{class_code}`** across §7.4, §8.3, and §8.4
+- **Updated all `\cite{camb}` â†’ `\cite{class_code}`** across Â§7.4, Â§8.3, and Â§8.4
 - **Added `\label{sec:camb_spectra}`** to Matter Power Spectrum subsection
-- **Added `\label{sec:bic}`** to BIC subsection (resolves forward reference in §6.2)
+- **Added `\label{sec:bic}`** to BIC subsection (resolves forward reference in Â§6.2)
 - **Reframed Bullet Cluster:** Changed language from "prediction" to "strong quantitative consistency check"
-- **Added explicit $S_8$ value:** §7.5 now states $\sigma_8 = 0.763$, $\Omega_m = 0.354$, $S_8 \approx 0.80$
+- **Added explicit $S_8$ value:** Â§7.5 now states $\sigma_8 = 0.763$, $\Omega_m = 0.354$, $S_8 \approx 0.80$
 
 #### Repository (`/.gitignore`)
 - Added `ITSM_Computational_Engines_v10.0.0.zip`, `ORIGINAL_REQUEST.md`, `PROJECT.md`
 
 ---
 
-### Phase 2 — Theoretical Strengthening
+### Phase 2 â€” Theoretical Strengthening
 
-#### Born-Infeld Uniqueness Proof (§3.2.1)
-- **Added 4th constraint (Analyticity at vacuum):** Explicitly eliminates the entire power-law family $f(X) \propto X^\alpha$ — non-integer $\alpha \in (0,1/2)$ are non-analytic at $X=0$; $\alpha = 1/2$ has degenerate Hamiltonian $\mathcal{H} = 0$. Together with the original 3 criteria, uniquely selects Born-Infeld
-- Softened language from "uniquely compelled" → "the minimal analytic solution consistent with all four constraints"
+#### Born-Infeld Uniqueness Proof (Â§3.2.1)
+- **Added 4th constraint (Analyticity at vacuum):** Explicitly eliminates the entire power-law family $f(X) \propto X^\alpha$ â€” non-integer $\alpha \in (0,1/2)$ are non-analytic at $X=0$; $\alpha = 1/2$ has degenerate Hamiltonian $\mathcal{H} = 0$. Together with the original 3 criteria, uniquely selects Born-Infeld
+- Softened language from "uniquely compelled" â†’ "the minimal analytic solution consistent with all four constraints"
 
-#### Statistical Framing (§6.2 / Table V)
+#### Statistical Framing (Â§6.2 / Table V)
 - **Reframed $\chi^2_\nu = 8.57$** with proper statistical context: NFW/Burkert evaluated at optimum of ~525-dimensional parameter space; ITSM at fixed zero-parameter point
 - **Added "Evaluation Point" column** to Table V to make the comparison transparent
 - **Added per-galaxy context:** majority of galaxies achieve $\chi^2_\nu < 3$; global stat dominated by inclination/kinematic outliers
-- **Added BIC cross-reference** from §6.2 to §6.1
+- **Added BIC cross-reference** from Â§6.2 to Â§6.1
 
-#### Discussion: New Consistency Checks (§9)
-- **(iv) Hulse-Taylor Binary Pulsar:** Formal proof that at pulsar acceleration scale ($g \sim 10^4$ m/s²  ≫ $a_0$), ITSM coupling is decoupled at $\delta g/g \lesssim 10^{-7}$, preserving GR orbital decay to 1 part in $10^7$
-- **(v) Big Bang Nucleosynthesis (BBN):** Formal proof that syntropic decay correction is suppressed by $(1+z_\text{BBN})^{-0.81} \sim 10^{-7}$ at $z \sim 10^8$–$10^9$, preserving $Y_p \approx 0.247$
+#### Discussion: New Consistency Checks (Â§9)
+- **(iv) Hulse-Taylor Binary Pulsar:** Formal proof that at pulsar acceleration scale ($g \sim 10^4$ m/sÂ²  â‰« $a_0$), ITSM coupling is decoupled at $\delta g/g \lesssim 10^{-7}$, preserving GR orbital decay to 1 part in $10^7$
+- **(v) Big Bang Nucleosynthesis (BBN):** Formal proof that syntropic decay correction is suppressed by $(1+z_\text{BBN})^{-0.81} \sim 10^{-7}$ at $z \sim 10^8$â€“$10^9$, preserving $Y_p \approx 0.247$
 
 ---
 
-## Version 10.4.0 — Formal QFT Renormalization & CLASS Engine Integration (2026-06-15)
+## Version 10.4.0 â€” Formal QFT Renormalization & CLASS Engine Integration (2026-06-15)
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
-- **1-Loop Dressed Vertex Renormalization (§3.1):** Replaced the prior "toy parameterization" of the EFT next-to-leading-order vertex correction with a formal Quantum Field Theory 1-loop derivation. Sourced the cubic phonon self-interaction ($\mathcal{L}^{(3)}_{\text{int}} \propto (\partial\chi)^2 \Box\chi$) directly from the Born-Infeld/Galileon fractional kinetic expansion. Applied dimensional regularization to explicitly prove the running coupling flows from the unrenormalized tree-level ($4/9$) exactly to the infrared fixed point ($1.0$), analytically confirming the empirical SPARC baseline constraint without free parameters.
-- **JWST Mid-IR Spectroscopy Falsifiability (§4.2):** Grounded the "bottom-light" Initial Mass Function ($\Upsilon_{\text{disk}} \to 0.01$) prediction in a rigorous, independently testable observational protocol. Explicitly proposed targeting the $2.3\,\mu\text{m}$ CO bandhead and $0.82\,\mu\text{m}$ Na I doublet using JWST NIRSpec/MIRI to definitively confirm the thermodynamic suppression of M-dwarf star formation within highly obscured edge-on outliers like NGC 4217.
+- **1-Loop Dressed Vertex Renormalization (Â§3.1):** Replaced the prior "toy parameterization" of the EFT next-to-leading-order vertex correction with a formal Quantum Field Theory 1-loop derivation. Sourced the cubic phonon self-interaction ($\mathcal{L}^{(3)}_{\text{int}} \propto (\partial\chi)^2 \Box\chi$) directly from the Born-Infeld/Galileon fractional kinetic expansion. Applied dimensional regularization to explicitly prove the running coupling flows from the unrenormalized tree-level ($4/9$) exactly to the infrared fixed point ($1.0$), analytically confirming the empirical SPARC baseline constraint without free parameters.
+- **JWST Mid-IR Spectroscopy Falsifiability (Â§4.2):** Grounded the "bottom-light" Initial Mass Function ($\Upsilon_{\text{disk}} \to 0.01$) prediction in a rigorous, independently testable observational protocol. Explicitly proposed targeting the $2.3\,\mu\text{m}$ CO bandhead and $0.82\,\mu\text{m}$ Na I doublet using JWST NIRSpec/MIRI to definitively confirm the thermodynamic suppression of M-dwarf star formation within highly obscured edge-on outliers like NGC 4217.
 - **Figure Layout Optimization:** Refactored the `CLASS` spectra diagnostic figure into a vertically stacked single-column layout, natively resolving `twocolumn` floating layout issues without artificial page breaks.
 
 ### Computational Engine Upgrades (`Analysis/Experimental/CLASS_Sim/`)
@@ -2205,7 +2239,7 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 10.3.0 — Covariant Stability Analysis & CAMB Integration Defense (2026-06-15)
+## Version 10.3.0 â€” Covariant Stability Analysis & CAMB Integration Defense (2026-06-15)
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
 - **Covariant Stability Analysis of the Syntropic Phantom Regime:** Introduced a formal mathematical proof decoupling the effective background expansion ($w_{eff} = -1.27$) from the fundamental microscopic field dynamics.
@@ -2216,7 +2250,7 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 10.2.0 — Fluid Dynamics Wake & Global Cosmological Renormalization (2026-06-15)
+## Version 10.2.0 â€” Fluid Dynamics Wake & Global Cosmological Renormalization (2026-06-15)
 
 ### N-Body Dynamics & Hydrodynamics
 - **Bullet Cluster N-Body Simulator (`itsm_bullet_cluster_nbody.py`):** Scaffolded a 3D N-Body gravitational simulator to model the Main Cluster and Subcluster collision. Implemented a Numba-compiled Newtonian integrator modified natively with the ITSM Plenum Shear ($g_{\text{tot}} = g_{\text{bar}} + \frac{2}{3} \sqrt{g_{\text{bar}} a_0}$).
@@ -2236,24 +2270,24 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 10.1.0 — Tier-1 Peer-Review Fixes: Causality, Renormalization & Statistical Transparency (2026-06-14)
+## Version 10.1.0 â€” Tier-1 Peer-Review Fixes: Causality, Renormalization & Statistical Transparency (2026-06-14)
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
-- **NLO Vertex Correction Subsection (§3.1.x — new):** Formally bracketed the $4/9 \to 1$ BTFR gap as a running-coupling RG flow problem. Defined $g(\mu) = g_0 + \Delta\Gamma(\mu)$ with $g_0 = 2/3$ (UV tree-level) and IR boundary condition $\Delta\Gamma(0) = 1/3$. Introduced a Born-Infeld toy parameterization satisfying both boundary conditions exactly. Explicitly labelled as a toy parameterization pending a full one-loop dressed vertex calculation. Physically interprets BTFR galaxy-to-galaxy scatter as a signature of the running coupling evaluated at different kinematic scales $\mu \sim \sqrt{g_{\text{bar}}\,a_0}$.
-- **Microcausality Defence Overhaul (§3.3 — rewritten):** Expanded the causality section from a single macrocausality argument into a three-tier defence: (i) Macrocausality via Hamiltonian positivity ($\mathcal{H} > 0$) forbidding CTCs; (ii) Microcausality via UV-cutoff-clamped dispersion relation proving $v_g(k) \le 1$ for all EFT modes; (iii) Parallel to established frameworks — k-essence (Babichev, Mukhanov & Vikman 2008) and Galileon gravity (Nicolis, Rattazzi & Trincherini 2009). Added explicit phonon dispersion equations $\omega^2(k)$, $v_{\text{ph}}(k)$, and $v_g(k)$.
-- **BTFR Figure Updated (Fig. 6 — two-panel, full-width):** Changed from single-column `figure/\columnwidth` to full-page `figure*/\textwidth`. Updated caption to describe both Panel A (scatter) and Panel B (CDF). Added statistical breakdown: $71.9\%$ within $3\sigma_{\text{eff}}$, $58.5\%$ within $25\%$, $35.7\%$ within $15\%$.
-- **NGC 4217 Reframing (§4.2):** Updated figure reference to new 3-panel `itsm_ngc4217_control_fit.png`. Caption describes Chabrier IMF failure mode (20–50% over-prediction) and JWST falsifiability test.
-- **Discussion Section (§Discussion — restructured):** Split into three explicit items: (i) $4/9$ as formal EFT lower bound with RG flow to IR fixed point; (ii) Microcausality fully resolved at both macro and quantum levels via UV cutoff; (iii) $\Upsilon \to 0.01$ reframed as falsifiable JWST mid-IR spectroscopic prediction (2.3 µm CO bandhead, Na I doublet).
+- **NLO Vertex Correction Subsection (Â§3.1.x â€” new):** Formally bracketed the $4/9 \to 1$ BTFR gap as a running-coupling RG flow problem. Defined $g(\mu) = g_0 + \Delta\Gamma(\mu)$ with $g_0 = 2/3$ (UV tree-level) and IR boundary condition $\Delta\Gamma(0) = 1/3$. Introduced a Born-Infeld toy parameterization satisfying both boundary conditions exactly. Explicitly labelled as a toy parameterization pending a full one-loop dressed vertex calculation. Physically interprets BTFR galaxy-to-galaxy scatter as a signature of the running coupling evaluated at different kinematic scales $\mu \sim \sqrt{g_{\text{bar}}\,a_0}$.
+- **Microcausality Defence Overhaul (Â§3.3 â€” rewritten):** Expanded the causality section from a single macrocausality argument into a three-tier defence: (i) Macrocausality via Hamiltonian positivity ($\mathcal{H} > 0$) forbidding CTCs; (ii) Microcausality via UV-cutoff-clamped dispersion relation proving $v_g(k) \le 1$ for all EFT modes; (iii) Parallel to established frameworks â€” k-essence (Babichev, Mukhanov & Vikman 2008) and Galileon gravity (Nicolis, Rattazzi & Trincherini 2009). Added explicit phonon dispersion equations $\omega^2(k)$, $v_{\text{ph}}(k)$, and $v_g(k)$.
+- **BTFR Figure Updated (Fig. 6 â€” two-panel, full-width):** Changed from single-column `figure/\columnwidth` to full-page `figure*/\textwidth`. Updated caption to describe both Panel A (scatter) and Panel B (CDF). Added statistical breakdown: $71.9\%$ within $3\sigma_{\text{eff}}$, $58.5\%$ within $25\%$, $35.7\%$ within $15\%$.
+- **NGC 4217 Reframing (Â§4.2):** Updated figure reference to new 3-panel `itsm_ngc4217_control_fit.png`. Caption describes Chabrier IMF failure mode (20â€“50% over-prediction) and JWST falsifiability test.
+- **Discussion Section (Â§Discussion â€” restructured):** Split into three explicit items: (i) $4/9$ as formal EFT lower bound with RG flow to IR fixed point; (ii) Microcausality fully resolved at both macro and quantum levels via UV cutoff; (iii) $\Upsilon \to 0.01$ reframed as falsifiable JWST mid-IR spectroscopic prediction (2.3 Âµm CO bandhead, Na I doublet).
 - **Conclusion Updated:** Added $71.9\%$ within $3\sigma_{\text{eff}}$ statistic for renormalized BTFR. $4/9$ formally identified as strict tree-level EFT lower bound.
 
 ### New Scripts & Figures
 - **`Scripts/itsm_phonon_dispersion.py` (new):** Generates two-panel causality figure: (Left) $c_s^2$ vs $X/a_0^2$ with peak annotation; (Right) phase/group velocity vs $k/\Lambda_{\text{UV}}$ showing UV-clamped subluminal group velocity.
-- **`Assets/Figures/itsm_phonon_dispersion.png` (new):** Publication-quality causality figure embedded in §3.3.
+- **`Assets/Figures/itsm_phonon_dispersion.png` (new):** Publication-quality causality figure embedded in Â§3.3.
 - **`Assets/Figures/itsm_ngc4217_control_fit.png` (new):** 3-panel NGC 4217 figure showing ITSM fit, Chabrier control failure, and JWST prediction text.
 - **`Assets/Figures/itsm_btfr_publication.png` (updated):** Rebuilt as side-by-side 2-panel (BTFR scatter + CDF of residuals) at full textwidth.
 
 ### Updated Scripts
-- **`Scripts/itsm_btfr_validation.py`:** Replaced old stacked 2-row layout with side-by-side `(1×2)` figure. Panel B plots CDF of relative deviations for both unrenormalized and renormalized models with σ_eff annotations computed dynamically per galaxy.
+- **`Scripts/itsm_btfr_validation.py`:** Replaced old stacked 2-row layout with side-by-side `(1Ã—2)` figure. Panel B plots CDF of relative deviations for both unrenormalized and renormalized models with Ïƒ_eff annotations computed dynamically per galaxy.
 - **`Scripts/itsm_ngc4217_dust_model.py`:** Rewrote to run dual fit: ITSM bottom-light IMF ($\Upsilon=0.01$, $A_V=3.5$) and Chabrier control ($\Upsilon=0.50$). Three-panel figure with science interpretation text box.
 - **All 33 active scripts in `Scripts/`:** Removed all hardcoded `dpi=` arguments from every `savefig()`, `subplots()`, and `fig.savefig()` call. DPI now deferred to global style/rcParams.
 
@@ -2262,7 +2296,7 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 10.0.2 — Final Peer-Review Audit & Pipeline Automation (2026-06-13)
+## Version 10.0.2 â€” Final Peer-Review Audit & Pipeline Automation (2026-06-13)
 
 ### Repository & Pipeline Automation
 - **Master Execution Pipeline:** Developed and deployed `Scripts/run_all.py`, a centralized master pipeline that chronologically executes the entire suite of production scripts, enabling 1-click reproducibility for external reviewers.
@@ -2284,7 +2318,7 @@ not override the live fail-closed dashboard.
   4. **Cosmic Chronometers $H(z)$:** Added the CC $H(z)$ cross-validation, proving the expansion curve naturally reproduces model-independent differential galaxy age data without tuning.
 - **Visual Standardization:** Injected overarching descriptive titles and parameter summary boxes into all MCMC corner plots (SPARC, Pantheon+, Joint Cosmology) to explicitly highlight the "Zero Free Parameters" baseline for reviewers. Cleaned up the linear matter power spectrum layout to prevent data obfuscation.
 
-## Version 10.0.1 — Hardware Optimization & Repository Sanitation (2026-06-13)
+## Version 10.0.1 â€” Hardware Optimization & Repository Sanitation (2026-06-13)
 
 ### Repository & Engine Optimization
 - **Multicore MCMC Saturation:** Overhauled `itsm_global_mcmc.py` to encapsulate the 32 walkers within a `multiprocessing.Pool(processes=16)` execution lock. This natively saturates modern 16-thread hardware architectures (e.g., Ryzen 7), dropping optimization timeframes significantly.
@@ -2293,7 +2327,7 @@ not override the live fail-closed dashboard.
 - **Repository Sanitation:** Permanently purged legacy arXiv configuration targets (`arxiv_targets.txt`, `arxiv_targets.json`, `ITSM_arXiv_Submission.zip`, `arXiv_Bundle/`) and rogue visual outputs from the root directory to guarantee strict repository hygiene for public peer review.
 - **Safe-Staging Validation Protocol:** Deployed the `Analysis/Experimental/Script_Staging` architectural firewall to successfully validate the multicore code execution and font stability without risking overwrite of the live manuscript asset figures.
 
-## Version 10.0.0 — Open-Source Global Release & Academic Targeting (2026-06-01)
+## Version 10.0.0 â€” Open-Source Global Release & Academic Targeting (2026-06-01)
 
 ### Major Milestones
 - **Global Outreach Campaign:** Finalized the V10.0.0 master release. Initiated targeted outreach to progressive cosmologists and astrophysicists globally, providing open-access availability to the final Manuscript, Zenodo dataset, and GitHub computational repository.
@@ -2302,7 +2336,7 @@ not override the live fail-closed dashboard.
 - **Media Arsenal Preparation:** Designed 5 highly targeted, cinematic AI-generation prompts covering the Cosmic Web, Bullet Cluster shockwaves, and Toroidal geometry to serve as the visual backbone for the impending YouTube/TikTok social media campaign.
 - **Podcast Integration:** Successfully validated the NotebookLM Debate framework, auto-generating a highly accurate 6-minute scientific breakdown of the ITSM acoustic metric wake and DESI 2024 syntropic expansion fits.
 
-## Version 9.8.2 — Web API Exports & IP Fortification (2026-06-01)
+## Version 9.8.2 â€” Web API Exports & IP Fortification (2026-06-01)
 
 ### Repository & Web Integration
 - **Interactive JSON API Endpoints:** Built and executed `export_api_data.py` to extract raw MCMC statistics and down-sampled chains into `Assets/API_Exports/`. This includes `sparc_mcmc_summary.json`, `sparc_mcmc_corner_samples.json`, `global_rar_envelope.json`, and the massive `hierarchical_joint_chain.json`.
@@ -2310,11 +2344,11 @@ not override the live fail-closed dashboard.
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
 - **Creative Commons License:** Removed prior restrictive copyright assertions from the manuscript title block in favor of a Creative Commons Attribution 4.0 International (CC BY 4.0) license, while explicitly noting "ITSM Cosmology" and "Integrated Toroidal-Syntropic Model" as unregistered trademarks.
-## Version 9.8.1 — Tier-1 Peer Review Fortification (2026-05-31)
+## Version 9.8.1 â€” Tier-1 Peer Review Fortification (2026-05-31)
 - **5D Bulk Space Excised:** Formally removed all references to a 5D parent manifold and the higher-dimensional entropic flux tensor. The thermodynamic syntropic intake is now strictly and mathematically locked directly to the 4D covariant expansion scalar ($\Theta = \nabla_\mu u^\mu = 3H$), completely satisfying Occam's razor.
 - **Born-Infeld Uniqueness Proof:** Injected a formal mathematical derivation proving that the square-root Lagrangian modification is not an empirical curve-fit, but the unique functional form that simultaneously guarantees Hamiltonian positivity ($\mathcal{H} > 0$), a subluminal sound speed horizon ($c_s^2 \le 1$), and topological phase stability on a $T^3$ manifold.
 - **Methodological Neutralization:** Renamed the "Ontological Matrix" to "Methodological Contrast" and scrubbed all adversarial rhetorical framing ("Phenomenological Insertion") in favor of objective Tier-1 physics descriptors.
-## Version 9.8.0 — Hierarchical Joint Inference & Empirical Precision Upgrades (2026-05-31)
+## Version 9.8.0 â€” Hierarchical Joint Inference & Empirical Precision Upgrades (2026-05-31)
 
 ### Experimental Physics: Joint SPARC x Pantheon+ Integration
 - **Hierarchical Profile Likelihood MCMC:** Built and executed `itsm_hierarchical_joint_mcmc.py` to evaluate the 1701-supernovae Pantheon+ covariance matrix simultaneously with the mass-to-light ratios of all 175 SPARC galaxies.
@@ -2324,7 +2358,7 @@ not override the live fail-closed dashboard.
 
 ### Manuscript Upgrades (`Manuscript/Main.tex`)
 - Integrated the Hierarchical Joint Inference results and the $N=5000$ Bootstrapped RAR into the publication text, enforcing Tier-1 objective physics peer-review standards.
-## Version 9.7.1 — Tier-1 Peer Review Manuscript Integration (2026-05-31)
+## Version 9.7.1 â€” Tier-1 Peer Review Manuscript Integration (2026-05-31)
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
 - **Joint Cosmological Validation:** Added a new subsection formally detailing the independent Pantheon+ SN1a MCMC results and the combined Joint MCMC optimization (SN1a + BAO). 
@@ -2332,7 +2366,7 @@ not override the live fail-closed dashboard.
 - **Float Optimization:** Placed the massive $1701 \times 1701$ SN1a + BAO corner plot inside a `figure*` environment to span the `twocolumn` layout.
 - **Bibliography:** Appended the Brout et al. Pantheon+ citation.
 
-## Version 9.7.0 — Joint Cosmological Validation & Multicore MCMC (2026-05-31)
+## Version 9.7.0 â€” Joint Cosmological Validation & Multicore MCMC (2026-05-31)
 
 ### Experimental Physics: Joint Cosmology Integration
 - **Pantheon+ SN1a Data Integration:** Downloaded and integrated the full 1701-supernovae `Pantheon+SH0ES` dataset, including the ingestion and inversion of the full $1701 \times 1701$ statistical and systematic covariance matrix.
@@ -2340,7 +2374,7 @@ not override the live fail-closed dashboard.
 - **Joint BAO & SN1a MCMC:** Created `itsm_joint_cosmology_mcmc.py` to compute the combined log-likelihood of both DESI DR2 BAO and Pantheon+ data. 
 - **Hubble Tension Resolution:** The Joint MCMC successfully extracted a median $H_0 \approx 73.97$ km/s/Mpc, independently corroborating the local measurements and SPARC geometric derivations without tension. Demonstrated the mathematical tension in the Syntropic Decay Index, finding $n \approx 0.02$ when constrained by SN1a data.
 
-## Version 9.6.0 — Two-Column Formatting & Final Peer-Review Additions (2026-05-31)
+## Version 9.6.0 â€” Two-Column Formatting & Final Peer-Review Additions (2026-05-31)
 
 ### Manuscript Layout Refactor (`Manuscript/Main.tex`)
 - **Two-Column Transition:** Transitioned the manuscript to a formal 21-page `twocolumn` format, significantly reducing the document page count and improving standard peer-review readability.
@@ -2352,19 +2386,19 @@ not override the live fail-closed dashboard.
 - **Bibliographic Expansion:** Appended recent un-virialized kinematic sources into the bibliography.
 
 
-## Version 9.5.2 — Zenodo Computational Engines Archive (2026-05-30)
+## Version 9.5.2 â€” Zenodo Computational Engines Archive (2026-05-30)
 
 ### Repository & Archival
 - **Zenodo Integration Fix:** Packaged the full computational suite, MCMC scripts, and datasets into `ITSM_Computational_Engines_v9.5.2.zip` for proper Zenodo archival (correcting the previous arXiv bundle upload).
 
-## Version 9.5.1 — Structural Optimization & Tone Neutralization (2026-05-30)
+## Version 9.5.1 â€” Structural Optimization & Tone Neutralization (2026-05-30)
 
 ### Manuscript Revisions (`Manuscript/Main.tex`)
 - **Tone Neutralization:** Systematically revised terminology targeting MOND and $\Lambda$CDM to eliminate combative framing (e.g., "arbitrary curve-fits"). Reframed these paradigms respectfully as "empirical frameworks" to ensure reviewer impartiality while strictly maintaining the ITSM's ontological distinction.
 - **Analogy Front-Loading:** Migrated the "Acoustic Wake / Boat displacing water" analogy and the Predictive Shield Matrix (Table 2) directly into the Introduction. This structural shift provides an intuitive physical anchor before introducing covariant tensor mathematics.
 - **Narrative Bridging:** Drafted a synthesizing transition at the terminus of Section 5. Explicitly tethered the local $T^3$ SPARC expansion directly to the global DESI volume decay, smoothing the conceptual jump from galactic kinematics to macroscopic cosmological dynamics.
 
-## Version 9.5.0 — Pre-Publication Audit & Sanitization (2026-05-30)
+## Version 9.5.0 â€” Pre-Publication Audit & Sanitization (2026-05-30)
 
 ### Manuscript Hardening
 - **LaTeX Sanitization:** Removed unused `longtable` and `listings` packages from the preamble to optimize compilation. Removed arbitrary `\clearpage` prior to the bibliography.
@@ -2380,7 +2414,7 @@ not override the live fail-closed dashboard.
 - **Git Ignore Fixes:** Removed `*.pdf` and `*.bbl` from `.gitignore` so that compiled documents are correctly tracked for reviewers who do not compile from source.
 - **Asset Purge:** Deleted legacy v8.3 visual assets (`itms_acoustic_wake...` and `itms_bullet_phasespace...`) that were bloating the repository.
 - **High-Res Targeting:** Updated the `itsm_global_mcmc.py` script to export the corner plot at publication quality (`dpi=300`).
-## Version 9.4.0 — Tier-1 Peer Review Physics Hardening (2026-05-27)
+## Version 9.4.0 â€” Tier-1 Peer Review Physics Hardening (2026-05-27)
 
 ### Experimental Physics: Causality & Mass-to-Light Synthesis
 - **Causality & Characteristic Surfaces:** Created `Scripts/itsm_causality_cones.py` to generate a rigorous Penrose/Light-Cone diagram proving that the effective acoustic metric remains strictly nested within the global background metric. Formally proved Hamiltonian positivity ($\mathcal{H} > 0$) to forbid Closed Timelike Curves (CTCs), resolving the superluminal $c_s^2 \approx 1.11$ vulnerability.
@@ -2392,7 +2426,7 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 9.3.0 — NANOGrav Lorentzian Physics & PTA Resonance Validation (2026-05-27)
+## Version 9.3.0 â€” NANOGrav Lorentzian Physics & PTA Resonance Validation (2026-05-27)
 
 ### Experimental Physics: NANOGrav Pulsar Timing Arrays
 - **Lorentzian Resonance Physics:** Successfully validated and promoted the `NANOGrav_v2` experiment to `Scripts/itsm_nanograv_resonance.py`. The script formally replaces the unmotivated Gaussian profile with a mathematically rigorous Lorentzian resonance, dictated by the Superfluid Plenum acting as a damped driven quantum harmonic oscillator.
@@ -2404,7 +2438,7 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 9.2.0 — Full CAMB Integration & Peer-Review Manuscript Hardening (2026-05-27)
+## Version 9.2.0 â€” Full CAMB Integration & Peer-Review Manuscript Hardening (2026-05-27)
 
 ### Experimental Physics: Full CAMB Diagnostic
 - **CMB Acoustic Peak Prediction:** Replaced the previous geometric lower bound ($w=-1.0, H_0=73.0, \ell=217$) with a full ITSM prediction directly integrated into the CAMB Boltzmann solver. By mapping the DESI-calibrated syntropic volume decay ($n=0.81$) to an effective CAMB phantom dark energy fluid ($w=-1.27$), the thermodynamic physics of the open manifold actively pulls the first acoustic peak to $\ell=222$, within $<0.9\%$ of the Planck baseline ($\ell=220$). 
@@ -2425,25 +2459,25 @@ not override the live fail-closed dashboard.
 
 ---
 
-## Version 9.1.0 — Hierarchical $H_0$ Methodology & Manuscript Correction (2026-05-23)
+## Version 9.1.0 â€” Hierarchical $H_0$ Methodology & Manuscript Correction (2026-05-23)
 
 ### Methodological Investigation
 - **Hierarchical Bayesian H0 Analysis:** Executed a full investigation into population-level $H_0$ inference from the 176-galaxy SPARC MCMC chain library using three distinct estimator implementations:
-  - `itsm_hierarchical_h0.py` — Full raw-sample likelihood (5-hour run, $\mu_{H_0} = 69.089 \pm 0.005$ km/s/Mpc). Archived; identified as statistically overcounted (treats 7.3M MCMC samples as independent observations, inflating statistical weight by ~41,600×).
-  - `itsm_hierarchical_h0_fast.py` — Gaussian-convolution approximation (~3 seconds, $\mu_{H_0} = 65.26 \pm 0.62$ km/s/Mpc). Archived; invalidated by non-Gaussianity of per-galaxy posteriors.
-  - `itsm_hierarchical_h0_correct.py` — IS-corrected logsumexp marginal estimator per Mandel, Farr & Gair (2019) MNRAS 486, 1086 (~2.5-hour run). Posterior pinned to prior boundary ($\mu_{H_0} = 55.1$ km/s/Mpc), confirming that individual SPARC galaxies do not sufficiently constrain $H_0$ for population inference.
-- **Shape Diagnostic:** `itsm_h0_shape_diagnostic.py` revealed per-galaxy $H_0$ posterior standard deviations average $12.40$ km/s/Mpc (versus $14.4$ km/s/Mpc for a completely flat uniform distribution). 89.8% of galaxies have $\sigma_{H_0} > 5$ km/s/Mpc — confirming posteriors are near-flat and individually uninformative for hierarchical $H_0$ extraction. This finding is reserved for future work with independent distance priors.
+  - `itsm_hierarchical_h0.py` â€” Full raw-sample likelihood (5-hour run, $\mu_{H_0} = 69.089 \pm 0.005$ km/s/Mpc). Archived; identified as statistically overcounted (treats 7.3M MCMC samples as independent observations, inflating statistical weight by ~41,600Ã—).
+  - `itsm_hierarchical_h0_fast.py` â€” Gaussian-convolution approximation (~3 seconds, $\mu_{H_0} = 65.26 \pm 0.62$ km/s/Mpc). Archived; invalidated by non-Gaussianity of per-galaxy posteriors.
+  - `itsm_hierarchical_h0_correct.py` â€” IS-corrected logsumexp marginal estimator per Mandel, Farr & Gair (2019) MNRAS 486, 1086 (~2.5-hour run). Posterior pinned to prior boundary ($\mu_{H_0} = 55.1$ km/s/Mpc), confirming that individual SPARC galaxies do not sufficiently constrain $H_0$ for population inference.
+- **Shape Diagnostic:** `itsm_h0_shape_diagnostic.py` revealed per-galaxy $H_0$ posterior standard deviations average $12.40$ km/s/Mpc (versus $14.4$ km/s/Mpc for a completely flat uniform distribution). 89.8% of galaxies have $\sigma_{H_0} > 5$ km/s/Mpc â€” confirming posteriors are near-flat and individually uninformative for hierarchical $H_0$ extraction. This finding is reserved for future work with independent distance priors.
 
 ### Repository Structure
 - **New `Analysis/` directory:** Added `Analysis/Hierarchical_H0/` as a structured methodology development area, separate from primary manuscript scripts. Contains all four scripts above plus a full `Archive/` of three MCMC result sets with summary statistics and diagnostic plots.
 - **Archive hygiene:** All superseded result directories (`results_full_rawsample_5hr/`, `results_fast_gaussian/`, `results_is_corrected/`) moved to `Analysis/Hierarchical_H0/Archive/` with descriptive naming. No results deleted.
 
 ### Manuscript Correction (`Manuscript/Main.tex`)
-- **H0 paragraph reframed (line 439):** Replaced overclaiming language ("independently derives the exact value of the local Cosmic Distance Ladder") with peer-review defensible framing. The reported $H_0 = 72.49 \pm 0.31$ km/s/Mpc is now correctly described as a median-of-posteriors statistic, with explicit acknowledgement of the $a_0$–baryonic normalisation degeneracy at the single-galaxy level. Hierarchical population inference is explicitly reserved for future work. Value and figure unchanged.
+- **H0 paragraph reframed (line 439):** Replaced overclaiming language ("independently derives the exact value of the local Cosmic Distance Ladder") with peer-review defensible framing. The reported $H_0 = 72.49 \pm 0.31$ km/s/Mpc is now correctly described as a median-of-posteriors statistic, with explicit acknowledgement of the $a_0$â€“baryonic normalisation degeneracy at the single-galaxy level. Hierarchical population inference is explicitly reserved for future work. Value and figure unchanged.
 - **Recompiled:** `Main.pdf` recompiled clean, 24 pages, zero errors.
 
 ### Git Provenance
-- Commit `e20165e` — selective add (README, Main.tex, Main.pdf, Analysis/). Remaining modified scripts from prior sessions left unstaged to preserve atomic commit discipline.
+- Commit `e20165e` â€” selective add (README, Main.tex, Main.pdf, Analysis/). Remaining modified scripts from prior sessions left unstaged to preserve atomic commit discipline.
 - Full directory backup created at `ITSM_BACKUP_20260523_1326` prior to any changes.
 
 ---
@@ -2474,7 +2508,7 @@ not override the live fail-closed dashboard.
 - **Syntropic Expansion:** Added explicit validation against DESI 2024 BAO measurements demonstrating organic $(1+z)^{-3}$ volumetric decay.
 - **NANOGrav Refinement:** Upgraded stochastic background resonance profile from Gaussian to mathematically rigorous Lorentzian.
 - **Publication Scripts:** Finalized 8 distinct Python validation scripts, formatted for journal-quality `matplotlib` LaTeX rendering.
-- **Literature Integration:** Incorporated formal citations for JWST high-redshift data (Labbé et al.), DESI 2024, and SPARC.
+- **Literature Integration:** Incorporated formal citations for JWST high-redshift data (LabbÃ© et al.), DESI 2024, and SPARC.
 
 ## Version 8.2 (Iterative Refinement)
 - Replaced empirical mockups with generative programmatic data tests.

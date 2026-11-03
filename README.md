@@ -85,7 +85,43 @@ orders the research, and the [Master Research Plan](Theory/Core/ITSM_Master_Rese
 defines the authority and claim boundaries. Script check counts and hash
 matches establish only their stated calculation or artifact scope.
 
-## 🧪 Current research checkpoint — 1 November 2026
+## 🧪 Current research checkpoint — 4 November 2026
+
+The [4 November evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-04.md)
+records the research and SPARC work since the last delivered recovery
+checkpoint. The main advance is better mathematical control of a candidate's
+coupled perturbations, with a separate observational comparator now sampled:
+
+- **Density forcing is controlled initially:** an action-derived change of
+  variables retains density in L2 and supplies its complete initial source
+  estimate, including force, regulator, mean and gauge terms.
+- **The prepared R-tau principal calculation retains every direction:** a
+  positive ordinary-sector principal energy now includes both zero-speed
+  modes. The coupled calculation retains all 20 ordinary/force directions;
+  its periodic variable-coefficient change preserves means without a Fourier
+  cutoff. These results concern the initial principal operator, not the full
+  evolving system. R-tau remains an unadopted comparison action.
+- **Full-SPARC conditional MCMC is recorded:** all 175 galaxies were sampled
+  with distance, inclination and stellar mass-to-light nuisance parameters.
+  Targeted continuation brought convergence diagnostics to **157/175**;
+  **18 remain unresolved**. This uses a fixed empirical simple-nu comparator,
+  not an action-derived ITSM force prediction or a model-preference test.
+- **An unsuitable norm was rejected:** weakening density alone creates a
+  defective zero-speed principal control. That adverse result is preserved;
+  the stronger density calculation does not erase it.
+
+**Next physical question:** can the full actual generator, moving constraints
+and time-dependent energy be controlled on a preserved background domain?
+The [coupled-energy contract](Theory/Gates/RES-001/RES001_RTAU_PREPARED_COUPLED_ENERGY_V1_CONTRACT_2026-11-04.md)
+remains open. The goal is currently **paused by the operator** for assessment.
+No new finite-time theorem, healthy interaction window, microscopic matching,
+numerical acceleration prediction or canonical promotion follows yet.
+
+The checkpoint preserves original inputs, failed attempts and independent
+review debt. Paper versions are unchanged; no website deployment or paper
+submission is part of this documentation update.
+
+### Preserved 1 November research checkpoint
 
 The [new checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-01.md)
 record work since recovery commit `57d4f302` on 30 October. The main advance

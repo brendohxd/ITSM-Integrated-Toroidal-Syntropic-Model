@@ -3692,3 +3692,423 @@ Native goal last reports BLOCKED awaiting the fresh High confirmation;
 no scientific derivation is resumed by this Git delivery. Actual prepared
 physical norm/evolving domain and G1-G6 remain incomplete. Review DEFERRED;
 physics_pass=false; gate_effect=NONE. No publication or site deployment.
+
+## Coupled initial observable and weak graph progress - 3 November 2026
+
+Current owner: [weak graph report](../Gates/RES-001/RES001_RTAU_WEAK_GRAPH_V1_REPORT_2026-11-03.md),
+following [2 November coupled auxiliary progress](../Gates/RES-001/RES001_RTAU_COUPLED_AUXILIARY_BUNDLE_PROGRESS_2026-11-02.md).
+High was confirmed for the continuing observable-norm bundle; the operator
+resumed the native goal. Older awaiting-High/BLOCKED entries above describe
+their dated checkpoints and are superseded for this bundle's continuation.
+
+The actual initial coupled inverse now extends H^-1 sources to H1 trace
+and L2 eliminated momenta, with retained weighted range and torus means.
+Contraction <0.562894, Green bound <8.491947; full graph bound <48.449775
+in the owning assembled-source norm. The six-entry auxiliary observable
+is controlled by metric H1 and force-field H2. 19/19 controls and exact
+immutable replay COMPLETE; all 219 inherited source hashes unchanged.
+Receipt f3e66a8ed8ef12ca69cff37c0d13df95f2c330e59381a35e07592088c636fbee.
+
+This is initial kinematic regularity, not a physical norm, moving-domain
+or finite-time theorem. NEXT: genuine free-data source assembly and moving
+compatible generator, retaining the order-minus-two symplectic density
+block, cross/modulus terms, clock flow, quartic and zero-speed couplings.
+No [0,.05] result or interaction window follows. R-tau remains unadopted;
+original R4C1 unchanged; G1-G6 incomplete; review DEFERRED;
+physics_pass=false; gate_effect=NONE. No paper/site change, vault mutation,
+action adoption, publication, commit or push. Mutable navigation history
+was locally preserved before this append.
+
+## Moving weighted range and weak constraint transport - 3 November 2026
+
+Owner: [moving-range report](../Gates/RES-001/RES001_RTAU_MOVING_RANGE_V1_REPORT_2026-11-03.md).
+The initial weighted compatibility derivative retains metric-weight drift
+and actual canonical trace-momentum rate. Integration by parts removes an
+unavailable P_t,z jet from the coefficient bound. Direct action checks at
+all three registered centres pass. The full covector-density Ward transport
+has a conditional H^-1 residual estimate; initial coefficient <0.008245441.
+This is not a time-uniform physical energy or a coupled existence result.
+17/17 controls and exact replay COMPLETE; receipt
+219f4d9dcc83348150f7d9f42c129b19f41b43adf5ee85d134c4d7f0fe3072aa.
+All 219 inherited source hashes remain unchanged. NEXT: actual free-data
+source/rate assembly and compatible generator; in particular source_t
+regularity must be derived rather than assumed H^-1. No background tube,
+[0,.05] theorem or physical norm is established. High remains acknowledged
+for this bundle. Goal ACTIVE; R-tau unadopted; G1-G6 incomplete;
+review DEFERRED; physics_pass=false; gate_effect=NONE. No new paper/site
+claim, action adoption, vault mutation, publication, commit or push.
+
+## Initial weak canonical/source rates - 3 November 2026
+
+Owner: [weak canonical rate V2](../Gates/RES-001/RES001_RTAU_WEAK_CANONICAL_RATE_V2_REPORT_2026-11-03.md).
+The actual initial thirteen-field canonical map has quantitative rates
+in L2, ordinary momentum rates in H^-1 and force momentum rate in H^-2.
+The full momentum-tangent time assembly retains generator drift and is
+controlled in H^-2. Its compatibility weight is H2, so the earlier
+sufficient H^-1 source-rate assumption is not required at this raw level.
+Caller shift remains explicit; free-embedding and compatible gauge/density
+composition remain incomplete. 20/20 checks and exact replay COMPLETE;
+receipt de3869925a976f3bebb4fa7d9774c4c8e21adc7557ce528041db377252447d14.
+All 219 inherited pins unchanged. V1's integer/interval conversion failure,
+source and sidecars are preserved; V2 changes only that conversion and pins.
+NEXT: compose the existing gauge/density inverse with these weak rows,
+retaining coordinate/symplectic drift and physical mean/charge partners.
+No physical energy, evolving-domain/time-tube or interaction-window closure.
+Goal ACTIVE; High acknowledged for this bundle; R-tau unadopted;
+G1-G6 incomplete; review DEFERRED; physics_pass=false; gate_effect=NONE.
+No action adoption, paper/site claim, vault mutation, publication or Git delivery.
+
+## Initial gauge-closed weak rate composition - 3 November 2026
+
+Owner: [initial gauge composition V2](../Gates/RES-001/RES001_RTAU_INITIAL_GAUGE_COMPOSITION_V2_REPORT_2026-11-03.md).
+The prior caller-shift input is now closed using the actual periodic gauge
+inverse, with retained physical modulus rates and harmonic coordinate inputs.
+The compatible initial density/trace graph is lifted into the weak canonical
+rate rows. Paired field/momentum coordinate drift, negative-Sobolev Jacobian
+and index weights are retained. 21/21 controls and exact replay COMPLETE;
+receipt 9d8151f9ee1d458434de39c1a1332c6c8d0a32a6c1d901948f12aad8bf500352.
+All 219 inherited input hashes unchanged. Preserve V1's 19/20 exact-expression
+control failure; V2 expands the generic equality and adds a separate
+polynomial control without changing the equation or acceptance.
+NEXT: actual density-coordinate time row/evolving Green inverse, then physical
+mixed energy and a controlled coupled background interval. Initial weak
+rates do not prove these. Goal ACTIVE; High acknowledged for this bundle;
+R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete; review DEFERRED;
+physics_pass=false; gate_effect=NONE. No paper/site claim, action adoption,
+vault sync/mutation, publication, commit/push or deployment.
+
+## Initial weak density/gauge time row - 3 November 2026
+
+Owner: [weak density row V2](../Gates/RES-001/RES001_RTAU_WEAK_DENSITY_ROW_V2_REPORT_2026-11-03.md).
+Current density I and physical rho=I/(N*sqrt(h)) now have initial H^-1
+static and H^-2 time bounds on the registered compatible planar graph.
+The action current, full metric/lapse measure variation and scalar/density
+pullbacks are retained. A periodic H1 algebra estimate controls the weak
+background-time product without an unprovided third shift-root derivative.
+13/13 controls and exact replay COMPLETE; receipt
+d3d2146f33b8a744aaf4b02b673f2f27b13592f7b371ea82670165c80d454e63.
+All 219 original input hashes unchanged. Preserve V1's interval/Taylor
+multiplication failure; V2 changes dispatch order only.
+The initial forward canonical/gauge/density rows are controlled in weak
+spaces. The evolving inverse, strong physical energy and coupled time tube
+remain open. NEXT: derive and test action-based kinetic/regulator terms in
+a compensated density observable, retaining all metric/frame stress and
+quartic/zero-speed coupling. No cancellation is yet claimed. Goal ACTIVE;
+High acknowledged for this bundle; R-tau unadopted; original R4C1 unchanged;
+G1-G6 incomplete; review DEFERRED; physics_pass=false; gate_effect=NONE.
+No paper/site claim, action adoption, vault mutation/sync or Git delivery.
+
+## Action-derived compensated density and metric work - 3 November 2026
+
+Owner: [compensated density V1](../Gates/RES-001/RES001_RTAU_COMPENSATED_DENSITY_V1_REPORT_2026-11-03.md).
+The actual force's independent plenum frame and norm-cubed interaction
+require its full Legendre energy e_force=p*f_p-f. The invertible observable
+Sigma=rho+e_force+b*Z^2/2 cancels force/regulator static density terms.
+Its highest regulator Z_zz and p_zz terms cancel exactly. The full residual
+b*N*[(kappa*trK-2*Kupzz)*psi_z*(Z_z-beta*psi_z*Z)-trK*Z^2/2]
+survives and is retained with the complete force/frame/other-action work.
+27/27 controls and exact replay COMPLETE; receipt
+51eb265de42ce4b32c35595a9f930742832f50e85b90e44fa04855591a32d522.
+All 219 inherited pins unchanged; no new failed attempt. This is an exact
+operator cancellation, not coercivity, a compensated-rate bound or a time
+tube. NEXT: quantify the full remaining row on the actual prepared domain
+and test its coupled physical energy, keeping quartic and zero-speed modes.
+Goal ACTIVE; High acknowledged for this bundle; R-tau unadopted; original
+R4C1 unchanged; G1-G6 incomplete; review DEFERRED; physics_pass=false;
+gate_effect=NONE. No matching, paper/site promotion, vault sync/mutation,
+action adoption, publication, commit/push or deployment.
+
+
+## Complete initial compensated-density rate - 3 November 2026
+
+Owner: [compensated rate V1](../Gates/RES-001/RES001_RTAU_COMPENSATED_RATE_V1_REPORT_2026-11-03.md).
+The complete initial Sigma time row is bounded in H^-1 on the exact
+compatible planar graph, including force/frame/other-action work, metric
+regulator stress and coordinate drift. Sigma_L2 is an explicit additional
+observable input, not inferred from Dminus. 17/17 controls and byte-identical
+replay COMPLETE; all 219 original pins and snapshotted sidecars preserved.
+This is a different-space forward bound, not a physical energy inequality
+or controlled coupled lifetime. NEXT: derive the action-based compensated
+static trace/momentum operator and test its actual compatible inverse; keep
+the fixed-I/charge ensemble, means, harmonics and weighted range condition.
+Then assess physical mixed energy and evolving-domain control. R-tau remains
+unadopted; original R4C1 unchanged; G1-G6 incomplete; goal ACTIVE. Review
+DEFERRED; physics_pass=false; gate_effect=NONE. No matching, paper/site
+promotion, vault sync/mutation, action adoption or Git/publication delivery.
+
+
+## Initial compensated-scalar projected inverse - 3 November 2026
+
+Owner: [compensated static inverse V1](../Gates/RES-001/RES001_RTAU_COMPENSATED_STATIC_INVERSE_V1_REPORT_2026-11-03.md).
+The action-derived Sigma scalar trace operator, after momentum completion,
+has whole-root strong/weak contraction bounds below 0.357287/0.370458 and
+assembled-source inverse bounds below 2.639787/2.695016. Its negative mean
+block, canonical force differential, physical-volume terms and leading
+weak drift are retained. 35/35 controls and byte-identical replay COMPLETE;
+receipt 9f07bf684f644f70d16bfb299f8e7c5f2b13e3017ff91b51af24cd012fc0598d.
+All 219 original pins and snapshotted sidecars preserved. The projected
+inverse does not impose longitudinal range or original fixed-I/U1 charge
+conditions; no fixed Sigma mean is adopted. NEXT: quantify the complete
+compensated free-source map and physical norm equivalence, then coupled
+action/symplectic energy with zero-speed/quartic modes, moving inverse and
+actual time tube. A static inverse is not a closed physical evolution norm.
+R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete; goal ACTIVE;
+review DEFERRED; physics_pass=false; gate_effect=NONE. No matching, public
+claim, action adoption, vault sync/mutation or Git/publication delivery.
+
+
+## Complete compensated-source/state chart - 3 November 2026
+
+Owner: [source chart V1](../Gates/RES-001/RES001_RTAU_COMPENSATED_SOURCE_CHART_V1_REPORT_2026-11-03.md).
+The complete initial free-source map and projected inverse now give a
+bounded canonical H1/L2 <-> compensated Sigma_H^-1/free-data chart on the
+original compatible planar range. All three momentum sources, means and
+the variable multiplier outside the full improvement divergence are kept.
+The force momentum cancels from static Sigma but remains in the constraint.
+34/34 controls and byte-identical replay COMPLETE; receipt
+4600a4b8a4237dee324b28490a896dbcd6776fbd3b1a88f89114ed74363429f7.
+All 219 original pins and snapshotted sidecars preserved. Sigma_L2 and force
+H2 remain stronger explicit domain controls; initial norm equivalence is
+not a positive action energy, strong symplectic inverse or time tube.
+NEXT: compatible coupled energy/generator, density transport and zero-speed/
+quartic coupling with moving inverse/ranges and actual background bounds.
+Original charge/range/gauge conditions and physical clock flow retained.
+Goal ACTIVE; R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete;
+review DEFERRED; physics_pass=false; gate_effect=NONE. No action adoption,
+matching, public claim, vault mutation/sync or Git/publication delivery.
+
+
+## Compensated density transport in H^-1 - 3 November 2026
+
+Owner: [density transport V2](../Gates/RES-001/RES001_RTAU_COMPENSATED_TRANSPORT_V2_REPORT_2026-11-03.md).
+The initial density-sector logarithmic estimate now uses Sigma_H^-1
+without an extra Sigma_L2 assumption. It retains scalar advection and its
+second coefficient derivative, reaction W1 bound, all material remainder,
+corrective shift and both scalar pullbacks. Compose with the full initial
+source/state chart; force H2 and harmonic velocity remain explicit inputs.
+15/15 controls and byte-identical replay COMPLETE; receipt
+f98ced812b3e47d6a2877f13e44ca2b7078362f7a04f4b52882b0bfa18831dcb.
+Preserve V1's interval-coercion failure; V2 changes one numeric cast plus
+provenance/version labels, not equations or acceptance. All 219 inherited
+pins and snapshotted sidecars preserved. The composed constants are large;
+no useful [0,.05] accuracy or actual background interval is established.
+NEXT: full coupled metric/frame/matter/force energy with both zero-speed
+partners, quartic mode, symplectic cross terms and moving constraints/Green
+map. Density-sector control is not bundle completion. Goal ACTIVE; R-tau
+unadopted; original R4C1 unchanged; G1-G6 incomplete; review DEFERRED;
+physics_pass=false; gate_effect=NONE. No matching, public claim, action
+adoption, vault mutation/sync or Git/publication delivery.
+
+
+## Weak density is not the complete coupled energy - 3 November 2026
+
+Owner: [weak-density energy adequacy screen](../Gates/RES-001/RES001_RTAU_WEAK_DENSITY_ENERGY_SCREEN_V1_REPORT_2026-11-03.md).
+The original complete homogeneous generator, including map drift, gives an
+exact adverse control: weakening density only to H^-1 restores an ordinary
+zero-speed Jordan pair (algebraic 2, geometric 1). The original stronger
+density energy still passes. The quartic branch and its nonzero forcing
+are retained; the ordinary mixed-order Schur limit is explicit. 26/26
+controls and exact replay validate this REJECTION of a proposed principal
+energy route, not physical clearance. Receipt
+47aa8a3be990d883402df9e308e99434d6081a9579dbf643c10480736c160569.
+The initial weak chart and density-sector estimates remain valid; do not
+promote them to a full coupled norm. This is an original homogeneous control,
+not a theorem of failure at the later prepared inhomogeneous background.
+NEXT: [strong-density/normal-form contract](../Gates/RES-001/RES001_RTAU_STRONG_DENSITY_NORMAL_FORM_V1_CONTRACT_2026-11-03.md).
+Retain physical density strength and full auxiliary metric-gradient mixing;
+test an action-current-derived periodic normal form with coefficient drift,
+means, constraints and all zero-speed/quartic sectors. No arbitrary weights
+or new physical prescription. All original pins/sidecars preserved; goal
+ACTIVE; R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete; review
+DEFERRED; physics_pass=false; gate_effect=NONE. No matching, action adoption,
+vault mutation/sync, publication or Git delivery.
+
+
+## Density strength retained: two fast normal-form components - 3 November 2026
+
+Owners: [primitive correction V1](../Gates/RES-001/RES001_RTAU_STRONG_DENSITY_NORMAL_FORM_V1_REPORT_2026-11-03.md)
+and [force-gradient correction V2](../Gates/RES-001/RES001_RTAU_STRONG_DENSITY_NORMAL_FORM_V2_REPORT_2026-11-03.md).
+The action-current/clock-kinematic map
+w=deltaSigma-c*Dinv*P0(delta pi_psi)-alpha*D_z(delta psi),
+c=T*psi_z/(mu*kappa), alpha=-(p*f_ps+f_s), cancels the identified fast
+delta Z_z and delta p_z terms while retaining density L2, momentum L2
+and force H2 orders. Combined initial map/inverse bound <1.000115587.
+All coefficient time/spatial drift, means and primitive commutators remain.
+V1 34/34 and V2 22/22 plus byte-identical replays COMPLETE; receipts
+0978896c5dd51fad8540d41ad952b7921330ecde6e674f51f42ef5ed02255568 and
+4cb333e544b5bdfe24c48f14753c3dd5fbbb926e07e10cc8ca878bedd3383d77.
+Reused the immutable 1 November momentum-ODE C3 bound, without repeating
+the old bootstrap or assuming a Fourier tail. All 219 original pins and
+snapshotted sidecars preserved. Full coupled energy and time tube remain
+open; the weak-density-only principal-energy rejection still applies.
+NEXT: [other-sector lapse identity](../Gates/RES-001/RES001_RTAU_OTHER_SECTOR_LAPSE_IDENTITY_V1_CONTRACT_2026-11-03.md).
+Test the exact local/raw-lapse pullback before treating apparent ordinary
+derivatives as independent forcing; then complete the full coupled energy.
+No fixed mean, mode deletion, action or microscopic matching change. Goal
+ACTIVE; R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete; review
+DEFERRED; physics_pass=false; gate_effect=NONE. No public claim, vault
+mutation/sync, dispatch, publication or Git delivery.
+
+
+## Local other-sector lapse identity - recorded 4 November 2026
+
+Owner: [other-sector identity V1](../Gates/RES-001/RES001_RTAU_OTHER_SECTOR_LAPSE_IDENTITY_V1_REPORT_2026-11-03.md).
+The declared nonmatter other action obeys the exact off-shell LOCAL relation
+E_other=-beta*I_other=-beta*M*Sigma, including full lapse-gradient improvement
+and delta E_other=-beta*(M*delta Sigma+Sigma*delta M). It assumes neither
+Euler evolution nor a Friedmann relation. 55/55 controls and byte-identical
+replay COMPLETE; receipt
+152d0af346f902b0325ea0c4ef8be6c1c69cf84b1e350fadf7799cafb95c7594.
+Both scalar current and density row are reorganized exactly: the density
+reaction is -N*trK*Sigma and the local scalar source includes -beta*M*Sigma.
+No source or spatial flux is set to zero. The V1/V2 corrections and all
+means/constraints remain; do not reuse old split-only constants as new
+strong-source bounds. All 219 original pins/sidecars preserved.
+NEXT: [complete strong-density L2 source](../Gates/RES-001/RES001_RTAU_STRONG_DENSITY_L2_SOURCE_V1_CONTRACT_2026-11-04.md),
+then full ordinary/zero-speed/quartic energy with moving symplectic/Green
+maps and a genuine background time tube. Exact local algebra is not that
+quantitative estimate. Goal ACTIVE; R-tau unadopted; original R4C1 unchanged;
+G1-G6 incomplete; review DEFERRED; physics_pass=false; gate_effect=NONE.
+No new action/matching input, vault mutation/sync or Git/publication delivery.
+
+
+## Complete initial strong-density L2 sector - 4 November 2026
+
+Owner: [strong-density L2 source V1](../Gates/RES-001/RES001_RTAU_STRONG_DENSITY_L2_SOURCE_V1_REPORT_2026-11-04.md).
+The complete two-step corrected density now has an initial L2 source and
+transport estimate with all local/current/regulator/mean/gauge terms.
+Density L2, full canonical H1/L2 and force H2 orders are retained; no density-
+only weakening or deleted mean is used. Adapted density log-bound row in
+(w_L2_adapted,Q_H1_original,P_L2_original,force_H2_original,Hharm_adapted)
+is below (2.607839,1542.334128,608.383149,0.000895154,8.822371).
+Large cross coefficients are conservative gauge/velocity bounds, not measured
+instability rates. They do not certify useful finite-time accuracy.
+20/20 controls and byte-identical replay COMPLETE; receipt
+5dabd5cf8d13ccd84ab09fd0aad928e4e7f59035808128a20c6d6a5271c54a15.
+All parent pins and 219 original sources/sidecars preserved. This completes
+the INITIAL DENSITY SECTOR, not the full mixed physical energy or time tube.
+NEXT: [actual prepared coupled energy](../Gates/RES-001/RES001_RTAU_PREPARED_COUPLED_ENERGY_V1_CONTRACT_2026-11-04.md).
+Reuse completed action/kinetic/inverse/current/normal-form results; derive
+the full ordinary/other-zero-speed/quartic energy with all symplectic cross
+terms, moving constraints/gauge/Green maps and then actual domain persistence.
+Goal ACTIVE; R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete;
+review DEFERRED; physics_pass=false; gate_effect=NONE. No matching, action
+adoption, public claim, vault mutation/sync or Git/publication delivery.
+
+
+## Ordinary strong-density principal graph - 4 November 2026
+
+Owner: [ordinary strong graph V1](../Gates/RES-001/RES001_RTAU_ORDINARY_STRONG_GRAPH_V1_REPORT_2026-11-04.md).
+The exact pinned off-shell action-coefficient control retains 18 ordinary
+directions, with both zero-speed directions semisimple, and has an explicit
+polynomial-projector principal energy between |Y|^2/5 and 240|Y|^2. This is
+NOT a prepared-background theorem or a canonical Hamiltonian positivity claim.
+The immutable whole-root action Hessian gives a candidate ordinary operator
+with certified temporal inverse contraction <0.094789435; no Hessian rerun.
+Its trace-defect intervals contain zero, but their row enclosure <0.725836
+is only necessary consistency, not an exact identity or a measured failure.
+32/32 bounded controls and byte-identical replay COMPLETE; receipt
+cd1963d8f69c62f32101195dcbc7c3e2a51e8da3e9a8b0ba81760dab503ba910.
+All 219 original pins and inherited sources/sidecars preserved. Retain
+the two additional quartic directions and all global charge/range/harmonic
+partners; counting these is not their energy proof.
+NEXT: exact actual-domain leading graph/ordinary identities with justified
+global amplitude completion, then actual uniform energy, quartic mixing and
+full moving symplectic/Green/gauge remainder. The owning prepared coupled
+energy contract and actual time tube remain OPEN. Goal ACTIVE; R-tau
+unadopted; original R4C1 unchanged; G1-G6 incomplete; review DEFERRED;
+physics_pass=false; gate_effect=NONE. No vault write/sync or Git/publication.
+
+
+## Actual ordinary action identity and principal energy - 4 November 2026
+
+Owner: [ordinary Ward energy V4](../Gates/RES-001/RES001_RTAU_ORDINARY_WARD_ENERGY_V4_REPORT_2026-11-04.md).
+The candidate leading trace identity is now exact from the action, arbitrary
+tilt included: Brel[:,Vz]=(a*MP2/gamma)*t and Grel[:,Vz]=0. No uncertain
+interval residual was set to zero without proof. The whole registered initial
+root admits a positive FROZEN ordinary principal energy for all 18 ordinary
+directions, retaining both zero-speed coordinates. Sufficient energy and
+complement-inverse errors are <0.539715 and <0.919581. Full norm constants
+are conservative: 1.07346e-7*|Y|^2 <= E <=4.580380e6*|Y|^2. They do not
+certify finite-time accuracy or a propagation/growth rate.
+31/31 bounded controls and byte-identical V4 replay COMPLETE; receipt
+19c3a5ef90791c0d0619d7664337c42724f97136788c1dc7202dc662b337af50.
+V1 interval-conjugation failure and V2 inconclusive expanded bounds remain
+preserved; V3/V4 factored estimates change no action/domain/acceptance.
+All 219 original pins and old sources/sidecars preserved; no Hessian rerun.
+NEXT: the retained quartic pair and its ordinary coupling, then the full
+variable-coefficient/symplectic/Green/gauge/range remainder and global
+partners. The exact leading identity is not moving-domain/constraint
+preservation. Full coupled energy, actual time tube, interaction/window
+and identifying matching remain incomplete. Goal ACTIVE; R-tau unadopted;
+original R4C1 unchanged; G1-G6 incomplete; review DEFERRED; physics_pass=false;
+gate_effect=NONE. No vault write/sync, dispatch or Git/publication delivery.
+
+
+## Retained 20-direction ordinary/quartic principal assembly - 4 November 2026
+
+Owner: [mixed principal assembly V1](../Gates/RES-001/RES001_RTAU_MIXED_PRINCIPAL_ASSEMBLY_V1_REPORT_2026-11-04.md).
+All 18 ordinary directions and the physical (Z,delta pi_psi) pair remain.
+Both order-k cross blocks include secondary metric mixing, full force
+Legendre coefficients and the shift Schur response Drel=Dshift+S*Cshift.
+The fast weighted formal principal identity includes actual coefficient
+gradients; deleting them fails its exact control. An invertible order-
+minus-one change removes the cross blocks of the frozen principal symbol
+with ||S1||<0.601920. Its mathematical |k|>=2 threshold is NOT a physical
+cutoff/window or actual-system accuracy claim. Frozen extra remainder
+<0.241609 excludes the unbounded full variable-coefficient remainder.
+28/28 bounded controls and byte-identical replay COMPLETE; receipt
+261a512ad5447b388063451eb993eee7b0638f8e6e3cac3e4a45bf028e49b51b.
+All 219 original pins and 286 receipt sources/sidecars preserved; no Hessian
+rerun. No mode, mean, charge partner or forced tail is deleted.
+NEXT: bound the actual composition/order-zero remainder, S1 derivatives,
+ordinary-energy/zero-charge derivatives, full constraint/Green/gauge/range
+moving map and global partners, then actual background-domain persistence.
+Full coupled energy, actual time tube and physical interaction/window
+remain OPEN. Goal ACTIVE; R-tau unadopted; original R4C1 unchanged;
+G1-G6 incomplete; review DEFERRED; physics_pass=false; gate_effect=NONE.
+No paper/site promotion, vault write/sync, dispatch or Git/publication.
+
+
+## Periodic variable-coefficient principal composition - 4 November 2026
+
+Owner: [periodic principal composition V2](../Gates/RES-001/RES001_RTAU_PERIODIC_PRINCIPAL_COMPOSITION_V2_REPORT_2026-11-04.md).
+The registered principal differential operator now has an exact periodic
+normal-form composition with all finite-rank mean terms. T=I+i*P*S,
+P=D^-1*(I-mean), is invertible on the full original periodic L2 space,
+preserves every component mean and needs no Fourier cutoff. All 20
+ordinary/force directions and generated tails remain. Bounds: ||T^-1||
+<2.512053 and composition remainder <26.438228. This is not the full actual
+generator remainder or an evolving-domain theorem. Spatial energy terms
+are finite but the ordinary bounds are very conservative; they do not
+certify useful accuracy on [0,0.05].
+18/18 scoped controls and byte-identical replay COMPLETE; receipt
+d3f2fe4cc893109596883f69155622e1e8e7c93300a40eb0ed8774988d922a8a.
+Exact noncommuting Fourier controls retain all convolution tails and reject
+omitted means. V1's interval-square failure is preserved; V2 restores the
+existing jet square semantics and strict positive-Y guard, changing no
+action/domain/acceptance. All 219 original and 292 receipt pins/sidecars
+preserved. No full Hessian was rerun.
+NEXT: bound the actual material-frame generator minus the registered
+principal operator through exact constraint/Green/auxiliary/gauge maps;
+restore physical-time advection and bound T_dot/H_dot, moving ranges and
+global charge/harmonic partners. Full energy and actual background tube
+remain OPEN. Goal ACTIVE; R-tau unadopted; original R4C1 unchanged; G1-G6
+incomplete; review DEFERRED; physics_pass=false; gate_effect=NONE. No new
+matching input, vault write/sync, dispatch or Git/publication delivery.
+
+
+## Operator-paused documentation checkpoint - 4 November 2026
+
+The native goal is PAUSED by the operator. The
+[4 November checkpoint](../Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-04.md)
+records the complete initial density sector, ordinary/mixed/periodic
+principal control, full-SPARC comparator sampling and continuation, and
+all scientific holds. README and active_research.md now point to it.
+The previous High-confirmation wait is historical. No new derivation starts
+during this pause. The assessed trace-smoothing/full-generator route is
+unexecuted; resume must retain the full coupled-energy contract, actual
+generator remainder, T_dot/H_dot and moving/global constraints. No action
+change, gate promotion, vault mutation, publication or Git delivery is
+implied by this documentation. Commit/push require the usual authority and
+a verified signature; original research pins and exclusions remain intact.
