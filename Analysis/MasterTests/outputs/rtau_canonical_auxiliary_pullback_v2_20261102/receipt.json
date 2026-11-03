@@ -1,0 +1,182 @@
+{
+  "checks": [
+    {
+      "name": "auxiliary_columns_exactly_absent",
+      "passed": true
+    },
+    {
+      "name": "A_norms_finite",
+      "passed": true
+    },
+    {
+      "name": "B_norms_finite",
+      "passed": true
+    },
+    {
+      "name": "pullback_covers_transverse_matrix",
+      "passed": true
+    },
+    {
+      "name": "pullback_covers_longitudinal_matrix",
+      "passed": true
+    },
+    {
+      "name": "longitudinal_pullback_chain_rule",
+      "passed": true
+    },
+    {
+      "name": "harmonic_contribution_retained",
+      "passed": true
+    },
+    {
+      "name": "actual_map_constants_positive_finite",
+      "passed": true
+    },
+    {
+      "name": "full_matrix_slot_factor",
+      "passed": true
+    },
+    {
+      "name": "metric_Lie_probe_bound",
+      "passed": true
+    }
+  ],
+  "constants_binary": {
+    "configuration": [
+      [
+        0,
+        11822757409429929452203712576375849919961659397496444821943907,
+        -197,
+        203
+      ],
+      [
+        0,
+        11822757409429929452203712576375849919961659397496634251326063,
+        -197,
+        203
+      ]
+    ],
+    "configuration_z": [
+      [
+        0,
+        4503414763351175528773721208399620701262076673465446069287223,
+        -199,
+        202
+      ],
+      [
+        0,
+        9006829526702351057547442416799241402524153346930947151801055,
+        -200,
+        203
+      ]
+    ],
+    "harmonic_velocity": [
+      [
+        0,
+        7296250025138030109096289907079385276483255539040417213891807,
+        -213,
+        203
+      ],
+      [
+        0,
+        7296250025138030109096289907079385276483255539040417213891827,
+        -213,
+        203
+      ]
+    ],
+    "momentum": [
+      [
+        0,
+        9675576607912085082257638917821353198277785625107285934143021,
+        -198,
+        203
+      ],
+      [
+        0,
+        4837788303956042541128819458910676599138892812553720482108935,
+        -197,
+        202
+      ]
+    ]
+  },
+  "constraint_time_persistence": false,
+  "legendre_block_bounds": {
+    "A": [
+      [
+        0,
+        7853993003026366710626328849306569658593756521635058554626051,
+        -201,
+        203
+      ],
+      [
+        0,
+        7853993003026366710626328849306569658593756521635058554626093,
+        -201,
+        203
+      ]
+    ],
+    "A_row_column": [
+      [
+        0,
+        1530311174606034212346701707274406088673533903414830871688369,
+        -199,
+        200
+      ],
+      [
+        0,
+        6121244698424136849386806829097624354694135613659323486753477,
+        -201,
+        202
+      ]
+    ],
+    "B": [
+      [
+        0,
+        9123684868576836722442901721169083652111883505810220836489925,
+        -206,
+        203
+      ],
+      [
+        0,
+        9123684868576836722442901721169083652111883505810220836489943,
+        -206,
+        203
+      ]
+    ],
+    "B_row_column": [
+      [
+        0,
+        1056387769793588416698220108599488372997367891488001907283041,
+        -203,
+        200
+      ],
+      [
+        0,
+        8451102158348707333585760868795906983978943131904015258264329,
+        -206,
+        203
+      ]
+    ]
+  },
+  "passed": 10,
+  "physical_norm": "NOT_DERIVED",
+  "physics_pass": false,
+  "scope": "INITIAL_CANONICAL_GAUGE_AUXILIARY_MAP_ONLY",
+  "source_sha256": {
+    "Analysis/MasterTests/outputs/r4c1_rtau_gauge_velocity_v1_attempt_01/summary.json": "b04c13cdc5a26673e5f91291c43e50edfb5f4a03bf4a0f68c2a317c95d53e92b",
+    "Analysis/MasterTests/outputs/r4c1_rtau_initial_acceleration_v1_attempt_01/summary.json": "dbcdacf8954e1cc59a2ebc42b91cd77f7a8e3473c2c54906b1f94e506455154d",
+    "Analysis/MasterTests/outputs/r4c1_rtau_mixed_operator_v4_attempt_01/summary.json": "d916402a0751fa4a0409d2048ed4e38ea18dd9b5629836f6a3517fdd44e0b577",
+    "Analysis/MasterTests/outputs/r4c1_rtau_spatial_gauge_v1_attempt_01/summary.json": "449ce6a63c04a479fb8fc79cee62806ba5072d8dacac99f8614e9ab96e9ce014",
+    "Analysis/MasterTests/outputs/rtau_coupled_auxiliary_variation_v1_20261102/receipt.json": "b26e91c538116e3930db006ee388f808454a7f1700eb30ad3ff01d1bdb729743",
+    "Analysis/MasterTests/test_rtau_canonical_auxiliary_pullback_v2.py": "e11a25720fe1c59f188503afe092ebc06845a9692005b967d5415be1e41dbccf",
+    "Theory/Gates/RES-001/RES001_RTAU_CANONICAL_AUXILIARY_PULLBACK_V1_SPEC_2026-11-02.md": "38e751f0b4f02d3ca554e71110828780424d9250f8e792272b790e6f53045aff",
+    "Theory/Gates/RES-001/RES001_RTAU_CANONICAL_AUXILIARY_PULLBACK_V2_SPEC_2026-11-02.md": "6a0323cf57718f02ad20e1debbe5c972145fcda4ed5e430aa4bbb7dc1db6ffbe"
+  },
+  "total": 10,
+  "upper_display": {
+    "configuration": "58.85855998826277",
+    "configuration_z": "5.604963774975957",
+    "harmonic_velocity": "0.0005542562912295984",
+    "momentum": "24.08450442126111"
+  }
+}

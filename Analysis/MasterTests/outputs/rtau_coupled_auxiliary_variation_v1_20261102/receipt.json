@@ -1,0 +1,110 @@
+{
+  "canonical_velocity_pullback": "NOT_ESTABLISHED",
+  "checks": [
+    {
+      "name": "full_six_component_deltaZ",
+      "passed": true
+    },
+    {
+      "name": "full_six_component_deltaZt",
+      "passed": true
+    },
+    {
+      "name": "omitting_metric_velocity_rejected",
+      "passed": true
+    },
+    {
+      "name": "Lie_full_metric_deltaZ",
+      "passed": true
+    },
+    {
+      "name": "Lie_full_metric_deltaZt",
+      "passed": true
+    },
+    {
+      "name": "constant_metric_mode_not_deleted",
+      "passed": true
+    },
+    {
+      "name": "actual_initial_constants_positive_finite",
+      "passed": true
+    }
+  ],
+  "constants_binary": {
+    "chi_z": [
+      [
+        0,
+        11146800889001523825364783290648650334229606588443179255324349,
+        -201,
+        203
+      ],
+      [
+        0,
+        11146800889001523825364783290648650334229606588443179255324359,
+        -201,
+        203
+      ]
+    ],
+    "eta": [
+      [
+        0,
+        6432697514690230079948435756105792127257513838548218802739203,
+        -202,
+        203
+      ],
+      [
+        0,
+        6432697514690230079948435756105792127257513838548218802739207,
+        -202,
+        203
+      ]
+    ],
+    "metric": [
+      [
+        0,
+        415321190792923373298342189776320687797776042776309155141883,
+        -208,
+        199
+      ],
+      [
+        0,
+        1661284763171693493193368759105282751191104171105236620567535,
+        -210,
+        201
+      ]
+    ],
+    "metric_velocity": [
+      [
+        0,
+        5988058509369058438647827999220677917174542062436660648783831,
+        -214,
+        202
+      ],
+      [
+        0,
+        11976117018738116877295655998441355834349084124873321297567679,
+        -215,
+        203
+      ]
+    ]
+  },
+  "constants_upper_display": {
+    "chi_z": "3.468335611576632",
+    "eta": "1.000769372794417",
+    "metric": "0.001009589888876502",
+    "metric_velocity": "0.0002274400609651493"
+  },
+  "finite_time_estimate": false,
+  "passed": 7,
+  "physical_norm": "NOT_DERIVED",
+  "physics_pass": false,
+  "scope": "COUPLED_AUXILIARY_OBSERVABLE_COMPONENT_ONLY",
+  "source_sha256": {
+    "Analysis/MasterTests/outputs/rtau_prepared_weak_coefficients_v1_20261102/receipt.json": "b81a14a7e957f1f3ad1408ae64ca4b3eb261dc9acd4379cfd50861d422c1ed8d",
+    "Analysis/MasterTests/test_01_r4c1_rtau_periodic_numerical_v1.py": "40a356d574b882d410d4809dbeace8e4e789d23aa864d5503246fd1e8f0d2fe5",
+    "Analysis/MasterTests/test_rtau_coupled_auxiliary_variation_v1.py": "f1b52e82825aa878aaf10346f86aed2620064245156de576194e92886c3a7332",
+    "Theory/Gates/RES-001/RES001_RTAU_COUPLED_AUXILIARY_VARIATION_V1_SPEC_2026-11-02.md": "fcf53ec8212ff63c48c67b86f3d767ac249d3901f56f2e6e4750fb1ebd780dd5",
+    "Theory/Gates/RES-001/RES001_RTAU_COUPLED_OBSERVABLE_NORM_V1_CONTRACT_2026-11-02.md": "21b502371a2494474a6d2c8a41680060729a1da023cd6d25890317270b599bba"
+  },
+  "total": 7
+}
