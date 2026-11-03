@@ -1,0 +1,247 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: recno
+#   datatype: int32
+#   description: Record number assigned by the VizieR team. Should Not be used for identification.
+#   meta: !!omap
+#   - {ucd: RECORD}
+#   - {width: 8}
+# - name: Name
+#   datatype: string
+#   description: Galaxy name
+#   meta: !!omap
+#   - {ucd: ID_MAIN}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: 11*}
+# - name: Nvel
+#   datatype: int16
+#   description: Number of velocities (table2)
+#   meta: !!omap
+#   - {ucd: NUMBER}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: Type
+#   datatype: int16
+#   description: '[0/11] Numerical Hubble type (1)'
+#   meta: !!omap
+#   - {ucd: MORPH_TYPE}
+#   - {width: 2}
+# - name: Dist
+#   unit: Mpc
+#   datatype: float32
+#   format: '{:6.2f}'
+#   description: '[0.98/127.8] Assumed distance'
+#   meta: !!omap
+#   - {ucd: POS_GAL_HC}
+#   - {width: 6}
+#   - {precision: '2'}
+# - name: e_Dist
+#   unit: Mpc
+#   datatype: float32
+#   format: '{:5.2f}'
+#   description: '[0.05/12.8] Mean error on Dist'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 5}
+#   - {precision: '2'}
+# - name: f_Dist
+#   datatype: uint8
+#   description: '[1/5] Flag giving the distance method (2)'
+#   meta: !!omap
+#   - {ucd: CODE_MISC}
+#   - {width: 1}
+# - name: i
+#   unit: deg
+#   datatype: float32
+#   format: '{:4.1f}'
+#   description: '[15/90] Assumed inclination angle (3)'
+#   meta: !!omap
+#   - {ucd: POS_INCLIN_LOS}
+#   - {width: 4}
+#   - {precision: '1'}
+# - name: e_i
+#   unit: deg
+#   datatype: float32
+#   format: '{:4.1f}'
+#   description: '[1/10] Mean error on i'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 4}
+#   - {precision: '1'}
+# - name: L3.6
+#   unit: GsolLum
+#   datatype: float32
+#   format: '{:7.3f}'
+#   description: '[0/490] Total luminosity at 3.6{mu}m (L_[3.6]_)'
+#   meta: !!omap
+#   - {ucd: PHYS_LUMINOSITY_IR_MISC}
+#   - {width: 7}
+#   - {precision: '3'}
+# - name: e_L3.6
+#   unit: GsolLum
+#   datatype: float32
+#   format: '{:7.3f}'
+#   description: '[0/6.2] Mean error on L3.6'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 7}
+#   - {precision: '3'}
+# - name: Reff
+#   unit: kpc
+#   datatype: float32
+#   format: '{:5.2f}'
+#   description: '[0/12.4] Effective radius (R_eff_) encompassing half of the total 3.6{mu}m luminosity'
+#   meta: !!omap
+#   - {ucd: PHYS_SIZE_RADIUS_GENERAL}
+#   - {width: 5}
+#   - {precision: '2'}
+# - name: SBeff
+#   unit: solLum / pc2
+#   datatype: float64
+#   format: '{:8.2f}'
+#   description: '[5.3/3317.7] Effective 3.6{mu}m surface brightness ({Sigma}_eff_), i.e., the average surface brightness within R_eff_'
+#   meta: !!omap
+#   - {ucd: PHOT_SB_GENERAL}
+#   - {width: 8}
+#   - {precision: '2'}
+# - name: Rdisk
+#   unit: kpc
+#   datatype: float32
+#   format: '{:5.2f}'
+#   description: '[0.18/18.8] The 3.6{mu}m scale length of the stellar disk (R_d_)'
+#   meta: !!omap
+#   - {ucd: PHYS_SIZE_LENGTH}
+#   - {width: 5}
+#   - {precision: '2'}
+# - name: SBdisk
+#   unit: solLum / pc2
+#   datatype: float64
+#   format: '{:8.2f}'
+#   description: '[12/23813.9] Extrapolated 3.6{mu}m central surface brightness of the stellar disk ({Sigma}_d_)'
+#   meta: !!omap
+#   - {ucd: PHOT_SB_GENERAL}
+#   - {width: 8}
+#   - {precision: '2'}
+# - name: MHI
+#   unit: GsolMass
+#   datatype: float32
+#   format: '{:7.3f}'
+#   description: '[0.01/40.1] Total HI mass (M_HI_)'
+#   meta: !!omap
+#   - {ucd: PHYS_MASS_MISC}
+#   - {width: 7}
+#   - {precision: '3'}
+# - name: RHI
+#   unit: kpc
+#   datatype: float32
+#   format: '{:5.2f}'
+#   description: '[0/74.3] HI radius (R_HI_) (4)'
+#   meta: !!omap
+#   - {ucd: PHYS_SIZE_RADIUS_GENERAL}
+#   - {width: 5}
+#   - {precision: '2'}
+# - name: Vflat
+#   unit: km / s
+#   datatype: float32
+#   format: '{:5.1f}'
+#   description: '[0/332] Asymptotically velocity along the flat part of the rotation curve (V_f_) (5)'
+#   meta: !!omap
+#   - {ucd: VELOC_ROTAT}
+#   - {width: 5}
+#   - {precision: '1'}
+# - name: e_Vflat
+#   unit: km / s
+#   datatype: float32
+#   format: '{:5.1f}'
+#   description: '[0/20.7] Mean error on Vflat'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 5}
+#   - {precision: '1'}
+# - name: Qual
+#   datatype: int16
+#   description: '[1/3] Rotation-curve quality flag (1=high, 2=medium, or 3=low) (6)'
+#   meta: !!omap
+#   - {ucd: CODE_QUALITY}
+#   - {width: 3}
+# - name: Ref
+#   datatype: string
+#   description: References for HI and H{alpha} data; in refs.dat file
+#   meta: !!omap
+#   - {ucd: REFER_CODE}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: 14*}
+# - name: L16a
+#   datatype: int16
+#   description: Indicates a galaxy in the SPARC paper of Lelli et al. 2016 (Cat. J/ApJ/816/L14)
+#   meta: !!omap
+#   - {ucd: NUMBER}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: L16b
+#   datatype: int16
+#   description: Indicates a galaxy in the SPARC paper of Lelli et al. 2016 (Cat. J/ApJ/827/L19)
+#   meta: !!omap
+#   - {ucd: NUMBER}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: S4G
+#   datatype: int16
+#   description: Indicates an object from the Spitzer Survey for Stellar Structure in Galaxies (S4G; Sheth et al. 2010, Cat. J/PASP/122/1397)
+#   meta: !!omap
+#   - {ucd: NUMBER}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: EDD
+#   datatype: int16
+#   description: Indicates an object from the Extragalactic Distance Database (EDD; Jacobs et al. 2009, Cat. J/PASP/138/332)
+#   meta: !!omap
+#   - {ucd: NUMBER}
+#   - {width: 3}
+#   - values: {'null': -32768}
+# - name: RC
+#   datatype: string
+#   description: Rotation Curve
+#   meta: !!omap
+#   - {ucd: DATA_LINK}
+#   - {_votable_string_dtype: char}
+# - name: SimbadName
+#   datatype: string
+#   description: Simbad column added by the CDS
+#   meta: !!omap
+#   - {ucd: ID_ALTERNATIVE}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: 13*}
+# - name: NEDname
+#   datatype: string
+#   description: Simbad column added by the CDS
+#   meta: !!omap
+#   - {ucd: ID_ALTERNATIVE}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: 13*}
+# - name: _RA
+#   unit: deg
+#   datatype: float64
+#   format: '{:9.5f}'
+#   description: Position from SIMBAD database (right ascension part)
+#   meta: !!omap
+#   - {ucd: POS_EQ_RA_MAIN}
+#   - {width: 9}
+#   - {precision: '5'}
+# - name: _DE
+#   unit: deg
+#   datatype: float64
+#   format: '{:9.5f}'
+#   description: Position from SIMBAD database (declination part)
+#   meta: !!omap
+#   - {ucd: POS_EQ_DEC_MAIN}
+#   - {width: 9}
+#   - {precision: '5'}
+# meta: !!omap
+# - {ID: J_AJ_152_157_table1}
+# - {name: J/AJ/152/157/table1}
+# - {description: '*Galaxy sample'}
+# schema: astropy-2.0
+recno Name Nvel Type Dist e_Dist f_Dist i e_i L3.6 e_L3.6 Reff SBeff Rdisk SBdisk MHI RHI Vflat e_Vflat Qual Ref L16a L16b S4G EDD RC SimbadName NEDname _RA _DE
+1 CamB 9 10 3.36 0.26 2 65.0 5.0 0.075 0.003 1.21 7.89 0.47 66.2 0.012 1.21 0.0 0.0 2 Bm03 0 1 0 1 RC "NAME Cam B" "NAME Cam B" 73.27958 67.09917
