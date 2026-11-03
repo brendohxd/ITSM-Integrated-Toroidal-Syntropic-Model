@@ -4865,3 +4865,308 @@ reuse is permitted in that scope; inherit action/root/gauge/canonical/
 auxiliary/current/density review debt. Review DEFERRED; Rule9_cleared=false;
 physics_pass=false; gate_effect=NONE. The physical-norm derivation remains
 unstarted. Scientific, author and publication decisions remain separate.
+
+## R9-MT1-RTAU-WEAK-GRAPH-V1 - 3 November 2026
+
+Owner: [initial weak graph](../Gates/RES-001/RES001_RTAU_WEAK_GRAPH_V1_REPORT_2026-11-03.md).
+Related owner: [coupled auxiliary/rate work](../Gates/RES-001/RES001_RTAU_COUPLED_AUXILIARY_BUNDLE_PROGRESS_2026-11-02.md).
+The confirmed-High derivation is underway; earlier unstarted entries remain
+historical. Initial H^-1-to-H1 coupled inversion, all three eliminated
+momenta in L2, and auxiliary metric-H1/force-H2 observable control are
+locally checked. 19/19 controls and exact replay COMPLETE. Receipt
+f3e66a8ed8ef12ca69cff37c0d13df95f2c330e59381a35e07592088c636fbee.
+All 219 inherited input hashes and existing sidecars preserved.
+
+Review DEFERRED; Rule9_cleared=false. Provisional reuse is limited to the
+initial linear compatible source range, with retained mean/charge and
+harmonic data. Inherit action, root, gauge, canonical-density, temporal,
+mixed/principal, inverse, symplectic, auxiliary and current review debt.
+The full physical norm, quantitative free-data assembly, moving constraint
+domain, coupled generator, finite-time preservation and physical window
+remain substantive open work. R-tau unadopted; original R4C1 unchanged;
+G1-G6 incomplete; physics_pass=false; gate_effect=NONE. Same-author controls
+are not external peer review. No publication or external dispatch.
+
+## R9-MT1-RTAU-MOVING-RANGE-V1 - 3 November 2026
+
+Owner: [moving weighted range and constraint estimate](../Gates/RES-001/RES001_RTAU_MOVING_RANGE_V1_REPORT_2026-11-03.md).
+17/17 exact/interval/direct-action controls and exact replay COMPLETE.
+Receipt 219f4d9dcc83348150f7d9f42c129b19f41b43adf5ee85d134c4d7f0fe3072aa.
+Provisional reuse covers the initial weighted functional derivative and
+conditional H^-1 covector-density residual transport. It does not certify
+source-rate regularity, coupled physical stability or a time tube. Inherit
+action/root/temporal/mixed/canonical/inverse/symplectic/auxiliary/current
+review debt and the preceding weak-graph review. Review DEFERRED;
+Rule9_cleared=false; physics_pass=false; gate_effect=NONE. Original R4C1
+unchanged; R-tau unadopted; G1-G6 incomplete. No review dispatch/publication.
+
+## R9-MT1-RTAU-WEAK-CANONICAL-RATE-V2 - 3 November 2026
+
+Owner: [initial weak canonical/source rate map](../Gates/RES-001/RES001_RTAU_WEAK_CANONICAL_RATE_V2_REPORT_2026-11-03.md).
+20/20 controls and exact replay COMPLETE; receipt
+de3869925a976f3bebb4fa7d9774c4c8e21adc7557ce528041db377252447d14.
+Retain V1's failed integer/interval conversion and all original source pins.
+Provisional reuse covers initial unreduced weak rates and momentum-tangent
+assembly, with explicit caller shift; H^-2 compatibility pairing is supported.
+Compatible gauge/density generator, moving free embedding, physical energy
+and time tube remain incomplete. Inherit all mixed-action, Legendre,
+auxiliary, canonical, gauge, current, weak-graph and moving-range review debt.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE;
+R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete. No dispatch/publication.
+
+## R9-MT1-RTAU-INITIAL-GAUGE-COMPOSITION-V2 - 3 November 2026
+
+Owner: [initial spatial-gauge-closed weak rates](../Gates/RES-001/RES001_RTAU_INITIAL_GAUGE_COMPOSITION_V2_REPORT_2026-11-03.md).
+21/21 controls and exact replay COMPLETE; receipt
+9d8151f9ee1d458434de39c1a1332c6c8d0a32a6c1d901948f12aad8bf500352.
+Provisional reuse covers the compatible INITIAL graph and solved periodic
+correction, retaining all field/momentum drift, modulus and harmonic data.
+Preserve V1's 19/20 control result. Inherit all action, canonical, gauge,
+graph, symplectic, auxiliary, current and weak-rate review debt. The density
+time row, evolving Green inverse, physical energy and background tube remain
+scientific open work. Review DEFERRED; Rule9_cleared=false; physics_pass=false;
+gate_effect=NONE; R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete.
+
+## R9-MT1-RTAU-WEAK-DENSITY-ROW-V2 - 3 November 2026
+
+Owner: [initial current/physical-density weak row](../Gates/RES-001/RES001_RTAU_WEAK_DENSITY_ROW_V2_REPORT_2026-11-03.md).
+13/13 controls and exact replay COMPLETE; receipt
+d3d2146f33b8a744aaf4b02b673f2f27b13592f7b371ea82670165c80d454e63.
+Provisional reuse covers initial planar H^-1 density and H^-2 rate bounds,
+with full measure and coordinate terms. Preserve V1 failure and all 219
+original pins. Inherit action/Legendre/current/direct-density/auxiliary/
+gauge/graph/weak-rate review debt. No physical energy, strong density
+propagation, evolving-inverse or background-tube clearance. Review DEFERRED;
+Rule9_cleared=false; physics_pass=false; gate_effect=NONE; R-tau unadopted;
+original R4C1 unchanged; G1-G6 incomplete. No external review dispatch.
+
+## R9-MT1-RTAU-COMPENSATED-DENSITY-V1 - 3 November 2026
+
+Owner: [action-derived compensated density](../Gates/RES-001/RES001_RTAU_COMPENSATED_DENSITY_V1_REPORT_2026-11-03.md).
+27/27 exact/source controls and exact replay COMPLETE; receipt
+51eb265de42ce4b32c35595a9f930742832f50e85b90e44fa04855591a32d522.
+Provisional reuse covers full force Legendre normalization, static invertible
+density change and highest regulator cancellation with the complete metric
+work residual retained. No positive/coercive physical energy or quantitative
+remainder/time estimate is established. Inherit action/current/auxiliary/
+canonical/gauge/graph/density/physical-norm review debt. All 219 original
+pins preserved. Review DEFERRED; Rule9_cleared=false; physics_pass=false;
+gate_effect=NONE; R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete.
+
+
+## R9-MT1-RTAU-COMPENSATED-RATE-V1 - 3 November 2026
+
+Owner: [complete initial compensated rate](../Gates/RES-001/RES001_RTAU_COMPENSATED_RATE_V1_REPORT_2026-11-03.md).
+17/17 controls and byte-identical replay COMPLETE. Provisional reuse covers
+the full initial planar H^-1 time row with explicit Sigma_L2 input, all
+force/frame/regulator/other-action contributions and adapted gauge drift.
+Inherit compensated-identity/action/current/canonical/auxiliary/gauge/graph/
+physical-norm review debt. Same-author controls do not clear independent
+review. New constrained-density inverse, positive physical mixed energy,
+evolving domain and actual time tube remain open. All 219 original pins
+and snapshotted sidecars preserved. Review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE; R-tau unadopted; G1-G6 incomplete.
+No external review dispatch, action adoption or paper/publication promotion.
+
+
+## R9-MT1-RTAU-COMPENSATED-STATIC-INVERSE-V1 - 3 November 2026
+
+Owner: [initial compensated scalar inverse](../Gates/RES-001/RES001_RTAU_COMPENSATED_STATIC_INVERSE_V1_REPORT_2026-11-03.md).
+35/35 controls and byte-identical replay COMPLETE; receipt
+9f07bf684f644f70d16bfb299f8e7c5f2b13e3017ff91b51af24cd012fc0598d.
+Provisional reuse covers initial projected trace inversion with full
+momentum completion, canonical compensation and physical-volume variation,
+on the declared whole-root planar domain. Original weighted range and
+fixed-I/U1 charge conditions remain necessary. Inherit compensated identity/
+rate/action/current/canonical/gauge/graph/physical-norm review debt.
+Complete free-source norm equivalence, physical energy, evolving inverse
+and actual time tube remain open. All 219 inherited pins and snapshotted
+sidecars preserved. Same-author controls do not clear independent review.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE;
+R-tau unadopted; original R4C1 unchanged; G1-G6 incomplete. No dispatch.
+
+
+## R9-MT1-RTAU-COMPENSATED-SOURCE-CHART-V1 - 3 November 2026
+
+Owner: [complete initial source/state chart](../Gates/RES-001/RES001_RTAU_COMPENSATED_SOURCE_CHART_V1_REPORT_2026-11-03.md).
+34/34 controls and byte-identical replay COMPLETE; receipt
+4600a4b8a4237dee324b28490a896dbcd6776fbd3b1a88f89114ed74363429f7.
+Provisional reuse covers full initial H1/L2-to-Sigma_H^-1/free-data bounds
+and reconstruction on the original compatible planar range. No arbitrary
+source tuple is admitted; all momentum means, gauge/harmonic data and
+fixed-I/U1/weighted-range conditions remain. Inherit compensated identity/
+rate/static-inverse/action/current/canonical/gauge/symplectic review debt.
+Initial chart equivalence does not prove physical energy, strong symplectic
+inversion or controlled time evolution. All 219 original pins and sidecars
+preserved. Review DEFERRED; Rule9_cleared=false; physics_pass=false;
+gate_effect=NONE; R-tau unadopted; G1-G6 incomplete. No review dispatch.
+
+
+## R9-MT1-RTAU-COMPENSATED-TRANSPORT-V2 - 3 November 2026
+
+Owner: [initial density H^-1 transport](../Gates/RES-001/RES001_RTAU_COMPENSATED_TRANSPORT_V2_REPORT_2026-11-03.md).
+15/15 controls and byte-identical replay COMPLETE; receipt
+f98ced812b3e47d6a2877f13e44ca2b7078362f7a04f4b52882b0bfa18831dcb.
+Provisional reuse covers only initial compatible planar density-sector
+logarithmic control with retained advection/reaction/material/gauge terms.
+No Sigma_L2 assumption enters; force H2, harmonic data and all original
+charge/range conditions remain. Preserve V1 failure and all 219 original
+pins/sidecars. Inherit source-chart/static-inverse/compensated-rate/action/
+canonical/gauge/symplectic review debt. Large finite constants do not
+clear full coupled energy, a useful time estimate or a background tube.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE;
+R-tau unadopted; G1-G6 incomplete. No external review dispatch.
+
+
+## R9-MT1-RTAU-WEAK-DENSITY-ENERGY-SCREEN-V1 - 3 November 2026
+
+Owner: [weak-density-only energy rejection control](../Gates/RES-001/RES001_RTAU_WEAK_DENSITY_ENERGY_SCREEN_V1_REPORT_2026-11-03.md).
+26/26 controls and byte-identical replay COMPLETE; receipt
+47aa8a3be990d883402df9e308e99434d6081a9579dbf643c10480736c160569.
+Scientific result ADVERSE: the density-only weakening restores a defective
+zero pair in the original complete homogeneous control and fails uniform
+positive order-zero principal energy there. Initial weak component results
+remain valid; full-energy promotion through that inference is held by
+science, not pending review. No prepared-background or all-action no-go is
+claimed. Inherit original physical-norm/charge-frame/current/source-chart/
+transport/action review debt. All 219 original pins and old source/sidecar
+bytes preserved. Review DEFERRED; Rule9_cleared=false; physics_pass=false;
+gate_effect=NONE; R-tau unadopted; G1-G6 incomplete. No external dispatch.
+
+
+## R9-MT1-RTAU-STRONG-DENSITY-NORMAL-FORMS-V1-V2 - 3 November 2026
+
+Owners: [primitive/current V1](../Gates/RES-001/RES001_RTAU_STRONG_DENSITY_NORMAL_FORM_V1_REPORT_2026-11-03.md)
+and [force-gradient V2](../Gates/RES-001/RES001_RTAU_STRONG_DENSITY_NORMAL_FORM_V2_REPORT_2026-11-03.md).
+34/34 and 22/22 controls with byte-identical replays COMPLETE; receipts
+0978896c5dd51fad8540d41ad952b7921330ecde6e674f51f42ef5ed02255568 and
+4cb333e544b5bdfe24c48f14753c3dd5fbbb926e07e10cc8ca878bedd3383d77.
+Provisional reuse covers complete two-stage linear operator identities,
+identified fast-gradient cancellations and bounded initial same-strength
+variable maps/coefficients. Reused original C3 root certificate; retain all
+original charge/range/harmonic data and full primitive/gauge drift. Inherit
+current/force/auxiliary/Legendre/initial-gauge/kinetic/charge-frame/lapse/
+weak-density-screen review debt. Full ordinary/zero-speed/quartic energy
+and time-domain admission remain OPEN. The earlier density-only weak norm
+is not promoted. All 219 original pins and sidecars preserved. Review
+DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE; R-tau
+unadopted; G1-G6 incomplete. No external review dispatch.
+
+
+## R9-MT1-RTAU-OTHER-SECTOR-LAPSE-IDENTITY-V1 - recorded 4 November 2026
+
+Owner: [local other-sector Euler identity](../Gates/RES-001/RES001_RTAU_OTHER_SECTOR_LAPSE_IDENTITY_V1_REPORT_2026-11-03.md).
+55/55 controls and byte-identical replay COMPLETE; receipt
+152d0af346f902b0325ea0c4ef8be6c1c69cf84b1e350fadf7799cafb95c7594.
+Provisional reuse covers the exact off-shell local identity and full first
+variation in the declared nonmatter clock sector, with retained lapse/volume
+improvement. It is not a theorem for arbitrary other clock couplings or
+nonzero omitted dust multipliers. Inherit force/regulator/action/lapse-chain/
+local-current/canonical/improvement/normal-form review debt. Initial strong
+L2 source constants, full coupled energy and time-domain admission remain
+OPEN. All original pins/sidecars preserved. Review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE; R-tau unadopted; G1-G6 incomplete.
+No external review dispatch or action adoption.
+
+
+## R9-MT1-RTAU-STRONG-DENSITY-L2-SOURCE-V1 - 4 November 2026
+
+Owner: [complete initial density L2 source](../Gates/RES-001/RES001_RTAU_STRONG_DENSITY_L2_SOURCE_V1_REPORT_2026-11-04.md).
+20/20 controls and byte-identical replay COMPLETE; receipt
+5dabd5cf8d13ccd84ab09fd0aad928e4e7f59035808128a20c6d6a5271c54a15.
+Provisional reuse covers the complete INITIAL compatible planar strong-
+density sector with all local/nonlocal/mean/gauge sources and actual scalar
+coordinate transport. State derivative orders remain density L2/canonical
+H1,L2/force H2. Inherit local lapse/normal forms/current/force-third-partial/
+auxiliary/kinetic/gauge/constraint/charge-frame review debt. No full coupled
+energy, time-uniform norm, background tube or nonlinear admission is cleared.
+All parent hashes and 219 original sources/sidecars preserved. Same-author
+checks do not clear independent review. Review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE; R-tau unadopted; G1-G6 incomplete.
+No external review dispatch or action adoption.
+
+
+## R9-MT1-RTAU-ORDINARY-STRONG-GRAPH-V1 - 4 November 2026
+
+Owner: [ordinary strong graph V1](../Gates/RES-001/RES001_RTAU_ORDINARY_STRONG_GRAPH_V1_REPORT_2026-11-04.md).
+32/32 bounded controls and byte-identical replay COMPLETE; receipt
+cd1963d8f69c62f32101195dcbc7c3e2a51e8da3e9a8b0ba81760dab503ba910.
+Provisional reuse covers exact 18-direction ordinary principal/reference
+projector-energy algebra and a whole-root candidate-operator enclosure.
+The reference is an off-shell coefficient control. Its two zero-speed modes
+are retained; this does not clear actual prepared symplectic normalization,
+the leading graph identity, quartic energy, moving remainder or time tube.
+Inherit mixed-Hessian/kinetic/constraint/current/strong-density/gauge/charge-
+frame and weak-density-screen review debt. All 219 original pins/sidecars
+preserved. Review DEFERRED; Rule9_cleared=false; physics_pass=false;
+gate_effect=NONE; R-tau unadopted; G1-G6 incomplete. No review dispatch.
+
+
+## R9-MT1-RTAU-ORDINARY-WARD-ENERGY-V4 - 4 November 2026
+
+Owner: [actual ordinary Ward energy V4](../Gates/RES-001/RES001_RTAU_ORDINARY_WARD_ENERGY_V4_REPORT_2026-11-04.md).
+31/31 bounded controls and byte-identical replay COMPLETE; receipt
+19c3a5ef90791c0d0619d7664337c42724f97136788c1dc7202dc662b337af50.
+Provisional reuse covers the exact leading normalized-frame/ADM identity,
+whole initial-root ordinary action-energy complement and all-18 frozen
+ordinary principal symmetrizer/norm constants. Both zero-speed directions
+remain; no fitted eigenvectors or new microscopic coefficients. This does
+NOT clear the quartic pair/mixing, moving symplectic/Green/gauge/range
+remainder, global charge/harmonic completion or actual background time tube.
+Inherit action-tensor/ADM/lapse/shift-Schur/mixed-Hessian/strong-density/
+canonical/charge-frame/principal-reference review debt. V1 failure and
+V2 inconclusive sufficient bounds preserved; V3/V4 norm factorizations
+retain the original equations and acceptance. All 219 original pins and
+source/sidecar bytes preserved. Review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE; R-tau unadopted; G1-G6 incomplete.
+No external review dispatch, action adoption or public promotion.
+
+
+## R9-MT1-RTAU-MIXED-PRINCIPAL-ASSEMBLY-V1 - 4 November 2026
+
+Owner: [20-direction mixed principal assembly V1](../Gates/RES-001/RES001_RTAU_MIXED_PRINCIPAL_ASSEMBLY_V1_REPORT_2026-11-04.md).
+28/28 bounded controls and byte-identical replay COMPLETE; receipt
+261a512ad5447b388063451eb993eee7b0638f8e6e3cac3e4a45bf028e49b51b.
+Provisional reuse covers the initial ordinary/quartic mixed symbol, both
+retained cross blocks, formal fast highest/first derivative energy identity,
+and the invertible frozen order-minus-one change with explicit symbol norm
+and extra-remainder bounds. No full variable-coefficient PDE remainder,
+T_dot/Green/gauge/range transport, global charge/harmonic completion or
+actual time tube is cleared. Mathematical |k| threshold is not a physical
+cutoff. Inherit ordinary Ward-energy/strong-density/auxiliary/current/
+force-temporal/mixed-Hessian/shift/gauge/charge-frame review debt. All 219
+original pins and 286 source pins/sidecars preserved. Same-author checks
+do not clear independent review. Review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE; R-tau unadopted; G1-G6 incomplete.
+No external review dispatch, new action or public promotion.
+
+
+## R9-MT1-RTAU-PERIODIC-PRINCIPAL-COMPOSITION-V2 - 4 November 2026
+
+Owner: [periodic principal composition V2](../Gates/RES-001/RES001_RTAU_PERIODIC_PRINCIPAL_COMPOSITION_V2_REPORT_2026-11-04.md).
+18/18 bounded controls and byte-identical replay COMPLETE; receipt
+d3f2fe4cc893109596883f69155622e1e8e7c93300a40eb0ed8774988d922a8a.
+Provisional reuse covers the exact periodic principal-operator composition,
+all mean terms, global L2 invertibility/norm equivalence without a cutoff,
+actual first coefficient derivatives and narrowly derived force second
+spatial derivative, and spatial principal-energy adjoint bounds. These do
+not clear the full physical generator, time derivatives, moving constraint/
+Green/gauge/range or global weighted charge/harmonic admission/time tube.
+Inherit ordinary Ward-energy/mixed-principal/strong-density/force/lapse/
+canonical/auxiliary/shift and original higher-root review debt. V1 failed
+interval-square attempt is preserved; no acceptance weakened. All 219
+original and 292 receipt source pins/sidecars unchanged. Review DEFERRED;
+Rule9_cleared=false; physics_pass=false; gate_effect=NONE; R-tau unadopted;
+G1-G6 incomplete. No external review dispatch or public promotion.
+
+
+## Documentation checkpoint - 4 November 2026
+
+The [4 November evidence map](ITSM_RESEARCH_CHECKPOINT_2026-11-04.md) links
+the original reports/receipts and retains each scope, failure and review
+dependency. Summary/checkpoint integrity is not a new scientific review.
+SPARC's 157/175 diagnostic total concerns the fixed empirical comparator,
+not ITSM preference. R-tau remains unadopted; full actual evolution/time
+tube and identifying matching remain open. Native goal PAUSED by operator.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE.
+No external review, new physical clearance or publication is performed.

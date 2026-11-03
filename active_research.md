@@ -7,7 +7,39 @@
 
 ---
 
-## Latest provisional research checkpoint - 1 November 2026
+## Latest provisional research checkpoint - 4 November 2026
+
+The [4 November evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-04.md)
+supersedes the older next-task and model-setting snapshot for navigation.
+The native goal is **PAUSED by the operator** for this assessment; the earlier
+High-confirmation wait is historical, not the current blocker.
+
+- The complete initial strong-density L2 sector is controlled with force,
+  regulator, weighted-mean and gauge terms retained. The rejected weak-density
+  principal control remains preserved.
+- An exact action Ward identity supports a positive ordinary principal energy
+  across the prepared initial root. Both zero-speed directions remain. The
+  mixed calculation retains all 20 ordinary/force directions and both coupling
+  blocks. Its periodic principal-operator change preserves means and needs
+  no Fourier cutoff.
+- Full-SPARC conditional nuisance sampling and continuation are recorded:
+  157/175 galaxies meet the declared diagnostics; 18 remain unresolved. This
+  fixed empirical comparator does not establish an adequate physical fit,
+  ITSM model preference or action-derived acceleration normalization.
+- NEXT after operator resume: the actual material-frame generator remainder,
+  physical-time advection, T_dot/H_dot and moving constraint/Green/gauge/range
+  maps, then a genuine background time tube. Principal control alone does
+  not establish a full coupled evolution theorem or interaction window.
+
+Current owners: [coupled-energy contract](Theory/Gates/RES-001/RES001_RTAU_PREPARED_COUPLED_ENERGY_V1_CONTRACT_2026-11-04.md),
+[periodic composition](Theory/Gates/RES-001/RES001_RTAU_PERIODIC_PRINCIPAL_COMPOSITION_V2_REPORT_2026-11-04.md),
+[SPARC continuation](Theory/Gates/STAT-001/SPARC_54_CONTINUATION_V1_REPORT_2026-11-01.md).
+R-tau remains unadopted. MAT-001 BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED;
+UVIR-003 IN_PROGRESS; Stage4A CLOSED; G1-G6 INCOMPLETE. Review DEFERRED;
+Rule9_cleared=false; physics_pass=false; gate_effect=NONE. No paper/site
+promotion, publication, vault mutation or automatic Git delivery.
+
+## Preserved provisional research checkpoint - 1 November 2026
 
 The [1 November checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-01.md)
 records the alignment-preservation result, two unadopted repair variants
