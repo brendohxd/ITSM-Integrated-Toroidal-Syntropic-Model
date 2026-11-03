@@ -1,0 +1,60 @@
+{
+  "steps": 10000,
+  "burn": 2000,
+  "walkers": 64,
+  "ensembles": 4,
+  "workers": 16,
+  "rows": [
+    {
+      "Name": "CamB",
+      "Dist": "3.36",
+      "e_Dist": "0.26",
+      "f_D": "2",
+      "i": "65.0",
+      "e_i": "5.0",
+      "Qual": "2"
+    },
+    {
+      "Name": "NGC5907",
+      "Dist": "17.3",
+      "e_Dist": "0.9",
+      "f_D": "2",
+      "i": "88.0",
+      "e_i": "2.0",
+      "Qual": "1"
+    },
+    {
+      "Name": "NGC7814",
+      "Dist": "14.4",
+      "e_Dist": "0.66",
+      "f_D": "2",
+      "i": "90.0",
+      "e_i": "1.0",
+      "Qual": "1"
+    },
+    {
+      "Name": "UGC01281",
+      "Dist": "5.27",
+      "e_Dist": "0.24",
+      "f_D": "2",
+      "i": "90.0",
+      "e_i": "1.0",
+      "Qual": "1"
+    }
+  ],
+  "pins": {
+    "Data\\SPARC_catalogue_archive_candidate_v1_20261101\\nuisance_inputs.csv": "d26e7dc6a982816745ecaf0ddf31f2970b8ae76ff499ac945443ec397fbf3df3",
+    "Analysis\\STAT\\STAT-001\\sparc_real_mcmc_v2.py": "e00ff18938da8a7f786c0913726aac1b720f2c177e92322eed5bf36e6d899262",
+    "Analysis/STAT/STAT-001/sparc_conditional_pilot_v1.py": "ea536290500729d196f9c003cd0003bbd4ed8aa5793d1293da6cc8c7d5ddedde",
+    "Data\\SPARC_data\\CamB_rotmod.dat": "06afe3e156162cfa4ac1b04d1108f56c90f8702f9a915f8d3054e3df3bead8ca",
+    "Data\\SPARC_data\\NGC5907_rotmod.dat": "3ffc2c949a14772c9ae5c9c03dca8e5a6156c17529f4522c381797aadb66827c",
+    "Data\\SPARC_data\\NGC7814_rotmod.dat": "54f0fef759ca4a536af157bd2c56c9ceb96a4fc469f037c26fb74035daf060cf",
+    "Data\\SPARC_data\\UGC01281_rotmod.dat": "5e4b47bb236b93b17570cc6cdc57f700f58260659591f6bff04a12c3635cee8a"
+  },
+  "versions": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "emcee": "3.1.6"
+  }
+}

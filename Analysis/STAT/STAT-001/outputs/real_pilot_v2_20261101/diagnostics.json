@@ -1,0 +1,79 @@
+{
+  "scope": "CONDITIONAL_ALGEBRAIC_COMPARATOR",
+  "physics_pass": false,
+  "galaxies": 4,
+  "steps": 10000,
+  "burn": 2000,
+  "diagnostics": [
+    {
+      "name": "CamB",
+      "quality": 2,
+      "i0": 65.0,
+      "rank_folded_split_rhat": [
+        1.0012445373668828,
+        1.0032149433090787,
+        1.0029729034955643
+      ],
+      "fixed_walker_ess": [
+        886.9425759757611,
+        884.002856875534,
+        975.9321920113796
+      ],
+      "criteria_met": true
+    },
+    {
+      "name": "NGC5907",
+      "quality": 1,
+      "i0": 88.0,
+      "rank_folded_split_rhat": [
+        1.0041595436164519,
+        1.0052716961258883,
+        1.0062025407844493
+      ],
+      "fixed_walker_ess": [
+        777.3697745741881,
+        778.9537753560606,
+        729.7130311104193
+      ],
+      "criteria_met": true
+    },
+    {
+      "name": "NGC7814",
+      "quality": 1,
+      "i0": 90.0,
+      "rank_folded_split_rhat": [
+        1.0045457773785056,
+        1.006878345546966,
+        1.012203983881362,
+        1.0074625517977338
+      ],
+      "fixed_walker_ess": [
+        576.8884198903223,
+        601.2681208783274,
+        460.0615035840618,
+        645.9610307189569
+      ],
+      "criteria_met": false
+    },
+    {
+      "name": "UGC01281",
+      "quality": 1,
+      "i0": 90.0,
+      "rank_folded_split_rhat": [
+        1.0061434051176792,
+        1.0078804496212683,
+        1.003126816718781
+      ],
+      "fixed_walker_ess": [
+        527.1328352411666,
+        772.541941889914,
+        744.1883497731138
+      ],
+      "criteria_met": true
+    }
+  ],
+  "accepted": 3,
+  "not_accepted": [
+    "NGC7814"
+  ]
+}
