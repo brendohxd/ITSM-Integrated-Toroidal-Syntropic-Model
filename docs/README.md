@@ -2,7 +2,18 @@
 
 Multi-page research site published at https://itsm-cosmology.com.
 
-## Public progress update - 1 November 2026
+## Public progress update - 4 November 2026
+
+Home, Progress, Evidence and Reproduce now reflect the [4 November research
+checkpoint](https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/blob/34bad13c1468a3f297d53a499cc64feab836e19d/Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-04.md). The site explains the initial density/ordinary/
+20-direction periodic principal control and full-SPARC comparator sampling
+(157/175 diagnostic passes, 18 unresolved). Actual time-dependent evolution,
+matching and a physical interaction window remain open; R-tau is unadopted.
+Paper versions are unchanged. Evidence links and the reproduction command
+use the immutable verified signed research revision `34bad13c1468a3f297d53a499cc64feab836e19d`.
+The service-worker cache is `itsm-pwa-v14-20261104`.
+
+### Preserved public progress update - 1 November 2026
 
 Home, Progress, Evidence and Reproduce now link the November checkpoint and
 separate homogeneous R-tau estimates from the unresolved prepared-background

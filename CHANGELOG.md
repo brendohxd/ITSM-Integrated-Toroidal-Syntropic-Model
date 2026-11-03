@@ -1,5 +1,16 @@
 # ITSM Changelog & Archive History
 
+## Public site progress refresh - 4 November 2026
+
+- Refresh Home, Progress, Evidence and Reproduce for the new initial coupled
+  principal control and full-SPARC comparator sampling. Explain the 157/175
+  diagnostic total and 18 unresolved cases without claiming ITSM preference.
+- Pin new evidence links and the checkpoint command to verified signed
+  research commit `34bad13c1468a3f297d53a499cc64feab836e19d`. Retain all
+  scientific holds and current paper versions.
+- Advance the service-worker cache and its source check to 20261104. Deliver
+  the separately verified site through the existing manual Pages workflow.
+
 ## Research and SPARC checkpoint â€” 4 November 2026 (local preparation)
 
 - Add the [checkpoint and evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-04.md)
