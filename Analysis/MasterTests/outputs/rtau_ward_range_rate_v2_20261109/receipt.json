@@ -1,0 +1,87 @@
+{
+  "kind": "RTAU_WARD_RANGE_RATE_V2",
+  "source_sha256": "2356341ec36a396c1a0e7f753c760e6fc032f2cfdc32196f27301418edc1c2e8",
+  "contract_sha256": "802a561a617fe12f08fc9e47f16a0dbcafc45ff668d5f6677726b1066549bbd6",
+  "manifest_sha256": "15e674d992cbb56fc13d164d437105e39c97b3160fdb291b8fe6d12e87379698",
+  "pinned_sources": 388,
+  "checks": [
+    {
+      "name": "actual_longitudinal_integrating_factor",
+      "passed": true
+    },
+    {
+      "name": "weighted_residual_equals_negative_range",
+      "passed": true
+    },
+    {
+      "name": "differentiated_weighted_residual",
+      "passed": true
+    },
+    {
+      "name": "omitting_weight_rate_rejected",
+      "passed": true
+    },
+    {
+      "name": "covector_density_defect_dual_pairing",
+      "passed": true
+    },
+    {
+      "name": "transverse_shift_index_term_required",
+      "passed": true
+    },
+    {
+      "name": "projected_homogeneous_ward_rate",
+      "passed": true
+    },
+    {
+      "name": "periodic_transverse_and_charge_fluxes_have_zero_mean",
+      "passed": true
+    },
+    {
+      "name": "finite_whole_root_defect_and_rate",
+      "passed": true
+    },
+    {
+      "name": "pinned_bytes_sidecars_and_timestamps_preserved",
+      "passed": true
+    }
+  ],
+  "coefficient_bound_binary": [
+    [
+      0,
+      459806607709475670376925109293997424362433198696973,
+      -176,
+      169
+    ],
+    [
+      0,
+      459806607709475670376925109293997424362433198696975,
+      -176,
+      169
+    ]
+  ],
+  "coefficient_bound_upper": "0.00480060497872301824876758248596",
+  "homogeneous_coefficient_enclosure_binary": [
+    [
+      1,
+      324321709394913422722910535231216801441892101299297,
+      -168,
+      168
+    ],
+    [
+      1,
+      648178837942904437748290010133950474666285902459933,
+      -169,
+      169
+    ]
+  ],
+  "homogeneous_coefficient_display": [
+    "-0.86683561958750109931417473",
+    "-0.86621476194118162144739478"
+  ],
+  "exact_initial_range_and_charge_tangency": "CONDITIONAL_ON_FULL_EULER_AUXILIARY_JET",
+  "finite_time_compatible_inverse": "OPEN",
+  "review_status": "DEFERRED",
+  "physics_pass": false,
+  "gate_effect": "NONE"
+}
