@@ -1,0 +1,58 @@
+{
+  "kind": "RTAU_ENERGY_TIME_INDEPENDENT_AUDIT_V2",
+  "receipt": "Analysis/MasterTests/outputs/rtau_energy_time_drift_v2_20261114/receipt.json",
+  "receipt_sha256": "449dc33f327f7a2eaca9f12cb1e4cc15c7d0b11ee6753b038acd6e900780a022",
+  "checks": [
+    {
+      "name": "independent_scalar_gradient_value_and_time_rates",
+      "passed": true
+    },
+    {
+      "name": "independent_frame_gradient_value_and_time_rates",
+      "passed": true
+    },
+    {
+      "name": "nonzero_scalar_gradient_rate_not_discarded",
+      "passed": true
+    },
+    {
+      "name": "exact_complement_energy_frobenius_rounding",
+      "passed": true
+    },
+    {
+      "name": "exact_complement_generator_frobenius_rounding",
+      "passed": true
+    },
+    {
+      "name": "exact_stationary_drive_frobenius_rounding",
+      "passed": true
+    },
+    {
+      "name": "exact_stationary_row_rate_aggregation",
+      "passed": true
+    },
+    {
+      "name": "exact_three_energy_terms",
+      "passed": true
+    },
+    {
+      "name": "exact_ordinary_energy_time_sum",
+      "passed": true
+    },
+    {
+      "name": "exact_fast_and_diagonal_energy_time",
+      "passed": true
+    },
+    {
+      "name": "exact_pulled_back_energy_time",
+      "passed": true
+    },
+    {
+      "name": "full_evolution_holds_retained",
+      "passed": true
+    }
+  ],
+  "review_status": "DEFERRED",
+  "physics_pass": false,
+  "gate_effect": "NONE"
+}

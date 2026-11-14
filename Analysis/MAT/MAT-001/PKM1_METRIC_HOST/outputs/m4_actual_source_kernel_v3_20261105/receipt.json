@@ -1,0 +1,255 @@
+{
+  "checks": [
+    {
+      "name": "actual_constraint_solution_including_matter",
+      "passed": true
+    },
+    {
+      "name": "complete_source_dressed_reduction",
+      "passed": true
+    },
+    {
+      "name": "source_contact_retained",
+      "passed": true
+    },
+    {
+      "name": "omitted_constraint_source_dressing_detected",
+      "passed": true
+    },
+    {
+      "name": "actual_nonzero_mode_kinetic_matches_parent",
+      "passed": true
+    },
+    {
+      "name": "nonzero_mode_constraint_domain",
+      "passed": true
+    },
+    {
+      "name": "periodic_shift_source_IBP",
+      "passed": true
+    },
+    {
+      "name": "shear_source_sign",
+      "passed": true
+    },
+    {
+      "name": "independent_ADM_and_amplitude_shift_sign",
+      "passed": true
+    },
+    {
+      "name": "opposite_shear_identification_rejected",
+      "passed": true
+    },
+    {
+      "name": "metric_energy_and_trace_source",
+      "passed": true
+    },
+    {
+      "name": "full_evolving_kernel_and_source_Euler_identity",
+      "passed": true
+    },
+    {
+      "name": "missing_background_time_derivatives_rejected",
+      "passed": true
+    },
+    {
+      "name": "time_dependent_source_chart_covariance",
+      "passed": true
+    },
+    {
+      "name": "actual_homogeneous_one_constraint_reduction",
+      "passed": true
+    },
+    {
+      "name": "homogeneous_kinetic_determinant",
+      "passed": true
+    },
+    {
+      "name": "homogeneous_mode_differs_from_q_to_zero",
+      "passed": true
+    },
+    {
+      "name": "matter_energy_Ward_identity",
+      "passed": true
+    },
+    {
+      "name": "matter_momentum_Ward_identity",
+      "passed": true
+    },
+    {
+      "name": "independent_rational_source_fixture",
+      "passed": true
+    },
+    {
+      "name": "original_sources_sidecars_timestamps_preserved",
+      "passed": true
+    }
+  ],
+  "full_M4": "INCOMPLETE",
+  "gate_effect": "NONE",
+  "homogeneous": {
+    "C": "-2*V",
+    "D": [
+      [
+        "-18*H*M",
+        "-3*H*M*(V_rho + mu**2*rho)/V"
+      ],
+      [
+        "3*rho_dot",
+        "rho_dot*(V_rho + mu**2*rho)/(2*V)"
+      ]
+    ],
+    "F": [
+      [
+        "-18*V",
+        "-3*(V_rho - mu**2*rho)"
+      ],
+      [
+        "-3*(V_rho - mu**2*rho)",
+        "-(2*V*V_rhorho - 2*V*mu**2 - V_rho**2 - 2*V_rho*mu**2*rho - mu**4*rho**2)/(2*V)"
+      ]
+    ],
+    "K": [
+      [
+        "6*M*(3*H**2*M - V)/V",
+        "-3*H*M*rho_dot/V"
+      ],
+      [
+        "-3*H*M*rho_dot/V",
+        "(2*V + rho_dot**2)/(2*V)"
+      ]
+    ],
+    "domain": "k=0 scalar source; V!=0 for this elimination; harmonic vector constraints separate",
+    "source_contact": "delta_e**2/(4*V)",
+    "source_field": [
+      [
+        "tau"
+      ],
+      [
+        "delta_e*(V_rho + mu**2*rho)/(2*V)"
+      ]
+    ],
+    "source_velocity": [
+      [
+        "-3*H*M*delta_e/V"
+      ],
+      [
+        "delta_e*rho_dot/(2*V)"
+      ]
+    ]
+  },
+  "kind": "M4_P0B_ACTUAL_SOURCE_KERNEL_V3",
+  "live_TrackA_V": "NOT_COMPUTED",
+  "nonzero_mode": {
+    "B_field": [
+      [
+        "2*M*q**2",
+        "-V_rho - mu**2*rho"
+      ],
+      [
+        "0",
+        "-rho_dot"
+      ]
+    ],
+    "B_velocity": [
+      [
+        "6*H*M",
+        "-rho_dot"
+      ],
+      [
+        "-2*M",
+        "0"
+      ]
+    ],
+    "C": [
+      [
+        "CJ*q**2 - 2*V",
+        "2*H*M"
+      ],
+      [
+        "2*H*M",
+        "0"
+      ]
+    ],
+    "D": [
+      [
+        "2*M*(-3*H + q)*(3*H + q)/H",
+        "(CJ*q**2*rho_dot + 6*H**2*M*rho_dot - 2*H*M*V_rho - 2*H*M*mu**2*rho - 2*V*rho_dot)/(2*H**2*M)"
+      ],
+      [
+        "3*rho_dot",
+        "-rho_dot**2/(2*H*M)"
+      ]
+    ],
+    "F": [
+      [
+        "2*(M*q**2 - 9*V)",
+        "(-3*H*V_rho + 3*H*mu**2*rho + q**2*rho_dot)/H"
+      ],
+      [
+        "(-3*H*V_rho + 3*H*mu**2*rho + q**2*rho_dot)/H",
+        "(CJ*q**2*rho_dot**2 - 4*H**2*M**2*V_rhorho + 4*H**2*M**2*mu**2 - 4*H**2*M**2*q**2 - 4*H*M*V_rho*rho_dot - 4*H*M*mu**2*rho*rho_dot - 2*V*rho_dot**2)/(4*H**2*M**2)"
+      ]
+    ],
+    "K": [
+      [
+        "(CJ*q**2 + 6*H**2*M - 2*V)/H**2",
+        "-rho_dot/H"
+      ],
+      [
+        "-rho_dot/H",
+        "1"
+      ]
+    ],
+    "constraints": [
+      "alpha",
+      "Sigma=-Delta beta/a^2"
+    ],
+    "domain": "q!=0,H!=0,rho>0,mu!=0; conserved external stress",
+    "fields": [
+      "R",
+      "delta_rho"
+    ],
+    "source_contact": "j*(CJ*j*q**2 - 4*H*M*delta_e*q**2 - 2*V*j)/(8*H**2*M**2*q**4)",
+    "source_field": [
+      [
+        "(H*tau + j)/H"
+      ],
+      [
+        "(CJ*j*q**2*rho_dot - 2*H*M*V_rho*j - 2*H*M*delta_e*q**2*rho_dot - 2*H*M*j*mu**2*rho - 2*V*j*rho_dot)/(4*H**2*M**2*q**2)"
+      ]
+    ],
+    "source_velocity": [
+      [
+        "(CJ*j*q**2 + 6*H**2*M*j - 2*H*M*delta_e*q**2 - 2*V*j)/(2*H**2*M*q**2)"
+      ],
+      [
+        "-j*rho_dot/(2*H*M*q**2)"
+      ]
+    ]
+  },
+  "passed": 21,
+  "physical_pole_residue": "NOT_ESTABLISHED_ON_EVOLVING_BACKGROUND",
+  "physics_pass": false,
+  "review": "DEFERRED",
+  "scope": "ACTUAL_PARENT_SCALAR_EXTERNAL_MATTER_SOURCE_AND_TIME_DEPENDENT_KERNEL_EXPORT_ONLY",
+  "source_sha256": {
+    "Analysis/MAT/MAT-001/M4_INVARIANT_RESIDUE/mat001_m4_invariant_residue_control.py": "a4e62cb942e79871d246e8b0e7f76710fc2225377ae7811246a917b2a4986576",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/PKM1_P0_FINITE_DENSITY_PARENT_SPEC.md": "c0e0f1414beda764079a775b9b7fa1caad522feeb403f80b26bd5b5648424ff7",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/itsm_pkm1_finite_density_parent_hamiltonian.py": "af6dae99c704075681daa8b220df4261da7dd8ec9af0dcaad76e2b9dff1b53ed",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/itsm_pkm1_p0_independent_reproduction.py": "9409182d09e60b29c70b9ea690cfaad84507964024f6d977f2c808562a8278fc",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/m4_actual_source_kernel_v1.py": "f3904ce118d24773b2e57930e5e28bf32aaab5458958bc367ee0f4a1e7b06073",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/m4_actual_source_kernel_v2.py": "b25af7f40147147c0bd6d3bd89b9d5294172d4772a4cda8f54289f3953fae405",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/m4_actual_source_kernel_v3.py": "2352ec7412709bef2d518ba81fcab06c967f14697e79c7b78022a58799fb6f99",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/itsm_pkm1_finite_density_parent_hamiltonian_summary.json": "f4bb3068f59b441c76f66db6beedb143f84696dbf9ca6b04fb1ec9b2d9089358",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/m4_actual_source_kernel_v1_20261105/receipt.json": "0d7d54caad76298ca8c7a39e872372b90d865da56ec15db7854232226a14dd58",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/u5_covariant_v1_20261105/receipt.json": "f42e33bbeead1ea1e62b201bfb5770d3f824f279bbe3d5bf8269711fd55e4c9a",
+    "Theory/Gates/MAT-001/MAT001_M4_P0B_ACTUAL_SOURCE_KERNEL_V1_CONTRACT_2026-11-05.md": "aa88112a53784efb78f36f71f94eaec5f6d85c6d25ad12330708595c8ef40c3d",
+    "Theory/Gates/MAT-001/MAT001_M4_P0B_ACTUAL_SOURCE_KERNEL_V1_INPUTS_2026-11-05.json": "de380324d1169a4ce24bafea25d5c1587a24dc949c214a3a699b2ae54b4bcfc5",
+    "Theory/Gates/MAT-001/MAT001_M4_P0B_SHEAR_SOURCE_REPAIR_V2_REPORT_2026-11-05.md": "3b1b62273c21e40e390de2f4e0aef1b136fdcc24f3e96e927ea446f357624674",
+    "Theory/Gates/MAT-001/MAT001_U5_PKM1_COVARIANT_COMPLETION_V1_REPORT_2026-11-05.md": "65519303df2e402491cbc09f6adb55c7ee209fc935d4ad22d54c8dfd9a2df0ef"
+  },
+  "time_operator": "K*d_t^2+(dot K+3H K+D-D.T)*d_t+(dot D+3H D-F)",
+  "time_source": "s_x-dot s_v-3H s_v",
+  "total": 21
+}

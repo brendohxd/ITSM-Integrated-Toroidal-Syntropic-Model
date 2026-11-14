@@ -1,0 +1,400 @@
+{
+  "asymptotic": {
+    "X": "rho^2*mu^2/(M*H^2), 0<X<=6 if V>=0",
+    "canonical_fast_omega_over_q": "1",
+    "canonical_slow_max_omega_over_H": "sqrt(161/32)",
+    "canonical_slow_omega_squared": "-H**2/4 + 13*mu**2*rho**2/(4*M) - mu**4*rho**4/(2*H**2*M**2)",
+    "minimum_chemical_drift_over_canonical_slow_frequency": "3*sqrt(32/161) > 1",
+    "raw_slow_omega_squared": "mu**2*rho**2/(2*M)",
+    "slow_metric_overlap_q_times_Psi": "sqrt(2)*(-H**2*M - 2*I*H*M*omega - mu**2*rho**2)/(4*H*M**(3/2))"
+  },
+  "benchmark_diagnostics": [
+    {
+      "canonical_fast_omega_over_q": 2.313300568142507,
+      "canonical_omega_squared": [
+        -0.23546643293167074,
+        5.3513595185684455
+      ],
+      "canonical_slow_omega_over_H": null,
+      "caveat": "LOCAL_CONSERVATIVE_DIAGNOSTIC_NOT_PHYSICAL_POLE",
+      "chemical_drift_over_slow_omega": null,
+      "q": 1.0,
+      "raw_omega_squared": [
+        0.028847718429021767,
+        3.862340021034579
+      ]
+    },
+    {
+      "canonical_fast_omega_over_q": 1.0262132542168223,
+      "canonical_omega_squared": [
+        1.8814843192452524,
+        16.849818290084485
+      ],
+      "canonical_slow_omega_over_H": 2.1725791203874465,
+      "caveat": "LOCAL_CONSERVATIVE_DIAGNOSTIC_NOT_PHYSICAL_POLE",
+      "chemical_drift_over_slow_omega": 1.3808472942817362,
+      "q": 4.0,
+      "raw_omega_squared": [
+        0.5971133265729948,
+        16.7518532273541
+      ]
+    },
+    {
+      "canonical_fast_omega_over_q": 1.0011958648204442,
+      "canonical_omega_squared": [
+        1.9995996336054687,
+        256.6126488917906
+      ],
+      "canonical_slow_omega_over_H": 2.239735966423047,
+      "caveat": "LOCAL_CONSERVATIVE_DIAGNOSTIC_NOT_PHYSICAL_POLE",
+      "chemical_drift_over_slow_omega": 1.3394435973589898,
+      "q": 16.0,
+      "raw_omega_squared": [
+        0.6296545874188457,
+        256.5624644549815
+      ]
+    },
+    {
+      "canonical_fast_omega_over_q": 1.000073334596302,
+      "canonical_omega_squared": [
+        2.003875198115617,
+        4096.600779041042
+      ],
+      "canonical_slow_omega_over_H": 2.242129201040307,
+      "caveat": "LOCAL_CONSERVATIVE_DIAGNOSTIC_NOT_PHYSICAL_POLE",
+      "chemical_drift_over_slow_omega": 1.3380138836816604,
+      "q": 64.0,
+      "raw_omega_squared": [
+        0.6311525632856234,
+        4096.550778322
+      ]
+    },
+    {
+      "canonical_fast_omega_over_q": 1.0000045779973727,
+      "canonical_omega_squared": [
+        2.0041303496510445,
+        65536.60004864515
+      ],
+      "canonical_slow_omega_over_H": 2.2422719405929703,
+      "caveat": "LOCAL_CONSERVATIVE_DIAGNOSTIC_NOT_PHYSICAL_POLE",
+      "chemical_drift_over_slow_omega": 1.3379287077938673,
+      "q": 256.0,
+      "raw_omega_squared": [
+        0.631243919134742,
+        65536.55004864234
+      ]
+    }
+  ],
+  "cheap_screen": "REPRODUCIBLE_INCOMPLETENESS_WITH_DOMAIN_OBSTRUCTION",
+  "checks": [
+    {
+      "evidence": null,
+      "name": "mixed_symmetric_term_and_volume_derivative_retained",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "naively_frozen_mass_rejected",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "retained_gyroscopic_mixing",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "exact_Euler_mass_identity",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "full_evolving_canonical_kinetic_identity",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "canonical_Euler_first_derivative_identity",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "canonical_Euler_mass_identity_including_antisymmetric_drift",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "canonical_drift_is_not_zero_at_finite_q",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "raw_slow_large_q_limit_with_mixing",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "canonical_slow_large_q_limit_with_mixing",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "canonical_fast_branch_has_unit_large_q_speed",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "canonical_slow_to_H_bound_by_completed_square",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "canonical_normalization_changes_slow_frequency_at_background_order",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "chemical_background_rate_not_fast_mode_frequency",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "actual_metric_map_not_replaced_by_bare_phase",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "slow_branch_has_metric_overlap",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "independent_background_solvers_returned",
+      "passed": true
+    },
+    {
+      "evidence": 3.552713678800501e-15,
+      "name": "independent_uneliminated_Schur_mode_1",
+      "passed": true
+    },
+    {
+      "evidence": [
+        2.102675186903545e-10,
+        5.824904578265037e-10
+      ],
+      "name": "independent_background_flow_normalized_derivatives_1",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "diagnostic_real_roots_at_benchmark_1",
+      "passed": true
+    },
+    {
+      "evidence": 1.4210854715202004e-14,
+      "name": "independent_uneliminated_Schur_mode_4",
+      "passed": true
+    },
+    {
+      "evidence": [
+        2.5212870613254874e-11,
+        4.4893673785155844e-11
+      ],
+      "name": "independent_background_flow_normalized_derivatives_4",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "diagnostic_real_roots_at_benchmark_4",
+      "passed": true
+    },
+    {
+      "evidence": 2.2737367544323206e-13,
+      "name": "independent_uneliminated_Schur_mode_16",
+      "passed": true
+    },
+    {
+      "evidence": [
+        1.5080251068846408e-12,
+        2.904198056372537e-12
+      ],
+      "name": "independent_background_flow_normalized_derivatives_16",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "diagnostic_real_roots_at_benchmark_16",
+      "passed": true
+    },
+    {
+      "evidence": 3.637978807091713e-12,
+      "name": "independent_uneliminated_Schur_mode_64",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "diagnostic_real_roots_at_benchmark_64",
+      "passed": true
+    },
+    {
+      "evidence": 5.820766091346741e-11,
+      "name": "independent_uneliminated_Schur_mode_256",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "diagnostic_real_roots_at_benchmark_256",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "negative_lowest_mode_diagnostic_preserved",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "input_bytes_sidecars_and_timestamps_preserved",
+      "passed": true
+    }
+  ],
+  "conservative_diagnostic": "det(-omega^2*I-i*omega*G-F_c); dropping G_dot requires separate control",
+  "disposition": "HIGH_Q_ALONE_DOES_NOT_PROVIDE_ADIABATIC_SLOW_FORCE_POLE_IN_REGISTERED_EQUILIBRIUM_FAMILY",
+  "event_domain": "expanding H>0; q>0; rho,mu,M>0; rho_dot=0 and V_rho=rho*mu^2 at this event only; V>=0 for X<=6 bound",
+  "exact_canonical_equation": "y_ddot+G*y_dot+(G_dot/2-F_c)*y=transformed_source",
+  "exact_local_data": {
+    "D": [
+      [
+        "2*M*(-3*H + q)*(3*H + q)/H",
+        "-2*mu**2*rho/H"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "F": [
+      [
+        "-54*H**2*M + 2*M*q**2 + 9*mu**2*rho**2",
+        "0"
+      ],
+      [
+        "0",
+        "-V_rhorho + mu**2 - q**2"
+      ]
+    ],
+    "F_after_symmetric_IBP": [
+      [
+        "-mu**2*q**2*rho**2/H**2",
+        "mu**4*rho**3/(2*H**2*M)"
+      ],
+      [
+        "mu**4*rho**3/(2*H**2*M)",
+        "-V_rhorho + mu**2 - q**2"
+      ]
+    ],
+    "G_raw": [
+      [
+        "0",
+        "-2*mu**2*rho/H"
+      ],
+      [
+        "2*mu**2*rho/H",
+        "0"
+      ]
+    ],
+    "K": [
+      [
+        "(2*M*q**2 + mu**2*rho**2)/H**2",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "canonical_F": [
+      [
+        "(4*H**4*M**4*q**4 + 52*H**4*M**3*mu**2*q**2*rho**2 + 9*H**4*M**2*mu**4*rho**4 - 52*H**2*M**3*mu**2*q**4*rho**2 - 56*H**2*M**2*mu**4*q**2*rho**4 - 15*H**2*M*mu**6*rho**6 + 8*M**2*mu**4*q**4*rho**4 + 8*M*mu**6*q**2*rho**6 + 2*mu**8*rho**8)/(4*H**2*M**2*(2*M*q**2 + mu**2*rho**2)**2)",
+        "mu**2*rho*(4*H**2*M**2*q**2 + 2*M*mu**2*q**2*rho**2 + mu**4*rho**4)/(H*M*(2*M*q**2 + mu**2*rho**2)**(3/2))"
+      ],
+      [
+        "mu**2*rho*(4*H**2*M**2*q**2 + 2*M*mu**2*q**2*rho**2 + mu**4*rho**4)/(H*M*(2*M*q**2 + mu**2*rho**2)**(3/2))",
+        "-(-9*H**2*M + 4*M*V_rhorho - 4*M*mu**2 + 4*M*q**2 + 3*mu**2*rho**2)/(4*M)"
+      ]
+    ],
+    "canonical_G": [
+      [
+        "0",
+        "-2*mu**2*rho/sqrt(2*M*q**2 + mu**2*rho**2)"
+      ],
+      [
+        "2*mu**2*rho/sqrt(2*M*q**2 + mu**2*rho**2)",
+        "0"
+      ]
+    ],
+    "canonical_G_dot": [
+      [
+        "0",
+        "2*H*mu**2*rho*(10*M*q**2 + 3*mu**2*rho**2)/(2*M*q**2 + mu**2*rho**2)**(3/2)"
+      ],
+      [
+        "-2*H*mu**2*rho*(10*M*q**2 + 3*mu**2*rho**2)/(2*M*q**2 + mu**2*rho**2)**(3/2)",
+        "0"
+      ]
+    ],
+    "canonical_T": [
+      [
+        "H/sqrt(2*M*q**2 + mu**2*rho**2)",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "canonical_T_dot": [
+      [
+        "-(2*H**2*M**2*q**2 - 3*H**2*M*mu**2*rho**2 + 2*M*mu**2*q**2*rho**2 + mu**4*rho**4)/(2*M*(2*M*q**2 + mu**2*rho**2)**(3/2))",
+        "0"
+      ],
+      [
+        "0",
+        "-3*H/2"
+      ]
+    ]
+  },
+  "full_M4": "INCOMPLETE",
+  "gate_effect": "NONE",
+  "kind": "M4_P0B_POLE_DOMAIN_V2",
+  "live_TrackA_V": "NOT_COMPUTED",
+  "passed": 32,
+  "physical_residue": "NOT_COMPUTED_NO_CONTROLLED_PHYSICAL_POLE_WINDOW_ESTABLISHED",
+  "physics_pass": false,
+  "remaining": "Finite-domain retarded-response approximation/error control and interacting cutoff; a fast amplitude root cannot establish the slow matter-force residue. No all-parent exclusion.",
+  "review": "DEFERRED",
+  "source_sha256": {
+    "Analysis/MAT/MAT-001/M4_INVARIANT_RESIDUE/mat001_m4_invariant_residue_control.py": "a4e62cb942e79871d246e8b0e7f76710fc2225377ae7811246a917b2a4986576",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/PKM1_P0_FINITE_DENSITY_PARENT_SPEC.md": "c0e0f1414beda764079a775b9b7fa1caad522feeb403f80b26bd5b5648424ff7",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/itsm_pkm1_finite_density_parent_hamiltonian.py": "af6dae99c704075681daa8b220df4261da7dd8ec9af0dcaad76e2b9dff1b53ed",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/itsm_pkm1_p0_independent_reproduction.py": "9409182d09e60b29c70b9ea690cfaad84507964024f6d977f2c808562a8278fc",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/m4_actual_source_kernel_v1.py": "f3904ce118d24773b2e57930e5e28bf32aaab5458958bc367ee0f4a1e7b06073",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/m4_actual_source_kernel_v2.py": "b25af7f40147147c0bd6d3bd89b9d5294172d4772a4cda8f54289f3953fae405",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/m4_actual_source_kernel_v3.py": "2352ec7412709bef2d518ba81fcab06c967f14697e79c7b78022a58799fb6f99",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/m4_causal_response_v3.py": "cb99fbc2f250ac3d616a64966282bfabee5b84b0604c237696ebb11aac2fd7f9",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/m4_pole_domain_v1.py": "0dea3747d295627b32a501a237bb455b80f47c25543f3d35b5fb41cc31f9e19f",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/m4_pole_domain_v2.py": "d1bcce145527db4fa96fde8cf49033b133c09520f150f171615da111ad13552d",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/itsm_pkm1_finite_density_parent_hamiltonian_summary.json": "f4bb3068f59b441c76f66db6beedb143f84696dbf9ca6b04fb1ec9b2d9089358",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/m4_actual_source_kernel_v1_20261105/receipt.json": "0d7d54caad76298ca8c7a39e872372b90d865da56ec15db7854232226a14dd58",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/m4_actual_source_kernel_v3_20261105/receipt.json": "e103d318b51df4e9ec6b60d2878c5af83d8921a00858c1750107d5024868547d",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/m4_causal_response_v3_20261105/receipt.json": "25d047e2c12e9f333eb44a86fe57624328e89cbb528a77b1af5d6468c354fb57",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/u5_covariant_v1_20261105/receipt.json": "f42e33bbeead1ea1e62b201bfb5770d3f824f279bbe3d5bf8269711fd55e4c9a",
+    "Theory/Core/ITSM_UNFINISHED_WORK_COMPLETION_PROTOCOL_2026-11-05.md": "067417faefe9a220ef296c5633f8c70370045efa6220a1d77faa00172a8bd829",
+    "Theory/Gates/MAT-001/MAT001_M4_P0B_ACTUAL_SOURCE_KERNEL_V1_CONTRACT_2026-11-05.md": "aa88112a53784efb78f36f71f94eaec5f6d85c6d25ad12330708595c8ef40c3d",
+    "Theory/Gates/MAT-001/MAT001_M4_P0B_ACTUAL_SOURCE_KERNEL_V1_INPUTS_2026-11-05.json": "de380324d1169a4ce24bafea25d5c1587a24dc949c214a3a699b2ae54b4bcfc5",
+    "Theory/Gates/MAT-001/MAT001_M4_P0B_POLE_DOMAIN_V1_INPUTS_2026-11-05.json": "516f42145b552500b31aea2be7e30757268781519555a7233c72d60d83c7ce3c",
+    "Theory/Gates/MAT-001/MAT001_M4_P0B_POLE_DOMAIN_V1_SPEC_2026-11-05.md": "d1716ada729a45433ab8401bd31585f5a76fbf5b7a9f1c0fd6de83a98049fabc",
+    "Theory/Gates/MAT-001/MAT001_M4_P0B_SHEAR_SOURCE_REPAIR_V2_REPORT_2026-11-05.md": "3b1b62273c21e40e390de2f4e0aef1b136fdcc24f3e96e927ea446f357624674",
+    "Theory/Gates/MAT-001/MAT001_U5_PKM1_COVARIANT_COMPLETION_V1_REPORT_2026-11-05.md": "65519303df2e402491cbc09f6adb55c7ee209fc935d4ad22d54c8dfd9a2df0ef"
+  },
+  "total": 32
+}

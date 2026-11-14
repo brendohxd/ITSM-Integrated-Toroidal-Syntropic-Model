@@ -1,0 +1,102 @@
+{
+  "kind": "RTAU_DIFFERENTIATED_TRACE_ASSEMBLY_V1",
+  "source_sha256": "a54cf49e00a42690e69028dae04b533c83b441a46e37c50a33b3cbfa4150492b",
+  "contract_sha256": "850dd5a5e30880488da2fa6b8eb219e402fcde2c8faeaee8e05123420bc3c89e",
+  "manifest_sha256": "15e674d992cbb56fc13d164d437105e39c97b3160fdb291b8fe6d12e87379698",
+  "pinned_sources": 389,
+  "checks": [
+    {
+      "name": "exact_periodic_direct_rate_matches_separated_terms",
+      "passed": true
+    },
+    {
+      "name": "differentiated_current_is_fixed_trace_plus_remaining_source",
+      "passed": true
+    },
+    {
+      "name": "actual_momentum_mean_rate_preserved",
+      "passed": true
+    },
+    {
+      "name": "moving_momentum_normalization_required",
+      "passed": true
+    },
+    {
+      "name": "moving_shape_required",
+      "passed": true
+    },
+    {
+      "name": "moving_gauge_source_required",
+      "passed": true
+    },
+    {
+      "name": "moving_density_compensation_required",
+      "passed": true
+    },
+    {
+      "name": "differentiating_only_local_trace_operator_rejected",
+      "passed": true
+    },
+    {
+      "name": "actual_A2_time_rate_matches_explicit_formula",
+      "passed": true
+    },
+    {
+      "name": "actual_frame_source_time_rate_matches_explicit_formula",
+      "passed": true
+    },
+    {
+      "name": "actual_highest_trace_and_frame_source_drifts_are_nonzero",
+      "passed": true
+    },
+    {
+      "name": "pinned_bytes_sidecars_and_timestamps_preserved",
+      "passed": true
+    }
+  ],
+  "bounds_binary": {
+    "A2_t": [
+      [
+        1,
+        588859979699401405258262730696735119306509466460529,
+        -169,
+        169
+      ],
+      [
+        1,
+        294118058008887585097096994928652736572272696087479,
+        -168,
+        168
+      ]
+    ],
+    "C_t": [
+      [
+        1,
+        678700564308945893275045441522639146153997077418861,
+        -168,
+        169
+      ],
+      [
+        1,
+        677984907204358158828831477895652560776249254186797,
+        -168,
+        169
+      ]
+    ]
+  },
+  "interval_display": {
+    "A2_t": [
+      "-0.786942086463083405206691",
+      "-0.786108366047004008204372"
+    ],
+    "C_t": [
+      "-1.81400691700460935790738",
+      "-1.81209413395094050171151"
+    ]
+  },
+  "scope": "EXACT_COMPATIBLE_INITIAL_FIRST_JET_TRACE_ASSEMBLY",
+  "lower_order_total_numeric_bound": "OPEN",
+  "review_status": "DEFERRED",
+  "physics_pass": false,
+  "gate_effect": "NONE"
+}

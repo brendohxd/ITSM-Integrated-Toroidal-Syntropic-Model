@@ -1,0 +1,81 @@
+{
+  "kind": "RTAU_INITIAL_DENSITY_OPERATOR_DRIFT_V2",
+  "physics_pass": false,
+  "gate_effect": "NONE",
+  "review_status": "DEFERRED",
+  "Rtau_adopted": false,
+  "G1_G6": "INCOMPLETE",
+  "source_sha256": "210081eec9404810fee2fbb171910cc66469a5b0c75db743c099bcdb1ec3f8aa",
+  "contract_sha256": "7049e9669c4809fe443d9d3d557d3727a893aa968acfd341aaac8dd32e6e3f58",
+  "pinned_manifest_sha256": "15e674d992cbb56fc13d164d437105e39c97b3160fdb291b8fe6d12e87379698",
+  "pinned_files": 386,
+  "checks": [
+    {
+      "name": "moving_inverse_product_rule",
+      "passed": true
+    },
+    {
+      "name": "naive_moving_inverse_fails_on_compatible_source",
+      "passed": true
+    },
+    {
+      "name": "compatible_source_range_motion_retained",
+      "passed": true
+    },
+    {
+      "name": "periodic_normal_form_density_row_unchanged",
+      "passed": true
+    },
+    {
+      "name": "primitive_mean_term_can_be_nonzero",
+      "passed": true
+    },
+    {
+      "name": "observable_coefficient_drift_required",
+      "passed": true
+    },
+    {
+      "name": "finite_whole_root_coefficient_drift",
+      "passed": true
+    },
+    {
+      "name": "initial_material_density_source_reused",
+      "passed": true
+    },
+    {
+      "name": "all_pinned_bytes_sidecars_and_timestamps_preserved",
+      "passed": true
+    }
+  ],
+  "density_principal_material_row": "ZERO_ON_REGISTERED_COMPATIBLE_NORM",
+  "material_source_coefficients": [
+    "7284.34931764505457437065920875",
+    "102112.769723391159628596527939",
+    "27259.7732374775127405255606788",
+    "14547.5882209191176896530455672",
+    "7272.67515128778529995410798333",
+    "608.606527732879360139906704295",
+    "608.606527685737963184145566445",
+    "13262.1566812293546390232111172",
+    "8.821692156625415751525134347"
+  ],
+  "observable_coefficient_drift": {
+    "primitive": "0.01145582763717666591187590890888672",
+    "momentum": "1.078741546243318804608987486276512",
+    "gradient": "0.003673274616113103304192656240586988",
+    "field": "0.7615630339196658313868602738950433",
+    "auxiliary": "0.0002159520861002147131145398118093318"
+  },
+  "drift_input_coefficients": [
+    "5.622988195084633878315209535187805",
+    "88.51572237361152359324747869474348",
+    "21.67089020844207531679891407574224",
+    "10.90913782918241340345885018334275",
+    "5.453621855257980349696391577652198",
+    "1.090596938111544164219207204446409",
+    "1.090596938075141410642832463402435",
+    "10.86161767722836431226274511022248"
+  ],
+  "moving_reconstruction_rate": "OPEN",
+  "actual_time_tube": "NOT_ESTABLISHED"
+}

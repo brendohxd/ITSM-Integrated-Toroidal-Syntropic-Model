@@ -4,6 +4,15 @@ Read `GEMINI.md` and `Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md` completely
 before scientific work. Follow the live owning gate and master programme.
 This file supplements, and never weakens, those integrity requirements.
 
+## Research routes and handoff
+
+Use [RESEARCH_ROUTES.md](RESEARCH_ROUTES.md) as the standing work list for
+planning and resuming ITSM research. When planning new work or reaching a
+verified result, update its stable route entry and append a dated log item.
+Record the owning evidence, completed scope, contribution, blockers and
+next action. Keep the current handoff in sync when priorities change.
+Scientific acceptance and claim status remain with the live owners.
+
 ## Deferred Rule-9 review — operator decision, 25 September 2026
 
 Follow `Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md`. All outstanding

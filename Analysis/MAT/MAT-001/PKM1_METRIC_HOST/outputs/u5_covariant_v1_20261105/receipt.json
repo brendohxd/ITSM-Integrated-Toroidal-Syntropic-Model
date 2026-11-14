@@ -1,0 +1,143 @@
+{
+  "checks": [
+    {
+      "name": "normalized_phase_normal_variation_0",
+      "passed": true
+    },
+    {
+      "name": "varied_unit_norm_0",
+      "passed": true
+    },
+    {
+      "name": "acceleration_tangent_0",
+      "passed": true
+    },
+    {
+      "name": "full_connection_boundary_coefficient_0",
+      "passed": true
+    },
+    {
+      "name": "force_surface_potential_vanishes_on_unitary_tangents_0",
+      "passed": true
+    },
+    {
+      "name": "normalized_phase_normal_variation_1",
+      "passed": true
+    },
+    {
+      "name": "varied_unit_norm_1",
+      "passed": true
+    },
+    {
+      "name": "acceleration_tangent_1",
+      "passed": true
+    },
+    {
+      "name": "full_connection_boundary_coefficient_1",
+      "passed": true
+    },
+    {
+      "name": "force_surface_potential_vanishes_on_unitary_tangents_1",
+      "passed": true
+    },
+    {
+      "name": "covariant_phase_current_IBP_sign",
+      "passed": true
+    },
+    {
+      "name": "complete_lapse_Hessian_including_lower_order_terms",
+      "passed": true
+    },
+    {
+      "name": "negative_transverse_lapse_coefficient",
+      "passed": true
+    },
+    {
+      "name": "negative_radial_lapse_coefficient",
+      "passed": true
+    },
+    {
+      "name": "Y0_transverse_and_radial_limits_regular",
+      "passed": true
+    },
+    {
+      "name": "homogeneous_lapse_symbol_strictly_negative",
+      "passed": true
+    },
+    {
+      "name": "torus_zero_mode_not_deleted",
+      "passed": true
+    },
+    {
+      "name": "zero_charge_changes_zero_mode_condition",
+      "passed": true
+    },
+    {
+      "name": "full_metric_Legendre_map_invertible",
+      "passed": true
+    },
+    {
+      "name": "amplitude_Legendre_map_invertible",
+      "passed": true
+    },
+    {
+      "name": "vector_gradient_C2_at_zero",
+      "passed": true
+    },
+    {
+      "name": "vector_gradient_not_C3_at_zero",
+      "passed": true
+    },
+    {
+      "name": "potential_mass_dimensions_consistent",
+      "passed": true
+    },
+    {
+      "name": "reduced_local_symplectic_rank_eight",
+      "passed": true
+    },
+    {
+      "name": "reduced_canonical_form_nondegenerate",
+      "passed": true
+    },
+    {
+      "name": "all_pinned_sources_sidecars_timestamps_unchanged",
+      "passed": true
+    }
+  ],
+  "derived_lapse_second_variation": "4*MP**2*N*v**2*Derivative(J(Y), (Y, 2)) + 2*MP**2*N*w*Derivative(J(Y), Y) - f**2*mu**2*rho**2/N",
+  "gate_effect": "NONE",
+  "global_winding_core_completion": "OPEN",
+  "homogeneous_lapse_symbol": "-2*MP**2*q**2 - mu**2*rho**2",
+  "kind": "PKM1_U5_COVARIANT_COMPARISON_V1",
+  "local_physical_DOF": 4,
+  "metric_Hessian_determinant": "-16",
+  "microscopic_matching": "NOT_DERIVED",
+  "nonlinear_evolution": "NOT_PROVED",
+  "passed": 26,
+  "physics_pass": false,
+  "radial": "-1/(y + 1)**2",
+  "reduced_symplectic_rank": 8,
+  "review": "DEFERRED",
+  "scope": "REGULAR_ON_SHELL_TIMELIKE_P0B_CHART_WITH_COMPACT_ELLIPTIC_LAPSE_INVERSE_AND_SEPARATE_GLOBAL_SECTORS",
+  "source_sha256": {
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/PKM1_P0_FINITE_DENSITY_PARENT_SPEC.md": "c0e0f1414beda764079a775b9b7fa1caad522feeb403f80b26bd5b5648424ff7",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/itsm_pkm1_finite_density_parent_hamiltonian.py": "af6dae99c704075681daa8b220df4261da7dd8ec9af0dcaad76e2b9dff1b53ed",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/itsm_pkm1_p0_independent_reproduction.py": "9409182d09e60b29c70b9ea690cfaad84507964024f6d977f2c808562a8278fc",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/ITSM_PKM1_P0_FINITE_DENSITY_PARENT_HAMILTONIAN.md": "2b23857078415e3391bf4c5119ea8b085942fa954b38209aa2829a5d1d8c4f0e",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/ITSM_PKM1_P0_INDEPENDENT_REPRODUCTION.md": "70dce76a082e48f723470bcfb45d55606844a7857d9c24b7d8312cb460c78d88",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/itsm_pkm1_finite_density_parent_hamiltonian_summary.json": "f4bb3068f59b441c76f66db6beedb143f84696dbf9ca6b04fb1ec9b2d9089358",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/outputs/itsm_pkm1_p0_independent_reproduction_summary.json": "ea0486d2fc4ecd33639a9cc31553496b89506edf427de77fa874f1894cf4e0df",
+    "Analysis/MAT/MAT-001/PKM1_METRIC_HOST/u5_covariant_comparison_v1.py": "a79dc0640b47fae06bc6ec45846932335995052193d5ad449ebf97550cfc3257",
+    "GEMINI.md": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12",
+    "Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md": "df532fcf8353cdc5159798fdf250561d0ba4fa556abb0d83c3484e7d3ca7e123",
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa",
+    "Theory/Core/ITSM_UNFINISHED_WORK_COMPLETION_PROTOCOL_2026-11-05.md": "067417faefe9a220ef296c5633f8c70370045efa6220a1d77faa00172a8bd829",
+    "Theory/Gates/MAT-001/MAT001_U5_PKM1_COVARIANT_COMPLETION_V1_CONTRACT_2026-11-05.md": "376d744c458573b29ce643220b4e3fb75101c743110ed74e2e9044bee2aa93ce",
+    "Theory/Gates/MAT-001/MAT001_U5_PKM1_COVARIANT_COMPLETION_V1_INPUTS_2026-11-05.json": "39fd8c17f3cffea63fad8677fee0a81392115024c80a7206ab8820b07881cc76",
+    "Theory/Gates/MAT-001/MAT001_U5_PKM1_COVARIANT_COMPLETION_V1_REPORT_2026-11-05.md": "65519303df2e402491cbc09f6adb55c7ee209fc935d4ad22d54c8dfd9a2df0ef"
+  },
+  "statement": "Analytic proof and hypotheses are in the owning report; finite algebra controls do not replace that proof",
+  "total": 26,
+  "transverse": "-1/(y + 1)"
+}
