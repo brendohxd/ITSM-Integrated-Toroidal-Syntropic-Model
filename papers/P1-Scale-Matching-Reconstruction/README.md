@@ -1,8 +1,8 @@
 # P1 — Present-epoch scale matching and $C_{\mathrm{obs}}$ hygiene
 
 **Directory:** `papers/P1-Scale-Matching-Reconstruction/`  
-**VERSION:** see `VERSION` (currently `0.2.0-rc7`)
-**Canonical PDF:** `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc7.pdf`
+**VERSION:** see `VERSION` (currently `0.2.0-rc8`)
+**Canonical PDF:** `Boyd_2026_Present-Epoch_Scale_Matching_Cobs_Hygiene_v0.2.0-rc8.pdf`
 
 (the build script writes this named PDF directly and emits its `.sha256`
 sidecar; see `papers/PAPERS_NAMING.md`)
