@@ -3011,3 +3011,325 @@ work and quarantined observational outputs are outside this checkpoint.
 The Git history/remote determine commit and push completion. This
 operator authorization does not grant journal upload, Pages deployment,
 provider dispatch, canonical promotion or review clearance.
+
+## U3 recovered execution - 5 November 2026
+
+Retrospective start/stop record written after verification. Start: operator
+confirmed High for the previously prepared U3 B1/B2 analytic derivation.
+Frozen contract/input manifest: UVIR003_U3_ANALYTIC_CONTROLS_V1, 15 source pins.
+Stop: original A0-A2 screen COMPLETE_SCOPED; 33/33 controls and byte-identical
+replay. No failed executable attempt. Existing July series reused; dimensions,
+constitutive/regulator response, ADM changes, mode count and finite normalized
+contact derived. [Owning report](UVIR-003/UVIR003_U3_ANALYTIC_CONTROLS_V1_REPORT_2026-11-05.md).
+Full U3 and M4 physical residue/domain remain open. No live action adoption,
+cutoff, matching, external dispatch, vault mutation, publication or Git action.
+Rule-9 DEFERRED; physics_pass=false; gate_effect=NONE. U7/U6 conditions not
+triggered by current regular-domain U5/M4 evidence, not permanently excluded.
+
+## Actual initial corrected-density component - 5 November 2026
+
+[Density owner](RES-001/RES001_RTAU_ACTUAL_CORRECTED_DENSITY_V1_REPORT_2026-11-05.md): the complete unreduced density-source calculation was
+reproduced and composed with corrected Sigma momentum/force lifts. V4: 20/20
+controls and byte-identical replay; initial density norm-rate <=102113 U and
+physical rho reconstruction <=15 U8 in the declared original-coordinate norms.
+These conservative constants are not growth rates or finite-time accuracy.
+Both failed physical-map interval attempts are preserved; usable V4 uses the
+already certified positive-Y enclosure with exact generic force partials.
+No clipping, new action, changed threshold or reuse of held lifted bounds.
+
+The full twenty-direction density comparison, moving maps, domain persistence
+and t=0.05 coupled energy remain OPEN. Overall generator/density task INCOMPLETE.
+NEXT: actual density principal comparison with physical-variable map drift.
+R-tau UNADOPTED; Rule-9 DEFERRED; physics_pass=false; gate_effect=NONE;
+G1-G6 INCOMPLETE. No Git delivery, publication, provider or vault mutation.
+
+Execution record: started after explicit High acknowledgement; paused for usage,
+resumed by operator; stopped at this component checkpoint. Overall task open.
+
+## 2026-11-09 - A09.1 initial trace momentum-lift and frame-flux drift
+
+On `recovery/v12-core-architecture`, continued the first eligible route in
+`RESEARCH_ROUTES.md` under the confirmed High setting. The
+[component report](RES-001/RES001_RTAU_TRACE_MOMENTUM_DRIFT_V2_REPORT_2026-11-09.md)
+records all-mode initial bounds on the moving normalized momentum lift
+and weak frame-flux drift. V1's interval/jet dispatch failure is preserved.
+V2 passed eight local controls, verified 388 source pins and replayed
+exactly. Next bound the material velocity and local current coefficient
+rates and compose the lower-order terms in the corrected coupled norm.
+R-tau unadopted, review DEFERRED, physics_pass=false, gate_effect=NONE.
+
+## 2026-11-13 - A09.1 full initial nonlocal momentum-block drift
+
+After explicit High confirmation, completed the
+[initial nonlocal trace component](RES-001/RES001_RTAU_NONLOCAL_TRACE_DRIFT_V1_REPORT_2026-11-13.md).
+The actual material-rate identity cancels the gauge shift rate and retains
+the Lie-velocity correction. Three slot contributions compose to an
+all-mode initial L2 bound below 228.399110 and projected Green response
+below 2279.279844 in registered units. These conservative estimates
+provide boundedness without finite-time accuracy or physical clearance.
+Ten local controls, 391 verified pins and byte-identical replay.
+Next quantify local current/source drift and compose the coupled norm.
+R-tau UNADOPTED, review DEFERRED, physics_pass=false, gate_effect=NONE.
+
+## 2026-11-13 - A09.1 local trace drift and weak composition
+
+At explicitly continued High, completed the
+[weak local trace coefficient-rate bound](RES-001/RES001_RTAU_LOCAL_TRACE_DRIFT_V3_REPORT_2026-11-13.md).
+V3 restores the certified third spatial shift jet required by the
+flux-rate gradient. V1's interval positivity failure and V2's held
+omission remain preserved. Five local and five separate exact controls
+passed; 394 source pins verified; V3 replay byte-identical. Local and
+nonlocal initial drift compose below 16968.912747 in the registered
+H1-to-Hminus1 norm. Conservative constants supply boundedness without
+an evolving energy/domain result. Next compose the actual differentiated
+free-source and physical-map rates. A09.1 INCOMPLETE, R-tau UNADOPTED,
+review DEFERRED, physics_pass=false, gate_effect=NONE.
+
+## 2026-11-13 - README and changelog checkpoint
+
+Updated the current README checkpoint and changelog with the November
+trace results and their limits, SPARC diagnostic, route consolidation
+and scoped signed site delivery. Preserved the earlier checkpoints and
+saved documentation preimages locally. The new documentation records
+the remaining source composition and the pending reasoning-setting
+choice. Wider worktree delivery remains outstanding.
+
+## 2026-11-13 - A09.1 free-slot drift and source weights
+
+After explicit High acknowledgement, extended ordinary current/flux and
+measure drift to all configuration and momentum slots. The inherited
+exact auxiliary absence was retained with interval consistency checks.
+397 pins, 21 local controls, five separate exact controls and exact replay.
+Also bounded the density/clock source weights and weak multiplication
+maps using the existing normal-form coefficients. 399 pins, six controls
+and exact replay. Owners are RES001_RTAU_FREE_COEFFICIENT_DRIFT_V1_REPORT
+and RES001_RTAU_SOURCE_WEIGHT_RATES_V1_REPORT, both dated 2026-11-13.
+Next quantify ordinary rate-input multipliers and moving momentum-source
+rates and compose the actual compatible source. High remains confirmed.
+A09.1 INCOMPLETE, R-tau UNADOPTED, review DEFERRED, physics_pass=false,
+gate_effect=NONE.
+
+## A09.1 ordinary rough rate-input maps - 14 November 2026
+
+[Owning report](RES-001/RES001_RTAU_RATE_INPUT_MULTIPLIERS_V1_REPORT_2026-11-14.md).
+401 source pins, 21 local controls and byte-identical replay support
+Conditional initial maps from L2 field rates and Hminus1 ordinary
+momentum rates into Hminus2. All spatial multiplier terms and original
+slots are retained; ordinary auxiliary absence uses the inherited exact
+action-dependency proof. Inherits the corrected Sigma/current and
+certified higher-jet owners. Moving normalized momentum-source rates,
+final compatible source composition and coupled evolution remain open.
+Review DEFERRED, Rule9_cleared=false, physics_pass=false, gate_effect=NONE,
+R-tau UNADOPTED. High remains confirmed for the next prepared derivation.
+
+## A09.1 actual moving free-momentum source - 14 November 2026
+
+[Owning report](RES-001/RES001_RTAU_FREE_MOMENTUM_SOURCE_RATE_V1_REPORT_2026-11-14.md).
+403 source pins, eleven local controls and byte-identical replay support
+Conditional input-wise Hminus2 source-rate and Hminus1 normalized
+momentum-lift rate bounds. The total background and free clock momentum
+are retained; the rough clock rate enters the longitudinal scalar source.
+Weighted normalization and physical momentum means/rates are explicit.
+The previous longitudinal L2 obstruction remains in its own scope.
+Inherits the full action, canonical generator, higher-jet and ordinary
+rate-input owners. Next substitute actual field/momentum and gauge/mean
+rate constants into the final source composition. Full coupled evolution
+OPEN; A09.1 INCOMPLETE; review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE; R-tau UNADOPTED. High confirmed.
+
+## A09.1 complete initial differentiated trace-source composition - 14 November 2026
+
+[Owning report](RES-001/RES001_RTAU_TRACE_SOURCE_COMPOSITION_V1_REPORT_2026-11-14.md).
+406 source pins, ten controls, independent rational aggregation and exact
+replay support the Conditional nine-input Hminus2 source bound and its
+projected Green L2 response. The free configuration-rate estimate uses
+the separately established direct trace rate on an exact compatible
+Euler/auxiliary initial jet. The resulting inverse estimate is much
+looser than the direct rate and supplies no evolution existence proof.
+All mean rates, harmonic velocity, density advection, clock rates and
+moving reconstruction terms remain explicit. Inherits every component
+source/rate/Green and corrected lift owner. Next audit the complete
+twenty-direction density-operator comparison before coupled evolution.
+A09.1 wider comparison INCOMPLETE, R-tau UNADOPTED, review DEFERRED,
+Rule9_cleared=false, physics_pass=false, gate_effect=NONE. High confirmed.
+
+## A09.1 corrected-density row in Y20 - 14 November 2026
+
+[Owning report](RES-001/RES001_RTAU_DENSITY_STATE_MAP_V1_REPORT_2026-11-14.md).
+408 source pins, eight controls and exact replay support the Conditional
+initial canonical-to-Y20 map and bounded corrected-density material row,
+with original configuration means, metric moduli, force mean, eliminated
+momentum means and harmonic velocity. Physical advection remains explicit.
+The periodic normal-form density row is identically preserved; its other
+time derivatives and generator rows remain uncomputed. The physical-rho
+projection retains force derivative terms and its single numerical
+remainder total is still open. Inherits corrected lift/current, normal
+forms, Ward, periodic principal and trace-source owners. No arbitrary
+state/global tuple is admitted by this norm estimate. A09.1 INCOMPLETE,
+R-tau UNADOPTED, review DEFERRED, Rule9_cleared=false,
+physics_pass=false, gate_effect=NONE. High confirmed for continuation.
+
+## A09.1 physical-density remainder and sign correction - 14 November 2026
+
+[Owning remainder report](RES-001/RES001_RTAU_PHYSICAL_DENSITY_REMAINDER_V2_REPORT_2026-11-14.md).
+The numerical initial remainder satisfies ||R_rho||L2 <=138337 U in the
+original nine-input norm. Its first/second-order force terms, ordinary
+coupling, physical advection, means and gauge/clock commutators remain explicit.
+V2 verified 417 pinned inputs and fourteen controls, plus a separate six-control
+exact arithmetic/geometric audit. Both receipts replayed byte for byte.
+The V1 interval/jet operand-order failure and source remain preserved.
+
+[Sign correction](RES-001/RES001_RTAU_OBSERVABLE_DRIFT_SIGN_REPAIR_V1_REPORT_2026-11-14.md):
+the initial conformal auxiliary rate contains -2 L Z. Historical V2 used
+the wrong positive sign. New observable-drift V3 verified 389 pins and twelve
+controls, replayed exactly, and gives identical absolute whole-circle bounds.
+Future physical-observable time drift uses V3; old evidence remains untouched.
+
+Initial projection/norm estimates do not identify the other nineteen actual
+generator rows or provide domain persistence, normal-form time drift or an
+evolving background/energy tube. These remain substantive dependencies.
+Inherits corrected lifts, force/current and normal-form owners, compatible
+Ward/charge/mean rates, trace-source composition and Y20 state-map conditions.
+No review panel has cleared these results. A09.1 wider comparison INCOMPLETE;
+R-tau UNADOPTED; review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE. High remains confirmed for continuation.
+
+## A09.1 conditional initial twenty-row composition - 14 November 2026
+
+[Owner](RES-001/RES001_RTAU_INITIAL_TWENTY_ROW_COMPOSITION_V3_REPORT_2026-11-14.md).
+Actual Y20=(w,Q8,P9,zeta,xi), original coordinate/material derivative and
+registered A2/A1 matrices now have an assembled initial remainder bound
+||R_init||L2<=226066 U, with separate finite-dimensional partner weights.
+The initial physical-rho observable keeps genuine derivative terms and
+is not substituted for the corrected-density state row. Corrected ordinary
+velocity V2, momentum V3, force-pair V2 and density V4 were reused.
+
+424 source pins, nineteen varying-coefficient/matrix/retention controls,
+seven separate exact arithmetic/row-coverage controls and exact replays
+support this Conditional initial estimate. These are same-assistant
+computational checks, not an independent reviewer panel. The V1 schema
+and V2 contract-path implementation failures remain preserved.
+
+Only inherited smooth compatible exact Euler/constraint/auxiliary jets
+are covered; the numerical centre is not asserted exact and arbitrary
+twenty-vector/global tuples are not admitted. A remainder extension reaches
+only the controlling-norm closure of this initial domain. Initial-row
+composition is complete in scope; full actual-generator, moving normal-form
+and energy drift, domain persistence and actual background/evolution tube
+remain OPEN. Continue A09.2 without adopting a new action or cutoff.
+
+Inherits all row/constraint/lift/Ward/charge/gauge/mean and state-map owners.
+R-tau UNADOPTED; review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE; G1-G6 INCOMPLETE. High remains confirmed.
+
+## A09.2 physical-advection composition - 14 November 2026
+
+[Owner](RES-001/RES001_RTAU_PHYSICAL_ADVECTION_COMPOSITION_V1_REPORT_2026-11-14.md).
+For the original periodic primitive and T=I+i P C, the exact commutator
+is i[v mean(Cf)-mean(vCf)-P((v C_z+v_z C)f)]. Both finite-rank means and
+coefficient/physical-shift gradients remain. Zero-mode inputs are retained.
+The commutator norm is <0.004641; its additional conjugated term has norm
+<0.011657 on the registered initial domain. This introduces no new spatial
+derivative loss in the controlling L2 norm; v D itself remains unbounded.
+
+427 source pins, sixteen sparse exact-Fourier/operator controls, six
+separate rational-audit controls and both exact replays support this
+Conditional initial advection component. These are same-assistant checks,
+not independent Rule-9 review. The actual normal-form time derivative is
+separate and uncomputed, as are energy time drift, compatible-domain
+persistence and the actual background/evolution tube. No integration of
+initial constants or physical stability/adoption is inferred.
+
+Next [time-drift contract](RES-001/RES001_RTAU_NORMAL_FORM_TIME_DRIFT_V1_CONTRACT_2026-11-14.md).
+Inherits periodic/mixed principal, twenty-row, exact state-map, prepared
+shift/root and all compatible range/charge/gauge/mean owners.
+R-tau UNADOPTED; review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE; G1-G6 INCOMPLETE. High remains confirmed.
+
+## A09.2 actual normal-form time drift - 14 November 2026
+
+[Owner](RES-001/RES001_RTAU_NORMAL_FORM_TIME_DRIFT_V1_REPORT_2026-11-14.md).
+The registered cross-normal-form coefficient now has an actual initial
+time derivative bound. ||T_t||<2.787274 and ||T_t T^-1||<7.001777 in the
+benchmark convention. The generic material ordinary subblocks retain all
+q_t rates; exact material covariance cancels S_t rather than setting it to
+zero. The full nonlinear force retains the certified proper-clock rate,
+metric/frame derivatives, lapse/volume and Legendre/inverse product terms.
+Both ordinary/force directions and the density zero row/column remain.
+
+431 source pins and seventeen controls passed and replayed byte for byte.
+Seven separate audit controls verify closed scalar/frame kinetic formulas,
+generic forward time coefficients and exact rational endpoint aggregation;
+that receipt also replayed. These are same-assistant computational controls,
+not independent Rule-9 review. Original sources and sidecars remain preserved.
+
+Only exact compatible initial jets within the registered root enclosure
+are covered. There is no future conformality, physical-domain extension,
+new cutoff, time integration or background tube. The controlling energy's
+H_t and a full supported energy/global-partner/domain-persistence estimate
+remain OPEN. Next use the [energy-time contract](RES-001/RES001_RTAU_ENERGY_TIME_DRIFT_V1_CONTRACT_2026-11-14.md).
+Inherits the action, material/Schur/Ward, force/current, original-coordinate
+normal-form, prepared-root/rate and all constraint/range/charge/gauge owners.
+R-tau UNADOPTED; review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE; G1-G6 INCOMPLETE. High remains confirmed.
+
+## A09.2 initial energy time derivative - 14 November 2026
+
+[Owner](RES-001/RES001_RTAU_ENERGY_TIME_DRIFT_V2_REPORT_2026-11-14.md).
+The registered controlling energy's initial time drift now retains the
+complement action energy, stationary zero-charge row, c(t) chart and fast
+d/kappa,aphi coefficients. Both zero-speed directions remain. Bounds are
+||Hdiag_t||<3.651954e11 and ||(T^dagger Hdiag T)_t||<9.371852e11 in the
+benchmark convention. The stationary-row bound dominates; these are
+conservative coefficient estimates, not growth measurements or useful
+finite-time accuracy/stability certificates. The [0,0.05] target remains open.
+
+436 source pins and eighteen controls passed and replayed exactly.
+Twelve separate closed scalar/frame gradient and exact rational aggregation
+controls passed and replayed. These are same-assistant checks, not Rule-9
+clearance. The V1 missing-helper failure, source and sidecar remain preserved;
+V2 changes only that wrapper environment. No equation/norm/threshold change.
+
+Only exact compatible initial jets and certified initial roots are covered.
+The full initial energy/global-partner inequality, harmonic-control role,
+actual compatible-domain persistence and background/coefficient tube remain
+OPEN. Do not double-count T_t by using both transformed and pulled-back
+energy representations in one estimate. Next use the
+[full initial assembly contract](RES-001/RES001_RTAU_INITIAL_ENERGY_ASSEMBLY_V1_CONTRACT_2026-11-14.md).
+Inherits all action/Schur/Ward, force/normal-form, range/charge/gauge/mean,
+root/rate and energy/coercivity owners. R-tau UNADOPTED; review DEFERRED;
+Rule9_cleared=false; physics_pass=false; gate_effect=NONE;
+G1-G6 INCOMPLETE. High remains confirmed.
+
+## A09.2 initial mixed energy with coordinate controls - 14 November 2026
+
+[Owner](RES-001/RES001_RTAU_INITIAL_FORCED_ENERGY_V1_REPORT_2026-11-14.md).
+The supported full initial energy identity now combines the actual twenty
+state rows, fifteen original global partners, principal spatial adjoints,
+physical advection, Hdiag_t, T_t and bounded transformation/actual remainders.
+The registered independent harmonic coordinate velocities remain explicit
+controls. Conditional inequality:
+
+    E_prime(0)<=4.488985e20 E(0)+1.658735e12 |H3(0)|^2.
+
+439 source pins, nineteen variable-coefficient/mean/global controls and
+seventeen separate exact-aggregation/coercivity controls passed. Both
+receipts replayed byte for byte. These are same-assistant computational
+checks, not an independent reviewer panel or Rule-9 clearance. Original
+scientific sources, sidecars, failures and navigation preimages are preserved.
+
+Initial coercivity and equivalence to the registered strong/global input
+norm are explicit. The constants are conservative and do not certify useful
+accuracy or [0,0.05]. The result covers inherited smooth compatible exact
+initial jets on the planar periodic root domain, not arbitrary tuples or
+an evolving physical domain. Spatial gauge equations do not specify a
+harmonic-control time law; no zero-rate law or new gauge history is adopted.
+
+Initial forced assembly is complete in that scope. Closed autonomous
+physical evolution, harmonic-control continuation, compatible-domain and
+actual background/coefficient persistence remain OPEN. Next address those
+continuation requirements, including the Ward/energy chart beyond the
+initial metric slice. Inherits all row, inverse/Green/range, charge/gauge/
+mean, force, root/rate and energy/coercivity owners.
+R-tau UNADOPTED; review DEFERRED; Rule9_cleared=false;
+physics_pass=false; gate_effect=NONE; G1-G6 INCOMPLETE.
