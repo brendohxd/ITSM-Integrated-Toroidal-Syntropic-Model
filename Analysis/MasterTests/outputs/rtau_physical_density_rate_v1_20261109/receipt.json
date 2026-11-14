@@ -1,0 +1,128 @@
+{
+  "kind": "RTAU_PHYSICAL_DENSITY_RATE_V1",
+  "source_sha256": "089be21a0f168cd60a3354d66096032d3d5a34b1c3b902a970a018c80f71ea65",
+  "contract_sha256": "8c3ae929d37a2d0f6350349df2606e09c9acc6e2931b1ffce98f2734b8357b0d",
+  "manifest_sha256": "15e674d992cbb56fc13d164d437105e39c97b3160fdb291b8fe6d12e87379698",
+  "pinned_sources": 388,
+  "checks": [
+    {
+      "name": "direct_physical_rate_equals_explicit_rows",
+      "passed": true
+    },
+    {
+      "name": "zero_material_row_for_physical_density_rejected",
+      "passed": true
+    },
+    {
+      "name": "omitted_reverse_ordinary_force_coupling_rejected",
+      "passed": true
+    },
+    {
+      "name": "omitted_original_primitive_means_rejected",
+      "passed": true
+    },
+    {
+      "name": "omitted_clock_gauge_derivative_rejected",
+      "passed": true
+    },
+    {
+      "name": "omitted_coefficient_drift_rejected",
+      "passed": true
+    },
+    {
+      "name": "omitted_clock_shift_commutator_rejected",
+      "passed": true
+    },
+    {
+      "name": "prepared_second_order_coefficient_excludes_zero",
+      "passed": true
+    },
+    {
+      "name": "pinned_bytes_sidecars_and_timestamps_preserved",
+      "passed": true
+    }
+  ],
+  "second_order_projection": "b*Z*kappa*aphi*D^2(xi)-(p/mu)*d*D^2(zeta)",
+  "minus_p_d_over_mu": [
+    {
+      "cell": [
+        "0.29",
+        "0.31"
+      ],
+      "interval_binary": [
+        [
+          1,
+          68020999655928990155583977693640585582881259008571,
+          -169,
+          166
+        ],
+        [
+          1,
+          544164358860069537322616293459905054328255831624155,
+          -172,
+          169
+        ]
+      ],
+      "interval_display": [
+        "-0.0909020637127801935840929",
+        "-0.0909014559281962045108545"
+      ],
+      "excludes_zero": true
+    },
+    {
+      "cell": [
+        "1.09",
+        "1.11"
+      ],
+      "interval_binary": [
+        [
+          1,
+          136029178812506780200790733906464268672406405109685,
+          -170,
+          167
+        ],
+        [
+          1,
+          544113931502535875242574429263348016244373209615545,
+          -172,
+          169
+        ]
+      ],
+      "interval_display": [
+        "-0.0908934971682222816977465",
+        "-0.0908930321493437561466412"
+      ],
+      "excludes_zero": true
+    },
+    {
+      "cell": [
+        "2.39",
+        "2.41"
+      ],
+      "interval_binary": [
+        [
+          1,
+          17009669355207815123322833385466319556802752923859,
+          -167,
+          164
+        ],
+        [
+          1,
+          544304762882490391854017855431846379996119806566911,
+          -172,
+          169
+        ]
+      ],
+      "interval_display": [
+        "-0.0909256879658722408693237",
+        "-0.0909249101104637953483008"
+      ],
+      "excludes_zero": true
+    }
+  ],
+  "scope": "INITIAL_OBSERVABLE_RATE_ON_COMPATIBLE_DATA",
+  "moving_range_and_charge_transport": "OPEN",
+  "review_status": "DEFERRED",
+  "physics_pass": false,
+  "gate_effect": "NONE"
+}
