@@ -1,0 +1,90 @@
+{
+  "kind": "RTAU_MOVING_MOMENTUM_RATE_V1",
+  "source_sha256": "a1004777e78d86c7ca91be6b2a01ba645dfe84d662ee8508dd40ac1afefe8abd",
+  "contract_sha256": "41fbc1bd2efec3ff99b61f0a8d426129f64dff099aa1aab9ea098acd4825c002",
+  "manifest_sha256": "15e674d992cbb56fc13d164d437105e39c97b3160fdb291b8fe6d12e87379698",
+  "pinned_sources": 386,
+  "checks": [
+    {
+      "name": "differentiated_reconstruction",
+      "passed": true
+    },
+    {
+      "name": "actual_mean_rate_restored",
+      "passed": true
+    },
+    {
+      "name": "omitting_moving_normalization_rejected",
+      "passed": true
+    },
+    {
+      "name": "omitting_prescribed_mean_rate_rejected",
+      "passed": true
+    },
+    {
+      "name": "primitive_removes_exactly_one_force_derivative",
+      "passed": true
+    },
+    {
+      "name": "first_order_term_survives",
+      "passed": true
+    },
+    {
+      "name": "zero_mode_identity",
+      "passed": true
+    },
+    {
+      "name": "weighted_mean_term_can_be_nonzero",
+      "passed": true
+    },
+    {
+      "name": "prepared_longitudinal_force_coefficient_nonzero_on_a_cell",
+      "passed": true
+    },
+    {
+      "name": "pinned_bytes_sidecars_and_timestamps_preserved",
+      "passed": true
+    }
+  ],
+  "longitudinal_force_rate_term": "u_L * psi_z * d * D_z(zeta)",
+  "coefficient_cells": [
+    {
+      "cell": [
+        "0.29",
+        "0.31"
+      ],
+      "coefficient": [
+        "-0.00001090927658805293174791469727",
+        "-0.00001027552829083418806755002046"
+      ],
+      "excludes_zero": true
+    },
+    {
+      "cell": [
+        "1.09",
+        "1.11"
+      ],
+      "coefficient": [
+        "-0.00001904402542797643836461615222",
+        "-0.00001862761180702131398808688859"
+      ],
+      "excludes_zero": true
+    },
+    {
+      "cell": [
+        "2.39",
+        "2.41"
+      ],
+      "coefficient": [
+        "0.000009227387736674818612129355712",
+        "0.000009394365618770995186774854228"
+      ],
+      "excludes_zero": true
+    }
+  ],
+  "compatible_domain_scope": "PREPARED_INITIAL_SLICE",
+  "full_reconstruction_rate": "TRACE_CHARGE_GAUGE_RATE_OPEN",
+  "review_status": "DEFERRED",
+  "physics_pass": false,
+  "gate_effect": "NONE"
+}
