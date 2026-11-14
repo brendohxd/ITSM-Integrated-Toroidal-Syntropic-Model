@@ -1,5 +1,56 @@
 # ITSM Changelog & Archive History
 
+## Initial coupled energy checkpoint — 14 November 2026
+
+The [standing routes](RESEARCH_ROUTES.md) and
+[owning report](Theory/Gates/RES-001/RES001_RTAU_INITIAL_FORCED_ENERGY_V1_REPORT_2026-11-14.md)
+record the complete supported initial twenty-row comparison and mixed energy
+assembly, retaining fifteen global partners and three harmonic coordinate
+controls. The conditional bound is E_prime(0)<=4.488985e20 E(0)+1.658735e12 |H3(0)|^2.
+These conservative initial constants are not measured growth rates or a
+finite-time stability/accuracy certificate. The assembly verified 439 source
+pins, nineteen controls and seventeen separate same-assistant audit controls;
+both receipts replayed exactly. These are computational checks, not peer review.
+
+Preserve the observable sign correction and failed implementation versions.
+Next: A09.2 harmonic-control continuation, compatible-domain/coefficient
+persistence and extension of the initial Ward/energy chart under actual
+background evolution. The interval [0,0.05] remains a target. R-tau is
+UNADOPTED; G1–G6 INCOMPLETE; MAT-001 BLOCKED; K_Q NOT_DERIVED;
+V NOT_COMPUTED; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+P1 is now rc8 and P2 rc5 after removal of the operator-specified author-review
+boilerplate; prior versions and AI-use disclosures are preserved. R4C1 remains
+0.1.2-conditional-draft and Thermodynamics 0.7.1-conditional-draft.
+
+
+## Initial trace drift and research handoff — 13 November 2026
+
+- Consolidate the [standing research routes](RESEARCH_ROUTES.md), including
+  older unfinished work and the Campbell-inspired research questions.
+  The tracker records priorities, scope, dependencies and completion evidence.
+- Extend A09.1 with the differentiated initial trace identity, range/charge
+  tangency, dynamical means and physical-density force terms. The
+  [trace assembly](Theory/Gates/RES-001/RES001_RTAU_DIFFERENTIATED_TRACE_ASSEMBLY_V1_REPORT_2026-11-09.md)
+  preserves the exact-compatible-jet and finite-centre distinction.
+- Bound the [material-velocity and nonlocal momentum-block drift](Theory/Gates/RES-001/RES001_RTAU_NONLOCAL_TRACE_DRIFT_V1_REPORT_2026-11-13.md)
+  and [moving local trace row](Theory/Gates/RES-001/RES001_RTAU_LOCAL_TRACE_DRIFT_V3_REPORT_2026-11-13.md).
+  The initial weak composition is finite and conservative. Preserve V1's
+  interval failure and V2's held third-shift omission; V3 restores the
+  certified input and replays exactly. Full coupled evolution remains open.
+- Freeze [408 inputs for the remaining source composition](Theory/Gates/RES-001/RES001_RTAU_FREE_SOURCE_COMPOSITION_V1_PREPARATION_2026-11-13.md).
+  This is preparation; all-free-slot coefficient and source bounds remain
+  required before the initial coupled comparison can be completed.
+- Record the [18-chain SPARC diagnostic](Theory/Gates/STAT-001/SPARC_18_CHAIN_DIAGNOSTIC_V1_REPORT_2026-11-09.md).
+  The 157/175 convergence total remains conditional on the empirical
+  comparator; no action-derived galaxy prediction is added.
+- Record the scoped signed delivery `5b3352d8939c1d011f677bb1e6f8df77703c208b`
+  and verified Pages deployment of the 9 November progress update. Wider
+  local research files and these later documentation updates await delivery.
+- Retain R-tau UNADOPTED, G1–G6 INCOMPLETE, MAT-001 BLOCKED,
+  K_Q NOT_DERIVED, V NOT_COMPUTED and Rule-9 DEFERRED. Research goal active;
+  pending reasoning-setting confirmation applies to the next derivation.
+
 ## Public site progress refresh - 4 November 2026
 
 - Refresh Home, Progress, Evidence and Reproduce for the new initial coupled

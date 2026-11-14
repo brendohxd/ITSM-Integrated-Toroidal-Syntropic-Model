@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Assets/Figures/ITSM_Banner.png" alt="ITSM Banner" width="100%">
+
 </div>
 
 # 🌌 Integrated Toroidal-Syntropic Model (ITSM)
@@ -8,6 +8,34 @@
 
 🌍 **Website:** [itsm-cosmology.com](https://itsm-cosmology.com) |
 📧 **Contact:** [brendon.boyd@itsm-cosmology.org](mailto:brendon.boyd@itsm-cosmology.org)
+
+**Resume research:** [ITSM research routes](RESEARCH_ROUTES.md) tracks planned,
+unfinished and completed work, with route IDs and a current handoff.
+
+## Initial coupled energy checkpoint — 14 November 2026
+
+The [standing routes](RESEARCH_ROUTES.md) and
+[owning report](Theory/Gates/RES-001/RES001_RTAU_INITIAL_FORCED_ENERGY_V1_REPORT_2026-11-14.md)
+record the complete supported initial twenty-row comparison and mixed energy
+assembly, retaining fifteen global partners and three harmonic coordinate
+controls. The conditional bound is E_prime(0)<=4.488985e20 E(0)+1.658735e12 |H3(0)|^2.
+These conservative initial constants are not measured growth rates or a
+finite-time stability/accuracy certificate. The assembly verified 439 source
+pins, nineteen controls and seventeen separate same-assistant audit controls;
+both receipts replayed exactly. These are computational checks, not peer review.
+
+Preserve the observable sign correction and failed implementation versions.
+Next: A09.2 harmonic-control continuation, compatible-domain/coefficient
+persistence and extension of the initial Ward/energy chart under actual
+background evolution. The interval [0,0.05] remains a target. R-tau is
+UNADOPTED; G1–G6 INCOMPLETE; MAT-001 BLOCKED; K_Q NOT_DERIVED;
+V NOT_COMPUTED; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+P1 is now rc8 and P2 rc5 after removal of the operator-specified author-review
+boilerplate; prior versions and AI-use disclosures are preserved. R4C1 remains
+0.1.2-conditional-draft and Thermodynamics 0.7.1-conditional-draft.
+
+  <img src="Assets/Figures/ITSM_Banner.png" alt="ITSM Banner" width="100%">
 
 ## 📖 The proposed physical universe
 
@@ -85,7 +113,35 @@ orders the research, and the [Master Research Plan](Theory/Core/ITSM_Master_Rese
 defines the authority and claim boundaries. Script check counts and hash
 matches establish only their stated calculation or artifact scope.
 
-## 🧪 Current research checkpoint — 4 November 2026
+## Current research checkpoint — 13 November 2026
+
+The [research routes](RESEARCH_ROUTES.md) collect the current priorities,
+older unfinished pathways and their owning evidence. The next A09.1 task
+is the differentiated free-source and physical-map composition, with
+[408 verified preparation inputs](Theory/Gates/RES-001/RES001_RTAU_FREE_SOURCE_COMPOSITION_V1_PREPARATION_2026-11-13.md).
+
+- **Initial constraints have stronger control.** The differentiated
+  compensated trace equation agrees with the direct metric rate on exact
+  compatible initial jets. Material-velocity, normalized momentum-lift and
+  local-current drifts now compose in an initial weak operator estimate.
+  The [13 November result](Theory/Gates/RES-001/RES001_RTAU_LOCAL_TRACE_DRIFT_V3_REPORT_2026-11-13.md)
+  retains the moving trace shape, lapse flux, measure and certified shift
+  jets. Its conservative bound leaves useful evolution accuracy unresolved.
+- **Corrections are preserved.** The rho/Sigma reconstruction repair and
+  later interval and omitted-jet failures have separate owning records.
+  Held attempts remain distinct from the verified replacement versions.
+- **SPARC convergence work remains conditional.** The
+  [saved-chain audit](Theory/Gates/STAT-001/SPARC_18_CHAIN_DIAGNOSTIC_V1_REPORT_2026-11-09.md)
+  diagnoses the 18 unresolved cases. The existing 157/175 diagnostic total
+  still applies to the empirical comparator.
+
+R-tau remains an unadopted comparison action. A09.1, the coupled energy and
+evolving domain remain incomplete. MAT-001 is BLOCKED, K_Q NOT_DERIVED and
+V NOT_COMPUTED. Independent Rule-9 review remains DEFERRED. The research
+continuation has High confirmed on 13 November; the route handoff records
+the remaining source-composition work.
+
+### Preserved 4 November research checkpoint
 
 The [4 November evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-04.md)
 records the research and SPARC work since the last delivered recovery

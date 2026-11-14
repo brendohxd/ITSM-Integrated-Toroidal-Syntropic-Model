@@ -1,0 +1,284 @@
+{
+  "K_Q": "NOT_DERIVED",
+  "MAT001": "BLOCKED",
+  "UVIR003": "IN_PROGRESS",
+  "analytic_domain": "sigma>0, real Y>-sigma^2; Taylor about 0 converges for |Y|<sigma^2; physical Y>=0",
+  "branches": [
+    {
+      "constitutive_mu": "sqrt(Y + sigma**2)",
+      "direct_ADM_L2_L3_L4": [
+        "-3*B*a*grad_pi_squared*sigma/(2*a_ref**2)",
+        "-3*B*a*grad_pi_squared*sigma*(R + n)/(2*a_ref**2)",
+        "-3*B*grad_pi_squared*(2*R**2*a**2*a_ref**2*sigma**2 + 4*R*a**2*a_ref**2*n*sigma**2 + grad_pi_squared)/(8*a*a_ref**4*sigma)"
+      ],
+      "dispersion": "k**2*(3*B*sigma + a_ref**2*k**2*r_reg)/(K*a_ref**2)",
+      "function": "-sigma**3 + (Y + sigma**2)**(3/2)",
+      "homogeneous_force_pairs": 1,
+      "name": "B1",
+      "series": "-Y**3/(16*sigma**3) + 3*Y**2/(8*sigma) + 3*Y*sigma/2"
+    },
+    {
+      "constitutive_mu": "-sigma + sqrt(Y + sigma**2)",
+      "direct_ADM_L2_L3_L4": [
+        "0",
+        "0",
+        "-3*B*grad_pi_squared**2/(8*a*a_ref**4*sigma)"
+      ],
+      "dispersion": "k**4*r_reg/K",
+      "function": "-3*Y*sigma/2 - sigma**3 + (Y + sigma**2)**(3/2)",
+      "homogeneous_force_pairs": 1,
+      "name": "B2",
+      "series": "-Y**3/(16*sigma**3) + 3*Y**2/(8*sigma)"
+    }
+  ],
+  "canonical_contact": {
+    "B2_status": "FINITE_FORCE_ONLY_CONTACT_KERNEL_FOR_SIGMA_POSITIVE_AND_K_POSITIVE",
+    "COM_amputated_M": "-3*B*k**4*(2*cos_theta**2 + 1)/(K**2*a_ref**4*sigma)",
+    "chi": "sqrt(K)*pi",
+    "coefficient_g4": "3*B/(8*K**2*a_ref**4*sigma)",
+    "convention": "iM_contact=-i*8*g4*sum_of_three_spatial_pairings; all four spatial momenta incoming",
+    "exclusions": "Not full exchange+contact, coupled cosmological amplitude, compact-space asymptotic S-matrix, optical theorem or physical cutoff",
+    "external_dispersion": "omega_k^2=r_reg*k^4/K for B2; k=0 is a separate shift collective coordinate"
+  },
+  "checks": [
+    {
+      "evidence": null,
+      "name": "existing_series_reproduced_as_input_control",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "fourth_derivative_for_positive_remainder_bound",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "third_derivative_for_quartic_truncation_error",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "sigma_positive_essential_for_finite_fourth_gradient_vertex",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "pointwise_zero_sigma_limit_does_not_fix_vertex_limit",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "normalized_to_raw_gradient_chart_identity",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "action_and_canonical_contact_mass_dimensions",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "exact_static_constitutive_currents",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B1_linear_IR_constitutive_limit",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B2_cubic_flux_IR_constitutive_limit",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "neither_completion_preserves_exact_square_root_asymptote",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B1_independent_gradient_Hessian",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B2_independent_gradient_Hessian",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B2_positive_parallel_multiplier_identity",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B1_direct_ADM_quadratic_cubic_quartic",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B2_direct_ADM_quadratic_cubic_quartic",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B1_changed_quadratic_lapse_source",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B2_new_spatial_operator_has_no_quadratic_constraint_source",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B1_one_force_pair_and_nonnegative_quadratic_Hamiltonian",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B2_one_force_pair_and_nonnegative_quadratic_Hamiltonian",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B2_nonzero_modes_need_existing_positive_regulator",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "four_leg_vertex_sign_and_combinatorics",
+      "passed": true
+    },
+    {
+      "evidence": [
+        {
+          "contact_over_coupling": -456,
+          "paired": -456
+        },
+        {
+          "contact_over_coupling": -8,
+          "paired": -8
+        },
+        {
+          "contact_over_coupling": -24,
+          "paired": -24
+        }
+      ],
+      "name": "independent_subset_polarization_on_elastic_integer_momenta",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "finite_sigma_contact_at_right_angle_nonzero",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "no_pure_force_cubic_vertex_at_homogeneous_origin",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B2_periodic_fundamental_nonlinear_static_response",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "B2_small_amplitude_finite_wavelength_regulator_dominates",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "torus_mean_source_constraint_retained",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "complete_smoothing_function_field_rescaling",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "dispersion_and_canonical_contact_field_rescaling_invariants",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "matter_gradient_crossover_rescaling_invariant",
+      "passed": true
+    },
+    {
+      "evidence": [
+        0.9995002914792955,
+        0.9527411911260547,
+        0.8054149716538529,
+        0.9995002914792955,
+        0.9527411911260547,
+        0.8054149716538529,
+        0.9995002914792955,
+        0.9527411911260547,
+        0.8054149716538529
+      ],
+      "name": "independent_numeric_Taylor_remainder_enclosure",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "input_bytes_sidecars_and_timestamps_preserved",
+      "passed": true
+    }
+  ],
+  "definitions": {
+    "B": "mass^4; A_raw=B/a_ref^3; no microscopic matching",
+    "Q": "U.d psi (unnormalized)",
+    "Y": "I/a_ref^2; I=|D psi|^2",
+    "r_reg": "gamma/M_*^2, existing spatial regulator",
+    "sigma": "CONTROL_SCALE_NOT_DERIVED; dimensionless; raw scale sigma*a_ref"
+  },
+  "dimensions": {
+    "B": 4,
+    "C_m": 0,
+    "K": 2,
+    "Y": 0,
+    "a_ref": 1,
+    "chi": 1,
+    "delta_rho": 4,
+    "derivative": 1,
+    "psi": 0,
+    "r_reg": 0,
+    "sigma": 0
+  },
+  "full_U3": "OPEN_NO_UV_ORIGIN_MATCHING_OR_ACTION_ADOPTION",
+  "gate_effect": "NONE",
+  "kind": "UVIR003_U3_ANALYTIC_CONTROLS_V1",
+  "live_TrackA_V": "NOT_COMPUTED",
+  "local_DOF_scope": "No fields or higher time derivatives added; one factorized homogeneous force scalar; other host block and nonlinear global rank not certified",
+  "passed": 33,
+  "physics_pass": false,
+  "remainder": "0< R_after_Y3 <= 3Y^4/(128sigma^5); lower bound 3Y^4/[128(sigma^2+Y)^(5/2)] for Y>0",
+  "review": "DEFERRED",
+  "screen": "COMPLETE_SCOPED_B1_B2_ANALYTIC_CONTROLS",
+  "source_sha256": {
+    "Analysis/UVIR/UVIR-003/U3_ANALYTIC_CONTROLS/u3_analytic_controls_v1.py": "d54a273102248b1bdc4a87cb75910bcf145d7b943ca54e86c5d6a541e75c9e22",
+    "Analysis/UVIR/UVIR-003/outputs/uvir003_force_completion_options_summary.json": "774311f8a00d463ee4056c82d62619b6aad533791f4bfad43861ebb4093685d8",
+    "Analysis/UVIR/UVIR-003/uvir003_force_completion_options.py": "5e9b49edbdfdc860664fe6e99b101c604cfa803a49801476262925471b3fff0c",
+    "Analysis/UVIR/UVIR-003/uvir003_zero_gradient_force_block.py": "1216bb42c816589eb26a652385483423a2969ae2391e6bed0d68557bdc321f0f",
+    "GEMINI.md": "5b23de4b87b910da85beba6aab0e71abcd23dab20586ef5c2957e8dea7c6fb12",
+    "Theory/Core/ITSM_CHEAP_SCREEN_ROUTE_ACTIVATION_2026-09-04.md": "df532fcf8353cdc5159798fdf250561d0ba4fa556abb0d83c3484e7d3ca7e123",
+    "Theory/Core/ITSM_CORE_IDENTITY_BRIEFING.md": "d6195c4e4472c5473e43246e583dbb3f648bdf5a47740d44845fb9cc854250fa",
+    "Theory/Core/ITSM_Core_Architecture.md": "332489b09476a4403e8bbebe81b3ff329a114005daa1cf39e8b4738f95b9ac8a",
+    "Theory/Core/ITSM_RULE9_DEFERRED_REVIEW_POLICY.md": "3d8b1372b9fd340eec91bc209d200f5408353fcef86b54b212bb474463abd809",
+    "Theory/Core/ITSM_Tier1_Route_Test_Programme.md": "fdcbf59ba332f0f52a62827dce171cef2af30b2e54cf2645989f0fe8f45586dc",
+    "Theory/Core/ITSM_UNFINISHED_WORK_COMPLETION_PROTOCOL_2026-11-05.md": "067417faefe9a220ef296c5633f8c70370045efa6220a1d77faa00172a8bd829",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FORCE_COMPLETION_OPTIONS.md": "d71848c053fbcae635e7071222e06419df839a0a169c87c58e84195c0f73b2fd",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_FORCE_STRONG_COUPLING.md": "79b43b766ab0f2469e44e3c1f381cdf608169e73dec8e4afa20d6bf164278ff7",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_TRACK_A_FORCE_ADM_CUBIC.md": "c2a5c82f285dc04adcfffed4ba5c562661ddca98c4d045802ffb6e88bfeefd68",
+    "Theory/Gates/UVIR-003/UVIR-003_STAGE_B_ZERO_GRADIENT_FORCE_BLOCK.md": "493f19859af66d83f61b97e4e4fe2bb6505b2b92c89b269aac74e12a0c1554f8",
+    "Theory/Gates/UVIR-003/UVIR003_U3_ANALYTIC_CONTROLS_V1_INPUTS_2026-11-05.json": "b3f5ee20b5ea748c9572d398f847c01b8b570c7cf7dbe4a159c66e1f157c52b5",
+    "Theory/Gates/UVIR-003/UVIR003_U3_ANALYTIC_CONTROLS_V1_SPEC_2026-11-05.md": "9f7c9c554a505388d00f77f5d9cbf40d805eb44fb8b3de101cb44350729f65e8"
+  },
+  "static_equation": "div[(2B/a_ref^2)F_i_prime(Y)D psi]-r_reg*Delta^2 psi=C_m*delta_rho in fixed flat frame; torus integral C_m*delta_rho=0",
+  "total": 33
+}
