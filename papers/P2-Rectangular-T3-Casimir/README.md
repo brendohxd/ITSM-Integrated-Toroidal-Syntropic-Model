@@ -1,8 +1,8 @@
 # P2 — Anisotropic Casimir on rectangular $T^3$ (instantaneous-closure control)
 
 **Directory:** `papers/P2-Rectangular-T3-Casimir/`  
-**VERSION:** see `VERSION` (currently `0.2.0-rc4`)
-**Current PDF candidate:** `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.2.0-rc4.pdf`
+**VERSION:** see `VERSION` (currently `0.2.0-rc5`)
+**Current PDF candidate:** `Boyd_2026_Anisotropic_Casimir_Rectangular_T3_Instantaneous-Closure-Control_v0.2.0-rc5.pdf`
 (written directly by the build script with a matching `.sha256` sidecar; see
 `papers/PAPERS_NAMING.md`)
 
