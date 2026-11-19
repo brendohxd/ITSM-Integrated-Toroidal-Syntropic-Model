@@ -68,10 +68,10 @@ def cell_group():
 def svg(width,height,body,title,desc):
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img"><title>{title}</title><desc>{desc}</desc>{body}</svg>'
 
-def png(body,width):
+def png(body,width,*,transparent=False):
     doc=fitz.open(stream=body.encode('utf-8'),filetype='svg')
     page=doc[0]
-    return page.get_pixmap(matrix=fitz.Matrix(width/page.rect.width,width/page.rect.width),alpha=False).tobytes('png')
+    return page.get_pixmap(matrix=fitz.Matrix(width/page.rect.width,width/page.rect.width),alpha=transparent).tobytes('png')
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
@@ -93,11 +93,11 @@ def main():
     markbody='<rect width="128" height="128" rx="26" fill="#0a141c"/><g stroke-linejoin="round" fill="none" stroke-width="3.3"><path d="M 64 23 104 44 64 66 24 44 Z" stroke="#b7a0eb"/><path d="M 24 44 V 86 L 64 108 104 86 V 44 M 64 66 V 108" stroke="#94acb6"/><path d="M 64 66 104 44 V 86 L 64 108" stroke="#72d7cd"/><path d="M 24 44 64 66 V 108 L 24 86 Z" stroke="#e6ba7b"/></g><path d="M 64 23 V 65 L 24 86 M 64 65 104 86" fill="none" stroke="#7e99a6" stroke-width="1.2" stroke-dasharray="3 4"/>'
     mark=svg(128,128,markbody,'ITSM periodic-cell mark','A stylized coordinate cell with three colored spatial identifications; not an embedded torus surface.')
     save(DOCS/'favicon.svg',mark.encode());save(OUT/'itsm-periodic-mark_v1.svg',mark.encode())
-    image=Image.open(BytesIO(png(mark,512))).convert('RGB')
+    image=Image.open(BytesIO(png(mark,512,transparent=True))).convert('RGBA')
     for size,name in [(16,'favicon-16x16.png'),(32,'favicon-32x32.png'),(180,'apple-touch-icon.png'),(192,'android-chrome-192x192.png'),(512,'android-chrome-512x512.png')]:
         data=BytesIO();image.resize((size,size),Image.Resampling.LANCZOS).save(data,format='PNG');save(DOCS/name,data.getvalue())
     for size in (192,512):
-        canvas=Image.new('RGB',(size,size),'#0a141c');inner=image.resize((round(size*.78),round(size*.78)),Image.Resampling.LANCZOS);canvas.paste(inner,((size-inner.width)//2,(size-inner.height)//2));data=BytesIO();canvas.save(data,format='PNG');save(DOCS/f'android-chrome-maskable-{size}x{size}.png',data.getvalue())
+        canvas=Image.new('RGB',(size,size),'#0a141c');inner=image.resize((round(size*.78),round(size*.78)),Image.Resampling.LANCZOS);canvas.paste(inner,((size-inner.width)//2,(size-inner.height)//2),inner);data=BytesIO();canvas.save(data,format='PNG');save(DOCS/f'android-chrome-maskable-{size}x{size}.png',data.getvalue())
     ico=BytesIO();image.save(ico,format='ICO',sizes=[(16,16),(32,32),(48,48)]);save(DOCS/'favicon.ico',ico.getvalue())
     share='<rect width="1200" height="630" fill="#0a141c"/><path d="M 64 88 H 1136 M 64 557 H 1136" stroke="#29424e"/><text x="64" y="64" fill="#72d7cd" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">ITSM / COSMOLOGY RESEARCH</text><text x="64" y="225" fill="#f2f0e6" font-family="Georgia,serif" font-size="58">An active vacuum.</text><text x="64" y="295" fill="#e6ba7b" font-family="Georgia,serif" font-size="58">A connected universe.</text><text x="64" y="367" fill="#becdd3" font-family="Arial,sans-serif" font-size="20">Finite-density vacuum. Three periodic directions.</text><text x="64" y="404" fill="#becdd3" font-family="Arial,sans-serif" font-size="20">A programme of physical tests.</text><text x="64" y="526" fill="#93a9b6" font-family="Arial,sans-serif" font-size="15">Integrated Toroidal-Syntropic Model / Brendon Boyd</text><text x="64" y="594" fill="#93a9b6" font-family="Arial,sans-serif" font-size="14">itsm-cosmology.com  |  Research proposal; physical viability remains under investigation.</text><g transform="translate(585 20) scale(.93)">'+cell_group()+'</g>'
     share=svg(1200,630,share,'ITSM research identity','A schematic three-dimensional periodic cell accompanies the ITSM research proposal. It is not a donut-shaped universe or a physical simulation.')

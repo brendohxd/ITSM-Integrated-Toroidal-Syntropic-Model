@@ -218,7 +218,7 @@ def check():
         target = DOCS / unquote(urlsplit(asset).path)
         if not target.exists():
             failures.append({"page": "sw.js", "error": "Missing precache asset: " + asset})
-    if "itsm-pwa-v16-20261119" not in sw:
+    if "itsm-pwa-v17-20261119" not in sw:
         failures.append({"page": "sw.js", "error": "Stale service-worker cache"})
     print(json.dumps({"validation": "FAIL_WEBSITE_SOURCE" if failures else "PASS_WEBSITE_SOURCE_ONLY",
                       "pages_checked": len(pages), "references_checked": references,
