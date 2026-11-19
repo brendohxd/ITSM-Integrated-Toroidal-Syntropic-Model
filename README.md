@@ -12,6 +12,16 @@
 **Resume research:** [ITSM research routes](RESEARCH_ROUTES.md) tracks planned,
 unfinished and completed work, with route IDs and a current handoff.
 
+## Public website progress refresh — 19 November 2026
+
+The public homepage, progress and evidence pages now describe the completed
+conditional condensate state/history calculation and the separate R-tau
+continuation prerequisites. The complete nonlinear constrained evolution,
+physical window and identifying matching remain open. Paper cards point to
+retained P1 rc8 and P2 rc5; service-worker caching is refreshed. Source,
+version, checksum and deployment checks remain distinct from scientific
+validation.
+
 ## Physical-domain continuation checkpoint — 19 November 2026
 
 The R-tau comparison route now has general-planar gauge/current calculations

@@ -309,3 +309,6 @@ navigation and task status. Scientific authority stays with the owning files.
 
 
 | 2026-11-19 | A09.2 | Derived raw general-planar quartic differentiated energy weight and full periodic H1 commutators, including means; sharpened coupled r-energy coefficients to L2 second derivatives and retained condensate gradients. Exact curvature flux uses log det H, not log det G at mixed moduli. Main 23/23, extended audit 28/28, exact replays; 492/497 pins. Final nonconformal ordinary/cross operator and full H1 remainder/domain remain OPEN. [Owner](Theory/Gates/RES-001/RES001_RTAU_COUPLED_REGULARITY_V2_REPORT_2026-11-19.md). |
+
+
+| 2026-11-19 | A15 · Site delivery | Operator authorized the public progress refresh after the signed research checkpoint. Homepage, progress, evidence and paper links updated for the bounded state/history and separate R-tau results; independent matching and full physical evolution remain open. Current P1 rc8/P2 rc5 links and offline cache refreshed. Source/deployment verification is not scientific clearance. |

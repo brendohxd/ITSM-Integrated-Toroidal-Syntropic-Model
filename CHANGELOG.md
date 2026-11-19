@@ -1,6 +1,25 @@
 # ITSM Changelog & Archive History
 
 
+## Public website progress refresh — 19 November 2026
+
+The public homepage, progress and evidence pages now describe the completed
+conditional condensate state/history calculation and the separate R-tau
+continuation prerequisites. The complete nonlinear constrained evolution,
+physical window and identifying matching remain open. Paper cards point to
+retained P1 rc8 and P2 rc5; service-worker caching is refreshed. Source,
+version, checksum and deployment checks remain distinct from scientific
+validation.
+
+- Add readable state/history and continuation summaries, update the selected
+  research ledger and link frozen evidence snapshots.
+- Preserve the raw-self versus final constrained-operator distinction and
+  existing substantive scientific holds.
+- Refresh the current P1/P2 PDF links, checksums and offline cache version.
+- Keep manuscript/figure/vault-backup edits outside this website delivery.
+
+
+
 ## R-tau general-planar and nonlinear continuation — 19 November 2026
 
 Checkpoint after signed recovery commit `82e4745db77909fb982db7a060488ef3fff6b642`.
