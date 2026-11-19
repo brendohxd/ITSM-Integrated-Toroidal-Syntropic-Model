@@ -3,33 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reproduce & inspect — ITSM</title>
+  <title>Resources & reproducibility — ITSM</title>
   <meta name="description" content="Inspect the ITSM recovery branch and verify immutable research checkpoint hashes or replay retained dust evidence without overwriting original results." />
   <link rel="canonical" href="https://itsm-cosmology.com/reproduce.html" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20261119a" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png?v=20261119a" />
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png?v=20261119a" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=20261119a" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20261119a" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20261119a" />
   <link rel="manifest" href="manifest.json" />
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="shortcut icon" href="favicon.ico" />
-  <meta name="theme-color" content="#0c1427" />
+  <link rel="shortcut icon" href="favicon.ico?v=20261119a" />
+  <meta name="theme-color" content="#09121a" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="ITSM Cosmology" />
   <link rel="stylesheet" href="styles.css?v=20261014a" />
+  <link rel="stylesheet" href="atlas.css?v=20261119a" />
 </head>
-<body class="concept-site">
+<body class="concept-site atlas-site">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="sky" aria-hidden="true"></div>
-  <nav class="nav" aria-label="Main navigation"><div class="wrap nav-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a><ul class="nav-links"><li><a href="vision.html">Vision</a></li><li><a href="architecture.html">The model</a></li><li><a href="research.html">Progress</a></li><li><a href="papers.html">Papers</a></li><li><a href="claims.html">Evidence</a></li></ul></div></nav>
+  <nav class="nav" aria-label="Main navigation"><div class="wrap nav-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a><ul class="nav-links"><li><a href="vision.html">Vision</a></li><li><a href="architecture.html">The model</a></li><li><a href="research.html">Progress</a></li><li><a href="papers.html">Papers</a></li><li><a href="claims.html">Evidence</a></li><li><a href="reproduce.html" aria-current="page">Resources</a></li></ul></div></nav>
 
-  <header class="page-hero"><div class="wrap"><p class="breadcrumb"><a href="index.html">Home</a> / Reproduce</p><h1>Open evidence.<br /><em>Reproducible scope.</em></h1><p class="lede">Follow a result back to its source, inspect the recorded failures, and check the retained evidence without replacing the original files.</p></div></header>
+  <header class="page-hero"><div class="wrap"><p class="breadcrumb"><a href="index.html">Home</a> / Resources</p><h1>Read. Visualize.<br /><em>Verify.</em></h1><p class="lede">Explore the geometry, download the diagrams, and follow a research result back to its source. A closer look at the proposal and the work behind it.</p></div></header>
 
   <main class="wrap" id="main">
+    <section class="section" id="visual-resources" aria-labelledby="visual-resources-title">
+      <div class="section-head"><h2 id="visual-resources-title">A visual language for T³</h2><p>Original diagrams of periodic spatial identifications.</p></div>
+      <div class="resource-grid">
+        <article class="resource-card"><img src="assets/atlas/t3-periodic-cell_v1.svg" width="680" height="600" alt="A three-torus fundamental-cell schematic with three coloured periodic directions." loading="lazy" /><div><p class="section-kicker">01 / Periodic space</p><h3>The three-torus cell</h3><p>Three independent face identifications, with faint adjacent coordinate copies. The cell’s shape and scale are illustrative.</p><p class="resource-actions"><a href="assets/atlas/t3-periodic-cell_v1.svg" download>Download SVG</a><a href="assets/atlas/t3-periodic-cell_v1.png" download>Download PNG</a><a href="architecture.html#topology">Interactive guide</a></p></div></article>
+        <article class="resource-card"><img src="assets/atlas/t3-face-pairs_v1.svg" width="800" height="528" alt="Three rows showing the x, y and z face identifications while the other two coordinates stay fixed." loading="lazy" /><div><p class="section-kicker">02 / The identifications</p><h3>What connects to what?</h3><p>A coordinate guide to each pair of opposite faces. No external centre, rim or hole is part of this spatial description.</p><p class="resource-actions"><a href="assets/atlas/t3-face-pairs_v1.svg" download>Download SVG</a><a href="assets/atlas/t3-face-pairs_v1.png" download>Download PNG</a></p></div></article>
+      </div>
+      <p class="resource-intro">Diagrams: Brendon Boyd / ITSM, 2026 · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Reuse with attribution and keep the scope captions. These are topology illustrations, not simulated fields or evidence for the proposed model.</p>
+    </section>
     <section class="section prose">
       <h2>1. Get the research branch</h2>
       <pre><code>git clone --branch recovery/v12-core-architecture https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model.git
@@ -50,7 +59,7 @@ cd ITSM-Integrated-Toroidal-Syntropic-Model</code></pre>
     <section class="section reader-paths"><div><h2>Looking for the broader source?</h2><p>Source code, contracts and owning reports live on the recovery branch. Private vault databases and raw conversation archives are not part of the website.</p></div><div class="hero-actions"><a class="btn btn-primary" href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture">Browse the repository</a><a class="btn btn-ghost" href="claims.html">Technical status</a></div></section>
   </main>
 
-  <footer class="footer"><div class="wrap footer-inner"><p>© 2026 Brendon Boyd · ITSM Cosmology</p><div class="footer-links"><a href="reproduce.html">Reproduce</a><a href="claims.html">Technical status</a><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture">GitHub</a><a href="https://orcid.org/0009-0007-4177-2612">ORCID</a><a href="mailto:brendon.boyd@itsm-cosmology.org">Contact</a></div></div></footer>
+  <footer class="footer"><div class="wrap footer-inner"><p>© 2026 Brendon Boyd · ITSM Cosmology</p><div class="footer-links"><a href="reproduce.html">Resources</a><a href="claims.html">Technical status</a><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture">GitHub</a><a href="https://orcid.org/0009-0007-4177-2612">ORCID</a><a href="mailto:brendon.boyd@itsm-cosmology.org">Contact</a></div></div></footer>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {

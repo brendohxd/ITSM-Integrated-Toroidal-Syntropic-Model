@@ -6,30 +6,63 @@
   <title>The model — ITSM</title>
   <meta name="description" content="A plain-language guide to the ITSM plenum, three-torus topology, matter coupling and reservoir, with technical detail available separately." />
   <link rel="canonical" href="https://itsm-cosmology.com/architecture.html" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20261119a" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png?v=20261119a" />
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png?v=20261119a" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=20261119a" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20261119a" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20261119a" />
   <link rel="manifest" href="manifest.json" />
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="shortcut icon" href="favicon.ico" />
-  <meta name="theme-color" content="#0c1427" />
+  <link rel="shortcut icon" href="favicon.ico?v=20261119a" />
+  <meta name="theme-color" content="#09121a" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="ITSM Cosmology" />
   <link rel="stylesheet" href="styles.css?v=20261014a" />
+  <link rel="stylesheet" href="atlas.css?v=20261119a" />
+  <script src="topology.js?v=20261119a" defer></script>
 </head>
-<body class="concept-site">
+<body class="concept-site atlas-site">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="sky" aria-hidden="true"></div>
-  <nav class="nav" aria-label="Main navigation"><div class="wrap nav-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a><ul class="nav-links"><li><a href="vision.html">Vision</a></li><li><a href="architecture.html" aria-current="page">The model</a></li><li><a href="research.html">Progress</a></li><li><a href="papers.html">Papers</a></li><li><a href="claims.html">Evidence</a></li></ul></div></nav>
+  <nav class="nav" aria-label="Main navigation"><div class="wrap nav-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span> ITSM Cosmology</a><ul class="nav-links"><li><a href="vision.html">Vision</a></li><li><a href="architecture.html" aria-current="page">The model</a></li><li><a href="research.html">Progress</a></li><li><a href="papers.html">Papers</a></li><li><a href="claims.html">Evidence</a></li><li><a href="reproduce.html">Resources</a></li></ul></div></nav>
 
   <header class="page-hero"><div class="wrap"><p class="breadcrumb"><a href="index.html">Home</a> / The model</p><h1>How the <em>pieces fit</em></h1><p class="lede">A physical proposal needs more than a name. These are the ingredients ITSM investigates, the connections it must calculate, and the assumptions it must test.</p></div></header>
 
   <main class="wrap" id="main">
+    <section class="section topology-feature" id="topology" aria-labelledby="topology-title">
+      <div>
+        <p class="section-kicker">01 / The geometry of the proposal</p>
+        <h2 id="topology-title">Three directions.<br /><em>Periodic connections.</em></h2>
+        <p>A three-torus is space with a periodic identification in each of its three spatial directions. A fundamental cell makes those identifications visible: corresponding points on opposite faces represent the same point.</p>
+        <div class="topology-formula atlas-coordinate">T³ = S¹ × S¹ × S¹ &nbsp; · &nbsp; spacetime: ℝ × T³</div>
+        <p>Choose a direction and move the coordinate marker to the boundary. Its paired endpoint lies on the opposite face, with the other two coordinates unchanged. This is a coordinate demonstration, not a particle simulation.</p>
+        <p>The cell is a drawing of the identifications, not an external container. Its drawn shape fixes no physical size, aspect ratio or metric. Time is not periodically identified.</p>
+        <p>A doughnut surface is T². ITSM’s proposed spatial topology is T³; local vortices and circulation are separate physical questions.</p>
+        <a class="card-link" href="reproduce.html#visual-resources">Download the topology diagrams →</a>
+      </div>
+      <figure class="topology-illustration" data-topology-explorer>
+        <svg viewBox="0 0 680 600" role="img" aria-labelledby="cell-title cell-description">
+          <title id="cell-title">Three-torus periodic coordinate explorer</title>
+          <desc id="cell-description">An illustrative fundamental cell with three pairs of identified opposite faces. Controls show an equivalent coordinate on each boundary.</desc>
+          <image href="assets/atlas/t3-periodic-cell_v1.svg" width="680" height="600" />
+          <path data-periodic-path d="M272.5 251.85 L442.5 333.85" fill="none" stroke="#72d7cd" stroke-width="3" />
+          <circle data-periodic-point cx="332" cy="280.55" r="7" fill="#72d7cd" stroke="#ecf4e9" stroke-width="2" />
+          <circle data-periodic-partner cx="442.5" cy="333.85" r="9" fill="none" stroke="#72d7cd" stroke-width="2" visibility="hidden" />
+        </svg>
+        <div class="topology-controls" data-topology-controls hidden>
+          <div class="topology-axis"><span>Spatial direction</span><button type="button" data-axis="x" aria-pressed="true">x</button><button type="button" data-axis="y" aria-pressed="false">y</button><button type="button" data-axis="z" aria-pressed="false">z</button></div>
+          <label for="periodic-position">Position along the selected direction</label>
+          <input id="periodic-position" type="range" min="0" max="100" value="35" />
+          <div class="topology-position"><span>0</span><output for="periodic-position">x/Lx = 0.35</output><span>1 ≡ 0</span></div>
+          <p class="topology-status" data-periodic-status aria-live="polite"></p>
+          <button type="button" class="btn btn-ghost" data-show-boundary>Show the identified boundary</button>
+        </div>
+        <figcaption class="topology-note">Topology schematic only. The drawing specifies neither field dynamics nor an observationally established geometry.</figcaption>
+      </figure>
+    </section>
     <section class="section">
       <div class="section-head"><h2>The physical ingredients</h2><p>Connected, but not interchangeable.</p></div>
       <div class="grid">
@@ -74,7 +107,7 @@
     </section>
   </main>
 
-  <footer class="footer"><div class="wrap footer-inner"><p>© 2026 Brendon Boyd · ITSM Cosmology</p><div class="footer-links"><a href="reproduce.html">Reproduce</a><a href="claims.html">Technical status</a><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture">GitHub</a><a href="https://orcid.org/0009-0007-4177-2612">ORCID</a><a href="mailto:brendon.boyd@itsm-cosmology.org">Contact</a></div></div></footer>
+  <footer class="footer"><div class="wrap footer-inner"><p>© 2026 Brendon Boyd · ITSM Cosmology</p><div class="footer-links"><a href="reproduce.html">Resources</a><a href="claims.html">Technical status</a><a href="https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/tree/recovery/v12-core-architecture">GitHub</a><a href="https://orcid.org/0009-0007-4177-2612">ORCID</a><a href="mailto:brendon.boyd@itsm-cosmology.org">Contact</a></div></div></footer>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {

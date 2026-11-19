@@ -1,6 +1,22 @@
 # ITSM Changelog & Archive History
 
 
+## T³ visual identity and resources — 19 November 2026
+
+The [public site](https://itsm-cosmology.com/) now uses an original periodic-cell
+identity across seven pages. Three paired spatial directions replace the active
+doughnut hero and icons. An interactive coordinate guide and downloadable SVG/PNG
+diagrams explain T³ without fixing the universe’s physical size, cell aspect
+ratio or metric. Editorial typography, paper layouts and a dedicated Resources
+navigation entry connect the concept to its evidence. Historical artwork remains
+preserved. This presentation change supplies no new physical result.
+
+- Add a reproducible visual builder, periodic mark, paired-face guide and social image.
+- Introduce a shared atlas stylesheet, accessible coordinate controls and resource downloads.
+- Update app icons, manifests and offline cache; retain the current scientific boundaries.
+- Review actual browser rendering at desktop and narrow mobile widths, including all
+  three boundary identifications. Source checks and delivery checks are separate from physics.
+
 ## Public website progress refresh — 19 November 2026
 
 The public homepage, progress and evidence pages now describe the completed

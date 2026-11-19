@@ -12,7 +12,7 @@ DOCS = ROOT / "docs"
 PAGES = ("index.html", "vision.html", "architecture.html", "research.html",
          "papers.html", "claims.html", "reproduce.html")
 REPO_PREFIX = "https://github.com/brendohxd/ITSM-Integrated-Toroidal-Syntropic-Model/"
-NAV = ("vision.html", "architecture.html", "research.html", "papers.html", "claims.html")
+NAV = ("vision.html", "architecture.html", "research.html", "papers.html", "claims.html", "reproduce.html")
 VOID = set("area base br col embed hr img input link meta param source track wbr".split())
 CURRENT_PAPERS = {
     "p1": "P1-Scale-Matching-Reconstruction",
@@ -215,10 +215,10 @@ def check():
         json.loads((DOCS / name).read_text(encoding="utf-8"))
     sw = (DOCS / "sw.js").read_text(encoding="utf-8")
     for asset in re.findall(r"^\s*'(\./[^']*)',?$", sw, flags=re.M):
-        target = DOCS / asset
+        target = DOCS / unquote(urlsplit(asset).path)
         if not target.exists():
             failures.append({"page": "sw.js", "error": "Missing precache asset: " + asset})
-    if "itsm-pwa-v15-20261119" not in sw:
+    if "itsm-pwa-v16-20261119" not in sw:
         failures.append({"page": "sw.js", "error": "Stale service-worker cache"})
     print(json.dumps({"validation": "FAIL_WEBSITE_SOURCE" if failures else "PASS_WEBSITE_SOURCE_ONLY",
                       "pages_checked": len(pages), "references_checked": references,
