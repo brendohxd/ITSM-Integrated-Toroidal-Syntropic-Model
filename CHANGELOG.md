@@ -1,5 +1,35 @@
 # ITSM Changelog & Archive History
 
+
+## R-tau general-planar and nonlinear continuation — 19 November 2026
+
+Checkpoint after signed recovery commit `82e4745db77909fb982db7a060488ef3fff6b642`.
+
+- Generalize the planar gauge/momentum inverse, retaining metric moduli,
+  weighted means and weak Ward transport (31 main / 17 audit controls).
+- Derive the full current operator and identify its initial Green inverse.
+  V2 restores the transported residual-profile rank term missed off range
+  by V1 (32 / 22). Preserve the original positive checks and their gap.
+- Bound the actual initial operator drift, including all weights, rank
+  terms and chart drift (19 / 15). The bound is initial, not a time tube.
+- Exhibit the actual neutral momentum-square obstruction to an unreduced
+  L2 product-chart argument; derive a sufficient stronger product estimate
+  and conditional first-derivative scalar energy (45 / 47). Preserve and
+  correct V1's limited Schur-gradient fixture; numerical controls unchanged.
+- Derive raw general-planar quartic differentiated weights, full periodic
+  H1 commutators and weaker scalar coefficient estimates, retaining metric,
+  gauge and condensate coupling. Verify the exact curvature flux using
+  the transverse determinant (23 / 28). [Current owner](Theory/Gates/RES-001/RES001_RTAU_COUPLED_REGULARITY_V2_REPORT_2026-11-19.md).
+- Update the standing route and dated chronology, queue, active research,
+  worklog and deferred-review dependencies. Preserve all sources, sidecars
+  and superseded/failed attempts; retain exact replay records.
+
+These are scoped mathematical results and same-assistant checks, not
+independent peer review or physical clearance. Raw fast rows are not the
+final constrained general-planar generator. Full ordinary/cross energy,
+H1 remainder, nonlinear compatible domain and time continuation remain
+open; R-tau is unadopted, MAT matching blocked and G1–G6 incomplete.
+
 ## Condensate state, two-time kernels and independent history evolution — 19 November 2026
 
 Work since verified signed recovery checkpoint `7ccbeff0bd1b84eeb45ff153a9caac26f2f7c813`

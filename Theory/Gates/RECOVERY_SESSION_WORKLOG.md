@@ -3361,3 +3361,28 @@ The main scientific handoff remains physical-domain/matching work; extra A16
 probes and approximation studies are optional. R-tau UNADOPTED; G1–G6
 INCOMPLETE; MAT BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED; Rule-9 DEFERRED;
 physics_pass=false; gate_effect=NONE.
+
+
+## 19 November 2026 — A09.2 general planar continuation component
+
+Completed the [general-planar gauge/momentum component](RES-001/RES001_RTAU_PLANAR_GAUGE_DOMAIN_V3_REPORT_2026-11-19.md). The full metric Lie block is W h; its constant symmetrizer, matrix-weighted means, drift, physical modulus rates and canonical momentum reconstruction are explicit. The prepared initial geometry/first jet lies in the conditional envelope. Main 31/31 and separate tensor/Ward audit 17/17 replay exactly; 450/452 pins preserved. V1 source-leaf and V2 interval-conversion failures are retained without equation/domain/tolerance changes. This removes reliance on conformality for these coordinate/momentum operations, not for the entire density/current and energy construction. Actual background/coefficient persistence remains open. Next actual nonconformal coupled current-density operator/range; keep residual harmonic history explicit and R-tau unadopted. G1-G6 incomplete; MAT blocked; identifying matching absent; review deferred; physics_pass=false; gate_effect=NONE. No vault mutation, manuscript/site change, action adoption, provider dispatch, commit or push.
+
+
+## 19 November 2026 — A09.2 coupled planar current operator V2
+
+[Owner](RES-001/RES001_RTAU_PLANAR_CURRENT_OPERATOR_V2_REPORT_2026-11-19.md). Recomputed full raw-action local current coefficients and temporal inverse on a nonconformal off-shell metric. The coupled trace operator retains momentum feedback, weighted old means and the correct transported residual profile. A range audit found V1's natural constant residual profile did not identify the unrestricted old inverse; V2 adds its finite-rank correction. V1 source/receipt/draft and all numerical action results are preserved; V1's off-range inverse claim is superseded. Main 32/32 and separate audit 22/22 replay exactly, with 462/464 pins unchanged. Initial adapted Green <8; conditional radius 1/16; no actual future coefficient/energy tube. Next actual current/background drift and persistence. No new matching input, action adoption, manuscript/site edit, vault mutation, dispatch, publication, commit or push.
+
+
+## 19 November 2026 — Actual initial current drift V2
+
+[Owner](RES-001/RES001_RTAU_PLANAR_CURRENT_DRIFT_V2_REPORT_2026-11-19.md). The full action Hessian and canonical Euler/auxiliary first jets give actual initial coefficient and nonlocal momentum-map drift on the whole circle/root ball. Materialization cancels the shift-rate representation parameter without prescribing physical Sdot. The third spatial shift jet, weighted means, residual-profile rank term and chart drift are retained. Initial ||L_t||<102.128 and ||G_t||<6536.191; main 19/19 and separate audit 15/15 replay exactly, preserving 471/473 pins. V1 failed one structural SymPy equality control; V2 exact-difference comparison changes no binary bound. Initial constants cannot be integrated as uniform future estimates. Next nonlinear background/domain persistence and continued energy/constraint control. R-tau unadopted; no physical window or identifying matching. No manuscript/site edit, vault mutation, dispatch, publication, commit or push.
+
+
+## 19 November 2026 — Nonlinear continuation norm and higher r energy
+
+[Owner](RES-001/RES001_RTAU_NONLINEAR_CONTINUATION_V2_REPORT_2026-11-19.md). The full action supplies an exact neutral momentum-square obstruction to a direct unreduced L2 product-chart continuation argument. All-frequency smooth concentration survives output mean removal and compatible momentum-range correction; full fixed-charge nonlinear admission is not asserted. Derived an explicit sufficient H1 product bound and the actual first-spatial-derivative r energy with metric/lapse/shift and condensate sources retained. Main 45/45, extended audit 47/47, exact replays; 482/487 source pins preserved. V1 volume-only Schur fixture was limited; V2 includes inverse longitudinal-metric drift with identical numerical controls. Next full coupled higher-regularity coefficient/source and commutator control; background/operator/energy persistence OPEN. No physical instability, action adoption, site/manuscript edit, vault mutation, provider dispatch, publication, commit or push.
+
+
+## 19 November 2026 — Coupled regularity component
+
+[Owner](RES-001/RES001_RTAU_COUPLED_REGULARITY_V2_REPORT_2026-11-19.md). Derived raw general-planar quartic differentiated weights, periodic H1 commutator/inverse and remainder formulas with means, weak second-coefficient r-energy bounds and explicit condensate source estimates. Verified the exact transverse-determinant curvature flux. Main 23/23, extended audit 28/28, exact replays; 492/497 sources preserved. V1 report draft preserved; V2 explicitly distinguishes raw self rows from final constraint-reduced operator identification. Next full-action general-planar ordinary Ward/Schur and cross-block calculation, then actual H1 remainder/domain. Full background/energy continuation OPEN. Subsequent operator instruction authorizes a signed documentation/research checkpoint and push; website assessment is requested separately. No scientific promotion is implied.

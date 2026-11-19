@@ -44,6 +44,51 @@ selected. G1–G6, physical interactions/window and MAT matching remain
 incomplete; review DEFERRED; physics_pass=false; gate_effect=NONE.
 Checkpoint preparation/delivery does not resume or complete a native goal.
 
+Latest A09.2: [coupled regularity](../Gates/RES-001/RES001_RTAU_COUPLED_REGULARITY_V2_REPORT_2026-11-19.md)
+derives the raw general-planar quartic differentiated weight, periodic H1
+commutator/inverse bounds and weak r-energy geometry/source estimates.
+Main 23/23, extended audit 28/28, exact replays; 492/497 pins preserved.
+Next derive the general-planar ordinary Ward/Schur energy and both cross
+blocks from the action; then the actual full H1 remainder and nonlinear
+constraint/charge domain. This supersedes older next-step notes. The raw
+force operator is not a verified final constrained generator. Background
+and energy persistence OPEN; R-tau UNADOPTED; no physical window follows.
+
+Latest continuation result: [nonlinear norm and higher r energy](../Gates/RES-001/RES001_RTAU_NONLINEAR_CONTINUATION_V2_REPORT_2026-11-19.md).
+A direct unreduced L2-momentum continuation argument fails on the actual
+quadratic current term. This is not physical instability or failure of all
+reduced charts. A conditional first-derivative r energy is derived, with
+all metric/lapse/shift and condensate-source terms. Main 45/45; extended
+audit 47/47; exact replays; 482/487 pins. Next coupled higher-regularity
+coefficient/source and commutator estimates. Actual background/operator/
+energy persistence remains OPEN. This supersedes older next-step notes
+to redo the completed current operator or initial drift calculation.
+
+Latest A09.2 follow-up: [actual initial current drift](../Gates/RES-001/RES001_RTAU_PLANAR_CURRENT_DRIFT_V2_REPORT_2026-11-19.md)
+is bounded on the full registered circle/root ball: ||L_t(0)||<102.128,
+||G_t(0)||<6536.191. Main 19/19, audit 15/15, exact replays, 471/473 pins.
+This completes the initial coefficient-derivative budget. Next nonlinear
+background/domain persistence and continued constraint/energy control; no
+future uniform bound or [0,0.05] certificate is supplied. Older component
+next-step notes below are superseded by the standing routes and this owner.
+
+The [coupled planar current operator](../Gates/RES-001/RES001_RTAU_PLANAR_CURRENT_OPERATOR_V2_REPORT_2026-11-19.md)
+now retains weighted old means and the transported residual profile. The
+identified initial inverse has bound <8; its conditional 1/16 margin has
+not been shown along an actual trajectory. Main 32/32, audit 22/22, exact
+replays, 462/464 preserved pins. V1 off-range identification is superseded
+by V2, with all evidence and unchanged raw-action results preserved. Next
+bound actual current/background drift and continued energy/domain, retaining
+the moving normalization and residual-profile terms.
+
+A09.2 continuation now supplies a [conditional general-planar gauge/momentum
+domain component](../Gates/RES-001/RES001_RTAU_PLANAR_GAUGE_DOMAIN_V3_REPORT_2026-11-19.md):
+31 main and 17 separate audit checks, exact replays, 450/452 preserved pins.
+It retains moduli, momentum means, harmonic histories and finite-centre Ward
+forcing. Actual continued coupled current-density/range, background and energy
+tubes remain open; that is the next deciding calculation. The initial
+geometric envelope and conditional Green margin are not physical clearance.
+
 ## Proposed expanded goal programme — 27 October 2026
 
 Operator requested a more thorough programme that a goal can follow through

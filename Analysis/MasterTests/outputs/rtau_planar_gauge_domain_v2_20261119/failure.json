@@ -1,0 +1,5 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\MasterTests\\test_rtau_planar_gauge_domain_v2.py\", line 168, in main\n    d=calculate();raw=enc(d)\n  File \"C:\\Users\\brend\\OneDrive\\Documents\\ITSM - Github\\ITSM-Integrated-Toroidal-Syntropic-Model\\Analysis\\MasterTests\\test_rtau_planar_gauge_domain_v2.py\", line 141, in calculate\n    ht=2*iv.exp(2*r)*(max(abs(lower(H)),abs(upper(H)))+iv.mpf(1)/31000+r*w)\n                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\n  File \"<string>\", line 25, in __add__\n  File \"C:\\Users\\brend\\anaconda3\\envs\\itsm_env\\Lib\\site-packages\\mpmath\\ctx_mp_python.py\", line 671, in convert\n    return ctx._convert_fallback(x, strings)\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\brend\\anaconda3\\envs\\itsm_env\\Lib\\site-packages\\mpmath\\ctx_mp.py\", line 633, in _convert_fallback\n    raise ValueError(\"can only create mpf from zero-width interval\")\nValueError: can only create mpf from zero-width interval\n",
+  "gate_effect": "NONE",
+  "physics_pass": false
+}

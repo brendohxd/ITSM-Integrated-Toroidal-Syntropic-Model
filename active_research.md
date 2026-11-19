@@ -1,5 +1,88 @@
 # Active Research & Gate Dashboard
 
+
+## Coupled regularity prerequisites — 19 November 2026
+
+[Owner](Theory/Gates/RES-001/RES001_RTAU_COUPLED_REGULARITY_V2_REPORT_2026-11-19.md). Raw general-planar quartic self rows have a
+positive differentiated weight omega^n H0 cancelling the highest energy
+commutator. Full periodic H1 identities retain means and finite-rank
+terms. The coupled r energy now needs only L2 second spatial coefficient
+derivatives, with explicit metric/lapse/gauge/condensate estimates.
+The exact curvature flux uses the transverse determinant, not its Schur
+determinant. Main 23/23, audit 28/28; exact replays and 492/497 pins.
+Next actual general-planar ordinary Ward/Schur and cross-block derivation,
+then the full H1 remainder and nonlinear domain. Raw self-row cancellation
+does not identify the final constrained fast block. R-tau UNADOPTED; full
+background/energy continuation OPEN; G1-G6 INCOMPLETE; MAT-001 BLOCKED;
+K_Q NOT_DERIVED; V NOT_COMPUTED; review DEFERRED; physics_pass=false.
+
+
+## Nonlinear continuation obstruction and higher r energy — 19 November 2026
+
+[Owner](Theory/Gates/RES-001/RES001_RTAU_NONLINEAR_CONTINUATION_V2_REPORT_2026-11-19.md). The actual p_r^2 term prevents a direct unreduced
+L2-momentum-to-L2-current/trace-operator continuation estimate. Compatible
+momentum-range correction and output mean removal do not remove concentration.
+Full fixed-I/U1 nonlinear admission is not proved by this counterexample; no
+physical instability or all-chart no-go follows. A stronger H1 momentum
+product estimate and conditional first-spatial-derivative neutral-scalar
+energy are now derived, retaining metric/lapse/shift drift and condensate
+sources. Main 45/45, extended audit 47/47, exact replays, 482/487 pins.
+The full coupled background/operator/energy tube remains OPEN. Next derive
+the coupled higher-regularity coefficient/source and commutator bounds.
+R-tau UNADOPTED; G1-G6 INCOMPLETE; MAT-001 BLOCKED; K_Q NOT_DERIVED;
+V NOT_COMPUTED; review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## Actual initial current-operator drift — 19 November 2026
+
+The [latest owner](Theory/Gates/RES-001/RES001_RTAU_PLANAR_CURRENT_DRIFT_V2_REPORT_2026-11-19.md) bounds the actual initial operator derivative over the full circle and
+certified root ball: ||L_t(0)||<102.128 and ||G_t(0)||<6536.191. It includes
+all local coefficients, constrained momentum feedback, weighted means,
+primitive/residual-profile rank terms and coordinate drift. Main 19/19;
+separate audit 15/15; exact replays; 471/473 unchanged source pins. V1
+structural-equality control failure preserved; V2 numerical bounds identical.
+
+These are initial mathematical upper bounds, not measured growth rates or
+physical stability/instability. Nonlinear background/domain persistence and
+continued energy/constraint control remain the next required work. No future
+operator margin or [0,0.05] certificate follows. R-tau UNADOPTED; G1-G6
+INCOMPLETE; MAT-001 BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED;
+review DEFERRED; physics_pass=false; gate_effect=NONE.
+
+
+## General planar coupled current operator — 19 November 2026
+
+The [V2 owner](Theory/Gates/RES-001/RES001_RTAU_PLANAR_CURRENT_OPERATOR_V2_REPORT_2026-11-19.md) derives the full-action current-density operator with constrained momentum
+feedback, weighted old means and the transported residual profile. The
+full nonconformal action control validates its local coefficients and
+principal term. Initial chart identification gives a Green bound <8.
+Main 32/32, separate audit 22/22, exact replays; 462/464 preserved pins.
+
+V1 missed a finite-rank off-range projector term; its unrestricted initial-
+inverse identification is superseded. Its local action results are unchanged
+and all evidence preserved. A conditional 1/16 operator margin is available;
+actual background/coefficient and energy persistence remain open. No physical
+window, stability, matching value or action adoption follows. R-tau UNADOPTED;
+MAT-001 BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED; review DEFERRED;
+physics_pass=false; gate_effect=NONE.
+
+
+## General planar R-tau domain component — 19 November 2026
+
+The [new owner](Theory/Gates/RES-001/RES001_RTAU_PLANAR_GAUGE_DOMAIN_V3_REPORT_2026-11-19.md) extends the coordinate-gauge and canonical momentum inverses beyond the
+conformal initial metric. It retains all metric moduli and momentum means,
+derives coefficient drift and the weak Ward pairing, and proves conditional
+inverse bounds. The actual initial metric/first jet meets the geometric envelope.
+Main 31/31; separate exact audit 17/17; immutable replays; 450/452 source pins.
+
+This is a coordinate/momentum-domain component. Actual coupled density/current
+and energy continuation, background persistence, interactions and physical
+window remain open. Residual coordinate history is not fixed; R-tau remains
+UNADOPTED. Next derive the actual continued coupled current-density operator
+and range, rather than substituting into initial conformal formulas. MAT-001
+BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED; review DEFERRED; physics_pass=false;
+gate_effect=NONE. No canonical gate or publication status changes.
+
 ## A16.2 independent history evolution — 19 November 2026
 
 The [latest owner](Theory/Gates/RES-001/RES001_A16_VOLTERRA_EVOLUTION_V2_REPORT_2026-11-19.md) completes the registered conditional R4C1/B1

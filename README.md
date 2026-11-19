@@ -12,6 +12,22 @@
 **Resume research:** [ITSM research routes](RESEARCH_ROUTES.md) tracks planned,
 unfinished and completed work, with route IDs and a current handoff.
 
+## Physical-domain continuation checkpoint — 19 November 2026
+
+The R-tau comparison route now has general-planar gauge/current calculations
+and a bounded initial operator change. A nonlinear test exposed why the
+linear momentum norm alone cannot control a squared-momentum density term.
+Stronger conditional scalar/quartic energy estimates and an exact curvature
+trace identity now identify a more concrete continuation calculation.
+
+The [latest report](Theory/Gates/RES-001/RES001_RTAU_COUPLED_REGULARITY_V2_REPORT_2026-11-19.md) separates those mathematical results from
+the still-open full constrained evolution. Next is the general-planar
+ordinary energy and coupling blocks from the full action, followed by the
+actual higher-regularity remainder and compatible domain. A future time
+interval, physical stability, interactions and identifying matching remain
+unproved. R-tau remains unadopted; G1–G6 incomplete; MAT-001 blocked;
+K_Q not derived; V not computed; independent review deferred.
+
 ## Condensate state and causal-history checkpoint — 19 November 2026
 
 The conditional R4C1/B1 calculation now has a controlled state/history
