@@ -1,0 +1,210 @@
+{
+  "checks": {
+    "16_reservoir_configuration_0_continuity": true,
+    "16_reservoir_configuration_1_continuity": true,
+    "16_reservoir_configuration_conserved_density_matched": true,
+    "16_reservoir_normalized_rate_0_continuity": true,
+    "16_reservoir_normalized_rate_1_continuity": true,
+    "16_reservoir_normalized_rate_conserved_density_matched": true,
+    "32_reservoir_configuration_0_continuity": true,
+    "32_reservoir_configuration_1_continuity": true,
+    "32_reservoir_configuration_conserved_density_matched": true,
+    "32_reservoir_normalized_rate_0_continuity": true,
+    "32_reservoir_normalized_rate_1_continuity": true,
+    "32_reservoir_normalized_rate_conserved_density_matched": true,
+    "4_reservoir_configuration_0_continuity": true,
+    "4_reservoir_configuration_1_continuity": true,
+    "4_reservoir_configuration_conserved_density_matched": true,
+    "4_reservoir_normalized_rate_0_continuity": true,
+    "4_reservoir_normalized_rate_1_continuity": true,
+    "4_reservoir_normalized_rate_conserved_density_matched": true,
+    "64_reservoir_configuration_0_continuity": true,
+    "64_reservoir_configuration_1_continuity": true,
+    "64_reservoir_configuration_conserved_density_matched": true,
+    "64_reservoir_normalized_rate_0_continuity": true,
+    "64_reservoir_normalized_rate_1_continuity": true,
+    "64_reservoir_normalized_rate_conserved_density_matched": true,
+    "8_reservoir_configuration_0_continuity": true,
+    "8_reservoir_configuration_1_continuity": true,
+    "8_reservoir_configuration_conserved_density_matched": true,
+    "8_reservoir_normalized_rate_0_continuity": true,
+    "8_reservoir_normalized_rate_1_continuity": true,
+    "8_reservoir_normalized_rate_conserved_density_matched": true,
+    "background_clock_number_conserved": true,
+    "clock_gauge_tau_perturbation_zero": true,
+    "clock_multiplier_constraint": true,
+    "densitized_current_continuity": true,
+    "dust_density_dictionary": true,
+    "frame_variable_not_actual_coordinate_flux": true
+  },
+  "gate_effect": "NONE",
+  "inputs": {
+    "Analysis/MasterTests/outputs/a16_matched_reservoir_v1_20261116/receipt.json": "6e7173c69f6674e9611d0dada9902ea9cac59b630fff539b4e96dd67bf822f37",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_dust_finite_k_attempt_01/matrices.json": "9d30b77bd23ae63e1bc51c9efec1de51f1a318c88aaa3b90fa9bf475fe305540",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_dust_remainder_v1.py": "01b0a895fde8d979dd1d939780468748daabfabe3ecfb31dae4c5192ba3c0b88",
+    "Analysis/MasterTests/test_a16_matter_flux_v1.py": "1176545a681e311f037f6d263536f36b6fb30abbe8d5065eb7c0d92b41321970",
+    "Theory/Gates/RES-001/RES001_A16_MATTER_FLUX_V1_CONTRACT_2026-11-16.md": "5a3d6c330aae975665a1905322c77135ff05182936eac376c5e41026f5ae2955",
+    "papers/R4C1-Covariant-Exchange-Model/main.tex": "b8f83186cdce001f99175ab379b58accb6661de57b82e258f920284329b2da22"
+  },
+  "physics_pass": false,
+  "results": [
+    {
+      "ell": 4,
+      "records": [
+        {
+          "actual_flux_matched": false,
+          "conserved_density_rates": [
+            "-16*sqrt(4006695)/24283 - 1/4",
+            "15/4"
+          ],
+          "flux_difference": "I*(-24283 - 4*sqrt(4006695))/24283",
+          "normalized_coordinate_fluxes": [
+            "I*(-64*sqrt(4006695) - 24283)/388528",
+            "15*I/16"
+          ],
+          "reservoir_input": "reservoir_configuration"
+        },
+        {
+          "actual_flux_matched": false,
+          "conserved_density_rates": [
+            "-8*sqrt(4006695)/114477",
+            "0"
+          ],
+          "flux_difference": "-2*sqrt(4006695)*I/114477",
+          "normalized_coordinate_fluxes": [
+            "-2*sqrt(4006695)*I/114477",
+            "0"
+          ],
+          "reservoir_input": "reservoir_normalized_rate"
+        }
+      ]
+    },
+    {
+      "ell": 8,
+      "records": [
+        {
+          "actual_flux_matched": false,
+          "conserved_density_rates": [
+            "-16*sqrt(4006695)/24283 - 1/4",
+            "15/4"
+          ],
+          "flux_difference": "I*(-24283 - 4*sqrt(4006695))/48566",
+          "normalized_coordinate_fluxes": [
+            "I*(-64*sqrt(4006695) - 24283)/777056",
+            "15*I/32"
+          ],
+          "reservoir_input": "reservoir_configuration"
+        },
+        {
+          "actual_flux_matched": false,
+          "conserved_density_rates": [
+            "-8*sqrt(4006695)/114477",
+            "0"
+          ],
+          "flux_difference": "-sqrt(4006695)*I/114477",
+          "normalized_coordinate_fluxes": [
+            "-sqrt(4006695)*I/114477",
+            "0"
+          ],
+          "reservoir_input": "reservoir_normalized_rate"
+        }
+      ]
+    },
+    {
+      "ell": 16,
+      "records": [
+        {
+          "actual_flux_matched": false,
+          "conserved_density_rates": [
+            "-16*sqrt(4006695)/24283 - 1/4",
+            "15/4"
+          ],
+          "flux_difference": "I*(-24283 - 4*sqrt(4006695))/97132",
+          "normalized_coordinate_fluxes": [
+            "I*(-64*sqrt(4006695) - 24283)/1554112",
+            "15*I/64"
+          ],
+          "reservoir_input": "reservoir_configuration"
+        },
+        {
+          "actual_flux_matched": false,
+          "conserved_density_rates": [
+            "-8*sqrt(4006695)/114477",
+            "0"
+          ],
+          "flux_difference": "-sqrt(4006695)*I/228954",
+          "normalized_coordinate_fluxes": [
+            "-sqrt(4006695)*I/228954",
+            "0"
+          ],
+          "reservoir_input": "reservoir_normalized_rate"
+        }
+      ]
+    },
+    {
+      "ell": 32,
+      "records": [
+        {
+          "actual_flux_matched": false,
+          "conserved_density_rates": [
+            "-16*sqrt(4006695)/24283 - 1/4",
+            "15/4"
+          ],
+          "flux_difference": "I*(-24283 - 4*sqrt(4006695))/194264",
+          "normalized_coordinate_fluxes": [
+            "I*(-64*sqrt(4006695) - 24283)/3108224",
+            "15*I/128"
+          ],
+          "reservoir_input": "reservoir_configuration"
+        },
+        {
+          "actual_flux_matched": false,
+          "conserved_density_rates": [
+            "-8*sqrt(4006695)/114477",
+            "0"
+          ],
+          "flux_difference": "-sqrt(4006695)*I/457908",
+          "normalized_coordinate_fluxes": [
+            "-sqrt(4006695)*I/457908",
+            "0"
+          ],
+          "reservoir_input": "reservoir_normalized_rate"
+        }
+      ]
+    },
+    {
+      "ell": 64,
+      "records": [
+        {
+          "actual_flux_matched": false,
+          "conserved_density_rates": [
+            "-16*sqrt(4006695)/24283 - 1/4",
+            "15/4"
+          ],
+          "flux_difference": "I*(-24283 - 4*sqrt(4006695))/388528",
+          "normalized_coordinate_fluxes": [
+            "I*(-64*sqrt(4006695) - 24283)/6216448",
+            "15*I/256"
+          ],
+          "reservoir_input": "reservoir_configuration"
+        },
+        {
+          "actual_flux_matched": false,
+          "conserved_density_rates": [
+            "-8*sqrt(4006695)/114477",
+            "0"
+          ],
+          "flux_difference": "-sqrt(4006695)*I/915816",
+          "normalized_coordinate_fluxes": [
+            "-sqrt(4006695)*I/915816",
+            "0"
+          ],
+          "reservoir_input": "reservoir_normalized_rate"
+        }
+      ]
+    }
+  ],
+  "review": "DEFERRED",
+  "scope": "Existing nonzero-mode initial preparations and symbolic linear clock continuity. Physical flux matching is reported, not forced to PASS.",
+  "status": "PASS_CURRENT_DICTIONARY_AND_PREPARATION_AUDIT"
+}
