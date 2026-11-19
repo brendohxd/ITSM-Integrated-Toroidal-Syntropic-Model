@@ -1,4 +1,4 @@
-const CACHE_NAME = 'itsm-pwa-v18-20261120';
+const CACHE_NAME = 'itsm-pwa-v19-20261120';
 const ASSETS = [
   './',
   './index.html',
@@ -9,13 +9,6 @@ const ASSETS = [
   './vision.html',
   './reproduce.html',
   './styles.css',
-  './atlas.css?v=20261120a',
-  './topology.js?v=20261119a',
-  './assets/atlas/t3-periodic-cell_v1.svg',
-  './assets/atlas/t3-face-pairs_v1.svg',
-  './assets/atlas/itsm-periodic-mark_v1.svg',
-  './assets/atlas/itsm-research-share_v1.png',
-
   './manifest.json',
   './site.webmanifest',
   './favicon.ico',

@@ -12,6 +12,17 @@
 **Resume research:** [ITSM research routes](RESEARCH_ROUTES.md) tracks planned,
 unfinished and completed work, with route IDs and a current handoff.
 
+## Full website theme rollback — 20 November 2026
+
+Restored the seven public pages, original hero artwork, navigation, icons and
+app manifests to signed pre-redesign commit `e42329f9e8055cf580c011cae69edde43106aedc`.
+This retains that commit’s current research summaries and P1/P2 links. The
+19–20 November theme experiments are superseded, not the scientific updates.
+The original conceptual-flow caption remains explicit that the artwork is
+neither a representation of the T³ manifold nor a simulation. New diagrams
+and rejected previews remain preserved; none replaces the homepage artwork.
+The offline cache receives a fresh version to serve the restored assets.
+
 ## Established website theme restored — 20 November 2026
 
 At the operator’s preference, restore the previous site palette, typography,
