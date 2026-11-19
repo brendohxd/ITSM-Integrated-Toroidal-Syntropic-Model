@@ -1,6 +1,14 @@
 # ITSM Changelog & Archive History
 
 
+## Established website theme restored — 20 November 2026
+
+At the operator’s preference, restore the previous site palette, typography,
+cards and homepage composition. Retain the accurate T³ cell and icons,
+coordinate explorer, resource downloads and current research content. The
+19 November atlas redesign remains preserved in Git history. This is a
+presentation change with no scientific claim or evidence revision.
+
 ## T³ visual identity and resources — 19 November 2026
 
 The [public site](https://itsm-cosmology.com/) now uses an original periodic-cell
