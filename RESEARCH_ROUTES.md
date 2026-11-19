@@ -1,6 +1,6 @@
 # ITSM research routes
 
-Last consolidated 14 November 2026. This is the standing work list and resume
+Last consolidated 19 November 2026. This is the standing work list and resume
 point for ITSM. The [Master Research Plan](Theory/Core/ITSM_Master_Research_Plan.md)
 defines the programme, the [gate dashboard](active_research.md) reports
 scientific status, and each linked owner defines the deliverable and acceptance
@@ -62,7 +62,13 @@ decisions.
 3. Independent work can proceed within its existing scope. **A10** has a
    completed saved-chain audit and a defined sentinel experiment. **A01/A03** preserve older technical work
    with named inputs and triggers. **A16.1** is the first Campbell-linked
-   research question, with **A16.2** dependent on admissible reservoir dynamics.
+   research question (initial split complete). **A16.2** now has controlled
+   five-mode pressure/geometry evolution, a finite-time scalar-state inverse
+   and bounded exact 8+4 condensate-history laws. Two-time kernels and independent
+   retained Volterra evolution now reproduce the full registered response with
+   controlled errors. This computational loop is closed for the seed; optional
+   additional-input/approximation studies do not replace core physical-domain,
+   thermodynamic and matching obligations.
    These routes are available alongside the saved goal and carry their own
    prerequisites.
 
@@ -93,7 +99,7 @@ to missing the acceptance test.
 | A13 · P1 / P2 | 🔴 **High** | bounded release checks · external status unknown | Scoped technical and negative-result papers. Author/review/deposit status needs a current check. | Reconcile exact versions, release decision and deposit state before delivery. [Release decisions](papers/Selective-Publishing-Plan/ITSM_P1_P2_RELEASE_DECISIONS_V1_2026-10-27.md) |
 | A14 · Thermodynamics / R4C1 papers | 🔴 **High** | bounded release checks · review outcome unknown | Conditional drafts preserve distinct entropy-accounting, exchange and stability obligations. | Check for concrete implications from A08/A09/A16. Reconcile standalone review and release status against the current packages. [Release plan](papers/Selective-Publishing-Plan/ITSM_RELEASE_ORDER_AND_COMPLETION_PLAN_2026-10-08.md) |
 | A15 · Continuity, reproducibility and delivery | 🟠 **Medium** | bounded per task · unknown | Core identity and continuity handoffs recorded. Broader historical coverage remains open. | Retain historical manuscript/branch audit, provenance, vault continuity, signing and site delivery as distinct obligations. Verify current state before acting. [Continuity handoff](Theory/Core/ITSM_CONTINUITY_ACTIVE_HANDOFF_2026-11-05.md), [chronology audit](Theory/Core/ITSM_RESEARCH_CHRONOLOGY_COMPLETION_AUDIT_V3_2026-11-05.md) |
-| A16 · Thomas Campbell, *My Big TOE* | 🟠 **Medium** | bounded desk work then gated calculations · translation uncertain | Mechanism review complete in scope. Ten candidate leads preserved below. | Start with a sector-split invariance control and a reservoir-memory admissibility check. |
+| A16 · Thomas Campbell, *My Big TOE* | 🟠 **Medium** | scoped calculations · physical translation open | Ten leads preserved. Initial split/current/stress audits, finite response, finite inverse, exact history laws, numerical kernels and independent retained Volterra evolution completed in scope. | Computational consistency loop closed for the registered seed. Additional-input/reduction studies are optional; operational thermodynamics and organizing mechanism remain open alongside the core physical-domain/matching priorities. [Latest owner](Theory/Gates/RES-001/RES001_A16_VOLTERRA_EVOLUTION_V2_REPORT_2026-11-19.md); [original assessment](Theory/Core/ITSM_CAMPBELL_MECHANISM_GAP_ASSESSMENT_V1_2026-11-14.md). |
 
 ### A09 · R-tau follow-through
 
@@ -114,11 +120,11 @@ claim needs its own ITSM variables, assumptions and verification.
 
 | ID | Original lead | Next action and disposition |
 | --- | --- | --- |
-| A16.1 | MBT-L01 · Differentiation with coupling | Open. Test observables under reassignment of interaction energy among matter, plenum and reservoir. Identify which sector boundaries have operational meaning. A14 / RES. |
-| A16.2 | MBT-L02 · Retained history and memory | Open with parent-domain prerequisite. Screen RES/WAK for an admissible parent and apply a Mori-style reduction where justified. Compare matched retained states with different unresolved states, including zero-coupling, short-memory and conservation controls. |
+| A16.1 | MBT-L01 · Differentiation with coupling | Constant scalar-portal allocation control COMPLETE_SCOPED: current changes while total action/stress and this potential contribution to trace-free stress do not. Physical subsystem/state interpretation remains Open. [Owner](Theory/Gates/RES-001/RES001_A16_SECTOR_SPLIT_V1_REPORT_2026-11-15.md). |
+| A16.2 | MBT-L02 · Retained history and memory | Independent retained Volterra evolution COMPLETE_SCOPED for the registered radial seed, [0,0.05], five modes. Eight retained values plus four causal memory quadratures advanced from reference-free kernel inputs. Main 66/66, exact-integer/rational audit 148/148, byte-identical replays and 779 unchanged inputs. Full response and high-mode positive endpoint reproduced with uniform errors. Optional next: additional compatible inputs and controlled approximation tests; physical/thermal/matching questions remain OPEN. [Owner](Theory/Gates/RES-001/RES001_A16_VOLTERRA_EVOLUTION_V2_REPORT_2026-11-19.md). |
 | A16.3 | MBT-L03 · Correlations and entropy | Open with state/coarse-graining prerequisite. Compare subsystem, joint and correlation accounting against finite-reservoir controls. A14. |
 | A16.4 | MBT-L04 · Feedback and selected structures | Conditional. Specify a supported coupling, a zero-coupling comparator and preregistered persistence/coherence observables. RES/VOR/TOP. |
-| A16.5 | MBT-L05 · Time-scale separation | Open within A16.2. Measure or derive correlation and evolution time scales and bound the reduction error. |
+| A16.5 | MBT-L05 · Time-scale separation | Open within A16.2. Numerical kernels and independent retained history evolution are controlled for one seed. Test additional compatible inputs and full-domain approximation errors before claiming time-scale separation, short memory or a memory-free model. |
 | A16.6 | MBT-L06 · Relational causal geometry | Parked. Compare retarded characteristic cones only once a physical mode domain exists. A05/A08. |
 | A16.7 | MBT-L07 · Capacity and memory lifetime | Input-dependent. Specify the physical state, cutoff, energy/occupation restrictions and any recurrence tests. A04/A16.2. |
 | A16.8 | MBT-L08 · Recursive coarse graining | Parked pending an explicit coarse-graining map and independently matched invariants. A04. |
@@ -199,6 +205,26 @@ tracker. Split out individual experiments here when they enter execution.
 | 2026-11-14 | A09.2 | Bound the registered controlling energy's actual initial time derivative, including complement/zero-charge/chart rates and fast energy. Hdiag_t <3.651954e11; pulled-back derivative <9.371852e11. Verified 436 pins, eighteen controls, twelve separate gradient/rational controls and exact replays; V1 helper-name failure preserved. Large conservative bounds supply no useful [0,0.05] accuracy or stability claim. Full energy/global/domain assembly remains open. [Owner](Theory/Gates/RES-001/RES001_RTAU_ENERGY_TIME_DRIFT_V2_REPORT_2026-11-14.md). |
 | 2026-11-14 | A09.2 | Assembled the full supported initial energy identity with all twenty state directions, fifteen global partners and three retained harmonic controls. Conditional bound E_prime<=4.488985e20 E+1.658735e12 |H3|^2; 439 pins, nineteen controls, seventeen separate exact-audit controls and exact replays. Coercivity/input-norm equivalence explicit. Forced scope only; autonomous physical evolution, domain persistence and actual time tube remain open. [Owner](Theory/Gates/RES-001/RES001_RTAU_INITIAL_FORCED_ENERGY_V1_REPORT_2026-11-14.md). |
 
+| 2026-11-14 | A16 | Compared all ten Campbell leads with existing RES/WAK and retarded controls. Identified the unclosed physical constitutive-memory/correlation/stress map, rather than retardation itself, as the strongest candidate gap. No new mechanism derived. Next: sector-split invariance and admissible paired-state closure test. [Assessment](Theory/Core/ITSM_CAMPBELL_MECHANISM_GAP_ASSESSMENT_V1_2026-11-14.md). |
+
+| 2026-11-15 | A16.1/A16.2 | Exact portal-allocation control passed 17 checks and byte-identical replay. Recovered existing zero-initial-dust complementary probes rather than repeating the closure test. Physical history-kernel/channel identification and subsystem/entropy map remain open. [Owner](Theory/Gates/RES-001/RES001_A16_SECTOR_SPLIT_V1_REPORT_2026-11-15.md). |
+
+| 2026-11-15 | A16.2 | Retained hidden initial-state forcing and two-time history feedback from the existing exact split. Noncommuting algebra and actual R chart-support controls passed 16/16 and replayed identically. Reservoir-linked slots occur alongside four other groups; no reservoir-only physical attribution or numerically certified kernel claimed. [Owner](Theory/Gates/RES-001/RES001_A16_HISTORY_MAP_V1_REPORT_2026-11-15.md). |
+
+| 2026-11-15 | A16.2 | Added reconstructed Pi and normalized-frame temporal rate to the dust retained map. Exact ranks (4,6) and witnesses at ell=4,8,16,32,64 show this enlarged state still lacks initial-rate information. 32 controls, exact replay. Metric/condensate witness has no initial reservoir slots; physical channel identification and kernel/evolution bounds remain open. [Owner](Theory/Gates/RES-001/RES001_A16_ENLARGED_STATE_V1_REPORT_2026-11-15.md). |
+
+| 2026-11-16 | A16.2 | Verified inherited pins and both enlarged-state receipts; froze nine next inputs. Prepared identification of the missing physical response rows and a bounded six/eight-row closure test with full coefficient drift. Hard derivation awaits High confirmation. [Preparation](Theory/Gates/RES-001/RES001_A16_RESPONSE_COMBINATIONS_V1_PREPARATION_2026-11-16.md). |
+
+| 2026-11-16 | A16.2 | High-confirmed bounded response-row derivation completed. Added actual dust rates, then accelerations, retaining coefficient drift. Exact rank tests 6→8 and 8→10 at ell=4,8,16,32,64; 30 controls and byte-identical replay. V1 integer-zero failure preserved. No automatic higher derivative hierarchy; physical retained/source interpretation and domain remain open. [Owner](Theory/Gates/RES-001/RES001_A16_RESPONSE_COMBINATIONS_V2_REPORT_2026-11-16.md). |
+
+| 2026-11-16 | A16.2 | Replaced the stopped derivative hierarchy with a field-based scalar state. Exact full-generator block split; 12 reconstructed scalar values determine their initial rates and dust response at ell=4,8,16,32,64. 32 controls, exact replay. Lower-dimensional closure failures do not imply irreducible memory. Physical sources, finite-time inverse/error bounds, thermodynamic state and organizing mechanism remain open. [Owner](Theory/Gates/RES-001/RES001_A16_SCALAR_STATE_V1_REPORT_2026-11-16.md). |
+
+| 2026-11-16 | A16.2 | Two compensation protocols with the same reservoir input and matched D,Vx,Pi,P_n give different density rates. Actual action-derived dust clock current audit shows their coordinate fluxes differ; continuity holds exactly. Clarified the frame-variable/current-flux dictionary without changing earlier maps or rank results. 140/140 and 36/36 controls, exact replays; isolated reservoir/organizing mechanism remains unestablished. [Owner](Theory/Gates/RES-001/RES001_A16_MATCHED_RESERVOIR_V1_REPORT_2026-11-16.md). |
+
+| 2026-11-16 | A16.2 | Matched actual clock-current density/flux, scalar metric initial area/rate, frame and force values under two condensate compensations for the same reservoir input. D_dot now agrees; scalar pressure differs at equal energy and accounts exactly for the remaining initial area acceleration. 182 controls plus 61 independent scalar-stress controls, both exact replays. Initial isotropic-pressure result only; no physical bath, organizing force or finite-time extension. [Owner](Theory/Gates/RES-001/RES001_A16_MATCHED_CURRENT_V1_REPORT_2026-11-16.md). |
+
+| 2026-11-16 | A16.2 | Pressure value alone does not determine its initial normalized-frame rate under ten held current/geometry/force/reservoir/energy quantities. Identified the sole missing condensate radial-rate direction; modulus-rate augmentation yields full initial state rank and pressure-rate factorization. 37 controls, exact replay; coefficient is action/background-specific. Finite-time pressure response and controlled elimination remain open. [Owner](Theory/Gates/RES-001/RES001_A16_PRESSURE_STATE_V1_REPORT_2026-11-16.md). |
+
 ## Maintenance
 
 When work is planned, give it a stable ID or existing parent ID, then record
@@ -215,3 +241,11 @@ and publication status. Apply the
 and the [unfinished-work protocol](Theory/Core/ITSM_UNFINISHED_WORK_COMPLETION_PROTOCOL_2026-11-05.md).
 Maintain the short handoff when the order changes. This tracker carries
 navigation and task status. Scientific authority stays with the owning files.
+
+| 2026-11-16 | A16.2 | Fresh radial-rate pressure/geometry evolution on [0,0.05] at five modes is COMPLETE_SCOPED; the full route remains OPEN. ell=64 has a certified sign reversal, preserving nonmonotonic response. 88 controls, 43 independent rational checks, seven final replay/preservation checks, byte-identical full/audit replays and 671 unchanged inputs. V1 stopped and V2 failed-control artifacts preserved; V2/V3 trajectory tiles are identical. Next finite-time augmented scalar-state map and controlled elimination, without EOS, bath, physical-window or matching promotion. [Owner](Theory/Gates/RES-001/RES001_A16_PRESSURE_EVOLUTION_V3_REPORT_2026-11-16.md). |
+
+| 2026-11-16 | A16.2/A16.5 | Finite-time scalar inversion and exact retained/pressure history laws with finite gains are COMPLETE_SCOPED. Actual hidden principal K=I+ww^T/13 and moving weight retained; unit-speed guess rejected and preserved. Hidden initial pressure forcing has derivative -2341/840 while retained values initially vanish. Main 59/59, independent rational audit 90/90, seven preservation/replay checks; byte-identical replays and 709 pinned inputs unchanged. Bounds do not support deleting feedback or short-memory claims. Next evaluated two-time kernels and controlled useful reduction; physical/matching gates unchanged. [Owner](Theory/Gates/RES-001/RES001_A16_FINITE_STATE_HISTORY_V3_REPORT_2026-11-16.md). |
+
+| 2026-11-19 | A16.2/A16.5 | Validated continuous two-time kernels and history pressure/rate reconstruction COMPLETE_SCOPED. Exact replay of full reference polynomials; hidden initial forcing and feedback retained; full-triangle kernel and response errors <1e-8. Main 115/115, independent coefficient/error/archive audit 217/217, 26 final replay/preservation checks; byte-identical lossless archives and 721 unchanged inputs. Endpoint feedback is smaller but nonzero; no general memoryless approximation follows. Next independent retained-only Volterra evolution. Audit V1 constant-root support failure preserved; main equations unchanged. [Owner](Theory/Gates/RES-001/RES001_A16_NUMERICAL_KERNEL_V1_REPORT_2026-11-19.md). |
+
+| 2026-11-19 | A16.2/A16.5 | Independent retained Volterra evolution COMPLETE_SCOPED. Reference-free filtered coefficients, eight retained values and four causal memory quadratures; solution sealed before comparison. Actual-action lift gives uniform state/pressure/rate error bounds, preserving the ell=64 endpoint sign. Main 66/66, independent exact-integer/rational audit 148/148, 56 replay/preservation checks; all 779 input hashes unchanged. V1 metadata serialization failure preserved; V1/V2 curves identical. Optional further probes/reductions; core physical-domain/matching and thermal/mechanism obligations remain open. [Owner](Theory/Gates/RES-001/RES001_A16_VOLTERRA_EVOLUTION_V2_REPORT_2026-11-19.md). |

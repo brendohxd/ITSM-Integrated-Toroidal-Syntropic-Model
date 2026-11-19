@@ -3333,3 +3333,31 @@ initial metric slice. Inherits all row, inverse/Green/range, charge/gauge/
 mean, force, root/rate and energy/coercivity owners.
 R-tau UNADOPTED; review DEFERRED; Rule9_cleared=false;
 physics_pass=false; gate_effect=NONE; G1-G6 INCOMPLETE.
+
+## A16 state/current/pressure and causal history checkpoint — 19 November 2026
+
+[Checkpoint](../Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-19.md) records the
+complete undelivered 14–19 November sequence from Campbell's bounded gap
+assessment through portal allocation, exact history, closure tests, scalar
+state inversion, action-derived current matching and scalar pressure audits.
+The new radial-rate direction has a certified finite-time response, including
+the high-mode sign reversal. Finite-state/history and numerical two-time
+kernel packages retain actual principal weights, all drift, hidden initial
+forcing and feedback. Prior failed implementations remain immutable.
+
+[Latest owner](RES-001/RES001_A16_VOLTERRA_EVOLUTION_V2_REPORT_2026-11-19.md):
+reference-free kernel inputs independently advance eight retained variables
+and four history quadratures, with trajectories sealed before comparison.
+66/66 main and 148/148 separate exact-integer/rational audit checks; both
+packages replay exactly and 779 source hashes remain unchanged. V1's NumPy
+metadata serialization failure is preserved; its trajectories equal V2's.
+These are computational controls, not independent peer review.
+
+README, changelog, dashboard, queue, standing routes and deferred-review
+register carry the current result and scientific limits. The signed delivery
+preserves original bytes and excludes older unrelated manuscript/figure/tool
+work. No external review, paper publication, vault sync or site deployment.
+The main scientific handoff remains physical-domain/matching work; extra A16
+probes and approximation studies are optional. R-tau UNADOPTED; G1–G6
+INCOMPLETE; MAT BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED; Rule-9 DEFERRED;
+physics_pass=false; gate_effect=NONE.

@@ -1,0 +1,303 @@
+{
+  "checks": {
+    "16_reservoir_configuration_0_scalar_energy_zero": true,
+    "16_reservoir_configuration_0_scalar_momentum_zero": true,
+    "16_reservoir_configuration_1_scalar_energy_zero": true,
+    "16_reservoir_configuration_1_scalar_momentum_zero": true,
+    "16_reservoir_configuration_area_pressure_identity": true,
+    "16_reservoir_configuration_flux_area_identity": true,
+    "16_reservoir_normalized_rate_0_scalar_energy_zero": true,
+    "16_reservoir_normalized_rate_0_scalar_momentum_zero": true,
+    "16_reservoir_normalized_rate_1_scalar_energy_zero": true,
+    "16_reservoir_normalized_rate_1_scalar_momentum_zero": true,
+    "16_reservoir_normalized_rate_area_pressure_identity": true,
+    "16_reservoir_normalized_rate_flux_area_identity": true,
+    "32_reservoir_configuration_0_scalar_energy_zero": true,
+    "32_reservoir_configuration_0_scalar_momentum_zero": true,
+    "32_reservoir_configuration_1_scalar_energy_zero": true,
+    "32_reservoir_configuration_1_scalar_momentum_zero": true,
+    "32_reservoir_configuration_area_pressure_identity": true,
+    "32_reservoir_configuration_flux_area_identity": true,
+    "32_reservoir_normalized_rate_0_scalar_energy_zero": true,
+    "32_reservoir_normalized_rate_0_scalar_momentum_zero": true,
+    "32_reservoir_normalized_rate_1_scalar_energy_zero": true,
+    "32_reservoir_normalized_rate_1_scalar_momentum_zero": true,
+    "32_reservoir_normalized_rate_area_pressure_identity": true,
+    "32_reservoir_normalized_rate_flux_area_identity": true,
+    "4_reservoir_configuration_0_scalar_energy_zero": true,
+    "4_reservoir_configuration_0_scalar_momentum_zero": true,
+    "4_reservoir_configuration_1_scalar_energy_zero": true,
+    "4_reservoir_configuration_1_scalar_momentum_zero": true,
+    "4_reservoir_configuration_area_pressure_identity": true,
+    "4_reservoir_configuration_flux_area_identity": true,
+    "4_reservoir_normalized_rate_0_scalar_energy_zero": true,
+    "4_reservoir_normalized_rate_0_scalar_momentum_zero": true,
+    "4_reservoir_normalized_rate_1_scalar_energy_zero": true,
+    "4_reservoir_normalized_rate_1_scalar_momentum_zero": true,
+    "4_reservoir_normalized_rate_area_pressure_identity": true,
+    "4_reservoir_normalized_rate_flux_area_identity": true,
+    "64_reservoir_configuration_0_scalar_energy_zero": true,
+    "64_reservoir_configuration_0_scalar_momentum_zero": true,
+    "64_reservoir_configuration_1_scalar_energy_zero": true,
+    "64_reservoir_configuration_1_scalar_momentum_zero": true,
+    "64_reservoir_configuration_area_pressure_identity": true,
+    "64_reservoir_configuration_flux_area_identity": true,
+    "64_reservoir_normalized_rate_0_scalar_energy_zero": true,
+    "64_reservoir_normalized_rate_0_scalar_momentum_zero": true,
+    "64_reservoir_normalized_rate_1_scalar_energy_zero": true,
+    "64_reservoir_normalized_rate_1_scalar_momentum_zero": true,
+    "64_reservoir_normalized_rate_area_pressure_identity": true,
+    "64_reservoir_normalized_rate_flux_area_identity": true,
+    "8_reservoir_configuration_0_scalar_energy_zero": true,
+    "8_reservoir_configuration_0_scalar_momentum_zero": true,
+    "8_reservoir_configuration_1_scalar_energy_zero": true,
+    "8_reservoir_configuration_1_scalar_momentum_zero": true,
+    "8_reservoir_configuration_area_pressure_identity": true,
+    "8_reservoir_configuration_flux_area_identity": true,
+    "8_reservoir_normalized_rate_0_scalar_energy_zero": true,
+    "8_reservoir_normalized_rate_0_scalar_momentum_zero": true,
+    "8_reservoir_normalized_rate_1_scalar_energy_zero": true,
+    "8_reservoir_normalized_rate_1_scalar_momentum_zero": true,
+    "8_reservoir_normalized_rate_area_pressure_identity": true,
+    "8_reservoir_normalized_rate_flux_area_identity": true,
+    "potential_derivatives": true
+  },
+  "gate_effect": "NONE",
+  "inputs": {
+    "Analysis/MasterTests/outputs/a16_matched_current_v1_20261116/receipt.json": "757faa3d627d79ace53e7a521e39e7fe4b2bf50af0ca3667ffd46b96ac731ec3",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_dust_remainder_v1.py": "01b0a895fde8d979dd1d939780468748daabfabe3ecfb31dae4c5192ba3c0b88",
+    "Analysis/MasterTests/test_a16_scalar_pressure_v1.py": "95ea86809f3732d8a8e0f9c961a45d2fdd82ad71690af180dcca408427686856",
+    "Theory/Gates/RES-001/RES001_A16_SCALAR_PRESSURE_V1_CONTRACT_2026-11-16.md": "326c668a8c730c17fb04c6b433daa5e32314c271a2d5a536bfb4832470c84171"
+  },
+  "physics_pass": false,
+  "results": [
+    {
+      "ell": 4,
+      "records": [
+        {
+          "area_acceleration_difference": "70230/28147",
+          "pressure_difference": "-77253/28147",
+          "pressures_identical": false,
+          "reservoir_input": "reservoir_configuration",
+          "scalar_stress": [
+            {
+              "energy": "0",
+              "kinetic": "-33/14",
+              "potential": "33/14",
+              "pressure": "-33/7"
+            },
+            {
+              "energy": "0",
+              "kinetic": "-3960/4021",
+              "potential": "3960/4021",
+              "pressure": "-7920/4021"
+            }
+          ]
+        },
+        {
+          "area_acceleration_difference": "11705/44231",
+          "pressure_difference": "-2341/8042",
+          "pressures_identical": false,
+          "reservoir_input": "reservoir_normalized_rate",
+          "scalar_stress": [
+            {
+              "energy": "0",
+              "kinetic": "0",
+              "potential": "0",
+              "pressure": "0"
+            },
+            {
+              "energy": "0",
+              "kinetic": "2341/16084",
+              "potential": "-2341/16084",
+              "pressure": "2341/8042"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ell": 8,
+      "records": [
+        {
+          "area_acceleration_difference": "70230/28147",
+          "pressure_difference": "-77253/28147",
+          "pressures_identical": false,
+          "reservoir_input": "reservoir_configuration",
+          "scalar_stress": [
+            {
+              "energy": "0",
+              "kinetic": "-33/14",
+              "potential": "33/14",
+              "pressure": "-33/7"
+            },
+            {
+              "energy": "0",
+              "kinetic": "-3960/4021",
+              "potential": "3960/4021",
+              "pressure": "-7920/4021"
+            }
+          ]
+        },
+        {
+          "area_acceleration_difference": "11705/44231",
+          "pressure_difference": "-2341/8042",
+          "pressures_identical": false,
+          "reservoir_input": "reservoir_normalized_rate",
+          "scalar_stress": [
+            {
+              "energy": "0",
+              "kinetic": "0",
+              "potential": "0",
+              "pressure": "0"
+            },
+            {
+              "energy": "0",
+              "kinetic": "2341/16084",
+              "potential": "-2341/16084",
+              "pressure": "2341/8042"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ell": 16,
+      "records": [
+        {
+          "area_acceleration_difference": "70230/28147",
+          "pressure_difference": "-77253/28147",
+          "pressures_identical": false,
+          "reservoir_input": "reservoir_configuration",
+          "scalar_stress": [
+            {
+              "energy": "0",
+              "kinetic": "-33/14",
+              "potential": "33/14",
+              "pressure": "-33/7"
+            },
+            {
+              "energy": "0",
+              "kinetic": "-3960/4021",
+              "potential": "3960/4021",
+              "pressure": "-7920/4021"
+            }
+          ]
+        },
+        {
+          "area_acceleration_difference": "11705/44231",
+          "pressure_difference": "-2341/8042",
+          "pressures_identical": false,
+          "reservoir_input": "reservoir_normalized_rate",
+          "scalar_stress": [
+            {
+              "energy": "0",
+              "kinetic": "0",
+              "potential": "0",
+              "pressure": "0"
+            },
+            {
+              "energy": "0",
+              "kinetic": "2341/16084",
+              "potential": "-2341/16084",
+              "pressure": "2341/8042"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ell": 32,
+      "records": [
+        {
+          "area_acceleration_difference": "70230/28147",
+          "pressure_difference": "-77253/28147",
+          "pressures_identical": false,
+          "reservoir_input": "reservoir_configuration",
+          "scalar_stress": [
+            {
+              "energy": "0",
+              "kinetic": "-33/14",
+              "potential": "33/14",
+              "pressure": "-33/7"
+            },
+            {
+              "energy": "0",
+              "kinetic": "-3960/4021",
+              "potential": "3960/4021",
+              "pressure": "-7920/4021"
+            }
+          ]
+        },
+        {
+          "area_acceleration_difference": "11705/44231",
+          "pressure_difference": "-2341/8042",
+          "pressures_identical": false,
+          "reservoir_input": "reservoir_normalized_rate",
+          "scalar_stress": [
+            {
+              "energy": "0",
+              "kinetic": "0",
+              "potential": "0",
+              "pressure": "0"
+            },
+            {
+              "energy": "0",
+              "kinetic": "2341/16084",
+              "potential": "-2341/16084",
+              "pressure": "2341/8042"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ell": 64,
+      "records": [
+        {
+          "area_acceleration_difference": "70230/28147",
+          "pressure_difference": "-77253/28147",
+          "pressures_identical": false,
+          "reservoir_input": "reservoir_configuration",
+          "scalar_stress": [
+            {
+              "energy": "0",
+              "kinetic": "-33/14",
+              "potential": "33/14",
+              "pressure": "-33/7"
+            },
+            {
+              "energy": "0",
+              "kinetic": "-3960/4021",
+              "potential": "3960/4021",
+              "pressure": "-7920/4021"
+            }
+          ]
+        },
+        {
+          "area_acceleration_difference": "11705/44231",
+          "pressure_difference": "-2341/8042",
+          "pressures_identical": false,
+          "reservoir_input": "reservoir_normalized_rate",
+          "scalar_stress": [
+            {
+              "energy": "0",
+              "kinetic": "0",
+              "potential": "0",
+              "pressure": "0"
+            },
+            {
+              "energy": "0",
+              "kinetic": "2341/16084",
+              "potential": "-2341/16084",
+              "pressure": "2341/8042"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": "DEFERRED",
+  "scope": "Combined declared canonical scalar-plus-potential stress at matched initial points; not independent reservoir stress, irreversible memory or finite-time physical clearance.",
+  "status": "PASS_SCALAR_STRESS_AND_INITIAL_GEOMETRIC_RESPONSE_AUDIT"
+}

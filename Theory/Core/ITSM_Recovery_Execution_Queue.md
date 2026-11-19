@@ -25,6 +25,25 @@ scientific failures and missing-input holds for affected uses. The review
 backlog is outside the active research critical path until the operator
 resumes it; canonical closure and publication readiness still require review.
 
+## Current checkpoint and handoff — 19 November 2026
+
+Use the [standing routes](../../RESEARCH_ROUTES.md) for the current eligible
+work. The [checkpoint evidence map](../Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-19.md)
+records the 14–19 November A16 state/current/pressure/history sequence.
+[Independent Volterra evolution](../Gates/RES-001/RES001_A16_VOLTERRA_EVOLUTION_V2_REPORT_2026-11-19.md)
+is COMPLETE_SCOPED for the original conditional B1 radial seed, five modes
+and [0,0.05]. It preserves eight retained values plus four causal memory
+integrals, hidden initial forcing, feedback, all moving maps and controls.
+66 calculation and 148 separate audit checks pass; fresh replays are exact.
+
+This completes that computational consistency loop; it neither adopts R-tau
+nor supplies its evolving physical domain. Continue the existing A09 physical-
+domain/harmonic-control task and other supported core matching work under
+their owners. Extra A16 probes/reductions are optional. No new action is
+selected. G1–G6, physical interactions/window and MAT matching remain
+incomplete; review DEFERRED; physics_pass=false; gate_effect=NONE.
+Checkpoint preparation/delivery does not resume or complete a native goal.
+
 ## Proposed expanded goal programme — 27 October 2026
 
 Operator requested a more thorough programme that a goal can follow through

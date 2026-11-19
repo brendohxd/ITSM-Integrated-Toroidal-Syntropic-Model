@@ -1,5 +1,50 @@
 # ITSM Changelog & Archive History
 
+## Condensate state, two-time kernels and independent history evolution — 19 November 2026
+
+Work since verified signed recovery checkpoint `7ccbeff0bd1b84eeb45ff153a9caac26f2f7c813`
+is mapped in the [checkpoint](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-19.md).
+
+- Complete the bounded Campbell follow-through assessment and preserve all ten
+  research leads. The transferable state/history questions do not adopt a
+  new interaction, ontology, thermal bath or organizing force.
+- Audit scalar-portal allocation: sector currents depend on allocation while
+  total action/stress is unchanged. Retain exact hidden-initial-state forcing
+  and noncommuting feedback. Lower retained maps fail their initial closure
+  tests; an exact twelve-scalar/eight-complement split supplies a sufficient
+  scalar state in the registered chart.
+- Correct the matter-current dictionary using the action-derived clock flux.
+  Match actual current and initial geometry before comparing stress. Combined
+  scalar pressure differs at equal scalar energy; condensate radial rate is
+  the additional initial pressure-rate information.
+- Certify the new radial-rate pressure/geometry response over [0,0.05] at
+  ell=4,8,16,32,64 (88 controls plus 43 arithmetic audit controls). Preserve
+  the ell=64 sign reversal and the zero-containing intervals.
+- Prove finite-time scalar-map inversion and bounded exact 8+4 history laws
+  (59 plus 90 controls). Derive the actual hidden principal K=I+ww^T/13 and
+  its moving evolution weight, including momentum and weight drift.
+- Evaluate continuous two-time kernels and pressure/rate reconstruction
+  (115 plus 217 controls). Retain lossless polynomial coefficient archives
+  and complete uniform error budgets. Hidden initial motion dominates the
+  tested endpoint pressure; smaller nonzero feedback is not a general
+  short-memory or instantaneous-approximation result.
+- Independently evolve the retained Volterra law from reference-free kernel
+  inputs, with eight retained values and four causal quadrature accumulators
+  (66 plus 148 controls). Seal trajectories before comparison; reproduce the
+  full response with uniform errors and byte-identical replay. The
+  [latest report](Theory/Gates/RES-001/RES001_A16_VOLTERRA_EVOLUTION_V2_REPORT_2026-11-19.md) preserves all 779 pinned sources and the metadata-
+  serialization failure whose V1/V2 trajectories are identical.
+- Preserve all failed source versions, receipts, hashes and sidecars. Update
+  README, the standing routes, dashboard, execution queue, worklog and
+  deferred-review register; record an exact byte-level delivery manifest.
+
+All results remain conditional original R4C1/B1 controls for the declared
+domain/seed. Computational audits are not independent peer review. Physical
+health, a nonlinear/interacting window, operational thermodynamics and
+identifying matter/force matching remain open. R-tau is unchanged/unadopted;
+G1–G6 incomplete, MAT blocked, K_Q not derived, V not computed. No canonical
+promotion, paper release or website deployment is included in this checkpoint.
+
 ## Initial coupled energy checkpoint — 14 November 2026
 
 The [standing routes](RESEARCH_ROUTES.md) and

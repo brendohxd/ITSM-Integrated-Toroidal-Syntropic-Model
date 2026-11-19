@@ -1,0 +1,279 @@
+{
+  "checks": {
+    "16_direct_canonical_pressure_derivative": true,
+    "16_pressure_rate_factorization": true,
+    "16_quotient_matches_canonical_derivative": true,
+    "16_radial_direction_preserves_all_holds": true,
+    "16_radial_modulus_rate_two": true,
+    "16_rank_nullspace_dimension": true,
+    "16_rank_witness_agreement": true,
+    "32_direct_canonical_pressure_derivative": true,
+    "32_pressure_rate_factorization": true,
+    "32_quotient_matches_canonical_derivative": true,
+    "32_radial_direction_preserves_all_holds": true,
+    "32_radial_modulus_rate_two": true,
+    "32_rank_nullspace_dimension": true,
+    "32_rank_witness_agreement": true,
+    "4_direct_canonical_pressure_derivative": true,
+    "4_pressure_rate_factorization": true,
+    "4_quotient_matches_canonical_derivative": true,
+    "4_radial_direction_preserves_all_holds": true,
+    "4_radial_modulus_rate_two": true,
+    "4_rank_nullspace_dimension": true,
+    "4_rank_witness_agreement": true,
+    "64_direct_canonical_pressure_derivative": true,
+    "64_pressure_rate_factorization": true,
+    "64_quotient_matches_canonical_derivative": true,
+    "64_radial_direction_preserves_all_holds": true,
+    "64_radial_modulus_rate_two": true,
+    "64_rank_nullspace_dimension": true,
+    "64_rank_witness_agreement": true,
+    "8_direct_canonical_pressure_derivative": true,
+    "8_pressure_rate_factorization": true,
+    "8_quotient_matches_canonical_derivative": true,
+    "8_radial_direction_preserves_all_holds": true,
+    "8_radial_modulus_rate_two": true,
+    "8_rank_nullspace_dimension": true,
+    "8_rank_witness_agreement": true,
+    "pressure_background_drift_retained": true,
+    "pressure_lapse_rate_correction_retained": true
+  },
+  "gate_effect": "NONE",
+  "held_row_names": [
+    "N_tau",
+    "F_tau",
+    "area",
+    "area_coordinate_rate",
+    "Vx",
+    "Pi",
+    "P_n",
+    "reservoir",
+    "reservoir_normalized_rate",
+    "scalar_energy",
+    "scalar_pressure",
+    "normalized_modulus_squared_rate"
+  ],
+  "inputs": {
+    "Analysis/MasterTests/outputs/r4c1_g3n5_dust_finite_k_attempt_01/matrices.json": "9d30b77bd23ae63e1bc51c9efec1de51f1a318c88aaa3b90fa9bf475fe305540",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_dust_remainder_v1.py": "01b0a895fde8d979dd1d939780468748daabfabe3ecfb31dae4c5192ba3c0b88",
+    "Analysis/MasterTests/test_a16_pressure_state_v1.py": "7d4bdcf282375e2b7d809cf34769b38412baac9ae28205b0b61b7b99d8127f58",
+    "Theory/Gates/RES-001/RES001_A16_MATCHED_CURRENT_V1_REPORT_2026-11-16.md": "e455a689a8187070b8de6692ad9058462d6f0c7f82c2b69e24a4cde4f5bc125b",
+    "Theory/Gates/RES-001/RES001_A16_PRESSURE_STATE_V1_CONTRACT_2026-11-16.md": "a0583c73ef320c099d0fc1d9f9717d2d72d4c0f255e9779e3238c772261dcf7f"
+  },
+  "physics_pass": false,
+  "results": [
+    {
+      "ell": 4,
+      "held_plus_pressure_rank": 11,
+      "held_rank": 10,
+      "modulus_rate_coefficient": "-2341/1680",
+      "plus_modulus_rate_rank": 12,
+      "plus_pressure_rate_rank": 12,
+      "pressure_rate_coefficients": [
+        "0",
+        "269*I/780",
+        "0",
+        "54029/3120",
+        "956*I/195",
+        "672/65 + 36109*sqrt(4006695)/6006000",
+        "0",
+        "-554949/852124",
+        "-33/7",
+        "-sqrt(4006695)/770 - 180/2341",
+        "180/2341 - sqrt(4006695)/770",
+        "-2341/1680"
+      ],
+      "witnesses": [
+        {
+          "direction": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "11705/336",
+            "0",
+            "0",
+            "0"
+          ],
+          "modulus_rate": "11705/168",
+          "pressure_rate": "-5480281/56448"
+        }
+      ]
+    },
+    {
+      "ell": 8,
+      "held_plus_pressure_rank": 11,
+      "held_rank": 10,
+      "modulus_rate_coefficient": "-2341/1680",
+      "plus_modulus_rate_rank": 12,
+      "plus_pressure_rate_rank": 12,
+      "pressure_rate_coefficients": [
+        "0",
+        "11021*I/390",
+        "0",
+        "226061/3120",
+        "7288*I/195",
+        "2688/65 + 154381*sqrt(4006695)/6006000",
+        "0",
+        "231627/852124",
+        "-33/7",
+        "-sqrt(4006695)/770 - 180/2341",
+        "180/2341 - sqrt(4006695)/770",
+        "-2341/1680"
+      ],
+      "witnesses": [
+        {
+          "direction": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "11705/336",
+            "0",
+            "0",
+            "0"
+          ],
+          "modulus_rate": "11705/168",
+          "pressure_rate": "-5480281/56448"
+        }
+      ]
+    },
+    {
+      "ell": 16,
+      "held_plus_pressure_rank": 11,
+      "held_rank": 10,
+      "modulus_rate_coefficient": "-2341/1680",
+      "plus_modulus_rate_rank": 12,
+      "plus_pressure_rate_rank": 12,
+      "pressure_rate_coefficients": [
+        "0",
+        "54029*I/195",
+        "0",
+        "914189/3120",
+        "57584*I/195",
+        "10752/65 + 627469*sqrt(4006695)/6006000",
+        "0",
+        "3377931/852124",
+        "-33/7",
+        "-sqrt(4006695)/770 - 180/2341",
+        "180/2341 - sqrt(4006695)/770",
+        "-2341/1680"
+      ],
+      "witnesses": [
+        {
+          "direction": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "11705/336",
+            "0",
+            "0",
+            "0"
+          ],
+          "modulus_rate": "11705/168",
+          "pressure_rate": "-5480281/56448"
+        }
+      ]
+    },
+    {
+      "ell": 32,
+      "held_plus_pressure_rank": 11,
+      "held_rank": 10,
+      "modulus_rate_coefficient": "-2341/1680",
+      "plus_modulus_rate_rank": 12,
+      "plus_pressure_rate_rank": 12,
+      "pressure_rate_coefficients": [
+        "0",
+        "452122*I/195",
+        "0",
+        "3666701/3120",
+        "459232*I/195",
+        "43008/65 + 2519821*sqrt(4006695)/6006000",
+        "0",
+        "15963147/852124",
+        "-33/7",
+        "-sqrt(4006695)/770 - 180/2341",
+        "180/2341 - sqrt(4006695)/770",
+        "-2341/1680"
+      ],
+      "witnesses": [
+        {
+          "direction": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "11705/336",
+            "0",
+            "0",
+            "0"
+          ],
+          "modulus_rate": "11705/168",
+          "pressure_rate": "-5480281/56448"
+        }
+      ]
+    },
+    {
+      "ell": 64,
+      "held_plus_pressure_rank": 11,
+      "held_rank": 10,
+      "modulus_rate_coefficient": "-2341/1680",
+      "plus_modulus_rate_rank": 12,
+      "plus_pressure_rate_rank": 12,
+      "pressure_rate_coefficients": [
+        "0",
+        "3656756*I/195",
+        "0",
+        "14676749/3120",
+        "3670976*I/195",
+        "172032/65 + 10089229*sqrt(4006695)/6006000",
+        "0",
+        "66304011/852124",
+        "-33/7",
+        "-sqrt(4006695)/770 - 180/2341",
+        "180/2341 - sqrt(4006695)/770",
+        "-2341/1680"
+      ],
+      "witnesses": [
+        {
+          "direction": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "11705/336",
+            "0",
+            "0",
+            "0"
+          ],
+          "modulus_rate": "11705/168",
+          "pressure_rate": "-5480281/56448"
+        }
+      ]
+    }
+  ],
+  "review": "DEFERRED",
+  "scope": "Canonical combined scalar pressure at the registered initial event. Not a material equation of state, irreversible bath, physical-domain certificate or finite-time constitutive closure.",
+  "status": "PASS_INITIAL_PRESSURE_STATE_INFORMATION_CONTROL"
+}

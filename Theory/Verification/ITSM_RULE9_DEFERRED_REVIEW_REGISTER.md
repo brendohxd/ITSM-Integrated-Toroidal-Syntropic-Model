@@ -5841,3 +5841,100 @@ initial metric slice. Inherits all row, inverse/Green/range, charge/gauge/
 mean, force, root/rate and energy/coercivity owners.
 R-tau UNADOPTED; review DEFERRED; Rule9_cleared=false;
 physics_pass=false; gate_effect=NONE; G1-G6 INCOMPLETE.
+
+## A16.2 matched current and scalar pressure — 16 November 2026
+
+[Owning report](../Gates/RES-001/RES001_A16_MATCHED_CURRENT_V1_REPORT_2026-11-16.md).
+Conditional original B1 initial-point control at five nonzero modes. Actual
+clock-current/geometry matching removes the prior D-rate mismatch; combined
+canonical scalar energy agrees while pressure differs between condensate
+compensations. The initial geometric response agrees exactly with the pressure
+audit. 182 comparison and 61 scalar-stress controls, byte-identical replays.
+Inherits reconstructed scalar-state, actual-current, original action/export
+and all parent domain/review limitations. No finite-time new-seed certificate,
+thermal reservoir, isolated pump, matched coefficient or organizing mechanism.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE.
+Next: operational stress/state closure and justified pressure/evolution control.
+
+## A16.2 initial pressure-state sufficiency — 16 November 2026
+
+[Owner](../Gates/RES-001/RES001_A16_PRESSURE_STATE_V1_REPORT_2026-11-16.md).
+Conditional original B1 point and five nonzero modes. Ten current/geometry/force/
+reservoir/energy rows plus pressure leave one radial-rate direction. Adding the
+normalized modulus-squared rate determines the initial pressure-rate row; 37
+controls and byte-identical replay. Inherits original action/export, scalar-state,
+current and pressure audits and their domain/review qualifications. No finite-time
+inverse/evolution certificate, physical health, bath, entropy or matching claim.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE.
+Next: controlled coupled stress/geometry response for the new radial direction.
+
+
+## A16.2 continuous finite-mode pressure response — 16 November 2026
+
+[Owner](../Gates/RES-001/RES001_A16_PRESSURE_EVOLUTION_V3_REPORT_2026-11-16.md).
+Conditional original R4C1/B1, new radial-rate linear seed, ell=4,8,16,32,64,
+t in [0,0.05]. Fresh continuous pressure/metric-area numerical certificate;
+ell=64 retains a sign reversal. Main 88/88; independent rational audit 43/43;
+both byte-identical replays; seven final preservation checks; 671 pinned inputs.
+Inherits original action/export/constraints, full-vector propagator, background,
+scalar-state/current/pressure owners and their substantive domain qualifications.
+V1 stopped and V2 failed controls remain; V3's rounding-aware symmetry bound
+changes no trajectory tiles. This is not a healthy physical window, nonlinear
+stability, irreversible memory, entropy, matching or canonical promotion.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE.
+Next finite-time augmented scalar-state map and controlled history elimination.
+
+
+## A16.2 finite-time scalar chart and bounded history — 16 November 2026
+
+[Owner](../Gates/RES-001/RES001_A16_FINITE_STATE_HISTORY_V3_REPORT_2026-11-16.md).
+Conditional unchanged R4C1/B1, [0,0.05], ell=4,8,16,32,64. Exact scalar
+map/inverse/drift and 8+4 retained/condensate generator; independently bounded
+hidden propagator with actual K and W_dot. Exact pressure/retained history
+laws retain initial forcing and feedback; finite kernel gains are explicit.
+Main 59/59; independent rational/pressure audit 90/90; byte-identical replays,
+seven final preservation checks; all 709 pinned inputs unchanged. V1 unit-speed
+failure and V2 symbolic-generator mismatch remain preserved. No evaluated
+two-time kernel, useful instantaneous approximation, thermal reservoir,
+physical interacting window, healthy coupled modes, matching or promotion.
+Inherits action/export/constraints, scalar/pressure/current, background and
+full-vector propagator owners and their substantive qualifications.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE.
+Next actual kernel evaluation with controlled errors and a useful reduction test.
+
+
+## A16.2 validated two-time kernels and history reconstruction — 19 November 2026
+
+[Owner](../Gates/RES-001/RES001_A16_NUMERICAL_KERNEL_V1_REPORT_2026-11-19.md).
+Unchanged conditional original R4C1/B1, [0,0.05], ell=4,8,16,32,64. Numerical
+retained/pressure kernels have uniform triangle error bounds; reconstruction
+uses the certified full retained history, preserving initial forcing and
+feedback. Main 115/115; independent coefficient/budget/archive audit 217/217;
+byte-identical replays of all curve archives/receipts, 26 final checks, 721
+unchanged source hashes. First audit's unsupported sqrt(2) constant is preserved;
+V2 independently encloses roots with exact integer inequalities. No main-equation
+change. Inherits scalar/history, full-pressure, background, export/constraint
+and propagator owners with their substantive physical-domain qualifications.
+Independent retained-only Volterra evolution, reduction error, time-scale
+separation, thermal state, physical health/window and microscopic matching
+remain open. Endpoint small feedback for one seed does not discharge them.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE.
+
+
+## A16.2 independent retained history evolution — 19 November 2026
+
+[Owner](../Gates/RES-001/RES001_A16_VOLTERRA_EVOLUTION_V2_REPORT_2026-11-19.md).
+Unchanged conditional original R4C1/B1, registered radial seed, [0,0.05], five
+nonzero modes. Reference-free kernel inputs independently advance eight
+retained values and four causal quadratures; curves sealed before reference
+comparison. Moving same-action error lift and full-vector propagator certify
+state/pressure/rate errors. Main 66/66; independent exact-integer/rational
+audit 148/148; byte-identical replays, 56 final checks and 779 unchanged pins.
+V1 metadata serialization failure is preserved; V1/V2 curves are identical.
+Inherits numerical-kernel, finite-state/history, pressure, background/export,
+constraint and full-vector propagator owners and their physical qualifications.
+No memory-free degrees-of-freedom reduction, general small-feedback claim,
+thermal bath, nonlinear/interacting physical window, healthy modes or matching
+promotion. Additional compatible probes/controlled approximation tests remain
+optional. Core physical-domain and matching work remains scientifically decisive.
+Review DEFERRED; Rule9_cleared=false; physics_pass=false; gate_effect=NONE.

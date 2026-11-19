@@ -12,6 +12,26 @@
 **Resume research:** [ITSM research routes](RESEARCH_ROUTES.md) tracks planned,
 unfinished and completed work, with route IDs and a current handoff.
 
+## Condensate state and causal-history checkpoint — 19 November 2026
+
+The conditional R4C1/B1 calculation now has a controlled state/history
+description. Hidden condensate motion changes pressure even when the smaller
+retained state initially agrees. Actual two-time kernels and an independently
+advanced Volterra history law reproduce the full registered response for five
+modes through t=0.05. The eight retained values carry four memory integrals;
+this is a computational equivalence, not a memory-free or new-force claim.
+
+The [latest owner](Theory/Gates/RES-001/RES001_A16_VOLTERRA_EVOLUTION_V2_REPORT_2026-11-19.md) records 66/66 calculation controls and 148/148
+separate exact-integer/rational audit controls, byte-identical replay and 779
+preserved source hashes. The [checkpoint evidence map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-19.md)
+records the full 14–19 November sequence, including earlier failures and
+corrections. These checks are not independent peer review or physical clearance.
+
+The [standing routes](RESEARCH_ROUTES.md) retain the main physical-domain and
+matching priorities. The separate R-tau route remains unadopted and its actual
+evolving domain is open. G1–G6 remain incomplete; MAT-001 is blocked, K_Q is
+not derived and V is not computed. Rule-9 review remains deferred.
+
 ## Initial coupled energy checkpoint — 14 November 2026
 
 The [standing routes](RESEARCH_ROUTES.md) and

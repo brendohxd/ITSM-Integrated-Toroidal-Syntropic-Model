@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "U1_portal_invariance": true,
+    "all_total_stress_components": true,
+    "fixed_temperature_heat_shift": true,
+    "independent_component_allocation": true,
+    "plenum_energy_balance": true,
+    "plenum_pressure_cancels_expansion": true,
+    "rational_entropy_shift_opposite_signs": true,
+    "reject_uncompensated_current": true,
+    "reject_uncompensated_total_stress": true,
+    "reject_wrong_raised_time_sign": true,
+    "reservoir_energy_balance": true,
+    "reservoir_pressure_cancels_expansion": true,
+    "total_action_density": true,
+    "total_potential_euler_r": true,
+    "total_potential_euler_u": true,
+    "total_potential_euler_v": true,
+    "trace_free_spatial_stress_unchanged": true
+  },
+  "formulae": {
+    "Wdot": "g*r**2*u*ud/2 + g*r**2*v*vd/2 + g*r*rd*u**2/2 + g*r*rd*v**2/2",
+    "delta_Qsyn0": "-eta*g*r**2*u*ud/2 - eta*g*r**2*v*vd/2 - eta*g*r*rd*u**2/2 - eta*g*r*rd*v**2/2",
+    "naive_entropy_shift": "eta*g*r*(TP - TR)*(r*u*ud + r*v*vd + rd*u**2 + rd*v**2)/(2*TP*TR)"
+  },
+  "gate_effect": "NONE",
+  "inputs": {
+    "Analysis/MasterTests/test_a16_sector_split_v1.py": "153cc20ce1993a6dfeeb566c3acc93d8897fa43732562583e2383bd3a1abe982",
+    "Theory/Gates/RES-001/RES001_A16_SECTOR_SPLIT_V1_CONTRACT_2026-11-15.md": "068f3763b39de133f8c890f9d5febde58fec3f362a2b08997e9e88c185456622",
+    "papers/R4C1-Covariant-Exchange-Model/main.tex": "b8f83186cdce001f99175ab379b58accb6661de57b82e258f920284329b2da22",
+    "papers/Syntropic-Thermodynamics/ITSM_Covariant_Entropy_Accounting_v0.7.1-conditional-draft.tex": "d7d0514c87744ad6f8c1efbdb788f385b3672da060349b42e5476664225f9dd3"
+  },
+  "physics_pass": false,
+  "rational_entropy_shift": [
+    "-7/2",
+    "7/2"
+  ],
+  "review": "DEFERRED",
+  "scope": "Constant portal-allocation bookkeeping; no temperatures, entropy law, physical domain or memory kernel derived.",
+  "status": "PASS_EXISTING_PORTAL_ALLOCATION_CONTROL"
+}

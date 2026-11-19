@@ -1,5 +1,26 @@
 # Active Research & Gate Dashboard
 
+## A16.2 independent history evolution — 19 November 2026
+
+The [latest owner](Theory/Gates/RES-001/RES001_A16_VOLTERRA_EVOLUTION_V2_REPORT_2026-11-19.md) completes the registered conditional R4C1/B1
+state/history consistency loop. Eight retained values and four memory
+quadratures independently reproduce the full radial-seed response on
+[0,0.05] at five nonzero modes; the ell=64 endpoint remains positive.
+Main 66/66, separate exact-integer/rational audit 148/148, exact replays,
+779 unchanged source hashes. No supplied full trajectory advances the solver.
+
+The [checkpoint map](Theory/Verification/ITSM_RESEARCH_CHECKPOINT_2026-11-19.md)
+also covers allocation/current/stress audits, finite scalar inversion,
+controlled pressure evolution and evaluated two-time kernels. This is a
+computational equivalence inside a conditional action, not physical health,
+an irreversible reservoir, a new syntropic force or observational validation.
+
+The [current handoff](RESEARCH_ROUTES.md) retains A09 actual-domain/harmonic
+continuation and the core physical/matching priorities. Additional A16 probes
+or approximation tests are optional. R-tau UNADOPTED; G1–G6 INCOMPLETE;
+MAT-001 BLOCKED; K_Q NOT_DERIVED; V NOT_COMPUTED; review DEFERRED;
+physics_pass=false; gate_effect=NONE. Older dated entries remain historical.
+
 ## Initial coupled energy checkpoint — 14 November 2026
 
 The [standing routes](RESEARCH_ROUTES.md) and
