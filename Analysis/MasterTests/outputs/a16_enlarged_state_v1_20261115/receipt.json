@@ -1,0 +1,422 @@
+{
+  "checks": {
+    "16_background_drift_retained": true,
+    "16_dust_force_rank_nullspace_agree": true,
+    "16_dust_force_retained_rows_independent": true,
+    "16_dust_rank_nullspace_agree": true,
+    "16_dust_retained_rows_independent": true,
+    "16_lapse_term_retained": true,
+    "32_background_drift_retained": true,
+    "32_dust_force_rank_nullspace_agree": true,
+    "32_dust_force_retained_rows_independent": true,
+    "32_dust_rank_nullspace_agree": true,
+    "32_dust_retained_rows_independent": true,
+    "32_lapse_term_retained": true,
+    "4_background_drift_retained": true,
+    "4_dust_force_rank_nullspace_agree": true,
+    "4_dust_force_retained_rows_independent": true,
+    "4_dust_rank_nullspace_agree": true,
+    "4_dust_retained_rows_independent": true,
+    "4_lapse_term_retained": true,
+    "64_background_drift_retained": true,
+    "64_dust_force_rank_nullspace_agree": true,
+    "64_dust_force_retained_rows_independent": true,
+    "64_dust_rank_nullspace_agree": true,
+    "64_dust_retained_rows_independent": true,
+    "64_lapse_term_retained": true,
+    "8_background_drift_retained": true,
+    "8_dust_force_rank_nullspace_agree": true,
+    "8_dust_force_retained_rows_independent": true,
+    "8_dust_rank_nullspace_agree": true,
+    "8_dust_retained_rows_independent": true,
+    "8_lapse_term_retained": true,
+    "coordinate_force_rate_reconstruction": true,
+    "force_field_reconstruction": true
+  },
+  "gate_effect": "NONE",
+  "inputs": {
+    "Analysis/MasterTests/outputs/r4c1_g3n5_dust_finite_k_attempt_01/matrices.json": "9d30b77bd23ae63e1bc51c9efec1de51f1a318c88aaa3b90fa9bf475fe305540",
+    "Analysis/MasterTests/outputs/r4c1_g3n5_dust_finite_k_attempt_01/summary.json": "a4c884469c39682908d894e23cb5fbdaa370a4a46f5aa2c31ae4a14128c0f706",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_dust_remainder_v1.py": "01b0a895fde8d979dd1d939780468748daabfabe3ecfb31dae4c5192ba3c0b88",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_nonzero_characteristic_v1.py": "8c63194a678734917c5c9a9593da8023fb7ba946790cc0376c7cd3a9fa57c991",
+    "Analysis/MasterTests/test_a16_enlarged_state_v1.py": "fd9dcf28114a7dc79ed840888f109d74075b7b15875de5c386e3390437caf963",
+    "Theory/Gates/RES-001/RES001_A16_ENLARGED_STATE_V1_CONTRACT_2026-11-15.md": "299d20e7df20573bbf260ed60dc36fb874b44ba0041651a8f96f13d545130ec3"
+  },
+  "observable_definition": [
+    "D",
+    "Vx",
+    "Pi in fixed gauge",
+    "Pi_dot-psi_dot*alpha"
+  ],
+  "physics_pass": false,
+  "results": [
+    {
+      "cases": {
+        "dust": {
+          "initial_closed": false,
+          "retained_rank": 2,
+          "stacked_rank": 4,
+          "witness": {
+            "direction": [
+              "sqrt(4006695)*I/56",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "10*I",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "retained_rate_difference": [
+              "75/2",
+              "0"
+            ]
+          }
+        },
+        "dust_force": {
+          "initial_closed": false,
+          "retained_rank": 4,
+          "stacked_rank": 6,
+          "witness": {
+            "direction": [
+              "sqrt(4006695)*I/56",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "10*I",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "retained_rate_difference": [
+              "75/2",
+              "0",
+              "0",
+              "30*I"
+            ]
+          }
+        }
+      },
+      "ell": 4
+    },
+    {
+      "cases": {
+        "dust": {
+          "initial_closed": false,
+          "retained_rank": 2,
+          "stacked_rank": 4,
+          "witness": {
+            "direction": [
+              "sqrt(4006695)*I/112",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "20*I",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "retained_rate_difference": [
+              "75/2",
+              "0"
+            ]
+          }
+        },
+        "dust_force": {
+          "initial_closed": false,
+          "retained_rank": 4,
+          "stacked_rank": 6,
+          "witness": {
+            "direction": [
+              "sqrt(4006695)*I/112",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "20*I",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "retained_rate_difference": [
+              "75/2",
+              "0",
+              "0",
+              "60*I"
+            ]
+          }
+        }
+      },
+      "ell": 8
+    },
+    {
+      "cases": {
+        "dust": {
+          "initial_closed": false,
+          "retained_rank": 2,
+          "stacked_rank": 4,
+          "witness": {
+            "direction": [
+              "sqrt(4006695)*I/224",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "40*I",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "retained_rate_difference": [
+              "75/2",
+              "0"
+            ]
+          }
+        },
+        "dust_force": {
+          "initial_closed": false,
+          "retained_rank": 4,
+          "stacked_rank": 6,
+          "witness": {
+            "direction": [
+              "sqrt(4006695)*I/224",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "40*I",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "retained_rate_difference": [
+              "75/2",
+              "0",
+              "0",
+              "120*I"
+            ]
+          }
+        }
+      },
+      "ell": 16
+    },
+    {
+      "cases": {
+        "dust": {
+          "initial_closed": false,
+          "retained_rank": 2,
+          "stacked_rank": 4,
+          "witness": {
+            "direction": [
+              "sqrt(4006695)*I/448",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "80*I",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "retained_rate_difference": [
+              "75/2",
+              "0"
+            ]
+          }
+        },
+        "dust_force": {
+          "initial_closed": false,
+          "retained_rank": 4,
+          "stacked_rank": 6,
+          "witness": {
+            "direction": [
+              "sqrt(4006695)*I/448",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "80*I",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "retained_rate_difference": [
+              "75/2",
+              "0",
+              "0",
+              "240*I"
+            ]
+          }
+        }
+      },
+      "ell": 32
+    },
+    {
+      "cases": {
+        "dust": {
+          "initial_closed": false,
+          "retained_rank": 2,
+          "stacked_rank": 4,
+          "witness": {
+            "direction": [
+              "sqrt(4006695)*I/896",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "160*I",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "retained_rate_difference": [
+              "75/2",
+              "0"
+            ]
+          }
+        },
+        "dust_force": {
+          "initial_closed": false,
+          "retained_rank": 4,
+          "stacked_rank": 6,
+          "witness": {
+            "direction": [
+              "sqrt(4006695)*I/896",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "160*I",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "retained_rate_difference": [
+              "75/2",
+              "0",
+              "0",
+              "480*I"
+            ]
+          }
+        }
+      },
+      "ell": 64
+    }
+  ],
+  "review": "DEFERRED",
+  "scope": "Exact registered initial event and nonzero modes; witnesses are initial chart directions, not certified finite-time new trajectories or isolated reservoir interventions.",
+  "status": "PASS_INITIAL_RANK_AND_NULLSPACE_CONTROL"
+}

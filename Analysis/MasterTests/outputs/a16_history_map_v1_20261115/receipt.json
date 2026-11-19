@@ -1,0 +1,133 @@
+{
+  "checks": {
+    "complement_initial_data": true,
+    "complement_ode_with_source": true,
+    "explicit_reservoir_position_entry": true,
+    "fundamental_coincident_identity": true,
+    "fundamental_initial_identity": true,
+    "fundamental_time_derivative": true,
+    "memory_plus_initial_forcing": true,
+    "multiple_other_direct_channels": true,
+    "noncommuting_generator_fixture": true,
+    "reject_dropped_history_feedback": true,
+    "reject_dropped_initial_force": true,
+    "reject_frozen_coefficient_drift": true,
+    "reject_reversed_endpoint_order": true,
+    "reservoir_amplitude_present": true,
+    "scalar_homogeneous_initial_force": true,
+    "support_groups_cover_original_chart": true
+  },
+  "direct_chart_support": {
+    "condensate_amplitudes": [
+      {
+        "column": 6,
+        "row": 0
+      },
+      {
+        "column": 7,
+        "row": 0
+      },
+      {
+        "column": 6,
+        "row": 1
+      },
+      {
+        "column": 7,
+        "row": 1
+      },
+      {
+        "column": 16,
+        "row": 1
+      },
+      {
+        "column": 17,
+        "row": 1
+      }
+    ],
+    "longitudinal_frame": [
+      {
+        "column": 3,
+        "row": 0
+      },
+      {
+        "column": 13,
+        "row": 0
+      },
+      {
+        "column": 3,
+        "row": 1
+      },
+      {
+        "column": 13,
+        "row": 1
+      }
+    ],
+    "metric_scalar": [
+      {
+        "column": 0,
+        "row": 0
+      },
+      {
+        "column": 10,
+        "row": 0
+      },
+      {
+        "column": 0,
+        "row": 1
+      },
+      {
+        "column": 10,
+        "row": 1
+      }
+    ],
+    "mixed_force_coordinate": [
+      {
+        "column": 9,
+        "row": 0
+      },
+      {
+        "column": 19,
+        "row": 0
+      },
+      {
+        "column": 9,
+        "row": 1
+      },
+      {
+        "column": 19,
+        "row": 1
+      }
+    ],
+    "reservoir_amplitude": [
+      {
+        "column": 8,
+        "row": 0
+      },
+      {
+        "column": 8,
+        "row": 1
+      },
+      {
+        "column": 18,
+        "row": 1
+      }
+    ],
+    "tensor_chart": [],
+    "transverse_frame": []
+  },
+  "gate_effect": "NONE",
+  "inputs": {
+    "Analysis/MasterTests/outputs/r4c1_g3n5_dust_remainder_attempt_01/formulas.json": "ccdfab337bd9e5922125d077f2c41e0859ca4fe46ebff3c4cad27abaa2cfbdd5",
+    "Analysis/MasterTests/test_01_r4c1_g3n5_dust_certified_numerical_v1.py": "3a24831955a0b8067a09bfef2a055ab637ab0aa3e9b6db3082d18d237fff8e3e",
+    "Analysis/MasterTests/test_a16_history_map_v1.py": "d4e493f221a46904474216f9184a8751447e01092cd7d56e1cb95866d23f65e8",
+    "Theory/Gates/RES-001/RES001_A16_HISTORY_MAP_V1_CONTRACT_2026-11-15.md": "047c207940650086a845a5d561f562510f0f75a2114668ccc12b6148cfb115cb",
+    "Theory/Gates/RES-001/RES001_R4C1_G3N5_DUST_REMAINDER_REPORT_2026-10-11.md": "18f98a8e4ad6962698c0a3eaeba90c561f9273db7d624a87bc54b3d816c83c8e"
+  },
+  "physical_kernel_numerically_evaluated": false,
+  "physics_pass": false,
+  "reservoir_identity_established": false,
+  "reservoir_position_entry": "-15*I*a**2*r_dot/ell**2",
+  "review": "DEFERRED",
+  "scope": "Exact noncommuting algebra fixture and actual saved R support; not physical kernel normalization, time-domain error certification or sector attribution.",
+  "status": "PASS_DETERMINISTIC_HISTORY_IDENTITY_AND_CHART_SUPPORT"
+}
